@@ -418,12 +418,16 @@
           <div class="player-options" id="playerOptions"></div>
         </div>
         <div class="player-footer">
-          <div class="pf-left">
+          <div class="pf-left" id="playerFooterLeft">
             <button class="pf-btn" onclick="playerMarkReview()">Mark for Review &amp; Next</button>
             <button class="pf-btn ghost" onclick="playerClearResponse()">Clear Response</button>
           </div>
-          <div class="pf-right">
+          <div class="pf-right" id="playerFooterRight">
             <button class="pf-btn primary" onclick="playerSaveNext()">Save &amp; Next</button>
+          </div>
+          <div class="pf-right" id="playerSolutionFooter" style="display:none; gap: 10px;">
+             <button class="pf-btn ghost" onclick="closePlayerAndShowResult()">Back to Results</button>
+             <button class="pf-btn primary" onclick="playerSaveNext()">Next</button>
           </div>
         </div>
       </div>
@@ -575,7 +579,7 @@
           Subjectwise Test - 5</span></div>
       <div class="result-h1">Analysis</div>
       <div class="result-actions">
-        <button class="ra-btn" onclick="alert('Solutions view — coming soon.')">View Solutions</button>
+        <button class="ra-btn" onclick="openSolutionMode(document.getElementById('resultCrumbName').textContent)">View Solutions</button>
         <button class="ra-btn" onclick="alert('Leaderboard — coming soon.')">Leaderboard</button>
         <button class="ra-btn" onclick="alert('Download — coming soon.')">Download Solutions</button>
       </div>

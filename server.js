@@ -47,6 +47,7 @@ const testResultSchema = new mongoose.Schema({
   wrongCount: Number,
   unattempted: Number,
   timeTakenSecs: Number,
+  answers: mongoose.Schema.Types.Mixed, // stores playerState format
   date: { type: Date, default: Date.now }
 });
 const TestResult = mongoose.model('TestResult', testResultSchema);
@@ -353,7 +354,7 @@ app.get('/api/test/:courseId/:testId', authenticateToken, async (req, res) => {
 // 4. Submit Test Results Endpoint
 app.post('/api/submit-test', authenticateToken, async (req, res) => {
   try {
-    const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs } = req.body;
+    const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers } = req.body;
     const result = new TestResult({
       userId: req.user._id,
       testName,
@@ -363,6 +364,7 @@ app.post('/api/submit-test', authenticateToken, async (req, res) => {
       wrongCount,
       unattempted,
       timeTakenSecs,
+      answers,
     });
     await result.save();
     res.json({ success: true, message: 'Test submitted successfully.' });
@@ -375,7 +377,7 @@ app.post('/api/submit-test', authenticateToken, async (req, res) => {
 // 5. Get User Results Endpoint
 app.get('/api/user-results', authenticateToken, async (req, res) => {
   try {
-    const results = await TestResult.find({ userId: req.user._id }).select('testName score maxScore correctCount wrongCount unattempted timeTakenSecs -_id');
+    const results = await TestResult.find({ userId: req.user._id }).select('testName score maxScore correctCount wrongCount unattempted timeTakenSecs answers -_id');
     res.json({ success: true, results });
   } catch (err) {
     console.error("Error fetching user results:", err);

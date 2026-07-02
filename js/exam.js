@@ -723,8 +723,10 @@ let playerCurrent = 0;
 let playerDurationMins = 90;
 let playerTimerSecs = playerDurationMins * 60;
 let playerTimerInterval = null;
+let solutionMode = false;
 
 function startPlayer(testName, fetchedQuestions) {
+  solutionMode = false;
   playerQuestions = fetchedQuestions;
   if (!playerQuestions || playerQuestions.length === 0) {
     alert("This test's questions are not available yet. Please check back soon.");
@@ -752,33 +754,63 @@ function startPlayer(testName, fetchedQuestions) {
   playerDurationMins = isTopicwiseTest ? 45 : 90;
   playerTimerSecs = playerDurationMins * 60;
 
-  renderPlayerQGrid();
-  renderPlayerQuestion(0);
-  updatePlayerCounts();
+  renderPlayer();
 
   document.getElementById("playerOverlay").classList.add("show");
   document.body.style.overflow = "hidden";
+}
 
-  clearInterval(playerTimerInterval);
-  playerTimerInterval = setInterval(() => {
-    playerTimerSecs--;
-    if (playerTimerSecs <= 0) {
-      clearInterval(playerTimerInterval);
-      playerTimerSecs = 0;
-      alert("Time is up! The test will now close.");
-      exitPlayer();
-    }
-    const m = Math.floor(playerTimerSecs / 60),
-      s = playerTimerSecs % 60;
-    document.getElementById("playerTimer").textContent =
-      String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
-  }, 1000);
+function renderPlayer() {
+  const _id = (id) => document.getElementById(id);
+  _id("playerQGrid").innerHTML = "";
+  renderPlayerQGrid();
+  renderPlayerQuestion(playerCurrent);
+  updatePlayerCounts();
+  _id("playerOverlay").classList.add("show");
+  
+  if (solutionMode) {
+    _id("playerFooterLeft").style.display = "none";
+    _id("playerFooterRight").style.display = "none";
+    _id("playerSolutionFooter").style.display = "flex";
+    document.querySelector(".ps-submit-btn").style.display = "none";
+    document.querySelector(".player-topbar .pt-title").textContent = "Solutions: " + _id("playerTopTitle").textContent;
+  } else {
+    _id("playerFooterLeft").style.display = "flex";
+    _id("playerFooterRight").style.display = "block";
+    _id("playerSolutionFooter").style.display = "none";
+    document.querySelector(".ps-submit-btn").style.display = "inline-flex";
+  }
+  
+  if (playerTimerInterval) clearInterval(playerTimerInterval);
+  
+  if (solutionMode) {
+     document.getElementById("playerTimer").textContent = "Solution Mode";
+  } else {
+    playerTimerInterval = setInterval(() => {
+      playerTimerSecs--;
+      if (playerTimerSecs <= 0) {
+        clearInterval(playerTimerInterval);
+        playerTimerSecs = 0;
+        alert("Time is up! The test will now close.");
+        exitPlayer();
+      }
+      const m = Math.floor(playerTimerSecs / 60),
+        s = playerTimerSecs % 60;
+      document.getElementById("playerTimer").textContent =
+        String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+    }, 1000);
+  }
 }
 
 function exitPlayer() {
   clearInterval(playerTimerInterval);
   document.getElementById("playerOverlay").classList.remove("show");
   document.body.style.overflow = "";
+}
+
+function closePlayerAndShowResult() {
+  exitPlayer();
+  showResultPage();
 }
 
 /* ---------- question paper (read-only full view of all questions) ---------- */
@@ -834,7 +866,15 @@ function renderPlayerQuestion(i) {
   if (q.type === "NAT") {
     const displayVal =
       st.answer !== null && st.answer !== undefined ? st.answer : "";
-    optsWrap.innerHTML = `
+    if (solutionMode) {
+      optsWrap.innerHTML = `
+        <div class="player-nat-wrap">
+          <div style="font-weight:bold; margin-bottom: 10px;">Your Answer: <span style="color:var(--gray-9);">${displayVal || "Not Attempted"}</span></div>
+          <div style="font-weight:bold; color:var(--success);">Correct Answer Range: ${q.correct[0]} to ${q.correct[1] || q.correct[0]}</div>
+        </div>
+      `;
+    } else {
+      optsWrap.innerHTML = `
         <div class="player-nat-wrap">
           <div class="nat-display" id="playerNatDisplay">${displayVal}</div>
           <div class="nat-keypad">
@@ -860,14 +900,18 @@ function renderPlayerQuestion(i) {
           </div>
           <button type="button" class="nat-clear-all" onclick="playerNatClear()">Clear All</button>
         </div>`;
+    }
   } else if (q.type === "MSQ") {
     const selected = Array.isArray(st.answer) ? st.answer : [];
+    const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
     optsWrap.innerHTML = q.options
       .map(
         (opt, oi) => `
-          <label class="player-opt">
-            <input type="checkbox" name="playerOptMsq" value="${oi}" ${selected.includes(oi) ? "checked" : ""} onchange="playerToggleMsqOption(${oi})">
+          <label class="player-opt ${solutionMode && correctArr.includes(oi) ? 'correct-bg' : ''} ${solutionMode && selected.includes(oi) && !correctArr.includes(oi) ? 'incorrect-bg' : ''}">
+            <input type="checkbox" name="playerOptMsq" value="${oi}" ${selected.includes(oi) ? "checked" : ""} ${solutionMode ? "disabled" : ""} onchange="playerToggleMsqOption(${oi})">
             <span>${opt}</span>
+            ${solutionMode && correctArr.includes(oi) ? '<div class="solution-tag correct">Correct Answer</div>' : ''}
+            ${solutionMode && selected.includes(oi) ? '<div class="solution-tag marked">Marked Answer</div>' : ''}
           </label>`,
       )
       .join("");
@@ -875,12 +919,23 @@ function renderPlayerQuestion(i) {
     optsWrap.innerHTML = q.options
       .map(
         (opt, oi) => `
-          <label class="player-opt">
-            <input type="radio" name="playerOpt" value="${oi}" ${st.answer === oi ? "checked" : ""} onchange="playerSelectOption(${oi})">
+          <label class="player-opt ${solutionMode && q.correct === oi ? 'correct-bg' : ''} ${solutionMode && st.answer === oi && q.correct !== oi ? 'incorrect-bg' : ''}">
+            <input type="radio" name="playerOpt" value="${oi}" ${st.answer === oi ? "checked" : ""} ${solutionMode ? "disabled" : ""} onchange="playerSelectOption(${oi})">
             <span>${opt}</span>
+            ${solutionMode && q.correct === oi ? '<div class="solution-tag correct">Correct Answer</div>' : ''}
+            ${solutionMode && st.answer === oi ? '<div class="solution-tag marked">Marked Answer</div>' : ''}
           </label>`,
       )
       .join("");
+  }
+  
+  if (solutionMode && q.solution) {
+    optsWrap.innerHTML += `
+      <div class="player-solution-block">
+        <div class="ps-title">Solution</div>
+        <div class="ps-body">${q.solution}</div>
+      </div>
+    `;
   }
   // optsWrap.innerHTML = q.options
   //   .map(
@@ -998,10 +1053,35 @@ function updatePlayerQBtn(i) {
   const st = playerState[i];
   const btn = document.getElementById("qbtn-" + i);
   if (!btn) return;
-  btn.classList.remove("answered", "notanswered", "marked");
-  if (st.marked) btn.classList.add("marked");
-  if (st.answer !== null) btn.classList.add("answered");
-  else if (st.visited) btn.classList.add("notanswered");
+  btn.classList.remove("answered", "notanswered", "marked", "correct", "incorrect");
+  if (solutionMode) {
+    if (st.answer === null || st.answer === undefined || st.answer === "") {
+      btn.classList.add("notanswered");
+    } else {
+      const q = playerQuestions[i];
+      let isCorrect = false;
+      if (q.type === "MSQ") {
+        const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+        const selected = Array.isArray(st.answer) ? st.answer : [];
+        if (correctArr.length === selected.length && correctArr.every(val => selected.includes(val))) {
+          isCorrect = true;
+        }
+      } else if (q.type === "NAT") {
+        const val = parseFloat(st.answer);
+        if (!isNaN(val) && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+          isCorrect = true;
+        }
+      } else {
+        if (st.answer === q.correct) isCorrect = true;
+      }
+      if (isCorrect) btn.classList.add("correct");
+      else btn.classList.add("incorrect");
+    }
+  } else {
+    if (st.marked) btn.classList.add("marked");
+    if (st.answer !== null && st.answer !== undefined && st.answer !== "") btn.classList.add("answered");
+    else if (st.visited) btn.classList.add("notanswered");
+  }
 }
 
 function updatePlayerCounts() {
@@ -1133,7 +1213,8 @@ function confirmSubmit() {
       correctCount,
       wrongCount,
       unattempted,
-      timeTakenSecs
+      timeTakenSecs,
+      answers: playerState
     };
     fetch('/api/submit-test', {
       method: 'POST',
@@ -1144,7 +1225,7 @@ function confirmSubmit() {
       body: JSON.stringify(payload)
     }).then(res => res.json()).then(data => {
       if (data.success) {
-        userResults.push({ testName: payload.testName, score: payload.score });
+        userResults.push({ testName: payload.testName, score: payload.score, answers: payload.answers });
         const seriesObj = testSeries.find((x) => x.id === currentTestListId);
         if (seriesObj) renderTestList(seriesObj, "all");
       }
@@ -1173,11 +1254,51 @@ function openPastResult(testName) {
       unattempted: result.unattempted,
       timeTakenSecs: result.timeTakenSecs,
       tMin,
-      tSec
+      tSec,
+      answers: result.answers || {}
     };
     document.getElementById("resultCrumbName").textContent = testName;
     showResultPage();
   }
+}
+
+function openSolutionMode(testName) {
+  const result = userResults.find(r => r.testName === testName);
+  if (!result || !result.answers) {
+    alert("Answers not found for this test. Past tests before this update do not have answers saved.");
+    return;
+  }
+  
+  const testKey = findMatchingTest(testName);
+  if (!testKey) {
+    alert("Test data not found.");
+    return;
+  }
+  
+  const backendTestId = testBackendIdMap[testKey];
+  const courseId = currentTestListId;
+  const token = localStorage.getItem('apexcore_token');
+  
+  fetch(`/api/test/${courseId}/${backendTestId}`, {
+    headers: { 'Authorization': 'Bearer ' + token }
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      closeResult();
+      solutionMode = true;
+      startPlayer(testName, data.questions);
+      // restore the player state
+      playerState = result.answers;
+      renderPlayer();
+    } else {
+      alert("Error loading test: " + data.message);
+    }
+  })
+  .catch(err => {
+    console.error("Test load error", err);
+    alert("Error fetching test: " + err.message);
+  });
 }
 
 function showResultPage() {

@@ -9,6 +9,7 @@ const gate_topicwise_test_1 = [
   '<img src="images/digital logic-1/mceclip3-1777716941485.png" alt="Option C" style="max-width:150px;">',
   '<img src="images/digital logic-1/mceclip4-1777716946265.png" alt="Option D" style="max-width:150px;">',],
     correct: 1,
+    solution: "By properly arranging the given k-map, you get Option B. Add your image tag here like &lt;img src='...'&gt;",
   },
   {
     marks: 1,
