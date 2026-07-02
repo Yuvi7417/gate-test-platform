@@ -234,10 +234,15 @@ app.post('/api/create-order', async (req, res) => {
   if (!razorpayInstance) {
     return res.status(500).json({ success: false, message: "Razorpay keys not configured in .env" });
   }
-  const { amount, courseId } = req.body;
+  const { amount, courseId } = req.body; // amount should be in paise
+  
+  if (!amount || amount < 100) {
+    return res.status(400).json({ success: false, message: "Amount must be at least 100 paise." });
+  }
+
   try {
     const options = {
-      amount: amount * 100, // Razorpay works in paise
+      amount: Math.round(amount), // Razorpay works in paise
       currency: "INR",
       receipt: `rcpt_${Date.now()}`
     };

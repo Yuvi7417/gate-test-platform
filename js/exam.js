@@ -346,28 +346,79 @@ function openPaymentGateway(id) {
   const ts = testSeries.find(t => t.id === id);
   if (!ts) return;
 
-  // TEMPORARY: Bypass Razorpay and enroll directly for free
   const token = localStorage.getItem('apexcore_token');
-  fetch('/api/enroll-free', {
+  const amountWithGst = Math.round(ts.basePrice * 1.18 * 100); // 18% GST, converted to paise
+
+  fetch('/api/create-order', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
     },
-    body: JSON.stringify({ courseId: id })
+    body: JSON.stringify({ courseId: id, amount: amountWithGst })
   })
     .then(res => res.json())
     .then(data => {
-      if (data.success) {
-        alert("Enrolled successfully (Free Demo Mode)!");
-        enrollAndGo(id);
-      } else {
-        alert("Enrollment Failed: " + data.message);
+      if (!data.success) {
+        alert("Failed to initiate payment: " + data.message);
+        return;
       }
+      
+      const options = {
+        key: data.key_id,
+        amount: data.order.amount,
+        currency: data.order.currency,
+        name: "Apex Core",
+        description: ts.title,
+        order_id: data.order.id,
+        handler: function (response) {
+          // Verify payment
+          fetch('/api/verify-payment', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + token
+            },
+            body: JSON.stringify({
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_signature: response.razorpay_signature,
+              courseId: id
+            })
+          })
+          .then(res => res.json())
+          .then(verifyData => {
+            if (verifyData.success) {
+              alert("Payment successful!");
+              enrollAndGo(id);
+            } else {
+              alert("Payment verification failed: " + verifyData.message);
+            }
+          })
+          .catch(err => {
+            console.error(err);
+            alert("Error verifying payment.");
+          });
+        },
+        prefill: {
+          name: currentUser ? currentUser.name : "",
+          email: currentUser ? currentUser.email : "",
+          contact: ""
+        },
+        theme: {
+          color: "#FFC107"
+        }
+      };
+      
+      const rzp1 = new Razorpay(options);
+      rzp1.on('payment.failed', function (response){
+        alert("Payment failed: " + response.error.description);
+      });
+      rzp1.open();
     })
     .catch(err => {
-      console.error("Enrollment Error:", err);
-      alert("Server error during enrollment.");
+      console.error("Order Creation Error:", err);
+      alert("Server error initiating payment.");
     });
 }
 
