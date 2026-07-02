@@ -792,7 +792,7 @@ main {
 
 .listing-layout {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr;
   gap: 28px;
   align-items: start;
 }
