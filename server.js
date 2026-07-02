@@ -57,20 +57,17 @@ app.use((req, res, next) => {
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, '/')));
 
-// Configure Nodemailer transporter
+// Configure Nodemailer transporter (Hardcoded IPv4 to bypass Render IPv6 block)
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
+  host: '142.250.192.109', // Direct IPv4 IP for smtp.gmail.com
   port: 465,
   secure: true,
+  tls: {
+    servername: 'smtp.gmail.com' // Verify SSL certificate properly
+  },
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
-  },
-  // Force IPv4 lookup because Render free tier blocks IPv6 SMTP
-  lookup: (hostname, options, callback) => {
-    dns.lookup(hostname, { family: 4 }, (err, address, family) => {
-      callback(err, address, family);
-    });
   }
 });
 
