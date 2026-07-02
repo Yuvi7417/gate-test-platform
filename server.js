@@ -57,129 +57,64 @@ app.use((req, res, next) => {
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, '/')));
 
-// Configure Nodemailer transporter (Hardcoded IPv4 to bypass Render IPv6 block)
-const transporter = nodemailer.createTransport({
-  host: '142.250.192.109', // Direct IPv4 IP for smtp.gmail.com
-  port: 465,
-  secure: true,
-  tls: {
-    servername: 'smtp.gmail.com' // Verify SSL certificate properly
-  },
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
-});
-
-// OTP API Endpoint
-app.post('/api/send-otp', async (req, res) => {
-  const { name, email } = req.body;
-
-  if (!email) {
-    return res.status(400).json({ success: false, message: 'Email is required.' });
-  }
-
-  // Generate 6 digit OTP
-  const otp = Math.floor(100000 + Math.random() * 900000).toString();
-
-  // Save to DB
+// Initialize Firebase Admin
+const admin = require('firebase-admin');
+let serviceAccount;
+if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
   try {
-    if (mongoose.connection.readyState === 1) {
-      await Otp.deleteMany({ email }); // Delete old OTPs
-      await Otp.create({ email, otp });
-    } else {
-      global.mockOtpStore = global.mockOtpStore || {};
-      global.mockOtpStore[email] = otp;
-    }
+    serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
   } catch (err) {
-    console.error("DB Error saving OTP", err);
+    console.error("Error parsing FIREBASE_SERVICE_ACCOUNT_JSON", err);
   }
-
-  // Check if credentials are set
-  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS || process.env.EMAIL_USER === 'your_email@gmail.com') {
-    return res.status(500).json({
-      success: false,
-      message: 'Email credentials not configured in .env file. Check server console for OTP.'
-    });
-  }
-
-  const mailOptions = {
-    from: `"Apex Core Test Series" <${process.env.EMAIL_USER}>`,
-    to: email,
-    subject: 'Your Apex Core Login OTP',
-    html: `
-      <div style="font-family: Arial, sans-serif; max-width: 500px; margin: auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
-        <h2 style="color: #1e293b; text-align: center;">Apex Core Login</h2>
-        <p style="color: #334155; font-size: 16px;">Hello ${name || 'Student'},</p>
-        <p style="color: #334155; font-size: 16px;">Your One Time Password (OTP) to login is:</p>
-        <div style="text-align: center; margin: 30px 0;">
-          <span style="font-size: 32px; font-weight: bold; letter-spacing: 5px; color: #2563eb; background: #f8fafc; padding: 10px 20px; border-radius: 6px; border: 1px solid #e2e8f0;">
-            ${otp}
-          </span>
-        </div>
-        <p style="color: #64748b; font-size: 14px; text-align: center;">This code will expire in 1 minute.</p>
-        <hr style="border: none; border-top: 1px solid #e2e8f0; margin-top: 30px;" />
-        <p style="color: #94a3b8; font-size: 12px; text-align: center;">If you didn't request this, you can safely ignore this email.</p>
-      </div>
-    `
-  };
-
+} else {
   try {
-    await transporter.sendMail(mailOptions);
-    console.log(`[Server] OTP ${otp} sent to ${email}`);
-    res.json({ success: true, message: 'OTP sent successfully' });
-  } catch (error) {
-    console.error('[Server] Email sending failed:', error);
-    res.status(500).json({ success: false, message: 'Failed to send email' });
-  }
-});
-
-// Verify OTP API
-app.post('/api/verify-otp', async (req, res) => {
-  const { email, otp, name } = req.body;
-  if (!email || !otp) return res.status(400).json({ success: false, message: 'Email and OTP required' });
-
-  let isValid = false;
-
-  try {
-    if (mongoose.connection.readyState === 1) {
-      const record = await Otp.findOne({ email, otp });
-      if (record) {
-        isValid = true;
-        await Otp.deleteOne({ _id: record._id }); // Use once
-      }
-    } else {
-      if (global.mockOtpStore && global.mockOtpStore[email] === otp) {
-        isValid = true;
-        delete global.mockOtpStore[email];
-      }
-    }
-
-    if (isValid) {
-      // Find or create user
-      let user = { name, email, enrolledCourses: [] };
-      if (mongoose.connection.readyState === 1) {
-        let dbUser = await User.findOne({ email });
-        if (!dbUser) {
-          dbUser = await User.create({ name, email, enrolledCourses: [] });
-        }
-        user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
-      }
-
-      // Generate JWT token
-      const token = jwt.sign(
-        { email: user.email, name: user.name, _id: user._id },
-        process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
-        { expiresIn: '30d' }
-      );
-
-      res.json({ success: true, token, user });
-    } else {
-      res.status(400).json({ success: false, message: 'Invalid or expired OTP' });
-    }
+    serviceAccount = require('./firebase-service-account.json');
   } catch (err) {
-    console.error("OTP Verification Error:", err);
-    res.status(500).json({ success: false, message: 'Server error' });
+    console.warn("Local firebase-service-account.json not found.");
+  }
+}
+
+if (serviceAccount) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+  });
+  console.log("Firebase Admin Initialized successfully.");
+} else {
+  console.warn("WARNING: Firebase Admin not initialized. Login will fail.");
+}
+
+// Firebase Login API
+app.post('/api/firebase-login', async (req, res) => {
+  const { idToken } = req.body;
+  if (!idToken) return res.status(400).json({ success: false, message: 'Firebase ID Token required' });
+
+  try {
+    // 1. Verify the Firebase token
+    const decodedToken = await admin.auth().verifyIdToken(idToken);
+    const email = decodedToken.email;
+    const name = decodedToken.name || email.split('@')[0];
+
+    // 2. Find or create user in MongoDB
+    let user = { name, email, enrolledCourses: [] };
+    if (mongoose.connection.readyState === 1) {
+      let dbUser = await User.findOne({ email });
+      if (!dbUser) {
+        dbUser = await User.create({ name, email, enrolledCourses: [] });
+      }
+      user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
+    }
+
+    // 3. Generate our own backend JWT token
+    const token = jwt.sign(
+      { email: user.email, name: user.name, _id: user._id },
+      process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
+      { expiresIn: '30d' }
+    );
+
+    res.json({ success: true, token, user });
+  } catch (err) {
+    console.error("Firebase Login Error:", err);
+    res.status(401).json({ success: false, message: 'Invalid Firebase token or Server Error' });
   }
 });
 

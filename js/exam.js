@@ -82,108 +82,39 @@ document.getElementById("loginModal").addEventListener("click", (e) => {
   if (e.target.id === "loginModal") closeLogin();
 });
 
-function toggleContinue() {
-  const name = document.getElementById("loginName").value.trim();
-  const email = document.getElementById("loginEmail").value.trim();
-  const ok = name.length > 1 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  document.getElementById("continueBtn").classList.toggle("ready", ok);
-}
+// Initialize Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyD9FaCfioH-zEor2FqCtIsvPveciNhTKok",
+  authDomain: "gate-test-platform.firebaseapp.com",
+  projectId: "gate-test-platform",
+  storageBucket: "gate-test-platform.firebasestorage.app",
+  messagingSenderId: "723500532679",
+  appId: "1:723500532679:web:f30b77428749ea07e88fe2",
+  measurementId: "G-XMPTK9R8R2"
+};
+firebase.initializeApp(firebaseConfig);
+const provider = new firebase.auth.GoogleAuthProvider();
 
-function sendOtp() {
-  if (!document.getElementById("continueBtn").classList.contains("ready"))
-    return;
-  const name = document.getElementById("loginName").value.trim();
-  const email = document.getElementById("loginEmail").value.trim();
-  pendingUser = { name, email };
-
-  document.getElementById("otpEmailLabel").textContent = email;
-  document.getElementById("otpInput").value = "";
-  document.getElementById("otpError").classList.remove("show");
-  document.getElementById("verifyBtn").classList.remove("ready");
-
-  document.getElementById("loginStep1").style.display = "none";
-  document.getElementById("loginStepOtp").style.display = "block";
-
-  const hintEl = document.getElementById("otpStatusHint");
-  if (hintEl) hintEl.textContent = "Sending OTP to your email...";
-
-  // Call the backend API to send the email
-  fetch('/api/send-otp', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      name: name,
-      email: email
-    })
-  })
-    .then(res => res.json())
-    .then(data => {
-      if (data.success) {
-        if (hintEl) hintEl.textContent = "OTP has been sent to your email!";
-        console.log("OTP Email Sent via Backend Successfully!");
-      } else {
-        if (hintEl) hintEl.textContent = data.message || "Failed to send email. Check console for demo OTP.";
-        console.warn("Backend Email Warning:", data.message);
-      }
-    })
-    .catch(err => {
-      if (hintEl) hintEl.textContent = "Server error. Check console for demo OTP.";
-      console.error("Backend API Error:", err);
-    });
-
-  startOtpTimer();
-}
-
-function startOtpTimer() {
-  let secs = 60;
-  const el = document.getElementById("otpTimer");
-  el.textContent = "01:00";
-  clearInterval(otpTimerInterval);
-  otpTimerInterval = setInterval(() => {
-    secs--;
-    const m = String(Math.floor(secs / 60)).padStart(2, "0");
-    const s = String(secs % 60).padStart(2, "0");
-    el.textContent = m + ":" + s;
-    if (secs <= 0) clearInterval(otpTimerInterval);
-  }, 1000);
-}
-
-function backToStep1() {
-  clearInterval(otpTimerInterval);
-  document.getElementById("loginStepOtp").style.display = "none";
-  document.getElementById("loginStep1").style.display = "block";
-}
-
-function toggleVerify() {
-  const val = document.getElementById("otpInput").value.trim();
-  document
-    .getElementById("verifyBtn")
-    .classList.toggle("ready", val.length === 6);
-  document.getElementById("otpError").classList.remove("show");
-}
-
-function verifyOtp() {
-  if (!document.getElementById("verifyBtn").classList.contains("ready")) return;
-  const val = document.getElementById("otpInput").value.trim();
-
-  const btn = document.getElementById("verifyBtn");
-  btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Verifying...`;
+function firebaseGoogleLogin() {
+  const btn = document.getElementById("googleLoginBtn");
+  btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Signing in...`;
   btn.disabled = true;
 
-  fetch('/api/verify-otp', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: pendingUser.name,
-      email: pendingUser.email,
-      otp: val
+  firebase.auth().signInWithPopup(provider)
+    .then((result) => {
+      return result.user.getIdToken();
     })
-  })
+    .then((idToken) => {
+      // Send token to our backend to get our own JWT token and verify user in MongoDB
+      return fetch('/api/firebase-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ idToken })
+      });
+    })
     .then(res => res.json())
     .then(data => {
-      btn.innerHTML = "VERIFY";
+      btn.innerHTML = `Continue with Google`;
       btn.disabled = false;
 
       if (data.success) {
@@ -204,15 +135,14 @@ function verifyOtp() {
           syncLearnNav();
         }
       } else {
-        document.getElementById("otpError").textContent = data.message;
-        document.getElementById("otpError").classList.add("show");
+        alert("Login failed: " + data.message);
       }
     })
-    .catch(err => {
-      btn.innerHTML = "VERIFY";
+    .catch((error) => {
+      console.error("Firebase Login Error:", error);
+      btn.innerHTML = `Continue with Google`;
       btn.disabled = false;
-      document.getElementById("otpError").textContent = "Server error verifying OTP";
-      document.getElementById("otpError").classList.add("show");
+      alert("Google Sign-In failed or was cancelled.");
     });
 }
 
