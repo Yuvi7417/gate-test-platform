@@ -320,7 +320,7 @@ function logoutUser(e) {
   currentUser = null;
   document.body.classList.remove("has-enrollment");
   clearSession();
-  showView("home");
+  showView("list");
 }
 
 /* ---------- enrollment + Learn / Test list ---------- */

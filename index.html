@@ -17,7 +17,7 @@
   <div class="shell">
     <!-- TOP BAR -->
     <div class="topbar">
-      <div class="brand" onclick="showView('home')">
+      <div class="brand" onclick="showView('list')">
         <div class="brand-mark">AC</div>
         <div>
           <div class="brand-name">APEX <span>CORE</span></div>
@@ -56,14 +56,8 @@
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-      <div class="nav-item active" data-nav="home" onclick="showView('home')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 10.5 12 4l9 6.5" />
-          <path d="M5 9.5V20h14V9.5" />
-        </svg>
-        Home
-      </div>
-      <div class="nav-item" data-nav="list" onclick="showView('list')">
+      
+      <div class="nav-item active" data-nav="list" onclick="showView('list')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 11l3 3L22 4" />
           <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
@@ -92,102 +86,10 @@
     <main>
 
       <!-- ===================== HOME VIEW ===================== -->
-      <section class="view active" id="view-home">
-        <div class="hero">
-          <div class="hero-grid"></div>
-          <span class="hero-corner tl"></span><span class="hero-corner br"></span>
-          <div class="hero-content">
-            <div class="hero-eyebrow">Live Online · Batch 2027</div>
-            <h1>Engineer your rank for <em>GATE, PSUs &amp; ESE</em></h1>
-            <div class="hero-streams">
-              Streams:
-              <span class="stream-chip">CE</span><span class="stream-chip">ME</span><span class="stream-chip">EE</span>
-              <span class="stream-chip">EC/IN</span><span class="stream-chip">CS</span>
-            </div>
-            <div class="hero-cta-row">
-              <button class="btn-amber" onclick="showView('list')">Enroll Now</button>
-              <button class="btn-ghost" onclick="showView('list')">View Test Series</button>
-            </div>
-            <div class="hero-emi">⬡ No-cost EMI available on all flagship batches</div>
-          </div>
-          <div class="hero-visual">
-            <svg class="blueprint-figure" viewBox="0 0 200 200" fill="none">
-              <circle cx="100" cy="100" r="80" stroke="rgba(255,255,255,0.12)" stroke-width="1"
-                stroke-dasharray="3 4" />
-              <circle cx="100" cy="100" r="56" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
-              <g stroke="#D98E2B" stroke-width="2" stroke-linecap="round">
-                <path d="M100 44v18M100 138v18M44 100h18M138 100h18" />
-              </g>
-              <rect x="74" y="74" width="52" height="52" stroke="#D98E2B" stroke-width="2"
-                transform="rotate(45 100 100)" />
-              <circle cx="100" cy="100" r="7" fill="#D98E2B" />
-              <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
-                <line x1="20" y1="20" x2="34" y2="20" />
-                <line x1="20" y1="20" x2="20" y2="34" />
-                <line x1="180" y1="180" x2="166" y2="180" />
-                <line x1="180" y1="180" x2="180" y2="166" />
-              </g>
-            </svg>
-          </div>
-          <div class="hero-dots"><span class="active"></span><span></span><span></span></div>
-        </div>
-
-        <div class="section-bar">
-          <div class="section-title">Classroom Courses <span class="count">/ 24 active</span></div>
-          <div class="location-select" id="locSelect">
-            <div class="location-trigger" id="locTrigger">
-              <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12Z" />
-                <circle cx="12" cy="9" r="2.5" />
-              </svg>
-              <span id="locLabel">Delhi</span>
-              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </div>
-            <div class="location-menu" id="locMenu">
-              <div class="location-option selected">Delhi</div>
-              <div class="location-option">Jaipur</div>
-              <div class="location-option">Bhopal</div>
-              <div class="location-option">Hyderabad</div>
-              <div class="location-option">Pune</div>
-              <div class="location-option">Lucknow</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="filter-tabs" id="filterTabsHome">
-          <div class="tab active" data-f="all">ALL</div>
-          <div class="tab" data-f="gate">GATE</div>
-          <div class="tab" data-f="ese">ESE</div>
-          <div class="tab" data-f="ses">SES</div>
-          <div class="tab" data-f="aeje">AE &amp; JE</div>
-        </div>
-
-        <div class="course-grid" id="courseGrid"></div>
-
-        <div class="stat-strip">
-          <div class="stat">
-            <div class="num">42,000+</div>
-            <div class="lab">Selections till date</div>
-          </div>
-          <div class="stat">
-            <div class="num">120+</div>
-            <div class="lab">Faculty members</div>
-          </div>
-          <div class="stat">
-            <div class="num">18</div>
-            <div class="lab">Classroom centres</div>
-          </div>
-          <div class="stat">
-            <div class="num">96%</div>
-            <div class="lab">Doubt resolution rate</div>
-          </div>
-        </div>
-      </section>
+      
 
       <!-- ===================== LISTING VIEW ===================== -->
-      <section class="view" id="view-list">
+      <section class="view active" id="view-list">
         <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
             class="current">Test Series</span></div>
         <div class="page-title">All Test Series</div>
