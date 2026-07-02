@@ -1093,11 +1093,11 @@ function confirmSubmit() {
 
   document.getElementById("playerOverlay").classList.remove("show");
   document.getElementById("successOverlay").classList.add("show");
+}
 
-  setTimeout(() => {
-    document.getElementById("successOverlay").classList.remove("show");
-    showResultPage();
-  }, 1600);
+function triggerViewResult() {
+  document.getElementById("successOverlay").classList.remove("show");
+  showResultPage();
 }
 
 let lastResult = null;
