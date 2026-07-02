@@ -4,24 +4,6 @@
    js/questions/ for that.)
    ====================================================================== */
 
-/* ---------- location dropdown ---------- */
-const locSelect = document.getElementById("locSelect");
-const locTrigger = document.getElementById("locTrigger");
-const locLabel = document.getElementById("locLabel");
-locTrigger.addEventListener("click", () => locSelect.classList.toggle("open"));
-document.querySelectorAll(".location-option").forEach((opt) => {
-  opt.addEventListener("click", () => {
-    document
-      .querySelectorAll(".location-option")
-      .forEach((o) => o.classList.remove("selected"));
-    opt.classList.add("selected");
-    locLabel.textContent = opt.textContent;
-    locSelect.classList.remove("open");
-  });
-});
-document.addEventListener("click", (e) => {
-  if (!locSelect.contains(e.target)) locSelect.classList.remove("open");
-});
 
 /* ---------- view switching ---------- */
 function showView(name) {
@@ -119,37 +101,6 @@ const courses = [
     f: ["ese", "ses"],
   },
 ];
-const grid = document.getElementById("courseGrid");
-function renderHome(filter) {
-  grid.innerHTML = "";
-  courses
-    .filter((c) => filter === "all" || c.f.includes(filter))
-    .forEach((c) => {
-      const el = document.createElement("div");
-      el.className = "course-card";
-      el.innerHTML = `
-        <span class="card-corner tl"></span><span class="card-corner br"></span>
-        <div class="card-head"><div class="card-head-grid"></div>
-          <span class="card-badge">${c.tag}</span><span class="card-mode">${c.mode}</span>
-          <div class="card-streams">STREAM <b>${c.stream}</b> · ${c.streamFull}</div>
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg></div>
-        </div>
-        <div class="card-body"><span class="card-tag">2027 Batch</span><div class="card-title">${c.title}</div>
-          <div class="card-meta"><div class="card-price"><span>${c.cut}</span>${c.price}</div>
-          <div class="card-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
-        </div>`;
-      grid.appendChild(el);
-    });
-}
-renderHome("all");
-document.getElementById("filterTabsHome").addEventListener("click", (e) => {
-  if (!e.target.classList.contains("tab")) return;
-  document
-    .querySelectorAll("#filterTabsHome .tab")
-    .forEach((t) => t.classList.remove("active"));
-  e.target.classList.add("active");
-  renderHome(e.target.dataset.f);
-});
 
 /* ---------- test series data ---------- */
 const testSeries = [
