@@ -1127,7 +1127,7 @@ function confirmSubmit() {
   const token = localStorage.getItem('apexcore_token');
   if (token) {
     const payload = {
-      testName: document.getElementById("playerTestTitle").textContent,
+      testName: document.getElementById("playerTopTitle").textContent,
       score,
       maxScore,
       correctCount,
