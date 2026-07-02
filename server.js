@@ -96,11 +96,14 @@ app.post('/api/firebase-login', async (req, res) => {
     const name = decodedToken.name || email.split('@')[0];
 
     // 2. Find or create user in MongoDB
-    let user = { name, email, enrolledCourses: [] };
+    let user = { name, email, enrolledCourses: ['cs-gate-pyq'] };
     if (mongoose.connection.readyState === 1) {
       let dbUser = await User.findOne({ email });
       if (!dbUser) {
-        dbUser = await User.create({ name, email, enrolledCourses: [] });
+        dbUser = await User.create({ name, email, enrolledCourses: ['cs-gate-pyq'] });
+      } else if (!dbUser.enrolledCourses.includes('cs-gate-pyq')) {
+        dbUser.enrolledCourses.push('cs-gate-pyq');
+        await dbUser.save();
       }
       user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
     }
