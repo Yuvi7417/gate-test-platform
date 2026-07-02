@@ -601,8 +601,18 @@ const trophyIconInline =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 5H4a1 1 0 0 0-1 1 4 4 0 0 0 4 4M17 5h3a1 1 0 0 1 1 1 4 4 0 0 1-4 4"/></svg>';
 
 /* ---------- full-page exam instructions ---------- */
+let pendingTestName = "";
+
 function openInstructions(testName) {
+  pendingTestName = testName || "";
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
+  
+  const isTopicwise = (testName || "").includes("Topicwise");
+  const instrDurationElement = document.getElementById("instrDuration");
+  if (instrDurationElement) {
+    instrDurationElement.textContent = isTopicwise ? "45 minutes" : "90 minutes";
+  }
+  
   const user = currentUser || { name: "Guest User", email: "" };
   document.getElementById("examAvatar").textContent = (
     user.name.trim().charAt(0) || "U"
@@ -655,7 +665,7 @@ function closeInstructionsReadOnly() {
 }
 
 /* ---------- decide what happens after instructions ---------- */
-let pendingTestName = "";
+// let pendingTestName = "";
 const _origOpenInstructions = openInstructions;
 openInstructions = function (testName) {
   pendingTestName = testName || "";
@@ -772,13 +782,13 @@ function renderPlayer() {
     _id("playerFooterLeft").style.display = "none";
     _id("playerFooterRight").style.display = "none";
     _id("playerSolutionFooter").style.display = "flex";
-    document.querySelector(".ps-submit-btn").style.display = "none";
+    document.querySelector(".pf-submit-btn").style.display = "none";
     document.querySelector(".player-topbar .pt-title").textContent = "Solutions: " + _id("playerTopTitle").textContent;
   } else {
     _id("playerFooterLeft").style.display = "flex";
     _id("playerFooterRight").style.display = "block";
     _id("playerSolutionFooter").style.display = "none";
-    document.querySelector(".ps-submit-btn").style.display = "inline-flex";
+    document.querySelector(".pf-submit-btn").style.display = "inline-flex";
   }
   
   if (playerTimerInterval) clearInterval(playerTimerInterval);
@@ -1286,8 +1296,9 @@ function openSolutionMode(testName) {
   .then(data => {
     if (data.success) {
       closeResult();
-      solutionMode = true;
       startPlayer(testName, data.questions);
+      solutionMode = true; // Set this AFTER startPlayer resets it
+      
       // restore the player state
       playerState = result.answers;
       renderPlayer();
