@@ -3,7 +3,6 @@ const dns = require('dns');
 dns.setDefaultResultOrder('ipv4first');
 
 const express = require('express');
-const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require('path');
 const Razorpay = require('razorpay');
@@ -57,8 +56,10 @@ app.use((req, res, next) => {
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, '/')));
 
-// Initialize Firebase Admin
-const admin = require('firebase-admin');
+// Initialize Firebase Admin (Modular API for v12+)
+const { initializeApp, cert } = require('firebase-admin/app');
+const { getAuth } = require('firebase-admin/auth');
+
 let serviceAccount;
 if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
   try {
@@ -75,8 +76,8 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
 }
 
 if (serviceAccount) {
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+  initializeApp({
+    credential: cert(serviceAccount)
   });
   console.log("Firebase Admin Initialized successfully.");
 } else {
@@ -90,7 +91,7 @@ app.post('/api/firebase-login', async (req, res) => {
 
   try {
     // 1. Verify the Firebase token
-    const decodedToken = await admin.auth().verifyIdToken(idToken);
+    const decodedToken = await getAuth().verifyIdToken(idToken);
     const email = decodedToken.email;
     const name = decodedToken.name || email.split('@')[0];
 
