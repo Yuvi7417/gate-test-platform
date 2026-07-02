@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Core | GATE, PSU & ESE Coaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="shell">
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="brand" onclick="showView('home')">
+        <div class="brand-mark">AC</div>
+        <div>
+          <div class="brand-name">APEX <span>CORE</span></div>
+          <div class="brand-tag">Engineering Exam Prep</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="helpline"><span>Helpline</span><b>+91 90213 00500</b></div>
+        <button class="btn-login" id="loginBtn" onclick="openLogin()">Login</button>
+        <div class="profile-chip" id="profileChip" onclick="toggleProfileMenu(event)">
+          <div class="profile-avatar" id="profileAvatar">Y</div>
+          <div class="profile-text">
+            <div class="profile-name" id="profileName">User<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg></div>
+            <div class="profile-email" id="profileEmail">user@email.com</div>
+          </div>
+          <div class="profile-menu" id="profileMenu">
+            <div class="profile-menu-head">
+              <div class="pname" id="menuName">User</div>
+              <div class="pemail" id="menuEmail">user@email.com</div>
+            </div>
+            <div class="profile-logout" onclick="logoutUser(event)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                <path d="M16 17l5-5-5-5" />
+                <path d="M21 12H9" />
+              </svg>
+              Logout
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="nav-item active" data-nav="home" onclick="showView('home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 10.5 12 4l9 6.5" />
+          <path d="M5 9.5V20h14V9.5" />
+        </svg>
+        Home
+      </div>
+      <div class="nav-item" data-nav="list" onclick="showView('list')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 11l3 3L22 4" />
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+        </svg>
+        Test Series
+      </div>
+      <div class="nav-item" data-nav="learn" onclick="openLearn()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+          <path d="M9 7h7M9 11h7" />
+        </svg>
+        Learn
+      </div>
+      <div class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+        </svg>
+        Library
+      </div>
+      <div class="sidebar-divider"></div>
+      <div class="sidebar-label">Streams</div>
+      <div class="nav-item">CE — Civil</div>
+      <div class="nav-item">ME — Mechanical</div>
+      <div class="nav-item">EE — Electrical</div>
+      <div class="nav-item">EC/IN — Electronics</div>
+      <div class="nav-item">CS — Computer Sc.</div>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- ===================== HOME VIEW ===================== -->
+      <section class="view active" id="view-home">
+        <div class="hero">
+          <div class="hero-grid"></div>
+          <span class="hero-corner tl"></span><span class="hero-corner br"></span>
+          <div class="hero-content">
+            <div class="hero-eyebrow">Live Online · Batch 2027</div>
+            <h1>Engineer your rank for <em>GATE, PSUs &amp; ESE</em></h1>
+            <div class="hero-streams">
+              Streams:
+              <span class="stream-chip">CE</span><span class="stream-chip">ME</span><span class="stream-chip">EE</span>
+              <span class="stream-chip">EC/IN</span><span class="stream-chip">CS</span>
+            </div>
+            <div class="hero-cta-row">
+              <button class="btn-amber" onclick="showView('list')">Enroll Now</button>
+              <button class="btn-ghost" onclick="showView('list')">View Test Series</button>
+            </div>
+            <div class="hero-emi">⬡ No-cost EMI available on all flagship batches</div>
+          </div>
+          <div class="hero-visual">
+            <svg class="blueprint-figure" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="80" stroke="rgba(255,255,255,0.12)" stroke-width="1"
+                stroke-dasharray="3 4" />
+              <circle cx="100" cy="100" r="56" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
+              <g stroke="#D98E2B" stroke-width="2" stroke-linecap="round">
+                <path d="M100 44v18M100 138v18M44 100h18M138 100h18" />
+              </g>
+              <rect x="74" y="74" width="52" height="52" stroke="#D98E2B" stroke-width="2"
+                transform="rotate(45 100 100)" />
+              <circle cx="100" cy="100" r="7" fill="#D98E2B" />
+              <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+                <line x1="20" y1="20" x2="34" y2="20" />
+                <line x1="20" y1="20" x2="20" y2="34" />
+                <line x1="180" y1="180" x2="166" y2="180" />
+                <line x1="180" y1="180" x2="180" y2="166" />
+              </g>
+            </svg>
+          </div>
+          <div class="hero-dots"><span class="active"></span><span></span><span></span></div>
+        </div>
+
+        <div class="section-bar">
+          <div class="section-title">Classroom Courses <span class="count">/ 24 active</span></div>
+          <div class="location-select" id="locSelect">
+            <div class="location-trigger" id="locTrigger">
+              <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12Z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
+              <span id="locLabel">Delhi</span>
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            <div class="location-menu" id="locMenu">
+              <div class="location-option selected">Delhi</div>
+              <div class="location-option">Jaipur</div>
+              <div class="location-option">Bhopal</div>
+              <div class="location-option">Hyderabad</div>
+              <div class="location-option">Pune</div>
+              <div class="location-option">Lucknow</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-tabs" id="filterTabsHome">
+          <div class="tab active" data-f="all">ALL</div>
+          <div class="tab" data-f="gate">GATE</div>
+          <div class="tab" data-f="ese">ESE</div>
+          <div class="tab" data-f="ses">SES</div>
+          <div class="tab" data-f="aeje">AE &amp; JE</div>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+
+        <div class="stat-strip">
+          <div class="stat">
+            <div class="num">42,000+</div>
+            <div class="lab">Selections till date</div>
+          </div>
+          <div class="stat">
+            <div class="num">120+</div>
+            <div class="lab">Faculty members</div>
+          </div>
+          <div class="stat">
+            <div class="num">18</div>
+            <div class="lab">Classroom centres</div>
+          </div>
+          <div class="stat">
+            <div class="num">96%</div>
+            <div class="lab">Doubt resolution rate</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== LISTING VIEW ===================== -->
+      <section class="view" id="view-list">
+        <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
+            class="current">Test Series</span></div>
+        <div class="page-title">All Test Series</div>
+
+        <div class="listing-top">
+          <div class="view-tabs">
+            <div class="view-tab">Courses</div>
+            <div class="view-tab active">Test Series</div>
+          </div>
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input type="text" placeholder="Search test series..." id="tsSearch">
+          </div>
+        </div>
+
+        <div class="listing-layout">
+          <aside class="filters-panel">
+            <div class="filters-head">
+              <h3>Filters</h3>
+              <button class="filters-clear" onclick="resetFilters()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+                  <path d="M3 3v5h5" />
+                </svg>
+                Clear
+              </button>
+            </div>
+            <div class="filter-row">
+              <div class="filter-row-head">Language<span class="filter-plus">+</span></div>
+              <div class="filter-row-body">
+                <label class="filter-opt"><input type="checkbox">English</label>
+                <label class="filter-opt"><input type="checkbox">Hindi</label>
+              </div>
+            </div>
+            <div class="filter-row">
+              <div class="filter-row-head">Mode<span class="filter-plus">+</span></div>
+              <div class="filter-row-body">
+                <label class="filter-opt"><input type="checkbox">Online</label>
+                <label class="filter-opt"><input type="checkbox">Offline</label>
+              </div>
+            </div>
+            <div class="filter-row">
+              <div class="filter-row-head">Exam<span class="filter-plus">+</span></div>
+              <div class="filter-row-body">
+                <label class="filter-opt"><input type="checkbox">GATE 2026</label>
+                <label class="filter-opt"><input type="checkbox">ESE 2026</label>
+              </div>
+            </div>
+            <div class="filter-row">
+              <div class="filter-row-head">Centre<span class="filter-plus">+</span></div>
+              <div class="filter-row-body">
+                <label class="filter-opt"><input type="checkbox">Delhi</label>
+                <label class="filter-opt"><input type="checkbox">Jaipur</label>
+              </div>
+            </div>
+            <div class="filter-row">
+              <div class="filter-row-head">Stream<span class="filter-plus">+</span></div>
+              <div class="filter-row-body">
+                <label class="filter-opt"><input type="checkbox">Computer Science</label>
+                <label class="filter-opt"><input type="checkbox">Electrical</label>
+              </div>
+            </div>
+            <button class="btn-apply">Apply</button>
+          </aside>
+
+          <div>
+            <div class="filter-tabs" id="filterTabsList">
+              <div class="tab active" data-f="all">ALL</div>
+              <div class="tab" data-f="gate">GATE</div>
+              <div class="tab" data-f="ese">ESE</div>
+              <div class="tab" data-f="psu">PSU'S</div>
+              <div class="tab" data-f="aeje">AE &amp; JE</div>
+            </div>
+            <div class="ts-grid" id="tsGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== DETAIL VIEW ===================== -->
+      <section class="view" id="view-detail">
+        <div class="crumb">
+          <a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span>
+          <a href="#" onclick="showView('list');return false;">Test Series</a><span class="sep">/</span>
+          <span class="current" id="dCrumbTitle"></span>
+        </div>
+        <div class="page-title" id="dTitle"></div>
+
+        <div class="detail-banner-card">
+          <div class="detail-banner-img" id="dBanner"></div>
+          <div class="detail-info">
+            <span class="detail-session" id="dSession"></span>
+            <div class="ts-tags" id="dTags"></div>
+            <div class="detail-title" id="dInfoTitle"></div>
+            <div class="detail-desc" id="dDesc"></div>
+            <div class="detail-meta-grid">
+              <div class="detail-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Tests: <b id="dTests"></b></span></div>
+              <div class="detail-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>Start Date: <b id="dStart"></b></span></div>
+              <div class="detail-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg><span>End Date: <b id="dEnd"></b></span></div>
+              <div class="detail-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z" />
+                </svg><span>Language: <b id="dLang"></b></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading">Key Features</div>
+        <div class="features-grid" id="dFeatures"></div>
+
+        <div class="section-heading">Choose Your Batch</div>
+        <div class="batch-grid" id="dBatches"></div>
+
+        <div class="section-heading">Schedule</div>
+        <div class="schedule-grid" id="dSchedule"></div>
+
+        <div class="enroll-bar">
+          <div>
+            <div class="enroll-price-lab" id="dBatchLabel">Batch 1</div>
+            <div class="enroll-price" id="dPrice">₹500 + GST</div>
+          </div>
+          <button class="btn-enroll" onclick="handleEnroll()">Enroll Now</button>
+        </div>
+      </section>
+
+      <!-- ===================== LEARN VIEW ===================== -->
+      <section class="view" id="view-learn">
+        <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
+            class="current">Learn</span></div>
+        <div class="learn-toolbar" style="justify-content:space-between;">
+          <div class="page-title" style="margin-bottom:0;">Learn</div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn-outline-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+              </svg>View Dashboard</button>
+            <button class="btn-outline-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2 2-2 3.5M12 17h.01" />
+              </svg>Ask a Doubt</button>
+          </div>
+        </div>
+
+        <div class="section-heading" style="margin-top:8px;">Active Test Series</div>
+        <div id="learnGrid" style="display:flex; flex-direction:column; gap:16px;"></div>
+      </section>
+
+      <!-- ===================== TEST LIST VIEW ===================== -->
+      <section class="view" id="view-tests">
+        <div class="crumb">
+          <a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span>
+          <a href="#" onclick="openLearn();return false;">Learn</a><span class="sep">/</span>
+          <span class="current" id="tlCrumb"></span>
+        </div>
+        <div class="page-title">Test Series</div>
+
+        <div class="pill-tabs" id="tlTabs">
+          <div class="tab active" data-f="all">ALL</div>
+          <div class="tab" data-f="unattempted">UNATTEMPTED</div>
+          <div class="tab" data-f="attempted">ATTEMPTED</div>
+        </div>
+        <div class="module-filter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3Z" />
+          </svg>
+          All Modules
+        </div>
+
+        <div id="testListGrid"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ===================== EXAM INSTRUCTIONS (full-page) ===================== -->
+  <div class="exam-overlay" id="examOverlay">
+    <div class="exam-topbar">
+      <div class="exam-topbar-title">
+        <span id="examTopTitle">Mock Test</span>
+        <small>APEX CORE · GATE 2027 Test Series</small>
+      </div>
+      <button class="exam-exit" onclick="closeInstructions()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+        Exit
+      </button>
+    </div>
+    <div class="exam-body">
+      <div class="exam-main">
+        <div class="exam-instr-head">Instructions</div>
+        <div class="exam-instr-body">
+          <h4>Read the following instructions carefully</h4>
+          <h5>General Instructions:</h5>
+          <p>The total duration of the examination is <b>90 minutes</b>. A <b>scientific calculator</b> is available on
+            the top right-hand side of the screen.</p>
+          <p>The clock is set on the server. The countdown timer at the top right of the screen shows the time left for
+            you to complete the exam. Once the timer hits zero, the exam closes on its own &mdash; you don't need to
+            submit it manually.</p>
+          <p>The Question Palette on the right side of the screen shows the status of every question using the symbols
+            below:</p>
+
+          <table class="exam-palette-table">
+            <tr>
+              <td><span class="palette-chip notvisited">1</span></td>
+              <td>You have <b>NOT</b> visited the question yet.</td>
+            </tr>
+            <tr>
+              <td><span class="palette-chip notanswered">2</span></td>
+              <td>You have <b>NOT</b> answered the question.</td>
+            </tr>
+            <tr>
+              <td><span class="palette-chip answered">3</span></td>
+              <td>You have answered the question.</td>
+            </tr>
+            <tr>
+              <td><span class="palette-chip review">4</span></td>
+              <td>You have <b>NOT</b> answered the question, but have marked it for review.</td>
+            </tr>
+            <tr>
+              <td><span class="palette-chip review-answered">5</span></td>
+              <td>You have answered the question and marked it for review. This response will still be evaluated.</td>
+            </tr>
+          </table>
+
+          <p>You can click the <span class="nav-arrow-key"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15 18l-6-6 6-6" />
+              </svg></span> arrow next to the question palette to collapse it and maximise the question window. Click
+            <span class="nav-arrow-key"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 18l6-6-6-6" />
+              </svg></span> again to bring the palette back.
+          </p>
+
+          <h5>Navigating to a Question</h5>
+          <p>To answer a question, do one of the following:</p>
+          <ol>
+            <li>Click a question number on the palette to jump straight to it. Note that this does <b>not</b> save your
+              answer on the question you're leaving.</li>
+            <li>Click <b>Save &amp; Next</b> to save your current answer and move to the next question.</li>
+            <li>Click <b>Mark for Review &amp; Next</b> to save your answer, flag the question for review, and move on.
+            </li>
+          </ol>
+
+          <h5>Answering a Question</h5>
+          <p><b>Multiple Choice (MCQ):</b></p>
+          <ol>
+            <li>Click an option to select it as your answer.</li>
+            <li>Click the selected option again, or click <b>Clear Response</b>, to deselect it.</li>
+            <li>Click a different option to change your answer.</li>
+            <li>You <b>must</b> click <b>Save &amp; Next</b> to save your answer.</li>
+            <li>Click <b>Mark for Review &amp; Next</b> to flag the question for review.</li>
+          </ol>
+          <p><b>Multiple Select (MSQ):</b></p>
+          <ol>
+            <li>Tick the checkbox next to each correct option &mdash; one or more out of the four choices.</li>
+            <li>Untick a choice, or click <b>Clear Response</b>, to remove it from your answer.</li>
+            <li>To swap a choice, untick it first and then tick the new one.</li>
+          </ol>
+          <p><b>Numerical Answer Type (NAT):</b></p>
+          <ol>
+            <li>Use the on-screen numeric keypad below the question to enter your answer.</li>
+            <li>Click <b>Clear Response</b> to clear what you've entered.</li>
+          </ol>
+          <p>To revisit and change an answer you've already saved, open that question again and follow the same steps.
+          </p>
+
+          <h5>Navigating Through Sections</h5>
+          <p>Sections appear in the bar at the top of the question window &mdash; click a section name to jump to it;
+            the section you're currently on stays highlighted.</p>
+          <p>Hitting <b>Save &amp; Next</b> on the last question of a section automatically takes you to the first
+            question of the next one.</p>
+          <p>You're free to move between sections and questions in any order, as long as you're within the overall time
+            limit.</p>
+          <p>A quick summary for each section &mdash; how many answered, unanswered, marked, etc. &mdash; is shown above
+            the question palette whenever that section is open.</p>
+        </div>
+        <div class="exam-consent" id="examConsentWrap">
+          <input type="checkbox" id="examConsentBox"
+            onchange="document.getElementById('examBeginBtn').disabled = !this.checked;">
+          <label for="examConsentBox">I have read and understood the instructions. All computer hardware allotted to me
+            is in proper working condition. I agree that in case of not adhering to the instructions, I shall be liable
+            to be debarred from this Test.</label>
+        </div>
+        <div class="exam-footer">
+          <div class="exam-footer-left"></div>
+          <button class="exam-next-btn" id="examBeginBtn" disabled onclick="proceedFromInstructions()">
+            <span id="examBeginBtnLabel">I am ready to begin</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="exam-side">
+        <div class="exam-side-avatar" id="examAvatar">U</div>
+        <div class="exam-side-name" id="examUserName">Guest User</div>
+        <div class="exam-side-email" id="examUserEmail"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TEST PLAYER (question attempt screen) ===================== -->
+  <div class="player-overlay" id="playerOverlay">
+    <div class="player-topbar">
+      <div class="pt-title" id="playerTopTitle">GATE 2027 Online Test Series</div>
+      <div class="pt-right">
+        <span class="pt-icon" onclick="openInstructionsReadOnly()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          View Instructions
+        </span>
+        <span class="pt-icon" onclick="openQuestionPaper()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+          </svg>
+          Question Paper
+        </span>
+      </div>
+    </div>
+    <div class="player-sectionbar">
+      <div class="player-sectiontab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4M12 8h.01" />
+        </svg>
+        <span id="playerSectionName">Section</span>
+      </div>
+      <button class="calc-icon-btn" onclick="toggleCalculator()" title="Scientific Calculator">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="4" y="2" width="16" height="20" rx="2" />
+          <path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" />
+        </svg>
+      </button>
+      <div class="player-timer">Time Left: <b id="playerTimer">90:00</b></div>
+      <span class="pt-exit" onclick="exitPlayer()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+        Exit
+      </span>
+    </div>
+    <div class="player-body">
+      <div class="player-main">
+        <div class="player-qhead">
+          <span class="qtype">Question Type: MCQ</span>
+          <div class="qmarks">
+            <span class="pos" id="playerMarksPos">Marks for correct answer: +1</span>
+            <span class="neg" id="playerMarksNeg">Negative Marks: -0.33</span>
+          </div>
+        </div>
+        <div class="player-qbody">
+          <div class="player-qnum" id="playerQNum">Question No. 1</div>
+          <div class="player-qtext" id="playerQText"></div>
+          <div id="playerQImageSlot"></div>
+          <div class="player-options" id="playerOptions"></div>
+        </div>
+        <div class="player-footer">
+          <div class="pf-left">
+            <button class="pf-btn" onclick="playerMarkReview()">Mark for Review &amp; Next</button>
+            <button class="pf-btn ghost" onclick="playerClearResponse()">Clear Response</button>
+          </div>
+          <div class="pf-right">
+            <button class="pf-btn primary" onclick="playerSaveNext()">Save &amp; Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="player-side">
+        <div class="player-user">
+          <div class="player-user-avatar" id="playerUserAvatar">U</div>
+          <div class="player-user-name" id="playerUserName">Guest User</div>
+        </div>
+        <div class="player-status-grid">
+          <div class="player-status-chip"><span class="player-status-num answered" id="cntAnswered">0</span>Answered
+          </div>
+          <div class="player-status-chip"><span class="player-status-num notanswered" id="cntNotAnswered">0</span>Not
+            Answered</div>
+          <div class="player-status-chip"><span class="player-status-num notvisited" id="cntNotVisited">33</span>Not
+            Visited</div>
+          <div class="player-status-chip"><span class="player-status-num marked" id="cntMarked">0</span>Marked</div>
+        </div>
+        <div class="player-side-secname" id="playerSideSecName">Section</div>
+        <div class="player-choose">Choose a Question</div>
+        <div class="player-qgrid" id="playerQGrid"></div>
+        <div class="pf-submit-wrap">
+          <button class="pf-submit-btn" onclick="playerSubmit()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== QUESTION PAPER (read-only full view) ===================== -->
+  <div class="qpaper-overlay" id="qpaperOverlay">
+    <div class="qpaper-modal">
+      <div class="qpaper-head">
+        <span>Question Paper</span>
+        <button onclick="closeQuestionPaper()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="qpaper-body" id="qpaperBody"></div>
+    </div>
+  </div>
+
+  <!-- ===================== SCIENTIFIC CALCULATOR ===================== -->
+  <div class="calc-box" id="calcBox">
+    <div class="calc-head">
+      <span>Scientific Calculator</span>
+      <div class="calc-head-actions">
+        <button class="calc-help-btn" onclick="toggleCalcHelp()">Help</button>
+        <button onclick="toggleCalcMinimize()" title="Minimize">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14" />
+          </svg>
+        </button>
+        <button onclick="toggleCalculator()" title="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="calc-help-tip" id="calcHelpTip">Type using the buttons below, or use your keyboard. <b>C</b> clears,
+      <b>⌫</b> deletes the last character, <b>=</b> evaluates.
+    </div>
+    <div class="calc-body" id="calcBody">
+      <input class="calc-expr" id="calcExprDisplay" type="text" value="" placeholder="" readonly>
+      <input class="calc-display" id="calcDisplay" type="text" value="0" readonly>
+      <div class="calc-modebar">
+        <button class="calc-mode-btn" onclick="calcFn('mod')">mod</button>
+        <label class="calc-radio"><input type="radio" name="calcAngle" checked
+            onchange="calcAngleMode='deg'">Deg</label>
+        <label class="calc-radio"><input type="radio" name="calcAngle" onchange="calcAngleMode='rad'">Rad</label>
+        <span style="flex:1"></span>
+        <button class="calc-mode-btn" onclick="calcMemory('MC')">MC</button>
+        <button class="calc-mode-btn" onclick="calcMemory('MR')">MR</button>
+        <button class="calc-mode-btn" onclick="calcMemory('MS')">MS</button>
+        <button class="calc-mode-btn" onclick="calcMemory('M+')">M+</button>
+        <button class="calc-mode-btn" onclick="calcMemory('M-')">M-</button>
+      </div>
+      <div class="calc-grid" id="calcGrid"></div>
+    </div>
+  </div>
+
+  <!-- ===================== SUBMIT SUMMARY MODAL ===================== -->
+  <div class="summary-overlay" id="summaryOverlay">
+    <div class="summary-modal">
+      <div class="summary-head">
+        <span>Summary</span>
+        <button onclick="closeSummaryModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="summary-body">
+        <div class="summary-total-card">
+          <div class="summary-total-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </div>
+          <div class="summary-total-text">
+            <div class="summary-total-head">Total Question: <b id="sumTotal">33</b></div>
+            <div class="summary-total-stats" id="sumTotalStats"></div>
+          </div>
+        </div>
+        <div class="summary-section-title">Section Wise Summary</div>
+        <div class="summary-section-card">
+          <div class="summary-section-name" id="sumSectionName">GATE 2027 CS Subjectwise Test - 5</div>
+          <div class="summary-section-total">Total Question: <b id="sumSectionTotal">33</b></div>
+          <div class="summary-section-stats" id="sumSectionStats"></div>
+        </div>
+      </div>
+      <div class="summary-footer">
+        <span>Are you sure you want to submit?</span>
+        <div class="summary-footer-btns">
+          <button class="summary-yes" onclick="confirmSubmit()">Yes</button>
+          <button class="summary-no" onclick="closeSummaryModal()">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SUBMIT SUCCESS SCREEN ===================== -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-check">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+        <path d="M20 6 9 17l-5-5" />
+      </svg>
+    </div>
+    <div class="success-title">Test Submitted Successfully</div>
+    <div class="success-sub">Taking you to your analysis…</div>
+  </div>
+
+  <!-- ===================== RESULT / ANALYSIS PAGE ===================== -->
+  <div class="result-overlay" id="resultOverlay">
+    <div class="result-topbar">
+      <div class="result-brand">MADE EASY</div>
+      <div class="result-user">
+        <div class="result-user-avatar" id="resultUserAvatar">U</div>
+        <div class="result-user-text">
+          <div class="result-user-name" id="resultUserName">Guest User</div>
+          <div class="result-user-email" id="resultUserEmail"></div>
+        </div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="result-crumb"><span onclick="closeResult()">Learn</span> / <span id="resultCrumbName">GATE 2027 CS
+          Subjectwise Test - 5</span></div>
+      <div class="result-h1">Analysis</div>
+      <div class="result-actions">
+        <button class="ra-btn" onclick="alert('Solutions view — coming soon.')">View Solutions</button>
+        <button class="ra-btn" onclick="alert('Leaderboard — coming soon.')">Leaderboard</button>
+        <button class="ra-btn" onclick="alert('Download — coming soon.')">Download Solutions</button>
+      </div>
+
+      <div class="result-summary-card">
+        <div class="result-donut-wrap">
+          <div class="result-donut" id="resultDonut">
+            <div class="result-donut-center">
+              <span class="rd-label">Total Score</span>
+              <span class="rd-score" id="rdScore">0 / 0</span>
+            </div>
+          </div>
+          <div class="result-legend">
+            <div><span class="dot correct"></span>Correct <b id="legCorrect">0</b></div>
+            <div><span class="dot incorrect"></span>Incorrect <b id="legIncorrect">0</b></div>
+            <div><span class="dot unattempted"></span>Unattempted <b id="legUnattempted">0</b></div>
+          </div>
+        </div>
+        <div class="result-stats-grid">
+          <div class="result-stat"><span>Rank</span><b id="statRank">— out of —</b></div>
+          <div class="result-stat"><span>Percentile</span><b id="statPercentile">—</b></div>
+          <div class="result-stat"><span>Accuracy</span><b id="statAccuracy">—</b></div>
+          <div class="result-stat"><span>Time Taken</span><b id="statTime">—</b></div>
+        </div>
+      </div>
+
+      <div class="result-subject-title">Subject Wise Analysis</div>
+      <div class="result-subject-card">
+        <div class="result-subject-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="14" rx="1" />
+            <path d="M8 21h8M12 18v3" />
+          </svg>
+        </div>
+        <div class="result-subject-name">GATE CS OTS - 2027</div>
+        <div class="result-subject-donut" id="resultSubjectDonut"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeLogin()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- STEP 1: name + email -->
+      <div id="loginStep1">
+        <div class="modal-brand">
+          <div class="brand-mark">AC</div>
+          <div class="modal-brand-name">APEX <span>CORE</span></div>
+        </div>
+        <div class="modal-welcome">Welcome Back :)</div>
+        <div class="modal-title">LOGIN</div>
+
+        <div class="modal-field">
+          <label class="modal-label">Full Name<span class="req">*</span></label>
+          <input type="text" class="modal-input" id="loginName" placeholder="Enter your name"
+            oninput="toggleContinue()">
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">Email<span class="req">*</span></label>
+          <input type="email" class="modal-input" id="loginEmail" placeholder="Enter email address"
+            oninput="toggleContinue()">
+        </div>
+
+        <button class="btn-continue" id="continueBtn" onclick="sendOtp()">CONTINUE</button>
+        <button class="modal-google">
+          <svg viewBox="0 0 48 48">
+            <path fill="#FFC107"
+              d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" />
+            <path fill="#FF3D00"
+              d="m6.3 14.7 6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4c-7.4 0-13.8 4.1-17.1 10.1z" />
+            <path fill="#4CAF50"
+              d="M24 44c5.5 0 10.4-1.9 14.1-5.1l-6.5-5.5C29.6 35 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.9 39.6 16.4 44 24 44z" />
+            <path fill="#1976D2"
+              d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.5 5.5C39.9 36.9 44 31.1 44 24c0-1.2-.1-2.4-.4-3.5z" />
+          </svg>
+          Continue with Google
+        </button>
+        <div class="modal-mobile">Login with mobile number ›</div>
+      </div>
+
+      <!-- STEP 2: OTP verification -->
+      <div id="loginStepOtp" style="display:none;">
+        <div class="modal-brand">
+          <div class="brand-mark">AC</div>
+          <div class="modal-brand-name">APEX <span>CORE</span></div>
+        </div>
+        <div class="otp-sentto">Verification OTP sent to</div>
+        <div class="otp-email" id="otpEmailLabel">user@email.com</div>
+        <div class="modal-title">OTP VERIFICATION</div>
+
+        <div class="modal-field">
+          <label class="modal-label">Enter your verification code<span class="req">*</span></label>
+          <input type="text" inputmode="numeric" maxlength="6" class="modal-input otp-input" id="otpInput"
+            placeholder="Enter one time password" oninput="toggleVerify()">
+        </div>
+        <div class="modal-error" id="otpError">Incorrect code. Please try again.</div>
+
+        <button class="btn-continue" id="verifyBtn" onclick="verifyOtp()">VERIFY</button>
+
+        <div class="otp-bottom-row">
+          <div class="otp-back" onclick="backToStep1()">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            BACK
+          </div>
+          <div class="otp-timer">OTP will expire in: <b id="otpTimer">01:00</b></div>
+        </div>
+        <div class="otp-hint" id="otpStatusHint">Sending OTP to your email...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Razorpay Checkout SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <!-- Question banks are now securely fetched from the backend API -->
+  <script src="js/exam.js?v=2"></script>
+
+</body>
+
+</html>
