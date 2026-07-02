@@ -223,8 +223,8 @@ const firebaseConfig = {
   projectId: "gate-test-platform",
   storageBucket: "gate-test-platform.firebasestorage.app",
   messagingSenderId: "723500532679",
-  appId: "1:723500532679:web:f30b77428749ea07e88fe2",
-  measurementId: "G-XMPTK9R8R2"
+  appId: "1:723500532679:web:0445b0045cca5425e88fe2",
+  measurementId: "G-Z3MKW8S4GH"
 };
 firebase.initializeApp(firebaseConfig);
 const provider = new firebase.auth.GoogleAuthProvider();
