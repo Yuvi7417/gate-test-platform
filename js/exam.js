@@ -59,6 +59,7 @@ function restoreSession() {
   }
   enrolledIds = Array.isArray(data.enrolledIds) ? data.enrolledIds : [];
   loginUser(data.user, true);
+  fetchUserResults();
   syncLearnNav();
 }
 
@@ -256,6 +257,7 @@ function firebaseGoogleLogin() {
         enrolledIds = data.user.enrolledCourses || [];
         loginUser(data.user);
         closeLogin();
+        fetchUserResults();
 
         if (pendingEnrollId) {
           const id = pendingEnrollId;
@@ -278,6 +280,23 @@ function firebaseGoogleLogin() {
       btn.disabled = false;
       alert("Google Sign-In failed: " + error.message);
     });
+}
+
+let userResults = [];
+async function fetchUserResults() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) return;
+  try {
+    const res = await fetch('/api/user-results', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    const data = await res.json();
+    if (data.success) {
+      userResults = data.results || [];
+    }
+  } catch (err) {
+    console.error("Error fetching results:", err);
+  }
 }
 
 /* ---------- logged-in UI ---------- */
@@ -514,10 +533,20 @@ function renderTestList(t, filter) {
       till: formatDate(t.endDate),
       duration: isTopicwise ? "45 Mins" : "90 Mins",
       questions: isTopicwise ? 17 : 33,
-      status: isTopicwise ? "unattempted" : (i % 3 === 0 ? "attempted" : "unattempted"),
-      score: isTopicwise ? null : (i % 3 === 0 ? 38 + ((i * 11) % 50) : null),
+      status: "unattempted",
+      score: null,
     };
   });
+  
+  // Map user results to status
+  items.forEach(it => {
+    const result = userResults.find(r => r.testName === it.name);
+    if (result) {
+      it.status = "attempted";
+      it.score = result.score;
+    }
+  });
+
   const shown = items.filter((it) => filter === "all" || it.status === filter);
   grid.innerHTML =
     shown
@@ -546,7 +575,7 @@ function renderTestList(t, filter) {
               <span>${docIconInline}${it.questions} Questions</span>
               ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/100</span>` : ""}
             </div>
-            <button class="btn-start-test ${it.status}"${it.status === "unattempted" ? ` data-name="${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)"` : ""}>
+            <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
               ${it.status === "attempted" ? "View Result" : "Start Test"}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </button>
@@ -1093,6 +1122,34 @@ function confirmSubmit() {
 
   document.getElementById("playerOverlay").classList.remove("show");
   document.getElementById("successOverlay").classList.add("show");
+  
+  // Submit to DB
+  const token = localStorage.getItem('apexcore_token');
+  if (token) {
+    const payload = {
+      testName: document.getElementById("playerTestTitle").textContent,
+      score,
+      maxScore,
+      correctCount,
+      wrongCount,
+      unattempted,
+      timeTakenSecs
+    };
+    fetch('/api/submit-test', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      body: JSON.stringify(payload)
+    }).then(res => res.json()).then(data => {
+      if (data.success) {
+        userResults.push({ testName: payload.testName, score: payload.score });
+        const seriesObj = testSeries.find((x) => x.id === currentTestListId);
+        if (seriesObj) renderTestList(seriesObj, "all");
+      }
+    }).catch(err => console.error("Error submitting test:", err));
+  }
 
   setTimeout(() => {
     document.getElementById("successOverlay").classList.remove("show");
@@ -1101,6 +1158,27 @@ function confirmSubmit() {
 }
 
 let lastResult = null;
+
+function openPastResult(testName) {
+  const result = userResults.find(r => r.testName === testName);
+  if (result) {
+    // Reconstruct lastResult format
+    const tMin = Math.floor(result.timeTakenSecs / 60);
+    const tSec = result.timeTakenSecs % 60;
+    lastResult = {
+      score: result.score,
+      maxScore: result.maxScore,
+      correctCount: result.correctCount,
+      wrongCount: result.wrongCount,
+      unattempted: result.unattempted,
+      timeTakenSecs: result.timeTakenSecs,
+      tMin,
+      tSec
+    };
+    document.getElementById("resultCrumbName").textContent = testName;
+    showResultPage();
+  }
+}
 
 function showResultPage() {
   const r = lastResult;

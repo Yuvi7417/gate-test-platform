@@ -38,6 +38,19 @@ const otpSchema = new mongoose.Schema({
 });
 const Otp = mongoose.model('Otp', otpSchema);
 
+const testResultSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  testName: String,
+  score: Number,
+  maxScore: Number,
+  correctCount: Number,
+  wrongCount: Number,
+  unattempted: Number,
+  timeTakenSecs: Number,
+  date: { type: Date, default: Date.now }
+});
+const TestResult = mongoose.model('TestResult', testResultSchema);
+
 const testSchema = new mongoose.Schema({
   testId: { type: String, unique: true }, // e.g. "gate_topicwise_test_1"
   questions: mongoose.Schema.Types.Mixed // Flexible array of questions
@@ -335,6 +348,38 @@ app.get('/api/test/:courseId/:testId', authenticateToken, async (req, res) => {
   } catch (err) {
     console.error("Error fetching test:", err);
     res.status(500).json({ success: false, message: "Server error fetching test." });
+  }
+});
+// 4. Submit Test Results Endpoint
+app.post('/api/submit-test', authenticateToken, async (req, res) => {
+  try {
+    const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs } = req.body;
+    const result = new TestResult({
+      userId: req.user._id,
+      testName,
+      score,
+      maxScore,
+      correctCount,
+      wrongCount,
+      unattempted,
+      timeTakenSecs,
+    });
+    await result.save();
+    res.json({ success: true, message: 'Test submitted successfully.' });
+  } catch (err) {
+    console.error("Error submitting test:", err);
+    res.status(500).json({ success: false, message: 'Server error saving test results.' });
+  }
+});
+
+// 5. Get User Results Endpoint
+app.get('/api/user-results', authenticateToken, async (req, res) => {
+  try {
+    const results = await TestResult.find({ userId: req.user._id }).select('testName score maxScore correctCount wrongCount unattempted timeTakenSecs -_id');
+    res.json({ success: true, results });
+  } catch (err) {
+    console.error("Error fetching user results:", err);
+    res.status(500).json({ success: false, message: 'Server error fetching user results.' });
   }
 });
 
