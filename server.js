@@ -119,8 +119,109 @@ app.post('/api/firebase-login', async (req, res) => {
   }
 });
 
+// OTP API Endpoint (EmailJS HTTP API)
+app.post('/api/send-otp', async (req, res) => {
+  const { name, email } = req.body;
+  if (!email) return res.status(400).json({ success: false, message: 'Email is required.' });
+
+  const otp = Math.floor(100000 + Math.random() * 900000).toString();
+
+  try {
+    if (mongoose.connection.readyState === 1) {
+      await Otp.deleteMany({ email });
+      await Otp.create({ email, otp });
+    } else {
+      global.mockOtpStore = global.mockOtpStore || {};
+      global.mockOtpStore[email] = otp;
+    }
+  } catch (err) {
+    console.error("DB Error saving OTP", err);
+  }
+
+  // Check if EmailJS keys exist
+  if (!process.env.EMAILJS_SERVICE_ID) {
+    return res.status(500).json({ success: false, message: 'EmailJS not configured in .env' });
+  }
+
+  const payload = {
+    service_id: process.env.EMAILJS_SERVICE_ID,
+    template_id: process.env.EMAILJS_TEMPLATE_ID,
+    user_id: process.env.EMAILJS_PUBLIC_KEY,
+    accessToken: process.env.EMAILJS_PRIVATE_KEY,
+    template_params: {
+      name: name || "Student",
+      to_email: email,
+      otp: otp
+    }
+  };
+
+  try {
+    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    
+    if (response.ok) {
+      console.log(`[Server] OTP ${otp} sent to ${email} via EmailJS`);
+      res.json({ success: true, message: 'OTP sent successfully' });
+    } else {
+      const errorText = await response.text();
+      console.error('[Server] EmailJS failed:', errorText);
+      res.status(500).json({ success: false, message: 'EmailJS API Error' });
+    }
+  } catch (error) {
+    console.error('[Server] EmailJS sending failed:', error);
+    res.status(500).json({ success: false, message: 'Failed to send email' });
+  }
+});
+
+// Verify OTP API
+app.post('/api/verify-otp', async (req, res) => {
+  const { email, otp, name } = req.body;
+  if (!email || !otp) return res.status(400).json({ success: false, message: 'Email and OTP required' });
+
+  let isValid = false;
+  try {
+    if (mongoose.connection.readyState === 1) {
+      const record = await Otp.findOne({ email, otp });
+      if (record) {
+        isValid = true;
+        await Otp.deleteOne({ _id: record._id });
+      }
+    } else {
+      if (global.mockOtpStore && global.mockOtpStore[email] === otp) {
+        isValid = true;
+        delete global.mockOtpStore[email];
+      }
+    }
+
+    if (isValid) {
+      let user = { name, email, enrolledCourses: [] };
+      if (mongoose.connection.readyState === 1) {
+        let dbUser = await User.findOne({ email });
+        if (!dbUser) {
+          dbUser = await User.create({ name, email, enrolledCourses: [] });
+        }
+        user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
+      }
+
+      const token = jwt.sign(
+        { email: user.email, name: user.name, _id: user._id },
+        process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
+        { expiresIn: '30d' }
+      );
+      res.json({ success: true, token, user });
+    } else {
+      res.status(400).json({ success: false, message: 'Invalid or expired OTP' });
+    }
+  } catch (err) {
+    console.error("OTP Verification Error:", err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
 // Razorpay Instance
-let razorpayInstance = null;
 if (process.env.RAZORPAY_KEY_ID && process.env.RAZORPAY_KEY_ID !== 'YOUR_RAZORPAY_KEY_ID') {
   razorpayInstance = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
