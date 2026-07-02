@@ -218,13 +218,13 @@ function verifyOtp() {
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyD9FaCfioH-zEor2FqCtIsvPveciNhTKok",
-  authDomain: "gate-test-platform.firebaseapp.com",
-  projectId: "gate-test-platform",
-  storageBucket: "gate-test-platform.firebasestorage.app",
-  messagingSenderId: "723500532679",
-  appId: "1:723500532679:web:0445b0045cca5425e88fe2",
-  measurementId: "G-Z3MKW8S4GH"
+  apiKey: "AIzaSyDL1-3RYeWBBaI3WhRtMQbpk5K_ae58twM",
+  authDomain: "gate-test-702ef.firebaseapp.com",
+  projectId: "gate-test-702ef",
+  storageBucket: "gate-test-702ef.firebasestorage.app",
+  messagingSenderId: "713357458930",
+  appId: "1:713357458930:web:afa65c84da82d7a78cff6b",
+  measurementId: "G-R0JGVPHG12"
 };
 firebase.initializeApp(firebaseConfig);
 const provider = new firebase.auth.GoogleAuthProvider();
