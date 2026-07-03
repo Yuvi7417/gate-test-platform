@@ -1243,7 +1243,7 @@ function confirmSubmit() {
       body: JSON.stringify(payload)
     }).then(res => res.json()).then(data => {
       if (data.success) {
-        userResults.push({ testName: payload.testName, score: payload.score, answers: payload.answers });
+        userResults.push(payload);
         const seriesObj = testSeries.find((x) => x.id === currentTestListId);
         if (seriesObj) renderTestList(seriesObj, "all");
       }
@@ -1261,16 +1261,17 @@ let lastResult = null;
 function openPastResult(testName) {
   const result = userResults.find(r => r.testName === testName);
   if (result) {
-    // Reconstruct lastResult format
-    const tMin = Math.floor(result.timeTakenSecs / 60);
-    const tSec = result.timeTakenSecs % 60;
+    // Reconstruct lastResult format with fallbacks
+    const timeSecs = result.timeTakenSecs || 0;
+    const tMin = Math.floor(timeSecs / 60);
+    const tSec = timeSecs % 60;
     lastResult = {
-      score: result.score,
-      maxScore: result.maxScore,
-      correctCount: result.correctCount,
-      wrongCount: result.wrongCount,
-      unattempted: result.unattempted,
-      timeTakenSecs: result.timeTakenSecs,
+      score: result.score || 0,
+      maxScore: result.maxScore || 100,
+      correctCount: result.correctCount || 0,
+      wrongCount: result.wrongCount || 0,
+      unattempted: result.unattempted || 0,
+      timeTakenSecs: timeSecs,
       tMin,
       tSec,
       answers: result.answers || {}
