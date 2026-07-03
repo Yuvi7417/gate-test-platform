@@ -952,9 +952,24 @@ main {
 }
 .ts-banner {
   position: relative;
-  height: 118px;
+  height: 148px;
   background: linear-gradient(120deg, #0f2a43, #163b5c);
   overflow: hidden;
+}
+.apex-easy-brand {
+  margin-top: 10px;
+  color: var(--amber);
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(234, 164, 69, 0.15);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(234, 164, 69, 0.3);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .ts-banner-grid {
   position: absolute;
