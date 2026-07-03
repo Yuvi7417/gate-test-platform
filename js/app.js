@@ -25,7 +25,7 @@ function showView(name, pushHistory = true) {
   );
   if (nav) nav.classList.add("active");
   window.scrollTo({ top: 0, behavior: "smooth" });
-  
+
   if (pushHistory) {
     history.pushState({ view: name, param: null }, "", "");
   }
@@ -43,10 +43,10 @@ window.addEventListener("popstate", (e) => {
       el.classList.remove('show', 'open');
     }
   });
-  
+
   // Also reset body overflow which might have been hidden by overlays
   document.body.style.overflow = "";
-  
+
   // Specific cleanups if certain overlays were open
   if (typeof playerTimerInterval !== 'undefined' && playerTimerInterval) {
     clearInterval(playerTimerInterval);
@@ -56,7 +56,7 @@ window.addEventListener("popstate", (e) => {
     showView("list", false);
     return;
   }
-  
+
   if (e.state.view === "detail") {
     if (typeof openDetail === "function") {
       openDetail(e.state.param, false);
@@ -155,7 +155,7 @@ const testSeries = [
   {
     id: "cs-gate-pyq",
     code: "GATE",
-    examTag: "GATE 2026",
+    examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CS-GATE PYQ Practice Test Series",
     f: "gate",
