@@ -864,7 +864,7 @@ function renderPlayerQuestion(i) {
   _id("playerQText").textContent = q.text;
   _id("playerMarksPos").textContent = "Marks for correct answer: +" + q.marks;
   _id("playerMarksNeg").textContent = "Negative Marks: -" + q.neg;
-  _id("playerQType").textContent = q.type;
+  _id("playerQType").textContent = q.type || "MCQ";
 
   if (solutionMode) {
     document.getElementById("playerTimerBlock").style.display = "none";
@@ -966,13 +966,25 @@ function renderPlayerQuestion(i) {
     const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
     optsWrap.innerHTML = q.options
       .map(
-        (opt, oi) => `
-          <label class="player-opt ${solutionMode && correctArr.includes(oi) ? 'correct-bg' : ''} ${solutionMode && selected.includes(oi) && !correctArr.includes(oi) ? 'incorrect-bg' : ''}">
+        (opt, oi) => {
+          let bgClass = "";
+          let tagHtml = "";
+          if (solutionMode) {
+            if (correctArr.includes(oi)) {
+              bgClass = "correct-bg";
+              tagHtml = '<div class="solution-tag correct">Correct Answer</div>';
+            } else if (selected.includes(oi)) {
+              bgClass = "incorrect-bg";
+              tagHtml = '<div class="solution-tag marked">Marked Answer</div>';
+            }
+          }
+          return `
+          <label class="player-opt ${bgClass}">
             <input type="checkbox" name="playerOptMsq" value="${oi}" ${selected.includes(oi) ? "checked" : ""} ${solutionMode ? "disabled" : ""} onchange="playerToggleMsqOption(${oi})">
             <span>${opt}</span>
-            ${solutionMode && correctArr.includes(oi) ? '<div class="solution-tag correct">Correct Answer</div>' : ''}
-            ${solutionMode && selected.includes(oi) ? '<div class="solution-tag marked">Marked Answer</div>' : ''}
-          </label>`,
+            ${tagHtml}
+          </label>`;
+        }
       )
       .join("");
   } else {
@@ -984,11 +996,7 @@ function renderPlayerQuestion(i) {
           if (solutionMode) {
             if (q.correct === oi) {
               bgClass = "correct-bg";
-              if (st.answer === oi) {
-                tagHtml = '<div class="solution-tag correct">Marked Answer</div>';
-              } else {
-                tagHtml = '<div class="solution-tag correct">Correct Answer</div>';
-              }
+              tagHtml = '<div class="solution-tag correct">Correct Answer</div>';
             } else if (st.answer === oi) {
               bgClass = "incorrect-bg";
               tagHtml = '<div class="solution-tag marked">Marked Answer</div>';
