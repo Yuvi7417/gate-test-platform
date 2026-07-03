@@ -564,7 +564,7 @@
       <div class="result-h1">Analysis</div>
       <div class="result-actions">
         <button class="ra-btn" onclick="openSolutionMode(document.getElementById('resultCrumbName').textContent)">View Solutions</button>
-        <button class="ra-btn" onclick="alert('Leaderboard — coming soon.')">Leaderboard</button>
+        <button class="ra-btn" onclick="openLeaderboard()">Leaderboard</button>
         <button class="ra-btn" onclick="alert('Download — coming soon.')">Download Solutions</button>
       </div>
 
@@ -635,6 +635,26 @@
         <canvas id="accuracyDifficultyChart"></canvas>
       </div>
 
+    </div>
+  </div>
+
+  <!-- ===================== LEADERBOARD MODAL ===================== -->
+  <div class="leaderboard-overlay" id="leaderboardOverlay">
+    <div class="leaderboard-modal">
+      <div class="leaderboard-head">
+        <span>Leaderboard</span>
+        <button onclick="closeLeaderboard()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="leaderboard-body" id="leaderboardBody">
+        <!-- Rendered via JS -->
+      </div>
+      <div class="leaderboard-sticky" id="leaderboardSticky">
+        <!-- Rendered via JS for current user -->
+      </div>
     </div>
   </div>
 

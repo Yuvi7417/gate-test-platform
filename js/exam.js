@@ -1565,6 +1565,83 @@ function closeResult() {
   document.getElementById("resultOverlay").classList.remove("show");
 }
 
+async function openLeaderboard() {
+  const overlay = document.getElementById("leaderboardOverlay");
+  const body = document.getElementById("leaderboardBody");
+  const sticky = document.getElementById("leaderboardSticky");
+  
+  overlay.classList.add("show");
+  body.innerHTML = '<div class="leaderboard-empty">Loading leaderboard...</div>';
+  sticky.innerHTML = '';
+
+  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  
+  try {
+    const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName));
+    const data = await res.json();
+    if (data.success) {
+      if (data.leaderboard.length === 0) {
+        body.innerHTML = '<div class="leaderboard-empty">No results found for this test yet.</div>';
+        return;
+      }
+
+      let html = "";
+      let myRankHTML = "";
+      const currentUserEmail = (currentUser || {}).email || "";
+      let foundMe = false;
+
+      data.leaderboard.forEach(r => {
+        // We will try to match current user by name for demonstration.
+        // In reality, the backend should tag isCurrentUser based on auth token.
+        const isMe = currentUser && r.name === currentUser.name; 
+        const initial = r.name.charAt(0).toUpperCase() || 'U';
+        
+        const itemHTML = `
+          <div class="leaderboard-item">
+            <div class="leaderboard-item-left">
+              <div class="leaderboard-avatar">${initial}</div>
+              <div class="leaderboard-user-info">
+                <span class="leaderboard-rank-badge">AIR-${r.rank}</span>
+                <span class="leaderboard-user-name">${r.name}</span>
+              </div>
+            </div>
+            <div class="leaderboard-item-right">
+              <div class="leaderboard-score-label">Score</div>
+              <div class="leaderboard-score-val">${r.score} / ${r.maxScore}</div>
+            </div>
+          </div>
+        `;
+        html += itemHTML;
+
+        if (isMe && !foundMe) {
+          myRankHTML = itemHTML;
+          foundMe = true;
+        }
+      });
+
+      body.innerHTML = html;
+      
+      // If we found the user, add them to the sticky footer
+      if (myRankHTML) {
+         sticky.innerHTML = `
+           <div style="text-align: center; color: #c3ced8; padding: 10px 0; font-size: 20px; line-height: 0.5;">...</div>
+           ${myRankHTML}
+         `;
+      }
+
+    } else {
+      body.innerHTML = '<div class="leaderboard-empty">Failed to load leaderboard.</div>';
+    }
+  } catch (err) {
+    body.innerHTML = '<div class="leaderboard-empty">Error loading leaderboard.</div>';
+    console.error(err);
+  }
+}
+
+function closeLeaderboard() {
+  document.getElementById("leaderboardOverlay").classList.remove("show");
+}
+
 /* ---------- scientific calculator ---------- */
 // Each row mixes 6 scientific-function keys with 5 numeric/operator keys, laid out on an 11-col grid
 // like the reference exam calculator. [label, css class, action]

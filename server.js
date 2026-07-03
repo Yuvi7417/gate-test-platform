@@ -534,6 +534,31 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
   }
 });
 
+// 8. Get Leaderboard Endpoint
+app.get('/api/leaderboard/:testName', async (req, res) => {
+  try {
+    const { testName } = req.params;
+    const results = await TestResult.find({ testName }).populate('userId', 'name').sort({ score: -1, timeTakenSecs: 1 }).lean();
+
+    if (!results || results.length === 0) {
+      return res.json({ success: true, leaderboard: [] });
+    }
+
+    const leaderboard = results.map((r, index) => ({
+      rank: index + 1,
+      name: r.userId ? r.userId.name : 'Unknown User',
+      score: r.score,
+      maxScore: r.maxScore,
+      timeTakenSecs: r.timeTakenSecs
+    }));
+
+    res.json({ success: true, leaderboard });
+  } catch (err) {
+    console.error("Error fetching leaderboard:", err);
+    res.status(500).json({ success: false, message: 'Server error fetching leaderboard.' });
+  }
+});
+
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
