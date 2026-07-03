@@ -165,7 +165,7 @@ const testSeries = [
     startDate: "2025-10-15",
     endDate: "2027-02-15",
     session: "2025-2026",
-    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) question papers from 2011 to 2025, designed to simulate real exam conditions and sharpen problem-solving, time management and exam readiness.",
+    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) question papers from 2000 to 2026, designed to simulate real exam conditions and sharpen problem-solving, time management and exam readiness.",
     features: [
       "Practice real GATE questions",
       "Simulate exam-like environment",
@@ -177,7 +177,7 @@ const testSeries = [
     batches: [
       {
         name: "Batch 1",
-        start: "Oct 15, 2025",
+        start: "July 15, 2026",
         time: "12:00 AM – 11:59 PM",
         selected: true,
       },
@@ -209,7 +209,7 @@ const testSeries = [
     startDate: "2025-10-15",
     endDate: "2027-02-15",
     session: "2025-2026",
-    desc: "Year-wise GATE Electrical Engineering papers from 2011 to 2025 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
     features: [
       "Practice real GATE questions",
       "Simulate exam-like environment",
