@@ -1277,7 +1277,7 @@ function openPastResult(testName) {
       answers: result.answers || {}
     };
     document.getElementById("resultCrumbName").textContent = testName;
-    showResultPage();
+    showResultPage(testName);
   }
 }
 
@@ -1321,7 +1321,7 @@ function openSolutionMode(testName) {
   });
 }
 
-async function showResultPage() {
+async function showResultPage(explicitTestName) {
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };
   document.getElementById("resultUserAvatar").textContent = (
@@ -1329,7 +1329,7 @@ async function showResultPage() {
   ).toUpperCase();
   document.getElementById("resultUserName").textContent = user.name;
   document.getElementById("resultUserEmail").textContent = user.email;
-  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  const testName = explicitTestName || document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
   document.getElementById("resultCrumbName").textContent = testName;
 
   document.getElementById("rdScore").textContent = r.score + " / " + r.maxScore;
@@ -1337,9 +1337,13 @@ async function showResultPage() {
   document.getElementById("legIncorrect").textContent = r.wrongCount;
   document.getElementById("legUnattempted").textContent = r.unattempted;
 
-  const total = playerQuestions.length;
-  const cPct = (r.correctCount / total) * 100;
-  const iPct = (r.wrongCount / total) * 100;
+  const c = parseInt(r.correctCount) || 0;
+  const w = parseInt(r.wrongCount) || 0;
+  const u = parseInt(r.unattempted) || 0;
+  const total = c + w + u;
+  const totalSafe = total > 0 ? total : 1; // Avoid divide by zero
+  const cPct = (c / totalSafe) * 100;
+  const iPct = (w / totalSafe) * 100;
   const donutGradient = `#2F9E63 0 ${cPct}%, #D9534F ${cPct}% ${cPct + iPct}%, #E8A33D ${cPct + iPct}% 100%`;
   document
     .getElementById("resultDonut")
@@ -1391,9 +1395,9 @@ async function showResultPage() {
             <div class="result-subject-donut-inner"></div>
           </div>
           <div class="result-legend" style="font-size: 11px;">
-            <div><span class="dot correct"></span>Correct <b>${r.correctCount}</b></div>
-            <div><span class="dot incorrect"></span>Incorrect <b>${r.wrongCount}</b></div>
-            <div><span class="dot unattempted"></span>Unattempted <b>${r.unattempted}</b></div>
+            <div><span class="dot correct"></span>Correct <b>${c}</b></div>
+            <div><span class="dot incorrect"></span>Incorrect <b>${w}</b></div>
+            <div><span class="dot unattempted"></span>Unattempted <b>${u}</b></div>
           </div>
         </div>
         <div class="rsc-stats">
