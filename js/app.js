@@ -235,6 +235,7 @@ const testSeries = [
       ["FST - 1", "Nov 20, 2025"],
     ],
     price: "₹500 + GST",
+    comingSoon: true
   },
   {
     id: "ce-gate-pyq",
@@ -274,6 +275,7 @@ const testSeries = [
       ["FST - 1", "Nov 21, 2025"],
     ],
     price: "₹500 + GST",
+    comingSoon: true
   },
   {
     id: "xe-gate-pyq",
@@ -312,6 +314,7 @@ const testSeries = [
       ["FST - 1", "Nov 22, 2025"],
     ],
     price: "₹500 + GST",
+    comingSoon: true
   },
   {
     id: "me-ese-mains",
@@ -350,6 +353,7 @@ const testSeries = [
       ["Mock - 3", "Jan 12, 2026"],
     ],
     price: "₹1,200 + GST",
+    comingSoon: true
   },
   {
     id: "ce-psu-combo",
@@ -388,6 +392,7 @@ const testSeries = [
       ["PT - 2", "Nov 25, 2025"],
     ],
     price: "₹650 + GST",
+    comingSoon: true
   },
   {
     id: "je-foundation",
