@@ -464,7 +464,7 @@ function renderTS(filter, query) {
             <div class="ts-banner-text">
               <div class="ts-banner-eyebrow">PYQs · 15 years</div>
               <div class="ts-banner-main">Exam Practice<br>Test Series</div>
-              <div class="ts-banner-sub">2011 – 2025</div>
+              <div class="ts-banner-sub">2000 – 2026</div>
               <div class="apex-easy-brand">✨ APEX EASY</div>
             </div>
           </div>
