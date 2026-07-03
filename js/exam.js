@@ -751,7 +751,7 @@ function startPlayer(testName, fetchedQuestions) {
   playerState = {};
   playerQuestions.forEach(
     (q, i) =>
-      (playerState[i] = { visited: false, answer: null, marked: false }),
+      (playerState[i] = { visited: false, answer: null, marked: false, timeSpent: 0 }),
   );
   playerCurrent = 0;
   const isTopicwiseTest = (testName || "").includes("Topicwise");
@@ -792,6 +792,11 @@ function renderPlayer() {
   } else {
     playerTimerInterval = setInterval(() => {
       playerTimerSecs--;
+      
+      if (playerState[playerCurrent]) {
+        playerState[playerCurrent].timeSpent = (playerState[playerCurrent].timeSpent || 0) + 1;
+      }
+
       if (playerTimerSecs <= 0) {
         clearInterval(playerTimerInterval);
         playerTimerSecs = 0;
@@ -1161,15 +1166,19 @@ function confirmSubmit() {
   playerQuestions.forEach((q, i) => {
     maxScore += q.marks;
     const given = playerState[i].answer;
+    let isCorrect = false;
+    let isUnattempted = false;
+
     if (
       given === null ||
       (Array.isArray(given) && given.length === 0)
     ) {
       unattempted++;
+      isUnattempted = true;
     } else if (q.type === "MSQ") {
       const correctArr = [...q.correct].sort();
       const givenArr = [...given].sort();
-      const isCorrect =
+      isCorrect =
         correctArr.length === givenArr.length &&
         correctArr.every((v, idx) => v === givenArr[idx]);
       if (isCorrect) {
@@ -1180,12 +1189,16 @@ function confirmSubmit() {
         score -= q.neg;
       }
     } else if (given === q.correct) {
+      isCorrect = true;
       correctCount++;
       score += q.marks;
     } else {
       wrongCount++;
       score -= q.neg;
     }
+
+    playerState[i].isCorrect = isCorrect;
+    playerState[i].isUnattempted = isUnattempted;
   });
   score = Math.round(score * 100) / 100;
 
@@ -1402,64 +1415,147 @@ async function showResultPage() {
   setTimeout(() => {
     renderBarChart("subjectChart", "GATE CS OTS - 2027", total, "#14619C");
     renderBarChart("topicChart", testName, total, "#5D8C72");
+    renderAdvancedCharts();
   }, 100);
 }
 
+let __advancedStats = null;
+async function renderAdvancedCharts() {
+  if (typeof Chart === 'undefined') return;
+  
+  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  
+  if (!__advancedStats) {
+    try {
+      const res = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
+      const data = await res.json();
+      if (data.success) __advancedStats = data.advancedStats;
+    } catch(e) {}
+  }
+  
+  if (!__advancedStats) return;
+  
+  // Prepare data arrays
+  const astats = __advancedStats;
+  const diffs = ["Easy", "Medium", "Hard"];
+  
+  const myMarks = diffs.map(d => {
+     // compute my marks in this diff
+     let sum = 0;
+     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+         const st = playerState[q.index];
+         if (st && st.isCorrect) sum += 1;
+         else if (st && !st.isCorrect && !st.isUnattempted) sum -= 0.33;
+     });
+     return Math.max(0, sum);
+  });
+  
+  const avgMarks = diffs.map(d => astats.difficultyStats[d].avgMarks);
+  const highestMarks = diffs.map(d => astats.difficultyStats[d].highestMarks);
+  
+  const myTime = diffs.map(d => {
+     let sum = 0;
+     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+         const st = playerState[q.index];
+         if (st && st.timeSpent) sum += st.timeSpent;
+     });
+     return sum / 60; // in minutes
+  });
+  const avgTime = diffs.map(d => astats.difficultyStats[d].avgTime / 60); // minutes
+  
+  const myAcc = diffs.map(d => {
+     let c = 0, t = 0;
+     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+         const st = playerState[q.index];
+         if (st && !st.isUnattempted) {
+             t++;
+             if (st.isCorrect) c++;
+         }
+     });
+     return t > 0 ? (c/t)*100 : 0;
+  });
+  const avgAcc = diffs.map(d => astats.difficultyStats[d].avgAccuracy);
+  
+  // Student Attempt Stacked Bar
+  const labelsQ = astats.perQuestion.map(q => q.index + 1);
+  const corQ = astats.perQuestion.map(q => q.correct);
+  const incQ = astats.perQuestion.map(q => q.wrong);
+  const unaQ = astats.perQuestion.map(q => q.unattempted);
+  
+  // Median line data
+  const medianLine = astats.scoresCurve.map(() => astats.medianScore);
+  
+  createChart("difficultyPerformanceChart", 'bar', diffs, [
+    { label: 'My Marks', data: myMarks, backgroundColor: '#14619C' },
+    { label: 'Avg Marks', data: avgMarks, backgroundColor: '#FF9800' },
+    { label: 'Highest Marks', data: highestMarks, backgroundColor: '#5D8C72' }
+  ], 'Marks');
+
+  createChart("medianScoreChart", 'line', astats.scoresCurve.map((_, i) => i+1), [
+    { label: 'Student Marks', data: astats.scoresCurve, borderColor: '#14619C', backgroundColor: 'rgba(20, 97, 156, 0.1)', fill: true, tension: 0.4 },
+    { label: 'Median Score', data: medianLine, borderColor: '#FF9800', pointRadius: 0, fill: false }
+  ], 'Marks');
+
+  createChart("timeVsDifficultyChart", 'bar', diffs, [
+    { label: 'My Time taken', data: myTime, backgroundColor: '#14619C' },
+    { label: 'Average time taken', data: avgTime, backgroundColor: '#FF9800' }
+  ], 'Total time (minutes)');
+
+  createChart("studentAttemptChart", 'bar', labelsQ, [
+    { label: 'Incorrect', data: incQ, backgroundColor: '#F44336' },
+    { label: 'Unattempted', data: unaQ, backgroundColor: '#FF9800' },
+    { label: 'Correct', data: corQ, backgroundColor: '#5D8C72' }
+  ], 'Count of Students', true);
+
+  createChart("accuracyDifficultyChart", 'bar', diffs, [
+    { label: 'My Accuracy', data: myAcc, backgroundColor: '#14619C' },
+    { label: 'Avg Accuracy', data: avgAcc, backgroundColor: '#FF9800' }
+  ], 'Accuracy (%)');
+}
+
 let __chartInstances = {};
+function createChart(canvasId, type, labels, datasets, yTitle, isStacked = false) {
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+  if (__chartInstances[canvasId]) __chartInstances[canvasId].destroy();
+
+  __chartInstances[canvasId] = new Chart(ctx, {
+    type: type,
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'bottom', labels: { usePointStyle: true, padding: 20 } }
+      },
+      scales: {
+        x: { stacked: isStacked, grid: { display: false } },
+        y: { stacked: isStacked, title: { display: true, text: yTitle }, grid: { color: '#f1f4f8' } }
+      }
+    }
+  });
+}
+
 function renderBarChart(canvasId, label, count, color) {
   if (typeof Chart === 'undefined') return;
   const ctx = document.getElementById(canvasId);
   if (!ctx) return;
-
-  if (__chartInstances[canvasId]) {
-    __chartInstances[canvasId].destroy();
-  }
+  if (__chartInstances[canvasId]) __chartInstances[canvasId].destroy();
 
   __chartInstances[canvasId] = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: [label.toUpperCase()],
-      datasets: [{
-        label: 'Questions',
-        data: [count],
-        backgroundColor: color,
-        barPercentage: 0.15
-      }]
+      datasets: [{ label: 'Questions', data: [count], backgroundColor: color, barPercentage: 0.15 }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#fff',
-          titleColor: '#1c2530',
-          bodyColor: '#1c2530',
-          borderColor: '#e3e7eb',
-          borderWidth: 1,
-          padding: 12,
-          callbacks: {
-            title: () => label,
-            label: (ctx) => 'Questions : ' + ctx.raw
-          }
-        }
-      },
+      plugins: { legend: { display: false } },
       scales: {
-        y: {
-          beginAtZero: true,
-          suggestedMax: count + 2,
-          grid: {
-            color: '#f1f4f8',
-            drawBorder: false
-          },
-          title: {
-            display: true,
-            text: 'Count Of Questions'
-          }
-        },
-        x: {
-          grid: { display: false }
-        }
+        y: { beginAtZero: true, suggestedMax: count + 2, grid: { color: '#f1f4f8' }, title: { display: true, text: 'Count' } },
+        x: { grid: { display: false } }
       }
     }
   });

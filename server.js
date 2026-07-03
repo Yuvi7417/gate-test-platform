@@ -427,6 +427,113 @@ app.get('/api/test-stats/:testName', async (req, res) => {
   }
 });
 
+// 7. Get Advanced Global Test Stats Endpoint
+app.get('/api/test-advanced-stats/:testName', async (req, res) => {
+  try {
+    const { testName } = req.params;
+    const results = await TestResult.find({ testName });
+
+    if (!results || results.length === 0) {
+      return res.json({ success: true, advancedStats: null });
+    }
+
+    let questionStats = {};
+    let scores = [];
+
+    // Aggregate data from all test results
+    results.forEach(r => {
+      scores.push(r.score);
+      const answers = r.answers || {};
+      Object.keys(answers).forEach(qIndex => {
+        if (!questionStats[qIndex]) {
+          questionStats[qIndex] = { correct: 0, wrong: 0, unattempted: 0, totalTime: 0, count: 0 };
+        }
+        const state = answers[qIndex];
+        const timeSpent = state.timeSpent || 0;
+        
+        questionStats[qIndex].totalTime += timeSpent;
+        questionStats[qIndex].count += 1;
+        
+        if (state.isUnattempted) {
+          questionStats[qIndex].unattempted += 1;
+        } else if (state.isCorrect) {
+          questionStats[qIndex].correct += 1;
+        } else {
+          questionStats[qIndex].wrong += 1;
+        }
+      });
+    });
+
+    // Calculate Dynamic Difficulty & Group Data
+    let difficultyGroups = {
+      Easy: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 },
+      Medium: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 },
+      Hard: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 }
+    };
+    
+    let perQuestionArray = [];
+    Object.keys(questionStats).forEach(qIndex => {
+      const q = questionStats[qIndex];
+      const accuracy = q.count > 0 ? (q.correct / q.count) : 0;
+      
+      let diff = "Hard";
+      if (accuracy > 0.65) diff = "Easy";
+      else if (accuracy >= 0.35) diff = "Medium";
+
+      q.difficulty = diff;
+      q.avgTime = q.count > 0 ? (q.totalTime / q.count) : 0;
+      
+      difficultyGroups[diff].totalTime += q.avgTime;
+      difficultyGroups[diff].totalCorrect += q.correct;
+      difficultyGroups[diff].count += q.count;
+      difficultyGroups[diff].qCount += 1;
+
+      let avgMks = q.count > 0 ? ((q.correct * 1) - (q.wrong * 0.33)) / q.count : 0;
+      difficultyGroups[diff].marks += avgMks;
+
+      perQuestionArray.push({
+        index: parseInt(qIndex),
+        correct: q.correct,
+        wrong: q.wrong,
+        unattempted: q.unattempted,
+        difficulty: diff,
+        avgTime: q.avgTime
+      });
+    });
+    
+    // Sort scores for median curve
+    scores.sort((a, b) => a - b);
+    const medianScore = scores.length > 0 ? scores[Math.floor(scores.length / 2)] : 0;
+
+    // Format difficulty stats
+    const diffStats = {};
+    ["Easy", "Medium", "Hard"].forEach(d => {
+      const g = difficultyGroups[d];
+      diffStats[d] = {
+        avgMarks: g.qCount > 0 ? g.marks : 0,
+        highestMarks: g.qCount > 0 ? (g.qCount * 1) : 0, // Max possible marks approximation
+        avgTime: g.qCount > 0 ? (g.totalTime / g.qCount) : 0,
+        avgAccuracy: g.count > 0 ? (g.totalCorrect / g.count) * 100 : 0
+      };
+    });
+    
+    perQuestionArray.sort((a,b) => a.index - b.index);
+
+    res.json({
+      success: true,
+      advancedStats: {
+        scoresCurve: scores,
+        medianScore: medianScore,
+        difficultyStats: diffStats,
+        perQuestion: perQuestionArray
+      }
+    });
+  } catch (err) {
+    console.error("Error in test-advanced-stats:", err);
+    res.status(500).json({ success: false, message: 'Server error fetching advanced stats.' });
+  }
+});
+
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
