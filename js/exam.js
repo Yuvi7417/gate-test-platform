@@ -548,6 +548,7 @@ function renderTestList(t, filter) {
     if (result) {
       it.status = "attempted";
       it.score = result.score;
+      it.maxScore = result.maxScore;
     }
   });
 
@@ -577,7 +578,7 @@ function renderTestList(t, filter) {
             <div class="test-meta-row">
               <span>${clockIconInline}${it.duration}</span>
               <span>${docIconInline}${it.questions} Questions</span>
-              ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/100</span>` : ""}
+              ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/${it.maxScore || 100}</span>` : ""}
             </div>
             <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
               ${it.status === "attempted" ? "View Result" : "Start Test"}
