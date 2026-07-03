@@ -2211,7 +2211,6 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-right: 1px solid #e3e7eb;
   min-width: 0;
 }
 .exam-instr-head {

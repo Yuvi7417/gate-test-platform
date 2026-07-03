@@ -617,12 +617,7 @@ function openInstructions(testName) {
     instrDurationElement.textContent = isTopicwise ? "45 minutes" : "90 minutes";
   }
   
-  const user = currentUser || { name: "Guest User", email: "" };
-  document.getElementById("examAvatar").textContent = (
-    user.name.trim().charAt(0) || "U"
-  ).toUpperCase();
-  document.getElementById("examUserName").textContent = user.name;
-  document.getElementById("examUserEmail").textContent = user.email;
+  history.pushState({ view: "instructions", param: testName }, "", "");
   document.getElementById("examOverlay").classList.add("show");
   document.getElementById("examOverlay").scrollTop = 0;
   document.querySelector(".exam-instr-body").scrollTop = 0;
@@ -644,12 +639,7 @@ function openInstructionsReadOnly() {
   const overlay = document.getElementById("examOverlay");
   document.getElementById("examTopTitle").textContent =
     document.getElementById("playerTopTitle").textContent || "Mock Test";
-  const user = currentUser || { name: "Guest User", email: "" };
-  document.getElementById("examAvatar").textContent = (
-    user.name.trim().charAt(0) || "U"
-  ).toUpperCase();
-  document.getElementById("examUserName").textContent = user.name;
-  document.getElementById("examUserEmail").textContent = user.email;
+  history.pushState({ view: "instructions", param: null }, "", "");
 
   overlay.classList.add("show", "readonly");
   overlay.scrollTop = 0;
