@@ -555,7 +555,7 @@ function openDetail(id, pushHistory = true) {
       <div class="detail-banner-text">
         <div class="detail-banner-eyebrow">PYQs · 15 years</div>
         <div class="detail-banner-main">Exam Practice<br>Test Series</div>
-        <div class="detail-banner-sub">2011 – 2025</div>
+        <div class="detail-banner-sub">2000 – 2026</div>
       </div>`;
 
   document.getElementById("dFeatures").innerHTML = t.features
