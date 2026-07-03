@@ -195,6 +195,52 @@ const testSeries = [
     ],
     price: "₹10",
     basePrice: 10,
+    brandLabel: "APEX EASY"
+  },
+  {
+    id: "cs-gate-classes",
+    code: "GATE",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "CS-GATE PYQ Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 37,
+    startDate: "2025-10-15",
+    endDate: "2027-02-15",
+    session: "2025-2026",
+    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) question papers from 2000 to 2026, designed to simulate real exam conditions and sharpen problem-solving, time management and exam readiness.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      ["TWT - Database-1", "Apr 30, 2026"],
+      ["TWT - Digital Logic-2", "Apr 28, 2026"],
+      ["TWT - Digital Logic-1", "Apr 24, 2026"],
+      ["FST - 7", "Mar 18, 2026"],
+      ["FST - 6", "Mar 18, 2026"],
+      ["FST - 5", "Nov 24, 2025"],
+      ["FST - 4", "Nov 23, 2025"],
+      ["FST - 3", "Nov 22, 2025"],
+      ["FST - 2", "Nov 21, 2025"],
+    ],
+    price: "₹10",
+    basePrice: 10,
+    brandLabel: "APEX CLASSES"
   },
   {
     id: "ee-gate-pyq",
@@ -465,7 +511,7 @@ function renderTS(filter, query) {
               <div class="ts-banner-eyebrow">PYQs · 15 years</div>
               <div class="ts-banner-main">Exam Practice<br>Test Series</div>
               <div class="ts-banner-sub">2000 – 2026</div>
-              <div class="apex-easy-brand">✨ APEX EASY</div>
+              <div class="apex-easy-brand">✨ ${t.brandLabel || "APEX EASY"}</div>
             </div>
           </div>
           <div class="ts-body">
@@ -556,6 +602,7 @@ function openDetail(id, pushHistory = true) {
         <div class="detail-banner-eyebrow">PYQs · 15 years</div>
         <div class="detail-banner-main">Exam Practice<br>Test Series</div>
         <div class="detail-banner-sub">2000 – 2026</div>
+        <div class="apex-easy-brand">✨ ${t.brandLabel || "APEX EASY"}</div>
       </div>`;
 
   document.getElementById("dFeatures").innerHTML = t.features
