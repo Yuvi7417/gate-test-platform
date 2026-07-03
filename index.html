@@ -568,25 +568,39 @@
         <button class="ra-btn" onclick="alert('Download — coming soon.')">Download Solutions</button>
       </div>
 
-      <div class="result-summary-card">
-        <div class="result-donut-wrap">
-          <div class="result-donut" id="resultDonut">
-            <div class="result-donut-center">
+      <div class="result-summary-card result-summary-wide">
+        <!-- Left: Donut Chart -->
+        <div class="result-donut-container">
+          <div class="result-donut result-donut-lg" id="resultDonut">
+            <div class="result-donut-center result-donut-center-lg">
               <span class="rd-label">Total Score</span>
               <span class="rd-score" id="rdScore">0 / 0</span>
             </div>
           </div>
-          <div class="result-legend">
+        </div>
+        
+        <!-- Right: Legend & Stats -->
+        <div class="result-summary-content">
+          <div class="result-legend result-legend-horizontal">
             <div><span class="dot correct"></span>Correct <b id="legCorrect">0</b></div>
             <div><span class="dot incorrect"></span>Incorrect <b id="legIncorrect">0</b></div>
             <div><span class="dot unattempted"></span>Unattempted <b id="legUnattempted">0</b></div>
           </div>
-        </div>
-        <div class="result-stats-grid">
-          <div class="result-stat"><span>Rank</span><b id="statRank">— out of —</b></div>
-          <div class="result-stat"><span>Percentile</span><b id="statPercentile">—</b></div>
-          <div class="result-stat"><span>Accuracy</span><b id="statAccuracy">—</b></div>
-          <div class="result-stat"><span>Time Taken</span><b id="statTime">—</b></div>
+          
+          <div class="result-stats-row">
+            <div class="result-stat result-stat-wide">
+              <span>Rank</span><b id="statRank">— out of —</b>
+            </div>
+            <div class="result-stat result-stat-wide">
+              <span>Percentile</span><b id="statPercentile">—</b>
+            </div>
+            <div class="result-stat result-stat-wide">
+              <span>Accuracy</span><b id="statAccuracy">—</b>
+            </div>
+            <div class="result-stat result-stat-wide">
+              <span>Time Taken <svg style="width:12px;height:12px;color:#8a97a5;margin-left:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span><b id="statTime">—</b>
+            </div>
+          </div>
         </div>
       </div>
 
