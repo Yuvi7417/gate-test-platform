@@ -925,6 +925,31 @@ main {
   transform: translateY(-3px);
   box-shadow: 0 18px 34px rgba(15, 42, 67, 0.12);
 }
+.ts-card.coming-soon {
+  cursor: not-allowed;
+}
+.ts-card.coming-soon:hover {
+  transform: none;
+  box-shadow: none;
+}
+.coming-soon-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(246, 243, 236, 0.7); /* translucent var(--paper) */
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  z-index: 10;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  pointer-events: none; /* Let the card's not-allowed cursor show */
+}
 .ts-banner {
   position: relative;
   height: 118px;

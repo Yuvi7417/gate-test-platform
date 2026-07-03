@@ -426,6 +426,7 @@ const testSeries = [
       ["Test - 5", "Dec 14, 2025"],
     ],
     price: "₹450 + GST",
+    comingSoon: true
   },
 ];
 
@@ -444,8 +445,13 @@ function renderTS(filter, query) {
     .forEach((t) => {
       const el = document.createElement("div");
       el.className = "ts-card";
-      el.onclick = () => openDetail(t.id);
+      if (!t.comingSoon) {
+        el.onclick = () => openDetail(t.id);
+      } else {
+        el.classList.add("coming-soon");
+      }
       el.innerHTML = `
+          ${t.comingSoon ? '<div class="coming-soon-overlay">Coming Soon</div>' : ''}
           <span class="card-corner tl"></span><span class="card-corner br"></span>
           <div class="ts-banner"><div class="ts-banner-grid"></div>
             <div class="ts-code">${t.code}</div>
