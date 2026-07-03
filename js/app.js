@@ -7,10 +7,15 @@
 
 /* ---------- view switching ---------- */
 function showView(name, pushHistory = true) {
+  const target = document.getElementById("view-" + name);
+  if (!target) {
+    if (name === "home") return showView("list", pushHistory);
+    return;
+  }
   document
     .querySelectorAll(".view")
     .forEach((v) => v.classList.remove("active"));
-  document.getElementById("view-" + name).classList.add("active");
+  target.classList.add("active");
   document
     .querySelectorAll(".nav-item[data-nav]")
     .forEach((n) => n.classList.remove("active"));
@@ -28,12 +33,27 @@ function showView(name, pushHistory = true) {
 
 // Initial state setup and popstate listener
 window.addEventListener("DOMContentLoaded", () => {
-  history.replaceState({ view: "home", param: null }, "", "");
+  history.replaceState({ view: "list", param: null }, "", "");
 });
 
 window.addEventListener("popstate", (e) => {
+  // Close any open overlays/modals when navigating back
+  document.querySelectorAll('.show, .open').forEach(el => {
+    if (el.id && (el.id.includes('Overlay') || el.id.includes('Modal'))) {
+      el.classList.remove('show', 'open');
+    }
+  });
+  
+  // Also reset body overflow which might have been hidden by overlays
+  document.body.style.overflow = "";
+  
+  // Specific cleanups if certain overlays were open
+  if (typeof playerTimerInterval !== 'undefined' && playerTimerInterval) {
+    clearInterval(playerTimerInterval);
+  }
+
   if (!e.state) {
-    showView("home", false);
+    showView("list", false);
     return;
   }
   
