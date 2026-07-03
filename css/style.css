@@ -4193,3 +4193,7 @@ main {
 .sm-status b.Unattempted { color: #9e9e9e; }
 
 .player-opt { border: 1px solid transparent; }
+
+.player-qbtn.correct { background: #3ea655; border-radius: 4px; }
+.player-qbtn.incorrect { background: #c0392b; border-radius: 4px; }
+.player-qbtn.unattempted { background: #a9b2bc; border-radius: 4px; }

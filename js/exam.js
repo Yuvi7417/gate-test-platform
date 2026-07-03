@@ -1129,10 +1129,10 @@ function updatePlayerQBtn(i) {
   const st = playerState[i];
   const btn = document.getElementById("qbtn-" + i);
   if (!btn) return;
-  btn.classList.remove("answered", "notanswered", "marked", "correct", "incorrect");
+  btn.classList.remove("answered", "notanswered", "marked", "correct", "incorrect", "unattempted");
   if (solutionMode) {
     if (st.answer === null || st.answer === undefined || st.answer === "") {
-      btn.classList.add("notanswered");
+      btn.classList.add("unattempted");
     } else {
       const q = playerQuestions[i];
       let isCorrect = false;
