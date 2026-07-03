@@ -6,7 +6,7 @@
 
 
 /* ---------- view switching ---------- */
-function showView(name) {
+function showView(name, pushHistory = true) {
   document
     .querySelectorAll(".view")
     .forEach((v) => v.classList.remove("active"));
@@ -20,7 +20,35 @@ function showView(name) {
   );
   if (nav) nav.classList.add("active");
   window.scrollTo({ top: 0, behavior: "smooth" });
+  
+  if (pushHistory) {
+    history.pushState({ view: name, param: null }, "", "");
+  }
 }
+
+// Initial state setup and popstate listener
+window.addEventListener("DOMContentLoaded", () => {
+  history.replaceState({ view: "home", param: null }, "", "");
+});
+
+window.addEventListener("popstate", (e) => {
+  if (!e.state) {
+    showView("home", false);
+    return;
+  }
+  
+  if (e.state.view === "detail") {
+    if (typeof openDetail === "function") {
+      openDetail(e.state.param, false);
+    }
+  } else if (e.state.view === "tests") {
+    if (typeof openTestList === "function") {
+      openTestList(e.state.param, false);
+    }
+  } else {
+    showView(e.state.view, false);
+  }
+});
 
 /* ---------- icon set ---------- */
 const icons = {
@@ -468,7 +496,7 @@ const clockIcon =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>';
 
 let currentDetailId = null;
-function openDetail(id) {
+function openDetail(id, pushHistory = true) {
   const t = testSeries.find((x) => x.id === id);
   if (!t) return;
   currentDetailId = id;
@@ -526,5 +554,8 @@ function openDetail(id) {
     )
     .join("");
 
-  showView("detail");
+  showView("detail", false);
+  if (pushHistory) {
+    history.pushState({ view: "detail", param: id }, "", "");
+  }
 }

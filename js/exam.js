@@ -493,7 +493,7 @@ function renderLearn() {
 }
 
 let currentTestListId = null;
-function openTestList(id) {
+function openTestList(id, pushHistory = true) {
   const t = testSeries.find((x) => x.id === id);
   if (!t) return;
   currentTestListId = id;
@@ -503,7 +503,11 @@ function openTestList(id) {
     .forEach((tb) => tb.classList.remove("active"));
   document.querySelector('#tlTabs .tab[data-f="all"]').classList.add("active");
   renderTestList(t, "all");
-  showView("tests");
+  showView("tests", false);
+  
+  if (pushHistory) {
+    history.pushState({ view: "tests", param: id }, "", "");
+  }
 }
 
 function renderTestList(t, filter) {
