@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apex Core | GATE, PSU & ESE Coaching</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 
@@ -592,16 +591,25 @@
       </div>
 
       <div class="result-subject-title">Subject Wise Analysis</div>
-      <div class="result-subject-card">
-        <div class="result-subject-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="4" width="20" height="14" rx="1" />
-            <path d="M8 21h8M12 18v3" />
-          </svg>
-        </div>
-        <div class="result-subject-name">GATE CS OTS - 2027</div>
-        <div class="result-subject-donut" id="resultSubjectDonut"></div>
+      <div class="analysis-cards-container" id="subjectWiseContainer">
+        <!-- JS will populate subject cards here -->
       </div>
+      
+      <div class="result-subject-title" style="margin-top: 30px;">Topic-wise Performance</div>
+      <div class="analysis-cards-container" id="topicWiseContainer">
+        <!-- JS will populate topic cards here -->
+      </div>
+
+      <div class="result-subject-title" style="margin-top: 40px;">Number of Questions By Subject</div>
+      <div class="chart-card">
+        <canvas id="subjectChart"></canvas>
+      </div>
+
+      <div class="result-subject-title" style="margin-top: 40px;">Number of Questions By Topics</div>
+      <div class="chart-card">
+        <canvas id="topicChart"></canvas>
+      </div>
+
     </div>
   </div>
 

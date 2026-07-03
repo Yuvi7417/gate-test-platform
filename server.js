@@ -385,6 +385,48 @@ app.get('/api/user-results', authenticateToken, async (req, res) => {
   }
 });
 
+// 6. Get Global Test Stats Endpoint
+app.get('/api/test-stats/:testName', async (req, res) => {
+  try {
+    const { testName } = req.params;
+    
+    const stats = await TestResult.aggregate([
+      { $match: { testName: testName } },
+      {
+        $group: {
+          _id: null,
+          avgScore: { $avg: "$score" },
+          highestScore: { $max: "$score" },
+          totalCorrect: { $sum: "$correctCount" },
+          totalWrong: { $sum: "$wrongCount" },
+          totalStudents: { $sum: 1 }
+        }
+      }
+    ]);
+
+    if (stats.length === 0) {
+      return res.json({ success: true, stats: null });
+    }
+
+    const { avgScore, highestScore, totalCorrect, totalWrong, totalStudents } = stats[0];
+    const totalAttempted = totalCorrect + totalWrong;
+    const avgAccuracy = totalAttempted > 0 ? (totalCorrect / totalAttempted) * 100 : 0;
+
+    res.json({
+      success: true,
+      stats: {
+        avgScore: Math.round(avgScore * 100) / 100,
+        highestScore: Math.round(highestScore * 100) / 100,
+        avgAccuracy: Math.round(avgAccuracy * 100) / 100,
+        totalStudents
+      }
+    });
+  } catch (err) {
+    console.error("Error fetching test stats:", err);
+    res.status(500).json({ success: false, message: 'Server error fetching test stats.' });
+  }
+});
+
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));

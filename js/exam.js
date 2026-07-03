@@ -1306,7 +1306,7 @@ function openSolutionMode(testName) {
   });
 }
 
-function showResultPage() {
+async function showResultPage() {
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };
   document.getElementById("resultUserAvatar").textContent = (
@@ -1314,8 +1314,8 @@ function showResultPage() {
   ).toUpperCase();
   document.getElementById("resultUserName").textContent = user.name;
   document.getElementById("resultUserEmail").textContent = user.email;
-  document.getElementById("resultCrumbName").textContent =
-    document.getElementById("playerSideSecName").textContent;
+  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  document.getElementById("resultCrumbName").textContent = testName;
 
   document.getElementById("rdScore").textContent = r.score + " / " + r.maxScore;
   document.getElementById("legCorrect").textContent = r.correctCount;
@@ -1329,26 +1329,140 @@ function showResultPage() {
   document
     .getElementById("resultDonut")
     .style.setProperty("--donut-gradient", donutGradient);
-  document.getElementById("resultSubjectDonut").style.background =
-    `conic-gradient(${donutGradient})`;
 
   const accuracy =
     r.correctCount + r.wrongCount > 0
-      ? Math.round((r.correctCount / (r.correctCount + r.wrongCount)) * 1000) /
-      10
+      ? Math.round((r.correctCount / (r.correctCount + r.wrongCount)) * 1000) / 10
       : 0;
   document.getElementById("statAccuracy").textContent = accuracy + "%";
-  document.getElementById("statTime").textContent =
-    r.tMin + " min " + r.tSec + " sec";
+  document.getElementById("statTime").textContent = r.tMin + " min " + r.tSec + " sec";
 
-  // Rank/percentile are illustrative until this test is connected to a real leaderboard.
-  const pseudoRank = Math.max(1, 63 - Math.round(r.score));
-  document.getElementById("statRank").textContent = pseudoRank + " out of 63";
-  document.getElementById("statPercentile").textContent =
-    Math.max(1, Math.round((1 - pseudoRank / 63) * 100 * 10) / 10) + "%";
+  let avgScore = r.score;
+  let highestScore = r.score;
+  let avgAcc = accuracy;
+  let totalStudents = 63;
+  
+  try {
+    const res = await fetch('/api/test-stats/' + encodeURIComponent(testName));
+    const data = await res.json();
+    if (data.success && data.stats) {
+      avgScore = data.stats.avgScore;
+      highestScore = data.stats.highestScore;
+      avgAcc = data.stats.avgAccuracy;
+      totalStudents = data.stats.totalStudents || 63;
+    }
+  } catch(e) {
+    console.error("Could not fetch stats", e);
+  }
+
+  // Rank/percentile are illustrative
+  const pseudoRank = Math.max(1, totalStudents - Math.round(r.score));
+  document.getElementById("statRank").textContent = pseudoRank + " out of " + totalStudents;
+  document.getElementById("statPercentile").textContent = Math.max(1, Math.round((1 - pseudoRank / totalStudents) * 100 * 10) / 10) + "%";
+
+  const renderCard = (title) => `
+      <div class="result-subject-card">
+        <div class="rsc-top">
+          <div class="result-subject-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="14" rx="1" />
+              <path d="M8 21h8M12 18v3" />
+            </svg>
+          </div>
+          <div class="result-subject-name">${title}</div>
+        </div>
+        <div class="rsc-donut-row">
+          <div class="result-subject-donut" style="--donut-gradient: ${donutGradient}">
+            <div class="result-subject-donut-inner"></div>
+          </div>
+          <div class="result-legend" style="font-size: 11px;">
+            <div><span class="dot correct"></span>Correct <b>${r.correctCount}</b></div>
+            <div><span class="dot incorrect"></span>Incorrect <b>${r.wrongCount}</b></div>
+            <div><span class="dot unattempted"></span>Unattempted <b>${r.unattempted}</b></div>
+          </div>
+        </div>
+        <div class="rsc-stats">
+          <div class="rsc-stat-row"><span>Score</span><span class="rsc-stat-val">${r.score} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Avg Score</span><span class="rsc-stat-val">${avgScore} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Accuracy</span><span class="rsc-stat-val">${accuracy}%</span></div>
+          <div class="rsc-stat-row"><span>Questions</span><span class="rsc-stat-val">${total}</span></div>
+          <div class="rsc-stat-row"><span>Highest</span><span class="rsc-stat-val">${highestScore} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Avg Acc.</span><span class="rsc-stat-val">${avgAcc}%</span></div>
+        </div>
+      </div>
+  `;
+
+  document.getElementById("subjectWiseContainer").innerHTML = renderCard("GATE CS OTS - 2027");
+  document.getElementById("topicWiseContainer").innerHTML = renderCard(testName);
 
   document.body.style.overflow = "";
   document.getElementById("resultOverlay").classList.add("show");
+
+  // Render Charts
+  setTimeout(() => {
+    renderBarChart("subjectChart", "GATE CS OTS - 2027", total, "#14619C");
+    renderBarChart("topicChart", testName, total, "#5D8C72");
+  }, 100);
+}
+
+let __chartInstances = {};
+function renderBarChart(canvasId, label, count, color) {
+  if (typeof Chart === 'undefined') return;
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+
+  if (__chartInstances[canvasId]) {
+    __chartInstances[canvasId].destroy();
+  }
+
+  __chartInstances[canvasId] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [label.toUpperCase()],
+      datasets: [{
+        label: 'Questions',
+        data: [count],
+        backgroundColor: color,
+        barPercentage: 0.15
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#fff',
+          titleColor: '#1c2530',
+          bodyColor: '#1c2530',
+          borderColor: '#e3e7eb',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            title: () => label,
+            label: (ctx) => 'Questions : ' + ctx.raw
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          suggestedMax: count + 2,
+          grid: {
+            color: '#f1f4f8',
+            drawBorder: false
+          },
+          title: {
+            display: true,
+            text: 'Count Of Questions'
+          }
+        },
+        x: {
+          grid: { display: false }
+        }
+      }
+    }
+  });
 }
 
 function closeResult() {
