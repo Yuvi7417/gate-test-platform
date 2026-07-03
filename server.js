@@ -446,7 +446,7 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
       const answers = r.answers || {};
       Object.keys(answers).forEach(qIndex => {
         if (!questionStats[qIndex]) {
-          questionStats[qIndex] = { correct: 0, wrong: 0, unattempted: 0, totalTime: 0, count: 0 };
+          questionStats[qIndex] = { correct: 0, wrong: 0, unattempted: 0, totalTime: 0, count: 0, options: {} };
         }
         const state = answers[qIndex];
         const timeSpent = state.timeSpent || 0;
@@ -460,6 +460,11 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
           questionStats[qIndex].correct += 1;
         } else {
           questionStats[qIndex].wrong += 1;
+        }
+
+        if (state.answer !== null && state.answer !== undefined && state.answer !== "") {
+          let ansStr = Array.isArray(state.answer) ? state.answer.join(',') : state.answer.toString();
+          questionStats[qIndex].options[ansStr] = (questionStats[qIndex].options[ansStr] || 0) + 1;
         }
       });
     });
@@ -491,13 +496,27 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
       let avgMks = q.count > 0 ? ((q.correct * 1) - (q.wrong * 0.33)) / q.count : 0;
       difficultyGroups[diff].marks += avgMks;
 
+      let popularChoice = null;
+      let popularCount = 0;
+      Object.entries(q.options).forEach(([opt, count]) => {
+        if (count > popularCount) {
+          popularCount = count;
+          popularChoice = opt;
+        }
+      });
+      let popularPct = q.count > 0 ? ((popularCount / q.count) * 100).toFixed(2) : 0;
+      let attemptRate = q.count > 0 ? (((q.correct + q.wrong) / q.count) * 100).toFixed(2) : 0;
+
       perQuestionArray.push({
         index: parseInt(qIndex),
         correct: q.correct,
         wrong: q.wrong,
         unattempted: q.unattempted,
         difficulty: diff,
-        avgTime: q.avgTime
+        avgTime: q.avgTime,
+        popularChoice,
+        popularPct,
+        attemptRate
       });
     });
     

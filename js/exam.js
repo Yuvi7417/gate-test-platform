@@ -1030,10 +1030,35 @@ function renderPlayerQuestion(i) {
     document.getElementById("psbCorrectLabel").textContent = "Correct Answer: " + correctLabel;
     document.getElementById("psbDetails").innerHTML = q.solution || "<i>Detailed solution not provided for this question.</i>";
     
-    // Stats (fallback to defaults if not in DB)
-    document.getElementById("psbPopular").textContent = q.stats?.popular || "B (Chosen by 84.13% students)";
-    document.getElementById("psbAttemptRate").textContent = q.stats?.attemptRate || "94.03%";
-    document.getElementById("psbAvgTime").textContent = q.stats?.avgTime || "221.36";
+    // Dynamic stats
+    let qStats = null;
+    if (window.__advancedStats && window.__advancedStats.perQuestionArray) {
+      qStats = window.__advancedStats.perQuestionArray.find(st => st.index === i);
+    }
+    
+    let popularStr = "Data not available";
+    let attemptRateStr = "0%";
+    let avgTimeStr = "0s";
+    
+    if (qStats) {
+      let popChoiceMapped = qStats.popularChoice;
+      if (popChoiceMapped !== null && popChoiceMapped !== undefined) {
+        if (q.type === "MSQ") {
+          popChoiceMapped = popChoiceMapped.split(',').map(c => String.fromCharCode(65 + parseInt(c))).join(", ");
+        } else if (q.type !== "NAT") {
+          popChoiceMapped = String.fromCharCode(65 + parseInt(popChoiceMapped));
+        }
+        popularStr = `${popChoiceMapped} (Chosen by ${qStats.popularPct}%)`;
+      } else {
+        popularStr = "None";
+      }
+      attemptRateStr = qStats.attemptRate + "%";
+      avgTimeStr = Math.round(qStats.avgTime) + "s";
+    }
+
+    document.getElementById("psbPopular").textContent = q.stats?.popular || popularStr;
+    document.getElementById("psbAttemptRate").textContent = q.stats?.attemptRate || attemptRateStr;
+    document.getElementById("psbAvgTime").textContent = q.stats?.avgTime || avgTimeStr;
   } else {
     solBox.style.display = "none";
   }
@@ -1383,9 +1408,21 @@ function openSolutionMode(testName) {
     headers: { 'Authorization': 'Bearer ' + token }
   })
   .then(res => res.json())
-  .then(data => {
+  .then(async data => {
     if (data.success) {
       closeResult();
+      
+      // Fetch advanced stats for solution mode
+      try {
+        const statsRes = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
+        const statsData = await statsRes.json();
+        if (statsData.success) {
+          window.__advancedStats = statsData.advancedStats;
+        }
+      } catch(e) {
+        console.error("Failed to load advanced stats", e);
+      }
+      
       startPlayer(testName, data.questions);
       solutionMode = true; // Set this AFTER startPlayer resets it
       

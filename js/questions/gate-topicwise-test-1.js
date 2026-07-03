@@ -14,6 +14,7 @@ const gate_topicwise_test_1 = [
   {
     marks: 1,
     neg: 0.33,
+    type: "MCQ",
     text: "he Boolean expression for the output ‘F’ of the logic circuit shown in the figure below is",
     image: 'images/digital logic-1/mceclip6-1777717003260.png',
     options: [
