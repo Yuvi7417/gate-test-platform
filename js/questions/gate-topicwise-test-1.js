@@ -1,15 +1,15 @@
 const gate_topicwise_test_1 = [
-    {
+  {
     marks: 1,
     neg: 0.33,
     text: "The complement of the simplified value of the k-map shown below is",
     image: 'images/digital logic-1/mceclip0-1777716919370.png',
     options: ['<img src="images/digital logic-1/mceclip1-1777716927721.png" alt="Option A" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip2-1777716934657.png" alt="Option B" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip3-1777716941485.png" alt="Option C" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip4-1777716946265.png" alt="Option D" style="max-width:150px;">',],
+      '<img src="images/digital logic-1/mceclip2-1777716934657.png" alt="Option B" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip3-1777716941485.png" alt="Option C" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip4-1777716946265.png" alt="Option D" style="max-width:150px;">',],
     correct: 1,
-    solution: "By properly arranging the given k-map, you get Option B. Add your image tag here like &lt;img src='...'&gt;",
+    solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
   },
   {
     marks: 1,
@@ -17,11 +17,11 @@ const gate_topicwise_test_1 = [
     text: "he Boolean expression for the output ‘F’ of the logic circuit shown in the figure below is",
     image: 'images/digital logic-1/mceclip6-1777717003260.png',
     options: [
-  '<img src="images/digital logic-1/mceclip7-1777717008801.png" alt="Option A" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip8-1777717014766.png" alt="Option B" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip10-1777717028350.png" alt="Option C" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip9-1777717022578.png" alt="Option D" style="max-width:150px;">',
-],
+      '<img src="images/digital logic-1/mceclip7-1777717008801.png" alt="Option A" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip8-1777717014766.png" alt="Option B" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip10-1777717028350.png" alt="Option C" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip9-1777717022578.png" alt="Option D" style="max-width:150px;">',
+    ],
     correct: 2,
   },
   {
@@ -31,12 +31,12 @@ const gate_topicwise_test_1 = [
     text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
     image: 'images/digital logic-1/mceclip12-1777717060063.png',
     options: [
-  '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip14-1777717083378.png" alt="Option B" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option C" style="max-width:150px;">',
-  '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option D" style="max-width:150px;">',
+      '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip14-1777717083378.png" alt="Option B" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option C" style="max-width:150px;">',
+      '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option D" style="max-width:150px;">',
     ],
-    correct: [0,1],
+    correct: [0, 1],
   },
   {
     marks: 1,
