@@ -139,6 +139,14 @@ a {
   background: var(--ink);
   padding: 28px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 68px;
+  height: calc(100vh - 68px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 .nav-item {
   display: flex;
