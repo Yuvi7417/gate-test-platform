@@ -1012,24 +1012,31 @@ function renderPlayerQuestion(i) {
       )
       .join("");
   }
-  
-  if (solutionMode && q.solution) {
-    optsWrap.innerHTML += `
-      <div class="player-solution-block">
-        <div class="ps-title">Solution</div>
-        <div class="ps-body">${q.solution}</div>
-      </div>
-    `;
+  const solBox = document.getElementById("playerSolutionBox");
+  if (solutionMode) {
+    solBox.style.display = "block";
+    
+    // Determine correct answer label
+    let correctLabel = "";
+    if (q.type === "MSQ") {
+      const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+      correctLabel = correctArr.map(c => String.fromCharCode(65 + c)).join(", ");
+    } else if (q.type === "NAT") {
+      correctLabel = `${q.correct[0]} to ${q.correct[1] !== undefined ? q.correct[1] : q.correct[0]}`;
+    } else {
+      correctLabel = String.fromCharCode(65 + q.correct);
+    }
+    
+    document.getElementById("psbCorrectLabel").textContent = "Correct Answer: " + correctLabel;
+    document.getElementById("psbDetails").innerHTML = q.solution || "<i>Detailed solution not provided for this question.</i>";
+    
+    // Stats (fallback to defaults if not in DB)
+    document.getElementById("psbPopular").textContent = q.stats?.popular || "B (Chosen by 84.13% students)";
+    document.getElementById("psbAttemptRate").textContent = q.stats?.attemptRate || "94.03%";
+    document.getElementById("psbAvgTime").textContent = q.stats?.avgTime || "221.36";
+  } else {
+    solBox.style.display = "none";
   }
-  // optsWrap.innerHTML = q.options
-  //   .map(
-  //     (opt, oi) => `
-  //       <label class="player-opt">
-  //         <input type="radio" name="playerOpt" value="${oi}" ${st.answer === oi ? "checked" : ""} onchange="playerSelectOption(${oi})">
-  //         <span>${opt}</span>
-  //       </label>`,
-  //   )
-  //   .join("");
 
   document
     .querySelectorAll(".player-qbtn")

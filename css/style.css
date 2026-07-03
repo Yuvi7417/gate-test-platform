@@ -4197,3 +4197,14 @@ main {
 .player-qbtn.correct { background: #3ea655; border-radius: 4px; }
 .player-qbtn.incorrect { background: #c0392b; border-radius: 4px; }
 .player-qbtn.unattempted { background: #a9b2bc; border-radius: 4px; }
+
+/* Solution Box */
+.player-solution-box { margin-top: 30px; border-top: 1px solid var(--gray-4); padding-top: 20px; font-family: 'Archivo', sans-serif; }
+.psb-stats { background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+.psb-stat-line { margin-bottom: 8px; font-size: 14px; color: #333; }
+.psb-stat-line:last-child { margin-bottom: 0; }
+.psb-icon { display: inline-flex; justify-content: center; align-items: center; width: 14px; height: 14px; border-radius: 50%; background: #aaa; color: #fff; font-size: 10px; font-weight: bold; margin-left: 5px; cursor: help; }
+.psb-heading { font-size: 16px; color: #1a2332; border-bottom: 2px solid #1a2332; display: inline-block; padding-bottom: 2px; margin-bottom: 15px; }
+.psb-correct-label { font-size: 14px; color: #333; margin-bottom: 10px; }
+.psb-details { font-size: 14px; color: #444; line-height: 1.6; }
+.psb-details img { max-width: 100%; height: auto; display: block; margin-top: 10px; }

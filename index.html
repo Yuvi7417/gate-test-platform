@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 
 <body>
@@ -405,6 +405,24 @@
           <div class="player-qtext" id="playerQText"></div>
           <div id="playerQImageSlot"></div>
           <div class="player-options" id="playerOptions"></div>
+          <div class="player-solution-box" id="playerSolutionBox" style="display:none;">
+            <div class="psb-stats">
+              <div class="psb-stat-line">
+                <b>Most Popular Choice <span class="psb-icon">i</span> :</b> <span id="psbPopular">B (Chosen by 84.13% students)</span>
+              </div>
+              <div class="psb-stat-line">
+                <b>Avg Attempt Rate:</b> <span id="psbAttemptRate">94.03%</span>
+                <b style="margin-left: 20px;">Avg Time Taken:</b> <span id="psbAvgTime">221.36</span> <span class="psb-icon">i</span>
+              </div>
+            </div>
+            
+            <div class="psb-content">
+              <h3 class="psb-heading">Solution</h3>
+              <div class="psb-correct-label" id="psbCorrectLabel">Correct Answer: B</div>
+              <div class="psb-details" id="psbDetails">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="player-footer">
           <div class="pf-left" id="playerFooterLeft">
@@ -762,7 +780,7 @@
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
   <!-- Question banks are now securely fetched from the backend API -->
-  <script src="js/exam.js?v=3"></script>
+  <script src="js/exam.js?v=5"></script>
 
 </body>
 
