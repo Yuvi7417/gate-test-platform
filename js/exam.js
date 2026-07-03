@@ -862,10 +862,60 @@ function renderPlayerQuestion(i) {
   };
   _id("playerQNum").textContent = "Question No. " + (i + 1);
   _id("playerQText").textContent = q.text;
-  _id("playerMarksPos").textContent =
-    "Marks for correct answer: +" + q.marks;
-  _id("playerMarksNeg").textContent =
-    "Negative Marks: -" + q.neg;
+  _id("playerMarksPos").textContent = "Marks for correct answer: +" + q.marks;
+  _id("playerMarksNeg").textContent = "Negative Marks: -" + q.neg;
+  _id("playerQType").textContent = q.type;
+
+  if (solutionMode) {
+    document.getElementById("playerTimerBlock").style.display = "none";
+    document.getElementById("playerSolutionMarks").style.display = "block";
+    document.getElementById("playerMarksWrap").style.display = "none";
+    document.getElementById("playerSolutionMeta").style.display = "flex";
+
+    // Determine status
+    let statusText = "Unattempted";
+    let isCorrect = false;
+    let isAttempted = false;
+
+    if (st.answer !== null && st.answer !== undefined && st.answer !== "") {
+      isAttempted = true;
+      if (q.type === "MSQ") {
+        const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+        const selected = Array.isArray(st.answer) ? st.answer : [];
+        if (correctArr.length === selected.length && correctArr.every(val => selected.includes(val))) {
+          isCorrect = true;
+        }
+      } else if (q.type === "NAT") {
+        const val = parseFloat(st.answer);
+        if (!isNaN(val) && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+          isCorrect = true;
+        }
+      } else {
+        if (st.answer === q.correct) isCorrect = true;
+      }
+    }
+
+    let marksAwarded = 0;
+    if (isAttempted) {
+      if (isCorrect) {
+        statusText = "Correct";
+        marksAwarded = q.marks;
+      } else {
+        statusText = "Incorrect";
+        marksAwarded = -q.neg;
+      }
+    }
+
+    document.getElementById("smStatusText").textContent = statusText;
+    document.getElementById("smStatusText").className = statusText;
+    document.getElementById("smTimeText").textContent = st.timeSpent || 0;
+    document.getElementById("psmAwarded").textContent = marksAwarded;
+  } else {
+    document.getElementById("playerTimerBlock").style.display = "block";
+    document.getElementById("playerSolutionMarks").style.display = "none";
+    document.getElementById("playerMarksWrap").style.display = "flex";
+    document.getElementById("playerSolutionMeta").style.display = "none";
+  }
 
   const imgSlot = _id("playerQImageSlot");
   imgSlot.innerHTML = q.image
@@ -928,13 +978,29 @@ function renderPlayerQuestion(i) {
   } else {
     optsWrap.innerHTML = q.options
       .map(
-        (opt, oi) => `
-          <label class="player-opt ${solutionMode && q.correct === oi ? 'correct-bg' : ''} ${solutionMode && st.answer === oi && q.correct !== oi ? 'incorrect-bg' : ''}">
+        (opt, oi) => {
+          let bgClass = "";
+          let tagHtml = "";
+          if (solutionMode) {
+            if (q.correct === oi) {
+              bgClass = "correct-bg";
+              if (st.answer === oi) {
+                tagHtml = '<div class="solution-tag correct">Marked Answer</div>';
+              } else {
+                tagHtml = '<div class="solution-tag correct">Correct Answer</div>';
+              }
+            } else if (st.answer === oi) {
+              bgClass = "incorrect-bg";
+              tagHtml = '<div class="solution-tag marked">Marked Answer</div>';
+            }
+          }
+          return `
+          <label class="player-opt ${bgClass}">
             <input type="radio" name="playerOpt" value="${oi}" ${st.answer === oi ? "checked" : ""} ${solutionMode ? "disabled" : ""} onchange="playerSelectOption(${oi})">
             <span>${opt}</span>
-            ${solutionMode && q.correct === oi ? '<div class="solution-tag correct">Correct Answer</div>' : ''}
-            ${solutionMode && st.answer === oi ? '<div class="solution-tag marked">Marked Answer</div>' : ''}
-          </label>`,
+            ${tagHtml}
+          </label>`;
+        }
       )
       .join("");
   }
