@@ -21,7 +21,7 @@ async function seedTest(filename, varName) {
     });
 
     console.log(`Successfully seeded ${varName}!`);
-  } catch(e) {
+  } catch (e) {
     console.log(`Error seeding ${varName}:`, e.message);
   }
 }
@@ -31,7 +31,7 @@ async function seedAll() {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log("Connected to MongoDB for Seeding");
 
-    await seedTest('gate-topicwise-test-1.js', 'gate_topicwise_test_1');
+    // await seedTest('gate-topicwise-test-1.js', 'gate_topicwise_test_1');
     await seedTest('gate-topicwise-test-2.js', 'gate_topicwise_test_2');
     await seedTest('cs-subjectwise-test-5.js', 'cs_subjectwise_test_5');
 

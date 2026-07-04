@@ -382,7 +382,7 @@ function openPaymentGateway(id) {
         alert("Failed to initiate payment: " + data.message);
         return;
       }
-      
+
       const options = {
         key: data.key_id,
         amount: data.order.amount,
@@ -405,19 +405,19 @@ function openPaymentGateway(id) {
               courseId: id
             })
           })
-          .then(res => res.json())
-          .then(verifyData => {
-            if (verifyData.success) {
-              alert("Payment successful!");
-              enrollAndGo(id);
-            } else {
-              alert("Payment verification failed: " + verifyData.message);
-            }
-          })
-          .catch(err => {
-            console.error(err);
-            alert("Error verifying payment.");
-          });
+            .then(res => res.json())
+            .then(verifyData => {
+              if (verifyData.success) {
+                alert("Payment successful!");
+                enrollAndGo(id);
+              } else {
+                alert("Payment verification failed: " + verifyData.message);
+              }
+            })
+            .catch(err => {
+              console.error(err);
+              alert("Error verifying payment.");
+            });
         },
         prefill: {
           name: currentUser ? currentUser.name : "",
@@ -428,9 +428,9 @@ function openPaymentGateway(id) {
           color: "#FFC107"
         }
       };
-      
+
       const rzp1 = new Razorpay(options);
-      rzp1.on('payment.failed', function (response){
+      rzp1.on('payment.failed', function (response) {
         alert("Payment failed: " + response.error.description);
       });
       rzp1.open();
@@ -504,7 +504,7 @@ function openTestList(id, pushHistory = true) {
   document.querySelector('#tlTabs .tab[data-f="all"]').classList.add("active");
   renderTestList(t, "all");
   showView("tests", false);
-  
+
   if (pushHistory) {
     history.pushState({ view: "tests", param: id }, "", "");
   }
@@ -541,7 +541,7 @@ function renderTestList(t, filter) {
       score: null,
     };
   });
-  
+
   // Map user results to status
   items.forEach(it => {
     const result = userResults.find(r => r.testName === it.name);
@@ -611,13 +611,13 @@ let pendingTestName = "";
 function openInstructions(testName) {
   pendingTestName = testName || "";
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
-  
+
   const isTopicwise = (testName || "").includes("Topicwise");
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     instrDurationElement.textContent = isTopicwise ? "45 minutes" : "90 minutes";
   }
-  
+
   history.pushState({ view: "instructions", param: testName }, "", "");
   document.getElementById("examOverlay").classList.add("show");
   document.getElementById("examOverlay").scrollTop = 0;
@@ -671,7 +671,7 @@ openInstructions = function (testName) {
 
 window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
   "Module 5": "cs_subjectwise_test_5",
-  "Digital Logic-1": "gate_topicwise_test_1",
+  // "Digital Logic-1": "gate_topicwise_test_1",
   "Digital Logic-2": "gate_topicwise_test_2"
 });
 
@@ -696,7 +696,7 @@ function proceedFromInstructions() {
   }
 
   const backendTestId = testBackendIdMap[testKey];
-  
+
   // Check local test registry first!
   if (window.testMap && window.testMap[backendTestId]) {
     closeInstructions();
@@ -787,7 +787,7 @@ function renderPlayer() {
   renderPlayerQuestion(playerCurrent);
   updatePlayerCounts();
   _id("playerOverlay").classList.add("show");
-  
+
   if (solutionMode) {
     _id("playerFooterLeft").style.display = "none";
     _id("playerFooterRight").style.display = "none";
@@ -800,15 +800,15 @@ function renderPlayer() {
     _id("playerSolutionFooter").style.display = "none";
     document.querySelector(".pf-submit-btn").style.display = "inline-flex";
   }
-  
+
   if (playerTimerInterval) clearInterval(playerTimerInterval);
-  
+
   if (solutionMode) {
-     document.getElementById("playerTimer").textContent = "Solution Mode";
+    document.getElementById("playerTimer").textContent = "Solution Mode";
   } else {
     playerTimerInterval = setInterval(() => {
       playerTimerSecs--;
-      
+
       if (playerState[playerCurrent]) {
         playerState[playerCurrent].timeSpent = (playerState[playerCurrent].timeSpent || 0) + 1;
       }
@@ -1030,7 +1030,7 @@ function renderPlayerQuestion(i) {
   const solBox = document.getElementById("playerSolutionBox");
   if (solutionMode) {
     solBox.style.display = "block";
-    
+
     // Determine correct answer label
     let correctLabel = "";
     if (q.type === "MSQ") {
@@ -1041,20 +1041,20 @@ function renderPlayerQuestion(i) {
     } else {
       correctLabel = String.fromCharCode(65 + q.correct);
     }
-    
+
     document.getElementById("psbCorrectLabel").textContent = "Correct Answer: " + correctLabel;
     document.getElementById("psbDetails").innerHTML = q.solution || "<i>Detailed solution not provided for this question.</i>";
-    
+
     // Dynamic stats
     let qStats = null;
     if (window.__advancedStats && window.__advancedStats.perQuestionArray) {
       qStats = window.__advancedStats.perQuestionArray.find(st => st.index === i);
     }
-    
+
     let popularStr = "Data not available";
     let attemptRateStr = "0%";
     let avgTimeStr = "0s";
-    
+
     if (qStats) {
       let popChoiceMapped = qStats.popularChoice;
       if (popChoiceMapped !== null && popChoiceMapped !== undefined) {
@@ -1341,7 +1341,7 @@ function confirmSubmit() {
 
   document.getElementById("playerOverlay").classList.remove("show");
   document.getElementById("successOverlay").classList.add("show");
-  
+
   // Submit to DB
   const token = localStorage.getItem('apexcore_token');
   if (token) {
@@ -1408,60 +1408,60 @@ function openSolutionMode(testName) {
     alert("Answers not found for this test. Past tests before this update do not have answers saved.");
     return;
   }
-  
+
   const testKey = findMatchingTest(testName);
   if (!testKey) {
     alert("Test data not found.");
     return;
   }
-  
+
   const backendTestId = testBackendIdMap[testKey];
   const courseId = currentTestListId;
   const token = localStorage.getItem('apexcore_token');
-  
+
   // Local registry fallback for past results
   if (window.testMap && window.testMap[backendTestId]) {
     closeResult();
     startPlayer(testName, window.testMap[backendTestId]);
-    solutionMode = true; 
+    solutionMode = true;
     playerState = result.answers;
     renderPlayer();
     return;
   }
-  
+
   fetch(`/api/test/${courseId}/${backendTestId}`, {
     headers: { 'Authorization': 'Bearer ' + token }
   })
-  .then(res => res.json())
-  .then(async data => {
-    if (data.success) {
-      closeResult();
-      
-      // Fetch advanced stats for solution mode
-      try {
-        const statsRes = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
-        const statsData = await statsRes.json();
-        if (statsData.success) {
-          window.__advancedStats = statsData.advancedStats;
+    .then(res => res.json())
+    .then(async data => {
+      if (data.success) {
+        closeResult();
+
+        // Fetch advanced stats for solution mode
+        try {
+          const statsRes = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
+          const statsData = await statsRes.json();
+          if (statsData.success) {
+            window.__advancedStats = statsData.advancedStats;
+          }
+        } catch (e) {
+          console.error("Failed to load advanced stats", e);
         }
-      } catch(e) {
-        console.error("Failed to load advanced stats", e);
+
+        startPlayer(testName, data.questions);
+        solutionMode = true; // Set this AFTER startPlayer resets it
+
+        // restore the player state
+        playerState = result.answers;
+        renderPlayer();
+      } else {
+        alert("Error loading test: " + data.message);
       }
-      
-      startPlayer(testName, data.questions);
-      solutionMode = true; // Set this AFTER startPlayer resets it
-      
-      // restore the player state
-      playerState = result.answers;
-      renderPlayer();
-    } else {
-      alert("Error loading test: " + data.message);
-    }
-  })
-  .catch(err => {
-    console.error("Test load error", err);
-    alert("Error fetching test: " + err.message);
-  });
+    })
+    .catch(err => {
+      console.error("Test load error", err);
+      alert("Error fetching test: " + err.message);
+    });
 }
 
 async function showResultPage(explicitTestName) {
@@ -1503,7 +1503,7 @@ async function showResultPage(explicitTestName) {
   let highestScore = r.score;
   let avgAcc = accuracy;
   let totalStudents = 63;
-  
+
   try {
     const res = await fetch('/api/test-stats/' + encodeURIComponent(testName));
     const data = await res.json();
@@ -1513,7 +1513,7 @@ async function showResultPage(explicitTestName) {
       avgAcc = data.stats.avgAccuracy;
       totalStudents = data.stats.totalStudents || 63;
     }
-  } catch(e) {
+  } catch (e) {
     console.error("Could not fetch stats", e);
   }
 
@@ -1571,76 +1571,76 @@ async function showResultPage(explicitTestName) {
 let __advancedStats = null;
 async function renderAdvancedCharts() {
   if (typeof Chart === 'undefined') return;
-  
+
   const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
-  
+
   if (!__advancedStats) {
     try {
       const res = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
       const data = await res.json();
       if (data.success) __advancedStats = data.advancedStats;
-    } catch(e) {}
+    } catch (e) { }
   }
-  
+
   if (!__advancedStats) return;
-  
+
   // Prepare data arrays
   const astats = __advancedStats;
   const diffs = ["Easy", "Medium", "Hard"];
-  
+
   const myMarks = diffs.map(d => {
-     // compute my marks in this diff
-     let sum = 0;
-     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
-         const st = playerState[q.index];
-         if (st && st.isCorrect) sum += 1;
-         else if (st && !st.isCorrect && !st.isUnattempted) sum -= 0.33;
-     });
-     return Math.max(0, sum);
+    // compute my marks in this diff
+    let sum = 0;
+    astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+      const st = playerState[q.index];
+      if (st && st.isCorrect) sum += 1;
+      else if (st && !st.isCorrect && !st.isUnattempted) sum -= 0.33;
+    });
+    return Math.max(0, sum);
   });
-  
+
   const avgMarks = diffs.map(d => astats.difficultyStats[d].avgMarks);
   const highestMarks = diffs.map(d => astats.difficultyStats[d].highestMarks);
-  
+
   const myTime = diffs.map(d => {
-     let sum = 0;
-     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
-         const st = playerState[q.index];
-         if (st && st.timeSpent) sum += st.timeSpent;
-     });
-     return sum / 60; // in minutes
+    let sum = 0;
+    astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+      const st = playerState[q.index];
+      if (st && st.timeSpent) sum += st.timeSpent;
+    });
+    return sum / 60; // in minutes
   });
   const avgTime = diffs.map(d => astats.difficultyStats[d].avgTime / 60); // minutes
-  
+
   const myAcc = diffs.map(d => {
-     let c = 0, t = 0;
-     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
-         const st = playerState[q.index];
-         if (st && !st.isUnattempted) {
-             t++;
-             if (st.isCorrect) c++;
-         }
-     });
-     return t > 0 ? (c/t)*100 : 0;
+    let c = 0, t = 0;
+    astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
+      const st = playerState[q.index];
+      if (st && !st.isUnattempted) {
+        t++;
+        if (st.isCorrect) c++;
+      }
+    });
+    return t > 0 ? (c / t) * 100 : 0;
   });
   const avgAcc = diffs.map(d => astats.difficultyStats[d].avgAccuracy);
-  
+
   // Student Attempt Stacked Bar
   const labelsQ = astats.perQuestion.map(q => q.index + 1);
   const corQ = astats.perQuestion.map(q => q.correct);
   const incQ = astats.perQuestion.map(q => q.wrong);
   const unaQ = astats.perQuestion.map(q => q.unattempted);
-  
+
   // Median line data
   const medianLine = astats.scoresCurve.map(() => astats.medianScore);
-  
+
   createChart("difficultyPerformanceChart", 'bar', diffs, [
     { label: 'My Marks', data: myMarks, backgroundColor: '#14619C' },
     { label: 'Avg Marks', data: avgMarks, backgroundColor: '#FF9800' },
     { label: 'Highest Marks', data: highestMarks, backgroundColor: '#5D8C72' }
   ], 'Marks');
 
-  createChart("medianScoreChart", 'line', astats.scoresCurve.map((_, i) => i+1), [
+  createChart("medianScoreChart", 'line', astats.scoresCurve.map((_, i) => i + 1), [
     { label: 'Student Marks', data: astats.scoresCurve, borderColor: '#14619C', backgroundColor: 'rgba(20, 97, 156, 0.1)', fill: true, tension: 0.4 },
     { label: 'Median Score', data: medianLine, borderColor: '#FF9800', pointRadius: 0, fill: false }
   ], 'Marks');
@@ -1718,13 +1718,13 @@ async function openLeaderboard() {
   const overlay = document.getElementById("leaderboardOverlay");
   const body = document.getElementById("leaderboardBody");
   const sticky = document.getElementById("leaderboardSticky");
-  
+
   overlay.classList.add("show");
   body.innerHTML = '<div class="leaderboard-empty">Loading leaderboard...</div>';
   sticky.innerHTML = '';
 
   const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
-  
+
   try {
     const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName));
     const data = await res.json();
@@ -1742,9 +1742,9 @@ async function openLeaderboard() {
       data.leaderboard.forEach(r => {
         // We will try to match current user by name for demonstration.
         // In reality, the backend should tag isCurrentUser based on auth token.
-        const isMe = currentUser && r.name === currentUser.name; 
+        const isMe = currentUser && r.name === currentUser.name;
         const initial = r.name.charAt(0).toUpperCase() || 'U';
-        
+
         const itemHTML = `
           <div class="leaderboard-item">
             <div class="leaderboard-item-left">
@@ -1769,10 +1769,10 @@ async function openLeaderboard() {
       });
 
       body.innerHTML = html;
-      
+
       // If we found the user, add them to the sticky footer
       if (myRankHTML) {
-         sticky.innerHTML = `
+        sticky.innerHTML = `
            <div style="text-align: center; color: #c3ced8; padding: 10px 0; font-size: 20px; line-height: 0.5;">...</div>
            ${myRankHTML}
          `;
