@@ -62,13 +62,20 @@ registerTest({
   date: "May 22, 2026",
   questions: [
     {
-      marks: 1,      // Add correct marks here
-      neg: 0.33,     // Add negative marks here
-      type: "mcq",
-      text: "Is this the difficult way to add a test?",
-      options: ["Yes, very easy", "No, it's hard", "Maybe", "I don't know"],
-      answer: "A",
-      solution: "This is Option 2 in action! Just 1 step."
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "he Boolean expression for the output ‘F’ of the logic circuit shown in the figure below is",
+      image: 'images/digital logic-1/mceclip6-1777717003260.png',
+      options: [
+        '<img src="images/digital logic-1/mceclip7-1777717008801.png" alt="Option A" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip8-1777717014766.png" alt="Option B" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip10-1777717028350.png" alt="Option C" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip9-1777717022578.png" alt="Option D" style="max-width:150px;">',
+      ],
+      answer: "B",
+      solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
     }
   ]
 });
+
