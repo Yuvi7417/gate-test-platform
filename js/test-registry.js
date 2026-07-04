@@ -292,44 +292,44 @@ registerTest({
   ]
 });
 
-registerTest({
-  series: "cs-gate-pyq",
-  name: "TWT - Database-1",
-  date: "May 20, 2026",
-  questions: [
-    {
-      marks: 1,      // Add correct marks here
-      neg: 0.33,     // Add negative marks here
-      type: "MCQ",
-      text: "Is this the easiest way to add a test?",
-      options: ["Yes, very easy", "No, it's hard", "Maybe", "I don't know"],
-      answer: "A",
-      solution: "This is Option 2 in action! Just 1 step."
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
-      image: 'images/digital logic-1/mceclip12-1777717060063.png',
-      options: [
-        '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
-        '<img src="images/digital logic-1/mceclip14-1777717083378.png" alt="Option B" style="max-width:150px;">',
-        '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option C" style="max-width:150px;">',
-        '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option D" style="max-width:150px;">',
-      ],
-      answer: ["A", "B"],
-      solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: "Consider a 3-bit number A and 2 bit number B are given to a multiplier. The output of multiplier is realized using AND gate and one bit full adders. If minimum number of AND gates required are X and one bit full adders required are Y, then X + Y = _______.",
-      image: "images/digital logic-1/mceclip18-1777717146503.png",
-      options: [],
-      answer: 9,
-      solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
-    }
-  ]
-});
+// registerTest({
+//   series: "cs-gate-pyq",
+//   name: "TWT - Database-1",
+//   date: "May 20, 2026",
+//   questions: [
+//     {
+//       marks: 1,      // Add correct marks here
+//       neg: 0.33,     // Add negative marks here
+//       type: "MCQ",
+//       text: "Is this the easiest way to add a test?",
+//       options: ["Yes, very easy", "No, it's hard", "Maybe", "I don't know"],
+//       answer: "A",
+//       solution: "This is Option 2 in action! Just 1 step."
+//     },
+//     {
+//       marks: 2,
+//       neg: 0,
+//       type: "MSQ",
+//       text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
+//       image: 'images/digital logic-1/mceclip12-1777717060063.png',
+//       options: [
+//         '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
+//         '<img src="images/digital logic-1/mceclip14-1777717083378.png" alt="Option B" style="max-width:150px;">',
+//         '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option C" style="max-width:150px;">',
+//         '<img src="images/digital logic-1/mceclip15-1777717088021.png" alt="Option D" style="max-width:150px;">',
+//       ],
+//       answer: ["A", "B"],
+//       solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
+//     },
+//     {
+//       marks: 2,
+//       neg: 0,
+//       type: "NAT",
+//       text: "Consider a 3-bit number A and 2 bit number B are given to a multiplier. The output of multiplier is realized using AND gate and one bit full adders. If minimum number of AND gates required are X and one bit full adders required are Y, then X + Y = _______.",
+//       image: "images/digital logic-1/mceclip18-1777717146503.png",
+//       options: [],
+//       answer: 9,
+//       solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
+//     }
+//   ]
+// });
