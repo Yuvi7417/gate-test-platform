@@ -54,4 +54,22 @@ registerTest({
       solution: "This is Option 2 in action! Just 1 step."
     }
   ]
-});
+},
+  {
+    series: "cs-gate-pyq",
+    name: "TWT - computer network-1",
+    date: "May 22, 2026",
+    questions: [
+      {
+        marks: 1,      // Add correct marks here
+        neg: 0.33,     // Add negative marks here
+        type: "mcq",
+        text: "Is this the easiest way to add a test?",
+        options: ["Yes, very easy", "No, it's hard", "Maybe", "I don't know"],
+        answer: "A",
+        solution: "This is Option 2 in action! Just 1 step."
+      }
+    ]
+  }
+
+);
