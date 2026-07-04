@@ -128,7 +128,7 @@ registerTest({
       image: "images/digital logic-1/mceclip20-1777717191268.png",
       options: [
         '<img src= "images/digital logic-1/mceclip22-1777717204356.png"alt="Option A" style="max-width:150px;">',
-        '<img src="images/digital logic-1/mceclip21-1777717217418.png" alt="Option B" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip24-1777717217418.png" alt="Option B" style="max-width:150px;">',
         '<img src="images/digital logic-1/mceclip21-1777717198121.png" alt="Option C" style="max-width:150px;">',
         '<img src="images/digital logic-1/mceclip23-1777717209338.png" alt="Option D" style="max-width:150px;">',
       ],
@@ -152,10 +152,10 @@ registerTest({
       text: "Two half adders are connected in cascade as shown below, the output ‘S’ and ‘C’ is/are",
       image: "images/digital logic-1/mceclip29-1777717373795.png",
       options: [
-        "images/digital logic-1/mceclip32-1777717389924.png",
-        "images/digital logic-1/mceclip30-1777717379835.png",
-        "images/digital logic-1/mceclip33-1777717395424.png",
-        "images/digital logic-1/mceclip31-1777717384695.png",
+        '<img src="images/digital logic-1/mceclip32-1777717389924.png" alt="Option A" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip30-1777717379835.png" alt="Option B" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip33-1777717395424.png" alt="Option C" style="max-width:150px;">',
+        '<img src="images/digital logic-1/mceclip31-1777717384695.png" alt="Option D" style="max-width:150px;">',
       ],
       answer: ["A", "D"],
       solution: "<img src='images/digital logic-1/mceclip34-1777717400773.png' alt='Detailed Solution'>",
