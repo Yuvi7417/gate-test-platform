@@ -193,8 +193,8 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹10",
-    basePrice: 10,
+    price: "₹119",
+    basePrice: 119,
     brandLabel: "APEX EASY"
   },
   {
@@ -228,19 +228,20 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["TWT - Database-1", "Apr 30, 2026"],
-      ["TWT - Digital Logic-2", "Apr 28, 2026"],
-      ["TWT - Digital Logic-1", "Apr 24, 2026"],
-      ["FST - 7", "Mar 18, 2026"],
-      ["FST - 6", "Mar 18, 2026"],
-      ["FST - 5", "Nov 24, 2025"],
-      ["FST - 4", "Nov 23, 2025"],
-      ["FST - 3", "Nov 22, 2025"],
-      ["FST - 2", "Nov 21, 2025"],
+      // ["TWT - Database-1", "Apr 30, 2026"],
+      // ["TWT - Digital Logic-2", "Apr 28, 2026"],
+      // ["TWT - Digital Logic-1", "Apr 24, 2026"],
+      // ["FST - 7", "Mar 18, 2026"],
+      // ["FST - 6", "Mar 18, 2026"],
+      // ["FST - 5", "Nov 24, 2025"],
+      // ["FST - 4", "Nov 23, 2025"],
+      // ["FST - 3", "Nov 22, 2025"],
+      // ["FST - 2", "Nov 21, 2025"],
     ],
     price: "₹10",
     basePrice: 10,
-    brandLabel: "APEX CLASSES"
+    brandLabel: "APEX CLASSES",
+    comingSoon: true
   },
   {
     id: "ee-gate-pyq",
