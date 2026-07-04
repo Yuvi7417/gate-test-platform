@@ -7,6 +7,19 @@ window.apexTestRegistry = [];
 window.registerTest = function (config) {
   const safeId = (config.series + "_" + config.name).toLowerCase().replace(/[^a-z0-9]/g, "_");
 
+  // Normalize `answer` ("A", "B") to `correct` (0, 1) for exam engine compatibility
+  if (config.questions) {
+    config.questions.forEach(q => {
+      if (q.answer !== undefined && q.correct === undefined) {
+        if (typeof q.answer === 'string') {
+          q.correct = q.answer.toUpperCase().charCodeAt(0) - 65;
+        } else if (Array.isArray(q.answer)) {
+          q.correct = q.answer.map(a => typeof a === 'string' ? a.toUpperCase().charCodeAt(0) - 65 : a);
+        }
+      }
+    });
+  }
+
   window.testMap = window.testMap || {};
   window.testMap[safeId] = config.questions;
 
