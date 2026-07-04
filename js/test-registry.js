@@ -123,7 +123,7 @@ registerTest({
       solution: "This is Option 2 in action! Just 1 step."
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "MSQ",
       text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
@@ -138,7 +138,7 @@ registerTest({
       solution: "<img src='images/digital logic-1/mceclip5-1777716956632.png' alt='Detailed Solution'>",
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: "Consider a 3-bit number A and 2 bit number B are given to a multiplier. The output of multiplier is realized using AND gate and one bit full adders. If minimum number of AND gates required are X and one bit full adders required are Y, then X + Y = _______.",

@@ -557,13 +557,33 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
 app.get('/api/leaderboard/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    const results = await TestResult.find({ testName }).populate('userId', 'name').sort({ score: -1, timeTakenSecs: 1 }).lean();
+    const results = await TestResult.find({ testName }).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {
       return res.json({ success: true, leaderboard: [] });
     }
 
-    const leaderboard = results.map((r, index) => ({
+    // Group by user and find their best score
+    const bestResultsMap = new Map();
+    for (const r of results) {
+      const uId = r.userId ? r.userId._id.toString() : 'unknown';
+      if (!bestResultsMap.has(uId)) {
+        bestResultsMap.set(uId, r);
+      } else {
+        const existing = bestResultsMap.get(uId);
+        if (r.score > existing.score || (r.score === existing.score && r.timeTakenSecs < existing.timeTakenSecs)) {
+          bestResultsMap.set(uId, r);
+        }
+      }
+    }
+
+    const uniqueResults = Array.from(bestResultsMap.values());
+    uniqueResults.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.timeTakenSecs - b.timeTakenSecs;
+    });
+
+    const leaderboard = uniqueResults.map((r, index) => ({
       rank: index + 1,
       name: r.userId ? r.userId.name : 'Unknown User',
       score: r.score,

@@ -1755,7 +1755,7 @@ async function openLeaderboard() {
   const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
 
   try {
-    const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName));
+    const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
     const data = await res.json();
     if (data.success) {
       if (data.leaderboard.length === 0) {
