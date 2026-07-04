@@ -670,9 +670,9 @@ openInstructions = function (testName) {
 };
 
 window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
-  "Module 5": "cs_subjectwise_test_5",
+  // "Module 5": "cs_subjectwise_test_5",
   // "Digital Logic-1": "gate_topicwise_test_1",
-  "Digital Logic-2": "gate_topicwise_test_2"
+  // "Digital Logic-2": "gate_topicwise_test_2"
 });
 
 function findMatchingTest(testName) {
@@ -792,10 +792,10 @@ function renderPlayer() {
     if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "none";
     if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "none";
     if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "flex";
-    
+
     const submitBtn = document.querySelector(".pf-submit-btn");
     if (submitBtn) submitBtn.style.display = "none";
-    
+
     const submitWrap = document.querySelector(".pf-submit-wrap");
     if (submitWrap) submitWrap.style.display = "none";
 
@@ -807,10 +807,10 @@ function renderPlayer() {
     if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "flex";
     if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "block";
     if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "none";
-    
+
     const submitBtn = document.querySelector(".pf-submit-btn");
     if (submitBtn) submitBtn.style.display = "inline-flex";
-    
+
     const submitWrap = document.querySelector(".pf-submit-wrap");
     if (submitWrap) submitWrap.style.display = "block";
   }
