@@ -151,7 +151,7 @@ const courses = [
 ];
 
 /* ---------- test series data ---------- */
-const testSeries = [
+window.testSeries = [
   {
     id: "cs-gate-pyq",
     code: "GATE",

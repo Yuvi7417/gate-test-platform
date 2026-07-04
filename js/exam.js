@@ -669,7 +669,7 @@ openInstructions = function (testName) {
   _origOpenInstructions(testName);
 };
 
-const testBackendIdMap = {
+window.testBackendIdMap = {
   "Subjectwise Test - 5": "cs_subjectwise_test_5",
   "Topicwise Test-1": "gate_topicwise_test_1",
   "Topicwise Test-2": "gate_topicwise_test_2"
@@ -689,6 +689,14 @@ function proceedFromInstructions() {
   }
 
   const backendTestId = testBackendIdMap[testKey];
+  
+  // Check local test registry first!
+  if (window.testMap && window.testMap[backendTestId]) {
+    closeInstructions();
+    startPlayer(pendingTestName, window.testMap[backendTestId]);
+    return;
+  }
+
   const courseId = currentTestListId;
 
   const btn = document.getElementById("examBeginBtn");
@@ -1403,6 +1411,16 @@ function openSolutionMode(testName) {
   const backendTestId = testBackendIdMap[testKey];
   const courseId = currentTestListId;
   const token = localStorage.getItem('apexcore_token');
+  
+  // Local registry fallback for past results
+  if (window.testMap && window.testMap[backendTestId]) {
+    closeResult();
+    startPlayer(testName, window.testMap[backendTestId]);
+    solutionMode = true; 
+    playerState = result.answers;
+    renderPlayer();
+    return;
+  }
   
   fetch(`/api/test/${courseId}/${backendTestId}`, {
     headers: { 'Authorization': 'Bearer ' + token }
