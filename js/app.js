@@ -202,7 +202,7 @@ const testSeries = [
     code: "GATE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
-    title: "CS-GATE PYQ Practice Test Series",
+    title: "CS-GATE PYQ Practice Classes Test Series",
     f: "gate",
     lang: "English",
     objective: "Objective",
