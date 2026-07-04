@@ -1329,6 +1329,16 @@ function confirmSubmit() {
         wrongCount++;
         score -= q.neg;
       }
+    } else if (q.type === "NAT") {
+      const val = parseFloat(given);
+      if (!isNaN(val) && q.correct && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+        isCorrect = true;
+        correctCount++;
+        score += q.marks;
+      } else {
+        wrongCount++;
+        score -= q.neg;
+      }
     } else if (given === q.correct) {
       isCorrect = true;
       correctCount++;
