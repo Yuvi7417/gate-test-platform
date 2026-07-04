@@ -920,7 +920,7 @@ function renderPlayerQuestion(i) {
         }
       } else if (q.type === "NAT") {
         const val = parseFloat(st.answer);
-        if (!isNaN(val) && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+        if (!isNaN(val) && q.correct && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
           isCorrect = true;
         }
       } else {
@@ -960,10 +960,11 @@ function renderPlayerQuestion(i) {
     const displayVal =
       st.answer !== null && st.answer !== undefined ? st.answer : "";
     if (solutionMode) {
+      const correctRange = q.correct ? `${q.correct[0]} to ${q.correct[1] || q.correct[0]}` : 'N/A';
       optsWrap.innerHTML = `
         <div class="player-nat-wrap">
           <div style="font-weight:bold; margin-bottom: 10px;">Your Answer: <span style="color:var(--gray-9);">${displayVal || "Not Attempted"}</span></div>
-          <div style="font-weight:bold; color:var(--success);">Correct Answer Range: ${q.correct[0]} to ${q.correct[1] || q.correct[0]}</div>
+          <div style="font-weight:bold; color:var(--success);">Correct Answer Range: ${correctRange}</div>
         </div>
       `;
     } else {
@@ -1217,7 +1218,7 @@ function updatePlayerQBtn(i) {
         }
       } else if (q.type === "NAT") {
         const val = parseFloat(st.answer);
-        if (!isNaN(val) && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+        if (!isNaN(val) && q.correct && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
           isCorrect = true;
         }
       } else {
