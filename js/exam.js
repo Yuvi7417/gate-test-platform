@@ -669,11 +669,11 @@ openInstructions = function (testName) {
   _origOpenInstructions(testName);
 };
 
-window.testBackendIdMap = {
+window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
   "Subjectwise Test - 5": "cs_subjectwise_test_5",
   "Topicwise Test-1": "gate_topicwise_test_1",
   "Topicwise Test-2": "gate_topicwise_test_2"
-};
+});
 
 function findMatchingTest(testName) {
   const bracketMatch = testName.match(/\(([^)]+)\)/);
