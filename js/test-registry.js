@@ -20,9 +20,15 @@ window.registerTest = function (config) {
 document.addEventListener("DOMContentLoaded", () => {
   if (window.testSeries && window.apexTestRegistry) {
     window.apexTestRegistry.forEach(config => {
-      const series = window.testSeries.find(s => s.id === config.series);
+      // Find series by exact ID or by title (case-insensitive)
+      const series = window.testSeries.find(s => 
+        s.id === config.series || 
+        s.title.toLowerCase() === config.series.toLowerCase()
+      );
       if (series) {
         series.schedule.push([config.name, config.date]);
+      } else {
+        console.warn("Could not find test series for:", config.series);
       }
     });
   }
