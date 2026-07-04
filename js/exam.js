@@ -789,16 +789,30 @@ function renderPlayer() {
   _id("playerOverlay").classList.add("show");
 
   if (solutionMode) {
-    _id("playerFooterLeft").style.display = "none";
-    _id("playerFooterRight").style.display = "none";
-    _id("playerSolutionFooter").style.display = "flex";
-    document.querySelector(".pf-submit-btn").style.display = "none";
-    document.querySelector(".player-topbar .pt-title").textContent = "Solutions: " + _id("playerTopTitle").textContent;
+    if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "none";
+    if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "none";
+    if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "flex";
+    
+    const submitBtn = document.querySelector(".pf-submit-btn");
+    if (submitBtn) submitBtn.style.display = "none";
+    
+    const submitWrap = document.querySelector(".pf-submit-wrap");
+    if (submitWrap) submitWrap.style.display = "none";
+
+    const titleEl = document.querySelector(".player-topbar .pt-title");
+    if (titleEl && !titleEl.textContent.startsWith("Solutions: ")) {
+      titleEl.textContent = "Solutions: " + _id("playerTopTitle").textContent;
+    }
   } else {
-    _id("playerFooterLeft").style.display = "flex";
-    _id("playerFooterRight").style.display = "block";
-    _id("playerSolutionFooter").style.display = "none";
-    document.querySelector(".pf-submit-btn").style.display = "inline-flex";
+    if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "flex";
+    if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "block";
+    if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "none";
+    
+    const submitBtn = document.querySelector(".pf-submit-btn");
+    if (submitBtn) submitBtn.style.display = "inline-flex";
+    
+    const submitWrap = document.querySelector(".pf-submit-wrap");
+    if (submitWrap) submitWrap.style.display = "block";
   }
 
   if (playerTimerInterval) clearInterval(playerTimerInterval);
@@ -867,7 +881,11 @@ function closeQuestionPaper() {
 function renderPlayerQuestion(i) {
   playerCurrent = i;
   const q = playerQuestions[i];
-  const st = playerState[i];
+  let st = playerState[i];
+  if (!st) {
+    st = { visited: false, answer: null, marked: false, timeSpent: 0 };
+    playerState[i] = st;
+  }
   st.visited = true;
 
   const _id = (id) => {
@@ -1181,7 +1199,7 @@ function renderPlayerQGrid() {
 }
 
 function updatePlayerQBtn(i) {
-  const st = playerState[i];
+  const st = playerState[i] || { visited: false, answer: null, marked: false, timeSpent: 0 };
   const btn = document.getElementById("qbtn-" + i);
   if (!btn) return;
   btn.classList.remove("answered", "notanswered", "marked", "correct", "incorrect", "unattempted");
@@ -1221,7 +1239,7 @@ function updatePlayerCounts() {
     notVisited = 0,
     marked = 0;
   playerQuestions.forEach((q, i) => {
-    const st = playerState[i];
+    const st = playerState[i] || { visited: false, answer: null, marked: false, timeSpent: 0 };
     updatePlayerQBtn(i);
     if (!st.visited) notVisited++;
     else if (st.answer !== null) answered++;
