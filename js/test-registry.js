@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.testSeries && window.apexTestRegistry) {
     window.apexTestRegistry.forEach(config => {
       // Find series by exact ID or by title (case-insensitive)
-      const series = window.testSeries.find(s => 
-        s.id === config.series || 
+      const series = window.testSeries.find(s =>
+        s.id === config.series ||
         s.title.toLowerCase() === config.series.toLowerCase()
       );
       if (series) {
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // =========================================================================
 
 registerTest({
-  series: "cs-gate-pyq practise test series",
+  series: "cs-gate-pyq",
   name: "TWT - Database-2",
   date: "May 20, 2026",
   questions: [
