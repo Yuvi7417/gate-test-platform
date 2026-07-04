@@ -11,7 +11,19 @@ window.registerTest = function (config) {
   if (config.questions) {
     config.questions.forEach(q => {
       if (q.answer !== undefined && q.correct === undefined) {
-        if (typeof q.answer === 'string') {
+        if (q.type === "NAT") {
+          let num;
+          if (typeof q.answer === 'number') {
+            num = q.answer;
+          } else if (typeof q.answer === 'string') {
+            num = parseFloat(q.answer);
+          }
+          if (num !== undefined && !isNaN(num)) {
+            q.correct = [num, num];
+          } else if (Array.isArray(q.answer)) {
+            q.correct = q.answer;
+          }
+        } else if (typeof q.answer === 'string') {
           q.correct = q.answer.toUpperCase().charCodeAt(0) - 65;
         } else if (Array.isArray(q.answer)) {
           q.correct = q.answer.map(a => typeof a === 'string' ? a.toUpperCase().charCodeAt(0) - 65 : a);
