@@ -676,7 +676,14 @@ window.testBackendIdMap = {
 };
 
 function findMatchingTest(testName) {
-  return Object.keys(testBackendIdMap).find((key) => testName.includes(key));
+  const bracketMatch = testName.match(/\(([^)]+)\)/);
+  if (bracketMatch) {
+    const bracketText = bracketMatch[1];
+    if (window.testBackendIdMap[bracketText]) {
+      return bracketText;
+    }
+  }
+  return Object.keys(window.testBackendIdMap).find((key) => testName.includes(key));
 }
 
 function proceedFromInstructions() {
