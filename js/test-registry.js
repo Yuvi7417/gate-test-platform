@@ -4,16 +4,16 @@
 // =========================================================================
 window.apexTestRegistry = [];
 
-window.registerTest = function(config) {
+window.registerTest = function (config) {
   const safeId = (config.series + "_" + config.name).toLowerCase().replace(/[^a-z0-9]/g, "_");
-  
+
   window.testMap = window.testMap || {};
   window.testMap[safeId] = config.questions;
-  
+
   window.testBackendIdMap = window.testBackendIdMap || {};
   let matchName = config.name.replace(/^[A-Za-z]+\s*-\s*/, "");
   window.testBackendIdMap[matchName] = safeId;
-  
+
   window.apexTestRegistry.push(config);
 };
 
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
 // =========================================================================
 
 registerTest({
-  series: "cs-gate-pyq",
-  name: "TWT - Naya Test",
+  series: "cs-gate-pyq practise test series",
+  name: "TWT - Database-2",
   date: "May 20, 2026",
   questions: [
     {
