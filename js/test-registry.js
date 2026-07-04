@@ -45,6 +45,8 @@ registerTest({
   date: "May 20, 2026",
   questions: [
     {
+      marks: 1,      // Add correct marks here
+      neg: 0.33,     // Add negative marks here
       type: "mcq",
       text: "Is this the easiest way to add a test?",
       options: ["Yes, very easy", "No, it's hard", "Maybe", "I don't know"],
