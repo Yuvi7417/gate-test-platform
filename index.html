@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apex Core | GATE, PSU & ESE Coaching</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="css/style.css?v=5">
 </head>
@@ -55,7 +57,7 @@
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-      
+
       <div class="nav-item active" data-nav="list" onclick="showView('list')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M9 11l3 3L22 4" />
@@ -85,7 +87,7 @@
     <main>
 
       <!-- ===================== HOME VIEW ===================== -->
-      
+
 
       <!-- ===================== LISTING VIEW ===================== -->
       <section class="view active" id="view-list">
@@ -246,7 +248,8 @@
         <div class="exam-instr-body">
           <h4>Read the following instructions carefully</h4>
           <h5>General Instructions:</h5>
-          <p>The total duration of the examination is <b id="instrDuration">90 minutes</b>. A <b>scientific calculator</b> is available on
+          <p>The total duration of the examination is <b id="instrDuration">90 minutes</b>. A <b>scientific
+              calculator</b> is available on
             the top right-hand side of the screen.</p>
           <p>The clock is set on the server. The countdown timer at the top right of the screen shows the time left for
             you to complete the exam. Once the timer hits zero, the exam closes on its own &mdash; you don't need to
@@ -384,7 +387,8 @@
         </svg>
       </button>
       <div class="player-timer" id="playerTimerBlock">Time Left: <b id="playerTimer">90:00</b></div>
-      <div class="player-solution-marks" id="playerSolutionMarks" style="display:none;">Marks Awarded: <b id="psmAwarded">0</b></div>
+      <div class="player-solution-marks" id="playerSolutionMarks" style="display:none;">Marks Awarded: <b
+          id="psmAwarded">0</b></div>
 
     </div>
     <div class="player-body">
@@ -408,14 +412,16 @@
           <div class="player-solution-box" id="playerSolutionBox" style="display:none;">
             <div class="psb-stats">
               <div class="psb-stat-line">
-                <b>Most Popular Choice <span class="psb-icon">i</span> :</b> <span id="psbPopular">B (Chosen by 84.13% students)</span>
+                <b>Most Popular Choice <span class="psb-icon">i</span> :</b> <span id="psbPopular">B (Chosen by 84.13%
+                  students)</span>
               </div>
               <div class="psb-stat-line">
                 <b>Avg Attempt Rate:</b> <span id="psbAttemptRate">94.03%</span>
-                <b style="margin-left: 20px;">Avg Time Taken:</b> <span id="psbAvgTime">221.36</span> <span class="psb-icon">i</span>
+                <b style="margin-left: 20px;">Avg Time Taken:</b> <span id="psbAvgTime">221.36</span> <span
+                  class="psb-icon">i</span>
               </div>
             </div>
-            
+
             <div class="psb-content">
               <h3 class="psb-heading">Solution</h3>
               <div class="psb-correct-label" id="psbCorrectLabel">Correct Answer: B</div>
@@ -433,8 +439,8 @@
             <button class="pf-btn primary" onclick="playerSaveNext()">Save &amp; Next</button>
           </div>
           <div class="pf-right" id="playerSolutionFooter" style="display:none; gap: 10px;">
-             <button class="pf-btn ghost" onclick="closePlayerAndShowResult()">Back to Results</button>
-             <button class="pf-btn primary" onclick="playerSaveNext()">Next</button>
+            <button class="pf-btn ghost" onclick="closePlayerAndShowResult()">Back to Results</button>
+            <button class="pf-btn primary" onclick="playerSaveNext()">Next</button>
           </div>
         </div>
       </div>
@@ -572,7 +578,7 @@
   <!-- ===================== RESULT / ANALYSIS PAGE ===================== -->
   <div class="result-overlay" id="resultOverlay">
     <div class="result-topbar">
-      <div class="result-brand">MADE EASY</div>
+      <div class="result-brand">APEX CORE</div>
       <div class="result-user">
         <div class="result-user-avatar" id="resultUserAvatar">U</div>
         <div class="result-user-text">
@@ -586,7 +592,8 @@
           Subjectwise Test - 5</span></div>
       <div class="result-h1">Analysis</div>
       <div class="result-actions">
-        <button class="ra-btn" onclick="openSolutionMode(document.getElementById('resultCrumbName').textContent)">View Solutions</button>
+        <button class="ra-btn" onclick="openSolutionMode(document.getElementById('resultCrumbName').textContent)">View
+          Solutions</button>
         <button class="ra-btn" onclick="openLeaderboard()">Leaderboard</button>
         <button class="ra-btn" onclick="alert('Download — coming soon.')">Download Solutions</button>
       </div>
@@ -601,7 +608,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Right: Legend & Stats -->
         <div class="result-summary-content">
           <div class="result-legend result-legend-horizontal">
@@ -609,7 +616,7 @@
             <div><span class="dot incorrect"></span>Incorrect <b id="legIncorrect">0</b></div>
             <div><span class="dot unattempted"></span>Unattempted <b id="legUnattempted">0</b></div>
           </div>
-          
+
           <div class="result-stats-row">
             <div class="result-stat result-stat-wide">
               <span>Rank</span><b id="statRank">— out of —</b>
@@ -621,7 +628,12 @@
               <span>Accuracy</span><b id="statAccuracy">—</b>
             </div>
             <div class="result-stat result-stat-wide">
-              <span>Time Taken <svg style="width:12px;height:12px;color:#8a97a5;margin-left:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span><b id="statTime">—</b>
+              <span>Time Taken <svg style="width:12px;height:12px;color:#8a97a5;margin-left:4px" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg></span><b id="statTime">—</b>
             </div>
           </div>
         </div>
@@ -631,7 +643,7 @@
       <div class="analysis-cards-container" id="subjectWiseContainer">
         <!-- JS will populate subject cards here -->
       </div>
-      
+
       <div class="result-subject-title" style="margin-top: 30px;">Topic-wise Performance</div>
       <div class="analysis-cards-container" id="topicWiseContainer">
         <!-- JS will populate topic cards here -->
@@ -718,23 +730,30 @@
 
         <div class="modal-field">
           <label class="modal-label">Full Name<span class="req">*</span></label>
-          <input type="text" class="modal-input" id="loginName" placeholder="Enter your name" oninput="toggleContinue()">
+          <input type="text" class="modal-input" id="loginName" placeholder="Enter your name"
+            oninput="toggleContinue()">
         </div>
         <div class="modal-field">
           <label class="modal-label">Email<span class="req">*</span></label>
-          <input type="email" class="modal-input" id="loginEmail" placeholder="Enter email address" oninput="toggleContinue()">
+          <input type="email" class="modal-input" id="loginEmail" placeholder="Enter email address"
+            oninput="toggleContinue()">
         </div>
 
         <button class="btn-continue" id="continueBtn" onclick="sendOtp()">CONTINUE</button>
-        
+
         <div style="text-align: center; margin: 15px 0; color: #94a3b8; font-size: 13px;">OR</div>
 
-        <button class="modal-google" id="googleLoginBtn" style="width: 100%; justify-content: center;" onclick="firebaseGoogleLogin()">
+        <button class="modal-google" id="googleLoginBtn" style="width: 100%; justify-content: center;"
+          onclick="firebaseGoogleLogin()">
           <svg viewBox="0 0 48 48">
-            <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" />
-            <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4c-7.4 0-13.8 4.1-17.1 10.1z" />
-            <path fill="#4CAF50" d="M24 44c5.5 0 10.4-1.9 14.1-5.1l-6.5-5.5C29.6 35 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.9 39.6 16.4 44 24 44z" />
-            <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.5 5.5C39.9 36.9 44 31.1 44 24c0-1.2-.1-2.4-.4-3.5z" />
+            <path fill="#FFC107"
+              d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.2-.1-2.4-.4-3.5z" />
+            <path fill="#FF3D00"
+              d="m6.3 14.7 6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.1 8 3l5.7-5.7C34.6 6.1 29.6 4 24 4c-7.4 0-13.8 4.1-17.1 10.1z" />
+            <path fill="#4CAF50"
+              d="M24 44c5.5 0 10.4-1.9 14.1-5.1l-6.5-5.5C29.6 35 26.9 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.9 39.6 16.4 44 24 44z" />
+            <path fill="#1976D2"
+              d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.2 4.2-4.1 5.6l6.5 5.5C39.9 36.9 44 31.1 44 24c0-1.2-.1-2.4-.4-3.5z" />
           </svg>
           Continue with Google
         </button>
