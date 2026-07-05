@@ -164,7 +164,7 @@ app.post('/api/send-otp', async (req, res) => {
     accessToken: process.env.EMAILJS_PRIVATE_KEY,
     template_params: {
       name: name || "Student",
-      to_email: email,
+      email: email,
       otp: otp
     }
   };
