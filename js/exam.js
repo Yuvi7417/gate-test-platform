@@ -125,8 +125,9 @@ function sendOtp() {
         if (hintEl) hintEl.textContent = "OTP has been sent to your email!";
         console.log("OTP Email Sent via Backend Successfully!");
       } else {
-        if (hintEl) hintEl.textContent = data.message || "Failed to send email. Check console for demo OTP.";
-        console.warn("Backend Email Warning:", data.message);
+        const errorMsg = data.message + (data.details ? "\nDetails: " + data.details : "");
+        if (hintEl) hintEl.textContent = errorMsg;
+        console.warn("Backend Email Warning:", errorMsg);
       }
     })
     .catch(err => {
