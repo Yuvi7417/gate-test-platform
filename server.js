@@ -182,7 +182,7 @@ app.post('/api/send-otp', async (req, res) => {
     } else {
       const errorText = await response.text();
       console.error('[Server] EmailJS failed:', errorText);
-      res.status(500).json({ success: false, message: 'EmailJS API Error', details: errorText, template_used: process.env.EMAILJS_TEMPLATE_ID });
+      res.status(500).json({ success: false, message: 'EmailJS API Error', details: errorText, template_used: process.env.EMAILJS_TEMPLATE_ID, reqBodyReceived: req.body });
     }
   } catch (error) {
     console.error('[Server] EmailJS sending failed:', error);
