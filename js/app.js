@@ -193,8 +193,8 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹170 + GST",
-    basePrice: 170,
+    price: "₹111",
+    basePrice: 111,
     brandLabel: "APEX EASY"
   },
   {
