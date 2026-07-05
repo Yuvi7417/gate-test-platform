@@ -128,7 +128,8 @@ function sendOtp() {
         const errorMsg = data.message + (data.details ? "\nDetails: " + data.details : "") 
           + (data.template_used ? "\nTemplate Used: " + data.template_used : "")
           + (data.public_key ? "\nPublic Key: " + data.public_key : "")
-          + (data.private_key_start ? "\nPrivate Key (First 4): " + data.private_key_start : "");
+          + (data.private_key_start ? "\nPrivate Key (First 4): " + data.private_key_start : "")
+          + (data.payloadSent ? "\nPayload Sent: " + JSON.stringify(data.payloadSent) : "");
         if (hintEl) hintEl.textContent = errorMsg;
         console.warn("Backend Email Warning:", errorMsg);
       }

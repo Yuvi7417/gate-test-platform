@@ -188,7 +188,8 @@ app.post('/api/send-otp', async (req, res) => {
         details: errorText, 
         template_used: process.env.EMAILJS_TEMPLATE_ID,
         public_key: process.env.EMAILJS_PUBLIC_KEY,
-        private_key_start: process.env.EMAILJS_PRIVATE_KEY ? process.env.EMAILJS_PRIVATE_KEY.substring(0,4) : 'none'
+        private_key_start: process.env.EMAILJS_PRIVATE_KEY ? process.env.EMAILJS_PRIVATE_KEY.substring(0,4) : 'none',
+        payloadSent: payload
       });
     }
   } catch (error) {
