@@ -371,7 +371,7 @@ function openPaymentGateway(id) {
   if (!ts) return;
 
   const token = localStorage.getItem('apexcore_token');
-  // const amountWithGst = Math.round(ts.basePrice * 1.18 * 100); // 18% GST, converted to paise
+  const amountWithGst = Math.round(ts.basePrice * 1.18 * 100); // 18% GST, converted to paise
 
   fetch('/api/create-order', {
     method: 'POST',
@@ -379,7 +379,7 @@ function openPaymentGateway(id) {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
     },
-    body: JSON.stringify({ courseId: id, amount: ts.basePrice })
+    body: JSON.stringify({ courseId: id, amount: amountWithGst })
   })
     .then(res => res.json())
     .then(data => {
