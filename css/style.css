@@ -2949,8 +2949,9 @@ main {
 }
 
 .player-qhead .qtype {
-  color: #3a4552;
-  font-weight: 500;
+  color: #1c2530;
+  font-weight: 900;
+  font-family: ui-sans-serif;
 }
 
 .player-qhead .qmarks {
