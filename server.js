@@ -111,13 +111,11 @@ app.post('/api/firebase-login', async (req, res) => {
 
     // 2. Find or create user in MongoDB
     let user = { name, email, enrolledCourses: [] };
-    if (mongoose.connection.readyState === 1) {
-      let dbUser = await User.findOne({ email });
-      if (!dbUser) {
-        dbUser = await User.create({ name, email, enrolledCourses: [] });
-      }
-      user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
+    let dbUser = await User.findOne({ email });
+    if (!dbUser) {
+      dbUser = await User.create({ name, email, enrolledCourses: [] });
     }
+    user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
 
     // 3. Generate our own backend JWT token
     const token = jwt.sign(
@@ -141,15 +139,12 @@ app.post('/api/send-otp', async (req, res) => {
   const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
   try {
-    if (mongoose.connection.readyState === 1) {
-      await Otp.deleteMany({ email });
-      await Otp.create({ email, otp });
-    } else {
-      global.mockOtpStore = global.mockOtpStore || {};
-      global.mockOtpStore[email] = otp;
-    }
+    await Otp.deleteMany({ email });
+    await Otp.create({ email, otp });
   } catch (err) {
     console.error("DB Error saving OTP", err);
+    global.mockOtpStore = global.mockOtpStore || {};
+    global.mockOtpStore[email] = otp;
   }
 
   // Check if EmailJS keys exist
@@ -205,28 +200,22 @@ app.post('/api/verify-otp', async (req, res) => {
 
   let isValid = false;
   try {
-    if (mongoose.connection.readyState === 1) {
-      const record = await Otp.findOne({ email, otp });
-      if (record) {
-        isValid = true;
-        await Otp.deleteOne({ _id: record._id });
-      }
-    } else {
-      if (global.mockOtpStore && global.mockOtpStore[email] === otp) {
-        isValid = true;
-        delete global.mockOtpStore[email];
-      }
+    const record = await Otp.findOne({ email, otp }).catch(() => null);
+    if (record) {
+      isValid = true;
+      await Otp.deleteOne({ _id: record._id });
+    } else if (global.mockOtpStore && global.mockOtpStore[email] === otp) {
+      isValid = true;
+      delete global.mockOtpStore[email];
     }
 
     if (isValid) {
       let user = { name, email, enrolledCourses: [] };
-      if (mongoose.connection.readyState === 1) {
-        let dbUser = await User.findOne({ email });
-        if (!dbUser) {
-          dbUser = await User.create({ name, email, enrolledCourses: [] });
-        }
-        user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
+      let dbUser = await User.findOne({ email });
+      if (!dbUser) {
+        dbUser = await User.create({ name, email, enrolledCourses: [] });
       }
+      user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
 
       const token = jwt.sign(
         { email: user.email, name: user.name, _id: user._id },
@@ -296,12 +285,10 @@ const authenticateToken = (req, res, next) => {
 app.post('/api/enroll-free', authenticateToken, async (req, res) => {
   const { courseId } = req.body;
   try {
-    if (mongoose.connection.readyState === 1) {
-      await User.updateOne(
-        { _id: req.user._id },
-        { $addToSet: { enrolledCourses: courseId } }
-      );
-    }
+    await User.updateOne(
+      { _id: req.user._id },
+      { $addToSet: { enrolledCourses: courseId } }
+    );
     res.json({ success: true, message: "Enrolled successfully!" });
   } catch (err) {
     console.error("DB Error updating user courses:", err);
@@ -321,12 +308,10 @@ app.post('/api/verify-payment', authenticateToken, async (req, res) => {
   if (generatedSignature === razorpay_signature) {
     // Add course to user in DB
     try {
-      if (mongoose.connection.readyState === 1) {
-        await User.updateOne(
-          { _id: req.user._id },
-          { $addToSet: { enrolledCourses: courseId } }
-        );
-      }
+      await User.updateOne(
+        { _id: req.user._id },
+        { $addToSet: { enrolledCourses: courseId } }
+      );
       res.json({ success: true, message: "Payment verified successfully", paymentId: razorpay_payment_id });
     } catch (err) {
       console.error("DB Error updating user courses:", err);
