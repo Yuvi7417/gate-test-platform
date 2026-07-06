@@ -899,7 +899,7 @@ function renderPlayerQuestion(i) {
     return el;
   };
   _id("playerQNum").textContent = "Question No. " + (i + 1);
-  _id("playerQText").textContent = q.text;
+  _id("playerQText").innerHTML = q.text;
   _id("playerMarksPos").textContent = "Marks for correct answer: +" + q.marks;
   _id("playerMarksNeg").textContent = "Negative Marks: -" + q.neg;
   _id("playerQType").textContent = q.type || "MCQ";
