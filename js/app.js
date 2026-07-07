@@ -273,6 +273,7 @@ window.testSeries = [
         selected: true,
       },
     ],
+    schedule: [],
     price: "₹60 + GST",
     basePrice: 60,
     brandLabel: "APEX EASY"
