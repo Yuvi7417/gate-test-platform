@@ -288,9 +288,9 @@ window.testSeries = [
     lang: "English",
     objective: "Objective",
     tests: 36,
-    startDate: "2025-10-15",
+    startDate: "2026-07-07",
     endDate: "2027-02-15",
-    session: "2025-2026",
+    session: "2026-2027",
     desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
     features: [
       "Practice real GATE questions",
@@ -303,14 +303,14 @@ window.testSeries = [
     batches: [
       {
         name: "Batch 1",
-        start: "Oct 15, 2025",
+        start: "July 07, 2026",
         time: "12:00 AM – 11:59 PM",
         selected: true,
       },
     ],
     schedule: [],
-    price: "₹1 + GST",
-    basePrice: 1,
+    price: "₹60 + GST",
+    basePrice: 60,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },

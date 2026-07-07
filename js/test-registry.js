@@ -541,3 +541,12 @@ registerTest({
   questions: [
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT C-programming-1",
+  date: "July 07, 2026",
+  questions: [
+
+  ]
+});
