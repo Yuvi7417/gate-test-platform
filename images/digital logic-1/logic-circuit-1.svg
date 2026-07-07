@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="100%" height="100%" fill="white"/>
+  <defs>
+    <!-- Gates -->
+    <g id="and">
+      <path d="M 0 -20 L 20 -20 A 20 20 0 0 1 20 20 L 0 20 Z" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="-10" x2="0" y2="-10" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="10" x2="0" y2="10" stroke="#000" stroke-width="1.5"/>
+    </g>
+    <g id="nand">
+      <path d="M 0 -20 L 20 -20 A 20 20 0 0 1 20 20 L 0 20 Z" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <circle cx="24" cy="0" r="4" fill="white" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="-10" x2="0" y2="-10" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="10" x2="0" y2="10" stroke="#000" stroke-width="1.5"/>
+    </g>
+    <g id="or">
+      <path d="M 0 -20 Q 15 0 0 20 Q 30 20 40 0 Q 30 -20 0 -20 Z" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="-10" x2="5" y2="-10" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="10" x2="5" y2="10" stroke="#000" stroke-width="1.5"/>
+    </g>
+    <g id="not">
+      <polygon points="0,-10 0,10 20,0" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <circle cx="24" cy="0" r="4" fill="white" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="0" x2="0" y2="0" stroke="#000" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Labels -->
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="18">
+    <text x="25" y="55">A</text>
+    <text x="25" y="205">B</text>
+    <text x="25" y="245">C</text>
+    <text x="25" y="345">D</text>
+    <text x="540" y="155">F</text>
+    <text x="540" y="285">G</text>
+  </g>
+
+  <!-- Wires -->
+  <g fill="none" stroke="#000" stroke-width="1.5">
+    <line x1="40" y1="50" x2="80" y2="50"/>
+    <line x1="40" y1="200" x2="130" y2="200"/>
+    <line x1="40" y1="240" x2="130" y2="240"/>
+    <line x1="40" y1="340" x2="280" y2="340"/>
+
+    <!-- A' branch -->
+    <line x1="128" y1="50" x2="200" y2="50"/>
+    <polyline points="200,50 250,50 250,80 330,80"/>
+    <line x1="200" y1="50" x2="200" y2="180"/>
+    <line x1="200" y1="180" x2="330" y2="180"/>
+    <line x1="200" y1="180" x2="200" y2="212"/>
+    <path d="M 200 212 A 8 8 0 0 0 200 228"/>
+    <polyline points="200,228 200,300 330,300"/>
+
+    <!-- G2 out branch -->
+    <line x1="190" y1="220" x2="240" y2="220"/>
+    <line x1="240" y1="220" x2="330" y2="220"/>
+    <line x1="240" y1="220" x2="240" y2="188"/>
+    <path d="M 240 188 A 8 8 0 0 1 240 172"/>
+    <polyline points="240,172 240,120 330,120"/>
+
+    <!-- G3 out to G6 top -->
+    <polyline points="378,100 420,100 420,130 430,130"/>
+    <!-- G4 out branches -->
+    <line x1="390" y1="200" x2="420" y2="200"/>
+    <polyline points="420,200 420,170 430,170"/>
+    <polyline points="420,200 420,260 430,260"/>
+    <!-- G5 out to G7 bot -->
+    <polyline points="378,320 420,320 420,300 430,300"/>
+
+    <!-- Final outputs -->
+    <line x1="490" y1="150" x2="530" y2="150"/>
+    <line x1="490" y1="280" x2="530" y2="280"/>
+  </g>
+
+  <!-- Dots -->
+  <g fill="#000">
+    <circle cx="200" cy="50" r="3.5"/>
+    <circle cx="200" cy="180" r="3.5"/>
+    <circle cx="240" cy="220" r="3.5"/>
+    <circle cx="420" cy="200" r="3.5"/>
+  </g>
+
+  <!-- Gates -->
+  <use href="#not" x="100" y="50"/>
+  <use href="#and" x="150" y="220"/>
+  <use href="#nand" x="350" y="100"/>
+  <use href="#or" x="350" y="200"/>
+  <use href="#nand" x="350" y="320"/>
+  <use href="#and" x="450" y="150"/>
+  <use href="#and" x="450" y="280"/>
+</svg>

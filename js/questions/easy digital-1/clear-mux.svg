@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="100%" height="100%" fill="white"/>
+  <!-- MUX Box -->
+  <rect x="130" y="30" width="100" height="150" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+  <text x="180" y="95" font-family="Times New Roman, serif" font-size="16" text-anchor="middle">4 : 1</text>
+  <text x="180" y="115" font-family="Times New Roman, serif" font-size="16" text-anchor="middle">MUX</text>
+
+  <!-- Input labels -->
+  <!-- I0 -->
+  <text x="140" y="55" font-family="Times New Roman, serif" font-style="italic" font-size="16">I<tspan dy="3" font-style="normal" font-size="11">0</tspan></text>
+  <!-- I1 -->
+  <text x="140" y="90" font-family="Times New Roman, serif" font-style="italic" font-size="16"><tspan dy="-3">I</tspan><tspan dy="3" font-style="normal" font-size="11">1</tspan></text>
+  <!-- I2 -->
+  <text x="140" y="125" font-family="Times New Roman, serif" font-style="italic" font-size="16"><tspan dy="-3">I</tspan><tspan dy="3" font-style="normal" font-size="11">2</tspan></text>
+  <!-- I3 -->
+  <text x="140" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="16"><tspan dy="-3">I</tspan><tspan dy="3" font-style="normal" font-size="11">3</tspan></text>
+
+  <!-- Select labels -->
+  <!-- S1 -->
+  <text x="155" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="16">S<tspan dy="3" font-style="normal" font-size="11">1</tspan></text>
+  <!-- S0 -->
+  <text x="195" y="165" font-family="Times New Roman, serif" font-style="italic" font-size="16"><tspan dy="-3">S</tspan><tspan dy="3" font-style="normal" font-size="11">0</tspan></text>
+
+  <!-- External Lines -->
+  <!-- I0 line -->
+  <line x1="50" y1="50" x2="130" y2="50" stroke="#000" stroke-width="1.2"/>
+  <!-- I1 line -->
+  <line x1="110" y1="85" x2="130" y2="85" stroke="#000" stroke-width="1.2"/>
+  <!-- I2 line -->
+  <line x1="100" y1="120" x2="130" y2="120" stroke="#000" stroke-width="1.2"/>
+  <!-- I3 line -->
+  <line x1="100" y1="155" x2="130" y2="155" stroke="#000" stroke-width="1.2"/>
+
+  <!-- Output line -->
+  <line x1="230" y1="105" x2="280" y2="105" stroke="#000" stroke-width="1.2"/>
+
+  <!-- Select bottom lines -->
+  <line x1="162" y1="180" x2="162" y2="210" stroke="#000" stroke-width="1.2"/>
+  <line x1="202" y1="180" x2="202" y2="210" stroke="#000" stroke-width="1.2"/>
+
+  <!-- A Dot -->
+  <circle cx="50" cy="50" r="2.5" fill="#000"/>
+
+  <!-- A branch to NOT gate -->
+  <line x1="65" y1="50" x2="65" y2="85" stroke="#000" stroke-width="1.2"/>
+  <line x1="65" y1="85" x2="80" y2="85" stroke="#000" stroke-width="1.2"/>
+
+  <!-- NOT Gate -->
+  <polygon points="80,75 80,95 100,85" fill="white" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="104" cy="85" r="3.5" fill="white" stroke="#000" stroke-width="1.5"/>
+
+  <!-- External Labels -->
+  <text x="30" y="55" font-family="Times New Roman, serif" font-style="italic" font-size="16">A</text>
+  <text x="85" y="125" font-family="Times New Roman, serif" font-size="16">0</text>
+  <text x="85" y="160" font-family="Times New Roman, serif" font-size="16">1</text>
+  <text x="157" y="230" font-family="Times New Roman, serif" font-style="italic" font-size="16">B</text>
+  <text x="197" y="230" font-family="Times New Roman, serif" font-style="italic" font-size="16">C</text>
+  <text x="290" y="110" font-family="Times New Roman, serif" font-style="italic" font-size="16">f(A, B, C)</text>
+</svg>

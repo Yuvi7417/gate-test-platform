@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="100%" height="100%" fill="white"/>
+  <g stroke="#000" stroke-width="1.5">
+    <line x1="100" y1="100" x2="60" y2="60"/>
+    <line x1="100" y1="100" x2="300" y2="100"/>
+    <line x1="100" y1="200" x2="300" y2="200"/>
+    <line x1="100" y1="100" x2="100" y2="200"/>
+    <line x1="150" y1="100" x2="150" y2="200"/>
+    <line x1="200" y1="100" x2="200" y2="200"/>
+    <line x1="250" y1="100" x2="250" y2="200"/>
+    <line x1="300" y1="100" x2="300" y2="200"/>
+    <line x1="70" y1="150" x2="330" y2="150"/>
+  </g>
+  <g font-family="Times New Roman, serif" font-size="16" font-style="italic">
+    <text x="70" y="90">x</text>
+    <text x="90" y="70">yz</text>
+    <text x="140" y="245">xy'</text>
+    <text x="195" y="270">z&#773;</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12">
+    <text x="140" y="115">0</text>
+    <text x="190" y="115">1</text>
+    <text x="240" y="115">3</text>
+    <text x="290" y="115">2</text>
+    <text x="140" y="165">4</text>
+    <text x="190" y="165">5</text>
+    <text x="240" y="165">7</text>
+    <text x="290" y="165">6</text>
+  </g>
+  <g font-family="Times New Roman, serif" font-size="18">
+    <text x="120" y="140">1</text>
+    <text x="120" y="190">1</text>
+    <text x="170" y="190">1</text>
+    <text x="270" y="140">1</text>
+    <text x="270" y="190">1</text>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.5">
+    <rect x="108" y="155" width="80" height="40"/>
+    <line x1="148" y1="195" x2="148" y2="225"/>
+    <path d="M 80 110 L 135 110 L 135 190 L 80 190"/>
+    <path d="M 320 110 L 255 110 L 255 190 L 320 190"/>
+    <line x1="100" y1="190" x2="200" y2="255"/>
+    <line x1="300" y1="190" x2="200" y2="255"/>
+  </g>
+</svg>

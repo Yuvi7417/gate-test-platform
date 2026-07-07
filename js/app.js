@@ -162,9 +162,9 @@ window.testSeries = [
     lang: "English",
     objective: "Objective",
     tests: 37,
-    startDate: "2025-10-15",
+    startDate: "2026-07-07",
     endDate: "2027-02-15",
-    session: "2025-2026",
+    session: "2026-2027",
     desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) question papers from 2000 to 2026, designed to simulate real exam conditions and sharpen problem-solving, time management and exam readiness.",
     features: [
       "Practice real GATE questions",
@@ -207,9 +207,9 @@ window.testSeries = [
     lang: "English",
     objective: "Objective",
     tests: 37,
-    startDate: "2025-10-15",
+    startDate: "2026-07-07",
     endDate: "2027-02-15",
-    session: "2025-2026",
+    session: "2026-2027",
     desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) question papers from 2000 to 2026, designed to simulate real exam conditions and sharpen problem-solving, time management and exam readiness.",
     features: [
       "Practice real GATE questions",
@@ -238,10 +238,44 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹10",
-    basePrice: 10,
+    price: "₹251 + GST",
+    basePrice: 251,
     brandLabel: "APEX CLASSES",
-    comingSoon: true
+    // comingSoon: true
+  },
+  {
+    id: "ece-gate-pyq", // <-- Ye ID sabse zaroori hai!
+    code: "GATE",
+    examTag: "GATE 2026",
+    subjectTag: "Electronics & Communication",
+    title: "ECE-GATE PYQ Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 20, // Aapke according tests ki ginti
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) ECE question papers from 2000 to 2026.",
+    features: [
+      "Practice real GATE ECE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    price: "₹60 + GST",
+    basePrice: 60,
+    brandLabel: "APEX EASY"
   },
   {
     id: "ee-gate-pyq",

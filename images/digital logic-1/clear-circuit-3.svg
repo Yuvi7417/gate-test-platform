@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 520" width="550" height="520">
+  <rect width="100%" height="100%" fill="white"/>
+  
+  <defs>
+    <!-- NAND Gate -->
+    <g id="nand">
+      <path d="M 0 -20 L 20 -20 A 20 20 0 0 1 20 20 L 0 20 Z" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <circle cx="24" cy="0" r="4" fill="white" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="-10" x2="0" y2="-10" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="10" x2="0" y2="10" stroke="#000" stroke-width="1.5"/>
+    </g>
+    <!-- NOR Gate -->
+    <g id="nor">
+      <path d="M 0 -20 Q 15 0 0 20 Q 30 20 40 0 Q 30 -20 0 -20 Z" fill="#e2e2e2" stroke="#000" stroke-width="1.5"/>
+      <circle cx="44" cy="0" r="4" fill="white" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="-10" x2="5" y2="-10" stroke="#000" stroke-width="1.5"/>
+      <line x1="-20" y1="10" x2="5" y2="10" stroke="#000" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <!-- Text Labels -->
+  <g font-family="Times New Roman, serif" font-size="16">
+    <text x="30" y="30">(c) is false as NAND gate consumes less power than NOR gate.</text>
+    <text x="180" y="270" font-size="14">NAND realization of a half-adder</text>
+    <text x="180" y="500" font-size="14">NOR realization of a half-adder</text>
+  </g>
+  
+  <g font-family="Times New Roman, serif" font-style="italic" font-size="16">
+    <!-- NAND labels -->
+    <text x="120" y="105">A</text>
+    <text x="120" y="125">B</text>
+    <text x="460" y="115">S</text>
+    <text x="460" y="225">C</text>
+    
+    <!-- NOR labels -->
+    <text x="120" y="365">A</text>
+    <text x="120" y="385">B</text>
+    <text x="480" y="375">S</text>
+    <text x="460" y="325">C</text>
+    
+    <text x="260" y="275">A&#773;</text>
+    <text x="260" y="465">B&#773;</text>
+    <text x="360" y="355" text-decoration="overline">A&#773;+B&#773;</text>
+    <text x="300" y="395" text-decoration="overline">A+B</text>
+  </g>
+
+  <!-- Wires -->
+  <g fill="none" stroke="#000" stroke-width="1.5">
+    <!-- NAND Wires -->
+    <line x1="140" y1="100" x2="180" y2="100"/>
+    <line x1="140" y1="120" x2="180" y2="120"/>
+    
+    <polyline points="160,100 160,50 260,50"/>
+    <polyline points="160,120 160,170 260,170"/>
+    
+    <line x1="228" y1="110" x2="245" y2="110"/>
+    <polyline points="245,110 245,70 260,70"/>
+    <polyline points="245,110 245,150 260,150"/>
+    
+    <line x1="245" y1="150" x2="245" y2="230"/>
+    <line x1="245" y1="210" x2="260" y2="210"/>
+    <line x1="245" y1="230" x2="260" y2="230"/>
+    
+    <polyline points="308,60 325,60 325,100 340,100"/>
+    <polyline points="308,160 325,160 325,120 340,120"/>
+    
+    <line x1="388" y1="110" x2="450" y2="110"/>
+    <line x1="308" y1="220" x2="450" y2="220"/>
+    
+    <!-- NOR Wires -->
+    <line x1="140" y1="360" x2="220" y2="360"/>
+    <line x1="140" y1="380" x2="220" y2="380"/>
+    
+    <line x1="160" y1="360" x2="160" y2="280"/>
+    <line x1="160" y1="280" x2="220" y2="280"/>
+    <line x1="160" y1="300" x2="220" y2="300"/>
+    <line x1="160" y1="280" x2="160" y2="300"/>
+    
+    <line x1="160" y1="380" x2="160" y2="460"/>
+    <line x1="160" y1="440" x2="220" y2="440"/>
+    <line x1="160" y1="460" x2="220" y2="460"/>
+    <line x1="160" y1="440" x2="160" y2="460"/>
+    
+    <polyline points="288,290 300,290 300,310"/>
+    <polyline points="288,450 300,450 300,330"/>
+    
+    <line x1="368" y1="320" x2="450" y2="320"/>
+    <polyline points="380,320 380,360"/>
+    
+    <polyline points="288,370 360,370 360,380 380,380"/>
+    
+    <line x1="448" y1="370" x2="470" y2="370"/>
+  </g>
+
+  <!-- Gates Instances -->
+  <use href="#nand" x="200" y="110"/>
+  <use href="#nand" x="280" y="60"/>
+  <use href="#nand" x="280" y="160"/>
+  <use href="#nand" x="280" y="220"/>
+  <use href="#nand" x="360" y="110"/>
+  
+  <use href="#nor" x="240" y="290"/>
+  <use href="#nor" x="240" y="370"/>
+  <use href="#nor" x="240" y="450"/>
+  <use href="#nor" x="320" y="320"/>
+  <use href="#nor" x="400" y="370"/>
+
+  <!-- Dots -->
+  <!-- Solid Junction Dots -->
+  <g fill="#000">
+    <circle cx="160" cy="100" r="3.5"/>
+    <circle cx="160" cy="120" r="3.5"/>
+    <circle cx="245" cy="110" r="3.5"/>
+    <circle cx="245" cy="150" r="3.5"/>
+    
+    <circle cx="160" cy="360" r="3.5"/>
+    <circle cx="160" cy="380" r="3.5"/>
+    <circle cx="380" cy="320" r="3.5"/>
+  </g>
+  <!-- Hollow Terminal Dots -->
+  <g fill="white" stroke="#000" stroke-width="1.5">
+    <circle cx="140" cy="100" r="3.5"/>
+    <circle cx="140" cy="120" r="3.5"/>
+    <circle cx="450" cy="110" r="3.5"/>
+    <circle cx="450" cy="220" r="3.5"/>
+    
+    <circle cx="140" cy="360" r="3.5"/>
+    <circle cx="140" cy="380" r="3.5"/>
+    <circle cx="470" cy="370" r="3.5"/>
+    <circle cx="450" cy="320" r="3.5"/>
+  </g>
+</svg>
