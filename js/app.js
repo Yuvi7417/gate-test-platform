@@ -161,7 +161,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 37,
+    tests: 47,
     startDate: "2026-07-07",
     endDate: "2027-02-15",
     session: "2026-2027",
@@ -193,8 +193,8 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹1 + GST",
-    basePrice: 1,
+    price: "₹111 + GST",
+    basePrice: 111,
     brandLabel: "APEX EASY"
   },
   {
@@ -206,7 +206,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 37,
+    tests: 100,
     startDate: "2026-07-07",
     endDate: "2027-02-15",
     session: "2026-2027",
@@ -252,7 +252,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 20, // Aapke according tests ki ginti
+    tests: 47, // Aapke according tests ki ginti
     startDate: "2026-07-07",
     endDate: "2027-02-15",
     session: "2026-2027",
@@ -287,7 +287,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 36,
+    tests: 47,
     startDate: "2026-07-07",
     endDate: "2027-02-15",
     session: "2026-2027",
