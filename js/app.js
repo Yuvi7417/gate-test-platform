@@ -238,8 +238,8 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹1 + GST",
-    basePrice: 1,
+    price: "₹251 + GST",
+    basePrice: 251,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -274,8 +274,8 @@ window.testSeries = [
       },
     ],
     schedule: [],
-    price: "₹1 + GST",
-    basePrice: 1,
+    price: "₹60 + GST",
+    basePrice: 60,
     brandLabel: "APEX EASY"
   },
   {
@@ -308,16 +308,11 @@ window.testSeries = [
         selected: true,
       },
     ],
-    schedule: [
-      ["FST - 6", "Mar 18, 2026"],
-      ["FST - 5", "Nov 24, 2025"],
-      ["FST - 4", "Nov 23, 2025"],
-      ["FST - 3", "Nov 22, 2025"],
-      ["FST - 2", "Nov 21, 2025"],
-      ["FST - 1", "Nov 20, 2025"],
-    ],
-    price: "₹500 + GST",
-    comingSoon: true
+    schedule: [],
+    price: "₹1 + GST",
+    basePrice: 1,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
   },
   {
     id: "ce-gate-pyq",

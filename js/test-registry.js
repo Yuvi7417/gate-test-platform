@@ -539,8 +539,5 @@ registerTest({
   name: "TWT Digital Circuit-1",
   date: "July 07, 2026",
   questions: [
-    {
-
-    }
   ]
 });
