@@ -536,7 +536,7 @@ registerTest({
 
 registerTest({
   series: "ece-gate-pyq",
-  name: "TWT Digital Circuit-1",
+  name: "TWT - Digital Circuit-1",
   date: "July 07, 2026",
   questions: [
   ]
@@ -544,7 +544,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "TWT C-programming-1",
+  name: "TWT - C-programming-1",
   date: "July 07, 2026",
   questions: [
 

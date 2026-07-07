@@ -154,7 +154,7 @@ const courses = [
 window.testSeries = [
   {
     id: "cs-gate-pyq",
-    code: "GATE",
+    code: "CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CS-GATE PYQ Practice Test Series",
@@ -199,7 +199,7 @@ window.testSeries = [
   },
   {
     id: "cs-gate-classes",
-    code: "GATE",
+    code: "CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CS-GATE PYQ Practice Classes Test Series",
@@ -245,7 +245,7 @@ window.testSeries = [
   },
   {
     id: "ece-gate-pyq", // <-- Ye ID sabse zaroori hai!
-    code: "GATE",
+    code: "ECE",
     examTag: "GATE 2026",
     subjectTag: "Electronics & Communication",
     title: "ECE-GATE PYQ Practice Test Series",
