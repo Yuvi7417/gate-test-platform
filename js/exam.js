@@ -1191,7 +1191,9 @@ function goToNextQuestion() {
   if (playerCurrent < playerQuestions.length - 1) {
     renderPlayerQuestion(playerCurrent + 1);
   } else {
-    playerSubmit();
+    if (!solutionMode) {
+      playerSubmit();
+    }
   }
   updatePlayerCounts();
 }

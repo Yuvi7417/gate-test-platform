@@ -569,7 +569,7 @@ registerTest({
         "A &oplus; B &oplus; C = <span style='text-decoration: overline;'>(A &odot; B &odot; C)</span>"
       ],
       answer: "C",
-      solution: "<img src='js/questions/godigital-1/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      solution: "<img src='js/questions/go digital-1/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 1,
@@ -722,7 +722,7 @@ registerTest({
         "6, 4"
       ],
       answer: "A",
-      solution: "<img src='js/questions/go digital-1/5.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+      solution: "<img src='js/questions/go digital-1/5.jpeg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     },
     {
       marks: 2,
@@ -737,7 +737,7 @@ registerTest({
         "3, 4, 7, 8, 23, 24, 29"
       ],
       answer: "D",
-      solution: "<img src='js/questions/go digital-1/17.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+      solution: "<img src='js/questions/go digital-1/17.png' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     },
     {
       marks: 2,
