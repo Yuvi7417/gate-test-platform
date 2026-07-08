@@ -569,7 +569,7 @@ registerTest({
         "A &oplus; B &oplus; C = <span style='text-decoration: overline;'>(A &odot; B &odot; C)</span>"
       ],
       answer: "C",
-      solution: "<img src='js/questions/godigital-1/7.png' alt='solution'>",
+      solution: "<img src='js/questions/godigital-1/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 1,
@@ -578,7 +578,7 @@ registerTest({
       text: "An XOR gate with 7 variables(inputs) is being developed. Number of different input combinations for which output is 1?",
       image: "",
       answer: 64,
-      solution: "<img src='js/questions/godigital-1/8.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 1,
@@ -593,7 +593,7 @@ registerTest({
         "32"
       ],
       answer: "B",
-      solution: "<img src='js/questions/godigital-1/9.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 1,
@@ -623,7 +623,7 @@ registerTest({
         "Cannot store gray code of <i>n</i> + 1 in an 8 bit register."
       ],
       answer: "C",
-      solution: "<img src='js/questions/godigital-1/10.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 2,
@@ -638,7 +638,7 @@ registerTest({
         "x'yz'w"
       ],
       answer: ["B"],
-      solution: "<img src='js/questions/godigital-1/11.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 2,
@@ -653,7 +653,7 @@ registerTest({
         "None"
       ],
       answer: "A",
-      solution: "<img src='js/questions/godigital-1/12.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 2,
@@ -668,7 +668,7 @@ registerTest({
         "Only 3, 5"
       ],
       answer: "C",
-      solution: "<img src='js/questions/godigital-1/13.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/13.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 2,
@@ -677,7 +677,7 @@ registerTest({
       text: "Let <i>f</i> be a boolean function on <i>n</i> boolean variables (X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>).<br><br>We say a variable X<sub>i</sub> is dummy in boolean function <i>f</i> if<br><i>f</i>(X<sub>1</sub>, ..., X<sub>i-1</sub>, 0, X<sub>i+1</sub>, ..., X<sub>n</sub>) = <i>f</i>(X<sub>1</sub>, ..., X<sub>i-1</sub>, 1, X<sub>i+1</sub>, ..., X<sub>n</sub>)<br>for all the possible values of the other variables (i.e. variables except X<sub>i</sub>).<br><br>i.e. a variable X<sub>i</sub> is called dummy if, whenever we complement the value of X<sub>i</sub> in any row of the truth table of <i>f</i>, then the value of <i>f</i> doesn't change.<br><br>Number of boolean functions on 8 variables (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ..., <i>x</i><sub>8</sub>) such that <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, <i>x</i><sub>4</sub> are dummy variables in those functions, is __________.",
       image: "",
       answer: 65536,
-      solution: "<img src='js/questions/godigital-1/14.png' alt='solution'>",
+      solution: "<img src='js/questions/go digital-1/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     },
     {
       marks: 2,
@@ -692,7 +692,7 @@ registerTest({
         "R1 = 1001 and R2 = 1111"
       ],
       answer: ["B"],
-      solution: "<img src='js/questions/godigital-1/15.png' alt='solution'><br><img src='js/questions/godigital-1/16.png' alt='solution'>"
+      solution: "<img src='js/questions/go digital-1/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'><br><img src='js/questions/go digital-1/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>"
     },
     {
       marks: 2,
@@ -722,7 +722,7 @@ registerTest({
         "6, 4"
       ],
       answer: "A",
-      solution: "<img src='js/questions/godigital-1/5.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+      solution: "<img src='js/questions/go digital-1/5.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     },
     {
       marks: 2,
@@ -737,7 +737,7 @@ registerTest({
         "3, 4, 7, 8, 23, 24, 29"
       ],
       answer: "D",
-      solution: "<img src='js/questions/godigital-1/17.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+      solution: "<img src='js/questions/go digital-1/17.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     },
     {
       marks: 2,
@@ -755,7 +755,7 @@ registerTest({
       text: "Consider a 4 input boolean function F(X, Y, Z, T).<br><br>The minterm X'Y'Z'T' is known to be in the Canonical SOP form of F.<br><br>What is the maximum number of minterms that the Canonical SOP form of F can have such that no simplification is possible (i.e. Canonical SOP form itself is the minimized SOP form)?",
       image: "",
       answer: 8,
-      solution: "<img src='js/questions/godigital-1/18.png' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+      solution: "<img src='js/questions/go digital-1/18.png' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     }
   ]
 });
