@@ -977,7 +977,7 @@ registerTest({   // go classes cse topic wise test degital logic-1
 });
 
 
-registerTest({
+registerTest({   // made easy 2026 cse topic wise test theory of computation-1
   series: "cs-gate-2026-pyq",
   name: "TWT - Theory Of Computation-1",
   date: "July 08, 2026",
@@ -1236,7 +1236,7 @@ registerTest({
 });
 
 
-registerTest({
+registerTest({    // made easy 2026 cse topic wise test theory of computation-2
   series: "cs-gate-2026-pyq",
   name: "TWT - Theory Of Computation-2",
   date: "July 09, 2026",
@@ -1477,6 +1477,245 @@ registerTest({
       ],
       answer: "C",
       solution: "<img src=\"/js/questions/easy_2026_TOC-2/q17_sol_6.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    }
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test database-1
+  series: "cs-gate-2026-pyq",
+  name: "TWT - Database-1",
+  date: "July 11, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider an ER model with multiple entries and relation. [None of the attribute entry is NULL] Suppose a relational schema is derived from this ER model. <br><br><img src=\"/js/questions/easy_2026_Database-1/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> <em>X</em> : Minimum number of relations generated if all the resulting relation are in 3NF and allow NULL values.<br> <em>Y</em> : Minimum number of relations generated if all the resulting are in 3NF and do not allow NULL values.<br> Values of <em>X</em> and <em>Y</em> are?",
+      image: "",
+      options: [
+        "<em>X</em> = 3, <em>Y</em> = 5",
+        "<em>X</em> = 4, <em>Y</em> = 6",
+        "<em>X</em> = 3, <em>Y</em> = 6",
+        "<em>X</em> = 5, <em>Y</em> = 6"
+      ],
+      answer: "C",
+      solution: "(c)"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider two relations <em>R</em> (<em>A</em> , <u> <em>B</em> </u> ), <em>S</em> ( <u> <em>C</em> </u> , <em>D</em> )<br> where <em>B</em> , <em>C</em> are primary keys in respective relation and <em>A</em> is a foreign key in <em>R</em> referencing <em>C</em> in <em>S</em> <br> and <em>D</em> is a foreign key in <em>S</em> referencing <em>B</em> in <em>R</em> .<br>which of the following operations does not violate referential integrity constraints?",
+      image: "",
+      options: [
+        "Inserting the tuple (NULL, <em>X</em> ) in <em>R</em> , where <em>X</em> does not exists in <em>D</em> in <em>S</em> .",
+        "Updating the tuple (<em>X</em> , <em>Y</em> ) with (<em>Z</em> , <em>Y</em> ) in <em>S</em> where <em>X</em> does not exist in <em>A</em> in <em>R</em> .",
+        "Deleting the tuple (<em>X</em> , <em>Y</em> ) in <em>R</em> , where <em>X</em> exist in <em>C</em> is <em>S</em> but <em>Y</em> does not exist in <em>D</em> in <em>S</em> .",
+        "Inserting the tuple (<em>X</em> , <em>Y</em> ) in <em>R</em> , where <em>X</em> does not exists in <em>C</em> in <em>S</em> ."
+      ],
+      answer: ["A", "B", "C"],
+      solution: "(a, b, c)"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider an ER model <em>A</em> , <em>X</em> , <em>B</em> , <em>Y</em> are the entity sets connected by relationship. <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_2.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Minimum number of relation generates, in relational model is <em>R</em> and all relations are in 3NF.<br> Then number of foreign keys present in <em>R</em> ?",
+      image: "",
+      answer: "",
+      solution: "8"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: "Consider a relation R(A, B, C, D, E) with the following set of FD’s.<br> F = {A → BC, AB → D, B → E, AC → D, C → B, D → E, A → C}<br>Which of the following are correct canonical covers (minimal FD’s) of the given set of functional dependencies?",
+      image: "",
+      options: [
+        "{B → E, AC → D, D → E, C → B, A → C}",
+        "{A → D, C → B, A → C, B → E, D → E}",
+        "{B → E, AB → D, D → E, C → B, A → C}",
+        "{A → D, B → E, D → C, C → B, A → C}"
+      ],
+      answer: "A",
+      solution: "To check which options are valid canonical covers,<br> •The closure of each option is equal to the closure of original FD ’s.<br>•There are no extraneous attributes."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider a relation R(A, B, C, D, E, F) with the following functional dependencies.<br> {AB → C, C → D, AF → B, B → E}<br>Which of the following is/are true?",
+      image: "",
+      options: [
+        "Relation is in 2NF, but not in 3NF.",
+        "{B → E} is a partial dependency, so relation violates 2NF.",
+        "The FD : {C → D} violates BCNF, as C is not a super key.",
+        "Replacing {C → D} with {AB → D} and keeping all other FD’s, make the relation BCNF complaint."
+      ],
+      answer: ["A", "C"],
+      solution: "(a, c)<br> AF is the only candidate key.<br> •No partial dependency exist, so relation is in 2NF.<br> •There exist transitive dependency from AF →B →E hence relation is not in 3NF.<br>•Replacing FD : {C →D} with {AB →D} do not make relation in BCNF."
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: "In a relation <em>R</em> (<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> ). The set of attributes Σ ⊆ R{<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> } is called a superkey if :",
+      image: "",
+      options: [
+        "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>2</sub> , <em>A</em> <sub>3</sub> , ..... <em>A</em> <sub>n</sub> } and Σ may not minimal.",
+        "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em>A</em> <sub>n</sub> – 1} and Σ is minimal.",
+        "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em>A</em> <sub>n</sub> } and Σ may not minimal.",
+        "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>3</sub> , ..... <em>A</em> <sub>n</sub> } and Σ is minimal."
+      ],
+      answer: ["A", "B"],
+      solution: "[Superkey = Candidate key + Optional attributes]<br>A candidate key is always a super key but a super key may not be a minimal candidate key (it may have extra attributes)."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "In a relational database, which of the following statements about referential integrity is incorrect?",
+      image: "",
+      options: [
+        "A foreign key must reference a primary key in another table.",
+        "A foreign key can accept NULL values if the foreign key relationship is optional.",
+        "If a tuple is deleted from the parent table, all referencing tuples in the child must be deleted.",
+        "A foreign key constraint is used to establish relationship between two table."
+      ],
+      answer: ["B", "D"],
+      solution: "(b, d)"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "<img src=\"/js/questions/easy_2026_Database-1/q8_3.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Employee FD’s : EID → Name, Name → Phone<br>Which of the following statements are necessarily true?",
+      image: "",
+      options: [
+        "The dependency leadID → DepID causes redundancy unless leadID is a candidate key.",
+        "leadID and RevID may belong to different departments without violating any integrity constraint.",
+        "Project and Employee relations have same normal form and more redundancy than department relation.",
+        "The schema violates referential integrity if EID is not NULL and leadID, RevID is NULL."
+      ],
+      answer: ["A", "C"],
+      solution: "(a, c)"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "In the context of index file structures used in database, consider the following three alternatives for storing data entries in an index.<br> <em>A</em> <sub>1</sub> : Each data entry with key <em>k</em> is an actual data record with search key <em>k</em> .<br> <em>A</em> <sub>2</sub> : Each data entry is a pair (<em>k</em> , rid), where rid is the record id of data record with search key <em>k</em> .<br> <em>A</em> <sub>3</sub> : Each data entry is a pair (<em>k</em> , rid-list), where rid-list is the list of all record id’s with search key <em>k</em> .<br>Which of the following statements are correct?",
+      image: "",
+      options: [
+        "<em>A</em> <sub>1</sub> act as a specialized fill organization that can substitute a sorted or unsorted file.",
+        "Both <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> decouple the index structure from the underlying file organization used for storing data records.",
+        "<em>A</em> <sub>3</sub> improves space utilization compared to <em>A</em> <sub>2</sub> , but requires entities to be of fixed length.",
+        "<em>A</em> <sub>3</sub> while saving space, reduce redundancy but introduce variable length data entries."
+      ],
+      answer: ["A", "B", "D"],
+      solution: "(a, b, d)<br> (a) If the index directly stores full data record (<em>A</em> <sub>1</sub> ) there ’s number need to go elsewhere for the actual data, so it behave like a file itself, not pointer based index.<br> (b) <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> have entries point to record. So it does not matter how or where the actual record one stored.<br> (c) <em>A</em> <sub>3</sub> size depends on rid-list size, depends on how many records share the same key.<br> (d) Instead of repeating (<em>k</em> , rid) for every record (<em>A</em> <sub>2</sub> ) <em>A</em> <sub>3</sub> groups all rid together saving space."
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "A sorted data file on Anum contains 150000 students records, stored on a harddisk with block size of 4096 B. Each record includes, candidate key Anum of size 5 B and an alternate key Bnum of size 9 B.<br> Size of block pointer is 4 B and record pointer is 8 B. Only 95% of each disk block is usual due to alignment and storage overheads.<br> Assume no index entry spans across disk blocks.<br>How many disk blocks are required to store the second index file, if first level index built-on Bnum.",
+      image: "",
+      options: [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      answer: "B",
+      solution: "(b)"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a B-tree used to index a file containing 177 × 10<sup>5</sup> records. Each record has a search key of 2B and record pointer of 8B. The size of a block pointer is 16 B and block size is 1024 B. Determine the number of levels in a B-tree constructed with maximum height assuming the leaf<br>nodes do not allocate space for block pointers. (Assume root at level 1)",
+      image: "",
+      answer: "",
+      solution: "6"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_4.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_5.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_6.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_7.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_8.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: ["C", "A", "B", "D"],
+      solution: "Composite attribute have minimum two attribute.<br> So option (a), (b) are incorrect.<br> Option (d) have missing [DOB] attribute.<br>Option (c) is right because [Age] is a derived attribute no present in final schema."
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider a relation <em>R</em> having <em>k</em> is candidate key and <em>D</em> is the domain of attribute <em>A</em> and FK is the foreign key in <em>R</em> . S is another relation with PK as primary key. (t is some random tuple)<br> Match the correct item of <strong>List-1</strong> with <strong>List-2:</strong> <br><br><img src=\"/js/questions/easy_2026_Database-1/q13_9.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      image: "",
+      options: [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      answer: "A",
+      solution: "(a)"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the attribute set in <em>R</em> (A, B, C, D, E, G) and the FD set:<br> {AB → C, AC → B, AD → E, B → D, BC → A, E → G}<br> Consider the following decomposition of R.<br> <em>D</em> <sub>1</sub> : <em>R</em> <sub>1</sub> (AB), <em>R</em> <sub>2</sub> (BC), <em>R</em> <sub>3</sub> (ABDE), <em>R</em> <sub>4</sub> (EG)<br> <em>D</em> <sub>2</sub> : <em>R</em> <sub>1</sub> (ABC), <em>R</em> <sub>2</sub> (ACDE), <em>R</em> <sub>3</sub> (ADG)<br>Which of the following is true?",
+      image: "",
+      options: [
+        "<em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are lossless and not dependency preserving.",
+        "<em>D</em> <sub>1</sub> is lossy, <em>D</em> <sub>2</sub> is lossless and <em>D</em> <sub>2</sub> is not dependency preserving but <em>D</em> <sub>1</sub> is.",
+        "<em>D</em> <sub>2</sub> is lossy, <em>D</em> <sub>1</sub> is lossless and <em>D</em> <sub>1</sub> is not dependency preserving but <em>D</em> <sub>2</sub> is.",
+        "<em>D</em> <sub>2</sub> is lossless, <em>D</em> <sub>1</sub> is lossy and <em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are not dependency preserving."
+      ],
+      answer: "D",
+      solution: "<em>D</em> <sub>1</sub> is lossy and not dependency preserving.<br> <em>D</em> <sub>2</sub> lossless and not dependency preserving."
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider the following statements regarding database normalization:<br> <em>S</em> <sub>1</sub> : Every decomposition which satisfies 3NF is always lossless and dependency preserving.<br> <em>S</em> <sub>2</sub> : Every decomposition which satisfies 2NF removes partial dependency but transitive dependency may still exist.<br> <em>S</em> <sub>3</sub> : Every decomposition which satisfies BCNF is always lossless, but may/may not functional dependency preserving.<br> <em>S</em> <sub>4</sub> : ∃ Relation whose decomposition is in BCNF, lossless and dependency preserving.<br>Number of incorrect statements is/are ________.",
+      image: "",
+      answer: "",
+      solution: "2<br> •Every relation possible to decompose 3NF, LLJ and DP.<br> •NPA transitively determine by SK : (not allowed in 3NF).<br> •Every relation possible to decompose into BCNF with LLJ.<br>•Not every relation possible to decompose into BCNF with LLJ and DP."
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: "Consider the following relation R(A, B, C, D, E, F) and functional dependencies.<br> A → B, B → C, C → D, A → E, E → F<br>Which of the following valid decomposition of R is not in 3NF but in 2NF?",
+      image: "",
+      options: [
+        "<em>R</em> <sub>1</sub> (A, B, C), <em>R</em> <sub>2</sub> (A, E, F), <em>R</em> <sub>3</sub> (B, D)",
+        "<em>R</em> <sub>1</sub> (A, B, E), <em>R</em> <sub>2</sub> (B, D), <em>R</em> <sub>3</sub> (A, E, F)",
+        "<em>R</em> <sub>1</sub> (A, B, C, D), <em>R</em> <sub>2</sub> (A, E, F)",
+        "<em>R</em> <sub>1</sub> (A, B, C), <em>R</em> <sub>2</sub> (A, E), <em>R</em> <sub>3</sub> (E, F)"
+      ],
+      answer: "C",
+      solution: "(c)"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a relation R(A, B, C, D, E, G, H) with the following set of functional dependencies.<br> F = {CD → A, EC → H, EG → A, BE → CD, EC → B}<br> Assume all attribute are atomic and R is in 1NF.<br>Number of the candidate keys present in F is/are?",
+      image: "",
+      answer: "",
+      solution: "2<br>EG are essential attribute, [BEG] and [CEG] are candidate keys."
     }
   ]
 });
