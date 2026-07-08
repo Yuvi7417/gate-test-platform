@@ -1490,7 +1490,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider an ER model with multiple entries and relation. [None of the attribute entry is NULL] Suppose a relational schema is derived from this ER model. <br><br><img src=\"/js/questions/easy_2026_Database-1/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> <em>X</em> : Minimum number of relations generated if all the resulting relation are in 3NF and allow NULL values.<br> <em>Y</em> : Minimum number of relations generated if all the resulting are in 3NF and do not allow NULL values.<br> Values of <em>X</em> and <em>Y</em> are?",
+      text: "Consider an ER model with multiple entries and relation. [None of the attribute entry is NULL] Suppose a relational schema is derived from this ER model. <br><br><img src=\"/js/questions/easy_2026_Database-1/q1_100.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> <em>X</em> : Minimum number of relations generated if all the resulting relation are in 3NF and allow NULL values.<br> <em>Y</em> : Minimum number of relations generated if all the resulting are in 3NF and do not allow NULL values.<br> Values of <em>X</em> and <em>Y</em> are?",
       image: "",
       options: [
         "<em>X</em> = 3, <em>Y</em> = 5",
@@ -1499,7 +1499,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>X</em> = 5, <em>Y</em> = 6"
       ],
       answer: "C",
-      solution: "(c)"
+      solution: "(c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q1_101.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1514,16 +1514,16 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "Inserting the tuple (<em>X</em> , <em>Y</em> ) in <em>R</em> , where <em>X</em> does not exists in <em>C</em> in <em>S</em> ."
       ],
       answer: ["A", "B", "C"],
-      solution: "(a, b, c)"
+      solution: "(a, b, c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q2_102.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Consider an ER model <em>A</em> , <em>X</em> , <em>B</em> , <em>Y</em> are the entity sets connected by relationship. <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_2.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Minimum number of relation generates, in relational model is <em>R</em> and all relations are in 3NF.<br> Then number of foreign keys present in <em>R</em> ?",
+      text: "Consider an ER model <em>A</em> , <em>X</em> , <em>B</em> , <em>Y</em> are the entity sets connected by relationship. <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_103.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Minimum number of relation generates, in relational model is <em>R</em> and all relations are in 3NF.<br> Then number of foreign keys present in <em>R</em> ?",
       image: "",
       answer: "",
-      solution: "8"
+      solution: "8 &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_104.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1538,7 +1538,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "{A → D, B → E, D → C, C → B, A → C}"
       ],
       answer: "A",
-      solution: "To check which options are valid canonical covers,<br> •The closure of each option is equal to the closure of original FD ’s.<br>•There are no extraneous attributes."
+      solution: "(b)<br> To check which options are valid canonical covers,<br> •The closure of each option is equal to the closure of original FD ’s.<br>•There are no extraneous attributes."
     },
     {
       marks: 1,
@@ -1568,7 +1568,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>3</sub> , ..... <em>A</em> <sub>n</sub> } and Σ is minimal."
       ],
       answer: ["A", "B"],
-      solution: "[Superkey = Candidate key + Optional attributes]<br>A candidate key is always a super key but a super key may not be a minimal candidate key (it may have extra attributes)."
+      solution: "(c)<br> [Superkey = Candidate key + Optional attributes]<br>A candidate key is always a super key but a super key may not be a minimal candidate key (it may have extra attributes)."
     },
     {
       marks: 1,
@@ -1589,7 +1589,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: "<img src=\"/js/questions/easy_2026_Database-1/q8_3.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Employee FD’s : EID → Name, Name → Phone<br>Which of the following statements are necessarily true?",
+      text: "<img src=\"/js/questions/easy_2026_Database-1/q8_105.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Employee FD’s : EID → Name, Name → Phone<br>Which of the following statements are necessarily true?",
       image: "",
       options: [
         "The dependency leadID → DepID causes redundancy unless leadID is a candidate key.",
@@ -1598,7 +1598,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "The schema violates referential integrity if EID is not NULL and leadID, RevID is NULL."
       ],
       answer: ["A", "C"],
-      solution: "(a, c)"
+      solution: "(a, c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q8_106.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1628,7 +1628,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "2"
       ],
       answer: "B",
-      solution: "(b)"
+      solution: "(b) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q10_107.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
     },
     {
       marks: 2,
@@ -1637,28 +1637,28 @@ registerTest({    // made easy 2026 cse topic wise test database-1
       text: "Consider a B-tree used to index a file containing 177 × 10<sup>5</sup> records. Each record has a search key of 2B and record pointer of 8B. The size of a block pointer is 16 B and block size is 1024 B. Determine the number of levels in a B-tree constructed with maximum height assuming the leaf<br>nodes do not allocate space for block pointers. (Assume root at level 1)",
       image: "",
       answer: "",
-      solution: "6"
+      solution: "6 &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q11_108.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MSQ",
-      text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_4.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_109.png\" style=\"max-width:100%; border-radius: 8px;\">",
       image: "",
       options: [
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_5.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_6.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_7.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_8.png\" style=\"max-width:100%; border-radius: 8px;\">"
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_110.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_111.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_112.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_113.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
       answer: ["C", "A", "B", "D"],
-      solution: "Composite attribute have minimum two attribute.<br> So option (a), (b) are incorrect.<br> Option (d) have missing [DOB] attribute.<br>Option (c) is right because [Age] is a derived attribute no present in final schema."
+      solution: "(c)<br> Composite attribute have minimum two attribute.<br> So option (a), (b) are incorrect.<br> Option (d) have missing [DOB] attribute.<br>Option (c) is right because [Age] is a derived attribute no present in final schema."
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider a relation <em>R</em> having <em>k</em> is candidate key and <em>D</em> is the domain of attribute <em>A</em> and FK is the foreign key in <em>R</em> . S is another relation with PK as primary key. (t is some random tuple)<br> Match the correct item of <strong>List-1</strong> with <strong>List-2:</strong> <br><br><img src=\"/js/questions/easy_2026_Database-1/q13_9.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      text: "Consider a relation <em>R</em> having <em>k</em> is candidate key and <em>D</em> is the domain of attribute <em>A</em> and FK is the foreign key in <em>R</em> . S is another relation with PK as primary key. (t is some random tuple)<br> Match the correct item of <strong>List-1</strong> with <strong>List-2:</strong> <br><br><img src=\"/js/questions/easy_2026_Database-1/q13_114.png\" style=\"max-width:100%; border-radius: 8px;\">",
       image: "",
       options: [
         "a",
@@ -1682,7 +1682,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>D</em> <sub>2</sub> is lossless, <em>D</em> <sub>1</sub> is lossy and <em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are not dependency preserving."
       ],
       answer: "D",
-      solution: "<em>D</em> <sub>1</sub> is lossy and not dependency preserving.<br> <em>D</em> <sub>2</sub> lossless and not dependency preserving."
+      solution: "(d)<br> <em>D</em> <sub>1</sub> is lossy and not dependency preserving.<br> <em>D</em> <sub>2</sub> lossless and not dependency preserving."
     },
     {
       marks: 2,
@@ -1706,7 +1706,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>R</em> <sub>1</sub> (A, B, C), <em>R</em> <sub>2</sub> (A, E), <em>R</em> <sub>3</sub> (E, F)"
       ],
       answer: "C",
-      solution: "(c)"
+      solution: "(c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q16_115.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
     },
     {
       marks: 1,
