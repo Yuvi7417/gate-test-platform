@@ -977,7 +977,7 @@ registerTest({   // go classes cse topic wise test degital logic-1
 });
 
 registerTest({
-  seriesId: "cs-gate-pyq",
+  series: "cs-gate-pyq",
   name: "TWT - Computer Network-1",
   date: "July 08, 2026",
   questions: [
