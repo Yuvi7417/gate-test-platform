@@ -637,7 +637,7 @@ registerTest({
         "x'z'",
         "x'yz'w"
       ],
-      answer: "B",
+      answer: ["B"],
       solution: "<img src='js/questions/godigital-1/11.png' alt='solution'>",
     },
     {
@@ -691,7 +691,7 @@ registerTest({
         "R1 = 1111 and R2 = 1000",
         "R1 = 1001 and R2 = 1111"
       ],
-      answer: "B",
+      answer: ["B"],
       solution: "<img src='js/questions/godigital-1/15.png' alt='solution'><br><img src='js/questions/godigital-1/16.png' alt='solution'>"
     },
     {
