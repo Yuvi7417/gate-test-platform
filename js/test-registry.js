@@ -563,13 +563,199 @@ registerTest({
       text: "Let A, B, C be three boolean variables. &oplus; and &odot; are exclusive-or(ExOr) and exclusive-nor(ExNor) operations respectively.<br>Consider the following statements:",
       image: "",
       options: [
-        "1. (A &oplus; B) &oplus; C = A &oplus; (B &oplus; C)",
-        "2. (A &odot; B) &odot; C = A &odot; (B &odot; C)",
-        "3. A &oplus; B &oplus; C = A &odot; B &odot; C",
-        "4. A &oplus; B &oplus; C = <span style='text-decoration: overline;'>(A &odot; B &odot; C)</span>"
+        "(A &oplus; B) &oplus; C = A &oplus; (B &oplus; C)",
+        "(A &odot; B) &odot; C = A &odot; (B &odot; C)",
+        "A &oplus; B &oplus; C = A &odot; B &odot; C",
+        "A &oplus; B &oplus; C = <span style='text-decoration: overline;'>(A &odot; B &odot; C)</span>"
       ],
       answer: "C",
-      solution: "1 and 2 are obviously correct as XOR and XNOR are associative.<br><br>3 is also correct as:<br><br><b>LHS</b><br>= (A'B + AB')C' + (A'B + AB')'C<br>= A'BC' + AB'C' + ABC + A'B'C<br><br><b>RHS</b><br>= (AB + A'B')C + (AB + A'B')'C'<br>= ABC + A'B'C + A'BC' + AB'C'<br>= LHS",
+      solution: "<img src='js/questions/godigital-1/7.png' alt='solution'>",
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "An XOR gate with 7 variables(inputs) is being developed. Number of different input combinations for which output is 1?",
+      image: "",
+      answer: 64,
+      solution: "<img src='js/questions/godigital-1/8.png' alt='solution'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "The possible number of Boolean function of 3 variables X, Y and Z such that f(X, Y, Z) = f(X', Y', Z')",
+      image: "",
+      options: [
+        "8",
+        "16",
+        "64",
+        "32"
+      ],
+      answer: "B",
+      solution: "<img src='js/questions/godigital-1/9.png' alt='solution'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "The table in the figure above shows the binary-coded-decimal (BCD) representation of the digits 0 through 9. The Boolean expression that represents the set of invalid codes is",
+      image: "js/questions/go digital-1/2.png",
+      options: [
+        "A &or; BC",
+        "AB &or; CD",
+        "AB &or; AC",
+        "AB &or; AD"
+      ],
+      answer: "C",
+      solution: "Let f = Set of invalid codes minterms = 10, 11, 12, 13, 14, 15<br>f = AC + AB<br><br><img src='js/questions/go digital-1/3.jpg' alt='K-map Solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Gray code for some natural number <i>n</i> is 1111 1111 and it is stored in an 8-bit register R. If we store the Gray code of <i>n</i> + 1 in R then what will be the content of R?",
+      image: "",
+      options: [
+        "0000 0000",
+        "1010 1011",
+        "1111 1110",
+        "Cannot store gray code of <i>n</i> + 1 in an 8 bit register."
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/godigital-1/10.png' alt='solution'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the Karnaugh map below for a boolean function F(x, y, z, w).<br><br>Which of the following is/are an implicant that's neither a prime implicant, nor a minterm of function F?",
+      image: "js/questions/go digital-1/1.png",
+      options: [
+        "yw'",
+        "yzw'",
+        "x'z'",
+        "x'yz'w"
+      ],
+      answer: "B",
+      solution: "<img src='js/questions/godigital-1/11.png' alt='solution'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider five seats, numbered 0 to 4, arranged in a circle and described by Boolean variables i<sub>0</sub> to i<sub>4</sub>. Boolean variable i<sub>0</sub> is true if seat 0 is occupied and i<sub>0</sub> is false if the seat is not occupied (no one is sitting in the seat), likewise for i<sub>1</sub>, i<sub>2</sub>, i<sub>3</sub>, and i<sub>4</sub>.<br><br>Which of the following Boolean expressions is true iff at least two people are sitting next to each other and at least one seat is not occupied?",
+      image: "",
+      options: [
+        "(i<sub>0</sub>i<sub>1</sub> + i<sub>1</sub>i<sub>2</sub> + i<sub>2</sub>i<sub>3</sub> + i<sub>3</sub>i<sub>4</sub> + i<sub>4</sub>i<sub>0</sub>) <span style='text-decoration: overline;'>(i<sub>0</sub>i<sub>1</sub>i<sub>2</sub>i<sub>3</sub>i<sub>4</sub>)</span>",
+        "(i<sub>0</sub>i<sub>1</sub> + i<sub>1</sub>i<sub>2</sub> + i<sub>2</sub>i<sub>3</sub> + i<sub>3</sub>i<sub>4</sub> + i<sub>4</sub>i<sub>0</sub>) (i<sub>0</sub>i<sub>1</sub>i<sub>2</sub>i<sub>3</sub>i<sub>4</sub>)",
+        "(i<sub>0</sub>i<sub>1</sub> + i<sub>1</sub>i<sub>2</sub> + i<sub>2</sub>i<sub>3</sub> + i<sub>3</sub>i<sub>4</sub> + i<sub>4</sub>i<sub>0</sub>)",
+        "None"
+      ],
+      answer: "A",
+      solution: "<img src='js/questions/godigital-1/12.png' alt='solution'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Let <i>f</i> be a boolean function on <i>n</i> boolean variables (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ..., <i>x<sub>n</sub></i>). We say a variable <i>x<sub>i</sub></i> is dummy in boolean function <i>f</i> if <i>f</i>(<i>x</i><sub>1</sub>, ..., <i>x<sub>i-1</sub></i>, 0, <i>x<sub>i+1</sub></i>, ..., <i>x<sub>n</sub></i>) = <i>f</i>(<i>x</i><sub>1</sub>, ..., <i>x<sub>i-1</sub></i>, 1, <i>x<sub>i+1</sub></i>, ..., <i>x<sub>n</sub></i>) for all the possible values of the other variables (i.e., variables except <i>x<sub>i</sub></i>). A variable <i>x<sub>k</sub></i> is said to be Non-dummy in function <i>f</i> if <i>x<sub>k</sub></i> is not a dummy variable in <i>f</i>.<br><br>Consider the following statements regarding the minimized expression of the function <i>f</i>:<br>1. A dummy variable is Never present (in original form or complemented form) in any minimized expression of <i>f</i>.<br>2. A dummy variable is always present (in original form or complemented form) in every minimized expression of <i>f</i>.<br>3. A dummy variable may be present (in original form or complemented form) in some minimized expression of <i>f</i>.<br>4. A Non-dummy variable is Always present (in original form or complemented form) in every minimized expression of <i>f</i>.<br>5. A Non-dummy variable may not be present (in original form or complemented form) in some minimized expression of <i>f</i>.<br><br>Which of the above statements is True?",
+      image: "",
+      options: [
+        "Only 1",
+        "Only 2, 4",
+        "Only 1, 4",
+        "Only 3, 5"
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/godigital-1/13.png' alt='solution'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Let <i>f</i> be a boolean function on <i>n</i> boolean variables (X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>).<br><br>We say a variable X<sub>i</sub> is dummy in boolean function <i>f</i> if<br><i>f</i>(X<sub>1</sub>, ..., X<sub>i-1</sub>, 0, X<sub>i+1</sub>, ..., X<sub>n</sub>) = <i>f</i>(X<sub>1</sub>, ..., X<sub>i-1</sub>, 1, X<sub>i+1</sub>, ..., X<sub>n</sub>)<br>for all the possible values of the other variables (i.e. variables except X<sub>i</sub>).<br><br>i.e. a variable X<sub>i</sub> is called dummy if, whenever we complement the value of X<sub>i</sub> in any row of the truth table of <i>f</i>, then the value of <i>f</i> doesn't change.<br><br>Number of boolean functions on 8 variables (<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, ..., <i>x</i><sub>8</sub>) such that <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, <i>x</i><sub>4</sub> are dummy variables in those functions, is __________.",
+      image: "",
+      answer: 65536,
+      solution: "<img src='js/questions/godigital-1/14.png' alt='solution'>",
+    },
+    {
+      marks: 2,
+      neg: 0, // MSQ questions usually have 0 negative marking
+      type: "MSQ",
+      text: "Let R1 and R2 be two 4-bit registers that store numbers in 1's complement form. For the operation R1 + R2, which one of the following values of R1 and R2 gives an arithmetic overflow?",
+      image: "",
+      options: [
+        "R1 = 1011 and R2 = 1110",
+        "R1 = 1100 and R2 = 1010",
+        "R1 = 1111 and R2 = 1000",
+        "R1 = 1001 and R2 = 1111"
+      ],
+      answer: "B",
+      solution: "<img src='js/questions/godigital-1/15.png' alt='solution'><br><img src='js/questions/godigital-1/16.png' alt='solution'>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "The literal count of a Boolean expression is the sum of the number of times each literal appears in the expression. For example, the literal count of (<i>xy</i> + <i>xz'</i> + <i>x'y</i>) is 6. Let <i>f</i> be some fully-specified function on <i>n</i> variables, <i>n</i> &ge; 4.<br><br>Which of the following statement is necessarily true for <i>f</i> :",
+      image: "",
+      options: [
+        "The minimised SOP (sum of product) and minimised POS (product of sum) forms have the same literal count.",
+        "The minimised POS form has smaller literal count than the minimised SOP form.",
+        "The minimised SOP form has smaller literal count than the minimised POS form.",
+        "None of the above."
+      ],
+      answer: "D",
+      solution: "<img src='js/questions/go digital-1/4.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider two 2-bit numbers <i>A</i> = <i>a</i><sub>1</sub><i>a</i><sub>0</sub> and <i>B</i> = <i>b</i><sub>1</sub><i>b</i><sub>0</sub>. The value of a 2-bit number <i>X</i> = <i>x</i><sub>1</sub><i>x</i><sub>0</sub> is defined as:<br><i>v</i>(<i>X</i>) = <i>x</i><sub>1</sub> &times; 2<sup>1</sup> + <i>x</i><sub>0</sub> &times; 2<sup>0</sup><br><br>Assume that A and B are such that |<i>v</i>(A) - <i>v</i>(B)| &le; 2. A four-variable function <i>f</i>(<i>a</i><sub>1</sub>, <i>a</i><sub>0</sub>, <i>b</i><sub>1</sub>, <i>b</i><sub>0</sub>) is to have value 1 whenever <i>v</i>(A) &le; <i>v</i>(B), and value 0 otherwise.<br><br>The number of prime implicants and essential prime implicants for this function <i>f</i>, respectively, are",
+      image: "",
+      options: [
+        "5, 5",
+        "5, 4",
+        "6, 5",
+        "6, 4"
+      ],
+      answer: "A",
+      solution: "<img src='js/questions/godigital-1/5.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<i>F</i> is a boolean function in five boolean variables <i>a, b, c, d</i> and <i>e</i>.<br><br><i>F</i>(<i>a, b, c, d, e</i>) = &sum;(0, 1, 7, 8, 14, 15, 16, 17, 29, 30, 31)<br><br>Let <i>D</i> be the Dual of function <i>F</i>. Then which of the following is Not a subset of (true) minterms of <i>D</i>?",
+      image: "",
+      options: [
+        "3, 4, 5, 6, 27, 28",
+        "7, 8",
+        "3, 4, 5, 6, 7, 8",
+        "3, 4, 7, 8, 23, 24, 29"
+      ],
+      answer: "D",
+      solution: "<img src='js/questions/godigital-1/17.jpg' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "How many boolean functions on 4 Variables are there whose dual is the same as their complement i.e. a function <i>f</i> for which <span style='text-decoration: overline;'>f</span> = <i>f<sub>dual</sub></i>?",
+      image: "",
+      answer: 256,
+      solution: "<img src='js/questions/go digital-1/6.png' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a 4 input boolean function F(X, Y, Z, T).<br><br>The minterm X'Y'Z'T' is known to be in the Canonical SOP form of F.<br><br>What is the maximum number of minterms that the Canonical SOP form of F can have such that no simplification is possible (i.e. Canonical SOP form itself is the minimized SOP form)?",
+      image: "",
+      answer: 8,
+      solution: "<img src='js/questions/godigital-1/18.png' alt='Solution' style='max-width:100%; border-radius: 8px;'>"
     }
   ]
 });
