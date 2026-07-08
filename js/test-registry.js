@@ -84,7 +84,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "The Boolean expression for the output â€˜Fâ€™ of the logic circuit shown in the figure below is",
+      text: "The Boolean expression for the output ‘F’ of the logic circuit shown in the figure below is",
       image: 'images/digital logic-1/mceclip6-1777717003260.png',
       options: [
         '<img src="images/digital logic-1/mceclip7-1777717008801.png" alt="Option A" style="max-width:150px;">',
@@ -99,7 +99,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider the MUX circuit shown in the figure below: The output function â€˜fâ€™ can be represented as",
+      text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
       image: 'images/digital logic-1/mceclip12-1777717060063.png',
       options: [
         '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
@@ -124,7 +124,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: 'The Boolean expression for bulb â€˜Bâ€™ shown in figure below is',
+      text: 'The Boolean expression for bulb ‘B’ shown in figure below is',
       image: "images/digital logic-1/mceclip20-1777717191268.png",
       options: [
         '<img src= "images/digital logic-1/mceclip22-1777717204356.png"alt="Option A" style="max-width:150px;">',
@@ -149,7 +149,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: "Two half adders are connected in cascade as shown below, the output â€˜Sâ€™ and â€˜Câ€™ is/are",
+      text: "Two half adders are connected in cascade as shown below, the output ‘S’ and ‘C’ is/are",
       image: "images/digital logic-1/mceclip29-1777717373795.png",
       options: [
         '<img src="images/digital logic-1/mceclip32-1777717389924.png" alt="Option A" style="max-width:150px;">',
@@ -222,7 +222,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       image: "images/digital logic-1/mceclip52-1777718034756.png",
       options: [
         "Gray code to BCD code",
-        "2â€™s complement of BCD code",
+        "2’s complement of BCD code",
         "BCD code to excess-3 code",
         "Excess-3 to BCD code"
       ],
@@ -258,7 +258,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Consider the function: where 'f' represents Boolean function and 'd' represents donâ€™t care condition. The simplified Boolean expression 'f' is reduced to ________ literals.",
+      text: "Consider the function: where 'f' represents Boolean function and 'd' represents don’t care condition. The simplified Boolean expression 'f' is reduced to ________ literals.",
       image: "images/digital logic-1/mceclip47-1777717683574.png",
       options: [],
       answer: 4,
@@ -316,7 +316,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: "Consider a relation schema X with attributes (P, Q, R, S, T, U) and functional dependency set that&nbsp;holds on <em>X</em> :<br>F = {U â†’ PT, P â†’ Q, Q â†’ PST, PS â†’ Q, QST â†’ PS}<br><br>How many number of super keys ________?",
+      text: "Consider a relation schema X with attributes (P, Q, R, S, T, U) and functional dependency set that&nbsp;holds on <em>X</em> :<br>F = {U → PT, P → Q, Q → PST, PS → Q, QST → PS}<br><br>How many number of super keys ________?",
       image: "",
       options: [],
       answer: 16,
@@ -326,7 +326,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "In a relation, <em>R</em>, an attribute â€œ<em>B</em>â€ of <em>R </em>is said to be fully functionally dependent on an attribute or&nbsp;set of attributes â€œ<em>A</em>â€ of <em>R </em>if <em>B </em>is functionally dependent on <em>A </em>but not functionally dependent on&nbsp;any proper subset of <em>A</em>.<br>Consider a relation <em>S </em>in which for every functional dependency <em>X</em> â†’ <em>Y</em>, either <em>X </em>is a superkey or&nbsp;every attribute of <em>Y </em>is a prime attribute. What is necessarily true for S?",
+      text: "In a relation, <em>R</em>, an attribute “<em>B</em>” of <em>R </em>is said to be fully functionally dependent on an attribute or&nbsp;set of attributes “<em>A</em>” of <em>R </em>if <em>B </em>is functionally dependent on <em>A </em>but not functionally dependent on&nbsp;any proper subset of <em>A</em>.<br>Consider a relation <em>S </em>in which for every functional dependency <em>X</em> → <em>Y</em>, either <em>X </em>is a superkey or&nbsp;every attribute of <em>Y </em>is a prime attribute. What is necessarily true for S?",
       image: "",
       options: [
         "Relation <em>S </em>is not in 2NF.",
@@ -335,7 +335,7 @@ registerTest({   // made easy cse topic wise test database-1
         "Relation <em>S </em>is neither in 2NF nor in 3NF.",
       ],
       answer: "B",
-      solution: "Given:<br>For every functional dependency <em>X </em>â†’ <em>Y </em>in relation <em>S</em>:<br>Either X is a superkey, OR.<br>Every attribute of Y is a prime attribute.<br>A relation is in 3NF if for every FD <em>X</em> â†’ <em>A</em>, at least one holds:<br><em>X</em> is a superkey, OR.<br><em>A</em> is a prime attribute.<br>The given condition is exactly this definition (extended to set <em>Y</em>).<br>Therefore, relation <em>S</em> is in 3NF.<br>We know, 3NF = 2NF<br>Reason: 3NF eliminates:<br>Partial dependency (2NF requirement).<br>Transitive dependency (extra condition)<br>Therefore, relation S is also in 2NF."
+      solution: "Given:<br>For every functional dependency <em>X </em>→ <em>Y </em>in relation <em>S</em>:<br>Either X is a superkey, OR.<br>Every attribute of Y is a prime attribute.<br>A relation is in 3NF if for every FD <em>X</em> → <em>A</em>, at least one holds:<br><em>X</em> is a superkey, OR.<br><em>A</em> is a prime attribute.<br>The given condition is exactly this definition (extended to set <em>Y</em>).<br>Therefore, relation <em>S</em> is in 3NF.<br>We know, 3NF = 2NF<br>Reason: 3NF eliminates:<br>Partial dependency (2NF requirement).<br>Transitive dependency (extra condition)<br>Therefore, relation S is also in 2NF."
     },
     {
       marks: 1,
@@ -351,7 +351,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider relation schema <em>R</em>(<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>) and the two sets of functional dependency:<br><em>S</em><sub>1</sub> : {<em>A</em> â†’ <em>B</em>, <em>AB </em>â†’ <em>C</em>, <em>AC </em>â†’ <em>D</em>, <em>B </em>â†’ <em>C</em>, <em>B </em>â†’ <em>A</em>}<br><em>S</em><sub>2</sub> : {<em>AB </em>â†’ <em>D</em>, <em>AC </em>â†’ <em>B</em>, <em>B </em>â†’ <em>D</em>, <em>BD </em>â†’ <em>C</em>}<br>Which of the following is true?",
+      text: "Consider relation schema <em>R</em>(<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>) and the two sets of functional dependency:<br><em>S</em><sub>1</sub> : {<em>A</em> → <em>B</em>, <em>AB </em>→ <em>C</em>, <em>AC </em>→ <em>D</em>, <em>B </em>→ <em>C</em>, <em>B </em>→ <em>A</em>}<br><em>S</em><sub>2</sub> : {<em>AB </em>→ <em>D</em>, <em>AC </em>→ <em>B</em>, <em>B </em>→ <em>D</em>, <em>BD </em>→ <em>C</em>}<br>Which of the following is true?",
       image: "",
       options: [
         "S<sub>2</sub> covers S<sub>1</sub>",
@@ -366,13 +366,13 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Identify the minimal cover for the following FD set:<br>{A â†’ BC, C â†’ A, BC â†’ D, ACD â†’ B, BE â†’ C, EC â†’ FA, CF â†’ BD, D â†’ E}",
+      text: "Identify the minimal cover for the following FD set:<br>{A → BC, C → A, BC → D, ACD → B, BE → C, EC → FA, CF → BD, D → E}",
       image: "",
       options: [
-        "{A â†’ BC, C â†’ ADF, D â†’ E, BE â†’ C}",
-        "{A â†’ BC, C â†’ ADEF, D â†’ E, BE â†’ C}",
-        "{A â†’ BC, C â†’ ADF, E â†’ D, BE â†’ C}",
-        "{A â†’ C, C â†’ ADF, D â†’ E, BE â†’ C}",
+        "{A → BC, C → ADF, D → E, BE → C}",
+        "{A → BC, C → ADEF, D → E, BE → C}",
+        "{A → BC, C → ADF, E → D, BE → C}",
+        "{A → C, C → ADF, D → E, BE → C}",
       ],
       answer: "A",
       solution: "Option (a) is the minimal/canonical cover of given FD set.",
@@ -381,7 +381,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider R(A, B, C, D, E) be a relation schema with the following functional dependencies:<br>F = {A â†’ BC, CD â†’ E, B â†’ D, E â†’ A}<br>Which of the following is true for decomposition of R into (A, B, C) and (C, D, E)?",
+      text: "Consider R(A, B, C, D, E) be a relation schema with the following functional dependencies:<br>F = {A → BC, CD → E, B → D, E → A}<br>Which of the following is true for decomposition of R into (A, B, C) and (C, D, E)?",
       image: "",
       options: [
         "Lossless join but not dependency preserving.",
@@ -390,13 +390,13 @@ registerTest({   // made easy cse topic wise test database-1
         "Neither lossless join nor dependency preserving.",
       ],
       answer: "D",
-      solution: "<em>R</em><sub>1</sub> = {A, B, C} and <em>R</em><sub>2</sub> = {C, D, E}<br><em>R</em><sub>1</sub> âˆ© <em>R</em><sub>2</sub> = {C} and C is not a key for either <em>R</em><sub>1</sub> or <em>R</em><sub>2</sub>.<br>Hence decomposition is not lossless join.<br>E â†’ A and B â†’ D are not preserved in decomposition.<br>Hence it is not dependency preserving.",
+      solution: "<em>R</em><sub>1</sub> = {A, B, C} and <em>R</em><sub>2</sub> = {C, D, E}<br><em>R</em><sub>1</sub> ∩ <em>R</em><sub>2</sub> = {C} and C is not a key for either <em>R</em><sub>1</sub> or <em>R</em><sub>2</sub>.<br>Hence decomposition is not lossless join.<br>E → A and B → D are not preserved in decomposition.<br>Hence it is not dependency preserving.",
     },
     {
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: "Given a relation R(A, B, C, D, E) with functional dependencies:<br>F = {AB â†’ C, CD â†’ E, C â†’ A, C â†’ D, D â†’ B}<br>Which of the following statements are correct?",
+      text: "Given a relation R(A, B, C, D, E) with functional dependencies:<br>F = {AB → C, CD → E, C → A, C → D, D → B}<br>Which of the following statements are correct?",
       image: "",
       options: [
         "Both {BD} and {BC} are candidate keys.",
@@ -420,7 +420,7 @@ registerTest({   // made easy cse topic wise test database-1
         "A sparse index must contain an entry for every record in the data file.",
       ],
       answer: ["B", "C"],
-      solution: "Searching a single key requires traversing the tree (logarithmic I/Os) + one random access to&nbsp;fetch the record. This is considered efficient for a single key search. So, option (a) is correct.<br>Hash indexes require a mapping for every key to locate its bucket. Sparse indexing would&nbsp;break this mapping â†’ not possible. So, option (b) is incorrect.<br>Dense index has an entry for every key, allowing direct access. So, option (c) is correct.<br>Sparse index contains entries for some keys only, usually one per block. So, option (d) is&nbsp;incorrect.",
+      solution: "Searching a single key requires traversing the tree (logarithmic I/Os) + one random access to&nbsp;fetch the record. This is considered efficient for a single key search. So, option (a) is correct.<br>Hash indexes require a mapping for every key to locate its bucket. Sparse indexing would&nbsp;break this mapping → not possible. So, option (b) is incorrect.<br>Dense index has an entry for every key, allowing direct access. So, option (c) is correct.<br>Sparse index contains entries for some keys only, usually one per block. So, option (d) is&nbsp;incorrect.",
     },
     {
       marks: 2,
@@ -508,13 +508,13 @@ registerTest({   // made easy cse topic wise test database-1
       text: "Which of the following functional dependency in a relational database is/are correct?",
       image: "",
       options: [
-        "(A â†’ B) implies (AC â†’ B)",
-        "(A â†’ B and B â†’ C) implies (A â†’ C)",
-        "(AB â†’ C) implies (ADB â†’ C)",
-        "(AB â†’ C) implies (A â†’ C)",
+        "(A → B) implies (AC → B)",
+        "(A → B and B → C) implies (A → C)",
+        "(AB → C) implies (ADB → C)",
+        "(AB → C) implies (A → C)",
       ],
       answer: ["A", "B", "C"],
-      solution: "a.(A â†’ B) â‡’ (AC â†’ B)<br>By using Augmentation rule<br>A â†’ B â‡’ AC â†’ BC<br>AC â†’ B<br>So, option (a) is correct.<br><br>b.(A â†’ B and B â†’ C) implies (A â†’ C)<br>Apply Transitivity rule:<br>A â†’ B, B â†’ C â‡’ A â†’ C<br>So, option (b) is correct.<br><br>c.(AB â†’ C) implies (ADB â†’ C)<br>Using augmentation, we can add attributes to LHS:<br>AB â†’ C â‡’ ABD â†’ C<br>(ADB â†’ C)<br>So, option (c) is correct.<br><br>d.(AB â†’ C) implies (A â†’ C)<br>This tries to remove attribute B from LHS.<br>No such rule exists in functional dependencies.<br>AB â†’ C â‡’ A â†’ C is not possible.<br>So, option (d) is incorrect.",
+      solution: "a.(A → B) ⇒ (AC → B)<br>By using Augmentation rule<br>A → B ⇒ AC → BC<br>AC → B<br>So, option (a) is correct.<br><br>b.(A → B and B → C) implies (A → C)<br>Apply Transitivity rule:<br>A → B, B → C ⇒ A → C<br>So, option (b) is correct.<br><br>c.(AB → C) implies (ADB → C)<br>Using augmentation, we can add attributes to LHS:<br>AB → C ⇒ ABD → C<br>(ADB → C)<br>So, option (c) is correct.<br><br>d.(AB → C) implies (A → C)<br>This tries to remove attribute B from LHS.<br>No such rule exists in functional dependencies.<br>AB → C ⇒ A → C is not possible.<br>So, option (d) is incorrect.",
     },
     {
       marks: 2,
@@ -568,7 +568,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "A function <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Î£<em>m</em>{1, 2, 4, 7} is to be implemented using a 4 : 1 MUX with â€˜<em>A</em> and <em>C</em>â€™ as select lines. Which of the following gives correct inputs for the multiplexer?",
+      text: "A function <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Î£<em>m</em>{1, 2, 4, 7} is to be implemented using a 4 : 1 MUX with ‘<em>A</em> and <em>C</em>’ as select lines. Which of the following gives correct inputs for the multiplexer?",
       image: "",
       options: [
         "<img src='js/questions/easy digitalcircuit-1/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
@@ -583,7 +583,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "A function â€˜Fâ€™ is to be implemented using a 2 Ã— 1 Multiplexer only where,<br>The number of 2 Ã— 1 MUX required to implement F is: ",
+      text: "A function ‘F’ is to be implemented using a 2 Ã— 1 Multiplexer only where,<br>The number of 2 Ã— 1 MUX required to implement F is: ",
       image: "js/questions/easy digitalcircuit-1/13.png",
       options: [
         "12",
@@ -598,7 +598,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: "The sum of all the digits in the number obtained after doing the 10â€™s complement of 988.79 is&nbsp;_______.",
+      text: "The sum of all the digits in the number obtained after doing the 10’s complement of 988.79 is&nbsp;_______.",
       image: "",
       options: [],
       answer: 5,
@@ -623,7 +623,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "The output â€˜<em>Y</em>â€™ of the multiplexer circuit shown in figure below is",
+      text: "The output ‘<em>Y</em>’ of the multiplexer circuit shown in figure below is",
       image: "js/questions/easy digitalcircuit-1/44.png",
       options: [
         "<img src='js/questions/easy digitalcircuit-1/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
@@ -747,7 +747,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       image: "",
       options: [
         "buffer for A = B",
-        "inverter for A â‰  B",
+        "inverter for A ≠ B",
         "OR gate for all A, B",
         "AND gate for all A, B",
       ],
@@ -758,7 +758,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Consider a Boolean expression,<br>The minimum number of NAND-gates required to implement this function â€˜f<em> </em>â€™ will be ______.",
+      text: "Consider a Boolean expression,<br>The minimum number of NAND-gates required to implement this function ‘f<em> </em>’ will be ______.",
       image: "js/questions/easy digitalcircuit-1/50.png",
       options: [],
       answer: 0,
@@ -982,274 +982,274 @@ registerTest({
   name: "TWT - Theory Of Computation-1",
   date: "July 08, 2026",
   questions: [
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Which of the following statement is FALSE?",
-    image: "",
-    options: [
-      "All recursive sets are recursively enumerable.",
-      "The complement of every recursively enumerable sets is recursively enumerable.",
-      "Every Non-empty recursively enumerable set is the range of some totally recursive function.",
-      "All finite sets are recursive."
-    ],
-    answer: "B",
-    solution: "<p> (b)<br> The complement of every recursively enumerable sets is recursively enumerable.<br>Because RE language are not closed under complement. </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Let <em>r</em> , <em>s</em> , <em>t</em> be regular expressions. Which of the following identities is correct?",
-    image: "",
-    options: [
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/2.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/3.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    ],
-    answer: "D",
-    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MSQ",
-    text: "Which of the following problems is decidable? (Here, CFG means context free grammar and CFL means context free language)",
-    image: "",
-    options: [
-      "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = <em>R</em> , where <em>R</em> is regular set.",
-      "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = { }.",
-      "Find whether the intersection of two CFLs is empty.",
-      "Find whether the complement of CFL is a CFL."
-    ],
-    answer: [
-      "B",
-      "A",
-      "C",
-      "D"
-    ],
-    solution: "<p> (b)<br> (a) We don â€™t have any standard algorithm to change CFG into CFL from a given CFG deciding a language is finite is decidable but regular its undecidable.<br> (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br> (c) Intersection of two CFL is undecidable because it is not closed under intersection.<br>(d) CFL is not closed under Complement so its undecidable. </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MSQ",
-    text: "<p>Let M be the 5 stage NFA with âˆˆ-transitions shown in the diagram below:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following regular expressions represents the language accepted by M?</p>",
-    image: "",
-    options: [
-      "(00)* + 1(11)*",
-      "0* + (1 + 0(00)*) (11)*",
-      "(00)* + (1 + (00)*) (11)*",
-      "0+ + 1(11)* + 0(11)*"
-    ],
-    answer: [
-      "B",
-      "A",
-      "C",
-      "D"
-    ],
-    solution: "<p> (b)<br> â€¢Counter-example for option (a) : 011 is not generated.<br> â€¢Counter-example for option (c) : 000 is not generated.<br>â€¢Counter-example for option (d) : empty string is not generated. </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MSQ",
-    text: "<p>Which one of the following regular expressions is equivalent to the language accepted by the DFA given below?</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/7.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
-    image: "",
-    options: [
-      "0* 1(0 + 10* 1)*",
-      "0* (10* 11)* 0*",
-      "0* 1 (010* 1)* 0*",
-      "0(1 + 0* 10* 1)* 0*"
-    ],
-    answer: [
-      "A",
-      "B",
-      "C",
-      "D"
-    ],
-    solution: "<p> (a)<br> The given DFA accepts all and only binary strings containing odd number of 1 â€™s.<br> So, option (a) is correct regular expression.<br> Option (b) Counter-Example: Generates empty string.<br> Option (c) Counter-Example: Doesn â€™t generate 10011.<br>Option (d) Counter-Example: Doesn â€™t generate 1. </p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "NAT",
-    text: "Let <em>L</em> <sub>1</sub> be the language represented by the regular expression (<em>a</em> + <em>b</em> )* <em>aba</em> (<em>a</em> + <em>b</em> )* and<br> <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/8.png\" style=\"max-width:100%; border-radius: 8px;\">denotes the length of string w. Determine the number of strings in L2 that are also in L1 is ________.",
-    image: "",
-    options: [],
-    answer: 0,
-    solution: "<p>16</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "For s âˆˆ (0 + 1)* let d(s) denote the decimal value of s(e.g. d(101) = 5).<br> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/10.png\" style=\"max-width:100%; border-radius: 8px;\"> <br>Which one of the following statements is true?",
-    image: "",
-    options: [
-      "<em>L</em> is recursively enumerable, but not recursive.",
-      "<em>L</em> is recursive, but not context-free.",
-      "<em>L</em> is context-free, but not regular.",
-      "<em>L</em> is regular."
-    ],
-    answer: "C",
-    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "MSQ",
-    text: "Which of the following statements are true for every language <em>L</em> âŠ† {0, 1}*?",
-    image: "",
-    options: [
-      "<em>L</em> * is infinite.",
-      "<em>L</em> is accepted by some DFA if and only if <em>L</em> is accepted by some NFA.",
-      "If <em>L</em> is the union of two undecidable languages, then <em>L</em> is undecidable.",
-      "If <em>L</em> is the union of two decidable languages, then <em>L</em> is decidable."
-    ],
-    answer: [
-      "B",
-      "D"
-    ],
-    solution: "<p>(b, d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Consider the regular expression <em>R</em> = (<em>a</em> + <em>b</em> )* (<em>aa</em> + <em>bb</em> ) (<em>a</em> + <em>b</em> )* Which of the following finite automata recognizes the language defined by the regular expression<br> <em>R</em> ? Edges labeled <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/13.png\" style=\"max-width:100%; border-radius: 8px;\">denote transitions on the empty string.",
-    image: "",
-    options: [
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/14.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/15.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/16.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/17.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    ],
-    answer: "C",
-    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Which one of the following regular expressions over {<em>a</em> , <em>b</em> } denotes the set of all strings not containing â€œbaaâ€ as a substring?",
-    image: "",
-    options: [
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/19.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/20.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/21.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/22.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    ],
-    answer: "C",
-    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "<p>Consider the following context-free grammar G:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/24.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which of the following strings can be generated by the grammar G?</p>",
-    image: "",
-    options: [
-      "abccdd",
-      "aabbcc",
-      "acbcdd",
-      "aaccddbb"
-    ],
-    answer: "D",
-    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "<p> Consider the following PDA, M that accepts all strings having equal number of aâ€™s and bâ€™s. Then for the complete PDA the missing transaction in the diagram are (here z<sub>0</sub> is the initial stack symbol) </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/26.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
-    image: "",
-    options: [
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/27.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/28.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/29.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "None of these"
-    ],
-    answer: "A",
-    solution: "<p> (a)<br> Same symbols will be pushed into the stack and opposite symbols will be deleted from the stack.<br>Hence option (a) is correct. </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Let <em>A</em> = (11, 100, 111), <em>B</em> = (111, 001, 11) and the alphabet, Î£ = {0, 1}, then the solution for PCP is ________.",
-    image: "",
-    options: [
-      "(2, 3, 1)",
-      "(2, 1, 3)",
-      "(1, 2, 3)",
-      "None of these"
-    ],
-    answer: "C",
-    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "<p> Consider the FSM <em>M</em> and <em>N</em> : </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/31.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> Then <em>L</em> (<em>M</em> ) âˆ© <em>L</em> (<em>N</em> ) is </p>",
-    image: "",
-    options: [
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/32.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/33.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/34.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/35.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    ],
-    answer: "A",
-    solution: "<p>(a)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "How many 2 state DFAâ€™s with the designated initial state can be constructed over the alphabet Î£ = {a, b} that accept universal language?",
-    image: "",
-    options: [
-      "4",
-      "16",
-      "20",
-      "24"
-    ],
-    answer: "C",
-    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Which of the following is false?",
-    image: "",
-    options: [
-      "Union of two recursive languages is recursive",
-      "Intersection of regular and recursive language is not recursive",
-      "Union of regular language and recursive language is recursive",
-      "None of these"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "<p>Consider the NPDA:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/40.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> where (as per usual convention) <em>Q</em> is the set of states, Î£ is the input alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/41.png\" style=\"max-width:100%; border-radius: 8px;\"> is the stack alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/42.png\" style=\"max-width:100%; border-radius: 8px;\"> is the state transition function <em>q</em> <sub>0</sub> is the initial state, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/43.png\" style=\"max-width:100%; border-radius: 8px;\">is the initial stack symbol, and F is the set of accepting states. The state transition is as follows: </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/44.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following sequences must follow the string 101100 so that the overall string is accepted by the automaton?</p>",
-    image: "",
-    options: [
-      "10110",
-      "10010",
-      "01010",
-      "01001"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
-  }
-]
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of the following statement is FALSE?",
+      image: "",
+      options: [
+        "All recursive sets are recursively enumerable.",
+        "The complement of every recursively enumerable sets is recursively enumerable.",
+        "Every Non-empty recursively enumerable set is the range of some totally recursive function.",
+        "All finite sets are recursive."
+      ],
+      answer: "B",
+      solution: "<p> (b)<br> The complement of every recursively enumerable sets is recursively enumerable.<br>Because RE language are not closed under complement. </p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Let <em>r</em> , <em>s</em> , <em>t</em> be regular expressions. Which of the following identities is correct?",
+      image: "",
+      options: [
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/2.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/3.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "D",
+      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of the following problems is decidable? (Here, CFG means context free grammar and CFL means context free language)",
+      image: "",
+      options: [
+        "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = <em>R</em> , where <em>R</em> is regular set.",
+        "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = { }.",
+        "Find whether the intersection of two CFLs is empty.",
+        "Find whether the complement of CFL is a CFL."
+      ],
+      answer: [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      solution: "(a) We don ’t have any standard algorithm to change CFG into CFL from a given CFG deciding a language is finite is decidable but regular its undecidable.<br> (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br> (c) Intersection of two CFL is undecidable because it is not closed under intersection.<br>(d) CFL is not closed under Complement so its undecidable. </p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: "<p>Let M be the 5 stage NFA with ∈-transitions shown in the diagram below:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following regular expressions represents the language accepted by M?</p>",
+      image: "",
+      options: [
+        "(00)* + 1(11)*",
+        "0* + (1 + 0(00)*) (11)*",
+        "(00)* + (1 + (00)*) (11)*",
+        "0+ + 1(11)* + 0(11)*"
+      ],
+      answer: [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      solution: "<p> (b)<br> •Counter-example for option (a) : 011 is not generated.<br> •Counter-example for option (c) : 000 is not generated.<br>•Counter-example for option (d) : empty string is not generated. </p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: "<p>Which one of the following regular expressions is equivalent to the language accepted by the DFA given below?</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/7.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
+      image: "",
+      options: [
+        "0* 1(0 + 10* 1)*",
+        "0* (10* 11)* 0*",
+        "0* 1 (010* 1)* 0*",
+        "0(1 + 0* 10* 1)* 0*"
+      ],
+      answer: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      solution: "<p> (a)<br> The given DFA accepts all and only binary strings containing odd number of 1 ’s.<br> So, option (a) is correct regular expression.<br> Option (b) Counter-Example: Generates empty string.<br> Option (c) Counter-Example: Doesn ’t generate 10011.<br>Option (d) Counter-Example: Doesn ’t generate 1. </p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Let <em>L</em> <sub>1</sub> be the language represented by the regular expression (<em>a</em> + <em>b</em> )* <em>aba</em> (<em>a</em> + <em>b</em> )* and<br> <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/8.png\" style=\"max-width:100%; border-radius: 8px;\">denotes the length of string w. Determine the number of strings in L2 that are also in L1 is ________.",
+      image: "",
+      options: [],
+      answer: 0,
+      solution: "<p>16</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "For s ∈ (0 + 1)* let d(s) denote the decimal value of s(e.g. d(101) = 5).<br> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/10.png\" style=\"max-width:100%; border-radius: 8px;\"> <br>Which one of the following statements is true?",
+      image: "",
+      options: [
+        "<em>L</em> is recursively enumerable, but not recursive.",
+        "<em>L</em> is recursive, but not context-free.",
+        "<em>L</em> is context-free, but not regular.",
+        "<em>L</em> is regular."
+      ],
+      answer: "C",
+      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of the following statements are true for every language <em>L</em> ⊆ {0, 1}*?",
+      image: "",
+      options: [
+        "<em>L</em> * is infinite.",
+        "<em>L</em> is accepted by some DFA if and only if <em>L</em> is accepted by some NFA.",
+        "If <em>L</em> is the union of two undecidable languages, then <em>L</em> is undecidable.",
+        "If <em>L</em> is the union of two decidable languages, then <em>L</em> is decidable."
+      ],
+      answer: [
+        "B",
+        "D"
+      ],
+      solution: "<p>(b, d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the regular expression <em>R</em> = (<em>a</em> + <em>b</em> )* (<em>aa</em> + <em>bb</em> ) (<em>a</em> + <em>b</em> )* Which of the following finite automata recognizes the language defined by the regular expression<br> <em>R</em> ? Edges labeled <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/13.png\" style=\"max-width:100%; border-radius: 8px;\">denote transitions on the empty string.",
+      image: "",
+      options: [
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/14.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/15.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/16.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/17.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Which one of the following regular expressions over {<em>a</em> , <em>b</em> } denotes the set of all strings not containing “baa” as a substring?",
+      image: "",
+      options: [
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/19.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/20.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/21.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/22.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Consider the following context-free grammar G:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/24.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which of the following strings can be generated by the grammar G?</p>",
+      image: "",
+      options: [
+        "abccdd",
+        "aabbcc",
+        "acbcdd",
+        "aaccddbb"
+      ],
+      answer: "D",
+      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p> Consider the following PDA, M that accepts all strings having equal number of a’s and b’s. Then for the complete PDA the missing transaction in the diagram are (here z<sub>0</sub> is the initial stack symbol) </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/26.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
+      image: "",
+      options: [
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/27.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/28.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/29.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "None of these"
+      ],
+      answer: "A",
+      solution: "<p> (a)<br> Same symbols will be pushed into the stack and opposite symbols will be deleted from the stack.<br>Hence option (a) is correct. </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Let <em>A</em> = (11, 100, 111), <em>B</em> = (111, 001, 11) and the alphabet, Î£ = {0, 1}, then the solution for PCP is ________.",
+      image: "",
+      options: [
+        "(2, 3, 1)",
+        "(2, 1, 3)",
+        "(1, 2, 3)",
+        "None of these"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p> Consider the FSM <em>M</em> and <em>N</em> : </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/31.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> Then <em>L</em> (<em>M</em> ) ∩ <em>L</em> (<em>N</em> ) is </p>",
+      image: "",
+      options: [
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/32.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/33.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/34.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/35.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "A",
+      solution: "<p>(a)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "How many 2 state DFA’s with the designated initial state can be constructed over the alphabet Î£ = {a, b} that accept universal language?",
+      image: "",
+      options: [
+        "4",
+        "16",
+        "20",
+        "24"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Which of the following is false?",
+      image: "",
+      options: [
+        "Union of two recursive languages is recursive",
+        "Intersection of regular and recursive language is not recursive",
+        "Union of regular language and recursive language is recursive",
+        "None of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Consider the NPDA:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/40.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> where (as per usual convention) <em>Q</em> is the set of states, Î£ is the input alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/41.png\" style=\"max-width:100%; border-radius: 8px;\"> is the stack alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/42.png\" style=\"max-width:100%; border-radius: 8px;\"> is the state transition function <em>q</em> <sub>0</sub> is the initial state, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/43.png\" style=\"max-width:100%; border-radius: 8px;\">is the initial stack symbol, and F is the set of accepting states. The state transition is as follows: </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/44.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following sequences must follow the string 101100 so that the overall string is accepted by the automaton?</p>",
+      image: "",
+      options: [
+        "10110",
+        "10010",
+        "01010",
+        "01001"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+    }
+  ]
 });
 
