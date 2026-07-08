@@ -1518,8 +1518,8 @@ registerTest({    // made easy 2026 cse topic wise test database-1
     },
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
+      neg: 0.33,
+      type: "MCQ",
       text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_109.png\" style=\"max-width:100%; border-radius: 8px;\">",
       image: "",
       options: [
@@ -1557,8 +1557,8 @@ registerTest({    // made easy 2026 cse topic wise test database-1
     },
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
+      neg: 0.33,
+      type: "MCQ",
       text: "In a relation <em>R</em> (<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> ). The set of attributes Σ ⊆ R{<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> } is called a superkey if :",
       image: "",
       options: [
