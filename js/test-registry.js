@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ADD YOUR NEW TESTS BELOW THIS LINE! 
 // Just copy-paste the block to add more tests.
 // =========================================================================
-registerTest({
+registerTest({  // made easy cse topic wise test digital logic-1
   series: "cs-gate-pyq",
   name: "TWT - Digital logic-1",
   date: "May 23, 2026",
@@ -292,7 +292,7 @@ registerTest({
   ]
 });
 
-registerTest({
+registerTest({   // made easy cse topic wise test database-1
   series: "cs-gate-pyq",
   name: "TWT - Database-1",
   date: "June 05, 2026",
@@ -534,7 +534,7 @@ registerTest({
   ]
 });
 
-registerTest({
+registerTest({   // made easy ece topic wise test digital circuit-1
   series: "ece-gate-pyq",
   name: "TWT - Digital Circuit-1",
   date: "July 07, 2026",
@@ -543,15 +543,231 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "",
+      text: "If (84)<sub>X</sub> (in base-X number system) is equal to (64)<sub>Y</sub> (in base-Y number system), then possible values of X and Y are respectively",
+      image: "",
+      options: [
+        "8, 6",
+        "12, 18",
+        "9, 12",
+        "4, 3",
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/easy digitalcircuit-1/1.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "The sum of the decimal values of the Gray codes for decimal numbers 0-9 is ________ .",
+      image: "",
       options: [],
-      answer: "",
-      solution: "",
+      answer: 53,
+      solution: "<img src='js/questions/easy digitalcircuit-1/5.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "A function <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Σ<em>m</em>{1, 2, 4, 7} is to be implemented using a 4 : 1 MUX with ‘<em>A</em> and <em>C</em>’ as select lines. Which of the following gives correct inputs for the multiplexer?",
+      image: "",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: "A",
+      solution: "<img src='js/questions/easy digitalcircuit-1/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "A function ‘F’ is to be implemented using a 2 × 1 Multiplexer only where,<br>The number of 2 × 1 MUX required to implement F is: ",
+      image: "js/questions/easy digitalcircuit-1/13.png",
+      options: [
+        "12",
+        "13",
+        "14",
+        "15",
+      ],
+      answer: "D",
+      solution: "<img src='js/questions/easy digitalcircuit-1/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "The sum of all the digits in the number obtained after doing the 10’s complement of 988.79 is&nbsp;_______.",
+      image: "",
+      options: [],
+      answer: 5,
+      solution: "<img src='js/questions/easy digitalcircuit-1/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the logic circuit shown in the figure below:<br>The output <em>F</em> is given by",
+      image: "js/questions/easy digitalcircuit-1/33.png",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/34.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/35.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/36.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/37.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/easy digitalcircuit-1/38.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "The output ‘<em>Y</em>’ of the multiplexer circuit shown in figure below is",
+      image: "js/questions/easy digitalcircuit-1/44.png",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/46.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/47.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/48.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: "B",
+      solution: "<img src='js/questions/easy digitalcircuit-1/49.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "The number (110011)<sub>2</sub> is numerically equal to",
+      image: "",
+      options: [
+        "(51)<sub>9</sub>",
+        "(63)<sub>8</sub>",
+        "(33)<sub>16</sub>",
+        "(303)<sub>4</sub>",
+      ],
+      answer: ["B", "C", "D"],
+      solution: "<img src='js/questions/easy digitalcircuit-1/43.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "An 8-bit SISO shift register is connected with a 4-bit PISO register as shown in the figure below.<br>The minimum number of clock pulses required to get the 4-bit input data at the output is equal to __________.",
+      image: "js/questions/easy digitalcircuit-1/39.png",
+      options: [],
+      answer: 12,
+      solution: "<img src='js/questions/easy digitalcircuit-1/40.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Two functions <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are given as;<br>F<sub>1</sub> = Σ<em>m</em>(0, 1, 2, 3, 6, 7, 13, 15)<br>F<sub>2</sub>&nbsp;= Σ<em>m</em>(2, 3, 6, 7, 10, 11, 12)<br>The no. of Essential Prime Implicants (EPIs) in <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are <em>A</em> and <em>B</em>. The value of A/B is:",
+      image: "",
+      options: [],
+      answer: 1,
+      solution: "<img src='js/questions/easy digitalcircuit-1/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "A 4-bit BCD (<em>B</em><sub>4</sub><em>B</em><sub>3</sub><em>B</em><sub>2</sub><em>B</em><sub>1</sub>) to Excess-3 code (<em>X</em><sub>4</sub> <em>X</em><sub>3</sub> <em>X</em><sub>2</sub> <em>X</em><sub>1</sub>) converter circuit is to be designed. Which&nbsp;of the given minimal expression is correct?",
+      image: "",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/17.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/18.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/19.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/20.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: ["A", "D"],
+      solution: "<img src='js/questions/easy digitalcircuit-1/21.png' alt='solution' style='max-width:100%; border-radius: 8px;'><br><img src='js/questions/easy digitalcircuit-1/22.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Which of the following gives the correct simplification of the Boolean expressions?",
+      image: "",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/23.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/24.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/25.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/26.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: "A",
+      solution: "<img src='js/questions/easy digitalcircuit-1/27.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "A Boolean function is given as,<br>Then the minimum number of two input NAND gates required to implement this function is&nbsp;________.",
+      image: "js/questions/easy digitalcircuit-1/41.png",
+      options: [],
+      answer: 6,
+      solution: "<img src='js/questions/easy digitalcircuit-1/42.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "A function <em>F</em> is to be implemented using a 4 : 1 multiplexer where <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Π<em>M</em>(0, 3, 5, 6).<br>Which of the following is not correct?",
+      image: "js/questions/easy digitalcircuit-1/28.png",
+      options: [
+        "<img src='js/questions/easy digitalcircuit-1/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "<img src='js/questions/easy digitalcircuit-1/30.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+        "F is output difference function of a full subtractor.",
+        "<img src='js/questions/easy digitalcircuit-1/31.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+      ],
+      answer: "D",
+      solution: "<img src='js/questions/easy digitalcircuit-1/32.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Number of two input NAND Gates required to realize a 3-bit majority function is:",
+      image: "",
+      options: [
+        "3",
+        "4",
+        "5",
+        "6",
+      ],
+      answer: "D",
+      solution: "<img src='js/questions/easy digitalcircuit-1/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'><br><img src='js/questions/easy digitalcircuit-1/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the logic circuit shown below: The circuit acts as",
+      image: "js/questions/easy digitalcircuit-1/2.png<br>js/questions/easy digitalcircuit-1/3.png",
+      options: [
+        "buffer for A = B",
+        "inverter for A ≠ B",
+        "OR gate for all A, B",
+        "AND gate for all A, B",
+      ],
+      answer: "A",
+      solution: "<img src='js/questions/easy digitalcircuit-1/4.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a Boolean expression,<br>The minimum number of NAND-gates required to implement this function ‘f<em> </em>’ will be ______.",
+      image: "js/questions/easy digitalcircuit-1/50.png",
+      options: [],
+      answer: 0,
+      solution: "<img src='js/questions/easy digitalcircuit-1/51.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
     }
   ]
 });
 
-registerTest({
+registerTest({   // go classes cse topic wise test degital logic-1 
   series: "cs-gate-classes",
   name: "TWT - Digital Logic-1",
   date: "July 07, 2026",
