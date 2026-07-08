@@ -1977,3 +1977,244 @@ registerTest({    // made easy 2026 cse topic wise test database-2
 
   ]
 });
+
+
+registerTest({    // made easy 2026 cse topic wise test coa-1
+  series: "cs-gate-2026-pyq",
+  name: "TWT - COA-1",
+  questions: [
+
+  ]
+});
+
+
+registerTest({    // made easy 2026 cse topic wise test coa-1
+  series: "cs-gate-2026-pyq",
+  name: "TWT - COA-1",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: " <p> A CPU has 24 bits instructions and memory is byte addressable.<br>Consider the following below code: </p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div> If Branch == 0, <em>X</em> [PC] is supposed to skip the loop and go directly to MOV <em>R</em> <sub>2</sub> , SUM what should be value of <em>X</em> . </div> ",
+      answer: "Correct  9",
+      solution: " <summary>Solution</summary> <p>9</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_2.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p> Match <strong>List-I</strong> (Characteristics) with <strong>List-II</strong> (Processors) and select the correct answer using the codes given below the lists: </p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q2_3.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> ",
+      options: [
+        " <input type=\"radio\" name=\"q2\" value=\"A\"> <div> <b>A.</b> a </div> ",
+        " <input type=\"radio\" name=\"q2\" value=\"B\"> <div> <b>B.</b> b </div> ",
+        " <input type=\"radio\" name=\"q2\" value=\"C\"> <div> <b>C.</b> c </div> ",
+        " <input type=\"radio\" name=\"q2\" value=\"D\"> <div> <b>D.</b> d </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(c)</p> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p>Consider the following format:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_4.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div></div> <div> What is the Hexa decimal equivalent in the memory after adding the following data.<br> 1.1011001000 * 2<sup>+8</sup> <br> 1.0010100011 * 2<sup>+4</sup> </div> ",
+      options: [
+        " <input type=\"radio\" name=\"q3\" value=\"A\"> <div> <b>A.</b> (DF12)<sub>H</sub> </div> ",
+        " <input type=\"radio\" name=\"q3\" value=\"B\"> <div> <b>B.</b> (5F12)<sub>H</sub> </div> ",
+        " <input type=\"radio\" name=\"q3\" value=\"C\"> <div> <b>C.</b> (612F)<sub>H</sub> </div> ",
+        " <input type=\"radio\" name=\"q3\" value=\"D\"> <div> <b>D.</b> (F125)<sub>H</sub> </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(b)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_5.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p> Consider a 32 bits hypothetical CPU which supports instruction with 2 register operands, memory operands and 2 immediate constant fields. System supports 100 instructions, 60 registers with a register wide of 32 bits, 4 MB RAM and 13 bits constant size. Program contain 240 Instructions.<br>Number of bytes required to stored the program is _________. </p> ",
+      options: [
+        " <input type=\"radio\" name=\"q4\" value=\"A\"> <div> <b>A.</b> 2010 </div> ",
+        " <input type=\"radio\" name=\"q4\" value=\"B\"> <div> <b>B.</b> 2160 </div> ",
+        " <input type=\"radio\" name=\"q4\" value=\"C\"> <div> <b>C.</b> 2400 </div> ",
+        " <input type=\"radio\" name=\"q4\" value=\"D\"> <div> <b>D.</b> 1620 </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(b)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q4_6.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: " <p>Consider a hypothetical CPU which supports 200 instructions with a CPI of 13. Hardware contain 300 control signals, 16 flags and uses 24 branch conditions. Micro instruction is designed with 6 control signals. Size of a CDR register in the control unit design is ________ (in bits)?</p> ",
+      answer: "Correct  75",
+      solution: " <summary>Solution</summary> <p>75</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q5_7.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: " <p>Consider 3 ns CLK cycle CPU which consumes 4 cycles for data transfer instruction, 8 cycles for ALU instruction. 6 cycles for branch instruction, relative frequencies of these instructions are 30%, 60% and 10% respectively. System is enhanced with a respective speedups of 2, 1.6 and 2. Performance gain of an enhanced system is ________? </p> ",
+      answer: "Correct  1.69",
+      solution: " <summary>Solution</summary> <p>1.69</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q6_8.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: " <p> Consider 16 bits CPU used to execute the following code.<br> System supports 1 word opcode and 2 word address @ symbol uses indirect AM, [ ] symbol uses direct AM. Register R<sub>2</sub> is designated as index register. Following code is used to execute in the<br>CPU. Instruction follows the standard syntax. </p> <div></div> <div> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_9.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div> Number of memory references required to access the data is ________ where <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_10.png\" style=\"max-width:100%; border-radius: 8px;\">instructions are executed 5 times in the code. </div> ",
+      answer: "Correct  45",
+      solution: " <summary>Solution</summary> <p>45</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_11.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p>Consider 1 GHz clock frequency processor, uses different operand access modes shown below:</p> <p> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_12.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Assume that 8 cycle consumed for memory reference, 4 cycles consumed for arithmetic computation and 0 cycles consumed when the operand is in register instruction itself. What is the average operand fetch rate (in million words/sec) of the processor?</p> ",
+      options: [
+        " <input type=\"radio\" name=\"q8\" value=\"A\"> <div> <b>A.</b> 117.45 M words/sec </div> ",
+        " <input type=\"radio\" name=\"q8\" value=\"B\"> <div> <b>B.</b> 113.63 M words/sec </div> ",
+        " <input type=\"radio\" name=\"q8\" value=\"C\"> <div> <b>C.</b> 217.45 M words/sec </div> ",
+        " <input type=\"radio\" name=\"q8\" value=\"D\"> <div> <b>D.</b> 316.45 M words/sec </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(b)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_13.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p>Consider the following sequence of instructions:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_14.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div> The ALU operation instruction size are 32 bits, data transfer instructions are 64 bits and branch instruction size are 16 bits.<br>Assume the program is loaded into memory starting at address 4000 (decimal). If an interrupt occurs during the execution of the HALT instruction, what is the return address pushed onto the stack? </div> ",
+      options: [
+        " <input type=\"radio\" name=\"q9\" value=\"A\"> <div> <b>A.</b> 4019 </div> ",
+        " <input type=\"radio\" name=\"q9\" value=\"B\"> <div> <b>B.</b> 4023 </div> ",
+        " <input type=\"radio\" name=\"q9\" value=\"C\"> <div> <b>C.</b> 4024 </div> ",
+        " <input type=\"radio\" name=\"q9\" value=\"D\"> <div> <b>D.</b> 4033 </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(c)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_15.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p>The following assembly code is to be executed in a 3-stage pipelined processor with hazard detection and resolution in each stage. The stage are IF, OF (one or more as required) and execution (including write-back operation). What are the number of possible RAW, WAW and WAR&nbsp; hazards in the execution of the code.</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_16.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> ",
+      options: [
+        " <input type=\"radio\" name=\"q10\" value=\"A\"> <div> <b>A.</b> 6, 1, 2 </div> ",
+        " <input type=\"radio\" name=\"q10\" value=\"B\"> <div> <b>B.</b> 5, 3, 3 </div> ",
+        " <input type=\"radio\" name=\"q10\" value=\"C\"> <div> <b>C.</b> 5, 3, 2 </div> ",
+        " <input type=\"radio\" name=\"q10\" value=\"D\"> <div> <b>D.</b> 3, 1, 2 </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(d)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_17.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: " <p>Consider the following machine instruction:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_18.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div></div> <div> Four stage pipeline, IF (fetch), ID (decode and operand fetch), IE (execute), WB (write back), are used. No data forwarding is present in the pipeline [Each operation takes one cycle in pipeline].<br>Which one of the following is true? </div> ",
+      options: [
+        " <input type=\"checkbox\" value=\"A\"> <div> <b>A.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_19.png\" style=\"max-width:100%; border-radius: 8px;\"> have structural dependency and <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_20.png\" style=\"max-width:100%; border-radius: 8px;\">have WAR dependency. </div> ",
+        " <input type=\"checkbox\" value=\"B\"> <div> <b>B.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_21.png\" style=\"max-width:100%; border-radius: 8px;\">have RAW dependency, but it will not create any hazard in pipeline. </div> ",
+        " <input type=\"checkbox\" value=\"C\"> <div> <b>C.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_22.png\" style=\"max-width:100%; border-radius: 8px;\">causes stalls in the pipeline to maintain data integrity. </div> ",
+        " <input type=\"checkbox\" value=\"D\"> <div> <b>D.</b> There are 2 RAW dependencies and one WAW dependency in the pipeline. </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(c, d)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_23.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p> Consider the following code executed on a 32 bits hypothetical CPU, stored in the memory with a starting address of (4000)<sub>10</sub> . CPU cycle time is 2 ns. Each instruction on average takes 5 cycles to complete. Interrupt sub program takes 20 cycles to complete. </p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q12_24.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div>In the program execution interrupt occurred, during the execution of ADD instruction and MUL instruction. What is the program execution time in (ns)?</div> ",
+      options: [
+        " <input type=\"radio\" name=\"q12\" value=\"A\"> <div> <b>A.</b> 70 ns </div> ",
+        " <input type=\"radio\" name=\"q12\" value=\"B\"> <div> <b>B.</b> 160 ns </div> ",
+        " <input type=\"radio\" name=\"q12\" value=\"C\"> <div> <b>C.</b> 150 ns </div> ",
+        " <input type=\"radio\" name=\"q12\" value=\"D\"> <div> <b>D.</b> 190 ns </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(b)</p> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> <div>&nbsp;</div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: " <p>Consider the following format:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_25.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div> Which of the following represents the value (&gt; 16)<sub>10</sub> . </div> ",
+      options: [
+        " <input type=\"checkbox\" value=\"A\"> <div> <b>A.</b> 0 100011 110100000 </div> ",
+        " <input type=\"checkbox\" value=\"B\"> <div> <b>B.</b> 0 011110 001011111 </div> ",
+        " <input type=\"checkbox\" value=\"C\"> <div> <b>C.</b> 0 100010 0000100111 </div> ",
+        " <input type=\"checkbox\" value=\"D\"> <div> <b>D.</b> 0 100100 001010000 </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(a, d)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_26.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p> Consider the following statements:<br> <em>S</em> <sub>1</sub> : Relative addressing mode is best suited for calculate the target address in a branch instruction.<br> <em>S</em> <sub>2</sub> : Immediate addressing mode is best suited for specifying the target address in a branch instruction.<br> <em>S</em> <sub>3</sub> : Base register addressing mode can be used in branch instructions where the target segment base address is stored in a register.<br>Which of the following is correct? </p> ",
+      options: [
+        " <input type=\"radio\" name=\"q14\" value=\"A\"> <div> <b>A.</b> Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> </div> ",
+        " <input type=\"radio\" name=\"q14\" value=\"B\"> <div> <b>B.</b> Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub> </div> ",
+        " <input type=\"radio\" name=\"q14\" value=\"C\"> <div> <b>C.</b> Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> </div> ",
+        " <input type=\"radio\" name=\"q14\" value=\"D\"> <div> <b>D.</b> All <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p> (b)<br> Relative addressing mode is best suited for specifying the target address in a branch instruction.<br> EX: Branch &gt;0 –16(PC)<br>Immediate addressing is used to provide constant data values embedded in the instruction. </p> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: " <p>Consider 5-stage pipeline with stage delays as 150, 120, 160, 180 and 140 ns respectively. Registers that are used between every two stages have a delay of 5 ns each. The total time taken to process&nbsp;1000 data items on this pipeline will be ________ (in μsec up to 2 decimal places).</p> ",
+      answer: "Correct  185.74",
+      solution: " <summary>Solution</summary> <p>185.74 [185.50 - 185.90]</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q15_27.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div>&nbsp;</div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: " <p>Consider 4 stage instruction pipeline executed on a system:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_28.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div>If all instructions are executed only once, what is the throughput of system?</div> ",
+      options: [
+        " <input type=\"radio\" name=\"q16\" value=\"A\"> <div> <b>A.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_29.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> ",
+        " <input type=\"radio\" name=\"q16\" value=\"B\"> <div> <b>B.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_30.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> ",
+        " <input type=\"radio\" name=\"q16\" value=\"C\"> <div> <b>C.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_31.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> ",
+        " <input type=\"radio\" name=\"q16\" value=\"D\"> <div> <b>D.</b> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_32.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(d)</p> <div>&nbsp;</div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_33.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> "
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: " <p>Consider the following pipeline design:</p> <div></div> <div> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q17_34.png\" style=\"max-width:100%; border-radius: 8px;\"> </div> <div>Which of the following statements are correct?</div> ",
+      options: [
+        " <input type=\"checkbox\" value=\"A\"> <div> <b>A.</b> Pipeline cycle time is 12 ns. </div> ",
+        " <input type=\"checkbox\" value=\"B\"> <div> <b>B.</b> Pipeline cycle time is 14 ns. </div> ",
+        " <input type=\"checkbox\" value=\"C\"> <div> <b>C.</b> Pipeline takes 14 ns to complete the instruction when very large number of instructions are executed in the pipeline. </div> ",
+        " <input type=\"checkbox\" value=\"D\"> <div> <b>D.</b> Pipeline takes 1456 ns time to complete 100 instructions. </div> "
+      ],
+      answer: "",
+      solution: " <summary>Solution</summary> <p>(b, c, d)</p> "
+    }
+  ]
+});
