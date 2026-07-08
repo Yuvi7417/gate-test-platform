@@ -1,4 +1,4 @@
-// =========================================================================
+﻿// =========================================================================
 // APEX CORE - TEST REGISTRY ENGINE
 // DO NOT EDIT THE CODE IN THIS SECTION!
 // =========================================================================
@@ -84,7 +84,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "The Boolean expression for the output ‘F’ of the logic circuit shown in the figure below is",
+      text: "The Boolean expression for the output â€˜Fâ€™ of the logic circuit shown in the figure below is",
       image: 'images/digital logic-1/mceclip6-1777717003260.png',
       options: [
         '<img src="images/digital logic-1/mceclip7-1777717008801.png" alt="Option A" style="max-width:150px;">',
@@ -99,7 +99,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider the MUX circuit shown in the figure below: The output function ‘f’ can be represented as",
+      text: "Consider the MUX circuit shown in the figure below: The output function â€˜fâ€™ can be represented as",
       image: 'images/digital logic-1/mceclip12-1777717060063.png',
       options: [
         '<img src= "images/digital logic-1/mceclip13-1777717078783.png"alt="Option A" style="max-width:150px;">',
@@ -124,7 +124,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: 'The Boolean expression for bulb ‘B’ shown in figure below is',
+      text: 'The Boolean expression for bulb â€˜Bâ€™ shown in figure below is',
       image: "images/digital logic-1/mceclip20-1777717191268.png",
       options: [
         '<img src= "images/digital logic-1/mceclip22-1777717204356.png"alt="Option A" style="max-width:150px;">',
@@ -149,7 +149,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: "Two half adders are connected in cascade as shown below, the output ‘S’ and ‘C’ is/are",
+      text: "Two half adders are connected in cascade as shown below, the output â€˜Sâ€™ and â€˜Câ€™ is/are",
       image: "images/digital logic-1/mceclip29-1777717373795.png",
       options: [
         '<img src="images/digital logic-1/mceclip32-1777717389924.png" alt="Option A" style="max-width:150px;">',
@@ -222,7 +222,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       image: "images/digital logic-1/mceclip52-1777718034756.png",
       options: [
         "Gray code to BCD code",
-        "2’s complement of BCD code",
+        "2â€™s complement of BCD code",
         "BCD code to excess-3 code",
         "Excess-3 to BCD code"
       ],
@@ -258,7 +258,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Consider the function: where 'f' represents Boolean function and 'd' represents don’t care condition. The simplified Boolean expression 'f' is reduced to ________ literals.",
+      text: "Consider the function: where 'f' represents Boolean function and 'd' represents donâ€™t care condition. The simplified Boolean expression 'f' is reduced to ________ literals.",
       image: "images/digital logic-1/mceclip47-1777717683574.png",
       options: [],
       answer: 4,
@@ -268,7 +268,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: "Consider the Boolean function f(A, B, C, D) = Σm(0, 1, 2, 5, 7, 8, 10, 12, 14, 15). Function is having how many number of essential prime implicants?",
+      text: "Consider the Boolean function f(A, B, C, D) = Î£m(0, 1, 2, 5, 7, 8, 10, 12, 14, 15). Function is having how many number of essential prime implicants?",
       image: "",
       options: [2, 3, 4, 5],
       answer: "A",
@@ -316,7 +316,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: "Consider a relation schema X with attributes (P, Q, R, S, T, U) and functional dependency set that&nbsp;holds on <em>X</em> :<br>F = {U → PT, P → Q, Q → PST, PS → Q, QST → PS}<br><br>How many number of super keys ________?",
+      text: "Consider a relation schema X with attributes (P, Q, R, S, T, U) and functional dependency set that&nbsp;holds on <em>X</em> :<br>F = {U â†’ PT, P â†’ Q, Q â†’ PST, PS â†’ Q, QST â†’ PS}<br><br>How many number of super keys ________?",
       image: "",
       options: [],
       answer: 16,
@@ -326,7 +326,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "In a relation, <em>R</em>, an attribute “<em>B</em>” of <em>R </em>is said to be fully functionally dependent on an attribute or&nbsp;set of attributes “<em>A</em>” of <em>R </em>if <em>B </em>is functionally dependent on <em>A </em>but not functionally dependent on&nbsp;any proper subset of <em>A</em>.<br>Consider a relation <em>S </em>in which for every functional dependency <em>X</em> → <em>Y</em>, either <em>X </em>is a superkey or&nbsp;every attribute of <em>Y </em>is a prime attribute. What is necessarily true for S?",
+      text: "In a relation, <em>R</em>, an attribute â€œ<em>B</em>â€ of <em>R </em>is said to be fully functionally dependent on an attribute or&nbsp;set of attributes â€œ<em>A</em>â€ of <em>R </em>if <em>B </em>is functionally dependent on <em>A </em>but not functionally dependent on&nbsp;any proper subset of <em>A</em>.<br>Consider a relation <em>S </em>in which for every functional dependency <em>X</em> â†’ <em>Y</em>, either <em>X </em>is a superkey or&nbsp;every attribute of <em>Y </em>is a prime attribute. What is necessarily true for S?",
       image: "",
       options: [
         "Relation <em>S </em>is not in 2NF.",
@@ -335,7 +335,7 @@ registerTest({   // made easy cse topic wise test database-1
         "Relation <em>S </em>is neither in 2NF nor in 3NF.",
       ],
       answer: "B",
-      solution: "Given:<br>For every functional dependency <em>X </em>→ <em>Y </em>in relation <em>S</em>:<br>Either X is a superkey, OR.<br>Every attribute of Y is a prime attribute.<br>A relation is in 3NF if for every FD <em>X</em> → <em>A</em>, at least one holds:<br><em>X</em> is a superkey, OR.<br><em>A</em> is a prime attribute.<br>The given condition is exactly this definition (extended to set <em>Y</em>).<br>Therefore, relation <em>S</em> is in 3NF.<br>We know, 3NF = 2NF<br>Reason: 3NF eliminates:<br>Partial dependency (2NF requirement).<br>Transitive dependency (extra condition)<br>Therefore, relation S is also in 2NF."
+      solution: "Given:<br>For every functional dependency <em>X </em>â†’ <em>Y </em>in relation <em>S</em>:<br>Either X is a superkey, OR.<br>Every attribute of Y is a prime attribute.<br>A relation is in 3NF if for every FD <em>X</em> â†’ <em>A</em>, at least one holds:<br><em>X</em> is a superkey, OR.<br><em>A</em> is a prime attribute.<br>The given condition is exactly this definition (extended to set <em>Y</em>).<br>Therefore, relation <em>S</em> is in 3NF.<br>We know, 3NF = 2NF<br>Reason: 3NF eliminates:<br>Partial dependency (2NF requirement).<br>Transitive dependency (extra condition)<br>Therefore, relation S is also in 2NF."
     },
     {
       marks: 1,
@@ -351,7 +351,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider relation schema <em>R</em>(<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>) and the two sets of functional dependency:<br><em>S</em><sub>1</sub> : {<em>A</em> → <em>B</em>, <em>AB </em>→ <em>C</em>, <em>AC </em>→ <em>D</em>, <em>B </em>→ <em>C</em>, <em>B </em>→ <em>A</em>}<br><em>S</em><sub>2</sub> : {<em>AB </em>→ <em>D</em>, <em>AC </em>→ <em>B</em>, <em>B </em>→ <em>D</em>, <em>BD </em>→ <em>C</em>}<br>Which of the following is true?",
+      text: "Consider relation schema <em>R</em>(<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>) and the two sets of functional dependency:<br><em>S</em><sub>1</sub> : {<em>A</em> â†’ <em>B</em>, <em>AB </em>â†’ <em>C</em>, <em>AC </em>â†’ <em>D</em>, <em>B </em>â†’ <em>C</em>, <em>B </em>â†’ <em>A</em>}<br><em>S</em><sub>2</sub> : {<em>AB </em>â†’ <em>D</em>, <em>AC </em>â†’ <em>B</em>, <em>B </em>â†’ <em>D</em>, <em>BD </em>â†’ <em>C</em>}<br>Which of the following is true?",
       image: "",
       options: [
         "S<sub>2</sub> covers S<sub>1</sub>",
@@ -366,13 +366,13 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Identify the minimal cover for the following FD set:<br>{A → BC, C → A, BC → D, ACD → B, BE → C, EC → FA, CF → BD, D → E}",
+      text: "Identify the minimal cover for the following FD set:<br>{A â†’ BC, C â†’ A, BC â†’ D, ACD â†’ B, BE â†’ C, EC â†’ FA, CF â†’ BD, D â†’ E}",
       image: "",
       options: [
-        "{A → BC, C → ADF, D → E, BE → C}",
-        "{A → BC, C → ADEF, D → E, BE → C}",
-        "{A → BC, C → ADF, E → D, BE → C}",
-        "{A → C, C → ADF, D → E, BE → C}",
+        "{A â†’ BC, C â†’ ADF, D â†’ E, BE â†’ C}",
+        "{A â†’ BC, C â†’ ADEF, D â†’ E, BE â†’ C}",
+        "{A â†’ BC, C â†’ ADF, E â†’ D, BE â†’ C}",
+        "{A â†’ C, C â†’ ADF, D â†’ E, BE â†’ C}",
       ],
       answer: "A",
       solution: "Option (a) is the minimal/canonical cover of given FD set.",
@@ -381,7 +381,7 @@ registerTest({   // made easy cse topic wise test database-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "Consider R(A, B, C, D, E) be a relation schema with the following functional dependencies:<br>F = {A → BC, CD → E, B → D, E → A}<br>Which of the following is true for decomposition of R into (A, B, C) and (C, D, E)?",
+      text: "Consider R(A, B, C, D, E) be a relation schema with the following functional dependencies:<br>F = {A â†’ BC, CD â†’ E, B â†’ D, E â†’ A}<br>Which of the following is true for decomposition of R into (A, B, C) and (C, D, E)?",
       image: "",
       options: [
         "Lossless join but not dependency preserving.",
@@ -390,13 +390,13 @@ registerTest({   // made easy cse topic wise test database-1
         "Neither lossless join nor dependency preserving.",
       ],
       answer: "D",
-      solution: "<em>R</em><sub>1</sub> = {A, B, C} and <em>R</em><sub>2</sub> = {C, D, E}<br><em>R</em><sub>1</sub> ∩ <em>R</em><sub>2</sub> = {C} and C is not a key for either <em>R</em><sub>1</sub> or <em>R</em><sub>2</sub>.<br>Hence decomposition is not lossless join.<br>E → A and B → D are not preserved in decomposition.<br>Hence it is not dependency preserving.",
+      solution: "<em>R</em><sub>1</sub> = {A, B, C} and <em>R</em><sub>2</sub> = {C, D, E}<br><em>R</em><sub>1</sub> âˆ© <em>R</em><sub>2</sub> = {C} and C is not a key for either <em>R</em><sub>1</sub> or <em>R</em><sub>2</sub>.<br>Hence decomposition is not lossless join.<br>E â†’ A and B â†’ D are not preserved in decomposition.<br>Hence it is not dependency preserving.",
     },
     {
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: "Given a relation R(A, B, C, D, E) with functional dependencies:<br>F = {AB → C, CD → E, C → A, C → D, D → B}<br>Which of the following statements are correct?",
+      text: "Given a relation R(A, B, C, D, E) with functional dependencies:<br>F = {AB â†’ C, CD â†’ E, C â†’ A, C â†’ D, D â†’ B}<br>Which of the following statements are correct?",
       image: "",
       options: [
         "Both {BD} and {BC} are candidate keys.",
@@ -420,7 +420,7 @@ registerTest({   // made easy cse topic wise test database-1
         "A sparse index must contain an entry for every record in the data file.",
       ],
       answer: ["B", "C"],
-      solution: "Searching a single key requires traversing the tree (logarithmic I/Os) + one random access to&nbsp;fetch the record. This is considered efficient for a single key search. So, option (a) is correct.<br>Hash indexes require a mapping for every key to locate its bucket. Sparse indexing would&nbsp;break this mapping → not possible. So, option (b) is incorrect.<br>Dense index has an entry for every key, allowing direct access. So, option (c) is correct.<br>Sparse index contains entries for some keys only, usually one per block. So, option (d) is&nbsp;incorrect.",
+      solution: "Searching a single key requires traversing the tree (logarithmic I/Os) + one random access to&nbsp;fetch the record. This is considered efficient for a single key search. So, option (a) is correct.<br>Hash indexes require a mapping for every key to locate its bucket. Sparse indexing would&nbsp;break this mapping â†’ not possible. So, option (b) is incorrect.<br>Dense index has an entry for every key, allowing direct access. So, option (c) is correct.<br>Sparse index contains entries for some keys only, usually one per block. So, option (d) is&nbsp;incorrect.",
     },
     {
       marks: 2,
@@ -508,13 +508,13 @@ registerTest({   // made easy cse topic wise test database-1
       text: "Which of the following functional dependency in a relational database is/are correct?",
       image: "",
       options: [
-        "(A → B) implies (AC → B)",
-        "(A → B and B → C) implies (A → C)",
-        "(AB → C) implies (ADB → C)",
-        "(AB → C) implies (A → C)",
+        "(A â†’ B) implies (AC â†’ B)",
+        "(A â†’ B and B â†’ C) implies (A â†’ C)",
+        "(AB â†’ C) implies (ADB â†’ C)",
+        "(AB â†’ C) implies (A â†’ C)",
       ],
       answer: ["A", "B", "C"],
-      solution: "a.(A → B) ⇒ (AC → B)<br>By using Augmentation rule<br>A → B ⇒ AC → BC<br>AC → B<br>So, option (a) is correct.<br><br>b.(A → B and B → C) implies (A → C)<br>Apply Transitivity rule:<br>A → B, B → C ⇒ A → C<br>So, option (b) is correct.<br><br>c.(AB → C) implies (ADB → C)<br>Using augmentation, we can add attributes to LHS:<br>AB → C ⇒ ABD → C<br>(ADB → C)<br>So, option (c) is correct.<br><br>d.(AB → C) implies (A → C)<br>This tries to remove attribute B from LHS.<br>No such rule exists in functional dependencies.<br>AB → C ⇒ A → C is not possible.<br>So, option (d) is incorrect.",
+      solution: "a.(A â†’ B) â‡’ (AC â†’ B)<br>By using Augmentation rule<br>A â†’ B â‡’ AC â†’ BC<br>AC â†’ B<br>So, option (a) is correct.<br><br>b.(A â†’ B and B â†’ C) implies (A â†’ C)<br>Apply Transitivity rule:<br>A â†’ B, B â†’ C â‡’ A â†’ C<br>So, option (b) is correct.<br><br>c.(AB â†’ C) implies (ADB â†’ C)<br>Using augmentation, we can add attributes to LHS:<br>AB â†’ C â‡’ ABD â†’ C<br>(ADB â†’ C)<br>So, option (c) is correct.<br><br>d.(AB â†’ C) implies (A â†’ C)<br>This tries to remove attribute B from LHS.<br>No such rule exists in functional dependencies.<br>AB â†’ C â‡’ A â†’ C is not possible.<br>So, option (d) is incorrect.",
     },
     {
       marks: 2,
@@ -568,7 +568,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "A function <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Σ<em>m</em>{1, 2, 4, 7} is to be implemented using a 4 : 1 MUX with ‘<em>A</em> and <em>C</em>’ as select lines. Which of the following gives correct inputs for the multiplexer?",
+      text: "A function <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Î£<em>m</em>{1, 2, 4, 7} is to be implemented using a 4 : 1 MUX with â€˜<em>A</em> and <em>C</em>â€™ as select lines. Which of the following gives correct inputs for the multiplexer?",
       image: "",
       options: [
         "<img src='js/questions/easy digitalcircuit-1/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
@@ -583,7 +583,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "A function ‘F’ is to be implemented using a 2 × 1 Multiplexer only where,<br>The number of 2 × 1 MUX required to implement F is: ",
+      text: "A function â€˜Fâ€™ is to be implemented using a 2 Ã— 1 Multiplexer only where,<br>The number of 2 Ã— 1 MUX required to implement F is: ",
       image: "js/questions/easy digitalcircuit-1/13.png",
       options: [
         "12",
@@ -598,7 +598,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: "The sum of all the digits in the number obtained after doing the 10’s complement of 988.79 is&nbsp;_______.",
+      text: "The sum of all the digits in the number obtained after doing the 10â€™s complement of 988.79 is&nbsp;_______.",
       image: "",
       options: [],
       answer: 5,
@@ -623,7 +623,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: "The output ‘<em>Y</em>’ of the multiplexer circuit shown in figure below is",
+      text: "The output â€˜<em>Y</em>â€™ of the multiplexer circuit shown in figure below is",
       image: "js/questions/easy digitalcircuit-1/44.png",
       options: [
         "<img src='js/questions/easy digitalcircuit-1/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
@@ -663,7 +663,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Two functions <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are given as;<br>F<sub>1</sub> = Σ<em>m</em>(0, 1, 2, 3, 6, 7, 13, 15)<br>F<sub>2</sub>&nbsp;= Σ<em>m</em>(2, 3, 6, 7, 10, 11, 12)<br>The no. of Essential Prime Implicants (EPIs) in <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are <em>A</em> and <em>B</em>. The value of A/B is:",
+      text: "Two functions <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are given as;<br>F<sub>1</sub> = Î£<em>m</em>(0, 1, 2, 3, 6, 7, 13, 15)<br>F<sub>2</sub>&nbsp;= Î£<em>m</em>(2, 3, 6, 7, 10, 11, 12)<br>The no. of Essential Prime Implicants (EPIs) in <em>F</em><sub>1</sub> and <em>F</em><sub>2</sub>&nbsp;are <em>A</em> and <em>B</em>. The value of A/B is:",
       image: "",
       options: [],
       answer: 1,
@@ -713,7 +713,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: "A function <em>F</em> is to be implemented using a 4 : 1 multiplexer where <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Π<em>M</em>(0, 3, 5, 6).<br>Which of the following is not correct?",
+      text: "A function <em>F</em> is to be implemented using a 4 : 1 multiplexer where <em>F</em>(<em>A</em>, <em>B</em>, <em>C</em>) = Î <em>M</em>(0, 3, 5, 6).<br>Which of the following is not correct?",
       image: "js/questions/easy digitalcircuit-1/28.png",
       options: [
         "<img src='js/questions/easy digitalcircuit-1/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>",
@@ -747,7 +747,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       image: "",
       options: [
         "buffer for A = B",
-        "inverter for A ≠ B",
+        "inverter for A â‰  B",
         "OR gate for all A, B",
         "AND gate for all A, B",
       ],
@@ -758,7 +758,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: "Consider a Boolean expression,<br>The minimum number of NAND-gates required to implement this function ‘f<em> </em>’ will be ______.",
+      text: "Consider a Boolean expression,<br>The minimum number of NAND-gates required to implement this function â€˜f<em> </em>â€™ will be ______.",
       image: "js/questions/easy digitalcircuit-1/50.png",
       options: [],
       answer: 0,
@@ -976,258 +976,3 @@ registerTest({   // go classes cse topic wise test degital logic-1
   ]
 });
 
-registerTest({
-  series: "cs-gate-pyq",
-  name: "TWT - Computer Network-1",
-  date: "July 08, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: "Which of following is true in Networking Protocols?",
-      image: "",
-      options: [
-        "In Congestion Avoidance algorithm of TCP, the increase of sender window size is\n                                    based on RTT.",
-        "FTP supports only in band connection.",
-        "Root DNS server can contain IP address of complete URL given by client browser.",
-        "None of these"
-      ],
-      answer: "A",
-      solution: "<p>(a)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: "Which of following cases wrap around happens in networking?",
-      image: "",
-      options: [
-        "After 65536 identification numbers for the packets, wrap around happens.",
-        "After 2<sup>8</sup>\n                                        sequence numbers, wrap around happens for the bytes of segment in TCP.",
-        "After 65536 sequence numbers, wrap around happens for bytes of segment in TCP.",
-        "None of these"
-      ],
-      answer: "A",
-      solution: "<p>(a)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: "<p>Source S is connected to destination D with the intermediate router</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which of following is true regarding TCP checksum that is calculated?</p>",
-      image: "",
-      options: [
-        "TCP checksum is calculated at sender side and at router TCP checksum again\n                                    calculated for verification and accepting segment.",
-        "TCP checksum is calculated at sender side and at destination TCP checksum again\n                                    calculated for verification and accepting segment.",
-        "TCP checksum is calculated at sender side after CRC calculation for data at sender\n                                    side.",
-        "None of these"
-      ],
-      answer: "B",
-      solution: "<p>(b)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: "Which of the following parameters used to distinguish packet, frame, byte in a segment?",
-      image: "",
-      options: [
-        "Sequence number, IP address, port number",
-        "Identification number, sequence number, sequence number",
-        "Identification number, port address, sequence number",
-        "None of these"
-      ],
-      answer: "B",
-      solution: "<p>(b)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: "Which of following is true in case of ICMP protocol?",
-      image: "",
-      options: [
-        "ICMP error message will act as fault tolerant ack for TCP global ack if it is lost.",
-        "TCP global ack will act as fault tolerant ack for ICMP error message that is lost",
-        "When ICMP error message is lost, then at upper layer UDP will send ACK for datagrams\n                                    that are lost.",
-        "None of these"
-      ],
-      answer: "B",
-      solution: "<p>(b)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: "<p>Segments are transmitted from client TCP to server TCP. Calculate w values of\n                                acknowledgments transmitted by server TCP to client TCP?</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/2.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-      image: "",
-      options: [],
-      answer: 0,
-      solution: "<p>1000</p>"
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: "<p>\n                                Segments are transmitted from client TCP to server TCP. Calculate <em>d</em>\n                                values of acknowledgments transmitted by server TCP to client TCP?\n                            </p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/3.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-      image: "",
-      options: [],
-      answer: 0,
-      solution: "<p>2000</p>"
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: "Which of following is correct with respect to persistence timer in TCP?",
-      image: "",
-      options: [
-        "Persistence timer is started and probe segment is transmitted, when receiver TCP\n                                    sends ACK segment with window size zero.",
-        "Persistence timer is started whenever receiver TCP sends ACK segment with window\n                                    size zero and if next ack from receiver is lost , then once again persistence timer\n                                    is started and probe segment is transmitted.",
-        "Persistence timer will not be started whenever receiver TCP sends ACK segment with\n                                    window size zero and if next ack from receiver is lost, then persistence timer is\n                                    started and probe segment is transmitted",
-        "Persistence timer is started to overcome deadlock."
-      ],
-      answer: [
-        "B",
-        "D"
-      ],
-      solution: "<p>(b, d)</p>"
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: "Which of following is true with TCP header fields of transport layer?",
-      image: "",
-      options: [
-        "PSH segment can be used for sending interactive data and data need not be buffered\n                                    at sender TCP.",
-        "Window size in TCP header is used for synchronization between sender TCP and\n                                    receiver TCP.",
-        "Initial connection establishment from sender TCP and receiver TCP requires\n                                        random sequence number from range (0 to 2<sup>32</sup>\n                                        – 1).",
-        "Initial connection establishment from sender TCP and receiver TCP requires zero as\n                                    sequence number."
-      ],
-      answer: [
-        "A",
-        "B",
-        "C"
-      ],
-      solution: "<p>(a, b, c)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: "<p>Client is trying to establish a http connection to the server with source port 62000 and\n                                destination port 83. The initial SYN segment sent by client is having sequence number\n                                899. Then which segment will be replied by server.</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-      image: "",
-      options: [
-        "ACK 900",
-        "RST segment",
-        "Data segment",
-        "None of these"
-      ],
-      answer: "B",
-      solution: "<p>(b)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: "Which of following is true in case of transport and network layer protocols?",
-      image: "",
-      options: [
-        "Maximum segment size as per RFC standard is 2<sup>16</sup>\n                                        .",
-        "Fragmentation is done when network layer is giving data to transport layer.",
-        "TCP is connectionless service and UDP is connection oriented service.",
-        "Maximum packet size allowed by IP protocol is 65535 bytes."
-      ],
-      answer: "D",
-      solution: "<p>(d)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: "Tracerroute reports a possible route that is taken by packets moving from some host A to\n                                some other host B. Which of following options represent the technique used by\n                                tracerroute to identify the hosts",
-      image: "",
-      options: [
-        "By progressively querying routers about the next router on the path to B using ICMP\n                                    packets starting with first router.",
-        "By requiring each router to append the address to the ICMP packet as it is forwarded\n                                    to B. The list of all routers enroute to B is returned by B is an ICMP reply packet.",
-        "By ensuring that an ICMP reply packet is returned by A by each router enroute to B\n                                    in the ascending order of their hop distance from A.",
-        "By locally computing shortest path from A to B."
-      ],
-      answer: "A",
-      solution: "<p>(a)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: "Suppose that IP-over-Ethernet network, a machine <em>X</em>\n                                wishes to find the MAC address of another machine Y in its subnet. Which of following\n                                techniques can be used for this?",
-      image: "",
-      options: [
-        "<em>X</em>\n                                        sends ARP request packet to the local gateway’s IP address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
-        "<em>X</em>\n                                        sends ARP request packet to the local gateway’s MAC address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
-        "<em>X</em>\n                                        sends ARP request packet with broadcast MAC address in its local subnet.",
-        "<em>X</em>\n                                        sends ARP request packet with broadcast IP address in its local subnet."
-      ],
-      answer: "C",
-      solution: "<p>(c)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: "<p>Calculate number of collision domains:</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/5.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-      image: "",
-      options: [],
-      answer: 0,
-      solution: "<p>4</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/6.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: "Consider a source computer (S) transmitting a file of size 10<sup>6</sup>\n                                bits to a destination computer (D) over a network of two routers (<em>R</em>\n                                <sub>1</sub>\n                                and <em>R</em>\n                                <sub>2</sub>\n                                ) and three links (<em>L</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                ). <em>L</em>\n                                <sub>1</sub>\n                                connects S to <em>R</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                connects <em>R</em>\n                                <sub>1</sub>\n                                to <em>R</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                connects <em>R</em>\n                                <sub>2</sub>\n                                to D. Let each link of length 100 km. Assume signals travel over each line at a speed of\n                                10<sup>8</sup>\n                                m/sec. Assume that the link bandwidth on each link is 1 Mbps. Let the file broken down\n                                in to 1000 packets each of size 1000 bits. Find the total sum of transmission<br>and\n                                propagation delays in transmitting the file from S to D? ( milliseconds )",
-      image: "",
-      options: [],
-      answer: 0,
-      solution: "<p>1005</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/7.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: "Which of following is true in case of time wait timer of TCP?",
-      image: "",
-      options: [
-        "To overcome deadlock between client and server process.",
-        "To stop new connection during this time.",
-        "To stop malicious requests during this time.",
-        "None of these"
-      ],
-      answer: [
-        "B",
-        "C"
-      ],
-      solution: "<p>(b, c)</p>"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: "TCP connection is established from client to server. Both sides connection is established\n                                and transmitting the data, suddenly server is crashed and rebooted. Which of following\n                                situation can be expected from server?",
-      image: "",
-      options: [
-        "After rebooting, server will send FIN segment to the client.",
-        "After rebooting, server will send RST segment to the client.",
-        "Before rebooting of server, if client all keep alive timers expire, then client\n                                    cannot transmit data in same connection.",
-        "None of these"
-      ],
-      answer: [
-        "B",
-        "C"
-      ],
-      solution: "<p>(b, c)</p>"
-    }
-  ]
-});
