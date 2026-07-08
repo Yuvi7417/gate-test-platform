@@ -539,14 +539,37 @@ registerTest({
   name: "TWT - Digital Circuit-1",
   date: "July 07, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "",
+      options: [],
+      answer: "",
+      solution: "",
+    }
   ]
 });
 
 registerTest({
   series: "cs-gate-classes",
-  name: "TWT - C-programming-1",
+  name: "TWT - Digital Logic-1",
   date: "July 07, 2026",
   questions: [
-
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Let A, B, C be three boolean variables. &oplus; and &odot; are exclusive-or(ExOr) and exclusive-nor(ExNor) operations respectively.<br>Consider the following statements:",
+      image: "",
+      options: [
+        "1. (A &oplus; B) &oplus; C = A &oplus; (B &oplus; C)",
+        "2. (A &odot; B) &odot; C = A &odot; (B &odot; C)",
+        "3. A &oplus; B &oplus; C = A &odot; B &odot; C",
+        "4. A &oplus; B &oplus; C = <span style='text-decoration: overline;'>(A &odot; B &odot; C)</span>"
+      ],
+      answer: "C",
+      solution: "1 and 2 are obviously correct as XOR and XNOR are associative.<br><br>3 is also correct as:<br><br><b>LHS</b><br>= (A'B + AB')C' + (A'B + AB')'C<br>= A'BC' + AB'C' + ABC + A'B'C<br><br><b>RHS</b><br>= (AB + A'B')C + (AB + A'B')'C'<br>= ABC + A'B'C + A'BC' + AB'C'<br>= LHS",
+    }
   ]
 });
