@@ -991,17 +991,17 @@ registerTest({
     options: [
       "All recursive sets are recursively enumerable.",
       "The complement of every recursively enumerable sets is recursively enumerable.",
-      "Every Non-empty recursively enumerable set is the range of some totally recursive\n                                    function.",
+      "Every Non-empty recursively enumerable set is the range of some totally recursive function.",
       "All finite sets are recursive."
     ],
     answer: "B",
-    solution: "<p>\n                                (b)<br>\n                                The complement of every recursively enumerable sets is recursively\n                                enumerable.<br>Because RE language are not closed under complement.\n                            </p>"
+    solution: "<p> (b)<br> The complement of every recursively enumerable sets is recursively enumerable.<br>Because RE language are not closed under complement. </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MCQ",
-    text: "Let <em>r</em>\n                                , <em>s</em>\n                                , <em>t</em>\n                                be regular expressions. Which of the following identities is correct?",
+    text: "Let <em>r</em> , <em>s</em> , <em>t</em> be regular expressions. Which of the following identities is correct?",
     image: "",
     options: [
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">",
@@ -1010,17 +1010,17 @@ registerTest({
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">"
     ],
     answer: "D",
-    solution: "<p>(d)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MSQ",
-    text: "Which of the following problems is decidable? (Here, CFG means context free grammar and\n                                CFL means context free language)",
+    text: "Which of the following problems is decidable? (Here, CFG means context free grammar and CFL means context free language)",
     image: "",
     options: [
-      "Given a CFG G, find whether <em>L</em>\n                                        (<em>G</em>\n                                        ) = <em>R</em>\n                                        , where <em>R</em>\n                                        is regular set.",
-      "Given a CFG G, find whether <em>L</em>\n                                        (<em>G</em>\n                                        ) = { }.",
+      "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = <em>R</em> , where <em>R</em> is regular set.",
+      "Given a CFG G, find whether <em>L</em> (<em>G</em> ) = { }.",
       "Find whether the intersection of two CFLs is empty.",
       "Find whether the complement of CFL is a CFL."
     ],
@@ -1030,13 +1030,13 @@ registerTest({
       "C",
       "D"
     ],
-    solution: "<p>\n                                (b)<br>\n                                (a) We don â€™t have any standard algorithm to change CFG into CFL from a given CFG\n                                deciding a language is finite is decidable but regular its undecidable.<br>\n                                (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br>\n                                (c) Intersection of two CFL is undecidable because it is not closed under\n                                intersection.<br>(d) CFL is not closed under Complement so its undecidable.\n                            </p>"
+    solution: "<p> (b)<br> (a) We don â€™t have any standard algorithm to change CFG into CFL from a given CFG deciding a language is finite is decidable but regular its undecidable.<br> (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br> (c) Intersection of two CFL is undecidable because it is not closed under intersection.<br>(d) CFL is not closed under Complement so its undecidable. </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MSQ",
-    text: "<p>Let M be the 5 stage NFA with âˆˆ-transitions shown in the diagram below:</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which one of the following regular expressions represents the language accepted by M?</p>",
+    text: "<p>Let M be the 5 stage NFA with âˆˆ-transitions shown in the diagram below:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following regular expressions represents the language accepted by M?</p>",
     image: "",
     options: [
       "(00)* + 1(11)*",
@@ -1050,13 +1050,13 @@ registerTest({
       "C",
       "D"
     ],
-    solution: "<p>\n                                (b)<br>\n                                â€¢Counter-example for option (a) : 011 is not generated.<br>\n                                â€¢Counter-example for option (c) : 000 is not generated.<br>â€¢Counter-example\n                                for option (d) : empty string is not generated.\n                            </p>"
+    solution: "<p> (b)<br> â€¢Counter-example for option (a) : 011 is not generated.<br> â€¢Counter-example for option (c) : 000 is not generated.<br>â€¢Counter-example for option (d) : empty string is not generated. </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MSQ",
-    text: "<p>Which one of the following regular expressions is equivalent to the language accepted by\n                                the DFA given below?</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/7.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+    text: "<p>Which one of the following regular expressions is equivalent to the language accepted by the DFA given below?</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/7.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
     image: "",
     options: [
       "0* 1(0 + 10* 1)*",
@@ -1070,56 +1070,56 @@ registerTest({
       "C",
       "D"
     ],
-    solution: "<p>\n                                (a)<br>\n                                The given DFA accepts all and only binary strings containing odd number of 1\n                                â€™s.<br>\n                                So, option (a) is correct regular expression.<br>\n                                Option (b) Counter-Example: Generates empty string.<br>\n                                Option (c) Counter-Example: Doesn â€™t generate 10011.<br>Option (d)\n                                Counter-Example: Doesn â€™t generate 1.\n                            </p>"
+    solution: "<p> (a)<br> The given DFA accepts all and only binary strings containing odd number of 1 â€™s.<br> So, option (a) is correct regular expression.<br> Option (b) Counter-Example: Generates empty string.<br> Option (c) Counter-Example: Doesn â€™t generate 10011.<br>Option (d) Counter-Example: Doesn â€™t generate 1. </p>"
   },
   {
     marks: 1,
     neg: 0,
     type: "NAT",
-    text: "Let <em>L</em>\n                                <sub>1</sub>\n                                be the language represented by the regular expression (<em>a</em>\n                                + <em>b</em>\n                                )* <em>aba</em>\n                                (<em>a</em>\n                                + <em>b</em>\n                                )* and<br>\n                                <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/8.png\" style=\"max-width:100%; border-radius: 8px;\">denotes\n                                the length of string w. Determine the number of strings in L2 that are also in L1 is\n                                ________.",
+    text: "Let <em>L</em> <sub>1</sub> be the language represented by the regular expression (<em>a</em> + <em>b</em> )* <em>aba</em> (<em>a</em> + <em>b</em> )* and<br> <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/8.png\" style=\"max-width:100%; border-radius: 8px;\">denotes the length of string w. Determine the number of strings in L2 that are also in L1 is ________.",
     image: "",
     options: [],
     answer: 0,
-    solution: "<p>16</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>16</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MCQ",
-    text: "For s âˆˆ (0 + 1)* let d(s) denote the decimal value of s(e.g. d(101) = 5).<br>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/10.png\" style=\"max-width:100%; border-radius: 8px;\">\n                                <br>Which one of the following statements is true?",
+    text: "For s âˆˆ (0 + 1)* let d(s) denote the decimal value of s(e.g. d(101) = 5).<br> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/10.png\" style=\"max-width:100%; border-radius: 8px;\"> <br>Which one of the following statements is true?",
     image: "",
     options: [
-      "<em>L</em>\n                                        is recursively enumerable, but not recursive.",
-      "<em>L</em>\n                                        is recursive, but not context-free.",
-      "<em>L</em>\n                                        is context-free, but not regular.",
-      "<em>L</em>\n                                        is regular."
+      "<em>L</em> is recursively enumerable, but not recursive.",
+      "<em>L</em> is recursive, but not context-free.",
+      "<em>L</em> is context-free, but not regular.",
+      "<em>L</em> is regular."
     ],
     answer: "C",
-    solution: "<p>(d)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 1,
     neg: 0,
     type: "MSQ",
-    text: "Which of the following statements are true for every language <em>L</em>\n                                âŠ† {0, 1}*?",
+    text: "Which of the following statements are true for every language <em>L</em> âŠ† {0, 1}*?",
     image: "",
     options: [
-      "<em>L</em>\n                                        * is infinite.",
-      "<em>L</em>\n                                        is accepted by some DFA if and only if <em>L</em>\n                                        is accepted by some NFA.",
-      "If <em>L</em>\n                                        is the union of two undecidable languages, then <em>L</em>\n                                        is undecidable.",
-      "If <em>L</em>\n                                        is the union of two decidable languages, then <em>L</em>\n                                        is decidable."
+      "<em>L</em> * is infinite.",
+      "<em>L</em> is accepted by some DFA if and only if <em>L</em> is accepted by some NFA.",
+      "If <em>L</em> is the union of two undecidable languages, then <em>L</em> is undecidable.",
+      "If <em>L</em> is the union of two decidable languages, then <em>L</em> is decidable."
     ],
     answer: [
       "B",
       "D"
     ],
-    solution: "<p>(b, d)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(b, d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 1,
     neg: 0.33,
     type: "MCQ",
-    text: "Consider the regular expression <em>R</em>\n                                = (<em>a</em>\n                                + <em>b</em>\n                                )* (<em>aa</em>\n                                + <em>bb</em>\n                                ) (<em>a</em>\n                                + <em>b</em>\n                                )* Which of the following finite automata recognizes the language defined by the regular\n                                expression<br>\n                                <em>R</em>\n                                ? Edges labeled <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/13.png\" style=\"max-width:100%; border-radius: 8px;\">denote\n                                transitions on the empty string.",
+    text: "Consider the regular expression <em>R</em> = (<em>a</em> + <em>b</em> )* (<em>aa</em> + <em>bb</em> ) (<em>a</em> + <em>b</em> )* Which of the following finite automata recognizes the language defined by the regular expression<br> <em>R</em> ? Edges labeled <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/13.png\" style=\"max-width:100%; border-radius: 8px;\">denote transitions on the empty string.",
     image: "",
     options: [
       "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/14.png\" style=\"max-width:100%; border-radius: 8px;\">",
@@ -1128,13 +1128,13 @@ registerTest({
       "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/17.png\" style=\"max-width:100%; border-radius: 8px;\">"
     ],
     answer: "C",
-    solution: "<p>(c)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "Which one of the following regular expressions over {<em>a</em>\n                                , <em>b</em>\n                                } denotes the set of all strings not containing â€œbaaâ€ as a substring?",
+    text: "Which one of the following regular expressions over {<em>a</em> , <em>b</em> } denotes the set of all strings not containing â€œbaaâ€ as a substring?",
     image: "",
     options: [
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/19.png\" style=\"max-width:100%; border-radius: 8px;\">",
@@ -1143,13 +1143,13 @@ registerTest({
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/22.png\" style=\"max-width:100%; border-radius: 8px;\">"
     ],
     answer: "C",
-    solution: "<p>(c)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "<p>Consider the following context-free grammar G:</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/24.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which of the following strings can be generated by the grammar G?</p>",
+    text: "<p>Consider the following context-free grammar G:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/24.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which of the following strings can be generated by the grammar G?</p>",
     image: "",
     options: [
       "abccdd",
@@ -1158,13 +1158,13 @@ registerTest({
       "aaccddbb"
     ],
     answer: "D",
-    solution: "<p>(d)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "<p>\n                                Consider the following PDA, M that accepts all strings having equal number of aâ€™s and\n                                bâ€™s. Then for the complete PDA the missing transaction in the diagram are (here\n                                z<sub>0</sub>\n                                is the initial stack symbol)\n                            </p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/26.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+    text: "<p> Consider the following PDA, M that accepts all strings having equal number of aâ€™s and bâ€™s. Then for the complete PDA the missing transaction in the diagram are (here z<sub>0</sub> is the initial stack symbol) </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/26.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>",
     image: "",
     options: [
       "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/27.png\" style=\"max-width:100%; border-radius: 8px;\">",
@@ -1173,13 +1173,13 @@ registerTest({
       "None of these"
     ],
     answer: "A",
-    solution: "<p>\n                                (a)<br>\n                                Same symbols will be pushed into the stack and opposite symbols will be deleted from the\n                                stack.<br>Hence option (a) is correct.\n                            </p>"
+    solution: "<p> (a)<br> Same symbols will be pushed into the stack and opposite symbols will be deleted from the stack.<br>Hence option (a) is correct. </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "Let <em>A</em>\n                                = (11, 100, 111), <em>B</em>\n                                = (111, 001, 11) and the alphabet, Î£ = {0, 1}, then the solution for PCP is ________.",
+    text: "Let <em>A</em> = (11, 100, 111), <em>B</em> = (111, 001, 11) and the alphabet, Î£ = {0, 1}, then the solution for PCP is ________.",
     image: "",
     options: [
       "(2, 3, 1)",
@@ -1188,13 +1188,13 @@ registerTest({
       "None of these"
     ],
     answer: "C",
-    solution: "<p>(c)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "<p>\n                                Consider the FSM <em>M</em>\n                                and <em>N</em>\n                                :\n                            </p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/31.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>\n                                Then <em>L</em>\n                                (<em>M</em>\n                                ) âˆ© <em>L</em>\n                                (<em>N</em>\n                                ) is\n                            </p>",
+    text: "<p> Consider the FSM <em>M</em> and <em>N</em> : </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/31.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> Then <em>L</em> (<em>M</em> ) âˆ© <em>L</em> (<em>N</em> ) is </p>",
     image: "",
     options: [
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/32.png\" style=\"max-width:100%; border-radius: 8px;\">",
@@ -1203,13 +1203,13 @@ registerTest({
       "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/35.png\" style=\"max-width:100%; border-radius: 8px;\">"
     ],
     answer: "A",
-    solution: "<p>(a)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(a)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "How many 2 state DFAâ€™s with the designated initial state can be constructed over the\n                                alphabet Î£ = {a, b} that accept universal language?",
+    text: "How many 2 state DFAâ€™s with the designated initial state can be constructed over the alphabet Î£ = {a, b} that accept universal language?",
     image: "",
     options: [
       "4",
@@ -1218,7 +1218,7 @@ registerTest({
       "24"
     ],
     answer: "C",
-    solution: "<p>(c)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
@@ -1233,13 +1233,13 @@ registerTest({
       "None of these"
     ],
     answer: "B",
-    solution: "<p>(b)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   },
   {
     marks: 2,
     neg: 0.66,
     type: "MCQ",
-    text: "<p>Consider the NPDA:</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/40.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>\n                                where (as per usual convention) <em>Q</em>\n                                is the set of states, Î£ is the input alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/41.png\" style=\"max-width:100%; border-radius: 8px;\">\n                                is the stack alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/42.png\" style=\"max-width:100%; border-radius: 8px;\">\n                                is the state transition function <em>q</em>\n                                <sub>0</sub>\n                                is the initial state, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/43.png\" style=\"max-width:100%; border-radius: 8px;\">is\n                                the initial stack symbol, and F is the set of accepting states. The state transition is\n                                as follows:\n                            </p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/44.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which one of the following sequences must follow the string 101100 so that the overall\n                                string is accepted by the automaton?</p>",
+    text: "<p>Consider the NPDA:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/40.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> where (as per usual convention) <em>Q</em> is the set of states, Î£ is the input alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/41.png\" style=\"max-width:100%; border-radius: 8px;\"> is the stack alphabet, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/42.png\" style=\"max-width:100%; border-radius: 8px;\"> is the state transition function <em>q</em> <sub>0</sub> is the initial state, <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/43.png\" style=\"max-width:100%; border-radius: 8px;\">is the initial stack symbol, and F is the set of accepting states. The state transition is as follows: </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/44.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following sequences must follow the string 101100 so that the overall string is accepted by the automaton?</p>",
     image: "",
     options: [
       "10110",
@@ -1248,7 +1248,7 @@ registerTest({
       "01001"
     ],
     answer: "B",
-    solution: "<p>(b)</p>\n                            <p>\n                                <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
   }
 ]
 });
