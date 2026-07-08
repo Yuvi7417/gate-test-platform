@@ -315,6 +315,42 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "cs-gate-2026-pyq",
+    code: "CSE",
+    examTag: "GATE 2026",
+    subjectTag: "Computer Science",
+    title: "CS-GATE PYQ Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "Year-wise GATE Computer Science papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 07, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    price: "₹50 + GST",
+    basePrice: 50,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+  {
     id: "ce-gate-pyq",
     code: "CE",
     examTag: "GATE 2026",
