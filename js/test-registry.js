@@ -1721,3 +1721,259 @@ registerTest({    // made easy 2026 cse topic wise test database-1
     },
   ]
 });
+
+
+registerTest({    // made easy 2026 cse topic wise test database-2
+  series: "cs-gate-2026-pyq",
+  name: "TWT - Database-2",
+  date: "July 12, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the following interleaved schedule S involving transaction <em>T</em> <sub>1</sub> , <em>T</em> <sub>2</sub> on data item <em>X</em> and <em>Y</em> .<br> <em>S</em> : <em>R</em> <sub>1</sub> (<em>X</em> ); <em>W</em> <sub>1</sub> (<em>X</em> ); <em>R</em> <sub>2</sub> (<em>X</em> ); <em>W</em> <sub>2</sub> (<em>X</em> ); <em>R</em> <sub>2</sub> (<em>Y</em> ); <em>W</em> <sub>2</sub> (<em>Y</em> ); <em>R</em> <sub>1</sub> (<em>Y</em> ); <em>W</em> <sub>1</sub> (<em>Y</em> ); <em>C</em> <sub>2</sub> , <em>C</em> <sub>1</sub> <br> where <br><br><img src=\"/js/questions/easy_2026_database-2/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> represents read and write operations on items <em>X</em> and <em>Y</em> and C<sub>1/2</sub> are commits of <em>T</em> <sub>1</sub> and <em>T</em> <sub>2</sub> respectively.",
+      image: "",
+      options: [
+        "<em>S</em> is neither conflict, nor view-serializable and never results serializable.",
+        "<em>S</em> is serializable away procedure result equal to serial schedule.",
+        "<em>S</em> is not serializable, but may results equal to serial if read, write of <em>X</em> , <em>Y</em> in <em>T</em> <sub>1</sub> <em>T</em> <sub>2</sub> are commutative.",
+        "<em>S</em> is serializable and consistent for all data items <em>X</em> and <em>Y</em> ."
+      ],
+      answer: "C",
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q1_2.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the given schedule, for transaction <em>T</em> <sub>1</sub> , <em>T</em> <sub>2</sub> : <br><br><img src=\"/js/questions/easy_2026_database-2/q3_5.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Which of the following is a correct statement?",
+      image: "",
+      options: [
+        "<em>S</em> is non-recoverable since <em>T</em> <sub>2</sub> commit before <em>T</em> <sub>1</sub> .",
+        "<em>S</em> is allow under strict 2PL but not under rigorous 2PL.",
+        "<em>S</em> is not strict schedule as <em>T</em> <sub>2</sub> write on same data without previous R/W commit.",
+        "Both strict and rigorous 2PL, schedule S efficiently."
+      ],
+      answer: "B",
+      solution: "Schedule work under strict 2PL.<br> Rigorous 2PL search for commit of <em>T</em> <sub>1</sub> to release lock and trap in CPU cycles."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider a database with two data items <em>X</em> and <em>Y</em> and two concurrent transactions <em>T</em> <sub>1</sub> and <em>T</em> <sub>2&nbsp;</sub> operating as follows: <br><br><img src=\"/js/questions/easy_2026_database-2/q8_14.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Which of the following statements is/are not true?",
+      image: "",
+      options: [
+        "The schedule involves a read-write conflict, where <em>T</em> <sub>2</sub> observes an unrepeatable read on <em>X</em> , violating isolation.",
+        "Transaction <em>T</em> <sub>1</sub> performs a dirty read on X, violating isolation.",
+        "The schedule contain write-write conflict on <em>X</em> , <em>T</em> <sub>1</sub> may over-write uncommitted data of <em>T</em> <sub>2&nbsp;</sub> which causes lost update problem if <em>T</em> <sub>1</sub> abort before <em>T</em> <sub>2</sub> commit.",
+        "Under strict-2PL, schedule S would be allowed and prevent dirty read."
+      ],
+      answer: ["A", "C", "D"],
+      solution: "No unrepeatable read as <em>T</em> <sub>1</sub> reads both <em>X</em> and <em>Y</em> before <em>T</em> <sub>1</sub> perform any writes.<br> •If <em>T</em> <sub>2</sub> abort at any stage, we can abort <em>T</em> <sub>1</sub> as well to prevent atomicity and restart schedules.<br>•Strict-2PL, does not allow to run given schedule as their is a dirty read."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Let <em>R</em> (<em>A</em> ) be a relation that contain both integer and NULL values in attribute <em>A</em> .<br> Consider the following two queries:<br> Query 1: SELECT FROM R WHERE A NOT IN (5, 10, NULL;)<br> Query 2: SELECT FROM R WHERE A &lt;&gt; 5 AND A &lt;&gt; 10 AND A IS NOT NULL;<br>Which of the following statements is/are false?",
+      image: "",
+      options: [
+        "Query 1 and Query 2 return same tuples.",
+        "Query 1 will not return any tuple for any value of A.",
+        "Query 1 returns rows where A is not NULL and is neither 5 nor 10.",
+        "Query 2 will return all rows where A is neither 5 nor 10."
+      ],
+      answer: ["A", "C", "D"],
+      solution: "•Query 1 always gives empty relation.<br>•Query 2 return tuples where A is not NULL, neither 5 nor 10."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Consider the following schedules: <br><br><img src=\"/js/questions/easy_2026_database-2/q10_15.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Identify the number of recoverable schedules.",
+      image: "",
+      answer: 3,
+      solution: "3<br> <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> , <em>S</em> <sub>4</sub> are recoverable schedule."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following relational schemas: <br><br><img src=\"/js/questions/easy_2026_database-2/q11_16.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Which of the following statement is true regarding the evaluation of the above query?",
+      image: "",
+      options: [
+        "The composite <em>B</em> <sup>+</sup> tree index on (Sid, age) in Sailors can be used to efficiently evaluate S.sid &gt; 500 but not S.age &gt; 25 together.",
+        "The <em>B</em> <sup>+</sup> tree index on Reserves.Sid helps in efficiently selecting only those tuples of R that satisfies R.Sid &lt;1000 before the join.",
+        "Since R.sid is used in the selection of tuples, using the <em>B</em> <sup>+</sup> tree on <em>R</em> .sid is not helpful as multiple tuples may match.",
+        "The index on Sailors helps to reduce the number of sailors tuples participating in the join, by scanning S.sid &gt; 500 and S.age &gt; 2.5"
+      ],
+      answer: ["B", "D"],
+      solution: "The index can be used to find tuples where Sid &gt;500 first and then within these check age &gt;25.<br>(c) Duplicate does not reduce index usefulness."
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the following log file, contains log records of the following form.<br> <tranid, variable=\"\"></tranid,> <br><br><img src=\"/js/questions/easy_2026_database-2/q17_29.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Identify the correct statement.",
+      image: "",
+      options: [
+        "Transaction <em>T</em> <sub>1</sub> , <em>T</em> <sub>3</sub> redo and <em>T</em> <sub>2</sub> undo after abort.",
+        "Transaction <em>T</em> <sub>2</sub> , <em>T</em> <sub>3</sub> redo and <em>T</em> <sub>4</sub> undo after abort.",
+        "Transaction <em>T</em> <sub>1</sub> store permanently, <em>T</em> <sub>3</sub> redo and <em>T</em> <sub>2</sub> , <em>T</em> <sub>4</sub> undo.",
+        "System cannot recover properly as <em>T</em> <sub>2</sub> and <em>T</em> <sub>3</sub> working on same variable."
+      ],
+      answer: "C",
+      solution: "•<em>T</em> <sub>1</sub> commit before check point so store it.<br> •<em>T</em> <sub>3</sub> commit before abort so redo it.<br> •<em>T</em> <sub>2</sub> , <em>T</em> <sub>4</sub> not commit till abort so undo them."
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following relation schemas: <br><br><img src=\"/js/questions/easy_2026_database-2/q16_27.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Where the primary keys are shown underlined. The number of tuples in the purchase relation is<br> 100, and in the Supplier relation is 50, respectively.<br> What are the maximum and minimum number of tuples that can be present in (Purchase * Supplier)<br>where ‘*’ denotes natural full outer join. (Pid in Supplier may/may not foreign key to Pid in Purchase).",
+      image: "",
+      options: [
+        "149, 100",
+        "50, 50",
+        "150, 100",
+        "0, 50"
+      ],
+      answer: ["A", "C"],
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q16_28.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "A bank maintains checking account data in a relational database, while customer (owner) information is stored in a separate file system on a different server. An operation in performed that adds a new owner to the file system and associates that owner with a newly created account<br> in that database.<br> Assume there is no distributed transaction management between the database and the file system.<br>Which of the following is true regarding the ACID properties of this operation?",
+      image: "",
+      options: [
+        "Atomicity is not guaranteed, as failure in one system may not roll back change in the other.",
+        "Isolation is not always ensured as the operations occurs independently on separate system.",
+        "Durability is satisfied only if both system independently ensure persistence after commit.",
+        "Consistency is always maintained, as each system handles its own constraints."
+      ],
+      answer: ["A", "B", "C"],
+      solution: "<strong>DB + File system on another server:</strong> <br> Two independent systems:<br> •Relational data base<br> •Separate file system<br> No distributed transaction:<br> •Manager to co-ordinate them.<br> <strong>RDBMS server File System server</strong> <br> Required distributed<br>Transaction manager to coordinate system of RDBMS server, FS servers."
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "A relation database contains two tables.<br>Student and Marks as shown below: <br><br><img src=\"/js/questions/easy_2026_database-2/q6_11.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> The primary key of the Student table is R_no.<br> For the Marks table, the column R_no and Subject together for the composite key and R_no is the<br> foreign key referencing to R_no. in Student table.<br> Select Sum(M.marks), S.S_name<br> From Student S, Marks M<br> where M.mark &gt; 70<br> Group By S.S_name;<br>The number of rows returned by the above SQL query is ________.",
+      image: "",
+      answer: 5,
+      solution: "Condition applied on Mark in Marks table.<br>Group by Sname, in final table so remain with 5 unique S_name tuples."
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider a relation <em>R</em> (<em>a</em> , <em>b</em> , <em>c</em> , <em>d</em> , <em>e</em> ) containing 500000 records, where each data page holds 100 records.<br> R is organized as a sorted files on candidate key. Assume R.a is a candidate key for R, with values<br> lying in the range 0 to 4, 999, 99.<br>Given the following relational algebra queries. <br><br><img src=\"/js/questions/easy_2026_database-2/q2_3.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Which of the following is a false statement?",
+      image: "",
+      options: [
+        "Linear hashed index is most efficient for <em>Q</em> <sub>2</sub> , but inefficient for <em>Q</em> <sub>1</sub> and <em>Q</em> <sub>3</sub> .",
+        "A clustered <em>B</em> <sup>+</sup> tree is optimal for both <em>Q</em> <sub>1</sub> and <em>Q</em> <sub>3</sub> but not useful for <em>Q</em> <sub>2</sub> and <em>Q</em> <sub>4</sub> .",
+        "Full scan is optimal for <em>Q</em> <sub>4</sub> but not for <em>Q</em> <sub>1</sub> .",
+        "Hashing is preferable to clustering for <em>Q</em> <sub>3</sub> but inefficient for <em>Q</em> <sub>1</sub> and <em>Q</em> <sub>4</sub> ."
+      ],
+      answer: "D",
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q2_4.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following four queries on the relations: <br><br><img src=\"/js/questions/easy_2026_database-2/q7_12.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Which of the following statements is/are correct?",
+      image: "",
+      options: [
+        "Query A, B and D always produce same output.",
+        "Query B and D always produce the same output but Query A and C may differ.",
+        "All four queries produce the output for distinct Sname in both relations.",
+        "Query A and C may produce same result but not Query B and D."
+      ],
+      answer: ["A", "B", "C"],
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q7_13.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the relations <em>r</em> <sub>1</sub> (<em>A</em> , <em>B</em> , <em>C</em> ), <em>r</em> <sub>2</sub> (<em>C</em> , <em>D</em> , <em>E</em> ) and <em>r</em> <sub>3</sub> (<em>E</em> , <em>F</em> ), having 1000, 1500 and 750 tuples reoperatively.<br> Assume that their are no primary keys, except the entire schema (i.e., all values are uniformly distributed).<br> Let <em>V</em> (<em>X</em> , <em>R</em> ) represents, the distinct values of attribute <em>X</em> in relation <em>R</em> .<br> <em>V</em> (<em>C</em> , <em>r</em> <sub>1</sub> ) = 900, <em>V</em> (<em>C</em> , <em>r</em> <sub>2</sub> ) = 1100, <em>V</em> (<em>E</em> , <em>r</em> <sub>2</sub> ) = 50 and <em>V</em> (<em>E</em> , <em>r</em> <sub>3</sub> ) = 100.<br> Which of the following is the efficient strategy for computing the size of&nbsp;<br><br><img src=\"/js/questions/easy_2026_database-2/q4_6.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_database-2/q4_7.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_database-2/q4_8.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_database-2/q4_9.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "None of these"
+      ],
+      answer: "C",
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q4_10.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the schedules <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> below: <br><br><img src=\"/js/questions/easy_2026_database-2/q12_17.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Which of the following options correctly classifies each schedule?",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_database-2/q12_18.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_database-2/q12_19.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_database-2/q12_20.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_database-2/q12_21.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "D",
+      solution: "<em>S</em> <sub>1</sub> : Recoverable, cascadeless, strict recoverable.<br> <em>S</em> <sub>2</sub> &nbsp;: Dirty read, not recoverable.<br> <em>S</em> <sub>3</sub> &nbsp;: Recoverable and cascadeless but not strict recoverable."
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the following relational schemas: <br><br><img src=\"/js/questions/easy_2026_database-2/q13_22.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> What does the final result of the above query?",
+      image: "",
+      options: [
+        "Names of students who have takes at least one course offered by their department.",
+        "Names of students who have not taken any course from their own department, but may have taken courses from other department.",
+        "Names of students who have not taken any course at all.",
+        "Names of students who have taken all courses offered by their own department."
+      ],
+      answer: "B",
+      solution: "(b)"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the following transactions: <br><br><img src=\"/js/questions/easy_2026_database-2/q14_23.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> The time stamps of <em>T</em> <sub>1</sub> , <em>T</em> <sub>2</sub> and <em>T</em> <sub>3</sub> are 3, 1, 2 respectively.<br>Which of the following is the correct option under Time stamp Ordering Protocol (TOP).",
+      image: "",
+      options: [
+        "S is not possible under basic TOP and <em>T</em> <sub>3</sub> force <em>T</em> <sub>1</sub> to abort/rollback.",
+        "S is possible under Thomas Write Rule TOP and S is view serializable.",
+        "<em>T</em> <sub>2</sub> and <em>T</em> <sub>3</sub> both rollback to preserve data consistency.",
+        "Only <em>T</em> <sub>3</sub> rollback, under basic TOP while <em>T</em> <sub>2</sub> and <em>T</em> <sub>1</sub> complete their operation successfully."
+      ],
+      answer: "D",
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q14_24.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Suppose, a relation <em>R</em> (<em>A</em> , <em>B</em> ), have following schema: <br><br><img src=\"/js/questions/easy_2026_database-2/q15_25.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      image: "",
+      options: [
+        "{(0, Null,), (Null, Null)}",
+        "{(0, 0), (Null, 0)}",
+        "{(Null, 1), (0, 0)}",
+        "{(0, 0), (Null, 1)}"
+      ],
+      answer: "C",
+      solution: "<img src=\"/js/questions/easy_2026_database-2/q15_26.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+
+
+  ]
+});
