@@ -1980,216 +1980,219 @@ registerTest({    // made easy 2026 cse topic wise test database-2
 
 registerTest({    // made easy 2026 cse topic wise test coa-1
   series: "cs-gate-2026-pyq",
-  name: "TWT - COA-1",
+  name: "TWT - Computer Organization and Architecture-1",
   date: "July 13, 2026",
   questions: [
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "NAT",
-          text: "A CPU has 24 bits instructions and memory is byte addressable.<br>Consider the following below code: <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> If Branch == 0, <em>X</em> [PC] is supposed to skip the loop and go directly to MOV <em>R</em> <sub>2</sub> , SUM what should be value of <em>X</em> .",
-          answer: 9,
-          solution: "9<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_2.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Match <strong>List-I</strong> (Characteristics) with <strong>List-II</strong> (Processors) and select the correct answer using the codes given below the lists: <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q2_3.png\" style=\"max-width:100%; border-radius: 8px;\">",
-          options: [
-              "a",
-              "b",
-              "c",
-              "d"
-            ],
-          answer: "C",
-          solution: "(c)"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider the following format:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_4.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> What is the Hexa decimal equivalent in the memory after adding the following data.<br> 1.1011001000 * 2<sup>+8</sup> <br> 1.0010100011 * 2<sup>+4</sup>",
-          options: [
-              "(DF12)<sub>H</sub>",
-              "(5F12)<sub>H</sub>",
-              "(612F)<sub>H</sub>",
-              "(F125)<sub>H</sub>"
-            ],
-          answer: "B",
-          solution: "(b)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_5.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider a 32 bits hypothetical CPU which supports instruction with 2 register operands, memory operands and 2 immediate constant fields. System supports 100 instructions, 60 registers with a register wide of 32 bits, 4 MB RAM and 13 bits constant size. Program contain 240 Instructions.<br>Number of bytes required to stored the program is _________.",
-          options: [
-              "2010",
-              "2160",
-              "2400",
-              "1620"
-            ],
-          answer: "B",
-          solution: "(b)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q4_6.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "NAT",
-          text: "Consider a hypothetical CPU which supports 200 instructions with a CPI of 13. Hardware contain 300 control signals, 16 flags and uses 24 branch conditions. Micro instruction is designed with 6 control signals. Size of a CDR register in the control unit design is ________ (in bits)?",
-          answer: 75,
-          solution: "75<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q5_7.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "NAT",
-          text: "Consider 3 ns CLK cycle CPU which consumes 4 cycles for data transfer instruction, 8 cycles for ALU instruction. 6 cycles for branch instruction, relative frequencies of these instructions are 30%, 60% and 10% respectively. System is enhanced with a respective speedups of 2, 1.6 and 2. Performance gain of an enhanced system is ________?",
-          answer: 1.69,
-          solution: "1.69<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q6_8.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "NAT",
-          text: "Consider 16 bits CPU used to execute the following code.<br> System supports 1 word opcode and 2 word address @ symbol uses indirect AM, [ ] symbol uses direct AM. Register R<sub>2</sub> is designated as index register. Following code is used to execute in the<br>CPU. Instruction follows the standard syntax. <br> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_9.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Number of memory references required to access the data is ________ where <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_10.png\" style=\"max-width:100%; border-radius: 8px;\">instructions are executed 5 times in the code.",
-          answer: 45,
-          solution: "45<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_11.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider 1 GHz clock frequency processor, uses different operand access modes shown below:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_12.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Assume that 8 cycle consumed for memory reference, 4 cycles consumed for arithmetic computation and 0 cycles consumed when the operand is in register instruction itself. What is the average operand fetch rate (in million words/sec) of the processor?",
-          options: [
-              "117.45 M words/sec",
-              "113.63 M words/sec",
-              "217.45 M words/sec",
-              "316.45 M words/sec"
-            ],
-          answer: "B",
-          solution: "(b)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_13.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider the following sequence of instructions:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_14.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> The ALU operation instruction size are 32 bits, data transfer instructions are 64 bits and branch instruction size are 16 bits.<br>Assume the program is loaded into memory starting at address 4000 (decimal). If an interrupt occurs during the execution of the HALT instruction, what is the return address pushed onto the stack?",
-          options: [
-              "4019",
-              "4023",
-              "4024",
-              "4033"
-            ],
-          answer: "C",
-          solution: "(c)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_15.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "The following assembly code is to be executed in a 3-stage pipelined processor with hazard detection and resolution in each stage. The stage are IF, OF (one or more as required) and execution (including write-back operation). What are the number of possible RAW, WAW and WAR hazards in the execution of the code.<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_16.png\" style=\"max-width:100%; border-radius: 8px;\">",
-          options: [
-              "6, 1, 2",
-              "5, 3, 3",
-              "5, 3, 2",
-              "3, 1, 2"
-            ],
-          answer: "D",
-          solution: "(d)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_17.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MSQ",
-          text: "Consider the following machine instruction:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_18.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Four stage pipeline, IF (fetch), ID (decode and operand fetch), IE (execute), WB (write back), are used. No data forwarding is present in the pipeline [Each operation takes one cycle in pipeline].<br>Which one of the following is true?",
-          options: [
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_19.png\" style=\"max-width:100%; border-radius: 8px;\"> have structural dependency and <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_20.png\" style=\"max-width:100%; border-radius: 8px;\">have WAR dependency.",
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_21.png\" style=\"max-width:100%; border-radius: 8px;\">have RAW dependency, but it will not create any hazard in pipeline.",
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_22.png\" style=\"max-width:100%; border-radius: 8px;\">causes stalls in the pipeline to maintain data integrity.",
-              "There are 2 RAW dependencies and one WAW dependency in the pipeline."
-            ],
-          answer: "C,D",
-          solution: "(c, d)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_23.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider the following code executed on a 32 bits hypothetical CPU, stored in the memory with a starting address of (4000)<sub>10</sub> . CPU cycle time is 2 ns. Each instruction on average takes 5 cycles to complete. Interrupt sub program takes 20 cycles to complete. <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q12_24.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> In the program execution interrupt occurred, during the execution of ADD instruction and MUL instruction. What is the program execution time in (ns)?",
-          options: [
-              "70 ns",
-              "160 ns",
-              "150 ns",
-              "190 ns"
-            ],
-          answer: "B",
-          solution: "(b)"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MSQ",
-          text: "Consider the following format:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_25.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Which of the following represents the value (&gt; 16)<sub>10</sub> .",
-          options: [
-              "0 100011 110100000",
-              "0 011110 001011111",
-              "0 100010 0000100111",
-              "0 100100 001010000"
-            ],
-          answer: "A,D",
-          solution: "(a, d)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_26.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider the following statements:<br> <em>S</em> <sub>1</sub> : Relative addressing mode is best suited for calculate the target address in a branch instruction.<br> <em>S</em> <sub>2</sub> : Immediate addressing mode is best suited for specifying the target address in a branch instruction.<br> <em>S</em> <sub>3</sub> : Base register addressing mode can be used in branch instructions where the target segment base address is stored in a register.<br>Which of the following is correct?",
-          options: [
-              "Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>",
-              "Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>",
-              "Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>",
-              "All <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>"
-            ],
-          answer: "B",
-          solution: "(b)<br> Relative addressing mode is best suited for specifying the target address in a branch instruction.<br> EX: Branch &gt;0 –16(PC)<br>Immediate addressing is used to provide constant data values embedded in the instruction."
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "NAT",
-          text: "Consider 5-stage pipeline with stage delays as 150, 120, 160, 180 and 140 ns respectively. Registers that are used between every two stages have a delay of 5 ns each. The total time taken to process 1000 data items on this pipeline will be ________ (in μsec up to 2 decimal places).",
-          answer: 185.74,
-          solution: "185.74 [185.50 - 185.90]<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q15_27.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MCQ",
-          text: "Consider 4 stage instruction pipeline executed on a system:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_28.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> If all instructions are executed only once, what is the throughput of system?",
-          options: [
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_29.png\" style=\"max-width:100%; border-radius: 8px;\">",
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_30.png\" style=\"max-width:100%; border-radius: 8px;\">",
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_31.png\" style=\"max-width:100%; border-radius: 8px;\">",
-              "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_32.png\" style=\"max-width:100%; border-radius: 8px;\">"
-            ],
-          answer: "D",
-          solution: "(d)<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_33.png\" style=\"max-width:100%; border-radius: 8px;\">"
-        },
-      {
-          marks: 1,
-          neg: 0.33,
-          type: "MSQ",
-          text: "Consider the following pipeline design:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q17_34.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Which of the following statements are correct?",
-          options: [
-              "Pipeline cycle time is 12 ns.",
-              "Pipeline cycle time is 14 ns.",
-              "Pipeline takes 14 ns to complete the instruction when very large number of instructions are executed in the pipeline.",
-              "Pipeline takes 1456 ns time to complete 100 instructions."
-            ],
-          answer: "B,C,D",
-          solution: "(b, c, d)"
-        }
-    ]
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "A CPU has 24 bits instructions and memory is byte addressable.<br>Consider the following below code: <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_1.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> If Branch == 0, <em>X</em> [PC] is supposed to skip the loop and go directly to MOV <em>R</em> <sub>2</sub> , SUM what should be value of <em>X</em> .",
+      answer: 9,
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q1_2.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Match <strong>List-I</strong> (Characteristics) with <strong>List-II</strong> (Processors) and select the correct answer using the codes given below the lists: <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q2_3.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      options: [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      answer: "C",
+      solution: "(c)"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the following format:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_4.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> What is the Hexa decimal equivalent in the memory after adding the following data.<br> 1.1011001000 * 2<sup>+8</sup> <br> 1.0010100011 * 2<sup>+4</sup>",
+      options: [
+        "(DF12)<sub>H</sub>",
+        "(5F12)<sub>H</sub>",
+        "(612F)<sub>H</sub>",
+        "(F125)<sub>H</sub>"
+      ],
+      answer: "B",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q3_5.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider a 32 bits hypothetical CPU which supports instruction with 2 register operands, memory operands and 2 immediate constant fields. System supports 100 instructions, 60 registers with a register wide of 32 bits, 4 MB RAM and 13 bits constant size. Program contain 240 Instructions.<br>Number of bytes required to stored the program is _________.",
+      options: [
+        "2010",
+        "2160",
+        "2400",
+        "1620"
+      ],
+      answer: "B",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q4_6.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a hypothetical CPU which supports 200 instructions with a CPI of 13. Hardware contain 300 control signals, 16 flags and uses 24 branch conditions. Micro instruction is designed with 6 control signals. Size of a CDR register in the control unit design is ________ (in bits)?",
+      answer: 75,
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q5_7.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider 1 GHz clock frequency processor, uses different operand access modes shown below:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_12.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Assume that 8 cycle consumed for memory reference, 4 cycles consumed for arithmetic computation and 0 cycles consumed when the operand is in register instruction itself. What is the average operand fetch rate (in million words/sec) of the processor?",
+      options: [
+        "117.45 M words/sec",
+        "113.63 M words/sec",
+        "217.45 M words/sec",
+        "316.45 M words/sec"
+      ],
+      answer: "B",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q8_13.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider the following sequence of instructions:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_14.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> The ALU operation instruction size are 32 bits, data transfer instructions are 64 bits and branch instruction size are 16 bits.<br>Assume the program is loaded into memory starting at address 4000 (decimal). If an interrupt occurs during the execution of the HALT instruction, what is the return address pushed onto the stack?",
+      options: [
+        "4019",
+        "4023",
+        "4024",
+        "4033"
+      ],
+      answer: "C",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q9_15.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Consider 5-stage pipeline with stage delays as 150, 120, 160, 180 and 140 ns respectively. Registers that are used between every two stages have a delay of 5 ns each. The total time taken to process 1000 data items on this pipeline will be ________ (in μsec up to 2 decimal places).",
+      answer: 185.74,
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q15_27.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "Consider 3 ns CLK cycle CPU which consumes 4 cycles for data transfer instruction, 8 cycles for ALU instruction. 6 cycles for branch instruction, relative frequencies of these instructions are 30%, 60% and 10% respectively. System is enhanced with a respective speedups of 2, 1.6 and 2. Performance gain of an enhanced system is ________?",
+      answer: 1.69,
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q6_8.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider 16 bits CPU used to execute the following code.<br> System supports 1 word opcode and 2 word address @ symbol uses indirect AM, [ ] symbol uses direct AM. Register R<sub>2</sub> is designated as index register. Following code is used to execute in the<br>CPU. Instruction follows the standard syntax. <br> <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_9.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Number of memory references required to access the data is ________ where <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_10.png\" style=\"max-width:100%; border-radius: 8px;\">instructions are executed 5 times in the code.",
+      answer: 45,
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q7_11.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "The following assembly code is to be executed in a 3-stage pipelined processor with hazard detection and resolution in each stage. The stage are IF, OF (one or more as required) and execution (including write-back operation). What are the number of possible RAW, WAW and WAR hazards in the execution of the code.<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_16.png\" style=\"max-width:100%; border-radius: 8px;\">",
+      options: [
+        "6, 1, 2",
+        "5, 3, 3",
+        "5, 3, 2",
+        "3, 1, 2"
+      ],
+      answer: "D",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q10_17.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following machine instruction:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_18.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Four stage pipeline, IF (fetch), ID (decode and operand fetch), IE (execute), WB (write back), are used. No data forwarding is present in the pipeline [Each operation takes one cycle in pipeline].<br>Which one of the following is true?",
+      options: [
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_19.png\" style=\"max-width:100%; border-radius: 8px;\"> have structural dependency and <img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_20.png\" style=\"max-width:100%; border-radius: 8px;\">have WAR dependency.",
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_21.png\" style=\"max-width:100%; border-radius: 8px;\">have RAW dependency, but it will not create any hazard in pipeline.",
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_22.png\" style=\"max-width:100%; border-radius: 8px;\">causes stalls in the pipeline to maintain data integrity.",
+        "There are 2 RAW dependencies and one WAW dependency in the pipeline."
+      ],
+      answer: ["C", "D"],
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q11_23.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the following code executed on a 32 bits hypothetical CPU, stored in the memory with a starting address of (4000)<sub>10</sub> . CPU cycle time is 2 ns. Each instruction on average takes 5 cycles to complete. Interrupt sub program takes 20 cycles to complete. <br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q12_24.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> In the program execution interrupt occurred, during the execution of ADD instruction and MUL instruction. What is the program execution time in (ns)?",
+      options: [
+        "70 ns",
+        "160 ns",
+        "150 ns",
+        "190 ns"
+      ],
+      answer: "B",
+      solution: "(b)"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following format:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_25.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Which of the following represents the value (&gt; 16)<sub>10</sub> .",
+      options: [
+        "0 100011 110100000",
+        "0 011110 001011111",
+        "0 100010 0000100111",
+        "0 100100 001010000"
+      ],
+      answer: ["A", "D"],
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q13_26.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider the following statements:<br> <em>S</em> <sub>1</sub> : Relative addressing mode is best suited for calculate the target address in a branch instruction.<br> <em>S</em> <sub>2</sub> : Immediate addressing mode is best suited for specifying the target address in a branch instruction.<br> <em>S</em> <sub>3</sub> : Base register addressing mode can be used in branch instructions where the target segment base address is stored in a register.<br>Which of the following is correct?",
+      options: [
+        "Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>",
+        "Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>",
+        "Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>",
+        "All <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>"
+      ],
+      answer: "B",
+      solution: "Relative addressing mode is best suited for specifying the target address in a branch instruction.<br> EX: Branch &gt;0 –16(PC)<br>Immediate addressing is used to provide constant data values embedded in the instruction."
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider 4 stage instruction pipeline executed on a system:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_28.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> If all instructions are executed only once, what is the throughput of system?",
+      options: [
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_29.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_30.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_31.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img align=\"absmiddle\" alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_32.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      ],
+      answer: "D",
+      solution: "<img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q16_33.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Consider the following pipeline design:<br> <img alt=\"\" src=\"/js/questions/easy_2026_COA-1/q17_34.png\" style=\"max-width:100%; border-radius: 8px;\"> <br> Which of the following statements are correct?",
+      options: [
+        "Pipeline cycle time is 12 ns.",
+        "Pipeline cycle time is 14 ns.",
+        "Pipeline takes 14 ns to complete the instruction when very large number of instructions are executed in the pipeline.",
+        "Pipeline takes 1456 ns time to complete 100 instructions."
+      ],
+      answer: ["B", "C", "D"],
+      solution: "(b, c, d)"
+    }
+  ]
 });
