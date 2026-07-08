@@ -1236,15 +1236,12 @@ registerTest({
 });
 
 
-registerTest("TWT - Theory Of Computation-2", "2026", {
-  title: "Topicwise Test-2 Part Syllabus GATE 2026 CS Theory of Computation-2",
-  subject: "Theory of Computation",
-  totalQuestions: 17,
-  timeMinutes: 45,
-  description: "Topicwise Test-2 Part Syllabus GATE 2026 CS Theory of Computation-2",
+registerTest({
+  series: "cs-gate-2026-pyq",
+  name: "TWT - Theory Of Computation-2",
+  date: "July 09, 2026",
   questions: [
     {
-      qId: "Q1",
       marks: 1,
       neg: 0,
       type: "MSQ",
@@ -1260,7 +1257,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p> (d)<br /> (a) Null String does not belong to language.<br /> (b) String 101 does not belong to language.<br />(c) String 110 does not belong to language. </p>"
     },
     {
-      qId: "Q2",
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -1276,7 +1272,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p> (d)<br /> <em>L</em> <sub>1</sub> : Finite language, regular.<br /> <em>L</em> <sub>2</sub> : Infinite language but regular.<br />Hence both accepted by DFA and both are disjoint language, so nothing is common in intersection. </p>"
     },
     {
-      qId: "Q3",
       marks: 1,
       neg: 0,
       type: "MSQ",
@@ -1292,7 +1287,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(c, d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q3_sol_6.png\" /> </div>"
     },
     {
-      qId: "Q4",
       marks: 1,
       neg: 0,
       type: "MSQ",
@@ -1308,7 +1302,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p> (c)<br /> (a) Not accepting Null string.<br /> (b) Producing extra string does not belong to language.<br /> (d) Producing extra strings.<br /> e.g.: <em>abba</em> does not belongs to language. </p>"
     },
     {
-      qId: "Q5",
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -1324,7 +1317,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q5_sol_1.png\" /> </div> <div>&nbsp;</div>"
     },
     {
-      qId: "Q6",
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -1340,7 +1332,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(c)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q6_sol_2.png\" /> </div>"
     },
     {
-      qId: "Q7",
       marks: 2,
       neg: 0.66,
       type: "MCQ",
@@ -1356,7 +1347,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p> (d)<br /> <em>L</em> <sub>1</sub> is empty string, as having (0 or 1) as an option for string.<br /> <em>L</em> <sub>2</sub> &nbsp;is regular language, having string start and end with same symbol that of <em>L</em> <sub>3</sub> .<br /> So <em>L</em> <sub>3</sub> &nbsp;and L2 both are same language. </p>"
     },
     {
-      qId: "Q8",
       marks: 2,
       neg: 0,
       type: "NAT",
@@ -1366,7 +1356,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>2</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q8_sol_2.png\" /> </div> <div>&nbsp;</div> <div>&nbsp;</div>"
     },
     {
-      qId: "Q9",
       marks: 2,
       neg: 0,
       type: "NAT",
@@ -1376,7 +1365,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>1</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q9_sol_2.png\" /> </div> <div>&nbsp;</div>"
     },
     {
-      qId: "Q10",
       marks: 1,
       neg: 0,
       type: "MSQ",
@@ -1392,7 +1380,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(a, c, d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q10_sol_1.png\" /> </div>"
     },
     {
-      qId: "Q11",
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -1408,7 +1395,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(c)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q11_sol_2.png\" /> </div>"
     },
     {
-      qId: "Q12",
       marks: 2,
       neg: 0,
       type: "NAT",
@@ -1418,7 +1404,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>2</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q12_sol_2.png\" /> </div>"
     },
     {
-      qId: "Q13",
       marks: 2,
       neg: 0.66,
       type: "MCQ",
@@ -1434,7 +1419,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(b)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q13_sol_2.png\" /> </div> <div>&nbsp;</div> <div>&nbsp;</div>"
     },
     {
-      qId: "Q14",
       marks: 2,
       neg: 0.66,
       type: "MCQ",
@@ -1450,7 +1434,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(b )</p> <div>&nbsp;</div> <div> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q14_sol_2.png\" /> </div> </div>"
     },
     {
-      qId: "Q15",
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -1466,7 +1449,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(b)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q15_sol_4.png\" /> </div>"
     },
     {
-      qId: "Q16",
       marks: 2,
       neg: 0.66,
       type: "MCQ",
@@ -1482,7 +1464,6 @@ registerTest("TWT - Theory Of Computation-2", "2026", {
       solution: "<p>(a)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q16_sol_2.png\" /> </div>"
     },
     {
-      qId: "Q17",
       marks: 2,
       neg: 0.66,
       type: "MCQ",
