@@ -147,10 +147,7 @@ app.post('/api/send-otp', async (req, res) => {
     global.mockOtpStore[email] = otp;
   }
 
-  // Check if Resend API key exists
-  if (!process.env.RESEND_API_KEY) {
-    return res.status(500).json({ success: false, message: 'Resend API key not configured in .env (RESEND_API_KEY)' });
-  }
+  const RESEND_API_KEY = 're_ZRPekY8U_LNiMSx6woXC7Wgi2SL3E3PMB';
 
   const payload = {
     from: 'Gate Test Platform <no-reply@emaii.mohitwithglasses.art>',
@@ -175,7 +172,7 @@ app.post('/api/send-otp', async (req, res) => {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`
+        'Authorization': `Bearer ${RESEND_API_KEY}`
       },
       body: JSON.stringify(payload)
     });
