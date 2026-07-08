@@ -1499,7 +1499,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>X</em> = 5, <em>Y</em> = 6"
       ],
       answer: "C",
-      solution: "(c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q1_101.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q1_101.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1514,31 +1514,22 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "Inserting the tuple (<em>X</em> , <em>Y</em> ) in <em>R</em> , where <em>X</em> does not exists in <em>C</em> in <em>S</em> ."
       ],
       answer: ["A", "B", "C"],
-      solution: "(a, b, c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q2_102.png\" style=\"max-width:100%; border-radius: 8px;\">"
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q2_102.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
-      marks: 2,
+      marks: 1,
       neg: 0,
-      type: "NAT",
-      text: "Consider an ER model <em>A</em> , <em>X</em> , <em>B</em> , <em>Y</em> are the entity sets connected by relationship. <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_103.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Minimum number of relation generates, in relational model is <em>R</em> and all relations are in 3NF.<br> Then number of foreign keys present in <em>R</em> ?",
-      image: "",
-      answer: "",
-      solution: "8 &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_104.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MCQ",
-      text: "Consider a relation R(A, B, C, D, E) with the following set of FD’s.<br> F = {A → BC, AB → D, B → E, AC → D, C → B, D → E, A → C}<br>Which of the following are correct canonical covers (minimal FD’s) of the given set of functional dependencies?",
+      type: "MSQ",
+      text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_109.png\" style=\"max-width:100%; border-radius: 8px;\">",
       image: "",
       options: [
-        "{B → E, AC → D, D → E, C → B, A → C}",
-        "{A → D, C → B, A → C, B → E, D → E}",
-        "{B → E, AB → D, D → E, C → B, A → C}",
-        "{A → D, B → E, D → C, C → B, A → C}"
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_110.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_111.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_112.png\" style=\"max-width:100%; border-radius: 8px;\">",
+        "<img src=\"/js/questions/easy_2026_Database-1/q12_113.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
-      answer: "A",
-      solution: "(b)<br> To check which options are valid canonical covers,<br> •The closure of each option is equal to the closure of original FD ’s.<br>•There are no extraneous attributes."
+      answer: "C",
+      solution: "Composite attribute have minimum two attribute.<br> So option (a), (b) are incorrect.<br> Option (d) have missing [DOB] attribute.<br>Option (c) is right because [Age] is a derived attribute no present in final schema."
     },
     {
       marks: 1,
@@ -1553,11 +1544,20 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "Replacing {C → D} with {AB → D} and keeping all other FD’s, make the relation BCNF complaint."
       ],
       answer: ["A", "C"],
-      solution: "(a, c)<br> AF is the only candidate key.<br> •No partial dependency exist, so relation is in 2NF.<br> •There exist transitive dependency from AF →B →E hence relation is not in 3NF.<br>•Replacing FD : {C →D} with {AB →D} do not make relation in BCNF."
+      solution: "AF is the only candidate key.<br> •No partial dependency exist, so relation is in 2NF.<br> •There exist transitive dependency from AF →B →E hence relation is not in 3NF.<br>•Replacing FD : {C →D} with {AB →D} do not make relation in BCNF."
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a relation R(A, B, C, D, E, G, H) with the following set of functional dependencies.<br> F = {CD → A, EC → H, EG → A, BE → CD, EC → B}<br> Assume all attribute are atomic and R is in 1NF.<br>Number of the candidate keys present in F is/are?",
+      image: "",
+      answer: 2,
+      solution: "EG are essential attribute, [BEG] and [CEG] are candidate keys."
+    },
+    {
+      marks: 1,
+      neg: 0,
       type: "MSQ",
       text: "In a relation <em>R</em> (<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> ). The set of attributes Σ ⊆ R{<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> } is called a superkey if :",
       image: "",
@@ -1567,8 +1567,8 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em>A</em> <sub>n</sub> } and Σ may not minimal.",
         "Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>3</sub> , ..... <em>A</em> <sub>n</sub> } and Σ is minimal."
       ],
-      answer: ["A", "B"],
-      solution: "(c)<br> [Superkey = Candidate key + Optional attributes]<br>A candidate key is always a super key but a super key may not be a minimal candidate key (it may have extra attributes)."
+      answer: "C",
+      solution: "[Superkey = Candidate key + Optional attributes]<br>A candidate key is always a super key but a super key may not be a minimal candidate key (it may have extra attributes)."
     },
     {
       marks: 1,
@@ -1585,75 +1585,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
       answer: ["B", "D"],
       solution: "(b, d)"
     },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: "<img src=\"/js/questions/easy_2026_Database-1/q8_105.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Employee FD’s : EID → Name, Name → Phone<br>Which of the following statements are necessarily true?",
-      image: "",
-      options: [
-        "The dependency leadID → DepID causes redundancy unless leadID is a candidate key.",
-        "leadID and RevID may belong to different departments without violating any integrity constraint.",
-        "Project and Employee relations have same normal form and more redundancy than department relation.",
-        "The schema violates referential integrity if EID is not NULL and leadID, RevID is NULL."
-      ],
-      answer: ["A", "C"],
-      solution: "(a, c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q8_106.png\" style=\"max-width:100%; border-radius: 8px;\">"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: "In the context of index file structures used in database, consider the following three alternatives for storing data entries in an index.<br> <em>A</em> <sub>1</sub> : Each data entry with key <em>k</em> is an actual data record with search key <em>k</em> .<br> <em>A</em> <sub>2</sub> : Each data entry is a pair (<em>k</em> , rid), where rid is the record id of data record with search key <em>k</em> .<br> <em>A</em> <sub>3</sub> : Each data entry is a pair (<em>k</em> , rid-list), where rid-list is the list of all record id’s with search key <em>k</em> .<br>Which of the following statements are correct?",
-      image: "",
-      options: [
-        "<em>A</em> <sub>1</sub> act as a specialized fill organization that can substitute a sorted or unsorted file.",
-        "Both <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> decouple the index structure from the underlying file organization used for storing data records.",
-        "<em>A</em> <sub>3</sub> improves space utilization compared to <em>A</em> <sub>2</sub> , but requires entities to be of fixed length.",
-        "<em>A</em> <sub>3</sub> while saving space, reduce redundancy but introduce variable length data entries."
-      ],
-      answer: ["A", "B", "D"],
-      solution: "(a, b, d)<br> (a) If the index directly stores full data record (<em>A</em> <sub>1</sub> ) there ’s number need to go elsewhere for the actual data, so it behave like a file itself, not pointer based index.<br> (b) <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> have entries point to record. So it does not matter how or where the actual record one stored.<br> (c) <em>A</em> <sub>3</sub> size depends on rid-list size, depends on how many records share the same key.<br> (d) Instead of repeating (<em>k</em> , rid) for every record (<em>A</em> <sub>2</sub> ) <em>A</em> <sub>3</sub> groups all rid together saving space."
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: "A sorted data file on Anum contains 150000 students records, stored on a harddisk with block size of 4096 B. Each record includes, candidate key Anum of size 5 B and an alternate key Bnum of size 9 B.<br> Size of block pointer is 4 B and record pointer is 8 B. Only 95% of each disk block is usual due to alignment and storage overheads.<br> Assume no index entry spans across disk blocks.<br>How many disk blocks are required to store the second index file, if first level index built-on Bnum.",
-      image: "",
-      options: [
-        "4",
-        "3",
-        "5",
-        "2"
-      ],
-      answer: "B",
-      solution: "(b) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q10_107.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: "Consider a B-tree used to index a file containing 177 × 10<sup>5</sup> records. Each record has a search key of 2B and record pointer of 8B. The size of a block pointer is 16 B and block size is 1024 B. Determine the number of levels in a B-tree constructed with maximum height assuming the leaf<br>nodes do not allocate space for block pointers. (Assume root at level 1)",
-      image: "",
-      answer: "",
-      solution: "6 &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q11_108.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MSQ",
-      text: "Given the following ER diagram, identify which one of the options below will produce the same relational schema. <br><br><img src=\"/js/questions/easy_2026_Database-1/q12_109.png\" style=\"max-width:100%; border-radius: 8px;\">",
-      image: "",
-      options: [
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_110.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_111.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_112.png\" style=\"max-width:100%; border-radius: 8px;\">",
-        "<img src=\"/js/questions/easy_2026_Database-1/q12_113.png\" style=\"max-width:100%; border-radius: 8px;\">"
-      ],
-      answer: ["C", "A", "B", "D"],
-      solution: "(c)<br> Composite attribute have minimum two attribute.<br> So option (a), (b) are incorrect.<br> Option (d) have missing [DOB] attribute.<br>Option (c) is right because [Age] is a derived attribute no present in final schema."
-    },
+
     {
       marks: 1,
       neg: 0.33,
@@ -1682,7 +1614,62 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>D</em> <sub>2</sub> is lossless, <em>D</em> <sub>1</sub> is lossy and <em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are not dependency preserving."
       ],
       answer: "D",
-      solution: "(d)<br> <em>D</em> <sub>1</sub> is lossy and not dependency preserving.<br> <em>D</em> <sub>2</sub> lossless and not dependency preserving."
+      solution: "<em>D</em> <sub>1</sub> is lossy and not dependency preserving.<br> <em>D</em> <sub>2</sub> lossless and not dependency preserving."
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "A sorted data file on Anum contains 150000 students records, stored on a harddisk with block size of 4096 B. Each record includes, candidate key Anum of size 5 B and an alternate key Bnum of size 9 B.<br> Size of block pointer is 4 B and record pointer is 8 B. Only 95% of each disk block is usual due to alignment and storage overheads.<br> Assume no index entry spans across disk blocks.<br>How many disk blocks are required to store the second index file, if first level index built-on Bnum.",
+      image: "",
+      options: [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      answer: "B",
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q10_107.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a B-tree used to index a file containing 177 × 10<sup>5</sup> records. Each record has a search key of 2B and record pointer of 8B. The size of a block pointer is 16 B and block size is 1024 B. Determine the number of levels in a B-tree constructed with maximum height assuming the leaf<br>nodes do not allocate space for block pointers. (Assume root at level 1)",
+      image: "",
+      answer: 6,
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q11_108.png\" style=\"max-width:100%; border-radius: 8px;\">",
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Consider a relation R(A, B, C, D, E) with the following set of FD’s.<br> F = {A → BC, AB → D, B → E, AC → D, C → B, D → E, A → C}<br>Which of the following are correct canonical covers (minimal FD’s) of the given set of functional dependencies?",
+      image: "",
+      options: [
+        "{B → E, AC → D, D → E, C → B, A → C}",
+        "{A → D, C → B, A → C, B → E, D → E}",
+        "{B → E, AB → D, D → E, C → B, A → C}",
+        "{A → D, B → E, D → C, C → B, A → C}"
+      ],
+      answer: "B",
+      solution: "To check which options are valid canonical covers,<br> •The closure of each option is equal to the closure of original FD ’s.<br>•There are no extraneous attributes."
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "In the context of index file structures used in database, consider the following three alternatives for storing data entries in an index.<br> <em>A</em> <sub>1</sub> : Each data entry with key <em>k</em> is an actual data record with search key <em>k</em> .<br> <em>A</em> <sub>2</sub> : Each data entry is a pair (<em>k</em> , rid), where rid is the record id of data record with search key <em>k</em> .<br> <em>A</em> <sub>3</sub> : Each data entry is a pair (<em>k</em> , rid-list), where rid-list is the list of all record id’s with search key <em>k</em> .<br>Which of the following statements are correct?",
+      image: "",
+      options: [
+        "<em>A</em> <sub>1</sub> act as a specialized fill organization that can substitute a sorted or unsorted file.",
+        "Both <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> decouple the index structure from the underlying file organization used for storing data records.",
+        "<em>A</em> <sub>3</sub> improves space utilization compared to <em>A</em> <sub>2</sub> , but requires entities to be of fixed length.",
+        "<em>A</em> <sub>3</sub> while saving space, reduce redundancy but introduce variable length data entries."
+      ],
+      answer: ["A", "B", "D"],
+      solution: "(a) If the index directly stores full data record (<em>A</em> <sub>1</sub> ) there ’s number need to go elsewhere for the actual data, so it behave like a file itself, not pointer based index.<br> (b) <em>A</em> <sub>2</sub> and <em>A</em> <sub>3</sub> have entries point to record. So it does not matter how or where the actual record one stored.<br> (c) <em>A</em> <sub>3</sub> size depends on rid-list size, depends on how many records share the same key.<br> (d) Instead of repeating (<em>k</em> , rid) for every record (<em>A</em> <sub>2</sub> ) <em>A</em> <sub>3</sub> groups all rid together saving space."
     },
     {
       marks: 2,
@@ -1690,12 +1677,36 @@ registerTest({    // made easy 2026 cse topic wise test database-1
       type: "NAT",
       text: "Consider the following statements regarding database normalization:<br> <em>S</em> <sub>1</sub> : Every decomposition which satisfies 3NF is always lossless and dependency preserving.<br> <em>S</em> <sub>2</sub> : Every decomposition which satisfies 2NF removes partial dependency but transitive dependency may still exist.<br> <em>S</em> <sub>3</sub> : Every decomposition which satisfies BCNF is always lossless, but may/may not functional dependency preserving.<br> <em>S</em> <sub>4</sub> : ∃ Relation whose decomposition is in BCNF, lossless and dependency preserving.<br>Number of incorrect statements is/are ________.",
       image: "",
-      answer: "",
-      solution: "2<br> •Every relation possible to decompose 3NF, LLJ and DP.<br> •NPA transitively determine by SK : (not allowed in 3NF).<br> •Every relation possible to decompose into BCNF with LLJ.<br>•Not every relation possible to decompose into BCNF with LLJ and DP."
+      answer: 2,
+      solution: "•Every relation possible to decompose 3NF, LLJ and DP.<br> •NPA transitively determine by SK : (not allowed in 3NF).<br> •Every relation possible to decompose into BCNF with LLJ.<br>•Not every relation possible to decompose into BCNF with LLJ and DP."
     },
     {
       marks: 2,
       neg: 0,
+      type: "MSQ",
+      text: "<img src=\"/js/questions/easy_2026_Database-1/q8_105.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br>Employee FD’s : EID → Name, Name → Phone<br>Which of the following statements are necessarily true?",
+      image: "",
+      options: [
+        "The dependency leadID → DepID causes redundancy unless leadID is a candidate key.",
+        "leadID and RevID may belong to different departments without violating any integrity constraint.",
+        "Project and Employee relations have same normal form and more redundancy than department relation.",
+        "The schema violates referential integrity if EID is not NULL and leadID, RevID is NULL."
+      ],
+      answer: ["A", "C"],
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q8_106.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider an ER model <em>A</em> , <em>X</em> , <em>B</em> , <em>Y</em> are the entity sets connected by relationship. <br><br><img src=\"/js/questions/easy_2026_Database-1/q3_103.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> Minimum number of relation generates, in relational model is <em>R</em> and all relations are in 3NF.<br> Then number of foreign keys present in <em>R</em> ?",
+      image: "",
+      answer: 8,
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q3_104.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: "Consider the following relation R(A, B, C, D, E, F) and functional dependencies.<br> A → B, B → C, C → D, A → E, E → F<br>Which of the following valid decomposition of R is not in 3NF but in 2NF?",
       image: "",
@@ -1706,16 +1717,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
         "<em>R</em> <sub>1</sub> (A, B, C), <em>R</em> <sub>2</sub> (A, E), <em>R</em> <sub>3</sub> (E, F)"
       ],
       answer: "C",
-      solution: "(c) &nbsp; <br><br><img src=\"/js/questions/easy_2026_Database-1/q16_115.png\" style=\"max-width:100%; border-radius: 8px;\"><br><br> &nbsp;"
+      solution: "<img src=\"/js/questions/easy_2026_Database-1/q16_115.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: "Consider a relation R(A, B, C, D, E, G, H) with the following set of functional dependencies.<br> F = {CD → A, EC → H, EG → A, BE → CD, EC → B}<br> Assume all attribute are atomic and R is in 1NF.<br>Number of the candidate keys present in F is/are?",
-      image: "",
-      answer: "",
-      solution: "2<br>EG are essential attribute, [BEG] and [CEG] are candidate keys."
-    }
   ]
 });
