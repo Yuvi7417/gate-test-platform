@@ -981,253 +981,253 @@ registerTest({
   name: "TWT - Computer Network-1",
   date: "July 08, 2026",
   questions: [
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Which of following is true in Networking Protocols?",
-    image: "",
-    options: [
-      "In Congestion Avoidance algorithm of TCP, the increase of sender window size is\n                                    based on RTT.",
-      "FTP supports only in band connection.",
-      "Root DNS server can contain IP address of complete URL given by client browser.",
-      "None of these"
-    ],
-    answer: "A",
-    solution: "<p>(a)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Which of following cases wrap around happens in networking?",
-    image: "",
-    options: [
-      "After 65536 identification numbers for the packets, wrap around happens.",
-      "After 2<sup>8</sup>\n                                        sequence numbers, wrap around happens for the bytes of segment in TCP.",
-      "After 65536 sequence numbers, wrap around happens for bytes of segment in TCP.",
-      "None of these"
-    ],
-    answer: "A",
-    solution: "<p>(a)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "<p>Source S is connected to destination D with the intermediate router</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which of following is true regarding TCP checksum that is calculated?</p>",
-    image: "",
-    options: [
-      "TCP checksum is calculated at sender side and at router TCP checksum again\n                                    calculated for verification and accepting segment.",
-      "TCP checksum is calculated at sender side and at destination TCP checksum again\n                                    calculated for verification and accepting segment.",
-      "TCP checksum is calculated at sender side after CRC calculation for data at sender\n                                    side.",
-      "None of these"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Which of the following parameters used to distinguish packet, frame, byte in a segment?",
-    image: "",
-    options: [
-      "Sequence number, IP address, port number",
-      "Identification number, sequence number, sequence number",
-      "Identification number, port address, sequence number",
-      "None of these"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0.33,
-    type: "MCQ",
-    text: "Which of following is true in case of ICMP protocol?",
-    image: "",
-    options: [
-      "ICMP error message will act as fault tolerant ack for TCP global ack if it is lost.",
-      "TCP global ack will act as fault tolerant ack for ICMP error message that is lost",
-      "When ICMP error message is lost, then at upper layer UDP will send ACK for datagrams\n                                    that are lost.",
-      "None of these"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "NAT",
-    text: "<p>Segments are transmitted from client TCP to server TCP. Calculate w values of\n                                acknowledgments transmitted by server TCP to client TCP?</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/2.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-    image: "",
-    options: [],
-    answer: 0,
-    solution: "<p>1000</p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "NAT",
-    text: "<p>\n                                Segments are transmitted from client TCP to server TCP. Calculate <em>d</em>\n                                values of acknowledgments transmitted by server TCP to client TCP?\n                            </p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/3.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-    image: "",
-    options: [],
-    answer: 0,
-    solution: "<p>2000</p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "MSQ",
-    text: "Which of following is correct with respect to persistence timer in TCP?",
-    image: "",
-    options: [
-      "Persistence timer is started and probe segment is transmitted, when receiver TCP\n                                    sends ACK segment with window size zero.",
-      "Persistence timer is started whenever receiver TCP sends ACK segment with window\n                                    size zero and if next ack from receiver is lost , then once again persistence timer\n                                    is started and probe segment is transmitted.",
-      "Persistence timer will not be started whenever receiver TCP sends ACK segment with\n                                    window size zero and if next ack from receiver is lost, then persistence timer is\n                                    started and probe segment is transmitted",
-      "Persistence timer is started to overcome deadlock."
-    ],
-    answer: [
-      "B",
-      "D"
-    ],
-    solution: "<p>(b, d)</p>"
-  },
-  {
-    marks: 1,
-    neg: 0,
-    type: "MSQ",
-    text: "Which of following is true with TCP header fields of transport layer?",
-    image: "",
-    options: [
-      "PSH segment can be used for sending interactive data and data need not be buffered\n                                    at sender TCP.",
-      "Window size in TCP header is used for synchronization between sender TCP and\n                                    receiver TCP.",
-      "Initial connection establishment from sender TCP and receiver TCP requires\n                                        random sequence number from range (0 to 2<sup>32</sup>\n                                        – 1).",
-      "Initial connection establishment from sender TCP and receiver TCP requires zero as\n                                    sequence number."
-    ],
-    answer: [
-      "A",
-      "B",
-      "C"
-    ],
-    solution: "<p>(a, b, c)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "<p>Client is trying to establish a http connection to the server with source port 62000 and\n                                destination port 83. The initial SYN segment sent by client is having sequence number\n                                899. Then which segment will be replied by server.</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-    image: "",
-    options: [
-      "ACK 900",
-      "RST segment",
-      "Data segment",
-      "None of these"
-    ],
-    answer: "B",
-    solution: "<p>(b)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Which of following is true in case of transport and network layer protocols?",
-    image: "",
-    options: [
-      "Maximum segment size as per RFC standard is 2<sup>16</sup>\n                                        .",
-      "Fragmentation is done when network layer is giving data to transport layer.",
-      "TCP is connectionless service and UDP is connection oriented service.",
-      "Maximum packet size allowed by IP protocol is 65535 bytes."
-    ],
-    answer: "D",
-    solution: "<p>(d)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Tracerroute reports a possible route that is taken by packets moving from some host A to\n                                some other host B. Which of following options represent the technique used by\n                                tracerroute to identify the hosts",
-    image: "",
-    options: [
-      "By progressively querying routers about the next router on the path to B using ICMP\n                                    packets starting with first router.",
-      "By requiring each router to append the address to the ICMP packet as it is forwarded\n                                    to B. The list of all routers enroute to B is returned by B is an ICMP reply packet.",
-      "By ensuring that an ICMP reply packet is returned by A by each router enroute to B\n                                    in the ascending order of their hop distance from A.",
-      "By locally computing shortest path from A to B."
-    ],
-    answer: "A",
-    solution: "<p>(a)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0.66,
-    type: "MCQ",
-    text: "Suppose that IP-over-Ethernet network, a machine <em>X</em>\n                                wishes to find the MAC address of another machine Y in its subnet. Which of following\n                                techniques can be used for this?",
-    image: "",
-    options: [
-      "<em>X</em>\n                                        sends ARP request packet to the local gateway’s IP address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
-      "<em>X</em>\n                                        sends ARP request packet to the local gateway’s MAC address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
-      "<em>X</em>\n                                        sends ARP request packet with broadcast MAC address in its local subnet.",
-      "<em>X</em>\n                                        sends ARP request packet with broadcast IP address in its local subnet."
-    ],
-    answer: "C",
-    solution: "<p>(c)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0,
-    type: "NAT",
-    text: "<p>Calculate number of collision domains:</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/5.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
-    image: "",
-    options: [],
-    answer: 0,
-    solution: "<p>4</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/6.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
-  },
-  {
-    marks: 2,
-    neg: 0,
-    type: "NAT",
-    text: "Consider a source computer (S) transmitting a file of size 10<sup>6</sup>\n                                bits to a destination computer (D) over a network of two routers (<em>R</em>\n                                <sub>1</sub>\n                                and <em>R</em>\n                                <sub>2</sub>\n                                ) and three links (<em>L</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                ). <em>L</em>\n                                <sub>1</sub>\n                                connects S to <em>R</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                connects <em>R</em>\n                                <sub>1</sub>\n                                to <em>R</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                connects <em>R</em>\n                                <sub>2</sub>\n                                to D. Let each link of length 100 km. Assume signals travel over each line at a speed of\n                                10<sup>8</sup>\n                                m/sec. Assume that the link bandwidth on each link is 1 Mbps. Let the file broken down\n                                in to 1000 packets each of size 1000 bits. Find the total sum of transmission<br>and\n                                propagation delays in transmitting the file from S to D? ( milliseconds )",
-    image: "",
-    options: [],
-    answer: 0,
-    solution: "<p>1005</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/7.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
-  },
-  {
-    marks: 2,
-    neg: 0,
-    type: "MSQ",
-    text: "Which of following is true in case of time wait timer of TCP?",
-    image: "",
-    options: [
-      "To overcome deadlock between client and server process.",
-      "To stop new connection during this time.",
-      "To stop malicious requests during this time.",
-      "None of these"
-    ],
-    answer: [
-      "B",
-      "C"
-    ],
-    solution: "<p>(b, c)</p>"
-  },
-  {
-    marks: 2,
-    neg: 0,
-    type: "MSQ",
-    text: "TCP connection is established from client to server. Both sides connection is established\n                                and transmitting the data, suddenly server is crashed and rebooted. Which of following\n                                situation can be expected from server?",
-    image: "",
-    options: [
-      "After rebooting, server will send FIN segment to the client.",
-      "After rebooting, server will send RST segment to the client.",
-      "Before rebooting of server, if client all keep alive timers expire, then client\n                                    cannot transmit data in same connection.",
-      "None of these"
-    ],
-    answer: [
-      "B",
-      "C"
-    ],
-    solution: "<p>(b, c)</p>"
-  }
-]
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of following is true in Networking Protocols?",
+      image: "",
+      options: [
+        "In Congestion Avoidance algorithm of TCP, the increase of sender window size is\n                                    based on RTT.",
+        "FTP supports only in band connection.",
+        "Root DNS server can contain IP address of complete URL given by client browser.",
+        "None of these"
+      ],
+      answer: "A",
+      solution: "<p>(a)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of following cases wrap around happens in networking?",
+      image: "",
+      options: [
+        "After 65536 identification numbers for the packets, wrap around happens.",
+        "After 2<sup>8</sup>\n                                        sequence numbers, wrap around happens for the bytes of segment in TCP.",
+        "After 65536 sequence numbers, wrap around happens for bytes of segment in TCP.",
+        "None of these"
+      ],
+      answer: "A",
+      solution: "<p>(a)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Source S is connected to destination D with the intermediate router</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/1.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>\n                            <p>Which of following is true regarding TCP checksum that is calculated?</p>",
+      image: "",
+      options: [
+        "TCP checksum is calculated at sender side and at router TCP checksum again\n                                    calculated for verification and accepting segment.",
+        "TCP checksum is calculated at sender side and at destination TCP checksum again\n                                    calculated for verification and accepting segment.",
+        "TCP checksum is calculated at sender side after CRC calculation for data at sender\n                                    side.",
+        "None of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of the following parameters used to distinguish packet, frame, byte in a segment?",
+      image: "",
+      options: [
+        "Sequence number, IP address, port number",
+        "Identification number, sequence number, sequence number",
+        "Identification number, port address, sequence number",
+        "None of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of following is true in case of ICMP protocol?",
+      image: "",
+      options: [
+        "ICMP error message will act as fault tolerant ack for TCP global ack if it is lost.",
+        "TCP global ack will act as fault tolerant ack for ICMP error message that is lost",
+        "When ICMP error message is lost, then at upper layer UDP will send ACK for datagrams\n                                    that are lost.",
+        "None of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "<p>Segments are transmitted from client TCP to server TCP. Calculate w values of\n                                acknowledgments transmitted by server TCP to client TCP?</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/2.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+      image: "",
+      options: [],
+      answer: 0,
+      solution: "<p>1000</p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: "<p>\n                                Segments are transmitted from client TCP to server TCP. Calculate <em>d</em>\n                                values of acknowledgments transmitted by server TCP to client TCP?\n                            </p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/3.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+      image: "",
+      options: [],
+      answer: 0,
+      solution: "<p>2000</p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of following is correct with respect to persistence timer in TCP?",
+      image: "",
+      options: [
+        "Persistence timer is started and probe segment is transmitted, when receiver TCP\n                                    sends ACK segment with window size zero.",
+        "Persistence timer is started whenever receiver TCP sends ACK segment with window\n                                    size zero and if next ack from receiver is lost , then once again persistence timer\n                                    is started and probe segment is transmitted.",
+        "Persistence timer will not be started whenever receiver TCP sends ACK segment with\n                                    window size zero and if next ack from receiver is lost, then persistence timer is\n                                    started and probe segment is transmitted",
+        "Persistence timer is started to overcome deadlock."
+      ],
+      answer: [
+        "B",
+        "D"
+      ],
+      solution: "<p>(b, d)</p>"
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of following is true with TCP header fields of transport layer?",
+      image: "",
+      options: [
+        "PSH segment can be used for sending interactive data and data need not be buffered\n                                    at sender TCP.",
+        "Window size in TCP header is used for synchronization between sender TCP and\n                                    receiver TCP.",
+        "Initial connection establishment from sender TCP and receiver TCP requires\n                                        random sequence number from range (0 to 2<sup>32</sup>\n                                        – 1).",
+        "Initial connection establishment from sender TCP and receiver TCP requires zero as\n                                    sequence number."
+      ],
+      answer: [
+        "A",
+        "B",
+        "C"
+      ],
+      solution: "<p>(a, b, c)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Client is trying to establish a http connection to the server with source port 62000 and\n                                destination port 83. The initial SYN segment sent by client is having sequence number\n                                899. Then which segment will be replied by server.</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+      image: "",
+      options: [
+        "ACK 900",
+        "RST segment",
+        "Data segment",
+        "None of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Which of following is true in case of transport and network layer protocols?",
+      image: "",
+      options: [
+        "Maximum segment size as per RFC standard is 2<sup>16</sup>\n                                        .",
+        "Fragmentation is done when network layer is giving data to transport layer.",
+        "TCP is connectionless service and UDP is connection oriented service.",
+        "Maximum packet size allowed by IP protocol is 65535 bytes."
+      ],
+      answer: "D",
+      solution: "<p>(d)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Tracerroute reports a possible route that is taken by packets moving from some host A to\n                                some other host B. Which of following options represent the technique used by\n                                tracerroute to identify the hosts",
+      image: "",
+      options: [
+        "By progressively querying routers about the next router on the path to B using ICMP\n                                    packets starting with first router.",
+        "By requiring each router to append the address to the ICMP packet as it is forwarded\n                                    to B. The list of all routers enroute to B is returned by B is an ICMP reply packet.",
+        "By ensuring that an ICMP reply packet is returned by A by each router enroute to B\n                                    in the ascending order of their hop distance from A.",
+        "By locally computing shortest path from A to B."
+      ],
+      answer: "A",
+      solution: "<p>(a)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "Suppose that IP-over-Ethernet network, a machine <em>X</em>\n                                wishes to find the MAC address of another machine Y in its subnet. Which of following\n                                techniques can be used for this?",
+      image: "",
+      options: [
+        "<em>X</em>\n                                        sends ARP request packet to the local gateway’s IP address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
+        "<em>X</em>\n                                        sends ARP request packet to the local gateway’s MAC address which then finds the\n                                        MAC address of <em>Y</em>\n                                        and sends to <em>X</em>\n                                        .",
+        "<em>X</em>\n                                        sends ARP request packet with broadcast MAC address in its local subnet.",
+        "<em>X</em>\n                                        sends ARP request packet with broadcast IP address in its local subnet."
+      ],
+      answer: "C",
+      solution: "<p>(c)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "<p>Calculate number of collision domains:</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/5.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>",
+      image: "",
+      options: [],
+      answer: 0,
+      solution: "<p>4</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/6.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a source computer (S) transmitting a file of size 10<sup>6</sup>\n                                bits to a destination computer (D) over a network of two routers (<em>R</em>\n                                <sub>1</sub>\n                                and <em>R</em>\n                                <sub>2</sub>\n                                ) and three links (<em>L</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                ). <em>L</em>\n                                <sub>1</sub>\n                                connects S to <em>R</em>\n                                <sub>1</sub>\n                                , <em>L</em>\n                                <sub>2</sub>\n                                connects <em>R</em>\n                                <sub>1</sub>\n                                to <em>R</em>\n                                <sub>2</sub>\n                                and <em>L</em>\n                                <sub>3</sub>\n                                connects <em>R</em>\n                                <sub>2</sub>\n                                to D. Let each link of length 100 km. Assume signals travel over each line at a speed of\n                                10<sup>8</sup>\n                                m/sec. Assume that the link bandwidth on each link is 1 Mbps. Let the file broken down\n                                in to 1000 packets each of size 1000 bits. Find the total sum of transmission<br>and\n                                propagation delays in transmitting the file from S to D? ( milliseconds )",
+      image: "",
+      options: [],
+      answer: 0,
+      solution: "<p>1005</p>\n                            <p>\n                                <img alt=\"\" src=\"js/questions/easy computernetwork-1/7.png\" style=\"max-width:100%; border-radius: 8px;\">\n                            </p>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of following is true in case of time wait timer of TCP?",
+      image: "",
+      options: [
+        "To overcome deadlock between client and server process.",
+        "To stop new connection during this time.",
+        "To stop malicious requests during this time.",
+        "None of these"
+      ],
+      answer: [
+        "B",
+        "C"
+      ],
+      solution: "<p>(b, c)</p>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "TCP connection is established from client to server. Both sides connection is established\n                                and transmitting the data, suddenly server is crashed and rebooted. Which of following\n                                situation can be expected from server?",
+      image: "",
+      options: [
+        "After rebooting, server will send FIN segment to the client.",
+        "After rebooting, server will send RST segment to the client.",
+        "Before rebooting of server, if client all keep alive timers expire, then client\n                                    cannot transmit data in same connection.",
+        "None of these"
+      ],
+      answer: [
+        "B",
+        "C"
+      ],
+      solution: "<p>(b, c)</p>"
+    }
+  ]
 });
