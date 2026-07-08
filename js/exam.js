@@ -871,7 +871,7 @@ function openQuestionPaper() {
           <div class="qp-text">${q.text}</div>
           ${q.image ? `<div class="player-qimg-wrap"><img src="${q.image}" alt="Question diagram"></div>` : ""}
           <div class="qp-opts">
-            ${q.options.map((opt, oi) => `<div class="qp-opt"><b>${String.fromCharCode(65 + oi)}.</b>${opt}</div>`).join("")}
+            ${q.options ? q.options.map((opt, oi) => `<div class="qp-opt"><b>${String.fromCharCode(65 + oi)}.</b>${opt}</div>`).join("") : ""}
           </div>
         </div>`,
     )
