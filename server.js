@@ -147,48 +147,53 @@ app.post('/api/send-otp', async (req, res) => {
     global.mockOtpStore[email] = otp;
   }
 
-  // Check if EmailJS keys exist
-  if (!process.env.EMAILJS_SERVICE_ID) {
-    return res.status(500).json({ success: false, message: 'EmailJS not configured in .env' });
+  // Check if Resend API key exists
+  if (!process.env.RESEND_API_KEY) {
+    return res.status(500).json({ success: false, message: 'Resend API key not configured in .env (RESEND_API_KEY)' });
   }
 
   const payload = {
-    service_id: process.env.EMAILJS_SERVICE_ID,
-    template_id: process.env.EMAILJS_TEMPLATE_ID,
-    user_id: process.env.EMAILJS_PUBLIC_KEY,
-    accessToken: process.env.EMAILJS_PRIVATE_KEY,
-    template_params: {
-      name: name || "Student",
-      email: email,
-      otp: otp
-    }
+    from: 'Gate Test Platform <no-reply@emaii.mohitwithglasses.art>',
+    to: [email],
+    subject: 'Your GATE Test Platform OTP',
+    html: `
+      <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px;">
+        <h2 style="color: #14619C;">Hello ${name || 'Student'},</h2>
+        <p>Your One-Time Password (OTP) for login is:</p>
+        <div style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; letter-spacing: 5px; border-radius: 4px; margin: 20px 0;">
+          ${otp}
+        </div>
+        <p>This OTP is valid for 5 minutes. Please do not share it with anyone.</p>
+        <hr style="border: none; border-top: 1px solid #eee; margin-top: 30px;" />
+        <p style="font-size: 12px; color: #888;">If you didn't request this, you can safely ignore this email.</p>
+      </div>
+    `
   };
 
   try {
-    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.RESEND_API_KEY}`
+      },
       body: JSON.stringify(payload)
     });
     
     if (response.ok) {
-      console.log(`[Server] OTP ${otp} sent to ${email} via EmailJS`);
+      console.log(`[Server] OTP ${otp} sent to ${email} via Resend`);
       res.json({ success: true, message: 'OTP sent successfully' });
     } else {
       const errorText = await response.text();
-      console.error('[Server] EmailJS failed:', errorText);
+      console.error('[Server] Resend API failed:', errorText);
       res.status(500).json({ 
         success: false, 
-        message: 'EmailJS API Error', 
-        details: errorText, 
-        template_used: process.env.EMAILJS_TEMPLATE_ID,
-        public_key: process.env.EMAILJS_PUBLIC_KEY,
-        private_key_start: process.env.EMAILJS_PRIVATE_KEY ? process.env.EMAILJS_PRIVATE_KEY.substring(0,4) : 'none',
-        payloadSent: payload
+        message: 'Resend API Error', 
+        details: errorText
       });
     }
   } catch (error) {
-    console.error('[Server] EmailJS sending failed:', error);
+    console.error('[Server] Resend email sending failed:', error);
     res.status(500).json({ success: false, message: 'Failed to send email' });
   }
 });
