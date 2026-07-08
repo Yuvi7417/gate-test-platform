@@ -744,7 +744,7 @@ registerTest({   // made easy ece topic wise test digital circuit-1
       neg: 0.66,
       type: "MCQ",
       text: "Consider the logic circuit shown below: The circuit acts as",
-      image: "js/questions/easy digitalcircuit-1/2.png<br>js/questions/easy digitalcircuit-1/3.png",
+      image: '"js/questions/easy digitalcircuit-1/2.png"<br>"js/questions/easy digitalcircuit-1/3.png"',
       options: [
         "buffer for A = B",
         "inverter for A ≠ B",
