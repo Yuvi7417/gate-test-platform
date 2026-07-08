@@ -995,7 +995,7 @@ registerTest({
         "All finite sets are recursive."
       ],
       answer: "B",
-      solution: "<p> (b)<br> The complement of every recursively enumerable sets is recursively enumerable.<br>Because RE language are not closed under complement. </p>"
+      solution: "The complement of every recursively enumerable sets is recursively enumerable.<br>Because RE language are not closed under complement."
     },
     {
       marks: 1,
@@ -1010,7 +1010,7 @@ registerTest({
         "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/4.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
       answer: "D",
-      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/5.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1024,19 +1024,14 @@ registerTest({
         "Find whether the intersection of two CFLs is empty.",
         "Find whether the complement of CFL is a CFL."
       ],
-      answer: [
-        "B",
-        "A",
-        "C",
-        "D"
-      ],
-      solution: "(a) We don ’t have any standard algorithm to change CFG into CFL from a given CFG deciding a language is finite is decidable but regular its undecidable.<br> (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br> (c) Intersection of two CFL is undecidable because it is not closed under intersection.<br>(d) CFL is not closed under Complement so its undecidable. </p>"
+      answer: ["B"],
+      solution: "(a) We don’t have any standard algorithm to change CFG into CFL from a given CFG deciding a language is finite is decidable but regular its undecidable.<br> (b) From a given CFG we can determine the CFL and CFL emptiness is decidable.<br> (c) Intersection of two CFL is undecidable because it is not closed under intersection.<br>(d) CFL is not closed under Complement so its undecidable."
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0,
       type: "MSQ",
-      text: "<p>Let M be the 5 stage NFA with ∈-transitions shown in the diagram below:</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p>Which one of the following regular expressions represents the language accepted by M?</p>",
+      text: "Let M be the 5 stage NFA with ∈-transitions shown in the diagram below: <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/6.png\" style=\"max-width:100%; border-radius: 8px;\"> Which one of the following regular expressions represents the language accepted by M?",
       image: "",
       options: [
         "(00)* + 1(11)*",
@@ -1044,13 +1039,8 @@ registerTest({
         "(00)* + (1 + (00)*) (11)*",
         "0+ + 1(11)* + 0(11)*"
       ],
-      answer: [
-        "B",
-        "A",
-        "C",
-        "D"
-      ],
-      solution: "<p> (b)<br> •Counter-example for option (a) : 011 is not generated.<br> •Counter-example for option (c) : 000 is not generated.<br>•Counter-example for option (d) : empty string is not generated. </p>"
+      answer: ["A"],
+      solution: "•Counter-example for option (a) : 011 is not generated.<br> •Counter-example for option (c) : 000 is not generated.<br>•Counter-example for option (d) : empty string is not generated."
     },
     {
       marks: 1,
@@ -1064,13 +1054,8 @@ registerTest({
         "0* 1 (010* 1)* 0*",
         "0(1 + 0* 10* 1)* 0*"
       ],
-      answer: [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      solution: "<p> (a)<br> The given DFA accepts all and only binary strings containing odd number of 1 ’s.<br> So, option (a) is correct regular expression.<br> Option (b) Counter-Example: Generates empty string.<br> Option (c) Counter-Example: Doesn ’t generate 10011.<br>Option (d) Counter-Example: Doesn ’t generate 1. </p>"
+      answer: ["A"],
+      solution: "The given DFA accepts all and only binary strings containing odd number of 1 ’s.<br> So, option (a) is correct regular expression.<br> Option (b) Counter-Example: Generates empty string.<br> Option (c) Counter-Example: Doesn ’t generate 10011.<br>Option (d) Counter-Example: Doesn ’t generate 1. <br>"
     },
     {
       marks: 1,
@@ -1079,8 +1064,8 @@ registerTest({
       text: "Let <em>L</em> <sub>1</sub> be the language represented by the regular expression (<em>a</em> + <em>b</em> )* <em>aba</em> (<em>a</em> + <em>b</em> )* and<br> <img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/8.png\" style=\"max-width:100%; border-radius: 8px;\">denotes the length of string w. Determine the number of strings in L2 that are also in L1 is ________.",
       image: "",
       options: [],
-      answer: 0,
-      solution: "<p>16</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      answer: 16,
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/9.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1094,8 +1079,8 @@ registerTest({
         "<em>L</em> is context-free, but not regular.",
         "<em>L</em> is regular."
       ],
-      answer: "C",
-      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      answer: "D",
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/11.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1109,11 +1094,8 @@ registerTest({
         "If <em>L</em> is the union of two undecidable languages, then <em>L</em> is undecidable.",
         "If <em>L</em> is the union of two decidable languages, then <em>L</em> is decidable."
       ],
-      answer: [
-        "B",
-        "D"
-      ],
-      solution: "<p>(b, d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      answer: ["B", "D"],
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/12.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 1,
@@ -1128,7 +1110,7 @@ registerTest({
         "<img  align=\"absmiddle\" alt=\"\" src=\"js/questions/easy_2026_TOC-1/17.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
       answer: "C",
-      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/18.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1143,7 +1125,7 @@ registerTest({
         "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/22.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
       answer: "C",
-      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/23.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1158,7 +1140,7 @@ registerTest({
         "aaccddbb"
       ],
       answer: "D",
-      solution: "<p>(d)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/25.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1173,7 +1155,7 @@ registerTest({
         "None of these"
       ],
       answer: "A",
-      solution: "<p> (a)<br> Same symbols will be pushed into the stack and opposite symbols will be deleted from the stack.<br>Hence option (a) is correct. </p>"
+      solution: "Same symbols will be pushed into the stack and opposite symbols will be deleted from the stack.<br>Hence option (a) is correct."
     },
     {
       marks: 2,
@@ -1188,7 +1170,7 @@ registerTest({
         "None of these"
       ],
       answer: "C",
-      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/30.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1203,7 +1185,7 @@ registerTest({
         "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/35.png\" style=\"max-width:100%; border-radius: 8px;\">"
       ],
       answer: "A",
-      solution: "<p>(a)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/36.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1218,7 +1200,7 @@ registerTest({
         "24"
       ],
       answer: "C",
-      solution: "<p>(c)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/37.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1233,7 +1215,7 @@ registerTest({
         "None of these"
       ],
       answer: "B",
-      solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\"> </p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/38.png\" style=\"max-width:100%; border-radius: 8px;\"> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/39.png\" style=\"max-width:100%; border-radius: 8px;\">"
     },
     {
       marks: 2,
@@ -1248,8 +1230,272 @@ registerTest({
         "01001"
       ],
       answer: "B",
-      solution: "<p>(b)</p> <p> <img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\"> </p>"
+      solution: "<img  alt=\"\" src=\"js/questions/easy_2026_TOC-1/45.png\" style=\"max-width:100%; border-radius: 8px;\">"
     }
   ]
 });
 
+
+registerTest("TWT - Theory Of Computation-2", "2026", {
+  title: "Topicwise Test-2 Part Syllabus GATE 2026 CS Theory of Computation-2",
+  subject: "Theory of Computation",
+  totalQuestions: 17,
+  timeMinutes: 45,
+  description: "Topicwise Test-2 Part Syllabus GATE 2026 CS Theory of Computation-2",
+  questions: [
+    {
+      qId: "Q1",
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "<p> Consider the following state transition table of epsilon NFA. N, where {<em>q</em> <sub>0</sub> } is start and {<em>q</em> <sub>2</sub> } is final state respectively. </p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q1_1.png\" /> </div> <div>Which of the following is the language of NFA?</div>",
+      image: "",
+      options: [
+        "(11*)* [1* 011]*",
+        "[11* 0]* (11*)",
+        "0*(11*) [11* 0*]*",
+        "0*(11* + 1) [11*]*"
+      ],
+      answer: "D,A,B,C",
+      solution: "<p> (d)<br /> (a) Null String does not belong to language.<br /> (b) String 101 does not belong to language.<br />(c) String 110 does not belong to language. </p>"
+    },
+    {
+      qId: "Q2",
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Consider the following language:</p> <div> <img src=\"/js/questions/easy_2026_TOC-2/q2_1.png\" /> </div> <div></div> <div>Which of the following is true?</div>",
+      image: "",
+      options: [
+        "<em>L</em> <sub>1</sub> ∩ <em>L</em> <sub>2</sub> is non-empty language.",
+        "<em>L</em> <sub>1</sub> * – <em>L</em> <sub>1</sub> gives the complement of the language.",
+        "<em>L</em> <sub>2</sub> is regular but <em>L</em> <sub>1</sub> is non-regular.",
+        "Both are accepted by DFA."
+      ],
+      answer: "D",
+      solution: "<p> (d)<br /> <em>L</em> <sub>1</sub> : Finite language, regular.<br /> <em>L</em> <sub>2</sub> : Infinite language but regular.<br />Hence both accepted by DFA and both are disjoint language, so nothing is common in intersection. </p>"
+    },
+    {
+      qId: "Q3",
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "<p>Given the context free grammar below:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q3_1.png\" /> </div> <div>Which of the following regular expression represents the language generated by this grammar?</div>",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_TOC-2/q3_optA_2.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q3_optB_3.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q3_optC_4.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q3_optD_5.png\" />"
+      ],
+      answer: "C,D",
+      solution: "<p>(c, d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q3_sol_6.png\" /> </div>"
+    },
+    {
+      qId: "Q4",
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "<p> Which of the following, represents language accepted by finite automata.<br /> “All string over {<em>a</em> , <em>b</em> } where every ‘<em>a</em> ’ is immediately followed by atleast one <em>b</em> ”. </p>",
+      image: "",
+      options: [
+        "(<em>ab</em> + <em>b</em> *)* <em>ab</em>",
+        "(<em>a</em> + <em>b</em> )* (<em>ab</em> )* (<em>a</em> * + <em>b</em> *)",
+        "(<em>b</em> + <em>ab</em> )*",
+        "<em>b</em> * <em>a</em> * <em>b</em> <sup>+</sup> (<em>a</em> + <em>b</em> *)*"
+      ],
+      answer: "C,A,B,D",
+      solution: "<p> (c)<br /> (a) Not accepting Null string.<br /> (b) Producing extra string does not belong to language.<br /> (d) Producing extra strings.<br /> e.g.: <em>abba</em> does not belongs to language. </p>"
+    },
+    {
+      qId: "Q5",
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Which of the following is TRUE about the regular expression 1(01)* 0 over the alphabet {0, 1}?</p>",
+      image: "",
+      options: [
+        "Minimum states in DFA is 5.",
+        "Accept all strings having even length.",
+        "It can generate all strings containing an equal number of 0’s and 1’s.",
+        "Generate strings that always start with 1 and end with 0."
+      ],
+      answer: "D",
+      solution: "<p>(d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q5_sol_1.png\" /> </div> <div>&nbsp;</div>"
+    },
+    {
+      qId: "Q6",
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Consider the following grammar:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q6_1.png\" /> </div> <div>Which is the highest Chomsky hierarchy type that grammar have?</div>",
+      image: "",
+      options: [
+        "Type 2",
+        "Type 3",
+        "Type 0",
+        "Type 1"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q6_sol_2.png\" /> </div>"
+    },
+    {
+      qId: "Q7",
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Consider the following languages:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q7_1.png\" /> </div>",
+      image: "",
+      options: [
+        "<em>L</em> <sub>1</sub> is non-regular, having equal 0’s and 1’s.",
+        "<em>L</em> <sub>3</sub> is regular and <em>L</em> <sub>2</sub> is non-regular but DCFL.",
+        "<em>L</em> <sub>2</sub> is CFL and <em>L</em> <sub>3</sub> is regular, <em>L</em> <sub>2</sub> ⊆ <em>L</em> <sub>3</sub> .",
+        "<em>L</em> <sub>2</sub> and <em>L</em> <sub>3</sub> have same number of the states in the minimal DFA."
+      ],
+      answer: "D",
+      solution: "<p> (d)<br /> <em>L</em> <sub>1</sub> is empty string, as having (0 or 1) as an option for string.<br /> <em>L</em> <sub>2</sub> &nbsp;is regular language, having string start and end with same symbol that of <em>L</em> <sub>3</sub> .<br /> So <em>L</em> <sub>3</sub> &nbsp;and L2 both are same language. </p>"
+    },
+    {
+      qId: "Q8",
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "<p>Consider the following DFA:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q8_1.png\" /> </div> <div>Number of states in minimal DFA is ________?</div>",
+      image: "",
+      answer: "2",
+      solution: "<p>2</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q8_sol_2.png\" /> </div> <div>&nbsp;</div> <div>&nbsp;</div>"
+    },
+    {
+      qId: "Q9",
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "<p>Consider the following statements for language:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q9_1.png\" /> </div> <div>How many statements are true?</div>",
+      image: "",
+      answer: "1",
+      solution: "<p>1</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q9_sol_2.png\" /> </div> <div>&nbsp;</div>"
+    },
+    {
+      qId: "Q10",
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: "<p>Which of the following statements are false?</p>",
+      image: "",
+      options: [
+        "Every subset of a regular is regular.",
+        "Complement of DFA, gives it’s complement language accepted by it.",
+        "Complement of NFA, gives it’s complement language accepted by it.",
+        "Expressive power of DPDA is more than finite automata, but equal to PDA."
+      ],
+      answer: "A,C,D",
+      solution: "<p>(a, c, d)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q10_sol_1.png\" /> </div>"
+    },
+    {
+      qId: "Q11",
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Consider the following languages:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q11_1.png\" /> </div> <div>Which of the following is true?</div>",
+      image: "",
+      options: [
+        "<em>L</em> <sub>1</sub> is CFL",
+        "<em>L</em> <sub>2</sub> is CFL",
+        "Both <em>L</em> <sub>1</sub> and <em>L</em> <sub>2</sub> is CFL",
+        "Neither <em>L</em> <sub>1</sub> and <em>L</em> <sub>2</sub> is CFL"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q11_sol_2.png\" /> </div>"
+    },
+    {
+      qId: "Q12",
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "<p>Consider the following languages:</p> <div></div> <div> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q12_1.png\" /> </div> </div> <div>How many number of language are regular?</div>",
+      image: "",
+      answer: "2",
+      solution: "<p>2</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q12_sol_2.png\" /> </div>"
+    },
+    {
+      qId: "Q13",
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Which of the given regular expression corresponding to the automata given below:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q13_1.png\" /> </div> <div></div>",
+      image: "",
+      options: [
+        "[1 + 01 + 00 [11* 0*] 0]* 00(11* 0)* 11*",
+        "[1 + 0 [0 (11* 0)* 0 + 1]]* 00(11* 0)* 11*",
+        "[1 + 0 (00 + 1)]* 001 (1 + 01)*",
+        "All of these"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q13_sol_2.png\" /> </div> <div>&nbsp;</div> <div>&nbsp;</div>"
+    },
+    {
+      qId: "Q14",
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Consider the following NFA:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q14_1.png\" /> </div> <div> State ‘<em>q</em> <sub>0</sub> ’ is the start state.<br /> Let <em>L</em> <sub>1</sub> , <em>L</em> <sub>2</sub> , <em>L</em> <sub>3</sub> are the language accepted by NFA when ‘<em>q</em> <sub>1</sub> ’, ‘<em>q</em> <sub>2</sub> ’ and ‘<em>q</em> <sub>3</sub> ’ is the final state one at a time.<br /> Which of the following statements true about <em>L</em> <sub>1</sub> , <em>L</em> <sub>2</sub> , <em>L</em> <sub>3</sub> ? </div> <div></div>",
+      image: "",
+      options: [
+        "<em>L</em> <sub>1</sub> ⊂ <em>L</em> <sub>3</sub>",
+        "<em>L</em> <sub>3</sub> = <em>L</em> <sub>2</sub>",
+        "<em>L</em> <sub>2</sub> ⊆ <em>L</em> <sub>3</sub>",
+        "<em>L</em> <sub>1</sub> = <em>L</em> <sub>3</sub> and <em>L</em> <sub>2</sub> , <em>L</em> <sub>3</sub> ⊆ <em>L</em> <sub>1</sub>"
+      ],
+      answer: "B",
+      solution: "<p>(b )</p> <div>&nbsp;</div> <div> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q14_sol_2.png\" /> </div> </div>"
+    },
+    {
+      qId: "Q15",
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "<p>Which of the following is regular language?</p>",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_TOC-2/q15_optA_1.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q15_optB_2.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q15_optC_3.png\" />",
+        "Both (b) and (c)"
+      ],
+      answer: "B",
+      solution: "<p>(b)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q15_sol_4.png\" /> </div>"
+    },
+    {
+      qId: "Q16",
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p>Consider the following three languages:</p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q16_1.png\" /> </div> <div></div> <div> What is the relation between <em>L</em> <sub>1</sub> , <em>L</em> <sub>2</sub> and <em>L</em> <sub>3</sub> ? </div>",
+      image: "",
+      options: [
+        "<em>L</em> <sub>2</sub> ⊂ <em>L</em> <sub>1</sub> and <em>L</em> <sub>3</sub> ⊂ <em>L</em> <sub>1</sub> and <em>L</em> <sub>1</sub> = <em>L</em> <sub>2</sub> ∪ <em>L</em> <sub>3</sub>",
+        "(<em>L</em> <sub>2</sub> = <em>L</em> <sub>3</sub> ) ⊂ <em>L</em> <sub>1</sub>",
+        "<em>L</em> <sub>2</sub> ∩ <em>L</em> <sub>1</sub> = <em>L</em> <sub>3</sub>",
+        "<em>L</em> <sub>2</sub> ⊂ <em>L</em> <sub>1</sub> and <em>L</em> <sub>3</sub> ⊂ <em>L</em> <sub>1</sub> but <em>L</em> <sub>1</sub> ≠ <em>L</em> <sub>2</sub> ∪ <em>L</em> <sub>3</sub>"
+      ],
+      answer: "A",
+      solution: "<p>(a)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q16_sol_2.png\" /> </div>"
+    },
+    {
+      qId: "Q17",
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "<p> Consider the following automata that accepts the language <em>L</em> : </p> <div></div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q17_1.png\" /> </div> <div>Which of the following is correct?</div>",
+      image: "",
+      options: [
+        "<img src=\"/js/questions/easy_2026_TOC-2/q17_optA_2.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q17_optB_3.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q17_optC_4.png\" />",
+        "<img src=\"/js/questions/easy_2026_TOC-2/q17_optD_5.png\" />"
+      ],
+      answer: "C",
+      solution: "<p>(c)</p> <div>&nbsp;</div> <div> <img src=\"/js/questions/easy_2026_TOC-2/q17_sol_6.png\" /> </div>"
+    }
+  ]
+});
