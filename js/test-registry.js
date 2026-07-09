@@ -294,7 +294,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
 
 registerTest({   // made easy cse topic wise test database-1
   series: "cs-gate-pyq",
-  name: "TWT - Database-1 (Old)",
+  name: "TWT - Database-1",
   date: "June 05, 2026",
   questions: [
     {
@@ -978,7 +978,7 @@ registerTest({   // go classes cse topic wise test degital logic-1
 
 
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1
-  series: "cs-gate-2026-pyq",
+  series: "cse-gate-2026-pyq",
   name: "TWT - Theory Of Computation-1",
   date: "July 08, 2026",
   questions: [
@@ -1237,7 +1237,7 @@ registerTest({   // made easy 2026 cse topic wise test theory of computation-1
 
 
 registerTest({    // made easy 2026 cse topic wise test theory of computation-2
-  series: "cs-gate-2026-pyq",
+  series: "cse-gate-2026-pyq",
   name: "TWT - Theory Of Computation-2",
   date: "July 09, 2026",
   questions: [
@@ -1482,8 +1482,8 @@ registerTest({    // made easy 2026 cse topic wise test theory of computation-2
 });
 
 registerTest({    // made easy 2026 cse topic wise test database-1
-  series: "cs-gate-2026-pyq",
-  name: "TWT - Database-1 (2026)",
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Database-1",
   date: "July 11, 2026",
   questions: [
     {
@@ -1724,8 +1724,8 @@ registerTest({    // made easy 2026 cse topic wise test database-1
 
 
 registerTest({    // made easy 2026 cse topic wise test database-2
-  series: "cs-gate-2026-pyq",
-  name: "TWT - Database-2 (2026)",
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Database-2",
   date: "July 12, 2026",
   questions: [
     {
@@ -1979,7 +1979,7 @@ registerTest({    // made easy 2026 cse topic wise test database-2
 });
 
 registerTest({    // made easy 2026 cse topic wise test coa-1
-  series: "cs-gate-2026-pyq",
+  series: "cse-gate-2026-pyq",
   name: "TWT - Computer Organization and Architecture-1",
   date: "July 13, 2026",
   questions: [

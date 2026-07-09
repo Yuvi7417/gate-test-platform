@@ -315,11 +315,11 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "cs-gate-2026-pyq",
+    id: "cse-gate-2026-pyq",
     code: "CSE",
     examTag: "GATE 2026",
     subjectTag: "Computer Science",
-    title: "CS-GATE PYQ Practice Test Series",
+    title: "CSE-GATE 2026 Practice Test Series",
     f: "gate",
     lang: "English",
     objective: "Objective",
