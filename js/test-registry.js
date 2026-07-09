@@ -2462,7 +2462,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following code segment: <img alt="" src="js/questions/easy_2026_algorithm-1/img_17.png"><br> Let <em>T</em> (<em>n</em> ) element the number of total iterations for given positive integer (<em>n</em> ).<br>Which of the following is always true?`,
+      text: `Consider the following code segment:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_17.png"><br><br>Let <em>T</em> (<em>n</em> ) element the number of total iterations for given positive integer (<em>n</em> ).<br>Which of the following is always true?`,
       image: "",
       options: [
         `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> log <em>n</em> ) and <em>T</em> (<em>n</em> ) = Ω(log n) but not Θ(<em>n</em> ).`,
@@ -2508,7 +2508,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `Consider the following function, returning sum of the array: <img alt="" src="js/questions/easy_2026_algorithm-1/img_43.png"><br> Which of the following statements is/are correct?`,
+      text: `Consider the following function, returning sum of the array:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_43.png"><br><br>Which of the following statements is/are correct?`,
       image: "",
       options: [
         `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> log <em>n</em> ), as algorithm splits array in two equal half.`,
@@ -2554,7 +2554,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the functions: <img alt="" src="js/questions/easy_2026_algorithm-1/img_33.png">`,
+      text: `Consider the functions:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_33.png">`,
       image: "",
       options: [
         `Only statement I is correct, statement II is incorrect because <em>f</em><sub>2</sub> (<em>n</em> ) = ο( <em>f</em><sub>3</sub> (<em>n</em> )).`,
@@ -2569,7 +2569,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following statements: <img alt="" src="js/questions/easy_2026_algorithm-1/img_36.png"><br> How many number of correct statements?`,
+      text: `Consider the following statements:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_36.png"><br><br>How many number of correct statements?`,
       image: "",
       options: [],
       answer: 2,
@@ -2594,7 +2594,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `Let the following be defined for all large n: <img alt="" src="js/questions/easy_2026_algorithm-1/img_12.png"><br> Which of the following statements is/are correct?`,
+      text: `Let the following be defined for all large n:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_12.png"><br><br>Which of the following statements is/are correct?`,
       image: "",
       options: [
         `<em>F</em> (<em>n</em> ) = ο(<em>g</em> (<em>n</em> )) and <em>h</em> (<em>n</em> ) = ο(<em>g</em> (<em>n</em> ))`,
@@ -2609,7 +2609,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `Consider the following pseudocode logic: <img alt="" src="js/questions/easy_2026_algorithm-1/img_19.png">`,
+      text: `Consider the following pseudocode logic:<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_19.png">`,
       image: "",
       options: [
         `Output is 3 because match occurs at position 0, 2 and 5 in <em>S</em><sub>2</sub> . Matching skips overlapping substring once founds.`,
@@ -2624,7 +2624,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the statement for function f and g condition <em>f</em> (<em>n</em> ) = Ο(<em>g</em> (<em>n</em> )), ∀<em>n</em> , <em>n</em> ≥ <em>n</em><sub>0</sub> . <img alt="" src="js/questions/easy_2026_algorithm-1/img_38.png">`,
+      text: `Consider the statement for function f and g condition <em>f</em> (<em>n</em> ) = Ο(<em>g</em> (<em>n</em> )), ∀<em>n</em> , <em>n</em> ≥ <em>n</em><sub>0</sub> .<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_38.png">`,
       image: "",
       options: [
         `<em>S</em><sub>1</sub> is sometimes but, <em>S</em><sub>2</sub> is always true.`,
@@ -2639,7 +2639,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following array index start with 0. <img alt="" src="js/questions/easy_2026_algorithm-1/img_21.png"><br> To search an element <em>E</em> .<br> Average number of comparison made by linear search = <em>X</em><br> Average number of comparison made by binary search = <em>Y</em><br> Value of <em>X</em> + <em>Y</em> = ________.`,
+      text: `Consider the following array index start with 0.<br><br><img alt="" src="js/questions/easy_2026_algorithm-1/img_21.png"><br><br>To search an element <em>E</em> .<br> Average number of comparison made by linear search = <em>X</em><br> Average number of comparison made by binary search = <em>Y</em><br> Value of <em>X</em> + <em>Y</em> = ________.`,
       image: "",
       options: [],
       answer: 8.5,
