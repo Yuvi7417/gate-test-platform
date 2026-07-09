@@ -2208,216 +2208,221 @@ registerTest({    // made easy 2026 cse topic wise test coa-2
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br> <em>S</em> <sub>1</sub> : In write back protocol, cache location and main memory location are updated simultaneously.<br> <em>S</em> <sub>2</sub> : Modified or dirty bits are used by write through protocol.<br>Which of the following is false?`,
+      text: "Consider the following statements:<br> <em>S</em> <sub>1</sub> : In write back protocol, cache location and main memory location are updated simultaneously.<br> <em>S</em> <sub>2</sub> : Modified or dirty bits are used by write through protocol.<br>Which of the following is false?",
       image: "",
       options: [
-        `Only S<sub>1</sub>`,
-        `Only S<sub>2</sub>`,
-        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
-        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+        "Only S<sub>1</sub>",
+        "Only S<sub>2</sub>",
+        "Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>",
+        "Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>",
       ],
       answer: "C",
-      solution: `(c)<br>Write back protocol first cache is updated and market by dirty bit then main memory is update.`
+      solution: "Write back protocol first cache is updated and market by dirty bit then main memory is update."
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Suppose that in 1200 memory references, there are 240 misses in the first-level cache and 60 misses in the second-level cache.<br> Assume that miss penalty from L<sub>2</sub> cache to main memory is 120 cycles, and the hit time of the L<sub>2 </sub> cache is 30 cycles.<br>If there are 3 memory references per instruction, the average stall per instruction is ________ cycles.`,
+      text: "Suppose that in 1200 memory references, there are 240 misses in the first-level cache and 60 misses in the second-level cache.<br> Assume that miss penalty from L<sub>2</sub> cache to main memory is 120 cycles, and the hit time of the L<sub>2 </sub> cache is 30 cycles.<br>If there are 3 memory references per instruction, the average stall per instruction is ________ cycles.",
       image: "",
       options: [],
       answer: 36,
-      solution: `36 <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_2_1.png"> </div>`
+      solution: "<img src='js/questions/easy_2026_COA-2/img_2_1.png'>"
     },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `Consider a two-way set associative cache with total of 8 cache blocks and the following sequence of memory block requests arrived:<br> 20, 17, 21, 32, 20, 16, 27, 22, 7, 16, 32<br>If LRU replacement policy is used then the hit ratio will be ________. (Upto 2 decimal places)`,
-      image: "",
-      options: [],
-      answer: 0.18,
-      solution: `0.18 [0.18 - 0.19] <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_3_2.png"> </div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_3_3.png"> </div>`
-    },
+
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br> <em>S</em> <sub>1</sub> : Direct mapped caches do not need a cache block replacement policy, where as fully associative cache need.<br> <em>S</em> <sub>2</sub> : Direct mapped cache, may produce more misses if programs refers to memory words that occupy a same tag value.<br>Which of the following options is correct?`,
+      text: "Consider the following statements:<br> <em>S</em> <sub>1</sub> : Direct mapped caches do not need a cache block replacement policy, where as fully associative cache need.<br> <em>S</em> <sub>2</sub> : Direct mapped cache, may produce more misses if programs refers to memory words that occupy a same tag value.<br>Which of the following options is correct?",
       image: "",
       options: [
-        `Only <em>S</em> <sub>1</sub> is true`,
-        `Only <em>S</em> <sub>2</sub> is true`,
-        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are true`,
-        `Neither of <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub> is true`,
+        "Only <em>S</em> <sub>1</sub> is true",
+        "Only <em>S</em> <sub>2</sub> is true",
+        "Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are true",
+        "Neither of <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub> is true",
       ],
       answer: "A",
-      solution: `(a)<br> •Since in direct mapped cache a block can mapped to only a particular block by using formula [MM block % cache blocks = cache block number]. Where as in fully associative cache a block can mapped to more than one cache block with in a set so only fully associative cache needs<br> cache replacement policy. So, statement is true.<br> •Since in direct mapped cache, mapping is based on line offset not on TAG and those memory<br> addresses having same line offset are mapped to same cache line. Therefore, if a program<br>refers to memory access with same TAG value does not ensure more misses. Hence this statement is false.`
+      solution: "•Since in direct mapped cache a block can mapped to only a particular block by using formula [MM block % cache blocks = cache block number]. Where as in fully associative cache a block can mapped to more than one cache block with in a set so only fully associative cache needs<br> cache replacement policy. So, statement is true.<br> •Since in direct mapped cache, mapping is based on line offset not on TAG and those memory<br> addresses having same line offset are mapped to same cache line. Therefore, if a program<br>refers to memory access with same TAG value does not ensure more misses. Hence this statement is false."
     },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `Consider m-way set associative cache with 32-bit addresses and having block size 128 Bytes. If cache memory has 1024 blocks and TAG bits are 17, then what is the number of sets and associativity of cache?`,
-      image: "",
-      options: [
-        `128 sets, 8-way set associativity`,
-        `256 sets, 4-way set associativity`,
-        `256 sets, 8-way set associativity`,
-        `Cannot be determined`,
-      ],
-      answer: "B",
-      solution: `(b) <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_5_4.png"> </div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_5_5.png"> </div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `Consider a disk that rotates at 60000 rotations per minute and has a transfer rate of 80 MBps. If the average seek time of the disk is twice the average rotational delay and the controller’s transfer time is 8 times the disk transfer time, the average time to read or write a 128 byte sector of the disk is ________ msec. (Upto 4 decimal places)`,
-      image: "",
-      options: [],
-      answer: 1.5128,
-      solution: `1.5128 [1.5128 to 1.5130] <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_6_6.png"> </div>`
-    },
+
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider cache memory with an access time of 50 ns having hit ratio of 70%. Miss penalty of a cache is 300 ns. Average memory access time is ________ (ns)?`,
+      text: "Consider cache memory with an access time of 50 ns having hit ratio of 70%. Miss penalty of a cache is 300 ns. Average memory access time is ________ (ns)?",
       image: "",
       options: [
-        `140 ns`,
-        `125 ns`,
-        `110 ns`,
-        `135 ns`,
+        "140 ns",
+        "125 ns",
+        "110 ns",
+        "135 ns",
       ],
       answer: "B",
-      solution: `(b) <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_7_7.png"> </div>`
+      solution: "<img src='js/questions/easy_2026_COA-2/img_7_7.png'>"
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider a hypothetical computer system which has DMA support. The DMA module transfer one 16-bit character in one CPU cycle from a device to memory through cycle stealing mode at regular intervals. Consider a 4 MHz processor. If 0.4% of processor cycles are used for DMA, the data transfer rate of the device is ________ bytes per second.`,
+      text: "Consider a hypothetical computer system which has DMA support. The DMA module transfer one 16-bit character in one CPU cycle from a device to memory through cycle stealing mode at regular intervals. Consider a 4 MHz processor. If 0.4% of processor cycles are used for DMA, the data transfer rate of the device is ________ bytes per second.",
       image: "",
       options: [],
       answer: 32000,
-      solution: `32000 <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_8_8.png"> </div>`
+      solution: "<img src='js/questions/easy_2026_COA-2/img_8_8.png'>"
     },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `Consider the following statements:<br> S<sub>1</sub> : If compulsory misses are more common then the designers should consider increasing the cache line size to take better advantage of locality.<br> S<sub>2</sub> : If capacity misses are most common then the designer should consider increasing the total cache size so it can contain more lines.<br> S<sub>3</sub> : If conflict misses are most common then the designer should increases the cache’s associatively, in order to provide more flexibility when collision occur.<br>Which of the above statements are true, with respect to reducing number of cache misses.`,
-      image: "",
-      options: [
-        `Only <em>S</em> <sub>2</sub> is true`,
-        `Only <em>S</em> <sub>3</sub> is true`,
-        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are true`,
-        `All the statements are true`,
-      ],
-      answer: "D",
-      solution: `(d)<br> •By increasing cache line size, number of cache blocks will decrease. So, compulsory misses are<br> decrease and we can take advantage of locality.<br> •By increasing cache size, number of lines per cache increase so, capacity misses are reduced.<br> •By increasing cache associativity, we have more lines in particular set, so it provide more<br>flexibility and reduce number of conflict misses.`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `A cache memory provides a speed up of 7.27 over main memory. If the cache is 40 times faster than main memory, what percentage of total execution time is spent accessing the cache?`,
-      image: "",
-      options: [
-        `82%`,
-        `85%`,
-        `88%`,
-        `90%`,
-      ],
-      answer: "C",
-      solution: `(c) <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_10_9.png"> </div> <div>&nbsp;</div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: `Which of the following statements is/are correct?`,
-      image: "",
-      options: [
-        `Polling increases CPU overhead because the processor continuously checks device status, even if no device needs service.`,
-        `In polling, control is initiated by the peripheral device to notify the CPU when it is ready.`,
-        `During DMA transfers, the CPU is momentarily halted while the DMA controller takes control of the system bus.`,
-        `The DMA controller communicates directly with memory without involving the CPU for each data word transfer.`,
-      ],
-      answer: ["A", "C", "D"],
-      solution: `(a, c, d)<br> Interrupt-driven I/O, not polling.<br>In polling, CPU initiates the check, not the device. The CPU actively checks the device status periodically.`
-    },
+
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider a 2-way set associative cache with 8 cache blocks. If the memory block requests are accessed 2 time in the following order 0, 4, 8, 4, 0, 4, 8, 4, 3, 15, 19, 15, 3, 15, 19, 15. If LRU replacement policy is used, then the total number of misses are ________.`,
+      text: "Consider a 2-way set associative cache with 8 cache blocks. If the memory block requests are accessed 2 time in the following order 0, 4, 8, 4, 0, 4, 8, 4, 3, 15, 19, 15, 3, 15, 19, 15. If LRU replacement policy is used, then the total number of misses are ________.",
       image: "",
       options: [],
       answer: 18,
-      solution: `18 <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_12_10.png"> </div> <div>&nbsp;</div>`
+      solution: "18 <img src='js/questions/easy_2026_COA-2/img_12_10.png'>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider cache memory with a hit ratio of 80% having access time of 40 ns. Access time of a main memory is 5 times of a cache memory access time.<br>What is the average memory access time?",
+      image: "",
+      options: [
+        "72 ns",
+        "92 ns",
+        "80 ns",
+        "68 ns",
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/easy_2026_COA-2/img_14_12.png'>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Consider 4 MBPS IO device connected to 64 bits CPU using DMA interface. 64 words data is transferred from the IO to memory using DMA interface main memory machine cycle time is&nbsp;0.5 micro sec. Percentage of CPU time consumed in he DMA operation is ________.",
+      image: "",
+      options: [
+        "25",
+        "20",
+        "4",
+        "80",
+      ],
+      answer: "B",
+      solution: "<img src='js/questions/easy_2026_COA-2/img_15_13.png'>"
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: "A cache memory provides a speed up of 7.27 over main memory. If the cache is 40 times faster than main memory, what percentage of total execution time is spent accessing the cache?",
+      image: "",
+      options: [
+        "82%",
+        "85%",
+        "88%",
+        "90%",
+      ],
+      answer: "C",
+      solution: "<img src='js/questions/easy_2026_COA-2/img_10_9.png'>"
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a two-way set associative cache with total of 8 cache blocks and the following sequence of memory block requests arrived:<br> 20, 17, 21, 32, 20, 16, 27, 22, 7, 16, 32<br>If LRU replacement policy is used then the hit ratio will be ________. (Upto 2 decimal places)",
+      image: "",
+      options: [],
+      answer: 0.18,
+      solution: "<img src='js/questions/easy_2026_COA-2/img_3_2.png'><br><img src='js/questions/easy_2026_COA-2/img_3_3.png'>"
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `A 8 way set associative cache of 128 KB is organized with 64 byte blocks. The main memory size is 4 GB. Each line in a set has 1 valid bit, 1 dirty bit and 3 replacement bits along with a tag. How much tag directory space is present in the cache controller. (In K bits)`,
+      text: "Consider m-way set associative cache with 32-bit addresses and having block size 128 Bytes. If cache memory has 1024 blocks and TAG bits are 17, then what is the number of sets and associativity of cache?",
       image: "",
       options: [
-        `42`,
-        `46`,
-        `44`,
-        `36`,
+        "128 sets, 8-way set associativity",
+        "256 sets, 4-way set associativity",
+        "256 sets, 8-way set associativity",
+        "Cannot be determined",
       ],
       answer: "B",
-      solution: `(b) <div>&nbsp;</div> <div> <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_13_11.png"> </div> </div>`
+      solution: "<img src='js/questions/easy_2026_COA-2/img_5_4.png'><br><img src='js/questions/easy_2026_COA-2/img_5_5.png'>"
     },
     {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `Consider cache memory with a hit ratio of 80% having access time of 40 ns. Access time of a main memory is 5 times of a cache memory access time.<br>What is the average memory access time?`,
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: "Consider a disk that rotates at 60000 rotations per minute and has a transfer rate of 80 MBps. If the average seek time of the disk is twice the average rotational delay and the controller’s transfer time is 8 times the disk transfer time, the average time to read or write a 128 byte sector of the disk is ________ msec. (Upto 4 decimal places)",
       image: "",
-      options: [
-        `72 ns`,
-        `92 ns`,
-        `80 ns`,
-        `68 ns`,
-      ],
-      answer: "C",
-      solution: `(c) <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_14_12.png"> </div>`
+      options: [],
+      answer: 1.5128,
+      solution: "<img src='js/questions/easy_2026_COA-2/img_6_6.png'>"
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
-      text: `Consider 4 MBPS IO device connected to 64 bits CPU using DMA interface. 64 words data is transferred from the IO to memory using DMA interface main memory machine cycle time is&nbsp;0.5 micro sec. Percentage of CPU time consumed in he DMA operation is ________.`,
+      text: "Consider the following statements:<br> S<sub>1</sub> : If compulsory misses are more common then the designers should consider increasing the cache line size to take better advantage of locality.<br> S<sub>2</sub> : If capacity misses are most common then the designer should consider increasing the total cache size so it can contain more lines.<br> S<sub>3</sub> : If conflict misses are most common then the designer should increases the cache’s associatively, in order to provide more flexibility when collision occur.<br>Which of the above statements are true, with respect to reducing number of cache misses.",
       image: "",
       options: [
-        `25`,
-        `20`,
-        `4`,
-        `80`,
+        "Only <em>S</em> <sub>2</sub> is true",
+        "Only <em>S</em> <sub>3</sub> is true",
+        "Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are true",
+        "All the statements are true",
       ],
-      answer: "B",
-      solution: `(b) <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_15_13.png"> </div>`
+      answer: "D",
+      solution: "•By increasing cache line size, number of cache blocks will decrease. So, compulsory misses are<br> decrease and we can take advantage of locality.<br>•By increasing cache size, number of lines per cache increase so, capacity misses are reduced.<br>•By increasing cache associativity, we have more lines in particular set, so it provide more<br>flexibility and reduce number of conflict misses."
     },
     {
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `Which of the following statement are false?`,
+      text: "Which of the following statements is/are correct?",
       image: "",
       options: [
-        `DMA controller is initialized by the I/O device for number of bytes to be transferred.`,
-        `The DMA controller sends DMA-ACK signal to I/O device after getting DMA-REQ signal from I/O device.`,
-        `The DMA transfer begins after CPU relinquishes the bus control.`,
-        `CPU provides information about number of bytes to be transferred and memory address to DMA controller.`,
+        "Polling increases CPU overhead because the processor continuously checks device status, even if no device needs service.",
+        "In polling, control is initiated by the peripheral device to notify the CPU when it is ready.",
+        "During DMA transfers, the CPU is momentarily halted while the DMA controller takes control of the system bus.",
+        "The DMA controller communicates directly with memory without involving the CPU for each data word transfer.",
+      ],
+      answer: ["A", "C", "D"],
+      solution: "Interrupt-driven I/O, not polling.<br>In polling, CPU initiates the check, not the device. The CPU actively checks the device status periodically."
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: "A 8 way set associative cache of 128 KB is organized with 64 byte blocks. The main memory size is 4 GB. Each line in a set has 1 valid bit, 1 dirty bit and 3 replacement bits along with a tag. How much tag directory space is present in the cache controller. (In K bits)",
+      image: "",
+      options: [
+        "42",
+        "46",
+        "44",
+        "36",
+      ],
+      answer: "B",
+      solution: `<img src='js/questions/easy_2026_COA-2/img_13_11.png'>`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: "Which of the following statement are false?",
+      image: "",
+      options: [
+        "DMA controller is initialized by the I/O device for number of bytes to be transferred.",
+        "The DMA controller sends DMA-ACK signal to I/O device after getting DMA-REQ signal from I/O device.",
+        "The DMA transfer begins after CPU relinquishes the bus control.",
+        "CPU provides information about number of bytes to be transferred and memory address to DMA controller.",
       ],
       answer: ["A", "B"],
-      solution: `(a, b)<br> •DMA is a method that allows an I/O device to send or receive data directly to or from the<br> memory, bypassing the CPU to speedup memory operations. The process is managed by a<br> chip known as a DMA controller.<br> •DMA controller asserts a DMA request signal to the CPU.<br> •CPU complete its current bus activity and returns a DMA-ACK signal to DMA controller.<br> •DMA transfer begins only after receiving the DMA ACK.<br>•CPU does not provide information about number of bytes to be transferred to DMA controller.`
+      solution: "•DMA is a method that allows an I/O device to send or receive data directly to or from the<br> memory, bypassing the CPU to speedup memory operations. The process is managed by a<br> chip known as a DMA controller.<br> •DMA controller asserts a DMA request signal to the CPU.<br> •CPU complete its current bus activity and returns a DMA-ACK signal to DMA controller.<br> •DMA transfer begins only after receiving the DMA ACK.<br>•CPU does not provide information about number of bytes to be transferred to DMA controller."
     },
     {
       marks: 2,
@@ -2427,7 +2432,7 @@ registerTest({    // made easy 2026 cse topic wise test coa-2
       image: "",
       options: [],
       answer: 0.75,
-      solution: `0.75 <div>&nbsp;</div> <div> <div>&nbsp;</div> <div> <img alt="" src="js/questions/easy_2026_COA-2/img_17_15.png"> </div> </div> <div>&nbsp;</div>`
+      solution: `<img src='js/questions/easy_2026_COA-2/img_17_15.png'>`
     },
   ]
 });
