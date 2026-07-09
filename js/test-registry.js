@@ -2444,7 +2444,7 @@ registerTest({
   questions: [
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: `Using Masters theorem, what’s the overall asymptotic running time of <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_1.png">`,
       image: "",
@@ -2457,232 +2457,89 @@ registerTest({
       answer: "D",
       solution: "(d)"
     },
+
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
-      text: `Let <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_6.png">Identify
-                                the correct asymptotic behaviour.`,
+      text: `Consider the following code segment: <img alt="" src="js/questions/easy_2026_algorithm-1/img_17.png"><br> Let <em>T</em> (<em>n</em> ) element the number of total iterations for given positive integer (<em>n</em> ).<br>Which of the following is always true?`,
       image: "",
       options: [
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_7.png">`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_8.png">`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_9.png">`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_10.png">`,
-      ],
-      answer: "B",
-      solution: `(b)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_11.png">
-                            <br>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `Let the following be defined for all large n:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_12.png">
-                            <br>
-                            
-                            Which of the following statements is/are correct?`,
-      image: "",
-      options: [
-        `<em>F</em>
-                                    (<em>n</em>
-                                    ) = ο(<em>g</em>
-                                    (<em>n</em>
-                                    )) and <em>h</em>
-                                    (<em>n</em>
-                                    ) = ο(<em>g</em>
-                                    (<em>n</em>
-                                    ))`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_13.png">`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_14.png">`,
-        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_15.png">`,
-      ],
-      answer: ["B", "C"],
-      solution: `(b, c)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_16.png">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MCQ",
-      text: `Consider the following code segment:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_17.png">
-                            <br>
-                            
-                                Let <em>T</em>
-                                (<em>n</em>
-                                ) element the number of total iterations for given positive integer (<em>n</em>
-                                ).<br>Which of the following is always true?`,
-      image: "",
-      options: [
-        `<em>T</em>
-                                    (<em>n</em>
-                                    ) = Ο(<em>n</em>
-                                    log <em>n</em>
-                                    ) and <em>T</em>
-                                    (<em>n</em>
-                                    ) = Ω(log n) but not Θ(<em>n</em>
-                                    ).`,
-        `<em>T</em>
-                                    (<em>n</em>
-                                    ) = Ο(<em>n</em>
-                                    <sup>2</sup>
-                                    ) and <em>T</em>
-                                    (<em>n</em>
-                                    ) = Ω(n) as inner loops run for Θ(log <em>n</em>
-                                    ) times.`,
-        `<em>T</em>
-                                    (<em>n</em>
-                                    ) = Θ(<em>n</em>
-                                    ) as outer loops run for Ο(<em>n</em>
-                                    ) times and inner loop runs for constant time.`,
-        `<em>T</em>
-                                    (<em>n</em>
-                                    ) = Ο(<em>n</em>
-                                    ) as outer and inner loop combine time complexity, does not go beyond this.`,
+        `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> log <em>n</em> ) and <em>T</em> (<em>n</em> ) = Ω(log n) but not Θ(<em>n</em> ).`,
+        `<em>T</em> (<em>n</em> ) = Ο(<em>n</em><sup>2</sup> ) and <em>T</em> (<em>n</em> ) = Ω(n) as inner loops run for Θ(log <em>n</em> ) times.`,
+        `<em>T</em> (<em>n</em> ) = Θ(<em>n</em> ) as outer loops run for Ο(<em>n</em> ) times and inner loop runs for constant time.`,
+        `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> ) as outer and inner loop combine time complexity, does not go beyond this.`,
       ],
       answer: "D",
-      solution: `(d)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_18.png">`
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_18.png">`
     },
+
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `Consider the following pseudocode logic:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_19.png">
-                            <br>`,
-      image: "",
-      options: [
-        `Output is 3 because match occurs at position 0, 2 and 5 in <em>S</em>
-                                    <sub>2</sub>
-                                    . Matching skips overlapping substring once founds.`,
-        "Output is 1 because code is not considering overlapping strings.",
-        `Time complexity is Ο(<em>n</em>
-                                    ⋅ <em>m</em>
-                                    ) in worst case.`,
-        "Given logic correctly detect overlapping pattern.",
-      ],
-      answer: ["C", "D"],
-      solution: `(c, d)<br>In worst case we run code Ο(<em>n</em>
-                                ⋅<em>m</em>
-                                ) .`
-    },
-    {
-      marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
-      text: `In quick sort algorithm, recursion depth as the maximum number of nested recursive calls
-                                from the top of the recursion tree to a leaf (base case) let <em>n</em>
-                                be the size of the input array.<br>Which of the following statement about the minimum
-                                and maximum possible recursion depth is correct?`,
+      text: `In quick sort algorithm, recursion depth as the maximum number of nested recursive calls from the top of the recursion tree to a leaf (base case) let <em>n</em> be the size of the input array.<br>Which of the following statement about the minimum and maximum possible recursion depth is correct?`,
       image: "",
       options: [
-        `Minimum Θ(log <em>n</em>
-                                    ); Maximum Θ(<em>n</em>
-                                    )`,
-        `Minimum Θ(1); Maximum Θ(n log <em>n</em>
-                                    )`,
-        `Minimum Θ(log <em>n</em>
-                                    ); Maximum Θ(log <em>n</em>
-                                    )`,
-        `Minimum Θ(<em>n</em>
-                                    ); Maximum Θ(<em>n</em>
-                                    )`,
+        `Minimum Θ(log <em>n</em> ); Maximum Θ(<em>n</em> )`,
+        `Minimum Θ(1); Maximum Θ(n log <em>n</em> )`,
+        `Minimum Θ(log <em>n</em> ); Maximum Θ(log <em>n</em> )`,
+        `Minimum Θ(<em>n</em> ); Maximum Θ(<em>n</em> )`,
       ],
       answer: "A",
-      solution: `(a)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_20.png">`
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_20.png">`
     },
     {
       marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `Consider the following array index start with 0.
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_21.png">
-                            <br>
-                            
-                            
-                                To search an element <em>E</em>
-                                .<br>
-                                Average number of comparison made by linear search = <em>X</em>
-                                <br>
-                                Average number of comparison made by binary search = <em>Y</em>
-                                <br>
-                                Value of <em>X</em>
-                                + <em>Y</em>
-                                = ________.`,
+      neg: 0.33,
+      type: "MCQ",
+      text: "Which of the following statements is correct?",
       image: "",
-      options: [],
-      answer: 8.5,
-      solution: `8.5
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_22.png">`
+      options: [
+        "Insertion sort always perform fewer comparison then selection sort.",
+        "Selection sort always perform fewer swaps than insertion sort.",
+        "Insertion sort is stable but not selection sort.",
+        "For reverse sorted array, both insertion and selection have same number of swaps.",
+      ],
+      answer: "C",
+      solution: "For sorted array both selection and insertion sort have zero comparison."
     },
     {
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `Consider a variant of merge sort called delayed merge sort algorithm work like.<br>
-                                • If the input size n is power of 2, say <em>n</em>
-                                = 2<sup>k</sup>
-                                for some integer <em>k</em>
-                                ≥ 0, it recursively divides the array until each sub array has exactly 2 elements (i.e.,
-                                stops dividing at size 2) and then begin the merging phase.<br>
-                                • If <em>n</em>
-                                is not power of 2, it behaves exactly like standard merge sort.<br>
-                                Assume that merging two sorted array of size a and b takes exactly (<em>a</em>
-                                + <em>b</em>
-                                – 1) comparisons.<br>
-                                Let <em>T</em>
-                                (<em>n</em>
-                                ) be the total number of comparison performance by delayed merge sort.<br>Which of the
-                                following statements are correct?`,
+      text: `Consider the following function, returning sum of the array: <img alt="" src="js/questions/easy_2026_algorithm-1/img_43.png"><br> Which of the following statements is/are correct?`,
       image: "",
       options: [
-        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_23.png">`,
-        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_24.png">`,
-        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_25.png">`,
-        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_26.png">`,
+        `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> log <em>n</em> ), as algorithm splits array in two equal half.`,
+        `Space complexity is Ο(log <em>n</em> ), due to recursion depth.`,
+        "Logic work correctly for all inputs.",
+        "Logic fails for array size 1.",
       ],
-      answer: ["A", "D"],
-      solution: `(a, d)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_27.png">
-                            <br>`
+      answer: ["A", "B", "C"],
+      solution: "(a, b, c)"
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
-      text: `Let <em>n</em>
-                                be a sufficiently large positive integers.
-                            
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_28.png">
-                            <br>
-                            Arrange in increasing asymptotic time complexity.`,
+      text: `Suppose you have a range from [1 – <em>n</em><sup> log <em>n</em></sup> ] integer values. Worst case time complexity of an efficient algorithm to sort n numbers chosen from this range?`,
+      image: "",
+      options: [
+        `Ο(n log <em>n</em> )`,
+        `Ο(n<sup>log n</sup> (log n)<sup>2</sup> )`,
+        `Ο(n<sup>log n</sup> )`,
+        `Ο(log <em>n</em> )<sup>2</sup>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_44.png">`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>n</em> be a sufficiently large positive integers. <img alt="" src="js/questions/easy_2026_algorithm-1/img_28.png"><br> Arrange in increasing asymptotic time complexity.`,
       image: "",
       options: [
         `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_29.png">`,
@@ -2695,126 +2552,119 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
-      text: `Consider the functions:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_33.png">
-                            <br>`,
+      text: `Consider the functions: <img alt="" src="js/questions/easy_2026_algorithm-1/img_33.png">`,
       image: "",
       options: [
-        `Only statement I is correct, statement II is incorrect because <em>f</em>
-                                    <sub>2</sub>
-                                    (<em>n</em>
-                                    ) = ο( <em>f</em>
-                                    <sub>3</sub>
-                                    (<em>n</em>
-                                    )).`,
-        `Both statement are incorrect, <em>f</em>
-                                    <sub>2</sub>
-                                    = ο( <em>f</em>
-                                    <sub>1</sub>
-                                    (<em>n</em>
-                                    )) contradicts 1.`,
-        `Statement II is correct, statement I is incorrect as <em>f</em>
-                                    <sub>2</sub>
-                                    (<em>n</em>
-                                    ) ≠ Θ( <em>f</em>
-                                    <sub>3</sub>
-                                    (<em>n</em>
-                                    )).`,
+        `Only statement I is correct, statement II is incorrect because <em>f</em><sub>2</sub> (<em>n</em> ) = ο( <em>f</em><sub>3</sub> (<em>n</em> )).`,
+        `Both statement are incorrect, <em>f</em><sub>2</sub> = ο( <em>f</em><sub>1</sub> (<em>n</em> )) contradicts 1.`,
+        `Statement II is correct, statement I is incorrect as <em>f</em><sub>2</sub> (<em>n</em> ) ≠ Θ( <em>f</em><sub>3</sub> (<em>n</em> )).`,
         `Both statement are correct and <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_34.png">`,
       ],
       answer: "B",
-      solution: `(b)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_35.png">
-                            <br>`
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_35.png">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following statements:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_36.png">
-                            <br>
-                            How many number of correct statements?`,
+      text: `Consider the following statements: <img alt="" src="js/questions/easy_2026_algorithm-1/img_36.png"><br> How many number of correct statements?`,
       image: "",
       options: [],
       answer: 2,
-      solution: `2
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_37.png">`
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_37.png">`
     },
     {
-      marks: 1,
-      neg: 0,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
-      text: `Consider the statement for function f and g condition <em>f</em>
-                                (<em>n</em>
-                                ) = Ο(<em>g</em>
-                                (<em>n</em>
-                                )), ∀<em>n</em>
-                                , <em>n</em>
-                                ≥ <em>n</em>
-                                <sub>0</sub>
-                                .
-                            
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_38.png">`,
+      text: `Let <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_6.png">Identify the correct asymptotic behaviour.`,
       image: "",
       options: [
-        `<em>S</em>
-                                    <sub>1</sub>
-                                    is sometimes but, <em>S</em>
-                                    <sub>2</sub>
-                                    is always true.`,
-        `If <em>f</em>
-                                    (<em>n</em>
-                                    ) ≤ <em>g</em>
-                                    (<em>n</em>
-                                    ), ∀<em>n</em>
-                                    &gt;&gt; 0, <em>S</em>
-                                    <sub>1</sub>
-                                    is true not <em>S</em>
-                                    <sub>2</sub>
-                                    .`,
-        `<em>S</em>
-                                    <sub>1</sub>
-                                    is always true, but <em>S</em>
-                                    <sub>2</sub>
-                                    correctness depends on <em>f</em>
-                                    ⋅ <em>g</em>
-                                    .`,
-        `<em>S</em>
-                                    <sub>1</sub>
-                                    is false but <em>S</em>
-                                    <sub>2</sub>
-                                    is always true.`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_7.png">`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_8.png">`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_9.png">`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_10.png">`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_11.png">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let the following be defined for all large n: <img alt="" src="js/questions/easy_2026_algorithm-1/img_12.png"><br> Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `<em>F</em> (<em>n</em> ) = ο(<em>g</em> (<em>n</em> )) and <em>h</em> (<em>n</em> ) = ο(<em>g</em> (<em>n</em> ))`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_13.png">`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_14.png">`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_15.png">`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_16.png">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following pseudocode logic: <img alt="" src="js/questions/easy_2026_algorithm-1/img_19.png">`,
+      image: "",
+      options: [
+        `Output is 3 because match occurs at position 0, 2 and 5 in <em>S</em><sub>2</sub> . Matching skips overlapping substring once founds.`,
+        "Output is 1 because code is not considering overlapping strings.",
+        `Time complexity is Ο(<em>n</em> ⋅ <em>m</em> ) in worst case.`,
+        "Given logic correctly detect overlapping pattern.",
+      ],
+      answer: ["C", "D"],
+      solution: `In worst case we run code Ο(<em>n</em> ⋅<em>m</em> ) .`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the statement for function f and g condition <em>f</em> (<em>n</em> ) = Ο(<em>g</em> (<em>n</em> )), ∀<em>n</em> , <em>n</em> ≥ <em>n</em><sub>0</sub> . <img alt="" src="js/questions/easy_2026_algorithm-1/img_38.png">`,
+      image: "",
+      options: [
+        `<em>S</em><sub>1</sub> is sometimes but, <em>S</em><sub>2</sub> is always true.`,
+        `If <em>f</em> (<em>n</em> ) ≤ <em>g</em> (<em>n</em> ), ∀<em>n</em> &gt;&gt; 0, <em>S</em><sub>1</sub> is true not <em>S</em><sub>2</sub> .`,
+        `<em>S</em><sub>1</sub> is always true, but <em>S</em><sub>2</sub> correctness depends on <em>f</em> ⋅ <em>g</em> .`,
+        `<em>S</em><sub>1</sub> is false but <em>S</em><sub>2</sub> is always true.`,
       ],
       answer: "C",
       solution: "(c)"
     },
     {
-      marks: 1,
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following array index start with 0. <img alt="" src="js/questions/easy_2026_algorithm-1/img_21.png"><br> To search an element <em>E</em> .<br> Average number of comparison made by linear search = <em>X</em><br> Average number of comparison made by binary search = <em>Y</em><br> Value of <em>X</em> + <em>Y</em> = ________.`,
+      image: "",
+      options: [],
+      answer: 8.5,
+      solution: `8.5 <img alt="" src="js/questions/easy_2026_algorithm-1/img_22.png">`
+    },
+    {
+      marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `Let n is a natural number arr[<em>n</em>
-                                ] is the <em>n</em>
-                                size array.<br>
-                                • <em>A</em>
-                                is the minimum number of comparison required to get minimum and maximum of arr, when
-                                <em>n</em>
-                                is odd.<br>
-                                • B is the minimum number of comparison required to get minimum and maximum of arr, when
-                                <em>n</em>
-                                is even.<br>Which of the following are true?`,
+      text: `Consider a variant of merge sort called delayed merge sort algorithm work like.<br> • If the input size n is power of 2, say <em>n</em> = 2<sup>k</sup> for some integer <em>k</em> ≥ 0, it recursively divides the array until each sub array has exactly 2 elements (i.e., stops dividing at size 2) and then begin the merging phase.<br> • If <em>n</em> is not power of 2, it behaves exactly like standard merge sort.<br> Assume that merging two sorted array of size a and b takes exactly (<em>a</em> + <em>b</em> – 1) comparisons.<br> Let <em>T</em> (<em>n</em> ) be the total number of comparison performance by delayed merge sort.<br>Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_23.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_24.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_25.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-1/img_26.png">`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_27.png">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let n is a natural number arr[<em>n</em> ] is the <em>n</em> size array.<br> • <em>A</em> is the minimum number of comparison required to get minimum and maximum of arr, when <em>n</em> is odd.<br> • B is the minimum number of comparison required to get minimum and maximum of arr, when <em>n</em> is even.<br>Which of the following are true?`,
       image: "",
       options: [
         `<img alt="" src="js/questions/easy_2026_algorithm-1/img_39.png">`,
@@ -2825,105 +2675,21 @@ registerTest({
       answer: ["A", "C"],
       solution: "(a, c)"
     },
+
     {
-      marks: 1,
-      neg: 0,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
-      text: "Which of the following statements is correct?",
+      text: `An unsorted array A of size n distinct element, 90% of the successful search at the first 25% of the array (index 0 to <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_45.png"> – 1), remain 10%, of successful search are uniformly spread in rest of the array (indices <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_46.png"> to <em>n</em> – 1). To search element using, comparison based algo, which one is correct.`,
       image: "",
       options: [
-        "Insertion sort always perform fewer comparison then selection sort.",
-        "Selection sort always perform fewer swaps than insertion sort.",
-        "Insertion sort is stable but not selection sort.",
-        "For reverse sorted array, both insertion and selection have same number of swaps.",
-      ],
-      answer: "C",
-      solution: "(c)<br>For sorted array both selection and insertion sort have zero comparison."
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `Consider the following function, returning sum of the array:
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_43.png">
-                            <br>
-                            Which of the following statements is/are correct?`,
-      image: "",
-      options: [
-        `<em>T</em>
-                                    (<em>n</em>
-                                    ) = Ο(<em>n</em>
-                                    log <em>n</em>
-                                    ), as algorithm splits array in two equal half.`,
-        `Space complexity is Ο(log <em>n</em>
-                                    ), due to recursion depth.`,
-        "Logic work correctly for all inputs.",
-        "Logic fails for array size 1.",
-      ],
-      answer: ["A", "B", "C"],
-      solution: "(a, b, c)"
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MCQ",
-      text: `Suppose you have a range from [1 – <em>n</em>
-                                <sup>
-                                    log <em>n</em>
-                                </sup>
-                                ] integer values. Worst case time complexity of an efficient algorithm to sort n numbers
-                                chosen from this range?`,
-      image: "",
-      options: [
-        `Ο(n log <em>n</em>
-                                    )`,
-        `Ο(n<sup>log n</sup>
-                                    (log n)<sup>2</sup>
-                                    )`,
-        `Ο(n<sup>log n</sup>
-                                    )`,
-        `Ο(log <em>n</em>
-                                    )<sup>2</sup>`,
-      ],
-      answer: "A",
-      solution: `(a)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_44.png">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MCQ",
-      text: `An unsorted array A of size n distinct element, 90% of the successful search at the
-                                first 25% of the array (index 0 to <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_45.png">
-                                – 1), remain 10%, of successful search are uniformly spread in rest of the array
-                                (indices <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_46.png">
-                                to <em>n</em>
-                                – 1).
-                            
-                            To search element using, comparison based algo, which one is correct.`,
-      image: "",
-      options: [
-        `Expected comparison is less than 0.175 <em>n</em>
-                                    .`,
-        `Apply two pass linear search first, scan 0 to <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_47.png">
-                                    if not found, search <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_48.png">
-                                    to <em>n</em>
-                                    – 1.`,
-        `Random searching at first 25% location of array for 90% time, then 75% location for
-                                    10% time.`,
+        `Expected comparison is less than 0.175 <em>n</em> .`,
+        `Apply two pass linear search first, scan 0 to <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_47.png"> if not found, search <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-1/img_48.png"> to <em>n</em> – 1.`,
+        `Random searching at first 25% location of array for 90% time, then 75% location for 10% time.`,
         "None of these",
       ],
       answer: "B",
-      solution: `(b)
-                            
-                            
-                                <img alt="" src="js/questions/easy_2026_algorithm-1/img_49.png">
-                            <br><div>&nbsp;</div>
-                                <div>&nbsp;</div>`
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_49.png">`
     },
   ]
 });
