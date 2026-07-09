@@ -684,11 +684,17 @@ function findMatchingTest(testName) {
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   if (bracketMatch) {
     const bracketText = bracketMatch[1];
-    if (window.testBackendIdMap[bracketText]) {
-      return bracketText;
-    }
+    const compositeKey = currentTestListId + "|" + bracketText;
+    if (window.testBackendIdMap[compositeKey]) return compositeKey;
+    if (window.testBackendIdMap[bracketText]) return bracketText;
   }
-  return Object.keys(window.testBackendIdMap).find((key) => testName.includes(key));
+  
+  let compKey = Object.keys(window.testBackendIdMap).find((key) => {
+    return key.startsWith(currentTestListId + "|") && testName.includes(key.split("|")[1]);
+  });
+  if (compKey) return compKey;
+
+  return Object.keys(window.testBackendIdMap).find((key) => !key.includes("|") && testName.includes(key));
 }
 
 function proceedFromInstructions() {

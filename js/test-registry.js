@@ -37,7 +37,9 @@ window.registerTest = function (config) {
 
   window.testBackendIdMap = window.testBackendIdMap || {};
   let matchName = config.name.replace(/^[A-Za-z]+\s*-\s*/, "");
-  window.testBackendIdMap[matchName] = safeId;
+  let compositeKey = config.series + "|" + matchName;
+  window.testBackendIdMap[compositeKey] = safeId;
+  window.testBackendIdMap[matchName] = safeId; // Fallback
 
   window.apexTestRegistry.push(config);
 };
