@@ -2437,7 +2437,7 @@ registerTest({    // made easy 2026 cse topic wise test coa-2
   ]
 });
 
-registerTest({
+registerTest({     //made easy 2026 cse topic wise test algorithms part 1
   series: "cse-gate-2026-pyq",
   name: "TWT - Algorithms-1",
   date: "July 13, 2026",
@@ -2691,5 +2691,236 @@ registerTest({
       answer: "B",
       solution: `<img alt="" src="js/questions/easy_2026_algorithm-1/img_49.png">`
     },
+  ]
+});
+
+
+registerTest({
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Algorithm-2",
+  date: "July 13, 2026",
+  questions: [
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>G</em> = (<em>V</em> , <em>E</em> ) be a directed graph with non-negative edge weights, let s and t be two vertices such that path exist from <em>s</em> → t.<br>Which of the following conditions, such that path guaranteed to be unique.`,
+      image: "",
+      options: [
+        `When all edges are distinct positive integers.`,
+        `When all edges are distinct positive integers and the graph contains no directed cycles.`,
+        `When all edge length are distinct power of 2.`,
+        `None of the above`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Suppose you implement priority queue using sorted and unsorted array. Worst case time complexity of insert and extract-min is [assume ascending order of sorted array extract-min isdelete minimum]`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_21.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_22.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_23.png">`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_24.png">`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider an array arr[ ] = {10, 7, 15, 17, 2, 20, 6, 3}, array index start with ‘3’.<br>After building a min heap using bottom-up approach, which element at location arr[6].`,
+      image: "",
+      answer: 10,
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_25.png">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>X</em> = {<em>x</em> <sub>1</sub> , <em>x</em> <sub>2</sub> ..... <em> x<sub>n</sub> </em> } be a set of n real valued points on the number line (not necessarily sorted).<br> An internal [<em>x</em> , <em>x</em> + 2] can be placed starting at any point <em>x</em> ∈ <em>X</em> , and covers all points within that<br> range. We have to cover all points in X using the minimum number of such internals.<br> Greedy algorithm works:<br> While there are uncovered points.<br> Choose the leftmost uncovered point <em> x<sub>i</sub> </em> <br> Place an internal starting at xi → covers [ <em> x<sub>i</sub> </em> , <em> x<sub>i</sub> </em> + 2].<br> <em>S</em> <sub>1</sub> : <em>X</em> = [0.9, 1.1, 2.5, 2.7, 4.2, 4.9, 6.1, 6.8], the algorithm places 3 intervals to cover all points.<br> <em>S</em> <sub>2</sub> : <em>T</em> (<em>n</em> ) = Ο(<em>n</em> log <em>n</em> ) for unsorted array, Ο(n) for sorted array.<br> <em>S</em> <sub>3</sub> : If we replace [<em>x</em> , <em>x</em> + 2] with a symmetric interval [<em>x</em> – 1, <em>x</em> + 1], the greedy strategy needs to be<br>changed to pick rightmost point within range instead of leftmost.`,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub> are true`,
+        `Only <em>S</em> <sub>1</sub> is true`,
+        `<em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> are true`,
+        `<em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> are true`
+      ],
+      answer: ["D"],
+      solution: `(a) Start with 0.9, internal [0.9, 2.9], [4.2, 6.2], [6.8, 8.8].<br> (b) If unsorted, sort <em>X</em> = Ο(n log n), linear search Ο(n).<br>(c) Strategy is independent of array index location.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Determine the number of ways to fill below tree from [1 to 10] values such that each parent is greater than its children? <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_4.png"><br><br>`,
+      image: "",
+      answer: 5760,
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_5.png">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider, <em>G</em> = (<em>V</em> , <em>E</em> ) be connected undirected graph with distinct positive edge weights. Let <em>T</em> be the MST of G.<br> Consider the following statements:<br> I. For any two vertices u and v, the path between <em>u</em> and <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-2/img_6.png"> in T is not necessarily the shortest path in <em>G</em> .<br> II. If an edge ∈ <em>E</em> is not present in any cycle in <em>G</em> , then <em>e</em> must in every MST of <em>G</em> .<br> III. If <em>e</em> ∈ <em>T</em> and replacing it with a lighter edge <em>e</em> ′ ∉ <em>T</em> then new tree is still a MST.<br>Which of the above statements is/are always true?`,
+      image: "",
+      options: [
+        `Only 1`,
+        `1 and 2`,
+        `2 and 3`,
+        `All 1, 2, and 3`
+      ],
+      answer: "B",
+      solution: `•MST minimizes the total weight not individual shortest paths between pairs.<br>•Edge not in any cycle in bridge edge, and always in MST.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following graph:<br> Number of different BFS sequence possible from source ‘<em>S</em> ’. <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_16.png"><br><br>`,
+      image: "",
+      answer: 24,
+      solution: `After exploring S, we have 3 node in queue arrange in 3! ways, then removing any node from<br> queue, put 2 more node, 2! ways and this process continuous, till queue empty.<br> Total = 3! ×2 ×2<br>= 6 ×4 = 24`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the adjacency list representation of graph, each vertex maintain list for outgoing edges only. Let <em>n</em> and <em>m</em> denote the number of vertices and edges respectively in graph and <em>k</em> is the maximum in-degree of a vertex.<br>Worst case to compute the in-degree of a given vertex?`,
+      image: "",
+      options: [
+        `Θ(<em>n</em> )`,
+        `Θ(<em>m</em> )`,
+        `Θ(<em>k</em> )`,
+        `Θ(<em>n</em> + <em>k</em> )`
+      ],
+      answer: "B",
+      solution: `Without explicitly maintaining a list of incoming edges, you might have to scan all the edges to identify the incoming arcs.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following connected graph: <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_7.png"><br><br> Suppose <em>x</em> always be part of minimum spanning tree and y can’t be part of MST.<br> What is the sum of Maxvalue(<em>x</em> ) + Minvalue(y) = ?`,
+      image: "",
+      answer: 29,
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_8.png">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following function: <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_9.png"><br><br> What is the function computes?`,
+      image: "",
+      options: [
+        `Number of partitions of n into distinct positive integers.`,
+        `Number of ordered sequence of positive integers that sum to <em>n</em> .`,
+        `Number of subsets of {1, 2, ..... <em>n</em> } that sum to <em>n</em> .`,
+        `None of these`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_10.png">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following weighted graph. <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_11.png"><br><br> Which of the following is/are true?`,
+      image: "",
+      options: [
+        `Dijkstra fails to find the shortest path in graph.`,
+        `Edge [<em>D</em> , <em>E</em> ] [<em>D</em> , <em>F</em> ], [<em>A</em> , <em>B</em> ] are not part of Dijkstra tree.`,
+        `There exist a pair of vertex have 2 different shortest path.`,
+        `None of these`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_12.png">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>G</em> = (<em>V</em> , <em>E</em> ) be a connected, undirected, weighted graph with distinct positive edge weights.<br> Suppose <em>T</em> ⊆ <em>G</em> is the unique minimum spanning tree (MST) of <em>G</em> and for a given real value λ defined the set. <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_13.png"><br><br> Let <em>G</em> <sub>≤ λ</sub> = (<em>V</em> , <em>E</em> <sub>≤ λ</sub> ) be the threshold subgraph induced by these edges.<br>Which of the following statements is/are always true?`,
+      image: "",
+      options: [
+        `If <em>G</em> ≤ <em>λ</em> is disconnected, then no edge from any component of <em>G</em> ≤ <em>λ</em> can be part of the MST.`,
+        `The number of connected components in <em>G</em> <sub>≤ λ</sub> decrease if λ → ∞.`,
+        `For any value λ, all edges in <em>T</em> ∩ <em>G</em> <sub>≤ λ</sub> form a forest in <em>G</em> .`,
+        `The first |V| – 1 edges added as λ increase will always be the edges of MST <em>T</em> .`
+      ],
+      answer: ["B", "C"],
+      solution: `(a) Disconnected component may part of MST in future.<br>(d) We cannot directly adds |V| –1 edges in MST.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following <em>G</em> = (<em>V</em> , <em>E</em> ) undirected connected weighted graph, given in form of matrix. <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_14.png"><br><br> where ‘0’ entry in matrix represent no edge.<br> Non-zero entry in matrix represent undirected edge and its weights.<br> Value of <em>x</em> for which graph have maximum MST is y.<br> Value of <em>x</em> * y is ________?`,
+      image: "",
+      answer: 10,
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_15.png">`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following code for an array [1 ... <em>n</em> ]? <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_1.png"><br><br> Let <em>C</em> (<em>n</em> ) be the total number of comparison done during unknown loop(<em>A</em> , <em>n</em> ). (<em>S</em> , <em>n</em> ) be the totalnumber of swaps done.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_2.png">`,
+        `The final structure of <em>A</em> cannot be used for in place heap sort because it violets parent child ordering.`,
+        `<img alt="" src="js/questions/easy_2026_algorithm-2/img_3.png">`,
+        `Both (a) and (c)`
+      ],
+      answer: "C",
+      solution: `•Given code performing bottom-up heap building require Ο(n) comparison and Ο(<em>n</em> ) swaps.<br> •Even elements are same <em>S</em> (<em>n</em> ) = 0, <em>C</em> (<em>n</em> ) ∈0.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following directed graph <em>G</em> is source vertex, ‘<em>A</em> ’ is DFS traversal tree.<em>F</em> , <em>B</em> , <em>C</em> , <em>T</em> are forward, back, cross and tree edges. <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_17.png"><br><br> Which of the following option is/are correctly possible?`,
+      image: "",
+      options: [
+        `There exist DFS sequence from vertex <em>A</em> with at most two forward edges.`,
+        `There exist DFS sequence from vertex <em>A</em> with no forward edges.`,
+        `For every sequence of DFS from source A, always no back edges.`,
+        `There exists DFS sequence from source A, with no cross edge.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_18.png">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statement is true for given graph <em>G</em> (<em>n</em> , <em>m</em> ) with <em>m</em> = θ(<em>n</em> <sup>2</sup> ) where <em>n</em> is<br> number of vertices and <em>m</em> is number of edges.<br> (i) Time complexity to test edge <img align="absmiddle" alt="" src="js/questions/easy_2026_algorithm-2/img_19.png"> exists or not in graph.<br>(ii) Space complexity to store graph.`,
+      image: "",
+      options: [
+        `If graph represented in adjacency matrix from (i) is θ(1) (ii) is θ(<em>n</em> ).`,
+        `If graph represented in adjacency matrix from (i) is θ(1) (ii) is θ(<em>n</em> <sup>2</sup> ).`,
+        `If graph represented in adjacency list from (i) is θ(1) (ii) is θ(<em>n</em> ).`,
+        `If graph represented in adjacency list from (i) is θ(<em>n</em> ) (ii) is θ(<em>n</em> ).`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_20.png">`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the MadeEasy Knapsack called MEKnapack <br><br><img alt="" src="js/questions/easy_2026_algorithm-2/img_26.png"><br><br> What is maximum profit using greedy strategy based on profit/weight ratio?`,
+      image: "",
+      answer: 33,
+      solution: `<img alt="" src="js/questions/easy_2026_algorithm-2/img_27.png">`
+    }
   ]
 });
