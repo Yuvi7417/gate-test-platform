@@ -294,7 +294,7 @@ registerTest({  // made easy cse topic wise test digital logic-1
 
 registerTest({   // made easy cse topic wise test database-1
   series: "cs-gate-pyq",
-  name: "TWT - Database-1",
+  name: "TWT - Database-1 (Old)",
   date: "June 05, 2026",
   questions: [
     {
@@ -1483,7 +1483,7 @@ registerTest({    // made easy 2026 cse topic wise test theory of computation-2
 
 registerTest({    // made easy 2026 cse topic wise test database-1
   series: "cs-gate-2026-pyq",
-  name: "TWT - Database-1",
+  name: "TWT - Database-1 (2026)",
   date: "July 11, 2026",
   questions: [
     {
@@ -1725,7 +1725,7 @@ registerTest({    // made easy 2026 cse topic wise test database-1
 
 registerTest({    // made easy 2026 cse topic wise test database-2
   series: "cs-gate-2026-pyq",
-  name: "TWT - Database-2",
+  name: "TWT - Database-2 (2026)",
   date: "July 12, 2026",
   questions: [
     {
