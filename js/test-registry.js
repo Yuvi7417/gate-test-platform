@@ -800,8 +800,7 @@ registerTest({  // made easy cse 2027 subject wise test theory of computation
   name: "SWT - Theory of computation",
   date: "july 17, 2026",
   questions: [
-  ],
-  comingsoon: true
+  ]
 });
 
 registerTest({  // made easy cse 2027 subject wise test database
@@ -816,8 +815,9 @@ registerTest({  // made easy cse 2027 subject wise test database
 
 
 
+// MADE EASY ECE GATE PYQ  ALL TEST SERIES. -----------------
 
-registerTest({   // made easy ece topic wise test digital circuit-1
+registerTest({   // made easy ece 2026 topic wise test digital circuit-1
   series: "ece-gate-pyq",
   name: "TWT - Digital Circuit-1",
   date: "July 07, 2026",
@@ -1049,6 +1049,289 @@ registerTest({   // made easy ece topic wise test digital circuit-1
     }
   ]
 });
+
+registerTest({   // made easy ece 2026 topic wise test digital circuit-2
+  series: "ece-gate-pyq",
+  name: "TWT - Digital Circuit-2",
+  date: "july 11, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Analog circuit-1
+  series: "ece-gate-pyq",
+  name: "TWT - Analog Circuit-1",
+  date: "july 14, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Analog circuit-2
+  series: "ece-gate-pyq",
+  name: "TWT - Analog Circuit-2",
+  date: "july 14, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Analog circuit-3
+  series: "ece-gate-pyq",
+  name: "TWT - Analog Circuit-3",
+  date: "july 17, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Networks-1
+  series: "ece-gate-pyq",
+  name: "TWT - Networks-1",
+  date: "july 11, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Networks-2
+  series: "ece-gate-pyq",
+  name: "TWT - Networks-2",
+  date: "july 18, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Control system-1
+  series: "ece-gate-pyq",
+  name: "TWT - Control System-1",
+  date: "july 13, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Control system-2
+  series: "ece-gate-pyq",
+  name: "TWT - Control System-2",
+  date: "july 20, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Signals & Systems-1
+  series: "ece-gate-pyq",
+  name: "TWT - Signals & Systems-1",
+  date: "july 24, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Signals & Systems-2
+  series: "ece-gate-pyq",
+  name: "TWT - Signals & Systems-2",
+  date: "july 28, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Electronic Devices-1
+  series: "ece-gate-pyq",
+  name: "TWT - Electronic Devices-1",
+  date: "july 16, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test electronic device-2
+  series: "ece-gate-pyq",
+  name: "TWT - Electronic device-2",
+  date: "july 21, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Communication -1
+  series: "ece-gate-pyq",
+  name: "TWT - Communication-1",
+  date: "july 22, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Communication -2
+  series: "ece-gate-pyq",
+  name: "TWT - Communication-2",
+  date: "july 27, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Communication-3
+  series: "ece-gate-pyq",
+  name: "TWT - Communication-3",
+  date: "aug 01, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test electromagnetic-3
+  series: "ece-gate-pyq",
+  name: "TWT - Electromagnetic-3",
+  date: "aug 08, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test electromagnetic-2
+  series: "ece-gate-pyq",
+  name: "TWT - Electromagnetic-2",
+  date: "aug 04, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test electromagnetic-1
+  series: "ece-gate-pyq",
+  name: "TWT - Electromagnetic-1",
+  date: "july 30, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test COA
+  series: "ece-gate-pyq",
+  name: "TWT - COA",
+  date: "aug 07, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Engineering Mathematics-1
+  series: "ece-gate-pyq",
+  name: "TWT - Engineering Mathematics-1",
+  date: "july 25, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test Engineering Mathematics-2
+  series: "ece-gate-pyq",
+  name: "TWT - Engineering Mathematics-2",
+  date: "aug 08, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test General Aptitude-1
+  series: "ece-gate-pyq",
+  name: "TWT - General Aptitude-1",
+  date: "july 23, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 topic wise test general Aptitude-2
+  series: "ece-gate-pyq",
+  name: "TWT - General Aptitude-2",
+  date: "aug 12, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Digital circuit
+  series: "ece-gate-pyq",
+  name: "SWT - Digital Circuit",
+  date: "july 11, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Analog circuit
+  series: "ece-gate-pyq",
+  name: "SWT - Analog Circuit",
+  date: "july 14, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Networks
+  series: "ece-gate-pyq",
+  name: "SWT - Networks",
+  date: "july 11, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Control system
+  series: "ece-gate-pyq",
+  name: "SWT - Control System",
+  date: "july 20, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Signals & systems
+  series: "ece-gate-pyq",
+  name: "SWT - Signals & Systems",
+  date: "july 28, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Electronic Devices
+  series: "ece-gate-pyq",
+  name: "SWT - Electronic Devices",
+  date: "july 16, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test digital Communication
+  series: "ece-gate-pyq",
+  name: "SWT - digital Communication System",
+  date: "aug 03, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test electromagnetic
+  series: "ece-gate-pyq",
+  name: "SWT - Electromagnetic",
+  date: "july 30, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test COA
+  series: "ece-gate-pyq",
+  name: "SWT - COA",
+  date: "aug 12, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Engineering Mathematics
+  series: "ece-gate-pyq",
+  name: "SWT - Engineering Mathematics",
+  date: "july 25, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test General Aptitude
+  series: "ece-gate-pyq",
+  name: "SWT - General Aptitude",
+  date: "july 23, 2026",
+  questions: [
+  ]
+});
+
+registerTest({   // made easy ece 2026 Subject wise test Analog communication system
+  series: "ece-gate-pyq",
+  name: "SWT - Analog communication system",
+  date: "aug 01, 2026",
+  questions: [
+  ]
+})
+
+
+
 
 registerTest({   // go classes cse topic wise test degital logic-1 
   series: "cs-gate-classes",
