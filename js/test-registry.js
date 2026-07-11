@@ -300,15 +300,7 @@ registerTest({  // made easy cse 2027 topic wise test digital logic-1
 registerTest({  // made easy cse 2027 topic wise test digital logic-2
   series: "cs-gate-pyq",
   name: "TWT - Digital logic-2",
-  date: "juLY 11, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test digital logic
-  series: "cs-gate-pyq",
-  name: "SWT - Digital logic",
-  date: "juLY 13, 2026",
+  date: "july 11, 2026",
   questions: [
   ]
 });
@@ -558,15 +550,7 @@ registerTest({   // made easy cse 2027 topic wise test database-1
 registerTest({  // made easy cse 2027 topic wise test database-2
   series: "cs-gate-pyq",
   name: "TWT - Database-2",
-  date: "juLY 12, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test database
-  series: "cs-gate-pyq",
-  name: "SWT - Database",
-  date: "juLY 15, 2026",
+  date: "july 12, 2026",
   questions: [
   ]
 });
@@ -574,7 +558,7 @@ registerTest({  // made easy cse 2027 subject wise test database
 registerTest({  // made easy cse 2027 topic wise test theory of computation-1
   series: "cs-gate-pyq",
   name: "TWT - Theory of computation-1",
-  date: "juLY 14, 2026",
+  date: "july 14, 2026",
   questions: [
   ]
 });
@@ -582,15 +566,7 @@ registerTest({  // made easy cse 2027 topic wise test theory of computation-1
 registerTest({  // made easy cse 2027 topic wise test theory of computation-2
   series: "cs-gate-pyq",
   name: "TWT - Theory of computation-2",
-  date: "juLY 16, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test theory of computation
-  series: "cs-gate-pyq",
-  name: "SWT - Theory of computation",
-  date: "juLY 17, 2026",
+  date: "july 16, 2026",
   questions: [
   ]
 });
@@ -598,7 +574,7 @@ registerTest({  // made easy cse 2027 subject wise test theory of computation
 registerTest({  // made easy cse 2027 topic wise test computer organization and architecture-1
   series: "cs-gate-pyq",
   name: "TWT - computer organization and architecture-1",
-  date: "juLY 18, 2026",
+  date: "july 18, 2026",
   questions: [
   ]
 });
@@ -606,15 +582,7 @@ registerTest({  // made easy cse 2027 topic wise test computer organization and 
 registerTest({  // made easy cse 2027 topic wise test computer organization and architecture-2
   series: "cs-gate-pyq",
   name: "TWT - computer organization and architecture-2",
-  date: "juLY 21, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test computer organization and architecture
-  series: "cs-gate-pyq",
-  name: "SWT - Computer organization and architecture",
-  date: "juLY 24, 2026",
+  date: "july 21, 2026",
   questions: [
   ]
 });
@@ -622,7 +590,7 @@ registerTest({  // made easy cse 2027 subject wise test computer organization an
 registerTest({  // made easy cse 2027 topic wise test computer network-1
   series: "cs-gate-pyq",
   name: "TWT - Computer network-1",
-  date: "juLY 22, 2026",
+  date: "july 22, 2026",
   questions: [
   ]
 });
@@ -630,15 +598,7 @@ registerTest({  // made easy cse 2027 topic wise test computer network-1
 registerTest({  // made easy cse 2027 topic wise test computer network-2
   series: "cs-gate-pyq",
   name: "TWT - Computer network-2",
-  date: "juLY 23, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test computer network
-  series: "cs-gate-pyq",
-  name: "SWT - Computer network",
-  date: "juLY 28, 2026",
+  date: "july 23, 2026",
   questions: [
   ]
 });
@@ -646,7 +606,7 @@ registerTest({  // made easy cse 2027 subject wise test computer network
 registerTest({  // made easy cse 2027 topic wise test c programming and data structure-1
   series: "cs-gate-pyq",
   name: "TWT - C programming and data structure-1",
-  date: "juLY 25, 2026",
+  date: "july 25, 2026",
   questions: [
   ]
 });
@@ -654,15 +614,7 @@ registerTest({  // made easy cse 2027 topic wise test c programming and data str
 registerTest({  // made easy cse 2027 topic wise test c programming and data structure-2
   series: "cs-gate-pyq",
   name: "TWT - C programming and data structure-2",
-  date: "juLY 28, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test C programming and data structure
-  series: "cs-gate-pyq",
-  name: "SWT - C programming and data structure",
-  date: "juLY 29, 2026",
+  date: "july 28, 2026",
   questions: [
   ]
 });
@@ -670,7 +622,7 @@ registerTest({  // made easy cse 2027 subject wise test C programming and data s
 registerTest({  // made easy cse 2027 topic wise test Engineering Mathematics -1
   series: "cs-gate-pyq",
   name: "TWT - Engineering Mathematics-1",
-  date: "juLY 29, 2026",
+  date: "july 29, 2026",
   questions: [
   ]
 });
@@ -678,15 +630,7 @@ registerTest({  // made easy cse 2027 topic wise test Engineering Mathematics -1
 registerTest({  // made easy cse 2027 topic wise test Engineering Mathematics-2
   series: "cs-gate-pyq",
   name: "TWT - Engineering Mathematics-2",
-  date: "juLY 30, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test Engineering Mathematics
-  series: "cs-gate-pyq",
-  name: "SWT - Engineering Mathematics",
-  date: "juLY 31, 2026",
+  date: "july 30, 2026",
   questions: [
   ]
 });
@@ -694,24 +638,15 @@ registerTest({  // made easy cse 2027 subject wise test Engineering Mathematics
 registerTest({  // made easy cse 2027 topic wise test Discrete Mathematics -1
   series: "cs-gate-pyq",
   name: "TWT - Discrete Mathematics -1",
-  date: "juLY 31, 2026",
+  date: "july 31, 2026",
   questions: [
   ]
 });
-
 
 registerTest({  // made easy cse 2027 topic wise test Discrete Mathematics-2
   series: "cs-gate-pyq",
   name: "TWT - Discrete Mathematics-2",
   date: "Aug 01, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test Discrete Mathematics
-  series: "cs-gate-pyq",
-  name: "SWT - Discrete Mathematics",
-  date: "Aug 02, 2026",
   questions: [
   ]
 });
@@ -732,14 +667,6 @@ registerTest({  // made easy cse 2027 topic wise test Algorithms -2
   ]
 });
 
-registerTest({  // made easy cse 2027 subject wise test Algorithms
-  series: "cs-gate-pyq",
-  name: "SWT - Algorithms",
-  date: "Aug 04, 2026",
-  questions: [
-  ]
-});
-
 registerTest({  // made easy cse 2027 topic wise test Compiler Design
   series: "cs-gate-pyq",
   name: "TWT - Compiler Design-1",
@@ -756,14 +683,6 @@ registerTest({  // made easy cse 2027 topic wise test Compiler Design-2
   ]
 });
 
-registerTest({  // made easy cse 2027 subject wise test Compiler Design
-  series: "cs-gate-pyq",
-  name: "SWT - Compiler Design",
-  date: "Aug 06, 2026",
-  questions: [
-  ]
-});
-
 registerTest({  // made easy cse 2027 topic wise test Operating System-1
   series: "cs-gate-pyq",
   name: "TWT - Operating System-1",
@@ -776,14 +695,6 @@ registerTest({  // made easy cse 2027 topic wise test Operating System-2
   series: "cs-gate-pyq",
   name: "TWT - Operating System-2",
   date: "Aug 07, 2026",
-  questions: [
-  ]
-});
-
-registerTest({  // made easy cse 2027 subject wise test Operating System
-  series: "cs-gate-pyq",
-  name: "SWT - Operating System",
-  date: "Aug 08, 2026",
   questions: [
   ]
 });
@@ -811,6 +722,95 @@ registerTest({  // made easy cse 2027 subject wise test General Aptitude
   questions: [
   ]
 });
+
+registerTest({  // made easy cse 2027 subject wise test digital logic
+  series: "cs-gate-pyq",
+  name: "SWT - Digital logic",
+  date: "july 13, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test Operating System
+  series: "cs-gate-pyq",
+  name: "SWT - Operating System",
+  date: "Aug 08, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test Compiler Design
+  series: "cs-gate-pyq",
+  name: "SWT - Compiler Design",
+  date: "Aug 06, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test Algorithms
+  series: "cs-gate-pyq",
+  name: "SWT - Algorithms",
+  date: "Aug 04, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test Discrete Mathematics
+  series: "cs-gate-pyq",
+  name: "SWT - Discrete Mathematics",
+  date: "Aug 02, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test Engineering Mathematics
+  series: "cs-gate-pyq",
+  name: "SWT - Engineering Mathematics",
+  date: "july 31, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test C programming and data structure
+  series: "cs-gate-pyq",
+  name: "SWT - C programming and data structure",
+  date: "July 29, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test computer network
+  series: "cs-gate-pyq",
+  name: "SWT - Computer network",
+  date: "july 28, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test computer organization and architecture
+  series: "cs-gate-pyq",
+  name: "SWT - Computer organization and architecture",
+  date: "july 24, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test theory of computation
+  series: "cs-gate-pyq",
+  name: "SWT - Theory of computation",
+  date: "july 17, 2026",
+  questions: [
+  ]
+});
+
+registerTest({  // made easy cse 2027 subject wise test database
+  series: "cs-gate-pyq",
+  name: "SWT - Database",
+  date: "july 15, 2026",
+  questions: [
+  ]
+});
+
 
 
 
