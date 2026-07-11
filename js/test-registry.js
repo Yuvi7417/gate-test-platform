@@ -800,7 +800,8 @@ registerTest({  // made easy cse 2027 subject wise test theory of computation
   name: "SWT - Theory of computation",
   date: "july 17, 2026",
   questions: [
-  ]
+  ],
+  comingsoon: true
 });
 
 registerTest({  // made easy cse 2027 subject wise test database
