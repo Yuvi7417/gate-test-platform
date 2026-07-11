@@ -530,7 +530,7 @@ function renderTestList(t, filter) {
       twSeen++;
     } else {
       testNumber = t.schedule.length - i;
-      bracket = "Module " + label;
+      bracket = label;
     }
     return {
       name:
