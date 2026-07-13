@@ -1055,6 +1055,240 @@ registerTest({   // made easy ece 2026 topic wise test digital circuit-2
   name: "TWT - Digital Circuit-2",
   date: "july 11, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 5-bit binary counter starts with 00000. If 144 input clock pulses are applied, the number of times counter will be reset is ________.`,
+      image: "",
+      options: [],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_1.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A shift register is operating/connected with 25 kHz clock. The time taken to feed the 2 nibbles of data serially into shift register is,`,
+      image: "",
+      options: [
+        `3.2 msec`,
+        `32 msec`,
+        `0.32 msec`,
+        `32 μsec`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_2.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The final values of <em>Q</em><sub>1</sub> and <em>Q</em><sub>0</sub> respectively after 4 clock pulses, if initial values are 00 in the sequential circuit shown below is:<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_3.png"/><br><br>`,
+      image: "",
+      options: [
+        `10`,
+        `11`,
+        `00`,
+        `01`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_4.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `All the logic gates in the circuit shown below have finite propagation delay. The circuit can be used as a clock generator, if<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_5.png"/><br><br>`,
+      image: "",
+      options: [
+        `<em>X</em> = 0`,
+        `<em>X</em> = 1`,
+        `<em>X</em> = Y`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_6.png"/><br><br>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_7.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The integrated output waveform for a dual slope <em>ADC</em> is shown in the figure. If the ADC uses 16 bit counter with 8 MHz clock, then the time ‘<em>T</em> ’ will be<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_8.png"/><br><br>`,
+      image: "",
+      options: [
+        `0.64 msec`,
+        `8.192 msec`,
+        `0.128 msec`,
+        `0.064 msec`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_9.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 4-bit MOD-6 ripple counter uses J-K flip-flops. If propagation delay of each flip-flop is 20 nsec, then the maximum clock frequency that can be used is ________ MHz.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 12.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_36.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An 8-bit binary DAC produces output voltage of 2 V for a binary input (01100100). The output voltage for the binary input (10100010) is _________ V.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 3.24,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_39.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the circuit shown below <em>A</em> , <em>B</em> , <em>C</em> are the inputs and <em>P</em> , <em>Q</em> are the two outputs. The circuit is a<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_22.png"/><br><br>`,
+      image: "",
+      options: [
+        `Half subtractor where <em>Q</em> is the subtracted value and <em>P</em> is the borrow.`,
+        `Full subtractor where <em>Q</em> is the borrow and <em>P</em> is the subtracted value.`,
+        `Full adder where <em>Q</em> is the sum and <em>P</em> is the carry.`,
+        `Full adder where <em>P</em> is the sum and <em>Q</em> is the carry.`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_23.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `For the circuit below, which of the following options correctly represents <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_24.png"/><br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_25.png"/><br><br>`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_26.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_27.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_28.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_29.png"/><br><br>`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_30.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 5-bit ripple carry adder is made using 5 identical full adders such that the worst case delay of the 5-bit ripple carry adder is 125 ns. If the carry propagation delay [<em>t</em><sub><em>pd</em> (carry)</sub> ] is more than [<em>t</em><sub><em>pd</em> (sum)</sub> ], then the value of <em>t</em><sub><em>pd</em> (carry)</sub> is _______ (in nsec).`,
+      image: "",
+      options: [],
+      answer: 25,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_31.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 4-bit synchronous series carry counter has flip-flops having propagation delay of 40ns each and AND gates having propagation delay of 10 ns each. The minimum time period of clock pulses can be:`,
+      image: "",
+      options: [
+        `100 nsec`,
+        `90 nsec`,
+        `50 nsec`,
+        `60 nsec`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_19.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The circuit shown below is a ring oscillator made up of identical inverters. If the output waveform has frequency of 20 MHz, then propagation delay of each inverter is<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_20.png"/><br><br>`,
+      image: "",
+      options: [
+        `10 nsec`,
+        `20 nsec`,
+        `15 nsec`,
+        `5 nsec`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_21.png"/><br><br>`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 4-bit serial-in-parallel-out right shift register with initial content as 1010 is shown in the figure below. The content of the shift register will be 1111 after ________ clock pulses.<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_34.png"/><br><br>`,
+      image: "",
+      options: [],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_35.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given below is a synchronous sequential circuit with two T flip-flops <em>T<sub>A</sub></em> and <em>T<sub>B</sub></em> with their outputs denoted as <em>A</em> and <em>B</em> respectively, with <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_10.png"/><br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_11.png"/><br><br>Starting from initial state (<em>AB</em> = 00), the sequence of states visited by the circuit is`,
+      image: "",
+      options: [
+        `00 → 10 → 01 → 11 → 00`,
+        `00 → 10 → 01 → 11 → 10`,
+        `00 → 01 → 11 → 00`,
+        `00 → 01 → 10 → 11 → 00`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_12.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A logic circuit implements the boolean function <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_13.png"/> It is found that the input combination Z = 1, Y = 1 can never occur. Taking this into account, a simplified expression for <em>F</em> is given by:`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_14.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_15.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_16.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_17.png"/><br><br>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_18.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In the latch circuit shown, the NAND gates have non-zero, but unequal propagation delays. The present input condition is ; <em>P</em> = <em>Q</em> = ‘0’. If the input condition is changed simultaneously to <em>P</em> = <em>Q</em> = ‘1’, the possible outputs <em>X</em> and <em>Y</em> are<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_37.png"/><br><br>`,
+      image: "",
+      options: [
+        `<em>X</em> = 1, <em>Y</em> = 1`,
+        `<em>X</em> = 1, <em>Y</em> = 0`,
+        `<em>X</em> = 0, <em>Y</em> = 1`,
+        `<em>X</em> = 0, <em>Y</em> = 0`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_38.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the combinational circuit below,<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_32.png"/><br><br>The duration for which the output Y will be high is ________ (in nsec).`,
+      image: "",
+      options: [
+
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ec_digital_circuits_2/img_33.png"/><br><br>`
+    },
   ]
 });
 
@@ -1063,6 +1297,240 @@ registerTest({   // made easy ece 2026 topic wise test Analog circuit-1
   name: "TWT - Analog Circuit-1",
   date: "july 14, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single phase full wave rectifier uses semiconductor diodes. The transformer voltage is 40 V rms with center tap. The load consists of a 45 μF capacitor in parallel with a 300 Ω resistor. The diode and transformer resistances and leakage reactance are neglected. If the power line frequency is 60 Hz, the dc current in the circuit will be`,
+      image: "",
+      options: [
+        `264.12 mA`,
+        `288.18 mA`,
+        `132.05 mA`,
+        `144.08 mA`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_20.png"/><br/>Assuming the |<em>V</em> <sub> <em>BE</em> (on) </sub> | = 0.7 V, then the value of output voltage <em>V</em> <sub>0</sub> is equal to _________ V.<br/>(Rounded upto 2 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: -5.15,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A sinusoidal input is given to the network shown below. The output waveform is<br/><img alt="" src="js/questions/ec_2026_analog_1/img_2.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_3.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_4.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_5.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_6.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the given circuit, diodes <em>D</em> <sub>1</sub> and <em>D</em> <sub>2</sub> are ideal and <em> V<sub>i</sub> </em> (<em>t</em> ) = 9 sin (ω<em>t</em> ) volt.<br/><img alt="" src="js/questions/ec_2026_analog_1/img_24.png"/><br/>The average steady-state voltage across diode <em>D</em> <sub>2</sub> (with polarity as mentioned) is _________ volt.<br/>(Rounded upto nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: -9,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A signal 30 sin ωt V is applied across <em>AB</em> . Assuming ideal diodes, the output measured across <em>WX</em> is<br/><img alt="" src="js/questions/ec_2026_analog_1/img_8.png"/>`,
+      image: "",
+      options: [
+        `sin ω<em>t</em> V`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_9.png"/>`,
+        `0 V`,
+        `60 V`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_10.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given circuit, assume P<sub>z max</sub> = 2 Watt and V<sub>z</sub> = 5 V for the zener diode. If V<sub>i</sub> =12 sin ωt volt, then the minimum value of <em> R<sub>s</sub> </em> to prevent the burn out of the Zener diode is<br/><img alt="" src="js/questions/ec_2026_analog_1/img_12.png"/>`,
+      image: "",
+      options: [
+        `25 Ω`,
+        `17.5 Ω`,
+        `20 Ω`,
+        `35 Ω`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a p-n-p common emitter amplifier shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_14.png"/><br/>The transfer characteristics of the circuit can be approximately represented as`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_15.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_16.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_17.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_18.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_19.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 750 mW maximum power dissipation diode at 25°C has 6 mW/°C de-rating factor. If the forward voltage drop remains constant at 0.7 V, the maximum forward current at 73°C is _______ mA.<br/>(Rounded upto nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 660,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_22.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_23.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Select the correct option(s) regarding clipper circuits:`,
+      image: "",
+      options: [
+        `Clipper circuits serve to protect circuit from damage as a result of over-voltage condition.`,
+        `Clipper circuits are also known as D.C. restorer.`,
+        `Clipper circuits are also called wave shaping circuits.`,
+        `Clipper circuits cannot be designed by using op-amps.`,
+      ],
+      answer: ["A", "C"],
+      solution: `•Clipping circuits are wave shaping circuits, used to clip off the portions of an input waveform.<br/>They can be used to limit the amplitude of a waveform to a certain level, thus protecting<br/>circuit from damage as a result of over-voltage condition.<br/>•Clipper circuits can also be designed using op-amps.<br/>•Clamper circuits are known as D.C. restorer as they adjust the DC level of the waveform.<br/>Thus, options (a) and (c) are correct.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_43.png"/><br/>Assume that the cut-in voltage of the BJT | <em> V<sub>BE</sub> </em> | = 0.7 V and β = 80. Then the value of <em> V<sub>CEQ</sub> </em> is<br/>________ V. (Rounded upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: -17.436,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the MOS transistor circuit shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_26.png"/><br/>The two N-MOS transistors are identical with threshold voltage <em> V<sub>T</sub> </em> = 1 V and <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_1/img_27.png"/> Assuming the value of λ = 0, the value of drain to source voltage for transistor <em>T</em> <sub>2</sub> (<em>V</em> <sub> <em>DS</em> 2 </sub> ) is equal to`,
+      image: "",
+      options: [
+        `6 V`,
+        `5 V`,
+        `9 V`,
+        `7 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_28.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the class-B output stage with complementary MOSFETs shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_48.png"/><br/>Assuming that the <em> V<sub>TN</sub> </em> and <em> V<sub>TP</sub> </em> values can be neglected for large signal analysis and<img align="absmiddle" alt="" src="js/questions/ec_2026_analog_1/img_49.png"/> The maximum output voltage such that <em> Q<sub>n</sub> </em> remains biased in saturation region is equal to _________ V. (Rounded upto 2 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 10.67,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The correct waveform for output (<em>V</em> <sub>0</sub> ) for below network is [Assume cut-in voltage of the diode, <em> V<sub>d</sub> </em> = 0.7 V]<br/><img alt="" src="js/questions/ec_2026_analog_1/img_30.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_31.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_32.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_33.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_1/img_34.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_35.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_36.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_45.png"/><br/>Assume all the transistors to be matched and working in active region with β = β<sub>1</sub> = β<sub>2</sub> = 100, β<sub>3</sub> = 99 and V<sub>BE(on)</sub> = 0.7 V. If the value of <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_1/img_46.png"/> = 120 mA, then the value of resistance R<sub>1</sub> is equal to _________ Ω. (Rounded upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 104.98,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_47.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_1/img_38.png"/><br/>The npn transistor has β = 50, <em>V</em> <sub> <em>CE</em> (sat) </sub> = 0.5 V and <em>V</em> <sub> <em>BE</em> (ON) </sub> = 0.7 V. If the maximum output voltage that can appear is 4.6 V, then the range of input voltage for which the transistor will work in active region is`,
+      image: "",
+      options: [
+        `0.7 V ≤ <em>V</em> <sub>in</sub> ≤ 4.5 V`,
+        `1.86 V ≤ <em>V</em> in ≤ 4.225 V`,
+        `1.025 V &lt;<em>V</em> <sub>in</sub> ≤ 1.512 V`,
+        `2.041 V &lt;<em>V</em> <sub>in</sub> &lt;3.025 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_39.png"/><br/><img alt="" src="js/questions/ec_2026_analog_1/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A DC current of 31 μA flows through the circuit shown. The diode in the circuit is forward biased and it has an ideality factor of two. At the quiescent point, the diode has a junction capacitance of 0.8 nF. Its neutral region resistances can be neglected. Assume that the room temperature thermal equivalent voltage is 26 mV.<br/><img alt="" src="js/questions/ec_2026_analog_1/img_41.png"/><br/>For ω = 3 × 10<sup>6</sup> rad/s, the amplitude of the small signal component of diode current is`,
+      image: "",
+      options: [
+        `6.402 μA`,
+        `17.637 μA`,
+        `5.724 μA`,
+        `22.896 μA`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In the regulator circuit shown below, <em> V<sub>z</sub> </em> = 15 V, β = 60 and <em> V<sub>BE</sub> </em> = 0.7 V<br/><img alt="" src="js/questions/ec_2026_analog_1/img_51.png"/><br/>Then which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Current through zener diode is 14.3 mA.`,
+        `Output voltage (<em>V</em> <sub>0</sub> ) is 14.3 V.`,
+        `Current through zener diode is 4.233 mA.`,
+        `Output voltage (<em>V</em> <sub>0</sub> ) is 1.7 V.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/ec_2026_analog_1/img_52.png"/>`
+    }
   ]
 });
 
@@ -1071,6 +1539,231 @@ registerTest({   // made easy ece 2026 topic wise test Analog circuit-2
   name: "TWT - Analog Circuit-2",
   date: "july 14, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the NMOS common gate circuit shown below. The device parameters are:<br/>Transconductance, <em> g<sub>m</sub> </em> = 3 mS and channel length modulation parameter, λ = 0 V<sup>–1</sup> .<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_1.png"/><br/><br/>The mid-band voltage gain <em> A<sub>V</sub> </em> is`,
+      image: "",
+      options: [
+        `21.56`,
+        `–21.56`,
+        `–10.28`,
+        `10.28`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the transistor circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_3.png"/><br/><br/>Assume that the biasing details are left out and the transistors are working in active region with <em>T</em> <sub>1</sub> having transconductance gm1 and input small signal base-emitter resistance <em>r</em> <sub>π1</sub> and transistor <em>T</em> <sub>2</sub> having the transconductance <em>g</em> <sub> <em>m</em> 2 </sub> and input small signal base-emitter resistance <em>r</em> <sub>π2</sub> . Then the voltage gain | <em> A<sub>V</sub> </em> | is given as`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_4.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_5.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_6.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_7.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given for an FET, g<sub>m</sub> = 11.2 mA/Volt and Total capacitance = 530 pF. For a voltage gain of –40, the bandwidth of the FET amplifier will be`,
+      image: "",
+      options: [
+        `3.360 kHz`,
+        `84.08 kHz`,
+        `84.08 MHz`,
+        `3.360 MHz`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the current mirror circuit shown below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_24.png"/><br/><br/>The transistors has the following parameters: <em>k</em> ′ <em> <sub>n</sub> </em> = 60 μA/V<sup>2</sup> , <em> V<sub>TN</sub> </em> = 1.2 V and λ = 0. The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_25.png"/> required for <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_26.png"/> and <em>V</em> <sub>DS2(sat)</sub> = 0.92 V is<br/>(Rounded upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: 0.548,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_27.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `In the circuit shown below: <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_29.png"/> If <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_30.png"/> = 1.5 mA and the value of C<sub>C</sub> = ∞ and <em>C</em> <sub>1</sub> = 12 μF, then which of the following options are<br/>correct? (Assume <em> V<sub>T</sub> </em> = 25 mV and <em> f<sub>L</sub> </em> is the input cut-off frequency due to capacitor <em>C</em> <sub>1</sub> .)`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_31.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_32.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_33.png"/>`,
+        `<em> f<sub>L</sub> </em> = 9 Hz`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_34.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_10.png"/><br/><br/>Assume both the transistors are in active region with current gain β<sub>1</sub> = β<sub>2</sub> = β, small-signal input resistance r<sub>π1</sub> and r<sub>π2</sub> and the transconductance g<sub>m1</sub> and g<sub>m2</sub> respectively, then the value of R<sub>in</sub> is equal to`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_12.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_13.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_14.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_19.png"/><br/><br/>The transistor is biased such that <em> g<sub>m</sub> </em> = 4 mA/V and value of <em> R<sub>D</sub> </em> and <em> R<sub>S</sub> </em> is equal to 12 kΩ and 6 kΩ respectively. Then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_20.png"/>is equal to _________. (Rounded upto nearest integer value)`,
+      image: "",
+      options: [],
+      answer: -2,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the transistor circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_22.png"/><br/><br/>Assume the transistor is biased in saturation region with <em> g<sub>m</sub> </em> = 4 mA/V. Then the value of input resistance <em>R</em> <sub>in</sub> (in Ω) is equal to _________. (Rounded upto nearest integer value)`,
+      image: "",
+      options: [],
+      answer: 250,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_16.png"/><br/><br/>Assume r0 = 96.5 kΩ and β = 75, then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_17.png"/> is equal to __________. (Assume <em> V<sub>T</sub> </em> = 26 mV)`,
+      image: "",
+      options: [
+        `–7.573 mA/V`,
+        `22.72 mA/V`,
+        `7.573 mA/V`,
+        `–22.72 mA/V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_36.png"/><br/><br/>Assume that both the transistors are working in the active region with <em> V<sub>A</sub> </em> = ∞ and both the transistors have current gain equal to ‘β’. Then the value of input resistance <em>R</em> <sub>in</sub> as seen by small signal applied to the emitter of transistor <em>Q</em> <sub>1</sub> is`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_37.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_38.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_39.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_40.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_41.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential amplifier shown in figure. Neglect base currents, assume <em> V<sub>A</sub> </em> = ∞ for all<br/> transistors, and let <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_62.png"/>= 2 mA. The emitter currents can be written as<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_63.png"/><br/><br/>Assume <em>V</em> <sub>1</sub> = <em>V</em> <sub>2</sub> = 0 and <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_64.png"/> = 1 × 10<sup>–13</sup> A. The value of (<em>V</em> <sub>01</sub> –<em>V</em> <sub>02</sub> ) (in volts) when <em>R</em> <sub> <em>c</em> 1 </sub> = 8 kΩ, <em>R</em> <sub> <em>c</em> 2 </sub> = 7.9 kΩ and <em> V<sub>T</sub> </em> = 26 mV is __________. (Rounded upto two decimal place)<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_65.png"/>`,
+      image: "",
+      options: [],
+      answer: -0.10,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_43.png"/><br/><br/>Assume that the transistor has β = 100, <em> V<sub>A</sub> </em> = 120 V and <em> V<sub>T</sub> </em> = 26 mV, then the small-signal voltage gain <em> A<sub>V</sub> </em> =<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_44.png"/>is equal to`,
+      image: "",
+      options: [
+        `–39.47`,
+        `42.34 × 10<sup>3</sup>`,
+        `42.34`,
+        `–39.47 × 10<sup>3</sup>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_45.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the common-gate circuit shown in figure with parameters <em>V</em> <sup>+</sup> = 5 V, <em>V</em> <sup>–</sup> = –5 V, <em> R<sub>s</sub> </em> = 4 kΩ, <em> R<sub>D</sub> </em> = 2 kΩ, <em> R<sub>L</sub> </em> = 4 kΩ, <em> R<sub>G</sub> </em> = 50 kΩ and <em>R</em> <sub>i</sub> = 0.5 kΩ. The transistor parameters are: <em> k<sub>p</sub> </em> = 1 mA/V<sup>2</sup> , <em> V<sub>TP</sub> </em> = –0.8 V, λ = 0, C<sub>gs</sub> = 4 pF, C<sub>ds</sub> = 0 and C<sub>gd</sub> = 1 pF. Which of the following statements is/are<br/>correct?<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_70.png"/><br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_71.png"/>`,
+      image: "",
+      options: [
+        `The mid band voltage gain is 3.164 V/V.`,
+        `The 3 dB upper cutoff frequency is 119.36 MHz.`,
+        `The mid band voltage gain is 0.936 V/V`,
+        `The drain current is 0.74 mA`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_72.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_73.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_55.png"/><br/><br/>Assume the thermal voltage <em> V<sub>T</sub> </em> = 25 mV and <em> V<sub>BE</sub> </em> = 0.7 V. The voltage gain <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_56.png"/>is equal to`,
+      image: "",
+      options: [
+        `–196.265 V/V`,
+        `–291.41 V/V`,
+        `–392.53 V/V`,
+        `–292.53 V/V`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_57.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential amplifier circuit shown below. The circuit and transistor parameters are<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_59.png"/><br/><br/>V<sup>–1</sup> . The differential mode voltage gain is ________________. (Rounded upto nearest integer value)<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_60.png"/>`,
+      image: "",
+      options: [],
+      answer: 79,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_61.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the circuit shown in figure, the transistor parameters are: β = 120, <em>V</em> <sub> <em>BE</em> (on) </sub> = 0.7 V, <em> V<sub>A</sub> </em> = 100 V, <em>C</em> <sub>μ</sub> = 1 pF and <em> f<sub>T</sub> </em> = 600 MHz. The value of <em>C</em> <sub>π</sub> and the equivalent input Miller capacitance <em> C<sub>M</sub> </em> are [ <em> V<sub>T</sub> </em> = 25 mV]<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_47.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_48.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_49.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_50.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_51.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_52.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_53.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The common mode gain of the differential amplifier circuit shown below is _________.<br/><br/><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_67.png"/><br/><br/>(Rounded upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: -0.56,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_68.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ec_analog_circuit_2/img_69.png"/>`
+    },
   ]
 });
 
@@ -1079,6 +1772,238 @@ registerTest({   // made easy ece 2026 topic wise test Analog circuit-3
   name: "TWT - Analog Circuit-3",
   date: "july 17, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The opamp in circuit shown has input offset voltage 2 mV and it is ideal otherwise. If <em>V</em> <sub>1</sub> = <em>V</em> <sub>2</sub> = 0 then <em>V</em> <sub>0</sub> is<br/><img alt="" src="js/questions/ec_2026_analog_3/img_1.png"/>`,
+      image: "",
+      options: [
+        `42 mV`,
+        `2 mV`,
+        `22 mV`,
+        `–10 mV`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the op-amp shown in figure below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_3.png"/><br/>If the op-amp is ideal, then the threshold voltages of the circuit is`,
+      image: "",
+      options: [
+        `2 V, –2 V`,
+        `12 V, –12 V`,
+        `1.6 V, –1.6 V`,
+        `2.4 V, –2.4 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the circuit shown below,<br/><img alt="" src="js/questions/ec_2026_analog_3/img_5.png"/><br/>Let at start <em>V</em> <sub>out</sub> = –15 V, then the input voltage (<em>V</em> <sub>in</sub> ) for which the output changes from –15 V to 15 V is`,
+      image: "",
+      options: [
+        `–2.5 V`,
+        `–3 V`,
+        `–1.5 V`,
+        `–2.15 V`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the difference amplifier shown below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_16.png"/><br/>The CMRR of the difference amplifier is _________ dB. (Rounded upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 28.46,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_17.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_19.png"/><br/>If the inputs <em>V</em> <sub>1</sub> = <em>V</em> <sub>2</sub> = V; then the output of the op-amp is _________ volt.`,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_7.png"/><br/>The value of <em>C</em> required for sinusoidal oscillation of frequency 7 kHz is`,
+      image: "",
+      options: [
+        `3.18 nF`,
+        `74.8 μF`,
+        `31.8 μF`,
+        `7.58 nF`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `From the given below options, choose which of the following circuit is incorrectly matched with their name?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_analog_3/img_9.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_3/img_10.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_3/img_11.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_analog_3/img_12.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The voltage gain versus frequency curve of an op-amp is shown in figure.<br/><img alt="" src="js/questions/ec_2026_analog_3/img_14.png"/><br/>The gain Bandwidth product of the op-amp is ________ MHz.`,
+      image: "",
+      options: [
+      ],
+      answer: 0.2,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_15.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `For an ideal op-amp, which of the following properties is/are incorrect?`,
+      image: "",
+      options: [
+        `Ideal op-amp is a voltage controlled voltage source.`,
+        `Common Mode rejection ratio must be very large or infinite.`,
+        `For an ideal op-amp, offset voltage must be infinite.`,
+        `Open loop voltage gain of an ideal op-amp must be finite.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The common mode voltage is completely attenuated at the output of the differential given below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_22.png"/><br/>If <em>R</em> <sub>1</sub> = 1 kΩ, <em>R</em> <sub>2</sub> = 10 kΩ, <em>R</em> <sub>3</sub> = 20 kΩ then the value of resistance <em>R</em> <sub>4</sub> is ________ (MΩ).`,
+      image: "",
+      options: [
+      ],
+      answer: 0.2,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_23.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following circuit,<br/><img alt="" src="js/questions/ec_2026_analog_3/img_43.png"/><br/>Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `The value of current, <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_3/img_44.png"/>= 2.385 mA`,
+        `The output voltage, <em>V</em> <sub>0</sub> = –245.885 V`,
+        `The value of current, <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_3/img_45.png"/>= 7.32 mA`,
+        `The output voltage, <em>V</em> <sub>0</sub> = 10 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_46.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the op-amp circuit given below,<br/><img alt="" src="js/questions/ec_2026_analog_3/img_25.png"/><br/>If the slew rate of the op-amp is SR = 0.5 V/μsec, then the maximum frequency of the input signal <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_3/img_26.png"/> permissible for the distortionless output is _________ × 10<sup>6</sup> rad/sec. (rounded upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 2.50,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown in figure below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_38.png"/><br/>Considering the cut-in voltage of diode is 0.7 V, for the given input the average output voltage (<em>V</em> <sub>0</sub> ) is`,
+      image: "",
+      options: [
+        `–1 V`,
+        `–2 V`,
+        `–0.5 V`,
+        `–1.5 V`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_39.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit shown below,<br/><img alt="" src="js/questions/ec_2026_analog_3/img_41.png"/><br/>For ideal diode, the 3 dB cut-off frequency and DC gain of the circuit are respectively`,
+      image: "",
+      options: [
+        `1000 rad/sec, 20 dB`,
+        `2000 rad/sec, 10 dB`,
+        `500 rad/sec, 20 dB`,
+        `4000 rad/sec, 10 dB`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `To keep LED ON, <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_3/img_28.png"/>must be greater than ________ volt.<br/><img alt="" src="js/questions/ec_2026_analog_3/img_29.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_30.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.36,
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An inverting amplifier with a d.c. source representing the input offset voltage in series with the non-inverting terminal is shown below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_32.png"/><br/>The maximum input offset voltage for the operational amplifier in the above circuit is 1 mV. If <em>R</em> <sub>1</sub> = 1 kΩ and <em>R</em> <sub>2</sub> = 38 kΩ, then the worst case offset voltage at the output will be`,
+      image: "",
+      options: [
+        `35.64 mV`,
+        `43.56 mV`,
+        `31.2 mV`,
+        `42.8 mV`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The logarithmic amplifier circuit is shown in the figure below:<br/><img alt="" src="js/questions/ec_2026_analog_3/img_34.png"/><br/>The input voltage, <em>V</em> <sub>in</sub> = 100 mV, R = 50 kΩ and diode reverse saturation current, <img align="absmiddle" alt="" src="js/questions/ec_2026_analog_3/img_35.png"/>nA at an ambient temperature of 23°C. The output of the above circuit will be`,
+      image: "",
+      options: [
+        `3 Volt`,
+        `–0.2 Volt`,
+        `–3 Volt`,
+        `–0.7 Volt`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_analog_3/img_36.png"/><br/><img alt="" src="js/questions/ec_2026_analog_3/img_37.png"/>`
+    },
   ]
 });
 
@@ -1320,6 +2245,246 @@ registerTest({   // made easy ece 2026 topic wise test Networks-2
   name: "TWT - Networks-2",
   date: "july 18, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An R-L-C series circuit with a resistance of 10 Ω, inductance of 0.2 H and a capacitance of 40 μF is supplied with a 100 V supply at variable frequency. At the time of resonance, the voltage across inductor is`,
+      image: "",
+      options: [
+        `–<em>j</em> 707.1 V`,
+        `j112.52 V`,
+        `j707.1 V`,
+        `–<em>j</em> 112.52 V`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_1.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "NAT",
+      text: `The input impedance parameter (Z<sub>11</sub> ) for the network shown in figure is _________ Ω. (rounded upto two decimal places)<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_17.png"/><br><br>`,
+      image: "",
+      options: [
+
+      ],
+      answer: 3.92,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_18.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a series resonant circuit at low frequency, circuit impedance is _________ and at high frequency,circuit impedance is ________.`,
+      image: "",
+      options: [
+        `Capacitive, inductive`,
+        `Inductive, capacitive`,
+        `Resistive, inductive`,
+        `Capacitive, resistive`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_2.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "NAT",
+      text: `For the periodic waveform shown below:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_13.png"/><br><br>If the difference between RMS and Average voltage is 2.9 Volt, then the value of ‘<em>A</em> ’ is ________<br/>(rounded upto one decimal place)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 19.9,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_14.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "NAT",
+      text: `In the circuit shown in the figure, the value of <em>V</em><sub>0</sub> (<em>t</em> ) (in volts) for <em>t</em> → ∞ is __________ V. (rounded upto two decimal places)<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_15.png"/><br><br>`,
+      image: "",
+      options: [
+
+      ],
+      answer: 42.86,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_16.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the circuit shown below, the switch <em>S</em> is closed at <em>t</em> = 0. The magnitude of steady state voltage, in volts, across the 10 Ω resistor is<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_3.png"/><br><br>`,
+      image: "",
+      options: [
+        `0 V`,
+        `–9.8 V`,
+        `9.8 V`,
+        `12.2 V`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_4.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The <em>ABCD</em> parameters of an ideal <em>n</em> : 1 transformer shown in the figure are <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_5.png"/> The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_6.png"/>is<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_7.png"/><br><br>`,
+      image: "",
+      options: [
+        `<em>n</em>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_8.png"/>`,
+        `<em>n</em><sup>2</sup>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_9.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_10.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The short circuit admittance matrix of a two-port network is <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_11.png"/>The two-port network is`,
+      image: "",
+      options: [
+        `non-reciprocal and passive`,
+        `non-reciprocal and active`,
+        `reciprocal and passive`,
+        `reciprocal and active`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_12.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "MSQ",
+      text: `The response of a series RLC circuit are<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_19.png"/><br><br>Where, <em>V<sub>C</sub></em> and <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_20.png"/> are the capacitor voltage and inductor current respectively.<br/>Choose the correct options for the given circuit.`,
+      image: "",
+      options: [
+        `Capacitor, <em>C</em> = 0.2 F`,
+        `The data is insufficient to calculate the value of Resistance and inductance.`,
+        `Capacitor, <em>C</em> = 0.2 mF`,
+        `The value of inductor, <em>L</em> = 31. 2 mF`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_21.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `When a 250 V, 50 Hz supply is fed to a 12 Ω resistor in parallel, with an inductor, the total current is 25 A. What approximate value must the frequency have for the total current to be 30 A?`,
+      image: "",
+      options: [
+        `12 Hz`,
+        `72 Hz`,
+        `32 Hz`,
+        `52 Hz`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_22.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the two-port network shown in the figure.<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_23.png"/><br><br>The impedance parameters, in ohm’s are`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_24.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_25.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_26.png"/>`,
+        `Can’t exist.`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_27.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the Star-Delta pair shown below:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_42.png"/><br><br>The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_43.png"/>is ________ μF. (correct to two decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 17.08,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_44.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_45.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `An R-L-C series circuit with a resistance of 5 kΩ has resonance phasor curve as shown below:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_46.png"/><br><br>Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `The value of inductance, <em>L</em> = 53.05 mH`,
+        `The value of <em>f</em><sub>2</sub> = 20 kHz`,
+        `Quality factor, <em>Q</em> = 0.667`,
+        `The value of capacitance, <em>C</em> = 0.125 mH`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_47.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_48.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A coil of 10 Ω resistance has an inductance of 0.1 H and is connected in parallel with a condenser of 100 μF capacitance.<br/>The frequency at which this circuit will behave as a non-inductive resistance is ________ Hz.<br/>(rounded upto two decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 47.75,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_38.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the R-L circuit shown in figure below, the input <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_28.png"/>is<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_29.png"/><br><br>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_33.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_34.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>Column (I)</strong> [Network] with <strong>Column (II)</strong> [Equivalent impedance] and select correct answer using the codes given below:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_35.png"/><br><br>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_36.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_37.png"/><br><br>`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the network shown, the switch is closed at <em>t</em> = 0, then <em>V</em> (<em>t</em> )| <sub><em>t</em> = 1</sub> is ________ V. (rounded upto two decimal places)<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_39.png"/><br><br>`,
+      image: "",
+      options: [
+
+      ],
+      answer: 0.37,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_40.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ec_network_2/img_41.png"/><br><br>`
+    },
   ]
 });
 
@@ -1376,6 +2541,233 @@ registerTest({   // made easy ece 2026 topic wise test Communication -1
   name: "TWT - Communication-1",
   date: "july 22, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If a modulated signal <em>s</em> (<em>t</em> ) = e<sup>–2t</sup> cosω <em><sub>c</sub> t</em> is given to a envelope detector, the output of the envelope detector at <em>t</em> = 0.5 second is,`,
+      image: "",
+      options: [
+        `1`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_1.png"/><br><br>`,
+        `<em>e</em><sup>-2</sup>`,
+        `<em>e</em><sup>2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_2.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A frequency modulated signal having a frequency deviation of 10 kHz is passed through a squaring device. The bandwidth of the FM signal at the output of the squaring device if the message signal frequency is 2 kHz is,`,
+      image: "",
+      options: [
+        `7 kHz`,
+        `14 kHz`,
+        `22 kHz`,
+        `44 kHz`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_3.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `When a superheterodyne receiver is tuned to 555 kHz, its local oscillator provides the mixer with an input at 1010 kHz. The image frequency is,`,
+      image: "",
+      options: [
+        `455 kHz`,
+        `910 kHz`,
+        `1465 kHz`,
+        `732.5 kHz`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_4.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The image channel selectivity of superheterodyne receiver depends upon,`,
+      image: "",
+      options: [
+        `IF amplifier only.`,
+        `RF and IF amplifiers only.`,
+        `Preselector, RF and IF amplifiers.`,
+        `Preselector and RF amplifiers only.`
+      ],
+      answer: "D",
+      solution: `The image rejection should be achieved before IF stage because ones the image frequency enters<br/>into IF amplifier, it becomes impossible to remove it from wanted signal. So, image channel<br/>selectivity depends upon preselector and RF amplifiers only and is achieved by tuning the filter<br/>to attenuate the image frequency. The IF amplifier helps in rejection of adjacent channel frequency<br/>and not image frequency.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If conventional AM modulation technique is replaced with DSB-SC, the % power saving is ‘<em>x</em> ’. If conventional AM modulation technique is replaced with SSB, the % power saving is ‘<em>y</em> ’. The ratio <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_14.png"/>if modulation index of AM signal is 0.5 is _________. (Rounded off to 2 decimal places)`,
+      image: "",
+      options: [],
+      answer: 0.94,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_15.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following methods are used for the demodulation of FM signal?`,
+      image: "",
+      options: [
+        `Balanced slope detector`,
+        `Foster-Seeley Discriminator`,
+        `Ratio Detector`,
+        `Phase locked loop (PLL) detector`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `Balanced slope detector: This is a FM demodulator that uses two tuned LC circuits to convert<br/>frequency variations into amplitude variations. The two tuned circuits are connected in back-toback<br/>fashion to opposite ends of centre-tapped transformer to provide better linearity.<br/>Foster-seeley discriminator: This circuit uses a tuned LC circuit and diodes to produce an output<br/>voltage that is proportional to the frequency deviation of the FM signal.<br/>Ratio Detector: This type of discriminator also uses tuned circuits and diodes, but it ’s designed<br/>to suppress amplitude variations in the FM signal, improving its robustness.<br/>PLL: PLLs are feedback systems that track the frequency of the incoming FM signal. The PLL ’s<br/>output voltage is proportional to the instantaneous frequency of the FM signal, effectively<br/>demodulating it.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a narrow-band FM signal approximately defined by,<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_5.png"/><br><br>The ratio of the maximum to the minimum value of this modulated signal envelope is,`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_6.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_7.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_8.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_9.png"/><br><br>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_10.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `When a sinusoidal test tone of frequency ‘ω <em><sub>m</sub></em> ’ is applied to the input of the modulation in AM broadcasting (DSB with full carrier), the modulated waveform is as shown below:<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_11.png"/><br><br>The peak envelope power (PEP) across the load of 100 Ω is ________ Watt. (Rounded off to one decimal place)`,
+      image: "",
+      options: [],
+      answer: 49,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_12.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The instantaneous frequency of the given angle modulated signal <em>s</em> (<em>t</em> ) = cos 200π<em>t</em> ⋅ cos(5 sin 2π<em>t</em> ) + sin 200π<em>t</em> ⋅ sin(5 sin 2π<em>t</em> ) at <em>t</em> = 0 is ________ Hz.`,
+      image: "",
+      options: [],
+      answer: 95,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_13.png"/><br><br>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the block diagram shown in the below figure, the modulation index and the frequency deviation at point <em>B</em> are respectively, [Assume that at the output of the mixer, the additive frequency component is selected].<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_16.png"/><br><br>`,
+      image: "",
+      options: [
+        `15, 30 kHz`,
+        `15, 60 kHz`,
+        `30, 30 kHz`,
+        `30, 60 kHz`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_17.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An FM signal, <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_18.png"/> is applied to the system as shown in below figure consisting of a high-pass RC filter and an envelope detector. Assume that ω<em>RC</em> << 1 in the frequency band occupied by <em>s</em> (<em>t</em> ). The output signal <em>y</em> (<em>t</em> ) is,<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_19.png"/><br><br>`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_20.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_21.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_22.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_23.png"/><br><br>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_24.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A transmitter uses a carrier frequency of 500 Hz with the unmodulated carrier given by <em>A<sub>c</sub></em> cos 2π <em>f<sub>c</sub> t</em> .<br/>If the angle modulated signal given by is <em>s</em> (<em>t</em> ) = cos[2π(250)t3 + 50t2], the frequency deviation of the signal <em>s</em> (<em>t</em> ) at <em>t</em> = 1 second is _________ Hz. [Rounded off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: 265.92,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_28.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A DSB-SC modulated signal <em>s</em> (<em>t</em> ) = 5<em>m</em> (<em>t</em> ) . cos2π <em>f<sub>c</sub> t</em> is multiplied with a local carrier <em>c</em> (<em>t</em> ) = 2 cos(ω <em><sub>c</sub> t</em> + θ) and the output is passed through a LPF with a bandwidth equal to the bandwidth of the message signal <em>m</em> (<em>t</em> ). If the power of the message signal <em>m</em> (<em>t</em> ) is 25 W, the power of the signal at the output of the LPF assuming θ = 45° is _______ W. (Rounded off to one decimal place)`,
+      image: "",
+      options: [],
+      answer: 312.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_29.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_30.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A modulating signal is given by <em>m</em> (<em>t</em> ) = 5 cos 50π<em>t</em> + 10 cos 100π<em>t</em> and it is frequency modulated with ω <em><sub>c</sub></em> = 10<sup>6</sup> rad/sec and <em>k<sub>f</sub></em> = 500π rad/sec/V. The modulation index of the resulting FM signal is,`,
+      image: "",
+      options: [
+        `75`,
+        `50`,
+        `25`,
+        `150`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_25.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A lower SSB signal with carrier is expressed at <em>s</em> (<em>t</em> ) = [<em>A</em> + <em>m</em> (<em>t</em> )] cosω <em><sub>c</sub> t</em> + <em>m</em> (<em>t</em> ) sinω <em><sub>c</sub> t</em> . If the signal is received and demodulated by an envelope detector, the assumption required to get the output as [<em>A</em> + <em>m</em> (<em>t</em> )] is,`,
+      image: "",
+      options: [
+        `<em>m</em><sup>2</sup> (<em>t</em> ) >> <em>A</em>`,
+        `<em>m</em> (<em>t</em> ) >> <em>A</em>`,
+        `<em>m</em><sup>2</sup> (<em>t</em> ) << <em>A</em>`,
+        `[<em>A</em> + <em>m</em> (<em>t</em> )]<sup>2</sup> << <em>A</em>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_26.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A modulating signal <em>m</em> (<em>t</em> ) = 25 sin[2π × 10<sup>3</sup><em>t</em> – 8π cos 2π × 10<sup>3</sup><em>t</em> ] is fed to a phase modulator with <em>k<sub>p</sub></em> = 15 rad/V. If the carrier frequency is 35 kHz, the instantaneous frequency at <em>t</em> = 1 msec is _________ kHz.`,
+      image: "",
+      options: [],
+      answer: 410,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_27.png"/><br><br>`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In an envelope detector, the input is an AM signal expressed as,<br/><em>s</em> (<em>t</em> ) = <em>A<sub>c</sub></em> (1 + μ cos ω <em><sub>m</sub> t</em> ) ⋅ cos ω <em><sub>c</sub> t</em><br/>Which of the following conditions must be specified for an envelope detector to effectively demodulate an AM signal?`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_31.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_32.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_33.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_34.png"/><br><br>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_35.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ec_communications_1/img_36.png"/><br><br>`
+    }
   ]
 });
 
@@ -1384,6 +2776,239 @@ registerTest({   // made easy ece 2026 topic wise test Communication -2
   name: "TWT - Communication-2",
   date: "july 27, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider two narrow-band signals (with the same carrier frequency ‘ <em> f<sub>c</sub> </em> ’) <em>x</em> (<em>t</em> ) and <em>y</em> (<em>t</em> ) having their complex envelopes <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_1.png"/> then the complex envelope of <em>g</em> (<em>t</em> ) = <em>x</em> (<em>t</em> ) + <em>y</em> (<em>t</em> ) is,`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_2.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_3.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_4.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_5.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a function,<br/><img alt="" src="js/questions/ec_2026_communications_2/img_7.png"/><br/>The relation between <em>A</em> , <em>B</em> , <em>C</em> which makes <em>f</em> (<em>x</em> ) a valid probability density function is,`,
+      image: "",
+      options: [
+        `<em>A</em> + <em>B</em> + <em>C</em> = 0`,
+        `<em>A</em> + 2<em>B</em> + 5<em>C</em> = 1`,
+        `<em>A </em> + <em>B</em> + 5<em>C</em> = 1`,
+        `<em>A</em> + 2<em>B</em> + 5<em>C</em> = 0`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The autocorrelation function of a wide sense stationary random process <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_9.png"/> The value of <em>E</em> [<em>X</em> (5) – <em>X</em> (8)]<sup>2</sup> is`,
+      image: "",
+      options: [
+        `50<em>e</em> <sup>–15</sup>`,
+        `50[1 – <em>e</em> <sup>–15</sup> ]`,
+        `50[1 – <em>e</em> <sup>–5</sup> ]`,
+        `25<em>e</em> <sup>–5</sup>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For the channel shown in figure below, the entropy <em>H</em> (<em>X</em> ) = _________bits/symbol. (Rounded off to three decimal places)<br/><img alt="" src="js/questions/ec_2026_communications_2/img_24.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.571,
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let z be a random variable with probability density function <em> f<sub>z</sub> </em> (<em>z</em> ) = 0.5; –1 ≤ z ≤ 1.<br/>Let ‘x’ and ‘y’ are the random variables given by x = z and y = z2. Select the correct options given below:`,
+      image: "",
+      options: [
+        `<em>E</em> (<em>z</em> ) = 0`,
+        `<em>E</em> (<em>x</em> ) = 1`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_26.png"/>`,
+        `‘x’ and ‘y’ are independent random variables.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider AM and PM singals having modulation indices ‘μ’ and ‘β’ respectively. The relation between ‘μ’ and ‘β’ to have the same noise performance for AM and PM receivers is,`,
+      image: "",
+      options: [
+        `β<sup>2</sup> + μ<sup>2</sup> = 1`,
+        `β<sup>2</sup> – μ<sup>2</sup> = 1`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_11.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_12.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The power spectral density of a real process <em>X</em> (<em>t</em> ) for positive frequencies is shown below. The value of <em>E</em> [<em>X</em> <sup>2</sup> (t)] is,<br/><img alt="" src="js/questions/ec_2026_communications_2/img_14.png"/>`,
+      image: "",
+      options: [
+        `200400`,
+        `100200`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_15.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_16.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The cumulative distribution function <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_18.png"/> corresponding to the PDF <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_19.png"/>is ________ (Rounded off to 2 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.75,
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A WSS random process <em>x</em> (<em>t</em> ) is applied to the input of an LTI system with impulse response,<img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_21.png"/> The mean value of the output y(t) of the system, if <em>E</em> [<em>x</em> (<em>t</em> )] = 10 is _______. (Roundedoff to three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 62.832,
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_22.png"/><br/><img alt="" src="js/questions/ec_2026_communications_2/img_23.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a random process <em>X</em> (<em>t</em> ) = <em>C</em> cosω<sub>0</sub> t + <em>D</em> sin ω<sub>0</sub> <em>t</em> where ‘ω<sub>0</sub> ’ is constant, ‘<em>C</em> ’ and ‘<em>D</em> ’ are independent random variables.<br/>‘<em>C</em> ’ and ‘<em>D</em> ’ both have zero mean and variance of ‘σ<sup>2</sup> ’. The autocorrelation function of <em>X</em> (<em>t</em> ) is,`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_28.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_29.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_30.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_31.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a white Gaussian noise process of zero mean and power spectral density <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_33.png"/>that is applied to the input of the high-pass RL filter as shown below:<br/><img alt="" src="js/questions/ec_2026_communications_2/img_34.png"/><br/>The Autocorrelation function of the filter output is,`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_35.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_36.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_37.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_38.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An information source is modelled as a bandlimited process with a bandwidth of 1000 Hz. This process is sampled at a rate higher than the Nyquist rate to provide a guard band of 500 Hz. The resulting samples takes one of the value in the set {<em>a</em> , <em>b</em> , <em>c</em> , <em>d</em> , <em>e</em> , <em>f</em> } with corresponding probabilities {0.05, 0.05, 0.1, 0.5, 0.25, 0.05}. The rate of information of the source is _________ kbps. (correct to two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 4.95,
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_49.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A voice-grade AWGN (additive white Gaussian noise) telephone channel has a bandwidth of 5 kHz and two sided noise power spectral density <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_50.png"/>Watt/Hz. If information rate of 50 kbps is to be transmitted over this channel with arbitrarily small bit error rate, the minimum bit energy required is _________ (mJ/bit) (Rounded off to three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 2.046,
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the sum of two ergodic noise voltages:<br/><em>n</em> (<em>t</em> ) = <em>n</em> <sub>1</sub> (<em>t</em> ) + <em>n</em> <sub>2</sub> (<em>t</em> )<br/>The power of <em>n</em> <sub>1</sub> (<em>t</em> ) is 15 W and the power of <em>n</em> <sub>2</sub> (<em>t</em> ) is 25 W. What is the power of <em>n</em> (<em>t</em> ) if the cross correlation of <em>n</em> <sub>1</sub> (<em>t</em> ) and <em>n</em> <sub>2</sub> (<em>t</em> ) is 5 for τ = 0?`,
+      image: "",
+      options: [
+        `40 W`,
+        `45 W`,
+        `50 W`,
+        `65 W`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An independent random variable voltage process <em>X</em> (<em>t</em> ) is applied to an RLC network as shown in the figure below to get the output random process <em>Y</em> (<em>t</em> ). The power spectral density of input <em>X</em> (<em>t</em> ) is <em> S<sub>X</sub> </em> (ω) and the power spectral density of output <em>Y</em> (<em>t</em> ) is <em> S<sub>Y</sub> </em> (ω).<br/><img alt="" src="js/questions/ec_2026_communications_2/img_41.png"/><br/>The value of <img align="absmiddle" alt="" src="js/questions/ec_2026_communications_2/img_42.png"/>is,`,
+      image: "",
+      options: [
+        `0`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_43.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_44.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_45.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A continuous random variable ‘<em>X</em> ’ is uniformly distributed with pdf as,<br/><img alt="" src="js/questions/ec_2026_communications_2/img_47.png"/><br/>The differential entropy of <em>X</em> for <em>M</em> = 1 is _________.`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `1<br/><br/>1 (1 - 1)<br/><img alt="" src="js/questions/ec_2026_communications_2/img_48.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following functions represent a valid Autocorrelation function?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_52.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_53.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_54.png"/>`,
+        `<img alt="" src="js/questions/ec_2026_communications_2/img_55.png"/>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/ec_2026_communications_2/img_56.png"/>`
+    }
   ]
 });
 
@@ -1424,6 +3049,240 @@ registerTest({   // made easy ece 2026 topic wise test COA
   name: "TWT - COA",
   date: "aug 07, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `‘Mantissa alignment process is used to adjust the decimal point.’ In this process right alignment _________ the exponent and left alignment _________ the exponent.`,
+      image: "",
+      options: [
+        `increase, increase`,
+        `decrease, decrease`,
+        `increase, decrease`,
+        `decrease, increase`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_1.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match Column (I) (Bias Exponent and Mantissa) with Column (II) (Special values) corresponding to the IEEE 754 floating point representation.<br><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_2.png"/><br><br>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_3.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `How many 128 × 4 RAM chips are needed to provide a memory capacity of 1 k Bytes?`,
+      image: "",
+      options: [
+        `32`,
+        `2<sup>3</sup>`,
+        `2<sup>6</sup>`,
+        `2<sup>4</sup>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_4.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Microprogram is`,
+      image: "",
+      options: [
+        `the name of a source program in microcomputers.`,
+        `set of micro instructions that defines the individual operations in response to a machine language instruction.`,
+        `a very small segment of machine code.`,
+        `none of these`
+      ],
+      answer: "B",
+      solution: `A sequence of microinstructions is called a microprogram, which is stored in a ROM or RAM<br/>called a control memory. Each step in a sequence of steps in the execution of a certain machine<br/>instruction is considered as a microinstruction.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following component plays major role in routing data in CPU?`,
+      image: "",
+      options: [
+        `Decoder`,
+        `Encoder`,
+        `Multiplexer`,
+        `Latch`
+      ],
+      answer: "C",
+      solution: `A Multiplexer (MUX) is a key component in routing data within the CPU. It selects one of many<br/>input signals and forwards the selected input into a single line, based on control signals.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Assume that a processor uses a four-stage instruction pipeline. It executes a program with 50 instructions. Assuming an ideal pipeline and complete absence of any hazards, speedup achieved over an equivalent non-pipelined processor would be _________. (correct to two decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 3.77,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_5.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_6.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Select the correct options regarding different semiconductor memories:`,
+      image: "",
+      options: [
+        `SRAM uses 6 transistors for storage of one bit.`,
+        `DRAM uses 2 MOSFETs for storage of one bit.`,
+        `DRAMs are faster than SRAMs.`,
+        `SRAMs are the main memory of computer systems.`
+      ],
+      answer: ["A", "B"],
+      solution: `•DRAMs are slower than SRAMs as it requires periodic refreshing.<br/>•SRAMs are faster and expensive and typically used as the cache memory of computer systems.<br/>•DRAMs are slower but more affordable and typically used as the main memory of computer<br/>systems.<br/>•SRAMs are fabricated using BJT and MOSFET. For storage of 1-bit, 6 transistors are required.<br/>•DRAMs are fabricated using only MOSFET. For storage of 1-bit, 2 MOSFETs are required.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `When executing a set of benchmark program for a machine ‘A’, the following performance measures were recorded.<br><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_7.png"/><br><br>The overall average number of clock cycles per instruction (CPI) for the machine ‘A’ is ________<br/>(Rounded off to two decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 4.58,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_8.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The semiconductor RAM of a digital computer has a word length of 32-bits and a capacity of 16,384 words. It has a cycle time of 50 ns. If the CPU is much faster than the memory, the time required to fill 1024 bytes of this memory with all 0’s will be __________ μs. (Rounded off to one decimal place)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 12.8,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_9.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `IEEE standard 754 defined single floating point precision formate uses the excess-bias, then the bias is`,
+      image: "",
+      options: [
+        `centre of a exponent range`,
+        `half of centre of exponent range`,
+        `one less than the half of centre of exponent range`,
+        `one less than the centre of a exponent range`
+      ],
+      answer: "D",
+      solution: `In IEEE 754 single-precision floating-point format, the bias is calculated as<br/>Bias = 2<sup>(k –1)</sup> –1<br/>where k is the number of bits in exponent. Thus, bias is one less than the center of the exponent range.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A computer has 24-bit instructions and 8-bit addresses. If there are 250 two address instructions,then the one address instructions which can be formulated are _________.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 1536,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_10.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A CPU supports x-bit instruction and <img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_11.png"/>bit address. If number of possible single address instructions are 4, then the number of bits assigned for address is ___________.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_12.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A number is written in a specified format as shown <img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_13.png"/> The equivalent number in decimal number system is _________.`,
+      image: "",
+      options: [
+
+      ],
+      answer: -6.25,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_14.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following hypothetical formate used to represent the data:<br><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_15.png"/><br><br>Consider the data as (–14.75) ∗ 2<sup>+12</sup> . The hexadecimal equivalent when the data is stored in the memory is`,
+      image: "",
+      options: [
+        `(CBD30)<sub>H</sub>`,
+        `(4CD40)<sub>H</sub>`,
+        `(4BD40)<sub>H</sub>`,
+        `(CED40)<sub>H</sub>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_16.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A pipelined processor has five pipeline stages. These stages along with their execution times are as follows: IF → 3.1 nsec, ID → 2.32 nsec, EXE → 5.5 nsec, MEM → 5 nsec, WB → 6 nsec. The pipeline latch delay is 0.25 nsec.<br/>Assuming complete absence of all types of hazards, the time taken to execute 96 instructions on this processor is ________ μsec. (correct to three decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 0.625,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_17.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A six stage pipeline has stage delays of 152, 121, 111, 169, 147 and 132 nsec. Consider that the register that are used between the pipeline stages have negligible delays.<br/>The total time to execute 150 independent instructions on this pipeline, assuming there are no pipeline stalls is`,
+      image: "",
+      options: [
+        `16.64 μsec`,
+        `23.56 μsec`,
+        `22.88 μsec`,
+        `26.195 μsec`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_18.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The microinstructions stored in the control memory of a processor have a width of 28 bits. Each microinstruction is divided into 4 fields, a micro-operation field of 12 bits, an address field (<em>X</em> ) and two fields for register operand (<em>Y</em><sub>1</sub> ) and (<em>Y</em><sub>2</sub> ). If there are 64 registers present then, choose the correct statements:`,
+      image: "",
+      options: [
+        `maximum possible of addresses is 4.`,
+        `<em>Y</em><sub>1</sub> and <em>Y</em><sub>2</sub> fields are of 6 bits.`,
+        `number of possible microinstructions is 4096.`,
+        `X field is of 4 bits.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ec_computer_organisation/img_19.png"/><br><br>`
+    }
   ]
 });
 
@@ -1697,6 +3556,259 @@ registerTest({   // made easy ece 2026 topic wise test General Aptitude-1
   name: "TWT - General Aptitude-1",
   date: "july 23, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The graph of <img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_29.png"/>is given by`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_33.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_31.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following cubes in the answer figure cannot be made based on the unfolded cube in the question figure?<br/><img alt="" src="js/questions/ec_2026_ga_1/img_35.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_39.png"/>`,
+      ],
+      answer: "C",
+      solution: `From the given unfolded cube, star and dot appear opposite to each other and thus, cannot be<br/>adjacent to each other. Hence, the cube depicted in option (c) cannot be made.`
+    },
+
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a rare coin collection, there is one gold coin for every three non-gold coins. 10 more gold coins are added to the collection and the ratio of gold coins to non-gold coins becomes 1 : 2. Based on the information, the total number of coins in the collection now becomes ____.`,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_2.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cuboid has six sides of different colours. The red side is opposite to black. The blue side is adjacent to white. The brown side is adjacent to blue. The red side is face down. Which one of the following would be the opposite to brown?`,
+      image: "",
+      options: [
+        `Red`,
+        `Black`,
+        `While`,
+        `Blue`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/>There are six villages <em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> .<br/><em>F</em> is 1 km to the west of <em>D</em> .<br/><em>B</em> is 1 km to the east of <em>E</em> .<br/><em>A</em> is 2 km to the north of <em>E</em> .<br/><em>C</em> is 1 km to the east of <em>A</em> .<br/><em>D</em> is 1 km to the south of <em>A</em> .<br/>Which three villages are in a line?`,
+      image: "",
+      options: [
+        `<em>A</em> , <em>C</em> , <em>B</em>`,
+        `<em>A</em> , <em>D</em> , <em>E</em>`,
+        `<em>C</em> , <em>B</em> , <em>F</em>`,
+        `<em>E</em> , <em>B</em> , <em>D</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The piechart given below shows the distribution of workforce by occupational category for country <em>X</em> in 1981 and 1995. Study the chart and answer the below question.<br/><img alt="" src="js/questions/ec_2026_ga_1/img_12.png"/><br/>The percentage decrease in the number of Blue-Collar workers in the workforce of country <em>X </em> from 1981 to 1995 is`,
+      image: "",
+      options: [
+        `20%`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_14.png"/>`,
+        `35%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/>1. All artists are whimsical.<br/>2. Some artists are drug addicts.<br/>3. Frustrated people are prone to become drug addicts.<br/>From the above three statements, it may be concluded that`,
+      image: "",
+      options: [
+        `Artists are frustrated`,
+        `Some drug addicts are whimsical`,
+        `Whimsical people are generally frustrated`,
+        `All frustrated people are drug addicts`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_16.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the mirror image of following figure.<br/><img alt="" src="js/questions/ec_2026_ga_1/img_5.png"/>`,
+      image: "",
+      options: [
+        `I`,
+        `II`,
+        `III`,
+        `IV`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A square paper is folded in a particular manner and a punch is made. When unfolded the paper appears as given below :<br/><img alt="" src="js/questions/ec_2026_ga_1/img_20.png"/><br/>Select the manner in which the paper is folded and punch is made from the responses given.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_24.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Amar, Akbar and Anthony are friends, being looked after by a matron Farah. Amar weighs 50% more than Akbar and Anthony weighs 25% less than Amar. Farah weighs a third of the combined weight of three boys. All four together weigh 232 kg. The correct arrangement of the persons in the descending order of their weights is`,
+      image: "",
+      options: [
+        `Amar, Farah, Akbar, Anthony`,
+        `Farah, Amar, Akbar, Anthony`,
+        `Farah, Amar, Anthony, Akbar`,
+        `Amar, Farah, Anthony, Akbar`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following figure and answer the item that follows:<br/><img alt="" src="js/questions/ec_2026_ga_1/img_7.png"/><br/>A square is divided into four rectangles as shown above. The length of the sides of rectangles are natural numbers, and the areas of two rectangles are indicated in the figure. What is the length of each side of the square?`,
+      image: "",
+      options: [
+        `10`,
+        `11`,
+        `15`,
+        `cannot be determined as the given data insufficient`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_8.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The digits of a three digit number <em>x</em> are written in the reverse order to form another three digit number y. If <em>y</em> &gt; <em>x</em> and y – <em>x</em> is perfectly divisible by 7, then which of the following is maximum possible value of x?`,
+      image: "",
+      options: [
+        `108`,
+        `156`,
+        `208`,
+        `299`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> are cousins. No two cousins are of the same age, but all have birthdays on the same day of the same month. The Youngest is 17 years old and the oldest <em>E</em> is 22 years old. <em>F</em> is somewhere between <em>B</em> and <em>D</em> in age. <em>A</em> is older than <em>B</em> . <em>C</em> is older than <em>D</em> . <em>A</em> is one year<br/>older than <em>C</em> . Which one of the following is possible?`,
+      image: "",
+      options: [
+        `<em>D</em> is 20 years old`,
+        `<em>F</em> is 18 years old`,
+        `<em>F</em> is 19 years old`,
+        `<em>F</em> is 20 years old`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> not necessarilly in that order, are sitting in six chairs regularly placed around a round table. It is observed that <em>A</em> is between <em>D</em> and <em>F</em> , <em>C</em> is opposite to <em>D</em> and <em>D</em> and <em>E</em> are not on neighbouring chairs. Which of the following pairs must be sitting on neighbouring chairs?`,
+      image: "",
+      options: [
+        `<em>A</em> and <em>B</em>`,
+        `<em>C</em> and <em>E</em>`,
+        `<em>B</em> and <em>F</em>`,
+        `<em>A</em> and <em>C</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_11.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_17.png"/>is`,
+      image: "",
+      options: [
+        `0`,
+        `0.4`,
+        `2.2`,
+        `4.4`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of 4-digit integers in the closed interval [2022, 4482] formed by using the digits 0, 2, 3, 4, 6, 7 is`,
+      image: "",
+      options: [
+      ],
+      answer: 569,
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_19.png"/>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At a point on ground, the angle of elevation of a vertical tower, is found to be such that it’s tangent is <img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_26.png"/> On walking 192 meters towards the tower, the tangent of the angle of elevation is found to be <img align="absmiddle" alt="" src="js/questions/ec_2026_ga_1/img_27.png"/>The height of the tower is`,
+      image: "",
+      options: [
+        `180 meters`,
+        `160 meters`,
+        `240 meters`,
+        `260 meters`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_ga_1/img_28.png"/>`
+    },
   ]
 });
 
@@ -1705,6 +3817,264 @@ registerTest({   // made easy ece 2026 topic wise test general Aptitude-2
   name: "TWT - General Aptitude-2",
   date: "aug 12, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the part (option) of the below sentence that contains an error :<br/>He was consulted seldom by his colleagues while making important decisions on financial matters.`,
+      image: "",
+      options: [
+        `He was consulted seldom`,
+        `Decisions on financial matters`,
+        `By his colleagues`,
+        `While making important`,
+      ],
+      answer: "A",
+      solution: `The adverb of frequency, “seldom,”should typically be placed before the main verb “consulted.”<br/>Thus, the correct sentence is:<br/>He was seldom consulted by his collegues while making important decisions on financial matters.`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If MOBILE is written as ZAMSUM, how TUMOR can be written in that code?`,
+      image: "",
+      options: [
+        `BRAIN`,
+        `HGYAD`,
+        `GGXYA`,
+        `IHZBE`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_1.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy.<br/>FLEXIBLE : RIGID : : CONFIDENCE : ?`,
+      image: "",
+      options: [
+        `Diffidence`,
+        `Indifference`,
+        `Cowardice`,
+        `Scare`,
+      ],
+      answer: "A",
+      solution: `“Flexible ”and “Rigid ”are antonyms. Diffidence meaning shyness or lack of confidence is the<br/>opposite of confidence. Thus, option (a) is correct.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy:<br/>Horse : Neigh :: Bells : ?`,
+      image: "",
+      options: [
+        `Beat`,
+        `Chime`,
+        `Rustle`,
+        `Roar`,
+      ],
+      answer: "B",
+      solution: `A horse produces a neigh sound, similarly bells produce a chime sound. Therefore, the correct answer is Chime.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In questions no. 12 and 13, one/two statements are given followed by two/three conclusions. You have to consider the statements to be true even if they seem to be at variance from commonly known facts. You have to decide which of the given conclusions, if any, follows from the given statements. <strong>Statement:</strong><br/>Sun is the source of light.<br/><strong>Conclusions:</strong><br/>I. Moon is not the source of light<br/>II. Light has only one source.`,
+      image: "",
+      options: [
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `Both conclusions (I) and (II) follow`,
+        `Neither conclusion (I) nor (II) follows`,
+      ],
+      answer: "D",
+      solution: `The statement only mentions sun as a source of light but it does not deny other sources (like Moon,<br/>bulbs, fire etc.) and it does not say sun is the only source. Therefore, both conclusions are wrong.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<strong>Statement:</strong><br/>I. All cities are towns.<br/>II. Some cities are villages.<br/><strong>Conclusions:</strong><br/>I. All villages are towns.<br/>II. No village is a town.<br/>III. Some villages are towns.`,
+      image: "",
+      options: [
+        `Only conclusion (III) follows`,
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `Some cities are villages, and all cities are towns. So, those villages (which are cities) are also<br/>towns. Hence, some villages are towns.<br/>So, only conclusion III is correct.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following diagrams best depicts the relationship among Earth, Sea and Sun?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_7.png"/>`,
+      ],
+      answer: "D",
+      solution: `Sea is a part of the Earth and Sun is a separated celestial body, not a part of the earth. Thus,<br/>option (d) best depicts the relationship among Earth, Sea and Sun.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given diagram, circle represents professionals, square represents dancers, triangle represents musicians and rectangle represents Europeans. Different regions in the diagram are numbered 1 to 11. Who among the following is neither a dancer nor a musician but is professional and not a European?<br/><br/><img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_3.png"/>`,
+      image: "",
+      options: [
+        `8`,
+        `11`,
+        `1`,
+        `10`,
+      ],
+      answer: "D",
+      solution: `The people who are neither dancers nor musicians but are professionals and not Europeans,<br/>means part of circle excluding common of circle with Triangle, square and rectangle i.e.<br/>Region “10 ”.`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the correct alternative to fill in the blank in the sentence given below.<br/>Today student should be reconciled _____ the way things are changing.`,
+      image: "",
+      options: [
+        `with`,
+        `to`,
+        `for`,
+        `at`,
+      ],
+      answer: "A",
+      solution: `With is used with reconcile.<br/>Reconcile →To make oneself or another no longer opposed.<br/>Here, with is the right usage.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The World Health Organisation is briefly called W.H.O. It is a specialised agency of the United Nations and was established in 1948. International health workers can be seen working in all kinds of surroundings: in deserts, jungles, mountains, coconut groves, and rice fields. They help the sick to attain health and the healthy to maintain their health. This global health team assists the local health workers in stopping the spread of what are called communicable diseases, like cholera. These diseases can spread from one country to another and so can be a threat to world health. W.H.O. assists different national health authorities not only in controlling diseases but also in preventing them altogether. Total prevention of diseases is possible in a number of ways. Everyone knows how people, particularly children, are vaccinated against one disease or another. Similarly, most people are familiar with the spraying of houses with poisonous substances which kill disease-carrying insects.<br/>"It is a specialised agency of the United Nations and was established in 1948.” Here specialised means`,
+      image: "",
+      options: [
+        `expert`,
+        `extraordinary`,
+        `uncommon`,
+        `made suitable for a particular purpose`,
+      ],
+      answer: ["D"],
+      solution: `The word “specialised ”refers to something that is focused on a specific area or purpose rather<br/>than being general. In the sentence, W.H.O. is described as a specialised agency —meaning it is<br/>an agency that deals specifically with health matters, not with everything else. Thus, “made<br/>suitable for a particular purpose ”is the most accurate meaning.<br/>(A) expert: relates to skill, but “specialised ”here talks about focus, not expertise.<br/>(B) extraordinary: means very special or unusual —not the meaning here.<br/>(C) uncommon: means rare —not the intended meaning.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If × stands for addition, <for +="" division,="" for="" subtraction,="">for multiplication, – for equal to, ÷ for greater than and = for less than, state which of the following expressions is true? </for>`,
+      image: "",
+      options: [
+        `3 × 2 &lt;4 ÷ 16&gt;2 + 4`,
+        `5 &gt; 8 + 4 = 10 &lt;4 × 2`,
+        `3 × 4 &gt; 2 – 9 + 3 &lt;3`,
+        `5 × 3 × 3 ÷ 8 + 4 × 1`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Select the alternative which is the best substitute of the sentence/word:<br/>Take away or alter the natural qualities of`,
+      image: "",
+      options: [
+        `Denature`,
+        `Unadulterated`,
+        `Authentic`,
+        `Limpid`,
+      ],
+      answer: "A",
+      solution: `Denature : Changed from its natural state.<br/>Unadulterated : Pure, not mixed or diluted with any different or extra elements.<br/>Authentic : Genuine, real, not fake or copied. An authentic document is the original, not a duplicate<br/>or forgery.<br/>Limpid : Clear, transparent, often used for liquids, but also can describe clear writing or thought.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Out of given alternatives, choose the one which best expresses the meaning of the word, Envoy`,
+      image: "",
+      options: [
+        `Carrier`,
+        `Chief`,
+        `Ambassador`,
+        `Receiver`,
+      ],
+      answer: "C",
+      solution: `The word “Envoy ”refers to a person who is sent as a representative, often on a diplomatic<br/>mission. An ambassador is a senior diplomat or envoy representing a country. So, “Ambassador ”<br/>best expresses the meaning of the word “Envoy ”.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Choose the word opposite in meaning for the underlined word:<br/>The hot summer afternoon made everyone feel <u>languid</u> and they sought refuge in the shade to escape the heat.`,
+      image: "",
+      options: [
+        `Listless`,
+        `Energetic`,
+        `Lethargic`,
+        `Sluggish`,
+      ],
+      answer: "B",
+      solution: `The word “Languid ”means lacking energy, weak, or slow-often due to fatigue, illness, or heat.<br/>In the context of the sentence, the hot summer afternoon made everyone feel fired and drained.<br/>Hence, “Energetic ”is the opposite in the meaning to “languid ”.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the following question, the passage/sentence is split into four parts A, B, C and D. These four parts are not given in their proper order. Read the sentence and find out which of the following four combinations is correct.<br/>A. Explained angrily<br/>B. The bricklayer<br/>C. Leaving the site<br/>D. His reasons for`,
+      image: "",
+      options: [
+        `BADC`,
+        `DCAB`,
+        `CBAD`,
+        `ADCB`,
+      ],
+      answer: "A",
+      solution: `The bricklayer explained angrily his reasons for leaving the site. Hence, the correct order is BADC.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If ‘PUNCTUATION’ is coded as ‘QVODUVBUJPO’ and ‘SING’ as ‘TJOH’, then how is ‘PARLIAMENT’ coded?`,
+      image: "",
+      options: [
+        `QBSMJKNFMU`,
+        `QBSMJBNFOU`,
+        `QTBSMJOFOU`,
+        `QASTMJNFOU`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ec_general_aptitude_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Arrange the following four sentences P, Q, R and S in the proper sequence to form a meaningful<br/>paragraph starting from 1 and ending with 6.<br/>1. Communication has been an important aspect all through the ages.<br/>P. E-mail is a convenient way to deliver any requested information.<br/>Q. Today instantaneous communication is vital.<br/>R. Voice is often easier than e-mail, but it is not as easy to create and send nor is it possible to send the same message to a large number of people in different places in the world.<br/>S. It is also a good way to communicate with multiple people at the same time; but e-mail is only one form for communication.<br/>6. The other forms of faster and easier communication are being explored.<br/>Which one of the following is the correct sequence?`,
+      image: "",
+      options: [
+        `SQRP`,
+        `QPSR`,
+        `SPRQ`,
+        `RQSP`,
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
   ]
 });
 
