@@ -1087,6 +1087,231 @@ registerTest({   // made easy ece 2026 topic wise test Networks-1
   name: "TWT - Networks-1",
   date: "july 11, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The relative heating effects of two current waves of equal peak value, one rectangular and the other, triangular in shape as shown in figure is,<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_1.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_2.png"/>`,
+        `3 : 1`,
+        `3 : 2`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_3.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two load resistances <em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> dissipate the same power when connected individually to a voltage source ‘ <em> V<sub>s</sub> </em> ’ having an internal resistance of <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_5.png"/><br/>Choose the correct relation between <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_6.png"/> <em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> .`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_9.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_10.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_11.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A tungsten filament bulb rated at 500 W, 150 V is to be connected in series with a capacitance across 220 V, 50 Hz supply. The value of capacitor such that the voltage and power consumed by the bulb are according to the rating of the bulb is,`,
+      image: "",
+      options: [
+        `66 μF`,
+        `33 μF`,
+        `132 μF`,
+        `16.5 μF`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following static V-I characteristics represents a Bilateral device?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_14.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_15.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_16.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_17.png"/>`,
+      ],
+      answer: "D",
+      solution: `When the same relation exists between voltage and current for the current flowing in both directions or in other words, if the VI characteristics curve is similar in opposite quadrants then the element is bidirectional (or) bilateral. Hence, option (d) is correct.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `To analyze a complex network which consists of a supernode, which of the following laws are required to write the supernodal equations?`,
+      image: "",
+      options: [
+        `KVL and Ohm’s law`,
+        `KCL and Ohm’s law`,
+        `KVL, KCL and Ohm’s law`,
+        `KVL and KCL`,
+      ],
+      answer: "C",
+      solution: `When only an ideal voltage source is connected between two non-reference nodes without any impedance, we form a supernode encompassing these two nodes for applying KCL while the voltage between the nodes are related by KVL. Thus, supernodal equations require applications of KCL, KVL and Ohm ’s law.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The current in the 100 Ω resistor is _________ A. [Rounded off to two decimal places].<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_18.png"/>`,
+      image: "",
+      options: [],
+      answer: 0.48,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For maximum power transfer, the value of load resistance ‘ <em> R<sub>L</sub> </em> ’ is __________ Ω. [Rounded off to two decimal places].<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_20.png"/>`,
+      image: "",
+      options: [],
+      answer: 4.67,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The magnitude of Thevenin’s equivalent voltage ‘<em>V</em> <sub>Th</sub> ’ across the terminals <em>A</em> -<em>B</em> is ________ V.<br/>[Rounded off to one decimal place]<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_22.png"/>`,
+      image: "",
+      options: [],
+      answer: 62.5,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_23.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `When a sinusoidal voltage of 150 V (rms) is applied to a series R-L circuit, it is found that the power dissipation is 1000 W and the current flowing in the circuit is given by <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_25.png"/><br/>Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `The resistance of the circuit is 2.223 Ω.`,
+        `The inductance of the circuit is 1.07 H.`,
+        `The power factor angle of the circuit is 77.16°.`,
+        `Magnitude of total impedance is 5 Ω.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The periodic current <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_27.png"/>in the given figure is applied to a pure resistor of 5 Ω. The power dissipated in the resistor is,<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_28.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_32.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_33.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If a voltage of 200 V applied between terminals <em>A</em> and <em>B</em> produces a current of 25 A for the circuit shown in the figure below, the power factor of the circuit is<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_35.png"/>`,
+      image: "",
+      options: [
+        `0.707 (lead)`,
+        `0.5 (lag)`,
+        `0.87 (lead)`,
+        `1`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The resistive circuit shown in figure (1) is simplified as shown in figure (2). The sum of resistances (<em>a</em> + <em>b</em> + <em>c</em> + <em>d</em> + <em>e</em> + <em>f</em> ) is,<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_37.png"/>`,
+      image: "",
+      options: [
+        `57 Ω`,
+        `28.5 Ω`,
+        `14.25 Ω`,
+        `7.125 Ω`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the network shown below, the value of <em>V</em> <sub>1</sub> so that the current through (1 + <em>j</em> ) Ω impedance is zero is,<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_39.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_41.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_42.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_43.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two voltage sources have equal emfs ‘<em>E</em> ’ and a phase difference ‘θ’. When they are connected in series, the total voltage is 100 V. When one source is reversed, the total voltage is 10 V. The phase angle ‘θ’ is _________ degrees [Rounded off to one decimal place].`,
+      image: "",
+      options: [],
+      answer: 11.4,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_46.png"/> (degrees).<br/>[Rounded off to one decimal place]<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_47.png"/>`,
+      image: "",
+      options: [],
+      answer: 51.2,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_48.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_49.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The square wave voltage seen in figure (a) is applied to the combination of inductors seen in figure (b).<br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_50.png"/><br/><br/>The current through the combination of inductors at <em>t</em> = 4 ms is ____________ A.`,
+      image: "",
+      options: [],
+      answer: 10,
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_51.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In the circuit shown below, <img align="absmiddle" alt="" src="js/questions/easy_2026_network_1/img_53.png"/><br/><br/><img alt="" src="js/questions/easy_2026_network_1/img_54.png"/><br/><br/>Select the correct options regarding power in the given circuit.`,
+      image: "",
+      options: [
+        `The total complex power is 403.04∠+8.07° VA.`,
+        `The total real power is 200 W.`,
+        `The total reactive power is 56.569 VAR.`,
+        `The power factor of the circuit is 0.866.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/easy_2026_network_1/img_55.png"/><br><br><img alt="" src="js/questions/easy_2026_network_1/img_56.png"/>`
+    }
   ]
 });
 
@@ -1215,6 +1440,255 @@ registerTest({   // made easy ece 2026 topic wise test Engineering Mathematics-2
   name: "TWT - Engineering Mathematics-2",
   date: "aug 08, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The integrating factor for the differential equation <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_1.png"/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_5.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_6.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A student appears for a quiz consisting of only true-false type questions and answer all the questions. The student knows the answers of some questions and guesses the answers for the remaining questions. Whenever the student knows the answer of a question, he gives the correct answer. Assume that the probability of the students giving the correct answer for a question given that he has guessed it, is <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_10.png"/> Also assume that the probability of the answer for a question being guessed, given that the student’s answer is correct is <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_11.png"/>Then the probability that the student knows the answer of a randomly chosen question is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_12.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_14.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_15.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_16.png"/><br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_17.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_75.png"/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_76.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_77.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_78.png"/>`,
+        `0`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_79.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The solution of the differential equation <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_20.png"/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_24.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_25.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_26.png"/>is a continuous random variable with p.d.f. given by<br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_27.png"/><br><br>The value of <em>k</em> is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_31.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_32.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The degree of the differential equation <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_66.png"/>is`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_67.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_68.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_69.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_70.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_71.png"/>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_72.png"/><br><br>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A random variable <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_40.png"/>has the following probability distribution <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_41.png"/> If the mean of<br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_42.png"/><br><br>is 0.8, then a =`,
+      image: "",
+      options: [
+        `5`,
+        `1.5`,
+        `4`,
+        `3`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_43.png"/><br><br>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `India plays two matches each with England and Australia. In any match the probabilities of India getting points 0, 1 and 2 are 0.45, 0.05 and 0.50 respectively. Assuming that the outcomes are independent, the probability of India getting at least 7 points is`,
+      image: "",
+      options: [
+        `0.8750`,
+        `0.0875`,
+        `0.0625`,
+        `0.0250`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_44.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation:<br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_45.png"/><br><br>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_46.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_47.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_48.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_49.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_50.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.0,
+      type: "NAT",
+      text: `If <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_7.png"/>_______. (Answer in nearest integer)`,
+      image: "",
+      options: [],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_8.png"/><br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_9.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.0,
+      type: "NAT",
+      text: `In a study about a pandemic, data of 900 persons was collected.It was found that<br>• 190 persons had symptom of fever<br>• 220 persons had symptom of cough<br>• 220 persons had symptom of breathing problem<br>• 330 persons had symptom of fever or cough or both<br>• 340 persons had symptom of fever or breathing problem or both<br>• 350 persons had symptom of cough or breathing problem or both<br>• 30 persons had all three symptoms (fever, breathing problem and cough)<br>If a person is chosen randomly from these 900 persons, then the probability that the person has at most one symptom is ______.`,
+      image: "",
+      options: [],
+      answer: 0.80,
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_18.png"/><br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_19.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_33.png"/>is an integrating factor of the differential equation:<br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_34.png"/><br><br>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_35.png"/>`,
+        `7`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_37.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_38.png"/><br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_39.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_51.png"/> under the condition y = 0, <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_52.png"/> when <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_53.png"/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_54.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_55.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_56.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_57.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_58.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Number of tigers in a reserve is normally distributed with mean &amp; variance respectively as 1200 and 9 × 10<sup>4</sup> . The probability of finding more than 1800 tigers is approximately`,
+      image: "",
+      options: [
+        `0.0125`,
+        `0.025`,
+        `0.05`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_59.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_60.png"/>equals`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_61.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_62.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_63.png"/>`,
+        `1`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_64.png"/><br><br><img alt="" src="js/questions/ec_2026_eng_math_2/img_65.png"/><br><br>`
+    },
+
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/ec_2026_eng_math_2/img_73.png"/>is`,
+      image: "",
+      options: [
+        `0`,
+        `∞`,
+        `1/6`,
+        `– 1/6`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/ec_2026_eng_math_2/img_74.png"/><br><br>`
+    },
   ]
 });
 
