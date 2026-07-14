@@ -3017,6 +3017,244 @@ registerTest({   // made easy ece 2026 topic wise test Communication-3
   name: "TWT - Communication-3",
   date: "aug 01, 2026",
   questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a (6, 3) block code, the parity equations are <em>p</em><sub>1</sub> = <em>d</em><sub>2</sub> ⊕ <em>d</em><sub>3</sub> , <em>p</em><sub>2</sub> = <em>d</em><sub>1</sub> ⊕ <em>d</em><sub>3</sub> , <em>p</em><sub>3</sub> = <em>d</em><sub>1</sub> ⊕ <em>d</em><sub>2</sub><br/>The minimum hamming distance is,`,
+      image: "",
+      options: [
+        `0`,
+        `3`,
+        `2`,
+        `1`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_7.png"/>`
+    },
+
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_10.png"/>denote the probabilities of symbol error for the in-phase and quadrature channels of a narrow-band digital communication system. The average probability of symbol error for the overall system is given by,`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_12.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_13.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_14.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider voice transmission using BPSK signalling at a transmission rate of 4.8 kbps and a bandwidth efficiency of 1 bps/Hz. In order to increase the data rate to 38.4 kbps with the symbol rate to remain at 4800 symbols/sec, the number of points required in the signal constellation will be _______.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 256,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A signal constellation for some modulation scheme is as shown below. Minimum distance between adjacent points is 2A. Assume that the signal points are equally probable, the average transmitted energy for this constellation is,<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_8.png"/><br><br>`,
+      image: "",
+      options: [
+        `9<em>A</em><sup>2</sup>`,
+        `36<em>A</em><sup>2</sup>`,
+        `4.5<em>A</em><sup>2</sup>`,
+        `18<em>A</em><sup>2</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The input signal <em>s</em> (<em>t</em> ) to the matched filter is given by,<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_17.png"/><br><br>If the impulse response of the matched filter is <em>h</em> (<em>t</em> ), the value of the integral <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_18.png"/>is ____________,`,
+      image: "",
+      options: [
+
+      ],
+      answer: -3,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A message signal <em>m</em> (<em>t</em> ) = Amtanh(β<em>t</em> ) is applied to a delta modulator, where ‘ <em>A<sub>m</sub></em> ’ and ‘β’ are real positive constants. The minimum step-size required by the delta modulator to eliminate the slopeoverload distortion for the given message signal is, [ <em>T<sub>s</sub></em> : Sampling interval]`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_1.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_2.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_3.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_4.png"/><br><br>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following (<em>n</em> , <em>k</em> ) block code is not an example of ‘Hamming code’?`,
+      image: "",
+      options: [
+        `(7, 4)`,
+        `(15, 11)`,
+        `(6, 3)`,
+        `(3, 1)`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 5 kHz bandpass channel is to be used for M-ary PSK transmission of data at a rate of 10500 bits/sec.<br/>If we use a signal pulse with a raised cosine spectrum having an excess bandwidth of atleast 70%, the minimum value of M is _______.`,
+      image: "",
+      options: [
+
+      ],
+      answer: 16,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `For (<em>n</em> , <em>k</em> ) Linear Block Code, which of the following is/are correct?`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_21.png"/><br><br>`,
+        `<em>CH<sup>T</sup></em> = 0`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_22.png"/><br><br>`,
+        `<em>GH<sup>T</sup></em> = 0`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a, b, d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An FSK system transmits binary data at the rate of 2.5 × 106 bits per second. During the course of transmission, AWGN of zero mean and power spectral density 5 × 10<sup>–20</sup> W/Hz is added to the signal. In the absence of noise, the amplitude of the received sinusoidal wave for digit 1 or 0 is 1 μV.<br/>The average probability of symbol error, assuming coherent detection is,`,
+      image: "",
+      options: [
+        `2<em>erfc</em> (1)`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_23.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_24.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_25.png"/><br><br>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A delta modulation system samples a sinusoidal sample of audio data at 256 kHz. Consider the bandwidth of the signal to be 16 kHz and a peak amplitude of 4 V. The Granular noise power generated at the output of DM receiver in order to prevent slope overload is _________ mW.<br/>(Rounded off to one decimal place)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 51.4,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_33.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a digital communication receiver, the input to the threshold comparator is either 5 V or –5 V for ‘1’ and ‘0’ transmission respectively. The received signal is affected by AWGN with variance 0.5 V<sup>2</sup> . If <em>p</em> (0) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_27.png"/>the threshold voltage of the comparator is,`,
+      image: "",
+      options: [
+        `0.0347 V`,
+        `4.97 V`,
+        `–4.97 V`,
+        `–0.0347 V`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_28.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The amplitude of a random signal is uniformly distributed between –2 V and 2 V.<br/>If the positive values of the signal are uniformly quantized with a step size of 0.07 V, and the negative values are uniformly quantized with a step size of 0.5 V, the signal to quantization noise ratio of the given PCM system is __________. (rounded off to two decimal places)`,
+      image: "",
+      options: [
+
+      ],
+      answer: 125.54,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_36.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_37.png"/><br><br>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Signals <em>S</em><sub>1</sub> (<em>t</em> ) and <em>S</em><sub>2</sub> (<em>t</em> ) shown in below figure (a) are used as orthonormal basis in a binary data transmission system.<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_38.png"/><br><br>The vector representations <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_39.png"/> of the two signal waveforms used for transmission are shown in below figure (b).<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_40.png"/><br><br>The probability of error if transmission is over an AWGN channel with noise having power spectral density equal to 0.5 W/Hz is Q(c).<br/>Select the correct values of a, b, c from the options given below:`,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_41.png"/><br><br>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_42.png"/><br><br>`,
+        `<em>c</em> = 2`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_43.png"/><br><br>`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_44.png"/><br><br><br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following pair of modulation schemes have the same average symbol error probability?`,
+      image: "",
+      options: [
+        `ASK with 0° phase shift and FSK with 90° phase shift in the local oscillator.`,
+        `ASK with 0° phase shift and PSK with 90° phase shift in the local oscillator.`,
+        `FSK with 0° phase shift and PSK with 45° phase shift in the local oscillator.`,
+        `FSK with 45° phase shift and ASK with 45° phase shift in the local oscillator.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the channel and message probabilities given in the below figure, the decisions about the transmitted message for each possible received response is made using MAP decoding technique.<br><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_31.png"/><br><br>Choose the correct decision according to MAP decoding technique:`,
+      image: "",
+      options: [
+        `‘<em>r</em><sub>0</sub> ’ is decoded as ‘<em>m</em><sub>0</sub> ’`,
+        `‘<em>r</em><sub>1</sub> ’ is decoded as ‘<em>m</em><sub>1</sub> ’`,
+        `‘<em>r</em><sub>2</sub> ’ is decoded as ‘<em>m</em><sub>1</sub> ’`,
+        `‘<em>r</em><sub>1</sub> ’ is decoded as ‘<em>m</em><sub>0</sub> ’`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a threshold detector with input <em>R</em> = <em>X</em> + <em>N</em> , where <em>X</em> is the signal level at the input of the detector due to transmitted binary data and <em>N</em> is a noise variable which is characterised by the probability density function f<sub>N</sub> (n) = 0.5e<sup>–</sup> |<sup>n</sup> |.<br/><em>X</em> takes the values : +1 with probability of 1/3<br/>–1 with probability of 2/3<br/>If the threshold value of the detector is decided in an optimum way using maximum a posteriori<br/>(MAP) criteria, the value of optimum threshold voltage is _________. [Rounded off to two decimal places]`,
+      image: "",
+      options: [
+
+      ],
+      answer: 0.35,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ec_communications_3/img_35.png"/>`
+    },
   ]
 });
 
