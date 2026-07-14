@@ -532,10 +532,12 @@ function renderTestList(t, filter) {
       testNumber = t.schedule.length - i;
       bracket = label;
     }
+    const yearMatch = t.examTag ? t.examTag.match(/\d{4}/) : null;
+    const year = yearMatch ? yearMatch[0] : "2027";
     return {
       name:
         t.code +
-        " 2027-" + testType + " Test-" +
+        " " + year + "-" + testType + " Test-" +
         testNumber +
         " (" + bracket + ")",
       from: s[1],
