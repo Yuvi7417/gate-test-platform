@@ -4883,7 +4883,6 @@ registerTest({   // made easy 2026 cse topic wise test theory of computation-1
   ]
 });
 
-
 registerTest({    // made easy 2026 cse topic wise test theory of computation-2
   series: "cse-gate-2026-pyq",
   name: "TWT - Theory Of Computation-2",
@@ -5125,6 +5124,4020 @@ registerTest({    // made easy 2026 cse topic wise test theory of computation-2
       ],
       answer: "C",
       solution: "<img src=\"/js/questions/easy_2026_TOC-2/q17_sol_6.png\" style=\"max-width:100%; border-radius: 8px;\">"
+    }
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test discrete mathematics-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Discrete Mathematics-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `India plays two matches each with England and Australia. In any match the probabilities of India getting points 0, 1 and 2 are 0.45, 0.05 and 0.50 respectively. Assuming that the outcomes are independent. The probability of India getting at least 7 points is`,
+      image: "",
+      options: [
+        `0.8750`,
+        `0.0875`,
+        `0.0625`,
+        `0.0250`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A student appears for a quiz consisting of only true-false type questions and answer all the questions. The student knows the answers of some questions and guesses the answers for the remaining questions. Whenever the student knows the answer of a question, he gives the correct answer. Assume that the probability of the students giving the correct answer for a question given that he has guessed it, is <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_14.png"/> Also assume that the probability of the answer for a question being guessed, given that the student’s answer is correct is <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_15.png"/>Then the probability that the student knows the answer of a randomly chosen question is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_16.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_17.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_18.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_19.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<em>A</em> and <em>B</em> throw alternatively a pair of dice. <em>A</em> wins if he throws 6 before <em>B</em> throws 7 and <em>B</em> wins if he throws 7 before A throws 6. If <em>A</em> starts the game, then the probability that <em>B</em> wins the game is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_24.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If A is a square matrix of order three with its characteristic equation:<br><img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_26.png"/>then its determinant is `,
+      image: "",
+      options: [
+      ],
+      answer: -2,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose 5 men out of 100 and 25 women out of 10000 are color blind. A color blind person is chosen at random. The probability of the person being a male is ________. (Assume male and female to be in equal numbers) [Upto 2 decimal places]`,
+      image: "",
+      options: [
+      ],
+      answer: 0.95,
+      solution: ` [0.92 - 0.96]<br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An unbiased coin is tossed an infinite number of times. The probability that the 3<sup>rd</sup> tails appears at the 8<sup>th</sup> toss is `,
+      image: "",
+      options: [
+        `0.050`,
+        `0.082`,
+        `0.072`,
+        `0.086`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Suppose we have 2 bags. Bag 1 contains 3 black and 4 red marbles. Bag 2 contains 3 black and 6 red marbles. A person tosses a coin. If it shows head, he goes to bag 1, else bag 2 and draws a marble. If the marble drawn is black, then probability that it comes from bag 1 will be`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_33.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_34.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function, <em>f</em> (<em>x</em> ) = 2 <em>x</em> <sup>3</sup> – 3<em>x</em> <sup>2</sup> – 36 <em>x</em> + 10, has a local maximum value at ‘<em>x</em> ’ equals to `,
+      image: "",
+      options: [
+        `-2`,
+        `-1`,
+        `3`,
+        `4`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The determinant of the given matrix is ____________.<br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_41.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following functions are continuous on (0, π)?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_1.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_4.png"/>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_6.png"/> `,
+      image: "",
+      options: [
+        `2`,
+        `-2`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_8.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If <em>X</em> = –1 and <em>x</em> = 2 are extreme points of <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_10.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: -3,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a study about a pandemic, data of 900 persons was collected.It was found that<br>• 190 persons had symptom of fever<br>• 220 persons had symptom of cough<br>• 220 persons had symptom of breathing problem<br>• 330 persons had symptom of fever or cough or both<br>• 340 persons had symptom of fever or breathing problem or both<br>• 350 persons had symptom of cough or breathing problem or both<br>• 30 persons had all three symptoms (fever, breathing problem and cough)<br>If a person is chosen randomly from these 900 persons, then the probability that the person has at most one symptom is ______. `,
+      image: "",
+      options: [
+      ],
+      answer: 0.80,
+      solution: ` [0.78 - 0.82]<br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Find the maximum and minimum values of 3<em>x</em> <sup>4</sup> – 2<em>x</em> <sup>3</sup> – 6<em>x</em> <sup>2</sup> + 6<em>x</em> + 1 in the interval (0, 2). `,
+      image: "",
+      options: [
+        `Maximum value is 2.43`,
+        `Minimum value is 2`,
+        `Maximum value is 3.43`,
+        `Minimum value is 6`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_28.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_36.png"/> <br>be continuous in [0, ∞), then the most suitable values of <em>a</em> and <em>b</em> are: `,
+      image: "",
+      options: [
+        `<em>a</em> = –1 and <em>b</em> = 1`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_37.png"/>`,
+        `<em>a</em> = 1 and <em>b</em> = –1`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A function is defined by <em>f</em> (<em>x</em> ) = 2<em>x</em> <sup>3</sup> – 3x<sup>2</sup> – 12<em>x</em> + 5 for –2 ≤ <em>x</em> ≤ 3. Which one of the following statements is true about this function? `,
+      image: "",
+      options: [
+        `function is decreasing for (–2, –1).`,
+        `function has a minima for <em>x</em> = –1.`,
+        `function has a maxima for <em>x</em> = 2.`,
+        `function is decreasing for (–1, 2).`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the mean value theorem <em>f</em> (<em>b</em> ) – <em>f</em> (<em>a</em> ) = (<em>b</em> – <em>a</em> ) <em>f</em> ′(<em>c</em> ) determining c lying between <em>a</em> and <em>b</em> , if <em>f</em> (<em>x</em> ) = <em>x</em> (<em>x</em> – 1) (<em>x</em> – 2), a = 0 and <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_43.png"/>(Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.23,
+      solution: ` [0.22 - 0.24]<br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_cs_engineering_mathematics_2/img_44.png"/>`
+    }
+
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test general aptitude-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - General Aptitude-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a rare coin collection, there is one gold coin for every three non-gold coins. 10 more gold coins are added to the collection and the ratio of gold coins to non-gold coins becomes 1 : 2. Based on the information, the total number of coins in the collection now becomes ____.`,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the mirror image of following figure.<br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_5.png"/>`,
+      image: "",
+      options: [
+        `I`,
+        `II`,
+        `III`,
+        `IV`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cuboid has six sides of different colours. The red side is opposite to black. The blue side is adjacent to white. The brown side is adjacent to blue. The red side is face down. Which one of the following would be the opposite to brown?`,
+      image: "",
+      options: [
+        `Red`,
+        `Black`,
+        `While`,
+        `Blue`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br>There are six villages <em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> .<br><em>F</em> is 1 km to the west of <em>D</em> .<br><em>B</em> is 1 km to the east of <em>E</em> .<br><em>A</em> is 2 km to the north of <em>E</em> .<br><em>C</em> is 1 km to the east of <em>A</em> .<br><em>D</em> is 1 km to the south of <em>A</em> .<br>Which three villages are in a line? `,
+      image: "",
+      options: [
+        `<em>A</em> , <em>C</em> , <em>B</em>`,
+        `<em>A</em> , <em>D</em> , <em>E</em>`,
+        `<em>C</em> , <em>B</em> , <em>F</em>`,
+        `<em>E</em> , <em>B</em> , <em>D</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The piechart given below shows the distribution of workforce by occupational category for country <em>X</em> in 1981 and 1995. Study the chart and answer the below question. <br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_12.png"/><br>The percentage decrease in the number of Blue-Collar workers in the workforce of country <em>X </em> from 1981 to 1995 is `,
+      image: "",
+      options: [
+        `20%`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_14.png"/>`,
+        `35%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br>1. All artists are whimsical.<br>2. Some artists are drug addicts.<br>3. Frustrated people are prone to become drug addicts.<br>From the above three statements, it may be concluded that `,
+      image: "",
+      options: [
+        `Artists are frustrated`,
+        `Some drug addicts are whimsical`,
+        `Whimsical people are generally frustrated`,
+        `All frustrated people are drug addicts`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A square paper is folded in a particular manner and a punch is made. When unfolded the paper appears as given below :<br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_20.png"/><br>Select the manner in which the paper is folded and punch is made from the responses given.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_24.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The graph of <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_29.png"/>is given by `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_33.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following cubes in the answer figure cannot be made based on the unfolded cube in the question figure?<br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_35.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_39.png"/>`,
+      ],
+      answer: "C",
+      solution: `From the given unfolded cube, star and dot appear opposite to each other and thus, cannot be<br>adjacent to each other. Hence, the cube depicted in option (c) cannot be made. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The digits of a three digit number <em>x</em> are written in the reverse order to form another three digit number y. If <em>y</em> &gt; <em>x</em> and y – <em>x</em> is perfectly divisible by 7, then which of the following is maximum possible value of x? `,
+      image: "",
+      options: [
+        `108`,
+        `156`,
+        `208`,
+        `299`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Amar, Akbar and Anthony are friends, being looked after by a matron Farah. Amar weighs 50% more than Akbar and Anthony weighs 25% less than Amar. Farah weighs a third of the combined weight of three boys. All four together weigh 232 kg. The correct arrangement of the persons in the descending order of their weights is`,
+      image: "",
+      options: [
+        `Amar, Farah, Anthony, Akbar`,
+        `Amar, Farah, Akbar, Anthony`,
+        `Farah, Amar, Akbar, Anthony`,
+        `Farah, Amar, Anthony, Akbar`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_3.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> are cousins. No two cousins are of the same age, but all have birthdays on the same day of the same month. The Youngest is 17 years old and the oldest <em>E</em> is 22 years old. <em>F</em> is somewhere between <em>B</em> and <em>D</em> in age. <em>A</em> is older than <em>B</em> . <em>C</em> is older than <em>D</em> . <em>A</em> is one year<br>older than <em>C</em> . Which one of the following is possible? `,
+      image: "",
+      options: [
+        `<em>D</em> is 20 years old`,
+        `<em>F</em> is 18 years old`,
+        `<em>F</em> is 19 years old`,
+        `<em>F</em> is 20 years old`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following figure and answer the item that follows:<br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_7.png"/><br>A square is divided into four rectangles as shown above. The length of the sides of rectangles are natural numbers, and the areas of two rectangles are indicated in the figure. What is the length of each side of the square?`,
+      image: "",
+      options: [
+        `10`,
+        `15`,
+        `11`,
+        `cannot be determined as the given data insufficient`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> not necessarilly in that order, are sitting in six chairs regularly placed around a round table. It is observed that <em>A</em> is between <em>D</em> and <em>F</em> , <em>C</em> is opposite to <em>D</em> and <em>D</em> and <em>E</em> are not on neighbouring chairs. Which of the following pairs must be sitting on neighbouring chairs? `,
+      image: "",
+      options: [
+        `<em>A</em> and <em>B</em>`,
+        `<em>C</em> and <em>E</em>`,
+        `<em>B</em> and <em>F</em>`,
+        `<em>A</em> and <em>C</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_17.png"/>is `,
+      image: "",
+      options: [
+        `0`,
+        `0.4`,
+        `2.2`,
+        `4.4`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of 4-digit integers in the closed interval [2022, 4482] formed by using the digits 0, 2, 3, 4, 6, 7 is`,
+      image: "",
+      options: [
+      ],
+      answer: 569,
+      solution: ` (569 - 569)<br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_19.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At a point on ground, the angle of elevation of a vertical tower, is found to be such that it’s tangent is <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_26.png"/> On walking 192 meters towards the tower, the tangent of the angle of elevation is found to be <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_27.png"/>The height of the tower is `,
+      image: "",
+      options: [
+        `160 meters`,
+        `180 meters`,
+        `240 meters`,
+        `260 meters`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_cs_general_aptitude_1/img_28.png"/>`
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test general aptitude-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - General Aptitude-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the part (option) of the below sentence that contains an error :<br>He was consulted seldom by his colleagues while making important decisions on financial matters. `,
+      image: "",
+      options: [
+        `He was consulted seldom`,
+        `Decisions on financial matters`,
+        `By his colleagues`,
+        `While making important`,
+      ],
+      answer: "A",
+      solution: `The adverb of frequency, “seldom,”should typically be placed before the main verb “consulted.”<br>Thus, the correct sentence is:<br>He was seldom consulted by his collegues while making important decisions on financial matters. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If MOBILE is written as ZAMSUM, how TUMOR can be written in that code?`,
+      image: "",
+      options: [
+        `BRAIN`,
+        `HGYAD`,
+        `GGXYA`,
+        `IHZBE`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given diagram, circle represents professionals, square represents dancers, triangle represents musicians and rectangle represents Europeans. Different regions in the diagram are numbered 1 to 11. Who among the following is neither a dancer nor a musician but is professional and not a European?<br><img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_3.png"/>`,
+      image: "",
+      options: [
+        `8`,
+        `11`,
+        `1`,
+        `10`,
+      ],
+      answer: "B",
+      solution: `The people who are neither dancers nor musicians but are professionals and not Europeans,<br>means part of circle excluding common of circle with Triangle, square and rectangle i.e.<br>Region “10 ”. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the correct alternative to fill in the blank in the sentence given below.<br>Today student should be reconciled _____ the way things are changing. `,
+      image: "",
+      options: [
+        `with`,
+        `to`,
+        `for`,
+        `at`,
+      ],
+      answer: "A",
+      solution: `With is used with reconcile.<br>Reconcile →To make oneself or another no longer opposed.<br>Here, with is the right usage. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy:<br>Horse : Neigh :: Bells : ? `,
+      image: "",
+      options: [
+        `Beat`,
+        `Chime`,
+        `Rustle`,
+        `Roar`,
+      ],
+      answer: "B",
+      solution: `A horse produces a neigh sound, similarly bells produce a chime sound. Therefore, the correct answer is Chime. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In questions no. 12 and 13, one/two statements are given followed by two/three conclusions. You have to consider the statements to be true even if they seem to be at variance from commonly known facts. You have to decide which of the given conclusions, if any, follows from the given statements.<br><strong>Statement:</strong> <br>Sun is the source of light.<br><strong>Conclusions:</strong> <br>I. Moon is not the source of light<br>II. Light has only one source. `,
+      image: "",
+      options: [
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `Both conclusions (I) and (II) follow`,
+        `Neither conclusion (I) nor (II) follows`,
+      ],
+      answer: "D",
+      solution: `The statement only mentions sun as a source of light but it does not deny other sources (like Moon,<br>bulbs, fire etc.) and it does not say sun is the only source. Therefore, both conclusions are wrong. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<strong>Statement:</strong> <br>I. All cities are towns.<br>II. Some cities are villages.<br><strong>Conclusions:</strong> <br>I. All villages are towns.<br>II. No village is a town.<br>III. Some villages are towns. `,
+      image: "",
+      options: [
+        `Only conclusion (III) follows`,
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `Some cities are villages, and all cities are towns. So, those villages (which are cities) are also<br>towns. Hence, some villages are towns.<br>So, only conclusion III is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following diagrams best depicts the relationship among Earth, Sea and Sun?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_7.png"/>`,
+      ],
+      answer: "D",
+      solution: `Sea is a part of the Earth and Sun is a separated celestial body, not a part of the earth. Thus,<br>option (d) best depicts the relationship among Earth, Sea and Sun. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy.<br>FLEXIBLE : RIGID : : CONFIDENCE : ? `,
+      image: "",
+      options: [
+        `Diffidence`,
+        `Indifference`,
+        `Cowardice`,
+        `Scare`,
+      ],
+      answer: "A",
+      solution: `“Flexible ”and “Rigid ”are antonyms. Diffidence meaning shyness or lack of confidence is the<br>opposite of confidence. Thus, option (a) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Out of given alternatives, choose the one which best expresses the meaning of the word, Envoy`,
+      image: "",
+      options: [
+        `Carrier`,
+        `Chief`,
+        `Ambassador`,
+        `Receiver`,
+      ],
+      answer: "C",
+      solution: `The word “Envoy ”refers to a person who is sent as a representative, often on a diplomatic<br>mission. An ambassador is a senior diplomat or envoy representing a country. So, “Ambassador ”<br>best expresses the meaning of the word “Envoy ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Choose the word opposite in meaning for the underlined word:<br>The hot summer afternoon made everyone feel <u>languid</u> and they sought refuge in the shade to escape the heat. `,
+      image: "",
+      options: [
+        `Listless`,
+        `Energetic`,
+        `Lethargic`,
+        `Sluggish`,
+      ],
+      answer: "B",
+      solution: `The word “Languid ”means lacking energy, weak, or slow-often due to fatigue, illness, or heat.<br>In the context of the sentence, the hot summer afternoon made everyone feel fired and drained.<br>Hence, “Energetic ”is the opposite in the meaning to “languid ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Select the alternative which is the best substitute of the sentence/word:<br>Take away or alter the natural qualities of `,
+      image: "",
+      options: [
+        `Denature`,
+        `Unadulterated`,
+        `Authentic`,
+        `Limpid`,
+      ],
+      answer: "A",
+      solution: `Denature : Changed from its natural state.<br>Unadulterated : Pure, not mixed or diluted with any different or extra elements.<br>Authentic : Genuine, real, not fake or copied. An authentic document is the original, not a duplicate<br>or forgery.<br>Limpid : Clear, transparent, often used for liquids, but also can describe clear writing or thought. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If × stands for addition, <for +="" division,="" for="" subtraction,="">for multiplication, – for equal to, ÷ for greater than and = for less than, state which of the following expressions is true? </for>`,
+      image: "",
+      options: [
+        `3 × 2 &lt;4 ÷ 16&gt;2 + 4`,
+        `5 &gt; 8 + 4 = 10 &lt;4 × 2`,
+        `3 × 4 &gt; 2 – 9 + 3 &lt;3`,
+        `5 × 3 × 3 ÷ 8 + 4 × 1`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the following question, the passage/sentence is split into four parts A, B, C and D. These four parts are not given in their proper order. Read the sentence and find out which of the following four combinations is correct.<br>A. Explained angrily<br>B. The bricklayer<br>C. Leaving the site<br>D. His reasons for `,
+      image: "",
+      options: [
+        `BADC`,
+        `DCAB`,
+        `CBAD`,
+        `ADCB`,
+      ],
+      answer: "A",
+      solution: `The bricklayer explained angrily his reasons for leaving the site. Hence, the correct order is BADC. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The World Health Organisation is briefly called W.H.O. It is a specialised agency of the United Nations and was established in 1948.  International health workers can be seen working in all kinds of surroundings: in deserts, jungles, mountains, coconut groves, and rice fields. They help the sick to attain health and the healthy to maintain their health. This global health team assists the local health workers in stopping the spread of what are called communicable diseases, like cholera. These diseases can spread from one country to another and so can be a threat to world health. W.H.O. assists different national health authorities not only in controlling diseases but also in preventing them altogether. Total prevention of diseases is possible in a number of ways. Everyone knows how people, particularly children, are vaccinated against one disease or another. Similarly, most people are familiar with the spraying of houses with poisonous substances which kill disease-carrying insects.<br>"It is a specialised agency of the United Nations and was established in 1948.” Here specialised means `,
+      image: "",
+      options: [
+        `expert`,
+        `extraordinary`,
+        `uncommon`,
+        `made suitable for a particular purpose`,
+      ],
+      answer: ["D"],
+      solution: `The word “specialised ”refers to something that is focused on a specific area or purpose rather<br>than being general. In the sentence, W.H.O. is described as a specialised agency —meaning it is<br>an agency that deals specifically with health matters, not with everything else. Thus, “made<br>suitable for a particular purpose ”is the most accurate meaning.<br>(A) expert: relates to skill, but “specialised ”here talks about focus, not expertise.<br>(B) extraordinary: means very special or unusual —not the meaning here.<br>(C) uncommon: means rare —not the intended meaning. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If ‘PUNCTUATION’ is coded as ‘QVODUVBUJPO’ and ‘SING’ as ‘TJOH’, then how is ‘PARLIAMENT’ coded?`,
+      image: "",
+      options: [
+        `QBSMJKNFMU`,
+        `QBSMJBNFOU`,
+        `QTBSMJOFOU`,
+        `QASTMJNFOU`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_cs_general_aptitude_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Arrange the following four sentences P, Q, R and S in the proper sequence to form a meaningful<br>paragraph starting from 1 and ending with 6.<br>1. Communication has been an important aspect all through the ages.<br>P. E-mail is a convenient way to deliver any requested information.<br>Q. Today instantaneous communication is vital.<br>R. Voice is often easier than e-mail, but it is not as easy to create and send nor is it possible to send the same message to a large number of people in different places in the world.<br>S. It is also a good way to communicate with multiple people at the same time; but e-mail is only one form for communication.<br>6. The other forms of faster and easier communication are being explored.<br>Which one of the following is the correct sequence? `,
+      image: "",
+      options: [
+        `SQRP`,
+        `QPSR`,
+        `SPRQ`,
+        `RQSP`,
+      ],
+      answer: "B",
+      solution: `b`
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test operating system-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Operating System-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a system, there are n resource, <em>R</em> <sub>1</sub> , <em>R</em> <sub>2</sub> , ..... <em>R</em> <sub>n</sub> , each protected by a binary semaphore <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> , .....  <em> S<sub>n</sub> </em> respectively.<br>There are large number of processes and each process can request one or more resource at a time.<br>Each process must request resources in the order: <em>R</em> <sub>1</sub> → <em>R</em> <sub>2</sub> → <em>R</em> <sub>3</sub> ..... <em> R<sub>n</sub> </em> <br>A process will request resource using <em>P</em> ( <em> S<sub>i</sub> </em> ) for each resource and then release with <em>V</em> ( <em> S<sub>i</sub> </em> ).<br>Which of the following statements is correct for this system? `,
+      image: "",
+      options: [
+        `Deadlock can still occur because mutual exclusion and hold-wait condition remain.`,
+        `Deadlock is possible due to violation of the no-preemption rule.`,
+        `Deadlock is still possible if multiple process requests all <em>n</em> resources simultaneously.`,
+        `Deadlock is prevented because the circular wait condition is avoided.`,
+      ],
+      answer: "D",
+      solution: `The rule (<em>R</em> <sub>1</sub> →<em>R</em> <sub>2</sub> →<em>R</em> <sub>3</sub> ) breaks circular wait condition. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A system uses segmentation with paging. The page size is 4 KB and each page table entry (PTE) is 4 B. A process has 5 segments, each accessing 300 unique pages. For each segment, a page table is stored in one page. The segment table is also stored in one page.<br>No pages is swapped out; all are in main memory. Let <em>X</em> be the number of pages used for the segment and page tables and <em>Y</em> be the number of data pages access. What is <em>X</em> + <em>Y</em> ? `,
+      image: "",
+      options: [
+        `1506`,
+        `1505`,
+        `1501`,
+        `1507`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_1.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A process generates the following page reference string 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3<br>Assume the system used 3 frames and all frames are initially empty. The page replacement<br>algorithms considered are Optimal (OPT), Least Recently Used (LRU) and First-in_First-out (FIFO).<br>Which of the following statements are incorrect? `,
+      image: "",
+      options: [
+        `LRU and optimal replacement algorithm result in the same number of page faults.`,
+        `FIFO result in less page faults than LRU.`,
+        `Increasing the number of frames from 3 to 4 leads Belady’s anomaly in FIFO.`,
+        `All of these`,
+      ],
+      answer: ["D"],
+      solution: `Optimal has 7 page faults.<br>LRU has 9 page faults.<br>(b) FIFO has 10 page faults more than LRU.<br>(c) Increasing frames, increases page fault in FIFO. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a scenario, having fixed partition allocation scheme where each partition is of size 100 kB, 500 kB, 200 kB, 300 kB and 600 kB. In these partitions, the processes that are needed to be placed are 212 kB, 417 kB, 112 kB and 426 kB (in order). How many partitions will remain<br>unallocatted after placing the processes in each of first fit, best fit and worst fit algorithm respectively. Also, which policy(s) will be successful in placing all these processes. `,
+      image: "",
+      options: [
+        `4, 1, 2 ; Best fit and First fit`,
+        `2, 1, 2 ; Best fit`,
+        `4, 2, 3 ; Best fit`,
+        `3, 2, 3 ; Best fit and First fit`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 32 bit machine uses a virtual memory system using single level paging.<br>The virtual address space is 4 GB and the physical memory size is 1 GB. Each physical page (frame) is of size 4 KB. Each page table entry contains the physical frame number, along with 3 control bits and 1 unused bit.<br>Calculate the size (in MB) of the page table required for a single process access. (Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 2.75,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following tasks is/are the responsibility of the Memory Management Unit (MMU):<br><em>T</em> <sub>1</sub> : Translating a virtual address to a physical address using both the outer and inner page tables.<br><em>T</em> <sub>2</sub> : Allocating memory for the inner page table when a new page is accessed for the first time.<br><em>T</em> <sub>3</sub> : Raising a page fault of a required virtual page is not present in the inner page table.<br><em> T<sub>4</sub> </em> : Updating the outer page table when a new page table is allocated for a new memory segment. `,
+      image: "",
+      options: [
+        `<em>T</em> <sub>1</sub> only`,
+        `<em>T</em> <sub>1</sub> , <em>T</em> <sub>3</sub> and <em>T</em> <sub>4</sub>`,
+        `<em>T</em> <sub>1</sub> and <em>T</em> <sub>3</sub>`,
+        `<em>T</em> <sub>1</sub> , <em>T</em> <sub>2</sub> and <em>T</em> <sub>3</sub>`,
+      ],
+      answer: "C",
+      solution: `•The MMU does not allocate memory, it only uses page tables for translation.<br>•The MMU does not modify page tables, it only reads, them.<br>The OS updates the outer page table when a new segment/page table is created. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a system with <em>n</em> process <em>P</em> <sub>1</sub> , P<sub>2</sub> , ....., <em> P<sub>n</sub> </em> , each process <em> P<sub>i</sub> </em> requests upto <em>i</em> resources. The system has a total of R resources. (All resources are identical)<br>Which of the following statement is true regarding the system? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_4.png"/>`,
+        `<br><img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_5.png"/> `,
+        `<br><img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_6.png"/> `,
+        `<br><img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_7.png"/> `,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a system with physical address of 46 bit, virtual address of 64 GB, page size is 16 KB, if the last level page table will fit into one page, number of page table level required is ________.`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `4`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A surveillance system stores video recordings of unknown length, written sequentially. File grow over time and random access is rarely needed. Metadata overhead should be minimum.<br>Which file allocation method is most suitable? `,
+      image: "",
+      options: [
+        `Contiguous allocation, due to minimal metadata and optimal access time.`,
+        `Linked allocation, as it allows dynamic growth with low overhead.`,
+        `Indexed allocation, for scalability and block level direct access.`,
+        `Contiguous allocation, since fragmentation is avoided and access is predictable.`,
+      ],
+      answer: "B",
+      solution: `Linked allocation allows sequential access, dynamic growth and low metadata overhead. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a 2-level paging hardware with TLB. Assume that the entire page table and all the pages are in the physical memory. It takes 50 μs to search the TLB and 40 milliseconds to access the physical memory. If the TLB hit ratio is 0.6 and there are no page faults, the effective memory access time (in milliseconds) is ________.`,
+      image: "",
+      options: [
+        `84.06`,
+        `87.06`,
+        `72.05`,
+        `92.08`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `In demand paging, a given instruction can lead to page faults.`,
+        `Demand paging brings a page into the memory only when it is needed.`,
+        `Demand paging requires more main memory than normal paging.`,
+        `Demand paging may bring entire process into memory at load time (for very smaller processes).`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `•The process of loading the page into memory on demand (whenever page fault occurs) is known as demand paging.<br>•Lazy swapper concept is implemented in demand paging in which a page is not swapped into the memory unless it is required. So option (b) is correct.<br>•Option (c) is false because a process larger than the main memory can be executed because of<br>demand paging. The OS itself loads pages of a process in main memory as required.<br>•More processes may be maintained in the main memory: Because we are going to load only<br>some of the pages of any particular process, there is room for more processes. This leads to<br>more efficient utilization of the processor because it is more likely that at least one of the<br>more numerous processes will be in the ready state at any particular time. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following snapshot of a system using the Banker’s algorithm.<br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_11.png"/><br>Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `System is in unsafe state`,
+        `System is in deadlock`,
+        `System is in safe state`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: `Given system have multiple safe sequences. If no request is their.<br>Request <em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> are invalid, as <em>R</em> <sub>1</sub> exceeds maximum limit of process <em>P</em> <sub>2</sub> and <em>R</em> <sub>2</sub> grant leads system is deadlock. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider five memory partitions of size 100 KB, 500 KB, 200 KB, 450 KB and 600 KB in same order. If sequence of requests for blocks of size 212 KB, 417 KB, 112 KB, 426 KB and 280 KB in same order come and partitioning can be done in block, then which of the following algorithm satisfy all the block requests?`,
+      image: "",
+      options: [
+        `Best fit algorithm`,
+        `Neither first Nor best fit`,
+        `Both next fit and best fit results in same`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: `b`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `In dynamic partition (variable partition) external fragmentation is the problem and solution is compaction.`,
+        `In fixed partitions degree of multiprogramming is restricted by number of partitions in the memory.`,
+        `Paging is memory management scheme that supports user view of memory.`,
+        `A process is thrashing if it is spending more time paging than execution.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a unix inode which maintains 5 direct disk blocks, 1 single indirect, 1 double indirect and 1 triple indirect DBA. Disk block size is 4 KB and disk block address is 32 bits. Which of the following is maximum possible file size using triple indirect in the TB ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A disk has 200 cylinders, numbered from 0 to 199. The current head position is at cylinder 85 and the previous request was at 100, so the direction of head movement is towards lower cylinder number. The queue of pending disk requests (in order of arrival) is<br>[10, 123, 34, 62, 178, 85, 90, 150, 38]<br>Each cylinder movement takes 1 msec and every request serviced takes an additional 3 msec.<br>Which is the total time taken by shortest seek time first, look and C-SCAN. `,
+      image: "",
+      options: [
+        `&lt;285, 280, 417&gt;`,
+        `&lt;280, 270, 420&gt;`,
+        `&lt;285, 270, 417&gt;`,
+        `&lt;288, 280, 420&gt;`,
+      ],
+      answer: "B",
+      solution: `b`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a system with the below resource allocation graph:<br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_14.png"/><br>Consider the following statements:<br><em>S</em> <sub>1</sub> : Given system is in deadlock.<br><em>S</em> <sub>2</sub> : One more instance of <em>R</em> <sub>3</sub> required to make system deadlock free.<br><em>S</em> <sub>3</sub> : Their are two unique safe sequence exist for given system.<br><em>S</em> <sub>4</sub> : Mutual exclusion and hold-wait condition violated, deadlock here.<br>Number of the correct statement(s)? `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_cs_operating_system_1/img_15.png"/>`
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test operating system-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Operating System-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is not directly related to the Process Management (PM) function of an operating system?`,
+      image: "",
+      options: [
+        `Choosing which process run on the CPU next.`,
+        `Helping process to communicate with each other.`,
+        `Suspending and resuming process during execution.`,
+        `Giving memory space to process when they are created.`,
+      ],
+      answer: "D",
+      solution: `•CPU scheduling, Inter Process Communication (IPC) manage by process management.<br>•Memory allocation is done by the memory manager. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A system uses Round-Robin scheduling with a time quantum <em>Q</em> , context switch overhead <em>S</em> , and average process burst time before I/O block is <em>T</em> . Which of the following always ensures maximum CPU efficiency? (All process are identical) `,
+      image: "",
+      options: [
+        `Time quantum is less, and context switching time is high`,
+        `Time quantum is large, and context switching time is less`,
+        `Time quantum is less, and context switching time is also less`,
+        `Time quantum is large, and context switching time is also large`,
+      ],
+      answer: "B",
+      solution: `B`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `In a concurrent system, two semaphore are used:<br>• Mutex initialized to 1.<br>• Flag initialized to 0.<br>• “Shared” is a global variable initialized with 1.<br>Three threads executes the following code concurrently. <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_1.png"/><br>Which of the following is/are true about this execution?`,
+      image: "",
+      options: [
+        `If thread A runs before thread C, thread B may block forever.`,
+        `If thread A runs first, thread B is guaranteed to enter its critical section.`,
+        `Thread B may enter the critical section even if thread A does not execute.`,
+        `The flag semaphore act as a signal mechanism dependent on shared’s value.`,
+      ],
+      answer: ["A", "D"],
+      solution: `•If thread A runs before thread C then shared == 0 condition gets fail and flag remain zero. So<br>thread B will never reach critical section.<br>•Flag semaphore is acting as a conditional signal based valued of shared. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is/are correct?<br>A. Mutual exclusion and no deadlock imply progress.<br>B. A thread can read/write to another threads if no memory protection used in same process.<br>C. A context switch is triggered by an interrupt and independent of process dispatching.<br>D. Multi-level feedback queue may suffer from starvation. `,
+      image: "",
+      options: [
+        `A, B and D`,
+        `A and B`,
+        `B and D`,
+        `A, C and D`,
+      ],
+      answer: "C",
+      solution: `•ME and no deadlock not necessary means progress.<br>•Context switching is the result of dispatching of process when schedular schedule new process,<br>but independent when process moves from running to blocked state. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a process P invokes the exec( ) system call on UNIX system. Which of following informations of Process Control Block (PCB) of P will change after successful invoke of exec( )?`,
+      image: "",
+      options: [
+        `Process identifier (PID)`,
+        `Value of program counter stored within user space context on Kernel stack`,
+        `PID of parent process`,
+        `Page table entries`,
+      ],
+      answer: ["B", "D"],
+      solution: `exec( ) system call used to replace the process ’s memory space with new program. New memory<br>space will lead to new program counter, now page tables, etc.<br>PID of P and its parent have nothing to do with new program. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following process states in an operating system. New, Ready, Running, Blocked, Terminated.<br>Consider the following statements:<br>1. A process in the running state may voluntarily give up the CPU when time slice expires and transition to ready state.<br>2. A blocked process can transition to ready state once the resource becomes available.<br>3. Process move from running state to blocked state if it requests an I/O operation.<br>4. A process can not move from blocked state to running state without transitioning through the ready state.<br>Which of the following is not false? `,
+      image: "",
+      options: [
+        `1, 2 and 4`,
+        `2 and 3`,
+        `1 and 2`,
+        `All of the statements`,
+      ],
+      answer: "D",
+      solution: `•A process voluntarily give up the CPU e.g.: when its finishes time slice or calls a system call.<br>•Preemption does not change process state from running to block, it requires system call and<br>interrupt. Preemption means forcibly taking CPU away from a process, usually by the schedules. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `Aging method is used to remove starvation problem in priority based scheduling.`,
+        `In terms of response time, Round-Robin scheduling is better than FCFS scheduling.`,
+        `Multilevel feedback queue schedulings are preemptive type scheduling methods.`,
+        `Which process will move next from ready state to running state is decided by CPU scheduler.`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `RR provides CPU depending on quantum time. So, it generally provides CPU first time before completion of some other processes.<br>CPU scheduler decides which process will run next, and dispatcher allocates the resources accordingly.<br>Option (a) and (c) are also correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following code with two threads, Producer and Consumer, that can run parallel.<br>Further, <em>S</em> and <em>Q</em> are binary semaphore equipped with the standards P (Wait) and V (Signal) operations.<br>semaphore <em>S</em> = 1, <em>Q</em> = 0; and integer <em>x</em> ; <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_9.png"/><br>Which of the following is TRUE about the program above?`,
+      image: "",
+      options: [
+        `The process can deadlock`,
+        `One of the threads can starve`,
+        `Some of the items produced by the producer may be lost`,
+        `Values generated and stored in ‘<em>x</em> ’ by the producer will always be consumed before the producer can generate a new value`,
+      ],
+      answer: "D",
+      solution: `Since there is a strict alteration between producer and consumer. So values generated and stored<br>in ‘<em>x</em> ’by producer will always be consumed before the producer can generate a new value. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br>1. Loop instructions cannot be interrupted till they complete.<br>2. Nearest cylinder next disk scheduling strategy gives the best throughput in comparison to first come first serve scheduling strategy.<br>3. Using large file block size in a fixed block size file system leads to poor disk throughput.<br>Which of the above statements are false? `,
+      image: "",
+      options: [
+        `Only 1`,
+        `Only 1, 2 and 3`,
+        `Only 1 and 3`,
+        `Only 2`,
+      ],
+      answer: "C",
+      solution: `1. CPU senses interrupt request line after every instruction.<br>2. Nearest cylinder next disk scheduling strategy gives the best throughput but the only problem<br>is it can lead to starvation.<br>3. Using large file block size in a fixed block size file system leads to better disk throughput but<br>poor disk space utilization. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `Two or more processes can concurrently execute the same program.`,
+        `A process and its child process share the code/program at physical memory because it is static.`,
+        `A process in user mode cannot execute priviledged instructions.`,
+        `Threads of a process share the code/program at physical memory because it is static.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `Parent and child can execute the same program.<br>(b) Child creation make copy of physical memory. Also consider exec( ) call. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the processes with arrival time (in ms) and CPU burst time (in ms) in following table:<br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_2.png"/><br>CPU schedular uses Round-Robin scheduling with time quantum of 3 ms. Which of the following is/are correct for schedule of above processes?`,
+      image: "",
+      options: [
+        `Average turn around time is 15.5 ms.`,
+        `<em>P</em> <sub>3</sub> terminate before <em>P</em> <sub>4</sub> .`,
+        `<em>P</em> <sub>2</sub> terminate before <em>P</em> <sub>3</sub> .`,
+        `<em>P</em> <sub>2</sub> first time schedule for CPU at 6 ms.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Three concurrent process <em>P</em> <sub>1</sub> , <em>P</em> <sub>2</sub> and <em>P</em> <sub>3</sub> execute the following operations without any synchronization (i.e. race condition possible). <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_4.png"/><br>Each process executes exactly once, but their operations can be interleaved in any arbitrary order.<br>Let <em>X</em> and <em>Y</em> be the different values of a and b respectively, after all processes finish.<br>[Initially <em>a</em> = 0, <em>b</em> = 1]<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `<em>X </em> = 1, <em>Y</em> = 7`,
+        `<em>X</em> = 3, <em>Y</em> = 8`,
+        `<em>X</em> = 2, <em>Y</em> = 9`,
+        `<em>X</em> = 3, <em>Y</em> = 9`,
+      ],
+      answer: "D",
+      solution: `<em>X</em> = 1, 2, 3<br><em>Y</em> = 1, 2, 3, 4, 5, 6, 7, 8, 9 `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a process has following segment table:<br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_5.png"/><br>Logical address for above system represented as <segment number="">. Which of the following logical address for above process is invalid and lead to an error? </segment> `,
+      image: "",
+      options: [
+        `&lt;0, 301&gt;`,
+        `&lt;1, 89&gt;`,
+        `&lt;2, 845&gt;`,
+        `&lt;4, 149&gt;`,
+      ],
+      answer: "C",
+      solution: `In (c), offset is 845 and limit for segment 2 is 50.<br>Here, offset &gt;limit, it is invalid. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider following snapshot of a system with <em>P</em> <sub>0</sub> , <em>P</em> <sub>1</sub> , <em>P</em> <sub>2</sub> and <em>P</em> <sub>3</sub> processes and R<sub>0</sub> , <em>R</em> <sub>1</sub> and <em>R</em> <sub>2 </sub> resources types. In following table, ‘Allocation’ column shows number of resource types allocated to processes, and ‘Max’ column shows maximum requirement of a resource type by a process. <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_6.png"/><br>System has total 4, 7 and 7 instances of resource types <em>R</em> <sub>0</sub> , <em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> respectively. From the perspective of deadlock avoidance, which of the following is/are true for above snapshot/instance? `,
+      image: "",
+      options: [
+        `Above snapshot of system is in safe state.`,
+        `Only one order of processes possible to complete the execution of all processes.`,
+        `At this snapshot, <em>P</em> <sub>1</sub> requests for (<em>R</em> <sub>0</sub> , <em>R</em> <sub>1</sub> , <em>R</em> <sub>2</sub> ) = (0, 0, 1) instances and system allocate requested resources to <em>P</em> <sub>1</sub> . Now, system still in safe state.`,
+        `At this snapshot, <em>P</em> <sub>0</sub> requests for (<em>R</em> <sub>0</sub> , <em>R</em> <sub>1</sub> , <em>R</em> <sub>2</sub> ) = (0, 0, 1) instances and system allocate requested resources to <em>P</em> <sub>0</sub> . Now, system still in safe state.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_7.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a system uses TLB, two-level page table, and stores page table in memory. TLB and memory access time are 20 nanoseconds (ns) and 100 ns respectively. TLB have a cache hit ratio of 95%. What is effective access time of memory in nanoseconds?`,
+      image: "",
+      options: [
+      ],
+      answer: 130,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are not true with respect to deadlocks?`,
+      image: "",
+      options: [
+        `Circular wait is a necessary condition for the formation of deadlock.`,
+        `In a system where each resource has more than one instance, a cycle in the wait for graph indicates the presence of a deadlock.`,
+        `If the current allocation of resources to processes leads the system to unsafe state, then deadlock will necessarily occur.`,
+        `In the resource allocation graph of a system, if every edge is an assignment edge, then the system is not in deadlock state.`,
+      ],
+      answer: ["B", "C"],
+      solution: `Circular wait is one of the four necessary conditions for deadlock to happen. True<br>(b) A cycle in a multi instance resource is necessary but isn ’t sufficient condition for a deadlock.<br>False<br>(c) If system is in an unsafe state then deadlock may or may not occur. But, if system is in safe<br>state then deadlock will definitely not occur. False<br>(d) If there are no request edges in the Resource Allocation Graph then resource requirements<br>for all the processes are satisfied. True `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a system allocate fixed four frames to a process P. Process P references following pages in given sequence:<br>1, 5, 3, 8, 3, 6, 5, 1, 7, 8, 3, 5, 1, 3, 5<br>Let n and m are number of page faults occurs for First-In-First-Out (FIFO) and Least-Recently-<br>Used (LRU) page replacement policies respectively used by system on execution of P as shown above. The value of n + m is ________. (Initially frames are empty) `,
+      image: "",
+      options: [
+      ],
+      answer: 20,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_cs_operating_system_2/img_10.jpg"/>`
+    }
+
+  ]
+});
+
+registerTest({   // made easy 2026 cse topic wise test programming and data structures-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Programming and Data Structures-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following C program:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_1.png"/><br>How many times, sum will be printed and sum value when the program is executed.`,
+      image: "",
+      options: [
+        `5, 3.94`,
+        `6, 3.85`,
+        `5, 3.85`,
+        `6, 3.94`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following C code:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_5.png"/><br>Which of the following statement(s) are true?`,
+      image: "",
+      options: [
+        `The total number of times printf is called is 7.`,
+        `The default case executes exactly twice.`,
+        `The loop runs 4 times but only 2 switch cases are ever matched.`,
+        `The value of val reaches 4 by the end of the loop.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following infix expression:<br>(A – B – C) + D / E * (F + G)<br>Which of the following prefix expression is equivalent to above infix expression? `,
+      image: "",
+      options: [
+        `+ – A – B C * / D E + F G`,
+        `+ – – A B C / D * E + F G`,
+        `+ – – A B C D E / * + F G`,
+        `+ – – A B C * / D E + F G`,
+      ],
+      answer: "D",
+      solution: `D`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a 2D-array with base address 1005, elements are stored in row major order and each element is of size 4. If array is A[–7 ..... 93] [–3 ..... 97 ].<br>What is the address of A[23] [31]? `,
+      image: "",
+      options: [
+      ],
+      answer: 13261,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following postfix expression.<br>10 2 3 4 ∗ + 5 – / 6 2 + ∗<br>Evaluate the result of the expression and determine the maximum stack depth during the evaluation process. (Assume integer arithmetic for all operations) `,
+      image: "",
+      options: [
+        `6, 5`,
+        `8, 4`,
+        `12, 4`,
+        `9, 5`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is TRUE?`,
+      image: "",
+      options: [
+        `Malloc returns NULL, when memory is full.`,
+        `Writing equivalent non-recursive program for non-tail recursion is very easy using for loop.`,
+        `Life time of allocated memory in heap segment is entire program execution time.`,
+        `For static variable memory allocated in the stack segment area.`,
+      ],
+      answer: ["A", "C"],
+      solution: `(a,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following code:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_12.jpg"/><br>Which of the following option is correct?`,
+      image: "",
+      options: [
+        `<em>p</em> points to list [1] and prints 30 on screen after line 1 executes.`,
+        `<em>p</em> points to list [1] and prints 7 on screen after line 2 executes.`,
+        `<em>p</em> points to list [2] after line 3 executes.`,
+        `Code does not make any changes in integer arrays.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_13.png"/><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An <em>n</em> x <em>n</em> where ‘<em>n</em> ’ ranging from {1 to <em>n</em> } matrix ‘<em>r</em> ’ is defined as follows : <br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_15.png"/><br>The sum of the elements of the array ‘<em>r</em> ’ is `,
+      image: "",
+      options: [
+        `0`,
+        `<em>n</em> <sup>2</sup>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_16.png"/>`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true about implementing queue using  linked list ?`,
+      image: "",
+      options: [
+        `In enqueue operation, if new node is inserted at the beginning of linked list, then in dequeue operation node must be removed from end, with time complexity of Ο(<em>n</em> ).`,
+        `In enqueue operation, if new node is inserted at the end, then in dequeue operation node must be removed from the beginning.`,
+        `Both (a) and (b)`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `To keep the first in first out order a queue can be implemented using linked list in 2 ways<br>•If a new node is inserted at the beginning of linked list, then in dequeue operation node must<br>be removed from end.<br>•If new node is inserted at the end of linked list then, in dequeue operation, node must be<br>removed from beginning. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following C code:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_3.png"/><br>After the program is executed, what will be printed?`,
+      image: "",
+      options: [
+        `7 4 8 12 8 13`,
+        `7 10 8 12 6 13`,
+        `7 4 6 12 6 13`,
+        `7 6 8 12 8 13`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following mutually recursive function:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_7.png"/><br>What does the F(F(7)) returns?`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `Only preorder traversal of a binary tree is given, then we can construct unique binary tree.`,
+        `Inorder traversal of BST is always sorted order.`,
+        `Search time complexity of an element in AVL tree Ο(log n).`,
+        `Static variable scope is entire programs.`,
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `In BST, the time taken to find a non-existent elements ‘x’ in the best case is Ο(1).`,
+        `In AVL, the time taken to find a non-existent element ‘x’ in the best case is Ο(log n).`,
+        `In binary tree, the time taken to find a non-existent element ‘x’ in the best case is Ο(n).`,
+        `In Minheap Tree, the time taken to find a non-existent element in the best case is Ο(1).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following are true?`,
+      image: "",
+      options: [
+        `Scope of a static variable is entire program.`,
+        `Malloc( ) always by default return integer pointer.`,
+        `Malloc( ) returns NULL when the memory is full.`,
+        `Auto variable memory allocated in data segment of memory.`,
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following are true?`,
+      image: "",
+      options: [
+        `If the requirement is frequent insertion and deletion then linked list is best suitable compare to array.`,
+        `Array is best suitable if the requirement dynamic is nature.`,
+        `Size of pointer variable will change depending on data type in the same system.`,
+        `Only postorder traversal of BST is given, then we can construct unique binary tree.`,
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following program along with push and pop operations on stack which can contain atmost 8 element at a time:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_18.png"/><br>The value 156 is given as input to the program then value present in stack from top to bottom will be _________.`,
+      image: "",
+      options: [
+      ],
+      answer: 10011100,
+      solution: `The given program compute the binary value of decimal number 156.<br>Hence, the output received will be 10011100. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following two functions:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_19.png"/><br>The output printed when call2 (6) is called is`,
+      image: "",
+      options: [
+        `6 5 4 3 2 1 2 3 4 6`,
+        `6 5 4 3 2 1 5 4 3 2`,
+        `6 5 4 3 2 1 2 3 4 5`,
+        `6 6 5 5 4 4 3 3 2 2`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_cs_programming_and_data_structures_1/img_20.png"/>`
+    }
+
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test programming and data structures-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Programming and Data Structures-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a rooted binary tree with n nodes, represented using pointers. Which of the following is the best possible upper bound, to compute the number of such subtrees, which are full binary tree (0 or 2 children) and have exactly <em>k</em> nodes. `,
+      image: "",
+      options: [
+        `Ο(<em>n</em> <sup>2</sup> )`,
+        `Ο(<em>n</em> log <em>n</em> )`,
+        `Ο(<em>n</em> )`,
+        `Ο(<em>n</em> × <em>k</em> )`,
+      ],
+      answer: ["C", "A"],
+      solution: `•A post order traversal checks all nodes in Ο(n) time.<br>•For each node, verifying if its subtree is a full binary tree with exactly k nodes takes Ο(1)<br>(since k is fixed).<br>•Thus, the total time is linear in n. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a hash table of size m = 13 and two hash functions:<br>1. <em>h</em> <sub>1</sub> (k) = k mod 13<br>2. <em>h</em> <sub>2</sub> (k) = 7 – (k mod 7)<br>Insert the following key in the table {49, 24, 74, 51, 98, 63, 27} using double hashing.<br>Which of the following are true after all keys have been inserted? `,
+      image: "",
+      options: [
+        `The key 63 has a collision at index 11 and will be inserted at index 5 after probing.`,
+        `The final table after all insertion is [—, 27, —, —, —, 63, —, 98, —, 74, 49, 24, 51]`,
+        `The key 27 is inserted at index 1 due to collision.`,
+        `The key 74 is inserted at index 9 without any collision. [`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following function written in C, which is intended to delete every alternate node in<br>a circular singly linked list, starting from the second node.<br>Assume the list has atleast two nodes, and the last node points back to the head. <br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_2.png"/><br>Which of the following option(s) correctly replace Line 1, Line 2 and Line 3 to achieve the desired functionality?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_6.png"/>`,
+      ],
+      answer: ["A", "D"],
+      solution: `Both option (a) and (d) given the desired functionality in given code. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a hash table size of 11 that uses separate chaining for collision resolution. The hash function used is:<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_7.png"/><br>(i) The average chain length in the hash table is greater than 2 for non empty slots.<br>(ii) The index with maximum chain length is 6.<br>(iii) The are exactly seven chains and four empty slots in the hash table.<br>(iv) The total number of collision during key insertion is 11.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `1, 2 and 4`,
+        `1 and 2`,
+        `3 and 4`,
+        `1, 2 and 3`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider inserting the following 10 keys into an empty AVL tree, in the given order:<br>[50, 30, 70, 20, 40, 25, 10, 35, 37, 45]<br>What is the number of LR and RL notations performed during tree construction (e.g., if your answer is 2 and 3 write 23) `,
+      image: "",
+      options: [
+      ],
+      answer: 20,
+      solution: `<em>LR</em> = 2, <em>LL</em> = 1, <em>RL</em> = 0 `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a pointer head1 pointing to the first node of a singly linked list and head2 pointing to the first node of a circular singly linked list.<br>Which of the following approaches can be used to distinguish between the two types without modifying the list?<br><em>S</em> <sub>1</sub> : Keep traversing the list until you reach a node where (node → next == NULL), so that it is single linked list.<br><em>S</em> <sub>2</sub> : Keep two pointer moving at different speeds (slow and fast); if they ever met, the list is circular.<br><em>S</em> <sub>3</sub> :  check if the last nodes next is head so that it is circular single linked list .<br>Which of the above statement are correct? `,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are sufficient not <em>S</em> <sub>3</sub> .`,
+        `<em>S</em> <sub>3</sub> is the incorrect approach.`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> are correct approach.`,
+        `Each statement is individually satisfies for distinguishing.`,
+      ],
+      answer: "D",
+      solution: `All statements are individually correct and correctly check, whether a linked list is singly linked list or circular singly linked list. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What does the following C statement declare?<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_16.png"/>`,
+      image: "",
+      options: [
+        `x is a pointer to array of 5 functions which take int pointer as argument and return char.`,
+        `x is a pointer to array to 5 pointers to function which takes int pointer as argument and return char.`,
+        `x is an array of 5 pointers to function which takes int pointer as argument and return char.`,
+        `x is an array of 5 functions which take int pointer as argument and return char.`,
+      ],
+      answer: "C",
+      solution: `C`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the doubly circular linked list, initialized with the nodes 5, 10, 15, 20, 25, 30, 35 and 40.<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_17.png"/>`,
+      image: "",
+      options: [
+        `10`,
+        `5`,
+        `35`,
+        `40`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_18.png"/><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: `Consider the function f defined below:<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_26.png"/><br>For a given linked list p, the function f return 1 if and only if`,
+      image: "",
+      options: [
+        `the list is empty or has exactly one element`,
+        `the elements in the list are sorted in non-decreasing order of data value`,
+        `the elements in the list are sorted in non-increasing order of data value`,
+        `not all elements in the list have the same data value`,
+      ],
+      answer: ["B"],
+      solution: `For a given linked list p, the function returns 1 if and only if the elements in the list are sorted in<br>non-decreasing order of the data value. <em>f</em> returns 1, if <em>p</em> == NULL or <em>p</em> →next == NULL.<br>But, if and only if makes option (a) as false. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Minimum size of array to store a binary tree with ‘<em>n</em> ’ nodes = ‘<em>n</em> ’.`,
+        `Maximum number of nodes in a binary tree of height ‘<em>h</em> ’ = 2<sup>h + 1</sup> – 1.`,
+        `Number of pointer modified to insert a new node at beginning of double linked list = 3.`,
+        `All enum constant must be unique in their scope.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following binary search tree:<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_10.png"/><br>If we remove the root node, which of the node can be the new root?`,
+      image: "",
+      options: [
+        `23`,
+        `27`,
+        `45`,
+        `49`,
+      ],
+      answer: ["B", "C"],
+      solution: `If we delete root node of a binary search tree, then it can be replaced by inorder successor or<br>predecessor of node so, either 27 or 45 can be new root. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a binary search tree with N nodes, where all values are distinct:<br>Perform the following operation:<br>(i) Remove all the nodes from the BST in such a way that their values are collected in inorder traversal order.<br>(ii) Insert the removed values one by one into a singly linked list.<br>What is the overall time complexity of this operation? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_11.png"/>`,
+        `Ο(N log N)`,
+        `Ο(N<sup>2</sup> )`,
+        `Ω(N log N)`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following program fragment, where ‘k’ is int type variable. What is the value stored<br>in the variable ‘k’ immediately after the for loop terminates?<br>for(k = 1; k &lt;100; ++k)<br>k* = (k + 1); `,
+      image: "",
+      options: [
+        `1806`,
+        `183`,
+        `265`,
+        `677`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider inserting the following sequence of disk net integer into an initially empty tree.<br>[50, 30, 70, 20, 40, 60, 80, 10, 25, 35]<br>Let tree A be a binary search tree built using this order.<br>Let tree B be an AVL built using same key but insert from right to left. `,
+      image: "",
+      options: [
+        `The height of tree A is greater than the height of tree B.`,
+        `The postorder travel of Tree B, is [10, 30, 25, 20, 50, 40, 70, 80, 60, 35]`,
+        `The node 25 is at a different depth in tree A and tree B.`,
+        `Tree B will require two rotation to maintain balance during insertion.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following C program:<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_15.png"/><br>Which of the following is correct for above program?`,
+      image: "",
+      options: [
+        `Output of the program is 41.`,
+        `Output of program is 11.`,
+        `Memory allocated to variable i is in activation record of function ‘fun’.`,
+        `None of the above`,
+      ],
+      answer: "A",
+      solution: `A`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose that queue operations are implemented using stack operation. Enqueue(x) and Dequeue( )<br>are queue operations whereas Pop( ) and Push(x) are stack operations. Consider the following code: <br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_20.png"/><br>Fill the missing statement Stmt1 and Stmt2 to perform Dequeue operation correctly (here <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are two stacks) <br>Note : Queue is implemented using two stacks <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_21.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_22.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_23.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_24.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_cs_programming_and_data_structures_2/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following keys, insert into a hash table keys:<br>k = {18, 26, 35, 41, 57, 63, 70, 89, 97, 104}<br>Hash table size m = 13<br>Which of the following hash function will result in the minimum number of collision using linear probing. `,
+      image: "",
+      options: [
+        `<em>h</em> <sub>1</sub> (<em>k</em> ) = <em>k</em> mod 13`,
+        `<em>h</em> <sub>2</sub> (<em>k</em> ) = (2<em>k</em> + 5) mod 13`,
+        `<em>h</em> <sub>3</sub> (<em>k</em> ) = (<em>k</em> ÷ 7) mod 13`,
+        `<em>h</em> <sub>4</sub> (<em>k</em> ) = (<em>k</em> * <em>k</em> + 3) mod 13`,
+      ],
+      answer: "C",
+      solution: `<em>h</em> <sub>1</sub> (<em>k</em> ) : 4 collision<br><em>h</em> <sub>2</sub> (<em>k</em> ) : 4 collision<br><em>h</em> <sub>3</sub> (<em>k</em> ) : 1 collision<br><em>h</em> <sub>4</sub> (<em>k</em> ) : 5 collision `
+    }
+
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test computer networks-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Computer Networks-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The maximum length of the cable (in km) for transmitting data at a rate of 10 Mbps in an ethernet<br>LAN with frames of size 288 bits and the speed of propagation is 200 m/μsec __________. (Upto one decimal place) `,
+      image: "",
+      options: [
+      ],
+      answer: 2.8,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `MAC address which is internally assigned to computer supports`,
+      image: "",
+      options: [
+        `Hierarchical structure`,
+        `Prefix and suffix structure`,
+        `Flat structure`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `MAC address supports flat structure or linear structure, it does not support hierarchical structure. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of links used in half duplex in point to point link`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `In half duplex, once data is transmitted, same link can be used for sending ack as the link is free so number of links is 1. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In P-persistent CSMA network there are 6 systems in a slot. The probability of each station sending the data is 0.7 and to avoid collision only 2 stations should transmit the data at a time. What is the probability that channel is collision free? ________ (Upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.069,
+      solution: ` [0.060 - 0.070]<br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the following control commands and their respective port numbers:<br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_4.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose station A connected to station B with a intermediate router. The number of times data link layer are visited from source to destination _________.`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Go back N ARQ protocol will fail between two end system on a condition where <em>m</em> is number of sequence bits, when `,
+      image: "",
+      options: [
+        `S.W.S. &lt;2 <em><sup>m</sup> </em>`,
+        `S.W.S. = 2 <em> <sup>m</sup> </em>`,
+        `S.W.S. = <em>m</em>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `Protocols will fail at certain conditions i.e. S.W.S. = 2 <em> <sup>m</sup> </em> that condition is wrap around condition. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The maximum power of the CRC generator polynomial is ‘<em>n</em> ’ then the number of padding bits added are `,
+      image: "",
+      options: [
+        `<em>n</em> – 1`,
+        `<em>n</em>`,
+        `<em>n</em> + 1`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of padding bits added to received codeword in CRC if generator is <em> x<sup>n</sup> </em> + 1 is `,
+      image: "",
+      options: [
+        `<em>n</em> – 1`,
+        `<em>n</em>`,
+        `0`,
+        `<em>n</em> + 1`,
+      ],
+      answer: "C",
+      solution: `No padding bits are added at received codeword. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Buffer is required at receiver side of data link layer. What is its purpose?`,
+      image: "",
+      options: [
+        `To accept out of order data frames and hold it temporarily for sorting.`,
+        `To discard out of order frames.`,
+        `To retransmit the data.`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `Requirement of buffer for holding out of order data is for applying sorting logic and giving as inorder data to above layers. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : DNS can use either of TCP or UDP, for its query and response messages.<br><em>S</em> <sub>2</sub> : SMTP is not used for transferring e-mail messages from the recipients’s mail server to the recipients’s personal computer.<br><em>S</em> <sub>3</sub> : HTTP can use multiple TCP connections between the same client and the server.<br><em>S</em> <sub>4</sub> : POP protocol is used to download an E-mail from mailbox server to a mail client.<br>Which of the above statement are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>3</sub> and <em>S</em> <sub>4</sub>`,
+        `Only <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>4</sub>`,
+        `Only <em>S</em> <sub>1</sub> , <em>S</em> <sub>3</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>2</sub> , <em>S</em> <sub>3</sub> and <em>S</em> <sub>4</sub>`,
+      ],
+      answer: "D",
+      solution: `•TCP involves a connection establishment phase while UDP does not. Using TCP for DNS may<br>end up involving several TCP connections to be established since several name server may<br>have to be contacted to translate a name into an IP address. This imposes a high overhead in<br>delay. Hence DNS uses UDP for its query and response messages.<br>•SMTP is a push protocol, whereas the given task is pull operation.<br>•<em>S</em> <sub>3</sub> and <em>S</em> <sub>4</sub> statements are correct. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider different activities related to e-mail. Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Sending an e-mail from a mail client to a mail server uses SMTP protocol.`,
+        `Sending an e-mail from a mail client to a mail server uses POP protocol.`,
+        `Downloading an e-mail from mailbox server to a mail client uses POP protocol.`,
+        `Downloading an e-mail from mailbox server to a mail client uses SMTP protocol.`,
+      ],
+      answer: ["A", "C"],
+      solution: `•SMTP (simple mail transfer protocol) typically used by user client for sending mails.<br>•POP (post office protocol) used by client for receiving mails. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a 40 Kbps satellite link has a propagation delay of 504 ms. The transmitter employs the “go back n ARQ” scheme with n set to 15. Assuming that each frame is 105 bytes long, the maximum data rate possible is ________ (in kbps). (Upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 12.24,
+      solution: ` [12.23 - 12.25]<br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_3.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bit stream 10011101 is transmitted using the standard CRC method. The generator polynomial is x<sup>3</sup> +1. Receiver receives the bit stream 10111101100. With respect to the above scenario, which of the following statements is correct? `,
+      image: "",
+      options: [
+        `There was no error in the received data hence receiver accept the data received.`,
+        `There was error in the received data, but the received bit stream is a multiple of 1001, hence error was not detected.`,
+        `There was an error in the third bit from the left. Dividing that the generator yields 100.`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_6.png"/><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a network connecting two systems located 4000 kilometers apart. The bandwidth of the network is 64 Mbps. The propagation speed of the media is 2/3 of the speed of light in vacuum.<br>It is needed to design selective repeat sliding window protocol for this network. The average packet size is of 8 Kb. The network is to be used to its full capacity.<br>Assume that processing delays at nodes are negligible. Then, the minimum size in bits of the sequence number field has to be _________. `,
+      image: "",
+      options: [
+      ],
+      answer: 10,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_cs_computer_networks_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br>(a) Hidden terminals can be handled by using either of RTS or CTS control frame.<br>(b) RTS/CTS exchange helps in reducing collisions and leads to efficient use of channel resources.<br>(c) 802.11 frame has three address fields.<br>(d) By the help of 802.11 frame, we can come to known whether encryption is used on not.<br>Which of the above statement is correct? `,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "D",
+      solution: `•Both RTS and CTS control frames are required to deal with hidden terminals.<br>•RTS/CTS exchange can help reduce collisions but consume channel resources.<br>•802.11 frame has 4 address fields.<br>•WEP field of 802.11 frame indicates whether encryption is being used or not. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Protocol of networks are applied between`,
+      image: "",
+      options: [
+        `Sender’s data link layer and receiver’s network layer`,
+        `Sender’s data link layer and receiver’s data link layer`,
+        `Receiver’s data link layer and receiver’s network layer`,
+        `Sender’s network layer and sender’s data link layer`,
+      ],
+      answer: "B",
+      solution: `Any protocol is applied at same level of hierarchy i.e.,<br>Network layer to Network layer<br>or<br>Data link layer to Data link layer `
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test computer networks-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Computer Networks-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_4.png"/> <br>The number of times data link layer visited from source S to destination D are`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Purpose of DHCP protocol is`,
+      image: "",
+      options: [
+        `assign static private IP address only`,
+        `assigns dynamic private IP address only`,
+        `assigns both static and dynamic IP address`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `DHCP is used to assign both static and dynamic IP address. It assigns IP address, mask, default<br>gateway address. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of following IP address cannot be assigned to the computer?`,
+      image: "",
+      options: [
+        `160.14.0.0`,
+        `160.14.0.2`,
+        `192.168.1.4`,
+        `200.10.0.2`,
+      ],
+      answer: "A",
+      solution: `Network ID ’s cannot be assigned to the computer.<br>So 160.14 is prefix for class B. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of following IP addresses can be assigned in single network?`,
+      image: "",
+      options: [
+        `192.168.0.2, 192.168.1.4`,
+        `172.16.0.4, 172.17.0.5`,
+        `172.18.0.5, 172.18.0.6`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `To assign computers in the same network, prefix should be same.<br>172.18 is prefix same for both hosts. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An organization is granted the block 178.52.0.0/16, the administrator wants to create 510 subnets,<br>what is the first and last IP address respectively in the last subnet that can be assign to the host? `,
+      image: "",
+      options: [
+        `178.52.255.120/25, 178.52.254.254/25`,
+        `178.52.255.129/16, 178.52.255.129/16`,
+        `178.52.255.128/26, 178.52.255.254/25`,
+        `178.52.255.129/25, 178.52.255.254/25`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The pattern that is followed by the subnets, if the initial subnet is <em>x</em> and subnet mask is 255.255.255.240 `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_9.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_10.png"/>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the following functions:<br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_12.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: `•Bind ( ) is used on the server side and associates a socket with socket address structure.<br>•Listen ( ) is also used on the server side and bound TCP socket to enter listening state.<br>•Connect ( ) is used on the client side and assigns a tree local port number to a socket. In case<br>of TCP socket, it causes an attempts to establish a new TCP connection.<br>•Poll ( ) is used to check on the state of a socket in a set of sockets. The set can be tested to see<br>if any socket can be written to, read from, or if an error occurred. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let the size of congestion window of a TCP connection be 38 KB when a timeout occurs. The propagation time of the connection is 100 msec and the maximum segment size used is 2 KB. The time taken (in msec) by the TCP connection to get back to 38 KB congestion window is ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 3000,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `ICMP error message generated only for the first fragment.`,
+        `Distance vector is inter domain protocol.`,
+        `Link state routing uses Bellman Ford algorithm to compute distance.`,
+        `OSPF is inter domain protocol.`,
+      ],
+      answer: "A",
+      solution: `ICMP error message generated only for the first fragment.<br>Distance vector is intra domain protocol, LSR uses Dijkstra ’s algorithm.<br>OSPF is intra domain protocol based on link state routing.<br>So option (a) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following routing table on an IP router:<br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_1.png"/><br>Match <strong>List-I</strong> with <strong>List-II</strong> and select the correct answer using the codes given below the lists: <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_2.jpg"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following IP addresses and which of the following IP address may represents last host of any subnet, given subnet mask is 255.255.255.224?<br>(i) 196.24.63.127<br>(ii) 196.24.63.94<br>(iii) 196.24.63.62 `,
+      image: "",
+      options: [
+        `(i) and (ii)`,
+        `(ii) and (iii)`,
+        `(i) and (iii)`,
+        `Only (i)`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements is TRUE about IPv4 protocol?`,
+      image: "",
+      options: [
+        `A best-effort delivery service, best-effort means that IPv4 provides no error control or flow protocol.`,
+        `TTL field is used to optimize throughput.`,
+        `IPv4 supports only unicast and broadcast addressing mode.`,
+        `ARP is used to acquire the IP address of a host whose MAC address is known.`,
+      ],
+      answer: "A",
+      solution: `•TTL field is used to prevent packet looping.<br>•IPv4 supports also multicast addressing mode along with unicast and broadcast addressing<br>mode.<br>•ARP is used to acquire the MAC address of a host whose IP address is known. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following scenario:<br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_13.png"/><br>Suppose a TCP message that contains 900 B of data and 20 B of TCP header is passed to IP code at host A for delivery to B. IP header is of 20 B.<br>Assume that link A-<em>R</em> <sub>1</sub> has maximum frame size of 1024 B including a 14-B frame header, link <em>R</em> <sub>1</sub> – <em>R</em> <sub>2</sub> <br>can support a maximum frame size of 512 B, including an 8 B frame header and link R2-B can<br>support a maximum frame size 512 B including a 12 B frame header.<br>The length of the last fragment at each of the three links respectively are: `,
+      image: "",
+      options: [
+        `920; 440; 440`,
+        `960; 460; 440`,
+        `960; 460; 460`,
+        `940; 460; 460`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a router that interconnects three subnets:<br>Subnet 1, Subnet 2 and Subnet 3. Suppose all of the interfaces in each of these three subnets are required to have the prefix 223.1.17/24.<br>[Also suppose that subnet-1 is required to support upto 125 interfaces and subnet-2 and 3 are each required to support upto 60 interfaces].<br>Which one of the following options represents a feasible set of subnet address / subnet mask pairs? `,
+      image: "",
+      options: [
+        `223.1.17.0 / 25 and 223.1.17.128 / 26 and 223.1.17.64 / 26`,
+        `223.1.17.128 / 25 and 223.1.17.192 / 26 and 223.1.17. 0 / 26`,
+        `223.1.17.128 / 25 and 223.1.17.0 / 26 and 223.1.17.64 / 26`,
+        `223.1.17.192 / 26 and 223.1.17.0 / 25 and 223.1.17.128 / 25`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_16.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_17.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following socket API functionalities:<br><em>S</em> <sub>1</sub> : It is used on the server side and causes a bound TCP socket to enter listening state.<br><em>S</em> <sub>2</sub> : It is used on the server side, and associates a socket with a socket address structure.<br><em>S</em> <sub>3</sub> : It is used on the client side, and assigns a free local port number to the socket.<br><em>S</em> <sub>4</sub> : It causes the system to release resources allocated to a socket.<br>Which of the following is correct? <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_18.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: `•Listen ( ): Used on server side, cause a bound TCP socket to enter listening state.<br>•Bind ( ): Associates a socket with socket address structure.<br>•Connect ( ): It assigns a free local port number to a socket. In case of TCP socket, it causes an<br>attempt to establish a new TCP connection.<br>•Close ( ): It terminates the connection.<br>•Socket ( ): Creates a new socket of certain socket type.<br>•Poll ( ): Used to check on the state of a socket.<br>•Accept ( ): Accepts a received incoming attempt to create a new TCP connection from the<br>remote client. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements is true?`,
+      image: "",
+      options: [
+        `The size of TCP receiver window never change throughout the duration of connection.`,
+        `When a strict routing has been specified by the source but can’t be followed by the intermediate routers, such events will not be reported by ICMP.`,
+        `Suppose host A is sending a large file to host B over a TCP connection. The number of unacknowledged bytes that host A send cannot exceeds the size of advertised receiver buffer.`,
+        `Symmetric encryption algorithm is same as public key encryption algorithm.`,
+      ],
+      answer: "B",
+      solution: `•Receiver window is used to give the sender an idea of how much free buffer space is available<br>at receiver. So, as the receiver buffer changed receiver window also change.<br>•TCP does not allow to host to send more data than receiver buffer requirement which restrict<br>the data overflow.<br>•When a strict routing has been specified by the source but can ’t be followed by the intermediate<br>routers, such events will be reported by ICMP.<br>•Secret key encryption algorithm are often referred to as symmetric encryption algorithm as<br>the same key can be used in bidirectional communication between sender and receiver. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a network system consisting of three networks connected with two routers. Network- A has MTU of 1500 bytes, Network-B has MTU of 620 bytes, Network-C has MTU of 1500 bytes (MTU includes header size).<br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_19.png"/><br>Station-1 needs to send a segment of1380 bytes. The Total size of the packets received at Network-C is _________ bytes if the header size is 20 B.`,
+      image: "",
+      options: [
+      ],
+      answer: 1440,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_cs_computer_networks_2/img_20.jpg"/>`
+    }
+
+  ]
+});
+
+registerTest({   // made easy 2026 cse topic wise test digital logic-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Digital Logic-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the Boolean function given below:<br><em>f</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) = Σ<em>m</em> (3, 7, 10, 11, 15) + Σ<em>d</em> (0, 2, 4)<br>Then, the reduced POS form can be expressed as, `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_1.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_2.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_3.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_4.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 16-bit ripple carry adder is realized using 16 identical full adders. The propagation delay of the three input EXOR gate, OR and two input AND gates are 30 ns, 18 ns and 15 ns respectively. The worst case delay of the 16-bit adder will be ________ ns. (Logic gates are available without any restriction of fan-in. Two level AND-OR circuit is used to realise carry circuit)`,
+      image: "",
+      options: [
+      ],
+      answer: 528,
+      solution: ` [528 - 528]<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The total number of self-dual functions possible with three Boolean variable is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 16,
+      solution: ` [16 - 16]<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following expression:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_10.png"/><br>Then the simplified expression of <em>Y</em> is, `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_11.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_12.png"/>`,
+        `<em>PQ</em>`,
+        `<em>P</em> + <em>Q</em>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The minimum number of two-input NAND gates required to implement the following function is<br><em>f</em> (<em>A</em> ,<em>B</em> ,<em>C</em> ,<em>D</em> ) = (<em>BCD</em> + <em>C</em> )<em>CD</em> `,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The Boolean expression <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_21.png"/>simplifies to `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_22.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_23.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_24.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_25.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Disjunction of a variable with logic ‘0’ results in the same variable.`,
+        `NOR function can be implemented by inverting the two inputs to an AND function.`,
+        `Conjunction of a variable with logic ‘1’ results in the complement of variable.`,
+        `NAND function is commutative but not associative.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `Conjunction of a variable with logic ‘1 ’results in the same variable. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If a Boolean function is having cyclic prime implicants K-map, then the number of minimal forms for function is ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The minimum number of 2 × 1 MUX required to implement a half-subtractor circuit when only basic inputs 0, 1, A and B are available is`,
+      image: "",
+      options: [
+        `3`,
+        `4`,
+        `5`,
+        `6`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The function <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_7.png"/>can be represented as `,
+      image: "",
+      options: [
+        `π<em>M</em> (0, 1, 2, 3)`,
+        `π<em>M</em> (4, 5, 6, 7)`,
+        `Σ<em>m</em> (4, 5, 6, 7)`,
+        `Σ<em>m</em> (0, 1, 2, 3)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the figure shown below, if Gate <em>G</em> <sub>1</sub> and <em>G</em> <sub>2</sub> are interchanged then the output <em>Y</em> is equal to <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_15.png"/>`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_16.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_17.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_18.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_19.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The minimum number of 2 input NAND gates required to realize the minimized output expression <em>Y</em> of the given 4 × 1 MUX is ________. <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_29.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a 3-bit number A and 2 bit number B are given to a multiplier. The output of multiplier is realized using AND gate and one bit full adders. If minimum number of AND gates required are <em>X</em> and one bit full adders required are Y, then X + Y = ________. <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_31.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 9,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 1-bit full adder takes 10 ns to generate output carry bit and 20 ns to generate the output sum bit. If four such full adders are cascaded to form a 4-bit parallel adder, then the maximum number of 4-bit additions per second that can be performed by the parallel adder is _________ × 10<sup>6</sup> . `,
+      image: "",
+      options: [
+      ],
+      answer: 20,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_34.png"/><br>The output <em>Z</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) is `,
+      image: "",
+      options: [
+        `Σ<em>m</em> (0, 1, 6, 10, 12, 15)`,
+        `π<em>M</em> (0, 1, 5, 10, 13, 15)`,
+        `Σ<em>m</em> (2, 3, 4, 5, 7, 8, 9, 11, 12, 14)`,
+        `π<em>M</em> (2, 3, 4, 5, 7, 8, 9, 11, 12, 14)`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider, the Karnaugh map given below, where <em>X</em> represents “don’t care” in function <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_36.png"/> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_37.png"/><br>Total number of essential prime implicants are ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The logic function <em>f</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) that can detect a divisible by 3 <em>BCD</em> code can be represented as, `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_39.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_40.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_41.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_42.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_cs_digital_logic_1/img_43.png"/>`
+    }
+
+  ]
+});
+
+registerTest({    // made easy 2026 cse topic wise test digital logic-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Digital Logic-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two decimal numbers <em>A</em> and <em>B</em> are represented in 5 bits 2’s complements representation as 00111 and 11001 respectively. Then the 2’s complement representation of (<em>A</em> – <em>B</em> ) is `,
+      image: "",
+      options: [
+        `10010`,
+        `11100`,
+        `01110`,
+        `01111`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 4 bit (<em>Q</em> <sub>3</sub> <em>Q</em> <sub>2</sub> <em>Q</em> <sub>1</sub> <em>Q</em> <sub>0</sub> ) binary down ripple counter is designed. The clock cycles are negative edge triggered and J-K-Flip-Flops (FF’s) are used during the design process. Both the inputs J and K of FF’s are connected to logic 1. What will be the input to clocks of next MSB FF’s `,
+      image: "",
+      options: [
+        `Complemented output of previous LSB FF.`,
+        `Output of previous LSB FF.`,
+        `Flip-Flops clock should always be 1.`,
+        `None of the above`,
+      ],
+      answer: "A",
+      solution: `The count of four bit countdown counter starts from binary 15 and continuous to binary counts<br>14, 13, 12 ....., 0 and then back to 15.<br>LSB bit is complemented with every count pulse. Any other bit in the sequence is complemented<br>if its previous LSB bit goes from 1 to 0 because –ve edge triggered clocks are used.<br>Hence complemented output of previous LSB Flip-Flip will be the input to the next MSB FF to<br>make binary down counter. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The difference between 201 and next larger double precision number is 2 <em> <sup>P</sup> </em> , if IEEE double precision format is used then the value of <em>P</em> is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: -45,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The Excess-3 code for the Gray code 0101 is`,
+      image: "",
+      options: [
+        `1100`,
+        `011`,
+        `1001`,
+        `0110`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_3.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br>(i) Number of unused states in Ring counter for N-bit is (2<sup>N</sup> – N).<br>(ii) Number of unused states in Johnson counter for N-bit is (2<sup>N</sup> – 2N).<br>(iii) Any count sequence can be designed with synchronous counter but not with asynchronous counter.<br>Which of the following statements are correct? `,
+      image: "",
+      options: [
+        `Only (i)`,
+        `Only (ii)`,
+        `Only (ii) and (iii)`,
+        `All of the above`,
+      ],
+      answer: "D",
+      solution: `All of the above statements are correct.<br>Only fixed number of counters can be designed with asynchronous counters. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The output of the 4 bit comparator is<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_4.png"/>`,
+      image: "",
+      options: [
+        `<em>X</em> = 1, <em>Y</em> = 0, <em>Z</em> = 1`,
+        `<em>X</em> = 0, <em>Y</em> = 0, <em>Z</em> = 1`,
+        `<em>X</em> = 1, <em>Y</em> = 0, <em>Z</em> = 1`,
+        `<em>X</em> = 1, <em>Y</em> = 0, <em>Z</em> = 0`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A binary ripple counter is required to count from 0 to (16383)<sub>10</sub> . If the clock with a frequency of 8.192 MHz is applied as input clock to the LSB flip-flop, then the frequency at the output of the MSB flip-flop will be equal to ________ Hz. `,
+      image: "",
+      options: [
+      ],
+      answer: 500,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `A sequential circuit has only memoryless element.`,
+        `A sequential circuit has atleast one feedback path.`,
+        `A sequential circuit exhibits cyclic time.`,
+        `None of the above`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the input <em>X</em> <sub>1</sub> = 10101010 and <em>X</em> <sub>2</sub> = 11111111 is feeded as input in the diagram: <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_7.jpg"/><br>Which of the following represent the value of <em>X</em> ? `,
+      image: "",
+      options: [
+        `+127`,
+        `-127`,
+        `-255`,
+        `+255`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A MOD 6 ripple up-counter is to be designed using three flip-flops. The flip-flops can be reseted to their initial condition by providing an active low external trigger to the CLR input. If the counter starts counting the sequence from (<em>Q</em> <sub>2</sub> <em>Q</em> <sub>1</sub> <em>Q</em> <sub>0</sub> ) = (000), then the combinational circuit that is shown in the figure below can be constructed by using <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_9.png"/>`,
+      image: "",
+      options: [
+        `an OR gate followed by a NOT gate`,
+        `an EX-OR gate followed by a buffer gate`,
+        `an AND gate followed by a NOT gate`,
+        `an EX-OR gate followed by a NOT gate`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A synchronous counter is designed using J-K FF, X-Y FF and D-FF as shown below. X-Y FF truth table is<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_11.png"/><br>If the initial content of the counter is 001 at <em>Q</em> <sub>2</sub> , Q<sub>1</sub> , <em>Q</em> <sub>0</sub> , the number of clock pulses after which the counter is back to the same state are __________. `,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_12.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the clocked sequential circuit and its estimated state diagram as shown below: <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_13.png"/><br>Then the logic values for <em>A</em> , <em>B</em> , <em>C</em> and <em>D</em> are respectively `,
+      image: "",
+      options: [
+        `<em>A</em> = 1, <em>B</em> = 0, <em>C</em> = 1, <em>D</em> = 0`,
+        `<em>A</em> = 0, <em>B</em> = 0, <em>C</em> = 0, <em>D</em> = 1`,
+        `<em>A</em> = 0, <em>B</em> = 0, <em>C</em> = 1, <em>D</em> = 1`,
+        `<em>A</em> = 1, <em>B</em> = 1, <em>C</em> = 0, <em>D</em> = 0`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider 8-bit left shift register and D flip-flop shown in figure below is synchronized with same clock. The D flip-flop is initially cleared.<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_15.png"/><br>Which of the following represents the behaviour of above circuit?`,
+      image: "",
+      options: [
+        `Binary to 2’s complement converter`,
+        `Binary to 1’s complement converter`,
+        `Binary to Excess–3 code converter`,
+        `Binary to Gray code converter`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A counter is designed using J-K flip-flop (MSB) and T flip-flop (LSB) to count a sequence 0 – 3 – 1 – 0.<br>The inputs to the filp-flip will be `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_17.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_20.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_18.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_19.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If a 32 kHz clock is to be converted into 100 Hz clock signal using a ripple counter followed by a Johnson counter both using same number of flip flops, then the total number of flip-flops used in the circuit will be _________.`,
+      image: "",
+      options: [
+      ],
+      answer: "A",
+      solution: `10 [10 - 10]<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the sequential circuit shown below:<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_23.png"/><br>The state diagram for the above circuit is`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_24.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_25.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_26.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_27.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The following bit pattern represents a floating point number in IEEE-754 single precision format:<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_29.png"/><br>The value of the number in decimal form is _________.`,
+      image: "",
+      options: [
+      ],
+      answer: -116,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_cs_digital_logic_2/img_30.png"/>`
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test discrete mathematics-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Discrete Mathematics-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the English statement:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_1.png"/><br>Which of the following propositional formulas correctly represents the statement?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_2.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_3.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_4.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_5.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_6.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following set S = {0, 1, ..... 7}.<br>How many four digit decreasing numbers can be formed using digits from set S without repetition where the leftmost digit is always even? `,
+      image: "",
+      options: [
+      ],
+      answer: 144,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following truth table:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_12.png"/><br>Which of the following is/are equivalent to <em>X</em> ? <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_13.png"/>`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `1`,
+        `All of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following predicates with the domain as set of integers for all variables. <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_15.png"/><br>Which of the following is true ?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_16.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_17.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_18.png"/>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_19.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of relations which are either symmetric or antisymmetric with 4 elements are ________.`,
+      image: "",
+      options: [
+        `12627`,
+        `12672`,
+        `16221`,
+        `12611`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>R</em> be an equivalence relation on a finite set <em>A</em> with |<em>A</em> | = 12. The number of distinct equivalence classes under <em>R</em> is <em>k</em> .<br>Consider the statements:<br><em>S</em> <sub>1</sub> : Each equivalence class has the same number of elements if and only if 12 ≡ 0 mod k.<br><em>S</em> <sub>2</sub> : If all equivalence classes have size 3, then <em>k</em> = 4.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following logical arguments is valid?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_27.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_28.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_29.png"/>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>A </em> = {1, 2, 3, 4}. Define a relation <em>R</em> on <em>A</em> as:<br>(<em>a</em> , <em>b</em> ) ∈ <em>R</em> if and only if a mod <em>b</em> = 0<br>Which of the following is true about relation <em>R</em> ? `,
+      image: "",
+      options: [
+        `Reflexive and Symmetric but not Transitive`,
+        `Reflexive and Transitive but not Symmetric`,
+        `Symmetric and Transitive but not Reflexive`,
+        `Reflexive, Symmetric, and Transitive`,
+      ],
+      answer: "B",
+      solution: `For any a ∈A, a mod a = 0 (a, a) ∈R.<br>Symmetric:<br>(2, 1) ∉R, because 2 mod 1 = 0 →so (2, 1) ∈R.<br>But (1, 2) ∉R, because 1 mod 2 = 1 ≠0.<br>So not symmetric.<br>Transitive:<br>If a mod b = 0 and b mod c = 0, then a mod c = 0. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statement:<br>“<em>All the students in the class passed the exam, and some of them scored above</em> 90”<br>Which of the following is the negation of the above statement?? `,
+      image: "",
+      options: [
+        `Not all the students in the class passed the exam, and none of them scored above 90.`,
+        `Some students in the class did not pass the exam, and none of them scored above 90.`,
+        `Not all the students in the class passed the exam, or none of them scored above 90.`,
+        `All the students in the class did not passed the exam, or none of them scored above 90.`,
+      ],
+      answer: "C",
+      solution: `C`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>A</em> and <em>B</em> are sets, and <em>P</em> is power set of a set. Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_8.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_9.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_10.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_11.png"/>`,
+      ],
+      answer: ["A", "B"],
+      solution: `(a,b)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a reaction <em>R</em> : <em>A</em> → <em>B</em> in terms of a bipartite graph G for the relation, where nodes on the left side of <em>G</em> correspond to element <em>A</em> and nodes on the right side of G correspond to element of <em>B</em> . Which of the following statements is/are true? `,
+      image: "",
+      options: [
+        `“<em>R</em> is a function” means that every node on the left is incident to atmost one edge.`,
+        `“<em>R</em> is injective” means that every node on the right is incident to atleast one edge.`,
+        `“<em>R</em> is a surjective” means the every node on the right is incident to atmost one edge.`,
+        `“<em>R</em> is bijective” means there is a perfect matching between <em>A</em> and <em>B</em> .`,
+      ],
+      answer: "D",
+      solution: `“<em>R</em> is injective ”when every node on the right is incident to atmost one edge and is surjective if<br>(every node on the right) incident to atleast one edge. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following component proposition is/are tautology?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_20.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_21.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_22.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_23.png"/>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `Tautology<br>(b) Tautology<br>(c) Not tautology<br>(d) Tautology `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>A</em> = {1, 2, 3, 4, 5} and <em>B</em> = {<em>x</em> , <em>y</em> , <em>z</em> }.<br>A function f : A → B is defined, such that <em>f</em> (1) ≠ z in any function.<br>How many such onto function exist satisfying given condition. `,
+      image: "",
+      options: [
+      ],
+      answer: 100,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_31.png"/> is a statement on variable <em>x</em> and y, where <em>x</em> , y ∈ {0, 1}. Consider a statement <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_32.png"/>Which of the following proposition is equivalent to statement s? `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_33.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_34.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_35.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_36.png"/>`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>f</em> : <em>A</em> → <em>B</em> be a function and <em>S</em> and <em>T</em> be subsets of <em>B</em> . Consider the following statements about image (range): <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_37.png"/><br>Which of the following is correct?`,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> is true`,
+        `Only <em>S</em> <sub>1</sub> is true`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> is true`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub> is true`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_38.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of seven digit integers possible with sum of the digits equal to 11 and formed by using the digits 1, 2 and 3 only are ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 161,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider two bags <em>B</em> <sub>1</sub> and <em>B</em> <sub>2</sub> , each filled with small cubes, that are either Red (<em>R</em> ) or Blue (<em>B</em> ) and<br>each cube can be solid (<em>S</em> ) or not. Let <em>x</em> , <em>y</em> be the content inside <em>B</em> <sub>1</sub> and <em>B</em> <sub>2</sub> .<br>The logical description is as follows: <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_40.png"/><br>Which of the following is the correct translation of <em>B</em> <sub>1</sub> and <em>B</em> <sub>2</sub> . `,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_41.jpg"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_42.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_cs_discrete_mathematics_1/img_43.png"/>`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<em>B</em> <sub>1</sub> : All red cubes and are not solid only if all cubes are not blue.<br><em>B</em> <sub>2</sub> : All cubes are blue and solid if it is not red.<br>∴There can be many more translation depending on variable arrangement. `
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test discrete mathematics-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Discrete Mathematics-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Assume g is an element of the group G. Consider the following conditions of g with e as identity element.<br>(<em>i</em> ) <em>g</em> <sup>8</sup> = <em>e</em> <br>(<em>ii</em> ) <em>g</em> <sup>2</sup> ≠ <em>e</em> <br>(<em>iii</em> ) Order of g is not 8.<br>Find the order of <em>g</em> . `,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `4`,
+        `6`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br>Let G be a connected undirected graph of order <em>n</em> where <em>n</em> ≥ 3.<br><em>S</em> <sub>1</sub> : If d(V) ≥<img align="absmiddle" alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_2.png"/> for each vertex <em>V</em> in <em>G</em> , then <em>G</em> is Hamiltonian. [<em>d</em> (<em>V</em> ) is the degree of a vertex <em>V</em> ]<br><em>S</em> <sub>2</sub> : If every vertex in <em>G </em> has even degree then <em>G</em> is Eulerian.<br>Which of the above statements are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<em>S</em> <sub>1</sub> is true.<br><em>S</em> <sub>2</sub> is true since it is given that <em>G</em> is connected graph. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: `Let the function <em>F</em> (<em>n</em> ) be defined as: <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_3.png"/><br>Which of the following statements about <em>F</em> (<em>n</em> ) is/are TRUE? `,
+      image: "",
+      options: [
+        `For all <em>n</em> ≥ 1, <em>F</em> (<em>n</em> ) is always odd.`,
+        `F(2 <em> <sup>n</sup> </em> ) = 3<em>n</em> + (2<em>n</em> – 1)`,
+        `<em>F</em> (<em>n</em> ) is strictly increasing for all <em>n</em> ≥ 1.`,
+        `<em>F</em> (<em>n</em> ) mod 3 = 1 for all even <em>n</em> ≥ 2.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following Hasse diagrams:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_5.png"/><br>Which of the following represent a distributive lattice?`,
+      image: "",
+      options: [
+        `(i) and (iv) only`,
+        `(i) and (ii) only`,
+        `(ii) only`,
+        `(i), (ii) and (iii) only`,
+      ],
+      answer: "B",
+      solution: `Hasse diagram (iii) is not lattice so can not be distributive lattice.<br>Hasse diagram (iv) is well known non-distributive lattice since element <em>b</em> has two complements  <em>c</em> , <em>f</em> .<br>Hasse diagram (i) and (ii) are distributive lattice because they don ’t constant kite and pentagon structure. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `If a graph is connected, then its complement must be disconnected.`,
+        `Chromatic number of complete graph with <em>n</em> vertices is <em>n</em> – 1.`,
+        `If two graph <em>G</em> <sub>1</sub> and <em>G</em> <sub>2</sub> are isomorphic, then their complements may or may not be isomorphic.`,
+        `If any simple graph with n nodes with <em>n</em> &gt; 1, there are atleast two vertices of same degree.`,
+      ],
+      answer: "D",
+      solution: `•If a graph is connected, then its complement may or may not be disconnected.<br><strong>Example:</strong> cyclic graph on 5 vertices.<br>•Chromatic number of complete graph with n vertices is n.<br>•If two graph <em>G</em> <sub>1</sub> and <em>G</em> <sub>2</sub> are isomorphic, then their complements always isomorphic.<br>•If any simple graph with n nodes with nodes &gt;1, there are atleast two vertices of same degree. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : A simple graph G having n-vertices and k-components is a forest if and only if G has atleast (<em>n</em> – <em>k</em> ) edges.<br><em>S</em> <sub>2</sub> : Euler circuit is a circuit in a graph that passes through each vertex exactly once.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The maximum number of possible edges in an undirected graph with 10 vertices and 3 components is ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 28,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following graphs have Hamiltonian cycle?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_16.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_17.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_15.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_18.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider <img align="absmiddle" alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_20.png"/> be elements of a group G:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_21.png"/><br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider statements:<br><em>S</em> <sub>1</sub> : A finite lattice is always bounded.<br><em>S</em> <sub>2</sub> : Complemented lattice is a proper subset of bounded lattice.<br><em>S</em> <sub>3</sub> : A bounded and complemented lattice may or may not be a distributive lattice.<br>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>`,
+        `<em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+      ],
+      answer: "D",
+      solution: `•A lattice is bounded iff the lattice has a greatest and a least element.<br>∴A finite lattice is always bounded.<br>•Complemented lattice is defined only for bounded lattice. A bounded lattice is complemented<br>iff atleast one complement of every element exist in lattice. An element should one or more complements.<br>•A complemented lattice is distributive iff every element has a unique complement. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>G</em> be a graph with vertices numbered from 1 to 150. Two distinct vertices <em>i</em> and <em>j</em> are adjacent if either:<br>• <em>i</em> ≡ <em>j</em> (mod 7)<br>How many connected components does <em>G</em> have, maximum and minimum vertices in a component? `,
+      image: "",
+      options: [
+        `8, 21, 20`,
+        `7, 22, 21`,
+        `7, 21, 20`,
+        `8, 22, 21`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>T</em> (<em>n</em> ) be the number of ternary strings (strings using digits 0, 1, 2) of length <em>n</em> , such that:<br>• No two adjacent digits are the same, and<br>• The first and last digits are different.<br>Given:<br>• <em>T</em> (1) = 0<br>• <em>T</em> (2) = 6<br>What is the value of <em>T</em> (8)? `,
+      image: "",
+      options: [
+        `192`,
+        `64`,
+        `86`,
+        `128`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_8.png"/><br>Find which of the above statements is/are correct?`,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> only`,
+        `<em>S</em> <sub>2</sub> only`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>m</em> and <em>n</em> be any positive integers. Then which of the following is false? `,
+      image: "",
+      options: [
+        `<em>m</em> + 1 divides <em>m</em> <sup> 2<em>n</em> </sup> – 1`,
+        `For any prime <em> p m<sup>p</sup> </em> ≡ <em>m</em> (mod <em>p</em> )`,
+        `If one of <em>m</em> , <em>n</em> is prime, then there are integers <em>x</em> , <em>y</em> such that <em>mx</em> + <em>ny</em> = 1`,
+        `If 2 <em> <sup>n</sup> </em> – 1 is prime, then <em>n</em> is prime`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given a graph <em>G</em> (<em>V</em> , <em>E</em> ) with chromatic number χ(<em>G</em> ) = <em>p</em> , upto <em>q</em> edge can be added without changing χ(<em>G</em> ) in <em>G</em> . <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_12.png"/><br>Which statements are always true?`,
+      image: "",
+      options: [
+        `No added edge can form a 4-clique.`,
+        `If <em>q</em> ≤ 4 then <em>p</em> never change.`,
+        `<em>G</em> (<em>V</em> , <em>E</em> + <em>q</em> ) has high vertex connectivity then <em>G</em> (<em>V</em> , <em>E</em> ).`,
+        `Smallest, maximal independence set in <em>G</em> (<em>V</em> , <em>E</em> ) and <em>G</em> (<em>V</em> , <em>E</em> + <em>q</em> ) are same size.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>S</em> = (0, 1) and define the partial order relation <em>R</em> on <em>S</em> × <em>S</em> as follows: <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_23.png"/><br>Consider the following preposition:<br><em>S</em> <sub>1</sub> : R is not lattice.<br><em>S</em> <sub>2</sub> : R is not complemented lattice but lattice.<br><em>S</em> <sub>3</sub> : R is complemented lattice.<br>Which of the following statements is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub> correct`,
+        `Only <em>S</em> <sub>2</sub> correct`,
+        `Only <em>S</em> <sub>3</sub> correct`,
+        `None of the preposition is correct.`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `If every element in a group is its own inverse, then the group is Abelian.`,
+        `Every Abelian group is cyclic group.`,
+        `Every group of prime order is Abelian group.`,
+        `If (<em>G</em> , *) be a cyclic group of even order, then there exist atleast one elements other than identity element such that <em>a</em> <sup> –<em>1</em> </sup> = <em>a</em> .`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_cs_discrete_mathematics_part_2/img_25.png"/>`
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test compiler design-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Compiler Design-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which phase of the compiler will generate an error in the following code?<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_1.png"/>`,
+      image: "",
+      options: [
+        `Lexical analysis`,
+        `Syntax analysis`,
+        `Semantic analysis`,
+        `No error`,
+      ],
+      answer: "C",
+      solution: `Type mismatch: int + string is invalid in line 3.<br>Caught in semantic phase. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Count the number of tokens in following C code segment:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_2.png"/>`,
+      image: "",
+      options: [
+        `35`,
+        `36`,
+        `37`,
+        `38`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : Grammar parsed by LL(1) parser must be parsed by SLR(1) parser.<br><em>S</em> <sub>2</sub> : Grammar parsed by LL(1) parser must be parsed by CLR(1) parser.<br><em>S</em> <sub>3</sub> : Grammar which is not parsed by LALR(1) parser cannot be parsed by LL(1) parser.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following SDT, where (A ⋅ i) = f(S ⋅ i)<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_5.png"/><br>Here ⋅ <em>i</em> and ⋅ s corresponds to inherited and synthesized attributes respectively. Which of the following is correct? `,
+      image: "",
+      options: [
+        `<em>Q</em> <sub>1</sub> is L-attributed but not <em>Q</em> <sub>2</sub>`,
+        `<em>Q</em> <sub>2</sub> is L-attributed but not <em>Q</em> <sub>1</sub>`,
+        `Both are L-attributed`,
+        `None of them is L-attributed`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following CFG, with S as start symbol:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_9.png"/><br>Which of the following is correct?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_10.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_11.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_12.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_13.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following grammar:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_20.png"/><br>The number of productions in simplified CFG is _________.`,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_21.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements and choose the option which are not correct about parsers.`,
+      image: "",
+      options: [
+        `Operator precedence parsers can parsed some ambiguous grammars.`,
+        `LR(1) grammars can not be LL(1) but can be LR(0).`,
+        `CLR(1) don’t have SR conflict.`,
+        `Both (b) and (c)`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements about lexical error handling is/are TRUE?`,
+      image: "",
+      options: [
+        `Lexical analyzers may use finite automata with error transitions to recognize malformed tokens.`,
+        `Skipping characters until a delimiter is found is a common lexical error recovery strategy.`,
+        `Lexical error recovery always guarantees syntactic correctness in later phases.`,
+        `A lookahead buffer in a lexical analyzer can delay token finalization to reduce misclassification.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `Error transitions in finite automata help recognize invalid token sequences.<br>(b) This is a commonly used strategy —skip till a whitespace, semicolon, or another known delimiter to resume scanning.<br>(c) Lexical fixes don ’t ensure syntactic validity; they only help scanning continue.<br>(d) Lookahead buffers help reduce premature or incorrect token recognition.<br>e.g. distinguish between similar tokens (like “=”vs “==”) and reduces misclassification. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: `Code improving transformation can be done at which of the following stages?`,
+      image: "",
+      options: [
+        `Source code`,
+        `Intermediate code`,
+        `Target code`,
+        `All of these`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following attributed grammar:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_7.png"/><br>What value does (P.val) have when the given annotated parse tree is evaluated for the expression<br>(5 – (4) + 6 – (1 – 3 + 12)) `,
+      image: "",
+      options: [
+      ],
+      answer: 260,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Let G be a grammar with the following productions.<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_15.png"/><br>If LR(1) Parser is used to construct the DFA using the above productions, then how many look-aheads are present for an item <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_16.png"/>F in the initial state? `,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following expression:<br>((a + b) ∗ (a + c)) + ((b + c) ∗ (a + b))<br>The minimum number of nodes and edges present in the DAG representation of the above expression. `,
+      image: "",
+      options: [
+        `10 nodes, 12 edges`,
+        `8 nodes, 10 edges`,
+        `9 nodes, 12 edges`,
+        `9 nodes, 10 edges`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_18.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following program:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_19.png"/><br>Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `There is a semantic error at Line 2.`,
+        `There is a syntax error at Line 3.`,
+        `There is a lexical error at Line 1.`,
+        `Line 2 will cause lexical error.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the expression:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_22.png"/><br>What is the minimum number of temporary variables required to convert the above expression into Static Single Assignment (SSA) form?`,
+      image: "",
+      options: [
+        `8`,
+        `7`,
+        `9`,
+        `10`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following code:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_25.png"/><br>Assuming only register allocation optimization is applied (no other optimizations) and no memory spills occur, what is the minimum number of registers required to execute this code?`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `7`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following expression grammar ‘G’:<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_26.png"/><br>Which of the following grammar is non-left recursive but is equivalent to G?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_27.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_28.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_29.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_30.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_cs_compiler_design_1/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements about attribute grammars and their evaluation is FALSE? `,
+      image: "",
+      options: [
+        `Synthesized attributes can be evaluated during bottom-up parsing without extra passes.`,
+        `L-attributed grammars require multiple passes for evaluation in top-down parsing.`,
+        `Some attribute grammars cannot be evaluated for in a single pass regardless of parsing strategy.`,
+        `Inherited attributes are computed from parent node to child nodes in the parse tree.`,
+      ],
+      answer: "B",
+      solution: `•Synthesized attributes depend only on children nodes and can be computed bottom-up in one pass.<br>•L-attributed grammars are designed so inherited attributes can be evaluated in a single leftto right top-down pass.<br>•Some attribute grammars are inherently non-linear or circular and cannot be evaluated in one pass by any parser without extra mechanisms.<br>•Inherited attributes flow from parents (or left sibling) to children. `
+    }
+
+  ]
+});
+
+registerTest({      // made easy 2026 cse topic wise test compiler design-2
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Compiler Design-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : Static allocation binding do not change at run time.<br><em>S</em> <sub>2</sub> : Heap allocation allocates and de-allocates memory at run time.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `•Static allocation binding is done at compile time so cannot change at run time.<br>•Heap allocation allocate and deallocates memory at run time using malloc( ) and free( ) function. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following CFG, with S as the starting symbol,<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_1.png"/><br>The length of the shortest string of the grammar which is ambiguous __________.`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following parameter is not included in the activation record of recursive function call?`,
+      image: "",
+      options: [
+        `Local variables`,
+        `Return value`,
+        `Global variable`,
+        `Access links`,
+      ],
+      answer: "C",
+      solution: `Various fields of activation record are: Temporary values, local variables, saved machine registers,<br>control link, Access link, actual parameters, return values. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `LR(k) is the most general back-tracking shift-reduces parsing method.`,
+        `LALR parser is most powerful and costly as compare to other parsers.`,
+        `Every SLR grammar is unambiguous but not every unambiguous grammar is SLR.`,
+        `All CFG’s are LR and all LR grammar are unambiguous.`,
+      ],
+      answer: "C",
+      solution: `•CLR is most powerful but LALR is most costly.<br>•Every CFG is not LR since all LR are unambiguous but every CFG is not unambiguous.<br>•LR(k) does not using back-tracking.<br>•Every SLR grammar is unambiguous but not every unambiguous grammar is SLR. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let G be the following grammar:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_9.png"/><br>How many number of productions will be in G after elimination of all null productions only? <br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_10.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 17,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_11.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the CFG G = {S, {S, X, Y, Z}, {a, b, c, d}, P}.<br>With LL(1) table below: <br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_12.png"/><br>Identify the missing entries in each cell in the above table (their can be more than one entry in each cell).`,
+      image: "",
+      options: [
+        `1 : S → ε; 2 : S → ε; 3 : X → Zd; 6 : error, 7 : error`,
+        `2 : S → ε; 3 : S → bSa; 4 : Y → Yd; 4 : Y → Sa; 7 : S → ε`,
+        `3 : X → Zd; 3 : S → bSa; 4 : Y → Sa; 5 : Z → SZ; 5 : Z → ε; 6 : Z → ε`,
+        `1 : S → ε; 2 : S → ε; 3 : X → Zd; 5 : Z → SZ; 6 : Z → ε; 7 : error`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_13.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Assume ×, –, + and / are operators. Precedences and associativity given for those operators as following:<br>1. × has highest precedence among all operators and it is left associative<br>2. –, + and / are having equal precedence and they are right associative.<br>Using × as Multiplication, – as Subtraction, + as Addition and / is Division.<br>The output of the following expression : 10 × 10 – 5 + 15 – 5 × 10 / 5 is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is true about peephole optimization method?`,
+      image: "",
+      options: [
+        `It is applied to a small part of the code.`,
+        `It can not be used to optimize assembly code.`,
+        `It can be applied repeatedly on the code.`,
+        `It can be applied to optimize non-contiguous code.`,
+      ],
+      answer: ["A", "C"],
+      solution: `•Peephole optimization focuses on a small window of code (3-5 instruction at a time). So, option (a) is true.<br>•Works on intermediate as well as assembly code. So, option (b) is false.<br>•It can be applied repeatedly to improve result. So, option (c) is true.<br>•It only works an contiguous instruction. So, option (d) is false. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let G be any grammar with the following productions:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_25.png"/><br>If LR(1) parser is used to parse the above grammar, then total how many look-a-heads are present for the item X → .Y and Z → .id in the initial state ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `How many blocks and edges are there in CFG this code segment excluding start and end nodes?<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_3.png"/>`,
+      image: "",
+      options: [
+        `8 10`,
+        `9 9`,
+        `8 9`,
+        `7 10`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following grammars:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_5.png"/><br>Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `<em>G</em> <sub>2</sub> has LL(1) parser not <em>G</em> <sub>1</sub> .`,
+        `<em>G</em> <sub>1</sub> has more number of states in LR(0) parser than <em>G</em> <sub>2</sub> .`,
+        `<em>G</em> <sub>1</sub> is ambiguous grammar not <em>G</em> <sub>2</sub> .`,
+        `Both <em>G</em> <sub>1</sub> and <em>G</em> <sub>2</sub> are accepted operator precedence parser.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the grammar given below:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_7.png"/><br>The minimum number of states required to construct LR(1) DFA are.`,
+      image: "",
+      options: [
+      ],
+      answer: 7,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following stack S, with given SDT grammar and rules.<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_14.png"/><br>Find the output of the expression 1 / 1 ∗ 1 – 1 + 1.`,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `-1`,
+        `2`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the grammar G shown below:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_17.png"/><br>Which of the following conflict present in the DFA construction of SLR(1) parser for grammar G. `,
+      image: "",
+      options: [
+        `Reduce-Reduce conflict`,
+        `Shift-Reduce conflict`,
+        `Both (a) and (b)`,
+        `No conflict present`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the control flow graph shown below:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_19.jpg"/><br>Which one of the following choices correctly lists the set of line variables at the exit point of each basic block?`,
+      image: "",
+      options: [
+        `<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_20.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_21.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_22.png"/>`,
+        `<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_23.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_24.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following two sets of LR(1) items of LR(1) grammar:<br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_27.png"/><br>Which of the following statement related to merging of the two sets in the corresponding parser is true?<br>I. Can be merged but will result in S-R conflicts.<br>II. Can be merged but will result in R-R conflicts.<br>III. Can not be merged since go to of f is leading to SR conflict with A → d.,<br>IV. Can not be merged since look ahead are different. `,
+      image: "",
+      options: [
+        `I only`,
+        `III and IV only`,
+        `I, II and III only`,
+        `I and II only`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_28.png"/><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The following program uses six temporary variables <em>p</em> , <em>q</em> , <em>r</em> , <em>s</em> , <em>t</em> and <em>u</em> . The code is : <br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_30.png"/><br>Assuming that all operations take their operands from registers. The minimum number of registers needed to execute this program without spilling are __________.`,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_cs_compiler_design_2/img_31.png"/>`
+    }
+  ]
+});
+
+registerTest({         // made easy 2026 cse topic wise test engineering mathematics-1
+  series: "cse-gate-2026-pyq",
+  name: "TWT - Engineering Mathematics-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What is the standard deviation of a uniformly distributed variable between 0 and<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_4.png"/> `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_8.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the system of equations x + 2y –3z = 1, (λ + 3)z = 3, (2λ + 1)x + z = 0 is inconsistent, then the value of λ is equal to`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_10.png"/>`,
+        `-3`,
+        `2`,
+        `0`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_11.png"/><br>. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <em>x</em> is a continuous random variable with p.d.f. given by <br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_17.png"/><br>The value of <em>k</em> is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_18.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_19.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_20.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_21.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_22.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The probability mass function of an random variable <em>X</em> is given as <br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_23.png"/><br>If <em>a</em> = 0.6, then variance of <em>X</em> is ________. `,
+      image: "",
+      options: [
+        `0`,
+        `0.36`,
+        `0.24`,
+        `0.76`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A random variable x has the following probability distribution<br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_25.png"/><br>If the mean of <em>x</em> is 0.8, then a = `,
+      image: "",
+      options: [
+        `5`,
+        `1.5`,
+        `4`,
+        `3`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a binomial distribution, the mean is 9 and the standard deviation (σ) is<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_27.png"/> The value of <em>n</em> (total number of trials) and <em>q</em> (probability of failure of the event in each trial) respectively are: `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_31.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of solutions of the system of equations: x + 2y + z = 2, 3x + y – 2z = 1, 4x – 3y – z = 3 and 2x + 4y + 2z = 4 is`,
+      image: "",
+      options: [
+        `2`,
+        `1`,
+        `0`,
+        `Infinite`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_37.png"/><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider <em>X</em> be a random variable with <em>E</em> (<em>X</em> ) = 10 and Var(<em>X</em> ) = 25. What is the positive value of a and b such that <em>Y</em> = <em>aX</em> – <em>b</em> has expectation 0 and variance 1? `,
+      image: "",
+      options: [
+        `<em>a</em> = 1, <em>b</em> = 2`,
+        `<em>a</em> = 0.2, <em>b</em> = 2`,
+        `<em>a</em> = 0.2, <em>b</em> = 1`,
+        `<em>a</em> = 0.2, <em>b</em> = 0.5`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A box of oranges is inspected by examining three randomly selected oranges drawn without replacement. If all the three oranges are good, the box is approved for sale, otherwise, it is rejected. Find the probability that a box containing 15 oranges out of which 12 are good and 3 are<br>bad ones will be approved for sale? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_46.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_47.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_48.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_49.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `If rank of matrix A is 2, then the possible value of x is __________.<br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_1.png"/>`,
+      image: "",
+      options: [
+        `0`,
+        `–1`,
+        `–12`,
+        `2`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_2.png"/><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If two cards are drawn from a pack of 52 cards, using Poisson approximation find the probability of getting two diamonds at least 3 times in 51 consecutive trials of two cards drawing each time ________. (Upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.576,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_13.png"/> is orthogonal, then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_14.png"/>is `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_15.png"/><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_16.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_33.png"/> be the identity matrix of order 3. If <em>Q</em> = [ <em> q<sub>ij</sub> </em> ] is a matrix, such that<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_34.png"/>equals `,
+      image: "",
+      options: [
+        `52`,
+        `103`,
+        `201`,
+        `205`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_35.png"/><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Number of tigers in a reserve is normally distributed with mean &amp; variance respectively as 1200 and 9 × 10<sup>4</sup> . The probability of finding more than 1800 tigers is approximately `,
+      image: "",
+      options: [
+        `0.0125`,
+        `0.025`,
+        `0.05`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 3 × 3 matrix is defined as<br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_41.png"/><br>The values of <em>x</em> required for which A<sup>–1</sup> can’t be determined will be `,
+      image: "",
+      options: [
+        `0, 3`,
+        `0, 1 , 3`,
+        `0, –1, 4`,
+        `1, –1, 3`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_42.png"/><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_43.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The probability density function of random variable <em>X</em> is <br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_44.png"/><br>The equation <em>E</em> (<em>x</em> ) is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A manufacturer of cotter pins knows that 5% of his product is defective. Pins are sold in boxes of 100. He guarantees that not more than 10 pins will be defective. What is the approximate probability that a box will fail to meet the guaranteed quality?`,
+      image: "",
+      options: [
+        `0.0140`,
+        `0.0137`,
+        `0.0157`,
+        `0.0130`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_cs_engineering_mathematics_1/img_51.png"/>`
     }
   ]
 });
