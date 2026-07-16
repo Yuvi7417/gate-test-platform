@@ -16312,7 +16312,7 @@ registerTest({         //made easy 2026 cse subject wise test computer organizat
 });
 
 // MADE EASY 2026 EE ALL TEST SERIES
-registerTest({        //
+registerTest({        //made easy 2026 ee topic wise test electric circuits-1
   series: "ee-gate-pyq",
   name: "TWT - Electric Circuits-1",
   date: "July 15, 2026",
@@ -16548,7 +16548,7 @@ registerTest({        //
   ]
 });
 
-registerTest({
+registerTest({        //made easy 2026 ee topic wise test engineering mathematics-2
   series: "ee-gate-pyq",
   name: "TWT - Engineering Mathematics-2",
   date: "July 15, 2026",
@@ -27564,6 +27564,8406 @@ registerTest({
       ],
       answer: 8.66,
       solution: ` (8.50 - 8.90)<br><img alt="" src="js/questions/subjectwise_test_9_part_syllabus_gate_2026_ee_electrical_electronics_measurements/img_62.jpg"/>`
+    }
+
+  ]
+});
+
+// MADE EASY 2026 DA ALL TEST SERIES 
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Linear Algebra-1",
+  date: "July 14, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_1.png"/> compute the <em>L</em> <sub>2</sub> - norm over [0, 2]`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_5.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>A</em> ∈ <em>R</em> <sup>3 × 3</sup> , and suppose <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_22.png"/> is a common basis for both the null space and left null space of <em>A</em> .Determine the rank of the matrix <em>A</em> .`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>A</em> ∈ <em>R</em> <sup>4 × 2</sup> be a matrix with linearly independent columns.Consider the matrix: <img alt="" src="js/questions/da_2026_linear_algebra_1/img_24.png"/>Which of the following is true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_25.png"/>`,
+        `<em>M</em> is symmetric and idempotent`,
+        `<em>M</em> is invertible`,
+        `<em>M</em> = <em> A<sup>T</sup> A </em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are true?`,
+      image: "",
+      options: [
+        `A matrix is singular if and only if 0 is characteristic root (eigenvalue) of the matrix.`,
+        `A matrix is singular if and only if its determinant is not equal to zero.`,
+        `Multiplication of real valued square matrices is associative.`,
+        `Multiplication of real-value square matrices is cumulative.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_28.png"/>be a 2 × 2 matrix, suppose it satisfies the equation: <img alt="" src="js/questions/da_2026_linear_algebra_1/img_29.png"/>Find the value of <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_30.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: -2,
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_41.png"/> is a unit matrix of order 2 × 2, then trace of <em>A</em> is __________.`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `7`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_49.png"/> Which of the following is true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_50.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_51.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_52.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_53.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following matrices is not invertible?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_55.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_56.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_57.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_58.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <em>A</em> =<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_60.png"/> then for every positive integer <em>n</em> , <em> A<sup>n</sup> </em> is equal to`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_61.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_62.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_63.png"/>`,
+        `Undefined`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<img alt="" src="js/questions/da_2026_linear_algebra_1/img_7.png"/>Which of the following is true?`,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_8.png"/><img alt="" src="js/questions/da_2026_linear_algebra_1/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<em>S</em> <sub>1</sub> : Let A be a real symmetric <em>n</em> × <em>n</em> matrix. If <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_10.png"/> y ∈ <em> R<sup>n</sup> </em> , then eigenvectors corresponding todistinct eigenvalues are orthogonal.<em>S</em> <sub>2</sub> : Let A be a real symmetric <em>n</em> × <em>n</em> matrix. If <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_11.png"/> y ∈ <em> R<sup>n</sup> </em> , the eigenvectors corresponding to thesame eigenvalue are orthogonal.Which of the following is true?`,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "A",
+      solution: `(a<img alt="" src="js/questions/da_2026_linear_algebra_1/img_12.png"/>)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_13.png"/> and suppose the matrix with columns <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_14.png"/> has rank 3.Which of the following is/are true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_15.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_16.png"/>`,
+        `The column space of the matrix is a 3-D subspace of <em>R</em> <sup>4</sup> .`,
+        `The null space is one-dimensional.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the set of column vector defined by<img alt="" src="js/questions/da_2026_linear_algebra_1/img_18.png"/>Which of the following statement is/are true?`,
+      image: "",
+      options: [
+        `{[1, –1, 0, 0] <em> <sup>T</sup> </em> , [1, 0, –1, 0] <em> <sup>T</sup> </em> } is linearly independent set.`,
+        `{[1, –1, 0, 0]<sup>T</sup> , [1, 0, –1, 0]<sup>T</sup> } is a basis for subspace <em>X</em> .`,
+        `<em>X</em> is not a subspace of <em>R</em> <sup>4</sup> .`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>U</em> ⊂ <em>R</em> <sup>3</sup> be the subspace defined by equation: <img alt="" src="js/questions/da_2026_linear_algebra_1/img_20.png"/>Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `<em>U</em> is a 2-dimensional subspace`,
+        `<em>U</em> is a 3-dimensional subspace`,
+        `<em>U</em> is null space of rank-2 matrix`,
+        `<em>U</em> is null space of rank-1 matrix`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Given 4 × 4 matrix:<img alt="" src="js/questions/da_2026_linear_algebra_1/img_32.png"/>Find the rank of matrix.`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_33.png"/><img alt="" src="js/questions/da_2026_linear_algebra_1/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 3 × 3 matrix <em>A</em> has rank 1Two vector are given in the null space of <em>A</em> . <img alt="" src="js/questions/da_2026_linear_algebra_1/img_35.png"/>Which of the following vectors also belongs to the null space of <em>A</em> ?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_39.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Hamilton theorem states that a square matrix satisfies its own characteristic equation. Consider a matrix <img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_43.png"/>The relation satisfied by the matrix is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_44.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_45.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_46.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/da_2026_linear_algebra_1/img_47.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/da_2026_linear_algebra_1/img_48.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Programming, Data Structures and Algorithms-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following Python code:<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_1.png"/>What will be the output of the above code?`,
+      image: "",
+      options: [
+        `90`,
+        `100`,
+        `81`,
+        `80`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A queue is implemented using two stack A and B.<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_5.png"/>If enqueue( ) is implemented using two stacks A and B, using append( ) for push and pop( ) for pop, then what should replace the missing statement X to correctly implement the dequeue( ) operation`,
+      image: "",
+      options: [
+        `append(B.pop( ))`,
+        `append(A.pop( ))`,
+        `pop(B.append( ))`,
+        `pop(A.append( ))`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following expressions represents the number of labelled binary tree with ‘<em>n</em> ’ nodes that have the same preorder traversal? `,
+      image: "",
+      options: [
+        `<img align="" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_9.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_10.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_11.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_12.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a binary tree where for every node <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_14.png"/> represents number of nodes in left sub tree for node S and Q represents the number of nodes in right sub tree for node S for <em>h</em> &gt; 0. The minimum number of nodes present in such binary tree of height <em>h</em> = 4 _________. (Assume root is at height 0) `,
+      image: "",
+      options: [
+      ],
+      answer: 9,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The number of binary search trees possible with 12 keys, when keys 1, 2, 3, 4, ........ 12 are inserted into empty Binary Search Tree with condition such that <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_24.png"/> is the root of binary search tree and <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_25.png"/> is immediate right child of <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_26.png"/>are ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 350,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The minimum size of stack required to evaluate given postfix expression is ________.25 × 6 + 43 × – `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a linked list of length n is implemented using a circular array <em>P</em> [0, <em>n</em> – 1], two variables first and last are used to point the first and last element of the list present in array respectively i.e., first = <em>P</em> and last = (<em>P</em> + <em>x</em> ) mod <em>n</em> , where <em>x</em> is the size of linked list.Consider the following operations:<em>S</em> <sub>1</sub> : Delete <em> k<sup>th</sup> </em> element in linked list.<em>S</em> <sub>2</sub> : Reverse the elements of linked list.Which of the following represent the time complexity of above two operations respectively? `,
+      image: "",
+      options: [
+        `Ο(<em>n</em> ), Ο(<em>n</em> )`,
+        `Ο(<em>n</em> ), Ο(1)`,
+        `Ο(1), Ο(1)`,
+        `Ο(1), Ο(n)`,
+      ],
+      answer: "A",
+      solution: `Operation 1•Search k<sup>th</sup> element in array take Ο(1) time.•Delete take Ο(1) time•Shift all element to left if space is there Ο(n)Total time = Ο(1) + Ο(1) + Ο(n) = Ο(n)Operation 2•Reversal of linked list will take Ο(n) time since circular array has to follow the properties oflinked list. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Suppose we used a hash function <em>H</em> (<em>n</em> ) to hash ‘<em>n</em> ’ distinct elements (keys) into an array <em>T</em> of length ‘<em>m</em> ’. What is the expected number of colliding pairs of elements, if we used simple uniform hashing? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_40.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following statements:I. Dictionary preserve the insertion order of elements.II. A set can contain mutable objects.III. Keys in a dictionary must be immutable types.How many statements are true? `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `3`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is the correct output for the code given below:<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_3.png"/>`,
+      image: "",
+      options: [
+        `1424`,
+        `1525`,
+        `1532`,
+        `2532`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `A binary tree can always be uniquely constructed from its postorder and inorder traversals.`,
+        `A binary tree can always be uniquely constructed from its postorder and preorder traversals.`,
+        `In a binary search tree, the smallest node always lies at a leaf position.`,
+        `Postorder traversal takes Ο(V) time complexity for a binary tree with V vertices.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a hash table of size 10 that uses open addressing with linear probing. Let the hash function be defined as <em>h</em> (<em>k</em> ) = <em>k</em> mod 10.A sequence of records with keys 73, 74, 85, 64, 13, 76, 31, 52, 62 is inserted into an initially emptyhash table, where the bins are indexed from 0 to 9.The number of unsuccessful probes required to find the index of the bin that contains the last inserted element (62) is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 7,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Lists can be modified after creation.`,
+        `Tuples can be modified after creation.`,
+        `In a tuple, heterogeneous objects are allowed.`,
+        `In, a list, we can increase and decrease the size.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `•Lists are mutable, contents can be modified after creation by adding, removing, or changing elements.•Tuples are immutable, once they are created, their contents cannot be changed, includingadding, removing, or modifying elements.•Tuples can contain heterogeneous objects.•A list is dynamic in size. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following:<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_16.png"/>Which of the following represent Inorder and Postorder of the tree?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_17.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_18.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_19.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_20.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 5, 7, 8, 4, 6 in that order?`,
+      image: "",
+      options: [
+        `6, 8, 4, 7, 5`,
+        `6, 4, 5, 7, 8`,
+        `6, 4, 7, 8, 5`,
+        `7, 8, 4, 6, 5`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_22.png"/><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are:1. is_empty(Q): returns true if the queue is empty, false otherwise.2. delete(Q): delete the element at the front of the queue and returns its value.3. insert(Q, i): insert the integer i at the rear of the queue.Consider the following function: <img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_28.png"/>The function must reverse the element of queue(Q). Which of the following options can be filled in the blank to perform the above operation?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_32.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the linked list of integers represented by the following:<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_35.png"/>Which of the following is effect of this code?`,
+      image: "",
+      options: [
+        `Element 24 becomes the first element of the list`,
+        `Element 24 becomes the second element of the list`,
+        `Element 24 becomes the third element of the list`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_1/img_36.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Programming, Data Structures and Algorithms-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following recurrence relation:<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_1.png"/>Which of the following is false?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_2.png"/>`,
+        `<em>T</em> (<em>n</em> ) = Ο(<em>n</em> )<sup>c</sup> , <em>c</em> ≥ 0.5`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_4.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A search algorithm is defined as follows:• First, it performs a Linear Search on the first k elements of a sorted array of size n.• If the key is not found in the first k elements, it performs a Binary Search on the remaining (<em>n</em> – <em>k</em> ) elements.Assume that the key is present uniformly at random in the array.If all operations (comparison, jump, etc.) take unit time, what is the expected number of comparisonsrequired to search for the key using this algorithm? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_9.png"/>`,
+        `log<sub>2</sub> (<em>n</em> )`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements about Dijkstra’s algorithm and Bellman-Ford algorithm for finding single-source shortest paths in a graph with V vertices and E edges.1. Dijkstra’s algorithm (using a binary heap and adjacency list) has a better time complexity than Bellman-Ford for sparse graphs.2. Bellman-Ford algorithm always requires Ο(V × E) time, whereas Dijkstra (with min-heap) runs in Ο((V + E) log V) time.3. Both Dijkstra and Bellman-Ford require Ο(V) space to store distances and Ο(E) space for the graph representation.4. Bellman-Ford is faster than Dijkstra for graphs with dense positive weights.Which of the above statements are correct? `,
+      image: "",
+      options: [
+        `1 and 2 only`,
+        `1, 3 and 4 only`,
+        `1, 2 and 3 only`,
+        `All of the above`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements are TRUE regarding Linear Search and Binary Search?<em>S</em> <sub>1</sub> : Linear Search works on both sorted and unsorted arrays, whereas Binary Search only works on sorted arrays.<em>S</em> <sub>2</sub> : The worst-case time complexity of Linear Search is Ο(n), while Binary Search has Ο(log n).<em>S</em> <sub>3</sub> : Binary Search is always faster than Linear Search in all scenarios.<em>S</em> <sub>4</sub> : Insertion and deletion operations are generally easier in arrays where Linear Search is usedcompared to arrays optimized for Binary Search. `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>4</sub>`,
+        `All statements <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> , <em>S</em> <sub>3</sub> and <em>S</em> <sub>4</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+      ],
+      answer: "B",
+      solution: `•Linear search doesn 't need the array to be sorted; Binary Search does. So, <em>S</em> <sub>1</sub> is true.•Time complexities are correct. So, <em>S</em> <sub>2</sub> is true.•Binary Search is not faster in all cases (e.g., small or unsorted arrays). So, <em>S</em> <sub>3</sub> is false.•Binary Search requires sorted arrays, making insert/delete more complex due to. So, <em>S</em> <sub>4</sub> istrue. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following directed, unweighted graph:<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_16.png"/>Which of the following is the correct Breadth First Search (BFS) traversal for above graph (LHS node searches first than moves to RHS nodes in each option).`,
+      image: "",
+      options: [
+        `EABGFCD`,
+        `ABECDFG`,
+        `CABEDGF`,
+        `GFBECAD`,
+      ],
+      answer: ["A", "C"],
+      solution: `(a,c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Directed graph G(V, E) with 8 vertices numbered 0 to 7. The graph is represented using an adjacency list as follows, where each entry <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_18.png"/> indicates an edge from the current vertex to vertex <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_19.png"/> with weight <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_20.png"/> <img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_21.png"/>Assume that Dijkstra’s algorithm is executed from source vertex 0. Consider the following statements:`,
+      image: "",
+      options: [
+        `Dijkstra’s algorithm will compute incorrect shortest path distances for at most three vertex due to the negative weight on edge (2 → 1).`,
+        `The shortest path from 0 to 5 is: 0 → 2 → 1 → 3 → 5 with total cost = 4, but not computed by Dijkstra’s algorithm.`,
+        `Dijkstra will skip updating the cost of node 5 via node 6 even though it offers a better path.`,
+        `Time complexity of Dijkstra using min-heap and adjacency list is Ο((V + E) log V), and it remains valid even if some edges have negative weights.`,
+      ],
+      answer: ["B", "C"],
+      solution: `•Dijkstra cannot handle negative weights correctly. Edge (2 →1) has weight –5, so once node 1is finalized with a higher cost (via 0 →1), Dijkstra won ’t re-update it using the better path 0 →2 →1.•The claimed path 0 →2 →1 →3 →5 is the shortest since, 0 →2 (–2), 2 →1 (–3), 1 →3 (0), 3 →5 (4) = 4.•As per Dijkstra ’s design, once a node is “visited ”or “finalized ”, it is not revisited. Since node 6is reached via node with cost 8, Dijkstra won ’t consider 0 →2 →1 = 2 + (–5) = –3, which isbetter. So, option (c) is true.•The time complexity Ο((V + E) log V) holds only when all edge weights are non-negative.The presence of negative weights invalidates Dijkstra ’s correctness and assumptions. So, option (d) is false. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A server can handle only one request at a time. Consider the given a list of data processing requests, where each request has a start time, end time (exclusive), and a reward. The server must choose a subset of non-overlapping requests to maximize the total reward.The requests are as follows: <img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_22.png"/>If a greedy algorithm is applied that selects the request with the earliest finishing time at each step (among remaining non-overlapping ones), what is the maximum total reward obtained?`,
+      image: "",
+      options: [
+      ],
+      answer: 85,
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider an array of n distinct integers (where <em>n</em> is a power of 2 and <em>n</em> ≥ 8). A divide-and-conquer algorithm computes the maximum and the third maximum elements as follows:• Divide the array recursively into halves until subarrays of size ≤ 4.• At the base level, compute the top 3 elements using direct comparisons.• At each merge step, compute the top 3 of a merged subarray using only the top 3 elements from each half.What is the worst-case time complexity of this algorithm? `,
+      image: "",
+      options: [
+        `Θ(<em>n</em> log <em>n</em> )`,
+        `Θ(<em>n</em> )`,
+        `Θ(<em>n</em> log<sub>3</sub> log <em>n</em> )`,
+        `Θ(n log<sup>2</sup> <em>n</em> )`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a directed graph G = (V, E) G = (V, E) with negative weight edges but no negativeweight cycles. The Floyd-Warshall algorithm is applied to compute all-pairs shortest paths.Which of the following are TRUE about the Floyd-Warshall algorithm? `,
+      image: "",
+      options: [
+        `Its time complexity is Ο(V<sup>3</sup> ).`,
+        `It works faster than Dijkstra for sparse graphs.`,
+        `It can detect negative weight cycles.`,
+        `It is more efficient than Dijkstra for all-pairs shortest paths in dense graphs.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `•Floyd-Warshall has a time complexity of Ο(V<sup>3</sup> ). So, option (a) is true.•Dijkstra is generally faster for sparse graphs. So, option (a) is false.•The algorithm detects negative weight cycles when D[<em>i</em> ][<em>i</em> ] &lt;0. So, option (c) is true.•Floyd-Warshall is often more efficient than Dijkstra in dense graphs for all-pairs shortestpaths. So, option (d) is true. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the array:A = [38, 27, 43, 3, 9, 82, 10, 50, 76, 19]What is the stack depth of the recursion and the total number of comparisons performed while sorting the array using merge sort? `,
+      image: "",
+      options: [
+        `4, 20`,
+        `5, 21`,
+        `4, 21`,
+        `5, 20`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given an array of <em>n</em> integers, where each element is at most <em>d</em> positions away from its correctposition. When applying Merge Sort, which of the following is correct? `,
+      image: "",
+      options: [
+        `The time complexity is Ο(<em>n</em> log <em>n</em> ), with lower constant factors due to the near-sorted array.`,
+        `The time complexity is Ο(<em>n</em> <sup>2</sup> ) due to inefficiencies in merging nearly sorted elements.`,
+        `The time complexity improves to Ο(<em>n</em> log <em>d</em> ) because elements are close to their correct positions.`,
+        `The time complexity remains Ο(<em>n</em> log <em>n</em> ), but the merging step takes longer due to the nearly sorted elements.`,
+      ],
+      answer: ["A"],
+      solution: `•Merge Sort has a fixed time complexity of Ο(n log n), regardless of whether the array isnearly sorted. The array being nearly sorted does not affect the overall time complexity butmay improve constant factors (fewer swaps/moves). So, option (a) is correct.•Merge Sort will still perform efficiently and will not degrade to Ο(<em>n</em> <sup>2</sup> ). So, option (b) is incorrect.•The time complexity does not change with the value of d. So, option (c) is incorrect.•Merging will be faster due to fewer moves or swaps in nearly sorted arrays, not slower. So,option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following directed graph have 6 nodes and 7 edges.<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_11.png"/>Let <em> T<sub>D</sub> </em> is the DFS traversal of the given tree. Then which is/are true for <em> T<sub>D</sub> </em> . `,
+      image: "",
+      options: [
+        `∀ <em> T<sub>D</sub> </em> , edges [B, C] and [C, D] always in <em> T<sub>D</sub> </em> .`,
+        `∃ <em> T<sub>D</sub> </em> , where it forms a forest, with no cross edge.`,
+        `∀ <em> T<sub>D</sub> </em> , have two back edges and no forward edge.`,
+        `∃ <em> T<sub>D</sub> </em> , having one cross edge, with two back edges.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements about Insertion Sort and Selection Sort for sorting an array of <em>n</em> distinct numbers:<strong>P</strong> : Insertion Sort is faster than Selection Sort for nearly sorted arrays.<strong>Q</strong> : Selection Sort always performs Θ(<em>n</em> <sup>2</sup> ) comparisons and swapPings regardless of input.<strong>R</strong> : Insertion Sort can perform fewer than Θ(<em>n</em> <sup>2</sup> ) comparisons on some inputs.<strong>S</strong> : Selection Sort performs fewer swaps than Insertion Sort in the worst case.Which of the following options is correct? `,
+      image: "",
+      options: [
+        `Only P and R are true`,
+        `Only Q, R, and S are true`,
+        `All P, Q, R, and S are true`,
+        `Only P, R, and S are true`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the array:<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_14.png"/>Which of the following is/are true?`,
+      image: "",
+      options: [
+        `arr[ ] = {8, 13, 14, 17, 56, 42, 15, 23} after 2 recursive passes`,
+        `arr[ ] = {8, 13, 14, 17, 23, 42, 56, 15} after 3 recursive passes`,
+        `arr[ ] = {8, 13, 14, 15, 17, 42, 56, 23} after 4 recursive passes`,
+        `arr[ ] = {17, 8, 14, 13, 15, 23, 56, 42} after 1 recursive passes`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following undirected weighted graph G(V, E), where V is the set of vertices and E is the set of edges and all edge weights are positive and non-zero.<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_17.png"/>Consider the following conditions:1. Edge (EF), never part of minimum spanning tree.2. Edge (DF), may/may not be the part of MST.3. Edge (EB), always be the part of MST.Which of the following is/are true, such that all conditions always satisfies. `,
+      image: "",
+      options: [
+        `<em>x</em> &gt; 3, y ≤ 3, are necessary and sufficient, but z can be anything.`,
+        `Kruskal’s selection order of edges could be {EB, AE, AG, GF, AC, CD} for <em>x</em> = 4, y = 2 and z = 5.`,
+        `Prim’s selection order of edges could be {CA, AE, AG, EB, DF, GF}, for <em>x</em> = 5, y = 1 and z = 5 (source node C)`,
+        `G have exact two MST.`,
+      ],
+      answer: ["B", "D"],
+      solution: `x &gt;3, y ≤3, z = 5 are necessary and sufficient conditions.[z = 5] is mandatory condition, otherwise (DF) either always part of MST if z &lt;5 or (DF) alwaysexcludes from MST if z &gt;5. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `Let G = (V, E) be a directed graph with possibly negative edge weights, but no negative-weight cycles reachable from a source vertex s ∈ V. Suppose a function h : <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_24.png"/>is defined such that: <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_25.png"/> That is, for any vertex <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_26.png"/> gives the minimum of the maximum edge weight over all paths (P) from s to v.Now define a new edge weight function <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_27.png"/> Which of the followings must be TRUE? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_31.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_32.png"/><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A directed graph G(V, E) with |V| = 6 and |E| = 9 contains a few negative-weight edges but no negative-weight cycles.The graph is represented using an adjacency list <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_34.png"/> A variant of the Bellman-Ford algorithm is run from a source vertex S = 0.After 5 full iterations of edge relaxations, the distance array dist[ ] contains final shortest path distances from S to all other nodes.Suppose the edge list is as follows:(0 → 1, 4), (0 → 2, 5),(1 → 2, –3), (2 → 3, 2),(3 → 1, 1), (1 → 4, 6),(2 → 5, 4), (5 → 3, –2),(4 → 5, –1)Based on this, which of the following statements are necessarily TRUE? `,
+      image: "",
+      options: [
+        `Bellman-Ford will update the distance to at least one vertex in every iteration, including the 5<sup>th</sup> .`,
+        `The presence of the cycle (1 → 2 → 3 → 1) with total weight 0 implies that Bellman-Ford may keep updating distances indefinitely.`,
+        `The final distances will be accurate after at most 5 iterations.`,
+        `If we add an edge (3 → 0, –10), Bellman-Ford will detect a negative-weight cycle in the 6<sup>th </sup> iteration.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms_2/img_35.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Database Management and Warehouse-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements about the ER (Entity-Relationship) model are correct? `,
+      image: "",
+      options: [
+        `Weak entities must always participate in a total and identifying relationship with their owner entity.`,
+        `Multi-valued attributes are represented using double ovals in ER diagrams.`,
+        `A derived attribute can be directly stored in a database to avoid recomputation overhead.`,
+        `A generalization captures the “is-a” relationship between a higher-level entity and lowerlevel sub-entities.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `Derived attributes are not stored, as they are calculated from stored attributes. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the constraints in <strong>Column-A</strong> constraints with their correct types in <strong>Column-B</strong> constraints type. <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "D",
+      solution: `•Not null →Domain Constraint•Unique →Key Constraint•Foreign key →Referential Integrity•Primary key →Entity Integrity `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the roles of different schema levels in a DBMS and their respective mappings. Which of the following statements are correct?A. External-conceptual mapping deals with views and logical restructuring without altering storage.B. Conceptual-internal mapping may involve file formats and compression strategies.C. Internal schema changes affect logical relationships stored in conceptual schema.D. Logical data independence allows modifying how data is stored physically. `,
+      image: "",
+      options: [
+        `A, C only`,
+        `A, B only`,
+        `B, D only`,
+        `A, B, and D only`,
+      ],
+      answer: "B",
+      solution: `Logical data independence ensures that conceptual schema remains unaffected by internal changes.Physical data independence, allows modifying storage structures (internal schema) without changing the logical schema. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following instances of relations <em>X</em> , <em>Y</em> , <em>Z</em> . <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_9.png"/>Where, only the common attributes in the following relation may refer to another relations attribute with the same name “ON CASCADE DELETE”.Which of the following is correct? `,
+      image: "",
+      options: [
+        `DELETE ON <em>X</em> , results in cascade delete in <em>Y</em> .`,
+        `DELETE ON <em>Y</em> , results in cascade delete in Z but not in <em>X</em> .`,
+        `DELETE ON Z, do not affects other relations.`,
+        `DELETE ON Z, affects tuples in relation <em>Y</em> but not <em>X</em> .`,
+      ],
+      answer: "C",
+      solution: `Their might be a referential relation between relation, but it is not guaranteed so deletion in onerelation does not affects other. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Tables: A(X, Y), B(Y, Z)• A has 50 rows.• B has 10 distinct values of Y, each appearing 5 times.• Natural join: <img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_11.png"/> produces 100 rows.If one row is picked at random from the join, what’s the probability that its Y value appears morethan once in the joined result? `,
+      image: "",
+      options: [
+        `1`,
+        `0.9`,
+        `0.5`,
+        `0.1`,
+      ],
+      answer: "A",
+      solution: `A has 50 rows →so 50 values of Y.B has 10 distinct Y values, each appearing 5 times.Natural join happens on Y.For join output to be 100 rows, some Y values from A must match those in B. Since each Y in B has5 rows, any matching Y from A will be joined with all 5 →that Y will appear 5 times in the result.So, each Y in the join result appears more than once, hence probability = 1. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following relation:<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_12.png"/>Which of the following is/are true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_14.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_15.png"/>`,
+        `All of these`,
+      ],
+      answer: ["A", "C"],
+      solution: `(<em>R</em> –<em>S</em> ) operations is not computable, as domain of <em>R</em> .<em>A</em> , <em>S</em> .<em>C</em> and <em>R</em> .<em>B</em> , <em>S</em> .<em>D</em> are different. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following relation schema:Following insert operation performed on then. <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_16.jpg"/>Which of the following is true?`,
+      image: "",
+      options: [
+        `6 rows and 6 columns in final relation.`,
+        `4 rows and 4 columns in final relation.`,
+        `6 rows and 4 columns in final relation.`,
+        `4 rows and 6 columns in final relation.`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_17.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: `Consider the following two relations:<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_20.png"/>Which of the following tuples will not appear in the result of the Full Outer Join? `,
+      image: "",
+      options: [
+        `(1, John, NULL)`,
+        `(3, Sara, HR)`,
+        `(4, Laura, Sales)`,
+        `(5, NULL, Sales)`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the join of a relation <em>R</em> with <em>S</em> .If R has <em>m</em> tuples and <em>S</em> has n tuples.The join attribute is a primary key in <em>R</em> and a foreign key in <em>S</em> .If the right outer join <img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_22.png"/>is performed, then the maximum and minimum sizes of the right are: `,
+      image: "",
+      options: [
+        `<em>m</em> + <em>n</em> , 0`,
+        `<em>m</em> + <em>n</em> – 1, <em>n</em>`,
+        `<em>mn</em> , <em>m</em>`,
+        `<em>m</em> + <em>n</em> , <em>n</em>`,
+      ],
+      answer: "B",
+      solution: `Right outer join have maximum <em>m</em> + <em>n</em> –1 tuple and minimum ‘<em>n</em> ’tuples. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following schema:<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_2.jpg"/>The key fields are underlined, and the domain of each field is listed after the field name. Therefore sid is the key for Suppliers, pid is the key for Parts, and sid and pid together form the key for Catalog. The Catalog relation lists the prices charged for parts by Suppliers.Which of the following queries correctly returns the names of suppliers who supply all red parts? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_6.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `(b) Only checks if a supplier supplies exclusively red parts (not all).(d) Redundant/incorrect GROUP BY/HAVING with otherwise correct logic. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `In a universally database, there are entity sets: Student (SID, Name, Dept), Professor (PID, Name Dept), Cource (CID, Title) and Project (ProjID, Topic). Student register for courses, each registration includes grade. Every student is registered in atleast one course, while some courses may have no registration. Each course is taught by exactly one professor, though same professor may not teach any course. Projects one assigned to one professor and involves one or more students, while each student is involved in atmost one project. The relation model with minimum number of relations is to be derived with suitable foreign keys and constraints. Which of the following statements is true? `,
+      image: "",
+      options: [
+        `A total of five relations are required to implement the schema, including five foreign keys.`,
+        `The teacher relationship is optimally implement by adding PID as a foreign key in course table with ON DELETE CASCADE.`,
+        `A registration table must have a composite key (SID, CID) and store an additional attribute “Grade”.`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following relations in a library database:Books(bookId: integer, title: string, genre: string)Authors(authorId: integer, name: string)WrittenBy(bookId: integer, authorId: integer)Where each book has a unique bookId, and each author has a unique authorId. The WrittenByrelation links authors to the books they have written.The relational algebra expression: <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_8.png"/>What does the above relational algebra expression represent?`,
+      image: "",
+      options: [
+        `Books that are missing at least one author who has written fiction books.`,
+        `Books that are written by all authors who have written fiction books.`,
+        `Books that have no authors in common with any fiction books.`,
+        `Books that are written by exactly one author of fiction books.`,
+      ],
+      answer: ["A"],
+      solution: `(b) The expression finds the opposite - books NOT written by all fiction authors.(c) The books may share some authors with fiction books, just not all.(d) The expression doesn 't count authors, just identifies missing ones. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following SQL statements:<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_10.png"/>Which of the following SQL statements will not generate any error message?(i) SELECT DEPT, COMMISSION FROM EMP WHERE SALARY &gt; 7000 GROUP BY DEPTHAVING COMMISSION &gt; 200;(ii) SELECT EMPNAME, SALARY FROM EMP WHERE COMMISSION = NULL AND DEPT =‘IT’;(iii) SELECT * FROM EMP WHERE SALARY BETWEEN 6000 AND 8000 GROUP BY DEPT ORDERBY EMPID;(iv)SELECT EMPNAME, DEPT FROM EMP WHERE COMMISSION IS NOT NULL AND SALARY&gt; 6000; `,
+      image: "",
+      options: [
+        `(ii) and (iii)`,
+        `(iv) and (iii)`,
+        `(i), (iii) and (iv)`,
+        `Only (iv)`,
+      ],
+      answer: ["D"],
+      solution: `(a) This query is incorrect. HAVING is used to filter after a GROUP BY operation and workswith aggregated function.(b) This query is incorrect. You cannot use = to compare with NULL. The correct way is to use ISNULL for such comparisons (i.e., COMMISSION IS NULL).(c) This query is incorrect. There is a syntax error in the SELECT clause (* is invalid). Additionally,if you use GROUP BY, the columns in the SELECT statement must be part of the GROUP BYclause).(d) This query is valid. It properly checks for non-NULL values in the COMMISSION column andensures SALARY is greater than 6000. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given the following contents of Student relation:<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_18.jpg"/>Which of the following is true?`,
+      image: "",
+      options: [
+        `Query 1 and Query 2 result in equal tuples.`,
+        `Query 3 result is empty relation, but not Query 1 and Query 2.`,
+        `Query 2 result in less number of tuples than Query 1.`,
+        `Query 3 result the name of student got highest marks.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following Saler database and the relation in it.<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_21.jpg"/>How many tuples will be in the output of the above SQL query ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `Inner query counting the number of tuples returned result.So, when no tuples present in inner query to return out, count(*) result ‘0 ’, which means, thereexist a value.Hence “NOT EXIST ”always return false and print no tuples. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose relation <em>R</em> (<em>ABC</em> ) has the tuples: <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_23.png"/>How many tuples resulted by given Relational Algebra expression? <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_24.png"/>`,
+      image: "",
+      options: [
+        `6`,
+        `3`,
+        `4`,
+        `2`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following relational schema and instance <em>R</em> (<em>A</em> , <em>B</em> , <em>C</em> ): <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_26.png"/>The number of tuples resulted by given SQL query ________. <img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_da_database_management_and_warehouse/img_27.png"/>`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `1`,
+        `0`,
+      ],
+      answer: "B",
+      solution: `Inner query result not empty so all records of <em>R</em> in result. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Database Management and Warehouse-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : The Fact Constellation Schema increases data redundancy.<br><em>S</em> <sub>2</sub> : The Fact Constellation Schema reduces the complexity of querying data by merging multiple facts.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `•The Fact Constellation Schema increases data redundancy as it contains multiple fact tables<br>which may result in repeated information across the schema. So, <em>S</em> <sub>1</sub> is correct.<br>•While the schema might simplify some queries by organizing facts more efficiently, it can also<br>increase the complexity of queries due to the increased number of fact tables. So, <em>S</em> <sub>2</sub> is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : Dice creates a sub-cube by selecting values from two or more dimensions of the original cube.<br><em>S</em> <sub>2</sub> : Cubes are a logical representation of multidimensional data used to model complex analytical queries<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•The Dice operation is a common OLAP operation that extracts a smaller sub-cube from the<br>original cube by selecting specific values across two or more dimensions. This allows focused<br>analysis on a subset of the data while preserving multiple dimensions. So, <em>S</em> <sub>1</sub> is correct.<br>•A cube is a logical representation of multidimensional data, enabling users to model and<br>analyze complex queries involving several dimensions like time, location, and product<br>categories. This structure supports efficient data exploration in OLAP systems. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Suppose the following functional dependency hold on relation <em>R</em> (<em>A</em> , <em>B</em> , <em>D</em> , <em>E</em> , <em>F</em> ): <br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_2.png"/><br>Which of the following functional dependency can be inferred from <em>R</em> . `,
+      image: "",
+      options: [
+        `<em>BE</em> → <em>D</em>`,
+        `<em>BEC</em> → <em>A</em>`,
+        `<em>AF</em> → <em>E</em>`,
+        `<em>AC</em> → <em>BC</em>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is correct about the slower data loading in a star schema?`,
+      image: "",
+      options: [
+        `Indexing overhead`,
+        `Queries require more processing`,
+        `Dimension tables reference multiple fact tables`,
+        `De-normalization increases redundancy`,
+      ],
+      answer: "D",
+      solution: `In a star schema, dimension tables are de-normalized, which leads to data redundancy. This increases the volume of data to be loaded, making the data loading process slower. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The following functional dependency are given:<br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_4.png"/><br>Which of the following options are true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_8.png"/>`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A feature is normalized to the range [0, 1] using min-max normalization. The minimum and maximum values are 100 and 400 respectively. If the normalized value is 0.6, what was the original value before normalization?`,
+      image: "",
+      options: [
+      ],
+      answer: 280,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a dataset with salary values:<br>50000, 60000, 70000, 80000, 90000, 100000, 110000<br>If the mean is 80000 and the standard deviation is 20000, find the Z-score normalized value of 60000. `,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `-1`,
+        `2`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : In an OLAP database, tables are generally denormalized to optimize query performance.<br><em>S</em> <sub>2</sub> : Normalization in OLAP databases is avoided as it may complicate query execution and slow down performance.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•OLAP databases are generally denormalized to simplify data retrieval and improve query performance. So, <em>S</em> <sub>1</sub> is correct.<br>•Normalization in OLAP databases is avoided because it can lead to more complex queries and<br>slower performance due to additional joins. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is a characteristic of the Roll-Up operation in OLAP?`,
+      image: "",
+      options: [
+        `Roll-up aggregates data from lower levels of hierarchy to higher levels.`,
+        `Roll-up shows detailed data within a specific dimension.`,
+        `Roll-up splits data into smaller segments based on attributes.`,
+        `Roll-up deletes unnecessary data points in the hierarchy.`,
+      ],
+      answer: "A",
+      solution: `Roll-Up refers to summarizing or aggregating data to a higher level of abstraction, such as from monthly data to yearly data. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a relation <em>R</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> , <em>G</em> ) with the following functional dependencies: <br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_1.png"/><br>Which of the following is true?`,
+      image: "",
+      options: [
+        `<em>R</em> is in 2NF but not in 3NF.`,
+        `<em>R</em> have only three minimal candidate keys.`,
+        `The FD ‘<em>D</em> → <em>E</em> ’ violates 2NF rule.`,
+        `Given FD’s, is in minimal cover form.`,
+      ],
+      answer: ["C", "D"],
+      solution: `•BAG, CAG, DBG, DCG are the only candidate keys. Hence ‘<em>D</em> →<em>E</em> ’violate 2NF rule.<br>•Given FD, is in its minimal cover, we cannot remove any FD from relation. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a relation <em>R</em> (<em>P</em> , <em>Q</em> , <em>R</em> , <em>S</em> , <em>T</em> , <em>U</em> ) with the following functional dependencies:<br>{<em>P</em> → <em>Q</em> , <em>Q</em> → <em>R</em> , <em>PR</em> → <em>S</em> , <em>S</em> → <em>T</em> , <em>T</em> → <em>U</em> }<br>Consider the decomposition of the relation <em>R</em> into the constituent relation according to the following two decomposition schemas:<br><em>D</em> <sub>1</sub> : <em>R</em> <sub>1</sub> (<em>P</em> , <em>Q</em> , <em>T</em> ); <em>R</em> <sub>2</sub> (<em>Q</em> , <em>R</em> , <em>S</em> ); <em>R</em> <sub>3</sub> (<em>S</em> , <em>T</em> , <em>U</em> );<br><em>D</em> <sub>2</sub> : <em>R</em> <sub>1</sub> (<em>P</em> , <em>Q</em> , <em>R</em> ); <em>R</em> <sub>2</sub> (<em>P</em> , <em>Q</em> , <em>S</em> , <em>T</em> ); <em>R</em> <sub>3</sub> (<em>T</em> , <em>U</em> ); `,
+      image: "",
+      options: [
+        `<em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are lossy, <em>D</em> <sub>1</sub> is dependency preserving but not <em>D</em> <sub>1</sub> .`,
+        `<em>D</em> <sub>2</sub> is lossy not <em>D</em> <sub>1</sub> , <em>D</em> <sub>1</sub> is not dependency preserving but <em>D</em> <sub>2</sub> is.`,
+        `<em>D</em> <sub>1</sub> is lossy, <em>D</em> <sub>2</sub> is lossless and <em>D</em> <sub>1</sub> , <em>D</em> <sub>2</sub> are dependency preserving.`,
+        `<em>D</em> <sub>1</sub> is lossy, <em>D</em> <sub>2</sub> is lossless and <em>D</em> <sub>2</sub> is dependency preserving but not <em>D</em> <sub>1</sub> is.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_11.png"/><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A B<sup>+</sup> tree is used to index a file. Each disk block (node) is 512 bytes in size. Each key field is of size 8 bytes, search key pointer is of 12 Bytes and each block pointer is of size 4 bytes. What is the minimum number of keys that can be stored in one internal node of the B<sup>+</sup> tree? `,
+      image: "",
+      options: [
+        `22`,
+        `42`,
+        `43`,
+        `21`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_13.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a relation <em>R</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) stored on disk where <em>A</em> is the primary key, <em>B</em> is a foreign key, <em>C</em> <br>is a non-key attribute in the relation <em>R</em> and data file is physically sorted on attribute <em>C</em> .<br>Which of the following statements is/are true? `,
+      image: "",
+      options: [
+        `A primary index can be created on attribute <em>A</em> , but not on attribute <em>C</em> , since <em>C</em> is not unique.`,
+        `Attribute <em>C</em> can support a clustered index, while <em>A</em> can support a dense index.`,
+        `Attribute <em>C</em> may form a primary index at the second-level index due to its role in physical ordering.`,
+        `A B<sup>+</sup> Tree index is well-suited for attribute B if foreign key-based equality and range queries are common.`,
+      ],
+      answer: ["B", "D"],
+      solution: `•File is not sorted on A so no primary index can built on it. So, option (a) is false.<br>•The primary index is always the first-level index on the ordering attribute. Second-level indexes<br>are built on top of it, but they are not called “primary indexes ”. So, option (c) is false. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A student-record data file contains 1,20,000 fixed-length records, stored on a disk with a block size of 4096 bytes. Each record is 200 bytes in size. The file is unsorted, and a two-level index on a non-key attribute ANum (size = 10 bytes) and size of record pointer is 7 bytes and block pointer is 6 bytes. If no Record are split across blocks .<br>How many total blocks are required to store the entire two-level index structure? `,
+      image: "",
+      options: [
+        `502`,
+        `503`,
+        `501`,
+        `504`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `MOLAP may lead to high storage efficiency when handling sparse datasets due to its cube structure.`,
+        `Sparse data in MOLAP cubes can result in underutilized storage, affecting overall efficiency.`,
+        `MOLAP uses pre-aggregated multidimensional cubes, limiting its ability to store detailed transactional data.`,
+        `MOLAP provides high data granularity, making it ideal for storing detailed transactional records.`,
+      ],
+      answer: ["B", "C"],
+      solution: `•Sparse datasets often result in low storage efficiency in MOLAP due to unused space in preallocated cube structures. So, option (a) is incorrect.<br>•Sparse data in MOLAP cubes can result in underutilized storage, affecting overall efficiency.<br>So, option (b) is correct.<br>•MOLAP uses pre-aggregated multidimensional cubes, limiting its ability to store detailed<br>transactional data. So, option (c) is correct.<br>•MOLAP generally reduces granularity due to pre-aggregation; it is not ideal for detailed transactional data. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a dataset with the following values:<br>9, 15, 22, 34, 41, 53, 61, 72, 85<br>Apply equal-width binning to the dataset and divide it into 4 equal-width intervals.<br>Which of the following bin intervals will contain the value 41? `,
+      image: "",
+      options: [
+        `[9, 28), [28, 47), [47, 66), [66, 85]`,
+        `[9, 30), [30, 50), [50, 70), [70, 85]`,
+        `[9, 25), [25, 45), [45, 65), [65, 85]`,
+        `[9, 22), [22, 35), [35, 48), [48, 85]`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_da_database_management_and_warehouse_part_2/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements is true about the Drill Down and Roll Up operations in OLAP?`,
+      image: "",
+      options: [
+        `Drill down and roll up are opposite operations, with drill down used for aggregation and roll up used for detailed analysis.`,
+        `Both drill down and roll up are used to navigate between different levels of data in a hierarchy, but drill down shows more detail and roll up provides higher-level summaries.`,
+        `Drill down is used only to navigate within the same level of hierarchy, while roll up is used to summarize data from multiple sources.`,
+        `Drill down and roll up are not related to data hierarchies but are used to filter out unwanted data points.`,
+      ],
+      answer: "B",
+      solution: `Drill Down and Roll Up are opposite operations used to navigate through a hierarchy: Drill Down provides more detailed data, while Roll Up aggregates data at higher levels. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Machine Learning-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : Increasing the number of independent features always increases the R-squared value of the model.<br><em>S</em> <sub>2</sub> : Increasing the number of independent features can decrease the adjusted R-squared if the added features do not improve the  odel significantly.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `•Adding more independent variables never decreases the R-squared because it measures how well the model fits the data, and more features can only improve or keep the fit same. So, <em>S</em> <sub>1</sub> is correct.<br>•The Adjusted R-squared penalizes adding unnecessary variables. If the new features don 't<br>add significant explanatory power, adjusted R-squared can decrease. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : AUC remains constant regardless of model performance.<br><em>S</em> <sub>2</sub> : AUC-ROC helps compare different models on classification tasks.<br><em>S</em> <sub>3</sub> : ROC curve cannot be used if classes are balanced.<br>Which of the following is false? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•AUC varies with model performance. As a model improves, AUC generally increases. So, S<sub>1</sub> is false.<br>•AUC-ROC is useful for comparing different models, as it helps evaluate their ability to<br>distinguish between classes across thresholds. So, <em>S</em> <sub>2</sub> is true.<br>•ROC curves can be used even if classes are balanced. They provide a visual representation of<br>performance regardless of class distribution. So, <em>S</em> <sub>1</sub> is false. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A dataset containing of 5 paired values of a dependent and independent variable. The average of the independent variable is 4.4 and the average of the dependent variable is 11.8. If the slope <em>b</em> of the regression line <em>y</em> = <em>a</em> + b<em>x</em> is know to be 2.5, then what is the value of intercept <em>a</em> ? `,
+      image: "",
+      options: [
+        `0.6`,
+        `0.8`,
+        `0.4`,
+        `0.45`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following Statements:<br><em>S</em> <sub>1</sub> : In linear regression, the output is always a continuous value.<br><em>S</em> <sub>2</sub> : In logistic regression, the output is always a categorical value.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•In linear regression, the output is always a continuous value as it predicts a continuous dependent variable. So, <em>S</em> <sub>1</sub> is correct.<br>•In logistic regression, the output is always a categorical value because logistic regression is used for binary classification, where the model outputs a probability that is mapped to a categorical outcome. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In supervised classification, overfitting occurs when`,
+      image: "",
+      options: [
+        `The model has high training error and low test error.`,
+        `The model captures noise in the training data leading to poor generalization on test data.`,
+        `The model is too simple to capture the underlying pattern in the data.`,
+        `Increasing the size of the training dataset increases the test error.`,
+      ],
+      answer: "B",
+      solution: `Overfitting occurs when a model learns noise in the training data, performing well on training<br>but poorly on unseen data. This reduces its ability to generalize. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following data set for a simple linear regression model, where the actual values and the predicted values are provided:<br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_5.png"/><br>Calculate the R-squared value for the regression model.`,
+      image: "",
+      options: [
+        `0.405`,
+        `0.825`,
+        `0.175`,
+        `0.095`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the following machine learning methods (<strong>List-1</strong> ) with their characteristics (<strong>List-2</strong> ): <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_7.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `F1-score is equal to accuracy in all balanced datasets.`,
+        `F1-score balances precision and recall in a single metric.`,
+        `F1-score is sensitive to class imbalance.`,
+        `F1-score is always equal to specificity.`,
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following metrics is most sensitive to class imbalance and may give a misleading impression of performance?`,
+      image: "",
+      options: [
+        `Precision`,
+        `Recall`,
+        `Accuracy`,
+        `F1-score`,
+      ],
+      answer: "D",
+      solution: `In imbalanced classification problems, accuracy can be misleading because a model predicting<br>only the majority class can still achieve high accuracy. F1-score, which balances precision and<br>recall, provides a better measure of performance by focusing on how well the model detects the<br>minority class. Mean Squared Error and R-squared are regression metrics and not suitable for<br>classification tasks. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a Gaussian Naive Bayes model with 3 continuous features and 3 classes, how many parameters are required to estimate the means and variances plus the class prior probabilities?`,
+      image: "",
+      options: [
+        `19`,
+        `21`,
+        `18`,
+        `20`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements regarding classification metrics<br><em>S</em> <sub>1</sub> : Recall and Sensitivity are two different metrics used for binary classification.<br><em>S</em> <sub>2</sub> : Accuracy measures the proportion of total correct predictions among all predictions.<br><em>S</em> <sub>3</sub> : Precision is high when the number of false positives is low.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_3.png"/><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_4.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following Statements:<br><em>S</em> <sub>1</sub> : In k-nearest neighbors (<em>k</em> -NN), outliers do not significantly affect predictions because they are based on the nearest neighbors.<br><em>S</em> <sub>2</sub> : In k-nearest neighbors (<em>k</em> -NN), outliers significantly affect predictions, as they distort the majority class or average of the nearest neighbors.<br>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `•In k-NN, outliers generally have less influence because predictions depend on the nearest neighbors. While the value of <em>k</em> can affect this, outliers are less likely to significantly change the prediction compared to other models. So, <em>S</em> <sub>1</sub> is true. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A regression model is tested on 4 data points. The observed output (<em>y</em> ), predicted outputs <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_8.png"/>and the weight vector used in the model are shown below: <br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_9.png"/><br>What is the total cost associated with model?`,
+      image: "",
+      options: [
+      ],
+      answer: 51,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_10.png"/><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are true for Naive Bayes classifiers?`,
+      image: "",
+      options: [
+        `It requires the calculation of prior probabilities of classes.`,
+        `It cannot handle continuous data without discretization or distribution assumptions.`,
+        `It is robust to irrelevant features due to its independence assumption.`,
+        `It assumes features are dependent on each other.`,
+      ],
+      answer: ["A", "C"],
+      solution: `•Prior probabilities are needed for posterior calculation. So, option (a) is correct.<br>•Naive Bayes can handle continuous data by assuming distributions like Gaussian. So, option (b) is false.<br>•Independence assumption helps reduce the effect of irrelevant features. So, option (c) is true.<br>•Naive Bayes assumes features are conditionally independent, not dependent. So, option (d) is false. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A logistic regression model uses <em>L</em> <sub>2</sub> regularization for a dataset of size m is 5, the model has three weight <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_12.png"/> <br>If the regularization parameter is λ = 0.5. What is the <em>L</em> <sub>2</sub> regularization term added to the cost function? `,
+      image: "",
+      options: [
+        `0.7`,
+        `0.9`,
+        `0.8`,
+        `0.6`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_da_machine_learning_part_1/img_13.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are true?`,
+      image: "",
+      options: [
+        `In linear regression, there may be collinearity between the independent variables.`,
+        `In linear regression, there may be collinearity between the dependent variables.`,
+        `In logistic regression, there should be little to no collinearity between dependent variables.`,
+        `In logistic regression, there should be little to no collinearity between independent variables.`,
+      ],
+      answer: ["A", "D"],
+      solution: `•In linear regression, collinearity can occur between independent variables, leading to multicollinearity and unstable estimates. However, there is no collinearity between dependent variables, as there is only one dependent variable in linear regression.<br>•In logistic regression, high collinearity between independent variables can lead to unreliable estimates, so it should be avoided. However, collinearity does not apply to dependent variables, as there is only one dependent variable in logistic regression. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `Ridge Regression prevents overfitting by shrinking coefficients using <em>L</em> <sub>2</sub> regularization..`,
+        `Ridge Regression does perform the feature selection.`,
+        `Lasso Regression does perform the feature selection.`,
+        `Lasso Regression prevents overfitting by eliminating irrelevant features through <em>L</em> <sub>1 </sub> regularization.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `•Ridge Regression uses <em>L</em> <sub>2</sub> regularization to shrink large coefficients, which helps in preventing overfitting. So, option (a) is correct.<br>•Ridge Regression uses <em>L</em> <sub>2</sub> regularization, which shrinks coefficients but does not reduce them to zero. As a result, it retains all features and does not perform feature selection. So, option(b) is incorrect.<br>•Lasso Regression uses <em>L</em> <sub>1</sub> regularization, which can shrink some coefficients to exactly zero.<br>This effectively removes those features from the model, so Lasso performs feature selection.<br>So, option (c) is correct<br>•Lasso Regression uses <em>L</em> <sub>1</sub> regularization, which can shrink some coefficients to exactly zero,<br>effectively performing feature selection. So, option (d) is correct. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Machine Learning-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : SVM can handle both linear and non-linear classification.<br><em>S</em> <sub>2</sub> : Kernel functions map data to higher dimensions for linear separation.<br>Which following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•SVM is a strong classifier that handles linear data by finding a separating hyperplane. For non-linear data, it uses Kernel functions to work with data that cannot be separated in the original space. Thus, SVM manages both linear and nonlinear problems. So, <em>S</em> <sub>1</sub> is correct.<br>•Kernel functions map data implicitly into a higher-dimensional space, making non-linearly separable data separable by a hyperplane. This Kernel trick enables SVM to classify nonlinear data effectively. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In soft-margin SVM, slack variables <img align="absmiddle" alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_1.png"/>are used to: `,
+      image: "",
+      options: [
+        `Allow some data points to be within the margin or misclassified.`,
+        `Guarantee zero training error.`,
+        `Map data to a higher-dimensional space.`,
+        `Normalize the input features.`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : The bias-variance tradeoff refers to the balance between underfitting and overfitting in predictive models.<br><em>S</em> <sub>2</sub> : High variance models tend to fit the training data very well but perform poorly on unseen data.<br>Which following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>1</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `•The bias-variance tradeoff refers to balancing underfitting and overfitting in a model. High bias causes underfitting where the model is too simple to capture the data pattern. High variance causes overfitting where the model fits training data too closely but fails on new data. So, <em>S</em> <sub>1</sub> is correct.<br>•High variance models fit the training data very well, resulting in low training error. However, they perform poorly on unseen data because they do not generalize well, leading to overfitting. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the SVM parameters:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_6.png"/><br>Compute the value of the decision function <em>f</em> (<em>x</em> ) for the point <em>x</em> = [1, 3]. `,
+      image: "",
+      options: [
+        `-11`,
+        `-12`,
+        `10`,
+        `-10`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements about Decision Trees:<br><em>S</em> <sub>1</sub> : A fully grown decision tree has low bias and high variance.<br><em>S</em> <sub>2</sub> : Pruning a decision tree is a technique to reduce variance at the cost of increasing bias.<br>Which of the above statements is/are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `•A fully grown tree perfectly fits training data (overfitting), so low bias, but it ’s sensitive to small changes →high variance. So, <em>S</em> <sub>1</sub> is correct.<br>•Pruning simplifies the tree →less overfitting (reduces variance), but may not capture all patterns (increases bias). So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A dataset contains 10 samples, out of which 7 belong to class positive and 3 belong to class negative.<br>What is the entropy of the class label distribution? `,
+      image: "",
+      options: [
+        `0.456`,
+        `0.520`,
+        `0.879`,
+        `0.750`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : A model with high variance is likely to overfit the training data.<br><em>S</em> <sub>2</sub> : A model with high bias is likely to underfit the data.<br>Which following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•High variance means the model learns the noise in training data, resulting in overfitting and poor generalization. So, <em>S</em> <sub>1</sub> is correct.<br>•High bias means the model is too simple to learn patterns, leading to underfitting. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is true regarding the effect of k in k-fold cross-validation?`,
+      image: "",
+      options: [
+        `Increasing <em>k</em> increases the bias of the error estimate.`,
+        `Increasing <em>k</em> increases the variance of the error estimate.`,
+        `Increasing <em>k</em> decreases the computational cost.`,
+        `Increasing <em>k</em> decreases the size of the training set in each fold.`,
+      ],
+      answer: ["B"],
+      solution: `•Bias decreases with higher <em>k</em> , because the model gets trained on more data. So, option (a) is incorrect.<br>•Variance increases, since small changes in training data (especially in LOOCV) lead to large changes in validation error. So, option (b) is correct.<br>•Computational cost increases with more folds (more training runs). So, option (c) is incorrect.<br>•Training set size actually increases with higher k, not decreases. So, option (d) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Soft Margin SVM is preferred when data contains noise or outliers.`,
+        `Hard Margin SVM is preferred when data is noisy.`,
+        `Soft Margin SVM is unsuitable for overlapping classes.`,
+        `Hard Margin SVM works well with non-linearly separable data.`,
+      ],
+      answer: ["A"],
+      solution: `•Soft Margin SVM uses slack variables to allow some misclassification or margin violations,<br>making it suitable for noisy data or data with outliers. So, option (a) is correct.<br>•Hard Margin SVM requires perfect linear separability and does not tolerate noise or<br>misclassification, so it is not preferred for noisy data. So, option (b) is incorrect.<br>•Soft Margin SVM is designed to handle overlapping classes by allowing margin violations via<br>slack variables. So, option (c) is incorrect.<br>•Hard Margin SVM cannot handle non-linearly separable data because it requires a strict linear<br>separation without any errors. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a soft margin SVM with a linear Kernel. The objective function includes a term for the slack variable <img align="absmiddle" alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_3.png"/> with regularization parameter <em>c</em> = 2. If the penalty is <br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_4.png"/>`,
+      image: "",
+      options: [
+        `4.2`,
+        `3.24`,
+        `2.2`,
+        `1.6`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `Cross-validation helps select the best parameters in LDA to avoid overfitting.`,
+        `LDA does not require cross-validation because it always generalizes well.`,
+        `Cross-validation splits data into training and testing sets to evaluate LDA’s performance.`,
+        `Cross-validation is only useful for unsupervised learning methods.`,
+      ],
+      answer: ["A", "C"],
+      solution: `•Cross-validation is commonly used with LDA to tune parameters (like regularization) and prevent overfitting. So, option (a) is correct.<br>•LDA can overfit, especially with high-dimensional data, so cross-validation is useful. So, option (b) is incorrect.<br>•Cross-validation involves splitting data into training and testing sets to evaluate model performance reliably. So, option (c) is correct.<br>•Cross-validation is widely used for both supervised (like LDA) and unsupervised methods. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given an SVM with parameters:<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_9.png"/><br>Find the geometric margin of the point <em>x</em> = [3, 2]. `,
+      image: "",
+      options: [
+        `0.20`,
+        `0.40`,
+        `0.60`,
+        `0.80`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `LDA can reduce dimensionality while preserving class separability.`,
+        `LDA works best when class distributions are Gaussian.`,
+        `LDA ignores class labels during computation.`,
+        `LDA requires more data points than features to work properly.`,
+      ],
+      answer: ["A", "B"],
+      solution: `•LDA reduces dimensionality by projecting data onto directions that maximize class separability.<br>So, option (a) is correct.<br>•LDA assumes classes have Gaussian distributions with equal covariance matrices. So, option (b) is correct.<br>•LDA is supervised and uses class labels to find the best projection. So, option (c) is incorrect.<br>•Although having more data points than features is generally good for statistical methods, it is<br>not a strict requirement of LDA itself. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : Decision Trees are prone to overfitting, especially when they are allowed to grow deep without pruning.<br><em>S</em> <sub>2</sub> : Cross-Validation provides an unbiased estimate of model performance by using multiple training and validation splits.<br>Which of the above is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `•Decision Trees can overfit the training data if they grow too deep without pruning. So, S<sub>1</sub> is true.<br>•Cross-Validation provides an unbiased performance estimate by using splits of the data for training and validation. So, <em>S</em> <sub>2</sub> is true. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a simple linear regression fit to a dataset with <em>n</em> = 3 observations. The hat matrix has diagonal entries <em>h</em> <sub>11</sub> = 0.3, <em>h</em> <sub>22</sub> = 0.4, <em>h</em> <sub>33</sub> = 0.5 and the full-model predictions are: <br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_11.png"/><br>Compute the LOOCV mean squared error. (Upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.323,
+      solution: `[0.300 - 0.330]<br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct regarding decision tree handling of data?`,
+      image: "",
+      options: [
+        `Decision trees can directly work with both categorical features and continuous numeric features without preprocessing.`,
+        `Decision trees require all features to be scaled before training.`,
+        `Handling missing attribute values is not possible in decision trees.`,
+        `Decision trees can naturally handle non-linear relationships between features and output.`,
+      ],
+      answer: ["A", "D"],
+      solution: `•Decision trees can handle categorical data by splitting based on categories directly, and numeric data by choosing threshold values to split. No mandatory feature scaling or transformation is needed. So, option (a) is correct.<br>•Decision trees do not require feature scaling because splits are based on thresholds or categories, not distance measures. So, option (b) is incorrect.<br>•Decision trees can handle missing values using various strategies such as surrogate splits,<br>treating missing as a separate category, or imputing values during training. So, option (c) is incorrect.<br>•Decision trees can model non-linear decision boundaries by hierarchical splits, making them<br>flexible for non-linear relationships. So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dataset contains 14 instances, out of which 9 belong to Class A and 5 belong to Class B. An attribute divides the data into two subsets:<br>• Subset 1 has 6 instances: 4 from Class A, 2 from Class B.<br>• Subset 2 has 8 instances: 5 from Class A, 3 from Class B.<br>What is the Information Gain (IG) obtained by splitting on this attribute? `,
+      image: "",
+      options: [
+        `0.003`,
+        `0.024`,
+        `0.028`,
+        `0.02`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_da_machine_learning_part_2/img_13.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Machine Learning-3",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Multilayer Perceptron (MLP) is commonly used for:`,
+      image: "",
+      options: [
+        `Predicting continuous numerical outputs.`,
+        `Classifying inputs into distinct categories.`,
+        `Both predicting continuous values and classifying inputs, depending on the network design.`,
+        `Neither predicting continuous values nor classifying inputs.`,
+      ],
+      answer: "C",
+      solution: `Multilayer Perceptrons can be designed to handle both regression and classification by adjusting<br>the output layer and activation functions. For regression, the output layer typically has a single<br>neuron with a linear activation, while for classification, it uses multiple neurons with nonlinear<br>activations like softmax. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : The feature selection method is more efficient than the feature extraction method.<br><em>S</em> <sub>2</sub> : The feature extraction method reduces the number of features compared to the original dataset.<br>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "B",
+      solution: `•Feature selection is not always more efficient. Feature extraction (e.g., PCA) often performs<br>better in high-dimensional data by capturing variance through new features. So, <em>S</em> <sub>1</sub> is incorrect.<br>•Feature extraction reduces the number of features by transforming original features into fewer<br>meaningful components. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : A multilayer perceptron uses a nonlinear activation function.<br><em>S</em> <sub>2</sub> : A single-layer perceptron uses a threshold function.<br>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `•Multilayer perceptrons (MLPs) must use nonlinear activation functions (like ReLU, sigmoid, or tanh) in their hidden layers. Without non-linearity, the entire network would collapse into a linear function, regardless of the number of layers. So, <em>S</em> <sub>1</sub> is incorrect.<br>•The original single-layer perceptron (as introduced by Rosenblatt) uses a threshold activation function, often implemented as a step function (outputting 1 if weighted sum ≥threshold, otherwise 0). This allows it to solve linearly separable problems. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following methods is used for feature extraction in dimensionality reduction?`,
+      image: "",
+      options: [
+        `Principal Component Analysis (PCA)`,
+        `Forward Selection`,
+        `Backward Elimination`,
+        `Lasso Regression`,
+      ],
+      answer: "A",
+      solution: `Principal Component Analysis (PCA) is a feature extraction technique. It reduces the dimensionality<br>of the data by transforming original features into a new set of uncorrelated variables (principal<br>components), which retain most of the data variance. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> with <strong>List-II</strong> and select the correct answer using the codes given below the lists: <br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_8.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is true regarding the elbow method in K-means clustering?`,
+      image: "",
+      options: [
+        `SSE always increases with increasing K.`,
+        `SSE may fluctuate with increasing K depending on initial centroids.`,
+        `SSE always decreases with increasing K.`,
+        `The elbow point gives the highest value of SSE.`,
+      ],
+      answer: "C",
+      solution: `When the number of clusters K increases in K-means clustering, each cluster contains fewer points,<br>making the points closer to their respective centroids. As a result, the Sum of Squared Errors<br>(SSE) decreases because the overall distance between points and centroids reduces. Therefore,<br>SSE never increases with higher values of K. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `Agglomerative clustering does not require a distance measure.`,
+        `Agglomerative clustering requires recursive splitting of clusters.`,
+        `Agglomerative clustering is generally faster than divisive clustering for large datasets.`,
+        `Agglomerative clustering starts with one cluster and ends with many clusters.`,
+      ],
+      answer: "C",
+      solution: `Agglomerative clustering is often faster than divisive clustering because it starts with many small<br>clusters and merges them step-by-step, while divisive starts with one big cluster and splits<br>recursively, which can be more computationally expensive. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `In a feedforward neural network, information can flow in both directions between layers.`,
+        `A feedforward neural network may contain feedback connections and cycles.`,
+        `A feedforward neural network processes inputs in one direction and does not contain cycles.`,
+        `Feedforward networks always use the sigmoid activation function.`,
+      ],
+      answer: "C",
+      solution: `A feedforward neural network passes data from input to output in one direction only, without<br>any loops or cycles. It differs from recurrent networks, which allow feedback connections. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `Divisive clustering requires a linkage criterion to decide splits.`,
+        `Divisive clustering is faster than agglomerative clustering in all cases.`,
+        `Divisive clustering builds clusters by merging nearest points.`,
+        `Divisive clustering cannot handle large datasets.`,
+      ],
+      answer: "A",
+      solution: `Divisive clustering needs a clear criterion to decide how to split clusters at each step. This could<br>be based on distance measures or other dissimilarity metrics, similar to how linkage criteria<br>guide agglomerative clustering. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following distance matrix below:<br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_1.png"/><br>Using agglomerative hierarchical clustering with single linkage.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_2.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_3.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_4.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_5.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_6.png"/><br><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_7.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br><em>S</em> <sub>1</sub> : In neural networks, the learning rate controls the size of weight updates during training.<br><em>S</em> <sub>2</sub> : Backpropagation algorithm can work without an activation function.<br>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "A",
+      solution: `•In neural networks, the learning rate determines how large each step of weight adjustment is during training using gradient descent. A suitable learning rate helps the model converge effectively. So, <em>S</em> <sub>1</sub> is correct.<br>•Without an activation function, a neural network becomes a linear model, and backpropagation cannot learn non-linear patterns. So, <em>S</em> <sub>2</sub> is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are true about agglomerative clustering?`,
+      image: "",
+      options: [
+        `It requires the number of clusters to be specified before the algorithm starts.`,
+        `It can be visualized using a dendrogram.`,
+        `It merges the two most similar clusters at each step.`,
+        `It guarantees optimal clustering for all datasets.`,
+      ],
+      answer: ["B", "C"],
+      solution: `•Agglomerative clustering does NOT require the number of clusters to be specified before<br>starting. It starts with all points as individual clusters and merges step by step; you can cut<br>the dendrogram at any level to get the desired number of clusters. So, option (a) is false.<br>•Agglomerative clustering can be visualized using a dendrogram, which shows the hierarchy<br>of cluster merges. So, option (b) is true.<br>•At each step, it merges the two most similar (closest) clusters based on the chosen linkage/<br>distance metric. So, option (c) is correct.<br>•It is a greedy, hierarchical method and does NOT guarantee optimal clustering for all datasets.<br>So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following dataset divided into 2 clusters by using initial centroid <em>k</em> <sub>1</sub> = 10 and <em>k</em> <sub>2</sub> = 25.<br>Data points: [3, 12, 15, 22, 28, 30, 8, 17, 20]<br>After the 2<sup>nd</sup> iteration of k-means clustering.<br>Which of the following is the correct assignment of data points to cluster? `,
+      image: "",
+      options: [
+        `<em>k</em> <sub>1</sub> : [3, 12, 15, 8], <em>k</em> <sub>2</sub> : [17, 22, 28, 30]`,
+        `<em>k</em> <sub>1</sub> : [3, 12, 15, 8, 17], <em>k</em> <sub>2</sub> : [22, 28, 30, 20]`,
+        `<em>k</em> <sub>1</sub> : [3, 12, 15, 22, 8], <em>k</em> <sub>2</sub> : [17, 28, 30, 20]`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_9.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `Single linkage clustering focuses on the shortest distance.`,
+        `Single linkage clustering focuses on the longest distance.`,
+        `Complete linkage clustering focuses on the shortest distance.`,
+        `Complete linkage clustering focuses on the longest distance.`,
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider an MLP model with two hidden layers and one output layer. The first hidden layer has 10 neurons, the second hidden layer has 6 neurons, and the output layer has 2 neurons. The input to the MLP is a 5-dimensional vector. Each neuron is fully connected to every neuron in the previous layer, and a bias term is included for each neuron.<br>Calculate the total number of trainable parameters in this MLP model. `,
+      image: "",
+      options: [
+      ],
+      answer: 140,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_10.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following dataset:<br>{20, 3, 17, 8, 25, 1, 10, 12}<br>The initial centroid for <em>k</em> -mean clustering are chosen as <em>k</em> <sub>1</sub> = 3 and <em>k</em> <sub>2</sub> = 20.<br>After one iteration of the <em>k</em> -means algorithm.<br>What are the centroid values? `,
+      image: "",
+      options: [
+        `(5.5, 20.5)`,
+        `(6, 21)`,
+        `(7, 20)`,
+        `(5.5, 18.5)`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `The K-means clustering algorithm is more efficient than the Hierarchical clustering algorithm.`,
+        `The optimal value of <em>k</em> in the K-means clustering algorithm lies in the range 1 &lt;<em>k</em> <n.< div=""> </n.<>`,
+        `The K-means clustering algorithm is based on minimizing the dissimilarity between data points using Manhattan distance.`,
+        `In the K-means algorithm, as the value of k increases, the sum of squared errors tends to decrease significantly.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_da_machine_learning_part_3/img_12.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Artificial Intelligence-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is an exact inference method in Bayesian Networks?`,
+      image: "",
+      options: [
+        `Enumeration`,
+        `Gibbs Sampling`,
+        `Monte Carlo Sampling`,
+        `Particle Filtering`,
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In variable elimination, factors are multiplied before summing out a variable.<br/> <em>S</em> <sub>2</sub> : Variable elimination gives the exact value of posterior probability for the query variable(s), given evidence.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> •In variable elimination, we first multiply all factors involving the variable to be eliminated.<br/> Only after this, we perform summation over that variable. This maintains the correctness of marginalization. So, <em>S</em> <sub>1</sub> is correct.<br/> •Variable elimination is an exact inference method. It computes the true posterior distribution of the query variable given the observed evidence, without using approximations. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following algorithms is used in Exact Inference methods?`,
+      image: "",
+      options: [
+        `Variational Inference`,
+        `Gibbs Sampling`,
+        `Loopy Belief Propagation`,
+        `Belief Propagation`,
+      ],
+      answer: "D",
+      solution: `<br/> •Variational Inference approximates the true distribution by optimizing over a simpler family of distributions, making it a fast but approximate method.<br/> •Gibbs Sampling is an approximate inference method that uses MCMC to draw samples from the posterior distribution. It is useful when exact inference is computationally infeasible.<br/> •Loopy Belief Propagation applies belief propagation in graphs with cycles, but results are only approximate and not guaranteed to converge.<br/>•Belief Propagation performs exact inference in tree-structured Bayesian networks by passing messages between nodes. It guarantees correct marginal probabilities when the graph has no loops. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following methods uses random sampling?`,
+      image: "",
+      options: [
+        `Belief Propagation`,
+        `Variational Inference`,
+        `Monte Carlo Methods`,
+        `Variable Elimination`,
+      ],
+      answer: "C",
+      solution: `<br/> Monte Carlo methods use random sampling to approximate complex probability distributions.<br/>Other methods like Belief Propagation, Variational Inference, and Variable Elimination do not rely on random sampling. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In a Markov Chain, the future state depends only on the current state and not on any previous states.<br/> <em>S</em> <sub>2</sub> : The samples generated before reaching the stationary distribution are called burn-in samples.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only S2`,
+        `Both S1 and S2`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> •This is the Markov property, where the process is memoryless.<br/> The next state depends solely on the current state, not on how it got there. So, <em>S</em> <sub>1</sub> is correct.<br/> •Burn-in samples are early outputs from the Markov chain before it reaches equilibrium.<br/> These samples are discarded to ensure unbiased inference. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Mean-field approximation is more computationally expensive than structured methods.<br/> <em>S</em> <sub>2</sub> : Structured variational methods assume all variables are independent.<br/>Which of the following is incorrect? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<br/> •Mean-field approximation assumes all variables are independent, which simplifies the joint<br/> distribution into a product of marginals. This reduces computational complexity but can sacrifice<br/> accuracy when variables are actually dependent. So, S1 is correct.<br/> •Structured variational methods capture dependencies between variables instead of assuming<br/> independence. This improves accuracy but requires more computation compared to meanfield.<br/>So, S2 is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a Bayesian Network, what does the Conditional Probability Table (CPT) for a node represent?`,
+      image: "",
+      options: [
+        `The marginal probability of the node.`,
+        `The joint probability of all nodes in the network.`,
+        `The probability of the node given its parents.`,
+        `The frequency count of the node values.`,
+      ],
+      answer: "C",
+      solution: `<br/>Each node has a CPT specifying its probability distribution conditioned on its parent nodes. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Loopy Belief Propagation always converges when the network contains cycles.`,
+        `Variational Inference can optimize the ELBO.`,
+        `The Junction Tree algorithm is also known as the Clique Tree algorithm.`,
+        `None of these`,
+      ],
+      answer: ["B", "C"],
+      solution: `<br/> •Loopy Belief Propagation is not guaranteed to converge in graphs with cycles.<br/> Even if it converges, the results are approximate and may not represent the true marginals.<br/> So, option (a) is incorrect.<br/> •Variational Inference converts inference into an optimization problem by maximizing the<br/> Evidence Lower Bound (ELBO).<br/> This approach approximates the true posterior distribution with a simpler distribution. So,<br/> option (b) is correct.<br/> •The Junction Tree algorithm is also called the Clique Tree algorithm.<br/> It converts the graph into a tree of cliques to enable exact inference efficiently. So, option (c)<br/>is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In a junction tree, each node (clique) contains a subset of variables that form a complete (fully connected) subgraph.<br/> <em>S</em> <sub>2</sub> : Junction tree representation is used to perform exact inference by propagating messages between cliques.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> •Each node in a junction tree corresponds to a maximal clique from a triangulated graph, where all variables in the clique are fully connected. So, <em>S</em> <sub>1</sub> is correct.<br/> •Junction trees are used for exact inference through message passing between cliques, enabling efficient marginal and conditional probability computations. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a Bayesian network representing daily commute behavior. There are two variables:<br/> T (Traffic) and L (Late).<br/>The conditional probability tables are as follows: <br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_1.png"/><br><br>Compute the marginal probability <em>P</em> (<em>L</em> = 1) = ______. (Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.46,
+      solution: `[0.40 - 0.48]<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following statements:<br/> <strong>I.</strong> Gibbs sampling avoids computing the full joint distribution by sampling from the conditional distribution of each variable.<br/> <strong>II.</strong> Gibbs sampling always converges quickly, even when the variables are highly correlated.<br/> <strong>III.</strong> In Gibbs sampling, each variable is sampled conditionally on the current values of all other variables.<br/>How many of the above statements are correct? `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<br/> •Gibbs sampling is a type of Markov Chain Monte Carlo (MCMC) method.<br/> It avoids computing the full joint distribution by sampling each variable from its conditional<br/> distribution, keeping all other variables fixed. So, Statement I is correct.<br/> •Gibbs sampling does not always converge quickly.<br/> If variables are highly correlated, the Markov chain may mix slowly, leading to slow<br/> convergence. So, Statement II is incorrect.<br/> •In Gibbs sampling, each variable is indeed sampled conditionally, based on the current values<br/>of all other variables. This is the core mechanism of the algorithm. So, Statement III is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let the functions log <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_3.png"/> and log q(z) be defined over <em>z</em> ∈ {0, 1} as:<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_4.png"/><br><br>Given q(z = 0) = 0.4 and q(z = 1) = 0.6, compute the expected value of the difference log <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_5.png"/> – log <em>q</em> (<em>z</em> ) , averaged under <em>q</em> (<em>z</em> ).<br/>The resulting value (rounded to one decimal place) is: `,
+      image: "",
+      options: [
+        `1.0`,
+        `1.4`,
+        `1.6`,
+        `1.8`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following table for factor <em>h</em> (<em>A</em> , <em>B</em> , <em>C</em> ): <br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_7.png"/><br><br>Eliminate variable <em>C</em> by summing it out. Find the resulting factor <em>k</em> (<em>A</em> , <em>B</em> ) = Σ<em>c</em> <em>h</em> (<em>A</em> , <em>B</em> , <em>C</em> ) and calculate the values of <em>k</em> (0, 1) and <em>k</em> (1, 0). `,
+      image: "",
+      options: [
+        `(0.25, 0.10)`,
+        `(0.40, 0.50)`,
+        `(0.30, 0.15)`,
+        `(1, 0)`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following Bayesian Network:<br><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_9.png"/><br><br>Find the Markov Blanket of node Q?`,
+      image: "",
+      options: [
+        `R, Q, T, U, V`,
+        `W, T, R, Q, V`,
+        `S, R, T, Q, P`,
+        `P, R, S, T`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following best describes the burn-in period in Markov Chain Monte Carlo methods?`,
+      image: "",
+      options: [
+        `The initial samples that are discarded before the Markov chain reaches the stationary distribution.`,
+        `The final samples taken after the stationary distribution is reached.`,
+        `Samples drawn directly from the target distribution.`,
+        `Samples used to initialize the Markov chain randomly.`,
+      ],
+      answer: ["A"],
+      solution: `<br/> •Burn-in samples are discarded to avoid the bias from the early phase of the Markov chain.<br/> This ensures only samples from the stationary phase are used. So, option (a) is correct.<br/> •Final samples are retained and used for analysis, not discarded. So, option (b) is incorrect.<br/> •In MCMC, we sample indirectly via the Markov chain, not directly from the target distribution.<br/> Hence, So, option (c) is incorrect.<br/> •Initialization refers to the starting point of the chain.<br/>It is unrelated to the definition of the burn-in period. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given factors: <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_11.png"/> <br/> Perform variable elimination by:<br/> (i) Multiplying <em>f</em> <sub>1</sub> and <em>f</em> <sub>2</sub> to get <em>f</em> (<em>X</em> , <em>Y</em> , <em>Z</em> ) = <em>f</em> <sub>1</sub> (<em>X</em> , <em>Y</em> ) × <em>f</em> <sub>2</sub> (<em>Y</em> , <em>Z</em> ).<br/> (ii) Eliminating Y by summing it out to obtain <em>g</em> (<em>X</em> , <em>Z</em> ) = Σ <em> <sub>y</sub> </em> <em>f</em> (<em>X</em> , <em>Y</em> , <em>Z</em> ).<br/>What is g(1, 1)? `,
+      image: "",
+      options: [
+        `0.16`,
+        `0.26`,
+        `0.21`,
+        `0.18`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_da_artificial_intelligence_part_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `The elimination of a variable involves summing over its values in the joint factor where it appears.`,
+        `Introducing evidence in variable elimination means conditioning the relevant factors on observed values.`,
+        `The complexity of variable elimination is independent of the elimination ordering.`,
+        `Variable elimination can generate intermediate factors with more variables than any original CPT.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<br/> •Eliminating a variable means summing over its values in the product of all relevant factors.<br/> So, option (a) is correct.<br/> •Observing evidence modifies the factors by conditioning-only values consistent with the<br/> evidence are retained. So, option (b) is correct.<br/> •The order of elimination matters. A poor order may lead to large intermediate factors and<br/> increased complexity. So, option (c) is incorrect.<br/> •During elimination, multiplying factors can result in intermediate factors involving more<br/>variables than any original CPT, leading to higher computation. So, option (d) is correct. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Linear Algebra-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The eigen values of the matrix, <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_1.png"/> are 1 and 6. For matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_2.png"/> is the 2 × 2<br/> identity matrix and α is a constant. If the eigen values of matrix <em>B</em> are 5 and 10, find the value of α. `,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let A be a 6 × 6 real matrix whose characteristic polynomial is<br/> (y – 1)<sup>3</sup> ⋅ (y – 2)<sup>2</sup> ⋅ (y – 3)<sup>1</sup> <br/> Let λ = 2 be one eigen values of <em>A</em> .<br/>Which of the following is necessarily true? `,
+      image: "",
+      options: [
+        `λ = 2 have one independent eigen vector.`,
+        `Rank of the matrix ≤ 3.`,
+        `Geometric multiplicity of λ = 2 is 2.`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_14.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If <em>A</em> is a 6 × 6 matrix with det(<em>A</em> ) = –1<br/> Define matrix <em>B</em> = 2<em>A</em> <sup>–1</sup> (– <em> A<sup>T</sup> </em> )<br/> Determinant of det(<em>B</em> ) = ? `,
+      image: "",
+      options: [
+      ],
+      answer: 64,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider matrix <em>A</em> <sub> <em>n</em> × <em>n</em> </sub> having eigen values λ<sub>1</sub> , λ<sub>2</sub> , ..... λ <em> <sub>n</sub> </em> .<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_18.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_19.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_20.png"/>`,
+        `All are true.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<br/>(c) Matrix may have repeated eigen value, which may lead non-diagonalizable matrix. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following matrix:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_21.png"/><br><br>Which are true regarding matrix <em>A</em> ? `,
+      image: "",
+      options: [
+        `Rank of the matrix is 4.`,
+        `The system <em>AX</em> = 0 has only trivial solution.`,
+        `The nullity of <em>A</em> is 1.`,
+        `The maximum number of linearly independent column is 4.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let A be a real symmetric 3 × 3 matrix with eigen value 4, λ, λ.<br/> Suppose det(<em>A</em> ) = 16 and trace(<em>A</em> ) = 10<br/>What are the possible values of λ. `,
+      image: "",
+      options: [
+        `2, –2`,
+        `2, 3`,
+        `–2, 3`,
+        `No value of λ possible`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The product of singular values of n × n matrix is equal to the determinant of the matrix.<br/> <em>S</em> <sub>2</sub> : If all singular value of an n × n matrix are non-zero, then the determinant of the matrix is the sum of it’s non-zero singular values.<br/>Which of the below is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the singular value decomposition of a real matrix <em>A</em> ∈ <em>R</em> <sup> <em>n</em> × <em>n</em> </sup> , given by <em>A</em> = U Σ <em> V<sup>T</sup> </em> .<br/> S<sub>1</sub> : The matrix <em> A<sup>T</sup> A </em> has an orthonormal set of eigen vectors given by the columns of V.<br/> S<sub>2</sub> : The diagonal entries of Σ arc the square roots of the non-zero eigen values of <em> A<sup>T</sup> A </em> .<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <em>u</em> and <em>v</em> are orthogonal vector in the inner product space <em>v</em> , such that <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_33.png"/> and <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_34.png"/> then what is the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_35.png"/> is _________. `,
+      image: "",
+      options: [
+        `4, 2`,
+        `8, 12`,
+        `7, 14`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_36.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the given matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_4.png"/>the eigen vectors. `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_6.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_7.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_8.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_9.png"/><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For which values of α and β the following simultaneously equations have an infinite number of solution<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_11.png"/>`,
+      image: "",
+      options: [
+        `(14, –5)`,
+        `(4, –1)`,
+        `(1, –4)`,
+        `(5, 14)`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_12.png"/><br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The eigen value of skew-symmetric matrix [ <em> A<sup>T</sup> </em> = –<em>A</em> ] are purely real.`,
+        `The eigen value of skew-symmetric matrix [ <em> A<sup>T</sup> </em> = –<em>A</em> ] are purely imaginary or zero.`,
+        `The eigen value of symmetric matrix [ <em> A<sup>T</sup> </em> = <em>A</em> ] are purely imaginary.`,
+        `The eigen value of symmetric matrix [ <em> A<sup>T</sup> </em> = <em>A</em> ] are purely real.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<br/> •The eigen value of symmetric matrix [ <em> A<sup>T</sup> </em> = <em>A</em> ] are purely real.<br/> •The eigen value of skew-symmetric matrix [ <em> A<sup>T</sup> </em> = –<em>A</em> ] are either imaginary or zeros. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider k linear algebraic equations in n variable, in matrix form the write <em>AX</em> = <em>Y</em> .<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `If <em>n</em> = <em>k</em> , there is always atmost one solution.`,
+        `If <em>n</em> > <em>k</em> , <em>AX</em> = <em>Y</em> have solution.`,
+        `If <em>n</em> > <em>k</em> , the null space of <em>A</em> have dimension greater than zero.`,
+        `If <em>n</em> <<em>k</em> , <em>AX</em> = <em>Y</em> have solution.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_17.png"/><br><br>)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider <em>A</em> <sub> <em>n</em> × <em>m</em> </sub> and <em>B</em> <sub> <em>m</em> × <em>n</em> </sub> matrices <em>n</em> &lt;<em>m</em> .<br/>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `<em>AB</em> have atmost n linearly independent vectors.`,
+        `<em>BA</em> can be invertible, having non-zero determinant.`,
+        `<em>BA</em> have greater then n non-zero eigen values.`,
+        `Both <em>AB</em> and <em>BA</em> have equal non-zero eigen values.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<br/> ∴<em>AB</em> and BA have same non-zero eigen values.<br/> ∴<em>AB</em> have rank atmost <em>n</em> , so <em>n</em> LI vectors possible.<br/> ∴<em>BA</em> have greater than equal two (<em>m</em> –<em>n</em> ) zero eigen values. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following matrix given below:<br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_24.png"/><br><br>Which of the following is true about above matrix ?`,
+      image: "",
+      options: [
+        `[<em>A</em> ] <em> <sup>T</sup> </em> = [<em>A</em> ]<sup>–1</sup>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_25.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_26.png"/>`,
+        `All of the above`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The given equations are solved by using <em>LU</em> -decomposition method. <br><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_28.png"/><br><br>What is the upper triangle matrix value?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_30.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_31.png"/>`,
+        `None of above`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A vector <em>V</em> = (2, 1, –1)<sup>T</sup> lies in R3.<br/> Consider the plane defined by the equation <em>x</em> – y + z = 0.<br/> Which of the following represents the orthogonal projection of <em>v</em> onto the plane? `,
+      image: "",
+      options: [
+        `The vector lies on the plane, so it’s projection is (2, 1, –1) <em> <sup>T</sup> </em> .`,
+        `The projection lies on the plan and is orthogonal to the normal vector (0, –1, 1)<sup>T</sup> .`,
+        `The projection is obtained by subtracting the component of <em>V</em> a long the normal from <em>V</em> itself.`,
+        `The projection is a scalar multiple of vector (1, –1, 1) <em> <sup>T</sup> </em> .`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_da_linear_algebra_2/img_38.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Artificial Intelligence-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In BFS, increasing the branching factor significantly increases the memory usage.<br/> <em>S</em> <sub>2</sub> : DFS requires less memory than BFS.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : An admissible heuristic never overestimates the cost to reach the goal.<br/> <em>S</em> <sub>2</sub> : A* search using an admissible heuristic is always optimal for a tree search.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is overcome in the Ridge problem of the Hill Climbing algorithm? `,
+      image: "",
+      options: [
+        `Back tracking Technique`,
+        `Random jump`,
+        `Multi-direction search`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> In ridge problems, the optimal path lies along a narrow slope that cannot be followed using only<br/> simple moves. Multi-direction search allows exploring in multiple directions, helping the algorithm<br/>move along the ridge effectively. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> S1 : If two heuristics <em>h</em> <sub>1</sub> (<em>n</em> ) and <em>h</em> <sub>2</sub> (<em>n</em> ) are both admissible and <em>h</em> <sub>2</sub> (<em>n</em> ) ≥ <em>h</em> <sub>1</sub> (<em>n</em> ) for all nodes, then <em>h</em> <sub>2</sub> (<em>n</em> ) is said to dominate <em>h</em> <sub>1</sub> (<em>n</em> ).<br/> S2 : Using a dominated heuristic always leads to fewer node expansions in A* search.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a chess game, the average branching factor (number of legal moves per position) is 20. If a minmax search is performed with a search depth of 3 levels, how many terminal nodes will be evaluated?`,
+      image: "",
+      options: [
+        `60`,
+        `400`,
+        `8,000`,
+        `12,000`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>L</em> (<em>x</em> , <em>y</em> ) be the statement “<em>x</em> loves <em>y</em> ” where the domain for both <em>x</em> and <em>y</em> consists of all people<br/>in the world. Use quantifiers to express “Chaitra is loved by everyone”. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_6.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_7.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_8.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_9.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `Path cost in Uniform Cost Search is used only at the goal node to verify the solution.`,
+        `Uniform Cost Search prioritizes nodes with higher path cost to ensure completeness.`,
+        `Path cost refers to the cumulative cost from the start node to the current node and is used to guide the search.`,
+        `Path cost is irrelevant when all edge costs are the same.`,
+      ],
+      answer: ["C"],
+      solution: `<br/> •Path cost is not used only at the goal node. In Uniform Cost Search (UCS), the path cost is continuously calculated for every node during the search to decide which node to expand next. So, option (a) is incorrect.<br/> •UCS does not prioritize nodes with higher path cost. Instead, it always expands the node with the lowest cumulative path cost first to ensure the least costly path is found. So, option (b) is incorrect.<br/> •It is the sum of costs along the path from the start node to the current node, and UCS uses this<br/> cumulative cost to prioritize node expansion. So, option (c) is correct.<br/> •Even if all edge costs are equal, UCS still considers path cost to maintain proper ordering.<br/>Thus, path cost is never irrelevant. So, option (d) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a DFS traversal of a graph, which of the following conditions may lead to incompleteness?`,
+      image: "",
+      options: [
+        `Finite state space with loop checking`,
+        `Infinite state space with no loop checking`,
+        `Goal test at every node`,
+        `Use of heuristic in node expansion`,
+      ],
+      answer: "B",
+      solution: `<br/> •DFS is incomplete in infinite state spaces if there ’s no loop detection (can go infinitely deep on one path).<br/>•Loop checking is necessary to make DFS complete in finite graphs. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following is/are incorrect?`,
+      image: "",
+      options: [
+        `DFS always finds the shortest path faster than BFS in graphs with cycles.`,
+        `DFS is guaranteed to find a solution in the shortest time possible.`,
+        `AO* uses breadth-first search on AND-OR graphs ignoring heuristics.`,
+        `BFS cannot handle infinite-depth search problems.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<br/> •DFS does not guarantee finding the shortest path, especially in graphs with cycles. BFS is<br/> preferred for shortest path in unweighted graphs because it explores level-by-level. So,<br/> option (a) is incorrect.<br/> •DFS is not guaranteed to find a solution in the shortest time. It can get stuck going deep into<br/> a branch without finding the goal quickly. So, option (b) is incorrect.<br/> •AO* algorithm works on AND-OR graphs using heuristics to prune and guide the search, not<br/> blindly like breadth-first search. So, option (c) is incorrect.<br/> •BFS explores all nodes level-wise and stores all nodes at each level. In infinite-depth or infinitebranching<br/>problems, BFS can run out of memory or fail to terminate. So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `“If P then Q unless R” is represented by which of the following formulas in proportional logic?<br/>(“¬”) is negation, “∧” is conjunction, and “→” is implication) `,
+      image: "",
+      options: [
+        `(<em>P</em> ∧ ¬ <em>R</em> ) → <em>Q</em>`,
+        `(<em>P</em> ∧ <em>Q</em> ) → ¬ <em>R</em>`,
+        `<em>P</em> → (<em>Q</em> ∧ ¬ <em>R</em> )`,
+        `(<em>P</em> → <em>Q</em> ) ∧ ¬ <em>R</em>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `Depth-First Search is optimal and uses exponential space.`,
+        `Depth-Limited Search always finds the least-cost solution.`,
+        `Uniform Cost Search guarantees the optimal path but may require exponential space.`,
+        `Random Search is complete and optimal.`,
+      ],
+      answer: "C",
+      solution: `<br/> •Uniform Cost Search (UCS) expands the node with the lowest path cost and guarantees the optimal solution, assuming all step costs are non-negative.<br/>•However, UCS maintains all generated nodes in memory, which can lead to exponential space complexity in the worst case, particularly when the solution cost is high and each action has a small minimum cost ε. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following game tree where the root is a maximizing node and children visited left to right.<br><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_11.png"/><br><br>Using alpha-beta pruning, which of the following leaf nodes will be pruned?`,
+      image: "",
+      options: [
+        `TU`,
+        `Y`,
+        `WX`,
+        `WXY`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_12.png"/><br><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let satisfiable (<em>x</em> ) be a predicate which denotes that x is satisfiable logic. Let Valid (<em>x</em> ) be a predicate which denotes that <em>x</em> is valid logic. Which of the following first order logic sentences does not represents the statements:<br/>“Not every satisfiable logic is Valid” `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_14.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_15.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_16.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_17.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In Greedy Best-First Search, the node to be expanded next is selected based on:`,
+      image: "",
+      options: [
+        `The lowest cumulative path cost from the start node.`,
+        `The lowest heuristic estimate of distance to the goal.`,
+        `The highest path cost from the start node.`,
+        `Random selection among all nodes.`,
+      ],
+      answer: "B",
+      solution: `<br/> Greedy Best-First Search is an informed search strategy that expands the node that appears to be closest to the goal, using a heuristic function.<br/> •It uses a heuristic estimate <em>h</em> (<em>n</em> ), which estimates the cost from node n to the goal.<br/> •The algorithm selects the node with the lowest heuristic value <em>h</em> (<em>n</em> ), assuming that lower <em>h</em> (<em>n</em> )<br/>means closer to the goal. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The first order logic (FOL) statement ((<em>R</em> ∨ <em>Q</em> ) ∧ (<em>P</em> ∨ ¬<em>Q</em> )) is equivalent to which of the following? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_19.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_20.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_21.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_22.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_da_artificial_intelligence_part_1/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `Alpha-beta pruning always changes the final decision in a game tree search.`,
+        `Alpha-beta pruning increases the number of branches traversed in a game tree.`,
+        `Alpha-beta pruning reduces the number of branches traversed without affecting the solution.`,
+        `Alpha-beta pruning is used only for single-player games.`,
+      ],
+      answer: "C",
+      solution: `<br/> Alpha-beta pruning is an optimization of the Minmax algorithm used in two-player games. It<br/> reduces the number of branches evaluated by pruning those that cannot affect the final decision,<br/> improving efficiency without changing the result.<br/> Options (a), (b), and (d) are incorrect because alpha-beta pruning does not change the final decision,<br/>does not increase branches searched, and is not used in single-player games. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is correct?`,
+      image: "",
+      options: [
+        `Simple Hill Climbing evaluates all neighbors and selects the best one.`,
+        `Simple Hill Climbing randomly selects a neighbor to move to.`,
+        `Simple Hill Climbing evaluates neighbors one by one and selects the first better one.`,
+        `Simple Hill Climbing stores all neighbors before making a decision.`,
+      ],
+      answer: "C",
+      solution: `<br/> Simple Hill Climbing checks neighbors one by one and moves to the first neighbor that improves<br/> the current state. It does not evaluate all neighbors, does not store them, and does not choose<br/>randomly. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Calculus and Optimization-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_35479_0.png"/> `,
+      image: "",
+      options: [
+        `<em>e</em> <sup>5</sup>`,
+        `<em>e</em> <sup>–10</sup>`,
+        `<em>e</em> <sup>10</sup>`,
+        `<em>e</em> <sup>2</sup>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_14934_0.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: 0.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Calculate the function value <em>h</em> (<em>x</em> ) at <em>x</em> = 1. <br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_36278_0.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_70554_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_26081_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_39136_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_45077_0.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>f</em> (<em>x</em> ) be a piecewise function defined as: <br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_77796_0.png"/><br><br>Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `<em>f</em> (<em>x</em> ) is discontinuous at <em>x</em> = 1, ∀.<em>k</em> .`,
+        `If <em>k</em> = 2, <em>f</em> (<em>x</em> ) is continuous at <em>x</em> = 1.`,
+        `Left hand limit of <em>f</em> (<em>x</em> ) at <em>x</em> = 1 is 2, right hand limit is <img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_58951_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_19560_0.png"/>`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<br/>(a) Function is continues from one side. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Evaluate the limit:<br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_55760_0.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_35494_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_48848_0.png"/>`,
+        `0`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_48856_0.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_7.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_77807_0.png"/> `,
+      image: "",
+      options: [
+        `<em>f</em> (<em>x</em> ) is continuous but not differentiable.`,
+        `<em>f</em> (<em>x</em> ) and <em>f</em> ′(<em>x</em> ) both are continuous.`,
+        `<em>f</em> ′(<em>x</em> ) is continuous but not differentiable.`,
+        `<em>f</em> (<em>x</em> ) is continuous but <em>f</em> ′(<em>x</em> ) is not continuous.`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>f</em> (<em>x</em> ) be a real-valued function defined in an open internal around <em>x</em> = a (except possibly at <em>x</em> = a).<br/>Consider the following statements: <br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_10517_0.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_26987_0.png"/>on the internal [–1, 1], is Rolle’s theorem applicable? `,
+      image: "",
+      options: [
+        `Yes and <em>f</em> ′(<em>c</em> ) = 0, c ∈ (–1, 1)`,
+        `No, because <em>f</em> (–1) ≠ <em>f</em> (1)`,
+        `No, because <em>f</em> (<em>x</em> ) is not differentiable at <em>x</em> = 0`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_92605_0.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the function <em>f</em> (<em>x</em> ) = <em>x</em> + ln <em>x</em> and f is differentiable on (1, <em>e</em> ) and <em>f</em> (<em>x</em> ) is continuous on [1, e].<br/>Determine the c value using mean value theorem. `,
+      image: "",
+      options: [
+        `<em>e</em>`,
+        `<em>e</em> – 1`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_37494_0.png"/>`,
+        `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_22248_0.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_97954_0.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following graph of derivative of <em>f</em> (<em>x</em> ). <br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896993_48450_0.png"/>`,
+      image: "",
+      options: [
+        `<em>f</em> (<em>x</em> ) have atleast three real solution.`,
+        `<em>f</em> (<em>x</em> ) is continuous but differentiable at every point.`,
+        `<em>f</em> (<em>x</em> ) have local maxima at <em>Y</em> and local minima at <em>Z</em> .`,
+        `<em>f</em> (<em>x</em> ) can be continuous at P but not differentiable.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896994_49986_0.png"/> `,
+      image: "",
+      options: [
+        `1`,
+        `-1`,
+        `0`,
+        `3`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Find the number of points of new-differentiability of<br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896995_80083_0.png"/>`,
+      image: "",
+      options: [
+        `6`,
+        `7`,
+        `5`,
+        `4`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_9.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_27736_0.png"/>is continuous and differentiable over (a, b), ∀a, b ∈ R – {0}. <br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_85380_1.png"/><br><br>Then number of possible values of <em>k</em> is `,
+      image: "",
+      options: [
+        `3`,
+        `2`,
+        `1`,
+        `4`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Evaluate the limit:<br><br><img src="https://storage.googleapis.com/te8-prod-pb/56736/Autoupdate/test/QNI6434329/1770896996_43005_0.png"/>`,
+      image: "",
+      options: [
+        `<em>f</em> (<em>t</em> ) is continuous and limit exist at <em>t</em> = –1.`,
+        `Left hand limit is 1 and right hand limit is –1.`,
+        `The function is undefined at <em>t</em> = –1, so limit does not exist.`,
+        `<em>f</em> (<em>t</em> ) is defined but limit does not exist at <em>t</em> = –1.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let [<em>x</em> ] be the greatest integer less than or equal to <em>x</em> .<br/> Then at which of the following points function <em>f</em> (<em>x</em> ) = <em>x</em> cos (π(<em>x</em> + [<em>x</em> ])) is discontinuous? `,
+      image: "",
+      options: [
+        `<em>x</em> = 1`,
+        `<em>x</em> = –1`,
+        `<em>x</em> = 0`,
+        `<em>x</em> = 2`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a strictly increasing differentiable function f whose domain is real numbers, i.e. for any<br/> <em>x</em> , <em>y</em> ∈ <em>R</em> with x <y <em="" then="">f (<em>x</em> ) &lt;<em>f</em> (<em>y</em> ). Consider any three numbers <em>a</em> , <em>b</em> , <em>c</em> , such that <em>a</em> &lt;<em>c</em> &lt;<em>b</em> and<br/> <em>a</em> ≠ <em>b</em> ≠ <em>c</em> , following are two statements for this consideration:<br/> <em>S</em> <sub>1</sub> : There can be the situation where <em>f</em> ′(<em>c</em> ) &lt;0.<br/> <em>S</em> <sub>2</sub> : <em>f</em> ′(<em>b</em> ) &gt; <em>f</em> ′(<em>a</em> ) satisfied always.<br/>Which of the above statements are correct? </y>`,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> only`,
+        `<em>S</em> <sub>2</sub> only`,
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> both`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_da_calculus_and_optimization_1/img_15.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Calculus and Optimization-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given the function <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_1.png"/> determine the Taylor expansion of <em>f</em> (<em>x</em> ) around <em>x</em> = π upto the third non-zero term.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_5.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>f</em> (<em>x</em> ) = 3<em>x</em> <sup>3</sup> – <em>x</em> <sup>2</sup> + 4<em>x</em> , determine the number of points where <em>f</em> (<em>x</em> ) has either local maxima or minima is ________? `,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The maximum value of <em>f</em> (<em>x</em> ) = <em>x</em> (<em>x</em> – 1) (<em>x</em> – 2) in the interval [1, 2] is `,
+      image: "",
+      options: [
+        `–2.42`,
+        `–0.348`,
+        `1`,
+        `0`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given <em>f</em> (<em>x</em> ) = ln x, suppose that second degree Taylor polynomial around <em>x</em> = 1 is used. If we approximate <em>f</em> (2) using this polynomial, which of the following is the closest result? `,
+      image: "",
+      options: [
+        `0.7`,
+        `0.6`,
+        `0.5`,
+        `0.9`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_9.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A function <em>f</em> (<em>x</em> ) = 1 – <em>x</em> <sup>2</sup> + <em>x</em> <sup>3</sup> is defined in the closed interval [–1, 1]. The value of <em>x</em> in the open interval (–1, 1) for which the mean value theorem is satisfied, is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_11.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_12.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_14.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider <em>f</em> (<em>x</em> ) = <em>x</em> <sup>4 </sup> + 4<em>x</em> <sup>3</sup> , then `,
+      image: "",
+      options: [
+        `Local maxima at <em>x</em> = 0`,
+        `Inflection point at <em>x</em> = –3`,
+        `Local minima at <em>x</em> = –3`,
+        `Local maxima at <em>x</em> = 0`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose <em>f</em> (<em>x</em> ) is continuous and differentiable on the interval [–9, 2], <em>f</em> (–9) = –6 and <em>f</em> ′(<em>x</em> ) &lt;3.<br/> Which is the largest possible value for <em>f</em> (2)? `,
+      image: "",
+      options: [
+      ],
+      answer: 26,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the mean value theorem <em>f</em> (<em>b</em> ) – <em>f</em> (<em>a</em> ) = (<em>b</em> – <em>a</em> ) <em>f</em> ′(<em>c</em> ) determining <em>c</em> lying between a and <em>b</em> , if <em>f</em> (<em>x</em> ) = <em>x</em> (<em>x</em> – 1) (<em>x</em> – 2), <em>a</em> = 0 and <em>b</em> =<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_25.png"/>(Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.23,
+      solution: `[0.22 - 0.24]<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>f</em> (<em>x</em> ) = 3<em>x</em> <sup>3</sup> – 7<em>x</em> <sup>2</sup> + 5<em>x</em> + 6 is a real-valued function over the interval [0, 2].<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `<em>f</em> (x) has only one local maxima.`,
+        `<em>f</em> (<em>x</em> ) has two local maxima.`,
+        `<em>f</em> (<em>x</em> ) has only one local minima.`,
+        `<em>f</em> (<em>x</em> ) has two local minima.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>f</em> (<em>x</em> ) be a continuous and differentiable function, over all real numbers.<br/> <em>f</em> ′(<em>x</em> ) is the first derivative of <em>f</em> (<em>x</em> ). <br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_16.png"/>`,
+      image: "",
+      options: [
+        `<em>f</em> (<em>x</em> ) has two local maxima and one inflection point.`,
+        `<em>f</em> (<em>x</em> ) is non increasing function from [<em>A</em> , <em>C</em> ].`,
+        `Point <em>A</em> , <em>B</em> , <em>C</em> are real solution of <em>f</em> (<em>x</em> ).`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_17.png"/>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the Taylor series <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_19.png"/> centered at <em>z</em> <sub>0</sub> = 2 Which of the following statements are true regarding the radius of convergence? `,
+      image: "",
+      options: [
+        `If the Taylor series converges at z = 0 the radius of convergence <em>R</em> is at least 2.`,
+        `If the Taylor series converges at z = 3 the radius of convergence <em>R</em> is at least 1.`,
+        `It is possible for the Taylor series to converge at z = 0 and diverge at z = 3.`,
+        `If the Taylor series converges at z = 0, the series must converge at all points inside the disk of radius 2 around <em>z</em> <sub>0</sub> = 2.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<br/> •If the Taylor series converges at z = 0 the radius of convergence must be at least the distance<br/> from z<sub>0</sub> = 2 to z = 0 which is 2. So, option (a) is true.<br/> •If the Taylor series converges at z = 3 the radius of convergence must be at least the distance<br/> from z<sub>0</sub> = 2 to z = 3 which is 1. So, option (b) is true.<br/> •It is impossible for the Taylor series to converge at z = 0 and diverge at z = 3 If the series<br/> converges at z = 0 it will also converge at all points within the disk of radius 2, meaning it<br/> would converge at z = 3 as well. So, option (c) is false.<br/> •If the Taylor series converges at z = 0 it will converge at all points within the disk of radius 2<br/> around z<sub>0</sub> = 2 meaning it will also converge at points inside this radius. So, option (d) is true. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let a, b ∈ R – {0} be such that the function <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_21.png"/> has extreme values at <em>x</em> = –1 and <em>x</em> = 2.<br/> <strong>Statement 1:</strong> f has local maxima at <em>x</em> = –1 and local minima at <em>x</em> = 2.<br/> <strong>Statement 2:</strong> a = 1 and b = <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_22.png"/> `,
+      image: "",
+      options: [
+        `Statement 1 is true statement 2 is false`,
+        `Both statements are true, statement 2 imply statement 1.`,
+        `Both statements are true, statement 1 imply statement 2.`,
+        `Statements 1 is false, statement 2 is true.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A function is defined by <em>f</em> (<em>x</em> ) = 2<em>x</em> <sup>3</sup> – 3<em>x</em> <sup>2</sup> – 12<em>x</em> + 5 for –2 ≤ <em>x</em> ≤ 3. Which one of the following statements is true about this function? `,
+      image: "",
+      options: [
+        `function is decreasing for (–2, –1).`,
+        `function has a minima for <em>x</em> = –1.`,
+        `function has a maxima for <em>x</em> = 2.`,
+        `function is decreasing for (–1, 2).`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Suppose <em>f</em> (<em>x</em> ) is a function, such that <em>f</em> ′(<em>x</em> ) = 8x7 f ″(<em>x</em> ) = 56x6.<br/> Which of the following is/are true about behaviour of <em>f</em> (<em>x</em> ) at <em>x</em> = 0? `,
+      image: "",
+      options: [
+        `<em>x</em> = 0 is a local minimum by first derivative test.`,
+        `The second derivative text fails at <em>x</em> = 0.`,
+        `The point <em>x</em> = 0 is an inflection point of <em>f</em> (<em>x</em> ).`,
+        `Higher order derivative is not required in this case.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Find the coefficient of (<em>x</em> – 2)<sup>3</sup> in the Taylor series expansion of <em>f</em> (<em>x</em> ) = log (1 – <em>x</em> ) about <em>x</em> = 2. `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_32.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given the function <em>f</em> (<em>x</em> ) = 2<em>x</em> <sup>3</sup> – 15a<em>x</em> <sup>2</sup> + 36a<sup>2</sup> <em>x</em> + 1, where a &gt; 0, the function has a local maximum at <em>x</em> = <em>x</em> <sub>1</sub> and a local minimum at <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_34.png"/> Find the value of <em>a</em> . `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_35.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_38.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_39.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let f(z) be a complex function.<br/> Consider the following two statements:<br/> <em>S</em> <sub>1</sub> : A point z0 is a singularity of <em>f</em> (<em>z</em> ) if <em>f</em> (<em>z</em> ) is not analytic at z<sub>0</sub> .<br/> <em>S</em> <sub>2</sub> : A singularity z<sub>0</sub> is called an isolated singularity if <em>f(z</em> ) is analytic on the deleted disk 0 &lt;|z – z <sub>0</sub> | &lt;<em>r</em> for some <em>r</em> &gt; 0.<br/>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> is true`,
+        `Only <em>S</em> <sub>2</sub> is true`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> are true`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub> is true`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_da_calculus_and_optimization_2/img_41.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Probability and Statistics-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a college’s mathematics department, there are 7 women and 9 men. How many distinct ways can a committee of 5 members be formed such that the committee includes atleast one women and atleast one men?`,
+      image: "",
+      options: [
+      ],
+      answer: 4221,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A company tested a new software with three types of uses : Beginner, Intermediate and Expert.<br/>The data collected is given below: <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_2.png"/><br><br>A user is selected at random and is found to have report a bug. What is the probability that user is a Beginner.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_6.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>A</em> and <em>B</em> be two non-empty events such that <em>P</em> (<em>A</em> ) = <em>P</em> <sub>1</sub> , <em>P</em> (<em>B</em> ) = <em>P</em> <sub>2</sub> . <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_8.png"/><br><br>Which of the following statements is true?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_9.png"/> = <em>P</em> <sub>1</sub> + <em>P</em> <sub>2</sub> always valid when <em>A</em> , <em>B</em> are independent.`,
+        `Y = 0 which contradicts independence.`,
+        `Mutual exclusivity of <em>A</em> ∪ <em>B</em> and <em>A</em> ∩ <em>B</em> → <em>A</em> = <em>B</em> .`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If A, B, C are mutually exclusive and exhaustive events associated with a random experiment and <em>P</em> (<em>B</em> ) = 0.6 <em>P</em> (<em>A</em> ) and <em>P</em> (<em>C</em> ) = 0.2 <em>P</em> (<em>A</em> ), then <em>P</em> (<em>A</em> ) is _________. (Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.55,
+      solution: `[0.55 - 0.60]<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find the probability that a sum of 3 appears before a sum of 7 when rolling two fair dice repeatedly.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_15.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_16.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_17.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_18.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three fair coins are tossed. Given that atleast one tail has occurred, what is the probability that atmost one head has occurred?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_24.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In how many different ways can 8 identical balls be distributed among three children if each receives at least two balls and no more than four balls ________?`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The joint probability mass function of <em>X</em> and <em>Y</em> is given in the table below: <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_35.png"/><br><br>What is the marginal probability <em>P</em> (<em>X</em> = 2)? `,
+      image: "",
+      options: [
+        `0.5`,
+        `0.6`,
+        `0.45`,
+        `0.35`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Suppose an algorithm process an input of size <em>n</em> , and in each of <em>n</em> steps, it select an index <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_37.png"/> ∈ {1, 2, ..., <em>n</em> } uniformly at random. Let <em>A</em> be the event that the index <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_38.png"/> are never selected in any of the n steps.<br/> As <em>n</em> → ∞, what is the limiting value of the probability of event <em>A</em> ? `,
+      image: "",
+      options: [
+        `0`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_41.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A six digit number is formed from 0 2 3 4 5 6 7 8 9. What is the probability that the number is divisible by 5 given that it is divisible by 4. (Repetition of digits is not allowed) (Rounded off answer to two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.36,
+      solution: `[0.367 - 0.370]<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>X</em> be a continuous random variable representing the time (in hours) a machine operates before a failure.<br/> The probability density functions PDF) of <em>X</em> is given by <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_13.png"/><br><br>A machine is selected and it is known that the machine has failed with the first 20 hours of operation. What is the probability that the machine fails after 10 hours, given that it has failed within the first 20 hour? (Mark nearest option)`,
+      image: "",
+      options: [
+        `0.231`,
+        `0.253`,
+        `0.270`,
+        `0.281`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vault has two destruct switches.<br/> <em>X</em> (hidden) and <em>Y</em> (visible). Engineer obscure.<br/> • The vault beeps normally (<em>Y</em> = 0) in two scenarios:<br/> (i) 30% of the time with <em>X</em> disarmed (<em>X</em> = 0).<br/> (ii) 45% of the time with <em>X</em> armed (<em>X</em> = 1).<br/> • The vault blares alarms (<em>Y</em> = 1) otherwise.<br/>During a drill, the vault beeps normally what’s the probability the vault was armed. `,
+      image: "",
+      options: [
+        `0.45`,
+        `0.75`,
+        `0.65`,
+        `0.6`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let the joint probability density function of a random variables <em>X</em> and <em>Y</em> be given by: <br/> <br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_26.png"/> <br/> Calculate the probability <em>P</em> (1 &lt;<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_27.png"/><br><br> &lt;2)&lt; /div&gt; <br/> <label class="opt" data-opt="A"> <input name="q10" type="radio" value="A"/> <b>A.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_28.png"/> <br/> </label> <label class="opt" data-opt="B"> <input name="q10" type="radio" value="B"/> <b>B.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_29.png"/> <br/> </label> <label class="opt" data-opt="C"> <input name="q10" type="radio" value="C"/> <b>C.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_30.png"/> <br/> </label> <label class="opt" data-opt="D"> <input name="q10" type="radio" value="D"/> <b>D.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_31.png"/> <br/> </label> <br/> Correct answer: <b>B</b> <br/> <details class="solution"> <summary>Solution</summary> (b)<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_32.png"/><br><br></details>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_31.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider X and Y are two random independent events. It is known that <em>P</em> (<em>Y</em> ) = 0.60 and <em>P</em> (<em>X</em> <sup>C</sup> ∪ <em>Y</em> ) = 0.80. Which one of the following is the value of <em>P</em> (<em>X</em> ∪ <em>Y</em> )? `,
+      image: "",
+      options: [
+        `0.5`,
+        `0.6`,
+        `0.7`,
+        `0.8`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>X</em> and <em>Y</em> be continuous random variable with the joint probability density function given by <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_43.png"/><br><br>Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_44.png"/> denoted the marginal probability of <em>X</em> , find the probability <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_45.png"/> `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_46.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_47.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_48.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_49.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The joint density function of <em>X</em> and <em>Y</em> is given by <br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_51.png"/><br><br>What is the probability <em>P</em> (<em>X</em> &gt; 1, <em>Y</em> &lt;1)?&lt; /div&gt; <br/> <label class="opt" data-opt="A"> <input name="q16" type="radio" value="A"/> <b>A.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_52.png"/> <br/> </label> <label class="opt" data-opt="B"> <input name="q16" type="radio" value="B"/> <b>B.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_53.png"/> <br/> </label> <label class="opt" data-opt="C"> <input name="q16" type="radio" value="C"/> <b>C.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_54.png"/> <br/> </label> <label class="opt" data-opt="D"> <input name="q16" type="radio" value="D"/> <b>D.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_55.png"/> <br/> </label> <br/> Correct answer: <b>D</b> <br/> <details class="solution"> <summary>Solution</summary> (d)<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_56.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_57.png"/><br><br></details>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_52.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_53.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_54.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_55.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_56.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_57.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>A</em> and <em>B</em> be two events in a probability space with <em>P</em> (<em>A</em> ) &gt; 0 and <em>P</em> (<em>B</em> ) &gt; 0.<br/>Which of the following statements is/are necessarily true? `,
+      image: "",
+      options: [
+        `If <em>A</em> and <em>B</em> are independent, they cannot be mutually exclusive`,
+        `If <em>A</em> and <em>B</em> are mutually exclusive, they cannot be independent.`,
+        `If <em>A</em> and <em>B</em> are independent, then <em>P</em> (<em>A</em> ∪ <em>B</em> ) = <em>P</em> (<em>A</em> ) + <em>P</em> (<em>B</em> ).`,
+        `If <em>A</em> and <em>B</em> are mutually exclusive, then <em>P</em> ( <em> <u>A</u> </em> ∩ <em> B<sup>C</sup> </em> ) = <em>P</em> (<em>A</em> ).`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_da_probability_and_statistics_1/img_58.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Probability and Statistics-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>X</em> be a continuous random variable with following probability density function. <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_1.png"/><br><br>Find the variance of <em>X</em> ? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_5.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If mean and variance of a binomial distribution are <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_9.png"/> respectively, the probability of occurrence <em>p</em> is? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_10.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_12.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_13.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given that <em>X</em> is a discrete random variable and following is its probability distribution: <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_15.png"/><br><br>Find the Standard deviation of <em>X</em> . `,
+      image: "",
+      options: [
+        `0.32`,
+        `0.48`,
+        `0.54`,
+        `0.64`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_16.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose <em>X</em> and <em>Y</em> are random variables such that<br/> <em>E</em> (<em>X</em> ) = 1, Var (<em>X</em> ) = 1, <em>E</em> (<em>Y</em> ) = 2, Var (<em>Y</em> ) = 2, Cov (<em>X</em> , <em>Y</em> ) = 1<br/> By using above values the following expressions are evaluated<br/> (i) <em>E</em> (<em>X</em> + 2<em>Y</em> ) = p<br/> (ii) <em>E</em> (<em>XY</em> ) = <em>q</em> <br/> (iii) Var(<em>X</em> – 2<em>Y</em> + 1) = r<br/> The value of <em>pq</em> + <em>r</em> is _________. `,
+      image: "",
+      options: [
+      ],
+      answer: 20,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_19.png"/> be a dataset, where μ represents the mean and σ<sup>2</sup> represents the variance of the<br/> dataset. Let the transferred data be given by <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_20.png"/> where a and b are constants.<br/> Consider the following statements about the new dataset.<br/> 1. The mean of the transferred dataset is given by aμ + <em>b</em> .<br/> 2. The variance deviation of the transferred dataset is a<sup>2</sup> σ<sup>2</sup> .<br/> 3. The standard deviation of the transformed dataset is –<em>a</em> σ.<br/> 4. If the original dataset has mode m. Then transformed dataset have mod –<em>am</em> + <em>b</em> .<br/>Which of the above statement is/are incorrect? `,
+      image: "",
+      options: [
+        `1, 3`,
+        `3`,
+        `1, 3, 4`,
+        `2, 4`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose we have 2 bags. Bag 1 contains 3 red and 7 green balls. Bag 2 contains 4 red and 8 green balls. A person tosses a coin and if it is heads goes to bag 1 and draws a ball. If it is tails, he goes to bag 2 and draws a ball. Given that the ball draw is red, then what is probability that it came from bag 1 (upto three decimal places)?`,
+      image: "",
+      options: [
+      ],
+      answer: 0.474,
+      solution: `[0.470 - 0.480]<br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_23.png"/> be a random vector where each component is an independent standard normal random variable i.e., <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_24.png"/> <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_25.png"/><br><br>If the variance of the second component of <em>Y</em> (<em>y</em> <sub>2</sub> ) is 33, then the number of possible values of a is `,
+      image: "",
+      options: [
+        `2`,
+        `1`,
+        `3`,
+        `4`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Box-I contains 6 red, 4 black balls, Box-II contain 4 red, 6 black and Box-III contain 5 red, 5 black balls respectively. One of the box is selected at random and a ball is drawn from it. If the ball drawn is red then the probability that it is selected from the first box ________?`,
+      image: "",
+      options: [
+      ],
+      answer: 0.4,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>X</em> be a continuous random variable uniformly distributed over the interval (2, 10).<br/> Compute the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_43.png"/>(Rounded off your answer to two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 34.04,
+      solution: `[34.04 - 34.09]<br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Number of tigers in a reserve is normally distributed with mean and variance respectively as 1200 and 9 × 10<sup>4</sup> . The probability of finding more than 1800 tiger is approx ________. (Upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.025,
+      solution: `[0.020 - 0.030]<br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_7.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A Jar-1 contains <em>m</em> red and <em>n</em> green marbles Jar-2 contains n red and m green marbles. It a marble is taken from 1<sup>st</sup> Jar and put into 2<sup>nd</sup> Jar, and then a marble is randomly picked from 2nd Jar, what is the probability that the marble selected is red? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_30.png"/>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_31.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `For a symmetric probability distribution (about a point), the mean and the median are equal.`,
+        `Mean is affected by extreme values more than median.`,
+        `Mode is always greater than mean in left-skewed data.`,
+        `Mean is always greater than median in any distribution.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a, b,c )`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two random variable <em>X</em> and <em>Y</em> are exponentially distributed, each having a mean of 0.75.<br/> Let Z = 2<em>X</em> – 2<em>Y</em> and let r denotes the correlation coefficient between <em>X</em> and <em>Y</em> .<br/>If the variance of Z is zero. Find the value of correlation coefficient (r) ________? `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>X</em> be a continuous random variable with the following probability density function: <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_34.png"/><br><br>Where <em>k</em> is a constant that normalizes the distribution. Now, assume that a defect <em>D</em> in a product occurs according to the following conditional probability. <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_35.png"/><br><br>Given that a product is defective, then probability that <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_36.png"/>is <br/> `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_40.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_41.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `In negative correlation, as one variable increases, the other variable decreases.`,
+        `In negative correlation, as one variable increases, the other variable does not decreases.`,
+        `In positive correlation, as one variable decreases, the other variable decreases.`,
+        `In positive correlation, as one variable increases, the other variable also decreases.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<br/> •In negative correction, when one variable increases, the other variable decreases.<br/> •In positive correlation, when one variable increases or decreases, the other variable also<br/>increases or decreases. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_45.png"/> is a zero mean unit variance Gaussian Random variable, then the value of E <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_46.png"/> is ______.<br/>(upto two decimal places) [E [⋅] represents expectation operator] `,
+      image: "",
+      options: [
+      ],
+      answer: 3.99,
+      solution: `[3.80 - 4.20]<br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <em>X</em> is a random variable with PDF given by<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_48.png"/> The value <em>k</em> and mean value of <em>X</em> are respectively. `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_49.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_50.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_51.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_52.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2026_da_probability_and_statistics_2/img_53.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - Probability and Statistics-3",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A company manufactures smartphones and on average 2% of the smartphones produced are defective. These smartphones are packed into boxes of 200 units. What is the probability that random selected box will contain 2 or more defective smartphones ________. (Round off upto<br/>two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.9085,
+      solution: `[0.90 - 0.98]<br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A sample of 50 people was selected, and their average height was found to be 170 cm with a Standard deviation of 10 cm. Construct a 95% confidence interval for the true average height of all people in the population. Given the Z-value for 95% confidence is 1.96. `,
+      image: "",
+      options: [
+        `(168.00, 172.00)`,
+        `(169.50, 170.50)`,
+        `(167.23, 172. 77)`,
+        `(169.00, 171.00)`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a random variable to which a Poisson, distribution is best fitted. It is noticed that <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_3.png"/>on the distribution plot. The variance of this distribution is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `[3.00 - 3.00]<br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If probability density function of a random variable <em>X</em> is <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_5.png"/><br><br>then, the probability <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_6.png"/>is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : As the value of α increases, the acceptance region in a hypothesis test decreases.<br/> <em>S</em> <sub>2</sub> : The rejection region increases as α increases.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/>When the significance level αincreases, the rejection region becomes larger because we are more wiling to reject the null hypothesis. As a result, the acceptance region becomes smaller. So, both statements are correct and describe the same inverse relation between αand the acceptance region. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a binomial distributed random variable <em>X</em> , the mean is 6 and the variance is 2. Find the probability <em>P</em> (<em>X</em> = 1) is `,
+      image: "",
+      options: [
+        `0.058`,
+        `0.029`,
+        `0.0029`,
+        `0.048`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If the density function of a continuous random variable <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_10.png"/>is given by <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_11.png"/><br><br>The value of a is _______.`,
+      image: "",
+      options: [
+      ],
+      answer: 0.25,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a survey of employee, the mean salary for the entire company is 80000. A random sample of 36 employees has a mean salary of 85000, with a sample standard deviation of 15000. What is the <em>t</em> -value? `,
+      image: "",
+      options: [
+        `2.5`,
+        `1.5`,
+        `2`,
+        `–2`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The null hypothesis is always rejected if the p-value is less than the significance level.<br/> <em>S</em> <sub>2</sub> : A one-tailed test can only test for deviations in one direction (either greater than or less than).<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "B",
+      solution: `<br/> •If the p-value is less than the significance level, we reject the null hypothesis. However, we do<br/> not always reject it —this is just the decision rule. So, <em>S</em> <sub>1</sub> is false.<br/> •A one-tailed test only tests for deviations in one direction, either greater than or less than.<br/> So, <em>S</em> <sub>2</sub> is true. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `The first moment about the origin of a Binomial distribution is equal to variance.`,
+        `The first moment about the origin for a Binomial distribution is the same as its expected value.`,
+        `A Chi-square test when the population variance is known and the sample size is small.`,
+        `The Chi-squared statistic increases as the observed frequencies deviate more from expected frequencies.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A biased coin with probability of heads <em>P</em> = 0.6 is tossed four times. Let the random variable <em>X</em> be<br/> the number of heads observed.<br/> Define a new random variable <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_14.png"/> i.e., the absolute deviation of X from.<br/> What is the expected value <em>E</em> [<em>Y</em> ] ________? (Rounded of answer to two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.19,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Ten fair six-sided dice are thrown simultaneously. What is the approximate probability that the total score lies between 30 and 40, inclusive?<br/> Given <em>P</em> (Z &lt;1.02) ≈ 0.8461 and P(Z &lt; –1.02) ≈ 0.1539`,
+      image: "",
+      options: [
+        `0.8461`,
+        `0.1539`,
+        `0.6922`,
+        `0.6074`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_16.png"/><br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a cloud server, tasks arrive according to a Poisson process at a rate of 6 task per minute let the arrival times be denoted as <em>T</em> <sub>1</sub> , <em>T</em> <sub>2</sub> , ....., Tn where Tk is the time (in minutes) of the <em>k</em> <sup>th</sup> task arrival.<br/> Let’s define the following events.<br/> • A : Exactly 2 task arrive in the first minute.<br/> • B : First arrival occurred before 30 seconds.<br/> Let <em>P</em> = Pr(<em>B</em> |<em>A</em> ), what is the value of <em>P</em> ? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_18.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_19.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_20.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_21.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The average salary in a company is claimed to be Php 920000 with a Standard deviation of Php 21000.<br/> A random sample of 49 employees is selected. The Z-value is 2.0 what is the sample mean <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_23.png"/> `,
+      image: "",
+      options: [
+        `92000`,
+        `98000`,
+        `94000`,
+        `84000`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_24.png"/><br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>X</em> be a continuous random variable uniformly distributed over the internal [2, 10] another random variable <em>Y</em> is defined as <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_26.png"/><br><br>What is the expected value of <em>E</em> [<em>Y</em> ]? `,
+      image: "",
+      options: [
+        `0.455`,
+        `0.565`,
+        `0.625`,
+        `0.35`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A university database stores student details in the relation:<br/> Student(SID, Name, Course, Grade) with functional dependency SID → Name, Course, Grade<br/> During a immigration process, each attribute of a record is independently corrupted with probability<br/> 0.01. A record is considered to violate the functional dependency if any attribute on the RHS<br/> (Name, Course, Grade) is corrupted, but SID remains unchanged.<br/> In a batch of 10 records, what is the approximate percentage (Round off upto two decimal value)<br/>that more than 2 records violate the functional dependency. `,
+      image: "",
+      options: [
+      ],
+      answer: 0.27,
+      solution: `[0.26 - 0.27]<br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_29.png"/>....., 10 be independent uniform (0, 1) random variables. Use an approximation to find <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_30.png"/><br><br>Given: P(Z ≤ 1.0954) ≈ 0.8633`,
+      image: "",
+      options: [
+      ],
+      answer: 0.1367,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_da_probability_and_statistics_3/img_31.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - General Aptitude-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a rare coin collection, there is one gold coin for every three non-gold coins. 10 more gold coins are added to the collection and the ratio of gold coins to non-gold coins becomes 1 : 2. Based on the information, the total number of coins in the collection now becomes ____.`,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the mirror image of following figure.<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_5.png"/>`,
+      image: "",
+      options: [
+        `I`,
+        `II`,
+        `III`,
+        `IV`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cuboid has six sides of different colours. The red side is opposite to black. The blue side is adjacent to white. The brown side is adjacent to blue. The red side is face down. Which one of the following would be the opposite to brown?`,
+      image: "",
+      options: [
+        `Red`,
+        `Black`,
+        `While`,
+        `Blue`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> There are six villages <em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> .<br/> <em>F</em> is 1 km to the west of <em>D</em> .<br/> <em>B</em> is 1 km to the east of <em>E</em> .<br/> <em>A</em> is 2 km to the north of <em>E</em> .<br/> <em>C</em> is 1 km to the east of <em>A</em> .<br/> <em>D</em> is 1 km to the south of <em>A</em> .<br/>Which three villages are in a line? `,
+      image: "",
+      options: [
+        `<em>A</em> , <em>C</em> , <em>B</em>`,
+        `<em>A</em> , <em>D</em> , <em>E</em>`,
+        `<em>C</em> , <em>B</em> , <em>F</em>`,
+        `<em>E</em> , <em>B</em> , <em>D</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The piechart given below shows the distribution of workforce by occupational category for country <em>X</em> in 1981 and 1995. Study the chart and answer the below question. <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_12.png"/><br><br>The percentage decrease in the number of Blue-Collar workers in the workforce of country <em>X </em> from 1981 to 1995 is `,
+      image: "",
+      options: [
+        `20%`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_14.png"/>`,
+        `35%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> 1. All artists are whimsical.<br/> 2. Some artists are drug addicts.<br/> 3. Frustrated people are prone to become drug addicts.<br/>From the above three statements, it may be concluded that `,
+      image: "",
+      options: [
+        `Artists are frustrated`,
+        `Some drug addicts are whimsical`,
+        `Whimsical people are generally frustrated`,
+        `All frustrated people are drug addicts`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A square paper is folded in a particular manner and a punch is made. When unfolded the paper appears as given below :<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_20.png"/><br><br>Select the manner in which the paper is folded and punch is made from the responses given.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_24.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The graph of <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_29.png"/>is given by `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_33.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following cubes in the answer figure cannot be made based on the unfolded cube in the question figure?<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_35.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_39.png"/>`,
+      ],
+      answer: "C",
+      solution: `<br/> From the given unfolded cube, star and dot appear opposite to each other and thus, cannot be<br/>adjacent to each other. Hence, the cube depicted in option (c) cannot be made. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The digits of a three digit number <em>x</em> are written in the reverse order to form another three digit number y. If <em>y</em> &gt; <em>x</em> and y – <em>x</em> is perfectly divisible by 7, then which of the following is maximum possible value of x? `,
+      image: "",
+      options: [
+        `108`,
+        `156`,
+        `208`,
+        `299`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Amar, Akbar and Anthony are friends, being looked after by a matron Farah. Amar weighs 50% more than Akbar and Anthony weighs 25% less than Amar. Farah weighs a third of the combined weight of three boys. All four together weigh 232 kg. The correct arrangement of the persons in the descending order of their weights is`,
+      image: "",
+      options: [
+        `Amar, Farah, Akbar, Anthony`,
+        `Farah, Amar, Akbar, Anthony`,
+        `Farah, Amar, Anthony, Akbar`,
+        `Amar, Farah, Anthony, Akbar`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> are cousins. No two cousins are of the same age, but all have birthdays on the same day of the same month. The Youngest is 17 years old and the oldest <em>E</em> is 22 years old. <em>F</em> is somewhere between <em>B</em> and <em>D</em> in age. <em>A</em> is older than <em>B</em> . <em>C</em> is older than <em>D</em> . <em>A</em> is one year<br/> older than <em>C</em> . Which one of the following is possible? `,
+      image: "",
+      options: [
+        `<em>D</em> is 20 years old`,
+        `<em>F</em> is 18 years old`,
+        `<em>F</em> is 19 years old`,
+        `<em>F</em> is 20 years old`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following figure and answer the item that follows:<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_7.png"/><br><br>A square is divided into four rectangles as shown above. The length of the sides of rectangles are natural numbers, and the areas of two rectangles are indicated in the figure. What is the length of each side of the square?`,
+      image: "",
+      options: [
+        `10`,
+        `11`,
+        `15`,
+        `cannot be determined as the given data insufficient`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> not necessarilly in that order, are sitting in six chairs regularly placed around a round table. It is observed that <em>A</em> is between <em>D</em> and <em>F</em> , <em>C</em> is opposite to <em>D</em> and <em>D</em> and <em>E</em> are not on neighbouring chairs. Which of the following pairs must be sitting on neighbouring chairs? `,
+      image: "",
+      options: [
+        `<em>A</em> and <em>B</em>`,
+        `<em>C</em> and <em>E</em>`,
+        `<em>B</em> and <em>F</em>`,
+        `<em>A</em> and <em>C</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_17.png"/>is `,
+      image: "",
+      options: [
+        `0`,
+        `0.4`,
+        `2.2`,
+        `4.4`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of 4-digit integers in the closed interval [2022, 4482] formed by using the digits 0, 2, 3, 4, 6, 7 is`,
+      image: "",
+      options: [
+      ],
+      answer: 569,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At a point on ground, the angle of elevation of a vertical tower, is found to be such that it’s tangent is <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_26.png"/> On walking 192 meters towards the tower, the tangent of the angle of elevation is found to be <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_27.png"/>The height of the tower is `,
+      image: "",
+      options: [
+        `160 meters`,
+        `180 meters`,
+        `240 meters`,
+        `260 meters`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_da_general_aptitude_1/img_28.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "TWT - General Aptitude-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the part (option) of the below sentence that contains an error :<br/>He was consulted seldom by his colleagues while making important decisions on financial matters. `,
+      image: "",
+      options: [
+        `He was consulted seldom`,
+        `Decisions on financial matters`,
+        `By his colleagues`,
+        `While making important`,
+      ],
+      answer: "A",
+      solution: `<br/> The adverb of frequency, “seldom,”should typically be placed before the main verb “consulted.”<br/> Thus, the correct sentence is:<br/>He was seldom consulted by his collegues while making important decisions on financial matters. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If MOBILE is written as ZAMSUM, how TUMOR can be written in that code?`,
+      image: "",
+      options: [
+        `BRAIN`,
+        `HGYAD`,
+        `GGXYA`,
+        `IHZBE`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given diagram, circle represents professionals, square represents dancers, triangle represents musicians and rectangle represents Europeans. Different regions in the diagram are numbered 1 to 11. Who among the following is neither a dancer nor a musician but is professional and not a European?<br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_3.png"/>`,
+      image: "",
+      options: [
+        `8`,
+        `11`,
+        `1`,
+        `10`,
+      ],
+      answer: "D",
+      solution: `<br/> The people who are neither dancers nor musicians but are professionals and not Europeans,<br/> means part of circle excluding common of circle with Triangle, square and rectangle i.e.<br/>Region “10 ”. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the correct alternative to fill in the blank in the sentence given below.<br/>Today student should be reconciled _____ the way things are changing. `,
+      image: "",
+      options: [
+        `with`,
+        `to`,
+        `for`,
+        `at`,
+      ],
+      answer: "A",
+      solution: `<br/> With is used with reconcile.<br/> Reconcile →To make oneself or another no longer opposed.<br/>Here, with is the right usage. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy:<br/>Horse : Neigh :: Bells : ? `,
+      image: "",
+      options: [
+        `Beat`,
+        `Chime`,
+        `Rustle`,
+        `Roar`,
+      ],
+      answer: "C",
+      solution: `<br/>A horse produces a neigh sound, similarly bells produce a chime sound. Therefore, the correct answer is Chime. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In questions no. 12 and 13, one/two statements are given followed by two/three conclusions. You have to consider the statements to be true even if they seem to be at variance from commonly known facts. You have to decide which of the given conclusions, if any, follows from the given statements.<br/> <strong>Statement:</strong> <br/> Sun is the source of light.<br/> <strong>Conclusions:</strong> <br/> I. Moon is not the source of light<br/>II. Light has only one source. `,
+      image: "",
+      options: [
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `Both conclusions (I) and (II) follow`,
+        `Neither conclusion (I) nor (II) follows`,
+      ],
+      answer: "D",
+      solution: `<br/> The statement only mentions sun as a source of light but it does not deny other sources (like Moon,<br/>bulbs, fire etc.) and it does not say sun is the only source. Therefore, both conclusions are wrong. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<strong>Statement:</strong> <br/> I. All cities are towns.<br/> II. Some cities are villages.<br/> <strong>Conclusions:</strong> <br/> I. All villages are towns.<br/> II. No village is a town.<br/>III. Some villages are towns. `,
+      image: "",
+      options: [
+        `Only conclusion (III) follows`,
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<br/> Some cities are villages, and all cities are towns. So, those villages (which are cities) are also<br/> towns. Hence, some villages are towns.<br/>So, only conclusion III is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following diagrams best depicts the relationship among Earth, Sea and Sun?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_7.png"/>`,
+      ],
+      answer: "D",
+      solution: `<br/> Sea is a part of the Earth and Sun is a separated celestial body, not a part of the earth. Thus,<br/>option (d) best depicts the relationship among Earth, Sea and Sun. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy.<br/>FLEXIBLE : RIGID : : CONFIDENCE : ? `,
+      image: "",
+      options: [
+        `Diffidence`,
+        `Indifference`,
+        `Cowardice`,
+        `Scare`,
+      ],
+      answer: "A",
+      solution: `<br/> “Flexible ”and “Rigid ”are antonyms. Diffidence meaning shyness or lack of confidence is the<br/>opposite of confidence. Thus, option (a) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Out of given alternatives, choose the one which best expresses the meaning of the word, Envoy`,
+      image: "",
+      options: [
+        `Carrier`,
+        `Chief`,
+        `Ambassador`,
+        `Receiver`,
+      ],
+      answer: "C",
+      solution: `<br/> The word “Envoy ”refers to a person who is sent as a representative, often on a diplomatic<br/> mission. An ambassador is a senior diplomat or envoy representing a country. So, “Ambassador ”<br/>best expresses the meaning of the word “Envoy ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Choose the word opposite in meaning for the underlined word:<br/> The hot summer afternoon made everyone feel <u>languid</u> and they sought refuge in the shade to escape the heat. `,
+      image: "",
+      options: [
+        `Listless`,
+        `Energetic`,
+        `Lethargic`,
+        `Sluggish`,
+      ],
+      answer: "B",
+      solution: `<br/> The word “Languid ”means lacking energy, weak, or slow-often due to fatigue, illness, or heat.<br/> In the context of the sentence, the hot summer afternoon made everyone feel fired and drained.<br/>Hence, “Energetic ”is the opposite in the meaning to “languid ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Select the alternative which is the best substitute of the sentence/word:<br/>Take away or alter the natural qualities of `,
+      image: "",
+      options: [
+        `Denature`,
+        `Unadulterated`,
+        `Authentic`,
+        `Limpid`,
+      ],
+      answer: "A",
+      solution: `<br/> Denature : Changed from its natural state.<br/> Unadulterated : Pure, not mixed or diluted with any different or extra elements.<br/> Authentic : Genuine, real, not fake or copied. An authentic document is the original, not a duplicate<br/> or forgery.<br/>Limpid : Clear, transparent, often used for liquids, but also can describe clear writing or thought. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If × stands for addition, <for +="" division,="" for="" subtraction,="">for multiplication, – for equal to, ÷ for greater than and = for less than, state which of the following expressions is true? </for>`,
+      image: "",
+      options: [
+        `3 × 2 <4 ÷ 16>2 + 4`,
+        `5 > 8 + 4 = 10 <4 × 2`,
+        `3 × 4 > 2 – 9 + 3 <3`,
+        `5 × 3 × 3 ÷ 8 + 4 × 1`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the following question, the passage/sentence is split into four parts A, B, C and D. These four parts are not given in their proper order. Read the sentence and find out which of the following four combinations is correct.<br/> A. Explained angrily<br/> B. The bricklayer<br/> C. Leaving the site<br/>D. His reasons for `,
+      image: "",
+      options: [
+        `BADC`,
+        `DCAB`,
+        `CBAD`,
+        `ADCB`,
+      ],
+      answer: "A",
+      solution: `<br/>The bricklayer explained angrily his reasons for leaving the site. Hence, the correct order is BADC. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The World Health Organisation is briefly called W.H.O. It is a specialised agency of the United Nations and was established in 1948.  International health workers can be seen working in all kinds of surroundings: in deserts, jungles, mountains, coconut groves, and rice fields. They help the sick to attain health and the healthy to maintain their health. This global health team assists the local health workers in stopping the spread of what are called communicable diseases, like cholera. These diseases can spread from one country to another and so can be a threat to world health. W.H.O. assists different national health authorities not only in controlling diseases but also in preventing them altogether. Total prevention of diseases is possible in a number of ways. Everyone knows how people, particularly children, are vaccinated against one disease or another. Similarly, most people are familiar with the spraying of houses with poisonous substances which kill disease-carrying insects.<br/>"It is a specialised agency of the United Nations and was established in 1948.” Here specialised means `,
+      image: "",
+      options: [
+        `expert`,
+        `extraordinary`,
+        `uncommon`,
+        `made suitable for a particular purpose`,
+      ],
+      answer: ["D"],
+      solution: `<br/> The word “specialised ”refers to something that is focused on a specific area or purpose rather<br/> than being general. In the sentence, W.H.O. is described as a specialised agency —meaning it is<br/> an agency that deals specifically with health matters, not with everything else. Thus, “made<br/> suitable for a particular purpose ”is the most accurate meaning.<br/> (A) expert: relates to skill, but “specialised ”here talks about focus, not expertise.<br/> (B) extraordinary: means very special or unusual —not the meaning here.<br/>(C) uncommon: means rare —not the intended meaning. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If ‘PUNCTUATION’ is coded as ‘QVODUVBUJPO’ and ‘SING’ as ‘TJOH’, then how is ‘PARLIAMENT’ coded?`,
+      image: "",
+      options: [
+        `QBSMJKNFMU`,
+        `QBSMJBNFOU`,
+        `QTBSMJOFOU`,
+        `QASTMJNFOU`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_da_general_aptitude_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Arrange the following four sentences P, Q, R and S in the proper sequence to form a meaningful<br/> paragraph starting from 1 and ending with 6.<br/> 1. Communication has been an important aspect all through the ages.<br/> P. E-mail is a convenient way to deliver any requested information.<br/> Q. Today instantaneous communication is vital.<br/> R. Voice is often easier than e-mail, but it is not as easy to create and send nor is it possible to send the same message to a large number of people in different places in the world.<br/> S. It is also a good way to communicate with multiple people at the same time; but e-mail is only one form for communication.<br/> 6. The other forms of faster and easier communication are being explored.<br/>Which one of the following is the correct sequence? `,
+      image: "",
+      options: [
+        `SQRP`,
+        `QPSR`,
+        `SPRQ`,
+        `RQSP`,
+      ],
+      answer: "B",
+      solution: `b`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Linear Algebra",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The rank of matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_1.png"/>is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let matrix <em>M</em> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_3.png"/> <br/> Find the product of eigen values of matrix <em> MM<sup>T</sup> </em> . `,
+      image: "",
+      options: [
+        `0`,
+        `28`,
+        `25`,
+        `32`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_4.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider <em>A</em> , a symmetric matrix satisfying <em>A</em> <sup>2</sup> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_6.png"/> denotes 3 × 3 identity matrix.<br/> What is the product of all singular values of <em>A</em> ? `,
+      image: "",
+      options: [
+        `9`,
+        `81`,
+        `27`,
+        `3`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following matrices is/are unitary matrix`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_14.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_15.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_16.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_17.png"/>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_19.png"/> <br/> Find the dimension of the vector space <em>W</em> ? `,
+      image: "",
+      options: [
+        `(<em>mr</em> – <em>n</em> )`,
+        `(<em>mr</em> – <em>nr</em> )`,
+        `<em>m</em> (<em>n</em> – <em>r</em> )`,
+        `<em>mn</em> – <em>n</em>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is a subspace of the real vector space <em>R</em> <sup>3</sup> ? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_21.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_22.png"/>`,
+        `Both (a) and (b)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>V</em> = [1, 2, 1, 2, 1]<sup>T</sup> and A = <em> VV<sup>T</sup> </em> . Compute the value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_27.png"/> are the eigenvalues of <em>A</em> ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 11,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Eigen vectors corresponding to different eigen values of a symmetric matrix are orthogonal.<br/> <em>S</em> <sub>2</sub> : Eigen vectors corresponding to different eigen values of a non-symmetric matrix are orthogonal.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>S</em> be the set of all <em>n</em> × <em>n</em> matrices over <em>R</em> with zero trace. Then `,
+      image: "",
+      options: [
+        `<em>S</em> is not a vector space.`,
+        `<em>S</em> is a vector space of dimension <em>n</em> – 1.`,
+        `<em>S</em> , together with the identity matrix, form a vector space.`,
+        `<em>S</em> is a vector space and it has a basis consisting of <em>n</em> <sup>2</sup> – 1 matrices.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given matrix:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_31.png"/><br><br>If det(A) = 96<br/>Find the value of x `,
+      image: "",
+      options: [
+        `0`,
+        `-1`,
+        `2`,
+        `3`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the matrix given below and select the correct statements given below:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_39.png"/>`,
+      image: "",
+      options: [
+        `‘<em>A</em> ’ is a involutory matrix`,
+        `‘<em>A</em> ’ is a idempotent matrix`,
+        `‘<em>A</em> ’ is a orthogonal matrix`,
+        `‘<em>A</em> ’ is a singular matrix`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_40.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the system of linear equation:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_61.png"/><br><br>If the <em>p</em> + <em>q</em> + <em>r</em> = 0, then the system of equation has `,
+      image: "",
+      options: [
+        `Unique solution`,
+        `No solution`,
+        `Trivial solutions`,
+        `Infinitely many solutions`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_62.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `What is the dimension of null space for the matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_69.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_70.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following 3 × 3 matrix decomposed using Doolittle’s method <em>A</em> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_80.png"/> into <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_81.png"/>then which of the following is/are correct? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_82.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_83.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_84.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_85.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_86.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements, which of the following statements is not necessarily true?`,
+      image: "",
+      options: [
+        `If <em>A</em> is an invertible <em>n</em> × <em>n</em> matrix, then for every <em>n</em> × 1 matrix <em>b</em> , the system of equations <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_94.png"/> has exactly one solution, namely <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_95.png"/>`,
+        `Let <em>A</em> and <em>B</em> be square matrices of the same size. If <em>AB</em> is invertible, then <em>A</em> and B must also be<br/>invertible.`,
+        `The transpose of a lower triangular matrix is upper triangular, and the transpose of upper triangular matrix is lower triangular.`,
+        `If <em>B</em> and <em>C</em> are both inverses of the matrix <em>A</em> , then <em>B</em> does not have to be the same as <em>C</em> .`,
+      ],
+      answer: "D",
+      solution: `<br/> An invertible matrix has exactly one inverse.<br/> ∴<em>B</em> has to be equal to <em>C</em> . `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are true?`,
+      image: "",
+      options: [
+        `If sum of all the elements in each column (or in each row) is a unique constant k, then k will be one of the eigen value of that square matrix.`,
+        `If in a system of equation <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_97.png"/>column vectors of coefficient matrix are linearly independent, then system will have infinitely many solution.`,
+        `For a matrix <em>A</em> , if 0 is one of the eigen value then it is not invertible.`,
+        `Number of non-zero eigen value of matrix <em>A</em> ≤ ρ(<em>A</em> ).`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_98.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following set is/are linearly dependent?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_8.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_9.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_10.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_11.png"/>`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_12.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_24.png"/> be a real 3 × 3 matrix.<br/>Which of the following statements are correct? `,
+      image: "",
+      options: [
+        `The rank of matrix <em>M</em> is 2.`,
+        `The nullity of matrix <em>M</em> is 1.`,
+        `The null space of <em>M</em> is spanned by the vector [–2, 0, 1]<sup>T</sup> .`,
+        `The basis for the null space of <em>M</em> contains two linearly independent vectors.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_25.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following vector has greatest norm, where norm <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_33.png"/>is a function, defined on a vector space, that associate to each vector a measure of its length. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_34.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_35.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_36.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_37.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Given matrix:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_42.png"/><br><br>Rows are linearly dependent.<br/>The sum of α + β is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_43.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_44.png"/> <br/> How many statements are true?`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Find the value of x in the matrix <em>A</em> <sup>–1</sup> for the following matrix <em>A</em> and <em>A</em> <sup>–1</sup> . <br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_46.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: -2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_47.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_49.png"/>is polynomial with real coefficient, when <br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_50.png"/><br><br>Then, dimension <em>d</em> of vector space <em>W</em> satisfies `,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `4`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let A be a real matrix of size <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_52.png"/> and let nullity (<em>A</em> ) denote the dimension of its null space.<br/>Which of the following statement(s) are true? `,
+      image: "",
+      options: [
+        `If <em>n</em> > <em>m</em> , then the null space of a has dimension at least <em>n</em> – <em>m</em> .`,
+        `For matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_53.png"/> either <em>AB</em> may be intangible where <em>A</em> and <em>B</em> are not null matrix.`,
+        `If <em>n</em> <<em>m</em> , then non homogeneous linear system <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_54.png"/>`,
+        `If the rank of <em>A</em> is equal to <em>m</em> , then <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_55.png"/>has only the trivial solution.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_56.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the given two system of linear equations:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_57.png"/><br><br>Which of the following is correct?`,
+      image: "",
+      options: [
+        `If <em>L</em> <sub>1</sub> has non-zero determinant, then <em>L</em> <sub>2</sub> has infinitely many solutions.`,
+        `If <em>L</em> <sub>2</sub> has zero determinant value, then <em>L</em> <sub>1</sub> may have unique solutions.`,
+        `Both <em>L</em> <sub>1</sub> and <em>L</em> <sub>2</sub> are representing same system of linear equations.`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The system of equations<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_59.png"/><br><br>has infinitely solution. Then the value of a and μ are.`,
+      image: "",
+      options: [
+        `a = 5, μ = 11`,
+        `a = –5, μ = –11`,
+        `a = 3, μ = 11`,
+        `a = –3, μ = 11`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_60.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the matrix:<br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_64.png"/><br><br>Which of the following is correct for eigen values <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_65.png"/> `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_66.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_67.png"/>`,
+        `Matrix A has exactly three linearly independent eigen vectors.`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_68.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The eigen vectors of the matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_71.png"/> What is <em>a</em> – <em>b</em> ? `,
+      image: "",
+      options: [
+      ],
+      answer: 0.33,
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_72.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>A</em> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_73.png"/> be 2 × 2 matrix and corresponding eigen values of <em>A</em> are 2 and –5, find the eigen vectors of matrix? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_74.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_75.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_76.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_77.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_78.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_79.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The eigen vectors of <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_87.png"/>is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_88.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_89.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_90.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_91.png"/>`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_92.png"/><br><br><img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>A</em> and <em>B</em> be two matrices of size <em>n</em> × <em>n</em> with real-valued entries. Consider the following<br/> statements and select the one which must be true for <em>A</em> . `,
+      image: "",
+      options: [
+        `If <em>AB</em> = <em>B</em> , then <em>A</em> must be the identity matrix.`,
+        `If <em>A</em> <sup>–1</sup> = A then <em>A</em> must be the identity matrix.`,
+        `If <em>A</em> is an idempotent (i.e. <em>A</em> <sup>2</sup> = <em>A</em> ) non-singular matrix, then <em>A</em> must be the identity matrix.`,
+        `All of the above`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_96.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_99.png"/> <br/> Which of the following is correct?`,
+      image: "",
+      options: [
+        `<em>W</em> is a subspace of <em>V</em>`,
+        `<em>W</em> is not a subspace of <em>V</em>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_100.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_101.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let matrix <em>A</em> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_103.png"/> <br/> Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The eigen values 2 has algebraic multiplicity 2, and only one linearly independent eigen vector exists.`,
+        `The matrix <em>A</em> has 3 district eigen values.`,
+        `The eigen values are imaginary.`,
+        `The eigen values are real.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_1_part_syllabus_gate_2026_da_linear_algebra/img_104.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Calculus and Optimization",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_1.png"/> Which of the following is true about<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_2.png"/> `,
+      image: "",
+      options: [
+        `1`,
+        `e<sup>–1/2</sup>`,
+        `<em>e</em> <sup>1/2</sup>`,
+        `Limit does not exist`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_4.png"/><br><br>The composition of f and g i.e. <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_5.png"/> and gof(x) in the interval (–∞, 0),<br/>how many are discontinuous ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find the limit <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_7.png"/> `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_8.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_9.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_10.png"/>`,
+        `0`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The values of x for which the function<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_12.png"/>is NOT continuous are `,
+      image: "",
+      options: [
+        `4`,
+        `-4`,
+        `-1`,
+        `1`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_14.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `What is the value of the following limit?<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_16.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a function <em>f</em> which is continuous and differentiable in the internal [–5, 3] such that for every x in the internal f(x) is strictly decreasing function. If <em>f</em> (–5) is –3, then maximum integral value of <em>f</em> (3) is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: -4,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of the integral given below is<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_22.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_23.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_24.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_25.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_26.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_28.png"/>is __________. `,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_30.png"/> is continuous, then the value of <em>q</em> – <em>p</em> is _______. `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `[1 - 1]<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following function:<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_32.png"/><br><br>Which of the following is true at x = –2?`,
+      image: "",
+      options: [
+        `Continuous but not differentiable`,
+        `Differentiable and continuous both`,
+        `Differentiable but not continuous`,
+        `neither continuous nor differentiable`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A function y = 7<em>x</em> <sup>2</sup> + 12<em>x</em> is defined over an open interval <em>x</em> = (1, 3). At least at one point is this interval, <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_49.png"/>is exactly `,
+      image: "",
+      options: [
+        `26`,
+        `40`,
+        `62`,
+        `54`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A function <em>f</em> (<em>x</em> ) is defined as <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_58.png"/> <br/> For <em>f</em> (<em>x</em> ) to be a valid probability density function the value of <em>A</em> must be `,
+      image: "",
+      options: [
+        `8`,
+        `16`,
+        `18`,
+        `22`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_78.png"/> `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_79.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_80.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_81.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_82.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_83.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>X</em> be a discrete random variable that takes values 0, 1, 2, ....., n (where <em>n</em> ≥ 2) with equal probability. <br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_90.png"/><br><br>What is the minimum value of <em>f</em> (<em>k</em> ). Where <em>n</em> is even `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_91.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_92.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_93.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_94.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_95.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function, <em>f</em> (<em>x</em> ) = 2<em>x</em> <sup>3</sup> – 3<em>x</em> <sup>2</sup> – 36<em>x</em> + 10, has a local maximum value at ‘<em>x</em> ’ equal to `,
+      image: "",
+      options: [
+        `-2`,
+        `-1`,
+        `3`,
+        `4`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_18.png"/> `,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `2`,
+        `Limit does not exists`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_19.png"/><br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_34.png"/> `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_35.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_36.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_37.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_38.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a function <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_40.png"/> for a natural number <em>n</em> ≥ 1 and 0 ≤ <em>x</em> ≤ 1. The maximum possible value of <em>f</em> (<em>x</em> ) is? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_41.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_42.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_43.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_44.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>f</em> (<em>x</em> ) = 3<em>x</em> <sup>2</sup> – 9<em>x</em> <sup>2</sup> + 9<em>x</em> + 3. The maximum value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_46.png"/>over the internal [–1, 2] is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 18,
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_47.png"/><br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_51.png"/> <br/> Find <em>a</em> and <em>b</em> such that <em>f</em> (<em>x</em> ) is continuous and differentiable at <em>x</em> = 1. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_52.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_53.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_54.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_55.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_56.png"/><br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_57.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following function:<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_60.png"/><br><br>Which of the following is correct for <em>f</em> (<em>x</em> )? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_61.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_62.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_63.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_64.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_65.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_66.png"/><br><br>Which of the following statements are true?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_67.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_68.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_69.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_70.png"/>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_71.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following function:<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_72.png"/><br><br>Which of the following value of c, for which function is continuous for <em>x</em> = 0. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_73.png"/>`,
+        `0`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_74.png"/>`,
+        `All real values`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_75.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following graph for first derivation of <em>f</em> (<em>x</em> ) function: <br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_76.png"/><br><br>Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `<em>f</em> (<em>x</em> ) have maxima at <em>B</em> , <em>D</em> and <em>E</em> points.`,
+        `<em>f</em> (<em>x</em> ) have minima at <em>A</em> and <em>E</em> points.`,
+        `<em>f</em> (<em>x</em> ) is non-decreasing from points <em>B</em> to <em>D</em> .`,
+        `Point <em>c</em> is inflection point in <em>f</em> (<em>x</em> ).`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_77.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_84.png"/>Find the value of ‘a’ for which f(x) is maximized. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_85.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_86.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_87.png"/>`,
+        `No value of ‘a’ exist`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_88.png"/><br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_89.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is result of  <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_96.png"/> `,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_97.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_98.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a real-valued function <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_100.png"/> denotes the absolute value of x ∈ <em>R</em> . Which of the following statements is/are true about the function f and its derivative <em>f</em> ′? `,
+      image: "",
+      options: [
+        `<em>f</em> is not continuous at <em>x</em> = 0`,
+        `<em>f</em> is differentiable at every <em>x</em> ∈ [–1, 1]`,
+        `<em>f</em> does not achieve maximum at <em>x</em> = 0, however <em>f</em> ′(0) = 0.`,
+        `<em>f</em> attains its minimum at <em>x</em> = 1, and f ′(1) = 0.`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a strictly increasing differentiable function f whose domain is real numbers, i.e. for any<br/> <em>x</em> , <em>y</em> ∈ <em>R</em> with <em>x</em> <y <em="" then="">f (<em>x</em> ) &lt;<em>f</em> (<em>y</em> ). Consider any three numbers <em>a</em> , <em>b</em> , <em>c</em> , such that <em>a</em> &lt;<em>c</em> &lt;<em>b</em> and<br/> a ≠ b ≠ c, following are two statements for this consideration:<br/> S<sub>1</sub> : There can be the situation where <em>f</em> ′(<em>c</em> ) &lt;0.<br/> S<sub>2</sub> : <em>f</em> ′(<em>b</em> ) &gt; <em>f</em> ′(<em>a</em> ) satisfied always.<br/>Which of the above statements are correct? </y>`,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> only`,
+        `<em>S</em> <sub>2</sub> only`,
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> both`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The value of <em>f</em> ′(1), if <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_103.png"/>is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: -0.22,
+      solution: `[-0.25 - -0.20]<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Mean value of y = 3<em>x</em> <sup>2</sup> + 5<em>x</em> + 2 between points <em>x</em> = –1 and <em>x</em> = 2? `,
+      image: "",
+      options: [
+        `12`,
+        `9`,
+        `7.5`,
+        `10`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_105.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the mean value theorem <em>f</em> (<em>b</em> ) – <em>f</em> (<em>a</em> ) = (<em>b</em> – <em>a</em> ) <em>f</em> ′(<em>c</em> ) determining <em>c</em> lying between <em>a</em> and <em>b</em> , if <em>f</em> (<em>x</em> ) = <em>x</em> (<em>x</em> – 1) (<em>x</em> – 2), a = 0 and <em>b</em> = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_106.png"/> <br/> (Upto 2 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.23,
+      solution: `[0.22 - 0.24]<br><br><img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_107.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A function is defined by <img align="absmiddle" alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_108.png"/>Which one of the following statements is true about this function? `,
+      image: "",
+      options: [
+        `function is decreasing for (–2, –1).`,
+        `function has a minima for x = –1.`,
+        `function has a maxima for x = 2.`,
+        `function is decreasing for (–1, 2).`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_2_part_syllabus_gate_2026_da_calculus_and_optimization/img_109.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Probability and Statistics",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A car manufacturing unit produces an average of 27 car per hour. What is the probability that no car is manufactured in a particular 3 hr period?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_1.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_2.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_3.png"/>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A random sample of 100 fluorescent light bulb has an average lifetime of 1570 hours, with a sample standard deviation of 120 hours. In two tailed hypothesis test at the 5% level of significance.<br/> The calculated test statistics is found to be <em>t</em> = –2.5.<br/> Find the value of population mean (μ) that was assumed in the NULL hypothesis.<br/> (Given <em>t</em> <sub>0.025</sub> = 1.96 `,
+      image: "",
+      options: [
+        `1800`,
+        `1600`,
+        `1575`,
+        `1875`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The heights of female students attending a GATE coaching have mean of 168.0 cm and a standard deviation of 4.5 cm. The heights can be modelled by a normal distribution. Find the probability that height of a randomly selected female student attending this coaching is less than 172.5 cm ________. (Upto 3 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.841,
+      solution: `[0.840 - 0.845]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A certain random variable has the CDF:<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_7.png"/><br><br>The value of <em>P</em> (5 &lt;<em>X</em>≤ 7) is _______. (Rounded off to two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.24,
+      solution: `[0.20 - 0.28]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following properties about cumulative distribution function <em> F<sub>X</sub> </em> (<em>x</em> ) of a random variable <em>X</em> is/are correct? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_9.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_10.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_11.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_12.png"/>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following distributions is symmetric about its mean?`,
+      image: "",
+      options: [
+        `Z-distribution`,
+        `<em>t</em> -distribution`,
+        `Both (a) and (b)`,
+        `Chi-squared distribution`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the letters of the word ‘ASSASIN’ are rearranged, the probability that three S’s come simultaneously in the rearranged word is`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_14.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_15.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_16.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_17.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A government official finds that on an average, 16% of tender applications received are rejected because they are either incomplete or incorrect. The probability that a file containing 8 tender applications will face at least one rejection is _________.`,
+      image: "",
+      options: [
+      ],
+      answer: 0.7521,
+      solution: `[0.73 - 0.77]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_19.png"/><br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The natural numbers are the possible values of a random variable X i.e., <em> x<sub>n</sub> </em> = <em>n</em> , <em>n</em> = 1, 2, 3, .....<br/> These numbers occur with probability <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_25.png"/> The expected value of <em>X</em> is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_26.png"/>`,
+        `1`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_27.png"/>`,
+        `2`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A fair dice is rolled six times. What is the probability that the largest number rolled is 5?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_29.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_30.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_31.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_32.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given that the population has a Standard deviation of (σ) = 4 and a sample of size (n) = 64, the calculated Z-test (Z) is 2. Under the null hypothesis <em>H</em> <sub>0</sub> : μ = 80.<br/> Find the sample mean <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_46.png"/> `,
+      image: "",
+      options: [
+        `79`,
+        `81`,
+        `82`,
+        `80`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_47.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A sample of size n = 16 has sample mean overline <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_65.png"/> = 12.5<br/> The population mean is μ = 11.0 and the computed t-statistic is t = 2.0.<br/>Find the sample Standard deviation s. `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_66.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a two-category experiment, the observed frequencies are 45 and 55. The expected frequency of category B is 50, and the chi-square statistic χ<sup>2</sup> is 2. Find the expected frequency for category A. `,
+      image: "",
+      options: [
+      ],
+      answer: 54,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_79.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose a factory has machine I, II and III that produce XYZ phones. The factory’s record shows that Machine I, II and III produce, respectively 2%, 1% and 3% defective XYZ phones. Out of total production, Machine I, II, and III produce, respectively 35%, 25% and 40% of all XYZ phones a XYZ phone is selected at random from the factor if given that phone is defective what is the conditional probability that it was produced by Machine III? [Upto 2 decimal places]`,
+      image: "",
+      options: [
+      ],
+      answer: 0.56,
+      solution: `[0.55 - 0.56]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_80.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The joint pdf of <em>X</em> and <em>Y</em> is given by <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_85.png"/><br><br>where a = 3 and b = 4. The value of constant k is _______.`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_86.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider four students in a class, and their marks in exam was 40, 50, 60 and 70. The Standard deviation of this data set is ________. (Upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 11.18,
+      solution: `[11.00 - 12.00]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>X</em> and <em>Y</em> be two discrete random variables such that: <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_21.png"/><br><br>Let Z = X + Y defined as a new random variable.<br/>Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_22.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_23.png"/>`,
+        `Var(Z) = 0.85, if X and Y are independent random variables`,
+        `<em>X</em> and <em>Y</em> cannot be mutually exclusive to make Var(Z) valid`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A fair coin is tossed multiple times. Let <em>X</em> denote the minimum number of trails required to<br/> obtain either HT or TH on coin.<br/>What is the expected value of X? `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A random variable <em>X</em> has probability density function <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_35.png"/><br><br>Given the expected value <em>E</em> (<em>X</em> ) = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_36.png"/> the Pr[<em>X</em> &lt;0.5] is ________. (Upto 2 decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.25,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_37.png"/><br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>P</em> (<em>E</em> ) denote the probability of event <em>E</em> . Given that <em>P</em> (<em>A</em> ) = <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_39.png"/> then which of the following is/are true? (<em>A</em> and <em>B</em> are independent) `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_40.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_41.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_42.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_43.png"/>`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If the average length of the phone call at a public telephone booth is of 8 minutes and someone arrives immediately ahead of you, and starts calling then probability (you will have to wait between 8 to 24 min) = ?`,
+      image: "",
+      options: [
+        `0.318`,
+        `0.232`,
+        `0.417`,
+        `0.268`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A random variable <em>X</em> is defined by following PDF : <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_48.png"/><br><br>Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_49.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_50.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_51.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_52.png"/>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The probability of a man hitting a target in one fire is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_54.png"/> The number of times at least he must fire at the target in order that his chance of hitting the target at least once will exceed <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_55.png"/>will be `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_56.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A waiter breaks on an average 6 plates/day in a hotel. Then find the probability that waiter will break fewer than 3 plates on a particular day.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_57.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_58.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_59.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_60.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_61.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A researcher claims that more than 65% of college students prefer online learning over in-person classes.<br/> A previous study found that the proportion was 0.65.<br/> In a recent survey of <em>n</em> = 2500 students, <em>x</em> = 1700 said they prefer online learning.<br/>Which of the following hypothesis pairs should be used to test the claim? <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_62.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider 4 similar boxes A, B, C and D. A is empty, B contains one green and one blue ball,<br/> C contains one red and one blue ball, and D contains one red and one green ball. We randomly<br/> select a box. <em>E</em> <sub>1</sub> , <em>E</em> <sub>2</sub> and <em>E</em> <sub>3</sub> be the events that selected box contains red, green and blue ball respectively.<br/>Which of the following statements is/are incorrect? `,
+      image: "",
+      options: [
+        `<em>E</em> <sub>1</sub> and <em>E</em> <sub>2</sub> are independent events.`,
+        `<em>E</em> <sub>1</sub> and <em>E</em> <sub>3</sub> are independent events.`,
+        `<em>E</em> <sub>2</sub> and <em>E</em> <sub>3</sub> are independent events.`,
+        `<em>E</em> <sub>1</sub> , <em>E</em> <sub>2</sub> and <em>E</em> <sub>3</sub> are independent events.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em> X<sub>n</sub> </em> be a sequence of discrete random variable where <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_67.png"/><br><br>Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_68.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_69.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_70.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_71.png"/>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_72.png"/><br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_73.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>X</em> and <em>Y</em> are two Gaussian random variables with <em>E</em> (<em>X</em> ) = <em>E</em> (<em>Y</em> ) = 0 and <img align="absmiddle" alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_74.png"/> and<br/>correlation coefficient between X and Y is 0.25. Let the random variable W be defined as : <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_75.png"/><br><br>where α is a positive real constant. The value of α which makes <em>X</em> and <em>W</em> independent is `,
+      image: "",
+      options: [
+        `2`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_76.png"/>`,
+        `3`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_77.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_78.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A fair coin is tossed <em>n</em> times independently. Let the random variable <em>X</em> denote the number of times two consecutive head (HH) appear in the sequence of tosses.<br/> What is the expected value of <em>X</em> , <em>E</em> (<em>X</em> )? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_81.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_82.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_83.png"/>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two independent random variables <em>X</em> and <em>Y</em> are identical and uniformly distributed in the range [0, 2]. The probability that min[<em>X</em> , <em>Y</em> ] is less than 1 is equal to _________. `,
+      image: "",
+      options: [
+      ],
+      answer: 0.75,
+      solution: `[0.74 - 0.76]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_87.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose that a book of 1200 pages contains 80 printing mistakes. Assume that these errors are randomly distributed throughout the book and x, the number of errors per page has a Poisson distribution. The probability that 15 pages selected at random will be free of error is _________.<br/>(correct upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.37,
+      solution: `[0.35 - 0.38]<br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A fair six-sided die is rolled twice. Let the outcomes of the first and second rolls be denoted by <em>X</em> and <em>Y</em> . <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_89.png"/><br><br>Which of the following is incorrect?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_90.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_91.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_92.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_93.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The joint probability density function of two random variables <em>X</em> and <em>Y</em> is given by, <br><br><img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_96.png"/><br><br>The value of <em>k</em> will be `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_97.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_98.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_99.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_100.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_3_part_syllabus_gate_2026_da_probability_and_statistics/img_101.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Programming, Data Structures and Algorithms",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following Python code:<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_1.png"/><br><br>What will the output of the above code?`,
+      image: "",
+      options: [
+        `9`,
+        `8`,
+        `10`,
+        `11`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A queue is implemented using two stack such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the queue)?`,
+      image: "",
+      options: [
+        `Both operations can be performed in Ο(1) time.`,
+        `At most one operation can be performed in Ο(1) time but the worst case time for the other operation will be Ο(n).`,
+        `The worst case time complexity for both operations will be Ω(<em>n</em> ).`,
+        `Worst case time complexity for both operations will be Ω(log <em>n</em> ).`,
+      ],
+      answer: ["B"],
+      solution: `<br/> ENQUEUE operation will take Ο(1) time.<br/> DEQUEUE operation will take Ο(n) time for first element after that each element will take Ο(1)<br/>time. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A doubly linked list is declared as<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_5.png"/><br><br>Where Fwd and Bwd represent forward and backward links to adjacent elements of the list.<br/> Which of the following segments of code deletes the element pointed to by X from the doubly<br/>linked list, if it is assumed that X points to neither the first nor the last element of the lists? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_6.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_7.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_8.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_9.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Assume stack A has the entries <em>p</em> , <em>q</em> and <em>r</em> [with p on top and r bottom]. Initially stack B is empty.<br/> An entry popped out of stack A can be printed immediately or pushed to stack B. An entry<br/> popped out of stack B can only be printed.<br/>What is the least number of stack permutations of input sequence that start with a particular letter? `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given the postfix expression:<br/> 6 4 ∗ 18 3 / + 5 –<br/>Determine the final value of the expression after evaluation, as well as the maximum size of the stack during the process. `,
+      image: "",
+      options: [
+        `28, 4`,
+        `25, 4`,
+        `25, 3`,
+        `28, 3`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following statements about Python data structures:<br/> <em>S</em> <sub>1</sub> : The list data structure preserves insertion order.<br/> <em>S</em> <sub>2</sub> : A dictionary is mutable, and its insertion order is preserved.<br/> <em>S</em> <sub>3</sub> : A dictionary is immutable, and its insertion order is not preserved.<br/>How many of the above statements are true? `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `2`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In Binary search tree deletion of any internal node having left and right child both, we need inorder successor of a node (deleted node). Which of the following is true about inorder successor needed in deletion operation?`,
+      image: "",
+      options: [
+        `Inorder successor is always either leaf node or a node with empty right child.`,
+        `Inorder successor maybe a an ancestor of the node.`,
+        `Inorder successor is always a leaf node.`,
+        `Inorder successor is always either a leaf node or a node with empty left child.`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `How many 9 node binary trees with items 1 to 9 have identical post order and inorder traversal?`,
+      image: "",
+      options: [
+      ],
+      answer: 362880,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following represents the number of labeled binary trees with ‘<em>n</em> ’ node, which have same preorder? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_17.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_18.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_19.png"/>`,
+        `Can not find out`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_20.png"/><br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <em>f</em> (<em>n</em> ) = Ω(<em>n</em> ), <em>g</em> (<em>n</em> ) = Ο(<em>n</em> ) and <em>h</em> (<em>n</em> ) = θ(<em>n</em> ). Then what is the [ <em>f</em> (<em>n</em> ) +<em>g</em> (<em>n</em> )] ⋅ <em>h</em> (<em>n</em> )? `,
+      image: "",
+      options: [
+        `Ω(<em>n</em> <sup>2</sup> )`,
+        `Ο(<em>n</em> )`,
+        `θ(<em>n</em> )`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_42.png"/> <br/> When you solve the above recurrence relation using recursive tree method, what is the maximum height of the tree obtained?`,
+      image: "",
+      options: [
+        `θ(log log <em>n</em> )`,
+        `θ(log <em>n</em> )`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_43.png"/>`,
+        `θ(<em>n</em> )`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following Python code:<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_45.png"/><br><br>What will be the output of the above code?`,
+      image: "",
+      options: [
+        `27, 2`,
+        `10, 3`,
+        `31, 3`,
+        `28, 2`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following options are correct with respect to the following statement.<br/> <em>S</em> <sub>1</sub> : A depth-first search of a directed graph always produces the same number of tree edges (i.e. independent of the order in which the vertices are provided and independent of the order of the adjacency lists).<br/> <em>S</em> <sub>2</sub> : If a topological sort exists for the vertices in a directed graph, then a DFS on the graph will produce no back edges. `,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> is true only`,
+        `<em>S</em> <sub>2</sub> is true only`,
+        `Both are true`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: `<br/> <em>S</em> <sub>1</sub> is False. The DFS forest may contain different numbers of trees (and tree edges) depending on the starting vertex and upon the order in which vertices are searched.<br/> Consider the example below. If the DFS starts at a, then it will visit <em>b</em> next, and (<em>a</em> , <em>b</em> ) will become a tree edge. But if the DFS visits <em>b</em> first, then a and b become separate trees in the DFS forest, and (<em>a</em> , <em>b</em> ) becomes a cross edge.<br/> <em>S</em> <sub>2</sub> is True. Both parts of the statement hold if and only if the graph is acyclic. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is correct statement?`,
+      image: "",
+      options: [
+        `Intermediate result of Kruskal Algorithm is always forest.`,
+        `Intermediate result of Prim’s Algorithm is always forest.`,
+        `Intermediate result of Kruskal Algorithm is may be forest.`,
+        `Intermediate result of Prim’s Algorithm is may be forest.`,
+      ],
+      answer: "C",
+      solution: `<br/> Intermediate result of Prim ’s algorithm is always connected but Kruskal ’s algorithm may produce<br/>forest. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In an weighted, directed connected graph, the shortest path between every pair of nodes in graph is computed most efficiently in terms of running time complexity, is given by which of the following algorithm?`,
+      image: "",
+      options: [
+        `Applying DFS algorithm`,
+        `Applying Dijkstra’s algorithm`,
+        `Applying Bellman-Ford algorithm`,
+        `Applying Floyd-Warshall algorithm`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>G</em> = (<em>V</em> , <em>E</em> ) be a tree, let <img align="absmiddle" alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_56.png"/> and consider the graph obtained from <em>G</em> by adding the edge <img align="absmiddle" alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_57.png"/> <br/> Consider the following statements:<br/> <em>S</em> <sub>1</sub> : <em>G</em> ′ has exactly one simple cycle.<br/> <em>S</em> <sub>2</sub> : If we remove any the edges on the unique cycle from <em>G</em> ′, we obtain a tree.<br/>The number of correct statements from above is/are ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `What will be the output of the below code?<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_3.png"/>`,
+      image: "",
+      options: [
+        `MADECSEIT`,
+        `MADEEASYIT`,
+        `MADESYDA`,
+        `MADEEASYDA`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let ‘T’ be a rooted Binary tree above vertices are labelled with symbols 1, 2, 3, 4, 5, 6, 7, 8.<br/> Suppose the inorder and postorder traversal of T produces the following sequences.<br/> In-order: 1, 2, 3, 4, 5, 6, 7, 8<br/> Post-order: 1, 3, 2, 5, 6, 8, 7, 4<br/> Which of the following is correct with respect to <em>T</em> ? `,
+      image: "",
+      options: [
+        `‘<em>T</em> ’ has 5 leaf nodes`,
+        `Right subtree of the root node satisfies AVL property`,
+        `‘<em>T</em> ’ satisfies basic heap properties`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_11.png"/><br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement/statements is/are true?`,
+      image: "",
+      options: [
+        `Ternary search is more efficient than binary search for searching an element in the array.`,
+        `Strassen’s matrix multiplication method is a dynamic programming technique.`,
+        `Randomized quick sort is not an improvement over quick sort (traditional) for an already sorted array.`,
+        `Inorder traversal of a binary search tree is always in ascending order.`,
+      ],
+      answer: ["D"],
+      solution: `<br/> (a) False: Ternary search takes more time when compared to binary search.<br/> (b) False: Strassen ’s matrix multiplication is a divide and conquer technique.<br/>(c) False: Randomized quick sort handles a sorted array better than traditional quick sort. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a hash table of size 11. Let h(k) = k mode 11 be the has function used. A sequence of records with keys {33, 68, 62, 47, 48, 60, 104, 23, 19, 120, 87} is inserted into an initially empty hash table, the bins of which are indexed from zero to ten.<br/>Which of the following is true ? `,
+      image: "",
+      options: [
+        `If, collisions are resolved by linear probing then maximum number of comparisons in worst case can be 2.`,
+        `If chaining is used to resolve collision, the average chain length will be 1.09.`,
+        `Both of these`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the two linked list L1 and L2 given below each of length <em>m</em> and <em>n</em> <br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_23.png"/><br><br>What will be the worst case time complexity to find address of node ‘<em>X</em> ’, where both linked list will intersect with each other? `,
+      image: "",
+      options: [
+        `Ο(<em>m</em> log <em>n</em> )`,
+        `Ο(<em>m</em> + <em>n</em> )`,
+        `Ο(<em>n</em> log <em>m</em> )`,
+        `Ο(<em>n</em> <sup>2</sup> log <em>m</em> )`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given input sequence is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_25.png"/> respectively, Which of the following permutations can be<br/>obtained in the output (in same order) using stack? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_26.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_27.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_28.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_29.png"/>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The worst case time complexity for the following C program is:<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_31.png"/>`,
+      image: "",
+      options: [
+        `Ο(2 <em> <sup>n</sup> </em> )`,
+        `Ο(3 <em> <sup>n</sup> </em> )`,
+        `Ο(<em>n</em> <sup>3</sup> )`,
+        `Ο(<em>n</em> <sup>2</sup> )`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Count the total number of swaps done if insertion sort is applied on the following array elements:<br/>20, 15, 10, 30, 25, 11, 6, 2, 100 `,
+      image: "",
+      options: [
+      ],
+      answer: 21,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider two vertices ‘<em>a</em> ’ and ‘<em>b</em> ’ that are simultaneously on the FIFO queue at same point during the execution of breadth first search from ‘s’ in an undirected graph. Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The number of edges on the shortest path between ‘<em>s</em> ’ and ‘<em>a</em> ’ is atmost one more than the number of edges on the shortest path between ‘<em>s</em> ’ and ‘<em>b</em> ’.<br/> <em>S</em> <sub>2</sub> : The number of edges on the shortest path between ‘<em>s</em> ’ and ‘<em>a</em> ’ is atleast one less than the number of edges on the shortest path between ‘<em>s</em> ’ and ‘<em>b</em> ’.<br/> <em>S</em> <sub>3</sub> : There is a path between ‘<em>a</em> ’ and ‘<em>b</em> ’.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> only`,
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> only`,
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub> only`,
+        `<em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following implementation of SELECTION SORT to sort the array A in a nondecreasing order. The algorithm first finds the smallest element and places in the first location.<br/>Then repeatedly selects the smallest element from the remaining elements and places in the first remaining location. <br/> The process is repeated (n – 1) times.<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_36.png"/><br><br>Identify the missing expressions at P and Q respectively.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_37.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_38.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_39.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_40.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A priority queue is implemented with a heap in such a way that the parent element always have<br/> higher priority than its children. Following keys are to be inserted,<br/> [(50, 4) (40, 3) (35, 2) (45, 3) (75, 4) (25, 1)]<br/> Note: Key [<em>k</em> , <em>i</em> ] depicts ‘<em>i</em> ’ is the priority of ‘<em>k</em> ’ key. Assume 1 to be the highest priority.<br/>The number of swaps required are _______. `,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose we have a heap tree of height <em>h</em> containing n nodes. What will be the minimum and maximum values of n possible for this heap tree? [Assume that root node has height 0]. `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_48.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_49.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_50.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_51.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following directed graph:<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_53.png"/><br><br>Suppose we run Dijkstra’s single source shortest path algorithm on the above graph with vertex <em>S</em> as the source. The sum of all the weights of edges that would not be included in spanning tree obtained by running Dijkstra’s algorithm is _______. `,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let the following be defined for all large <em>n</em> : <br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_59.png"/><br><br>Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_60.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_61.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_62.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_63.png"/>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following graph:<br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_65.png"/><br><br>Apply single-source shortest path algorithm and find the value of shortest distance from node A to node I.`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Select all the correct options:`,
+      image: "",
+      options: [
+        `Dijkstra’s shortest path algorithm always gives the correct output for a directed weighted graph.`,
+        `Shortest path between two vertices may change if every edge is increased by the same quantity.`,
+        `Bellman Ford algorithm is a dynamic programming based technique.`,
+        `Kruskal’s algorithm may create disconnected intermediate spanning tree when it is used on an undirected graph.`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_67.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following will hold the following relation for different values of <em>f</em> (<em>n</em> ), <em>g</em> (<em>n</em> )<img align="absmiddle" alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_68.png"/> <br><br><img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_69.png"/><br><br>where <em>c</em> , <em>k</em> are constants and <em>c</em> , <em>k</em> ≥ 1. `,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_4_part_syllabus_gate_2026_da_programming_data_structures_and_algorithms/img_70.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Database Management and Warehouse",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> with <strong>List-II</strong> and select the correct answer using the codes given below the lists: <br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "A",
+      solution: `<br/> •2NF can ’t have partial functional dependencies.<br/> •3NF can ’t have transitive dependencies.<br/> •4NF deals with multi-valued dependencies.<br/>•5NF deals with join dependencies. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A software company monitors the average number of bugs per release over 100 releases, which is recorded as 12. If the 101st release has 16 bugs, what is the updated average number of bugs per release after including the 101st release? ______.`,
+      image: "",
+      options: [
+      ],
+      answer: 12.03,
+      solution: `[12.01 - 12.08]<br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following relation <em>R</em> (A, B, C, D, E, F, G, H).<br/> The maximum number of super key possible it 5 simple candidate keys in relation <em>R</em> are ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 248,
+      solution: `<br/> = (2<sup>5</sup> –1) (2<sup>3</sup> )<br/>= 31 ×8 = 248 `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Min-max normalization is useful when data boundaries are known and fixed.<br/> <em>S</em> <sub>2</sub> : Z-score is suitable when the data follows a Gaussian distribution.<br/>Which of the above statement is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •Min-max normalization rescales data to a fixed range (commonly [0, 1]).<br/> It is most useful when minimum and maximum boundaries are known and stable, such as in image pixel normalization. So, <em>S</em> <sub>1</sub> is correct.<br/> •Z-score normalization standardizes data to have mean = 0 and standard deviation = 1.<br/> It assumes data is approximately normally distributed (bell-shaped) for effectiveness in tasks<br/> like PCA or statistical analysis. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A file is organized so that the ordering of data record is same as or close to the ordering of data block in some index. Then that index is called`,
+      image: "",
+      options: [
+        `Dense`,
+        `Sparse`,
+        `Clustered`,
+        `Unclustered`,
+      ],
+      answer: "B",
+      solution: `<br/> •In sparse index number of entries depends on number of data block in previous level.<br/>•In dense index number of entries depends on number of data record in previous level. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The data field records in secondary index can be in hashed form.<br/> <em>S</em> <sub>2</sub> : The attribute or set of attributes which is used to look up records in a file is called search field. `,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> only`,
+        `<em>S</em> <sub>2</sub> only`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<br/> •A secondary index provides a secondary means of accessing a data file for which some primary<br/> access already exists. The data file records could be ordered, unordered or hashed.<br/>•Search Key is an attribute or set of attributes used to look up records in a file. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following relations:<br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_4.png"/><br><br><em>R</em> <sub>1</sub> has 500 records and <em>R</em> <sub>2</sub> has 800 records. The non-Null attribute ‘<em>P</em> ’ in R<sub>2</sub> is referencing attribute ‘<em>P</em> ’ in <em>R</em> <sub>1</sub> . The maximum number of records present in <img align="absmiddle" alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_5.png"/>are ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 800,
+      solution: `<br/> Since ‘<em>P</em> ’in <em>R</em> <sub>2</sub> is not key, hence all value of ‘<em>P</em> ’may or may not be unique. Hence every entry<br/> under ‘<em>P</em> ’in <em>R</em> <sub>2</sub> will match with ‘<em>P</em> ’in <em>R</em> <sub>1</sub> . Hence maximum is 800. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A salary of $ 96000 has been normalized to a Z-score of 4. What must be the mean of the data if the standard deviation is $ 3000?`,
+      image: "",
+      options: [
+        `92000`,
+        `84000`,
+        `87000`,
+        `88000`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Equal-width binning divides the range of data into fixed-size intervals, while equal-frequency binning adjusts interval size to balance record count.<br/> <em>S</em> <sub>2</sub> : Equal-width binning is range-based, whereas equal-frequency binning is count-based.<br/>Which of the above statement is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •Equal-width binning divides the total data range into fixed-size bins, while equal-frequency<br/> binning adapts bin widths to ensure equal number of records per bin. So, <em>S</em> <sub>1</sub> is correct.<br/> •Equal-width binning is based on the range of data, while equal-frequency binning is based on<br/> maintaining the same number of records in each bin. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : SQL’s aggregation Sum, Avg, Count can not be expressed in relational algebra.<br/> <em>S</em> <sub>2</sub> : Select clause with distinct in SQL is same as project in relational algebra.<br/> <em>S</em> <sub>3</sub> : In SQL the arithmetic operator (+, –, *, ÷,) all return null if one of the their arguments is null.<br/>Which of the above statement is correct? `,
+      image: "",
+      options: [
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub> only`,
+        `<em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub> only`,
+        `<em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `<em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> only`,
+      ],
+      answer: "C",
+      solution: `<br/> <em>S</em> <sub>1</sub> : SQL ’s aggregation can not be expressed in relational algebra.<br/> <em>S</em> <sub>2</sub> : Select clause is same as project in relation algebra.<br/> <em>S</em> <sub>3</sub> : Arithmetic operation is return null if one of the value is null.<br/> All <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub> are correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given relation R(A, B, C, D, E) and set of functional dependencies<br/> F = {AB → C, AB → D, D → A, BC → D, BC → E}<br/>What will be the highest normal form satisfied by R? `,
+      image: "",
+      options: [
+        `1NF`,
+        `2NF`,
+        `3NF`,
+        `BCNF`,
+      ],
+      answer: "C",
+      solution: `<br/> Candidate keys for the relation are: AB, BD and BC<br/> D →A, prime attribute →prime attribute (not allowed in BCNF but allowed in 3NF).<br/> ⇒Relation R is in 3NF but not in BCNF since D →A does not have a superkey on the left hand<br/>side. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the relation <em>R</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) which of the following relational algebra expression returns the lowest value of <em>B</em> ? (<em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> are renames of <em>R</em> ) `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_10.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_11.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_12.png"/>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following relation:<br/> <em>R</em> (<em>A B C D E F</em> ) with FD set of relation <em>R</em> . {<em>A</em> → <em>B</em> , <em>C</em> → <em>D</em> , <em>E</em> → <em>F</em> }<br/> What is the minimum number of relations required to decompose relation <em>R</em> into 2NF which satisfy lossless join and dependency preserving decomposition? `,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Drill-down provides insight into specific trends by unfolding summarized information.`,
+        `Pivot operation reduces data volume by aggregating facts into higher levels.`,
+        `Roll-up uses random grouping of data without considering dimension hierarchies.`,
+        `None of these`,
+      ],
+      answer: ["A"],
+      solution: `<br/> •Drill-down increases data granularity by navigating from higher to lower levels in a hierarchy.<br/> It helps analyze finer details hidden under aggregated summaries. So, option (a) is correct<br/> •Pivot operation rearranges the orientation of dimensions for alternative views.<br/> It does not perform aggregation or reduce data volume like roll-up. So, option (b) is incorrect<br/> •Roll-up aggregates data using well-defined concept hierarchies, not random groupings.<br/> This structured hierarchy guides summarization from detailed to general levels. So, option (c)<br/>is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statement false of relation R is in 3NF but not BCNF?`,
+      image: "",
+      options: [
+        `Relation <em>R</em> must consist atleast two over-lapped candidate keys.`,
+        `Relation <em>R</em> must consist proper subset of candidate key determines proper subset of some other candidate key.`,
+        `Relation <em>R</em> must consist atmost one compound candidate key and other candidate keys simple candidate key.`,
+        `Relation <em>R</em> must consist atleast two compound candidate keys.`,
+      ],
+      answer: "C",
+      solution: `<br/> If relation <em>R</em> in 3NF but not BCNF then atleast two compound keys must exists where non-trivial<br/>FD with determinant not superkey. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `In a relation <em>R</em> (<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> ). The set of attributes Σ ⊆ <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> } is called a superkey if : `,
+      image: "",
+      options: [
+        `Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>2</sub> , <em>A</em> <sub>3</sub> , ..... <em> A<sub>n</sub> </em> } and Σ may not minimal.`,
+        `Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em>A</em> <sub> <em>n</em> – 1 </sub> } and Σ is minimal.`,
+        `Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>2</sub> , ..... <em> A<sub>n</sub> </em> } and Σ may not minimal.`,
+        `Σ<sup>+</sup> = <em>R</em> {<em>A</em> <sub>1</sub> , <em>A</em> <sub>3</sub> , ..... <em> A<sub>n</sub> </em> } and Σ is minimal.`,
+      ],
+      answer: ["C"],
+      solution: `<br/> [Superkey = Candidate key + Optional attributes]<br/> A candidate key is always a super key but a super key may not be a minimal candidate key (it<br/>may have extra attributes). `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a relation S = (A, B, C, D). For which of the following sets of FD’s in S is not in 3<sup>rd</sup> normal form? `,
+      image: "",
+      options: [
+        `{ABC → D, ACD → B, A → D, BCD → A}`,
+        `{AD → C, BC → A, BD → C, CD → B}`,
+        `{AC → D, D → A, D → B, D → C}`,
+        `{AC → B, A → D, C → A, D → B}`,
+      ],
+      answer: ["B", "C"],
+      solution: `<br/> For (i): For FD A →D, the LHS is not the super key but RHS is a prime attribute. Therefore, it is<br/> in 3NF.<br/> For (ii): The candidate keys are AD, BD and CD. Thus, for FD BC →A, the LHS is not the<br/> superkey but RHS is a prime attribute. Therefore, it is in 3NF.<br/> For (iii), The candidate keys are AC and D. Thus, all the FD 's satisfy the 3NF condition and thus<br/> it is in 3NF.<br/> For (iv), the candidate key is C, therefore, FD AC →B, A →D, D →B neither LHS is the super<br/>key nor RHS is having the prime attribute, therefore, it is not in 3NF. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the relation Recruitment (CandidateNo, InterviewDate, InterviewTime, StaffNo, RoomNo) and the following functional dependencies<br/> <strong> FD<sub>1</sub> : </strong> CandidateNo, InterviewDate → InterviewTime, StaffNo, RoomNo<br/> <strong> FD<sub>2</sub> : </strong> RoomNo, InterviewDate, InterviewTime → StaffNo, CandidateNo<br/> <strong> FD<sub>3</sub> : </strong> StaffNo, InterviewDate → RoomNo<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `The relation recruitment is in 3NF.`,
+        `The relation recruitment is in BCNF.`,
+        `The FD<sub>3</sub> violates 3NF.`,
+        `The FD<sub>2</sub> violates 2NF.`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are false?`,
+      image: "",
+      options: [
+        `The expressive power of basic RA queries is not same as safe TRC queries.`,
+        `Average of attribute values can be calculated in safe TRC.`,
+        `‘NOT IN’ never true if result of inner query to test NOT IN function is consist NULL value.`,
+        `Every query with having clause condition over aggregate function may not be rewrite with where clause condition.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<br/> •The expressive power of basic RA queries is same as safe TRC queries.<br/> •Average of attribute values cannot be calculated in safe TRC.<br/> •Every query with having clause condition over aggregate function can rewrite where clause<br/>condition. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose we have a relation R(A, B, C, D, E) with FD’s {A → B, AB → C, D → AC, D → E}. R is decomposed as <em>R</em> <sub>1</sub> (A, C, D), <em>R</em> <sub>2</sub> (D, E), R3(A, B, C). Which of the following statement is true regarding the decomposition? `,
+      image: "",
+      options: [
+        `Lossless and depending preserving.`,
+        `Lossless but not depending preserving.`,
+        `Lossy and dependency preserving.`,
+        `Lossy and not dependency preserving.`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `Equal frequency discretization always ensures bins of equal width.`,
+        `Min-max normalization may distort data relationships if outliers are present.`,
+        `A fact table in a star schema contains quantitative data and foreign keys to dimension tables.`,
+        `In a star schema, dimension tables are connected hierarchically before linking to the fact table.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<br/> •Equal frequency discretization creates bins with an equal number of data points, not equalwidth<br/> ranges. Bin widths may vary based on data distribution. So, option (a) is incorrect.<br/> •Min-max normalization uses extreme values (min and max) for scaling, so outliers can skew<br/> the transformation, compressing the majority of data. So, option (b) is correct.<br/> •A fact table contains measurable numerical data (facts) and foreign keys referencing the<br/> associated dimension tables in a star schema. So, option (c) is correct.<br/> •That describes a snowflake schema. In a star schema, each dimension table connects directly<br/>to the central fact table without hierarchy. So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the relation database, where primary keys are underlined:<br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_8.png"/><br><br>What does the following tuple relational calculus query produce? <br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_9.png"/>`,
+      image: "",
+      options: [
+        `Name of students whose marks are less than any of the students living in city Mumbai.`,
+        `Name of students whose marks are more than equal to any of the students living in city Mumbai.`,
+        `Name of students whose marks are less than all students living in city Mumbai.`,
+        `Name of students whose marks are more than all students living in city Mumbai.`,
+      ],
+      answer: "D",
+      solution: `<br/> Given query produces the name of students whose marks are more than that of student living in city Mumbai.<br/> According to option (d), there should not exist a student <em>S</em> <sub>2</sub> who has more marks than <em>S</em> <sub>1</sub> , when S<sub>2</sub> lives in Mumbai. Which is another way of saying <em>S</em> 1 has more marks than all students living in Mumbai. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a hospital which has various departments. Each doctor belongs to only one department.<br/> A patient gets registered to a department under one doctor in that department. It may be required that he/she may be treated by other doctor of same/different departments also. Doctor suggests various tests for patients, and these are noted along with their reports.<br/>If we want to design a schema for the above system what are the possible entities? `,
+      image: "",
+      options: [
+        `Report`,
+        `Doctor`,
+        `Patient`,
+        `Test`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following ER diagram:<br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_16.png"/><br><br>The minimum number of RDBMS tables required for the above ER diagram is`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `3`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following relations:<br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_18.png"/><br><br>The number of tuples returned by the above SQL query is ________.`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In a Fact Constellation schema, dimension tables are shared among multiple fact tables.<br/> <em>S</em> <sub>2</sub> : In a Star Schema, dimension tables are shared among multiple fact tables.<br/> <em>S</em> <sub>3</sub> : In a Snowflake Schema, dimension tables are shared among multiple fact tables.<br/>Which of the above statements is/are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `<em>S</em> <sub>1</sub> and S<sub>2</sub>`,
+        `All of the above`,
+      ],
+      answer: "A",
+      solution: `<br/> •Fact Constellation supports multiple fact tables sharing common dimension tables.<br/> It is suitable for complex systems involving interrelated subjects. So, <em>S</em> <sub>1</sub> is correct.<br/> •In Star Schema, each fact table has its own dimension tables.<br/> Dimension tables are not typically shared across multiple fact tables. So, <em>S</em> <sub>2</sub> is incorrect.<br/> •Snowflake Schema normalizes dimension tables into sub-tables for optimization.<br/> It does not imply sharing of dimension tables between fact tables. So, <em>S</em> <sub>3</sub> is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is true?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_20.png"/>`,
+        `Projection operation is commutative`,
+        `Selection operation is commutative`,
+        `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_21.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<br/> •First operation holds true only because <em>A</em> <sub>1</sub> is subset of <em>A</em> <sub>2</sub> .<br/> •Projection operation is not commutative.<br/> •Selection operation is commutative.<br/> •It is not equivalent because first one contains duplicate values and second one doesn ’t. Also<br/>equality is not checked in first one. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a B-tree in the given figure, where each node has atleast 2 and atmost 4 keys. <br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_22.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a table <em>T</em> in a relational database with a key field <em>K</em> . A B-tree of order <em>p</em> is used as an access structure on <em>K</em> , where <em>p</em> denotes the maximum number of tree pointers in a B-tree index node. Assume that <em>K</em> is 12 bytes long; disk block size is 256 bytes; each data pointer <em> P<sub>D</sub> </em> is 10 bytes along and each block pointer <em> P<sub>B</sub> </em> is 7 bytes long in order for each <em>B</em> tree node to fit in a single disk block, the maximum value of <em>p</em> is ________. `,
+      image: "",
+      options: [
+      ],
+      answer: 9,
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_24.png"/><br><br><img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a dataset containing income values as follows:<br/> $ 52,000, $ 64,000, $ 72,000, $ 88,000, $ 96,000<br/> If the income attribute is to be normalized to a new scale ranging from 2 to 5 using min-max<br/> normalization, calculate the normalized value corresponding to $ 72,000. Additionally, determine<br/>the normalized value for $ 64,000 within the same scale. `,
+      image: "",
+      options: [
+        `Normalized value of $ 72000 is 3.36`,
+        `Normalized value of $ 72000 is 2.81`,
+        `Normalized value of $ 64000 is 2.81`,
+        `Normalized value of $ 64000 is 3.36`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dataset contains the following 20 sorted pollution index readings (in μg/m<sup>3</sup> ):<br/> 12, 14, 18, 19, 21, 24, 27, 30, 33, 35, 39, 41, 44, 48, 51, 53, 55, 59, 63, 68<br/> The data is divided into 4 equal width bins, where each bin is of the form:<br/> Lower bound (inclusive) ≤ <em>x</em> ≤ upper bound (inclusive).<br/>Which bin contains the median value of the dataset? `,
+      image: "",
+      options: [
+        `Bin 1`,
+        `Bin 2`,
+        `Bin 3`,
+        `Bin 4`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_5_part_syllabus_gate_2026_da_database_management_and_warehouse/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `MLOP identifies the most frequently taken path and leverages this for future predictions,improving accuracy for stable branching behavior.`,
+        `ROLP gives higher accuracy than MLOP in irregular branch scenarios because it relies on the most recent path taken.`,
+        `MLOP typically requires maintaining frequency counts or path statistics, leading to higher storage overhead compared to ROLP.`,
+        `Both MLOP and ROLP are inherently compatible with two-level global branch history predictors without any conflict.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<br/> •MLOP tracks the most frequently taken execution path to enhance prediction reliability.<br/> This approach improves accuracy for branches with consistent and stable behavior. So, option (a)<br/> is correct.<br/> •ROLP focuses on the most recently observed path, adapting quickly to changes.<br/> Hence, it performs better in scenarios with irregular or dynamic control flow. So, option (b)<br/> is correct.<br/> •MLOP maintains path frequency statistics, which requires additional counters.<br/> This leads to a higher storage overhead compared to ROLP 's minimal tracking. So, option (c)<br/> is correct.<br/> •MLOP and ROLP are not inherently conflict-free with two-level global predictors.<br/> Integration can cause aliasing or interference depending on indexing and history length.<br/>So, option (d) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a relation R(A, B, C, D, E, F) with the following functional dependencies.<br/> {AB → C, C → D, AF → B, B → E}<br/>Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Relation is in 2NF, but not in 3NF.`,
+        `{B → E} is a partial dependency, so relation violates 2NF.`,
+        `The FD : {C → D} violates BCNF, as C is not a super key.`,
+        `Replacing {C → D} with {AB → D} and keeping all other FD’s, make the relation BCNF complaint.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<br/> AF is the only candidate key.<br/> •No partial dependency exist, so relation is in 2NF.<br/> •There exist transitive dependency from AF →B →E hence relation is not in 3NF.<br/>•Replacing FD : {C →D} with {AB →D} do not make relation in BCNF. `
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Artificial Intelligence",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Iterative-Deepening A* (IDA*) search avoids the substantial overhead associated with maintaining a sorted queue of nodes.<br/> <em>S</em> <sub>2</sub> : IDA* uses less memory compared to A* by performing depth-first iterations with a cost threshold.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> with <strong>List-II</strong> and select the correct answer using the codes given below the lists: <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_2.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is correct about the blocking in Gibbs sampling?`,
+      image: "",
+      options: [
+        `Ignoring variables with low probability.`,
+        `Sampling multiple variables jointly instead of one at a time.`,
+        `Dividing the sample space into non-overlapping regions.`,
+        `Preventing redundant sampling steps.`,
+      ],
+      answer: "B",
+      solution: `b`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : If all edge costs are equal and positive, then Breadth-First Search (BFS) is optimal.<br/> <em>S</em> <sub>2</sub> : Breadth-First Search (BFS) has complete and finite time and space complexity for finite search spaces.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •BFS expands nodes in order of increasing depth. If all edge costs are equal and positive, path cost increases with depth. Hence, BFS returns the solution with the lowest path cost and is optimal. So, <em>S</em> <sub>1</sub> is correct.<br/> •BFS is complete in any finite search space because it systematically explores all nodes at each depth level. Its time and space complexity are finite in such spaces, though both can be exponential in the worst case (Ο( <em> b<sup>d</sup> </em> )). Thus, it guarantees finding a solution if one exists. So, <em>S</em> <sub>2</sub> <br/>is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following methods involves drawing samples from a proposal distribution and accepting them based on a ratio involving the target distribution?`,
+      image: "",
+      options: [
+        `Gibbs Sampling`,
+        `Rejection Sampling`,
+        `Both (a) and (b)`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements related to Bayesian Networks:<br/> <em>S</em> <sub>1</sub> : In a Bayesian network, given its Markov blanket, a node is conditionally independent of all other nodes in the network.<br/> <em>S</em> <sub>2</sub> : The Markov blanket of a node consists of all nodes that are reachable within two edges from it.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "A",
+      solution: `<br/> •Markov blanket of a node includes all the nodes that directly affect it or are affected by it —that means its parents, children, and co-parents (other parents of its children). Once you know these, the node has no influence from the rest of the network. So, S<sub>1</sub> is correct.<br/> •“All nodes within two edges ”is too broad —some of those nodes may have no role in influencing the node. The Markov blanket depends on relationships, not just distance. So, S<sub>2  </sub> is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> with <strong>List-II:</strong> <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_4.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`,
+      ],
+      answer: "C",
+      solution: `<br/> Technically, the <em>A</em> * algorithm should be called simply <em>A</em> if the heuristic is an underestimate of the<br/> actual cost. However it will continued to be called <em>A</em> * because the implementation is the same and<br/> the game programming community does not distinguish <em>A</em> from <em>A</em> *. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Beam Search is not guaranteed to find a solution even if one exists, due to its limited beam width.<br/> <em>S</em> <sub>2</sub> : Beam Search is a greedy algorithm when the beam width is set to 1.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> •Beam Search limits the number of nodes explored at each level. If the optimal path is outside the top-k nodes, it may be pruned, and no solution will be found-even if one exists. So, <em>S</em> <sub>1</sub> is correct. •When the beam width is set to 1, beam search behaves like Greedy Best-First Search. It always<br/> expands the single best-looking node based on the heuristic, ignoring all others. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a certain town, 30% of the people are conservatives; 50% socialists; and 20% liberals. In this town at last election, 65% of conservatives voted, as did 82% of the socialists and 50% of the liberals. A person from the town is selected at random and states that she voted at the last election what is the probability that she is a socialists? [Upto 2 decimal places]`,
+      image: "",
+      options: [
+      ],
+      answer: 0.5816,
+      solution: `[0.58 - 0.59]<br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_15.png"/><br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let p, q and r be propositions and the expression:<br/> <img align="absmiddle" alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_17.png"/>is true for given conditions. Then which of the following is/are correct for given conditions. `,
+      image: "",
+      options: [
+        `All three variables are true.`,
+        `One of the variable is true while other two has false truth value.`,
+        `One of the variable is false while other two has true truth value.`,
+        `All three variables are false.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `In Greedy Best-First Search, the node to be expanded next is selected based on the lowest heuristic estimate of the distance to the goal node.`,
+        `In Greedy Best-First Search, the node to be expanded next is selected based on the highest heuristic estimate of the distance to the goal node.`,
+        `Uniform Cost Search expands the node with the lowest heuristic value to the goal.`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<br/> •Greedy Best-First Search selects the node with the lowest heuristic value h(n), which estimates<br/> the cost to reach the goal. It ignores the path cost from the start node (g(n)). So, option (a) is<br/> correct and option (b) is incorrect.<br/> •Uniform Cost Search selects the node with the lowest path cost from the start node (g(n)), not<br/> based on the heuristic estimate to the goal. Hence, it does not use h(n). So, option (c) is<br/>incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let square(<em>x</em> ): <em>x</em> is a square; white(<em>x</em> ): <em>x</em> is white; empty(<em>x</em> , <em>t</em> ): <em>x</em> is empty at time t.<br/>Consider the sentence S as “White squares are always empty”. Now consider the following first order logic sentences. <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_19.png"/><br><br>Which of the above are correct first order logic translations of S?`,
+      image: "",
+      options: [
+        `Only I`,
+        `Only II`,
+        `Both I and II`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> Both are correct translations of the sentence S.<br/>Hence (c) is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a search tree where all actions have unit step cost and multiple goal nodes may exist at different depths. If Breadth-First Search (BFS) is used to find a goal node, which of the following is guaranteed to be true?`,
+      image: "",
+      options: [
+        `BFS will always find the leftmost goal node.`,
+        `BFS may miss the shallowest goal node if it's not on the left.`,
+        `BFS will always find the goal node that is shallowest (least depth).`,
+        `BFS does not guarantee goal finding if the search tree is infinite.`,
+      ],
+      answer: ["C"],
+      solution: `<br/> •BFS selects nodes based on depth, not left/right position. If a deeper goal is on the left, BFS may still choose a shallower goal elsewhere. So, option (a) is incorrect.<br/> •BFS explores all nodes at the current depth before going deeper, so it cannot miss the shallowest goal. So, option (b) is incorrect.<br/> •BFS expands nodes level by level, it is guaranteed to find the first goal at the lowest depth. So, option (c) is correct.<br/>•If the goal is at finite depth, BFS will reach it even in an infinite tree. Only DFS can get stuck in infinite branches, not BFS. So, option (d) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Suppose a factory has machine I, II and III that produce XYZ phones. The factory’s record shows that Machine I, II and III produce, respectively 2%, 1% and 3% defective XYZ phones. Out of total production, Machine I, II, and III produce, respectively 35%, 25% and 40% of all XYZ phones a XYZ phone is selected at random from the factor if given that phone is defective what is the conditional probability that it was produced by Machine III? [Upto 2 decimal places]`,
+      image: "",
+      options: [
+      ],
+      answer: 0.56,
+      solution: `[0.55 - 0.56]<br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which data structure is used to implement BFS?`,
+      image: "",
+      options: [
+        `Stack`,
+        `Queue`,
+        `Priority Queue`,
+        `Hash Table`,
+      ],
+      answer: ["C"],
+      solution: `<br/> •Admissibility and consistency are required for A* to guarantee optimality.<br/> Greedy Best-First Search can work even with inadmissible heuristics, though it may give nonoptimal<br/> solutions. So, option (a) is incorrect.<br/> •This describes the g(n) (path cost so far), which Greedy Best-First Search ignores completely.<br/> So, option (b) is incorrect.<br/> •This matches the behavior of Greedy Best-First Search: it expands nodes only based on h(n)<br/> the estimated cost to the goal. So, option (c) is correct.<br/> •This describes f(n) = g(n) + h(n), used in A* Search not in Greedy Best-First Search. So, option<br/>(d) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a Bayesian network with two variables: <em>X</em> and <em>Y</em> . The joint probability distribution is given as follows: <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_30.png"/><br><br>Using variable elimination, calculate the marginal probability <em>P</em> (<em>Y</em> = 1). `,
+      image: "",
+      options: [
+      ],
+      answer: 0.4,
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the compound propositions given below, identify which of the propositions is/are not tautologies?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_5.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_6.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_7.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_8.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is the correct translation in first order logic of the sentence: “All woman who are nurse admire some doctor”.<br/> Where for a person <em>p</em> let, <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_10.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_11.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_12.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_13.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_14.png"/>`,
+      ],
+      answer: ["A"],
+      solution: `<br/> (a) Every woman nurse admire some doctor.<br/> ∴Option (a) is correct.<br/> (b) Every woman who is a nurse admires every doctor.<br/> (c) If a person is not women or is a nurse he/she admires some doctor.<br/>(d) The is some doctor who is admired by every woman nurse. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Belief Propagation performs exact inference only on a single tree-structured graph.<br/> <em>S</em> <sub>2</sub> : Gibbs Sampling guarantees exact results in finite time.<br/>Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<br/> •Belief Propagation gives exact results only on tree-structured graphs, it requires the graph to be a single connected acyclic structure (a tree), If the graph has loops, it becomes approximate (Loopy BP). So, <em>S</em> <sub>1</sub> is correct.<br/> •Gibbs Sampling is a stochastic sampling-based method (MCMC), it does not provide exact results in finite time, Exactness is only achieved asymptotically with infinite samples under certain conditions. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Beam Search algorithm takes the same amount of space as Breadth-First Search (BFS).<br/> <em>S</em> <sub>2</sub> : Best-First Search algorithm takes less space compared to Beam Search.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "D",
+      solution: `<br/> •Breadth-First Search (BFS) stores all nodes at the current level, which can result in exponential space complexity in the worst case.<br/> Beam Search stores only the top k best nodes per level (where k is the beam width), thereby reducing space usage significantly. So, <em>S</em> <sub>1</sub> is incorrect.<br/> •Best-First Search: Uses a priority queue and can store many generated nodes —space usage can be large.<br/> Beam Search: Stores only a fixed number (beam width) of best candidates, making it more memory-efficient. So, <em>S</em> <sub>2</sub> is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Variational Inference performs inference by minimizing KL divergence between approximate and true posteriors.`,
+        `Variational Inference provides exact inference for tree-structured graphs.`,
+        `In Gibbs Sampling, ergodicity ensures convergence to the target joint distribution over time.`,
+        `None of these`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a company, employees work in three departments: IT, HR, and Marketing.<br/> 50% of the employees are in IT, 30% in HR, and 20% in Marketing. Among IT employees, 70% are satisfied with their job. Among HR employees, 80% are satisfied. Among Marketing employees, only 40% are satisfied.<br/>If an employee is known to be satisfied with their job, what is the probability that they belong to the HR department? `,
+      image: "",
+      options: [
+      ],
+      answer: 0.36,
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following tree:<br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_22.png"/><br><br>Each edge has a uniform cost of 1. Iterative Deepening Search (IDS) is used to search the goal node H. At every level, child nodes are explored in right to left order, and a node is counted when it is generated. How many nodes are generated by IDS to reach the goal node H?`,
+      image: "",
+      options: [
+        `19`,
+        `21`,
+        `23`,
+        `25`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Three persons <em>A</em> , <em>B</em> and <em>C</em> apply for a job of manager in a private company. Chances of their selection (<em>A</em> , <em>B</em> and <em>C</em> ) are in the ratio 1 : 2 : 4. The probabilities that <em>A</em> , <em>B</em> and <em>C</em> can introduce changes to improve profits of the company are 0.8, 0.5 and 0.3, respectively. If the change does not take place. The probability that it is due to the appointment of C is ________. (Upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.70,
+      solution: `[0.68 - 0.72]<br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Exact inference in Bayesian networks is always tractable when the network is a polytree.`,
+        `The presence of undirected cycles in a Bayesian network can lead to exponential inference complexity.`,
+        `Polytrees support exact marginal computation using message passing in constant time.`,
+        `None of these`,
+      ],
+      answer: ["B"],
+      solution: `<br/> •Although polytrees (singly connected DAGs) allow for tractable inference using belief propagation, tractability is not unconditional.<br/> Algorithmic complexity still scales linearly with network size; thus, the term “always tractable ”is an over generalization. So, option (a) is incorrect.<br/> •In multiply connected Bayesian networks (with undirected cycles), inference requires computational resources that grow exponentially in the worst case.<br/> This problem is proven to be NP-hard, due to the combinatorial explosion of joint dependencies.<br/> So, option (b) is correct.<br/> •While belief propagation enables exact inference in polytrees, the run time is linear in the<br/> number of nodes and edges.<br/>Claiming it works in constant time is incorrect, as complexity still depends on the network ’s topological structure. So, option (c) is incorrect. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Iterative Deepening DFS performs search limited to a predefined depth.`,
+        `Breadth First Search explores all nodes at a level before going to the next, it is use a predefined depth limit.`,
+        `Depth-Limited Search may fail to find the solution if the depth limit is set too`,
+        `None of these`,
+      ],
+      answer: ["A", "C"],
+      solution: `<br/> •Iterative Deepening DFS (IDDFS) combines the benefits of DFS and BFS. It performs depthlimited searches repeatedly, increasing the limit one level at a time. At each iteration, it uses a fixed predefined depth. So, option (a) is correct.<br/> •BFS explores all nodes at a particular depth level before moving to the next. It continues until the goal is found and does not stop at any predefined depth, unlike Depth-Limited Search.<br/> So, option (b) is incorrect.<br/> •DLS restricts the search to a fixed depth. If the goal node lies beyond this limit, it will not be<br/>explored —causing the search to fail even if the goal is reachable. So, option (c) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Stochastic simulation relies on generating random samples to approximate outcomes in probabilistic systems where analytical solutions are hard.<br/> <em>S</em> <sub>2</sub> : Monte Carlo sampling estimates numerical results, such as expectations or integrals, through repeated random trials.<br/> <em>S</em> <sub>3</sub> : In high-dimensional problems, advanced methods like importance sampling or MCMC enhance efficiency by focusing on high-probability regions.<br/>Which of the following above statements is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `All of the above`,
+      ],
+      answer: "D",
+      solution: `<br/> •Stochastic simulation indeed uses random sampling to model or approximate systems where exact analytic computation is difficult or intractable. So, <em>S</em> <sub>1</sub> is correct.<br/> •Monte Carlo methods are classic stochastic techniques for estimating numerical values (like expected values or integrals) using repeated random sampling. So, <em>S</em> <sub>2</sub> is correct.<br/> •In high-dimensional spaces, naive random sampling becomes inefficient. Methods like Importance Sampling and Markov Chain Monte Carlo (MCMC) are used to concentrate sampling in more relevant, high-probability regions-thereby increasing efficiency and accuracy.<br/> So, <em>S</em> <sub>3</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements about Beam Search is/are correct?`,
+      image: "",
+      options: [
+        `Beam Search is a heuristic search algorithm that maintains only a fixed number of best nodes at each level.`,
+        `Beam Search is complete and optimal only when the beam width is large enough to include all possible nodes at each level.`,
+        `Beam Search expands all nodes at each level and then selects the k best without regard to memory constraints.`,
+        `Beam Search may discard the optimal path if it is not among the top-k nodes at any level.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<br/> •Beam Search is a heuristic search that selects only the top-k scoring nodes at each level. This reduces memory usage while guiding the search using a heuristic function. So, option (a) is correct.<br/> •Beam Search becomes complete and optimal only if the beam width is large enough to cover all nodes. In that case, it behaves like Breadth-First Search and does not miss any paths. So, option (b) is correct.<br/> •Beam Search does not expand all nodes at each level. It evaluates all, but then keeps only the<br/> best k nodes, limiting memory. So, option (c) is incorrect.<br/> •Beam Search may discard the optimal path if it is not in the top-k at any level. Once a path is<br/>pruned, it is never reconsidered —even if it could lead to the goal So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following game tree in which root is a maximizing node and children are visited left to right. What nodes will be pruned by the alpha-beta pruning?<br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_26.png"/>`,
+      image: "",
+      options: [
+        `XR`,
+        `VWX`,
+        `RTU`,
+        `WX`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Variable ordering has no effect on the complexity of inference algorithms.`,
+        `The optimal variable ordering minimizes the size of intermediate factors.`,
+        `Junction tree construction is independent of variable ordering.`,
+        `Identifying relevant variables before inference can reduce computation.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<br/> •Variable ordering has a major impact on inference complexity in algorithms like variable<br/> elimination and junction tree.<br/> A poor ordering can result in large intermediate factors, increasing time and space requirements.<br/> So, option (a) is incorrect.<br/> •The size of intermediate factors created during variable elimination depends on the variable<br/> elimination order.<br/> An optimal ordering minimizes these sizes, improving computational efficiency.<br/> This is key to keeping inference tractable in large graphs. So, option (b) is correct.<br/> •Junction Tree construction involves moralization and triangulation, which are affected by the<br/> elimination order.<br/> Different orderings can result in different tree widths, impacting the efficiency of message<br/> passing.<br/> So, variable ordering does influence junction tree construction. So, option (c) is incorrect.<br/> •If a variable is irrelevant (i.e., conditionally independent of the query given evidence), it<br/> doesn ’t affect the result.<br/> Removing such variables reduces the number of nodes in the graph.<br/> This simplifies the model and saves computational effort during inference. So, option (d) is<br/>correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a Bayesian network representing payment methods with two variables:<br/> P(PaymentMethod) and O(OnlineTransaction)<br/>The conditional probability tables are as follows: <br><br><img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_28.png"/><br><br>Based on this Bayesian network, which of the following statements is/are correct?<br/> <em>S</em> <sub>1</sub> : The probability of doing an online transaction given that the payment method is Card is 0.9.<br/> <em>S</em> <sub>2</sub> : The probability that the payment method is Cash given that an online transaction was done is greater than the probability that the payment method is Card given that an online transaction was done.<br/> <em>S</em> <sub>3</sub> : The marginal probability of doing an online transaction <em>P</em> (O = 1) increases when the conditional probability <em>P</em> (O = 1|Card) increases. `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `All <em>S</em> <sub>1</sub> , <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Min-Max reduces the number of branches of the search tree to be traversed without affecting the solution.`,
+        `Min-Max increases the number of branches of the search tree to be traversed without affecting the solution.`,
+        `Alpha-Beta pruning increases the number of branches of the search tree to be traversed without affecting the solution.`,
+        `Alpha-Beta pruning reduces the number of branches of the search tree to be traversed without affecting the solution.`,
+      ],
+      answer: "D",
+      solution: `<br/> Alpha-Beta pruning skips branches in the Min-Max tree that cannot affect the final decision.<br/> It reduces the number of nodes evaluated without changing the result.<br/>This makes the search more efficient while preserving optimality. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the game tree given below:<br/> <br/> <img align="absmiddle" alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_32.png"/> <br/> <br/> Here <img align="absmiddle" alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_33.png"/>represent MIN and MAX nodes respectively. The value of the root node of the game tree is: `,
+      image: "",
+      options: [
+        `15`,
+        `18`,
+        `108`,
+        `110`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_7_part_syllabus_gate_2026_da_artificial_intelligence/img_34.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - General Aptitude",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The sum of four numbers is 64. If you add 3 to the first number, 3 is subtracted from the second number, the third is multiplied by 3 and the fourth is divided by 3, then all the results are equal. What is the difference between the largest and the smallest of the original numbers?`,
+      image: "",
+      options: [
+        `21`,
+        `27`,
+        `32`,
+        `Cannot be determined`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The price of an article was increased by r%. Later the new price was decreased by <em>r</em> %. If the latest price was <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_16.png"/>then the original price was `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_17.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_18.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_19.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_20.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The value of log tan 10° + log tan 11° + log tan 12° + ...... log tan 80° is ________ . `,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The population of a place increased at an annual rate of 6% from 2016 to 2018 to 50000 and the growth continued like this for the next 3 years. If A is the population of 2016 and B is population of 2020, both rounded off to the next possible integers, then find the value of <em>B</em> – <em>A</em> . `,
+      image: "",
+      options: [
+        `13220`,
+        `12850`,
+        `11680`,
+        `16270`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_31.png"/><br><br><img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the digit in the unit’s place of a two-digit number is halved and the digit in the ten’s place is doubled, the number thus obtained is equal to the number obtained by interchanging the digits.<br/>Which of the following is definitely true? `,
+      image: "",
+      options: [
+        `Sum of the digits is a two-digit number.`,
+        `Digit in the units place is twice the digit in the ten’s place.`,
+        `Digits in the unit’s place and the ten’s place are equal.`,
+        `Digit in the unit’s place is half of the digit in the ten’s place.`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_34.png"/>is `,
+      image: "",
+      options: [
+        `2`,
+        `7`,
+        `8`,
+        `33`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?`,
+      image: "",
+      options: [
+        `210`,
+        `1050`,
+        `25200`,
+        `21400`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find out the wrong number in the series:<br/>2880, 480, 92, 24, 8, 4, 4 `,
+      image: "",
+      options: [
+        `480`,
+        `92`,
+        `24`,
+        `8`,
+      ],
+      answer: "B",
+      solution: `<br/> Go on dividing by 6, 5, 4, 3, 2, 1 respectively to obtain the next number.<br/>Clearly, 92 is wrong. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If the numbers A, B, C, D andE is an arithmetic sequence. Which of the following are correct.`,
+      image: "",
+      options: [
+        `2A, 2B, 2C, 2D and 2E also in arithmetic sequence.`,
+        `A – 3, B – 3, C – 3, D – 3, E – 3 also in arithmetic sequence.`,
+        `A<sup>2</sup> , B<sup>2</sup> , C<sup>2</sup> , D<sup>2</sup> and E<sup>2</sup> also in arithmetic sequence.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<br/> If subtract or multiply every term of an A.P. by a constant resulting sequence will be also A.P. as<br/>common difference will still be constant. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following options is close in meaning to the word below?<br/>PELLUCID `,
+      image: "",
+      options: [
+        `Logistical`,
+        `Philandering`,
+        `Clear`,
+        `Vagrant`,
+      ],
+      answer: "C",
+      solution: `<br/> Pellucid: Crystal clear<br/> Logistical: Relating to or involving organization and planning.<br/> Incomprehensible: Not able to be understand.<br/>Vagrant: A person without a settled home or who wanders from place to place and lives by begging. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_67.png"/> `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_68.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_69.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_70.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_71.png"/>`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Word opposite in meaning to the word<br/>‘LACKADAISCICAL’ `,
+      image: "",
+      options: [
+        `Lively`,
+        `Laidback`,
+        `Longaid`,
+        `Passive`,
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given set of analogous words, one of the word is missing. Select the word which exhibit the same analogy as established among the three <strong>Bold</strong> words.<br/> <strong>Inoculation : ?? : : Exposure : Toughening</strong> `,
+      image: "",
+      options: [
+        `Immunity`,
+        `Punctuality`,
+        `Vulnerability`,
+        `contagious`,
+      ],
+      answer: "A",
+      solution: `<br/>Inoculation leads to immunity. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is correct grammatically?`,
+      image: "",
+      options: [
+        `When he will reach the age of thirty, he will be able to play like his father does.`,
+        `When he will reach the age of thirty, he will be able to play as his father does.`,
+        `When he reaches the age of thirty, he will be able to play as his father does.`,
+        `When he reaches the age of thirty, he will be able to play as his father.`,
+      ],
+      answer: ["C"],
+      solution: `<br/> Option (c) is the only option which is grammatically correct.<br/> In sentences involving the use of time clause like “when ”, future tense cannot be used. In the<br/> given options, option (a) and (b) are ruled out. We can say that “If you drive, I will not accompany<br/> you ”. While using ‘as ’and ‘like ’, the correct usage is “He plays like his father ”or “He plays as his<br/>father does ”. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Word opposite in meaning to to the word<br/>“SERENDIPITY’ `,
+      image: "",
+      options: [
+        `Blessing`,
+        `Calm`,
+        `Misfortune`,
+        `Poise`,
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Fill in the blanks with most appropriate pair of words so as to make a logically meaningful sentence.<br/>Because Karishma’s parents often ______ their plans as soon as they were formed, she assumed that all adults were as ______ as her parents. `,
+      image: "",
+      options: [
+        `cancelled, indulgent`,
+        `altered, obstinate`,
+        `changed, mercurial`,
+        `solidified, capricious`,
+      ],
+      answer: "C",
+      solution: `<br/> The word ‘mercurial ’means ‘quickly changeable ’. In the given statement, missing word in the second<br/>part of the sentence will indicate the characteristics of a person who changes his/her plans very often. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a certain office, <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_1.png"/> of the workers are women, <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_2.png"/> of the women are married and <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_3.png"/> married women have children, <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_4.png"/> of men are married and <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_5.png"/>of married man have children, the percentage of workers without children is `,
+      image: "",
+      options: [
+        `37.27%`,
+        `61.11%`,
+        `72.22%`,
+        `87.27%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The average monthly income of <em>P</em> and <em>Q</em> is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_7.png"/> The average monthly income of <em>Q</em> and <em>R</em> is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_8.png"/> and the average monthly income of <em>P</em> and <em>R</em> is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_9.png"/> The monthly income of <em>Q</em> is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_10.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_11.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_12.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_13.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At his usual rowing rate, Rahul can travel 12 miles downstream in a certain river in 6 hours less than it takes him to travel the same distance upstream. But if he could double his usual rowing rate for his 24 mile round trip, the downstream 12 miles would then take only one hour less than the upstream 12 miles. What is the speed of the current in miles per hour?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_22.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_23.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_24.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_25.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A sum of money doubles itself at compound interest in 15 years. In how many years will it become eight times?`,
+      image: "",
+      options: [
+        `45`,
+        `60`,
+        `30`,
+        `40`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_27.png"/><br><br><img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The last day of a century cannot be`,
+      image: "",
+      options: [
+        `Tuesday`,
+        `Thursday`,
+        `Saturday`,
+        `Sunday`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An equilateral triangle, A square and A circle have equal perimeters. If <em>T</em> denotes the area of the triangle, <em>S</em> , the area of the square and <em>C</em> , the area of the circle, then `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_37.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_38.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_39.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_40.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider an equilateral triangle1 of side of unit length. A new equilateral triangle 2 is formed by joining the midpoints on the sides of triangle1. Then a third equilateral triangle is formed inside 2nd triangle similarly and process is repeated endlessly. The perimeter of all the triangle, thus formed is approximately`,
+      image: "",
+      options: [
+        `2 units`,
+        `3 units`,
+        `6 units`,
+        `Infinity`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given a circle with O as the centre as shown in the figure, If OA = 6 cm, then AB is<br><br><img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_43.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_44.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_45.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_46.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_47.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If a = 1 + <em>x</em> + <em>x</em> <sup>2</sup> + ..... ∞ and b = 1 + y + <em>y</em> <sup>2</sup> + ..... ∞ then 1 + <em>xy</em> + x<sup>2</sup> y<sup>2</sup> + x<sup>3</sup> y<sup>3</sup> + ..... ∞ is given by (Where <em>x</em> and y are less than 1). `,
+      image: "",
+      options: [
+        `<em>ab</em>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_49.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_50.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_51.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Six parallel horizontal lines are intersecting perpendicularly to six vertical parallel lines, the number of rectangles formed after such intersections is _____.`,
+      image: "",
+      options: [
+      ],
+      answer: 225,
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Four equal discs are placed such that each one touches two others. If the area of empty space enclosed by them is <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_54.png"/>square cm, then the radius of each disc is equal to `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_55.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_56.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_57.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_58.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_59.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_60.png"/> `,
+      image: "",
+      options: [
+        `2.0 cm`,
+        `2.5 cm`,
+        `2.6 cm`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_61.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A polygon has 44 diagonals, then the number of its sides are ____.`,
+      image: "",
+      options: [
+      ],
+      answer: 11,
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The volume of the largest right circular cone that can be fitted in a cube with edge 40 cm is_____ cm<sup>3</sup> . `,
+      image: "",
+      options: [
+      ],
+      answer: 16755,
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The given pie chart shows the study time of different subjects of a student in a day. Study the pie chart and answer the following:<br><br><img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_64.png"/>`,
+      image: "",
+      options: [
+        `If 4 hours and 30 minutes were spent to study History and Chemistry then time spent on Physics is 3 hours.`,
+        `If the student studies Chemistry for 3 hours, then he/she studies Geography for 2 hours.`,
+        `If the student studies 10 hours in a day, then he/she studies mathematics for 2 hours.`,
+        `Instead of 10%, if the student spends 15% time to study other subjects and this extra time is taken from Mathematics. If total study time is 20 hours per day then Mathematics time is reduced by 1 hour.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_65.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Mohan is the son of Arun’s father sister. Prakash is the son of Reena, who is mother of Vikash and grandmother of Arun. Pranab is the father of Neela and grandfather of Mohan. Reena is the  wife of Pranab then wife of Vikash is related to Reena as`,
+      image: "",
+      options: [
+        `Sister`,
+        `Niece`,
+        `Sister-in-law`,
+        `Daughter-in-law`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>ABCD</em> is a square having each side measuring <img align="absmiddle" alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_72.png"/> <em>P</em> , <em>Q</em> , <em>R</em> , <em>S</em> are the mid points of sides <em>AB</em> , <em>BC</em> , <em>CD</em> and <em>DA</em> respectively. A circle is drawn inside the quadrilateral formed by joining <em>PQRS </em> touching all the sides. What is the area of this circle? `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_73.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_74.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_75.png"/>`,
+        `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_76.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_8_part_syllabus_gate_2026_da_general_aptitude/img_77.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "da-gate-pyq",
+  name: "SWT - Machine Learning",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A neuron receives two input <em>x</em> <sub>1</sub> is 0.6 and <em>x</em> <sub>2</sub> is 0.4 with weights <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_1.png"/> and bias is 0.2.<br/>The activation function is sigmoid. What will be the output of the neuron? `,
+      image: "",
+      options: [
+        `–0.78`,
+        `–0.54`,
+        `0.54`,
+        `0.78`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In logistic regression, the output of the sigmoid function is interpreted as`,
+      image: "",
+      options: [
+        `Decision boundary`,
+        `Class probability`,
+        `Margin`,
+        `Loss value`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : ReLU function can be used in the output layers for binary classification.<br/> <em>S</em> <sub>2</sub> : ReLU function is used in the hidden layer of a neural network.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "B",
+      solution: `<br/> ReLU is not used in the output layer for binary classification because it does not produce output<br/> in the [0, 1] range like the sigmoid function. It is used in hidden layer to maintain non-zero<br/>gradients for positive inputs improving training efficiency. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Decision tree pruning decreases training error.<br/> <em>S</em> <sub>2</sub> : Decision tree increases the overfitting.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is a dimensionality reduction technique?`,
+      image: "",
+      options: [
+        `K-means`,
+        `Logistic regression`,
+        `T-distributed stochastic neighbor embedding`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<br/> T-distributed Stochastic Neighbor Embedding (t-SNE) is a non-linear dimensionality reduction<br/> technique mainly used for visualizing high-dimensional data in 2D or 3D. It preserves local structure<br/> and is effective at showing clusters.<br/> K-means is a clustering algorithm, and Logistic Regression is a classification method-neither reduces<br/>dimensionality. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : A model with low bias and low variance is ideal but hard to achieve in practice.<br/> <em>S</em> <sub>2</sub> : Reducing variance often requires increasing bias slightly, which is the essence of the tradeoff.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •In the best-performing model is one with both low bias (accurate predictions) and low variance (stable predictions). But in practice, such a model is hard to achieve due to the nature of realworld data and finite sample sizes. So, S<sub>1</sub> is correct.<br/> •The bias-variance tradeoff means that reducing one often increases the other. To reduce variance (i.e., overfitting), we usually simplify the model, which slightly increases bias-this tradeoff is fundamental in machine learning. So S<sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : SVM can handle only non-linear classification.<br/> <em>S</em> <sub>2</sub> : Hard margin can be used when data points are separated outside of the support vector.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<br/> •SVM is not limited to non-linear classification. It can handle both linear and non-linear problems.<br/> So, S<sub>1</sub> is incorrect.<br/> •A hard margin SVM assumes that all data points are perfectly separable and lie outside of the<br/> support vectors, meaning no data points are within or on the margin boundaries. So, S<sub>2</sub> is<br/>correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An MLP has 4 input features, one hidden layer with 6 neurons, and an output layer with 3 neurons.<br/>The total number of trainable parameters is 51, including weights and biases. How many bias terms are in the network? `,
+      image: "",
+      options: [
+        `7`,
+        `8`,
+        `9`,
+        `10`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The F1-score lies in the range 0 ≤ F1-score ≤ 1, and it is equal to 1 only when both precision and recall are 1.<br/> <em>S</em> <sub>2</sub> : Recall is the ratio of true positives to the total actual positives, and its value lies in the range 0 ≤ Recall ≤ 1.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Feature selection can help reduce overfitting.<br/> <em>S</em> <sub>2</sub> : Feature extraction can improve performance and capture nonlinear relationships in the data.<br/>Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •Feature selection removes irrelevant or redundant features. This simplifies the model and<br/> helps reduce overfitting. So, <em>S</em> <sub>1</sub> is correct<br/> •Feature extraction transforms data into informative new features. It can improve performance<br/> and capture nonlinear relationships. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `Multicollinearity is reduced as the number of dimensions increases.`,
+        `Redundant or correlated features make interpretation harder in high-dimensional data.`,
+        `Dimensionality reduction increases the number of irrelevant features.`,
+        `None of these`,
+      ],
+      answer: ["B"],
+      solution: `<br/> •Multicollinearity typically increases in high-dimensional spaces because adding more features<br/> increases the chance of correlation between them. So, option (a) is incorrect.<br/> •Redundant or correlated features (which are common in high-dimensional data) make models<br/> harder to interpret, especially in linear models where understanding individual feature effects<br/> is important. So, option (b) is correct.<br/> •Dimensionality reduction techniques like PCA or LDA are designed to remove irrelevant or<br/>redundant features, not increase them. So, option (c) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `Logistic Regression is less sensitive to overfitting compared to SVM.`,
+        `Logistic Regression performs better than SVM on high-dimensional unstructured data.`,
+        `Logistic Regression is better suited for low-dimensional unstructured data compared to SVM.`,
+        `SVM is less sensitive to overfitting compared to logistic regression.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<br/> SVMs perform better than Logistic Regression on high-dimensional unstructured data. They are<br/> less sensitive to overfitting due to margin maximization. SVMs handle complex boundaries well<br/>using kernels. However, they are more computationally expensive. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `In K-Fold Cross Validation, the number of models trained equals the number of folds used.`,
+        `A larger K generally leads to higher bias but lower computational cost.`,
+        `Leave-One-Out Cross Validation tends to have lower variance compared to lower K-fold values.`,
+        `None of these`,
+      ],
+      answer: ["A"],
+      solution: `<br/> •In K-Fold Cross Validation, the dataset is divided into K folds, and the model is trained K times, each time using a different fold as the test set. So, the number of models trained equals the number of folds. So, option (a) is correct.<br/> •A larger K usually leads to lower bias but higher computational cost (opposite of what is stated). So, option (b) is incorrect.<br/> •Leave-One-Out Cross Validation (LOOCV), which is the case where K = n typically has higher<br/>variance, not lower. So, option (c) is incorrect. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `A decision tree selects thresholds that maximize class impurity after each split.`,
+        `A decision tree selects the threshold at each node by minimizing information gain.`,
+        `A decision tree selects the threshold at each node by maximizing information gain.`,
+        `None of these`,
+      ],
+      answer: ["C"],
+      solution: `<br/> •Decision trees aim to reduce impurity, not increase it. After each split, they try to make child<br/> nodes more pure (homogeneous). So, option (a) is incorrect.<br/> •Information gain represents the reduction in impurity after a split. The tree chooses the<br/> threshold that maximizes this value, not minimizes it. So, option (b) is incorrect.<br/> •A decision tree selects the threshold that results in the highest information gain among all<br/>candidates. This helps create the most informative split. So, option (c) is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : MLP with one hidden layer and non-linear activation is a universal approximation.<br/> <em>S</em> <sub>2</sub> : MLP does not use activation function.<br/>Which of the following statements is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `Normalized margin is used to remove the effect of scaling in feature space.`,
+        `Normalized margin is used to improve classification accuracy.`,
+        `Normalized margin is undefined for nonlinear classifiers.`,
+        `Normalized margin helps increase training speed.`,
+      ],
+      answer: "A",
+      solution: `<br/> Raw margin can be arbitrarily increased by scaling the feature vectors. Normalized margin divides<br/>by the weight vector norm to give a meaningful, scale-invariant measure for generalization. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a soft margin SVM, decreasing the regularization parameter <em>C</em> will most likely result in: `,
+      image: "",
+      options: [
+        `A larger margin and fewer support vectors.`,
+        `A smaller margin and more margin violations.`,
+        `A larger margin and more margin violations.`,
+        `No change in decision boundary.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Data fragmentation increases as the depth of the decision tree increases.<br/> <em>S</em> <sub>2</sub> : Excessive data fragmentation can lead to overfitting in decision trees.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •In a decision tree, each internal node splits data based on a threshold. As the tree grows<br/> deeper, data is split into smaller subsets at each level. This is called data fragmentation -<br/> fewer data points per node. Deeper trees mean more fragmentation. So, <em>S</em> <sub>1</sub> is correct.<br/> •When data becomes highly fragmented, nodes contain very few samples. The tree may then<br/> fit noise instead of patterns, leading to overfitting and poor generalization. So <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In agglomerative hierarchical clustering, the process starts with each data point as a separate cluster and merges the closest pairs iteratively.<br/> <em>S</em> <sub>2</sub> : In divisive hierarchical clustering, the algorithm starts with all data points in a single cluster and recursively splits it into smaller clusters.<br/>Which of the following is correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •Agglomerative hierarchical clustering is a bottom-up approach where the algorithm starts<br/> with each data point as an individual cluster and merges the closest pairs step by step until all<br/> points are grouped into one cluster or the desired number of clusters is reached. So <em>S</em> <sub>1</sub> is correct.<br/> •Divisive hierarchical clustering is a top-down approach, beginning with all data points in a<br/> single cluster, and then recursively splitting it into smaller, more refined clusters based on<br/> dissimilarity measures. So, <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An SVM uses the following weight vector:<br/> <br/> <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_5.png"/> <br/> <br/> The total margin (i.e., the distance between two support hyperplanes) is know to be <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_6.png"/> If the one of the support vectors belongs to the positive class and is given as <br><br><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_7.png"/><br><br>Then calculate the bias term b used by the SVM.<br/> `,
+      image: "",
+      options: [
+        `+1`,
+        `-1`,
+        `0`,
+        `-2`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The IIT Bombay admission committee uses a model to predict whether a student should be admitted. The confusion matrix for the population is shown below:<br><br><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_11.png"/><br><br>What is the F1-score for the admitted class?`,
+      image: "",
+      options: [
+        `0.726`,
+        `0.426`,
+        `0.321`,
+        `0.852`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `ReLU activation suffers from vanishing gradient problem.`,
+        `LDA is not applicable when the classes have unequal covariance matrices.`,
+        `The bias-variance trade-off shows that both high bias and high variance can lead to high test error.`,
+        `All of the above`,
+      ],
+      answer: ["D"],
+      solution: `<br/> •ReLU helps to reduce to vanishing gradient problem. Change it may case dead neuron. So<br/> option (a) is correct.<br/> •LDA assumes equal covariance for all classes. If the covariance matrices are unequal, the<br/> assumption is violated, and LDA may perform poorly. In such cases, Quadratic Discriminant<br/> Analysis (QDA) is more appropriate. So, option (b) is correct.<br/> •This is a foundational concept in learning theory.<br/> High bias →underfitting →poor performance<br/> High variance →overfitting →poor generalization<br/>The total test error is minimized by balancing the two. So, option (c) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : LDA assumes that each class has a Gaussian distribution with a shared covariance matrix.<br/> <em>S</em> <sub>2</sub> : LDA always results in nonlinear decision boundaries between the classes.<br/> <em>S</em> <sub>3</sub> : Naive Bayes classification assumes that the features are independent within each class.<br/>Which of the following is true? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>3</sub>`,
+        `Only <em>S</em> <sub>2</sub> and <em>S</em> <sub>3</sub>`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<br/> •Linear Discriminant Analysis (LDA) is based on the assumption that:<br/> (i) Each class follows a multivariate Gaussian distribution, and<br/> (ii) All classes share the same covariance matrix (homoscedasticity). So, <em>S</em> <sub>1</sub> is correct.<br/> •This assumption allows LDA to derive linear decision boundaries analytically.<br/> •LDA produces linear decision boundaries in the input feature space.<br/> •These boundaries are based on solving a linear equation involving the inverse of the shared<br/> covariance matrix and class means.<br/> •Non-linear boundaries may occur in Kernel LDA, but not in standard LDA. So, <em>S</em> <sub>2</sub> is incorrect.<br/> •This is the central assumption of Naive Bayes: given the class label, the features are assumed<br/> to be conditionally independent.<br/> •This assumption simplifies the joint likelihood into a product of individual feature likelihoods.<br/> So, <em>S</em> <sub>3</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a ridge regression model, the residual Sum of Squares (RSS) is 2.7. The model uses a weight<br/> vector <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_13.png"/> = [2, 1, 3], and the regularization parameter λ = 0.2.<br/> What is the total cost function value <em>J</em> (<img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_14.png"/>)? `,
+      image: "",
+      options: [
+        `4.3`,
+        `6.1`,
+        `5.5`,
+        `4.9`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The approximation error of a polynomial regression model depends on the number of training points.<br/> <em>S</em> <sub>2</sub> : The structural error of a polynomial regression model depends on the number of training point.<br/>Which of the following statements is/are correct? `,
+      image: "",
+      options: [
+        `Only <em>S</em> <sub>1</sub>`,
+        `Only <em>S</em> <sub>2</sub>`,
+        `Both <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
+        `Neither <em>S</em> <sub>1</sub> nor <em>S</em> <sub>2</sub>`,
+      ],
+      answer: "C",
+      solution: `<br/> •As the number of training points increases, the fitted polynomial can match the underlying function more closely within the same model class, so the approximation improves. So, <em>S</em> <sub>1</sub> is correct.<br/> •Structural error is related to limitations of the model ’s capacity (like fixed polynomial degree) and stays constant regardless of how many data points are used. So <em>S</em> <sub>2</sub> is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A feedforward MLP accepts 5 input features, has three hidden layers with 6, 4, and 3 neurons respectively, followed by an output layer with 2 neurons. Each neuron is fully connected to the previous layer and includes a bias term. Find the total number of trainable parameters`,
+      image: "",
+      options: [
+        `79`,
+        `83`,
+        `84`,
+        `87`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `K-mean clustering algorithm has clustered the given 8 observations into 3 clusters after<br/> 1<sup>st</sup> iteration as follows:<br/> C1 : {(2, 2), (4, 4), (6, 6)}<br/> C2 : {(0, 5), (5, 0), (2, 0)}<br/> C3 : {(7, 7), (3, 3)}<br/>What will be the Manhattan distance for observation (3, 3) from cluster centroid C1 in second iteration? `,
+      image: "",
+      options: [
+        `2`,
+        `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_17.png"/>`,
+        `0`,
+        `18`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Suppose 18000 hours of faculty teaching were tested for teaching effectiveness. Out of them, 12000 hours are actually effective, and 6000 hours are actually ineffective. For the ineffective hours, the test predicted positive for 4500 and negative for 1500. For the effective hours, the test<br/>predicted positive for 800 and negative for 11200. Which of the following is/are true? `,
+      image: "",
+      options: [
+        `Accuracy of model is 0.872`,
+        `Accuracy of model is 0.128`,
+        `Error rate of model is 0.128`,
+        `Error rate of model is 0.872`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_19.png"/><br><br><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The dropout technique is used to prevent overfitting in neural networks.`,
+        `A confusion matrix is used to evaluate the performance of classification models.`,
+        `Cross-entropy loss is used to measure regression accuracy.`,
+        `The Learning rate represents the step size in the gradient descent algorithm.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<br/> •Dropout is a regularization method where randomly selected neurons are ignored during<br/> training. This helps the model generalize better and prevents overfitting. So, option (a) is<br/> correct.<br/> •A confusion matrix is a table used to measure the performance of a classification algorithm. It<br/> includes values like True Positives, False Positives, True Negatives, and False Negatives.<br/> From this, metrics like accuracy, precision, recall, and F1-score can be calculated. So, option (b)<br/> is correct.<br/> •Cross-Entropy Loss is used for classification problems, not regression. For regression tasks,<br/> common loss functions include Mean Squared Error (MSE) and Mean Absolute Error (MAE).<br/> So, option (c) is incorrect.<br/> •The learning rate controls how much the model 's weights are updated during each step of<br/> optimization. A higher learning rate might speed up training but can overshoot the minimum,<br/> while a smaller learning rate might take more time but converge smoothly. So, option (d) is<br/>correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a dataset with 20 samples: 12 belong to class A and 8 belong to class B.<br/>Calculate the entropy of the dataset `,
+      image: "",
+      options: [
+        `0.74`,
+        `0.97`,
+        `0.32`,
+        `1.56`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Ridge regression is a regularization technique that uses L1 penalty to reduce overfitting.`,
+        `Ridge regression does not help in correcting multicollinearity in linear regression models.`,
+        `Ridge regression penalizes large model coefficients using L2 regularization.`,
+        `Ridge regression can also be applied to logistic regression models.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<br/> •Ridge regression uses L2 regularization, not L1. The L1 penalty is used in Lasso Regression,<br/> which promotes sparsity in the coefficients. So, option (a) is incorrect.<br/> •Multicollinearity-a condition where predictor variables are highly correlated. It does so by<br/> adding a penalty term to shrink coefficients, thus stabilizing estimates. So, option (b) is incorrect.<br/> •Ridge regression introduces a penalty equal to the square of the magnitude of coefficients (L2<br/> norm). This discourages large coefficients and helps reduce overfitting. So, option (c) is correct.<br/> •Although Ridge regression is mainly introduced in the context of linear regression, it can also<br/> be extended to logistic regression for classification problems by applying the L2 penalty to<br/>the cost function. So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `LDA minimizes the distance between the means of different classes.`,
+        `LDA minimizes the variance within each class.`,
+        `LDA can be applied always when only one class is present in the dataset.`,
+        `LDA may not perform well when the number of features exceeds the number of samples.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<br/> •LDA aims to maximize the between-class scatter, which involves increasing the distance between<br/> the class means to enhance class separability. So, option (a) is incorrect.<br/> •Minimizing the distance between class means would reduce class separability, which goes<br/> against the fundamental purpose of LDA.<br/> •One of the objectives of LDA is to minimize the within-class scatter (i.e., variance within the<br/> same class), so that samples from the same class are grouped closely together after projection.<br/> •This helps in achieving better class separation in the transformed space. So, option (b) is<br/> correct.<br/> •LDA is a supervised classification method that relies on comparing multiple classes.<br/> •When only one class is present, there is no between-class information to learn from, so LDA<br/> cannot be applied in such cases. So, option (c) is incorrect.<br/> •When the number of features (dimensions) is greater than the number of training samples,<br/> the within-class scatter matrix becomes singular (non-invertible).<br/> •This causes numerical instability and can degrade LDA 's performance unless modifications or<br/>regularization techniques are applied. So, option (d) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Principal Component Analysis (PCA) is a linear technique that projects data onto directions of maximum variance.`,
+        `t-SNE is a non-linear technique that preserves local neighborhood structure in high-dimensional data.`,
+        `Dimensionality reduction helps in mitigating the curse of dimensionality and improves model interpretability.`,
+        `In PCA, the principal components are chosen based on the minimum variance in the data.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<br/> •PCA is a linear dimensionality reduction technique that projects the data onto orthogonal<br/> directions (principal components) that capture the maximum variance in the dataset.<br/> So, option (a) is correct.<br/> •t-SNE (t-distributed Stochastic Neighbor Embedding) is a non-linear method that is especially<br/> effective for visualizing high-dimensional data, as it focuses on preserving local neighborhood<br/> relationships. So, option (b) is correct.<br/> •Dimensionality reduction reduces the number of features, which helps in reducing<br/> computational cost, overfitting, and improving interpretability, especially in high-dimensional<br/> settings - thus helping to mitigate the curse of dimensionality. So, option (c) is correct.<br/> •PCA selects principal components based on maximum, not minimum, variance. The first principal<br/> component captures the largest variance, the second captures the next highest, and so on. So,<br/>option (d) is incorrect. `
     }
 
   ]
