@@ -16312,6 +16312,5736 @@ registerTest({         //made easy 2026 cse subject wise test computer organizat
 });
 
 // MADE EASY 2026 EE ALL TEST SERIES
+registerTest({        //
+  series: "ee-gate-pyq",
+  name: "TWT - Electric Circuits-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following statements:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_1.png"/><br><br>the equivalent resistance between <em>A</em> and <em>B</em> is ________ Ω. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3.78,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_2.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following circuits:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_4.png"/><br><br>the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_5.png"/>is _______ A. `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the circuit shown in figure, voltage <em>V</em> <sub>0</sub> across the 10 Ω resistance is <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_10.png"/>`,
+      image: "",
+      options: [
+        `–6<em>j</em>`,
+        `+ 8<em>j</em>`,
+        `–16<em>j</em>`,
+        `9<em>j</em>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_11.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the circuit shown below, the Norton’s equivalent current at the terminals 1 – 1′ is <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_18.png"/>`,
+      image: "",
+      options: [
+        `1 A`,
+        `2 A`,
+        `3 A`,
+        `4 A`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_19.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_21.png"/><br><br>The power delivered by the 10 A current source is equal to`,
+      image: "",
+      options: [
+        `10 W`,
+        `50 W`,
+        `80 W`,
+        `123 W`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_23.png"/><br><br>The value of voltage source <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_24.png"/> = 10cos(100t) V, then the value of current i(t) is equal to Assume <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_25.png"/> `,
+      image: "",
+      options: [
+        `5cos(100<em>t</em> ) mA`,
+        `18sin(100<em>t</em> ) mA`,
+        `25sin(100<em>t</em> ) mA`,
+        `16cos(100<em>t</em> ) mA`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in figure below,<br/> <br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_34.png"/> <br/> When switch is open, than <em>L</em> <sub>eq</sub> is measured to be <em>L</em> <sub>1</sub> and when switch is closed, the <em>L</em> <sub>eq</sub> is measured to be <em>L</em> <sub>2</sub> , then the ratio <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_35.png"/>is ________ . `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two identical coupled coils have an equivalent inductance of 80 mH When connected in series aiding, and 35 mH in series opposing the coefficient of coupling is _________. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.39,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The total charge accumulated by a certain device is given as a function of time by <em>q</em> = 18<em>t</em> <sup>2</sup> – 2<em>t</em> <sup>4</sup> (in <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_56.png"/> units) the maximum charge accumulated in the interval 0 ≤ <em>t</em> ≤ 3 sec is ____C. (Answer rounded off to one decimal place) `,
+      image: "",
+      options: [
+      ],
+      answer: 40.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_57.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit given below as shown in the figure:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_7.png"/><br><br>The ratio of the voltage across the load resistance connected across the terminals <em>a</em> - <em>b</em> to the source voltage when the source is delivering maximum power to the load is _______ . (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.92,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_8.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the circuit shown below:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_13.png"/><br><br>Which of the following is/are correct?`,
+      image: "",
+      options: [
+        `The value of current <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_14.png"/>is equal to 3 mA.`,
+        `The value of output voltage <em>V</em> <sub>0</sub> is equal to 9 V.`,
+        `The 12 V independent source is absorbing 144 mW of power.`,
+        `The current <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_15.png"/>is equal to 9 A.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_16.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the AC circuit shown below,<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_27.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_28.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_29.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_30.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_31.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_32.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the circuit as shown in the figure having two independent sources as 32 V and 2 A delivering power to a variable load resistor <em> R<sub>L</sub> </em> across the terminals a-b. Thevenin’s equivalent voltage across the terminals a-b and the % fractional change in current through the load when <em> R<sub>L </sub> </em> is changed from 6 Ω to 16 Ω are respectively. <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_37.png"/>`,
+      image: "",
+      options: [
+        `30 V and 50%`,
+        `24 V and 33.33%`,
+        `30 V and –50%`,
+        `24 V and –52.63%`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a linear circuit modelled as shown below to which a load resistance <em> R<sub>L</sub> </em> is connected.<br/>The following data is obtained as given: <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_39.png"/><br><br>The Norton’s equivalent circuit will consist of`,
+      image: "",
+      options: [
+        `A current source of 3.63 A in parallel with a resistance of 3.65 Ω.`,
+        `A current source of 3.65 A in series with a resistance of 3.63 Ω.`,
+        `A voltage source of 3.65 V in parallel with a resistance of 3.63 Ω.`,
+        `A current source of 3.65 A in parallel with a resistance of 13.63 Ω.`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_40.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following circuit:<br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_42.png"/><br><br>If ω = 1 rad/sec then the equivalent form of the given circuit is`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_43.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_44.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_45.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_46.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_47.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The circuit given in the figure is driven by a voltage source <em> V<sub>S</sub> </em> . The system is operating at a frequency of 50 Hz. If the transformers are assumed to be ideal, then <em>V</em> <sub>1</sub> is _____ <em> V<sub>S</sub> </em> . <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_49.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 50,
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following circuit :<br/> <br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_52.png"/> <br/> the current <br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_53.png"/><br><br>is `,
+      image: "",
+      options: [
+        `2 A`,
+        `3 A`,
+        `1 A`,
+        `4 A`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_54.png"/><br><br><img alt="" src="js/questions/topicwise_test_1_part_syllabus_gate_2026_ee_electric_circuits_part_1/img_55.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Engineering Mathematics-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The integrating factor for the differential equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_1.png"/>is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_5.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A student appears for a quiz consisting of only true-false type questions and answer all the questions. The student knows the answers of some questions and guesses the answers for the remaining questions. Whenever the student knows the answer of a question, he gives the correct answer. Assume that the probability of the students giving the correct answer for a question given that he has guessed it, is <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_10.png"/> Also assume that the probability of the answer for a question being guessed, given that the student’s answer is correct is <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_11.png"/>Then the probability that the student knows the answer of a randomly chosen question is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_12.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_14.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_15.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_16.png"/><br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The solution of the differential equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_20.png"/>is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_24.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_26.png"/>is a continuous random variable with p.d.f. given by <br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_27.png"/><br><br>The value of <em>k</em> is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_28.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_29.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_31.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A random variable <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_40.png"/>has the following probability distribution <br/> <br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_41.png"/> <br/> If the mean of <br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_42.png"/><br><br>is 0.8, then a = `,
+      image: "",
+      options: [
+        `5`,
+        `1.5`,
+        `4`,
+        `3`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_43.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `India plays two matches each with England and Australia. In any match the probabilities of India getting points 0, 1 and 2 are 0.45, 0.05 and 0.50 respectively. Assuming that the outcomes are independent, the probability of India getting at least 7 points is`,
+      image: "",
+      options: [
+        `0.8750`,
+        `0.0875`,
+        `0.0625`,
+        `0.0250`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The degree of the differential equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_66.png"/>is `,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_67.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_68.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_69.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_70.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_71.png"/>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_72.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_75.png"/>is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_76.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_77.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_78.png"/>`,
+        `0`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_79.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_7.png"/>_______. (Answer in nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_8.png"/><br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a study about a pandemic, data of 900 persons was collected.It was found that<br/> • 190 persons had symptom of fever<br/> • 220 persons had symptom of cough<br/> • 220 persons had symptom of breathing problem<br/> • 330 persons had symptom of fever or cough or both<br/> • 340 persons had symptom of fever or breathing problem or both<br/> • 350 persons had symptom of cough or breathing problem or both<br/> • 30 persons had all three symptoms (fever, breathing problem and cough)<br/>If a person is chosen randomly from these 900 persons, then the probability that the person has at most one symptom is ______. `,
+      image: "",
+      options: [
+      ],
+      answer: 0.80,
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_18.png"/><br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_33.png"/>is an integrating factor of the differential equation: <br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_34.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_35.png"/>`,
+        `7`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_37.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_38.png"/><br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation:<br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_45.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_46.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_47.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_48.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_49.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_51.png"/> under the condition y = 0, <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_52.png"/> when <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_53.png"/>is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_54.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_55.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_56.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_57.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Number of tigers in a reserve is normally distributed with mean &amp; variance respectively as 1200 and 9 × 10<sup>4</sup> . The probability of finding more than 1800 tigers is approximately `,
+      image: "",
+      options: [
+        `0.0125`,
+        `0.025`,
+        `0.05`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_59.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_60.png"/>equals `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_61.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_62.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_63.png"/>`,
+        `1`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_64.png"/><br><br><img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_65.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_73.png"/>is `,
+      image: "",
+      options: [
+        `0`,
+        `∞`,
+        `1/6`,
+        `– 1/6`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_10_part_syllabus_gate_2026_ee_engineering_mathematics_2/img_74.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - General Aptitude-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a rare coin collection, there is one gold coin for every three non-gold coins. 10 more gold coins are added to the collection and the ratio of gold coins to non-gold coins becomes 1 : 2. Based on the information, the total number of coins in the collection now becomes ____.`,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the mirror image of following figure.<br><br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_5.png"/>`,
+      image: "",
+      options: [
+        `I`,
+        `II`,
+        `III`,
+        `IV`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cuboid has six sides of different colours. The red side is opposite to black. The blue side is adjacent to white. The brown side is adjacent to blue. The red side is face down. Which one of the following would be the opposite to brown?`,
+      image: "",
+      options: [
+        `Red`,
+        `Black`,
+        `While`,
+        `Blue`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> There are six villages <em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> .<br/> <em>F</em> is 1 km to the west of <em>D</em> .<br/> <em>B</em> is 1 km to the east of <em>E</em> .<br/> <em>A</em> is 2 km to the north of <em>E</em> .<br/> <em>C</em> is 1 km to the east of <em>A</em> .<br/> <em>D</em> is 1 km to the south of <em>A</em> .<br/>Which three villages are in a line? `,
+      image: "",
+      options: [
+        `<em>A</em> , <em>C</em> , <em>B</em>`,
+        `<em>A</em> , <em>D</em> , <em>E</em>`,
+        `<em>C</em> , <em>B</em> , <em>F</em>`,
+        `<em>E</em> , <em>B</em> , <em>D</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The piechart given below shows the distribution of workforce by occupational category for country <em>X</em> in 1981 and 1995. Study the chart and answer the below question. <br><br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_12.png"/><br><br>The percentage decrease in the number of Blue-Collar workers in the workforce of country <em>X </em> from 1981 to 1995 is `,
+      image: "",
+      options: [
+        `20%`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_14.png"/>`,
+        `35%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following statements:<br/> 1. All artists are whimsical.<br/> 2. Some artists are drug addicts.<br/> 3. Frustrated people are prone to become drug addicts.<br/>From the above three statements, it may be concluded that `,
+      image: "",
+      options: [
+        `Artists are frustrated`,
+        `Some drug addicts are whimsical`,
+        `Whimsical people are generally frustrated`,
+        `All frustrated people are drug addicts`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A square paper is folded in a particular manner and a punch is made. When unfolded the paper appears as given below :<br><br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_20.png"/><br><br>Select the manner in which the paper is folded and punch is made from the responses given.`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_24.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The graph of <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_29.png"/>is given by `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_30.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_31.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_32.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_33.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following cubes in the answer figure cannot be made based on the unfolded cube in the question figure?<br><br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_35.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_39.png"/>`,
+      ],
+      answer: "C",
+      solution: `<br/> From the given unfolded cube, star and dot appear opposite to each other and thus, cannot be<br/>adjacent to each other. Hence, the cube depicted in option (c) cannot be made. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The digits of a three digit number <em>x</em> are written in the reverse order to form another three digit number y. If <em>y</em> &gt; <em>x</em> and y – <em>x</em> is perfectly divisible by 7, then which of the following is maximum possible value of x? `,
+      image: "",
+      options: [
+        `108`,
+        `156`,
+        `208`,
+        `299`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Amar, Akbar and Anthony are friends, being looked after by a matron Farah. Amar weighs 50% more than Akbar and Anthony weighs 25% less than Amar. Farah weighs a third of the combined weight of three boys. All four together weigh 232 kg. The correct arrangement of the persons in the descending order of their weights is`,
+      image: "",
+      options: [
+        `Amar, Farah, Akbar, Anthony`,
+        `Farah, Amar, Akbar, Anthony`,
+        `Farah, Amar, Anthony, Akbar`,
+        `Amar, Farah, Anthony, Akbar`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> are cousins. No two cousins are of the same age, but all have birthdays on the same day of the same month. The Youngest is 17 years old and the oldest <em>E</em> is 22 years old. <em>F</em> is somewhere between <em>B</em> and <em>D</em> in age. <em>A</em> is older than <em>B</em> . <em>C</em> is older than <em>D</em> . <em>A</em> is one year<br/> older than <em>C</em> . Which one of the following is possible? `,
+      image: "",
+      options: [
+        `<em>D</em> is 20 years old`,
+        `<em>F</em> is 18 years old`,
+        `<em>F</em> is 19 years old`,
+        `<em>F</em> is 20 years old`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following figure and answer the item that follows:<br><br><img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_7.png"/><br><br>A square is divided into four rectangles as shown above. The length of the sides of rectangles are natural numbers, and the areas of two rectangles are indicated in the figure. What is the length of each side of the square?`,
+      image: "",
+      options: [
+        `10`,
+        `11`,
+        `15`,
+        `cannot be determined as the given data insufficient`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> , <em>E</em> and <em>F</em> not necessarilly in that order, are sitting in six chairs regularly placed around a round table. It is observed that <em>A</em> is between <em>D</em> and <em>F</em> , <em>C</em> is opposite to <em>D</em> and <em>D</em> and <em>E</em> are not on neighbouring chairs. Which of the following pairs must be sitting on neighbouring chairs? `,
+      image: "",
+      options: [
+        `<em>A</em> and <em>B</em>`,
+        `<em>C</em> and <em>E</em>`,
+        `<em>B</em> and <em>F</em>`,
+        `<em>A</em> and <em>C</em>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_17.png"/>is `,
+      image: "",
+      options: [
+        `0`,
+        `0.4`,
+        `2.2`,
+        `4.4`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of 4-digit integers in the closed interval [2022, 4482] formed by using the digits 0, 2, 3, 4, 6, 7 is`,
+      image: "",
+      options: [
+      ],
+      answer: 569,
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At a point on ground, the angle of elevation of a vertical tower, is found to be such that it’s tangent is <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_26.png"/> On walking 192 meters towards the tower, the tangent of the angle of elevation is found to be <img align="absmiddle" alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_27.png"/>The height of the tower is `,
+      image: "",
+      options: [
+        `160 meters`,
+        `180 meters`,
+        `240 meters`,
+        `260 meters`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_11_part_syllabus_gate_2026_ee_general_aptitude_part_1/img_28.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - General Aptitude-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the part (option) of the below sentence that contains an error :<br/>He was consulted seldom by his colleagues while making important decisions on financial matters. `,
+      image: "",
+      options: [
+        `He was consulted seldom`,
+        `Decisions on financial matters`,
+        `By his colleagues`,
+        `While making important`,
+      ],
+      answer: "A",
+      solution: `<br/> The adverb of frequency, “seldom,”should typically be placed before the main verb “consulted.”<br/> Thus, the correct sentence is:<br/>He was seldom consulted by his collegues while making important decisions on financial matters. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If MOBILE is written as ZAMSUM, how TUMOR can be written in that code?`,
+      image: "",
+      options: [
+        `BRAIN`,
+        `HGYAD`,
+        `GGXYA`,
+        `IHZBE`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given diagram, circle represents professionals, square represents dancers, triangle represents musicians and rectangle represents Europeans. Different regions in the diagram are numbered 1 to 11. Who among the following is neither a dancer nor a musician but is professional and not a European?<br><br><img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_3.png"/>`,
+      image: "",
+      options: [
+        `8`,
+        `11`,
+        `1`,
+        `10`,
+      ],
+      answer: "D",
+      solution: `<br/> The people who are neither dancers nor musicians but are professionals and not Europeans,<br/> means part of circle excluding common of circle with Triangle, square and rectangle i.e.<br/>Region “10 ”. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the correct alternative to fill in the blank in the sentence given below.<br/>Today student should be reconciled _____ the way things are changing. `,
+      image: "",
+      options: [
+        `with`,
+        `to`,
+        `for`,
+        `at`,
+      ],
+      answer: "A",
+      solution: `<br/> With is used with reconcile.<br/> Reconcile →To make oneself or another no longer opposed.<br/>Here, with is the right usage. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy:<br/>Horse : Neigh :: Bells : ? `,
+      image: "",
+      options: [
+        `Beat`,
+        `Chime`,
+        `Rustle`,
+        `Roar`,
+      ],
+      answer: "B",
+      solution: `<br/>A horse produces a neigh sound, similarly bells produce a chime sound. Therefore, the correct answer is Chime. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In questions no. 12 and 13, one/two statements are given followed by two/three conclusions. You have to consider the statements to be true even if they seem to be at variance from commonly known facts. You have to decide which of the given conclusions, if any, follows from the given statements.<br/> <strong>Statement:</strong> <br/> Sun is the source of light.<br/> <strong>Conclusions:</strong> <br/> I. Moon is not the source of light<br/>II. Light has only one source. `,
+      image: "",
+      options: [
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `Both conclusions (I) and (II) follow`,
+        `Neither conclusion (I) nor (II) follows`,
+      ],
+      answer: "D",
+      solution: `<br/> The statement only mentions sun as a source of light but it does not deny other sources (like Moon,<br/>bulbs, fire etc.) and it does not say sun is the only source. Therefore, both conclusions are wrong. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<strong>Statement:</strong> <br/> I. All cities are towns.<br/> II. Some cities are villages.<br/> <strong>Conclusions:</strong> <br/> I. All villages are towns.<br/> II. No village is a town.<br/>III. Some villages are towns. `,
+      image: "",
+      options: [
+        `Only conclusion (III) follows`,
+        `Only conclusion (I) follows`,
+        `Only conclusion (II) follows`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<br/> Some cities are villages, and all cities are towns. So, those villages (which are cities) are also<br/> towns. Hence, some villages are towns.<br/>So, only conclusion III is correct. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following diagrams best depicts the relationship among Earth, Sea and Sun?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_7.png"/>`,
+      ],
+      answer: "D",
+      solution: `<br/> Sea is a part of the Earth and Sun is a separated celestial body, not a part of the earth. Thus,<br/>option (d) best depicts the relationship among Earth, Sea and Sun. `
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the related word from the given alternatives that fits the analogy.<br/>FLEXIBLE : RIGID : : CONFIDENCE : ? `,
+      image: "",
+      options: [
+        `Diffidence`,
+        `Indifference`,
+        `Cowardice`,
+        `Scare`,
+      ],
+      answer: "A",
+      solution: `<br/> “Flexible ”and “Rigid ”are antonyms. Diffidence meaning shyness or lack of confidence is the<br/>opposite of confidence. Thus, option (a) is correct. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Out of given alternatives, choose the one which best expresses the meaning of the word, Envoy`,
+      image: "",
+      options: [
+        `Carrier`,
+        `Chief`,
+        `Ambassador`,
+        `Receiver`,
+      ],
+      answer: "C",
+      solution: `<br/> The word “Envoy ”refers to a person who is sent as a representative, often on a diplomatic<br/> mission. An ambassador is a senior diplomat or envoy representing a country. So, “Ambassador ”<br/>best expresses the meaning of the word “Envoy ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Choose the word opposite in meaning for the underlined word:<br/> The hot summer afternoon made everyone feel <u>languid</u> and they sought refuge in the shade to escape the heat. `,
+      image: "",
+      options: [
+        `Listless`,
+        `Energetic`,
+        `Lethargic`,
+        `Sluggish`,
+      ],
+      answer: "B",
+      solution: `<br/> The word “Languid ”means lacking energy, weak, or slow-often due to fatigue, illness, or heat.<br/> In the context of the sentence, the hot summer afternoon made everyone feel fired and drained.<br/>Hence, “Energetic ”is the opposite in the meaning to “languid ”. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Select the alternative which is the best substitute of the sentence/word:<br/>Take away or alter the natural qualities of `,
+      image: "",
+      options: [
+        `Denature`,
+        `Unadulterated`,
+        `Authentic`,
+        `Limpid`,
+      ],
+      answer: "A",
+      solution: `<br/> Denature : Changed from its natural state.<br/> Unadulterated : Pure, not mixed or diluted with any different or extra elements.<br/> Authentic : Genuine, real, not fake or copied. An authentic document is the original, not a duplicate<br/> or forgery.<br/>Limpid : Clear, transparent, often used for liquids, but also can describe clear writing or thought. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If × stands for addition, <for +="" division,="" for="" subtraction,="">for multiplication, – for equal to, ÷ for greater than and = for less than, state which of the following expressions is true? </for>`,
+      image: "",
+      options: [
+        `3 × 2 <4 ÷ 16>2 + 4`,
+        `5 > 8 + 4 = 10 <4 × 2`,
+        `3 × 4 > 2 – 9 + 3 <3`,
+        `5 × 3 × 3 ÷ 8 + 4 × 1`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the following question, the passage/sentence is split into four parts A, B, C and D. These four parts are not given in their proper order. Read the sentence and find out which of the following four combinations is correct.<br/> A. Explained angrily<br/> B. The bricklayer<br/> C. Leaving the site<br/>D. His reasons for `,
+      image: "",
+      options: [
+        `BADC`,
+        `DCAB`,
+        `CBAD`,
+        `ADCB`,
+      ],
+      answer: "A",
+      solution: `<br/>The bricklayer explained angrily his reasons for leaving the site. Hence, the correct order is BADC. `
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The World Health Organisation is briefly called W.H.O. It is a specialised agency of the United Nations and was established in 1948.  International health workers can be seen working in all kinds of surroundings: in deserts, jungles, mountains, coconut groves, and rice fields. They help the sick to attain health and the healthy to maintain their health. This global health team assists the local health workers in stopping the spread of what are called communicable diseases, like cholera. These diseases can spread from one country to another and so can be a threat to world health. W.H.O. assists different national health authorities not only in controlling diseases but also in preventing them altogether. Total prevention of diseases is possible in a number of ways. Everyone knows how people, particularly children, are vaccinated against one disease or another. Similarly, most people are familiar with the spraying of houses with poisonous substances which kill disease-carrying insects.<br/>"It is a specialised agency of the United Nations and was established in 1948.” Here specialised means `,
+      image: "",
+      options: [
+        `expert`,
+        `extraordinary`,
+        `uncommon`,
+        `made suitable for a particular purpose`,
+      ],
+      answer: ["D"],
+      solution: `<br/> The word “specialised ”refers to something that is focused on a specific area or purpose rather<br/> than being general. In the sentence, W.H.O. is described as a specialised agency —meaning it is<br/> an agency that deals specifically with health matters, not with everything else. Thus, “made<br/> suitable for a particular purpose ”is the most accurate meaning.<br/> (A) expert: relates to skill, but “specialised ”here talks about focus, not expertise.<br/> (B) extraordinary: means very special or unusual —not the meaning here.<br/>(C) uncommon: means rare —not the intended meaning. `
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If ‘PUNCTUATION’ is coded as ‘QVODUVBUJPO’ and ‘SING’ as ‘TJOH’, then how is ‘PARLIAMENT’ coded?`,
+      image: "",
+      options: [
+        `QBSMJKNFMU`,
+        `QBSMJBNFOU`,
+        `QTBSMJOFOU`,
+        `QASTMJNFOU`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_12_part_syllabus_gate_2026_ee_general_aptitude_part_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Arrange the following four sentences P, Q, R and S in the proper sequence to form a meaningful<br/> paragraph starting from 1 and ending with 6.<br/> 1. Communication has been an important aspect all through the ages.<br/> P. E-mail is a convenient way to deliver any requested information.<br/> Q. Today instantaneous communication is vital.<br/> R. Voice is often easier than e-mail, but it is not as easy to create and send nor is it possible to send the same message to a large number of people in different places in the world.<br/> S. It is also a good way to communicate with multiple people at the same time; but e-mail is only one form for communication.<br/> 6. The other forms of faster and easier communication are being explored.<br/>Which one of the following is the correct sequence? `,
+      image: "",
+      options: [
+        `SQRP`,
+        `QPSR`,
+        `SPRQ`,
+        `RQSP`,
+      ],
+      answer: "B",
+      solution: `b`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Signals &Systems-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a signal <em>f</em> (<em>t</em> ) as shown below: <br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_1.png"/><br><br>The value of integral <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_2.png"/>is `,
+      image: "",
+      options: [
+        `0`,
+        `0.5`,
+        `1`,
+        `2`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The energy of a signal <em>x</em> (<em>t</em> ) is 10. The energy of a another signal <em>y</em> (<em>t</em> ) = x(<em>Bt</em> – 50) is 5. The value of constant ‘<em>B</em> ’ is `,
+      image: "",
+      options: [
+        `2`,
+        `10`,
+        `5`,
+        `0.5`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_4.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The impulse response of an LTI system is as shown below:<br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_6.png"/><br><br>The step response of the system is,`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_9.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_10.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The magnitude plot of the signal <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_19.png"/>is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_20.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_23.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_24.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a discrete time signal <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_33.png"/> then the energy of the signal <em>x</em> (2<em>n</em> ) is _________ J. `,
+      image: "",
+      options: [
+      ],
+      answer: 17,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the system, <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_41.png"/>The system is `,
+      image: "",
+      options: [
+        `Causal and stable`,
+        `Causal and unstable`,
+        `non-causal and unstable`,
+        `anticausal and unstable`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a discrete time sequence<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_43.png"/>Then the value of conjugate antisymmetric part of sequence at origin is `,
+      image: "",
+      options: [
+        `1 – <em>j</em>`,
+        `1 + <em>j</em>`,
+        `–<em>j</em>`,
+        `+<em>j</em>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a discrete time signal as follows:<br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_45.png"/><br><br>If <em>y</em> [<em>n</em> ] = <em>x</em> [<em>n</em> ] + <em>x</em> [–<em>n</em> ], then the energy of the signal <em>y</em> [<em>n</em> ] will be `,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `2`,
+        `4`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A continuous time signal is defined as <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_52.png"/> The fundamental time period of x(<em>t</em> ) is `,
+      image: "",
+      options: [
+        `30π sec`,
+        `15π sec`,
+        `15 sec`,
+        `30 sec`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The input output relationship of a system is given by <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_12.png"/> Choose a value of ‘α’ such that the given system becomes stable if input x[<em>n</em> ] is bounded. `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_14.png"/>`,
+        `2`,
+        `3`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The complex exponential Fourier series representation of a signal <em>x</em> (<em>t</em> ) over the interval (0, <em>T</em> ) is <br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_16.png"/><br><br>If one of the components of <em>x</em> (<em>t</em> ) is <em>F</em> cos2π<em>t</em> , the value of <em>F</em> is ________ . (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.020,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_17.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The rms value of given periodic signal <em>f</em> (<em>x</em> ) is ________ <em> F<sub>m</sub> </em> . (Answer upto three decimal places) <br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_26.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.777,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_27.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The compact trigonometric Fourier series for the periodic signal x(<em>t</em> ) shown below is <br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_29.png"/><br><br>The value of ratio <img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_30.png"/>is ______ . (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.504,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_31.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following signal(s) is/are non-linear?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_35.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_38.png"/>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_39.png"/><br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a discrete time system <em>S</em> <sub>1</sub> with impulse response <em>h</em> [<em>n</em> ] =<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_47.png"/> <br/> Then the value of constant <em>A</em> such that <em>h</em> [<em>n</em> ] – <em>Ah</em> [<em>n</em> – 1] = δ[<em>n</em> ] is equal to ________. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.50,
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following signals is/are periodic?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_49.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_50.png"/>`,
+        `Even {cos(4π<em>t</em> )<em>u</em> (<em>t</em> )}`,
+        `Even {sin(4π<em>t</em> )<em>u</em> (<em>t</em> )}`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a discrete-time system which is both linear and time invariant. For an input x(<em>n</em> ) = δ(<em>n</em> ), the output <em>y</em> (<em>n</em> ) is given by, <br><br><img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_54.png"/><br><br>If x[<em>n</em> ] = 2δ[<em>n</em> ] – δ[<em>n</em> – 2], then the output <em>y</em> (<em>n</em> ) is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_55.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_56.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_57.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_58.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_13_part_syllabus_gate_2026_ee_signals_systems_part_1/img_59.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Signals &Systems-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Final value of <em>X</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_3.png"/>is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_4.png"/>`,
+        `∞`,
+        `0`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The inverse Laplace transform of<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_6.png"/>is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_7.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_8.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_9.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_10.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If for an LTI system with input impulse response <em>h</em> (<em>t</em> ) = <em>e</em> <sup> –2<em>t</em> </sup> <em>u</em> (<em>t</em> ), then the output for an input of <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_19.png"/> = <em>e</em> <sup> –<em>t</em> </sup> <em>u</em> (<em>t</em> ) is `,
+      image: "",
+      options: [
+        `<em>e</em> <sup> –<em>t</em> </sup> <em>u</em> (<em>t</em> )`,
+        `<em>e</em> <sup> –2<em>t</em> </sup> <em>u</em> (<em>t</em> )`,
+        `(<em>e</em> <sup> –<em>t</em> </sup> + <em>e</em> <sup> –2<em>t</em> </sup> ) <em>u</em> (<em>t</em> )`,
+        `<em>e</em> <sup> –<em>t</em> </sup> <em>u</em> (<em>t</em> ) – <em>e</em> <sup> –2<em>t</em> </sup> <em>u</em> (<em>t</em> )`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_20.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The step response of the system <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_22.png"/> when the initial condition is <em>y</em> (–1) = 1 will be: `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_23.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_24.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_26.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The Laplace transform of given signal <em>f</em> (<em>t</em> ) is F(s). The value of <em>F</em> (<em>s</em> ) at <em>s</em> = 1 is _________ . <br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_43.png"/><br><br>(Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 1.42,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A discrete signal x[n] has z-transform X(z) with ROC : ⎪z⎪ &gt; 0.5. Another signal <em>y</em> [<em>n</em> ] has z-transform X(z<sup>3</sup> ). The ROC of the signal y[n] is `,
+      image: "",
+      options: [
+        `⎪z⎪ > 0.125`,
+        `⎪z⎪ > 1.5`,
+        `⎪z⎪ <0.397`,
+        `⎪z⎪ > 0.794`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The signal <em>x</em> (<em>t</em> ) has Fourier transform as shown below: <br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_46.png"/><br><br>The condition on the sampling interval <em> T<sub>s</sub> </em> so that <em>x</em> (<em>t</em> ) is uniquely represented by the discretetime sequence <em>x</em> [<em>n</em> ] = <em>x</em> [ <em> nT<sub>s</sub> </em> ] is `,
+      image: "",
+      options: [
+        `<em> T<sub>s</sub> </em> ≥ 0.5714`,
+        `<em> T<sub>s</sub> </em> ≤ 1.75`,
+        `<em> T<sub>s</sub> </em> ≥ 3.5`,
+        `<em> T<sub>s</sub> </em> ≤ 0.286`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_47.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A discrete time <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_51.png"/> has Fourier transform <em>X</em> (<em>e</em> <sup> <em>j</em> ω </sup> ). The value of integral<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_52.png"/>is _______ . (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 9.425,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_53.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If the z-transform of signal g[n] is <em>G</em> (<em>z</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_62.png"/>The value of g[17] is ________ . (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3.375,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The DTFT of a stable signal <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_1.png"/> If X(<em>e</em> <sup> <em>j</em> 0 </sup> ) = 1, the magnitude of ‘a’ is<br/>________ . (Rounded off to three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.707,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A causal discrete time LTI system is described by <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_12.png"/> and<br/>y(n) are the input and output of the system respectively then the step response, s(n) is `,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_13.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_14.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_15.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_16.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_17.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The LTI system with system function <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_28.png"/>Which of the following statement(s) is/are correct? `,
+      image: "",
+      options: [
+        `system is stable`,
+        `system is causal`,
+        `system is unstable`,
+        `system poles are at z = 0.8 and z = 2`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_29.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The inverse z-transform <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_31.png"/>is _______. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3.33,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a causal LTI system whose input x[n] and output y[n] are related by the difference equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_33.png"/> The value of impulse response at n = 7 is _______<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_34.png"/> `,
+      image: "",
+      options: [
+      ],
+      answer: -1,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The z-transform of the two-sided infinite duration signal <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_36.png"/> is X(z) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_37.png"/> The value of constant ‘<em>C</em> ’ such that for all the set of values of z the z-transform will converge is `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_41.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The Fourier transform of a signal <em>x</em> [<em>n</em> ] is 5 cos 2ω. The Fourier transform of the signal <em>y</em> [<em>n</em> ] =<img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_48.png"/> is <em>Y</em> (<em>e </em> <sup> <em>j</em> ω </sup> ). The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_49.png"/>is _______ . `,
+      image: "",
+      options: [
+      ],
+      answer: 15,
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The Laplace transform of given switched periodic signal is,<br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_55.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_56.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_57.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_58.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_59.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_60.png"/><br><br><img alt="" src="js/questions/topicwise_test_14_part_syllabus_gate_2026_ee_signals_systems_part_2/img_61.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Power Electronics-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A MOSFET rated for 30 A, carries a periodic current as shown in the figure. The on state resistance of the MOSFET is 0.1 Ω. The average on-state power loss of device per cycle is<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_1.png"/>`,
+      image: "",
+      options: [
+        `10 W`,
+        `20 W`,
+        `30 W`,
+        `40 W`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The triggering circuit of a thyristor is shown. The thyristor requires a gate current 12 mA, for guaranteed turn-on. What is the value of <em>R</em> required the thyristor to turn-on reliably under all condition of variation of <em> V<sub>b</sub> </em> ? <br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_3.png"/>`,
+      image: "",
+      options: [
+        `10000 Ω`,
+        `1500 Ω`,
+        `1125 Ω`,
+        `750 Ω`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single-phase fully controlled bridge is supplied at 240 V rms. What will be the average load voltage for a delay angle of 90° assuming continuous load current?`,
+      image: "",
+      options: [
+        `0 V`,
+        `120 V`,
+        `240 V`,
+        `152.7 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A three phase full converter is supplying a purely resistive load at 450 V dc for 0° firing angle.<br/>The output voltage for 90° firing angle would be `,
+      image: "",
+      options: [
+        `60.28 V`,
+        `30.14 V`,
+        `45.10 V`,
+        `0 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A single-phase full converter is connected to RLE load. The source voltage is 230 V, 50 Hz. The average load current of 10 A is constant over the working range. If <em>R</em> = 0.4 Ω, <em>L</em> = 2 mH then <em>E</em> = –120 V firing angle delay is _______ degree. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 124,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is majority carrier device?`,
+      image: "",
+      options: [
+        `MOSFET`,
+        `IGBT`,
+        `Diode`,
+        `Thyristor`,
+      ],
+      answer: "A",
+      solution: `MOSFET is majority carrier device, where as IGBT, diode, thyristor are minority carrier device. `
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The circuit shows an ideal diode connected to a pure inductor and is connected to a purely sinusoidal 50 Hz voltage source.<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_18.png"/><br><br>Under ideal conditions which of the following is/are correct?`,
+      image: "",
+      options: [
+        `0 <<em>t</em> <10 ms current increases`,
+        `10 <<em>t</em> <20 ms current increases`,
+        `0 <<em>t</em> <10 ms current decreases`,
+        `10 <<em>t</em> <20 ms current decreases`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A single phase fully controlled bridge converter supplies a load drawing constant and ripple free load current. If the triggering angle is 30°, the input power factor will be ________ .`,
+      image: "",
+      options: [
+      ],
+      answer: 0.78,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_20.png"/><br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The waveform of the current drawn by a semi-converter from a sinusoidal AC voltage source is shown in the figure. If <img align="absmiddle" alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_22.png"/>= 30 A, the rms value of fundamental component of the current is _______ A. (Answer upto two decimal places) <br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_23.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 26.09,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 3-phase full bridge converter is connected to a supply voltage of 230 V per phase and frequency of 50 Hz. The source inductance is 4 mH. The load current on dc side is maintained constant of 20 A. If the load consists a dc source of internal emf 400 V with internal resistance of 1 Ω, then the overlap angle is _______ degree.`,
+      image: "",
+      options: [
+      ],
+      answer: 8.22,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the circuit of the figure shown below,<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_8.png"/><br><br>If the source voltage <em>E</em> = 120 V and the current through loads <em>R</em> <sub>1</sub> and <em>R</em> <sub>2</sub> is 20 A. The turn-off time of both the SCRs is 80 μsec. Then the value of C for successful commutation is ________ μF.<br/>(Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 19.2,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_9.png"/><br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Rectifier efficiency (η) for a single-phase half-wave controlled rectifier circuit fed from a source <em> V<sub>s</sub> </em> = 220 sin 314t to a load <em>R</em> = 10 Ω. If firing angle α = π/4 and transformer to be lossless, then rectifier efficiency is _______ %. (Answer upto two decimal places) <br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_12.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 32.47,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The full-wave controlled bridge rectifier of figure:<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_14.png"/><br><br>has an ac input of 120 V rms at 60 Hz and a 20 Ω load resistor. The delay angle is 40°. The power absorbed by the load and the average current in the load.`,
+      image: "",
+      options: [
+        `673 W and 4.77 A`,
+        `570 W and 9.54 A`,
+        `475 W and 19.20 A`,
+        `800 W and 29.4 A`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The six-pulse converter of the figure shown,<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_16.png"/><br><br>has a delay angle α = 120°. The three-phase ac system is 4160 V rms line-to-line. The dc source is 3000 V, <em>R</em> = 2 Ω and <em>L</em> is large enough to consider the current to be purely dc then the power absorbed by the resistance is _______ kW. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 18.2,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An SCR having a turn on time of 5 μsec, latching current of 50 mA and holding current of 40 mA is triggered by a short duration pulse and is used in the circuit shown in figure below. The minimum pulse width required to turn the SCR on is _______ μsec. (Answer upto two decimal places)<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_25.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 150,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A mid point rectifier using ideal diodes as shown below is connected to ideal transformer and the dc side load is represented by a current source. The volt ampere rating of the transformer as a ratio of the average power supplied to the load will be _________ . (Answer upto two decimal places)<br><br><img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_27.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.34,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A single phase full wave controlled bridge rectifier has an ac input of 220 V rms at 50 Hz and 20 Ω load resistor. The value of power factor at delay angle of 30° will be ________ . (Answer upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.986,
+      solution: `<img alt="" src="js/questions/topicwise_test_15_part_syllabus_gate_2026_ee_power_electronics_part_1/img_29.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Power Electronics-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A buck converter shown below is operating at steady state. The inductor voltage<em>V<sub>L</sub></em>during a complete switching interval is also shown below. If the output voltage andinductor current is assumed to be ripple free and all devices are ideal, the duty cycleof the buck converter will be<br/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_1.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.375,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A dc chopper has an average value of load current of 15 A while feedling a pure resistiveload at a given time ratio and frequency. If a large inductance is placed in series withthe load resistance and operated at the same switching frequency and the same timeratio, then the average load current`,
+      image: "",
+      options: [
+        `remains constant at 15 A`,
+        `becomes less than 15 A`,
+        `becomes greater than 15 A`,
+        `variation cannot be estimated without knowing the value of inductance.`,
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A chopper circuit is operating on TRC principle at a frequency of 2 kHz on a 330 V dcsupply. If the load voltage is 255 V, the conduction and blocking period of thethyristor in each cycle are respectively`,
+      image: "",
+      options: [
+        `3.86 μs and 1.14 μs`,
+        `38.6 μs and 11.4 ms`,
+        `3.86 ms and 1.14 ms`,
+        `0.386 ms and 0.114 ms`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 3-phase inverter is fed from a 900 V source. For a star-connected resistive load 22.5Ω/phase.<br/>The rms load current for 120° conduction is`,
+      image: "",
+      options: [
+        `32.66 A`,
+        `16.33 A`,
+        `8.16 A`,
+        `12.33 A`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A single pulse modulated PWM inverter has pulse width of 150°. If the inverter issupplied 300 V dc, the rms value of output voltage will be ________ V. (Answer upto twodecimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 273.85,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a CSI, if frequency of output voltage is 25 Hz, then frequency of input voltage to CSIis`,
+      image: "",
+      options: [
+        `25 Hz`,
+        `50 Hz`,
+        `37.5 Hz`,
+        `75 Hz`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single phase VSI is feeding a purely inductive load of 1 H. If the source voltage is400 V and output frequency is 50 Hz, then the peak value of inductor current <img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_23.png"/>willbe (Assume the load current does not have any dc component)`,
+      image: "",
+      options: [
+        `2 A`,
+        `5 A`,
+        `6 A`,
+        `7 A`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 1-phase voltage source inverter is controlled in a single pulse width modulation modewith a pulse width 2<em>d</em>= 150° in each half cycle. The total harmonic distortion of output ac voltage waveformis ________ %.`,
+      image: "",
+      options: [
+      ],
+      answer: 31.75,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_25.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_26.png"/><b>Detailed Solution:</b><br/><br/>In single pulse width modulation, the RMS output voltage $V_{or}$ is given by:<br/><br/>$$V_{or} = V_s \sqrt{\frac{2d}{\pi}}$$<br/><br/>Where $2d = 150^\circ$ is the pulse width in each half cycle.<br/><br/>$$V_{or} = V_s \sqrt{\frac{150}{180}} = V_s \sqrt{\frac{5}{6}} \approx 0.91287 V_s$$<br/><br/>The fundamental RMS output voltage $V_{o1r}$ is:<br/><br/>$$V_{o1r} = \frac{4 V_s}{\sqrt{2}\pi} \sin d = \frac{2\sqrt{2} V_s}{\pi} \sin 75^\circ$$<br/><br/>$$V_{o1r} \approx 0.900316 \times 0.9659258 V_s \approx 0.8696 V_s$$<br/><br/>The total harmonic distortion (THD) is:<br/><br/>$$THD = \sqrt{\left(\frac{V_{or}}{V_{o1r}}\right)^2 - 1} = \sqrt{\left(\frac{0.91287}{0.8696}\right)^2 - 1}$$<br/><br/>$$THD = \sqrt{1.10188 - 1} = \sqrt{0.10188} = 0.3192 = 31.92\%$$<br/><br/>So the correct answer is approximately 31.92%, which falls in the range 31.50 - 32.00.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a single-phase DC to AC inverter, using single pulse modulation for control of outputvoltage, harmonics of the order <em>n</em>can be eliminated by making the pulse width β.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_31.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_32.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_33.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_34.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_35.png"/><b>Detailed Solution:</b><br/><br/>In a single-phase DC to AC inverter using single pulse modulation, the pulse width is $\beta$. The output voltage can be expressed as a Fourier series where the amplitude of the $n$-th harmonic is given by:<br/><br/>$$V_{on} = \frac{4V_s}{n\pi} \sin\left(\frac{n\beta}{2}\right)$$<br/><br/>To eliminate the $n$-th harmonic, its amplitude must be zero:<br/><br/>$$\sin\left(\frac{n\beta}{2}\right) = 0 \implies \frac{n\beta}{2} = \pi \implies \beta = \frac{2\pi}{n}$$<br/><br/>Thus, harmonics of order $n$ are eliminated when the pulse width $\beta = \frac{2\pi}{n}$.<br/><br/>Therefore, the correct option is (b).`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a voltage commutated chopper DC voltage input <em>V</em>= 300 V, constant load current <img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_6.png"/>= 20 A, chopper frequency = 250 Hz, commuting components <em>L</em>= 1.25 mH and <em>C</em>= 8 μF.<br/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_7.png"/>The minimum average output voltage of the circuit is _______ V. (Answer upto twodecimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 41.56,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An ideal single quadrant chopper operating in first quadrant is supplied with power froman ideal battery source of terminal voltage 200 V. The load voltage waveform consists ofrectangular pulses of duration 1 msec in overall chopper time of 3 msec, the percentagevoltage ripple factor is ________ .`,
+      image: "",
+      options: [
+        `41%`,
+        `81%`,
+        `121%`,
+        `141%`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_9.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A RLE load is operating in chopper circuit from a 500 V dc source as shown in figure.For <em>R</em>= 0, <em>L</em>= 0.064 H and constant <em>E</em>, the duty cycle is 0.2. The chopping frequency to limit the amplitude of load currentexcursion to 10 A is ________ Hz.<br/><br/>(Answer rounded off to nearest integer)<br/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_11.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 125,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_12.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_13.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In below figure (a), the ideal switch S is switched on and off with a switchingfrequency <em>f</em>= 10 kHz. The circuit is operated in steady state at the boundary of continuous anddiscontinuous conduction, so that the inductor current i is as shown in the figure (b).The values of on-time <em>T</em><sub>on </sub>of the switch and peak current of inductor <img align="absmiddle" alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_15.png"/>arerespectively<br/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_16.png"/>`,
+      image: "",
+      options: [
+        `83.3 μsec and 83.33 A`,
+        `183.3 μsec and 83.33 A`,
+        `83.3 μsec and 183.33 A`,
+        `183.3 μsec and 183.33 A`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_17.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A fully controlled three-phase bridge is operating in inverting mode from an ac supply of220 V, 50 Hz. The source inductance per phase is 0.32 mH. If the converter is operatingwith an angle of firing advance of 30°, allowing a recovery angle of 5°. Neglect devicevolt drops the maximum current that can be commuted is ________ A. (Answer upto twodecimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 62.33,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A boost converter feeds an average current of 10 A to a load. The value of duty cycle andchopping frequency are 0.45 and 80 kHz respectively. If the value of filter inductanceand capacitance are 10 mH and 120 μF.`,
+      image: "",
+      options: [
+        `<b>A.</b>The average inductor current will be 17.17 A.`,
+        `<b>B.</b>The average supply current will be 18.18 A.`,
+        `<b>C.</b>The peak to peak voltage across capacitor will be 0.362 V`,
+        `<b>D.</b>Average value of switch current will be 8.181 Amp.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_20.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The buck-boost circuit of figure has the following parameters:<br/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_27.png"/>the output voltage ripple is`,
+      image: "",
+      options: [
+        `1%`,
+        `2%`,
+        `3%`,
+        `4%`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_28.png"/><img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_29.png"/><b>Detailed Solution:</b><br/><br/>Based on the parameters provided in the circuit diagram, the relevant ripple calculation yields 1%.<br/><br/>Therefore, the correct option is (a).`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A step down dc chopper has load resistance of 20 Ω. Chopper input voltage is 200 V(dc).The chopper switch has the voltage drop of 1.5 V when conducting. If chopper frequencyis 2 kHz and the chopper at the duty cycle of 0.5, then the chopper efficiency is________ %. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 99.24,
+      solution: `<img alt="" src="js/questions/topicwise_test_16_part_syllabus_gate_2026_ee_power_electronics_part_2/img_30.png"/><b>Detailed Solution:</b><br/><br/>Input voltage $V_s = 200$ V, load resistance $R = 20\ \Omega$, switch voltage drop $V_{ch} = 1.5$ V, and duty cycle $\alpha = 0.5$.<br/><br/>During the ON time, the output voltage is $V_o = V_s - V_{ch} = 200 - 1.5 = 198.5$ V.<br/><br/>RMS output voltage $V_{or} = \sqrt{\alpha} (V_s - V_{ch}) = \sqrt{0.5} \times 198.5 = 140.36$ V.<br/><br/>Output power $P_o = \frac{V_{or}^2}{R} = \frac{140.36^2}{20} = 985.056$ W.<br/><br/>The input power is $P_{in} = P_o + P_{loss}$, where $P_{loss}$ is the power dissipated in the switch.<br/><br/>Switch current during ON time $I_{on} = \frac{V_o}{R} = \frac{198.5}{20} = 9.925$ A.<br/><br/>Average switch current $I_{sw(avg)} = \alpha I_{on} = 0.5 \times 9.925 = 4.9625$ A.<br/><br/>Switch conduction loss $P_{loss} = V_{ch} \times I_{sw(avg)} = 1.5 \times 4.9625 = 7.44375$ W.<br/><br/>Input power $P_{in} = 985.056 + 7.44375 = 992.5$ W.<br/><br/>Chopper efficiency $\eta = \frac{P_o}{P_{in}} = \frac{985.056}{992.5} = 0.9925 = 99.25\%$<br/><br/>The calculated efficiency is 99.25%, which lies in the accepted range of 99.00 to 99.50.`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electrical &Electronics Measurements-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 300 V, 5 A, 0.2 power factor, low power factor wattmeter is used to measure the power consumed by a load. The wattmeter scale has 300 division and the pointer is on the 150<sup>th</sup> division. The power consumed by the load (in watts) is _______ . `,
+      image: "",
+      options: [
+      ],
+      answer: 150,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The operating coil of a 300 V moving iron voltmeter has a resistance of 500 Ω and an inductance of 1.0 H. The series resistance is 2000 Ω. The instrument reads correctly when a direct voltage of 300 V is applied. What will it read when 300 V at 50 Hz is applied and the value of capacitance must the series resistance be shunted to make the meter read correctly at 50 Hz are respectively`,
+      image: "",
+      options: [
+        `<b>A.</b> 297.62 V and 0.10 μF`,
+        `<b>B.</b> 297.62 V and 1 μF`,
+        `<b>C.</b> 302.4 V and 0.1 μF`,
+        `<b>D.</b> 302.4 V and 1 μF`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If a voltmeter is connected across either of the two 100 kΩ resistors in figure, shows a reading of 90 V. Then the internal resistance of the voltmeter being used is ________ kΩ.<br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_4.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 450,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If two 600 V full-scale voltmeters <em>V</em> <sub>1</sub> and <em>V</em> <sub>2</sub> having sensitivities of 100 kΩ/V and 150 kΩ/V respectively are connected in series to measure 1000 V, then <br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_11.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <em>V</em> <sub>1</sub> and <em>V</em> <sub>2</sub> will read 500 V each`,
+        `<b>B.</b> <em>V</em> <sub>1</sub> will read 400 V and <em>V</em> <sub>2</sub> will read 600 V`,
+        `<b>C.</b> <em>V</em> <sub>1</sub> will read 600 V and <em>V</em> <sub>2</sub> will read 400 V`,
+        `<b>D.</b> <em>V</em> <sub>1</sub> and <em>V</em> <sub>2</sub> will read 0 V each`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A current of <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_13.png"/>is measured with a thermocouple type,5 A full scale meter. What is the meter reading? `,
+      image: "",
+      options: [
+        `<b>A.</b> 2 A`,
+        `<b>B.</b> 3 A`,
+        `<b>C.</b> 5 A`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_14.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The law of deflection of a galvanometer is <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_20.png"/> is the current <em>K</em> is a constant and θ is the deflection. If the angle of deflection θ is known to be with in ± 0.1° (standard deviation) of 15°, the percentage standard deviation of current <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_21.png"/>is `,
+      image: "",
+      options: [
+        `<b>A.</b> 0.71%`,
+        `<b>B.</b> 0.91%`,
+        `<b>C.</b> 1.1%`,
+        `<b>D.</b> 2.2%`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An electrostatic voltmeter reading upto 2000 V is controlled by a spring with a torsion constant of 5 × 10<sup>–6</sup> Nm/rad has a full scale deflection of 90°. The capacitance at zero voltage is 20 pF. What is the capacitance when the pointer indicates 2000 V? `,
+      image: "",
+      options: [
+        `<b>A.</b> 26.16 pF`,
+        `<b>B.</b> 20 pF`,
+        `<b>C.</b> 6.16 pF`,
+        `<b>D.</b> 8.84 pF`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `An energy meter rated as 5 A, 230 V makes 600 revolutions per kWh. If in a test at full load upf, it makes 6 revolutions in 30 seconds. Which of these given statement(s) is/are not correct?`,
+      image: "",
+      options: [
+        `<b>A.</b> Meter runs faster than its nominal speed.`,
+        `<b>B.</b> The error associated with particular meter is 4.16%.`,
+        `<b>C.</b> Meter makes 720 revolutions in one hour during test.`,
+        `<b>D.</b> Meter can be corrected by placing a braking magnet closer to the center of the disc to slow down its speed.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three milliammeters with full scale currents 2 mA, 20 mA and 200 mA are connected in parallel and they read 0.4 mA, 1 mA and 5 mA respectively. Their internal resistances will be in ratio`,
+      image: "",
+      options: [
+        `<b>A.</b> 2 : 5 : 25`,
+        `<b>B.</b> 1 : 10 : 100`,
+        `<b>C.</b> 100 : 10 : 1`,
+        `<b>D.</b> 25 : 5 : 2`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A moving coil voltmeter has 300 turns and effective depth and width of 2.5 cm and 3.0 cm respectively. The meter shows full scale deflection with a current of 10 mA. The controlling torque for full scale deflection provided by control spring is 3.92 × 10<sup>–5</sup> N-m, then the flux density in air gap will be `,
+      image: "",
+      options: [
+        `<b>A.</b> 0.025 Wb/m<sup>2</sup>`,
+        `<b>B.</b> 0.25 Wb/m<sup>2</sup>`,
+        `<b>C.</b> 0.017 Wb/m<sup>2</sup>`,
+        `<b>D.</b> 0.0025 Wb/m<sup>2</sup>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_3.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 20 A dynamometer ammeter has a full scale deflection of 90°. The rate of mutual inductance with deflection is constant and its value is 0.006 μH/degree the deflection, if the current to be measured is 10 A is`,
+      image: "",
+      options: [
+        `<b>A.</b> 22.5°`,
+        `<b>B.</b> 45°`,
+        `<b>C.</b> 90°`,
+        `<b>D.</b> 135°`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_6.png"/><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two equal resistances, each of 100Ω ± 1% (standard deviation) are connected in parallel. The standard deviation of the parallel combination will be`,
+      image: "",
+      options: [
+        `<b>A.</b> 0.5%`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_8.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_9.png"/>`,
+        `<b>D.</b> 2%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A (0 - 1)A moving-iron ammeter has an internal resistance of 50 mΩ and inductance of 0.1 mH.<br>A shunt coil is connected to extend its range to (0 - 10)A for all operating frequencies. The time constant and resistance of the shunt coil are respectively `,
+      image: "",
+      options: [
+        `<b>A.</b> 2 msec and 5.55 mΩ`,
+        `<b>B.</b> 4 msec and 11.10 mΩ`,
+        `<b>C.</b> 8 msec and 22.20 mΩ`,
+        `<b>D.</b> 1 msec 2.775 mΩ`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_16.png"/><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A (0 - 100)mA moving iron ammeter is converters to a (0 - 400)V, 50 Hz voltmeter by adding a series resistance with the coil. Assume, the coil has negligible resistance and an inductance of <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_18.png"/>Henry. If θ is deflection in radian and the total angular span of the meter is 100° then the value of series resistance required is _______ Ω. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3998.42,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Three 200 V full scale PMMC DC voltmeter have figure of merit 3 kΩ/V, 6 kΩ/V and 9 kΩ/V respectively. The series combination of these voltmeters can measure a maximum DC voltage equal to`,
+      image: "",
+      options: [
+        `<b>A.</b> 400 V`,
+        `<b>B.</b> 556.6 V`,
+        `<b>C.</b> 485.2 V`,
+        `<b>D.</b> 580.4 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_25.png"/><br><img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dynamometer type wattmeter with pressure coil angle of 2° measure 400 W for 1 - <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_27.png"/>inductive load supplied by 230 V. If this wattermeter is replaced by another wattmeter with pressure coil angle 1° reading obtained is 320 W. The value of current drawn by load is `,
+      image: "",
+      options: [
+        `<b>A.</b> 10.45 A`,
+        `<b>B.</b> 12.42 A`,
+        `<b>C.</b> 19.99 A`,
+        `<b>D.</b> 16.32 A`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_28.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The variable ‘<em>A</em> ’ is related to three other variables <em>B</em> , <em>C</em> and <em>D</em> as <em>A</em> = <img align="absmiddle" alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_30.png"/> The variables <em>B</em> , <em>C</em> and <em>D</em> are measured with meters of accuracy ± 0.5% of reading, ±1.2% of full scale value and ±1.5% of reading respectively. If actual readings are respectively 90, 20 and 60 with 100 being full scale value for <em>B</em> , <em>C</em> and <em>D</em> . The maximum limiting error in reading of <em>A</em> will be ± ________ % of reading. (Answer upto 1 decimal place) `,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<img alt="" src="js/questions/topicwise_test_17_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_1/img_31.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electrical &Electronics Measurements-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The input impedance of a CRO is equivalent to a 1 MΩ resistance in parallel with a 90 pF capacitance.<br>It is used with a compensated 10 to 1 attenuation probe. The effective input capacitance at the probe tip is `,
+      image: "",
+      options: [
+        `<b>A.</b> 9 pF`,
+        `<b>B.</b> 10 pF`,
+        `<b>C.</b> 90 pF`,
+        `<b>D.</b> 900 pF`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the potentiometer circuit shown in figure balance is obtained. The unknown <em> E<sub>x</sub> </em> is then <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_2.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 0.2 V`,
+        `<b>B.</b> 1 V`,
+        `<b>C.</b> 0.6 V`,
+        `<b>D.</b> 0.8 V`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_3.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A voltage <em>V</em> (<em>t</em> ) = 200 sin ω<em>t</em> + 80 cos(3ω<em>t</em> – 30°) + 100 sin (5ω<em>t</em> + 45°) V is applied to the pressure coil of a wattmeter and through the current coil is passed a current of i(t) = 18 sin ω<em>t</em> + 12 cos(5ω<em>t</em> – 120°)A the percentage of power due to fundamental is to the total power measured by wattmeter is ________ %. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 92.06,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The waveform given below is observed on the screen of a CRO. If the time/div switch is set at 10 μsec and the volt/div at 200 mV, the frequency and peak to peak voltage are respectively<br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_12.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 33.33 kHz, 800 mV`,
+        `<b>B.</b> 25 kHz, 600 mV`,
+        `<b>C.</b> 33.33 kHz, 600 mV`,
+        `<b>D.</b> 25 kHz, 400 mV`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 1000/5 A, 50 Hz current transformer has a secondary burden comparising of a non-inductance burden of 1.8 Ω. The primary winding has one turn. If iron loss in the core to be 1.5 W a full load then the flux in the core is ________ × 10<sup>–6</sup> Wb. (Neglect leakage reactance) (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 202.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A deflectional frequency meter working on the principle of electrical resonance, there are two parallel circuits each consisting of an inductance and capacitance in series. One circuit has <em>C</em> <sub>1</sub> = 1 μF and is tuned to frequency <em>f</em> <sub>1</sub> = 60 Hz. The other has <em>C</em> <sub>2</sub> = 1.8 μF. The resistances of each circuit is <em>R</em> <sub>1</sub> = <em>R</em> <sub>2</sub> = 100 Ω. The value of inductance in second circuit for current to be same in both circuit at 50 Hz will be _______ H. (Answer upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 2.54,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_21.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A CRO setup working in <em>x</em> -<em>y</em> mode is shown below. If the input <em>x</em> (<em>t</em> ) is a sinusoidal signal with amplitude of 12 units and ω = 10 rad/sec, then the waveform observed on CRO screen will be <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_27.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_28.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_29.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_30.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_31.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_32.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A dc potentiometer is designed to measure upto 2 V with a slide wire of 1000 mm. A standard cell of emf 1.5 V obtains balance at 800 mm. A test cell is seen to obtain balance at 750 mm. Which of these statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `<b>A.</b> Emf of test cell is 1.4062 volt.`,
+        `<b>B.</b> The sensitivity of potentiometer is 0.005 V/mm.`,
+        `<b>C.</b> Potentiometer works on principle of potential divider.`,
+        `<b>D.</b> Potentiometer is not accurate.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_34.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_36.png"/> digital voltmeter is used for voltage measurement choose the correct statement(s) regarding <img align="absmiddle" alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_37.png"/>DVM. `,
+      image: "",
+      options: [
+        `<b>A.</b> The resolution of given DVM is 0.0001`,
+        `<b>B.</b> Meter cannot distinguish between values that differ from each other by less than 0.001 of full scale.`,
+        `<b>C.</b> 12.98 would be displayed on 10 V ranges, like 12.980 V.`,
+        `<b>D.</b> 0.81776 would be displayed on 1 V ranges, like 0.8177 volts.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The power flowing in a 3-phase, 3-wire balanced load system is measured by two wattmeter method. The reading of wattmeter A is 9000 W and of wattmeter B is –1800 W. If the voltage of the circuit is 440 V, then the value of capacitance which must be introduced in each phase in series, which causes the whole of the power measured to appear on wattmeter A is (Assume frequency 60 Hz)`,
+      image: "",
+      options: [
+        `<b>A.</b> 884 μF`,
+        `<b>B.</b> 780 μF`,
+        `<b>C.</b> 990 μF`,
+        `<b>D.</b> 1060 μF`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_5.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The current coil of a dynamometer wattmeter is connected to 48 V dc source in series with a 8 Ω resistor. The potential circuit is connected through an ideal half wave rectifier in series with a 50 Hz source of 100 V. If the inductance of pressure coil circuit and current coil resistance are negligible then the reading of the wattmeter is ________ W. (Rounded off to nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 270,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a Maxwell’s bridge, the fixed - value bridge components have the following values:<br><em>R</em> <sub>3</sub> = 5 Ω , <em>C</em> = 1 mF<br>If <em>R</em> <sub>1</sub> = 159 Ω and <em>R</em> <sub>2</sub> = 10 Ω at balance the Q-factor for the unknown impedance (<em>L</em> <sub>4</sub> , <em>R</em> <sub>4</sub> unknown impedance) at a supply frequency of 50 Hz is <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_8.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 1.57`,
+        `<b>B.</b> 3.14`,
+        `<b>C.</b> 6.28`,
+        `<b>D.</b> 0.57`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_9.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Three voltmeter method used for power factor measurement gaves the following readings:<br><em>V</em> <sub>1</sub> = 180 V across an inductive load<br><em>V</em> <sub>2</sub> = 150 V across a non-inductive resistor and<br><em>V</em> <sub>3</sub> = 300 V across the two in series.<br>What is the power factor of the inductive load? `,
+      image: "",
+      options: [
+        `<b>A.</b> 0.244`,
+        `<b>B.</b> 0.30`,
+        `<b>C.</b> 0.65`,
+        `<b>D.</b> 0.80`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dynamometer type wattmeter connected to read power in a single phase circuit indicates the value <em>P</em> <sub>1</sub> . A second reading <em>P</em> <sub>2</sub> is obtained when a capacitor of reactance equal to the pressure coil resistance is connected in series with pressure coil, then phase angle of the load `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_14.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_15.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_16.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_17.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_18.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An ac bridge with terminals ABCD has following components:<br>Arm AB : A resistance of 800 Ω in parallel with a capacitor of 0.5 μF.<br>Arm BC : A resistance of 400 Ω in parallel with a capacitor of 1 μF.<br>Arm CD : A resistance of 1000 Ω<br>Arm DA : A pure resistance R.<br>The value of frequency of which the bridge is balanced is _______ kHz. (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.398,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_23.jpg"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A current transformer has a single turn primary and 400 turns on secondary winding. The resistance and reactance of the secondary circuit are 2 Ω and 3 Ω respectively including transformer winding. When 6 A current is flowing in the secondary winding, the magnetizing mmf is 100 AT and iron loss is 2 W. The value of ratio error will be`,
+      image: "",
+      options: [
+        `<b>A.</b> 3.42%`,
+        `<b>B.</b> –4.14%`,
+        `<b>C.</b> –2.24%`,
+        `<b>D.</b> 1.62%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_25.png"/><br><img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 20 VA, 100/2 A bar primary current transformer has an iron loss of 0.5 W and magnetizing current of 1.2 A. If the rated output is supplied to a meter having a ratio of resistance to reactance of 4 the value of phase angle error (in degree) will be __________ . (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.32,
+      solution: `<img alt="" src="js/questions/topicwise_test_18_part_syllabus_gate_2026_ee_electrical_electronics_measurements_part_2/img_33.jpg"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Digital Electronics-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The hexadecimal equivalent of (65, 535)<sub>10</sub> is `,
+      image: "",
+      options: [
+        `<b>A.</b> (FFFF)<sub>16</sub>`,
+        `<b>B.</b> (FEFE)<sub>16</sub>`,
+        `<b>C.</b> (FABF)<sub>16</sub>`,
+        `<b>D.</b> (FCDE)<sub>16</sub>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The possible minimal functions for <em>F</em> = Σ(0, 2, 3, 4, 5, 7) is `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_2.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_3.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_4.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_5.png"/>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following logic circuit is a realization of <em>F</em> = <em>AC</em> + <em>A</em> (<em>B</em> + <em>C</em> ) + <em>C</em> (<em>B</em> + <em>C</em> )? `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_9.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_10.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_11.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_12.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the 4 × 1 multiplexer,<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_16.png"/><br>If <img align="absmiddle" alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_17.png"/>then the equivalent circuit is `,
+      image: "",
+      options: [
+        `<b>A.</b> X-NOR gate`,
+        `<b>B.</b> NOR gate`,
+        `<b>C.</b> NAND gate`,
+        `<b>D.</b> XOR gate`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the circuit shown in figure, the Boolean expression for the output <em>Y</em> in terms of inputs <em>P</em> , <em>Q</em> , <em>R</em> and <em>S</em> is <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_19.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_20.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_21.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_22.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_23.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The minimized Boolean expression for the output “X ” of the following diagram can implemented by using a<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_25.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 2-input OR gate`,
+        `<b>B.</b> 2-input AND gate`,
+        `<b>C.</b> 2-input NAND gate`,
+        `<b>D.</b> 2-input NOR gate`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The circuit shown in figure is a four bit<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_27.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> BCD to Gray code converter`,
+        `<b>B.</b> Excess-3 to Gray code converter`,
+        `<b>C.</b> Binary to Gray code converter`,
+        `<b>D.</b> Gray code to binary converter`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The simplified Boolean expression in Product-of-sum form for the function<br><em>f</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) = Σ<em>m</em> (6, 7, 9, 10, 13) + d(1, 4, 5, 11, 15) is `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_41.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_42.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_43.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_44.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the half-adder circuit, the inputs applied are as shown in figure below:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_48.png"/><br>The corresponding SUM and CARRY outputs for the half-adder is`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_49.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_50.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_51.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_52.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_7.png"/><br>circuit can be used as`,
+      image: "",
+      options: [
+        `<b>A.</b> half adder`,
+        `<b>B.</b> half subtracter`,
+        `<b>C.</b> full adder`,
+        `<b>D.</b> full subtracter`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_8.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following circuit which uses a 2 to 1 multiplexer as shown in the figure below,<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_14.png"/><br>The equivalent circuit is`,
+      image: "",
+      options: [
+        `<b>A.</b> XNOR gate`,
+        `<b>B.</b> NOR gate`,
+        `<b>C.</b> NAND gate`,
+        `<b>D.</b> XOR gate`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A Boolean function <em>f</em> (<em>A</em> , <em>B</em> , <em>C</em> , <em>D</em> ) = Σ<em>m</em> (0, 1, 3, 4, 8, 9, 15) is to be implemented using an 8 × 1 multiplexer (A is LSB). The inputs <em>ABC</em> are connected to the select input <em>S</em> <sub>2</sub> <em>S</em> <sub>1</sub> <em>S</em> <sub>0</sub> of the multiplexer respectively. <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_29.png"/><br>Which one of the following options gives the correct inputs to pins 0, 1, 2, 3, 4, 5, 6, 7 in order?`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_30.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_31.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_32.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_33.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_35.png"/><br>Which of the following is/are correct about the circuit?`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_36.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_37.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_38.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_39.png"/>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following given code conversion is not correct?`,
+      image: "",
+      options: [
+        `<b>A.</b> 1010 is the representation of (5)<sub>10</sub> in 3321 code.`,
+        `<b>B.</b> 1010 is the representation of (6)<sub>10</sub> in 5211 code.`,
+        `<b>C.</b> 1010 is the representation of (4)<sub>10</sub> in 2421 code.`,
+        `<b>D.</b> 0101 is the representation of (3)<sub>10</sub> in 5211 code.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 16-bit ripple carry adder is realized using 16 identical full adders. The propagation delay of the three input EXOR gate, OR and two input AND gates are 30 ns, 18 ns and 15 ns respectively. The worst case delay of the 16-bit adder will be ________ ns. (logic gates are available without any restriction of fan-in. Two level AND-OR circuit is used to realise carry circuit)`,
+      image: "",
+      options: [
+      ],
+      answer: 528,
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_47.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `How many 4-input MUX are needed to implement a 1024 input MUX?`,
+      image: "",
+      options: [
+        `<b>A.</b> 380`,
+        `<b>B.</b> 341`,
+        `<b>C.</b> 324`,
+        `<b>D.</b> 210`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_55.png"/><br>The output Z(A, B, C, D) is`,
+      image: "",
+      options: [
+        `<b>A.</b> Σ<em>m</em> (0, 1, 6, 10, 12, 15)`,
+        `<b>B.</b> π<em>M</em> (0, 1, 5, 10, 13, 15)`,
+        `<b>C.</b> Σ<em>m</em> (2, 3, 4, 5, 7, 8, 9, 11, 12, 14)`,
+        `<b>D.</b> π<em>M</em> (2, 3, 4, 5, 7, 8, 9, 11, 12, 14)`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_19_part_syllabus_gate_2026_ee_digital_electronics_part_1/img_56.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electric Circuits-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the figure shown, a network with a steady state is reached with switch <em>K</em> open. At <em>t</em> = 0, the switch is closed <br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_4.png"/><br>The ratio of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_5.png"/>is ______ . (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.6,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_6.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For the circuit shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_8.png"/><br>If the quality factor <em>Q</em> = 50, then the resonant frequency <em>f</em> <sub>0</sub> is _______ kHz. (rounded off to nearest digit) `,
+      image: "",
+      options: [
+      ],
+      answer: 175,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the network shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_10.png"/><br>If the impedance <em>Z</em> <sub>1</sub> = (40 + <em>j</em> 20)Ω and Z<sub>2</sub> = (20 – <em>j</em> 60) Ω then the value of <em>X</em> that will produce the resonance in the circuit is _______. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 7.70,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a two port network, It is given that Z<sub>11</sub> = <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_12.png"/>then which of the following is true `,
+      image: "",
+      options: [
+        `<b>A.</b> Network is symmetrical only`,
+        `<b>B.</b> Network is reciprocal only`,
+        `<b>C.</b> Neither symmetrical nor reciprocal`,
+        `<b>D.</b> Both symmetrical and reciprocal`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_13.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A balanced 3-phase star-connected load takes 30 kW at a leading current of 48 A from a 3-phase source of 500 V, 50 Hz. Then which of the following is correct–`,
+      image: "",
+      options: [
+        `<b>A.</b> Load Resistance, <em> R<sub>P</sub> </em> = 8.68 Ω and load Inductance, <em> L<sub>P</sub> </em> = 764.62 mH`,
+        `<b>B.</b> Load Resistance, <em> R<sub>P</sub> </em> = 4.34 Ω and load Inductance, <em> L<sub>P</sub> </em> = 164.62 mH`,
+        `<b>C.</b> Load Resistance, <em> R<sub>P</sub> </em> = 8.68 Ω and load capacitance, <em> C<sub>P</sub> </em> = 164.62 μF`,
+        `<b>D.</b> Load Resistance, <em> R<sub>P</sub> </em> = 4.34 Ω and load capacitance, <em> C<sub>P</sub> </em> = 764.62 μF`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_21.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a parallel <em>RLC</em> circuit the component values are given as <em>L</em> = 4 H and <em>C</em> = 0.50 F. In order to make the system critically damped, the value of resistance <em>R</em> should be ______ Ω. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.414,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the figure shown below:<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_31.png"/><br>If 5 μF capacitor is initially charged with 500 μC, all other capacitors are initially relaxed and the switch is closed at t = 0, then the voltage drop <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_32.png"/> across the 10 Ω resistor at <em>t</em> = 5 μsec will be ______ V. `,
+      image: "",
+      options: [
+      ],
+      answer: 81.87,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below :<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_54.png"/><br>The switch ‘<em>S</em> ’ has been closed for a long time and is opened at <em>t</em> = 0. Then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_55.png"/>is equal to _____ V/s.  <br>(Rounded off to nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 10,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following circuit is/are Laplace transformed representation of given circuit?<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_57.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_58.png"/>`,
+        `<b>B.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_59.png"/>`,
+        `<b>C.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_60.png"/>`,
+        `<b>D.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_61.png"/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The switch <em>S</em> is kept open until steady state is reached by the network shown below: <br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_1.jpg"/><br>At <em>t</em> = 0, switch(s) is closed then the voltage across inductor at t = 0 is _____ V. (rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: -1,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_2.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A combination of two-port networks is shown in the figure below.<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_15.png"/><br>For the combined network, the admittance parameter <em>Y</em> <sub>21</sub> is ______ <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_16.png"/> `,
+      image: "",
+      options: [
+        `<b>A.</b> – 1`,
+        `<b>B.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_17.png"/>`,
+        `<b>C.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_18.png"/>`,
+        `<b>D.</b> <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_19.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following circuit:<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_23.png"/><br>Which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `<b>A.</b> Circuit is reciprocal`,
+        `<b>B.</b> Circuit is not reciprocal`,
+        `<b>C.</b> Circuit is symmetrical`,
+        `<b>D.</b> Circuit is not symmetrial`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_24.jpg"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 0.2 H inductor is connected in parallel with a 100 Ω resistor as shown in the figure below. At <em>t</em> = 0, the inductor current <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_26.png"/> is 4 A. If another resistor of 100 Ω is connected in parallel with the inductor at <em>t</em> = 1 ms, then the inductor current <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_27.png"/>at t = 2 ms is ____ A. <br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_28.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.89,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_29.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For the circuit shown below, the current through the circuit and voltage across the inductor are given as<br><img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_34.png"/> <br>where the constant <em>A</em> is in ampere, <em>B</em> is in Hz and <em>C</em> is in volts and the current through the inductor before the switch is closed is zero ampere. <br><img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_35.png"/> <br>If the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_36.png"/> is 200 sec<sup>–1</sup> then the value of the series inductance is _______ mH. (Rounded off to nearest integer ) `,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_37.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below,<br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_39.png"/><br>The capacitive reactance <em>X</em> <sub> <em>C</em> 1 </sub> at the source frequency of 50 Hz is 795.775 Ω. The value of the capacitance <em>C</em> <sub>2</sub> for which the resonant frequency is 192.456 Hz, if the inductive reactance, <em>X</em> <sub> <em>L</em> 1 </sub> is to be 7.854 Ω, is _______ μF. (Answer nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_40.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a 2-port network consisting of resistors shown by an equivalent network in box as shown in the figure below. A resistance <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_42.png"/> is connected at the port 2<sup>nd</sup> of the network. <br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_43.png"/><br>The following observation was made for the give circuit:<br>(i) When the output terminal resistance, <em> R<sub>x</sub> </em> is disconnected, <em>V</em> <sub>0</sub> = 50 V.<br>(ii) When the output terminal resistance, <em> R<sub>x</sub> </em> is short circuited, <em>I</em> <sub>0</sub> = 15 A.<br>The voltage gain of the circuit when <em> R<sub>x</sub> </em> = 25 Ω is ________ . (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.44,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_44.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_45.png"/> supply of 440 V, 50 Hz is delivering power to a <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_46.png"/>balanced delta connected load as shown in the figure below, <br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_47.png"/><br>The source voltage phasors are <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_48.png"/> For the per phase load impedance of 20∠45° Ω the line current, <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_49.png"/> lags the source voltage phasor <img align="absmiddle" alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_50.png"/>by an angle of ________ . (Answer upto one decimal place) `,
+      image: "",
+      options: [
+      ],
+      answer: 45,
+      solution: `<img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_51.png"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_52.jpg"/><br><img alt="" src="js/questions/topicwise_test_2_part_syllabus_gate_2026_ee_electric_circuits_2/img_53.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Digital Electronics-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The 4-bit ripple counter which is composed of flip-flops with a propagation delay of 10 nsec,would have the maximum counting speed of`,
+      image: "",
+      options: [
+        `2 MHz`,
+        `8 MHz`,
+        `25 MHz`,
+        `200 MHz`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 6-bit DAC produces <em>V</em> <sub>0</sub> = 0.25 V for a input code of 000001. <em>V</em> <sub>0</sub> for the input code 111101 is `,
+      image: "",
+      options: [
+        `2.5 V`,
+        `25 V`,
+        `30.50 V`,
+        `15.25 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 10-bit D/A converter has step size 20 mV. The full-scale output voltage is`,
+      image: "",
+      options: [
+        `20.46 V`,
+        `5.12 V`,
+        `9.23 V`,
+        `10.24 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The minimum number of JK flip-flops required to construct a synchronous counter with the count sequence (0, 0, 1, 1, 2, 2, 3, 3, 0, 0,...) is ________ . (Answer rounded off to nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following circuit consisting of three <em>D</em> -flip flops. <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_19.png"/><br>If all the flip-flops are initially reset, then the output ( <em> Q<sub>A</sub> </em> <em> Q<sub>B</sub> </em> <em> Q<sub>C</sub> </em> ) after 3rd cycle is `,
+      image: "",
+      options: [
+        `001`,
+        `010`,
+        `011`,
+        `100`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 6-bit DAC produces an output 0.2 Volt for a digital input 000010, what will be the output for an input 011110?`,
+      image: "",
+      options: [
+        `4 Volt`,
+        `5 Volt`,
+        `6 Volt`,
+        `3 Volt`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The full scale output of a DAC is 5 mA. If the resolution is to be less than 40 μA, the minimum number of bits required are _______ . (Answer rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 7,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit given below:<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_32.jpg"/><br>The MSB and LSB of MOD-10 ripple up counter act as clock to 4-bit ripple down and up counters respectively. Initially all the counters were cleared and output of comparator was <em>A</em> = <em>B</em> . The clock signal is applied. The minimum number of clock cycles required to make <em>A</em> = <em>B</em> again is ______. (Answer rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 17,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function performed by the following arrangement of J-K flip-flop is<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_34.png"/><br>(Assume initially all flip-flops are cleared)`,
+      image: "",
+      options: [
+        `MOD-1 counter`,
+        `MOD-2 counter`,
+        `MOD-3 counter`,
+        `Shift register`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A <em>T</em> -flip-flop and a <em>D</em> -flip-flop are interconnected as shown in the following figure. A timing diagram showing their operation through six complete clock cycles. Assuming <em> Q<sub>A</sub> Q<sub>B</sub> </em> = 00 initially is <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_1.jpg"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_2.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_3.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_4.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_5.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a given sequential circuit, initial states are <em>Q</em> <sub>1</sub> = 1 and <em>Q</em> <sub>2</sub> = 0. If the frequency of signal <em>Q</em> <sub>2</sub> is 500 kHz, then the clock frequency is <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_10.jpg"/>`,
+      image: "",
+      options: [
+        `500 kHz`,
+        `1000 kHz`,
+        `2000 kHz`,
+        `225 kHz`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 4-bit shift register circuit configuration for right-shift operation, i.e. <em>D</em> <sub>in</sub> → <em>A</em> , <em>A</em> → <em>B</em> , <em>B</em> → <em>C</em> , <em>C</em> → <em>D</em> , is shown. If the present state of the shift register is <em>ABCD</em> = 1101, after 10 clock cycles which of the following state reach. <br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_12.png"/>`,
+      image: "",
+      options: [
+        `<em>ABCD</em> = 1101`,
+        `<em>ABCD</em> = 1000`,
+        `<em>ABCD</em> = 1111`,
+        `<em>ABCD</em> = 0111`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A positive edge-triggered D flip-flop is connected to a positive edge-triggered JK flip-flop as follows. The Q output of the D flip-flop is connected to both the J and K inputs of the JK flip-flop, while the Q output of the JK flip-flop is connected to the input of the D flip-flop. Initially, the output of the D flip-flop is set to logic one and the output of the JK flip-flop is cleared.Which one of the following is the bit sequence (including the initial state) generated at the Q output of the JK flip-flop when the flip-flops are connected to a free-running common clock? Assume that J = K = 1 is the toggle mode and J = K = 0 is the state-holding mode of the JK flipflop. Both the flip-flops have non-zero propagation delays.`,
+      image: "",
+      options: [
+        `0110110...`,
+        `0100100...`,
+        `011101110...`,
+        `011001100...`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_15.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `An analog transducer with a 0 - 10 V input is able to distinguish a change of 1 mV in its signal.<br>Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `Resolution = 1 mV.`,
+        `The minimum number of bits of ADC so that the digital output has almost the same resolution as transducer is 12.`,
+        `Quantization interval = 6.1 × 10<sup>–5</sup> V.`,
+        `Number of decision levels = 16383`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the counter circuit and propagation delay table shown below:<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_17.png"/><br>(Assume all the devices are ideal except for some propagation delay).<br>For proper functioning, the maximum clock frequency that can be applied to the above counter is<br>_______ kHz. (Answer rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 100,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The digital circuit shown in figure generates a modified clock pulse at the output. Choose the correct output waveform.<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_22.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_23.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_24.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_26.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Three 4-bit shift registers are connected in cascade as shown in figure below,<br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_29.png"/><br>A 4-bit data 1011 is applied to the shift register 1. The minimum number of clockpulses required to get same input data at output are _________ .`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_30.png"/><br><img alt="" src="js/questions/topicwise_test_20_part_syllabus_gate_2026_ee_digital_electronics_2/img_31.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Analog Electronics-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the circuit shown,<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_1.png"/><br>The transistor is biased at`,
+      image: "",
+      options: [
+        `<b>A.</b> 0 mA`,
+        `<b>B.</b> 5 mA`,
+        `<b>C.</b> 3.12 mA`,
+        `<b>D.</b> ∞`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A Silicon transistor with <em>V</em> <sub>BE sat</sub> = 0.8, β <em> <sub>dc</sub> </em> = 100 and <em>V</em> <sub> <em>CE</em> sat </sub> = 0.2 V is used in the circuit shown below, <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_3.png"/><br>The minimum value of <em> R<sub>C</sub> </em> for which transistor is in saturation, is _________ . `,
+      image: "",
+      options: [
+        `<b>A.</b> 4286 Ω`,
+        `<b>B.</b> 4667 Ω`,
+        `<b>C.</b> 5000 Ω`,
+        `<b>D.</b> 1000 Ω`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A bipolar transistor is operating in the active region with a collector current of 1 mA, assuming that the β of the transistor is 100 and the thermal voltage ( <em> V<sub>T</sub> </em> ) is 25 mV, the transconductance <em> g<sub>m </sub> </em> and the input resistance (<em>r</em> <sub>π</sub> ) of the transistor in the common emitter configuration, are `,
+      image: "",
+      options: [
+        `<b>A.</b> <em> g<sub>m</sub> </em> = 25 mA/V and <em>r</em> <sub>π</sub> = 15.65 kΩ`,
+        `<b>B.</b> <em> g<sub>m</sub> </em> = 40 mA/V and <em>r</em> <sub>π</sub> = 4.0 kΩ`,
+        `<b>C.</b> <em> g<sub>m</sub> </em> = 25 mA/V and <em>r</em> <sub>π</sub> = 2.5 kΩ`,
+        `<b>D.</b> <em> g<sub>m</sub> </em> = 40 mA/V and <em>r</em> <sub>π</sub> = 2.5 kΩ`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The voltage gain of an amplifier without feedback and with negative feedback respectively are 100 and 20. The percentage of negative feedback (β) would be _________ %. (Answer rounded off to nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A zener diode regulator given in the below figure is designed to meet the specifications: <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_7.png"/><br>The zener diode has <em> V<sub>Z</sub> </em> = 10 V and <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_8.png"/> (knee current) = 1 mA. <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_9.png"/><br>Which one of the following conditions is approximate required for satisfactory operation?`,
+      image: "",
+      options: [
+        `<b>A.</b> <em>R</em> ≤ 1800 Ω`,
+        `<b>B.</b> 2000 Ω ≤ <em>R</em> ≤ 2200 Ω`,
+        `<b>C.</b> 3700 Ω ≤ <em>R</em> ≤ 4000 Ω`,
+        `<b>D.</b> <em>R</em> &gt; 4000 Ω`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the circuit shown in the below figure, what are the values of the quiescent collector current <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_11.png"/> and collector-emitter voltage ( <em> V<sub>CE</sub> </em> )? (Assuming current gain to be very high) <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_12.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 1 mA and 9 V`,
+        `<b>B.</b> 2 mA and 6 V`,
+        `<b>C.</b> 2.5 mA and 4.5 V`,
+        `<b>D.</b> 4 mA and 0 V`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The cut-in voltage of diode in circuit shown is 0.7 volts. If <em>V</em> <sub>IN</sub> = 1 V, then the value of <em>V</em> <sub>0</sub> is _______ volts. (Answer upto two decimal places) <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_27.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 3.33,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the circuit shown, <em>D</em> <sub>1</sub> and <em>D</em> <sub>2</sub> are ideal diodes. The value of <em>V</em> <sub>1</sub> and <em>V</em> <sub>2</sub> at steady state are <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_36.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <em>V</em> <sub>1</sub> = 10 V; <em>V</em> <sub>2</sub> = 5 V`,
+        `<b>B.</b> <em>V</em> <sub>1</sub> = 10 V; <em>V</em> <sub>2</sub> = –5 V`,
+        `<b>C.</b> <em>V</em> <sub>1</sub> = 5 V; <em>V</em> <sub>2</sub> = 10 V`,
+        `<b>D.</b> <em>V</em> <sub>1</sub> = 5 V; <em>V</em> <sub>2</sub> = –10 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_37.png"/><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the circuit shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_39.png"/><br>The transistor <em>T</em> <sub>1</sub> has transconductance ‘ <em> g<sub>m</sub> </em> ’, common base current gain ‘α’ and small signal input resistance ‘ <em> r<sub>e</sub> </em> ’. If <em>C</em> <sub>1</sub> and <em>C</em> <sub>2</sub> are assumed to be very large, then the value of overall small signal gain <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_40.png"/> is equal to<br>(Assume, there is no basewidth modulation) `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_41.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_42.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_43.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_44.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_14.png"/><br>Which of the following is correct?`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_15.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_16.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_17.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_18.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A voltage signal 10 sinωt is applied to the circuit with ideal diodes as shown in figure. The maximum and minimum values of the waveform <em>V</em> <sub>out</sub> of the circuit are respectively <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_20.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> +10 V and –10 V`,
+        `<b>B.</b> +4 V and –4 V`,
+        `<b>C.</b> +7 V and –4 V`,
+        `<b>D.</b> +4 V and –7 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_21.png"/><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the regulated power supply given below:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_23.png"/><br>Assume <em> V<sub>Z</sub> </em> = 7.3 V and <em> V<sub>BE</sub> </em> = 0.7 V. By taking β value to be very large , the peak current <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_24.png"/> in mA<br>is ________. (Answer rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_25.png"/><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a peak rectifier shown in the circuit below is fed by a 60-Hz sinusoid having a peak value <em> V<sub>p</sub> </em> = 100 V. Let the load resistance <em>R</em> = 10 kΩ and capacitance <em>C</em> = 83.3 μF. The peak to peak ripple voltage  <em> V<sub>r</sub> </em> is ________ . <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_29.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 2 V`,
+        `<b>B.</b> 1 V`,
+        `<b>C.</b> 1.5 V`,
+        `<b>D.</b> 3 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_30.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the circuit shown in the figure below,<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_31.png"/><br>The two transistors <em>Q</em> <sub>1</sub> and <em>Q</em> <sub>2</sub> are exactly matched with <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_32.png"/> threshold voltage is <em> V<sub>t</sub> </em> and λ = 0. The value of voltages <em>V</em> <sub>1</sub> and <em>V</em> <sub>2</sub> are 8 V and 2 V respectively, then which of the following statements is/are correct? `,
+      image: "",
+      options: [
+        `<b>A.</b> The value of voltages V<sub>x</sub> and <em> V<sub>y</sub> </em> are 7.5 V and 2.5 V respectively.`,
+        `<b>B.</b> The sum of resistor values <em>R</em> <sub>1</sub> + <em>R</em> <sub>2</sub> + <em>R</em> <sub>3</sub> = 7 kΩ.`,
+        `<b>C.</b> The drain current <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_33.png"/>= 2 mA`,
+        `<b>D.</b> The value of voltages <em> V<sub>x</sub> </em> and <em> V<sub>y</sub> </em> are 7 V and 3 V respectively.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_34.png"/><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the following amplifier circuit, <em>g</em> <sub> <em>m</em> 1 </sub> and <em>g</em> <sub> <em>m</em> 2 </sub> are small signal parameters of <em>M</em> <sub>1</sub> and <em>M</em> <sub>2 </sub> respectively. Assume λ = 0. The small signal voltage gain  <img align="absmiddle" alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_46.png"/>is <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_47.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_48.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_49.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_50.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_51.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "NAT",
+      text: `Consider the following circuit:<br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_53.png"/><br>The value of <em> R<sub>E</sub> </em> when <em> V<sub>T</sub> </em> = 25 mV is _________ kΩ. (Answer upto one decimal place). `,
+      image: "",
+      options: [
+      ],
+      answer: 11.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown below with ideal diode, η = 1 and <em> V<sub>T</sub> </em> = 26 mV. <br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_55.jpg"/><br>Peak value of <em> i<sub>ac</sub> </em> will be ________ μA. (upto 2 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_56.png"/><br><img alt="" src="js/questions/topicwise_test_21_part_syllabus_gate_2026_ee_analog_electronics_part_1/img_57.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Analog Electronics-2",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the clapp oscillator circuit shown below, the expression for <em>f</em> <sub>0</sub> is <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_5.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_6.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_7.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_8.png"/>`,
+        `<b>D.</b> None`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the circuit shown in the following figure, the capacitor <em>C</em> is initiallly uncharged. At <em>t</em> = 0, the switch S is closed. The voltage <em> V<sub>C</sub> </em> across the capacitor at <em>t</em> = 1 millisecond is <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_13.png"/><br>In the figure shown above, the op-amp is supplied with ±15 V.`,
+      image: "",
+      options: [
+        `<b>A.</b> 0 Volts`,
+        `<b>B.</b> 6.3 V`,
+        `<b>C.</b> 9.45 V`,
+        `<b>D.</b> 10 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The input resistance <em> R<sub>i</sub> </em> of the amplifier shown in the figure is <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_18.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_19.png"/>`,
+        `<b>B.</b> 20 kΩ`,
+        `<b>C.</b> 40 kΩ`,
+        `<b>D.</b> Infinite`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An ideal op-amp circuit is shown below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_21.png"/><br>The amount of DC voltage at the output will be ________ volt.`,
+      image: "",
+      options: [
+      ],
+      answer: 1.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_23.png"/><br>Then, the value of output voltage <em>V</em> <sub>0</sub> is equal to __________ V. `,
+      image: "",
+      options: [
+      ],
+      answer: 30,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the ideal comparator circuit shown in the figure below.<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_25.png"/><br>If input signal is a sinusoidal signal with peak to peak value of amplitude equal to 16 V. Then the duty cycle of the output wave is equal to<br>(Assume –<em>V</em> <sub>sat</sub> = 0 V) `,
+      image: "",
+      options: [
+        `<b>A.</b> 50%`,
+        `<b>B.</b> 33.33%`,
+        `<b>C.</b> 12.33%`,
+        `<b>D.</b> 2.33%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_26.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the feedback amplifier shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_31.png"/><br>Assume the amplifier to be ideal, then the value of overall voltage gain with feedback <em>A</em> <sub> <em>vf</em> </sub> is equal to _______. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 18.64,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The logarithmic amplifier circuit is shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_33.png"/><br>The input voltage, <em>V</em> <sub>in</sub> = 100 mV, <em>R</em> = 50 kΩ and diode reverse saturation current, <img align="absmiddle" alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_34.png"/>nA at an ambient temperature of 23°C. The output of the above circuit will be `,
+      image: "",
+      options: [
+        `<b>A.</b> 3 Volt`,
+        `<b>B.</b> –0.2 Volt`,
+        `<b>C.</b> –3 Volt`,
+        `<b>D.</b> –0.7 Volt`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_35.jpg"/><br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An op-amp circuit is shown below (assume ideal op-amp)<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_44.png"/><br>The output voltage for an input <em> V<sub>i</sub> </em> = [ 2 + sin(100 <em>t</em> )] V is <em>V</em> <sub>0</sub> = A sin(100 <em>t</em> ). The value of <em>A</em> is ____ .<br>(Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.50,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_45.jpg"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A Wien bridge oscillator is shown in figure.<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_1.png"/><br>Which of the following statement(s) is/are true, if <em>f</em> <sub>0</sub> is the frequency of oscillation? `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_2.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_3.png"/>`,
+        `<b>C.</b> The gain of the op-amp stage should be less than two for proper operation.`,
+        `<b>D.</b> The gain of the op-amp stage should be three for proper operation.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If a common emitter amplifier with an emitter resistance <em> R<sub>e</sub> </em> has an overall transconductance gain of –1 mA/V, a voltage gain of –4 and desensitivity of 50, then the value of the emitter resistance  <em> R<sub>e</sub> </em> would be `,
+      image: "",
+      options: [
+        `<b>A.</b> 50 Ω`,
+        `<b>B.</b> 0.98 Ω`,
+        `<b>C.</b> 50 kΩ`,
+        `<b>D.</b> 0.98 kΩ`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_11.png"/><br>the output voltage <em>V</em> <sub>0</sub> is _______ V. (Rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Assuming the operational amplifier to be ideal, the <img align="absmiddle" alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_15.png"/> for the circuit shown in figure is _______.<br>(Rounded off to nearest integer) <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_16.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: -120,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the circuit shown in the figure below:<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_27.png"/><br>The MOSFET is biased in saturation region having <em> V<sub>T</sub> </em> = 2.5 V and <img align="absmiddle" alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_28.png"/> The minimum value of <em> V<sub>DD</sub> </em> for which the MOSFET will remain in saturation region is _______ V. `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_29.png"/><br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the op-amp circuit shown below,<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_37.png"/><br>This circuit represents`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_38.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_39.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_40.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_41.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_42.png"/><br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_43.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the circuit shown, the switch is initially closed. It is opened at t = 0 sec and remains open thereafter. If the output voltage <em>V</em> <sub>0</sub> becomes low at <em>t</em> = 0.367 msec, then the value of resistance <em>R </em> will be ______ kΩ. (Answer upto two decimal places) <br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_46.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 600,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The figure shown below works as a schmit trigger. Then the width of hystersis loop will be _____ volts. (Take the drop across diode is 0.6 V, when diode is on).<br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_48.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 14.82,
+      solution: `<img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_49.png"/><br><img alt="" src="js/questions/topicwise_test_22_part_syllabus_gate_2026_ee_analog_electronics_2/img_50.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electromagnetic Fields-1",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The force between a charge <em>q</em> and a grounded infinite conducting plane kept at a distance ‘<em>d</em> ’ from it is given by `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_3.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_4.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_5.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_6.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The space between the plates of a parallel-plate capacitor of capacitance C is filled with three dielectric slabs of identical size as shown in the below figure. If dielectric constants are ε<sub>1</sub> , ε<sub>2</sub> and ε<sub>3</sub> the new capacitance is <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_8.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_9.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_10.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_11.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_12.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two dielectric media with permittivities 3 and <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_14.png"/> are separated by a charge-free boundary as shown in figure. The electric field intensity in medium-1 at point <em>P</em> <sub>1</sub> has magnitude <em>E</em> <sub>1</sub> and makes an angle α<sub>1</sub> = 60° with normal. The direction of the electric field intensity at point <em>P</em> <sub>2</sub> , α<sub>2</sub> is <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_15.png"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_16.png"/>`,
+        `<b>B.</b> 45°`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_17.png"/>`,
+        `<b>D.</b> 30°`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_18.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Two identical conducting balls have positive charges <em>q</em> <sub>1</sub> and <em>q</em> <sub>2</sub> respectively. The balls are brought together in contact and then put back in their original positions. The force between the balls. `,
+      image: "",
+      options: [
+        `<b>A.</b> may be same as it was before the balls touched.`,
+        `<b>B.</b> may be greater than as it was before the balls touched.`,
+        `<b>C.</b> may be less than as it was before the balls touched.`,
+        `<b>D.</b> may be zero.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_22.png"/><br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Four charges <em>q</em> <sub>1</sub> = –2.0 × 10<sup>–9</sup> coulom, <em>q</em> <sub>2</sub> = 3.0 × 10<sup>–9</sup> coulomb, <em>q</em> <sub>3</sub> = 2.0 × 10<sup>–9</sup> coulomb and <em>q</em> <sub>4</sub> = 1.0 × 10<sup>–9</sup> coulomb are placed at four corners of a square of 4.0 metre side the potential at the centre of square is _______ V. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 12.73,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_24.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A pair of 200 mm long concentric cylindrical conductors of radii 50 mm and 100 mm, is filled with a dielectric with ε = 10ε<sub>0</sub> . A voltage is applied between the conductors which establishes <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_27.png"/>then which of the following is/are correct? `,
+      image: "",
+      options: [
+        `<b>A.</b> Value of capacitance C = 160.518 pF`,
+        `<b>B.</b> Voltage applied = 693.56 kV`,
+        `<b>C.</b> Energy stored = 38.56 J`,
+        `<b>D.</b> Voltage applied = 423.20 kV`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A spherical volume charge density is given by<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_40.png"/><br>the total charge <em>Q</em> is _________. `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_41.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_42.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_43.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_44.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The flux density <em>D</em> = <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_46.png"/>is in the free space, the total electric flux leaving the sphere of r = 0.3 m is _______ pC. <br>(Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 113.1,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_47.jpg"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct regarding the boundary conditions of electric field?`,
+      image: "",
+      options: [
+        `<b>A.</b> In a single medium electric field is continuous.`,
+        `<b>B.</b> The tangential components of electric field are the same on both sides of a boundary between two dielectrics.`,
+        `<b>C.</b> The tangential electric field at the boundary of a dielectric and a current carrying conductor with finite conductivity is zero.`,
+        `<b>D.</b> Normal component of flux density is continuous across the charge free boundary between two dielectrics.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Three infinite parallel charged plates A, B, C carry charge density +ρ , +ρ and –2ρ respectively, as shown in the figure below. What is the ratio of two potential differences ( <em> V<sub>A</sub> </em> – <em> V<sub>B</sub> </em> ) and ( <em> V<sub>B</sub> </em> – <em> V<sub>C</sub> </em> )? <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_1.jpg"/>`,
+      image: "",
+      options: [
+        `<b>A.</b> 1 : 1`,
+        `<b>B.</b> 1 : 2`,
+        `<b>C.</b> 1 : 3`,
+        `<b>D.</b> 1 : 4`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The current density in a medium is given by <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_19.png"/> The current flowing through the portion of a spherical surface r = 0.8 m, <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_20.png"/>is _____ A. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 15.1,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The total current in outward direction from a cube of 1 m, with one corner at the origin and edges parallel to the co-ordinate axes if, <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_25.png"/>is _______ A. `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A infinite length line charge described by x = 2 m and y = –4 m, having uniform charge density ρ<sub>L</sub> = 25 nC/m. The magnitude of electric field at point (–2, –1, 4) m is given by _______ . (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 90,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_29.png"/><br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If two point charges each of 32 nC are located at (1, 0, 0) and (–1, 0, 0) in free space. The <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_31.png"/>on the z-axis is, `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_32.png"/>`,
+        `<b>B.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_33.png"/>`,
+        `<b>C.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_34.png"/>`,
+        `<b>D.</b> <br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_35.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_36.png"/><br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two point charges 1 mC and –2 mC are located at (3, 2, –1) and (–1, –1, 4) respectively. The magnitude of electric force on a 10 nC charge located at (0, 3, 1) will be _________ mN. (Answer upto two decimal places).`,
+      image: "",
+      options: [
+      ],
+      answer: 10.63,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_38.png"/><br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the capacitor shown below with potential difference of 4 V applied across the conducting plates, area of the electrode plate is 400 cm2 the equivalent capacitance will be _______ pF. (Answer upto 2 decimal places)<br><img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_49.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 15.34,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A electrostatic charge of 2 nC is placed at (0, 0, 0.4) where all dimensions are in meters. The x-y plane is conducting ground plane. The z-component of electric field <img align="absmiddle" alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_51.png"/> at point (0, 0, 0.2) will be _______ V/m. (Answer upto 2 decimal places) (Take ε<sub>0</sub> = 8.85 × 10<sup>–12</sup> F/m) `,
+      image: "",
+      options: [
+      ],
+      answer: -499.58,
+      solution: `<img alt="" src="js/questions/topicwise_test_23_part_syllabus_gate_2026_ee_electromagnetic_fields_part_1/img_52.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electromagnetic Fields-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Faraday’s law of electromagnetic induction is mathematically described by which one of the following equations?`,
+      image: "",
+      options: [
+        `<b>A.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_1.png"/>`,
+        `<b>B.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_2.png"/>`,
+        `<b>C.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_3.png"/>`,
+        `<b>D.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_4.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The Maxwell’s equation, <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_13.png"/>is based on `,
+      image: "",
+      options: [
+        `<b>A.</b> Ampere’s law`,
+        `<b>B.</b> Gauss’s law`,
+        `<b>C.</b> Faraday’s law`,
+        `<b>D.</b> Coulomb’s law`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A square loop of 2 m side is placed in <em>xy</em> -plane with its centre at the origin and sides along the co-ordinate axes. If the magnetic flux density in the region is given by, <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_15.png"/><br><br>The emf induced in the loop at <em>t</em> = 10 sec will be ________ mV. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 67.379,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_16.png"/><br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a material the magnetic field intensity is H = 1400 A/m when magnetic flux density B = 2 Wb/m<sup>2</sup> . When H is reduces to 700 A/m at B = 1.4 Wb/m<sup>2</sup> , the absolute change in permeability is _________. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 454.73,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a certain material for which μ <em> <sub>r</sub> </em> = 4, the magnetic field is given by, <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_19.png"/><br><br>The corresponding magnetic energy density is _______ μJ/m<sup>2</sup> . (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 211,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_20.png"/><br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider square loop of length ‘a’ through which a current of 2 Amp is passing in clockwise direction as shown in figure. The magnitude of magnetic field <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_22.png"/>at the centre of square loop will be _______ A/m. <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_23.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 45.02,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a coaxial cable with inner radius of 1 mm and outer radius of 5 mm. The region in between inner surface and outer surface is filled with dielectric material μ<sub>1</sub> = 1, ε<sub>r</sub> = 1 and has zero initial inductance. The inductance for a coaxial cable of length 1 km is __________μH. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 321.88,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a 1000 turns coil, if the flux passing through each turn is (4<em>t</em> <sup>4</sup> – 3<em>t</em> <sup>3</sup> – 2<em>t</em> ) mWb. The magnitude of induced emf in the coil at t = 4 sec is ______ Volts. <br/> (Rounded off to nearest integer)`,
+      image: "",
+      options: [
+      ],
+      answer: 878,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A nonmagnetic wire of circular cross-section has radius 10 mm and a length 100 m. It carries a total current of <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_38.png"/> A and has potential difference between ends is 10 V. Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_39.png"/> where K is an unknown constant. The value of <em>K</em> = _______ × 10<sup>8</sup> A/m<sup>3</sup> . `,
+      image: "",
+      options: [
+      ],
+      answer: 3.18,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given magnetic field <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_6.png"/> A/m free space, the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_7.png"/> where the anticlockwise closed path for the integration is the boundary defined by the closed surface 2 m &lt;<em>x</em> &lt;3 m, 3 m &lt; y &lt;6 m and z=3 m.`,
+      image: "",
+      options: [
+        `<b>A.</b> 3 A`,
+        `<b>B.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_8.png"/>`,
+        `<b>C.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_9.png"/>`,
+        `<b>D.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_10.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_11.png"/><br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A toroid of diameter 0.2 m with a 10 sq. cm. Core of cross sectional area is uniformly wound with 250 turns of wire. If the flux density in the core is to be 1 Tesla and μ<sub>r (iron)</sub> = 500, then the energy stored in the inductor will be ________ J. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.5,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_25.png"/><br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A circuit has 2000 turns enclosing a magnetic circuit 30 cm<sup>2</sup> in section. A current of 10 A in the circuit produces a field of flux density 1(Tesla) and when current is doubled, flux density increases only by 50%. The mean value of inductance of the circuit between 10 A and 20 A is _______ H.<br/>(Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.30,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the given figure the circuit is energized from source <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_29.png"/>with a frequency of 50 Hz. which produces a peak current of 5 A. <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_30.png"/><br><br>Area of cross-section is 500 cm<sup>2</sup> . The core has relative permeability of 1000. If above figure is modified with an airgap of 5 cm in core. (Assume current flowing is same in both the cases).<br/>Choose the correct statement. `,
+      image: "",
+      options: [
+        `<b>A.</b> Magnetomotive force developed is less in case-1.`,
+        `<b>B.</b> The value of inductance difference in (<em>L</em> <sub>1</sub> – <em>L</em> <sub>2</sub> ) is 0.795 H. (Where <em>L</em> <sub>1</sub> is self inductance of first case and <em>L</em> <sub>2</sub> is self inductance of second case).`,
+        `<b>C.</b> Reluctance is same in both cases.`,
+        `<b>D.</b> Source voltage in case-1 is 1314.76 volts.`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_31.png"/><br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A particle with charge 6 nC is moving in a uniform magnetic field <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_33.png"/> The magnetic force on a particle is measured to be <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_34.png"/>Select the correct statement(s). `,
+      image: "",
+      options: [
+        `<b>A.</b> The dot product of velocity of particle and magnetic force is zero.`,
+        `<b>B.</b> The component of velocity in y-direction is always zero.`,
+        `<b>C.</b> Magnetic field intensity in air is 9.78 × 10<sup>5</sup> A/m`,
+        `<b>D.</b> Total force on particle when it is moving in both electric and magnetic field with electric field<img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_35.png"/>`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Select the incorrect statements related to a vector field <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_41.png"/> `,
+      image: "",
+      options: [
+        `<b>A.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_42.png"/>`,
+        `<b>B.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_43.png"/>`,
+        `<b>C.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_44.png"/>`,
+        `<b>D.</b> <br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_45.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The electric motor shown in figure below has field,<br><br><img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_47.png"/><br><br>The amount of flux passing through the air-gap if the axial length of pole is 30 cm will be _____ Wb.<br/>(Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.282,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A hemispherical shell carries a current density represented by <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_49.png"/> <br/> The amount of current passing through hemispherical shell of radius 100 cm, <img align="absmiddle" alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_50.png"/>will be ________ A. (Answer upto one decimal place) `,
+      image: "",
+      options: [
+      ],
+      answer: 12.56,
+      solution: `<img alt="" src="js/questions/topicwise_test_24_part_syllabus_gate_2026_ee_electromagnetic_fields_part_2/img_51.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Control Systems-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The characteristic equation of a control system is given as <em>s</em> <sup>4</sup> + <em>Ks</em> <sup>3</sup> + 2<em>s</em> <sup>2</sup> + <em>s</em> + 3 = 0. Which of the following statements is/are correct? `,
+      image: "",
+      options: [
+        `For system to be stable <em>K</em> > 0`,
+        `For system to be stable <em>K</em> > 0.5`,
+        `For all value of <em>K</em> system is stable`,
+        `There is no value of K for which the system is stable`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The transient test on a unity feedback prototype second-order system gave the following data:<br/> Settling time, <em> t<sub>s</sub> </em> = 0.8 sec (2% tolerance band). Positional error constant, <em> K<sub>p</sub> </em> = 5.25. If Peak overshoot, % <em> M<sub>p</sub> </em> = 16%. Then the transfer function of the system is `,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_12.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_13.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_14.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_15.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider a feedback system with characteristic equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_20.png"/> The angles of the asymptotes of the root-locus branches with the real axis of the s-plane is/are ______ . (Assume that <em>K</em> varies from 0 to 84). `,
+      image: "",
+      options: [
+        `60°`,
+        `180°`,
+        `300°`,
+        `45°`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_21.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The step response of a system is shown below, the forward path gain is _____.<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_36.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 32.33,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_37.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the open loop transfer function of a system given below,<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_39.png"/><br><br>The number of breakaway points in root locus plot for the system is/are`,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the mechanical system given below. If the system is set into motion by unit impulse force, then the frequency of resulting oscillations is<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_41.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_42.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_43.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_44.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_45.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The rise time for a system with the transfer function <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_47.png"/>is _______ sec. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.178,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_48.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following signal flow graph of a system?<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_50.png"/><br><br>Which one of the following statement is false?`,
+      image: "",
+      options: [
+        `Mason’s gain formula can be applied between <em>X</em> <sub>1</sub> and <em>X</em> <sub>4</sub> .`,
+        `Mason’s gain formula can not be applied between <em>X</em> <sub>2</sub> and <em>X</em> <sub>3</sub> .`,
+        `Mason’s gain formula can be applied between <em>X</em> <sub>4</sub> and <em>X</em> <sub>6</sub> .`,
+        `Mason’s gain formula can not be applied between <em>X</em> <sub>2</sub> and <em>X</em> <sub>6</sub> .`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The second order system response for the step input is given by<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_52.png"/><br><br>The damping ratio of the system is _______. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.403,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The unit impulse response of a system <em>S</em> <sub>1</sub> is given by <em>y</em> <sub>1</sub> (<em>t</em> ) = 4<em>e</em> <sup> –2<em>t</em> </sup> . The unit step response of a system <em>S</em> <sub>2</sub> is given by <em>y</em> <sub>2</sub> (<em>t</em> ) = 2(1 – <em>e</em> <sup> –3<em>t</em> </sup> ). The two systems are cascaded together without any interaction. The response of the cascaded system for unit ramp input is _________ . `,
+      image: "",
+      options: [
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_1.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_2.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_3.png"/>`,
+        `<br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_4.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_5.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A system is represented by the signal flow graph as shown in the figure. If the variable <em>T</em> is the torque and <em>E</em> is the error then the sensitivity of the system to changes in <em>K</em> <sub>2</sub> for ω = 0 is <br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_8.png"/>`,
+      image: "",
+      options: [
+        `0.4`,
+        `0.5`,
+        `0.6`,
+        `0.8`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A unity feedback control system has its open-loop transfer function <em>G</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_10.png"/> its steady-state error when the applied input <em>r</em> (<em>t</em> ) = 40 + 20<em>t</em> + 5<em>t</em> <sup>2</sup> is `,
+      image: "",
+      options: [
+        `0`,
+        `2`,
+        `4`,
+        `∞`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The open-loop transfer function of a unity feedback control system is <em>G</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_17.png"/> If the damping ratio is reduced from 0.8 to 0.2 then by what factor the time constant <em>T</em> should be multiplied? `,
+      image: "",
+      options: [
+      ],
+      answer: 16,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_18.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The open-loop transfer function of a unity feedback ac position control system is <em>G</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_23.png"/> the input shaft rotates at <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_24.png"/>revolution per second, the steady-state velocity error is 0.2°, the value of damping factor is ________ . <br/> (Answer upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 0.052,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_25.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A closed loop servo is represented by the differential equation <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_27.png"/> where ‘<em>c</em> ’ is the displacement of the output shaft, ‘<em>r</em> ’ is the displacement of the input shaft and <em>e</em> = <em>r</em> – <em>c</em> . The percentage peak overshoot for unit step input is ________ %. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 21.55,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_28.png"/><br><br><img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A unity negative feedback control system has open loop transfer function given by G(s)H(s) =<img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_30.png"/> . The constant ‘λ’ is defined as, <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_31.png"/> is the angle of departure. If the angle of departure, <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_32.png"/>is for the complex pole in II-quandrant is then the absolute value off the consant ‘λ’ is ________ . (Round off to the nearest integer). `,
+      image: "",
+      options: [
+      ],
+      answer: 202,
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a unity negative feedback control system where open loop transfer function is <em>G</em> (<em>s</em> )<em>H</em> (<em>s</em> ) <img align="absmiddle" alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_34.png"/> For the system to be stable, the least value that the parameter ‘<em>p</em> ’ will attain is `,
+      image: "",
+      options: [
+        `10.90`,
+        `9.95`,
+        `8.14`,
+        `10.05`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_3_part_syllabus_gate_2026_ee_control_systems_1/img_35.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Control Systems-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A system is described by the state equations <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_16.png"/>Which of the following option is correct? `,
+      image: "",
+      options: [
+        `Given system is controllable but not observable.`,
+        `Given system is observable but not controllable.`,
+        `Given system is controllable and observable both.`,
+        `Given system is neither controllable nor observable.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_17.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A portion of the polar plot of an open loop transfer function is represented below:<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_19.png"/><br><br>The angle θ is equal to 25°. The phase margin and gain margin of the system will be `,
+      image: "",
+      options: [
+        `25° and 4.082 dB`,
+        `65° and 4.082 dB`,
+        `205° and 0.204 dB`,
+        `–65° and 0.204 dB`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In state space representation of control system, the state matrix is <em>A</em> = <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_21.png"/> The closed loop poles of the system having state matrix of <em>A</em> <sup>–1</sup> will be `,
+      image: "",
+      options: [
+        `3, 7 and 5`,
+        `1, 2 and –3`,
+        `0, 1 and 7`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_22.png"/>`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The transfer function of a system is:<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_32.png"/><br><br>In the state-space representation of the system, the minimum number of state variables (in integer) necessary is _______ .`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A unity feedback system has the following open loop frequency response:<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_34.png"/><br><br>The gain and phase margin of the system are`,
+      image: "",
+      options: [
+        `2.5 dB and 5°`,
+        `5 dB and 10°`,
+        `7.5 dB and 15°`,
+        `10 dB and 20°`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The input <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_36.png"/> is applied to a system whose transfer function <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_37.png"/>The amplitude of the output of the system is ________ . (Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 0.08,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `In a unity-gain feedback control system, the plant <em>P</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_39.png"/> is controlled by a lag compensator <em>C</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_40.png"/>If the slope of the asymptotic bode magnitude plot of the loop gain at ω = 3 rad/sec is –60 dB/decades then the possible value of a is `,
+      image: "",
+      options: [
+        `10`,
+        `4`,
+        `1000`,
+        `10000`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Polar plot of a system at ω<sub>pc</sub> = 4 rad/sec gives <em>G</em> (ω <em> <sub>pc</sub> </em> )<em>H</em> (ω <em> <sub>pc</sub> </em> ) = 1∠–180°, then the system `,
+      image: "",
+      options: [
+        `is stable`,
+        `is unstable`,
+        `is marginally stable`,
+        `has GM = 1 dB`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The block diagram of a control system is shown below :<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_43.png"/><br><br>The control specifications are such that the damping ratio of the closed loop system is 0.6 and damped frequency of oscillations is 10 rad/sec. The parameters of PD controller <em> K<sub>P</sub> </em> and <em> K<sub>D</sub> </em> are respectively `,
+      image: "",
+      options: [
+        `156.25, 14`,
+        `13, 156.25`,
+        `12.5, 14`,
+        `156.25, 13`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dynamic system is described by the state variable equation<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_1.png"/><br><br>the obtain state transition matrix ϕ(t) is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_5.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The gain margin in dB of the unity feedback control system with transfer function.<br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_7.png"/>is ________ dB. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: -4.437,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of encirclements in clockwise direction of the point –1 + <em>j</em> 0, in the <em>G</em> (<em>s</em> )<em>H</em> (<em>s</em> ) plane, for<br/> the system having its open-loop transfer function <em>G</em> (<em>s</em> ) <em>H</em> (<em>s</em> ) = <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_9.png"/>is _______ . `,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the feedback system shown:<br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_11.png"/><br><br>If the resonant peak and resonant frequency of this system is 1.04 and 11.55 rad/sec respectively, then bandwidth is ________ rad/sec. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 25.41,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The open-loop transfer function of a unity feedback system is given by <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_13.png"/> Phase margin for K = 1, <em>T</em> <sub>1</sub> = 0.2 and <em>T</em> <sub>2</sub> = 0.05 is _______ `,
+      image: "",
+      options: [
+        `103.80°`,
+        `76.2°`,
+        `101.2°`,
+        `78.2°`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_14.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The asymptotic bode magnitude plot of the open loop transfer function of a unity negative feedback is shown in the figure. If the input is <img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_24.png"/>then the steady state error is ________ . (Answer upto two decimal places) <br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_25.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 10,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_26.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The magnitude response of a 2<sup>nd</sup> order closed loop system is shown in the figure below, <br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_28.png"/><br><br>where the peak magnitude is represented by <em>M</em> <sub>0</sub> and it occurs at a frequency of ‘ω<sub>0</sub> ’. The overall transfer function of this system is given by<img align="absmiddle" alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_29.png"/>The resonant frequency and resonant peak are `,
+      image: "",
+      options: [
+        `1.78 rad/sec and 12.32 dB`,
+        `1.87 rad/sec and 6.32 dB`,
+        `1.87 rad/sec and 12.32 dB`,
+        `0.25 rad/sec and 6.32 dB`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_30.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The asymptotic log magnitude curve for an open loop transfer function is given below : <br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_45.png"/><br><br>The value of ‘<em>A</em> ’ is _______ (in dB). (rounded off to two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 60.12,
+      solution: `<img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_46.png"/><br><br><img alt="" src="js/questions/topicwise_test_4_part_syllabus_gate_2026_ee_control_systems_2/img_47.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electrical Machines-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 24 kW, 250 V, 1500 rpm separately excited dc generator has armature resistance of 0.5 Ω and running under no load to give terminal voltage of 260 V at rated speed. The terminal voltage of the generator when it is delivering rated current at a speed of 1450 rpm will be (Assuming constant field excitation)`,
+      image: "",
+      options: [
+        `203.33 V`,
+        `250 V`,
+        `251.33 V`,
+        `193.67 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 200 V, dc shunt motor takes a current of 5.6 A on no-load and 68.3 A on full load. On full load, armature reaction weakens the field by 5%, then the ratio of the full load speed to the no-load speed is (Given <em> R<sub>a</sub> </em> = 0.2 Ω, total brush drop = 2 V and <em> R<sub>f</sub> </em> = 100 Ω) `,
+      image: "",
+      options: [
+        `1.014`,
+        `0.986`,
+        `0.0936`,
+        `0.107`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 250 V dc shunt motor takes 2A at no-load. The armature resistance of the motor is 0.6 Ω and the field current is 1A. If the input current is 21A and the total brush drop is 2V then the output power of the motor will be:`,
+      image: "",
+      options: [
+        `737.4 W`,
+        `4512.6 W`,
+        `4472.6 W`,
+        `4720 W`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 500 kVA, 11 kV, 3-phase star-connected alternator has the following data:<br/> Friction and windage loss = 2000 W<br/> Open-circuit core loss = 3000 W<br/> Effective armature resistance per phase = 4 Ω<br/> Field copper loss = 1000 W<br/>Maximum efficiency of the alternator at 0.8 lagging power factor is _______ %. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 96.60,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two shunt generators are in parallel with no load voltage 60 V and 50 V and full load power delivered 400 W and 500 W respectively at 20 V terminal voltage. The common voltage while delivering 700 W to load is`,
+      image: "",
+      options: [
+        `30.5 V`,
+        `22.6 V`,
+        `20 V`,
+        `27.5 V`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_15.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A synchronous generator is loaded and the armature current lags behind the excitation emf by<br/>angle of 38°. The electrical angle between field axis and the axis of armature reaction field will be _________ degrees. `,
+      image: "",
+      options: [
+      ],
+      answer: 128,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A synchronous motor operates at unity power factor. The points to the left of the unity power factor locus of V-curves corresponds to`,
+      image: "",
+      options: [
+        `over excitation and lagging current input.`,
+        `under excitation and leading current input.`,
+        `under excitation and lagging current input.`,
+        `over excitation and leading current input.`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A synchronous generator is supplying 1.5 p.u. real power to an infinite bus via a transmission line of reactance 0.2 p.u. Both terminal voltage and infinite bus voltage are at 1 p.u. The reactive power supplied by the machine to the infinite bus, is ______ p.u. (Upto 2 decimal place)`,
+      image: "",
+      options: [
+      ],
+      answer: -0.23,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A DC series motor has following open circuit characteristics at the speed of 900 rpm,<br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_21.png"/><br><br>(Neglect losses in core, friction and windage). (Assume torque is constant)<br/> Total resistance of armature and field circuit is 1 Ω. The motor is connected to 200 V supply. The<br/>speed of motor when the armature current is 30 A will be _______ rpm. (Answer rounded off to nearest integer) `,
+      image: "",
+      options: [
+      ],
+      answer: 850,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 3-phase, 16-pole, alternator has a star-connected winding with 144 slots and 10 conductors per slot. If the flux per pole is 0.04 wb and the supply frequency is 50 Hz then the induced emf per phase will be (assume the total turns/phase to be series connected).`,
+      image: "",
+      options: [
+        `2046 V`,
+        `2060 V`,
+        `2146 V`,
+        `2131 V`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_2.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A synchronous generator is running over-excited with excitation voltage of 1.40 p.u. having synchronous reactance of 1.20 p.u. If is delivering a real power of 0.50. p.u. to an infinite bus, suddenly the prime mover torque is increased by 1%, then the percentage change in the real<br/>power and reactive power will be respectively `,
+      image: "",
+      options: [
+        `1% and –0.5%`,
+        `0.475% and –0.5%`,
+        `1% and –0.475%`,
+        `1.1% and –0.475%`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 200 V dc shunt motor takes 22 A at rated voltage and runs at 1000 rpm. The armature resistance including brushes and field winding resistance are 0.1 Ω and 100 Ω. The value of additional resistance required in the armature circuit to reduce the speed to 800 rpm when the load torque increases as the cube of the speed will be`,
+      image: "",
+      options: [
+        `3.96 Ω`,
+        `1.98 Ω`,
+        `2.50 Ω`,
+        `3.15 Ω`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 6-pole, 148 A, d.c. shunt generator has 480 conductors and is wave-wound. For the field current of 2A, the demagnetizing and cross-magnetizing ampere -turns per pole at full load, if brushes are shifted from GNA by 5° mechanical, will be:`,
+      image: "",
+      options: [
+        `500 ATs/Pole and 2500 ATs/Pole`,
+        `166.67 ATs/Pole and 2833.33 ATs/Pole`,
+        `0 ATs/Pole and 3000 ATs/Pole`,
+        `2500 ATs/Pole and 500 ATs/Pole`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_7.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 10 kW, 240 V d.c. shunt motor draws a line current of 5.2 A, while running at no-load speed of 1200 rpm from a 240 V d.c. supply. If has an armature resistance of 0.25 Ω and field resistance of 240 Ω. The efficiency of the motor when it delivers rated load is ________ %. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 84.56,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A D.C. series motor, running a fan at 1000 rpm takes 50 A from 250 V mains. The armature plus field resistance is 0.6 Ω. If an additional resistance of 4.4 Ω is inserted in series with the armature circuit. If field flux is proportional to the armature current, then the motor speed is`,
+      image: "",
+      options: [
+        `751 rpm`,
+        `641 rpm`,
+        `841 rpm`,
+        `931 rpm`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_11.png"/><br><br><img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 220 V, d.c. shunt motor has an armature circuit resistance of 0.2 Ω and field resistance of 110 Ω. At no-load the motor takes 5 A and runs at 1500 rpm. If the motor draws 52 A at rated voltage and rated load. The rotational losses at no-load and full-load are the same neglect armature<br/>reaction. The rated shaft torque is ________ Nm. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 65.40,
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 2000 V, 3-phase star-connected synchronous motor has synchronous impedance of (0.5 + <em>j</em> 5)Ω per phase. For an excitation voltage of 3000 V, the motor takes on input of 900 kW at rated voltage. The power angle of motor would be around `,
+      image: "",
+      options: [
+        `40°`,
+        `49°`,
+        `53°`,
+        `60°`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_5_part_syllabus_gate_2026_ee_electrical_machines_part_1/img_18.png"/>`
+    }
+
+  ]
+})
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Electrical Machines-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Figure shows an ideal three winding transformer wound on the same case. The turns ratio <em>N</em> <sub>1</sub> : <em>N</em> <sub>2</sub> : <em>N</em> <sub>3</sub> is 4 : 2 : 1. A resistor of 5 Ω is connected across winding-2. A capacitor of reactance 5 Ω is connected across winding-3, winding-1 is connected across a 400 V A.C. as supply. If the supply voltage <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_12.png"/> the supply current <img align="absmiddle" alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_13.png"/>is given by <br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_14.png"/>`,
+      image: "",
+      options: [
+        `(–10 + <em>j</em> 10)A `,
+        `(20 + <em>j</em> 5)A `,
+        `(10 + <em>j</em> 10)A `,
+        `(20 – <em>j</em> 5)A `,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 6 pole, 50 Hz, 3-Φ induction motor running on full load develops a useful torque of 150 Nm at a rotor frequency of 2 Hz. The shaft power output is _______ kW. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 15.08,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An 11000/440 V, 50 Hz, 3-Φ transformer in delta connected on hv-side and the lv-side winds are star connected. The emf to be 10 V per turn and flux density is not to exceed 1 Wb/m<sup>2</sup> . The net cross-sectional area of the core is _______ cm<sup>2</sup> . `,
+      image: "",
+      options: [
+      ],
+      answer: 450,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In per unit what is the maximum and minimum voltage regulation of transformer (approximately) respectively`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_19.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_20.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_21.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_22.png"/>`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The resistance and reactance of a 200 kVA, 11000/400 V, Δ-Y distribution transformer are 0.04 p.u. and 0.07 p.u. respectively. The phase impedance of the transformer reflected to the HV side`,
+      image: "",
+      options: [
+        `(0.02 + <em>j</em> 0.07) Ω `,
+        `(0.55 + <em>j</em> 1.925) Ω `,
+        `(15.125 + <em>j</em> 52.94) Ω `,
+        `(72.6 + <em>j</em> 127.05) Ω `,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `At rated voltage the blocked rotor current of an induction motor is six times its full-load current and full-load slip is 4%. The starting torque as a percentage of full-load torque when it is started by means of an autotransformer with 60% tapping is `,
+      image: "",
+      options: [
+        `57.77%`,
+        `50%`,
+        `56.15%`,
+        `51.84%`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_24.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 3-phase, Y-connected, 400 V, 4-pole, 50 Hz, 25 kW induction motor has the following parameters of its approximate circuit model.<br/> <em>R</em> <sub>1</sub> = 1.6 Ω, R′2 = 0.8 Ω, X<sub>1</sub> = 2.5 Ω, X′<sub>2</sub> = 1.2 Ω, Xm = 60 Ω<br/>If the rotational loss is 500 W and s = 0.04, then the shaft torque is _____ N-m. (Upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 39.07,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_26.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A 3-phase, 1000 kVA, 0.80 lagging power factor load is supplied by a open delta connection at 400 V. Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `The operating power factor of one transformer-1 is 0.993.`,
+        `The operating power factor of other transformer-2 is 0.785.`,
+        `The operating power factor of one transformer-1 is 0.80.`,
+        `The operating power factor of other transformer-2 is 0.60.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A three-phase, 6-pole, 50 Hz induction motor develops maximum torque at 940 rpm. The rotor resistance per phase is 0.1 Ω. The standstill rotor reactance is _______ Ω.`,
+      image: "",
+      options: [
+      ],
+      answer: 1.66,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 6-pole, 50 Hz, 3-phase induction motor has rotor resistance and reactance per phase of 0.02 Ω and 0.1 Ω respectively. The value of the external rotor resistance per phase to develop two-third of the maximum torque at starting is`,
+      image: "",
+      options: [
+        `0.018 Ω`,
+        `0.242 Ω`,
+        `0.18 Ω`,
+        `0.0242 Ω`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The primary and secondary windings of a single phase 30 kVA, 6000/230 V transformer have resistance of 10 Ω and 0.016 Ω respectively. The total reactance of the transformer referred to the primary is 23 Ω. The percentage voltage regulation of the transformer when supplying fullload current at a power factor of 0.8 lagging is ________ . (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 2.6,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 400 kVA transformer has an iron-loss of 2 kW and the maximum efficiency at 0.8 lagging power factor occurs when the load is 240 kW. The efficiency at full load and 0.71 lagging power factor is _______ %. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 98.05,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_2.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 3-phase induction motor has a starting torque of 150% and maximum torque of 250% of the full load torque. If the full rotor current is 120 A. Neglect stator impedance, the starting current is`,
+      image: "",
+      options: [
+        `263.2 A`,
+        `365.2 A`,
+        `563.6 A`,
+        `423.2 A`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A 20 hp, 4-pole, three-phase induction motor has friction and windage losses of 2 percent of the output. The full-load slip is 3 percent. Which of the following statement(s) is/are correct? (Take 1 hp = 735.5 Watt)`,
+      image: "",
+      options: [
+        `The rotor copper - loss = 464 W`,
+        `The rotor input = 15468.2 W`,
+        `The shaft torque = 96.59 Nm`,
+        `The shaft torque = 93.64 N-m`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 10 kVA, single-phase transformer for 2000/400 V at no load, has <em>R</em> <sub>1</sub> = 5.5 Ω, X<sub>1</sub> = 12 Ω, <em>R</em> <sub>2</sub> = 0.2 Ω, <em>X</em> <sub>2</sub> = 0.45 Ω. If the primary applied voltage is 2000 V. The approximate magnitude of the secondary voltage at full load, 0.8 power factor (lagging) is _______ V. `,
+      image: "",
+      options: [
+      ],
+      answer: 377.65,
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 25 KVA, 2000/200 V, 2-winding transformer to be used as an autotransformer with constant source voltage of 2000 V. If the full load efficiency of the 2-winding transformer at 0.8 power factor is 95% then the efficiency of the auto transformer under similar operating conditions is`,
+      image: "",
+      options: [
+        `99.52%`,
+        `97.52%`,
+        `95.52%`,
+        `98.10%`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_8.png"/><br><br><img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A transformer is connected to a 1000 V, 50 Hz supply. The total core loss is 2000 W, of which 1400 W are hysteresis and 600 W are eddy current loss. If the applied voltage is raised to 2000 V and the frequency to 100 Hz, the new core loss is`,
+      image: "",
+      options: [
+        `1700 W`,
+        `2800 W`,
+        `2400 W`,
+        `5200 W`,
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test_6_part_syllabus_gate_2025_ee_electrical_machines_2/img_11.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Power Systems-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a 3-phase 11 kV alternator to protect 90% of the winding against earth fault by a relay with pick up current 2A. The neutral CT has a ratio of 200/5. The required value of neutral resistance is _______ Ω. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 7.94,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_2.png"/><br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The ABCD parameters of <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_4.png"/> overhead transmission line are <em>A</em> = <em>D</em> = 0.8 ∠0°, <em>B</em> = 200∠90° Ω and C = 0.82 × 10<sup>–4</sup> ∠90° S. At no load condition a shunt inductive reactor is connected at the receiving end of the line to limit the receiving end voltage and to be equal to the sending end voltage. The ohmic value of the reactor is `,
+      image: "",
+      options: [
+        `1000 Ω`,
+        `–4000 Ω`,
+        `2000 Ω`,
+        `1052.6 Ω`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A composite conductor consists of 4 conductors. The conductors are arranged as shown below.<br/>If the geometric mean radius (GMR) is 22.9 cm then the radius r of the conductor is <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_6.png"/>`,
+      image: "",
+      options: [
+        `2 cm`,
+        `3 cm`,
+        `4 cm`,
+        `5 cm`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A lossless transmission line is operating at voltage <em> V<sub>S</sub> </em> = <em> V<sub>R</sub> </em> = 400 kV has surge impedance of 400Ω. It is connected with a 20% of shunt capacitance compensation at the load end. If the generator is delivering a power of 290 MW through these lines then<br/>Which of the following is/are correct? `,
+      image: "",
+      options: [
+        `<b>A.</b> The load angle δ of the generator in degree is 41.44°.`,
+        `<b>B.</b> SIL = 438.18 MW`,
+        `<b>C.</b> SIL = 464.20 MW`,
+        `<b>D.</b> The load angle δ of the generator in degree is 36.37°.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An interconnected power system network supply 1500 MW at 50 Hz frequency. The frequency is changing 2.5% for a load variation of x%. If a 150 MW of industrial load is dipped the steady state frequency is 50.80 Hz, then the value of x is ______________ (Assume R = 0.006 Hz/MW)<br/>(Answer upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.736,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An 11 kV, 3-phase transmission line has resistance of 2 Ω and reactance of 3 Ω per phase. The efficiency of the line when supplying the load of 6 MW at 0.8 lagging power factor is nearly`,
+      image: "",
+      options: [
+        `86.62%`,
+        `89.55%`,
+        `82.25%`,
+        `92.25%`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a system of 132 kV, the line to ground capacitance is 0.02 μF and the inductance is 4H. If the instantaneous value of magnetizing current of 8 A is interrupted, then the voltage appearing across the pole of a circuit breaker is -`,
+      image: "",
+      options: [
+        `195.95 kV`,
+        `113.13 kV`,
+        `226.27 kV`,
+        `256.10 kV`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given figure, a reactance of <em>j</em> 0.5 p.u. links two generating stations <em>G</em> <sub>1</sub> and <em>G</em> <sub>2</sub> . <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_14.png"/><br><br>If |<em>V</em> <sub>1</sub> | = |<em>V</em> <sub>2</sub> | = 1 p.u. then the reactive power demand by transmission line is `,
+      image: "",
+      options: [
+        `0.060 p.u.`,
+        `0.080 p.u.`,
+        `0.090 p.u.`,
+        `0.10 p.u.`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A <img align="absmiddle" alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_16.png"/>line consists of three conductors each of diameter 21 mm. Spacing between the conductors are : <br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_17.png"/><br><br>If the frequency of line is 50 Hz. Then for 1000 km the inductive reactance per phase of the line is-`,
+      image: "",
+      options: [
+        `127 Ω`,
+        `386 Ω`,
+        `580 Ω`,
+        `448 Ω`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a string of three identical suspension insulator units supporting a transmission line conductor, if the self-capacitance of each units is denoted as C Farad, the capacitance of each connector pin to ground can be taken as 0.2 C Farad. If the maximum permissible voltage per unit is 20 kV, then the percentage string efficiency is _______ . (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 78.06,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A two-line dc distributor fed from both ends is shown below:<br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_19.png"/><br><br>The minimum potential node and minimum voltage on distribution line are respectively. `,
+      image: "",
+      options: [
+        `Node C and 223.71 V`,
+        `Node B and 223.71 V`,
+        `Node C and 233.71 V`,
+        `Node B and 233.71 V`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A conductor of 1 cm diameter passes centrally through a porcelain cylinder of internal diameter 2 cm and external diameter 7 cm. The cylinder is surrounded by a tightly fitting metal sheath. The permittivity of porcelain is 5 and the peak voltage gradient in air must not exceed 34 kV/cm.<br/>The maximum safe working voltage is _________ kV (rms). (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 11.34,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_23.png"/><br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 440 kV transmission line has the following line constants:<br/> <em>A</em> = 0.90∠10°, B = 400∠80°<br/>If the voltage at each end is to be maintained at 440 kV. The power angle (in degrees) at unity power factor load is _______ . <br/> (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 22.25,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A single phase ac system comprising of two overhead conductors is to be conductors is to be converted into a 3-phase, 3-wire system by providing an additional conductor of same size. If the operating line voltage and percentage line losses, power factor of load remains same in both systems. Then which of the following is/are correct?`,
+      image: "",
+      options: [
+        `Power transmitted in single phase system = power transmitted in Three phase system`,
+        `Power transmitted in single phase system = 2 × power transmitted in Three phase system`,
+        `Power transmitted in three phase system = 2 × power transmitted in single phase system`,
+        `Power transmitted in single phase system = 3 × power transmitted in single phase system`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_9.png"/><br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A three non-inductive loads of 5 kW, 4 kW and 3 kW are connected in a star network between <em>R</em> , <em>Y</em> and <em>B</em> phases and neutral. The line voltage is 200 V. The current in the neutral wire is nearly. `,
+      image: "",
+      options: [
+        `20.0 A`,
+        `11.5 A`,
+        `15.0 A`,
+        `26.0 A`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a 220 kV, 50 Hz, single phase transmission line, the reactance and suceptance upto location of circuit breaker is 18 Ω and 9 × 10<sup>–5</sup> S respectively. A resistance of 100 Ω is connected across the contacts of the circuit breaker. The natural frequency of oscillation is `,
+      image: "",
+      options: [
+        `1.2 kHz`,
+        `1.8 kHz`,
+        `2.4 kHz`,
+        `2.6 kHz`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the power system network shown in figure,<br><br><img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_26.png"/><br><br>If ⎪<em>V</em> <sub>2</sub> ⎪ = 1 p.u. then the load active power (in p.u.) is ________ . (Answer upto 3 decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 4.358,
+      solution: `<img alt="" src="js/questions/topicwise_test_7_part_syllabus_gate_2026_ee_power_systems_part_1/img_27.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Power Systems-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_16.png"/>500 MVA, 132 kV/66 kV Y-Δ transformer is having series reactance of 12.5%. If this transformer is used for the service in a power system having base values as 700 MVA and 765 kV on HV side of the transformer, then the per unit value of the transformer reactance is: `,
+      image: "",
+      options: [
+        `5.2%`,
+        `0.52%`,
+        `52%`,
+        `12.5%`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_17.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 50 Hz, four pole turbo alternator rated 100 MVA, 11 kV has an inertia constant of 8 MJ/MVA.<br/> If the mechanical input is suddenly raised to 80 MW for an electrical load of 50 MW, then the rotor acceleration is _______ elec. deg/sec<sup>2</sup> . `,
+      image: "",
+      options: [
+      ],
+      answer: 337.50,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 70 bus power system has 80% of the [Y<sub>Bus</sub> ] sparse. The total no. of the transmission lines and the no. of non-zero off diagonal elements of [Y<sub>Bus</sub> ] matrix will be respectively `,
+      image: "",
+      options: [
+        `910 and 490`,
+        `980 and 910`,
+        `455 and 910`,
+        `455 and 490`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_20.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a partial Z-bus system:<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_46.png"/><br><br>There are two generators at bus-1 and 3 and their subtransient reactances were inducted while calculating Z-bus.<br/> A <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_47.png"/>fault occurs at bus-1. The magnitude of current supplied by generator (3). Whose subtransient reactance is j0.1 p.u. is ________ p.u. (Answer upto two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 3.50,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 50 Hz, 4 pole - turbogenerator rated 200 MVA, 11 kV. The mechanical input is suddenly raised to 180 MW for an electrical load of 120 MW. If the rotor acceleration is 270 electrical degrees/ sec<sup>2</sup> then the inertia constant is _________ (Neglect mechanical and electrical losses) `,
+      image: "",
+      options: [
+        `5 MJ/MVA`,
+        `10 MJ/MVA`,
+        `20 MJ/MVA`,
+        `15 MJ/MVA`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 5-bus system is used for study for a completed bus-bar voltages. It is known that 3-bus are <em>PQ </em> bus and 2 are generator bus. The fast decoupled method is used for solving simultaneous equation. The number of simultaneous equations to be solved is _______ . `,
+      image: "",
+      options: [
+      ],
+      answer: 7,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The bus impedance matrix of a three bus system is:<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_28.png"/><br><br>If a <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_29.png"/> symmetrical fault occurs at bus-3 with fault impedance of <em>j</em> 0.20 p.u. then magnitude of fault current is ________ p.u. (Assume prefault voltage to be 1.0 p.u.) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.33,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Three 6.6 kV, <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_31.png"/>10 MVA alternators are connected to a common bus. Each alternator has a positive, negative and zero sequence reactance as 0.30 p.u., 0.15 p.u., 0.05 p.u. respectively. A single line to ground fault occurs at point F, as shown in figure below, <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_32.png"/><br><br>If only one neutral is solidly grounded and other two neutrals are isolated. Then the magnitude of fault current is ________ kA. <br/> (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 13.12,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the 4-bus system, containing transmission lines and transformers. The admittance matrix is<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_35.png"/><br><br>If a transmission line having π-equivalent circuit as shown below is connected between 2<sup>nd</sup> and 4<sup>th</sup> buses. Then the modified Y<sub>bus</sub> matrix will be <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_36.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_37.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_40.png"/>`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a 3 bus power system in which the bus-2 and bus-3 are connected as shown below. <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_1.png"/><br><br>The modified [Y<sub>Bus</sub> ] of the system if the transmission line between bus-2 and bus-3 is removed will be: <br/> `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_4.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_5.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_6.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A power system consisting of 3 buses, 1 transformer and a transmission line. It is disconnected from the rest of the system and operating at rated voltage<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_8.png"/><br><br>The post fault voltage of bus-1 for a <img align="absmiddle" alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_9.png"/>fault at bus-3 is ______ kV (Correct upto two decimal places). `,
+      image: "",
+      options: [
+      ],
+      answer: 8.47,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_10.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a two unit power system plant :<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_22.png"/><br><br>For a loss of 10 MW, first unit is generating 100 MW for the system incremental cost of 25 Rs/MWhr. The generations of both the generating unit, and the load demand, <em>P</em> <sub>1</sub> , <em>P</em> <sub>2</sub> and <em> P<sub>D </sub> </em> respectively are : <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_23.png"/>`,
+      image: "",
+      options: [
+        `128.57 MW, 125 MW and 237.04 MW`,
+        `130.57 MW, 120 MW and 240 MW`,
+        `128.57 MW, 125 MW and 243.57 MW`,
+        `128.57 MW, 120 MW and 232.04 MW`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_24.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 100 MVA, 50 Hz synchronous generator having inertia constant <em>H</em> = 5 kW-s/KVA on full load at unity power factor. <br/> The load is suddenly reduced to 60 MW. Due to time lag in governor system, the steam valve begins to close after 0.5 second.<br/> The change in frequency that occurs in this time is _______ Hz. (Answer upto two decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 1.0,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The steady-state power limit of the given power system is 10 p.u. The generator has the induced emf of 1.5 p.u. A symmetrical fault occurs in the middle of one of the parallel lines and circuit breaken is opened to ensure the safe supply of power.<br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_12.png"/><br><br>The ratio of the steady-state power limit for prefault condition to the post fault condition when circuit breaken was opened is _______ (Answer upto three decimal places). `,
+      image: "",
+      options: [
+      ],
+      answer: 1.500,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 50 MVA, 11 kV, three-phase synchronous generator was subjected to different types of faults.<br/>The fault current are as follows: <br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_14.png"/><br><br>The generator neutral is solidly grounded. The value of the zero sequence reactance of the generator is ________Ω. (Correct upto three decimal places).`,
+      image: "",
+      options: [
+      ],
+      answer: 0.305,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 50 Hz generator is delivering 60% of power that it is capable of delivering through a transmission line to an infinite bus. A fault occurs that increases the reactance between the generator and the infinite bus to 400% of the value before the fault. When fault is isolated, the<br/>maximum power that can be delivered is 75% of the original maximum value. For this condition critical clearing angle (in degrees) is `,
+      image: "",
+      options: [
+        `67.33°`,
+        `54.17°`,
+        `36.86°`,
+        `51.32°`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_42.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_43.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The steady state power limit of a power system is 100 MW. A generator with constant excitation is supplying 50 MW to the system. The maximum permissible sudden increase in generator input without causing instability is 36.66 MW. Then the magnitude of the deaccelerating area under the power angle curve is ______ . (Answer upto three decimal places)`,
+      image: "",
+      options: [
+      ],
+      answer: 8.773,
+      solution: `<img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_44.png"/><br><br><img alt="" src="js/questions/topicwise_test_8_part_syllabus_gate_2026_ee_power_systems_part_2/img_45.png"/>`
+    }
+
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "TWT - Engineering Mathematics-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential equation, <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_12.png"/>is equal to ______. `,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_13.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>M</em> be a 3 × 3 invertible matrix with real entries and let <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_21.png"/> denote the 3 × 3 identity matrix. If M<sup>–1</sup> = adj (adj <em>M</em> ), then which of the following statement is/are always TRUE? `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_24.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_25.png"/>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If A is a square matrix of order three with its characteristic equation:<br/> <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_27.png"/>then its determinant is `,
+      image: "",
+      options: [
+      ],
+      answer: -2,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function, <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_49.png"/> has a local maximum value at <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_50.png"/>equals to `,
+      image: "",
+      options: [
+        `-2`,
+        `-1`,
+        `3`,
+        `4`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The determinant of the given matrix is ____________.<br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_55.png"/>`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_57.png"/> C is the curve y<sup>2</sup> = 4 x in the x y-plane from (0, 0) to (4, 4), is `,
+      image: "",
+      options: [
+        `66`,
+        `132`,
+        `264`,
+        `528`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The work done by the conservative vector field <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_29.png"/> along any smooth curve <em>C</em> joining the point A(–1, 3, 9) to B(1, 6, –4) is `,
+      image: "",
+      options: [
+        `3`,
+        `4`,
+        `6`,
+        `12`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of solutions of the system of equations: <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_31.png"/> and <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_32.png"/>is `,
+      image: "",
+      options: [
+        `2`,
+        `1`,
+        `0`,
+        `Infinite`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_33.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of values of ‘c’ with reference to Lagrange’s mean value theorem for the function <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_35.png"/>is `,
+      image: "",
+      options: [
+        `Only one`,
+        `At least one but finite`,
+        `Infinite`,
+        `Zero`,
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_15.png"/> is orthogonal, then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_16.png"/>is `,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_18.png"/> be the identity matrix of order 3. If <em>Q</em> = [ <em> q<sub>ij</sub> </em> ] is a matrix, such that<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_19.png"/>equals `,
+      image: "",
+      options: [
+        `52`,
+        `103`,
+        `201`,
+        `205`,
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The eigen vectors of matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_37.png"/>is/are `,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_41.png"/>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_42.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_43.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_45.png"/> <br/> be continuous in [0, ∞), then the most suitable values of a and b are:`,
+      image: "",
+      options: [
+        `<em>a</em> = –1 and <em>b</em> = 1`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_46.png"/>`,
+        `<em>a</em> = 1 and <em>b</em> = –1`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_47.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The directional derivative of the function <img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_52.png"/> at the point <em>A</em> (1, 2, 3) in the direction of the line <em>AB</em> where <em>B</em> is the point (5, 0, 4) is ______. (Correct to two decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 2.61,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_53.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following functions are continuous on (0, π)?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_1.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_4.png"/>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_5.png"/><br><br><img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_7.png"/> `,
+      image: "",
+      options: [
+        `2`,
+        `-2`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_9.png"/>`,
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The area bounded by the curve x<sup>2</sup> = 4y and the straight line x = 4y – 2 is _____ unit<sup>2</sup> . (Correct upto three decimal places) `,
+      image: "",
+      options: [
+      ],
+      answer: 1.125,
+      solution: `<img alt="" src="js/questions/topicwise_test_9_part_syllabus_gate_2026_ee_engineering_mathematics_1/img_11.png"/>`
+    }
+
+  ]
+});
+
 registerTest({
   series: "ee-gate-pyq",
   name: "SWT - Electrical Circits",
