@@ -35959,11 +35959,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Match the logic gates in Column
-A with their equivalents in Column
-B.
-<br/>
-<p style="text-align:center"><img alt="" height="248" src="js/questions/test_20260717_131501/img_1.png" width="336"/></p>`,
+      text: `Match the logic gates in Column A with their equivalents in Column B. <br/> <p style="text-align:center"><img alt="" height="248" src="js/questions/test_20260717_131501/img_1.png" width="336"/></p>`,
       image: "",
       options: [
         `P-2, Q-4, R-1, S-3`,
@@ -35978,12 +35974,7 @@ B.
       marks: 1,
       neg: 0.0,
       type: "NAT",
-      text: `Consider the following logic circuit:<br/>
-<p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_2.png" width="398"/><br/>The number of input combinations
-$(\mathrm{A, \mathrm{B, \mathrm{C)$ for which
-the output
-F becomes
-$1$ is ?</p>`,
+      text: `Consider the following logic circuit:<br/> <p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_2.png" width="398"/><br/>The number of input combinations $(\mathrm{A, \mathrm{B, \mathrm{C)$ for which the output F becomes $1$ is ?</p>`,
       image: "",
       options: [],
       answer: 4,
@@ -36008,9 +35999,7 @@ $1$ is ?</p>`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `A bulb in a staircase has two switches, one switch being at the ground floor and the other one at the
-first floor. The bulb can be turned ON and also can be turned OFF by any one of the switches
-irrespective of the state of the other switch. The logic of switching of the bulb resembles.`,
+      text: `A bulb in a staircase has two switches, one switch being at the ground floor and the other one at the first floor. The bulb can be turned ON and also can be turned OFF by any one of the switches irrespective of the state of the other switch. The logic of switching of the bulb resembles.`,
       image: "",
       options: [
         `an AND gate`,
@@ -36025,15 +36014,7 @@ irrespective of the state of the other switch. The logic of switching of the bul
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `
-X = 01110$ and
-Y = 11001$ are two
-$5$-bit binary numbers represented in two's
-complement format. The sum of
-X and
-Y represented in two's complement
-format using
-$6$ bits is`,
+      text: ` X = 01110$ and Y = 11001$ are two $5$-bit binary numbers represented in two's complement format. The sum of X and Y represented in two's complement format using $6$ bits is`,
       image: "",
       options: [
         `$100111$`,
@@ -36048,9 +36029,7 @@ $6$ bits is`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `The Boolean expression
-$Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D + \overline{\text{A} \text{ B C } \overline{D} + \text{A}  \overline{\text{B}  \overline{\text{C} }}  \text{D}  +  A B } \overline{\text{C}  \overline{D}}
-can be minimized to`,
+      text: `The Boolean expression $Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D + \overline{\text{A} \text{ B C } \overline{D} + \text{A}  \overline{\text{B}  \overline{\text{C} }}  \text{D}  +  A B } \overline{\text{C}  \overline{D}} can be minimized to`,
       image: "",
       options: [
         `$Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D + \overline{\text{A}  \text{B}  \overline{\text{C} + \text{A}  \overline{\text{C}  D$`,
@@ -36065,10 +36044,7 @@ can be minimized to`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `In the following circuit,
-X is given by
-<br/>
-<p style="text-align:center"><img alt="" height="185" src="js/questions/test_20260717_131501/img_3.png" width="375"/></p>`,
+      text: `In the following circuit, X is given by <br/> <p style="text-align:center"><img alt="" height="185" src="js/questions/test_20260717_131501/img_3.png" width="375"/></p>`,
       image: "",
       options: [
         `X = \text{A}  \overline{\text{B}  \overline{\text{C} + \overline{\text{A}  \text{B}  \overline{\text{C} + \overline{\text{A}  \overline{\text{B}  \text{C} + \text{A} B C`,
@@ -36083,18 +36059,7 @@ X is given by
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Two
-$D$ Flip flops are connected as a
-synchronous counter that goes through following sequence<br/>
-<script id="MathJax-Element-31" type="math/tex; mode = display"> 00 &rarr; 01 &rarr; 11 &rarr; 10 &rarr; 00 </script>
-<br/>Inputs
-$D_0$ and
-$D_1$ should be connected as
-$? ($Flip flop
-$D_1$ provides the
-MSB)
-<br/>
-<p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_4.png" width="371"/></p>`,
+      text: `Two $D$ Flip flops are connected as a synchronous counter that goes through following sequence<br/> <script id="MathJax-Element-31" type="math/tex; mode = display"> 00 &rarr; 01 &rarr; 11 &rarr; 10 &rarr; 00 </script> <br/>Inputs $D_0$ and $D_1$ should be connected as $? ($Flip flop $D_1$ provides the MSB) <br/> <p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_4.png" width="371"/></p>`,
       image: "",
       options: [
         `$\overline{\text{Q}}_1$, ' and ', Q_0$`,
@@ -36109,17 +36074,7 @@ MSB)
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the
-$ \text{2–bit multiplexer
-(MUX) shown in the figure. For
-OUTPUT to be the
-XOR of
-C and
-$D,$ the values for
-$A&lt;sub&gt;0&lt;/sub&gt;, A&lt;sub&gt;1&lt;/sub&gt;, A&lt;sub&gt;2&lt;/sub&gt;,$ and
-$A&lt;sub&gt;3&lt;/sub&gt;$ are _______________.
-<br/>
-<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_5.png" width="350"/></p>`,
+      text: `Consider the $ \text{2–bit multiplexer (MUX) shown in the figure. For OUTPUT to be the XOR of C and $D,$ the values for $A&lt;sub&gt;0&lt;/sub&gt;, A&lt;sub&gt;1&lt;/sub&gt;, A&lt;sub&gt;2&lt;/sub&gt;,$ and $A&lt;sub&gt;3&lt;/sub&gt;$ are _______________. <br/> <p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_5.png" width="350"/></p>`,
       image: "",
       options: [
         `$A&lt;sub&gt;0&lt;/sub&gt;  =  0, A&lt;sub&gt;1&lt;/sub&gt;  =  0, A&lt;sub&gt;2&lt;/sub&gt;  =  1, A&lt;sub&gt;3&lt;/sub&gt;  =  1$`,
@@ -36134,8 +36089,7 @@ $A&lt;sub&gt;3&lt;/sub&gt;$ are _______________.
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `What is the minimum (most negative) value of a
-32-bit two's complement integer?`,
+      text: `What is the minimum (most negative) value of a 32-bit two's complement integer?`,
       image: "",
       options: [
         `$-2^{32`,
@@ -36150,9 +36104,7 @@ $A&lt;sub&gt;3&lt;/sub&gt;$ are _______________.
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `Consider the Boolean function
-$F(w,x,y,z)  =  wy  +  xy  +  \overline{w}}\:xyz  +  \overline{w}}\:\overline{x}}\:y  +  xz  +  \overline{x}}\:\overline{y}}\:\overline{z}}.$
-Which one of  the following is the complete set of essential prime implicants?`,
+      text: `Consider the Boolean function $F(w,x,y,z)  =  wy  +  xy  +  \overline{w}}\:xyz  +  \overline{w}}\:\overline{x}}\:y  +  xz  +  \overline{x}}\:\overline{y}}\:\overline{z}}.$ Which one of  the following is the complete set of essential prime implicants?`,
       image: "",
       options: [
         `$w,y,xz,\overline{x}}\:\overline{z}`,
@@ -36167,18 +36119,7 @@ Which one of  the following is the complete set of essential prime implicants?`
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `
-P, Q},$ and
-R are the decimal integers corresponding
-to the
-$4$-bit binary number
-$1100$ considered in signed magnitude,
-$1$’s complement, and
-$2$’s complement representations,
-respectively. The
-$6$-bit
-$2$’s complement representation of
-(P + Q + R) is  ________.`,
+      text: ` P, Q},$ and R are the decimal integers corresponding to the $4$-bit binary number $1100$ considered in signed magnitude, $1$’s complement, and $2$’s complement representations, respectively. The $6$-bit $2$’s complement representation of (P + Q + R) is  ________.`,
       image: "",
       options: [
         `$110101$`,
@@ -36193,18 +36134,7 @@ $2$’s complement representation of
       marks: 2,
       neg: 0.0,
       type: "MSQ",
-      text: `<span id="cke_bm_96S" style="display: none;"> </span> <br/>
-The circuit below uses two
-$2$-to-
-$4$ decoders, and inverter, and an OR gate to
-implement a function
-F(\mathrm{X, \mathrm{Y, \mathrm{Z})$.
-
-X is the most significant bit.
-<br/>
-<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_6.png"/><br/>
-F(\mathrm{X, \mathrm{Y, \mathrm{Z})$
-can be expressed as (Encircle all that applies):</p>`,
+      text: `<span id="cke_bm_96S" style="display: none;"> </span> <br/> The circuit below uses two $2$-to- $4$ decoders, and inverter, and an OR gate to implement a function F(\mathrm{X, \mathrm{Y, \mathrm{Z})$.  X is the most significant bit. <br/> <p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_6.png"/><br/> F(\mathrm{X, \mathrm{Y, \mathrm{Z})$ can be expressed as (Encircle all that applies):</p>`,
       image: "",
       options: [
         `$\sum \mathrm{m}(0,3,4,6)$`,
@@ -36219,25 +36149,7 @@ can be expressed as (Encircle all that applies):</p>`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<span id="cke_bm_107S" style="display: none;"> </span> <br/>
-A demultiplexer can be implemented using a decoder circuit.<br/>For example, the
-$2$-to-
-$4$ decoder can be used as a
-$1$-to-
-$4$ demultiplexer. Which input of decoder serves
-as the data input for the demultiplexer?<br/>
-<script id="MathJax-Element-93" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;">
-<tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr>
-<tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr>
-<tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr>
-<tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr>
-<tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr>
-</table> </script>
-
-<script id="MathJax-Element-94" type="math/tex; mode = display">\text{(a) Truth Table of Decoder}</script>
-<br/>
-<br/>
-<p style="text-align:center"><img alt="" height="301" src="js/questions/test_20260717_131501/img_7.png" width="287"/></p>`,
+      text: `<span id="cke_bm_107S" style="display: none;"> </span> <br/> A demultiplexer can be implemented using a decoder circuit.<br/>For example, the $2$-to- $4$ decoder can be used as a $1$-to- $4$ demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br/> <script id="MathJax-Element-93" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;"> <tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr> <tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr> <tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr> <tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr> <tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr> </table> </script>  <script id="MathJax-Element-94" type="math/tex; mode = display">\text{(a) Truth Table of Decoder}</script> <br/> <br/> <p style="text-align:center"><img alt="" height="301" src="js/questions/test_20260717_131501/img_7.png" width="287"/></p>`,
       image: "",
       options: [
         `$w&lt;sub&gt;0&lt;/sub&gt;$`,
@@ -36252,11 +36164,7 @@ as the data input for the demultiplexer?<br/>
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `If
-$(1235)&lt;sub&gt;x&lt;/sub&gt;\: = \:(3033)&lt;sub&gt;y&lt;/sub&gt;$, where
-$x$ and
-$y$ indicate the bases of the corresponding
-numbers, then`,
+      text: `If $(1235)&lt;sub&gt;x&lt;/sub&gt;\: = \:(3033)&lt;sub&gt;y&lt;/sub&gt;$, where $x$ and $y$ indicate the bases of the corresponding numbers, then`,
       image: "",
       options: [
         `$x\: = \:7$, ' and ', $y\: = \:5$`,
@@ -36271,14 +36179,7 @@ numbers, then`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `A function of Boolean variables
-$X, Y$ and
-$Z$ is expressed in terms of the min-terms as
-
-<script id="MathJax-Element-111" type="math/tex; mode = display">F(X, Y, Z)  =  \Sigma (1, 2, 5, 6, 7)</script>
-<br/>
-Which one of the product of sums given below is equal to the function
-$F(X, Y, Z)?$`,
+      text: `A function of Boolean variables $X, Y$ and $Z$ is expressed in terms of the min-terms as  <script id="MathJax-Element-111" type="math/tex; mode = display">F(X, Y, Z)  =  \Sigma (1, 2, 5, 6, 7)</script> <br/> Which one of the product of sums given below is equal to the function $F(X, Y, Z)?$`,
       image: "",
       options: [
         `$(\overline{X}  +  \overline{Y}  +  \overline{Z}}} )\cdot(\overline{X}  +  Y  +  Z)\cdot(X  +  \overline{Y}  +  \overline{Z}}} )$`,
@@ -36293,13 +36194,7 @@ $F(X, Y, Z)?$`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<span id="cke_bm_93S" style="display: none;"> </span> <br/>
-The combinatorial circuit shown below takes three 1-bit inputs: A, B, and C, and produces one 1-bit
-output. The relationship between the inputs and the output is shown below as a truth table. The circuit
-contains two identical, unknown gates
-X.<br/><img alt="" height="407" src="js/questions/test_20260717_131501/img_8.png" width="1022"/><br/>What is
-gate
-$X$ ?`,
+      text: `<span id="cke_bm_93S" style="display: none;"> </span> <br/> The combinatorial circuit shown below takes three 1-bit inputs: A, B, and C, and produces one 1-bit output. The relationship between the inputs and the output is shown below as a truth table. The circuit contains two identical, unknown gates X.<br/><img alt="" height="407" src="js/questions/test_20260717_131501/img_8.png" width="1022"/><br/>What is gate $X$ ?`,
       image: "",
       options: [
         `AND`,
@@ -36314,12 +36209,7 @@ $X$ ?`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `A logic circuit implements the boolean function
-$F = \overline{X} \cdot Y + X \cdot \overline{Y} \cdot \overline{Z}}. It
-is found that the input combination
-$X = Y = 1$ can never occur. Taking this into
-account, a simplified expression for
-$F$ is given by`,
+      text: `A logic circuit implements the boolean function $F = \overline{X} \cdot Y + X \cdot \overline{Y} \cdot \overline{Z}}. It is found that the input combination $X = Y = 1$ can never occur. Taking this into account, a simplified expression for $F$ is given by`,
       image: "",
       options: [
         `$\overline{X} + \overline{Y} \cdot \overline{Z}}`,
@@ -36334,21 +36224,7 @@ $F$ is given by`,
       marks: 2,
       neg: 0.0,
       type: "MSQ",
-      text: `Consider a Boolean gate
-(D) where the output
-$Y$ is related to the inputs
-$A$ and
-$B$ as,
-$Y  =  A  +  \overline{B},$ where
-$ + $ denotes logical
-OR operation. The Boolean inputs
-$’0’$ and
-$’1’$ are also available separately. Using
-instances of only
-$D$ gates and inputs
-$’0’$ and
-$’1’,$ _______________ (select the correct
-option(s)).`,
+      text: `Consider a Boolean gate (D) where the output $Y$ is related to the inputs $A$ and $B$ as, $Y  =  A  +  \overline{B},$ where $ + $ denotes logical OR operation. The Boolean inputs $’0’$ and $’1’$ are also available separately. Using instances of only $D$ gates and inputs $’0’$ and $’1’,$ _______________ (select the correct option(s)).`,
       image: "",
       options: [
         `NAND, ' logic can be implemented\n`,
@@ -36363,10 +36239,7 @@ option(s)).`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `Assuming that all flip-flops are in reset condition initially. the count sequence observed at
-Q}_\text{A} in the circuit shown is
-<br/>
-<p style="text-align:center"><img alt="" height="204" src="js/questions/test_20260717_131501/img_9.png" width="576"/></p>`,
+      text: `Assuming that all flip-flops are in reset condition initially. the count sequence observed at Q}_\text{A} in the circuit shown is <br/> <p style="text-align:center"><img alt="" height="204" src="js/questions/test_20260717_131501/img_9.png" width="576"/></p>`,
       image: "",
       options: [
         `$0010111 ...$`,
@@ -36381,8 +36254,7 @@ Q}_\text{A} in the circuit shown is
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `The Boolean function realized by the logic circuit shown is<br/>
-<p style="text-align:center"><img alt="" height="285" src="js/questions/test_20260717_131501/img_10.png" width="528"/><br/></p>`,
+      text: `The Boolean function realized by the logic circuit shown is<br/> <p style="text-align:center"><img alt="" height="285" src="js/questions/test_20260717_131501/img_10.png" width="528"/><br/></p>`,
       image: "",
       options: [
         `F = \Sigma&lt;sub&gt;m&lt;/sub&gt;(0,1,3,5,9,10.14)$`,
@@ -36397,23 +36269,7 @@ Q}_\text{A} in the circuit shown is
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `In the circuit diagram shown below, the logic gates operate with a supply voltage of
-$1 \mathrm{~V. NAND and XNOR have
-$200 \mathrm{~ps and
-$400 \mathrm{~ps input-to-output delay,
-respectively.
-<br/>At time
-$t = \text{T, A(t) = 0,\text{B(t) = 1$ and
-Z}(t) = 0$. When the inputs are changed to
-
-A(t) = 1, \text{B(t) = 0$ at
-$t = 2\text{T},$ a
-$1 \mathrm{~V pulse is observed at
-Z. The pulse width of the
-$1 \mathrm{~V pulse is _______
-ps}.$
-<br/>
-<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_11.png" width="300"/></p>`,
+      text: `In the circuit diagram shown below, the logic gates operate with a supply voltage of $1 \mathrm{~V. NAND and XNOR have $200 \mathrm{~ps and $400 \mathrm{~ps input-to-output delay, respectively. <br/>At time $t = \text{T, A(t) = 0,\text{B(t) = 1$ and Z}(t) = 0$. When the inputs are changed to  A(t) = 1, \text{B(t) = 0$ at $t = 2\text{T},$ a $1 \mathrm{~V pulse is observed at Z. The pulse width of the $1 \mathrm{~V pulse is _______ ps}.$ <br/> <p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_11.png" width="300"/></p>`,
       image: "",
       options: [
         `$100$`,
@@ -36428,21 +36284,7 @@ ps}.$
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `An synchronous finite state machine (FSM) with input
-“A” has the function described in the
-following state diagram and is to be implemented using two synchronously clocked
-D-Type flip-flops
-$D_1, D_2$ as the state registers.
-<br/>
-<p style="text-align:center"><img alt="" height="332" src="js/questions/test_20260717_131501/img_12.png" width="435"/><br/>The Flip-Flop outputs are
-$\left\{\text{Q}_2, \text{Q_1\right\ where
-
-Q_1, \text{Q}_2$ are output of
-$D_1, D_2$ respectively and
-Q_1$ represents the least significant
-bit of the FSM output.
-<br/>
-Then which of the following is true?</p>`,
+      text: `An synchronous finite state machine (FSM) with input “A” has the function described in the following state diagram and is to be implemented using two synchronously clocked D-Type flip-flops $D_1, D_2$ as the state registers. <br/> <p style="text-align:center"><img alt="" height="332" src="js/questions/test_20260717_131501/img_12.png" width="435"/><br/>The Flip-Flop outputs are $\left\{\text{Q}_2, \text{Q_1\right\ where  Q_1, \text{Q}_2$ are output of $D_1, D_2$ respectively and Q_1$ represents the least significant bit of the FSM output. <br/> Then which of the following is true?</p>`,
       image: "",
       options: [
         `$D_1 = \text{A, D_2 = \text{Q_1$`,
@@ -36457,16 +36299,7 @@ Then which of the following is true?</p>`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `The following binary values were applied to the
-X and
-Y inputs of the
-NAND latch shown in the figure in the
-sequence indicated below:<br/>
-<script id="MathJax-Element-179" type="math/tex; mode = display"> \mathrm{X = 0, \mathrm{Y = 1 ; \qquad \quad \mathrm{X = 0, \mathrm{Y = 0 ; \qquad \quad \mathrm{X = 1, \mathrm{Y = 1 \text {. } </script>
-<br/>The corresponding stable
-P, Q outputs will be
-<br/>
-<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_13.png" width="300"/><br/></p>`,
+      text: `The following binary values were applied to the X and Y inputs of the NAND latch shown in the figure in the sequence indicated below:<br/> <script id="MathJax-Element-179" type="math/tex; mode = display"> \mathrm{X = 0, \mathrm{Y = 1 ; \qquad \quad \mathrm{X = 0, \mathrm{Y = 0 ; \qquad \quad \mathrm{X = 1, \mathrm{Y = 1 \text {. } </script> <br/>The corresponding stable P, Q outputs will be <br/> <p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_13.png" width="300"/><br/></p>`,
       image: "",
       options: [
         `P = 1, \mathrm{Q} = 0 ; \quad \quad \mathrm{P = 1, \mathrm{Q} = 0 ; \qquad \qquad \qquad \qquad \mathrm{P = 1, \mathrm{Q} = 0$                    or ', P = 0, \mathrm{Q} = 1$`,
@@ -36481,11 +36314,7 @@ P, Q outputs will be
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `For the circuit shown, the counter state
-$\left(\mathrm{Q_1 \mathrm{Q_0\right)$ follows
-the sequence
-<br/>
-<p style="text-align:center"><img alt="" height="227" src="js/questions/test_20260717_131501/img_14.png" width="408"/></p>`,
+      text: `For the circuit shown, the counter state $\left(\mathrm{Q_1 \mathrm{Q_0\right)$ follows the sequence <br/> <p style="text-align:center"><img alt="" height="227" src="js/questions/test_20260717_131501/img_14.png" width="408"/></p>`,
       image: "",
       options: [
         `$00,01,10,11,00, ...$`,
@@ -36500,14 +36329,7 @@ the sequence
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `Match the Boolean expression with its minimal realization<br/>
-<script id="MathJax-Element-193" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;">
-<tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr>
-<tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr>
-<tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr>
-<tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr>
-<tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr>
-</table></script>`,
+      text: `Match the Boolean expression with its minimal realization<br/> <script id="MathJax-Element-193" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;"> <tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr> <tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr> <tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr> <tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr> <tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr> </table></script>`,
       image: "",
       options: [
         `P-K, Q-L, R-N, S-M`,
@@ -36522,15 +36344,7 @@ the sequence
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `In the circuit shown below,
-Y is a
-2-bit} \left(\text{Y_1 \text{Y_0\right)$ output of the
-combinational logic. What is the maximum value of
-Y for any given digital inputs,
-A_1 \text{A_0$ and
-B_1 \mathrm{~B_0?$
-<br/>
-<p style="text-align:center"><img alt="" height="120" src="js/questions/test_20260717_131501/img_15.png" width="363"/></p>`,
+      text: `In the circuit shown below, Y is a 2-bit} \left(\text{Y_1 \text{Y_0\right)$ output of the combinational logic. What is the maximum value of Y for any given digital inputs, A_1 \text{A_0$ and B_1 \mathrm{~B_0?$ <br/> <p style="text-align:center"><img alt="" height="120" src="js/questions/test_20260717_131501/img_15.png" width="363"/></p>`,
       image: "",
       options: [
         `$01$`,
@@ -36545,15 +36359,7 @@ B_1 \mathrm{~B_0?$
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `Input bits
-X and
-Y are added by using the
-combinational logic as shown below.
-S represents the sum of the two bits.
-For a correct implementation of the sum, the signals
-$D_0, D_1, D_2, D_3$
-are, respectively.<br/>
-<p style="text-align:center"><img alt="" height="339" src="js/questions/test_20260717_131501/img_16.png" width="323"/></p>`,
+      text: `Input bits X and Y are added by using the combinational logic as shown below. S represents the sum of the two bits. For a correct implementation of the sum, the signals $D_0, D_1, D_2, D_3$ are, respectively.<br/> <p style="text-align:center"><img alt="" height="339" src="js/questions/test_20260717_131501/img_16.png" width="323"/></p>`,
       image: "",
       options: [
         `$1,0,0,1$`,
@@ -36568,12 +36374,7 @@ are, respectively.<br/>
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `Let
-$b_q b_{q-1} ... b_0$ be the binary
-representation of integer
-$b$. The integer
-$3$ is a divisor of
-$b$ if and only if`,
+      text: `Let $b_q b_{q-1} ... b_0$ be the binary representation of integer $b$. The integer $3$ is a divisor of $b$ if and only if`,
       image: "",
       options: [
         `$b_1 = b_0 = 1$`,
@@ -36588,18 +36389,7 @@ $b$ if and only if`,
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `The propagation delays of the
-XOR gate,
-AND gate and multiplexer
-(MUX) in the circuit shown in the
-figure are
-$4 \text{ns} 2 \text{ns} $ and
-$1 \text{ns} $, respectively.
-<br/>
-<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_17.png"/><br/>
-If all the inputs
-P, Q, R, S and T are applied
-simultaneously and held constant, the maximum propagation delay of the circuit is</p>`,
+      text: `The propagation delays of the XOR gate, AND gate and multiplexer (MUX) in the circuit shown in the figure are $4 \text{ns} 2 \text{ns} $ and $1 \text{ns} $, respectively. <br/> <p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_17.png"/><br/> If all the inputs P, Q, R, S and T are applied simultaneously and held constant, the maximum propagation delay of the circuit is</p>`,
       image: "",
       options: [
         `$3 \text{ns} $`,
