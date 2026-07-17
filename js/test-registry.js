@@ -6288,7 +6288,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - Databases-1",
+  name: "TWT - Databases-1",
   date: "July 18, 2026",
   questions: [
     {
