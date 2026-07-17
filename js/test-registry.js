@@ -6295,7 +6295,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p><p>What does physical data independence allow the database administrator to do?</p><p></p>`,
+      text: `<p></p><br/><p>What does physical data independence allow the database administrator to do?</p><br/><p></p>`,
       image: "",
       options: [
         `Change the conceptual schema without changing the internal schema`,
@@ -6310,7 +6310,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p><p>In a relation, \\( \\text{R}, \\) an attribute \\( \\text{“B”} \\) of \\( \\text{R} \\) is “fully functional dependent” on an attribute or set of attributes \\( \\text{“A”} \\) of \\( \\text{R} \\) if \\( \\text{B} \\) is functional dependent on \\( \\text{A} \\) but not functional dependent on any proper subset of \\( \\text{A}. \\) Consider a relation \\( \\text{S} \\) in which every non-prime attribute is “fully functional dependent” on every prime attribute. What is necessarily true for \\( \\text{S}? \\) </p><p></p>`,
+      text: `<p></p><br/><p>In a relation, \\( \\text{R}, \\) an attribute \\( \\text{“B”} \\) of \\( \\text{R} \\) is “fully functional dependent” on an attribute or set of attributes \\( \\text{“A”} \\) of \\( \\text{R} \\) if \\( \\text{B} \\) is functional dependent on \\( \\text{A} \\) but not functional dependent on any proper subset of \\( \\text{A}. \\) Consider a relation \\( \\text{S} \\) in which every non-prime attribute is “fully functional dependent” on every prime attribute. What is necessarily true for \\( \\text{S}? \\) </p><br/><p></p>`,
       image: "",
       options: [
         `\\( \\text{S} \\) is in \\( \\text{2NF}. \\)`,
@@ -6325,7 +6325,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><p>Which of the following is/are NOT a valid rule about functional dependencies (FD's) in context of RDBMS model?</p><p></p>`,
+      text: `<p></p><br/><p>Which of the following is/are NOT a valid rule about functional dependencies (FD's) in context of RDBMS model?</p><br/><p></p>`,
       image: "",
       options: [
         `If \\( \\mathrm{A} \\rightarrow \\mathrm{B} \\) then \\( \\mathrm{B} \\rightarrow \\mathrm{A} \\)`,
@@ -6350,7 +6350,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><p>Given a relation schema \\( \\mathrm{R} \\) with a set \\( \\mathrm{F} \\) of \\( \\mathrm{FDs} \\) that hold over \\( \\mathrm{R} \\), let's define \\( \\mathrm{X} \\) to be a subset of the attributes of \\( \\text{R} \\), and \\( \\mathrm{A} \\) is an attribute of \\( \\mathrm{R} \\). If, for every \\( \\mathrm{FD} \\) \\( \\mathrm{X} \\rightarrow \\mathrm{A} \\) in \\( \\text{F} \\), one of the following is true: \\( \\mathrm{A} \\in \\mathrm{X} \\) (reads \\( \\mathrm{A} \\) is an element of \\( \\mathrm{X}) \\) - i.e. it is a trivial \\( \\mathrm{FD} \\) or \\( \\mathrm{X} \\) is a superkey or \\( \\mathrm{A} \\) is a part of some key for \\( \\mathrm{R} \\) Then \\( \\mathrm{R} \\) is in which form? </p><p></p>`,
+      text: `<p></p><br/><p>Given a relation schema \\( \\mathrm{R} \\) with a set \\( \\mathrm{F} \\) of \\( \\mathrm{FDs} \\) that hold over \\( \\mathrm{R} \\), let's define \\( \\mathrm{X} \\) to be a subset of the attributes of \\( \\text{R} \\), and \\( \\mathrm{A} \\) is an attribute of \\( \\mathrm{R} \\). If, for every \\( \\mathrm{FD} \\) \\( \\mathrm{X} \\rightarrow \\mathrm{A} \\) in \\( \\text{F} \\), one of the following is true: \\( \\mathrm{A} \\in \\mathrm{X} \\) (reads \\( \\mathrm{A} \\) is an element of \\( \\mathrm{X}) \\) - i.e. it is a trivial \\( \\mathrm{FD} \\) or \\( \\mathrm{X} \\) is a superkey or \\( \\mathrm{A} \\) is a part of some key for \\( \\mathrm{R} \\) Then \\( \\mathrm{R} \\) is in which form? </p><br/><p></p>`,
       image: "",
       options: [
         `\\( 1 \\mathrm{NF} \\)`,
@@ -6395,7 +6395,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><p>Consider a relation schema \\( \\mathrm{R} \\) with attributes \\( (\\mathrm{X}, \\mathrm{Y}, \\mathrm{Z}, \\mathrm{U}, \\mathrm{V}, \\mathrm{W}) \\) and the functional dependency set \\( \\mathrm{F} \\) that holds on \\( \\mathrm{R}: \\)<br/> \\( \\mathrm{F}=\\{\\mathrm{Y} \\rightarrow \\mathrm{U}, \\mathrm{V} \\rightarrow \\mathrm{W}, \\mathrm{U} \\rightarrow \\mathrm{V}, \\mathrm{U} \\rightarrow \\mathrm{Y}, \\mathrm{W} \\rightarrow \\mathrm{YU}\\} \\text {. } \\) <br/> \\( \\mathrm{R} \\) is decomposed into two relations \\( \\mathrm{P}(\\mathrm{X}, \\mathrm{Y}, \\mathrm{U}, \\mathrm{V}), \\mathrm{S}(\\mathrm{Y}, \\mathrm{Z}, \\mathrm{U}, \\mathrm{W}) \\) .<br/>Which of the following is/are true regarding this decomposition? </p><p></p>`,
+      text: `<p></p><br/><p>Consider a relation schema \\( \\mathrm{R} \\) with attributes \\( (\\mathrm{X}, \\mathrm{Y}, \\mathrm{Z}, \\mathrm{U}, \\mathrm{V}, \\mathrm{W}) \\) and the functional dependency set \\( \\mathrm{F} \\) that holds on \\( \\mathrm{R}: \\)<br/> \\( \\mathrm{F}=\\{\\mathrm{Y} \\rightarrow \\mathrm{U}, \\mathrm{V} \\rightarrow \\mathrm{W}, \\mathrm{U} \\rightarrow \\mathrm{V}, \\mathrm{U} \\rightarrow \\mathrm{Y}, \\mathrm{W} \\rightarrow \\mathrm{YU}\\} \\text {. } \\) <br/> \\( \\mathrm{R} \\) is decomposed into two relations \\( \\mathrm{P}(\\mathrm{X}, \\mathrm{Y}, \\mathrm{U}, \\mathrm{V}), \\mathrm{S}(\\mathrm{Y}, \\mathrm{Z}, \\mathrm{U}, \\mathrm{W}) \\) .<br/>Which of the following is/are true regarding this decomposition? </p><br/><p></p>`,
       image: "",
       options: [
         `Decomposition is lossless.`,
@@ -6410,7 +6410,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><p>Given the relation schema \\( \\mathrm{R}=(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}, \\mathrm{E}) \\) and the set of functional dependencies (FDs):<br/> \\( \\mathrm{F}=\\{\\mathrm{E} \\rightarrow \\mathrm{AB}, \\mathrm{BC} \\rightarrow \\mathrm{D}, \\mathrm{D} \\rightarrow \\mathrm{E}, \\mathrm{AB} \\rightarrow \\mathrm{BC}, \\mathrm{BC} \\rightarrow \\mathrm{E}\\} \\) <br/>For which of the following \\( \\text{FD&amp;nbsp;“S"}, \\) closure of \\( \\mathrm{F} \\) is same as closure of \\( \\text{F-S}? \\) i.e. which of the following \\( \\mathrm{FD} \\) can be removed from \\( \\mathrm{F} \\) without affecting the Closure of the Set of Functional Dependencies \\( \\text{F}? \\) </p><p></p>`,
+      text: `<p></p><br/><p>Given the relation schema \\( \\mathrm{R}=(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}, \\mathrm{E}) \\) and the set of functional dependencies (FDs):<br/> \\( \\mathrm{F}=\\{\\mathrm{E} \\rightarrow \\mathrm{AB}, \\mathrm{BC} \\rightarrow \\mathrm{D}, \\mathrm{D} \\rightarrow \\mathrm{E}, \\mathrm{AB} \\rightarrow \\mathrm{BC}, \\mathrm{BC} \\rightarrow \\mathrm{E}\\} \\) <br/>For which of the following \\( \\text{FD “S"}, \\) closure of \\( \\mathrm{F} \\) is same as closure of \\( \\text{F-S}? \\) i.e. which of the following \\( \\mathrm{FD} \\) can be removed from \\( \\mathrm{F} \\) without affecting the Closure of the Set of Functional Dependencies \\( \\text{F}? \\) </p><br/><p></p>`,
       image: "",
       options: [
         `\\( \\mathrm{AB} \\rightarrow \\mathrm{B} \\)`,
@@ -6425,7 +6425,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><p>Consider the relational schema \\( \\text{(A, B, C, D)} \\) with Functional Dependencies set \\( \\mathrm{F}=\\{\\mathrm{A} \\rightarrow \\mathrm{B}, \\mathrm{B} \\rightarrow \\mathrm{ACD}, \\mathrm{CD} \\rightarrow \\mathrm{B}\\} ; \\) </p><p>Which of the following Functional Dependencies set is equivalent to \\( \\mathrm{F}? \\) </p><p></p>`,
+      text: `<p></p><br/><p>Consider the relational schema \\( \\text{(A, B, C, D)} \\) with Functional Dependencies set \\( \\mathrm{F}=\\{\\mathrm{A} \\rightarrow \\mathrm{B}, \\mathrm{B} \\rightarrow \\mathrm{ACD}, \\mathrm{CD} \\rightarrow \\mathrm{B}\\} ; \\) </p><br/><p>Which of the following Functional Dependencies set is equivalent to \\( \\mathrm{F}? \\) </p><br/><p></p>`,
       image: "",
       options: [
         `\\( \\{\\mathrm{A} \\rightarrow \\mathrm{B}, \\mathrm{B} \\rightarrow \\mathrm{CD}, \\mathrm{CD} \\rightarrow \\mathrm{A}\\} \\)`,
@@ -6440,7 +6440,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p><p>Consider the relational table \\( \\mathrm{R}(\\mathrm{P}, \\mathrm{Q}, \\mathrm{S}, \\mathrm{T}, \\mathrm{U}, \\mathrm{V}, \\mathrm{W}, \\mathrm{Y}) \\) and the following functional dependencies set \\( \\mathrm{F} \\) over \\( \\mathrm{R} \\) :<br/> \\( \\mathrm{P} \\rightarrow \\mathrm{QST}, \\mathrm{PT} \\rightarrow \\mathrm{U}, \\mathrm{UVW} \\rightarrow \\mathrm{Y}, \\mathrm{V} \\rightarrow \\mathrm{WY} \\) <br/>Which of the functional dependencies can be removed from this FD set \\( \\mathrm{F} \\) without altering the candidate keys \\( ( \\)i.e. after removal of the FD, set of candidate keys in resulting relation must be the same as set of candidate keys in \\( \\text{R)}? \\) </p><p></p>`,
+      text: `<p></p><br/><p>Consider the relational table \\( \\mathrm{R}(\\mathrm{P}, \\mathrm{Q}, \\mathrm{S}, \\mathrm{T}, \\mathrm{U}, \\mathrm{V}, \\mathrm{W}, \\mathrm{Y}) \\) and the following functional dependencies set \\( \\mathrm{F} \\) over \\( \\mathrm{R} \\) :<br/> \\( \\mathrm{P} \\rightarrow \\mathrm{QST}, \\mathrm{PT} \\rightarrow \\mathrm{U}, \\mathrm{UVW} \\rightarrow \\mathrm{Y}, \\mathrm{V} \\rightarrow \\mathrm{WY} \\) <br/>Which of the functional dependencies can be removed from this FD set \\( \\mathrm{F} \\) without altering the candidate keys \\( ( \\)i.e. after removal of the FD, set of candidate keys in resulting relation must be the same as set of candidate keys in \\( \\text{R)}? \\) </p><br/><p></p>`,
       image: "",
       options: [
         `\\( \\mathrm{P} \\rightarrow \\mathrm{QST} \\)`,
@@ -6455,7 +6455,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p><p>For a relation \\( \\mathrm{R} \\), let \\( \\alpha \\) and \\( \\beta \\) be sets of attributes such that \\( \\alpha \\rightarrow \\beta \\) holds, but \\( \\beta \\rightarrow \\alpha \\) does not hold. Let \\( \\text{A} \\) be an attribute that is not in \\( \\alpha \\), is not in \\( \\beta \\), and for which \\( \\beta \\rightarrow&amp;nbsp;\\text{A} \\) holds. Then we say that \\( \\text{A} \\) is "mysteriously dependent" on \\( \\alpha \\). </p><p>A relation schema \\( \\mathrm{R} \\) is "______" with respect to a set F of functional dependencies if there are no non-prime attributes \\( \\mathrm{A} \\) in \\( \\mathrm{R} \\) for which \\( \\mathrm{A} \\) is "mysteriously dependent" on some key for R. </p><p>What is the correct term to put in the "______"?</p><p></p>`,
+      text: `<p></p><br/><p>For a relation \\( \\mathrm{R} \\), let \\( \\alpha \\) and \\( \\beta \\) be sets of attributes such that \\( \\alpha \\rightarrow \\beta \\) holds, but \\( \\beta \\rightarrow \\alpha \\) does not hold. Let \\( \\text{A} \\) be an attribute that is not in \\( \\alpha \\), is not in \\( \\beta \\), and for which \\( \\beta \\rightarrow \\text{A} \\) holds. Then we say that \\( \\text{A} \\) is "mysteriously dependent" on \\( \\alpha \\). </p><br/><p>A relation schema \\( \\mathrm{R} \\) is "______" with respect to a set F of functional dependencies if there are no non-prime attributes \\( \\mathrm{A} \\) in \\( \\mathrm{R} \\) for which \\( \\mathrm{A} \\) is "mysteriously dependent" on some key for R. </p><br/><p>What is the correct term to put in the "______"?</p><br/><p></p>`,
       image: "",
       options: [
         `\\( 3 \\mathrm{NF} \\)`,
@@ -6470,7 +6470,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p><p>Consider the relation \\( \\text{R(A, B, C, D, E)} \\) with the following functional dependencies:<br/> \\( \\mathrm{A} \\rightarrow \\mathrm{C} ; \\mathrm{B} \\rightarrow \\mathrm{C} ; \\mathrm{C} \\rightarrow \\mathrm{D} ; \\mathrm{DE} \\rightarrow \\mathrm{C} ; \\mathrm{CE} \\rightarrow \\mathrm{A} \\) </p><p>Consider the decomposition "DECOMP" of the relation \\( \\mathrm{R} \\) into five relations : </p><p> \\( \\text{DECOMP} =\\{\\text{R1, R2, R3, R4, R5}\\} \\) </p><p>Where, \\( \\mathrm{R} 1=\\{\\mathrm{A}, \\mathrm{D}\\} ; \\mathrm{R} 2=\\{\\mathrm{A}, \\mathrm{B}\\} ; \\mathrm{R} 3=\\{\\mathrm{B}, \\mathrm{E}\\} ; \\mathrm{R} 4=\\{\\mathrm{C}, \\mathrm{D}, \\mathrm{E}\\} ; \\mathrm{R} 5=\\{\\mathrm{A}, \\mathrm{E}\\} \\) </p><p>Which one of the following options is correct?</p><p></p>`,
+      text: `<p></p><br/><p>Consider the relation \\( \\text{R(A, B, C, D, E)} \\) with the following functional dependencies:<br/> \\( \\mathrm{A} \\rightarrow \\mathrm{C} ; \\mathrm{B} \\rightarrow \\mathrm{C} ; \\mathrm{C} \\rightarrow \\mathrm{D} ; \\mathrm{DE} \\rightarrow \\mathrm{C} ; \\mathrm{CE} \\rightarrow \\mathrm{A} \\) </p><br/><p>Consider the decomposition "DECOMP" of the relation \\( \\mathrm{R} \\) into five relations : </p><br/><p> \\( \\text{DECOMP} =\\{\\text{R1, R2, R3, R4, R5}\\} \\) </p><br/><p>Where, \\( \\mathrm{R} 1=\\{\\mathrm{A}, \\mathrm{D}\\} ; \\mathrm{R} 2=\\{\\mathrm{A}, \\mathrm{B}\\} ; \\mathrm{R} 3=\\{\\mathrm{B}, \\mathrm{E}\\} ; \\mathrm{R} 4=\\{\\mathrm{C}, \\mathrm{D}, \\mathrm{E}\\} ; \\mathrm{R} 5=\\{\\mathrm{A}, \\mathrm{E}\\} \\) </p><br/><p>Which one of the following options is correct?</p><br/><p></p>`,
       image: "",
       options: [
         `DECOMP is a lossless decomposition, but not dependency preserving.`,
@@ -6485,7 +6485,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p><p>Consider the following two statements:</p><ol><li>Suppose we are given a relation \\( \\text{R} \\) with attributes \\( \\text{A, B, C, D} \\) and FDs : </li></ol><p> \\( \\text{B} \\rightarrow \\text{C} ; \\text{A} \\rightarrow \\text{B} ; \\text{A C} \\rightarrow \\text{D} \\) <br/>Then this FD set is irreducible i.e. Minimal. </p><ol start="2"><li>Suppose a relation schema \\( \\text{S(A, B, C, D, E, F, G, H, I, J)} \\) has FD set : </li></ol><p> \\( \\text{A B D} \\rightarrow \\text{E ; A B} \\rightarrow \\text{G ; B} \\rightarrow \\text{F ; C} \\rightarrow \\text{J ; C J} \\rightarrow \\text{I ; G} \\rightarrow \\text{H} \\) <br/>Then this \\( \\mathrm{FD} \\) set is irreducible/minimal. </p><p>Which of the above statements is/are false?</p><p></p>`,
+      text: `<p></p><br/><p>Consider the following two statements:</p><ol><li>Suppose we are given a relation \\( \\text{R} \\) with attributes \\( \\text{A, B, C, D} \\) and FDs : </li></ol><p> \\( \\text{B} \\rightarrow \\text{C} ; \\text{A} \\rightarrow \\text{B} ; \\text{A C} \\rightarrow \\text{D} \\) <br/>Then this FD set is irreducible i.e. Minimal. </p><ol start="2"><li>Suppose a relation schema \\( \\text{S(A, B, C, D, E, F, G, H, I, J)} \\) has FD set : </li></ol><p> \\( \\text{A B D} \\rightarrow \\text{E ; A B} \\rightarrow \\text{G ; B} \\rightarrow \\text{F ; C} \\rightarrow \\text{J ; C J} \\rightarrow \\text{I ; G} \\rightarrow \\text{H} \\) <br/>Then this \\( \\mathrm{FD} \\) set is irreducible/minimal. </p><br/><p>Which of the above statements is/are false?</p><br/><p></p>`,
       image: "",
       options: [
         `\\( 1 \\) Only`,
