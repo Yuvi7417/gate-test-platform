@@ -5006,10 +5006,10 @@ An XY flip-flop operates as indicated by the following table :<br/>
 `,
       image: "",
       options: [
-        `(\X&#773; \ &and;  \Q&#773;) \ &or; (\Y&#773; \ &and;  Q)`,
-        `(\Y&#773; \ &and;  \Q&#773;) \ &or; (\X&#773; \ &and;  Q)`,
-        `(X \ &and;  \Q&#773;) \ &or; (Y \ &and;  Q)`,
-        `(\Y&#773; \ &and;  \Q&#773;) \ &or; (\Q&#773; \ &and;  X)`,
+        `(X&#773;  &and;  Q&#773;)  &or; (Y&#773;  &and;  Q)`,
+        `(Y&#773;  &and;  Q&#773;)  &or; (X&#773;  &and;  Q)`,
+        `(X  &and;  Q&#773;)  &or; (Y  &and;  Q)`,
+        `(Y&#773;  &and;  Q&#773;)  &or; (Q&#773;  &and;  X)`,
       ],
       answer: "A",
       solution: ``
@@ -5020,8 +5020,8 @@ An XY flip-flop operates as indicated by the following table :<br/>
       type: "MCQ",
       text: `
 <br/>
-Consider the circuit given below with initial state A_{1} = 1, A_{2} = A_{0} = 0. The state of the circuit is
-                given by the value 4 A_{2} + 2 A_{1} + A_{0}<br/>
+Consider the circuit given below with initial state A<sub>1</sub> = 1, A<sub>2</sub> = A<sub>0</sub> = 0. The state of the circuit is
+                given by the value 4 A<sub>2</sub> + 2 A<sub>1</sub> + A<sub>0</sub><br/>
 <strong><img alt = "image" height = "261" src = "js/questions/twt-digital-logic-3/img_6.png" width = "624"/></strong><br/>
                 Which one of the following is the correct state sequence of the circuit?
             <br/>
@@ -5048,10 +5048,10 @@ Analyze the following asynchronous network. Starting in the total stable state f
 `,
       image: "",
       options: [
-        `The output will be Z  =  0\  1\  1\  0\  0\  1\  1\  0\  \...`,
-        `The output will be Z  =  0\  1\  0\  1\  0\  1\  0\  1\  0\  1\  \...`,
-        `The output will be Z  =  0\  1\  1\  1\  0\  0\  0\  1\  1\  1\  \...`,
-        `The output will be Z  =  0\  1\  0\  0\  1\  0\  0\  1\  0\  0\  \...`,
+        `The output will be Z  =  0  1  1  0  0  1  1  0  \...`,
+        `The output will be Z  =  0  1  0  1  0  1  0  1  0  1  \...`,
+        `The output will be Z  =  0  1  1  1  0  0  0  1  1  1  \...`,
+        `The output will be Z  =  0  1  0  0  1  0  0  1  0  0  \...`,
       ],
       answer: "A",
       solution: ``
@@ -5064,15 +5064,15 @@ Analyze the following asynchronous network. Starting in the total stable state f
 <br/>
 Two D Flip flops are connected as a synchronous counter that goes through the following sequence<br/>
 00 &rarr; 01 &rarr; 11 &rarr; 10 &rarr; 00<br/>
-Inputs D_{0} and D_{1} should be connected as (Flip flop D_{1} provides the MSB)<br/>
+Inputs D<sub>0</sub> and D<sub>1</sub> should be connected as (Flip flop D<sub>1</sub> provides the MSB)<br/>
 <p style = "text-align:center"><img alt = "image" height = "204" src = "js/questions/twt-digital-logic-3/img_8.png" width = "416"/><br/>
 `,
       image: "",
       options: [
-        `\Q&#773;_{1} and Q_{0}`,
-        `\Q&#773;_{0} and Q_{1}`,
-        `\Q&#773;_{1} Q_{0} and \Q&#773;_{0} Q_{1}`,
-        `\Q&#773;_{0} \Q&#773;_{1} and Q_{0} Q_{1}`,
+        `Q&#773;<sub>1</sub> and Q<sub>0</sub>`,
+        `Q&#773;<sub>0</sub> and Q<sub>1</sub>`,
+        `Q&#773;<sub>1</sub> Q<sub>0</sub> and Q&#773;<sub>0</sub> Q<sub>1</sub>`,
+        `Q&#773;<sub>0</sub> Q&#773;<sub>1</sub> and Q<sub>0</sub> Q<sub>1</sub>`,
       ],
       answer: "A",
       solution: ``
@@ -5104,17 +5104,17 @@ Inputs D_{0} and D_{1} should be connected as (Flip flop D_{1} provides the MSB)
 <br/>
 The figure below shows a control circuit, consisting of a 3 -bit register(all the three flip flops of
                 the register are D flip flops) and some combinational logic. This circuit is initially in the state
-                Q_{1} Q_{2} Q_{3} = 000. On subsequent clock pulses, the circuit is required to generate the control
+                Q<sub>1</sub> Q<sub>2</sub> Q<sub>3</sub> = 000. On subsequent clock pulses, the circuit is required to generate the control
                 sequence:<br/>(100) &rarr;(010) &rarr;(001) &rarr;(001) &rarr;(001) &rarr;
                 ...<br/><strong><img alt = "image" height = "399" src = "js/questions/twt-digital-logic-3/img_10.png" width = "415"/></strong><br/>Which
                 of the following is a correct set of equations to be implemented by the combinational logic?<br/>
 `,
       image: "",
       options: [
-        `D_{1} = \\overline{Q_{1}}\  \\overline{Q_{2}}\  \\overline{Q_{3}}, D_{2} = Q_{1}, D_{3} = Q_{2} \ &or;  Q_{3}\n                `,
-        `D_{1} = \\overline{Q_{1}}\  \\overline{Q_{2}}\  \\overline{Q_{3}}, D_{2} = Q_{1} \\overline{Q_{2}} \\,\n                    \\overline{Q_{3}}, D_{3} = \\overline{Q_{1}} Q_{2} \\overline{Q_{3}}`,
-        `D_{1} = \\overline{Q_{1}}, D_{2} = \\overline{Q_{2}}, D_{3} = \\overline{Q_{3}}`,
-        `D_{1} = Q_{3}, D_{2} = Q_{1}, D_{3} = Q_{2}`,
+        `D<sub>1</sub> = Q<sub>1</sub>&#773;  Q<sub>2</sub>&#773;  Q<sub>3</sub>&#773;, D<sub>2</sub> = Q<sub>1</sub>, D<sub>3</sub> = Q<sub>2</sub>  &or;  Q<sub>3</sub>`,
+        `D<sub>1</sub> = Q<sub>1</sub>&#773;  Q<sub>2</sub>&#773;  Q<sub>3</sub>&#773;, D<sub>2</sub> = Q<sub>1</sub> Q<sub>2</sub>&#773; ,\n                    Q<sub>3</sub>&#773;, D<sub>3</sub> = Q<sub>1</sub>&#773; Q<sub>2</sub> Q<sub>3</sub>&#773;`,
+        `D<sub>1</sub> = Q<sub>1</sub>&#773;, D<sub>2</sub> = Q<sub>2</sub>&#773;, D<sub>3</sub> = Q<sub>3</sub>&#773;`,
+        `D<sub>1</sub> = Q<sub>3</sub>, D<sub>2</sub> = Q<sub>1</sub>, D<sub>3</sub> = Q<sub>2</sub>`,
       ],
       answer: "A",
       solution: ``
@@ -5126,17 +5126,17 @@ The figure below shows a control circuit, consisting of a 3 -bit register(all th
       text: `
 <br/>
 A 3 bit down counter is used to control the output of the multiplexer as shown in the figure. The
-                counter is initially at A_{2} A_{1} A_{0} = 101, the output of multiplexer will follow the
+                counter is initially at A<sub>2</sub> A<sub>1</sub> A<sub>0</sub> = 101, the output of multiplexer will follow the
                 sequence:(Output of mux is controlled by select lines, S1S0)<br/>
 <strong><img alt = "" height = "238" src = "js/questions/twt-digital-logic-3/img_11.png" width = "750"/></strong>
 <br/>
 `,
       image: "",
       options: [
-        `I_{2}, 0, I_{1}, 0 \...`,
-        `I_{1}, 0, I_{2}, 0 \...`,
-        `I_{1}, 0,0, I_{2} \...`,
-        `I_{2}, I_{1}, I_{2}, 0 \... `,
+        `I<sub>2</sub>, 0, I<sub>1</sub>, 0 \...`,
+        `I<sub>1</sub>, 0, I<sub>2</sub>, 0 \...`,
+        `I<sub>1</sub>, 0,0, I<sub>2</sub> \...`,
+        `I<sub>2</sub>, I<sub>1</sub>, I<sub>2</sub>, 0 \... `,
       ],
       answer: "A",
       solution: ``
