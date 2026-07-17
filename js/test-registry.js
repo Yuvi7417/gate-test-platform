@@ -6403,7 +6403,7 @@ registerTest({
         `\\( \\text{P} \\) is in \\( 3 \\mathrm{NF} \\).`,
         `\\( \\mathrm{S} \\) is in \\( 3 \\mathrm{NF} \\).`,
       ],
-      answer: ["B,C,D"],
+      answer: ["B", "C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6418,7 +6418,7 @@ registerTest({
         `\\( \\mathrm{BC} \\rightarrow \\mathrm{E} \\)`,
         `\\( \\mathrm{BC} \\rightarrow \\mathrm{D} \\)`,
       ],
-      answer: ["A,C"],
+      answer: ["A", "C"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6433,7 +6433,7 @@ registerTest({
         `\\( \\{\\mathrm{A} \\rightarrow \\mathrm{BCD}, \\mathrm{B} \\rightarrow \\mathrm{A}, \\mathrm{CD} \\rightarrow \\mathrm{A}\\} \\)`,
         `\\( \\{\\mathrm{A} \\rightarrow \\mathrm{CD}, \\mathrm{B} \\rightarrow \\mathrm{CD}, \\mathrm{CD} \\rightarrow \\mathrm{AB}\\} \\)`,
       ],
-      answer: ["A,B,C,D"],
+      answer: ["A", "B", "C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
