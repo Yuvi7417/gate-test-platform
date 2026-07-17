@@ -5192,10 +5192,10 @@ registerTest({
       text: `<p>The Boolean expression $Y=\\overline{\\text{A}} \\;\\overline{\\text{B}}\\; \\overline{\\text{C}}\\; \\text{D}+\\overline{\\text{A}} \\text{ B C } \\overline{\\text{D}}+\\text{A} \\;\\overline{\\text{B}} \\;\\overline{\\text{C }}\\; \\text{D + A B } \\overline{\\text{C}} \\;\\overline{\\text{D}}$ can be minimized to </p>`,
       image: "",
       options: [
-        `$Y=\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{B}}\\; \\overline{\\text{C}}\\;&nbsp;\\text{D}+\\overline{\\text{A}}\\;&nbsp;\\text{B} \\;\\overline{\\text{C}}+\\text{A}\\; \\overline{\\text{C}}\\;&nbsp;\\text{D}$`,
-        `$Y=\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D}+ \\text{B C}\\; \\overline{\\text{D}}+\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D}$`,
-        `$Y=\\overline{\\text{A}}&nbsp;\\;\\text{B C}\\; \\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D + A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D}$`,
-        `$Y=\\overline{\\text{A}} \\;\\text{B C}&nbsp;\\;\\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}\\;\\text{ D + A B}\\; \\overline{\\text{C}}\\; \\overline{\\text{D}}$`,
+        `$Y=\\overline{\\text{A}} \\;\\overline{\\text{B}}\\; \\overline{\\text{C}}\\; \\text{D}+\\overline{\\text{A}}\\; \\text{B} \\;\\overline{\\text{C}}+\\text{A}\\; \\overline{\\text{C}}\\; \\text{D}$`,
+        `$Y=\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}} \\;\\text{D}+ \\text{B C}\\; \\overline{\\text{D}}+\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}} \\;\\text{D}$`,
+        `$Y=\\overline{\\text{A}} \\;\\text{B C}\\; \\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}} \\;\\text{D + A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}} \\;\\text{D}$`,
+        `$Y=\\overline{\\text{A}} \\;\\text{B C} \\;\\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}\\;\\text{ D + A B}\\; \\overline{\\text{C}}\\; \\overline{\\text{D}}$`,
       ],
       answer: "D",
       solution: ``
@@ -5207,10 +5207,10 @@ registerTest({
       text: `<p>In the following circuit, $\\text{X}$ is given by </p> <p style="text-align:center"><img alt="" height="185" src="js/questions/test_html_parsed/img_3.png" width="375"/></p>`,
       image: "",
       options: [
-        `$\\text{X}=\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}}&nbsp;\\;\\text{B}\\; \\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}}&nbsp;\\;\\text{C}+\\text{A B C}$`,
-        `$\\text{X}=\\overline{\\text{A}}&nbsp;\\;\\text{B C + A} \\;\\overline{\\text{B}}\\; \\text{C + A B} \\;\\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}$`,
+        `$\\text{X}=\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}} \\;\\text{B}\\; \\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}} \\;\\text{C}+\\text{A B C}$`,
+        `$\\text{X}=\\overline{\\text{A}} \\;\\text{B C + A} \\;\\overline{\\text{B}}\\; \\text{C + A B} \\;\\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}$`,
         `$\\text{X = A B + B C + A C}$`,
-        `$\\text{X}=\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{B}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{C}}$`,
+        `$\\text{X}=\\overline{\\text{A}} \\;\\overline{\\text{B}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}} \\;\\overline{\\text{C}}$`,
       ],
       answer: "A",
       solution: ``
@@ -5299,8 +5299,8 @@ registerTest({
       options: [
         `$\\sum \\mathrm{m}(0,3,4,6)$`,
         `$\\sum \\mathrm{m}(0,2,4,7)$`,
-        `$\\prod&nbsp;\\text{M}(1,3,5,6)$`,
-        `$\\prod&nbsp;\\text{M}(1,2,5,7)$`,
+        `$\\prod \\text{M}(1,3,5,6)$`,
+        `$\\prod \\text{M}(1,2,5,7)$`,
       ],
       answer: ["B", "C"],
       solution: ``
@@ -5309,7 +5309,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p><span id="cke_bm_107S" style="display: none;"> </span> </p> <p>A demultiplexer can be implemented using a decoder circuit.<br/>For example, the $2$-to- $4$ decoder can be used as a $1$-to- $4$ demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\begin{array}{ccc|cccc} \\text{En} &amp; w_{1} &amp; w_{0} &amp; y_{0} &amp; y_{1} &amp; y_{2} &amp; y_{3} \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\\\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\\\ 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\\\ 0 &amp; \\times &amp; \\times &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\\ \\end{array}$$ <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\text{(a) Truth Table of Decoder}$$ <br/><br/> </p> <p style="text-align:center"><img alt="" height="301" src="js/questions/test_html_parsed/img_7.png" width="287"/></p>`,
+      text: `<p><span id="cke_bm_107S" style="display: none;"> </span> </p> <p>A demultiplexer can be implemented using a decoder circuit.<br/>For example, the $2$-to- $4$ decoder can be used as a $1$-to- $4$ demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\begin{array}{ccc|cccc} \\text{En} & w_{1} & w_{0} & y_{0} & y_{1} & y_{2} & y_{3} \\\\ \\hline 1 & 0 & 0 & 1 & 0 & 0 & 0 \\\\ 1 & 0 & 1 & 0 & 1 & 0 & 0 \\\\ 1 & 1 & 0 & 0 & 0 & 1 & 0 \\\\ 1 & 1 & 1 & 0 & 0 & 0 & 1 \\\\ 0 & \\times & \\times & 0 & 0 & 0 & 0 \\\\ \\end{array}$$ <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\text{(a) Truth Table of Decoder}$$ <br/><br/> </p> <p style="text-align:center"><img alt="" height="301" src="js/questions/test_html_parsed/img_7.png" width="287"/></p>`,
       image: "",
       options: [
         `$w_{0}$`,
@@ -5339,7 +5339,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>A function of Boolean variables $X, Y$ and $Z$ is expressed in terms of the min-terms as <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$F(X, Y, Z) = \\Sigma&amp;nbsp;(1, 2, 5, 6, 7)$$ </p> <p>Which one of the product of sums given below is equal to the function $F(X, Y, Z)?$ </p>`,
+      text: `<p>A function of Boolean variables $X, Y$ and $Z$ is expressed in terms of the min-terms as <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$F(X, Y, Z) = \\Sigma\\;(1, 2, 5, 6, 7)$$ </p> <p>Which one of the product of sums given below is equal to the function $F(X, Y, Z)?$ </p>`,
       image: "",
       options: [
         `$(\\overline{X} + \\overline{Y} + \\overline{Z} )\\cdot(\\overline{X} + Y + Z)\\cdot(X + \\overline{Y} + \\overline{Z} )$`,
@@ -5449,7 +5449,7 @@ registerTest({
       options: [
         `$\\text{D}_1=\\text{A}, \\text{D}_2=\\text{Q}_1$`,
         `$\\text{D}_1=\\text{Q}_2, \\text{D}_2=\\text{A}$`,
-        `$\\text{D}_1=\\text{Q}_2, \\text{D}_2=\\text{Q}_1 \\oplus&nbsp;\\text{A}$`,
+        `$\\text{D}_1=\\text{Q}_2, \\text{D}_2=\\text{Q}_1 \\oplus \\text{A}$`,
         `None of the above`,
       ],
       answer: "B",
@@ -5462,9 +5462,9 @@ registerTest({
       text: `<p>The following binary values were applied to the $\\mathrm{X}$ and $\\mathrm{Y}$ inputs of the $\\text{NAND}$ latch shown in the figure in the sequence indicated below:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\mathrm{X}=0, \\mathrm{Y}=1 ; \\qquad \\quad \\mathrm{X}=0, \\mathrm{Y}=0 ; \\qquad \\quad \\mathrm{X}=1, \\mathrm{Y}=1 \\text {. }$$ <br/>The corresponding stable $\\text{P, Q}$ outputs will be </p> <p style="text-align:center"><img alt="" src="js/questions/test_html_parsed/img_13.png" width="300"/></p>`,
       image: "",
       options: [
-        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=0 ; \\qquad \\qquad&nbsp;\\qquad \\qquad \\mathrm{P}=1, \\mathrm{Q}=0$ or $\\mathrm{P}=0, \\mathrm{Q}=1$`,
-        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=0, \\mathrm{Q}=1$ or $\\mathrm{P}=0, \\mathrm{Q}=1 ; \\quad&nbsp;&nbsp;\\mathrm{P}=0, \\mathrm{Q}=1$`,
-        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=1 ; \\qquad&nbsp;\\qquad \\qquad &nbsp;\\qquad \\mathrm{P}=1, \\mathrm{Q}=0$ or $\\mathrm{P}=0, \\mathrm{Q}=1$`,
+        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=0 ; \\qquad \\qquad \\qquad \\qquad \\mathrm{P}=1, \\mathrm{Q}=0$ or $\\mathrm{P}=0, \\mathrm{Q}=1$`,
+        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=0, \\mathrm{Q}=1$ or $\\mathrm{P}=0, \\mathrm{Q}=1 ; \\quad  \\mathrm{P}=0, \\mathrm{Q}=1$`,
+        `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=1 ; \\qquad \\qquad \\qquad  \\qquad \\mathrm{P}=1, \\mathrm{Q}=0$ or $\\mathrm{P}=0, \\mathrm{Q}=1$`,
         `$\\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=1 ; \\qquad \\qquad \\qquad \\qquad \\mathrm{P}=1, \\mathrm{Q}=1$`,
       ],
       answer: "C",
@@ -5489,7 +5489,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>Match the Boolean expression with its minimal realization<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\begin{array}{|l|l|l|l|} \\hline &amp; \\text { Boolean expression } &amp; &amp; \\text { Minimal realization } \\\\ \\hline \\mathrm{P} &amp; \\overline{\\text{X}}\\; \\overline{\\text{Y}}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\;\\text{Y}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{Y Z} &amp; \\mathrm{K} &amp; \\text{X(Y+Z)} \\\\ \\hline \\mathrm{Q} &amp; \\text{XYZ + X} \\overline{\\text{Y}} \\text{Z + XY} \\overline{\\text{Z}} &amp; \\mathrm{L} &amp; \\overline{\\text{X}}(\\text{Y}+\\overline{\\text{Z}}) \\\\ \\hline \\mathrm{R} &amp; \\text{XY + XYZ + XY} \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{YZ} &amp; \\mathrm{M} &amp; \\text{Z} \\\\ \\hline \\mathrm{S} &amp; \\overline{\\text{X}}\\; \\overline{\\text{Y}} \\text{Z}+\\overline{\\text{X}} \\text{YZ + X} \\overline{\\text{Y}} \\text{Z + XYZ} &amp; \\mathrm{N} &amp; \\text{Y(X+Z)} \\\\ \\hline \\end{array}$$ </p>`,
+      text: `<p>Match the Boolean expression with its minimal realization<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$\\begin{array}{|l|l|l|l|} \\hline & \\text { Boolean expression } & & \\text { Minimal realization } \\\\ \\hline \\mathrm{P} & \\overline{\\text{X}}\\; \\overline{\\text{Y}}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\;\\text{Y}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{Y Z} & \\mathrm{K} & \\text{X(Y+Z)} \\\\ \\hline \\mathrm{Q} & \\text{XYZ + X} \\overline{\\text{Y}} \\text{Z + XY} \\overline{\\text{Z}} & \\mathrm{L} & \\overline{\\text{X}}(\\text{Y}+\\overline{\\text{Z}}) \\\\ \\hline \\mathrm{R} & \\text{XY + XYZ + XY} \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{YZ} & \\mathrm{M} & \\text{Z} \\\\ \\hline \\mathrm{S} & \\overline{\\text{X}}\\; \\overline{\\text{Y}} \\text{Z}+\\overline{\\text{X}} \\text{YZ + X} \\overline{\\text{Y}} \\text{Z + XYZ} & \\mathrm{N} & \\text{Y(X+Z)} \\\\ \\hline \\end{array}$$ </p>`,
       image: "",
       options: [
         `$\\text{P-K, Q-L, R-N, S-M}$`,
@@ -5549,7 +5549,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>The propagation delays of the $\\text{XOR}$ gate, $\\text{AND}$ gate and multiplexer $\\text{(MUX)}$ in the circuit shown in the figure are $4\\;\\text{ns} , 2\\;\\text{ns}$ and $1\\;\\text{ns}$, respectively. </p> <p style="text-align:center"><img alt="" src="js/questions/test_html_parsed/img_17.png"/></p> <p>If all the inputs $\\text{P, Q, R, S&amp;nbsp;and T}$ are applied simultaneously and held constant, the maximum propagation delay of the circuit is </p>`,
+      text: `<p>The propagation delays of the $\\text{XOR}$ gate, $\\text{AND}$ gate and multiplexer $\\text{(MUX)}$ in the circuit shown in the figure are $4\\;\\text{ns} , 2\\;\\text{ns}$ and $1\\;\\text{ns}$, respectively. </p> <p style="text-align:center"><img alt="" src="js/questions/test_html_parsed/img_17.png"/></p> <p>If all the inputs $\\text{P, Q, R, S and T}$ are applied simultaneously and held constant, the maximum propagation delay of the circuit is </p>`,
       image: "",
       options: [
         `$3\\;\\text{ns}$`,
