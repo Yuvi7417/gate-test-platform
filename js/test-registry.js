@@ -4846,6 +4846,324 @@ registerTest({
 });
 
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Digital Logic-3",
+  date: "July 08, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `
+<br/>
+A flip-flop can be constructed from two NAND gates connected as follows:<br/>
+<strong><img alt = "" height = "174" src = "js/questions/twt-digital-logic-3/img_1.png" width = "323"/></strong><br/>
+                What restriction must be placed on S and R so that P always equals Q&#773;? 
+            <br/>
+`,
+      image: "",
+      options: [
+        `we do not allow the R = S = 0 state.`,
+        `we do not allow the R = S = 1 state.`,
+        `we do not allow the R = 0, S = 1 state.`,
+        `P is always equal to Q’ regardless of the inputs S,P.`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `
+<br/>
+Consider the following decimal numbers. Which of the following decimal numbers Do Not have an exact
+                representation in binary notation?<br/>
+`,
+      image: "",
+      options: [
+        `U  =  0.1`,
+        `V  =  0.3`,
+        `X  =  0.4`,
+        `Z  =  0.5`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `
+<br/>
+A D flip-flop has a hold time of 3  ns, a setup time of 5  ns, and a propagation delay
+                from the rising edge of the clock to the change in flip- flop output in the range of 6 to 12  ns. A
+                comparator (combinational circuit) unit delay is 2  ns.<br/>
+What is the shortest clock period(in ns) for proper operation of the circuit below (i.e. the circuit
+                should not violate the timing constraints) ?<strong><img alt = "" height = "289" src = "js/questions/twt-digital-logic-3/img_2.png" width = "624"/></strong><br/>
+`,
+      image: "",
+      options: [
+      ],
+      answer: 19,
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `
+<br/>
+The figure below shows a 4-bit, right shift register, and a NOR gate. If the register outputs
+                \{ABCD\} at time 0 are 0110, then their values 4 clock pulses later are :<br/>
+<strong><img alt = "" height = "340" src = "js/questions/twt-digital-logic-3/img_3.png" width = "624"/></strong>
+<br/>
+`,
+      image: "",
+      options: [
+        `0100`,
+        `0110`,
+        `0111`,
+        `1000`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `
+<br/>
+Which of the following flip flops can be made to emulate all other flip flops without any additional
+                hardware (except probably a NOT gate)?<br/>
+`,
+      image: "",
+      options: [
+        `JK flipflop`,
+        `SR flipflop`,
+        `T flipflop`,
+        `D flipflop`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `
+<br/>
+A new flip-flop, called AB flip-flop, is created as shown below. What does the flip-flop do?<br/>
+<p style = "text-align:center"><img alt = "image" height = "200" src = "js/questions/twt-digital-logic-3/img_4.png" width = "559"/><br/>
+`,
+      image: "",
+      options: [
+        `Set command when A  =  0 , B  =  0`,
+        `Reset command when A  =  0 , B  =  1`,
+        `Hold command when A  =  1 ,B  =  0`,
+        `Toggle command when A  =  1 , B  =  1`,
+      ],
+      answer: ["D"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+What will the output sequence of the following JK flip flop be after 7 clock pulses?<br/>
+<strong><img alt = "https://lh4.googleusercontent.com/mr8Dgs3uiPLcVhINrWCf9QiGel8EnFDazztNM8MI23R11NcCoL4gsFVfR1YhsOOnFr34wF5pTHWYxWBnJPQ_y0TqEsP_6xOiPbvWyuoI5vVbxg7qokLwzgN4rxBnNhYp0bOYHSE-" height = "292" src = "js/questions/twt-digital-logic-3/img_5.png" width = "371"/></strong><br/>
+`,
+      image: "",
+      options: [
+        `0101011`,
+        `0110011`,
+        `0110110`,
+        `0101010`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+An XY flip-flop operates as indicated by the following table :<br/>
+                <table border="1" style="border-collapse:collapse; text-align:center;">
+  <tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr>
+  <tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr>
+  <tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr>
+  <tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr>
+</table><br/>
+                Which of the following expresses the next state in terms of the X and Y inputs and the current state
+                Q ?<br/>
+`,
+      image: "",
+      options: [
+        `(\X&#773; \ &and;  \Q&#773;) \ &or; (\Y&#773; \ &and;  Q)`,
+        `(\Y&#773; \ &and;  \Q&#773;) \ &or; (\X&#773; \ &and;  Q)`,
+        `(X \ &and;  \Q&#773;) \ &or; (Y \ &and;  Q)`,
+        `(\Y&#773; \ &and;  \Q&#773;) \ &or; (\Q&#773; \ &and;  X)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+Consider the circuit given below with initial state A_{1} = 1, A_{2} = A_{0} = 0. The state of the circuit is
+                given by the value 4 A_{2} + 2 A_{1} + A_{0}<br/>
+<strong><img alt = "image" height = "261" src = "js/questions/twt-digital-logic-3/img_6.png" width = "624"/></strong><br/>
+                Which one of the following is the correct state sequence of the circuit?
+            <br/>
+`,
+      image: "",
+      options: [
+        `2,1,0,7,6,5,4,3`,
+        `2,4,6,0,2,4,6,0`,
+        `2,3,4,5,6,7,0,1`,
+        `None of the above.`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+Analyze the following asynchronous network. Starting in the total stable state for which X  =  Z  =  0,
+                what will be the output sequences Z when the input sequence is X  =  0, 1, 0, 1, 0, 1, ...<br/>
+<p style = "text-align:center"><img alt = "" height = "227" src = "js/questions/twt-digital-logic-3/img_7.png" width = "516"/><br/>
+`,
+      image: "",
+      options: [
+        `The output will be Z  =  0\  1\  1\  0\  0\  1\  1\  0\  \...`,
+        `The output will be Z  =  0\  1\  0\  1\  0\  1\  0\  1\  0\  1\  \...`,
+        `The output will be Z  =  0\  1\  1\  1\  0\  0\  0\  1\  1\  1\  \...`,
+        `The output will be Z  =  0\  1\  0\  0\  1\  0\  0\  1\  0\  0\  \...`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+Two D Flip flops are connected as a synchronous counter that goes through the following sequence<br/>
+00 &rarr; 01 &rarr; 11 &rarr; 10 &rarr; 00<br/>
+Inputs D_{0} and D_{1} should be connected as (Flip flop D_{1} provides the MSB)<br/>
+<p style = "text-align:center"><img alt = "image" height = "204" src = "js/questions/twt-digital-logic-3/img_8.png" width = "416"/><br/>
+`,
+      image: "",
+      options: [
+        `\Q&#773;_{1} and Q_{0}`,
+        `\Q&#773;_{0} and Q_{1}`,
+        `\Q&#773;_{1} Q_{0} and \Q&#773;_{0} Q_{1}`,
+        `\Q&#773;_{0} \Q&#773;_{1} and Q_{0} Q_{1}`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+<strong><img alt = "image" height = "319" src = "js/questions/twt-digital-logic-3/img_9.png" width = "552"/></strong><br/>
+                The pattern detected by the above circuit is?<br/>
+`,
+      image: "",
+      options: [
+        `100`,
+        `010`,
+        `110`,
+        `101`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+The figure below shows a control circuit, consisting of a 3 -bit register(all the three flip flops of
+                the register are D flip flops) and some combinational logic. This circuit is initially in the state
+                Q_{1} Q_{2} Q_{3} = 000. On subsequent clock pulses, the circuit is required to generate the control
+                sequence:<br/>(100) &rarr;(010) &rarr;(001) &rarr;(001) &rarr;(001) &rarr;
+                ...<br/><strong><img alt = "image" height = "399" src = "js/questions/twt-digital-logic-3/img_10.png" width = "415"/></strong><br/>Which
+                of the following is a correct set of equations to be implemented by the combinational logic?<br/>
+`,
+      image: "",
+      options: [
+        `D_{1} = \\overline{Q_{1}}\  \\overline{Q_{2}}\  \\overline{Q_{3}}, D_{2} = Q_{1}, D_{3} = Q_{2} \ &or;  Q_{3}\n                `,
+        `D_{1} = \\overline{Q_{1}}\  \\overline{Q_{2}}\  \\overline{Q_{3}}, D_{2} = Q_{1} \\overline{Q_{2}} \\,\n                    \\overline{Q_{3}}, D_{3} = \\overline{Q_{1}} Q_{2} \\overline{Q_{3}}`,
+        `D_{1} = \\overline{Q_{1}}, D_{2} = \\overline{Q_{2}}, D_{3} = \\overline{Q_{3}}`,
+        `D_{1} = Q_{3}, D_{2} = Q_{1}, D_{3} = Q_{2}`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+A 3 bit down counter is used to control the output of the multiplexer as shown in the figure. The
+                counter is initially at A_{2} A_{1} A_{0} = 101, the output of multiplexer will follow the
+                sequence:(Output of mux is controlled by select lines, S1S0)<br/>
+<strong><img alt = "" height = "238" src = "js/questions/twt-digital-logic-3/img_11.png" width = "750"/></strong>
+<br/>
+`,
+      image: "",
+      options: [
+        `I_{2}, 0, I_{1}, 0 \...`,
+        `I_{1}, 0, I_{2}, 0 \...`,
+        `I_{1}, 0,0, I_{2} \...`,
+        `I_{2}, I_{1}, I_{2}, 0 \... `,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+<br/>
+Consider the circuit below. If ‘in’ and ‘out’ were both 0, to begin with, and ‘in’ suddenly becomes
+                1, how many clock pulses later will out become ‘1’ as well?<br/>
+<p style = "text-align:center"><img alt = "https://lh6.googleusercontent.com/gxruqGlyxHUo47oGJRGqfQ5fJiSzvPGRyNVqkhOlvgGiHBho35-WFrY53Mk1i95dWvED_jAM4hc1zOnIsU3s1hLrl493eW5HBu_Wf8OZSUXFNCYy4YHOoVLSEWatuzEi3S6KJkEd" height = "193" src = "js/questions/twt-digital-logic-3/img_12.png" width = "467"/><br/>
+`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `4`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+  ]
+});
+
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1
   series: "cse-gate-2026-pyq",
   name: "TWT - Theory Of Computation-1",
