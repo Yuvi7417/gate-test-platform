@@ -885,6 +885,10 @@ function openQuestionPaper() {
     )
     .join("");
   document.getElementById("qpaperOverlay").classList.add("show");
+
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise([body]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+  }
 }
 
 function closeQuestionPaper() {
@@ -1117,6 +1121,14 @@ function renderPlayerQuestion(i) {
   if (qb) qb.classList.add("current");
 
   updatePlayerCounts();
+
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise([
+      document.getElementById("playerQText"),
+      document.getElementById("playerOptions"),
+      document.getElementById("playerSolutionBox")
+    ]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
+  }
 }
 
 function playerSelectOption(oi) {
