@@ -5564,6 +5564,460 @@ registerTest({
 });
 registerTest({
   series: "cs-gate-classes",
+  name: "SWT - Digital Logic-3",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Match the logic gates in Column \\( \\text{A} \\) with their equivalents in Column \\( \\mathrm{B} \\). </p> <p style="text-align:center"><img alt="" height="248" src="js/questions/digital_logic_3/img_1.png" width="336"/></p>`,
+      image: "",
+      options: [
+        `\\( \\text{P-2, Q-4, R-1, S-3} \\)`,
+        `\\( \\text{P-4, Q-2, R-1, S-3} \\)`,
+        `\\( \\text{P-2, Q-4, R-3. S-1} \\)`,
+        `\\( \\text{P-4, Q-2, R-3, S-1} \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following logic circuit:</p> <p style="text-align:center"><img alt="" height="171" src="js/questions/digital_logic_3/img_2.png" width="398"/></p> <p><br/>The number of input combinations \\( (\\mathrm{A}, \\mathrm{B}, \\mathrm{C}) \\) for which the output \\( \\mathrm{F} \\) becomes \\( 1 \\) is ? </p>`,
+      image: "",
+      options: [],
+      answer: 4.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>A decoder may be described as</p>`,
+      image: "",
+      options: [
+        `Multiple-input single-output logic circuit which converts coded inputs into a coded output where the input and output codes are different.`,
+        `Single-input single-output logic circuit which converts the coded input into a coded output where the input and output codes are different.`,
+        `Multiple-input multiple-output logic circuit which converts coded inputs into coded outputs where the input and output codes are different.`,
+        `Single-input multiple-output logic circuit which converts the coded input into coded outputs where the input and output codes are different.`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>A bulb in a staircase has two switches, one switch being at the ground floor and the other one at the first floor. The bulb can be turned ON and also can be turned OFF by any one of the switches irrespective of the state of the other switch. The logic of switching of the bulb resembles.</p>`,
+      image: "",
+      options: [
+        `an AND gate`,
+        `an OR gate`,
+        `an XOR gate`,
+        `a NAND gate`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p> \\( \\mathrm{X}=01110 \\) and \\( \\mathrm{Y}=11001 \\) are two \\( 5 \\)-bit binary numbers represented in two's complement format. The sum of \\( \\mathrm{X} \\) and \\( \\mathrm{Y} \\) represented in two's complement format using \\( 6 \\) bits is </p>`,
+      image: "",
+      options: [
+        `\\( 100111 \\)`,
+        `\\( 001000 \\)`,
+        `\\( 000111 \\)`,
+        `\\( 101001 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>The Boolean expression \\( Y=\\overline{\\text{A}} \\;\\overline{\\text{B}}\\; \\overline{\\text{C}}\\; \\text{D}+\\overline{\\text{A}} \\text{ B C } \\overline{\\text{D}}+\\text{A} \\;\\overline{\\text{B}} \\;\\overline{\\text{C }}\\; \\text{D + A B } \\overline{\\text{C}} \\;\\overline{\\text{D}} \\) can be minimized to </p>`,
+      image: "",
+      options: [
+        `\\( Y=\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{B}}\\; \\overline{\\text{C}}\\;&nbsp;\\text{D}+\\overline{\\text{A}}\\;&nbsp;\\text{B} \\;\\overline{\\text{C}}+\\text{A}\\; \\overline{\\text{C}}\\;&nbsp;\\text{D} \\)`,
+        `\\( Y=\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D}+ \\text{B C}\\; \\overline{\\text{D}}+\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D} \\)`,
+        `\\( Y=\\overline{\\text{A}}&nbsp;\\;\\text{B C}\\; \\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D + A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}&nbsp;\\;\\text{D} \\)`,
+        `\\( Y=\\overline{\\text{A}} \\;\\text{B C}&nbsp;\\;\\overline{\\text{D}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}\\;\\text{ D + A B}\\; \\overline{\\text{C}}\\; \\overline{\\text{D}} \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>In the following circuit, \\( \\text{X} \\) is given by </p> <p style="text-align:center"><img alt="" height="185" src="js/questions/digital_logic_3/img_3.png" width="375"/></p>`,
+      image: "",
+      options: [
+        `\\( \\text{X}=\\text{A}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}}&nbsp;\\;\\text{B}\\; \\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}}&nbsp;\\;\\text{C}+\\text{A B C} \\)`,
+        `\\( \\text{X}=\\overline{\\text{A}}&nbsp;\\;\\text{B C + A} \\;\\overline{\\text{B}}\\; \\text{C + A B} \\;\\overline{\\text{C}}+\\overline{\\text{A}}\\; \\overline{\\text{B}}\\; \\overline{\\text{C}} \\)`,
+        `\\( \\text{X = A B + B C + A C} \\)`,
+        `\\( \\text{X}=\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{B}}+\\overline{\\text{B}}\\; \\overline{\\text{C}}+\\overline{\\text{A}}&nbsp;\\;\\overline{\\text{C}} \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Two \\( \\text{D} \\) Flip flops are connected as a synchronous counter that goes through following sequence<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ 00 \\rightarrow 01 \\rightarrow 11 \\rightarrow 10 \\rightarrow 00 \\] <br/>Inputs \\( \\text{D}_0 \\) and \\( \\text{D}_1 \\) should be connected as \\( ? ( \\)Flip flop \\( \\text{D}_1 \\) provides the \\( \\text{MSB)} \\) </p> <p style="text-align:center"><img alt="" height="171" src="js/questions/digital_logic_3/img_4.png" width="371"/></p>`,
+      image: "",
+      options: [
+        `\\( \\overline{\\text{Q}}_1 \\) and \\( \\text{Q}_0 \\)`,
+        `\\( \\overline{\\text{Q}}_0 \\) and \\( \\text{Q}_1 \\)`,
+        `\\( \\overline{\\text{Q}}_1 \\text{Q}_0 \\) and \\( \\overline{\\text{Q}}_0 \\text{Q}_1 \\)`,
+        `\\( \\overline{\\text{Q}}_0 \\overline{\\text{Q}}_1 \\) and \\( \\text{Q}_0 \\text{Q}_1 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider the \\( \\text{2–bit} \\) multiplexer \\( \\text{(MUX)} \\) shown in the figure. For \\( \\text{OUTPUT} \\) to be the \\( \\text{XOR} \\) of \\( \\text{C} \\) and \\( \\text{D}, \\) the values for \\( A_{0}, A_{1}, A_{2}, \\) and \\( A_{3} \\) are _______________. </p> <p style="text-align:center"><img alt="" src="js/questions/digital_logic_3/img_5.png" width="350"/></p>`,
+      image: "",
+      options: [
+        `\\( A_{0} = 0, A_{1} = 0, A_{2} = 1, A_{3} = 1 \\)`,
+        `\\( A_{0} = 1, A_{1} = 0, A_{2} = 1, A_{3} = 0 \\)`,
+        `\\( A_{0} = 0, A_{1} = 1, A_{2} = 1, A_{3} = 0 \\)`,
+        `\\( A_{0} = 1, A_{1} = 1, A_{2} = 0, A_{3} = 0 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>What is the minimum (most negative) value of a \\( \\text{32-bit} \\) two's complement integer? </p>`,
+      image: "",
+      options: [
+        `\\( -2^{32} \\)`,
+        `\\( -2^{32}+1 \\)`,
+        `\\( -2^{31} \\)`,
+        `\\( -2^{31}+1 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the Boolean function \\( F(w,x,y,z) = wy + xy + \\overline{w}\\:xyz + \\overline{w}\\:\\overline{x}\\:y + xz + \\overline{x}\\:\\overline{y}\\:\\overline{z}. \\) Which one of the following is the complete set of essential prime implicants? </p>`,
+      image: "",
+      options: [
+        `\\( w,y,xz,\\overline{x}\\:\\overline{z} \\)`,
+        `\\( w,y,xz \\)`,
+        `\\( y, \\overline{x}\\:\\overline{y}\\:\\overline{z} \\)`,
+        `\\( y,xz,\\overline{x}\\:\\overline{z} \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p> \\( \\text{P, Q}, \\) and \\( \\text{R} \\) are the decimal integers corresponding to the \\( 4 \\)-bit binary number \\( 1100 \\) considered in signed magnitude, \\( 1 \\)’s complement, and \\( 2 \\)’s complement representations, respectively. The \\( 6 \\)-bit \\( 2 \\)’s complement representation of \\( \\text{(P+Q+R)} \\) is ________. </p>`,
+      image: "",
+      options: [
+        `\\( 110101 \\)`,
+        `\\( 110010 \\)`,
+        `\\( 111101 \\)`,
+        `\\( 111001 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p><span id="cke_bm_96S" style="display: none;"> </span> </p> <p>The circuit below uses two \\( 2 \\)-to- \\( 4 \\) decoders, and inverter, and an OR gate to implement a function \\( \\mathrm{F}(\\mathrm{X}, \\mathrm{Y}, \\mathrm{Z}) \\). \\( \\mathrm{X} \\) is the most significant bit. </p> <p style="text-align:center"><img alt="" src="js/questions/digital_logic_3/img_6.png"/></p> <p><br/> \\( \\mathrm{F}(\\mathrm{X}, \\mathrm{Y}, \\mathrm{Z}) \\) can be expressed as (Encircle all that applies): </p>`,
+      image: "",
+      options: [
+        `\\( \\sum \\mathrm{m}(0,3,4,6) \\)`,
+        `\\( \\sum \\mathrm{m}(0,2,4,7) \\)`,
+        `\\( \\prod&nbsp;\\text{M}(1,3,5,6) \\)`,
+        `\\( \\prod&nbsp;\\text{M}(1,2,5,7) \\)`,
+      ],
+      answer: ["B", "C"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p><span id="cke_bm_107S" style="display: none;"> </span> </p> <p>A demultiplexer can be implemented using a decoder circuit.<br/>For example, the \\( 2 \\)-to- \\( 4 \\) decoder can be used as a \\( 1 \\)-to- \\( 4 \\) demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ccc|cccc} \\text{En} &amp; w_{1} &amp; w_{0} &amp; y_{0} &amp; y_{1} &amp; y_{2} &amp; y_{3} \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\\\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\\\ 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\\\ 0 &amp; \\times &amp; \\times &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\\ \\end{array} \\] <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\text{(a) Truth Table of Decoder} \\] <br/><br/> </p> <p style="text-align:center"><img alt="" height="301" src="js/questions/digital_logic_3/img_7.png" width="287"/></p>`,
+      image: "",
+      options: [
+        `\\( w_{0} \\)`,
+        `\\( \\text{E}_{n} \\)`,
+        `\\( w_{1} \\)`,
+        `We can not implement a demultiplexer using a decoder.`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>If \\( (1235)_{x}\\:=\\:(3033)_{y} \\), where \\( x \\) and \\( y \\) indicate the bases of the corresponding numbers, then </p>`,
+      image: "",
+      options: [
+        `\\( x\\:=\\:7 \\) and \\( y\\:=\\:5 \\)`,
+        `\\( x\\:=\\:8 \\) and \\( y\\:=\\:6 \\)`,
+        `\\( x\\:=\\:6 \\) and \\( y\\:=\\:4 \\)`,
+        `\\( x\\:=\\:9 \\) and \\( y\\:=\\:7 \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A function of Boolean variables \\( X, Y \\) and \\( Z \\) is expressed in terms of the min-terms as <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ F(X, Y, Z) = \\Sigma&amp;nbsp;(1, 2, 5, 6, 7) \\] </p> <p>Which one of the product of sums given below is equal to the function \\( F(X, Y, Z)? \\) </p>`,
+      image: "",
+      options: [
+        `\\( (\\overline{X} + \\overline{Y} + \\overline{Z} )\\cdot(\\overline{X} + Y + Z)\\cdot(X + \\overline{Y} + \\overline{Z} ) \\)`,
+        `\\( (X + Y + Z)\\cdot(X + \\overline{Y} + \\overline{Z} )\\cdot(\\overline{X} + Y + Z) \\)`,
+        `\\( (\\overline{X} + \\overline{Y} + Z)\\cdot(\\overline{X} + Y + \\overline{Z} )\\cdot(X + \\overline{Y} + Z)\\cdot(X + Y + \\overline{Z} )\\cdot(X + Y + Z) \\)`,
+        `\\( (X + Y + \\overline{Z} )\\cdot(\\overline{X} + Y + Z)\\cdot(\\overline{X} + Y + \\overline{Z} )\\cdot(\\overline{X} + \\overline{Y} + Z)\\cdot(\\overline{X} + \\overline{Y} + \\overline{Z}) \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p><span id="cke_bm_93S" style="display: none;"> </span> </p> <p>The combinatorial circuit shown below takes three 1-bit inputs: A, B, and C, and produces one 1-bit output. The relationship between the inputs and the output is shown below as a truth table. The circuit contains two identical, unknown gates \\( \\mathrm{X} \\).<br/><img alt="" height="407" src="js/questions/digital_logic_3/img_8.png" width="1022"/><br/>What is gate \\( X \\) ? </p>`,
+      image: "",
+      options: [
+        `AND`,
+        `XNOR`,
+        `NAND`,
+        `XOR`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A logic circuit implements the boolean function \\( F=\\overline{X} \\cdot Y+X \\cdot \\overline{Y} \\cdot \\overline{Z} \\). It is found that the input combination \\( X=Y=1 \\) can never occur. Taking this into account, a simplified expression for \\( F \\) is given by </p>`,
+      image: "",
+      options: [
+        `\\( \\overline{X}+\\overline{Y} \\cdot \\overline{Z} \\)`,
+        `\\( X+Z \\)`,
+        `\\( X+Y \\)`,
+        `\\( Y+X \\cdot \\overline{Z} \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a Boolean gate \\( \\text{(D)} \\) where the output \\( Y \\) is related to the inputs \\( A \\) and \\( B \\) as, \\( Y = A + \\overline{B}, \\) where \\( + \\) denotes logical \\( \\text{OR} \\) operation. The Boolean inputs \\( ’0’ \\) and \\( ’1’ \\) are also available separately. Using instances of only \\( \\text{D} \\) gates and inputs \\( ’0’ \\) and \\( ’1’, \\) _______________ (select the correct option(s)). </p>`,
+      image: "",
+      options: [
+        `\\( \\text{NAND} \\) logic can be implemented`,
+        `\\( \\text{OR} \\) logic cannot be implemented`,
+        `\\( \\text{NOR} \\) logic can be implemented`,
+        `\\( \\text{AND} \\) logic cannot be implemented`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Assuming that all flip-flops are in reset condition initially. the count sequence observed at \\( \\text{Q}_\\text{A} \\) in the circuit shown is </p> <p style="text-align:center"><img alt="" height="204" src="js/questions/digital_logic_3/img_9.png" width="576"/></p>`,
+      image: "",
+      options: [
+        `\\( 0010111 \\ldots \\)`,
+        `\\( 0001011 \\ldots \\)`,
+        `\\( 0101111 \\ldots \\)`,
+        `\\( 0110100 \\ldots \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>The Boolean function realized by the logic circuit shown is</p> <p style="text-align:center"><img alt="" height="285" src="js/questions/digital_logic_3/img_10.png" width="528"/></p> <p> </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{F}=\\Sigma_{m}(0,1,3,5,9,10.14) \\)`,
+        `\\( \\mathrm{F}=\\Sigma_{m}(2,3,5,7,8,12,13) \\)`,
+        `\\( \\mathrm{F}=\\Sigma_{m}(1,2,4,5,11,14,15) \\)`,
+        `\\( \\mathrm{F}=\\Sigma_m(2,3,5,7,8,9 ,12) \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>In the circuit diagram shown below, the logic gates operate with a supply voltage of \\( 1 \\mathrm{~V} \\). NAND and XNOR have \\( 200 \\mathrm{~ps} \\) and \\( 400 \\mathrm{~ps} \\) input-to-output delay, respectively. </p> <p><br/>At time \\( t=\\text{T, A}(t)=0,\\text{B}(t)=1 \\) and \\( \\text{Z}(t)=0 \\). When the inputs are changed to \\( \\text{A}(t)=1, \\text{B}(t)=0 \\) at \\( t=2\\text{T}, \\) a \\( 1 \\mathrm{~V} \\) pulse is observed at \\( \\text{Z} \\). The pulse width of the \\( 1 \\mathrm{~V} \\) pulse is _______ \\( \\text{ps}. \\) </p> <p style="text-align:center"><img alt="" src="js/questions/digital_logic_3/img_11.png" width="300"/></p>`,
+      image: "",
+      options: [
+        `\\( 100 \\)`,
+        `\\( 200 \\)`,
+        `\\( 400 \\)`,
+        `\\( 600 \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>An synchronous finite state machine (FSM) with input \\( \\text{“A”} \\) has the function described in the following state diagram and is to be implemented using two synchronously clocked \\( \\text{D-Type} \\) flip-flops \\( \\text{D}_1, \\text{D}_2 \\) as the state registers. </p> <p style="text-align:center"><img alt="" height="332" src="js/questions/digital_logic_3/img_12.png" width="435"/></p> <p><br/>The Flip-Flop outputs are \\( \\left\\{\\text{Q}_2, \\text{Q}_1\\right\\} \\) where \\( \\text{Q}_1, \\text{Q}_2 \\) are output of \\( \\text{D}_1, \\text{D}_2 \\) respectively and \\( \\text{Q}_1 \\) represents the least significant bit of the FSM output. </p> <p>Then which of the following is true?</p>`,
+      image: "",
+      options: [
+        `\\( \\text{D}_1=\\text{A}, \\text{D}_2=\\text{Q}_1 \\)`,
+        `\\( \\text{D}_1=\\text{Q}_2, \\text{D}_2=\\text{A} \\)`,
+        `\\( \\text{D}_1=\\text{Q}_2, \\text{D}_2=\\text{Q}_1 \\oplus&nbsp;\\text{A} \\)`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>The following binary values were applied to the \\( \\mathrm{X} \\) and \\( \\mathrm{Y} \\) inputs of the \\( \\text{NAND} \\) latch shown in the figure in the sequence indicated below:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\mathrm{X}=0, \\mathrm{Y}=1 ; \\qquad \\quad \\mathrm{X}=0, \\mathrm{Y}=0 ; \\qquad \\quad \\mathrm{X}=1, \\mathrm{Y}=1 \\text {. } \\] <br/>The corresponding stable \\( \\text{P, Q} \\) outputs will be </p> <p style="text-align:center"><img alt="" src="js/questions/digital_logic_3/img_13.png" width="300"/></p> <p> </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=0 ; \\qquad \\qquad&nbsp;\\qquad \\qquad \\mathrm{P}=1, \\mathrm{Q}=0 \\) or \\( \\mathrm{P}=0, \\mathrm{Q}=1 \\)`,
+        `\\( \\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=0, \\mathrm{Q}=1 \\) or \\( \\mathrm{P}=0, \\mathrm{Q}=1 ; \\quad&nbsp;&nbsp;\\mathrm{P}=0, \\mathrm{Q}=1 \\)`,
+        `\\( \\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=1 ; \\qquad&nbsp;\\qquad \\qquad &nbsp;\\qquad \\mathrm{P}=1, \\mathrm{Q}=0 \\) or \\( \\mathrm{P}=0, \\mathrm{Q}=1 \\)`,
+        `\\( \\mathrm{P}=1, \\mathrm{Q}=0 ; \\quad \\quad \\mathrm{P}=1, \\mathrm{Q}=1 ; \\qquad \\qquad \\qquad \\qquad \\mathrm{P}=1, \\mathrm{Q}=1 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>For the circuit shown, the counter state \\( \\left(\\mathrm{Q}_1 \\mathrm{Q}_0\\right) \\) follows the sequence </p> <p style="text-align:center"><img alt="" height="227" src="js/questions/digital_logic_3/img_14.png" width="408"/></p>`,
+      image: "",
+      options: [
+        `\\( 00,01,10,11,00, \\ldots \\)`,
+        `\\( 00,01,10,00,01, \\ldots \\)`,
+        `\\( 00,01,11,00,01, \\ldots \\)`,
+        `\\( 00,10,11,00,10, \\ldots \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Match the Boolean expression with its minimal realization<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|l|l|l|l|} \\hline &amp; \\text { Boolean expression } &amp; &amp; \\text { Minimal realization } \\\\ \\hline \\mathrm{P} &amp; \\overline{\\text{X}}\\; \\overline{\\text{Y}}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\;\\text{Y}\\; \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{Y Z} &amp; \\mathrm{K} &amp; \\text{X(Y+Z)} \\\\ \\hline \\mathrm{Q} &amp; \\text{XYZ + X} \\overline{\\text{Y}} \\text{Z + XY} \\overline{\\text{Z}} &amp; \\mathrm{L} &amp; \\overline{\\text{X}}(\\text{Y}+\\overline{\\text{Z}}) \\\\ \\hline \\mathrm{R} &amp; \\text{XY + XYZ + XY} \\overline{\\text{Z}}+\\overline{\\text{X}} \\text{YZ} &amp; \\mathrm{M} &amp; \\text{Z} \\\\ \\hline \\mathrm{S} &amp; \\overline{\\text{X}}\\; \\overline{\\text{Y}} \\text{Z}+\\overline{\\text{X}} \\text{YZ + X} \\overline{\\text{Y}} \\text{Z + XYZ} &amp; \\mathrm{N} &amp; \\text{Y(X+Z)} \\\\ \\hline \\end{array} \\] </p>`,
+      image: "",
+      options: [
+        `\\( \\text{P-K, Q-L, R-N, S-M} \\)`,
+        `\\( \\text{P-L, Q-K, R-N, S-M} \\)`,
+        `\\( \\text{P-L, Q-N, R-M, S-K} \\)`,
+        `\\( \\text{P-M, Q-K, R-L, S-N} \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>In the circuit shown below, \\( \\text{Y} \\) is a \\( \\text{2-bit} \\left(\\text{Y}_1 \\text{Y}_0\\right) \\) output of the combinational logic. What is the maximum value of \\( \\text{Y} \\) for any given digital inputs, \\( \\text{A}_1 \\text{A}_0 \\) and \\( \\mathrm{B}_1 \\mathrm{~B}_0? \\) </p> <p style="text-align:center"><img alt="" height="120" src="js/questions/digital_logic_3/img_15.png" width="363"/></p>`,
+      image: "",
+      options: [
+        `\\( 01 \\)`,
+        `\\( 10 \\)`,
+        `\\( 00 \\)`,
+        `\\( 11 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Input bits \\( \\mathrm{X} \\) and \\( \\mathrm{Y} \\) are added by using the combinational logic as shown below. \\( \\text{S} \\) represents the sum of the two bits. For a correct implementation of the sum, the signals \\( \\text{D}_0, \\text{D}_1, \\text{D}_2, \\text{D}_3 \\) are, respectively.<br/> </p> <p style="text-align:center"><img alt="" height="339" src="js/questions/digital_logic_3/img_16.png" width="323"/></p>`,
+      image: "",
+      options: [
+        `\\( 1,0,0,1 \\)`,
+        `\\( 0,1,0,1 \\)`,
+        `\\( 1,0,1,1 \\)`,
+        `\\( 0,1,1,0 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Let \\( b_q b_{q-1} \\ldots b_0 \\) be the binary representation of integer \\( b \\). The integer \\( 3 \\) is a divisor of \\( b \\) if and only if </p>`,
+      image: "",
+      options: [
+        `\\( b_1=b_0=1 \\)`,
+        `The sum of the binary digits \\( b_i \\) is divisible by \\( 3 . \\)`,
+        `The alternating sum \\( b_0-b_1+b_2-\\ldots \\) is zero.`,
+        `The alternating sum \\( b_0-b_1+b_2-\\ldots \\) is divisible by \\( 3 . \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>The propagation delays of the \\( \\text{XOR} \\) gate, \\( \\text{AND} \\) gate and multiplexer \\( \\text{(MUX)} \\) in the circuit shown in the figure are \\( 4\\;\\text{ns} , 2\\;\\text{ns} \\) and \\( 1\\;\\text{ns} \\), respectively. </p> <p style="text-align:center"><img alt="" src="js/questions/digital_logic_3/img_17.png"/></p> <p>If all the inputs \\( \\text{P, Q, R, S&amp;nbsp;and T} \\) are applied simultaneously and held constant, the maximum propagation delay of the circuit is </p>`,
+      image: "",
+      options: [
+        `\\( 3\\;\\text{ns} \\)`,
+        `\\( 5\\;\\text{ns} \\)`,
+        `\\( 6\\;\\text{ns} \\)`,
+        `\\( 7\\;\\text{ns} \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+  ]
+});
+
+
+registerTest({
+  series: "cs-gate-classes",
   name: "SWT - Digital Logic-2",
   date: "July 15, 2026",
   questions: [
