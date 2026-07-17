@@ -5112,7 +5112,7 @@ sequence:(Output of mux is controlled by select lines, S1S0)<br/>
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - Digital Logic-1",
+  name: "SWT - Digital logic-1",
   date: "July 08, 2026",
   questions: [
     {
@@ -5562,9 +5562,10 @@ registerTest({
     },
   ]
 });
+
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - Digital Logic-3",
+  name: "SWT - Digital logic-3",
   date: "July 15, 2026",
   questions: [
     {
@@ -5718,7 +5719,12 @@ registerTest({
       type: "MCQ",
       text: `<p>Given the truth table below:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|c|} \\hline A &amp; B &amp; C &amp; X \\\\ \\hline 0 &amp; 0 &amp; 0 &amp; 0 \\\\ \\hline 0 &amp; 0 &amp; 1 &amp; 0 \\\\ \\hline 0 &amp; 1 &amp; 0 &amp; 0 \\\\ \\hline 0 &amp; 1 &amp; 1 &amp; 1 \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 0 \\\\ \\hline 1 &amp; 0 &amp; 1 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 0 &amp; 1 \\\\ \\hline 1 &amp; 1 &amp; 1 &amp; 1 \\\\ \\hline \\end{array} \\] <br/>Which digital circuit represents it? </p> <p><br/><b id="docs-internal-guid-a1858fec-7fff-60f4-e267-397443be3beb"><img alt="" height="323" src="js/questions/digital_logic_3/img_5.png" width="626"/></b></p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D",
+      ],
       answer: "C",
       solution: `<div class="res_solution"> </div>`
     },
@@ -5814,7 +5820,7 @@ registerTest({
       text: `<p>A positive edge-triggered D flip-flop has a setup time \\( \\left(t_{s u}\\right) \\) of \\( \\mathrm{4 ~ns} \\) and a hold time \\( \\left(t_{h}\\right) \\) of \\( \\mathrm{2 ~ns} \\). The propagation delay of the flip-flop \\( (t_{p d}) \\) is \\( \\mathrm{5 ~ns} \\). This flip-flop is used to build a circuit where the output \\( Q \\) is fed back to the input \\( D \\) through an XOR gate that has a delay of \\( \\mathrm{3 ~ns} \\). What is the maximum clock frequency (in \\( \\mathrm{MHz} \\)) at which this circuit can operate reliably? (Give answer in integer) </p>`,
       image: "",
       options: [],
-      answer: "83:84",
+      answer: "83.84",
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -5913,7 +5919,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - Digital Logic-2",
+  name: "SWT - Digital logic-2",
   date: "July 15, 2026",
   questions: [
     {
