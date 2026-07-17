@@ -587,10 +587,13 @@ function renderTestList(t, filter) {
               <span>${docIconInline}${it.questions} Questions</span>
               ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/${it.maxScore || 100}</span>` : ""}
             </div>
-            <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
-              ${it.status === "attempted" ? "View Result" : "Start Test"}
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
+            <div style="display: flex; gap: 8px;">
+              ${it.status === "attempted" ? `<button class="btn-start-test" style="background:var(--accent);color:#fff;" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)">Reattempt</button>` : ""}
+              <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
+                ${it.status === "attempted" ? "View Result" : "Start Test"}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
           </div>
         </div>`,
       )
@@ -1422,7 +1425,12 @@ function confirmSubmit() {
       body: JSON.stringify(payload)
     }).then(res => res.json()).then(data => {
       if (data.success) {
-        userResults.push(payload);
+        const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
+        if (existingIndex !== -1) {
+          userResults[existingIndex] = payload;
+        } else {
+          userResults.push(payload);
+        }
         const seriesObj = testSeries.find((x) => x.id === currentTestListId);
         if (seriesObj) renderTestList(seriesObj, "all");
       }
