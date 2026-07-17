@@ -15,7 +15,7 @@ def main():
     img_dir = 'js/questions/databases_1'
     os.makedirs(img_dir, exist_ok=True)
 
-    test_name = 'SWT - Databases-1'
+    test_name = 'TWT - Databases-1'
     questions = []
     
     q_divs = soup.find_all('div', class_='res_question')
@@ -59,6 +59,10 @@ def main():
             
         for script in q_text_div.find_all('script', type=re.compile('math/tex')):
             tex = script.string.strip()
+            # Double escape backslashes for Javascript template literals
+            tex = tex.replace('\\', '\\\\')
+            # Remove &nbsp; or &amp;nbsp; which breaks MathJax
+            tex = tex.replace('&nbsp;', ' ').replace('&amp;nbsp;', ' ')
             # Replace script element with a plain string instead of a tag
             script.replace_with(f"\\\\( {tex} \\\\)")
 
@@ -82,6 +86,9 @@ def main():
         q_html = clean_text(q_html)
         # Avoid removing actual <p> tags but clean random whitespace between tags
         q_html = re.sub(r'>\s+<', '><', q_html)
+        
+        # Add gaps between paragraphs to satisfy user request
+        q_html = q_html.replace('</p><p>', '</p><br/><p>')
         
         # Answer
         ans_span = q.find('span', class_='correct_solution')
@@ -151,16 +158,26 @@ def main():
     
     insert_code = "\n".join(out)
     
-    # Insert before MADE EASY 2026
+    # Replace existing TWT - Databases-1 block if present
     with open('js/test-registry.js', 'r', encoding='utf-8') as f:
         content = f.read()
         
-    target = "// MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES"
-    if target in content:
-        new_content = content.replace(target, insert_code + "\n\n\n" + target)
-        with open('js/test-registry.js', 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        print("Successfully inserted the test!")
+    start_str = 'registerTest({\n  series: "cs-gate-classes",\n  name: "TWT - Databases-1",'
+    
+    if start_str in content:
+        # find the end of this registerTest block
+        start_idx = content.find(start_str)
+        # Assuming the next line after this block is // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
+        end_str = '// MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES'
+        end_idx = content.find(end_str, start_idx)
+        
+        if end_idx != -1:
+            new_content = content[:start_idx] + insert_code + "\n\n\n" + content[end_idx:]
+            with open('js/test-registry.js', 'w', encoding='utf-8') as f:
+                f.write(new_content)
+            print("Successfully replaced the test!")
+        else:
+            print("Could not find end of test.")
     else:
         print("Target not found.")
 
