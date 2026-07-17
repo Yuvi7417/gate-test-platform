@@ -5676,7 +5676,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p>Consider the multiplexer circuit in the following figure</p> <p style="text-align:center"><img alt="" height="376" src="js/questions/digital_logic_2/img_6.png" width="500"/></p> <p><br/>Consider the following statements:</p> <ol style="list-style-type:upper-roman"> <li>If \\( \\mathrm{S1}=0 \\) and \\( \\mathrm{S2}=0 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\mathrm{D1} \\)<br/> </li> <li>If \\( \\mathrm{S1}=0 \\) and \\( \\mathrm{S2}=1 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\mathrm{D2} \\)<br/> </li> <li>If \\( \\mathrm{S1}=1 \\) and \\( \\mathrm{S2}=1 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\{D0} \\)</li> </ol> <p>Select the<strong> CORRECT </strong>option:</p>`,
+      text: `<p>Consider the multiplexer circuit in the following figure</p> <p style="text-align:center"><img alt="" height="376" src="js/questions/digital_logic_2/img_6.png" width="500"/></p> <p><br/>Consider the following statements:</p> <ol style="list-style-type:upper-roman"> <li>If \\( \\mathrm{S1}=0 \\) and \\( \\mathrm{S2}=0 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\mathrm{D1} \\)<br/> </li> <li>If \\( \\mathrm{S1}=0 \\) and \\( \\mathrm{S2}=1 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\mathrm{D2} \\)<br/> </li> <li>If \\( \\mathrm{S1}=1 \\) and \\( \\mathrm{S2}=1 \\), then \\( \\mathrm{X} \\) will always have the same value as \\( \\mathrm{D0} \\)</li> </ol> <p>Select the<strong> CORRECT </strong>option:</p>`,
       image: "",
       options: [
         `statement I is correct.`,
@@ -5706,13 +5706,13 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>Based on your knowledge of sequential circuit design, consider the following statements.</p> <p><br/>Select the correct option.</p> <ol style="list-style-type:upper-alpha"> <li>Only statements I and IV are correct.<br/> </li> <li>Only statements II and III are correct.<br/> </li> <li>Only statements III and IV are correct.<br/> </li> <li>Only statements I, II, and III are correct.</li> </ol> <p> </p>`,
+      text: `<p>Based on your knowledge of sequential circuit design, consider the following statements.</p> <ul> <li>The design of sequential circuits using flip-flops is critical due to the problem known as flip-flop transparency.<br/> </li> <li>Since a flip-flop is known to be sensitive to one of the clock edges, the dwell time of the clock at the high or low level is no longer critical to the operation of the sequential circuit.<br/> </li> <li>Setup time is the time during which the input must be kept stable before the active transition of the clock.<br/> </li> <li>A D-type flip-flop can be implemented with two D-type latches or with one D-type latch and an edge detector circuit.</li> </ul> <p><br/>Select the correct option.</p>`,
       image: "",
       options: [
-        `The design of sequential circuits using flip-flops is critical due to the problem known as flip-flop transparency.<br/>`,
-        `Since a flip-flop is known to be sensitive to one of the clock edges, the dwell time of the clock at the high or low level is no longer critical to the operation of the sequential circuit.<br/>`,
-        `Setup time is the time during which the input must be kept stable before the active transition of the clock.<br/>`,
-        `A D-type flip-flop can be implemented with two D-type latches or with one D-type latch and an edge detector circuit.`,
+        `Only statements I and IV are correct.`,
+        `Only statements II and III are correct.`,
+        `Only statements III and IV are correct.`,
+        `Only statements I, II, and III are correct.`,
       ],
       answer: "C",
       solution: `<div class="res_solution"> </div>`
