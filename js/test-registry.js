@@ -5562,6 +5562,896 @@ registerTest({
     },
   ]
 });
+registerTest({
+  series: "cs-gate-classes",
+  name: "SWT - Digital Logic-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider the logic circuit shown in the figure below.<br/> </p>
+<p style="text-align:center"><img alt="" src="js/questions/digital_logic_2/img_1.png"/></p>
+<p><br/><br/>Considering the logical formula that <strong>defines</strong> the Boolean function implemented by
+                this circuit, select the <strong>CORRECT</strong> option.</p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( S=\\overline{(A \\wedge B) \\wedge(C \\wedge D)} \\)
+<br/>`,
+        `\\( S=\\overline{(A \\vee B)} \\wedge \\overline{(C \\vee D)} \\)<br/>`,
+        `\\( S=\\overline{(A \\vee B)} \\vee \\overline{(C \\vee D)} \\)<br/>`,
+        `NONE OF THE ABOVE`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p>
+<p style="text-align:center"><img alt="" height="159" src="js/questions/digital_logic_2/img_2.png" width="460"/></p>
+<p><br/>Analyze the following statements.</p>
+
+<p><br/>The analysis allows us to conclude that</p>
+<ol style="list-style-type:upper-alpha">
+<li>statements I and II are true.<br/> </li>
+<li>statement III is true.<br/> </li>
+<li>statement IV is true.<br/> </li>
+<li>statement II is true.</li>
+</ol>
+<p> </p>
+<p></p>`,
+      image: "",
+      options: [
+        `The circuit shown is a sequential circuit.<br/>`,
+        `The circuit shown is a combinational circuit.<br/>`,
+        `The circuit shown implements a four-state Mealy machine.<br/>`,
+        `The circuit shown implements a four-state Moore machine.`,
+      ],
+      answer: ["D"],
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p>
+<p>What is the function of the circuit below?<br/> </p>
+<p style="text-align:center"><img alt="" height="223" src="js/questions/digital_logic_2/img_3.png" width="740"/></p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `multiplexer<br/>`,
+        `multiplier<br/>`,
+        `shifter<br/>`,
+        `adder`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p>
+<p>Considering 
+\\( \\mathrm{A} \\) and 
+\\( \\mathrm{B} \\) two logical variables, the expression
+                
+\\( (\\mathrm{not(A)} \\) and 
+\\( \\mathrm{B}) \\) or 
+\\( (\\mathrm{A} \\) and 
+\\( \\mathrm{not(B)}) \\) assumes the value true:
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `for all values of 
+\\( \\mathrm{A} \\) and 
+\\( \\mathrm{B} \\)<br/>`,
+        `whenever 
+\\( \\mathrm{A} \\) is equal to 
+\\( \\mathrm{B} \\)<br/>`,
+        `whenever 
+\\( \\mathrm{A} \\) is different from 
+\\( \\mathrm{B} \\)<br/>`,
+        `whenever 
+\\( \\mathrm{A} \\) is false`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider the following Boolean expressions:</p>
+
+<p><br/><br/>Consider the following statements:</p>
+<ol style="list-style-type:upper-roman">
+<li>A is equivalent to B.<br/> </li>
+<li>C is equivalent to D.<br/> </li>
+<li>A is equivalent to D.<br/> </li>
+<li>B is equivalent to C.</li>
+</ol>
+<p><br/><br/>Which of the above options are true?</p>
+<ol style="list-style-type:upper-alpha">
+<li>Only statements I and III are true.<br/> </li>
+<li>Only statements II and IV are true.<br/> </li>
+<li>All statements are true.<br/> </li>
+<li>All statements are false.</li>
+</ol>
+<p> </p>
+<p></p>`,
+      image: "",
+      options: [
+        `\\( (a \\cdot b)+(c \\cdot d \\cdot e) \\)<br/>`,
+        `\\( (a \\cdot b) \\cdot(c \\cdot d \\cdot e) \\)
+<br/>`,
+        `\\( (a+b) \\cdot(c+d+e) \\)<br/>`,
+        `\\( \\overline{(a+b)}+\\overline{(c+d+e)} \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Observe the logic circuit below.</p>
+<p style="text-align:center"><img alt="" height="284" src="js/questions/digital_logic_2/img_4.png" width="500"/></p>
+<p><br/>The Boolean expression for output 
+\\( S \\) of the circuit shown is
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( \\bar{A}+B \\cdot \\bar{C} \\)<br/>`,
+        `\\( A+\\bar{B} \\cdot C \\)<br/>`,
+        `\\( \\bar{B}+A \\cdot C \\)<br/>`,
+        `\\( \\bar{A} \\cdot \\bar{B} \\cdot \\bar{C} \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p>
+<p style="text-align:center"><img alt="" height="173" src="js/questions/digital_logic_2/img_5.png" width="500"/></p>
+<p><br/>Considering the digital circuit shown, analyze the following statements.</p>
+
+<p><br/>The analysis allows us to conclude that</p>
+<ol style="list-style-type:upper-alpha">
+<li>statement III is true.<br/> </li>
+<li>none of the statements are true.<br/> </li>
+<li>statement I is true.<br/> </li>
+<li>statement II is true.</li>
+</ol>
+<p> </p>
+<p></p>`,
+      image: "",
+      options: [
+        `The Boolean function implemented by the circuit can be defined by: 
+\\( \\mathrm{S}=\\mathrm{AB}+\\mathrm{CD}+\\mathrm{E} \\)<br/>`,
+        `The Boolean function implemented by the circuit can be defined by: 
+\\( \\mathrm{S}=(\\mathrm{A+B)}(\\mathrm{C+D)E} \\)
+<br/>`,
+        `The Boolean function implemented by the circuit can be defined by: 
+\\( \\mathrm{S}=\\mathrm{(A B C)+(D E)} \\)`,
+      ],
+      answer: ["B"],
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p>
+<p>Consider the multiplexer circuit in the following figure</p>
+<p style="text-align:center"><img alt="" height="376" src="js/questions/digital_logic_2/img_6.png" width="500"/></p>
+<p><br/>Consider the following statements:</p>
+
+<p>Select the<strong> CORRECT </strong>option:</p>
+<ol style="list-style-type:upper-alpha">
+<li>statement I is correct.<br/> </li>
+<li>statement II is correct.<br/> </li>
+<li>statement III is correct.<br/> </li>
+<li>Only statements I and II are correct.</li>
+</ol>
+<p> </p>
+<p></p>`,
+      image: "",
+      options: [
+        `If 
+\\( \\mathrm{S1}=0 \\) and 
+\\( \\mathrm{S2}=0 \\), then 
+\\( \\mathrm{X} \\) will always have the same value
+                    as 
+\\( \\mathrm{D1} \\)<br/>`,
+        `If 
+\\( \\mathrm{S1}=0 \\) and 
+\\( \\mathrm{S2}=1 \\), then 
+\\( \\mathrm{X} \\) will always have the same value
+                    as 
+\\( \\mathrm{D2} \\)<br/>`,
+        `If 
+\\( \\mathrm{S1}=1 \\) and 
+\\( \\mathrm{S2}=1 \\), then 
+\\( \\mathrm{X} \\) will always have the same value
+                    as 
+\\( \\mathrm{D0} \\)<br/>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Considering a function described in its canonical form as the sum of products by minterms 
+\\( 3,7, 11,12,13,14 \\), and 
+\\( 15 \\) of a Karnaugh map, and considering variable
+                
+\\( A \\) as the highest logical order term, 
+\\( B \\) as the second highest order term, 
+\\( C \\) as the third highest order term, and 
+\\( D \\) as the lowest logical order term, determine
+                its minimized logical representation.
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( A^{\\prime} B+C D \\)<br/>`,
+        `\\( A B+C D \\)<br/>`,
+        `\\( A B^{\\prime}+C D \\)<br/>`,
+        `\\( A^{\\prime} B^{\\prime} + CD \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Based on your knowledge of sequential circuit design, consider the following statements.</p>
+
+<p><br/>Select the correct option.</p>
+<ol style="list-style-type:upper-alpha">
+<li>Only statements I and IV are correct.<br/> </li>
+<li>Only statements II and III are correct.<br/> </li>
+<li>Only statements III and IV are correct.<br/> </li>
+<li>Only statements I, II, and III are correct.</li>
+</ol>
+<p> </p>
+<p></p>`,
+      image: "",
+      options: [
+        `The design of sequential circuits using flip-flops is critical due to the problem known as flip-flop
+                    transparency.<br/>`,
+        `Since a flip-flop is known to be sensitive to one of the clock edges, the dwell time of the clock at
+                    the high or low level is no longer critical to the operation of the sequential circuit.<br/>`,
+        `Setup time is the time during which the input must be kept stable before the active transition of
+                    the clock.<br/>`,
+        `A D-type flip-flop can be implemented with two D-type latches or with one D-type latch and an edge
+                    detector circuit.`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider the circuit shown below.<br/><img alt="" height="283" src="js/questions/digital_logic_2/img_8.png" width="468"/><br/><br/>Select the option
+                that correctly shows the resulting simplified circuit.</p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `<img alt="" src="data:image/png;base64,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"/><br/>`,
+        `<img alt="" src="data:image/png;base64,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"/><br/>`,
+        `<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAAA4CAYAAAB+DyM+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA/GSURBVHhe7d1XbyRFFwbgGpuc45JzFjlndskZRIZFIAES4gLBLZf+G1xws0gkkRFZLDnnnHPOOQd/furzGbV7ezy2Z2zPjOeVStPuUF196q2TqrpdGx5B6qOPWcbA6G8ffcwq+kTsoyPQJ2IfHYG6j/jvv/+mb7/9Nn311Vdp+eWXTxtssEFabrnl0vfff59++OGHtMwyy6TVVlstrbjiivnCbkDR/a3VaqNbfXQi6kT87bff0qOPPppuvvnmtMYaa6STTz45bbzxxumVV17JZd1110177LFH3jdep6pOcc5sdv5///1XJ2K0ZTbb08f4qJvmwcHBrAl///33TLyHH344vfjii+m7775LSy21VF0bTqQzEeCff/5Jf//9d734u1xo4XJBoGYlyB6ljEb7++hcjEnfIN19992X7r333vTTTz+l7bbbLu26665piy22SBtttFFaZZVVRs9sDNUhmeu/+OKL9M0336Q//vgjE31gYKxLWiR1bFftK8K+8jnFfe6/wgorpHXWWSetueaaeRBB+bo+OgtjiGjzo48+SldddVW666670rx589Kpp56ajjzyyKwR45xmHUoDfvDBB+nxxx/PWpWfiRCIWLy2arvRcWh0ThCctkR6JDzooIPS7rvvPql29zF7WCKh/csvv2Q/8eqrr87bxx9/fFq4cGFaf/318/Hi6Y06lon9+OOP09NPP53N/I8//lipEcsoNWUJxPHyeVEvEr7zzjtp6aWXzu0+5phj0oYbbpiPuaYVIrqePGh4luPXX3/NxFfnZOrVVoOSG2SQGOy2iyg+31wZPGOI+Ndff2UCvfHGG+n5559Pr776ahbWYYcdlg444ICsaUAHQKNOUKWOEoHrNPVC8VznFAUOxb+rjsd9y+dFO9yTW/H++++n+fPnpxNOOCFtueWWo2e2Bu4GLf/MM8+k1157Ld8L4Q0wiHY0QrQZEcMfFxRyeTbZZJO01lprpVVXXTUtu+yy+bw4f7w6ewl1ItJin376adZghMHPotGefPLJTEadioyRvnF+EKBKWEgTAUgItRmandfs+J9//pmuv/767BLssssu6eij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"/><br/>`,
+        `<img alt="" src="js/questions/digital_logic_2/img_7.png"/><br/>`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Following figure shows a counter circuit built from JK flip-flops.<br/> </p>
+<p style="text-align:center"><img alt="" height="205" src="js/questions/digital_logic_2/img_9.png" width="570"/></p>
+<p><br/><br/>Considering that letters 
+\\( \\mathrm{A} \\), 
+\\( \\mathrm{B} \\), 
+\\( \\mathrm{C} \\), and 
+\\( \\mathrm{D} \\) represent the outputs of the
+                flip-flops and that inputs 
+\\( \\mathrm{J} \\) and 
+\\( \\mathrm{K} \\) of all flipflops are permanently at
+                a high level, select the option that correctly presents the type of counter in the figure.
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `Synchronous module 
+\\( 10 \\).<br/>`,
+        `Asynchronous (ripple) with a modulus of 
+\\( 10 \\).<br/>`,
+        `Asynchronous (ripple) with a modulus of 
+\\( 13 \\).<br/>`,
+        `Synchronous module 
+\\( 13 \\).`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p>
+<p>Analyze the following diagram.<br/> </p>
+<p style="text-align:center"><img alt="" height="301" src="js/questions/digital_logic_2/img_10.png" width="500"/>
+</p>
+<p><br/><br/>Which of the following is/are correct?</p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `The counter performs a sequential and increasing count.<br/>`,
+        `The module of this counter is 
+\\( 20 \\).<br/>`,
+        `The counter is of the asynchronous type (ripple counter).<br/>`,
+        `Replacing JK flip-flops with SR (Set-Reset) flip-flops does not change its operation as a binary
+                    counter.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider the function 
+\\( \\mathrm{F}(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}) \\),
+                composed of the minimum terms 
+\\( ( \\)minterm
+\\( )=\\{1,3,5,7,9\\} \\) and the non-essential terms
+                
+\\( ( \\)don't care
+\\( )=\\{6,12,13\\} \\). This function, as a product of
+                sums, can be simplified as follows:<br/> 
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{D}^{\\prime}+\\mathrm{A}^{*} \\mathrm{C} \\)<br/>`,
+        `\\( \\mathrm{D}^{*}\\left(\\mathrm{A}^{\\prime}+\\mathrm{C}^{\\prime}\\right) \\)
+<br/>`,
+        `\\( \\left(\\mathrm{D}^{*} \\mathrm{A}^{\\prime}\\right)+\\left(\\mathrm{~D}^{*} \\mathrm{C}^{\\prime}\\right) \\)
+<br/>`,
+        `\\( \\mathrm{D}^{*} \\mathrm{A}^{\\prime}+\\mathrm{A}^{*} \\mathrm{B}^{\\prime *} \\mathrm{C}^{\\prime *} \\mathrm{D} \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Two's complement representation is a binary representation of numbers with a sign that uses the most
+                significant bit as a sign bit, which makes it easier to test whether an integer is positive or negative.
+
+                According to the two's complement representation rule, the conversion of the number 
+\\( -32658 \\) corresponds to the number:
+
+                Give answer as binary representation in 
+\\( 2 \\)'s complement using exactly 
+\\( 16 \\) bits.
+            </p>`,
+      image: "",
+      options: [],
+      answer: 1000000001101110.0,
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>What is the complement of the function 
+\\( f=(x +\\overline{y})(yz + x\\overline{y}) \\)
+</p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( \\bar{f}=\\bar{x}+y \\bar{z} \\)<br/>`,
+        `\\( \\bar{f}=\\bar{x}+\\overline{x z}+y \\)<br/>`,
+        `\\( \\bar{f}=x \\bar{z}+y \\)<br/>`,
+        `\\( \\bar{f}=x \\bar{y}+y z \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider four 
+\\( 4 \\)-variable Boolean functions 
+\\( f_{1}, f_{2}, f_{3} \\) expressed in
+                sum-of-minterms 
+\\( (\\Sigma m) \\) form:
+            </p>
+<ul>
+<li>
+\\( f_{1}(A, B, C, D)=\\sum(0,1,2,4,5) \\)<br/> 
+                </li>
+<li>
+\\( f_{2}(A, B, C, D)=\\sum(0,4,8,12) \\)<br/> 
+                </li>
+<li>
+\\( f_{3}(A, B, C, D)=\\sum(1,2,5,9) \\)<br/> 
+                </li>
+<li>
+\\( f_{4}(A, B, C, D)=\\sum(1,5) \\)
+</li>
+</ul>
+<p><br/><strong>The Circuit</strong><br/><br/>The functions are processed through the following logic gates to
+                produce the final output 
+\\( \\mathbf{Z} \\) :
+            </p>
+
+<div>
+<ol start="1" style="list-style-type: upper-alpha;">
+<li>
+\\( Z=\\sum(0,2,4,8,12) \\)<br/> 
+                    </li>
+<li>
+\\( Z=\\sum(0,1,2,4,8,12) \\)<br/> 
+                    </li>
+<li>
+\\( Z=\\sum(0,2,4,5,8,12) \\)<br/> 
+                    </li>
+<li>
+\\( Z=\\sum(1,5,9) \\)
+</li>
+</ol>
+</div>
+<p></p>`,
+      image: "",
+      options: [
+        `\\( f_{1} \\) and 
+\\( f_{2} \\) are the inputs to an 
+\\( \\mathbf{OR} \\) gate. Let the output be 
+\\( G_{1} \\).<br/>`,
+        `\\( f_{3} \\) and 
+\\( f_{4} \\) are the inputs to an 
+\\( \\mathbf{AND} \\) gate. Let the output be 
+\\( G_{2} \\).<br/>`,
+        `\\( G_{1} \\) and 
+\\( G_{2} \\) are the inputs to an 
+\\( \\mathbf{XOR} \\) gate. The final output is
+                    
+\\( \\mathbf{Z} \\).<br/><br/>`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p>
+<p>Consider the 
+\\( 4 \\)-variable Karnaugh map 
+\\( ( \\)variables 
+\\( w, x, y, z) \\) given below, where 
+\\( \\mathbf{X} \\) represents "don't care" and a blank
+                cell represents 
+\\( \\mathbf{0} \\).<br/> 
+            </p>
+<p style="text-align:center"><img alt="" height="237" src="js/questions/digital_logic_2/img_11.png" width="271"/></p>
+<p><br/>Assume for all inputs 
+\\( (w, x, y, z) \\), the respective complements 
+\\( (\\bar{w}, \\bar{x}, \\bar{y}, \\bar{z}) \\) are also
+                available. The above logic is implemented using 
+\\( \\mathbf{2} \\)<strong>-input NAND gates
+                    only.</strong><br/><br/>The minimum number of gates required is 
+\\( \\_\\_\\_\\_ \\) .
+            </p>
+<p></p>`,
+      image: "",
+      options: [],
+      answer: 1.0,
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider the two cascaded 
+\\( \\mathrm{2-to-1} \\) multiplexers as shown in the
+                logic diagram below.
+            </p>
+<p style="text-align:center"><img alt="" height="312" src="js/questions/digital_logic_2/img_12.png" width="282"/></p>
+<p> </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( \\bar{\\mathrm{B}} \\bar{\\mathrm{S}}+\\mathrm{A B}+\\mathrm{B S} \\)
+<br/>`,
+        `\\( \\bar{\\mathrm{B}} \\bar{\\mathrm{S}}+\\bar{\\mathrm{A}} \\mathrm{B}+\\mathrm{B S} \\)
+<br/>`,
+        `\\( \\mathrm{B} \\bar{\\mathrm{S}}+\\mathrm{A} \\bar{\\mathrm{B}}+\\mathrm{A} \\mathrm{S} \\)
+<br/>`,
+        `\\( \\bar{\\mathrm{A}} \\bar{\\mathrm{B}}+\\mathrm{B S}+\\mathrm{A} \\mathrm{S} \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p>
+<p>Consider an 
+\\( 8 \\)-bit computer system that uses the following
+                custom format for its registers:
+            </p>
+<ul>
+<li>The <strong>Most Significant Bit (MSB)</strong> is a sign bit 
+\\( (0 \\) for positive, 
+\\( 1 \\) for negative
+\\( ) \\).<br/> 
+                </li>
+<li>The next 
+\\( \\mathbf{3} \\) <strong>bits</strong> represent
+                    the integer part.<br/> 
+                </li>
+<li>The final 
+\\( \\mathbf{4} \\) <strong>bits</strong> represent
+                    the fractional part (fixed-point).<br/> 
+                </li>
+<li>Negative numbers are stored using 
+\\( \\mathbf{2} \\)<strong>'s complement
+                        representation </strong>across the entire 
+\\( 8 \\)-bit string.<br/> 
+                </li>
+</ul>
+<p>What is the decimal equivalent of the binary string 
+\\( \\mathbf{11001000} \\) when interpreted using this
+                specific 
+\\( 8 \\)-bit signed fixed-point format?
+            </p>
+<p></p>`,
+      image: "",
+      options: [],
+      answer: "-3.5",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>A 
+\\( 4 \\times 1 \\) multiplexer is used to implement a
+                logic function 
+\\( f(A, B, C) \\). The select lines 
+\\( S_{1} \\) and 
+\\( S_{0} \\) are connected to variables 
+\\( A \\) and 
+\\( B \\) respectively. The inputs 
+\\( I_{0} \\) through 
+\\( I_{3} \\) are connected as follows: 
+\\( I_{0}=C, I_{1}=\\bar{C}, I_{2}=1, I_{3}=0 \\)
+                .<br/><br/>What is the simplified sum-of-products (SOP) form of the function 
+\\( f(A, B, C) \\) ?
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( A \\bar{B}+\\bar{A} \\bar{B} C+\\bar{A} B \\bar{C} \\)<br/>`,
+        `\\( A \\bar{B}+A C+B C \\)<br/>`,
+        `\\( \\bar{A} \\bar{B} \\bar{C}+\\bar{A} B C+A B \\)
+<br/>`,
+        `\\( A B C+\\bar{A} \\bar{B} \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>A logic circuit consists of two-input XOR gates. We want to implement a function that detects "odd
+                parity" for a 
+\\( 4 \\)-bit input 
+\\( WXYZ \\) (i.e., the output is 
+\\( 1 \\) if the number of 
+\\( 1 \\)s in the input is odd).
+
+                What is the minimum number of 
+\\( 2 \\)-input 
+\\( \\mathrm{XOR} \\) gates required to implement this
+                
+\\( 4 \\)-bit odd parity generator?
+            </p>`,
+      image: "",
+      options: [],
+      answer: 3.0,
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>Consider a 
+\\( 3 \\)-bit synchronous counter designed using
+                T-flip-flops. The state transitions are defined such that the counter follows the sequence: 
+\\( 000 \\rightarrow 010 \\rightarrow 100 \\rightarrow 110 \\rightarrow 000 \\ldots \\)
+                The unused states 
+\\( (001,011,101,111) \\) are considered
+                <strong>"don't care"</strong> conditions for the excitation logic.<br/><br/>If the current state of the
+                counter is 
+\\( Q2 \\), 
+\\( Q1 \\), 
+\\( Q0 \\) which of the following represents the
+                minimized expression for the toggle input 
+\\( T1 \\) of the second flipflop for the next state?
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( T_{1}=0 \\)<br/>`,
+        `\\( T_{1}=1 \\)<br/>`,
+        `\\( T_{1}=Q_{2} \\oplus Q_{0} \\)<br/>`,
+        `\\( T_{1}=\\overline{Q_{1}} \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p>
+<p>Consider an 
+\\( 8 \\)-bit ripple-carry adder used to add two
+                integers, 
+\\( P \\) and 
+\\( Q \\), represented in 
+\\( \\mathbf{2} \\)<strong>'s complement</strong> form.
+                The delay of a half-adder is 
+\\( \\mathrm{10 ~ns} \\) and the delay of an OR gate
+                used for carry propagation is 
+\\( 5 ~\\mathrm{ns} \\) .<br/><br/>If the decimal value
+                of 
+\\( P \\) is 
+\\( 1 \\) , what is the <strong>INTEGER</strong>
+                decimal value of 
+\\( Q \\) in the range 
+\\( [-128,127] \\) that will lead to the
+                <strong>MAXIMUM </strong>propagation delay (worst-case latency) for the sum to stabilize?
+            </p>
+<p></p>`,
+      image: "",
+      options: [],
+      answer: "-1",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p>
+<p>A designer is asked to implement a 
+\\( D \\) flip-flop using a 
+\\( J K \\) flip-flop and additional combinational
+                logic. The desired behavior is that the output 
+\\( Q \\) should follow the input 
+\\( D \\) on the next clock edge.<br/><br/>Which of the
+                following represents the correct connections for the 
+\\( J \\) and 
+\\( K \\) inputs to achieve this 
+\\( D \\) flip-flop behavior?
+            </p>
+
+<p></p>`,
+      image: "",
+      options: [
+        `\\( J=D, K=1 \\)<br/>`,
+        `\\( J=\\bar{D}, K=D \\)<br/>`,
+        `\\( J=D, K=\\bar{D} \\)<br/>`,
+        `\\( J=1, K=\\bar{D} \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution">
+
+
+
+
+
+</div>`
+    },
+  ]
+});
+
+
 
 
 
