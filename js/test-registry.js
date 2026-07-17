@@ -4624,6 +4624,227 @@ registerTest({   // go classes cse topic wise test degital logic-1
   ]
 });
 
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Digital Logic-2",
+  date: "July 07, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following combinational circuit using a decoder and OR gates, implementing three Boolean functions \$\\text{F}_{1}, \\text{F}_{2}, \\text{F}_{3}:\$<br/> <strong><img alt="" height="288" src="images/img_1000.png" width="624"/></strong><br/> For how many input combinations \$(x,y,z),\$ at least two of these boolean functions are high?`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An \$8 \\times 1\$ multiplexer has inputs \$\\text{A, B}\$ and \$\\text{C}\$ connected to the selection inputs \$\\text{S}_{2}(\\text{MSB}), \\text{S}_{1}\$, and \$\\text{S}_{0}(\\text{LSB})\$ respectively. The data inputs through \$I_{0}\$ through \$\\mathrm{I}_{7}\$ are as follows: \$\$\\mathrm{I}_{1}=\\mathrm{I}_{2}=\\mathrm{I}_{4}=0 ; \\mathrm{I}_{3}=\\mathrm{I}_{5}=1 ; \\mathrm{I}_{0}=\\mathrm{I}_{7}=\\mathrm{D} ; \\;\\text{and}\\; \\mathrm{I}_{6}=\\overline{\\text{D}}\$\$ Consider the Boolean function \$\\text{F(A, B, C, D)}\$ that this multiplexer implements. How many minterms of \$F\$ are there for which \$\\text{F}\$ is \$1?\$ `,
+      image: "",
+      options: [
+      ],
+      answer: 7,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p><strong><img alt="" height="304" src="images/img_1001.png" width="624"/></strong><br/> The figure above implements the Boolean function:</p>`,
+      image: "",
+      options: [
+        `\$\\mathrm{F}(\\mathrm{x}, \\mathrm{y}, \\mathrm{z})=\\Sigma(2,3,5,6)\$`,
+        `\$\\mathrm{F}(\\mathrm{x}, \\mathrm{y}, \\mathrm{z})=\\Sigma(3,4,6,7)\$`,
+        `\$\\mathrm{F}(\\mathrm{x}, \\mathrm{y}, \\mathrm{z})=\\Sigma(1,3,6,7)\$`,
+        `\$\\mathrm{F}(\\mathrm{x}, \\mathrm{y}, \\mathrm{z})=\\Sigma(0,2,4,6)\$`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<strong><img alt="" height="275" src="images/img_1002.png" width="624"/></strong><br/> The circuit above is to be used to implement the function \$\\mathrm{z}=\\mathrm{f}(\\mathrm{A}, \\mathrm{B})=\\overline{\\text{A}}+\\mathrm{B}\$ . Inputs \$\\text{I}\$ and \$\\mathrm{J}\$ can be selected from the set \$\\{0,1, \\mathrm{~B}, \\overline{\\text{B}}\\}\$. </p> <p>What values should be chosen for \$\\text{I}\$ and \$\\text{J} ?\$`,
+      image: "",
+      options: [
+        `\$\\text{I}=0, \\text{J}=\\text{B}\$`,
+        `\$\\text{I}=1, \\text{J}=\\text{B}\$`,
+        `\$\\text{I}=\\text{B}, \\text{J}=1\$`,
+        `\$\\text{I}=\\overline{\\text{B}}, \\text{J}=0\$`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is the correct function for Full adder where inputs ' \$a\$ ' and ' \$b\$' are the numbers added, and input ' \$c\$' is the carry-in. Also, ' \$s\$' and ' \$co\$' are sum and carry out, respectively. `,
+      image: "",
+      options: [
+        `\$c o=b c+a c+a b ; s=a\$ xor \$b\$ xor \$c\$`,
+        `\$c o=b ' c+a ' c+a b ; s=a\$ xor b xor \$c\$`,
+        `\$c o=b c+a c+a ' b ' ; s=a\$ xor b xor \$c\$`,
+        `\$c o=b c+a c+a b ; s=(a b)\$ xor \$c\$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `As shown in the three diagrams below, device FA makes use of Two copies of device HA, and device D makes use of four copies of device FA. Assume that all basic logic gates(AND, OR, NOT, XOR gate) have the same delay T.<br/> <strong><img alt="" height="603" src="images/img_1003.png" width="624"/></strong><br/> If all inputs to device D become available simultaneously, which output will be available last? `,
+      image: "",
+      options: [
+        `\$\\text{S}_{1}\$`,
+        `\$\\text{S}_{2}\$`,
+        `\$\\text{S}_{3}\$`,
+        `They will all be available simultaneously.`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `As shown in the three diagrams below, device FA makes use of Two copies of device HA, and device D makes use of four copies of device FA. Assume that all basic logic gates(AND, OR, NOT, XOR gate) have the same delay T.<br/> <br/> <strong><img alt="" height="603" src="images/img_1004.png" width="624"/></strong><br/> If all inputs to device D become available simultaneously, the delay before \$S_2\$ must be valid is \$kT,\$ then what is \$k?\$ `,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<strong><img alt="" height="297" src="images/img_1005.png" width="373"/></strong><br/> The logic circuit above is used to compare two unsigned \$2\$-bit numbers, </p> <p> \$\\mathrm{X}_{1} \\mathrm{X}_{0}=\\mathrm{X}\$ and \$\\text{Y}_{1} \\text{Y}_{0}=\\text{Y}\$, where \$\\text{X}_{0}\$ and \$\\text{Y}_{0}\$ are the least significant bits. (A small circle on any line in a logic diagram indicates logical NOT.) </p> <p>Which of the following always makes the output \$\\text{Z}\$ have the value \$1?\$`,
+      image: "",
+      options: [
+        `\$\\text{X}>\\text{Y}\$`,
+        `\$\\text{X}<\\text{Y}\$`,
+        `\$\\text{X} \\neq \\text{Y}\$`,
+        `\$\\text{X} \\geq \\text{Y}\$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<strong><img alt="" height="181" src="images/img_1006.png" width="600"/></strong><br/> Above circuit represents`,
+      image: "",
+      options: [
+        `\$2 \\times 1\$ MUX with \$\\text{A, B}\$ as input lines and \$\\text{C}\$ as a select line`,
+        `\$4 \\times 1\$ MUX with \$\\text{A, B}\$ as input lines and \$\\text{C}\$ as a select line`,
+        `\$2 \\times 1\$ MUX with \$\\text{A, C}\$ as input lines and \$\\text{B}\$ as a select line`,
+        `\$4 \\times 1 \\mathrm{MUX}\$ with \$\\mathrm{A}, \\mathrm{C}\$ as input lines and \$\\mathrm{B}\$ as a select line`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following combinational circuit using a decoder and OR gates, implementing three Boolean functions \$\\text{F}_1, \\text{F}_2, \\text{F}_3:\$<br/> <strong><img alt="" height="284" src="images/img_1007.png" width="624"/></strong><br/> Which of the following is/are correct boolean expressions for these boolean functions? `,
+      image: "",
+      options: [
+        `\$\\mathrm{F}_{1}=\\mathrm{x}^{\\prime} \\mathrm{y}^{\\prime} \\mathrm{z}+\\mathrm{xz'}\$`,
+        `\$\\mathrm{F}_{2}=\\mathrm{x}^{\\prime} \\mathrm{yz'}\$ \$+\\mathrm{xy}\$ '`,
+        `\$\\mathrm{F}_{3}=\\mathrm{xyz'}+\\mathrm{xz}\$`,
+        `\$\\mathrm{F}_{3} =&nbsp;\\mathrm x' y z +&nbsp;\\mathrm x y\$`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Consider the following combinational circuit:<br/> <strong><img alt="" height="155" src="images/img_1008.png" width="472"/></strong><br/> By adding which term to this circuit, it will be free from "Static- \$1\$ Hazard"? `,
+      image: "",
+      options: [
+        `\$X Z\$`,
+        `\$X Z'\$`,
+        `\$X Y^{\\prime} Z+X Y Z\$`,
+        `\$X Y Z\$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `We design a comparator circuit that takes two \$4\$-bit words \$a_{3} a_{2} a_{1} a_{0}\$ and \$b_{3} b_{2} b_{1} b_{0}\$ as inputs, and generates one output \$f\$ which is \$1\$ iff the two words are identical, i.e. \$a_{i}=b_{i, \\text { for all four bits }}\$ \$(i=0,1,2,3)\$. Then which of the following is NOT a correct expression for \$f?\$`,
+      image: "",
+      options: [
+        `\$\\overline{\\left(a_{3} \\oplus b_{3}\\right)+\\left(a_{2} \\oplus b_{2}\\right)+\\left(a_{1} \\oplus b_{1}\\right)+\\left(a_{0} \\oplus b_{0}\\right)}\$`,
+        `\$\\left(a_{3} \\odot b_{3}\\right)\\left(a_{2} \\odot b_{2}\\right)\\left(a_{1} \\odot b_{1}\\right)\\left(a_{0} \\odot b_{0}\\right)\$`,
+        `\$\\left(a_{3} \\odot b_{3}\\right)+\\left(a_{2} \\odot b_{2}\\right)+\\left(a_{1} \\odot b_{1}\\right)+\\left(a_{0} \\odot b_{0}\\right)\$`,
+        `\$\\left(\\overline{a_{3}} \\oplus b_{3}\\right)\\left(\\overline{a_{2}} \\oplus b_{2}\\right)\\left(\\overline{a_{1}} \\oplus b_{1}\\right)\\left(\\overline{a_{0}} \\oplus b_{0}\\right)\$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `A multiplexer, shown below on the right, has \$6\$ inputs, \$S_0, S_1, A, B, C\$, and \$D.\$ The truth table on the left describes its function.<br/> <strong><img alt="" height="251" src="images/img_1009.png" width="624"/></strong><br/> It is desired to implement the function \$F=(X \\oplus Y) \\oplus Z\$ using the multiplexer. If \$X\$ is applied to \$S_{0}\$, and \$Y\$ is applied to \$S_{1}\$, what inputs should be applied to \$A, B, C\$ and \$D\$ to realize the function \$F\$? `,
+      image: "",
+      options: [
+        `\$A=B=C=D=Z\$`,
+        `\$A=X \\oplus Y, B=X \\oplus Z, C=Y \\oplus Z, D=Z\$`,
+        `\$\\mathrm{A}=\\mathrm{D}=\\mathrm{Z} ; \\mathrm{B}=\\mathrm{C}=\\overline{Z}\$`,
+        `the function \$F\$ can not be realized with any of the inputs shown above.`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<strong><img alt="" height="270" src="images/img_1010.png" width="464"/></strong><br/> The \$64 K\$ address space of a certain microcomputer is accessed by address signals \$A_{0}\$. \$A_{1}, \\ldots, A_{14}, A_{15}\$ (Where \$A_{0}\$ is the least significant bit and \$A_{15}\$ is the most significant bit) and is divided equally among read-only memory(ROM), read-write memory(RAM), and input-output registers (I/O) by means of the decoder and gates as shown above.<br/> Note that only the three high order outputs of the decoder are used. Output \$i(0 \\leq i \\leq 7)\$ of the decoder is \$1\$ if and only if the binary value of the inputs \$A_{15} A_{14} A_{13}\$ is \$i\$.<br/> Which of the following correctly indicates the beginning and ending hexadecimal addresses of the three portions of the address space? `,
+      image: "",
+      options: [
+        `\$\\text{ROM (0000 - 3FFF), RAM ( 4000 - DFFF ), I/O ( E000 - FFFF )}\$`,
+        `\$\\text{ROM (0000 - 9FFF), RAM ( A000 - DFFF ), I/O ( E000 - FFFF )}\$`,
+        `\$\\text{ROM (A000 - DFFF), RAM ( 0000 - 9FFF ), I/O ( E000 - FFFF )}\$`,
+        `\$\\text{ROM (4000 - 4FFF), RAM ( 6000 - FFFF ), I/O ( 0000 - 3FFF )}\$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<strong><img alt="" height="237" src="images/img_1011.png" width="262"/></strong><br/> The figure above shows part of a CPU with parallel data paths \$A, B, F, G\$ and \$H\$. The information on these paths is interpreted as integers in two's complement number notation. The four control signals \$x, y, z\$, and (the low-order carry-in) \$c_{0}\$, come from a control unit and cause the boxes in the figure to implement the following functions:<br/> \$\$ F=\\overline{x} A \\vee x B ; G=y B \\oplus z ; H=F+G+c_{0} \$\$<br/> Where \$V\$ is bitwise \$OR, \\oplus\$ is bitwise exclusive \$O R\$, the bitwise AND is denoted by juxtaposition, and \$+\$ is arithmetic plus.<br/> Which of the following values of \$H\$ CANNOT be realized by some combination of the control signals and \$c_{0}\$? `,
+      image: "",
+      options: [
+        `\$A\$`,
+        `\$A+B+1\$`,
+        `\$A-B\$`,
+        `\$A-B+1\$`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+  ]
+});
+
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1
   series: "cse-gate-2026-pyq",
@@ -16804,7 +17025,7 @@ registerTest({        //made easy 2026 ee topic wise test engineering mathematic
   ]
 });
 
-registerTest({
+registerTest({       //made easy 2026 ee topic wise test general aptitude-1
   series: "ee-gate-pyq",
   name: "TWT - General Aptitude-1",
   date: "July 15, 2026",
@@ -17060,7 +17281,7 @@ registerTest({
   ]
 });
 
-registerTest({
+registerTest({       //made easy 
   series: "ee-gate-pyq",
   name: "TWT - General Aptitude-2",
   date: "July 15, 2026",
