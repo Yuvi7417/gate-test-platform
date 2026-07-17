@@ -543,7 +543,7 @@ function renderTestList(t, filter) {
       from: s[1],
       till: formatDate(t.endDate),
       duration: isTopicwise ? "45 Mins" : "90 Mins",
-      questions: isTopicwise ? 17 : 33,
+      questions: s[2] !== undefined ? s[2] : (isTopicwise ? 17 : 33),
       status: "unattempted",
       score: null,
     };

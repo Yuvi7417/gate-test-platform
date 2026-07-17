@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         s.title.toLowerCase() === config.series.toLowerCase()
       );
       if (series) {
-        series.schedule.push([config.name, config.date]);
+        series.schedule.push([config.name, config.date, config.questions ? config.questions.length : 0]);
       } else {
         console.warn("Could not find test series for:", config.series);
       }
