@@ -4852,12 +4852,12 @@ registerTest({
   date: "July 08, 2026",
   questions: [
     {
-      marks: 1.0,
+      marks: 1,
       neg: 0.33,
       type: "MCQ",
       text: `A flip-flop can be constructed from two NAND gates connected as follows:<br/>
-<strong><img alt = "" height = "174" src = "js/questions/twt-digital-logic-3/img_1.png" width = "323"/></strong><br/>
-What restriction must be placed on S and R so that P always equals Q&#773;?`,
+      <strong><img alt = "" height = "174" src = "js/questions/twt-digital-logic-3/img_1.png" width = "323"/></strong><br/>
+      What restriction must be placed on S and R so that P always equals Q&#773;?`,
       image: "",
       options: [
         `we do not allow the R = S = 0 state.`,
@@ -4869,11 +4869,10 @@ What restriction must be placed on S and R so that P always equals Q&#773;?`,
       solution: ``
     },
     {
-      marks: 1.0,
-      neg: 0.0,
+      marks: 1,
+      neg: 0,
       type: "MSQ",
-      text: `Consider the following decimal numbers. Which of the following decimal numbers Do Not have an exact
-representation in binary notation?`,
+      text: `Consider the following decimal numbers. Which of the following decimal numbers Do Not have an exact representation in binary notation?`,
       image: "",
       options: [
         `U  =  0.1`,
@@ -4885,14 +4884,10 @@ representation in binary notation?`,
       solution: ``
     },
     {
-      marks: 1.0,
-      neg: 0.0,
+      marks: 1,
+      neg: 0,
       type: "NAT",
-      text: `A D flip-flop has a hold time of 3  ns, a setup time of 5  ns, and a propagation delay
-from the rising edge of the clock to the change in flip- flop output in the range of 6 to 12  ns. A
-comparator (combinational circuit) unit delay is 2  ns.<br/>
-What is the shortest clock period(in ns) for proper operation of the circuit below (i.e. the circuit
-should not violate the timing constraints) ?<strong><img alt = "" height = "289" src = "js/questions/twt-digital-logic-3/img_2.png" width = "624"/></strong>`,
+      text: `A D flip-flop has a hold time of 3  ns, a setup time of 5  ns, and a propagation delay from the rising edge of the clock to the change in flip- flop output in the range of 6 to 12  ns. A comparator (combinational circuit) unit delay is 2  ns.<br/> What is the shortest clock period(in ns) for proper operation of the circuit below (i.e. the circuit should not violate the timing constraints) ?<strong><img alt = "" height = "289" src = "js/questions/twt-digital-logic-3/img_2.png" width = "624"/></strong>`,
       image: "",
       options: [
       ],
@@ -4900,7 +4895,7 @@ should not violate the timing constraints) ?<strong><img alt = "" height = "289"
       solution: ``
     },
     {
-      marks: 1.0,
+      marks: 1,
       neg: 0.33,
       type: "MCQ",
       text: `The figure below shows a 4-bit, right shift register, and a NOR gate. If the register outputs
@@ -4917,7 +4912,7 @@ should not violate the timing constraints) ?<strong><img alt = "" height = "289"
       solution: ``
     },
     {
-      marks: 1.0,
+      marks: 1,
       neg: 0.33,
       type: "MCQ",
       text: `Which of the following flip flops can be made to emulate all other flip flops without any additional
@@ -4933,8 +4928,8 @@ hardware (except probably a NOT gate)?`,
       solution: ``
     },
     {
-      marks: 2.0,
-      neg: 0.0,
+      marks: 2,
+      neg: 0,
       type: "MSQ",
       text: `A new flip-flop, called AB flip-flop, is created as shown below. What does the flip-flop do?<br/>
 <p style = "text-align:center"><img alt = "image" height = "200" src = "js/questions/twt-digital-logic-3/img_4.png" width = "559"/>`,
@@ -4949,7 +4944,7 @@ hardware (except probably a NOT gate)?`,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `What will the output sequence of the following JK flip flop be after 7 clock pulses?<br/>
@@ -4965,7 +4960,7 @@ hardware (except probably a NOT gate)?`,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `An XY flip-flop operates as indicated by the following table :<br/>
@@ -4989,7 +4984,7 @@ Q ?`,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `Consider the circuit given below with initial state A<sub>1</sub> = 1, A<sub>2</sub> = A<sub>0</sub> = 0. The state of the circuit is
@@ -5007,7 +5002,7 @@ Which one of the following is the correct state sequence of the circuit?`,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `Analyze the following asynchronous network. Starting in the total stable state for which X  =  Z  =  0,
@@ -5024,7 +5019,7 @@ what will be the output sequences Z when the input sequence is X  =  0, 1, 0, 1,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `Two D Flip flops are connected as a synchronous counter that goes through the following sequence<br/>
@@ -5042,7 +5037,7 @@ Inputs D<sub>0</sub> and D<sub>1</sub> should be connected as (Flip flop D<sub>1
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `<strong><img alt = "image" height = "319" src = "js/questions/twt-digital-logic-3/img_9.png" width = "552"/></strong><br/>
@@ -5058,7 +5053,7 @@ The pattern detected by the above circuit is?`,
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `The figure below shows a control circuit, consisting of a 3 -bit register(all the three flip flops of
@@ -5078,7 +5073,7 @@ of the following is a correct set of equations to be implemented by the combinat
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `A 3 bit down counter is used to control the output of the multiplexer as shown in the figure. The
@@ -5096,7 +5091,7 @@ sequence:(Output of mux is controlled by select lines, S1S0)<br/>
       solution: ``
     },
     {
-      marks: 2.0,
+      marks: 2,
       neg: 0.67,
       type: "MCQ",
       text: `Consider the circuit below. If ‘in’ and ‘out’ were both 0, to begin with, and ‘in’ suddenly becomes
@@ -35956,6 +35951,669 @@ registerTest({
 });
 
 registerTest({
+  series: "cs-gate-classes",
+  name: "SWT - Digital logic-1",
+  date: "July 17, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the logic gates in Column
+A with their equivalents in Column
+B.
+<br/>
+<p style="text-align:center"><img alt="" height="248" src="js/questions/test_20260717_131501/img_1.png" width="336"/></p>`,
+      image: "",
+      options: [
+        `P-2, Q-4, R-1, S-3`,
+        `P-4, Q-2, R-1, S-3`,
+        `P-2, Q-4, R-3. S-1`,
+        `P-4, Q-2, R-3, S-1`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.0,
+      type: "NAT",
+      text: `Consider the following logic circuit:<br/>
+<p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_2.png" width="398"/><br/>The number of input combinations
+$(\mathrm{A, \mathrm{B, \mathrm{C)$ for which
+the output
+F becomes
+$1$ is ?</p>`,
+      image: "",
+      options: [],
+      answer: 4,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A decoder may be described as`,
+      image: "",
+      options: [
+        `Multiple-input single-output logic circuit which converts coded inputs into a coded output where the\n                    input and output codes are different.`,
+        `Single-input single-output logic circuit which converts the coded input into a coded output where\n                    the input and output codes are different.`,
+        `Multiple-input multiple-output logic circuit which converts coded inputs into coded outputs where\n                    the input and output codes are different.`,
+        `Single-input multiple-output logic circuit which converts the coded input into coded outputs where\n                    the input and output codes are different.`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A bulb in a staircase has two switches, one switch being at the ground floor and the other one at the
+first floor. The bulb can be turned ON and also can be turned OFF by any one of the switches
+irrespective of the state of the other switch. The logic of switching of the bulb resembles.`,
+      image: "",
+      options: [
+        `an AND gate`,
+        `an OR gate`,
+        `an XOR gate`,
+        `a NAND gate`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `
+X = 01110$ and
+Y = 11001$ are two
+$5$-bit binary numbers represented in two's
+complement format. The sum of
+X and
+Y represented in two's complement
+format using
+$6$ bits is`,
+      image: "",
+      options: [
+        `$100111$`,
+        `$001000$`,
+        `$000111$`,
+        `$101001$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The Boolean expression
+$Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D + \overline{\text{A} \text{ B C } \overline{D} + \text{A}  \overline{\text{B}  \overline{\text{C} }}  \text{D}  +  A B } \overline{\text{C}  \overline{D}}
+can be minimized to`,
+      image: "",
+      options: [
+        `$Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D + \overline{\text{A}  \text{B}  \overline{\text{C} + \text{A}  \overline{\text{C}  D$`,
+        `$Y = \overline{\text{A}  \overline{\text{B}  \overline{\text{C}  D +  \text{B} C  \overline{D} + \text{A}  \overline{\text{B}  \overline{\text{C}  D$`,
+        `$Y = \overline{\text{A}  \text{B} C  \overline{D} + \overline{\text{B}  \overline{\text{C}  \text{D}  +  A  \overline{\text{B}  \overline{\text{C}  D$`,
+        `$Y = \overline{\text{A}  \text{B} C  \overline{D} + \overline{\text{B}  \overline{\text{C} \text{ D  +  A B  \overline{\text{C}  \overline{D}`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the following circuit,
+X is given by
+<br/>
+<p style="text-align:center"><img alt="" height="185" src="js/questions/test_20260717_131501/img_3.png" width="375"/></p>`,
+      image: "",
+      options: [
+        `X = \text{A}  \overline{\text{B}  \overline{\text{C} + \overline{\text{A}  \text{B}  \overline{\text{C} + \overline{\text{A}  \overline{\text{B}  \text{C} + \text{A} B C`,
+        `X = \overline{\text{A}  \text{B} C  +  A  \overline{\text{B}  \text{C}  +  A B  \overline{\text{C} + \overline{\text{A}  \overline{\text{B}  \overline{\text{C}`,
+        `X  =  A B  +  B C  +  A C`,
+        `X = \overline{\text{A}  \overline{\text{B} + \overline{\text{B}  \overline{\text{C} + \overline{\text{A}  \overline{\text{C}`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two
+$D$ Flip flops are connected as a
+synchronous counter that goes through following sequence<br/>
+<script id="MathJax-Element-31" type="math/tex; mode = display"> 00 &rarr; 01 &rarr; 11 &rarr; 10 &rarr; 00 </script>
+<br/>Inputs
+$D_0$ and
+$D_1$ should be connected as
+$? ($Flip flop
+$D_1$ provides the
+MSB)
+<br/>
+<p style="text-align:center"><img alt="" height="171" src="js/questions/test_20260717_131501/img_4.png" width="371"/></p>`,
+      image: "",
+      options: [
+        `$\overline{\text{Q}}_1$, ' and ', Q_0$`,
+        `$\overline{\text{Q}}_0$, ' and ', Q_1$`,
+        `$\overline{\text{Q}}_1 \text{Q_0$, ' and ', $\overline{\text{Q}}_0 \text{Q_1$`,
+        `$\overline{\text{Q}}_0 \overline{\text{Q}}_1$                    and ', Q_0 \text{Q_1$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the
+$ \text{2–bit multiplexer
+(MUX) shown in the figure. For
+OUTPUT to be the
+XOR of
+C and
+$D,$ the values for
+$A&lt;sub&gt;0&lt;/sub&gt;, A&lt;sub&gt;1&lt;/sub&gt;, A&lt;sub&gt;2&lt;/sub&gt;,$ and
+$A&lt;sub&gt;3&lt;/sub&gt;$ are _______________.
+<br/>
+<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_5.png" width="350"/></p>`,
+      image: "",
+      options: [
+        `$A&lt;sub&gt;0&lt;/sub&gt;  =  0, A&lt;sub&gt;1&lt;/sub&gt;  =  0, A&lt;sub&gt;2&lt;/sub&gt;  =  1, A&lt;sub&gt;3&lt;/sub&gt;  =  1$`,
+        `$A&lt;sub&gt;0&lt;/sub&gt;  =  1, A&lt;sub&gt;1&lt;/sub&gt;  =  0, A&lt;sub&gt;2&lt;/sub&gt;  =  1, A&lt;sub&gt;3&lt;/sub&gt;  =  0$`,
+        `$A&lt;sub&gt;0&lt;/sub&gt;  =  0, A&lt;sub&gt;1&lt;/sub&gt;  =  1, A&lt;sub&gt;2&lt;/sub&gt;  =  1, A&lt;sub&gt;3&lt;/sub&gt;  =  0$`,
+        `$A&lt;sub&gt;0&lt;/sub&gt;  =  1, A&lt;sub&gt;1&lt;/sub&gt;  =  1, A&lt;sub&gt;2&lt;/sub&gt;  =  0, A&lt;sub&gt;3&lt;/sub&gt;  =  0$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What is the minimum (most negative) value of a
+32-bit two's complement integer?`,
+      image: "",
+      options: [
+        `$-2^{32`,
+        `$-2^{32} + 1$`,
+        `$-2^{31`,
+        `$-2^{31} + 1$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Consider the Boolean function
+$F(w,x,y,z)  =  wy  +  xy  +  \overline{w}}\:xyz  +  \overline{w}}\:\overline{x}}\:y  +  xz  +  \overline{x}}\:\overline{y}}\:\overline{z}}.$
+Which one of  the following is the complete set of essential prime implicants?`,
+      image: "",
+      options: [
+        `$w,y,xz,\overline{x}}\:\overline{z}`,
+        `$w,y,xz$`,
+        `$y, \overline{x}}\:\overline{y}}\:\overline{z}`,
+        `$y,xz,\overline{x}}\:\overline{z}`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `
+P, Q},$ and
+R are the decimal integers corresponding
+to the
+$4$-bit binary number
+$1100$ considered in signed magnitude,
+$1$’s complement, and
+$2$’s complement representations,
+respectively. The
+$6$-bit
+$2$’s complement representation of
+(P + Q + R) is  ________.`,
+      image: "",
+      options: [
+        `$110101$`,
+        `$110010$`,
+        `$111101$`,
+        `$111001$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<span id="cke_bm_96S" style="display: none;"> </span> <br/>
+The circuit below uses two
+$2$-to-
+$4$ decoders, and inverter, and an OR gate to
+implement a function
+F(\mathrm{X, \mathrm{Y, \mathrm{Z})$.
+
+X is the most significant bit.
+<br/>
+<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_6.png"/><br/>
+F(\mathrm{X, \mathrm{Y, \mathrm{Z})$
+can be expressed as (Encircle all that applies):</p>`,
+      image: "",
+      options: [
+        `$\sum \mathrm{m}(0,3,4,6)$`,
+        `$\sum \mathrm{m}(0,2,4,7)$`,
+        `$\prod \text{M}(1,3,5,6)$`,
+        `$\prod \text{M}(1,2,5,7)$`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<span id="cke_bm_107S" style="display: none;"> </span> <br/>
+A demultiplexer can be implemented using a decoder circuit.<br/>For example, the
+$2$-to-
+$4$ decoder can be used as a
+$1$-to-
+$4$ demultiplexer. Which input of decoder serves
+as the data input for the demultiplexer?<br/>
+<script id="MathJax-Element-93" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;">
+<tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr>
+<tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr>
+<tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr>
+</table> </script>
+
+<script id="MathJax-Element-94" type="math/tex; mode = display">\text{(a) Truth Table of Decoder}</script>
+<br/>
+<br/>
+<p style="text-align:center"><img alt="" height="301" src="js/questions/test_20260717_131501/img_7.png" width="287"/></p>`,
+      image: "",
+      options: [
+        `$w&lt;sub&gt;0&lt;/sub&gt;$`,
+        `E}&lt;sub&gt;n&lt;/sub&gt;$`,
+        `$w&lt;sub&gt;1&lt;/sub&gt;$`,
+        `We can not implement a demultiplexer using a decoder.`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `If
+$(1235)&lt;sub&gt;x&lt;/sub&gt;\: = \:(3033)&lt;sub&gt;y&lt;/sub&gt;$, where
+$x$ and
+$y$ indicate the bases of the corresponding
+numbers, then`,
+      image: "",
+      options: [
+        `$x\: = \:7$, ' and ', $y\: = \:5$`,
+        `$x\: = \:8$, ' and ', $y\: = \:6$`,
+        `$x\: = \:6$, ' and ', $y\: = \:4$`,
+        `$x\: = \:9$, ' and ', $y\: = \:7$, '\xa0\n`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `A function of Boolean variables
+$X, Y$ and
+$Z$ is expressed in terms of the min-terms as
+
+<script id="MathJax-Element-111" type="math/tex; mode = display">F(X, Y, Z)  =  \Sigma (1, 2, 5, 6, 7)</script>
+<br/>
+Which one of the product of sums given below is equal to the function
+$F(X, Y, Z)?$`,
+      image: "",
+      options: [
+        `$(\overline{X}  +  \overline{Y}  +  \overline{Z}}} )\cdot(\overline{X}  +  Y  +  Z)\cdot(X  +  \overline{Y}  +  \overline{Z}}} )$`,
+        `$(X  +  Y  +  Z)\cdot(X  +  \overline{Y}  +  \overline{Z}}} )\cdot(\overline{X}  +  Y  +  Z)$`,
+        `$(\overline{X}  +  \overline{Y}  +  Z)\cdot(\overline{X}  +  Y  +  \overline{Z}}} )\cdot(X  +  \overline{Y}  +  Z)\cdot(X  +  Y  +  \overline{Z}}} )\cdot(X  +  Y  +  Z)$`,
+        `$(X  +  Y  +  \overline{Z}}} )\cdot(\overline{X}  +  Y  +  Z)\cdot(\overline{X}  +  Y  +  \overline{Z}}} )\cdot(\overline{X}  +  \overline{Y}  +  Z)\cdot(\overline{X}  +  \overline{Y}  +  \overline{Z}}})$`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<span id="cke_bm_93S" style="display: none;"> </span> <br/>
+The combinatorial circuit shown below takes three 1-bit inputs: A, B, and C, and produces one 1-bit
+output. The relationship between the inputs and the output is shown below as a truth table. The circuit
+contains two identical, unknown gates
+X.<br/><img alt="" height="407" src="js/questions/test_20260717_131501/img_8.png" width="1022"/><br/>What is
+gate
+$X$ ?`,
+      image: "",
+      options: [
+        `AND`,
+        `XNOR`,
+        `NAND`,
+        `XOR`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `A logic circuit implements the boolean function
+$F = \overline{X} \cdot Y + X \cdot \overline{Y} \cdot \overline{Z}}. It
+is found that the input combination
+$X = Y = 1$ can never occur. Taking this into
+account, a simplified expression for
+$F$ is given by`,
+      image: "",
+      options: [
+        `$\overline{X} + \overline{Y} \cdot \overline{Z}}`,
+        `$X + Z$`,
+        `$X + Y$`,
+        `$Y + X \cdot \overline{Z}}`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.0,
+      type: "MSQ",
+      text: `Consider a Boolean gate
+(D) where the output
+$Y$ is related to the inputs
+$A$ and
+$B$ as,
+$Y  =  A  +  \overline{B},$ where
+$ + $ denotes logical
+OR operation. The Boolean inputs
+$’0’$ and
+$’1’$ are also available separately. Using
+instances of only
+$D$ gates and inputs
+$’0’$ and
+$’1’,$ _______________ (select the correct
+option(s)).`,
+      image: "",
+      options: [
+        `NAND, ' logic can be implemented\n`,
+        `OR, ' logic cannot be implemented\n`,
+        `NOR, ' logic can be implemented\n`,
+        `AND, ' logic cannot be implemented\n`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Assuming that all flip-flops are in reset condition initially. the count sequence observed at
+Q}_\text{A} in the circuit shown is
+<br/>
+<p style="text-align:center"><img alt="" height="204" src="js/questions/test_20260717_131501/img_9.png" width="576"/></p>`,
+      image: "",
+      options: [
+        `$0010111 ...$`,
+        `$0001011 ...$`,
+        `$0101111 ...$`,
+        `$0110100 ...$`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `The Boolean function realized by the logic circuit shown is<br/>
+<p style="text-align:center"><img alt="" height="285" src="js/questions/test_20260717_131501/img_10.png" width="528"/><br/></p>`,
+      image: "",
+      options: [
+        `F = \Sigma&lt;sub&gt;m&lt;/sub&gt;(0,1,3,5,9,10.14)$`,
+        `F = \Sigma&lt;sub&gt;m&lt;/sub&gt;(2,3,5,7,8,12,13)$`,
+        `F = \Sigma&lt;sub&gt;m&lt;/sub&gt;(1,2,4,5,11,14,15)$`,
+        `F = \Sigma_m(2,3,5,7,8,9 ,12)$`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `In the circuit diagram shown below, the logic gates operate with a supply voltage of
+$1 \mathrm{~V. NAND and XNOR have
+$200 \mathrm{~ps and
+$400 \mathrm{~ps input-to-output delay,
+respectively.
+<br/>At time
+$t = \text{T, A(t) = 0,\text{B(t) = 1$ and
+Z}(t) = 0$. When the inputs are changed to
+
+A(t) = 1, \text{B(t) = 0$ at
+$t = 2\text{T},$ a
+$1 \mathrm{~V pulse is observed at
+Z. The pulse width of the
+$1 \mathrm{~V pulse is _______
+ps}.$
+<br/>
+<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_11.png" width="300"/></p>`,
+      image: "",
+      options: [
+        `$100$`,
+        `$200$`,
+        `$400$`,
+        `$600$`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `An synchronous finite state machine (FSM) with input
+“A” has the function described in the
+following state diagram and is to be implemented using two synchronously clocked
+D-Type flip-flops
+$D_1, D_2$ as the state registers.
+<br/>
+<p style="text-align:center"><img alt="" height="332" src="js/questions/test_20260717_131501/img_12.png" width="435"/><br/>The Flip-Flop outputs are
+$\left\{\text{Q}_2, \text{Q_1\right\ where
+
+Q_1, \text{Q}_2$ are output of
+$D_1, D_2$ respectively and
+Q_1$ represents the least significant
+bit of the FSM output.
+<br/>
+Then which of the following is true?</p>`,
+      image: "",
+      options: [
+        `$D_1 = \text{A, D_2 = \text{Q_1$`,
+        `$D_1 = \text{Q}_2, D_2 = \text{A`,
+        `$D_1 = \text{Q}_2, D_2 = \text{Q_1 \oplus \text{A`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `The following binary values were applied to the
+X and
+Y inputs of the
+NAND latch shown in the figure in the
+sequence indicated below:<br/>
+<script id="MathJax-Element-179" type="math/tex; mode = display"> \mathrm{X = 0, \mathrm{Y = 1 ; \qquad \quad \mathrm{X = 0, \mathrm{Y = 0 ; \qquad \quad \mathrm{X = 1, \mathrm{Y = 1 \text {. } </script>
+<br/>The corresponding stable
+P, Q outputs will be
+<br/>
+<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_13.png" width="300"/><br/></p>`,
+      image: "",
+      options: [
+        `P = 1, \mathrm{Q} = 0 ; \quad \quad \mathrm{P = 1, \mathrm{Q} = 0 ; \qquad \qquad \qquad \qquad \mathrm{P = 1, \mathrm{Q} = 0$                    or ', P = 0, \mathrm{Q} = 1$`,
+        `P = 1, \mathrm{Q} = 0 ; \quad \quad \mathrm{P = 0, \mathrm{Q} = 1$                    or ', P = 0, \mathrm{Q} = 1 ; \quad  \mathrm{P = 0, \mathrm{Q} = 1$`,
+        `P = 1, \mathrm{Q} = 0 ; \quad \quad \mathrm{P = 1, \mathrm{Q} = 1 ; \qquad \qquad \qquad  \qquad \mathrm{P = 1, \mathrm{Q} = 0$                    or ', P = 0, \mathrm{Q} = 1$`,
+        `P = 1, \mathrm{Q} = 0 ; \quad \quad \mathrm{P = 1, \mathrm{Q} = 1 ; \qquad \qquad \qquad \qquad \mathrm{P = 1, \mathrm{Q} = 1$`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `For the circuit shown, the counter state
+$\left(\mathrm{Q_1 \mathrm{Q_0\right)$ follows
+the sequence
+<br/>
+<p style="text-align:center"><img alt="" height="227" src="js/questions/test_20260717_131501/img_14.png" width="408"/></p>`,
+      image: "",
+      options: [
+        `$00,01,10,11,00, ...$`,
+        `$00,01,10,00,01, ...$`,
+        `$00,01,11,00,01, ...$`,
+        `$00,10,11,00,10, ...$`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Match the Boolean expression with its minimal realization<br/>
+<script id="MathJax-Element-193" type="math/tex; mode = display"> <table border="1" style="border-collapse:collapse; text-align:center;">
+<tr><th>Input(X)</th><th>Input(Y)</th><th>Current State</th><th>Next State</th></tr>
+<tr><td>0</td><td>0</td><td>Q</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>Q</td><td>Q&#773;</td></tr>
+<tr><td>1</td><td>1</td><td>Q</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>Q</td><td>Q</td></tr>
+</table></script>`,
+      image: "",
+      options: [
+        `P-K, Q-L, R-N, S-M`,
+        `P-L, Q-K, R-N, S-M`,
+        `P-L, Q-N, R-M, S-K`,
+        `P-M, Q-K, R-L, S-N`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `In the circuit shown below,
+Y is a
+2-bit} \left(\text{Y_1 \text{Y_0\right)$ output of the
+combinational logic. What is the maximum value of
+Y for any given digital inputs,
+A_1 \text{A_0$ and
+B_1 \mathrm{~B_0?$
+<br/>
+<p style="text-align:center"><img alt="" height="120" src="js/questions/test_20260717_131501/img_15.png" width="363"/></p>`,
+      image: "",
+      options: [
+        `$01$`,
+        `$10$`,
+        `$00$`,
+        `$11$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Input bits
+X and
+Y are added by using the
+combinational logic as shown below.
+S represents the sum of the two bits.
+For a correct implementation of the sum, the signals
+$D_0, D_1, D_2, D_3$
+are, respectively.<br/>
+<p style="text-align:center"><img alt="" height="339" src="js/questions/test_20260717_131501/img_16.png" width="323"/></p>`,
+      image: "",
+      options: [
+        `$1,0,0,1$`,
+        `$0,1,0,1$`,
+        `$1,0,1,1$`,
+        `$0,1,1,0$`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `Let
+$b_q b_{q-1} ... b_0$ be the binary
+representation of integer
+$b$. The integer
+$3$ is a divisor of
+$b$ if and only if`,
+      image: "",
+      options: [
+        `$b_1 = b_0 = 1$`,
+        `The sum of the binary digits ', $b_i$, ' is divisible by ', $3 .$`,
+        `The alternating sum ', $b_0-b_1 + b_2-...$, ' is zero.\n`,
+        `The alternating sum ', $b_0-b_1 + b_2-...$, ' is divisible by ', $3 .$`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `The propagation delays of the
+XOR gate,
+AND gate and multiplexer
+(MUX) in the circuit shown in the
+figure are
+$4 \text{ns} 2 \text{ns} $ and
+$1 \text{ns} $, respectively.
+<br/>
+<p style="text-align:center"><img alt="" src="js/questions/test_20260717_131501/img_17.png"/><br/>
+If all the inputs
+P, Q, R, S and T are applied
+simultaneously and held constant, the maximum propagation delay of the circuit is</p>`,
+      image: "",
+      options: [
+        `$3 \text{ns} $`,
+        `$5 \text{ns} $`,
+        `$6 \text{ns} $`,
+        `$7 \text{ns} $`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+  ]
+});
+
+registerTest({
   series: "da-gate-pyq",
   name: "SWT - Machine Learning",
   date: "July 15, 2026",
@@ -35964,7 +36622,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `A neuron receives two input <em>x</em> <sub>1</sub> is 0.6 and <em>x</em> <sub>2</sub> is 0.4 with weights <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_1.png"/> and bias is 0.2.<br/>The activation function is sigmoid. What will be the output of the neuron? `,
+      text: `A neuron receives two input <em>x</em> <sub>1</sub> is 0.6 and <em>x</em> <sub>2</sub> is 0.4 with weights <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_1.png"/> and bias is 0.2.<br/>The activation function is sigmoid. What will be the output of the neuron?`,
       image: "",
       options: [
         `–0.78`,
@@ -35994,7 +36652,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : ReLU function can be used in the output layers for binary classification.<br/> <em>S</em> <sub>2</sub> : ReLU function is used in the hidden layer of a neural network.<br/>Which of the following is true? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : ReLU function can be used in the output layers for binary classification.<br/> <em>S</em> <sub>2</sub> : ReLU function is used in the hidden layer of a neural network.<br/>Which of the following is true?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36009,7 +36667,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Decision tree pruning decreases training error.<br/> <em>S</em> <sub>2</sub> : Decision tree increases the overfitting.<br/>Which of the following is true? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Decision tree pruning decreases training error.<br/> <em>S</em> <sub>2</sub> : Decision tree increases the overfitting.<br/>Which of the following is true?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36039,7 +36697,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : A model with low bias and low variance is ideal but hard to achieve in practice.<br/> <em>S</em> <sub>2</sub> : Reducing variance often requires increasing bias slightly, which is the essence of the tradeoff.<br/>Which of the following is true? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : A model with low bias and low variance is ideal but hard to achieve in practice.<br/> <em>S</em> <sub>2</sub> : Reducing variance often requires increasing bias slightly, which is the essence of the tradeoff.<br/>Which of the following is true?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36054,7 +36712,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : SVM can handle only non-linear classification.<br/> <em>S</em> <sub>2</sub> : Hard margin can be used when data points are separated outside of the support vector.<br/>Which of the following is correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : SVM can handle only non-linear classification.<br/> <em>S</em> <sub>2</sub> : Hard margin can be used when data points are separated outside of the support vector.<br/>Which of the following is correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36069,7 +36727,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `An MLP has 4 input features, one hidden layer with 6 neurons, and an output layer with 3 neurons.<br/>The total number of trainable parameters is 51, including weights and biases. How many bias terms are in the network? `,
+      text: `An MLP has 4 input features, one hidden layer with 6 neurons, and an output layer with 3 neurons.<br/>The total number of trainable parameters is 51, including weights and biases. How many bias terms are in the network?`,
       image: "",
       options: [
         `7`,
@@ -36084,7 +36742,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The F1-score lies in the range 0 ≤ F1-score ≤ 1, and it is equal to 1 only when both precision and recall are 1.<br/> <em>S</em> <sub>2</sub> : Recall is the ratio of true positives to the total actual positives, and its value lies in the range 0 ≤ Recall ≤ 1.<br/>Which of the following is correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The F1-score lies in the range 0 ≤ F1-score ≤ 1, and it is equal to 1 only when both precision and recall are 1.<br/> <em>S</em> <sub>2</sub> : Recall is the ratio of true positives to the total actual positives, and its value lies in the range 0 ≤ Recall ≤ 1.<br/>Which of the following is correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36099,7 +36757,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Feature selection can help reduce overfitting.<br/> <em>S</em> <sub>2</sub> : Feature extraction can improve performance and capture nonlinear relationships in the data.<br/>Which of the following is/are correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Feature selection can help reduce overfitting.<br/> <em>S</em> <sub>2</sub> : Feature extraction can improve performance and capture nonlinear relationships in the data.<br/>Which of the following is/are correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36174,7 +36832,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : MLP with one hidden layer and non-linear activation is a universal approximation.<br/> <em>S</em> <sub>2</sub> : MLP does not use activation function.<br/>Which of the following statements is correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : MLP with one hidden layer and non-linear activation is a universal approximation.<br/> <em>S</em> <sub>2</sub> : MLP does not use activation function.<br/>Which of the following statements is correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36204,7 +36862,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `In a soft margin SVM, decreasing the regularization parameter <em>C</em> will most likely result in: `,
+      text: `In a soft margin SVM, decreasing the regularization parameter <em>C</em> will most likely result in:`,
       image: "",
       options: [
         `A larger margin and fewer support vectors.`,
@@ -36219,7 +36877,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Data fragmentation increases as the depth of the decision tree increases.<br/> <em>S</em> <sub>2</sub> : Excessive data fragmentation can lead to overfitting in decision trees.<br/>Which of the following is true? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : Data fragmentation increases as the depth of the decision tree increases.<br/> <em>S</em> <sub>2</sub> : Excessive data fragmentation can lead to overfitting in decision trees.<br/>Which of the following is true?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36234,7 +36892,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In agglomerative hierarchical clustering, the process starts with each data point as a separate cluster and merges the closest pairs iteratively.<br/> <em>S</em> <sub>2</sub> : In divisive hierarchical clustering, the algorithm starts with all data points in a single cluster and recursively splits it into smaller clusters.<br/>Which of the following is correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : In agglomerative hierarchical clustering, the process starts with each data point as a separate cluster and merges the closest pairs iteratively.<br/> <em>S</em> <sub>2</sub> : In divisive hierarchical clustering, the algorithm starts with all data points in a single cluster and recursively splits it into smaller clusters.<br/>Which of the following is correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36249,7 +36907,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `An SVM uses the following weight vector:<br/> <br/> <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_5.png"/> <br/> <br/> The total margin (i.e., the distance between two support hyperplanes) is know to be <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_6.png"/> If the one of the support vectors belongs to the positive class and is given as <br><br><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_7.png"/><br><br>Then calculate the bias term b used by the SVM.<br/> `,
+      text: `An SVM uses the following weight vector:<br/> <br/> <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_5.png"/> <br/> <br/> The total margin (i.e., the distance between two support hyperplanes) is know to be <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_6.png"/> If the one of the support vectors belongs to the positive class and is given as <br/><br/><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_7.png"/><br/><br/>Then calculate the bias term b used by the SVM.<br/>`,
       image: "",
       options: [
         `+1`,
@@ -36264,7 +36922,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `The IIT Bombay admission committee uses a model to predict whether a student should be admitted. The confusion matrix for the population is shown below:<br><br><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_11.png"/><br><br>What is the F1-score for the admitted class?`,
+      text: `The IIT Bombay admission committee uses a model to predict whether a student should be admitted. The confusion matrix for the population is shown below:<br/><br/><img alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_11.png"/><br/><br/>What is the F1-score for the admitted class?`,
       image: "",
       options: [
         `0.726`,
@@ -36294,7 +36952,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : LDA assumes that each class has a Gaussian distribution with a shared covariance matrix.<br/> <em>S</em> <sub>2</sub> : LDA always results in nonlinear decision boundaries between the classes.<br/> <em>S</em> <sub>3</sub> : Naive Bayes classification assumes that the features are independent within each class.<br/>Which of the following is true? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : LDA assumes that each class has a Gaussian distribution with a shared covariance matrix.<br/> <em>S</em> <sub>2</sub> : LDA always results in nonlinear decision boundaries between the classes.<br/> <em>S</em> <sub>3</sub> : Naive Bayes classification assumes that the features are independent within each class.<br/>Which of the following is true?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub> and <em>S</em> <sub>2</sub>`,
@@ -36309,7 +36967,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `In a ridge regression model, the residual Sum of Squares (RSS) is 2.7. The model uses a weight<br/> vector <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_13.png"/> = [2, 1, 3], and the regularization parameter λ = 0.2.<br/> What is the total cost function value <em>J</em> (<img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_14.png"/>)? `,
+      text: `In a ridge regression model, the residual Sum of Squares (RSS) is 2.7. The model uses a weight<br/> vector <img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_13.png"/> = [2, 1, 3], and the regularization parameter λ = 0.2.<br/> What is the total cost function value <em>J</em> (<img align="absmiddle" alt="" src="js/questions/subjectwise_test_6_part_syllabus_gate_2026_da_machine_learning/img_14.png"/>)?`,
       image: "",
       options: [
         `4.3`,
@@ -36324,7 +36982,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The approximation error of a polynomial regression model depends on the number of training points.<br/> <em>S</em> <sub>2</sub> : The structural error of a polynomial regression model depends on the number of training point.<br/>Which of the following statements is/are correct? `,
+      text: `Consider the following statements:<br/> <em>S</em> <sub>1</sub> : The approximation error of a polynomial regression model depends on the number of training points.<br/> <em>S</em> <sub>2</sub> : The structural error of a polynomial regression model depends on the number of training point.<br/>Which of the following statements is/are correct?`,
       image: "",
       options: [
         `Only <em>S</em> <sub>1</sub>`,
@@ -36354,7 +37012,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `K-mean clustering algorithm has clustered the given 8 observations into 3 clusters after<br/> 1<sup>st</sup> iteration as follows:<br/> C1 : {(2, 2), (4, 4), (6, 6)}<br/> C2 : {(0, 5), (5, 0), (2, 0)}<br/> C3 : {(7, 7), (3, 3)}<br/>What will be the Manhattan distance for observation (3, 3) from cluster centroid C1 in second iteration? `,
+      text: `K-mean clustering algorithm has clustered the given 8 observations into 3 clusters after<br/> 1<sup>st</sup> iteration as follows:<br/> C1 : {(2, 2), (4, 4), (6, 6)}<br/> C2 : {(0, 5), (5, 0), (2, 0)}<br/> C3 : {(7, 7), (3, 3)}<br/>What will be the Manhattan distance for observation (3, 3) from cluster centroid C1 in second iteration?`,
       image: "",
       options: [
         `2`,
@@ -36369,7 +37027,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `Suppose 18000 hours of faculty teaching were tested for teaching effectiveness. Out of them, 12000 hours are actually effective, and 6000 hours are actually ineffective. For the ineffective hours, the test predicted positive for 4500 and negative for 1500. For the effective hours, the test<br/>predicted positive for 800 and negative for 11200. Which of the following is/are true? `,
+      text: `Suppose 18000 hours of faculty teaching were tested for teaching effectiveness. Out of them, 12000 hours are actually effective, and 6000 hours are actually ineffective. For the ineffective hours, the test predicted positive for 4500 and negative for 1500. For the effective hours, the test<br/>predicted positive for 800 and negative for 11200. Which of the following is/are true?`,
       image: "",
       options: [
         `Accuracy of model is 0.872`,
@@ -36399,7 +37057,7 @@ registerTest({
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider a dataset with 20 samples: 12 belong to class A and 8 belong to class B.<br/>Calculate the entropy of the dataset `,
+      text: `Consider a dataset with 20 samples: 12 belong to class A and 8 belong to class B.<br/>Calculate the entropy of the dataset`,
       image: "",
       options: [
         `0.74`,
