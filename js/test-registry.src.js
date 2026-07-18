@@ -6723,13 +6723,16 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><br/><p>Suppose that two relations \\( \\text{A(X, Y)} \\) and \\( \\text{B(X, Y)} \\) have exactly the same schema. Also, there are no null values in the relations.<br/>Which of the following equalities hold in relational algebra? (Where " \\( \\times \\) " is Cartesian-Product Operation) </p><br/><p></p>`,
+      text: `<p>Suppose that two relations \\( \\text{A(X, Y)} \\) and \\( \\text{B(X, Y)} \\) have exactly the same schema.</p>
+<p>Also, there are no null values in the relations.</p>
+<p>Which of the following equalities hold in relational algebra?</p>
+<p><em>(Where " \\( \\times \\) " is Cartesian-Product Operation)</em></p>`,
       image: "",
       options: [
-        `\\( \\text{A} \\cap \\text{B = A - (A - B)} \\)`,
-        `\\( \\text{A} \\cap \\text{B = B - (B - A)} \\)`,
-        `\\( \\text{A} \\cap \\text{B = A NATURAL-JOIN B} \\)`,
-        `\\( \\text{A} \\cap \\text{B = A} \\times \\text{B} \\)`,
+        `\\( \\text{A} \\cap \\text{B} = \\text{A} - (\\text{A} - \\text{B}) \\)`,
+        `\\( \\text{A} \\cap \\text{B} = \\text{B} - (\\text{B} - \\text{A}) \\)`,
+        `\\( \\text{A} \\cap \\text{B} = \\text{A} \\text{ NATURAL-JOIN } \\text{B} \\)`,
+        `\\( \\text{A} \\cap \\text{B} = \\text{A} \\times \\text{B} \\)`,
       ],
       answer: ["A", "B", "C"],
       solution: `<div class="res_solution"> </div>`
@@ -6738,7 +6741,46 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<p>Consider the following relation schemas: \\( \\textsf{r(A, B), t(B, C)} \\) and their instances : \\( \\begin{aligned} &amp;\\textsf{r(A, B)}=\\{\\langle a, b\\rangle,\\langle a, c\\rangle,\\langle c, d\\rangle,\\langle b, e\\rangle\\}\\\\ &amp;\\textsf{t(B, C)}=\\{\\langle b, e\\rangle,\\langle d, h\\rangle,\\langle b, f\\rangle,\\langle a, d\\rangle,\\langle a, e\\rangle\\} \\end{aligned} \\) How many rows are present in the result of the following relational algebra expression using left-outer-natural-join : \\( \\pi_{\\textsf{A, C}}\\left(\\textsf{r} \\bowtie_{\\;\\textsf{LEFT}} \\textsf{t}\\right) \\) </p>`,
+      text: `<p>Consider the following relation schemas: \\( \\textsf{r(A, B)} \\) and \\( \\textsf{t(B, C)} \\) and their instances:</p>
+<div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 20px;">
+  <div>
+    <p style="text-align: center; margin-bottom: 5px;"><strong>Table r</strong></p>
+    <table style="border-collapse: collapse; margin: 0 auto;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #ddd; padding: 6px 15px; background-color: #f2f2f2;">A</th>
+          <th style="border: 1px solid #ddd; padding: 6px 15px; background-color: #f2f2f2;">B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">a</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">b</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">a</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">c</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">c</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">d</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">b</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">e</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <p style="text-align: center; margin-bottom: 5px;"><strong>Table t</strong></p>
+    <table style="border-collapse: collapse; margin: 0 auto;">
+      <thead>
+        <tr>
+          <th style="border: 1px solid #ddd; padding: 6px 15px; background-color: #f2f2f2;">B</th>
+          <th style="border: 1px solid #ddd; padding: 6px 15px; background-color: #f2f2f2;">C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">b</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">e</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">d</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">h</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">b</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">f</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">a</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">d</td></tr>
+        <tr><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">a</td><td style="border: 1px solid #ddd; padding: 6px 15px; text-align: center;">e</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<p>How many rows are present in the result of the following relational algebra expression using left-outer-natural-join:</p>
+<div style="text-align:center; margin: 15px 0;">\\( \\pi_{\\textsf{A, C}} \\left( \\textsf{r} \\text{ LEFT-OUTER-JOIN } \\textsf{t} \\right) \\)</div>`,
       image: "",
       options: [],
       answer: 5.0,
@@ -6748,13 +6790,19 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><br/><p>Consider the following relations and query.<br/> \\( \\begin{gathered} \\textsf{r(A, B, C)}\\\\ \\textsf{s(A, B, C)}\\\\ \\sigma_{\\textsf{A&gt;C}}([(\\textsf{r} \\cup \\text{s) - (r - s)] - (s - r))} \\end{gathered} \\) <br/>Which of the following is equivalent to the above query? </p><br/><p></p>`,
+      text: `<p>Consider the following relations and query:</p>
+<div style="text-align:center; margin: 15px 0;">
+  \\( \\textsf{r(A, B, C)} \\)<br/>
+  \\( \\textsf{s(A, B, C)} \\)
+</div>
+<div style="text-align:center; margin: 15px 0;">\\( \\sigma_{\\textsf{A&gt;C}} \\left( \\left[ \\left( \\textsf{r} \\cup \\textsf{s} \\right) - \\left( \\textsf{r} - \\textsf{s} \\right) \\right] - \\left( \\textsf{s} - \\textsf{r} \\right) \\right) \\)</div>
+<p>Which of the following is equivalent to the above query?</p>`,
       image: "",
       options: [
-        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\bowtie \\textsf{s}) \\)`,
+        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\text{ NATURAL-JOIN } \\textsf{s}) \\)`,
         `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\cup \\textsf{s}) \\)`,
         `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r}) \\cap \\sigma_{\\textsf{A>C}} (\\textsf{s}) \\)`,
-        `\\( \\sigma_{\\textsf{A>C}}(\\text{r} \\cap \\textsf{s}) \\)`,
+        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\cap \\textsf{s}) \\)`,
       ],
       answer: ["A", "C", "D"],
       solution: `<div class="res_solution"> </div>`
@@ -6778,7 +6826,12 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p><br/><p>Consider the following schema:</p><br/><p> \\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\) <br/>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation. </p><br/><p>Consider the following query :</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sname</span></li><li class="L1"><span class="pln">FROM </span><span class="typ">Sailors</span><span class="pln"> S</span><span class="pun">,</span><span class="pln"></span><span class="typ">Reserves</span><span class="pln"> R</span><span class="pun">,</span><span class="pln"></span><span class="typ">Boats</span><span class="pln"> B</span></li><li class="L2"><span class="pln">WHERE S</span><span class="pun">.</span><span class="pln">sid </span><span class="pun">=</span><span class="pln"> R</span><span class="pun">.</span><span class="pln">sid AND R</span><span class="pun">.</span><span class="pln">bid </span><span class="pun">=</span><span class="pln"> B</span><span class="pun">.</span><span class="pln">bid</span></li><li class="L3"><span class="pln"> AND </span><span class="pun">(</span><span class="pln">B</span><span class="pun">.</span><span class="pln">color </span><span class="pun">=</span><span class="pln"></span><span class="pun">‘</span><span class="pln">blue</span><span class="pun">’</span><span class="pln"> AND B</span><span class="pun">.</span><span class="pln">color </span><span class="pun">=</span><span class="pln"></span><span class="pun">‘</span><span class="pln">white</span><span class="pun">’)</span></li></ol></pre><p>What is the output of the above query?</p><br/><p></p>`,
+      text: `<p>Consider the following schema:</p><br/><p> \\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\) </p><br/><p>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation. </p><br/><p>Consider the following query :</p>
+<pre style="background:#2d2d2d; color:#ccc; padding:10px; border-radius:5px; margin: 10px 0;"><code>SELECT S.sname
+FROM Sailors S, Reserves R, Boats B
+WHERE S.sid = R.sid AND R.bid = B.bid
+  AND (B.color = 'blue' AND B.color = 'white')</code></pre><br/>
+<p>What is the output of the above query?</p>`,
       image: "",
       options: [
         `The names of sailors who have reserved a blue or a white boat.`,
@@ -6793,13 +6846,54 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<p></p><br/><p>Consider the following Student database and the relations in it :</p><br/><p> \\( \\begin{array}{l} \\textsf{Student (sid, name, marks)} \\\\ \\textsf{Course (cid, min, max)} \\end{array} \\) <br/>Student relation has the following set of tuples :<br/> \\( \\{ ( 101, a, 50 ), (102, b, 52), (103, c, 60), (104, d, 70) \\} \\) <br/>Course relation has the following set of tuples :<br/> \\( \\{ (c1, 20, 90), (c2, 15, 95), (c3, 10, 100) \\} \\)<br/>Consider the following query : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style="">
+      text: `<p>Consider the following Student database and the relations in it :</p>
+<ul>
+  <li>\\( \\textsf{Student (sid, name, marks)} \\)</li>
+  <li>\\( \\textsf{Course (cid, min, max)} \\)</li>
+</ul>
+
+<p>Student relation has the following set of tuples :</p>
+<table style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">sid</th>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">name</th>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">101</td><td style="border: 1px solid #ddd; padding: 8px;">a</td><td style="border: 1px solid #ddd; padding: 8px;">50</td></tr>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">102</td><td style="border: 1px solid #ddd; padding: 8px;">b</td><td style="border: 1px solid #ddd; padding: 8px;">52</td></tr>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">103</td><td style="border: 1px solid #ddd; padding: 8px;">c</td><td style="border: 1px solid #ddd; padding: 8px;">60</td></tr>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">104</td><td style="border: 1px solid #ddd; padding: 8px;">d</td><td style="border: 1px solid #ddd; padding: 8px;">70</td></tr>
+  </tbody>
+</table>
+
+<p>Course relation has the following set of tuples :</p>
+<table style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">cid</th>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">min</th>
+      <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">c1</td><td style="border: 1px solid #ddd; padding: 8px;">20</td><td style="border: 1px solid #ddd; padding: 8px;">90</td></tr>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">c2</td><td style="border: 1px solid #ddd; padding: 8px;">15</td><td style="border: 1px solid #ddd; padding: 8px;">95</td></tr>
+    <tr><td style="border: 1px solid #ddd; padding: 8px;">c3</td><td style="border: 1px solid #ddd; padding: 8px;">10</td><td style="border: 1px solid #ddd; padding: 8px;">100</td></tr>
+  </tbody>
+</table>
+
+<p>Consider the following query : </p>
+<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px;">
 SELECT S.sid
 FROM Student S
 WHERE EXISTS ( SELECT COUNT(*)
                FROM Course C
                WHERE S.marks &gt; C.min AND S.marks &gt; C.max)
-</pre><p><br/>How many tuples will be in the output of the above SQL Query?</p><br/><p></p>`,
+</pre>
+<p>How many tuples will be in the output of the above SQL Query?</p>`,
       image: "",
       options: [],
       answer: 4.0,
@@ -6809,7 +6903,21 @@ WHERE EXISTS ( SELECT COUNT(*)
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p><br/><p>Let \\( \\mathrm{R}=(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}), \\mathrm{S}=(\\mathrm{C}, \\mathrm{D}, \\mathrm{E}) \\) and let \\( q \\) and \\( r \\) be a relation on schema \\( \\mathrm{R} \\) and \\( s \\) be a relation on schema \\( \\mathrm{S}. \\) </p><br/><p>Consider the following queries :</p><ol><li> \\( \\{&lt;a&gt;\\mid \\exists b(&lt;a, b&gt;\\in r \\wedge b=10)\\} \\) </li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT A FROM r WHERE B</span><span class="pun">=</span><span class="lit">10</span></li></ol></pre></li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM r EXCEPT SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM s</span></li></ol></pre></li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM q WHERE </span><span class="pun">(</span><span class="pln">A</span><span class="pun">,</span><span class="pln"> B</span><span class="pun">,</span><span class="pln"> C</span><span class="pun">)</span><span class="pln"> NOT IN </span><span class="pun">(</span><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM r</span><span class="pun">)</span></li></ol></pre></li></ol><p>Which of the following is/are true? (Two queries are said to be equivalent when they produce the same output, i.e., the same set of records)</p><br/><p></p>`,
+      text: `<p>Let \\( \\mathrm{R}=(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}) \\) and \\( \\mathrm{S}=(\\mathrm{C}, \\mathrm{D}, \\mathrm{E}) \\) and let \\( q \\) and \\( r \\) be a relation on schema \\( \\mathrm{R} \\) and \\( s \\) be a relation on schema \\( \\mathrm{S}. \\) </p><br/>
+<p>Consider the following queries :</p>
+<ol style="margin-left: 20px;">
+  <li style="margin-bottom: 10px;"> \\( \\{ \\langle a \\rangle \\mid \\exists b, c ( \\langle a, b, c \\rangle \\in r \\wedge b=10) \\} \\) </li>
+  <li style="margin-bottom: 10px;">
+    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd; font-family: monospace; font-size: 14px;">SELECT DISTINCT A FROM r WHERE B = 10</pre>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd; font-family: monospace; font-size: 14px;">SELECT DISTINCT * FROM r EXCEPT SELECT DISTINCT * FROM s</pre>
+  </li>
+  <li style="margin-bottom: 10px;">
+    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd; font-family: monospace; font-size: 14px;">SELECT DISTINCT * FROM q WHERE (A, B, C) NOT IN (SELECT DISTINCT * FROM r)</pre>
+  </li>
+</ol><br/>
+<p>Which of the following is/are true? (Two queries are said to be equivalent when they produce the same output, i.e., the same set of records)</p>`,
       image: "",
       options: [
         `Query \\( 1 \\) and \\( 2 \\) are equivalent.`,
@@ -6824,13 +6932,24 @@ WHERE EXISTS ( SELECT COUNT(*)
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<p></p><br/><p>Consider the following database relations :</p><ul><li> \\( \\textsf{Enrolled(Student, Course) :} \\) It contains the courses that each student has enrolled into, and </li><li> \\( \\textsf{ToDo(Course) :} \\) It contains the courses that are required to graduate. </li></ul><p>The instance for \\( \\textsf{Enrolled} \\) relation is shown below:<br/> \\( \\begin{array}{|c|c|} \\hline \\textbf{Student} &amp; \\textbf{Course} \\\\ \\hline \\text{Robert} &amp; \\text{Databases} \\\\ \\text{Robert} &amp; \\text{Programming Languages} \\\\ \\text{Susie} &amp; \\text{Databases} \\\\ \\text{Susie} &amp; \\text{Operating Systems} \\\\ \\text{Julie} &amp; \\text{Programming Languages} \\\\ \\text{Julie} &amp; \\text{Machine Learning} \\\\ \\text{Emilie} &amp; \\text{Operating Systems} \\\\ \\hline \\end{array} \\) <br/>The instance for \\( \\textsf{ToDo} \\) relation is shown below:<br/> \\( \\begin{array}{|c|} \\hline \\textbf{Course} \\\\ \\hline \\text{Databases} \\\\ \\text{Programming Languages} \\\\ \\hline \\end{array} \\) <br/>We run the following SQL Query of this database : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""></pre><p>How many tuples will be there in the output of this SQL Query?</p><br/><p></p>`,
+      text: `<p>Consider the following database relations :</p>
+<ul>
+  <li> \\( \\textsf{Enrolled(Student, Course) :} \\) It contains the courses that each student has enrolled into, and </li>
+  <li> \\( \\textsf{ToDo(Course) :} \\) It contains the courses that are required to graduate. </li>
+</ul>
+<p>The instance for \\( \\textsf{Enrolled} \\) relation is shown below:</p>
+<p style="text-align:center">\\( \\begin{array}{|c|c|} \\hline \\textbf{Student} &amp; \\textbf{Course} \\\\ \\hline \\text{Robert} &amp; \\text{Databases} \\\\ \\text{Robert} &amp; \\text{Programming Languages} \\\\ \\text{Susie} &amp; \\text{Databases} \\\\ \\text{Susie} &amp; \\text{Operating Systems} \\\\ \\text{Julie} &amp; \\text{Programming Languages} \\\\ \\text{Julie} &amp; \\text{Machine Learning} \\\\ \\text{Emilie} &amp; \\text{Operating Systems} \\\\ \\hline \\end{array} \\)</p>
+<p>The instance for \\( \\textsf{ToDo} \\) relation is shown below:</p>
+<p style="text-align:center">\\( \\begin{array}{|c|} \\hline \\textbf{Course} \\\\ \\hline \\text{Databases} \\\\ \\text{Programming Languages} \\\\ \\hline \\end{array} \\)</p>
+<p>We run the following SQL Query of this database : </p>
+<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px;">
+SELECT DISTINCT Student
+FROM Enrolled
+WHERE Course IN (SELECT Course FROM ToDo);
+</pre>
+<p>How many tuples will be there in the output of this SQL Query?</p>`,
       image: "",
-      options: [
-        `<span class="pln">SELECT DISTINCT </span><span class="typ">Student</span>`,
-        `<span class="pln">FROM </span><span class="typ">Enrolled</span>`,
-        `<span class="pln">WHERE </span><span class="typ">Course</span><span class="pln"> IN </span><span class="pun">(</span><span class="pln">SELECT </span><span class="typ">Course</span><span class="pln"> FROM </span><span class="typ">ToDo</span><span class="pun">);</span>`,
-      ],
+      options: [],
       answer: 3.0,
       solution: `<div class="res_solution"> </div>`
     },
@@ -6838,7 +6957,17 @@ WHERE EXISTS ( SELECT COUNT(*)
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p><br/><p>Consider the following schema:<br/> \\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\) <br/>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation and every relation has at least one tuple. \\( \\textsf{“Sid"} \\) of Reserves is foreign key to \\( \\textsf{Sailor.sid}. \\)<br/>Assume that there exists a sailor who has reserved a boat with \\( \\textsf{bid 104} \\) in the reserves table. </p><br/><p>Consider the following query :</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sid</span></li><li class="L1"><span class="pln">FROM </span><span class="typ">Sailors</span><span class="pln"> S</span><span class="pun">,</span><span class="pln"></span><span class="typ">Reserves</span><span class="pln"> R</span></li><li class="L2"><span class="pln">WHERE S</span><span class="pun">.</span><span class="pln">rating </span><span class="pun">=</span><span class="lit">10</span><span class="pln"> OR R</span><span class="pun">.</span><span class="pln">bid </span><span class="pun">=</span><span class="lit">104</span></li></ol></pre><p>What is the output of the above query?</p><br/><p></p>`,
+      text: `<p>Consider the following schema:</p>
+<p style="text-align:center">\\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\)</p>
+<p>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation and every relation has at least one tuple. \\( \\textsf{“Sid"} \\) of Reserves is foreign key to \\( \\textsf{Sailor.sid}. \\)</p>
+<p>Assume that there exists a sailor who has reserved a boat with \\( \\textsf{bid 104} \\) in the reserves table.</p>
+<p>Consider the following query :</p>
+<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px;">
+SELECT S.sid
+FROM Sailors S, Reserves R
+WHERE S.rating = 10 OR R.bid = 104
+</pre>
+<p>What is the output of the above query?</p>`,
       image: "",
       options: [
         `All sids of sailors who have a rating of \\( 10 \\) AND have reserved boat \\( 104. \\)`,
