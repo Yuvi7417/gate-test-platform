@@ -12,10 +12,10 @@ def main():
     with open('test.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
-    img_dir = 'js/questions/databases_3'
+    img_dir = 'js/questions/databases_4'
     os.makedirs(img_dir, exist_ok=True)
 
-    test_name = 'TWT - Databases-3'
+    test_name = 'TWT - Databases-4'
     questions = []
     
     q_divs = soup.find_all('div', class_='res_question')

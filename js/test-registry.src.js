@@ -7067,6 +7067,180 @@ WHERE S.rating = 10 OR R.bid = 104
 });
 
 
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Databases-4",
+  date: "July 18, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>An index whose search key is different from the sequential order of the file (i.e., records in the file are not physically ordered according to search key of index) is called?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `Primary index`,
+        `Secondary index`,
+        `Clustering index`,
+        `Sparse index`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>If order of data records in a file is the same as, or 'close to’, order of data entries in an index, then the index is called?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `Sparse`,
+        `secondary`,
+        `Clustered`,
+        `Dense`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p> \\( \\mathrm{B}^+ \\) Tree is constructed by parameter \\( n \\) </p><ul><li>Each Node (except root) has \\( \\lceil n / 2\\rceil \\) to \\( n \\) pointers </li><li>Each Node (except root) has \\( \\lceil n / 2\\rceil-1 \\) to \\( n-1 \\) search-key values </li></ul><p>What is the total number of key values in the internal nodes of \\( \\mathrm{B}^+\\operatorname{tree} \\) with \\( 1000 \\) Leaf Nodes? </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 999.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>In \\( \\mathrm{B}^+ \\) trees, Data is present only at leaves. So, to get record pointer of any key, we always have to traverse from root node to leaves. Records in leaves require more Disk I/O’s to access. </p><br/><p>Consider the following \\( \\mathrm{B}^+ \\) tree index for a relation \\( \\text{R} \\) on key field “ \\( k \\)”. </p><p style="text-align:center"><img alt="" src="js/questions/databases_4/img_1.png"/></p><br/><p><br/>We run the following SQL query :</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT </span><span class="pun">*</span><span class="pln"> FROM R WHERE k </span><span class="pun">&gt;</span><span class="pln"></span><span class="lit">32</span><span class="pln"> AND k </span><span class="pun">&lt;</span><span class="pln"></span><span class="lit">179</span><span class="pun">;</span></li></ol></pre><p>What is the minimum number of disk I/O's required to retrieve the Index blocks containing the record pointers (not including the disk I/O's to read the actual records) of the records desired by the given query?</p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 6.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The order of a leaf node in a \\( \\text{B} \\) tree is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is \\( \\text{1K bytes}, \\) data record pointer is \\( \\text{7 bytes} \\) long, the value field is \\( \\text{9 bytes} \\) long and a block pointer is \\( \\text{6 bytes} \\) long, what is the order of the leaf node? </p>`,
+      image: "",
+      options: [],
+      answer: 46.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Recall that in a \\( \\text{B-tree} \\) of \\( \\operatorname{order} p, \\) Each node has at most \\( p \\) tree pointers. Each node, except the root and leaf nodes, has at least \\( \\lceil( p / 2)\\rceil \\) tree pointers. The root node has at least two tree pointers unless it is the only node in the tree. A node with \\( q \\) tree pointers, \\( q \\leq p, \\) has \\( q - 1 \\) (search key field value, data pointer) pairs. All leaf nodes are at the same level. Leaf nodes have the same structure as internal nodes except that all of their tree pointers are NULL. We build a \\( \\text{B-tree} \\) of order \\( 5 \\) by inserting the following letters in the given order, one after one. \\( \\text{A, G, F, B, K, D, H, M, J, E, S, I, R, X, C, L, N, T, U, P} \\) The number of Node splits that happen while insertion of these letters into the \\( \\text{B tree} \\) is _______ </p>`,
+      image: "",
+      options: [],
+      answer: 6.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A \\( \\text{B-Tree} \\) of order \\( m \\) is an \\( m \\)-way search tree in which every node ,except root node, has at least \\( m/2 \\) children. The height of a one level tree is defined to be \\( 0, \\) the height of a tree with two levels is defined to be \\( 1, \\) and so on. What is the minimum number of distinct keys (or records) stored in a \\( \\text{B Tree} \\) of height \\( 5 \\) and order \\( 5? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 485.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A \\( \\text{B-Tree} \\) of order \\( m \\) is an \\( m \\)-way search tree in which every node ,except root node, has at least \\( m/2 \\) children. The height of a one-level tree is defined to be \\( 0, \\) the height of a tree with two levels is defined to be \\( 1, \\) and so on. What is the maximum number of distinct keys (or records) stored in a \\( \\text{B Tree} \\) of height \\( 5 \\) and order \\( 5? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 15624.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p> \\( \\mathrm{B}^+ \\) Tree is constructed by parameter \\( n \\) </p><ul><li>Each Node (except root) has \\( \\lceil n / 2\\rceil \\) to \\( n \\) pointers </li><li>Each Node (except root) has \\( \\lceil n / 2\\rceil-1 \\) to \\( n -1 \\) search-key values </li></ul><p>The height of a one-level tree is defined to be \\( 0 , \\) the height of a tree with two levels is defined to be \\( 1 , \\) and so on. </p><br/><p>What is the maximum number of distinct keys (or records) stored in a \\( \\mathrm{B}^+ \\) Tree of height \\( 4 \\) and order \\( 5 ? \\) </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 2500.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In a \\( \\text{B-tree}, \\) we store both keys and record pointers in the internal and leaf nodes, but in a \\( \\mathrm{B}^+ \\) tree, we store the record pointers in the leaf nodes only. The main advantage of \\( \\mathrm{B}^+ \\) trees over \\( \\mathrm{B} \\) trees is that \\( \\mathrm{B}^+ \\) trees allow us to pack in more tree pointers to the internal nodes by removing pointers to data, thus increasing the fanout and potentially decreasing the depth of the tree. Leaf node of \\( \\mathrm{B}^+ \\) tree has one block pointer which points to the sibling to the right of the tree. Given that the block size is \\( 1 \\mathrm{~K} \\;\\text{bytes}, \\) data record pointer is \\( \\text{7 bytes} \\) long, the value field is \\( \\text{9 bytes} \\) long and a block pointer is \\( \\text{6 bytes} \\) long. If we use \\( \\text{B tree} \\) index, then the maximum number of record pointers that can be stored in the index of height \\( 1 \\) is \\( \\mathrm{X} \\), whereas If we use \\( \\mathrm{B}^+ \\) tree index, then the maximum number of record pointers that can be stored in the index of height \\( 1 \\) (i.e. two levels) is \\( \\mathrm{Y} \\), then \\( \\mathrm{Y}-\\mathrm{X} \\) is _______ </p>`,
+      image: "",
+      options: [],
+      answer: 2076.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>In \\( \\text{B}^+\\text{-tree}, \\) each node stores up to \\( d \\) references to children and up to \\( d - 1 \\) keys.<br/>Consider the following \\( \\text{B}^+\\text{- tree} \\) for which \\( d = 4. \\) </p><p style="text-align:center"><img alt="" src="js/questions/databases_4/img_2.png"/></p><br/><p><br/>If we insert value \\( \\text{“12”} \\) in this \\( \\text{B}^+\\;\\text{tree}, \\) then how many Node Splits will occur? </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 2.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>In \\( \\text{B}^+ \\;\\text{trees}, \\) Data is present only at leaves. So, to get record pointer of any key, we always have to traverse from root node to leaves. Records in leaves require more Disk I/O’s to access.<br/>Consider the following \\( \\text{B}^+\\;\\text{tree}. \\) </p><p style="text-align:center"><img alt="" src="js/questions/databases_4/img_3.png"/></p><br/><p><br/>We want to find out the minimum number of disk IOs required to retrieve the record pointers (not including the disk IOs to read the actual records). Since in \\( \\text{B}^+\\;\\text{tree}, \\) the leaf nodes are linked to provide ordered access to the records, We assume we need to follow the sequence pointers of the leaf nodes to traverse the leaf nodes (if necessary).<br/>Which of the following is/are correct? </p><br/><p></p>`,
+      image: "",
+      options: [
+        `To Find records with the key values in the range \\( 101 \\) to \\( 110 \\) inclusive \\( : 3 \\) disk IO`,
+        `To Find records with the key values in the range \\( 150 \\) to \\( 179 \\) inclusive \\( : 4 \\) Disk IO`,
+        `Find records with the key values in the range \\( 30 \\) to \\( 110 \\) inclusive \\( : 4 \\) Disk IO`,
+        `Find records with the key values in the range \\( 3 \\) to \\( 179 \\) inclusive \\( : 7 \\) Disk IO`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Order “ \\( d \\)” of \\( \\text{B}^{+}\\;\\text{tree} \\) is define as follows : Each interior node except root node has \\( m \\) keys, \\( m+1 \\) child pointers where \\( d \\leq m \\leq 2d. \\) The root has \\( m \\) keys, \\( m+1 \\) child pointers for \\( 1 \\leq m \\leq 2d. \\) Each leaf node has \\( m \\) keys, \\( m \\) record pointers and one block pointer pointing to the sibling to the right in the \\( \\text{B}^+ \\;\\text{tree}, \\) where \\( d \\leq m \\leq 2d. \\) The height of a one-level tree is defined to be \\( 0, \\) the height of a tree with two levels is defined to be \\( 1, \\) and so on. What is the minimum number of distinct keys (or records) stored in a \\( \\text{B}^+\\;\\text{Tree} \\) of height \\( 8 \\) and order \\( 2 ? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 8748.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider a Ordered file with number of records \\( r=300000 \\). </p><br/><p>Let ordering key field is \\( \\text{9 bytes}, \\) block pointer is \\( \\text{6 bytes;} \\) </p><ul><li>Disk block size \\( =\\mathrm{B}=4096 \\) bytes. </li><li>File records are fixed size and unspanned.</li><li>Record length \\( =\\text{R}=100 \\;\\text{bytes} \\) </li></ul><p>The I/O cost, in terms of maximum number of blocks needed to fetch into main memory in worst case, when there is NO index over the file is \\( \\mathrm{X} \\) and the \\( \\mathrm{I} / \\mathrm{O} \\) cost when there is single level primary index built for the file is \\( \\mathrm{Y} \\). Then \\( \\mathrm{X}-\\mathrm{Y} \\) is _______ </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 7.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider an empty \\( \\text{B}^+\\;\\text{Tree} \\) with order \\( 5 \\) for every node, i.e. there are at most \\( 5 \\) pointers per node (i.e. at most \\( 4 \\) keys per node). The records with key values as even numbers from \\( 100 \\) to \\( 202\\; (\\text{i.e.} \\;100,102,104, \\ldots, 202) \\) are inserted into the \\( \\text{B}^+\\;\\text{tree} \\) in some order such that each leaf is full. The maximum and minimum number of nodes that are possible in such \\( \\mathrm{B}^+\\;\\text{tree} \\) are \\( \\mathrm{X}, \\mathrm{Y} \\) respectively. Then \\( \\mathrm{X}-\\mathrm{Y} \\) is _______ </p>`,
+      image: "",
+      options: [],
+      answer: 1.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+  ]
+});
+
+
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
 
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1
