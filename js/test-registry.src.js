@@ -6592,7 +6592,7 @@ registerTest({
         `If \\( \\alpha \\rightarrow \\beta \\) holds, and \\( \\gamma \\beta \\rightarrow \\delta \\) holds, then \\( \\alpha \\gamma \\rightarrow \\delta \\) holds.`,
         `If \\( \\alpha \\rightarrow \\beta \\) holds, and \\( \\beta \\rightarrow \\gamma \\) holds, then \\( \\alpha \\rightarrow \\gamma \\) holds.`,
       ],
-      answer: ["A;B;C;D"],
+      answer: ["A", "B", "C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6682,7 +6682,7 @@ registerTest({
         `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L2"><span class="pln">borrower</span><span class="pun">(</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">loan_id </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
         `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
       ],
-      answer: ["A;B;C"],
+      answer: ["A", "B", "C"],
       solution: `<div class="res_solution"> </div>`
     },
     {
