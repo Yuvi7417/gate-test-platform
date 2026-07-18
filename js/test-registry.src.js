@@ -6731,7 +6731,7 @@ registerTest({
         `\\( \\text{A} \\cap \\text{B = A NATURAL-JOIN B} \\)`,
         `\\( \\text{A} \\cap \\text{B = A} \\times \\text{B} \\)`,
       ],
-      answer: ["A;B;C"],
+      answer: ["A", "B", "C"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6793,15 +6793,15 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<p></p><br/><p>Consider the following Student database and the relations in it :</p><br/><p> \\( \\begin{array}{l} \\textsf{Student (sid, name, marks)} \\\\ \\textsf{Course (cid, min, max)} \\end{array} \\) <br/>Student relation has the following set of tuples :<br/> \\( \\{ ( 101, a, 50 ), (102, b, 52), (103, c, 60), (104, d, 70) \\} \\) <br/>Course relation has the following set of tuples :<br/> \\( \\{ (c1, 20, 90), (c2, 15, 95), (c3, 10, 100) \\} \\)<br/>Consider the following query : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""></pre><p><br/>How many tuples will be in the output of the above SQL Query?</p><br/><p></p>`,
+      text: `<p></p><br/><p>Consider the following Student database and the relations in it :</p><br/><p> \\( \\begin{array}{l} \\textsf{Student (sid, name, marks)} \\\\ \\textsf{Course (cid, min, max)} \\end{array} \\) <br/>Student relation has the following set of tuples :<br/> \\( \\{ ( 101, a, 50 ), (102, b, 52), (103, c, 60), (104, d, 70) \\} \\) <br/>Course relation has the following set of tuples :<br/> \\( \\{ (c1, 20, 90), (c2, 15, 95), (c3, 10, 100) \\} \\)<br/>Consider the following query : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style="">
+SELECT S.sid
+FROM Student S
+WHERE EXISTS ( SELECT COUNT(*)
+               FROM Course C
+               WHERE S.marks &gt; C.min AND S.marks &gt; C.max)
+</pre><p><br/>How many tuples will be in the output of the above SQL Query?</p><br/><p></p>`,
       image: "",
-      options: [
-        `<span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sid</span>`,
-        `<span class="pln">FROM </span><span class="typ">Student</span><span class="pln"> S</span>`,
-        `<span class="pln">WHERE EXISTS </span><span class="pun">(</span><span class="pln"> SELECT COUNT</span><span class="pun">(*)</span>`,
-        `<span class="pln"> FROM </span><span class="typ">Course</span><span class="pln"> C</span>`,
-        `<span class="pln"> WHERE S</span><span class="pun">.</span><span class="pln">marks </span><span class="pun">&gt;</span><span class="pln"> C</span><span class="pun">.</span><span class="pln">min AND S</span><span class="pun">.</span><span class="pln">marks </span><span class="pun">&gt;</span><span class="pln"> C</span><span class="pun">.</span><span class="pln">max</span><span class="pun">)</span>`,
-      ],
+      options: [],
       answer: 4.0,
       solution: `<div class="res_solution"> </div>`
     },

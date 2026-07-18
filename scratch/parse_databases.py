@@ -68,19 +68,20 @@ def main():
 
         # Options
         options = []
-        ol = q_text_div.find('ol', style="list-style-type:upper-alpha")
-        if not ol:
-            # Fallback to last ol if no style provided
-            ols = q_text_div.find_all('ol')
-            if ols:
-                ol = ols[-1]
-                
-        if ol:
-            for li in ol.find_all('li', recursive=False):
-                opts_html = "".join([str(c) for c in li.contents]).strip()
-                opts_html = clean_text(opts_html)
-                options.append(opts_html)
-            ol.decompose()
+        if q_type in ('MCQ', 'MSQ'):
+            ol = q_text_div.find('ol', style="list-style-type:upper-alpha")
+            if not ol:
+                # Fallback to last ol if no style provided, but ignore ols inside pre tags (e.g. code snippets)
+                ols = [o for o in q_text_div.find_all('ol') if not o.find_parent('pre')]
+                if ols:
+                    ol = ols[-1]
+                    
+            if ol:
+                for li in ol.find_all('li', recursive=False):
+                    opts_html = "".join([str(c) for c in li.contents]).strip()
+                    opts_html = clean_text(opts_html)
+                    options.append(opts_html)
+                ol.decompose()
             
         q_html = "".join([str(c) for c in q_text_div.contents]).strip()
         q_html = clean_text(q_html)
