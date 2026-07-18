@@ -7424,255 +7424,175 @@ registerTest({
   questions: [
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p>Consider the \\( k \\) bit binary pattern. \\( \\text{T}_{\\max} \\) and \\( \\text{T}_{\\min} \\) are maximum and minimum signed numbers we can represent using \\( k \\) bits. \\( \\text{U}_{\\max} \\) and \\( \\text{U}_{\\min} \\) are maximum and minimum unsigned numbers we can represent using \\( k \\) bits. Numbers are represented using 2's complement system. </p> <p>Which of the following(s) is/are true for \\( k =16? \\) </p> <p>Here \\( |.| \\) represents absolute value of a number i.e. \\( |r| = -r \\) if \\( r&lt;0 \\) otherwise \\( |r| = r. \\) </p>`,
-      image: "",
-      options: [
-        `\\( |\\text{T}_{\\min}| = \\text{T}_{\\max} + 1 \\)`,
-        `\\( \\text{U}_{\\max} = 2\\ast \\text{T}_{\\max} +1 \\)`,
-        `\\( \\text{U}_{\\max} = |\\text{T}_{\\min}| + \\text{T}_{\\max} + 1 \\)`,
-        `\\( \\text{U}_{\\min} = |\\text{T}_{\\min}| \\)`,
-      ],
-      answer: ["A", "B"],
-      solution: ``
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p>Consider Figure A and Figure B, which represent \\( 4 \\) bit signed and unsigned numbers, respectively, in the \\( 2’s \\) complement system.<br/><strong><img alt="" height="311" src="js/questions/c_programming_2/img_1.png" width="809"/></strong><br/>Assume that a few variables are defined below and initialized in such a way that places them in the spot shown in Figure C. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> s1</span><span class="pun">,</span><span class="pln"> s2</span><span class="pun">,</span><span class="pln"> s3</span><span class="pun">,</span><span class="pln"> s4</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> u1</span><span class="pun">,</span><span class="pln"> u2</span><span class="pun">,</span><span class="pln"> u3</span><span class="pun">,</span><span class="pln"> u4</span><span class="pun">;</span></pre> <p>Which of the following(s) is/are FALSE?</p>`,
-      image: "",
-      options: [
-        `\\( s2 > s4 \\)`,
-        `\\( s1 > s2 \\)`,
-        `\\( s1 > u3 \\)`,
-        `\\( s3 > u3 \\)`,
-      ],
-      answer: ["A"],
-      solution: ``
-    },
-    {
-      marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p>Assume that \\( x \\) is a two’s complement binary integer whose absolute value is not large (so no overflow problems). At right are four C expressions that use the \\( &lt;&lt; \\) (shift left) and \\( \\sim \\) (bitwise complement: flip each \\( 0 \\) to \\( 1 \\) and each \\( 1 \\) to \\( 0 \\) in the binary representation) operators. For example, \\( 7 &lt;&lt; 1 \\) is \\( 14 \\) and \\( \\sim 0 \\) is \\( -1. \\) </p> <p>Match each expression to one of the mathematical functions at left.</p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|l|c|l|c|} \\hline&amp;nbsp;a. &amp; 4x &amp; \\text{I.} &amp; (\\sim x) + 1 \\\\\\hline b. &amp; -x &amp; \\text{II.} &amp;&amp;nbsp; (x&lt;&lt;1) + x&amp;nbsp;\\\\\\hline c. &amp; 3x &amp; \\text{III.} &amp; \\sim x&amp;nbsp; \\\\\\hline d. &amp; -x-1 &amp; \\text{IV.} &amp; x&lt;&lt;2 \\\\\\hline \\end{array} \\] </p>`,
+      text: `<p>Consider the below program.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">void</span><span class="pln"> fun </span><span class="pun">(</span><span class="kwd">int</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    fun</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln"> </span></pre>`,
       image: "",
       options: [
-        `<br/>a - IV<br/>b - I<br/>c - II<br/>d - III`,
-        `<br/>a - IV<br/>b - III<br/>c - II<br/>d - I`,
-        `<br/>a - II<br/>b - I<br/>c - IV<br/>d - III`,
-        `None of these`,
+        `Program will get compiled successfully but linker will produce error`,
+        `Program will not get compiled i.e. it will produce compiler error`,
+        `Program will produce run time error.`,
+        `On running the Program, it will produce output \\( 3. \\)`,
       ],
       answer: "A",
       solution: ``
     },
     {
       marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p>What will be the output of the following program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">main</span><span class="pun">()</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> grade</span><span class="pun">=</span><span class="str">'A'</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> result</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">grade</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'A'</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">            result</span><span class="pun">+=</span><span class="lit">4</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'B'</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">            result</span><span class="pun">+=</span><span class="lit">3</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'C'</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">            result</span><span class="pun">+=</span><span class="lit">2</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">        </span><span class="kwd">default</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">            result</span><span class="pun">+=</span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    </span><span class="pun">}</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> result</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pun">}</span></pre>`,
-      image: "",
-      options: [
-        `\\( 10 \\)`,
-        `\\( 4 \\)`,
-        `\\( 9 \\)`,
-        `\\( 0 \\)`,
-      ],
-      answer: "A",
-      solution: ``
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p>What is the logical condition under which the following while loop will terminate?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">Beta</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Beta</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="typ">Beta</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">10</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Beta</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    scanf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">&amp;</span><span class="typ">Beta</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">}</span></pre>`,
-      image: "",
-      options: [
-        `Beta \\( <0 \\;\\&\\&\\; \\) Beta \\( >= 10 \\)`,
-        `Beta \\( <0 \\;|| \\) Beta \\( > 10 \\)`,
-        `Beta \\( <= 0 \\;|| \\) Beta \\( >= 10 \\)`,
-        `Beta \\( <0\\; || \\) Beta \\( >= 10 \\)`,
-      ],
-      answer: "C",
-      solution: ``
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p>What will be output on the execution of the following code segment?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">main</span><span class="pun">()</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">unsigned</span><span class="pln"> num1 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">signed</span><span class="pln"> num2 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&lt;</span><span class="pln"> num2</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"less"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&gt;</span><span class="pln"> num2</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"greater"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">==</span><span class="pln"> num2</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"equal"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pun">}</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln"> </span></pre>`,
-      image: "",
-      options: [
-        `greater`,
-        `less`,
-        `equal`,
-        `Error`,
-      ],
-      answer: "B",
-      solution: ``
-    },
-    {
-      marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p>Imagine that our system uses a \\( 5 \\)-bit integer representation and does addition and subtraction using the rules for \\( 5 \\)-bit, two’s complement arithmetic. </p> <p>Which of the following is/are TRUE?</p> <p>When converting to decimal, you should treat the value as either signed or unsigned according to the rules of C, where \\( \\text{T}_{\\min} \\) and \\( \\text{T}_{\\max} \\) are signed, as are plain constants, but a constant ending in \\( \\text{U} \\) is unsigned. </p>`,
-      image: "",
-      options: [
-        `\\( \\text{-T}_{\\max} - 1\\text{U} \\) is \\( 16 \\) in decimal`,
-        `\\( \\text{-T}_{\\max} - \\text{T}_{\\min} \\) is \\( 00001 \\) in binary`,
-        `\\( \\text{T}_{\\max} + \\text{T}_{\\max} \\) is \\( -2 \\) in decimal`,
-        `\\( \\text{T}_{\\min} - 1\\text{U} \\) is \\( 15 \\) in decimal`,
-      ],
-      answer: ["A", "B", "C", "D"],
-      solution: ``
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p>What will be the output of the given program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> sum </span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">3</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&gt;=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="pun">--</span><span class="pln">i</span><span class="pun">)</span>
+      text: `<p>What is/are possible choice(s) for \\( \\text{“Line 1”} \\) to produce output \\( 2123? \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">n</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="com">//Line 1</span>
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> sum</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        </span><span class="kwd">else</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> sum </span><span class="pun">*</span><span class="pln">i</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        i</span><span class="pun">++;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        fun</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span>
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="pun">}</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> sum</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pun">}</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln"> </span></pre>`,
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    fun</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pun">}</span></pre>`,
       image: "",
       options: [
-        `\\( 1 \\)`,
-        `\\( 7 \\)`,
-        `\\( 0 \\)`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">&lt;=</span><span class="lit">2</span><span class="pun">)</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pun">(</span><span class="pln">i</span><span class="pun">&lt;=</span><span class="lit">2</span><span class="pun">)</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">&gt;</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">&gt;</span><span class="lit">2</span><span class="pun">)</span></pre>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>What will be the output of the following program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> sum</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">  </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="lit">5</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">  </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">  </span><span class="kwd">return</span><span class="pln"> sum</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">)*</span><span class="pln">n </span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> sum</span><span class="pun">()</span><span class="pln"> </span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [
+        `\\( 54 \\)`,
+        `\\( 120 \\)`,
+        `\\( 16 \\)`,
         `None of these`,
       ],
       answer: "D",
       solution: ``
     },
     {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: `<p>Which of the following condition(s) is/are evaluated to true for a given declaration of integer \\( i. \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">7</span><span class="pun">;</span></pre>`,
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider the program:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">k </span><span class="pun">==</span><span class="pln"> j</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        </span><span class="kwd">int</span><span class="pln"> k</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> k</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        j </span><span class="pun">=</span><span class="pln"> j</span><span class="pun">+</span><span class="pln">k</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    k</span><span class="pun">++;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    printf</span><span class="pun">(“%</span><span class="pln">d</span><span class="pun">”,</span><span class="pln"> j</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    printf</span><span class="pun">(“%</span><span class="pln">d</span><span class="pun">”,</span><span class="pln"> k</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pun">}</span></pre> <p>Which of the following is true?</p>`,
       image: "",
       options: [
-        `\\( -10 < i <-1 \\)`,
-        `\\( i \\;\\&\\; 0 \\;|\\; 0\\; \\& \\;1 \\)`,
-        `\\( 0\\; \\&\\; 0\\; \\&\\; 0\\; |\\; i \\)`,
-        `\\( !(1 > 0 > i \\;\\&\\; !i) \\)`,
+        `There is a compilation error.`,
+        `There is no compilation error, and \\( 31 \\) is printed.`,
+        `There is a run time error.`,
+        `There is no compilation error, and \\( 34 \\) is printed.`,
       ],
-      answer: ["C", "D"],
+      answer: "B",
       solution: ``
     },
     {
-      marks: 2,
+      marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p>The statement</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></pre> <p><br/>can \\( \\text{NOT} \\) be rewritten as </p>`,
+      text: `<p>Which of the following C -functions will correctly return true if its argument is an odd positive integer?</p> <p> </p> <ol style="list-style-type:upper-alpha"> <li>I</li> <li>II</li> <li>III</li> <li>IV</li> </ol>`,
       image: "",
       options: [
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">do</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="str">"A"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"B"</span><span class="pln"> </span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">);</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">bool</span><span class="pln"> </span><span class="typ">IsOdd</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">}</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">bool</span><span class="pln"> </span><span class="typ">IsOdd</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">/</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">}</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">bool</span><span class="pln"> </span><span class="typ">IsOdd</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">else</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">}</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">bool</span><span class="pln"> </span><span class="typ">IsOdd</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">/</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">}</span></pre>`,
       ],
-      answer: ["B", "D"],
-      solution: ``
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: `<p>Consider the following program fragment. Which of the following if condition(s) prints GO Classes?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> d </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="com">//first if</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">b </span><span class="pun">||</span><span class="pln"> </span><span class="pun">--</span><span class="pln">b </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="com">//Second if</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">c </span><span class="pun">||</span><span class="pln"> c</span><span class="pun">--</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="com">//Third if</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">d </span><span class="pun">||</span><span class="pln"> </span><span class="pun">++</span><span class="pln">d </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="com">//Fourth if</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span></pre>`,
-      image: "",
-      options: [
-        `First if condition`,
-        `Second if condition`,
-        `Third if condition`,
-        `Fourth if condition`,
-      ],
-      answer: ["B", "C"],
+      answer: ["A", "C"],
       solution: ``
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>Let \\( A \\) and \\( B \\) be two unknown 8-bit 2's complement numbers. <br/>We know the results of \\( A \\,\\hat{}\\, B \\) and \\( A \\,\\&amp;\\, B \\) as shown below:<br/><br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|} \\hline A \\,\\hat{}\\, B &amp; 00110100 \\\\ \\hline A \\,\\&amp;\\, B &amp; 11001001 \\\\ \\hline \\end{array} \\] <br/><br/>What is the sum \\( A+B \\) expressed in the 8-bit two's complement notation? </p>`,
+      text: `<p>As shown below, the file \\( f.c \\) defines a function f whose code refers to the variable \\( x \\) that is not a local variable or a parameter. The file \\( g.c \\) defines a function \\( g \\) whose code refers to the variable \\( x \\) that is not a local variable or a parameter. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">// file f.c</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">// declaration for x</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">void</span><span class="pln"> f</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="pun">...</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span></pre> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">// file g.c</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">// declaration for x</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">void</span><span class="pln"> g</span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*</span><span class="pln"> p</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="pun">...</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span></pre> <p><br/>The following table below shows how the variable x is defined in each file. For each row in the table, indicate in Column (c) whether the two functions at run-time refer to the SAME identifier (memory location) or to DIFFERENT identifiers (memory locations)<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array} {|l|l|c|} \\hline&amp;nbsp;\\qquad \\textbf{Column A}&amp;nbsp;&amp; \\qquad \\textbf{Column B} &amp; \\textbf{Column C} \\\\&amp;nbsp;\\textbf{declaration in f.c} &amp;&amp;nbsp;\\textbf{declaration in g.c} &amp; \\textbf{SAME or DIFFERENT} \\\\\\hline&amp;nbsp; \\text{int x;} &amp; \\text{extern int x;} &amp; {\\color{Red} {\\textbf{SAME}}} \\\\\\hline&amp;nbsp;&amp;nbsp; \\text{int x = 0;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{extern int x = 0;} &amp; \\\\\\hline &amp;nbsp;\\end{array} \\] </p> <p>The first row of column C has been filled for hints. What will be in the \\( 2 \\)nd, \\( 3 \\)rd, and \\( 4 \\)th row of Column C, respectively?<br/> </p>`,
       image: "",
       options: [
-        `\\( 11000110 \\)<br/>`,
-        `\\( 11000010 \\)<br/>`,
-        `\\( 01000010 \\)<br/>`,
-        `\\( 11010110 \\)`,
+        `SAME, DIFFERENT, DIFFERENT`,
+        `SAME, SAME, SAME`,
+        `DIFFERENT, DIFFERENT, DIFFERENT`,
+        `DIFFERENT, SAME, DIFFERENT`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>What will be the output of the following program (which is broken down into two files: f \\( 1 \\).c and f \\( 2 \\).c). </p> <p><strong><img alt="" height="553" src="js/questions/c_programming_2/img_1.png" width="624"/></strong> </p>`,
+      image: "",
+      options: [
+        `<br/>g: \\( 1\\; 0 \\)<br/>g: \\( 1\\; 1 \\)<br/>p: \\( 2\\; 3 \\)<br/>s: \\( 2\\; 0 \\)`,
+        `<br/>g: \\( 2\\; 3 \\)<br/>g: \\( 1\\; 1 \\)<br/>p: \\( 2\\; 3 \\)<br/>s: \\( 0\\; 0 \\)`,
+        `<br/>g: \\( 2\\; 0 \\)<br/>g: \\( 1\\; 3 \\)<br/>p: \\( 2\\; 3 \\)<br/>s: \\( 0\\; 3 \\)`,
+        `<br/>g: \\( 2\\; 3 \\)<br/>g: \\( 1\\; 1 \\)<br/>p: \\( 2\\; 3 \\)<br/>s: \\( 2\\; 3 \\)`,
       ],
       answer: "A",
       solution: ``
@@ -7681,116 +7601,183 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p>Which of the following if statement(s) below is/are equivalent to the given switch statement (that is, produces the same output under the same conditions)? Assume the <strong>answer</strong> is a previously declared int.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">switch</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">0</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">1</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">5</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">default</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span></pre>`,
+      text: `<p>Which of the following(s) are true for following function?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a </span><span class="pun">==</span><span class="pln"> </span><span class="lit">256</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">a</span><span class="pun">*</span><span class="lit">4</span><span class="pun">);</span><span class="pln"> </span><span class="com">//line 3</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">}</span></pre>`,
       image: "",
       options: [
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d entered"</span><span class="pun">,</span><span class="pln"> answer</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">((</span><span class="pln">answer </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">        answer </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">))</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d entered"</span><span class="pun">,</span><span class="pln"> answer</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">3</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></pre>`,
-        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">3</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></pre>`,
+        `\\( \\text{mystery(255)} \\) is an example of infinite recursion`,
+        `if we replace line \\( 3 \\)by following line return \\( 1 +\\text{ mystery(a*4)+ mystery(a*4)}; \\) then also output is same`,
+        `Only possible outputs are \\( 3, 7, 15, 31 \\)`,
+        `\\( \\text{mystery(i)} \\) gives output if and only if \\( i \\) is \\( 1 \\) or multiple of \\( 4 \\)`,
       ],
-      answer: ["B", "C", "D"],
+      answer: ["A", "B"],
       solution: ``
     },
     {
       marks: 2,
       neg: 0,
-      type: "MSQ",
-      text: `<p>Consider two given C programs. Which of the following is/are true? It is also known that in C programming, \\( \\&amp;\\&amp; \\) has higher precedence than \\( ||. \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="typ">Program</span><span class="pln"> </span><span class="lit">1</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">i </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">))</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        printf</span><span class="pun">(“</span><span class="pln">GO </span><span class="typ">Classes</span><span class="pln">\\n</span><span class="pun">”);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        printf</span><span class="pun">(“</span><span class="typ">GATEOverflow</span><span class="pln">\\n</span><span class="pun">”);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span></pre> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="typ">Program</span><span class="pln"> </span><span class="lit">2</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">{</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> y</span><span class="pun">,</span><span class="pln"> z</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    y </span><span class="pun">=</span><span class="pln"> z </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="pun">++</span><span class="pln">x </span><span class="pun">||</span><span class="pln"> </span><span class="pun">++</span><span class="pln">y </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">++</span><span class="pln">z</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">||</span><span class="pln"> z</span><span class="pun">)</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        printf</span><span class="pun">(“</span><span class="pln">GO </span><span class="typ">Classes</span><span class="pln">\\n</span><span class="pun">”);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">else</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        printf</span><span class="pun">(“</span><span class="typ">GATEOverflow</span><span class="pln">\\n</span><span class="pun">”);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pun">}</span></pre>`,
+      type: "NAT",
+      text: `<p>Consider the following variable and function definitions:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> q3</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">5</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="kwd">int</span><span class="pln"> q4</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">extern</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="kwd">int</span><span class="pln"> q5</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pun">}</span></pre> <p><br/>What is the value of the expression \\( q3() + q3() + q4() + q4() + q5() + q5()? \\) </p>`,
       image: "",
-      options: [
-        `Program \\( 1 \\) prints GO Classes`,
-        `Program \\( 1 \\) prints GATEOverflow`,
-        `Program \\( 2 \\) prints GO Classes`,
-        `Program \\( 2 \\) prints GATEOverflow`,
-      ],
-      answer: ["B", "D"],
+      options: [],
+      answer: 40,
       solution: ``
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p>What will be the output of the following C program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">(){</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">=</span><span class="lit">3</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">int</span><span class="pln"> y</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">x</span><span class="pun">++){</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    x</span><span class="pun">++;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"Three %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">4</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"Four %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">5</span><span class="pun">:</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"Five %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">        </span><span class="kwd">break</span><span class="pun">;</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    </span><span class="kwd">default</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Default %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    </span><span class="pun">}</span>
-<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pun">}</span></pre>`,
+      text: `<p>What will be the output of the following program -</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> recur </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">&lt;=</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">-</span><span class="pln">recur</span><span class="pun">(</span><span class="pln">a</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">main </span><span class="pun">(){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">10</span><span class="pun">,</span><span class="lit">9</span><span class="pun">,</span><span class="lit">8</span><span class="pun">,</span><span class="lit">7</span><span class="pun">,</span><span class="lit">6</span><span class="pun">,</span><span class="lit">5</span><span class="pun">,</span><span class="lit">4</span><span class="pun">,</span><span class="lit">3</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">1</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> recur</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="lit">10</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span></pre>`,
       image: "",
       options: [
-        `Three \\( 3 \\)`,
-        `Four \\( 4 \\)`,
-        `Three \\( 4 \\)`,
-        `Four \\( 5 \\)`,
+        `\\( 5 \\)`,
+        `\\( -35 \\)`,
+        `\\( -37 \\)`,
+        `\\( 35 \\)`,
       ],
-      answer: "C",
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following pair of mutually recursive functions. What does \\( g(g(2)) \\) evaluate to? </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> f</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> f</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">)+</span><span class="pln">g</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> g</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> f</span><span class="pun">(</span><span class="pln">n</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [],
+      answer: 89,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What will be the output of the following program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> find</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">0</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    n</span><span class="pun">--;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> find</span><span class="pun">(</span><span class="pln">a </span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">n</span><span class="pun">]),</span><span class="pln"> n</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> find</span><span class="pun">(</span><span class="pln">a </span><span class="pun">,</span><span class="pln"> </span><span class="lit">10</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [],
+      answer: 20,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What will be the output of the following program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> y </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> fun</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">22</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> x </span><span class="pun">-=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">GOClasses</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">%</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        y </span><span class="pun">+=</span><span class="pln"> n</span><span class="pun">+</span><span class="pln">fun</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> y</span><span class="pun">;</span><span class="pln">  </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    </span><span class="kwd">else</span><span class="pln">  </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">GOClasses</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">+</span><span class="lit">3</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> p</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="lit">2</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">21</span><span class="pln">    p </span><span class="pun">=</span><span class="pln"> </span><span class="typ">GOClasses</span><span class="pun">(</span><span class="typ">GOClasses</span><span class="pun">(</span><span class="pln">i</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">22</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> p</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">23</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">24</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [],
+      answer: 256,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In C language, the Order of evaluation of any part of any expression is unspecified.</p> <p>That means if we have two functions \\( f() \\) and \\( g(), \\) in a single expression, then it is unspecified which one will be called first. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> f</span><span class="pun">(</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> g</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">// unspecified whether f() or g() is called first</span></pre> <p>Consider below the C program.</p> <p>How many outcomes are possible if we execute the given program on different compilers?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"a"</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"b"</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="kwd">int</span><span class="pln"> c</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"c"</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    a</span><span class="pun">()+</span><span class="pln">b</span><span class="pun">()+</span><span class="pln">c</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln"> </span></pre>`,
+      image: "",
+      options: [],
+      answer: 6,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following C-program.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">Count</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x </span><span class="pun">&lt;</span><span class="pln"> y</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">==</span><span class="pln">y</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> x </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Count</span><span class="pun">(</span><span class="pln">x</span><span class="pun">-</span><span class="lit">1</span><span class="pun">,</span><span class="pln">y</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> y </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Count</span><span class="pun">(</span><span class="pln">x</span><span class="pun">-</span><span class="lit">2</span><span class="pun">,</span><span class="pln">y</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pln"> </span><span class="pun">,</span><span class="pln"> </span><span class="typ">Count</span><span class="pun">(</span><span class="lit">9</span><span class="pun">,</span><span class="lit">6</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pun">}</span></pre> <p><br/>The output of the program is _________</p>`,
+      image: "",
+      options: [],
+      answer: 18,
       solution: ``
     },
   ]
