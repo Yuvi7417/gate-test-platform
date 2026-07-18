@@ -6714,6 +6714,230 @@ registerTest({
 });
 
 
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Databases-3",
+  date: "July 18, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Suppose that two relations \\( \\text{A(X, Y)} \\) and \\( \\text{B(X, Y)} \\) have exactly the same schema. Also, there are no null values in the relations.<br/>Which of the following equalities hold in relational algebra? (Where " \\( \\times \\) " is Cartesian-Product Operation) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{A} \\cap \\text{B = A - (A - B)} \\)`,
+        `\\( \\text{A} \\cap \\text{B = B - (B - A)} \\)`,
+        `\\( \\text{A} \\cap \\text{B = A NATURAL-JOIN B} \\)`,
+        `\\( \\text{A} \\cap \\text{B = A} \\times \\text{B} \\)`,
+      ],
+      answer: ["A;B;C"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following relation schemas: \\( \\textsf{r(A, B), t(B, C)} \\) and their instances : \\( \\begin{aligned} &amp;\\textsf{r(A, B)}=\\{\\langle a, b\\rangle,\\langle a, c\\rangle,\\langle c, d\\rangle,\\langle b, e\\rangle\\}\\\\ &amp;\\textsf{t(B, C)}=\\{\\langle b, e\\rangle,\\langle d, h\\rangle,\\langle b, f\\rangle,\\langle a, d\\rangle,\\langle a, e\\rangle\\} \\end{aligned} \\) How many rows are present in the result of the following relational algebra expression using left-outer-natural-join : \\( \\pi_{\\textsf{A, C}}\\left(\\textsf{r} \\bowtie_{\\;\\textsf{LEFT}} \\textsf{t}\\right) \\) </p>`,
+      image: "",
+      options: [],
+      answer: 5.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider the following relations and query.<br/> \\( \\begin{gathered} \\textsf{r(A, B, C)}\\\\ \\textsf{s(A, B, C)}\\\\ \\sigma_{\\textsf{A&gt;C}}([(\\textsf{r} \\cup \\text{s) - (r - s)] - (s - r))} \\end{gathered} \\) <br/>Which of the following is equivalent to the above query? </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\bowtie \\textsf{s}) \\)`,
+        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r} \\cup \\textsf{s}) \\)`,
+        `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r}) \\cap \\sigma_{\\textsf{A>C}} (\\textsf{s}) \\)`,
+        `\\( \\sigma_{\\textsf{A>C}}(\\text{r} \\cap \\textsf{s}) \\)`,
+      ],
+      answer: ["A;C;D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the relations \\( r, s \\) and query :<br/> \\( \\begin{gathered} t 1 \\leftarrow \\sigma_\\theta((r \\times s) \\div r)\\\\ t 2 \\leftarrow \\sigma_\\theta(s)\\\\ t 3 \\leftarrow \\sigma_\\theta(r)\\\\ \\end{gathered} \\) </p><br/><p>Relation \\( r \\) is not empty. </p><br/><p>Which of the following is correct?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( t 1=t 3 \\)`,
+        `t2 \\( =t 3 \\)`,
+        `\\( t 1=t 2 \\)`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following schema:</p><br/><p> \\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\) <br/>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation. </p><br/><p>Consider the following query :</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sname</span></li><li class="L1"><span class="pln">FROM </span><span class="typ">Sailors</span><span class="pln"> S</span><span class="pun">,</span><span class="pln"></span><span class="typ">Reserves</span><span class="pln"> R</span><span class="pun">,</span><span class="pln"></span><span class="typ">Boats</span><span class="pln"> B</span></li><li class="L2"><span class="pln">WHERE S</span><span class="pun">.</span><span class="pln">sid </span><span class="pun">=</span><span class="pln"> R</span><span class="pun">.</span><span class="pln">sid AND R</span><span class="pun">.</span><span class="pln">bid </span><span class="pun">=</span><span class="pln"> B</span><span class="pun">.</span><span class="pln">bid</span></li><li class="L3"><span class="pln"> AND </span><span class="pun">(</span><span class="pln">B</span><span class="pun">.</span><span class="pln">color </span><span class="pun">=</span><span class="pln"></span><span class="pun">‘</span><span class="pln">blue</span><span class="pun">’</span><span class="pln"> AND B</span><span class="pun">.</span><span class="pln">color </span><span class="pun">=</span><span class="pln"></span><span class="pun">‘</span><span class="pln">white</span><span class="pun">’)</span></li></ol></pre><p>What is the output of the above query?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `The names of sailors who have reserved a blue or a white boat.`,
+        `The names of sailors who have reserved a blue AND a white boat.`,
+        `The names of sailors who have reserved neither a blue nor a white boat.`,
+        `Empty set.`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider the following Student database and the relations in it :</p><br/><p> \\( \\begin{array}{l} \\textsf{Student (sid, name, marks)} \\\\ \\textsf{Course (cid, min, max)} \\end{array} \\) <br/>Student relation has the following set of tuples :<br/> \\( \\{ ( 101, a, 50 ), (102, b, 52), (103, c, 60), (104, d, 70) \\} \\) <br/>Course relation has the following set of tuples :<br/> \\( \\{ (c1, 20, 90), (c2, 15, 95), (c3, 10, 100) \\} \\)<br/>Consider the following query : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""></pre><p><br/>How many tuples will be in the output of the above SQL Query?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `<span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sid</span>`,
+        `<span class="pln">FROM </span><span class="typ">Student</span><span class="pln"> S</span>`,
+        `<span class="pln">WHERE EXISTS </span><span class="pun">(</span><span class="pln"> SELECT COUNT</span><span class="pun">(*)</span>`,
+        `<span class="pln"> FROM </span><span class="typ">Course</span><span class="pln"> C</span>`,
+        `<span class="pln"> WHERE S</span><span class="pun">.</span><span class="pln">marks </span><span class="pun">&gt;</span><span class="pln"> C</span><span class="pun">.</span><span class="pln">min AND S</span><span class="pun">.</span><span class="pln">marks </span><span class="pun">&gt;</span><span class="pln"> C</span><span class="pun">.</span><span class="pln">max</span><span class="pun">)</span>`,
+      ],
+      answer: 4.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Let \\( \\mathrm{R}=(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}), \\mathrm{S}=(\\mathrm{C}, \\mathrm{D}, \\mathrm{E}) \\) and let \\( q \\) and \\( r \\) be a relation on schema \\( \\mathrm{R} \\) and \\( s \\) be a relation on schema \\( \\mathrm{S}. \\) </p><br/><p>Consider the following queries :</p><ol><li> \\( \\{&lt;a&gt;\\mid \\exists b(&lt;a, b&gt;\\in r \\wedge b=10)\\} \\) </li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT A FROM r WHERE B</span><span class="pun">=</span><span class="lit">10</span></li></ol></pre></li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM r EXCEPT SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM s</span></li></ol></pre></li><li><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM q WHERE </span><span class="pun">(</span><span class="pln">A</span><span class="pun">,</span><span class="pln"> B</span><span class="pun">,</span><span class="pln"> C</span><span class="pun">)</span><span class="pln"> NOT IN </span><span class="pun">(</span><span class="pln">SELECT DISTINCT </span><span class="pun">*</span><span class="pln"> FROM r</span><span class="pun">)</span></li></ol></pre></li></ol><p>Which of the following is/are true? (Two queries are said to be equivalent when they produce the same output, i.e., the same set of records)</p><br/><p></p>`,
+      image: "",
+      options: [
+        `Query \\( 1 \\) and \\( 2 \\) are equivalent.`,
+        `Query \\( 1 \\) and \\( 3 \\) are equivalent`,
+        `Query \\( 2 \\) and \\( 4 \\) are equivalent`,
+        `Query \\( 3 \\) and \\( 4 \\) are equivalent`,
+      ],
+      answer: ["A"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider the following database relations :</p><ul><li> \\( \\textsf{Enrolled(Student, Course) :} \\) It contains the courses that each student has enrolled into, and </li><li> \\( \\textsf{ToDo(Course) :} \\) It contains the courses that are required to graduate. </li></ul><p>The instance for \\( \\textsf{Enrolled} \\) relation is shown below:<br/> \\( \\begin{array}{|c|c|} \\hline \\textbf{Student} &amp; \\textbf{Course} \\\\ \\hline \\text{Robert} &amp; \\text{Databases} \\\\ \\text{Robert} &amp; \\text{Programming Languages} \\\\ \\text{Susie} &amp; \\text{Databases} \\\\ \\text{Susie} &amp; \\text{Operating Systems} \\\\ \\text{Julie} &amp; \\text{Programming Languages} \\\\ \\text{Julie} &amp; \\text{Machine Learning} \\\\ \\text{Emilie} &amp; \\text{Operating Systems} \\\\ \\hline \\end{array} \\) <br/>The instance for \\( \\textsf{ToDo} \\) relation is shown below:<br/> \\( \\begin{array}{|c|} \\hline \\textbf{Course} \\\\ \\hline \\text{Databases} \\\\ \\text{Programming Languages} \\\\ \\hline \\end{array} \\) <br/>We run the following SQL Query of this database : </p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""></pre><p>How many tuples will be there in the output of this SQL Query?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `<span class="pln">SELECT DISTINCT </span><span class="typ">Student</span>`,
+        `<span class="pln">FROM </span><span class="typ">Enrolled</span>`,
+        `<span class="pln">WHERE </span><span class="typ">Course</span><span class="pln"> IN </span><span class="pun">(</span><span class="pln">SELECT </span><span class="typ">Course</span><span class="pln"> FROM </span><span class="typ">ToDo</span><span class="pun">);</span>`,
+      ],
+      answer: 3.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following schema:<br/> \\( \\begin{array} {l} \\text{Sailors}(\\; \\underline{\\textit{sid: } \\textsf{integer}}, \\textit{ sname: } \\textsf{string}, \\textit{ rating: } \\textsf{integer}, \\textit{ age: } \\text{real}) \\\\ \\text{Boats}(\\; \\underline{\\textit{bid: } \\textsf{integer}}, \\textit{ bname: } \\textsf{string}, \\textit{ color: } \\textsf{string)} \\\\ \\text{Reserves}(\\;\\underline{\\textit{sid: } \\textsf{integer}, \\textit{ bid: } \\textsf{integer}, \\textit{ day: } \\textsf{date}}\\;)\\end{array} \\) <br/>The primary key fields are underlined, and the domain of each field is listed after the field name. Assume there are no NULL values in any column of any relation and every relation has at least one tuple. \\( \\textsf{“Sid"} \\) of Reserves is foreign key to \\( \\textsf{Sailor.sid}. \\)<br/>Assume that there exists a sailor who has reserved a boat with \\( \\textsf{bid 104} \\) in the reserves table. </p><br/><p>Consider the following query :</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">SELECT S</span><span class="pun">.</span><span class="pln">sid</span></li><li class="L1"><span class="pln">FROM </span><span class="typ">Sailors</span><span class="pln"> S</span><span class="pun">,</span><span class="pln"></span><span class="typ">Reserves</span><span class="pln"> R</span></li><li class="L2"><span class="pln">WHERE S</span><span class="pun">.</span><span class="pln">rating </span><span class="pun">=</span><span class="lit">10</span><span class="pln"> OR R</span><span class="pun">.</span><span class="pln">bid </span><span class="pun">=</span><span class="lit">104</span></li></ol></pre><p>What is the output of the above query?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `All sids of sailors who have a rating of \\( 10 \\) AND have reserved boat \\( 104. \\)`,
+        `All sids of sailors who have a rating of \\( 10 \\) OR have reserved boat \\( 104. \\)`,
+        `All sids of sailor table`,
+        `Empty set.`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Assume we have two relations \\( \\text{R(A, B)} \\) and \\( \\text{S(B, C)} \\). All three attributes \\( \\text{(A, B, C)} \\) are integer attributes. Assume that Relation \\( \\text{R} \\) contains the following tuples: \\( (1,2),(2,3) \\), and \\( (3,4) \\). Assume that relation \\( \\text{S} \\) contains the following tuples \\( (2,2),(2,3) \\), and \\( (5,1) \\). Note that " \\( \\times \\) " is Natural join, in the following expressions. </p><br/><p>Which of the following relational algebra expressions are equivalent, with respect to the above information?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\pi_\\text{A}\\left(\\sigma_{\\text{B=1}}(\\text{R})\\right) \\) and \\( \\sigma_{\\text{B=1}}\\left(\\pi_\\text{A}(\\text{R})\\right) \\)`,
+        `\\( \\pi_\\text{A}\\left(\\sigma_{\\text{A=1}}(\\text{R})\\right) \\) and \\( \\sigma_{\\text{A=1}}\\left(\\pi_\\text{A}(\\text{R})\\right) \\)`,
+        `\\( \\pi_{\\text{A, B}}\\text{(R} \\times \\text{S)} \\) and \\( (\\pi _{\\text{A, B}}\\text{(R))} \\times \\text{S} \\)`,
+        `\\( \\sigma_{\\text{B=1}}(\\text{R} \\times \\text{S}) \\) and \\( \\left(\\sigma_{\\text{B=1}}(\\text{R})\\right) \\times \\text{S} \\)`,
+      ],
+      answer: ["B;D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Given relations \\( r \\) and \\( s \\). Let Function \\( \\text{C} \\) denote the number of results in the output. Which of the following statements "can be" correct? (Hint: Discard the statements which are NEVER possible) </p><p style="text-align:center"><img alt="" height="151" src="js/questions/databases_3/img_1.png" width="295"/></p><br/><p></p><br/><p></p>`,
+      image: "",
+      options: [
+        `I and II`,
+        `II and III`,
+        `Only III`,
+        `III and IV`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>For a simple undirected finite graph \\( \\text{G}, \\) graph degrees (degrees of vertices of graph ) are stored in a database table \\( \\text{Deg(G)}. \\) This table has two attributes \\( \\text{V, D} \\) where \\( \\mathrm{V} \\) represents the vertices and \\( \\text{D} \\) represents corresponding degree of those vertices i.e. If \\( v_i \\) is some vertex of degree \\( d_i \\) in graph \\( \\text{G} \\) then there will be a row \\( v_i, d_i \\) in \\( \\text{Deg(G)}. \\) \\( \\mathrm{V} \\) is the primary key in this table. For a \\( 100 \\) vertices simple graph \\( \\text{G}, \\) the summation of minimum and maximum possible value of \\( \\left|\\pi_{\\mathrm{D}}(\\operatorname{Deg}(\\mathrm{G}))\\right| \\) will be _________ </p>`,
+      image: "",
+      options: [],
+      answer: 100.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider the following three relational schemas in a database :</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">CREATE TABLE R</span><span class="pun">(</span><span class="pln">A INT PRIMARY KEY</span><span class="pun">,</span><span class="pln"> B INT</span><span class="pun">);</span></li></ol></pre><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">CREATE TABLE S</span><span class="pun">(</span><span class="pln">C INT PRIMARY KEY</span><span class="pun">,</span><span class="pln"> A INT REFERENCES R</span><span class="pun">(</span><span class="pln">A</span><span class="pun">)</span><span class="pln"> ON DELETE CASCADE</span><span class="pun">);</span></li></ol></pre><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">CREATE TABLE T</span><span class="pun">(</span><span class="pln">D INT PRIMARY KEY</span><span class="pun">,</span><span class="pln"> C INT REFERENCES S</span><span class="pun">(</span><span class="pln">C</span><span class="pun">)</span><span class="pln"> ON DELETE SET NULL</span><span class="pun">);</span></li></ol></pre><p>Consider the following instances of relations \\( \\textsf{R, S, T :} \\)<br/> \\( \\textsf{R} \\) \\( \\begin{array}{c|c} \\text{A} &amp; {B} \\\\ \\hline a &amp; a \\\\ b &amp; b \\end{array} \\) </p><br/><p> \\( \\textsf{S} \\) \\( \\begin{array}{c|c} \\text{C} &amp; {A} \\\\ \\hline b &amp; a \\\\ c &amp; a \\end{array} \\) </p><br/><p> \\( \\textsf{T} \\) \\( \\begin{array}{c|c} \\text{D} &amp; {C} \\\\ \\hline a &amp; b \\\\ c &amp; c \\end{array} \\) <br/>Which of the following is correct? </p><br/><p></p>`,
+      image: "",
+      options: [
+        `After executing the command “DELETE FROM T;”, R will remain unchanged.`,
+        `After executing the command “DELETE FROM S;”, R will remain unchanged.`,
+        `After executing the command “DELETE FROM S;”, T will contain \\( 2 \\) tuples.`,
+        `After executing the command “DELETE FROM R;”, T will contain \\( 2 \\) tuples.`,
+      ],
+      answer: ["A;B;C;D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Let \\( \\mathrm{R}(a, b, c, d) \\) be a RDBMS relation having the following set of functional dependencies(FD set) :<br/>FD Set \\( \\mathrm{F}=\\{b \\rightarrow c ; c \\rightarrow d ; ab \\rightarrow d ; bc \\rightarrow cd\\} \\) We apply some queries on a relational instance \\( r \\) of \\( \\text{R} \\). Which of the following queries are guaranteed to return the same number of tuples as in relation instance \\( r? \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\prod_a(r) \\)`,
+        `\\( \\prod_{a, c}(r) \\)`,
+        `\\( \\prod_{a, b}(r) \\)`,
+        `\\( \\prod_{a, b, d}(r) \\)`,
+      ],
+      answer: ["C;D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>For a RDBMS relation \\( \\mathrm{T}(\\mathrm{P}, \\mathrm{Q}, \\mathrm{R}, \\mathrm{S}, \\mathrm{U}) \\) , the following set \\( \\mathrm{F} \\) of functional dependencies holds:<br/> \\( \\mathrm{F}=\\{\\mathrm{P} \\rightarrow \\mathrm{QR} ; \\mathrm{RS} \\rightarrow \\mathrm{U} ; \\mathrm{Q} \\rightarrow \\mathrm{S} ; \\mathrm{U} \\rightarrow \\mathrm{P}\\} \\) </p><ul><li>Ram decomposes \\( \\mathrm{T} \\) into two relations \\( \\mathrm{X}(\\mathrm{P}, \\mathrm{Q}, \\mathrm{R}), \\mathrm{Y}(\\mathrm{R}, \\mathrm{S}, \\mathrm{U}) \\) . </li><li>Shyam decomposes \\( \\mathrm{T} \\) into two relations \\( \\mathrm{A}(\\mathrm{P}, \\mathrm{Q}, \\mathrm{R}), \\mathrm{B}(\\mathrm{P}, \\mathrm{S}, \\mathrm{U}) \\) . </li></ul><p>Which of the following is/are necessarily true on any(every) instance \\( t \\) of relation \\( \\mathrm{T}? \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{X} \\bowtie \\mathrm{Y} = t \\)`,
+        `\\( \\mathrm{X} \\bowtie \\mathrm{Y} \\neq t \\)`,
+        `\\( \\text{A} \\bowtie \\text{B} = t \\)`,
+        `\\( \\text{A} \\bowtie \\text{B} \\neq t \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+  ]
+});
+
+
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
 
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1
