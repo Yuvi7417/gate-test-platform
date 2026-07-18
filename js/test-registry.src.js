@@ -6500,6 +6500,220 @@ registerTest({
 });
 
 
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Databases-2",
+  date: "July 18, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>NULL values in relational model can be used for all except which one of the following scenarios?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `To allow duplicate tuples in the table by filling the primary key column(s) with NULL.`,
+        `To avoid confusion with actual legitimate data values like 0 for integer columns and \\( \\text{‘ ’} \\) (the empty string) for string columns.`,
+        `To leave columns in a tuple marked as “unknown” when the actual value is unknown.`,
+        `To fill a column in tuple when that column does not really “exist” for that particular tuple`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider the following \\( \\text{ER} \\) diagram : </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_1.png"/></p><br/><p><br/>Manager-to-worker mapping is one-to-many.</p><br/><p>We convert this \\( \\text{ER} \\) diagram into the relational model. Minimum how many relations are needed in the relational model for this \\( \\text{ER} \\) diagram, if we do not want null values in our database? </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 2.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following ER diagram :</p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_2.png"/></p><br/><p><br/>“borrower” mapping cardinality is many-to-many. While converting the ER diagram into a relational DBMS model, the relationship set “borrower” is converted into a relation</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">borrower</span><span class="pun">(</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id</span><span class="pun">,</span><span class="pln"> access_date</span><span class="pun">)</span></li></ol></pre><p>, what is the primary key of “borrower”?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">cust_id </span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">loan_id </span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">(</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id</span><span class="pun">)</span><span class="pln"> </span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">(</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id</span><span class="pun">,</span><span class="pln"> access_date</span><span class="pun">)</span><span class="pln"> </span></li></ol></pre>`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider the following ER diagram showing a Customer entity:</p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_3.png"/></p><br/><p><br/>“Email” is a multi-valued attribute, So, A customer may have any number of email ids (possibly zero as well).<br/>We convert this ER diagram into the relational model. Minimum how many relations are needed in the relational model for this ER diagram?</p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 2.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>Consider the following \\( \\text{ER} \\) diagram for Checking Accounts: </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_4.png"/></p><br/><p><br/>We convert this \\( \\text{ER} \\) diagram into the relational model. Minimum how many relations are needed in the relational model for this \\( \\text{ER} \\) diagram? </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 2.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>In a relation, \\( \\mathrm{R} \\) attribute \\( \\mathrm{B} \\) of \\( \\mathrm{R} \\) is "fully functional dependent" on an attribute or set of attribute \\( \\mathrm{A} \\) of \\( \\mathrm{R} \\) if \\( \\mathrm{B} \\) is functional dependent on \\( \\mathrm{A} \\) but not functional dependent on any proper subset of \\( \\mathrm{A}. \\)<br/>Consider a relation \\( \\mathrm{S} \\) in which every non-prime attribute is "fully functional dependent" on all candidate keys. What is necessarily true for \\( \\mathrm{S}? \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( S \\) is in \\( 2 \\mathrm{NF} \\).`,
+        `\\( \\mathrm{S} \\) is in \\( 3 \\mathrm{NF} \\).`,
+        `\\( \\mathrm{S} \\) is in \\( \\mathrm{BCNF} \\).`,
+        `\\( \\mathrm{S} \\) is not in \\( \\mathrm{BCNF} \\).`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Which of the following is/are correct rules in the context of functional dependencies over a database? </p><br/><p></p>`,
+      image: "",
+      options: [
+        `If \\( \\alpha \\) is a set of attributes and \\( \\beta \\subseteq \\alpha \\), then \\( \\alpha \\rightarrow \\beta \\) always holds.`,
+        `If \\( \\alpha \\rightarrow \\beta \\) holds, and \\( \\gamma \\) is a set of attributes, then \\( \\gamma \\alpha \\rightarrow \\gamma \\beta \\) holds.`,
+        `If \\( \\alpha \\rightarrow \\beta \\) holds, and \\( \\gamma \\beta \\rightarrow \\delta \\) holds, then \\( \\alpha \\gamma \\rightarrow \\delta \\) holds.`,
+        `If \\( \\alpha \\rightarrow \\beta \\) holds, and \\( \\beta \\rightarrow \\gamma \\) holds, then \\( \\alpha \\rightarrow \\gamma \\) holds.`,
+      ],
+      answer: ["A;B;C;D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following two \\( \\text{ER} \\) diagrams -- \\( \\text{ER1} \\) and \\( \\text{ER2}. \\) </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_5.png"/></p><br/><p><br/><br/>The statement that the number of entities in an entity set \\( \\mathrm{P} \\) must be greater than or equal to the number of entities in an entity set \\( \\mathrm{Q} \\) holds for </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{ER1} \\) but not \\( \\text{ER2} \\)`,
+        `\\( \\text{ER2} \\) but not \\( \\text{ER1} \\)`,
+        `Both \\( \\text{ER1} \\) and \\( \\text{ER2} \\)`,
+        `Neither \\( \\text{ER1} \\) nor \\( \\text{ER2} \\)`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following schema.</p><pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">create table T </span><span class="pun">(</span><span class="pln"></span></li><li class="L1"><span class="pln"> c integer primary key</span><span class="pun">,</span><span class="pln"></span></li><li class="L2"><span class="pln"> d integer</span><span class="pun">);</span><span class="pln"></span></li></ol></pre><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">create table S </span><span class="pun">(</span><span class="pln"></span></li><li class="L1"><span class="pln"> b integer primary key</span><span class="pun">,</span><span class="pln"></span></li><li class="L2"><span class="pln"> c integer references t</span><span class="pun">(</span><span class="pln">c</span><span class="pun">)</span><span class="pln"> on </span><span class="kwd">delete</span><span class="pln"> cascade</span><span class="pun">);</span><span class="pln"></span></li></ol></pre><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">create table R </span><span class="pun">(</span><span class="pln"></span></li><li class="L1"><span class="pln"> a integer primary key</span><span class="pun">,</span><span class="pln"></span></li><li class="L2"><span class="pln"> b integer references s</span><span class="pun">(</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> on </span><span class="kwd">delete</span><span class="pln"></span><span class="kwd">set</span><span class="pln"></span><span class="kwd">null</span><span class="pun">);</span><span class="pln"></span></li></ol></pre><p><br/>Suppose the current contents of \\( \\text{R, S}, \\) and \\( \\text{T} \\) are as follows. </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_6.png"/></p><br/><p><br/>After executing the command:</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"></span><span class="kwd">delete</span><span class="pln"></span><span class="kwd">from</span><span class="pln"> T</span><span class="pun">;</span><span class="pln"></span></li></ol></pre><p>What tuples will \\( \\text{R} \\) contain? (By the above command, all records in the table \\( \\text{T} \\) will be deleted!) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{R} \\) will not be changed.`,
+        `\\( (1, \\mathrm{NULL}) \\) and \\( (2,2) \\).`,
+        `\\( (1, \\mathrm{NULL}) \\) and \\( (2, \\mathrm{NULL}) \\).`,
+        `\\( (2,2) \\) only.`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following \\( \\text{ER} \\) diagram : </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_7.png"/></p><br/><p><br/>Primary keys of the entity set \\( \\mathrm{P}, \\mathrm{Q}, \\mathrm{S}, \\mathrm{T} \\) are \\( \\mathrm{M}, \\mathrm{N}, \\mathrm{O}, \\mathrm{K} \\) respectively. While converting the \\( \\text{ER} \\) diagram into relational DBMS model, the relationship set \\( \\mathrm{R} \\) is converted into a relation \\( \\mathrm{R}(\\mathrm{M}, \\mathrm{N}, \\mathrm{O}, \\mathrm{K}) \\), what is the primary key of \\( \\mathrm{R}? \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{M} \\)`,
+        `\\( \\mathrm{KNO} \\)`,
+        `\\( \\mathrm{MKO} \\)`,
+        `\\( \\mathrm{N} \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider the following five \\( \\text{ER} \\) diagrams - \\( \\text{ER1} \\) to \\( \\text{ER5}. \\) </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_8.png"/></p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_9.png"/></p><br/><p>For which of these \\( \\text{ER} \\) diagrams the following is true :<br/>“The number of entities in an entity set \\( \\text{B} \\) must be greater than or equal to the number of entities in an entity set \\( \\text{A} \\)” </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{ER1, ER2} \\) only`,
+        `\\( \\text{ER5} \\) only`,
+        `\\( \\text{ER3, ER5} \\) only`,
+        `\\( \\text{ER4, ER5} \\) Only`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Under a relational database system, in the most general case, if table \\( \\mathrm{R} \\) has a foreign key \\( \\text{(FK)} \\) constraint referencing table \\( \\text{S}, \\) then, via the \\( \\text{FK}, \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `each tuple in \\( \\mathrm{R} \\) is related to zero or more tuples in \\( \\mathrm{S} \\).`,
+        `each tuple in \\( \\mathrm{R} \\) is related to zero or one tuple in \\( \\mathrm{S} \\).`,
+        `each tuple in \\( \\mathrm{R} \\) is related to exactly one tuple in \\( \\mathrm{S} \\).`,
+        `each tuple in \\( \\mathrm{R} \\) is related to one or more tuples in \\( \\mathrm{S} \\).`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider the following \\( \\text{ER} \\) diagram: </p><p style="text-align:center"><img alt="" src="js/questions/databases_2/img_10.png"/></p><br/><p><br/>There is One-to-one mapping between customers, loans.</p><br/><p>Assume that the Participation of loan in borrower is total.</p><br/><p>We convert this ER diagram into the relational model. What will be the correct relational model design for this ER diagram, if we do not want null values in our database?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L2"><span class="pln">borrower</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> cust_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li><li class="L2"><span class="pln">borrower</span><span class="pun">(</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">loan_id </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-sql prettyprinted" data-pbcklang="sql" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">customer</span><span class="pun">(*</span><span class="pln">cust_id</span><span class="pun">,</span><span class="pln"> loan_id</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> street_address</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span></li><li class="L1"><span class="pln">loan </span><span class="pun">(*</span><span class="pln">loan_id</span><span class="pun">,</span><span class="pln"> amount </span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></li></ol></pre>`,
+      ],
+      answer: ["A;B;C"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Consider a relation \\( \\mathrm{R} \\) with \\( 2d \\) attributes \\( \\left(d\\right. \\) is an integer \\( \\geq 2 ) \\) that are named \\( \\text{A}_1, \\text{A}_2, \\text{A}_3, \\ldots, \\text{A}_{2 d} \\). There is a set \\( \\mathrm{F} \\) of \\( 2d\\;\\text{FDs} \\) on \\( \\text{R}: \\text{A}_{i} \\rightarrow \\text{A}_{1+(i+1) \\bmod 2d}, \\) for \\( i=1 \\ldots 2d \\). (Here, mod is the modulo operator). </p><br/><p>For example, suppose \\( d=2 \\), the attributes are \\( \\text{A}_1, \\text{A}_2, \\text{A}_3, \\text{A}_4 \\) and \\( \\text{F}=\\left\\{\\text{A}_1 \\rightarrow \\text{A}_3, \\text{A}_3 \\rightarrow \\text{A}_1, \\text{A}_2 \\rightarrow \\text{A}_4, \\text{A}_4 \\rightarrow \\text{A}_2\\right\\} \\) </p><br/><p>How many keys are present in \\( \\mathrm{R}? \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( d \\)`,
+        `\\( d+2 \\)`,
+        `\\( 2 d \\)`,
+        `\\( d^2 \\)`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p><br/><p>The \\( \\text{ER} \\) diagram shown below depicts a car rental scheme, where every customer can take more than \\( 1 \\) car for rent, or \\( 1 \\) car may be rented to multiple customers. </p><p style="text-align:center"><img alt="" height="171" src="js/questions/databases_2/img_11.png" width="516"/></p><br/><p><br/>If the above \\( \\text{ER} \\) diagram is mapped to a relational model, to correctly depict the above scenario, the total number of required relations is _________ </p><br/><p></p>`,
+      image: "",
+      options: [],
+      answer: 5.0,
+      solution: `<div class="res_solution"> </div>`
+    },
+  ]
+});
+
+
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
 
 registerTest({   // made easy 2026 cse topic wise test theory of computation-1

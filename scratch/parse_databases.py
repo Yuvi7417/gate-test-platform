@@ -12,10 +12,10 @@ def main():
     with open('test.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
-    img_dir = 'js/questions/databases_1'
+    img_dir = 'js/questions/databases_2'
     os.makedirs(img_dir, exist_ok=True)
 
-    test_name = 'TWT - Databases-1'
+    test_name = 'TWT - Databases-2'
     questions = []
     
     q_divs = soup.find_all('div', class_='res_question')
@@ -158,26 +158,16 @@ def main():
     
     insert_code = "\n".join(out)
     
-    # Replace existing TWT - Databases-1 block if present
-    with open('js/test-registry.js', 'r', encoding='utf-8') as f:
+    # Insert before MADE EASY 2026
+    with open('js/test-registry.src.js', 'r', encoding='utf-8') as f:
         content = f.read()
         
-    start_str = 'registerTest({\n  series: "cs-gate-classes",\n  name: "TWT - Databases-1",'
-    
-    if start_str in content:
-        # find the end of this registerTest block
-        start_idx = content.find(start_str)
-        # Assuming the next line after this block is // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
-        end_str = '// MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES'
-        end_idx = content.find(end_str, start_idx)
-        
-        if end_idx != -1:
-            new_content = content[:start_idx] + insert_code + "\n\n\n" + content[end_idx:]
-            with open('js/test-registry.js', 'w', encoding='utf-8') as f:
-                f.write(new_content)
-            print("Successfully replaced the test!")
-        else:
-            print("Could not find end of test.")
+    target = "// MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES"
+    if target in content:
+        new_content = content.replace(target, insert_code + "\n\n\n" + target)
+        with open('js/test-registry.src.js', 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print("Successfully inserted the test!")
     else:
         print("Target not found.")
 
