@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tests": "javascript-obfuscator js/test-registry.src.js --output js/test-registry.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,8 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.7.3",
     "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^5.4.7"
   }
 }
