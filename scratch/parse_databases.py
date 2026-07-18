@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 import urllib.request
 from bs4 import BeautifulSoup
 
@@ -12,10 +13,11 @@ def main():
     with open('test.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
-    img_dir = 'js/questions/databases_4'
+    test_num = sys.argv[1] if len(sys.argv) > 1 else '4'
+    img_dir = f'js/questions/databases_{test_num}'
     os.makedirs(img_dir, exist_ok=True)
 
-    test_name = 'TWT - Databases-4'
+    test_name = f'TWT - Databases-{test_num}'
     questions = []
     
     q_divs = soup.find_all('div', class_='res_question')
