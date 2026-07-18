@@ -96,7 +96,10 @@ def main():
         if q_type == 'NAT':
             ans = float(ans_text) if ans_text else 0.0
         elif q_type == 'MSQ':
-            ans = [c.strip() for c in ans_text.split(',')]
+            if ';' in ans_text:
+                ans = [c.strip() for c in ans_text.split(';')]
+            else:
+                ans = [c.strip() for c in ans_text.split(',')]
         else:
             ans = ans_text
             

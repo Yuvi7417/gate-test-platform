@@ -6756,7 +6756,7 @@ registerTest({
         `\\( \\sigma_{\\textsf{A>C}}(\\textsf{r}) \\cap \\sigma_{\\textsf{A>C}} (\\textsf{s}) \\)`,
         `\\( \\sigma_{\\textsf{A>C}}(\\text{r} \\cap \\textsf{s}) \\)`,
       ],
-      answer: ["A;C;D"],
+      answer: ["A", "C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6861,7 +6861,7 @@ registerTest({
         `\\( \\pi_{\\text{A, B}}\\text{(R} \\times \\text{S)} \\) and \\( (\\pi _{\\text{A, B}}\\text{(R))} \\times \\text{S} \\)`,
         `\\( \\sigma_{\\text{B=1}}(\\text{R} \\times \\text{S}) \\) and \\( \\left(\\sigma_{\\text{B=1}}(\\text{R})\\right) \\times \\text{S} \\)`,
       ],
-      answer: ["B;D"],
+      answer: ["B", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6901,7 +6901,7 @@ registerTest({
         `After executing the command “DELETE FROM S;”, T will contain \\( 2 \\) tuples.`,
         `After executing the command “DELETE FROM R;”, T will contain \\( 2 \\) tuples.`,
       ],
-      answer: ["A;B;C;D"],
+      answer: ["A", "B", "C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
@@ -6916,7 +6916,7 @@ registerTest({
         `\\( \\prod_{a, b}(r) \\)`,
         `\\( \\prod_{a, b, d}(r) \\)`,
       ],
-      answer: ["C;D"],
+      answer: ["C", "D"],
       solution: `<div class="res_solution"> </div>`
     },
     {
