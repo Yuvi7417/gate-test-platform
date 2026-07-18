@@ -7037,6 +7037,240 @@ registerTest({
   ],
 });
 
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - C-Programing-1",
+  date: "July 18, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider the \\( k \\) bit binary pattern. \\( \\text{T}_{\\max} \\) and \\( \\text{T}_{\\min} \\) are maximum and minimum signed numbers we can represent using \\( k \\) bits. \\( \\text{U}_{\\max} \\) and \\( \\text{U}_{\\min} \\) are maximum and minimum unsigned numbers we can represent using \\( k \\) bits. Numbers are represented using 2's complement system. </p><br/><p>Which of the following(s) is/are true for \\( k =16? \\) </p><br/><p>Here \\( |.| \\) represents absolute value of a number i.e. \\( |r| = -r \\) if \\( r&lt;0 \\) otherwise \\( |r| = r. \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( |\\text{T}_{\\min}| = \\text{T}_{\\max} + 1 \\)`,
+        `\\( \\text{U}_{\\max} = 2\\ast \\text{T}_{\\max} +1 \\)`,
+        `\\( \\text{U}_{\\max} = |\\text{T}_{\\min}| + \\text{T}_{\\max} + 1 \\)`,
+        `\\( \\text{U}_{\\min} = |\\text{T}_{\\min}| \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider Figure A and Figure B, which represent \\( 4 \\) bit signed and unsigned numbers, respectively, in the \\( 2’s \\) complement system.<br/><strong><img alt="" height="311" src="js/questions/c_programming_1/img_1.png" width="809"/></strong><br/>Assume that a few variables are defined below and initialized in such a way that places them in the spot shown in Figure C. </p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> s1</span><span class="pun">,</span><span class="pln"> s2</span><span class="pun">,</span><span class="pln"> s3</span><span class="pun">,</span><span class="pln"> s4</span><span class="pun">;</span></li><li class="L1"><span class="kwd">unsigned</span><span class="pln"></span><span class="kwd">int</span><span class="pln"> u1</span><span class="pun">,</span><span class="pln"> u2</span><span class="pun">,</span><span class="pln"> u3</span><span class="pun">,</span><span class="pln"> u4</span><span class="pun">;</span></li></ol></pre><p>Which of the following(s) is/are FALSE?</p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( s2 > s4 \\)`,
+        `\\( s1 > s2 \\)`,
+        `\\( s1 > u3 \\)`,
+        `\\( s3 > u3 \\)`,
+      ],
+      answer: ["A"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>Assume that \\( x \\) is a two’s complement binary integer whose absolute value is not large (so no overflow problems). At right are four C expressions that use the \\( &lt;&lt; \\) (shift left) and \\( \\sim \\) (bitwise complement: flip each \\( 0 \\) to \\( 1 \\) and each \\( 1 \\) to \\( 0 \\) in the binary representation) operators. For example, \\( 7 &lt;&lt; 1 \\) is \\( 14 \\) and \\( \\sim 0 \\) is \\( -1. \\) </p><br/><p>Match each expression to one of the mathematical functions at left.</p><br/><p> \\( \\begin{array}{|l|c|l|c|} \\hline a. &amp; 4x &amp; \\text{I.} &amp; (\\sim x) + 1 \\\\\\hline b. &amp; -x &amp; \\text{II.} &amp; (x&lt;&lt;1) + x \\\\\\hline c. &amp; 3x &amp; \\text{III.} &amp; \\sim x \\\\\\hline d. &amp; -x-1 &amp; \\text{IV.} &amp; x&lt;&lt;2 \\\\\\hline \\end{array} \\) </p><br/><p></p>`,
+      image: "",
+      options: [
+        `<br/>a - IV<br/>b - I<br/>c - II<br/>d - III`,
+        `<br/>a - IV<br/>b - III<br/>c - II<br/>d - I`,
+        `<br/>a - II<br/>b - I<br/>c - IV<br/>d - III`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>What will be the output of the following program?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="pln">main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"></span><span class="kwd">char</span><span class="pln"> grade</span><span class="pun">=</span><span class="str">'A'</span><span class="pun">;</span></li><li class="L4"><span class="pln"></span><span class="kwd">int</span><span class="pln"> result</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">grade</span><span class="pun">)</span></li><li class="L6"><span class="pln"></span><span class="pun">{</span></li><li class="L7"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="str">'A'</span><span class="pun">:</span></li><li class="L8"><span class="pln"> result</span><span class="pun">+=</span><span class="lit">4</span><span class="pun">;</span></li><li class="L9"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="str">'B'</span><span class="pun">:</span></li><li class="L0"><span class="pln"> result</span><span class="pun">+=</span><span class="lit">3</span><span class="pun">;</span></li><li class="L1"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="str">'C'</span><span class="pun">:</span></li><li class="L2"><span class="pln"> result</span><span class="pun">+=</span><span class="lit">2</span><span class="pun">;</span></li><li class="L3"><span class="pln"></span><span class="kwd">default</span><span class="pun">:</span></li><li class="L4"><span class="pln"> result</span><span class="pun">+=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="pun">}</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> result</span><span class="pun">);</span></li><li class="L7"><span class="pun">}</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `\\( 10 \\)`,
+        `\\( 4 \\)`,
+        `\\( 9 \\)`,
+        `\\( 0 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p><br/><p>What is the logical condition under which the following while loop will terminate?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"></span><span class="typ">Beta</span><span class="pln"></span><span class="pun">=</span><span class="pln"></span><span class="lit">5</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pln"></span><span class="pun">(</span><span class="typ">Beta</span><span class="pln"></span><span class="pun">&gt;</span><span class="pln"></span><span class="lit">0</span><span class="pln"></span><span class="pun">&amp;&amp;</span><span class="pln"></span><span class="typ">Beta</span><span class="pln"></span><span class="pun">&lt;</span><span class="pln"></span><span class="lit">10</span><span class="pun">)</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"></span><span class="typ">Beta</span><span class="pun">);</span></li><li class="L4"><span class="pln"> scanf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"></span><span class="pun">&amp;</span><span class="typ">Beta</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `Beta \\( <0 \\;\\&\\&\\; \\) Beta \\( >= 10 \\)`,
+        `Beta \\( <0 \\;|| \\) Beta \\( > 10 \\)`,
+        `Beta \\( <= 0 \\;|| \\) Beta \\( >= 10 \\)`,
+        `Beta \\( <0\\; || \\) Beta \\( >= 10 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>What will be output on the execution of the following code segment?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="pln">main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"></span><span class="kwd">unsigned</span><span class="pln"> num1 </span><span class="pun">=</span><span class="pln"></span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln"></span><span class="kwd">signed</span><span class="pln"> num2 </span><span class="pun">=</span><span class="pln"></span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&lt;</span><span class="pln"> num2</span><span class="pun">)</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"less"</span><span class="pun">);</span></li><li class="L7"><span class="pln"></span><span class="kwd">else</span><span class="pln"></span><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&gt;</span><span class="pln"> num2</span><span class="pun">)</span></li><li class="L8"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"greater"</span><span class="pun">);</span></li><li class="L9"><span class="pln"></span><span class="kwd">else</span><span class="pln"></span><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">==</span><span class="pln"> num2</span><span class="pun">)</span></li><li class="L0"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"equal"</span><span class="pun">);</span></li><li class="L1"><span class="pun">}</span></li><li class="L2"><span class="pln"></span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `greater`,
+        `less`,
+        `equal`,
+        `Error`,
+      ],
+      answer: "B",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Imagine that our system uses a \\( 5 \\)-bit integer representation and does addition and subtraction using the rules for \\( 5 \\)-bit, two’s complement arithmetic. </p><br/><p>Which of the following is/are TRUE?</p><br/><p>When converting to decimal, you should treat the value as either signed or unsigned according to the rules of C, where \\( \\text{T}_{\\min} \\) and \\( \\text{T}_{\\max} \\) are signed, as are plain constants, but a constant ending in \\( \\text{U} \\) is unsigned. </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{-T}_{\\max} - 1\\text{U} \\) is \\( 16 \\) in decimal`,
+        `\\( \\text{-T}_{\\max} - \\text{T}_{\\min} \\) is \\( 00001 \\) in binary`,
+        `\\( \\text{T}_{\\max} + \\text{T}_{\\max} \\) is \\( -2 \\) in decimal`,
+        `\\( \\text{T}_{\\min} - 1\\text{U} \\) is \\( 15 \\) in decimal`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>What will be the output of the given program?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"></span><span class="kwd">int</span><span class="pln"> sum </span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln"></span><span class="kwd">for</span><span class="pln"></span><span class="pun">(</span><span class="pln"></span><span class="kwd">unsigned</span><span class="pln"></span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">3</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&gt;=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"></span><span class="pun">--</span><span class="pln">i</span><span class="pun">)</span></li><li class="L5"><span class="pln"></span><span class="pun">{</span></li><li class="L6"><span class="pln"></span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> sum</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L7"><span class="pln"></span><span class="kwd">else</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> sum </span><span class="pun">*</span><span class="pln">i</span><span class="pun">;</span></li><li class="L8"><span class="pln"></span><span class="pun">}</span></li><li class="L9"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> sum</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li><li class="L1"><span class="pln"></span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 7 \\)`,
+        `\\( 0 \\)`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Which of the following condition(s) is/are evaluated to true for a given declaration of integer \\( i. \\) </p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"></span><span class="pun">-</span><span class="lit">7</span><span class="pun">;</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `\\( -10 < i <-1 \\)`,
+        `\\( i \\;\\&\\; 0 \\;|\\; 0\\; \\& \\;1 \\)`,
+        `\\( 0\\; \\&\\; 0\\; \\&\\; 0\\; |\\; i \\)`,
+        `\\( !(1 > 0 > i \\;\\&\\; !i) \\)`,
+      ],
+      answer: ["C", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>The statement</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"></span><span class="pun">(</span><span class="pln"></span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"></span><span class="lit">1</span><span class="pln"></span><span class="pun">)</span></li><li class="L1"><span class="pln"> counter </span><span class="pun">%</span><span class="pln"></span><span class="lit">2</span><span class="pln"></span><span class="pun">?</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">)</span><span class="pln"></span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li></ol></pre><p><br/>can \\( \\text{NOT} \\) be rewritten as </p><br/><p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">)</span></li><li class="L2"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span></li><li class="L3"><span class="pln"> </span><span class="kwd">else</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span></li><li class="L2"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span></li><li class="L3"><span class="pln"> </span><span class="kwd">else</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li><li class="L5"><span class="pln"> </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln"> </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span></li><li class="L3"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">)</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span></li><li class="L5"><span class="pln"> </span><span class="kwd">else</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li><li class="L7"><span class="pun">}</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">do</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln"> </span><span class="pun">--</span><span class="pln">counter</span><span class="pun">;</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="str">"A"</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">"B"</span><span class="pln"> </span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">);</span></li></ol></pre>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider the following program fragment. Which of the following if condition(s) prints GO Classes?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"></span><span class="lit">1</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"></span><span class="lit">1</span><span class="pun">,</span><span class="pln"> d </span><span class="pun">=</span><span class="pln"></span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="lit">0</span><span class="pln"></span><span class="pun">&amp;&amp;</span><span class="pln"></span><span class="lit">0</span><span class="pln"></span><span class="pun">==</span><span class="pln"></span><span class="lit">0</span><span class="pun">)</span><span class="pln"></span><span class="com">//first if</span></li><li class="L2"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span></li><li class="L3"><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">b </span><span class="pun">||</span><span class="pln"></span><span class="pun">--</span><span class="pln">b </span><span class="pun">==</span><span class="pln"></span><span class="lit">0</span><span class="pun">)</span><span class="pln"></span><span class="com">//Second if</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span></li><li class="L5"><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">c </span><span class="pun">||</span><span class="pln"> c</span><span class="pun">--</span><span class="pln"></span><span class="pun">==</span><span class="pln"></span><span class="lit">0</span><span class="pun">)</span><span class="pln"></span><span class="com">//Third if</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span></li><li class="L7"><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">d </span><span class="pun">||</span><span class="pln"></span><span class="pun">++</span><span class="pln">d </span><span class="pun">==</span><span class="pln"></span><span class="lit">0</span><span class="pun">)</span><span class="pln"></span><span class="com">//Fourth if</span></li><li class="L8"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"GO Classes"</span><span class="pun">);</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `First if condition`,
+        `Second if condition`,
+        `Third if condition`,
+        `Fourth if condition`,
+      ],
+      answer: ["B", "C"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>Let \\( A \\) and \\( B \\) be two unknown 8-bit 2's complement numbers. <br/>We know the results of \\( A \\,\\hat{}\\, B \\) and \\( A \\,\\&amp;\\, B \\) as shown below:<br/><br/> \\( \\begin{array}{|c|c|} \\hline A \\,\\hat{}\\, B &amp; 00110100 \\\\ \\hline A \\,\\&amp;\\, B &amp; 11001001 \\\\ \\hline \\end{array} \\) <br/><br/>What is the sum \\( A+B \\) expressed in the 8-bit two's complement notation? </p><br/><p></p>`,
+      image: "",
+      options: [
+        `\\( 11000110 \\)<br/>`,
+        `\\( 11000010 \\)<br/>`,
+        `\\( 01000010 \\)<br/>`,
+        `\\( 11010110 \\)`,
+      ],
+      answer: "A",
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Which of the following if statement(s) below is/are equivalent to the given switch statement (that is, produces the same output under the same conditions)? Assume the <strong>answer</strong> is a previously declared int.</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">switch</span><span class="pln"></span><span class="pun">(</span><span class="pln">answer</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">0</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L3"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">1</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L4"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">3</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">5</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L6"><span class="pln"></span><span class="kwd">default</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></li><li class="L7"><span class="pun">}</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span></li><li class="L1"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d entered"</span><span class="pun">,</span><span class="pln"> answer</span><span class="pun">);</span></li><li class="L2"><span class="kwd">else</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">if</span><span class="pln"> </span><span class="pun">((</span><span class="pln">answer </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">5</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span></li><li class="L1"><span class="pln"> answer </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">))</span></li><li class="L2"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d entered"</span><span class="pun">,</span><span class="pln"> answer</span><span class="pun">);</span></li><li class="L3"><span class="kwd">else</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span></li><li class="L1"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span></li><li class="L2"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span></li><li class="L4"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">3</span><span class="pun">)</span></li><li class="L5"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span></li><li class="L6"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span></li><li class="L7"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span></li><li class="L8"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span></li><li class="L9"><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span></li><li class="L0"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span></li><li class="L1"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"0 entered"</span><span class="pun">);</span></li><li class="L2"><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"1 entered"</span><span class="pun">);</span></li><li class="L4"><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">3</span><span class="pun">)</span></li><li class="L5"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"3 entered"</span><span class="pun">);</span></li><li class="L6"><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">==</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span></li><li class="L7"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"5 entered"</span><span class="pun">);</span></li><li class="L8"><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">answer </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">3</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln"> </span><span class="lit">5</span><span class="pun">)</span></li><li class="L9"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Other value entered"</span><span class="pun">);</span></li></ol></pre>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p><br/><p>Consider two given C programs. Which of the following is/are true? It is also known that in C programming, \\( \\&amp;\\&amp; \\) has higher precedence than \\( ||. \\) </p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"></span><span class="lit">1</span></li><li class="L1"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L2"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln"></span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"></span><span class="lit">0</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="kwd">if</span><span class="pln"></span><span class="pun">(++</span><span class="pln">i </span><span class="pun">&amp;&amp;</span><span class="pln"></span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">))</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(“</span><span class="pln">GO </span><span class="typ">Classes</span><span class="pln">\n</span><span class="pun">”);</span></li><li class="L7"><span class="pln"></span><span class="kwd">else</span></li><li class="L8"><span class="pln"> printf</span><span class="pun">(“</span><span class="typ">GATEOverflow</span><span class="pln">\n</span><span class="pun">”);</span></li><li class="L9"><span class="pun">}</span></li></ol></pre><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"></span><span class="lit">2</span></li><li class="L1"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L2"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln"></span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> y</span><span class="pun">,</span><span class="pln"> z</span><span class="pun">;</span></li><li class="L5"><span class="pln"> x </span><span class="pun">=</span><span class="pln"></span><span class="lit">1</span><span class="pun">;</span></li><li class="L6"><span class="pln"> y </span><span class="pun">=</span><span class="pln"> z </span><span class="pun">=</span><span class="pln"></span><span class="lit">0</span><span class="pun">;</span></li><li class="L7"><span class="pln"></span><span class="pun">++</span><span class="pln">x </span><span class="pun">||</span><span class="pln"></span><span class="pun">++</span><span class="pln">y </span><span class="pun">&amp;&amp;</span><span class="pln"></span><span class="pun">++</span><span class="pln">z</span><span class="pun">;</span></li><li class="L8"><span class="pln"></span><span class="kwd">if</span><span class="pln"></span><span class="pun">(</span><span class="pln">y </span><span class="pun">||</span><span class="pln"> z</span><span class="pun">)</span></li><li class="L9"><span class="pln"> printf</span><span class="pun">(“</span><span class="pln">GO </span><span class="typ">Classes</span><span class="pln">\n</span><span class="pun">”);</span></li><li class="L0"><span class="pln"></span><span class="kwd">else</span></li><li class="L1"><span class="pln"> printf</span><span class="pun">(“</span><span class="typ">GATEOverflow</span><span class="pln">\n</span><span class="pun">”);</span></li><li class="L2"><span class="pun">}</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `Program \\( 1 \\) prints GO Classes`,
+        `Program \\( 1 \\) prints GATEOverflow`,
+        `Program \\( 2 \\) prints GO Classes`,
+        `Program \\( 2 \\) prints GATEOverflow`,
+      ],
+      answer: ["B", "D"],
+      solution: `<div class="res_solution"> </div>`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p><br/><p>What will be the output of the following C program?</p><pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> x</span><span class="pun">=</span><span class="lit">3</span><span class="pun">;</span></li><li class="L3"><span class="kwd">int</span><span class="pln"> y</span><span class="pun">;</span></li><li class="L4"><span class="kwd">switch</span><span class="pun">(</span><span class="pln">x</span><span class="pun">++){</span></li><li class="L5"><span class="pln"> x</span><span class="pun">++;</span></li><li class="L6"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">3</span><span class="pun">:</span></li><li class="L7"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Three %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L8"><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L9"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">4</span><span class="pun">:</span></li><li class="L0"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Four %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L1"><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L2"><span class="pln"></span><span class="kwd">case</span><span class="pln"></span><span class="lit">5</span><span class="pun">:</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Five %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L4"><span class="pln"></span><span class="kwd">break</span><span class="pun">;</span></li><li class="L5"><span class="pln"></span><span class="kwd">default</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Default %d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L6"><span class="pln"></span><span class="pun">}</span></li><li class="L7"><span class="pun">}</span></li></ol></pre><p></p>`,
+      image: "",
+      options: [
+        `Three \\( 3 \\)`,
+        `Four \\( 4 \\)`,
+        `Three \\( 4 \\)`,
+        `Four \\( 5 \\)`,
+      ],
+      answer: "C",
+      solution: `<div class="res_solution"> </div>`
+    },
+  ]
+});
+
+
 // MADE EASY 2026 CSE ALL INDIA ONLINE TEST SERIES
 
 registerTest({

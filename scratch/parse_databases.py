@@ -13,11 +13,10 @@ def main():
     with open('test.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), 'html.parser')
 
-    test_num = sys.argv[1] if len(sys.argv) > 1 else '4'
-    img_dir = f'js/questions/databases_{test_num}'
+    test_id = sys.argv[1] if len(sys.argv) > 1 else 'c_programming_1'
+    test_name = sys.argv[2] if len(sys.argv) > 2 else 'TWT - C-Programing-1'
+    img_dir = f'js/questions/{test_id}'
     os.makedirs(img_dir, exist_ok=True)
-
-    test_name = f'TWT - Databases-{test_num}'
     questions = []
     
     q_divs = soup.find_all('div', class_='res_question')
