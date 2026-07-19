@@ -40559,3 +40559,430 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Data Structure-1",
+  date: "October 25, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Given a doubly linked list where each node has two references (prev and next): one that points to a previous node and another that points to a next node. Assume the linked list below and provide the output for the following two lines.</p> <p><strong><img alt="" height="116" src="https://lh3.googleusercontent.com/rA07BmSdkwyMdbIppsBYIyYw3KTVJ8Sx2m4TTDEvO_w9hLCpqjcQeu0tCVU55Of36oq_YCZirtJqVQOXR8Us3cq73XMmjQccBz5oW2F7qcGvn7sJ-lmA-KAdwFgs-cK5urepC6UP8360GkP6Fg" width="608"/></strong></p> <p>The list is restored to its initial state before each line executes:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="typ">Line1</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(“%</span><span class="pln">d</span><span class="pun">”,</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="typ">Line2</span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(“%</span><span class="pln">d</span><span class="pun">”,</span><span class="pln"> tail</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">);</span>
+</pre> <p>Which of the options is correct.</p>`,
+      image: "",
+      options: [
+        `Output of line \\( 1 \\) is \\( 7 \\) and Output of line \\( 2 \\) is \\( 9 \\)`,
+        `Output of line \\( 1 \\) is \\( 9 \\) and Output of line \\( 2 \\) is \\( 7 \\)`,
+        `Both lines output \\( 7 \\)`,
+        `Both lines output \\( 9 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>What is the run-time complexity of inserting a new element at the beginning of a circular, doubly linked list with a head?</p>`,
+      image: "",
+      options: [
+        `\\( O(1) \\)<br/>`,
+        `\\( O(\\log \\text{N}) \\)<br/>`,
+        `\\( O(\\text{N}) \\)<br/>`,
+        `\\( O(\\text{N}^2) \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Given a circular, doubly-linked list whose contents are sorted in ascending order, what is the run-time complexity for inserting a new element into the list so that it remains correctly sorted? (Including the time required to search for the element’s correct position.)</p>`,
+      image: "",
+      options: [
+        `\\( O(1) \\)<br/>`,
+        `\\( O(\\log \\text{N}) \\)<br/>`,
+        `\\( O(N) \\)<br/>`,
+        `\\( O(\\text{N}^{2}) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider a function findCLL that takes a doubly circular linked list head and an integer value as input. </p> <p>One example of doubly circular linked list is given below –</p> <p><strong><img alt="" height="65" src="https://lh4.googleusercontent.com/sxY8JwjRr2XdCpqU02eJeocIprDrCTXFdo0gcN-V25kwzWG4cdNARKj1w7plxBe7QZGk6TgCR-gvvAQn_Fi7wOhY5glwTMvKwN5TsB7ND-c4wW8FkScoYKixsj8Y84JeGdMp18hrYmO7P6xFjg" width="672"/></strong></p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> findCLL</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln"> first</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">first </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> n</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">        first </span><span class="pun">=</span><span class="pln"> first </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">first </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> n</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">else</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span>
+</pre> <p><br/> Consider two statements \\( \\text{S1} \\) and \\( \\text{S2} \\) given below. </p> <ul> <li> \\( \\text{S1}: \\) Function returns \\( 1 \\) if there exists a value in linked list </li> <li> \\( \\text{S2}: \\) Function returns \\( -1 \\) if value does not exist in linked list </li> </ul> <p>Which of the following is the correct option.</p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) is True but \\( \\text{S2} \\) is False.`,
+        `\\( \\text{S2} \\) is True but \\( \\text{S1} \\) is False.`,
+        `Both are True.`,
+        `Both are False.`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider the following Doubly Linked List:</p> <p><br/> <strong><img alt="" height="37" src="https://lh6.googleusercontent.com/0Ls5DjJ0cfyFry2hINdIAxmGw8lvj_gjx7pW6dTykz9p_RB5MS4m3zlVrtnec7ahG3MDNurT3B678z4XtZDNnT9ZZlgKvBT_-B7fFHygjqOQpJCaMGkRHEQ17_dcC6lo8AOP5xVVXP4jMk3JCQ" width="624"/></strong> </p> <p>If head points to the first node of the linked list then what will be the output of the following node? </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">head</span><span class="pun">=</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">=</span><span class="pln">head</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">);</span>
+</pre>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 3 \\)`,
+        `\\( 5 \\)`,
+        `\\( 7 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">void</span><span class="pln"> </span><span class="kwd">print</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">ptr</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">ptr</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln">ptr</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        </span><span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">            printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln">ptr</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">ptr</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln"> </span>
+</pre> <p>What is the output, if the address of the first node of singly linked list \\( 1 \\rightarrow 2 \\rightarrow 3\\rightarrow 4 \\rightarrow 5 \\) is passed in the above C code? </p>`,
+      image: "",
+      options: [
+        `\\( 1\\; 2 \\;3\\; 4\\; 5 \\)`,
+        `\\( 1\\; 1\\; 2\\; 3\\; 4\\; 5 \\)`,
+        `\\( 1\\; 1\\; 2\\; 3\\; 4\\; 5\\; 5 \\)`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following code fragment.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">curr</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">prev</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="com">//front is pointing to the head of the linked list as shown</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">       </span><span class="kwd">in</span><span class="pln"> figure</span><span class="pun">.</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    curr </span><span class="pun">=</span><span class="pln"> front</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> curr</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    prev </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">curr </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="pun">(*)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">front </span><span class="pun">=</span><span class="pln"> prev</span><span class="pun">;</span>
+</pre> <p>Which code must be added in the part marked (*) so the above code correctly inverts a non-empty singly linked list? See the figure to understand what ”invert” means.<br/> </p> <p><strong><img alt="" height="62" src="https://lh5.googleusercontent.com/ExMplg9UNY-Df-uR_21bRFcr2ebe_V0MpzLyk6rKzmuPhGTGCZ-Bae9rDxak9bucs4lZO7wDhHfUPY1035kA_lIjo8o8feu7hLWLuTmDxe_JRZESbSddAj-kJXTyavSHvkaDfULmuMtL-XJOSw" width="756"/></strong></p>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> prev</span><span class="pun">;</span><span class="pln"> prev </span><span class="pun">=</span><span class="pln"> curr</span><span class="pun">;</span><span class="pln"> curr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+</pre> <p> </p>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">curr</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=</span><span class="pln"> prev</span><span class="pun">;</span><span class="pln"> prev </span><span class="pun">=</span><span class="pln"> curr</span><span class="pun">;</span><span class="pln"> curr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+</pre> <p> </p>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=</span><span class="pln">curr</span><span class="pun">;</span><span class="pln"> prev </span><span class="pun">=</span><span class="pln"> curr</span><span class="pun">;</span><span class="pln"> curr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+</pre> <p> </p>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">prev </span><span class="pun">=</span><span class="pln"> curr</span><span class="pun">;</span><span class="pln"> curr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">;</span><span class="pln"> curr</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=</span><span class="pln"> prev</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+</pre>`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>The following code is intended to remove a node p from a doubly linked list. Assume that we know that p is in the list, so the list is not empty.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="kwd">value</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">prev</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">prev </span><span class="pun">*</span><span class="pln">succ</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">prev </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">succ </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="pun">==</span><span class="pln"> front</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    front </span><span class="pun">=</span><span class="pln"> front</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">front </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> rear </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> front</span><span class="pun">-&gt;</span><span class="pln">prev </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="kwd">else</span><span class="pln"> prev</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> succ</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="pun">==</span><span class="pln"> rear</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    rear </span><span class="pun">=</span><span class="pln"> rear</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    rear</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="kwd">else</span><span class="pln"> succ</span><span class="pun">-&gt;</span><span class="pln">prev </span><span class="pun">=</span><span class="pln"> prev</span><span class="pun">;</span>
+</pre> <p>Given three linked lists (a),(b), and (c) as shown below.</p> <p><br/> <strong><img alt="" height="125" src="https://lh5.googleusercontent.com/XPGFupKtI_QF0e9Y3NAHHFagNXJ2gn0RGUDpVVmdFYAxh5tcawigOXLK_zDdG_Pcnkygy5kY7R5sVtVhVf0ub-bVT_sO81sQ1i4BldjDjLKPEcJiMhm8mMg2-Q6xycN_x8laaDHxZOvSK4ZfSw" width="875"/></strong><br/> Mark the correct option(s). </p>`,
+      image: "",
+      options: [
+        `Code will crash on linked list (a)`,
+        `Code will crash on linked list (b)`,
+        `Code will crash on linked list (c)`,
+        `Code will not crash on any of the given linked lists`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a mutual pair of recursive functions g() and h().</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">l</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">l </span><span class="pun">==</span><span class="pln"> NULL </span><span class="pun">||</span><span class="pln"> l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">l</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> h</span><span class="pun">(</span><span class="pln">l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">int</span><span class="pln"> h</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">l</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">l </span><span class="pun">==</span><span class="pln"> NULL </span><span class="pun">||</span><span class="pln"> l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">l</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> g</span><span class="pun">(</span><span class="pln">l</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pun">}</span>
+</pre> <p>Let head be a pointer to a singly linked list having at least \\( 3 \\) nodes. </p> <p>When will the expression (g(head) || h(head)) return \\( 1 \\) or \\( 0? \\) </p>`,
+      image: "",
+      options: [
+        `g(head) || h(head) is \\( 1 \\) if the linked list is in ascending order.`,
+        `g(head) || h(head) is \\( 1 \\) if the linked list is in descending order.`,
+        `g(head) || h(head) is \\( 1 \\) for every unsorted linked list.`,
+        `g(head) || h(head) is \\( 1 \\) for the linked list \\( 1\\rightarrow 3\\rightarrow 2\\rightarrow 4\\rightarrow 0\\rightarrow 6 \\)`,
+      ],
+      answer: ["D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following function that takes reference to head of a Doubly Linked List as parameter. Assume that a node of doubly linked list has previous pointer as \\( \\textit{prev} \\) and next pointer as \\( \\textit{next} \\). </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">**</span><span class="pln">head_ref</span><span class="pun">)</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">temp</span><span class="pun">=</span><span class="pln">NULL</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">current</span><span class="pun">=*</span><span class="pln">head_ref</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">current</span><span class="pun">!=</span><span class="pln">NULL</span><span class="pun">)</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">{</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        temp</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        current</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=</span><span class="pln">temp</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        current</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="pun">}</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">temp</span><span class="pun">!=</span><span class="pln">NULL</span><span class="pun">)</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        </span><span class="pun">*</span><span class="pln">head_ref</span><span class="pun">=</span><span class="pln">temp</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pun">}</span><span class="pln"> </span>
+</pre> <p>Assume that reference of head of following doubly linked list is passed to above function</p> <p> \\( 1 \\leftrightarrow 2 \\leftrightarrow 3 \\leftrightarrow 4 \\leftrightarrow 5 \\leftrightarrow 6 \\) . What should be the modified linked list after the function call? </p>`,
+      image: "",
+      options: [
+        `\\( 2 \\leftrightarrow 1 \\leftrightarrow 4 \\leftrightarrow 3 \\leftrightarrow 6 \\leftrightarrow 5 \\)`,
+        `\\( 5 \\leftrightarrow 4 \\leftrightarrow 3 \\leftrightarrow 2 \\leftrightarrow 1 \\leftrightarrow 6 \\)`,
+        `\\( 6 \\leftrightarrow 5 \\leftrightarrow 4 \\leftrightarrow 3 \\leftrightarrow 2 \\leftrightarrow 1 \\)`,
+        `\\( 6 \\leftrightarrow 5 \\leftrightarrow 4 \\leftrightarrow 3 \\leftrightarrow 1 \\leftrightarrow 2 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following function Merge() that takes the head of two linked lists.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="kwd">value</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> node </span><span class="typ">Node</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="typ">Merge</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> head1</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> head2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head1 </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> head2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head2 </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> head1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> head </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head1 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> head2 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        head </span><span class="pun">=</span><span class="pln"> head1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        head </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Merge</span><span class="pun">(</span><span class="pln">head1 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">,</span><span class="pln"> head2</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head1 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> head2 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">value</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">        head </span><span class="pun">=</span><span class="pln"> head2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">        head </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Merge</span><span class="pun">(</span><span class="pln">head1</span><span class="pun">,</span><span class="pln"> head2 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="kwd">return</span><span class="pln"> head</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pun">}</span>
+</pre> <p>Assume that the input lists are correctly sorted. Which of the following are some of the possible behaviors when Merge() is executed with well-formed and valid inputs? Correctly merged linked list is merged sorted linked list.</p> <ol style="list-style-type:upper-alpha"> <li>The function will produce a correctly merged linked list.</li> <li>The function may lead to a null pointer dereference.</li> <li>The function may result in an incorrectly merged linked list.</li> <li>Merge() will work on the following two lists. </li> </ol>`,
+      image: "",
+      options: [
+        `\\( \\text{List}1: 1 \\rightarrow 3 \\rightarrow 5\\rightarrow 7\\rightarrow \\text{Null} \\)`,
+        `\\( \\text{List}2: 2\\rightarrow 4\\rightarrow 6\\rightarrow 8\\rightarrow 10 \\rightarrow 12\\rightarrow \\text{Null} \\)`,
+      ],
+      answer: ["C", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following program. printlist() is a function that takes the head of a linked list and prints all nodes values separated by comma. Node is typedefed singly linked list type struct.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">void</span><span class="pln"> insert1</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">head</span><span class="pun">,</span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="typ">NewNode</span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*)</span><span class="pln">malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="typ">Node</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="typ">NewNode</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">=</span><span class="pln">data</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="typ">NewNode</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=</span><span class="pln">head</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    head</span><span class="pun">=</span><span class="typ">NewNode</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="kwd">void</span><span class="pln"> insert2</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">**</span><span class="pln">head_ref</span><span class="pun">,</span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="typ">NewNode</span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*)</span><span class="pln">malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="typ">Node</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="typ">NewNode</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">=</span><span class="pln">data</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="typ">NewNode</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">=*(</span><span class="pln">head_ref</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    </span><span class="pun">*(</span><span class="pln">head_ref</span><span class="pun">)=</span><span class="typ">NewNode</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    </span><span class="com">/* create a linked list 1-&gt;2-&gt;3-&gt;4-&gt;5 </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="com">and head points to the first node.*/</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">    insert1</span><span class="pun">(</span><span class="pln">head</span><span class="pun">,</span><span class="lit">9</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">    printlist</span><span class="pun">(</span><span class="pln">head</span><span class="pun">);</span><span class="pln"> </span><span class="com">//Line X</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">21</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">22</span><span class="pln">    </span><span class="com">//The list is restored to its initial state</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">23</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">24</span><span class="pln">    insert2</span><span class="pun">(&amp;</span><span class="pln">head</span><span class="pun">,</span><span class="lit">9</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">25</span><span class="pln">    printlist</span><span class="pun">(</span><span class="pln">head</span><span class="pun">);</span><span class="pln"> </span><span class="com">//Line Y</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">26</span><span class="pun">}</span>
+</pre> <p>Which of the following is/are true about the above program?</p>`,
+      image: "",
+      options: [
+        `Line \\( \\text{X} \\) prints \\( 9,1,2,3,4,5 \\)`,
+        `Line \\( \\text{Y} \\) prints \\( 9,1,2,3,4,5 \\)`,
+        `Line \\( \\text{X} \\) prints \\( 1,2,3,4,5 \\)`,
+        `Line \\( \\text{Y} \\) prints \\( 1,2,3,4,5 \\)`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following function fun() that takes the head of a linked list.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="kwd">value</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> node </span><span class="typ">Node</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">int</span><span class="pln"> fun</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">head</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">head</span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">,*</span><span class="pln">q</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    p </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    q </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">q</span><span class="pun">!=</span><span class="pln">NULL </span><span class="pun">&amp;&amp;</span><span class="pln"> q</span><span class="pun">!=</span><span class="pln">p</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        q </span><span class="pun">=</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">q</span><span class="pun">==</span><span class="pln">NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    q </span><span class="pun">=</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    p </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="pln">q</span><span class="pun">==</span><span class="pln">NULL</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pun">}</span>
+</pre> <p><br/> We say, a linked list has a loop if the last node of linked list points to some node of linked list and does not point to NULL.</p> <p>What does the above function do?</p>`,
+      image: "",
+      options: [
+        `Returns \\( 0 \\) is there is loop in linked list`,
+        `Returns \\( 1 \\) is there is loop in linked list`,
+        `Returns \\( 0 \\) is length of the linked list is even`,
+        `Function may go to infinite loop if there is a loop in linked list`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following function foo() which takes the head pointer of two singly-linked lists.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">foo</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">head1</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">head2</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">final</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">temp</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head1 </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> head2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head2 </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> head1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    temp </span><span class="pun">=</span><span class="pln"> foo</span><span class="pun">(</span><span class="pln">head1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">,</span><span class="pln"> head2</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">final</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> head1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    head1 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> head2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    head2 </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> temp</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">final</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pun">}</span>
+</pre> <p><br/> What will be the final linked list returned by foo() if executed upon following linked lists?</p> <p><strong><img alt="" height="43" src="https://lh6.googleusercontent.com/77vc76YU2XsivCfNo_9oLPh3-wy9gMdxzJ3MHG0LvFIBSzCXWkWQVXDQuJnu8f3cATsyEnH1JZVN5SxsnnKsTXKJYBgEJR3v6aWWSNjyoTFw_d4RD48ypwaRk6iGl4ulneXwCf_85pJroNRE7Q" width="624"/></strong></p> <p><strong><img alt="" height="43" src="https://lh3.googleusercontent.com/6bGoQUB2SETmuz8EmIDLC_ys09NX-W8eNYKtbE9kfS5U8OmNB02qqTphTPVti1ZpNaEdfv5hPMmCByWwoBFjxJGj2txD_i4SK07o7BS-C-A2TTSDEBE7_ezYlCJdLgGHO3Bx-UuxGFW4G9W7Kg" width="407"/></strong></p>`,
+      image: "",
+      options: [
+        `\\( 1,2,3,4,5,7,8,9,10 \\)`,
+        `\\( 1,2,3,4,5,7,8,10,9,10 \\)`,
+        `\\( 1,2,3,4,5,8,7,10,9,10 \\)`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A doubly linked list is declared as:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="typ">Value</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">prev</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">};</span>
+</pre> <p>Which of the following segment of code deletes the node pointed to by \\( \\text{X} \\) from the doubly linked list, if it is assumed that \\( \\text{X} \\) points to neither the first nor the last node of the list? </p>`,
+      image: "",
+      options: [
+        `\\( \\text{X} \\rightarrow \\) prev \\( \\rightarrow \\) next \\( = \\text{X} \\rightarrow \\) next \\( ; \\text{X} \\rightarrow \\) next \\( \\rightarrow \\) prev \\( = \\text{X} \\rightarrow \\) prev; free(X);`,
+        `\\( \\text{X} \\rightarrow \\) prev.next \\( = \\text{X} \\rightarrow \\) next \\( ; X. \\) next \\( \\rightarrow \\) prev \\( = \\text{X} \\rightarrow \\) prev; free(X);`,
+        `\\( \\text{X} \\rightarrow. \\) prev \\( \\rightarrow \\) next \\( = \\text{X}. \\)prev \\( ; \\text{X} \\rightarrow \\) next.prev \\( = \\text{X}. \\)prev; free(X);`,
+        `\\( \\text{X} \\rightarrow \\) prev \\( \\rightarrow \\) next \\( = \\text{X} \\rightarrow \\) prev \\( ; \\text{X} \\rightarrow \\) next \\( \\rightarrow \\) prev \\( = \\text{X} \\rightarrow \\) next; free(X);`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+  ]
+});
