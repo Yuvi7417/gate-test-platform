@@ -41856,3 +41856,232 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Algorithms-1",
+  date: "November 6, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>A lazy programmer thinks that implementing the procedure Merge (of the merge sort) is too complicated. To simplify merge sort he eliminates the merge all together, and only recursively "sorts" the two halves of the array. Here is his pseudo-code.</p> <p> </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="pln">procedure LAZYSORT</span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="lit">1.</span><span class="pun">.</span><span class="pln">n</span><span class="pun">])</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> n</span><span class="pun">&gt;</span><span class="lit">1</span><span class="pln"> </span><span class="kwd">then</span></li><li class="L2"><span class="pln">        m </span><span class="pun">←⌊</span><span class="pln">n</span><span class="pun">/</span><span class="lit">2</span><span class="pun">⌋</span></li><li class="L3"><span class="pln">        LAZYSORT</span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="lit">1.</span><span class="pun">.</span><span class="pln">m</span><span class="pun">])</span></li><li class="L4"><span class="pln">        LAZYSORT</span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">m</span><span class="pun">+</span><span class="lit">1.</span><span class="pun">.</span><span class="pln">n</span><span class="pun">])</span></li></ol></pre> <p>Which of the following is/are TRUE about LAZYSORT?</p> <p></p>`,
+      image: "",
+      options: [
+        `The Time Complexity of LAZYSORT is \\( \\theta(n \\log n) \\)`,
+        `The Time Complexity of LAZYSORT is \\( \\theta(n) \\)`,
+        `LAZYSORT changes the original array in such a way that it exchanges the first half of the array with the second half.`,
+        `LAZYSORT does not change array elements at all`,
+      ],
+      answer: ["B", "D"],
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \\( 3 \\)-Way-Merge Sort: Suppose that instead of dividing in half at each step of Merge Sort, you divide into thirds, sort each third, and finally combine all of them using a three-way merge subroutine. What is the overall asymptotic running time of this algorithm? (Hint: Note that the merge step can still be implemented in \\( \\mathrm{O}(n) \\) time.) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( n \\)`,
+        `\\( n \\log (n) \\)`,
+        `\\( n^{2} \\log (n) \\)`,
+        `\\( n(\\log (n))^{2} \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Recall the Partition subroutine that we used in QuickSort. Suppose that the following array has just been partitioned around some pivot element \\( : 3,1,2,4,5,8,7,6,9. \\) </p> <p>Which of these element(s) could have been the pivot element?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 4 \\)`,
+        `\\( 5 \\)`,
+        `\\( 2 \\)`,
+        `\\( 9 \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n)=4 T(n / 3)+n^{\\log _{3} 4}. \\) What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( T(n)=\\Theta\\left(n^{\\log _{3} 4} \\log n\\right) \\)`,
+        `\\( T(n)=\\Theta(n \\log n) \\)`,
+        `\\( T(n)=\\Theta\\left(4^{\\log _{3} n} \\log \\log n\\right) \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Insertion sort performs best case when input is sorted and worst case when input is sorted backwards.<br/>Compute the average COST of insertion sort to sort a vector with \\( n \\) different integers when with probability \\( \\frac{\\log n}{n} \\) one chooses a vector which is sorted backwards and with probability \\( 1-\\frac{\\log n}{n} \\) one chooses a sorted vector. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^{3}\\right) \\)`,
+        `\\( \\Theta(n \\log n) \\)`,
+        `\\( \\Theta(n) \\)`,
+        `\\( \\Theta\\left(n^{2}\\right) \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Consider a constant \\( \\alpha = 0.3 \\). If we use randomized quick sort (pivot chosen is uniform random) then what is the probability that the partition method will result in an array such that the size of the smaller subarray is \\( \\geq \\alpha n \\) where \\( n \\) is the total size of the array? </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "0.4",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a quicksort where splits at every level are in the proportion of \\( \\alpha \\), which means one of the partitions is \\( \\alpha n \\) and the other partition is \\( (1-\\alpha) n \\). The recursive equation of time complexity can be written as </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=T(\\alpha&amp;nbsp;n)+T(1-\\alpha) n)+n. \$\$ Consider a recursion tree of function calls and let \\( x \\) be the height of the tree when we hit the base case the first time and let \\( y \\) be the maximum height of the tree then, which of the following is/are true?<br/> Base case is an array containing single element. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\alpha^ x n=1 \\) and \\( (1-\\alpha)^ y n=1 \\) if \\( \\alpha&lt;0.5 \\)`,
+        `\\( \\alpha^ y n=1 \\) and \\( (1-\\alpha)^ x n=1 \\) if \\( \\alpha&lt;0.5 \\)`,
+        `\\( \\alpha^ x n=1 \\) and \\( (1-\\alpha)^ y n=1 \\) if \\( \\alpha&gt;0.5 \\)`,
+        `\\( \\alpha^ y n=1 \\) and \\( (1-\\alpha)^ x n=1 \\) if \\( \\alpha&gt;0.5 \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider partition algorithm of randomized quick sort which randomly choose pivot element and split the array into two halves accordingly. Pivot element will not be in any of the subarrays.</p> <p>Suppose array length is \\( n \\) which is odd then what is the probability that median element lies in second half after partition? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 2 \\)`,
+        `\\( 1 / 2-1 / 2n \\)`,
+        `\\( 1 / 2-2 / n \\)`,
+        `\\( 1-1 / 2 n \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>How many calls of merge-sort are performed when sorting an array of size \\( 64 ? \\) Base case is an array containing a single element. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2^{63} \\)`,
+        `\\( 127 \\)`,
+        `\\( 63 \\)`,
+        `\\( 64 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose you are given \\( k \\) sorted arrays, each with \\( n \\) elements, and you want to combine them into a single array of kn elements. Consider the following approach. Divide the \\( k \\) arrays into \\( k&amp;nbsp;/ 2 \\) pairs of arrays, and use the Merge subroutine of MergeSort to combine each pair. Now you are left with \\( k / 2 \\) sorted arrays, each with \\( 2 n \\) elements. </p> <p>Repeat this approach until you have a single sorted array with kn elements. What is the running time of this procedure, as a function of \\( k \\) and \\( n? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n k \\log k) \\)`,
+        `\\( \\Theta\\left(n k^ 2\\right) \\)`,
+        `\\( \\Theta(n k \\log n) \\)`,
+        `\\( \\Theta(n \\log k) \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider an array of \\( n \\) distinct integers. An array element is a peak if it is greater than its neighbors.<br/> For corner elements, we need to consider only one neighbor. The corner element is peak only when it's greater than its neighbors.<br/> If there are more than one peak item, simply return one of them. </p> <p>Example:</p> <ul> <li>Input \\( : [1, 5, 3, 2, 4, 0] \\) Output \\( : 4 \\) </li> <li>Input \\( : [1, 2, 3, 4, 5, 6] \\) Output \\( : 6 \\) </li> <li>Input \\( : [7, 6, 5, 4, 3, 2] \\) Output \\( : 7 \\) </li> </ul> <p>We design a divide-and-conquer algorithm that solves this problem. The incomplete pseudo-code is given below.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="pln">findPeak</span><span class="pun">(</span><span class="pln">A</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> j</span><span class="pun">){</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="pln">j</span><span class="pun">)</span><span class="pln"> </span><span class="com">//one element</span></li><li class="L2"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> i </span></li><li class="L3"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">i</span><span class="pun">==</span><span class="pln">j</span><span class="pun">-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="com">//two elements</span></li><li class="L4"><span class="pln">        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">j</span><span class="pun">]</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> i</span></li><li class="L5"><span class="pln">        </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> j</span></li><li class="L6"><span class="pln">    mid </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">i</span><span class="pun">+</span><span class="pln">j</span><span class="pun">)/</span><span class="lit">2</span></li><li class="L7"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">]&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">-</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">]&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">+</span><span class="lit">1</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> mid</span></li><li class="L8"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">-</span><span class="lit">1</span><span class="pun">]&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">])</span></li><li class="L9"><span class="pln">    </span><span class="com">//line X</span></li><li class="L0"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">+</span><span class="lit">1</span><span class="pun">]&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">mid</span><span class="pun">])</span></li><li class="L1"><span class="pln">    </span><span class="com">//line Y</span></li><li class="L2"><span class="pun">}</span></li></ol></pre> <p>Fill in the blanks for lines \\( X \\) and \\( Y \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `Line \\( X \\) is return findPeak \\( (A, i, \\) mid \\( -1) \\)`,
+        `Line \\( Y \\) is return findPeak( \\( A \\), mid \\( +1, j) \\)`,
+        `Line \\( X \\) is return findPeak \\( (A \\), mid \\( +1, j) \\)`,
+        `Line \\( Y \\) is return findPeak \\( (A, i, \\) mid \\( -1) \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider two statements about RANDOMIZED QUICKSORT.</p> <ul> <li> \\( S1: \\) There is some input for which randomized quicksort always runs in time \\( \\Theta\\left(n^ 2\\right) \\) time. </li> <li> \\( S2: \\) An adversary can provide randomized quicksort with an input array of length \\( n \\) that forces the algorithm to run in \\( \\Theta(n \\lg n) \\) time on that input. </li> </ul> <p>Choose the correct option (assume distinct elements in input):</p> <p></p>`,
+      image: "",
+      options: [
+        `Both statements are correct`,
+        `\\( S1 \\) is correct, but \\( S 2 \\) is false`,
+        `\\( S 1 \\) is false, but \\( S 2 \\) is correct`,
+        `Both Statements are incorrect`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>An inversion in a vector of integers \\( T[0 \\ldots n-1] \\) is a pair of positions storing values that are not ordered, that is, a pair \\( (i, j) \\) such that \\( 0 \\leq&amp;nbsp;i&lt;j&lt;n \\) and \\( T[i]&gt;T[j] \\). </p> <p>Let \\( T[0 \\ldots 99] \\) be an array of hundred integers. It is also given that \\( T[0]&gt;T [10] \\). Relation between other elements is not given.<br/> Which of the following is/are true about a number of inversions. </p> <p></p>`,
+      image: "",
+      options: [
+        `There are at most \\( 11 \\) inversions in the array.`,
+        `There are at least \\( 10 \\) inversions in the array.`,
+        `There are at most \\( 10 \\) inversions in the array.`,
+        `There are at least \\( 11 \\) inversions in the array.`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Assume that the inputs of size \\( n \\) of a certain algorithm are of the following types: </p> <ul> <li>Type \\( 1: \\) for each input of this type, the algorithm takes time \\( \\Theta\\left(n^{4}\\right) \\). Moreover, the probability that the input is of this type is \\( \\frac{1}{n^{3}} \\). </li> <li>Type \\( 2: \\) for each input of this type, the algorithm takes time \\( \\Theta\\left(n^{3}\\right) \\). Moreover, the probability that the input is of this type is \\( \\frac{1}{n} \\). </li> <li>Type \\( 3 : \\) for each input of this type, the algorithm takes time \\( \\Theta(n) \\). Moreover, the probability that the input is of this type is \\( 1-\\frac{1}{n^{3}}-\\frac{1}{n} \\). </li> </ul> <p>Then the cost of the algorithm in the average case is</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^{3}\\right) \\)`,
+        `\\( \\Theta\\left(n^{4}\\right) \\)`,
+        `\\( \\Theta(n) \\)`,
+        `\\( \\Theta\\left(n^{2}\\right) \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A[1 \\ldots n] \\) be an array of \\( n \\) distinct numbers. If \\( i&lt;j \\) and \\( A[i]&gt;A[j] \\), then the pair \\( (i, j) \\) is called an inversion of \\( A \\). </p> <p>Suppose that each element of \\( A \\) is chosen randomly, independently, and uniformly from the range \\( 1 \\) through \\( n \\). </p> <p>What will be the expected number of inversions?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( n(n-1) / 4 \\)`,
+        `\\( n \\)`,
+        `\\( n(n-1) / 2 \\)`,
+        `\\( n^ 2 / 2 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+  ]
+});
