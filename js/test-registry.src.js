@@ -36298,3 +36298,335 @@ registerTest({
     },
   ],
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - C-Programing-3",
+  date: "August 2, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>In which of the following case(s) character array must end with null char?</p>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"abcd"</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">'a'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'b'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'c'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'d'</span><span class="pun">};</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"abcd"</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"abcd"</span><span class="pun">;</span></pre>`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>What will be the output of a given program in a little endian system? (Assume int takes 4 bytes)</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> t</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"abcdefg"</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> t</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    p</span><span class="pun">++;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%c"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [
+        `b`,
+        `d`,
+        `e`,
+        `f`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following may lead to a runtime error for the given declaration of \\( p? \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">5</span><span class="pun">];</span></pre>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">p</span><span class="pun">[</span><span class="lit">1</span><span class="pun">][</span><span class="lit">1</span><span class="pun">]</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pun">*</span><span class="pln">p</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">1</span><span class="pun">]</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">p</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span></pre>`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider the following C program.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">void</span><span class="pln"> fun </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">8</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">        a</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]+</span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">main </span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">8</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">,</span><span class="lit">4</span><span class="pun">,</span><span class="lit">5</span><span class="pun">,</span><span class="lit">6</span><span class="pun">,</span><span class="lit">7</span><span class="pun">,</span><span class="lit">8</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    fun</span><span class="pun">(</span><span class="pln">a</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">8</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pun">}</span></pre> <p><br/> Which of the following is/are true about the given program?</p>`,
+      image: "",
+      options: [
+        `Program will exhibit a compiler error since array “a” is of size \\( 5 \\) in function fun() but for loop in fun() runs till \\( 8. \\)`,
+        `Program will exhibit run time error since array “a” is of size \\( 5 \\) in function fun() but for loop in fun() runs till \\( 8. \\)`,
+        `On running the program, the output will be \\( 23456789 \\)`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following is/are valid assignment(s) of the pointer for the given declaration. An assignment is valid if both pointers are of the same type (pointers are compatible) and get successfully compiled with no warning or error.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">4</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">t</span><span class="pun">,</span><span class="pln"> </span><span class="pun">**</span><span class="pln">pp</span><span class="pun">;</span></pre>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">pp </span><span class="pun">=</span><span class="pln"> a</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">pp </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">pp </span><span class="pun">=</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">t </span><span class="pun">=</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">2</span><span class="pun">];</span></pre>`,
+      ],
+      answer: ["D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the given declaration</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">12</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">)</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">24</span><span class="pun">);</span><span class="pln"> </span><span class="com">// assume malloc() is successful</span></pre> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> bytes </span><span class="kwd">and</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8</span><span class="pln"> bytes</span><span class="pun">.</span></pre> <p>What will be the output of the following lines of C code ?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pln"> </span><span class="pun">,</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(</span><span class="pln">p</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(*</span><span class="pln">p</span><span class="pun">));</span></pre>`,
+      image: "",
+      options: [
+        `\\( 8\\; 8\\; 8 \\)`,
+        `\\( 8\\; 8\\; 48 \\)`,
+        `\\( 16\\; 8\\; 96 \\)`,
+        `\\( 16\\; 8\\; 48 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>The C code printed below is a version of the C string library call strlen(), which returns the length of a given string.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> mystrlen</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="com">/* Your code here. */</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> i</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">}</span></pre> <p>Which line of code creates a working and accurate version of strlen()?</p>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pun">(*</span><span class="pln">c</span><span class="pun">!=</span><span class="str">'\\0'</span><span class="pun">){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    i</span><span class="pun">++;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    c</span><span class="pun">++;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">  </span><span class="pun">}</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pun">(*</span><span class="pln">c</span><span class="pun">++!=</span><span class="str">'\\0'</span><span class="pun">)</span><span class="pln"> i</span><span class="pun">++;</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pun">(*</span><span class="pln">c</span><span class="pun">++</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> i</span><span class="pun">++);</span></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">c</span><span class="pun">[</span><span class="pln">i</span><span class="pun">++]</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> </span><span class="str">'\\0'</span><span class="pun">);</span><span class="pln"> </span></pre>`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>What will be the output of the following lines of C code?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">,</span><span class="lit">4</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)(&amp;</span><span class="pln">a</span><span class="pun">+</span><span class="lit">1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*(</span><span class="pln">p</span><span class="pun">-</span><span class="lit">1</span><span class="pun">));</span></pre>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 2 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>What will be the output of the following C code?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">void</span><span class="pln"> strXpos</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> dest</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> src</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">src</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="str">'\\0'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">        dest</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'\\0'</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">        </span><span class="kwd">return</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">src</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="str">'\\0'</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        dest</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> src</span><span class="pun">[</span><span class="lit">0</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">        dest</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> src</span><span class="pun">[</span><span class="lit">1</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">        </span><span class="kwd">return</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    dest</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> src</span><span class="pun">[</span><span class="lit">1</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    dest</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> src</span><span class="pun">[</span><span class="lit">0</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    strXpos</span><span class="pun">(</span><span class="pln">dest </span><span class="pun">+</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> src </span><span class="pun">+</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> s1</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GOGATE"</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> s2</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GO"</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">    strXpos</span><span class="pun">(</span><span class="pln">s2</span><span class="pun">,</span><span class="pln"> s1</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%s"</span><span class="pun">,</span><span class="pln"> s2</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">21</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [
+        `GOGATE`,
+        `OGAG`,
+        `OGAGET`,
+        `GOAGET`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What is the maximum value of i that will not cause this code to overflow?</p> <p>It is given that \\( \\textsf{sizeof(int) = 4} \\) and \\( \\textsf{sizeof(int *) = 8.} \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">p</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2501</span><span class="pun">;</span></pre>`,
+      image: "",
+      options: [],
+      answer: 3,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>What will be the output of the following program?</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="com">#include</span><span class="str">&lt;string.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">struct</span><span class="pln"> _info </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">**</span><span class="pln">strs</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> _info info</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">main</span><span class="pun">(){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    info arr_str</span><span class="pun">[</span><span class="lit">2</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">strs1</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GO"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Classes"</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">strs2</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GATE"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"2023"</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    arr_str</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">strs </span><span class="pun">=</span><span class="pln">strs1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    arr_str</span><span class="pun">[</span><span class="lit">1</span><span class="pun">].</span><span class="pln">strs </span><span class="pun">=</span><span class="pln">strs2</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    info </span><span class="pun">**</span><span class="pln">da</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    a </span><span class="pun">=</span><span class="pln">arr_str</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    da </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">2</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pln">        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++){</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">            printf</span><span class="pun">(</span><span class="str">"%s "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(((*</span><span class="pln">da</span><span class="pun">)+</span><span class="pln">i</span><span class="pun">)-&gt;</span><span class="pln">strs</span><span class="pun">)[</span><span class="pln">j</span><span class="pun">]);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">        </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">21</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [
+        `GO GATE Classes \\( 2023 \\)`,
+        `GO Classes GATE \\( 2023 \\)`,
+        `GATE GO \\( 2023 \\) Classes`,
+        `GATE \\( 2023 \\) GO Classes`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>What will be the output of the program below-</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> u</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> v</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{-</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">33</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> w</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">57</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">struct</span><span class="pln"> t</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">t</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pun">}</span><span class="pln">go</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GATE"</span><span class="pun">,</span><span class="pln"> u</span><span class="pun">,</span><span class="pln"> </span><span class="str">"GOClasses"</span><span class="pun">,</span><span class="pln"> v</span><span class="pun">,</span><span class="pln"> </span><span class="str">"GATEOVERFLOW"</span><span class="pun">,</span><span class="pln"> w</span><span class="pun">};</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> t </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> go</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%s "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">++</span><span class="pln">p </span><span class="pun">-&gt;</span><span class="pln"> c</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">++*</span><span class="pln">p </span><span class="pun">-&gt;</span><span class="pln"> t</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*++</span><span class="pln">p</span><span class="pun">[</span><span class="lit">0</span><span class="pun">].</span><span class="pln">t</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%s "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">p</span><span class="pun">)</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> c</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pun">}</span></pre>`,
+      image: "",
+      options: [
+        `ATE \\( 1\\; 9 \\) GATEOVERFLOW`,
+        `GATE \\( -4 \\;2 \\) GATEOVERFLOW`,
+        `ATE \\( 2\\; 7 \\) GOClasses`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Assume that variables \\( p1, p2 \\) and \\( n \\) are defined as follows: </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p1 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)</span><span class="pln"> malloc</span><span class="pun">(</span><span class="lit">2</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">));</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p2 </span><span class="pun">=</span><span class="pln"> p1 </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></pre> <p><br/> Given \\( 4 \\) programs and \\( 4 \\) types of issues below, Check which program is likely to cause which type of issue. </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=6031670848100274113"/></p>`,
+      image: "",
+      options: [
+        `\\( \\text{Prog1-C, Prog2-C, Prog3-A, Prog4-D} \\)`,
+        `\\( \\text{Prog1-C, Prog2-D, Prog3-A, Prog4-B} \\)`,
+        `\\( \\text{Prog1-C, Prog2-D, Prog3-A, Prog4-D} \\)`,
+        `\\( \\text{Prog1-D, Prog2-C, Prog3-A, Prog4-B} \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider struct alignment rules as described below –</p> <ol> <li>Each primitive data (int, char, float etc) type requiring \\( \\text{K} \\) bytes must be stored at the address must be multiple of \\( \\text{K}. \\) </li> <li>Address of structure and structure length must be multiples of \\( \\text{K}_{\\max}. \\) Where \\( \\text{K}_{\\max} \\) is the largest size of any primitive element of the struct. </li> </ol> <p>Also, we define internal and external fragmentation of struct as follows–</p> <ul> <li>Internal fragmentation is padding used between any two primitive data types of the struct.</li> <li>External fragmentation is padding used at the end of the last element of struct to fulfill \\( 2^{\\text{nd}} \\) rule requirement of alignment above. </li> </ul> <p>For a given struct below, what will be internal and external fragmentation, respectively? Consider that the system has \\( 8 \\) bytes of address lines, \\( 4 \\) bytes of integers, \\( 2 \\) bytes of short, and \\( 1 \\) byte of the character. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> num_donors</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">char</span><span class="pun">**</span><span class="pln"> donor_names</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> has_soft_seats</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">char</span><span class="pln"> location_name</span><span class="pun">[</span><span class="lit">10</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="kwd">short</span><span class="pln"> height</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pun">}</span><span class="pln"> cse_building</span><span class="pun">;</span></pre>`,
+      image: "",
+      options: [
+        `\\( 4, 3 \\)`,
+        `\\( 5, 2 \\)`,
+        `\\( 0, 7 \\)`,
+        `\\( 4, 0 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following declarations of variables in a system having \\( 4 \\) bytes for integers. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;"><span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">4</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p1</span><span class="pun">)[</span><span class="lit">2</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p2</span><span class="pun">)[</span><span class="lit">2</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">t1</span><span class="pun">)[</span><span class="lit">4</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">t2</span><span class="pun">)[</span><span class="lit">4</span><span class="pun">];</span></pre> <p>Suppose array a has base address of \\( 1000 \\) and initial values of \\( p1, p2, t1 \\), and \\( t2 \\) are \\( 1040,1064,1044 \\) and \\( 1076 \\) respectively. </p> <p>What will be the value of \\( p2-p1 \\) and \\( t2-t1 \\) respectively? </p>`,
+      image: "",
+      options: [
+        `\\( 6, 8 \\)`,
+        `\\( 3, 2 \\)`,
+        `\\( 12, 8 \\)`,
+        `\\( 32, 24 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+  ]
+});
