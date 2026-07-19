@@ -475,15 +475,15 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "ce-psu-combo",
-    code: "CE",
-    examTag: "PSU'S",
-    subjectTag: "Civil Engineering",
-    title: "CE-PSU Combined Practice Test Series",
-    f: "psu",
+    id: "demo-test",
+    code: "DEMO",
+    examTag: "GATE",
+    subjectTag: "DEMo Engineering",
+    title: "DEMO Practice Test Series",
+    f: "demo",
     lang: "English",
     objective: "Objective",
-    tests: 18,
+    tests: 47,
     startDate: "2025-10-20",
     endDate: "2026-09-30",
     session: "2025-2026",
@@ -505,13 +505,14 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["PT - 5", "Mar 2, 2026"],
-      ["PT - 4", "Jan 28, 2026"],
-      ["PT - 3", "Dec 22, 2025"],
-      ["PT - 2", "Nov 25, 2025"],
+      // ["PT - 5", "Mar 2, 2026"],
+      // ["PT - 4", "Jan 28, 2026"],
+      // ["PT - 3", "Dec 22, 2025"],
+      // ["PT - 2", "Nov 25, 2025"],
     ],
-    price: "₹650 + GST",
-    comingSoon: true
+    price: "FREE",
+    brandLabel: "APEX EASY & classes"
+    // comingSoon: true
   },
   {
     id: "je-foundation",
