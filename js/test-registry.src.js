@@ -41438,3 +41438,208 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Data Structure-4",
+  date: "October 30, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p> <p>Given a BST, there are some keys that, if inserted, will increase the height of the tree. For the BST below, let \\( \\mathrm{N} \\) be a number of integer keys (distinct from those already in the tree) for which this is true. Each key should increase the height if inserted alone, not with other keys. </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=14890712439886694863"/></p> <p>Find \\( \\text{N} \\). </p> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "1",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In an array-based implementation of a Heap, the right-child of the right-child of the node at index \\( i, \\) if it exists, can be found at what array location? Index of the array starts from \\( 1. \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 4i + 3 \\)`,
+        `\\( 2i + 1 \\)`,
+        `\\( 4i + 1 \\)`,
+        `\\( 2i + 2 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that \\( \\text{T} \\) is a full binary tree. Consider two statements about \\( \\text{T}: \\) </p> <ul> <li> \\( \\text{S}1: \\) If \\( \\text{T} \\) has \\( 100 \\) internal nodes then the number of leaves in \\( \\text{T} \\) is \\( 101. \\) </li> <li> \\( \\text{S}2: \\) If \\( \\text{T} \\) has a total of \\( 1001 \\) nodes, then \\( 500 \\) of them must have children. </li> </ul> <p>What is true about \\( \\text{S}1 \\) and \\( \\text{S}2? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S}1 \\) is correct but \\( \\text{S}2 \\) is incorrect`,
+        `\\( \\text{S}1 \\) is incorrect but \\( \\text{S}2 \\) is correct`,
+        `Both are correct`,
+        `Both are incorrect`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a min heap with \\( 1023 \\) distinct integers. If root is at \\( 0 \\)th level then fill the blank given in below sentence.<br/> The \\( 10 \\)th minimum of the heap might be at ______ level. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 3 \\)`,
+        `\\( 8 \\)`,
+        `\\( 9 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>A min-heap consists of \\( 2047 \\) elements, the minimum number of comparisons required to determine the maximum element is _______. </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "1023",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Consider the binary tree where the number of nodes in each left sub-tree is within a factor of \\( 2 \\) of the number of nodes in the corresponding right sub-tree. Also, a node is allowed to have only one child if that child has no children. What will be the minimum number of nodes in such a tree with a height of \\( 5? \\) (root is at a height of \\( 1). \\) </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "12",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p> <p>The keys \\( 2, 4, 6, 8, \\) and \\( 10 \\) have been inserted, one by one, in some unknown order, into an initially empty BST. The result is this BST: </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=16604378372090839956"/></p> <p><br/> How many permutations of the \\( 2, 4, 6, 8, \\) and \\( 10 \\) will generate this particular BST? </p> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "6",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following binary heap.</p> <p style="text-align:center"><img alt="" height="287" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=5987748951910689028" width="691"/></p> <p>Suppose that the last insertion operation performed in the binary heap above was inserting the key \\( x \\). What is/are possible values of \\( x? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 19 \\)`,
+        `\\( 26 \\)`,
+        `\\( 32 \\)`,
+        `\\( 10 \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that a binary min-heap stores six elements with priorities \\( 10, 20, 30, 40, 50, \\) and \\( 60 \\) in its array \\( \\text{A}. \\) What is the largest of these items that could be stored in \\( \\text{A}[1]? \\) (indexing starts from zero) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 20 \\)`,
+        `\\( 30 \\)`,
+        `\\( 40 \\)`,
+        `\\( 50 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a binary min heap with \\( n \\) distinct elements such that the third largest element is a right child of the root. </p> <p>What will be the MAXIMUM value of \\( n? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 7 \\)`,
+        `\\( 8 \\)`,
+        `\\( 10 \\)`,
+        `\\( 11 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `Insertion into an AVL tree always increases the number of leaves.`,
+        `An AVL tree of height \\( 3 \\) has at least \\( 7 \\) nodes and at most \\( 15 \\) nodes`,
+        `If inserting a node into an AVL tree requires rebalancing, then the height of the entire tree does not change.`,
+        `When removing a node from an AVL tree with \\( n \\) nodes, then at most \\( 3 \\) vertices need to be rebalanced.`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Consider a binary tree in which the number of leaves (nodes with no children) in each left subtree is within one of the number of leaves in the corresponding right subtree. More precisely, for each node in the tree, \\( \\mid \\)number-of-leaves(left subtree) \\( - \\) number-of-leaves(right subtree) \\( \\mid \\leq \\) 1. What is the worst-case height of such a tree of \\( 20 \\) nodes? </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "19",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p> <p>How many ways there were to insert the values \\( 1 - 7 \\) into a binary search tree that would result in the following tree: </p> <p style="text-align:center"><img alt="" height="198" src="https://lh5.googleusercontent.com/6whGOr_BCVZc5g4Qk8zLEFfhrVcxcQ9JBrL2Hur1dNYU3nOnfhxLQVulEKRhSB3GFadSSc_hY40bQ3x-hm9d-VeC2NMJDGUt90hE2CtIthXVbjqdoJM0eOg8uRppvl6q8YalXwkIQ0msJlqRlg" width="248"/></p> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "80",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>With \\( 7 \\) nodes of distinct values, how many Binary search trees (BST) can be formed such that exactly \\( 1 \\) leaf node is present? </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "64",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>When searching for the key value \\( 30 \\) in a binary search tree, nodes containing the key values \\( 10,20,40,50,70, 80,90 \\) are traversed, not necessarily in the order given. </p> <p>What will be the probability to encounter a probe sequence such that \\( 20 \\) appears as the \\( 3 \\)rd element in the probe? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1/21 \\)`,
+        `\\( 2 / 21 \\)`,
+        `\\( 1 / 7 \\)`,
+        `\\( 2 / 7 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+  ]
+});
