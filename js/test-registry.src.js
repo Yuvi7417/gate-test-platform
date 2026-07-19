@@ -40316,3 +40316,246 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Operating System-4",
+  date: "October 18, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following(s) is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `If we care about the performance of random accesses to files, it would be better to have a file system with extent-based allocations as opposed to one with linked block-based allocations.`,
+        `A free-space bitmap always uses less space than a free block list.`,
+        `Since the File Allocation Table (FAT) does not actually store file contents, the FAT is not stored on disk.`,
+        `Assume that \\( \\textsf{Thread A} \\) and \\( \\textsf{Thread B} \\) are in the same process. If Thread A tries to access memory address \\( \\textsf{0xABCD} \\) and this triggers a page fault, then it is guaranteed that Thread B will also page fault if it attempts to access the same memory address immediately after.`,
+      ],
+      answer: ["A"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p> Which of the following file allocation techniques do not suffer from external fragmentation?</p> <ol start="1" style="list-style-type:upper-roman"> <li>Contiguous allocation</li> <li>Indexed allocation</li> <li>Linked allocation</li> </ol> <p> </p>`,
+      image: "",
+      options: [
+        `All of these`,
+        `I only`,
+        `II only`,
+        `II and III only`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>When a process creates a new process using the \\( \\textsf{fork()} \\) operation, which of the following are shared between the parent process and the child process? </p>`,
+      image: "",
+      options: [
+        `Stack`,
+        `Heap`,
+        `Shared memory segments`,
+        `Page table`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following page reference string: <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ 1,2,3,4,2,1,5,6,2,1,2,3,7,6,3,2,1 \\] Assuming there are \\( 4 \\) page frames available and that all frames are initially empty, what is the total number of page faults that would occur for the page reference string above if the least-recently-used (LRU) replacement policy is used? </p>`,
+      image: "",
+      options: [],
+      answer: 10,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Which of the following components is responsible for loading the initial value in the program counter for an application program before it starts running:</p>`,
+      image: "",
+      options: [
+        `Compiler`,
+        `Linker`,
+        `Loader`,
+        `Boot module or boot ROM`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following(s) is/are TRUE?</p>`,
+      image: "",
+      options: [
+        `<p>If \\( \\text{Thread A} \\) and \\( \\textsf{B} \\) are in the same process, then \\( \\textsf{Thread A} \\) can access local variables stored in \\( \\textsf{Thread B’s} \\) stack. </p>`,
+        `<p>Let \\( \\textsf{n} \\) be the size of the virtual address space. On a \\( \\textsf{fork()} \\) call, the OS does \\( \\textsf{O(n)} \\) work to duplicate the parent’s address space for the child process. </p>`,
+        `<p> A child process can communicate with its parent by utilizing a data structure on its heap that was allocated before the parent performed a \\( \\textsf{fork()} \\) system call. </p>`,
+        `<p>Each user thread has its own separate kernel stack. </p>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Given the following piece of code:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">main</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> argc</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">**</span><span class="pln"> argv</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> child </span><span class="pun">=</span><span class="pln"> fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">child </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">        c </span><span class="pun">+=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">else</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">        child </span><span class="pun">=</span><span class="pln"> fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        c </span><span class="pun">+=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">child</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">            c </span><span class="pun">+=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pun">}</span>
+</pre> <p>How many different copies of the variable \\( \\textsf{c} \\) are there? </p>`,
+      image: "",
+      options: [],
+      answer: 3,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>In an \\( \\textsf{i-node} \\) based file system implementation, the \\( \\textsf{i-node} \\) typically stores \\( 12 \\) direct block pointers, one \\( 1 \\)-indirect block pointer, one \\( 2 \\)-indirect block pointer, and one \\( 3 \\)-indirect block pointer. An indirect block is a disk block storing an array of disk block addresses (i.e. pointers). </p> <p>The pointers in a \\( 1 \\)-indirect block point to disk blocks that store file data. The pointers in a \\( 2 \\)-indirect (or \\( 3 \\)-indirect) block point to other \\( 1 \\)-indirect (or \\( 2 \\)-indirect) blocks. Suppose the file system is configured to use a block size of \\( 2^{10} \\) bytes and each pointer takes up \\( \\text{4-bytes}. \\) What is the maximum file size that can be supported in the file system? </p>`,
+      image: "",
+      options: [
+        `\\( \\approx 2 \\mathrm{~GB} \\)`,
+        `\\( \\approx 4 \\mathrm{~GB} \\)`,
+        `\\( \\approx 8 \\mathrm{~GB} \\)`,
+        `\\( \\approx 16 \\mathrm{~GB} \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following requests to read data from sectors of a hard drive, where the current position of the head is at sector \\( 73 \\) and the head is moving towards sector \\( 0. \\) What is the order in which the sectors in the queue would be services using the SCAN disk scheduling algorithm?<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ 84,17,25,102,92,1,72,56,89,143,91,50,95,32 \\] </p>`,
+      image: "",
+      options: [
+        `\\( 72,56,50,32,25,17,1,84,89,91,92,95,102,143 \\)`,
+        `\\( 72,56,50,32,25,17,1,143,102,95,92,91,89,84 \\)`,
+        `\\( 84,89,91,92,95,102,143,72,56,50,32,25,17,1 \\)`,
+        `\\( 84,89,91,92,95,102,143,1,17,25,32,50,56,72 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A file system with \\( \\text{300 GB} \\) uses a file descriptor with \\( 8 \\) direct block address. \\( 1 \\) indirect block address and \\( 1 \\) doubly indirect block address. The size of each disk block is \\( \\text{256 Bytes} \\) and the size of each disk block address is \\( \\text{16 Bytes}. \\) The maximum possible file size in this file system is? (in kilobytes) </p>`,
+      image: "",
+      options: [],
+      answer: 70,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider a disk queue with requests for \\( \\text{I/O} \\) to blocks on cylinders <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ 38,180,95,119,121,11,64,62. \\] The \\( \\text{C-LOOK} \\) scheduling algorithm is used. The head is initially at cylinder number \\( 50 \\) moving towards larger cylinder numbers on its servicing pass. The cylinders are numbered from \\( 0 \\) to \\( 199. \\) Let the total head movement (in a number of cylinders) incurred while servicing these requests using the \\( \\text{C-LOOK} \\) scheduling algorithm is \\( \\mathrm{X} \\), and the total head movement incurred while servicing these requests using the \\( \\text{C-SCAN} \\) scheduling algorithm is \\( \\text{Y}. \\) Find \\( \\text{Y – X}? \\) (Long jump is also considered while counting the total head movements) </p>`,
+      image: "",
+      options: [],
+      answer: 60,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many times will \\( \\textsf{“Hello”} \\) be printed by the following code segment? </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">fork</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">fork</span><span class="pun">()))</span><span class="pln">    </span><span class="com">// 2nd condition not evaluated if 1st is false</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">fork</span><span class="pun">()</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> fork</span><span class="pun">())</span><span class="pln">    </span><span class="com">// 2nd condition evaluated only if 1st is false</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">        fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"\\nHello"</span><span class="pun">);</span><span class="pln">        </span>
+</pre>`,
+      image: "",
+      options: [],
+      answer: 7,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following two threads, to be run concurrently in a shared memory (all variables are shared between the two threads):<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|} \\hline \\textbf{Thread A} &amp; \\textbf{Thread B} \\\\\\hline \\textsf{for (i=0 ; i&lt;5 ; i++)} \\quad\\{ \\quad &amp; \\textsf{for (j=0 ; j&lt;5 ; j++)} \\quad\\{ \\quad \\\\ \\quad \\textsf{x = x + 1;} &amp; \\quad \\textsf{x = x + 2;} \\\\ \\}\\qquad \\qquad \\qquad \\qquad \\qquad &amp; \\} \\qquad \\qquad \\qquad \\qquad \\qquad \\\\\\hline \\end{array} \\]<br/> Assume a single-processor system, that load and store are atomic, that \\( \\mathrm{x} \\) is initialized to \\( 0 \\) <em>before either thread starts</em>, and that \\( \\mathrm{x} \\) must be loaded into a register before being incremented (and stored back to memory afterwards).<br/> Consider two statements given below. </p> <ul> <li> \\( \\text{S1 : } \\mathrm{x} \\leq 15 \\) when both threads have completed. </li> <li> \\( \\text{S2 : } \\mathrm{x} \\neq 1 \\) when both threads have completed. </li> </ul> <p>Which of the following option is true?</p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) is correct but \\( \\mathrm{S} 2 \\) is incorrect`,
+        `\\( \\text{S1} \\) is incorrect but \\( \\mathrm{S} 2 \\) is correct`,
+        `Both are correct`,
+        `Both are incorrect`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Using the program below, answer the following:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    fflush</span><span class="pun">(</span><span class="pln"> stdout </span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">    </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    fflush</span><span class="pun">(</span><span class="pln"> stdout </span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">    fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">    fflush</span><span class="pun">(</span><span class="pln"> stdout </span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pln">    fork</span><span class="pun">();</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> getpid</span><span class="pun">());</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">    </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">21</span><span class="pun">}</span>
+</pre> <p>How many times will a \\( \\textsf{PID} \\) be printed as a result of the \\( \\textsf{printf()} \\) statements? </p>`,
+      image: "",
+      options: [],
+      answer: 25,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose that a disk drive has \\( 5000 \\) cylinders, numbered \\( 0 \\) to \\( 4999. \\) The drive is currently serving a request at cylinder \\( 143, \\) and the previous request was at cylinder \\( 125. \\) The queue of pending requests, in FIFO order, is <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ 86, 1470, 913, 1774, 948, 1509, 1022, 1750, 130. \\] Starting from the current head position, what is the total distance (in cylinders) that the disk arm moves to satisfy all the pending requests, for the SSTF(Shortest seek time first) disk-scheduling algorithm? </p>`,
+      image: "",
+      options: [],
+      answer: 1745,
+      solution: ``
+    },
+  ]
+});
