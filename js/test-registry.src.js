@@ -39612,3 +39612,217 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Operating System-1",
+  date: "September 27, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following statements are true?</p>`,
+      image: "",
+      options: [
+        `A user-level process cannot modify its own page table entries.`,
+        `The scheduler is the part of an Operating System that determines the priority of each process.`,
+        `Shortest Remaining Time First is the best preemptive scheduling algorithm that can be implemented in an Operating System.`,
+        `No process will starve for CPU in round robin scheduling.`,
+      ],
+      answer: ["A", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>A starvation-free job-scheduling policy guarantees that no job waits indefinitely for service. Which of the following job-scheduling policies is starvation-free?</p>`,
+      image: "",
+      options: [
+        `Round-robin`,
+        `Priority queuing`,
+        `Shortest job first`,
+        `Youngest job first`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following transition diagram in which a thread moves between each of the \\( 3 \\) states : </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=4122633200668439405"/></p> <p><br/>Below we give some conditions that cause the thread to move between each of the \\( 3 \\) states, and causes each arrow : </p> <ul> <li> \\( \\text{P} : \\) process is scheduled by the scheduler and executed by CPU. </li> <li> \\( \\text{Q} : \\) Time slice runs out, but the process is still wanting to run. </li> <li> \\( \\text{R} : \\) I/O completes, or lock is acquired. Woken up by a semaphore or conditional. </li> <li> \\( \\text{S} : \\) Any blocking action. I/O request, lock blocks. </li> </ul> <p>Match the transitions in the diagram with the conditions that cause them :<br/>Which of the following is/are correct?</p>`,
+      image: "",
+      options: [
+        `\\( \\text{1 – P} \\)`,
+        `\\( \\text{2 – Q} \\)`,
+        `\\( \\text{6 – R} \\)`,
+        `\\( \\text{5 – S} \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following statements are true?:</p>`,
+      image: "",
+      options: [
+        `The processor can be switched to kernel mode during execution of a user process, if the user process issues a system call.`,
+        `The processor can be switched to kernel mode during execution of a user process, without the user process issuing a system call.`,
+        `The number of threads in the system may exceed the number of CPU cores.`,
+        `To safely process system calls, the kernel MUST maintain a separate stack in the kernel for each thread in each user process.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following are (virtually) shared by threads within a single process?<br/> In other words, is it instantiated per process instead of per thread? Select all that apply.</p>`,
+      image: "",
+      options: [
+        `Heap`,
+        `Stack`,
+        `Code/Program Text`,
+        `Registers`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider three processes \\( \\text{P1, P2,} \\) and \\( \\text{P3} \\) with respective arrival times of \\( 0 \\mathrm{~ms}, 10 \\mathrm{~ms} \\), and \\( 20 \\mathrm{~ms} \\) and respective processing times of \\( 30 \\mathrm{~ms}, 15 \\mathrm{~ms} \\), and \\( 30 \\mathrm{~ms} \\). The three processes are preemptively scheduled on a single-CPU system using the shortest-remaining-processing-time-first scheduling policy. Which of the following shows the order in which the processes complete, from first to last? </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{P}1 \\quad \\mathrm{P} 2 \\quad \\mathrm{P} 3 \\)`,
+        `\\( \\mathrm{P}1 \\quad \\mathrm{P} 3 \\quad \\mathrm{P} 2 \\)`,
+        `\\( \\mathrm{P} 2 \\quad \\mathrm{P} 1 \\quad \\mathrm{P} 3 \\)`,
+        `\\( \\mathrm{P} 2 \\quad \\mathrm{P} 3 \\quad \\mathrm{P} 1 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Four processes- \\( \\text{P}_1, \\text{P}_2, \\text{P}_3, \\) and \\( \\text{P}_4- \\) are scheduled to use a single processor. The following table shows the arrival time and duration of each of the four processes.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|} \\hline \\textbf{Process} &amp; \\textbf{Arrival Time (seconds)} &amp; \\textbf{Duration (seconds)} \\\\ \\hline \\hline \\text{P}_1 &amp; 0 &amp; 7 \\\\ \\hline \\text{P}_2 &amp; 2 &amp; 4 \\\\ \\hline \\text{P}_3 &amp; 4 &amp; 1 \\\\ \\hline \\text{P}_4 &amp; 5 &amp; 4 \\\\ \\hline \\end{array} \\] <br/>If the system uses a preemptive shortest-job-first scheduling algorithm, what is the average waiting time for the four processes, in seconds? </p>`,
+      image: "",
+      options: [
+        `\\( 2 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+        `\\( 5 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following table showing a set of jobs to be processed on a single processor, the number of seconds of service that each requires, and each job's arrival time.</p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ccll}\\text { Job } &amp; \\begin{array}{c}\\text { Service Time } \\\\ \\text { (sec.) }\\end{array} &amp; \\text { Arrival time } \\\\\\hline 1 &amp; 2 &amp; t_0 \\\\ 2 &amp; 5 &amp; t_0 \\\\ 3 &amp; 1 &amp; t_0+1 \\;\\mathrm{sec} . \\\\ 4 &amp; 9 &amp; t_0+5\\; \\mathrm{sec} . \\\\ 5 &amp; 3 &amp; t_0+10 \\;\\mathrm{sec} . \\\\ 6 &amp; 2 &amp; t_0+15\\; \\mathrm{sec} .\\end{array} \\] <br/> If a round-robin scheduling algorithm with a time slice of \\( 10 \\) milliseconds is assumed, then at approximately what time is Job \\( 3 \\) completed? </p>`,
+      image: "",
+      options: [
+        `\\( t_0+22 \\; \\mathrm{sec} \\).`,
+        `\\( t_0+8\\; \\mathrm{sec} \\).`,
+        `\\( t_0+4\\; \\mathrm{sec} \\).`,
+        `\\( t_0+2 \\;\\mathrm{sec} \\).`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following table showing a set of jobs to be processed on a single processor, the number of seconds of service that each requires, and each job's arrival time.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ccll}\\text { Job } &amp; \\begin{array}{c}\\text { Service Time } \\\\ \\text { (sec.) }\\end{array} &amp; \\text { Arrival time } \\\\\\hline 1 &amp; 2 &amp; t_0 \\\\ 2 &amp; 5 &amp; t_0 \\\\ 3 &amp; 1 &amp; t_0+1 \\;\\mathrm{sec} . \\\\ 4 &amp; 9 &amp; t_0+5\\; \\mathrm{sec} . \\\\ 5 &amp; 3 &amp; t_0+10 \\;\\mathrm{sec} . \\\\ 6 &amp; 2 &amp; t_0+15\\; \\mathrm{sec} .\\end{array} \\] <br/> If a first-come-first-served scheduling algorithm is assumed, where ties are resolved in favor of the smaller numbered job, what is the average (arithmetic mean) number of seconds that a job waits before being assigned to the processor? </p>`,
+      image: "",
+      options: [
+        `\\( 20 / 6 \\)`,
+        `\\( 21 / 6 \\)`,
+        `\\( 23 / 6 \\)`,
+        `\\( 31 / 6 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>An arriving thread is run at the beginning of its arrival time, if the scheduling policy allows it. Turnaround time is defined as the time a process takes to complete after it arrives. Now Consider the following data available for FIFO CPU Scheduling where we have \\( 4 \\) processes \\( \\text{A, B, C, D.} \\) <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\textbf{Entry Times} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|} \\hline \\mathrm{A} &amp; 1 \\\\ \\hline \\mathrm{B} &amp; 2 \\\\ \\hline \\mathrm{C} &amp; \\\\ \\hline \\mathrm{D} &amp; 8 \\\\ \\hline \\end{array} \\] <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|} \\hline \\downarrow \\textbf{Current Time} \\\\ \\qquad \\qquad \\qquad \\textbf{Scheduler} \\rightarrow &amp; \\textbf{FIFO} \\\\ \\hline 1 &amp; \\text{A} \\\\ \\hline 2 &amp; \\text{A} \\\\ \\hline 3 &amp; \\text{A} \\\\ \\hline 4 &amp; \\text{B} \\\\ \\hline 5 &amp; \\text{B} \\\\ \\hline 6 &amp; \\text{B} \\\\ \\hline 7 &amp; \\text{C} \\\\ \\hline 8 &amp; \\text{D} \\\\ \\hline 9 &amp; \\text{D} \\\\ \\hline 10 &amp; \\text{D} \\\\ \\hline \\text{Avg Turnaround Time} &amp; 3.5 \\\\ \\hline \\end{array} \\] What is the entry time for process \\( \\text{C}? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 5,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>If there are \\( \\mathrm{N} \\) jobs, arrived at almost same time in the system, all of the same length(burst time) \\( \\text{L}. \\) Round robin algorithm is used by the scheduler. Where \\( \\mathrm{T} \\) is the length of the time slice, \\( \\mathrm{L}&gt;\\mathrm{T} \\) and \\( \\mathrm{L} \\) is multiple of \\( \\mathrm{T} \\).<br/> Then the first job will finish at approximately </p>`,
+      image: "",
+      options: [
+        `\\( \\text{L} \\)`,
+        `\\( \\mathrm{N}\\ast \\mathrm{~L} \\)`,
+        `\\( \\mathrm{N}\\ast \\mathrm{~L}-(\\mathrm{N}-1) \\ast \\mathrm{~T} \\)`,
+        `\\( \\text{N}\\ast \\mathrm{~L}-(\\mathrm{N}) \\ast \\mathrm{~T} \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following Scheduling Algorithm "Least Used First(LUF)": \\( \\text{Least Used First (LUF):} \\) When given the choice to schedule two processes on the run queue, the scheduler will select the one that has used the fewest CPU cycles thus far. In case of a tie, the queue is otherwise FIFO. When a process is descheduled it goes to the end of the queue. \\( \\text{Duration of a process:} \\) The amount of CPU time it will need, in time units. Consider the following \\( 4 \\) processes: <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|} \\hline \\textbf{Job} &amp; \\textbf{Arrival Time} &amp; \\textbf{Duration} \\\\ \\hline \\text{A} &amp; 0 &amp; 25 \\\\ \\hline \\text{B} &amp; 15 &amp; 25 \\\\ \\hline \\text{C} &amp; 25 &amp; 5 \\\\ \\hline \\text{D} &amp; 40 &amp; 5 \\\\ \\hline \\end{array} \\] Supposing a running job is only preempted when a new job arrives (no interrupts). Assume all jobs are purely CPU-bound. What is the average turn around time using LUF scheduling algorithm? </p>`,
+      image: "",
+      options: [],
+      answer: 27.5,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider a system with a single CPU core and three processes \\( \\text{A, B, C}. \\) Process \\( \\text{A} \\) arrives at \\( t=0 \\), and runs on the CPU for \\( 10 \\) time units before it finishes. Process \\( \\mathrm{B} \\) arrives at \\( t=6 \\), and requires an initial \\( \\mathrm{CPU} \\) time of \\( 3 \\) units, after which it blocks to perform I/O for \\( 3 \\) time units. After returning from I/O wait, it executes for a further \\( 5 \\) units before terminating. Process \\( \\mathrm{C} \\) arrives at \\( t=8 \\), and runs for \\( 2 \\) units of time on the CPU before terminating. Recall that only the size of the current CPU burst (excluding the time spent for waiting on I/O ) is considered as the "job size" in these schedulers. For Shortest Remaining Time First (preemptive) scheduling policy, what is the time of completion of process \\( \\text{C}? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 11,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following processes with CPU burst time in ms. Assume all processes arrive at time \\( 0. \\)<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|} \\hline \\textbf{Process} &amp; \\textbf{Burst Time (ms)} \\\\ \\hline \\text{P1} &amp; 10 \\\\ \\hline \\text{P2} &amp; 3 \\\\ \\hline \\text{P3} &amp; 8 \\\\ \\hline \\text{P4} &amp; 5 \\\\ \\hline \\end{array} \\]<br/> If the processes use First Come First Served Scheduling, for which of the following process order, the average waiting time of the processes will be minimum? </p> <ol start="1" style="list-style-type:decimal"> <li> \\( \\text{Order 1: P1 P2 P3 P4} \\) </li> <li> \\( \\text{Order 2: P2 P3 P4 P1} \\) </li> <li> \\( \\text{Order 3: P4 P3 P2 P1} \\) </li> <li> \\( \\text{Order 4: P4 P2 P3 P1} \\) </li> </ol> <p> </p>`,
+      image: "",
+      options: [
+        `\\( \\text{Order 1} \\)`,
+        `\\( \\text{Order 2} \\)`,
+        `\\( \\text{Order 3} \\)`,
+        `\\( \\text{Order 4} \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following set of jobs to be scheduled for execution on a single CPU system. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|l|} \\hline \\textbf{Job} &amp; \\textbf{Arrival Time} &amp; \\textbf{Size(msec)} &amp; \\textbf{Priority} \\\\ \\hline \\text{J}_1 &amp; 0 &amp; 10 &amp; 2 \\;\\text{(Silver)} \\\\ \\text{J}_2 &amp; 2 &amp; 8 &amp; 1 \\;\\text{(Gold)} \\\\ \\text{J}_3 &amp; 3 &amp; 3 &amp; 3 \\;\\text{(Bronze)} \\\\ \\text{J}_4 &amp; 10 &amp; 4 &amp; 2 \\;\\text{(Silver)} \\\\ \\text{J}_5 &amp; 12 &amp; 1 &amp; 3 \\;\\text{(Bronze)} \\\\ \\text{J}_6 &amp; 15 &amp; 4 &amp; 1 \\;\\text{(Gold)} \\\\ \\hline \\end{array} \\] The completion time of process \\( \\text{J}_{5} \\) using non-preemptive PRIORITY scheduling for these jobs is _________ In non-preemptive PRIORITY scheduling, jobs are executed based on their PRIORITY, and ties are broken in favor of the earliest arrival time. </p>`,
+      image: "",
+      options: [],
+      answer: 30,
+      solution: ``
+    },
+  ]
+});
