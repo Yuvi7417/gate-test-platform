@@ -40102,3 +40102,217 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Operating System-3",
+  date: "October 11, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Assume that the following table is the sequence of pages referenced by a program to be run in a \\( 2 \\)-page memory. Assume demand paging is used.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{cc} \\text{Time} &amp; \\qquad \\text{Page Referenced} \\\\ \\hline 1 &amp; 1 \\\\ 2 &amp; 2 \\\\ 3 &amp; 1 \\\\ 4 &amp; 3 \\\\ 5 &amp; 4 \\\\ 6 &amp; \\text{stop} \\end{array} \\]<br/> Which pages are in memory at time \\( 6 \\) if the program is run under the replacement rule LFU (the least frequently used page should be replaced)? </p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 2 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following statements describe(s) properties of a purely segmented memory system?</p>`,
+      image: "",
+      options: [
+        `It divides memory into units of equal size.`,
+        `It permits implementation of virtual memory.`,
+        `It suffers from internal fragmentation.`,
+        `It suffers from external fragmentation.`,
+      ],
+      answer: ["B", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Of the following page-replacement policies, which is guaranteed to incur the minimum number of page faults?</p>`,
+      image: "",
+      options: [
+        `Replace the page whose next reference will be the longest time in the future.`,
+        `Replace the page whose next reference will be the shortest time in the future.`,
+        `Replace the page whose most recent reference was the shortest time in the past.`,
+        `Replace the page whose most recent reference was the longest time in the past.`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A computer has four frames that are currently filled with pages. The following table shows information about each page including the time the page was loaded into memory, the time the page was last referenced. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|} \\hline \\text{Page} &amp; \\text{Loaded} &amp; \\text{Last Reference} \\\\ \\hline 0 &amp; 126 &amp; 279\\\\ \\hline 1 &amp; 230 &amp; 260\\\\ \\hline 2 &amp; 120 &amp; 272\\\\ \\hline 3 &amp; 160 &amp; 280\\\\ \\hline \\end{array} \\] Assume different page replacement policies are considered to replace one of these pages. Which page will LRU replace? </p>`,
+      image: "",
+      options: [],
+      answer: 1,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>What is <strong>demand paging?</strong></p>`,
+      image: "",
+      options: [
+        `A policy for determining when to bring a page into memory.`,
+        `A policy for determining which page to replace.`,
+        `Loading a page into memory only on a page-fault.`,
+        `Starting a process with all of its pages resident in physical memory.`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider a system with \\( \\mathrm{N} \\) bytes of physical RAM, and \\( \\mathrm{M} \\) bytes of virtual address space per process. Pages and frames are \\( \\text{K} \\) bytes in size. Every page table entry is \\( \\mathrm{P} \\) bytes in size, accounting for the extra flags required and such. What is the size of the page table of a process? </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{N} / \\mathrm{K} \\ast \\mathrm{P} \\)`,
+        `\\( \\mathrm{M} / \\mathrm{N}\\ast \\mathrm{P} \\)`,
+        `\\( \\mathrm{M} / \\mathrm{K} \\ast \\mathrm{P} \\)`,
+        `\\( \\mathrm{N} / \\mathrm{P} \\ast \\mathrm{~K} \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Assume that you have a page reference string for a process. Let the page reference string have length \\( p \\) with \\( n \\) distinct page numbers occurring in it. Let \\( m \\) be the number of page frames that are allocated to the process (all the page frames are initially empty). Let \\( n &gt; m. \\) Which of the following is correct?<br/> (Your answer is independent of the page replacement scheme that you use.) </p>`,
+      image: "",
+      options: [
+        `\\( p \\) is the lower bound on the number of page faults.`,
+        `\\( n \\) is the lower bound on the number of page faults.`,
+        `\\( p \\) is the upper bound on the number of page faults.`,
+        `\\( n \\) is the upper bound on the number of page faults.`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the page replacement policies of OPT(optimal page replacement), FIFO(first in first out), and LRU(least recently used). Which of the following statements are true? </p>`,
+      image: "",
+      options: [
+        `OPT always performs better than or equal to LRU.`,
+        `LRU always performs better than or equal to FIFO.`,
+        `OPT with \\( n+1 \\) pages(frames) of physical memory always performs better than or equal to OPT with \\( n \\) pages.`,
+        `FIFO with \\( n+1 \\) pages(frames) of physical memory always performs better than or equal to FIFO with \\( n \\) pages.`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a virtual memory with \\( \\text{M} \\) main memory page frames and a periodic page reference string<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ p_1, p_2, \\ldots, p_\\text{N}, p_1, p_2 \\ldots, p_\\text{N}, p_1, p_2 \\ldots, p_\\text{N} \\] <br/>of \\( \\mathrm{N} \\) distinct requests.<br/>Assume that the string of \\( \\text{N} \\) requests was constructed randomly, and assume that initially none of the pages are resident.<br/>If the string of \\( \\text{N} \\) requests is repeated many times, which of the following is (are) true? </p>`,
+      image: "",
+      options: [
+        `The fewest page faults occur when \\( \\text{M} \\geq \\text{N} \\).`,
+        `LRU and FIFO will always result in the same number of page faults.`,
+        `LIFO will always result in the same number of page faults as the optimal algorithm.`,
+        `Assume that \\( \\text{N}=2 \\text{M} \\) and FIFO is used. If the string \\( p_1, p_2, \\ldots, p_\\text{N} \\) is repeated three times, then the number of page faults is \\( 3 \\mathrm{N}. \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Belady's anomaly: Intuitively, it seems that the more frames the memory has, the fewer page faults a program will get. Surprisingly enough, this is not always true. Belady \\( (1969) \\) discovered an example in which FIFO page replacement causes more faults with four page frames than with three. This strange situation has become known as Belady's anomaly.<br/> A program with five virtual pages numbered from \\( 0 \\) to \\( 4 \\) references its pages in the following orders given below. Using FIFO replacement, compute the number of page faults with \\( 3 \\) frames. Repeat for \\( 4 \\) frames. </p> <ol start="1" style="list-style-type:upper-roman"> <li> \\( 012301401234 \\) </li> <li> \\( 012301410234 \\) </li> </ol> <p>Which of the following is true?</p>`,
+      image: "",
+      options: [
+        `For I, The number of page faults is \\( 9 \\) with \\( 3 \\) frames.`,
+        `For I, The number of page faults is \\( 10 \\) with \\( 4 \\) frames.`,
+        `For II, The number of page faults is \\( 6 \\) with \\( 3 \\) frames.`,
+        `For II, The number of page faults is \\( 9 \\) with \\( 4 \\) frames.`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume in a computer supporting paging, virtual addresses are \\( 36\\;\\text{bits} \\) long. Page size is \\( 16 \\mathrm{~KB} \\). Assume a page table entry is \\( 8\\;\\text{bytes} \\) long. The computer has \\( 4\\;\\text{GB} \\) of RAM (physical memory).<br/> We have three processes \\( (\\mathrm{A}, \\mathrm{B}, \\mathrm{C}) \\) in the system at the moment. The virtual memory \\( \\mathrm{VM} \\) layouts of the processes are like the following : </p> <ul> <li> \\( \\text{A} \\) is using \\( 64\\; \\mathrm{MB} \\) from the start of its \\( \\mathrm{VM} \\) and \\( 32 \\mathrm{~MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> <li> \\( \\text{B} \\) is using \\( 128\\; \\mathrm{MB} \\) from the start and \\( 64 \\mathrm{~MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> <li> \\( \\text{C} \\) is using \\( 32\\;\\text{MB} \\) from the start and \\( 32\\;\\text{MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> </ul> <p>What will be the amount of physical memory required (in Mega Bytes) to hold the page table information for these three processes in total, if single-level page table is used?</p>`,
+      image: "",
+      options: [],
+      answer: 96,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume in a computer supporting paging, virtual addresses are \\( 36\\;\\text{bits} \\) long. Page size is \\( 16\\; \\mathrm{KB} \\). Assume a page table entry is \\( 8 \\;\\text{bytes} \\) long. The computer has \\( 4 \\;\\text{GB} \\) of RAM (physical memory).<br/> We have three processes \\( (\\mathrm{A}, \\mathrm{B}, \\mathrm{C}) \\) in the system at the moment. The virtual memory \\( (\\mathrm{VM}) \\) layouts of the processes are like the following : </p> <ul> <li> \\( \\text{A} \\) is using \\( 64\\; \\mathrm{MB} \\) from the start of its \\( \\mathrm{VM} \\) and \\( 32\\; \\mathrm{MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> <li> \\( \\text{B} \\) is using \\( 128\\; \\mathrm{MB} \\) from the start and \\( 64\\; \\mathrm{MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> <li> \\( \\text{C} \\) is using \\( 32\\;\\text{MB} \\) from the start and \\( 32 \\;\\text{MB} \\) from the end. The rest of its \\( \\mathrm{VM} \\) is unused. </li> </ul> <p>What will be the amount of physical memory required \\( \\text{(in K Bytes)} \\) to hold the page table information for these three processes in total, if two-level page table is used with address division scheme \\( (11,11,14)? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 224,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The figure below shows the address translation mechanism used for \\( \\text{64-bit} \\) mode in Intel \\( \\textsf{x86} \\) processors. Starting with a \\( \\text{48-bit} \\) virtual addresses, it uses \\( 4 \\) levels of page table to translate the address to a \\( \\text{52-bit} \\) physical address. Each page table entry is \\( 8 \\;\\text{bytes} \\) long. </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=1059938674142523643"/></p> <p><br/> If the page size is increased, the number of levels of page table can be reduced. How large must pages be in order to translate \\( \\text{48-bit} \\) virtual addresses with only \\( 2 \\) levels of page table(Each page table at each level fits exactly into page)?<br/> How large must pages be, in \\( \\text{KB} \\) _______ </p>`,
+      image: "",
+      options: [],
+      answer: 256,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a system with a \\( \\text{6 bit} \\) virtual address space, and \\( \\text{16 byte} \\) pages/frames. The mapping from virtual page numbers to physical frame numbers of a process is \\( (0,8), (1,3), (2,11), \\) and \\( (3,1). \\) Note that all addresses are in decimal. Your answer must be in decimal.<br/> Which of the following is/are true ? </p>`,
+      image: "",
+      options: [
+        `The physical address to which virtual address \\( 20 \\) is mapped to is \\( 52. \\)`,
+        `The physical address to which virtual address \\( 40 \\) is mapped to is \\( 184. \\)`,
+        `The physical address to which virtual address \\( 20 \\) is mapped to is \\( 53. \\)`,
+        `The physical address to which virtual address \\( 40 \\) is mapped to is \\( 180. \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A \\( \\text{10-unit} \\) heap of memory uses an allocation algorithm in which a block is allocated at the left end of the leftmost block in which it fits. Which of the following allocation/deallocation patterns CANNOT be satisfied? </p>`,
+      image: "",
+      options: [
+        `\\( x:=\\operatorname{alloc}(10) ; \\text{free}(x) ; y:=\\operatorname{alloc}(3) \\)`,
+        `\\( x:=\\operatorname{alloc}(5) ; y:=\\operatorname{alloc}(3) ; \\text{free}(x) ; z:=\\text{alloc} (6) \\)`,
+        `\\( x:=\\operatorname{alloc}(1) ; \\text{free} (x) ; x:=\\operatorname{alloc}(6) ; y ;= \\text{alloc} (4) \\)`,
+        `\\( x:=\\operatorname{alloc}(9) ; y:=\\operatorname{alloc}(1) ; \\text{free} (x) ; z:=\\operatorname{alloc}(8) ; w:=\\operatorname{alloc}(1) \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+  ]
+});
