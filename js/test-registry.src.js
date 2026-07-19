@@ -41221,3 +41221,220 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Data Structure-3",
+  date: "October 25, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The following operations are performed on an initially empty queue of ints. What is the contents of the queue afterwards? The queue is displayed with the front to the right.</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">1</span><span class="pun">)</span></li><li class="L1"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">2</span><span class="pun">)</span></li><li class="L2"><span class="pln">i</span><span class="pun">=</span><span class="pln">q</span><span class="pun">.</span><span class="pln">getfront </span><span class="pun">()</span></li><li class="L3"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">3</span><span class="pun">)</span></li><li class="L4"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">4</span><span class="pun">)</span></li><li class="L5"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">5</span><span class="pun">)</span></li><li class="L6"><span class="pln">i</span><span class="pun">=</span><span class="pln">q</span><span class="pun">.</span><span class="pln">dequeue </span><span class="pun">()</span></li><li class="L7"><span class="pln">q</span><span class="pun">.</span><span class="pln">enqueue </span><span class="pun">(</span><span class="lit">6</span><span class="pun">)</span></li></ol></pre> <p><br/>Notes: getfront operates analogously to the stack method "top()".</p> <p>enqueue and dequeue operate as one would expect standard queue operations with those names.</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1\\;2\\;3\\;4\\;5\\;6 \\)`,
+        `\\( 6\\;5\\;4\\;3\\;1 \\)`,
+        `\\( 2\\;3\\;4\\;5\\;6 \\)`,
+        `\\( 1\\;2\\;3\\;4\\;6 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A \\( \\textit{double} \\) stack is a variation of a stack that allows access to the top and to the bottom of the stack. A double stack ADT provides operations \\( \\textsf{pushTop} (\\text{T}\\; x) \\) that adds \\( x \\) to the top of the stack, \\( \\textsf{pushBottom} (\\mathrm{T}\\; x) \\) that adds \\( x \\) to the bottom of the stack, \\( \\textsf{popTop()} \\) that removes the element at the top of the stack, and \\( \\textsf{popBottom()} \\) that removes the element at the bottom of the stack. </p> <p>Consider a double-stack ds implemented using an array as shown in the following figure.</p> <p style="text-align:center"><img alt="" height="106" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=8964072913138431231" width="360"/></p> <p>When \\( \\textsf{pushTop} (\\text{T}\\; x)\\; \\textsf{(popTop ())} \\) is executed the value of \\( \\textsf{top} \\) is increased (decreased); similarly when \\( \\textsf{pushBottom} (\\text{T}\\; x )\\; \\textsf{(popBottom ( ))} \\) is executed the value of \\( \\textsf{bottom} \\) is decreased (increased). Consider the following code fragment. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">0</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">3</span><span class="pln"> </span><span class="pun">;++</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> ds</span><span class="pun">.</span><span class="pln">pushTop</span><span class="pun">(</span><span class="pln">ds</span><span class="pun">.</span><span class="pln">popBottom</span><span class="pun">());</span></li><li class="L1"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">0</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">2</span><span class="pln"> </span><span class="pun">;++</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> x</span><span class="pun">=</span><span class="pln"> ds</span><span class="pun">.</span><span class="pln"> popTop</span><span class="pun">();</span></li><li class="L2"><span class="pln">ds</span><span class="pun">.</span><span class="pln">pushBottom</span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></li></ol></pre> <p><br/> After this code fragment is executed on the double stack \\( \\textsf{ds} \\) represented by the above figure which are the final values for \\( \\text{top} \\) and \\( \\textsf{bottom}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `top \\( =8, \\) bottom \\( =4 \\)`,
+        `top \\( =9, \\) bottom \\( =5 \\)`,
+        `top \\( =7, \\) bottom \\( =3 \\)`,
+        `top \\( =10, \\) bottom \\( =3 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose we have a queue \\( = [3, 14, 1, 20] \\) (here \\( 3 \\) is on the front ) and an empty stack. We are allowed to make only two actions: </p> <ol> <li>Action ” \\( x \\)”: Dequeue an element from the queue and push it to the stack. </li> <li>Action ” \\( o \\)”: Pop an element from the stack and enqueue it in the queue. </li> </ol> <p>Which of the following sequences sort the queue in ascending order:</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( xxoxooxoxo \\)`,
+        `\\( xxoxoxooxo \\)`,
+        `\\( xoxxooxoxo \\)`,
+        `\\( xxoxooxxoo \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( s \\) be a sorted array of \\( n \\) integers. Let \\( t(n) \\) denote the time taken for the most efficient algorithm to determine if there are two elements with sum less than \\( 1000 \\) in \\( s. \\) </p> <p>Which of the following statements is true?</p> <p></p>`,
+      image: "",
+      options: [
+        `<p> \\( t(n) \\) is \\( O(1) \\) </p>`,
+        `<p> \\( n &lt; t(n) &lt; n \\log_2 n \\) </p>`,
+        `<p> \\( n \\log_2 n &lt; t(n) &lt; \\binom{n}{2} \\) </p>`,
+        `<p> \\( t(n) = \\binom{n}{2} \\) </p>`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following pseudocode:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="typ">Declare</span><span class="pln"> a stack </span><span class="kwd">of</span><span class="pln"> characters</span></li><li class="L1"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> there are more characters </span><span class="kwd">in</span><span class="pln"> the word to read </span><span class="pun">)</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    read a character</span></li><li class="L4"><span class="pln">    push the character on the stack</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> the stack </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> empty </span><span class="pun">)</span></li><li class="L7"><span class="pun">{</span></li><li class="L8"><span class="pln">    pop a character off the stack</span></li><li class="L9"><span class="pln">    write the character to the screen</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p><br/> What is written to the screen for the input "carpets"?</p> <p></p>`,
+      image: "",
+      options: [
+        `serc`,
+        `carpets`,
+        `steprac`,
+        `ccaarrppeettss`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider an array \\( \\mathrm{A} \\) storing \\( m&gt;1 \\) different integer values sorted in increasing order. At least one value in \\( \\mathrm{A} \\) is negative and at least one of them is positive. We want to change the positions of the positive values stored in \\( \\mathrm{A} \\) so the positive values appear in decreasing order. So, for example, if the array \\( \\mathrm{A} \\) is as in the figure on the left, the modified array is as in the figure on the right. </p> <p style="text-align:center"><img alt="" height="100" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=10383186326115297648" width="703"/></p> <p>If we use stack or queue but not both to accomplish this task. Which of the following is/are true?<br/>Let \\( n \\) be the number of positive values. </p> <p></p>`,
+      image: "",
+      options: [
+        `For a queue, we need a minimum of \\( n \\) enqueues and \\( n \\) dequeues operations.`,
+        `For a stack, we need a minimum of \\( n \\) push and \\( n \\) pop operations.`,
+        `For a queue, we need a minimum of \\( n+1 \\) enqueues and \\( n+1 \\) dequeues operations.`,
+        `For a stack, we need a minimum of \\( n+1 \\) push and \\( n+1 \\) pop operations.`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a data structure StackWithMax that supports all operations of a stack, and in addition supports getMax.</p> <ul> <li>getMax() is a function that returns the maximum without deleting it.</li> <li>StackWithMax is implemented using a singly linked list, and each node of the linked list has \\( 3 \\) fields to store. </li> </ul> <p>Two fields are the usual element and next pointer, one extra field is there to facilitate getMax operation in efficient time.<br/>We can efficiently implement getMax of such data structure in -</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\theta(1) \\) time`,
+        `\\( \\theta(n) \\) time`,
+        `\\( \\theta(n \\log n) \\) time`,
+        `\\( \\theta(\\log n) \\) time`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p> <p>Consider the following pseudo-code that uses a stack. What will be the output of \\( n = 50. \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    stack</span><span class="pun">.</span><span class="pln">push </span><span class="pun">(</span><span class="pln">n </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span></li><li class="L2"><span class="pln">    n </span><span class="pun">/=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li><li class="L4"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">stack</span><span class="pun">.</span><span class="pln">isEmpty</span><span class="pun">())</span></li><li class="L5"><span class="pln">    </span><span class="kwd">print</span><span class="pun">(</span><span class="pln">stack</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">());</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "110010",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <div style="max-width:900px; margin:0 auto; line-height:1.75; font-size:17px;"> <p>The queue is implemented using two stacks, denoted by \\( \\text{incoming} \\) and \\( \\text{outgoing} \\). The implementation rules are fixed as follows. </p> <div style="display:flex; justify-content:space-around; align-items:flex-start; font-family:monospace; gap:60px; line-height:1.75; margin:24px 0;"> <div style="flex:1;"><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ \\begin{aligned} &amp;\\textbf{Enqueue}(Q, x):\\\\ &amp;\\quad \\text{Push } x \\text{ into } \\text{incoming} \\end{aligned} \$\$ </div> <div style="flex:1;"><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ \\begin{aligned} &amp;\\textbf{Dequeue}(Q):\\\\ &amp;\\quad \\textbf{if } \\text{outgoing} \\neq \\varnothing \\textbf{ then}\\\\ &amp;\\quad\\quad \\text{Pop and return the top element}\\\\ &amp;\\quad\\quad \\text{from } \\text{outgoing}\\\\ &amp;\\quad \\textbf{else}\\\\ &amp;\\quad\\quad \\text{Do Something (Which is not }\\\\ &amp;\\quad\\quad \\text{given to you) }\\\\ &amp;\\quad\\quad \\text{Return the required element}\\\\ &amp;\\quad \\textbf{end if} \\end{aligned} \$\$ </div> </div> <p>Let \\( n \\) enqueue operations and exactly \\( 1 \\) dequeue operation are performed in some sequence.<br/>Using the above implementation, determine the minimum and maximum number of pop operations possible.<br/>(Maximum pop means there exists a sequence of enqueue and dequeue operations for which the number of pop operations cannot be less than the stated maximum.) </p> <ol style="list-style-type:upper-alpha;"> <li>Minimum pop \\( = 1, \\) Maximum pop \\( = n \\) </li> <li>Minimum pop \\( = 1, \\) Maximum pop \\( = n+1 \\) </li> <li>Minimum pop \\( = n, \\) Maximum pop \\( = 2n \\) </li> <li>Minimum pop \\( = n, \\) Maximum pop \\( = 2n-1 \\) </li> </ol> </div> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a problem: Given an array of elements, replace every element with the nearest greater element on the right of that element. You have to solve this problem with the use of stack.<br/>Which of the following is/are correct ?</p> <p></p>`,
+      image: "",
+      options: [
+        `Minimum number of extra stack(s) is \\( 1 \\)`,
+        `Time Complexity is \\( O(n) \\)`,
+        `Space Complexity is \\( O(1) \\)`,
+        `Space Complexity is \\( O(n) \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a stack <i>S</i> that stores integers.</p> <p>The operation <code>push(S, i)</code> returns a new stack obtained by inserting integer <i> \\( i \\) </i> on top of <i>S</i>. </p> <p>For example:</p> <ul> <li>If <i>S</i> is empty, then after <i>S</i> = <code>push(S, 2)</code>, the \\( \\text{push(S, 2)} \\) operation returns the new stack [2], so <i>S</i> becomes [2].<br/> </li> <li>After one more push: <i>S</i> = <code>push(S, 3)</code> the \\( \\text{push(S, 3)} \\) operation returns the new stack [2,3], so <i>S</i> becomes [2, 3].<br/> </li> </ul> <p>A function \\( f : \\text{Stack} \\rightarrow \\text{Integer} \\) is defined as: </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ f(\\varphi) = 0 \$\$ </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ f(\\text{push}(S, i)) = \\begin{cases} 2^{\\max(f(S), 0)} + i, &amp; \\text{if } i \\text{ is even} \\\\ 2^{\\max(f(S), 0)} - i, &amp; \\text{if } i \\text{ is odd} \\end{cases} \$\$ </p> <p>where \\( \\varphi \\) denotes the empty stack. </p> <p> </p> <p>The stack <i>S</i> contains (from <strong>bottom to top</strong>): \\( [\\,2,\\ 1,\\ 2\\,] \\) </p> <p>What is the value of \\( f(S) \\)? </p> <p>A. 7<br/><br/>B. 9<br/><br/>C. 128<br/><br/>D. 130</p> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose we want to implement a stack data structure using just one queue. push() and pop() are two functions on stack that may use enqueue() and dequeue() functions of queue Q.</p> <p>Which of the following pair(s) of implementations for push() and pop() work?</p> <p></p>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> push</span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">x</span><span class="pun">);</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="pln">pop</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln"> k</span><span class="pun">++)</span></li><li class="L5"><span class="pln">        Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">());</span></li><li class="L6"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L7"><span class="pun">}</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> push</span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">x</span><span class="pun">);</span></li><li class="L2"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln"> k</span><span class="pun">++)</span></li><li class="L3"><span class="pln">        Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">());</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pln">pop</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L7"><span class="pun">}</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> push</span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">x</span><span class="pun">);</span></li><li class="L2"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln"> k</span><span class="pun">++)</span></li><li class="L3"><span class="pln">        Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">());</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pln">pop</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">size</span><span class="pun">();</span><span class="pln"> k</span><span class="pun">++)</span></li><li class="L7"><span class="pln">        Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">());</span></li><li class="L8"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L9"><span class="pun">}</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> push</span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln">x</span><span class="pun">);</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="pln">pop</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L5"><span class="pun">}</span></li></ol></pre>`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Consider a queue which supports print() function in addition to enqueue() and dequeue(). print() is a function that prints an element of the head of the queue without removing the element. Suppose the initial content of the queue is \\( 1,2,3,4,5 \\) where \\( 1 \\) is on the head. How Many number of calls to enqueue(), dequeue() or print() is required to print queue content in reverse order (output should be printed as \\( 5,4,3,2,1) \\) such that the final content of the queue should be the same as the initial content. We are not allowed to use anything else other than enqueue(), dequeue() or print() function calls. </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "45",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following pseudocode of function mystery() which takes one stack orig_stack as input and modify its content using another stack calles helper_stack</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">orig_stack</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="typ">Stack</span><span class="pln"> helper_stack</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="typ">IsEmpty</span><span class="pun">(</span><span class="pln">orig_stack</span><span class="pun">))</span></li><li class="L4"><span class="pln">    </span><span class="pun">{</span></li><li class="L5"><span class="pln">        </span><span class="kwd">int</span><span class="pln"> element </span><span class="pun">=</span><span class="pln"> pop</span><span class="pun">(</span><span class="pln">orig_stack</span><span class="pun">);</span></li><li class="L6"><span class="pln">        </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="typ">IsEmpty</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="typ">Top</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> element</span><span class="pun">)</span></li><li class="L7"><span class="pln">        </span><span class="pun">{</span></li><li class="L8"><span class="pln">            </span><span class="typ">Push</span><span class="pun">(</span><span class="pln">orig_stack</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Pop</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">));</span></li><li class="L9"><span class="pln">        </span><span class="pun">}</span></li><li class="L0"><span class="pln">        </span><span class="typ">Push</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">,</span><span class="pln"> element</span><span class="pun">);</span></li><li class="L1"><span class="pln">    </span><span class="pun">}</span></li><li class="L2"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="typ">IsEmpty</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">))</span></li><li class="L3"><span class="pln">    </span><span class="pun">{</span></li><li class="L4"><span class="pln">        </span><span class="typ">Push</span><span class="pun">(</span><span class="pln">orig_stack</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Pop</span><span class="pun">(</span><span class="pln">helper_stack</span><span class="pun">));</span></li><li class="L5"><span class="pln">    </span><span class="pun">}</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p><br/> Suppose the content of orig_stack initially is \\( -1, 7, 0, 3, -2, \\) where \\( -1 \\) is on the top. </p> <p>What will be the content of orig_stack() after the function call mystery()?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 7, 3, 0, -1, -2 \\) where \\( 7 \\) is on the top.`,
+        `\\( 7, -1, 0, 3, -2, \\) where \\( 7 \\) is on the top.`,
+        `\\( 7, -1, 0, -2, 3, \\) where \\( 7 \\) is on the top.`,
+        `\\( -2, -1, 0, 3, 7, \\) where \\( -2 \\) is on the top.`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>A queue of int is implemented using a circular array as the following data type:</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="com">#define</span><span class="pln"> SIZE </span><span class="lit">20</span></li><li class="L1"><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">[</span><span class="pln">SIZE</span><span class="pun">];</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> front</span><span class="pun">,</span><span class="pln"> rear</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span><span class="pln"> </span><span class="typ">Queue</span><span class="pun">;</span></li></ol></pre> <p><br/> Fill up the missing codes in the IsEmpty and IsFull operations of the Queue. q-&gt;front and q-&gt;rear both have been initialized to \\( -1. \\) </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="typ">IsEmpty</span><span class="pun">(</span><span class="typ">Queue</span><span class="pln"> </span><span class="pun">*</span><span class="pln">q</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="com">//Line X</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="kwd">int</span><span class="pln"> </span><span class="typ">IsFull</span><span class="pun">(</span><span class="typ">Queue</span><span class="pln"> </span><span class="pun">*</span><span class="pln">q</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="com">//Line Y</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="pln"> </span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="typ">Line</span><span class="pln"> X </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="pln">front </span><span class="pun">==</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="pln">rear</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="typ">Line</span><span class="pln"> X </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="pln">front </span><span class="pun">==</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="typ">Line</span><span class="pln"> X </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="pln">rear </span><span class="pun">==</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;" class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" ><ol class="linenums"><li class="L0"><span class="typ">Line</span><span class="pln"> Y </span><span class="kwd">is</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="pln">front </span><span class="pun">==</span><span class="pln"> </span><span class="pun">(</span><span class="pln">q</span><span class="pun">-&gt;</span><span class="pln">rear</span><span class="pun">+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">%</span><span class="pln"> SIZE</span><span class="pun">;</span></li></ol></pre>`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: ``
+    },
+  ]
+});
