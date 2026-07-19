@@ -37676,7 +37676,7 @@ switch (choice) {
       text: `<p> <meta/> </p> <p>Consider the following condition where <code>n</code> is an integer variable:</p> <pre>n &lt; -2 || n &gt;= 2 &amp;&amp; n!= 6 ||  n == -2
 </pre> <p>Which one of the following number lines correctly shows in bold the range of <code>n</code> where the condition evaluates to <i>TRUE </i>?<br/><br/>Note: Filled circles represent points that are included in the range, and hollow circles represent points that are not included.</p> <p> </p> <div class="number-line A"><span class="option-label"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;amp;qa_blobid=4714962742244130423"/></span><img alt="" height="192" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=5517731087363826503" width="506"/> </div>`,
       image: "",
-      options: [],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: ``
     },
