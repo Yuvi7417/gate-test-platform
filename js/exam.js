@@ -371,6 +371,33 @@ function openPaymentGateway(id) {
   if (!ts) return;
 
   const token = localStorage.getItem('apexcore_token');
+  
+  // If course is FREE, bypass Razorpay
+  if (ts.price === "FREE") {
+    fetch('/api/enroll-free', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
+      body: JSON.stringify({ courseId: id })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          alert("Successfully enrolled in " + ts.title + "!");
+          if (!enrolledIds.includes(id)) enrolledIds.push(id);
+          enrollAndGo(id);
+        } else {
+          alert("Error: " + data.message);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Server error enrolling in course.");
+      });
+    return;
+  }
   const amountWithGst = Math.round(ts.basePrice * 1.18 * 100); // 18% GST, converted to paise
 
   fetch('/api/create-order', {
