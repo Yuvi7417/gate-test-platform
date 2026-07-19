@@ -42085,3 +42085,236 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Algorithms-2",
+  date: "November 13, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( S(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ S(n)=S(n / 2)+\\log (n) . \$\$<br/> What will be asymptotic bound on \\( S(n) \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n \\log n) \\)`,
+        `\\( \\Theta(\\log n) \\)`,
+        `\\( \\Theta(\\log \\log n) \\)`,
+        `\\( \\Theta\\left((\\log n)^ 2\\right) \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n)=T(a n)+T(b n)+n, \\) where \\( a+b&lt;1 \\). </p> <p>What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n) \\)`,
+        `\\( \\Theta\\left(n^ 2\\right) \\)`,
+        `\\( \\Theta(n \\log n) \\)`,
+        `\\( \\Theta((a+b) \\log n) \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=16 T(n / 4)+n^{2}(\\log n)^{3} \$\$<br/> What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^ 2(\\log n)^ 3\\right) \\)`,
+        `\\( \\Theta\\left(n^ 2(\\log n)^ 4\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3 \\log n\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3(\\log n)^ 3\\right) \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=64 T(n / 4)+8^{\\log _{2} n} \$\$<br/> What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^ 3(\\log n)^ 3\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3 \\log n\\right) \\)`,
+        `\\( \\Theta\\left(n^ 4\\right) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( T(n)=2 T(n / 2)+O(n), \\) where " \\( O \\)" is big-oh. What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n) \\)`,
+        `\\( \\Theta(n \\log n) \\)`,
+        `\\( \\Theta\\left(n^ 2\\right) \\)`,
+        `\\( O\\left(n^ 3\\right) \\)`,
+      ],
+      answer: ["D"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=T(\\sqrt{n})+\\log \\log n \$\$<br/> What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(\\log n) \\)`,
+        `\\( \\Theta((\\log \\log n)^2) \\)`,
+        `\\( \\Theta(\\log \\log \\log n) \\)`,
+        `\\( \\Theta(\\log \\log \\log \\log n) \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=2 T(\\sqrt{n})+\\log n \$\$<br/> What will be asymptotic bound on \\( T(n) ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(\\log n) \\)`,
+        `\\( \\Theta(\\log \\log n) \\)`,
+        `\\( \\Theta(\\log n \\log \\log n) \\)`,
+        `\\( \\Theta(n \\log n) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=n^{2}+T(n / 2)+T(n / 4) \$\$<br/> What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^ 2\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3\\right) \\)`,
+        `\\( \\Theta\\left(n^ 4\\right) \\)`,
+        `\\( \\Theta\\left(n^ 2 \\log n\\right) \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let <br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=\\sqrt{n} \\cdot T(\\sqrt{n})+n \$\$<br/> What will be asymptotic bound on \\( T(n) ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(\\sqrt{n} \\log n) \\)`,
+        `\\( \\Theta(\\log \\log n) \\)`,
+        `\\( \\Theta(n \\log \\log n) \\)`,
+        `\\( \\Theta(\\sqrt{n} \\log \\log n) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)= \\begin{cases}2 T(n / 2)+8 T(n / 4)+n^{2} &amp; \\text { if } n \\geq 4 \\\\ 1 &amp; \\text { if } n \\leq 3\\end{cases} \$\$<br/> What will be asymptotic bound on \\( T(n)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^ 2 \\log n\\right) \\)`,
+        `\\( \\Theta\\left(n^ 2\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3\\right) \\)`,
+        `\\( \\Theta\\left(n^ 3 \\log n \\right) \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Select the correct asymptotic complexity of an algorithm with runtime \\( T(n, n) \\) where </p> <ul> <li> \\( T(x, c)=\\Theta(x) \\quad \\) for \\( c \\leq 2 \\), </li> <li> \\( T(c, y)=\\Theta(y) \\quad \\) for \\( c \\leq 2 \\), and </li> <li> \\( T(x, y)=\\Theta(x)+T(x, y / 2) \\) </li> </ul> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(\\log n) \\)`,
+        `\\( \\Theta(n) \\)`,
+        `\\( \\Theta(n \\log n) \\)`,
+        `\\( \\Theta\\left(n \\log ^{2} n\\right) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider mutually recursive definitions of \\( T(a, b) \\) and \\( S(c, d) \\) :<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ \\begin{array}{rlr} T(x, c) &amp; =\\Theta(x) &amp; \\text { for } c \\leq 2 \\\\ T(x, y) &amp; =\\Theta(x)+S(x, y / 2), &amp;\\\\ S(c, y) &amp; =\\Theta(y) &amp; \\text { for } c \\leq 2, \\text { and }\\\\ S(x, y) &amp; =\\Theta(y)+T(x / 2, y) &amp; \\end{array} \$\$<br/> Select the correct asymptotic complexity of an algorithm with run-time \\( T(n, n) \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(\\log n) \\).`,
+        `\\( \\Theta(n) \\).`,
+        `\\( \\Theta(n \\log n) \\).`,
+        `\\( \\Theta\\left(n \\log ^{2} n\\right) \\).`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A list of \\( n \\) arrays, each of length \\( n, \\) is passed to an algorithm like merge-sort. The algorithm recursively divides a set of arrays into two parts until there are only two arrays. </p> <p>If there are two arrays, then, as a base case, the algorithm combines or merges both in cost of \\( \\mathrm{O}(p+q) \\) where \\( p \\) and \\( q \\) are sizes of arrays. </p> <p>What will be the time complexity recurrence relation of such algorithm?</p> <p>Let \\( T(n) \\) be time taken for \\( n \\) arrays. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( T(n)=2 T(n / 2)+n^ 2 \\)`,
+        `\\( T(n)=2 T(n / 2)+n \\)`,
+        `\\( T(n)=2 T(n / 2)+n^ 3 \\)`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a recurrence relation.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=\\alpha T(n / 2)+n^{2} . \$\$<br/> Let \\( a \\geq 1 \\) be an integer. </p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `For \\( \\alpha&gt;4, T(n)=\\theta\\left(n^{\\lg \\alpha}\\right) \\)`,
+        `For \\( \\alpha=4, T(n)=\\theta\\left(n^{2} \\lg n\\right) \\)`,
+        `For \\( \\alpha&lt;4, T(n)=\\theta\\left(n^{2}\\right) \\)`,
+        `For all values of \\( \\alpha, T(n)=\\theta\\left(n^{2} \\lg n\\right) \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( T(n) \\) be<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=2 T\\left(\\frac{n}{2}\\right)+\\frac{n}{\\lg n} \$\$ </p> <p> \\( T(2) =1 \\) </p> <p>What will be asymptotic bound on \\( T(n) ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta\\left(n^ 2(\\log n)\\right) \\)`,
+        `\\( \\Theta\\left(n(\\log n)^ 2\\right) \\)`,
+        `\\( \\Theta(n \\log \\log n) \\)`,
+        `\\( \\Theta\\left(n^ 2 \\log \\log n\\right) \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+  ]
+});
