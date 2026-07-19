@@ -41952,7 +41952,7 @@ registerTest({
       marks: 2.0,
       neg: 0.0,
       type: "MSQ",
-      text: `<p></p> <p>Consider a quicksort where splits at every level are in the proportion of \\( \\alpha \\), which means one of the partitions is \\( \\alpha n \\) and the other partition is \\( (1-\\alpha) n \\). The recursive equation of time complexity can be written as </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=T(\\alpha&amp;nbsp;n)+T(1-\\alpha) n)+n. \$\$ Consider a recursion tree of function calls and let \\( x \\) be the height of the tree when we hit the base case the first time and let \\( y \\) be the maximum height of the tree then, which of the following is/are true?<br/> Base case is an array containing single element. </p> <p></p>`,
+      text: `<p></p> <p>Consider a quicksort where splits at every level are in the proportion of \\( \\alpha \\), which means one of the partitions is \\( \\alpha n \\) and the other partition is \\( (1-\\alpha) n \\). The recursive equation of time complexity can be written as </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ T(n)=T(\\alpha n)+T(1-\\alpha) n)+n. \$\$ Consider a recursion tree of function calls and let \\( x \\) be the height of the tree when we hit the base case the first time and let \\( y \\) be the maximum height of the tree then, which of the following is/are true?<br/> Base case is an array containing single element. </p> <p></p>`,
       image: "",
       options: [
         `\\( \\alpha^ x n=1 \\) and \\( (1-\\alpha)^ y n=1 \\) if \\( \\alpha&lt;0.5 \\)`,
@@ -41997,7 +41997,7 @@ registerTest({
       marks: 2.0,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Suppose you are given \\( k \\) sorted arrays, each with \\( n \\) elements, and you want to combine them into a single array of kn elements. Consider the following approach. Divide the \\( k \\) arrays into \\( k&amp;nbsp;/ 2 \\) pairs of arrays, and use the Merge subroutine of MergeSort to combine each pair. Now you are left with \\( k / 2 \\) sorted arrays, each with \\( 2 n \\) elements. </p> <p>Repeat this approach until you have a single sorted array with kn elements. What is the running time of this procedure, as a function of \\( k \\) and \\( n? \\) </p> <p></p>`,
+      text: `<p></p> <p>Suppose you are given \\( k \\) sorted arrays, each with \\( n \\) elements, and you want to combine them into a single array of kn elements. Consider the following approach. Divide the \\( k \\) arrays into \\( k / 2 \\) pairs of arrays, and use the Merge subroutine of MergeSort to combine each pair. Now you are left with \\( k / 2 \\) sorted arrays, each with \\( 2 n \\) elements. </p> <p>Repeat this approach until you have a single sorted array with kn elements. What is the running time of this procedure, as a function of \\( k \\) and \\( n? \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( \\Theta(n k \\log k) \\)`,
@@ -42042,7 +42042,7 @@ registerTest({
       marks: 2.0,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>An inversion in a vector of integers \\( T[0 \\ldots n-1] \\) is a pair of positions storing values that are not ordered, that is, a pair \\( (i, j) \\) such that \\( 0 \\leq&amp;nbsp;i&lt;j&lt;n \\) and \\( T[i]&gt;T[j] \\). </p> <p>Let \\( T[0 \\ldots 99] \\) be an array of hundred integers. It is also given that \\( T[0]&gt;T [10] \\). Relation between other elements is not given.<br/> Which of the following is/are true about a number of inversions. </p> <p></p>`,
+      text: `<p></p> <p>An inversion in a vector of integers \\( T[0 \\ldots n-1] \\) is a pair of positions storing values that are not ordered, that is, a pair \\( (i, j) \\) such that \\( 0 \\leq i&lt;j&lt;n \\) and \\( T[i]&gt;T[j] \\). </p> <p>Let \\( T[0 \\ldots 99] \\) be an array of hundred integers. It is also given that \\( T[0]&gt;T [10] \\). Relation between other elements is not given.<br/> Which of the following is/are true about a number of inversions. </p> <p></p>`,
       image: "",
       options: [
         `There are at most \\( 11 \\) inversions in the array.`,
