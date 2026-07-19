@@ -41668,7 +41668,7 @@ registerTest({
       marks: 1.0,
       neg: 0.0,
       type: "MSQ",
-      text: `<p></p> <p>Let we insert the values \\( 74,924,83,113 \\), and \\( 5 \\) in the given order into a hash table of size \\( 10, \\) using the hash function \\( k&amp;nbsp;\\% 10 \\) and resolving collisions with quadratic probing. Determine which items we would encounter in order to search for the value \\( 65? \\) </p> <p></p>`,
+      text: `<p></p> <p>Let we insert the values \\( 74,924,83,113 \\), and \\( 5 \\) in the given order into a hash table of size \\( 10, \\) using the hash function \\( k \\% 10 \\) and resolving collisions with quadratic probing. Determine which items we would encounter in order to search for the value \\( 65? \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( 924 \\)`,
@@ -41683,7 +41683,7 @@ registerTest({
       marks: 1.0,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Suppose \\( \\mathrm{M} \\) randomly selected keys are hashed into the range \\( [0\\ldots&amp;nbsp;\\text{N}-1] \\) using a uniformly distributed hashing function. What is the probability that all \\( \\text{M} \\) keys yield the same hash value (so all \\( \\text{M} \\) keys collide at the same slot \\( )? \\) </p> <p></p>`,
+      text: `<p></p> <p>Suppose \\( \\mathrm{M} \\) randomly selected keys are hashed into the range \\( [0\\ldots \\text{N}-1] \\) using a uniformly distributed hashing function. What is the probability that all \\( \\text{M} \\) keys yield the same hash value (so all \\( \\text{M} \\) keys collide at the same slot \\( )? \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( \\dfrac{1}{\\text{N}^{\\text{M}-1}} \\)`,
