@@ -38027,7 +38027,9 @@ free_linked_list(lst-&gt;next);
     },
   ]
 });
-\n\nregisterTest({
+
+
+registerTest({
   series: "cs-gate-classes",
   name: "SWT - C-Programing-3",
   date: "August 23, 2026",
