@@ -39826,3 +39826,279 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Operating System-2",
+  date: "October 4, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>In order to create a good solution for the mutual exclusion problem(critical section problem) for concurrent processes, which of the following conditions must hold?</p> <p> </p>`,
+      image: "",
+      options: [
+        `No process should have to wait forever to enter its critical region.`,
+        `No process running outside of its critical region may block other processes from entering their critical region.`,
+        `There should be no assumptions about the speed or number of CPUs.`,
+        `Every process should be able to enter inside the critical section as soon as it shows interest.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a computer system in which processes can request and release one or more resources. Once a process has been granted a resource, the process has exclusive use of that resource until it is released. If a process requests a resource that is already in use, the process enters a queue for that resource, waiting until the resource is available. Which of the following will deal with the problem of deadlock such that deadlock is prevented or handled?</p>`,
+      image: "",
+      options: [
+        `Giving priorities to processes and ordering the wait queues by priority`,
+        `Having a process request all its required resources when it first begins, and restarting if it cannot obtain them all`,
+        `Numbering the resources and requiring that processes request resources in order of increasing number`,
+        `Having processes time out and restart after a random interval of waiting`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following statements about deadlocking is/are true?</p>`,
+      image: "",
+      options: [
+        `If a system is not deadlocked at time \\( \\text{T}, \\) it can always avoid being deadlocked at time \\( \\mathrm{T}+1 \\).`,
+        `If a system is in a safe state at time \\( \\text{T}, \\) it can always avoid being deadlocked at time \\( \\mathrm{T}+1 \\).`,
+        `Cycle in the resource allocation graph always lead to deadlock.`,
+        `If the Banker’s algorithm will not approve a resource request, and the resource request is still processed, then system necessarily will enter deadlock.`,
+      ],
+      answer: ["B"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Suppose there are \\( \\text{‘P'} \\) processes, all the processes share a total of \\( \\text{‘R'} \\) identical resources, which can be reserved and released one at a time. Each process requires a maximum of \\( \\text{‘M'} \\) resource units, where \\( \\text{M}&gt;0 \\). Which one of the following is a necessary condition for ensuring deadlock will not occur? </p>`,
+      image: "",
+      options: [
+        `\\( \\text{P(M – 1)}>\\text{R – 1} \\)`,
+        `\\( \\text{P(M – 1)} \\leq \\text{R – 1} \\)`,
+        `\\( \\text{P(M – 1)}<\\text{R – 1} \\)`,
+        `\\( \\text{P(M – 1)} \\geq \\text{R – 1} \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>A cycle in a resource-allocation graph is _______</p>`,
+      image: "",
+      options: [
+        `a necessary and sufficient condition for deadlock in the case that each resource has more than one instance`,
+        `a necessary and sufficient condition for a deadlock in the case that each resource has exactly one instance`,
+        `a sufficient condition for a deadlock in the case that each resource has more than once instance`,
+        `is neither necessary nor sufficient for indicating deadlock in the case that each resource has exactly one instance`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following \\( 3 \\) processes with \\( 3 \\) binary semaphores with initial values \\( \\text{s0 = 0, s1 = 0, s2 = 1} \\)<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{lll}\\quad \\textbf { P: } &amp;\\quad \\textbf { Q: } &amp; \\quad \\textbf { R: } \\\\ \\text { While(1) } &amp; \\text { While(1) } &amp; \\text { While(1) } \\\\ \\{ &amp; \\{ &amp; \\{ \\\\ \\quad\\mathrm{P}(\\mathrm{s} 0) ; &amp; \\quad\\mathrm{P}(\\mathrm{s} 1) ; &amp; \\quad \\mathrm{P}(\\mathrm{s} 2) ; \\\\ \\quad \\text {Print }(0) ; &amp; \\quad \\operatorname{Print}(1) ; &amp; \\quad\\operatorname{Print}(2) ; \\\\ \\quad \\mathrm{V}(\\mathrm{s} 1) ; &amp; \\quad \\mathrm{V}(\\mathrm{s} 1) ; &amp; \\quad\\mathrm{V}(\\mathrm{s} 0) ; \\\\ \\} &amp; \\} &amp; \\} \\\\\\end{array} \\] <br/> What will be the correct pattern generated by these \\( 3 \\) processes? </p>`,
+      image: "",
+      options: [
+        `\\( (201)^\\ast \\)`,
+        `\\( (012)^\\ast \\)`,
+        `\\( \\left(201^{+}\\right)^\\ast \\)`,
+        `\\( 201^{+} \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p> \\( \\mathrm{D} \\) number of friends go to a Chinese restaurant at a busy time of the day. The waiter apologetically explains that the restaurant can provide only a few chopsticks to be shared among the \\( \\mathrm{D} \\) people. Furthermore, each diner may require a different number of chopsticks to eat. For example, it is possible that one of the diners is an octopus, who for some reason refuses to begin eating before acquiring eight chopsticks. The second parameter of this scenario is \\( \\mathrm{C} \\), the number of chopsticks that would simultaneously satisfy the needs of all diners at the table. For example, two octopuses would result in \\( \\mathrm{C}=16 \\).<br/> All the chopsticks provided by the waiter are placed in an empty glass at the center of the table and each diner obeys the following protocol:<br/> Acquire chopsticks one after one and start eating only after having the required number of chopsticks. If no more chopsticks are available then Hold the current chopsticks and wait for more chopsticks. Once all chopsticks are acquired, then eat and release all chopsticks. Also while one person is using a chopstick then unless he releases it after completion of eating, it can not be shared with any other person(i.e. Chopsticks are used in mutual exclusion manner). </p> <p>What is the smallest number of chopsticks (in terms of \\( \\mathrm{D} \\) and \\( \\mathrm{C}) \\) needed to ensure that deadlock cannot occur? </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{C} \\)`,
+        `\\( \\mathrm{D} \\)`,
+        `\\( \\mathrm{C}-\\mathrm{D} \\)`,
+        `\\( \\mathrm{C}-\\mathrm{D}+1 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following concurrent tasks, in which each assignment statement executes atomically. Initially, the shared variables \\( x \\) and \\( y \\) are set to \\( 0. \\)<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\underline{\\text{Task 1}} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ll}x=1 \\\\ a=y \\end{array} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\underline{\\text{Task 2}} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ll}y=1 \\\\ b=x\\end{array} \\]<br/> <br/> At the end of the concurrent tasks, the values of a and b are examined. Which of the following must be true? </p> <ol style="list-style-type:upper-roman"> <li> \\( (a==0) \\rightarrow(b==1) \\) </li> <li> \\( (b==0) \\rightarrow(a==1) \\) </li> <li> \\( (a==1) \\rightarrow(b==1) \\) </li> </ol> <p> </p>`,
+      image: "",
+      options: [
+        `I only`,
+        `II only`,
+        `III only`,
+        `I and II only`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following snapshot of a system with five processes \\( \\text{(P1, P2, P3, P4, P5)} \\) and four resources \\( \\text{(R1, R2, R3, R4)}. \\) There are no current outstanding queued unsatisfied requests. </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\textbf{Currently Available Resources} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|c|} \\hline \\mathbf{R 1} &amp; \\mathbf{R 2} &amp; \\mathbf{R 3} &amp; \\mathbf{R4} \\\\ \\hline 2 &amp; 1 &amp; 2 &amp; 0 \\\\ \\hline \\end{array} \\] </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\textbf{Current Allocation} \\qquad \\qquad \\textbf{Max Need} \\qquad \\qquad \\qquad \\textbf{Still Needs} \\] <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|c|} \\hline \\textbf { Process } &amp; \\textbf { R1 } &amp; \\textbf { R2 } &amp; \\textbf { R3 } &amp; \\textbf { R4 } &amp; \\textbf { R1 } &amp; \\textbf { R2 } &amp; \\textbf { R3 } &amp; \\textbf { R4 } &amp; \\textbf { R1 } &amp; \\textbf { R2 } &amp; \\textbf { R3 } &amp; \\textbf { R4 } \\\\ \\hline \\textbf { P1 } &amp; 0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; 3 &amp; 2 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\\\ \\hline \\textbf { P2 } &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 7 &amp; 5 &amp; 0 &amp; 0 &amp; 7 &amp; 5 &amp; 0 \\\\ \\hline \\textbf { P3 } &amp; 0 &amp; 0 &amp; 3 &amp; 4 &amp; 6 &amp; 6 &amp; 5 &amp; 6 &amp; 6 &amp; 6 &amp; 2 &amp; 2 \\\\ \\hline \\textbf { P4 } &amp; 2 &amp; 3 &amp; 5 &amp; 4 &amp; 4 &amp; 3 &amp; 5 &amp; 6 &amp; 2 &amp; 0 &amp; 0 &amp; 2 \\\\ \\hline \\textbf { P5 } &amp; 0 &amp; 3 &amp; 3 &amp; 2 &amp; 0 &amp; 6 &amp; 5 &amp; 2 &amp; 0 &amp; 3 &amp; 2 &amp; 0 \\\\ \\hline \\end{array} \\] </p> <p>Consider the following statements.</p> <p>From the perspective of deadlock avoidance, which one of the following is false?</p>`,
+      image: "",
+      options: [
+        `If a request from process \\( \\text{P1} \\) arrives for \\( (0,0,2,0) \\), the request can be immediately granted because the system will remain in safe state after granting this request.`,
+        `If a request from process \\( \\text{P3} \\) arrives for \\( (0,0,2,0) \\), the request can be immediately granted because the system will remain in safe state after granting this request.`,
+        `If a request from process \\( \\text{P5} \\) arrives for \\( (0,0,2,0) \\), the request can be immediately granted because the system will remain in safe state after granting this request.`,
+        `If a request from process \\( \\text{P2} \\) arrives for \\( (0,0,2,0) \\), the request can be immediately granted because the system will remain in safe state after granting this request.`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following algorithm for a solution to the critical section problem for two processes. The solution for process \\( \\textsf{P}_\\textsf{i} \\;\\textsf{(i = 0 or 1)} \\) with \\( \\textsf{P}_\\textsf{j}\\; \\textsf{(j = 1 or 0)} \\) is shown below: </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">boolean</span><span class="pln"> flag</span><span class="pun">[</span><span class="lit">2</span><span class="pun">];</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">flag</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> flag</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]=</span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> turn </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="typ">Code</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> P_i</span><span class="pun">:</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">repeat forever</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">flag</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">flag</span><span class="pun">[</span><span class="pln">j</span><span class="pun">])</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">turn </span><span class="pun">==</span><span class="pln"> j</span><span class="pun">)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">11</span><span class="pln">    </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">12</span><span class="pln">        flag</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">13</span><span class="pln">        </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">turn </span><span class="pun">==</span><span class="pln"> j</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">14</span><span class="pln">        flag</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">15</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">16</span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">17</span><span class="com">/* enter C.S. */</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="com">/* exit C.S. */</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="pln">turn </span><span class="pun">=</span><span class="pln"> j</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pln">flag</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+</pre> <p>Which of the following is true?</p>`,
+      image: "",
+      options: [
+        `Mutual exclusion is satisfied.`,
+        `Progress is satisfied.`,
+        `Bounded waiting is satisfied.`,
+        `Deadlock may occur.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider a queue between the two processes indicated below. \\( \\textsf{N} \\) is the length of the queue \\( ;\\;\\textsf{e, f}, \\) and \\( \\textsf{b} \\) are semaphores. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">init</span><span class="pun">:</span><span class="pln"> e</span><span class="pun">:=</span><span class="pln">N </span><span class="pun">;</span><span class="pln"> f</span><span class="pun">:=</span><span class="lit">0</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> b</span><span class="pun">:=</span><span class="lit">1</span><span class="pun">;</span>
+</pre> <p> \\( \\begin{array}{cc}\\text{Process 1 : } &amp; \\quad \\text{Process 2 : } \\\\ \\textsf {loop} &amp; \\textsf {loop} \\\\ \\qquad \\textsf{P(e)} &amp; \\qquad\\textsf{P(f)} \\\\ \\qquad \\textsf{P(b)} &amp; \\qquad \\textsf{P(b)} \\\\ \\qquad \\quad \\textsf{enqueue} &amp; \\qquad \\quad \\textsf{dequeue} \\\\ \\qquad \\textsf{V(b)} &amp; \\qquad \\textsf{V(b)} \\\\ \\qquad \\textsf{V(f)} &amp; \\qquad \\textsf{V(e)} \\\\ \\quad \\textsf {end loop} &amp; \\quad \\textsf {end loop}\\end{array} \\) <br/><br/>Which of the following statements is (are) true? </p>`,
+      image: "",
+      options: [
+        `The purpose of semaphore \\( \\textsf{f} \\) is to ensure that dequeue is not executed on an empty queue.`,
+        `The purpose of semaphore \\( \\textsf{e} \\) is to ensure that deadlock does not occur.`,
+        `The purpose of semaphore \\( \\textsf{b} \\) is to provide mutual exclusion for queue operations.`,
+        `Deadlock is possible.`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Suppose two threads execute the following \\( \\mathrm{C} \\) code concurrently, accessing shared variables \\( \\textsf{a, b}, \\) and \\( \\textsf{c}: \\) </p> <p><strong>Initialization</strong></p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
+</pre> <p><strong>Thread 1</strong></p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    c </span><span class="pun">=</span><span class="pln"> b </span><span class="pun">-</span><span class="pln"> a</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    c </span><span class="pun">=</span><span class="pln"> b </span><span class="pun">+</span><span class="pln"> a</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pun">}</span><span class="pln">    </span>
+</pre> <p><strong>Thread 2</strong></p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">a </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">3</span><span class="pun">;</span>
+</pre> <p>You can assume that reads and writes of the variables are atomic, and that the order of statements within each thread is preserved in the code generated by the \\( \\mathrm{C} \\) compiler. </p> <p>Statement \\( \\mathrm{X}=\\mathrm{Y} \\ast \\mathrm{Z} \\) reads \\( \\mathrm{Y} \\), then reads \\( \\mathrm{Z} \\) from memory, performs \\( \\mathrm{Y} \\ast \\mathrm{Z} \\), stores/writes it to memory \\( \\mathrm{X}. \\) </p> <p>Which of the following values are possible for \\( \\textsf{c} \\) after both threads complete? </p>`,
+      image: "",
+      options: [
+        `\\( 4 \\)`,
+        `\\( 7 \\)`,
+        `\\( 14 \\)`,
+        `\\( -3 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following pseudo‐code for a process \\( \\textsf{Pi}, \\) where \\( \\textsf{“shared boolean flag[2]”} \\) is a variable declared in shared memory, initialized as: </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="pln">flag</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> flag</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> FALSE</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">P</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">// i=0 for P0, i=1 for P1 </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">TRUE</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">        flag</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]=</span><span class="pln"> TRUE</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">flag</span><span class="pun">[(</span><span class="pln">i</span><span class="pun">+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> mod </span><span class="lit">2</span><span class="pun">]==</span><span class="pln"> TRUE</span><span class="pun">);</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="pln">        </span><span class="pun">&lt;</span><span class="pln"> </span><span class="typ">Critical</span><span class="pln"> section </span><span class="pun">&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln">    flag </span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> FALSE</span><span class="pun">;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">        </span><span class="pun">&lt;</span><span class="pln"> </span><span class="typ">Remainder</span><span class="pln"> </span><span class="typ">Section</span><span class="pln"> </span><span class="pun">&gt;</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="pun">}</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span>
+</pre> <p>this code tries to solve the critical section problem for two processes \\( \\textsf{P0} \\) and \\( \\textsf{P1}. \\) </p> <p>Which of the following is/are true?</p>`,
+      image: "",
+      options: [
+        `Deadlock is possible.`,
+        `Mutual exclusion is satisfied.`,
+        `Bounded waiting is satisfied.`,
+        `Progress is satisfied.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the following snapshot of a system with five processes \\( \\text{(P10, P11, P12, P13, P14)} \\) and four resources \\( \\text{(R1, R2, R3, R4). R1, R2, R3,} \\) and \\( \\text{R4} \\) have a total of \\( 6, 7, 14, \\) and \\( 12 \\) resources, respectively. There are no current outstanding queued unsatisfied requests.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\text{Table 1: Allocation} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{c|c|c|c|c} \\text{PID} &amp; \\mathrm{R} 1 &amp; \\mathrm{R} 2 &amp; \\mathrm{R} 3 &amp; \\mathrm{R} 4 \\\\ \\hline 10 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\\\ 11 &amp; 2 &amp; 0 &amp; 0 &amp; 0 \\\\ 12 &amp; 0 &amp; 0 &amp; 3 &amp; 4 \\\\ 13 &amp; 2 &amp; 3 &amp; 5 &amp; 4 \\\\ 14 &amp; 0 &amp; 3 &amp; 3 &amp; 2 \\end{array} \\]<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\text{Table 2: Max Need} \\]<span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{c|c|c|c|c} \\text{PID} &amp; \\text{R1} &amp; \\text{R2} &amp; \\text{R3} &amp; \\text{R4} \\\\ \\hline 10 &amp; 0 &amp; 0 &amp; 3 &amp; 2 \\\\ 11 &amp; 2 &amp; 7 &amp; 5 &amp; 0 \\\\ 12 &amp; 6 &amp; 6 &amp; 5 &amp; 6 \\\\ 13 &amp; 4 &amp; 3 &amp; 5 &amp; 6 \\\\ 14 &amp; 0 &amp; 6 &amp; 5 &amp; 2 \\end{array} \\]<br/> From the perspective of deadlock avoidance, which one of the following is true? </p>`,
+      image: "",
+      options: [
+        `The system is in safe state`,
+        `The system is not in safe state, but would be if one more instance of \\( \\text{R1} \\) were available`,
+        `If a request from process \\( \\text{P14} \\) arrives for \\( (0, 2, 2, 0), \\) the request can be immediately granted.`,
+        `If a request from process \\( \\text{P14} \\) arrives for \\( (0, 2, 2, 0), \\) the request cannot be immediately granted.`,
+      ],
+      answer: ["A", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Four processes \\( \\text{A, B, C, D} \\) are running concurrently using a shared variable counter which is initialized to zero. Processes \\( \\text{A} \\) and \\( \\text{B} \\) read count from memory, increment it by one and store back into memory and terminates. Processes \\( \\text{C} \\) and \\( \\text{D} \\) read count from memory and decrement it by two and store it back into memory and terminates. To synchronize the execution of the \\( 4 \\) processes, a semaphore \\( \\text{S} \\) is used which is initialized to \\( 2. \\) See the table below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|l|l|l|l|} \\hline \\text{Process A} &amp; \\text{Process B} &amp; \\text{Process C} &amp; \\text{Process D} \\\\ \\hline \\textsf{WAIT (S)} &amp; \\textsf{WAIT (S)} &amp; \\textsf{WAIT(S)} &amp; \\textsf{WAIT(S)} \\\\ \\textsf{Read (count)} &amp; \\textsf{Read(count)} &amp; \\textsf{Read(count)} &amp; \\textsf{Read(count)} \\\\ \\textsf{count=count+1} &amp; \\textsf{count=count+1} &amp; \\textsf{count=count-2} &amp; \\textsf{count=count-2} \\\\ \\textsf{Write (count)} &amp; \\textsf{Write (count)} &amp; \\textsf{Write (count)} &amp; \\textsf{Write (count)} \\\\ \\textsf{SIGNAL (S)} &amp; \\textsf{SIGNAL (S)} &amp; \\textsf{SIGNAL (S)} &amp; \\textsf{SIGNAL (S)} \\\\ \\hline\\end{array} \\] If the maximum and minimum possible values of “count” after all processes complete execution are \\( \\text{X, Y} \\) respectively then \\( \\text{X – Y} \\) is ________ </p>`,
+      image: "",
+      options: [],
+      answer: 6,
+      solution: ``
+    },
+  ]
+});
