@@ -37418,7 +37418,7 @@ registerTest({
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">9</span><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">10</span><span class="pun">}</span></pre> <p><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=5689723434612614762"/></p>`,
       image: "",
-      options: [],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: ``
     },
