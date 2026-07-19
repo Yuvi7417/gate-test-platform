@@ -36634,7 +36634,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - C-Programming-1",
+  name: "SWT - C-programing-1",
   date: "August 9, 2026",
   questions: [
     {
@@ -37346,7 +37346,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - C-Programing-2",
+  name: "SWT - C-programing-2",
   date: "August 16, 2026",
   questions: [
     {
@@ -38031,7 +38031,7 @@ free_linked_list(lst-&gt;next);
 
 registerTest({
   series: "cs-gate-classes",
-  name: "SWT - C-Programing-3",
+  name: "SWT - C-programing-3",
   date: "August 23, 2026",
   questions: [
     {

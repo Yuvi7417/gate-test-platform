@@ -2,7 +2,7 @@ import re
 with open('h:/yuvraj dutt/js/test-registry.src.js', 'r', encoding='utf-8') as f:
     text = f.read()
 
-target = r'(<div class=\"number-line A\"><span class=\"option-label\"><img alt=\"\" src=\"https://gateoverflow.in/\?qa=blob&amp;amp;qa_blobid=4714962742244130423\"/></span><img alt=\"\" height=\"192\" src=\"https://gateoverflow.in/\?qa=blob&amp;qa_blobid=5517731087363826503\" width=\"506\"/> </div>`,\s*image:\s*\"\",\s*options:\s*)\[\]'
+target = r'(<p><img alt="" src="https://gateoverflow.in/\?qa=blob&amp;qa_blobid=5689723434612614762"/></p>`,\s*image:\s*"",\s*options:\s*)\[\]'
 new_text = re.sub(target, r'\g<1>["A", "B", "C", "D"]', text)
 
 with open('h:/yuvraj dutt/js/test-registry.src.js', 'w', encoding='utf-8') as f:
