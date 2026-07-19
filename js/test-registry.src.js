@@ -40850,11 +40850,13 @@ registerTest({
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">18</span><span class="pln">    </span><span class="pun">}</span>
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">19</span><span class="kwd">return</span><span class="pln"> head</span><span class="pun">;</span>
 <span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">20</span><span class="pun">}</span>
-</pre> <p>Assume that the input lists are correctly sorted. Which of the following are some of the possible behaviors when Merge() is executed with well-formed and valid inputs? Correctly merged linked list is merged sorted linked list.</p> <ol style="list-style-type:upper-alpha"> <li>The function will produce a correctly merged linked list.</li> <li>The function may lead to a null pointer dereference.</li> <li>The function may result in an incorrectly merged linked list.</li> <li>Merge() will work on the following two lists. </li> </ol>`,
+</pre> <p>Assume that the input lists are correctly sorted. Which of the following are some of the possible behaviors when Merge() is executed with well-formed and valid inputs? Correctly merged linked list is merged sorted linked list.</p>`,
       image: "",
       options: [
-        `\\( \\text{List}1: 1 \\rightarrow 3 \\rightarrow 5\\rightarrow 7\\rightarrow \\text{Null} \\)`,
-        `\\( \\text{List}2: 2\\rightarrow 4\\rightarrow 6\\rightarrow 8\\rightarrow 10 \\rightarrow 12\\rightarrow \\text{Null} \\)`,
+        `The function will produce a correctly merged linked list.`,
+        `The function may lead to a null pointer dereference.`,
+        `The function may result in an incorrectly merged linked list.`,
+        `Merge() will work on the following two lists.<br/><br/>\\( \\text{List}1: 1 \\rightarrow 3 \\rightarrow 5\\rightarrow 7\\rightarrow \\text{Null} \\)<br/><br/>\\( \\text{List}2: 2\\rightarrow 4\\rightarrow 6\\rightarrow 8\\rightarrow 10 \\rightarrow 12\\rightarrow \\text{Null} \\)`,
       ],
       answer: ["C", "D"],
       solution: ``
