@@ -38773,3 +38773,226 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Computer Organization and Architecture-1",
+  date: "August 30, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following PC-relative addressing mode instruction of RISC instruction set architecture. \\( \\text{I1:} \\) \\( 1000: \\textsf{BEQ R1, R2, label} \\) \\( \\text{I2:} \\) \\( 1004: \\textsf{ADD R1, R2, R3} \\) Where the label is used as an offset and \\( 1000 \\) is the memory location from where instruction \\( \\text{I1} \\) is fetched. \\( \\text{R1, R2}, \\) and \\( \\text{R3} \\) are general purpose registers. The BEQ instruction branches the PC if the first source register's contents and the second source register's contents are equal. If \\( \\mathrm{R} 1=0 ; \\mathrm{R} 2=0 \\) and label \\( =20 \\), what is the memory address of the next instruction to be executed? </p>`,
+      image: "",
+      options: [],
+      answer: 1024,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A digital computer has a memory unit with \\( 32 \\) bits per word. The instruction set consists of \\( 110 \\) different operations. All instructions have an operation code part (opcode) and two address fields: one for a memory address and one for a register address. This particular system includes eight general-purpose, user-addressable registers. Registers may be loaded directly from memory, and memory may be updated directly from the registers. Direct memory-to-memory data movement operations are not supported. Each instruction is stored in one word of memory. If \\( \\text{X, Y, Z} \\) represent the number of bits that are needed for the opcode, for the register field, and bits that are left for the memory address part of the instruction, respectively, then \\( \\text{XY + YZ} \\) is _________ </p>`,
+      image: "",
+      options: [],
+      answer: 87,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>The unsigned integer \\( 3,505,468,161 \\) can be written in \\( 32 \\)-bit binary as \\( 11010000\\; 11110001\\; 00110011\\; 00000001. \\) Putting it into four bytes of memory beginning at address \\( 98370 \\) in little-endian fashion would give which picture? </p>`,
+      image: "",
+      options: [
+        `\\( \\begin{array}{|c|c|c|c|}\\hline 98370 & 98371 & 98372 & 98373 \\\\\\hline 11010000 & 111100001 & 00110011 & 00000001 \\\\\\hline \\end{array} \\)<br/>`,
+        `\\( \\begin{array}{|c|c|c|c|}\\hline 98370 & 98371 & 98072 & 98373 \\\\\\hline 00000001 & 111100001 & 00110011 & 11010000\\\\\\hline\\end{array} \\) <br/>`,
+        `\\( \\begin{array}{|c|c|c|c|} \\hline{98370} & 98371 & 98372 & 98373 \\\\\\hline 00000001 & 00110011 & 11110001 & 11010000 \\\\\\hline \\end{array} \\)<br/>`,
+        `\\( \\begin{array}{|c|c|c|c|}\\hline{98370} & 98371 & 98372 & 98373\\\\\\hline 00110011 & 00000001 & 11010000 & 111100001\\\\\\hline\\end{array} \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>When performing hardware integer arithmetic, we say that overflow has occurred when the mathematically correct result of a computation cannot be represented in the number of bits available for the type being used. Obviously, it is important to be able to detect when an overflow error has occurred.</p> <p>For the following options, the bit-sequences are \\( 16 \\)-bit \\( 2 \\)'s complement representations of (signed) integer values. For which of the following an overflow occurs when the given two integers are added? </p>`,
+      image: "",
+      options: [
+        `\\( 0111\\; 1001\\; 1011 \\;1011+0011\\; 1011\\; 1110\\; 1110 \\)`,
+        `\\( 1111\\; 0111\\; 0110\\; 1001+1000\\; 0001\\; 0110\\; 0100 \\)`,
+        `\\( 0001\\; 1100\\; 0110\\; 1111+1111\\; 0111\\; 1110\\; 1101 \\)`,
+        `\\( 1100\\; 1011\\; 1010\\; 1101+0111\\; 1111\\; 0010\\; 1111 \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Consider the control unit that adopts the single address field branch control logic. Assume that the control word is \\( 24 \\) bits wide. The control portion of the micro-instruction format is divided into two fields. A micro-operation field of \\( 13 \\) bits specifies the micro-operations to be performed. An address selection field specifies \\( 8 \\) conditions that will cause a micro-instruction branch. </p> <p>Which of the following is/are true?</p>`,
+      image: "",
+      options: [
+        `\\( 8 \\) bits are in the address selection field<br/>`,
+        `\\( 8 \\) bits are in the address field<br/>`,
+        `the size of the control memory is \\( 768 \\) Bytes<br/>`,
+        `the size of the control memory is \\( 4096 \\) bits.`,
+      ],
+      answer: ["B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A CPU has an arithmetic unit that adds bytes and then sets its \\( \\mathrm{V}, \\mathrm{C} \\), and \\( \\mathrm{Z} \\) flag bits as follows. The \\( \\mathrm{V} \\)-bit is set if arithmetic overflow occurs (in two's complement arithmetic). The \\( \\mathrm{C} \\)-bit is set if a carry-out is generated from the most significant bit during an operation. The \\( \\mathrm{Z} \\)-bit is set if the result is zero.<br/> What are the values of the \\( \\mathrm{V, C,} \\) and \\( \\mathrm{Z} \\) flag bits (in that order) after the \\( 8 \\)-bit bytes \\( 1100\\;1100 \\) and \\( 1000\\;1111 \\) are added? </p>`,
+      image: "",
+      options: [
+        `\\( 000 \\)`,
+        `\\( 110 \\)`,
+        `\\( 111 \\)`,
+        `\\( 001 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider the following :</p> <p>Consider the instruction \\( \\textsf{Load R5, X(R7)} \\) which uses the Index addressing mode to load a word of data from memory location \\( \\textsf{X + [R7]} \\) into register \\( \\textsf{R5}. \\) </p> <p>Execution of this instruction involves the following actions:</p> <ul> <li> \\( \\text{(I1)} \\) Fetch the instruction from the memory. </li> <li> \\( \\text{(I2)} \\) Decode the instruction to determine the operation to be performed. </li> <li> \\( \\text{(I3)} \\) Add the immediate value \\( \\textsf{X} \\) to the contents of \\( \\textsf{R7}. \\) </li> <li> \\( \\text{(I4)} \\) Read register \\( \\textsf{R7}. \\) </li> <li> \\( \\text{(I5)} \\) Use the sum \\( \\textsf{X + [R7]} \\) as the effective address of the source operand, and read the contents of that location in the memory. </li> <li> \\( \\text{(I6)} \\) Increment the program counter. </li> <li> \\( \\text{(I7)} \\) Load the data received from the memory into the destination register, \\( \\textsf{R5} \\). </li> </ul> <p>Which of the following is the most preferred order of execution of the above instruction?</p>`,
+      image: "",
+      options: [
+        `\\( \\text{I1} \\rightarrow \\text{I2} \\rightarrow \\text{I3} \\rightarrow \\text{I4} \\rightarrow \\text{I5} \\rightarrow \\text{I6} \\rightarrow \\text{I7} \\)`,
+        `\\( \\text{I1} \\rightarrow \\text{I2} \\rightarrow \\text{I6} \\rightarrow \\text{I3} \\rightarrow \\text{I4} \\rightarrow \\text{I5} \\rightarrow \\text{I7} \\)`,
+        `\\( \\text{I1} \\rightarrow \\text{I6} \\rightarrow \\text{I2} \\rightarrow \\text{I4} \\rightarrow \\text{I3} \\rightarrow \\text{I5} \\rightarrow \\text{I7} \\)`,
+        `\\( \\text{I1} \\rightarrow \\text{I6} \\rightarrow \\text{I2} \\rightarrow \\text{I5} \\rightarrow \\text{I4} \\rightarrow \\text{I3} \\rightarrow \\text{I7} \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p><img alt="" height="448" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=5547976518793220835" width="768"/></p> <p>Let us define control signals, \\( \\text{P} \\) and \\( \\text{Q} \\), that have the following interpretation </p> <ul> <li> \\( \\mathrm{PQ}=00 \\) Fetch cycle </li> <li> \\( \\mathrm{PQ}=01 \\) Indirect cycle </li> <li> \\( \\mathrm{PQ}=10 \\) Execute cycle </li> <li> \\( \\mathrm{PQ}=11 \\) Interrupt cycle </li> </ul> <p>Which of the following expression boolean expression defines \\( \\mathrm{C}_{4}? \\) </p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{P}’ t_{3} \\)`,
+        `\\( Pt_3’ + Q’t_3 \\)`,
+        `\\( P’Q’t_3 + PQ’t_3 \\)`,
+        `\\( P’Q’t_3 + PQt_3 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>The \\( 8 \\)-bit registers \\( \\text{M, N, O} \\) and \\( \\text{P} \\) initially have the following values.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\text{M} = 10001111 ; \\text{N} = 01100010 ; \\text{O}=01001001 ; \\text{P}=01110010 \\] <br/> The following assembly code is executed: </p> <ul> <li> \\( \\text{M} \\leftarrow \\text{M} \\oplus \\text{N} \\) </li> <li> \\( \\text{M} \\leftarrow \\text{CSL M} \\) </li> <li> \\( \\text{N} \\leftarrow \\text{M+N} \\) </li> <li> \\( \\text{O} \\leftarrow \\text{O} \\wedge \\text{N} \\) </li> <li> \\( \\text{O} \\leftarrow \\text{CSR O} \\) </li> <li> \\( \\text{P} \\leftarrow \\text{P + 1} \\) </li> <li> \\( \\text{P} \\leftarrow \\text{P + O} \\) </li> </ul> <p>Determine the \\( 8 \\)-bit values in each register after the execution of the above sequence of micro-operations.<br/> \\( \\text{CSL}: \\) Circular shift left; \\( \\text{CSR}: \\) Circular shift right; \\( \\wedge : \\) logical AND; \\( + : \\) Arithmetic addition<br/> \\( \\oplus : \\) logical Ex-or. </p>`,
+      image: "",
+      options: [
+        `\\( \\text{M}=11101101 ; \\text{N}=00111101 ; \\text{O}=10000100 ; \\text{P}=11110111 \\)`,
+        `\\( \\text{M}=11011011 ; \\text{N}=00111101 ; \\text{O}=10000100 ; \\text{P}=11110111 \\)`,
+        `\\( \\text{M}=11011011 ; \\text{N}=10111101 ; \\text{O}=10000100 ; \\text{P}=11110111 \\)`,
+        `\\( \\text{M}=11011011 ; \\text{N}=00111101 ; \\text{O}=00001001 ; \\text{P}=01110011 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>A particular parallel program computation requires \\( 100 \\) seconds when executed on a single processor. If \\( 40 \\) percent of this computation is “inherently sequential” ( i.e., will not benefit from additional processors), then the theoretically best possible elapsed times for this program running with \\( 2 \\) and \\( 4 \\) processors, respectively, are </p>`,
+      image: "",
+      options: [
+        `\\( 20 \\) seconds and \\( 10 \\) seconds`,
+        `\\( 50 \\) seconds and \\( 25 \\) seconds`,
+        `\\( 70 \\) seconds and \\( 55 \\) seconds`,
+        `\\( 80 \\) seconds and \\( 70 \\) seconds`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A \\( 64 \\)-bit processor has \\( 64 \\) registers and uses a \\( 20 \\)-bit instruction format. It has two types of instructions \\( : \\text{M-type} \\) and \\( \\text{R-type}. \\) Each \\( \\text{M-type} \\) instruction contains an opcode and a memory address. Each \\( \\text{R-type} \\) instruction contains an opcode and two register names. Main memory is \\( 64 \\mathrm{K} \\) Bytes, and it is byte addressable. If there are \\( 10 \\) distinct \\( \\text{M-type} \\) opcodes, then the maximum number of distinct \\( \\text{R-type} \\) opcodes is ________ </p>`,
+      image: "",
+      options: [],
+      answer: 96,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Amdahl's Law pertains to the speedup achieved when running a program on parallel processors versus using a single serial processor. In this context, the speedup is the ratio of original running time to improved running time. According to Amdahl's Law, approximately how much speedup could we expect for an unlimited number of processors if \\( 10 \\) percent of a program is sequential( i.e., will not benefit from additional processors) and the remaining part is ideally parallel? </p>`,
+      image: "",
+      options: [
+        `\\( 10 \\textsf{X} \\)`,
+        `\\( 20 \\textsf{X} \\)`,
+        `\\( 40 \\textsf{X} \\)`,
+        `Infinite`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Following is a definition of a <strong>widget</strong> and a declaration of an array A that contains \\( 10 \\) widgets. The sizes of a byte, short, Int, and long are \\( 1,2,4 \\) and \\( 8 \\) byte, respectively. Alignment is restricted so that an \\( n \\)-byte field must be located at an address divisible by \\( n. \\)<br/> The fields in a struct are not rearranged; padding is used to ensure alignment. All widgets in \\( \\mathrm{A} \\) must have the same size. </p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">struct</span><span class="pln"> widget</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="kwd">short</span><span class="pln"> s</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">3</span><span class="pln">    </span><span class="kwd">byte</span><span class="pln"> b</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">4</span><span class="pln">    </span><span class="kwd">long</span><span class="pln"> l</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">5</span><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">6</span><span class="kwd">end</span><span class="pln"> widget</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">7</span><span class="pln"> </span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">8</span><span class="pln">widget A</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span>
+</pre> <p><br/> Assuming that \\( \\mathrm{A} \\) is located at a memory address divisible by \\( 8, \\) what is the total size of \\( \\mathrm{A} \\), in bytes? </p>`,
+      image: "",
+      options: [
+        `\\( 150 \\)`,
+        `\\( 160 \\)`,
+        `\\( 2001 \\)`,
+        `\\( 240 \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider two different design enhancements of ALU as follows:</p> <ol start="1" style="list-style-type:lower-roman"> <li>A part of a bigger task is improved twenty times than it was before. The other part of the same task constitutes \\( 60\\% \\) of the overall task time, and it remains unchanged. </li> <li>The designer can make changes to improve \\( 20\\% \\) of the task \\( 100\\% \\) faster, \\( 35\\% \\) of the task \\( 4 \\) times faster, and \\( 10\\% \\) of the task \\( 100 \\) times faster, but it causes the remaining part of the task to perform as bad as \\( 50\\% \\) slower than before. </li> </ol> <p>Which of the following value is the best approximate difference between the two speedups achieved in those two improvements: </p>`,
+      image: "",
+      options: [
+        `\\( 0.3567 \\)`,
+        `\\( 0.2667 \\)`,
+        `\\( 0.4875 \\)`,
+        `\\( 0.4325 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Big-Endian(BE) and Little-Endian(LE) change the order in which the bytes of a word are stored in RAM. We typically show the contents of a word, especially if it's an integer, as four hexadecimal pairs of characters. For example, the hex string \\( \\textsf{0xabcdef12} \\) contains four bytes: " \\( ab \\)" is the first, which have the binary value of \\( 1010 \\) and \\( 1011. \\) So the first \\( 8 \\) bits are \\( 10101011. \\) BE/LE specifies whether this byte goes into RAM as the first of the four bytes in the word or as the last. Suppose Byte \\( 0 \\) in RAM contains the value \\( \\textsf{0x00}. \\) Subsequent bytes contain \\( \\textsf{0x01,0x40} \\), and \\( \\textsf{0x70} \\). On a Big-Endian system with a \\( 32 \\)-bit word, what's the decimal value of the word? </p>`,
+      image: "",
+      options: [],
+      answer: 82032,
+      solution: ``
+    },
+  ]
+});
