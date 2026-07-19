@@ -38996,3 +38996,202 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Computer Organization and Architecture-2",
+  date: "September 6, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Instruction frequencies for a load/store machine : <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|} \\hline \\text{Instruction Type} &amp; \\text{Frequency} &amp; \\text{Cycles} \\\\ \\hline \\text{Load} &amp; 25 \\% &amp; 2 \\\\ \\text{Store} &amp; 15 \\% &amp; 2 \\\\ \\text{Branch} &amp; 20 \\% &amp; 2 \\\\ \\text{ALU} &amp; 40 \\% &amp; 1\\\\ \\hline \\end{array} \\] What is the average CPI of this machine? </p>`,
+      image: "",
+      options: [],
+      answer: 1.6,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Individual stages of the processor have the following latencies:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{IF} &amp; \\text{ID} &amp; \\text{EX} &amp; \\text{MEM} &amp; \\text{WB} \\\\\\hline 210 p s &amp; 90 p s &amp; 110 p s &amp; 240 p s &amp; 50 p s \\\\\\hline \\end{array} \\] <br/>If the processor is pipelined, each pipeline latch adds a latency of \\( 20ps \\) to the stage that precedes it this is a so-called setup latency, where the signals need to be stable at the input of the latch for some amount of time before they can be latched correctly at the end of the cycle. </p> <p>If this processor is to be implemented with a \\( 6 \\)-stage pipeline, but the design effort and time-to-market are such that there is only enough time to split one of the five existing stages into two new stages, which stage would you chose to split so that we can improve cycle time? </p>`,
+      image: "",
+      options: [
+        `IF stage`,
+        `ID stage`,
+        `Ex stage`,
+        `Mem stage`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>In a pipelined RISC computer where all arithmetic instructions have the same CPI (cycles per instruction), which of the following actions would improve the execution time of a typical program?</p> <ol style="list-style-type:upper-roman"> <li>Increasing the clock cycle rate</li> <li>Disallowing any forwarding in the pipeline</li> <li>Doubling the sizes of the instruction cache and the data cache without changing the clock cycle time </li> </ol> <p> </p>`,
+      image: "",
+      options: [
+        `I only`,
+        `II only`,
+        `III only`,
+        `I and III`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>In typical RISC ISA, delayed branch executes which instruction irrespective of whether the branch condition is true or false?</p>`,
+      image: "",
+      options: [
+        `Instruction immediately following the branch condition`,
+        `Instruction immediately preceding the branch condition`,
+        `Instruction that belongs to a different sub-routine`,
+        `It waits till the branch condition is evaluated`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p style="text-align:center"><img alt="" height="136" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=18219302149376463625" width="715"/></p> <p><br/> A computer pipeline has \\( 4 \\) processors, as shown above. Each processor takes \\( 15 \\) ms to execute, and each instruction must go sequentially through all \\( 4 \\) processors. Which of the following is/are true? </p>`,
+      image: "",
+      options: [
+        `\\( 1 \\) single instruction execution time on a Non-pipelined system is \\( 60 \\) ms.`,
+        `\\( 10 \\) instructions execution time on Non-pipelined system is \\( 600 \\) ms.`,
+        `\\( 10 \\) instructions execution time on a pipelined system is \\( 195 \\) ms.`,
+        `\\( 1 \\) single instruction execution time on a pipelined system is \\( 15 \\) ms.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>A compiler designer is trying to decide between two code sequences for a particular computer. The hardware designers have supplied the following facts :</p> <table border="1" cellpadding="1" style="width:334px"> <tbody> <tr> <td style="width:107px"><strong>Instruction class</strong></td> <td style="width:209px"><strong>CPI for this instruction class</strong></td> </tr> <tr> <td style="width:107px">A</td> <td style="width:209px">1</td> </tr> <tr> <td style="width:107px">B</td> <td style="width:209px">2</td> </tr> <tr> <td style="width:107px">C</td> <td style="width:209px">3</td> </tr> </tbody> </table> <p><br/>For a particular high-level-language statement, the compiler writer is considering two code sequences that require the following instruction counts:</p> <table border="1" cellpadding="1" style="width:277px"> <tbody> <tr> <td style="height:52px"><strong>Code sequence</strong></td> <td colspan="3" style="height:52px; width:197px"><strong>IC for Instruction class</strong></td> </tr> <tr> <td> </td> <td style="width:45px">A</td> <td style="width:59px">B</td> <td style="width:81px">C</td> </tr> <tr> <td>1</td> <td style="width:45px">2</td> <td style="width:59px">1</td> <td style="width:81px">2</td> </tr> <tr> <td>2</td> <td style="width:45px">4</td> <td style="width:59px">1</td> <td style="width:81px">1</td> </tr> </tbody> </table>`,
+      image: "",
+      options: [
+        `Sequence \\( 1 \\) executes fewer instructions than sequence \\( 2. \\)`,
+        `Sequence \\( 2 \\) executes faster than sequence \\( 1. \\)`,
+        `Sequence \\( 1 \\) executes faster than sequence \\( 2. \\)`,
+        `Average CPI for sequence \\( 2 \\) is \\( 1.5. \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>A compiler designer is trying to decide between two code segments for a particular machine. The hardware designers have provided the following data below about the CPI for each class, and the instruction counts being considered for each code sequence.</p> <table border="1" cellpadding="1" style="width:315px"> <tbody> <tr> <td><strong>Class</strong></td> <td style="width:212px"><strong>CPI for this instruction class</strong></td> </tr> <tr> <td>A</td> <td style="width:212px">2</td> </tr> <tr> <td>B</td> <td style="width:212px">3</td> </tr> </tbody> </table> <p> </p> <table border="1" cellpadding="1" style="width:257px"> <tbody> <tr> <td style="width:86px"> </td> <td colspan="2" style="width:159px"><strong>Instruction Counts for Instruction Classes </strong></td> </tr> <tr> <td style="width:86px"><strong>Code sequence</strong></td> <td style="width:91px">A</td> <td style="width:72px">B</td> </tr> <tr> <td style="width:86px">1</td> <td style="width:91px">3</td> <td style="width:72px">5</td> </tr> <tr> <td style="width:86px">2</td> <td style="width:91px">7</td> <td style="width:72px">2</td> </tr> </tbody> </table> <p><br/> Which of the following is true?</p>`,
+      image: "",
+      options: [
+        `Sequence \\( 1 \\) executes fewer instructions than sequence \\( 2. \\)`,
+        `Sequence \\( 2 \\) executes faster than sequence \\( 1. \\)`,
+        `Sequence \\( 1 \\) executes faster than sequence \\( 2. \\)`,
+        `CPI for sequence \\( 1 \\) is \\( 2. \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A pipelined processor uses a stage instruction pipeline with the following stages: Instruction fetch (IF), Instruction decode (ID), Execute (EX) and Writeback (WB). The arithmetic operations as well as the load and store operations are carried out in the EX stage.<br/> Consider the following sequence of instructions:</p> <ol> <li> lw \\( \\$ s 2,0(\\$ s 1) \\quad ; \\quad \\mathrm{s} 2 \\leftarrow \\mathrm{M}[0+\\mathrm{s} 1] \\) </li> <li>lw \\( \\$ s 1,40(\\$ s 6) \\quad ; \\quad s 1 \\leftarrow M[40+s 6] \\) </li> <li>sub \\( \\$s6, \\$s1, \\$ s 2\\quad ; \\quad s 6 \\leftarrow s 1+s 2 \\) </li> <li>add \\( \\$ s 6, \\$ s 2, \\$ s 2 \\quad ; \\quad s 6 \\leftarrow s 2+s 2 \\) </li> <li>or \\( \\$s3, \\$s6, \\$\\text{zero}\\quad ; \\quad s3 \\leftarrow s6\\; v \\;0 \\) </li> <li> \\( \\mathrm{sw} \\;\\$ \\mathrm{~s} 6,50(\\mathrm{\\$} \\mathrm{s} 1) \\quad \\quad ; \\quad \\mathrm{M}[50+\\mathrm{s} 1] \\leftarrow \\mathrm{s} 6 \\) </li> </ol> <p>The number of Read-After-Write (RAW) dependencies in the sequence of instructions are ________</p>`,
+      image: "",
+      options: [],
+      answer: 6,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume the \\( 5 \\)-stage MIPS pipeline(IF, ID, EX, MEM, and WB) with no forwarding, and each stage takes \\( 1 \\) cycle. Instead of inserting nops, you let the processor stall on hazards.<br/> The functionality of the five stages of this pipeline is as follows : </p> <ol> <li>Instruction fetch (IF) – get instruction from memory, increment PC</li> <li>Instruction Decode (ID) – translate opcode into control signals and read registers</li> <li>Execute (EX) – perform ALU operation, compute jump/branch targets</li> <li>Memory (MEM) – access memory if needed</li> <li>Writeback (WB) – update register file (write back to register file)</li> </ol> <p>The pipeline does not have other bypassing/forwarding hardware.<br/> All Instructions, including loads and stores, spend only one cycle in each stage. The register file can be written and then read in the same cycle.<br/> Consider the following sequence of instructions executed on this pipeline:</p> <ol> <li> lw \\( \\$ s 2,0(\\$ s 1) \\quad ; \\quad \\mathrm{s} 2 \\leftarrow \\mathrm{M}[0+\\mathrm{s} 1] \\) </li> <li>lw \\( \\$ s 1,40(\\$ s 6) \\quad ; \\quad s 1 \\leftarrow M[40+s 6] \\) </li> <li>sub \\( \\$s6, \\$s1, \\$ s 2\\quad ; \\quad s 6 \\leftarrow s 1+s 2 \\) </li> <li>add \\( \\$ s 6, \\$ s 2, \\$ s 2 \\quad ; \\quad s 6 \\leftarrow s 2+s 2 \\) </li> <li>or \\( \\$s3, \\$s6, \\$\\text{zero}\\quad ; \\quad s3 \\leftarrow s6\\; v \\;0 \\) </li> <li> \\( \\mathrm{sw} \\;\\$ \\mathrm{~s} 6,50(\\mathrm{\\$} \\mathrm{s} 1) \\quad \\quad ; \\quad \\mathrm{M}[50+\\mathrm{s} 1] \\leftarrow \\mathrm{s} 6 \\) </li> </ol> <p>What is the execution time (in cycles) for the whole program?</p>`,
+      image: "",
+      options: [],
+      answer: 14,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider a processor with an in-order five-stage pipeline (IF, ID, EX, MEM, and WB) with clock cycle time \\( 10 \\) ns. This processor is executing a program in which \\( 30\\% \\) of the instructions are conditional branch instructions, \\( 10\\% \\) of the instructions are unconditional branch instructions. \\( 40\\% \\) of the conditional branches are taken. Branch target is available at the end of \\( 2 \\)nd stage for unconditional branches and at the end of \\( 3 \\)rd stage for conditional branches. Assume that the instruction following the branch is always started and ignored if the branch is taken. What is the throughput (In million instructions per second) of the system? </p>`,
+      image: "",
+      options: [],
+      answer: "74.60:74.65",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>The \\( 5 \\) stages of two processors \\( a \\), \\( b \\) have the following latencies: </p> <table border="1" cellpadding="1" style="width:280px; margin: auto;"> <tbody> <tr> <td style="width:59px"><strong>Type</strong></td> <td style="width:43px"><strong>IF</strong></td> <td style="width:32px"><strong>ID</strong></td> <td style="width:33px"><strong>EX</strong></td> <td style="width:39px"><strong>MM</strong></td> <td style="width:39px"><strong>WB</strong></td> </tr> <tr> <td style="width:59px"> \\( a \\) </td> <td style="width:43px">300</td> <td style="width:32px">400</td> <td style="width:33px">350</td> <td style="width:39px">550</td> <td style="width:39px">100</td> </tr> <tr> <td style="width:59px"> \\( b \\) </td> <td style="width:43px">200</td> <td style="width:32px">150</td> <td style="width:33px">100</td> <td style="width:39px">190</td> <td style="width:39px">140</td> </tr> </tbody> </table> <p>Assume that when pipelining, each pipeline stage costs \\( 20ps \\) extra for the registers between pipeline stages. Which of the following pairs of tuples represents the cycle time, the latency of one instruction, and the throughput for a pipelined processor for both the types \\( a \\) and \\( b \\) mentioned above? </p>`,
+      image: "",
+      options: [
+        `\\( (570, 570, 1/570) (220, 220, 1/220) \\)`,
+        `\\( (570, 1700, 1/1700), (220, 220, 1/780) \\)`,
+        `\\( (570, 570 ,1/1700) , (220, 780, 1/780) \\)`,
+        `\\( (570, 2850, 1/570), (220, 1100, 1/220) \\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The ideal CPI that we can expect in a pipelined implementation is only \\( 1. \\) If we want to further reduce CPI, we need to explore the option of issuing and completing multiple instructions every clock cycle. For example, if we issue and complete two instructions every clock cycle, ideally we should get a CPI of \\( 0.5. \\) Such processors are called multiple issue processors. So, <em>in multiple issue processors, we Fetch (and execute) more than one instructions at one time (expand every pipeline stage to accommodate multiple instructions).</em> </p> <p><br/> A single issue processor is basically “one instruction each clock cycle” processor.</p> <p>A computer can parallelize the program execution by using multiple issue processor.</p> <p>Assume that a program execution takes \\( 100 \\) nsec when executed on a single issue processor and it takes \\( 40 \\) nsec when it is executed on a \\( 4 \\)-issue processor(i.e. Four instructions each clock cycle). Assuming that some part of the execution is non-parallelizable(i.e. will not benefit from multiple issue processing) then what percentage of execution is non parallelizable ? (Rounded off to nearest integer) </p>`,
+      image: "",
+      options: [],
+      answer: 20,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following instruction sequence in a single-issue in-order \\( 5 \\)-stage pipeline (IF, ID, EX, MEM, and WB). <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{lcccc}\\text { Opcode } &amp; \\text { Destination } &amp; \\text { Source1 } &amp; \\text { Source2 } &amp; \\\\ \\text { ADD } &amp; \\mathrm{R} 1 &amp; \\mathrm{R} 2 &amp; \\mathrm{R} 3 &amp; \\text { (First instruction to enter the pipeline) } \\\\ \\text { SUB } &amp; \\mathrm{R} 2 &amp; \\mathrm{R} 3 &amp; \\mathrm{R} 1 &amp; \\\\ \\text { MUL } &amp; \\mathrm{R} 1 &amp; \\mathrm{R} 2 &amp; \\mathrm{R} 3 &amp; \\text { ( Last instruction to enter the pipeline) }\\end{array} \\] How many data hazards does the ID stage need to detect for this instruction sequence? </p>`,
+      image: "",
+      options: [],
+      answer: 2,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider an unpipelined processor. Assume that it has \\( 1 \\)-ns clock cycle and that it uses \\( 4 \\) cycles for ALU operations and \\( 5 \\) cycles for branches and \\( 4 \\) cycles for memory operations. Assume that the relative frequencies of these operations are \\( 50 \\%, 35 \\% \\) and \\( 15 \\% \\) respectively. Suppose that due to clock skew and set up, pipelining the processor adds \\( 0.15 \\) ns of overhead to the clock. Ignoring any latency impact, how much speed up in the instruction execution rate will we gain from a pipeline? </p>`,
+      image: "",
+      options: [],
+      answer: 3.78,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Two processors, \\( \\text{M-5} \\) and \\( \\text{M-7} \\), implement the same instruction set. Processor \\( \\text{M-5} \\) uses a \\( 5 \\)-stage pipeline and a clock cycle of \\( 10 \\) nanoseconds. Processor \\( \\text{M-7} \\) uses a \\( 7 \\)-stage pipeline and a clock cycle of \\( 7.5 \\) nanoseconds. Which of the following is (are) true? </p> <ol style="list-style-type:upper-roman"> <li> \\( \\text{M-7} \\)'s pipeline has better maximum throughput than \\( \\text{M-5} \\)'s pipeline. </li> <li>The latency of a single instruction is shorter on \\( \\text{M-7} \\)'s pipeline than on \\( \\text{M-5} \\)'s pipeline. </li> <li>Programs executing on \\( \\text{M-7} \\) will always run faster than programs executing on \\( \\text{M-5} \\). </li> </ol> <p> </p>`,
+      image: "",
+      options: [
+        `I only`,
+        `II only`,
+        `I and III only`,
+        `II and III only`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+  ]
+});
