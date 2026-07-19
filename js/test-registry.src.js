@@ -41646,7 +41646,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "TWT - Algorithms-3",
+  name: "TWT - Data Structure-5",
   date: "November 5, 2026",
   questions: [
     {
