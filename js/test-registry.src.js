@@ -39195,3 +39195,210 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Computer Organization and Architecture-3",
+  date: "September 13, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If an \\( 8 \\)-way set-associative cache is made up of \\( 32 \\) bit words, \\( 4 \\) words per line and \\( 4096 \\) sets, how big is the cache in Kilo bytes \\( (1\\;\\text{kilo} = 1024)? \\) </p>`,
+      image: "",
+      options: [],
+      answer: 512,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume that a read request takes \\( 50 \\) nsec on a cache miss and \\( 5 \\) nsec on a cache hit. While running a program, it is observed that \\( 80 \\)% of the processor’s read requests result in a cache hit. The average read access time is ________ nsec. </p>`,
+      image: "",
+      options: [],
+      answer: 14,
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Which of the following statements about caches is (are) true?</p>`,
+      image: "",
+      options: [
+        `A direct-mapped cache can have a lower miss rate than an associative cache of the same size (number of blocks).`,
+        `Programs with high spatial locality have a low cache miss rate primarily because the exact same addresses are re-referenced.`,
+        `Programs with high temporal locality have a low cache miss rate primarily because the exact same addresses are re-referenced.`,
+        `In direct mapped cache, there is no need of page replacement algorithm.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>Consider the following piece of code</p> <pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border: 1px solid #ddd; overflow-x: auto; font-family: monospace; font-size: 14px; line-height: 1.5;">
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">1</span><span class="kwd">for</span><span class="pun">(</span><span class="pln">i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="lit">100000</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span>
+<span style="color: #999; margin-right: 15px; display: inline-block; width: 20px; text-align: right;">2</span><span class="pln">    </span><span class="typ">Count</span><span class="pln"> </span><span class="pun">+=</span><span class="pln"> </span><span class="typ">Data</span><span class="pun">[</span><span class="pln">i</span><span class="pun">];</span>
+</pre> <p>Count is in CPU register.</p> <p>What kind of locality is exhibited by access to "Data"?</p>`,
+      image: "",
+      options: [
+        `Temporal`,
+        `Spatial`,
+        `Both`,
+        `Neither`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p>A \\( 64 \\mathrm{~KB} \\), direct mapped cache has \\( 16 \\) byte blocks. If addresses are \\( 32 \\) bits, how many bits are used the tag, index, and offset in this cache, respectively? </p>`,
+      image: "",
+      options: [
+        `\\( 16,20,4 \\)`,
+        `\\( 16,4,12 \\)`,
+        `\\( 16,12,4 \\)`,
+        `\\( 12,16,4 \\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>The designers of a cache system need to reduce the number of cache misses that occur in a certain group of programs. Which of the following statements is/are true?</p>`,
+      image: "",
+      options: [
+        `If compulsory misses are most common, then the designers should consider increasing the cache line size to take better advantage of locality.`,
+        `If capacity misses are most common, then the designers should consider increasing the total cache size so it can contain more lines.`,
+        `If conflict misses are most common, then the designers should consider increasing the cache's associativity, in order to provide more flexibility when a collision occurs.`,
+        `If capacity misses are most common, then the designers should consider increasing the cache's associativity, in order to provide more flexibility when a collision occurs.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>A simple rule of thumb is that doubling the cache size reduces the miss rate by roughly \\( 30\\%. \\)<br/>Consider the following three systems : </p> <ul> <li>System \\( 1 : \\) In system \\( 1, \\) we have main memory whose access time is \\( 60 \\) ns and there is no cache. </li> <li>System \\( 2 : \\) You implement a small, direct-mapped cache of \\( 32 \\)K bytes with an access time of \\( 30 \\) ns. However, the hit rate is only about \\( 50\\% \\). </li> <li>System \\( 3 : \\) We doubled the cache size of System \\( 2 \\) to \\( 64 \\)K bytes. </li> </ul> <p>Which of the following is/are true about the (approx)expected percentage improvement in the effective memory access time?</p>`,
+      image: "",
+      options: [
+        `\\( 0\\% \\) improvement using system \\( 2 \\) over system \\( 1. \\)`,
+        `\\( 0\\% \\) improvement using system \\( 3 \\) over system \\( 1. \\)`,
+        `\\( 15\\% \\) improvement using system \\( 3 \\) over system \\( 1. \\)`,
+        `\\( 15\\% \\) improvement using system \\( 3 \\) over system \\( 2. \\)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A computer has a \\( 32 \\) bit address and a \\( 64 \\) bit data bus with address resolution to the byte level. The computer is using a direct mapped cache with \\( 4 \\mathrm{~K} \\) cache lines. The size of each cache line is \\( 64 \\) bytes. How many memory cycles are required to fill up a cache line? </p>`,
+      image: "",
+      options: [],
+      answer: 8,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>A computer has a \\( 32 \\)-bit address bus with a direct mapped cache, using \\( 4 \\) bits for block offset, \\( 16 \\) tag bits, and \\( 12 \\) index bits.<br/> Which of the following address pairs can be placed in the cache simultaneously? </p>`,
+      image: "",
+      options: [
+        `\\( 3 \\mathrm{AC} 6 \\mathrm{~F} 456 \\) and \\( 26 \\mathrm{~A} 35456 \\)`,
+        `\\( 3 \\mathrm{~F} 08 \\mathrm{C} 304 \\) and \\( 3 \\mathrm{~F} 08 \\mathrm{C} 371 \\)`,
+        `\\( 5 \\mathrm{E} 3 \\mathrm{C} 7680 \\) and \\( 8 \\mathrm{~F} 3 \\mathrm{C} 768 \\mathrm{~A} \\)`,
+        `\\( 22334455 \\) and \\( 2233445 \\mathrm{C} \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Calculate the size of the tag and the size of the cache index, given that: Cache is direct mapped; Cache size \\( =8 \\mathrm{~KB} ; \\) Block size \\( =4 \\) bytes ; Memory address size \\( =32 \\) bits. </p> <p>Which of the following is true?</p>`,
+      image: "",
+      options: [
+        `Tag bits \\( =19 \\)`,
+        `Cache Index bits \\( =19 \\)`,
+        `Cache Index bits \\( =11 \\)`,
+        `A total of \\( 2^{19} \\) main memory blocks map to each cache line.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Consider a Direct Mapped Cache with \\( 8 \\) Entries(lines). The contents of the TAG entries are given below. </p> <ul> <li>Entry \\( 0 \\quad \\textsf{0x080101} \\) </li> <li>Entry \\( 1 \\quad \\textsf{0x234234} \\) </li> <li>Entry \\( 2 \\quad \\textsf{0x132342} \\) </li> <li>Entry \\( 3 \\quad \\textsf{0x143456} \\) </li> <li>Entry \\( 4 \\quad \\textsf{0x002233} \\) </li> <li>Entry \\( 5 \\quad \\textsf{0x423553} \\) </li> <li>Entry \\( 6 \\quad \\textsf{0x000235} \\) </li> <li>Entry \\( 7 \\quad \\textsf{0x100002} \\) </li> </ul> <p>Each block stores \\( 32 \\) Bytes, for a \\( 32 \\) bits address. </p> <p>If there is a reference to address \\( \\textsf{"0x10020200"} \\) (a byte reference), which entry in the cache will be accessed &amp; is there a cache hit? </p>`,
+      image: "",
+      options: [
+        `Entry \\( 1, \\) Hit`,
+        `Entry \\( 0, \\) Hit`,
+        `Entry \\( 1, \\) Miss`,
+        `Entry \\( 0, \\) Miss`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p>Assume a computer has \\( 32 \\) bit addresses. Each block stores \\( 16 \\) words. A direct-mapped cache has \\( 256 \\) blocks. In which line(decimal value) of the cache would we look for each of the following addresses? Addresses are given in hexadecimal for convenience. </p>`,
+      image: "",
+      options: [
+        `Address \\( \\textsf{1A2BC012} \\) will be found in line \\( 1. \\)`,
+        `Address \\( \\textsf{1A2BC012} \\) will be found in line \\( 192. \\)`,
+        `Address \\( \\textsf{FFFF00FF} \\) will be found in line \\( 15. \\)`,
+        `Address \\( \\textsf{FFFF00FF} \\) will be found in line \\( 0. \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A computer has a single cache (off-chip) with a \\( 2 \\) ns hit time and a 98% hit rate. Main memory has a \\( 40 \\) ns access time. If we add an on-chip cache with a \\( .5 \\) ns hit time and a \\( 94\\% \\) hit rate, How much of a speedup does the on-chip cache give the computer in terms of effective access time (Round to two decimal places)? </p>`,
+      image: "",
+      options: [],
+      answer: "4.18:4.21",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume you have a \\( 2 \\)-way set associative cache. </p> <ul> <li>Words are \\( 4 \\) bytes </li> <li>Addresses are to the byte</li> <li>Each block holds \\( 512 \\) bytes </li> <li>There are \\( 1024 \\) blocks in the cache </li> </ul> <p>If you reference a \\( 32 \\)-bit physical address - and the cache is initially empty - how many data words are brought into the cache with this reference? </p>`,
+      image: "",
+      options: [],
+      answer: 128,
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Assume a \\( 1 \\mathrm{~KB} \\) size \\( 4 \\)-way set-associative cache with \\( 64 \\) byte blocks. Assume that the cache is initially empty. Consider replacement policy: Least Recently Used (LRU). What is the miss ratio(upto one decimal point) for the following memory accesses (in \\( \\%)? \\) Addresses referenced: \\( \\textsf{0xFFFFEE44, 0xA10C0450, 0xFFFFEE88, 0xC4444464, 0xA10C0440,} \\) \\( \\textsf{0x77777770, 0xFFFFEE7C, 0xBA000440, 0xFFFFEE68, 0xA10C046C} \\) . </p>`,
+      image: "",
+      options: [],
+      answer: 60,
+      solution: ``
+    },
+  ]
+});
