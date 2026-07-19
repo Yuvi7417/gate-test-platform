@@ -41643,3 +41643,216 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "cs-gate-classes",
+  name: "TWT - Algorithms-3",
+  date: "November 5, 2026",
+  questions: [
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose we use a hash function \\( h \\) to hash \\( n \\) distinct keys into an array \\( \\text{T} \\) of length \\( m \\). Say that two distinct keys \\( x, y \\) collide under \\( h \\) if \\( h(x)=h(y) \\). Assuming simple uniform hashing - that is, with each key mapped independently and uniformly to a random bucket - what is the probability that a given pair \\( x, y \\) of distinct keys collide? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{1}{m-1} \\)`,
+        `\\( \\dfrac{1}{m} \\)`,
+        `\\( \\dfrac{1}{n^2} \\)`,
+        `\\( \\dfrac{1}{m^2} \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Let we insert the values \\( 74,924,83,113 \\), and \\( 5 \\) in the given order into a hash table of size \\( 10, \\) using the hash function \\( k&amp;nbsp;\\% 10 \\) and resolving collisions with quadratic probing. Determine which items we would encounter in order to search for the value \\( 65? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 924 \\)`,
+        `\\( 5 \\)`,
+        `\\( 83 \\)`,
+        `\\( 113 \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose \\( \\mathrm{M} \\) randomly selected keys are hashed into the range \\( [0\\ldots&amp;nbsp;\\text{N}-1] \\) using a uniformly distributed hashing function. What is the probability that all \\( \\text{M} \\) keys yield the same hash value (so all \\( \\text{M} \\) keys collide at the same slot \\( )? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{1}{\\text{N}^{\\text{M}-1}} \\)`,
+        `\\( \\dfrac{1}{\\text{N}^{\\text{M}}} \\)`,
+        `\\( \\dfrac{\\text{M}}{\\text{N}^{\\text{M}}} \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose \\( k \\) randomly selected keys are hashed into the range \\( [0 \\ldots n-1] \\) using a uniformly distributed hashing function. Assume that \\( k \\leq n \\). What is the probability that all \\( k \\) keys yield distinct hash values (so no collisions occur)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{(n-1) !}{(n-k) ! n^{k-1}} \\)`,
+        `\\( \\dfrac{(n-1) !}{(n-(k-1)) ! n^{k}} \\)`,
+        `\\( \\dfrac{n !(k-1)}{(n-(k-1)) ! n^{k}} \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Assuming the simple uniform hashing is implemented into a hash table with \\( m= 3 \\) slots. What is the probability for a key to map to slot \\( 1 \\) given that key does not map to slot \\( 0? \\) </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "0.5",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Given a hashing table of \\( 10 \\) entries, the hash function \\( h(x)=x \\bmod (10) \\) and the input sequence <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \$\$ \\{71,23,73,99,44,79,89\\} \$\$ What will be the load factor of the hash table when collisions are resolved with open addressing and linear probing? </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "0.7",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `After hashing \\( n \\) keys into a hash table of size \\( m \\) that uses chaining to handle collisions, we hash two new keys \\( k_{1} \\) and \\( k_{2} \\). Under the simple uniform hashing assumption, the probability that \\( k_{1} \\) and \\( k_{2} \\) are hashed into the same table location is exactly \\( 1 / m \\) with no dependence on the number of keys \\( n \\).`,
+        `Under the uniform hashing assumption, if we use a hash table of size \\( m \\) with open addressing to hash \\( 3 \\) keys, the probability that the third inserted key needs exactly three probes before being inserted into the table is exactly \\( \\frac{2}{m(m-1)} \\).`,
+        `We use a hash table of size \\( m \\) with open addressing to hash \\( n \\) items. Under the uniform hashing assumption, the expected cost to insert another element into the table is at most \\( 1+\\alpha \\), where \\( \\alpha=n / m \\) is the average load.`,
+        `Linear probing is equivalent to double hashing with a secondary hash function of \\( h_{2}(k)=1 \\).`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>Consider an open-address hash table with uniform hashing. What is the minimum integer upper bound on the expected number of probes in an unsuccessful search when the load factor is \\( 3 / 4 \\). </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "4",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p>If we have a linear probe hash table of size \\( \\text{M}=30, \\) and a cluster of size \\( \\text{C}=14, \\) the probability that a random key will be inserted into the location immediately after the cluster is __________. </p>`,
+      image: "",
+      options: [
+      ],
+      answer: "0.5",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a hash table of \\( 9 \\) slots implemented with linear probing. Suppose we insert \\( 2 \\) elements in a sequence to a hash table with a simple uniform hashing assumption. What is the probability that we end up with \\( 2 \\) consecutive slots of the hash table filled?<br/> <br/> Slot \\( i \\) and \\( (i+1) \\text{mod m} \\) are defined to be consecutive slots. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1/2 \\)`,
+        `\\( 1/3 \\)`,
+        `\\( 1/4 \\)`,
+        `\\( 2/3 \\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>An open-addressing hash table(with \\( m \\) slots) that resolves collisions using linear probing is initially empty. Key \\( k 1 \\) is inserted into the table first, followed by \\( k 2, \\) and then \\( k 3 \\) (the keys themselves are drawn randomly from a universal set of keys). </p> <p>What is the probability that searching for \\( k 1 \\) takes exactly two probes? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (m-2) / m)^ 3 \\)`,
+        `\\( 3 / m^ 2 \\)`,
+        `\\( 2 / m^ 2 \\)`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose you insert three keys into a hash table with \\( m \\) slots. Assuming the simple uniform hashing assumption, and given that collisions are resolved by chaining, what is the probability that both slots \\( 0 \\) and \\( 1 \\) are empty? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( ((m-2) / m)^ 3 \\)`,
+        `\\( ((m-3) / m)^ 3 \\)`,
+        `\\( (m / m-1)^ 3 \\)`,
+        `\\( ((m-2) /(m-1))^ 3 \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a hash table with \\( m \\) slots that uses chaining for collision resolution. The table is initially empty. What is the probability that after \\( 4 \\) keys are inserted that at least a chain of size \\( 3 \\) is created? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{4 m-3}{m^{3}} \\)`,
+        `\\( m^{-4} \\)`,
+        `\\( m^{-3}(m-1) \\)`,
+        `\\( m^{-2} \\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.0,
+      type: "NAT",
+      text: `<p></p> <p>Suppose we implement linear probing with the hash function \\( h(x) = x \\mod 9. \\) After inserting \\( 7 \\) keys, the table is shown as below:<br/> <strong><img alt="" height="121" src="https://lh4.googleusercontent.com/rvuD_mCCvueoSLskOknfT5OlHrS84O0oGbNy_LSi7DuMLTlv7_1gw4bDfRj3ZoDSeIWA-ADc2CbkP8aq-3MfbLeJjAliChUceiVyhkaQ6jDIGwtKSt50jkP0EM-sDkfctRcuMhcmxx21D6FBNQ"/></strong><br/> How many total insertion orders of keys are possible to reach the above state of the hash table? </p> <p>For example, two possible insertion orders are -</p> <ul> <li> \\( 12, 14, 3, 9, 4, 18, 21 \\) and </li> <li> \\( 9, 12, 14, 3, 4, 21, 18 \\) </li> </ul> <p></p>`,
+      image: "",
+      options: [
+      ],
+      answer: "63",
+      solution: ``
+    },
+    {
+      marks: 2.0,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a hash table with \\( n \\) buckets, where external (overflow) Chaining is used to resolve collisions. The hash function is such that the probability that a key value is hashed to a particular bucket is \\( 1/n \\). </p> <p>The hash table is initially empty and \\( k \\) distinct values are inserted in the table. What is the probability that the first collision occurs at the \\( k^{\\text{th}} \\) insertions? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{(n-1) !}{(n-k) ! \\;n^{k-1}} \\)`,
+        `\\( \\dfrac{(n-1) !}{(n-(k-1)) ! \\;n^{k}} \\)`,
+        `\\( \\dfrac{n !(k-1)}{(n-(k-1)) ! \\;n^{k}} \\)`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+  ]
+});
