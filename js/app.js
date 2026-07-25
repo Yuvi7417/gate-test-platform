@@ -153,6 +153,46 @@ const courses = [
 /* ---------- test series data ---------- */
 window.testSeries = [
   {
+    id: "demo-test",
+    code: "DEMO",
+    examTag: "GATE",
+    subjectTag: "DEMo Engineering",
+    title: "DEMO Practice Test Series",
+    f: "demo",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2025-10-20",
+    endDate: "2026-09-30",
+    session: "2025-2026",
+    desc: "A unified objective-test bank pooling recruitment patterns from major PSUs, useful for candidates targeting multiple public-sector exams in one prep cycle.",
+    features: [
+      "Multi-PSU pattern coverage",
+      "Sectional accuracy tracking",
+      "All-India percentile ranking",
+      "Updated as per latest patterns",
+      "Bilingual question support",
+      "Performance trend reports",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "Oct 20, 2025",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      // ["PT - 5", "Mar 2, 2026"],
+      // ["PT - 4", "Jan 28, 2026"],
+      // ["PT - 3", "Dec 22, 2025"],
+      // ["PT - 2", "Nov 25, 2025"],
+    ],
+    price: "FREE",
+    brandLabel: "APEX EASY & classes"
+    // comingSoon: true
+  },
+  {
     id: "cs-gate-pyq",
     code: "CSE",
     examTag: "GATE 2027",
@@ -474,46 +514,7 @@ window.testSeries = [
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
-  {
-    id: "demo-test",
-    code: "DEMO",
-    examTag: "GATE",
-    subjectTag: "DEMo Engineering",
-    title: "DEMO Practice Test Series",
-    f: "demo",
-    lang: "English",
-    objective: "Objective",
-    tests: 47,
-    startDate: "2025-10-20",
-    endDate: "2026-09-30",
-    session: "2025-2026",
-    desc: "A unified objective-test bank pooling recruitment patterns from major PSUs, useful for candidates targeting multiple public-sector exams in one prep cycle.",
-    features: [
-      "Multi-PSU pattern coverage",
-      "Sectional accuracy tracking",
-      "All-India percentile ranking",
-      "Updated as per latest patterns",
-      "Bilingual question support",
-      "Performance trend reports",
-    ],
-    batches: [
-      {
-        name: "Batch 1",
-        start: "Oct 20, 2025",
-        time: "12:00 AM – 11:59 PM",
-        selected: true,
-      },
-    ],
-    schedule: [
-      // ["PT - 5", "Mar 2, 2026"],
-      // ["PT - 4", "Jan 28, 2026"],
-      // ["PT - 3", "Dec 22, 2025"],
-      // ["PT - 2", "Nov 25, 2025"],
-    ],
-    price: "FREE",
-    brandLabel: "APEX EASY & classes"
-    // comingSoon: true
-  },
+
   {
     id: "je-foundation",
     code: "JE",
