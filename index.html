@@ -238,7 +238,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 3H2l8 9.5V19l4 2v-8.5L22 3Z" />
           </svg>
-          All Modules
+          <select id="typeSelect" onchange="window.filterByType()" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; margin-left: 8px;">
+            <option value="All">All Tests</option>
+            <option value="Topicwise">Topicwise Tests</option>
+            <option value="Subjectwise">Subjectwise Tests</option>
+          </select>
         </div>
 
         <div id="testListGrid"></div>

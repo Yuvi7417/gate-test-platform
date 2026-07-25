@@ -542,6 +542,14 @@ function openTestList(id, pushHistory = true) {
   }
 }
 
+window.filterByType = function() {
+  if (!currentTestListId) return;
+  const activeTab = document.querySelector("#tlTabs .tab.active");
+  const filterStr = activeTab ? activeTab.dataset.f : "all";
+  const t = testSeries.find((x) => x.id === currentTestListId);
+  if (t) renderTestList(t, filterStr);
+};
+
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid")
   const twList = t.schedule.filter((s) => s[0].startsWith("TWT"));
@@ -586,7 +594,22 @@ function renderTestList(t, filter) {
     }
   });
 
-  const shown = items.filter((it) => filter === "all" || it.status === filter);
+  const typeSelect = document.getElementById("typeSelect");
+  const typeFilter = typeSelect ? typeSelect.value : "All";
+  const shown = items.filter((it) => {
+    const matchStatus = filter === "all" || it.status === filter;
+    
+    // We determine testType by checking if it contains "-Topicwise Test-" or "-Subjectwise Test-"
+    let itTestType = "All";
+    if (it.name.includes("-Topicwise Test-")) {
+      itTestType = "Topicwise";
+    } else if (it.name.includes("-Subjectwise Test-")) {
+      itTestType = "Subjectwise";
+    }
+
+    const matchType = typeFilter === "All" || itTestType === typeFilter;
+    return matchStatus && matchType;
+  });
   grid.innerHTML =
     shown
       .map(
