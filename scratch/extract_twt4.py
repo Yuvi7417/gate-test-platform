@@ -59,7 +59,7 @@ questions = soup.find_all('div', class_='res_question')
 
 new_test = """registerTest({
   series: "cs-gate-classes",
-  name: "SWT - Discrete Mathematics-3",
+  name: "TWT - Engineering Mathematics-2",
   date: "November 27, 2026",
   questions: [
 """
