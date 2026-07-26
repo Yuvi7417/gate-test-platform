@@ -836,8 +836,18 @@ function startPlayer(testName, fetchedQuestions) {
       (playerState[i] = { visited: false, answer: null, marked: false, timeSpent: 0 }),
   );
   playerCurrent = 0;
-  const isTopicwiseTest = (testName || "").includes("Topicwise");
-  playerDurationMins = isTopicwiseTest ? 45 : 90;
+  const testNameUpper = (testName || "").toUpperCase();
+  const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
+  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT");
+  
+  if (isFullTest) {
+    playerDurationMins = 180;
+  } else if (isTopicwiseTest) {
+    playerDurationMins = 45;
+  } else {
+    playerDurationMins = 90; // Default for Subject Wise Tests etc.
+  }
+  
   playerTimerSecs = playerDurationMins * 60;
 
   renderPlayer();
