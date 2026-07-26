@@ -474,3 +474,236 @@ registerTest({
     }
   ]
 });
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "TWT - Machine Design-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cantilever beam is subjected to a time-varying load given by <em>F</em> (<em>t</em> ) = 1000 sin(10<em>t</em> ) N. The beam has a length of 200 mm. The ultimate tensile strength of material is S<sub>ut</sub> = 520 N/mm<sup>2</sup>. The fillet in the beam has a theoretical stress concentration factor <em> k<sub>t</sub> </em> = 1.3 and the notch sensitivity factor at the fillet is <em>q</em> = 0.85, then the required diameter of the beam to withstand 10000 cycles without failure will be _____ mm.`,
+      image: "",
+      options: [],
+      answer: "19.57",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `According to the maximum strain theory, equivalent stress in a system subjected to σ, τ and <img align="absmiddle" alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_6.png"/>is given by`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_7.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_8.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_9.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_10.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A plate clutch consists of one pair of contacting surfaces. The inner and outer diameters of the friction disk are 120 mm and 240 mm respectively. The coefficient of friction is 0.2, and the permissible intensity of pressure is 2 N/mm<sup>2</sup>, the torque transmitting capacity of the clutch using uniform wear theory is ______ Nm.`,
+      image: "",
+      options: [],
+      answer: "814.3",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a cone clutch, the semi-cone angle of the cone is 12.5° and the ratio of mean radius of the clutch to face width is 3. The normal intensity of the pressure is 0.2 N/mm<sup>2</sup> and coefficient of friction between contact faces is 0.2. For uniform wear theory, cone clutch is transmitting 8 kW of power at 720 rpm, if internal radius is 140 mm, then outer diameter will be _____ mm. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "289.18",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_15.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A simple block brake as shown in figure, provides a braking torque of 400 N-m. The diameter of the brake drum is 800 mm. The brake drum rotates at 120 rpm and coefficient of friction is 0.2, then the actuating force (<em>F</em>) will be ______ N. Assume drum rotates in anti-clockwise direction. <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_17.png"/>`,
+      image: "",
+      options: [
+        `1700 N`,
+        `2000 N`,
+        `2100 N`,
+        `2500 N`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the simple band brake shown in figure, the drum diameter is 500 mm and the angle of lap of the band is 240°. If the coefficient of friction is 0.3 and braking force is 100 N, then the braking torque is <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_19.png"/>`,
+      image: "",
+      options: [
+        `750 Nm`,
+        `213.6 N`,
+        `820 Nm`,
+        `134.1 Nm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_20.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A bolt is acted upon by an axial pull of 20 kN along with a transverse shear force of 10 kN, the diameter of the bolt required according to maximum distortion energy theory is. [Take elastic limit of the bolt material, 200 MPa and factor of safety 2]`,
+      image: "",
+      options: [
+        `18.36 mm`,
+        `20.41 mm`,
+        `15.12 mm`,
+        `27.62 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_29.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 25 mm diameter shaft subjected to reverse bending moment is made of forged steel having <em> S<sub>ut</sub> </em> = 600 N/mm<sup>2</sup>. There is a step in the shaft and the theoretical stress concentration factor at the step is 2.1. The notch sensitivity factor is 0.84. The endurance limit of the shaft is ______ N/mm<sup>2</sup>. (Assume other stress concentration constants to be 1)`,
+      image: "",
+      options: [],
+      answer: "155.925",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `Stress concentration in a machine component of ductile materials is harmful for static loading.`,
+        `Stress concentration in a machine component of brittle materials is harmful for fluctuating loading.`,
+        `Theoretical stress concentration factor can be ignored for ductile components subjected to static load.`,
+        `Stress concentration in a machine component of ductile material is harmful for dynamic loading.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `• Ductile material undergoes local yielding and distribute the concentrated stress when subjected to stress concentration.<br/>• However, when the load is fluctuating, the stress at discontinuities may exceed the endurance limit, and fail by fatigue.<br/>• The effect of stress concentration is more severe in case of brittle material, due to the their inability of plastic deformation.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A simply supported circular beam of length 800 mm is subjected to a fluctuating load varying from –100 N to 200 N at the center. The beam is made of cold drawn steel with ultimate tensile strength <em> S<sub>ut</sub> </em> = 600 N/mm<sup>2</sup> and yield strength <em> S<sub>yt</sub> </em> = 350 N/mm<sup>2</sup> , the required factor of safety is 2. If <em> k<sub>a</sub> </em> = 0.7, <em> k<sub>b</sub> </em> = 0.85, kc = 0.7 and <em> k<sub>d</sub> </em> = 0.89, then the required diameter of beam using Goodman’s criterion for fatigue failure is`,
+      image: "",
+      options: [
+        `17 mm`,
+        `18 mm`,
+        `19 mm`,
+        `20 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_2.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A solid circular shaft, 15 mm diameter is subjected to torsional shear stress, which varies from 0 to 35 N/mm<sup>2</sup> and at the same time, is subjected to an axial stress that varies from –15 to +30 N/mm<sup>2</sup>. The shaft is made of steel (S<sub>ut</sub> = 540 N/mm<sup>2</sup> and S<sub>yt</sub> = 400 N/mm<sup>2</sup>) and corrected endurance limit of the shaft is 200 N/mm<sup>2</sup>. The frequency of variation of these stresses is equal to the shaft speed, the factor of safety using Goodman’s criterion is _____.`,
+      image: "",
+      options: [],
+      answer: "4.05",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_4.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A solid circular shaft of 40 mm diameter is loaded by bending moment 700 Nm, torque 1000 Nm and axial compressive force of 40 kN. The shaft material is ductile with yield strength of 300 MPa. The factor of safety according to Tresca theory of failure is`,
+      image: "",
+      options: [
+        `2.2`,
+        `1.4`,
+        `2.5`,
+        `1.8`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_12.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A centrifugal clutch consists of four shoes, each having a mass of 1 kg. In the engaged position, the radius to the centre of gravity of each shoe is 150 mm, while the inner radius of the drum is 200 mm. The coefficient of friction is 0.2. The preload in the spring is adjusted in such a way that the spring force at the beginning of engagement is 800 N, power transmitted by the clutch at 2400 rpm is ______ kW. (Round off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "348.84",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A stepper shaft transmit a torque varying from 600 N-m to 1200 N-m. The ultimate tensile strength of material of shaft is 600 MPa and yield stress of the material is 400 MPa. Correction for type of loading is 0.6, size factor is 0.85, and surface finish factor is 0.8, diameter of the shaft for an infinite life and factor of safety of 2 (Using Soderberg equation) is`,
+      image: "",
+      options: [
+        `20.47 mm`,
+        `82.6 mm`,
+        `55.26 mm`,
+        `41.37 mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_23.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The bending moment <em>M</em> applied to a solid shaft carries a maximum direct stress <em> f<sub>y</sub> </em> at elastic failure, what should be the value of the twisting moment <em>T</em> , acting alone on the same shaft, to produce same elastic failure.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_25.png"/>`,
+        `For MSST, <em>T</em> = <em>M</em>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_26.png"/>`,
+        `For MPST, <em>T</em> = 2<em>M</em>`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_27.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The shaft of an overhang crank is subjected to a force <em>P</em> of 2 kN as shown in figure. The shaft is made of plain carbon steel of tensile yield strength 400 N/mm<sup>2</sup> and factor of safety is 2. The diameter of the shaft by maximum shear stress theory is <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_31.png"/>`,
+      image: "",
+      options: [
+        `19.315 mm`,
+        `37.07 mm`,
+        `41.61 mm`,
+        `52.51 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_32.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The ratio of inner radius to the outer radius for maximum torque transmission in a disc clutch will be, using uniform wear theory`,
+      image: "",
+      options: [
+        `0.5`,
+        `2`,
+        `1.717`,
+        `0.577`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_35.png"/>`
+    }
+  ]
+});
