@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Industrial Engineering-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (Production Control Function) with <strong>List-II</strong> (Explanation) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following is a qualitative technique for forecasting?`,
+      image: "",
+      options: [
+        `Moving average`,
+        `Exponential smoothing`,
+        `Correlation and regression analysis`,
+        `Delphi technique`
+      ],
+      answer: "D",
+      solution: `• Qualitative models are forecasting methods based on expert advice, opinions and subjective Example : Depthi technique, Historical data, Nominal group technique, Market survey etc.<br/>• Quantitative models are forecasting methods based on numerical data and Mathematical models. Example : Simple average, moving average, exponential smoothing, regression analysis, economic modelling`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The production of cars in an automobile industry in three consecutive months are given as 400,300 and 500. If the most recent periods demand is weighted twice as heavily as each of the previous two periods demand. What will be the forecast of demand of next month?`,
+      image: "",
+      options: [
+        `425`,
+        `475`,
+        `525`,
+        `550`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_2.png"/> <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In ABC analysis of inventory control, which of the following statements in correct?`,
+      image: "",
+      options: [
+        `A-type items constitute majority of inventory items and a small fraction of annual consumption value.`,
+        `B-type of items require the strictest control and are managed directly by top management.`,
+        `C-type items are low value items that constitute majority of items and require less stringent control.`,
+        `A-type items can be ordered in bulk due to their low unit cost and low consumption value.`
+      ],
+      answer: "C",
+      solution: `• A-type are high value, low quantity items (10 - 20%) items contributing to 70 - 85% value) and require tight control.<br/>• B-type items are moderate in both quantity and value (20 - 30% items with 10 - 25% value) and need moderate control.<br/>• C-type items are low-value high-quantity items (60 - 70% items with 5 - 15% value) and require minimal control, often ordered in bulk and managed at lower levels.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An assembly line consists of four work stations A, B, C and D. The following table is given for station time in different work stations. <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_4.png"/> If the balance delay is 15% then the line efficiency and smoothness index of the assembly line are respectively.`,
+      image: "",
+      options: [
+        `85%, 5.86`,
+        `15%, 6.16`,
+        `75%, 5.18`,
+        `85%, 6.16`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A manufacturing company forecasts the demand of its product at the rate of 500 units per month, for the next three months. If the actual demand is found to be 450, 600 and 700 units, the value of BIAS is ______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "83.33",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A fully automatic process has an investment of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_7.png"/> alternately a traditional process has an investment of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_8.png"/> The fully automatic plant can turn out a product at a variable cost of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_9.png"/> per unit whereas traditional process would lead to a variable cost of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_10.png"/>per unit. The production quantity at which the total cost of automatic process and traditional process are equal is _____ units. (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "125",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A company has four machines P, Q, R and S, with per day capacities of 550 units, 400 units, 450 units and 430 units. The machines are laid down in order P, Q, R and S and product has to be operated on all four machines for getting converted into finished product. If the actual output turns out to be 340 units per day, then the system efficiency will be ______%. (Upto nearest integer)`,
+      image: "",
+      options: [],
+      answer: "85",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following practices are aligned with the principles of lean manufacturing?`,
+      image: "",
+      options: [
+        `Small lot size`,
+        `Reduced setup cost and time`,
+        `Increasing work in process inventory`,
+        `Just-in time production`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `The features of lean manufacturing are as follows:<br/> (i) Employee involvement<br/> (ii) Supplier involvement<br/> (iii) Reduced setup cost and time<br/> (iv) Small lot size<br/> (v) Quality at the sources<br/> (vi) Pull system, Just-in-Time (JIT)<br/> (vii) Continuous improvement<br/>(viii) Multiskilled workforce`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A company requires a particular type of gear for its production, with a constant usage rate of 100 units per day. The cost of placing a single order is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_13.png"/> and the holding cost is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_14.png"/>per day. The gear is replenished instantly once ordered, and no stockouts are allowed. The company operates for 300 working days in a year. If the lead time for receiving the gear is 15 days, what should be the reorder point?`,
+      image: "",
+      options: [
+        `300 units`,
+        `200 units`,
+        `400 units`,
+        `500 units`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Past records show that for Valentine’s week the demand for roses is normally distributed with a mean of 50 roses per day and a standard deviation of 29. A fresh rose sells for <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_16.png"/> and if fresh rose is not sold on first day it is sold on second day for <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_17.png"/> Cost to raise and harvest a rose is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_18.png"/>What should be daily ordering quantity for the upcoming Valentines season to optimise profit? <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_19.png"/>`,
+      image: "",
+      options: [
+        `50`,
+        `60`,
+        `70`,
+        `80`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a product the price discount is as follows : <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_21.png"/> If the monthly demand for the product is 225 units, carrying cost is 2% of unit cost and cost of ordering is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_22.png"/>Determine the minimum total cost.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_23.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_24.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_26.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_27.png"/> <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Six jobs A, B, C, D, E and F are to be processed on two machines M<sub>1</sub> and M<sub>2</sub>. The processing sequence for these jobs in M<sub>1</sub> followed by M<sub>2</sub>. Their processing times in minutes are given below in table. <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_29.png"/> The processing sequence of jobs that would minimise the make span is`,
+      image: "",
+      options: [
+        `C-A-B-F-E-D or C-A-F-E-D-B`,
+        `C-A-B-F-E-D or C-F-A-E-B-D`,
+        `C-A-D-E-F-B or C-A-F-E-D-B`,
+        `C-F-A-B-E-D or C-A-B-F-E-D`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The demands of a product in the month of March, April and May turned out to be 25, 26 and 27 units respectively. The forecast for March is 20 and smoothing constant α is 0.2. The forecast for the month of June using exponential smoothing method will be ______ units.`,
+      image: "",
+      options: [],
+      answer: "23",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `These are five jobs, each of which is to be processed through two machines A and B in the order A-B. Processing times in hours are: <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_32.png"/> The sum of total idle time for machine A and B, to minimize the total elapsed time is ____ hours.`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A dealer finds that in a particular city only a fraction of population can afford luxury apartments, there exists a relationship between the population and luxury apartment sale in the city. The data collected by the dealer is <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_34.png"/> The demand of luxury apartment for a city with a population of 2 crores is ______. (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "21400",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Product <em>x</em> is made of two units of <em>y</em> and three units of <em>z</em>. <em>y</em> is made of one unit of <em>A</em> and two units of <em>B</em>. <em>z</em> is made of two units of <em>A</em> and 4 units of <em>C</em>. Lead time for <em>x</em> is one week; <em>y</em> is two weeks; z is three weeks; <em>A</em> is two weeks; <em>B</em> is one week and <em>C</em> is three weeks. If 100 units of <em>x</em> are needed in week 10 then,`,
+      image: "",
+      options: [
+        `Total 800 units of <em>A</em> is required.`,
+        `Total 1000 units of <em>C</em> is required.`,
+        `The latest start time for production of <em>C</em> is the 3<sup>rd</sup> week.`,
+        `The latest start time for production of z is the 7<sup>th</sup> week.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_36.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Engineering mathematics-1",
   date: "July 17, 2026",
   questions: [
