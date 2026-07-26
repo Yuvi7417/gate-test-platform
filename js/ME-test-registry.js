@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Industrial Engineering-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (Production Control Function) with <strong>List-II</strong> (Explanation) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following is a qualitative technique for forecasting?`,
+      image: "",
+      options: [
+        `Moving average`,
+        `Exponential smoothing`,
+        `Correlation and regression analysis`,
+        `Delphi technique`
+      ],
+      answer: "D",
+      solution: `• Qualitative models are forecasting methods based on expert advice, opinions and subjective Example : Depthi technique, Historical data, Nominal group technique, Market survey etc.<br/>• Quantitative models are forecasting methods based on numerical data and Mathematical models. Example : Simple average, moving average, exponential smoothing, regression analysis, economic modelling`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The production of cars in an automobile industry in three consecutive months are given as 400,300 and 500. If the most recent periods demand is weighted twice as heavily as each of the previous two periods demand. What will be the forecast of demand of next month?`,
+      image: "",
+      options: [
+        `425`,
+        `475`,
+        `525`,
+        `550`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_2.png"/> <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In ABC analysis of inventory control, which of the following statements in correct?`,
+      image: "",
+      options: [
+        `A-type items constitute majority of inventory items and a small fraction of annual consumption value.`,
+        `B-type of items require the strictest control and are managed directly by top management.`,
+        `C-type items are low value items that constitute majority of items and require less stringent control.`,
+        `A-type items can be ordered in bulk due to their low unit cost and low consumption value.`
+      ],
+      answer: "C",
+      solution: `• A-type are high value, low quantity items (10 - 20%) items contributing to 70 - 85% value) and require tight control.<br/>• B-type items are moderate in both quantity and value (20 - 30% items with 10 - 25% value) and need moderate control.<br/>• C-type items are low-value high-quantity items (60 - 70% items with 5 - 15% value) and require minimal control, often ordered in bulk and managed at lower levels.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An assembly line consists of four work stations A, B, C and D. The following table is given for station time in different work stations. <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_4.png"/> If the balance delay is 15% then the line efficiency and smoothness index of the assembly line are respectively.`,
+      image: "",
+      options: [
+        `85%, 5.86`,
+        `15%, 6.16`,
+        `75%, 5.18`,
+        `85%, 6.16`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A manufacturing company forecasts the demand of its product at the rate of 500 units per month, for the next three months. If the actual demand is found to be 450, 600 and 700 units, the value of BIAS is ______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "83.33",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A fully automatic process has an investment of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_7.png"/> alternately a traditional process has an investment of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_8.png"/> The fully automatic plant can turn out a product at a variable cost of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_9.png"/> per unit whereas traditional process would lead to a variable cost of <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_10.png"/>per unit. The production quantity at which the total cost of automatic process and traditional process are equal is _____ units. (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "125",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A company has four machines P, Q, R and S, with per day capacities of 550 units, 400 units, 450 units and 430 units. The machines are laid down in order P, Q, R and S and product has to be operated on all four machines for getting converted into finished product. If the actual output turns out to be 340 units per day, then the system efficiency will be ______%. (Upto nearest integer)`,
+      image: "",
+      options: [],
+      answer: "85",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following practices are aligned with the principles of lean manufacturing?`,
+      image: "",
+      options: [
+        `Small lot size`,
+        `Reduced setup cost and time`,
+        `Increasing work in process inventory`,
+        `Just-in time production`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `The features of lean manufacturing are as follows:<br/> (i) Employee involvement<br/> (ii) Supplier involvement<br/> (iii) Reduced setup cost and time<br/> (iv) Small lot size<br/> (v) Quality at the sources<br/> (vi) Pull system, Just-in-Time (JIT)<br/> (vii) Continuous improvement<br/>(viii) Multiskilled workforce`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A company requires a particular type of gear for its production, with a constant usage rate of 100 units per day. The cost of placing a single order is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_13.png"/> and the holding cost is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_14.png"/>per day. The gear is replenished instantly once ordered, and no stockouts are allowed. The company operates for 300 working days in a year. If the lead time for receiving the gear is 15 days, what should be the reorder point?`,
+      image: "",
+      options: [
+        `300 units`,
+        `200 units`,
+        `400 units`,
+        `500 units`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Past records show that for Valentine’s week the demand for roses is normally distributed with a mean of 50 roses per day and a standard deviation of 29. A fresh rose sells for <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_16.png"/> and if fresh rose is not sold on first day it is sold on second day for <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_17.png"/> Cost to raise and harvest a rose is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_18.png"/>What should be daily ordering quantity for the upcoming Valentines season to optimise profit? <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_19.png"/>`,
+      image: "",
+      options: [
+        `50`,
+        `60`,
+        `70`,
+        `80`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a product the price discount is as follows : <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_21.png"/> If the monthly demand for the product is 225 units, carrying cost is 2% of unit cost and cost of ordering is <img align="absmiddle" alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_22.png"/>Determine the minimum total cost.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_23.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_24.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_26.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_27.png"/> <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Six jobs A, B, C, D, E and F are to be processed on two machines M<sub>1</sub> and M<sub>2</sub>. The processing sequence for these jobs in M<sub>1</sub> followed by M<sub>2</sub>. Their processing times in minutes are given below in table. <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_29.png"/> The processing sequence of jobs that would minimise the make span is`,
+      image: "",
+      options: [
+        `C-A-B-F-E-D or C-A-F-E-D-B`,
+        `C-A-B-F-E-D or C-F-A-E-B-D`,
+        `C-A-D-E-F-B or C-A-F-E-D-B`,
+        `C-F-A-B-E-D or C-A-B-F-E-D`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The demands of a product in the month of March, April and May turned out to be 25, 26 and 27 units respectively. The forecast for March is 20 and smoothing constant α is 0.2. The forecast for the month of June using exponential smoothing method will be ______ units.`,
+      image: "",
+      options: [],
+      answer: "23",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `These are five jobs, each of which is to be processed through two machines A and B in the order A-B. Processing times in hours are: <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_32.png"/> The sum of total idle time for machine A and B, to minimize the total elapsed time is ____ hours.`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A dealer finds that in a particular city only a fraction of population can afford luxury apartments, there exists a relationship between the population and luxury apartment sale in the city. The data collected by the dealer is <img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_34.png"/> The demand of luxury apartment for a city with a population of 2 crores is ______. (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "21400",
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Product <em>x</em> is made of two units of <em>y</em> and three units of <em>z</em>. <em>y</em> is made of one unit of <em>A</em> and two units of <em>B</em>. <em>z</em> is made of two units of <em>A</em> and 4 units of <em>C</em>. Lead time for <em>x</em> is one week; <em>y</em> is two weeks; z is three weeks; <em>A</em> is two weeks; <em>B</em> is one week and <em>C</em> is three weeks. If 100 units of <em>x</em> are needed in week 10 then,`,
+      image: "",
+      options: [
+        `Total 800 units of <em>A</em> is required.`,
+        `Total 1000 units of <em>C</em> is required.`,
+        `The latest start time for production of <em>C</em> is the 3<sup>rd</sup> week.`,
+        `The latest start time for production of z is the 7<sup>th</sup> week.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test21_part_syllabus_gate_2026_me_industrial_engineering1/img_36.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Engineering mathematics-1",
   date: "July 17, 2026",
   questions: [
@@ -471,6 +704,472 @@ registerTest({
       ],
       answer: ["A", "B"],
       solution: `<img alt="" src="js/questions/topicwise_test24_part_syllabus_gate_2026_me_machine_design2/img_22.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "TWT - Machine Design-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cantilever beam is subjected to a time-varying load given by <em>F</em> (<em>t</em> ) = 1000 sin(10<em>t</em> ) N. The beam has a length of 200 mm. The ultimate tensile strength of material is S<sub>ut</sub> = 520 N/mm<sup>2</sup>. The fillet in the beam has a theoretical stress concentration factor <em> k<sub>t</sub> </em> = 1.3 and the notch sensitivity factor at the fillet is <em>q</em> = 0.85, then the required diameter of the beam to withstand 10000 cycles without failure will be _____ mm.`,
+      image: "",
+      options: [],
+      answer: "19.57",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `According to the maximum strain theory, equivalent stress in a system subjected to σ, τ and <img align="absmiddle" alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_6.png"/>is given by`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_7.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_8.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_9.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_10.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A plate clutch consists of one pair of contacting surfaces. The inner and outer diameters of the friction disk are 120 mm and 240 mm respectively. The coefficient of friction is 0.2, and the permissible intensity of pressure is 2 N/mm<sup>2</sup>, the torque transmitting capacity of the clutch using uniform wear theory is ______ Nm.`,
+      image: "",
+      options: [],
+      answer: "814.3",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a cone clutch, the semi-cone angle of the cone is 12.5° and the ratio of mean radius of the clutch to face width is 3. The normal intensity of the pressure is 0.2 N/mm<sup>2</sup> and coefficient of friction between contact faces is 0.2. For uniform wear theory, cone clutch is transmitting 8 kW of power at 720 rpm, if internal radius is 140 mm, then outer diameter will be _____ mm. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "289.18",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_15.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A simple block brake as shown in figure, provides a braking torque of 400 N-m. The diameter of the brake drum is 800 mm. The brake drum rotates at 120 rpm and coefficient of friction is 0.2, then the actuating force (<em>F</em>) will be ______ N. Assume drum rotates in anti-clockwise direction. <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_17.png"/>`,
+      image: "",
+      options: [
+        `1700 N`,
+        `2000 N`,
+        `2100 N`,
+        `2500 N`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the simple band brake shown in figure, the drum diameter is 500 mm and the angle of lap of the band is 240°. If the coefficient of friction is 0.3 and braking force is 100 N, then the braking torque is <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_19.png"/>`,
+      image: "",
+      options: [
+        `750 Nm`,
+        `213.6 N`,
+        `820 Nm`,
+        `134.1 Nm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_20.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A bolt is acted upon by an axial pull of 20 kN along with a transverse shear force of 10 kN, the diameter of the bolt required according to maximum distortion energy theory is. [Take elastic limit of the bolt material, 200 MPa and factor of safety 2]`,
+      image: "",
+      options: [
+        `18.36 mm`,
+        `20.41 mm`,
+        `15.12 mm`,
+        `27.62 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_29.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 25 mm diameter shaft subjected to reverse bending moment is made of forged steel having <em> S<sub>ut</sub> </em> = 600 N/mm<sup>2</sup>. There is a step in the shaft and the theoretical stress concentration factor at the step is 2.1. The notch sensitivity factor is 0.84. The endurance limit of the shaft is ______ N/mm<sup>2</sup>. (Assume other stress concentration constants to be 1)`,
+      image: "",
+      options: [],
+      answer: "155.925",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `Stress concentration in a machine component of ductile materials is harmful for static loading.`,
+        `Stress concentration in a machine component of brittle materials is harmful for fluctuating loading.`,
+        `Theoretical stress concentration factor can be ignored for ductile components subjected to static load.`,
+        `Stress concentration in a machine component of ductile material is harmful for dynamic loading.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `• Ductile material undergoes local yielding and distribute the concentrated stress when subjected to stress concentration.<br/>• However, when the load is fluctuating, the stress at discontinuities may exceed the endurance limit, and fail by fatigue.<br/>• The effect of stress concentration is more severe in case of brittle material, due to the their inability of plastic deformation.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A simply supported circular beam of length 800 mm is subjected to a fluctuating load varying from –100 N to 200 N at the center. The beam is made of cold drawn steel with ultimate tensile strength <em> S<sub>ut</sub> </em> = 600 N/mm<sup>2</sup> and yield strength <em> S<sub>yt</sub> </em> = 350 N/mm<sup>2</sup> , the required factor of safety is 2. If <em> k<sub>a</sub> </em> = 0.7, <em> k<sub>b</sub> </em> = 0.85, kc = 0.7 and <em> k<sub>d</sub> </em> = 0.89, then the required diameter of beam using Goodman’s criterion for fatigue failure is`,
+      image: "",
+      options: [
+        `17 mm`,
+        `18 mm`,
+        `19 mm`,
+        `20 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_2.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A solid circular shaft, 15 mm diameter is subjected to torsional shear stress, which varies from 0 to 35 N/mm<sup>2</sup> and at the same time, is subjected to an axial stress that varies from –15 to +30 N/mm<sup>2</sup>. The shaft is made of steel (S<sub>ut</sub> = 540 N/mm<sup>2</sup> and S<sub>yt</sub> = 400 N/mm<sup>2</sup>) and corrected endurance limit of the shaft is 200 N/mm<sup>2</sup>. The frequency of variation of these stresses is equal to the shaft speed, the factor of safety using Goodman’s criterion is _____.`,
+      image: "",
+      options: [],
+      answer: "4.05",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_4.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A solid circular shaft of 40 mm diameter is loaded by bending moment 700 Nm, torque 1000 Nm and axial compressive force of 40 kN. The shaft material is ductile with yield strength of 300 MPa. The factor of safety according to Tresca theory of failure is`,
+      image: "",
+      options: [
+        `2.2`,
+        `1.4`,
+        `2.5`,
+        `1.8`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_12.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A centrifugal clutch consists of four shoes, each having a mass of 1 kg. In the engaged position, the radius to the centre of gravity of each shoe is 150 mm, while the inner radius of the drum is 200 mm. The coefficient of friction is 0.2. The preload in the spring is adjusted in such a way that the spring force at the beginning of engagement is 800 N, power transmitted by the clutch at 2400 rpm is ______ kW. (Round off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "348.84",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A stepper shaft transmit a torque varying from 600 N-m to 1200 N-m. The ultimate tensile strength of material of shaft is 600 MPa and yield stress of the material is 400 MPa. Correction for type of loading is 0.6, size factor is 0.85, and surface finish factor is 0.8, diameter of the shaft for an infinite life and factor of safety of 2 (Using Soderberg equation) is`,
+      image: "",
+      options: [
+        `20.47 mm`,
+        `82.6 mm`,
+        `55.26 mm`,
+        `41.37 mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_23.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The bending moment <em>M</em> applied to a solid shaft carries a maximum direct stress <em> f<sub>y</sub> </em> at elastic failure, what should be the value of the twisting moment <em>T</em> , acting alone on the same shaft, to produce same elastic failure.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_25.png"/>`,
+        `For MSST, <em>T</em> = <em>M</em>`,
+        `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_26.png"/>`,
+        `For MPST, <em>T</em> = 2<em>M</em>`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_27.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The shaft of an overhang crank is subjected to a force <em>P</em> of 2 kN as shown in figure. The shaft is made of plain carbon steel of tensile yield strength 400 N/mm<sup>2</sup> and factor of safety is 2. The diameter of the shaft by maximum shear stress theory is <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_31.png"/>`,
+      image: "",
+      options: [
+        `19.315 mm`,
+        `37.07 mm`,
+        `41.61 mm`,
+        `52.51 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_32.png"/> <img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The ratio of inner radius to the outer radius for maximum torque transmission in a disc clutch will be, using uniform wear theory`,
+      image: "",
+      options: [
+        `0.5`,
+        `2`,
+        `1.717`,
+        `0.577`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test23_part_syllabus_gate_2026_me_machine_design1/img_35.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "TWT - Industrial Engineering-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the final simplex tableau of linear programming problem (LPP), it is found that <em> z<sub>j</sub> </em> - <em> c<sub>j</sub> </em> = 0 for at least one non-basic variable. Which of the following conclusions is correct?`,
+      image: "",
+      options: [
+        `The current solution is infeasible.`,
+        `The solution is optimal and unique.`,
+        `Three exists at least one alternate optimal solution.`,
+        `The objective function is unbounded.`
+      ],
+      answer: "C",
+      solution: `When <em> z<sub>j</sub> </em> - <em> c<sub>j</sub> </em> = 0, for a non-basic variable in the final tableau, it indicates the possibility of introducing this variable into the basis without changing the optimal value, thus leading to another optimal solution.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The customer arrival and service rate are λ and μ respectively. If <em> W<sub>s</sub> </em> and <em> W<sub>q</sub> </em> represents mean waiting time in the system and mean waiting time in the queue respectively, then <em> W<sub>s</sub> </em> will be equal to`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_1.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_2.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_3.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_4.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the program evaluation and review technique (PERT), the time duration of an activity is assumed to follow which of the following probability distributions?`,
+      image: "",
+      options: [
+        `Normal distribution`,
+        `Exponential distribution`,
+        `Beta distribution`,
+        `Poisson distribution`
+      ],
+      answer: "C",
+      solution: `PERT models activity durations using a Beta distribution because it can be shaped to reflect skewness in time estimates using three parameters : Optimistic, most likely, and pessimistic times.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match List-I (Techniques) with List-II (Applications) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_6.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In reference to Kendall’s notations (<em>a</em> | <em>b</em> | <em>c</em> = <em>d</em> | <em>e</em> | <em>f</em> ) used for queuing theory, which of the following statement is correct?`,
+      image: "",
+      options: [
+        `‘<em>b</em> ’ represents number of servers`,
+        `‘<em>b</em> ’ represents service discipline`,
+        `‘<em>a</em> ’ represent arrival distribution`,
+        `‘<em>c</em> ’ represents service time distribution`
+      ],
+      answer: "C",
+      solution: `In Kendall 's notation,<br/> 'a 'represents arrival distribution.<br/> 'b 'represents diparture (or service time) distribution.<br/> 'c 'represents number of servers in the system.<br/> 'd 'represents service discipline.<br/> 'e 'represents maximum number of customers allowed in the system.<br/>'f 'represents calling source or population.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The earliest occurrence time and the latest occurrence time for event ‘1’ are 10 weeks and 28 weeks respectively and that for event ‘2’ are 34 and 39 weeks respectively. If the activity time is 13 weeks, then the total float will be ____ weeks.`,
+      image: "",
+      options: [],
+      answer: "16",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a network diagram, the optimistic, most likely and pessimistic times (in weeks) are shown for each activity, in that order in the brackets. The variance of completion time for this network is _____. (Correct upto two decimal places) <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_8.png"/>`,
+      image: "",
+      options: [],
+      answer: "2.44",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Customer arrive at a service centre at a rate of 4 per hour and the mean service time is 12 minutes. Than probability that there is no queue is _____. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.36",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A basic feasible solution to a m × n transportation problem is said to be non-degenerate if`,
+      image: "",
+      options: [
+        `Total number of non-negative allocations is exactly equal to sum of number of sources and destinations.`,
+        `Total number of non-negative allocations is one less than the sum of number of sources and destinations.`,
+        `The allocations are in independent positions.`,
+        `The allocations are in dependent positions.`
+      ],
+      answer: ["B", "C"],
+      solution: `A basic feasible solution to a <em>m</em> ×<em>n</em> transportation problem is said to be non-degenerate if<br/> (a) The total number of non-negative allocations is exactly <em>m</em> + <em>n</em> –1.<br/> (b) There <em>m</em> + <em>n</em> –1 allocations are in independent position.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The mean arrival rate of telephone calls at a telephone booth follows a Poisson distribution, with an average of 10 minutes between two consecutive arrivals. The lengths of telephone calls are assumed to be exponentially distributed with mean 4 minutes. The telephone company will install second booth when convinced that an arrival would expect to have to wait at least four minutes for phone. The increase in flow of arrivals which will justify a second booth.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_12.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_13.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_14.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following problem shown below, in which the cell contains the transportation cost in rupees. What will be the most economical initial feasible solution? <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_16.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_17.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_18.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_19.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_20.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The activities along with their depending relationship are given below: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_22.png"/> The number of dummy activities in the arrow diagram are`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A machine tool company decides to make four subassemblies through four contractors. Each contractor is to receive only one subassembly. The cost of each subassembly is determined by the bids submitted by each contractor and is shown in the table below in hundreds of rupees. <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_24.png"/> The different subassemblies are to be assigned to contractors so as to minimize the total cost. What is the total minimum cost?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_26.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_27.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_28.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following linear programming problem: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_30.png"/> If <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_31.png"/>are non-basic variables and value of z is zero in the first simplex table, then the value of z in the next simplex table is ____.`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_32.png"/> <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The company makes two kinds of plastic toys. Toy A and Toy B. The respective profits are <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_34.png"/> and <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_35.png"/> per toy. Each toy of type A requires 2 minutes and type B requires 1 min for its production. The company has working time of 1000 minutes per day. The supply of plastic is sufficient for only 800 toys (Both A and B combined). A requires an led light and B requires two led lights, the supply of led light is limited to 1000 units per day. What will be the optimal profit <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_36.png"/>(Correct upto next integer)`,
+      image: "",
+      options: [],
+      answer: "2331",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_37.png"/> <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A project consists of eight activities with the following relevant informations: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_39.png"/> The duration which will have 95% confidence for project completion is _______ days (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given below is the table showing durations and cost of various activities of a project: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_41.png"/> Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The critical path is 1 - 2 - 3 - 5 - 6.`,
+        `Activities C and E have same cost slope.`,
+        `Activities D and E have same cost slope.`,
+        `If indirect cost is <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_42.png"/> per day, total normal cost will be <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_43.png"/>`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_44.png"/>`
     }
   ]
 });
