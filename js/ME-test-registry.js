@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Engineering Mechanics",
+  date: "July 16, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following best describes the principle of physical independence of forces?`,
+      image: "",
+      options: [
+        `All forces acting on a body must be applied at the same point.`,
+        `Each force acts as if it were the only force acting on the body.`,
+        `Only one force is considered at a time in physical analysis.`,
+        `The total force is equal to the sum of magnitude of all forces.`
+      ],
+      answer: "B",
+      solution: `The physical independence principal states that the effect of a force on a body is not affected by the presence of the other forces. So, even if there are a number of forces acting on the same body, each force has its own influence as other forces was absent.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A block of width <em>b</em> and weight mg has a force <em>P</em> applied at a height <em>h</em> . The coefficient of friction between the block and the floor is 0.3. What is the maximum height, at which the force can be applied so that the block slips without tipping? <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_1.png"/>`,
+      image: "",
+      options: [
+        `80 mm`,
+        `100 mm`,
+        `120 mm`,
+        `140 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_2.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a screw jack the angle of friction is 15° and the helix angle is 9°. To lower down a load of 20 N,how much effort is required in horizontal direction?`,
+      image: "",
+      options: [
+        `2.1 N`,
+        `2.9 N`,
+        `3.7 N`,
+        `5.4 N`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the following theorems/principle with the reason they are used for <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_5.png"/>`,
+      image: "",
+      options: [
+        `P-3, Q-1, R-4, S-2`,
+        `P-3, Q-4, R-1, S-2`,
+        `P-4, Q-3, R-1, S-2`,
+        `P-4, Q-1, R-3, S-2`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A mass of 50 kg is suspended by a rope that is wound 2.5 times around a fixed horizontal rod. The coefficient of static friction between the rope and the rod is 0.25. What is the minimum force required on the free end of the rope to support the mass in equilibrium? (Take g = 9.81 m/s<sup>2</sup> )`,
+      image: "",
+      options: [
+        `5.87 N`,
+        `6.67 N`,
+        `8.34 N`,
+        `9.66 N`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 5 kg block starts from rest on a smooth horizontal floor under the action of a force <em>F</em> = 3<em>t</em> – 2<em>t</em> <sup>2</sup> , where <em>t</em> is the time in seconds. The maximum speed of the block is _______ m/s. (Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.225",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A block of mass 3 kg falls freely from a height of 2 m on the top of a spring of stiffness 10 N/mm. Spring is compressed by 70 mm. The velocity of the block when the spring is deformed is ____ m/sec. (Correct upto 2 decimal places)`,
+      image: "",
+      options: [],
+      answer: "4.93",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_8.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A system of six pulleys is used to lift a load of 1038 N. If the efficiency of the pulley system is 90%, the effort P required to lift the load is _______ N. (Correct upto two decimal places) <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_10.png"/>`,
+      image: "",
+      options: [],
+      answer: "192.22",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following forces do not perform virtual work during a virtual displacement in a static system?`,
+      image: "",
+      options: [
+        `Tension in a rope during vertical displacement of a suspended body.`,
+        `Friction force at the point of contact of a wheel rolling without slipping.`,
+        `Weight of a body when its CG moves horizontally.`,
+        `Reaction at a roller moving along its track.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `While computing the virtual work, we should remember that there are many forces encountered in statics which do not work as these forces are applied through fixed points i.e., dr = 0 examples of such forces are: (i) Reaction at a frictionless pin; body rotating about the pin. (ii) Reaction at a frictionless contacting surface when two bodies are in relative motion. (iii) Reaction at a roller moving along its track. (iv) Weight of a body when its CG moves horizontally. (v) Friction force acting on a wheel rolling without slipping as the point of contact is instantaneously it rest.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A truss ABCDEF is shown in the figure below. The force in the member BD is <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_12.png"/>`,
+      image: "",
+      options: [
+        `20 kN (Tensile)`,
+        `20 kN (Compressive)`,
+        `15 kN (Tensile)`,
+        `25 kN (Compressive)`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_13.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A ball is attached at the end of the rod of length 2 m as shown in the figure. It is released from the horizontal position and hits the vertical wall, the coefficient of restitution is <img align="absmiddle" alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_15.png"/> What is the maximum angle made by the rod with vertical wall after collision in degrees? <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_16.png"/>`,
+      image: "",
+      options: [
+        `37°`,
+        `43°`,
+        `45°`,
+        `60°`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_17.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A uniform rod of mass <em>m</em> and length <img align="absmiddle" alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_19.png"/> is swinging about a hinge in the vertical plane. The lagrangian of the system given in the figure below is <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_20.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_21.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_22.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_23.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_24.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_25.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the composite section ABCDEF shown below, the centroid of the shaded area with respect to point <em>O</em> is <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_27.png"/>`,
+      image: "",
+      options: [
+        `(10.2, 8.2)`,
+        `(10.2, 7.4)`,
+        `(9.6, 8)`,
+        `(9.6, 7)`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_28.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A structure with pin joined members is shown in the figure. The value of load W is 50 kN and θ is 25°. The value of force <em>P</em> required to keep the system in equilibrium is ______ kN. [Neglect friction at the joints and weight of the members] [Round off up to three decimal places] <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_30.png"/>`,
+      image: "",
+      options: [],
+      answer: "53.613",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The length of a 4 kg bar is 6 meters. The floor and wall are smooth. The spring is unstretched when the angle α = 0°. If the bar is in equilibrium at α = 30°, then the spring constant is_____N/m. [Correct upto 2 decimal points] <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_32.png"/>`,
+      image: "",
+      options: [],
+      answer: "24.88",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The weight of the box shown below is <em>W</em> = 30 N and the coefficient of static friction between the box and the floor is μ<sub>s</sub> = 0.55. Neglect the weight of the bars. The maximum value of force F that will not cause the box to slip is _____ N. (Correct upto two decimal place) <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_34.png"/>`,
+      image: "",
+      options: [],
+      answer: "73.33",
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A rope 6 m long is connected at two points <em>A</em> and <em>B</em> at the same level 4.5 m apart. A load of 1250 N is suspended from a point <em>C</em> on the rope 2 m from <em>A</em> , as shown in the figure. Which of the following statements are correct? [Assume CD is horizontal] <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_36.png"/>`,
+      image: "",
+      options: [
+        `The angle between AB and BD is approximately 68°.`,
+        `The angle between AB and AC is approximately 55°.`,
+        `Tension in CD is 980 N.`,
+        `The value of load W is nearly 3193 N.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_37.png"/> <img alt="" src="js/questions/topicwise_test16_part_syllabus_gate_2026_me_engineering_mechanics/img_38.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Theory of Machines-1",
   date: "July 15, 2026",
   questions: [
