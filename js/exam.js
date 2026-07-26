@@ -576,14 +576,14 @@ function renderTestList(t, filter) {
 
     if (isFullTest) {
       testType = "Full";
-      testNumber = fltList.length - fltSeen;
+      testNumber = fltSeen + 1;
       fltSeen++;
       bracket = label;
       duration = "180 Mins";
       defaultQuestions = 65;
     } else if (isTopicwise) {
       testType = "Topicwise";
-      testNumber = twList.length - twSeen;
+      testNumber = twSeen + 1;
       twSeen++;
       bracket = label;
       duration = "45 Mins";
@@ -591,7 +591,7 @@ function renderTestList(t, filter) {
     } else {
       // Default to Subjectwise
       testType = "Subjectwise";
-      testNumber = t.schedule.length - fltList.length - twList.length - swtSeen;
+      testNumber = swtSeen + 1;
       swtSeen++;
       bracket = label;
       duration = "90 Mins";
