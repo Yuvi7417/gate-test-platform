@@ -599,14 +599,16 @@ function renderTestList(t, filter) {
   const shown = items.filter((it) => {
     const matchStatus = filter === "all" || it.status === filter;
     
-    // We determine testType by checking if it contains "-Topicwise Test-" or "-Subjectwise Test-"
+    // Determine testType based on naming conventions
     let itTestType = "All";
-    if (it.name.includes("-Topicwise Test-")) {
+    const upperName = (it.name || "").toUpperCase();
+    if (upperName.includes("-TOPICWISE TEST-") || upperName.includes("TWT -")) {
       itTestType = "Topicwise";
-    } else if (it.name.includes("-Subjectwise Test-")) {
+    } else if (upperName.includes("-SUBJECTWISE TEST-") || upperName.includes("SWT -")) {
       itTestType = "Subjectwise";
+    } else if (upperName.includes("FULL TEST") || upperName.includes("FLT -") || upperName.includes("FST -")) {
+      itTestType = "Full";
     }
-
     const matchType = typeFilter === "All" || itTestType === typeFilter;
     return matchStatus && matchType;
   });
