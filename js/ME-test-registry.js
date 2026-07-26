@@ -707,3 +707,236 @@ registerTest({
     }
   ]
 });
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "TWT - Industrial Engineering-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the final simplex tableau of linear programming problem (LPP), it is found that <em> z<sub>j</sub> </em> - <em> c<sub>j</sub> </em> = 0 for at least one non-basic variable. Which of the following conclusions is correct?`,
+      image: "",
+      options: [
+        `The current solution is infeasible.`,
+        `The solution is optimal and unique.`,
+        `Three exists at least one alternate optimal solution.`,
+        `The objective function is unbounded.`
+      ],
+      answer: "C",
+      solution: `When <em> z<sub>j</sub> </em> - <em> c<sub>j</sub> </em> = 0, for a non-basic variable in the final tableau, it indicates the possibility of introducing this variable into the basis without changing the optimal value, thus leading to another optimal solution.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The customer arrival and service rate are λ and μ respectively. If <em> W<sub>s</sub> </em> and <em> W<sub>q</sub> </em> represents mean waiting time in the system and mean waiting time in the queue respectively, then <em> W<sub>s</sub> </em> will be equal to`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_1.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_2.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_3.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_4.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the program evaluation and review technique (PERT), the time duration of an activity is assumed to follow which of the following probability distributions?`,
+      image: "",
+      options: [
+        `Normal distribution`,
+        `Exponential distribution`,
+        `Beta distribution`,
+        `Poisson distribution`
+      ],
+      answer: "C",
+      solution: `PERT models activity durations using a Beta distribution because it can be shaped to reflect skewness in time estimates using three parameters : Optimistic, most likely, and pessimistic times.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match List-I (Techniques) with List-II (Applications) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_6.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In reference to Kendall’s notations (<em>a</em> | <em>b</em> | <em>c</em> = <em>d</em> | <em>e</em> | <em>f</em> ) used for queuing theory, which of the following statement is correct?`,
+      image: "",
+      options: [
+        `‘<em>b</em> ’ represents number of servers`,
+        `‘<em>b</em> ’ represents service discipline`,
+        `‘<em>a</em> ’ represent arrival distribution`,
+        `‘<em>c</em> ’ represents service time distribution`
+      ],
+      answer: "C",
+      solution: `In Kendall 's notation,<br/> 'a 'represents arrival distribution.<br/> 'b 'represents diparture (or service time) distribution.<br/> 'c 'represents number of servers in the system.<br/> 'd 'represents service discipline.<br/> 'e 'represents maximum number of customers allowed in the system.<br/>'f 'represents calling source or population.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The earliest occurrence time and the latest occurrence time for event ‘1’ are 10 weeks and 28 weeks respectively and that for event ‘2’ are 34 and 39 weeks respectively. If the activity time is 13 weeks, then the total float will be ____ weeks.`,
+      image: "",
+      options: [],
+      answer: "16",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a network diagram, the optimistic, most likely and pessimistic times (in weeks) are shown for each activity, in that order in the brackets. The variance of completion time for this network is _____. (Correct upto two decimal places) <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_8.png"/>`,
+      image: "",
+      options: [],
+      answer: "2.44",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Customer arrive at a service centre at a rate of 4 per hour and the mean service time is 12 minutes. Than probability that there is no queue is _____. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.36",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A basic feasible solution to a m × n transportation problem is said to be non-degenerate if`,
+      image: "",
+      options: [
+        `Total number of non-negative allocations is exactly equal to sum of number of sources and destinations.`,
+        `Total number of non-negative allocations is one less than the sum of number of sources and destinations.`,
+        `The allocations are in independent positions.`,
+        `The allocations are in dependent positions.`
+      ],
+      answer: ["B", "C"],
+      solution: `A basic feasible solution to a <em>m</em> ×<em>n</em> transportation problem is said to be non-degenerate if<br/> (a) The total number of non-negative allocations is exactly <em>m</em> + <em>n</em> –1.<br/> (b) There <em>m</em> + <em>n</em> –1 allocations are in independent position.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The mean arrival rate of telephone calls at a telephone booth follows a Poisson distribution, with an average of 10 minutes between two consecutive arrivals. The lengths of telephone calls are assumed to be exponentially distributed with mean 4 minutes. The telephone company will install second booth when convinced that an arrival would expect to have to wait at least four minutes for phone. The increase in flow of arrivals which will justify a second booth.`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_12.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_13.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_14.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following problem shown below, in which the cell contains the transportation cost in rupees. What will be the most economical initial feasible solution? <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_16.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_17.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_18.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_19.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_20.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The activities along with their depending relationship are given below: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_22.png"/> The number of dummy activities in the arrow diagram are`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A machine tool company decides to make four subassemblies through four contractors. Each contractor is to receive only one subassembly. The cost of each subassembly is determined by the bids submitted by each contractor and is shown in the table below in hundreds of rupees. <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_24.png"/> The different subassemblies are to be assigned to contractors so as to minimize the total cost. What is the total minimum cost?`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_25.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_26.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_27.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_28.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following linear programming problem: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_30.png"/> If <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_31.png"/>are non-basic variables and value of z is zero in the first simplex table, then the value of z in the next simplex table is ____.`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_32.png"/> <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The company makes two kinds of plastic toys. Toy A and Toy B. The respective profits are <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_34.png"/> and <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_35.png"/> per toy. Each toy of type A requires 2 minutes and type B requires 1 min for its production. The company has working time of 1000 minutes per day. The supply of plastic is sufficient for only 800 toys (Both A and B combined). A requires an led light and B requires two led lights, the supply of led light is limited to 1000 units per day. What will be the optimal profit <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_36.png"/>(Correct upto next integer)`,
+      image: "",
+      options: [],
+      answer: "2331",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_37.png"/> <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A project consists of eight activities with the following relevant informations: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_39.png"/> The duration which will have 95% confidence for project completion is _______ days (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Given below is the table showing durations and cost of various activities of a project: <img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_41.png"/> Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The critical path is 1 - 2 - 3 - 5 - 6.`,
+        `Activities C and E have same cost slope.`,
+        `Activities D and E have same cost slope.`,
+        `If indirect cost is <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_42.png"/> per day, total normal cost will be <img align="absmiddle" alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_43.png"/>`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test22_part_syllabus_gate_2026_me_industrial_engineering2/img_44.png"/>`
+    }
+  ]
+});
