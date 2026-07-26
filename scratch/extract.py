@@ -46,12 +46,14 @@ for q in qs_divs:
     
     options = []
     
-    ol = text_div.find('ol')
-    if ol:
-        lis = ol.find_all('li', recursive=False)
-        if len(lis) > 0:
-            options = ["".join(str(c) for c in li.contents).strip() for li in lis]
-            ol.decompose()
+    ols = text_div.find_all('ol')
+    for ol in ols:
+        if not ol.find_parent('pre'):
+            lis = ol.find_all('li', recursive=False)
+            if len(lis) > 0:
+                options = ["".join(str(c) for c in li.contents).strip() for li in lis]
+                ol.decompose()
+                break
     
     if not options:
         ps = text_div.find_all('p')
