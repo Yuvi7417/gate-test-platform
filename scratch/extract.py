@@ -104,7 +104,7 @@ for q in qs_divs:
     if 'Correct Answer:' in ans_text:
         ans_val = ans_text.split('Correct Answer:')[1].strip()
         if q_type == "MSQ":
-            answer = [x.strip() for x in ans_val.split(',')]
+            answer = [x.strip() for x in ans_val.split(';')]
         elif q_type == "NAT":
             answer = ans_val
         else:
@@ -132,7 +132,8 @@ out.append('  questions: [')
 for q in questions:
     out.append('    {')
     out.append(f'      marks: {q["marks"]},')
-    out.append(f'      neg: {q["neg"]},')
+    neg_val = 0 if q["neg"] == 0.0 else q["neg"]
+    out.append(f'      neg: {neg_val},')
     out.append(f'      type: "{q["type"]}",')
     
     def flatten(html_str):
