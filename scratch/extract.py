@@ -113,17 +113,23 @@ for q in questions:
     out.append(f'      neg: {q["neg"]},')
     out.append(f'      type: "{q["type"]}",')
     
-    t = q["text"].replace('\n', ' ').replace('\r', ' ')
-    t = re.sub(r'\s+', ' ', t).strip()
-    t = t.replace('\\', '\\\\').replace('`', '\\`').replace('$', '\\$')
+    def flatten(html_str):
+        html_str = html_str.replace('\\', '\\\\').replace('`', '\\`').replace('$', '\\$')
+        parts = re.split(r'(<pre.*?>.*?</pre>)', html_str, flags=re.DOTALL | re.IGNORECASE)
+        for i in range(len(parts)):
+            if i % 2 == 0:
+                parts[i] = re.sub(r'\s+', ' ', parts[i]).replace('\n', '').replace('\r', '')
+            else:
+                parts[i] = parts[i].replace('\r', '').replace('\n', '\\n')
+        return "".join(parts).strip()
+
+    t = flatten(q["text"])
     out.append(f'      text: `{t}`,')
     out.append('      image: "",')
     
     out.append('      options: [')
     for opt in q["options"]:
-        o = opt.replace('\n', ' ').replace('\r', ' ')
-        o = re.sub(r'\s+', ' ', o).strip()
-        o = o.replace('\\', '\\\\').replace('`', '\\`').replace('$', '\\$')
+        o = flatten(opt)
         out.append(f'        `{o}`,')
     out.append('      ],')
     
