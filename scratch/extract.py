@@ -1,0 +1,141 @@
+import bs4
+import re
+import json
+
+soup = bs4.BeautifulSoup(open('test.html', encoding='utf-8'), 'html.parser')
+
+scripts = soup.find_all('script', type=lambda t: t and t.startswith('math/tex'))
+for script in scripts:
+    tex = script.string or ""
+    is_display = 'mode=display' in script.get('type', '')
+    replacement = f"\\({tex}\\)" if not is_display else f"$$ {tex} $$"
+    
+    parent = script.parent
+    for preview in parent.find_all('span', class_='MathJax_Preview'):
+        preview.decompose()
+    for chtml in parent.find_all('span', class_=lambda c: c and 'MathJax_CHTML' in c):
+        chtml.decompose()
+        
+    script.replace_with(replacement)
+
+imgs = soup.select('.res_question_text img')
+for i, img in enumerate(imgs, 1):
+    img['src'] = f"js/questions/fst-mock-test-1/{i}.png"
+
+qs_divs = soup.select('.res_question')
+questions = []
+
+for q in qs_divs:
+    type_str = q.select_one('.res_qs_type').text.strip()
+    if 'Multiple Choice' in type_str:
+        q_type = "MCQ"
+    elif 'Numerical' in type_str:
+        q_type = "NAT"
+    elif 'Multiple Select' in type_str:
+        q_type = "MSQ"
+    else:
+        q_type = "UNKNOWN"
+        
+    marks_str = q.select_one('.res_qs_marks').text
+    marks = int(re.search(r'\d+', marks_str).group())
+    
+    neg_str = q.select_one('.res_qs_penalty').text
+    neg = float(re.search(r'[\d.]+', neg_str).group())
+    
+    text_div = q.select_one('.res_question_text')
+    
+    options = []
+    
+    ol = text_div.find('ol')
+    if ol:
+        lis = ol.find_all('li', recursive=False)
+        if len(lis) > 0:
+            options = ["".join(str(c) for c in li.contents).strip() for li in lis]
+            ol.decompose()
+    
+    if not options:
+        ps = text_div.find_all('p')
+        opt_ps = []
+        for p in ps:
+            t = p.text.strip()
+            if t.startswith('A.') or t.startswith('B.') or t.startswith('C.') or t.startswith('D.'):
+                opt_ps.append(p)
+        if len(opt_ps) == 4:
+            for p in opt_ps:
+                content = "".join(str(c) for c in p.contents).strip()
+                content = re.sub(r'^[A-D]\.\s*', '', content)
+                options.append(content)
+                p.decompose()
+
+    if not options:
+        html_str = "".join(str(c) for c in text_div.contents)
+        div_match = re.search(r'<div[^>]*>\s*A\.\s*(.*?)<br/>\s*B\.\s*(.*?)<br/>\s*C\.\s*(.*?)<br/>\s*D\.\s*(.*?)\s*</div>', html_str, flags=re.DOTALL)
+        if div_match:
+            options = [div_match.group(i).strip() for i in range(1, 5)]
+            html_str = html_str[:div_match.start()] + html_str[div_match.end():]
+            text_div = bs4.BeautifulSoup(html_str, 'html.parser')
+            
+    text_html = "".join(str(c) for c in text_div.contents).strip()
+    
+    ans_badge = q.select_one('.correct_solution')
+    ans_text = ans_badge.text if ans_badge else ""
+    if 'Correct Answer:' in ans_text:
+        ans_val = ans_text.split('Correct Answer:')[1].strip()
+        if q_type == "MSQ":
+            answer = [x.strip() for x in ans_val.split(',')]
+        elif q_type == "NAT":
+            answer = ans_val
+        else:
+            answer = ans_val
+    else:
+        answer = ""
+        
+    question_obj = {
+        "marks": marks,
+        "neg": neg,
+        "type": q_type,
+        "text": text_html,
+        "options": options,
+        "answer": answer
+    }
+    questions.append(question_obj)
+
+out = []
+out.append('registerTest({')
+out.append('  series: "cs-gate-classes",')
+out.append('  name: "FST - Mock test-1",')
+out.append('  date: "November 27, 2026",')
+out.append('  questions: [')
+
+for q in questions:
+    out.append('    {')
+    out.append(f'      marks: {q["marks"]},')
+    out.append(f'      neg: {q["neg"]},')
+    out.append(f'      type: "{q["type"]}",')
+    
+    t = q["text"].replace('\n', ' ').replace('\r', ' ')
+    t = re.sub(r'\s+', ' ', t).strip()
+    t = t.replace('\\', '\\\\').replace('`', '\\`').replace('$', '\\$')
+    out.append(f'      text: `{t}`,')
+    out.append('      image: "",')
+    
+    out.append('      options: [')
+    for opt in q["options"]:
+        o = opt.replace('\n', ' ').replace('\r', ' ')
+        o = re.sub(r'\s+', ' ', o).strip()
+        o = o.replace('\\', '\\\\').replace('`', '\\`').replace('$', '\\$')
+        out.append(f'        `{o}`,')
+    out.append('      ],')
+    
+    ans_str = json.dumps(q["answer"])
+    out.append(f'      answer: {ans_str},')
+    out.append('      solution: ``')
+    out.append('    },')
+
+out.append('  ]')
+out.append('});')
+
+with open('js/full-test-registry.src.js', 'a', encoding='utf-8') as f:
+    f.write('\n' + '\n'.join(out) + '\n')
+
+print("Extraction completed!")
