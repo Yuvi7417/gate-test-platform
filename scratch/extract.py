@@ -101,6 +101,16 @@ for q in qs_divs:
     
     ans_badge = q.select_one('.correct_solution')
     ans_text = ans_badge.text if ans_badge else ""
+    
+    if len(options) > 0 and q_type == "NAT":
+        if 'Correct Answer:' in ans_text:
+            ans_val_tmp = ans_text.split('Correct Answer:')[1].strip()
+            if ';' in ans_val_tmp or ',' in ans_val_tmp or len(ans_val_tmp) > 1:
+                q_type = "MSQ"
+            else:
+                q_type = "MCQ"
+        else:
+            q_type = "MCQ"
     if 'Correct Answer:' in ans_text:
         ans_val = ans_text.split('Correct Answer:')[1].strip()
         if q_type == "MSQ":
