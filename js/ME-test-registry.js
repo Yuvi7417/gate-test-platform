@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Refrigeration & Air-Conditioning",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The capacity of a refrigerator is 500 tons when working between –4°C and 27°C. Minimum work (kW) required to run the system is`,
+      image: "",
+      options: [],
+      answer: "201.67",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a refrigerator refrigerant-134a enters the compressor as superheated vapour at a rate of 0.15 kg/s with <em>h</em> <sub>1</sub> = 250.12 kJ/kg and it leaves with <em>h</em> <sub>2</sub> = 290.14 kJ/kg. The enthalpy of refrigerant at the exit of the condenser is <em>h</em> <sub>3</sub> = 85.14 kJ/kg and is throttled to 0.15 MPa, COP of refrigerator will be`,
+      image: "",
+      options: [
+        `4.12`,
+        `5.78`,
+        `2.14`,
+        `3.57`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `During sensible heating process:`,
+      image: "",
+      options: [
+        `Specific humidity increases`,
+        `Dry bulb temperature decreases`,
+        `Wet bulb temperature decreases`,
+        `Relative humidity decreases`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Atmospheric air at 1.01325 bar, having specific humidity of 20 gm/kg of air at 27°C dry bulb temperature. <img align="absmiddle" alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_5.png"/>at 27°C is 0.03287 bar, then relative humidity in the atmospheric air is`,
+      image: "",
+      options: [
+        `87%`,
+        `96%`,
+        `90%`,
+        `72%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct about psychrometric chart at standard atmospheric pressure?`,
+      image: "",
+      options: [
+        `Dry bulb temperature lines are straight parallel and vertical.`,
+        `Wet bulb temperature lines are horizontal and uniformly spaced.`,
+        `Relative humidity lines are curved.`,
+        `Humidity ratio lines are straight, parallel and horizontal`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `Wet bulb temperature lines are inclined, straight and not uniformly spaced.`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Steam at 2 bar 97°C and 0.80 dry is used in the generator of vapour absorption system. The evaporation of the refrigeration system is maintained at –7°C. The circulating cooling water rejected heat at 35°C in the condenser. Then the maximum COP for the system will be ____. (Round off to three decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.061",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is not a desirable characteristic of an ideal refrigerant?`,
+      image: "",
+      options: [
+        `High boiling point`,
+        `Low freezing point`,
+        `High saturation temperature`,
+        `High latent heat of vapourization`
+      ],
+      answer: "A",
+      solution: `The boiling temperature of the refrigerant at atmospheric pressure should be low. If the boiling temperature of the refrigerant is high at atmospheric pressure, the compressor should be operated at high vacuum. The high boiling temperature reduces the capacity and operating cost of the system.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Moist air is passed through a cooling section where it is cooled and dehumidified. Which of the following statements will be correct for the given condition?`,
+      image: "",
+      options: [
+        `Specific humidity will decrease but relative humidity will increase.`,
+        `Specific humidity will increase but relative humidity will decrease.`,
+        `Both specific humidity and relative humidity will decrease.`,
+        `Both specific humidity and relative humidity will increase.`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An air-refrigeration working on Bell-Coleman cycle takes air into the compressor at 1 bar and –4°C. It is compressed in the compressor to 6 bar and cooled to 25°C at same pressure, it is further expanded in the expander to 1 bar and discharged to take the cooling load. Refrigeration capacity (kW) of the system if the air circulation is 20 kg/min is`,
+      image: "",
+      options: [
+        `25.72`,
+        `41.84`,
+        `12.76`,
+        `30.28`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `For Bell-Coleman ideal regenerative cycle, temperature of air entering the cooling turbine is 140 K. Ambient temperature is 300 K. The difference between temperature before expansion and lowest temperature in the cycle is 60 K. If the lower pressure of the cycle is 1 bar, then`,
+      image: "",
+      options: [
+        `Refrigeration effect will be 160.3 kJ/kg.`,
+        `Refrigeration effect will be 60.3 kJ/kg.`,
+        `Heat rejected in the cooler is 226.13 kJ/kg.`,
+        `Heat rejected in the cooler is 385.12 kJ/kg`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A room contains atmospheric air at 27°C and 101.325 kPa at a relative humidity of 80%. The saturation pressure at 27°C is 2.547 kPa and enthalpy of water vapour is <em>h</em> = 3247.5 kJ/kg, then the enthalpy per unit mass of dry air is ______ kJ/kg of d.a. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "68.59",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Atmospheric air is at 20°C and 80% relative humidity and ω<sub>1</sub> = 0.0076 kg/kg of d.a. Water is added to reach the temperature of 37°C and relative humidity of 50% and ω<sub>2</sub> = 0.01201 kg/kg of d.a. If the volume flow rate is 2.4 cubic meters per sec and specific volume is 0.85 m<sup>3</sup> /kg of dry air, then the mass flow of water added will be`,
+      image: "",
+      options: [
+        `19.71 g/sec`,
+        `8.415 g/sec`,
+        `24.712 g/sec`,
+        `12.97 g/sec`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an air duct, a flow of moist air at 47°C with a flow rate of 0.3 kg/s of dry air is mixed with another flow of moist air at 27°C with a flow rate of 0.4 kg/s of dry air. The absolute humidities at 47°C and 27°C are 0.057 and 0.019, respectively. The enthalpies at the given temperature are 80 kJ/kg of dry air and 92.4 kJ/kg dry air, respectively. After mixing, heat is transferred to raise the final enthalpy to 95 kJ/kg of dry air, the amount of heat transfer during the process will be`,
+      image: "",
+      options: [
+        `15.71 kJ/sec`,
+        `24.12 kJ/sec`,
+        `5.54 kJ/sec`,
+        `12.72 kJ/sec`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_9.png"/> <img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The outdoor air at 1 atm, 45°C and 25% relative humidity is cooled by evaporating water at 25°C into the air, as shown in the figure. This process produces air at 29°C and 85% relative humidity. If the enthalpy of water at 25°C is <em>h</em> = 84.79 kJ/kg, then the cooling produced is _____ kJ/kg of dry air. (Rounded upto two decimal places) <img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_12.png"/>`,
+      image: "",
+      options: [],
+      answer: "-3.34",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_13.png"/> <img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `400 m<sup>3</sup> /min of recirculated air at 20°C DBT and 10° DPT with a specific volume, <em>v</em> <sub>2</sub> = 0.82 m<sup>3</sup> /kg of dry air and h<sub>2</sub> = 39 kJ/kg dry air is mixed with 150 m<sup>3</sup> /min of fresh air at 35°C DBT,<em>v</em> <sub>1</sub> = 0.891 m<sup>3</sup> /kg of dry air and h<sub>1</sub> = 76 kJ/kg of dry air, then enthalpy of the mixture will be _____ kJ/kg of dry air. (Round off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "48.49",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_15.png"/> <img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A stream of moist air at 2°C dry bulb having ω = 0.0035 kg w.v./kg d.a., mixes with another stream of moist air at 30°C dry bulb, ω = 0.00765 kg w.v./kg of d.a. in the ratio by mass of one part of the first to two parts of the second, then specific humidity of the air after mixing is`,
+      image: "",
+      options: [
+        `0.00627 kg wv/kg d.a.`,
+        `0.00271 kg wv/kg d.a.`,
+        `0.00789 kg wv/kg d.a.`,
+        `0.001451 kg wv/kg d.a.`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 40 cmm mixture of recirculated room air and outdoor air enters a cooling coil at 30°C DBT. The enthalpy of entering air is 52 kJ/kg d.a. and specific volume is 0.87 m3/kg d.a. The effective surface temperature of coil is 4°C, and the enthalpy at apparatus due point is 17 kJ/kg d.a. The surface area of the coil is such that it provides 12 kW of refrigeration with the given entering air state. The bypass factor is _____. (Rounded upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.55",
+      solution: `<img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_18.png"/> <img alt="" src="js/questions/topicwise_test20_part_syllabus_gate_2026_me_refrigeration_airconditioning/img_19.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Industrial Engineering-1",
   date: "July 15, 2026",
   questions: [
