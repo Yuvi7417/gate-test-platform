@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - IC Engine & Power Plant",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `In an air-standard diesel cycle, the state of the air at the beginning of compression is fixed by<em>P</em> <sub>1</sub> = 90 kPa, <em>T</em> <sub>1</sub> = 300 K and <em>V</em> <sub>1</sub> = 5 litres, as shown in figure. If <em>u</em> <sub>1</sub> = 214.07 kJ/kg, <em>h</em> <sub>2</sub> = 869.63 kJ/kg,<em>h</em> <sub>3</sub> = 2280.85 kJ/kg, u<sub>4</sub> = 884.96 kJ/kg and the cycle is executed 2000 times per minutes, then <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_3.png"/>`,
+      image: "",
+      options: [
+        `The power developed will be 214.72 kW.`,
+        `The work developed per cycle is 3.869 kJ.`,
+        `The power developed will be nearly 129 kW.`,
+        `The thermal efficiency of the cycle is 46.51%.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a SI-engine operating on the ideal Otto cycle, the minimum enclosed volume is 12.5% of the maximum enclosed volume. Assume constant specific heats for air at room temperature. If the engine produces 100 hp, then the rate of heat addition to engine will be _____ hp. (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "177",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider a simple ideal Rankine cycle. If the condenser pressure is lowered while keeping turbine inlet state the same :`,
+      image: "",
+      options: [
+        `the turbine work output will decrease.`,
+        `the amount of heat rejected will decrease.`,
+        `the cycle efficiency will decrease.`,
+        `the moisture content at turbine exit will decrease.`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A diesel engine has a compression ratio of 20 when running at 2000 rpm. It has a diameter of 0.1 m and a stroke of 0.12 m. Each cycle takes two revolutions and has a mean effective pressure of 1500 kPa. If the engine has six cylinders, then the engine power will be`,
+      image: "",
+      options: [
+        `112.7 kW`,
+        `240.3 kW`,
+        `141.3 kW`,
+        `192.7 kW`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_18.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is correct about reaction turbine?`,
+      image: "",
+      options: [
+        `Pressure drops only in nozzles and not in moving blade channels.`,
+        `Blades are of aerofoil shape.`,
+        `Suitable for small power requirements.`,
+        `Occupies less space for same power compare to impulse turbine.`
+      ],
+      answer: "B",
+      solution: `For reaction turbine,<br/> •Pressure drops in fixed blades (nozzles) as well as moving blade channels.<br/> •They are suitable for medium and higher power requirements.<br/> •Occupies more space for same power and blade manufacturing process is difficult compared to impulse and hence costly.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statement is not correct about regenerative feedwater heating for the same turbine output?`,
+      image: "",
+      options: [
+        `The cycle efficiency will remain same.`,
+        `Boiler size is increased.`,
+        `Condenser size is decreased.`,
+        `For same boiler output, turbine output is decreased.`
+      ],
+      answer: "A",
+      solution: `The effects of regenerative feedwater heating for the same turbine output is<br/> 1. It increases the cycle efficiency and reduces the heat rate.<br/> 2. It increases the steam flow rate to boiler due to which boiler size increases.<br/> 3. It reduces the steam flow rate to condenser, due to which condenser size decreases.<br/>4. If the boiler output is kept constant, the turbine output will decrease.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a power plant, the efficiencies of the electric generator, turbine, boiler, cycle and the overall plant are 0.92, 0.98, 0.91, 0.57, 0.39, respectively. The percentage of the total electricity generated which is consumed in running the auxiliaries is`,
+      image: "",
+      options: [
+        `83.4%`,
+        `72.9%`,
+        `16.6%`,
+        `27.4%`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_20.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An impulse steam turbine has a number of pressure stages, each having a row of nozzles and a single ring of blades. The nozzle angle in the first stage is 20° and the blade exit is 32° with reference to the plane of rotation. The mean blade speed is 120 m/s and the velocity of steam leaving the nozzles is 300 m/s. Take blade friction factor as 0.82 and nozzle efficiency to be 0.86, then the work done in the stage per kg of steam is _______ kJ/kg (Round off to three decimal places)`,
+      image: "",
+      options: [],
+      answer: "35.423",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In an ideal Brayton cycle, the compressor inlet temperature is <em>T</em> <sub>1</sub> and the turbine inlet temperature is <em>T</em> <sub>3</sub> . By assuming a cold air standard analysis. For the maximum net work developed per unit mass of air flow,`,
+      image: "",
+      options: [
+        `<em>T</em> <sub>2</sub> = (<em>T</em> <sub>1</sub> <em>T</em> <sub>3</sub> )<sup>2</sup>`,
+        `<em>T</em> <sub>2</sub> = (<em>T</em> <sub>1</sub> <em>T</em> <sub>3</sub> )<sup>1/2</sup>`,
+        `<em>T</em> <sub>2</sub> = (<em>T</em> <sub>1</sub> <em>T</em> <sub>3</sub> )<sup>1/3</sup>`,
+        `<em>T</em> <sub>2</sub> = (<em>T</em> <sub>1</sub> <em>T</em> <sub>3</sub> )<sup>1/2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In an ideal Rankine cycle, water is used as the working fluid. Saturated vapour enters the turbine at 20 MPa and the condenser pressure is 5 kPa. The thermodynamic properties of steam and water are given as, <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_1.png"/> The thermal efficiency will be _______ %. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "37.08",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An ideal air-standard Brayton cycle has the temperature limits of 400 K and 2800 K. The pressure ratio is that which maximizes the net work developed by the cycle per unit mass of air flow. The thermal efficiency of the cycle will be`,
+      image: "",
+      options: [
+        `62.2%`,
+        `56.4%`,
+        `71.1%`,
+        `54.92%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_6.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gas turbine engine with regeneration operates with two stages of isentropic compression and single stage of isentropic expansion. The air enters each stage of the compression at 300 K, the turbine inlet temperature is 1500 K. The pressure ratio across each stage of the compressor is 3. The effectiveness of regeneration is 70%. Assuming constant specific heats for air at room temperature. The thermal efficiency of the cycle will be _____ %. (Round off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "58.56",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_8.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a gas turbine power plant operates on the simple Brayton cycle operates between the pressure limits of 100 kPa and 800 kPa. Air enters the compressor at 300 K with a rate of 10 kg/s and leaves at 600 K. Now, this air and diesel fuel with an air-fuel ratio of 60 are burned in the combustion chamber with a combustion efficiency of 95%. Diesel has the heating value of 42000 kJ/kg. Combustion gases leave the combustion chamber and enter the turbine. Assume the expansion in turbine to be isentropic, the back work ratio will be _______. (Correct upto two decimal places) [Take ( <em> c<sub>p</sub> </em> )<sub>air</sub> = ( <em> c<sub>p</sub> </em> )<sub>gas</sub> = 1.005 kJ/kgK]`,
+      image: "",
+      options: [],
+      answer: "0.53",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a converging nozzle, air at <em>p</em> <sub>0</sub> = 1.5 bar, <em>T</em> <sub>0</sub> = 300 K expands isentropically and discharges to the atmosphere at 1 bar. The exit plane area is 0.002 m<sup>2</sup> . If air behaves as an ideal gas, then the mass flow rate will be`,
+      image: "",
+      options: [
+        `0.52 kg/s`,
+        `0.47 kg/s`,
+        `0.67 kg/s`,
+        `0.78 kg/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a two-stage air compressor operates at steady state. It compresses 30 m<sup>3</sup> /min of air from 150 kPa, 310 K to 2000 kPa. An intercooler between the two states cools the air to 310 K at constant pressure of 450 kPa. If the compression processes are isentropic, then the power required to run the compression?`,
+      image: "",
+      options: [
+        `298.72 kW`,
+        `374.21 kW`,
+        `236.41 kW`,
+        `198.67 kW`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_12.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A smaller power-plant produces 20 kg/s steam at 2 MPa in the boiler. It cools in the condenser with ocean water coming in at 10°C and returned at 17°C so the condenser exit is saturated liquid at 9 kPa, 40°C ( <em> h<sub>f</sub> </em> = 178.4 kJ/kg). If the enthalpy of the steam at the inlet and exit of the turbine are 3792.53 kJ/kg and 2104.12 kJ/kg and the specific volume of the fluid at exit of condenser is 0.001010 m<sup>3</sup> /kg, then the`,
+      image: "",
+      options: [
+        `net power output will be 32.6 MW.`,
+        `net power output will be 33.727 MW.`,
+        `required mass flow rate of ocean water is nearly 4351 kg/s.`,
+        `required mass flow rate of ocean water is nearly 1314 kg/s.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a diesel engine, at the beginning of compression the air is at 300 K and 80 kPa. The maximum temperature and pressure during the cycle are 3000 K and 7 MPa, respectively. Assuming constant specific heats for air at room temperature. The mean effective pressure is _______ MPa.`,
+      image: "",
+      options: [],
+      answer: "1.205",
+      solution: `<img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_16.png"/> <img alt="" src="js/questions/topicwise_test19_part_syllabus_gate_2026_me_ic_engine_power_plant/img_17.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Refrigeration & Air-Conditioning",
   date: "July 15, 2026",
   questions: [
