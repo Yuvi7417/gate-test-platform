@@ -2,7 +2,8 @@ import bs4
 import re
 import json
 
-soup = bs4.BeautifulSoup(open('test.html', encoding='utf-8'), 'html.parser')
+html_content = open('test.html', encoding='utf-8').read().replace('&nbsp;', ' ').replace('\\xa0', ' ')
+soup = bs4.BeautifulSoup(html_content, 'html.parser')
 
 scripts = soup.find_all('script', type=lambda t: t and t.startswith('math/tex'))
 for script in scripts:
@@ -47,7 +48,7 @@ for q in qs_divs:
     options = []
     
     ols = text_div.find_all('ol')
-    for ol in ols:
+    for ol in reversed(ols):
         if not ol.find_parent('pre'):
             lis = ol.find_all('li', recursive=False)
             if len(lis) > 0:
@@ -56,7 +57,26 @@ for q in qs_divs:
                 break
     
     if not options:
-        ps = text_div.find_all('p')
+        grid_div = text_div.find('div', style=lambda s: s and 'grid' in s)
+        if grid_div:
+            cells = grid_div.find_all('div', recursive=False)
+            if len(cells) % 4 == 0 and len(cells) > 0:
+                for r in range(len(cells)//4):
+                    options.append(''.join(str(c) for c in cells[r*4+1:r*4+4]).strip())
+                grid_div.decompose()
+                
+    if not options:
+        flex_col = text_div.find('div', style=lambda s: s and 'flex-direction:column' in s.replace(' ', ''))
+        if flex_col:
+            rows = flex_col.find_all('div', recursive=False)
+            if len(rows) == 4:
+                for row in rows:
+                    cells = row.find_all('div', recursive=False)
+                    options.append(''.join(str(c) for c in cells[1:]).strip())
+                flex_col.decompose()
+
+    if not options:
+        ps = text_div.find_all(['p', 'div'])
         opt_ps = []
         for p in ps:
             t = p.text.strip()
