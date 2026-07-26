@@ -551,24 +551,56 @@ window.filterByType = function() {
 };
 
 function renderTestList(t, filter) {
-  const grid = document.getElementById("testListGrid")
-  const twList = t.schedule.filter((s) => s[0].startsWith("TWT"));
+  const grid = document.getElementById("testListGrid");
+  const twList = t.schedule.filter((s) => (s[0] || "").toUpperCase().startsWith("TWT"));
+  const fltList = t.schedule.filter((s) => {
+    const upper = (s[0] || "").toUpperCase();
+    return upper.startsWith("FST") || upper.startsWith("FLT") || upper.startsWith("FULL TEST");
+  });
+  
   let twSeen = 0;
+  let fltSeen = 0;
+  let swtSeen = 0; // For Subjectwise tests
+
   const items = t.schedule.map((s, i) => {
-    const isTopicwise = s[0].startsWith("TWT");
-    const label = s[0].replace(/^[A-Za-z]+\s*-\s*/, "");
-    const testType = isTopicwise ? "Topicwise" : "Subjectwise";
-    let testNumber, bracket;
-    if (isTopicwise) {
+    const rawName = s[0] || "";
+    const upperName = rawName.toUpperCase();
+    
+    const isTopicwise = upperName.startsWith("TWT");
+    const isFullTest = upperName.startsWith("FST") || upperName.startsWith("FLT") || upperName.startsWith("FULL TEST");
+    
+    // Strip the prefix (e.g. "TWT - ", "FLT - ") to get the bracket label
+    const label = rawName.replace(/^[A-Za-z\s]+-\s*/, "");
+    
+    let testType, testNumber, bracket, duration, defaultQuestions;
+
+    if (isFullTest) {
+      testType = "Full";
+      testNumber = fltList.length - fltSeen;
+      fltSeen++;
+      bracket = label;
+      duration = "180 Mins";
+      defaultQuestions = 65;
+    } else if (isTopicwise) {
+      testType = "Topicwise";
       testNumber = twList.length - twSeen;
-      bracket = label;
       twSeen++;
-    } else {
-      testNumber = t.schedule.length - i;
       bracket = label;
+      duration = "45 Mins";
+      defaultQuestions = 17;
+    } else {
+      // Default to Subjectwise
+      testType = "Subjectwise";
+      testNumber = t.schedule.length - fltList.length - twList.length - swtSeen;
+      swtSeen++;
+      bracket = label;
+      duration = "90 Mins";
+      defaultQuestions = 33;
     }
+
     const yearMatch = t.examTag ? t.examTag.match(/\d{4}/) : null;
     const year = yearMatch ? yearMatch[0] : "2027";
+    
     return {
       name:
         t.code +
@@ -577,8 +609,8 @@ function renderTestList(t, filter) {
         " (" + bracket + ")",
       from: s[1],
       till: formatDate(t.endDate),
-      duration: isTopicwise ? "45 Mins" : "90 Mins",
-      questions: s[2] !== undefined ? s[2] : (isTopicwise ? 17 : 33),
+      duration: duration,
+      questions: s[2] !== undefined ? s[2] : defaultQuestions,
       status: "unattempted",
       score: null,
     };
