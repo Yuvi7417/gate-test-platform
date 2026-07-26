@@ -1,11 +1,10 @@
 import json
 from bs4 import BeautifulSoup
 import re
-
 import requests
 import os
 
-registry_path = 'h:/yuvraj dutt/js/full-test-registry.js'
+registry_path = 'h:/yuvraj dutt/js/full-test-registry.src.js'
 html_path = 'h:/yuvraj dutt/test.html'
 image_dir = 'h:/yuvraj dutt/js/questions/fst-mock-test-1'
 
