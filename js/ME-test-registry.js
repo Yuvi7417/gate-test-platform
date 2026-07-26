@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Theory of Machines-1",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A homogeneous square plate of side L meters and mass m kg is suspended from the mid point of one of the sides as shown in the figure. What is the natural frequency of vibration in rad/s? <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_3.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_4.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_5.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_6.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_7.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For what value of mass, <em>m</em> (in kg) will resonance occur for the system shown below? (Rounded off to nearest integer) <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_15.png"/>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two spiral gears have a normal module of 14 mm and the angle between the shaft axes is 65°. The driver has 18 teeth and a helix angle of 28°. If the velocity ratio is 1 : 2 and the driver and the follower both are left handed, find the centre distance between the shafts.`,
+      image: "",
+      options: [
+        `458.24 mm`,
+        `496.32 mm`,
+        `512.32 mm`,
+        `546.24 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a gear mesh, each gear has 50 teeth and a module of 10 mm. The teeth are of 20° involute profile, and the arc of contact is 2.25 times the circular pitch. The addendum of the gears will be _______ mm. [Rounded off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "13.22",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_21.png"/> <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (Type of gears) with <strong>List-II</strong> (Different usage and drive) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_23.png"/>`,
+      image: "",
+      options: [
+        `P-4, Q-3, R-2, S-1`,
+        `P-4, Q-2, R-3, S-1`,
+        `P-2, Q-1, R-3, S-4`,
+        `P-2, Q-3, R-4, S-1`
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The angular velocity of Gear 2 is 800 rpm in the direction shown in the figure. The angular velocity of Gear 8 is _____ rpm. (Rounded off to the nearest integer) <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_24.png"/>`,
+      image: "",
+      options: [],
+      answer: "56",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_25.png"/> <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A quick return mechanism made out of the slider crank chain as shown in figure, has the 600 mm crank length and the time ratio of cutting to the idle stroke is 3. What will be the distance between the fixed centre? <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_28.png"/>`,
+      image: "",
+      options: [
+        `804.32 mm`,
+        `848.53 mm`,
+        `912.37 mm`,
+        `946.62 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_29.png"/> <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The velocities of the points on a rigid link is`,
+      image: "",
+      options: [
+        `Inversely proportional to the distances from the points to the instantaneous centre.`,
+        `Directly proportional to the distances from the points to the instantaneous centre.`,
+        `Perpendicular to the line joining the point to the instantaneous centre.`,
+        `Parallel to the line joining the point to the instantaneous centre.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The figure below shows the Klein’s construction for slider crank mechanism OCP drawn to full scale. What velocity does CD represent? <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_32.png"/>`,
+      image: "",
+      options: [
+        `Velocity of the crank pin`,
+        `Velocity of the piston`,
+        `Velocity of the piston with respect to crank pin`,
+        `Angular velocity of the connecting rod`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The degree of freedom of the mechanism shown in the figure is <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_1.png"/>`,
+      image: "",
+      options: [
+        `-1`,
+        `0`,
+        `1`,
+        `2`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Find the natural frequency (in rad/s) of the single degree freedom system shown in the figure. The rod AOB of the system is light, straight and stiff. <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_9.png"/>`,
+      image: "",
+      options: [
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_10.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_11.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_12.png"/>`,
+        `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_13.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The crank and the connecting rod of a vertical single cylinder gas engine running at 2000 rpm are 60 mm and 240 mm respectively. The diameter of the piston is 100 mm and the mass of the reciprocating parts is 2 kg. At a point during the power stroke when the piston has moved 20 mm from the dead centre position, the angle made by crank from TDC is 43.5° and the pressure on the piston is 900 kN/m<sup>2</sup> . The net force on the piston is _____ kN (Rounded off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "3.20",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Figure below, shows an epicyclic gear train in which the driving gear A has 25 teeth, the fixed annular gear C has 165 teeth and the ratio of teeth in gears D and E is 21 : 50. If gear A rotates at 800 rpm clockwise, then the speed and direction of rotation of gear E is <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_19.png"/>`,
+      image: "",
+      options: [
+        `1.1 rpm, CW`,
+        `10.5 rpm, CW`,
+        `1.1 rpm, CCW`,
+        `10.5 rpm, CCW`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (Mechanism) with <strong>List-II</strong> (Motion) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_27.png"/>`,
+      image: "",
+      options: [
+        `P-3, Q-2, R-1, S-4`,
+        `P-2, Q-4, R-1, S-3`,
+        `P-3, Q-1, R-4, S-2`,
+        `P-2, Q-3, R-4, S-1`
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A diesel engine of 500 kg mass is mounted on a chassis frame. The static deflection due to weight of the chassis is 2.4 mm. The stroke of the engine is 180 mm and the reciprocating masses of the engine amounts to 20 kg. A dashpot with a damping coefficient of 2.5 N/mm/s is also used to dampen the vibrations. The amplitude of the vibrations at steady state if the driving shaft rotates at 600 rpm is ________ mm. (Rounded off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "41.34",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Considering a vibrating system consists of a mass of 50 kg, a spring with a stiffness of 30 kN/m and a damper. The damping provided is only 20% of the critical value. Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `The damping factor is 0.20.`,
+        `The critical damping coefficient is 2000 N/m/sec.`,
+        `The ratio of two consecutive amplitudes is nearly 3.61.`,
+        `Natural frequency of the damped vibrations is 24 rad/s.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_35.png"/> <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In an offset slider crank mechanism as shown in figure. The input crank angle is 40° and the length of the links O<sub>2</sub> <em>A</em> and <em>AB</em> are 300 mm and 500 mm respectively. If the eccentricity <em>e</em> is 100 mm, then the angle made by connecting rod with positive x-axis in counter clockwise direction (θ<sub>3</sub> ) is _______ degree. (Rounded off to two decimal places) <img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_37.png"/>`,
+      image: "",
+      options: [],
+      answer: "144.15",
+      solution: `<img alt="" src="js/questions/topicwise_test17_part_syllabus_gate_2026_me_theory_of_machines1/img_38.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Theory of Machines-2",
   date: "July 15, 2026",
   questions: [
