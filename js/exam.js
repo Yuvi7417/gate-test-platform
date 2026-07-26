@@ -707,9 +707,12 @@ function openInstructions(testName) {
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
 
   const isTopicwise = (testName || "").includes("Topicwise");
+  const isFullTest = (testName || "").includes("Full Test");
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
-    instrDurationElement.textContent = isTopicwise ? "45 minutes" : "90 minutes";
+    if (isTopicwise) instrDurationElement.textContent = "45 minutes";
+    else if (isFullTest) instrDurationElement.textContent = "180 minutes";
+    else instrDurationElement.textContent = "90 minutes";
   }
 
   history.pushState({ view: "instructions", param: testName }, "", "");
