@@ -28,7 +28,7 @@ registerTest({
 
 registerTest({
   series: "cs-gate-classes",
-  name: "FST - Mock test-1",
+  name: "FLT - Mock test-1",
   date: "November 27, 2026",
   questions: [
     {
