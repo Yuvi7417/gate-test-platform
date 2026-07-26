@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Theory of Machines-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A flywheel with a mass of 3000 kg has a radius of gyration of 1.6 m. The energy stored in the flywheel when its speed increases from 315 rpm to 340 rpm is _____ kJ. (Rounded off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "690",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct for SHM follower motion?`,
+      image: "",
+      options: [
+        `SHM can be used only for moderate speed purpose.`,
+        `The acceleration is zero at the beginning and end of each stroke.`,
+        `The jerk is maximum at the mid of each stroke.`,
+        `Velocity of the follower is maximum at the mid of each stroke.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The rotating system as shown in the figure below has <em>R</em> <sub>1</sub> = <em>R</em> <sub>2</sub> = 60 mm, <em>a</em> = <em>c</em> = 300 mm, <em>b</em> = 600 mm, <em>m</em> <sub>1</sub> = 1 kg and <em>m</em> <sub>2</sub> = 3 kg. If the shaft speed is 150 rev/min, then the bearing reaction at B is _______ N. (Rounding off to nearest integer) <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_4.png"/>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A high speed turbine rotates at an angular velocity of 18000 rpm and the rotor of the turbine has a mass moment of inertia of 25 kg-m2. The turbine is installed at the north pole with its axis horizontal. The gyroscopic couple due to the rotation of the Earth is ______ N.m. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.43",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_6.png"/> <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct in the construction of CAM profiles?`,
+      image: "",
+      options: [
+        `The principle of kinematic inversion is used.`,
+        `The cam is imagined to be stationary.`,
+        `The follower is allowed to rotate in the direction opposite to that of the cam rotation.`,
+        `The follower is allowed to reciprocate in the direction opposite to that of the cam rotation.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b.c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A porter governor has two equal arms, each 200 mm in length, pivoted on the axis of rotation. When the radius of rotation of the balls is 120 mm, the sleeve begins to rise and stops when the radius of rotation reaches 160 mm. What is the lift of the sleeve?`,
+      image: "",
+      options: [
+        `40 mm`,
+        `60 mm`,
+        `80 mm`,
+        `100 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_13.png"/> <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a gyroscope, if the spin speed is doubled and the radius of the gyroscope wheel is halved while keeping the mass constant. What is the effect on the gyroscopic couple assuming no external forces are acting?`,
+      image: "",
+      options: [
+        `The gyroscopic couple is quadrupled`,
+        `The gyroscopic couple is halved`,
+        `The gyroscopic couple is doubled`,
+        `The gyroscopic couple remains the same`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For balancing a single disturbing mass, the minimum number of balance masses required to be introduced in a plane parallel to the plane of rotation of the disturbing mass will be`,
+      image: "",
+      options: [
+        `one`,
+        `two`,
+        `three`,
+        `four`
+      ],
+      answer: "B",
+      solution: `b`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a Hartnell governor, if a spring of lower stiffness is used, then the governor will be`,
+      image: "",
+      options: [
+        `Isochronous`,
+        `more sensitive`,
+        `less sensitive`,
+        `None of the above`
+      ],
+      answer: "B",
+      solution: `If the stiffness is lowered, then the resisting force of spring will decrease and the balls will be moving more away from the spindle axis i.e. the movement of the sleeve for a fractional change of speed get increase, thus increasing its sensitiveness.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A horizontal cross compound stream engine develops 300 kW at 90 rpm. The coefficient of fluctuation of energy as found from the turning moment diagram is to be 0.1 and the fluctuation of speed is to be kept within ±0.5% of the mean speed. If the radius of gyration is 2 m, then the mass of flywheel required is _______ kg. (Rounded off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "5627",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The follower movement in a cam follower mechanism with a translating flat face follower is given by <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_8.png"/> The limit on the contact stress requires that the minimum radius of curvature of the cam profile should not be less than 120 mm anywhere. The minimum permissible base circle radius is _____ mm.`,
+      image: "",
+      options: [],
+      answer: "70",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Each arm of a proell governor is 270 mm long and each rotating ball has a mass of 4 kg. The central load acting on the sleeve is 35 kg. The pivots of all the arms are 50 mm from the axis of rotation. When the sleeve of the governor is in the mid position the extension link of the lower arms are vertical. In this position the radius of path of rotation of the masses is 205 mm, the vertical height of the governor is 200 mm and the governor speed is 190 rpm. The length of the extension links is _______ mm. (Rounded upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "46.12",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a Hartnell governor, the extreme radii of rotation of the balls are 50 mm and 70 mm and the corresponding speeds are 220 rpm and 240 rpm respectively. The mass of each ball is 3 kg. If the lengths of the ball and the sleeve arms are equal, then the initial compression of the spring is`,
+      image: "",
+      options: [
+        `25.32 mm`,
+        `28.67 mm`,
+        `30.02 mm`,
+        `32.96 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_11.png"/> <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The magnitude of swaying couple due to partial balance of the primary unbalancing force in locomotive is`,
+      image: "",
+      options: [
+        `inversely proportional to the reciprocating mass.`,
+        `directly proportional to the square of the distance between the centrelines of the two cylinders.`,
+        `inversely proportional to the distance between the centrelines of two cylinders.`,
+        `directly proportional to the distance between the centrelines of the two cylinders.`
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match the following parts of a CAM to their descriptions: <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_16.png"/>`,
+      image: "",
+      options: [
+        `A-1, B-4, C-3, D-2`,
+        `A-1, B-4, C-2, D-3`,
+        `A-4, B-1, C-3, D-2`,
+        `A-4, B-1, C-2, D-3`
+      ],
+      answer: "A",
+      solution: `a`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rotor is completely balanced when masses of 2 kg and 1.2 kg are added temporarily in planes <em>A</em> and <em>D</em> each at 250 mm radius as shown in the figure. The balanced mass in the plane <em>A</em> is along the <em>x</em> -axis whereas in the plane <em>D</em> , it is at 120° counterclockwise. It is desired that actual balancing is to be done by adding permanent masses in planes <em>B</em> and <em>C</em> , each at 150 mm radius. The magnitude of the mass in plane <em>C</em> is <img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_17.png"/>`,
+      image: "",
+      options: [
+        `2.96 kg`,
+        `3.10 kg`,
+        `3.78 kg`,
+        `4.29 kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A CAM lifts the follower for 120° with SHM followed by a dwell period of 30°. Then the follower lowers down during 150° of the cam rotation with uniform acceleration and deceleration followed by a dwell period. The lift of the follower is 30 mm. If the cam rotates at a uniform speed of 150 rpm, then the maximum velocity and acceleration of the follower during the descent period is`,
+      image: "",
+      options: [
+        `0.432 m/s, 3.6 m/s<sup>2</sup>`,
+        `0.36 m/s, 4.32 m/s<sup>2</sup>`,
+        `0.18 m/s, 2.11 m/s<sup>2</sup>`,
+        `0.21 m/s, 1.8 m/s<sup>2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test18_part_syllabus_gate_2026_me_theory_of_machines2/img_19.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - IC Engine & Power Plant",
   date: "July 15, 2026",
   questions: [
