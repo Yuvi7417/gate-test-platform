@@ -353,18 +353,11 @@ app.get('/api/test/:courseId/:testId', authenticateToken, async (req, res) => {
 app.post('/api/submit-test', authenticateToken, async (req, res) => {
   try {
     const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers } = req.body;
-    const result = new TestResult({
-      userId: req.user._id,
-      testName,
-      score,
-      maxScore,
-      correctCount,
-      wrongCount,
-      unattempted,
-      timeTakenSecs,
-      answers,
-    });
-    await result.save();
+    await TestResult.findOneAndUpdate(
+      { userId: req.user._id, testName },
+      { score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers, date: Date.now() },
+      { upsert: true, new: true }
+    );
     res.json({ success: true, message: 'Test submitted successfully.' });
   } catch (err) {
     console.error("Error submitting test:", err);
