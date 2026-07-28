@@ -49,7 +49,7 @@ registerTest({
         `d`
       ],
       answer: "B",
-      solution: ``
+      solution: `b`
     },
     {
       marks: 1,
