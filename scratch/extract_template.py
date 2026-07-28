@@ -1,8 +1,10 @@
 import bs4
 import re
 import json
+import os
+import urllib.request
 
-html_content = open('test.html', encoding='utf-8').read().replace('&nbsp;', ' ').replace('\\xa0', ' ')
+html_content = open('test.html', encoding='utf-8').read().replace('&nbsp;', ' ').replace('\xa0', ' ')
 soup = bs4.BeautifulSoup(html_content, 'html.parser')
 
 scripts = soup.find_all('script', type=lambda t: t and t.startswith('math/tex'))
@@ -19,9 +21,22 @@ for script in scripts:
         
     script.replace_with(replacement)
 
+img_dir = "js/questions/fst-mock-test-17"
+os.makedirs(img_dir, exist_ok=True)
+
 imgs = soup.select('.res_question_text img')
 for i, img in enumerate(imgs, 1):
-    img['src'] = f"js/questions/fst-mock-test-1/{i}.png"
+    src = img.get('src')
+    if src:
+        try:
+            req = urllib.request.Request(src, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=5) as response:
+                img_data = response.read()
+            with open(f"{img_dir}/{i}.png", "wb") as f:
+                f.write(img_data)
+        except Exception as e:
+            print(f"Failed to download image {i} from {src}: {e}")
+    img['src'] = f"js/questions/fst-mock-test-17/{i}.png"
 
 qs_divs = soup.select('.res_question')
 questions = []
@@ -111,6 +126,7 @@ for q in qs_divs:
                 q_type = "MCQ"
         else:
             q_type = "MCQ"
+            
     if 'Correct Answer:' in ans_text:
         ans_val = ans_text.split('Correct Answer:')[1].strip()
         if q_type == "MSQ":
@@ -135,7 +151,7 @@ for q in qs_divs:
 out = []
 out.append('registerTest({')
 out.append('  series: "cs-gate-classes",')
-out.append('  name: "FST - Mock test-1",')
+out.append('  name: "FST - Mock test-17",')
 out.append('  date: "November 27, 2026",')
 out.append('  questions: [')
 
