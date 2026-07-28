@@ -3,6 +3,244 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Metrology, Engineering Materials and CIM",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 100 mm shaft rotates in a bearing with a tolerance of 0.052 mm for both the shaft and for the bearing. The required allowance is 0.12 mm, and if the bearing bore follows the basic hole standard, then the smallest shaft size will be _______ mm.`,
+      image: "",
+      options: [],
+      answer: "99.828",
+      solution: `<img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What is the correct interpretation of the surface roughness symbol shown? <img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_2.png"/>`,
+      image: "",
+      options: [
+        `The surface has a roughness value of 2.5 μm and the machinery lay is at 0° to the sampling length.`,
+        `The surface has a roughness value of 6 mm, and the machining lay is perpendicular to the surface.`,
+        `The sampling length is 2.5 mm, and the machining lay is perpendicular to the surface.`,
+        `The machining allowance is 6 mm and machining lay is perpendicular to the surface.`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements about a Tool Maker’s microscope are correct?`,
+      image: "",
+      options: [
+        `It uses a shadow image projected through a ground-glass screen for measurements.`,
+        `The table can be rotated to measure angles.`,
+        `It cannot be used to measure pitch diameter of threads.`,
+        `The microscope can be used to determine the thread angle.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `It can be used to the determine the pitch diameter, by using lateral movement of the table.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following grades of tolerance is used for production of gauges and measuring instruments?`,
+      image: "",
+      options: [
+        `IT-01 to IT-4`,
+        `IT-5 to IT-7`,
+        `IT-8 to IT-11`,
+        `IT-12 to IT-14`
+      ],
+      answer: "A",
+      solution: `As IT-01 to IT-4 are the most accurate grades. As IT grade increases the accuracy decreases.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is NOT an element of a CAM system?`,
+      image: "",
+      options: [
+        `CNC techniques`,
+        `Computer Aided inspection`,
+        `Manual testing tools`,
+        `Flexible manufacturing system`
+      ],
+      answer: "C",
+      solution: `Manual testing tools are not the part of CAM system, it includes 1. CNC manufacturing and programming techniques. 2. Flexible manufacturing system. 3. Computer aided inspection system. 4. Computer aided testing techniques.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `During transformation of austenite to pearlite, following steps are involved. 1. Fe<sub>3</sub> C plate full grown, α-Fe nucleated 2. Initiate Fe<sub>3</sub> C nucleus 3. Initiate α-Fe nucleus 4. α-Fe plate full grown, Fe<sub>3</sub> C plates nucleated. The correct sequence of above steps is`,
+      image: "",
+      options: [
+        `3, 4, 1`,
+        `2, 4, 1`,
+        `3, 1, 4`,
+        `2, 1, 4`
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 10 mm diameter Brinell ball produced an indentation of diameter 1.57 mm in a steel alloy when a load of 600 kg is used. The BHN will be _______ (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "308",
+      solution: `<img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In which of the following processes, a steel part is heated to the maximum temperature?`,
+      image: "",
+      options: [
+        `Full annealing`,
+        `Annealing`,
+        `Normalizing`,
+        `Hardening`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the standard wringing procedure for slip gauges, which of the following steps is specifically taken to expel air between the gauges and ensure proper adhesion?`,
+      image: "",
+      options: [
+        `Heating the slip gauges before contact.`,
+        `Applying oil between the gauge faces.`,
+        `Bringing the faces into contact at right angles and then sliding one gauge through 90°.`,
+        `Bringing the faces into contact parallel to each other and then sliding one gauge through 90°.`
+      ],
+      answer: "C",
+      solution: `Wringing is the process of joining two slip gauges together such that they stick firmly due to molecular adhesion, surface tension and vacuum (removal of air) between their ultra-smooth surfaces.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The sampling length is 0.7 mm and the graph is drawn with a vertical magnification of 12000 and a horizontal magnification of 150. The areas above and below the datum line are 150, 100, 160 and 60 mm<sup>2</sup> and 90, 60, 175 and 170 mm<sup>2</sup> , respectively. The C.L.A value of the surface for the given sample will be ____ μm. (Round off upto four decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.7658",
+      solution: `<img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statement(s) about CMM is INCORRECT?`,
+      image: "",
+      options: [
+        `In Gantry type arrangement, arms are hold fixed supports and other two arms are capable of sliding over the support in.`,
+        `Dimensional measurement interface system (DMIS) provides bi-directional communication in CAM.`,
+        `Length measuring accuracy is the absolute value of the difference, between the reference length of gauges, aligned with a machine axis.`,
+        `Tramming is indicated a cylindrical surface of a part is such a manner as to centralise the surface with the spindle of the machine.`
+      ],
+      answer: "D",
+      solution: `d`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A ball of radius <em>r</em> <sub>1</sub> = 10 mm is placed inside the taper hole, as shown in figure, and the height <em>h</em> <sub>1</sub> = 35 mm above the ball is measured by a depth micrometer. A large ball of radius <em>r</em> <sub>2</sub> = 15 mm is then placed in the hole and height h2 = 2 mm above the ball is also measured. The taper angle α of the hole is ______ degrees. <img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_4.png"/>`,
+      image: "",
+      options: [],
+      answer: "20.57",
+      solution: `<img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The fraction of proeutectoid cementite in 1.2% C steel is ______. (Rounded off to three decimal places) <img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_6.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.068",
+      solution: `<img alt="" src="js/questions/topicwise_test15_part_syllabus_gate_2026_me_metrology_engineering_materials_and_cim/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `What is the type of microstructure of 0.4 Wt% C steel at 900°C?`,
+      image: "",
+      options: [
+        `Austenite`,
+        `Pearlite`,
+        `Austenite grains and ferrite on grain boundaries`,
+        `Cementite`
+      ],
+      answer: "A",
+      solution: `The eutectoid composition of steel is 0.8 Wt%C, and the eutectoid temperature is 727 °C, the microstructure is fully austenitic, because it ’s above the separating austenite from ferrite + Austenite for hypoeutectoid steels.`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following are effects of fine austenite grains in steel?`,
+      image: "",
+      options: [
+        `Improved machinability and surface finish.`,
+        `Improved creep strength.`,
+        `Reduced quenching cracks and distortion.`,
+        `Fine grains, have improvement in strength of steel after heat treatment.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `Various physical and mechanical properties of steel depends on the grain size of austenite. If grains are coarse, creep strength will be improved.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Pearlite is transformed into spheroidite by:`,
+      image: "",
+      options: [
+        `Heating the eutectoid steel at a temperature below eutectoid for sufficiently long period.`,
+        `Moderately cooling the eutectoid steel.`,
+        `By fast cooling the eutectoid steel.`,
+        `Heating the eutectoid steel at a temperature above eutectoid for short time period.`
+      ],
+      answer: "A",
+      solution: `Steel with pearlite or bainite microstructure is heated and left at a temperature below the eutectoid point for a sufficiently long period of time (18-24h for 700 °C) will leads to formation of spheroidite, where Fe<sub>3</sub> C phase is formed in the shape of sphere-like-particles embedded in a continuous matrix α-ferrite.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following statements is NOT correct for normalizing?`,
+      image: "",
+      options: [
+        `Normalizing temperatures are lower than annealing.`,
+        `Normalizing can be done on cast products to eliminate dendritic structure.`,
+        `Normalizing removes internal stresses developed during forging.`,
+        `Normalizing is done to improve mechanical properties of steel by grain refinement.`
+      ],
+      answer: "A",
+      solution: `Normalizing is done on steels for grain refinement and improvement in mechanical properties. •Normalizing temperatures are higher than annealing and hardening temperature of steels. •Steels are held at normalizing temperature for a short duration and then cooled in still air.`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Engineering Mechanics",
   date: "July 16, 2026",
   questions: [
