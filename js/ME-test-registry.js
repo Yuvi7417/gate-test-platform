@@ -3,6 +3,239 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Manufacturing Engineering-2",
+  date: "July 15, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The rake angle in a twist drill`,
+      image: "",
+      options: [
+        `varies from minimum near the dead centre to a maximum at periphery.`,
+        `is maximum at dead centre and zero at the periphery.`,
+        `is constant at every point of cutting edge.`,
+        `is function of the size of the chisel edge.`
+      ],
+      answer: "A",
+      solution: `Rake angle of a twist drill is the angle of the flute in relation to the work. The rake angle varies from minimum near the dead centre to a maximum at the periphery.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (Unconventional Machining Process) with <strong>List-II</strong> (Applications) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong> (G-codes) with <strong>List-II</strong> (Description) and select the correct answer using the codes given below the lists: <img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_3.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a CNC program block, N0020 G03 G91 X20 Z20..., G03 and G91 refers to`,
+      image: "",
+      options: [
+        `circular interpolation in CW direction and absolute dimension`,
+        `circular interpolation in CCW direction and absolute dimension`,
+        `circular interpolation in CW direction and incremental dimension`,
+        `circular interpolation in CCW direction and incremental dimension`
+      ],
+      answer: "D",
+      solution: `A G-code determines the type of operation performed on the machine. G codes select the type of motion, speed or feed mode, etc. The codes G03 and G91 refers respectively for the circular interpolation in CCW direction and incremental dimension.`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `During ultrasonic machining, the metal removal rate is affected by`,
+      image: "",
+      options: [
+        `Slurry concentration`,
+        `Rubbing action between tool and workpiece`,
+        `High frequency of sound waves`,
+        `Low frequency of eddy current`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A through hole of 10 mm diameter is made in a 20 mm thick steel plate using EDM process. The dielectric used has capacitance of 500 μF, the supply voltage and discharge voltage is 200 V and 100 V respectively. If the spark gap is 0.02 mm, then the energy per spark is _____ J.`,
+      image: "",
+      options: [],
+      answer: "2.5",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A steel specimen requires 10 W/mm<sup>3</sup> /s of specific power for turning. The maximum power available at a machine spindle is 10 kW. If cutting speed is 30 m/min and feed rate is 0.1 mm/rev, then the depth of cut at maximum material removal rate is _____ mm.`,
+      image: "",
+      options: [],
+      answer: "20",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_6.png"/> <img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the machining of aluminium under orthogonal cutting conditions, the tangential cutting force is 1500 N and feed thrust force is 1000 N, chip-thickness ratio is 0.5 and rake angle of the tool is 20°. Then shear force on shear plane is ______ N (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "812",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct regarding electrochemical grinding?`,
+      image: "",
+      options: [
+        `A copper bonded alumina grinding wheel acts as the cathode and the workpiece as the anode.`,
+        `A rubber bonded alumina grinding wheel acts as the cathode and the workpiece as the anode.`,
+        `Metal removal takes place due to the pressure applied by the grinding wheel only.`,
+        `Metal removal takes place due to electrolysis.`
+      ],
+      answer: ["A", "D"],
+      solution: `In electrochemical grinding, a copper bonded alumina grinding wheel acts as the cathode and the workpiece as the anode. The majority of metal removal in ECG is by electrolytic action and typically less than 5% of metal is removed by the abrasive action of the wheel.`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A DC servomotor which is coupled to a leadcrew and drives the table of a CNC machine tool. A digital encoder, mounted at the end of the screw, emits 500 pulses per revolution (number of start = 2) and the motor rotates and 600 rpm (1 : 4 gear ratio). If the pitch is 5 mm per revolution, the table speed and frequency of pulses transmitted by the encoder, respectively, are`,
+      image: "",
+      options: [
+        `1.5 m/min, 300 Hz`,
+        `3 m/min, 5000 Hz`,
+        `1.5 m/min, 5000 Hz`,
+        `3 m/min, 3000 Hz`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a metal machining process, following information is given, Tool change time = 5 min Tool regrind time = 4 min Machine running cost = Rs. 10 per hour Tool depreciation cost per regrind = 60 paise Taylor tool life constants, <em>n</em> = 0.3, <em>c</em> = 150 The optimum cutting speed for minimum cost is`,
+      image: "",
+      options: [
+        `62.4 m/min`,
+        `54.4 m/min`,
+        `52.7 m/min`,
+        `46.8 m/min`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an ECM process, iron is being machined under specific conditions. The material removal rate is 2 cm<sup>3</sup> /min, atomic weight of iron is 56, the valency at which dissolution occurs is 2. The density of iron is 7.8 g/cm<sup>3</sup> . The amount of current required for this process is [Take Faraday’s constant as 1609 A-min]`,
+      image: "",
+      options: [
+        `642.88A`,
+        `896.44A`,
+        `996.67A`,
+        `589.98A`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cubical part is to be manufactured using stereolithography. The part has side of 60 mm. The layer thickness is 0.4 mm. The laser beam with a diameter of 0.2 mm, scans across the photopolymer surface at a speed of 30 cm/s. Additionally 5 seconds are required per layer to lower the built platform. Determine the total time required to built the part.`,
+      image: "",
+      options: [
+        `130.78 minutes`,
+        `140.50 minutes`,
+        `156.58 minutes`,
+        `162.50 minutes`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `During an orthogonal cutting operation, the thickness of the chip formed after the cut is measured to be 0.3 mm, and the chip thickness ratio is found to be 0.5. The width of the cut is maintained at 6.35 mm, and the cutting speed of tool relative to the workpiece is 2 m/sec. The cutting tool used in the operation has a rake angle of 20°. If the cutting force is 567 N and thrust force is 227 N. Then the shear stress along the shear plane is ______ N/mm<sup>2</sup> . [Round off to one decimal places]`,
+      image: "",
+      options: [],
+      answer: "197.4",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A steel bar of 50 mm diameter was turned at 280 rpm and tool failure occurred after 10 minutes. When the speed was reduced to 230 rpm, the tool failed after 60 minutes of cutting. The cutting speed required to achieve a tool life of 30 minutes is _____ rpm. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "248",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_14.png"/> <img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider a plate of size 300 mm × 100 mm which is to be machined using a shaper machine. The cutting speed is 15 m/min, and the return speed is 30 m/min. The tool clearances at the end of both the cutting stroke and the return stroke is 20 mm each. The distance moved by the tool in width direction on either side of the plate is 5 mm. If feed per cycle is 1 mm, the time required to machine the plate will be ____ minutes.`,
+      image: "",
+      options: [],
+      answer: "3.74",
+      solution: `<img alt="" src="js/questions/topicwise_test14_part_syllabus_gate_2026_me_manufacturing_engineering2/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct about Plasma Arc Machining (PAM)?`,
+      image: "",
+      options: [
+        `In PAM, the metal is removed by melting and vapourization.`,
+        `Plasma can produce very high temperature.`,
+        `Plasma arc cutting is not used for electrically conductive metals.`,
+        `Wider kerf is produced by plasma arc cutting.`
+      ],
+      answer: ["A", "B"],
+      solution: `In plasma arc machining, the gases are ionized by placing an arc across the path of the gas flow. The gas molecules get dissociated causing large amounts of thermal energy to be liberated. This generates temperature of the order of 16500 °C. Which are then utilized in removing metal by melting and vapourization. It is used only for electrically conductive metals. This process is fast, the kerf width is small and the surface finish is good.`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Metrology, Engineering Materials and CIM",
   date: "July 15, 2026",
   questions: [
