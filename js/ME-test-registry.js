@@ -3,6 +3,15900 @@
 // =========================================================================
 registerTest({
   series: "me-gate-pyq",
+  name: "TWT - Engineering Mathematics-1",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential equation, <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_12.png"/>is<br/>equal to ______.`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_13.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>M</em><br/>be a 3 × 3 invertible matrix with real entries and let <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_21.png"/><br/>denote the 3 × 3 identity matrix. If M<sup>–1</sup><br/>= adj (adj <em>M</em><br/>), then which of the following statement is/are always TRUE?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_22.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_23.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_24.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_25.png"/>`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If A is a square matrix of order three with its characteristic equation:<br/><img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_27.png"/>then<br/>its determinant is`,
+      image: "",
+      options: [],
+      answer: "-2",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The work done by the conservative vector field <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_29.png"/><br/>along any smooth curve <em>C</em><br/>joining the point A(–1, 3, 9) to B(1, 6, –4) is`,
+      image: "",
+      options: [
+        `3`,
+        `4`,
+        `6`,
+        `12`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of solutions of the system of equations: <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_31.png"/><br/>and <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_32.png"/>is`,
+      image: "",
+      options: [
+        `2`,
+        `1`,
+        `0`,
+        `Infinite`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_33.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of values of ‘c’ with reference to Lagrange’s mean value theorem for the<br/>function <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_35.png"/>is`,
+      image: "",
+      options: [
+        `Only one`,
+        `At least one but finite`,
+        `Infinite`,
+        `Zero`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function, <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_49.png"/><br/>has a local maximum value at <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_50.png"/>equals<br/>to`,
+      image: "",
+      options: [
+        `-2`,
+        `-1`,
+        `3`,
+        `4`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The determinant of the given matrix is ____________.<br/><br/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_55.png"/>`,
+      image: "",
+      options: [],
+      answer: "12",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The Newton-Raphson iterative formula for finding <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_57.png"/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_58.png"/><br/><br/><img absmiddle="" align="align="/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_59.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_60.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_61.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_62.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following functions are continuous on (0, π)?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_1.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_2.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_4.png"/>`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_5.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_7.png"/>`,
+      image: "",
+      options: [
+        `2`,
+        `-2`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_9.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The area bounded by the curve x<sup>2</sup><br/>= 4y and the straight line x = 4y – 2 is _____ unit<sup>2</sup><br/>. (Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.125",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_15.png"/><br/>is orthogonal, then the value of <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_16.png"/>is`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_18.png"/><br/>be the identity matrix of order 3. If <em>Q</em><br/>= [<br/><em><br/>q<sub>ij</sub><br/></em><br/>] is a matrix, such that<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_19.png"/>equals`,
+      image: "",
+      options: [
+        `52`,
+        `103`,
+        `201`,
+        `205`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The eigen vectors of matrix <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_37.png"/>is/are`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_41.png"/>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_42.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_43.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_45.png"/><br/>be continuous in [0, ∞), then the most suitable values of a and b are:`,
+      image: "",
+      options: [
+        `<em>a</em><br/>= –1 and <em>b</em><br/>= 1`,
+        `<img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_46.png"/>`,
+        `<em>a</em><br/>= 1 and <em>b</em><br/>= –1`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_47.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The directional derivative of the function <img align="absmiddle" alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_52.png"/><br/>at the point <em>A</em><br/>(1, 2, 3) in the direction of the line <em>AB</em><br/>where <em>B</em><br/>is the point (5, 0, 4) is ______. (Correct to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.61",
+      solution: `<img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_53.png"/><img alt="" src="js/questions/topicwise_test9_part_syllabus_gate_2026_me_engineering_mathematics1/img_54.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Strength of Materials",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A solid circular bar is subjected to pure torsion. Which of the following measures will<br/>reduce the maximum torsional deformation in the bar?`,
+      image: "",
+      options: [
+        `Increase the length of the bar.`,
+        `Increase the twisting moment.`,
+        `Increase the diameter of the bar.`,
+        `Select a material with lower Young's modulus.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thin tyre of steel is to be mounted onto a rigid wheel of 2 m diameter, using an<br/>interference fit after fitting the tyre experience hoop stress of 120 MPa. Assuming<br/>elastic behaviour and taking the modulus of elasticity of steel as 200 GPa, the internal<br/>diameter of the tyre is ______ m.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.99",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three identical pin-connected bars support a load <em>P</em><br/>as shown in figure. All the bars are of the same area of cross-section and same length.<br/>Neglect the possibility of lateral buckling of the bar. The vertical displacement of the<br/>point where the load is applied will be<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_3.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_4.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_5.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_6.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_7.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If diameter of a long column is reduced by 30%, the percentage reduction in Euler<br/>buckling load is`,
+      image: "",
+      options: [
+        `76%`,
+        `59%`,
+        `54%`,
+        `24%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `When a homogeneous isotropic material is subjected to a state of triaxial stress,<br/>the strain in each direction is influenced by the strains produced by all the<br/>stresses.`,
+        `Dilatation or volumetric strain, is caused only by normal strain, not shear strain.`,
+        `the bulk modulus is measure of the stiffness of a volume of material`,
+        `None of them`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `At a point in a material, the resultant stress on a plane <em>BC</em><br/>is 240 MPa tensile and is inclined at 30° to the normal to the plane as shown in figure.<br/>On a plane AB perpendicular to plane BC, the normal component of stress is 180 MPa. The<br/>principal stresses at the point are<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_21.png"/>`,
+      image: "",
+      options: [
+        `σ<sub>1</sub><br/>= 248.56 MPa, σ<sub>2</sub><br/>= 45.21 MPa`,
+        `σ<sub>1</sub><br/>= –248.56 MPa, σ<sub>2</sub><br/>= 45.21 MPa`,
+        `σ<sub>1</sub><br/>= –314.735 MPa, σ<sub>2</sub><br/>= –73.115 MPa`,
+        `σ<sub>1</sub><br/>= 314.735 MPa, σ<sub>2</sub><br/>= 73.115 MPa`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Determine the slenderness ratio and the Euler buckling load of a 0.5 m plastic bar (5 cm<br/>× 1 cm) if it has pinned ends. Use <em>E</em><br/>= 15 GPa.`,
+      image: "",
+      options: [
+        `130, 3.5 kN`,
+        `173, 2.5 kN`,
+        `153, 3.0 kN`,
+        `185, 1.5 kN`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cantilever beam of length 2 m and diameter 10 cm is loaded with 10 kN force at the<br/>free end.<br/>If the Young’s modulus is equal to 150 GPa, then the radius of curvature<br/>at the mid span of the beam is ____ m. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "73.63",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thin cylinder of 200 mm inside diameter is 8 mm thick. The ends of the cylinder are<br/>closed by rigid plates and then it is filled with water under pressure. If an external<br/>axial pull of 80 kN is applied to the ends, the water pressure falls by 0.15 MPa, then<br/>longitudinal stress developed in<br/>the cylinder will be _______ MPa. [Correct upto<br/>three decimal places]`,
+      image: "",
+      options: [],
+      answer: "14.986",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_40.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 1 m long shaft with a diameter of 80 mm carries a flywheel weighing 5 kN at its midway.<br/>The shaft transmit 40 kW at a speed of 360 rpm. The maximum shear stress at the ends of<br/>vertical diameter in a plane near the flywheel is`,
+      image: "",
+      options: [
+        `12.41 N/mm<sup>2</sup>`,
+        `16.32 N/mm<sup>2</sup>`,
+        `21.42 N/mm<sup>2</sup>`,
+        `24.77 N/mm<sup>2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A solid round bar 4 m long and 10 cm in diameter is used as a column with both end<br/>hinged. If the ends condition is changed to both ends fixed, then (%) change in Euler’s<br/>crippling load is _______ [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "300",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A simply supported beam as shown in figure of length 5 m carries concentrated loads of<br/>20 kN at a distance of 1 m from each ends. If <em>EI</em><br/>= 2 × 10<sup>4</sup><br/>kNm<sup>2</sup><br/>, then<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_60.png"/>`,
+      image: "",
+      options: [
+        `Section CD is under pure bending.`,
+        `Maximum deflection is 2.958 mm downwards.`,
+        `Maximum slope is at point E.`,
+        `Top fibre of beam will be in compression.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_61.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_62.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A flat ribbon of spring steel 4 mm wide and 1 mm thick is wounded around a cylinder of<br/>80 cm in diameter, the energy stored in bending per metre length of the ribbon is<br/>_______ Nmm.<br/><br/>(Correct upto two decimal places)<br/><br/>[Take <em>E</em><br/>= 200 GPa]`,
+      image: "",
+      options: [],
+      answer: "208.32",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is the correct representation of bending moment for the given<br/>loading?<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_69.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_72.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_73.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_74.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A beam of span <em>L</em><br/>, simply supported at the ends is loaded with distributed load of intensity zero at the<br/>ends and <img align="absmiddle" alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_75.png"/>per<br/>unit length at the centre, then maximum bending moment will be<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_76.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_77.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_78.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_79.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_80.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_81.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_82.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A hollow circular cylinder and a solid circular cylinder are used as a cantilever beam<br/>and are subjected to the same bending moment <em>M</em><br/>at the end of cantilever. Which of the following statement is/are correct?`,
+      image: "",
+      options: [
+        `For the same outer diameter, the solid cylinder is stronger in bending than the<br/>hollow cylinder.`,
+        `Bending stress will constant throughout the inner surface of the hollow cylinder.`,
+        `The maximum bending stress occurs at the fixed end in a cantilever beam.`,
+        `For the same cross-sectional area, a hollow cylinder is more efficient in resisting<br/>bending than a solid cylinder.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_83.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid horizontal bar AB hinged at A is supported by 1 m long steel rod and 2 m long<br/>bronze rod, both rigidly fixed at the upper ends. A load of 50 kN is applied at point 4<br/>m from the hinge point A. The areas of cross-section of the steel and bronze rods are<br/>800 mm<sup>2</sup><br/>and 600 mm<sup>2</sup><br/>,<br/><br/>respectively, then the reaction at point A is<br/><br/>[Take,<br/><em><br/>E<sub>s</sub><br/></em><br/>= 200 GPa and<br/><em><br/>E<sub>b</sub><br/></em><br/>= 80 GPa]<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_9.png"/>`,
+      image: "",
+      options: [
+        `46.26 kN upward`,
+        `46.27 kN downward`,
+        `73.34 kN upward`,
+        `73.34 kN downward`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A steel tube of 40 mm outer diameter and 35 mm inner diameter encloses a gun metal rod<br/>of 25 mm diameter. The assembly is rigidly joined at each end. At a temperature of 30°C<br/>there is no longitudinal stress in either material. If the if the temperature of<br/>assembly is raised to 200°C, and the coefficient of thermal expansion of steel is 10 ×<br/>10<sup>–6</sup><br/>/°C, coefficient of thermal expansion of gun metal is 20 × 10<sup>–6</sup><br/>/°C, 200 GPa, modulus of elasticity of gun metal is 90 GPa, then the stress induced in<br/>the gun metal is _____ MPa. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "-87.428",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid block AB weighing 200 kN is supported by three rods symmetrically as shown in<br/>figure.<br/><br/>Before attaching the weight, the lower ends of the rods are set at the same level. The<br/>areas of cross-section of the steel and copper rods are 1000 mm<sup>2</sup><br/>and 2000 mm<sup>2</sup><br/>respectively.<br/><br/>Given :<br/><em><br/>E<sub>c</sub><br/></em><br/>= 90 GPa; α<sub>c</sub><br/>= 18 × 10<sup>–6</sup><br/>/°C;<br/><em><br/>E<sub>s</sub><br/></em><br/>= 200 GPa; α<sub>s</sub><br/>= 11 × 10<sup>–6</sup><br/>/°C.<br/>If the temperature is raised by 20°C, then stress in copper rod is<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_12.png"/>`,
+      image: "",
+      options: [
+        `4.5 N/mm<sup>2</sup><br/>tensile`,
+        `4.5 N/mm<sup>2</sup><br/>compressive`,
+        `8.3 N/mm<sup>2</sup><br/>tensile`,
+        `8.3 N/mm<sup>2</sup><br/>compressive`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_13.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Three wires of the same material and cross-section support a rigid bar which further<br/>supports a weight of 10 kN. The length of the wires is 4 m, 8 m and 10 m as shown in<br/>figure.<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_15.png"/><br/>Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `Load carried by wire 1 is 2.307 kN`,
+        `Load carried by wire 2 is 2.051 kN`,
+        `Load carried by wire 3 is 2.307 kN`,
+        `Load carried by wire 1 is 5.641 kN`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_16.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A square steel bar of dimension 40 mm × 40 mm × 200 mm is subjected to an axial load of<br/>500 kN.<br/><br/>If the one-third of the lateral strain is prevented by applying uniform pressure on the<br/>rectangular surfaces, then the decrease in length of the bar will be ____ mm. [Take μ =<br/>0.3 and <em>E</em><br/>= 200 GPa]<br/>(Correct up to three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.286",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two pieces of wood of section 60 mm × 20 mm are joined together along a plane inclined at<br/>60° to the x-axis. If the strength of the joint is 10 MPa in tension and 5 MPa in shear,<br/>the maximum force which the member can sustain is _______ kN. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "13.856",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid beam <em>AB</em><br/>of length 2L is hinged at <em>A</em><br/>and supported by linear elastic springs (having stiffness 2<em>K</em><br/>and <em>K</em><br/>) at point (1) and (2) and an inclined load acts at mid point between (1) and (2) as<br/>shown. The force in spring (1) and (2) is<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_24.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_25.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_27.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_28.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_29.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A short column of rectangular section 200 mm × 150 mm carries a load of 200 kN. The load<br/>point is applied at point <em>P</em><br/>, as shown in figure.<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_32.png"/>`,
+      image: "",
+      options: [
+        `Maximum compressive stress is 9.334 MPa at point <em>C</em><br/>.`,
+        `Maximum compressive stress is 13.3367 MPa at point <em>C</em><br/>.`,
+        `There is no tensile stress developed in the column.`,
+        `Point A is under tensile stress of magnitude 2.667 MPa.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The load <em>F</em><br/>is applied at the end B of the curved rod AB. The rod has diameter <em>d</em><br/>and modulus of elasticity <em>E</em><br/>. Considering only bending strain energy, determine the vertical displacement of end<br/><em>B</em><br/>.<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_34.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_37.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_38.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the beam shown in the given figure:<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_42.png"/><br/>If the maximum positive bending moment is equal to the maximum negative bending<br/>moment, then the value of <em>L</em><br/><sub>1</sub><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_45.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_46.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_47.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The state of strain at a point has components of ∈<sub>x</sub><br/>= 200 × (10<sup>–6</sup><br/>), ∈<sub>y</sub><br/>= – 300 × (10<sup>–6</sup><br/>), and <img align="absmiddle" alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_49.png"/><br/>= 400 × (10<sup>–6</sup><br/>).<br/><br/>The magnitude of area of the largest Mohr circle for the given state of strain condition<br/>will be<br/><br/>______ × 10<sup>–6</sup><br/>(Correct up three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.322",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_50.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A hollow shaft is subjected to a torque of 40 kNm and a bending moment of 30 kNm. The<br/>internal diameter of shaft is 50% of the external diameter. If the maximum shear stress<br/>is not exceed 80 MPa, then internal diameter of the shaft is ____ mm. [Correct upto two<br/>decimal places]`,
+      image: "",
+      options: [],
+      answer: "75.15",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A steel shaft ABCD having modulus of rigidity is 84 GPa and a total length of 6 m<br/>consists of three lengths having different sections as shown in figure. If the angle of<br/>twist is same for each section, and the maximum shear stress in hollow section is<br/>limited to 60 MPa, then the angle of twist of the hollow section is<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_53.png"/>`,
+      image: "",
+      options: [
+        `2.5°`,
+        `4.6°`,
+        `1.76°`,
+        `6.2°`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Due to an axial load of 22 kN, a 45-mm-wide × 15-mm-thick polyimide polymer bar<br/>elongates 3.0 mm while the bar width contracts 0.25 mm. The bar is 200 mm long. At the<br/>22-kN load, the stress in the polymer bar is less than its proportional limit. Then the<br/>value of Poisson’s ratio is given by<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.37",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_55.png"/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_56.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `If a beam has two axes of symmetry even then shear centre does not coincide with the<br/>centroid.`,
+        `For a section having one axis of symmetry, the shear centre does not coincide with<br/>the centroid but lies on the axis of symmetry.`,
+        `If a load passes through the shear centre than there will be only bending in the<br/>cross-section and no twisting.`,
+        `None of these`
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A steel circular bar has three segments as shown in figure, the total elongation of the<br/>bar is<br/><br/>[Take <em>E</em><br/>= 200 GPa]<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_58.png"/>`,
+      image: "",
+      options: [
+        `0.521 mm`,
+        `0.271 mm`,
+        `0.899 mm`,
+        `0.756 mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_59.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The compound beam segments meet in the center using a smooth contact (roller). What will<br/>be the maximum bending moment at the fixed support at B when the load P is applied?<br/>Assume EI is constant.<br/><br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_64.png"/>`,
+      image: "",
+      options: [
+        `<em>P</em><br/>L`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_65.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_66.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_67.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test1_part_syllabus_gate_2026_me_strength_of_materials/img_68.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - IC Engine, Power Plant, Refrigeration &Air-C",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In an engine working on diesel cycle, the inlet pressure is 1 bar. The pressure at the<br/>end of isentropic compression is 32 bar. The ratio of expansion is 6. The air standard<br/>efficiency of the cycle is ______ %. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "56.62",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A three litre spark ignition V-6 engine operates on a four stroke cycle at 3000 rpm. If<br/>the engine is square, then the average speed of the piston is`,
+      image: "",
+      options: [
+        `660 m/s`,
+        `660 cm/s`,
+        `860 m/s`,
+        `860 cm/s`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The bore and stroke of a four cylinder four stroke engine are 90 mm and 100 mm<br/>respectively, the torque measured is 120 N. The brake mean effective pressure of the<br/>engine is`,
+      image: "",
+      options: [
+        `4.69 bar`,
+        `5.93 bar`,
+        `6.12 bar`,
+        `7.28 bar`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An engine is required to develop 100 kW, the mechanical efficiency of the engine is 86%<br/>and the engine uses 55 kg/hr of fuel. Due to improvement in the design and operating<br/>conditions, there is reduction in engine friction to the extent of 4.8 kW. If the<br/>indicated thermal efficiency remains the same, then the saving in fuel is _____ kg/h<br/>[Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.27",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A single cylinder, four stroke cycle oil engine is fitted with a rope brake. The<br/>diameter of the brake wheel is 500 mm and the rope diameter is 25 mm. The dead load on<br/>the brake is 250 N and the spring balance reads 35 N. If the engine runs at 500 rpm, the<br/>brake power of the engine<br/>will be _______ kW. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.96",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single stage impulse turbine has a rotor diameter of 3 m and operating at a speed of<br/>2500 rpm.<br/>If the nozzle angle is 22.5°, then the optimum velocity of the steam for<br/>maximum efficiency is`,
+      image: "",
+      options: [
+        `708.42 m/s`,
+        `850.11 m/s`,
+        `902.19 m/s`,
+        `959.23 m/s`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Atmospheric air at a D.B.T. of 18°C enters a heating coil whose surface temperature is<br/>maintained at 45°C. The air leaves the coil at 30°C. The by pass factor of the heating<br/>coil is ______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.56",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A sample of moist air at standard atmospheric pressure 101.325 kPa and 26°C has a partial<br/>pressure of water vapour equal to 1.344 kPa. If the saturation pressure of water vapour<br/>at 26°C is 3.36 kPa, then the humidity ratio and the relative humidity of this moist air<br/>are`,
+      image: "",
+      options: [
+        `8.36 × 10<sup>–3</sup><br/>kg/kg.d.a. and 40%`,
+        `4.36 × 10<sup>–3</sup><br/>kg/kg.d.a. and 60%`,
+        `8.36 × 10<sup>–3</sup><br/>kg/kg.d.a. and 60%`,
+        `4.36 × 10<sup>–3</sup><br/>kg/kg.d.a. and 40%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_14.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An axial flow compressor having eight stages and with 50% reaction design compresses air<br/>in the pressure ratio of 4 : 1. If the air enters the compressor at 25°C, then the work<br/>done by the compressor is ______ kJ/kg. [Correct upto two decimal places]<br/><br/>[Take γ = 1.4 and<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK, (η<sub>isen</sub><br/>)<sub>comp</sub><br/>= 85%]`,
+      image: "",
+      options: [],
+      answer: "171.24",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The process in a hot water spray washer maintained at a temperature of 50°C through<br/>which unsaturated air at 10°C DBT and 50% RH passes, is`,
+      image: "",
+      options: [
+        `Sensible heating`,
+        `Humidification`,
+        `Heating and humidification`,
+        `Heating and dehumidification`
+      ],
+      answer: "C",
+      solution: `c`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following factors increase detonation in the SI engine?`,
+      image: "",
+      options: [
+        `Increase spark advance`,
+        `Increase speed`,
+        `Increased air fuel ratio beyond stoichiometric strength`,
+        `Increased compression ratio`
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 4-row velocity compounded steam turbine develops a total power of 8000 kW. The<br/>power developed by the last row will be`,
+      image: "",
+      options: [
+        `400 kW`,
+        `500 kW`,
+        `800 kW`,
+        `1000 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_27.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The inside design conditions for a conditioned space are 20.1°C DBT and 15.2°C WBT. The<br/>air temperature increases 10.6°C as it passes through the conditioned space. The<br/>apparatus dew point is 11.9°C. If the heat transfer rate is 456 kW, then the volumetric<br/>flow rate of the air passing through the space is _____ m<sup>3</sup><br/>/s [Correct upto two decimal places]<br/><br/>[Take, ρ<sub>air</sub><br/>= 1.2 kg/m<sup>3</sup><br/>and (<br/><em><br/>c<sub>p</sub><br/></em><br/>)<sub>air</sub><br/>= 1.005 kJ/kgK]`,
+      image: "",
+      options: [],
+      answer: "39.80",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A power plant operating an ideal rankine cycle has efficiency of 30%. If the mean<br/>temperature of heat addition is 800 K and entropy change in the condenser is 1.5 kJ/kgK,<br/>then the specific steam consumption will be`,
+      image: "",
+      options: [
+        `3 kg/kW-hr`,
+        `10 kg/kW-hr`,
+        `5 kg/kW-hr`,
+        `6 kg/kW-hr`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is chemical formula for refrigerant R114?`,
+      image: "",
+      options: [
+        `C<sub>2</sub><br/>F<sub>3</sub><br/>Cl<sub>3</sub>`,
+        `C<sub>2</sub><br/>F<sub>4</sub><br/>Cl<sub>2</sub>`,
+        `C<sub>2</sub><br/>H<sub>4</sub><br/>F<sub>2</sub>`,
+        `C<sub>2</sub><br/>H<sub>5</sub><br/>C<sub>l</sub>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_35.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `Internal work output increases with pressure ratio for fixed value of compression<br/>ratio and ratio of specific heats in Otto cycle.`,
+        `In diesel cycle, cutoff ratio is kept minimum for maximum output.`,
+        `For same compression ratio and heat rejection η<sub>otto</sub><br/>> η<sub>diesel</sub><br/>, because heat supplied to diesel cycle is more as compared to heat supplied to otto<br/>cycle.`,
+        `For same maximum pressure and heat input η<sub>diesel</sub><br/>> η<sub>otto</sub><br/>, because heat rejection by otto cycle is more as compared to heat rejected by<br/>diesel cycle.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The mean effective pressure of a diesel cycle is 7 bar, the compression ratio is 12 and<br/>the initial pressure is 1 bar. The cut off ratio is nearly`,
+      image: "",
+      options: [
+        `2.22`,
+        `3.22`,
+        `4.22`,
+        `5.22`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A four-cylinder, four stroke petrol engine is to develop 40 kW at 40 rev/s, when it is<br/>designed for a volumetric compression ratio of 10.0 to 1. The ambient air conditions are<br/>1 bar and 18°C, and the calorific value of the fuel is 44 MJ/kg. If the indicated<br/>overall efficiency is 50% of the<br/><br/>corresponding air-standard Otto cycle, and the mechanical efficiency is 90%, then the<br/>specific fuel consumption _________ g/MJ of brake work. The specific heat capacity ratio<br/>for air is 1.4.<br/>(Correct upto one decimal place).`,
+      image: "",
+      options: [],
+      answer: "83.9",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_3.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following are the most widely accepted causes for hydrocarbon emissions in<br/>exhaust gases of spark ignition engine?`,
+      image: "",
+      options: [
+        `Flame quenching at the combustion chamber walls, leaving a layer of unburned fuel<br/>air mixture adjacent to the walls.`,
+        `Crevices in the combustion chamber, small volumes with narrow entrances, which are<br/>filled with the unburned mixture during compression and remains unburned after flame<br/>passages.`,
+        `The oil film and deposits on the cylinder walls absorbs fuel during intake and<br/>compression, and the fuel vapour is desorbed into the cylinder during expansion and<br/>exhaust.`,
+        `Incomplete combustion, either partial burning or complete misfire, occurring when<br/>the gas combustion quality is poor, e.g. during engine transients when air-fuel,<br/>exhaust gas recirculation, and spark timing may not be adequately controlled.`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `(a,b,c,d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A six cylinder, four stroke gas engine with a stroke volume of 1.75 litres develops 26.25<br/>kW at 504 rpm. The m.e.p. is 6 bar. The average number of times each cylinder misfire in<br/>one minute is ______. [Round off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A single stage reciprocating compressor takes 1 m<sup>3</sup><br/>of air per minute at 1.013 bar and 15°C and delivers it at 7 bar. Assuming that the law<br/>of compression is PV1.35 = C and the clearance is negligible, the indicated power is`,
+      image: "",
+      options: [
+        `3.24 kW`,
+        `4.24 kW`,
+        `5.24 kW`,
+        `6.24 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_10.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A mixture of dry air and water vapour is at a temperature of 22°C under a total pressure<br/>of 730 mm Hg. The dew point temperature is 15°C. The enthalpy of air per kg of dry air<br/>is [Take partial pressure of water vapour at 15°C = 0.017 bar and Saturation pressure of<br/>water vapour at 22°C = 0.0264 bar]`,
+      image: "",
+      options: [
+        `44.84 kJ/kg of dry air`,
+        `46.93 kJ/kg of dry air`,
+        `50.06 kJ/kg of dry air`,
+        `52.84 kJ/kg of dry air`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gas turbine operates on a pressure ratio of 6. The inlet air temperature and pressure<br/>to the compressor is 295 K and 1 bar, respectively, and the air entering the turbine is<br/>at a temperature of 567°C. If the volume rate of air entering the compressor is 240<br/>m3/s, then the efficiency of the cycle will be ______%. [Assume that the cycle operates<br/>under ideal conditions] [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "40",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_17.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An ammonia ice plant operates on simple saturation cycle at the following<br/>temperatures:<br/><br/>Condensing temperature = 40°C, Evaporation temperature = –15°C<br/><br/>It produces 10 tonnes of ice per day at –5°C from water at 30°C. If the COP of the<br/>system is 5,<br/><br/>then the capacity of the refrigeration plant and mass flow rate of the refrigerant<br/>are<br/><br/>Take:<br/><em><br/>c<sub>p</sub><br/></em><br/>= 4.187 kJ/kgK for water,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 2 kJ/kgK for ice,<br/><br/>Latent heat of fusion of ice = 335 kJ/kg, Sensible enthalpy at 40°C = 600<br/>kJ/kg,<br/>Enthalpy of saturated vapour at (–15°C) = 1675 kJ/kg.`,
+      image: "",
+      options: [
+        `15.5 TR and 0.05067 kg/s`,
+        `18.3 TR and 0.05067 kg/s`,
+        `15.5 TR and 0.08067 kg/s`,
+        `18.3 TR and 0.08067 kg/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_19.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A single-stage double acting air compressor delivers air at 7.5 bar. The pressure and<br/>temperature at the end of suction stroke are 1 bar and 25°C. If the clearance volume is<br/>5% of stroke volume, then the volumetric efficiency of the compressor, is<br/>Take:<br/>Index of compression = 1.25, and index of expansion = 1.3.`,
+      image: "",
+      options: [
+        `61.4%`,
+        `91.4%`,
+        `71.4%`,
+        `81.4%`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_21.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For an engine working on the ideal dual cycle, the compression ratio is 12 and the<br/>maximum pressure is limited to 80 bar. The heat supplied is 1720 kJ/kg. If the pressure<br/>and temperature of air at the commencement of compression are 1 bar and 100°C<br/>respectively, then the maximum<br/><br/>temperature of the cycle is ______ K. [Correct upto two decimal places]<br/><br/>[Take,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.004 kJ/kgK and <img align="absmiddle" alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_23.png"/>=<br/>0.717 kJ/kgK for air]`,
+      image: "",
+      options: [],
+      answer: "3143.75",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a Parson's turbine running at 1550 rpm, the available enthalpy drop for an expansion<br/>is 94 kJ/kg.<br/><br/>The blade outlet angle is 20° and the speed ratio is 0.7. If the mean diameter of the<br/>rotor is 1.2 m, the the number of rows of moving blades required, are _____. [Round off<br/>to nearest integer]<br/>[Take stage efficiency as 85%]`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An auditorium is designed to seat 4500 people. The ventilation rate is 4.54 ×<br/>10<sup>5</sup><br/>m<sup>3</sup><br/>/h of outside air. The outside temperature is –18°C DBT and the outside pressure is<br/>100.6 kPa. Air leaves the auditorium at 21°C. D.B.T. The sensible heat load from the<br/>occupants is 297 kW. There is no<br/><br/>recirculation, and the auditorium’s temperature is maintained by varying the amount of<br/>outside air. The temperature at which the air should enter the auditorium is _______ °C<br/>[Correct upto two decimal places] [Take (<br/><em><br/>c<sub>p</sub><br/></em><br/>)<sub>air</sub><br/>= 1.005 kJ/kgK, <em>R</em><br/><sub>air</sub><br/>= 287 kJ/kgK]`,
+      image: "",
+      options: [],
+      answer: "19.29",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An ammonia refrigerator produces 20 tonnes of ice per day from and at 0°C. The<br/>condensation and evaporation take place at 20°C and –20°C respectively. The temperature<br/>of vapour at the end of isentropic compression is 50°C and there is no under-cooling of<br/>the liquid. If the actual COP is 70% of the theoretical COP, then the mass flow rate of<br/>NH<sub>3</sub><br/>is ______ kg/s. [Correct upto three decimal places]<br/><br/>[Take,<br/><em><br/>h<sub>fg</sub><br/></em><br/>(fusion of ice) = 335 kJ/kg; Specific heat of superheated vapour = 2.8 kJ/kg °C]<br/><br/>Use the properties of NH<sub>3</sub><br/>as listed below:<br/><br/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_31.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.097",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_32.png"/><img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following are the functions of the drum in water tube boiler?`,
+      image: "",
+      options: [
+        `To seperate vapour or steam from water-steam mixture.`,
+        `To maintain desired ppm in drum water.`,
+        `To provide sufficient area of heat transfer between flue gases and water.`,
+        `To aid in circulation.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a gas turbine plant working on Brayton cycle with regenerator of 80% effectiveness,<br/>the air at inlet to compressor is at 0.1 MPa, 27°C, the pressure ratio is 6 and maximum<br/>cycle temperature is 800°C. If turbine has an efficiency of 75%, then the percentage<br/>decrease in heat supply due to regeneration is`,
+      image: "",
+      options: [
+        `34.94%`,
+        `32.24%`,
+        `28.28%`,
+        `24.48%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a steam turbine operating on ideal Rankine cycle, superheated steam enters the<br/>turbine at 40 bar and 500°C with h = 3445 kJ/kg and s = 7.09 kJ/kgK. The condenser<br/>pressure is 0.06 bar. The mean temperature of heat addition is<br/><br/>Given data:<br/><br/>At 0.06 bar<br/><br/><em><br/>h<sub>f</sub><br/></em><br/>= 149 kJ/kg,<br/><em><br/>s<sub>f</sub><br/></em><br/>= 0.52 kJ/kgK,<br/><em><br/>V<sub>f</sub><br/></em><br/>= 0.001006 m<sup>3</sup><br/>/kg`,
+      image: "",
+      options: [
+        `325.02 K`,
+        `401.10 K`,
+        `501.06 K`,
+        `625.25 K`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A simple gas turbine plant operating on brayton cycle has pressure ratio 9 and maximum<br/>cycle temperature 900°C. Now, if the turbine process is divided into two stages each<br/>with pressure ratio 3 with reheating to 800°C, then increase in turbine output is`,
+      image: "",
+      options: [
+        `8.6%`,
+        `10.6%`,
+        `12.4%`,
+        `20.4%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test10_part_syllabus_gate_2026_me_ic_engine_power_plant_refrigeration_airc/img_40.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Industrial Engineering",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A company has a demand of 12000 units/year for an item and it can produce 2000 such item<br/>per month. The cost of one setup is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_1.png"/><br/>and the holding cost/unit/month is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_2.png"/><br/>The shortage cost of one unit is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_3.png"/>per<br/>year. The inventory storing capacity required to minimize the total variable cost will<br/>be ____ units. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1110",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The sale of motorcycle in a showroom in five consecutive month is 95, 88, 99, 82 and 90,<br/>and corresponding forecast is 90, 95, 92, 100 and 86 respectively. The value of bias for<br/>the given data is ______ [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "-1.80",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `At a repair shop on an average a customer arrives every five minutes and on an average<br/>the service time is 4 min. per customer. The inter arrival time follows a poisson<br/>distribution and service times are exponentially distributed. The average length of the<br/>queue in the system is<br/>______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.20",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The amount of fixed cost from the following information given below is<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_19.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_20.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_21.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_22.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_23.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The processing times for five jobs are given for a single machine scheduling below:<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_28.png"/><br/>The average number of jobs in the system using shortest process time (SPT) is ______.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.61",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_29.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The demand for an item is uniform at the rate of 25 units/month. Ordering cost is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_40.png"/><br/>and cost per unit is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_41.png"/><br/>per unit. Inventory carrying cost is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_42.png"/><br/>per unit per per month, if the shortage cost is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_43.png"/>per<br/>unit per month, then the optimum schedule between two consecutive orders are<br/>____ months. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.60",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A contractor has to supply 10000 bearings per day to an automobile manufacturer. He<br/>finds that when he starts the production run, he can produce 25000 bearings per day. If<br/>the cost of holding the bearings in stock for one day is 2 paise and setup cost of<br/>production run is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_45.png"/>The<br/>economic lot size is`,
+      image: "",
+      options: [
+        `5219 bearings`,
+        `5478 bearings`,
+        `6218 bearings`,
+        `6345 bearings`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements regarding PERT are true?`,
+      image: "",
+      options: [
+        `Each activity of PERT network has three different time estimates.`,
+        `Expected activity time is estimated based on β-distribution.`,
+        `PERT is a deterministic model.`,
+        `PERT network may have more than one critical path.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>Group-I</strong><br/>(Inventory classification) with <strong>List-II</strong><br/>(Criteria of inventory selection) and select the correct answer using the codes given<br/>below the lists:<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_47.png"/>`,
+      image: "",
+      options: [
+        `P-2, Q-5, R-6, S-1`,
+        `P-2, Q-6, R-6, S-5`,
+        `P-2, Q-3, R-6, S-5`,
+        `P-1, Q-3, R-2, S-4`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given below is a graph representing costs on the y-axis and quantity on x-axis. If<br/><em>A</em><br/>is the total cost, <em>B</em><br/>is the inventory carrying cost and C is the ordering cost, then which of the following<br/>is correctly matched<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_48.png"/>`,
+      image: "",
+      options: [
+        `A-1, B-2 and C-3`,
+        `A-2, B-3 and C-1`,
+        `A-3, B-1 and C-2`,
+        `A-1, B-3 and C-2`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `It outlines the planned production activities of the plant. Based on the forecasting and<br/>the orders received from the customers/markets, it states the quantity of each product<br/>that will be manufactured and the time frame in which they will be manufactured. The<br/>given information<br/>talks about which input of the materials requirement planning?`,
+      image: "",
+      options: [
+        `Lead time`,
+        `Bill of materials`,
+        `Inventory status`,
+        `Master schedule`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An assignment problems is considered to be a special case of transportation problem due<br/>to`,
+      image: "",
+      options: [
+        `Number of origins being equal to the number of destinations.`,
+        `Number of origins being less than the number of destinations.`,
+        `Number of origins being greater than the number of destinations.`,
+        `Number of origins being greater than or equal to the number of destinations.`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Gantt chart DOES NOT provide information about`,
+      image: "",
+      options: [
+        `List of jobs`,
+        `Duration of jobs`,
+        `Interdependency of jobs`,
+        `Progress of work`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The MPS calls for 130 units of product <em>A</em><br/>. There are 30 units of product A on hand. One unit of A requires 4 units of B and 5<br/>units of C. There are 100 units of B and 130 units of C on hand. The net requirement of<br/>B is`,
+      image: "",
+      options: [
+        `350`,
+        `200`,
+        `300`,
+        `250`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Unit cost matrix of a transportation problem is given below in certain monetary units<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_55.png"/><br/>The total cost of transportation based on the initial basic feasible solution obtained<br/>by North-West corner rule is ______<br/>(Rounded off to nearest integer).`,
+      image: "",
+      options: [],
+      answer: "330",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Linear regression method is good when demand is consistently increasing or<br/>decreasing.`,
+        `Exponential smoothening method is causal method of forecasting.`,
+        `Delphi method is effective when past data is absent.`,
+        `Opinions and judgements play no role in quantitative forecasting.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `(a,c,d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The information regarding jobs to be scheduled through one machine is given below:<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_6.png"/><br/>The mean job flow time according to slack time remaining (STR) schedule will be _____<br/>days.<br/>[Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "25.428",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The tool room of company’s quality control department is manned by a single clerk who<br/>takes an average of 5 minutes in checking parts of each machine carrying for inspection.<br/>The machine arrive once in every 8 minutes on average. One hour of machine is valued at<br/><img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_8.png"/><br/>and the clerk’s<br/><br/>time is valued at <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_9.png"/>per<br/>hour. The average hourly queuing systems costs associated with the quality control<br/>department will be`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_13.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_14.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a particular product, the following information is given:<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_17.png"/><br/>Due to inflation variable costs increase by 10%, while fixed costs increase by 5%. If<br/>the breakeven quantity is to remain constant by what percentage should the sales price<br/>to be raised?`,
+      image: "",
+      options: [
+        `6%`,
+        `7%`,
+        `8%`,
+        `9%`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `PQR limited company has been offered a chance to buy between Machine A and Machine<br/>B.<br/>The following data is given<br/><img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_25.png"/><br/>The market prices of the product is expected to be <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_26.png"/><br/>per unit. The level of sales at which both<br/>machines earn equal profit is _____<br/>units. [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "7000",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A non stop train runs from Delhi to Katra can carry a maximum of 2000 passengers. A<br/>profit of Rs.800 is made on each 2AC ticket and a profit of Rs. 400 is made on each 3AC<br/>ticket. At least 200 seats are reserved for 2AC ticket. If atleast four times as many<br/>passenger prefer to travel by 3AC as to 2AC then maximum profit that can be earned is`,
+      image: "",
+      options: [],
+      answer: "960000",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A company buys an item for its assembly. The usage pattern of this bought out items<br/>follows a normal distribution with a mean of 1200 items per week and a standard<br/>deviation of 200. The buying process takes one week. The inventory holding cost is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_32.png"/><br/>per unit per year and the<br/><br/>cost of ordering is <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_33.png"/>per<br/>order. The company allows for only 2 stockout situations in a year. The safety stock<br/>required is`,
+      image: "",
+      options: [
+        `329 units`,
+        `300 units`,
+        `345 units`,
+        `373 units`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_34.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A manufacturing company requires special gears at the rate of 300 number per year. Each<br/>gear costs <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_36.png"/><br/>The procurement cost and inventory carrying costs are estimated at <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_37.png"/><br/>and 20% respectively. If the supplier offers a discount of <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_38.png"/>per<br/>gear on an order of 200 or above, will it be advisable to purchase the quantity and<br/>avail the discount.`,
+      image: "",
+      options: [
+        `It is economical to purchase the quantity equal to 200 units and avail the discount.`,
+        `It is economical to purchase the quantity equal to 250 units and avail the discount.`,
+        `It is economical to purchase the quantity equal to 350 units and avail the discount.`,
+        `It is not economical to purchase the quantity and avail the discount.`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The forecast and the actual demand for the 6 months is given below, what is the tracking<br/>signal?<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_51.png"/>`,
+      image: "",
+      options: [
+        `2.05`,
+        `-2.05`,
+        `11.7`,
+        `-11.7`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a construction project schedule, A is the first activity. Activities B and C follows<br/>A. Activity D<br/>follows B and C. Activity E follows C. Activity F follows D and E.<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_53.png"/><br/>The critical time to complete the project will be ______. (Answer in integer)`,
+      image: "",
+      options: [],
+      answer: "17",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_54.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A mining project is composed of five activities whose three time estimates in months are<br/>given below:<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_57.png"/><br/>The expected duration of the mixing project in months is ________ (integer only).`,
+      image: "",
+      options: [],
+      answer: "18",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A company has 5 jobs to be done. The following matrix shows the return in rupees of<br/>assigning i<sup>th</sup><br/>machine (i = 1, 2,.....5) to the <em>j</em><br/><sup>th</sup><br/>job (<em>j</em><br/>= 1, 2,.......5). Assign the five jobs to the five machines so as to maximize the total<br/>expected profit also find the profit.<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_59.png"/>`,
+      image: "",
+      options: [],
+      answer: "50",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_60.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_61.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Annual demand of an item is 48000. The average lead time is 4 weeks. The standard<br/>deviation of demand during the average lead time is 75 units/week. The cost of ordering<br/>is Rs. 400 per order. The price per unit of the item is Rs. 10. The carrying cost per<br/>unit per year is 15% of the purchase price. The maximum delay in lead time is 2 weeks<br/>and the probability of this delay is 0.25.<br/><br/>Consider the service level of 0.95. The Re-order level, if 'Q' system is followed is<br/>______ units.<br/>[Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "4400",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_63.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The fixed costs for the years 2023 - 2024 are <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_65.png"/><br/>variable cost per unit is <img align="absmiddle" alt="" f="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_66.png"/><br/>The estimated sales for the period are valued at <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_67.png"/><br/>Each unit sells at <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_68.png"/><br/>The estimated contribution and profit if <img align="absmiddle" alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_69.png"/>will<br/>be the likely sales turn over for the next budget period are`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_72.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_73.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A dealer for electrical appliances forecasts the demand for the Geyser at the rate of 500<br/>per month for the next three months. The actual demands turned out to be 400, 560 and<br/>700. The forecast error and bias are`,
+      image: "",
+      options: [
+        `120 units, –53.33 unis`,
+        `120 units, 53.33 unis`,
+        `–53.33 units, 120 unis`,
+        `53.33 units, 120 unis`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_75.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Time series analysis technique of forecasting is used for very long range<br/>forecasting.`,
+        `Qualitative technique are used for long range forecasting and quantitative<br/>techniques for short and medium range forecasting.`,
+        `Coefficient of correlation is calculated in case of time series technique.`,
+        `Market survey and Delphi technique are used for long range forecasting.`
+      ],
+      answer: ["B", "D"],
+      solution: `(b,d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A firm uses Lathes, Milling machines and Grinding machines to produce two machine<br/>parts.<br/>Table below represents the machining times required for each part, the<br/>machining times available on different machines and the profit on each machine part.<br/>What is the maximum profit that can be extracted with following conditions?<br/><br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_76.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_77.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_78.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_79.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_80.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_81.png"/><img alt="" src="js/questions/subjectwise_test11_part_syllabus_gate_2026_me_industrial_engineering/img_82.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are incorrect?`,
+      image: "",
+      options: [
+        `A linear programming problem with three variables and two constraints can be solved<br/>by graphical method.`,
+        `For solutions of a linear programming problem with mixed constraints, Big-M method<br/>can be employed.`,
+        `In the solution process of a linear programming problem using Big-M method, when an<br/>artificial variable leaves the basis, the column of the artificial variable can be<br/>removed from all subsequent tables.`,
+        `In transportation problem if number of allotment is <em>m</em><br/>+ <em>n</em><br/>– 1 then solution is degenerate.`
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Machine Design",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the multiple disc clutch, if there are 6 discs on the driving shaft and 5 discs on the<br/>driven shafts, then the number pairs of contact surfaces will be equal to`,
+      image: "",
+      options: [
+        `11`,
+        `12`,
+        `10`,
+        `22`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A sleeve bearing of inside diameter 40.05 mm supports a journal of diameter 40 mm<br/>rotating at 1440 rpm. The bearing carries a load of 3 kN bearing length is 20 mm and oil<br/>used has a viscosity of 25 centipoise at the average operating temperature. If the<br/>bearing carries a load of 3 kN, then the sommerfeld number for the bearing is ______.<br/>(Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.102",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct regarding Brakes?`,
+      image: "",
+      options: [
+        `Mechanical brakes depends upon the shape of the friction materials.`,
+        `Hydraulic and pneumatic brakes, are operated by fluid pressure such as oil pressure<br/>or air pressure.`,
+        `Electrical brakes, which are operated by magnetic forces and which include magnetic<br/>particle brakes, hysteresis brakes and eddy current brakes.`,
+        `None of these`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A ball bearing has a life of 2 million revolutions with 90 percent reliability. If its<br/>reliability is increases to 95 percent. Then, the reduction in life with this increased<br/>reliability will be`,
+      image: "",
+      options: [
+        `36%`,
+        `46%`,
+        `56%`,
+        `66%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cone clutch transmits 20 kW at 900 rpm from an electric motor to a centrifugal pump.<br/>The service factor is 1.2, stress concentration factor due to key way is 1.5, and safe<br/>shear stress for the shaft 40 MPa. The diameter of the shaft is`,
+      image: "",
+      options: [
+        `36.50 mm`,
+        `42.19 mm`,
+        `28.26 mm`,
+        `21.16 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A brake drum of diameter 400 mm is braked with the help of a cast iron shoe having<br/>coefficient of friction 0.3. The force is applied at 800 mm away from center line of the<br/>drum as shown in figure. The pivot is 300 mm away from central axis on the other side<br/>and 10 mm below the<br/>surface of drum.<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_23.png"/><br/>If a braking torque of 500 N.m is required for clockwise rotation of the drum. The<br/>force F needed is _____ N. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "2250",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Calculate the dynamic load carrying capacity of a taper roller bearing if the bearing can<br/>carry an equivalent radial load of 5000 N for 8000 hr at 300 rpm with a reliability of<br/>90%.`,
+      image: "",
+      options: [
+        `2220 N`,
+        `22.2 kN`,
+        `2620.7 N`,
+        `2.62 kN`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The suspension system of a freight truck consists of parallel-spring arrangement with<br/>three identical helical springs. Each spring is made of steel with shear modulus<br/><em>G</em><br/>as 80 × 10<sup>9</sup><br/>N/m<sup>2</sup><br/>. The spring have five effective turns, mean coil diameter of 20 cm, and wire diameter 2<br/>cm, the equivalent spring constant of the suspension system is`,
+      image: "",
+      options: [
+        `40 kN/m`,
+        `120 kN/m`,
+        `100 kN/m`,
+        `160 kN/m`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a parallel load on a fillet weld of equal legs, the plane of maximum shear occurs at`,
+      image: "",
+      options: [
+        `22.5°`,
+        `30°`,
+        `45°`,
+        `60°`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A rotating bar made of steel 45C8 (<em>S</em><br/><sub>ut</sub><br/>= 630 MPa) is subjected to a completely reversed bending stress. The corrected endurance<br/>limit of the bar is 315 N/mm<sup>2</sup><br/>. The fatigue strength of the bar for a life of 90000 cycles is _______ MPa [Round off<br/>to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "386.36",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An electric motor weighing 10 kN is lifted by means of an eye bolt. The eye bolt is<br/>screwed into the frame of motor and it has coarse threads. The yield strength of the<br/>material is 380 MPa. The core diameter is 0.8 times of major diameter. The size of the<br/>bolt is ______ mm. [Round off to two decimal places] [Take FOS = 5]`,
+      image: "",
+      options: [],
+      answer: "16.18",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_40.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following options is/are correct for fatigue failure?`,
+      image: "",
+      options: [
+        `Gerber parabola fits the failure points of test data in the best possible way.`,
+        `The soderberg line is a most conservative failure criterion.`,
+        `Goodman line is a straight line joining,<br/><em><br/>S<sub>e</sub><br/></em><br/>on the ordinate to<br/><em><br/>s<sub>yt</sub><br/></em><br/>on the abscissa.`,
+        `Soderberg line is a straight line joining,<br/><em><br/>S<sub>e</sub><br/></em><br/>on the ordinate to<br/><em><br/>s<sub>ut</sub><br/></em><br/>on the abscissa.`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A threaded bolt of major diameter 18 mm and has a core diameter equal to 0.8 times, the<br/>nominal diameter. To make a bolt of uniform strength, a hole is drilled at center of the<br/>bolt in shank portion. The diameter of hole is`,
+      image: "",
+      options: [
+        `10.8 mm`,
+        `14.4 mm`,
+        `18.2 mm`,
+        `12.8 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a boiler longitudinal joint is used to increase the diameter of boiler shell. The type<br/>of joint commonly used is`,
+      image: "",
+      options: [
+        `lap joint`,
+        `butt joint with single cover plate`,
+        `butt joint with double cover plate`,
+        `None of the above`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A gear is transmitting 5 kW of power at 1000 rpm. The load on the gear tooth is 3 kN.<br/>The diameter of the gear is __________ mm. (Correct upto two decimal places).<br/>[Take<br/>pressure angle = 20°]`,
+      image: "",
+      options: [],
+      answer: "33.87",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two plates of 8 mm and 10 mm thickness are joined by 15 mm diameter rivet in single<br/>riveting lap joint. If the shearing strength and crushing strength of the rivet is 95<br/>MPa and 260 MPa respectively, then the strength of joint is ______ kN. [Rounded off to<br/>two decimal places]`,
+      image: "",
+      options: [],
+      answer: "16.79",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An electric motor running at 960 rpm drives a compressor at 200 rpm using a spur gear<br/>set with milled teeth. The center distance between the two shafts is 450 mm. A torque of<br/>4000 Nm is transmitted and the starting torque is 30 per cent higher than the average<br/>torque. The dynamic<br/><br/>load is [Take velocity factor <img align="absmiddle" alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_2.png"/>=<br/>0.435]`,
+      image: "",
+      options: [
+        `154.24 kN`,
+        `164.12 kN`,
+        `174.12 kN`,
+        `184.12 kN`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A pinion of width 12 module with 24 full depth teeth of 20° pressure angle transmits 30<br/>kW at 1200 rpm. The form factor for 20° full depth involute teeth is given as:<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_4.png"/><br/>Using Lewis equation, the face width of the pinion is ______ (Rounded off to nearest<br/>integer)<br/>[Take safe bending stress 200 MPa]`,
+      image: "",
+      options: [],
+      answer: "36",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bearing of bore 35 mm and length 30 mm supports a vertical load of 1500 N at 1800<br/>rpm.<br/>Radius to clearance ratio is 700. If oil of viscosity 30 mPa.s is used as<br/>lubricant. The friction coefficient of friction is`,
+      image: "",
+      options: [
+        `0.011`,
+        `0.111`,
+        `0.007`,
+        `0.170`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A multiple disc clutch consisting of steel and bronze plates is to transmit 10 kW at<br/>1000 rpm, the inner and outer diameter of discs being 90 mm and 160 mm respectively. The<br/>engagement factor may be taken as 1.25. The coefficient of friction between the<br/>contacting plates is 0.18 and maximum intensity of pressure 0.3 N/mm<sup>2</sup><br/>. The required total number of steel and bronze plates, using uniform wear theory will<br/>be ________. (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A deep groove ball bearing is subjected to the following radial load cycle:<br/>4000 N<br/>for 20 percent of time at 600 rpm, 8000 N for 40 percent of time at 720 rpm, 6000 N for<br/>30 percent of time at 900 rpm, 1000 N for 10 percent of time at 900 rpm. If the bearing<br/>used has the dynamic load capacity of 28100 N, then the expected life of bearing is<br/>______ hours. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1753",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cantilever beam of length 1 m undergoes fluctuating load of 5 kN to 10 kN at it’s free<br/>end. The theoretical stress concentration factor of beams is 2.5 and notch sensitivity<br/>is 0.4. The properties of ductile material of beam are σ<sub>e</sub><br/>= 150 MPa, σ<sub>yt </sub><br/>= 250 MPa, σ<sub>ut</sub><br/>= 550 MPa and section modulus of beam is 5 × 10<sup>4</sup><br/>mm<sup>3</sup><br/>. The FOS of beam is ______ (Using Soderberg theory of failure)`,
+      image: "",
+      options: [
+        `0.88`,
+        `1.133`,
+        `1.071`,
+        `1.65`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_11.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A single plate clutch rotating at 1500 rpm transmits 10 kW. The moments of inertia of<br/>the driver and driven shafts are 0.8 kg m<sup>2</sup><br/>and 0.6 kg m<sup>2</sup><br/>, respectively. If driven shaft is stationary, then the engagement time of the clutch is`,
+      image: "",
+      options: [
+        `0.672 sec`,
+        `0.795 sec`,
+        `0.845 sec`,
+        `0.910 sec`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_14.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The band brake shown in figure is activated by a compressed air cylinder with diameter<br/>50 mm.<br/>The brake cylinder is driven by air pressure of 0.7 MPa. The coefficient of<br/>friction between the band and the drum is 0.25 and the angle of wrap is 200°. The<br/>maximum possible brake moment is: [Neglect the mass force on the brake arm]<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_16.png"/>`,
+      image: "",
+      options: [
+        `1644.7 N-m`,
+        `687.2 N-m`,
+        `957.5 N-m`,
+        `458.7 N-m`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_17.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a disc-type axial clutch, the frictional contact takes place with in an angular<br/>region with outer and inner diameters 350 mm and 50 mm respectively an axial force<br/><em>F</em><br/><sub>1</sub><br/>is needed to transmit a torque by a new clutch. However, to transmit a torque by a new<br/>clutch while the wear is assumed to be uniform for an old clutch and the coefficient of<br/>friction does not change, then the ratio <img align="absmiddle" alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_19.png"/>is<br/>________. [Round off to three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.842",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A hoist carrying a load of 500 kg is lowered for a height of 10 m as shown in figure<br/>below. Outside diameter of hollow brake drum is 0.6 m and inside diameter is 0.9 times<br/>the outside diameter. The drum weighs 150 kg. When the hoist reaches its lower position,<br/>it is stopped uniformly in 10 seconds. Neglecting any other losses. The heat generated,<br/>in the brake drum while stopping is<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_21.png"/>`,
+      image: "",
+      options: [
+        `50.72 kJ`,
+        `62.36 kJ`,
+        `71.86 kJ`,
+        `82.19 kJ`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A stepped shaft transmits a torque varying from 500 Nm to 1000 Nm. The ultimate tensile<br/>strength of the material of the shaft is 600 MPa and yield stress of the material is 450<br/>MPa. The load factor is 0.6, size factor is 0.85, surface finish factor is 0.8, stress<br/>concentration factor is 1.2 and factor of safety is 1.5. According to distortion energy<br/>theory, the diameter of shaft for an infinite life is ______ mm. (Correct upto one<br/>decimal place)`,
+      image: "",
+      options: [],
+      answer: "34.4",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_25.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `One helical spring is nested inside another, the dimensions are as tabulated. Both<br/>springs have the same free length and carry a total maximum load of 2500 N. Take<br/><em>G</em><br/>= GPa for both springs.<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_27.png"/><br/>The maximum load carried by each spring is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_28.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_29.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_30.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_31.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_32.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A machine component is subjected to fluctuating stress that varies from 40 to 100 MPa.<br/>The corrected endurance limit stress for the machine component is 270 MPa. The ultimate<br/>tensile and yield strength of the material are 600 MPa and 450 MPa, respectively. The<br/>factor of safety using Gerber theory is _______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "5.41",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A pair of spur gears with 20° pressure angle consists of a 24 teeth pinion meshing with a<br/>72 teeth gear. The modulus and face width are 2 mm and 20 mm respectively. The gear are<br/>heat treated to a surface hardness of 300 BHN. Which of the following options is/are<br/>correct?`,
+      image: "",
+      options: [
+        `The ratio factor is 1.5`,
+        `Load stress factor is 1.9`,
+        `Wear strength of pinion teeth is 2073 N`,
+        `Wear strength of pinion teeth is 1545 N`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A bracket is attached to a horizontal column by means of three identical rivets as shown<br/>in figure. The maximum permissible shear stress for the rivets is 60 N/mm<sup>2</sup><br/>. The minimum diameter of the rivet is ________ mm. [Round off to two decimal place]<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_43.png"/>`,
+      image: "",
+      options: [],
+      answer: "21.02",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 50 mm diameter solid shaft is welded to a flat plate as shown in figure. If the size of<br/>the weld is 15 mm, then the maximum shear stress in the weld is _______ MPa. (Correct<br/>upto two decimal places)<br/><br/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_46.png"/>`,
+      image: "",
+      options: [],
+      answer: "48.39",
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_47.png"/><img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct regarding application of bearing<br/>characteristic number?`,
+      image: "",
+      options: [
+        `It represents the stability of hydrodynamic journal bearings and helps to visualize<br/>the transition from boundary lubrication to thick film lubrication.`,
+        `In order to avoid seizure, the operating value of the bearing characteristic number<br/>(μ<em>N</em><br/>/<em>p</em><br/>) should be at least 5 to 6 times that when the coefficient of friction is minimum.`,
+        `If the bearing is subjected to fluctuating loads or impact conditions, the operating<br/>value of the bearing characteristic number (μ<em>N</em><br/>/<em>p</em><br/>) should be at least 15 times that when the coefficient of friction is minimum.`,
+        `None of these`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test12_part_syllabus_gate_2026_me_machine_design/img_49.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Thermodynamics",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A rigid tank contains 1 kg of saturated liquid-vapour mixture at 40°C. The water is<br/>slowly heated until it reached to a single phase, the volume of container is 2 litre. If<br/>the critical volume of water is 0.003106 m3/kg, then the final phase of the water is`,
+      image: "",
+      options: [
+        `liquid`,
+        `saturated vapour`,
+        `superheated steam`,
+        `saturated liquid-vapour mixture`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a heat treatment process, an iron block weighing 120 kg is heated to 600°C and then<br/>immersed in a quenching bath containing 800 kg of salt solution at 40°C. If the total<br/>heat loss to surroundings during the process is 1500 kJ, the final steady state<br/>temperature is,<br/><br/>[Take, (<br/><em><br/>C<sub>P</sub><br/></em><br/>)<sub>iron block</sub><br/>= 0.5 kJ/kgK; (<br/><em><br/>C<sub>P</sub><br/></em><br/>)<sub>salt solution</sub><br/>= 3.5 kJ/kgK]`,
+      image: "",
+      options: [
+        `42.14°C`,
+        `78.84°C`,
+        `51.22°C`,
+        `66.11°C`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The scales are so chosen such that a reversible cycle plots clockwise as circle on the<br/>T-s plane. The minimum and maximum values of the temperature are 300 K and 700 K,<br/>respectively while the entropy ranges from 1.2 to 3.2 kJ/K.<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_16.png"/><br/>The efficiency of the cycle is`,
+      image: "",
+      options: [
+        `47.81%`,
+        `52.21%`,
+        `64.54%`,
+        `74.24%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `N<sub>2</sub><br/>gas is kept in a container at 260 bar and 15°C. The critical pressure and critical<br/>temperature for N<sub>2</sub><br/>are 33.94 bar and 126.2 K. It is found that compressibility factor for N<sub>2</sub><br/>at reduced pressure and reduced temperature is 1.08, then the density of gas is _______<br/>kg/m<sup>3</sup><br/>. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "281.52",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If two reversible adiabatic curve intersect at a point then which of the following law<br/>of thermodynamics is violated`,
+      image: "",
+      options: [
+        `First law`,
+        `Second law`,
+        `Third law`,
+        `Zeroth law`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The specific volume of liquid water is 0.0010004 m<sup>3</sup><br/>/kg and that of ice is 0.001090 m<sup>3</sup><br/>/kg at 0.01°C. The latent heat of fusion of ice at this temperature is 335 kJ/kg. The<br/>rate of change of melting point of ice with pressure is`,
+      image: "",
+      options: [
+        `–7.302 × 10<sup>–3</sup><br/>K/bar`,
+        `–7.302 × 10<sup>–5</sup><br/>K/bar`,
+        `–136.95 K/bar`,
+        `–13695 × 10<sup>2</sup><br/>K/bar`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An engine of 35% thermal efficiency drives a refrigerator having a COP of 6. The heat<br/>input (in kJ) to the engine if the refrigerator removes 2 MJ of heat from the cold body<br/>is ____. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "952.38",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the figure shown, a reversible heat engine (HE) has heat interactions with three<br/>constant temperature systems, the thermal efficiency of the heat engine is<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_33.png"/>`,
+      image: "",
+      options: [
+        `54.77%`,
+        `61.11%`,
+        `72.98%`,
+        `46.21%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A spherical balloon has a diameter of 0.4 m and contains air at a pressure of 1<br/>kg/cm<sup>2</sup><br/>. The diameter of the balloon increases to 0.6 m due to heating and during this process<br/>the pressure proportional to diameter, work done during the process is ______ kgm.<br/>[Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "1021.02",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_35.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Water is heated at a constant pressure of 0.7 MPa, where the boiling point is 164.97°C.<br/>The initial temperature of the water is 0°C, and the latent heat of evaporation is 2067<br/>kJ/kg. If the final state is steam, then increase in entropy is _________ kJ/kgK.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "6.69",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Each of three identical bodies satisfies the equation U = CT. Their initial temperature<br/>are, 300 K, 1200 K, 2400 K. If maximum amount of work can be extracted in then process,<br/>then the final common temperature to which these bodies are brought will be ______ °C.<br/>[Correct upto two decimal places] [Take, C = 8.4 kJ/K]<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_38.png"/>`,
+      image: "",
+      options: [],
+      answer: "679.44",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thermally insulated 60 - ohm resistor carries a current 1 A for 1 s. The initial<br/>temperature of the resistor is 20°C. If mass and specific heat are 10g and 0.85 J/gK<br/>respectively, then the change in entropy of the resistor is ____ J/K. [Correct upto four<br/>decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_41.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.2023",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `For the reversible steady-flow process 1-3 as shown in figure, the work produces during<br/>the various processes are<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_49.png"/>`,
+      image: "",
+      options: [
+        `<em>W</em><br/><sub>1–2</sub><br/>= 750 kJ/kg`,
+        `<em>W</em><br/><sub>1–2</sub><br/>= –750 kJ/kg`,
+        `<em>W</em><br/><sub>2–3</sub><br/>= –600 kJ/kg`,
+        `<em>W</em><br/><sub>1–3</sub><br/>= 150 kJ/kg`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two air streams are combined to a single flow as shown in figure. The volume flow rate<br/>of one stream is 2 m<sup>3</sup><br/>/s at 20°C and the other is 3 m<sup>3</sup><br/>/s at 200°C both at 120 kPa. The mix without any heat transfer to produce an exit flow<br/>at 100 kPa. If the kinetic energy is neglected, the exit<br/>temperature of the flow is<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_51.png"/>`,
+      image: "",
+      options: [
+        `110°C`,
+        `101.4°C`,
+        `106.56°C`,
+        `115.7°C`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_52.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the process for which pressure volume relation is given by<br/><em><br/>pv<sup>n</sup><br/></em><br/>= C. The initial and final status of the working fluid are <em>P</em><br/><sub>1</sub><br/>= 200 kPa, <em>T</em><br/><sub>1</sub><br/>= –7°C and <em>P</em><br/><sub>2</sub><br/>= 1000 kPa, <em>T</em><br/><sub>2</sub><br/>= 70°C respectively. If the specific volumes of initial and final states are <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_53.png"/><br/>= 0.09938 m3/kg and <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_54.png"/><br/>= 0.02172 m<sup>3</sup><br/>/kg, then the`,
+      image: "",
+      options: [
+        `polytropic index for the process is 1.14.`,
+        `polytropic index for the process is 1.058.`,
+        `work done on the fluid is 31.79 kJ/kg.`,
+        `work done by the fluid is 31.79 kJ/kg`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A rigid vessel of 0.3 m<sup>3</sup><br/>contains 0.2 kg of helium at 300 kPa. The vessel is heated until the pressure reaches<br/>800 kPa. The gas constant of helium is 2.078 kJ/kgK. The temperature change of helium<br/>due to heating is`,
+      image: "",
+      options: [
+        `577.478 K`,
+        `304.47 K`,
+        `360.924 K`,
+        `452.79 K`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_56.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Helium gas is kept in a rigid container at a temperature of 400 K. The temperature of<br/>this gas is maintained constant by a heater of 10 Watt (kept inside the container) if<br/>surrounding temperature is 27°C then which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The entropy generation inside the container is zero.`,
+        `The entropy generation inside the container is 0.025 W/K.`,
+        `The entropy generation outside the container is 0.0833 W/K.`,
+        `The net entropy generation is 0.0333 W/K.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_2.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A balloon of 40 cm diameter is filled with air at 1 bar and 27°C. It is heated to 500°C<br/>and as a result the diameter increases to 50 cm. During the heating process the pressure<br/>varies linearly with the diameter, rising to a maximum value of 1.5 bar. If the change<br/>in internal energy of air is<br/><br/>given by Δ<em>U</em><br/>= (5 + 4ΔT) J, (ΔT change in temperature in Kelvin), then the heat transferred to the<br/>balloon is ________ . [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "5948.35",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_4.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Air is trapped in a piston-cylinder arrangement. Initially <em>P</em><br/><sub>1</sub><br/>is 101 kPa, <em>V</em><br/><sub>1</sub><br/>is 3 × 10<sup>–3</sup><br/>m<sup>3</sup><br/>. The spring exerts no force on the piston in the initial position. The area of the<br/>piston is 0.014 m<sup>2</sup><br/>. The air expands slowly until its volume is doubled. During the process, the spring<br/>exerts a force<br/><br/>linearly. Neglect any friction between piston and cylinder wall. Which of the following<br/>statements are correct? [Take, <em>k</em><br/><sub>spring</sub><br/>= 18 × 10<sup>3</sup><br/>N/m]`,
+      image: "",
+      options: [
+        `final pressure of air is nearly 150.21 kPa.`,
+        `final pressure of air is nearly 376.51 kPa.`,
+        `work done by air on piston is nearly 125 J.`,
+        `work done by air on piston is nearly 716. J.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `At the beginning of the compression stroke of a two-cylinder internal combustion engine<br/>the air is at a pressure of 101 kPa. Compression reduces the volume to <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_8.png"/><br/>of its volume, and the law of compression is given by <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_9.png"/>constant.<br/>The bore and stroke of each cylinder is 0.14 m and 0.28 m, respectively. If the engine<br/>speed is such that each cylinder undergoes 600 compression strokes per minute, then the<br/>power absorbed is _______ kW. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "-13.91",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_10.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_11.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The tangential force acting on the cutting tool of a lathe while turning a metallic<br/>workpiece of 80 mm diameter is 180 N. After 8 minutes of turning the internal energy of<br/>the workpiece and chips increases by 80 kJ. If the frequency of revolution of the<br/>workpiece is 250 rev/min, the heat transfer from the workpiece and chips during this<br/>period is _____ kJ. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "10.48",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A slow chemical reaction takes place in a fluid at the constant pressure of 0.1 MPa. The<br/>fluid is surrounding by a perfect heat insulator during the reaction which begins at<br/>state 1 and ends at state 2. The insulation is then removed and 100 kJ of heat flows to<br/>the surroundings as the fluid<br/>goes to state 3, the following data are observed for<br/>the fluid at state 1, 2 and 3.<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_13.png"/><br/>For the fluid, which of the state is correct?`,
+      image: "",
+      options: [
+        `If <em>E</em><br/><sub>1</sub><br/>= 0, then <em>E</em><br/><sub>2</sub><br/>= –29.7 kJ, <em>E</em><br/><sub>3</sub><br/>= –110 kJ`,
+        `If <em>E</em><br/><sub>1</sub><br/>= 0, then <em>E</em><br/><sub>2</sub><br/>= –39.6 kJ, <em>E</em><br/><sub>3</sub><br/>= 107.6 kJ`,
+        `If <em>E</em><br/><sub>1</sub><br/>= 0, then <em>E</em><br/><sub>2</sub><br/>= 29.7 kJ, <em>E</em><br/><sub>3</sub><br/>= –110 kJ`,
+        `If <em>E</em><br/><sub>1</sub><br/>= 0, then <em>E</em><br/><sub>2</sub><br/>= –39.7 kJ, <em>E</em><br/><sub>3</sub><br/>= –107.6 kJ`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A steel rod of mass 2 kg is being heated by quenching it from an initial temperature of<br/>200°C in a tank containing 12 kg of water at 45°C. Neglecting any heat loss to the<br/>surrounding, which are at 27°C. The total change in exergy is ______ kJ. [Correct upto<br/>two decimal places]<br/>Take specific heat of steel = 0.5 kJ/kgK Specific heat of water<br/>= 4.2 kJ/kgK`,
+      image: "",
+      options: [],
+      answer: "-26.42",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `2 kg of a gas is compressed in a quasi-static process from 80 kPa, 0.1 m<sup>3</sup><br/>to 0.4 MPa, 0.03 m<sup>3</sup><br/>. The pressure and volume are related as <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_18.png"/>then<br/>the specific done by the gas will be _____ kJ/kg. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "-5.94",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_19.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A piston cylinder device contains 0.5 kg of air at an initial pressure and temperature<br/>of 1 MPa and 500°C, respectively. At this state, top surface of the piston is held by<br/>stops. Now, the system is cooled to 50°C. Minimum pressure required to flood the piston<br/>is 0.5 MPa, the work interaction is _______ kJ. [Take <em>P</em><br/><sub>atm</sub><br/>= 100 kPa] [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "-9.12",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_21.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Tank A shown in figure has a volume of 0.4 m<sup>3</sup><br/>and contains argon gas at 250 kPa. Cylinder B contains a frictionless piston of mass<br/>such that a pressure of 150 kPa is required to lift it. The connecting valve is opened<br/>allowing the argon gas to flow into the cylinder. Eventually<br/><br/>the argon gas reaches a uniform state. Change in the state of argon gas is related<br/>through <em>PV</em><br/>= constant. [Take <em>p</em><br/><sub>atm</sub><br/>= 100 kPa]<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_23.png"/><br/>Which of the statements are correct regarding work interaction?`,
+      image: "",
+      options: [
+        `The work done by the gas is 20000 J.`,
+        `The work done by the gas is 40000 J.`,
+        `The work done by the atmosphere is 26667 J.`,
+        `The work done by piston is –13333.3 J.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a particular fluid, the following relation exists between saturation pressure (in<br/>bar) and saturation temperature (in K)<br/><img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_29.png"/><br/>If the latent heat of vapourisation at 0.1 bar is 292 kJ/kg, then the specific volume<br/><img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_30.png"/><br/>of saturation vapour of the fluid at 0.1 bar is<br/>[For the fluid, neglect the<br/>specific volume of saturated liquid]`,
+      image: "",
+      options: [
+        `2.721 m<sup>3</sup><br/>/kg`,
+        `4.144 m<sup>3</sup><br/>/kg`,
+        `3.978 m<sup>3</sup><br/>/kg`,
+        `5.676 m<sup>3</sup><br/>/kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_31.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_32.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A copper rod of length 1 m and cross-sectional area 7.85 × 10<sup>–5</sup><br/>m<sup>2</sup><br/>. One end of the rod is at 100°C and the other at 0°C. The rod is perfectly insulated<br/>along its length and the thermal conductivity of copper is 380 W/mK. The rate of entropy<br/>production due to irreversibility of this heat transfer will be`,
+      image: "",
+      options: [
+        `29.3 W/K`,
+        `0.4172 W/K`,
+        `0.004172 W/K`,
+        `0.00293 W/K`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a vertical cylinder, air below a frictionless piston occupies a volume of 0.10<br/>m<sup>3</sup><br/>at a pressure of 1 MPa. The mass and diameter of the piston are 100 kg and 0.5 m<br/>respectively. A stopper which keeps the piston in position is suddenly removed. The<br/>piston moves upward through a distance of 1.3 m. The air expands according to<br/>PV<sup>1.3</sup><br/>= C. Assuming atmospheric pressure to be 1 bar and neglecting velocity of air, the<br/>velocity of piston when it has risen 1.3 m is<br/><br/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_43.png"/>`,
+      image: "",
+      options: [
+        `39.66 m/s`,
+        `45.65 m/s`,
+        `51.63 m/s`,
+        `26.24 m/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_44.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid storage tank of 3 m<sup>3</sup><br/>contains 4 kg of helium. From a furnace maintained at 1300°C, heat is transferred to the<br/>helium until the specific entropy of the gas in increased by 3.5 kJ/kg-K. If the<br/>molecular weight of helium is 4 kg/k-mol, the percentage increase in absolute<br/>temperature of helium during the process would be`,
+      image: "",
+      options: [
+        `20.9%`,
+        `209.0%`,
+        `325.8%`,
+        `32.58%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_45.png"/><img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an isothermal, internally reversible process, air is initially at 15 bar, 70°C. If it<br/>expands to a final pressure of 3 bar, then work done will be`,
+      image: "",
+      options: [
+        `461.9 kJ/kg`,
+        `158.435 kJ/kg`,
+        `272.91 kJ/kg`,
+        `344.52 kJ/kg`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an insulated pipe of diameter 10 cm, oxygen enters with a velocity of 60 m/s. The<br/>inlet state of oxygen is 250 kPa, 27°C and the exit state of 200 kPa, 12°C. For oxygen<br/><em>R</em><br/>= 0.26 kJ/kgK, and<br/><em><br/>c<sub>p</sub><br/></em><br/>= 0.918 kJ/kgK. The rate of entropy generation in the pipe is`,
+      image: "",
+      options: [
+        `12.4 W/K`,
+        `15.1 W/K`,
+        `16.5 W/K`,
+        `32.61 W/K`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A system has a heat capacity at constant volume as <img align="absmiddle" alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_57.png"/><br/>where A is 0.054 × J/K<sup>3</sup><br/>. The system is initially at 300 K and a thermal reservoir at 72 K is available. If the<br/>system is cooled down to the temperature of the reservoir, then the maximum amount of<br/>work that can be recovered is`,
+      image: "",
+      options: [
+        `2290.032 kJ`,
+        `479.281 kJ`,
+        `6656.68 kJ`,
+        `314.398 kJ`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test2_part_syllabus_gate_2026_me_thermodynamics/img_58.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Fluid Mechanics & Hydraulic Machines",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The stream lines are represented by <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_1.png"/>The<br/>velocity and its direction at point (1, 2) are`,
+      image: "",
+      options: [
+        `4.74 units/sec and at an angle of 26° with <em>x</em><br/>-axis.`,
+        `4.47 units/sec and at an angle of 26° with <em>x</em><br/>-axis.`,
+        `5.47 units/sec and at an angle of 64° with y-axis.`,
+        `5.47 units/sec and at an angle of 64° with y-axis`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 10 cm diameter horizontal water jet having a velocity of 37 m/s strikes a curved plate,<br/>which deflects the water 180° at the same speed. Ignoring the frictional effects, the<br/>force required to hold the plate against the water stream is<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_3.png"/>`,
+      image: "",
+      options: [
+        `20.5 kN`,
+        `41 kN`,
+        `21.5 kN`,
+        `10.75 kN`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_4.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A turbine develops 500 kW power under a head of 100 m at 200 rpm. Its normal speed<br/>and output under a head of 81 m is`,
+      image: "",
+      options: [
+        `200 rpm and 364.5 kW`,
+        `180 rpm and 364.5 kW`,
+        `180 rpm and 346.5 kW`,
+        `200 rpm and 346.5 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_17.png"/><br/>is velocity potential and <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_18.png"/>is<br/>stream function for a 2-D steady, incompressible and irrotational flow, which of the<br/>following are CORRECT?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_19.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_20.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_21.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_22.png"/>`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 3-D velocity field is given by <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_24.png"/><br/>directions, respectively, describing a Cartesian coordinate system. The coefficient<br/><em>C</em><br/>is a constant.<br/><br/>If <em>V</em><br/>describes an incompressible fluid flow, the value of <em>C</em><br/>is`,
+      image: "",
+      options: [
+        `-1`,
+        `0`,
+        `1`,
+        `5`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Water is flowing in a pipe line of 200 mm diameter at the rate of the 40 <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_26.png"/>A<br/>valve is introduced in the pipe line at a distance of 600 m. The valve is gradually<br/>closed in a time of 1.5 seconds. The increase in pressure intensity will be ______ kPa.`,
+      image: "",
+      options: [],
+      answer: "509.28",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>Group-I</strong><br/>with <strong>Group-II</strong><br/>and select the correct answer using the codes given below the lists:<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_28.png"/>`,
+      image: "",
+      options: [
+        `P-3, R-2, T-4`,
+        `P-3, R-4, T-2`,
+        `Q-5, R-2, S-3`,
+        `Q-3, S-5, T-4`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In case of a pressure driven laminar flow of a Newtonian fluid viscosity (μ) through a<br/>horizontal circular pipe, the velocity of the fluid is proportional to`,
+      image: "",
+      options: [
+        `μ`,
+        `μ<sup>0.5</sup>`,
+        `μ<sup>–1</sup>`,
+        `μ<sup>–0.5</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The concrete dam in the shape of a quarter circle is shown below. The magnitude of the<br/>resultant hydrostatic force that acts on the dam per metre of length will be ______ kN.<br/>Density of water is 1000 kg/m<sup>3</sup><br/>.<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_31.png"/>`,
+      image: "",
+      options: [],
+      answer: "48",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A centrifugal pump has a discharge rate of 2000 <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_33.png"/><br/>of water per min against a total head of 200 m.<br/>If the pump efficiency is 75%, the<br/>input power to the pump in kW is ______. (Upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "87.2",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The following data were obtained from a test on a Pelton wheel:<br/><br/>(i) Head at the base of the nozzle = 32 m<br/><br/>(ii) Discharge of the nozzle = 0.18 m<sup>3</sup><br/>/s<br/><br/>(iii) Area of the jet = 7500 mm<sup>2</sup><br/><br/><br/>(iv) Mechanical efficiency = 94%<br/>The power lost (in kW) in the nozzle will be<br/>______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "4.67",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A pipeline 60 cm diameter bifurcates at a y-junction into two branches 40 cm and 30 cm<br/>diameter.<br/>If the rate of flow in the main pipe is 1.5 cu m/s and mass velocity of<br/>flow in 30 cm diameter pipe is 7.5 m/s, the rate of flow in the 40 cm diameter pipe is`,
+      image: "",
+      options: [
+        `0.57 m<sup>3</sup><br/>/s`,
+        `0.67 m<sup>3</sup><br/>/s`,
+        `0.77 m<sup>3</sup><br/>/s`,
+        `0.97 m<sup>3</sup><br/>/s`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_38.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Brine of specific gravity 1.15 is draining from the bottom of a large open tank through a<br/>80 mm pipe. The drain pipe ends at a point 10 m below the surface of the brine in the<br/>tank. Considering a stream line starting at the orifice of the brine in the tank and<br/>passing through the centre of drain line to the point of discharge and assuming the<br/>friction is negligible. The velocity of flow along the stream line at the point of<br/>discharge from the pipe is ______. (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "14",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A vertical shaft of diameter 100 mm at 750 rpm is rotate with the lower end of the shaft<br/>rests in a foot stop bearing. The end of the shaft and surface of the bearing are both<br/>flat and are separated by an oil film of thickness 0.5 mm. Oil has viscosity = 1.5<br/>poise. The power required to rotate is ______ W. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "18.166",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A closed tank A is filled with a liquid (specific gravity = 2.25) and has a small air<br/>space at its top as shown in figure. A manometer is connected between liquid and water<br/>tank (<em>B</em><br/>). If the pressure in the water tank is 100 kN/m<sup>2</sup><br/>, then the pressure of the air in tank <em>A</em><br/>will be<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_59.png"/>`,
+      image: "",
+      options: [
+        `15.47 kPa`,
+        `13.37 kPa`,
+        `11.27 kPa`,
+        `9.57 kPa`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A hydraulic model of a capillary is constructed with a scale 1 : 16. If the prototype<br/>discharge in the prototype is 2048 m<sup>3</sup><br/>/s, then the corresponding discharge for which the model should be tested is`,
+      image: "",
+      options: [
+        `1 m<sup>3</sup><br/>/s`,
+        `2 m<sup>3</sup><br/>/s`,
+        `4 m<sup>3</sup><br/>/s`,
+        `8 m<sup>3</sup><br/>/s`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_61.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `What is the rate of flow of water through a pipe of diameter 20 cm and length 50 m when<br/>one end of the pipe is connected to a tank and other end of the pipe is open to the<br/>atmosphere. The pipe is horizontal and the height of water in the tank is 4 m above the<br/>centre of the pipe. Consider<br/>entry loss also. Take coefficient of friction as 0.009<br/>for calculating head loss due to friction.`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_7.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_8.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_9.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_10.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_11.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The velocity distribution for a fully-developed laminar flow in a pipe is given by<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_13.png"/><br/>The radial distance from the pipe axis at which the velocity equals the average<br/>velocity is given as`,
+      image: "",
+      options: [
+        `<em>r</em><br/>= 0.5<em>R</em>`,
+        `<em>r</em><br/>= 0.6<em>R</em>`,
+        `<em>r</em><br/>= 0.7<em>R</em>`,
+        `<em>r</em><br/>= 0.8<em>R</em>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_14.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A centrifugal pump 1.3 m in diameter delivers 3.5 m<sup>3</sup><br/>/min of water at a tip speed of 10 m/s and a flow velocity of 1.6 m/s. The outlet blade<br/>angle is 30° to the tangent at the impeller periphery. Assuming zero whirl at inlet, and<br/>zero slip. The torque delivered by the impeller is`,
+      image: "",
+      options: [
+        `247 Nm`,
+        `274 Nm`,
+        `284 Nm`,
+        `237 Nm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If for a two-dimensional potential flow, the velocity is given by <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_36.png"/>Determine<br/>the velocity and stream function at point P(4, 5).`,
+      image: "",
+      options: [
+        `12.04 m/s, 4`,
+        `12.04 m/s, 8`,
+        `13.09 m/s, 4`,
+        `13.09 m/s, 8`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A submarine is cruising at a depth of 20 m in ocean (sea water specific gravity = 1.02).<br/>If the speed of the submarine is 10 m/s, then the stagnation pressure at the upstream is<br/>______ kPa.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "251.12",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_41.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 120 mm diameter orifices discharge 48 litres/s of water under a constant head of 2.6<br/>m. A flat plate held normal to the jet emerging from the orifice requires 320 N to<br/>resist the impact of the jet. The hydraulic coefficients <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_43.png"/>respectively<br/>are`,
+      image: "",
+      options: [
+        `0.53, 0.60 and 0.95`,
+        `0.63, 0.95 and 0.60`,
+        `0.73, 0.95 and 0.60`,
+        `0.63, 0.60 and 0.95`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_44.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A viscous flow of oil is taking place in a pipe of 12 cm diameter with discharge of 1.8<br/>× 10<sup>–4</sup><br/>m<sup>3</sup><br/>/s.<br/>If specific gravity of fluid is 0.9 and viscosity is 0.2 Ns/m2, then the power<br/>per kilometer is required to maintain the flow is`,
+      image: "",
+      options: [
+        `1.27 Watts`,
+        `2.17 Watts`,
+        `1.97 Watts`,
+        `3.27 Watts`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A fluid of viscosity 0.72 Ns/m<sup>2</sup><br/>and specific gravity 1.34 is flowing through a circular pipe of diameter 100 mm. If the<br/>maximum shear stress at the pipe wall is given as 200 N/m<sup>2</sup><br/>. The Reynolds number of the flow is`,
+      image: "",
+      options: [
+        `646.2`,
+        `546.2`,
+        `446.2`,
+        `746.2`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_47.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A compound pipe has three segments of 900 m, 450 m and 300 m with diameters 45 cm, 37.5<br/>cm and 30 cm respectively. It is to be replaced by a single pipe of same total length<br/>and equivalent flow capacity. The diameter of the uniform pipe is`,
+      image: "",
+      options: [
+        `0.27 m`,
+        `0.37 m`,
+        `0.44 m`,
+        `0.51 m`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_49.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Oil having specific gravity 0.92 is pumped through a 200 mm diameter pipe. The discharge<br/>is 0.90 m<sup>3</sup><br/>/min and pressure drop is 100 kPa for 800 m length of pipe. The viscosity of the oil is`,
+      image: "",
+      options: [
+        `0.127 Ns/m<sup>2</sup>`,
+        `0.227 Ns/m<sup>2</sup>`,
+        `0.327 Ns/m<sup>2</sup>`,
+        `0.427 Ns/m<sup>2</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_50.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A smooth flat plate is exposed to a wind velocity of 6 km per min. If the laminar<br/>boundary layer exists upto a value of Re = 2 × 10<sup>5</sup><br/>, the boundary layer thickness at transition point is _______ cm. [Rounded of to three<br/>decimal places] [Take <img align="absmiddle" alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_52.png"/><br/>= 1.5 × 10<sup>–5</sup><br/>m<sup>2</sup><br/>/s]`,
+      image: "",
+      options: [],
+      answer: "0.033",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a pipe of 360 mm diameter having turbulent flow, the centre line velocity is 8 m/s and<br/>that at 60 mm from the pipe wall is 6.5 m/s. The shear friction velocity is`,
+      image: "",
+      options: [
+        `0.247 m/s`,
+        `0.347 m/s`,
+        `0.447 m/s`,
+        `0.547 m/s`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_55.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The ratio of the distance from the wall of the pipe to the radius of pipe at which the<br/>local velocity is equal to the average velocity for turbulent flow in pipes is _______.<br/>[Rounded upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.22",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_56.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cylindrical roller gate has 3 m diameter is placed in such a way that water is about to<br/>flow over it. If the length of the cylindrical roller gate is 6 m. The magnitude and<br/>direction of the result and force acting on it are`,
+      image: "",
+      options: [
+        `336.8 kN, 38.2°`,
+        `336.8 kN, 39.6°`,
+        `382.4 kN, 39.6°`,
+        `382.4 kN, 38.2°`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_57.png"/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A torpedo-shaped object of 900 mm diameter is to move in air at 60 m/s and its drag is<br/>to be estimated from tests in water on a half-scale model. Viscosity of air and water is<br/>1.86 × 10<sup>–5</sup><br/>Pas and 1.01 × 10<sup>–3</sup><br/>Pas respectively. The density of air and water is 1.20 kg/m<sup>3</sup><br/>and 1000 kg/m<sup>3</sup><br/>. If the drag on the model is 540 N, the drag on the full scale object is_____ [Round<br/>off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "152.60",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A horizontal pipe of length 25 m and diameter 25 mm is attached to the side of a large<br/>water tank as shown. The discharge through the pipe is measured to be 0.5 ×<br/>10<sup>–3</sup><br/>m<sup>3</sup><br/>/s. Assuming the friction factor <em>f</em><br/>= 0.02, and neglecting minor losses, the height <em>H</em><br/>of the water level above the pipe centerline that must be maintained in the tank to<br/>sustain this discharge is ______ m. (Correct to two decimal places)<br/><br/><img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_63.png"/>`,
+      image: "",
+      options: [],
+      answer: "1.08",
+      solution: `<img alt="" src="js/questions/subjectwise_test3_part_syllabus_gate_2026_me_fluid_mechanics_hydraulic_machines/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statement is/are correct?<br/>In a laminar flow occurring in a<br/>circular conduit`,
+      image: "",
+      options: [
+        `The flow is rotational`,
+        `Loss of head proportional to the square of velocity`,
+        `Loss of head is proportional to first power of viscosity`,
+        `Other quantities remaining same, increase in diameter increases the Reynolds number`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `(a,c,d)`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Manufacturing Engineering",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following is a disadvantage of NC machines over CNC machines?`,
+      image: "",
+      options: [
+        `High software costs`,
+        `Common part-programming mistakes`,
+        `Difficulties with mechanical parts`,
+        `Lack of power backup`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is not correct about jigs and fixtures?`,
+      image: "",
+      options: [
+        `Jigs incorporate bushes that guide the tools and also hold the components being<br/>machined.`,
+        `Jigs are used for operation like turning, milling and grinding.`,
+        `Jigs are lighter than fixtures.`,
+        `Jigs are used for operation like drilling and reaming.`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match the products in <strong>Column-I</strong><br/>with manufacturing processes in <strong>Column-II</strong><br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_1.png"/>`,
+      image: "",
+      options: [
+        `P-1, Q-2, R-1, S-4`,
+        `P-2, Q-3, R-1, S-4`,
+        `P-4, Q-1, R-2, S-3`,
+        `P-4, Q-2, R-1, S-3`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a sand casting of a rectangular slab, the thickness of the solidified layer after 2<br/>minutes is known to be 3 cm. Based on Chvorinov’s rule, the solidified thickness (in cm)<br/>after 4 minutes is _______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "4.24",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Schematic diagram shows rolling of a slab P and Q are points on the surface of workpiece<br/>near entrance and exit respectively. N is the neutral point. With reference to the<br/>workpiece, which among the following statement is/are correct?<br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_5.png"/>`,
+      image: "",
+      options: [
+        `Friction force is along rolling direction at <em>P</em><br/>.`,
+        `Friction force is opposite to rolling direction at <em>Q</em><br/>.`,
+        `Friction force is opposite to rolling direction at <em>P</em><br/>.`,
+        `Friction force is along rolling direction at <em>Q</em><br/>.`
+      ],
+      answer: ["A", "B"],
+      solution: `(a,b)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a given surface, the sampling length is 0.6 mm and the graph drawn to a vertical<br/>magnification of 14000 and horizontal magnification of 120 and the areas above and below<br/>the datum line are 150, 100, 190, 60 mm2 and 90, 60, 180, 170 mm2 respectively. The<br/>value of centre line average (CLA) for the surface would be ________ μm. (Round off to<br/>nearest integer)`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Amongst the following, the incorrect statements regarding an ideal cutting fluid is`,
+      image: "",
+      options: [
+        `An ideal cutting fluid should have a small specific heat and thermal conductivity.`,
+        `An ideal cutting fluid should have high viscosity and high molecular size.`,
+        `An ideal cutting fluid should contain a suitable reactive constituent.`,
+        `An ideal cutting fluid should be non poisonous and non corrosive.`
+      ],
+      answer: ["A", "B"],
+      solution: `(a,b)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following defects are associated with welding processes?`,
+      image: "",
+      options: [
+        `Angular distortion`,
+        `Hot tear`,
+        `Hydrogen embrittlement`,
+        `Earring`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the case of arc welding of steel with a potential of 20V and current of 200A. The<br/>travel speed is 5 mm/s and the cross-sectional area of the joint is 5 mm × 4 mm. Heat<br/>required to melt the steel may be taken as 10 J/mm<sup>3</sup><br/>and the heat transfer efficiency is 85%. The melting efficiency (in percentage) is<br/>_________. (Correct upto one decimal place)`,
+      image: "",
+      options: [],
+      answer: "29.4",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A gating ratio of 1 : 2 : 3 is used to design the gating system magnesium alloy casting.<br/>The gating ratio refers to the cross-section areas of the various gating elements as<br/>given below:<br/><br/>1. Down sprue<br/><br/>2. Runner<br/><br/>3. Ingates<br/>The correct sequence of the above elements in the ratio 1 : 2 : 3 is :`,
+      image: "",
+      options: [
+        `1, 2 and 3`,
+        `1, 3 and 2`,
+        `2, 3 and 1`,
+        `3, 1 and 2`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In an interchangeable assembly, shafts of size <img align="absmiddle" alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_22.png"/><br/>mate with holes of size <img align="absmiddle" alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_23.png"/>The<br/>maximum possible clearance in the assembly will be _______ microns.`,
+      image: "",
+      options: [],
+      answer: "60",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cup of 60 mm diameter and 20 mm height is to be produced by drawing from a 1.5 mm<br/>thickness sheet metal. Assume ultimate strength of the sheet metal to be 600 MPa. The<br/>blank diameter is ___________ mm.`,
+      image: "",
+      options: [],
+      answer: "91.65",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A resistance capacitance relaxation circuit is used in an electrical discharge machining<br/>process.<br/><br/>The discharge voltage is 100 V. At a spark cycle time of 25 μs, the average power input<br/>required is 1 kW. The capacitance in the circuit is ______ μ<em>F</em><br/>.`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a rolling operation using rolls of radius 25 cm if a 25 mm thick plate cannot be<br/>reduced to less than 20 mm in one pass, the coefficient of friction between the roll and<br/>the plate is`,
+      image: "",
+      options: [
+        `0.07`,
+        `0.14`,
+        `0.28`,
+        `0.35`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In drawing operation, if<br/><em><br/>D<sub>i</sub><br/></em><br/>is initial diameter and <em>D</em><br/><sub>0</sub><br/>is final diameter, then the degree of drawing equal to`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_32.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_33.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_34.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_35.png"/>`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The surface obtained from circular generatrix and straight line directix would be`,
+      image: "",
+      options: [
+        `plain`,
+        `cylindrical`,
+        `surface of revolution`,
+        `straight line (plain surface in practice)`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An annealed copper strip 225 mm wide and 25 mm thick is being rolled to a thickness of<br/>20 mm in one pass. The roller radius is 300 mm and the rolls rotate at 100 rpm. Annealed<br/>copper has a true stress of about 80 MPa in the unconstrained condition and true stress<br/>is around 275 MPa<br/>at a true strain of 0.223. The roll separating force at average<br/>true stress in the roll gap will be _____ MN. (Correct up to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.55",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_2.png"/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In an orthogonal cutting process, rake angle α is 6° and the width of cut, <em>b</em><br/>is 10 mm. The undeformed chip thickness is 200 μm. If 13.36 gram of steel chips with a<br/>total length of 500 mm are obtained, then the slip plane angle is _____ degrees. [Take<br/>density of steel as 7.83 gm/cm<sup>3</sup><br/>]<br/>[Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "32",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A metallic strip having a thickness of 12 mm is to be rolled using two steel rolls, each<br/>of 800 mm diameter. It is assumed that there is no change in width of the strip during<br/>rolling. In order to achieve 10% reduction in cross-sectional area of the strip after<br/>rolling, the angle subtended by<br/>the deformation zone at the centre of the roll is<br/>____ degrees. (Correct up to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "3.14",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Program command format for tool movement along the line <em>P</em><br/><sub>1</sub><br/><em>P</em><br/><sub>2</sub><br/>during machining (refer figure) is<br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_9.png"/>`,
+      image: "",
+      options: [
+        `G01 G90 X20 Y10 Z0`,
+        `G01 G91 X10 Y–10 Z0`,
+        `G01 G90 X–10 Y10 Z0`,
+        `G01 G91 X20 Y10 Z0`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `It is required to drill a hole of 10 mm diameter and 20 mm depth in a hard alloy using<br/>the following conditions,<br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_11.png"/><br/>If current efficiency is 100%, then the machining current <img align="absmiddle" alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_12.png"/><br/>required is ________ <em>A</em><br/>.`,
+      image: "",
+      options: [],
+      answer: "100",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A tensile specimen with a 12 mm initial diameter and 50 mm gage length reaches maximum<br/>load at 90 kN and fractures at 70 kN. The minimum diameter at fracture is 10 mm. The<br/>true fracture stress and engineering strain at fracture are`,
+      image: "",
+      options: [
+        `796 MPa and 0.365 respectively`,
+        `796 MPa and 0.44, respectively`,
+        `891 MPa and 0.44, respectively`,
+        `891 MPa and 0.365 respectively`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The frequency of pulsing in a die-sinking electric discharge machine (EDM) is 15 kHz. The<br/>pulse off-time is set at 40 micro-seconds. The duty factor at this setting is`,
+      image: "",
+      options: [
+        `0.40`,
+        `0.60`,
+        `0.67`,
+        `2.50`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The voltage current characteristic for a <em>DC</em><br/>source for arc welding is linear with open circuit voltage of 40V and short circuit<br/>current of 400A. The maximum power of the source will be`,
+      image: "",
+      options: [
+        `16 kW`,
+        `48 kW`,
+        `4 kW`,
+        `24 kW`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_16.png"/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A sine bar has a length of 350 mm. Each roller has diameter of 30 mm. During taper angle<br/>measurement of a components, the height from the surface plate to the centre of a roller<br/>is 140 mm. The calculated taper angle is`,
+      image: "",
+      options: [
+        `19.92`,
+        `20.92`,
+        `21.92`,
+        `22.92`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong><br/>(Machining Process) with <strong>List-II</strong><br/>(Application) and select the correct answer using the codes given below the lists:<br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_19.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In a shearing operation, a sheet of 7 mm thickness is cut along a length of 250 mm.<br/>Cutting blade is 350 mm long. The ultimate shear strength of the sheet is 180 MPa and<br/>penetration to thickness ratio is 0.2. Neglecting friction and assuming force vs<br/>displacement curve to be trapezoidal,<br/>which of the following statement(s) is/are<br/>correct?`,
+      image: "",
+      options: [
+        `Work done is 441 J when zero shear is provided on the punch.`,
+        `Force exerted is 14.7 kN when a shear of 30 mm is provided on the blade.`,
+        `Work done is 2205 J when zero shear is provided on the punch.`,
+        `Force exerted is 20.59 kN when a shear of 30 mm is provided on the blade.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a sand casting process, a sprue of 10 mm base diameter and 350 mm height leads to a<br/>runner which fills a cubical moved cavity of 120 mm size. The mould filling time is`,
+      image: "",
+      options: [
+        `2.81 seconds`,
+        `5.78 seconds`,
+        `7.54 seconds`,
+        `8.39 seconds`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cylindrical side riser is used for a sand casting mould for casting a rectangular<br/>plate of dimensions 10 cm × 15 cm × 5 cm and having a solidification time of 3 minutes.<br/>In order to store the heat content of riser for more time, the top face circular<br/>cross-sectional area is insulated. The riser and casting are in the same mould. The<br/>solidification time of the riser is 5 minutes. Assuming the<br/>height to diameter<br/>ratio for the riser to be 1, the diameter of the riser is _______ cm. (Correct upto 2<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "8.80",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a single pass rolling process using 400 mm diameter steel rollers, a strip of width<br/>140 mm and thickness 8 mm undergoes 10% reduction of thickness. Under similar conditions<br/>if thickness of strip is increased to 10 mm, then the percentage increase in angle of<br/>bite for 10% reduction is`,
+      image: "",
+      options: [
+        `11.82%`,
+        `14.82%`,
+        `28.18%`,
+        `18.18%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An aluminium rod of 6.25 mm diameter is drawn into wire of 5.6 mm diameter of semi die<br/>angle is 10.1°. If the nominal stress is 35 MPa and coefficient of friction is 0.04, the<br/>drawing stress is`,
+      image: "",
+      options: [
+        `6 MPa`,
+        `9.81 MPa`,
+        `8.18 MPa`,
+        `9.19 MPa`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `While turning a steel rod depth of cut is 2.5 mm and a feed of 0.16 mm/rev is provided.<br/>By<br/><br/>assuming ORS tool geometry 0°, 10°, 8°, 9°, 15°, 75°, 0 (mm). Cutting force and thrust<br/>force is<br/><br/>measured as 500 N and 200 N. If the chip thickness is 0.48 mm the friction angle is<br/>______ rad.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.555",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The dimension and tolerances on flange of thickness T as shown in the figure below, is<br/><br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_37.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_38.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_39.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_40.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_41.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test4_part_syllabus_gate_2026_me_manufacturing_engineering/img_42.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Heat Transfer",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A gray, diffuse opaque surface (absorptivity = 0.7) is at 250°C and receives irradiation<br/>of 1500 W/m<sup>2</sup><br/>. Then the radiosity of the surface is :`,
+      image: "",
+      options: [
+        `2500.12 W/m<sup>2</sup>`,
+        `3317.52 W/m<sup>2</sup>`,
+        `3419.53 W/m<sup>2</sup>`,
+        `4526.72 W/m<sup>2</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A black surface is at 200°C and is exposed to surrounding at 50°C and convects and<br/>radiates heat to the surroundings considering it as large black enclosure. The<br/>convection coefficient is 100 W/m<sup>2</sup><br/>K. If the heat conducted to the surface through a solid of conductivity 12 W/mK.<br/>The<br/>temperature gradient at the surface in the solid is`,
+      image: "",
+      options: [
+        `–1111.7 °C/m`,
+        `–1435.08 °C/m`,
+        `–1781.7 °C/m`,
+        `–1881.8 °C/m`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements about fins are correct?`,
+      image: "",
+      options: [
+        `Fin effectiveness is the ratio of heat transfer with the fin to heat transfer<br/>without the fin.`,
+        `Fin efficiency is the ratio of actual heat transfer by the fin to the heat transfer<br/>when the entire fin were at base temperature.`,
+        `Fins are more effective when the convective heat transfer coefficient is very low.`,
+        `Fins with a high thermal conductivity material have lower efficiency.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thermocouple is the form of a long cylinder of 2 mm diameter initially at 30°C is used<br/>to measure the temperature of a cold gas at –160°C. The convection coefficient over the<br/>surface is 60 W/m<sup>2</sup><br/>K. The material properties are : density = 8922 kg/m<sup>3</sup><br/>; specific heat = 410 J/kgK, conductivity = 22.7 W/mK. The time it will take to indicate<br/>–150°C is _____ sec. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "89.76",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The temperature ratio for the flow over a flat plate is given by<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_5.png"/><br/>If <em>k</em><br/>= 0.03 W/mK, then the value of convective heat transfer coefficient is _____<br/>W/m<sup>2</sup><br/>K. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The ratio of thermal to hydrodynamic boundary layer thickness in laminar flow varies as`,
+      image: "",
+      options: [
+        `Root of reynolds number`,
+        `Root of Nusselt number`,
+        `One third power of Prandtl number`,
+        `Negative of one third power of Prandtl number`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The shape factor from the floor to 45° roof over a long corridor as shown in the figure<br/>is ____.<br/>[Correct upto three decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_7.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.325",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two perpendicular planes of each 2 m × 2 m meet at a common edge. The horizontal plane<br/>has an emissivity of 0.4 and the vertical plane has an emissivity of 0.6. If these<br/>planes are at 400 K and 600 K respectively, then the net radiation exchange is ______ kW<br/>[Rounds upto two decimal<br/>places] [Take shape factor from the horizontal to the<br/>vertical plane of 0.20004]`,
+      image: "",
+      options: [],
+      answer: "3.29",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `On clear nights there is radiation from Earths surface to the space. On such a night,<br/>the water particles on plant leaves radiate to the sky whose temperature may be taken as<br/>–70°C. The water particles receives heat from air surrounding it by convection, the<br/>convection heat transfer coefficient having a value of 28 W/m<sup>2</sup><br/>K. If the water should not freeze, then the temperature of surrounding air will be<br/>_____°C. [Assuming water surface to be black] [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "7.81",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of shape factor will be highest when`,
+      image: "",
+      options: [
+        `The surface are farther apart`,
+        `the surface are closer`,
+        `the surface are smaller and closer`,
+        `the surface are larger and closer`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two sphere <em>A</em><br/>and <em>B</em><br/>of same material have radii 1 m and 4 m and temperature 4000 K and 2000 K respectively,<br/>then the energy radiated by sphere <em>A</em><br/>is`,
+      image: "",
+      options: [
+        `greater than that of sphere <em>B</em>`,
+        `less than that of sphere <em>B</em>`,
+        `equal to that of sphere <em>B</em>`,
+        `two times that of sphere <em>B</em>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two long parallel surfaces have emissivity of 0.90 each. The number of thin parallel<br/>shields of equal emissivity required to reduce the heat exchange by 80% are`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `7`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cube at high temperature is immersed in a constant temperature bath. It loses heat<br/>from its top, bottom, and side surfaces with heat transfer coefficient of<br/><em><br/>h<sub>t</sub><br/></em><br/>,<br/><em><br/>h<sub>b</sub><br/></em><br/>and<br/><em><br/>h<sub>s</sub><br/></em><br/>respectively. The average heat transfer coefficient for the cube is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_16.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_17.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_18.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_19.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A composite wall separates combustion gases at 2600°C from liquid at 100°C, with gas and<br/>liquid side heat transfer coefficients of 50 and 1000 W/m<sup>2</sup><br/>K respectively. The wall is composed of a 10 mm thick layer of beryllium oxide<br/>(<em>k</em><br/>= 21.5 W/mK) on the gas side and 20 mm thick slab of stainless steel (<em>k</em><br/>= 25.4 W/mK) on the liquid side. The contact resistance between the oxide and the steel<br/>is 0.05 m<sup>2</sup><br/>K/W. For 1-D steady state heat conduction, the rate of heat loss per unit surface area<br/>is`,
+      image: "",
+      options: [
+        `112.34 kW/m<sup>2</sup>`,
+        `47.84 kW/m<sup>2</sup>`,
+        `34.60 kW/m<sup>2</sup>`,
+        `40.34 kW/m<sup>2</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_21.png"/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `An insulation coating of outer radius<br/><em><br/>r<sub>o</sub><br/></em><br/>= 3 mm covers a wire of radius<br/><em><br/>r<sub>i</sub><br/></em><br/>= 1 mm carrying electrical current. The thermal conductivity of the insulation material<br/>is 0.2 W/m.K. The convection heat transfer coefficient of the outer surface of coating<br/>exposed to air is 50 W/m<sup>2</sup><br/>-K.<br/>Which of the following statement is/are correct?`,
+      image: "",
+      options: [
+        `Critical thickness of insulation is 4 mm.`,
+        `Critical thickness of insulation is 3 mm.`,
+        `Due to the addition of insulation coating on the wire, the heat transfer from the<br/>wire increases.`,
+        `Due to the addition of insulation coating on the wire, the heat transfer from the<br/>wire decreases.`
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a counterflow heat exchanger, water flowing through a tube of 10 cm inner diameter is<br/>heated by steam condensing on the outside of the tube. The convective film coefficient<br/>on the water and steam are estimated to be 12000 and 20000 kJ/m<sup>2</sup><br/>-hr-deg. Neglecting tube thickness and its<br/>resistance to heat flow, the overall<br/>heat transfer coefficient for the heat exchanger is`,
+      image: "",
+      options: [
+        `6500 kJ/m<sup>2</sup><br/>-hr-deg`,
+        `7500 kJ/m<sup>2</sup><br/>-hr-deg`,
+        `8500 kJ/m<sup>2</sup><br/>-hr-deg`,
+        `9000 kJ/m<sup>2</sup><br/>-hr-deg`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A very long rod 5 mm diameter has one end maintained at 100°C. The surface of the rod is<br/>exposed to ambient air at 25°C with a convection heat trasnfer coefficient of 100<br/>W/m<sup>2</sup><br/>K. What will be the heat loss from the rod? [Assume thermal conductivity, <em>k</em><br/>= 398 W/mK]`,
+      image: "",
+      options: [
+        `5.1 kW`,
+        `8.3 kW`,
+        `5.1 W`,
+        `8.3 W`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A plane wall 20 cm thick has a thermal conductivity given by the following<br/>relation:<br/><br/><em>k</em><br/>= 2 + 0.005T W/mK<br/><br/>where <em>T</em><br/>is temperature in celcius. If two surface of the wall are at 150°C and 50°C, then the<br/>rate of heat transfer for a wall of 3 m × 5 m is`,
+      image: "",
+      options: [
+        `17.85 kW`,
+        `18.17 kW`,
+        `17.17 kW`,
+        `18.75 kW`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_12.png"/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong><br/>with <strong>List-II</strong><br/>and select the correct answer using the codes given below the lists:<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_15.png"/>`,
+      image: "",
+      options: [
+        `A-2, B-4, C-3, D-1`,
+        `A-3, B-1, C-4, D-2`,
+        `A-3, B-4, C-1, D-2`,
+        `A-2, B-1, C-3, D-4`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A steel strap is serving as a support for the steam pipe shown in the adjoining figure.<br/>The strap is welded to the pipe and bolted to the ceiling the junction between the<br/>support strut and the ceiling is adiabatic, and the outside temperature of the steam<br/>pipe is 110°C. The strut is 80 cm<br/><br/>high, 12.5 cm wide and 0.3 cm thick. The rate at which heat is lost to the surrounding<br/>air by the support strut is ________ W. [Correct upto two decimal places]. It may be<br/>assumed that thermal conductivity for steel is 45 W/mK, the total outside surface<br/>coefficient is 17 W/m<sup>2</sup><br/>K and the surrounding air is at 32°C.<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_23.png"/>`,
+      image: "",
+      options: [],
+      answer: "21.14",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_24.png"/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a parallel flow heat exchanger, water at a rate of 5400 kg/hr enters at 20°C to cool<br/>oil at a rate of 7200 kg/hr entering at 120°C. The overall heat transfer coefficient is<br/>200 W/m<sup>2</sup><br/>K, and heat exchanger area is 25 m<sup>2</sup><br/>. Considering the specific heats of water and oil as 4.2 kJ/kgK and 2 kJ/<br/>kgK<br/>respectively. The temperature of water at exit is:`,
+      image: "",
+      options: [
+        `83°C`,
+        `44°C`,
+        `67°C`,
+        `54°C`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An electric motor is to be connected by a horizontal steel shaft (<em>k</em><br/>= 42.56 W/mK), 25 mm in diameter to an impeller of a pump, circulating liquid metal at a<br/>temperature of 540°C. If the temperature of electric motor is limited to a maximum value<br/>of 52°C with the ambient air at 27°C<br/><br/>and heat transfer coefficient of 40.7 W/m<sup>2</sup><br/>.K, the length of shaft necessary between the motor and pump is [Assuming, no heat loss<br/>from the fin tip]<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_27.png"/>`,
+      image: "",
+      options: [
+        `20 cm`,
+        `30 cm`,
+        `40 cm`,
+        `50 cm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_28.png"/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A parallel flow heat exchanger has hot and cold water streams running through it has the<br/>following data :<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_30.png"/><br/>The area of the heat exchanger is _______ m<sup>2</sup><br/>. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "16.12",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Three thin walled infinitely long hollow cylinders of radii 5 cm, 10 cm and 15 cm are<br/>arranged concentrically as shown in figure below. <em>T</em><br/><sub>1</sub><br/>= 1000 K and <em>T</em><br/><sub>3</sub><br/>= 300 K.<br/><br/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_32.png"/><br/>Assumed ε<sub>1</sub><br/>= ε<sub>2</sub><br/>= ε<sub>3</sub><br/>= 0.05 and vacuum in the spaces between the cylinders, the steady state temperature of<br/>cylinder surface 2 is ______ K. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "774.19",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A shell and tube heat exchanger is used as an ammonia condenser with ammonia vapor<br/>entering the shell at 50°C as a saturated vapor. Water enters the single pass tube<br/>arrangement at 20°C and the total heat transfer required is 200 kW. The overall heat<br/>transfer coefficient is 1000 W/m<sup>2</sup><br/>°C. The area to achieve a heat exchanger effectiveness of 60 percent with an exit water<br/>temperature of 40°C, is [Use the relation, ε = 1 – e<sup>–N</sup><br/>, for all exchangers having C = 0]`,
+      image: "",
+      options: [
+        `7.16 m<sup>2</sup>`,
+        `8.16 m<sup>2</sup>`,
+        `9.16 m<sup>2</sup>`,
+        `10.16 m<sup>2</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `During the ripening process of oranges, the energy released is estimated as 563<br/>W/m<sup>3</sup><br/>. If the orange is assumed to be homogenous sphere of diameter 8 cm with <em>k</em><br/>= 0.15 W/mK, the temperature at the centre of orange is _____ °C. [Take outer surface<br/>temperature as 2°C]`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_36.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A balanced counterflow heat exchanger has a surface area of 20 m2 and overall heat<br/>transfer coefficient of 20 W/m<sup>2</sup><br/>K. Air (cp = 1000 J/kgK) entering at 0.4 kg/sec and 280 K is to be preheated by the air<br/>leaving the system at 0.4 kg/sec and 300 K. The temperature in K of the preheated air is`,
+      image: "",
+      options: [
+        `290`,
+        `300`,
+        `320`,
+        `350`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Air flows over a heated plate at a plate of velocity of 40 m/s. The local skin friction<br/>co-efficient at a point on a plate is 0.002. For air, density = 0.88 kg/m<sup>3</sup><br/>, viscosity = 2.286 × 10<sup>–5</sup><br/>kg/ms,<br/><em><br/>C<sub>p</sub><br/></em><br/>= 1.001 kJ/kgK , <em>k</em><br/>= 0.035 W/mK. The local heat transfer coefficient for the plate will be<br/><br/>_____ W/m<sup>2</sup><br/>K. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "46.76",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is(are) correct regarding the variation of the spectral<br/>blackbody emissive power?`,
+      image: "",
+      options: [
+        `The emitted radiation is a continuous function of wavelength. At any specified<br/>temperature, it increases with wavelength, reaches a peak, and then decreases with<br/>increasing wavelength.`,
+        `At any wavelength, the amount of emitted radiation increases with increasing<br/>temperature.`,
+        `As temperature increases, the curves shift to the left to the shorter wavelength<br/>region. Consequently, a larger fraction of the radiation is emitted at shorter<br/>wavelengths at higher temperatures.`,
+        `Irradiation is the rate at which radiation leaves a surface due to emission and<br/>reflection in all directions per unit area of the surface.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A white, uninsulated, rectangular duct passes through a room. The duct is 45 cm wide and<br/>30 cm high. Air at 40°C enters the duct flowing at 4.0 m/s.<br/><br/>For air at 40°C: μ = 1.91 × 10<sup>–5</sup><br/>kg/s-m; ρ = 1.130 kg/m<sup>3</sup><br/>; cp = 1.0051 kJ/kgK; k = 0.02718 W/mK<br/>The Reynolds number of the air entering the<br/>duct will be`,
+      image: "",
+      options: [
+        `6.5 × 10<sup>4</sup>`,
+        `7 × 10<sup>4</sup>`,
+        `8.5 × 10<sup>4</sup>`,
+        `9 × 10<sup>4</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_39.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bare, horizontal conductor with a circular cross section and an outside diameter of<br/>1.5 cm dissipates 25 W per meter of wire length. The conductor is cooled by free<br/>convection, and the surrounding air temperature is 15°C. The film temperature is 38°C.<br/>The film coefficient is<br/><br/>10.27 W/m<sup>2</sup><br/>K. The conductor’s surface temperature is`,
+      image: "",
+      options: [
+        `29°C`,
+        `43°C`,
+        `54°C`,
+        `67°C`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct with respect to Nusselt number and<br/>convective heat transfer coefficient?`,
+      image: "",
+      options: [
+        `Nusselt number represents the ratio of temperature gradient at the surface to an<br/>overall or reference temperature gradient.`,
+        `Nusselt number represents the dimensionless slope of the temperature distribution<br/>curve at the surface.`,
+        `The convective coefficient can be evaluated from a knowledge of fluid temperature<br/>distribution in the neighbourhood of the surface.`,
+        `For a given Nusselt number the convective coefficient is inversely proportional to<br/>thermal conductivity of the fluid.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A long thin glass walled, 0.3 cm diameter, mercury thermometer is placed in a stream of<br/>air with convection coefficient of 60 W/m<sup>2</sup><br/>K for measuring transient temperature of air. Consider cylindrical thermometer bulb<br/>consists of mercury only. For which k = 8.9 W/mK and α = 0.016 m<sup>2</sup><br/>/h.<br/>Time required for the temperature change to reach half of its initial value is<br/>_____sec. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "17.33",
+      solution: `<img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_41.png"/><img alt="" src="js/questions/subjectwise_test7_part_syllabus_gate_2026_me_heat_transfer/img_42.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Engineering Mathematics",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The minimum number of times a fair coin needs to be tossed, so that the probability of<br/>getting atleast two heads is atleast 0.96 is`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_4.png"/>then<br/>which of the following is correct?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_5.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_6.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_7.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_8.png"/>`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given that the determinant of the matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_34.png"/><br/>is –96, then the determinant of the matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_35.png"/>is`,
+      image: "",
+      options: [
+        `384`,
+        `-192`,
+        `-768`,
+        `-384`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For the differential equation <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_37.png"/><br/>in radians with the initial condition, x(0) = 0 the value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_38.png"/>is<br/>_____.`,
+      image: "",
+      options: [],
+      answer: "0.5",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Mohan draws a card from a well shuffled pack of cards. If the card is red king, he is<br/>paid Rs. 39 and if the card is black then he is paid Rs. 26. In rest of the cases, he<br/>has to pay Rs. 13. In long run, the average profit/loss made by Mohan per draw is<br/>Rs.______. (Consider ‘+’ sign for profit and ‘–’ sign for loss).`,
+      image: "",
+      options: [],
+      answer: "+8.5",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_50.png"/><br/>is eigen value of matrix <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_51.png"/>then<br/>the other two eigen values are`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_52.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_53.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_54.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_55.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Rolle’s theorem cannot be applied for the function f (x) = |x| in [–2, 2] because`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_57.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_58.png"/>`,
+        `<em>f</em><br/>(–2) ≠ <em>f</em><br/>(2)`,
+        `None of the above`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A unit normal vector to the surface x<sup>2</sup><br/>– y<sup>2</sup><br/>+ z = 2 at (1, –1, 2) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_60.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_61.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_62.png"/>`,
+        `None of these`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The area between the curves <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_64.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_65.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_66.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_67.png"/>`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_68.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If a random variable X has uniform distribution in the interval [0, 30], then <em>P</em><br/>(5<br/><x 10)="" <="" is<="" p=""><br/></x>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_69.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_72.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_73.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the following differential equation:<br/><br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_91.png"/><br/>Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `The degree of the equation is not defined.`,
+        `The order of the equation is 2.`,
+        `The order of the equation is not defined.`,
+        `The degree of the equation is 2.`
+      ],
+      answer: ["A", "B"],
+      solution: `(a,b)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The value of ‘<em>b</em><br/>’ for which <em>u</em><br/>(<em>x</em><br/>, <em>y</em><br/>) =<br/><em><br/>e<sup>bx</sup><br/></em><br/>cos5y is harmonic is`,
+      image: "",
+      options: [
+        `+3`,
+        `-3`,
+        `+5`,
+        `-5`
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_94.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A box contains 2 washers, 3 nuts and 4 bolts. Items are drawn from the box at random one<br/>at a time without replacement. The probability of drawing 2 washers first followed by 3<br/>nuts and subsequently the 4 bolts is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_96.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_97.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_98.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_99.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_100.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_101.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>k</em><br/>be a positive real number and let<br/><br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_102.png"/><br/>If det (Adj A) + det (adj B) = 106, then k is equal to _____.`,
+      image: "",
+      options: [],
+      answer: "4.5",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_103.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <em>f</em><br/>(<em>x</em><br/>) = 3x<sup>3</sup><br/>– 7x<sup>2</sup><br/>+ 5x + 7. The absolute minimum value of f(x) over the interval [0, 2] is ____.`,
+      image: "",
+      options: [],
+      answer: "7",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_116.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The Newton-Raphson method is used to solve the equation <em>x</em><br/><sup>3</sup><br/>– 5<em>x</em><br/><sup>2</sup><br/>+ 6<em>x</em><br/>+ <em>k</em><br/>= 0. Taking the initial guess as <em>x</em><br/>= 5, the solution obtained at the end of first iteration is 4, then the value of<br/><em>k</em><br/>is __________.`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_117.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The marks obtained by students were found normally distributed with mean 60 and variance<br/>25.<br/>The percentage of students who scored more than 65 marks is`,
+      image: "",
+      options: [
+        `34.15%`,
+        `15.85%`,
+        `50%`,
+        `17.07%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Three factories <em>A</em><br/>, <em>B</em><br/>and <em>C</em><br/>produce the same product. The factory A produces twice as many as B produces while the<br/>factories <em>B</em><br/>and <em>C</em><br/>produce in the same quantity. It is known that 2% of the products of <em>A</em><br/>as well as <em>C</em><br/>are defective while 4% of the products of <em>B</em><br/>are defective. All the products of the three factories are stocked together. If a<br/>product is selected at random from the stock, then the probability that the product is<br/>defective is_____.`,
+      image: "",
+      options: [],
+      answer: "0.025",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_10.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_11.png"/>`,
+        `log3`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_13.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_14.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A curve passes through (2, 0) and the slope of tangent at point <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_16.png"/>The area<br/>enclosed by the curve and the x-axis in the fourth quadrant is`,
+      image: "",
+      options: [],
+      answer: "1.33",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_17.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If y(t) is a solution of <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_19.png"/>and<br/>y(0) = –1, then y(1) is equal to`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_20.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_21.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_22.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_23.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If <em>x</em><br/>follows Poisson’s distribution, then the absolute value of the mean of the distribution<br/>is ______. It is given that<br/><br/><em>P</em><br/>(2) = 9<em>P</em><br/>(4) + 90 <em>P</em><br/>(6)`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_25.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The values of a, b are such that the surface <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_27.png"/>cut<br/>orthogonally at (1, –1, 2) are:`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_28.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_29.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_30.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_31.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_32.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_41.png"/>is<br/>_____.`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_42.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_45.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_46.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Given the ordinary differential equation:<br/><img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_47.png"/>The<br/>value of y(1) is ______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.21",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_48.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_49.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation<br/><em><br/>e<sup>x</sup><br/></em><br/>cosydx –<br/><em><br/>e<sup>x</sup><br/></em><br/>sinydy = 0 satisfying the condition y(0) = 0 is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_74.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_75.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_76.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_77.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_78.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the following differential equation<br/><br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_79.png"/><br/>is <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_80.png"/>where<br/>‘c’ is a constant. Select the correct for “?”.`,
+      image: "",
+      options: [
+        `2 cos θ`,
+        `2 sin θ`,
+        `2 tan θ`,
+        `2 cot θ`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_81.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_82.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_83.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_84.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_85.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_86.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_87.png"/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider the functions <em>f</em><br/>(<em>x</em><br/>) and <em>g</em><br/>(<em>x</em><br/>), both defined from <em>R</em><br/>→ <em>R</em><br/>and are defined as <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_89.png"/>and<br/>g(x) = xn where n ∈N. If the area between f(x) and`,
+      image: "",
+      options: [
+        `12`,
+        `15`,
+        `20`,
+        `30`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A fair die is rolled. Let R denote the event of obtaining a number less than or equal to<br/>5 and S denote the event of obtaining an odd number. Then <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_92.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.60",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential equation 4y′′(x) + 64y(x) = 0 with initial conditions y(0) = 0<br/>and y′(0) = 1024.<br/>The value of y at x = 1 is _____ (upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "-193.74",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let R be a region in the first quadrant of xy plane enclosed by the two curves as shown<br/>below.<br/><br/>Which of the following expression does represent the area of the region <em>R</em><br/>?<br/><br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_104.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_105.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_106.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_107.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_108.png"/>`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_110.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_111.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_112.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_113.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_114.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test5_part_syllabus_gate_2026_me_engineering_mathematics/img_115.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - General Aptitude",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The sum of four numbers is 64. If you add 3 to the first number, 3 is subtracted from the<br/>second number, the third is multiplied by 3 and the fourth is divided by 3, then all the<br/>results are equal. What is the difference between the largest and the smallest of the<br/>original numbers?`,
+      image: "",
+      options: [
+        `21`,
+        `27`,
+        `32`,
+        `Cannot be determined`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The price of an article was increased by r%. Later the new price was decreased by<br/><em>r</em><br/>%. If the latest price was <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_16.png"/>then<br/>the original price was`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_17.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_18.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_19.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_20.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The value of log tan 10° + log tan 11° + log tan 12° + ...... log tan 80° is ________ .`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The population of a place increased at an annual rate of 6% from 2016 to 2018 to 50000<br/>and the growth continued like this for the next 3 years. If A is the population of 2016<br/>and B is population of 2020, both rounded off to the next possible integers, then find<br/>the value of <em>B</em><br/>– <em>A</em><br/>.`,
+      image: "",
+      options: [
+        `13220`,
+        `12850`,
+        `11680`,
+        `16270`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_31.png"/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the digit in the unit’s place of a two-digit number is halved and the digit in the<br/>ten’s place is doubled, the number thus obtained is equal to the number obtained by<br/>interchanging the digits.<br/>Which of the following is definitely true?`,
+      image: "",
+      options: [
+        `Sum of the digits is a two-digit number.`,
+        `Digit in the units place is twice the digit in the ten’s place.`,
+        `Digits in the unit’s place and the ten’s place are equal.`,
+        `Digit in the unit’s place is half of the digit in the ten’s place.`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_34.png"/>is`,
+      image: "",
+      options: [
+        `2`,
+        `7`,
+        `8`,
+        `33`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be<br/>formed?`,
+      image: "",
+      options: [
+        `210`,
+        `1050`,
+        `25200`,
+        `21400`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find out the wrong number in the series:<br/>2880, 480, 92, 24, 8, 4, 4`,
+      image: "",
+      options: [
+        `480`,
+        `92`,
+        `24`,
+        `8`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If the numbers A, B, C, D andE is an arithmetic sequence. Which of the following are<br/>correct.`,
+      image: "",
+      options: [
+        `2A, 2B, 2C, 2D and 2E also in arithmetic sequence.`,
+        `A – 3, B – 3, C – 3, D – 3, E – 3 also in arithmetic sequence.`,
+        `A<sup>2</sup><br/>, B<sup>2</sup><br/>, C<sup>2</sup><br/>, D<sup>2</sup><br/>and E<sup>2</sup><br/>also in arithmetic sequence.`
+      ],
+      answer: ["A", "B"],
+      solution: `(`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following options is close in meaning to the word below?<br/>PELLUCID`,
+      image: "",
+      options: [
+        `Logistical`,
+        `Philandering`,
+        `Clear`,
+        `Vagrant`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_67.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_68.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_69.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_71.png"/>`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Word opposite in meaning to the word<br/>‘LACKADAISCICAL’`,
+      image: "",
+      options: [
+        `Lively`,
+        `Laidback`,
+        `Longaid`,
+        `Passive`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given set of analogous words, one of the word is missing. Select the word which<br/>exhibit the same analogy as established among the three <strong>Bold</strong><br/>words.<br/><br/><strong>Inoculation : ?? : : Exposure : Toughening</strong>`,
+      image: "",
+      options: [
+        `Immunity`,
+        `Punctuality`,
+        `Vulnerability`,
+        `contagious`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is correct grammatically?`,
+      image: "",
+      options: [
+        `When he will reach the age of thirty, he will be able to play like his father does.`,
+        `When he will reach the age of thirty, he will be able to play as his father does.`,
+        `When he reaches the age of thirty, he will be able to play as his father does.`,
+        `When he reaches the age of thirty, he will be able to play as his father.`
+      ],
+      answer: ["C"],
+      solution: `(C)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Word opposite in meaning to to the word<br/>“SERENDIPITY’`,
+      image: "",
+      options: [
+        `Blessing`,
+        `Calm`,
+        `Misfortune`,
+        `Poise`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Fill in the blanks with most appropriate pair of words so as to make a logically<br/>meaningful sentence.<br/>Because Karishma’s parents often ______ their plans as soon as<br/>they were formed, she assumed that all adults were as ______ as her parents.`,
+      image: "",
+      options: [
+        `cancelled, indulgent`,
+        `altered, obstinate`,
+        `changed, mercurial`,
+        `solidified, capricious`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a certain office, <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_1.png"/><br/>of the workers are women, <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_2.png"/><br/>of the women are married and <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_3.png"/><br/>married women have children, <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_4.png"/><br/>of men are married and <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_5.png"/>of<br/>married man have children, the percentage of workers without children is`,
+      image: "",
+      options: [
+        `37.27%`,
+        `61.11%`,
+        `72.22%`,
+        `87.27%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The average monthly income of <em>P</em><br/>and <em>Q</em><br/>is <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_7.png"/><br/>The average monthly income of <em>Q</em><br/>and <em>R</em><br/>is <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_8.png"/><br/>and the average monthly income of <em>P</em><br/>and <em>R</em><br/>is <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_9.png"/><br/>The monthly income of <em>Q</em><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_13.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At his usual rowing rate, Rahul can travel 12 miles downstream in a certain river in 6<br/>hours less than it takes him to travel the same distance upstream. But if he could<br/>double his usual rowing rate for his 24 mile round trip, the downstream 12 miles would<br/>then take only one hour less than the upstream 12 miles. What is the speed of the<br/>current in miles per hour?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_22.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_23.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_25.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_26.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A sum of money doubles itself at compound interest in 15 years. In how many years will<br/>it become eight times?`,
+      image: "",
+      options: [
+        `45`,
+        `60`,
+        `30`,
+        `40`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_27.png"/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_28.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The last day of a century cannot be`,
+      image: "",
+      options: [
+        `Tuesday`,
+        `Thursday`,
+        `Saturday`,
+        `Sunday`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_30.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An equilateral triangle, A square and A circle have equal perimeters. If <em>T</em><br/>denotes the area of the triangle, <em>S</em><br/>, the area of the square and <em>C</em><br/>, the area of the circle, then`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_37.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_38.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_39.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_40.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider an equilateral triangle1 of side of unit length. A new equilateral triangle 2 is<br/>formed by joining the midpoints on the sides of triangle1. Then a third equilateral<br/>triangle is formed inside 2nd triangle similarly and process is repeated endlessly. The<br/>perimeter of all the triangle, thus formed is approximately`,
+      image: "",
+      options: [
+        `2 units`,
+        `3 units`,
+        `6 units`,
+        `Infinity`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given a circle with O as the centre as shown in the figure, If OA = 6 cm, then AB is<br/><br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_43.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_45.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_46.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_47.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If a = 1 + <em>x</em><br/>+ <em>x</em><br/><sup>2</sup><br/>+ ..... ∞ and b = 1 + y + <em>y</em><br/><sup>2</sup><br/>+ ..... ∞ then 1 + <em>xy</em><br/>+ x<sup>2</sup><br/>y<sup>2</sup><br/>+ x<sup>3</sup><br/>y<sup>3</sup><br/>+ ..... ∞ is given by (Where <em>x</em><br/>and y are less than 1).`,
+      image: "",
+      options: [
+        `<em>ab</em>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_50.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_51.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Six parallel horizontal lines are intersecting perpendicularly to six vertical parallel<br/>lines, the number of rectangles formed after such intersections is _____.`,
+      image: "",
+      options: [],
+      answer: "225",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Four equal discs are placed such that each one touches two others. If the area of empty<br/>space enclosed by them is <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_54.png"/>square<br/>cm, then the radius of each disc is equal to`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_55.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_56.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_57.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_58.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_59.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_60.png"/>`,
+      image: "",
+      options: [
+        `2.0 cm`,
+        `2.5 cm`,
+        `2.6 cm`,
+        `None of these`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_61.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A polygon has 44 diagonals, then the number of its sides are ____.`,
+      image: "",
+      options: [],
+      answer: "11",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The volume of the largest right circular cone that can be fitted in a cube with edge 40<br/>cm is_____ cm<sup>3</sup><br/>.`,
+      image: "",
+      options: [],
+      answer: "16755",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The given pie chart shows the study time of different subjects of a student in a day.<br/>Study the pie chart and answer the following:<br/><br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_64.png"/>`,
+      image: "",
+      options: [
+        `If 4 hours and 30 minutes were spent to study History and Chemistry then time spent<br/>on Physics is 3 hours.`,
+        `If the student studies Chemistry for 3 hours, then he/she studies Geography for 2<br/>hours.`,
+        `If the student studies 10 hours in a day, then he/she studies mathematics for 2<br/>hours.`,
+        `Instead of 10%, if the student spends 15% time to study other subjects and this<br/>extra time is taken from Mathematics. If total study time is 20 hours per day then<br/>Mathematics time is<br/>reduced by 1 hour.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_65.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Mohan is the son of Arun’s father sister. Prakash is the son of Reena, who is mother of<br/>Vikash and grandmother of Arun. Pranab is the father of Neela and grandfather of Mohan.<br/>Reena is the  wife of Pranab then wife of Vikash is related to Reena as`,
+      image: "",
+      options: [
+        `Sister`,
+        `Niece`,
+        `Sister-in-law`,
+        `Daughter-in-law`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>ABCD</em><br/>is a square having each side measuring <img align="absmiddle" alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_72.png"/><br/><em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>, <em>S</em><br/>are the mid points of sides <em>AB</em><br/>, <em>BC</em><br/>, <em>CD</em><br/>and <em>DA</em><br/>respectively. A circle is drawn inside the quadrilateral formed by joining<br/><em>PQRS </em><br/>touching all the sides. What is the area of this circle?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_73.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_74.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_75.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_76.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test6_part_syllabus_gate_2026_me_general_aptitude/img_77.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Engineering Mechanics and Engineering Materials",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Force <em>P</em><br/><sub>1</sub><br/>of magnitude 10 N is acting along horizontal direction and force <em>P</em><br/><sub>2</sub><br/>acting along vertical direction. If the resultant of <em>P</em><br/><sub>1</sub><br/>and <em>P</em><br/><sub>2</sub><br/>has magnitude of 20 N, then the magnitude of force <em>P</em><br/><sub>2 </sub><br/>and direction of resultant are`,
+      image: "",
+      options: [
+        `17.32 N, 60°`,
+        `18.92 N, 40°`,
+        `18.92, 50°`,
+        `17.3 N, 70°`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The stress-strain curve for a hypothetical material is shown below. Its proof resilience<br/>is _____ MN/m<sup>3</sup><br/>.<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_2.png"/>`,
+      image: "",
+      options: [],
+      answer: "9",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The atomic weight of copper is 63.5 g/mol. Assuming the unit cell as face-centered cubic<br/>and the lattice parameter as <img align="absmiddle" alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_6.png"/><br/>the theoretical density of copper is ______ g/cm<sup>3</sup><br/>. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "8.97",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A block of mass 100 kg is attached to springs of spring constants <em>k</em><br/><sub>1</sub><br/>= 40 N/m and <em>k</em><br/><sub>2</sub><br/>= 60 N/m.<br/>The block is displaced to the left through a distance of 2.5 m. When a<br/>block passes through its original position, then the speed of the block is<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_11.png"/>`,
+      image: "",
+      options: [
+        `1.5 m/s`,
+        `2.0 m/s`,
+        `2.5 m/s`,
+        `3.5 m/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_12.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Surface imperfection which separates two orientations that are mirror image of one<br/>another is called`,
+      image: "",
+      options: [
+        `Stacking fault`,
+        `Grain boundary`,
+        `Twin boundary`,
+        `Tilt boundary`
+      ],
+      answer: "C",
+      solution: `(C)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A uniform ladder AB of length 10 m, resting against a wall. Assuming frictionless contact<br/>at the floor (B) and wall (A). A force P of magnitude 800 N is required to maintain the<br/>equilibrium of ladder. The weight of the ladder will be<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_26.png"/>`,
+      image: "",
+      options: [
+        `1200 N`,
+        `1600 N`,
+        `800 N`,
+        `600 N`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two equal forces of 150 N are applied as shown in figure. If the length of the bar AB is<br/>500 mm and radius of pulley is 100 mm, then the sum of the moments of the forces about<br/>point A is _______ N.m. [Rounded off to the nearest integer]<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_30.png"/>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct regarding yield point phenomenon?`,
+      image: "",
+      options: [
+        `Dislocation motion is responsible for yield point.`,
+        `Presence of carbon in iron is responsible for yield point in steels.`,
+        `Upper and lower yield points are found in many aluminium alloy.`,
+        `Yield point indicates heterogeneous deformation.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three true stress (σ<br/><em><br/><sub>T</sub><br/></em><br/>) - True strain (ε<br/><em><br/><sub>T</sub><br/></em><br/>) curves are marked as 1, 2 and 3 as shown in the figure below.<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_39.png"/><br/>The correct sequence of the type of material that these curves indicate is`,
+      image: "",
+      options: [
+        `perfect elastic, elastic, perfect plastic`,
+        `perfect plastic, elastic, perfect elastic`,
+        `elastic, perfect elastic, perfect plastic`,
+        `elastic, perfect plastic, perfect elastic`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The scanning tunnelling microscope is a powerful instrument usually used to analyze and<br/>image at the`,
+      image: "",
+      options: [
+        `sub atomic scale`,
+        `atomic scale`,
+        `micrometer scale`,
+        `millimeter scale`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What are the Miller indices of the given plane?<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_41.png"/>`,
+      image: "",
+      options: [
+        `(4 4 4)`,
+        `(1 1 1)`,
+        `<br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_42.png"/>`,
+        `(2 2 2)`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_43.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The density of a perfect alkali halide having NaCl structure is 2100.3 kg/m<sup>3</sup><br/>. The density of this alkali halide if it is having 0.16% Frenkel defect will be ______<br/>kg/m<sup>3</sup><br/>. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "2100.3",
+      solution: `2100.3`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct regarding grain size of austenite?`,
+      image: "",
+      options: [
+        `If grains are fine, there is improvement in the strength of the steel after heat<br/>treatment.`,
+        `Creep strength is less for coarse grains with respect to fine grains.`,
+        `Quenching cracks and distortion are reduced in fine grains.`,
+        `During fabrication of the steel, fine grains steel may be heated to higher<br/>temperature without appreciable coarsening of grains.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `(a,c,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following material combination does not form phase diagram that are<br/>completely soluble in liquid state but partially soluble in solid state?`,
+      image: "",
+      options: [
+        `Silver and Copper`,
+        `Lead and Tin`,
+        `Copper and Nickel`,
+        `Both (a) and (c)`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The degree of freedom of an eutectic point in a binary phase diagram is _______. (Rounded<br/>off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_52.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A wooden log is to be hoisted using two chains as shown in figure. If the resultant<br/>force is to be 1200 N in vertical upward direction then the value of angle θ of<br/><em>P</em><br/><sub>2</sub><br/>from the vertical so that magnitude of <em>P</em><br/><sub>2</sub><br/>is to be minimum is ______ degrees. [Rounded off to nearest integer]<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_53.png"/>`,
+      image: "",
+      options: [],
+      answer: "60",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_54.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_55.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A block weighing 100 N is resting on horizontal surface. The coefficient of static<br/>friction is 0.5 and coefficient of kinetic friction is 0.4. A force <em>P</em><br/>= 5<em>t</em><br/>is applied on the block as shown in the figure, where t denotes time in seconds and<br/>force <em>P</em><br/>in Newton.<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_4.png"/><br/>The velocity of the block after 20 seconds is______ m/s. [Round off to two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "34.34",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A box is to be moved in the direction of OO′ as shown in figure. It is identified that a<br/>20 kN force in this direction is required but obstruction prevent direct application of<br/>such a force. Accordingly, the forces <em>P</em><br/><sub>1</sub><br/>and <em>P</em><br/><sub>2</sub><br/>are applied as shown. The magnitude of <em>P</em><br/><sub>1</sub><br/>and <em>P</em><br/><sub>2</sub><br/>are<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_8.png"/>`,
+      image: "",
+      options: [
+        `24.5 kN, 24.5 kN`,
+        `24.5 kN, 27.32 kN`,
+        `27.32 kN, 24.5 kN`,
+        `27.32 kN, 27.32 kN`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_9.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following is the most densely packed plane in FCC crystal?`,
+      image: "",
+      options: [
+        `{1 1 1}`,
+        `{1 1 0}`,
+        `{1 0 0}`,
+        `{1 1 1} and {1 1 0} both have same maximum planar density`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Square <em>ABCD </em><br/>is subjected to four forces and clockwise moment as shown in figure. The perpendicular<br/>distance between the line of action of the resultant force and point A is _____ mm.<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_14.png"/>`,
+      image: "",
+      options: [],
+      answer: "35.36",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_15.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rigid slender bar AB of length 0.5 m is sliding on the inclined plane as shown in<br/>figure. If the velocity of point <em>B</em><br/>is 1 m/s, then the angular speed of the slender bar at the given instant is<br/>_____ rad/sec. [Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_17.png"/>`,
+      image: "",
+      options: [],
+      answer: "2.23",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two smooth sphere of weight 400 N and 200 N respectively rest on an inclined surface as<br/>shown in figure. Assuming all contact surfaces as smooth, the reaction at point of<br/>contact <em>B</em><br/>is ____ N.<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_19.png"/>`,
+      image: "",
+      options: [],
+      answer: "129.69",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_20.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The homogeneous bar <em>AB</em><br/>of 1000 N is resting as shown in figure. Assuming contact surface as smooth, the tension<br/>in the rope <em>CD</em><br/>is<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_22.png"/>`,
+      image: "",
+      options: [
+        `203.60 N`,
+        `303.60 N`,
+        `403.60 N`,
+        `503.60 N`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_23.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The force in member CF of the truss shown in figure, is<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_24.png"/>`,
+      image: "",
+      options: [
+        `1732.10 kN (Tensile)`,
+        `1569.10 kN (Tensile)`,
+        `1732.10 kN (Compressive)`,
+        `1569.10 kN (Compressive)`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_25.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The coordinates of centroid of the shaded area shown in figure is<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_28.png"/>`,
+      image: "",
+      options: [
+        `10.46 mm, 19.1 mm`,
+        `19.1 mm, 10.46 mm`,
+        `12.46 mm, 17.1 mm`,
+        `15 mm, 6.37 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_29.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `For the following truss system as shown in figure, which of the following statements<br/>is/are correct?<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_32.png"/>`,
+      image: "",
+      options: [
+        `The force in the member CD is 600 N and is tensile in nature.`,
+        `The force in the member DE is 780 N and is tensile in nature.`,
+        `The force in the member CE is 1000 N and is compressive in nature.`,
+        `The force in the member BC is 600 N and is tensile in nature.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A particle of mass <em>m</em><br/>is constrained to move on a curve <em>x</em><br/><sup>3</sup><br/><em>y</em><br/>= <em>C</em><br/>under gravity (positive y-axis vertically downwards). The Lagrangian of the particle is<br/>given by`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_34.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_37.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For a pure metal transferring from FCC to BCC, assume hard sphere atoms with the same<br/>atomic radius before and after transformation. The theoretical percentage change in<br/>volume is ______ %.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "8.87",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_40.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Determine the planar density of copper atoms in a (1 0 0) plane given that the unit cell<br/>is facecentered cubic and the lattice parameter is <img align="absmiddle" alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_44.png"/>`,
+      image: "",
+      options: [
+        `7.68 × 10<sup>18</sup><br/>atoms/m<sup>2</sup>`,
+        `1.53 × 10<sup>19</sup><br/>atoms/m<sup>2</sup>`,
+        `2.30 × 10<sup>19</sup><br/>atoms/m<sup>2</sup>`,
+        `3.84 × 10<sup>19</sup><br/>atoms/m<sup>2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A block A (8 kg) rests over another block B (5 kg) placed over a smooth horizontal<br/>surface.<br/><br/>There is friction between A and B. A horizontal force <em>F</em><br/><sub>1</sub><br/>gradually increasing from zero to a maximum is applied at A so that both the blocks move<br/>without relative motion. Instead of this another horizontal force <em>F</em><br/><sub>2</sub><br/>, gradually increasing from zero to a maximum is applied to B so that<br/>the blocks<br/>move together without relative motion. Then,<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_46.png"/>`,
+      image: "",
+      options: [
+        `<em>F</em><br/><sub>1</sub><br/>(max)<br/><<em>F</em><br/><sub>2</sub><br/>(max)`,
+        `<em>F</em><br/><sub>1</sub><br/>(max) > <em>F</em><br/><sub>2</sub><br/>(max)`,
+        `<em>F</em><br/><sub>1</sub><br/>(max) : <em>F</em><br/><sub>2</sub><br/>(max) = 8 : 5`,
+        `<em>F</em><br/><sub>1</sub><br/>(max) : <em>F</em><br/><sub>2</sub><br/>(max) = 5 : 8`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_47.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 30 kg uniform disk is pin supported at its center. It is acted upon by a constant<br/>couple of 5 Nm.<br/>The string wrapped around is acted upon by a constant force of 10 N<br/>as shown. How many number of revolutions, it takes to attain an angular velocity of 20<br/>rad/s?<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_49.png"/>`,
+      image: "",
+      options: [
+        `1.7 revs`,
+        `2.7 revs`,
+        `3.7 revs`,
+        `4.7 revs`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_50.png"/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are correct regarding linear imperfections<br/>(dislocations) in crystalline solids?`,
+      image: "",
+      options: [
+        `An edge dislocation is produced by the insertion of an extra half plane of atoms.`,
+        `Dislocations are produced only during solidification and not during plastic<br/>deformation.`,
+        `Dislocation are produce only during plastic deformation and not during<br/>solidification.`,
+        `The displacement distance of the atoms around the dislocation is called the slip or<br/>Burgers vector.`
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The angle of tilt θ with the horizontal so that the contact force at B will be one-half<br/>that at A for the smooth cylinder is ____ Degrees.<br/>(Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_56.png"/>`,
+      image: "",
+      options: [],
+      answer: "18.43",
+      solution: `<img alt="" src="js/questions/subjectwise_test8_part_syllabus_gate_2026_me_engineering_mechanics_and_engineering_materials/img_57.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "SWT - Theory of Machines",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The equivalent stiffness of the spring-mass system shown below is<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_3.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_4.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_5.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_6.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_7.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Flywheels are fitted for single cylinder and multicylinder engine of the same rating.<br/>Which of the following statement is true?`,
+      image: "",
+      options: [
+        `The flywheel will be smaller for single cylinder engine as compared to that for<br/>multi cylinder engine.`,
+        `The flywheel will be smaller for multi-cylinder engine as compared to that for<br/>single cylinder engine.`,
+        `The flywheels for two engines will be identical.`,
+        `The size of flywheel for an engine depends on the compression ratio.`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A Hartnell governor has its controlling force <em>F</em><br/>given by<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_9.png"/><br/>where <em>r</em><br/>is the radius of balls and a and b are constants. The governor becomes isochronous when`,
+      image: "",
+      options: [
+        `<em>a</em><br/>= 0 and <em>b</em><br/>is positive`,
+        `<em>a</em><br/>is positive and <em>b</em><br/>= 0`,
+        `<em>a</em><br/>is negative and <em>b</em><br/>is positive`,
+        `<em>a</em><br/>is positive and <em>b</em><br/>is also positive`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a reciprocating engine mechanism, the crank and connecting rod of same length r metres<br/>are at right angles to each other at a given instant, when the crank makes an angle of<br/>45° with inner dead centre. If the crank rotates with a uniform velocity of ω rad/s, the<br/>angular acceleration of the connecting rod will be`,
+      image: "",
+      options: [
+        `2ω<sup>2</sup>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_12.png"/>`,
+        `Zero`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a single-degree damped vibrating system, a suspended mass of 6 kg makes 20<br/>oscillations in 15 seconds. The amplitude decreases to 25% of the initial value after 2<br/>oscillations. The logarithmic decrement is`,
+      image: "",
+      options: [
+        `1.44`,
+        `0.301`,
+        `0.477`,
+        `0.693`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two shafts have their axes parallel and 2.5 cm apart. One of the shaft drives the other<br/>through an Oldham’s coupling. If the speed of the shaft is 100 rpm. The maximum velocity<br/>of sliding of the intermediate disc on either of the side discs is ______ cm/min.<br/>[Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1571",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A ship has a rotor of mass 3000 kg rotating at 2500 rpm and its radius of gyration is 30<br/>cm. If the rotation of the rotor is clockwise looking from the stern, then the<br/>gyroscopic couple when ship rolls due to wave with a velocity 0.1 rad/s is ______ kN-m.<br/>[Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `0`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following is not an exact-straight line mechanism?`,
+      image: "",
+      options: [
+        `Paucellier mechanism`,
+        `Modified Scott-Russel mechanism`,
+        `Scott-Russel mechanism`,
+        `Hart mechanism`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `As the configuration diagram of scotch yoke mechanism is shown, at the instant the crank<br/><em>OP</em><br/>has an angular velocity of 10 rad/s and an angular acceleration of 30 rad/s<sup>2</sup><br/>. then the absolute acceleration of slider ‘<em>P</em><br/>’ with respect to fixed point ‘<em>O</em><br/>’ is _________ m/s<sup>2</sup><br/>.<br/>[Round of the two decimal places].<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_19.png"/>`,
+      image: "",
+      options: [],
+      answer: "20.88",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A turning moment diagram for engine consists of two isosceles triangle. The base of the<br/>triangles are from θ = 0° to θ = 180° and θ = 180° to θ = 360°. If the height of<br/>triangles is 100 kg-m, then the energy stored in the flywheel is ______ kgm. [Correct<br/>upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "39.27",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_25.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cam is designed to achieve a simple harmonic motion of a flat faced follower. Starting<br/>from the rest, the follower rises to the maximum height of 50 mm at 180° of cam rotation<br/>as shown in the figure.<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_28.png"/><br/>If the cam rotates at a uniform angular speed of 100 rpm, the speed of the follower (in<br/>mm/s) at the instance when the cam rotates 45° from the initial position is________.<br/>[Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "185",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following kinematic pairs given below, is a lower pair?`,
+      image: "",
+      options: [
+        `Ball bearings`,
+        `Tooth gears in mesh`,
+        `Cam and follower`,
+        `Crank shaft and bearing`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The necessary condition for Drag Link Quick Return mechanism is that`,
+      image: "",
+      options: [
+        `Shortest link is fixed link. Sum of the shortest link and the longest link is less<br/>than the sum of other two links.`,
+        `Longest link is a fixed link. Sum of the shortest link and the longest link is<br/>greater that the sum of other two links.`,
+        `Shortest link is fixed link. Sum of the shortest link and the longest link is<br/>greater than the sum of other two links.`,
+        `Longest link is fixed link. Sum of the shortest link and the longest link is less<br/>than the sum of other two links.`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The mechanism shown in figure has<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_39.png"/>`,
+      image: "",
+      options: [
+        `One degree of freedom`,
+        `Two degrees of freedom`,
+        `Three degrees of freedom`,
+        `Four degrees of freedom`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Space centrode is the locus of I-centre of the moving body relative to the fixed<br/>body.`,
+        `Body centrode is the locus of I-centre of fixed body relative to the movable body.`,
+        `The plane motion of a rigid body relative to another rigid body is equivalent to the<br/>sliding motion of one centrode on the other.`,
+        `If the motion of any movable link, results in definite motion of other links in a<br/>linkage then it is called as mechanism.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cam system with a spring follower is shown in the figure. The equation of the motion of<br/>‘m’ is given by (x &gt; y)<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_52.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_53.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_54.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_55.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_56.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_57.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The Sun gear in the figure is driven clockwise at 100 rpm. The ring gear is held<br/>stationary. For the number of teeth shown on the gears, the arm rotates at<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_1.png"/>`,
+      image: "",
+      options: [
+        `20 rpm CCW`,
+        `20 rpm CW`,
+        `33.37 rpm CW`,
+        `45 rpm CCW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The natural frequency of vibration of the system shown below is<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_16.png"/><br/>[Neglecting the mass of the pulley]`,
+      image: "",
+      options: [
+        `10 rad/s`,
+        `15 rad/s`,
+        `20 rad/s`,
+        `40 rad/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a four bar mechanism, the length of driver crank, coupler and follower link are 150<br/>mm, 250 mm and 300 mm respectively. If the fixed link length is <em>L</em><br/><sub>0</sub><br/>, then the range of values for <em>L</em><br/><sub>0</sub><br/>, so as to make it a crank-rocker mechanism is`,
+      image: "",
+      options: [
+        `200 ≤ <em>L</em><br/><sub>0</sub><br/>≤ 250 mm`,
+        `150 ≤ <em>L</em><br/><sub>0</sub><br/>≤ 300 mm`,
+        `200 ≤ <em>L</em><br/><sub>0</sub><br/>≤ 250 mm`,
+        `200 ≤ <em>L</em><br/><sub>0</sub><br/>≤ 400 mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cast iron flywheel is required to absorb 25000 Nm of energy as speed is increased from<br/>120 to 125 rpm. If the wheel is to be solid disc having a diameter 8 times its thickness<br/>and density of C.I. is 7200 kg/m<sup>3</sup><br/>, then the diameter of the flywheel is _____ m.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.12",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_21.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_22.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For masses <em>m</em><br/><sub>1</sub><br/>, <em>m</em><br/><sub>2</sub><br/>, <em>m</em><br/><sub>3</sub><br/>and <em>m</em><br/><sub>4</sub><br/>are 200 kg, 300 kg, 240 kg and 260 kg respectively. The corresponding radii of rotation<br/>are 0.2 m, 0.15 m, 0.25 m and 0.3 respectively and the angles between successive masses<br/>are 45°, 75° and 135°. If the radius of rotation of the balancing mass is 0.2 m, then<br/>the magnitude of the balance mass required is ________ kg. [Rounded off to nearest<br/>integer]`,
+      image: "",
+      options: [],
+      answer: "116",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_23.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_24.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Follwing data are related to a 20° involute gears in mesh in which pinion is<br/>driven:<br/><br/>Gear ratio = 3; Length of arc of contact in terms of module = 3πm<br/>The number of<br/>teeth on gear to avoid interference are ____ teeth. (Rounded off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "39",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_27.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the position of the mechanism shown in the figure. If the velocity of the slider<br/><em>A</em><br/>is 3 m/s for the given configuration. The velocity of the slider B is<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_30.png"/>`,
+      image: "",
+      options: [
+        `1.72 m/s`,
+        `1.49 m/s`,
+        `1.38 m/s`,
+        `1.21 m/s`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_31.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the figure, a mass <em>m</em><br/>is contrained to move only in the vertical direction by a circular eccentric cam. The<br/>eccentricity of the cam is 50 mm, its angular speed is 25 rad/s, and the weight of the<br/>mass is 26.7 N. Neglecting friction, the angle θ (in degrees) at the instant the cam<br/>jumps (loses contact) is _____. [Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_32.png"/>`,
+      image: "",
+      options: [],
+      answer: "107.99",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Each arm of a Porter governor is 200 mm long and is pivoted on the axis of the governor.<br/>The radii of rotation of the balls at the minimum and the maximum speeds are 120 mm and<br/>160 mm respectively. The mass of the sleeve is 24 kg and mass of each ball is 4 kg. The<br/>range of speed of the governor, is`,
+      image: "",
+      options: [
+        `20.6 rpm`,
+        `30.6 rpm`,
+        `40.6 rpm`,
+        `44.6 rpm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_34.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_35.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A disc of mass moment inertia 16 kg-m<sup>2</sup><br/>is mounted at the centre of a shaft as shown in the figure. The two ends of the shaft<br/>are fixed. The shaft has polar moment of inertia 0.25 × 10<sup>–6</sup><br/>m<sup>4</sup><br/>, length of 1 m on each side of the disc. If the modulus of rigidity of the shaft<br/>material is 80 GPa,<br/>then the frequency of torsional vibration of the disc is<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_36.png"/>`,
+      image: "",
+      options: [
+        `50 Hz`,
+        `25 Hz`,
+        `7.96 Hz`,
+        `3.98 Hz`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_37.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A spring-mass system has spring stiffness of k N/m and a mass <em>m</em><br/>kg. Its natural frequency of vibration is 12 Hz. When an additional mass of 2 kg is<br/>attached to the system. The natural frequency reduces by 2 Hz. The value of <em>k</em><br/>and <em>m</em><br/>are`,
+      image: "",
+      options: [
+        `<em>k</em><br/>= 25838 N/m, <em>m</em><br/>= 5.445 kg`,
+        `<em>k</em><br/>= 26838 N/m, <em>m</em><br/>= 4.545 kg`,
+        `<em>k</em><br/>= 25838 N/m, <em>m</em><br/>= 4.545 kg`,
+        `<em>k</em><br/>= 26838 N/m, <em>m</em><br/>= 5.445 kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_38.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vibrating system is shown in figure. A initial disturbance is given to the disk and the<br/>disk rolls without slip. The natural frequency of the vibrating system is given by<br/>(Neglect the effect of gravity)<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_41.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_42.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_45.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_46.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_47.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A horizontal steam engine running at 180 rpm has a bore of 320 mm and stroke 560 mm. The<br/>connecting rod is 1 m long and the mass of the reciprocating parts is 50 kg. When the<br/>crank is 50° past inner dead centre, the steam pressure on the cover side of the piston<br/>is 1.2 MPa, while that on the crank side is 0.15 MPa. Neglecting the area of the piston<br/>rod. The turning moment on the crankshaft is _____ kNm. (Correct upto three decimal<br/>places)`,
+      image: "",
+      options: [],
+      answer: "20.625",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rotating machine of mass 650 kg, operating at 1500 rpm, has an unbalance of 0.12 kg.<br/>The damping in the isolators is 0.08. If the transmissibility at the operating speed is<br/>less than 0.15, then the minimum stiffness of the isolator is ________ MN/m.<br/>(Rounded off to 2 decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.93",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_49.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A machine part having a mass of 2.5 kg vibrates in a viscous medium. A harmonic exciting<br/>force of 30 N acts on the part and causes a resonate amplitude of 14 mm. If the<br/>stiffness is 2040 N/m then which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Natural frequency without damping is 28.56 rad/s.`,
+        `Damping factor is 0.32.`,
+        `Natural frequency of damped vibration is 24.3 rad/s.`,
+        `Damping coefficient is 75 N.s/m.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_50.png"/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A thin disc of radius ‘<em>r</em><br/>’ and mass ‘<em>m</em><br/>’ is mounted on a massless rigid rod of length 2a which is hinged at <em>O</em><br/>. The other end <em>A</em><br/>of the rod is supported by a string <em>AC</em><br/>as shown in figure. The disc spins with an angular velocity ω and the whole assembly<br/>rotates about a vertical axis <em>OC</em><br/>with angular velocity ω<br/><em><br/><sub>p</sub><br/></em><br/>. In order to make string tension zero, the value of ω<br/><em><br/><sub>p</sub><br/></em><br/>should be<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_58.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_59.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_60.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_61.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_62.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the configuration shown, the angular velocity (in rad/s) of the rigid rod ST and<br/>velocity<br/><em><br/>V<sub>s</sub><br/></em><br/>(in m/s) are respectively.<br/><br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_64.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_65.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_66.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_67.png"/>`,
+        `<br/><img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_68.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/subjectwise_test9_part_syllabus_gate_2026_me_theory_of_machines/img_69.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Mock Test-1",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The given question is followed by three statements labelled I, II and III. You have to<br/>study the question and all the three statements given to decide whether any information<br/>provide in the statement(s) is/are redundant and can be dispensed with while answering<br/>the given question.<br/><br/>What is the average salary of 15 employees?<br/><br/>1. Average salary of 7 clerical cadre (out of the 15 employees) is <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_1.png"/><br/><br/><br/>2. Average salary of 5 officer cadre (out of the 15 employees) is <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_2.png"/><br/><br/><br/>3. Average salary of the 3 sub-staff employees (out of the 15 employees) is <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_3.png"/>`,
+      image: "",
+      options: [
+        `1 only`,
+        `2 only`,
+        `3 only`,
+        `None of these`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find the wrong number in the series:<br/>7, 28, 63, 124, 215, 342`,
+      image: "",
+      options: [
+        `7`,
+        `28`,
+        `124`,
+        `215`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_6.png"/>is`,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `18`,
+        `21`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_7.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The question given below has a main statement followed by four choices. Choose the<br/>option which follows the main statement given below within the quotes.<br/>“Whenever<br/>the demand for electricity rises, supply from GENCO increases.”`,
+      image: "",
+      options: [
+        `The supply increases, it means demand has risen.`,
+        `The demand has risen therefore the supply from GENCO increases.`,
+        `The supply decreases implies the demand is low.`,
+        `Both (b) and (c)`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given below is a paragraph from which the last sentence has been deleted. From the given<br/>options, choose the one that completes the paragraph in the most appropriate way.<br/>Federer’s fifth grand slam win prompted a reporter to ask whether he was the best ever.<br/>Federer is certainly not lacking in confidence, but he wasn’t about to proclaim himself<br/>the best ever. “The best player of this generation, yes”, he said, “But nowhere close to<br/>ever. Just look at the records that some guys have. I’m a minnow.” _______________`,
+      image: "",
+      options: [
+        `His win against Agassi, a genius from the previous generation, contradicts that.`,
+        `Sampras, the king of an earlier generation, was as humble.`,
+        `He is more than a minnow to his contemporaries.`,
+        `The difference between ‘the best of this generation’ and ‘the best ever’ is a matter<br/>of perception.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Flow through a horizontal pipe section of uniform diameter with side tappings is shown<br/>below<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_23.png"/><br/>Take friction factor as ‘f ’. The total frictional head loss in the pipe section is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_27.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_28.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A simply supported beam <em>AB</em><br/>of span 8 m is loaded as shown in the figure.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_30.png"/><br/>Which portion of the beam is subjected to pure bending?`,
+      image: "",
+      options: [
+        `AC`,
+        `CD`,
+        `DB`,
+        `None of the above`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A small car weighing 10000 N runs along a level unbanked road of mean radius 300 m. The<br/>inner and the outer wheels are 1 m apart. The centre of gravity of the car is 0.6 m<br/>above the road level. The coefficient of friction between the road surface and the tyres<br/>is 0.3 m. The lowest speed at<br/>which the car will overturn is`,
+      image: "",
+      options: [
+        `49.5 m/s`,
+        `29.7 m/s`,
+        `70 m/s`,
+        `35 m/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following defects involves the formation of a cation vacancy along with a<br/>cationinterstitial pair?`,
+      image: "",
+      options: [
+        `Frenkel defect`,
+        `Schottky defect`,
+        `Selt-interstitial defect`,
+        `Substitutional defect`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single point turning tool has an actual clearance angle of 7°. While turning a<br/>workpiece of diameter 80 mm diameter, the effective clearance angle reduces to 2.4°.<br/>Which of the following tool setting errors has occurred?`,
+      image: "",
+      options: [
+        `Tool is kept 1.7 mm above the workpiece center.`,
+        `Tool is kept 3.2 mm below the workpiece center.`,
+        `Tool is kept 3.2 mm above the workpiece center.`,
+        `Tool is kept 6.4 mm above the workpiece center.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_33.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_34.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of instantaneous centre of rotation for the mechanism shown below is<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_35.png"/>`,
+      image: "",
+      options: [
+        `6`,
+        `12`,
+        `30`,
+        `15`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A centrifugal clutch, transmitting power at 600 rpm and consists of four shoes, each<br/>having a mass of 3 kg. The clutch just gets engaged at 300 rpm. The radius of the centre<br/>of gravity of each shoe is 120 mm, when engaged. The inner radius of the drum is 150 mm.<br/>The coefficient of friction between the shoe and the drum is 0.25. The power transmitted<br/>by the clutch is`,
+      image: "",
+      options: [
+        `5 kW`,
+        `10 kW`,
+        `2.5 kW`,
+        `20 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An ideal reheat rankine cycle has an efficiency of 0.52. The work output from high and<br/>low pressure turbines are 832 kJ/kg and 1528 kJ/kg respectively. The work input to the<br/>pump is 17 kJ/kg. The enthalpy of saturated liquid and saturated vapour at condenser<br/>pressure are 198 kJ/kg<br/>and 2547 kJ/kg respectively. The moisture content at the<br/>entry to the condenser is`,
+      image: "",
+      options: [
+        `7.93%`,
+        `9.20%`,
+        `11.21%`,
+        `5.46%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A volume of 200 m<sup>3</sup><br/>of air passes through a Psychrometric process. The condition of air at inlet is 40°C<br/>DBT, 30°C WBT with a specific enthalpy of 86.5 kJ/kg. The outlet condition of air is<br/>35°DBT and 30° WBT. The specific enthalpy of air at the outlet is`,
+      image: "",
+      options: [
+        `53.7 kJ/kg`,
+        `66.6 kJ/kg`,
+        `78.9 kJ/kg`,
+        `86.5 kJ/kg`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In an assembly line, the total work content is 400 seconds and the line is divided into<br/>5 workstations.<br/>The station times (in seconds) are :<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_40.png"/><br/>Which of the following statements is correct?`,
+      image: "",
+      options: [
+        `The line efficiency is greater than 95%.`,
+        `The line efficiency is less than 85% and the smoothness index is greater than 60s.`,
+        `The balance delay is 20% and the line efficiency is 80%.`,
+        `The smoothness index is 40s.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_41.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In an experiment, positive and negative values are equally likely to occur. The<br/>probability of obtaining at most one negative value in five trials is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_45.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_46.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_47.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_48.png"/><br/>If <em>I</em><br/>is the 2 × 2 identity matrix and O is the 2 × 2 zero matrix, then`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_50.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_51.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_52.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_53.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The surface irregularities for a plane machined surface is shown below.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_55.png"/><br/>The RMS value of surface roughness is ______ μm. [Correct upto three decimal places].`,
+      image: "",
+      options: [],
+      answer: "0.265",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A steel transmission shaft is subjected to fluctuating stresses. For calculating fatigue<br/>stress, the ASME fatigue failure criteria is used. If the ASME ellipse is drawn to a<br/>scale of 1 MPa = 1 mm, the length of the major axis of the ellipse (in mm) will be<br/>______. [Rounded off to nearest integer] [Take,<br/><em><br/>s<sub>ut</sub><br/></em><br/>= 500 MPa,<br/><em><br/>s<sub>yt</sub><br/></em><br/>= 300 MPa,<br/><em><br/>s<sub>e</sub><br/></em><br/>′ = 150 MPa]`,
+      image: "",
+      options: [],
+      answer: "600",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_57.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A tube of uniform thickness has a section in the shape of a regular hexagon as shown in<br/>the figure.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_59.png"/><br/>The tube rests in a horizontal position and is subjected to pure bending. If the bending<br/>stress at point <em>A</em><br/>is 126 MPa, then the bending stress at point <em>B</em><br/>will be ________ MPa. (Correct upto one decimal place)`,
+      image: "",
+      options: [],
+      answer: "84.0",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_60.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A spherical ball of 5 cm in diameter is placed concentrically inside a large spherical<br/>furnace, such that 25% of the energy emitted by the furnace reaches the ball. The<br/>diameter of the spherical furnace is____ mm.<br/>(Rounded off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "100",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The magnitude of the position vector of the centroid of the given area from origin O is<br/>_____ mm.<br/>(Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_63.png"/>`,
+      image: "",
+      options: [],
+      answer: "1.62",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A spur gear has 30 teeth and rotates at 300 rpm. The module of the gear is 2 mm. The<br/>pitch line velocity of the gear is ______ m/s. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.943",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A cast iron block is machined by a horizontal slab milling cutter with a depth of cut of<br/>4 mm, cutter diameter of 100 mm and has 6 straight teeth along its periphery. The<br/>machining is performed at a feed per tooth of 0.2 mm and at a rotational speed of 180<br/>rpm, The mean un-cut chip thickness is ______ μm. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "39.19",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two pieces of wood of section 40 mm × 40 mm are joined together along a plane inclined at<br/>45° to the axis as shown in the figure. If the strength of the joint is 11 MPa in<br/>tension and 6 MPa in shear. The maximum axial load that the member can sustain is ______<br/>kN. [Correct upto one decimal place]<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_67.png"/>`,
+      image: "",
+      options: [],
+      answer: "19.2",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_68.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A capillary rise of 3 cm is observed between two vertical parallel plates having a gap<br/>of 1 mm, when dipped in a liquid (ρ = 1100 kg/m<sup>3</sup><br/>, σ = 0.75 N/m). The contact angle of the meniscus surface with the plate is ____<br/>degrees. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "77.54",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_69.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The production quantity (in thousand tons) for last four years is as follows: 20, 24, 22,<br/>21. Using the exponential smoothing method (α = 0.3), the forecasted quantity for this<br/>year is _______ tons. [Round off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "21308",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_70.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following surface treatment methods is/are used to improve the fatigue life<br/>of a component?`,
+      image: "",
+      options: [
+        `Shot peening`,
+        `Carburizing`,
+        `Nitriding`,
+        `Polishing`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `(a,b,c,d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are incorrect regarding natural convection?`,
+      image: "",
+      options: [
+        `In turbulent flow over a heated vertical plate, the coefficient of heat transfer is<br/>independent of the characteristic length.`,
+        `The characteristic length in case of a vertical cylinder is the diameter of the<br/>cylinder.`,
+        `The ratio of buoyancy force to the viscous force is known as Rayleigh number.`,
+        `The nusselt number is a function of a Grashof number and Prandtl number.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_71.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_72.png"/><br/>and c be the positively oriented closed curve given by x<sup>2</sup><br/>+ y<sup>2</sup><br/>= 1, z = 0. If <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_73.png"/>then<br/>the value of a is _____.`,
+      image: "",
+      options: [],
+      answer: "-1",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A square field ABCD of side 90 m is so located that its diagonal AC is from north to<br/>south and the corner B is to the west of D. Rohan and Rahul start walking along the<br/>sides from B and C respectively in the clockwise and anti-clockwise directions with<br/>speeds of 8 km/hr and 10 km/hr. Where shall they cross each other the second time?`,
+      image: "",
+      options: [
+        `On AD at a distnace of 30 m from A.`,
+        `On BC at a distance of 10 m from B.`,
+        `On AD at a distance of 30 m from D.`,
+        `On BC at a distance of 10 m from C.`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The sum of the first n terms in the sequence 7, 77, 777, 7777, .......... is _____.`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_8.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_9.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_11.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `We have two rectangular sheets of paper, M and N, each of dimensions 6 cm × 1 cm. Sheet M<br/>is rolled to form a (closed - ended) cylinder by bringing the long edges together. Sheet<br/>N is cut into equal square patches and assembled to form the largest possible closed<br/>cube. Assuming the ends of the cylinder are closed, the ratio (volume of cylinder):<br/>(Volume of cube) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_13.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_14.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_15.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_16.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In the adjoining figure <em>D</em><br/>, <em>E</em><br/>and <em>F</em><br/>are the mid-points of the sides <em>BC</em><br/>, <em>AC</em><br/>and <em>AB</em><br/>respectively.<br/><br/>Δ<em>DEF</em><br/>is congruent to triangle.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_18.png"/>`,
+      image: "",
+      options: [
+        `AFE`,
+        `ABC`,
+        `BFD`,
+        `CDE`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A group of six friends named Peter, Qadir, Roger, Shah, Tarun and Usman have different<br/>height<br/><br/>and weight. They are ranked such that the heaviest is ranked 1 and the tallest is ranked<br/>1 in<br/><br/>respective category. Some more details are known:<br/><br/><strong>I.</strong><br/>Peter is shorter but heavier than Shah<br/><br/><strong>II.</strong><br/>Roger and Tarun are heavier but shorter than Peter and Usman<br/><br/><strong>III.</strong><br/>Shah is heavier but shorter than Qadir but neither of them is either the tallest or the<br/>heaviest.<br/>The rank of Qadir, if all are arranged in descending order of their<br/>height and the tallest is given rank 1, is __________.`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_20.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A ball is dropped on an inclined plane and after impact it is observed to move<br/>horizontally as shown in the figure. If the inclination of the plane is 30°, then the<br/>coefficient of restitution is<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_75.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_76.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_77.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_78.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_79.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_80.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_81.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A taper plug gauge is measured using the roller method as shown in the figure. The<br/>measurement over the rollers when the gauge is placed directly on the base is 68.37 mm<br/>and when the gauge is placed on a 75 mm gauge block is 72.40 mm.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_82.png"/><br/>The rate of taper of the gauge is`,
+      image: "",
+      options: [
+        `3.077`,
+        `0.0537`,
+        `0.0268`,
+        `1.535`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_83.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The available energy associated with 5.4 kg of wet steam at 100 kPa and dryness fraction<br/>0.85 is to be determined. The dead state is at 27°C and 1 bar.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_85.png"/><br/>The available energy is`,
+      image: "",
+      options: [
+        `6.73 MJ`,
+        `63.7 kJ`,
+        `6.67 kJ`,
+        `73.6 MJ`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Water flows over a flat plate at a free steam velocity of 0.15 m/s. There is no pressure<br/>gradient and the laminar boundary layer thickness at a given location is 5 mm. The<br/>velocity profile inside the boundary layer is given by <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_87.png"/><br/>The local skin friction coefficient is<br/><br/>[Take, μ = 1.02 g/ms and ρ = 1 g/cm<sup>3</sup><br/>]`,
+      image: "",
+      options: [
+        `4.27 × 10<sup>–3</sup>`,
+        `3.52 × 10<sup>–3</sup>`,
+        `2.31 × 10<sup>–3</sup>`,
+        `1.93 × 10<sup>–3</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong><br/>(Casting Processes) with <strong>List-II</strong><br/>(Applications) and select the correct answer using the codes given below the lists:<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_89.png"/>`,
+      image: "",
+      options: [
+        `P - 4, Q - 1, R - 2, S - 3`,
+        `P - 4, Q - 2, R - 1, S - 3`,
+        `P - 3, Q - 4, R - 2, S - 1`,
+        `P - 2, Q - 3, R - 4, S - 1`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A straight cylindrical bar of length 4 m is fixed at both ends and is subjected to a<br/>transverse point load of 150 N at its midpoint. Due to this load, the maximum deflection<br/>in the bar is observed to be 0.5 mm. If the same bar is loaded axially, then the load at<br/>which the bar will buckle is`,
+      image: "",
+      options: [
+        `150 kN`,
+        `120.4 kN`,
+        `61.7 kN`,
+        `246.74 kN`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an offset slider crank mechanism, the offset of the slider is increased while keeping<br/>all link lengths the same. The effect on the stroke length of the slider is`,
+      image: "",
+      options: [
+        `Remains unchanged`,
+        `Increases`,
+        `Decreases`,
+        `Decreases then increases`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cold storage plant is required to store 15 tonnes of a dairy product. The storage<br/>temperature required is –10°C; while the product is supplied at 30°C. The cooling<br/>process is completed in 5 hours. The actual COP of the refrigeration system is 50% of<br/>the carnot COP. The power capacity<br/><br/>required to run the plant is<br/>[Use the following data for dairy product: Specific<br/>heat above freezing point = 3 kJ/kg°C; Specific heat below freezing point = 1.5 kJ/kg°C;<br/>Freezing point = –2°C; Latent heat = 250 kJ/kg]`,
+      image: "",
+      options: [
+        `45.37 kW`,
+        `90.74 kW`,
+        `0.318 kW`,
+        `70.45 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bolted joint consists of four identical bolts A, B, C and D as shown in the figure.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_93.png"/><br/>The bolts subjected to maximum shear stress, is/are`,
+      image: "",
+      options: [
+        `A only`,
+        `B and D only`,
+        `A, B and D`,
+        `A, B, C and D`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A company uses EOQ model for inventory control. The total annual inventory cost to the<br/>company is <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_95.png"/><br/>The optimal lot size purchased by the company is 2000 units. The unit cost of the<br/>product is <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_96.png"/>The<br/>percentage of carrying charges per unit of the average inventory per month is`,
+      image: "",
+      options: [
+        `5.5%`,
+        `11%`,
+        `66%`,
+        `22%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_97.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A four-cylinder four-stroke engine during a test have cylinder bore 15 cm, stroke 20 cm,<br/>speed 400 rpm, brake consisting a dead load of 79 kg on one end of belt and the other<br/>end is attached to a spring balance reading 4 kg, the mean diameter of friction brake<br/>1.2, area of indicator<br/><br/>diagram 3 cm<sup>2</sup><br/>, length of indicator diagram 6 cm and the indicator spring rating is 0.09 cm/bar. The<br/>mechanical efficiency of engine is`,
+      image: "",
+      options: [
+        `35.31%`,
+        `74.39%`,
+        `37.19%`,
+        `70.63%`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_98.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the differential equation <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_100.png"/>with<br/>y(0) = 1, then y(3) = ____.`,
+      image: "",
+      options: [],
+      answer: "0.04",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_102.png"/>`,
+      image: "",
+      options: [
+        `sin(2<em>u</em><br/>)`,
+        `–sin(2<em>u</em><br/>)`,
+        `cos(2<em>u</em><br/>)`,
+        `tan(2<em>u</em><br/>)`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a double pipe heat exchanger, hot water flows at a rate of 2.5 kg/s and is cooled<br/>from 85°C to 45°C. Simultaneously cooling water flows at a rate of 5 kg/s and enters the<br/>heat exchanged at 30°C. The overall heat transfer coefficient remains constant at 2100<br/>W/m<sup>2</sup><br/>k. The specific heat<br/><br/>capacity of water is 4180 J/kg/k. The heat transfer area required is ______<br/>m<sup>2</sup><br/>. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "8.43",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_104.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_105.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An 15 m long horizontal cantilever beam ABC is built-in at A and Supported at C, by a<br/>rigid prop as shown in the figure. Segment AB and BC carries a uniformly distributed<br/>loads of 300 N/m and 600 N/m respectively. The load taken by the prop at C is ______ kN.<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_106.png"/>`,
+      image: "",
+      options: [],
+      answer: "2.82",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A simple pendulum of length l has a linear spring of stiffness k attached to the bob of<br/>mass m as shown in the figure. When the system is taken from Earth to Moon, the<br/>percentage change in its natural frequency is ________%. (Correct upto two decimal<br/>places)<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_109.png"/>`,
+      image: "",
+      options: [],
+      answer: "-23.36",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A closed tank of height 5 m and cross-section 2 m × 2 m contains a liquid of specific<br/>gravity 1.12. A rectangular vertical gate of height 2 m and width 2 m is provided at the<br/>bottom of the tank as shown in the figure. The distance of the centre of pressure of the<br/>net hydrostatic force acting on the gate from ground is ________ mm. (Correct upto two<br/>decimal places)<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_111.png"/>`,
+      image: "",
+      options: [],
+      answer: "1214.95",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_112.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The demand for a product over seven years is given below:<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_114.png"/><br/>The forecasted-demand for the year 2027 using linear forecasting method will be ______.<br/>(Round off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "138",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 12 cm diameter plate is rotated in water and a 30 cm diameter plate in air under<br/>dynamically and kinematically similar conditions. If the torque required for the plate<br/>rotating in water is 3.73 kN-m, then the torque required for the plate rotating in air<br/>is ______ N-m. (Correct upto one decimal place)<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_116.png"/>`,
+      image: "",
+      options: [],
+      answer: "25.2",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_117.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A composite tie bar of length 1.2 m hanging vertically consists of a steel rod of 20 mm<br/>diameter encased in a brass tube of 20 mm internal diameter and 30 mm external diameter.<br/>The bar is rigidly fixed at the top end. The bar is suddenly loaded by a weight of 15 kN<br/>falling freely<br/><br/>through a height of 4 mm. The total extension of the bar is _____ mm. (Round off to<br/>three decimal places)<br/><br/>[Take, <em>E</em><br/><sub>steel</sub><br/>= 200 GPa; <em>E</em><br/><sub>brass</sub><br/>= 96 GPa]`,
+      image: "",
+      options: [],
+      answer: "1.389",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Superheated steam enters a turbine at 17 bar and 230°C and expands to 3.5 bar, where the<br/>steam is found to be 2.5% wet. The isentropic efficiency of the turbine is ________ %.<br/>(Correct upto three decimal places)<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_119.png"/>`,
+      image: "",
+      options: [],
+      answer: "63.445",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cutter tip is initially at x = 2 mm, y = 2 mm. On the xy table of a NC machine, tool is<br/>to move finally to x = 62 mm, y = 2 mm. The pitch of the NC drive lead screw having<br/>double start is 1 mm. If the backlash between the lead screw and the nut is 2.7°, then<br/>the total backlash of the table on moving from initial to final point is _______ mm<br/>(Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.225",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_121.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_122.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A single slider crank mechanism has stroke length of 400 mm, mass of rotating parts is<br/>40 kg at crank radius and mass of reciprocating parts is 51 kg. If all the revolving<br/>parts and two-third of the reciprocating parts are to be balanced, then the balancing<br/>mass required at 320 mm radius is<br/>______ kg. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "46.25",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_123.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A well insulated rigid tank contains 7 kg of a saturated liquid-vapour mixture at 150<br/>kPa. Initially 80% of the mass is in vapour phase. Heat is supplied to the content<br/>through an electrical resistance heater until 12% of the mass remains in liquid state.<br/>The entropy change of the contents during the process is _____ kJ/K. (Round off to two<br/>decimal places)<br/><br/>Initial state :<br/><em><br/>s<sub>f</sub><br/></em><br/>= 0.001 kJ/kgK;<br/><em><br/>s<sub>fg</sub><br/></em><br/>= 6.43 kJ/kgK<br/><br/>Final state :<br/><em><br/>s<sub>f</sub><br/></em><br/>= 0.0015 kJ/kgK;<br/><em><br/>s<sub>fg</sub><br/></em><br/>= 6.36 kJ/kgK`,
+      image: "",
+      options: [],
+      answer: "3.17",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_124.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A composite wall consists of two slabs <em>A</em><br/>and <em>B</em><br/>in parallel, having unit length normal to the plane of paper as shown in the figure. The<br/>total rate of heat transfer through composite wall is 6 kW. The thermal conductivities<br/>of slab <em>A</em><br/>and slab <em>B</em><br/>are 12 W/mK and 3 W/mK, respectively.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_125.png"/><br/>If thermal resistance of interference between slabs <em>A</em><br/>and <em>B</em><br/>is 0.1 K/W, then the rate of heat transfer through slab <em>A</em><br/>is ______ kW. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "4.5",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_126.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_127.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following processes is/are not used for tube making?`,
+      image: "",
+      options: [
+        `Extrusion`,
+        `Swaging`,
+        `Tube drawing`,
+        `Roll piercing`
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The velocity field in a fluid is given as<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_128.png"/><br/>Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `The flow is incompressible`,
+        `The flow is irrotational`,
+        `The convective acceleration experienced by a fluid particle is zero at (<em>x</em><br/>= 0, <em>y</em><br/>= 0)`,
+        `The temporal acceleration experienced by a fluid particle is zero at (<em>x</em><br/>= 1, y = 1)`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_129.png"/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_130.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The daily consumption of electric power (in millions of kW-hours) is a Random variable<br/>having the <img align="absmiddle" alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_131.png"/><br/>If the total production each day is 12 million kW-hours, the probability that there is<br/>power cut (shortage) on any given day is`,
+      image: "",
+      options: [
+        `3 <em>e</em><br/><sup>–4</sup>`,
+        `4 <em>e</em><br/><sup>–4</sup>`,
+        `5 <em>e</em><br/><sup>–4</sup>`,
+        `6 <em>e</em><br/><sup>–4</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_132.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The determinant of the given matrix is ____________.<br/><br/><img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_133.png"/>`,
+      image: "",
+      options: [],
+      answer: "12",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_134.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the first order initial value problem y′ = y + 2x – x<sup>2</sup><br/>, y(0) = 1, 0 ≤ x<br/>&lt;∞ with exact solution y(x)=x <sup>2</sup><br/>+ ex. For x = 0.2, the percentage difference between the exact solution and the<br/>solution obtained using a single iteration of the second-order Runge-Kutta method<br/>with stepsize<br/>h = 0.2 is _____%. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.54",
+      solution: `<img alt="" src="js/questions/mock_level_test1_full_syllabus_gate_2026_me/img_135.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Mock Test-2",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the question given below followed by three statements. You have to study the<br/>question and the statements and decide which of the statements is/are necessary to<br/>answer the question.<br/><br/>What is the present age of A?<br/><br/>1. The sum of the ages of A and B is 21 years.<br/><br/>2. The difference of the ages of A and B is 5 years.<br/>3. The product of the ages of<br/>A and B is 104 years.`,
+      image: "",
+      options: [
+        `1 and 2 only`,
+        `2 and 3 only`,
+        `1 and 3 only`,
+        `Any two of the three`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which term will replace the question mark in the series?<br/>ABD, DGK, HMS, MTB, SBL, ?`,
+      image: "",
+      options: [
+        `ZKU`,
+        `ZKW`,
+        `ZAB`,
+        `XKW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_2.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a certain code, TEACHER is written as VGCEJGT. How is CHILDREN written in that code?`,
+      image: "",
+      options: [
+        `EJKNEGTP`,
+        `EGKNFITP`,
+        `EJKNFGTO`,
+        `EJKNFTGP`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The paper as shown in the figure is folded to make a cube where each square corresponds<br/>to a particular face of the cube. Which one of the following options correctly<br/>represents the cube?<br/><br/><strong>Note:</strong><br/>The figures shown are representative.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_5.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_7.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_8.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_9.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_10.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the word that fits the analogy:<br/>Obstruct : Obstruction : : Evade : _____`,
+      image: "",
+      options: [
+        `Evadance`,
+        `Evasion`,
+        `Evadement`,
+        `Evadure`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the compound gear train shown in the figure, the number of teeth on each gear is<br/>indicated.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_21.png"/><br/>Gears <em>B</em><br/>and <em>C</em><br/>, <em>D</em><br/>and <em>E</em><br/>, <em>G</em><br/>and <em>H</em><br/>are compounded. The ratio of speeds of gears <em>I</em><br/>to gear <em>F</em><br/>is`,
+      image: "",
+      options: [
+        `0.6`,
+        `2.0`,
+        `0.333`,
+        `1.67`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two beams <em>AB</em><br/>and <em>MN</em><br/>are connected 2<em>P</em><br/>as shown in figure. Beam AB carries a load of 2<em>P</em><br/>.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_23.png"/><br/>The reaction at support <em>M</em><br/>will be`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_27.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A rod of diameter 20 mm and length 1 m is placed between two rigid walls as shown in the<br/>figure below. The walls are separated by a distance of 1001 mm.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_29.png"/><br/>Considering Young’s modulus of the material of the rod as 200 GPa and coefficient of<br/>thermal expansion of rod as 10<sup>–5</sup><br/>per °C. If the temperature of the rod is increased by 300°C, the thermal stress<br/>developed in the rod is`,
+      image: "",
+      options: [
+        `300 MPa`,
+        `400 MPa`,
+        `450 MPa`,
+        `550 MPa`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_30.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following alloying element in steel does not form any carbide?`,
+      image: "",
+      options: [
+        `Nickel`,
+        `Tungsten`,
+        `Vanadium`,
+        `Molybdenum`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong><br/>(Metal Forming Operations) with <strong>List-II</strong><br/>(Defects) and select the correct answer using the codes given below the lists:<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_32.png"/>`,
+      image: "",
+      options: [
+        `P-1, Q-2, R-4, S-1`,
+        `P-3, Q-4, R-1, S-2`,
+        `P-2, Q-4, R-1, S-3`,
+        `P-3, Q-2, R-1, S-4`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A steam power plant is operating on Rankine cycle, steam enters the turbine at 4 MPa,<br/>350°C (<em>h</em><br/>= 3092.5 kJ/kg; s = 6.5821 kJ/kgK) and exit at a pressure of 15 kPa. Then it enters the<br/>condensor and exits as saturated water, afterwards it follows through feed pump and then<br/>back to boiler. At 15 kPa;<br/><em><br/>h<sub>f</sub><br/></em><br/>= 225.94 kJ/kg;<br/><em><br/>h<sub>g</sub><br/></em><br/>= 2599.1 kJ/kg;<br/><em><br/>s<sub>f</sub><br/></em><br/>= 0.7549 kJ/kgK;<br/><em><br/>s<sub>g</sub><br/></em><br/>= 8.0085 kJ/kgK;<br/><br/><em><br/>v<sub>f</sub><br/></em><br/>= 0.001014 m<sup>3</sup><br/>/kg and<br/><em><br/>v<sub>g</sub><br/></em><br/>= 10.02 m<sup>3</sup><br/>/kg.<br/>The mean temperature of heat addition for the cycle is`,
+      image: "",
+      options: [
+        `421.2 K`,
+        `491.2 K`,
+        `321.2 K`,
+        `391.2 K`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A single row deep groove ball-bearing is subjected to a radial load of 4 kN and thrust<br/>load of 3 kN. The radial load and thrust factors are 0.5 and 1.5 respectively. The shaft<br/>rotates at 2000 rpm, diameter of shaft is 100 mm and the basic dynamic load carrying<br/>capacity of bearing is 100 kN. What is the bearing reliability for a service life of<br/>10000 hr. life?`,
+      image: "",
+      options: [
+        `93.33%`,
+        `96.67%`,
+        `97.17%`,
+        `99.35%`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_34.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A two stroke petrol engine develops a brake power of 8 kW. The brake specific fuel<br/>consumption of the engine is 0.4 kg/kWh. If the air-fuel ratio is 16 : 1 (by mass), the<br/>mass flow rate of air supplied to the engine is`,
+      image: "",
+      options: [
+        `51.2 kg/min`,
+        `0.0142 kg/min`,
+        `0.8533 kg/min`,
+        `0.053 kg/min`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A long current carrying cylindrical wire is covered with an insulating material having a<br/>thermal conductivity of 0.1 W/mK. The convective heat transfer coefficient at outer<br/>surface of insulation is 8 W/m<sup>2</sup><br/>K. For maximum heat loss to occur from the wire, the critical radius of insulation is`,
+      image: "",
+      options: [
+        `0.25 cm`,
+        `1.25 cm`,
+        `2.5 cm`,
+        `6.25 cm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The demand and forecast of a product for the month of July is 800 units and 700 units,<br/>respectively. Using exponential smoothing method with a smoothening coefficient of 0.25,<br/>the forecast for the month of August is`,
+      image: "",
+      options: [
+        `775 units`,
+        `825 units`,
+        `675 units`,
+        `725 units`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The solution of the differential equation<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_39.png"/><br/>where <em>p</em><br/>= 4 and <em>q</em><br/>= 3 is given by [Assume y(0) = 0 and y′(0) = 1]`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_40.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_41.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_42.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_43.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Let the random variable ‘<em>x</em><br/>’ have uniform distribution on the interval (0, 1) and y = –2log<em>x</em><br/>. Then E(y) is equal to ____.`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `During an orthogonal cutting process the rake angle of the tool is 10° and the shear<br/>angle is 17°.<br/>If the cutting velocity is 210 m/min, the Shear strain during cutting<br/>is _____. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.39",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For an elliptical hole in a plate subject to fatigue loading as shown in the figure the<br/>fatigue stress concentration factor is 70% of the theoretical stress concentration<br/>factor<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_47.png"/><br/>The Notch sensitivity factor is _____. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.65",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A solid circular shaft used to transmit power is to be replaced by a hollow circular<br/>shaft of outside diameter twice that of solid shaft the ratio of outer to inner diameter<br/>of hollow shaft such that both the shafts have same torsional section modulus is _____.<br/>[Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.034",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_49.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `To produce a casting having the dimensions 65 cm × 55 cm × 10 cm a cylindrical riser is<br/>attached. Using the Shape-factor method the optimum diameter of side riser will be<br/>______ cm. [Round off to two decimal places]<br/>Relation of volume ratio to shape<br/>factor:<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_51.png"/>`,
+      image: "",
+      options: [],
+      answer: "26.31",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_52.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A ladder 15 m long weighing 169 N is being pushed up by a force P as shown in the figure<br/>below. Neglecting friction at all contacting surfaces, the minimum force P required will<br/>be _____ N.<br/>[Round off to two decimal places]<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_53.png"/>`,
+      image: "",
+      options: [],
+      answer: "34.62",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A porter-governor has fly balls which are 25 times lighter than the sleeve. The governor<br/>rotates at 200 rpm. The height of the governor is ______ mm. [Correct upto two decimal<br/>places] [Assume no friction, k = 1, and g = 10 m/s<sup>2</sup><br/>]`,
+      image: "",
+      options: [],
+      answer: "592.73",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `During a drilling operation, the thrust force on drill is given by <em>T</em><br/>= <em>Kd f</em><br/><sup>0.7</sup><br/>Newton; where <em>K</em><br/>is material constant, <em>d</em><br/>is drill diameter in mm and f is the feed in mm/rev. While drilling a cast iron<br/>workpiece using a 15 mm diameter drill at a feed rate of 0.12 mm/rev. The thrust force<br/>developed during drilling is _______ N. [Round off to nearest integer] [Use K = 60.5 for<br/>cast iron]`,
+      image: "",
+      options: [],
+      answer: "206",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A CI engine develops an indicated power of 100 kW. The mechanical efficiency of the<br/>engine is 80%. The brake power lost due to friction is ______ kW. [Round off to nearest<br/>integer]`,
+      image: "",
+      options: [],
+      answer: "20",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Steam at 800 kPa and 250°C is flows at a rate of 2.5 kg/s and mixes adiabatically with<br/>wet steam flowing in another pipe at the same pressure (800 kPa) and quality 0.97. After<br/>mixing the total mass flow rate becomes 3 kg/s. The temperature of steam after mixing is<br/>_____ K. [Rounded off to nearest integer]<br/><br/>Refer following property data:<br/><br/>At 800 kPa, <em>h</em><br/><sub><br/><em>f</em><br/></sub><br/>= 721.11 kJ/kg,<br/><em><br/>h<sub>fg</sub><br/></em><br/>= 2048 kJ/kg<br/><br/>For superheated steam<br/><br/>At 800 kPa, 250°C : <em>h</em><br/>= 2950 kJ/kg<br/><br/>At 800 kPa, 170.43°C ; <em>h</em><br/>= 2769.1 kJ/kg<br/><br/>At 800 kPa, 227°C; <em>h</em><br/>= 2909.612 kJ/kg`,
+      image: "",
+      options: [],
+      answer: "500",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a single machine workstation, jobs arrive according to poisson distribution with a<br/>mean arrival rate of 9 per hour. The process time in the workstation is exponentially<br/>distributed with a mean of 5 minutes per job. The probability that at least two customer<br/>arrives in the next 10 minutes is ______. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.442",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `An iron -Carbon alloy of hypoeutectoid composition 0.55 wt% C is cooled to a temperature<br/>just below the eutectoid. Select the correct statements regarding the microstructure.`,
+      image: "",
+      options: [
+        `The fraction of proeutectoid ferrite is nearly 0.28.`,
+        `The fraction of pearlite is nearly 0.17.`,
+        `The fraction of eutectoid ferrite is nearly 0.64.`,
+        `The fraction of cementite is nearly 0.08.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are incorrect reason(s) for the oversized hole problem in<br/>drilling operation?`,
+      image: "",
+      options: [
+        `High feed rate`,
+        `Unequal lengths of cutting edges of the drill`,
+        `Loose Spindle`,
+        `High lip relief angle of the drill`
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The value of the integral <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_61.png"/><br/>and <em>S</em><br/>is the closed surface given by the planes <em>x</em><br/>= 0, <em>x</em><br/>= 1, y = 0, y = 2, z = 0 and z = 3 is _____.`,
+      image: "",
+      options: [],
+      answer: "36",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>X</em><br/>and <em>Y</em><br/>start moving towards each other from two places 200 m apart. After walking 60 m,<br/><em>Y </em><br/>turns left and goes 20 m, then the turns right and goes 40 m. He then turns right again<br/>and comes back to the road on which he had started walking. If <em>X</em><br/>and <em>Y</em><br/>walks with the same speed. What is the distance between them now?`,
+      image: "",
+      options: [
+        `20 m`,
+        `30 m`,
+        `40 m`,
+        `50 m`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Operators <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_11.png"/><br/> on numbers p and q are defined by <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_12.png"/><br/>If <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_13.png"/>then<br/>the possible values at x (in terms of y) are:`,
+      image: "",
+      options: [
+        `y`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_14.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_15.png"/>`,
+        `2y`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the figure <em>AB</em><br/>|| <em>QR</em><br/>.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_17.png"/><br/>The length of <em>PB</em><br/>is`,
+      image: "",
+      options: [
+        `2 cm`,
+        `3 cm`,
+        `2.5 cm`,
+        `4 cm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_18.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_19.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A sum of Rs 90,000 is to be distributed amongst NOT more than 18 students as prize amount<br/>in denomination of Rs 500, Rs 2500, Rs 12,500 and Rs 62,500 such that there is at least<br/>one student getting a prize of each denomination and each student gets exactly one<br/>prize. The entire amount has to be distributed. In how many ways this amount can be<br/>distributed?`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `more than 3`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Choose the correct pair of words to fill in the blanks in the sentence given<br/>below:<br/>During the heated discussion, the Leader of the group ________ refuted all<br/>the claims brought by his opponents. Later everybody acknowledged that he survived by<br/>most _______ luck.`,
+      image: "",
+      options: [
+        `ingenuously, incredible`,
+        `ingeniously, incredible`,
+        `ingenuously, incredulous`,
+        `ingeniously, incredulous`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vehicle of mass 500 kg, is moving with a speed of 108 km/hr along a circular path of<br/>radius 144 m. The driver applies brake and brings the vehicle to rest in 5s such that<br/>the speed decreases at constant rate. The magnitude of the net acceleration of the<br/>vehicle 2s car after the brake applied is`,
+      image: "",
+      options: [
+        `6.41 m/s<sup>2</sup>`,
+        `6 m/s<sup>2</sup>`,
+        `2.25 m/s<sup>2</sup>`,
+        `36.29 m/s<sup>2</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_63.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The areas above and below the line of mean resistance line taken in order from one end<br/>are 3.1, 2.05, 2.2, 2.95, 1.22, 2.44, 2.25 and 1.33 cm2 of turning moment diagram.<br/><br/>The scale of diagram:<br/><br/>Turning moment 1 cm = 1000 kg-m<br/><br/>Crank angle 1 cm = 24°<br/>If the mean speed is 180 rpm and total fluctuation of speed<br/>is 6%, then the energy stored in the flywheel is`,
+      image: "",
+      options: [
+        `1746.72 kgm`,
+        `1843.31 kgm`,
+        `1908.21 kgm`,
+        `1986.29 kgm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_65.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An air-refrigerator working between pressure limits of 1 bar and 8 bar. The temperature<br/>of air entering the compressor is 18°C and entering the expansion cylinder is 27°C.<br/>Expansion and compression follows the law <em>pv</em><br/><sup>1.25</sup><br/>= constant. Air circulates at a rate of 20 kg/min. The refrigeration capacity of the<br/>system is<br/><br/>[Take,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1 kJ/kgK; γ = 1.4]`,
+      image: "",
+      options: [
+        `93.074 kW`,
+        `41.794 kW`,
+        `31.025 kW`,
+        `16 kW`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_67.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 1 : 4 scale model of a hydraulic turbine is tested under a head of 8 m. The full scale<br/>turbine is required to operate under a head of 32 m and run at 480 rpm. If model<br/>develops 80 kW of power while using and uses 1 m<sup>3</sup><br/>/s of water, then the full scale turbine develops power of`,
+      image: "",
+      options: [
+        `9.6 MW`,
+        `10.24 MW`,
+        `11.05 MW`,
+        `13.49 MW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_68.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the process of joining of two sheet metals using. projection welding three equal size<br/>spherical nuggets are formed. The effective resistance of each nugget is 300 μΩ. The<br/>current supplied is 15 kA for 0.01 seconds with 65% melting efficiency. If the heat<br/>required for melting the material is 12 J/mm<sup>3</sup><br/>, then volume of each nugget is`,
+      image: "",
+      options: [
+        `4.0625 m<sup>3</sup>`,
+        `12.1875 mm<sup>3</sup>`,
+        `4.0625 mm<sup>3</sup>`,
+        `36.5625 mm<sup>3</sup>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_69.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two cantilever beam AC and BC of length L, Young’s modulus E and area moment of inertia<br/>about neutral axis as I are hinged together at point C and subjected to uniformly<br/>varying load of<em>w</em><br/>(N/m) in the AC portion as shown in the figure below:<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_70.png"/><br/>The magnitude of reaction at hinge point C is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_72.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_73.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_74.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the spring mass system as shown in the figure. Rods AC and CB are mass less and<br/>hinged at C. The point mass m of 2 kg is attached to the rod AC at a distance of <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_76.png"/>from<br/>A.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_77.png"/><br/>The natural frequency of system is`,
+      image: "",
+      options: [
+        `0.356 Hz`,
+        `0.536 Hz`,
+        `0.635 Hz`,
+        `0.563 Hz`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_78.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_79.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A flat steel surface of 120 mm × 260 mm is to be machined on a horizontal axis milling<br/>machine using a slab milling cutter of 120 mm diameter and 160 mm width. The milling<br/>cutter has 10 teeth. The over travel to be taken equal to approach distance. If the<br/>maximum depth of cut is 2 mm then time required to remove the stock to depth of 3 mm<br/>with 30 m/min speed and 0.15 mm/tooth<br/>feed is`,
+      image: "",
+      options: [
+        `4.796 sec`,
+        `146 sec`,
+        `287.8 sec`,
+        `276.8 sec`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_80.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A column fixed at one end and pinned at other end have slenderness ratio of 400 and a<br/>solid circular cross-section of diameter 4 cm. The Young’s modulus of the material is<br/>210 GPa. The length of the column and the critical buckling load respectively<br/>are<br/>[Take FOS = 1.5]`,
+      image: "",
+      options: [
+        `4 m, 15.503 kN`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_81.png"/>`,
+        `4 m, 10.335 kN`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_82.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_83.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A concrete tank having a constant base area of 50 m2 and vertical side walls contains<br/>water upto an initial depth of 2 m from the bottom. Water enters the tank at a constant<br/>rate of 0.2 m<sup>3</sup><br/>/s and is discharged from through an orifice of area 400 cm2 at its bottom. If<br/>coefficient of discharge for the orifice is 0.64, then choose the correct answer given<br/>below, when the liquid reaches steady<br/>state level.`,
+      image: "",
+      options: [
+        `The liquid level will remain constant.`,
+        `The liquid level will fall by 1.11 m.`,
+        `The time taken for the change in the liquid level to be 50% of its total change is<br/>approximately 16.73 minutes.`,
+        `The liquid level will rise by 3.11 m from initial level.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For a shop located in a city has the following cooling loads:<br/><br/>Room sensible heat = 52.36 kW<br/><br/>Room latent heat = 12.35 kW<br/>The summer outside and inside design conditions are:<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_85.png"/><br/>The rate of ventilation air supplied is 60 cm<sup>3</sup><br/>/min and the coil by pass factor is 0.18. The effective sensible heat factor is ______.<br/>[Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.78",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A manufacturer of metal pistons finds that on an average 12% of his pistons are rejected<br/>because they are either oversize or undersize. The probability that a batch of 10<br/>pistons facing at least one rejection is _________. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.72",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_87.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose we want to pick two numbers from {1, 2, .........., 100} randomly. The<br/>probability that sum of the two numbers is divisible by 5 is`,
+      image: "",
+      options: [
+        `0.1`,
+        `0.2`,
+        `0.3`,
+        `0.4`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A hollow cylindrical steel ingot of outer diameter 100 mm, wall thickness 20 mm, length<br/>200 mm, thermal conductivity 50 W/mK, mass density 7500 kg/m<sup>3</sup><br/>and heat capacity 640 J/kgK is heated in a furnace from an initial uniform temperature<br/>of 25°C. The temperature inside the furnace is 1000°C and the surface convective heat<br/>transfer coefficient is 200 W/m<sup>2</sup><br/>K. The temperature of the<br/>ingot corresponding to Fourier number of 32 is ________<br/>°C. [Rounded off to one decimal place]`,
+      image: "",
+      options: [],
+      answer: "695.5",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_89.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A mass of 10 kg is dropped from a height of 10 m at point ‘Q’ of cantilever beam<br/>arrangement as shown in the figure.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_91.png"/><br/>The flexural rigidity of both the beams is 2500 N-m<sup>2</sup><br/>and g = 9.8 m/s<sup>2</sup><br/>. The maximum vertical deflection of point <em>Q</em><br/>is _____ mm. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "49.40",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_92.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two externally meshing full depth involute spur gears with a pressure angle of 20° have a<br/>gear ratio of 3. The pinion has 24 teeth and the module of 6 mm. The pitch line velocity<br/>is 1.5 m/s. The angle of action of the pinion is ______ radians. (Correct upto two<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.45",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A massless beam has a loading pattern as shown in the figure below:<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_95.png"/><br/>The magnitude of maximum bending stress developed in the beam is______ MPa. [Answer in<br/>integer]`,
+      image: "",
+      options: [],
+      answer: "450",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_96.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The maximum inventory level of a product is 4000 units and it is achieved by infinite<br/>rate of replenishment. The inventory level becomes zero in 2 months of duration due to<br/>constant rate of consumption. The ordering cost is Rs.2000 per order and holding cost is<br/>Rs.10 per unit per month. If the current order quantity is changed to economic order<br/>quantity, then the saving in the total<br/>cost of inventory per year will be Rs.<br/>______. [Round off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "144669",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_97.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A closed tank contains three immiscible liquids stacked vertically, with air at top as<br/>shown in the figure. The gauge readings at A and B are –20 kPa and 69.271 kPa<br/>respectively. The ratio of depth of liquid I to liquid II measured from the top surface<br/>of the tank is _______. [Round off to one decimal place]<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_98.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.5",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported beam of rectangular cross-section is subjected to a point load at its<br/>midspan as shown in figure.<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_100.png"/><br/>The moment resisted by the shaded part of the cross-section at mid span is _____ N-m.<br/>(Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "909.38",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_101.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A Francis turbine has nozzle angle as 30° and blade angle at inlet as 90°. The blade are<br/>designed in such a way that it gives no whirl component of velocity at exit. If flow<br/>velocity remains constant throughout the blade passage, then the blade efficiency of the<br/>runner is______%. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "85.71",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_103.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Water is heated while flowing through a 2 cm × 4 cm rectangular cross-section tube with<br/>a velocity of 1 m/s. If the tube wall is maintained at constant temperature, then the<br/>Darcy friction factor is _____ × 10<sup>–3</sup><br/>. [Correct upto two decimal places]<br/><br/>Properties of water at the mean bulk temperature are : ρ = 980 kg/m<sup>3</sup><br/>; cp = 4.2 kJ/kgK, ν = 0.52 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s, k = 0.64 W/mK, and α = 0.167 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s.`,
+      image: "",
+      options: [],
+      answer: "22.68",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_105.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_106.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gas turbine working on Brayton cycle having isentropic efficiencies of compressor and<br/>turbine as 0.95 and 0.87 respectively. Air (<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK, R = 0.278 kJ/kgK) enters the compressor inlet at 27°C. The thermal<br/>energy supplied to air in combustion chamber is 2610 kJ/kg. If the pressure ratio is 15,<br/>then the specific work output of the cycle is ____ kJ/kg. (Correct upto two decimal<br/>places)`,
+      image: "",
+      options: [],
+      answer: "1141.99",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cylinder piston arrangement of 300 mm cylinder diameter is fitted with a frictionless<br/>leak proof piston, contains 0.032 kg of steam at a pressure of 0.6 MPa and a temperature<br/>of 200°C. As the piston moves slowly outwards through a distance of 305 mm, during which<br/>the steam undergoes a fully resisted expansion such that<br/><em><br/>PV<sup>n</sup><br/></em><br/>= constant; where ‘<em>n</em><br/>’ is constant V (in m<sup>3</sup><br/>). The final<br/><br/>pressure of steam is 0.12 MPa. The work done by the steam is _______ kJ. [Correct upto<br/>two decimal places]<br/><br/>[Take : At 0.6 MPa and 200°C; <em>v</em><br/>= 0.352 m<sup>3</sup><br/>/kg and h = 2850.1 kJ/kg]`,
+      image: "",
+      options: [],
+      answer: "5.58",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_109.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A vertical double acting steam engine runs at 500 rpm. The cylinder diameter is 0.3 m,<br/>the piston rod diameter is 50 mm and the length of connecting rod is 0.9 m. At an<br/>instant when the crank has rotated 100° from the top dead centre, the pressure of gases<br/>is 0.42 MPa on the cover end and 0.05 N/mm<sup>2</sup><br/>on the crank end. The weight of the reciprocating parts is 475 N and crank length is 150<br/>mm. The turning moment on the crankshaft at this instant is ______ kN-m. (Correct upto<br/>three decimal places)`,
+      image: "",
+      options: [],
+      answer: "4.775",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_111.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_112.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `An electrochemical machining operation is carried out on iron (atomic weight = 55.85,<br/>valency = 2 and density = 7.86 g/cc) workpiece, to obtain a square hole of dimension 5<br/>mm. The current used during operation is 5 kA and the Faraday constant is 96500. Which<br/>of the following option(s) is/are correct with respect to the given information of<br/>electrochemical machining?`,
+      image: "",
+      options: [
+        `MRR = 1.45 gm/s`,
+        `MRR = 0.184 gm/s`,
+        `Electrode feed rate = 441.79 mm/min`,
+        `Electrode feed rate = 0.736 mm/min`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A solid shaft of diameter 5 cm is welded to a flat plate by 1 cm fillet weld. If the<br/>permissible shear stress in the weld material is not to exceed 8 kN/cm2 and T be the<br/>torque, t be the leg of the weld,<em>d</em><br/>be the diameter of shaft, then which of the following option(s) is/are correct?`,
+      image: "",
+      options: [
+        `The maximum torque that the welded joint can sustain is 3.14 kN.m.`,
+        `The expression for the shear stress at the throat from the basic theory is <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_114.png"/>`,
+        `The expression for the shear stress at the throat from the basic theory is <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_115.png"/>`,
+        `The maximum torque that the welded joint can sustain is 2.2 kN.m.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose a continuous Random variable x has the probability density function,<br/><br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_117.png"/><br/>The probability <em>P</em><br/>(0.1<br/>&lt;<em>x</em><br/>&lt;0.2) is`,
+      image: "",
+      options: [
+        `0.1465`,
+        `0.3125`,
+        `0.2241`,
+        `0.4165`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The area bounded by the curves x<sup>2</sup><br/>= 8y and x – 2y + 8 = 0 is ________ square unit.`,
+      image: "",
+      options: [],
+      answer: "36",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_119.png"/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of integral <img align="absmiddle" alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_121.png"/><br/>where <em>C</em><br/>is the circle ⎥ z⎥ = 3 is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_122.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_123.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_124.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_125.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test2_full_syllabus_gate_2026_me/img_126.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Mock Test-3",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the below given series, choose the missing terms shown by ? out of the given<br/>alternatives.<br/>T, R, P, N, L, ?, ?`,
+      image: "",
+      options: [
+        `J, G`,
+        `J, H`,
+        `K, H`,
+        `K, I`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Read the following information carefully and answer the questions given below it:<br/><br/>(i) Six flats on a floor in two rows facing North and South are allotted to <em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>, <em>S</em><br/>, <em>T</em><br/>and <em>U</em><br/>.<br/><br/>(ii) <em>Q</em><br/>gets a North facing flat and is not next to <em>S</em><br/>.<br/><br/>(iii) <em>S</em><br/>and U get diagonally opposite flats.<br/><br/>(iv) <em>R</em><br/>, next to U, gets a south facing flat and T gets a North facing flat.<br/>Which of the<br/>following is/are correct?`,
+      image: "",
+      options: [
+        `The south facing flats are <em>U</em><br/>, <em>R</em><br/>, <em>P</em><br/>.`,
+        `<em>T</em><br/>’s flat is between <em>Q</em><br/>and <em>S</em><br/>.`,
+        `The diagonally opposite pairs are <em>SU</em><br/>and <em>QP</em><br/>.`,
+        `The diagonally opposite pairs are <em>RS</em><br/>and <em>TP</em><br/>.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the most appropriate word from the options given below to complete the following<br/>sentence:<br/><br/>His overly cheerful comments during the crisis______<br/>his true anxiety about the<br/>situation.`,
+      image: "",
+      options: [
+        `Masked`,
+        `Intensified`,
+        `Revealed`,
+        `Suppressed`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given below are four pairs of words. Identify the one which is different from others.`,
+      image: "",
+      options: [
+        `Murky : Dusky`,
+        `Inter : Exhume`,
+        `Effete : Fructuous`,
+        `benediction: Execration`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Many adults, no matter what their age, respond to adversity by seeking advice only their<br/>parents.<br/><br/>Consciously or net, they regness to a psychological state of childhood dependence in<br/>which the parent seen as the only source of wisdom and comfort. Adults who don’t regress<br/>to childhood mode turn for advice in adversity only to other loved ones- spouse or a<br/>best friend - whom they perceive and relate to as peers.<br/>If all the above<br/>statements are true, which of the following must also be true ?`,
+      image: "",
+      options: [
+        `No adults seek advice in adversity from total strangers.`,
+        `Adults who regress to a state of childhood dependence loose touch with peers.`,
+        `Ones parents offer more wisdom in adversity than peers.`,
+        `Adults who don’t suffer adversity look only to their parents for advice`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A thin hollow right circular cylinder of diameter 10 cm and length 15 cm is shown in the<br/>figure.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_13.png"/><br/>The inner curved surface is denoted by 2, while the two end surfaces are denoted by 1<br/>and 3 respectively. If the view factor from surface 1 to surface 3, <em>F</em><br/><sub>13</sub><br/>= 0.8, then <em>F</em><br/><sub>21</sub><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_14.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_15.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_16.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_17.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A curved bar ABC forms a semicircular arc of radius 1.5 m. The bar is loaded by two equal<br/>and opposite forces of 15 kN each as shown in the figure.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_19.png"/><br/>The shear force and bending moment at a cross-section of the bar at an angle of 30°<br/>from point A are`,
+      image: "",
+      options: [
+        `13 kN, 11.25 kNm`,
+        `12.25 kN, 13 kNm`,
+        `10.25 kN, 14.20 kNm`,
+        `17.25 kN, 19 kNm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A simple planar pin jointed truss is shown in the figure below.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_21.png"/><br/>The magnitude of axial load carried by member <em>BC</em><br/>is`,
+      image: "",
+      options: [
+        `0 kN`,
+        `50 kN`,
+        `100 kN`,
+        `200 kN`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following alloying elements in steel reduces hardenability and increases<br/>ductility?`,
+      image: "",
+      options: [
+        `Silicon`,
+        `Molybdenum`,
+        `Tungsten`,
+        `Niobium`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is correct regarding Electromagnetic forming?`,
+      image: "",
+      options: [
+        `The workpiece has to be magnetic.`,
+        `The workpiece has to be both electrically conductive and magnetic.`,
+        `The workpiece has to be electrically conductive but need not to be magnetic.`,
+        `The workpiece required need not to be electrically conductive nor magnetic.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An airplane is flying at a speed of 570 m/s at an altitude where the air pressure is 21<br/>kPa and density is 0.27 kg/m<sup>3</sup><br/>. The mach angle corresponding to the flight condition is`,
+      image: "",
+      options: [
+        `35.37°`,
+        `19°`,
+        `17.68°`,
+        `39.3°`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two identical wires are used to make closed coil helical springs. If the mean coil<br/>diameter of one is twice the other, the ratio of the stiffness of the larger diameter<br/>spring to the smaller diameter spring is [Assume each turn as effective turn]`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_27.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following NC machine tool function is used to set spindle speed in<br/>revolutions per minute?`,
+      image: "",
+      options: [
+        `G97`,
+        `G96`,
+        `M03`,
+        `M05`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 35 mm H9-g6 fit having limits of size for H9 hole are 35.035 mm and 35.000 mm and for<br/>g6 shaft are 34.985 mm and 34.955 mm. The gauge maker’s tolerance is taken as 10% of the<br/>work tolerance. The limits of size of the ‘NO GO’ ring gauge are:`,
+      image: "",
+      options: [
+        `34.952 mm to 34.955 mm`,
+        `34.955 mm to 34.958 mm`,
+        `34.982 mm to 34.985 mm`,
+        `35.035 mm to 35.038 mm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which statement regarding lean manufacturing is incorrect?`,
+      image: "",
+      options: [
+        `It is based on production systems used by Toyota.`,
+        `It improves systems and practices to deliver more and better value with lesser<br/>inputs.`,
+        `It eliminates waste and non-value added activity through continuous improvements.`,
+        `It results in lower production cost, increased output and longer production lead<br/>time.`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_35.png"/><br/>The directional derivative of <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_36.png"/><br/>at the point (4, 2, 0) in the direction of the vector <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_37.png"/>is`,
+      image: "",
+      options: [
+        `6`,
+        `12`,
+        `18`,
+        `24`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In an orthogonal cutting operation the tool rake angle is 15°, depth of cut and feed rate<br/>are 1.8 mm and 0.21 mm/rev respectively. The chip thickness ratio is 0.29. The vertical<br/>cutting force is 1500 N and the horizontal cutting force is 785 N. If the cutting<br/>velocity is 225 m/min, then the shear workdone per second is _______ J/S. [Correct upto<br/>two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1147.14",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A single-row deep groove ball bearing has a rated life of 2000 million rev. at 90%<br/>reliability. The bearing life corresponding to a reliability of 60% is _______ million<br/>rev. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "7709.2",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A high strength steel wire of diameter 3 mm is bent around a cylindrical drum of radius<br/>0.6 m.<br/><br/>The steel wire has modulus of elasticity of 200 GPa. The bending moment in the wire is<br/>_____Nm.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.32",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_41.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A plane wall of thickness 5 mm, undergoes one-dimensional transient heat conduction. The<br/>thermal conductivity <em>k</em><br/>, density ρ, and specific heat<br/><em><br/>c<sub>p</sub><br/></em><br/>of thematerial are independent of temperature. The thermal diffusivity of the material<br/>is α = 2 × 10<sup>–5</sup><br/>m<sup>2</sup><br/>/s. At a certain instant, the temperature distribution within the wall is given by,<br/><em>T</em><br/>= 3 × 104 x<sup>2</sup><br/>+ 50<em>x</em><br/>+ 300.<br/>Assuming no internal heat generation, the rate of heating of the block is<br/>______ °C/s. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "1.2",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_43.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A block of mass 15 kg is attached to a linear spring of stiffness 400 N/m, as shown in<br/>the figure. If the block is in static equilibrium, under the given conditions, then the<br/>natural length of spring is ______ mm. (Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_44.png"/>`,
+      image: "",
+      options: [],
+      answer: "193.44",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two external spur gears are in mesh has a gear ratio of 3. The pressure angle and module<br/>are 20° and 4 mm respectively. If the distance between the centers is 300 mm, then the<br/>base circle radius of the gear wheel is ____ cm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "21.14",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a Hartnell governor, extreme radii of rotation of the balls are 15 mm, 45 mm and the<br/>corresponding speeds are 150 rpm and 300 rpm. The mass of each ball is 5 kg. If the<br/>lengths of the ball arm and sleeve arms are equal, then the spring constant of the<br/>central spring is _______ kN/m. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "13.6",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_47.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A project network has an expected project completion time of 17 weeks. The variance of<br/>the project completion time is 9, if the project has to be completed 4 weeks earlier<br/>than the expected time, the magnitude of the standard normal variate is _____. (Correct<br/>upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.33",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A solid steel shaft <em>ABCD</em><br/>of uniform cross-section is driven at A by a motor transmitting 60 kW power at an<br/>angular speed of 75 rad/s as shown in the figure. The gears mounted at <em>B</em><br/>and <em>C</em><br/>drive machines requiring 15 kW and 45 kW power respectively. The magnitude of the<br/>maximum torsional moment in the shaft is _______ Nm. [Round off to nearest integer]<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_49.png"/>`,
+      image: "",
+      options: [],
+      answer: "800",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The gauge pressure inside a cylindrical liquid jet of radius R, and surface tension σ<br/>is <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_51.png"/><br/>The value of <em>n</em><br/>is _____. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_52.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following mechanisms is/are exact straight line motion mechanism?`,
+      image: "",
+      options: [
+        `Pantograph`,
+        `Modified Scott Russel Mechanism`,
+        `Grasshopper Mechanism`,
+        `Peaucellier Mechanism`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Consider flow over a curved surface. <em>A</em><br/>point <em>X</em><br/>is located as shown in the figure<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_54.png"/><br/>Which of the following is/are correct regarding region <em>X</em><br/>?`,
+      image: "",
+      options: [
+        `There is favourable pressure gradient in the region.`,
+        `There is possible flow separation in the region.`,
+        `There is adverse pressure gradient in the region.`,
+        `Flow is accelerated in the region.`
+      ],
+      answer: ["B", "C"],
+      solution: `(b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For the differential equation <em>x</em><br/>′′(<em>t</em><br/>) + 4<em>x</em><br/>′(<em>t</em><br/>) + 3<em>x</em><br/>(<em>t</em><br/>) = 7, the solution <em>x</em><br/>(<em>t</em><br/>) at <em>t</em><br/>→ ∞ is ______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.33",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The value ‘<em>c</em><br/>’ for Cauchy’s mean value theorem for the function f (x) = <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_116.png"/>in<br/>the interval [2, 3] is _____.`,
+      image: "",
+      options: [],
+      answer: "2.4",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_117.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the below question followed by three statements 1, 2 and 3. You have to study<br/>the question and the statements and decide which of the statement(s) is/are necessary to<br/>answer the question.<br/>How many articles were sold?<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_1.png"/>`,
+      image: "",
+      options: [
+        `Any two of the three`,
+        `1 and 2 only`,
+        `2 and 3 only`,
+        `All 1, 2 and 3`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the adjoining figure ACB is a quadrant with radius ‘a’. A semicircle is drawn outside<br/>the quadrant taking <em>AB</em><br/>as a diameter. The area of shaded region is<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_5.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_6.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_7.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_8.png"/>`,
+        `can’t be determined`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given below are three statements and four conclusions drawn based on the<br/>statements.<br/><br/><strong>Statement 1:</strong><br/>Some doctors are teachers.<br/><br/><strong>Statement 2:</strong><br/>No teacher is an artist.<br/><br/><strong>Statement 3:</strong><br/>All artists are doctors.<br/><br/><strong>Conclusion I:</strong><br/>Some teachers are doctors.<br/><br/><strong>Conclusion II:</strong><br/>All doctors are artists.<br/><br/><strong>Conclusion III:</strong><br/>No artists is a teacher.<br/><br/><strong>Conclusion IV:</strong><br/>Some artists are teachers.<br/>Which one of the following options can be logically<br/>inferred?`,
+      image: "",
+      options: [
+        `Only conclusion I is correct.`,
+        `Only conclusion II and conclusion III are correct.`,
+        `Only conclusion I and conclusion III are correct.`,
+        `Either conclusion III or concluson IV is correct.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `How may numbers can be made with digits 0, 7, 8 which are greater than ‘0’ and less than<br/>a million?`,
+      image: "",
+      options: [
+        `496`,
+        `486`,
+        `1084`,
+        `728`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `What is the equation for the line drawn below?<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_11.png"/>`,
+      image: "",
+      options: [
+        `y = 2x + 4`,
+        `y = 3x + 4`,
+        `y = 9x + 8`,
+        `y = x + 4`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Suppose that ‘<em>x</em><br/>’ is a continuous random variable whose probabiltiy density function in given <br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_30.png"/><br/>then the value of ‘<em>c</em><br/>’ is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_31.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_32.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_33.png"/>`,
+        `1`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_34.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cylinder of weight <em>W</em><br/>is held via rope on an inclined surface as shown in figure. The minimum coefficient of<br/>friction required to avoid slipping is<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_56.png"/>`,
+      image: "",
+      options: [
+        `0.177`,
+        `0.255`,
+        `0.570`,
+        `0.613`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The fuel supplied to a petrol engine is assumed to have the chemical composition<br/>C<sub>7</sub><br/>H<sub>16</sub><br/>. The combustion takes place with 50% excess air over stoichiometric requirement. If the<br/>air contains 21% O<sub>2</sub><br/>and 79% N<sub>2</sub><br/>by volume, the mass air-fuel ratio is`,
+      image: "",
+      options: [
+        `15.11`,
+        `4.62`,
+        `22.66`,
+        `7.51`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Customers arrive at a first class ticket counter of a railway station at the rate of 10<br/>per hour. There is one clerk serving the customers at the rate of 20 per hour. The<br/>probability that there are more than 2 customers in the counter is`,
+      image: "",
+      options: [
+        `10.5%`,
+        `12.5%`,
+        `14.5%`,
+        `16.5%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_59.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Oil flows steadily between two large parallel plates separated by a distance of 50 mm.<br/>One plate is stationary while the other plate moves with a uniform velocity V. The<br/>pressure decreases in the direction of flow at a rate of 10 Pa/m, the dynamic viscosity<br/>of oil is 0.05 kg/ms and the volumetric flow rate per unit width is 0.03 m<sup>3</sup><br/>/s. The velocity of the moving plate and the shear stress at the<br/>moving plate<br/>surface are, respectively`,
+      image: "",
+      options: [
+        `1.1167 m/s, 0.8667 N/m<sup>2</sup>`,
+        `1.1167 m/s, 1.1167 N/m<sup>2</sup>`,
+        `1.828 m/s, 1.1167 N/m<sup>2</sup>`,
+        `1.828 m/s, 0.8667 N/m<sup>2</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_61.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Moist air is cooled from state 1 to 2 as shown in figure. The mass flow rate of air is 25<br/>kg/s, then the rate of condensation of moisture from air is<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_63.png"/>`,
+      image: "",
+      options: [
+        `0.25 kg/s`,
+        `1.25 kg/s`,
+        `1.1237 kg/s`,
+        `2.367 kg/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The state of plane stress at a point in a material is shown in the figure. The normal and<br/>shear components of stress on a plane oriented at θ = 45° are 300 MPa and zero,<br/>respectively.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_65.png"/><br/>The magnitude of normal and shear stresses on a plane oriented at θ = 60° are`,
+      image: "",
+      options: [
+        `225 MPa, 130 MPa`,
+        `150 MPa, 75 MPa`,
+        `280 MPa, 130 MPa`,
+        `280 MPa, 75 MPa`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_66.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_67.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the mass spring system shown below:<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_68.png"/><br/>The natural frequency of the system is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_69.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_72.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_73.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a single pass wire drawing operation, a circular bar of diameter 12 mm is reduced to 9<br/>mm. Assuming no frictional loss. If the minimum drawing force required to initiate the<br/>drawing operation is 10 kN, the average flow stress of the material is`,
+      image: "",
+      options: [
+        `546.4 MPa`,
+        `157.2 MPa`,
+        `352.2 MPa`,
+        `273.2 MPa`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A framework <em>ABCD</em><br/>as shown in the figure is subjected to a vertical load <em>W</em><br/>acting at the mid span of member <em>BC</em><br/>. Ends <em>A</em><br/>and <em>D</em><br/>are connected by a linear spring of stiffness <em>k</em><br/>.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_76.png"/><br/>The flexural rigidity of the members is constant and equal to <em>EI</em><br/>. If the vertical deflection under load <em>W</em><br/>at the point of application is <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_77.png"/><br/>then the horizontal deflection of ends <em>A</em><br/>and <em>D</em><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_78.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_79.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_80.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_81.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_82.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_83.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vapour absorption refrigeration system operates between the following temperature<br/>limits<br/><br/>Evaporator temperature,<br/><em><br/>T<sub>E</sub><br/></em><br/>= –10°C<br/><br/>Generator temperature,<br/><em><br/>T<sub>G</sub><br/></em><br/>= 70°C<br/><br/>Ambient temperature,<br/><em><br/>T<sub>O</sub><br/></em><br/>= 23°C<br/>The actual COP of the system is 60% less than the ideal COP. If the<br/>refrigeration capacity is 5 TR, then the power required is`,
+      image: "",
+      options: [
+        `5.53 kW`,
+        `7.64 kW`,
+        `10.51 kW`,
+        `17.93 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A single plate clutch consists of one pair of contacting surfaces. The inner and outer<br/>radii of the friction disk are 62.5 mm and 125 mm, respectively. The total axial force<br/>is 20 kN, coefficient of friction is 0.2 and rotating at 600 rpm. If maximum power that<br/>can be transmitted assuming uniform pressure theory is <em>E</em><br/><sub>1</sub><br/>and that using uniform wear theory is <em>E</em><br/><sub>2</sub><br/>, then the value of <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_85.png"/>is`,
+      image: "",
+      options: [
+        `1.037`,
+        `2.037`,
+        `1.982`,
+        `2.982`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The set <em>B</em><br/>= {(–1, 1, 0), (1, 0, 0), (3, 2, 1)} of vectors is`,
+      image: "",
+      options: [
+        `A linearly independent set`,
+        `A linearly dependent set`,
+        `Both linearly dependent and independent set`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_87.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_88.png"/><br/>and ‘<em>s</em><br/>’ is the surface of the cube given by<em>x</em><br/>= 0, <em>x</em><br/>= 2, y = 0, y = 2, z = 0 and z = 2 is`,
+      image: "",
+      options: [
+        `16`,
+        `32`,
+        `24`,
+        `48`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_89.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A hot rectangular plate of area 10 cm2 is maintained at a uniform temperature of 190°C<br/>and is exposed to quiescent air at 10°C. When the smaller side of the plate is held<br/>vertical, convective heat transfer rate is found to be 20% higher, than that when the<br/>larger side of the plate is held vertical.<br/><br/>The Nusselt correlation is given as N<sub>u</sub><br/>= 0.6 (Gr.Pr)<sup>0.25</sup><br/>and For air at 100°C, ρ = 0.9 kg/m<sup>3</sup><br/>,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.008 kJ/kgK, μ = 23 × 10–6 Pa-s, <em>k</em><br/>= 0.033 W/mK<br/>The perimeter of the plate is ______ cm [Correct upto one decimal<br/>place]`,
+      image: "",
+      options: [],
+      answer: "13.5",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_90.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported beam of span <em>L</em><br/>is subjected to a uniformly distributed load over its entire span. The beam is propped<br/>at the mid span such that the slope at both supports is reduced to one-third, of the<br/>slope without the prop. The percentage reduction in deflection at mid span due to the<br/>prop is _______%. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "71.11",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_92.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 45 kg machine is mounted on a spring bed having an equivalent stiffness of 8 ×<br/>10<sup>5</sup><br/>N/m. When the machine operates at a frequency of 32 Hz, the steady state amplitude of<br/>vibration is measured as 1.5 mm. The magnitude of the excitation force acting on the<br/>machine at this speed is ______ kN. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.53",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The layout of steam power plant working on the rankine cycle with single stage<br/>regeneration is shown below.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_95.png"/><br/>The enthalpies at different stages are given: <em>h</em><br/><sub>1</sub><br/>= 3445 kJ/kg; <em>h</em><br/><sub>2</sub><br/>= 2700 kJ/kg; <em>h</em><br/><sub>3</sub><br/>= 2150 kJ/kg; <em>h</em><br/><sub>4</sub><br/>= 150 kJ/kg<br/>The mass fraction of steam extracted for process heating is 0.2.<br/>Neglect the pump work. The thermal efficiency of the cycle is ______ %. [Correct upto<br/>two decimal places]`,
+      image: "",
+      options: [],
+      answer: "42.55",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_96.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A wooden pattern of dimensions 200 mm × 150 mm × 100 mm is used to make a master pattern<br/>of aluminium. This master pattern is then used for making a casting of copper. Consider<br/>only solid shrinkage. If linear solid contraction for aluminium and copper is 0.13 mm/m<br/>and 0.16 mm/m respectively then the final volume of the copper casting after cooling to<br/>room temperature is<br/><br/>_________ cm<sup>3</sup><br/>. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "2997.391",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_97.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A Francis turbine has the blade angle at inlet equal to 90° and the guide vane angle is<br/>15°. The water leaves the runner without any tangential velocity at exit, and the<br/>velocity of flow is constant. The hydraulic efficiency of the turbine is ______ %.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "96.53",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_98.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A horizontal rigid beam <em>PQ</em><br/>is pin supported at end <em>P</em><br/>and carries a vertical load <em>W</em><br/>at joint <em>B</em><br/>, as shown in the figure. The beam is also supported at <em>R</em><br/>by a pinned end column of length 2 m. The column is restrained laterally at distance of<br/>1.5 m from the base. The column is made of steel bar (<em>E</em><br/>= 200 GPa) and of diameter 20 mm. If the factor of safety with respect to buckling of<br/>the column is 2, then the maximum allowable load <em>W</em><br/>is _____ N. [Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_99.png"/>`,
+      image: "",
+      options: [],
+      answer: "861.29",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_100.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cylindrical blank of diameter 40 mm and length 150 mm is to be machined to a component<br/>of 30 mm diameter using average roughing speed of 25 m/min and average finish speed of<br/>50 m/min. The feed for roughing is 0.25 mm/rev while that for finishing is 0.10 mm/rev.<br/>The maximum depth of cut for roughing is 2.5 mm and take finish allowance to be 1 mm.<br/>The machining time<br/>required will be ______ minutes. (Round off to two decimal<br/>places)`,
+      image: "",
+      options: [],
+      answer: "8.26",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A composite slab consists of three solid layer A, B and C as shown in figure.<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_103.png"/><br/>If the convective heat transfer coefficient on the cold fluid side is increased by 50%,<br/>while the cold flow temperature remains unchanged. The percentage change in the<br/>temperature difference across slab <em>B</em><br/>is _____ %. [Correct upto two decimal places]%`,
+      image: "",
+      options: [],
+      answer: "0.53",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Air flows over a smooth flat plate at a velocity of 5 m/s. The density of air is 1.05<br/>kg/m<sup>3</sup><br/>and the kinematic viscosity is 1.45 × 10<sup>–5</sup><br/>m<sup>2</sup><br/>/s. The length of the plate is 15 m in the direction of flow and width of plate is 2 m.<br/>Assuming the boundary layer is turbulent over the entire plate, the total drag force on<br/>both sides of the plate is ______ N. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.65",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_105.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a planetary gear train shown below<br/><br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_106.png"/><br/>Annulus <em>A</em><br/>rotates at 270 rpm about the axis of the fixed wheel S which has 120 teeth. If<br/>threearmed spider is driven at 150 rpm, then the speed of planet gear P will be _____<br/>rpm [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1350",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rigid and perfectly insulated tank of volume 2 m3 contains air initially at 0.1 MPa<br/>and 350 K. The tank is connected to a high pressure air line in which air flows steadily<br/>at 1 MPa and 700 K. The valve between the tank and high pressure line is opened and the<br/>tank is filled quickly. Assuming negligible change in potential and kinetic energy of<br/>air. If the final pressure inside the tank is<br/>1 MPa, the final temperature of air<br/>inside the tank is ______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "830.51",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A gas turbine works on an ideal Brayton cycle between pressure limits of 1.2 bar and 7.2<br/>bar, has minimum and maximum temperature of 27°C and 1227°C. The ratio of specific heats<br/>of the working fluid is 1.4. If the isentropic efficiencies of compressor and turbine<br/>both are 0.85, then which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `The final temperature at the end of compression is nearly 227°C.`,
+        `The efficiency of the cycle is nearly 28.51%.`,
+        `The efficiency of the cycle is about 40.07%.`,
+        `The final temperature at the end of expansion is nearly 716°C.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `At the critical point of a pure substance, which of the following statements is correct?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_111.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_112.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_113.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_114.png"/>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The integral <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_118.png"/><br/>is evaluated by changing the order of integration, that leads to <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_119.png"/>`,
+      image: "",
+      options: [
+        `y, 2`,
+        `2, y`,
+        `y + 2, 4`,
+        `y+ 1, 3`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If the differential equation <img align="absmiddle" alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_121.png"/><br/>is solved using the Euler’s method with step size <em>h</em><br/>= 0.1, then <em>y</em><br/>(1.2) is equal to`,
+      image: "",
+      options: [
+        `2.2236`,
+        `2.47167`,
+        `2.67164`,
+        `2.1123`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test3_full_syllabus_gate_2026_me/img_122.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Mock Test-4",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the below question followed by three statements. You have to study the question<br/>and the statements and decide which of the statement(s) is/are necessary to answer the<br/>given question.<br/><br/>A, B and C together start a business with a total investment of <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_1.png"/><br/>At the end of the year, the total profit is <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_2.png"/><br/>What is A’s share in the profit?<br/><br/>1. A’s contribution is <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_3.png"/><br/>times B’s contribution.<br/><br/>2. B’s contribution is twice that of C.<br/>3. A’s contribution is thrice that of C.`,
+      image: "",
+      options: [
+        `1 and 2 only`,
+        `2 and 3 only`,
+        `All 1, 2 and 3`,
+        `Any two of the three`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find the next term in the alpha-numerical series:<br/>Z1A, X2D, V6G, T21J, R88M, P445P,<br/>?`,
+      image: "",
+      options: [
+        `N2676S`,
+        `N2676T`,
+        `T26TON`,
+        `T2676N`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_5.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Of the five villages P, Q, R, S and T situated close to each other, P is 1 m to the west<br/>of Q, R is 1 m to the south of P, T is 1 m to the north of Q and S is 1 m to the east of<br/>T. Then R is in which direction with respect to S?`,
+      image: "",
+      options: [
+        `North-West`,
+        `South-East`,
+        `South-West`,
+        `None of these`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The diameter of a sphere is decreased by 25%. By what percentage does its curved surface<br/>area decrease?`,
+      image: "",
+      options: [
+        `25%`,
+        `37.5%`,
+        `43.75%`,
+        `50%`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A tariff against computers made in country z is needed to protect computer manufactures<br/>in this country. With such a tariff, domestic computer manufactures would see increased<br/>sales of their own products. And increased sales frequently lead to reduced prices. The<br/>conclusion which can<br/>be most properly drawn from above statement is`,
+      image: "",
+      options: [
+        `A lack of protective tariff has hampered computer production in this country.`,
+        `A tariff would probably lead to a drop in prices for buyers of domestically produced<br/>computers.`,
+        `Domestic manufacturers will decrease computer production if a protective tariff is<br/>not established`,
+        `A drop in computer prices is likely to create more jobs in the country.`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Both creep resistance and tensile strength of a metal can be enhanced by`,
+      image: "",
+      options: [
+        `Increase in the grain size`,
+        `Decrease in the grain size`,
+        `Addition of dispersoid`,
+        `Annealing`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The number of dummy activities required for making the network diagram of the<br/>following project having 9 activities is<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_15.png"/>`,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `2`,
+        `3`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A two-dimensional velocty field is given by<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_17.png"/><br/>If the flow is incompressible, then the constant <em>C</em><br/>should be`,
+      image: "",
+      options: [
+        `-10`,
+        `0`,
+        `5`,
+        `10`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the beam shown below,<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_19.png"/><br/>Which of the following diagrams are discontinuous at the mid-span?`,
+      image: "",
+      options: [
+        `Bending moment diagram only`,
+        `Axial force diagram and bending moment diagram`,
+        `Bending moment diagram and shear force diagram`,
+        `Axial force diagram, bending moment diagram and shear force diagram`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_20.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following metal working operations can be categorized as an indirect<br/>compression process?`,
+      image: "",
+      options: [
+        `Forging`,
+        `Wire drawing`,
+        `Extrusion`,
+        `Stretch forming`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A sphere of mass 300 g is attached to an inextensible string of length 1.3 m, whose upper<br/>end is fixed to the ceiling as shown in the figure. The sphere is made to describe a<br/>horizontal circle of radius 0.5 m.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_21.png"/><br/>The angular velocity of the sphere is`,
+      image: "",
+      options: [
+        `2.859 rad/sec`,
+        `7.23 rad/sec`,
+        `8.86 rad/sec`,
+        `10.2 rad/sec`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A solid shaft of mild steel 240 mm diameter is to be replaced by a hollow shaft of alloy<br/>steel for which the allowable shear stress is 22% greater. The power transmitted is<br/>increased by 20% and the speed of rotation is increased by 5%. The maximum internal<br/>diameter of the hollow shaft, if its outer diameter is equal to the diameter of the<br/>solid shaft is`,
+      image: "",
+      options: [
+        `80 mm`,
+        `100 mm`,
+        `120 mm`,
+        `140 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two gears with stub-teeth having addendum 0.84 times the module are in mesh. The<br/>tangential force is 0.95 times the total force between the gear teeth. For a gear ratio<br/>of 3, what is the minimum number of teeth on the gear pinion to avoid undercutting?`,
+      image: "",
+      options: [
+        `<em><br/>T<sub>G</sub><br/></em><br/>= 42,<br/><em><br/>t<sub>p</sub><br/></em><br/>= 14`,
+        `<em><br/>T<sub>G</sub><br/></em><br/>= 48,<br/><em><br/>t<sub>p</sub><br/></em><br/>= 16`,
+        `<em><br/>T<sub>G</sub><br/></em><br/>= 51,<br/><em><br/>t<sub>p</sub><br/></em><br/>= 17`,
+        `<em><br/>T<sub>G</sub><br/></em><br/>= 54,<br/><em><br/>t<sub>p</sub><br/></em><br/>= 18`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given for water,<br/><br/>• At 190°C, saturation pressure = 12.54 bar<br/><br/>• At 210°C, saturation pressure = 19.06 bar<br/><br/>• At 200°C,<br/><em><br/>v<sub>f</sub><br/></em><br/>= 1.1565 × 10<sup>–3</sup><br/>m3/kg and<br/><em><br/>v<sub>g</sub><br/></em><br/>= 0.1274 m<sup>3</sup><br/>/kg<br/>Using the Clapeyron equation, the enthalpy of vaporization of water at 200°C is<br/>approximately.`,
+      image: "",
+      options: [
+        `1857 kJ/kg`,
+        `1924 kJ/kg`,
+        `1947 kJ/kg`,
+        `2020 kJ/kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A diesel cycle in which the temperature at the end of compression is 527°C, the<br/>gravimetric air-fuel ratio is 25 : 1 and the calorific value of fuel is 40 MJ/kg.<br/>Specific heat of air at constant pressure is 1 kJ/kgK and is independent of temperature.<br/>Assume combustion product contains air only. The cut-off ratio of cycle is`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_26.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The particular solution of the below differential equation is<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_34.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_37.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_38.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_39.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A band brake has a band width of 80 mm and wraps around a drum of diameter 300 mm. The<br/>coefficient of friction between the band and the drum is 0.2 and the angle of wrap of<br/>270°. The brake is required to exert a friction torque of 900 Nm. The maximum tension<br/>developed in the band is _______ kN [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "9.83",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A binary Pb-Sn alloy contains 40 wt% Sn and is maintained at a temperature of 200°C. At<br/>this temperature it contains two phases. The phases are the α solid solution of Sn in Pb<br/>containing 17 wt% Sn and the Pb-Sn liquid phase containing 55 wt% Sn. The fraction of<br/>the α-phase in the alloy is ___ %. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "39.5",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `According to the Naval Research Laboratory method, the shape factor of a steel slab<br/>casting having dimensions 25 × 25 × 5 cm is ______. [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An oil with a viscosity of 0.40 Ns/m<sup>2</sup><br/>and density 900 kg/m3 flows in a pipe of diameter, 0.02 m.<br/>The pipe flow velocity<br/>is 0.064 m/s. The hydrodynamic entry length is ______ mm. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "3.46",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_43.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a 2 litre four-stroke indirect injection diesel engine, the indicated thermal<br/>efficiency is 60%, mechanical efficiency is 85% and the volumetric efficiency is 80%.<br/>The air-fuel ratio (by mass) is 13 : 1 and the calorific value of fuel is 40 MJ/kg. The<br/>brake specific fuel consumption is _______ kg/kW-hr. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.18",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In machining tests with two tools <em>A</em><br/>and <em>B</em><br/>, the Taylor’s tool life equation parameters were determined as <em>n</em><br/>= 0.45, C = 90 for tool <em>A</em><br/>and <em>n</em><br/>= 0.3, <em>C</em><br/>= 60 for tool B. The cutting speed above which tool <em>A</em><br/>will have higher tool life than tool <em>B</em><br/>is _____ m/min. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "26.67",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_45.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a Steam power plant, steam is first expands isentropically in a turbine from an<br/>initial condition of 100 bar and 500°C to a pressure of 40 bar. Then the steam is<br/>reheated up to 500°C at constant pressure. The steam is then expanded isentropically in<br/>another turbine upto a condenser pressure 0.01 bar.<br/><br/>The amount of heat rejected in the condensor is _____ kJ/kg. (Correct upto two decimal<br/>places.)<br/><br/>For steam, At 100 bar, 500°C: <em>h</em><br/>= 3373.7 kJ/kg, <em>s</em><br/>= 6.5966 kJ/kg; At 40 bar, 500°C:<br/><br/><em>h</em><br/>= 3445.3 kJ/kg, s = 7.0901 kJ/kgK and at 0.01 bar; h<sub>f</sub><br/>= 29.3 kJ/kg, h<sub>g</sub><br/>= 2514.2 kJ/kg, s<sub>f</sub><br/>= 0.1059 kJ/kgK, s<sub>g</sub><br/>= 8.9756 kJ/kgK.`,
+      image: "",
+      options: [],
+      answer: "1956.61",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_47.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `One end of a very long aluminium rod is connected to a wall at 140°C while the other<br/>end protrudes into a room at 15°C. The diameter of the rod is 3 mm and the heat transfer<br/>coefficient between the rod surface and environment is 300 W/m2K. If the thermal<br/>conductivity of the rod is 150 W/mK then, the total heat dissipated by the rod is<br/>_______ W. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "6.843",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two cubical castings of the same metal are moulded in green sand have sides of 3 cm and 6<br/>cm respectively. If the smaller casting solidifies in 2 minutes, then the expected<br/>solidification time of the larger casting is _____ minutes. [Rounded off to nearest<br/>integer]`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An aluminium specimen of gauge length 200 mm and diameter 25 mm is tested under torsion.<br/>A torque of 16.5 × 10<sup>3</sup><br/>N-mm produces an angular twist of 0.2 degree in the specimen. The modulus of rigidity of<br/>aluminium is ______ GPa. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "24.65",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A disk is mounted on a shaft between the two bearings as shown in the figure. The disk<br/>spins anticlockwise when viewed from right hand side bearing. The shaft precesses about<br/>a vertical axis at some angular velocity ‘ω’ in clockwise direction when viewed from<br/>above. Neglect the weight of the disk.<br/>Determine the direction of reaction forces<br/>on the shaft end.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_52.png"/>`,
+      image: "",
+      options: [
+        `Reaction on shaft at end A will be downward`,
+        `Reaction on bearing at end A will be downward`,
+        `Reaction on shaft at end A will be upward`,
+        `Reaction on bearing at end A will be upward`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A steel wire is drawn from an initial diameter of 12.7 mm to a final diameter of 10.2 mm<br/>at a speed of 90 m/min. The half cone angle of the die is 6° and the coefficient of<br/>friction at the job-die interface is 0.1.<br/>Based on the above data which of the<br/>following options is/are correct?`,
+      image: "",
+      options: [
+        `The reduction in area <em>r</em><br/>is 0.355.`,
+        `The reduction in area <em>r</em><br/>is 0.533.`,
+        `The true strain is 0.438.`,
+        `The true strain is 0.483.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_54.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A random variable ‘x’ is defined by<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_56.png"/><br/>The expected value of 2<em>x</em><br/>+ 5 is _______.`,
+      image: "",
+      options: [],
+      answer: "7",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A function <em>f</em><br/>(<em>x</em><br/>) is defined as <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_121.png"/><br/>For <em>f</em><br/>(<em>x</em><br/>) to be a valid probability density function, the value of <em>A</em><br/>must be`,
+      image: "",
+      options: [
+        `8`,
+        `16`,
+        `18`,
+        `22`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_122.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A conical vessel whose internal radius is 10 cm and height 72 cm is full of water. If<br/>this water is poured into a cylindrical vessel with internal radius 30 cm, the height of<br/>the water level rises in it is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_7.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_8.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_9.png"/>`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An opaque solid cone is suspendended in the path of a parallel beam of light such that<br/>its shadow is cast on a screen oriented perpendicular to the direction of the light<br/>beam.<br/><br/>Under these conditions, which one of the shadows <em>A</em><br/>, <em>B</em><br/>, <em>C</em><br/>and <em>D</em><br/>is not possible?<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_11.png"/>`,
+      image: "",
+      options: [
+        `A`,
+        `B`,
+        `C`,
+        `D`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The sum of all the numbers greater than 10000 formed by using digits 0, 2, 4, 6, 8 (no<br/>digit repeated in any number) is equal to?`,
+      image: "",
+      options: [
+        `5199960`,
+        `5209960`,
+        `5199980`,
+        `5299960`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_12.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Monica has a piece of canvas whose area is 551 m<sup>2</sup><br/>. She uses it to have a conical tent made, with a base radius of 7 m. Assuming that all<br/>the stitching margins and the wastage incurred while cutting, amounts to approximately 1<br/>m2, the volume of the tent is _____ m<sup>3</sup><br/>.`,
+      image: "",
+      options: [],
+      answer: "1232",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `All the soldier are arranged in the form of an equivalent triangle i.e. one soldier in<br/>front row, 2 soldier in second row and 3 soldier in third row and so on. If 669 more<br/>soldiers from other are added in such a way that all the soldiers form a square and each<br/>of the side contains 8 less soldier<br/>than each side of equilateral triangle. The<br/>number of soldier initially were _________ .`,
+      image: "",
+      options: [],
+      answer: "1540",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_14.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If the eigen vectors of a 2 × 2 matrix A corresponding to the eigen values –1 and 6<br/>are <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_27.png"/><br/>and <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_28.png"/><br/>respectively, then the matrix <em>A</em><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_29.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_30.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_31.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_32.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vertical load W is applied to the rigid cantilever frame shown in the figure below.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_58.png"/><br/>Assume <em>EI</em><br/>to be constant throughout the frame and neglect axial deformations.<br/><br/>The vertical displacement of the point <em>C</em><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_59.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_60.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_61.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_62.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_63.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A refrigerator uses R-12 with a mass flow rate of 0.03 kg/s. The refrigerant enters the<br/>compressor as saturated vapour at 150.9 kPa. After adiabatic compression, it enters the<br/>condenser as superheated vapour at 500 kPa and 100°C. The refrigerant leaves the<br/>condenser as saturated liquid at the same pressure. The enthalpy of superheated vapour<br/>at 500 kPa and 100°C is 252.05 kJ/kg.<br/>Use the following data:<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_65.png"/><br/>The COP of the cycle is`,
+      image: "",
+      options: [
+        `1.25`,
+        `1.50`,
+        `1.75`,
+        `2.00`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Steam enters a counter flow heat exchanger, dry saturated at 10 bar and leaves at 350°C.<br/>The mass flow rate of steam is 800 kg/min. The hot gases enters the heat exchanger at<br/>650°C with a mass flow rate is 1350 kg/min. If the tubes are 30 mm in diameter and 3 m<br/>long, then the number of tubes required is<br/><br/>Neglect the resistance offered by metallic tubes.<br/><br/>Use the following data:<br/><br/>For steam: <em>t</em><br/><sub>sat</sub><br/>= 180°C(at 10 bar); c<sub>ps</sub><br/>= 2.71 kJ/kgK; h<sub>s</sub><br/>= 600 W/m<sup>2</sup><br/>K<br/><br/>For gas: <em>c</em><br/><sub>pg</sub><br/>= 1 kJ/kgK;<br/><em><br/>h<sub>g</sub><br/></em><br/>= 250 W/m<sup>2</sup><br/>K`,
+      image: "",
+      options: [
+        `503`,
+        `510`,
+        `516`,
+        `524`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_67.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_68.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `At a post office stamp vendor window, customers arrive at an average rate of 20 customers<br/>every 10 minutes. The vendor clerk can serve 5 customers in 2 minute. If the clerk works<br/>an 8-hours shift, the total idle time of the clerk is`,
+      image: "",
+      options: [
+        `80 min`,
+        `96 min`,
+        `120 min`,
+        `144 min`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_69.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_70.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two blocks of masses 5 kg and 3 kg are placed one over the other as shown in the figure.<br/>A horizontal force of 100 N is applied on the 5 kg block. The acceleration with which<br/>the 3 kg block will start separating from the 5 kg block is<br/><br/>[Take g = 10 m/s<sup>2</sup><br/>]<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_71.png"/>`,
+      image: "",
+      options: [
+        `0 m/s<sup>2</sup>`,
+        `10.8 m/s<sup>2</sup>`,
+        `2 m/s<sup>2</sup>`,
+        `8.8 m/s<sup>2</sup>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_72.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two columns of circular cross-section one hollow and the other solid are made of the<br/>same material and have the same length, same cross-sectional area and same end<br/>conditions. The internal diameter of the hollow column is half of its external diameter.<br/>The ratio of the buckling strengths of the hollow column to the solid column is`,
+      image: "",
+      options: [
+        `1.66`,
+        `1.56`,
+        `1.46`,
+        `1.36`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_73.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The torque developed by an engine is given by T = (1800 + 350 sin2θ) N.m where θ is the<br/>angle turned by the crank from inner dead center. The engine drives a machine that<br/>requires a driving torque of (1800 + 230 sinθ) N.m. The rotating parts of the engine<br/>have a mass of 250 kg and a radius of gyration of 480 mm. If the maximum speed of<br/>rotation is 240 rpm, the power developed by the engine at the mean speed is`,
+      image: "",
+      options: [
+        `39.6 kW`,
+        `45.24 kW`,
+        `54.42 kW`,
+        `60.92 kW`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an orthogonal cutting operation, the rake angle of the tool is 10°. The chip<br/>thickness increased by 140% as compared to uncut chip thickness. The coefficient of<br/>friction at chip-tool interface is 0.5. Find ratio of<br/><em><br/>F<sub>n</sub><br/></em><br/>to<br/><em><br/>F<sub>s</sub><br/></em><br/>where<br/><em><br/>F<sub>n</sub><br/></em><br/>is ‘backing up’ force on the chip provided by workpiece which act normal to shear plane<br/>and<br/><em><br/>F<sub>s</sub><br/></em><br/>is the resistance to shear in forming the chip.`,
+      image: "",
+      options: [
+        `0.53`,
+        `0.80`,
+        `1.13`,
+        `0.85`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_75.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_76.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Water flows steadily through a horizontal pipeline at a volumetric flow rate of 0.5<br/>m<sup>3</sup><br/>/s. The inside diameter of the pipe is 0.5 m. The density and kinematic viscosity of<br/>water are 1000 kg/m<sup>3 </sup><br/>and 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s, respectively. The Darcy-Weisbach friction factor is 0.0093 and acceleration due to<br/>gravity is 9.81 m/s<sup>2</sup><br/>. To maintain a constant flow rate, the power required per unit length of the pipeline<br/>is`,
+      image: "",
+      options: [
+        `30.15 W/m`,
+        `39.64 W/m`,
+        `41.38 W/m`,
+        `55.92 W/m`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_77.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The assignment problem given below requires four different jobs to be performed on four<br/>different machines. The cost <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_78.png"/>of<br/>assigning each job to each machine is shown in the table.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_79.png"/><br/>The minimum cost of assignment is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_80.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_81.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_82.png"/>`,
+        `<br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_83.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A Francis turbine has an outer diameter of 1.4 m and rotates at 430 rpm. Water enters<br/>the runner without shock with a flow velocity of 9.5 m/s and leaves the runner without<br/>whirl with an absolute velocity of 7 m/s. The turbine develops a power of 12.25 MW and<br/>the flow rate through the turbine is 12 m<sup>3</sup><br/>/s. The absolute velocity of water at entry to the runner is`,
+      image: "",
+      options: [
+        `33.75 m/s`,
+        `43.75 m/s`,
+        `32.39 m/s`,
+        `42.39 m/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_85.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The directional derivative of <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_87.png"/><br/>at the point <em>P</em><br/>(1, 2, –1) along <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_88.png"/>is ________.<br/>(Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "-6.532",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_89.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `If <em>f</em><br/>(<em>x</em><br/>) = 12<em>x</em><br/><sup>5</sup><br/>– 45<em>x</em><br/><sup>4</sup><br/>– 20<em>x</em><br/><sup>3</sup><br/>+ 90<em>x</em><br/><sup>2</sup><br/>, then`,
+      image: "",
+      options: [
+        `The minimum value of the function <em>f</em><br/>(<em>x</em><br/>) is –459.`,
+        `The maximum value of the function <em>f</em><br/>(<em>x</em><br/>) is 53.`,
+        `<em>f</em><br/>(<em>x</em><br/>) has neither a maximum nor a minimum at <em>x</em><br/>= –1.`,
+        `<em>f</em><br/>(<em>x</em><br/>) has neither a maximum nor a minimum at <em>x</em><br/>= 3.`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_90.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A bracket is attached to a column by means of four identical rivets and it is subjected<br/>to an eccentric load of 12 kN as shown in the figure. If the permissible shear stress is<br/>60 MPa then the design diameter of the rivets will be ______ mm [Correct upto two<br/>decimal places]<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_92.png"/>`,
+      image: "",
+      options: [],
+      answer: "15.96",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_93.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In the mechanism shown in the figure, the angular velocity of link AB is 3 rad/sec.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_95.png"/><br/>The angular velocity of link CD is ____ rad/s. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.25",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_96.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_97.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Air in a piston-cylinder arrangement is heated at constant pressure by a heat addition<br/>of 100 kJ/kg of air. Initially the air is at 28°C while the surrounding is at 21°C. The<br/>change in availability of the air is _____ kJ/kg [Correct upto two decimal<br/>places].<br/><br/>[Take <em>c</em><br/><sub><br/><em>p</em><br/>,air<br/></sub><br/>= 1.005 kJ/kgK and atmospheric air pressure as 1 bar]`,
+      image: "",
+      options: [],
+      answer: "15.66",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_98.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Given the following linear programming problem,<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_99.png"/><br/>The corner point of a feasible region for which z is maximum is given as (<em>x</em><br/><sub>1</sub><br/>, <em>x</em><br/><sub>2</sub><br/>). The value of <em>x</em><br/><sub>1</sub><br/>is _____ (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.25",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_100.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A flat plate, 1 m wide and 1.5 m long is maintained at uniform surface temperature of<br/>90°C and is exposed to an air stream at a free stream temperature of 10°C. The rate of<br/>energy dissipation from the plate is 0.375 kW. Air flow over the flat plate along the<br/>1.5 m length. Assuming laminar flow the velocity of air is ______cm/s. [Rounded off to<br/>nearest integer] Properties of air at 50°C :<br/><br/>ρ = 1.09 kg/m<sup>3</sup><br/>, k = 0.028 W/mK, c<sub>p</sub><br/>= 1.007 kJ/kgK, μ = 2.03 × 10<sup>–5</sup><br/>kg/ms, Pr = 0.7`,
+      image: "",
+      options: [],
+      answer: "100",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_101.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A spring mass damper system has a damping factor of 0.30. The frequency ratio at which<br/>the system attains peak amplitude is ______. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.906",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A two stage air compressor with intercooling is used in a gas turbine power plant. Air<br/>enters the compressor at 1 bar and 27°C. The maximum temperature of the cycle is limited<br/>to 900°C and the maximum pressure ratio is 6. If the temperature of air after<br/>intercooling is 47°C, the intermediate pressure, for minimum work input to compressor<br/>between the stages is ______ bar. [Correct upto two decimal places]<br/><br/>[Take adiabatic index, γ<sub>air</sub><br/>= 1.4]`,
+      image: "",
+      options: [],
+      answer: "2.74",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cantilever beam of length 2 m carries a uniformly distributed load 2 kN/m over a<br/>length of 1 m from the free end and a point load of 1 kN at the free end. The slope at<br/>the free end of the cantilever is _______ degrees. [Correct upto three decimal<br/>places]<br/><br/>[Take, <em>E</em><br/>= 210 GPa and <em>I</em><br/>= 6.667 × 10<sup>7</sup><br/>mm<sup>4</sup><br/>]`,
+      image: "",
+      options: [],
+      answer: "0.018",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_105.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_106.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An ideal gas undergoes a cyclic process consisting of the following three<br/>processes:<br/><br/>Process 1-2: Compression process with PV = Constant<br/><br/>Process 2-3: Constant pressure process<br/><br/>Process 3-1: Constant volume process<br/><br/>For process 3-1 the change in internal energy <em>U</em><br/><sub>3</sub><br/>– <em>U</em><br/><sub>1</sub><br/>= 3549 kJ<br/>Changes in kinetic and potential energies are neglected.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_107.png"/><br/>The heat transferred during the process 2-3 is ______ kJ. [Rounded off to nearest<br/>integer]`,
+      image: "",
+      options: [],
+      answer: "4669",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_108.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A metal sheet is rolled to minimum possible thickness of 2.5 mm in a single pass using<br/>rollers of diameter 300 mm without any change in its width. The friction coefficient at<br/>the work-roll interface is 0.1. The maximum possible thickness of sheet that can be<br/>rolled in a single pass is _____ mm.<br/>[Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "4.0",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The crank and the connecting rod lengths of a vertical single cylinder gas engine<br/>running at 2000 rpm are 60 mm and 240 mm respectively. The diameter of the piston is 80<br/>mm, and the mass of reciprocating parts is 2 kg. At a point during power stroke the<br/>piston has moved 35.7 mm from the top dead center position. The pressure acting on the<br/>piston at this instant is 800 kN/m<sup>2</sup><br/>. The net force acting on the piston is ______ kN. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.07",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_111.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_112.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two 1.2 mm thick, flat copper sheets (ρ = 9000 kg/m3 and specific heat capacity = 0.3936<br/>kJ/kg-K) are being spot welded using a current of 6000 A for a duration of 0.18s. The<br/>electrodes used are 5 mm in diameter and have an effective resistance of 150 μΩ.<br/>Assuming that the heat generated is completely confined to the volume of material<br/>directly between the two electrodes and the temperature distribution is uniform, the<br/>temperature rise of the coper sheet is _______°C. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "5822.73",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A solid circular bar of 50 mm diameter is subjected to torsion in a testing machine as<br/>shown in the figure. When the applied torque reaches 500 Nm, a strain gauge mounted at<br/>45° to the axis of the bar record a strain of 339 × 10<sup>–6</sup><br/>.<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_114.png"/><br/>Based on above information which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `The shear strain at θ = 45° is 6.78 × 10<sup>–4</sup><br/>.`,
+        `The value of shear modulus is 60 GPa.`,
+        `The value of shear modulus is 30 GPa.`,
+        `The shear strain at θ = 45° is 3.39 × 10<sup>–4</sup><br/>.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Air at 27°C and 1 bar flows over a flat plate at a speed of 2 m/s. Assuming a cubic<br/>velocity profile and the dynamic viscosity of air at 27°C to be 19.8 × 10<sup>–6</sup><br/>kg/ms. At a distance of 400 mm from the leading edge of the plate. Which of the<br/>following statements is/are correct?`,
+      image: "",
+      options: [
+        `The boundary layer thickness is 0.0932 m.`,
+        `The boundary layer thickness is 0.00857 m.`,
+        `The mass flow rate per unit width of the plate is 0.745 kg/min.`,
+        `The mass flow rate per unit width of the plate is 0.012 kg/min.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_116.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_117.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider an analytic function <em>f</em><br/>(<em>z</em><br/>) = <em>u</em><br/>+ iν, if it is given than⎥ <em>f</em><br/>(z)⎥ is a constant, then which of the following statements are true?<br/><br/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_118.png"/>`,
+      image: "",
+      options: [
+        `(i) and (ii) only`,
+        `(i) and (iii) only`,
+        `(ii) and (ii) only`,
+        `all are correct`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_119.png"/><img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If the residue of the function <img align="absmiddle" alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_123.png"/><br/>then the value of <em>p</em><br/>is ______.`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/mock_level_test4_full_syllabus_gate_2026_me/img_124.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Basic Level Test-1",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Δ<em>ABC</em><br/>and Δ<em>DBC</em><br/>have a common base and drawn towards the same side, ∠<em>BAC</em><br/>= ∠<em>BDC</em><br/>= 90°. If <em>AC</em><br/>and <em>DB</em><br/>intersect at <em>P</em><br/>, then<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_2.png"/>`,
+      image: "",
+      options: [
+        `<em>AP</em><br/>× <em>PC</em><br/>= <em>BP</em><br/>× <em>PD</em>`,
+        `<em>AP</em><br/>× <em>BP</em><br/>= <em>PC</em><br/>× <em>PD</em>`,
+        `<em>AP</em><br/>× <em>PD</em><br/>= <em>PC</em><br/>× <em>BP</em>`,
+        `None of the above`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_8.png"/>`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `0`,
+        `<em>abc</em>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_9.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the following question, a part of the sentence is given in bold. Choose the correct<br/>alternative that best improves the bold part. If no improvement is needed, select “No<br/>improvement.”<br/><br/>The Vice Chancellor congratulated the blind student <strong>for his</strong><br/>success in the examination.`,
+      image: "",
+      options: [
+        `in his`,
+        `on his`,
+        `over his`,
+        `No improvement`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Read the passage carefully and choose the best answer to the following question from the<br/>four alternatives given below.<br/><br/>In the past 50 years, doctors across the world have accepted the practice to prescribe<br/>antibiotics at the first sign of a trivial infection or treat patients with a handful of<br/>antibiotics. These days it is not uncommon to see practitioners prescribing multiple<br/>antibiotics without any real indication or relevance for such a combination of drugs.<br/>Antibiotics have traditionally been known as miracle drugs, but there is growing<br/>evidence that they are overworked miracles, especially in countries like ours where<br/>there is easy access to drugs across the counter, including antibiotics. We cannot think<br/>of a return to pre-antibiotic days. Yet the unbridled use of these agents is inexorably<br/>propelling us in that direction.<br/>Antibiotics are called overworked miracles<br/>because:`,
+      image: "",
+      options: [
+        `they performed miracles.`,
+        `they are hardly used.`,
+        `they are over-used.`,
+        `they exhausted their miracles.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the mirror represented by a line MN, choose the correct mirror-image of the figure,<br/>from amongst the four alternatives (a), (b), (c) and (d) given along with it.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_22.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_23.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_26.png"/>`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An overhanging beam <em>CABD</em><br/>with equal overhangs of one-forth of total length is loaded with uniformly distributed<br/>load as shown below. If whole beam is made of same material and the portion <em>AC</em><br/>and <em>BD</em><br/>have moment of inertia half of that of central portion <em>AB</em><br/>.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_27.png"/><br/>Which of the following graph is correctly represents the variation of bending moment<br/>(<em>M</em><br/>) along the beam length?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_28.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_29.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_30.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_31.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Carbon dioxide enters a duct at a pressure of 1400 kPa with negligible inlet velocity.<br/>It expands in the nozzle to a pressure of 1200 kPa and 185°C. The duct is designed so<br/>that the flow can be approximated as isentropic. The critical temperature of<br/>CO<sub>2</sub><br/>for the flow will be<br/>[Take: γ = 1.29]`,
+      image: "",
+      options: [
+        `414°C`,
+        `201°C`,
+        `270°C`,
+        `141°C`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Linear density of copper crystal along body diagonal of its unit cell is:`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_34.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_37.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two thin uniform bars <em>PQ</em><br/>and <em>QR</em><br/>are welded at <em>Q</em><br/>making an angle of 83° as shown in figure.<br/><br/>The length of <em>PQ</em><br/>is 1.3 m and <em>QR</em><br/>is 1.77 m. If both bars have same linear weight density, then the equilibrium position<br/>in terms of <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_39.png"/>is<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_40.png"/>`,
+      image: "",
+      options: [
+        `37°`,
+        `38.93°`,
+        `21.39°`,
+        `20.75°`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In metal cutting, which one of the following types of tool wear occurs on the clearance<br/>surface of the cutting tool?`,
+      image: "",
+      options: [
+        `Crater wear`,
+        `Flank wear`,
+        `Chipping`,
+        `Fine cracks`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An air-water vapour mixture at 0.1 MPa, 30°C DBT and 80% RH is cooled to 25°C DBT,<br/>85%RH.<br/><br/>The saturation pressures at 30°C and 25°C DBT are 0.04246 bar and 0.075174 bar,<br/>respectively.<br/>The amount of water vapour condensed per kg of dry air will be`,
+      image: "",
+      options: [
+        `20.6 g`,
+        `0.0218 g`,
+        `0.0206 g`,
+        `42.5 g`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Hot water having specific heat 4200 J/kgK flows through a parallel flow heat exchanger at<br/>the rate of 5 kg/s with inlet temperature of 90°C. A cold fluid having specific heat<br/>2430 J/kgK flows in at a rate of 17 kg/s with inlet temperature of 19°C. The maximum<br/>possible effectiveness of this parallel flow heat exchanger will be`,
+      image: "",
+      options: [
+        `0.336`,
+        `0.663`,
+        `0.339`,
+        `0.966`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_43.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Air is heated as it flows through a constant area duct at steady rate. At the inlet the<br/>temperature is 23°C, pressure is 2 bar and the velocity is 91 m/s. At the exit the<br/>pressure and velocity are 1.45 bar and 400 m/s respectively. Neglecting potential energy<br/>changes. The heat transfer from<br/><br/>the air per unit mass is<br/><br/>Take: (<br/><em><br/>C<sub>P</sub><br/></em><br/>)<sub>air</sub><br/>= 1005 J/kgK`,
+      image: "",
+      options: [
+        `49.349 GJ/kgK`,
+        `726.393 kJ/kg`,
+        `650.533 kJ/kg`,
+        `–0.726 MJ/kg`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The annual demand for an item is 3200 units. The unit cost of the item Rs. 5 and the<br/>inventory carrying charges are 20% per annum. If the cost of one procurement is Rs. 100.<br/>The time between two consecutive orders is`,
+      image: "",
+      options: [
+        `0.25 year`,
+        `4 years`,
+        `2 years`,
+        `0.5 year`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three masses <em>A</em><br/>, <em>B</em><br/>and <em>C</em><br/>of 4 kg, 6 kg and 8 kg, attached to a disc mounted on a shaft. There respective radial<br/>distances from the shaft axis are 100 mm, r and 50 mm. The angular position of mass<br/><em>C</em><br/>with respect to A is 60°. If the system is to be complete balance, then the value of<br/><em>r</em><br/>is`,
+      image: "",
+      options: [
+        `75 mm`,
+        `115.47 mm`,
+        `150 mm`,
+        `86.6 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A repair shop is manned by a single worker. The arrival rate of customers is 31 per hr.<br/>Time require to provide the service is exponentially distributed with mean of 110<br/>seconds. The mean waiting time of a customer needing repair facility in the queue is<br/>____ seconds. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1974",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A long pin-fin protrudes from a furnace wall which is at 423°C. The initial 0.25 m length<br/>of fin is thermally insulated, as shown in figure.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_55.png"/><br/>The heat transfer rate through the fin ______ W. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.43",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_56.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported beam <em>AB</em><br/>of length <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_58.png"/><br/>carries a concentrated load <em>W</em><br/>at a distance from end <em>A</em><br/>.<br/><br/>The ratio of deflection under the load when load is acting at a distance of <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_59.png"/><br/>will be<br/>_____. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.266",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A bar of 80 mm diameter is reduced to 78 mm by a cutting tool while cutting<br/>orthogonallly. If the mean length of the cut chip is 85 mm and rake angle is 12° then<br/>the shear angle is _____ degrees.<br/>[Correct upto one decimal]`,
+      image: "",
+      options: [],
+      answer: "19.8",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a 360° hydrodynamic journal bearing the following data are given:<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_62.png"/><br/>The value of the sommerfeld number is____. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.104",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a pelton wheel turbine the blade speed is 43% of the jet speed and the blade exit<br/>angle is 83°. If the blade coefficient is 0.73, then the efficiency of pelton wheel<br/>turbine is ______ %. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "53.38",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A hole of 30 mm diameter and 60 mm depth is drilled in 30 sec in a mild steel component.<br/>If the cutting speed is 68 m/min, then the feed rate is ____ mm/rev. [Correct upto two<br/>decimal places]<br/>[Take half cone angle, (α/2) = 60°]`,
+      image: "",
+      options: [],
+      answer: "0.19",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A diesel engine has a compression ratio of 17.5 and cutoff takes place at 5% of the<br/>stroke. The air standard efficiency of the cycle in percentage is _______ % (Correct<br/>upto two decimal places)<br/>[Take, γ = 1.53]`,
+      image: "",
+      options: [],
+      answer: "73.75",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a crank-and slotted lever mechanism the length of crank is 300 mm and the length of<br/>fixed link is 500 mm. The quick return ratio of the mechanism will be ____. [Correct<br/>upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.39",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_67.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two gating designs for a mould of 25 cm × 25 cm × 15 cm and 25 cm × 15 cm × 25 cm are<br/>shown below. The cross-sectional area of the gate is 4 cm<sup>2</sup><br/>.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_68.png"/><br/>If the both the arrangements (I) and (II) bottom gating system is used. The ratio of<br/>filling time of (I) to (II) is_____.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.61",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_69.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_70.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are incorrect, regarding velocity boundary layer<br/>over a flat plate?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_71.png"/>always<br/>increases along the flow over flat plate.`,
+        `Boundary layer over a flat plate can be considered as a streamline.`,
+        `Value of local wall shear stress always decreases along the flow over a flat plate.`,
+        `There is exactly zero velocity gradient outside boundary layer.`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_72.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `For an activity the optimistic, pessimistic and most likely time estimates are 1.5 days,<br/>13 days and 4 days respectively. Which of the following options is/are correct regarding<br/>the expected time (<br/><em><br/>t<sub>e</sub><br/></em><br/>), variance (<em>V</em><br/>) and standard deviation (σ) of the activity?`,
+      image: "",
+      options: [
+        `<em><br/>t<sub>e</sub><br/></em><br/>= 3.08 days, V = 1.91`,
+        `<em><br/>t<sub>e</sub><br/></em><br/>= 5.08 days, σ = 1.91`,
+        `<em><br/>t<sub>e</sub><br/></em><br/>= 5.08 days, V = 3.67`,
+        `<em><br/>t<sub>e</sub><br/></em><br/>= 3.75 days, σ = 3.67`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_73.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The function <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_74.png"/>is`,
+      image: "",
+      options: [
+        `discontinuous at only one point`,
+        `discontinuous at exactly two points`,
+        `discontinuous at exactly three points`,
+        `none of these`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Integrating factor of differential equation <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_111.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_112.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_113.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_114.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_115.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The expansion of <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_151.png"/>is<br/>given by`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_152.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_153.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_154.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_155.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_156.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_157.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>n</em><br/>! = 1 × 2 × 3 × _ _ _ × <em>n</em><br/>for integer <em>n</em><br/>≥ 1. If <em>P</em><br/>= (1 × 1!) + (2 × 2!) + (3 × 3!) + ______ (10 × 10!),<br/><br/>then <em>P</em><br/>+ 2 when divided by 11! leaves a remainder of`,
+      image: "",
+      options: [
+        `10`,
+        `0`,
+        `7`,
+        `1`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_4.png"/><br/>the possible value(s) of <em>x</em><br/>is/are`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_5.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_6.png"/>`,
+        `2`,
+        `3`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the adjoining diagram, <em>ABCD</em><br/>is a square with side ‘<em>a</em><br/>’ cm. The area of the larger circle with centre ‘<em>O</em><br/>’ is equal to the sum of the areas of the remaining four circles with equal radii, whose<br/>centres are <em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>and <em>S</em><br/>. What is the ratio between the side of square and radius of a smaller circle?<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_10.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_13.png"/>`,
+        `Can’t be determined`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_14.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The question below consists of a question and two statements numbered I and II given<br/>below it.<br/><br/>You have to decide whether the data provided in the statements are sufficient to answer<br/>the question. Read both the statements and give answer<br/><br/><em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>, <em>S</em><br/>and <em>T</em><br/>are sitting around a circular table facing towards the centre. Who among them is sitting<br/>to the immediate right of <em>R</em><br/>?<br/><br/>I. <em>Q</em><br/>is sitting between <em>P</em><br/>and <em>T</em><br/>, and <em>T</em><br/>is sitting to the immediate right of <em>S</em><br/>.<br/><br/>II. <em>Q</em><br/>is second to the left of <em>R</em><br/>and is second to the right of <em>S</em><br/>.`,
+      image: "",
+      options: [
+        `The data in statement I alone is sufficient to answer the question, while the data<br/>in statement II alone is not sufficient to answer the question;`,
+        `The data in statement II alone is sufficient to answer the question, while the data<br/>in statement I alone is not sufficient to answer the question;`,
+        `The data either in statement I alone or in statement II alone is sufficient to<br/>answer the question;`,
+        `The data given in both statements I and II together are not sufficient to answer the<br/>question.`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If the <em>p</em><br/><sup>th</sup><br/>term of an <em>AP</em><br/>is <em>q</em><br/>and its <em>q</em><br/><sup>th</sup><br/>term is p, then its mth term is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_17.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_18.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_19.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_20.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `If A is symmetric and B is skew-symmetric matrix, then which of the following is/are<br/>correct?`,
+      image: "",
+      options: [
+        `<em><br/>ABA<sup>T</sup><br/></em><br/>is skew-symmetric matrix.`,
+        `<em><br/>AB<sup>T</sup><br/></em><br/>+<br/><em><br/>BA<sup>T</sup><br/></em><br/>is symmetric matrix.`,
+        `(<em>A</em><br/>+ <em>B</em><br/>)(<em>A</em><br/>– <em>B</em><br/>) is skew-symmetric.`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_47.png"/>`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A pair of unbiased dice is rolled together till a sum of either 5 or 7 is obtained. The<br/>probability that 5 comes before 7 is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_50.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_51.png"/>`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_52.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In relation to non-conventional machining processes, match the following and choose the<br/>correct option using the codes given below.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_76.png"/>`,
+      image: "",
+      options: [
+        `P-1-III, Q-2-I, R-4-II, S-3-IV`,
+        `P-4-IV, Q-3-II, R-1-III, S-2-I`,
+        `P-2-III, Q-3-II, R-2-III, S-1-IV`,
+        `P-4-IV, Q-1-III, R-3-I, S-2-II`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_77.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rope of 12.5 m length is used to lift a block by 3.2 m from the ground as shown in the<br/>figure. The unstretched spring has a stiffness of 10 N/cm. The block has a mass of 10<br/>kg, and the rope has a weight density of 3 N/m. The pulley rotate about a hinge with a<br/>friction<br/><br/>loss of 10 Joule per radian, and there is no slipping between the rope and the pulley.<br/>The work done by the force <em>P</em><br/>is<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_78.png"/>`,
+      image: "",
+      options: [
+        `313.92 J`,
+        `318.73 J`,
+        `330.93 J`,
+        `385.32 J`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_79.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Air is flowing steadily in an adiabatic duct. The pressure and temperature of air at two<br/>crosssections are<br/><img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_80.png"/><br/>Assume that for air specific heat at constant pressure is 1.005 kJ/kgK, <em>h</em><br/>=<br/><em><br/>c<sub>p</sub><br/>T<br/></em><br/>and <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_81.png"/><br/>where <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_82.png"/><br/>and <em>T</em><br/>are pressure (kPa), volume (m<sup>3</sup><br/>/kg) and temperature (in K) respectively.<br/><br/>The specific entropy change (s<sub>2</sub><br/>– s<sub>1</sub><br/>) of air between point 1 and point 2 is`,
+      image: "",
+      options: [
+        `0.05539 kJ/kgK`,
+        `0.5539 kJ/kgK`,
+        `–0.05539 J/kgK`,
+        `–55.39 J/kgK`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_83.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A large rectangular block of width <em>W</em><br/>and depth <em>H</em><br/>has its centre of gravity at water line as shown in the figure, the minimum value<br/>of <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_85.png"/><br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_86.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_87.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_88.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_89.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_90.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The weekly sales data of an electronic equipment are 113, 101, 98, 107, 120. A simple<br/>moving average method is used with an equivalent moving average period, N = 9 and the<br/>initial forecast is taken as 108. The forecast for the 5<sup>th</sup><br/>week and mean absolute deviation are`,
+      image: "",
+      options: [
+        `<em>F</em><br/><sub>5</sub><br/>= 105.8, MAD = 7.62`,
+        `<em>F</em><br/><sub>5</sub><br/>= 105.8, MAD = 0.653`,
+        `<em>F</em><br/><sub>5</sub><br/>= 98.3, MAD = 0.653`,
+        `<em>F</em><br/><sub>5</sub><br/>= 98.3, MAD = 7.62`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A uniform steel bar of length 1.2 m and cross-sectional area 200 mm<sup>2</sup><br/>is heated such that its temperature increase linearly from 5t °C at one end to<br/>10<em>t</em><br/>°C at the other. The bar has flexural stiffness of 6.4 × 10<sup>8</sup><br/>Nmm<sup>2</sup><br/>. One end of the bar is fixed to a rigid foundation while the other is<br/><br/>pin-jointed so that it can move along its axis. The thermal expansion of the bar is<br/>resisted by a spring of stiffness 21 kN/mm. If coefficient of thermal expansion for<br/>steel is 11 × 10<sup>–6</sup><br/>/°C and Young’s modulus is 200 GPa, then the value of t such that bar will not buckle<br/>will be`,
+      image: "",
+      options: [
+        `3.44`,
+        `2.33`,
+        `6.88`,
+        `8.86`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_93.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Fluid flows through a convergent nozzle as shown in the figure. The cross-sectional area<br/>of nozzle varies as a = a<sub>o</sub><br/>(1 – <em>px</em><br/>) and the free stream velocity varies as <em>u</em><br/><sub>∞</sub><br/>= <em>u</em><br/><sub>o</sub><br/>(1 + <em>qt</em><br/>), Assuming ideal one dimension flow, the expression for the acceleration of the fluid<br/>is<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_95.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_96.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_97.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_98.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_99.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_100.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vibrating system consists of a beam of length 1.2 m fixed at both the ends as shown in<br/>the figure. The flexural rigidity of the beam is 4 × 10<sup>7</sup><br/>N-mm<sup>2</sup><br/>. The mass of the block is 16 kg and the stiffness of springs s<sub>1</sub><br/>and s<sub>2 </sub><br/>are 4 N/mm and 8 N/mm respectively.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_102.png"/><br/>The natural frequency of vibration of the system will be`,
+      image: "",
+      options: [
+        `16.78 Hz`,
+        `2.67 Hz`,
+        `5.38 Hz`,
+        `10.83 Hz`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The stress tensor (in MPa) at a point in a body subjected to three dimensional state of<br/>stress is represented by:<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_104.png"/><br/>If the elastic limit in simple tension is 260 MPa, then the factor of safety against<br/>failure based on Von-Mises theory will be`,
+      image: "",
+      options: [
+        `1.3`,
+        `1.792`,
+        `1.267`,
+        `2.54`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_105.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Air at 27°C and 1 bar enters an otto cycle. It is compressed adiabatically in the<br/>compressor until the pressure reaches 15 bar. Heat is then added at constant volume<br/>until the pressure rises to 37 bar. The mean effective pressure (Pm) and compression<br/>ratio (<em>r</em><br/>) for the cycle are<br/><br/>[Take γ = 1.41 and<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK]`,
+      image: "",
+      options: [
+        `<em><br/>P<sub>m</sub><br/></em><br/>= 10.46 bar, <em>r</em><br/>= 15`,
+        `<em><br/>P<sub>m</sub><br/></em><br/>= 7.42 bar, <em>r</em><br/>= 6.825`,
+        `<em><br/>P<sub>m</sub><br/></em><br/>= 10.46 bar, <em>r</em><br/>= 5.73`,
+        `<em><br/>P<sub>m</sub><br/></em><br/>= 5.02 bar, <em>r</em><br/>= 6.825`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_106.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_107.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 1 : 99 scale model of a hydroelectric power station tailrace is proposed to be built.<br/>If the design by pass flow rate in the prototype is 600 m<sup>3</sup><br/>/s, then the discharge required for model testing is`,
+      image: "",
+      options: [
+        `6152.66 cm<sup>3</sup><br/>/s`,
+        `6.15266 m<sup>3</sup><br/>/s`,
+        `6152.66 m<sup>3</sup><br/>/s`,
+        `0.615268 cm<sup>3</sup><br/>/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The area enclosed between the curves <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_109.png"/>and<br/>the x-axis is`,
+      image: "",
+      options: [
+        `2 square unit`,
+        `1 square unit`,
+        `4 square unit`,
+        `none of these`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An enclosure is formed by two concentric spheres of radius <em>r</em><br/><sub>1</sub><br/>and <em>r</em><br/><sub>2</sub><br/>such that <em>r</em><br/><sub>2</sub><br/>= 4<em>r</em><br/><sub>1</sub><br/>as shown in the figure. The view factor <em>F</em><br/><sub>22</sub><br/>is _____. [Correct upto three decimal places]<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_117.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.9375",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A hollow compound shaft is made of same material (G = 35 GPa) is used to transmit power<br/>as shown in figure. If maximum allowable angle of twist is 2.5° and maximum permissible<br/>shear stress is 30 MPa then, maximum power than can be transmitted by the shaft when it<br/>rotates at<br/>220 rpm will be ____ kW.<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_119.png"/>`,
+      image: "",
+      options: [],
+      answer: "7.36",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An induction motor is capable of closing 1800 rivets per hour. A flywheel of mass 75 kg<br/>and radians of gyration 0.48 m is fitted to it. If the flywheel is running at 750 rpm<br/>and each riveting takes 1.25 seconds and requires 8.33 kW, then the fall in speed after<br/>each riveting operation will be _____ rpm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "37.57",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_121.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A single plate clutch has inside and outside radius of friction surfaces are 150 mm and<br/>250 mm respectively. The engine is developing 50 kW at 1800 rpm. Assuming uniform<br/>pressure and coefficient of friction varies as <em>kr</em><br/><sup>–2</sup><br/>, where k = 0.008 m<sup>2</sup><br/>. The total spring load pressing the plates<br/>together is _____. [Correct upto two<br/>decimal places]`,
+      image: "",
+      options: [],
+      answer: "6631.46",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_122.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A company manufactures two components <em>A</em><br/>and <em>B</em><br/>. The total cost of the production per unit is <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_123.png"/><br/>for component <em>A</em><br/>and <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_124.png"/><br/>for component <em>B</em><br/>. The company has a maximum daily production capacity of 9 units (of A and B combined).<br/>There is permanent supply contract that requires producing at least 2 units of A and 3<br/>units of <em>B</em><br/>every day. Each unit of component A requires 20 machine hours, while each unit of<br/>component <em>B</em><br/>requires 50 machine hours. The company can utilize a maximum of 360 machine hours per<br/>day. The profit earned is <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_125.png"/><br/>per units of A and <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_126.png"/><br/>per unit of <em>B</em><br/>. The maximum total production cost per day <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_127.png"/>(Rounded<br/>off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "1980",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A flat plate 0.3 m long and 5.7 m wide is placed parallel to a 1.2 m/s flow of water at<br/>15°C.<br/>Assume that the boundary layer on both faces of the plate is laminar and<br/>velocity profile is linear for which the boundary layer thickness is given by<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_129.png"/><br/>The drag force on the plate is _____ N. [Correct upto two decimal places]<br/><br/>[Take: Kinematic viscosity of water as 1.1 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s and density of water as 1000 kg/m<sup>3</sup><br/>]`,
+      image: "",
+      options: [],
+      answer: "2.51",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_130.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A stock spur gear is available having a module of 3 mm, face width of 38 mm, 16 teeth,<br/>and a pressure angle of 20° with full-depth teeth. The Lewis form factor is 0.296. The<br/>pinion shaft is connected to a 10 kW, 1440 rpm motor. If allowable bending stress is 200<br/>MPa, then the factor of<br/><br/>safety for the gear is _____. [Correct upto two decimal places]<br/>[Take service<br/>factor and velocity factor as unity]`,
+      image: "",
+      options: [],
+      answer: "2.44",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two steel sheets, each of 1.5 mm thickness are resistance welded in a lap joint using a<br/>current of 10000A for 0.15 second. The effective resistance of the joint is 120 micro<br/>ohms. The electrode diameter is 5 mm and the surface indentation is 15% of the plate<br/>thickness on each side. The density of steel is 0.00786 g/mm<sup>3</sup><br/>and the heat required to melt steel is 10 J/mm<sup>3</sup><br/>. The percentage of heat lost to surroundings is_____%. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "72.18",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_132.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The behaviour of a certain substance over a range of pressure and temperature is<br/>expressed as<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_133.png"/><br/>where, v is specific volume (m<sup>3</sup><br/>/kg), T is absolute temperature, <em>R</em><br/>and <em>C</em><br/>are constants.<br/><br/>The change in enthalpy of the substance undergoing isothermal process at 27°C over<br/>pressure<br/><br/>change of 200 MPa is _______ kJ/kg. [Correct upto two decimal places]<br/><br/>[Take, <em>C</em><br/>= 255.7 m<sup>3</sup><br/>K<sup>3</sup><br/>/kg]`,
+      image: "",
+      options: [],
+      answer: "-7.58",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_134.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_135.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An epicyclic gear train as shown below is composed of a annular wheel A having 180<br/>teeth. Gear C is an idler gear and gear <em>D</em><br/>is concentric with <em>A</em><br/>. Wheel <em>B</em><br/>and <em>C</em><br/>are connected through an arm <em>E</em><br/>which is revolving about axis of <em>B</em><br/>which is a fixed gear.<br/><em><br/>Z<sub>B</sub><br/></em><br/>= 30,<br/><em><br/>Z<sub>C</sub><br/></em><br/>= 40. If gear C is revolving at 720 rpm (clockwise), then speed of rotation of arm<br/><em>E</em><br/>is given by <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_136.png"/><br/>The value of <em>N </em><br/>is____. [Rounded off to the nearest integer]<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_137.png"/>`,
+      image: "",
+      options: [],
+      answer: "288",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_138.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_139.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A vapour compression refrigeration machine using Freon-12 as refrigerant, operates<br/>between –28°C and 26°C. The refrigerant is subcooled by 4°C before entering the<br/>expansion valve and is superheated by 5°C before entering the compressor. The density of<br/>vapour entering the compressor is 5.47 kg/m<sup>3</sup><br/>. The system employs a six-cylinder single-acting compressor having bore of 10 cm and<br/>stroke of 12.5 cm running at 1000 rpm. The specific heat of superheated vapour is 0.6174<br/>kJ/kgK. If the volumetric efficiency and isentropic efficiency of compressor are 88% and<br/>85% respectively, then the power input to the compressor is _____ kW. [Correct upto two<br/>decimal places]<br/><br/>Use the following properties of Freon : h<sub>g</sub><br/>(–28°C) = 561.83 kJ/kg, <em>h</em><br/>(Compressor outlet) = 603.63 kJ/kg.`,
+      image: "",
+      options: [],
+      answer: "18.29",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_140.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_141.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gas turbine power plant operates on Brayton cycle with a pressure ratio of 9. Both the<br/>compressor and turbine have an isentropic efficiency of 80%. The air enters the<br/>compressor at 27°C and the maximum temperature at the turbine inlet is 1027°C. If a<br/>regenerator with an effectiveness of 75% is installed in the system, the thermal<br/>efficiency of the gas turbine is _____%. [Correct upto two decimal place]`,
+      image: "",
+      options: [],
+      answer: "29.58",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_142.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_143.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The velocity and temperature profiles of a flowing fluid in circular tube of inner radius<br/>4 cm are given as<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_144.png"/><br/>Which of the following options is/are correct regarding the average velocity and<br/>average fluid temperature in the tube?`,
+      image: "",
+      options: [
+        `<em>T</em><br/><sub>avg</sub><br/>= 955.42°C`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_145.png"/>`,
+        `<em>T</em><br/><sub>avg</sub><br/>= –27.29°C`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_146.png"/>`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_147.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In rolling process 32 mm thick plate is rolled to 29 mm. The coefficient of friction is<br/>0.15 and roll diameter is 400 mm. If the angle of inclination made by neutral plane (θ<br/><em><br/><sub>n</sub><br/></em><br/>) is 2.72° then which of the following options given below is/are correct?`,
+      image: "",
+      options: [
+        `Angle of inclination (α) is nearly 7.022 radians.`,
+        `Backward slip is nearly 7.97%.`,
+        `Forward slip is nearly 15.54%.`,
+        `Number of passes required for reducing plate thickness to 18 mm will be 4.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_148.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The vector<br/><br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_149.png"/>`,
+      image: "",
+      options: [
+        `divergence free`,
+        `rotational`,
+        `not divergence free`,
+        `irrotational`
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_150.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of the integral <img align="absmiddle" alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_158.png"/><br/>where <em>c</em><br/>is the circle |z| = 1 is equal to`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_159.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_160.png"/>`,
+        `0`,
+        `<br/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_161.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_162.png"/><img alt="" src="js/questions/basic_level_test1_full_syllabus_gate_2026_me/img_163.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Basic Level Test-2",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `There are four types of candidates in an institute preparing for the UPSC. The number of<br/>students of Engineering, Science, Commerce and Humanities is 40, 60, 50 and 30<br/>respectively and the respective percentage of students who qualified the UPSC is 80%,<br/>75%, 60% and 50% respectively. The overall percentage of successful candidates in the<br/>institute is :`,
+      image: "",
+      options: [
+        `67.77%`,
+        `66.66%`,
+        `68.5%`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The number 12375 is divisible by`,
+      image: "",
+      options: [
+        `3`,
+        `9`,
+        `11`,
+        `7`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the given figure, ∠BAC and ∠BDC are the angles of same segments, ∠DBC = 30° and ∠BCD<br/>= 110°. ∠BAC is equal to<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_3.png"/>`,
+      image: "",
+      options: [
+        `35°`,
+        `40°`,
+        `55°`,
+        `60°`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the mirror represented by a line <em>MN</em><br/>, choose the correct mirror-image of the figure, from amongst the four alternatives (a),<br/>(b), (c) and (d) given along with it.<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_9.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_13.png"/>`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the following question, a part of the sentence is given in bold. Choose the correct<br/>alternative that best improves the bold part. If no improvement is needed, select “No<br/>improvement.”<br/><br/>He likes to drive his car at a speed of eighty kilometres <strong>each hour.</strong>`,
+      image: "",
+      options: [
+        `in every hour`,
+        `an hour`,
+        `hourly`,
+        `No improvement`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A gas turbine cycle operates on Brayton cycle with pressure ratio of 9.3. If the<br/>specific heat capacities at constant pressure for heat addition and heat rejection<br/>processes are 1.31 kJ/kgK and 0.98 kJ/kgK, then the thermal efficiency of the cylce<br/>is<br/>[Take average value of γ = 1.41 for working fluid undergoing any process within<br/>the cycle]`,
+      image: "",
+      options: [
+        `60.885%`,
+        `47.714%`,
+        `37.33%`,
+        `48.938%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cantilever beam of 4 m span carries a uniformly distributed load over the entire<br/>length. If the deflection at the free end is 30 mm, then the slope at the free end is`,
+      image: "",
+      options: [
+        `0.005 rad`,
+        `0.008 rad`,
+        `0.0085 rad`,
+        `0.01 rad`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_15.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The disk starts from an initial angular velocity of 1 rad/s at θ = 0° and is subjected<br/>to an angular acceleration of α = (0.3θ) rad/s<sup>2</sup><br/>, where θ is in radians. The magnitudes of the normal and tangential components of<br/>acceleration of a point P on the rim of the disk when the disk has rotated through one<br/>revolution are<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_16.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_17.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_18.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_19.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_20.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_21.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The relative amounts of ferrite and cementite in pearlite in microstructure of eutectoid<br/>steel are`,
+      image: "",
+      options: [
+        `77% and 23% respectively`,
+        `67% and 33% respectively`,
+        `82% and 18% respectively`,
+        `88% and 12% respectively`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In jigs and fixtures, typical locating devices for circular or semicircular jobs used are`,
+      image: "",
+      options: [
+        `angle plates`,
+        `V-blocks`,
+        `mandrels`,
+        `metal pins`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A stream of moist air at 2°C DBT and 80% RH mixes with another stream of moist air at<br/>30°C DBT and 10°C DPT in the ratio by mass of one part of the first to two parts of the<br/>second. The enthalpy of the air after mixing is<br/><br/>[Take : ω<sub>a</sub><br/>= 0.0035 kgw.v./kgd.a. and <em>h</em><br/>= 10.78 kJ/kgd.a. at 2°C DBT and 80% RH, ω = 0.00765 kgw.v./kgd.a. and <em>h</em><br/>= 49.67 kJ/kgd.a. at 30°C DBT and 10°C DPT]`,
+      image: "",
+      options: [
+        `30.35 kJ/kgda`,
+        `36.86 kJ/kgda`,
+        `33.31 kJ/kgda`,
+        `31.31 kJ/kgda`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_24.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The equivalent stiffness of spring-mass system as shown in figure is<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_26.png"/>`,
+      image: "",
+      options: [
+        `4 k`,
+        `13 k`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_27.png"/>`,
+        `11 k`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a refrigerant, at 20°C the specific volume of saturated vapour and saturated liquid<br/>are 0.036 m<sup>3</sup><br/>/kg and 0.0008 m<sup>3</sup><br/>/kg respectively. If the saturation pressures at 25°C and 15°C are 650 kPa and 510 kPa,<br/>then the enthalpy of vapourization of refrigerant is`,
+      image: "",
+      options: [
+        `9.856 kJ/kg`,
+        `147.672 kJ/kg`,
+        `144.39 kJ/kg`,
+        `295.5 kJ/kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_29.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A steel rod of 1 cm diameter and 5 cm length protrudes from a wall maintained at 100°C.<br/>The rod is insulated at its tip and is exposed to an environment with a convective heat<br/>transfer coefficient of 50 W/m<sup>2</sup><br/>K and ambient temperature of 30°C. If the thermal conductivity of the rod is 30 W/ mK,<br/>then the efficiency of the fin is ______%. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "66.57",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a bank there is only one window. A solitary employee performs all the service<br/>required and the window remains continuously open from 7 am to 1 pm. It has been<br/>observed that an average of 54 clients arrive dring this period and the average service<br/>time per client is 5 minutes. The<br/>average waiting time of a client in the queue is`,
+      image: "",
+      options: [
+        `10 min`,
+        `15 min`,
+        `20 min`,
+        `30 min`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If <em>A</em><br/>is a matrix such that <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_33.png"/>then<br/>which of the following is/are true?`,
+      image: "",
+      options: [
+        `<em>A</em><br/>is non singular`,
+        `<em>A</em><br/>is symmetric`,
+        `<em>A</em><br/>cannot be skew-symmetric`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_34.png"/>`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An air-water vapour mixture enters an adiabatic saturator at 30°C and leaves at 20°C,<br/>which is the adiabatic saturation temperature. The specific humidity in gram of water<br/>vapour per kg of dry air at the exit will be ________. [Correct upto one decimal<br/>place]<br/>Pressure corresponding to adiabatic saturation temperature to be taken as<br/>2.339 kPa. Atmospheric pressure to be taken as 100 kPa.`,
+      image: "",
+      options: [],
+      answer: "14.9",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A differential band brake is shown in the figure below. The steel band has a thickness of<br/>4 mm and a width of 110 mm. If the maximum permissible tensile stress in band is 50 MPa<br/>and maximum torque capacity of the brake is 5642 N-m, then the coefficient of friction<br/>between the friction lining and the brake drum is ______ [Correct upto two decimal<br/>places]<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_43.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.36",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_44.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A prismatic bar of cross-sectional area 0.01 m<sup>2</sup><br/>and length 2 m is subjected to axial forces as shown in the figure. The density and<br/>young’s modulus of the material are 8000 kg/m<sup>3</sup><br/>and 260 GPa respectively.<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_46.png"/><br/>The magnitude of normal stress at section <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_47.png"/>is<br/>_____ kPa. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1850",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_48.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Flat surface of a large cast-iron part measuring 2.5 m × 1.5 m × 0.4 m is to be machined<br/>using a planer along its face (2.5 m × 1.5 m). It is given that the approach and<br/>overtravel are 20 mm each, cutting speed is 25 m/min, return speed is 50 m/min, the<br/>machining allowance on either side of<br/>the plate width is 5 mm and feed is 1.5<br/>mm/stroke. The machining time is ____ minutes. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "153.416",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_50.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A block of mass 2 kg rests on a smooth inclined plane making an angle of 30° with the<br/>horizontal.<br/><br/>It is connected to another block of mass 3 kg by a cord passing over a frictionless<br/>pulley as shown in figure below. The acceleration of each block (in m/s<sup>2</sup><br/>) is _____ . (Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_52.png"/>`,
+      image: "",
+      options: [],
+      answer: "3.924",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A pair of mating spur gears have 14.5° full depth teeth of module 10 mm. The pitch<br/>diameter of the smaller gear is 160 mm. If the transmission ratio is 3 : 2, then the<br/>addendum radius of the gear to avoid interference is`,
+      image: "",
+      options: [
+        `116.5 mm`,
+        `124.5 mm`,
+        `126.5 mm`,
+        `123.2 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 250 mm thick slab of a nickel alloy is subjected to cold rolled using a roll of<br/>diameter 450 mm. If the angle of bite during rolling is 10°, the maximum possible<br/>reduction (in mm) during rolling is ______ (Correct upto two decimal places).`,
+      image: "",
+      options: [],
+      answer: "6.854",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The shape factor for an annular cylinder casting having an outside diameter of 50 cm, an<br/>inside diameter of 10 cm and a height of 40 cm, is _______. [Correct upto two decimal<br/>places]<br/><br/>(Take correction factor, <em>k</em><br/>= 1.15)`,
+      image: "",
+      options: [],
+      answer: "5.84",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A hollow steel-shaft is to be replaced by an aluminium shaft of same external diameter.<br/>The material of the steel shaft is 27.5% stronger than aluminium shaft in shear. If<br/>steel is 2.75 times heavier than aluminium, then the percentage of weight saved by<br/>replacing steel with aluminium<br/>for same torque transmission is _______%. [Correct<br/>upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "32.10",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_57.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The angle between [1 1 0] and [1 1 1] directions in the cubic system is _______ degree.<br/>(Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "35.26",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A cylindrical pressure vessel with 2 m inside diameter is subjected to internal steam<br/>pressure of 2.5 MPa. The efficiency of riveted joint should be atleast 80%. The<br/>permissible stress for rivets in tension is 90 MPa and the corrosion allowance can be<br/>taken as 3 mm. Which of the following given below is/are correct for permissible<br/>thickness of plates and diameter of rivets?`,
+      image: "",
+      options: [
+        `Diameter of rivets is 39.8 mm.`,
+        `Thickness of plate is 37.72 mm.`,
+        `Thickness of plate is 42.74 mm.`,
+        `Diameter of rivets is 36.85 mm.`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `With respect to exergy, the correct statements are`,
+      image: "",
+      options: [
+        `For an isolated system, the only processes allowed by the second law are those for<br/>which the exergy of the isolated system decreases.`,
+        `The exergy balance of a system can be used to determine the locations, types and<br/>magnitudes of losses of the potential energy resources.`,
+        `While energy is always conserved, exergy is not generally conserved.`,
+        `When a closed system is allowed to undergo a spontaneous change from the given state<br/>to the dead state, its exergy is completely destroyed without producing any useful<br/>work.`
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `(`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In what direction from (3, 1, –2), the directional derivative of <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_132.png"/>is<br/>maximum?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_133.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_134.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_135.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_136.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_137.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The eigen values of the following matrix are represented by λ<sub>1</sub><br/>and λ<sub>2</sub><br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_138.png"/><br/>The value of<img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_139.png"/>is<br/>________. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.33",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_140.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Number of even divisor of 5400.`,
+      image: "",
+      options: [
+        `36`,
+        `48`,
+        `24`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Sum of all numbers n such that n! ends with 30 zeros.`,
+      image: "",
+      options: [
+        `610`,
+        `590`,
+        `614`,
+        `None of these`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_5.png"/>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the diagram given below:<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_7.png"/><br/>Five hundred candidates appeared in an examination comprising of tests in English,<br/>Hindi and Mathematics. The diagram gives the number of candidates who failed in<br/>different tests. The percentage of candidates who failed in at least two subjects is`,
+      image: "",
+      options: [
+        `0.078`,
+        `1.0`,
+        `6.8`,
+        `7.8`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Read the passage carefully and choose the best answer to the following question from the<br/>four alternatives given below.<br/><br/>Among the natural resources which can be called upon in national plan for development,<br/>possibly<br/><br/>the most important is human labour; without productive labour force, including effective<br/>leadership<br/><br/>and intelligent middle management, no amount of foreign assistance or natural wealth can<br/>ensure<br/><br/>successful development and modernisation. One essential factor is usually overlooked or<br/>ignored.<br/><br/>The forgotten factor is the role of women. Development will be handicapped as long as<br/>women<br/><br/>remain second-class citizens, uneducated, without any voice in family or community<br/>decisions,<br/><br/>without legal or economic status, married when they are still practically children, and<br/>thenceforth<br/><br/>producing one baby after another, often only to see half of them die before they are of<br/>school age.<br/><br/>We can enhance development by improving ‘woman power’ by giving women opportunity to<br/>develop themselves.<br/>The most important natural resource for national development is`,
+      image: "",
+      options: [
+        `human labour`,
+        `effective leadership`,
+        `intelligent middle management`,
+        `foreign assistance`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A fair coin is tossed 100 times. The probability of getting tails 1, 3, _ _ _ _ _ 49<br/>times is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_37.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_38.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_39.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_40.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_41.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_61.png"/><br/>Then <em>f</em><br/>(<em>x</em><br/>) is continuous at <em>x</em><br/>= 4 when`,
+      image: "",
+      options: [
+        `<em>a</em><br/>= 0, <em>b</em><br/>= 0`,
+        `<em>a</em><br/>= 1, <em>b</em><br/>= 1`,
+        `<em>a</em><br/>= –1, <em>b</em><br/>= 1`,
+        `<em>a</em><br/>= 1, <em>b</em><br/>= –1`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_62.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_63.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the given truss shown in the figure below. The number of zero force members are<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_64.png"/>`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `7`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two steel sheets of equal thickness are joined by projection welding using a current of<br/>30000A for 0.005s. The effective resistance of the joint is 100 μΩ. The welded joint can<br/>be assumed to be a cylindrical nugget of 5 mm diameter and 1.5 mm height. The density of<br/>steel is 7860 kg/m<sup>3</sup><br/>and the heat required to melt steel is 10 J/mm<sup>3</sup><br/>, the percentage of heat lost to the surrounding is`,
+      image: "",
+      options: [
+        `34.40%`,
+        `34.55%`,
+        `65.45%`,
+        `65.60%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A heat pump is driven by a heat engine. The heat transfer from the heat engine and from<br/>the heat pump are used to heat the water circulating through the radiators of a<br/>building. The efficiency of the heat engine is 33% and the COP of the heat pump is 80%<br/>of carnot COP operating between 27°C and 127°C. The ratio of the heat transfer to the<br/>circulating water to the heat extracted by heat pump from cold space is`,
+      image: "",
+      options: [
+        `1.634`,
+        `5.0.13`,
+        `3.268`,
+        `2.377`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_67.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A fluid particle at the point <em>r</em><br/>= 2a, θ = <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_68.png"/>having<br/>a two-dimensional flow given by<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_69.png"/><br/>The vorticity at the given point will be`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_72.png"/>`,
+        `Zero`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_73.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A company produces an item at a rate of 4000 units per month. The set up cost per<br/>production is <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_74.png"/><br/>holding cost/unit/month is <br/><img algn="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_75.png"/><br/>and the cost of one unit is <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_76.png"/><br/>If the total annual cost is <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_77.png"/>then<br/>the monthly demand assuming optimal lot size is`,
+      image: "",
+      options: [
+        `1300 units`,
+        `792 units`,
+        `994 units`,
+        `333 units`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_78.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cantilever beam of length L is loaded as shown in figure below:<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_79.png"/><br/>The deflection at the free end is given by <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_80.png"/>The<br/>value of α is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_81.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_82.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_83.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_84.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_85.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Degree of freedom for the linkage shown below is<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_87.png"/>`,
+      image: "",
+      options: [
+        `4`,
+        `5`,
+        `6`,
+        `7`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an orthogonal cutting the uncut chip thickness is 0.12 mm and the chip thickness<br/>after cutting is 0.225 mm. The cutting speed is 2 m/s and the width of cut is 6.25 mm.<br/>The measured cutting force is 60 kg and the thrust force is 25 kg. The rake angle of the<br/>tool is <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_89.png"/><br/>The percentage of total energy that is being used to overcome friction at the tool chip<br/>interface is`,
+      image: "",
+      options: [
+        `33.40%`,
+        `37.6%`,
+        `66.67%`,
+        `31.15%`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 50 mm diameter steel rod supports a 9 kN load and in addition is subjected to a<br/>torsional moment of 100 Nm as shown below. What is the maximum tensile stress?<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_91.png"/>`,
+      image: "",
+      options: [
+        `25.8 MPa`,
+        `25 MPa`,
+        `13.2 MPa`,
+        `Zero`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_92.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The pumping power required to maintain a steady flow in horizontal pipe of diameter 0.42<br/>cm and length 11 m is 48.8 × 10<sup>–3</sup><br/>W. The fluid flowing through the pipe has a specific gravity of 1.2 and dynamic<br/>viscosity of 1.44 × 10<sup>–3</sup><br/>kg/m-s. Assuming fully developed laminar flow, the average velocity of flowing fluid is`,
+      image: "",
+      options: [
+        `0.35 cm/s`,
+        `3.5 m/s`,
+        `35 cm/s`,
+        `5.3 m/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The following data is given for a four-stroke, single cylinder oil engine. During a<br/>trial of 30 minutes, the oil consumption is 4 litres, calorific value of the oil is 44<br/>MJ/kg and its specific gravity is 0.732. The average area of indicator diagram is 7.5<br/>cm<sup>2</sup><br/>. The length of the indicator diagram is 7.5 cm and the spring constant is 550 kPa/cm.<br/>The engine speed is 210 rpm, the cylinder diameter is 30 cm and the stroke length is 40<br/>cm. If the mechanical efficiency of the engine is 67% and the indicated thermal<br/>efficiency is 38%, then the brake specific fuel consumption will be`,
+      image: "",
+      options: [
+        `0.3214 g/kWh`,
+        `0.2153 g/kWh`,
+        `321.35 g/kWh`,
+        `215.3 g/kWh`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The area enclosed between the curves <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_96.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_97.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_98.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_99.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_100.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_101.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_103.png"/>satisfying<br/>y(1) = 1 is given by`,
+      image: "",
+      options: [
+        `a system of parabolas`,
+        `a system of circles`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_104.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_105.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_106.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_107.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A counter-flow double pipe heat exchanger is used to heat water from 20°C entering at a<br/>rate of 1.5 kg/s. The heating is to be done by geothermal brine water available at 165°C<br/>flowing at a mass flow rate of 2.25 kg/s. The specific heat capacities of water and<br/>geothermal brine water are 4.2 kJ/kgK and 4.32 kJ/kgK respectively. If the number of<br/>transfer units (NTU) is 0.65, then temperature of water leaving the heat exchanger after<br/>heating is ______ K. (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "354",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A piece of elastic material is subjected to three mutually perpendicular tensile<br/>stresses. The corresponding strains are in the ratio 7 : 8 : 9. If the greatest stress<br/>is 90 MPa, then the magnitude of maximum absolute shear stress is ______ MPa. [Correct<br/>upto two decimal places]<br/><br/>Take <em>K</em><br/>= 150 GPa and G = 80 GPa.`,
+      image: "",
+      options: [],
+      answer: "3.83",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two sliders <em>s</em><br/><sub>1</sub><br/>and <em>s</em><br/><sub>2</sub><br/>slide on a rotating link as shown in the figure. The link rotates with an angular<br/>velocity of 2 rad/s and angular acceleration of 1 rad/s<sup>2</sup><br/>.<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_110.png"/><br/>The magnitude of absolute relative acceleration of slider <em>s</em><br/><sub>2</sub><br/>with respect to slider <em>s</em><br/><sub>1</sub><br/>is ____cm/s<sup>2</sup><br/><br/>(Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "1969.77",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_111.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A single-row roller bearing operates under a work cycle and designed for an expected<br/>life of 9800 hours with a reliability of 60%. During the cycle, it is subjected to a<br/>radial load of 6000 N at 400 rpm for 20% of time, a radial load of 9000 N at 600 rpm for<br/>60% of time, and a radial load<br/><br/>of 8000 N at 500 rpm for remaining time.<br/>The dynamic load capacity of bearing is<br/>_______ kN. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "31.97",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_112.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Eight jobs <em>A</em><br/>, <em>B</em><br/>, <em>C</em><br/>, <em>D</em><br/>, <em>E</em><br/>, <em>F</em><br/>, <em>G</em><br/>and <em>H</em><br/>are to be processed on a single machine. The processing time and due dates of the jobs<br/>are given below<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_113.png"/><br/>The jobs are first sequenced according to the shortest processing time (SPT) rule.<br/>Then, they are sequenced based on the earliest due date (EDD) rule. The percentage<br/>change in average in process inventory when moving from the SPT sequence to the EDD<br/>sequence is ________ %. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "28.63",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_114.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Air flows over a flat plate with uniform free stream velocity of U<sub>∞</sub><br/>. At a certain location away from the leading edge the boundary layer thickness is 2.25<br/>mm. The local wall shear stress is given by the expression τ = μu<sub>∞</sub><br/>(a + 2<em>by</em><br/>). The momentum thickness at that location is ______ cm.<br/>[Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "0.03",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_115.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported beam of length 4 m and carries a uniformly distributed load of 25 kN/m<br/>over its entire span. The cross-section of the beam is shown in the figure below. The<br/>maximum bending stress in the beam is _______ MPa. (Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_117.png"/>`,
+      image: "",
+      options: [],
+      answer: "110.57",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `During electric-discharge drilling of a 10 mm × 10 mm square hole in a low carbon steel<br/>plate of 5 mm thickness, the resistance and capacitance in the relaxation circuits are<br/>50 Ω and 10 μF respectively. The supply voltage is 200 V and the gap is maintained such<br/>that the sparking occurs at 150 V. The time required to complete the drilling operation<br/>is ____ hrs. [Rounded off to nearest integer]<br/><br/>Use, material removal rate (mm<sup>3</sup><br/>/min) = (27.4) × (Power input in kW)<sup>1.54</sup>`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_119.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two discs are placed in two parallel planes, separated by a distance of 1 m and having<br/>same polar<br/><br/>axis. If disc-1 has diameter 200 mm, emissivity 0.8 and is at temperature 800 K. And<br/>disc-2 has<br/><br/>diameter 2 m, emissivity 0.5 and is at temperature 300 K, then the net rate of radiation<br/>heat<br/><br/>transfer between them is ________ W. [Correct upto two decimal places]<br/><br/>Use : <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_121.png"/><br/>where <em>F</em><br/><sub>12</sub><br/>is shape factor of <em>A</em><br/><sub>1</sub><br/>with respect to <em>A</em><br/><sub>2</sub><br/>, <em>D</em><br/>is diameter of disc-2 and <em>L</em><br/>is separation between the discs.`,
+      image: "",
+      options: [],
+      answer: "316.45",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_122.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_123.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A ship is propelled by a turbine of mass 1000 kg running at 2000 rpm. The rotor has a<br/>radius of gyration of 1 m and rotates clockwise when viewed from stern. The ship pitches<br/>±10° from the horizontal position with time period of 10 seconds in simple harmonic<br/>motion. The maximum magnitude of the gyroscopic couple developed on the ship is ______<br/>kN-m (Correct upto two decimal).`,
+      image: "",
+      options: [],
+      answer: "22.97",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_124.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A refrigeration machine using R-12 as refrigerant operates between the pressures 2.5 bar<br/>and 9 bar. The compression is isentropic and there is no undercooling in the condenser.<br/>The vapour is in dry saturated condition at the beginning of the compression. The<br/>refrigerant<br/><br/>flow rate is 5 kg/min. If the actual COP is 0.65 of theoretical value, the net cooling<br/>produced per hour (in TR) is _____. (Correct upto two decimal values).<br/>Properties<br/>of refrigerants are :<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_125.png"/><br/>Take<br/><em><br/>c<sub>p</sub><br/></em><br/>for superheated vapour at 9 bar as 0.64 kJ/kgK.`,
+      image: "",
+      options: [],
+      answer: "1.76",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_126.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two involute gears in mesh have a module of 8 mm and pressure angle of 0.35 radian. The<br/>gear has 50 teeth and the pinion has 20 teeth. The addenda on 60<sup>th</sup><br/>pinion and gear wheels are 1 module. The magnitude of ratio of sliding to rolling<br/>velocity at the beginning of contact is<br/>________. (Correct upto three decimal<br/>places)`,
+      image: "",
+      options: [],
+      answer: "0.362",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_127.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `For a certain substance the specific heat at constant pressure varies with temperature<br/>as<br/><em><br/>C<sub>P</sub><br/></em><br/>= <em>a</em><br/>+ <em>bT</em><br/>.<br/><br/>If the temperature of the substance is increases at constant pressure from 127°C to<br/>877°C, then which of the following statements given below is/are correct?<br/><br/>Take, (<br/><em><br/>C<sub>p</sub><br/></em><br/>)<br/><em><br/><sub>sub</sub><br/></em><br/>= 23.8 kJ/kg-K at 400 K and (<br/><em><br/>C<sub>p</sub><br/></em><br/>)<sub>sub</sub><br/>= 29.05 kJ/kg-K at 1150 K.`,
+      image: "",
+      options: [
+        `The heat absorbed by the substance is nearly 19.818 kJ/kg.`,
+        `The change in specific entropy of substance is nearly 27.427 kJ/kg-K.`,
+        `The heat absorbed by the substance is nearly 19818.75 kJ/kg.`,
+        `The change in specific entropy is nearly –27.427 kJ/kg-K.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The velocity field in a fluid is given as :<br/><br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_129.png"/><br/>Which of the following statement(s) is/are correct?`,
+      image: "",
+      options: [
+        `The flow is incompressible`,
+        `The flow is irrotational`,
+        `The acceleration experienced by the fluid particle is zero at (x = 0, y = 0, z = 0)`,
+        `The vorticity and circulation of the flow is zero`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_130.png"/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given a &gt; 0, we wish to calculate its reciprocal value <img align="absmiddle" alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_141.png"/><br/>by using Newton Raphson method for <em>f</em><br/>(<em>x</em><br/>) = 0. The Newton Raphson iteration formula for the function will be`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_142.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_143.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_144.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_145.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test2_full_syllabus_gate_2026_me/img_146.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Basic Level Test-3",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A is thrice as efficient as <em>B</em><br/>. Working together they complete the work in 3 days. If <em>B</em><br/>takes 8 days more than <em>A</em><br/>, the number of days taken by <em>A</em><br/>to finish the whole work, alone is _______ days.`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In the following question, four alternatives are given for the bold word. Choose the<br/>word which is most similar in meaning (Synonym).<br/><br/><strong>Previously</strong>`,
+      image: "",
+      options: [
+        `Rested`,
+        `Limited`,
+        `Formerly`,
+        `Mindless`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Read the passage carefully and answer the following question.<br/><br/>Among Nature’s most intriguing phenomena are the partnerships formed by many different<br/>species. The name used for these relationships, Symbiosis, comes from Greek meaning<br/>“living together”. Not all symbiotic relationships are the same. There are some called<br/>commensal relationships, in which one partner gains a benefit while the other gains<br/>little or none but is not<br/><br/>harmed. One example is the relationship between two types of fish – remoras and sharks.<br/>The remora, which is long and often striped, attaches itself to a shark (sometimes to<br/>another type of fish or a whale), using a sucker on its head. When the shark makes a<br/>kill, the hitchhiker briefly detaches itself to feed on the scraps. Another type of<br/>symbiotic relationship is parasitism, in which one partner benefits at the expense of<br/>others. Ticks and tapeworms are among familiar parasites.<br/><br/>The third type of symbiotic relationship, called mutualism, is a true partnership in<br/>which both partners benefit. The relationship may be limited as when zebras and<br/>wildebeest graze together on the vast African grasslands. Each species can survive on<br/>its own, but together their chances of detecting predators are improved because each<br/>contributes a specially keen sense. (Zebras have<br/><br/>the better eyesight; wildebeest, hearing and sense of smell). In a few cases, partners<br/>are so interdependent that one cannot survive without the other. Most mutualistic<br/>relationships probably lie somewhere in between.<br/>The passage talks about how<br/>animals`,
+      image: "",
+      options: [
+        `attack/prey each other`,
+        `live together mutual dependance`,
+        `take advantage of the weaker ones`,
+        `are independent of each other`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Kailash faces towards north. Turning to his right, he walks 25 metres. He then turns to<br/>his left and walks 30 metres. Next, he moves 25 metres to his right. He then turns to<br/>his right again and walks 55 metres. Finally, he turns to the right and moves 40 metres.<br/>In which direction is he now from his starting point?`,
+      image: "",
+      options: [
+        `South-west`,
+        `South`,
+        `North-west`,
+        `South-east`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the mirror represented by a line MN, choose the correct mirror-image of the figure,<br/>from amongst the four alternatives (a), (b), (c) and (d) given along with it.<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_18.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_19.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_20.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_21.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_22.png"/>`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In an otto engine, pressure and temperature at the beginning of compression are 1 bar<br/>and 37°C respectively. The pressure at the end of adiabatic compression is 15 bar and<br/>peak temperature during the cycle is 2000 K. The work done per kg of the air will<br/>be<br/><br/>[Take <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_23.png"/>=<br/>0.717 kJ/kgK and γ = 1.4]`,
+      image: "",
+      options: [
+        `512.950 kJ/kg`,
+        `521.950 kJ/kg`,
+        `552.950 kJ/kg`,
+        `502.950 kJ/kg`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What is the distance ‘a’ as a fraction of the beam’s length <em>L</em><br/>for locating the roller support so that the moment in the beam at <em>B</em><br/>is zero?<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_25.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_27.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_28.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_29.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A conveyor belt is moving downward at 4 m/s and carries a package B of mass 15 kg as<br/>shown in the figure. If the coefficient of static friction between the package and the<br/>belt is 0.8, then the minimum (shortest) time in which the belt can be brought to rest<br/>without the package slipping on it.<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_31.png"/>`,
+      image: "",
+      options: [
+        `1.21s`,
+        `2.11s`,
+        `3.21s`,
+        `0.21s`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `At 200°C, a 50 : 50 Pb-Sn solder alloy exists as two phases a lead rich solid and a<br/>tin-rich liquid.<br/>The degree of freedom for this alloy is`,
+      image: "",
+      options: [
+        `0`,
+        `3`,
+        `1`,
+        `2`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a material that undergoes strain hardening, necking instability occurs during a<br/>tensile test when which of the following condition is satisfied? Given : σ = True stress<br/>and ∈ = True strain`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_34.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_36.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_37.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Steam is isentropically expanded in a turbine from 80 bar to 7 bar. At the inlet to the<br/>turbine (state 1) <em>h</em><br/><sub>1</sub><br/>is 3246 kJ/kg and <em>s</em><br/><sub>1</sub><br/>is 6.52 kJ/kgK.<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_39.png"/><br/>The enthalpy of the steam exiting the turbine (state 2) in kJ/kg is`,
+      image: "",
+      options: [
+        `2683.87`,
+        `2657.17`,
+        `1986.87`,
+        `3354.17`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a simple tensile test, the strain energy absorbed by unit volume of a material at<br/>yielding is 0.12 N-mm /mm3. A machine component of such material is subjected to<br/>triaxial state of stress of principal stresses σ, 2σ and –σ. The permissible value of<br/>maximum principal stress using total strain energy theory will be<br/>[Take E = 200<br/>GPa, μ = 0.3]`,
+      image: "",
+      options: [
+        `85.36 MPa`,
+        `170.56 MPa`,
+        `94.26 MPa`,
+        `188.16 MPa`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_41.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A reversible power cycle is used to drive a reversible heat pump. The power cycle<br/>absorbs <em>Q</em><br/><sub>1 </sub><br/>units of heat at temperature <em>T</em><br/><sub>1</sub><br/>and rejects <em>Q</em><br/><sub>2</sub><br/>at <em>T</em><br/><sub>2</sub><br/>. The heat pump abstracts <em>Q</em><br/><sub>4</sub><br/>from the sink at <em>T</em><br/><sub>4</sub><br/>and discharges <em>Q</em><br/><sub>3</sub><br/>at <em>T</em><br/><sub>3</sub><br/>. The expression for the ratio <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_42.png"/><br/>in terms of <em>T</em><br/><sub>1</sub><br/>, <em>T</em><br/><sub>2</sub><br/>, <em>T</em><br/><sub>3</sub><br/>and <em>T</em><br/><sub>4</sub><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_45.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_46.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_47.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The possible edge dimension of a solid aluminium cube subject to a convective heat<br/>transfer with <em>h</em><br/>= 30 W/m<sup>2</sup><br/>K for a lumped parameter analysis will be<br/><br/>[Take <em>K</em><br/><sub>aluminium </sub><br/>= 250 W/mK]`,
+      image: "",
+      options: [
+        `4.9 m`,
+        `6.9 m`,
+        `7.9 m`,
+        `8.9 m`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If bar <em>AB</em><br/>has an angular velocity ω<br/><em><br/><sub>AB</sub><br/></em><br/>= 6 rad/s, then the velocity of the slider block <em>C</em><br/>at the instant shown is<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_50.png"/>`,
+      image: "",
+      options: [
+        `1.34 m/s`,
+        `1.49 m/s`,
+        `1.2 m/s`,
+        `1.94 m/s`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A hat contains a number of cards, with 30% white on both sides, 50% black on one side and<br/>white on the other side, 20% black on both sides. The cards are mixed up, and a single<br/>card is drawn at random and placed on the table. If It’s upper side shows up black, the<br/>probability that its other side is also black is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_53.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_54.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_55.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_56.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In the casting of steel under certain mold conditions, the mold constant in Chvorinov’s<br/>rule is known to be 4.0 minutes/cm<sup>2</sup><br/>, based on previous experience. The casting is a flat plate whose length <em>L</em><br/>= 30 cm, width <em>W</em><br/>= 10 cm and thickness <em>H</em><br/>= 2 cm. The time required for the casting to solidify is _______ min. [Correct upto two<br/>decimal places]`,
+      image: "",
+      options: [],
+      answer: "2.49",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A solid shaft of diameter 50 mm is welded to a flat plate using a 10 mm fillet weld. If<br/>the maximum shear stress intensity in the weld material is not to exceed 80 MPa, the<br/>maximum value of twisting torque (in kNm) that the welded joint can sustain is _____<br/>(Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.22",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported beam with an overhanging end is shown below. The maximum<br/>bending moment in the beam is ________ kNm. [Rounded off to nearest integer]<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_60.png"/>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The annual demand for an item is 3200 units. The unit cost is <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_62.png"/><br/>and the inventory carrying charges are estimated as 26% per annum. If the cost of one<br/>procurement is <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_63.png"/>time<br/>interval between two consecutive orders (in months) will be ________. (Round off to<br/>nearest integer)`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A double overhung 1.5 m diameter impulse turbine installation is to develop 3000 kW at<br/>400 rpm under a net head of 300 m. If the overall efficiency is 0.90, then the diameter<br/>of the jet is _____ cm.<br/><br/>[Correct upto two decimal places]<br/><br/>[Take <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_65.png"/><br/>= 0.95, unit weight of water = 9.79 kN/m<sup>3</sup><br/>]`,
+      image: "",
+      options: [],
+      answer: "9.95",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a 2-D potential flow, the velocity potential is given as<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_67.png"/><br/>The velocity at the point (4, 5) is _______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "12.04",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_68.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_69.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A block of steel (with specific gravity 7.85) floats at the interface of water and<br/>mercury as shown in figure below. The specific gravity of mercury is 13.57. The ratio of<br/>a and b for this condition is ______ (correct upto three decimal places)<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_70.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.835",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_71.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a simple rankine cycle superheated steam enters the turbine at 100 bar, 500°C (h =<br/>3375.1 kJ/kg, <em>s</em><br/>= 6.5995 kJ/kgK) at a mass flow rate of 1000 kg/s. The steam expands isentropically in<br/>the turbine to condenser pressure. The condenser temperature is 30°C (<br/><em><br/>h<sub>f</sub><br/></em><br/>= 125.74 kJ/kg,<br/><em><br/>s<sub>f</sub><br/></em><br/>= 0.4368 kJ/kgK,<br/><em><br/>h<sub>g</sub><br/></em><br/>= 2555.6 kJ/kg,<br/><em><br/>s<sub>g</sub><br/></em><br/>= 8.452 kJ/kgK). Saturated water from the condenser is pumped<br/><br/>back to the boiler. Neglecting the pump work, the thermal efficiency of the cycle is<br/>______ %.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "42.50",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_72.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An aluminium block of mass 8 kg and specific heat<br/><em><br/>C<sub>p</sub><br/></em><br/>= 400 J/kgK is initially at 37°C in a room air at 17°C. The block cooled reversibly by<br/>transferring heat to a completely reversible cyclic heat engine until the block reaches<br/>17°C. The room air at 17°C acts as a constant temperature sink for the engine. The<br/>change in entropy for the room air in J/K is ________. (Correct upto two decimal<br/>places).`,
+      image: "",
+      options: [],
+      answer: "213.41",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_73.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A self service store employs a single cashier at its counter. On an average nine<br/>customers arrive every 5 minutes while the cashier can serve 10 customers in 5 minutes.<br/>Assuming poisson distribution for the arrival rate and exponential distribution for<br/>service time. The average queue length is ____ (Correct upto one decimal place)`,
+      image: "",
+      options: [],
+      answer: "8.1",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements are TRUE for a fluid flow over a deeply submerged body?`,
+      image: "",
+      options: [
+        `D’Alembert’s paradox states that a deeply submerged body in a real fluid flow<br/>experiences no drag force.`,
+        `D’Alembert’s paradox states that a deeply submerged body in an ideal fluid flow<br/>experiences no drag force.`,
+        `The wall shear stress at the point of flow separation on the body is zero.`,
+        `Dimples/dentures on a body facilitate earlier transition to turbulent flow which<br/>delays the boundary layer separation.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `(b,c,d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following mechanical properties of a material depend on the mobile<br/>dislocation density in it?`,
+      image: "",
+      options: [
+        `Young’s modulus`,
+        `Yield strength`,
+        `Ductility`,
+        `Fracture toughness`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `(b,c,d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the function <em>f</em><br/>(<em>x</em><br/>) given as:<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_103.png"/><br/>Which of the below statements is correct?`,
+      image: "",
+      options: [
+        `<em>f</em><br/>(<em>x</em><br/>) is continuous at <em>x</em><br/>= 2`,
+        `<em>f</em><br/>(<em>x</em><br/>) has removable discontinuity at <em>x</em><br/>= 2`,
+        `<em>f</em><br/>(<em>x</em><br/>) has non-removable discontinuity at <em>x</em><br/>= 2`,
+        `Discontinuity at <em>x</em><br/>= 2 can be removed by redefining the function at <em>x</em><br/>= 2`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_104.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_105.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The residue of <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_144.png"/>at<br/>z = –2 is`,
+      image: "",
+      options: [
+        `-4`,
+        `-5`,
+        `-3`,
+        `-6`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_145.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_146.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If the number 18601<em>x</em><br/>57y is divisible by 72, then <em>x</em><br/>+ y =`,
+      image: "",
+      options: [
+        `7`,
+        `8`,
+        `9`,
+        `6`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A page contains 60 lines. A chapter contains 125 pages. A book contains 5 chapters. 20<br/>such books form a bound. If there are total 30 lakh lines in an <em>x</em><br/>number of bounds, then the value of <em>x</em><br/>is`,
+      image: "",
+      options: [
+        `4`,
+        `2`,
+        `5`,
+        `6`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A circular paper is folded along its diameter, then again it is folded to form a<br/>quadrant. Then it is cut as shown in the figure and after that the paper was reopened in<br/>the original circular shape. What is the ratio of area of the original paper to that of<br/>the remaining paper? (The shaded portion is cut off from the quadrant. The radius of<br/>quadrant OAB is 5 cm and radius of each semicircle is 1 cm).<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_3.png"/>`,
+      image: "",
+      options: [
+        `25 : 16`,
+        `25 : 9`,
+        `20 : 9`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A number when divided successively by 4, 5, 6 leaves remainder 2, 3 and 5 respectively.<br/>What is the minimum such number?`,
+      image: "",
+      options: [
+        `214`,
+        `224`,
+        `114`,
+        `354`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A started a business with <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_7.png"/><br/>and after 4 months <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_8.png"/><br/>joined him with <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_9.png"/><br/>At the end of the year, out of the total profits <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_10.png"/><br/>received total <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_11.png"/><br/>including 25% of the profits as commission for managing the business. What amount did<br/><em>A</em><br/>receive?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_13.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_14.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_15.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_16.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Let <em>B</em><br/>is an invertible square matrix and <em>B</em><br/>is the adjoint of matrix <em>A</em><br/>such that <em>AB</em><br/>=<br/><em><br/>B<sup>T</sup><br/></em><br/>. Then which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `<em>A</em><br/>is an identity matrix`,
+        `<em>B</em><br/>is a symmetric matrix`,
+        `<em>A</em><br/>is a skew-symmetric matrix`,
+        `<em>B</em><br/>is a skew-symmetric matrix`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The value of  <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_76.png"/><br/>where ‘c’ is the closed curve of the region bounded by<br/><br/>y = x<sup>2</sup><br/>and y<sup>2</sup><br/>= <em>x</em><br/>is ________.`,
+      image: "",
+      options: [],
+      answer: "-0.6",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_77.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_78.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The centroid <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_79.png"/>of<br/>the shaded area is<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_80.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_81.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_82.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_83.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_84.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_85.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Use the following data for the shaft designated as 70 <em>f</em><br/>8 :<br/><br/>Diameter 70 lies in the diameter step of 60-80 mm<br/><br/>Fundamental tolerance unit, <em>i</em><br/>, (in μm) = 0.45 D<sup>1/3</sup><br/>+ 0.001 D,<br/><br/>where D is the representative size in mm:<br/><br/>Tolerance value for IT8 = 25i.<br/><br/>Fundamental deviation for ‘<em>f</em><br/>’ shaft = –5.5 D<sup>0.31</sup><br/><br/>The lower limit and upper limit of the shaft are`,
+      image: "",
+      options: [
+        `69.931 mm, 69.934 mm`,
+        `69.921 mm, 69.949 mm`,
+        `69.932 mm, 69.980 mm`,
+        `69.025 mm, 69.951 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `2 kg of water at 0.2 MPa is initially enclosed within a volume of 0.2 m<sup>3</sup><br/>in a vertical pistoncylinder arrangement. The piston initially rests on stops and it<br/>will start moving when the pressure inside reaches 1 MPa. If the total amount of heat<br/>equal to 3000 kJ, is transferred to the water during the process, then the heat added<br/>during constant pressure process is<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_87.png"/>`,
+      image: "",
+      options: [
+        `1925.945 kJ`,
+        `3000 kJ`,
+        `730.933 kJ`,
+        `1074.055 kJ`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_88.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_89.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Balloons are often filled with helium gas because it weighs only about one-seventh of<br/>what air weighs under identical conditions. If the balloon has a diameter of 12 m and<br/>carries two people, 85 kg each, the acceleration of the balloon when it is first<br/>released is _____ m/s<sup>2</sup><br/>.<br/><br/>[Assume the density of air ρ as 1.16 kg/m<sup>3</sup><br/>and neglect the weight of ropes and the cage]<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_90.png"/>`,
+      image: "",
+      options: [
+        `14.21 m/s<sup>2</sup>`,
+        `22.37 m/s<sup>2</sup>`,
+        `36.71 m/s<sup>2</sup>`,
+        `81.92 m/s<sup>2</sup>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A refrigerator unit having a mass of 40 kg is to be supported on four springs, each<br/>having a spring stiffness <em>k</em><br/>. The unit operates at a speed of 450 rpm. What is the value of stiffness ‘<em>k</em><br/>’ if only 10% of the shaking force is allowed to be transmitted to the supporting<br/>structure?`,
+      image: "",
+      options: [
+        `0.5 N/mm`,
+        `1.0 N/mm`,
+        `1.5 N/mm`,
+        `2.0 N/mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A shaft is designed based on maximum energy of distortion as the criteria of failure and<br/>factor of safety of 2. The material used is 30C8 steel with yield stress of 310 MPa. The<br/>shaft is subjected to an axial load of 40 kN. Diameter of the shaft is 20 mm. What is<br/>the maximum torque that can be applied to the shaft before yielding?`,
+      image: "",
+      options: [
+        `80 Nm`,
+        `82 Nm`,
+        `84 Nm`,
+        `86 Nm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_93.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A 20° full depth involute spur gear pair consists of pinion having 20 teeth and a module<br/>of 8 mm rotates at 300 rpm meshes with a gear and provides a gear ratio of 1.8. What<br/>will be the addenda on the wheel and the pinion if the interference is just avoided?`,
+      image: "",
+      options: [
+        `11.5 mm and 23 mm, respectively`,
+        `14 mm and 27.34 mm, respectively`,
+        `11.5 mm and 27.34 mm, respectively`,
+        `11.5 mm and 20.7 mm, respectively`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match the CAD terms in <strong>Group-I</strong><br/>with their corresponding functions in <strong>Group-II :</strong><br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_96.png"/>`,
+      image: "",
+      options: [
+        `P-4, Q-3, R-2, S-1`,
+        `P-2, Q-5, R-2, S-1`,
+        `P-5, Q-3, R-4, S-2`,
+        `P-3, Q-5, R-4, S-2`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following data for an inventory item:<br/><br/>Annual demand = 3000 unit per year<br/><br/>Ordering cost = 150 per order<br/><br/>Inventory holding rate = 25% of unit price<br/>The supplier offer the following<br/>quantity discount scheme<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_97.png"/><br/>The optimum order quantity is`,
+      image: "",
+      options: [
+        `490 units`,
+        `507 units`,
+        `600 units`,
+        `650 units`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_98.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Two long rods of the same diameter, one made of brass (<em>k</em><br/>= 85 W/mK) and the other of copper (<em>k</em><br/>= 380 W/mK), have one of their ends inserted into a furnace maintained at high constant<br/>temperature. Both rods are exposed to the same environment. If the temperature of the<br/>brass rod at a distance of 11 cm from the furnace end is 120°C, then the corresponding<br/>distance from the<br/>furnace end at which the same temperature would be reached in the<br/>copper rod is`,
+      image: "",
+      options: [
+        `21.26 cm`,
+        `22.63 cm`,
+        `23.26 cm`,
+        `26.32 cm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_100.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An adiabatic turbine receives a gas with<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.09 kJ/kgK and <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_101.png"/>=<br/>0.838 kJ/kgK, at an inlet pressure and temperature of 7.5 bar and 1275 K respectively.<br/>And discharging at 1.5 bar and 950 K. If the ambient temperature is 300 K, then the<br/>second law efficiency of the turbine is`,
+      image: "",
+      options: [
+        `93.3%`,
+        `89.5%`,
+        `92.5%`,
+        `82%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The area inside the parabola 5<sub>x</sub><br/><sup>2</sup><br/>– y = 0 but outside parabola 2<em>x</em><br/><sup>2</sup><br/>– y + 9 = 0 is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_106.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_107.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_108.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_109.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_110.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A shell and tube heat exchanger contains 400 tubes each of inner diameter 23 mm and<br/>outer diameter of 25 mm. The length of each tube is 3.7 m. The corrected log mean<br/>temperature difference is 23°C. The inner and outer surface convection heat transfer<br/>coefficient are 3410 W/m<sup>2</sup><br/>K and 6820 W/m<sup>2</sup><br/>K, respectively. If the thermal resistance of the tubes walls is negligible, the rate<br/>of<br/>heat transfer will be ______ kW. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "5745",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_111.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A solid circular bar of length 1.5 m is fixed at one end and free at the other as shown<br/>in the figure below. The modulus of rigidity and polar moment of inertia of the bar are<br/>80 GPa and 80000 mm<sup>4 </sup><br/>respectively. The strain energy stored in the bar is _____ N-mm. [Correct upto one<br/>decimal place]<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_112.png"/>`,
+      image: "",
+      options: [],
+      answer: "585.9",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a spring-controlled governor, the curve of controlling force is a straight line the<br/>controlling force is 1200 N when balls are 400 mm apart and 450 N when the balls are 200<br/>mm apart. If each ball weighs 100 N, then the speed of the governor and when the balls<br/>are 250 mm apart is ______ rpm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "213.60",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_114.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 50 mm diameter 75 mm long journal bearing is loaded with bearing pressure of 2 MPa.<br/>The shaft in bearing rotates at 500 rpm. Heat is lost from surface at the rate of 11.6<br/>Joules/m<sup>2</sup><br/>per second per degree centrigrade. The housing area is 8 times the projected area. If<br/>the room temperature is 28°C and coefficient of friction, μ is 0.0015, the surface<br/>temperature of bearing will be ________ °C. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "70.32",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `ABC company produces a cable at the rate of 5000 meters per hour and the cable is used<br/>at the rate of 2500 metres/hour. The cost of the cable is <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_116.png"/><br/>per metre. The inventory carrying cost is 25% of the unit cost per year and the set up<br/>costs is <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_117.png"/>per<br/>set-up. The optimum number of production cycles required in a year for the manufacturing<br/>of this cable is _________ (Round off to nearest integer). Assume number of working hour<br/>is 8 per day.`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A laboratory wind tunnel has a test section that is 305 mm square. Boundary-layer<br/>velocity profiles are measured at two cross-sections and displacement thicknesses are<br/>evaluated from the measured profiles. At section 1, where the free stream speed is<br/><em>U</em><br/><sub>1</sub><br/>=26 m/s, the displacement thickness is δ*1 = 1.5 mm. At section 2 , located downstream<br/>from section 1 , δ*2 = 2.1 mm. then the<br/><br/>change in static pressure between sections 1 and 2_______Pa. (Correct up to two decimal<br/>places).<br/><br/>[Take ρ = 1.2 kg/m<sup>3</sup><br/>]<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_119.png"/>`,
+      image: "",
+      options: [],
+      answer: "6.53",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Hot air, assumed as an ideal gas (<br/><em><br/>C<sub>p</sub><br/></em><br/>= 1000 J/kgK, γ = 1.4) enters a gas turbine at 10 bar, 1000 K and leaves at a pressure<br/>of 5 bar. Subsequently it expands in a nozzle to a pressure of 1 bar. Assume both these<br/>processes to be reversible and adiabatic. If the inlet velocity of the air to the nozzle<br/>is negligible, the final velocity of air at the exit of the nozzle is _____ m/s.<br/>[Rounded off to<br/>two decimal places]`,
+      image: "",
+      options: [],
+      answer: "777.66",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_121.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_122.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A two-spindle drill simultaneously drills a 13 mm hole and 19 mm hole through the<br/>workpiece that is 40 mm thick. Both drills are twist drills with point angles of 118°.<br/>The feed rate (mm/min) for both the holes is the same and is set so that the total metal<br/>removal rate does not exceed 24580 mm<sup>3</sup><br/>/min. The time required to drill the hole, is ______ seconds. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "46.44",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_123.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A six cylinder four stroke gasoline engine has bore and stroke 80 mm and 100 mm<br/>respectively.<br/><br/>The clearance volume per cylinder is 70 cc. At a speed of 4000 rpm the fuel consumption<br/>is 20 kg/h and the torque developed is 150 Nm. The calorific value of the fuel is 43000<br/>kJ/kg. If the engine works on the constant volume cycle then the relative efficiency on<br/>a brake power basis will be _______%. (Correct upto two decimal places) [Take<br/>γ<sub>air</sub><br/>= 1.4]`,
+      image: "",
+      options: [],
+      answer: "46.30",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_124.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_125.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A shaft carries two masses 1250 N and 325 N at different locations. The influence<br/>coefficient from deflection analysis for the shaft are calculated as: a<sub>11</sub><br/>= 6.213 × 10<sup>–8</sup><br/>m/N, a<sub>22</sub><br/>= 10.697 × 10<sup>–8</sup><br/>m/N. Neglecting the mass of the shaft, the critical speed of the shaft using Dunkerlay<br/>method is ______ rpm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "2820.72",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_126.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Ice is produced at 0°C from water at 20°C in vapour compression refrigeration system<br/>using Freon-12 as the refrigerant. The condenser and evaporator temperatures are 25°C<br/>and –5°C, respectively. The relative efficiency is 50%. The refrigerant is circulated at<br/>a rate of 6 kg per minute and the dryness fraction of refrigerant entering the<br/>compressor is 0.6. The specific heat of<br/>water is 4.187 kJ/kgK and the latent heat<br/>of ice is 335 kJ/kg. The amount of ice produced in 24 hours is ______ tonne. (Correct<br/>upto two decimal places)<br/>Properties of R-12 are given in the following table:<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_127.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.66",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_128.png"/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_129.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rigid vessel of volume 0.05 m<sup>3</sup><br/>contains a mixture of saturated water and saturated steam at 250°C. The mass of the<br/>liquid present is 10 kg. The specific internal energy of the mixture is _______ kJ/kg.<br/>(Correct upto two decimal places)<br/><br/>From steam table, At 250°C, <em>P</em><br/><sub>sat</sub><br/>= 3.973 MPa and<br/><br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_130.png"/>`,
+      image: "",
+      options: [],
+      answer: "1186.29",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In continuous casting of steel, mould flux is applied over the surface of molten metal in<br/>the mould. Which of the following are the functions of mould flux?`,
+      image: "",
+      options: [
+        `To provide lubrication between the solidifying shell and the mould wall`,
+        `To reduce heat loss from the molten melta surface.`,
+        `To assist in inclusion control by absorbing non-metallic inclusions`,
+        `To reduce solidification shrinkage of the casting.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `(a,b,c)`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `In the absence of any external stress, which of the following statements regarding to the<br/>interaction between point defects and a dislocation are CORRECT?`,
+      image: "",
+      options: [
+        `An oversized solute atom would preferentially migrate below the slip plane of an<br/>edge dislocation.`,
+        `A spherically symmetric point defect can interact with both the hydrostatic and<br/>shear stress fields of a dislocation.`,
+        `A point defect can locally modify the elastic modulus, thereby altering the<br/>interaction energy.`,
+        `Vacancies are attracted towards the compressive region of a dislocation.`
+      ],
+      answer: ["A", "C", "D"],
+      solution: `(a,c,d)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If integrating factor of the differential equation <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_132.png"/><br/>then <em>P </em><br/>is equal to`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_133.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_134.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_135.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_136.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_137.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The angle between the surfaces <img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_138.png"/>at<br/>the point (2, –1, 2) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_139.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_140.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_141.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_142.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test3_full_syllabus_gate_2026_me/img_143.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Basic Level Test-4",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A book consists of 30 pages, 25 lines on each page and 35 characters on each line. If<br/>this content is written in another notebook consisting of 30 lines and 28 characters per<br/>line, then the required no. of pages will be how much percent greater than the previous<br/>pages?`,
+      image: "",
+      options: [
+        `4.16%`,
+        `5%`,
+        `6.66%`,
+        `None of these`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following is the synonym of the word written in capital<br/>letter?<br/>IRREVERENCE`,
+      image: "",
+      options: [
+        `disrespect`,
+        `cruelty`,
+        `unkindness`,
+        `invalidity`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Read the passage carefully and answer the following question.<br/><br/>Child psychology is certainly not a strong point with most Indian schools; why else<br/>would they inflict a double trauma on a student performing badly in the pre-boards by<br/>banning her from taking the board exams. Often with fatal results as evidenced by<br/>reports of student suicides in the run-up to the boards. Now the Central Board of<br/>Secondary Education (CBSE) has stepped in and put the brakes on this discriminatory<br/>practice, ruling that no student can be barred from the Boards without prior clearance<br/>from the CBSE. This is good news for parents and students, many of whom have had to live<br/>with the threat of performance-linked debarment. While the school’s logic is that in<br/>order to attract talented students, they need to maintain their performance records at<br/>high levels. Chances are that a student faring poorly at the pre-boards will replicate<br/>at the boards is faulty. Chances are that the student will be spurred to work doubly<br/>hard. On the other hand, the threat of debarment, will almost certainly impact adversely<br/>on his/her performance. Of course, linking pre-boards to the boards is only one of the<br/>problems with our school system.<br/>Which is the good news for parents, according to<br/>the passage?`,
+      image: "",
+      options: [
+        `School will take the responsibility of preparing students for the board.`,
+        `School will provide study facilities to the poor student.`,
+        `Schools will enforce discipline to ensure higher attendance of students.`,
+        `No students can be barred from the Boards without prior clearance from the CBSE.`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A child is looking for his father. He went 90 m in the east before turning to his right.<br/>He went 20 m before turning to his right again to look for his father at his uncle’s<br/>place 30 m from this point. His father was not there. From there, he went 100 metres to<br/>his north before meeting his father in a street. How far did the son meet his father<br/>from the starting point?`,
+      image: "",
+      options: [
+        `80 metres`,
+        `100 metres`,
+        `140 metres`,
+        `260 metres`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_18.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the mirror represented by a line MN, choose the correct mirror-image of the figure,<br/>from amongst the four alternatives (a), (b), (c) and (d) given along with it.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_21.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_22.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_23.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_25.png"/>`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A Newtonian fluid having a specific gravity of 0.92 and a kinematic viscosity of 4 ×<br/>10<sup>–4</sup><br/>m<sup>2</sup><br/>/s flows past a fixed surface. The velocity profile near the surface is shown in the<br/>figure below. The magnitude of the shearing stress developed on the plate is<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_26.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_27.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_28.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_29.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_30.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A block of <em>m</em><br/>kg moving with a velocity v strikes squarely the prismatic beam <em>AB</em><br/>at its mid-point <em>C</em><br/>. Simply supported at the ends as shown in the figure.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_32.png"/><br/>Ignoring the change in potential energy. The maximum deflection of point <em>C</em><br/>of the beam due to impact is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_33.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_34.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_35.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_36.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Two forces <em>P</em><br/><sub>1</sub><br/>and <em>P</em><br/><sub>2</sub><br/>are applied to a hook as shown in the figure. If the resultant of these two forces has a<br/>magnitude of 300 N and makes an angle of 30° with positive x-axis<br/>(anticlockwise direction), then the magnitudes (in N) of <em>P</em><br/><sub>1</sub><br/>and <em>P</em><br/><sub>2</sub><br/>will be<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_38.png"/>`,
+      image: "",
+      options: [
+        `<em>P</em><br/><sub>1</sub><br/>= 155.3, <em>P</em><br/><sub>2</sub><br/>= 300`,
+        `<em>P</em><br/><sub>1</sub><br/>= 300, <em>P</em><br/><sub>2</sub><br/>= 155.3`,
+        `<em>P</em><br/><sub>1</sub><br/>= 150, <em>P</em><br/><sub>2</sub><br/>= 251.3`,
+        `<em>P</em><br/><sub>1</sub><br/>= 457.67, <em>P</em><br/><sub>2</sub><br/>= 153.5`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_39.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_40.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following Miller indices represents the plane shown below?<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_41.png"/>`,
+      image: "",
+      options: [
+        `(0 2 1)`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_42.png"/>`,
+        `(0 1 2)`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_43.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `To punch a circular hole of 25 mm diameter from a 3 mm steel sheet whose shear strength<br/>is 290 MPa, the die and punch sizes respectively are`,
+      image: "",
+      options: [
+        `25 mm, 25.33 mm`,
+        `25.33 mm, 25 mm`,
+        `25 mm, 25.16 mm`,
+        `25.16 mm, 25 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The natural frequency of vibration of the system shown below is<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_46.png"/><br/>The disc of mass 0.5 <em>M</em><br/>is rigidly attached to massless rod and the point mass <em>M</em><br/>is placed at the end <em>B</em><br/>.`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_47.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_48.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_50.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `What is the value of fatigue stress concentration factor due to a circular hole with<br/>Notch sensitivity of 0.875?`,
+      image: "",
+      options: [
+        `3`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_52.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_53.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_54.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_55.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A steam turbine receives steam at 20 bar and superheated by 88.6°C. The exhaust pressure<br/>is 0.07 bar and the expansion is isentropic. Refer the following data from steam table.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_57.png"/><br/>If the isentropic efficiency of turbine is 80%, then the actual work produced during<br/>expansion is`,
+      image: "",
+      options: [
+        `738 kJ/kg`,
+        `730 kJ/kg`,
+        `678 kJ/kg`,
+        `573 kJ/kg`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `20 m<sup>3</sup><br/>of air per minute at 27°C DBT and 70% RH is cooled to 20°C DBT while maintaining<br/>constant specific humidity. The saturation pressure at 27°C is 0.05125 bar. The heat<br/>removed from air is<br/>[Take air pressure as 1 bar]`,
+      image: "",
+      options: [
+        `2.78 kJ/kg`,
+        `7.34 kJ/kg`,
+        `8.72 kJ/kg`,
+        `14.9 kJ/kg`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A project has the following activity durations (in weeks)<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_60.png"/><br/>The critical path for the network is`,
+      image: "",
+      options: [
+        `1 - 2 - 4 - 9 - 10`,
+        `1 - 3 - 4 - 9 - 10`,
+        `1 - 3 - 5 - 6 - 8 - 10`,
+        `1 - 3 - 5 - 7 - 8 - 10`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Each component with an area of 1055 mm<sup>2</sup><br/>is to be blanked out of a stock strip of dimensions as shown below.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_69.png"/><br/>The percentage utilization of the stock is ______. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "67",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_70.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A double riveted lap joint, having plate thickness of 20 mm, rivet hole diameter as 18<br/>mm, rivet diameter of 17 mm, pitch of 50 mm. The tearing efficiency (in percentage) for<br/>the joint is_____. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "64",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_71.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_72.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A steel wire of diameter of 10 mm is formed into a coiled to a close coiled-helical<br/>spring having 10 active coils of mean diameter 75 mm. The spring has stiffness k. The<br/>percentage increase in stiffness if the same wire is recoiled into 15 active coils of<br/>mean diameter 50 mm is _____ %.<br/>[Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "125",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_73.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A copper slab of dimensions 0.4 m × 0.4 m and thickness 5 mm is initially at a uniform<br/>temperature of 250°C. Its surface are suddenly exposed to an ambient temperature of<br/>30°C. The density, specific heat and thermal conductivity of the copper slab are 9000<br/>kg/m3, 0.38 kJ/kgK and 370 W/mK respectively. The time required for the slab temperature<br/>to drop to 90° is _____ seconds. [Correct upto one decimal place]<br/><br/>[Take h = 90 W/m<sup>2</sup><br/>K]`,
+      image: "",
+      options: [],
+      answer: "123.4",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_74.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A roller of weight 800 N and radius 240 mm is pushed by force <em>P</em><br/>(in N) over a step at <em>A</em><br/>as shown in the figure. The magnitude of force <em>P</em><br/>to just start the roller over the step is _____ N. (Rounded off to nearest integer)<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_76.png"/>`,
+      image: "",
+      options: [],
+      answer: "658",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_77.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A crank and slotted lever quick return mechanism has a driving crank of length 8 cm and a<br/>slotted bar of length 19.5 cm. If the mechanism has a quick return ratio of 1.8, then<br/>the stroke length of the mechanism is _____ mm. [Rounded off to one decimal place]`,
+      image: "",
+      options: [],
+      answer: "169.2",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_78.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In an orthogonal cutting operation a tool with a rake angle of 12° produces a chip with<br/>a chip thickness ratio of 0.25. The friction force on rake face is 1848 N and normal<br/>force on the rake face is 980 N. The error in shear angle by merchan’t relation compared<br/>to the actual shear angle is<br/>_______ %. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "38.06",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_79.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A bar of 30 mm diameter is subjected to a pull of 50 kN. The measured extension on gauge<br/>length of 200 mm is 0.08 mm and the change in diameter is 0.004 mm. The value of modulus<br/>of rigidity would be _____ GPa. [Correct upto to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "66.48",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_80.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A vertical glass tube of diameter 5 cm is sufficiently high, open at the top and<br/>containing a liquid, rotates about its vertical axis at 700 rpm. The depression of the<br/>lowest point of free liquid surface below the original horizontal surface when the<br/>liquid was at rest will be ______ cm. (Correct upto one decimal place)`,
+      image: "",
+      options: [],
+      answer: "8.6",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_81.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If the smoothing constant (α) is in an exponential smoothing forecast is 0.33, the number<br/>of periods of an equivalent simple moving average for the same response is ______.<br/>[Round off to nearest integer value]`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_82.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are correct regarding Burgers vector in crystalline materials?`,
+      image: "",
+      options: [
+        `For metallic materials, the magnitude of the Burgers Vector is equal to the<br/>interatomic spacing.`,
+        `A Burger vector Changes direction and nature within a crystal.`,
+        `For a mixed dislocation, the Burgers vector is parallel to the dislocation line.`,
+        `For an edge dislocation, the Burgers vector is perpendicular to the dislocation<br/>Line.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `(a,b,d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `If variation between spectral blackbody emissive power and wavelength for selected<br/>temperature is plotted with wavelength as ordinate and spectral blackbody emissive power<br/>as abscissa, then<br/>which of the following observation(s) drawn from the curve is/are<br/>correct?`,
+      image: "",
+      options: [
+        `At any specified temperature, emitted radiation increases with wavelength over the<br/>entire wavelength spectrum.`,
+        `At any particular wavelength, amount of emitted radiation increases with increasing<br/>temperature.`,
+        `As temperature increases, the peak spectral emissive power starts appearing at<br/>shorter wavelength.`,
+        `The area under curve between spectral blackbody emissive power over entire<br/>wavelength spectrum at any specified temperature gives total blackbody emissive<br/>power.`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_83.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let a function <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_116.png"/><br/>Then which of the following statements is not true regarding <em>f</em><br/>(<em>x</em><br/>)?`,
+      image: "",
+      options: [
+        `Discontinuous at <em>x</em><br/>= 0`,
+        `Discontinuous at <em>x</em><br/>= 1`,
+        `Not differentiable at <em>x</em><br/>= 0`,
+        `Not differentiable at <em>x</em><br/>= 1`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_117.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A unit normal to the level surface x<sup>2</sup><br/>– y<sup>2</sup><br/>+ z = 2 at (1, –1, 2) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_153.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_154.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_155.png"/>`,
+        `None of these`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_156.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If Mean = (3 Median – Mode)<em>A</em><br/>, then the value ‘<em>A</em><br/>’ is`,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_157.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_158.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_159.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The rate of increase of the price of sugar is observed to be two percent more than the<br/>inflation rate expressed in percentage. The price of sugar on January 1, 2004 is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_2.png"/>per<br/>kg. The inflation rates for the years 2004 and 2005 are expected to be 8% each. The<br/>expected price of sugar on January 1, 2006 would be :`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_3.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_4.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_5.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_6.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The following question is based on the diagram given below:<br/><br/>1. The rectangle represents government employees.<br/><br/>2. The triangle represents urban people.<br/><br/>3. The circle represents graduates.<br/><br/>4. The square represents clerks.<br/>Which of the above statements is true?<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_8.png"/>`,
+      image: "",
+      options: [
+        `All government employees are clerks.`,
+        `Some government employees are graduates as well as clerks.`,
+        `All government employees are graduates.`,
+        `All clerks are government employees but not graduates.`
+      ],
+      answer: ["B"],
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A square is inscribed in a circle and then another circle is inscribed in the square.<br/>Another square is inscribed in the circle. Finally, a circle is inscribed in the<br/>innermost square. Thus, there are 3 circles and 2 squares as shown in the figure. The<br/>radius of the outer-most circle is <em>R</em><br/>.<br/>What is the ratio of sum of circumferences of all the circles to the sum of<br/>perimeters of all the squares?<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_9.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_13.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_14.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The sum of n terms of two arithmetic series are in the ratio of  <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_16.png"/><br/>Find the ratio of their 11<sup>th </sup><br/>terms:`,
+      image: "",
+      options: [
+        `4 : 3`,
+        `5 : 4`,
+        `7 : 4`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_17.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `400 student took the MOCK GATE exam in Lucknow. 60% of the boys and 80% of the<br/>girls cleared the cut-off in the examination. If the total percentage of students<br/>qualifying is 65%, then`,
+      image: "",
+      options: [
+        `100 girls appeared in the exam`,
+        `300 girls appeared in the exam`,
+        `200 boys appeared in the exam`,
+        `100 boys appeared in the exam`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_20.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following matrices have eigen values as 1 and –1?`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_62.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_63.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_64.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_65.png"/>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `There are 3 fair coins and 1 false coin with tails on both sides. A coin is chosen at<br/>random and tossed 4 times. If tails occurs in all 4 times, then the probability that the<br/>false coin has been chosen for tossing is _______. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.84",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_67.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_68.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Two buses <em>A</em><br/>and <em>B</em><br/>are scheduled to arrive at a town central bus station at noon. The probability that bus<br/><em>A</em><br/>will be late is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_84.png"/><br/>The probability that bus <em>B</em><br/>will be late is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_85.png"/><br/>The probability that the bus <em>B</em><br/>is late given that bus <em>A</em><br/>is late is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_86.png"/>Then<br/>which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Probability that neither bus will be late on a particular day is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_87.png"/>`,
+        `Probability that bus <em>A</em><br/>is late given that bus <em>B</em><br/>is late is  <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_88.png"/>`,
+        `Probability that at least one bus is late is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_89.png"/>`,
+        `Probability that at least one bus is in time is <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_90.png"/>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_91.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A homogeneous solid cylinder of radius 1 m and weight 1000 N with an initial clockwise<br/>angular velocity 30 rad/sec is placed in the corner formed by the floor and a vertical<br/>wall as shown in the figure. If the coefficient of Kinetic friction at <em>M</em><br/>and <em>N</em><br/>is 0.02 then the time required for cylinder to come to rest is [Take g = 10<br/>m/s<sup>2</sup><br/>]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_92.png"/>`,
+      image: "",
+      options: [
+        `42.67 seconds`,
+        `35.25 seconds`,
+        `23.52 seconds`,
+        `73.53 seconds`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List-I</strong><br/>(Properties of molding sand) with <strong>List-II</strong><br/>(Variation with water content) and select the correct answer using the codes given below<br/>the lists:<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_94.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The piston cylinder arrangement contains gases at 3000°C and 60 bar. The gases expand<br/>through a volume ratio of 9 according to the law pv<sup>1.38</sup><br/>= Constant. The surroundings are at 20°C, 1 bar. The work transfer of the gases per unit<br/>mass is<br/><br/>[Take, <em>R</em><br/>= 0.26 kJ/kgK and <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_96.png"/>=<br/>0.82 kJ/kgK]`,
+      image: "",
+      options: [
+        `1420.15 kJ/kg`,
+        `1372.65 kJ/kg`,
+        `2921.11 kJ/kg`,
+        `1892.71 kJ/kg`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_97.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A model of spillway is built to a scale of 1 : 36. If the model velocity and discharge<br/>are 1.25 m/s and 2.5 m<sup>3</sup><br/>/s respectively, then corresponding prototype velocity and discharge are`,
+      image: "",
+      options: [
+        `7.5 m/s, 19440 m<sup>3</sup><br/>/s`,
+        `17.5 m/s, 1944 m<sup>3</sup><br/>/s`,
+        `6 m/s, 7776 m<sup>3</sup><br/>/s`,
+        `19.44 m/s, 7.5 m<sup>3</sup><br/>/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_98.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cavity of cross-section 20 cm × 20 cm and height 5 cm is to be filled completely in 5<br/>sec by using top gating system. The cross-sectional area of the gate is 3 cm<sup>2</sup><br/>, and the height of pouring basin is 2.5 cm. The height of sprue required to achieve the<br/>desired filling time is`,
+      image: "",
+      options: [
+        `90.61 mm`,
+        `81.29 mm`,
+        `65.61 mm`,
+        `73.16 mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bimetallic cylindrical bar of cross-sectional area 1 m2 is made by bonding steel<br/>(<em>E</em><br/>= 210 GPa) and aluminium (<em>E</em><br/>= 70 GPa) as shown in figure. To maintain tensile axial strain of magnitude<br/>10<sup>–6</sup><br/>in steel bar, the magnitude of the required force P along indicated direction is<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_100.png"/>`,
+      image: "",
+      options: [
+        `70 kN`,
+        `140 kN`,
+        `210 kN`,
+        `280 kN`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a planer linkage consisting of only lower-pairs with 17 revolute joints and 6 number<br/>of loops.<br/>The degree of freedom of the linkage is`,
+      image: "",
+      options: [
+        `2`,
+        `1`,
+        `0`,
+        `-1`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In an absorption refrigeration system, the heating, cooling and refrigeration take place<br/>at 127°C, 27°C and –23°C respectively. Some changes in heating and refrigeration<br/>temperatures causes an 11.2% decrease in the theoretical COP. If the heating temperature<br/>is increased to 177°C, the refrigeration temperature is decreased to`,
+      image: "",
+      options: [
+        `–42.3°C`,
+        `–28.9°C`,
+        `–38.5°C`,
+        `–36.4°C`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_103.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A short shoe drum brake is shown in figure:<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_105.png"/><br/>A force of 1 kN is applied on the lever. The coefficient of friction is 0.5. The<br/>magnitude of braking torque applied is`,
+      image: "",
+      options: [
+        `705.882 Nm`,
+        `400 Nm`,
+        `352.94 Nm`,
+        `200 Nm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_106.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_107.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Balaji corporation currently practices the following system for the procurement of an<br/>item.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_108.png"/><br/>The loss to the company for not practising a scientific inventory policy (EOQ) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_109.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_110.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_111.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_112.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_113.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_114.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A four cylinder engine running at 4200 rpm, using natural gas, develops a brake power of<br/>70 kW. The engine details are : Air gas ratio 9 : 1, calorific value of fuel 40<br/>MJ/m<sup>3</sup><br/>, compression ratio 10 : 1, volumetric efficiency 90%, mechanical efficiency 80% and the<br/>total volume of the engine is 2.4 litres. The indicated thermal efficiency of the engine<br/>is`,
+      image: "",
+      options: [
+        `39%`,
+        `35%`,
+        `23%`,
+        `29%`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If<br/><em><br/>A<sub>n</sub><br/></em><br/>is the area bounded by <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_118.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_119.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_120.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_121.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_122.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_123.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_124.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the state of stress as shown in figure,<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_125.png"/><br/>The orientation of the plane with maximum shear stress with respect to the x-axis will<br/>be _____<br/>degrees. (Correct upto one decimal place)`,
+      image: "",
+      options: [
+        `-22.5° and 67.5°`,
+        `22.5° and -67.5°`,
+        `22.5° and 67.5°`,
+        `-22.5° and -67.5°`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_126.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A tapered circular rod of diameter varying from 60 mm to 40 mm is connected to another<br/>circular tapered rod of diameter varying from 40 mm to 70 mm as shown in figure below.<br/>Both bars are of same material having modulus of elasticity of 2 × 10<sup>5</sup><br/>MPa. When subjected to a load of 100 kN, the vertical deflection of point <em>A</em><br/>is ________ mm. [Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_127.png"/>`,
+      image: "",
+      options: [],
+      answer: "1.52",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For the given configuration the angular velocity of the connecting rod in rad/min is<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_129.png"/>`,
+      image: "",
+      options: [],
+      answer: "403.98",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_130.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A centrifugal pump delivers water against a net head of 20 m at a speed of 1000 rpm. The<br/>vanes are curved backward at 30° to the periphery. The impeller radius is 10 cm and the<br/>impeller outlet width is 5 cm. If the manometric effeciency is 95%, then the discharge<br/>of the pump is _______ m<sup>3</sup><br/>/s.<br/>[Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.168",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The difference in forecast for the fourth period according to weighted moving average of<br/>3 periods and simple moving average of 3 periods is _____. [Round off to two decimal<br/>places]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_132.png"/>`,
+      image: "",
+      options: [],
+      answer: "2.33",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_133.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Water flows out from a tank of cross-sectional area 1000 mm<sup>2</sup><br/>through a small orifice of area 10 mm<sup>2</sup><br/>, located at y = 0. Initially water is at level y = 1 m as shown in figure.<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_134.png"/><br/>Considering the acceleration due to gravity as 10 m/s<sup>2</sup><br/>, the time taken to reach water level at y = 0.4 m is _____ seconds. (Correct upto two<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "16.44",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_135.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_136.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The net radiation from the surfaces of two parallel plates maintained at temperatures,<br/>T<sub>1</sub><br/>and T<sub>2</sub><br/><br/><br/>is to be reduced by 79 times.  The number of radiation screens to be placed between<br/>the<br/><br/>two surfaces to achieve this reduction in heat exchange, assuming the emissivity of the<br/>screens as<br/>0.05 and that of the surfaces as 0.8 is ____ ( rounded of to the nearest<br/>integer )`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_137.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A simple brayton cycle operates between the temperature limits of 27°C and 1127°C. The<br/>ratio of maximum efficiency to the optimum efficiency of the cycle is _____. [Round off<br/>to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.46",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_138.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An aluminium rod of diameter 26 mm is to be extruded through a die with a semi-die cone<br/>angle of 4° and the coefficient of friction is 0.12. The maximum possible reduction in<br/>cross-sectional area during extrusion is ______ %. [Correct upto one decimal place]`,
+      image: "",
+      options: [],
+      answer: "24.8",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_139.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_140.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The natural frequency of vibration of system shown in the figure below is _______ Hz.<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_141.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.12",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_142.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An insulated, vertical piston cylinder device initially contain 10 kg of water, 6 kg of<br/>which is in the vapour phase. The mass of piston is such that it maintains a constant<br/>pressure of 200 kPa inside the cylinder. Now steam at 0.5 MPa and 360°C is allowed to<br/>enter the cylinder from a supply line until all the liquid in the cylinder has<br/>vaporized. The mass of steam that has entered is<br/>________ kg. [Round off to two<br/>decimal places]<br/><br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_143.png"/>`,
+      image: "",
+      options: [],
+      answer: "18.24",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_144.png"/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_145.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A flow of 0.5 kg/s of exhaust gas at 427°C from a gas turbine is used to preheat the<br/>incomming air which is at ambient temperature of 27°C. It is desired to cool the exhaust<br/>to 400 K, It is estimated that the overall heat transfer coefficient is 10<br/>W/m<sup>2</sup><br/>K. The heat capacity of the exhaust gases is same as that of air i.e. 1.2kJ/kgK and the<br/>mass flow rate of air is equal to that of the exhaust gas.<br/><br/>If the heat exchanger is designed as a counterflow device, the required heat transfer<br/>area is _______ m<sup>2</sup><br/>. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "180",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_146.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `It is required to weld low carbon steel plate by the manual metal arc welding process<br/>using a<br/><br/>linear VI characteristic D.C. power source.<br/><br/>The following data are available:<br/><br/>Open circuit voltages of power source = 60 V<br/><br/>Short circuit current = 130 A<br/><br/>Arc length, L = 4 mm<br/><br/>Transverse speed of welding = 15 cm/min<br/><br/>Voltage is given as V = 20 + 1.5L, where L being arc length in mm.<br/>Efficiency of<br/>heat input = 84%`,
+      image: "",
+      options: [
+        `The heat input to the workpiece is nearly 1.6 kW.`,
+        `The heat input to the workpiece is nearly 3.6 kW.`,
+        `The voltage and current of the source required are 73.67 V and 26 A respectively.`,
+        `The voltage and current of the source required are 26 V and 73.67 A respectively.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_147.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following is/are the main differences between reversed carnot cycle<br/>operating on perfect gas and wet vapour?`,
+      image: "",
+      options: [
+        `Work of isentropic compression is equal to work of isentropic expansion in case of<br/>perfect gas, but for wet vapour region the work of isentropic compression is more<br/>than work of isentropic expansion.`,
+        `Work of isentropic compression is more than work of isentropic expansion, but for<br/>wet vapour region, the work of isentropic compression is equal to isentropic<br/>expansion.`,
+        `Work during isothermal condensation and isothermal evaporation is zero for wet<br/>vapour region but for perfect gas there is work transfer during isothermal<br/>compression and expansion.`,
+        `Work during isothermal condensation and isothermal evaporation is not zero, but for<br/>perfect gas work during isothermal compression and expansion is zero.`
+      ],
+      answer: ["A", "C"],
+      solution: `(a,c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of the differential equation y′′′ − 8y′′ = 0, where <img align="absmiddle" alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_148.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_149.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_150.png"/>`,
+        `<br/><img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_151.png"/>`,
+        `None of these`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/basic_level_test4_full_syllabus_gate_2026_me/img_152.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Advance Level Test-1",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a certain code language, if the word DISTANCE is coded as EDCINSAT then ACQUIRE is<br/>coded as`,
+      image: "",
+      options: [
+        `EACIQUR`,
+        `EACRIUQ`,
+        `ERCIAQV`,
+        `EARCIQU`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_1.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<em>x</em><br/>, 17, 3<em>x</em><br/>– y – 2 and 3<em>x</em><br/>+ y – 30 are 4 consecutive terms of an arithmetic progression. The value of <em>x</em><br/>+ y is ________ .`,
+      image: "",
+      options: [],
+      answer: "29",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Karan and Arjun run a 100 m race, where Karan beats Arjun by 10 m. To do a favour to<br/>Arjun, Karan starts 10 m behind the starting line in a second 100 m race. They both run<br/>at earlier speeds.<br/>Which of the following is true in connection with the second<br/>race?`,
+      image: "",
+      options: [
+        `Karan and Arjun reach the finishing line simultaneously.`,
+        `Arjun beats Karan by 1 m`,
+        `Arjun beats Karan by 1.1 m`,
+        `Karan beats Arjun by 1 m`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the correct mirror image of the given figure when the mirror is placed to the<br/>right side of the figure.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_15.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_16.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_17.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_18.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_19.png"/>`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the pair of words which have a relationship between themselves which is similar<br/>to the relationship between the given pair:<br/>SQUANDER : MONEY ::`,
+      image: "",
+      options: [
+        `trespass : property`,
+        `dally : time`,
+        `procrastinate : task`,
+        `accomplish : success`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A structural member under loading undergoes uniform plane stress condition. At a critical<br/>point in the member, the state of stress is as shown in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_20.png"/><br/>The yield strength of material in shear is 200 MPa and Poisson ratio 0.3. If the<br/>component is designed using Haigh’s total strain energy theory, the factor of safety is`,
+      image: "",
+      options: [
+        `1.67`,
+        `0.95`,
+        `1.53`,
+        `1.03`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_21.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A straight cylindrical bar of 20 mm diameter and 1.5 m long is freely supported at its<br/>two ends in a horizontal position and loaded at the centre with the concentrated load of<br/>100 N. The central deflection is 6 mm. If the bar is now placed vertically and loaded<br/>along its axis, then ratio<br/><img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_22.png"/><br/>(<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_23.png"/><br/>are the maximum stresses in two cases) is<br/>`,
+      image: "",
+      options: [
+        `0.343`,
+        `1.812`,
+        `0.56`,
+        `2.92`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_24.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Three forces are acting in a plane as shown in figure. The moment of the net force about<br/>point <em>A</em><br/>is<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_25.png"/>`,
+      image: "",
+      options: [
+        `1214.2 N-m`,
+        `1614.2 N-m`,
+        `2628.427 N-m`,
+        `3026.427 N-m`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_26.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `An open tank has 2.0 m height and it contains water upto a depth of 1.8 m. How high must<br/>its side be (in m) if no water to be spilled out when subjected to horizontal<br/>acceleration of 4.5 m/s?<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_28.png"/>`,
+      image: "",
+      options: [
+        `2.3 m`,
+        `2.0 m`,
+        `1.8 m`,
+        `5.7 m`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 35 mm × 35 mm square blank is to be cut from a sheet metal of 2 mm thick. If the<br/>percentage penetration is 25% of the material thickness and ultimate shear stress of<br/>material is 280 N/mm<sup>2</sup><br/>, then the workdone required is`,
+      image: "",
+      options: [
+        `156.8 J`,
+        `19.6 J`,
+        `78.4 J`,
+        `39.2 J`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_30.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A steam power-plant employs a wet type cooling tower. It receives warm water at 30°C at<br/>rate of 1 kg of water per kg of air. Air enters tower at 20°C DBT and 60% RH leaves at<br/>28°C DBT 90% RH.<br/><br/>Makeup water is added at 20°C.<br/>Refer the following data:<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_32.png"/><br/>The temperature of water leaving the cooling tower is`,
+      image: "",
+      options: [
+        `10°C`,
+        `20°C`,
+        `30°C`,
+        `40°C`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A self-aligning ball bearing has a dynamic load capacity of 33.5 kN (that is, a rating of<br/>33.5 kN such that 90% of a group bearings will last 500 hours at 1800 rev/min). If the<br/>equivalent radial load actually applied to the bearing is 44.5 kN. What is the average<br/>life in hours that can be expected?`,
+      image: "",
+      options: [
+        `3.95 hours`,
+        `3.45 hours`,
+        `19.75 hours`,
+        `17.25 hours`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_34.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `1 kg of air is compressed reversibly and adiabatically from 80 kPa and 60°C to 0.4 MPa<br/>and is then expanded at constant pressure to the original volume. The net change in<br/>entropy for whole path is. (Take<br/><em><br/>C<sub>V</sub><br/></em><br/>= 0.7 kJ/kgK)`,
+      image: "",
+      options: [
+        `1153 J/K`,
+        `1127 J/K`,
+        `1027 J/K`,
+        `923 J/K`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_36.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A spray cooling coil is used to cool and dehumidify air under the following<br/>conditions:<br/><br/>Air inlet condition : 27°C DBT and 20°C WBT<br/><br/>Specific enthalpy = 65 kJ/kg of dry air, specific volume is 0.855 m<sup>3</sup><br/>/kg<br/><br/>Air output condition : 12°C DBT and 8°C WBT<br/><br/>Specific enthalpy = 20 kJ/kg of dry air<br/><br/>The total amount of air flow is 1795 m<sup>3</sup><br/>/min and the chilled water inlet and outlet temperatures are 8°C and 13°C respectively.<br/>The mass flow rate of the chilled water is<br/>[Take specific heat capacity of water =<br/>4.2 kJ/kgK]`,
+      image: "",
+      options: [
+        `75 kg/min`,
+        `4500 kg/min`,
+        `2100 kg/min`,
+        `35 kg/min`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A six cylinder, four stroke diesel engine develops 120 kW at 2500 rpm. The fuel to be<br/>injected per cycle per cylinder is 0.058 cc. If the specific gravity of the fuel is 0.8,<br/>then the brake specific fuel consumption is`,
+      image: "",
+      options: [
+        `174 kg/kWh`,
+        `174 g/kWh`,
+        `464 g/kWh`,
+        `348 kg/kWh`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Taylor’s tool life equation is given by<br/><em><br/>VT<sup>n</sup><br/></em><br/>= <em>C</em><br/>, where cutting speed V is in m/min, tool life is in min and exponent n is 0.25. If at a<br/>cutting speed of 60 m/min the tool life is of 1 hour and 20 minutes, then the cutting<br/>speed for a tool life of 1 hour will be_____ m/min. [Round off to one decimal place]`,
+      image: "",
+      options: [],
+      answer: "64.5",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two compartment A and B of the tank are closed and filled with air and a fluid shown in<br/>figure below. The fluid having the specific gravity of 0.6. If the pressure gauge reads<br/>4 kPa and weight of air is negligible, the manometer reading <em>h</em><br/>(in cm) will be _____. (Round off to nearest integer)<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_54.png"/>`,
+      image: "",
+      options: [],
+      answer: "202",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A solid square bar of length 6 m is used as a column with both ends fixed. If the end<br/>conditions are changed to one end fixed and other end free then the percentage change in<br/>the Euler’s crippling load of the column will be _____. [Round off to two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "-93.75",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thin hollow cylinder of 7 cm diameter and 11 cm length. If the radiant shape factor of<br/>the circular surface of this cylinder is 0.18 with respect to each other, then the shape<br/>factor of the curved surface of the cylinder with respect to itself is _______. (Correct<br/>upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.74",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_57.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A structure along with the loads applied on it is shown in the figure below.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_59.png"/><br/>The magnitude of force in the member <em>AB</em><br/>is ____ kN. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "25",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In an inline slider crank mechanism the crank radius is 9 cm and the connecting rod<br/>length is 52 cm. If net effective piston force at 90° of the crank rotation from inner<br/>dead centre is 957 kN, then the magnitude of the crankshaft bearing reaction is _____<br/>kN. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "168.17",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For an activity, the optimistic, pessimistic and most likely times are 3, 13 and 8 days<br/>respectively.<br/>The probability of completing the project before 9.4 days is<br/>________%. [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "80",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An SI engine develops 70 kW of indicated power at full load. Its brake specific fuel<br/>consumption is 0.28 kg/kWh. At 60% load, the mechanical efficiency is 50%. Assuming<br/>constant frictional losses, the indicated specific fuel consumption at full load is<br/>________ kg/kWh. (Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.175",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The demand for six consecutive months for a product are 10, 12, 11, 15, 13, 9<br/>respectively. Using the three-month simple moving average forecasting method, the Bias<br/>for last three months is _______. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.11",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_64.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The monthly demand for an item is 800 units. If the annual procurement cost is <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_66.png"/><br/>and the economic order quantity is 640 units. Then the inventory Carrying cost per unit<br/>per month is <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_67.png"/>_______<br/>[Round off to three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.156",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_68.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `The inside and outside diameter of a hollow spherical shell are 1.2 m and 1.6 m<br/>respectively. The shell stores a liquid at 270°C, while the outside surface temperature<br/>of the shell is 90°C. If the thermal conductivity of shell, <em>k</em><br/>= 48(1 + 2 × 10<sup>–3</sup><br/>× <em>T</em><br/>) where, T is in degree Celsius and the ambient temperature of air is 27°C. [Neglect the<br/>radiation heat transfer]`,
+      image: "",
+      options: [
+        `The outside heat transfer coefficient is 700 W/m<sup>2</sup><br/>K.`,
+        `The outside heat transfer coefficient is 777 W/m<sup>2</sup><br/>K.`,
+        `The rate of heat conduction is 354.38 kW.`,
+        `The rate of heat conduction is 254.38 kW.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_69.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_70.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Which of the following statements is/are correct corresponding to impulse and reaction<br/>machines?`,
+      image: "",
+      options: [
+        `For impulse machine the change in static head in the rotor is zero.`,
+        `The lawn sprinkler is an example of impulse machine.`,
+        `A paddle wheel rotated by the impingement of water from a stationary nozzle is an<br/>example of reaction machine.`,
+        `The ratio of energy transfer by the change in static head to the total energy<br/>transfer in the rotor is as the degree of reaction.`
+      ],
+      answer: ["A", "D"],
+      solution: `(a,d)`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The eigen values of the matrix <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_102.png"/><br/>are in ratio 1 : 1 : 4. If ‘a’ is a positive real number, then the value of ‘<em>a</em><br/>’ will be ________.`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `It is given that the solution of the differential equation <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_132.png"/>passes<br/>through origin. The value of y(2) will be ________. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "6.40",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_133.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The velocity of a particle starting from rest is given at different instants as shown in<br/>the table below:<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_134.png"/><br/>Here, time <em>t</em><br/>is in minutes and velocity <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_135.png"/><br/>is in m/mins. Using Simpson’s <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_136.png"/>rule,<br/>the distance travelled by the particle in 20 minutes is ________ m. (Correct upto two<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "309.33",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_137.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<em>ABCDEF</em><br/>is a regular hexagon of side 6 cm. What is the area of triangle <em>BDF</em><br/>?<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_2.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_3.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_4.png"/>`,
+        `24 cm<sup>2</sup>`,
+        `None of these`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_5.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If log<sub>3</sub><br/>2, log<sub>3</sub><br/>(2 <sup>x</sup><br/>– 5) and log<sub>3</sub><br/>(2 <sup>x</sup><br/>– 7/2) are in <em>AP</em><br/>, then <em>x</em><br/>is equal to`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `either of (a) or (b)`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a group of 132 people; 50, 60, 70 people like different sweets – Barfi, Jalebi,<br/>Rasgulla respectively. The number of people who like all the three sweets is half the<br/>number of people who like exactly 2 sweets. The number of people who like Barfi and<br/>Jalebi only, Jalebi and Rasgulla only and Barfi and Rasgulla only is same. The number of<br/>people who like all the three sweets are ________.`,
+      image: "",
+      options: [],
+      answer: "12",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If a ,<br/><em><br/>a<sub>2</sub><br/></em><br/>,<br/><em><br/>a <sub>3</sub><br/></em><br/>...........<br/><em><br/>a<sub>n</sub><br/></em><br/>are in <em>AP</em><br/>, where a <sub>i</sub><br/>&gt; 0 for all <em>i</em><br/>, then the value of <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_9.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_10.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_11.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `None of these`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_13.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In film and videotape, it is possible to induce viewers to project their feelings onto<br/>characters on the screen. In one study, when a camera shot of a woman’s face was<br/>preceded by a shot of a baby in a crib, the audience thought the woman’s face was<br/>registering happiness. When the same shot of the woman’s face was preceded by a shot of<br/>a lion running toward the camera, the audience thought the woman’s face was registering<br/>fear. Television news teams must be careful to avoid such manipulation of their<br/>viewers.<br/>Which of the following can be inferred from the passage?`,
+      image: "",
+      options: [
+        `Television news teams have abused their position of trust in the past`,
+        `The expression on the woman’s face was, in actuality, blank.`,
+        `A camera shot of a baby in a crib provoked feelings of happiness in the audience.`,
+        `Audiences should strive to be less gullible.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The directional derivative of <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_39.png"/><br/>in the direction of <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_40.png"/>will<br/>be`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_41.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_42.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_43.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_44.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_45.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The solution of differential equation <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_46.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_47.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_48.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_50.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_51.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_52.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The directional derivative of <em>xy</em><br/><sup>3</sup><br/>z<sup>2</sup><br/>at the point (1, 1, –1) in the direction of the tangent to the curve <em>x</em><br/>=<br/><em><br/>e<sup>t</sup><br/></em><br/>, <em>y</em><br/>= sin2<em>t</em><br/>+ 1, z = 1 – cost at <em>t</em><br/>= 0, is ________ .`,
+      image: "",
+      options: [],
+      answer: "3.13",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_71.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rolling disc of radius ‘<em>r</em><br/>’ and mass ‘<em>m</em><br/>’ is connected using two springs of stiffness ‘<em>s</em><br/>’ and ‘2s’ as shown in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_72.png"/><br/>The natural frequency of the system for small rotation of disc is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_73.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_74.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_75.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_76.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_77.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_78.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Which of the following APT program is incorrect regarding entities shown in figure below?<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_79.png"/>`,
+      image: "",
+      options: [
+        `C4 = CIRCLE/ YSMALL, LN1, YSMALL, LN2, RADIUS,30`,
+        `C1 = CIRCLE/ XSMALL, LN1, YSMALL, LN2, RADIUS,10`,
+        `C2 = CIRCLE/ YLARGE, LN1, YLARGE, LN2, RADIUS,10`,
+        `P = POINT/ INTOF, LN1, LN2`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `One mole of an ideal gas undergoes two different cyclic processes I and II, as shown in<br/>the P-V diagram below. In Cycle I, processes <em>a</em><br/>, <em>b</em><br/>, <em>c</em><br/>and <em>d</em><br/>are isobaric, isothermal, isobaric and isochoric respectively. In cycle II, processes<br/><em>a</em><br/>′, <em>b</em><br/>′, <em>c</em><br/>′ and <em>d</em><br/>′ are isothermal, isochoric, isobaric and  sochoric respectively.<br/><img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_80.png"/><br/>The total work done during cycle-I is<br/><em><br/>W<sub>I</sub><br/></em><br/>and that during cycle II is<br/><em><br/>W<sub>II</sub><br/></em><br/>. The ratio <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_81.png"/>is`,
+      image: "",
+      options: [
+        `5`,
+        `4`,
+        `3`,
+        `2`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_82.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_83.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A compound shaft of circular cross-section is made up of two different materials as shown<br/>in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_84.png"/><br/>If a torque of 200 Nm is applied at point B, the maximum shear stress developed in the<br/>compound shaft is`,
+      image: "",
+      options: [
+        `10 MPa`,
+        `15 MPa`,
+        `25 MPa`,
+        `35 MPa`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_85.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A Joule cycle operates with air as the working fluid. The maximum temperature in the<br/>cycle is 1600 K, while the temperature and pressure before compression are 400 K and 1<br/>bar. If the pressure ratio is 8, then the mean-effective pressure of the cycle is<br/><br/>[Take γ = 1.5 and R = 0.3 kJ/kgK,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1 kJ/kgK]`,
+      image: "",
+      options: [
+        `2 MPa`,
+        `190.5 kPa`,
+        `22 bar`,
+        `1.2 bar`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_87.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Copper and nickel are found to form an alloy, more specifically a substitutional solid<br/>solution.<br/>These two elements are completely soluble in one another at all<br/>proportions. Which of the following reasons can not be attributed to the formation of<br/>such an alloy?`,
+      image: "",
+      options: [
+        `The atomic radii of Cu and Ni atoms are approximately the same.`,
+        `Both Cu and Ni have FCC crystal structure.`,
+        `Cu is electropositve while Ni is electronegative favouring the formation of alloy.`,
+        `Most common valences is +1 for Cu and +2 for Ni.`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The annulus gear <em>A</em><br/>to be fixed gear, <em>P</em><br/>and <em>C</em><br/>constitute a compound planet having 25 and 15 teeth respectively. The figure shows a<br/>reduction gear with the input gear S having 25 teeth and output gear <em>D</em><br/>. If all the gears are of the same pitch, then the speed ratio of the reduction gear is<br/>____.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_89.png"/>`,
+      image: "",
+      options: [
+        `12`,
+        `15`,
+        `13`,
+        `14`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Match <strong>List I (Machining processes)</strong><br/>with <strong>List II (Applications)</strong><br/>and select the correct answer using the codes given below.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_91.png"/>`,
+      image: "",
+      options: [
+        `P-4, Q-2 , R-1 , S-1`,
+        `P-4, Q-1, R-2, S-3`,
+        `P-1, Q-2, R-4 , S-3`,
+        `P-3, Q-1 , R- 4, S-2`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cylindrical tank of 1 m diameter is 4 m long and 40 mm thick and is subjected to an<br/>internal pressure of 2 MPa. If the axial compressive load of 400 kN is applied on the<br/>tank, then increase in capacity of the tank will be<br/><br/>[Take, <em>E</em><br/>= 200 GPa, and μ = 0.3]`,
+      image: "",
+      options: [
+        `7.26 × 10<sup>–4</sup><br/>m<sup>3</sup>`,
+        `4.21 × 10<sup>–4</sup><br/>m<sup>3</sup>`,
+        `12.79 × 10<sup>–4</sup><br/>m<sup>3</sup>`,
+        `6.42 × 10<sup>–4</sup><br/>m<sup>3</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Water in a tank is maintained at a constant head of 4 m. It is discharged through a<br/>horizontal pipe 100 m long and 100 mm in diameter. A valve is provided at the end of the<br/>pipe to control the discharge. When the valve is half open, the discharge is 12 ×<br/>10<sup>–3</sup><br/>m/s, then find the loss coefficient of the valve.<br/>[Take friction factor of 0.026]`,
+      image: "",
+      options: [
+        `3.32`,
+        `4.13`,
+        `7.11`,
+        `9.36`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A bracket is welded to a vertical plate by means of two fillet welds as shown in the<br/>figure. If the shear-strength of weld material is 150 MPa and FOS = 2, then the size of<br/>the weld is<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_94.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_95.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_96.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_97.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_98.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_99.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A function <em>f</em><br/>(<em>x</em><br/>) is defined as <em>f</em><br/>(<em>x</em><br/>) = 3<em>x</em><br/><sup>4</sup><br/>– 2<em>x</em><br/><sup>3</sup><br/>– 6<em>x</em><br/><sup>2</sup><br/>+ 6x + 1, 0 ≤ <em>x</em><br/>≤ 2. The minimum value of <em>f</em><br/>(<em>x</em><br/>) is`,
+      image: "",
+      options: [
+        `0`,
+        `1`,
+        `2`,
+        `21`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_100.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The percentage change in efficiency of Pelton wheel , if blade speed changes from 45% of<br/>incoming jet speed with blade friction coefficient of 0.95 to 55% of incoming jet speed<br/>with blade friction coefficient 0.90 is ________ % (Correct upto two decimal<br/>places)<br/>[Take exit blade angle as 15°]`,
+      image: "",
+      options: [],
+      answer: "-2.52",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_104.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A cantilever beam of length 3 m (with rigid portion of 1 m at middle) is subjected to a<br/>point load of 1 kN at its free end, as shown. If non rigid portion have Young’s modulus<br/>of <em>E</em><br/>. The deflection of free end is ______ mm (Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_105.png"/><br/>Take <em>E</em><br/>= 200 GPa, <em>I</em><br/>= 8000 × 10<sup>4</sup><br/>mm<sup>4</sup>`,
+      image: "",
+      options: [],
+      answer: "0.42",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_106.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The crankpin circle radius of a horizontal engine is 150 mm. The mass of the<br/>reciprocating parts is 250 kg. When the crank has traversed 45° from IDC, the difference<br/>between the driving and back pressure is 0.35 N/mm<sup>2</sup><br/>. The connecting rod length between centres is 0.6 m and the cylinder bore is 0.25 m. If<br/>the engine runs at 300 rpm and the effect of piston rod diameter is neglected then the<br/>pressure on the slide bar is ______ kN. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.61",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A brake drum of 400 mm diameter is braked by a cast iron shoe having a coefficient of<br/>friction 0.3. The force is applied at 800 mm away from center line of the drum as shown<br/>in figure. The pivot is 300 mm away from central axis on the other side and 10 mm below<br/>the surface of drum.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_110.png"/><br/>For applying a braking torque of 500 Nm, the magnitude of the difference in required<br/>force <em>F</em><br/>for clockwise and anti-clockwise rotation will be ______ N. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "45.45",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_111.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The precedence relationship for Eight-activities is given below:<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_112.png"/><br/>The ratio of Free float to Independent float of activity ‘<em>H</em><br/>’ is ___. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.75",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Water flowing through a pipe of diameter 200 mm with a nozzle at the exit having exit<br/>diameter 100 mm. The velocity of water in the pipe is 1 m/s. The absolute pressure in<br/>the pipe is 200 kPa and atmospheric pressure is 100 kPa.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_114.png"/><br/>The horizontal clamping force (<em>F</em><br/>) required to hold the pipe is _____ kN. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "5.40",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_115.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A thin tube is of 5 cm mean diameter, 0.25 cm thick, and 100 cm long. The torsional<br/>strength (N-m) per unit weight (N) of tube is _____ m. (Correct upto one decimal<br/>place) [Take shear strength of shaft material as 160 MPa, ρ = 7800 kg/m<sup>3</sup><br/>and FOS as 4]`,
+      image: "",
+      options: [],
+      answer: "13.1",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For a top gated steel casting, the gating ratio is 1 : 2 : 1.5. A steel casting of mass<br/>50 kg is to be produced with density 2600 kg/m<sup>3</sup><br/>. The pouring time is 15 sec and sprue height is 250 mm. If the efficiency factor is<br/>0.89, then the diameter of the in-gate is ______ cm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "3.52",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_117.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A shell and tube heat exchanger is used to condensate an organic vapour at a rate of 500<br/>kg/min at its saturation temperature of 355 K. Cooling water at 286 K is available with<br/>a mass flow rate of 60 kg/s. The overall heat transfer coefficient is 475<br/>W/m<sup>2</sup><br/>K and the latent heat of condensation of the vapour is 600 kJ/kg. The logarithmic mean<br/>temperature difference (LMTD) for this heat exchanger is ______ °C. [Correct upto two<br/>decimal places]`,
+      image: "",
+      options: [],
+      answer: "58.49",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_119.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A frictionless vertical piston-cylinder assembly fitted with an electrical resistor<br/>contains air. The mass and face area of the piston are 60 kg and 0.2 m<sup>2</sup><br/>respectively. The atmospheric pressure is 100 kPa. Electric current is passed through<br/>the resistor causing an increase of 0.06 m<sup>3</sup><br/>in the<br/>volume of air. The mass of air is 0.5 kg. Due of heating, the specific<br/>internal energy of the air increases by 45 kJ/kg. Assuming the assembly to be insulated.<br/>The heat transfer from the resistor to the system (air and the piston) is _____ kJ.<br/>[Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "28.677",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_120.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An ammonia refrigerator works between –5°C and 27°C. The vapour is dry saturated at the<br/>end of compression. If the power required to drive the compressor is 2.7 kW.<br/><br/>Use the following properties of NH<sub>3</sub><br/>:<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_121.png"/><br/>The cooling capacity of the refrigerator is ________ tons. [Correct upto one decimal<br/>place]`,
+      image: "",
+      options: [],
+      answer: "4.5",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_122.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A steam power plant operates on an Rankine cycle with superheat. The boiler pressure is<br/>5 MPa and the boiler exit temperature is 600°C. The boiler receives heat from a source<br/>at 700°C. The ambient air at 20°C provides cooling in order to maintain the condenser at<br/>45°C. All components are ideal. The processes in all the four components are steady<br/>state processes with negligible changes in kinetic and potential energies. Assume that<br/>the pump handles an incompressible liquid of specific volume 0.00101 m<sup>3</sup><br/>/kg.<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_123.png"/><br/>The following thermodynamic properties of water may be useful:<br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_124.png"/><br/><br/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_125.png"/><br/>The specific steam consumption of plant is ______ kg/kWh. (Correct upto three<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "2.634",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_126.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The arms of Hartnell governor are of equal length. The mass of each ball is 8.2 kg. The<br/>midposition speed (when arms are vertical) is 360 rpm. The extreme radii of rotation are<br/>90 mm and 60 mm respectively. The maximum variation of speed, including sleeve friction<br/>is 6% of midposition speed. The sleeve mass is 5 kg and the friction at the sleeve is 35<br/>N. Which of the following statements is/are correct?`,
+      image: "",
+      options: [
+        `Spring stiffness is 35.045 N/mm`,
+        `Initial compression is 34.86 mm`,
+        `Maximum spring force is 1223.2 N`,
+        `Data is insufficient for calculation of spring stiffness.`
+      ],
+      answer: ["A", "B"],
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_127.png"/><img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `The voltage length characteristic of a DC arc welding is given by V = (20 + 4l) volts,<br/>where l is the length of arc in mm. The arc length varies between 0.4 cm and 0.6 cm. The<br/>power source characteristic is given by <img align="absmiddle" alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_129.png"/>then<br/>the welding current for the arc length variation will be`,
+      image: "",
+      options: [
+        `626 A for 0.4 cm`,
+        `670 A for 0.4 cm`,
+        `670 A for 0.6 cm`,
+        `626 A for 0.6 cm`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_130.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two persons <em>A</em><br/>and <em>B</em><br/>toss an unbiased coin alternatively and whoever gets the first head, wins the game. If<br/><em>A</em><br/>starts the game, then the ratio of probabilities of <em>A</em><br/>’s winning to <em>B</em><br/>’s winning is _______.`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/advance_level_test1_full_syllabus_gate_2026_me/img_131.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Advance Level Test-2",
+  date: "July 29, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<em>R</em><br/>, <em>S</em><br/>and <em>H</em><br/>enter into a partnership and their capitals are in the proportion of <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_8.png"/><br/><em>R</em><br/>withdraws half his capital at the end of 4 months. Out of total annual profit of <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_9.png"/><br/><em>R</em><br/>’s share is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_10.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_11.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_12.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_13.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_14.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A messenger was returning to his base station which was in front of him to the north.<br/>When this base station was 100 m away from him, he turned to the left and moved 50 m to<br/>deliver the last message to the Peshwa’s troops. He then moved in the same direction for<br/>40 m, turned to his<br/>right and moved 100 m. How many meters away he is now from his<br/>base station?`,
+      image: "",
+      options: [
+        `0`,
+        `150`,
+        `90`,
+        `100`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_16.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A person starts typing the numbers from 1 to 1999. He press the keys total ‘n’ number of<br/>times.<br/><br/>The value of <em>n</em><br/>is`,
+      image: "",
+      options: [
+        `6889`,
+        `1000`,
+        `2888`,
+        `none of these`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Choose the most appropriate word from the options given below to complete the following<br/>sentence.<br/>Based on his recent poor decisions, it was obvious that Seth lacked even<br/>a _____ of good sense.`,
+      image: "",
+      options: [
+        `debasement`,
+        `diversion`,
+        `disapprobation`,
+        `modicum`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If you are a brisk walker, there is no need to go to a gym. Your neighbourhood can<br/>become your gym. You don’t need fancy equipment to get a good exercise either. All you<br/>need is a welldesigned pair of shoes.<br/>The paragraph best supports the statement<br/>that`,
+      image: "",
+      options: [
+        `poorly designed shoes can cause major foot injuries.`,
+        `walking outdoors provides a better workout than walking indoors.`,
+        `a gym membership is a poor investment.`,
+        `brisk walking is a convenient and valuable form of exercise`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A four-stroke, single cylinder petrol engine has a compression ratio of 7 and produces 35<br/>kW of brake power. The relative efficiency with respect to indicated thermal efficiency<br/>is 0.56 and mechanical efficiency is 81%. The heating value of the fuel is 42000 kJ/kg.<br/>Assuming air-standard cycle, the indicated specific fuel consumption of the engine is`,
+      image: "",
+      options: [
+        `0.349 kg/kWhr`,
+        `0.223 kg/kWhr`,
+        `0.283 kg/kWhr`,
+        `0.153 kg/kWhr`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_19.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The degree of freedom of the given linkage is :<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_20.png"/>`,
+      image: "",
+      options: [
+        `-1`,
+        `0`,
+        `1`,
+        `2`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_21.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 100 kg mass is supported by cables as shown in the figure. Determine tension in cables<br/>CB and DE.<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_23.png"/>`,
+      image: "",
+      options: [
+        `0 N, 230 N`,
+        `0 N, 304 N`,
+        `566 N, 304 N`,
+        `1132 N, 230 N`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_24.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_25.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following heat treatment method is commonly used for strengthening the<br/>nonferrous alloys?`,
+      image: "",
+      options: [
+        `Flame hardening`,
+        `Nitriding`,
+        `Cyaniding`,
+        `Precipitation hardening`
+      ],
+      answer: "D",
+      solution: `(d)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A tension test is carried on a metal sample and it is found that there is a strain of<br/>0.0075 at a corresponding stress 480 N/mm<sup>2</sup><br/>. On the removal of the load a permanent strain of 0.0013 is found to be present. The<br/>value of modulus of elasticity for the metal is`,
+      image: "",
+      options: [
+        `77.4 GPa`,
+        `83.4 GPa`,
+        `93.4 GPa`,
+        `104.4 GPa`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_26.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_27.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a perfect gas (<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1 kJ/kgK and <em>R</em><br/>= 0.3 kJ/kgK), the ratio of static pressure to critical pressure at Mach number of 1.5<br/>is`,
+      image: "",
+      options: [
+        `0.500`,
+        `0.515`,
+        `0.547`,
+        `1.939`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the radial load acting on a ball bearing is reduced by 50%, then for same rated<br/>bearing life, the dynamic load carrying capacity of the bearing will`,
+      image: "",
+      options: [
+        `reduce by 50%`,
+        `increase by 50%`,
+        `remain constant`,
+        `increase of 150%`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A cube of side 1 cm of certain material has isothermal compressibility of 6.5 ×<br/>10<sup>–12</sup><br/>Pa<sup>–1</sup><br/>and volume expansivity of 35 × 10<sup>–6</sup><br/>K<sup>–1</sup><br/>at 27°C. The magnitude of the difference between specific heat capacities of the<br/>material is<br/><br/>[Take ρ = 7.8 gm/cm<sup>3</sup><br/>]`,
+      image: "",
+      options: [
+        `0.00725 KJ/kgK`,
+        `0.7 KJ/kgK`,
+        `0.17 KJ/kgK`,
+        `0.007 KJ/kgK`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A thermocouple is used to measure the temperature of gas flowing through a duct records<br/>280°C.<br/><br/>The emissivity of thermocouple junction is 0.4 and the convective film coefficient of<br/>heat transfer between gas and junction is 150 W/m<sup>2</sup><br/>K. If the temperature of duct wall is 140°C, then the true temperature of the gas is`,
+      image: "",
+      options: [
+        `290°C`,
+        `320°C`,
+        `343°C`,
+        `400°C`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_31.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a supermarket customers arrives at the counter in Poisson fashion with mean rate of 12<br/>customers per hour. Assume service time are exponentially distributed. To ensure a<br/>probability of 80% that a customer will not have to wait in the system longer than 10<br/>minutes, the rate at which the clerk must have to work will be`,
+      image: "",
+      options: [
+        `15 customers/hour`,
+        `21.65 customers/hour`,
+        `81.65 customers/hour`,
+        `1 customer/hour`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <em>A</em><br/>is a 3 × 3 real matrix with eigen values 1, 2 and 3, then the matrix <em>A</em><br/>satisfies`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_34.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_35.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_36.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_37.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_38.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a 90° bending of steel sheet of thickness 1.5 mm in a U die (use k = 0.67). The die<br/>opening can be taken as 10 times the thickness, and length of the bent part is 1.5 m. If<br/>the ultimate tensile strength of steel is 500 MPa, then the force required for bending<br/>will be _____ kN. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "75.37",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The braking torque required to stop drum is 3000 Nm. If the radius of drum is 300 mm and<br/>ratio of tension in tight and slack side is 2.5, then the minimum force (F) required to<br/>stop the drum is _______ N. [Round off to nearest integer]<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_45.png"/>`,
+      image: "",
+      options: [],
+      answer: "1716",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_46.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A simply supported massless beam with overhang is subjected to point load <em>P</em><br/>at its mid-span as shown in the figure. If the magnitude of deflection at free end of<br/>the overhang equals to the magnitude of deflection at mid span, then the ratio <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_47.png"/>is<br/>______ (Correct upto three decimal places)<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_48.png"/>`,
+      image: "",
+      options: [],
+      answer: "0.667",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In a resistance seam welding process the current and Voltage supply are 200 A and 20 V<br/>respectively. The disc electrode has a diameter 4.2 cm. The heat required for melting is<br/>180 J/mm and the melting efficiency is 80%. The rotational speed of disc electrode is<br/>_______ rpm.<br/>[Round off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_50.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider thin cylindrical pressure vessel of 1.2 m external diameter, 2 m length and 5<br/>mm thickness.<br/>It is filled with fluid under pressure until its volume increases by<br/>50 cubic centimeters. If modulus of rigidity is 85 GPa and Poisson’s ratio is 0.3, then<br/>the fluid pressure is _______ kPa. (Round off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "22",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A slider is sliding on a rotating link as shown in figure.<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_52.png"/><br/>At the instant shown the radial position, <em>r</em><br/>= 1 m,<br/><br/><em>v</em><br/>= (3<em>r</em><br/><sup>2</sup><br/>+ 4 r) m/s, where; v is relative velocity of slider with respect to rotating link; r =<br/>radial<br/><br/>distance of slider from centre of rotation.<br/><br/>and ω = (3θ<sup>2</sup><br/>+ 1.2θ + 5) rad/s<br/><br/>where; θ is angle of rotating link from ‘y-axis’ in clockwise-direction.<br/><br/>The magnitude of the coriolis acceleration of the link for the given position is ______<br/>m/s<sup>2</sup><br/>. [Round off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "200",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In electrochemical machining of a pure-iron workpiece the current supplied is 2500A.<br/>Take atomic weight, Valency and density of iron as 56 g/mol, 2 and 7.78 g/cm<sup>3</sup><br/>respectively. The material removal rate is ______ g/s. [Round off to one decimal place)`,
+      image: "",
+      options: [],
+      answer: "0.73",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The average demand for an item is 132 units/year. The monthly demand during lead time<br/>follows normal distribution with average of 11 units and standard deviation of 3 units .<br/>The lead time is 3 months. The reorder level to maintain 80% service level is ______<br/>units. [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "38",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The following data are given for a liquid at different temperature.<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_56.png"/><br/>The enthalpy of vaporization of the liquid at 20°C is ______ kJ/kg.<br/>(Correct upto<br/>two decimal places)`,
+      image: "",
+      options: [],
+      answer: "181.92",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_57.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_58.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A project consist of the following activities with their immediate predecessors :<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_59.png"/><br/>The number of dummy activities required in the project network diagram is<br/>__________.<br/>[Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 30 wt% Pb-70wt.% Mg alloy is heated to a temperature within the α-liquid phase region.<br/>At this temperature the mass fraction of α-phase is 0.64 and the mass fraction of liquid<br/>phase is 0.36. If the composition of the α-phase is 10 wt.%. Pb-90wt%, Mg then`,
+      image: "",
+      options: [
+        `the Composition of Liquid phase Contains 65.55% Mg.`,
+        `the composition of Liquid phase Contains 65.55% Pb.`,
+        `the composition of liquid phase contains 41.25% Pb.`,
+        `the composition of liquid phase contains 58.75% Mg.`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_61.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A pair of spur gears having 12 and 14 teeth are rotating with interference. The module as<br/>well as addendum of both the gears is 12.5 mm and pressure angle is 15°. To avoid<br/>interference keeping the gear ratio same, which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `The minimum number of teeth on the larger gear is 26.`,
+        `The minimum number of teeth on the smaller gear 23.`,
+        `The minimum number of teeth on the larger gear 28.`,
+        `The minimum number of teeth on the smaller gear 24.`
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_62.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_63.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The angle between the tangents to the curve <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_64.png"/><br/>at the point <em>t</em><br/>= ±1 is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_65.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_66.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_67.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_68.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_69.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The solution of the ordinary differential equation <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_102.png"/>`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_103.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_104.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_105.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_106.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `What is the value of the following expression?<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_1.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_2.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_3.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_4.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_5.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A student took five papers in an examination, where the full marks were the same for each<br/>paper. His marks in these papers were in the proportion of 6 : 7 : 8 : 9 : 10. In all<br/>papers together, the candidate obtained 60% of the total marks. Then the number of<br/>papers in which he got more than 50% marks is`,
+      image: "",
+      options: [
+        `2`,
+        `3`,
+        `4`,
+        `5`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_7.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For this question, you have to base your conclusion on the three premises (viz: 1, 2 and<br/>3). Assuming the facts in the statements to be true, which of the following conclusions<br/>logically follows from the statements?<br/><br/><strong>Statements:</strong><br/><br/><br/>1. Some cakes are bikes<br/><br/>2. Some bikes are hills<br/><br/>3. All laptops are bikes<br/><br/><strong>Conclusions:</strong><br/><br/><br/>I. All laptops are hills<br/><br/>II. Some laptops are cakes<br/><br/>III. Some cakes are hills<br/>IV. Some laptops are not cakes`,
+      image: "",
+      options: [
+        `Only I follows`,
+        `Only either II or IV follows`,
+        `Only I or II follows`,
+        `Only I and IV follows`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_15.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Below is a sentence of which some parts have been jumbled up. Rearrange these parts<br/>which are labelled <em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>and <em>S</em><br/>to produce the correct sentence. Choose the proper sequence. It would<br/><br/>P : that they were quite in the dark<br/><br/>Q : about the policy of management<br/><br/>R : appear from their statement<br/><br/>S : in dealing with the strike<br/>The proper sequence should be`,
+      image: "",
+      options: [
+        `S R P Q`,
+        `R P Q S`,
+        `S Q R P`,
+        `R S Q P`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `How many triangles are there in the following figure?<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_17.png"/>`,
+      image: "",
+      options: [
+        `6`,
+        `10`,
+        `11`,
+        `12`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_18.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_39.png"/>is`,
+      image: "",
+      options: [
+        `log(2)`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_41.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_42.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_43.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A uniform beam <em>AB</em><br/>of mass <em>m</em><br/>and length <em>L</em><br/>is suspended at one end by hinge and at the other end by cable, as shown in the figure.<br/>The cable is suddenly cut and the beam begins to rotate freely about the hinge<br/><em>A</em><br/>under gravity. The magnitude of reaction offered by the hinge at the instant<br/>when<br/>the beam makes an angle of 60° with horizontal is<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_70.png"/>`,
+      image: "",
+      options: [
+        `mg`,
+        `0.125 mg`,
+        `2.17 mg`,
+        `3.25 mg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_71.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_72.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A metal wire of 6 mm diameter is drawn into 5 mm diameter at a speed of 1.1 m/s. The<br/>relation between true stress and true strain for the metal is given as σ =<br/>900∈<sup>0.5</sup><br/>MPa. The power required for the wire drawing operation is`,
+      image: "",
+      options: [
+        `2853 W`,
+        `2594 W`,
+        `7113 W`,
+        `7825 W`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_73.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid insulated cylinder is divided into two compartment A and B each of volume 0.1<br/>m<sup>3</sup><br/>by an adiabatic partition. The two compartments contain air at 1 bar, 27°C and 5 bar,<br/>127°C respectively if the partition is removed, then the irreversibility in the process<br/>due to mixing will be<br/>[Take atmospheric temperature to be 27°C]`,
+      image: "",
+      options: [
+        `9.25 kJ`,
+        `10.25 kJ`,
+        `12.55 kJ`,
+        `15.55 kJ`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_74.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_75.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A hemispherical tank of radius <em>R</em><br/>has an orifice of area ‘a’ located at the bottom. The coefficient of discharge of the<br/>orifice is <em>Cd</em><br/>. Initially, the tank is completely full of water, and the water drains out through the<br/>orifice under gravity. The time taken to completely empty the tank is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_76.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_77.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_78.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_79.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_80.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_81.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An optimal cylindrical side riser of diameter 22 cm is used to feed a slab casting 30 ×<br/>30 × 10 cm<sup>3</sup><br/>. The casting is kept horizontal when molten metal (aluminium) is poured. Using Caine’s<br/>method for riser design, determine the value of constant c in the Caine’s empirical<br/>relation.<br/><img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_82.png"/><br/>For Aluminium, <em>a</em><br/>= 0.1 and <em>b</em><br/>= 0.06`,
+      image: "",
+      options: [
+        `1.107`,
+        `0.843`,
+        `0.703`,
+        `1.13`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_83.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A thin walled cylindrical tube of internal diameter 180 mm and 12 mm wall thickness is<br/>closed at both ends and is subjected to an internal pressure of 8 MPa. If a torque of<br/>5000 N-m is also applied to the tube, then which of the following option regarding given<br/>situation is incorrect?`,
+      image: "",
+      options: [
+        `Maximum shear stress is 16.64 MPa`,
+        `longitudinal stress is 30 MPa`,
+        `Major principal stress is 51.64 MPa`,
+        `Minor principal stress is 28.36 MPa`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_84.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For the given mechanism shown below:<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_85.png"/><br/>The link joining sliders <em>S</em><br/><sub>1</sub><br/>and <em>S</em><br/><sub>2</sub><br/>is of 12 cm length and having a constant angular velocity of 5 rad/s with respect to<br/>slotted plate. Another link of length 33 cm from the mid point of link joining<br/><em>S</em><br/><sub>1</sub><br/>and <em>S</em><br/><sub>2</sub><br/>is connected to <em>S</em><br/><sub>3</sub><br/>.<br/><br/>The quick return ratio of slider <em>S</em><br/><sub>3</sub><br/>is`,
+      image: "",
+      options: [
+        `1.5`,
+        `2.2`,
+        `1.04`,
+        `0.83`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_86.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A cylindrical bar is to be turned with maximum allowable feed of 0.12 mm/rev. At this<br/>feed rate the Taylor’s tool life equation is given as <em>VT</em><br/><sup>0.2</sup><br/>= 60 when <em>V</em><br/>is Cutting speed in m/min and <em>T</em><br/>is tool Life in minutes. The labour and overhead cost is <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_87.png"/><br/>and the total cost per grinding is <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_88.png"/>The<br/>average tool change time is 4 minutes. The difference in cutting speeds corresponding to<br/>minimum cost and maximum production rate is`,
+      image: "",
+      options: [
+        `24.52 m/min`,
+        `11.01 m/min`,
+        `34.46 m/min`,
+        `9.95 m/min`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_89.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A beam of length 4 m is loaded as shown. The deflection in the beam at a distance of 1.5<br/>m from support A is<br/><br/>[Take Young’s modulus as 200 GPa and moment of inertia as 20 ×10<sup>6</sup><br/>mm<sup>4</sup><br/>]<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_90.png"/>`,
+      image: "",
+      options: [
+        `3.13 mm`,
+        `2.84 mm`,
+        `1.93 mm`,
+        `2.87 mm`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_91.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A water tank (Specific weight of water, γ = 9.81 kN/m<sup>3</sup><br/>) consists of two half cylindrical shells, each weighing 20 kN, bolted together by five<br/>bolts as shown in figure below. If the end caps are neglected and the diameter of the<br/>water tank is 8 m, then the force in each bolt is<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_93.png"/>`,
+      image: "",
+      options: [
+        `99 kN`,
+        `125.5 kN`,
+        `123.5 kN`,
+        `74.25 kN`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_94.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_95.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A gas turbine cycle working between pressure limits of 1 bar and 27 bar. The compression<br/>process follows the law <em>pv</em><br/><sup>1.2</sup><br/>= c. The expansion process takes place in a perfectly insulated turbine having an<br/>isentropic efficiency of 90%. Which of the following T-s diagram correctly represents<br/>the cycle processes?<br/><br/>[Take<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK and <em>R</em><br/>= 0.287 kJ/kgK]`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_96.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_97.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_98.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_99.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_100.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_101.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Three white and three black balls, kept in three bins are arranged in four ways as shown<br/>below.<br/>In each arrangement, a bin has to be chosen randomly and only one ball needs<br/>to be picked randomly from the chosen bin. Which of the following arrangements has the<br/>probability for getting a white ball picked less than or equal to 0.5?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_109.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_110.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_111.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_112.png"/>`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_113.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A tube of length 5 m and diameter 2 cm is maintained at 100°C by steam jacketing. A<br/>fluid enters the tube at 30°C and flows at a mass flow rate of 2940 kg/h. The average<br/>convective heat transfer coefficient for the flow inside the tube is _______<br/>W/m<sup>2</sup><br/>K. (Correct upto one decimal place)<br/><br/>[Take ρ = 850 kg/m<sup>3</sup><br/>, ν = 5.1 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s, Pr = 72.3, <em>k</em><br/>= 0.12 W/mK]`,
+      image: "",
+      options: [],
+      answer: "1052.8",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_114.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `State of stress of a body subjected to 3D - state of stress is shown below:<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_115.png"/><br/>The distortion strain energy as a percentage of the total elastic strain energy is<br/>______ %. [Correct upto two decimal places]<br/>[Take Poisson’s ratio : ν = 0.25]`,
+      image: "",
+      options: [],
+      answer: "80.85",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a cam design, rise motion is given by SHM, <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_117.png"/><br/>where <em>h</em><br/>is total rise, θ is cam shaft angle, θ<sub>0</sub><br/>is total angle of rise. If <em>h</em><br/>= 35 mm, θ<sub>0</sub><br/>= 120° and speed of cam = 120 rpm, then the velocity of the follower at the instant when<br/>the acceleration is 5 m/s<sup>2</sup><br/>will be _______ mm/s. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "196.14",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_118.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_119.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two plates of 15 mm thickness are connected by double strap butt joint. The shear<br/>strength of the riveted joint is 170 kN. If width of the plate is 172 mm. If the failure<br/>is to occur along section <em>x</em><br/>-<em>x</em><br/>, then the strength of the joint is _________ kN. (Correct upto two decimal<br/>places)<br/>[Take permissible tensile stress in plate as 85 MPa and shear strength in<br/>rivet as 60 MPa]<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_120.png"/>`,
+      image: "",
+      options: [],
+      answer: "272.92",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_121.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The demand for a product in a company is 48000 units per year and the company can<br/>produce theitem at the rate of 6000 units per month. The cost of one setup is <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_122.png"/><br/>and the holding cost is <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_123.png"/><br/>per unit per month. The shortage cost of one unit is <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_124.png"/>per<br/>month . The number of shortages corresponding to optimum production batch quantity is<br/>______ .[Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "44",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_125.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In a chemical reactor of height 80 m. The density varies with height (y) as <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_126.png"/>the<br/>magnitude of pressure difference between the top and the bottom will be _______ kPa.<br/>[Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "1100",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_127.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Three machining operations <em>A</em><br/>, <em>B</em><br/>and <em>C</em><br/>are performed on six jobs . The time required to perform each operation (in hours) is<br/>given below.<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_129.png"/><br/>The jobs are processed in the given order only. If the total idle times for operations<br/><em>A</em><br/>, <em>B</em><br/>and <em>C </em><br/>are <em>a</em><br/>, <em>b</em><br/>and <em>c</em><br/>(in hours) respectively then , the value of <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_130.png"/>is<br/>______ . [Round off to one decimal place]`,
+      image: "",
+      options: [],
+      answer: "10.5",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two uniform thin rods <em>A</em><br/>and <em>B</em><br/>of length 0.6 m each, and of masses 0.01 kg and 0.02 kg respectively are rigidly<br/>jointed, end to end. The combination is pivoted at the lighter end <em>P</em><br/>as shown in the figure such that it can freely rotate about the point P in a vertical<br/>plane. A small object of mass 0.05 kg, moving horizontally hits the lower end of the<br/>combination and sticks to it. If the system<br/><br/>just rises to horizontal position due to this, the velocity (v) of the object should be<br/>______ m/s.<br/>(Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_132.png"/>`,
+      image: "",
+      options: [],
+      answer: "6.36",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_133.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A nichrome wire of length 1 m and resistivity 1 μΩm is to dissipate 10 kW into the<br/>surrounding fluid at 80°C. If the maximum allowable temperature of the wire is 1000°C,<br/>then the diameter for maximum allowable temperature of the wire will be _____ mm.<br/>(Correct upto one decimal place)<br/><br/>[Take, <em>h</em><br/>= 1000 W/m<sup>2</sup><br/>°C and <em>k</em><br/><sub>wire</sub><br/>= 60 W/m°C]`,
+      image: "",
+      options: [],
+      answer: "3.5",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_134.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A uniform disc of 600 mm diameter and mass 30 kg is attached to a rotating shaft in such<br/>a way that the plane of disc is not perfectly in vertical position to the axis of the<br/>shaft but the polar axis of disc is inclined at an angle of 2 degrees with the axis of<br/>the shaft. If the shaft rotates at 900 rpm, then the gyroscopic couple acting on the<br/>bearing would be ______ Nm. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "209.12",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_135.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_136.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A sling-psychrometer reads 35°C DBT and 26°C WBT. The atmospheric pressure is 95 kPa.<br/>The saturation pressure at temperatures 35°C and 26°C are 7.5 kPa and 3.95 kPa<br/>respectively. The density of air is ______ kg/m<sup>3</sup><br/>[ Round off to three decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.036",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_137.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `In an engine working on diesel cycle, the air-fuel ratio is 30 : 1. The temperature of<br/>air at the beginning of the compression is 27°C, the compression ratio is 16 : 1. The<br/>cut-off ratio for the diesel cycle is ______. (Correct upto two decimal<br/>places)<br/>[Take CV = 42000 kJ/kg, for fuel used]`,
+      image: "",
+      options: [],
+      answer: "2.53",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_138.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `Two bodies A and B have masses 5 kg each and specific heat 3 kJ/kgK and are at<br/>temperatures 200°C and 800°C, respectively are available to do work in a heat engine.<br/>Which of the following statement(s) is/are incorrect?`,
+      image: "",
+      options: [
+        `The final temperature of both the body to obtain maximum work is 439.41°C.`,
+        `The final temperature of both the body to obtain maximum work is 400°C.`,
+        `The maximum obtainable work is 8190 kJ`,
+        `The maximum obtainable work is 1817.7 kJ.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_139.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_140.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A two-dimensional flow is described in the langrangian system as<br/><br/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_141.png"/><br/>Which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `The trajectory of fluid particle in the flow field is <em>xy</em><br/>– <em>x</em><br/><sup>2</sup><br/>– 20 = 0`,
+        `The <em>x</em><br/>component of the velocity is (–2<em>x</em><br/>+ 4y).`,
+        `The y component of the velocity is (4y).`,
+        `The velocity at (<em>x</em><br/>, y) = (1, 1) will be <img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_142.png"/>`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_143.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_144.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If αx + βy + 9 ln |2<em>x</em><br/>+ 3y – γ| = <em>x</em><br/>+ <em>c</em><br/>is the solution of (2<em>x</em><br/>+ 3y – 2)<em>dx</em><br/>+ (4<em>x</em><br/>+ 6y – 7)dy = 0, then α + β + γ = _______.`,
+      image: "",
+      options: [],
+      answer: "18",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_145.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let a die be rolled till 2 is obtained. The probability that 2 is obtained on even<br/>numbered toss is equal to`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_146.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_147.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_148.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_149.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_150.png"/><img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_151.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<img align="absmiddle" alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_152.png"/>`,
+      image: "",
+      options: [
+        `-1`,
+        `1`,
+        `0`,
+        `2`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test2_full_syllabus_gate_2026_me/img_153.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Advance Level Test-3",
+  date: "July 30, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Find the odd one out from the given sequence:<br/>1, 5, 14, 30, 50, 55, 91`,
+      image: "",
+      options: [
+        `5`,
+        `50`,
+        `55`,
+        `91`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_3.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a race of 200 m, <em>A</em><br/>can beat <em>B</em><br/>by 31 m and <em>C</em><br/>by 18 m. In a race of 350 m, <em>C</em><br/>will beat B by`,
+      image: "",
+      options: [
+        `22.75 m`,
+        `25 m`,
+        `19.5 m`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_5.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_6.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Astronomer: Most stars are born in groups of thousands, each star in a group forming<br/>from the same parent cloud of gas. Each cloud has a unique homogeneous chemical<br/>composition. Therefore whenever two stars have the same chemical composition as each<br/>other, they must have originated from the same cloud of gas.<br/>Which of the<br/>following, if true, would most strengthen the astronomer’s argument?`,
+      image: "",
+      options: [
+        `In some groups of stars, not every star originated from the same parent cloud of<br/>gas.`,
+        `Clouds of gas of similar or identical chemical composition may be remote from each<br/>other.`,
+        `Whenever a star forms, it inherits the chemical composition of its parent cloud of<br/>gas.`,
+        `Many stars in vastly different parts of the universe are quite similar in their<br/>chemical compositions.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_7.png"/>is`,
+      image: "",
+      options: [
+        `2`,
+        `7`,
+        `8`,
+        `33`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_8.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Given below are 4 pairs of words. In three of the pairs, the words are having a meaning<br/>similar to each other whereas in one of the pairs, it is the opposite. Identify the<br/>option where the words do not have similar meaning.`,
+      image: "",
+      options: [
+        `CONTRAPTION - SIMPLE`,
+        `JOCUND - MERRY`,
+        `INSCRUTABLE - ENIGMATIC`,
+        `LOUCHE - INDECENT`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A mass analysis of fuel used in an IC engine shows 87%C, 6%H<sub>2</sub><br/>, 4%O<sub>2</sub><br/>and 3%N<sub>2</sub><br/>. The ambient air contains 23.1%O<sub>2</sub><br/>by mass. The stoichiometric air-fuel ratio for complete combustion is`,
+      image: "",
+      options: [
+        `12.12`,
+        `11.818`,
+        `11.948`,
+        `14.03`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_11.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For a follower moving with cycloidal motion profile, the maximum follower displacement<br/>is h, and the cam rotation angle for maximum follower displacement is <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_12.png"/>If<br/>the cam rotates at an angular speed ω, the maximum acceleration of the follower is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_13.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_14.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_15.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_16.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If ∈<sub>1</sub><br/>and ∈<sub>2</sub><br/>are principal strains, the equation of Mohr’s circle for strain on the <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_18.png"/>plane<br/>is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_19.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_20.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_21.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_22.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_23.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following graphs correctly represents the cooling curve of a pure metal?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_27.png"/>`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `In a metal cutting operation tool has a side cutting edge angle of 16°, inclination angle<br/>of 6° and side and back rake angles of –7° and 3.3° respectively. The orthogonal rake<br/>angle is`,
+      image: "",
+      options: [
+        `–7.6°`,
+        `7.6°`,
+        `5.8°`,
+        `–5.8°`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A company has 4 workers <em>W</em><br/><sub>1</sub><br/>, <em>W</em><br/><sub>2</sub><br/>, <em>W</em><br/><sub>3</sub><br/>, <em>W</em><br/><sub>4</sub><br/>and 4 tasks <em>T</em><br/><sub>1</sub><br/>, <em>T</em><br/><sub>2</sub><br/>, <em>T</em><br/><sub>3</sub><br/>, <em>T</em><br/><sub>4</sub><br/>. The cost of assigning worker<br/><em><br/>W<sub>i</sub><br/></em><br/>to task<br/><em><br/>T<sub>j</sub><br/></em><br/>is given as follows:<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_29.png"/><br/>If each worker must be assigned exactly one task, then the minimum total cost is`,
+      image: "",
+      options: [
+        `13`,
+        `15`,
+        `1`,
+        `10`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A 20-teeth pinion meshes with a 60 teeth gear. The Lewis form factors for pinion and gear<br/>are 0.33 and 0.41 respectively. The ultimate tensile strength for pinion and gear<br/>materials are 420 MPa and 210 MPa, respectively Module and face width are 4 mm and 50 mm<br/>respectively. The weaker member and its corresponding beam strength are [Use Lewis<br/>bending equation]`,
+      image: "",
+      options: [
+        `Pinion, 46.2 kN`,
+        `Gear, 5.74 kN`,
+        `Pinion, 9.24 kN`,
+        `Gear, 17.22 kN`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Water flows into a large tank at a steady flow rate of 0.011 m<sup>3</sup><br/>/s as shown in figure. The water leaves the tank through 20 identical circular holes at<br/>the bottom of the tank. Each hole discharges a free jet of diameter 10 mm into the<br/>atmosphere. The equilibrium height, <em>h</em><br/>, for steady state operation is<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_32.png"/>`,
+      image: "",
+      options: [
+        `2.1 m`,
+        `2.5 m`,
+        `3.7 m`,
+        `5.3 m`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The filament of a 60 W bulb may be considered as a black body radiating into a black<br/>enclosure at 77°C. The filament diameter is 0.14 mm and length is 60 mm. Considering<br/>only radiation heat transfer, the filament temperature is`,
+      image: "",
+      options: [
+        `2243.66°C`,
+        `3030.14°C`,
+        `2516.66°C`,
+        `2757.14°C`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_34.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following transportation problem given below:<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_36.png"/><br/>Using the North-West corner rule, determine the correct statement.`,
+      image: "",
+      options: [
+        `The total cost is 60 and initial solution is feasible.`,
+        `The total cost is 115 and the problem is not balanced.`,
+        `The total cost is 60 and initial solution is non-degenerate.`,
+        `The total cost is 175 and initial solution is degenerate.`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If <em>A</em><br/>is a square matrix of order 4 such that <em>A</em><br/><sup>4</sup><br/>= A, then the eigen values of ‘<em>A</em><br/>’ are`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_43.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_44.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_45.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_46.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_47.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A hole of initial diameter 20 mm is to be enlarged to 30 mm using drilling operation.<br/>The cutting speed is 60 m/min, and the feed rate is 160 mm/min. The material removal<br/>rate is ___ cm<sup>3</sup><br/>/min. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "62.83",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_48.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `If a carnot refrigerator requires 2.5 kW per ton refrigeration to maintain the<br/>temperature of refrigerated space at –35°C. The temperature of the sink is ______ °C.<br/>[Round off to one decimal place].`,
+      image: "",
+      options: [],
+      answer: "135.0",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_49.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A homogeneous bar <em>ABC</em><br/>is pinned at <em>A</em><br/>and rests on a roller support at <em>B</em><br/>as shown in the figure.<br/><br/>Neglecting the weight of the bar, The reaction at pin <em>A</em><br/>is ____ N. (Correct upto two decimal places)<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_50.png"/>`,
+      image: "",
+      options: [],
+      answer: "206.16",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A shaper operates with a stroke length of 200 mm at 120 double strokes per minute and a<br/>speed ratio of 1.5. The feed and depth of cut are 1 mm/stroke and 2 mm, respectively.<br/>The material removal rate during cutting stroke is _____ mm<sup>3</sup><br/>/sec. (Round off to nearest integer)`,
+      image: "",
+      options: [],
+      answer: "1333",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_52.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A rectangular straight fin of cross section 6 mm × 8 mm and length 10 mm with negligible<br/>heat loss from the tip has a fin effectiveness of 3. The efficiency of the fin is_____%.<br/>[Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "51.43",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `The areas above and below the mean torque line on the turning-moment diagram are 210,<br/>–580, 60, –310, 900, –280 mm2. The weight of the rotating part is 490 N and the radius<br/>of gyration is 1.8 m. If the speed of the engine is 588 rpm, then the coefficient of<br/>fluctuation of speed is _____ %. (Correct upto two decimal places)<br/><br/>[Take vertical scale of 1 mm = 560 Nm, Horizontal scale of 1 mm = 5°, g = 9.8<br/>m/s<sup>2</sup><br/>, π = 22/7]`,
+      image: "",
+      options: [],
+      answer: "7.16",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_55.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A tool gives a life of 1.2 hour during roughing and 175 minutes during finishing. The<br/>ratio of cutting velocities (finishing/roughing) is ______. [Round off to two decimal<br/>places]<br/><br/>[Use Taylor exponents n<sub>r</sub><br/>= <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_57.png"/><br/>for roughing and<br/><em><br/>n<sub>f</sub><br/></em><br/>= <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_58.png"/>for<br/>finishing]`,
+      image: "",
+      options: [],
+      answer: "1.02",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_59.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An engine running on an air standard Otto cycle has thermal efficiency of 60% and mean<br/>effective pressure of the cycle is 1200 kPa. The condition at the beginning of the<br/>compression process is 100 kPa and 27°C. Considering specific heats to remain constant<br/>during the cycle (<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK,<br/><em><br/>c<sub>v</sub><br/></em><br/>= 0.718 kJ/kgK, γ = 1.4 and R = 0.287 kJ/kgK), the specific net work output of the cycle<br/>is<br/>________ kJ/kg. (Correct upto one decimal place)`,
+      image: "",
+      options: [],
+      answer: "928.6",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_61.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A carnot refrigerator is driven by the work output of a carnot heat engine as shown in<br/>the figure.<br/><br/>The slab is 0.25 m thick with thermal conductivity <em>k</em><br/><sub>th</sub><br/>= 3 W/m°C and area 0.25 m<sup>2</sup><br/>. Assume steady state, one dimensional heat transfer through the slab.<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_63.png"/><br/>The temperature of the sink <em>T</em><br/>is _______ °C. [Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "827",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_64.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A project consist of the following activities with estimated duration (in days):<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_66.png"/><br/>The independent float for activity <em>B</em><br/>is ______ days. (Rounded off to the nearest integer)`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_67.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A manufacturing company faced the following demand for its products during past few<br/>months.<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_68.png"/><br/>The company is using last year’s corresponding monthly demand as this year’s forecast.<br/>Which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `The value of tracking signal is 0.56.`,
+        `The Bias is 4.75.`,
+        `The mean absolute deviation (MAD) is 6.75.`,
+        `The mean sum of square error is 64.25.`
+      ],
+      answer: ["C", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_69.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `A heat engine and a refrigerator operates between the same temperature limits. The<br/>carnot efficiency factor for heat engine is represented by η and carnot COP of the<br/>refrigerators is<br/><em><br/>E<sub>c</sub><br/></em><br/>. The correct relation for heat rejection ratio of the refrigerators is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_72.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_73.png"/>`
+      ],
+      answer: ["B", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The equation <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_75.png"/>is<br/>hyperbolic for`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_76.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_77.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_78.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_79.png"/>`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_80.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If a random variable x satisfies the poisson’s distribution with a mean value of 2, then<br/>the probability that <em>x</em><br/>≥ 2 is`,
+      image: "",
+      options: [
+        `2<em>e</em><br/><sup>–2</sup>`,
+        `1 – 2<em>e</em><br/><sup>–2</sup>`,
+        `3<em>e</em><br/><sup>–2</sup>`,
+        `1 – 3 <em>e</em><br/><sup>–2</sup>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_151.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_152.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Count the number of squares in the following figure:<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_1.png"/>`,
+      image: "",
+      options: [
+        `18`,
+        `14`,
+        `10`,
+        `9`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_2.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A man standing on the bank of a river observes that the angle subtended by a tree on the<br/>opposite bank is 60°. When he retries 36 m away from the bank, he find the angle to be<br/>30°, the breadth of the river is ____ m.`,
+      image: "",
+      options: [],
+      answer: "18",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `People tend to estimate the likelihood of an event’s occurrence according to its<br/>salience; that is, according to how strongly and how often it comes to their attention.<br/>By placement and headlines, newspapers emphasize stories about local crime over stories<br/>about crime elsewhere and about many other major events.<br/>It can be concluded on the<br/>basis of the statements above that, if they are true, which of the following is most<br/>probably also true?`,
+      image: "",
+      options: [
+        `The language used in newspaper headlines about local crime is inflammatory and fails<br/>to respect the rights of suspects.`,
+        `The press is the news medium that focuses people attention most strongly on local<br/>crimes.`,
+        `Readers of local news in newspapers tend to overestimate the amount of crime in<br/>their own localities relative to the amount of crime in other places.`,
+        `None of the events concerning other people that are reported in newspapers is so<br/>salient in people’s minds as their own personal experiences.`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The difference between the compound interest and the simple interest earned on a sum of<br/>money at the end of 4 years is <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_9.png"/><br/>To find out the sum, which of the following information given in the statements<br/><em>P</em><br/>and <em>Q</em><br/>is/are necessary?<br/><br/>P : Amount of simple interest accrued after 4 years.<br/>Q : Rate of interest per<br/>annum.`,
+      image: "",
+      options: [
+        `Only P is necessary`,
+        `Only Q is necessary`,
+        `Either P or Q is necessary`,
+        `Neither P nor Q is necessary`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A boat takes 19 hours for travelling downstream from point A to point B and coming back<br/>to a point C midway between A and B. If the velocity of the stream is 4 kmph and the<br/>speed of the boat in still water is 14 kmph, what is the distance between A and B?`,
+      image: "",
+      options: [
+        `160 km`,
+        `180 km`,
+        `200 km`,
+        `220 km`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_10.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Given set <em>S</em><br/>= {0, 1, 2, 3, _ _ _ _ _, 10}. If a random ordered pair (<em>x</em><br/>, y) from elements of S is chosen, then the probability that |<em>x</em><br/>– y| &gt; 5 is`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_38.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_39.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_40.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_41.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_42.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Air flows over a heated flat plate with a free stream velocity of 50 m/s. The local skin<br/>friction co-efficient at a point on a plate is measured as 0.004. The local heat<br/>transfer coefficient at this point is<br/><br/>The following property data for air are given:<br/><br/>Density = 0.88 kg/m<sup>3</sup><br/>, Viscosity = 2.286 × 10<sup>–5</sup><br/>kg/ms, Specific heat,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.001 kJ/kgK,<br/>Conductivity = 0.035 W/mK`,
+      image: "",
+      options: [
+        `111.9 W/m<sup>2</sup><br/>K`,
+        `115.9 W/m<sup>2</sup><br/>K`,
+        `113.9 W/m<sup>2</sup><br/>K`,
+        `116.9 W/m<sup>2</sup><br/>K`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_81.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider a disc rolling on an inclined plane of length <em>l</em><br/>and inclination α as shown below. If the mass of disc is <em>m</em><br/>and radius <em>R</em><br/>, then the Lagrangian for this disc is<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_82.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_83.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_84.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_85.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_86.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_87.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The T-s diagram of a power producing cycle is given below<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_88.png"/><br/>The efficiency of the cycle is`,
+      image: "",
+      options: [
+        `50%`,
+        `66.67%`,
+        `60%`,
+        `20%`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_89.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_90.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A submarine has a volume of 1200 m<sup>3</sup><br/>and weight of 9 × 10<sup>3</sup><br/>kN. Determine the ballast water volume that must be pumped into the submarine so that it<br/>just submerges in the sea water.<br/><br/>[Take, sea water density = 1025 kg/m<sup>3</sup><br/>, g = 9.81 m/s<sup>2</sup><br/>]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_91.png"/>`,
+      image: "",
+      options: [
+        `304.92 m<sup>3</sup>`,
+        `573.15 m<sup>3</sup>`,
+        `911.67 m<sup>3</sup>`,
+        `1063.21 m<sup>3</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_92.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a 100 mm H9-g6 shaft-hole fit the diameter steps are 80 mm and 120 mm. The<br/>fundamental deviation for shaft ‘g’ is given by –2.5 D<sup>0.34</sup><br/>μm. The maximum clearance is`,
+      image: "",
+      options: [
+        `0.034 mm`,
+        `0.022 mm`,
+        `0.09 mm`,
+        `0.121 mm`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_93.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The state of stress at the same point, observed on different plane orientations, is given<br/>as<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_94.png"/><br/>Which of the following options correctly represents the suitable values of <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_95.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_96.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_97.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_98.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_99.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_100.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A swivel-trunnion arrangement is shown in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_101.png"/><br/>The angular velocity of the trunnion when θ = 0, is`,
+      image: "",
+      options: [
+        `12 rad/s`,
+        `10.1759 rad/s`,
+        `7012 rad/s`,
+        `66.95 rad/s`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rigid storage tank of 3 m<sup>3</sup><br/>contains 4 kg of helium. The tank receives heat from a furnace maintained at 1300°C,<br/>causing the specific entropy of the helium to increase by 3.5 kJ/kg-K. If the molecular<br/>weight of helium is 4 kg/k-mol and may be treated as an ideal gas with constant specific<br/>heats, then the percentage increase in absolute temperature of helium during the process<br/>is`,
+      image: "",
+      options: [
+        `20.9%`,
+        `209.0%`,
+        `325.8%`,
+        `32.58%`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A compound shaft of circular cross-section is made up of two different materials as shown<br/>in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_104.png"/><br/>If a torque of 200 Nm is applied at point B, the maximum shear stress developed in the<br/>compound shaft is`,
+      image: "",
+      options: [
+        `15 MPa`,
+        `20 MPa`,
+        `25 MPa`,
+        `30 MPa`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_105.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_106.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A low-speed wind tunnel is provided with air supply upto a speed of 60 m/s at 10°C. One<br/>needs to study the behaviour of boundary layer over a flat plate kept inside the wind<br/>tunnel upto a reynolds number of 10<sup>7</sup><br/>. At 35°C, density of air is 1.2 kg/m<sup>3</sup><br/>and kinematic viscosity of air is<br/><br/>17 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s. The minimum plate length required is`,
+      image: "",
+      options: [
+        `2.833 m`,
+        `2.361 m`,
+        `2.495 m`,
+        `2.08 m`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_107.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_108.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A refrigerator of capacity 450 tons works between –10°C and +25°C. It is used for<br/>production of ice at –5°C from water supplied at +5°C. Assume latent heat for ice = 335<br/>kJ/kg, specific heat capacity of liquid water as 4.2 kJ/kgK and specific heat capacity<br/>of ice as 2.1 kJ/kgK. The minimum power capacity required and mass of ice produced<br/>within 10 hours are respectively`,
+      image: "",
+      options: [
+        `309.6 kW, 154.7 tonnes`,
+        `59.88 kW, 20.62 tonnes`,
+        `209.6 kW, 154.7 tonnes`,
+        `1575 kW, 20.62 tonnes`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The value of <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_110.png"/><br/>over the region between <em>y</em><br/>= x<sup>2</sup><br/>and y = <em>x</em><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_111.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_112.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_113.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_114.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_115.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_116.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `If <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_117.png"/><br/>then the value of curl <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_118.png"/>at<br/>(1, –1, 2) is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_119.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_120.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_121.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_122.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_123.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gate <em>PQ</em><br/>as shown in figure below is 1.5 m wide (in a direction perpendicular to the plane of<br/>figure) and is hinged at <em>Q</em><br/>. Gauge G reads –15 kPa and liquid B in the left hand tank is having a relative density<br/>0.8. For equilibrium of gate <em>PQ</em><br/>, the horizontal force required at P will be ___ kN. [Round off to two decimal places]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_124.png"/>`,
+      image: "",
+      options: [],
+      answer: "24.50",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_125.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_126.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A metal plate of length ‘<em>L</em><br/>’ and width ‘0.1 <em>L</em><br/>’ is subjected to a uniform tensile stress at the ends as shown in the figure. The<br/>percentage change in the angle of diagonal (θ) is _______. [Correct upto two decimal<br/>places]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_127.png"/>`,
+      image: "",
+      options: [],
+      answer: "-0.52",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_128.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_129.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `For the given configuration of slider-crank chain. The acceleration of the slider in<br/>y-direction is ______ cm/s<sup>2</sup><br/>.<br/>[Correct upto three decimal places]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_130.png"/>`,
+      image: "",
+      options: [],
+      answer: "15.625",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_131.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_132.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An angular-contact ball bearing carries an axial load of 1800 N and a radial load of<br/>2400 N, applied with the inner ring stationary. The radial and thrust factors are 0.56<br/>and 1.57 respectively. The basic dynamic load rating is 36 kN. The <em>L</em><br/><sub>50</sub><br/>life at a speed of 600 rpm will be ______ hours.<br/>[Round off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "74093",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_133.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rectangular steel bar is cantilevered to a steel channel using six tightly fitted<br/>bolts located at <em>P</em><br/>, <em>Q</em><br/>, <em>R</em><br/>, <em>S</em><br/>, <em>T</em><br/>, <em>U</em><br/>as shown in the figure below. The minor diameter of each bolts is 12 mm. The maximum<br/>shear stress developed on the critical bolt is ______ . [Round off to two decimal<br/>places]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_134.png"/>`,
+      image: "",
+      options: [],
+      answer: "196.72",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_135.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An atomiser forms water droplets of diameter 6 × 10<sup>–5</sup><br/>m. The pressure outside the droplets is 0.102 N/mm<sup>2</sup><br/>. Assuming the surface tension of water as 0.072 N/m. The pressure inside the droplets<br/>will be ______ kPa. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "106.8",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_136.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A rigid massless bar of length 2 m is supported by two vertical wires as shown in<br/>figure. If a point load of 80 kN acts on the bar at a distance of 1.5 m from end<br/>‘<em>A</em><br/>’, then the vertical deflection of the mid point of the rigid bar is _______ μm.<br/>[Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_137.png"/>`,
+      image: "",
+      options: [],
+      answer: "1203.13",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_138.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_139.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A composite material consists of 20 kg of material A, 10 kg of material <em>B</em><br/>, and 5 kg of material <em>C</em><br/>. The densities of materials <em>A</em><br/>, <em>B</em><br/>and <em>C</em><br/>are 2 g/cm<sup>3</sup><br/>, 3 g/cm<sup>3</sup><br/>and 4 g/cm<sup>3</sup><br/>, respectively. The density of the composite material is ______ g/cm<sup>3</sup><br/>. [Round off the one decimal place]`,
+      image: "",
+      options: [],
+      answer: "2.4",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_140.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A shielded metal arc welding operation is carried on a carbon steel to produce a fillet<br/>weld of cross-section area of 72 mm<sup>2</sup><br/>in a single pass. The melting efficiency and heat transfer efficiencies are 0.58 and<br/>0.85 respectively. The unit of energy required to melt the metal is 10 J/mm<sup>3</sup><br/>. If the<br/>voltage and current supply are 12V and 300A, respectively, then the<br/>welding speed (m/min) required to be maintained during the operation is _______ .<br/>(Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.15",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_141.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two involute spur gears in external mesh have pitch circle radii are 50 mm and 65 mm<br/>respectively. Their addendum circle radii are 55 mm and 71 mm respectively. The<br/>operating pressure angle is 20°. If the larger gear has 22 teeth, then the value of<br/>contact ratio is ______ (Correct upto two decimal places).`,
+      image: "",
+      options: [],
+      answer: "1.46",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_142.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `12 kg of superheated steam at 300 kPa, 250°C are cooled at constant volume. The heat<br/>transferred by the steam during cooling from 250° to 80°C is _______ MJ. [Correct upto<br/>two decimal places]<br/><br/>Refer the following property data<br/><br/>For 300 kPa : <em>T</em><br/><sub>sat</sub><br/>= 133.55°C<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_143.png"/>`,
+      image: "",
+      options: [],
+      answer: "22.71",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_144.png"/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_145.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A uniform rod of mass 3<em>m</em><br/>and length 10<em>R</em><br/>is hinged at one end. The free end of the rod is rigidly welded to an annular disc of<br/>mass 7<em>m</em><br/>, having inner and outer radii <em>R</em><br/>and 4<em>R</em><br/>respectively as shown in the figure. A linear string of stiffness 2<em>k</em><br/>is attached to the midpoint of the rod such that<br/>for small angular oscillation of<br/>the system the spring acts perpendicular to the rod.<br/><br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_146.png"/><br/>If the natural frequency of vibration of the system is given by <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_147.png"/><br/>then the value of <em>Q</em><br/>is _____. [Correct upto two decimal places]`,
+      image: "",
+      options: [],
+      answer: "38.23",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_148.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A two stage compression unit with intercoding having pressure ratio of 8 (for each<br/>stage) is used to compress air from 1 bar, 30°C. The heat lost during intercooling is<br/>160 kJ/kg of air. Isentropic efficiencies of both compressor stages are 80%. [Take (<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.005 kJ/kgK, <em>R</em><br/>= 0.278 kJ/kgK)]`,
+      image: "",
+      options: [
+        `Enthalpy of air at the end of compression process is 868.55 kJ/kg.`,
+        `Enthalpy of air at the end of compression process is 1127.27 kJ/kg.`,
+        `Temperature of air the entry of second compression stage is 165.3°C.`,
+        `Temperature of air the entry of second compression stage is 106.4°C.`
+      ],
+      answer: ["A", "C"],
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_149.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A copper workpiece is machined by EDM using <em>R</em><br/>= 60 Ω, and 10 μF capacitance. The supply voltage is 200 V and discharge voltage is 160<br/>V. Material removal rate is given by Q = 27.4 <em>w</em><br/><sup>1.54 </sup><br/>mm<sup>3</sup><br/>/min, where <em>w</em><br/>= power input in kW. The crater depth can be expressed as<br/><em><br/>h<sub>c</sub><br/></em><br/>= 4<em>E</em><br/><sup>0.33</sup><br/>mm,<br/><br/>where E is energy released per spark in Joule rms value of surface roughness is given as<br/>Hrms 1.11<em>Q</em><br/><sup>0.384</sup><br/>μm. Which of the following options is/are correct?`,
+      image: "",
+      options: [
+        `Material removal rate is about 1.2196 mm<sup>3</sup><br/>/min.`,
+        `Energy released per spark is nearly 0.1325 J.`,
+        `RMS value of surface at a roughness in nearly 1.198 mm.`,
+        `Crater depth is about 2.0297 mm.`
+      ],
+      answer: ["A", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_150.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A player tosses a fair coin three times. He wins <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_153.png"/><br/>if three heads occur, <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_154.png"/><br/>if two heads occur and <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_155.png"/><br/>if one head occurs. On the other hand he losses <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_156.png"/><br/>if no head occurs. The expected gain of the player is <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_157.png"/>`,
+      image: "",
+      options: [],
+      answer: "150",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_158.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The particular integral of the differential equation <img align="absmiddle" alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_159.png"/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_160.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_161.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_162.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_163.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test3_full_syllabus_gate_2026_me/img_164.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
+  name: "FST - Advance Level Test-4",
+  date: "July 30, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Read the sentence to find out whether there is any grammatical error in it. The error, if<br/>any will be in one of the sentence. If there is no error, then answer will be (d).<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_1.png"/>`,
+      image: "",
+      options: [
+        `a`,
+        `b`,
+        `c`,
+        `d`
+      ],
+      answer: "A",
+      solution: `(a)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Select the word that is <strong>NEAREST</strong><br/>in meaning to the bold word in capital letters <strong>VENERATE</strong>`,
+      image: "",
+      options: [
+        `Accuse`,
+        `Reverence`,
+        `Criticize`,
+        `Abuse`
+      ],
+      answer: "B",
+      solution: `(b)`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The average income of <em>A</em><br/>, <em>B</em><br/>and <em>C</em><br/>is <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_10.png"/><br/>per month and the average income of <em>B</em><br/>, <em>C</em><br/>and <em>D</em><br/>is <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_11.png"/><br/>per month. If the average salary of <em>D</em><br/>is twice that of <em>A</em><br/>, then the average salary of <em>B</em><br/>and<br/><br/><em>C</em><br/>is <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_12.png"/>`,
+      image: "",
+      options: [
+        `8000`,
+        `18000`,
+        `13500`,
+        `9000`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_13.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `There are total 100 coins consisting of 20 paise, 50 paise and <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_14.png"/><br/>in the ratio of 7 : 8 : 5. What is the number of coins of 50 paise if the difference<br/>between the amount yielded by 20 paise and <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_15.png"/><br/>coin is <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_16.png"/>`,
+      image: "",
+      options: [
+        `32`,
+        `40`,
+        `26`,
+        `56`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_17.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The average weight of a class of students is 67.5 kg. The weight of the class teacher is<br/>25% more than the average weight of the class. The average weight of the class is less<br/>than the class teacher by <em>x</em><br/>%. The value of <em>x</em><br/>is:`,
+      image: "",
+      options: [
+        `33.33%`,
+        `25%`,
+        `20%`,
+        `can’t be determined`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_18.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A closed room has a volume of 9 m3 and is at dry bulb temperature of 21°C. The partial<br/>pressure of water vapour inside the room is 2.8 kPa, and the partial pressure of dry air<br/>is 96.2 kPa. The mass of water vapour inside the room is`,
+      image: "",
+      options: [
+        `0.1857 kg`,
+        `0.0181 kg`,
+        `0.0179 kg`,
+        `0.1838 kg`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_22.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `For the given loading shown in the figure, where <em>a</em><br/>and <em>b</em><br/>are positive constants.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_23.png"/><br/>The critical value of the load P for the buckling of bar ‘<em>CD</em><br/>’ according to Euler’s theory of buckling is<br/>[Take : FOS = 4]`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_24.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_25.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_26.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_27.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_28.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A hemispherical parachute is used to carry a total weight of 1200 N at a constant<br/>vertical descend speed of 20 m/s. The drag coefficient of the parachute is 0.5 and the<br/>density of air is 1.2 kg/m<sup>3</sup><br/>. The diameter of the parachute is`,
+      image: "",
+      options: [
+        `2.33 m`,
+        `3.48 m`,
+        `3.57 m`,
+        `4.33 m`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_29.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The angle between the crystallographic direction [1 2 0] and the normal to the plane (1 0<br/>1) is`,
+      image: "",
+      options: [
+        `71.565 radians`,
+        `1.249 degrees`,
+        `0.886 radians`,
+        `1.249 radians`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_30.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which one of the following statement is incorrect regarding a four-jaw chuck?`,
+      image: "",
+      options: [
+        `Jaws can be moved in their slots independent of each other.`,
+        `Any irregular surface could be effectively centered.`,
+        `It is generally used for heavy workpieces.`,
+        `Less time is spent in fixturing a component in a 4-jaw chuck compared to a three-jaw<br/>chuck.`
+      ],
+      answer: "D",
+      solution: `(`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `If the initial Mach number is 1.1, then the percentage change in the Mach angle for 10%<br/>increase in Mach number is`,
+      image: "",
+      options: [
+        `–13.67%`,
+        `13.67%`,
+        `–14.75%`,
+        `14.75%`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_31.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A caliper disk brake with annular friction pads has inner radius and outer radius as 150<br/>mm and 200 mm respectively. The angular contact of pad is 75° and the average pressure<br/>is 1.8 MPa. If the coefficient of friction is 0.36, then the torque capacity of the<br/>brake is`,
+      image: "",
+      options: [
+        `1.307 kN-mm`,
+        `326.922 kN-mm`,
+        `1307.688 kN-mm`,
+        `2.615 kN-mm`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_32.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Air is at 27°C and 0.61 m<sup>3</sup><br/>/kg. Its state slightly changes to 27.5°C and 0.60 m<sup>3</sup><br/>/kg due to a small disturbance. During this process, the approximate change in pressure<br/>of air is`,
+      image: "",
+      options: [
+        `2.59 kPa`,
+        `–2.12 kPa`,
+        `2.12 kPa`,
+        `–2.59 kPa`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_33.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A vertical cylinder 1.5 m high and 180 mm in diameter is maintained at 100°C in an<br/>atmosphere at<br/><br/>20°C. The value of product of Grashoff number and Prandtl number is<br/><br/>[Take properties of air at mean temperature as, ρ = 1.06 kg/m<sup>3</sup><br/>, v = 18.97 × 10<sup>–6</sup><br/>m<sup>2</sup><br/>/s,<br/><em><br/>c<sub>p</sub><br/></em><br/>= 1.004 kJ/kgK and K = 0.1042 kJ/mhK]`,
+      image: "",
+      options: [
+        `1.54 × 10<sup>10</sup>`,
+        `1.64 × 10<sup>10</sup>`,
+        `1.74 × 10<sup>10</sup>`,
+        `1.45 × 10<sup>10</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_34.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_35.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `A company assembles a component which uses a part bought from an outside supplier at a<br/>cost of <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_36.png"/>per<br/>unit. Part are required at a steady rate of 3600 units per month. The company orders<br/>10800 units at a time and there is a lead time of two months. The order is placed when<br/>the stock level falls to 10,000 units. The safety stock maintained by company is`,
+      image: "",
+      options: [
+        `Zero`,
+        `6400 units`,
+        `7200 units`,
+        `2800 units`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_37.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Let the probability density function of a random variable <em>X</em><br/>be given as:<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_38.png"/><br/>where <em>u</em><br/>(<em>x</em><br/>) is the unit step function. Then the value of <em>b</em><br/>and probability <em>p</em><br/>{<em>x</em><br/>≤ 0} respectively, are`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_39.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_40.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_41.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_42.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_43.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_44.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A 18 tooth face mill of 120 mm diameter is used for rough-milling a workpiece 100 mm<br/>wide and 300 mm long. The cutting speed is 50 m/min, feed is 0.21 mm/tooth and the depth<br/>of cut is 5 mm. The material removal rate is ____ cm<sup>3</sup><br/>/s. [Round off to one decimal place]`,
+      image: "",
+      options: [],
+      answer: "4.2",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_52.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `For a full hydrodynamic journal bearing used in an electric motor, the sommerfeld number<br/>is 0.778 and the radial clearance is 0.001 times the journal radius. The coefficient of<br/>friction variable is ______. [Round off to three decimal places]`,
+      image: "",
+      options: [],
+      answer: "15.357",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_53.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A thin steel tyre to be mounted on to a rigid wheel of 2 m diameter. If the hoop stress<br/>in the steel is limited to 200 MPa, then the minimum diameter of the steel tyre required<br/>is _____ m. [Correct upto three decimal places]<br/><br/>[Take <em>E</em><br/><sub>steel</sub><br/>= 210 GPa]`,
+      image: "",
+      options: [],
+      answer: "1.998",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_54.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `In orthogonal turning of a cylindrical specimen with a cutting tool of zero rake angle,<br/>the thickness of chip is 0.8 mm and the feed is 0.2 mm/rev. The shear strain produced<br/>during the operation is _______. (Round off to two decimal places)`,
+      image: "",
+      options: [],
+      answer: "4.25",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_55.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following parameters in a steady state gas metal arc welding with DC<br/>positive electrode polarity:<br/><br/>Welding speed : 8 m/min; Welding voltage : 40V; Electrode diameter : 1.5 mm<br/><br/>Electrode feed rate : 14 m/min; Density of electrode : 8000 kg/m<sup>3</sup><br/>;<br/><br/>Specific heat of electrode : 600 J/kg-K; Melting temperature of electrode : 1580°C<br/><br/>Latent heat of electrode : 265.6 kJ/kg; Ambient temperature : 30°C<br/><br/>Electrical efficiency : 65%; Melting efficiency : 40%<br/>The required welding current<br/>is ______ A. [Rounded off to nearest integer]`,
+      image: "",
+      options: [],
+      answer: "380",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_56.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A vibrating system has a mass of 10 kg, spring-stiffness of 3 kN/m. If the damping of 15%<br/>of the critical value is provided, then the critical damping coefficient is ______<br/>N/mm.s. (Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.346",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_57.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An ideal regenerative gas turbine cycle works between minimum and maximum temperature<br/>limits of 20°C and 753°C. If the cycle efficiency is 34%, the pressure ratio of cycle is<br/>______.<br/>(Correct upto two decimal places) [Take γ = 1.42]`,
+      image: "",
+      options: [],
+      answer: "16.99",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_58.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_59.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `An SI engine working on air-standard Otto cycle has a compression ratio of 8. The initial<br/>pressure and temperature of air are 1 atm and 47°C respectively. The maximum pressure in<br/>the cycle is 35 atm. The ratio of heat rejected to the heat supplied in the cycle is<br/>______. [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "0.435",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_60.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Two elastic bars of the same material and same length, one having circular cross-section<br/>of diameter “<em>d</em><br/>” and other of square cross-section of side “<em>d</em><br/>”. If they absorb the same amount of energy delivered by axial forces, then the ratio of<br/>stress developed in circular to that of the square<br/>cross-section is _____. (Round<br/>off to three decimal places)`,
+      image: "",
+      options: [],
+      answer: "1.128",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_61.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_62.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A section of the Cu-Ag phase diagram is shown below. At 20 weight % Ag and 900°C<br/>temperature, the number of externally controlled variables is/are _____. [Round off to<br/>nearest integer]<br/>[Assume pressure is held constant]<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_63.png"/>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_64.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Which of the following statements is/are correct regarding fluid kinematics?`,
+      image: "",
+      options: [
+        `For total derivative of density to become zero density must be constant.`,
+        `Angular velocity of flow is defined as curl of the velocity vector.`,
+        `In a compressible flow field, the velocity vector is divergence free.`,
+        `For steady and uniform flow, the material acceleration will be zero.`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_65.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `Two spur gears have a velocity ratio of 1 : 4. The driven gear has 68 teeth, module 7 mm<br/>and rotates at 300 rpm. Which of the following statements are correct?`,
+      image: "",
+      options: [
+        `Number of teeth on the driver is 17.`,
+        `Speed of the drivers is 20 rps.`,
+        `Pitch line velocity is 23.8 mm/s.`,
+        `Pitch line velocity is 7.47 m/s.`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_66.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `A function f(x) is differentiated twice such that its differential equation is:<br/><br/><em>f</em><br/>(<em>x</em><br/>) – 2<em>f</em><br/>′(<em>x</em><br/>) + <em>f</em><br/>′′(<em>x</em><br/>) = 0. If <em>f</em><br/>(0) = 1, <em>f</em><br/>′(0) = 2, then <em>f</em><br/>(<em>x</em><br/>) at <em>x</em><br/>= 1 will be_____. [Correct upto 3 decimal <strong>places</strong><br/>]`,
+      image: "",
+      options: [],
+      answer: "5.436",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_141.png"/>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The residue of <em>f</em><br/>(<em>z</em><br/>) = <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_142.png"/>at<br/>z = 2 is`,
+      image: "",
+      options: [
+        `2<em>e</em>`,
+        `<em>e</em>`,
+        `<em>e</em><br/><sup>–1</sup>`,
+        `<em>e</em><br/><sup>–2</sup>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_143.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_144.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `There are multiple routes to reach from node A to node B as shown in the network.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_2.png"/><br/>The cost of travel on an edge between two nodes is given in rupees. Nodes 1, 2, 3, 4, 5<br/>and 6 are toll booths. The toll price at toll booths marked 1 and 5 is Rs. 40 and is Rs.<br/>20 for the other toll booths. Which is the cheapest route from node A to node B?`,
+      image: "",
+      options: [
+        `A - 1 - 3 - B`,
+        `A - 2 - B`,
+        `A - 6 - 2 - B`,
+        `A - 6 - 5 - B`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_3.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Read the following information carefully and answer the question below it:<br/>Rahul’s<br/>roll number in IES exam is a number consisting of three non-zero distinct digits, such<br/>that the sum of the digits at hundred’s and unit’s place is equal to that of half of the<br/>digit at ten’s place. Also the sum of all the possible three digit numbers obtained<br/>using these three digits without repetition is 2664. The digit in the tens place is`,
+      image: "",
+      options: [
+        `6`,
+        `8`,
+        `9`,
+        `2`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_4.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A rectangular water tank is 80 m × 40 m. Water flow into it through a pipe of 40<br/>cm<sup>2</sup><br/>at the opening at a speed of 10 km/h. By how much, the water level will rise in the tank<br/>in half an hour?`,
+      image: "",
+      options: [
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_5.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_6.png"/>`,
+        `<img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_7.png"/>`,
+        `None of these`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_8.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The question given below is followed by three statements. You have to study the question<br/>and all the three statements given to decide whether any information provided in the<br/>statement(s) is/ are redundant and can be dispensed with while answering the given<br/>question.<br/><br/>What is the cost of painting the two adjacent walls of a hall at Rs. 5 per m<sup>2</sup><br/>, which has no windows or doors?<br/><br/>I. The area of the hall is 24 m<sup>2</sup><br/>.<br/><br/>II. The breadth, length and height of the hall are in the ratio of 4 : 6 : 5<br/>respectively.<br/><br/>III. Area of one wall is 30 m<sup>2</sup><br/>.`,
+      image: "",
+      options: [
+        `I only`,
+        `II only`,
+        `III only`,
+        `Either I or III`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_9.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In the figure, if it is given that <em>O</em><br/>is the centre of the circle and <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_19.png"/>is_____<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_20.png"/>`,
+      image: "",
+      options: [
+        `105°`,
+        `130°`,
+        `150°`,
+        `75°`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_21.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <em>u</em><br/>(<em>x</em><br/>, <em>t</em><br/>) satisfy the initial and boundary value problem <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_45.png"/><br/><em>u</em><br/>(0, <em>t</em><br/>) = <em>u</em><br/>(π, <em>t</em><br/>) = 0, <em>t</em><br/>&gt; 0 and <em>u</em><br/>(<em>x</em><br/>, 0) = sin(<em>x</em><br/>) + 2sin(4<em>x</em><br/>), 0<br/>&lt;<em>x</em><br/>&lt;π, then the value of <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_46.png"/><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_47.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_48.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_49.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_50.png"/>`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_51.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A vector field <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_67.png"/><br/>The value of line integral <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_68.png"/><br/>is the circular path given by <em>x</em><br/><sup>2</sup><br/>+ <em>y</em><br/><sup>2</sup><br/>= a<sup>2</sup><br/>is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_69.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_70.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_71.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_72.png"/>`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_73.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_74.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A car is moving in a circular horizontal track of radius 10 m with a constant speed of<br/>10 m/s. A bob of mass 1 kg is suspended from the roof of the car by a light rigid rod.<br/>If acceleration due to gravity is 10 m/s<sup>2</sup><br/>, the angle made by the rod with the vertical is`,
+      image: "",
+      options: [
+        `zero`,
+        `30°`,
+        `45°`,
+        `60°`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_75.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_76.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `An engine operates on an air-standard diesel cycle. The compression ratio is 12 and the<br/>cut-off ratio is 2.4. The heat addition takes place at a rate of 15 kW. The ratio of<br/>specific heat is 1.4 and the engine is has a mechanical efficiency of 75%. The brake<br/>power output of the engine is`,
+      image: "",
+      options: [
+        `8.184 kW`,
+        `6.816 kW`,
+        `6.138 kW`,
+        `5.112 kW`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_77.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `For a real gas, the variation of temperature with pressure at constant enthalpy is given<br/>by :<br/><br/><em>T</em><br/>= <em>aP</em><br/><sup>2</sup><br/>; where <em>T</em><br/>and <em>P</em><br/>are absolute temperature and pressure and a is a positive constant, then which curve<br/>shows the correct variation of Joule-Thomson coefficient (μ<br/><em><br/><sub>J</sub><br/></em><br/>) with <em>T</em><br/>?<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_78.png"/>`,
+      image: "",
+      options: [
+        `1`,
+        `2`,
+        `3`,
+        `4`
+      ],
+      answer: "C",
+      solution: `(c)`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `In a circular pipe of radius <em>R</em><br/>, the velocity distribution is given by<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_79.png"/><br/>The ratio of momentum correction factor to the kinetic energy correction factor is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_80.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_81.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_82.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_83.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_84.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_85.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A component as shown in figure below is to be machined from a cast iron blank of 30 mm<br/>diameter and 80 mm length. The average cutting speed is 25 m/min, feed rate is 0.2<br/>mm/rev and the maximum depth of cut is 2 mm. The cutting force for cast iron is given by<br/>900 <em>df</em><br/>N, where <em>d</em><br/>is depth of cut in mm and <em>f</em><br/>is feed rate in mm/rev. The power required for machining process is:<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_86.png"/>`,
+      image: "",
+      options: [
+        `0.278 kW`,
+        `9 kW`,
+        `0.206 kW`,
+        `0.15 kW`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_87.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A racing car has a wheel track width of 1.5 m. Each wheel has a diameter of 0.6 m and a<br/>moment of inertia of 1.2 kg.m2. When the car rounding a curve of 150 m radius at a speed<br/>of 72 kmph to the left, the reaction due to gyroscopic couple at inner wheel is`,
+      image: "",
+      options: [
+        `14.2 N (upwards)`,
+        `14.2 N (downwards)`,
+        `28.4 N (upwards)`,
+        `28.4 N (downwards)`
+      ],
+      answer: "B",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_88.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Figure shows a single degree freedom system consisting of a gear of radius <em>r</em><br/>and moment of inertia <em>J</em><br/>, a rack of mass <em>m</em><br/>, a linear spring of stiffness <em>s</em><br/>, and a torsional spring with stiffness <em>k</em><br/>.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_89.png"/><br/>The natural frequency of the system is`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_90.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_91.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_92.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_93.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_94.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A circular plate of diameter 4 m is immersed in water in such a way that its greatest and<br/>least depth below the free surface are 4 m and 2 m respectively. The position of the<br/>centre of pressure from the free surface is`,
+      image: "",
+      options: [
+        `3.33 m`,
+        `2.667 m`,
+        `3.083 m`,
+        `5.333 m`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_95.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_96.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `The beam shown in the figure has a guided support at A and a spring support at B. The<br/>guided support permits vertical movement but no rotation. The deflection of end B due to<br/>uniform load of intensity <em>w</em><br/>would be<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_97.png"/>`,
+      image: "",
+      options: [
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_98.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_99.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_100.png"/>`,
+        `<br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_101.png"/>`
+      ],
+      answer: "D",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_102.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A two dimensional source flow has strength of 1 m<sup>2</sup><br/>/s. The pressure at a radial distance <em>r</em><br/>= 0.05 m is 200 kN/m<sup>2</sup><br/>. Assuming the flow is steady and irrotational. The pressure at <em>r</em><br/>= 0.5 m and the stream function ψ at an angle of 30° are`,
+      image: "",
+      options: [
+        `101 kPa, 0.84 m<sup>2</sup><br/>/s`,
+        `93.3 kPa, 8.31 m<sup>2</sup><br/>/s`,
+        `205 kPa, 0.083 m<sup>2</sup><br/>/s`,
+        `302.5 kPa, 7.15 m<sup>2</sup><br/>/s`
+      ],
+      answer: "C",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_103.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `A band brake as shown in the figure below, has coefficient of friction between the drum<br/>and the band as 0.25 and radius of drum 250 mm. If angle of wrap is 270° and a force of<br/>100 N is applied at the lever, the braking toque (in Nm) exerted on the drum is<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_104.png"/>`,
+      image: "",
+      options: [
+        `140.51 Nm`,
+        `154.31 Nm`,
+        `165.61 Nm`,
+        `180.41 Nm`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_105.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Let <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_106.png"/><br/>then the value of 2<em>A</em><br/>+ 3<em>B</em><br/>+ <em>C</em><br/>is`,
+      image: "",
+      options: [
+        `3`,
+        `4`,
+        `5`,
+        `6`
+      ],
+      answer: "A",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_107.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `The number of linearly independent eigen vectors of the matrix <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_108.png"/>is<br/>_____.`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_109.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two plates having infinite dimension perpendicular to the plane and constant width are<br/>shown in figure.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_110.png"/><br/>The value of shape factor <em>F</em><br/><sub>12</sub><br/>is ______. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.23",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_111.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A metal bar of length ‘<em>L</em><br/>’ is held between rigid supports at its ends. The bar is heated nonuniformly along its<br/>length as shown in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_112.png"/><br/>If the compressive stress developed is <em>kα</em><br/>Δ<em>T</em><br/><sub>1</sub><br/><em>E</em><br/>, then the value of <em>k</em><br/>is ______ [Correct upto three decimal places]`,
+      image: "",
+      options: [],
+      answer: "1.125",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_113.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_114.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Strain gauges <em>A</em><br/>and <em>B</em><br/>(oriented in the <em>x</em><br/>and <em>y</em><br/>directions, respectively) are attached to a rectangular aluminium plate with a thickness<br/>of <em>t</em><br/>= 5 mm. The plate is subjected to uniform normal stresses σ<br/><em><br/><sub>x </sub><br/></em><br/>and σ<sub>y</sub><br/>, as shown in figure and the gauge readings for normal strains are ε<br/><em><br/><sub>x</sub><br/></em><br/>= –0.00070 (Shortening gauge A) and ε<sub>y</sub><br/>= 0.00120 (elongating gauge B). If the modulus of elasticity and poisson’s ratio are 75<br/>GPa and 0.33 respectively, the magnitude of the change in thickness of the plate<br/>would be____ μm. [Correct upto two decimal places]<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_115.png"/>`,
+      image: "",
+      options: [],
+      answer: "1.23",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_116.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_117.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A beam made of steel is subjected to fluctuating stress such that the minimum stress and<br/>amplitude stress are equal. The ultimate tensile strength, yield stress and endurance<br/>limit are 550 MPa, 350 MPa and 280 MPa respectively. The surface finish factor, size<br/>factor and reliability factor are 0.78, 0.84 and 0.88. The theoretical stress<br/>concentration factor is 1.41 and the notch sensitivity factor is 0.89. Using the Goodman<br/>criterion with a factor of safety 1.8, the magnitude of mean stress on the beam is _____<br/>MPa. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "91.89",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_118.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An insulated rigid tank of volume 2 m3 contains air at 500 kPa and 50°C. A valve<br/>connected to the tank is opened and air is allowed to escape until the pressure inside<br/>drop to 100 kPa. The air temperature during this process is maintained constant by an<br/>electric resistance heater placed in the tank. The electric work done during this<br/>process is _____ kJ. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "800.56",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_119.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Water flows out from a tank of cross-sectional area 1000 mm<sup>2</sup><br/>through a small orifice of area 10 mm<sup>2</sup><br/>, located at y = 0. Initially the water is at level y = 1 m as shown in the figure.<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_120.png"/><br/>The time taken to reach the water level at y = 0.4 m is ____ seconds. (Correct upto two<br/>decimal places)`,
+      image: "",
+      options: [],
+      answer: "16.44",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_121.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A gating system having sprue height 15 cm and pouring basin height 5 cm to fill up the<br/>mould shown below. The total time required to fill the cavity is 35 sec (Neglect the<br/>time to fill the runner and riser).<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_122.png"/><br/>The area at the top of the sprue to ensure no aspiration will be _______ cm<sup>2</sup><br/>. [Round off to two decimal places]`,
+      image: "",
+      options: [],
+      answer: "14.27",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_123.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_124.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A company manufactures two products, <em>P</em><br/>and <em>Q</em><br/>. Each unit of <em>P</em><br/>requires 3 machine hours and each unit of <em>Q</em><br/>requires 6 machine hours for production. The total available machine hours per day are<br/>360. The company has a daily demand contract to supply at least 20 units of <em>Q</em><br/>. The profit per unit is <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_125.png"/><br/>fos P and <img align="absmiddle" alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_126.png"/><br/>for Q. Due to raw material limits, the total number of units of <em>P</em><br/>and <em>Q </em><br/>produced per day cannot exceed 80 units. The optimum number of units of <em>P</em><br/>that maximizes profit are _______. [Rounded off to the nearest integer]`,
+      image: "",
+      options: [],
+      answer: "40",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_127.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_128.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A 10 mm diameter rod protrude from a steam bath at 100°C to a length of 30 cm, into an<br/>atmosphere at 20°C. The temperature at the other end of rod is 23°C. If the heat<br/>transfer coefficient is 24 W/m<sup>2</sup><br/>K, then the thermal conductivity of the rod material is _____ W/mK. (Correct upto two<br/>decimal places) [Assume insulated tip at the end]`,
+      image: "",
+      options: [],
+      answer: "54.65",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_129.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_130.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A machine is mounted at the midspan of a 2 m long simply supported beam of elastic<br/>modulus 200 × 10<sup>9</sup><br/>N/m<sup>2</sup><br/>and moment of inertia of 1.5 × 10<sup>–6</sup><br/>m<sup>4</sup><br/>. An experiment is carried on the system during which the machine is subjected to a<br/>harmonic excitation magnitude 2500 N at different<br/>excitation frequency, the largest<br/>steady state amplitude record of during the experiment was 3 mm. The damping ratio of<br/>the system is ________. (Correct upto two decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.23",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_131.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `An air refrigerator working on Bell-Coleman cycle takes air into the compressor at 1.5<br/>bar and –7°C. It is compressed to 6 bar and then cooled to 28°C at the same pressure<br/>before entering expander. The isentropic efficiencies of both compressor and expander<br/>are 85%. The heat rejected<br/><br/>in the cooler is ______ kJ/kg. (Correct upto two decimal places)<br/><br/>[Take <em>c</em><br/><sub><br/><em>p</em><br/>,air<br/></sub><br/>= 1.005 kJ/kg and γ<sub>air</sub><br/>= 1.4]`,
+      image: "",
+      options: [],
+      answer: "117.67",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_132.png"/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_133.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A shaft basis system has a basic size of 30 mm. The shaft is to be assembled with a hole<br/>with an interference fit. The fit has minimum interference of 0.01 mm and a maximum<br/>interference of 0.036 mm. If the hole tolerance is specified to be 1.6 times the shaft<br/>tolerance, then the higher limit of the hole is ___ mm.. [Correct upto two decimal<br/>places]`,
+      image: "",
+      options: [],
+      answer: "29.98",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_134.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A material has a Young’s modulus of 150 GPa. The material is loaded to a stress of 250<br/>MPa as shown in the figure. If the material has a yield strength of 90 MPa, then which<br/>of the following statements are correct?<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_135.png"/>`,
+      image: "",
+      options: [
+        `Residual strain in material after unloading is 2.03 × 10<sup>–2</sup><br/>.`,
+        `Value of strain recovered after unloading is 1.67 × 10<sup>–3</sup><br/>.`,
+        `Strain in material at yield stress is 6 × 10<sup>–4</sup><br/>.`,
+        `Strain in material at 250 MPa is 2.78 × 10<sup>–3</sup><br/>.`
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_136.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `A steam power-plant operates on the ideal regenerative rankine cycle with one open feed<br/>water heater. The T-s diagram for the same is given as<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_137.png"/><br/>Which of the following statements are correct?<br/><br/>[Take, <em>h</em><br/><sub>1</sub><br/>= 185 kJ/kg; <em>h</em><br/><sub>2</sub><br/>= 190 kJ/kg; <em>h</em><br/><sub>3</sub><br/>= 800 kJ/kg; <em>h</em><br/><sub>6</sub><br/>= 2800 kJ/kg; <em>h</em><br/><sub>7</sub><br/>= 2100 kJ/kg]`,
+      image: "",
+      options: [
+        `The fraction of steam extracted from the turbine is 0.274.`,
+        `The fraction of steam extracted from the turbine is 0.234.`,
+        `The thermal efficiency, if the heat supplied is 2800 kJ/kg is 47.6%.`,
+        `The thermal efficiency, if the heat supplied is 2800 kJ/kg is 37.6%.`
+      ],
+      answer: ["B", "C"],
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_138.png"/>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A random variable X has the following probability function:<br/><br/><img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_139.png"/><br/>The probability <em>P</em><br/>(0<br/>&lt;<em>X</em><br/>&lt;6) is _____. (Correct upto three decimal places)`,
+      image: "",
+      options: [],
+      answer: "0.816",
+      solution: `<img alt="" src="js/questions/advance_level_test4_full_syllabus_gate_2026_me/img_140.png"/>`
+    }
+  ]
+});
+
+registerTest({
+  series: "me-gate-pyq",
   name: "TWT - Strength of Materials-1",
   date: "July 15, 2026",
   questions: [
