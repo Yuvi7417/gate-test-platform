@@ -50,6 +50,18 @@ async function parse() {
     $qTextContainer.find('.mjx-chtml').remove();
     $qTextContainer.find('.MJX_Assistive_MathML').remove();
     
+    $qTextContainer.find('script[type^="math/tex"]').each(function() {
+      const type = $(this).attr('type');
+      let math = $(this).html();
+      math = math.replace(/\\/g, '\\\\');
+      
+      if (type.includes('mode=display')) {
+        $(this).replaceWith(`\\$\\$ ${math} \\$\\$`);
+      } else {
+        $(this).replaceWith(`\\\\( ${math} \\\\)`);
+      }
+    });
+    
     // If it's a multiple choice, extract options
     const options = [];
     const $ol = $qTextContainer.find('ol').first();
@@ -98,7 +110,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "quiz",\n  name: "WQT - Digital logic-1|Boolean algebra",\n  date: "Jul 30, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital logic-1|Boolean algebra",\n  date: "Jul 30, 2026",\n  questions: [\n`;
   
   for (const q of questions) {
     jsContent += `    {\n`;
