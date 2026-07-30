@@ -74,6 +74,7 @@ async function parse() {
     }
     
     let htmlContent = $qTextContainer.html().trim();
+    htmlContent = htmlContent.replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' '); // remove newlines and extra spaces
     
     // Answer
     const correctText = $q.find('.correct_solution').text();
@@ -105,13 +106,14 @@ async function parse() {
       marks: marks,
       neg: penalty,
       text: escapeBackticks(htmlContent),
-      options: options.map(opt => escapeBackticks(opt)),
+      options: options.map(opt => escapeBackticks(opt.replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' '))),
       answer: answer
     });
   }
   
   let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital logic-1|Boolean algebra",\n  date: "Jul 30, 2026",\n  questions: [\n`;
   
+  let qNum = 1;
   for (const q of questions) {
     jsContent += `    {\n`;
     jsContent += `      marks: ${q.marks},\n`;
@@ -142,8 +144,9 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-dl1/${qNum}.png" style="max-width: 100%;">\`\n`;
     jsContent += `    },\n`;
+    qNum++;
   }
   
   jsContent += `  ]\n});\n`;
