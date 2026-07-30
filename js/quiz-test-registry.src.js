@@ -125,8 +125,8 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0.33,
-      type: "MCQ",
+      neg: 0,
+      type: "MSQ",
       text: `<p></p> <p>In digital logic, if \\( A\\oplus B=C \\), then which one of the following is true? </p> <p></p>`,
       image: "",
       options: [
@@ -135,7 +135,7 @@ registerTest({
         `\\( A\\oplus B\\oplus C=0 \\)`,
         `Both (A) and (B)`,
       ],
-      answer: "N",
+      answer: ["A", "B", "C", "D"],
       solution: `<img src="/images/quiz/wqt-dl1/9.png" style="max-width: 100%;">`
     },
     {
@@ -307,7 +307,7 @@ registerTest({
         `\\( x y z+x^{\\prime} y+x y z^{\\prime}=y \\)`,
         `\\( (A+B)^{\\prime}\\left(A^{\\prime}+B^{\\prime}\\right)^{\\prime}=0 \\)`,
       ],
-      answer: ["A"],
+      answer: ["A", "C", "D"],
       solution: `<img src="/images/quiz/wqt-dl2/5.png" style="max-width: 100%;">`
     },
     {
@@ -382,7 +382,7 @@ registerTest({
         `\\( c\\left(a b+a b^{\\prime}\\right)+(a+b)^{\\prime} c=a+b^{\\prime} \\)`,
         `\\( \\left(\\left(b+b^{\\prime}\\right)^{\\prime}+(a+c)\\left(a+c^{\\prime}\\right)\\right)\\left(a^{\\prime}\\left(a^{\\prime}+b\\right)\\right)=0 \\)`,
       ],
-      answer: ["A"],
+      answer: ["A", "B", "D"],
       solution: `<img src="/images/quiz/wqt-dl2/10.png" style="max-width: 100%;">`
     },
   ]
@@ -520,7 +520,7 @@ registerTest({
         `If \\( \\mathrm{A} \\oplus \\mathrm{B}=\\mathrm{A} \\oplus \\mathrm{C} \\), then \\( \\mathrm{B}=\\mathrm{C} \\)`,
         `If \\( \\mathrm{A} \\odot \\mathrm{B}=\\mathrm{A} \\odot \\mathrm{C} \\), then \\( \\mathrm{B}=\\mathrm{C} \\)`,
       ],
-      answer: ["A"],
+      answer: ["A", "B"],
       solution: `<img src="/images/quiz/wqt-dl3/9.png" style="max-width: 100%;">`
     },
     {
@@ -535,7 +535,7 @@ registerTest({
         `If \\( \\mathrm{y}=\\mathrm{z} \\), then \\( \\mathrm{x}+\\mathrm{y}=\\mathrm{x}+\\mathrm{z} \\)`,
         `If \\( y=z \\), then \\( x y=x z \\)`,
       ],
-      answer: ["C"],
+      answer: ["C", "D"],
       solution: `<img src="/images/quiz/wqt-dl3/10.png" style="max-width: 100%;">`
     },
     {
@@ -550,7 +550,7 @@ registerTest({
         `If \\( A+B=C \\), then \\( A+B+D=C+D \\)`,
         `If \\( A+B+C=C+D \\), then \\( A+B=D \\)`,
       ],
-      answer: ["A"],
+      answer: ["A", "C"],
       solution: `<img src="/images/quiz/wqt-dl3/11.png" style="max-width: 100%;">`
     },
     {
@@ -565,7 +565,7 @@ registerTest({
         `\\( A \\oplus B C=(A \\oplus B)(A \\oplus C) \\)`,
         `\\( x+y=x \\oplus y \\oplus x y \\)`,
       ],
-      answer: ["B"],
+      answer: ["B", "D"],
       solution: `<img src="/images/quiz/wqt-dl3/12.png" style="max-width: 100%;">`
     },
     {
@@ -580,7 +580,7 @@ registerTest({
         `\\( x(y \\equiv z)=x y \\equiv x z \\)`,
         `\\( x+(y \\equiv z)=(x+y) \\equiv(x+z) \\)`,
       ],
-      answer: ["A"],
+      answer: ["A", "D"],
       solution: `<img src="/images/quiz/wqt-dl3/13.png" style="max-width: 100%;">`
     },
     {
