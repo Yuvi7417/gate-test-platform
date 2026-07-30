@@ -625,7 +625,6 @@ function renderTestList(t, filter) {
         " " + year + "-" + testType + " Test-" +
         testNumber +
         " (" + bracket + ")",
-      bracket: bracket,
       from: s[1],
       till: formatDate(t.endDate),
       duration: duration,
@@ -665,24 +664,10 @@ function renderTestList(t, filter) {
     const matchType = typeFilter === "All" || itTestType === typeFilter;
     return matchStatus && matchType;
   });
-  if (t.id === "weekly-cs-gate-2027") {
-    const groups = {};
-    shown.forEach((it) => {
-      const subject = it.bracket || "Other";
-      if (!groups[subject]) groups[subject] = [];
-      groups[subject].push(it);
-    });
-
-    let html = "";
-    let groupIndex = 1;
-    for (const subject in groups) {
-      const gTests = groups[subject];
-      const doneCount = gTests.filter((x) => x.status === "attempted").length;
-      const totalCount = gTests.length;
-      const indexStr = String(groupIndex).padStart(2, "0");
-      groupIndex++;
-      
-      const testsHtml = gTests.map((it) => `
+  grid.innerHTML =
+    shown
+      .map(
+        (it) => `
         <div class="test-card status-${it.status}">
           <span class="test-ribbon">${it.status === "attempted" ? "Completed" : "Active"}</span>
           <div class="test-card-top">
@@ -704,93 +689,21 @@ function renderTestList(t, filter) {
             <div class="test-meta-row">
               <span>${clockIconInline}${it.duration}</span>
               <span>${docIconInline}${it.questions} Questions</span>
-              ${it.status === "attempted" ? \`<span class="test-score">\${trophyIconInline}Score: \${it.score}/\${it.maxScore || 100}</span>\` : ""}
+              ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/${it.maxScore || 100}</span>` : ""}
             </div>
             <div style="display: flex; gap: 8px;">
-              ${it.status === "attempted" ? \`<button class="btn-start-test" data-name="\${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)">Reattempt</button>\` : ""}
-              <button class="btn-start-test ${it.status}" data-name="\${it.name.replace(/"/g, "&quot;")}" onclick="\${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
+              ${it.status === "attempted" ? `<button class="btn-start-test" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)">Reattempt</button>` : ""}
+              <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
                 ${it.status === "attempted" ? "View Result" : "Start Test"}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
             </div>
           </div>
-        </div>\`
-      ).join("");
-
-      html += `
-        <div class="subject-group-container" style="margin-bottom: 1.5rem; border: 1px solid #eee; border-radius: 12px; background: #fff; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);" onmouseenter="this.querySelector('.subject-group-body').style.gridTemplateRows='1fr'; this.querySelector('.sg-chevron').style.transform='rotate(180deg)';" onmouseleave="this.querySelector('.subject-group-body').style.gridTemplateRows='0fr'; this.querySelector('.sg-chevron').style.transform='rotate(0deg)';">
-          <div class="subject-group-header" style="display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; cursor: default; background: #fafafa; border-bottom: 1px solid #f0f0f0;">
-            <div style="font-size: 16px; font-weight: 600; color: #111;">
-              <span style="color: #888; font-weight: 500; margin-right: 8px;">${indexStr}</span> ${subject}
-            </div>
-            <div style="display: flex; align-items: center; gap: 16px;">
-              <div style="font-size: 13px; color: #555; font-weight: 500; background: #eaf5ef; padding: 4px 10px; border-radius: 20px;">
-                <span style="color: #0b9e43; font-weight: 700;">${doneCount}</span> / ${totalCount} Done
-              </div>
-              <div class="sg-chevron" style="transition: transform 0.3s; display: flex; align-items: center; color: #777;">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="subject-group-body" style="display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.4s ease-in-out; background: #fdfdfd;">
-            <div style="overflow: hidden;">
-              <div style="padding: 24px; display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));">
-                ${testsHtml}
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-    
-    // Ensure parent grid is displayed as block so that the accordions stretch properly
-    grid.style.display = 'block';
-    
-    grid.innerHTML = html || \`<div class="empty-state"><h4>No tests in this filter</h4><p>Try switching to "ALL" to see every test in this series.</p></div>\`;
-  } else {
-    // Normal flat rendering for other test series
-    grid.style.display = ''; // reset to default CSS grid
-    grid.innerHTML =
-      shown
-        .map(
-          (it) => \`
-          <div class="test-card status-\${it.status}">
-            <span class="test-ribbon">\${it.status === "attempted" ? "Completed" : "Active"}</span>
-            <div class="test-card-top">
-              <div class="test-icon-wrap">
-                <div class="box">\${it.status === "attempted" ? checkIconInline : capIconInline}</div>
-              </div>
-              <div class="test-info">
-                <div class="test-title-row">
-                  <div class="test-title">\${it.name}</div>
-                </div>
-                <div class="test-dates">
-                  <span>\${calIconInline}Available From: <b>\${it.from}</b></span>
-                  <span>\${calIconInline}Available Till: <b>\${it.till}</b></span>
-                </div>
-              </div>
-              <span class="test-online">Online</span>
-            </div>
-            <div class="test-card-bottom">
-              <div class="test-meta-row">
-                <span>\${clockIconInline}\${it.duration}</span>
-                <span>\${docIconInline}\${it.questions} Questions</span>
-                \${it.status === "attempted" ? \`<span class="test-score">\${trophyIconInline}Score: \${it.score}/\${it.maxScore || 100}</span>\` : ""}
-              </div>
-              <div style="display: flex; gap: 8px;">
-                \${it.status === "attempted" ? \`<button class="btn-start-test" data-name="\${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)">Reattempt</button>\` : ""}
-                <button class="btn-start-test \${it.status}" data-name="\${it.name.replace(/"/g, "&quot;")}" onclick="\${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
-                  \${it.status === "attempted" ? "View Result" : "Start Test"}
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </button>
-              </div>
-            </div>
-          </div>\`,
-        )
-        .join("") ||
-      \`
-          <div class="empty-state"><h4>No tests in this filter</h4><p>Try switching to "ALL" to see every test in this series.</p></div>\`;
-  }
+        </div>`,
+      )
+      .join("") ||
+    `
+        <div class="empty-state"><h4>No tests in this filter</h4><p>Try switching to "ALL" to see every test in this series.</p></div>`;
 }
 
 const calIconInline =
