@@ -1,32 +1,16 @@
 const fs = require('fs');
 const cheerio = require('cheerio');
 const path = require('path');
-const https = require('https');
 
 const html = fs.readFileSync('test.html', 'utf8');
 const $ = cheerio.load(html);
 
 const questions = [];
-const imageDir = path.join(__dirname, 'images', 'quiz', 'wqt-dl1');
-if (!fs.existsSync(imageDir)) {
-  fs.mkdirSync(imageDir, { recursive: true });
-}
-
 let imageIndex = 1;
-const downloadImage = (url, filepath) => {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      const fileStream = fs.createWriteStream(filepath);
-      res.pipe(fileStream);
-      fileStream.on('finish', () => {
-        fileStream.close();
-        resolve();
-      });
-    }).on('error', (err) => {
-      fs.unlink(filepath, () => reject(err));
-    });
-  });
-};
+
+function escapeBackticks(str) {
+  return str.replace(/`/g, '\\`');
+}
 
 async function parse() {
   const qDivs = $('.res_question').toArray();
@@ -55,17 +39,13 @@ async function parse() {
       if (src && src.startsWith('http')) {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
-        const filepath = path.join(imageDir, filename);
-        await downloadImage(src, filepath);
+        // We assume images are already downloaded to images/quiz/wqt-dl1/ from previous run
         $(img).attr('src', `/images/quiz/wqt-dl1/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '100%');
       }
     }
     
-    // Convert mathjax previews back to readable text (optional, but keep it as is if there's script tags)
-    // Actually the standard parser we used earlier just grabbed the raw html:
-    // Remove the annoying MathJax_Preview and mjx-chtml spans and just keep the <script type="math/tex">
     $qTextContainer.find('.MathJax_Preview').remove();
     $qTextContainer.find('.mjx-chtml').remove();
     $qTextContainer.find('.MJX_Assistive_MathML').remove();
@@ -109,26 +89,55 @@ async function parse() {
     }
     
     questions.push({
-      num: parseInt(num),
       type: type,
       marks: marks,
-      penalty: penalty,
-      text: htmlContent,
-      options: options.length > 0 ? options : undefined,
+      neg: penalty,
+      text: escapeBackticks(htmlContent),
+      options: options.map(opt => escapeBackticks(opt)),
       answer: answer
     });
   }
   
-  const jsContent = `
-window.registerTest({
-  series: "quiz",
-  name: "WQT - Digital logic-1",
-  questions: ${JSON.stringify(questions, null, 4)}
-});
-`;
-
-  fs.appendFileSync('js/quiz-test-registry.src.js', jsContent);
-  console.log('Done parsing ' + questions.length + ' questions!');
+  let jsContent = `registerTest({\n  series: "quiz",\n  name: "WQT - Digital logic-1|Boolean algebra",\n  date: "Jul 30, 2026",\n  questions: [\n`;
+  
+  for (const q of questions) {
+    jsContent += `    {\n`;
+    jsContent += `      marks: ${q.marks},\n`;
+    jsContent += `      neg: ${q.neg},\n`;
+    jsContent += `      type: "${q.type}",\n`;
+    jsContent += `      text: \`${q.text}\`,\n`;
+    jsContent += `      image: "",\n`;
+    
+    if (q.options && q.options.length > 0) {
+      jsContent += `      options: [\n`;
+      for (const opt of q.options) {
+        jsContent += `        \`${opt}\`,\n`;
+      }
+      jsContent += `      ],\n`;
+    } else {
+      jsContent += `      options: [],\n`;
+    }
+    
+    if (Array.isArray(q.answer)) {
+        if (q.type === 'NAT') {
+            jsContent += `      answer: [${q.answer.join(', ')}],\n`;
+        } else {
+            jsContent += `      answer: [${q.answer.map(a => `"${a}"`).join(', ')}],\n`;
+        }
+    } else if (typeof q.answer === 'number') {
+        jsContent += `      answer: "${q.answer}",\n`;
+    } else {
+        jsContent += `      answer: "${q.answer}",\n`;
+    }
+    
+    jsContent += `      solution: \`\`\n`;
+    jsContent += `    },\n`;
+  }
+  
+  jsContent += `  ]\n});\n`;
+  
+  fs.writeFileSync('js/quiz-test-registry.src.js', jsContent);
+  console.log('Done rewriting format!');
 }
 
 parse().catch(console.error);
