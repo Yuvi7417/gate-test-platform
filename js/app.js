@@ -313,10 +313,7 @@ window.testSeries = [
       },
     ],
     schedule: [
-      //   ["Test - 8", "Apr 5, 2026"],
-      //   ["Test - 7", "Mar 1, 2026"],
-      //   ["Test - 6", "Jan 18, 2026"],
-      //   ["Test - 5", "Dec 14, 2025"],
+      ["WQT - Digital logic-1|Boolean algebra", "Jul 30, 2026"],
     ],
     price: "₹88 + GST",
     basePrice: 88,
