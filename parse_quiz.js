@@ -39,8 +39,8 @@ async function parse() {
       if (src && src.startsWith('http')) {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
-        // We assume images are already downloaded to images/quiz/wqt-dl3/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-dl3/${filename}`);
+        // We assume images are already downloaded to images/quiz/wqt-dl4/ from previous run
+        $(img).attr('src', `/images/quiz/wqt-dl4/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '100%');
       }
@@ -81,9 +81,9 @@ async function parse() {
     let answer = null;
     let correct = [];
     if (type === 'MCQ' || type === 'MSQ') {
-      const ansMatch = correctText.match(/Correct Answer: ([A-Z, ]+)/);
+      const ansMatch = correctText.match(/Correct Answer: ([A-Z, ;]+)/i);
       if (ansMatch) {
-        const ansLetters = ansMatch[1].split(',').map(s => s.trim());
+        const ansLetters = ansMatch[1].split(/[,;]/).map(s => s.trim().toUpperCase()).filter(s => s);
         if (type === 'MCQ') {
           answer = ansLetters[0]; // e.g., 'B'
         } else {
@@ -111,7 +111,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital Logic-3|Boolean algebra",\n  date: "Aug 13, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital Logic-4|Boolean algebra",\n  date: "Aug 20, 2026",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -144,7 +144,7 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-dl3/${qNum}.png" style="max-width: 100%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-dl4/${qNum}.png" style="max-width: 100%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }
