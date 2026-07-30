@@ -561,6 +561,7 @@ function renderTestList(t, filter) {
   let twSeen = 0;
   let fltSeen = 0;
   let swtSeen = 0; // For Subjectwise tests
+  let wqtSeen = 0; // For Weekly Quiz tests
 
   const items = t.schedule.map((s, i) => {
     const rawName = s[0] || "";
@@ -568,6 +569,7 @@ function renderTestList(t, filter) {
     
     const isTopicwise = upperName.startsWith("TWT");
     const isFullTest = upperName.startsWith("FST") || upperName.startsWith("FLT") || upperName.startsWith("FULL TEST");
+    const isWeeklyQuiz = upperName.startsWith("WQT");
     
     // Strip the prefix (e.g. "TWT - ", "FLT - ") to get the bracket label
     const label = rawName.replace(/^[A-Za-z\s]+-\s*/, "");
@@ -588,6 +590,13 @@ function renderTestList(t, filter) {
       bracket = label;
       duration = "45 Mins";
       defaultQuestions = 17;
+    } else if (isWeeklyQuiz) {
+      testType = "Weekly Quiz";
+      testNumber = wqtSeen + 1;
+      wqtSeen++;
+      bracket = label;
+      duration = "45 Mins";
+      defaultQuestions = 0;
     } else {
       // Default to Subjectwise
       testType = "Subjectwise";
@@ -601,6 +610,15 @@ function renderTestList(t, filter) {
     const yearMatch = t.examTag ? t.examTag.match(/\d{4}/) : null;
     const year = yearMatch ? yearMatch[0] : "2027";
     
+    // Dynamic question count logic
+    let finalQuestions = s[2] !== undefined ? s[2] : defaultQuestions;
+    if (isWeeklyQuiz && window.apexTestRegistry) {
+      const regTest = window.apexTestRegistry.find(tr => tr.name === rawName);
+      if (regTest && regTest.questions) {
+        finalQuestions = regTest.questions.length;
+      }
+    }
+    
     return {
       name:
         t.code +
@@ -610,7 +628,7 @@ function renderTestList(t, filter) {
       from: s[1],
       till: formatDate(t.endDate),
       duration: duration,
-      questions: s[2] !== undefined ? s[2] : defaultQuestions,
+      questions: finalQuestions,
       status: "unattempted",
       score: null,
     };
@@ -636,6 +654,8 @@ function renderTestList(t, filter) {
     const upperName = (it.name || "").toUpperCase();
     if (upperName.includes("-TOPICWISE TEST-") || upperName.includes("TWT -")) {
       itTestType = "Topicwise";
+    } else if (upperName.includes("-WEEKLY QUIZ TEST-") || upperName.includes("WQT -")) {
+      itTestType = "Weekly Quiz";
     } else if (upperName.includes("-SUBJECTWISE TEST-") || upperName.includes("SWT -")) {
       itTestType = "Subjectwise";
     } else if (upperName.includes("FULL TEST") || upperName.includes("FLT -") || upperName.includes("FST -")) {
