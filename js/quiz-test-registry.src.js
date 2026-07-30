@@ -446,7 +446,7 @@ registerTest({
         `\\( \\mathrm{X}=0, \\mathrm{Y}=1, \\mathrm{Z}=0 \\)`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-dl3/4.png" style="max-width: 100%;">`
+      solution: `<p><a href="https://www.youtube.com/watch?v=3Wj-BXY41MU&t=459s" target="_blank">Detailed Video Solution</a></p><img src="/images/quiz/wqt-dl3/4.png" style="max-width: 100%;">`
     },
     {
       marks: 1,
@@ -461,7 +461,7 @@ registerTest({
         `NOR`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-dl3/5.png" style="max-width: 100%;">`
+      solution: `<p><a href="https://www.youtube.com/watch?v=3Wj-BXY41MU&t=1720s" target="_blank">Detailed Video Solution</a></p><img src="/images/quiz/wqt-dl3/5.png" style="max-width: 100%;">`
     },
     {
       marks: 2,
@@ -611,7 +611,7 @@ registerTest({
         `\\( BC \\)`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-dl3/15.png" style="max-width: 100%;">`
+      solution: `<p><a href="https://www.youtube.com/watch?v=3Wj-BXY41MU&t=2659s" target="_blank">Detailed Video Solution</a></p><img src="/images/quiz/wqt-dl3/15.png" style="max-width: 100%;">`
     },
   ]
 });
