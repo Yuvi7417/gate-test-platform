@@ -313,7 +313,6 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["WQT - Digital logic-1|Boolean algebra", "Jul 30, 2026"],
     ],
     price: "₹88 + GST",
     basePrice: 88,
