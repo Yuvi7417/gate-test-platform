@@ -4,5 +4,5 @@ node_modules/
 firebase-service-account.json
 js/test-registry.src.js
 js/full-test-registry.src.js
-js/ME-test-registry.src.js  
- 
+js/ME-test-registry.src.js
+js/quiz-test-registry.src.js

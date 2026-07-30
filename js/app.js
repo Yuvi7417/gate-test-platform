@@ -516,26 +516,25 @@ window.testSeries = [
   },
 
   {
-    id: "je-foundation",
-    code: "JE",
-    examTag: "AE & JE",
-    subjectTag: "Multi-Discipline",
-    title: "AE & JE Foundation Test Series",
-    f: "aeje",
+    id: "weekly-cs-gate-2027",
+    code: "CSE",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "Weekly CS GATE 2027 Test Series",
+    f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 20,
+    tests: 130,
     startDate: "2025-09-15",
     endDate: "2026-08-15",
-    session: "2025-2026",
-    desc: "A foundation-level objective series covering core engineering subjects plus general studies, structured for state AE & JE recruitment exams.",
+    session: "2026-2027",
+    desc: "Weekly test series for GATE CSE 2026 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
     features: [
-      "Core subject + GS coverage",
-      "State-pattern question style",
-      "Negative marking simulation",
-      "Detailed solution PDFs",
-      "Rank-wise comparison",
-      "Weekly progress tracker",
+      "Weekly coverage of all core GATE CSE subjects",
+      "Scheduled aligned with exam calendar",
+      "Topic-wise cumulative testing",
+      "Detailed solutions for every question",
+      "Performance tracking against peers",
     ],
     batches: [
       {
@@ -546,13 +545,15 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["Test - 8", "Apr 5, 2026"],
-      ["Test - 7", "Mar 1, 2026"],
-      ["Test - 6", "Jan 18, 2026"],
-      ["Test - 5", "Dec 14, 2025"],
+      //   ["Test - 8", "Apr 5, 2026"],
+      //   ["Test - 7", "Mar 1, 2026"],
+      //   ["Test - 6", "Jan 18, 2026"],
+      //   ["Test - 5", "Dec 14, 2025"],
     ],
-    price: "₹450 + GST",
-    comingSoon: true
+    price: "₹88 + GST",
+    basePrice: 88,
+    brandLabel: "Weekly Classes"
+    // comingSoon: true
   },
 ];
 
