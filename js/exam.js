@@ -726,11 +726,12 @@ function openInstructions(testName) {
   pendingTestName = testName || "";
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
 
-  const isTopicwise = (testName || "").includes("Topicwise");
-  const isFullTest = (testName || "").includes("Full Test");
+  const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
+  const isWeeklyQuiz = (testName || "").includes("WQT") || (testName || "").toUpperCase().includes("WEEKLY QUIZ");
+  const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("FLT") || (testName || "").includes("FST");
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
-    if (isTopicwise) instrDurationElement.textContent = "45 minutes";
+    if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
   }
@@ -895,11 +896,12 @@ function startPlayer(testName, fetchedQuestions) {
   playerCurrent = 0;
   const testNameUpper = (testName || "").toUpperCase();
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
-  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT");
+  const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
+  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST");
   
   if (isFullTest) {
     playerDurationMins = 180;
-  } else if (isTopicwiseTest) {
+  } else if (isTopicwiseTest || isWeeklyQuizTest) {
     playerDurationMins = 45;
   } else {
     playerDurationMins = 90; // Default for Subject Wise Tests etc.
