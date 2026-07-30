@@ -1072,3 +1072,211 @@ registerTest({
   ]
 });
 
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Digital Logic-6|Number System",
+  date: "Sept 3, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( X \\) be the number of distinct \\( 16 \\)-bit integers in \\( 2's \\) complement representation. Let \\( Y \\) be the number of distinct \\( 16 \\)-bit integers in sign magnitude representation Then \\( X - Y \\) is______. </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-dl6/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Zero has two representations in</p> <p></p>`,
+      image: "",
+      options: [
+        `Sign-magnitude<br>&nbsp;`,
+        `\\( 2's \\) complement<br>&nbsp;`,
+        `\\( 1's \\) complement<br>&nbsp;`,
+        `None of the above`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dl6/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Given that numbers A and B are two \\( 8 \\)-bit 2's complement numbers with \\( \\mathrm{A}=11111111, \\mathrm{~B}=11111111 \\). Then sum \\( A+B \\) is \\( \\qquad \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 00000010 \\)<br>&nbsp;`,
+        `\\( 11111100 \\)<br>&nbsp;`,
+        `\\( 11111110 \\)<br>&nbsp;`,
+        `\\( 00000000 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl6/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The \\( 2 's \\) complement representation of the number \\( (-100)_{10} \\) in an \\( 8 \\) bit computer is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 10011011 \\)<br>&nbsp;`,
+        `\\( 01100100 \\)<br>&nbsp;`,
+        `\\( 11100100 \\)<br>&nbsp;`,
+        `\\( 10011100 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl6/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The smallest integer that can be represented by an \\( 8\\text{-bit} \\) number in \\( 2's \\) complement form is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -256 \\)<br>&nbsp;`,
+        `\\( -128 \\)<br>&nbsp;`,
+        `\\( -127 \\)<br>&nbsp;`,
+        `\\( 0 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl6/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The number \\( -6 \\) can be represented as \\( 1010 \\) in \\( 4 \\)-bit \\( 2 \\)'s complement representation. Which of the following is/are CORRECT \\( 2 \\) 's complement representation(s) of \\( -6 \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1000 \\: 1010 \\) in \\( 8 \\) -bits<br>&nbsp;`,
+        `\\( 1111 \\: 1010 \\) in \\( 8 \\)-bits<br>&nbsp;`,
+        `\\( 1000 \\: 0000 \\: 0000 \\:1010 \\) in \\( 16 \\)-bits<br>&nbsp;`,
+        `\\( 1111 \\: 1111 \\: 1111 \\: 1010 \\) in \\( 16 \\)-bits`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-dl6/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is the representation of the decimal number \\( (-147) \\) in \\( 2's \\) compliment notation on a \\( 12 \\)-bit machine?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 111101101100 \\)<br>&nbsp;`,
+        `\\( 110001001101 \\)<br>&nbsp;`,
+        `\\( 111101101101 \\)<br>&nbsp;`,
+        `\\( 000001101101 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl6/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The maximum and minimum value represented in signed \\( 16 \\)-bit \\( 2's \\) compliment representation are<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -32768 \\) and \\( 32767 \\)<br>&nbsp;`,
+        `\\( 0 \\) and \\( 32767 \\)<br>&nbsp;`,
+        `\\( 0 \\) and \\( 65535 \\)<br>&nbsp;`,
+        `\\( -16384 \\) and \\( 16383 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl6/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>In an \\( 8 \\)-bit representation of computer system, the decimal number \\( 47 \\) has to be subtracted from \\( 38 \\) and the result in binary \\( 2's \\) complement is \\( \\qquad \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 11110111 \\)<br>&nbsp;`,
+        `\\( 10001001 \\)<br>&nbsp;`,
+        `\\( 11111001 \\)<br>&nbsp;`,
+        `\\( 11110001 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl6/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In an \\( 8 \\) bit representation of computer system the decimal number \\( 26 \\) has to be subtracted from \\( 22 \\) and the result in binary \\( 2 \\)'s complement is \\( -------- \\) </p>`,
+      image: "",
+      options: [],
+      answer: "11111100",
+      solution: `<img src="/images/quiz/wqt-dl6/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Subtract \\( (1010)_{2} \\) from \\( (1101)_{2} \\) using first complement </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (1100)_{2} \\)<br>&nbsp;`,
+        `\\( (0101)_{2} \\)<br>&nbsp;`,
+        `\\( (1001)_{2} \\)<br>&nbsp;`,
+        `\\( (0011)_{2} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl6/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The range of \\( n \\)-bit signed magnitude representation is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\) to \\( 2^{n}-1 \\)<br>&nbsp;`,
+        `\\( -\\left(2^{n-1}-1\\right) \\) to \\( \\left(2^{n-1}-1\\right) \\)<br>&nbsp;`,
+        `\\( -\\left(2^{n}-1\\right) \\) to \\( \\left(2^{n}-1\\right) \\)<br>&nbsp;`,
+        `\\( 0 \\) to \\( 2^{n-1}-1 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl6/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Determine the base of the numbers for the following operation to be correct: \\( 14 / 2=5 \\) </p>`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<img src="/images/quiz/wqt-dl6/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Determine the base of the numbers for the following operation to be correct: \\( 24+17=40 \\) </p>`,
+      image: "",
+      options: [],
+      answer: "11",
+      solution: `<img src="/images/quiz/wqt-dl6/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The solutions to the quadratic equation \\( x^{2}-11 \\mathrm{x}+22=0 \\) are \\( x=3 \\) and \\( x=6 \\). What is the base of the numbers? </p>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img src="/images/quiz/wqt-dl6/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
+
