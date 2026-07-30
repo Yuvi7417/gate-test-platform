@@ -16,7 +16,7 @@ $('.res_question').each((i, qDiv) => {
       const filename = 'q' + num + '_img' + (imgIndex++) + '.png';
       console.log('Downloading', src, 'to', filename);
       
-      const file = fs.createWriteStream('images/quiz/wqt-dl7/' + filename);
+      const file = fs.createWriteStream('images/quiz/wqt-dl8/' + filename);
       http.get(src, function(response) {
         response.pipe(file);
       }).on('error', function(err) {
