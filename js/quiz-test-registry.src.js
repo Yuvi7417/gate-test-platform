@@ -1,5 +1,5 @@
 registerTest({
-  series: "quiz",
+  series: "weekly-cs-gate-2027",
   name: "WQT - Digital logic-1|Boolean algebra",
   date: "Jul 30, 2026",
   questions: [
