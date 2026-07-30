@@ -284,6 +284,46 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "weekly-cs-gate-2027",
+    code: "CSE",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "Weekly CS GATE 2027 Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 130,
+    startDate: "2025-09-15",
+    endDate: "2026-08-15",
+    session: "2026-2027",
+    desc: "Weekly test series for GATE CSE 2026 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
+    features: [
+      "Weekly coverage of all core GATE CSE subjects",
+      "Scheduled aligned with exam calendar",
+      "Topic-wise cumulative testing",
+      "Detailed solutions for every question",
+      "Performance tracking against peers",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "Sep 15, 2025",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      //   ["Test - 8", "Apr 5, 2026"],
+      //   ["Test - 7", "Mar 1, 2026"],
+      //   ["Test - 6", "Jan 18, 2026"],
+      //   ["Test - 5", "Dec 14, 2025"],
+    ],
+    price: "₹88 + GST",
+    basePrice: 88,
+    brandLabel: "Weekly Classes"
+    // comingSoon: true
+  },
+  {
     id: "ece-gate-pyq", // <-- Ye ID sabse zaroori hai!
     code: "ECE",
     examTag: "GATE 2026",
@@ -515,46 +555,7 @@ window.testSeries = [
     // comingSoon: true
   },
 
-  {
-    id: "weekly-cs-gate-2027",
-    code: "CSE",
-    examTag: "GATE 2027",
-    subjectTag: "Computer Science",
-    title: "Weekly CS GATE 2027 Test Series",
-    f: "gate",
-    lang: "English",
-    objective: "Objective",
-    tests: 130,
-    startDate: "2025-09-15",
-    endDate: "2026-08-15",
-    session: "2026-2027",
-    desc: "Weekly test series for GATE CSE 2026 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
-    features: [
-      "Weekly coverage of all core GATE CSE subjects",
-      "Scheduled aligned with exam calendar",
-      "Topic-wise cumulative testing",
-      "Detailed solutions for every question",
-      "Performance tracking against peers",
-    ],
-    batches: [
-      {
-        name: "Batch 1",
-        start: "Sep 15, 2025",
-        time: "12:00 AM – 11:59 PM",
-        selected: true,
-      },
-    ],
-    schedule: [
-      //   ["Test - 8", "Apr 5, 2026"],
-      //   ["Test - 7", "Mar 1, 2026"],
-      //   ["Test - 6", "Jan 18, 2026"],
-      //   ["Test - 5", "Dec 14, 2025"],
-    ],
-    price: "₹88 + GST",
-    basePrice: 88,
-    brandLabel: "Weekly Classes"
-    // comingSoon: true
-  },
+
 ];
 
 const tsGrid = document.getElementById("tsGrid");
