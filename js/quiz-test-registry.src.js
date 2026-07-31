@@ -3962,3 +3962,236 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-4|Linear Algebra",
+  date: "Sep 21, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( n \\times n \\) matrix of real or complex numbers. Which of the following statements are equivalent to: “the matrix \\( A \\) is invertible”? </p> <p></p>`,
+      image: "",
+      options: [
+        `The columns of \\( A \\) are linearly independent.`,
+        `The rows of \\( A \\) are linearly independent.`,
+        `The only solution of the homogeneous equations \\( Ax = 0 \\) is \\( x = 0 \\). &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`,
+        `The rank of \\( A \\) is \\( n \\).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em4/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( M \\) be a \\( 2 \\times 2 \\) matrix with the property that the sum of the elements of each row and sum of the elements of each column is the same constant \\( c \\). Which (if any) any of the vectors must be an eigenvector of \\( M \\) ? </p> <p> \\( U = \\left[\\begin{array}{l}1 \\\\ 0 \\\\ \\end{array}\\right], \\) \\( V = \\left[\\begin{array}{l}0 \\\\ 1 \\\\ \\end{array}\\right], \\) \\( W = \\left[\\begin{array}{l}1 \\\\ 1 \\\\ \\end{array}\\right] \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( U \\)`,
+        `\\( V \\)`,
+        `\\( W \\)`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em4/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) and \\( B \\) be two \\( n \\times n \\) matrices. If \\( B \\) is invertible and \\( (I+BA)^{-1} = 2B^2 \\), then which of the following is the correct definition of \\( A \\) in terms of \\( B \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A = (1/2)B^{-3} - B^{-1} \\)`,
+        `\\( A = 2B^{-3}- B^{-1} \\)`,
+        `\\( A = 2B^3-I \\)`,
+        `None of the above`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em4/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A \\( 4 \\times 4 \\) matrix \\( \\mathrm{A} \\) has rank 3 . Which of the following is/are true? </p> <p><br>1. \\( A^{-1} \\) does not exist<br>2. \\( A^{-1} \\) may exist, and if it does, its rank must be less than 3<br>3. \\( A^{-1} \\) may exist, and if it does, its rank must be greater than 1<br>4. \\( A^{-1} \\) may exist, and it can take any rank less than 5 </p> <p></p>`,
+      image: "",
+      options: [
+        `Only 1 is correct`,
+        `Only 2,3 are correct`,
+        `Only 4 is correct`,
+        `None of the statements are correct.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em4/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider two matrices \\( \\mathrm{A}_{6 \\times 3} \\) and \\( \\mathrm{B}_{3 \\times 6} \\), the non zero eigenvalues(EVs) of matrix \\( A B \\) are \\( 3,2,7,8 \\); see the following statements<br> \\( \\mathrm{S} 1 \\) : The EVs of BA must be all 0 for the above case to be true<br> \\( \\mathrm{S} 2 \\) : \\( A B \\) should not have more than 3 non zero \\( \\mathrm{EVs} \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{S} 1 \\) is true, \\( \\mathrm{S} 2 \\) is false`,
+        `\\( \\mathrm{S} 2 \\) is true, \\( \\mathrm{S} 1 \\) is false`,
+        `Both \\( \\mathrm{S} 1 \\) and \\( \\mathrm{S} 2 \\) are true`,
+        `Neither \\( \\mathrm{S} 1 \\) nor \\( \\mathrm{S} 2 \\) is true`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em4/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let the \\( n \\times n \\) matrix \\( A \\) have an eigenvalue \\( \\lambda \\) with corresponding eigenvector \\( v \\).<br>Which of the following statements are true for matrix \\( A \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -v \\) is an eigenvector of \\( -A \\) with eigenvalue \\( - \\lambda \\).`,
+        `If \\( v \\) is also an eigenvector of the \\( n \\times n \\) matrix \\( B \\) with eigenvalue \\( \\mu \\), then \\( \\lambda \\mu \\) is an eigenvalue of \\( AB \\).`,
+        `Let \\( \\mu \\) be an eigenvalue of the \\( n \\times n \\) matrix \\( B \\) corresponding to the eigenvector \\( v \\), Then \\( \\lambda + \\mu \\) is an eigenvalue of \\( A+B \\).`,
+        `eigenvalue of \\( A^3 \\) is \\( \\lambda^3 \\) and the eigenvector is \\( v^3 \\) .`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-em4/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following matrix A:<br> \\( \\left[\\begin{array}{lll}2 &amp; -1 &amp; 0 \\\\ 0 &amp; 2 &amp; 0 \\\\ 1 &amp; 0 &amp; 2\\end{array}\\right] \\) <br>Which of the following regarding the matrix \\( A \\) is/are correct?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\lambda = 2 \\) is one of the eigenvalues of \\( A \\).`,
+        `\\( \\lambda = 1 \\) is one of the eigenvalues of \\( A \\).`,
+        `If \\( x \\) is the eigenvector corresponding to eigenvalue \\( \\lambda \\) then \\( A^3 x \\) is equivalent to \\( \\lambda ^3 x \\) i.e.&nbsp; \\( A^3 x = \\lambda ^3 x \\).`,
+        `If \\( x \\) is the eigenvector corresponding to eigenvalue \\( \\lambda \\) of \\( A \\) then \\( x \\) is also the eigenvector of &nbsp; \\( A^{-1} \\).`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em4/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose a \\( 3 \\times 5 \\) matrix \\( A \\) has rank \\( r = 3 \\). Then the equation \\( Ax = b \\) \\( \\textbf{BLANK 1} \\) &nbsp;has &nbsp; \\( \\textbf{BLANK 2} \\).<br>Which of the following are appropriate words that can be filled in \\( \\textbf{BLANK 1} \\) &nbsp;has &nbsp; \\( \\textbf{BLANK 2} \\).? </p> <p></p>`,
+      image: "",
+      options: [
+        `BLANK 1: Always, BLANK 2: Unique solution`,
+        `BLANK 1: Always, BLANK 2: Infinitely many solutions`,
+        `BLANK 1: Sometimes, BLANK 2: Unique solution`,
+        `BLANK 1: Sometimes, BLANK 2: Infinitely many solutions`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em4/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is/are \\( \\textbf{NOT CORRECT} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( v1 \\) and \\( v2 \\) are linearly independent eigenvectors then they can correspond to the same eigenvalue.`,
+        `If \\( A \\) is a nilpotent matrix, meaning that \\( A^k = 0 \\) for the least positive integer \\( k \\), and if \\( k = 2 \\), then \\( A \\) can have non-zero value as its eigenvalue.`,
+        `\\( \\lambda \\) is the eigenvalue of \\( A \\) if and only if &nbsp; \\( \\lambda \\) is the eigenvalue of \\( A^T \\).`,
+        `If \\( \\lambda \\) is an eigenvalue of an invertible matrix \\( A \\) then &nbsp; \\( \\lambda ^{-1} \\) is an eigenvalue of \\( A^{-1} \\).`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-em4/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Given an \\( m \\times n \\) matrix \\( A \\) whose rows are linearly independent. Now, consider following statements regarding \\( A \\):<br>&nbsp;&nbsp; \\( S1: \\) The system of equations \\( Ax = b \\) for any \\( b \\) is consistent.<br>&nbsp;&nbsp; \\( S2: \\) &nbsp; \\( Ax = b \\) always has a unique solution.<br>Which of the following is \\( \\textbf{TRUE} \\) regarding \\( S1 \\) and \\( S2 \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `Both \\( S1 \\) and \\( S2 \\) are TRUE.`,
+        `\\( S1 \\) is TRUE and \\( S2 \\) is FALSE.`,
+        `\\( S1 \\) is FALSE and \\( S2 \\) is TRUE.`,
+        `Both \\( S1 \\) and \\( S2 \\) are FALSE.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em4/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is/are \\( \\textbf{FALSE} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `For \\( n \\times n \\) real-symmetric matrices \\( A \\) and \\( B \\), \\( AB \\) and \\( BA \\) always have the same eigenvalues.`,
+        `For \\( n \\times n \\) matrices \\( A \\) and \\( B \\) with \\( B \\) invertible, \\( AB \\) and \\( BA \\) always have the same eigenvalues.`,
+        `For \\( n \\times n \\) matrices \\( A \\) and \\( B \\) with \\( B \\) invertible, \\( AB \\) and \\( BA \\) always have the same eigenvectors.`,
+        `For \\( n \\times n \\) real-symmetric matrices \\( A \\) and \\( B \\), \\( AB \\) and \\( BA \\) always have the same eigenvectors.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-em4/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The rank and nullity of a matrix \\( A \\) are 4 and 2 , respectively. The nullity of \\( A^{\\top} \\) is 3 . What are the dimensions of \\( A \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6 \\times 7 \\)`,
+        `\\( 4 \\times 5 \\)`,
+        `\\( 7 \\times 6 \\)`,
+        `\\( 5 \\times 4 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em4/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the followings(s) is/are TRUE ?</p> <p></p>`,
+      image: "",
+      options: [
+        `If a system of linear equations has no free variables, then it has a unique solution.`,
+        `If an augmented matrix \\( [A \\mid b] \\) is transformed into \\( [C \\mid d] \\) by elementary row operations, then the equations \\( A x=b \\) and \\( C x=d \\) have exactly the same solution sets.`,
+        `If \\( A \\) is an \\( m \\times n \\) matrix and the equation \\( A x=b \\) is consistent for every \\( b \\) in \\( \\mathbb{R}^m \\), then \\( A \\) has m pivot columns.`,
+        `If a matrix \\( A \\) with dimensions \\( m \\) by \\( n \\) has a pivot position in every row, then the equation \\( A x=b \\) has \\( a \\) unique solution for every \\( b \\) in the set of real numbers of dimension \\( m \\).`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em4/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following(s) is/are TRUE ?</p> <p></p>`,
+      image: "",
+      options: [
+        `If none of the vectors in the set \\( S=\\left\\{\\vec{v}_1, \\vec{v}_2, \\vec{v}_3\\right\\} \\) in \\( \\mathbb{R}^3 \\) is a multiple of one of the other vectors, then \\( S \\) is linearly independent.`,
+        `If \\( \\vec{u}, \\vec{v} \\), and \\( \\vec{w} \\) are nonzero vectors in \\( \\mathbb{R}^2 \\), then \\( \\vec{u} \\) is a linear combination of \\( \\vec{v} \\) and \\( \\vec{w} \\).`,
+        `If \\( \\vec{w} \\) is a linear combination of \\( \\vec{u} \\) and \\( \\vec{v} \\) in \\( \\mathbb{R}^n \\), then \\( \\vec{u} \\) is a linear combination of \\( \\vec{v} \\) and \\( \\vec{w} \\).`,
+        `Suppose that \\( \\vec{v}_1, \\vec{v}_2 \\), and \\( \\vec{v}_3 \\) are non-zero vectors in \\( \\mathbb{R}^5, \\vec{v}_2 \\) is not a multiple of \\( \\vec{v}_1 \\), and \\( \\vec{v}_3 \\) is not a linear combination of \\( \\vec{v}_1 \\) and \\( \\vec{v}_2 \\). Then \\( \\left\\{\\vec{v}_1, \\vec{v}_2, \\vec{v}_3\\right\\} \\) is linearly independent.`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-em4/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following two statements:<br> \\( S 1 \\). If \\( A B=I \\), then \\( A \\) is invertible.<br> \\( S 2 \\). If \\( A \\) is a \\( 3 \\times 3 \\) matrix and the equation \\( A \\vec{x}=\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 0\\end{array}\\right] \\) has a unique solution, then \\( A \\) is invertible.<br>Which of the following options is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S 1 \\) is true but \\( S 2 \\) is false`,
+        `\\( \\mathrm{S} 1 \\) is false but \\( \\mathrm{S} 2 \\) is true`,
+        `Both are true`,
+        `Both are false`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em4/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
