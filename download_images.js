@@ -18,7 +18,7 @@ $('.res_question').each((i, qDiv) => {
       src = src.replace(/^http:\/\//i, 'https://');
       console.log('Downloading', src, 'to', filename);
       
-      const file = fs.createWriteStream('images/quiz/wqt-dl14/' + filename);
+      const file = fs.createWriteStream('images/quiz/wqt-em1/' + filename);
       https.get(src, function(response) {
         if (response.statusCode !== 200) {
            console.error(`Failed to download ${src}: ${response.statusCode}`);

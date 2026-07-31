@@ -3149,3 +3149,231 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-1|Linear Algebra",
+  date: "Aug 31, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( \\left\\{\\overrightarrow{\\mathbf{u}_{1}}, \\overrightarrow{\\mathbf{u}_{2}}, \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) be a linearly independent set in \\( \\mathbb{R}^{3} \\). Then, for a scalar \\( c \\), what can be concluded about the set \\( \\left\\{c \\overrightarrow{\\mathbf{u}_{1}}, c \\overrightarrow{\\mathbf{u}_{2}}, c \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `&nbsp;The set \\( \\left\\{c \\overrightarrow{\\mathbf{u}_{1}}, c \\overrightarrow{\\mathbf{u}_{2}}, c \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) is linearly independent for all values of \\( c \\neq 0 \\)`,
+        `&nbsp;The set \\( \\left\\{c \\overrightarrow{\\mathbf{u}_{1}}, c \\overrightarrow{\\mathbf{u}_{2}}, c \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) is linearly dependent for all values of \\( c \\neq 0 \\)`,
+        `&nbsp;The set \\( \\left\\{c \\overrightarrow{\\mathbf{u}_{1}}, c \\overrightarrow{\\mathbf{u}_{2}}, c \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) is linearly independent only if \\( c=1 \\)`,
+        `&nbsp;The set \\( \\left\\{c \\overrightarrow{\\mathbf{u}_{1}}, c \\overrightarrow{\\mathbf{u}_{2}}, c \\overrightarrow{\\mathbf{u}_{3}}\\right\\} \\) is linearly dependent only if \\( c=0 \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-em1/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What is the definition of linear independence for a set of vectors \\( \\left\\{\\mathbf{u}_{1}, \\mathbf{u}_{2}, \\ldots, \\mathbf{u}_{m}\\right\\} \\subseteq \\mathbb{R}^{n} \\) ? Let \\( x_{1}, x_{2}, \\ldots, x_{m} \\) be scalars.<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left\\{\\mathbf{u}_{1}, \\mathbf{u}_{2}, \\ldots, \\mathbf{u}_{m}\\right\\} \\subseteq \\mathbb{R}^{n} \\) are linearly independent if the only solution to \\( x_{1} \\mathbf{u}_{1}+x_{2} \\mathbf{u}_{2}+ \\) \\( \\cdots+x_{m} \\mathbf{u}_{m}=\\mathbf{0} \\) is \\( x_{1}=x_{2}=\\cdots=x_{m}=0 \\).`,
+        `\\( \\left\\{\\mathbf{u}_{1}, \\mathbf{u}_{2}, \\ldots, \\mathbf{u}_{m}\\right\\} \\subseteq \\mathbb{R}^{n} \\) are linearly independent if there exists a non-trivial solution to \\( x_{1} \\mathbf{u}_{1}+x_{2} \\mathbf{u}_{2}+\\cdots+x_{m} \\mathbf{u}_{m}=\\mathbf{0} \\) .`,
+        `\\( \\left\\{\\mathbf{u}_{1}, \\mathbf{u}_{2}, \\ldots, \\mathbf{u}_{m}\\right\\} \\subseteq \\mathbb{R}^{n} \\) are linearly independent if the vectors are orthogonal to each other.`,
+        `\\( \\left\\{\\mathbf{u}_{1}, \\mathbf{u}_{2}, \\ldots, \\mathbf{u}_{m}\\right\\} \\subseteq \\mathbb{R}^{n} \\) are linearly independent if the vectors are not scalar multiples of each other.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em1/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let us consider the following three vectors \\( v_1, v_2, \\) and \\( v_3 \\) in \\( \\mathbb{R}^3 \\).<br> \$\$ \\begin{aligned} &amp; v_1=\\left(\\begin{array}{lll} 1 &amp; 0 &amp; -2 \\end{array}\\right) \\\\ &amp; v_2=\\left(\\begin{array}{lll} -1 &amp; 0 &amp; 2 \\end{array}\\right) \\\\ &amp; v_3=\\left(\\begin{array}{lll} 1 &amp; 0 &amp; 2 \\end{array}\\right) . \\end{aligned} \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `The three vectors \\( v_1, v_2, \\) and \\( v_3 \\) are linearly independent.`,
+        `Every pair of vectors \\( \\left\\{v_1, v_2\\right\\},\\left\\{v_2, v_3\\right\\} \\), and \\( \\left\\{v_1, v_3\\right\\} \\) are linearly independent.`,
+        `All pairs except the pair \\( \\left\\{v_1, v_2\\right\\} \\) are linearly independent.`,
+        `All pairs except the pair \\( \\left\\{v_1, v_3\\right\\} \\) are linearly independent.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em1/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( a, b \\) be in \\( \\mathbb{R} \\). Consider the three vectors<br> \$\$ \\boldsymbol{v}_1=\\left[\\begin{array}{l} a \\\\ 0 \\\\ 0 \\end{array}\\right], \\quad \\boldsymbol{v}_2=\\left[\\begin{array}{l} 0 \\\\ b \\\\ 1 \\end{array}\\right], \\quad \\boldsymbol{v}_3=\\left[\\begin{array}{l} 0 \\\\ 1 \\\\ 1 \\end{array}\\right] . \$\$ <br>For which values of \\( a \\) and \\( b \\) are \\( \\boldsymbol{v}_1, \\boldsymbol{v}_2, \\boldsymbol{v}_3 \\) independent? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( a=0 \\) and \\( b=1 \\)`,
+        `\\( a \\neq 0 \\) and \\( b \\neq 1 \\)`,
+        `\\( a=0 \\) and \\( b \\neq 1 \\)`,
+        `\\( a \\neq 0 \\) and \\( b=1 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em1/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is FALSE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( v_1, \\ldots, v_4 \\) are in \\( \\mathbf{R}^5 \\) and \\( \\left\\{v_1, v_2, v_3\\right\\} \\) is linearly dependent then \\( \\left\\{v_1, v_2, v_3, v_4\\right\\} \\) is linearly dependent.`,
+        `If \\( v_1, \\ldots, v_4 \\) are in \\( \\mathbf{R}^5 \\) and \\( v_1 \\) is not a linear combination of \\( \\left\\{v_2, v_3, v_4\\right\\} \\), then \\( \\left\\{v_1, v_2, v_3, v_4\\right\\} \\) is linearly independent.`,
+        `If \\( v_1, \\ldots, v_4 \\) are linearly independent vectors in \\( \\mathbf{R}^5 \\), then \\( \\left\\{v_1, v_2, v_3\\right\\} \\) is also linearly independent.`,
+        `Any set of \\( 6 \\) vectors in&nbsp; \\( \\mathbf{R}^5 \\) is linearly dependent.&nbsp;`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em1/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Consider a set of \\( n \\) linearly independent vectors \\( \\left\\{\\vec{w}_1, \\ldots, \\vec{w}_n\\right\\} \\in \\mathbb{R}^n \\). A vector \\( \\vec{u} \\in \\mathbb{R}^n \\) will: </p> <ul> <li>Option \\( 1. \\) Always be a linear combination of \\( \\left\\{\\vec{w}_1, \\ldots, \\vec{w}_n\\right\\} \\) </li> <li>Option \\( 2. \\) Never be a linear combination of \\( \\left\\{\\vec{w}_1, \\ldots, \\vec{w}_n\\right\\} \\) </li> </ul> <p>Enter the correct option as the numeric number. That is if option \\( 2 \\) is correct then enter \\( \\text{2}. \\) </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-em1/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following set is/are linearly independent?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left\\{\\left[\\begin{array}{l}1 \\\\ 2\\end{array}\\right],\\left[\\begin{array}{l}2 \\\\ 1\\end{array}\\right]\\right\\} \\) <br>&nbsp;`,
+        `\\( \\left\\{\\left[\\begin{array}{c}1 \\\\ -1\\end{array}\\right]\\right\\} \\) <br>&nbsp;`,
+        `\\( \\left\\{\\left[\\begin{array}{l}1 \\\\ 2 \\\\ 1\\end{array}\\right],\\left[\\begin{array}{l}2 \\\\ 3 \\\\ 4\\end{array}\\right],\\left[\\begin{array}{c}1 \\\\ -1 \\\\ 2\\end{array}\\right],\\left[\\begin{array}{l}0 \\\\ 1 \\\\ 0\\end{array}\\right]\\right\\} \\) <br>&nbsp;`,
+        `\\( \\left\\{\\left[\\begin{array}{l}1 \\\\ 1 \\\\ 1\\end{array}\\right],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 1\\end{array}\\right],\\left[\\begin{array}{l}0 \\\\ 0 \\\\ 0\\end{array}\\right]\\right\\} \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-em1/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \$\$ a\\left[\\begin{array}{l}1 \\\\ 2 \\\\ 3 \\\\ 4 \\\\ 5\\end{array}\\right]+b\\left[\\begin{array}{c}-1 \\\\ 2 \\\\ -3 \\\\ 4 \\\\ -5\\end{array}\\right]=\\left[\\begin{array}{l}0 \\\\ 0 \\\\ 0 \\\\ 0 \\\\ 0\\end{array}\\right] \$\$ <br>How many number of pairs \\( (a, b) \\) are there, that satisfy the above equation? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)`,
+        `\\( 1 \\)`,
+        `Infinite`,
+        `\\( 2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em1/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Given a set of vectors \\( \\text{S}(|\\text{S}| \\geq n) \\), with all vectors in \\( \\mathbb{R}^n \\), which of the following is a necessary and sufficient condition for the vectors of \\( \\text{S} \\) to be Linearly Dependent? </p> <p></p>`,
+      image: "",
+      options: [
+        `Exactly \\( n \\) vectors can be represented as a linear combination of other vectors of the set \\( \\text{S} \\).`,
+        `At least \\( n \\) vectors can be represented as a linear combination of other vectors of the set \\( \\text{S} \\).`,
+        `At least one vector \\( u \\) can be represented as a linear combination of any vector(s) of the set \\( \\text{S} \\).`,
+        `At least one vector \\( u \\) can be represented as a linear combination of vectors (other than \\( u \\) ) of the set \\( \\text{S} \\).`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-em1/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is(are) sufficient&nbsp;argument(s) to show that the vectors of set \\( \\text{S} \\) are linearly dependent?<br> \$\$ \\text{S}=\\left\\{u=\\left[\\begin{array}{c} 1 \\\\ -2 \\\\ 7 \\end{array}\\right], v=\\left[\\begin{array}{c} -7 \\\\ 14 \\\\ -49 \\end{array}\\right], w=\\left[\\begin{array}{l} 0 \\\\ 0 \\\\ 0 \\end{array}\\right]\\right\\} \$\$ <br>Treat each option independently, correct option independently should be sufficient to infer that vectors are&nbsp;linearly dependent. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 u+0 v+1 w=\\left[\\begin{array}{l}0 \\\\ 0 \\\\ 0\\end{array}\\right] \\) <br>&nbsp;`,
+        `\\( 0 u+0 v=w \\)<br>&nbsp;`,
+        `\\( 0 u+0 v+0 w=\\left[\\begin{array}{l}0 \\\\ 0 \\\\ 0\\end{array}\\right] \\) <br>&nbsp;`,
+        `\\( 7 u+(-1) v+1 w=\\left[\\begin{array}{l}0 \\\\ 0 \\\\ 0\\end{array}\\right] \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-em1/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( v_{1}, \\ldots, v_{4} \\) are in \\( \\mathbb{R}^{5} \\) and \\( \\left\\{v_{1}, v_{2}, v_{3}\\right\\} \\) is linearly dependent, then \\( \\left\\{v_{1}, v_{2}, v_{3}, v_{4}\\right\\} \\) is linearly dependent.`,
+        `If \\( v_{1}, \\ldots, v_{4} \\) are in \\( \\mathbb{R}^{5} \\) and \\( v_{1} \\) is not a linear combination of \\( \\left\\{v_{2}, v_{3}, v_{4}\\right\\} \\), then \\( \\left\\{v_{1}, v_{2}, v_{3}, v_{4}\\right\\} \\) is linearly independent.`,
+        `If \\( v_{1}, \\ldots, v_{4} \\) are linearly independent vectors in \\( \\mathbb{R}^{5} \\), then \\( \\left\\{v_{1}, v_{2}, v_{3}\\right\\} \\) is also linearly independent.`,
+        `All of the above.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-em1/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is(are) true for the following system of linear equations \\( \\text{AX}=\\overrightarrow{0} \\)<br> \$\$ \\left[\\begin{array}{ccc} 2 &amp; 3 &amp; -5 \\\\ -5 &amp; -1 &amp; 32 \\\\ 2 &amp; -4 &amp; -26 \\end{array}\\right]\\left[\\begin{array}{l} x_1 \\\\ x_2 \\\\ x_3 \\end{array}\\right]=\\left[\\begin{array}{l} 0 \\\\ 0 \\\\ 0 \\end{array}\\right] \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{X}=\\left[\\begin{array}{lll}-7 &amp; 3 &amp; 1\\end{array}\\right]^{\\top} \\) is a solution to the equation \\( \\text{AX}=\\overrightarrow{0} \\).`,
+        `Showing that \\( \\text{X}=\\left[\\begin{array}{lll}0 &amp; 0 &amp; 0\\end{array}\\right]^{\\top} \\) is a solution to \\( \\text{AX}=\\overrightarrow{0} \\) is sufficient to conclude that the columns of \\( \\text{A} \\) are Linearly Independent.`,
+        `Showing that \\( \\text{X}=\\left[\\begin{array}{lll}-7 &amp; 3 &amp; 1\\end{array}\\right]^{\\top} \\) is a solution to \\( \\text{AX}=\\overrightarrow{0} \\) is sufficient to conclude that the columns of \\( \\text{A} \\) are Linearly Independent.`,
+        `\\( \\text{X}=\\left[\\begin{array}{lll}0 &amp; 0 &amp; 0\\end{array}\\right]^{\\top} \\) is a solution to the equation \\( \\text{AX}=\\overrightarrow{0} \\).`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-em1/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Given a set \\( \\text{S} \\) of vectors in \\( \\mathbb{R}^n \\), and set \\( \\text{X(X} \\subset \\text{S}) \\) and \\( \\text{Y(S} \\subset \\text{Y}), \\) mark all the statements which are always true: </p> <p></p>`,
+      image: "",
+      options: [
+        `If the vectors of \\( \\text{S} \\) are Linearly Dependent, then the vectors of \\( \\text{X} \\) are also Linearly Dependent.`,
+        `If the vectors of \\( \\text{S} \\) are Linearly Independent, then the vectors of \\( \\text{X} \\) are also Linearly Independent.`,
+        `If the vectors of \\( \\text{S} \\) are Linearly Dependent, then the vectors of \\( \\text{Y} \\) are also Linearly Dependent.`,
+        `If the vectors of \\( \\text{S} \\) are Linearly Independent, then the vectors of \\( \\text{Y} \\) are also Linearly Independent.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em1/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are CORRECT?<br> \\( u,v, \\text{ and } w \\) are vectors in&nbsp; \\( \\mathbb{R}^n \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `A set \\( \\{u, v, w\\} \\) is linearly independent if \\( &nbsp;u \\) can not be written as linear combination of \\( v \\) and \\( w. \\)`,
+        `A set \\( \\{u, v, w\\} \\) is linearly dependent if \\( u \\) is a linear combination of \\( v \\) and \\( w. \\)`,
+        `If a set \\( \\{u, v, w\\} \\) is linearly dependent then \\( u \\) is a linear combination of \\( v \\) and \\( w. \\)`,
+        `For three vectors \\( \\mathbf{u}, \\mathbf{v}, \\mathbf{w} \\), if \\( \\{\\mathbf{u}, \\mathbf{v}\\} \\) is linearly independent, and \\( \\{\\mathbf{v}, \\mathbf{w}\\} \\) is linearly independent; then \\( \\{\\mathbf{u}, \\mathbf{v}, \\mathbf{w}\\} \\) is linearly independent.`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-em1/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <ul> <li> \\( \\mathrm{S} 1: \\) A set of two vectors in \\( \\mathbb{R}^n \\) is Linealy dependent if at least one vector is a multiple of the other. </li> <li> \\( \\text{S2}: \\) A set of \\( n \\) vectors in \\( \\mathbb{R}^n \\) is Linealy independent if and only if none of the vectors are a multiple of any other vector. </li> </ul> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) and \\( \\text{S2} \\) both are correct`,
+        `\\( \\mathrm{S} 1 \\) is correct and \\( \\mathrm{S} 2 \\) is incorrect`,
+        `\\( \\text{S} 2 \\) is correct and \\( \\text{S} 1 \\) is incorrect`,
+        `\\( \\text{S} 1 \\) and \\( \\text{S} 2 \\) both are incorrect`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em1/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
