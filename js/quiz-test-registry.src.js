@@ -2422,156 +2422,24 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>Consider the following circuit using two <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>&amp;#x00D7;</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-4" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">×</span></span><span id="MJXc-Node-5" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                            <mo>×</mo>
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-1">2\times 1</script> multiplexers:<br><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=324587819628278614" style="max-width: 75%;"><br>Which of the following
+      text: `<p></p> <p>Consider the following circuit using two 
+                \\( 2\times 1 \\) multiplexers:<br><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=324587819628278614" style="max-width: 75%;"><br>Which of the following
                 is the correct behavior of this circuit?
             </p> <p></p>`,
       image: "",
       options: [
-        `When <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>s</mi><mo>=</mo><mn>0</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-6" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-7" class="mjx-mrow"><span id="MJXc-Node-8" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-9" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-10" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>s</mi>
-                                <mo>=</mo>
-                                <mn>0</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-2">s=0</script> then <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-11" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-12" class="mjx-mrow"><span id="MJXc-Node-13" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-14" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-15" class="mjx-texatom" style=""><span id="MJXc-Node-16" class="mjx-mrow"><span id="MJXc-Node-17" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-18" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-19" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-20" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-21" class="mjx-texatom" style=""><span id="MJXc-Node-22" class="mjx-mrow"><span id="MJXc-Node-23" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-24" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-25" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-26" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-27" class="mjx-texatom" style=""><span id="MJXc-Node-28" class="mjx-mrow"><span id="MJXc-Node-29" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-30" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-31" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-32" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-33" class="mjx-texatom" style=""><span id="MJXc-Node-34" class="mjx-mrow"><span id="MJXc-Node-35" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>,</mo>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-3">y_{1}=x_{1}, y_{2}=x_{2}</script>`,
-        `When <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>s</mi><mo>=</mo><mn>0</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-36" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-37" class="mjx-mrow"><span id="MJXc-Node-38" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-39" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-40" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>s</mi>
-                                <mo>=</mo>
-                                <mn>0</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-4">s=0</script> then <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-41" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-42" class="mjx-mrow"><span id="MJXc-Node-43" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-44" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-45" class="mjx-texatom" style=""><span id="MJXc-Node-46" class="mjx-mrow"><span id="MJXc-Node-47" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-48" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-49" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-50" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-51" class="mjx-texatom" style=""><span id="MJXc-Node-52" class="mjx-mrow"><span id="MJXc-Node-53" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-54" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-55" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-56" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-57" class="mjx-texatom" style=""><span id="MJXc-Node-58" class="mjx-mrow"><span id="MJXc-Node-59" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-60" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-61" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-62" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-63" class="mjx-texatom" style=""><span id="MJXc-Node-64" class="mjx-mrow"><span id="MJXc-Node-65" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>,</mo>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-5">y_{1}=x_{2}, y_{2}=x_{1}</script>`,
-        `When <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>s</mi><mo>=</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-66" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-67" class="mjx-mrow"><span id="MJXc-Node-68" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-69" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-70" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>s</mi>
-                                <mo>=</mo>
-                                <mn>1</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-6">s=1</script> then <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-71" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-72" class="mjx-mrow"><span id="MJXc-Node-73" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-74" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-75" class="mjx-texatom" style=""><span id="MJXc-Node-76" class="mjx-mrow"><span id="MJXc-Node-77" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-78" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-79" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-80" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-81" class="mjx-texatom" style=""><span id="MJXc-Node-82" class="mjx-mrow"><span id="MJXc-Node-83" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-84" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-85" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-86" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-87" class="mjx-texatom" style=""><span id="MJXc-Node-88" class="mjx-mrow"><span id="MJXc-Node-89" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-90" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-91" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-92" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-93" class="mjx-texatom" style=""><span id="MJXc-Node-94" class="mjx-mrow"><span id="MJXc-Node-95" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>,</mo>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-7">y_{1}=x_{1}, y_{2}=x_{2}</script>`,
-        `When <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>s</mi><mo>=</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-96" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-97" class="mjx-mrow"><span id="MJXc-Node-98" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">s</span></span><span id="MJXc-Node-99" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-100" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>s</mi>
-                                <mo>=</mo>
-                                <mn>1</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-8">s=1</script> then <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-101" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-102" class="mjx-mrow"><span id="MJXc-Node-103" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-104" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-105" class="mjx-texatom" style=""><span id="MJXc-Node-106" class="mjx-mrow"><span id="MJXc-Node-107" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-108" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-109" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-110" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-111" class="mjx-texatom" style=""><span id="MJXc-Node-112" class="mjx-mrow"><span id="MJXc-Node-113" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-114" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-115" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-116" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-117" class="mjx-texatom" style=""><span id="MJXc-Node-118" class="mjx-mrow"><span id="MJXc-Node-119" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-120" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-121" class="mjx-msubsup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-122" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-123" class="mjx-texatom" style=""><span id="MJXc-Node-124" class="mjx-mrow"><span id="MJXc-Node-125" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>,</mo>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msub>
-                                <mo>=</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-9">y_{1}=x_{2}, y_{2}=x_{1}</script>`,
+        `When 
+                    \\( s=0 \\) then 
+                    \\( y_{1}=x_{1}, y_{2}=x_{2} \\)`,
+        `When 
+                    \\( s=0 \\) then 
+                    \\( y_{1}=x_{2}, y_{2}=x_{1} \\)`,
+        `When 
+                    \\( s=1 \\) then 
+                    \\( y_{1}=x_{1}, y_{2}=x_{2} \\)`,
+        `When 
+                    \\( s=1 \\) then 
+                    \\( y_{1}=x_{2}, y_{2}=x_{1} \\)`,
       ],
       answer: "A",
       solution: ``
@@ -2583,85 +2451,10 @@ registerTest({
       text: `<p></p> <p>Consider the following boolean equations:</p> <p>Which of the above is correct?</p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>b</mi><mi>d</mi><mo>+</mo><mi>a</mi><mi>c</mi><msup><mi>d</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi class=&quot;MJX-variant&quot; mathvariant=&quot;normal&quot;>&amp;#x2032;</mi></mrow></msup><mo>+</mo><mi>a</mi><mi>b</mi><mi>c</mi><mo>=</mo><mi>b</mi><mi>d</mi><mo>+</mo><mi>a</mi><mi>c</mi><msup><mi>d</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi class=&quot;MJX-variant&quot; mathvariant=&quot;normal&quot;>&amp;#x2032;</mi></mrow></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-126" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-127" class="mjx-mrow"><span id="MJXc-Node-128" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-129" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-130" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-131" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-132" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-133" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-134" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-135" class="mjx-texatom" style=""><span id="MJXc-Node-136" class="mjx-mrow"><span id="MJXc-Node-137" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span id="MJXc-Node-138" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-139" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-140" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-141" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-142" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-143" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-144" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-145" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-146" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-147" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-148" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-149" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-150" class="mjx-texatom" style=""><span id="MJXc-Node-151" class="mjx-mrow"><span id="MJXc-Node-152" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>b</mi>
-                                <mi>d</mi>
-                                <mo>+</mo>
-                                <mi>a</mi>
-                                <mi>c</mi>
-                                <msup>
-                                    <mi>d</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mi class="MJX-variant" mathvariant="normal">′</mi>
-                                    </mrow>
-                                </msup>
-                                <mo>+</mo>
-                                <mi>a</mi>
-                                <mi>b</mi>
-                                <mi>c</mi>
-                                <mo>=</mo>
-                                <mi>b</mi>
-                                <mi>d</mi>
-                                <mo>+</mo>
-                                <mi>a</mi>
-                                <mi>c</mi>
-                                <msup>
-                                    <mi>d</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mi class="MJX-variant" mathvariant="normal">′</mi>
-                                    </mrow>
-                                </msup>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-10">b d+a c d^{\prime}+a b c=b d+a c d^{\prime}</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>b</mi><mo>+</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo>+</mo><msup><mi>d</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi class=&quot;MJX-variant&quot; mathvariant=&quot;normal&quot;>&amp;#x2032;</mi></mrow></msup><mo>)</mo></mrow><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mi>b</mi><mo>+</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo>+</mo><msup><mi>d</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi class=&quot;MJX-variant&quot; mathvariant=&quot;normal&quot;>&amp;#x2032;</mi></mrow></msup><mo>)</mo></mrow></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-153" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-154" class="mjx-mrow"><span id="MJXc-Node-155" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-156" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-157" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-158" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-159" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-160" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-161" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-162" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-163" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-164" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-165" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-166" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-167" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-168" class="mjx-texatom" style=""><span id="MJXc-Node-169" class="mjx-mrow"><span id="MJXc-Node-170" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span id="MJXc-Node-171" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span><span id="MJXc-Node-172" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-173" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-174" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-175" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-176" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-177" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-178" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-179" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-180" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-181" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-182" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-183" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-184" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-185" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-186" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-187" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-188" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-189" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-190" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-191" class="mjx-msubsup MJXc-space2"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-192" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-193" class="mjx-texatom" style=""><span id="MJXc-Node-194" class="mjx-mrow"><span id="MJXc-Node-195" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span id="MJXc-Node-196" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mo stretchy="false">(</mo>
-                                <mi>b</mi>
-                                <mo>+</mo>
-                                <mi>d</mi>
-                                <mo stretchy="false">)</mo>
-                                <mrow>
-                                    <mo>(</mo>
-                                    <mi>a</mi>
-                                    <mo>+</mo>
-                                    <mi>c</mi>
-                                    <mo>+</mo>
-                                    <msup>
-                                        <mi>d</mi>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi class="MJX-variant" mathvariant="normal">′</mi>
-                                        </mrow>
-                                    </msup>
-                                    <mo>)</mo>
-                                </mrow>
-                                <mo stretchy="false">(</mo>
-                                <mi>a</mi>
-                                <mo>+</mo>
-                                <mi>b</mi>
-                                <mo>+</mo>
-                                <mi>c</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>b</mi>
-                                <mo>+</mo>
-                                <mi>d</mi>
-                                <mo stretchy="false">)</mo>
-                                <mrow>
-                                    <mo>(</mo>
-                                    <mi>a</mi>
-                                    <mo>+</mo>
-                                    <mi>c</mi>
-                                    <mo>+</mo>
-                                    <msup>
-                                        <mi>d</mi>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi class="MJX-variant" mathvariant="normal">′</mi>
-                                        </mrow>
-                                    </msup>
-                                    <mo>)</mo>
-                                </mrow>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-11">(b+d)\left(a+c+d^{\prime}\right)(a+b+c)=(b+d)\left(a+c+d^{\prime}\right)</script>`,
+        `
+                    \\( b d+a c d^{\prime}+a b c=b d+a c d^{\prime} \\)`,
+        `
+                    \\( (b+d)\left(a+c+d^{\prime}\right)(a+b+c)=(b+d)\left(a+c+d^{\prime}\right) \\)`,
         `A Only`,
         `B Only`,
         `Both`,
@@ -2674,228 +2467,25 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>A demultiplexer can be implemented using a decoder circuit.<br>For example, the <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-12-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-197" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-198" class="mjx-mrow"><span id="MJXc-Node-199" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-12">2</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-13-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-200" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-201" class="mjx-mrow"><span id="MJXc-Node-202" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>4</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-13">4</script> decoder can be used as a <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-14-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-203" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-204" class="mjx-mrow"><span id="MJXc-Node-205" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-14">1</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-15-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-206" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-207" class="mjx-mrow"><span id="MJXc-Node-208" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>4</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-15">4</script> demultiplexer. Which input of decoder serves
-                as the data input for the demultiplexer?<br><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-16-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mtable columnalign=&quot;center center center center center center center&quot; rowspacing=&quot;4pt&quot; columnspacing=&quot;1em&quot; rowlines=&quot;solid none&quot; columnlines=&quot;none none solid none none none&quot;><mtr><mtd><mtext>En</mtext></mtd><mtd><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub></mtd><mtd><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub></mtd><mtd><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub></mtd><mtd><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub></mtd><mtd><msub><mi>y</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mo>&amp;#x00D7;</mo></mtd><mtd><mo>&amp;#x00D7;</mo></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-209" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-210" class="mjx-mrow"><span id="MJXc-Node-211" class="mjx-mtable" style="vertical-align: -3.986em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-212" class="mjx-mtr" style="height: 1.451em;"><span id="MJXc-Node-213" class="mjx-mtd" style="padding: 0.221em 0.5em 0px 0.4em; border-bottom: 1.3px solid; width: 1.237em;"><span id="MJXc-Node-214" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-215" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">En</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-216" class="mjx-mtd" style="padding: 0.221em 0.5em 0px; border-bottom: 1.3px solid; width: 1.105em;"><span id="MJXc-Node-217" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-218" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-219" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-220" class="mjx-texatom" style=""><span id="MJXc-Node-221" class="mjx-mrow"><span id="MJXc-Node-222" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-223" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.221em 0.472em 0px 0.5em; border-bottom: 1.3px solid; width: 1.105em;"><span id="MJXc-Node-224" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-225" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-226" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-227" class="mjx-texatom" style=""><span id="MJXc-Node-228" class="mjx-mrow"><span id="MJXc-Node-229" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-230" class="mjx-mtd" style="padding: 0.221em 0.5em 0px 0.472em; border-bottom: 1.3px solid; width: 0.879em;"><span id="MJXc-Node-231" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-232" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-233" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-234" class="mjx-texatom" style=""><span id="MJXc-Node-235" class="mjx-mrow"><span id="MJXc-Node-236" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-237" class="mjx-mtd" style="padding: 0.221em 0.5em 0px; border-bottom: 1.3px solid; width: 0.879em;"><span id="MJXc-Node-238" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-239" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-240" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-241" class="mjx-texatom" style=""><span id="MJXc-Node-242" class="mjx-mrow"><span id="MJXc-Node-243" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-244" class="mjx-mtd" style="padding: 0.221em 0.5em 0px; border-bottom: 1.3px solid; width: 0.879em;"><span id="MJXc-Node-245" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-246" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-247" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-248" class="mjx-texatom" style=""><span id="MJXc-Node-249" class="mjx-mrow"><span id="MJXc-Node-250" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-251" class="mjx-mtd" style="padding: 0.221em 0.4em 0px 0.5em; border-bottom: 1.3px solid; width: 0.879em;"><span id="MJXc-Node-252" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-253" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.006em;"><span id="MJXc-Node-254" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-255" class="mjx-texatom" style=""><span id="MJXc-Node-256" class="mjx-mrow"><span id="MJXc-Node-257" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-258" class="mjx-mtr" style="height: 1.4em;"><span id="MJXc-Node-259" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.4em;"><span id="MJXc-Node-260" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-261" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-262" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-263" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-264" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-265" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.2em 0.472em 0px 0.5em;"><span id="MJXc-Node-266" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-267" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-268" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.472em;"><span id="MJXc-Node-269" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-270" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-271" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-272" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-273" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-274" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-275" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-276" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-277" class="mjx-mtd" style="padding: 0.2em 0.4em 0px 0.5em;"><span id="MJXc-Node-278" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-279" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-280" class="mjx-mtr" style="height: 1.4em;"><span id="MJXc-Node-281" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.4em;"><span id="MJXc-Node-282" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-283" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-284" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-285" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-286" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-287" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.2em 0.472em 0px 0.5em;"><span id="MJXc-Node-288" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-289" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-290" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.472em;"><span id="MJXc-Node-291" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-292" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-293" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-294" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-295" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-296" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-297" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-298" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-299" class="mjx-mtd" style="padding: 0.2em 0.4em 0px 0.5em;"><span id="MJXc-Node-300" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-301" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-302" class="mjx-mtr" style="height: 1.4em;"><span id="MJXc-Node-303" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.4em;"><span id="MJXc-Node-304" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-305" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-306" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-307" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-308" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-309" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.2em 0.472em 0px 0.5em;"><span id="MJXc-Node-310" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-311" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-312" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.472em;"><span id="MJXc-Node-313" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-314" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-315" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-316" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-317" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-318" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-319" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-320" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-321" class="mjx-mtd" style="padding: 0.2em 0.4em 0px 0.5em;"><span id="MJXc-Node-322" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-323" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-324" class="mjx-mtr" style="height: 1.4em;"><span id="MJXc-Node-325" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.4em;"><span id="MJXc-Node-326" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-327" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-328" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-329" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-330" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-331" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.2em 0.472em 0px 0.5em;"><span id="MJXc-Node-332" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-333" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-334" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.472em;"><span id="MJXc-Node-335" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-336" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-337" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-338" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-339" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-340" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-341" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-342" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-343" class="mjx-mtd" style="padding: 0.2em 0.4em 0px 0.5em;"><span id="MJXc-Node-344" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-345" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-346" class="mjx-mtr" style="height: 1.421em;"><span id="MJXc-Node-347" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.4em;"><span id="MJXc-Node-348" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-349" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-350" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-351" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-352" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">×</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-353" class="mjx-mtd" style="border-right: 1.3px solid; padding: 0.2em 0.472em 0px 0.5em;"><span id="MJXc-Node-354" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-355" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.224em; padding-bottom: 0.335em;">×</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-356" class="mjx-mtd" style="padding: 0.2em 0.5em 0px 0.472em;"><span id="MJXc-Node-357" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-358" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-359" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-360" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-361" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-362" class="mjx-mtd" style="padding: 0.2em 0.5em 0px;"><span id="MJXc-Node-363" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-364" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-365" class="mjx-mtd" style="padding: 0.2em 0.4em 0px 0.5em;"><span id="MJXc-Node-366" class="mjx-mrow" style="margin-top: -0.2em;"><span id="MJXc-Node-367" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                                <mtable columnalign="center center center center center center center" rowspacing="4pt" columnspacing="1em" rowlines="solid none" columnlines="none none solid none none none">
-                                    <mtr>
-                                        <mtd>
-                                            <mtext>En</mtext>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>w</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>1</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>w</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>0</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>y</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>0</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>y</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>1</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>y</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>2</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                        <mtd>
-                                            <msub>
-                                                <mi>y</mi>
-                                                <mrow class="MJX-TeXAtom-ORD">
-                                                    <mn>3</mn>
-                                                </mrow>
-                                            </msub>
-                                        </mtd>
-                                    </mtr>
-                                    <mtr>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                    </mtr>
-                                    <mtr>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                    </mtr>
-                                    <mtr>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                    </mtr>
-                                    <mtr>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>1</mn>
-                                        </mtd>
-                                    </mtr>
-                                    <mtr>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mo>×</mo>
-                                        </mtd>
-                                        <mtd>
-                                            <mo>×</mo>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                        <mtd>
-                                            <mn>0</mn>
-                                        </mtd>
-                                    </mtr>
-                                </mtable>
-                            </math></span></span></span>
-                <script type="math/tex; mode=display" id="MathJax-Element-16"> \begin{array}{ccc|cccc} \text{En} & w_{1} & w_{0} & y_{0} & y_{1} & y_{2} & y_{3} \\ \hline 1 & 0 & 0 & 1 & 0 & 0 & 0 \\ 1 & 0 & 1 & 0 & 1 & 0 & 0 \\ 1 & 1 & 0 & 0 & 0 & 1 & 0 \\ 1 & 1 & 1 & 0 & 0 & 0 & 1 \\ 0 & \times & \times & 0 & 0 & 0 & 0 \\ \end{array} </script>
-                <span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-17-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mtext>(a) Truth Table of Decoder</mtext></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-368" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-369" class="mjx-mrow"><span id="MJXc-Node-370" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(a) Truth Table of
-                                        Decoder</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                                <mtext>(a) Truth Table of Decoder</mtext>
-                            </math></span></span></span>
-                <script type="math/tex; mode=display" id="MathJax-Element-17">\text{(a) Truth Table of Decoder}</script>
+      text: `<p></p> <p>A demultiplexer can be implemented using a decoder circuit.<br>For example, the 
+                \\( 2 \\)-to-
+                \\( 4 \\) decoder can be used as a 
+                \\( 1 \\)-to-
+                \\( 4 \\) demultiplexer. Which input of decoder serves
+                as the data input for the demultiplexer?<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span>
+                \$\$  \begin{array}{ccc|cccc} \text{En} &amp; w_{1} &amp; w_{0} &amp; y_{0} &amp; y_{1} &amp; y_{2} &amp; y_{3} \\ \hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; \times &amp; \times &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ \end{array}  \$\$
+                <span class="mjx-chtml MJXc-display" style="text-align: center;"></span>
+                \$\$ \text{(a) Truth Table of Decoder} \$\$
                 <br><br>&nbsp;
             </p> <p style="text-align:center"><img alt="" height="301" width="287" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=18398392163275606394" style="max-width: 75%;"></p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-18-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-371" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-372" class="mjx-mrow"><span id="MJXc-Node-373" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-374" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-375" class="mjx-texatom" style=""><span id="MJXc-Node-376" class="mjx-mrow"><span id="MJXc-Node-377" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>w</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>0</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-18">w_{0}</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-19-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mtext>E</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>n</mi></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-378" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-379" class="mjx-mrow"><span id="MJXc-Node-380" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-381" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-382" class="mjx-texatom" style=""><span id="MJXc-Node-383" class="mjx-mrow"><span id="MJXc-Node-384" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">n</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mtext>E</mtext>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mi>n</mi>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-19">\text{E}_{n}</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-20-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-385" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-386" class="mjx-mrow"><span id="MJXc-Node-387" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-388" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-389" class="mjx-texatom" style=""><span id="MJXc-Node-390" class="mjx-mrow"><span id="MJXc-Node-391" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                    <mi>w</mi>
-                                    <mrow class="MJX-TeXAtom-ORD">
-                                        <mn>1</mn>
-                                    </mrow>
-                                </msub>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-20">w_{1}</script>`,
+        `
+                    \\( w_{0} \\)`,
+        `
+                    \\( \text{E}_{n} \\)`,
+        `
+                    \\( w_{1} \\)`,
         `We can not implement a demultiplexer using a decoder.`,
       ],
       answer: "B",
@@ -2924,84 +2514,23 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Consider the <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-21-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-392" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-393" class="mjx-mrow"><span id="MJXc-Node-394" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>4</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-21">4</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-22-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-395" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-396" class="mjx-mrow"><span id="MJXc-Node-397" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-22">2</script> Encoder given below. Note: This is NOT a
+      text: `<p></p> <p>Consider the 
+                \\( 4 \\)-to-
+                \\( 2 \\) Encoder given below. Note: This is NOT a
                 Priority Encoder.
-            </p> <p>For the input <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-23-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>A</mi></mrow><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mtext>&amp;#xA0;</mtext><mi mathvariant=&quot;normal&quot;>A</mi></mrow><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mtext>&amp;#xA0;</mtext><mi mathvariant=&quot;normal&quot;>A</mi></mrow><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mtext>&amp;#xA0;</mtext><mi mathvariant=&quot;normal&quot;>A</mi></mrow><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub><mo>=</mo><mn>0110</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-398" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-399" class="mjx-mrow"><span id="MJXc-Node-400" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-401" class="mjx-texatom"><span id="MJXc-Node-402" class="mjx-mrow"><span id="MJXc-Node-403" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">A</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-404" class="mjx-texatom" style=""><span id="MJXc-Node-405" class="mjx-mrow"><span id="MJXc-Node-406" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-407" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-408" class="mjx-texatom"><span id="MJXc-Node-409" class="mjx-mrow"><span id="MJXc-Node-410" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.274em; padding-bottom: 0.335em;">&nbsp;</span></span><span id="MJXc-Node-411" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">A</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-412" class="mjx-texatom" style=""><span id="MJXc-Node-413" class="mjx-mrow"><span id="MJXc-Node-414" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-415" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-416" class="mjx-texatom"><span id="MJXc-Node-417" class="mjx-mrow"><span id="MJXc-Node-418" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.274em; padding-bottom: 0.335em;">&nbsp;</span></span><span id="MJXc-Node-419" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">A</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-420" class="mjx-texatom" style=""><span id="MJXc-Node-421" class="mjx-mrow"><span id="MJXc-Node-422" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-423" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-424" class="mjx-texatom"><span id="MJXc-Node-425" class="mjx-mrow"><span id="MJXc-Node-426" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.274em; padding-bottom: 0.335em;">&nbsp;</span></span><span id="MJXc-Node-427" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">A</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-428" class="mjx-texatom" style=""><span id="MJXc-Node-429" class="mjx-mrow"><span id="MJXc-Node-430" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span id="MJXc-Node-431" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-432" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0110</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">A</mi>
-                                </mrow>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>3</mn>
-                                </mrow>
-                            </msub>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mtext>&nbsp;</mtext>
-                                    <mi mathvariant="normal">A</mi>
-                                </mrow>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>2</mn>
-                                </mrow>
-                            </msub>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mtext>&nbsp;</mtext>
-                                    <mi mathvariant="normal">A</mi>
-                                </mrow>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mtext>&nbsp;</mtext>
-                                    <mi mathvariant="normal">A</mi>
-                                </mrow>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                            <mo>=</mo>
-                            <mn>0110</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-23">\mathrm{A}_{3} \mathrm{~A}_{2} \mathrm{~A}_{1} \mathrm{~A}_{0}=0110</script>
-                what is the value of the output <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-24-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mtext>Y</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><msub><mtext>Y</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-433" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-434" class="mjx-mrow"><span id="MJXc-Node-435" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-436" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-437" class="mjx-texatom" style=""><span id="MJXc-Node-438" class="mjx-mrow"><span id="MJXc-Node-439" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-440" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-441" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-442" class="mjx-texatom" style=""><span id="MJXc-Node-443" class="mjx-mrow"><span id="MJXc-Node-444" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msub>
-                                <mtext>Y</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <msub>
-                                <mtext>Y</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-24">\text{Y}_{1} \text{Y}_{0}</script> ?
+            </p> <p>For the input 
+                \\( \mathrm{A}_{3} \mathrm{~A}_{2} \mathrm{~A}_{1} \mathrm{~A}_{0}=0110 \\)
+                what is the value of the output 
+                \\( \text{Y}_{1} \text{Y}_{0} \\) ?
             </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=4987808141837399846" style="max-width: 75%;"></p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-25-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>00</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-445" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-446" class="mjx-mrow"><span id="MJXc-Node-447" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">00</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>00</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-25">00</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-26-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>10</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-448" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-449" class="mjx-mrow"><span id="MJXc-Node-450" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>10</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-26">10</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-27-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>11</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-451" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-452" class="mjx-mrow"><span id="MJXc-Node-453" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">11</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>11</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-27">11</script>`,
+        `
+                    \\( 00 \\)`,
+        `
+                    \\( 10 \\)`,
+        `
+                    \\( 11 \\)`,
         `Cannot be determined.`,
       ],
       answer: "D",
@@ -3011,27 +2540,11 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>What is the following circuit?</p> <p style="text-align:center"><img alt="" height="142" width="313" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=17641776862168967302" style="max-width: 75%;"></p> <p><br>A. <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-28-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>&amp;#x2212;</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-454" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-455" class="mjx-mrow"><span id="MJXc-Node-456" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-457" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-458" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                            <mo>−</mo>
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-28">2-1</script> MUX<br>B. <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-29-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>&amp;#x2212;</mo><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-459" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-460" class="mjx-mrow"><span id="MJXc-Node-461" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-462" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-463" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                            <mo>−</mo>
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-29">1-2</script> Decoder<br>B. <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-30-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>&amp;#x2212;</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-464" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-465" class="mjx-mrow"><span id="MJXc-Node-466" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-467" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-468" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                            <mo>−</mo>
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-30">2-1</script> Priority Encoder<br>C. <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-31-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>&amp;#x2212;</mo><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-469" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-470" class="mjx-mrow"><span id="MJXc-Node-471" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-472" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">−</span></span><span id="MJXc-Node-473" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                            <mo>−</mo>
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-31">1-2</script> DEMUX
+      text: `<p></p> <p>What is the following circuit?</p> <p style="text-align:center"><img alt="" height="142" width="313" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=17641776862168967302" style="max-width: 75%;"></p> <p><br>A. 
+                \\( 2-1 \\) MUX<br>B. 
+                \\( 1-2 \\) Decoder<br>B. 
+                \\( 2-1 \\) Priority Encoder<br>C. 
+                \\( 1-2 \\) DEMUX
             </p> <p></p>`,
       image: "",
       options: [
@@ -3043,84 +2556,25 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>Consider the following function:<br><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-32-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>f</mi><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo>&amp;#x2211;</mo><mi>m</mi><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mo>&amp;#x2211;</mo><mi>d</mi><mo stretchy=&quot;false&quot;>(</mo><mn>6</mn><mo stretchy=&quot;false&quot;>)</mo><mo>.</mo></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-474" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-475" class="mjx-mrow"><span id="MJXc-Node-476" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-477" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-478" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-479" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-480" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-481" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-482" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-483" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-484" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-485" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span><span id="MJXc-Node-486" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span><span id="MJXc-Node-487" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-488" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-489" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-490" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-491" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-492" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-493" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-494" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-495" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-496" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-497" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span><span id="MJXc-Node-498" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-499" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-500" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-501" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-502" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>a</mi>
-                                <mo>,</mo>
-                                <mi>b</mi>
-                                <mo>,</mo>
-                                <mi>c</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mo>∑</mo>
-                                <mi>m</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>1</mn>
-                                <mo>,</mo>
-                                <mn>3</mn>
-                                <mo>,</mo>
-                                <mn>4</mn>
-                                <mo>,</mo>
-                                <mn>7</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>+</mo>
-                                <mo>∑</mo>
-                                <mi>d</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>6</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>.</mo>
-                            </math></span></span></span>
-                <script type="math/tex; mode=display" id="MathJax-Element-32"> f(a, b, c)=\sum m(1,3,4,7)+\sum d(6). </script><br>Note that "<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-33-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>m</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-503" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-504" class="mjx-mrow"><span id="MJXc-Node-505" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>m</mi>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-33">m</script>" represents the minterms for which <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-34-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>f</mi><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-506" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-507" class="mjx-mrow"><span id="MJXc-Node-508" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-509" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-510" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-511" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-512" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-513" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-514" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-515" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>f</mi>
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-34">f(a,b,c)</script> is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-35-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-516" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-517" class="mjx-mrow"><span id="MJXc-Node-518" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-519" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                            <mo>.</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-35">1 .</script> " <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-36-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>d</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-520" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-521" class="mjx-mrow"><span id="MJXc-Node-522" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>d</mi>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-36">d</script> " represents the "don't care"
-                minterms.<br>Which of the following is / are correct for <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-37-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>f</mi><mo>?</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-523" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-524" class="mjx-mrow"><span id="MJXc-Node-525" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-526" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">?</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>f</mi>
-                            <mo>?</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-37">f?</script>
+      text: `<p></p> <p>Consider the following function:<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span>
+                \$\$  f(a, b, c)=\sum m(1,3,4,7)+\sum d(6).  \$\$<br>Note that "
+                \\( m \\)" represents the minterms for which 
+                \\( f(a,b,c) \\) is 
+                \\( 1 . \\) " 
+                \\( d \\) " represents the "don't care"
+                minterms.<br>Which of the following is / are correct for 
+                \\( f? \\)
             </p> <p></p>`,
       image: "",
       options: [
-        `Number of Prime Implicants is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-38-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-527" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-528" class="mjx-mrow"><span id="MJXc-Node-529" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-530" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>4</mn>
-                                <mo>.</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-38">4 .</script>`,
-        `Number of Essential Prime Implicants is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-39-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>3</mn><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-531" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-532" class="mjx-mrow"><span id="MJXc-Node-533" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-534" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>3</mn>
-                                <mo>.</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-39">3 .</script>`,
-        `Number of minimum sum of product expressions is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-40-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-535" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-536" class="mjx-mrow"><span id="MJXc-Node-537" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-538" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                                <mo>.</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-40">2 .</script>`,
-        `Number of minimum product of sum expressions is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-41-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn><mo>.</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-539" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-540" class="mjx-mrow"><span id="MJXc-Node-541" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-542" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                                <mo>.</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-41">2 .</script>`,
+        `Number of Prime Implicants is 
+                    \\( 4 . \\)`,
+        `Number of Essential Prime Implicants is 
+                    \\( 3 . \\)`,
+        `Number of minimum sum of product expressions is 
+                    \\( 2 . \\)`,
+        `Number of minimum product of sum expressions is 
+                    \\( 2 . \\)`,
       ],
       answer: "A",
       solution: ``
@@ -3129,213 +2583,21 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>The following circuit using a <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-42-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>3</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-543" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-544" class="mjx-mrow"><span id="MJXc-Node-545" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>3</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-42">3</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-43-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>8</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-546" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-547" class="mjx-mrow"><span id="MJXc-Node-548" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>8</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-43">8</script> binary decoder and an OR gate is an
+      text: `<p></p> <p>The following circuit using a 
+                \\( 3 \\)-to-
+                \\( 8 \\) binary decoder and an OR gate is an
                 implementation of the function:<br><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=13257677602250482208" style="max-width: 75%;">
             </p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-44-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;></mrow><mi>f</mi><mrow><mo>(</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub><mo>)</mo></mrow><mo>=</mo><munder><mo>&amp;#x2211;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>m</mi></mrow></munder><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo stretchy=&quot;false&quot;>)</mo></mstyle></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-549" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-550" class="mjx-mrow"><span id="MJXc-Node-551" class="mjx-mstyle"><span id="MJXc-Node-552" class="mjx-mrow"><span id="MJXc-Node-553" class="mjx-texatom"><span id="MJXc-Node-554" class="mjx-mrow"></span></span><span id="MJXc-Node-555" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-556" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-557" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-558" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-559" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-560" class="mjx-texatom" style=""><span id="MJXc-Node-561" class="mjx-mrow"><span id="MJXc-Node-562" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-563" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-564" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-565" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-566" class="mjx-texatom" style=""><span id="MJXc-Node-567" class="mjx-mrow"><span id="MJXc-Node-568" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-569" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-570" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-571" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-572" class="mjx-texatom" style=""><span id="MJXc-Node-573" class="mjx-mrow"><span id="MJXc-Node-574" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-575" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span><span id="MJXc-Node-576" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-577" class="mjx-munderover MJXc-space3"><span class="mjx-itable"><span class="mjx-row"><span class="mjx-cell"><span class="mjx-op"><span id="MJXc-Node-578" class="mjx-mo"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span></span></span></span><span class="mjx-row"><span class="mjx-under" style="font-size: 70.7%; padding-top: 0.236em; padding-bottom: 0.141em; padding-left: 0.582em;"><span id="MJXc-Node-579" class="mjx-texatom" style=""><span id="MJXc-Node-580" class="mjx-mrow"><span id="MJXc-Node-581" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span></span></span></span></span></span></span><span id="MJXc-Node-582" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-583" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-584" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-585" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-586" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-587" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-588" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-589" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-590" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-591" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-592" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-593" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-594" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mstyle displaystyle="true" scriptlevel="0">
-                                    <mrow class="MJX-TeXAtom-ORD"></mrow>
-                                    <mi>f</mi>
-                                    <mrow>
-                                        <mo>(</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>1</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>2</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>3</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>)</mo>
-                                    </mrow>
-                                    <mo>=</mo>
-                                    <munder>
-                                        <mo>∑</mo>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi>m</mi>
-                                        </mrow>
-                                    </munder>
-                                    <mo stretchy="false">(</mo>
-                                    <mn>0</mn>
-                                    <mo>,</mo>
-                                    <mn>1</mn>
-                                    <mo>,</mo>
-                                    <mn>3</mn>
-                                    <mo>,</mo>
-                                    <mn>4</mn>
-                                    <mo>,</mo>
-                                    <mn>6</mn>
-                                    <mo>,</mo>
-                                    <mn>7</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mstyle>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-44">\displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(0,1,3,4,6,7)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-45-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;></mrow><mi>f</mi><mrow><mo>(</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub><mo>)</mo></mrow><mo>=</mo><munder><mo>&amp;#x2211;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>m</mi></mrow></munder><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo stretchy=&quot;false&quot;>)</mo></mstyle></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-595" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-596" class="mjx-mrow"><span id="MJXc-Node-597" class="mjx-mstyle"><span id="MJXc-Node-598" class="mjx-mrow"><span id="MJXc-Node-599" class="mjx-texatom"><span id="MJXc-Node-600" class="mjx-mrow"></span></span><span id="MJXc-Node-601" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-602" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-603" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-604" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-605" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-606" class="mjx-texatom" style=""><span id="MJXc-Node-607" class="mjx-mrow"><span id="MJXc-Node-608" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-609" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-610" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-611" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-612" class="mjx-texatom" style=""><span id="MJXc-Node-613" class="mjx-mrow"><span id="MJXc-Node-614" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-615" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-616" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-617" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-618" class="mjx-texatom" style=""><span id="MJXc-Node-619" class="mjx-mrow"><span id="MJXc-Node-620" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-621" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span><span id="MJXc-Node-622" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-623" class="mjx-munderover MJXc-space3"><span class="mjx-itable"><span class="mjx-row"><span class="mjx-cell"><span class="mjx-op"><span id="MJXc-Node-624" class="mjx-mo"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span></span></span></span><span class="mjx-row"><span class="mjx-under" style="font-size: 70.7%; padding-top: 0.236em; padding-bottom: 0.141em; padding-left: 0.582em;"><span id="MJXc-Node-625" class="mjx-texatom" style=""><span id="MJXc-Node-626" class="mjx-mrow"><span id="MJXc-Node-627" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span></span></span></span></span></span></span><span id="MJXc-Node-628" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-629" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-630" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-631" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-632" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-633" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-634" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-635" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span><span id="MJXc-Node-636" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-637" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-638" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-639" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span><span id="MJXc-Node-640" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mstyle displaystyle="true" scriptlevel="0">
-                                    <mrow class="MJX-TeXAtom-ORD"></mrow>
-                                    <mi>f</mi>
-                                    <mrow>
-                                        <mo>(</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>1</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>2</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>3</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>)</mo>
-                                    </mrow>
-                                    <mo>=</mo>
-                                    <munder>
-                                        <mo>∑</mo>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi>m</mi>
-                                        </mrow>
-                                    </munder>
-                                    <mo stretchy="false">(</mo>
-                                    <mn>1</mn>
-                                    <mo>,</mo>
-                                    <mn>2</mn>
-                                    <mo>,</mo>
-                                    <mn>4</mn>
-                                    <mo>,</mo>
-                                    <mn>5</mn>
-                                    <mo>,</mo>
-                                    <mn>7</mn>
-                                    <mo>,</mo>
-                                    <mn>8</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mstyle>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-45">\displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(1,2,4,5,7,8)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-46-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;></mrow><mi>f</mi><mrow><mo>(</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub><mo>)</mo></mrow><mo>=</mo><munder><mo>&amp;#x220F;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>M</mi></mrow></munder><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>7</mn><mo stretchy=&quot;false&quot;>)</mo></mstyle></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-641" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-642" class="mjx-mrow"><span id="MJXc-Node-643" class="mjx-mstyle"><span id="MJXc-Node-644" class="mjx-mrow"><span id="MJXc-Node-645" class="mjx-texatom"><span id="MJXc-Node-646" class="mjx-mrow"></span></span><span id="MJXc-Node-647" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-648" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-649" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-650" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-651" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-652" class="mjx-texatom" style=""><span id="MJXc-Node-653" class="mjx-mrow"><span id="MJXc-Node-654" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-655" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-656" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-657" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-658" class="mjx-texatom" style=""><span id="MJXc-Node-659" class="mjx-mrow"><span id="MJXc-Node-660" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-661" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-662" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-663" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-664" class="mjx-texatom" style=""><span id="MJXc-Node-665" class="mjx-mrow"><span id="MJXc-Node-666" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-667" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span><span id="MJXc-Node-668" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-669" class="mjx-munderover MJXc-space3"><span class="mjx-itable"><span class="mjx-row"><span class="mjx-cell"><span class="mjx-op"><span id="MJXc-Node-670" class="mjx-mo"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∏</span></span></span></span></span><span class="mjx-row"><span class="mjx-under" style="font-size: 70.7%; padding-top: 0.236em; padding-bottom: 0.141em; padding-left: 0.378em;"><span id="MJXc-Node-671" class="mjx-texatom" style=""><span id="MJXc-Node-672" class="mjx-mrow"><span id="MJXc-Node-673" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.081em;">M</span></span></span></span></span></span></span></span><span id="MJXc-Node-674" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-675" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-676" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-677" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-678" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-679" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-680" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-681" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-682" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-683" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-684" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-685" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-686" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mstyle displaystyle="true" scriptlevel="0">
-                                    <mrow class="MJX-TeXAtom-ORD"></mrow>
-                                    <mi>f</mi>
-                                    <mrow>
-                                        <mo>(</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>1</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>2</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>3</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>)</mo>
-                                    </mrow>
-                                    <mo>=</mo>
-                                    <munder>
-                                        <mo>∏</mo>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi>M</mi>
-                                        </mrow>
-                                    </munder>
-                                    <mo stretchy="false">(</mo>
-                                    <mn>0</mn>
-                                    <mo>,</mo>
-                                    <mn>1</mn>
-                                    <mo>,</mo>
-                                    <mn>3</mn>
-                                    <mo>,</mo>
-                                    <mn>4</mn>
-                                    <mo>,</mo>
-                                    <mn>6</mn>
-                                    <mo>,</mo>
-                                    <mn>7</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mstyle>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-46">\displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\prod_{M}(0,1,3,4,6,7)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-47-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mstyle displaystyle=&quot;true&quot; scriptlevel=&quot;0&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;></mrow><mi>f</mi><mrow><mo>(</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mi>w</mi><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>3</mn></mrow></msub><mo>)</mo></mrow><mo>=</mo><munder><mo>&amp;#x2211;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi>m</mi></mrow></munder><mo stretchy=&quot;false&quot;>(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo stretchy=&quot;false&quot;>)</mo></mstyle></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-687" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-688" class="mjx-mrow"><span id="MJXc-Node-689" class="mjx-mstyle"><span id="MJXc-Node-690" class="mjx-mrow"><span id="MJXc-Node-691" class="mjx-texatom"><span id="MJXc-Node-692" class="mjx-mrow"></span></span><span id="MJXc-Node-693" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-694" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-695" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-696" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-697" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-698" class="mjx-texatom" style=""><span id="MJXc-Node-699" class="mjx-mrow"><span id="MJXc-Node-700" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-701" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-702" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-703" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-704" class="mjx-texatom" style=""><span id="MJXc-Node-705" class="mjx-mrow"><span id="MJXc-Node-706" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-707" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-708" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-709" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">w</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-710" class="mjx-texatom" style=""><span id="MJXc-Node-711" class="mjx-mrow"><span id="MJXc-Node-712" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span></span></span></span></span><span id="MJXc-Node-713" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span><span id="MJXc-Node-714" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-715" class="mjx-munderover MJXc-space3"><span class="mjx-itable"><span class="mjx-row"><span class="mjx-cell"><span class="mjx-op"><span id="MJXc-Node-716" class="mjx-mo"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span></span></span></span><span class="mjx-row"><span class="mjx-under" style="font-size: 70.7%; padding-top: 0.236em; padding-bottom: 0.141em; padding-left: 0.582em;"><span id="MJXc-Node-717" class="mjx-texatom" style=""><span id="MJXc-Node-718" class="mjx-mrow"><span id="MJXc-Node-719" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span></span></span></span></span></span></span><span id="MJXc-Node-720" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-721" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-722" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-723" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span><span id="MJXc-Node-724" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mstyle displaystyle="true" scriptlevel="0">
-                                    <mrow class="MJX-TeXAtom-ORD"></mrow>
-                                    <mi>f</mi>
-                                    <mrow>
-                                        <mo>(</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>1</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>2</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>,</mo>
-                                        <msub>
-                                            <mi>w</mi>
-                                            <mrow class="MJX-TeXAtom-ORD">
-                                                <mn>3</mn>
-                                            </mrow>
-                                        </msub>
-                                        <mo>)</mo>
-                                    </mrow>
-                                    <mo>=</mo>
-                                    <munder>
-                                        <mo>∑</mo>
-                                        <mrow class="MJX-TeXAtom-ORD">
-                                            <mi>m</mi>
-                                        </mrow>
-                                    </munder>
-                                    <mo stretchy="false">(</mo>
-                                    <mn>2</mn>
-                                    <mo>,</mo>
-                                    <mn>5</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mstyle>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-47">\displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(2,5)</script>`,
+        `
+                    \\( \displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(0,1,3,4,6,7) \\)`,
+        `
+                    \\( \displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(1,2,4,5,7,8) \\)`,
+        `
+                    \\( \displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\prod_{M}(0,1,3,4,6,7) \\)`,
+        `
+                    \\( \displaystyle{} f\left(w_{1}, w_{2}, w_{3}\right)=\sum_{m}(2,5) \\)`,
       ],
       answer: "A",
       solution: ``
@@ -3344,94 +2606,21 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>Consider the following function:<br><span class="MathJax_Preview" style="color: inherit;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-48-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>f</mi><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo>&amp;#x2211;</mo><mi>m</mi><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo>,</mo><mn>15</mn><mo stretchy=&quot;false&quot;>)</mo><mo>+</mo><mo>&amp;#x2211;</mo><mi>d</mi><mo stretchy=&quot;false&quot;>(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>14</mn><mo stretchy=&quot;false&quot;>)</mo><mo>.</mo></math>" role="presentation" style="font-size: 113%; text-align: center; position: relative;"><span id="MJXc-Node-725" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-726" class="mjx-mrow"><span id="MJXc-Node-727" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-728" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-729" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-730" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-731" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-732" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-733" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-734" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-735" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-736" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-737" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-738" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span><span id="MJXc-Node-739" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">m</span></span><span id="MJXc-Node-740" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-741" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-742" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-743" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-744" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-745" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-746" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-747" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">9</span></span><span id="MJXc-Node-748" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-749" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">11</span></span><span id="MJXc-Node-750" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-751" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">15</span></span><span id="MJXc-Node-752" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-753" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.445em;">+</span></span><span id="MJXc-Node-754" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-size2-R" style="padding-top: 0.722em; padding-bottom: 0.722em;">∑</span></span><span id="MJXc-Node-755" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-756" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-757" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-758" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-759" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span><span id="MJXc-Node-760" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-761" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">8</span></span><span id="MJXc-Node-762" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-763" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">10</span></span><span id="MJXc-Node-764" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-765" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">14</span></span><span id="MJXc-Node-766" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-767" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.335em;">.</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>a</mi>
-                                <mo>,</mo>
-                                <mi>b</mi>
-                                <mo>,</mo>
-                                <mi>c</mi>
-                                <mo>,</mo>
-                                <mi>d</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mo>∑</mo>
-                                <mi>m</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>0</mn>
-                                <mo>,</mo>
-                                <mn>1</mn>
-                                <mo>,</mo>
-                                <mn>6</mn>
-                                <mo>,</mo>
-                                <mn>9</mn>
-                                <mo>,</mo>
-                                <mn>11</mn>
-                                <mo>,</mo>
-                                <mn>15</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>+</mo>
-                                <mo>∑</mo>
-                                <mi>d</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>2</mn>
-                                <mo>,</mo>
-                                <mn>5</mn>
-                                <mo>,</mo>
-                                <mn>8</mn>
-                                <mo>,</mo>
-                                <mn>10</mn>
-                                <mo>,</mo>
-                                <mn>14</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>.</mo>
-                            </math></span></span></span>
-                <script type="math/tex; mode=display" id="MathJax-Element-48"> f(a, b, c, d)=\sum m(0,1,6, 9, 11,15)+\sum d(2,5,8,10,14). </script>
-                <br>Which of the following is/are Not a Essential Prime Implicant of <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-49-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>f</mi><mo>?</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-768" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-769" class="mjx-mrow"><span id="MJXc-Node-770" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.501em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-771" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">?</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>f</mi>
-                            <mo>?</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-49">f?</script>
+      text: `<p></p> <p>Consider the following function:<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span>
+                \$\$  f(a, b, c, d)=\sum m(0,1,6, 9, 11,15)+\sum d(2,5,8,10,14).  \$\$
+                <br>Which of the following is/are Not a Essential Prime Implicant of 
+                \\( f? \\)
             </p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-50-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><mi>c</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-772" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-773" class="mjx-mrow"><span id="MJXc-Node-774" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-775" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>a</mi>
-                                <mi>c</mi>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-50">ac</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-51-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><msup><mi>b</mi><mo>&amp;#x2032;</mo></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-776" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-777" class="mjx-mrow"><span id="MJXc-Node-778" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-779" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-780" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-781" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>a</mi>
-                                <msup>
-                                    <mi>b</mi>
-                                    <mo>′</mo>
-                                </msup>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-51">ab'</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-52-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mi>b</mi><mo>&amp;#x2032;</mo></msup><msup><mi>d</mi><mo>&amp;#x2032;</mo></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-782" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-783" class="mjx-mrow"><span id="MJXc-Node-784" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-785" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-786" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-787" class="mjx-msup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-788" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-789" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msup>
-                                    <mi>b</mi>
-                                    <mo>′</mo>
-                                </msup>
-                                <msup>
-                                    <mi>d</mi>
-                                    <mo>′</mo>
-                                </msup>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-52">b'd'</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-53-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mi>a</mi><mo>&amp;#x2032;</mo></msup><msup><mi>c</mi><mo>&amp;#x2032;</mo></msup><mi>d</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-790" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-791" class="mjx-mrow"><span id="MJXc-Node-792" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-793" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-794" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-795" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-796" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-797" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-798" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msup>
-                                    <mi>a</mi>
-                                    <mo>′</mo>
-                                </msup>
-                                <msup>
-                                    <mi>c</mi>
-                                    <mo>′</mo>
-                                </msup>
-                                <mi>d</mi>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-53">a'c'd</script>`,
+        `
+                    \\( ac \\)`,
+        `
+                    \\( ab' \\)`,
+        `
+                    \\( b'd' \\)`,
+        `
+                    \\( a'c'd \\)`,
       ],
       answer: "B",
       solution: ``
@@ -3441,48 +2630,19 @@ registerTest({
       neg: 0,
       type: "MSQ",
       text: `<p></p> <p>For any Boolean function, a Non-Essential Prime Implicant is a Prime implicant that has no element that
-                cannot be covered by other prime implicants.</p> <p>Which of the following expressions is obtained from a non-essential prime implicant for the given <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-54-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext>K-map</mtext><mo>?</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-799" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-800" class="mjx-mrow"><span id="MJXc-Node-801" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.556em;">K-map</span></span><span id="MJXc-Node-802" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">?</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mtext>K-map</mtext>
-                            <mo>?</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-54">\text{K-map}?</script><br>&nbsp;
+                cannot be covered by other prime implicants.</p> <p>Which of the following expressions is obtained from a non-essential prime implicant for the given 
+                \\( \text{K-map}? \\)<br>&nbsp;
             </p> <p style="text-align:center"><img alt="" height="236" width="405" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=9514976199923338262" style="max-width: 75%;"></p> <p>&nbsp;</p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-55-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>b</mi><msup><mi>c</mi><mo>&amp;#x2032;</mo></msup><mi>d</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-803" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-804" class="mjx-mrow"><span id="MJXc-Node-805" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-806" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-807" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-808" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-809" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>b</mi>
-                                <msup>
-                                    <mi>c</mi>
-                                    <mo>′</mo>
-                                </msup>
-                                <mi>d</mi>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-55">bc’d</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-56-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mi>d</mi><mo>&amp;#x2032;</mo></msup><msup><mi>b</mi><mo>&amp;#x2032;</mo></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-810" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-811" class="mjx-mrow"><span id="MJXc-Node-812" class="mjx-msup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-813" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-814" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-815" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-816" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-817" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msup>
-                                    <mi>d</mi>
-                                    <mo>′</mo>
-                                </msup>
-                                <msup>
-                                    <mi>b</mi>
-                                    <mo>′</mo>
-                                </msup>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-56">d’b’</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-57-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><msup><mi>d</mi><mo>&amp;#x2032;</mo></msup></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-818" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-819" class="mjx-mrow"><span id="MJXc-Node-820" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-821" class="mjx-msup"><span class="mjx-base" style="margin-right: -0.003em;"><span id="MJXc-Node-822" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.076em; padding-right: 0.071em;"><span id="MJXc-Node-823" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>a</mi>
-                                <msup>
-                                    <mi>d</mi>
-                                    <mo>′</mo>
-                                </msup>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-57">ad’</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-58-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>a</mi><mi>b</mi><mi>c</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-824" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-825" class="mjx-mrow"><span id="MJXc-Node-826" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-827" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-828" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>a</mi>
-                                <mi>b</mi>
-                                <mi>c</mi>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-58">abc</script>`,
+        `
+                    \\( bc’d \\)`,
+        `
+                    \\( d’b’ \\)`,
+        `
+                    \\( ad’ \\)`,
+        `
+                    \\( abc \\)`,
       ],
       answer: "C",
       solution: ``
@@ -3491,121 +2651,27 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>The circuit below uses two <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-59-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-829" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-830" class="mjx-mrow"><span id="MJXc-Node-831" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-59">2</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-60-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-832" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-833" class="mjx-mrow"><span id="MJXc-Node-834" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>4</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-60">4</script> decoders, and inverter, and an OR gate to
-                implement a function <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-61-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>F</mi></mrow><mo stretchy=&quot;false&quot;>(</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>X</mi></mrow><mo>,</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>Y</mi></mrow><mo>,</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>Z</mi></mrow><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-835" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-836" class="mjx-mrow"><span id="MJXc-Node-837" class="mjx-texatom"><span id="MJXc-Node-838" class="mjx-mrow"><span id="MJXc-Node-839" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">F</span></span></span></span><span id="MJXc-Node-840" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-841" class="mjx-texatom"><span id="MJXc-Node-842" class="mjx-mrow"><span id="MJXc-Node-843" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">X</span></span></span></span><span id="MJXc-Node-844" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-845" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-846" class="mjx-mrow"><span id="MJXc-Node-847" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span></span></span><span id="MJXc-Node-848" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-849" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-850" class="mjx-mrow"><span id="MJXc-Node-851" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Z</span></span></span></span><span id="MJXc-Node-852" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">F</mi>
-                            </mrow>
-                            <mo stretchy="false">(</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">X</mi>
-                            </mrow>
-                            <mo>,</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">Y</mi>
-                            </mrow>
-                            <mo>,</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">Z</mi>
-                            </mrow>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-61">\mathrm{F}(\mathrm{X}, \mathrm{Y}, \mathrm{Z})</script>.
-                <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-62-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>X</mi></mrow></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-853" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-854" class="mjx-mrow"><span id="MJXc-Node-855" class="mjx-texatom"><span id="MJXc-Node-856" class="mjx-mrow"><span id="MJXc-Node-857" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">X</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">X</mi>
-                            </mrow>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-62">\mathrm{X}</script> is the most significant bit.
-            </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=11492790694095266743" style="max-width: 75%;"></p> <p><br><span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-63-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>F</mi></mrow><mo stretchy=&quot;false&quot;>(</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>X</mi></mrow><mo>,</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>Y</mi></mrow><mo>,</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>Z</mi></mrow><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-858" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-859" class="mjx-mrow"><span id="MJXc-Node-860" class="mjx-texatom"><span id="MJXc-Node-861" class="mjx-mrow"><span id="MJXc-Node-862" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">F</span></span></span></span><span id="MJXc-Node-863" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-864" class="mjx-texatom"><span id="MJXc-Node-865" class="mjx-mrow"><span id="MJXc-Node-866" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">X</span></span></span></span><span id="MJXc-Node-867" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-868" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-869" class="mjx-mrow"><span id="MJXc-Node-870" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span></span></span><span id="MJXc-Node-871" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-872" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-873" class="mjx-mrow"><span id="MJXc-Node-874" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Z</span></span></span></span><span id="MJXc-Node-875" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">F</mi>
-                            </mrow>
-                            <mo stretchy="false">(</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">X</mi>
-                            </mrow>
-                            <mo>,</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">Y</mi>
-                            </mrow>
-                            <mo>,</mo>
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">Z</mi>
-                            </mrow>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-63">\mathrm{F}(\mathrm{X}, \mathrm{Y}, \mathrm{Z})</script>
+      text: `<p></p> <p>The circuit below uses two 
+                \\( 2 \\)-to-
+                \\( 4 \\) decoders, and inverter, and an OR gate to
+                implement a function 
+                \\( \mathrm{F}(\mathrm{X}, \mathrm{Y}, \mathrm{Z}) \\).
+                
+                \\( \mathrm{X} \\) is the most significant bit.
+            </p> <p style="text-align:center"><img alt="" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=11492790694095266743" style="max-width: 75%;"></p> <p><br>
+                \\( \mathrm{F}(\mathrm{X}, \mathrm{Y}, \mathrm{Z}) \\)
                 can be expressed as (Encircle all that applies):
             </p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-64-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x2211;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>m</mi></mrow><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-876" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-877" class="mjx-mrow"><span id="MJXc-Node-878" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">∑</span></span><span id="MJXc-Node-879" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-880" class="mjx-mrow"><span id="MJXc-Node-881" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">m</span></span></span></span><span id="MJXc-Node-882" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-883" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-884" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-885" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-886" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-887" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-888" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-889" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-890" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mo>∑</mo>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">m</mi>
-                                </mrow>
-                                <mo stretchy="false">(</mo>
-                                <mn>0</mn>
-                                <mo>,</mo>
-                                <mn>3</mn>
-                                <mo>,</mo>
-                                <mn>4</mn>
-                                <mo>,</mo>
-                                <mn>6</mn>
-                                <mo stretchy="false">)</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-64">\sum \mathrm{m}(0,3,4,6)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-65-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x2211;</mo><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>m</mi></mrow><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-891" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-892" class="mjx-mrow"><span id="MJXc-Node-893" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">∑</span></span><span id="MJXc-Node-894" class="mjx-texatom MJXc-space1"><span id="MJXc-Node-895" class="mjx-mrow"><span id="MJXc-Node-896" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">m</span></span></span></span><span id="MJXc-Node-897" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-898" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-899" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-900" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-901" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-902" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span><span id="MJXc-Node-903" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-904" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-905" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mo>∑</mo>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">m</mi>
-                                </mrow>
-                                <mo stretchy="false">(</mo>
-                                <mn>0</mn>
-                                <mo>,</mo>
-                                <mn>2</mn>
-                                <mo>,</mo>
-                                <mn>4</mn>
-                                <mo>,</mo>
-                                <mn>7</mn>
-                                <mo stretchy="false">)</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-65">\sum \mathrm{m}(0,2,4,7)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-66-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x220F;</mo><mtext>M</mtext><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-906" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-907" class="mjx-mrow"><span id="MJXc-Node-908" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">∏</span></span><span id="MJXc-Node-909" class="mjx-mtext MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">M</span></span><span id="MJXc-Node-910" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-911" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-912" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-913" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">3</span></span><span id="MJXc-Node-914" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-915" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span><span id="MJXc-Node-916" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-917" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">6</span></span><span id="MJXc-Node-918" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mo>∏</mo>
-                                <mtext>M</mtext>
-                                <mo stretchy="false">(</mo>
-                                <mn>1</mn>
-                                <mo>,</mo>
-                                <mn>3</mn>
-                                <mo>,</mo>
-                                <mn>5</mn>
-                                <mo>,</mo>
-                                <mn>6</mn>
-                                <mo stretchy="false">)</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-66">\prod&nbsp;\text{M}(1,3,5,6)</script>`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-67-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo>&amp;#x220F;</mo><mtext>M</mtext><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>7</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-919" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-920" class="mjx-mrow"><span id="MJXc-Node-921" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.501em; padding-bottom: 0.501em;">∏</span></span><span id="MJXc-Node-922" class="mjx-mtext MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">M</span></span><span id="MJXc-Node-923" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-924" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-925" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-926" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span><span id="MJXc-Node-927" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-928" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">5</span></span><span id="MJXc-Node-929" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-930" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">7</span></span><span id="MJXc-Node-931" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mo>∏</mo>
-                                <mtext>M</mtext>
-                                <mo stretchy="false">(</mo>
-                                <mn>1</mn>
-                                <mo>,</mo>
-                                <mn>2</mn>
-                                <mo>,</mo>
-                                <mn>5</mn>
-                                <mo>,</mo>
-                                <mn>7</mn>
-                                <mo stretchy="false">)</mo>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-67">\prod&nbsp;\text{M}(1,2,5,7)</script>`,
+        `
+                    \\( \sum \mathrm{m}(0,3,4,6) \\)`,
+        `
+                    \\( \sum \mathrm{m}(0,2,4,7) \\)`,
+        `
+                    \\( \prod&nbsp;\text{M}(1,3,5,6) \\)`,
+        `
+                    \\( \prod&nbsp;\text{M}(1,2,5,7) \\)`,
       ],
       answer: "B",
       solution: ``
@@ -3614,44 +2680,24 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Consider the following circuit containing a <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-68-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-932" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-933" class="mjx-mrow"><span id="MJXc-Node-934" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>2</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-68">2</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-69-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-935" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-936" class="mjx-mrow"><span id="MJXc-Node-937" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>4</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-69">4</script> decoder:
+      text: `<p></p> <p>Consider the following circuit containing a 
+                \\( 2 \\)-to-
+                \\( 4 \\) decoder:
             </p> <p style="text-align:center"><img alt="" height="249" width="440" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=6836692884319524371" style="max-width: 75%;"></p> <p><br>The following circuit behaves like:</p> <p></p>`,
       image: "",
       options: [
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-70-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-938" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-939" class="mjx-mrow"><span id="MJXc-Node-940" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-70">2</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-71-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-941" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-942" class="mjx-mrow"><span id="MJXc-Node-943" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>4</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-71">4</script> Decoder`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-72-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>2</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-944" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-945" class="mjx-mrow"><span id="MJXc-Node-946" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-72">2</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-73-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-947" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-948" class="mjx-mrow"><span id="MJXc-Node-949" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>4</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-73">4</script> Multiplexer`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-74-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-950" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-951" class="mjx-mrow"><span id="MJXc-Node-952" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>4</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-74">4</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-75-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-953" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-954" class="mjx-mrow"><span id="MJXc-Node-955" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>1</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-75">1</script> De-multiplexer`,
-        `<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-76-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>4</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-956" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-957" class="mjx-mrow"><span id="MJXc-Node-958" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">4</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>4</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-76">4</script>-to-<span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-77-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-959" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-960" class="mjx-mrow"><span id="MJXc-Node-961" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>1</mn>
-                            </math></span></span>
-                    <script type="math/tex" id="MathJax-Element-77">1</script> Multiplexer`,
+        `
+                    \\( 2 \\)-to-
+                    \\( 4 \\) Decoder`,
+        `
+                    \\( 2 \\)-to-
+                    \\( 4 \\) Multiplexer`,
+        `
+                    \\( 4 \\)-to-
+                    \\( 1 \\) De-multiplexer`,
+        `
+                    \\( 4 \\)-to-
+                    \\( 1 \\) Multiplexer`,
       ],
       answer: "D",
       solution: ``
@@ -3660,39 +2706,12 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MCQ",
-      text: `<p>A majority voting machine inputs three binary bits <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-78-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-962" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-963" class="mjx-mrow"><span id="MJXc-Node-964" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-965" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-966" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-967" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-968" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-969" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-970" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-971" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-972" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-973" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-974" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-975" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span id="MJXc-Node-976" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mi>x</mi>
-                                <mn>1</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mi>x</mi>
-                                <mn>0</mn>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-78">(x_2, x_1, x_0)</script>, and outputs <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-79-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>y</mi><mo>=</mo><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-977" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-978" class="mjx-mrow"><span id="MJXc-Node-979" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span><span id="MJXc-Node-980" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-981" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>y</mi>
-                            <mo>=</mo>
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-79">y=1</script> when the majority of the input bits are
-                <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-80-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1.</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-982" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-983" class="mjx-mrow"><span id="MJXc-Node-984" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1.</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1.</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-80">1.</script> Otherwise, the output is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-81-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>y</mi><mo>=</mo><mn>0</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-985" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-986" class="mjx-mrow"><span id="MJXc-Node-987" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.501em; padding-right: 0.006em;">y</span></span><span id="MJXc-Node-988" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-989" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>y</mi>
-                            <mo>=</mo>
-                            <mn>0</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-81">y=0</script>.
+      text: `<p>A majority voting machine inputs three binary bits 
+                \\( (x_2, x_1, x_0) \\), and outputs 
+                \\( y=1 \\) when the majority of the input bits are
+                
+                \\( 1. \\) Otherwise, the output is 
+                \\( y=0 \\).
 
                 Number of Prime implicants of Y which are Not Essential Prime Implicants?
             </p>`,
@@ -3706,168 +2725,19 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MCQ",
-      text: `<p>A bit counting machine reads a binary input vector <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-82-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-990" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-991" class="mjx-mrow"><span id="MJXc-Node-992" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-993" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-994" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-995" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-996" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-997" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-998" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-999" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1000" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-82">(a, b, c, d)</script> and produces a binary number <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-83-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1001" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1002" class="mjx-mrow"><span id="MJXc-Node-1003" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1004" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1005" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1006" class="mjx-texatom" style=""><span id="MJXc-Node-1007" class="mjx-mrow"><span id="MJXc-Node-1008" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-1009" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1010" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1011" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1012" class="mjx-texatom" style=""><span id="MJXc-Node-1013" class="mjx-mrow"><span id="MJXc-Node-1014" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-1015" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1016" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1017" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1018" class="mjx-texatom" style=""><span id="MJXc-Node-1019" class="mjx-mrow"><span id="MJXc-Node-1020" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span id="MJXc-Node-1021" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>2</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-83">(\text{S}_{2},\text{S}_{1},\text{S}_{0})</script> that
-                counts the number of <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-84-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mn>1</mn><mo>&amp;#x2032;</mo></msup><mtext>s</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1022" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1023" class="mjx-mrow"><span id="MJXc-Node-1024" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-1025" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-1026" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-1027" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">s</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msup>
-                                <mn>1</mn>
-                                <mo>′</mo>
-                            </msup>
-                            <mtext>s</mtext>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-84">1’\text{s}</script> in the input bits. For example when
-                <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-85-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1028" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1029" class="mjx-mrow"><span id="MJXc-Node-1030" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1031" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1032" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1033" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1034" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1035" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1036" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1037" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1038" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1039" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1040" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1041" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1042" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1043" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1044" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1045" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1046" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1047" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1048" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-85">(a, b, c, d)=(0,1,1,1)</script>, we have output <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-86-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>2</mn></msub><mo>,</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>1</mn></msub><mo>,</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>0</mn></msub><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1049" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1050" class="mjx-mrow"><span id="MJXc-Node-1051" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1052" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1053" class="mjx-texatom"><span id="MJXc-Node-1054" class="mjx-mrow"><span id="MJXc-Node-1055" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1056" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-1057" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1058" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1059" class="mjx-texatom"><span id="MJXc-Node-1060" class="mjx-mrow"><span id="MJXc-Node-1061" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1062" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-1063" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1064" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1065" class="mjx-texatom"><span id="MJXc-Node-1066" class="mjx-mrow"><span id="MJXc-Node-1067" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1068" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span id="MJXc-Node-1069" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1070" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1071" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1072" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1073" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1074" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1075" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1076" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1077" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>2</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>1</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>0</mn>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-86">(\mathrm{S}_2, \mathrm{S}_1, \mathrm{S}_0)=(0,1,1)</script>, and when <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-87-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1078" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1079" class="mjx-mrow"><span id="MJXc-Node-1080" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1081" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1082" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1083" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1084" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1085" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1086" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1087" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1088" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1089" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1090" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1091" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1092" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1093" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1094" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1095" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1096" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1097" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1098" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-87">(a,b,c,d)=(1,0,1,0)</script>, we have output <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-88-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>2</mn></msub><mo>,</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>1</mn></msub><mo>,</mo><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>0</mn></msub><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1099" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1100" class="mjx-mrow"><span id="MJXc-Node-1101" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1102" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1103" class="mjx-texatom"><span id="MJXc-Node-1104" class="mjx-mrow"><span id="MJXc-Node-1105" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1106" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-1107" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1108" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1109" class="mjx-texatom"><span id="MJXc-Node-1110" class="mjx-mrow"><span id="MJXc-Node-1111" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1112" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-1113" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1114" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1115" class="mjx-texatom"><span id="MJXc-Node-1116" class="mjx-mrow"><span id="MJXc-Node-1117" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1118" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span><span id="MJXc-Node-1119" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1120" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1121" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1122" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1123" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1124" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1125" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1126" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1127" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>2</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>1</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>0</mn>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-88">( \mathrm{S}_2, \mathrm{S}_1, \mathrm{S}_0)=(0,1,0)</script>.
+      text: `<p>A bit counting machine reads a binary input vector 
+                \\( (a, b, c, d) \\) and produces a binary number 
+                \\( (\text{S}_{2},\text{S}_{1},\text{S}_{0}) \\) that
+                counts the number of 
+                \\( 1’\text{s} \\) in the input bits. For example when
+                
+                \\( (a, b, c, d)=(0,1,1,1) \\), we have output 
+                \\( (\mathrm{S}_2, \mathrm{S}_1, \mathrm{S}_0)=(0,1,1) \\), and when 
+                \\( (a,b,c,d)=(1,0,1,0) \\), we have output 
+                \\( ( \mathrm{S}_2, \mathrm{S}_1, \mathrm{S}_0)=(0,1,0) \\).
 
-                Number of Prime Implicants of <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-89-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>S</mi></mrow><mn>2</mn></msub><mo>?</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1128" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1129" class="mjx-mrow"><span id="MJXc-Node-1130" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1131" class="mjx-texatom"><span id="MJXc-Node-1132" class="mjx-mrow"><span id="MJXc-Node-1133" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1134" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span><span id="MJXc-Node-1135" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">?</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msub>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mi mathvariant="normal">S</mi>
-                                </mrow>
-                                <mn>2</mn>
-                            </msub>
-                            <mo>?</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-89">\mathrm{S}_2?</script>
+                Number of Prime Implicants of 
+                \\( \mathrm{S}_2? \\)
             </p>`,
       image: "",
       options: [
@@ -3879,211 +2749,28 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MCQ",
-      text: `<p>A bit counting machine reads a binary input vector <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-90-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1136" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1137" class="mjx-mrow"><span id="MJXc-Node-1138" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1139" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1140" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1141" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1142" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1143" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1144" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1145" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1146" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-90">(a, b, c, d)</script> and produces a binary number <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-91-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1147" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1148" class="mjx-mrow"><span id="MJXc-Node-1149" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1150" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1151" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1152" class="mjx-texatom" style=""><span id="MJXc-Node-1153" class="mjx-mrow"><span id="MJXc-Node-1154" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-1155" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1156" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1157" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1158" class="mjx-texatom" style=""><span id="MJXc-Node-1159" class="mjx-mrow"><span id="MJXc-Node-1160" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-1161" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1162" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1163" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1164" class="mjx-texatom" style=""><span id="MJXc-Node-1165" class="mjx-mrow"><span id="MJXc-Node-1166" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span id="MJXc-Node-1167" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>2</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-91">(\text{S}_{2},\text{S}_{1},\text{S}_{0})</script> that
-                counts the number of <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-92-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msup><mn>1</mn><mo>&amp;#x2032;</mo></msup><mtext>s</mtext></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1168" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1169" class="mjx-mrow"><span id="MJXc-Node-1170" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-1171" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-1172" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.279em; padding-bottom: 0.335em;">′</span></span></span></span><span id="MJXc-Node-1173" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">s</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msup>
-                                <mn>1</mn>
-                                <mo>′</mo>
-                            </msup>
-                            <mtext>s</mtext>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-92">1’\text{s}</script> in the input bits. For example when
-                <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-93-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1174" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1175" class="mjx-mrow"><span id="MJXc-Node-1176" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1177" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1178" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1179" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1180" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1181" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1182" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1183" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1184" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1185" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1186" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1187" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1188" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1189" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1190" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1191" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1192" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1193" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1194" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-93">(a, b, c, d)=(0,1,1,1)</script>, we have output <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-94-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1195" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1196" class="mjx-mrow"><span id="MJXc-Node-1197" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1198" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1199" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1200" class="mjx-texatom" style=""><span id="MJXc-Node-1201" class="mjx-mrow"><span id="MJXc-Node-1202" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-1203" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1204" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1205" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1206" class="mjx-texatom" style=""><span id="MJXc-Node-1207" class="mjx-mrow"><span id="MJXc-Node-1208" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-1209" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1210" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1211" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1212" class="mjx-texatom" style=""><span id="MJXc-Node-1213" class="mjx-mrow"><span id="MJXc-Node-1214" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span id="MJXc-Node-1215" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1216" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1217" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1218" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1219" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1220" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1221" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1222" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1223" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>2</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-94">(\text{S}_{2},\text{S}_{1},\text{S}_{0})=(0,1,1)</script>, and when <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-95-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1224" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1225" class="mjx-mrow"><span id="MJXc-Node-1226" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1227" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1228" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1229" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1230" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1231" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1232" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1233" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1234" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1235" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1236" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1237" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1238" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1239" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1240" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1241" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1242" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1243" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1244" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-95">(a, b, c, d)=(1,0,1,0)</script>, we have output <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-96-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>2</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>1</mn></mrow></msub><mo>,</mo><msub><mtext>S</mtext><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mn>0</mn></mrow></msub><mo stretchy=&quot;false&quot;>)</mo><mo>=</mo><mo stretchy=&quot;false&quot;>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1245" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1246" class="mjx-mrow"><span id="MJXc-Node-1247" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1248" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1249" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1250" class="mjx-texatom" style=""><span id="MJXc-Node-1251" class="mjx-mrow"><span id="MJXc-Node-1252" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">2</span></span></span></span></span></span><span id="MJXc-Node-1253" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1254" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1255" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1256" class="mjx-texatom" style=""><span id="MJXc-Node-1257" class="mjx-mrow"><span id="MJXc-Node-1258" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span></span></span><span id="MJXc-Node-1259" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1260" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-1261" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.39em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1262" class="mjx-texatom" style=""><span id="MJXc-Node-1263" class="mjx-mrow"><span id="MJXc-Node-1264" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span id="MJXc-Node-1265" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span><span id="MJXc-Node-1266" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.058em; padding-bottom: 0.335em;">=</span></span><span id="MJXc-Node-1267" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1268" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1269" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1270" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span><span id="MJXc-Node-1271" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1272" class="mjx-mn MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span><span id="MJXc-Node-1273" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>2</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>1</mn>
-                                </mrow>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mtext>S</mtext>
-                                <mrow class="MJX-TeXAtom-ORD">
-                                    <mn>0</mn>
-                                </mrow>
-                            </msub>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo>,</mo>
-                            <mn>1</mn>
-                            <mo>,</mo>
-                            <mn>0</mn>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-96">(\text{S}_{2},\text{S}_{1},\text{S}_{0})=(0,1,0)</script>.
+      text: `<p>A bit counting machine reads a binary input vector 
+                \\( (a, b, c, d) \\) and produces a binary number 
+                \\( (\text{S}_{2},\text{S}_{1},\text{S}_{0}) \\) that
+                counts the number of 
+                \\( 1’\text{s} \\) in the input bits. For example when
+                
+                \\( (a, b, c, d)=(0,1,1,1) \\), we have output 
+                \\( (\text{S}_{2},\text{S}_{1},\text{S}_{0})=(0,1,1) \\), and when 
+                \\( (a, b, c, d)=(1,0,1,0) \\), we have output 
+                \\( (\text{S}_{2},\text{S}_{1},\text{S}_{0})=(0,1,0) \\).
 
-                Let <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-97-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mrow class=&quot;MJX-TeXAtom-ORD&quot;><mi mathvariant=&quot;normal&quot;>Y</mi><mo stretchy=&quot;false&quot;>(</mo><mi mathvariant=&quot;normal&quot;>a</mi><mo>,</mo><mi mathvariant=&quot;normal&quot;>b</mi><mo>,</mo><mi mathvariant=&quot;normal&quot;>c</mi><mo>,</mo><mi mathvariant=&quot;normal&quot;>d</mi><mo stretchy=&quot;false&quot;>)</mo></mrow></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1274" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1275" class="mjx-mrow"><span id="MJXc-Node-1276" class="mjx-texatom"><span id="MJXc-Node-1277" class="mjx-mrow"><span id="MJXc-Node-1278" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span><span id="MJXc-Node-1279" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1280" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">a</span></span><span id="MJXc-Node-1281" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1282" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">b</span></span><span id="MJXc-Node-1283" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1284" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.169em; padding-bottom: 0.335em;">c</span></span><span id="MJXc-Node-1285" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1286" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">d</span></span><span id="MJXc-Node-1287" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mrow class="MJX-TeXAtom-ORD">
-                                <mi mathvariant="normal">Y</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi mathvariant="normal">a</mi>
-                                <mo>,</mo>
-                                <mi mathvariant="normal">b</mi>
-                                <mo>,</mo>
-                                <mi mathvariant="normal">c</mi>
-                                <mo>,</mo>
-                                <mi mathvariant="normal">d</mi>
-                                <mo stretchy="false">)</mo>
-                            </mrow>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-97">\mathrm{Y(a,b,c,d)}</script> be a boolean function such
-                that <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-98-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mi>Y</mi></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1288" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1289" class="mjx-mrow"><span id="MJXc-Node-1290" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.182em;">Y</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>Y</mi>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-98">Y</script> is <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-99-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1291" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1292" class="mjx-mrow"><span id="MJXc-Node-1293" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-99">1</script> for any input combination <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-100-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mo stretchy=&quot;false&quot;>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy=&quot;false&quot;>)</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1294" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1295" class="mjx-mrow"><span id="MJXc-Node-1296" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">(</span></span><span id="MJXc-Node-1297" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">a</span></span><span id="MJXc-Node-1298" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1299" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em;">b</span></span><span id="MJXc-Node-1300" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1301" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.224em; padding-bottom: 0.279em;">c</span></span><span id="MJXc-Node-1302" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1303" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.445em; padding-bottom: 0.279em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-1304" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.611em;">)</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mo stretchy="false">(</mo>
-                            <mi>a</mi>
-                            <mo>,</mo>
-                            <mi>b</mi>
-                            <mo>,</mo>
-                            <mi>c</mi>
-                            <mo>,</mo>
-                            <mi>d</mi>
-                            <mo stretchy="false">)</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-100">(a,b,c,d)</script> if and only if both <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-101-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><msub><mi>S</mi><mn>1</mn></msub><mo>,</mo><msub><mi>S</mi><mn>0</mn></msub></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1305" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1306" class="mjx-mrow"><span id="MJXc-Node-1307" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.032em;"><span id="MJXc-Node-1308" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.279em; padding-right: 0.032em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1309" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span id="MJXc-Node-1310" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.163em; padding-bottom: 0.556em;">,</span></span><span id="MJXc-Node-1311" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.032em;"><span id="MJXc-Node-1312" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.501em; padding-bottom: 0.279em; padding-right: 0.032em;">S</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1313" class="mjx-mn" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.39em;">0</span></span></span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msub>
-                                <mi>S</mi>
-                                <mn>1</mn>
-                            </msub>
-                            <mo>,</mo>
-                            <msub>
-                                <mi>S</mi>
-                                <mn>0</mn>
-                            </msub>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-101">S_1,S_0</script> are both <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-102-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mn>1</mn></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1314" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1315" class="mjx-mrow"><span id="MJXc-Node-1316" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">1</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mn>1</mn>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-102">1</script> for that input combination.
+                Let 
+                \\( \mathrm{Y(a,b,c,d)} \\) be a boolean function such
+                that 
+                \\( Y \\) is 
+                \\( 1 \\) for any input combination 
+                \\( (a,b,c,d) \\) if and only if both 
+                \\( S_1,S_0 \\) are both 
+                \\( 1 \\) for that input combination.
 
-                The number of Prime Implicants in <span class="MathJax_Preview" style="color: inherit;"></span><span id="MathJax-Element-103-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;><mtext>Y</mtext><mo>?</mo></math>" role="presentation" style="font-size: 113%; position: relative;"><span id="MJXc-Node-1317" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-1318" class="mjx-mrow"><span id="MJXc-Node-1319" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.39em; padding-bottom: 0.335em;">Y</span></span><span id="MJXc-Node-1320" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.445em; padding-bottom: 0.335em;">?</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mtext>Y</mtext>
-                            <mo>?</mo>
-                        </math></span></span>
-                <script type="math/tex" id="MathJax-Element-103">\text{Y}?</script>
+                The number of Prime Implicants in 
+                \\( \text{Y}? \\)
             </p>`,
       image: "",
       options: [
