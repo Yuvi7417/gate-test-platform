@@ -3535,3 +3535,430 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-3|Linear Algebra",
+  date: "Sep 14, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the vectors \\( \\mathbf{v}_1 \\) and \\( \\mathbf{v}_2 \\) given by<br> \$\$ \\mathbf{v}_1=\\left(\\begin{array}{l} 2 \\\\ t \\\\ 3 \\end{array}\\right), \\quad \\mathbf{v}_2=\\left(\\begin{array}{l} 3 \\\\ 6 \\\\ t \\end{array}\\right) \$\$ <br>Which statement is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `The vectors \\( \\left\\{\\mathbf{v}_1, \\mathbf{v}_2\\right\\} \\) are linearly independent for all \\( t \\)`,
+        `The vectors \\( \\left\\{\\mathbf{v}_1, \\mathbf{v}_2\\right\\} \\) are linearly dependent for all \\( t \\)`,
+        `The vectors \\( \\left\\{\\mathbf{v}_1, \\mathbf{v}_2\\right\\} \\) are linearly dependent when \\( t=4 \\), and linearly independent otherwise`,
+        `The vectors \\( \\left\\{\\mathbf{v}_1, \\mathbf{v}_2\\right\\} \\) are linearly independent when \\( t=4 \\), and linearly dependent otherwise`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em3/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider a matrix \\( A_{4 \\times 5} \\)., where all the solutions of \\( A x=0 \\) has the following form - \$\$ \\left[\\begin{array}{c} 6 c-12 e \\\\ -4 c+10 e \\\\ c \\\\ -5 e \\\\ e \\end{array}\\right] \$\$ What will be the rank of \\( A? \\) </p>`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img src="/images/quiz/wqt-em3/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be a \\( n \\times n \\) matrix, and let \\( u, v, w \\) be nonzero vectors in \\( \\mathbf{R}^n \\) which are distinct \\( (\\text{so}\\; u \\neq v, u \\neq w \\), and \\( v \\neq w). \\)<br>Suppose \\( A u=2 u, \\quad A v=2 v, \\quad A w=-w \\).<br>Which one of the following vectors must be an eigenvector of \\( A? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( u-v \\)`,
+        `\\( v-w \\)`,
+        `\\( u-w \\)`,
+        `none of the above`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em3/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a matrix \\( A_{n \\times&nbsp;n} \\) having the following characteristic equation -<br> \$\$ \\lambda^2(\\lambda-3)(\\lambda+2)^3(\\lambda-4)^3 \$\$<br>What could be \\( \\operatorname{rank}(\\mathrm{A})? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6 \\)`,
+        `\\( 7 \\)`,
+        `\\( 8 \\)`,
+        `\\( 9 \\)`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em3/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the system below, where \\( h \\) and \\( k \\) are real numbers.<br> \$\$ \\begin{array}{r} x+3 y=2 \\\\ 3 x-h y=k \\end{array} \$\$<br>Find the values of \\( h \\) and \\( k \\) which give the system infinitely many solutions. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( h=-9 \\) and \\( k \\neq 6 \\)`,
+        `\\( h \\neq-9 \\) and \\( k \\) can be any real number`,
+        `\\( h=-9 \\) and \\( k=6 \\)`,
+        `System is inconsistent for all values of \\( h \\) and \\( k \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( \\vec{v} \\) be an eigenvector of an invertible matrix \\( A \\). Which of the following are necessarily true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\vec{v} \\) is an eigenvector of \\( A^{-1} \\).`,
+        `\\( \\vec{v} \\) is an eigenvector of \\( A^2 \\).`,
+        `\\( \\vec{v} \\) is an eigenvector of \\( A+I \\).`,
+        `\\( \\vec{v} \\) is an eigenvector of \\( A+2 I \\).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( \\mathrm{A} \\) be a \\( 3 \\times 3 \\) matrix. Let \\( \\mathbf{x}, \\mathbf{y}, \\mathbf{z} \\) are linearly independent \\( 3 \\)-dimensional vectors. Suppose that we have \$\$ A \\mathbf{x}=\\left[\\begin{array}{l} 1 \\\\ 0 \\\\ 1 \\end{array}\\right], A \\mathbf{y}=\\left[\\begin{array}{l} 0 \\\\ 1 \\\\ 0 \\end{array}\\right], A \\mathbf{z}=\\left[\\begin{array}{l} 1 \\\\ 1 \\\\ 1 \\end{array}\\right] . \$\$ Then find the value of the determinant of the matrix \\( \\mathrm{A} \\). </p>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img src="/images/quiz/wqt-em3/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If the echelon form of an \\( m \\times n \\) matrix has a pivot in every column then \\( n \\geq m \\)`,
+        `If the echelon form of an \\( m \\times n \\) matrix \\( A \\) has a pivot in every row, then the matrix equation \\( A\\left[\\begin{array}{c}x_1 \\\\ \\vdots \\\\ x_n\\end{array}\\right]=\\vec{b} \\) is consistent for every \\( \\vec{b} \\in \\mathbb{R}^m \\).`,
+        `A system of \\( 25 \\) linear equations in \\( 13 \\) unknowns always has at least one solution.`,
+        `If a system of \\( 25 \\) linear equations in \\( 13 \\) unknowns has at least one solution then it has infinitely many solutions.`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-em3/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \$\$ \\left[\\begin{array}{ll} 3 &amp; 1 \\\\ 1 &amp; 0 \\\\ 2 &amp; 5 \\end{array}\\right]\\left[\\begin{array}{lll} a &amp; 1 &amp; 0 \\\\ 2 &amp; b &amp; 1 \\end{array}\\right]=A_{3 \\times 3} \$\$ <br>At what values of \\( (a, b), A_{3 \\times 3} \\) will be invertible? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (1,-1) \\)`,
+        `\\( (-1,1) \\)`,
+        `Both A and B`,
+        `None of the above`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em3/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The given system has infinitely many solutions for \\( k=? \\) \$\$ \\left[\\begin{array}{ccc} 2 &amp; 2 &amp; -4 \\\\ 1 &amp; 3 &amp; -2 \\\\ -4 &amp; k &amp; 8 \\end{array}\\right]\\left[\\begin{array}{l} x \\\\ y \\\\ z \\end{array}\\right]=\\left[\\begin{array}{c} 3 \\\\ 4 \\\\ -6 \\end{array}\\right] \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "-4",
+      solution: `<img src="/images/quiz/wqt-em3/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In the echelon form of the augmented matrix \\( [A \\mid b]: \\)&nbsp; </p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>Only I is true.</li> <li>Only Il is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
+      image: "",
+      options: [
+        `A single row of the form \\( (000 \\ldots 0 \\mid 0) \\) is enough to conclude that the system will have infinitely many solutions.`,
+        `A single row of the form (00 \\( \\cdots 0 \\mid 1) \\) is enough to conclude that the system will have no solution.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em3/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If \\( P=\\left[\\begin{array}{lll}1 &amp; \\alpha &amp; 3 \\\\ 1 &amp; 3 &amp; 3 \\\\ 2 &amp; 4 &amp; 4\\end{array}\\right] \\) is the adjoint of a \\( 3 \\times 3 \\) matrix \\( \\mathrm{A}, \\) and \\( \\operatorname{det(A)}=4, \\) then \\( \\alpha \\) equals to? </p>`,
+      image: "",
+      options: [],
+      answer: "11",
+      solution: `<img src="/images/quiz/wqt-em3/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Given the following matrix:<br> \$\$ A=\\left[\\begin{array}{lll} 1 &amp; 2 &amp; 2 \\\\ 2 &amp; 1 &amp; 2 \\\\ 2 &amp; 2 &amp; 1 \\end{array}\\right] \$\$ <br>Consider the following statements: </p> <p>Which of the following options is correct?</p> <ol style="list-style-type:upper-alpha"> <li>Only \\( I \\) is true. </li> <li>Only II is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
+      image: "",
+      options: [
+        `\\( A^2-4 A-5 I=0 \\) (where \\( I \\) is identity matrix).`,
+        `\\( A^{-1}=\\frac{(A-4 I)}{5} \\).`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Mark all the INCORRECT statements</p> <p></p>`,
+      image: "",
+      options: [
+        `Let \\( A \\)&nbsp;be the matrix of a rotation by angle \\( 30 \\) degree. That is, for any vector \\( x, \\)&nbsp;the angle between \\( x \\) and \\( A x \\) is always \\( 30 \\) degree. Then \\( A \\) has no real eigenvalues.`,
+        `Let \\( A \\) be an \\( n \\times n \\) matrix. Then the eigenvalues of \\( A \\) are the diagonal entries of \\( A \\).`,
+        `If \\( A \\) is a \\( 3 \\times 3 \\) matrix with eigenvalues \\( \\lambda=1,2,3 \\), then \\( A \\) is singular.`,
+        `If \\( A \\) is a symmetric matrix, then all its eigenvectors are orthogonal.`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose \\( \\mathbf{A}=\\mathbf{B C} \\), where \\( \\mathbf{B} \\) is a \\( 4 \\times 2 \\) matrix and \\( \\mathbf{C} \\) is a \\( 2 \\times 4 \\) matrix. Is \\( \\mathbf{A} \\) invertible? </p> <p></p>`,
+      image: "",
+      options: [
+        `Yes, \\( \\mathbf{A} \\) is invertible.`,
+        `No, \\( \\mathbf{A} \\) is not invertible.`,
+        `Depends on \\( \\mathbf{C} \\) only.`,
+        `Depends on \\( \\mathbf{B} \\) and \\( \\mathbf{C} \\).`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em3/15.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A=\\left[\\begin{array}{cc}1 &amp; 0 \\\\ -1 &amp; 1 \\\\ k &amp; 2\\end{array}\\right] \\) and \\( b=\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 1\\end{array}\\right] \\). For which value of \\( k \\) does the system \\( A \\mathbf{x}=b \\) have a unique solution? </p> <p></p>`,
+      image: "",
+      options: [
+        `There is no such value for \\( k \\).`,
+        `\\( k=0 \\)`,
+        `\\( k=-1 \\)`,
+        `\\( k=1 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/16.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( m \\times n \\)-matrix and let \\( B \\) be an \\( n \\times m \\)-matrix. Then which of the following statement is not true for all such matrices? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( B A \\) is defined`,
+        `the columns of \\( A B \\) are linear combinations of the columns of \\( B \\)`,
+        `\\( A B \\) is defined`,
+        `the columns of \\( A B \\) are linear combinations of the columns of \\( A \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em3/17.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider \\( A=\\left[\\begin{array}{ll}1 &amp; 0 \\\\ 0 &amp; 1 \\\\ 0 &amp; 2\\end{array}\\right] \\) and \\( B=\\left[\\begin{array}{ccc}1 &amp; 0 &amp; 0 \\\\ 0 &amp; 1 &amp; -1 \\\\ 0 &amp; 2 &amp; 0\\end{array}\\right] \\) . Let \\( \\boldsymbol{v}=\\left[\\begin{array}{l}1 \\\\ 1 \\\\ 1\\end{array}\\right] \\) . Which of the following statements is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\boldsymbol{v} \\) is a linear combination of the columns of \\( B \\) but not of the columns of \\( A \\).`,
+        `\\( \\boldsymbol{v} \\) is a linear combination of the columns of \\( A \\) and of the columns of \\( B \\).`,
+        `\\( \\boldsymbol{v} \\) is a linear combination of the columns of \\( A \\) but not of the columns of \\( B \\).`,
+        `\\( \\boldsymbol{v} \\) is neither a linear combination of the columns of \\( A \\) nor of the columns of \\( B \\).`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em3/18.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be a \\( 2 \\times 3 \\)-matrix and \\( b \\) a vector in \\( \\mathbb{R}^2 \\). </p> <p>Consider the following two statements:</p> <ul> <li> \\( (\\text{P}1)\\;&nbsp;A \\) has at most two pivots, </li> <li> \\( (\\text{P2}) \\) Assuming \\( A x=b \\) has a solution, then it has infinitely many solutions. </li> </ul> <p>Then:</p> <p></p>`,
+      image: "",
+      options: [
+        `Only Statement \\( \\text{P2} \\) is correct.`,
+        `Neither Statement \\( \\text{P1} \\) nor Statement \\( \\text{P2} \\) is correct.`,
+        `Only Statement \\( \\text{P1} \\) is correct.`,
+        `Statement \\( \\text{P1} \\) and Statement \\( \\text{P2} \\) are correct.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em3/19.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose \\( A \\) is \\( 3 \\) by \\( 4, \\) and \\( A x=0 \\) has all solutions in the following form -<br> \$\$ \\mathrm{x}=\\mathrm{s}\\left[\\begin{array}{l} 1 \\\\ 1 \\\\ 1 \\\\ 0 \\end{array}\\right]+\\mathrm{t}\\left[\\begin{array}{r} -2 \\\\ -1 \\\\ 0 \\\\ 1 \\end{array}\\right] \$\$ <br>We do some unknown elementary row transformations on \\( A \\) and get the following matrix \\( R \\) -<br> \$\$ R=\\left[\\begin{array}{llll} 1 &amp; 0 &amp; \\mathrm{a} &amp; \\mathrm{b} \\\\ 0 &amp; 1 &amp; \\mathrm{c} &amp; \\mathrm{d} \\\\ 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right] \$\$ <br>What will be the values of \\( a, b, c, \\)&nbsp;and \\( d? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( a=-1 \\)`,
+        `\\( b=2 \\)`,
+        `\\( c=-1 \\)`,
+        `\\( d=1 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/20.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a matrix \\( A \\) of dimension \\( m \\times n \\) such that - </p> <p> \\( A x=\\left[\\begin{array}{l}1 \\\\ 1 \\\\ 1\\end{array}\\right] \\) has no solutions and \\( A x=\\left[\\begin{array}{l}0 \\\\ 1 \\\\ 0\\end{array}\\right] \\) has exactly one solution </p> <p>Which of the following CAN be true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{Rank}(A)=2 \\)`,
+        `\\( m=3 \\)`,
+        `\\( n=1 \\)`,
+        `\\( \\operatorname{Rank}(A)=1 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/21.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A three-by-three matrix \\( B \\) is known to have eigenvalues \\( 0,1 \\) and \\( 2. \\) This information is enough to find which one of these (give the answers where possible): </p> <p></p>`,
+      image: "",
+      options: [
+        `The rank of \\( B \\)`,
+        `The determinant of \\( B^T B \\)`,
+        `The eigenvalues of \\( B^T B \\)`,
+        `The eigenvalues of \\( \\left(B^2+I\\right)^{-1} \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/22.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( m \\times n \\)-matrix. Consider the system of linear equations \\( A X=b \\), which of the following statement is always true: </p> <p></p>`,
+      image: "",
+      options: [
+        `Suppose \\( m&gt;n \\) then rank of augmented matrix \\( (A \\mid b) \\) can not larger than \\( m \\).`,
+        `Suppose \\( A \\) has full rank then \\( A X=b \\) always has a solution.`,
+        `If \\( A X=b \\) has a solution then \\( A X=0 \\) has unique solution.`,
+        `If \\( A X=b \\) has a unique solution then \\( A \\) has to be invertible.`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-em3/23.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be a \\( 3 \\times 3 \\) matrix. Suppose that \\( A \\) has eigenvalues \\( 2 \\) and \\( -1, \\) and suppose that \\( \\mathbf{u} \\) and \\( \\mathbf{v} \\) are eigenvectors corresponding to \\( 2 \\) and \\( -1, \\) respectively, where<br> \$\$ \\mathbf{u}=\\left[\\begin{array}{c} 1 \\\\ 0 \\\\ -1 \\end{array}\\right] \\text { and } \\mathbf{v}=\\left[\\begin{array}{l} 2 \\\\ 1 \\\\ 0 \\end{array}\\right] \$\$ <br>Then compute \\( A^5 \\mathbf{w} \\), where<br> \$\$ \\mathbf{w}=\\left[\\begin{array}{c} 7 \\\\ 2 \\\\ -3 \\end{array}\\right] \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left[\\begin{array}{c} 92 \\\\ 2 \\\\ -96 \\end{array}\\right] \\) <br>&nbsp;`,
+        `\\( {\\left[\\begin{array}{c} -92 \\\\ -2 \\\\ -96 \\end{array}\\right]} \\) <br>&nbsp;`,
+        `\\( {\\left[\\begin{array}{c} 92 \\\\ -2 \\\\ -96 \\end{array}\\right]} \\) <br>&nbsp;`,
+        `\\( {\\left[\\begin{array}{c} 92 \\\\ -2 \\\\ 96 \\end{array}\\right]} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/24.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( u \\in \\mathbb{R}^n \\) be such that \\( u^T u=1 \\) and set \\( A=u u^T \\). What will be the sum of all eigenvalues of \\( A? \\) </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-em3/25.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Given a matrix \\( A\\left(m \\times&nbsp;n\\right) \\) and \\( A x=b \\). Consider below statements : </p> <ul> <li> \\( \\text{S}: m </li> <li> \\( \\mathrm{P}:\\;&nbsp;A \\) has \\( m&nbsp;\\;\\mathrm{Linearly ~Independent} \\) columns </li> <li> \\( \\text{R}: \\) There is a solution for every&nbsp; \\( b \\) in&nbsp; \\( \\text{R}^m \\). </li> </ul> <p>Which of the following logical implications are ALWAYS true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S} \\rightarrow \\text{R} \\)`,
+        `\\( \\text{R} \\rightarrow \\text{P} \\)`,
+        `\\( \\text{S} \\rightarrow \\sim \\text{P} \\)`,
+        `\\( (S \\) and \\( \\text{P}) \\rightarrow \\text{R} \\)`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-em3/26.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following set of (column) vectors:<br> \$\$ X=\\left\\{\\left[\\begin{array}{l}x_1 \\\\ x_2 \\\\ x_3\\end{array}\\right] \\in \\mathbb{R}^3 \\mid 2 x_1+3 x_2-x_3=0\\right\\}. \$\$ </p> <p>Which of the following statements are true?</p> <p>Choose the correct option.</p> <ol style="list-style-type:upper-alpha"> <li>Only I&nbsp;is true.</li> <li>Only II is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
+      image: "",
+      options: [
+        `Every element of set \\( X \\) can be written as linear combination of vectors of \\( S= \\) \\( \\left\\{\\left[\\begin{array}{c}1 \\\\ -1 \\\\ -1\\end{array}\\right],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 2\\end{array}\\right]\\right\\} \\)`,
+        `\\( \\left\\{\\left[\\begin{array}{c}1 \\\\ -1 \\\\ -1\\end{array}\\right],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 2\\end{array}\\right]\\right\\} \\) is a linearly independent set.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/27.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Choose the correct statements.</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( b&gt;\\frac{2}{3} \\), then \\( A=\\left[\\begin{array}{ll}2 &amp; b \\\\ 3 &amp; 1\\end{array}\\right] \\) is invertible.`,
+        `If \\( P \\) is an invertible matrix such that \\( B=P^{-1} A P, \\)&nbsp;then \\( \\operatorname{det} A=\\operatorname{det} B \\).`,
+        `Let \\( A \\) be an \\( m \\times n \\) matrix. If \\( A=P D P^{-1} \\) for some invertible matrix \\( P \\), and diagonal matrix \\( D, \\)&nbsp;then for any integer \\( k \\geq 1, A^k=P D^k P^{-1} \\).`,
+        `A system of linear equations with \\( m \\) equations and \\( n \\) variables, such that \\( m=n, \\)&nbsp;always has a solution.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-em3/28.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Given matrix \\( A\\left(m \\times n\\right) \\) such that \\( A x=b. \\) Consider below statements : </p> <ul> <li> \\( \\text{S1}: \\) If \\( b \\) is Linearly Dependent on cols of matrix, then it need not always have a unique solution. </li> <li> \\( \\text{S2}: \\)&nbsp;If columns&nbsp;of matrix are Linearly Dependent, then above system of equation can have a unique solution. </li> </ul> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) and \\( \\text{S2} \\) are true`,
+        `\\( \\mathrm{S} 1 \\) and \\( \\mathrm{S} 2 \\) are false`,
+        `\\( \\text{S1} \\) is true and \\( \\text{S2} \\) is false`,
+        `\\( \\mathrm{S} 2 \\) is true and \\( \\mathrm{S} 1 \\) is false`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em3/29.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>There exist a \\( 3 \\times 3 \\) real symmetric matrix \\( \\text{S} \\) such that - </p> <ul> <li> \\( \\text{Statement 1}:&nbsp;\\text{S}\\left(\\begin{array}{l} 1 \\\\ 2 \\\\ 3 \\end{array}\\right)=\\left(\\begin{array}{l} 2 \\\\ 4 \\\\ 6 \\end{array}\\right) \\text { and } S\\left(\\begin{array}{l} 2 \\\\ 1 \\\\ 0 \\end{array}\\right)=\\left(\\begin{array}{r} -2 \\\\ -1 \\\\ 0 \\end{array}\\right) . \\) </li> <li> \\( \\text{Statement} 2: \\text{S}^2=-\\text{I} \\) </li> </ul> <p>Which of the following option is CORRECT?</p> <p></p>`,
+      image: "",
+      options: [
+        `Statement \\( 1 \\) is true but Statement \\( 2 \\) is false`,
+        `Statement \\( 1 \\) is false but Statement \\( 2 \\) is true`,
+        `Both Statements are true`,
+        `Both Statements are false`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em3/30.png" style="max-width: 100%;">`
+    },
+  ]
+});

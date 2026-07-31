@@ -39,8 +39,8 @@ async function parse() {
       if (src && src.startsWith('http')) {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
-        // We assume images are already downloaded to images/quiz/wqt-em2/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-em2/${filename}`);
+        // We assume images are already downloaded to images/quiz/wqt-em3/ from previous run
+        $(img).attr('src', `/images/quiz/wqt-em3/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '100%');
       }
@@ -111,7 +111,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Engineering Mathematics-2|Linear Algebra",\n  date: "Sep 7, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Engineering Mathematics-3|Linear Algebra",\n  date: "Sep 14, 2026",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -146,7 +146,7 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-em2/${qNum}.png" style="max-width: 100%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-em3/${qNum}.png" style="max-width: 100%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }
