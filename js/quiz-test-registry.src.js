@@ -2453,7 +2453,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>A demultiplexer can be implemented using a decoder circuit.<br>For example, the \\( 2 \\)-to- \\( 4 \\) decoder can be used as a \\( 1 \\)-to- \\( 4 \\) demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\$\$ \\begin{array}{ccc|cccc} \\text{En} &amp; w_{1} &amp; w_{0} &amp; y_{0} &amp; y_{1} &amp; y_{2} &amp; y_{3} \\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\ 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; \\times &amp; \\times &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ \\end{array} \\$\$ <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\$\$ \\text{(a) Truth Table of Decoder} \\$\$ <br><br>&nbsp; </p> <p style="text-align:center"><img alt="" height="301" width="287" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=18398392163275606394" style="max-width: 75%;"></p> <p></p>`,
+      text: `<p>A demultiplexer can be implemented using a decoder circuit.<br>For example, the \\( 2 \\)-to- \\( 4 \\) decoder can be used as a \\( 1 \\)-to- \\( 4 \\) demultiplexer. Which input of decoder serves as the data input for the demultiplexer?<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\( \\begin{array}{ccc|cccc} \\text{En} &amp; w_{1} &amp; w_{0} &amp; y_{0} &amp; y_{1} &amp; y_{2} &amp; y_{3} \\\\ \\hline 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\\\ 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\\\ 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\\\ 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\\\ 0 &amp; \\times &amp; \\times &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\end{array} \\) <br><br> \\( \\text{(a) Truth Table of Decoder} \\) </p> <p style="text-align:center"><img alt="" height="301" width="287" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=18398392163275606394" style="max-width: 75%;"></p>`,
       image: "",
       options: [
         `\\( w_{0} \\)`,
@@ -2498,9 +2498,13 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>What is the following circuit?</p> <p style="text-align:center"><img alt="" height="142" width="313" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=17641776862168967302" style="max-width: 75%;"></p> <p><br>A. \\( 2-1 \\) MUX<br>B. \\( 1-2 \\) Decoder<br>B. \\( 2-1 \\) Priority Encoder<br>C. \\( 1-2 \\) DEMUX </p> <p></p>`,
+      text: `<p>What is the following circuit?</p> <p style="text-align:center"><img alt="" height="142" width="313" src="https://gateoverflow.in/?qa=blob&amp;qa_blobid=17641776862168967302" style="max-width: 75%;"></p>`,
       image: "",
       options: [
+        `\\( 2-1 \\) MUX`,
+        `\\( 1-2 \\) Decoder`,
+        `\\( 2-1 \\) Priority Encoder`,
+        `\\( 1-2 \\) DEMUX`,
       ],
       answer: "A",
       solution: `<img src="/images/quiz/wqt-dl12/6.png" style="max-width: 75%;">`
@@ -2509,7 +2513,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>Consider the following function:<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\$\$ f(a, b, c)=\\sum m(1,3,4,7)+\\sum d(6). \\$\$<br>Note that " \\( m \\)" represents the minterms for which \\( f(a,b,c) \\) is \\( 1 . \\) " \\( d \\) " represents the "don't care" minterms.<br>Which of the following is / are correct for \\( f? \\) </p> <p></p>`,
+      text: `<p>Consider the following function:<br><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\( f(a, b, c)=\\sum m(1,3,4,7)+\\sum d(6). \\)<br>Note that " \\( m \\)" represents the minterms for which \\( f(a,b,c) \\) is \\( 1 . \\) " \\( d \\) " represents the "don't care" minterms.<br>Which of the following is / are correct for \\( f? \\) </p>`,
       image: "",
       options: [
         `Number of Prime Implicants is \\( 4 . \\)`,
