@@ -3377,3 +3377,161 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-2|Linear Algebra",
+  date: "Sep 7, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( \\mathbf{v} \\) be a solution to \\( A \\mathbf{x}=\\mathbf{0} \\) and \\( \\mathbf{w} \\) be a solution to \\( A \\mathbf{x}=\\mathbf{b} \\), where \\( \\mathbf{b} \\neq \\mathbf{0} \\). Find all scalars \\( r \\) and \\( s \\) such that \\( r \\mathbf{v}+s \\mathbf{w} \\) is a solution to \\( A \\mathbf{x}=\\mathbf{b} \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( r=1 \\), and \\( s=1 \\) are the only possible values of scalars`,
+        `\\( r=0 \\) and \\( s \\) can be anything`,
+        `\\( r \\) can be anything, and \\( s=1 \\)`,
+        `\\( r \\) and \\( s \\) can both be any scalar`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em2/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following statements about linear systems and matrices. Determine which ones are TRUE.</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( v_{1}, v_{2} \\), and \\( v_{3} \\) are vectors in \\( \\mathbf{R}^{2} \\), then the vector equation \\( x_{1} v_{1}+x_{2} v_{2}+x_{3} v_{3}=\\binom{0}{0} \\) must have infinitely many solutions.`,
+        `Suppose \\( A \\) is a \\( 3 \\times 2 \\) matrix and \\( b \\) is a vector in \\( \\mathbf{R}^{3} \\) such that the equation \\( A \\mathbf{x}=\\mathbf{b} \\) has exactly one solution. Then, the homogeneous system \\( A \\mathbf{x}=0 \\) must have only the trivial solution.`,
+        `If \\( A \\) is a \\( 4 \\times 5 \\) matrix and the solution set to \\( A \\mathbf{x}=0 \\) is a line, then the system \\( A \\mathbf{x}=\\mathbf{b} \\) must be inconsistent for some \\( \\mathbf{b} \\in \\mathbf{R}^{4} \\).`,
+        `A \\( 2 \\times 2 \\) matrix \\( A \\) exists such that the solution set of \\( A \\mathbf{x}=\\binom{1}{2} \\) is the point \\( \\left\\{\\binom{-1}{1}\\right\\} \\), and the system \\( A \\mathbf{x}=\\binom{2}{1} \\) is inconsistent.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-em2/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that the vectors \\( \\mathbf{v}_{1}, \\mathbf{v}_{2}, \\mathbf{v}_{3}, \\mathbf{v}_{4} \\in \\mathbb{R}^{4} \\) span \\( \\mathbb{R}^{4} \\). Let \\( A \\) be the \\( 4 \\times 4 \\) matrix having \\( \\mathbf{v}_{1}, \\mathbf{v}_{2}, \\mathbf{v}_{3}, \\mathbf{v}_{4} \\) as columns. If \\( \\mathbf{x}, \\mathbf{y} \\in \\mathbb{R}^{4} \\) are vectors such that \\( A \\mathbf{x}=A \\mathbf{y} \\), then which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathbf{x}=\\mathbf{y} \\)`,
+        `\\( \\mathbf{x}-\\mathbf{y}=\\mathbf{v}_{1} \\)`,
+        `\\( \\mathbf{x}-\\mathbf{y} \\) is a nonzero solution to \\( A \\mathbf{z}=\\mathbf{0} \\)`,
+        `\\( A \\mathbf{x}=A \\mathbf{y} \\) implies \\( A(\\mathbf{x}-\\mathbf{y})=\\mathbf{0} \\), but \\( \\mathbf{x} \\neq \\mathbf{y} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em2/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following statements about linear systems. Which of the following are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If an \\( m \\times n \\) matrix \\( A \\) has \\( m \\) pivots after row reduction, then for each \\( \\mathbf{b} \\in \\mathbb{R}^{m} \\), the matrix equation \\( A \\mathbf{x}=\\mathbf{b} \\) has at least one solution.`,
+        `If a system of linear equations \\( A \\mathbf{x}=\\mathbf{b} \\) has infinitely many solutions, then the system of linear equations \\( A \\mathbf{x}=\\mathbf{c} \\) for any other vector \\( \\mathbf{c} \\) has either no solution or infinitely many solutions.`,
+        `For three vectors \\( \\mathbf{u}, \\mathbf{v}, \\mathbf{w} \\), if \\( \\{\\mathbf{u}, \\mathbf{v}\\} \\) is linearly independent, and \\( \\{\\mathbf{v}, \\mathbf{w}\\} \\) is linearly independent, then \\( \\{\\mathbf{u}, \\mathbf{v}, \\mathbf{w}\\} \\) is linearly independent.`,
+        `If \\( \\{\\mathbf{u}, \\mathbf{v}, \\mathbf{w}\\} \\) are linearly dependent, then \\( \\mathbf{u} \\) is a linear combination of \\( \\mathbf{v} \\) and \\( \\mathbf{w} \\).`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-em2/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the matrix \\( A \\) with the following facts:<br> \$\$ \\begin{aligned} &amp; A\\left[\\begin{array}{c} -1 \\\\ 1 \\end{array}\\right]=\\left[\\begin{array}{c} -4 \\\\ 3 \\end{array}\\right] \\\\ &amp; A\\left[\\begin{array}{c} 1 \\\\ -2 \\end{array}\\right]=\\left[\\begin{array}{l} 1 \\\\ 0 \\end{array}\\right] \\end{aligned} \$\$ <br>Use this information to find the solution to \\( A \\mathbf{x}=\\left[\\begin{array}{l}0 \\\\ 3\\end{array}\\right] \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathbf{x}=\\left[\\begin{array}{c}3 \\\\ -7\\end{array}\\right] \\)`,
+        `\\( \\mathbf{x}=\\left[\\begin{array}{c}-3 \\\\ 7\\end{array}\\right] \\)`,
+        `\\( \\mathbf{x}=\\left[\\begin{array}{c}4 \\\\ -1\\end{array}\\right] \\)`,
+        `\\( \\mathbf{x}=\\left[\\begin{array}{c}2 \\\\ -6\\end{array}\\right] \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em2/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is/are <strong>TRUE</strong>?</p> <p></p>`,
+      image: "",
+      options: [
+        `If a linear system has strictly more equations than variables, it must be inconsistent.`,
+        `If \\( A \\) is an \\( m \\times n \\) matrix such that \\( A \\mathbf{x}=0 \\) has only the trivial solution, then \\( A \\mathbf{x}=\\mathbf{b} \\) has at most one solution for every \\( \\mathbf{b} \\in \\mathbb{R}^{m} \\).`,
+        `The rows of any \\( 4 \\times 5 \\) matrix are linearly dependent.`,
+        `If the linear system \\( A \\mathbf{x}=\\mathbf{b} \\) is inconsistent, then the coefficient matrix \\( A \\) does not have a pivot position in every row.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-em2/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>For which vector \\( \\mathbf{b} \\) below does the system \\( \\left[\\begin{array}{ll}2 &amp; 4 \\\\ 4 &amp; 6 \\\\ 3 &amp; 4\\end{array}\\right] \\mathbf{x}=\\mathbf{b} \\) have a solution? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left[\\begin{array}{l}2 \\\\ 3 \\\\ 1\\end{array}\\right] \\)<br>&nbsp;`,
+        `\\( \\left[\\begin{array}{l}3 \\\\ 4 \\\\ 3\\end{array}\\right] \\)<br>&nbsp;`,
+        `\\( \\left[\\begin{array}{l}1 \\\\ 2 \\\\ 1\\end{array}\\right] \\)<br>&nbsp;`,
+        `\\( \\left[\\begin{array}{l}2 \\\\ 2 \\\\ 1\\end{array}\\right] \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em2/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following statements about linear systems and matrix theory. Which of the following statements are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If every column of the coefficient matrix of a linear system \\( A \\mathbf{x}=\\mathbf{b} \\) contains a pivot, then the system has at most one solution.`,
+        `If the coefficient matrix of a linear system \\( A \\mathbf{x}=\\mathbf{b} \\) has a pivot in every row, then the system has at<br>least one solution.`,
+        `If the linear system \\( A \\mathbf{x}=\\mathbf{0} \\) has at least one solution, then \\( A \\mathbf{x}=\\mathbf{b} \\) must have at least one solution.`,
+        `If the linear system \\( A \\mathbf{x}=\\mathbf{0} \\) has at most one solution, then \\( A \\mathbf{x}=\\mathbf{b} \\) has at most one solution.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-em2/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following statements about linear systems and matrices. Which of the following is/are TRUE? </p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( R \\) is the reduced row echelon form of an \\( m \\times n \\) matrix \\( A \\) and \\( A \\mathbf{x}=\\mathbf{b} \\) is consistent for some vector \\( \\mathbf{b} \\in \\mathbb{R}^{m} \\), then \\( R \\mathbf{x}=\\mathbf{b} \\) must be consistent.`,
+        `If the linear system \\( A \\mathbf{x}=\\mathbf{b} \\) has more than one solution for some value \\( \\mathbf{b} \\), then the linear system \\( A \\mathbf{x}=0 \\) also has more than one solution.`,
+        `If every column of a matrix has a pivot, then the system is always consistent.`,
+        `If every row of a matrix has a pivot, then the system is always consistent.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-em2/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( Ax = b \\) be a system of linear equations where \\( A \\) is an \\( m \\times n \\) matrix and \\( b \\) is a \\( m \\times 1 \\) column vector and \\( X \\) is an \\( n \\times1 \\) column vector of unknowns. Which of the following is/are \\( \\textbf{True} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `<p>The system has a solution if and only if, both \\( A \\) and the augmented matrix \\( [Ab] \\) have the same rank. </p>`,
+        `<p>If \\( m &lt; n \\) and \\( b \\) is the zero vector, then the system has infinitely many solutions. </p>`,
+        `<p>If \\( m=n \\) and \\( b \\) is a non-zero vector, then the system has a unique solution. </p>`,
+        `<p>The system will have only a trivial solution when \\( m=n \\), \\( b \\) is the zero vector and \\( \\text{rank}(A) =n \\). </p>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-em2/10.png" style="max-width: 100%;">`
+    },
+  ]
+});
