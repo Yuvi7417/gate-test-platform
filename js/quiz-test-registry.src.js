@@ -399,7 +399,12 @@ registerTest({
       type: "NAT",
       text: `<p>For \\( 4 \\) input boolean variables, the number of boolean functions possible is \\( ? \\) </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "65536",
       solution: `<img src="/images/quiz/wqt-dl3/1.png" style="max-width: 75%;">`
     },
@@ -702,7 +707,12 @@ registerTest({
       type: "NAT",
       text: `<p></p> <p>Consider the Boolean function F( \\( x1 \\), \\( x2 \\), . . . , \\( x10 \\)) realised by the following combinational circuit. </p> <p><img alt="" src="/images/quiz/wqt-dl4/q6_img1.png" style="max-width: 100%;"></p> <p>Determine the number of input combinations for which the output function F realised by the circuit becomes <strong>true</strong> (logic 1).</p> <p></p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "943",
       solution: `<img src="/images/quiz/wqt-dl4/6.png" style="max-width: 75%;">`
     },
@@ -885,7 +895,12 @@ registerTest({
       type: "NAT",
       text: `<p>The number of bytes required to represent the decimal number \\( 1856357 \\) in packed BCD (Binary Coded Decimal) form is ___________. </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "4",
       solution: `<img src="/images/quiz/wqt-dl5/3.png" style="max-width: 75%;">`
     },
@@ -1083,7 +1098,12 @@ registerTest({
       type: "NAT",
       text: `<p>Let \\( X \\) be the number of distinct \\( 16 \\)-bit integers in \\( 2's \\) complement representation. Let \\( Y \\) be the number of distinct \\( 16 \\)-bit integers in sign magnitude representation Then \\( X - Y \\) is______. </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "1",
       solution: `<img src="/images/quiz/wqt-dl6/1.png" style="max-width: 75%;">`
     },
@@ -1213,7 +1233,12 @@ registerTest({
       type: "NAT",
       text: `<p>In an \\( 8 \\) bit representation of computer system the decimal number \\( 26 \\) has to be subtracted from \\( 22 \\) and the result in binary \\( 2 \\)'s complement is \\( -------- \\) </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "11111100",
       solution: `<img src="/images/quiz/wqt-dl6/10.png" style="max-width: 75%;">`
     },
@@ -1253,7 +1278,12 @@ registerTest({
       type: "NAT",
       text: `<p>Determine the base of the numbers for the following operation to be correct: \\( 14 / 2=5 \\) </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "6",
       solution: `<img src="/images/quiz/wqt-dl6/13.png" style="max-width: 75%;">`
     },
@@ -1366,7 +1396,12 @@ registerTest({
       type: "NAT",
       text: `<p>Define the value of \\( r \\) in the following: \\( \\sqrt {(41)_{r}} = (7)_{10} \\) </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "12",
       solution: `<img src="/images/quiz/wqt-dl7/6.png" style="max-width: 75%;"><br><a href="https://www.youtube.com/live/vypfAO2bWmg?t=3315s" target="_blank" style="display:inline-block; margin-top: 10px; color: #007bff; font-weight: bold; text-decoration: none;">▶ Watch Video Solution</a>`
     },
@@ -1416,7 +1451,12 @@ registerTest({
       type: "NAT",
       text: `<p>Suppose we have two 16-bit 2's complement numbers \$\$ \\begin{align*} &amp;01X1X0X1XX000XXX \\\\ &amp;100XXXX00XXX0X10 \\end{align*} \$\$ where some of the bits have not been identified, and they are represented by \\( x \\). Could the sum of these two numbers possibly result in an overflow? If yes, write \\( 1 \\) in answer. If no, write \\( 0 \\) in answer. </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "0",
       solution: `<img src="/images/quiz/wqt-dl7/10.png" style="max-width: 75%;"><br><a href="https://www.youtube.com/watch?v=UO8TTFJC9OE&t=4885s" target="_blank" style="display:inline-block; margin-top: 10px; color: #007bff; font-weight: bold; text-decoration: none;">▶ Watch Video Solution</a>`
     },
@@ -1629,7 +1669,12 @@ registerTest({
       type: "NAT",
       text: `<p>Let \\( N=2^{150} \\). How many bits are required to write \\( N \\) in binary (base 2)? </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "151",
       solution: `<img src="/images/quiz/wqt-dl8/9.png" style="max-width: 75%;">`
     },
@@ -1927,7 +1972,12 @@ registerTest({
       type: "NAT",
       text: `<p>Given \\( (135)_x+(144)_x=(323)_x \\) What is the value of base \\( x \\) ? </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "6",
       solution: `<img src="/images/quiz/wqt-dl9/14.png" style="max-width: 75%;">`
     },
@@ -2606,6 +2656,10 @@ registerTest({
       text: `<p>A majority voting machine inputs three binary bits \\( (x_2, x_1, x_0) \\), and outputs \\( y=1 \\) when the majority of the input bits are \\( 1. \\) Otherwise, the output is \\( y=0 \\). Number of Prime implicants of Y which are Not Essential Prime Implicants? </p>`,
       image: "",
       options: [
+        "A",
+        "B",
+        "C",
+        "D"
       ],
       answer: "0",
       solution: `<img src="/images/quiz/wqt-dl12/13.png" style="max-width: 75%;">`
@@ -2766,7 +2820,12 @@ registerTest({
       type: "NAT",
       text: `<p>The number of essential prime implicants in the function \\( f(a, b, c, d) = Σ(1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15) \\) is ________. </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "0",
       solution: `<img src="/images/quiz/wqt-dl13/9.png" style="max-width: 100%;">`
     },
@@ -2801,7 +2860,12 @@ registerTest({
       type: "NAT",
       text: `<p>The number of essential prime implicants for the Function \\( Y= \\) \\( A^{\\prime} B^{\\prime} C^{\\prime} D+A^{\\prime} B C D^{\\prime}+A B C^{\\prime} D^{\\prime} \\) is given by \\( \\qquad \\) </p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "3",
       solution: `<img src="/images/quiz/wqt-dl13/12.png" style="max-width: 100%;">`
     },
@@ -2826,7 +2890,12 @@ registerTest({
       type: "MCQ",
       text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dl13/q14_img5.png" style="max-width: 100%;"></p> <p></p>`,
       image: "",
-      options: [],
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
       answer: "A",
       solution: `<img src="/images/quiz/wqt-dl13/14.png" style="max-width: 100%;">`
     },
