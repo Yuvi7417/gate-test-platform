@@ -2916,3 +2916,236 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Digital Logic-14|K-map",
+  date: "Aug 24, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dl14/q1_img1.png" style="max-width: 100%;"></p> <p>What will be the equation of the given \\( K \\)-map? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A’B’D’+C’D+AB’C’ \\)`,
+        `\\( B’CD’+AB’C’+A’C’ \\)`,
+        `\\( B’D’+C’D \\)`,
+        `\\( C’D+B’CD’ \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl14/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The most simplified form of the Boolean function</p> <p> \\( x (A, B, C, D) = \\sum (7, 8, 9, 10, 11, 12, 13, 14, 15) \\) </p> <p>(expressed in sum of minterms) is?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A + A'BCD \\)<br>&nbsp;`,
+        `\\( AB + CD \\)<br>&nbsp;`,
+        `\\( A + BCD \\)<br>&nbsp;`,
+        `\\( ABC + D \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl14/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The boolean expression \\( \\text{AB + A}\\text{B}'+\\text{A}'\\text{C + AC} \\) is independent of the boolean variable </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{A} \\)`,
+        `\\( \\text{B} \\)`,
+        `\\( \\text{C} \\)`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl14/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The switching expression corresponding to \\( f(\\text{A, B, C, D}) = \\Sigma(1, 4, 5, 9, 11, 12) \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( BC'D' + A'C'D + AB'D \\)<br>&nbsp;`,
+        `\\( ABC' + ACD + B'C'D \\)<br>&nbsp;`,
+        `\\( ACD' + A'BC' + AC'D' \\)<br>&nbsp;`,
+        `\\( A'BD + ACD' + BCD' \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl14/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dl14/q5_img2.png" style="max-width: 100%;"></p> <p>Which will be the equation of simplification of the given \\( K \\)-map? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( AB' + B'CD' + A'B'C' \\)`,
+        `\\( AB' + A'B'D' + A'B'C' \\)`,
+        `\\( B'D' + AB' + B'C' \\)`,
+        `\\( B'D' + A'B'C' + AB' \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl14/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following boolean function of four variables \\( f(w,x,y,z) = \\Sigma(1,3,4,6,9,11,12,14) \\), the function is </p> <p></p>`,
+      image: "",
+      options: [
+        `Independent of one variable`,
+        `Independent of two variables`,
+        `Independent of three variables`,
+        `Dependent on all variables`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl14/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The \\( K-map \\) below defines a function \\( \\mathrm{G}(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}) \\). Mark the answer below that corresponds to a minimal <strong>SOP</strong> expression for the function \\( \\mathrm{G}(\\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}) \\) ?<br>&nbsp; </p> <p><img alt="" src="/images/quiz/wqt-dl14/q7_img3.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{BD}+\\mathrm{B}^{\\prime} \\mathrm{CD}^{\\prime} \\)<br>&nbsp;`,
+        `\\( B^{\\prime} D^{\\prime}+A^{\\prime} B^{\\prime} C+B D \\)<br>&nbsp;`,
+        `\\( B D+A^{\\prime} B^{\\prime} C D^{\\prime}+A B^{\\prime} C \\)<br>&nbsp;`,
+        `\\( B^{\\prime} D^{\\prime}+B D \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl14/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dl14/q8_img4.png" style="max-width: 100%;"></p> <p>The truth table for implementing a Boolean variable \\( \\text{F} \\) is given where \\( d \\) represents don't care states. The minimized expression for \\( \\text{F} \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( BC' +AC'+AB \\)`,
+        `\\( AB+ C' \\)`,
+        `\\( A'BC'+ AB'C'+ABC \\)`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl14/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is the Boolean function for majority voting, assuming \\( \\text{A, B, C} \\) are inputs and \\( \\text{Y} \\) is output? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{Y = AB + AC + BC} \\)<br>&nbsp;`,
+        `\\( \\text{Y = A + B&nbsp;+ C} \\)<br>&nbsp;`,
+        `\\( \\text{Y =&nbsp; ABC} \\)<br>&nbsp;`,
+        `\\( \\text{Y= AB + BC} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl14/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A number of Boolean functions conform to the map shown below:<br><img alt="" src="/images/quiz/wqt-dl14/q10_img5.png" style="max-width: 100%;"><br>What is the minimum "sum of product" expression among the particular functions, having a prime implicant that can not appear in the minimum "sum of products" representation (that conform to the above map) ?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{B}^{\\prime}+\\mathrm{C} \\)`,
+        `\\( A^{\\prime} B^{\\prime}+A C \\)`,
+        `\\( \\mathrm{A}^{\\prime} \\mathrm{B}^{\\prime}+\\mathrm{B}^{\\prime} \\mathrm{C}^{\\prime}+\\mathrm{BC} \\)`,
+        `None`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl14/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Simplify Boolean function represented in sum of product of min-terms, \\( \\text{F}(x, y, z)= \\Sigma(0, 2, 4,5, 6) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `&nbsp; \\( z' + xy' \\)<br>&nbsp;`,
+        `\\( x' y'z' + xyz+ xy'z' \\)<br>&nbsp;`,
+        `\\( xyz + x' + y' + z' \\)<br>&nbsp;`,
+        `\\( xy+yz+zx \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl14/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The simplified SOP (Sum of Product) from the Boolean expression</p> <p> \$\$ (\\text{P} + \\overline{\\text{Q}} + \\overline{\\text{R}}) . (\\text{P} + \\text{Q&nbsp;+ R) . (P + Q} +\\overline{\\text{R}}) \$\$ is&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (\\overline{\\text{P}}.\\text{Q}+\\overline{\\text{R}}) \\)`,
+        `\\( (\\text{P + Q}.\\overline{\\text{R}}) \\)`,
+        `\\( (\\text{P}.\\overline{\\text{Q}}+\\text{R}) \\)`,
+        `\\( \\text{(P.Q + R)} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl14/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following expression</p> <p> \\( a\\bar d + \\bar a \\bar c + b\\bar cd \\) </p> <p>Which of the following expressions does not correspond to the Karnaugh Map obtained for the given expression?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\bar c \\bar d+ a\\bar d + ab\\bar c + \\bar a \\bar cd \\)`,
+        `\\( \\bar a\\bar c + \\bar c\\bar d + a\\bar d + ab\\bar cd \\)`,
+        `\\( \\bar a\\bar c + a\\bar d + ab\\bar c + \\bar cd \\)`,
+        `\\( \\bar b\\bar c \\bar d + ac\\bar d + \\bar a \\bar c + ab\\bar c \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl14/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>\</p> <p><img alt="" src="/images/quiz/wqt-dl14/q14_img6.png" style="max-width: 100%;"></p> <p>The function shown in the figure when simplified will yield a result with _______ terms</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2 \\)`,
+        `\\( 4 \\)`,
+        `\\( 7 \\)`,
+        `\\( 14 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl14/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Find minimal POS (product of sum) expression for \\( F(a, b, c, d) \\) given by the following K-map. Identify the Prime Implicants &amp; Essential Prime Implicants clearly.<br><img alt="" src="/images/quiz/wqt-dl14/q15_img7.png" style="max-width: 100%;"><br>Which of the following is/are correct statements about F? </p> <p></p>`,
+      image: "",
+      options: [
+        `Minimal POS: \\( \\left(a^{\\prime}+b\\right)\\left(b^{\\prime}+c^{\\prime}+d^{\\prime}\\right) \\)`,
+        `The number of Prime Implicants is \\( 6 \\).`,
+        `The number of Prime Implicants is \\( 4 \\).`,
+        `The number of Essential Prime Implicants is \\( 1 \\).`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dl14/15.png" style="max-width: 100%;">`
+    },
+  ]
+});

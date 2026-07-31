@@ -39,8 +39,8 @@ async function parse() {
       if (src && src.startsWith('http')) {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
-        // We assume images are already downloaded to images/quiz/wqt-dl13/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-dl13/${filename}`);
+        // We assume images are already downloaded to images/quiz/wqt-dl14/ from previous run
+        $(img).attr('src', `/images/quiz/wqt-dl14/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '100%');
       }
@@ -111,7 +111,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital Logic-13|K-map",\n  date: "Aug 17, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Digital Logic-14|K-map",\n  date: "Aug 24, 2026",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -128,6 +128,8 @@ async function parse() {
         jsContent += `        \`${opt}\`,\n`;
       }
       jsContent += `      ],\n`;
+    } else if (q.type === 'MCQ' || q.type === 'MSQ') {
+      jsContent += `      options: ["A", "B", "C", "D"],\n`;
     } else {
       jsContent += `      options: [],\n`;
     }
@@ -144,7 +146,7 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-dl13/${qNum}.png" style="max-width: 100%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-dl14/${qNum}.png" style="max-width: 100%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }
