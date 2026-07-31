@@ -2634,3 +2634,216 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Digital Logic-13|K-map",
+  date: "Aug 17, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The output expression for the Karnaugh map shown below is</p> <p><img alt="" src="/images/quiz/wqt-dl13/q1_img1.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( Q \\bar{R} +S \\)`,
+        `\\( Q \\bar{R} + \\bar{S} \\)`,
+        `\\( QR+S \\)`,
+        `\\( Q R&nbsp;+\\bar{S} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl13/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The output expression for the Karnaugh&nbsp;map shown below is</p> <p><img alt="" src="/images/quiz/wqt-dl13/q2_img2.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( B \\overline{D}+BCD \\)`,
+        `\\( B \\overline{D}+AB \\)`,
+        `\\( \\overline{B}D+ABC \\)`,
+        `\\( B \\overline{D}+ABC \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl13/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The output expression for the Karnaugh map shown below is</p> <p><img alt="" src="/images/quiz/wqt-dl13/q3_img3.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A+\\bar{B} \\)`,
+        `\\( A+\\bar{C} \\)`,
+        `\\( \\bar{A}+\\bar{C} \\)`,
+        `\\( \\bar{A}+C \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl13/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A \\( 3 \\)-Variable Karnaugh map has : </p> <p></p>`,
+      image: "",
+      options: [
+        `eight cells`,
+        `three cells`,
+        `sixteen cells`,
+        `four cells`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl13/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Simplified Boolean equation for the following truth table is :</p> <p> \\( \\begin{array}{|c|c|c|c|}\\hline x&nbsp; &amp; y &amp; z &amp; F \\\\ \\hline&nbsp;\\text{0}&nbsp; &amp; \\text{0} &amp; \\text{0} &amp; \\text{0} \\\\ \\hline \\text{0}&nbsp; &amp; \\text{0} &amp; \\text{1} &amp; \\text{1} \\\\ \\hline \\text{0}&nbsp; &amp; \\text{1} &amp; \\text{0} &amp; \\text{0} \\\\ \\hline \\text{0}&nbsp; &amp; \\text{1} &amp; \\text{1} &amp; \\text{1} \\\\ \\hline \\text{1}&nbsp; &amp; \\text{0} &amp; \\text{0} &amp; \\text{1} \\\\ \\hline \\text{1}&nbsp; &amp; \\text{0} &amp; \\text{1} &amp; \\text{0} \\\\ \\hline \\text{1}&nbsp; &amp; \\text{1} &amp; \\text{0} &amp; \\text{1} \\\\ \\hline \\text{1}&nbsp; &amp; \\text{1} &amp; \\text{1} &amp; \\text{0} \\\\ \\hline \\end{array} \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( F=y \\bar{z}+\\bar{y}z \\)`,
+        `\\( F=x \\bar{y}+\\bar{x}y \\)`,
+        `\\( F=\\bar{x}z+x\\bar{z} \\)`,
+        `\\( F=\\bar{x}z+x\\bar{z}+xyz \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dl13/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the simplified logic expression of give figure ?<br><img alt="" src="/images/quiz/wqt-dl13/q6_img4.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( Q=A B \\bar{C}+A \\bar{B}+A \\bar{C} \\)`,
+        `\\( \\mathrm{Q}=\\mathrm{ABC}+(\\overline{\\mathrm{A}}+\\overline{\\mathrm{B}}) \\mathrm{A} \\)`,
+        `\\( Q=A B C+A \\bar{B}+B \\bar{C} \\)`,
+        `\\( Q=A B C+A \\bar{B}+A \\bar{C} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl13/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the Boolean function \\( F(w,x,y,z) = wy + xy + \\overline{w}\\:xyz + \\overline{w}\\:\\overline{x}\\:y + xz + \\overline{x}\\:\\overline{y}\\:\\overline{z}. \\) Which one of&nbsp; the following is the complete set of essential prime implicants? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( w,y,xz,\\overline{x}\\:\\overline{z} \\)`,
+        `\\( w,y,xz \\)`,
+        `\\( y, \\overline{x}\\:\\overline{y}\\:\\overline{z} \\)`,
+        `\\( y,xz,\\overline{x}\\:\\overline{z} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dl13/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which one of the following gives the simplified sum of products expression for the Boolean function \\( F=m_{0}+m_{2}+m_{3}+m_{5} \\), where \\( m_{0},m_{2},m_{3} \\) and \\( m_{5} \\) are minterms corresponding to the inputs \\( A,B \\) and \\( C \\) with \\( A \\) as the \\( MSB \\) and \\( C \\) as the \\( LSB \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\overline{A}B+\\overline{A} \\: \\overline{B} \\: \\overline{C}+A\\overline{B}C \\)`,
+        `\\( \\overline{A} \\: \\overline{C}+\\overline{A}B+A \\overline{B}C \\)`,
+        `\\( \\overline{A} \\: \\overline{C}+A \\: \\overline{B}+A \\overline{B} C \\)`,
+        `\\( \\overline{A} BC+\\overline{A} \\: \\overline{C}+A \\overline{B}C \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl13/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The number of essential prime implicants in the function \\( f(a, b, c, d) = Σ(1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15) \\) is ________. </p>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img src="/images/quiz/wqt-dl13/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The number of essential prime implicates of \\( F(A,B,C,D)=∑m(0,1,5,7,10,14,15) \\)are___________. </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-dl13/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Identify the number of prime implicants and essential prime implicants for the function<br> \$\$ f(A, B, C, D)=\\Sigma m(0,1,4,6,7,8,10,14,15) \$\$<br>(where m represents min terms)<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 7 \\), \\( 2 \\)<br>&nbsp;`,
+        `\\( 6 \\), \\( 2 \\)<br>&nbsp;`,
+        `\\( 7 \\), \\( 1 \\)<br>&nbsp;`,
+        `\\( 6 \\), \\( 1 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl13/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The number of essential prime implicants for the Function \\( Y= \\) \\( A^{\\prime} B^{\\prime} C^{\\prime} D+A^{\\prime} B C D^{\\prime}+A B C^{\\prime} D^{\\prime} \\) is given by \\( \\qquad \\) </p>`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img src="/images/quiz/wqt-dl13/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Simplify the following using K-Map<br> \$\$ \\mathrm{F}(\\mathrm{~A}, \\mathrm{~B}, \\mathrm{C}, \\mathrm{D})=\\sum(0,2,5,7,8,10,13,15) \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{BD}+\\mathrm{B}^{\\prime} \\mathrm{D}^{\\prime} \\)`,
+        `\\( \\mathrm{AC}+\\mathrm{A}^{\\prime} \\mathrm{C}^{\\prime} \\)`,
+        `\\( \\mathrm{BC}+\\mathrm{B}^{\\prime} \\mathrm{C}^{\\prime} \\)`,
+        `\\( \\mathrm{AD}+\\mathrm{A}^{\\prime} \\mathrm{D}^{\\prime} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl13/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dl13/q14_img5.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dl13/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A number of Boolean functions conform to the map shown below:<br><img alt="" src="/images/quiz/wqt-dl13/q15_img6.png" style="max-width: 100%;"><br>What is the minimum "sum of product" expression among the particular functions, having four minterms, that conform to the above map ?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{B}^{\\prime}+\\mathrm{C} \\)`,
+        `\\( A^{\\prime} B^{\\prime}+A C \\)`,
+        `\\( A^{\\prime} B^{\\prime}+B^{\\prime} C^{\\prime}+A B C \\)`,
+        `None`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dl13/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
