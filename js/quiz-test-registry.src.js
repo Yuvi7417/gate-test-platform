@@ -2600,34 +2600,34 @@ registerTest({
     {
       marks: 2,
       neg: 0,
-      type: "MCQ",
+      type: "NAT",
       text: `<p>A majority voting machine inputs three binary bits \\( (x_2, x_1, x_0) \\), and outputs \\( y=1 \\) when the majority of the input bits are \\( 1. \\) Otherwise, the output is \\( y=0 \\). Number of Prime implicants of Y which are Not Essential Prime Implicants? </p>`,
       image: "",
       options: [
       ],
-      answer: "",
+      answer: "0",
       solution: `<img src="/images/quiz/wqt-dl12/13.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
-      type: "MCQ",
+      type: "NAT",
       text: `<p>A bit counting machine reads a binary input vector \\( (a, b, c, d) \\) and produces a binary number \\( (\\text{S}_{2},\\text{S}_{1},\\text{S}_{0}) \\) that counts the number of \\( 1’\\text{s} \\) in the input bits. For example when \\( (a, b, c, d)=(0,1,1,1) \\), we have output \\( (\\mathrm{S}_2, \\mathrm{S}_1, \\mathrm{S}_0)=(0,1,1) \\), and when \\( (a,b,c,d)=(1,0,1,0) \\), we have output \\( ( \\mathrm{S}_2, \\mathrm{S}_1, \\mathrm{S}_0)=(0,1,0) \\). Number of Prime Implicants of \\( \\mathrm{S}_2? \\) </p>`,
       image: "",
       options: [
       ],
-      answer: "",
+      answer: "1",
       solution: `<img src="/images/quiz/wqt-dl12/14.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
-      type: "MCQ",
+      type: "NAT",
       text: `<p>A bit counting machine reads a binary input vector \\( (a, b, c, d) \\) and produces a binary number \\( (\\text{S}_{2},\\text{S}_{1},\\text{S}_{0}) \\) that counts the number of \\( 1’\\text{s} \\) in the input bits. For example when \\( (a, b, c, d)=(0,1,1,1) \\), we have output \\( (\\text{S}_{2},\\text{S}_{1},\\text{S}_{0})=(0,1,1) \\), and when \\( (a, b, c, d)=(1,0,1,0) \\), we have output \\( (\\text{S}_{2},\\text{S}_{1},\\text{S}_{0})=(0,1,0) \\). Let \\( \\mathrm{Y(a,b,c,d)} \\) be a boolean function such that \\( Y \\) is \\( 1 \\) for any input combination \\( (a,b,c,d) \\) if and only if both \\( S_1,S_0 \\) are both \\( 1 \\) for that input combination. The number of Prime Implicants in \\( \\text{Y}? \\) </p>`,
       image: "",
       options: [
       ],
-      answer: "",
+      answer: "4",
       solution: `<img src="/images/quiz/wqt-dl12/15.png" style="max-width: 75%;">`
     },
   ]
