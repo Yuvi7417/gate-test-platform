@@ -4201,3 +4201,226 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-5|Eigen Vectors",
+  date: "Aug 06, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let<br> \$\$ A=\\left[\\begin{array}{ll} a &amp; b \\\\ c &amp; d \\end{array}\\right] \$\$<br>be a \\( 2 \\times 2 \\) real matrix. Which of the following is a necessary and sufficient condition for \\( A \\) not to have a real eigenvalue? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (a-d)^{2}+&nbsp;b c&lt;0 \\)<br>&nbsp;`,
+        `\\( (a+d)^{2}-4(a d-b c)&lt;0 \\)<br>&nbsp;`,
+        `\\( a d-b c&lt;0 \\)<br>&nbsp;`,
+        `\\( a^{2}+d^{2}&lt;4 b c \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em5/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Find the values of \\( \\alpha \\in \\mathbb{R} \\) such that the matrix<br> \$\$ \\left[\\begin{array}{ll} 3 &amp; \\alpha \\\\ \\alpha &amp; 5 \\end{array}\\right] \$\$ <br>has 2 as an eigenvalue. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\alpha= \\pm 1 \\)<br>&nbsp;`,
+        `\\( \\alpha= \\pm \\sqrt{2} \\)<br>&nbsp;`,
+        `\\( \\alpha= \\pm \\sqrt{3} \\)<br>&nbsp;`,
+        `\\( \\alpha= \\pm 2 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em5/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A=\\left(a_{i j}\\right) \\) be a real \\( 3 \\times 3 \\) matrix such that<br> \$\$ a_{i j}=-a_{j i} \\quad \\text { for all } 1 \\leq i, j \\leq 3 \$\$ <br>Suppose \\( 3 i \\) is an eigenvalue of \\( A \\). What are the other eigenvalues of \\( A \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -3 i \\) and \\( 0 \\)<br>&nbsp;`,
+        `\\( 3 i \\) and \\( -3 i \\)<br>&nbsp;`,
+        `\\( -3 i \\) and \\( 3 \\)<br>&nbsp;`,
+        `\\( 3 \\) and \\( -3 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em5/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( x \\in \\mathbb{R}^{n} \\) be a non-zero column vector, and define<br> \$\$ A=x x^{T} \$\$<br>What is the necessary and sufficient condition for the matrix<br> \$\$ Q=I-2 A \$\$<br>to be an orthogonal matrix? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x \\) is an eigenvector of \\( A \\)`,
+        `\\( x \\) is a unit vector (i.e., \\( \\|x\\|=1 \\) )`,
+        `\\( x \\) has all entries equal to \\( 1 \\)`,
+        `\\( \\|x\\|=0 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em5/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( \\mathbf{x} \\) and \\( \\mathbf{y} \\) be two non-zero \\( n \\times 1 \\) column vectors. Let \\( A=\\mathbf{x} \\mathbf{y}^{T} \\) be an \\( n \\times n \\) matrix. What are the eigenvalues of \\( A \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `All eigenvalues are zero.<br>&nbsp;`,
+        `Exactly one eigenvalue is \\( \\mathbf{y}^{T} \\mathbf{x} \\), and the rest are zero.<br>&nbsp;`,
+        `All eigenvalues are equal to \\( \\mathbf{y}^{T} \\mathbf{x} \\).<br>&nbsp;`,
+        `The eigenvalues are \\( \\|\\mathbf{x}\\|\\|\\mathbf{y}\\| \\) and \\( n-1 \\) zeros.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em5/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( M \\) be a real symmetric \\( 3 \\times 3 \\) matrix that admits the vectors<br> \$\$ \\mathbf{v}_{1}=(1,2,3)^{T} \\quad \\text { and } \\quad \\mathbf{v}_{2}=(1,1,-1)^{T} \$\$ <br>as eigenvectors.<br><br>Which of the following vectors is surely an eigenvector of \\( M \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (1,-1,0)^{T} \\)<br>&nbsp;`,
+        `\\( (-5,1,1)^{T} \\)<br>&nbsp;`,
+        `\\( (3,2,1)^{T} \\)<br>&nbsp;`,
+        `None of the above`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em5/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( A \\) be a \\( 3 \\times 3 \\) matrix with eigenvalues \\( -1,1,2 \\). Suppose there exist real scalars \\( \\alpha, \\beta, \\gamma \\) such that: \$\$ A^{-1}=\\alpha A^{2}+\\beta A+\\gamma I \$\$ Then find the value of: \$\$ \\alpha+\\beta+\\gamma=? \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-em5/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( A \\) be a real \\( 3 \\times 3 \\) upper triangular matrix with diagonal entries \\( 1,2,-3 \\). Suppose \\( A^{-1} \\) can be written as a linear combination of \\( I, A, A^{2} \\), i.e., \$\$ A^{-1}=\\alpha I+\\beta A+\\gamma A^{2} \$\$ Find the value of \\( 12(\\alpha+\\beta+\\gamma) \\). </p>`,
+      image: "",
+      options: [],
+      answer: "12",
+      solution: `<img src="/images/quiz/wqt-em5/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\in \\mathbb{R}^{m \\times n} \\) be a real matrix of rank \\( m \\), where \\( n&gt;m \\). Suppose that for some real number \\( \\alpha \\), the following holds:<br> \$\$ A A^{\\top}=\\alpha I_{m} \$\$ <br>Then, which of the following statements about<br> \\( A^{\\top} A \\in \\mathbb{R}^{n \\times n} \\) are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A^{\\top} A \\) has exactly zero distinct eigenvalues<br>&nbsp;`,
+        `\\( A^{\\top} A \\) has eigenvalue 0 with multiplicity \\( n-m \\)<br>&nbsp;`,
+        `\\( \\alpha \\) is an eigenvalue of \\( A^{\\top} A \\) with multiplicity at least \\( n-2 \\)<br>&nbsp;`,
+        `\\( A^{\\top} A \\) has exactly two distinct eigenvalues`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-em5/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `There exists a \\( 2 \\times 2 \\) real orthogonal matrix that has 2 as an eigenvalue.<br>&nbsp;`,
+        `There exists a \\( 2 \\times 2 \\) real orthogonal matrix&nbsp; that has \\( i \\) as an eigenvalue.<br>&nbsp;`,
+        `If \\( A \\in \\mathbb{R}^{2 \\times 2} \\) is orthogonal, then \\( \\|A x\\|=\\|x\\| \\) for every \\( x \\in \\mathbb{R}^{2} \\), where \\( \\|\\cdot\\| \\) denotes the length of a vector.<br>&nbsp;`,
+        `If \\( A \\in \\mathbb{R}^{2 \\times 2} \\) is orthogonal, then all its eigenvalues are real.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em5/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Given that the matrix<br> \$\$ A=\\left(\\begin{array}{ll} \\alpha &amp; 1 \\\\ 2 &amp; 3 \\end{array}\\right) \$\$ <br>has 1 as one of its eigenvalues, what are the trace and determinant of the matrix? </p> <p></p>`,
+      image: "",
+      options: [
+        `Trace \\( =4 \\), Determinant \\( =5 \\)<br>&nbsp;`,
+        `Trace \\( =5 \\), Determinant \\( =4 \\)<br>&nbsp;`,
+        `Trace \\( =6 \\), Determinant \\( =3 \\)<br>&nbsp;`,
+        `Trace \\( =3 \\), Determinant \\( =6 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em5/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Pick out the true statements from the following:</p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `For any two \\( n \\times n \\) matrices \\( A \\) and \\( B \\),<br> \$\$ (A+B)^{2}=A^{2}+2 A B+B^{2} \$\$`,
+        `There exist \\( n \\times n \\) matrices \\( A \\) and \\( B \\) such that<br> \$\$ A B-B A=I \$\$`,
+        `For any invertible \\( n \\times n \\) matrix \\( B \\), and any matrix \\( A \\).<br> \$\$ \\operatorname{tr}(A)=\\operatorname{tr}\\left(B^{-1} A B\\right) \$\$`,
+        `If \\( A \\) is a real symmetric matrix, then all its eigenvalues are real.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-em5/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be a \\( 4 \\times 4 \\) real matrix with eigenvalues \\( -1,1,1,-2 \\). Define<br> \$\$ B=A^{4}-5 A^{2}+5 I \$\$<br>Then the value of \\( \\operatorname{tr}(A+B) \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `&nbsp; \\( 0 \\)<br>&nbsp;`,
+        `\\( -12 \\)<br>&nbsp;`,
+        `\\( 3 \\)<br>&nbsp;`,
+        `\\( 9 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em5/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( n \\times n \\) real matrix such that the set of all its non-zero eigenvalues has exactly \\( r \\) elements. Which of the following statements is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{rank}(A) \\leq r \\)<br>&nbsp;`,
+        `If \\( r=0 \\), then \\( \\operatorname{rank}(A) < n-1 \\)<br>&nbsp;`,
+        `\\( \\operatorname{rank}(A) \\geq r \\)<br>&nbsp;`,
+        `\\( A^2 \\) has \\( r \\) non-zero eigenvalues`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em5/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) and \\( B \\) be \\( n \\times n \\) real matrices, and let<br> \$\$ C=\\left(\\begin{array}{ll} A &amp; B \\\\ B &amp; A \\end{array}\\right) \$\$ <br>Which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( \\lambda \\) is an eigenvalue of \\( A+B \\), then \\( \\lambda \\) is an eigenvalue of \\( C \\).`,
+        `If \\( \\lambda \\) is an eigenvalue of \\( A-B \\), then \\( \\lambda \\) is an eigenvalue of \\( C \\).`,
+        `If \\( \\lambda \\) is an eigenvalue of \\( A \\) or \\( B \\), then \\( \\lambda \\) is an eigenvalue of \\( C \\).`,
+        `All eigenvalues of \\( C \\) are real.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-em5/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
