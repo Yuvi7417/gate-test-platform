@@ -2438,11 +2438,9 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Consider the following boolean equations:</p> <p>Which of the above is correct?</p> <p></p>`,
+      text: `<p>Consider the following boolean equations:</p> <ol style="list-style-type: upper-alpha;"><li>\\( b d+a c d^{\\prime}+a b c=b d+a c d^{\\prime} \\)</li><li>\\( (b+d)\\left(a+c+d^{\\prime}\\right)(a+b+c)=(b+d)\\left(a+c+d^{\\prime}\\right) \\)</li></ol> <p>Which of the above is correct?</p>`,
       image: "",
       options: [
-        `\\( b d+a c d^{\\prime}+a b c=b d+a c d^{\\prime} \\)`,
-        `\\( (b+d)\\left(a+c+d^{\\prime}\\right)(a+b+c)=(b+d)\\left(a+c+d^{\\prime}\\right) \\)`,
         `A Only`,
         `B Only`,
         `Both`,
