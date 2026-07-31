@@ -4424,3 +4424,221 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-6|Rank , System of equations",
+  date: "Aug 13, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( m \\times n \\) matrix with real entries. Which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{rank}\\left(A^{T} A\\right) \\leq \\operatorname{rank}(A) \\) <br>&nbsp;`,
+        `\\( \\operatorname{rank}\\left(A^{T} A\\right)=\\operatorname{rank}(A) \\) <br>&nbsp;`,
+        `\\( \\operatorname{rank}\\left(A^{T} A\\right)&gt;\\operatorname{rank}(A) \\) <br>&nbsp;`,
+        `\\( \\operatorname{rank}\\left(A^{T} A\\right) \\leq \\min (m, n) \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-em6/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( m \\times n \\) matrix, and let \\( P \\in \\mathbb{R}^{m \\times m} \\) and \\( Q \\in \\mathbb{R}^{n \\times n} \\) be invertible matrices.<br>Which of the following statements are true? </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{rank}(P A Q)=\\operatorname{rank}(A) \\)<br>&nbsp;`,
+        `\\( \\operatorname{rank}(P A)=\\operatorname{rank}(A) \\)<br>&nbsp;`,
+        `\\( \\operatorname{rank}(A Q)=\\operatorname{rank}(A) \\)<br>&nbsp;`,
+        `\\( \\operatorname{rank}(P A Q)=m+n-\\operatorname{rank}(A) \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-em6/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( A \\in \\mathbb{R}^{n \\times n} \\) be a real square matrix such that the entry in the \\( (i, j) \\)-th position is given by: \$\$ A(i, j)=i-j \$\$ for all \\( 1 \\leq i, j \\leq n \\), where \\( n \\geq 2 \\). What is the rank of \\( A \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img src="/images/quiz/wqt-em6/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( P \\) be a square matrix such that<br> \$\$ P^{2}=P \$\$<br>Which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{Trace}(P) \\) is a non-integer real number`,
+        `\\( \\operatorname{Trace}(P)=\\operatorname{Rank}(P) \\)`,
+        `\\( \\operatorname{Trace}(P) \\) is an integer`,
+        `\\( \\operatorname{Trace}(P) \\) is a purely imaginary number`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em6/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( n \\times n \\) matrix such that the first \\( 3 \\) rows of \\( A \\) are linearly independent and the first \\( 5 \\) columns of \\( A \\) are linearly independent. Which of the following statements are true? </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A \\) has at least \\( 5 \\) linearly independent rows.`,
+        `\\( 3 \\leq \\operatorname{rank}(A) \\leq 5 \\)`,
+        `\\( \\operatorname{rank}(A) \\geq 5 \\)`,
+        `\\( \\operatorname{rank}\\left(A^{2}\\right)\\geq 5 \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-em6/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be a \\( 5 \\times 5 \\) matrix, and suppose that the dimension of the solution space of the homogeneous system \\( A x=0 \\) is at least \\( 2 \\) .<br>Then, which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{Rank}\\left(A^{2}\\right) \\leq 3 \\)<br>&nbsp;`,
+        `\\( \\operatorname{Rank}\\left(A^{2}\\right) \\geq 3 \\)<br>&nbsp;`,
+        `\\( \\operatorname{Rank}\\left(A^{2}\\right)=3 \\) <br>&nbsp;`,
+        `\\( \\operatorname{det}\\left(A^{2}\\right)=0 \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-em6/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( A \\) be a \\( 4 \\times 5 \\) real matrix row-equivalent to \$\$ R=\\left[\\begin{array}{ccccc} 1 &amp; -2 &amp; -1 &amp; -3 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\\\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\end{array}\\right] \$\$ Let \\( \\mathbf{c}=\\left[\\begin{array}{l}1 \\\\ 2 \\\\ 3 \\\\ 4 \\\\ 5\\end{array}\\right], \\mathbf{d}=\\left[\\begin{array}{l}y \\\\ 3 \\\\ 4 \\\\ 5 \\\\ 5\\end{array}\\right] \\) be two solutions to \\( A \\mathbf{x}=\\mathbf{b} \\), for some fixed \\( \\mathbf{b} \\in \\mathbb{R}^{4} \\). Find the value of \\( y= \\) \\( \\qquad \\) . </p>`,
+      image: "",
+      options: [],
+      answer: "7",
+      solution: `<img src="/images/quiz/wqt-em6/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( n \\times n \\) matrix and let \\( b \\) be an \\( n \\times 1 \\) column vector. Suppose the equation<br> \$\$ A x=b \$\$<br>has no solution. Which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `There exists a vector \\( c \\in \\mathbb{R}^{n} \\) such that \\( A x=c \\) has a unique solution.`,
+        `There exist infinitely many vectors \\( c \\in \\mathbb{R}^{n} \\) such that \\( A x=c \\) has no solution.`,
+        `If \\( y \\) is the first column of \\( A \\), then \\( A x=y \\) has a unique solution.`,
+        `\\( \\operatorname{det}(A)=0 \\)`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-em6/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let<br> \$\$ A=\\left[\\begin{array}{ccc} 2 &amp; 0 &amp; 5 \\\\ 1 &amp; 2 &amp; 3 \\\\ -1 &amp; 5 &amp; 1 \\end{array}\\right] \$\$ <br>Consider the system of linear equations \\( A x=y \\), where \\( x \\in \\mathbb{R}^{3} \\) and \\( y \\in \\mathbb{R}^{3} \\). For which vectors \\( y \\) does this system have a solution?<br>Which one of the following statements is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `The system has a solution only for \\( y=\\left[\\begin{array}{lll}r &amp; 0 &amp; 0\\end{array}\\right]^{T}, r \\in \\mathbb{R} \\) <br>&nbsp;`,
+        `The system has a solution only for \\( y=\\left[\\begin{array}{lll}0 &amp; s &amp; 0\\end{array}\\right]^{T}, s \\in \\mathbb{R} \\) <br>&nbsp;`,
+        `The system has a solution only for \\( y=\\left[\\begin{array}{lll}0 &amp; s &amp; t\\end{array}\\right]^{T}, s, t \\in \\mathbb{R} \\) <br>&nbsp;`,
+        `The system has a solution for all \\( y \\in \\mathbb{R}^{3} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em6/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( A \\) and \\( B \\) be \\( n \\times n \\) real matrices. </p> <ul> <li>We say the determinant is additive if \\( \\operatorname{det}(A+B)=\\operatorname{det}(A)+\\operatorname{det}(B) \\) </li> <li>We say the determinant is multiplicative if \\( \\operatorname{det}(A B)=\\operatorname{det}(A) \\cdot \\operatorname{det}(B) \\) </li> </ul> <p>Which of the following statements is correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Determinant is both additive and multiplicative`,
+        `Determinant is additive but not multiplicative`,
+        `Determinant is multiplicative but not additive`,
+        `Determinant is neither additive nor multiplicative`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em6/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>For \\( t \\in \\mathbb{R} \\), define<br> \$\$ M(t)=\\left[\\begin{array}{ccc} 1 &amp; t &amp; 0 \\\\ 1 &amp; 1 &amp; t^{2} \\\\ 0 &amp; 1 &amp; 1 \\end{array}\\right] \$\$ <br>Which of the following statements is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{det}(M(t)) \\) is a polynomial of degree \\( 3 \\) in \\( t \\)<br>&nbsp;`,
+        `\\( \\operatorname{det}(M(t))=0 \\quad \\forall t \\in \\mathbb{R} \\) <br>&nbsp;`,
+        `\\( \\operatorname{det}(M(t))=0 \\) for infinitely many values of \\( t \\in \\mathbb{R} \\)<br>&nbsp;`,
+        `\\( \\operatorname{det}(M(t))=0 \\) for exactly two values of \\( t \\in \\mathbb{R} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em6/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\in \\mathbb{R}^{n \\times n} \\), and let \\( \\operatorname{adj}(A) \\) denote the adjugate of \\( A \\).&nbsp; </p> <p>Which of the following statements are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( \\operatorname{rank}(A)=n \\), then \\( \\operatorname{rank}(\\operatorname{adj}(A))=n \\)<br>&nbsp;`,
+        `If \\( \\operatorname{rank}(A)=n-1 \\), then \\( \\operatorname{rank}(\\operatorname{adj}(A))=1 \\)<br>&nbsp;`,
+        `If \\( \\operatorname{rank}(A) < n-1 \\), then \\( \\operatorname{adj}(A)=0 \\)<br>&nbsp;`,
+        `If \\( \\operatorname{rank}(A)=n-1 \\), then \\( \\operatorname{adj}(A)=0 \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-em6/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( n \\times n \\) real matrix that is singular (i.e., not invertible).<br>Let \\( x_{0} \\in \\mathbb{R}^{n} \\) and \\( b \\in \\mathbb{R}^{n} \\) such that the equation<br> \$\$ A x_{0}=b \$\$<br>is satisfied.<br>Which of the following statements are true? </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `There exists a vector \\( y_{0} \\in \\mathbb{R}^{n} \\) such that \\( A^{T} y_{0}=b \\).`,
+        `There exist infinitely many solutions to the equation \\( A x=b \\).`,
+        `If \\( A^{T} x=0 \\), then \\( b^{T} x=0 \\).`,
+        `The solution to the equation \\( A x=b \\) is unique.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-em6/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( A \\) be an \\( m \\times m \\) real matrix, and let \\( x \\in \\mathbb{R}^{m} \\) be a column vector of unknowns. Consider the following two statements: </p> <p><br><strong>Statement 1:</strong> There exists a non-zero vector \\( b_{1} \\in \\mathbb{R}^{m} \\) such that the linear system \\( A x=b_{1} \\) has no solution.<br><strong>Statement 2:</strong> There exist non-zero vectors \\( b_{2}, b_{3} \\in \\mathbb{R}^{m} \\), with \\( b_{2} \\neq c b_{3} \\) for any scalar \\( c \\in&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \\mathbb{R} \\) , such that both systems \\( A x=b_{2} \\) and \\( A x=b_{3} \\) have solutions.<br>&nbsp; </p> <p>Which of the following options is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Statement \\( 2 \\) is true whenever \\( A \\) is singular.`,
+        `Statement \\( 1 \\) is true whenever \\( A \\) is singular.`,
+        `Both Statement \\( 1 \\) and Statement \\( 2 \\) can be true simultaneously.`,
+        `If \\( m=2 \\), then at least one of Statement \\( 1 \\) and Statement \\( 2 \\) is false.`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em6/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( A \\) be a \\( 2 \\times 2 \\) real matrix such that \$\$ \\operatorname{det}(A)=1 \\quad \\text { and } \\quad \\operatorname{tr}(A)=3 . \$\$ What is the value of \\( \\operatorname{tr}\\left(A^{2}\\right) \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "7",
+      solution: `<img src="/images/quiz/wqt-em6/15.png" style="max-width: 100%;">`
+    },
+  ]
+});
