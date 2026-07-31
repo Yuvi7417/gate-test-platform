@@ -9,12 +9,7 @@ registerTest({
       type: "MCQ",
       text: `<p></p> <p>In the circuit shown below, which logic function does this circuit generate?<br><img alt="" src="/images/quiz/wqt-dl1/q1_img1.png" style="max-width: 75%;"><br>&nbsp;</p> <p></p>`,
       image: "",
-      options: [
-        `OR`,
-        `AND`,
-        `NOR`,
-        `NAND`,
-      ],
+      options: [\n        Only I is true.,\n        Only II is true.,\n        Both I and II are true.,\n        Neither I, nor II are true.\n      ],
       answer: "A",
       solution: `<img src="/images/quiz/wqt-dl1/1.png" style="max-width: 75%;">`
     },
@@ -3680,11 +3675,13 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>In the echelon form of the augmented matrix \\( [A \\mid b]: \\)&nbsp; </p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>Only I is true.</li> <li>Only Il is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
+      text: `<p></p> <p>In the echelon form of the augmented matrix \\( [A \\mid b]: \\)&nbsp; </p> <p>&nbsp;</p> <ul><li>I. A single row of the form \( (000 \ldots 0 \mid 0) \) is enough to conclude that the system will have infinitely many solutions.</li><li>II. A single row of the form (00 \( \cdots 0 \mid 1) \) is enough to conclude that the system will have no solution.</li></ul><ul><li>I. \( A^2-4 A-5 I=0 \) (where \( I \) is identity matrix).</li><li>II. \( A^{-1}=\frac{(A-4 I)}{5} \).</li></ul><ol style="list-style-type:upper-alpha"> <li>Only I is true.</li> <li>Only Il is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
       image: "",
       options: [
-        `A single row of the form \\( (000 \\ldots 0 \\mid 0) \\) is enough to conclude that the system will have infinitely many solutions.`,
-        `A single row of the form (00 \\( \\cdots 0 \\mid 1) \\) is enough to conclude that the system will have no solution.`,
+        `Only I is true.`,
+        `Only II is true.`,
+        `Both I and II are true.`,
+        `Neither I, nor II are true.`
       ],
       answer: "B",
       solution: `<img src="/images/quiz/wqt-em3/11.png" style="max-width: 100%;">`
@@ -3906,10 +3903,14 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Consider the following set of (column) vectors:<br> \$\$ X=\\left\\{\\left[\\begin{array}{l}x_1 \\\\ x_2 \\\\ x_3\\end{array}\\right] \\in \\mathbb{R}^3 \\mid 2 x_1+3 x_2-x_3=0\\right\\}. \$\$ </p> <p>Which of the following statements are true?</p> <p>Choose the correct option.</p> <ol style="list-style-type:upper-alpha"> <li>Only I&nbsp;is true.</li> <li>Only II is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
+      text: `<p></p> <p>Consider the following set of (column) vectors:<br> \$\$ X=\\left\\{\\left[\\begin{array}{l}x_1 \\\\ x_2 \\\\ x_3\\end{array}\\right] \\in \\mathbb{R}^3 \\mid 2 x_1+3 x_2-x_3=0\\right\\}. \$\$ </p> <p>Which of the following statements are true?</p> <p>Choose the correct option.</p> <ul><li>I. Every element of set \( X \) can be written as linear combination of vectors of \( S= \) \( \left\{\left[\begin{array}{c}1 \\ -1 \\ -1\end{array}\right],\left[\begin{array}{l}1 \\ 0 \\ 2\end{array}\right]\right\} \)</li><li>II. \( \left\{\left[\begin{array}{c}1 \\ -1 \\ -1\end{array}\right],\left[\begin{array}{l}1 \\ 0 \\ 2\end{array}\right]\right\} \) is a linearly independent set.</li></ul><ol style="list-style-type:upper-alpha"> <li>Only I&nbsp;is true.</li> <li>Only II is true.</li> <li>Both I and II are true.</li> <li>Neither I, nor II are true.</li> </ol> <p></p>`,
       image: "",
       options: [
-        `Every element of set \\( X \\) can be written as linear combination of vectors of \\( S= \\) \\( \\left\\{\\left[\\begin{array}{c}1 \\\\ -1 \\\\ -1\\end{array}\\right],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 2\\end{array}\\right]\\right\\} \\)`,
+        `Only I is true.`,
+        `Only II is true.`,
+        `Both I and II are true.`,
+        `Neither I, nor II are true.`
+      ],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 2\\end{array}\\right]\\right\\} \\)`,
         `\\( \\left\\{\\left[\\begin{array}{c}1 \\\\ -1 \\\\ -1\\end{array}\\right],\\left[\\begin{array}{l}1 \\\\ 0 \\\\ 2\\end{array}\\right]\\right\\} \\) is a linearly independent set.`,
       ],
       answer: "C",
