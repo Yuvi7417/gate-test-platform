@@ -7126,3 +7126,474 @@ registerTest({
     },
   ]
 });
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Data Structure-1 | Asymptotic Notation and Loop Time Complexity and second test series",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a problem: Given an array, check whether the array is in sorted order or not. Suppose both iterative and recursive approaches are used to solve this problem.</p> <p>Which of the following statements is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Recursive approach gives space complexity as  \\( O(n) \\) for recursive stack space.`,
+        `Iterative approach gives Auxiliary space as  \\( \\Theta(n). \\)`,
+        `Time Complexity for recursive approach is  \\( O(n). \\)`,
+        `Time Complexity for iterative approach is  \\( \\Theta(n \\log n). \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-ds1/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Rank the following functions by increasing order of growth. That is, find any arrangement  \\( g 1, g 2, g 3, g 4 \\) of the functions satisfying \\( g 1=O(g 2), g 2=O(g 3), g 3= \\)  \\( \\mathrm{O}(\\mathrm{g} 4) \\).<br> \$\$  \\begin{aligned} &amp;f_{1}(n)=2^{(\\log n)^{4}} &amp;f_{2}(n)=\\pi^{n} &amp;f_{3}(n)=n^{5(\\log n)^{2}} &amp;f_{4}(n)=\\sqrt{2^{\\sqrt{n}}} \\end{aligned}  \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f 1, f 3, f 4, f 2 \\)`,
+        `\\( f 3, f 1, f 4, f 2 \\)`,
+        `\\( f 1, f 3, f 2, f 4 \\)`,
+        `\\( f 1, f 3, f 4, f 2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds1/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the time complexity of  \\( \\text{function()}? \\) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">function</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&lt;</span><span class="pln"> i </span><span class="pun">*</span><span class="pln"> i</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">j </span><span class="pun">%</span><span class="pln"> i </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">                </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> k </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> k </span><span class="pun">&lt;</span><span class="pln"> j</span><span class="pun">;</span><span class="pln"> k</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">                    printf</span><span class="pun">(</span><span class="str">"*"</span><span class="pun">);</span></li><li class="L6"><span class="pln">                </span><span class="pun">}</span></li><li class="L7"><span class="pln">            </span><span class="pun">}</span></li><li class="L8"><span class="pln">        </span><span class="pun">}</span></li><li class="L9"><span class="pln">    </span><span class="pun">}</span></li><li class="L0"><span class="pun">}</span><span class="pln">    </span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta \\left(n^{3}\\right) \\)`,
+        `\\( \\Theta\\left(n^{4}\\right) \\)`,
+        `\\( \\Theta\\left(n^{5}\\right) \\)`,
+        `\\( \\Theta\\left(n^{2} \\log n\\right) \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds1/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Determine the complexity of the following code, using “ \\( \\Theta \\)” as indicated. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> sum </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">*=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">)</span></li><li class="L2"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&lt;=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++)</span></li><li class="L3"><span class="pln">        sum</span><span class="pun">++;</span></li><li class="L4"><span class="pln">        </span><span class="kwd">print</span><span class="pun">(</span><span class="pln">sum</span><span class="pun">);</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta \\left(n^{2}\\right) \\)`,
+        `\\( \\Theta\\left(n^{2} \\log n\\right) \\)`,
+        `\\( \\Theta(n) \\)`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds1/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider functions  \\( f() \\) and  \\( g() \\) which are positive increasing functions. </p> <p>Which of the following(s) is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( f(n)=o(g(n)) \\) then  \\( \\log (f(n))=o(\\log (g(n)) \\), here  \\( o \\) is small-oh`,
+        `If  \\( f(n)=\\mathrm{O}(g(n)) \\) then  \\( e^{f(n)}=\\mathrm{O}\\left(e^{g(n)}\\right) \\), here  \\( \\mathrm{O} \\) is big-oh`,
+        `If  \\( f(n)=O(g(n)) \\) then  \\( \\log (f(n))=O(\\log (g(n)) \\), here  \\( O \\) is big-oh`,
+        `If  \\( f(n)=o(g(n)) \\) then  \\( e^{f(n)}=o\\left(e^{g(n)}\\right) \\), here  \\( o \\) is small-oh`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-ds1/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following(s) is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( f(n)=n \\log n, g(n)=\\displaystyle{}\\sum_{i=1}^{n} \\frac{n}{i} \\) then  \\( f(n)=\\Theta(g(n)) \\)`,
+        `If  \\( f(n)=1.01^{n}, g(n)=n^{1000} \\) then  \\( f(n)=\\Omega(g(n)) \\)`,
+        `If  \\( f(n)=\\displaystyle{}\\sum_{i=1}^{n} i^{2}, g(n)=n^{3}+\\sum_{i=1}^{n} i \\) then  \\( f(n)=\\Theta(g(n)) \\)`,
+        `If  \\( f(n)=n !, g(n)=3^{n} \\times 5^{n} \\) then \\( f(n)=\\Omega(g(n)) \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-ds1/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following statement is FALSE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( f(n)=\\mathcal{O}(g(n)) \\) and  \\( f(n)=\\Omega(g(n)) \\), then we have  \\( (f(n))^{2}=&nbsp;\\Theta\\left((g(n))^{2}\\right) \\)`,
+        `If  \\( f(n)=\\mathcal{O}(g(n)) \\) and  \\( f(n)=\\Omega(g(n)) \\), then we have  \\( f(n)=g(n) \\)`,
+        `\\( 2^{n}+n^{2}=\\mathcal{O}\\left(3^{n}\\right) \\)`,
+        `\\( 2^{n}+n^{2}=\\mathcal{O}\\left(2^{n}\\right) \\) &nbsp;`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds1/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Assume you have two positive functions  \\( f \\) and  \\( g \\) such that  \\( f(n) \\) is in  \\( O(g(n)) \\). For each of the following statements, decide which one(s) is/are always TRUE. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2^{f(n)} \\) is  \\( O\\left(2^{g(n)}\\right) \\)`,
+        `\\( f(n)^{2} \\) is  \\( O\\left(g(n)^{2}\\right) \\)`,
+        `\\( f(n)=O\\left((f(n))^{2}\\right) \\)`,
+        `\\( g(n)=\\Omega(g(n)) \\)`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-ds1/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\text{S}_{1}= \\displaystyle{}\\sum_{r=0}^{\\log n-1} \\frac{n r}{2^{r}} \\) , and  \\( \\text{S}_{2} = \\displaystyle{} \\sum_{r=0}^{\\log n-1} r 2^{r} \\) .<br>Which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S}_{1}=\\Theta(n \\log n), \\text{S}_{2}=\\Theta(n \\log n) \\)`,
+        `\\( \\text{S}_{1}=\\Theta(n), \\text{S}_{2}=\\Theta(n \\log n) \\)`,
+        `\\( \\text{S}_{1}=\\Theta(n \\log n), \\text{S}_{2}=\\Theta(n) \\)`,
+        `\\( \\text{S}_{1}=\\Theta(n), \\text{S}_{2}=\\Theta(n) \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds1/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Match Column A with Column B. Column B represents asymptotic time complexity of loops in Column A<br> \$\$ \\begin{array}{|l|l|} \\hline \\qquad&nbsp;\\quad \\textbf {Column A} &amp; \\textbf {Column B} \\\\ \\hline a) \\quad&nbsp;{\\color{Purple} {\\textbf{for} }}&nbsp;\\left(\\mathrm{i}={\\color{Blue} {1}} ; \\mathrm{i}^{*} \\mathrm{i}&lt;=\\mathrm{N} ; \\mathrm{i}={\\color{Green} {2}}^{*} \\mathrm{i}\\right) ; &amp; &nbsp;\\mathrm{i}) \\quad \\Theta(\\log N) \\\\ \\hline &nbsp;b) \\quad {\\color{Purple} {\\textbf{for} }} \\left(\\mathrm{i}={\\color{Blue} {1}} ; \\mathrm{i}&lt;=\\mathrm{N} ; \\mathrm{i}={\\color{Green} {2}}^{*} \\mathrm{i}\\right) &nbsp;&amp; &nbsp;\\mathrm{ii}) \\quad \\Theta(\\mathrm{N}) \\\\ \\quad \\qquad {\\color{Teal} {\\textbf{for} }} (\\mathrm{j}={\\color{Blue} {1}} ; \\mathrm{j}&lt;=\\mathrm{i} ; \\mathrm{j}=\\mathrm{j}+{\\color{Blue} {1}}) ; &amp; \\\\ \\hline c) \\quad {\\color{Purple} {\\textbf{for} }} \\left(\\mathrm{i}={\\color{Blue} {1}} ; \\mathrm{i}{ }^{*} \\mathrm{i}&lt;=\\mathrm{N} ; \\mathrm{i}=\\mathrm{i}+{\\color{Blue} {1}}\\right) &nbsp;&amp; \\mathrm{iii}) \\quad \\Theta(\\sqrt{N} \\log N) \\\\ \\qquad \\quad {\\color{Teal} {\\textbf{for} }} (\\mathrm{j}={\\color{Blue} {1}} ; \\mathrm{j}&lt;=\\mathrm{i} ; \\mathrm{j}=\\mathrm{j}+{\\color{Blue} {1}}) ; &amp; \\\\ \\hline d) \\quad {\\color{Purple} {\\textbf{for} }} \\left(\\mathrm{i}={\\color{Blue} {1}} ; \\mathrm{i}{ }^{*} \\mathrm{i}&lt;=\\mathrm{N} ; \\mathrm{i}=\\mathrm{i}+{\\color{Blue} {1}}\\right)&nbsp;&amp; iv) \\quad \\Theta(N \\log \\mathrm{N}) \\\\ \\qquad \\quad {\\color{Teal} {\\textbf{for} }} \\left(\\mathrm{j}={\\color{Blue} {1}} ; \\mathrm{j}&lt;=\\mathrm{i} ; \\mathrm{j}={\\color{Green} {2}}^{*} \\mathrm{j}\\right) ; &amp; \\\\ \\hline \\end{array} \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{a-i, b-ii, c-iii, d-iv} \\)`,
+        `\\( \\text{a-i, b-iv, c-ii, d-iii} \\)`,
+        `\\( \\text{a-i, b-ii, c-ii, d-iii} \\)`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds1/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Data Structure-2 | Linked List, Asymptotic Notation and Loop Time Complexity and third test series",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>If  \\( g(n)= \\Omega(n) \\) and  \\( h(n)=O(n) \\) then  \\( g(n) . h(n) \\) will be - </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n) \\)<br>&nbsp;`,
+        `\\( O(n) \\)<br>&nbsp;`,
+        `\\( \\Omega(n) \\)<br>&nbsp;`,
+        `None of these`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-ds2/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a linked list given in the figure below.</p> <p>What is the value of  \\( \\textsf{n} \\rightarrow&nbsp;\\textsf{next}\\rightarrow&nbsp;\\textsf{next}\\rightarrow&nbsp;\\textsf{next}\\rightarrow&nbsp;\\textsf{data}? \\) </p> <p>Where  \\( n \\) and head are pointers to the following struct type and intitallised as per the figure shown. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pun">};</span></li></ol></pre> <p><strong><img alt="" src="/images/quiz/wqt-ds2/q2_img1.png" style="max-width: 75%;"></strong> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 10 \\)`,
+        `\\( 20 \\)`,
+        `\\( 30 \\)`,
+        `\\( 40 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds2/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following linked list which has nodes of a doubly linked list type.</p> <p><strong><img alt="" src="/images/quiz/wqt-ds2/q3_img2.png" style="max-width: 75%;"></strong> </p> <p>If we execute the following lines of code on a given linked list then what will be the output?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">head</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L1"><span class="pln">head </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">-&gt;</span><span class="pln">prev</span><span class="pun">;</span></li><li class="L2"><span class="pln">head</span><span class="pun">-&gt;</span><span class="pln">prev </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">;</span></li><li class="L3"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">);</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2 \\)`,
+        `\\( 15 \\)`,
+        `\\( 10 \\)`,
+        `\\( 13 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds2/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a function ReverseList() which has following protype -</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="typ">ReverseList</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">)</span></li></ol></pre> <p>Function reverse the nodes in a given linked list.</p> <p>That is, head = ReverseList(head); will take a list held by head, reverse it and put back to head.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="typ">ReverseList</span><span class="pun">(</span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> p</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">p</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> NULL</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln">        </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> q </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ReverseList</span><span class="pun">(</span><span class="pln">p </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">);</span></li><li class="L4"><span class="pln">        p </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">;</span></li><li class="L5"><span class="pln">        p </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L6"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> ______</span><span class="pun">;</span><span class="pln"> </span><span class="com">//Line X</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> ______</span><span class="pun">;</span><span class="pln"> </span><span class="com">//Line Y</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p><br>Fill in the blanks for Line X and Line Y. If we say Line X is filled by  \\( p \\) then we consider Line X as  \\( \\textbf{return p;} \\) after filling the blank.<br>Line X and Line Y should be filled by which values respectively such that the function correctly reverses the given linked list. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p \\) and  \\( p \\rightarrow  \\) next`,
+        `\\( p \\) and  \\( q \\)`,
+        `\\( q \\rightarrow \\) next and  \\( p \\)`,
+        `\\( q \\) and  \\( p \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-ds2/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The intent of the function below is to delete the last node of the list.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> removeLast</span><span class="pun">(</span><span class="typ">Node</span><span class="pun">*</span><span class="pln"> first</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="typ">Node</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">q</span><span class="pun">;</span></li><li class="L2"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> first</span><span class="pun">;</span></li><li class="L3"><span class="pln">    q </span><span class="pun">=</span><span class="pln"> p</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">q</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">        p </span><span class="pun">=</span><span class="pln"> q</span><span class="pun">;</span></li><li class="L6"><span class="pln">        q </span><span class="pun">=</span><span class="pln"> q</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pln">    p</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> NULL</span><span class="pun">;</span></li><li class="L9"><span class="pln">    free</span><span class="pun">(</span><span class="pln">q</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p>Which of the following describes the class of all linked lists for which this function works correctly? </p> <p></p>`,
+      image: "",
+      options: [
+        `No linked lists`,
+        `All non-empty linked lists`,
+        `All linked lists with more than one node`,
+        `The empty list and all linked lists with more than one node`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds2/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statement is/are FALSE? Assume that  \\( \\log \\) base is  \\( 2 \\) in all options. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 8^{\\log \\left(n^{2}\\right)} \\in \\Theta\\left(n^{6}\\right) \\) <br>&nbsp;`,
+        `If  \\( f, g \\), and  \\( h \\) are functions from the natural numbers to the non-negative real numbers with  \\( f(n) \\geq g(n) \\forall n \\geq 1, f(n) \\in \\Theta(h(n)) \\), and \\( g(n) \\in \\Theta(h(n)) \\), then  \\( (f(n)-g(n)) \\in \\Theta(h(n)) \\)<br>&nbsp;`,
+        `\\( (\\log n)^{a} \\) is  \\( \\mathrm{O}\\left(n^{&nbsp;b}\\right) \\) for any constant  \\( a \\), and for any constant  \\( b&gt;0 \\)<br>&nbsp;`,
+        `\\( T(n) = O(f(n)) \\) and  \\( g(n) \\) is a function whose value is never negative then  \\( g(n) T(n) \\) is  \\( O(g(n) f(n)) \\)`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-ds2/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider Iterated logarithm of  \\( n \\), written log  \\( { }^{\\star} n \\). Defined as below.<br> \$\$ \\lg ^{*} N=\\min \\{k \\mid \\underbrace{\\lg \\lg \\cdots \\lg }_{k} N \\leq 1\\} \$\$ <br>Which of the following is TRUE? </p> <p>(log base can be considered as any constant)</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\lg \\lg { }^{*} n=o\\left(\\lg ^{*} \\lg n\\right) \\) here o is small oh`,
+        `\\( \\lg ^{*} \\lg n=o\\left(\\lg \\lg ^{*} n\\right) \\) here  \\( o \\) is small oh`,
+        `\\( \\lg ^{*} \\lg n=\\boldsymbol{\\Theta}\\left(\\lg \\lg { }^{*} n\\right) \\)`,
+        `\\( \\lg ^{\\star} \\lg n \\) and  \\( \\lg \\lg ^{\\ast} n \\) are not comparable`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds2/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Arrange the following functions in their increasing order of growth.</p> <p> \\( \\left(\\begin{array}{c} \\text { If f(n) = O(g(n)&nbsp;and g(n) = O(h((n))&nbsp;then order is f(n), g(n), h(n).}&nbsp; \\end{array}\\right) \\) </p> <p>In all options  \\( \\log^{2}n \\) means  \\( (\\log n)^{2} \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2^{\\log ^{2} n},&nbsp;\\qquad 4^{\\log n},\\qquad(\\sqrt{2})^{\\log n},\\qquad 5 \\sqrt{n} \\) <br>&nbsp;`,
+        `\\( 4^{\\log n},\\qquad 2^{\\log ^{2} n},\\qquad 5 \\sqrt{n},\\qquad(\\sqrt{2})^{\\log n} \\) <br>&nbsp;`,
+        `\\( 5 \\sqrt{n},\\qquad(\\sqrt{2})^{\\log n},\\qquad 4^{\\log n},\\qquad 2^{\\log ^{2} n} \\) <br>&nbsp;`,
+        `\\( 5 \\sqrt{n},\\qquad 4^{\\log n},\\qquad 2^{\\log ^{2} n},\\qquad(\\sqrt{2})^{\\log n} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds2/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following prints the last node of a circular (non empty) linked list?</p> <p>In all options, head is pointing to the first node of the circular (non empty) linked list.</p> <p></p>`,
+      image: "",
+      options: [
+        `&nbsp; <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">current </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pun">(</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">!=</span><span class="pln">head</span><span class="pun">)</span></li><li class="L2"><span class="pln">current</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> current</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">);</span></li></ol></pre>`,
+        `&nbsp; <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">current </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pun">(</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">!=</span><span class="pln">head</span><span class="pun">)</span></li><li class="L2"><span class="pln">current</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> current</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">);</span></li></ol></pre>`,
+        `&nbsp; <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">current </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pun">(</span><span class="pln">current</span><span class="pun">!=</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">)</span></li><li class="L2"><span class="pln">current</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> current</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">);</span></li></ol></pre>`,
+        `&nbsp; <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> node </span><span class="pun">*</span><span class="pln">current </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pun">(</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">!=</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">)</span></li><li class="L2"><span class="pln">current</span><span class="pun">=</span><span class="pln">current</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> current</span><span class="pun">-&gt;</span><span class="kwd">value</span><span class="pun">);</span></li></ol></pre>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-ds2/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider two programs given below. Consider a non-empty linked list which is either a circular or singly linked list.&nbsp; \\( \\text{P1} \\) and&nbsp; \\( \\text{P2} \\) are two programs which try to check if it is circular or not. Let&nbsp; \\( \\text{head} \\) point to the first node of the linked list. </p> <p> \\( \\text{P1} \\) takes the head of the linked list as its argument and  \\( \\text{P2} \\) takes head as the first argument and head-&gt;next as the second argument at the first call. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> P1</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">*</span><span class="pln"> head</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head</span><span class="pun">==</span><span class="kwd">null</span><span class="pun">)</span></li><li class="L3"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">*</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pln">    </span><span class="kwd">while</span><span class="pun">(</span><span class="kwd">next</span><span class="pun">!=</span><span class="kwd">null</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln">head</span><span class="pun">)</span></li><li class="L8"><span class="pln">    </span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L9"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> head</span><span class="pun">);</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> P2</span><span class="pun">(</span><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">*</span><span class="pln"> head</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> node</span><span class="pun">*</span><span class="pln"> cur</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head</span><span class="pun">==</span><span class="kwd">null</span><span class="pun">)</span></li><li class="L3"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">cur</span><span class="pun">==</span><span class="kwd">null</span><span class="pun">)</span></li><li class="L6"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">head</span><span class="pun">==</span><span class="pln">cur</span><span class="pun">)</span></li><li class="L9"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> P2</span><span class="pun">(</span><span class="pln">head</span><span class="pun">,</span><span class="pln"> cur</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span></li><li class="L2"><span class="pun">}</span></li></ol></pre> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{P1} \\) returns  \\( 1 \\) if given linked list is circular`,
+        `\\( \\text{P2} \\) returns  \\( 1 \\) if given linked list is circular`,
+        `\\( \\text{P1} \\) returns  \\( 1 \\) if given linked list is having even number of nodes`,
+        `\\( \\text{P2} \\) returns  \\( 1 \\) if given linked list is having even number of nodes`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-ds2/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Data Structure-3 | Stack and Queue and Asymptotic Notation and Loop Time Complexity",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the implementation of a stack of which is based on dynamic array allocation using malloc in C programming. This implementation allows us to push more elements than the current array capacity. It works as follows.</p> <p>Suppose the array is full, then to push the next element we first allocate a new array of larger size using malloc, copy all elements to the new array, and free up the old array memory.</p> <p>When a dynamic array-based stack becomes full, you increase the array size by the following sequence \\( k, 2 k, 3 k, 4 k, \\dots \\) for some positive constant  \\( k \\). Which means the first time we increase the size by  \\( k \\), next time by  \\( 2 k \\), and so on. </p> <p>If you have an empty stack that uses an array whose initial size is  \\( k \\), and you perform  \\( n \\) pushes (assume that  \\( n&gt;k) \\). What is the total cost complexity of executing n push operations?<br>Let&nbsp;cost of expanding from  \\( k \\) to  \\( 2 k \\) has  \\( 2 k \\) cost, similarly cost of expanding from \\( 2 k \\) to  \\( 3&nbsp;k \\) has  \\( 3&nbsp;k \\) cost. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( O\\left(n^ 2 / k\\right) \\)<br>&nbsp;`,
+        `\\( O(n / k) \\)<br>&nbsp;`,
+        `\\( O\\left(n^ 2 k\\right) \\)<br>&nbsp;`,
+        `\\( O(n k) \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds3/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Given a circular array-based queue capable of holding  \\( 100 \\) objects. Suppose the queue is initially empty, and then objects are put into the queue at the rate of  \\( 10 \\) per minute while meantime they are processed and removed from the queue at the rate of  \\( 5 \\) per minute. After  \\( 120 \\) elements have been added to the queue, which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `You can't add  \\( 120 \\) elements to an array holding  \\( 100 \\) entries.<br>&nbsp;`,
+        `There will be  \\( 60 \\) elements in the queue,  \\( 20 \\) of them at the front of the array where the queue started, and  \\( 40 \\) at the other end.<br>&nbsp;`,
+        `There will be  \\( 60 \\) elements in the queue,  \\( 30 \\) of them at the front of the array where the queue started, and  \\( 30 \\) at the other end.<br>&nbsp;`,
+        `There will be  \\( 60 \\) elements in the queue,  \\( 40 \\) of them at the front of the array where the queue started, and  \\( 20 \\) at the other end.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds3/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the memory allocation of  \\( \\mathrm{M} \\) blocks. </p> <p>Stack \\( 1 \\) growing from block  \\( 0 \\) up toward block  \\( \\mathrm{M} - 1 \\) and Stack \\( 2 \\) growing from block  \\( \\mathrm{M}-1 \\) down to block  \\( 0. \\) </p> <p>Let Top \\( 1 \\) (initialized to  \\( -1) \\) and Top \\( 2\\; ( \\) initialized&nbsp;to  \\( \\mathrm{M}) \\) be the tops of the stacks. For example, after  \\( 2 \\) calls to PushStack \\( 1 \\) (data) that allocates elements in Stack \\( 1 \\) followed by  \\( 1 \\) call to PushStack \\( 2 \\) (data) that allocates elements in Stack \\( 2, \\) the memory that was initially all free blocks now has  \\( 3 \\) allocated blocks as per the figure: </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-ds3/q3_img1.png" style="max-width: 75%;"></p> <p>If Stack \\( 1 \\) was replaced by a circular queue with Front and Rear pointers, then which of the following is true regarding memory utilization? </p> <p></p>`,
+      image: "",
+      options: [
+        `you may not be able to add/push into the stack even when there are some free blocks in the memory.<br>&nbsp;`,
+        `you may not be able to add/enqueue into the queue even when there are some free blocks in the memory.<br>&nbsp;`,
+        `Stack and queue both can be implemented with efficient memory utilization.<br>&nbsp;`,
+        `This implementation is not possible.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds3/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that we want to design a data structure called Mx-Queue that supports ONLY three&nbsp;operations as follows:</p> <p>Enqueue(x) –&nbsp;It is a standard queue operation that equeue element x into the queue.</p> <p>Dequeue() –&nbsp;It is a standard queue operation that dequeue&nbsp;from front of the queue.</p> <p>FIND-MAX() –&nbsp;It is one extra operation that&nbsp;Mx-Queue&nbsp;supports which&nbsp;finds the maximum element from MX-Queue without removing it in&nbsp; \\( \\mathrm{O}(1) \\) time. </p> <p>To fulfill the purpose we use one more&nbsp;auxiliary data structure along with a standard queue.</p> <p>There are two choices of&nbsp;auxiliary data structures are available to us.&nbsp; (See figure for visual representation)</p> <ul> <li>QueueStack</li> <li>Queue</li> </ul> <p>QueueStack&nbsp;is a data structure that has the special privilege of removing elements from the rear of the queue.</p> <p>&nbsp;</p> <p><img alt="" src="/images/quiz/wqt-ds3/q4_img2.png" style="max-width: 75%;"></p> <p>we call the following functions Insert() and Delete() to add or remove elements into or from&nbsp;Mx-Queue.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Insert</span><span class="pun">(</span><span class="typ">Mx</span><span class="pun">-</span><span class="typ">Queue</span><span class="pun">,</span><span class="pln">x</span><span class="pun">):</span><span class="pln"> </span></li><li class="L1"><span class="pln">   </span><span class="typ">Enqueue</span><span class="pun">(</span><span class="typ">Mx</span><span class="pun">-</span><span class="typ">Queue</span><span class="pun">,</span><span class="pln"> X</span><span class="pun">)</span></li><li class="L2"><span class="pln">   </span><span class="com">//Do something with auxiliary data structure</span></li><li class="L3"><span class="typ">End</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="typ">Delete</span><span class="pun">(</span><span class="typ">Mx</span><span class="pun">-</span><span class="typ">Queue</span><span class="pun">):</span><span class="pln"> </span></li><li class="L7"><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Dequeue</span><span class="pun">(</span><span class="typ">Mx</span><span class="pun">-</span><span class="typ">Queue</span><span class="pun">)</span></li><li class="L8"><span class="pln">    </span><span class="com">//Do something with auxiliary data structure</span></li><li class="L9"><span class="pln">    </span><span class="typ">Return</span><span class="pln"> x </span></li><li class="L0"><span class="typ">End</span></li></ol></pre> <p>One of the&nbsp;Insert or Delete works in linear time and the other one works in constant time.</p> <p>Choose the correct option.</p> <ul> <li> \\( \\text{S1}: \\) We can implement Mx-Queue by using one&nbsp;Queue and QueueStack data Structure. </li> <li> \\( \\text{S2}: \\) We can implement Mx-Queue by using two Queue data Structures. </li> </ul> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) is correct but  \\( \\text{S2} \\) is incorrect`,
+        `\\( \\text{S1} \\) is incorrect but  \\( \\text{S2} \\) is correct`,
+        `Both are correct`,
+        `Both are incorrect`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds3/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Imagine four railroad cars positioned on the input side of the track in the figure below, numbered  \\( 1, 2, 3, \\) and  \\( 4, \\) from left to right. Suppose we perform the following sequence of operations (which is compatible with the direction of the arrows in the diagram and does not require cars to ”jump over” other cars): </p> <ol start="1" style="list-style-type:lower-alpha"> <li>move car  \\( 1 \\) into the stack; </li> <li>move car  \\( 2 \\) into the stack; </li> <li>move car  \\( 2 \\) into the output; </li> <li>move car  \\( 3 \\) into the stack; </li> <li>move car  \\( 4 \\) into the stack; </li> <li>move car  \\( 4 \\) into the output; </li> <li>move car  \\( 3 \\) into the output; </li> <li>move car  \\( 1 \\) into the output. </li> </ol> <p><strong><img alt="" src="/images/quiz/wqt-ds3/q5_img3.png" style="max-width: 75%;"></strong><br>As a result of these operations the original order of the cars,  \\( 1234, \\) has been changed into  \\( 2431. \\)<br>If there are six railroad cars numbered  \\( 123456, \\) Which of the following statements is/are correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `They can’t be permuted into the order  \\( 154623 \\)<br>&nbsp;`,
+        `They can be permuted into the order  \\( 254613 \\)<br>&nbsp;`,
+        `They can’t be permuted into the order  \\( 654123 \\)<br>&nbsp;`,
+        `They can be permuted into the order  \\( 325641 \\)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-ds3/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A deque (”double-ended queue”) is a linear list for which all the insertions and deletions (and usually all accesses) are made at the ends of the list.</p> <p>The difference between Queue and Deque is that it does not follow the FIFO (First In, First Out) approach. The second feature of Deque is that we can insert and remove elements from either front or rear ends.</p> <p>An output-restricted deque is a linear list in which deletions are allowed to take place at only one end but insertion is allowed at both ends.</p> <p>An input-restricted deque is a linear list in which items may be inserted at one end but removed from either end; clearly, an input-restricted deque can operate either as a stack or as a queue if we consistently remove all items from one of the two ends.</p> <p>The figure shows types of queues pictorially.</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-ds3/q6_img4.png" style="max-width: 75%;"></p> <p><br>An output-restricted deque can be operated as</p> <p></p>`,
+      image: "",
+      options: [
+        `Only Stack`,
+        `Only Queue`,
+        `Either as a stack or as a queue`,
+        `Neither as a stack nor as a queue`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds3/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose, you have proposed an optimal algorithm which uses extra stack(s) to design a stack such that \\( \\textsf{GetMinimum()} \\) should be  \\( O(1) \\) for n number of elements. </p> <p>Consider the following statements:</p> <ul> <li> \\( \\text{S1} : \\) Minimum number of extra stack(s)  \\( : 1 \\) </li> <li> \\( \\text{S2} : \\) Time Complexity  \\( : O(1) \\) </li> <li> \\( \\text{S3} : \\) Space Complexity  \\( : O(n) \\) </li> </ul> <p>Which of the following is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Both  \\( \\text{S1} \\) and  \\( \\text{S2} \\) are correct but not  \\( \\text{S3} \\)`,
+        `Both  \\( \\text{S1} \\) and  \\( \\text{S3} \\) are correct but not  \\( \\text{S2} \\)`,
+        `Both  \\( \\text{S2} \\) and  \\( \\text{S3} \\) are correct but not  \\( \\text{S1} \\)`,
+        `\\( \\text{S1, S2} \\) and  \\( \\text{S3} \\) are correct`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-ds3/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>We have an implementation that supports the following operations on a stack (in the instructions below, \\( s \\) is the name of the stack). </p> <ul> <li> \\( \\text{isempty(s) :} \\) returns True if  \\( s \\) is empty, and False otherwise. </li> <li> \\( \\text{top(s) :} \\) returns the top element of the stack, but does not pop the stack; returns null if the stack is empty. </li> <li> \\( \\text{push(s, x) :} \\) places  \\( x \\) on top of the stack. </li> <li> \\( \\text{pop(s) :} \\) pops the stack; does nothing if  \\( s \\) is empty. </li> </ul> <p>Consider the following code:</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">push_pop </span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span></li><li class="L1"><span class="pln">    s</span><span class="pun">=</span><span class="pln">empty</span></li><li class="L2"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">1</span><span class="pln"> to length </span><span class="pun">(</span><span class="pln"> x </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span></li><li class="L3"><span class="pln">        </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> x </span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="pun">’(’</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span></li><li class="L4"><span class="pln">            push </span><span class="pun">(</span><span class="pln"> s </span><span class="pun">,</span><span class="pln"> x </span><span class="pun">[</span><span class="pln"> i </span><span class="pun">]</span><span class="pln"> </span><span class="pun">)</span></li><li class="L5"><span class="pln">        </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">:</span></li><li class="L6"><span class="pln">            </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> top </span><span class="pun">(</span><span class="pln">s</span><span class="pun">)==</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span></li><li class="L7"><span class="pln">                pop </span><span class="pun">(</span><span class="pln"> s </span><span class="pun">)</span></li><li class="L8"><span class="pln">            </span><span class="kwd">end</span><span class="pln"> </span><span class="kwd">while</span></li><li class="L9"><span class="pln">            push </span><span class="pun">(</span><span class="pln"> s </span><span class="pun">,</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">)</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">)</span></li><li class="L0"><span class="pln">            push </span><span class="pun">(</span><span class="pln"> s </span><span class="pun">,</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">’</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln">        </span><span class="kwd">end</span><span class="pln"> </span><span class="kwd">if</span></li><li class="L2"><span class="pln">    </span><span class="kwd">end</span><span class="pln"> </span><span class="kwd">for</span></li><li class="L3"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="kwd">not</span><span class="pln"> isempty </span><span class="pun">(</span><span class="pln"> s </span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span></li><li class="L4"><span class="pln">        </span><span class="kwd">print</span><span class="pln"> top</span><span class="pun">(</span><span class="pln">s</span><span class="pun">)</span></li><li class="L5"><span class="pln">        pop </span><span class="pun">(</span><span class="pln">s</span><span class="pun">)</span></li><li class="L6"><span class="pln">    </span><span class="kwd">end</span><span class="pln"> </span><span class="kwd">while</span></li></ol></pre> <p><br>What is the output of this program when  \\( \\text{push pop(”(((()((())((((”)} \\) is executed? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( )())(((( \\)`,
+        `\\( ((((())( \\)`,
+        `\\( ((((())) \\)`,
+        `\\( )())(()) \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds3/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following queue of characters, where QUEUE is a circular array which is allocated  \\( 6 \\) memory cells with indexing starting from \\( 1. \\)<br>Consider the below status of Queue where Front and Rear stores  \\( 2 \\) and  \\( 4 \\) respectively.<br><strong><img alt="" src="/images/quiz/wqt-ds3/q9_img5.png" style="max-width: 75%;"></strong><br>Five sequences of operations have been performed on the current status of queue as described below. </p> <ol style="list-style-type:upper-roman"> <li> \\( \\text{‘F’} \\) is added to the queue </li> <li>Two items are removed</li> <li> \\( \\text{‘K’, ‘L’} \\) and  \\( \\text{‘M’} \\) are added </li> <li>Two items are deleted</li> <li> \\( \\text{‘R’} \\) is added to the queue </li> </ol> <p>What will be the final value of Front and Rear respectively?</p> <p></p>`,
+      image: "",
+      options: [
+        `Front  \\( = 2, \\) Rear  \\( = 5 \\)`,
+        `Front  \\( = 4, \\) Rear  \\( = 5 \\)`,
+        `Front  \\( = 6, \\) Rear  \\( = 2 \\)`,
+        `Front  \\( = 6, \\) Rear  \\( = 3 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-ds3/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A stack of int is implemented using an array as the following data type:</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#define</span><span class="pln"> SIZE </span><span class="lit">20</span></li><li class="L1"><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> data</span><span class="pun">[</span><span class="pln">SIZE</span><span class="pun">];</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> top</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span><span class="pln"> </span><span class="typ">Stack</span><span class="pun">;</span></li></ol></pre> <p>Fill up the missing codes in the  \\( \\textsf{PUSH, POP}, \\) and  \\( \\textsf{TOP} \\) operations of the Stack. </p> <p>Ignore underflow or overflow of stack in case of pop and push respectively. You can assume that&nbsp;underflow or overflow are handled before calling pop or push.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> </span><span class="typ">Push</span><span class="pun">(</span><span class="typ">Stack</span><span class="pln"> </span><span class="pun">*</span><span class="pln">s</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> d</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="com">// line X</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="kwd">void</span><span class="pln"> </span><span class="typ">Pop</span><span class="pun">(</span><span class="typ">Stack</span><span class="pln"> </span><span class="pun">*</span><span class="pln">s</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln">    </span><span class="com">// line Y</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> </span><span class="typ">Top</span><span class="pun">(</span><span class="typ">Stack</span><span class="pln"> </span><span class="pun">*</span><span class="pln">s</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="com">// line Z</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">line X should be s</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">[++</span><span class="pln">s</span><span class="pun">-&gt;</span><span class="pln">top</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> d</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">line Y should be </span><span class="pun">--</span><span class="pln">s</span><span class="pun">-&gt;</span><span class="pln">top</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">line Z should be </span><span class="kwd">return</span><span class="pln"> s</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">[</span><span class="pln">s</span><span class="pun">-&gt;</span><span class="pln">top</span><span class="pun">]</span></li></ol></pre>`,
+        `None of these`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-ds3/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
