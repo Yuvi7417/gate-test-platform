@@ -2,7 +2,7 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const path = require('path');
 
-let htmlRaw = fs.readFileSync('test.html', 'utf8');
+let htmlRaw = fs.readFileSync('test2.html', 'utf8');
 htmlRaw = htmlRaw.replace(/<script type="math\/tex".*?>(.*?)<\/script>/gs, (match, p1) => {
   let safeP1 = p1.replace(/\\/g, '\\\\').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return `\\\\( ${safeP1} \\\\)`;
@@ -48,7 +48,7 @@ async function parse() {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
         // We assume images are already downloaded to images/quiz/wqt-em4/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-em11/${filename}`);
+        $(img).attr('src', `/images/quiz/wqt-cprog2/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '75%');
       }
@@ -72,17 +72,18 @@ async function parse() {
     
     // If it's a multiple choice, extract options
     const options = [];
-    const $ol = $qTextContainer.find('ol').first();
-    if ($ol.length > 0) {
-      const $lis = $ol.find('> li').toArray();
-      $lis.forEach(li => {
-        options.push($(li).html().trim());
-      });
-      $ol.remove(); // Remove options from main text
+    if (type === 'MCQ' || type === 'MSQ') {
+      const $ol = $qTextContainer.find('ol').not('pre ol').last();
+      if ($ol.length > 0) {
+        const $lis = $ol.find('> li').toArray();
+        $lis.forEach(li => {
+          options.push($(li).html().trim());
+        });
+        $ol.remove(); // Remove options from main text
+      }
     }
     
     let htmlContent = $qTextContainer.html().trim();
-    htmlContent = htmlContent.replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' '); // remove newlines and extra spaces
     
     // Answer
     const correctText = $q.find('.correct_solution').text();
@@ -119,7 +120,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Engineering Mathematics-11|calculus",\n  date: "Sep 17, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - C-Programming-2 | Functions, Storage classes & Loops",\n  date: "Oct 01, 2026",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -154,7 +155,7 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-em11/${qNum}.png" style="max-width: 75%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-cprog2/${qNum}.png" style="max-width: 75%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }

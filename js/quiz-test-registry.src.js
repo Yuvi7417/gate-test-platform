@@ -6169,17 +6169,14 @@ registerTest({
 
 registerTest({
   series: "weekly-cs-gate-2027",
-  name: "WQT - C-Programming-1| Number representation & Integer promotion",
+  name: "WQT - C-Programming-1| Number representation and Integer promotion",
   date: "Sep 24, 2026",
   questions: [
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<p>Consider the number 
-                \\( 1001 \\) in 
-                \\( 2's \\) Complement number system _________
-            </p>`,
+      text: `<p>Consider the number \\( 1001 \\) in \\( 2's \\) Complement number system _________ </p>`,
       image: "",
       options: [],
       answer: "-7",
@@ -6189,10 +6186,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<p>Minimum Number of bits to present 
-                \\( +14 \\) in binary in 
-                \\( 2's \\) complement system?
-            </p>`,
+      text: `<p>Minimum Number of bits to present \\( +14 \\) in binary in \\( 2's \\) complement system? </p>`,
       image: "",
       options: [],
       answer: "5",
@@ -6202,14 +6196,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>Consider a 
-                \\( 2's \\) complement system with 
-                \\( 16 \\)-bit short integer size. What is the smallest
-                value that can be stored in a signed short?
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider a \\( 2's \\) complement system with \\( 16 \\)-bit short integer size. What is the smallest value that can be stored in a signed short? </p> <p></p>`,
       image: "",
       options: [
         `\\( -2^{15} \\)`,
@@ -6224,14 +6211,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the output of the following program?</p>
-            <p>(Assume 
-                \\( 2’s \\) complement system for signed numbers)
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">char</span><span class="pun">)</span><span class="pln">i</span><span class="pun">;</span></li><li class="L3"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the output of the following program?</p> <p>(Assume \\( 2’s \\) complement system for signed numbers) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">char</span><span class="pun">)</span><span class="pln">i</span><span class="pun">;</span></li><li class="L3"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( -1 \\)`,
@@ -6246,16 +6226,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>In C programming, constant integers are considered to be signed integers by default. One way to represent
-                them as an unsigned constant is by appending 
-                \\( \\text{U} \\) as a suffix. For example, 
-                \\( -1 \\) is signed, whereas 
-                \\( -1\\text{U} \\) is unsigned.
-            </p>
-            <p>Which of the following condition(s) is/are TRUE?</p>
-            
-            <p></p>`,
+      text: `<p></p> <p>In C programming, constant integers are considered to be signed integers by default. One way to represent them as an unsigned constant is by appending \\( \\text{U} \\) as a suffix. For example, \\( -1 \\) is signed, whereas \\( -1\\text{U} \\) is unsigned. </p> <p>Which of the following condition(s) is/are TRUE?</p> <p></p>`,
       image: "",
       options: [
         `\\( -3 &gt; -4\\text{U} \\)`,
@@ -6270,11 +6241,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the output on the execution of the following code segment?</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">unsigned</span><span class="pln"> num1</span><span class="pun">=-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">signed</span><span class="pln"> num2</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&lt;</span><span class="pln"> num2</span><span class="pun">)</span></li><li class="L5"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"less"</span><span class="pun">);</span></li><li class="L6"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1</span><span class="pun">&gt;</span><span class="pln">num2</span><span class="pun">)</span></li><li class="L7"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"greater"</span><span class="pun">);</span></li><li class="L8"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1</span><span class="pun">==</span><span class="pln">num2</span><span class="pun">)</span></li><li class="L9"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"equal"</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the output on the execution of the following code segment?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">unsigned</span><span class="pln"> num1</span><span class="pun">=-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">signed</span><span class="pln"> num2</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1 </span><span class="pun">&lt;</span><span class="pln"> num2</span><span class="pun">)</span></li><li class="L5"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"less"</span><span class="pun">);</span></li><li class="L6"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1</span><span class="pun">&gt;</span><span class="pln">num2</span><span class="pun">)</span></li><li class="L7"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"greater"</span><span class="pun">);</span></li><li class="L8"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">num1</span><span class="pun">==</span><span class="pln">num2</span><span class="pun">)</span></li><li class="L9"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"equal"</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `greater`,
@@ -6289,36 +6256,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Consider 
-                \\( k \\) bit binary pattern.
-            </p>
-            <ul>
-                <li>
-                    \\( T_{\\text{max}} \\) and 
-                    \\( T_{\\text{min}} \\) are maximum and minimum
-                    signed numbers we can represent using 
-                    \\( k \\) bits.
-                </li>
-                <li>
-                    \\( U_{\\text{max}} \\) and 
-                    \\( U_{\\text{min}} \\) are maximum and minimum
-                    unsigned numbers we can represent using 
-                    \\( k \\) bits.
-                </li>
-            </ul>
-            <p>Which of the following(s) is/are true for 
-                \\( k =16? \\)
-            </p>
-            <p>Here 
-                \\( |.| \\) represents absolute value of a number i.e.,
-                
-                \\( |r| = -r \\) if 
-                \\( r&lt;0 \\) otherwise 
-                \\( |r| = r. \\)
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider \\( k \\) bit binary pattern. </p> <ul> <li> \\( T_{\\text{max}} \\) and \\( T_{\\text{min}} \\) are maximum and minimum signed numbers we can represent using \\( k \\) bits. </li> <li> \\( U_{\\text{max}} \\) and \\( U_{\\text{min}} \\) are maximum and minimum unsigned numbers we can represent using \\( k \\) bits. </li> </ul> <p>Which of the following(s) is/are true for \\( k =16? \\) </p> <p>Here \\( |.| \\) represents absolute value of a number i.e., \\( |r| = -r \\) if \\( r&lt;0 \\) otherwise \\( |r| = r. \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( |T_{\\text{min}}| = T_{\\text{max}} + 1 \\)`,
@@ -6333,21 +6271,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Consider Figure 
-                \\( A \\) and Figure 
-                \\( B \\) which represent 
-                \\( 4 \\) bit signed and unsigned numbers respectively
-                in 
-                \\( 2’s \\) complement system.<br><strong><img alt="" src="/images/quiz/wqt-cprog1/q8_img1.png" style="max-width: 75%;"></strong><br>Assume
-                that a few variables are defined below and initialized in such a way that places them in the spot shown
-                in Figure 
-                \\( C \\).
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> s1</span><span class="pun">,</span><span class="pln"> s2</span><span class="pun">,</span><span class="pln"> s3</span><span class="pun">;</span></li><li class="L1"><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> u1</span><span class="pun">,</span><span class="pln"> u2</span><span class="pun">,</span><span class="pln"> u3</span><span class="pun">;</span></li></ol></pre>
-            <p>Which of the following(s) is/are true?</p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider Figure \\( A \\) and Figure \\( B \\) which represent \\( 4 \\) bit signed and unsigned numbers respectively in \\( 2’s \\) complement system.<br><strong><img alt="" src="/images/quiz/wqt-cprog1/q8_img1.png" style="max-width: 75%;"></strong><br>Assume that a few variables are defined below and initialized in such a way that places them in the spot shown in Figure \\( C \\). </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> s1</span><span class="pun">,</span><span class="pln"> s2</span><span class="pun">,</span><span class="pln"> s3</span><span class="pun">;</span></li><li class="L1"><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> u1</span><span class="pun">,</span><span class="pln"> u2</span><span class="pun">,</span><span class="pln"> u3</span><span class="pun">;</span></li></ol></pre> <p>Which of the following(s) is/are true?</p> <p></p>`,
       image: "",
       options: [
         `\\( s3 &gt; u3 \\)`,
@@ -6362,48 +6286,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Consider two program fragments given below. 
-                \\(  \\text{UINT_MAX}  \\) is the maximum unsigned
-                number in the system.
-            </p>
-            <div style="display: flex; justify-content: space-between; font-family:'Segoe UI', sans-serif; font-size:17px; line-height:1.8; margin-top:12px;">
-                &nbsp;<div style="width:47%;">
-                    <p style="text-align:center; font-weight:bold; color:#0047ab;">Program 1</p>
-                    <p style="margin-left:20px;">
-                        \\( \\texttt{main()} \\)<br>
-                        \\( \\{ \\)<br>&nbsp;&nbsp;
-                        \\( \\texttt{unsigned int a = UINT_MAX;} \\)
-                        <br>&nbsp;&nbsp;
-                        \\( \\texttt{signed char c = -1;} \\)
-                        <br><br>&nbsp;&nbsp;
-                        \\( \\texttt{if (c == a)} \\)
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                        \\( \\texttt{printf("GO Classes");} \\)<br>
-                        \\( \\} \\)
-                    </p>
-                </div>
-                <div style="width:47%;">
-                    <p style="text-align:center; font-weight:bold; color:#0047ab;">Program 2</p>
-                    <p style="margin-left:20px;">
-                        \\( \\texttt{main()} \\)<br>
-                        \\( \\{ \\)<br>&nbsp;&nbsp;
-                        \\( \\texttt{unsigned int b = UINT_MAX;} \\)
-                        <br>&nbsp;&nbsp;
-                        \\( \\texttt{signed char d = -10;} \\)
-                        <br><br>&nbsp;&nbsp;
-                        \\( \\texttt{if (d == b - 10)} \\)
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                        \\( \\texttt{printf("GATE Overflow");} \\)
-                        <br>
-                        \\( \\} \\)
-                    </p>
-                </div>
-            </div>
-            <p style="margin-top:20px;">Which of the following(s) is/are true? All the prints are without double commas.
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider two program fragments given below. \\( \\text{UINT_MAX} \\) is the maximum unsigned number in the system. </p> <div style="display: flex; justify-content: space-between; font-family:'Segoe UI', sans-serif; font-size:17px; line-height:1.8; margin-top:12px;"> &nbsp;<div style="width:47%;"> <p style="text-align:center; font-weight:bold; color:#0047ab;">Program 1</p> <p style="margin-left:20px;"> \\( \\texttt{main()} \\)<br> \\( \\{ \\)<br>&nbsp;&nbsp; \\( \\texttt{unsigned int a = UINT_MAX;} \\) <br>&nbsp;&nbsp; \\( \\texttt{signed char c = -1;} \\) <br><br>&nbsp;&nbsp; \\( \\texttt{if (c == a)} \\) <br>&nbsp;&nbsp;&nbsp;&nbsp; \\( \\texttt{printf("GO Classes");} \\)<br> \\( \\} \\) </p> </div> <div style="width:47%;"> <p style="text-align:center; font-weight:bold; color:#0047ab;">Program 2</p> <p style="margin-left:20px;"> \\( \\texttt{main()} \\)<br> \\( \\{ \\)<br>&nbsp;&nbsp; \\( \\texttt{unsigned int b = UINT_MAX;} \\) <br>&nbsp;&nbsp; \\( \\texttt{signed char d = -10;} \\) <br><br>&nbsp;&nbsp; \\( \\texttt{if (d == b - 10)} \\) <br>&nbsp;&nbsp;&nbsp;&nbsp; \\( \\texttt{printf("GATE Overflow");} \\) <br> \\( \\} \\) </p> </div> </div> <p style="margin-top:20px;">Which of the following(s) is/are true? All the prints are without double commas. </p> <p></p>`,
       image: "",
       options: [
         `Program \\( 1 \\) prints "GO Classes”`,
@@ -6418,15 +6301,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p>
-            <p>What is the output of the following code? Assume that int is 
-                \\( 32 \\) bits, short is 
-                \\( 16 \\) bits, and the representation is two’s
-                complement.&nbsp;
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">signed</span><span class="pln"> </span><span class="kwd">short</span><span class="pln"> ix </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">2</span><span class="pun">;</span></li><li class="L1"><span class="pln">printf</span><span class="pun">(</span><span class="pln"> </span><span class="str">"%u"</span><span class="pun">,</span><span class="pln"> ix </span><span class="pun">);</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What is the output of the following code? Assume that int is \\( 32 \\) bits, short is \\( 16 \\) bits, and the representation is two’s complement.&nbsp; </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">signed</span><span class="pln"> </span><span class="kwd">short</span><span class="pln"> ix </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">2</span><span class="pun">;</span></li><li class="L1"><span class="pln">printf</span><span class="pun">(</span><span class="pln"> </span><span class="str">"%u"</span><span class="pun">,</span><span class="pln"> ix </span><span class="pun">);</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( -2 \\)`,
@@ -6442,37 +6317,14 @@ registerTest({
 
 registerTest({
   series: "weekly-cs-gate-2027",
-  name: "WQT - C-Programming-2 | Functions, Storage classes & Loops",
+  name: "WQT - C-Programming-2 | Functions, Storage classes and Loops",
   date: "Oct 01, 2026",
   questions: [
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>As shown below, the file 
-                \\( f.c \\) defines a function f whose code refers to
-                the variable 
-                \\( x \\) that is not a local variable or a parameter.
-                The file 
-                \\( g.c \\) defines a function 
-                \\( g \\) whose code refers to the variable 
-                \\( x \\) that is not a local variable or a parameter.
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">// file f.c</span></li><li class="L1"><span class="com">// declaration for x</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="kwd">void</span><span class="pln"> f</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">){</span></li><li class="L4"><span class="pln">    </span><span class="pun">...</span></li><li class="L5"><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">// file g.c</span></li><li class="L1"><span class="com">// declaration for x</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="kwd">void</span><span class="pln"> g</span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*</span><span class="pln"> p</span><span class="pun">){</span></li><li class="L4"><span class="pln">    </span><span class="pun">...</span></li><li class="L5"><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
-            <p>The following table below shows how the variable x is defined in each file. For each row in the table,
-                indicate in Column (c) whether the two functions at run-time refer to the SAME identifier (memory
-                location) or to DIFFERENT identifiers (memory locations)<br>
-                \$\$ \\begin{array} {|l|l|c|} \\hline&nbsp;\\qquad \\textbf{Column A}&nbsp;&amp; \\qquad \\textbf{Column B} &amp; \\textbf{Column C} \\\\&nbsp;\\textbf{declaration in f.c} &amp;&nbsp;\\textbf{declaration in g.c} &amp; \\textbf{SAME or DIFFERENT} \\\\\\hline&nbsp; \\text{int x;} &amp; \\text{extern int x;} &amp; {\\color{Red} {\\textbf{SAME}}} \\\\\\hline&nbsp;&nbsp; \\text{int x = 0;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{extern int x = 0;} &amp; \\\\\\hline &nbsp;\\end{array} \$\$
-            </p>
-            <p>The first row of column C has been filled for hints. What will be in the 
-                \\( 2 \\)nd, 
-                \\( 3 \\)rd, and 
-                \\( 4 \\)th row of Column C, respectively?
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>As shown below, the file \\( f.c \\) defines a function f whose code refers to the variable \\( x \\) that is not a local variable or a parameter. The file \\( g.c \\) defines a function \\( g \\) whose code refers to the variable \\( x \\) that is not a local variable or a parameter. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">// file f.c</span></li><li class="L1"><span class="com">// declaration for x</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="kwd">void</span><span class="pln"> f</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">){</span></li><li class="L4"><span class="pln">    </span><span class="pun">...</span></li><li class="L5"><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">// file g.c</span></li><li class="L1"><span class="com">// declaration for x</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="kwd">void</span><span class="pln"> g</span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*</span><span class="pln"> p</span><span class="pun">){</span></li><li class="L4"><span class="pln">    </span><span class="pun">...</span></li><li class="L5"><span class="pln">    x </span><span class="pun">=</span><span class="pln"> </span><span class="pun">...</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p>The following table below shows how the variable x is defined in each file. For each row in the table, indicate in Column (c) whether the two functions at run-time refer to the SAME identifier (memory location) or to DIFFERENT identifiers (memory locations)<br> \$\$ \\begin{array} {|l|l|c|} \\hline&nbsp;\\qquad \\textbf{Column A}&nbsp;&amp; \\qquad \\textbf{Column B} &amp; \\textbf{Column C} \\\\&nbsp;\\textbf{declaration in f.c} &amp;&nbsp;\\textbf{declaration in g.c} &amp; \\textbf{SAME or DIFFERENT} \\\\\\hline&nbsp; \\text{int x;} &amp; \\text{extern int x;} &amp; {\\color{Red} {\\textbf{SAME}}} \\\\\\hline&nbsp;&nbsp; \\text{int x = 0;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{static int x;} &amp; \\\\\\hline \\text{static int x;} &amp; \\text{extern int x = 0;} &amp; \\\\\\hline &nbsp;\\end{array} \$\$ </p> <p>The first row of column C has been filled for hints. What will be in the \\( 2 \\)nd, \\( 3 \\)rd, and \\( 4 \\)th row of Column C, respectively? </p> <p></p>`,
       image: "",
       options: [
         `SAME, DIFFERENT, DIFFERENT`,
@@ -6487,19 +6339,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>Consider the below program written into 
-                \\( 2 \\) files.
-            </p>
-            <p><strong><img alt="" src="/images/quiz/wqt-cprog2/q2_img1.png" style="max-width: 75%;"></strong>
-            </p>
-            <p>Note that compilation of&nbsp;f
-                \\( 1 \\).c and f
-                \\( 2 \\).c happens independently of each other.
-            </p>
-            <p>Which of the following is TRUE?</p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider the below program written into \\( 2 \\) files. </p> <p><strong><img alt="" src="/images/quiz/wqt-cprog2/q2_img1.png" style="max-width: 75%;"></strong> </p> <p>Note that compilation of&nbsp;f \\( 1 \\).c and f \\( 2 \\).c happens independently of each other. </p> <p>Which of the following is TRUE?</p> <p></p>`,
       image: "",
       options: [
         `f \\( 1 \\).c and f \\( 2 \\).c can be compiled independently.`,
@@ -6514,13 +6354,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Consider a function is_greater() given below. Mark all option(s) which return 
-                \\( 1 \\).
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> is_greater</span><span class="pun">(</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">-</span><span class="pln">y </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span></li><li class="L3"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span></li><li class="L5"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider a function is_greater() given below. Mark all option(s) which return \\( 1 \\). </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> is_greater</span><span class="pun">(</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> y</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">-</span><span class="pln">y </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span></li><li class="L3"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span></li><li class="L5"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `is_greater \\( (1, 2) \\)`,
@@ -6535,10 +6369,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Which of the following(s) will evaluate to true</p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Which of the following(s) will evaluate to true</p> <p></p>`,
       image: "",
       options: [
         `\\( 0\\; \\&amp;\\&amp;\\; 0 == 0 \\)`,
@@ -6553,11 +6384,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the output printed by the following program?</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">10</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">+</span><span class="lit">3</span><span class="pun">)</span></li><li class="L5"><span class="pln">    </span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span></li><li class="L6"><span class="pln">    </span><span class="pun">{</span></li><li class="L7"><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span></li><li class="L8"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is case 3"</span><span class="pun">);</span></li><li class="L9"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L0"><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">6</span><span class="pun">:</span></li><li class="L1"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is case 6"</span><span class="pun">);</span></li><li class="L2"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L3"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L4"><span class="pln">        </span><span class="kwd">default</span><span class="pun">:</span></li><li class="L5"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is default"</span><span class="pun">);</span></li><li class="L6"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L9"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the output printed by the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">10</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">+</span><span class="lit">3</span><span class="pun">)</span></li><li class="L5"><span class="pln">    </span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span></li><li class="L6"><span class="pln">    </span><span class="pun">{</span></li><li class="L7"><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span></li><li class="L8"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is case 3"</span><span class="pun">);</span></li><li class="L9"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L0"><span class="pln">        </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">6</span><span class="pun">:</span></li><li class="L1"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is case 6"</span><span class="pun">);</span></li><li class="L2"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L3"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L4"><span class="pln">        </span><span class="kwd">default</span><span class="pun">:</span></li><li class="L5"><span class="pln">            printf</span><span class="pun">(</span><span class="str">"Hi. This is default"</span><span class="pun">);</span></li><li class="L6"><span class="pln">            </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `Hi. This is case \\( 3 \\)`,
@@ -6572,11 +6399,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the value printed by the following program?</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L1"><span class="pln">i </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!</span><span class="pln">i </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">14</span><span class="pun">;</span></li><li class="L2"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">);</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the value printed by the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L1"><span class="pln">i </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!</span><span class="pln">i </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">14</span><span class="pun">;</span></li><li class="L2"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">);</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( 10 \\)`,
@@ -6591,11 +6414,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the output?</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">15</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="lit">29</span><span class="pun">;</span></li><li class="L1"><span class="kwd">if</span><span class="pun">(</span><span class="pln">c</span><span class="pun">&gt;</span><span class="pln">b</span><span class="pun">&gt;</span><span class="pln">a</span><span class="pun">)</span></li><li class="L2"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"TRUE"</span><span class="pun">);</span></li><li class="L3"><span class="kwd">else</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"FALSE"</span><span class="pun">);</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the output?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">15</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="lit">29</span><span class="pun">;</span></li><li class="L1"><span class="kwd">if</span><span class="pun">(</span><span class="pln">c</span><span class="pun">&gt;</span><span class="pln">b</span><span class="pun">&gt;</span><span class="pln">a</span><span class="pun">)</span></li><li class="L2"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"TRUE"</span><span class="pun">);</span></li><li class="L3"><span class="kwd">else</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"FALSE"</span><span class="pun">);</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( \\text{TRUE} \\)`,
@@ -6610,16 +6429,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p><br>If 
-                \\( x, y, z, \\) and 
-                \\( w \\) are declared as integer variables, which of
-                the following expressions are 
-                \\( \\text{NOT} \\) valid in 
-                \\( C \\)?
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p><br>If \\( x, y, z, \\) and \\( w \\) are declared as integer variables, which of the following expressions are \\( \\text{NOT} \\) valid in \\( C \\)? </p> <p></p>`,
       image: "",
       options: [
         `\\( x + 5 = y + z \\)`,
@@ -6634,14 +6444,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What will be the output of the following C program?.<br>Here 
-                \\( ?: \\) is a ternary operator which is right to
-                left-associative.
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> j </span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(--</span><span class="pln">j </span><span class="pun">?</span><span class="pln"> </span><span class="pun">++</span><span class="pln">j</span><span class="pun">?</span><span class="pln"> i </span><span class="pun">:</span><span class="pln"> i</span><span class="pun">++</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> i</span><span class="pun">--)</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d%d\n"</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> j</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What will be the output of the following C program?.<br>Here \\( ?: \\) is a ternary operator which is right to left-associative. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> j </span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(--</span><span class="pln">j </span><span class="pun">?</span><span class="pln"> </span><span class="pun">++</span><span class="pln">j</span><span class="pun">?</span><span class="pln"> i </span><span class="pun">:</span><span class="pln"> i</span><span class="pun">++</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> i</span><span class="pun">--)</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d%d\n"</span><span class="pun">,</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> j</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( 1\\; 0 \\)`,
@@ -6656,11 +6459,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p>
-            <p>What is the value printed by the following program?</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> d </span><span class="pun">=-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    d </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(--</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">c</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||(--</span><span class="pln">a</span><span class="pun">);</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> d</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre>
-            
-            <p></p>`,
+      text: `<p></p> <p>What is the value printed by the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> d </span><span class="pun">=-</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    d </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(--</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(++</span><span class="pln">c</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||(--</span><span class="pln">a</span><span class="pun">);</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> d</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
       image: "",
       options: [
         `\\( 0 \\)`,
@@ -6675,15 +6474,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>The statement</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln">counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li></ol></pre>
-            <p>can 
-                \\( \\text{NOT} \\) be rewritten as
-            </p>
-            
-            <p>&nbsp;</p>
-            <p></p>`,
+      text: `<p></p> <p>The statement</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln">counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li></ol></pre> <p>can \\( \\text{NOT} \\) be rewritten as </p> <p>&nbsp;</p> <p></p>`,
       image: "",
       options: [
         `&nbsp; <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> </span><span class="pun">--</span><span class="pln">counter </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">)</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> counter </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">)</span></li><li class="L2"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"A"</span><span class="pun">);</span></li><li class="L3"><span class="pln"> </span><span class="kwd">else</span></li><li class="L4"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"B"</span><span class="pun">);</span></li></ol></pre>`,
@@ -6698,21 +6489,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Professor Greg wants to give assignments to his students to write a 
-                \\( C \\) program for the 
-                \\( \\text{XOR5} \\) function. 
-                \\( \\text{XOR5} \\) is a function that returns true if
-                and only if 
-                \\( \\text{EXACTLY} \\) one of the integers 
-                \\( A \\) and 
-                \\( B \\) is 
-                \\( 5 \\).<br>Using which of the following
-                condition(s), 
-                \\( \\text{XOR5} \\) can be implemented?
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Professor Greg wants to give assignments to his students to write a \\( C \\) program for the \\( \\text{XOR5} \\) function. \\( \\text{XOR5} \\) is a function that returns true if and only if \\( \\text{EXACTLY} \\) one of the integers \\( A \\) and \\( B \\) is \\( 5 \\).<br>Using which of the following condition(s), \\( \\text{XOR5} \\) can be implemented? </p> <p></p>`,
       image: "",
       options: [
         `\\( (A==5) != (B==5) \\)`,
@@ -6727,26 +6504,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Let the variables 
-                \\( x,y, \\) and 
-                \\( z \\), be of type int and assigned some values. The
-                variable 
-                \\( b1 \\) is initialized as follows:
-            </p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> b1 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;=</span><span class="pln"> z</span><span class="pun">);</span></li></ol></pre>
-            <p>Variables b2, b3, b4, and b5 are initialized below.</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> b2 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">&lt;=</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span></li><li class="L1"><span class="kwd">int</span><span class="pln"> b3 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!((</span><span class="pln">x </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&lt;=</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span></li><li class="L2"><span class="kwd">int</span><span class="pln"> b4 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!((</span><span class="pln">x </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;=</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span></li><li class="L3"><span class="kwd">int</span><span class="pln"> b5 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">((</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">((</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">==</span><span class="pln"> z</span><span class="pun">))</span></li><li class="L4"><span class="pln">&nbsp;</span></li></ol></pre>
-            <p>Variables 
-                \\( b2, b3, b4 \\), and 
-                \\( b5 \\) ALWAYS, SOMETIMES, or NEVER takes the same
-                value as 
-                \\( b1 \\).<br>Which of the variable(s) SOMETIMES takes
-                the same value as 
-                \\( b1 \\)?
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Let the variables \\( x,y, \\) and \\( z \\), be of type int and assigned some values. The variable \\( b1 \\) is initialized as follows: </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> b1 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;=</span><span class="pln"> z</span><span class="pun">);</span></li></ol></pre> <p>Variables b2, b3, b4, and b5 are initialized below.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> b2 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">x </span><span class="pun">&lt;=</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span></li><li class="L1"><span class="kwd">int</span><span class="pln"> b3 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!((</span><span class="pln">x </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&lt;=</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span></li><li class="L2"><span class="kwd">int</span><span class="pln"> b4 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">!((</span><span class="pln">x </span><span class="pun">&lt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;=</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span></li><li class="L3"><span class="kwd">int</span><span class="pln"> b5 </span><span class="pun">=</span><span class="pln"> </span><span class="pun">((</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">))</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">((</span><span class="pln">x </span><span class="pun">&gt;</span><span class="pln"> z</span><span class="pun">)</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">(</span><span class="pln">y </span><span class="pun">==</span><span class="pln"> z</span><span class="pun">))</span></li><li class="L4"><span class="pln">&nbsp;</span></li></ol></pre> <p>Variables \\( b2, b3, b4 \\), and \\( b5 \\) ALWAYS, SOMETIMES, or NEVER takes the same value as \\( b1 \\).<br>Which of the variable(s) SOMETIMES takes the same value as \\( b1 \\)? </p> <p></p>`,
       image: "",
       options: [
         `\\( b2 \\)`,
@@ -6761,28 +6519,7 @@ registerTest({
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p>
-            <p>Consider the following two .
-                \\( c \\) files which both include the same 
-                \\( .h \\) file:
-            </p>
-            <p><img alt="" src="/images/quiz/wqt-cprog2/q14_img2.png" style="max-width: 75%;"></p>
-            <p><br>When compiled, linked, and executed, the following output results:<br>
-                \\( x = 1 \\; y = 2\\; z = 3\\; w = 4\\; v = 5 \\)
-                <br>Assuming that this program compiled and linked successfully, and based on the output shown above,
-                add static and/or extern modifiers to the blank lines 
-                \\( (1) \\) through 
-                \\( (10) \\).<br><br>Leave them blank if neither
-                modifier would be appropriate.<br><br>For example, if we say line 
-                \\( (2) \\) is static then we consider line 
-                \\( (2) \\) as 
-                \\( \\text{“static int x”} \\). Or if we say line 
-                \\( (9) \\) is empty then we treat line 
-                \\( 9 \\) as 
-                \\( \\text{“int w = 4”} \\).
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider the following two . \\( c \\) files which both include the same \\( .h \\) file: </p> <p><img alt="" src="/images/quiz/wqt-cprog2/q14_img2.png" style="max-width: 75%;"></p> <p><br>When compiled, linked, and executed, the following output results:<br> \\( x = 1 \\; y = 2\\; z = 3\\; w = 4\\; v = 5 \\) <br>Assuming that this program compiled and linked successfully, and based on the output shown above, add static and/or extern modifiers to the blank lines \\( (1) \\) through \\( (10) \\).<br><br>Leave them blank if neither modifier would be appropriate.<br><br>For example, if we say line \\( (2) \\) is static then we consider line \\( (2) \\) as \\( \\text{“static int x”} \\). Or if we say line \\( (9) \\) is empty then we treat line \\( 9 \\) as \\( \\text{“int w = 4”} \\). </p> <p></p>`,
       image: "",
       options: [
         `<br>Line \\( (1) \\) – empty<br>Line \\( (2) \\) - static<br>Line \\( (3) \\) - empty<br>Line \\( (4) \\) - extern<br>Line \\( (5) \\) – empty<br>Line \\( (6) \\) - empty<br>Line \\( (7) \\) - empty<br>Line \\( (8) \\) - static<br>Line \\( (9) \\) - empty<br>Line \\( (10) \\) - static`,
@@ -6797,14 +6534,7 @@ registerTest({
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p>
-            <p>Consider the following variable and function definitions:</p>
-            <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> q3</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">5</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="kwd">int</span><span class="pln"> q4</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">    </span><span class="kwd">extern</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li><li class="L9"><span class="kwd">int</span><span class="pln"> q5</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L0"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L1"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre>
-            <p>What is the value of the expression 
-                \\( q3() + q3() + q4() + q4() + q5() + q5()? \\)
-            </p>
-            
-            <p></p>`,
+      text: `<p></p> <p>Consider the following variable and function definitions:</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> q3</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">5</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="kwd">int</span><span class="pln"> q4</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">    </span><span class="kwd">extern</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li><li class="L9"><span class="kwd">int</span><span class="pln"> q5</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L0"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> g</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L1"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">++</span><span class="pln">g</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre> <p>What is the value of the expression \\( q3() + q3() + q4() + q4() + q5() + q5()? \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( 32 \\)`,

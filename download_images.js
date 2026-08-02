@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 const http = require('http');
 const https = require('https');
 
-const html = fs.readFileSync('test.html', 'utf8');
+const html = fs.readFileSync('test2.html', 'utf8');
 const $ = cheerio.load(html);
 
 let imgIndex = 1;
@@ -18,7 +18,7 @@ $('.res_question').each((i, qDiv) => {
       src = src.replace(/^http:\/\//i, 'https://');
       console.log('Downloading', src, 'to', filename);
       
-      const file = fs.createWriteStream('images/quiz/wqt-em11/' + filename);
+      const file = fs.createWriteStream('images/quiz/wqt-cprog2/' + filename);
       https.get(src, function(response) {
         if (response.statusCode !== 200) {
            console.error(`Failed to download ${src}: ${response.statusCode}`);
