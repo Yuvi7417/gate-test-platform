@@ -4870,3 +4870,301 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-8|Probability",
+  date: "Aug 27, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose Alice rolls a \\( 6 \\)-sided die, and Bob rolls a \\( 4 \\)-sided die. Let \\( X \\) denote the maximum value on the two dice. Find \\( P(X=6) \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 24 \\)<br>&nbsp;`,
+        `\\( 3 / 24 \\)<br>&nbsp;`,
+        `\\( 7 / 24 \\)<br>&nbsp;`,
+        `\\( 4 / 24 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em8/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider two independent Binomial random variables \\( \\text{X} \\) and \\( \\text{Y} \\) with parameters \\( n=5 \\) and \\( p=1/2. \\) Determine which of the following options correctly describes the random variable represented by \\( \\mathrm{X}+\\mathrm{Y} \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{X + Y} \\) is a Binomial random variable with parameters \\( n=5 \\) and \\( p=1 / 2 \\).<br>&nbsp;`,
+        `\\( \\text{X + Y} \\) is a Binomial random variable with parameters \\( n=10 \\) and \\( p=1 / 2 \\).<br>&nbsp;`,
+        `\\( \\text{X + Y} \\) is a Binomial random variable with parameters \\( n=5 \\) and \\( p=1 / 4 \\).<br>&nbsp;`,
+        `\\( \\text{X + Y} \\) is a Binomial random variable with parameters \\( n=10 \\) and \\( p=1 / 4 \\).`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that \\( X, Y \\), and \\( Z \\) are independent random variables. \\( \\mathbf{E}[X]=1, \\mathbf{E}[Y]=2 \\), and \\( \\mathbf{E}[Z]=3 \\). \\( \\operatorname{var}(X)=1 \\), \\( \\operatorname{var}(Y)=2, \\)&nbsp;and \\( \\operatorname{var}(Z)=3 \\). Compute the value of the following expression:<br> \$\$ \\mathbf{E}[2 X+3 Y-Z-10]+\\operatorname{var}(Y-2 X+2 Z) \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 5 \\)<br>&nbsp;`,
+        `\\( 13 \\)<br>&nbsp;`,
+        `\\( -3 \\)<br>&nbsp;`,
+        `\\( 10 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Assuming that \\( X \\) and \\( Y \\) are non-negative random variables, which may or may not be independent.<br>Which of the following statements is/are ALWAYS true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( P(X+Y=2) \\leq P(X=1) P(Y=1) \\)<br>&nbsp;`,
+        `\\( P(X+Y=2) \\geq P(X=1) P(Y=1) \\)<br>&nbsp;`,
+        `\\( P(X+Y=2) \\leq P(\\{X \\geq 1\\} \\cup\\{Y \\geq 1\\}) \\)<br>&nbsp;`,
+        `\\( P(X+Y=2) \\geq P(\\{X \\geq 1\\} \\cup\\{Y \\geq 1\\}) \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em8/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( X \\) be a discrete uniform random variable. It has a probability mass function (PMF) \\( P(X=k)=\\dfrac{1}{n} \\) for \\( k=1, \\ldots, n, \\)&nbsp;the expected value \\( \\mathbb{E}[X] \\) is given by </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\frac{n(n+1)}{2} \\)<br>&nbsp;`,
+        `\\( \\frac{n^2}{2} \\)<br>&nbsp;`,
+        `\\( \\frac{n+1}{2} \\)<br>&nbsp;`,
+        `\\( \\frac{n}{2} \\).`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em8/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>During a lecture, an instructor picks a student at random and asks if they know a certain definition from the course. Define the following two random variables \\( X \\) and \\( Y. X \\) takes the value \\( 0 \\) or \\( 1 \\) where \\( X=1 \\) if the student knows the answer and \\( X=0 \\) otherwise. \\( Y \\) is the number of the student's discussion section, i.e., \\( Y \\) is either \\( 1,2, \\) or \\( 3. \\) The joint probabilities are given in the following table:<br> \$\$ \\begin{array}{|c||c|c|c|} \\hline &amp; Y=1&nbsp;&amp; Y=2&nbsp;&amp; Y=3&nbsp;\\\\ \\hline X=0&nbsp;&amp; 0.2 &amp; 0.2 &amp; 0.2 \\\\ \\hline X=1&nbsp;&amp; 0.05 &amp; 0.05 &amp; 0.3 \\\\ \\hline \\end{array} \$\$ <br>So, for example \\( P(X=0, Y=1)=0.2 \\) and \\( P(X=1, Y=1)=0.05. \\) What is the value of \\( P(X=0 \\mid Y=1)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0.2 \\)`,
+        `\\( 0.8 \\)`,
+        `\\( 0.6 \\)`,
+        `\\( 0.4 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose that \\( X \\) and \\( Y \\) are independent random variables with \\( \\operatorname{Var}(X)=1, \\operatorname{Var}(Y)=2 \\). Find \\( \\operatorname{Var}(1-2 X+3 Y) \\). </p>`,
+      image: "",
+      options: [],
+      answer: "22",
+      solution: `<img src="/images/quiz/wqt-em8/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( X \\) be Bernoulli random variables with parameter \\( p&nbsp;(\\text{i.e}., P(X=1)=p, P(X=0)=1-p) \\). </p> <p>Define a random variable \\( Y=2^X 3^{1-X} \\). </p> <p>What is \\( E[Y]? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p \\)`,
+        `\\( 2^p \\)`,
+        `\\( 3-p \\)`,
+        `\\( \\log _6 p \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em8/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( X \\) be a random variable with \\( \\mathrm{PDF} \\)<br> \$\$ f(x)= \\begin{cases}C\\left(1-x^2\\right) &amp; -1 <br>What is \\( C ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 2 \\)`,
+        `\\( 1 / 3 \\)`,
+        `\\( 1 / 4 \\)`,
+        `\\( 3 / 4 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em8/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( X \\) be a continuous uniform random variable on \\( [0,1] \\). Let \\( a \\in[0,1] \\) be a constant, find the probability \\( P(X&gt;a)? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (1-a) \\)`,
+        `\\( (1-a) / 2 \\)`,
+        `\\( 2(1-a) \\)`,
+        `\\( (1-a)^2 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em8/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( X_i \\) are independent discrete uniform random variables defined for consecutive integers in the interval \\( [1, n] \\). That is \\( P(X_i=j)=1 / n \\) for any \\( i \\) and \\( j \\) in \\( [1, n] \\).<br><br>Let \\( Y=\\min \\{X_1, X_2, \\ldots, X_n\\} \\).<br><br>Find \\( P(Y&gt;k) \\) for some \\( k = n-1 \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (1 / n)^ \\mathrm{n} \\)`,
+        `\\( (1-1 / n)^ n \\)`,
+        `\\( 1-(1 / n)^ n \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em8/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that \\( X \\) and \\( Y \\) are independent random variables,<br><br>such that \\( X \\) has probability mass function \\( P(X=x)=(1 / 3)(2 / 3)^{x-1} \\) for integers \\( x \\geq 1, \\)&nbsp;<br><br>and \\( Y \\) has probability mass function \\( P(Y=y)=(2 / 5)(3 / 5)^{y-1} \\) for integers \\( y \\geq 1 \\).<br><br>Find \\( P(X=Y) \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 9 \\)`,
+        `\\( 2 / 9 \\)`,
+        `\\( 1 / 3 \\)`,
+        `\\( 1 / 2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the scenario where you keep tossing the coin until you get a head. Let \\( p \\) represent the probability of getting a head and \\( q&nbsp;\\;( \\)which equals \\( 1-p) \\) represent the probability of getting a tail. </p> <p>Let \\( Y \\) be a random variable that counts the number of tosses until the head appears. What is the probability that \\( Y \\) is a multiple of \\( 3? \\) To calculate this probability assume the coin is fair. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 3 \\)`,
+        `\\( 1 / 4 \\)`,
+        `\\( 3 / 4 \\)`,
+        `\\( 1 / 7 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em8/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Suppose that a person wins a game of chance with probability \\( 0.40, \\) and loses otherwise. If he wins, he earns \\( 5 \\) dollars, and if he loses, then he loses \\( 4 \\) dollars. Assume that he plays ten games independently. Let \\( X \\) denote the number of games that he wins. What is his expected gain or loss (altogether) during the ten games? </p> <p><strong>[Hint:</strong> \\( X \\) is a binomial random variable with \\( k \\) successes (or wins) but It is not asked to find \\( E[X&nbsp;], \\) you first need to find gain/loss in terms of \\( X \\) then need to find the expectation of that term] </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "-4",
+      solution: `<img src="/images/quiz/wqt-em8/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>You take the bus, walk, or ride your bike to school. In the morning you toss a fair, six-sided die.</p> <ul> <li>If you get a \\( 1 \\) or \\( 2, \\) you take the bus. </li> <li>If you get a \\( 3,4, \\) or \\( 5, \\) you walk. </li> <li>If you get a \\( 6, \\) you ride your bike. </li> </ul> <p>On average, it takes you \\( 12 \\) minutes if you take the bus, \\( 14 \\) minutes if you walk, and \\( 6 \\) minutes if you ride your bike. What is the expected amount of time it takes you to get to campus? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 9 \\) minutes`,
+        `\\( 10 \\) minutes`,
+        `\\( 11 \\) minutes`,
+        `\\( 12 \\) minutes`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em8/15.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A random variable \\( X \\) has a probability mass function given by<br> \$\$ p_X(x)= \\begin{cases}\\frac{1}{4}, &amp; \\text { if } x=1 \\\\ \\frac{1}{2}, &amp; \\text { if } x=\\frac{3}{2} \\\\ \\frac{1}{4}, &amp; \\text { if } x=3 \\\\ 0, &amp; \\text { otherwise. }\\end{cases} \$\$ <br>Find the cumulative distribution function, \\( F_X(x) \\), of \\( X \\). Compute the value of the following expression:<br> \$\$ \\mathbf{E}[X]+F_X(2) \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 3 / 4 \\)`,
+        `\\( 7 / 4 \\)`,
+        `\\( 2 \\)`,
+        `\\( 5 / 2 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em8/16.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A die is rolled until two different numbers appear. Let \\( \\mathrm{T} \\) be the total number of times the die is rolled. Obviously \\( \\text{P(T = 0) = P(T = 1) = 0}. \\) </p> <p><strong>For example,</strong></p> <p> \\( \\begin{aligned} &amp; \\{1,1,2\\}, \\text{T} = 3 \\\\ &amp; \\{1,0\\}, \\text{T} = 2 \\\\ &amp; \\{0,0,0,0,5\\}, \\text{T} = 5 \\\\ &amp; \\{4,4,4,4,4,6\\}, \\text{T} = 6 \\end{aligned} \\) </p> <p>Which of the following is the CORRECT PMF for \\( \\text{T}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{P(T} = k)=\\left(\\frac{5}{6}\\right)^{k-2} \\cdot \\frac{1}{6}, \\quad \\text { For } k \\geq 2 \\)`,
+        `\\( \\text{P(T} = k)=\\left(\\frac{1}{6}\\right)^{k-2} \\cdot \\frac{5}{6}, \\quad \\text { For } k \\geq 2 \\)`,
+        `\\( \\text{P(T} = k)=\\left(\\frac{1}{6}\\right)^k, \\text { For } k \\geq 2 \\)`,
+        `\\( \\text{P(T} = k)=\\left(\\frac{5}{6}\\right)^k, &nbsp;\\text { For } k \\geq 2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/17.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( \\mathrm{X}_1, \\mathrm{X}_2 \\) be independent. Bernoulli random variables with parameter \\( p \\) (i.e., they are independent and satisfy \\( P(X_i=1)=p, P(X_i=0)=1-p) \\) Find \\( E\\left[X_1^2 X_2\\right]? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p^3 \\)`,
+        `\\( p^2 \\)`,
+        `\\( p \\)`,
+        `\\( 1-p^2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/18.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A game is played with a weighted coin that is heads with probability \\( 0.6 \\) and tails with probability \\( 0.4. \\) The game will consist of a number of rounds. In each round, you flip the coin twice, and. </p> <ul> <li>if you get \\( \\mathrm{HH} \\), you win \\( \\$ 5 \\) and you move on to the next round. </li> <li>if you get \\( \\mathrm{HT} \\) or \\( \\mathrm{TH} \\), you win \\( \\$ 1 \\) and you move on to the next round. </li> <li>if you get \\( \\mathrm{TT} \\), the game is over. </li> </ul> <p>Compute your expected winnings from playing this game.</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 80 / 3 \\)`,
+        `\\( 57 / 4 \\)`,
+        `\\( 25 \\)`,
+        `\\( 32 / 3 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/19.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that \\( \\mathrm{X}, \\mathrm{Y} \\) and \\( \\mathrm{Z} \\) are independent random variables such that takes values either \\( 0 \\) or \\( 1 \\) with equal probability \\( 0.5. \\) What will be the \\( P[X+Y+Z=1 \\mid X=Y]=? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 2 \\)`,
+        `\\( 1 / 4 \\)`,
+        `\\( 1 / 8 \\)`,
+        `\\( 1 / 16 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em8/20.png" style="max-width: 100%;">`
+    },
+  ]
+});
