@@ -7597,3 +7597,563 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Data Structure-4 | Complete Data Structure & second test series",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In-order traversing a tree resulted in  \\( \\text{E A C K F H D B G}; \\) the preorder traversal would return. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{F A E K C D B H G} \\)<br>&nbsp;`,
+        `\\( \\text{F A E K C D H G B} \\)<br>&nbsp;`,
+        `\\( \\text{E A F K H D C B G} \\)<br>&nbsp;`,
+        `\\( \\text{F E A K D C H B G} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-ds4/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{C}(\\mathrm{X}) \\) be the number of leaves in a binary tree rooted at  \\( \\mathrm{T} \\). Assume that  \\( \\mathrm{IsLeaf (T)} \\) returns  \\( 1 \\) if  \\( \\mathrm{T} \\) is a leaf. Which of the following observations leads to a recursive implementation? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{C(T):=C(T . Left )+C( T. Right )} \\) <br>&nbsp;`,
+        `\\( \\mathrm{C(T):=C(T . Left )+C(T. Right )+1} \\) <br>&nbsp;`,
+        `\\( \\mathrm{C(T):=C(T . Left )+C(T. Right )+ IsLeaf (T)} \\)<br>&nbsp;`,
+        `\\( \\mathrm{C(T):=C(T . Left )+C(T . Right )+ IsLeaf (T)+1} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds4/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that a binary min-heap stores six elements with priorities  \\( 10, 20, 30, 40, 50, \\) and  \\( 60 \\) in its array  \\( \\text{A}. \\) What is the largest of these items that could be stored in  \\( \\text{A}[1]? \\) (indexing starts from zero) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 20 \\)<br>&nbsp;`,
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 40 \\)<br>&nbsp;`,
+        `\\( 50 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds4/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose you wanted to insert the following elements into a binary search tree of integers:  \\( 90,3,16,7,12,38,50 \\). Which of the following insertion orders will result in a <em>complete binary tree?</em> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 16,7,3,12,50,38,90 \\)<br>&nbsp;`,
+        `\\( 16,38,3,12,50,90,7 \\)<br>&nbsp;`,
+        `\\( 7,16,3,90,12,50,38 \\)<br>&nbsp;`,
+        `\\( 16,3,12,50,90,7,38 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds4/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>In a level order traversal of a tree, nodes are traversed level-wise from the root and left to right in a level. For example, the level order traversal of the binary tree shown below is  \\( \\mathrm{X}, \\mathrm{Y}, \\mathrm{Z}, \\mathrm{E}, \\mathrm{C}, \\mathrm{D}, \\mathrm{A}, \\mathrm{B} \\) . </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-ds4/q5_img1.png" style="max-width: 75%;"></p> <p><br>Which one of the following combinations uniquely defines a binary tree?</p> <p></p>`,
+      image: "",
+      options: [
+        `Level-order and pre-order traversals<br>&nbsp;`,
+        `Level-order and in-order traversals<br>&nbsp;`,
+        `Level-order and post-order traversals<br>&nbsp;`,
+        `Pre-order and post-order traversals`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-ds4/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>We consider log to the base of  \\( 2. \\) Thus for  \\( \\log \\mathrm{N} \\) to be a natural number,  \\( \\mathrm{N} \\) must be a power of  \\( 2. \\) Let  \\( \\mathrm{N} \\) be an arbitrary number with  \\( \\mathrm{N}&gt;1 \\). Which one of the following statements is true? (Assume root is at height zero) </p> <p></p>`,
+      image: "",
+      options: [
+        `A binary tree of height  \\( \\log \\mathrm{N} \\) can have exactly  \\( \\mathrm{N} \\) nodes.<br>&nbsp;`,
+        `A binary tree of height  \\( \\log \\mathrm{N} \\) can have exactly  \\( \\log \\mathrm{N} \\) nodes.<br>&nbsp;`,
+        `A binary tree of height  \\( \\log \\mathrm{N} \\) can have exactly  \\( \\mathrm{N} \\log \\mathrm{N} \\) nodes.<br>&nbsp;`,
+        `A binary tree of height  \\( \\log \\mathrm{N} \\) can have exactly  \\( \\mathrm{N}^{2} \\) nodes.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds4/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following equation, where  \\( \\mathrm{N} \\) is the number of nodes in a particular binary search tree, and  \\( d\\left(x_{i}\\right) \\) is the depth of node  \\( x_{i} \\) in the tree. What does this equation compute? </p> <p>Let All nodes in the tree are equally likely to be searched for.<br> \$\$  \\left(\\sum_{i=1}^{\\mathrm{N}} d\\left(x_{i}\\right)\\right) / \\mathrm{N}  \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `The average depth of a node in a specific BST with  \\( \\mathrm{N} \\) nodes<br>&nbsp;`,
+        `The average depth of a node in the average BST with  \\( \\mathrm{N} \\) nodes<br>&nbsp;`,
+        `The total depth of all nodes in a specific BST with  \\( \\mathrm{N} \\) nodes<br>&nbsp;`,
+        `The average total depth of all nodes in all BSTs with  \\( \\mathrm{N} \\) nodes`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds4/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose we have a complete binary tree,  \\( \\mathrm{X} \\), that is not a heap, and we wish to heapify it. The obvious thing to do is just insert all nodes of  \\( \\mathrm{X} \\) into a new binary heap  \\( \\mathrm{Y} \\). This works, but it doubles the space requirement. Suppose we'd prefer to heapify in place. Which of the following procedures will convert  \\( \\mathrm{X} \\) into a heap (containing all of the original values)? </p> <p></p>`,
+      image: "",
+      options: [
+        `Sink (heapify down) all nodes in level order (first the root, then its left child, then the right child of the root, etc).<br>&nbsp;`,
+        `Swim (heapify up) all nodes in level order.<br>&nbsp;`,
+        `Swim all nodes in reverse level order.<br>&nbsp;`,
+        `Sink all nodes in reverse level order.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-ds4/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `Suppose  \\( \\mathrm{T} \\) is a completely filled binary search tree with  \\( 7 \\) nodes, the worst-case number of comparisons for a successful find operation in  \\( \\mathrm{T} \\) is  \\( 3 \\)<br>&nbsp;`,
+        `Suppose  \\( \\mathrm{T} \\) is a completely filled binary search tree with  \\( 7 \\) nodes. the best case number of comparisons for a successful find operation in  \\( \\mathrm{T} \\) is  \\( 1 \\)<br>&nbsp;`,
+        `Suppose  \\( \\mathrm{T} \\) is a binary search tree with \\( 7 \\) nodes, only one of which is a leaf. suppose all keys are equally likely, the integer closest to the average case number of comparisons for a successful find operation in  \\( \\mathrm{T} \\) is  \\( 4 \\)<br>&nbsp;`,
+        `Suppose  \\( \\mathrm{T} \\) is a completely filled binary search tree with  \\( 7 \\) nodes. suppose all keys are equally likely. The integer closest to the average case number of comparisons for a successful find operation in  \\( \\mathrm{T} \\) is  \\( 2 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-ds4/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Number of AVL tree(s) containing elements with keys  \\( 2, 4, 6, 8, \\) and  \\( 10. \\) </p>`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<img src="/images/quiz/wqt-ds4/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is is/are true ?</p> <p></p>`,
+      image: "",
+      options: [
+        `The depths of any two leaves in a max heap differ by at most  \\( 1. \\)<br>&nbsp;`,
+        `Inserting into an AVL tree with n nodes requires  \\( \\Theta(\\log n) \\) rotations.<br>&nbsp;`,
+        `The height of any binary search tree with  \\( n \\) nodes is  \\( O(\\log n). \\)<br>&nbsp;`,
+        `We can convert a heap to Binary Search Tree in  \\( \\Theta(n) \\).`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-ds4/11.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Data Structure-5 | Complete Data Structure and third test series",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>We found a new implementation of a priority queue where insert takes constant time and  \\( \\textsf{extractMin} \\) takes  \\( O(\\log n) \\) time. Which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `This can be used to sort in constant time<br>&nbsp;`,
+        `This can be used to sort in linear time<br>&nbsp;`,
+        `This can be used to sort in  \\( O(n \\log n) \\) time<br>&nbsp;`,
+        `For sorting, one needs a hash table,&nbsp;not a priority queue`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds5/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a binary search tree whose labels are each one capital letter, and assume that a level-order traversal yields the sequence  \\( \\text{"GENIUS"}. \\) What is the preorder traversal of this tree? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{GENIUS} \\)<br>&nbsp;`,
+        `\\( \\text{GNEUIS} \\)<br>&nbsp;`,
+        `\\( \\text{GUINES} \\)<br>&nbsp;`,
+        `\\( \\text{GIUSEN} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds5/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider a sorted circular doubly linked list where the head element points to the smallest element in the list.</p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( O(1) \\) is the asymptotic&nbsp; complexity of finding the smallest element in the list<br>&nbsp;`,
+        `\\( O(1) \\) is the asymptotic&nbsp; complexity of finding the largest element in the list<br>&nbsp;`,
+        `\\( O(n) \\) is the asymptotic&nbsp; complexity of determining whether a given element  \\( e \\) appears in the list<br>&nbsp;`,
+        `\\( O(1) \\) is the asymptotic complexity of deleting a given element  \\( e \\) in the list (not including the cost of finding it)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-ds5/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider a program  \\( \\text{P} \\) that does not use recursion.  \\( \\text{P} \\) is a program which tries to reverse a queue using other auxiliary queues. </p> <p>Which of the following is true about  \\( \\text{P}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `P reverses a given queue using a minimum of one auxiliary queue.<br>&nbsp;`,
+        `P reverses a given queue using a minimum of two auxiliary queues.<br>&nbsp;`,
+        `P reverses a given queue using a minimum of three auxiliary queues.<br>&nbsp;`,
+        `P reverses a given queue using a minimum of four auxiliary queues.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds5/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that you implement a queue using a null-terminated singly linked list, maintaining a reference to the item least recently added (the front of the list) but not maintaining a reference to the item most recently added (the end of the list).<br>What are the worst-case running times for enqueue and dequeue, respectively?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( O(1) \\) for both operations<br>&nbsp;`,
+        `\\( O(1) \\) for enqueue and  \\( O(n) \\) for dequeue<br>&nbsp;`,
+        `\\( O(n) \\) for enqueue and  \\( O(1) \\) for dequeue<br>&nbsp;`,
+        `\\( O(n) \\) for both operations`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds5/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider two statements  \\( \\text{S1} \\) and  \\( \\text{S2} \\) below. </p> <ul> <li> \\( \\text{S1}:  \\) If  \\( f_{1}(n)=O\\left(g_{1}(n)\\right) \\) and  \\( f_{2}(n)=O\\left(g_{2}(n)\\right) \\), then  \\( f_{1}(n)+f_{2}(n)=O\\left(\\max \\left\\{g_{1}(n), g_{2}(n)\\right\\}\\right) \\) . </li> <li> \\( \\text{S2}: \\) If  \\( f_{1}(n)=\\Omega\\left(g_{1}(n)\\right) \\) and \\( f_{2}(n)=\\Omega\\left(g_{2}(n)\\right) \\), then \\( f_{1}(n)+f_{2}(n)=\\Omega\\left(\\min \\left\\{g_{1}(n), g_{2}(n)\\right\\}\\right) \\) . </li> </ul> <p>Which of the following is correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{S1} \\) is true but  \\( \\mathrm{S} 2 \\) is false<br>&nbsp;`,
+        `\\( \\text{S}1 \\) is false but  \\( \\text{S}2 \\) is true<br>&nbsp;`,
+        `Both statements are true<br>&nbsp;`,
+        `Both statements are false`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds5/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider two statements,  \\( \\mathrm{S} 1 \\) and  \\( \\mathrm{S} 2 \\), below. </p> <ul> <li> \\( \\mathrm{S} 1: \\) An  \\( \\Theta(n \\log n) \\) algorithm ALWAYS runs faster than an  \\( \\Theta\\left(n^{2}\\right) \\) algorithm. </li> <li> \\( \\mathrm{S} 2: \\) An  \\( \\Theta(n \\log n) \\) algorithm ALWAYS runs slower than an  \\( \\Theta\\left(n^{2}\\right) \\) algorithm. </li> </ul> <p>Which of the following is correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{S} 1 \\) is true, but  \\( \\mathrm{S} 2 \\) is false<br>&nbsp;`,
+        `\\( \\mathrm{S} 1 \\) is false, but  \\( \\mathrm{S} 2 \\) is true<br>&nbsp;`,
+        `Both statements are true<br>&nbsp;`,
+        `Both Statements are false`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-ds5/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( f(n)=\\Omega(n), g(n)=O(n) \\) and  \\( h(n)=\\Theta(n) \\). Then  \\( [f(n) . g(n)]+h(n) \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Omega(\\mathrm{n}) \\)<br>&nbsp;`,
+        `\\( O(n) \\)<br>&nbsp;`,
+        `\\( \\theta(n) \\)<br>&nbsp;`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-ds5/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider  \\( 2 \\) problems: </p> <ol> <li>Problem  \\( 1: \\) Given a queue  \\( \\text{Q} \\) containing  \\( n \\) elements, transfer these items on to a stack  \\( \\text{S} \\) (initially empty) so that the front element of  \\( \\text{Q} \\) appears at the top of the stack and the order of all other items is preserved. Using enqueue and dequeue operations for the queue, and push and pop operations for the stack. </li> <li>Problem  \\( 2: \\) Generate the permutations possible when using only a single stack and push and pop are the only operations allowed. </li> </ol> <ul> <li> \\( \\text{S1}: \\) An efficient algorithm to solve problem  \\( 1 \\) will take  \\( O(n) \\) time and a constant amount of additional storage. </li> <li> \\( \\text{S2}: \\) The no of stack permutations on a stack with  \\( n \\) elements is equal to the number of balanced parentheses with  \\( 2n \\) total parentheses. </li> </ul> <p>Which of the following is correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Only  \\( \\text{S1} \\) is correct`,
+        `Only  \\( \\text{S2} \\) is correct`,
+        `Both  \\( \\text{S1} \\) and  \\( \\text{S2} \\) are correct`,
+        `None of them is correct`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-ds5/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>An  \\( \\text{SQueue} \\) is a queue implemented using two stacks.  \\( \\text{SQueue} \\) supports two operations enqueue() and dequeue().<br>Consider a below pseudo code that implements enqueue() and dequeue() for  \\( \\text{SQueue} \\) using two stacks inbox and outbox.<br>&nbsp; </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Stack</span><span class="pln"> inbox</span><span class="pun">,</span><span class="pln"> outbox</span><span class="pun">;</span><span class="pln"> </span></li><li class="L1"><span class="kwd">void</span><span class="pln"> enqueue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> item</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    inbox</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="pln">item</span><span class="pun">);</span></li><li class="L3"><span class="pun">}</span></li><li class="L4"><span class="kwd">void</span><span class="pln"> dequeue</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">outbox</span><span class="pun">.</span><span class="pln">isEmpty</span><span class="pun">())</span></li><li class="L6"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">inbox</span><span class="pun">.</span><span class="pln">isEmpty</span><span class="pun">())</span></li><li class="L7"><span class="pln">    outbox</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="kwd">in</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">());</span></li><li class="L8"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> outbox</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">();</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p><br>Consider the state of  \\( \\text{SQueue} \\) which is initialized with  \\( 100 \\) items i.e.  \\( 100 \\) enqueue operations have been performed in \\( \\text{SQueue} \\). </p> <p>Which of the following(s) is/are true if we want to dequeue all elements from  \\( \\text{SQueue}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `First dequeue() will result in a total of  \\( 200 \\) calls to push and pop operations.<br>&nbsp;`,
+        `Apart from the first dequeue(), each of the remaining calls to dequeue will take a total of  \\( 100 \\) calls to push and pop operations.<br>&nbsp;`,
+        `Total calls to push and pop were required to dequeue all  \\( 100 \\) elements is  \\( 300. \\)<br>&nbsp;`,
+        `Total calls to push and pop were required to dequeue all  \\( 100 \\) elements is  \\( 301. \\)`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-ds5/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Algorithm-1 | Sorting Algorithms",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>For Quick-Sort, let  \\( \\operatorname{comps}(n) \\) be the number of comparisons required to sort  \\( n \\) elements, where each partition step performs \\( n-1 \\) comparisons.<br><br>Consider the following recurrences:<br><br>1.  \\( \\operatorname{comps}(n)=2 \\cdot \\operatorname{comps}(n / 2)+(n-1) \\) <br><br>2.  \\( \\operatorname{comps}(n)=\\operatorname{comps}(n-1)+(n-1) \\)<br><br>Which of the following statements are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `Recurrence ( \\( 1 \\)) leads to  \\( O(n \\log n) \\) comparisons, and this happens when the pivot always splits the array into two equal halves.<br>&nbsp;`,
+        `Recurrence ( \\( 2 \\)) leads to  \\( O\\left(n^{2}\\right) \\) comparisons, and this happens when the pivot is always the smallest or largest element.<br>&nbsp;`,
+        `Recurrence ( \\( 1 \\)) arises when the array is already sorted.<br>&nbsp;`,
+        `Recurrence ( \\( 2 \\)) arises when the pivot is always the median of the current array.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-algo1/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the array  \\( \\mathrm{0, 4, 2, 7, 6, 1, 3, 5} \\) being sorted using Insertion Sort.<br><br>What will be the array after inserting the element 3 into its correct position? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 01234675 \\)<br>&nbsp;`,
+        `\\( 01243675 \\)<br>&nbsp;`,
+        `\\( 01246735 \\)<br>&nbsp;`,
+        `\\( 01234567 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-algo1/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Merge Sort is applied on the array  \\( \\mathrm{0 , 4 , 2 , 7 , 6 , 1 , 3 , 5} \\) .<br><br>During its execution, several intermediate arrays are produced.<br><br>Which of the following arrays cannot appear as an intermediate step in any correct execution of Merge Sort? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 02471635 \\)<br>&nbsp;`,
+        `\\( 01243567 \\)<br>&nbsp;`,
+        `\\( 04271356 \\)<br>&nbsp;`,
+        `\\( 01234567 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-algo1/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which sorting algorithm most likely produced the shown execution trace?<br><br>Initial array:  \\( 0,4,2,7,6,1,3,5 \\)<br><br>During execution:  \\( 0,2,4,7,6,1,3,5 \\)<br><br>Final sorted result: \\( 0,1,2,3,4,5,6,7 \\)<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `In-place Heapsort<br>&nbsp;`,
+        `Selection Sort<br>&nbsp;`,
+        `Insertion Sort<br>&nbsp;`,
+        `Merge Sort`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-algo1/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the number of element swaps performed by selection sort and bubble sort in the worst case for a list of size  \\( N \\).<br><br>Which of the following statements are correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `Selection sort always performs exactly (  \\( N-1 \\) ) element swaps.<br>&nbsp;`,
+        `The number of element swaps in selection sort depends on the initial arrangement of elements.<br>&nbsp;`,
+        `Bubble sort, in the worst case, performs  \\( \\frac{(N-2)(N-1)}{2} \\) element swaps.<br>&nbsp;`,
+        `Bubble sort performs the same number of element swaps for both sorted and reverse-sorted arrays.`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-algo1/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following array:<br> \$\$  12,18,27,35,46,58,72,85  \$\$ <br>Which algorithm out of the following options uses the least number of comparisons (among the array elements) to sort the above array in ascending order? </p> <p></p>`,
+      image: "",
+      options: [
+        `Selection sort<br>&nbsp;`,
+        `Mergesort<br>&nbsp;`,
+        `Insertion sort<br>&nbsp;`,
+        `Quicksort using the last element as pivot`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-algo1/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>You are given an array  \\( A \\) of  \\( n \\) distinct integers in sorted order. The task is to determine whether there exists an index  \\( i \\) such that  \\( A[i]=i \\).<br><br>Which of the following statements are correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `A naive algorithm that checks every index runs in  \\( O(n) \\) time.<br>&nbsp;`,
+        `If all integers are non-negative (  \\( A[i] \\geq 0 \\) ), the problem can be solved in \\( O(1) \\) time.<br>&nbsp;`,
+        `If all integers are positive, then no valid index can exist.<br>&nbsp;`,
+        `The problem always requires  \\( O(n) \\) time, regardless of the input conditions.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-algo1/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p> <meta content="width=device-width,initial-scale=1"> </p> <p>Consider the following diagrams showing intermediate steps while sorting a collection of sticks by height:</p> <div style="display:flex; align-items:center; gap:10px;"><img class="diagram" alt="image 1" src="/images/quiz/wqt-algo1/q8_img1.png" style="max-width: 75%;"> <span class="arrow">→</span> <img class="diagram" alt="image 2" src="/images/quiz/wqt-algo1/q8_img2.png" style="max-width: 75%;"> <span class="arrow">→</span> <img class="diagram" alt="image 3" src="/images/quiz/wqt-algo1/q8_img3.png" style="max-width: 75%;"></div> <p>Which sorting algorithm might produce such intermediate steps?</p> <p></p>`,
+      image: "",
+      options: [
+        `Selection Sort<br>&nbsp;`,
+        `Quicksort<br>&nbsp;`,
+        `Insertion Sort<br>&nbsp;`,
+        `Merge Sort`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-algo1/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Professor Fiorina uses the following algorithm for merging  \\( k \\) sorted lists, each having  \\( \\frac{n}{k} \\) elements: </p> <ul> <li>She merges the first two lists using a linear-time merge procedure.<br>&nbsp;</li> <li>Then she merges the resulting list with the third list, then with the fourth, and so on, until all lists are merged into a single sorted list of  \\( n \\) elements. </li> </ul> <p>What is the worst-case running time of this algorithm in terms of  \\( n \\) and  \\( k \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\Theta(n \\log k) \\)<br>&nbsp;`,
+        `\\( \\Theta(n+k) \\)<br>&nbsp;`,
+        `\\( \\Theta(n k) \\)<br>&nbsp;`,
+        `\\( \\Theta\\left(\\frac{n}{k}\\right) \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-algo1/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p> <meta content="width=device-width,initial-scale=1"> </p> <p>Consider the following diagrams showing intermediate steps while sorting a collection of sticks by height:</p> <div style="display:flex; align-items:center; gap:10px;"><img class="diagram" alt="image 1" src="/images/quiz/wqt-algo1/q10_img4.png" style="max-width: 75%;"> <span class="arrow">→</span> <img class="diagram" alt="image 2" src="/images/quiz/wqt-algo1/q10_img5.png" style="max-width: 75%;"> <span class="arrow">→</span> <img class="diagram" alt="image 3" src="/images/quiz/wqt-algo1/q10_img6.png" style="max-width: 75%;"></div> <p>Which sorting algorithm might produce such intermediate steps?</p> <p></p>`,
+      image: "",
+      options: [
+        `Selection Sort<br>&nbsp;`,
+        `Quicksort<br>&nbsp;`,
+        `Insertion Sort<br>&nbsp;`,
+        `Merge Sort`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-algo1/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p> <meta> </p> <p>Consider the following algorithm:</p> <pre data-pbcklang="c_cpp" data-pbcktabsize="4" class="prettyprint linenums lang-c_cpp prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="typ">Process</span><span class="pun">(</span><span class="pln">A</span><span class="pun">):</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">done</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span></li><li class="L3"><span class="pln">    </span><span class="kwd">while</span><span class="pln"> </span><span class="kwd">done</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">:</span></li><li class="L4"><span class="pln">        </span><span class="kwd">done</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span></li><li class="L5"><span class="pln">        </span><span class="kwd">for</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> to n</span><span class="pun">-</span><span class="lit">3</span><span class="pun">:</span></li><li class="L6"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">i</span><span class="pun">+</span><span class="lit">2</span><span class="pun">]:</span></li><li class="L7"><span class="pln">                reverse elements </span><span class="kwd">from</span><span class="pln"> i to i</span><span class="pun">+</span><span class="lit">2</span></li><li class="L8"><span class="pln">                </span><span class="kwd">done</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span></li></ol></pre> <p>Which of the following is correct?</p> <div class="options"> </div> <p></p>`,
+      image: "",
+      options: [
+        `The algorithm always sorts the array correctly for all possible inputs<br>&nbsp;`,
+        `The algorithm may fail to sort the array for some inputs<br>&nbsp;`,
+        `The algorithm never terminates for certain inputs<br>&nbsp;`,
+        `The algorithm works correctly only if the array size is even`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-algo1/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p> <meta> </p> <p>Assume a variant of <b>Quicksort</b> in which, at every recursive step, the input array of size  \\( n \\) is deterministically partitioned into two subproblems: </p> <p style="text-align:center; font-size: 18px;"> \$\$  \\boxed{\\;\\;\\;\\underbrace{\\phantom{xxxxxxxx}}_{\\alpha n}\\;\\;\\;\\;\\;\\underbrace{\\phantom{xxxxxxxxxxxxxxxx}}_{(1-\\alpha)n}\\;\\;\\;}  \$\$ </p> <p>where  \\( 0 &lt; \\alpha \\leq \\tfrac{1}{2} \\). </p> <p>What is the asymptotic expression for the <b>maximum depth</b> of the recursion tree in terms of  \\( n \\) and  \\( \\alpha \\)? </p> <div class="options"> </div> <p></p>`,
+      image: "",
+      options: [
+        `\\( -\\dfrac{\\lg n}{\\lg (1-\\alpha)} \\) <br>&nbsp;`,
+        `&nbsp; \\( \\dfrac{\\lg n}{\\lg (1-\\alpha)} \\)<br>&nbsp;`,
+        `\\( -\\dfrac{\\lg n}{\\lg \\alpha} \\)<br>&nbsp;`,
+        `\\( \\dfrac{\\lg n}{\\lg \\alpha} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-algo1/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Imagine  \\( \\mathbf{n} \\) people standing in a straight line, each holding a card with a number on it.<br>They follow the following method to sort the cards: </p> <ul> <li>In the first round, every even-positioned person (2nd, 4th, 6th, ...) compares with their right neighbor and keeps the smaller number on the left, larger on the right.<br>&nbsp;</li> <li>In the next round, every odd-positioned person (1st, 3rd, 5th, ...) does the same.<br>&nbsp;</li> <li>Rounds alternate until the line is fully sorted.</li> </ul> <p>In the worst case, how many rounds are required?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( n \\log n \\)<br>&nbsp;`,
+        `\\( n^{2} \\)<br>&nbsp;`,
+        `\\( n \\)<br>&nbsp;`,
+        `\\( n^{1.5} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-algo1/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Randomized QuickSort (where the pivot is chosen uniformly at random from the current subarray) is applied on an array of  \\( 10 \\) distinct numbers. Suppose we focus on the elements  \\( 25 \\) and  \\( 70 \\), which in the sorted order look like this:<br><br> \$\$ 10,18,22,25,31,40,53,66,70,85 \$\$ <br>What is the probability that  \\( 25 \\) and  \\( 70 \\) are directly compared at some stage of QuickSort? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 10 \\)<br>&nbsp;`,
+        `\\( 2 / 7 \\)<br>&nbsp;`,
+        `\\( 1 / 3 \\)<br>&nbsp;`,
+        `\\( 1 / 5 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-algo1/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the problem of sorting an array of size  \\( n \\) using only the following two operations:<br><br> \\( \\operatorname{compare}(\\mathbf{x}, \\mathbf{y}) \\) : compares two elements  \\( x \\) and  \\( y \\).<br><br>flip(i): reverses the order of the first  \\( i \\) elements of the array.<br><br>For example, if the array is  \\( [1,4,6,5,3,10,1] \\), then applying flip(4) results in  \\( [5,6,4,1,3,10,1] \\).<br><br>The Pancake Sort algorithm works as follows:<br><br>In each iteration, </p> <ul> <li>find the maximum element in the current prefix of size  \\( k \\),<br>&nbsp; </li> <li>flip the prefix to bring this maximum element to the front (if needed),<br>&nbsp;</li> <li>flip the first  \\( k \\) elements to move the maximum into its correct final position at index  \\( k \\). </li> </ul> <p>This process is repeated for  \\( k=n, n-1, \\ldots, 2 \\).<br><br>Which of the following statements is/are correct about Pancake Sort? </p> <p></p>`,
+      image: "",
+      options: [
+        `After the  \\( i \\)-th iteration, the last  \\( i \\) elements of the array are in their correct sorted positions.<br>&nbsp;`,
+        `In each iteration, the algorithm always requires exactly 1 flip in the worst case.<br>&nbsp;`,
+        `In the worst case, the total number of flips performed by the algorithm is at most  \\( 2 n \\).<br>&nbsp;`,
+        `The number of comparisons required by the algorithm is  \\( O\\left(n^{2}\\right) \\).`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-algo1/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
