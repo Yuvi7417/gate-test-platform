@@ -5566,3 +5566,306 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-10|calculus",
+  date: "Sep 10, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose that \\( f \\) is continuous on \\( [a, b] \\) and differentiable on \\( (a, b) \\). If \\( f^{\\prime}(x)&gt;0 \\) on ( \\( a, b \\) ). Which of the following is necessarily true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) is decreasing on \\( [a, b] \\),`,
+        `\\( f \\) has no local extrema on \\( (a, b) \\),`,
+        `\\( f \\) is a constant function on \\( (a, b) \\),`,
+        `\\( f \\) is concave up on \\( (a, b) \\),`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em10/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following are true about the function \\( f \\) if its derivative is \\( f^{\\prime}(x)=(x-1)^{2}(4-x) \\) ? </p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>I only</li> <li>II only</li> <li>III only</li> <li>II and III only</li> </ol> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) is decreasing for all \\( x&lt;4 \\).`,
+        `\\( f \\) has a local maximum at \\( x=1 \\).`,
+        `\\( f \\) is concave up for all \\( 1.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em10/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-em10/q3_img1.png" style="max-width: 75%;"><br><br>The graph of the derivative of a function \\( f \\) is shown above. Which of the following are true about the original function \\( f \\) ? </p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>I only</li> <li>II only</li> <li>III only</li> <li>II and III only</li> </ol> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\quad f \\) is increasing on the interval \\( (-2,1) \\).`,
+        `\\( \\quad f \\) is continuous at \\( x=0 \\).`,
+        `\\( \\quad f \\) has an inflection point at \\( x=-2 \\).`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Given that the function \\( f \\) is continuous at the point ( \\( c, f(c) \\) ), determine which of the following statements could be false. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\lim _{x \\rightarrow c} f(x) \\) exists.`,
+        `\\( \\lim _{x \\rightarrow c} f(x)=f(c) \\).`,
+        `\\( \\lim _{x \\rightarrow c^{-}} f(x)=\\lim _{x \\rightarrow c^{+}} f(x) \\) .`,
+        `\\( \\lim _{x \\rightarrow c} f(x)=c \\).`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If \\( f(x)=2+|x-3| \\) for all \\( x \\), then the value of the derivative \\( f^{\\prime}(x) \\) at \\( x=3 \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -1 \\)`,
+        `\\( 0 \\)`,
+        `\\( 1 \\)`,
+        `nonexistent`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( f:[a, b] \\rightarrow \\mathbb{R} \\) be a differentiable function, and define \\( g(x)=(f(x))^{2} \\).<br>Apply the Mean Value Theorem (MVT) to the function \\( g \\) on the interval \\( [a, b] \\).<br>Then which of the following is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `There exists \\( c \\in(a, b) \\) such that<br> \$\$ \\frac{f(b)^{2}-f(a)^{2}}{b-a}=f^{\\prime}(c)^{2} \$\$`,
+        `There exists \\( c \\in(a, b) \\) such that<br> \$\$ \\frac{f(b)^{2}-f(a)^{2}}{b-a}=2 f(c) f^{\\prime}(c) \$\$`,
+        `There exists \\( c \\in(a, b) \\) such that<br> \$\$ \\frac{f(b)^{2}-f(a)^{2}}{b-a}=f(c)^{2} \$\$`,
+        `There exists \\( c \\in(a, b) \\) such that<br> \$\$ \\frac{f(b)^{2}-f(a)^{2}}{b-a}=f^{\\prime}(c)[f(a)+f(b)] \$\$`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em10/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \\( \\lim _{n \\rightarrow \\infty} \\frac{2^{n+1}+3^{n+1}}{2^{n}+3^{n}} \\) equals </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 3 \\)<br>&nbsp;`,
+        `\\( 2 \\)<br>&nbsp;`,
+        `\\( 1 \\)<br>&nbsp;`,
+        `\\( 0 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em10/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let<br> \$\$ f(x)=(x-1)(x-2)(x-3)(x-4)(x-5) \$\$ <br>The number of distinct real roots of the equation \\( \\frac{d}{d x} f(x)=0 \\) is exactly </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+        `\\( 5 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em10/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The positive integers \\( m \\) and \\( n \\) are relatively prime, and chosen in such a way that<br> \$\$ \\lim _{x \\rightarrow 2} \\frac{5 \\sqrt{1+4 x}-3 \\sqrt{1+12 x}}{x-2}=-\\frac{m}{n} . \$\$ <br>What is \\( n-4 m \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -1 \\)`,
+        `\\( 2 \\)`,
+        `\\( -3 \\)`,
+        `\\( 4 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em10/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \$\$ f(x)= \\begin{cases}2 x-2 &amp; \\text { for } x&lt;3 \\\\ 2 x-4 &amp; \\text { for } x \\geq 3\\end{cases} \$\$ <br>Let \\( f \\) be the piecewise-linear function defined above. Which of the following statements are true? </p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>None</li> <li>II only</li> <li>I and II only</li> <li>I, II, and III</li> </ol> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\lim _{h \\rightarrow 0^{-}} \\frac{f(3+h)-f(3)}{h}=2 \\)<br>&nbsp;`,
+        `\\( \\lim _{h \\rightarrow 0^{+}} \\frac{f(3+h)-f(3)}{h}=2 \\)<br>&nbsp;`,
+        `\\( f^{\\prime}(3)=2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em10/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following statements is always true for a function \\( f(x) \\) ? </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( f(x) \\) and \\( g(x) \\) are continuous at \\( x=a \\), then \\( \\frac{f(x)}{g(x)} \\) is continuous at \\( x=a \\).`,
+        `If \\( f(x)+g(x) \\) is continuous at \\( x=a \\) and \\( f^{\\prime}(a)=0 \\), then \\( g(x) \\) is continuous ta \\( x=a \\).`,
+        `If \\( f(x)+g(x) \\) is differentiable at \\( x=a \\), then \\( f(x) \\) and \\( g(x) \\) are both differentiable at \\( x=a \\)<br><br>A. only i.<br>B. only ii.<br>C. only iii.<br>D. i. and ii.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em10/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-em10/q12_img2.png" style="max-width: 75%;"><br>The graph of the first derivative \\( f^{\\prime} \\) for a function \\( f \\) is shown above. Which of the following statements must be true? </p> <p>&nbsp;&nbsp;</p> <p>&nbsp;</p> <ol style="list-style-type:upper-alpha"> <li>I only</li> <li>II only</li> <li>II and III only</li> <li>I and III only</li> </ol> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f(4)=f(-1) \\)`,
+        `\\( f(2)&gt;f(4) \\)`,
+        `\\( f^{\\prime \\prime}(2)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em10/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If \\( f \\) is continuous at \\( x=2 \\), and if \\( f \\) is defined as<br> \$\$ f(x)= \\begin{cases}\\frac{\\ln x^{2}-x \\ln x}{x-2} &amp; x \\neq 2 \\\\ k &amp; x=2,\\end{cases} \$\$ <br>then \\( k \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -1 \\)`,
+        `\\( -2 \\)`,
+        `\\( -\\frac{e}{4} \\)`,
+        `\\( -\\ln 2 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If \\( f^{\\prime}(x) \\) and \\( g^{\\prime}(x) \\) exist and \\( f^{\\prime}(x)&gt;g^{\\prime}(x) \\) for all real \\( x \\), then the graph of \\( y=f(x) \\) and the graph of \\( y=g(x) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `intersect exactly once.`,
+        `intersect no more than once.`,
+        `do not intersect.`,
+        `could intersect more than once.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em10/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p> \\( \\lim _{n \\rightarrow \\infty} \\frac{1-2+3-4+5-6+\\ldots+(-2 n)}{\\sqrt{n^{2}+1}+\\sqrt{n^{2}-1}} \\) equals </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\infty \\)`,
+        `\\( 1 / 2 \\)`,
+        `\\( 0 \\)`,
+        `\\( -1 / 2 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let \\( f(x, y)=\\frac{a x^{2}+b y^{2}}{x y} \\), where \\( a \\) and \\( b \\) are constants. If \\( \\frac{\\partial f}{\\partial x}=\\frac{\\partial f}{\\partial y} \\) at \\( x=1 \\) and \\( y=2 \\), then the relation between \\( a \\) and \\( b \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( a=\\frac{b}{4} \\)<br>&nbsp;`,
+        `\\( a=\\frac{b}{2} \\)<br>&nbsp;`,
+        `\\( a=2 b \\)<br>&nbsp;`,
+        `\\( a=4 b \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let<br> \$\$ f(x, y)=15-x^{2}+2 y^{2}+6 x-8 y . \$\$<br>Which of the following statements is correct about the critical point(s) of \\( f(x, y) \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `The function has a critical point at \\( (3,2) \\), which is a local maximum.`,
+        `The function has a critical point at \\( (3,2) \\), which is a local minimum.`,
+        `The function has no critical points.`,
+        `The function has a critical point at \\( (3,2) \\), which is a saddle point.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-em10/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the function \\( f(x)=\\sqrt{3-x} \\). Which of the following is the definition of \\( f^{\\prime}(-1) \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f^{\\prime}(-1)=\\lim _{x \\rightarrow-1} \\frac{\\sqrt{3-x}-2}{x+1} \\) <br>&nbsp;`,
+        `\\( f^{\\prime}(-1)=\\lim _{x \\rightarrow \\infty} \\frac{\\sqrt{3-x}-2}{x+1} \\) <br>&nbsp;`,
+        `\\( f^{\\prime}(-1)=\\lim _{h \\rightarrow 0} \\frac{\\sqrt{3-x-h}-\\sqrt{3-x}}{h} \\) <br>&nbsp;`,
+        `\\( f^{\\prime}(-1)=\\lim _{h \\rightarrow 0} \\frac{h}{\\sqrt{3-x-h}-\\sqrt{3-x}} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em10/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The function \\( f \\) is defined on the closed interval \\( [2,4] \\) and \\( f(2)=f(3)=f(4) \\). On the open interval \\( (2,4), f \\) is continuous and strictly decreasing. Which of the following statements is true </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) attains neither a minimum value nor a maximum value on the closed interval \\( [2,4] \\).`,
+        `\\( f \\) attains a minimum value but does not attain a maximum value on the closed interval \\( [2,4] \\).`,
+        `\\( f \\) attains a maximum value but does not attain a minimum value on the closed interval \\( [2,4] \\).`,
+        `\\( f \\) attains both a minimum value and a maximum value on the closed interval \\( [2,4] \\).`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em10/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <table border="1" cellpadding="1" style="width: 500px; margin: auto; border-spacing: 1px;"> <tbody> <tr> <td> \\( x \\) </td> <td> \\( 0 \\) </td> <td> \\( 1 \\) </td> <td> \\( 2 \\) </td> </tr> <tr> <td> \\( f(x) \\) </td> <td> \\( 1 \\) </td> <td> \\( k \\) </td> <td> \\( 2 \\) </td> </tr> </tbody> </table> <p><br>The function \\( f \\) is continuous on the closed interval \\( [0,2] \\) and has values that are given in the table above. The equation \\( f(x)=\\frac{1}{2} \\) must have at least two solutions in the interval \\( [0,2] \\) if \\( k= \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)<br>&nbsp;`,
+        `\\( \\frac{1}{2} \\)<br>&nbsp;`,
+        `\\( 1 \\)<br>&nbsp;`,
+        `\\( 2 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em10/20.png" style="max-width: 75%;">`
+    },
+  ]
+});
