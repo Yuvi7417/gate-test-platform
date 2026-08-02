@@ -2,8 +2,16 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const path = require('path');
 
-const html = fs.readFileSync('test.html', 'utf8');
-const $ = cheerio.load(html);
+let htmlRaw = fs.readFileSync('test.html', 'utf8');
+htmlRaw = htmlRaw.replace(/<script type="math\/tex".*?>(.*?)<\/script>/gs, (match, p1) => {
+  let safeP1 = p1.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `\\( ${safeP1} \\)`;
+});
+htmlRaw = htmlRaw.replace(/<script type="math\/tex; mode=display".*?>(.*?)<\/script>/gs, (match, p1) => {
+  let safeP1 = p1.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `\$\$ ${safeP1} \$\$`;
+});
+const $ = cheerio.load(htmlRaw);
 
 const questions = [];
 let imageIndex = 1;
@@ -40,7 +48,7 @@ async function parse() {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
         // We assume images are already downloaded to images/quiz/wqt-em4/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-em10/${filename}`);
+        $(img).attr('src', `/images/quiz/wqt-em11/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '75%');
       }
@@ -111,7 +119,7 @@ async function parse() {
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Engineering Mathematics-10|calculus",\n  date: "Sep 10, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - Engineering Mathematics-11|calculus",\n  date: "Sep 17, 2026",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -146,7 +154,7 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-em10/${qNum}.png" style="max-width: 75%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/wqt-em11/${qNum}.png" style="max-width: 75%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }
