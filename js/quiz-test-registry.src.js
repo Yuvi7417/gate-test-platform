@@ -5182,7 +5182,7 @@ registerTest({
       image: "",
       options: [],
       answer: "21",
-      solution: `<img src="/images/quiz/wqt-em9/1.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/1.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5197,7 +5197,7 @@ registerTest({
         `\\( e \\)`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-em9/2.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/2.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5212,17 +5212,17 @@ registerTest({
         `\\( -\\dfrac{1}{3} e^{-3 x}(x+1)+C \\) <p>&nbsp;</p>`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-em9/3.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/3.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<p></p> <p>Below is a portion of the graph of an even function \\( f(x) \\), which has domain \\( (-\\infty, \\infty) \\) even though the graph below only shows the function on the interval \\( [0,5] \\). Note that \\( f(x) \\) has a vertical asymptote at \\( x=1 \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q4_img1.png" style="max-width: 100%;"></p> <p><br>Find<br> \$\$ \\lim _{h \\rightarrow 0} \\frac{f(1.5+h)-f(1.5)}{h} \$\$ </p> <p></p>`,
+      text: `<p></p> <p>Below is a portion of the graph of an even function \\( f(x) \\), which has domain \\( (-\\infty, \\infty) \\) even though the graph below only shows the function on the interval \\( [0,5] \\). Note that \\( f(x) \\) has a vertical asymptote at \\( x=1 \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q4_img1.png" style="max-width: 75%;"></p> <p><br>Find<br> \$\$ \\lim _{h \\rightarrow 0} \\frac{f(1.5+h)-f(1.5)}{h} \$\$ </p> <p></p>`,
       image: "",
       options: [],
       answer: "4",
-      solution: `<img src="/images/quiz/wqt-em9/4.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/4.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5237,7 +5237,7 @@ registerTest({
         `\\( x=1 \\)`,
       ],
       answer: ["D"],
-      solution: `<img src="/images/quiz/wqt-em9/5.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/5.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5247,7 +5247,7 @@ registerTest({
       image: "",
       options: [],
       answer: "0",
-      solution: `<img src="/images/quiz/wqt-em9/6.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/6.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5262,7 +5262,7 @@ registerTest({
         `\\( -2 \\)`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-em9/7.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/7.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5277,7 +5277,7 @@ registerTest({
         `\\( x=a / b \\) is a critical point where the function shows local maxima`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-em9/8.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/8.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5287,7 +5287,7 @@ registerTest({
       image: "",
       options: [],
       answer: "12",
-      solution: `<img src="/images/quiz/wqt-em9/9.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/9.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5302,7 +5302,7 @@ registerTest({
         `If \\( f^{\\prime}(c)=0 \\) then \\( f(x) \\) has a local maximum or a local minimum at \\( x=c \\).`,
       ],
       answer: ["C"],
-      solution: `<img src="/images/quiz/wqt-em9/10.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/10.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5317,7 +5317,7 @@ registerTest({
         `\\( f \\) has a local minimum at \\( x=0 \\) by the second derivative test`,
       ],
       answer: ["B"],
-      solution: `<img src="/images/quiz/wqt-em9/11.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/11.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5332,7 +5332,7 @@ registerTest({
         `\\( e^{\\sqrt{x}} \\)`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-em9/12.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/12.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5347,7 +5347,7 @@ registerTest({
         `\\( 1-e \\)`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-em9/13.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/13.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5357,7 +5357,7 @@ registerTest({
       image: "",
       options: [],
       answer: "120",
-      solution: `<img src="/images/quiz/wqt-em9/14.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/14.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -5372,7 +5372,7 @@ registerTest({
         `\\( A=-1, B=0 \\)`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-em9/15.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/15.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5387,7 +5387,7 @@ registerTest({
         `There is no such \\( b \\) for that above limit exist`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-em9/16.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/16.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5397,7 +5397,7 @@ registerTest({
       image: "",
       options: [],
       answer: "1",
-      solution: `<img src="/images/quiz/wqt-em9/17.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/17.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5412,7 +5412,7 @@ registerTest({
         `\\( f(x) \\) is also not differentiable&nbsp;at \\( x=0 \\).`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-em9/18.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/18.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5422,7 +5422,7 @@ registerTest({
       image: "",
       options: [],
       answer: "8",
-      solution: `<img src="/images/quiz/wqt-em9/19.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/19.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5437,7 +5437,7 @@ registerTest({
         `\\( f(5) \\geq f(3)-10 \\)`,
       ],
       answer: ["A", "B", "C", "D"],
-      solution: `<img src="/images/quiz/wqt-em9/20.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/20.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5447,7 +5447,7 @@ registerTest({
       image: "",
       options: [],
       answer: "-5",
-      solution: `<img src="/images/quiz/wqt-em9/21.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/21.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5462,13 +5462,13 @@ registerTest({
         `If \\( f \\) is differentiable, then \\( \\dfrac{d}{d x} \\sqrt{f(x)}=\\dfrac{f^{\\prime}(x)}{2 \\sqrt{f(x)}} \\) .`,
       ],
       answer: ["A", "B", "C"],
-      solution: `<img src="/images/quiz/wqt-em9/22.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/22.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Shown below are portions of the graphs of \\( y=f(x), y=f^{\\prime}(x) \\), and \\( y=f^{\\prime \\prime}(x) \\).<br>Determine which graph is which. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q23_img2.png" style="max-width: 100%;"></p> <p></p>`,
+      text: `<p></p> <p>Shown below are portions of the graphs of \\( y=f(x), y=f^{\\prime}(x) \\), and \\( y=f^{\\prime \\prime}(x) \\).<br>Determine which graph is which. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q23_img2.png" style="max-width: 75%;"></p> <p></p>`,
       image: "",
       options: [
         `\\( A-f(x), B-f^{\\prime}(x), C-f^{\\prime \\prime}(x) \\)`,
@@ -5477,7 +5477,7 @@ registerTest({
         `\\( A-f^{\\prime}(x), B-f^{\\prime \\prime}(x), C-f(x) \\)`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-em9/23.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/23.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5492,7 +5492,7 @@ registerTest({
         `\\( x=-1 \\) has global minima`,
       ],
       answer: ["D"],
-      solution: `<img src="/images/quiz/wqt-em9/24.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/24.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5507,13 +5507,13 @@ registerTest({
         `\\( (6,7) \\)`,
       ],
       answer: ["B"],
-      solution: `<img src="/images/quiz/wqt-em9/25.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/25.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "MSQ",
-      text: `<p></p> <p>Let \\( q(x) \\) be a continuous function which is defined for all real numbers. A portion of the graph of \\( q^{\\prime}(x), \\)&nbsp;the derivative of \\( \\boldsymbol{q}(\\boldsymbol{x}), \\)&nbsp;is shown below. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q26_img3.png" style="max-width: 100%;"></p> <p>On which of the following interval(s) is \\( q^{\\prime \\prime}(x) \\) positive? </p> <p></p>`,
+      text: `<p></p> <p>Let \\( q(x) \\) be a continuous function which is defined for all real numbers. A portion of the graph of \\( q^{\\prime}(x), \\)&nbsp;the derivative of \\( \\boldsymbol{q}(\\boldsymbol{x}), \\)&nbsp;is shown below. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q26_img3.png" style="max-width: 75%;"></p> <p>On which of the following interval(s) is \\( q^{\\prime \\prime}(x) \\) positive? </p> <p></p>`,
       image: "",
       options: [
         `\\( (0,2) \\)`,
@@ -5522,17 +5522,17 @@ registerTest({
         `\\( (5,7) \\)`,
       ],
       answer: ["A", "B", "D"],
-      solution: `<img src="/images/quiz/wqt-em9/26.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/26.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<p></p> <p>We consider a function \\( f(x) \\) defined for all real numbers. We suppose that the first and second derivatives \\( f^{\\prime}(x) \\) and \\( f^{\\prime \\prime}(x) \\) are also defined for all real numbers. Below we show the graph of the second derivative of \\( f \\). You may assume that \\( f^{\\prime \\prime}(x) \\) is decreasing outside of the region shown. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q27_img4.png" style="max-width: 100%;"></p> <p>Suppose that \\( f^{\\prime}(0)=5 \\). How many critical points does \\( f \\) have? </p> <p></p>`,
+      text: `<p></p> <p>We consider a function \\( f(x) \\) defined for all real numbers. We suppose that the first and second derivatives \\( f^{\\prime}(x) \\) and \\( f^{\\prime \\prime}(x) \\) are also defined for all real numbers. Below we show the graph of the second derivative of \\( f \\). You may assume that \\( f^{\\prime \\prime}(x) \\) is decreasing outside of the region shown. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q27_img4.png" style="max-width: 75%;"></p> <p>Suppose that \\( f^{\\prime}(0)=5 \\). How many critical points does \\( f \\) have? </p> <p></p>`,
       image: "",
       options: [],
       answer: "2",
-      solution: `<img src="/images/quiz/wqt-em9/27.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/27.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5542,7 +5542,7 @@ registerTest({
       image: "",
       options: [],
       answer: "-5",
-      solution: `<img src="/images/quiz/wqt-em9/28.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/28.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5552,7 +5552,7 @@ registerTest({
       image: "",
       options: [],
       answer: "1",
-      solution: `<img src="/images/quiz/wqt-em9/29.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/29.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -5562,7 +5562,7 @@ registerTest({
       image: "",
       options: [],
       answer: "4",
-      solution: `<img src="/images/quiz/wqt-em9/30.png" style="max-width: 100%;">`
+      solution: `<img src="/images/quiz/wqt-em9/30.png" style="max-width: 75%;">`
     },
   ]
 });
