@@ -4,12 +4,12 @@ const path = require('path');
 
 let htmlRaw = fs.readFileSync('test.html', 'utf8');
 htmlRaw = htmlRaw.replace(/<script type="math\/tex".*?>(.*?)<\/script>/gs, (match, p1) => {
-  let safeP1 = p1.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return `\\( ${safeP1} \\)`;
+  let safeP1 = p1.replace(/\\/g, '\\\\').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `\\\\( ${safeP1} \\\\)`;
 });
 htmlRaw = htmlRaw.replace(/<script type="math\/tex; mode=display".*?>(.*?)<\/script>/gs, (match, p1) => {
-  let safeP1 = p1.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return `\$\$ ${safeP1} \$\$`;
+  let safeP1 = p1.replace(/\\/g, '\\\\').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `\\$\\$ ${safeP1} \\$\\$`;
 });
 const $ = cheerio.load(htmlRaw);
 
