@@ -87,12 +87,11 @@
         </svg>
         Learn
       </div>
-      <div class="nav-item">
+      <div class="nav-item" data-nav="contact" onclick="showView('contact')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
         </svg>
-        Library
+        Contact
       </div>
 
     </div>
@@ -218,6 +217,29 @@
 
         <div class="section-heading" style="margin-top:8px;">Active Test Series</div>
         <div id="learnGrid" style="display:flex; flex-direction:column; gap:16px;"></div>
+      </section>
+
+      <!-- ===================== CONTACT VIEW ===================== -->
+      <section class="view" id="view-contact">
+        <div class="crumb"><a href="#" onclick="showView('home');return false;">Home</a><span class="sep">/</span><span
+            class="current">Contact Us</span></div>
+        <div class="page-title">Contact Us</div>
+        
+        <div style="text-align: center; margin-top: 50px; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 500px; margin-left: auto; margin-right: auto;">
+          <h2 style="margin-bottom: 10px; color: #14619C;">Join Our Telegram Group</h2>
+          <p style="color: #64748b; margin-bottom: 30px;">Scan the QR code or click the button below to join our official GATE 2027 test series channel.</p>
+          
+          <img src="images/telegram_qr.png" alt="Telegram QR Code" style="max-width: 250px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 30px;">
+          
+          <div>
+            <a href="https://t.me/testseriesgate2027" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background-color: #0088cc; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; transition: background 0.3s;">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              Join @testseriesgate2027
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- ===================== TEST LIST VIEW ===================== -->
