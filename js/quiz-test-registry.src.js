@@ -5168,3 +5168,401 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Engineering Mathematics-9|Limits, contintuity, Maxima-minima, integral calculus",
+  date: "Sep 03, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( f \\) be a continuous function defined for all real numbers. Suppose \$\$ \\int_0^3 f(x) d x=2, \\quad \\int_1^2 f(x) d x=7, \\quad \\int_3^6 f(x) d x=-5, \\quad \\text { and } \\quad \\int_9^{18} f(x) d x=-3 \$\$ Find \\( \\displaystyle{}\\int_3^6 f\\left(\\frac{1}{3} t\\right) d t \\) </p>`,
+      image: "",
+      options: [],
+      answer: "21",
+      solution: `<img src="/images/quiz/wqt-em9/1.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following represents the value of \\( \\displaystyle{}\\int_1^e \\frac{\\ln (x)}{x} d x ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 2 \\)`,
+        `\\( 1 / 2 \\)`,
+        `\\( e \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em9/2.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Find \\( \\displaystyle\\int x e^{-3 x} d x \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{1}{2} e^{-3 x}(x-3)+C \\) <p>&nbsp;</p>`,
+        `\\( -\\dfrac{1}{9} e^{-3 x}(3 x+1)+C \\) <p>&nbsp;</p>`,
+        `\\( -\\dfrac{1}{6} x^2 e^{-3 x}+C \\) <p>&nbsp;</p>`,
+        `\\( -\\dfrac{1}{3} e^{-3 x}(x+1)+C \\) <p>&nbsp;</p>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em9/3.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Below is a portion of the graph of an even function \\( f(x) \\), which has domain \\( (-\\infty, \\infty) \\) even though the graph below only shows the function on the interval \\( [0,5] \\). Note that \\( f(x) \\) has a vertical asymptote at \\( x=1 \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q4_img1.png" style="max-width: 100%;"></p> <p><br>Find<br> \$\$ \\lim _{h \\rightarrow 0} \\frac{f(1.5+h)-f(1.5)}{h} \$\$ </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img src="/images/quiz/wqt-em9/4.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Some information about the derivative \\( p^{\\prime}(x) \\) and the second derivative \\( p^{\\prime \\prime}(x) \\) of a function \\( p(x) \\) is provided in the table below.<br> \$\$ \\begin{array}{|r|r|r|r|r|r|r|r|} \\hline x &amp; -4 &amp; -3 &amp; -2 &amp; -1 &amp; 0 &amp; 1 &amp; 2 \\\\ \\hline p^{\\prime}(x) &amp; 1 &amp; 0 &amp; -2 &amp; 0 &amp; -1 &amp; 0 &amp; 2 \\\\ \\hline p^{\\prime \\prime}(x) &amp; -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 1 \\\\ \\hline \\end{array} \$\$ <br>At which of the following values of \\( x \\) must \\( p(x) \\) have a local minimum? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x=-3 \\)`,
+        `\\( x=-2 \\)`,
+        `\\( x=-1 \\)`,
+        `\\( x=1 \\)`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-em9/5.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the piecewise function \$\$ q(x)=\\left\\{\\begin{array}{cc} 7 e^{x-C}+\\dfrac{x}{3 x-2} &amp; \\quad x&lt;0 \\\\ \\\\ \\dfrac{6+5 x}{2+3 x+4^x} &amp; \\quad x \\geq 0 \\end{array}\\right. \$\$ where \\( C \\) is a constant. Find \\( \\displaystyle\\lim _{x \\rightarrow \\infty} q(x) \\) </p>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img src="/images/quiz/wqt-em9/6.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The function \\( g(x) \\) is given by the equation<br> \$\$ g(x)= \\begin{cases}a x^2 &amp; x \\leq 1 \\\\ b-\\ln (3 x) &amp; x&gt;1\\end{cases} \$\$ <br>where \\( a \\) and \\( b \\) are constants.<br>Find the value of \\( a \\) such that function is differentiable at \\( x=1 \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / 2 \\)`,
+        `\\( -1 / 2 \\)`,
+        `\\( 2 \\)`,
+        `\\( -2 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em9/7.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the family of functions<br> \$\$ g(x)=a \\ln (x)+\\frac{b}{x} \$\$ <br>defined for \\( x&gt;0, \\)&nbsp;where \\( a \\) and \\( b \\) are positive constants. </p> <p>Any function \\( g(x) \\) in this family has only one critical point. In terms of \\( a \\) and \\( b, \\)&nbsp;what is the \\( x \\)-coordinate of that critical point? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x=b / a \\) is a critical point where the function shows local minima`,
+        `\\( x=b / a \\) is a critical point where the function shows local maxima`,
+        `\\( x=a / b \\) is a critical point where the function shows local minima`,
+        `\\( x=a / b \\) is a critical point where the function shows local maxima`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em9/8.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The following are tables of values for two differentiable functions \\( f(x) \\) and \\( g(x) \\) and their derivatives. Missing values are denoted by a \\( \\text{“?"}. \\) Assume that each of these functions is defined for all real numbers, that \\( f^{\\prime}(x) \\) and \\( g^{\\prime}(x) \\) are continuous. \$\$ \\begin{array}{|c|c|c|c|c|c|} \\hline x &amp; 0 &amp; 2 &amp; 3 &amp; 6 &amp; 9 \\\\ \\hline f(x) &amp; -1 &amp; ? &amp; 0 &amp; -2 &amp; ? \\\\ \\hline f^{\\prime}(x) &amp; 1 &amp; 4 &amp; -1 &amp; ? &amp; 1 \\\\ \\hline \\end{array} \\qquad \\qquad \\begin{array}{|c|c|c|c|c|c|} \\hline x &amp; -1 &amp; 1 &amp; 3 &amp; 7 &amp; 11 \\\\ \\hline g(x) &amp; -4 &amp; 1 &amp; 2 &amp; 6 &amp; 7 \\\\ \\hline g^{\\prime}(x) &amp; 7 &amp; ? &amp; 3 &amp; 4 &amp; ? \\\\ \\hline \\end{array} \$\$ Let \\( z(x)=f(g(x)) \\). Find \\( z^{\\prime}(3) \\) </p>`,
+      image: "",
+      options: [],
+      answer: "12",
+      solution: `<img src="/images/quiz/wqt-em9/9.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If \\( \\displaystyle{}\\lim _{x \\rightarrow 5} f(x)=0 \\) and \\( \\displaystyle{}\\lim _{x \\rightarrow 5} g(x)=0 \\), then \\( \\displaystyle{}\\lim _{x \\rightarrow 5} \\frac{f(x)}{g(x)} \\) does not exist.`,
+        `If \\( f, g, \\) are any two functions which are continuous for all \\( x \\), then \\( \\dfrac{f}{g} \\) is continuous for all \\( x \\).`,
+        `It is possible that functions \\( f \\) and \\( g \\) are not continuous at a point \\( x_0, \\)&nbsp;but \\( f+g \\) is continuous at \\( x_0 \\).`,
+        `If \\( f^{\\prime}(c)=0 \\) then \\( f(x) \\) has a local maximum or a local minimum at \\( x=c \\).`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-em9/10.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose \\( f \\) is a function such that \\( f^{\\prime}(x)=4 x^3 \\) and \\( f^{\\prime \\prime}(x)=12 x^2 \\). </p> <p>Which of the following is /are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) has a local maximum at \\( x=0 \\) by the first derivative test`,
+        `\\( f \\) has a local minimum at \\( x=0 \\) by the first derivative test`,
+        `\\( f \\) has a local maximum at \\( x=0 \\) by the second derivative test`,
+        `\\( f \\) has a local minimum at \\( x=0 \\) by the second derivative test`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-em9/11.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The derivative of \\( g(x)=e^{\\sqrt{x}} \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\sqrt{x} e^{\\sqrt{x}-1} \\) <p>&nbsp;</p>`,
+        `\\( 2 e^{\\sqrt{x}} x^{-0.5} \\) <p>&nbsp;</p>`,
+        `\\( \\dfrac{0.5 e^{\\sqrt{x}}}{\\sqrt{x}} \\) <p>&nbsp;</p>`,
+        `\\( e^{\\sqrt{x}} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-em9/12.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The function<br> \$\$ f(x)= \\begin{cases}e^x &amp; \\text { if } \\quad x \\leq 1 \\\\ m x+b &amp; \\text { if } \\quad x&gt;1\\end{cases} \$\$ <br>is continuous and differentiable at \\( x=1 \\). </p> <p>Find the value of \\( m-b? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( e \\)`,
+        `\\( -e \\)`,
+        `\\( \\mathrm{e}-1 \\)`,
+        `\\( 1-e \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em9/13.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Given \\( F(x)=(f(g(x)))^2, g(1)=2, g^{\\prime}(1)=3, f(2)=4, \\) and \\( f^{\\prime}(2)=5, \\) find \\( F^{\\prime}(1) \\) </p>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img src="/images/quiz/wqt-em9/14.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Find the values of \\( A \\) and \\( B \\) that make<br> \$\$ f(x)=\\left\\{\\begin{array}{lll} x^2+1 &amp; \\text { if } &amp; x \\geq 0 \\\\ A \\sin x+B \\cos x &amp; \\text { if } &amp; x&lt;0 \\end{array}\\right. \$\$ <br>differentiable at \\( x=0 \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A=0, B=1 \\)`,
+        `\\( A=1, B=0 \\)`,
+        `\\( A=0, B=-1 \\)`,
+        `\\( A=-1, B=0 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em9/15.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Is there a number \\( b \\) such that \\( \\displaystyle\\lim _{x \\rightarrow-2} \\frac{b x^2+15 x+15+b}{x^2+x-2} \\) exists? If so, find the value of the limit. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( -1 \\)`,
+        `\\( -2 \\)`,
+        `\\( 1 \\)`,
+        `There is no such \\( b \\) for that above limit exist`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-em9/16.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p> \\( \\displaystyle\\lim _{x \\rightarrow \\infty}(x+\\sin x)^{\\dfrac{1}{x}} \\) </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-em9/17.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If \\( g \\) is continuous (but not differentiable) at \\( x=0, g(0)=8 \\), and \\( f(x)=x g(x), \\)&nbsp;find \\( f^{\\prime}(0) \\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)`,
+        `\\( 8 \\)`,
+        `\\( 1 \\)`,
+        `\\( f(x) \\) is also not differentiable&nbsp;at \\( x=0 \\).`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em9/18.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose that \\( f(x) \\) and \\( g(x) \\) are differentiable functions and that \\( h(x)=f(x) g(x) \\). You are given the following table of values: \$\$ \\begin{array}{|c|c|} \\hline h(1) &amp; 24 \\\\ \\hline g(1) &amp; 6 \\\\ \\hline f^{\\prime}(1) &amp; -2 \\\\ \\hline h^{\\prime}(1) &amp; 20 \\\\ \\hline \\end{array} \$\$ Using the table, find \\( g^{\\prime}(1) \\). </p>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img src="/images/quiz/wqt-em9/19.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose \\( f(x) \\) is continuous and diffrentiable for all \\( x \\). And \\( -1 \\leq f^{\\prime}(x) \\leq 3 \\) fo all \\( x \\). Which of the following is/are ALWAYS true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f(5) \\leq f(3)+6 \\)`,
+        `\\( f(5) \\geq f(3)-2 \\)`,
+        `\\( f(5) \\leq f(3)+10 \\)`,
+        `\\( f(5) \\geq f(3)-10 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-em9/20.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Define \$\$ g(x)= \\begin{cases}-6 x+2 &amp; x \\leq 2 \\\\ x-2 &amp; x&gt;2\\end{cases} \$\$ Find \\( \\displaystyle\\int_1^4 g(x) d x \\). </p>`,
+      image: "",
+      options: [],
+      answer: "-5",
+      solution: `<img src="/images/quiz/wqt-em9/21.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\displaystyle\\int_{-5}^5\\left(a x^2+b x+c\\right) d x=2 \\int_0^5\\left(a x^2+c\\right) d x \\) <p>&nbsp;</p>`,
+        `If \\( f \\) and \\( g \\) are continuous and \\( f(x) \\geqslant g(x) \\) for \\( a \\leqslant x \\leqslant b \\), then<br> \$\$ \\int_a^b f(x) d x \\geqslant \\int_a^b g(x) d x \$\$`,
+        `If \\( f \\) and \\( g \\) are differentiable, then<br> \$\$ \\frac{d}{d x}[f(g(x))]=f^{\\prime}(g(x)) g^{\\prime}(x) \$\$`,
+        `If \\( f \\) is differentiable, then \\( \\dfrac{d}{d x} \\sqrt{f(x)}=\\dfrac{f^{\\prime}(x)}{2 \\sqrt{f(x)}} \\) .`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-em9/22.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Shown below are portions of the graphs of \\( y=f(x), y=f^{\\prime}(x) \\), and \\( y=f^{\\prime \\prime}(x) \\).<br>Determine which graph is which. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q23_img2.png" style="max-width: 100%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A-f(x), B-f^{\\prime}(x), C-f^{\\prime \\prime}(x) \\)`,
+        `\\( A-f^{\\prime}(x), B-f(x), C-f^{\\prime \\prime}(x) \\)`,
+        `\\( A-f^{\\prime \\prime}(x), B-f(x), C-f^{\\prime}(x) \\)`,
+        `\\( A-f^{\\prime}(x), B-f^{\\prime \\prime}(x), C-f(x) \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-em9/23.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The function \\( f(x) \\) is defined as follows:<br> \$\$ f(x)=\\left\\{\\begin{array}{cc} \\dfrac{x}{x^2+1} &amp; x \\leq 0 \\\\ ? &amp; x&gt;0 \\end{array}\\right. \$\$ <br>Note that the formula for \\( f(x) \\) for \\( x&gt;0 \\) is unknown. </p> <p>However, it is known that \\( f(x) \\) is differentiable at each point in its domain \\( (-\\infty, \\infty) \\), and that \\( f^{\\prime}(x)&gt;0 \\) for all \\( x \\geq 0 \\). </p> <p>Which of the following option is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x=0 \\) has global minima`,
+        `\\( x=0 \\) has global maxima`,
+        `\\( x=-1 \\) has global maxima`,
+        `\\( x=-1 \\) has global minima`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-em9/24.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose \\( h(x) \\) is a function such that \\( h(x) \\) has exactly three critical point. Two of which are shown in the table below.<br>Assume that both \\( h(x) \\) and \\( h^{\\prime}(x) \\) are differentiable on \\( (-\\infty, \\infty) \\)<br> \$\$ \\begin{array}{|c|c|c|c|c|} \\hline x &amp; 0 &amp; 3 &amp; 5 &amp; 7 \\\\ \\hline h(x) &amp; 2 &amp; ? &amp; 4 &amp; 4 \\\\ \\hline h^{\\prime}(x) &amp; -1 &amp; 0 &amp; 0 &amp; ? \\\\ \\hline \\end{array} \$\$ <br>Further using Lagrange mean value theorem in the interval \\( [5,7], \\)&nbsp;we can determine the interval of the third critical point.<br>On which of the following intervals must \\( h(x) \\) be increasing on the entire interval? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (0,3) \\)`,
+        `\\( (3,5) \\)`,
+        `\\( (5,6) \\)`,
+        `\\( (6,7) \\)`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-em9/25.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let \\( q(x) \\) be a continuous function which is defined for all real numbers. A portion of the graph of \\( q^{\\prime}(x), \\)&nbsp;the derivative of \\( \\boldsymbol{q}(\\boldsymbol{x}), \\)&nbsp;is shown below. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q26_img3.png" style="max-width: 100%;"></p> <p>On which of the following interval(s) is \\( q^{\\prime \\prime}(x) \\) positive? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (0,2) \\)`,
+        `\\( (2,4) \\)`,
+        `\\( (7,9) \\)`,
+        `\\( (5,7) \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-em9/26.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>We consider a function \\( f(x) \\) defined for all real numbers. We suppose that the first and second derivatives \\( f^{\\prime}(x) \\) and \\( f^{\\prime \\prime}(x) \\) are also defined for all real numbers. Below we show the graph of the second derivative of \\( f \\). You may assume that \\( f^{\\prime \\prime}(x) \\) is decreasing outside of the region shown. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-em9/q27_img4.png" style="max-width: 100%;"></p> <p>Suppose that \\( f^{\\prime}(0)=5 \\). How many critical points does \\( f \\) have? </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img src="/images/quiz/wqt-em9/27.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Consider a continuous function \\( f(x), \\)&nbsp;and suppose that \\( f(x) \\) and its first derivative \\( f^{\\prime}(x) \\) are differentiable everywhere. Suppose we know the following information about \\( f(x) \\) and its first and second derivatives. </p> <ul> <li>On the interval \\( (-\\infty,-2) \\), we have \\( f(x)=2^{-x} \\). </li> <li> \\( \\displaystyle\\lim _{x \\rightarrow \\infty} f(x)=6 \\) </li> <li> \\( f(2)=-5, f(3)=7, \\)&nbsp;and \\( f(4)=8 \\) </li> <li> \\( f^{\\prime}(x) \\) is equal to 0 at \\( x=-1,2,4, \\)&nbsp;and not at any other \\( x \\)-values. </li> <li> \\( f^{\\prime \\prime}(x)&lt;0 \\) on the intervals \\( -1 and \\( 3, and not on any other interval. </li> </ul> <p>Find the global minimum of \\( f(x) \\) on \\( (-\\infty, \\infty)? \\)&nbsp; (minimum value of \\( f(x) \\)) </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "-5",
+      solution: `<img src="/images/quiz/wqt-em9/28.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If \\( f(x)=(1+x)\\left(1+x^2\\right)\\left(1+x^3\\right)\\left(1+x^4\\right), \\) then \\( f^{\\prime}(0)=? \\) </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-em9/29.png" style="max-width: 100%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let \\( M = \\displaystyle\\lim _{x \\rightarrow 0^{+}}\\left(e^x+3 x\\right)^{1 / x} \\) . Find the value of \\( log_eM. \\) </p>`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img src="/images/quiz/wqt-em9/30.png" style="max-width: 100%;">`
+    },
+  ]
+});
