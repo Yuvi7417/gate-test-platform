@@ -4995,7 +4995,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Let \\( X \\) be a random variable with \\( \\mathrm{PDF} \\)<br> \$\$ f(x)= \\begin{cases}C\\left(1-x^2\\right) &amp; -1 <br>What is \\( C ? \\) </p> <p></p>`,
+      text: `<p></p> <p>Let \\( X \\) be a random variable with \\( \\mathrm{PDF} \\)<br> \$\$ f(x)= \\begin{cases}C\\left(1-x^2\\right) &amp; -1 < x < 1 \\\\ 0 &amp; \\text{otherwise} \\end{cases} \$\$ <br>What is \\( C ? \\) </p> <p></p>`,
       image: "",
       options: [
         `\\( 1 / 2 \\)`,
