@@ -2481,7 +2481,7 @@ registerTest({
         `When \\( s=1 \\) then \\( y_{1}=x_{1}, y_{2}=x_{2} \\)`,
         `When \\( s=1 \\) then \\( y_{1}=x_{2}, y_{2}=x_{1} \\)`,
       ],
-      answer: ["A","D"],
+      answer: ["A", "D"],
       solution: `<img src="/images/quiz/wqt-dl12/1.png" style="max-width: 75%;">`
     },
     {
@@ -2571,7 +2571,7 @@ registerTest({
         `Number of minimum sum of product expressions is \\( 2 . \\)`,
         `Number of minimum product of sum expressions is \\( 2 . \\)`,
       ],
-      answer: ["A","C"],
+      answer: ["A", "C"],
       solution: `<img src="/images/quiz/wqt-dl12/7.png" style="max-width: 75%;">`
     },
     {
@@ -2601,7 +2601,7 @@ registerTest({
         `\\( b'd' \\)`,
         `\\( a'c'd \\)`,
       ],
-      answer: ["B","C","D"],
+      answer: ["B", "C", "D"],
       solution: `<img src="/images/quiz/wqt-dl12/9.png" style="max-width: 75%;">`
     },
     {
@@ -2631,7 +2631,7 @@ registerTest({
         `\\( \\prod&nbsp;\\text{M}(1,3,5,6) \\)`,
         `\\( \\prod&nbsp;\\text{M}(1,2,5,7) \\)`,
       ],
-      answer: ["B","C"],
+      answer: ["B", "C"],
       solution: `<img src="/images/quiz/wqt-dl12/11.png" style="max-width: 75%;">`
     },
     {
@@ -7600,7 +7600,7 @@ registerTest({
 
 registerTest({
   series: "weekly-cs-gate-2027",
-  name: "WQT - Data Structure-4 | Complete Data Structure & second test series",
+  name: "WQT - Data Structure-4 | Complete Data Structure ",
   date: "Oct 01, 2026",
   questions: [
     {
@@ -7768,7 +7768,7 @@ registerTest({
 
 registerTest({
   series: "weekly-cs-gate-2027",
-  name: "WQT - Data Structure-5 | Complete Data Structure and third test series",
+  name: "WQT - Data Structure-5 | Complete Data Structure",
   date: "Oct 01, 2026",
   questions: [
     {
