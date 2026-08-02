@@ -60,7 +60,32 @@ function restoreSession() {
   enrolledIds = Array.isArray(data.enrolledIds) ? data.enrolledIds : [];
   loginUser(data.user, true);
   fetchUserResults();
+  fetchFreshUserData();
   syncLearnNav();
+}
+
+async function fetchFreshUserData() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) return;
+  try {
+    const res = await fetch('/api/user', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    const data = await res.json();
+    if (data.success && data.user) {
+      enrolledIds = data.user.enrolledCourses || [];
+      currentUser = { name: data.user.name, email: data.user.email, _id: data.user._id };
+      saveSession();
+      syncLearnNav();
+      
+      const learnTarget = document.getElementById("view-learn");
+      if (learnTarget && learnTarget.classList.contains("active")) {
+          renderLearn();
+      }
+    }
+  } catch(err) {
+    console.error("Error fetching fresh user data:", err);
+  }
 }
 
 /* ---------- session state ---------- */

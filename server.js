@@ -376,6 +376,18 @@ app.get('/api/user-results', authenticateToken, async (req, res) => {
   }
 });
 
+// 5.1 Get User Profile Endpoint
+app.get('/api/user', authenticateToken, async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id).select('name email enrolledCourses');
+    if (!user) return res.status(404).json({ success: false, message: "User not found" });
+    res.json({ success: true, user });
+  } catch (err) {
+    console.error("Error fetching user:", err);
+    res.status(500).json({ success: false, message: 'Server error fetching user.' });
+  }
+});
+
 // 6. Get Global Test Stats Endpoint
 app.get('/api/test-stats/:testName', async (req, res) => {
   try {
