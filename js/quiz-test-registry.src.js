@@ -6547,3 +6547,582 @@ registerTest({
     },
   ]
 });
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - C-Programming -3|Pointers, storage classes, recursion and second test series",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the given C code?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="com">#include</span><span class="str">&lt;stdlib.h&gt;</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">,</span><span class="pln"> t</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">3</span><span class="pun">,</span><span class="lit">4</span><span class="pun">,</span><span class="lit">5</span><span class="pun">};</span></li><li class="L4"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">,</span><span class="pln"> </span><span class="pun">**</span><span class="pln">pp</span><span class="pun">;</span></li><li class="L5"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> t</span><span class="pun">;</span></li><li class="L6"><span class="pln">    pp </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">p</span><span class="pun">;</span></li><li class="L7"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">);</span></li><li class="L8"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> </span><span class="pun">**</span><span class="pln">pp</span><span class="pun">+</span><span class="lit">1</span><span class="pun">);</span></li><li class="L9"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*(*</span><span class="pln">pp</span><span class="pun">+</span><span class="lit">1</span><span class="pun">));</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1\\; 3\\; 4 \\)`,
+        `\\( 1\\; 3\\; 3 \\)`,
+        `\\( 1 \\;2 \\;3 \\)`,
+        `\\( 1 \\;2 \\;2 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog3/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are valid assignment(s) of the pointer for the given declaration? An assignment is valid if both pointers are of the same type (pointers are compatible) and get successfully compiled with no warning or error.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">};</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">5</span><span class="pun">];</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"> p </span><span class="pun">=</span><span class="pln"> a</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"> p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"> p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">;</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"> p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">**</span><span class="pln">a</span><span class="pun">;</span></li></ol></pre>`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-cprog3/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following declaration of pointer variable  \\( p. \\) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">5</span><span class="pun">];</span></li></ol></pre> <p>If the initial value of  \\( p \\) is  \\( 1000, \\) then what will be the value of  \\( p+1? \\) </p> <p>It is given that the system has  \\( 8 \\) bytes of address size and  \\( 4 \\) bytes of integer size. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1001 \\)`,
+        `\\( 1004 \\)`,
+        `\\( 1020 \\)`,
+        `\\( 1008 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog3/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is NOT&nbsp;a valid C program? A valid program is a program having no compile-time errors.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">1</span></li><li class="L1"><span class="kwd">auto</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">;</span><span class="pln"> </span></li><li class="L2"><span class="pln">main </span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln">  </span><span class="kwd">auto</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">;</span><span class="pln"> </span></li><li class="L5"><span class="pln">  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> b </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln"> b</span><span class="pun">++)</span></li><li class="L6"><span class="pln">  </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">auto</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> b</span><span class="pun">;</span><span class="pln"> </span></li><li class="L8"><span class="pln">  </span><span class="pun">}</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">2</span></li><li class="L1"><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">;</span><span class="pln"> </span></li><li class="L2"><span class="pln">main </span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln">  </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">;</span><span class="pln"> </span></li><li class="L5"><span class="pln">  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> b </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln"> b</span><span class="pun">++)</span></li><li class="L6"><span class="pln">  </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span></li><li class="L8"><span class="pln">  </span><span class="pun">}</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">3</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> a</span><span class="pun">;</span><span class="pln"> </span></li><li class="L2"><span class="pln">main </span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln">  </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">;</span><span class="pln"> </span></li><li class="L5"><span class="pln">  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> b </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln"> b</span><span class="pun">++)</span></li><li class="L6"><span class="pln">  </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span></li><li class="L8"><span class="pln">  </span><span class="pun">}</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">4</span></li><li class="L1"><span class="kwd">extern</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">;</span><span class="pln"> </span></li><li class="L2"><span class="pln">main </span><span class="pun">()</span></li><li class="L3"><span class="pun">{</span></li><li class="L4"><span class="pln">  </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">;</span><span class="pln"> </span></li><li class="L5"><span class="pln">  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> b </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln"> b</span><span class="pun">++)</span></li><li class="L6"><span class="pln">  </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span></li><li class="L8"><span class="pln">  </span><span class="pun">}</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `Program  \\( 1 \\)`,
+        `Program  \\( 2 \\)`,
+        `Program  \\( 3 \\)`,
+        `Program  \\( 4 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog3/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are TRUE about storage classes in C programming</p> <p></p>`,
+      image: "",
+      options: [
+        `static local variables are NOT available to the linker.`,
+        `static global variables are available to the linker.`,
+        `extern local variables are available to the linker.`,
+        `extern global variables are NOT available to the linker.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-cprog3/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The default storage class for functions in C language is –</p> <p></p>`,
+      image: "",
+      options: [
+        `Static`,
+        `Auto`,
+        `Extern`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog3/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The default storage class for global variables in the C language is –</p> <p></p>`,
+      image: "",
+      options: [
+        `Static`,
+        `Auto`,
+        `Extern`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-cprog3/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following declaration of struct.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> myst</span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">20</span><span class="pun">];</span></li><li class="L2"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">b</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> myst </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span><span class="pln">x</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GATE"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Overflow"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"GO"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Classes"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">},</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> x</span><span class="pun">;</span></li></ol></pre> <p>What will be the output of the following print statement?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%s"</span><span class="pun">,</span><span class="pln"> p</span><span class="pun">++-&gt;</span><span class="pln">p</span><span class="pun">-&gt;</span><span class="pln">b</span><span class="pun">++);</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `Overflow`,
+        `Classes`,
+        `verflow`,
+        `lasses`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog3/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following function declaration can be passed to the following array?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> myArray</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][</span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[][]</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog3/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <div style="font-family:'Segoe UI', sans-serif; line-height:1.8; font-size:17px; color:#222;"> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">strcollection</span><span class="pun">[</span><span class="lit">3</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GOClasses"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"GATEOverflow"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"IISc"</span><span class="pun">};</span></li></ol></pre> <p>For the above declaration, consider the base addresses of <code style="background:#f1f1f1; padding:2px 6px; border-radius:4px; font-size:17.5px;">strcollection</code>, <code style="background:#f1f1f1; padding:2px 6px; border-radius:4px; font-size:17.5px;">"GOClasses"</code>, <code style="background:#f1f1f1; padding:2px 6px; border-radius:4px; font-size:17.5px;">"GATEOverflow"</code> and <code style="background:#f1f1f1; padding:2px 6px; border-radius:4px; font-size:17.5px;">"IISc"</code> to be <b>1000</b>, <b>2000</b>, <b>3000</b> and <b>4000</b> respectively. </p> <p>What will be the output of the below line?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%p"</span><span class="pun">,</span><span class="pln"> strcollection </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">);</span></li></ol></pre> <p>Assume character is of one byte, integer is of two bytes, and address is of four bytes.</p> </div> <p></p>`,
+      image: "",
+      options: [],
+      answer: "1004",
+      solution: `<img src="/images/quiz/wqt-cprog3/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> my_text</span><span class="pun">[]=</span><span class="pln"> </span><span class="str">"2023 GATE"</span><span class="pun">;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> position</span><span class="pun">)</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">my_text</span><span class="pun">[</span><span class="pln">position</span><span class="pun">]</span><span class="pln"> </span><span class="pun">!=</span><span class="str">' '</span><span class="pun">)</span></li><li class="L4"><span class="pln">    </span><span class="pun">{</span></li><li class="L5"><span class="pln">        fun</span><span class="pun">(</span><span class="pln">position</span><span class="pun">+</span><span class="lit">1</span><span class="pun">);</span></li><li class="L6"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"%c"</span><span class="pun">,</span><span class="pln"> my_text</span><span class="pun">[</span><span class="pln">position</span><span class="pun">]);</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pun">}</span></li><li class="L9"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L0"><span class="pln">    fun</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <p>What will be the output of a given program ?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2023 \\)`,
+        `\\( 3202 \\)`,
+        `\\( \\text{ETAG} 3202 \\)`,
+        `\\( \\text{ETAG} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog3/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> s</span><span class="pun">[]=</span><span class="pln"> </span><span class="str">"jjtd\0abc"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> s</span><span class="pun">;</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span><span class="pln"> p</span><span class="pun">++)</span><span class="pln"> </span></li><li class="L5"><span class="pln">    </span><span class="pun">{</span></li><li class="L6"><span class="pln">      </span><span class="pun">--(*</span><span class="pln">p</span><span class="pun">);</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%s"</span><span class="pun">,</span><span class="pln"> s</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p>What will be the output of a given program?</p> <p></p>`,
+      image: "",
+      options: [
+        `iitb abc`,
+        `iisc abc`,
+        `iisc`,
+        `iitb`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog3/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following(s) are true for following function</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="kwd">if</span><span class="pun">(</span><span class="pln">a </span><span class="pun">==</span><span class="pln"> </span><span class="lit">256</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">a</span><span class="pun">*</span><span class="lit">4</span><span class="pun">);</span><span class="pln"> </span><span class="com">//line 3</span></li><li class="L3"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{mystery(255)} \\) is an example of infinite recursion`,
+        `if we replace line  \\( 3 \\)&nbsp;by following line&nbsp;return  \\( 1 +\\text{ mystery(a*4)+ mystery(a*4)}; \\) then also output is same`,
+        `Only possible outputs are  \\( 3, 7, 15, 31 \\)`,
+        `\\( \\text{mystery(i)} \\) gives output if and only if  \\( i \\) is  \\( 1 \\) or multiple of  \\( 4 \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-cprog3/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be output of following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> xyz</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(--</span><span class="pln">i</span><span class="pun">)</span></li><li class="L3"><span class="pln">    </span><span class="pun">{</span></li><li class="L4"><span class="pln">        xyz</span><span class="pun">(</span><span class="pln">i</span><span class="pun">++);</span></li><li class="L5"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">i</span><span class="pun">);</span></li><li class="L6"><span class="pln">    </span><span class="pun">}</span></li><li class="L7"><span class="pun">}</span></li><li class="L8"><span class="pln">main</span><span class="pun">()</span></li><li class="L9"><span class="pun">{</span></li><li class="L0"><span class="pln">    xyz</span><span class="pun">(</span><span class="lit">5</span><span class="pun">);</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `It is an infinite recursion since no base case`,
+        `\\( 2345 \\)`,
+        `\\( 54321 \\)`,
+        `\\( 1234 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog3/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>What will be the output printed by  \\( \\text{mystery}1(0,6) \\)? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> mystery1</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">&lt;=</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="kwd">int</span><span class="pln"> m </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">+</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span></li><li class="L3"><span class="pln">        printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> m</span><span class="pun">);</span></li><li class="L4"><span class="pln">        mystery1</span><span class="pun">(</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> m</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L5"><span class="pln">        mystery1</span><span class="pun">(</span><span class="pln">m</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">);</span></li><li class="L6"><span class="pln">    </span><span class="pun">}</span></li><li class="L7"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [],
+      answer: "3102546",
+      solution: `<img src="/images/quiz/wqt-cprog3/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> s</span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span></li><li class="L3"><span class="pun">};</span></li><li class="L4"><span class="kwd">struct</span><span class="pln"> s arr</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">3</span><span class="pun">,</span></li><li class="L5"><span class="pln">    </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">2</span><span class="pun">,</span></li><li class="L6"><span class="pln">    </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">,</span></li><li class="L7"><span class="pln">    </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span></li><li class="L8"><span class="pun">};</span></li><li class="L9"><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">*</span><span class="pln">ap</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">};</span></li><li class="L0"><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">**</span><span class="pln">pp </span><span class="pun">=</span><span class="pln">ap</span><span class="pun">;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> ap</span><span class="pun">[++</span><span class="pln">pp</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]-&gt;</span><span class="pln">i</span><span class="pun">-</span><span class="lit">6</span><span class="pun">]-&gt;</span><span class="pln">i</span><span class="pun">++);</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> pp</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]++-&gt;</span><span class="pln">p</span><span class="pun">++-&gt;</span><span class="pln">i</span><span class="pun">);</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">++</span><span class="pln">arr</span><span class="pun">[</span><span class="lit">2</span><span class="pun">].</span><span class="pln">p</span><span class="pun">-&gt;</span><span class="pln">i</span><span class="pun">);</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 9\\; 10\\; 9 \\)`,
+        `\\( 7 \\;8\\; 10 \\)`,
+        `\\( 7\\; 8\\; 9 \\)`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog3/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Based on the struct alignment discussed in class,</p> <p>What are the sizes of  \\( \\textsf{foo1, foo2, foo3} \\) and  \\( \\textsf{foo4} \\) respectively? </p> <p>Sizes of primitive data types are given below.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pln"> bytes</span></li><li class="L1"><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">short</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> bytes</span></li><li class="L2"><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">char</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="kwd">byte</span></li></ol></pre> <p>&nbsp;</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> foo1 </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d1</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d2</span><span class="pun">;</span></li><li class="L4"><span class="pun">};</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="kwd">struct</span><span class="pln"> foo2 </span><span class="pun">{</span></li><li class="L7"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d1</span><span class="pun">;</span></li><li class="L8"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c1</span><span class="pun">;</span></li><li class="L9"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d2</span><span class="pun">;</span></li><li class="L0"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c2</span><span class="pun">;</span></li><li class="L1"><span class="pln">    </span><span class="kwd">short</span><span class="pln"> s</span><span class="pun">;</span></li><li class="L2"><span class="pun">};</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="kwd">struct</span><span class="pln"> foo3 </span><span class="pun">{</span></li><li class="L5"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d1</span><span class="pun">;</span></li><li class="L6"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d2</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c1</span><span class="pun">;</span></li><li class="L8"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c2</span><span class="pun">;</span></li><li class="L9"><span class="pln">    </span><span class="kwd">short</span><span class="pln"> s</span><span class="pun">;</span></li><li class="L0"><span class="pun">};</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="kwd">struct</span><span class="pln"> foo4 </span><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d1</span><span class="pun">;</span></li><li class="L5"><span class="pln">    </span><span class="kwd">short</span><span class="pln"> s</span><span class="pun">;</span></li><li class="L6"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> d2</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c2</span><span class="pun">;</span></li><li class="L8"><span class="pun">};</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 9,\\; 12,\\; 12,\\; 12 \\)`,
+        `\\( 9,\\; 12,\\;16,\\; 20 \\)`,
+        `\\( 12,\\; 16,\\; 12,\\; 20 \\)`,
+        `\\( 12,\\; 20,\\; 20,\\; 20 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog3/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Mark all options which are likely to create problems with memory, i.e., run time error or has a memory leak.</p> <p>Assume that malloc is successful in all cases.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">1</span><span class="pun">:</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">));</span></li><li class="L2"><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">free</span><span class="pun">(</span><span class="pln">p</span><span class="pun">);</span></li><li class="L4"><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program2</span><span class="pun">:</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">));</span></li><li class="L2"><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">free</span><span class="pun">(</span><span class="pln">p</span><span class="pun">);</span></li><li class="L4"><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="lit">3</span><span class="pun">*</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">));</span></li><li class="L2"><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">p</span><span class="pun">++;</span></li><li class="L4"><span class="pln">free</span><span class="pun">(</span><span class="pln">p</span><span class="pun">);</span></li></ol></pre> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="typ">Program</span><span class="pln"> </span><span class="lit">4</span><span class="pun">:</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> malloc</span><span class="pun">(</span><span class="kwd">sizeof</span><span class="pun">(</span><span class="kwd">char</span><span class="pun">));</span></li><li class="L2"><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `Program  \\( 1 \\)`,
+        `Program  \\( 2 \\)`,
+        `Program  \\( 3 \\)`,
+        `Program  \\( 4 \\)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-cprog3/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following declarations of variables in a system having  \\( 4 \\) bytes for integers. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">5</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p1</span><span class="pun">)[</span><span class="lit">2</span><span class="pun">];</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p2</span><span class="pun">)[</span><span class="lit">2</span><span class="pun">];</span></li><li class="L3"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">t1</span><span class="pun">)[</span><span class="lit">4</span><span class="pun">];</span></li><li class="L4"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">t2</span><span class="pun">)[</span><span class="lit">4</span><span class="pun">];</span></li></ol></pre> <p>Suppose array a has base address of  \\( 1000 \\) and initial values of  \\( p1, p2, t1 \\) and  \\( t2 \\) are  \\( 1000, 1048, 1016 \\) and  \\( 1064 \\) respectively. What will be the value of \\( p2-p1 \\) and  \\( t2-t1 \\) respectively? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6 \\;3 \\)`,
+        `\\( 48\\; 24  \\)`,
+        `\\( 12\\; 6 \\)`,
+        `\\( 24\\; 12 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog3/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> mystry </span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*</span><span class="pln"> str</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">str </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">        </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="pun">}</span></li><li class="L4"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> mystry </span><span class="pun">(</span><span class="pln">str</span><span class="pun">+</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p>What will be the output of mystry("hello")?</p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img src="/images/quiz/wqt-cprog3/20.png" style="max-width: 75%;">`
+    },
+  ]
+});
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - C-Programming-4 | Structures, Pointers, Storage Classes",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following(s) function declarations can be used to pass the following array?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> myArray</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][]);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][</span><span class="lit">4</span><span class="pun">]);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">a</span><span class="pun">)[</span><span class="lit">4</span><span class="pun">]);</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">**</span><span class="pln">a</span><span class="pun">);</span></li></ol></pre>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-cprog4/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be printed by the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span><span class="pln"> </span></li><li class="L1"><span class="kwd">struct</span><span class="pln"> card</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> face </span><span class="pun">;</span></li><li class="L4"><span class="pun">};</span></li><li class="L5"><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> card </span><span class="typ">Card</span><span class="pln"> </span><span class="pun">;</span></li><li class="L6"><span class="typ">Card</span><span class="pln"> c </span><span class="pun">;</span></li><li class="L7"><span class="kwd">void</span><span class="pln"> </span><span class="kwd">pass</span><span class="pun">(</span><span class="typ">Card</span><span class="pln"> c</span><span class="pun">);</span></li><li class="L8"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L9"><span class="pun">{</span></li><li class="L0"><span class="pln">    c</span><span class="pun">.</span><span class="pln">face </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L1"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">.</span><span class="pln">face</span><span class="pun">);</span></li><li class="L2"><span class="pln">    </span><span class="kwd">pass</span><span class="pun">(</span><span class="pln">c</span><span class="pun">);</span></li><li class="L3"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">c</span><span class="pun">.</span><span class="pln">face</span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="kwd">void</span><span class="pln"> </span><span class="kwd">pass</span><span class="pun">(</span><span class="typ">Card</span><span class="pln"> c</span><span class="pun">)</span></li><li class="L7"><span class="pun">{</span></li><li class="L8"><span class="pln">    c</span><span class="pun">.</span><span class="pln">face </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span></li><li class="L9"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d "</span><span class="pun">,</span><span class="pln">c</span><span class="pun">.</span><span class="pln">face</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1\\; 1\\; 1 \\)`,
+        `\\( 1\\; 5\\; 1 \\)`,
+        `\\( 1\\; 5\\; 5 \\)`,
+        `None of these`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog4/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output if we compile and execute the following C&nbsp;code?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span></li><li class="L3"><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">=</span><span class="pln">i</span><span class="pun">;</span></li><li class="L4"><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">==</span><span class="pln">i</span><span class="pun">)</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Equal"</span><span class="pun">);</span></li><li class="L6"><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">&gt;</span><span class="pln">i</span><span class="pun">)</span></li><li class="L7"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Greater than"</span><span class="pun">);</span></li><li class="L8"><span class="kwd">else</span></li><li class="L9"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Less than"</span><span class="pun">);</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `Equal`,
+        `Greater than`,
+        `Less than`,
+        `Compiler error`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-cprog4/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output if you compile and execute the following C&nbsp;code?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">extern</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L4"><span class="pln">    x</span><span class="pun">=</span><span class="lit">2</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> x</span><span class="pun">=</span><span class="lit">23</span><span class="pun">;</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)`,
+        `\\( 2 \\)`,
+        `\\( 23 \\)`,
+        `Compiler error`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cprog4/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider below two files p \\( 1 \\).c and p \\( 2 \\).c<br><strong><img alt="" src="/images/quiz/wqt-cprog4/q5_img1.png" style="max-width: 75%;"></strong> </p> <p>We compile both files independently and link them in case the compilation is successful.<br><br>Which of the following(s) is/are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `p \\( 1 \\).c can not be compiled as there is no main function in the file.`,
+        `Line  \\( 3 \\) in p \\( 1 \\).c will produce a compilation error because of the redefinition of variable  \\( a. \\)`,
+        `Line  \\( 6 \\) in p \\( 2 \\).c will produce a compilation error since the extern does not allocate&nbsp;memory to variables.`,
+        `Line  \\( 7 \\) in p \\( 2 \\).c will produce a compilation error.`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-cprog4/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Assume that an int variable takes  \\( 4 \\) bytes and a char variable takes  \\( 1 \\) byte. What is the output of the code below? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[]={</span><span class="lit">10</span><span class="pun">,</span><span class="lit">20</span><span class="pun">,</span><span class="lit">30</span><span class="pun">,</span><span class="lit">40</span><span class="pun">,</span><span class="lit">50</span><span class="pun">,</span><span class="lit">60</span><span class="pun">};</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr1</span><span class="pun">=</span><span class="pln">arr</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr2</span><span class="pun">=</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">5</span><span class="pun">;</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Number of elements between two pointer are: %d."</span><span class="pun">,</span><span class="pln"> </span></li><li class="L6"><span class="pln">    </span><span class="pun">(</span><span class="pln">ptr2 </span><span class="pun">-</span><span class="pln"> ptr1</span><span class="pun">));</span></li><li class="L7"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"Number of bytes between two pointer are: %d."</span><span class="pun">,</span><span class="pln"> </span></li><li class="L8"><span class="pln">    </span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*)</span><span class="pln">ptr2 </span><span class="pun">-</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*)</span><span class="pln">ptr1</span><span class="pun">);</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `Number of elements between two pointer are:  \\( 5 \\). Number of bytes between two pointers are:  \\( 20 \\)`,
+        `Number of elements between two pointer are:  \\( 20. \\) Number of bytes between two pointers are:  \\( 20 \\)`,
+        `Number of elements between two pointer are:  \\( 5. \\) Number of bytes between two pointers are:  \\( 5 \\)`,
+        `Compile time error`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> y </span><span class="pun">=</span><span class="pln"> </span><span class="pun">-</span><span class="lit">2</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="pun">(</span><span class="pln">x </span><span class="pun">+</span><span class="pln"> y </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"WRONG ANSWER"</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> printf</span><span class="pun">(</span><span class="str">"CORRECT ANSWER"</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `WRONG ANSWER`,
+        `CORRECT ANSWER`,
+        `Prints nothing`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following C program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">6</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pun">(--</span><span class="pln">i</span><span class="pun">;</span><span class="pln"> </span><span class="pun">--</span><span class="pln">i</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">--)</span></li><li class="L5"><span class="pln">    </span><span class="pun">{</span></li><li class="L6"><span class="pln">      printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">i</span><span class="pun">);</span></li><li class="L7"><span class="pln">    </span><span class="pun">}</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 42 \\)`,
+        `\\( 31 \\)`,
+        `Infinite loop`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln">&nbsp; </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">&nbsp; &nbsp; printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span></li><li class="L3"><span class="pln">&nbsp; </span><span class="pun">}</span></li><li class="L4"><span class="pln">&nbsp; </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span></li><li class="L5"><span class="pln">&nbsp; &nbsp; printf</span><span class="pun">(</span><span class="str">"%d, "</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pln">&nbsp; &nbsp; mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">/</span><span class="lit">2</span><span class="pun">);</span></li><li class="L8"><span class="pln">&nbsp; &nbsp; printf</span><span class="pun">(</span><span class="str">", %d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span></li><li class="L9"><span class="pln">&nbsp; </span><span class="pun">}</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p>What will be the output printed by  \\( \\text{mystery(12)}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 12, 6, 3, 1, 3, 6, 12 \\)`,
+        `\\( 12, 6, 3, 1, 3, 6, \\)`,
+        `\\( 12, 6, 3, 1, 3, 6, 12, \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">},{</span><span class="lit">3</span><span class="pun">,</span><span class="lit">4</span><span class="pun">}</span><span class="pln"> </span><span class="pun">};</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">2</span><span class="pun">];</span></li><li class="L4"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">;</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">][</span><span class="lit">0</span><span class="pun">]);</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following C code?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> fun </span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">){</span></li><li class="L2"><span class="pln">    p</span><span class="pun">++[</span><span class="lit">1</span><span class="pun">]=</span><span class="pln"> </span><span class="str">'E'</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="pun">++*</span><span class="pln">p</span><span class="pun">++;</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%c"</span><span class="pun">,*</span><span class="pln">p</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L7"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]=</span><span class="pln"> </span><span class="str">"IISc"</span><span class="pun">;</span></li><li class="L8"><span class="pln">    fun</span><span class="pun">(</span><span class="pln">c</span><span class="pun">);</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `I`,
+        `S`,
+        `E`,
+        `c`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog4/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Consider the following declaration of  \\( a \\). </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">100</span><span class="pun">][</span><span class="lit">200</span><span class="pun">][</span><span class="lit">30</span><span class="pun">];</span></li></ol></pre> <p>What will be the integer value of  \\( a[50][300] - a[10][500]? \\) </p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "234000",
+      solution: `<img src="/images/quiz/wqt-cprog4/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">struct</span><span class="pln"> _myst</span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> b</span><span class="pun">[</span><span class="lit">20</span><span class="pun">];</span></li><li class="L3"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">a</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> _myst </span><span class="pun">*</span><span class="pln">c</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span><span class="pln">x</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">"GATE"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Overflow"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"GO"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Classes"</span><span class="pun">,</span><span class="pln"> x</span><span class="pun">},</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> x</span><span class="pun">;</span></li><li class="L6"><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> _myst myst</span><span class="pun">;</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="pln">myst</span><span class="pun">*</span><span class="pln"> mystry</span><span class="pun">(</span><span class="pln">myst </span><span class="pun">*</span><span class="pln">p</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">){</span></li><li class="L9"><span class="pln">    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">&lt;=</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> p</span><span class="pun">++;</span></li><li class="L0"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">n</span><span class="pun">%</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> mystry</span><span class="pun">(</span><span class="pln">p</span><span class="pun">-&gt;</span><span class="pln">c</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">-</span><span class="lit">2</span><span class="pun">);</span></li><li class="L1"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> mystry</span><span class="pun">(</span><span class="pln">p</span><span class="pun">-&gt;</span><span class="pln">c</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L4"><span class="pun">{</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%s"</span><span class="pun">,</span><span class="pln">mystry</span><span class="pun">(</span><span class="pln">p</span><span class="pun">,</span><span class="lit">2023</span><span class="pun">)-&gt;</span><span class="pln">a</span><span class="pun">);</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `GATE`,
+        `Overflow`,
+        `Run time error`,
+        `Compile-time error`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog4/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">struct</span><span class="pln"> s</span><span class="pun">{</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span></li><li class="L3"><span class="pun">};</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="kwd">struct</span><span class="pln"> s arr</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">3</span><span class="pun">,</span></li><li class="L6"><span class="pln">    </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">2</span><span class="pun">,</span></li><li class="L7"><span class="pln">    </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">,</span></li><li class="L8"><span class="pln">    </span><span class="lit">10</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span></li><li class="L9"><span class="pun">};</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">*</span><span class="pln">ap</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> arr</span><span class="pun">};</span></li><li class="L2"><span class="kwd">struct</span><span class="pln"> s </span><span class="pun">**</span><span class="pln">pp </span><span class="pun">=</span><span class="pln">ap</span><span class="pun">;</span></li><li class="L3"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L4"><span class="pun">{</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> ap</span><span class="pun">[</span><span class="pln">pp</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]-&gt;</span><span class="pln">p</span><span class="pun">-&gt;</span><span class="pln">i</span><span class="pun">%</span><span class="lit">2</span><span class="pun">]-&gt;</span><span class="pln">i</span><span class="pun">++);</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 7 \\)`,
+        `\\( 10 \\)`,
+        `\\( 9 \\)`,
+        `\\( 8 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cprog4/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>What will be the output of the following C program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">=</span><span class="lit">20</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">=</span><span class="lit">30</span><span class="pun">;</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d%d\n"</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">&lt;&lt;</span><span class="lit">2</span><span class="pun">&gt;&gt;</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">&lt;&lt;</span><span class="lit">2</span><span class="pun">&gt;&gt;</span><span class="lit">4</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [],
+      answer: "57",
+      solution: `<img src="/images/quiz/wqt-cprog4/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following declaration of pointer variable p.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">10</span><span class="pun">];</span></li></ol></pre> <p>If the initial value of  \\( p \\) is  \\( 1100, \\) then what will be the value of  \\( \\textsf{p+1}? \\) </p> <p>It is given that, system has  \\( 8 \\) bytes of address size and  \\( 4 \\) bytes of integer size. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1140 \\)`,
+        `\\( 1180 \\)`,
+        `\\( 1104 \\)`,
+        `\\( 1108 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>After executing following lines of C&nbsp;code,  \\( \\mathbf{\\&amp;arr[1][2]} \\)&nbsp;is same as:&nbsp;&nbsp; </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">a</span><span class="pun">)[</span><span class="lit">3</span><span class="pun">];</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">3</span><span class="pun">];</span></li><li class="L2"><span class="pln">a </span><span class="pun">=</span><span class="pln"> arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">[</span><span class="lit">0</span><span class="pun">][</span><span class="lit">2</span><span class="pun">]</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">(*</span><span class="pln">a</span><span class="pun">+</span><span class="lit">2</span><span class="pun">)</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">(</span><span class="kwd">int</span><span class="pln">&nbsp;</span><span class="pun">*)(&amp;</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">1</span><span class="pun">)-</span><span class="lit">1</span></li></ol></pre>`,
+        `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pun">*(</span><span class="pln">a</span><span class="pun">+</span><span class="lit">2</span><span class="pun">)</span></li></ol></pre>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-cprog4/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>What will be the output of the following program?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">3</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">4</span><span class="pun">,</span><span class="lit">5</span><span class="pun">,</span><span class="lit">6</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">7</span><span class="pun">,</span><span class="lit">8</span><span class="pun">,</span><span class="lit">9</span><span class="pun">}};</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">;</span></li><li class="L4"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)(</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">2</span><span class="pun">);</span></li><li class="L5"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*(</span><span class="pln">p</span><span class="pun">-</span><span class="lit">2</span><span class="pun">));</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img src="/images/quiz/wqt-cprog4/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Assume starting addresses of array arrop and twoD are  \\( 1000 \\) and  \\( 2000 \\) respectively. Also, assume that addresses are of  \\( 8 \\) bytes and integers are of  \\( 4 \\) bytes. </p> <p>What will be the value of  \\( \\textsf{*pp[1]} \\) after the last line  \\( \\textsf{(pp++)} \\) of the following program? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="pln">pp</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">arrop</span><span class="pun">[</span><span class="lit">3</span><span class="pun">];</span></li><li class="L4"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> twoD</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">3</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">7</span><span class="pun">,</span><span class="lit">8</span><span class="pun">,</span><span class="lit">9</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">4</span><span class="pun">,</span><span class="lit">5</span><span class="pun">,</span><span class="lit">6</span><span class="pun">}};</span></li><li class="L5"><span class="pln">    pp </span><span class="pun">=</span><span class="pln"> arrop</span><span class="pun">;</span></li><li class="L6"><span class="pln">    arrop</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)(</span><span class="pln">twoD</span><span class="pun">+</span><span class="lit">2</span><span class="pun">);</span></li><li class="L7"><span class="pln">    arrop</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)(</span><span class="pln">twoD</span><span class="pun">+</span><span class="lit">1</span><span class="pun">);</span></li><li class="L8"><span class="pln">    arrop</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)(</span><span class="pln">twoD</span><span class="pun">);</span></li><li class="L9"><span class="pln">    pp</span><span class="pun">++;</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-cprog4/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What will be the output of the following program ?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">2</span><span class="pun">]){</span></li><li class="L2"><span class="pln">    c </span><span class="pun">=</span><span class="pln"> c</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="pun">*</span><span class="pln">c</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="pun">(*</span><span class="pln">c</span><span class="pun">)[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">6</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L7"><span class="pun">{</span></li><li class="L8"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">10</span><span class="pun">,</span><span class="lit">20</span><span class="pun">},</span><span class="pln"> </span><span class="pun">{</span><span class="lit">40</span><span class="pun">,</span><span class="pln"> </span><span class="lit">50</span><span class="pun">}};</span></li><li class="L9"><span class="pln">    fun</span><span class="pun">(</span><span class="pln">a</span><span class="pun">);</span></li><li class="L0"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d %d"</span><span class="pun">,</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">0</span><span class="pun">],</span><span class="pln"> a</span><span class="pun">[</span><span class="lit">1</span><span class="pun">][</span><span class="lit">0</span><span class="pun">]);</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <p></p>`,
+      image: "",
+      options: [
+        `\\( 5\\; 10 \\)`,
+        `\\( 10\\; 5 \\)`,
+        `\\( 10\\; 40 \\)`,
+        `Error since  \\( c \\) is a two-dimensional array, and we can not update the value of  \\( c \\) using  \\( c=c+1. \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cprog4/20.png" style="max-width: 75%;">`
+    },
+  ]
+});

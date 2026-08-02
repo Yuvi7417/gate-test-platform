@@ -2,7 +2,19 @@ const fs = require('fs');
 const cheerio = require('cheerio');
 const path = require('path');
 
-let htmlRaw = fs.readFileSync('test2.html', 'utf8');
+const inputFile = process.argv[2];
+const outputFile = process.argv[3];
+const imgDir = process.argv[4];
+const seriesName = process.argv[5];
+const quizName = process.argv[6];
+const dateStr = "Oct 01, 2026";
+
+if (!inputFile || !outputFile || !imgDir || !seriesName || !quizName) {
+    console.error("Usage: node parse_quiz.js <input.html> <output.js> <img-dir> <seriesName> <quizName>");
+    process.exit(1);
+}
+
+let htmlRaw = fs.readFileSync(inputFile, 'utf8');
 htmlRaw = htmlRaw.replace(/<script type="math\/tex".*?>(.*?)<\/script>/gs, (match, p1) => {
   let safeP1 = p1.replace(/\\/g, '\\\\').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return `\\\\( ${safeP1} \\\\)`;
@@ -18,6 +30,16 @@ let imageIndex = 1;
 
 function escapeBackticks(str) {
   return str.replace(/`/g, '\\`');
+}
+
+function removeNewlinesOutsidePre(html) {
+    const parts = html.split(/(<pre[\s\S]*?<\/pre>)/g);
+    for (let i = 0; i < parts.length; i++) {
+        if (!parts[i].startsWith('<pre')) {
+            parts[i] = parts[i].replace(/\r?\n\s*/g, ' ');
+        }
+    }
+    return parts.join('');
 }
 
 async function parse() {
@@ -47,8 +69,7 @@ async function parse() {
       if (src && src.startsWith('http')) {
         const ext = 'png';
         const filename = `q${num}_img${imageIndex++}.${ext}`;
-        // We assume images are already downloaded to images/quiz/wqt-em4/ from previous run
-        $(img).attr('src', `/images/quiz/wqt-cprog2/${filename}`);
+        $(img).attr('src', `/images/quiz/${imgDir}/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '75%');
       }
@@ -77,18 +98,20 @@ async function parse() {
       if ($ol.length > 0) {
         const $lis = $ol.find('> li').toArray();
         $lis.forEach(li => {
-          options.push($(li).html().trim());
+          let optHtml = $(li).html().trim();
+          optHtml = removeNewlinesOutsidePre(optHtml);
+          options.push(optHtml);
         });
         $ol.remove(); // Remove options from main text
       }
     }
     
     let htmlContent = $qTextContainer.html().trim();
+    htmlContent = removeNewlinesOutsidePre(htmlContent);
     
     // Answer
     const correctText = $q.find('.correct_solution').text();
     let answer = null;
-    let correct = [];
     if (type === 'MCQ' || type === 'MSQ') {
       const ansMatch = correctText.match(/Correct Answer: ([A-Z, ;]+)/i);
       if (ansMatch) {
@@ -115,12 +138,12 @@ async function parse() {
       marks: marks,
       neg: penalty,
       text: escapeBackticks(htmlContent),
-      options: options.map(opt => escapeBackticks(opt.replace(/\s*\n\s*/g, ' ').replace(/\s{2,}/g, ' '))),
+      options: options.map(opt => escapeBackticks(opt)),
       answer: answer
     });
   }
   
-  let jsContent = `registerTest({\n  series: "weekly-cs-gate-2027",\n  name: "WQT - C-Programming-2 | Functions, Storage classes & Loops",\n  date: "Oct 01, 2026",\n  questions: [\n`;
+  let jsContent = `registerTest({\n  series: "${seriesName}",\n  name: "${quizName}",\n  date: "${dateStr}",\n  questions: [\n`;
   
   let qNum = 1;
   for (const q of questions) {
@@ -155,15 +178,15 @@ async function parse() {
         jsContent += `      answer: "${q.answer}",\n`;
     }
     
-    jsContent += `      solution: \`<img src="/images/quiz/wqt-cprog2/${qNum}.png" style="max-width: 75%;">\`\n`;
+    jsContent += `      solution: \`<img src="/images/quiz/${imgDir}/${qNum}.png" style="max-width: 75%;">\`\n`;
     jsContent += `    },\n`;
     qNum++;
   }
   
   jsContent += `  ]\n});\n`;
   
-  fs.writeFileSync('temp.js', jsContent);
-  console.log('Done rewriting format!');
+  fs.writeFileSync(outputFile, jsContent);
+  console.log(`Successfully parsed ${inputFile} into ${outputFile}`);
 }
 
 parse().catch(console.error);
