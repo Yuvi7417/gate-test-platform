@@ -63,7 +63,7 @@ async function parse() {
     const $qTextContainer = $q.find('.res_question_text');
     
     // Images in question
-    const qImages = $qTextContainer.find('img').toArray();
+    const qImages = $q.find('img').toArray();
     for (const img of qImages) {
       const src = $(img).attr('src');
       if (src && src.startsWith('http')) {

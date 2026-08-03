@@ -26,9 +26,7 @@ let downloadPromises = [];
 for (const qDiv of qDivs) {
     const $q = $(qDiv);
     const num = $q.find('.res_qs_num b').text().replace('Q #', '').trim();
-    const $qTextContainer = $q.find('.res_question_text');
-    
-    const qImages = $qTextContainer.find('img').toArray();
+    const qImages = $q.find('img').toArray();
     for (const img of qImages) {
         const src = $(img).attr('src');
         if (src && src.startsWith('http')) {
@@ -41,7 +39,8 @@ for (const qDiv of qDivs) {
             const p = new Promise((resolve, reject) => {
                 client.get(src, (res) => {
                     if (res.statusCode !== 200) {
-                        reject(new Error(`Failed to get '${src}' (${res.statusCode})`));
+                        console.error(`Failed to get '${src}' (${res.statusCode})`);
+                        resolve();
                         return;
                     }
                     const fileStream = fs.createWriteStream(filepath);
@@ -51,7 +50,8 @@ for (const qDiv of qDivs) {
                         resolve();
                     });
                 }).on('error', (err) => {
-                    reject(err);
+                    console.error(`Error downloading '${src}':`, err.message);
+                    resolve();
                 });
             });
             downloadPromises.push(p);
@@ -61,6 +61,8 @@ for (const qDiv of qDivs) {
 
 Promise.all(downloadPromises).then(() => {
     console.log("All images downloaded successfully.");
+    process.exit(0);
 }).catch((err) => {
     console.error("Error downloading some images:", err);
+    process.exit(1);
 });
