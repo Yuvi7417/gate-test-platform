@@ -320,74 +320,39 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "ece-gate-pyq", // <-- Ye ID sabse zaroori hai!
-    code: "ECE",
-    examTag: "GATE 2026",
-    subjectTag: "Electronics & Communication",
-    title: "ECE-GATE 2026 Practice Test Series",
+    id: "pw-cs-gate-2027",
+    code: "CSE",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "Wallah CS GATE 2027 Test Series",
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 47, // Aapke according tests ki ginti
-    startDate: "2026-07-07",
-    endDate: "2027-02-15",
+    tests: 130,
+    startDate: "2025-09-15",
+    endDate: "2026-08-15",
     session: "2026-2027",
-    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) ECE question papers from 2000 to 2026.",
+    desc: "Wallah test series for GATE CSE 2026 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
     features: [
-      "Practice real GATE ECE questions",
-      "Simulate exam-like environment",
-      "Analyse performance vs peers",
-      "Improve speed and accuracy",
-      "Strengthen concepts by application",
-      "Detailed solutions for fundamentals",
+      "wallah coverage of all core GATE CSE subjects",
+      "Scheduled aligned with exam calendar",
+      "Topic-wise cumulative testing",
+      "Detailed solutions for every question",
+      "Performance tracking against peers",
     ],
     batches: [
       {
         name: "Batch 1",
-        start: "July 15, 2026",
+        start: "Sep 15, 2025",
         time: "12:00 AM – 11:59 PM",
         selected: true,
       },
     ],
-    schedule: [],
-    price: "₹74 + GST",
-    basePrice: 74,
-    brandLabel: "APEX EASY"
-  },
-  {
-    id: "ee-gate-pyq",
-    code: "EE",
-    examTag: "GATE 2026",
-    subjectTag: "Electrical Engineering",
-    title: "EE-GATE 2026 Practice Test Series",
-    f: "gate",
-    lang: "English",
-    objective: "Objective",
-    tests: 47,
-    startDate: "2026-07-07",
-    endDate: "2027-02-15",
-    session: "2025-2026",
-    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
-    features: [
-      "Practice real GATE questions",
-      "Simulate exam-like environment",
-      "Analyse performance vs peers",
-      "Improve speed and accuracy",
-      "Strengthen concepts by application",
-      "Detailed solutions for fundamentals",
+    schedule: [
     ],
-    batches: [
-      {
-        name: "Batch 1",
-        start: "July 07, 2026",
-        time: "12:00 AM – 11:59 PM",
-        selected: true,
-      },
-    ],
-    schedule: [],
-    price: "₹74 + GST",
-    basePrice: 74,
-    brandLabel: "APEX EASY"
+    price: "₹120 + GST",
+    basePrice: 120,
+    brandLabel: "APEX WALLAH"
     // comingSoon: true
   },
   {
@@ -427,6 +392,149 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "ece-gate-pyq", // <-- Ye ID sabse zaroori hai!
+    code: "ECE",
+    examTag: "GATE 2026",
+    subjectTag: "Electronics & Communication",
+    title: "ECE-GATE 2026 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47, // Aapke according tests ki ginti
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) ECE question papers from 2000 to 2026.",
+    features: [
+      "Practice real GATE ECE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    price: "₹74 + GST",
+    basePrice: 74,
+    brandLabel: "APEX EASY"
+  },
+  {
+    id: "ece-gate-pyq-2027", // <-- Ye ID sabse zaroori hai!
+    code: "ECE",
+    examTag: "GATE 2027",
+    subjectTag: "Electronics & Communication",
+    title: "ECE-GATE 2027 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47, // Aapke according tests ki ginti
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "A structured, year-wise practice of the Graduate Aptitude Test in Engineering (GATE) ECE question papers from 2000 to 2026.",
+    features: [
+      "Practice real GATE ECE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    price: "₹120 + GST",
+    basePrice: 120,
+    brandLabel: "APEX EASY"
+  },
+  {
+    id: "ee-gate-pyq",
+    code: "EE",
+    examTag: "GATE 2026",
+    subjectTag: "Electrical Engineering",
+    title: "EE-GATE 2026 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2025-2026",
+    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 07, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    price: "₹74 + GST",
+    basePrice: 74,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+  {
+    id: "ee-gate-pyq-2027",
+    code: "EE",
+    examTag: "GATE 2027",
+    subjectTag: "Electrical Engineering",
+    title: "EE-GATE 2027 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2026-07-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "July 07, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    price: "₹120 + GST",
+    basePrice: 120,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+
+  {
     id: "ce-gate-pyq",
     code: "CE",
     examTag: "GATE 2026",
@@ -442,6 +550,48 @@ window.testSeries = [
     desc: "A complete bank of Civil Engineering GATE previous-year papers, sequenced to build exam stamina and concept recall over a structured 4-month window.",
     features: [
       "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "Oct 15, 2025",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      // ["FST - 5", "Mar 18, 2026"],
+      // ["FST - 4", "Nov 24, 2025"],
+      // ["FST - 3", "Nov 23, 2025"],
+      // ["FST - 2", "Nov 22, 2025"],
+      // ["FST - 1", "Nov 21, 2025"],
+    ],
+    price: "₹74 + GST",
+    basePrice: 74,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+  {
+    id: "ce-ese-2026",
+    code: "CE",
+    examTag: "ESE 2026",
+    subjectTag: "Civil Engineering",
+    title: "CE-ESE 2026 Practice Test Series",
+    f: "ese",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2025-10-15",
+    endDate: "2027-02-15",
+    session: "2025-2026",
+    desc: "A complete bank of Civil Engineering ESE previous-year papers, sequenced to build exam stamina and concept recall over a structured 4-month window.",
+    features: [
+      "Practice real ESE questions",
       "Simulate exam-like environment",
       "Analyse performance vs peers",
       "Improve speed and accuracy",
@@ -510,6 +660,47 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "da-gate-pyq-2027",
+    code: "DA",
+    examTag: "GATE 2027",
+    subjectTag: "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE",
+    title: "DA-GATE 2027 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2025-10-15",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "DATA SCIENCE AND ARTIFICIAL INTELLIGENCE (DA) previous-year GATE questions organised section-wise, helping aspirants from varied backgrounds pace their revision accurately.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "Oct 15, 2025",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      // ["FST - 4", "Mar 18, 2026"],
+      // ["FST - 3", "Nov 24, 2025"],
+      // ["FST - 2", "Nov 23, 2025"],
+      // ["FST - 1", "Nov 22, 2025"],
+    ],
+    price: "₹120 + GST",
+    basePrice: 120,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+  {
     id: "me-gate-pyq",
     code: "ME",
     examTag: "GATE 2026",
@@ -550,6 +741,48 @@ window.testSeries = [
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
+  {
+    id: "me-gate-pyq-2027",
+    code: "ME",
+    examTag: "GATE 2027",
+    subjectTag: "Mechanical Engineering",
+    title: "ME-GATE 2027 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2025-11-01",
+    endDate: "2026-12-20",
+    session: "2026-2027",
+    desc: " Mechanical Engineering (ME) previous-year GATE questions organised section-wise, helping aspirants from varied backgrounds pace their revision accurately.",
+    features: [
+      "Conventional answer-writing practice",
+      "Mapped to ESE Mains syllabus",
+      "Model answers for self-evaluation",
+      "Time-bound mock conditions",
+      "Topic-wise weightage analysis",
+      "Expert evaluation guidelines",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "Nov 1, 2025",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      // ["Mock - 6", "Apr 10, 2026"],
+      // ["Mock - 5", "Mar 14, 2026"],
+      // ["Mock - 4", "Feb 10, 2026"],
+      // ["Mock - 3", "Jan 12, 2026"],
+    ],
+    price: "₹120 + GST",
+    basePrice: 120,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+
 
 
 ];
