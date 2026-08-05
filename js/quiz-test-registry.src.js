@@ -12685,3 +12685,618 @@ registerTest({
   ]
 });
 
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Theory of Computation-9 | Closure Properties",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\Sigma \\) be a finite alphabet, and let  \\( w^{R} \\) denote the reversal of a string  \\( w \\). Suppose a language  \\( L \\subseteq \\Sigma^{*} \\) is given, and we define the operation:<br> \$\$  L^{R}=\\left\\{w^{R} \\mid w \\in L\\right\\}  \$\$<br>If it is known that \\( L^{R} \\) always belongs to the exact same language class as  \\( L \\) for any choice of  \\( L \\) within that class, which of the following language families could  \\( L \\) belong to?<br>(Select all the correct options.) </p> <p></p>`,
+      image: "",
+      options: [
+        `The class of Regular Languages<br>&nbsp;`,
+        `The class of Deterministic Context-Free Languages (DCFLs)<br>&nbsp;`,
+        `The class of Context-Free Languages (CFLs)<br>&nbsp;`,
+        `The class of Recursive Languages`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc9/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Imagine two context-free languages,  \\( L_{1} \\) and  \\( L_{2} \\), as two different valid programming syntaxes. A software engineer wants to create a new language,  \\( L_{\\text {new }} \\), that only accepts code that is valid in both syntaxes simultaneously.<br>Which of the following statements is TRUE regarding  \\( L_{\\text {new }} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( L_{\\text {new }} \\) is guaranteed to be a context-free language.<br>&nbsp;`,
+        `\\( L_{\\text {new }} \\) is guaranteed to be a regular language.<br>&nbsp;`,
+        `\\( L_{\\text {new }} \\) may or may not be a context-free language.<br>&nbsp;`,
+        `\\( L_{\\text {new }} \\) is guaranteed to be a context-sensitive language but never context-free.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-toc9/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\Sigma=\\{a, b\\} \\) be an alphabet. Consider two formal languages over  \\( \\Sigma \\), where  \\( L_{1} \\) is known to be a regular language and \\( L_{2} \\) is known to be a nonregular language. Let \\( L_{\\text {new }} \\) be a new language constructed by performing an operation on  \\( L_{1} \\) and  \\( L_{2} \\).<br>Which of the following operations guarantees that  \\( L_{\\text {new }} \\) will always be a nonregular language, regardless of the specific choices of  \\( L_{1} \\) and  \\( L_{2} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( L_{\\text {new }}=L_{1} \\cup L_{2} \\)<br>&nbsp;`,
+        `\\( L_{\\text {new }}=L_{1} \\cap L_{2} \\)<br>&nbsp;`,
+        `\\( L_{\\text {new }}=L_{1}-L_{2} \\)<br>&nbsp;`,
+        `\\( L_{\\text {new }}=\\overline{L_{2}} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-toc9/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( L_{1} \\) and  \\( L_{2} \\) be two regular languages over the same alphabet  \\( \\Sigma \\). Suppose  \\( M_{1}=\\left(S_{1}, \\Sigma, \\delta_{1}, s_{1}, F_{1}\\right) \\) and \\( M_{2}=\\left(S_{2}, \\Sigma, \\delta_{2}, s_{2}, F_{2}\\right) \\) are Deterministic Finite Automata (DFAs) such that  \\( L\\left(M_{1}\\right)=L_{1} \\) and  \\( L\\left(M_{2}\\right)=L_{2} \\).<br>To prove that the class of regular languages is closed under union, we construct a product DFA  \\( M=\\left(S_{1} \\times S_{2}, \\Sigma, \\delta,\\left(s_{1}, s_{2}\\right), F\\right) \\) that accepts the language  \\( L_{1} \\cup L_{2} \\).<br>Which of the following correctly defines the set of accept states  \\( F \\) for the product DFA  \\( M \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( F=F_{1} \\times F_{2} \\)<br>&nbsp;`,
+        `\\( F=\\left(F_{1} \\times S_{2}\\right) \\cup\\left(S_{1} \\times F_{2}\\right) \\) <br>&nbsp;`,
+        `\\( F=\\left(F_{1} \\times\\left(S_{2} \\backslash F_{2}\\right)\\right) \\cup\\left(\\left(S_{1} \\backslash F_{1}\\right) \\times F_{2}\\right) \\) <br>&nbsp;`,
+        `\\( F=\\left(S_{1} \\times S_{2}\\right) \\backslash\\left(F_{1} \\times F_{2}\\right) \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-toc9/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( L \\) be a regular language. We define a new language  \\( L_{\\text {sym }} \\) that contains all strings in \\( L \\) whose reversals are also in  \\( L \\) :<br> \$\$  L_{\\mathrm{sym}}=\\left\\{w \\in L \\mid w^{R} \\in L\\right\\}  \$\$<br>Is the language  \\( L_{\\text {sym }} \\) guaranteed to be regular ? </p> <p></p>`,
+      image: "",
+      options: [
+        `No, because checking if a string matches its reversal requires a stack.<br>&nbsp;`,
+        `Yes, because  \\( L_{\\text {sym }} \\) can be written as  \\( L \\cup L^{R} \\). Since regular languages are closed under reversal and union,  \\( L_{\\text {sym }} \\) is regular.<br>&nbsp;`,
+        `No, because regular languages are not closed under the reversal operation unless the language is finite.<br>&nbsp;`,
+        `Yes, because  \\( L_{\\text {sym }} \\) can be written as  \\( L \\cap L^{R} \\). Since regular languages are closed under reversal and intersection,  \\( L_{\\text {sym }} \\) is regular.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-toc9/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>For any language  \\( L \\), we define the operation  \\( L_{1 / 2} \\) to be the language containing the first halves of all strings in  \\( L \\) that have an even length. Formally:<br> \$\$  L_{1 / 2}=\\{x \\mid x y \\in L \\text { for some } y \\text { with }|x|=|y|\\}  \$\$ <br>If  \\( L \\) is a Decidable language, then which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( L_{1 / 2} \\) must be Decidable.<br>&nbsp;`,
+        `\\( L_{1 / 2} \\) is guaranteed to be Recursively Enumerable, but it is not necessarily Decidable.<br>&nbsp;`,
+        `Length of every string in  \\( L_{1 / 2} \\) is even.<br>&nbsp;`,
+        `\\( L_{1 / 2} \\) may or may not&nbsp;be Recursively Enumerable.`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-toc9/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\Sigma \\) be a finite alphabet. Let  \\( L_{1}, L_{2} \\subseteq \\Sigma^{*} \\) be two languages such that  \\( L_{1} \\) is a regular language and  \\( L_{2} \\) is not a regular language. In addition, we are given the following conditions: </p> <ul> <li> \\( L_{2} \\nsubseteq L_{1} \\)<br>&nbsp; </li> <li> \\( L_{1} \\nsubseteq L_{2} \\)<br>&nbsp; </li> <li> \\( L_{1} \\cap L_{2} \\) is an infinite set. </li> </ul> <p>Which of the following statements is/are FALSE?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( L_{1} \\cap L_{2} \\) can be a regular language.<br>&nbsp;`,
+        `\\( L_{1} \\cap L_{2} \\) can be a non-regular language.<br>&nbsp;`,
+        `\\( L_{1} \\cap L_{2} \\) must be a non-regular language.<br>&nbsp;`,
+        `\\( L_{1} \\cap L_{2} \\) must be a regular language.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc9/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( A \\) be a finite automaton that accepts a regular language  \\( L \\). We want to build a new automaton  \\( \\overline{A} \\) that accepts the reversed language \\( L^{R} \\) (the language containing all strings of \\( L \\) written backward).<br>To do this, we reverse the direction of all arrows in the transition diagram of  \\( A \\). What must we do with the start and accepting states to complete the construction of  \\( \\overline{A} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `In  \\( \\overline{A} \\), create a new start state with \\( \\varepsilon \\)-transitions to all accepting states of  \\( A \\), and keep the accepting states of  \\( A \\) as accepting while also making the start state of  \\( A \\) an accepting state of  \\( \\overline{A} \\).<br>&nbsp;`,
+        `Keep the start state of  \\( A \\) as the start state of  \\( \\overline{A} \\), and make all accepting states of  \\( A \\) the new accepting states of  \\( \\overline{A} \\).<br>&nbsp;`,
+        `Create a single new start state that connects to all of  \\( \\text{A's} \\)&nbsp;accepting states using \\( \\varepsilon \\)-transitions, and make the original start state of  \\( A \\) the only accepting state of  \\( \\overline{A} \\).<br>&nbsp;`,
+        `Make the start state of  \\( A \\) the only accepting state of  \\( \\overline{A} \\), and turn all accepting states of  \\( A \\) into multiple start states of  \\( \\overline{A} \\).`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-toc9/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>For any two languages  \\( A \\) and  \\( B \\), we define the operation  \\( \\operatorname{CHOP}(A, B) \\) as the language containing all strings  \\( w \\) that can be formed by chopping off a suffix \\( x \\in B \\) from a string  \\( w x \\in A \\) : \$\$  \\operatorname{CHOP}(A, B)=\\{w \\mid \\exists x \\in B \\text { such that } w x \\in A\\} \$\$ Let  \\( X, Y \\), and  \\( Z \\) be three languages defined over the alphabet \\( \\Sigma=\\{\\mathrm{a}, \\mathrm{b}\\} \\) as follows: \$\$  \\begin{aligned} X &amp; =\\{\\mathrm{aab}, \\mathrm{aba}, \\mathrm{bba}, \\mathrm{bbb}\\} \\\\ Y &amp; =\\{\\mathrm{ba}, \\mathrm{bbb}\\} \\\\ Z &amp; =\\left\\{\\mathrm{a}^{n} \\mathrm{~b}^{n} \\mid n \\geq 0\\right\\} \\end{aligned} \$\$ Let  \\( N_{1} \\) be the cardinality of  \\( \\operatorname{CHOP}(X, Y) \\), and let  \\( N_{2} \\) be the cardinality of  \\( \\operatorname{CHOP}(X, Z) \\). What is value of \\( N_{1}+N_{2} \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img src="/images/quiz/wqt-toc9/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>For any language  \\( A \\), we define the prefix language  \\( \\operatorname{PREFIX}(A) \\) as the set of all strings  \\( w \\) that form a string in  \\( A \\) when some suffix string  \\( x \\) is appended to them:<br> \$\$  \\operatorname{PREFIX}(A)=\\left\\{w \\mid \\exists x \\in \\Sigma^{*} \\text { such that } w x \\in A\\right\\}  \$\$ <br>Let  \\( M=\\left(Q, \\Sigma, \\delta, q_{0}, F\\right) \\) be a DFA that recognizes the regular language  \\( A \\). We want to construct a new finite automaton \\( M^{\\prime}=\\left(Q, \\Sigma, \\delta, q_{0}, F^{\\prime}\\right) \\) that precisely recognizes  \\( \\operatorname{PREFIX}(A) \\).<br>To achieve this without changing the states, alphabet, transition function, or start state of  \\( M \\), how should the new set of accepting states \\( F^{\\prime} \\) be defined? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( F^{\\prime}=\\{q \\in Q \\mid q \\notin F\\} \\) <br>&nbsp;`,
+        `\\( F^{\\prime}=\\left\\{q \\in Q \\mid\\right. \\) there is a path from  \\( q_{0} \\) to  \\( \\left.q\\right\\} \\)<br>&nbsp;`,
+        `\\( F^{\\prime}=\\{q \\in Q \\mid \\) there is a path from  \\( q \\) to some state in  \\( F\\} \\)<br>&nbsp;`,
+        `\\( F^{\\prime}=\\{q \\in F \\mid \\delta(q, \\sigma) \\in F \\) for all \\( \\sigma \\in \\Sigma\\} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-toc9/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Theory of Computation-10 | Context Free Grammar",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar (CFG)  \\( G=(V, \\Sigma, P, S) \\), where  \\( S \\) is the start symbol,  \\( \\Sigma=\\{a, b\\} \\) is the set of terminal symbols, \\( V=\\{S, B\\} \\) is the set of non-terminals, and the set of production rules  \\( P \\) is defined by:<br> \$\$  \\begin{aligned} &amp; S \\longrightarrow S B \\mid a a \\\\ &amp; B \\longrightarrow b S B b \\mid a b \\end{aligned}  \$\$ <br>Let  \\( |w|_{a} \\) denote the number of occurrences of the terminal symbol  \\( a \\) in a string  \\( w \\), and let  \\( |w|_{b} \\) denote the number of occurrences of the terminal symbol  \\( b \\) in  \\( w \\).<br>Which of the following equations correctly describes the relationship between the number of  \\( a \\) 's and  \\( b \\) 's for all terminal strings  \\( w \\in L(G) \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( |w|_{a}=|w|_{b}+2 \\)<br>&nbsp;`,
+        `\\( |w|_{a}=2|w|_{b} \\)<br>&nbsp;`,
+        `\\( |w|_{a}=|w|_{b} \\)<br>&nbsp;`,
+        `\\( |w|_{a}=\\left(|w|_{b}+1\\right) \\cdot 2 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-toc10/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the regular grammar below<br> \$\$  \\begin{aligned} S &amp;\\to bS\\ |\\ aA\\ |\\ \\epsilon \\\\ A &amp;\\to aS\\ |\\ bA \\end{aligned}  \$\$ <br>The Myhill-Nerode equivalence classes for the language generated by the grammar are </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{w\\in(a+b)^*\\ |\\ \\#a(w)\\ \\text{is even}\\} \\) and  \\( \\{w\\in(a+b)^*\\ |\\ \\#a(w)\\ \\text{is odd}\\} \\) <br>&nbsp;`,
+        `\\( \\{w\\in(a+b)^*\\ |\\ \\#a(w)\\ \\text{is even}\\} \\) and  \\( \\{w\\in(a+b)^*\\ |\\ \\#b(w)\\ \\text{is odd}\\} \\) <br>&nbsp;`,
+        `\\( \\{w\\in(a+b)^*\\ |\\ \\#a(w)=\\#b(w)\\} \\) and  \\( \\{w\\in(a+b)^*\\ |\\ \\#a(w)\\neq\\#b(w)\\} \\) <br>&nbsp;`,
+        `\\( \\{\\epsilon\\},\\ \\{wa\\ |\\ w\\in(a+b)^*\\} \\) and \\( \\{wb\\ |\\ w\\in(a+b)^*\\} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-toc10/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( G \\) be a Context-Free Grammar (CFG) and let  \\( L(G) \\) be its language. Which of the following conditions, if true for a string  \\( w \\in L(G) \\), prove that  \\( G \\) is an ambiguous grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `The string  \\( w \\) has two different parse trees.<br>&nbsp;`,
+        `The string  \\( w \\) has two different left-most derivations.<br>&nbsp;`,
+        `The string  \\( w \\) has two different right-most derivations.<br>&nbsp;`,
+        `The string  \\( w \\) has two different derivations.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-toc10/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar (CFG)  \\( G \\) defined by the production rules:<br> \$\$  S \\longrightarrow a S \\mid a S b S \\mid \\epsilon  \$\$<br>To demonstrate that  \\( G \\) is ambiguous, a student analyzes the string \\( w=a a b \\). Which of the following statement is correct ? </p> <p></p>`,
+      image: "",
+      options: [
+        `The string  \\( w \\) has exactly two distinct parse trees, which directly implies it has exactly two distinct leftmost derivations and exactly two distinct rightmost derivations.<br>&nbsp;`,
+        `The string  \\( w \\) has exactly two distinct parse trees, but it has only one unique leftmost derivation.<br>&nbsp;`,
+        `The string  \\( w \\) has multiple distinct derivations, which implies that  \\( G \\) is ambiguous.<br>&nbsp;`,
+        `The string  \\( w \\) cannot be generated by this grammar.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-toc10/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following two statements, where  \\( V \\) represents the set of non-terminals,  \\( T \\) represents the set of terminals, and  \\( \\lambda \\) denotes the empty string:<br><br> \\( \\textbf{Statement I:} \\) For every regular language  \\( L \\) not containing  \\( \\lambda \\), there exists a grammar  \\( G \\) with  \\( L = L(G) \\) whose productions are strictly restricted to the forms:<br> \$\$  A \\longrightarrow a B \\quad \\text { or } \\quad A \\longrightarrow a  \$\$ <br>where  \\( A, B \\in V \\) and  \\( a \\in T \\).<br><br> \\( \\textbf{Statement II:} \\) Any regular grammar \\( G \\) for which the generated language is non-empty (  \\( L(G) \\neq \\emptyset \\) ) must have at least one production of the form:<br> \$\$  A \\longrightarrow x  \$\$<br>where \\( A \\in V \\) and  \\( x \\in T^{*} \\).<br>Which of the following option is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `Both Statement  \\( \\textbf{I} \\) and Statement  \\( \\textbf{II} \\) are correct.<br>&nbsp;`,
+        `Statement  \\( \\textbf{I} \\) is correct but Statement  \\( \\textbf{II} \\) is incorrect.<br>&nbsp;`,
+        `Statement  \\( \\textbf{I} \\) is incorrect but Statement  \\( \\textbf{II} \\) is correct.<br>&nbsp;`,
+        `Both Statement  \\( \\textbf{I} \\)&nbsp;and Statement  \\( \\textbf{II} \\)&nbsp;are incorrect.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-toc10/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar  \\( G: \\)<br> \$\$  \\begin{aligned} &amp; S \\longrightarrow A S A \\mid a B \\\\ &amp; A \\longrightarrow B \\mid S \\\\ &amp; B \\longrightarrow b \\mid \\epsilon \\end{aligned}  \$\$ <br>Which of the following strings is/are generated by this grammar ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( b b a \\)<br>&nbsp;`,
+        `\\( a b \\)<br>&nbsp;`,
+        `\\( b a \\)<br>&nbsp;`,
+        `\\( b b \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-toc10/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the Grammar  \\( G: \\)<br> \$\$  \\begin{aligned} &amp; S \\longrightarrow \\epsilon \\mid a T&nbsp;\\mid b T \\\\ &amp; T \\longrightarrow a S \\mid b S \\end{aligned}  \$\$ <br>Which of the following statements is/are incorrect ? </p> <p></p>`,
+      image: "",
+      options: [
+        `Every terminal string  \\( w \\in L(G) \\) has an even length.<br>&nbsp;`,
+        `The string  \\( a a b b \\) can be derived and is accepted by \\( G \\).<br>&nbsp;`,
+        `The string  \\( b a b b \\) cannot be derived and is not accepted by  \\( G \\).<br>&nbsp;`,
+        `There exists at least one string of even length&nbsp;that does not belong to  \\( L(G) \\).`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-toc10/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The following grammar is ambiguous:  \$\$ \\begin{aligned}&amp;S\\to AB\\\\&amp;A\\to aA\\mid a\\\\&amp;B\\to aB\\mid a\\end{aligned} \$\$ Which of the following pairs of derivations correctly prove that the grammar is ambiguous? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S\\Rightarrow AB\\Rightarrow aAB\\Rightarrow aaB\\Rightarrow aaa \\) <br> \\( S\\Rightarrow AB\\Rightarrow Aa\\Rightarrow aAa\\Rightarrow aaa \\) <br>&nbsp;`,
+        `\\( S\\Rightarrow AB\\Rightarrow aAB\\Rightarrow aaB\\Rightarrow aaa \\) <br>&nbsp; \\( S\\Rightarrow AB\\Rightarrow aB\\Rightarrow aaB\\Rightarrow aaa \\) <br>&nbsp;`,
+        `\\( S\\Rightarrow AB\\Rightarrow Aa\\Rightarrow aAa\\Rightarrow aaa \\) <br> \\( S\\Rightarrow AB\\Rightarrow AaB\\Rightarrow Aaa\\Rightarrow aaa \\) <br>&nbsp;`,
+        `\\( S\\Rightarrow AB\\Rightarrow aAB\\Rightarrow aaB\\Rightarrow aaa \\) <br> \\( S\\Rightarrow AB\\Rightarrow aB\\Rightarrow aa \\)`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-toc10/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the Grammar  \\( G: \\)<br> \$\$  \\begin{aligned} &amp; S \\longrightarrow A 1 B \\\\ &amp; A \\longrightarrow 0 A \\mid \\epsilon \\\\ &amp; B \\longrightarrow 0 B \\mid 1 B&nbsp;\\mid \\epsilon \\end{aligned}  \$\$ <br>Which of the following statements is/are incorrect? </p> <p></p>`,
+      image: "",
+      options: [
+        `The regular expression of the language  \\( L(G) \\) is  \\( 0^{*} 1(0+1)^{*} \\).<br>&nbsp;`,
+        `The grammar  \\( G \\) is a regular grammar.<br>&nbsp;`,
+        `The language  \\( L(G) \\) is a regular language.<br>&nbsp;`,
+        `The grammar  \\( G \\) is unambiguous.`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-toc10/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar  \\( G: \\)<br> \$\$  \\begin{aligned} &amp; S \\longrightarrow 1 S 1 \\mid T \\\\ &amp; T \\longrightarrow 1 X 1 \\mid X \\\\ &amp; X \\longrightarrow 0 X 0 \\mid 1 \\end{aligned}  \$\$ <br>Let  \\( |w| \\) denote the length of a string  \\( w \\). Which of the following statements is/are correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `The string  \\( 11111 \\) has more than one parse tree.<br>&nbsp;`,
+        `Every string  \\( w \\in L(G) \\) has an odd length (i.e.,  \\( |w| \\ (\\bmod \\ 2) \\neq 0 \\) ).<br>&nbsp;`,
+        `The string  \\( 111 \\) appears at the third position in the lexicographical enumeration of  \\( L(G) \\).<br>&nbsp;`,
+        `The grammar  \\( G \\) is a non-regular grammar, but the language  \\( L(G) \\) is a regular language.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-toc10/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Theory of Computation-11 | Countability",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( A \\) be a non-empty countable set, and let  \\( f: B \\rightarrow A \\) be a function from an arbitrary set  \\( B \\) to  \\( A \\). For each element  \\( x \\in A \\), let the preimage of  \\( x \\) under  \\( f \\) be denoted as:<br> \$\$  f^{-1}(x)=\\{b \\in B \\mid f(b)=x\\}  \$\$<br>If  \\( f^{-1}(x) \\) is a countable set for every  \\( x \\in A \\), which of the following is the correct conclusion regarding the<br>cardinality of the domain set  \\( B \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( B \\) must be an uncountably infinite set.<br>&nbsp;`,
+        `\\( B \\) must be a finite set.<br>&nbsp;`,
+        `\\( B \\) is guaranteed to be a countable set.<br>&nbsp;`,
+        `The cardinality of  \\( B \\) cannot be determined.`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-toc11/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following two mathematical assertions regarding an arbitrary set  \\( Y \\), where  \\( |Y| \\) denotes the cardinality of  \\( Y, Y \\times Y \\) denotes its Cartesian product, and  \\( \\mathcal{P}(Y) \\) denotes its power set:<br><br> \\( \\textbf{Statement I:} \\) There exists a set  \\( Y \\) such that  \\( |Y| \\neq|Y \\times Y| \\).<br><br> \\( \\textbf{Statement II:} \\) There exists a set  \\( Y \\) such that  \\( |Y| \\neq|\\mathcal{P}(Y)| \\).<br><br>Which of the following option is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `Both Statement  \\( \\mathbf{I} \\) and Statement  \\( \\mathbf{II} \\) are false.<br>&nbsp;`,
+        `Statement  \\( \\mathbf{I} \\)&nbsp;is true, but Statement \\( \\mathbf{II} \\) is false.<br>&nbsp;`,
+        `Statement  \\( \\mathbf{I} \\)&nbsp;is false, but Statement \\( \\mathbf{II} \\)&nbsp;is true.<br>&nbsp;`,
+        `Both Statement  \\( \\mathbf{I} \\)&nbsp;and Statement  \\( \\mathbf{II} \\) are true.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-toc11/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( A \\) and  \\( B \\) be two non-empty sets. Consider the following three assertions expressed in first-order logic symbols, where  \\( |A| \\) and  \\( |B| \\) denote the cardinalities of sets  \\( A \\) and  \\( B \\), respectively: </p> <p> \\( \\mathbf{I.} \\)  \\( \\exists f: A \\rightarrow B \\quad \\forall a_{1} \\in A \\quad \\forall a_{2} \\in A\\left(a_{1} \\neq a_{2} \\rightarrow f\\left(a_{1}\\right) \\neq f\\left(a_{2}\\right)\\right) \\) </p> <p> \\( \\mathbf{II.} \\)  \\( \\exists f: A \\rightarrow B \\quad \\forall b \\in B \\quad \\exists a \\in A(f(a)=b) \\) </p> <p> \\( \\mathbf{III.} \\)  \\( \\exists f: A \\rightarrow B \\quad \\forall b \\in B \\quad \\exists a \\in A\\left(f(a)=b \\wedge \\forall a^{\\prime} \\in A\\left(a \\neq a^{\\prime} \\rightarrow f\\left(a^{\\prime}\\right) \\neq b\\right)\\right) \\) </p> <p><br>Which of the following describes the set cardinality relationships implied by Statements  \\( \\mathbf{I} \\),  \\( \\mathbf{II} \\), and  \\( \\mathbf{III} \\) in order? </p> <p>&nbsp;</p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathbf{I:} \\)&nbsp; \\( |A| \\geq|B|, \\quad \\)  \\( \\mathbf{II:} \\)  \\( |A| \\leq|B|, \\quad \\)  \\( \\mathbf{III:} \\)  \\( |A|=|B| \\)<br>&nbsp;`,
+        `\\( \\mathbf{I:} \\)  \\( |A| \\leq|B|, \\quad \\)  \\( \\mathbf{II:} \\)  \\( |A| \\geq|B|, \\quad \\)  \\( \\mathbf{III:} \\)  \\( |A|=|B| \\)<br>&nbsp;`,
+        `\\( \\mathbf{I:} \\)&nbsp;  \\( |A| \\leq|B|, \\quad \\)  \\( \\mathbf{II:} \\)  \\( |A| \\leq|B|, \\quad \\)  \\( \\mathbf{III:} \\)  \\( |A| \\neq|B| \\)<br>&nbsp;`,
+        `\\( \\mathbf{I:} \\)  \\( |A|=|B|, \\quad \\)  \\( \\mathbf{II:} \\)  \\( |A| \\geq|B|, \\quad \\)  \\( \\mathbf{III:} \\)  \\( |A| \\leq|B| \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-toc11/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathbb{R} \\) denote the set of real numbers, \\( \\mathbb{Z} \\) denote the set of integers, and let \\( U=\\mathcal{P}(\\mathbb{R}) \\) be the power set of \\( \\mathbb{R} \\) (meaning the elements of  \\( U \\) are subsets of  \\( \\mathbb{R} \\)). </p> <p>Consider the following two statements:</p> <p> \\( \\mathbf{Statement\\ I} \\): For all subsets  \\( X \\) and  \\( Y \\) in  \\( U \\), if  \\( X \\) and  \\( Y \\) have the same cardinality  \\( (|X|=|Y|) \\), then  \\( X \\) and  \\( Y \\) must be the identical set  \\( (X=Y) \\). </p> <p> \\( \\mathbf{Statement\\ II} \\): There exist two subsets \\( A \\) and  \\( B \\) in  \\( U \\) such that both  \\( A \\) and  \\( B \\) contain the set of integers as a subset  \\( (\\mathbb{Z}\\subseteq A \\text{ and } \\mathbb{Z}\\subseteq B) \\), yet \\( A \\) and  \\( B \\) have strictly different cardinalities  \\( (|A|\\neq|B|) \\). </p> <p>Which of the following is correct ?</p> <p></p>`,
+      image: "",
+      options: [
+        `Both Statement  \\( \\mathbf{\\ I} \\) and Statement&nbsp; \\( \\mathbf{\\ II} \\)&nbsp;are false.<br>&nbsp;`,
+        `Statement  \\( \\mathbf{\\ I} \\) is true, but Statement  \\( \\mathbf{\\ II} \\)&nbsp;is false.<br>&nbsp;`,
+        `Statement  \\( \\mathbf{\\ I} \\) is false, but Statement  \\( \\mathbf{\\ II} \\) is true.<br>&nbsp;`,
+        `Both Statement  \\( \\mathbf{\\ I} \\) and Statement  \\( \\mathbf{\\ II} \\)&nbsp;are true.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-toc11/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathbb{N} \\) denote the set of natural numbers and  \\( \\mathcal{P}(\\mathbb{N}) \\) denote its power set. Which of the following functions successfully serves as a valid example to establish the inequality \\( |\\mathcal{P}(\\mathbb{N})| \\leq|\\mathbb{N}| \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( g_{A}: \\mathcal{P}(\\mathbb{N}) \\rightarrow \\mathbb{N} \\quad \\) where  \\( \\quad g_{A}(x)= \\begin{cases}0 &amp; \\text { if } x=\\emptyset \\\\ 1 &amp; \\text { otherwise }\\end{cases} \\) <br>&nbsp;`,
+        `\\( g_{B}: \\mathcal{P}(\\mathbb{N}) \\rightarrow \\mathbb{N} \\quad \\) where  \\( \\quad g_{B}(x)=20 \\)<br>&nbsp;`,
+        `\\( g_{C}: \\mathcal{P}(\\mathbb{N}) \\rightarrow \\mathbb{N} \\quad \\) where  \\( \\quad g_{C}(x)= \\begin{cases}\\min (x) &amp; \\text { if } x \\neq \\emptyset \\\\ 0 &amp; \\text { otherwise }\\end{cases} \\) <br>&nbsp;`,
+        `None of the above, because no such function can exist.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-toc11/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathbb{N} \\) denote the set of all natural numbers  \\( \\{1,2,3, \\ldots\\} \\). Which of the following statements is/are true? (Select all that apply) </p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( A_{1}, A_{2}, \\ldots, A_{n} \\) is a finite collection of countable sets, then their Cartesian product  \\( A_{1} \\times A_{2} \\times \\cdots \\times A_{n} \\) is also countable.<br>&nbsp;`,
+        `If there exists an injective function  \\( f: A \\rightarrow \\mathbb{N} \\), then the set \\( A \\) must be countable.<br>&nbsp;`,
+        `If there exists a surjective function  \\( f: \\mathbb{N} \\rightarrow A \\), then the set \\( A \\) must be countable.<br>&nbsp;`,
+        `If  \\( A_{n} \\) is a countable set for every  \\( n \\in \\mathbb{N} \\), then their countable union  \\( A=\\bigcup_{n=1}^{\\infty} A_{n} \\) is also countable.`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc11/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( A \\) and  \\( B \\) be two non-empty sets, and let  \\( |A| \\) and  \\( |B| \\) denote their respective cardinalities. We wish to prove that the two sets have same cardinality, i.e.,  \\( |A|=|B| \\). Which of the following conditions, considered independently, is/are sufficient to establish the claim? (Select all that apply) </p> <p></p>`,
+      image: "",
+      options: [
+        `Proving that there exists a bijective function  \\( f: A \\rightarrow B \\).<br>&nbsp;`,
+        `Proving that there exists a bijective function  \\( f: B \\rightarrow A \\).<br>&nbsp;`,
+        `Proving that there exist two injective (one-to-one) functions  \\( f_{1} \\) :  \\( A \\rightarrow B \\) and  \\( f_{2}: B \\rightarrow A \\).<br>&nbsp;`,
+        `Proving that there exist two surjective (onto) functions  \\( f_{1}: A \\rightarrow B \\) and  \\( f_{2}: B \\rightarrow A \\).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc11/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Cantor's diagonalization argument constructs, for any given function  \\( f: \\mathbb{N} \\rightarrow \\mathcal{P}(\\mathbb{N}) \\), a associated diagonal set  \\( D_{f} \\subseteq \\mathbb{N} \\) defined explicitly as:<br> \$\$  D_{f}=\\{x \\in \\mathbb{N} \\mid x \\notin f(x)\\}  \$\$<br>Let  \\( \\mathbb{N}=\\{0,1,2,3, \\ldots\\} \\) denote the set of natural numbers. Consider the following two functions from  \\( \\mathbb{N} \\) to its power set  \\( \\mathcal{P}(\\mathbb{N}) \\) :<br><br> \\( f_{1}(x)=\\{y \\in \\mathbb{N} \\mid y \\) has the same parity as  \\( x\\} \\quad \\) (i.e., both are even or both are odd)<br><br> \\( f_{2}(x)=\\{y \\in \\mathbb{N} \\mid y&gt;x\\} \\) <br><br>Which of the following statements regarding their diagonal sets  \\( D_{f_{1}} \\) and  \\( D_{f_{2}} \\) is/are true? (Select all that apply) </p> <p></p>`,
+      image: "",
+      options: [
+        `The diagonal set  \\( D_{f_{1}} \\) is empty (i.e.,  \\( D_{f_{1}}=\\emptyset \\) ).<br>&nbsp;`,
+        `\\( 1 \\in D_{f_{2}} \\).<br>&nbsp;`,
+        `The diagonal set  \\( D_{f_{2}} \\) is countably infinite.<br>&nbsp;`,
+        `The diagonal set  \\( D_{f_{2}} \\) contains all natural numbers except 0 .`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-toc11/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathbb{N}=\\{0,1,2,3, \\ldots\\} \\) denote the set of natural numbers, and let  \\( \\mathcal{P}(\\mathbb{N}) \\) denote its power set. Which of the following functions successfully serves as a valid witness to establish the cardinality relationship  \\( |\\mathbb{N}| \\leq|\\mathcal{P}(\\mathbb{N})| \\) ? (Select all that apply) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f_{A}: \\mathbb{N} \\rightarrow \\mathcal{P}(\\mathbb{N}) \\quad \\) where  \\( \\quad f_{A}(x)=x^{2} \\)<br>&nbsp;`,
+        `\\( f_{B}: \\mathbb{N} \\rightarrow \\mathcal{P}(\\mathbb{N}) \\) where \\( f_{B}(x)=\\left\\{x^{2}\\right\\} \\)<br>&nbsp;`,
+        `\\( f_{C}: \\mathbb{N} \\rightarrow \\mathcal{P}(\\mathbb{N}) \\quad \\) where  \\( \\quad f_{C}(x)=\\left\\{y \\in \\mathbb{N} \\mid y \\neq x^{2}\\right\\} \\) <br>&nbsp;`,
+        `\\( f_{D}: \\mathbb{N} \\rightarrow \\mathcal{P}(\\mathbb{N}) \\) where \\( f_{D}(x)=\\{x, x+1\\} \\)`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc11/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathbb{Z}^{+} \\)denote the set of positive integers, and let  \\( \\aleph_{0} \\) represent its cardinality (countably infinite). For any arbitrary non-empty sets  \\( A, B \\), and  \\( C \\), let  \\( |A| \\) denote the cardinality of set  \\( A \\), and let  \\( A-B \\) denote the set difference.<br><br>Which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( A \\) is an infinite set, then there exists a subset  \\( S \\subseteq A \\) such that  \\( |S|=\\aleph_{0} \\).<br>&nbsp;`,
+        `There is no infinite set  \\( A \\) such that  \\( |A|&lt;\\aleph_{0} \\).<br>&nbsp;`,
+        `The set cardinality relation  \\( \\leq \\) satisfies transitivity: if  \\( |A| \\leq|B| \\) and  \\( |B| \\leq |C| \\), then  \\( |A| \\leq|C| \\).<br>&nbsp;`,
+        `If  \\( A \\) is an uncountably infinite set and  \\( B \\) is a countable set, then the set difference  \\( A-B \\) must be uncountably infinite.`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc11/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Theory of Computation-12 | Pumping Lemma",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are false?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( L \\) satisfies the pumping lemma, then  \\( L \\) may or may not be regular.<br>&nbsp;`,
+        `If  \\( L \\) does not satisfy the pumping lemma, then \\( L \\) is non-regular.<br>&nbsp;`,
+        `If  \\( L \\) is non-regular, then it does not satisfy the pumping lemma.<br>&nbsp;`,
+        `If  \\( L \\) is regular, then it satisfies the pumping lemma.`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-toc12/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let  \\( A \\) be the minimum pumping length of the string \\( 0^{*} 1^{*} \\) and  \\( B \\) be the minimum pumping length of the string \\( 00^{*} \\). What is the value of  \\( A+B \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img src="/images/quiz/wqt-toc12/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Your GO Classes friend is trying to prove that the language  \\( ww^{R} \\), the language of palindromes, is not regular. For pumping length  \\( p \\) he chooses the string  \\( S=01^{p} 1^{p} 0 \\), which is a palindrome. Can he use the pumping lemma for regular languages to prove that this language is not regular? Answer  \\( 1 \\) if yes, else  \\( 0 \\). </p>`,
+      image: "",
+      options: [],
+      answer: "0",
+      solution: `<img src="/images/quiz/wqt-toc12/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>Which of the following is/are true?</p> <ol style="list-style-type:upper-alpha"> <li>A regular language accepted by an  \\( NFA \\) with  \\( n \\) states has pumping length  \\( n \\)<br>&nbsp; </li> <li>If  \\( L \\) is a finite language and the length of the longest string in  \\( L \\) is  \\( m \\), then the minimum pumping length of  \\( L \\) is  \\( \\mathrm{m}+1 \\)<br>&nbsp; </li> <li>If the length of the shortest string in a regular language  \\( L \\) is  \\( k \\), then the minimum pumping length of  \\( L \\) must be greater than  \\( k \\).<br>&nbsp; </li> <li>If  \\( p \\) is a pumping length for a regular language  \\( L \\), then  \\( p+1 \\) is also a pumping length for  \\( L \\). </li> </ol> <p></p>`,
+      image: "",
+      options: [],
+      answer: "null",
+      solution: `<img src="/images/quiz/wqt-toc12/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is false?</p> <p></p>`,
+      image: "",
+      options: [
+        `If a regular language  \\( L \\) has minimum pumping length  \\( p \\), then any  \\( DFA \\) accepting  \\( L \\) must have at least  \\( p \\) states.<br>&nbsp;`,
+        `The minimum pumping length for regular language  \\( \\{0011\\} \\) is  \\( 5 \\).<br>&nbsp;`,
+        `On an input string of length  \\( k \\), every  \\( DFA \\) goes through a unique sequence of  \\( \\mathrm{k}+1 \\) states during its computation.<br>&nbsp;`,
+        `The minimum pumping length for regular expression  \\( 001+0^{*} 1^{*} \\) is  \\( 2 \\).`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-toc12/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( L=\\left\\{0^{n} 1^{m} 0^{n} \\mid m, n \\geq 0\\right\\} \\) be a language over the alphabet  \\( \\Sigma=\\{0,1\\} \\). To prove that  \\( L \\) is not regular using the Pumping Lemma by contradiction, we assume  \\( L \\) is regular and let  \\( p \\) be the pumping length.<br><br>Which of the following choices of string can be used to complete the proof by contradiction? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 00000100000 \\)<br>&nbsp;`,
+        `\\( 0^{p} 10^{p} \\)<br>&nbsp;`,
+        `\\( (010)^{p} \\)<br>&nbsp;`,
+        `\\( 0^{p+1} 1^{p} 0^{p} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-toc12/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p> \\( \\textbf{Theorem:} \\)  \\( L=\\left\\{0^{n} 1^{n} \\mid n \\geq 0\\right\\} \\) is not regular.<br><br> \\( \\textbf{Proof:} \\) Assume (towards contradiction) that  \\( L \\) is regular. Then the pumping lemma applies to \\( L \\). Let  \\( p \\) be the pumping length. Choose  \\( s \\) to be the string ____,  \\( |s| \\geq p \\). The pumping lemma guarantees  \\( s \\) can be divided into parts  \\( x y z \\) s.t. for any  \\( i \\geq 0, x y^{i} z \\) is in  \\( L \\), and that  \\( |y|&gt;0 \\) and  \\( |x y| \\leq p \\). But if we let  \\( i= \\) ____, we get the string which is not in \\( L \\), a contradiction. Therefore the assumption is false, and  \\( L \\) is not regular.  \\( Q.E.D \\).<br><br>Which values of  \\( s \\) and  \\( i \\) should not be chosen in the proof?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( s=0^{p} 1^{p}, i=1 \\)<br>&nbsp;`,
+        `\\( s=010101, i=0 \\)<br>&nbsp;`,
+        `\\( s=000000111111, i=6 \\)<br>&nbsp;`,
+        `\\( s=1^{p} 0^{p}, i=5 \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-toc12/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p> \\( \\textbf{Theorem:} \\)  \\( L=\\left\\{w w^{R} \\mid w^{R}\\right. \\) is the reverse of  \\( w \\) and  \\( \\left.w \\in\\{0,1\\}^{*}\\right\\} \\) is not regular.<br><br> \\( \\textbf{Proof:} \\)&nbsp;Assume (towards contradiction) that  \\( L \\) is regular. Then the pumping lemma applies to \\( L \\). Let  \\( p \\) be the pumping length. Choose  \\( s \\) to be the string ____,  \\( |s| \\geq p \\). The pumping lemma guarantees  \\( s \\) can be divided into parts  \\( x y z \\) s.t. for any  \\( i \\geq 0, x y^{i} z \\) is in  \\( L \\), and that  \\( |y|&gt;0 \\) and  \\( |x y| \\leq p \\). But if we let  \\( i= \\) ____, we get the string which is not in \\( L \\), a contradiction. Therefore the assumption is false, and  \\( L \\) is not regular.  \\( Q.E.D. \\)<br><br>Which of the following choices of \\( s \\) and  \\( i \\) makes the proof correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( s=000000111111, i=6 \\)<br>&nbsp;`,
+        `\\( s=0^{p} 0^{p}, i=2 \\)<br>&nbsp;`,
+        `\\( s=0^{p} 110^{p}, i=2 \\)<br>&nbsp;`,
+        `\\( s=0^{p} 10^{p}, i=3 \\)`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-toc12/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following two statements:<br><br> \\( \\mathbf{S_1:} \\) If a regular language  \\( L \\) has at least one string whose length lies between  \\( n \\) and  \\( 2 n-1 \\) (inclusive) where  \\( n \\) is the number of states in a  \\( \\text{DFA} \\)  \\( D \\) (where  \\( L(D)=L \\) ), then  \\( L \\) is infinite.<br><br> \\( \\mathbf{S_2:} \\) The set of strings accepted by a \\( \\text{DFA} \\) with n states is non-empty iff the DFA accepts a string of length strictly less than  \\( n \\).<br><br>Which of the following is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S_1 \\) is false and  \\( S_2 \\) is false<br>&nbsp;`,
+        `\\( S_1 \\) is true and  \\( S_2 \\) is false<br>&nbsp;`,
+        `\\( S_1 \\) is false and  \\( S_2 \\) is true<br>&nbsp;`,
+        `\\( S_1 \\) is true and  \\( S_2 \\) is true`,
+      ],
+      answer: ["D"],
+      solution: `<img src="/images/quiz/wqt-toc12/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>We need to prove that the language  \\( L=\\{w \\mid w \\) has equal number of  \\( 0 \\)'s and  \\( 1 \\)'s  \\( \\} \\) is not regular.<br><br>We are using the Pumping Lemma to prove  \\( L \\) is non-regular. Suppose length  \\( p \\) was given. Which of the following  \\( w \\) 's can we choose for our proof?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0^{\\lfloor p/2 \\rfloor}1^{\\lfloor p/2 \\rfloor} \\)<br>&nbsp;`,
+        `\\( (01)^p \\)<br>&nbsp;`,
+        `\\( (00)^p(11)^p \\)<br>&nbsp;`,
+        `\\( 0^{p-1}1^{p-1} \\)`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-toc12/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
+

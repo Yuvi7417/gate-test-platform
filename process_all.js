@@ -2,10 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const tests = [
-  { file: 'test1.html', dir: 'wqt-toc5', name: 'WQT - Theory of Computation-5 | FA, CFL, DCFL' },
-  { file: 'test2.html', dir: 'wqt-toc6', name: 'WQT - Theory of Computation-6 | Decidability' },
-  { file: 'test3.html', dir: 'wqt-toc7', name: 'WQT - Theory of Computation-7 | Decidability' },
-  { file: 'test4.html', dir: 'wqt-toc8', name: 'WQT - Theory of Computation-8 | Identify Class Language' }
+  { file: 'test1.html', dir: 'wqt-toc9', name: 'WQT - Theory of Computation-9 | Closure Properties' },
+  { file: 'test2.html', dir: 'wqt-toc10', name: 'WQT - Theory of Computation-10 | Context Free Grammar' },
+  { file: 'test3.html', dir: 'wqt-toc11', name: 'WQT - Theory of Computation-11 | Countability' },
+  { file: 'test4.html', dir: 'wqt-toc12', name: 'WQT - Theory of Computation-12 | Pumping Lemma' }
 ];
 
 let allContent = '';
