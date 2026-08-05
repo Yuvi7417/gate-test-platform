@@ -2,10 +2,11 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const tests = [
-  { file: 'test1.html', dir: 'wqt-toc9', name: 'WQT - Theory of Computation-9 | Closure Properties' },
-  { file: 'test2.html', dir: 'wqt-toc10', name: 'WQT - Theory of Computation-10 | Context Free Grammar' },
-  { file: 'test3.html', dir: 'wqt-toc11', name: 'WQT - Theory of Computation-11 | Countability' },
-  { file: 'test4.html', dir: 'wqt-toc12', name: 'WQT - Theory of Computation-12 | Pumping Lemma' }
+  { 
+    file: 'test1.html', 
+    dir: 'wqt-cd1', // YAHAN APNA FOLDER NAME LIKHE (jaise: wqt-toc13 ya wqt-cd1)
+    name: 'WQT - Compiler Design-1 | Lexical Analysis' // YAHAN APNA TEST KA TOPIC LIKHE
+  }
 ];
 
 let allContent = '';

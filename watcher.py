@@ -3,7 +3,7 @@ import time
 import subprocess
 
 # List of files to monitor
-FILES_TO_WATCH = ["test1.html", "test2.html", "test3.html", "test4.html", "process_all.js"]
+FILES_TO_WATCH = ["test1.html", "process_all.js"]
 LAST_MODIFIED = {}
 
 def get_mtime(filepath):
