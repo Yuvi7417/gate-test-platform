@@ -61,6 +61,7 @@ async function parse() {
     // Extract text and handle images
     const $qTextContainer = $q.find('.res_question_text');
     $qTextContainer.find('style').remove();
+    $qTextContainer.find('.MathJax_Preview, .mjx-chtml, .MJX_Assistive_MathML, .MathJax, script[type^="math/tex"]').remove();
     
     // Images in question
     const qImages = $q.find('img').toArray();
