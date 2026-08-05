@@ -4,8 +4,8 @@ const fs = require('fs');
 const tests = [
   {
     file: 'test1.html',
-    dir: 'wqt-cd2', // YAHAN APNA FOLDER NAME LIKHE (jaise: wqt-toc13 ya wqt-cd1)
-    name: 'WQT -  Compiler Design-2 | Syntax Analysis and Top-Down Parser' // YAHAN APNA TEST KA TOPIC LIKHE
+    dir: 'wqt-cd1', // YAHAN APNA FOLDER NAME LIKHE (jaise: wqt-toc13 ya wqt-cd1)
+    name: 'WQT - Compiler Design-1 | Lexical Analysis' // YAHAN APNA TEST KA TOPIC LIKHE
   }
 ];
 
