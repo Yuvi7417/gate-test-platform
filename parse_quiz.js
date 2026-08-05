@@ -67,7 +67,10 @@ async function parse() {
     for (const img of qImages) {
       const src = $(img).attr('src');
       if (src) {
-        const ext = src.split('.').pop().split('?')[0] || 'png';
+        let ext = src.split('.').pop().split('?')[0];
+        if (!['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp'].includes(ext.toLowerCase())) {
+            ext = 'png';
+        }
         const filename = `q_img${imageIndex++}.${ext}`;
         $(img).attr('src', `/images/quiz/${imgDir}/${filename}`);
         $(img).removeAttr('width').removeAttr('height');

@@ -29,11 +29,16 @@ for (const qDiv of qDivs) {
     const qImages = $q.find('img').toArray();
     for (const img of qImages) {
         const src = $(img).attr('src');
-        if (src && src.startsWith('http')) {
-            const ext = 'png';
-            const filename = `q${num}_img${imageIndex++}.${ext}`;
-            const filepath = path.join(outDir, filename);
-            console.log(`Downloading ${src} to ${filepath}`);
+        if (src) {
+            let ext = src.split('.').pop().split('?')[0];
+            if (!['png', 'jpg', 'jpeg', 'gif', 'svg', 'webp'].includes(ext.toLowerCase())) {
+                ext = 'png';
+            }
+            const filename = `q_img${imageIndex++}.${ext}`;
+            
+            if (src.startsWith('http')) {
+                const filepath = path.join(outDir, filename);
+                console.log(`Downloading ${src} to ${filepath}`);
             
             const client = src.startsWith('https') ? https : http;
             const p = new Promise((resolve, reject) => {
@@ -55,6 +60,7 @@ for (const qDiv of qDivs) {
                 });
             });
             downloadPromises.push(p);
+        }
         }
     }
 }
