@@ -48,46 +48,37 @@ async function parse() {
     const $q = $(qDiv);
     const num = $q.find('.res_qs_num b').text().replace('Q #', '').trim();
     
-    const marksText = $q.find('.res_qs_marks').text();
-    const penaltyText = $q.find('.res_qs_penalty').text();
-    const marks = parseFloat(marksText.replace('Award: ', '')) || 1;
-    const penalty = parseFloat(penaltyText.replace('Penalty: ', '')) || 0;
+    const metaText = $q.find('.res_qs_meta').text();
+    const marksMatch = metaText.match(/Award:\s*([\d.]+)/i);
+    const marks = marksMatch ? parseFloat(marksMatch[1]) : 1;
+    const penaltyMatch = metaText.match(/Penalty:\s*([\d.]+)/i);
+    const penalty = penaltyMatch ? parseFloat(penaltyMatch[1]) : 0;
     
-    // Type
-    const typeText = $q.find('.res_qs_type').text();
     let type = 'MCQ';
-    if (typeText.includes('Numerical')) type = 'NAT';
-    else if (typeText.includes('Multiple Select')) type = 'MSQ';
+    if (metaText.includes('Numerical')) type = 'NAT';
+    else if (metaText.includes('Multiple Select')) type = 'MSQ';
     
     // Extract text and handle images
     const $qTextContainer = $q.find('.res_question_text');
+    $qTextContainer.find('style').remove();
     
     // Images in question
     const qImages = $q.find('img').toArray();
     for (const img of qImages) {
       const src = $(img).attr('src');
-      if (src && src.startsWith('http')) {
-        const ext = 'png';
-        const filename = `q${num}_img${imageIndex++}.${ext}`;
+      if (src) {
+        const ext = src.split('.').pop().split('?')[0] || 'png';
+        const filename = `q_img${imageIndex++}.${ext}`;
         $(img).attr('src', `/images/quiz/${imgDir}/${filename}`);
         $(img).removeAttr('width').removeAttr('height');
         $(img).css('max-width', '75%');
       }
     }
     
-    $qTextContainer.find('.MathJax_Preview').remove();
-    $qTextContainer.find('.mjx-chtml').remove();
-    $qTextContainer.find('.MJX_Assistive_MathML').remove();
-    
-    $qTextContainer.find('script[type^="math/tex"]').each(function() {
-      const type = $(this).attr('type');
-      let math = $(this).html();
-      math = math.replace(/\\/g, '\\\\');
-      
-      if (type.includes('mode=display')) {
-        $(this).replaceWith(`\\$\\$ ${math} \\$\\$`);
-      } else {
-        $(this).replaceWith(`\\\\( ${math} \\\\)`);
+    $qTextContainer.find('mjx-container').each(function() {
+      const $math = $(this).find('math').first();
+      if ($math.length > 0) {
+         $(this).replaceWith($math.prop('outerHTML'));
       }
     });
     
@@ -109,21 +100,26 @@ async function parse() {
     let htmlContent = $qTextContainer.html().trim();
     htmlContent = removeNewlinesOutsidePre(htmlContent);
     
+    if (htmlContent.startsWith('<span style="display: inline;">') && htmlContent.endsWith('</span>')) {
+        htmlContent = htmlContent.substring(31, htmlContent.length - 7);
+    }
+    
     // Answer
-    const correctText = $q.find('.correct_solution').text();
+    // Answer
+    const correctText = $q.find('.res_solution').text();
     let answer = null;
     if (type === 'MCQ' || type === 'MSQ') {
-      const ansMatch = correctText.match(/Correct Answer: ([A-Z, ;]+)/i);
+      const ansMatch = correctText.match(/Correct\s*Answer:\s*([A-D](?:[,\s;]+[A-D])*)/i);
       if (ansMatch) {
         const ansLetters = ansMatch[1].split(/[,;]/).map(s => s.trim().toUpperCase()).filter(s => s);
         if (type === 'MCQ') {
-          answer = ansLetters[0]; // e.g., 'B'
+          answer = ansLetters[0]; 
         } else {
-          answer = ansLetters; // e.g., ['A', 'C']
+          answer = ansLetters; 
         }
       }
     } else if (type === 'NAT') {
-      const ansMatch = correctText.match(/Correct Answer: ([\d.-]+)(?:\s*to\s*([\d.-]+))?/);
+      const ansMatch = correctText.match(/Correct\s*Answer:\s*([\d.-]+)(?:\s*to\s*([\d.-]+))?/i);
       if (ansMatch) {
         if (ansMatch[2]) {
           answer = [parseFloat(ansMatch[1]), parseFloat(ansMatch[2])];
@@ -174,8 +170,10 @@ async function parse() {
         }
     } else if (typeof q.answer === 'number') {
         jsContent += `      answer: "${q.answer}",\n`;
-    } else {
+    } else if (q.answer) {
         jsContent += `      answer: "${q.answer}",\n`;
+    } else {
+        jsContent += `      answer: "null",\n`;
     }
     
     jsContent += `      solution: \`<img src="/images/quiz/${imgDir}/${qNum}.png" style="max-width: 75%;">\`\n`;

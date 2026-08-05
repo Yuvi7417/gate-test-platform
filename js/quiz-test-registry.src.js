@@ -11435,3 +11435,430 @@ registerTest({
   ]
 });
 
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - New Test",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Let <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>M</mi> </math> be the maximum unsigned integer value representable with <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> bits and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>N</mi> </math> be the maximum signed value representable with <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> bits (using 2's complement representation). <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>M</mi> <mo>−</mo> <mi>N</mi> <mo>=</mo> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mo>.</mo> </math>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img src="/images/quiz/wqt-newtest/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>A boolean function <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> together with the don’t care condition <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>d</mi> <mo>;</mo> </math> are given below<br> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo stretchy="false">(</mo> <mi>A</mi> <mo>,</mo> <mi>B</mi> <mo>,</mo> <mi>C</mi> <mo>,</mo> <mi>D</mi> <mo stretchy="false">)</mo> <mo>=</mo> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>5</mn> <mo>,</mo> <mn>7</mn> <mo>,</mo> <mn>9</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math><br> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>d</mi> <mo stretchy="false">(</mo> <mi>A</mi> <mo>,</mo> <mi>B</mi> <mo>,</mo> <mi>C</mi> <mo>,</mo> <mi>D</mi> <mo stretchy="false">)</mo> <mo>=</mo> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>4</mn> <mo>,</mo> <mn>6</mn> <mo>,</mo> <mn>12</mn> <mo>,</mo> <mn>14</mn> <mo stretchy="false">)</mo> <mo>.</mo> </math> </p> <p>The simplified form of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> can be expressed in the sum of minterms as</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>5</mn> <mo>,</mo> <mn>6</mn> <mo>,</mo> <mn>7</mn> <mo>,</mo> <mn>9</mn> <mo>,</mo> <mn>14</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>5</mn> <mo>,</mo> <mn>6</mn> <mo>,</mo> <mn>7</mn> <mo>,</mo> <mn>9</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>5</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>1</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>5</mn> <mo>,</mo> <mn>7</mn> <mo>,</mo> <mn>9</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` In which of the following signed number representations we have more positive numbers than negative numbers?<br> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>1</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> Complement Representation`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> Complement Representation`,
+        `Sign magnitude Representation`,
+        `None of the Above`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-newtest/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` Which of the following decimal number does not cause a loss of precision when represented in IEEE-754 single precision representation?<br> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4096</mn> <mo>×</mo> <mn>4096</mn> <mo>×</mo> <mn>4096</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>248248248</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>35797531</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>123456700</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Two decimal numbers are represented in fixed point representation as <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1111.001</mn> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10.111</mn> <mo>.</mo> </math> The sum of the two numbers rounded to the nearest integer is (assume no overflow) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> </math>.`,
+      image: "",
+      options: [],
+      answer: "18",
+      solution: `<img src="/images/quiz/wqt-newtest/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>A logic circuit implements the following Boolean function: <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <msup> <mi>A</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mi>C</mi> <mo>+</mo> <mi>A</mi> <mi>C</mi> <msup> <mi>D</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math><br> It is found that the circuit input combination <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>=</mo> <mi>D</mi> <mo>=</mo> <mn>1</mn> </math> can never occur. The simplified expression for <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> using the proper don't-care conditions is</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <msup> <mi>A</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mi>C</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>C</mi> <msup> <mi>D</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>C</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <msup> <mi>A</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mi>C</mi> <mo>+</mo> <mi>C</mi> <msup> <mi>D</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math>`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>If <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement representation of the decimal number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>d</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>X</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement representation of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>−</mo> <mi>d</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>Y</mi> <mo>,</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>X</mi> <mo>⊙</mo> <mi>Y</mi> </math> is (<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>⊙</mo> </math> is XNOR operator) </p> `,
+      image: "",
+      options: [
+        `all bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mi>s</mi> </math>`,
+        `all bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mi>s</mi> </math>`,
+        `a power of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> less than a power of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-newtest/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <p>Which of the following functions is not associative?</p> `,
+      image: "",
+      options: [
+        `AND`,
+        `OR`,
+        `EXOR`,
+        `NAND`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-newtest/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` Which of the following is correct regarding denormalized numbers in IEEE-754 floating point representation?<br> `,
+      image: "",
+      options: [
+        `Denormalized numbers can represent a larger value than that can be represented by a normalized number`,
+        `Denormalized numbers has higher precision than normalized numbers`,
+        `The maximum negative value that can be represented by a denormalized number is larger than that represented by a normalized number`,
+        `All of the above`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If the number of prime implicants and essential prime implicants of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo stretchy="false">(</mo> <mi>A</mi> <mo>,</mo> <mi>B</mi> <mo>,</mo> <mi>C</mi> <mo>,</mo> <mi>D</mi> <mo stretchy="false">)</mo> <mo>=</mo> <mo data-mjx-texclass="OP">∑</mo> <mo stretchy="false">(</mo> <mn>0</mn> <mo>,</mo> <mn>6</mn> <mo>,</mo> <mn>8</mn> <mo>,</mo> <mn>13</mn> <mo>,</mo> <mn>14</mn> <mo stretchy="false">)</mo> </math> are represented by <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>m</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> </math> respectively, the value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mi>m</mi> </msup> <mo>×</mo> <msup> <mn>3</mn> <mi>n</mi> </msup> <mo>=</mo> </math>`,
+      image: "",
+      options: [],
+      answer: "216",
+      solution: `<img src="/images/quiz/wqt-newtest/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: ` <p>Which of the following is true about the rules of Boolean addition? (Mark all the appropriate choices)</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mo>+</mo> <mn>0</mn> <mo>=</mo> <mn>0</mn> <mtext mathvariant="monospace">&nbsp;and&nbsp; </mtext> <mn>0</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>+</mo> <mn>0</mn> <mo>=</mo> <mn>1</mn> <mtext mathvariant="monospace">&nbsp;and&nbsp; </mtext> <mn>1</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>+</mo> <mn>0</mn> <mo>=</mo> <mn>1</mn> <mtext mathvariant="monospace">&nbsp;and&nbsp; </mtext> <mn>1</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mo>+</mo> <mn>0</mn> <mo>=</mo> <mn>0</mn> <mtext mathvariant="monospace">&nbsp;and&nbsp; </mtext> <mn>0</mn> <mo>+</mo> <mn>1</mn> <mo>=</mo> <mn>0</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <p>Which of the following statement(s) is/are true?</p> `,
+      image: "",
+      options: [
+        `AND and OR are dual to each other`,
+        `NAND and NOR are dual to each other`,
+        `XOR and XNOR are dual to each other`,
+        `All the above`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-newtest/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> </math> be the maximum value represented in IEEE-754 single-precision representation and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>B</mi> </math> be the maximum value represented in IEEE-754 double precision representation (both ignoring infinities and other special values). <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>B</mi> <mrow data-mjx-texclass="ORD"> <mo>/</mo> </mrow> <mi>A</mi> </math> approximates to </p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mn>23</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mn>270</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mn>99</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mn>308</mn> </mrow> </msup> </math>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-newtest/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` The Boolean expression <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <msup> <mi>A</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mi>B</mi> <mi>C</mi> <msup> <mo stretchy="false">)</mo> <mo data-mjx-alternate="1">′</mo> </msup> <mo>+</mo> <mo stretchy="false">(</mo> <mi>A</mi> <msup> <mi>B</mi> <mo data-mjx-alternate="1">′</mo> </msup> <msup> <mi>C</mi> <mo data-mjx-alternate="1">′</mo> </msup> <msup> <mo stretchy="false">)</mo> <mo data-mjx-alternate="1">′</mo> </msup> </math> simplifies to which of the following options?<br> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>B</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mi>C</mi> </math>`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>Which of the following is the correct way to represent a signed decimal number in <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement representation as a sum of powers of 2? </p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </msub> <mo>…</mo> <msub> <mi>b</mi> <mn>2</mn> </msub> <msub> <mi>b</mi> <mn>1</mn> </msub> <msub> <mi>b</mi> <mn>0</mn> </msub> <msub> <mo stretchy="false">)</mo> <mn>2</mn> </msub> <mo>≡</mo> <munderover> <mo data-mjx-texclass="OP">∑</mo> <mrow data-mjx-texclass="ORD"> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </munderover> <msub> <mi>b</mi> <mi>i</mi> </msub> <msup> <mn>2</mn> <mi>i</mi> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </msub> <mo>…</mo> <msub> <mi>b</mi> <mn>2</mn> </msub> <msub> <mi>b</mi> <mn>1</mn> </msub> <msub> <mi>b</mi> <mn>0</mn> </msub> <msub> <mo stretchy="false">)</mo> <mn>2</mn> </msub> <mo>≡</mo> <mo>−</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msup> <mn>2</mn> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msup> <mo>+</mo> <munderover> <mo data-mjx-texclass="OP">∑</mo> <mrow data-mjx-texclass="ORD"> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </munderover> <msub> <mi>b</mi> <mi>i</mi> </msub> <msup> <mn>2</mn> <mi>i</mi> </msup> <mo>.</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </msub> <mo>…</mo> <msub> <mi>b</mi> <mn>2</mn> </msub> <msub> <mi>b</mi> <mn>1</mn> </msub> <msub> <mi>b</mi> <mn>0</mn> </msub> <msub> <mo stretchy="false">)</mo> <mn>2</mn> </msub> <mo>≡</mo> <mo>−</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msup> <mn>2</mn> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msup> <mo>+</mo> <munderover> <mo data-mjx-texclass="OP">∑</mo> <mrow data-mjx-texclass="ORD"> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </munderover> <msub> <mi>b</mi> <mi>i</mi> </msub> <msup> <mn>2</mn> <mi>i</mi> </msup> <mo>.</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </msub> <mo>…</mo> <msub> <mi>b</mi> <mn>2</mn> </msub> <msub> <mi>b</mi> <mn>1</mn> </msub> <msub> <mi>b</mi> <mn>0</mn> </msub> <msub> <mo stretchy="false">)</mo> <mn>2</mn> </msub> <mo>≡</mo> <mo>−</mo> <msub> <mi>b</mi> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>1</mn> </mrow> </msub> <msup> <mn>2</mn> <mrow data-mjx-texclass="ORD"> <mi>n</mi> </mrow> </msup> <mo>+</mo> <munderover> <mo data-mjx-texclass="OP">∑</mo> <mrow data-mjx-texclass="ORD"> <mi>i</mi> <mo>=</mo> <mn>0</mn> </mrow> <mrow data-mjx-texclass="ORD"> <mi>n</mi> <mo>−</mo> <mn>2</mn> </mrow> </munderover> <msub> <mi>b</mi> <mi>i</mi> </msub> <msup> <mn>2</mn> <mi>i</mi> </msup> <mo>.</mo> </math>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-newtest/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MCQ",
+      text: ` <p>If <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>⊙</mo> <mi>B</mi> <mo>=</mo> <mi>C</mi> </math>, (<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>⊙</mo> </math> is XNOR operator) then which of the following is/are TRUE? (Mark all the appropriate choices)</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>⊙</mo> <mi>C</mi> <mo>=</mo> <mi>B</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>B</mi> <mo>⊙</mo> <mi>C</mi> <mo>=</mo> <mi>A</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>⊙</mo> <mi>B</mi> <mo>⊙</mo> <mi>C</mi> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>⊙</mo> <mi>B</mi> <mo>⊙</mo> <mi>C</mi> <mo>=</mo> <mn>0</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>The implicants being chosen for the circuit implementation are marked in the following four Karnaugh-maps. In which of them, a static-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> hazard is not possible?</p> `,
+      image: "",
+      options: [
+        `<img alt="" src="/images/quiz/wqt-newtest/q_img1.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-newtest/q_img2.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-newtest/q_img3.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-newtest/q_img4.png" style="max-width: 75%;">`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` The IEEE-754 single precision floating point representation (in hexadecimal format) for the decimal number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16.125</mn> </math> is?`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x41810000</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x02010000</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x02C08000</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x42401000</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <p>Which of the following multiplier input causes the least number of additions (subtraction being implemented as <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement addition) for a Booth's multiplier?</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>111110</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>000000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>111111</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>010101</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-newtest/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>Which of the following is/are special values in IEEE-754 single precision representation?</p> <ol> <li>All mantissa bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mi>s</mi> </math> </li> <li>All exponent bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mi>s</mi> </math> </li> <li>All exponent bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mi>s</mi> </math> </li> <li>All mantissa bits <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mi>s</mi> </math> </li> <li>Both mantissa and exponent bits all <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mi>s</mi> </math> </li> <li>Both mantissa and exponent bits all <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mi>s</mi> </math> </li> </ol> <p>&nbsp;</p> `,
+      image: "",
+      options: [
+        `1 and 4&nbsp;only`,
+        `1, 4, 5&nbsp;and 6&nbsp;only`,
+        `2, 3, 5&nbsp;and 6&nbsp;only`,
+        `5 and 6&nbsp;only`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/20.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <p>The decimal number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>31.03125</mn> </math> can be expressed in scientific notation as :</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1.111100001</mn> <mo>∗</mo> <msup> <mn>2</mn> <mn>2</mn> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1.111100011</mn> <mo>∗</mo> <msup> <mn>2</mn> <mn>3</mn> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1.111100001</mn> <mo>∗</mo> <msup> <mn>2</mn> <mn>4</mn> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1.111000001</mn> <mo>∗</mo> <msup> <mn>2</mn> <mn>3</mn> </msup> </math>`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/21.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Assume that the propagation delay in each gate in a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16</mn> </math>-bit ripple carry adder (made of AND, OR and NOT gates only with upto <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math> inputs) is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mi>n</mi> <mi>s</mi> <mo>.</mo> </math> Time taken in <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext>nanoseconds</mtext> </math> to perform a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16</mn> </math>-bit addition is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mo>.</mo> </math>`,
+      image: "",
+      options: [],
+      answer: "33",
+      solution: `<img src="/images/quiz/wqt-newtest/22.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: ` <p>Which of the following boolean expression is not equal to the other three?</p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mi>x</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mo>⊕</mo> <mi>y</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mi>y</mi> <mo>+</mo> <msup> <mi>x</mi> <mo data-mjx-alternate="1">′</mo> </msup> <msup> <mi>y</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mi>x</mi> <mo data-mjx-alternate="1">′</mo> </msup> <mo>⊕</mo> <msup> <mi>y</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>⊕</mo> <msup> <mi>y</mi> <mo data-mjx-alternate="1">′</mo> </msup> </math>`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/23.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>Which of the following statements is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext>INCORRECT</mtext> </math>? </p> <ol> <li>Dual of a boolean expression&nbsp;is obtained by interchanging OR and AND operators and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>0</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>1</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> </li> <li>A boolean statement&nbsp;is valid if and only if its dual is valid</li> <li>Dual of a boolean expression&nbsp;is obtained by interchanging OR and AND operators and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>0</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>1</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> and by complementing all literals </li> <li>There exist boolean functions for which dual and complement are the same</li> </ol> `,
+      image: "",
+      options: [
+        `only <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> <mo>,</mo> <mn>3</mn> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+        `only <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/24.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `A decimal number has <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> digits. The minimum number of digits required to accurately represent the number in binary is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mo>.</mo> </math>`,
+      image: "",
+      options: [],
+      answer: "107",
+      solution: `<img src="/images/quiz/wqt-newtest/25.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` Which of the following <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> <mo>−</mo> <mi>b</mi> <mi>i</mi> <mi>t</mi> </math> bits stream correctly represents the maximum possible normalized value represented in IEEE-754 single-precision representation?<br> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>0</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>sign</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>exponent</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111111111111111111</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>mantissa</mtext> </mrow> </munder> </math><br>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>0</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>sign</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>exponent</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111111111111111110</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>mantissa</mtext> </mrow> </munder> </math><br>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>0</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>sign</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111110</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>exponent</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111111111111111110</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>mantissa</mtext> </mrow> </munder> </math><br>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>0</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>sign</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111110</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>exponent</mtext> </mrow> </munder> <munder> <mrow data-mjx-texclass="OP"> <munder> <mn>11111111111111111111111</mn> <mo>⏟</mo> </munder> </mrow> <mrow data-mjx-texclass="ORD"> <mtext>mantissa</mtext> </mrow> </munder> </math>`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-newtest/26.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `If the number of Boolean functions that can be formed over <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> distinct boolean variables is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>d</mi> <mo>,</mo> <msub> <mi>log</mi> <mn>2</mn> </msub> <mo data-mjx-texclass="NONE">⁡</mo> <mi>d</mi> <mo>=</mo> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> <mi mathvariant="normal">_</mi> </math>`,
+      image: "",
+      options: [],
+      answer: "16",
+      solution: `<img src="/images/quiz/wqt-newtest/27.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>If <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>=</mo> <mi>B</mi> <mo>=</mo> <mi>C</mi> <mo>=</mo> <mn>1</mn> <mo>,</mo> <mi>F</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>G</mi> </math> are respectively<br> &nbsp;</p> <p><img alt="" src="/images/quiz/wqt-newtest/q_img5.jpg" style="max-width: 75%;"></p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mo>,</mo> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> <mo>,</mo> <mn>1</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-newtest/28.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` <p>The decimal and hexadecimal representation for the bit string <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1111110000100101</mn> </math>, represented in <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16</mn> <mo>−</mo> <mi>b</mi> <mi>i</mi> <mi>t</mi> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>1</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement representation are: </p> `,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>−</mo> <mn>986</mn> <mo>,</mo> <mtext mathvariant="monospace">0xFC25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3109</mn> <mo>,</mo> <mtext mathvariant="monospace">0xFC25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3109</mn> <mo>,</mo> <mtext mathvariant="monospace">0xF3DA</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>986</mn> <mo>,</mo> <mtext mathvariant="monospace">0xF3DA</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-newtest/29.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: ` The <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16</mn> </math> bit <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mn>2</mn> <mo data-mjx-alternate="1">′</mo> </msup> <mi>s</mi> </math> complement representation and the hexadecimal representation after finding 2's complement of the decimal number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2688</mn> <mo>,</mo> </math> respectively are:`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1010</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0000</mn> <mo>,</mo> <mtext mathvariant="monospace">0xF580</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1111</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0101</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0000</mn> <mo>,</mo> <mtext mathvariant="monospace">0x0A80</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1111</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0101</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0000</mn> <mo>,</mo> <mtext mathvariant="monospace">0xF580</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1010</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>1000</mn> <mstyle scriptlevel="0"> <mspace width="0.278em"></mspace> </mstyle> <mn>0000</mn> <mo>,</mo> <mtext mathvariant="monospace">0x0A80</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-newtest/30.png" style="max-width: 75%;">`
+    },
+  ]
+});
