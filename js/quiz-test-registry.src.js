@@ -13300,3 +13300,236 @@ registerTest({
   ]
 });
 
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT -  Compiler Design-2 | Syntax Analysis and Top-Down Parser",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the  \\( \\textbf{Context-Free Grammar (CFG)} \\) defined by the production rules:<br> \$\$  S \\rightarrow S S+|S S *| a  \$\$ <br>Which of the following statements regarding the properties of this grammar and its generated language are  \\( \\textbf{CORRECT} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is unambiguous because every string in the language possesses a unique leftmost derivation.<br>&nbsp;`,
+        `The language generated consists of all valid arithmetic expressions in prefix notation using the operand  \\( a \\).<br>&nbsp;`,
+        `The grammar is ambiguous as it allows for multiple parse trees for the string  \\( a a+a * \\).<br>&nbsp;`,
+        `The language generated is the set of all valid postfix expressions over the alphabet  \\( \\{a,+, *\\} \\).`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-cd2/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following grammar for boolean expressions:</p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \\( \\,bexpr \\to bexpr\\ or\\ bterm \\mid bterm \\) </p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \\( \\,bterm \\to bterm\\ and\\ bfactor \\mid bfactor \\) </p> <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \\( \\,bfactor \\to not\\ bfactor \\mid (bexpr) \\mid true \\mid false \\) </p> <p>Which of the following statements regarding this grammar are  \\( \\textbf{CORRECT} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `The operator and has higher precedence than or because it is defined further down the hierarchy of productions.<br>&nbsp;`,
+        `The expression true or false and false is ambiguous as it can result in two different truth values depending on the derivation.<br>&nbsp;`,
+        `The grammar is left-recursive, making the operators or and and left-associative.<br>&nbsp;`,
+        `The string not true and false is interpreted by the grammar as (not true) and false.`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-cd2/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar (CFG)  \\( G \\) defined by the following production rules:<br> \$\$  \\begin{aligned} &amp; S \\rightarrow 0 \\mid A \\\\ &amp; A \\rightarrow A B \\\\ &amp; B \\rightarrow 1 \\end{aligned}  \$\$ <br>After applying the algorithm to eliminate all  \\( \\textbf{useless symbols} \\) (symbols that are either nongenerating or unreachable), which of the following represents the resulting simplified grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S \\rightarrow 0 \\mid A, \\quad A \\rightarrow A B, \\quad B \\rightarrow 1 \\) <br>&nbsp;`,
+        `\\( S \\rightarrow 0, \\quad B \\rightarrow 1 \\) <br>&nbsp;`,
+        `\\( S \\rightarrow 0 \\)<br>&nbsp;`,
+        `\\( S \\rightarrow 0, \\quad A \\rightarrow A B \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG), which includes an  \\( \\epsilon \\) (epsilon) production for the non-terminal  \\( A \\) :<br> \$\$  \\begin{aligned} &amp; S \\rightarrow A B \\$ \\\\ &amp; A \\rightarrow x A|B| \\epsilon \\\\ &amp; B \\rightarrow y z B \\mid z \\end{aligned}  \$\$ <br>With the addition of the rule  \\( A \\rightarrow \\epsilon \\), is the grammar still an LL(1) grammar? Choose the correct classification and justification.<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `Yes, the grammar remains  \\( \\operatorname{LL}(1) \\) because  \\( \\operatorname{FIRST}(\\epsilon)=\\{\\epsilon\\} \\) , which is disjoint from  \\( \\operatorname{First}(x A) \\) and  \\( \\operatorname{FiRST}(B) \\).<br>&nbsp;`,
+        `No, the grammar is no longer  \\( \\mathrm{LL}(1) \\) because adding  \\( A \\rightarrow \\epsilon \\) creates a FIRST-FIRST conflict between  \\( A \\rightarrow x A \\) and  \\( A \\rightarrow B \\).<br>&nbsp;`,
+        `No, the grammar is no longer  \\( \\mathrm{LL}(1) \\) because the addition of \\( A \\rightarrow \\epsilon \\) introduces a FIRST-FOLLOW conflict for non-terminal  \\( A \\) on lookaheads  \\( y \\) and  \\( z \\).<br>&nbsp;`,
+        `Yes, the grammar remains  \\( \\mathrm{LL}(1) \\) because  \\( \\operatorname{FOLLOW}(A)=\\{\\$\\} \\), which does not intersect with the FIRST sets of  \\( A \\) 's other productions.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG) from the provided parsing table example:<br> \$\$  \\begin{aligned} &amp; S \\rightarrow A B \\mid e D a \\\\ &amp; A \\rightarrow a b \\mid c \\\\ &amp; B \\rightarrow d C \\\\ &amp; C \\rightarrow e C \\mid \\epsilon \\\\ &amp; D \\rightarrow f D \\mid \\epsilon \\end{aligned}  \$\$ <br><br><br>Based on the properties of the grammar and the construction of its predictive parsing table, which of the following statements is TRUE? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is not LL(1) because there is a FIRST-FIRST conflict for the non-terminal  \\( S \\).<br>&nbsp;`,
+        `The grammar is not LL(1) because the nullable non-terminal  \\( D \\) creates a FIRST-FOLLOW conflict on the terminal  \\( a \\).<br>&nbsp;`,
+        `The grammar is not  \\( \\mathrm{LL}(1) \\) because the nullable non-terminal  \\( C \\) creates a FIRST-FOLLOW conflict on the terminal  \\( e \\).<br>&nbsp;`,
+        `The grammar is LL(1) because there are no FIRST-FIRST or FIRST-FOLLOW conflicts, resulting in at most one production per parsing table entry.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-cd2/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the Context-Free Grammar (CFG)  \\( G_{1} \\) :<br> \$\$  S \\rightarrow S+S|S S|(S)|S *| a  \$\$<br>Which of the following statements regarding  \\( G_{1} \\) are  \\( \\textbf{CORRECT} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is ambiguous for the string  \\( a a+a \\).<br>&nbsp;`,
+        `The string  \\( (a+a) * \\) is a valid member of  \\( L\\left(G_{1}\\right) \\).<br>&nbsp;`,
+        `The grammar is unambiguous because of the parentheses rule.<br>&nbsp;`,
+        `The string aaa can be derived in multiple ways.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-cd2/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the grammar  \\( G_{2}: S \\rightarrow a S b S|b S a S| \\epsilon \\). Which statements are  \\( \\textbf{CORRECT} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `The string  \\( a b a b \\) has more than one unique parse tree.<br>&nbsp;`,
+        `Every string generated has an equal number of  \\( a \\) 's and  \\( b \\) 's.<br>&nbsp;`,
+        `The string  \\( a a b b \\) is generated by this grammar.<br>&nbsp;`,
+        `The grammar is unambiguous.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-cd2/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the standard algorithm for eliminating left recursion from a contextfree grammar  \\( G \\) (given that  \\( G \\) initially has no cycles or  \\( \\epsilon \\)-productions), as detailed below:<br><br> \\( \\textbf{Algorithm} \\): Eliminating left recursion </p> <ol> <li>arrange the nonterminals in some order  \\( A_{1}, A_{2}, \\ldots, A_{n} \\). </li> <li>&nbsp;for (each  \\( i \\) from 1 to  \\( n \\) ) { </li> <li>&nbsp;for (each  \\( j \\) from 1 to  \\( i-1 \\) ) { </li> <li>replace each production of the form  \\( A_{i} \\rightarrow A_{j} \\gamma \\) by the productions  \\( A_{i} \\rightarrow \\delta_{1} \\gamma\\left|\\delta_{2} \\gamma\\right| \\cdots \\mid \\delta_{k} \\gamma \\) , where  \\( A_{j} \\rightarrow \\delta_{1}\\left|\\delta_{2}\\right| \\cdots \\mid \\delta_{k} \\) are all current  \\( A_{j} \\)-productions </li> <li>&nbsp;}</li> <li>&nbsp;eliminate the immediate left recursion among the  \\( A_{i} \\)-productions </li> <li>}</li> </ol> <p>In the context of this algorithm, what is the fundamental computational purpose of the core inner logic executed inside the  \\( j \\) 's for loop (specifically, the substitution happening in Step  \\( 4 \\))? </p> <p></p>`,
+      image: "",
+      options: [
+        `It eliminates immediate left recursion for the nonterminal  \\( A_{i} \\) directly by introducing new primed nonterminals.<br>&nbsp;`,
+        `It removes  \\( \\epsilon \\)-productions from the grammar to ensure the resulting grammar adheres to the strict constraints of top-down parsing.<br>&nbsp;`,
+        `It converts indirect left recursion into immediate left recursion by substituting the expanded bodies of previously processed  \\( A_{j} \\)-productions into the current  \\( A_{i} \\)-productions.<br>&nbsp;`,
+        `It reorders the grammar's nonterminals dynamically during runtime to guarantee that  \\( A_{i} \\) always derives strings that strictly begin with a terminal symbol.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG) representing the "dangling-else" problem for conditional statements:<br> \$\$  \\begin{aligned} &amp; S \\rightarrow i E t S|i E t S e S| a \\\\ &amp; E \\rightarrow b \\end{aligned}  \$\$ <br>(where  \\( i, t, e \\) stand for  \\( \\textbf{if, then, else} \\), and  \\( a, b \\) are other terminals).<br><br>To make this grammar suitable for top-down predictive parsing, we must eliminate non-determinism by applying  \\( \\textbf{left-factoring} \\). Which of the following represents the correct grammar after applying the left-factoring algorithm? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S \\rightarrow i E t S^{\\prime} \\mid a \\) <br> \\( S^{\\prime} \\rightarrow S \\mid S e S \\) <br> \\( E \\rightarrow b \\)<br>&nbsp;`,
+        `\\( S \\rightarrow i E t S S^{\\prime} \\mid a \\) <br> \\( S^{\\prime} \\rightarrow e S \\mid \\epsilon \\) <br> \\( E \\rightarrow b \\)<br>&nbsp;`,
+        `\\( S \\rightarrow i E t S S^{\\prime} e S \\mid a \\) <br> \\( S^{\\prime} \\rightarrow \\epsilon \\)<br> \\( E \\rightarrow b \\)<br>&nbsp;`,
+        `\\( S \\rightarrow i E S^{\\prime} \\mid a \\) <br> \\( S^{\\prime} \\rightarrow t S \\mid t S e S \\) <br> \\( E \\rightarrow b \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-cd2/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following context-free grammar:<br><br> \$\$  S \\rightarrow S+S|S S|(S)|S *| a  \$\$<br>Left factoring is a grammar transformation technique used to resolve FIRSTset conflicts when multiple productions for the same non-terminal share a common prefix. If you apply the standard left factoring algorithm to this grammar, which of the following represents the correct transformed grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( S\\to(S)S'\\mid aS' \\)<br> \\( S'\\to+SS'\\mid SS'\\mid *S\\mid\\epsilon \\) <br>&nbsp;`,
+        `\\( S\\to SS'\\mid(S)\\mid a \\)<br>&nbsp; \\( S'\\to+S\\mid S\\mid *\\mid\\epsilon \\)<br>&nbsp;`,
+        `\\( S\\to SS'\\mid(S)\\mid a \\)<br>&nbsp; \\( S'\\to+S\\mid S\\mid * \\)<br>&nbsp;`,
+        `\\( S\\to S+S'\\mid SS'\\mid(S)\\mid a \\) <br>&nbsp; \\( S'\\to S\\mid * \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the grammar:<br> \$\$  \\begin{aligned} \\text { rexp } &amp; \\rightarrow \\text { rexp }+ \\text { rterm } \\mid \\text { rterm } \\\\ \\text { rterm } &amp; \\rightarrow \\text { rterm } r \\text { factor } \\mid \\text { rfactor } \\\\ \\text { rfactor } &amp; \\rightarrow \\text { rfactor } * \\mid \\text { rprimary } \\\\ \\text { rprimary } &amp; \\rightarrow a \\mid b \\end{aligned}  \$\$ <br>Which of the following grammars is obtained after removing left recursion? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( rexp\\to rterm\\ rexp' \\)<br> \\( rexp'\\to +\\ rterm\\ rexp'\\mid \\epsilon \\) <br> \\( rterm\\to rfactor\\ rterm' \\)<br> \\( rterm'\\to rfactor\\ rterm'\\mid \\epsilon \\) <br> \\( rfactor\\to rprimary\\ rfactor' \\)<br> \\( rfactor'\\to *\\ rfactor'\\mid \\epsilon \\) <br> \\( rprimary\\to a\\mid b \\)<br>&nbsp;`,
+        `\\( rexp\\to rexp+rterm\\mid rterm \\)<br> \\( rterm\\to rfactor\\ rterm \\)<br> \\( rterm'\\to rfactor\\mid \\epsilon \\)<br> \\( rfactor\\to rprimary*\\mid rprimary \\)<br> \\( rprimary\\to a\\mid b \\)<br>&nbsp;`,
+        `\\( rexp\\to +\\ rterm\\ rexp'\\mid rterm \\)<br> \\( rexp'\\to rexp\\mid \\epsilon \\)<br> \\( rterm\\to rfactor \\)<br> \\( rfactor\\to rprimary\\mid rprimary \\)<br> \\( rprimary\\to a\\mid b \\)<br>&nbsp;`,
+        `\\( rexp\\to rterm+rexp\\mid rterm \\)<br> \\( rterm\\to rfactor\\ rterm\\mid *rfactor \\) <br> \\( rfactor\\to rprimary*\\mid rprimary \\)<br> \\( rprimary\\to a\\mid b \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-cd2/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG) for arithmetic expressions:<br> \$\$  \\begin{aligned} E &amp; \\rightarrow T E^{\\prime} \\\\ E^{\\prime} &amp; \\rightarrow+T E^{\\prime} \\mid \\epsilon \\\\ T &amp; \\rightarrow F T^{\\prime} \\\\ T^{\\prime} &amp; \\rightarrow * F T^{\\prime} \\mid \\epsilon \\\\ F &amp; \\rightarrow(E) \\mid \\text { id } \\end{aligned}  \$\$ <br><br>Which of the following statements correctly describes the properties of this grammar regarding ambiguity and its classification as an LL(1) grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is ambiguous and therefore not  \\( \\mathrm{LL}(1) \\).<br>&nbsp;`,
+        `The grammar is unambiguous but is not  \\( \\mathrm{LL}(1) \\) because of the  \\( \\epsilon \\)-productions.<br>&nbsp;`,
+        `The grammar is ambiguous but can still be parsed by an  \\( \\mathrm{LL}(1) \\) parser.<br>&nbsp;`,
+        `The grammar is unambiguous and is an LL(1) grammar.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-cd2/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following context-free grammar:<br> \$\$  \\begin{aligned} &amp; S \\rightarrow A \\mathbb{S} \\\\ &amp; A \\rightarrow x A x \\mid C \\\\ &amp; B \\rightarrow y B y \\mid C \\\\ &amp; C \\rightarrow z B z|w A w| \\epsilon \\end{aligned}  \$\$ <br>Which of the following statements correctly describes the LL(1) parsing property of the given grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is  \\( \\mathrm{LL}(1) \\) because the FIRST sets of all right-hand side alternatives for every non-terminal are mutually disjoint.<br>&nbsp;`,
+        `The grammar is not  \\( \\mathrm{LL}(1) \\) because it contains left recursion, which violates the  \\( \\mathrm{LL}(1) \\) property.<br>&nbsp;`,
+        `The grammar is not LL(1) because there are FIRST-FOLLOW conflicts caused by nullable productions (e.g., for non-terminal  \\( A \\) on lookahead  \\( x \\) ).<br>&nbsp;`,
+        `The grammar is  \\( \\mathrm{LL}(1) \\) because it is left-factored and unambiguous.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG) with the start symbol  \\( S \\) :<br> \$\$  \\begin{array}{ll} S \\to AB\\$ &amp; (1) \\\\ A \\to xA &amp; (2) \\\\ A \\to B &amp; (3) \\\\ B \\to yzB &amp; (4) \\\\ B \\to z &amp; (5) \\end{array}  \$\$ <br><br>Which of the following statements correctly evaluates whether the given grammar is an LL(1) grammar? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is not LL(1) because there is a FIRST-FIRST conflict for the productions of non-terminal \\( A \\).<br>&nbsp;`,
+        `The grammar is not LL(1) because it contains indirect left recursion.<br>&nbsp;`,
+        `The grammar is LL(1) because the FIRST sets of the right-hand sides of all alternative productions for every non-terminal are mutually disjoint.<br>&nbsp;`,
+        `The grammar is not LL(1) because there is a FIRST-FOLLOW conflict for the non-terminal B.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-cd2/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following Context-Free Grammar (CFG) for arithmetic expressions, where  \\( \\mathbf{n} \\) is a terminal representing a number or identifier:<br> \$\$  \\begin{aligned} S &amp; \\rightarrow T S^{\\prime} \\\\ S^{\\prime} &amp; \\rightarrow+S \\mid \\epsilon \\\\ T &amp; \\rightarrow F T^{\\prime} \\\\ T^{\\prime} &amp; \\rightarrow * T \\mid \\epsilon \\\\ F &amp; \\rightarrow \\mathbf{n} \\mid(S) \\end{aligned}  \$\$ <br><br><br><br>Which of the following statements is TRUE regarding whether the given grammar is LL(1)? </p> <p></p>`,
+      image: "",
+      options: [
+        `The grammar is not  \\( \\mathrm{LL}(1) \\) because it contains left recursion in the productions for  \\( S^{\\prime} \\) and  \\( T^{\\prime} \\).<br>&nbsp;`,
+        `The grammar is not LL(1) because there is a FIRST-FOLLOW conflict for the non-terminal  \\( S^{\\prime} \\).<br>&nbsp;`,
+        `The grammar is not LL(1) because there is a FIRST-FOLLOW conflict for the non-terminal  \\( T^{\\prime} \\).<br>&nbsp;`,
+        `The grammar is  \\( \\mathrm{LL}(1) \\) because it is free of left recursion, and for every non-terminal with multiple productions, the required FIRST and FOLLOW set conditions are strictly satisfied.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-cd2/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
