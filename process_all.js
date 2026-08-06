@@ -2,11 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const tests = [
-  {
-    file: 'test1.html',
-    dir: 'wqt-cd1', // YAHAN APNA FOLDER NAME LIKHE (jaise: wqt-toc13 ya wqt-cd1)
-    name: 'WQT - Compiler Design-1 | Lexical Analysis' // YAHAN APNA TEST KA TOPIC LIKHE
-  }
+  { file: 'test1.html', dir: 'wqt-cd1', name: 'WQT - Compiler Design-1 | Lexical Analysis' },
+  { file: 'test2.html', dir: 'wqt-cd2', name: 'WQT - Compiler Design-2 | Syntax Analysis and Top-Down Parser' },
+  { file: 'test3.html', dir: 'wqt-cd3', name: 'WQT - Compiler Design-3 | Bottom Up Parsing' },
+  { file: 'test4.html', dir: 'wqt-cd4', name: 'WQT - Compiler Design-4 | Syntax Directed Translation & SDD' }
 ];
 
 let allContent = '';
