@@ -2,10 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const tests = [
-  { file: 'test1.html', dir: 'wqt-dbms4', name: 'WQT - DBMS-4 | Normal Forms' },
-  { file: 'test2.html', dir: 'wqt-dbms5', name: 'WQT - DBMS-5 | Normalization' },
-  { file: 'test3.html', dir: 'wqt-dbms6', name: 'WQT - DBMS-6 | Normalization' },
-  { file: 'test4.html', dir: 'wqt-dbms7', name: 'WQT - DBMS-7 | Relational Algebra' }
+  { file: 'test1.html', dir: 'wqt-dbms12', name: 'WQT - DBMS-12 | Disk' },
+  { file: 'test2.html', dir: 'wqt-dbms13', name: 'WQT - DBMS-13 | File Organization' },
+  { file: 'test3.html', dir: 'wqt-dbms14', name: 'WQT - DBMS-14 | Indexing' },
+  { file: 'test4.html', dir: 'wqt-dbms15', name: 'WQT - DBMS-15 | B Tree and B+ Tree' }
 ];
 
 let allContent = '';
