@@ -2,10 +2,10 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 
 const tests = [
-  { file: 'test1.html', dir: 'wqt-cd1', name: 'WQT - Compiler Design-1 | Lexical Analysis' },
-  { file: 'test2.html', dir: 'wqt-cd2', name: 'WQT - Compiler Design-2 | Syntax Analysis and Top-Down Parser' },
-  { file: 'test3.html', dir: 'wqt-cd3', name: 'WQT - Compiler Design-3 | Bottom Up Parsing' },
-  { file: 'test4.html', dir: 'wqt-cd4', name: 'WQT - Compiler Design-4 | Syntax Directed Translation & SDD' }
+  { file: 'test1.html', dir: 'wqt-cd5', name: 'WQT - Compiler Design-5 | Intermediate Code Generation and Optimization' },
+  { file: 'test2.html', dir: 'wqt-dbms1', name: 'WQT - DBMS-1 | Relational Model' },
+  { file: 'test3.html', dir: 'wqt-dbms2', name: 'WQT - DBMS-2 | Functional Dependency' },
+  { file: 'test4.html', dir: 'wqt-dbms3', name: 'WQT - DBMS-3 | Normalization, Relational Model' }
 ];
 
 let allContent = '';
