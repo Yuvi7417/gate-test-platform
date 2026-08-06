@@ -290,10 +290,13 @@ const authenticateToken = (req, res, next) => {
 app.post('/api/enroll-free', authenticateToken, async (req, res) => {
   const { courseId } = req.body;
   try {
-    await User.updateOne(
-      { _id: req.user._id },
+    const result = await User.updateOne(
+      { email: req.user.email },
       { $addToSet: { enrolledCourses: courseId } }
     );
+    if (result.matchedCount === 0) {
+      return res.status(404).json({ success: false, message: "User not found to enroll." });
+    }
     res.json({ success: true, message: "Enrolled successfully!" });
   } catch (err) {
     console.error("DB Error updating user courses:", err);
@@ -313,10 +316,15 @@ app.post('/api/verify-payment', authenticateToken, async (req, res) => {
   if (generatedSignature === razorpay_signature) {
     // Add course to user in DB
     try {
-      await User.updateOne(
-        { _id: req.user._id },
+      const result = await User.updateOne(
+        { email: req.user.email },
         { $addToSet: { enrolledCourses: courseId } }
       );
+      
+      if (result.matchedCount === 0) {
+         return res.status(404).json({ success: false, message: "User not found in database to enroll." });
+      }
+      
       res.json({ success: true, message: "Payment verified successfully", paymentId: razorpay_payment_id });
     } catch (err) {
       console.error("DB Error updating user courses:", err);
