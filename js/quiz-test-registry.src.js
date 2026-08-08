@@ -20193,439 +20193,75 @@ registerTest({
 
 
 registerTest({
-  series: "Aptitude",
+  series: "weekly-cs-gate-2027",
   name: "WQT - Aptitude-3",
   date: "Oct 01, 2026",
   questions: [
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>The figure below illustrates the variation in the congestion window size of a TCP connection over time:<br><br>(On receiving 3 duplicate ACKs, the congestion window is reduced to half.)</p> <p style="text-align:center; margin:22px 0; line-height:1.55"><img alt="TCP Congestion Window Graph" style="max-width: 75%;" src="/images/quiz/wqt-apti3/q_img1.png"> </p> <p style="line-height:1.55;">Which of the following statements is/are correct?</p> <p></p>`,
-      image: "",
-      options: [
-        `TCP is in the slow start phase during the time periods  \\(  t_0 - t_1  \\),  \\(  t_5 - t_6  \\), and  \\(  t_8 - t_{9}  \\).`,
-        `TCP is in the congestion avoidance phase during the time periods  \\(  t_0 - t_1  \\),  \\(  t_5 - t_6  \\), and  \\(  t_8 - t_{10}  \\).`,
-        `TCP receives duplicate ACKs at time points  \\(  t_2  \\) and  \\(  t_3  \\).`,
-        `TCP experiences timeouts at time points  \\(  t_2  \\),  \\(  t_3  \\), and  \\(  t_9  \\).`,
-      ],
-      answer: ["A", "C"],
-      solution: `<img src="/images/quiz/wqt-apti3/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>For a client-server application running over TCP or UDP, which of the following is true</p> <p></p>`,
+      text: `<p></p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img1.png" style="max-width: 75%;"> </p> <p><br>Among the  \\( 50 \\) African countries represented in the chart above, how many countries have a population between  \\( 10 \\) million and  \\( 50 \\) million people and a GDP between  \\( \\$ 10 \\) billion and  \\( \\$ 20 \\) billion? </p> <p></p>`,
       image: "",
       options: [
-        `the server program must be executed before the client program<br>&nbsp;`,
-        `the client program must be executed before the server program<br>&nbsp;`,
-        `the server program can be executed before or after the client program<br>&nbsp;`,
-        `none of the above`,
+        `\\( 6 \\)<br>&nbsp;`,
+        `\\( 7 \\)<br>&nbsp;`,
+        `\\( 13 \\)<br>&nbsp;`,
+        `\\( 16 \\)`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti3/2.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-3/1.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Host  \\( A \\) sends two TCP segments to Host  \\( B \\) back-to-back. Host  \\( B \\) has already received bytes up to  \\( 110 \\). The first segment sent contains  \\( 100 \\) bytes with a sequence number  \\( 111 \\), and the second contains  \\( 10 \\) bytes. If the second segment arrives before the first, what will be the acknowledgment number sent by Host  \\( B \\) in response? </p> <p></p>`,
+      text: `<p></p> <p>The sequence  \\( S \\) is defined by  \\( S_{n}=S_{n-1}+S_{n-2}-1 \\) for each integer  \\( n \\geq 3 \\). If  \\( S_{1}=11 \\) and  \\( S_{3}=10 \\), what is the value of  \\( S_{5} \\) ? </p> <p></p>`,
       image: "",
       options: [
-        `\\( 111 \\)<br>&nbsp;`,
-        `\\( 211 \\)<br>&nbsp;`,
-        `\\( 121 \\)<br>&nbsp;`,
-        `\\( 110 \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti3/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In TCP, define cwnd to be the congestion window size and rwnd to be the receive window size; the amount of unacknowledged data can not exceed</p> <p></p>`,
-      image: "",
-      options: [
-        `rwnd<br>&nbsp;`,
-        `cwnd<br>&nbsp;`,
-        `min{cwnd, rwnd}<br>&nbsp;`,
-        `max{cwnd, rwnd}`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Professor Rao is explaining TCP congestion control to his students. He presents the following scenario: </p> <ul> <li>A TCP sender is operating in the slow start phase.<br>&nbsp;</li> <li>The Maximum Segment Size (MSS)  \\( =1000 \\) bytes.<br>&nbsp; </li> <li>Immediately after the  \\( 10^{th} \\) ACK, the Congestion Window (CWND) is  \\( 2000 \\) bytes.<br>&nbsp; </li> <li>With this window, the sender transmits packets  \\( 11 \\) and  \\( 12 \\).<br>&nbsp; </li> <li>Now, the ACK for packet  \\( 11 \\) arrives. </li> </ul> <p>According to TCP slow start rules, which new packets will the sender transmit at this point?</p> <p></p>`,
-      image: "",
-      options: [
-        `Packet  \\( 13 \\) only<br>&nbsp;`,
-        `Packets  \\( 13 \\) and  \\( 14 \\)<br>&nbsp;`,
-        `Packets  \\( 13, 14,15 \\)<br>&nbsp;`,
-        `None (the sender must wait for more ACKs)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>If a TCP sender has  \\( 14,600 \\) bytes of data in-flight (i.e., it has sent those bytes but has not yet received acknowledgment for any of them), which of these statements is NOT NECESSARILY true? </p> <p></p>`,
-      image: "",
-      options: [
-        `The congestion window size of the sender is at least  \\( 10 \\) MSS's (or,  \\( 14,600 \\) bytes)<br>&nbsp;`,
-        `The congestion window size of the receiver is at least  \\( 10 \\) MSS's (or,  \\( 14,600 \\) bytes)<br>&nbsp;`,
-        `The sender is expecting acknowledgment packets from the receiver<br>&nbsp;`,
-        `The flow control window advertised by the receiver to the sender is at least  \\( 14,600 \\) bytes`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>You are watching a GO Classes Computer Networks class in one browser tab, and you also open another tab to browse a cat-related blog. Both tabs establish TCP connections, and your laptop has only one IP address.<br><br>When a TCP segment arrives, how does the operating system decide whether it belongs to the GO Classes lecture or to the cat blog, ensuring that packets don't get mixed up?</p> <p></p>`,
-      image: "",
-      options: [
-        `By checking only the IP address, since both tabs are on the same machine.<br>&nbsp;`,
-        `By using the port numbers in the TCP header, which let the OS map each segment to the correct socket/application.<br>&nbsp;`,
-        `By analyzing the application-layer data inside the payload.<br>&nbsp;`,
-        `By ordering packets based on their arrival timing.`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Bob's TCP stack has received data up to byte  \\( 560 \\) from Alice, but Bob's browser has only read \\( 60 \\) bytes. Bob's buffer size is  \\( 1024 \\) bytes. What will be the advertised window size in the next TCP header that Bob sends? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 464 \\)<br>&nbsp;`,
-        `\\( 524 \\)<br>&nbsp;`,
-        `\\( 1024 \\)<br>&nbsp;`,
-        `\\( 500 \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose that the advertised receiver window in TCP is  \\( \\mathbf{1} \\) Mbyte long. If a sequence number is chosen uniformly at random from the entire TCP sequence number space ( size  \\( =2^{32} \\) ), what is the probability that the sequence number falls inside the advertised window? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\frac{1}{2^{32}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{12}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{20}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{16}} \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>At some point, a TCP connection has the following state:</p> <ul> <li>CWND = 4 MSS, SSTHRESH =  \\( 8 \\) MSS<br>&nbsp; </li> <li>All packets up to and including  \\( \\#411 \\) have been sent and acknowledged.<br>&nbsp; </li> <li>Packets  \\( \\#412 \\) through  \\( \\#415 \\) have been sent but not yet acknowledged.<br>&nbsp; </li> <li>Packets  \\( \\#416 \\) and later have not been sent. </li> </ul> <p>Now, assume TCP is in Congestion Avoidance mode.<br><br>If an ACK for packet  \\( \\#412  \\)is received, which packet(s) will be sent as a result? (Select all that apply.) </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\#416 \\)<br>&nbsp;`,
-        `\\( \\#417 \\)<br>&nbsp;`,
-        `\\( \\#418 \\)<br>&nbsp;`,
-        `\\( \\#419 \\)`,
-      ],
-      answer: ["A"],
-      solution: `<img src="/images/quiz/wqt-apti3/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A TCP sender has MSS =  \\( 100 \\) B and a constant window size =  \\( 400 \\) B. </p> <ul> <li> \\( p_{x} \\): a packet whose first byte has the sequence number  \\( x \\).<br>&nbsp; </li> <li> \\( t_{x} \\): time at which packet  \\( p_{x} \\) is transmitted. </li> </ul> <p>At time  \\( t_{1600} \\), packet  \\( p_{1600} \\) (i.e., the packet containing bytes starting from 1600 ) has just been transmitted. What is the highest ACK received by the sender by this time? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1000 \\)<br>&nbsp;`,
-        `\\( 1200 \\)<br>&nbsp;`,
-        `\\( 1300 \\)<br>&nbsp;`,
-        `\\( 1600 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>Alice is sending data to Bob over a TCP (Transmission Control Protocol) connection in the congestion avoidance (Additive Increase, Multiplicative Decrease) phase.</p> <ul> <li>Maximum Segment Size (MSS) =  \\( 100 \\) bytes<br>&nbsp; </li> <li>Current Congestion Window (CWND)  \\( =1000 \\) bytes<br>&nbsp; </li> <li>Alice sends a packet with sequence number  \\( 801 \\), and Bob replies with Acknowledgment \\( (A C K)=901 \\). </li> </ul> <p>What will be the updated Congestion Window (CWND) after this acknowledgement?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "1010",
-      solution: `<img src="/images/quiz/wqt-apti3/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>Consider a TCP (Transmission Control Protocol) connection with the following parameters:</p> <ul> <li>Maximum Segment Size (MSS) =  \\( 1000 \\) bytes<br>&nbsp; </li> <li>Initial Congestion Window (CWND) =  \\( 1000 \\) bytes<br>&nbsp; </li> <li>Slow-Start Threshold (SSTHRESH) =  \\( 4000 \\) bytes<br>&nbsp; </li> <li>All data up to byte  \\( 6000 \\) has been acknowledged (so the next expected byte is  \\( 6001 \\) ). </li> </ul> <p>Now the sender continues transmitting. After receiving the ACK for the 7th MSS, TCP updates its window.<br>What will be the new CWND ?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "4250",
-      solution: `<img src="/images/quiz/wqt-apti3/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>Consider a TCP connection implementing congestion control. At some instant, a timeout occurs when the congestion window (cwnd) is  \\( 32 \\) KB . The maximum segment size (MSS) is  \\( 2 \\) KB . The sender always has data to transmit, and ACKs are never lost.<br>After the timeout: </p> <ul> <li>The congestion threshold (ssthresh) is set to half of the current congestion window.<br>&nbsp;</li> <li>The congestion window is reset to  \\( 1 \\) MSS.<br>&nbsp; </li> <li>The sender resumes with a slow start until cwnd reaches ssthresh and then continues in congestion avoidance.</li> </ul> <p>Under these conditions, how many round-trip times (RTTs) are required for the congestion window to grow back to  \\( 32 \\) KB ? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 8 \\) RTTs<br>&nbsp;`,
-        `\\( 11 \\) RTTs<br>&nbsp;`,
-        `\\( 14 \\) RTTs<br>&nbsp;`,
-        `\\( 16 \\) RTTs`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/14.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A TCP sender is transmitting a  \\( 402 \\) KB file using congestion control. The parameters are: </p> <ul> <li>ssthresh  \\( =64 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>cwnd  \\( =2 \\mathrm{~KB} \\) initially (slow start)<br>&nbsp; </li> <li> \\( \\mathrm{MSS}=2 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>Receiver's window size  \\( =70 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>Sender always has data, and ACKs are never lost</li> </ul> <p>By the time the  \\( 9 \\)th RTT is completed, how much data has the receiver acknowledged? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 192 \\) KB<br>&nbsp;`,
-        `\\( 260 \\) KB<br>&nbsp;`,
-        `\\( 330 \\) KB<br>&nbsp;`,
-        `\\( 400 \\) KB`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/15.png" style="max-width: 75%;">`
-    },
-  ]
-});
-
-
-registerTest({
-  series: "Aptitude",
-  name: "WQT - Aptitude-4",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider a CRC in which the generator polynomial is  \\( 11 \\) (binary). What does this CRC effectively implement? </p> <p></p>`,
-      image: "",
-      options: [
-        `It detects only single-bit errors<br>&nbsp;`,
-        `It ensures detection of all  \\( 2 \\)-bit errors<br>&nbsp;`,
-        `It works as a parity bit, detecting errors based on the number of  \\( 1 \\)'s<br>&nbsp;`,
-        `It detects all burst errors of length less than or equal to  \\( 2 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider the following small network: Hosts  \\( \\mathbf{A} \\) and  \\( \\mathbf{B} \\) are connected to a router  \\( \\mathbf{R} \\) through a switch  \\( \\mathbf{S} \\). Host  \\( \\mathbf{C} \\) connects directly to router  \\( \\mathbf{R} \\). There is no other host, switch, or router in the network.<br><img alt="" src="/images/quiz/wqt-apti4/q_img1.png" style="max-width: 75%;"> </p> <p>&nbsp;</p> <p>What is the maximum number of entries that could appear in the ARP table of host A? Which entities would those entries correspond to?</p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1 \\) entry - only B<br>&nbsp;`,
-        `\\( 1 \\) entry - only R<br>&nbsp;`,
-        `\\( 2 \\) entries - B and R<br>&nbsp;`,
-        `\\( 3 \\) entries - B, R, and C`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/2.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Which of the following is TRUE, if a duplicate ACK is received by a TCP sender?</p> <p></p>`,
-      image: "",
-      options: [
-        `The TCP sender will always retransmit a packet.<br>&nbsp;`,
-        `The TCP receiver must have received the same segment more than once.<br>&nbsp;`,
-        `The TCP sender will always ignore the duplicate ACK silently.<br>&nbsp;`,
-        `None of the other choices.`,
+        `\\( 0 \\)<br>&nbsp;`,
+        `\\( 9 \\)<br>&nbsp;`,
+        `\\( 10 \\)<br>&nbsp;`,
+        `\\( 18 \\)`,
       ],
       answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti4/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>Assume that a host A with IP  \\( 172.26.184.3 \\) is on a private home network, located behind a NAT home router  \\( R \\). Host  \\( A \\) sends a datagram to destination host  \\( 128.119 .40 .186 \\) , port  \\( 80 \\) , through  \\( R \\). When  \\( R \\) forwards the datagram it will replace the sender's IP and port number. Which of the following IP, port combinations would be valid to use by  \\( R \\) ? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 172.26.184.5 \\),  \\( 3001 \\)<br>&nbsp;`,
-        `\\( 192.168.1.1 \\),  \\( 2001 \\)<br>&nbsp;`,
-        `\\( 128.125.3.4 \\),  \\( 3001 \\)<br>&nbsp;`,
-        `\\( 152.148.5.6 \\),  \\( 3001 \\)`,
-      ],
-      answer: ["C", "D"],
-      solution: `<img src="/images/quiz/wqt-apti4/4.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-3/2.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>The Ethernet CSMA/CD protocol uses an exponential backoff algorithm. Suppose a datagram has already experienced  \\( \\mathbf{4} \\) collisions. The sender will randomly choose a backoff value  \\( \\mathbf{K} \\) in which of the following ranges and then wait for  \\( \\mathrm{K} \\times 512 \\) bit times before retransmission? </p> <p></p>`,
+      text: `<p></p> <p>A box contains five cards, numbered  \\( 1, 2, 3, 4 \\), and  \\( 5 \\) . Three cards are selected randomly without replacement from the box. What is the probability that 4 is the largest value selected? </p> <p></p>`,
       image: "",
       options: [
-        `\\( 0 \\) to  \\( 7 \\) (inclusive)<br>&nbsp;`,
-        `\\( 0 \\) to  \\( 15 \\) (inclusive)<br>&nbsp;`,
-        `\\( 1 \\) to  \\( 15 \\) (inclusive)<br>&nbsp;`,
-        `\\( 0 \\) to  \\( 31 \\) (inclusive)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In the given network diagram, Ethernet interface addresses (  \\( \\mathrm{e} 1, \\mathrm{e} 2, \\ldots \\) ) are written on the diagram itself. Host  \\( 1 \\) uses interface  \\( \\mathbf{e} 1 \\) with IP address IP H \\( 1 \\), and Host  \\( 4 \\) uses interface  \\( \\mathbf{e 4} \\) with IP address IP H \\( 4 \\). The router has interface e \\( 5 \\) on Network 1 and interface e6 on Network \\( 2 \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-apti4/q_img2.png" style="max-width: 75%;"></p> <p><br>When Host  \\( 1 \\) sends an IP packet to Host  \\( 4 \\), what are the correct Ethernet and IP source/destination addresses in the frame that traverses Network  \\( 2 \\)? </p> <p></p>`,
-      image: "",
-      options: [
-        `Eth Src: e6 | Eth Dest: e4 | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e1 | Eth Dest: e \\( 4 \\) | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e5 | Eth Dest: e4 | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e4 | Eth Dest: e6 | IP Src: IP H4 | IP Dest: IP H1`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti4/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose a router receives an IP packet containing 600 data bytes and has to forward the packet to a network with a maximum transmission unit of  \\( 200 \\) bytes. Assume that the IP header is  \\( 20 \\) bytes long. What are fragment offset values for divided packets? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 22, 44, 66, 88 \\)<br>&nbsp;`,
-        `\\( 0, 22, 44 \\)<br>&nbsp;`,
-        `\\( 0, 22, 44, 66 \\)<br>&nbsp;`,
-        `\\( 22, 44, 66 \\)`,
+        `\\( \\frac{1}{10} \\)<br>&nbsp;`,
+        `\\( \\frac{1}{5} \\)<br>&nbsp;`,
+        `\\( \\frac{3}{10} \\)<br>&nbsp;`,
+        `\\( \\frac{2}{5} \\)`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<p>In a Go-Back-N ARQ protocol with a sender window size of  \\( 7 \\), what is the necessary and sufficient number of distinct sequence numbers required to ensure correct protocol operation and avoid ambiguity at the wrap-around point? </p>`,
-      image: "",
-      options: [],
-      answer: "8",
-      solution: `<img src="/images/quiz/wqt-apti4/8.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-3/3.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>A sender is using the Go-Back-N protocol with:</p> <ul> <li>Window size  \\( =4 \\)<br>&nbsp; </li> <li>One shared retransmission timer (timeout =  \\( 25 \\))<br>&nbsp; </li> <li>Packets are acknowledged cumulatively<br>&nbsp;</li> <li>The channel may lose packets but never reorders them</li> </ul> <p>At time =  \\( 6 \\): </p> <ul> <li>Packets with sequence numbers \\(  2,3  \\), and  \\( 4 \\) are unacknowledged and waiting in the buffer.<br>&nbsp; </li> <li>The next packet to be sent will carry sequence number  \\( 5 \\).<br>&nbsp; </li> <li>The retransmission timer is set to expire at time  \\( =10 \\). </li> </ul> <p>At time  \\( =7 \\), the application generates a new packet with sequence number  \\( 5 \\).<br><br>At time =  \\( 12 \\), an acknowledgement for all packets up to sequence number 3 is received.<br><br>At time  \\( =13 \\), the sender still has packets  \\( 4 \\) and  \\( 5 \\) unacknowledged, and the next packet to be sent will carry sequence number  \\( 6 \\) . The retransmission timer is now set to expire at time  \\( =35 \\).<br><br>Which packets are actually transmitted between time  \\( =6 \\) and time  \\( =13 \\) (in the correct order)? </p> <p></p>`,
+      text: `<p></p> <p>Alicia, Brenda, and Colby were the candidates in a recent election for student president. The pie chart below shows how the votes were distributed among the three candidates. If Brenda received  \\( 36 \\) votes, then how many votes were cast altogether? </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img2.png" style="max-width: 75%;"> </p> <p><br>&nbsp;</p> <p></p>`,
       image: "",
       options: [
-        `\\( \\{2,3,4,5\\} \\)<br>&nbsp;`,
-        `\\( \\{5,2,3,4,5\\} \\)<br>&nbsp;`,
-        `\\( \\{2,3,5,4\\} \\)<br>&nbsp;`,
-        `\\( \\{5,4,5\\} \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>A network is arranged as follows: Node  \\( \\mathbf{A} \\rightarrow \\) Node  \\( \\mathbf{B} \\rightarrow \\) Node  \\( \\mathbf{C} \\). </p> <ul> <li>Total data to send from  \\( A \\) to  \\( C=\\mathbf{1 2 P} \\) bits.<br>&nbsp; </li> <li>Each packet requires a header of  \\( \\mathbf{P} \\) bits.<br>&nbsp; </li> <li>Link  \\( \\mathrm{A}-\\mathrm{B} \\) and link  \\( \\mathrm{B}-\\mathrm{C} \\) are identical, with<br>&nbsp; </li> <li>Bandwidth = R bits/sec<br>&nbsp;</li> <li>Link propagation speed = S meters/sec<br>&nbsp;</li> <li>Link length = D meters</li> </ul> <p>&nbsp;</p> <ul> <li>Queuing and processing delays are negligible.</li> </ul> <p>If all  \\( \\mathrm{12 P} \\) bits are sent in a single packet (including the header), what is the total delay for the entire data to reach  \\( \\mathrm{C} \\)? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 12 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 13 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 21 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 26 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)`,
-      ],
-      answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti4/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A source sends 12P bits of data from node A to node C via node B.</p> <ul> <li>The path has two identical links (A-B and B-C).<br>&nbsp;</li> <li>Each link has a bandwidth of  \\( \\mathbf{R} \\) bits/sec, a propagation speed of \\( \\mathbf{S} \\) meters/sec, and length  \\( \\mathbf{D} \\) meters.<br>&nbsp; </li> <li>Each packet requires a header of size  \\( \\mathbf{P} \\) bits. </li> </ul> <p>&nbsp;</p> <ul> <li>Queuing and processing delays are negligible.</li> </ul> <p>If the  \\( 12 P \\) bits are divided into  \\( \\mathbf{k} \\) equal packets, then each packet has size  \\( =(12 P / k+P) \\) bits.<br>What is the optimal value of  \\( \\mathbf{k} \\) that minimizes the total end-to-end delay for all data to arrive at C ?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( k=\\sqrt{12} \\)<br>&nbsp;`,
-        `\\( k=6 \\)<br>&nbsp;`,
-        `\\( k=12  \\)<br>&nbsp;`,
-        `\\(  k=\\sqrt{13} \\)`,
+        `\\( 120 \\)<br>&nbsp;`,
+        `\\( 84 \\)<br>&nbsp;`,
+        `\\( 100 \\)<br>&nbsp;`,
+        `\\( 106 \\)`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti4/11.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-3/4.png" style="max-width: 75%;">`
     },
     {
-      marks: 2,
-      neg: 0.67,
+      marks: 1,
+      neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <div style="max-width:900px;margin:1rem auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;"> <p style="margin:0.3rem 0;">Two hosts <strong>X</strong> and <strong>Y</strong> are communicating over an ongoing TCP connection. Each TCP segment carries <strong>100 bytes</strong> of application data. The first segment sent by <strong>X</strong> has sequence number  \\( 30 \\) and ACK number  \\( 70 \\). </p> <p style="margin:0.3rem 0;">&nbsp;</p> <div style="display:flex; gap:16px; align-items:flex-start; padding:12px;">&nbsp;<div style="flex:1; min-width:300px;"><img alt="TCP exchange diagram: X and Y sending 100B segments; second segment from X is lost and later retransmitted" style="width: 100%; height: auto; max-width: 75%;" src="/images/quiz/wqt-apti4/q_img3.png"></div> <aside style="flex:1; min-width:280px; padding:12px;"> <ul style="margin:0; padding-left:20px;"> <li style="margin:0.3rem 0;">The <strong>second segment sent by X is lost</strong>.<br><br>&nbsp;</li> <li style="margin:0.3rem 0;">It is later <strong>retransmitted when the associated timer expires</strong>.<br><br><br>&nbsp;</li> <li style="margin:0.3rem 0;">No other segments are retransmitted, none are corrupted, and the receiver buffers out-of-order packets correctly.</li> </ul> </aside> </div> <div style="margin-top:14px; line-height:1.5;"> <p>Determine the <em>Sequence Number</em>  \\( S \\) and <em>Acknowledgement Number</em> \\( A \\) in the final TCP segment sent by <strong>X</strong> in the diagram, after the timeout-based retransmission succeeds. </p> </div> </div> <p></p>`,
-      image: "",
-      options: [
-        `\\( S=170,\\; A=230 \\)<br>&nbsp;`,
-        `\\( S=270,\\; A=330 \\)<br>&nbsp;`,
-        `\\( S=270,\\; A=230 \\)<br>&nbsp;`,
-        `\\( S=170,\\; A=330 \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <div style="max-width:900px;margin:1.2rem auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; line-height:1.55;"> <p style="margin:.3rem 0;">Consider the following <strong>receiver pseudocode</strong> for a stop-and-wait protocol.<br>The channel may <em>lose</em> or <em>corrupt</em> packets but, if a packet is delivered, it arrives <em>in order</em>.</p> <pre data-pbcklang="c_cpp" data-pbcktabsize="4" class="prettyprint linenums lang-c_cpp prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">p </span><span class="pun">=</span><span class="pln"> receive_packet</span><span class="pun">()</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="kwd">is</span><span class="pln"> corrupted OR p</span><span class="pun">.</span><span class="pln">seq </span><span class="pun">≠</span><span class="pln"> expected_seq</span><span class="pun">):</span></li><li class="L3"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> receive_packet</span><span class="pun">()</span><span class="pln">    </span><span class="com">// keep waiting until the expected,</span></li><li class="L4"><span class="pln">                            </span><span class="com">// uncorrupted packet arrives</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">send_ack</span><span class="pun">(</span><span class="pln">p</span><span class="pun">.</span><span class="pln">seq</span><span class="pun">)</span></li><li class="L7"><span class="pln">expected_seq </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> expected_seq   </span><span class="com">// flip expected between 0 and 1</span></li><li class="L8"><span class="pln">deliver_data</span><span class="pun">(</span><span class="pln">p</span><span class="pun">)</span></li><li class="L9"><span class="pln">  </span></li></ol></pre> <ul style="margin:.3rem 0 .9rem 1.1rem;"> <li><code>expected_seq</code> is the sequence number (either  \\( 0 \\) or  \\( 1 \\)) that the receiver is waiting for. </li> <li><code>deliver_data(p)</code> extracts and returns the payload from packet <code>p</code>&nbsp;to upper layer.</li> <li>The <strong>receiver waits forever</strong> if it is blocked inside, <code>receive_packet()</code> awaiting a packet that will never be sent. </li> <li>The <strong>sender loops forever</strong> if it keeps retransmitting the same packet indefinitely.</li> </ul> <p style="margin:.3rem 0 .4rem 0;"><strong>Which of the following statements is correct?</strong></p> </div> <p></p>`,
-      image: "",
-      options: [
-        `A single <em>corrupted data packet</em> can cause the <strong>sender</strong> to loop forever.<br>&nbsp;`,
-        `A single <em>corrupted data packet</em> can cause the <strong>receiver</strong> to wait forever.<br>&nbsp;`,
-        `A single <em>lost ACK</em> can cause the <strong>sender</strong> to loop forever.<br>&nbsp;`,
-        `A single <em>lost ACK</em> can cause the <strong>receiver</strong> to wait forever.`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>An IP packet of  \\( 552 \\) bytes ( \\( 20 \\)-byte IP header +  \\( 20 \\)-byte TCP header) must traverse two networks in sequence: </p> <ul> <li>Network  \\( 1 \\) with MTU =  \\( 300 \\) bytes<br>&nbsp; </li> <li>Network  \\( 2 \\) with MTU =  \\( 100 \\) bytes </li> </ul> <p><br>After all necessary fragmentations, the packet reaches the destination in multiple pieces.<br><br>How many fragments are finally delivered to the destination?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "8",
-      solution: `<img src="/images/quiz/wqt-apti4/14.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A network of  \\( 4 \\) routers  \\( \\mathrm{A}, \\mathrm{B}, \\mathrm{C} \\) and  \\( \\mathrm{D} \\) is arranged as shown below. The routers use the distance vector routing, using the number of hops as the metric. The value &nbsp; \\( \\text{“8”} \\) &nbsp;is used by all routers to indicate "infinity" (to conclude that a router is unreachable). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-apti4/q_img4.png" style="max-width: 75%;"></p> <p>In each round, all nodes exchange their distance vectors with their respective neighbours. Then all nodes update their distance vectors. In between two rounds, any change in cost of a link will cause the two incident nodes to change only that entry in their distance vectors.</p> <p>The link  \\( \\text{C-D} \\) goes down. How many exchanges would it require for each of them to conclude that&nbsp; \\( \\text{D} \\) is unreachable? </p> <p></p>`,
+      text: `<p></p> <p>All of Marcy's marbles are blue, red, green, or yellow. One third of her marbles are blue, one fourth of them are red, and six of them are green. What is the smallest number of yellow marbles that Marcy could have?</p> <p></p>`,
       image: "",
       options: [
         `\\( 1 \\)<br>&nbsp;`,
@@ -20633,8 +20269,383 @@ registerTest({
         `\\( 3 \\)<br>&nbsp;`,
         `\\( 4 \\)`,
       ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A solid figure is formed by stacking identical cubes in the shape of a pyramid: the bottom layer has \\( 4 \\times 4 \\) cubes, the next layer  \\( 3 \\times 3 \\), then  \\( 2 \\times 2 \\), and the top layer  \\( 1 \\times 1 \\). How many cubes are there in total? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 24 \\)<br>&nbsp;`,
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 35 \\)<br>&nbsp;`,
+        `\\( 40 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>On Monday, a class has  \\( 8 \\) girls and  \\( 20 \\) boys. On Tuesday, a certain number of girls joined the class just as twice that number of boys left the class, changing the ratio of girls to boys to  \\( 7 \\) to  \\( 4 \\). How many boys left the class on Tuesday? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 5 \\)<br>&nbsp;`,
+        `\\( 6 \\)<br>&nbsp;`,
+        `\\( 11 \\)<br>&nbsp;`,
+        `\\( 12 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A tank that was  \\( 40\\% \\) full of oil was emptied into a  \\( 20 \\)-gallon bucket. If the oil fills  \\( 35\\% \\) of the bucket's volume, then what is the total capacity of the tank in gallons? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 8.75 \\)<br>&nbsp;`,
+        `\\( 15 \\)<br>&nbsp;`,
+        `\\( 16 \\)<br>&nbsp;`,
+        `\\( 17.5 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( 150 \\) were increased by  \\( 60\\% \\) and then decreased by  \\( y\\% \\), the result would be  \\( 192 \\).<br>What is the value of  \\( y \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 20 \\)<br>&nbsp;`,
+        `\\( 28 \\)<br>&nbsp;`,
+        `\\( 32 \\)<br>&nbsp;`,
+        `\\( 72 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Kaleana shows her test score to Quay, Marty and Shana, but the others keep theirs hidden. Quay thinks, "At least two of us have the same score." Marty thinks, "I didn't get the lowest score." Shana thinks, "I didn't get the highest score." List the scores from lowest to highest for Marty (M), Quay (Q) and Shana (S).</p> <p></p>`,
+      image: "",
+      options: [
+        `S, Q, M<br>&nbsp;`,
+        `Q, M, S<br>&nbsp;`,
+        `Q, S, M<br>&nbsp;`,
+        `M, S, Q`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The mean of a set of five different positive integers is  \\( 15 \\). The median is  \\( 18 \\). The maximum possible value of the largest of these five integers is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 19 \\)<br>&nbsp;`,
+        `\\( 24 \\)<br>&nbsp;`,
+        `\\( 32 \\)<br>&nbsp;`,
+        `\\( 35 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img3.png" style="max-width: 75%;"> </p> <p><br>Among the 50 African countries represented in the chart above, what percent of the countries have a population of less than  \\( 20 \\) million people and a GDP of less than <span>$</span>20 billion? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 38\\% \\)<br>&nbsp;`,
+        `\\( 44\\% \\)<br>&nbsp;`,
+        `\\( 62\\% \\)<br>&nbsp;`,
+        `\\( 68\\% \\)`,
+      ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/15.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-3/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img4.png" style="max-width: 75%;"> </p> <p><br>According to the chart above, which of the following is greatest?</p> <p></p>`,
+      image: "",
+      options: [
+        `The number of countries with more than  \\( \\$10 \\) billion of GDP and a population of less than  \\( 20 \\) million<br>&nbsp;`,
+        `The number of countries with less than  \\( \\$20 \\) billion of GDP and a population of more than  \\( 10 \\) million<br>&nbsp;`,
+        `The number of countries with more than  \\( \\$ 20 \\) billion of GDP<br>&nbsp;`,
+        `The number of countries with less than  \\( \\$100 \\) billion of GDP and a population of less than  \\( 10 \\) million`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img5.png" style="max-width: 75%;"> </p> <p><br>Approximately what percent of the African countries in the chart above that have a GDP between  \\( \\$ 10 \\) billion and  \\( \\$ 20 \\) billion also have a population between \\( 10 \\) million and  \\( 20 \\) million? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6 \\% \\)<br>&nbsp;`,
+        `\\( 23 \\% \\)<br>&nbsp;`,
+        `\\( 26 \\% \\)<br>&nbsp;`,
+        `\\( 30 \\% \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Nineteenth-century painter Albert Bierstadt's view of his artistic skill as a vehicle for self-promotion was evident in his choices of style and subject matter. From the debut of his career with the exhibition of Lake Lucerne (1856), he developed a fixed style that was most easily recognisable for its size; the largest of the 636 paintings on display at the exhibition, it was over three metres wide. This, coupled with the artist's ability to represent the optimistic feeling in America during the westward expansion, is what led to Bierstadt's explosive growth in popularity during the 1860s. Bierstadt deliberately appealed to those rich patrons, railroad tycoons and financiers whose nearest substitute to making the arduous journey out West was to purchase a hyperbolised replica of a Western vista.<br><br>But trends following the Civil War produced a drastic shift away from the adventurous optimism of the pre-war era and toward a more subdued appreciation for the details of American life. In this new social context, the paintings now seemed too decadent, too gaudy, for the new philosophy taking root in the country following the horrors of war. As one commentator in 1866 put it, Bierstadt's work "may impose upon the senses, but does not affect the heart." In a sense, then, that same American pride upon which Bierstadt had capitalised to advance his success was now, in its fickleness, the source of his downfall.<br><br>According to the passage, the new philosophy taking root in America after the Civil War would be best described as</p> <p></p>`,
+      image: "",
+      options: [
+        `justifiable pessimism<br>&nbsp;`,
+        `somber realism<br>&nbsp;`,
+        `restrained minimalism<br>&nbsp;`,
+        `prideful idealism`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Nineteenth-century painter Albert Bierstadt's view of his artistic skill as a vehicle for self-promotion was evident in his choices of style and subject matter. From the debut of his career with the exhibition of Lake Lucerne (1856), he developed a fixed style that was most easily recognisable for its size; the largest of the 636 paintings on display at the exhibition, it was over three metres wide. This, coupled with the artist's ability to represent the optimistic feeling in America during the westward expansion, is what led to Bierstadt's explosive growth in popularity during the 1860s. Bierstadt deliberately appealed to those rich patrons, railroad tycoons and financiers whose nearest substitute to making the arduous journey out West was to purchase a hyperbolised replica of a Western vista.<br><br>But trends following the Civil War produced a drastic shift away from the adventurous optimism of the pre-war era and toward a more subdued appreciation for the details of American life. In this new social context, the paintings now seemed too decadent, too gaudy, for the new philosophy taking root in the country following the horrors of war. As one commentator in 1866 put it, Bierstadt's work "may impose upon the senses, but does not affect the heart." In a sense, then, that same American pride upon which Bierstadt had capitalised to advance his success was now, in its fickleness, the source of his downfall.<br><br>The passage quotes the commentator (lines 14-15) primarily in order to</p> <p></p>`,
+      image: "",
+      options: [
+        `offer evidence supporting a claim<br>&nbsp;`,
+        `point out an erroneous assertion<br>&nbsp;`,
+        `provide expert testimony<br>&nbsp;`,
+        `highlight a controversy`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Nineteenth-century painter Albert Bierstadt's view of his artistic skill as a vehicle for self-promotion was evident in his choices of style and subject matter. From the debut of his career with the exhibition of Lake Lucerne (1856), he developed a fixed style that was most easily recognisable for its size; the largest of the 636 paintings on display at the exhibition, it was over three metres wide. This, coupled with the artist's ability to represent the optimistic feeling in America during the westward expansion, is what led to Bierstadt's explosive growth in popularity during the 1860s. Bierstadt deliberately appealed to those rich patrons &nbsp;railroad tycoons and financiers whose nearest substitute to making the arduous journey out West was to purchase a hyperbolised replica of a Western vista.<br><br>But trends following the Civil War produced a drastic shift away from the adventurous optimism of the pre-war era and toward a more subdued appreciation for the details of American life. In this new social context, the paintings now seemed too decadent, too gaudy, for the new philosophy taking root in the country following the horrors of war. As one commentator in 1866 put it, Bierstadt's work "may impose upon the senses, but does not affect the heart." In a sense, then, that same American pride upon which Bierstadt had capitalised to advance his success was now, in its fickleness, the source of his downfall.<br><br>All of the following are mentioned as contributors to Bierstadt's success: EXCEPT</p> <p></p>`,
+      image: "",
+      options: [
+        `the dimensions of his paintings<br>&nbsp;`,
+        `his ability to convey auspicious feelings<br>&nbsp;`,
+        `subdued appreciation for the details of American life<br>&nbsp;`,
+        `catering to the preferences of the wealthy`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>History textbooks in the United States are far too fact-based and even have the ability to make students feel as though all history is made up of "Quick-Facts" and diagrams, not dynamic events to be critically analysed. Furthermore, it is often the case that textbooks are given undue authority in determining the curriculum; many teachers simply "teach the book".<br><br>This is particularly disturbing when considering the fact that state committees for choosing textbooks often treat them, in the words of Sandra Wong, "more like encyclopaedias of facts than as cultural products that convey values and perspectives" when deciding which ones to pick. In her article "Evaluating the Content of Textbooks: Public Interests and Professional Authority", Wong discusses how textbook committees are rarely concerned with the actual substance of the writing in the textbooks they evaluate and are far more interested in things like "charts, illustrations, and introductory outlines".<br><br>What, then, would be a better tool to use in the high school classroom than textbooks or timelines for creating an effective learning environment that could reflect the dynamic nature of historical study? Out of all the various alternatives – going to plays, hearing speakers, listening to music, using interactive online resources, elucidating connections to students' personal lives by going to local history museums or having students write autobiographical essays, etc. – the most promising is, by far, film. Movies are a magnificent way into history for even the most resistant naysayer of historical study. Film is a hugely popular medium with endless numbers of historically based works, everything from documentaries to dramas that not only present facts, but Dramatise the human relations behind those facts.</p> <p>The main critique presented against the use of historical film in the classroom is, of course, the existence of rampant inaccuracies and biases laced throughout these films, not to mention the agendas of the filmmakers themselves. However, some historians believe that these seeming flaws are actually part of the reason why film is an ideal teaching tool. Not only does it allow students to see history come to life and thus interact with it dynamically, as to make history immediately accessible to a modern audience because of the techniques used in filmmaking, but it can also foster deep critical thinking skills if instructors lead dialogues after film viewings about the inaccuracies, the biases, and all of the things that make the film not just a record of a historical event but also a reflection of the modern moment.<br><br>According to the passage, a problem with state committee textbook selection is</p> <p></p>`,
+      image: "",
+      options: [
+        `the lack of education of the committee members<br>&nbsp;`,
+        `misplaced priorities<br>&nbsp;`,
+        `the dominance of larger states<br>&nbsp;`,
+        `valuing perspectives instead of facts`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Square  \\( A B C D \\) has sides of length  \\( 3 \\). Segments  \\( C M \\) and  \\( C N \\) divide the square's area into three equal parts. How long is segment  \\( C M \\) ? </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img6.png" style="max-width: 75%;"> </p> <p><br>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\sqrt{10} \\)<br>&nbsp;`,
+        `\\( \\sqrt{12} \\)<br>&nbsp;`,
+        `\\( \\sqrt{13} \\)<br>&nbsp;`,
+        `\\( \\sqrt{14} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Isosceles right triangle  \\( A B C \\) encloses a semicircle of area  \\( 2 \\pi \\). The circle has its center  \\( O \\) on hypotenuse  \\( \\overline{A B} \\) and is tangent to sides  \\( \\overline{A C} \\) and  \\( \\overline{B C} \\). What is the area of triangle \\( A B C \\) ?<br>&nbsp; </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img7.png" style="max-width: 75%;"> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6 \\)<br>&nbsp;`,
+        `\\( 8 \\)<br>&nbsp;`,
+        `\\( 3 \\pi \\)<br>&nbsp;`,
+        `\\( 10 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/20.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( f(x)=x^{2} \\), which of the following is equal to \\( f(m+n)+f(m-n) \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( m^{2}+n^{2} \\)<br>&nbsp;`,
+        `\\( m^{2}-n^{2} \\)<br>&nbsp;`,
+        `\\( 2 m^{2}+2 n^{2} \\)<br>&nbsp;`,
+        `\\( 2 m^{2}-2 n^{2} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/21.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>In the figure below,  \\( A B C D \\) is a rectangle with sides of length \\( A B=5 \\) inches and  \\( A D=3 \\) inches. Rectangle  \\( A B C D \\) is rotated  \\( 90^{\\circ} \\) clockwise around the midpoint of side  \\( D C \\) to give a second rectangle. What is the total area, in square inches, covered by the two overlapping rectangles? </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img8.png" style="max-width: 75%;"> </p> <p><br>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 21 \\)<br>&nbsp;`,
+        `\\( 22.25 \\)<br>&nbsp;`,
+        `\\( 23 \\)<br>&nbsp;`,
+        `\\( 23.75 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/22.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Ara and Shea were once the same height. Since then Shea has grown  \\( 20 \\% \\) while Ara has grown half as many inches as Shea. Shea is now  \\( 60 \\) inches tall. How tall, in inches, is Ara now? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 55 \\)<br>&nbsp;`,
+        `\\( 51 \\)<br>&nbsp;`,
+        `\\( 52 \\)<br>&nbsp;`,
+        `\\( 54 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/23.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What is the units digit of  \\( 19^{19}+99^{99} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)<br>&nbsp;`,
+        `\\( 1 \\)<br>&nbsp;`,
+        `\\( 2 \\)<br>&nbsp;`,
+        `\\( 8 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/24.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>There is a list of seven numbers. The average of the first four numbers is  \\( 5 \\), and the average of the last four numbers is \\( 8 \\). If the average of all seven numbers is \\( 6 \\frac{4}{7} \\), then the number common to both sets of four numbers is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 5 \\frac{3}{7} \\)<br>&nbsp;`,
+        `\\( 6 \\)<br>&nbsp;`,
+        `\\( 6 \\frac{4}{7} \\)<br>&nbsp;`,
+        `\\( 7 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/25.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Harold made a plum pie to take on a picnic. He was able to eat only  \\( \\frac{1}{4} \\) of the pie, and he left the rest for his friends. A moose came by and ate  \\( \\frac{1}{3} \\) of what Harold left behind. After that, a porcupine ate  \\( \\frac{1}{3} \\) of what the moose left behind. How much of the original pie still remained after the porcupine left? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\frac{1}{12} \\)<br>&nbsp;`,
+        `\\( \\frac{1}{6} \\)<br>&nbsp;`,
+        `\\( \\frac{1}{4} \\)<br>&nbsp;`,
+        `\\( \\frac{1}{3} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/26.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A cube is painted on all six faces and then cut into  \\( 64 \\) smaller cubes of equal size. How many of these smaller cubes have exactly two painted faces? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 24 \\)<br>&nbsp;`,
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 35 \\)<br>&nbsp;`,
+        `\\( 40 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/27.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Along the route of a bicycle race,  \\( 7 \\) water stations are evenly spaced between the start and finish lines, as shown in the figure below. There are also  \\( 2 \\) repair stations evenly spaced between the start and finish lines. The  \\( 3 \\)rd water station is located  \\( 2 \\) miles after the  \\( 1 \\)st repair station. How long is the race in miles? </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-3/q_img9.png" style="max-width: 75%;"> </p> <p><br>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 8 \\)<br>&nbsp;`,
+        `\\( 16 \\)<br>&nbsp;`,
+        `\\( 24 \\)<br>&nbsp;`,
+        `\\( 48 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/28.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Team A and team  \\( B \\) are raising money for a charity event. The ratio of money collected by team  \\( A \\) to money collected by team  \\( B \\) is  \\( 5: 6 \\). The ratio of the number of students on team  \\( A \\) to the number of students on team  \\( B \\) is  \\( 2: 3 \\). What is the ratio of money collected per student on team  \\( A \\) to money collected per student on team  \\( B \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 4: 5 \\)<br>&nbsp;`,
+        `\\( 5: 4 \\)<br>&nbsp;`,
+        `\\( 5: 6 \\)<br>&nbsp;`,
+        `\\( 5: 9 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/29.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>After completing a speed training, Alyosha translates Russian literature into English at a rate of  \\( 10 \\) more than twice as many words per hour as he was able to translate before the training. If he was previously able to translate  \\( 10 \\) words per minute, how many words can he now translate in an hour? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 70 \\)<br>&nbsp;`,
+        `\\( 610 \\)<br>&nbsp;`,
+        `\\( 1,210 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-3/30.png" style="max-width: 75%;">`
     },
   ]
 });
