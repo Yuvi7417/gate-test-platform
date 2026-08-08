@@ -20650,3 +20650,463 @@ registerTest({
   ]
 });
 
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Aptitude-4",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Heather compares the price of a new computer at two different stores. Store  \\( A \\) offers  \\( 15 \\% \\) off the sticker price followed by a  \\( \\$ 90 \\) rebate, and store  \\( B \\) offers  \\( 25 \\% \\) off the same sticker price with no rebate. Heather saves  \\( \\$ 15 \\) by buying the computer at store  \\( A \\) instead of store  \\( B \\). What is the sticker price of the computer in dollars? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 750 \\)<br>&nbsp;`,
+        `\\( 900 \\)<br>&nbsp;`,
+        `\\( 1000 \\)<br>&nbsp;`,
+        `\\( 1050 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( |3 x+7| \\geq 2 x+12 \\), then which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x \\leq \\frac{-19}{5} \\)<br>&nbsp;`,
+        `\\( x \\geq \\frac{-19}{5} \\)<br>&nbsp;`,
+        `\\( x \\geq 5 \\)<br>&nbsp;`,
+        `\\( x \\leq \\frac{-19}{5} \\) or  \\( x \\geq 5 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Among five boxes  \\( \\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D} \\) and  \\( \\mathrm{E} \\).  \\( B \\) is thrice as heavy as  \\( A \\).  \\( C \\) is  \\( 40 \\) kg heavier than  \\( E \\).  \\( D \\) is three and a half times as heavy as  \\( E \\) and  \\( C \\) is five times as heavy as  \\( A \\). The weight of  \\( E \\) is  \\( 40 \\) kg.<br><br>Which object is the lightest of all and what is its weight?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `B  \\( 50 \\) kg<br>&nbsp;`,
+        `A  \\( 16 \\) kg<br>&nbsp;`,
+        `B  \\( 12 \\) kg<br>&nbsp;`,
+        `D  \\( 125 \\) kg`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \\( \\mathrm{A}, \\mathrm{B} \\) and  \\( \\mathrm{C} \\) invested their capitals in the ratio of  \\( 2: 3: 5 \\). The ratio of months for which  \\( \\mathrm{A}, \\mathrm{B} \\) and  \\( \\mathrm{C} \\) invested is  \\( 4: 2: 3 \\). If  \\( \\mathrm{C} \\) gets a share of profit which is Rs. \\( 1,47,000 \\) more than that of  \\( \\mathrm{A} \\), then  \\( \\mathrm{B}'s \\) share of profit is :<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `Rs.  \\( 1,26,000 \\)<br>&nbsp;`,
+        `Rs.  \\( 1,68,000 \\)<br>&nbsp;`,
+        `Rs.  \\( 1,05,000 \\)<br>&nbsp;`,
+        `Rs.  \\( 1,89,000 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In a circle with centre  \\( \\mathrm{O}, \\mathrm{AB} \\) is the diameter and CD is a chord such that ABCD is a trapezium. If  \\( \\angle \\mathrm{BAC}=18^{\\circ} \\) then  \\( \\angle \\mathrm{CAD} \\) is equal to: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 72^{\\circ} \\)<br>&nbsp;`,
+        `\\( 36^{\\circ} \\)<br>&nbsp;`,
+        `\\( 54^{\\circ} \\)<br>&nbsp;`,
+        `\\( 18^{\\circ} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A can do  \\( 40 \\% \\) of a work in  \\( 12 \\) days, whereas B can do  \\( 60 \\% \\) of the same work in  \\( 15 \\) days. Both work together for  \\( 10 \\) days. C completes the remaining work alone in  \\( 4 \\) days. A, B and C together will complete  \\( 28 \\% \\) of the same work in: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2 \\frac{1}{2} \\) days<br>&nbsp;`,
+        `\\( 3 \\) days<br>&nbsp;`,
+        `\\( 1 \\frac{1}{2} \\) days<br>&nbsp;`,
+        `\\( 2 \\) days`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Read the given statement and conclusions carefully. Assuming that the information given in the statement is true, decide which of the given conclusions logically follows from the statement.<br><br>Statement: The new government policy aims to reduce carbon emissions by  \\( 50\\% \\) within the next decade.<br><br>Conclusions:<br><br>I. The government will ban all the vehicles that run on fossil fuel immediately.<br><br>II. The government will shut down all the coal-fired power plants.<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `Only Conclusion I follows<br>&nbsp;`,
+        `Both Conclusion I and Conclusion II follow<br>&nbsp;`,
+        `Only Conclusion II follows<br>&nbsp;`,
+        `Neither Conclusion I nor Conclusion II Follows`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>study the following bar-graph and answer the questions below<br><br>Total no. of boys and girls in school A, B, C, D and E</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img1.png" style="max-width: 75%;"> </p> <p><br>Difference between the number of boys and girls in schools  \\( \\mathrm{A} \\),  \\( \\mathrm{B}, \\mathrm{C}, \\mathrm{D} \\) and  \\( \\mathrm{E} \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img2.png" style="max-width: 75%;"> </p> <p><br>What is the difference between the number of girls in school A and the number of girls in school C </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 25 \\)<br>&nbsp;`,
+        `\\( 20 \\)<br>&nbsp;`,
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 35 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Mr. Earl E. Bird gets up every day at  \\( 8:00 \\) AM to go to work. If he drives at an average speed of  \\( 40 \\) miles per hour, he will be late by  \\( 3 \\) minutes. If he drives at an average speed of \\( 60 \\) miles per hour, he will be early by  \\( 3 \\) minutes. How many miles per hour does Mr. Bird need to drive to get to work exactly on time? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 45 \\)<br>&nbsp;`,
+        `\\( 48 \\)<br>&nbsp;`,
+        `\\( 50 \\)<br>&nbsp;`,
+        `\\( 55 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In a certain code language, 'GRAPE' is coded as  \\( 21-54-3-48-15 \\) and 'MELON' is coded as  \\( 39-15 - 36-45-42 \\). How will 'PEACH' be coded in the same language? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 49-15-3-9-27 \\)<br>&nbsp;`,
+        `\\( 45-16-3-9-24 \\)<br>&nbsp;`,
+        `\\( 48-15-3-8-27 \\)<br>&nbsp;`,
+        `\\( 48-15-3-9-24 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Segment  \\( B D \\) and  \\( A E \\) intersect at  \\( C \\), as shown,  \\( A B=B C=C D=C E \\), and  \\( \\angle A=\\frac{5}{2} \\angle B \\). What is the degree measure of  \\( \\angle D \\) ?<br>&nbsp; </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img3.png" style="max-width: 75%;"> </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 52.5 \\)<br>&nbsp;`,
+        `\\( 55 \\)<br>&nbsp;`,
+        `\\( 57.7 \\)<br>&nbsp;`,
+        `\\( 60 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Two lines with slopes  \\( \\frac{1}{2} \\) and  \\( 2 \\) intersect at  \\( (2,2) \\). What is the area of the triangle enclosed by these two lines and the line  \\( x+y=10 \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 4 \\)<br>&nbsp;`,
+        `\\( 4 \\sqrt{2} \\)<br>&nbsp;`,
+        `\\( 6 \\)<br>&nbsp;`,
+        `\\( 8 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\triangle A B C \\) be an isosceles triangle with \\( B C=A C \\) and  \\( \\angle A C B=40^{\\circ} \\). Construct the circle with diameter  \\( \\overline{B C} \\), and let  \\( D \\) and  \\( E \\) be the other intersection points of the circle with the sides  \\( \\overline{A C} \\) and  \\( \\overline{A B} \\), respectively. Let  \\( F \\) be the intersection of the diagonals of the quadrilateral  \\( B C D E \\). What is the degree measure of  \\( \\angle B F C \\) ?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 90 \\)<br>&nbsp;`,
+        `\\( 100 \\)<br>&nbsp;`,
+        `\\( 105 \\)<br>&nbsp;`,
+        `\\( 110 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( k=2008^{2}+2^{2008} \\). What is the units digit of  \\( k^{2}+2^{k} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 0 \\)<br>&nbsp;`,
+        `\\( 2 \\)<br>&nbsp;`,
+        `\\( 4 \\)<br>&nbsp;`,
+        `\\( 6 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Alicia had two containers. The first was  \\( \\frac{5}{6} \\) full of water and the second was empty. She poured all the water from the first container into the second container, at which point the second container was  \\( \\frac{3}{4} \\) full of water. What is the ratio of the volume of the first container to the volume of the second container? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\frac{5}{8} \\)<br>&nbsp;`,
+        `\\( \\frac{4}{5} \\)<br>&nbsp;`,
+        `\\( \\frac{7}{8} \\)<br>&nbsp;`,
+        `\\( \\frac{9}{10} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A boat can go 5 km upstream and  \\( 7\\frac{1}{2} \\mathrm{~km} \\) downstream in  \\( 45 \\) minutes. It can also go  \\( 5 \\) km downstream and  \\( 2.5 \\) km upstream in  \\( 25 \\) minutes. How much time (in minutes) will it take to go  \\( 6 \\) km upstream?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 24 \\)<br>&nbsp;`,
+        `\\( 36 \\)<br>&nbsp;`,
+        `\\(  32 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What is the compound interest on a sum of Rs.  \\( 37,500 \\) for  \\( 1 \\frac{1}{3} \\) years at a rate of  \\( 12 \\% \\) p.a. If the interest is compounded  \\( 8 \\)-monthly? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\operatorname{Rs} 6440 \\)<br>&nbsp;`,
+        `\\( \\operatorname{Rs} 6240 \\)<br>&nbsp;`,
+        `\\( \\operatorname{Rs} 6420 \\)<br>&nbsp;`,
+        `\\( \\operatorname{Rs} 6448 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The average of  \\( 33 \\) numbers is  \\( 74 \\). The average of the first  \\( 17 \\) numbers is  \\( 72.8 \\) and that of the last  \\( 17 \\) numbers is  \\( 77.2 \\). If the  \\( 17 \\)th number is excluded, then what will be the average of the remaining numbers (correct to one decimal place)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 72.9 \\)<br>&nbsp;`,
+        `\\( 73.4 \\)<br>&nbsp;`,
+        `\\( 71.6 \\)<br>&nbsp;`,
+        `\\( 70.8 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The letter F shown below is rotated  \\( 90^{\\circ} \\) clockwise around the origin, then reflected in the  \\( y \\)-axis, and then rotated a half turn around the origin. What is the final image?<br><br>&nbsp; </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img4.png" style="max-width: 75%;"> </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `<img alt="" src="/images/quiz/wqt-aptitude-4/q_img5.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-4/q_img6.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-4/q_img7.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-4/q_img8.png" style="max-width: 75%;">`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If the given sheet is folded to form a cube, which of the given figures are possible? (The letters are shown to indicate the sides only.)<br>&nbsp;</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img9.png" style="max-width: 75%;"> </p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `Only A and C<br>&nbsp;`,
+        `Only B and C<br>&nbsp;`,
+        `Only A, C and D<br>&nbsp;`,
+        `Only C and D`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/20.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Among  \\( 160 \\) players in a tournament,  \\( 57 \\) did not participate in any of the three games, i.e. Cricket, Hockey and Badminton. A total of  \\( 37 \\) players participated in only one game, \\( 10 \\) players participated in both Cricket and Hockey but not in badminton,  \\( 9 \\) players participated in both Hockey and Badminton but not in Cricket , and  \\( 13 \\) players participated in both Cricket and Badminton but not in Hockey. How many students participated in all the three games? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 30 \\)<br>&nbsp;`,
+        `\\( 34 \\)<br>&nbsp;`,
+        `\\( 38 \\)<br>&nbsp;`,
+        `\\( 32 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/21.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Teaching about compassion and empathy in schools can help deal with problems of climate change and environmental degradation," says Barbara Maas, secretary, Standing Committee for Environment and Conservation, International Buddhist Confederation (IBC). She was in New Delhi to participate in the IBC's governing council meeting, December 10-11, 2017. "We started an awareness campaign in the year 2005-2006 with H H The Dalai Lama when we learnt that tiger skins were being traded in China and Tibet. At that time, I was not a Buddhist; I wrote to the Dalai Lama asking him to say that 'this is harmful' and he wrote back to say, "We will stop this." He used very strong words during the Kalachakra in 2006, when he said, 'If he sees people wearing fur and skins, he doesn't feel like living. 'This sent huge shock waves in the Himalayan community. Within six months, in Lhasa, people ripped the fur trim of their tubba, the traditional Tibetan dress.<br><br>The messenger was ideal and the audience was receptive," says Maas, who is a conservationist. She has studied the battered fox's behavioral ecology in Serengeti, Africa. She heads the endangered species conservation at the Nature and Biodiversity Conservation Union (NABU) International Foundation for Nature, Berlin. "I met Samdhong Rinpoche, The Karmapa, HH the Dalai Lama and Geshe Lhakdor and I thought, if by being a Buddhist, you become like this, I am going for it,'" says Maas, who led the IBC initiative for including the Buddhist perspective in the global discourse on climate change by presenting the statement, 'The Time to Act is Now: a Buddhist Declaration on Climate Change,' at COP21 in Paris.<br><br>"It was the first time in the history of Buddhism that leaders of different sanghas came together to take a stand on anything! The statement lists a couple of important things: the first is that we amass things that we don't need; there is overpopulation; we need to live with contentment and deal with each other and the environment with love and compassion," elaborates Maas. She is an ardent advocate of a vegan diet because "consuming meat and milk globally contributes more to climate change than all "transport in the world."<br><br>Turning vegetarian or vegan usually requires a complete change of perspective before one gives up eating their favourite food. What are the Buddhist ways to bring about this kind of change at the individual level? "To change our behaviour, Buddhism is an ideal vehicle; it made me a more contented person," says Maas, who grew up in Germany as a sausage-chomping, meat-loving individual. She says, "If I can change, so can anybody."<br><br>According to the passage, how can studying compassion and empathy in schools help?</p> <p></p>`,
+      image: "",
+      options: [
+        `It can help us understand and connect Buddhism.<br>&nbsp;`,
+        `It can help deal with problems of climate change and environmental degradation.<br>&nbsp;`,
+        `It can change our behaviour and make us a more content person.<br>&nbsp;`,
+        `It can help us in turning vegetarian.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/22.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Teaching about compassion and empathy in schools can help deal with problems of climate change and environmental degradation," says Barbara Maas, secretary, Standing Committee for Environment and Conservation, International Buddhist Confederation (IBC). She was in New Delhi to participate in the IBC's governing council meeting, December 10-11, 2017. "We started an awareness campaign in the year 2005-2006 with H H The Dalai Lama when we learnt that tiger skins were being traded in China and Tibet. At that time, I was not a Buddhist; I wrote to the Dalai Lama asking him to say that 'this is harmful' and he wrote back to say, "We will stop this." He used very strong words during the Kalachakra in 2006, when he said, 'If he sees people wearing fur and skins, he doesn't feel like living. ' This sent huge shock waves in the Himalayan community. Within six months, in Lhasa, people ripped the fur trim of their tubba, the traditional Tibetan dress.<br><br>The messenger was ideal and the audience was receptive," says Maas, who is a conservationist. She has studied the battered fox's behavioural ecology in Serengeti, Africa. She heads the endangered species conservation at the Nature and Biodiversity Conservation Union (NABU) International Foundation for Nature, Berlin. "I met Samdhong Rinpoche, The Karmapa, HH the Dalai Lama and Geshe Lhakdor and I thought, if by being a Buddhist, you become like this, I am going for it,'" says Maas, who led the IBC initiative for including the Buddhist perspective in the global discourse on climate change by presenting the statement, 'The Time to Act is Now: a Buddhist Declaration on Climate Change,' at COP21 in Paris.<br><br>"It was the first time in the history of Buddhism that leaders of different sanghas came together to take a stand on anything! The statement lists a couple of important things: the first is that we amass things that we don't need; there is overpopulation; we need to live with contentment and deal with each other and the environment with love and compassion," elaborates Maas. She is an ardent advocate of a vegan diet because "consuming meat and milk globally contributes more to climate change than all "transport in the world."<br><br>Turning vegetarian or vegan usually requires a complete change of perspective before one gives up eating their favourite food. What are the Buddhist ways to bring about this kind of change at the individual level? "To change our behaviour, Buddhism is an ideal vehicle; it made me a more contented person," says Maas, who grew up in Germany as a sausage-chomping, meat-loving individual.<br><br>She says, "If I can change, so can anybody."</p> <p></p>`,
+      image: "",
+      options: [
+        `She believes that "consuming meat and milk contributes more to climate change than all transport in the world".<br>&nbsp;`,
+        `She believes that "turning vegan gives your skin an unmatchable glow and helps you stay away from diseases."<br>&nbsp;`,
+        `She believes that "all living beings should be treated with love and compassion".<br>&nbsp;`,
+        `She believes that "abstinence helps you win major battles of life."`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/23.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>study the following bar-graph and answer the questions below<br><br>Total no. of boys and girls in school A, B, C, D and E</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img10.png" style="max-width: 75%;"> </p> <p><br>Difference between the number of boys and girls in schools  \\( \\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D} \\) and  \\( \\mathrm{E} \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img11.png" style="max-width: 75%;"> </p> <p><br>The number of boys in school B is what percentage of the total number of students in that school?<br>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 50\\% \\)<br>&nbsp;`,
+        `\\( 55\\% \\)<br>&nbsp;`,
+        `\\( 40\\% \\)<br>&nbsp;`,
+        `\\( 60\\% \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/24.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>study the following bar-graph and answer the questions below<br>Total no. of boys and girls in school A, B, C, D and E</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img12.png" style="max-width: 75%;"> </p> <p><br>Difference between the number of boys and girls in schools  \\( \\mathrm{A} \\),  \\( \\mathrm{B}, \\mathrm{C}, \\mathrm{D} \\) and  \\( \\mathrm{E} \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-4/q_img13.png" style="max-width: 75%;"> </p> <p><br>What is the ratio of the number of boys to the number of girls in school E?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 5: 3 \\)<br>&nbsp;`,
+        `\\( 4: 3 \\)<br>&nbsp;`,
+        `\\( 5: 4 \\)<br>&nbsp;`,
+        `\\( 7: 4 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/25.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>By practising mindfulness and other principles, we become more aware of and present to our fears and others' fears, bearing witness as a way of healing and empowering. We see the spiritual path as intertwined with the path of social action, with contemplation and action parts of the same whole, each nourishing and guiding the other.<br><br>Acknowledging that our well-being depends on others makes caring for others' well-being a moral responsibility.<br>Through a "mindful citizen" exercise, we create a story articulating who we are as individuals who are also part of communities. This exercise helps us move beyond cynicism, complacency, and despair, instead infusing us with a sense of purpose. We embrace our gifts, resolving to do our part to promote a sense of common humanity as a means toward social justice.<br>With this exercise, I believe we can help students bridge their divides and replace anger and distrust with compassionate connections – just as I witnessed between Shirley and Tiffany.<br><br>Shirley returned to class after a brief hiatus, keeping a cool distance from Tiffany. But over the weeks spent together, they gradually came to know each other. They practised seeing and listening, sharing stories so different that they felt bewildered as to how they could overcome the gap. But they found that acknowledging their differences led them to discover a place of deep connection in commonalities, such as being raised by grandmothers, and even wounds, including childhood trauma, that they never imagined existed.<br><br>In assessments of these classes, students say that these small groups become "healing communities", where we overcome victimisation and claim agency. Healing occurs as we transcend an "us vs. them" mentality, crossing borders and forging connections. These communities show a way of reducing intergroup prejudice and fostering inclusion based on psychology research and pedagogical practice.<br><br>What was the reason behind the strong connection between Shirley and Tiffany?</p> <p></p>`,
+      image: "",
+      options: [
+        `By sharing different stories.<br>&nbsp;`,
+        `Commonalities in their stories.<br>&nbsp;`,
+        `Discussion on fairy tale stories.<br>&nbsp;`,
+        `Sharing their horror experience of the past.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/26.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>By practising mindfulness and other principles, we become more aware of and present to our fears and others' fears, bearing witness as a way of healing and empowering. We see the spiritual path as intertwined with the path of social action, with contemplation and action parts of the same whole, each nourishing and guiding the other.<br><br>Acknowledging that our well-being depends on others makes caring for others' well-being a moral responsibility.<br>Through a "mindful citizen" exercise, we create a story articulating who we are as individuals who are also part of communities.<br>This exercise helps us move beyond cynicism, complacency, and despair, instead infusing us with a sense of purpose. We embrace our gifts, resolving to do our part to promote a sense of common humanity as a means toward social justice.<br>With this exercise, I believe we can help students bridge their divides and replace anger and distrust with compassionate connections – just as I witnessed between Shirley and Tiffany.<br><br>Shirley returned to class after a brief hiatus, keeping a cool distance from Tiffany. But over the weeks spent together they gradually came to know each other. They practised seeing and listening, sharing stories so different that they felt bewildered as to how they could overcome the gap. But they found that acknowledging their differences led them to discover a place of deep connection in commonalities, such as being raised by grandmothers, and even wounds, including childhood trauma, that they never imagined existed.<br><br>In assessments of these classes, students say that these small groups become "healing communities", where we overcome victimisation and claim agency. Healing occurs as we transcend an "us vs. them" mentality, crossing borders and forging connections. These communities show a way of reducing intergroup prejudice and fostering inclusion based on psychology research and pedagogical practice.<br><br>What do you mean by pedagogical practice?</p> <p></p>`,
+      image: "",
+      options: [
+        `Going on foot rather than using any transport<br>&nbsp;`,
+        `Related to child behaviour<br>&nbsp;`,
+        `Mindful games<br>&nbsp;`,
+        `Relating to teaching`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/27.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>On the Go Classes Test, each correct answer is worth 6 points, each incorrect answer is worth  \\( 0 \\) points, and each problem left unanswered is worth  \\( 2.5 \\) points. If Charly leaves  \\( 8 \\) of the  \\( 25 \\) problems unanswered, how many of the remaining problems must she answer correctly in order to score at least  \\( 100 \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 11 \\)<br>&nbsp;`,
+        `\\( 13 \\)<br>&nbsp;`,
+        `\\( 14 \\)<br>&nbsp;`,
+        `\\( 16 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/28.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Seven people, A, B, C, D, E, F and G are sitting in a straight line, facing north. Only three people sit to the left of D. Only two people sit between D and A. B sits fifth to the right of C. G sits to the immediate right of E but somewhere to the left of A.<br><br>Who sits to the extreme right?</p> <p></p>`,
+      image: "",
+      options: [
+        `B<br>&nbsp;`,
+        `A<br>&nbsp;`,
+        `E<br>&nbsp;`,
+        `G`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/29.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Three generations of the Wen family are going to the movies, two from each generation. The two members of the youngest generation receive a  \\( 50 \\% \\) discount as children. The two members of the oldest generation receive a  \\( 25 \\% \\) discount as senior citizens. The two members of the middle generation receive no discount. Grandfather Wen, whose senior ticket costs  \\( \\$ 6.00 \\), is paying for everyone. How many dollars must he pay? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 34 \\)<br>&nbsp;`,
+        `\\( 36 \\)<br>&nbsp;`,
+        `\\( 42 \\)<br>&nbsp;`,
+        `\\( 46 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-4/30.png" style="max-width: 75%;">`
+    },
+  ]
+});
+
