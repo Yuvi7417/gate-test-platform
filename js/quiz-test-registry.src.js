@@ -19274,889 +19274,6 @@ registerTest({
   ]
 });
 
-
-registerTest({
-  series: "Aptitude",
-  name: "WQT - Aptitude-1",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In a Go-Back-N (GBN) protocol, the sender uses a window size of  \\( 4 \\) and sequence numbers range from  \\( 0 \\) to  \\( 1023 \\) (modulo  \\( 1024 \\)). Suppose the sender had transmitted packets with sequence numbers  \\( 500,501,502 \\), and  \\( 503 \\) , and  \\( 500 \\) was the base of the sender's window. After a while, the sender receives an ACK for packet  \\( 500 \\).<br><br>Assume: </p> <ul> <li>The ACK is cumulative.</li> <li>No other ACKs have been received.</li> <li>No timeouts have occurred yet.</li> </ul> <p><br>Which of the following statements is/are correct?<br>&nbsp;</p> <p></p>`,
-      image: "",
-      options: [
-        `The sender can now send packet  \\( 504 \\) immediately.`,
-        `The sender must retransmit packet  \\( 500 \\), since no ACK for  \\( 501 \\) has been received.`,
-        `The new sender window is [ \\( 501, 504 \\)], and packets  \\( 501-503 \\) can be retransmitted if timeout occurs.`,
-        `The base of the sender window remains unchanged until ACKs for all packets  \\( 500-503 \\) are received.`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti1/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>A sender using the Go-Back-N protocol has a current window of size  \\( 4 \\) , which includes the sequence numbers  \\( 100,101,102 \\), and  \\( 103 \\) . The sender has sent packets  \\( 100 \\) and  \\( 101 \\) so far.<br><br>Which of the following statements <strong>must be true</strong>?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `Packet  \\( 100 \\) has been sent and acknowledged.`,
-        `Packet  \\( 103 \\) is outside the window and cannot be sent yet.`,
-        `If packet  \\( 102 \\) is sent, then packet  \\( 101 \\) must have already been sent.`,
-        `If packet  \\( 102 \\) has not been sent, then packet  \\( 101 \\) must not have been sent either.`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/2.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Two hosts  \\( A \\) and  \\( B \\) are 2000 km apart and are connected using a direct link. The propagation speed on the link is  \\( 2.5 \\times 10^{8} \\mathrm{~m} / \\mathrm{s} \\). Host  \\( A \\) is sending packets of size  \\( \\mathbf{1 0 0} \\) bytes to host  \\( B \\) over this link. If the transmission rate of the link is  \\( R \\) bits per second, how much time does it take to transmit one packet? </p> <p>&nbsp;</p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\frac{100}{R} \\) seconds<br>&nbsp;`,
-        `\\( \\frac{100 \\times 8}{R} \\) seconds<br>&nbsp;`,
-        `\\( \\frac{2000 \\times 10^{3}}{2.5 \\times 10^{8}} \\) seconds<br>&nbsp;`,
-        `\\( \\frac{R}{100 \\times 8} \\) seconds`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti1/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In a sliding window protocol, the sender and receiver both use a window size of  \\( N=5 \\). The sequence number space ranges from \\( 0 \\) to  \\( 15 \\) . At a certain time, the sender's window includes the sequence numbers  \\( 0 \\) to  \\( 4 \\) , and the receiver's window includes the sequence numbers  \\( 2 \\) to  \\( 6 \\) . Which of the following best describes the current state?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `The sender has received ACKs for packets  \\( 0 \\) and  \\( 1 \\) , and has sent packets  \\( 2 \\) to  \\( 4 \\).<br>&nbsp;`,
-        `The receiver is expecting packet  \\( 0 \\) , as it has not received any packets yet.<br>&nbsp;`,
-        `The sender has sent packets  \\( 0 \\) to  \\( 4 \\) , and packets  \\( 0 \\) and  \\( 1 \\) have been acknowledged.<br>&nbsp;`,
-        `The receiver has received packets  \\( 0 \\) to  \\( 2 \\) , and is waiting for  \\( 3 \\) to  \\( 7 \\) .`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose it takes  \\( 1 \\) ms to send a packet, and the one-way propagation delay between the sender and receiver is  \\( \\mathbf{1 0} \\mathbf{~ m s} \\). The sliding window size is again  \\( N=4 \\). What is the channel (or link) utilization? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 19.05 \\% \\)<br>&nbsp;`,
-        `\\( 25 \\% \\)<br>&nbsp;`,
-        `\\( 33.3 \\% \\)<br>&nbsp;`,
-        `\\( 40 \\% \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti1/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>A sender is using a sliding window protocol with a window size of  \\( 4 \\) . It has sent packets  \\( 0 \\) to  \\( 3 \\) , and ACKs for packets  \\( 0,1,2 \\), and  \\( 3 \\) are currently propagating from the receiver to the sender. No ACK has yet been received by the sender. Assume cumulative ACKs are used and that the sender takes action only when an ACK is received or a timeout occurs.<br>Which of the following statements about the next possible event at the sender is/are correct?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `If the next event is ACK1 (ACK0 was lost), the sender will slide the window and send packet  \\( 4 \\).`,
-        `If the next event is ACK2 (ACK0 and ACK1 were lost), the sender will note that packet  \\( 2 \\) is ACKed but will not move the window or send any packet.`,
-        `If the next event is ACK0, the sender will slide the window and send packet  \\( 4 \\).`,
-        `If all ACKs (ACK0, ACK1, ACK2, and ACK3) are lost, the sender will receive a duplicate ACK for packet  \\( 3 \\) and move the window accordingly.`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Assume a sender using Go-Back-N ARQ transmits segments  \\( 10 \\) to  \\( 19 \\) after all previous segments have been acknowledged. The receiver receives segments:  \\( 10,11,12,13,16,17,18 \\),  \\( 19 \\). Which ACK will be sent by the receiver?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `Cumulative ACK till segment  \\( 13 \\)`,
-        `Cumulative ACK till&nbsp;segment  \\( 14 \\)`,
-        `ACKs for  \\( 13 \\) and  \\( 16 \\) separately`,
-        `Cumulative ACK till  \\( 10 \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti1/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In a Go-Back-N ARQ protocol with a maximum sender window size of  \\( 10 \\) segments, what is the minimum number of bits required to represent the sequence number field? </p> <p></p>`,
-      image: "",
-      options: [
-        `3`,
-        `4`,
-        `5`,
-        `10`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti1/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>In a Go-Back-N (GBN) protocol, the sender uses a window size of  \\( 4 \\), and sequence numbers range from  \\( 0 \\) to  \\( 1023 \\) (modulo  \\( 1024 \\)). At a certain moment, the receiver is waiting for packet number  \\( 200 \\) to arrive in order.<br><br>Due to network propagation delay, some ACKs sent earlier by the receiver may still be in transit to the sender. Which of the following ranges correctly describes the possible ACK numbers that the sender may still receive at this point?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 200 \\) to  \\( 203 \\)`,
-        `\\( 197 \\) to  \\( 199 \\)`,
-        `\\( 196 \\) to  \\( 199 \\)`,
-        `\\( 196 \\) to  \\( 200 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>Node A wants to send a large amount of data to Node C via an intermediate Node B using the<strong> Selective Repeat protocol</strong> .</p> <ul> <li>Each <strong>bit</strong> transmitted on link  \\( A-B \\) has a probability  \\( p \\) of getting corrupted </li> <li>Each <strong>bit</strong> transmitted on link B-C has a probability  \\( q \\) of getting corrupted </li> <li>Bit errors occur <strong>independently</strong> across links and across bits</li> </ul> <p><br>Each data packet is  \\( d \\) bits long, and each ACK is  \\( a \\) bits long. The ACK is sent end-to-end from C to A (via B  \\( \\rightarrow A \\) )<br><br><strong>What is the expected number of transmissions required by A to successfully send one packet and get it acknowledged?</strong><br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1 / X \\), where  \\( X=(1-p)^{d}(1-q)^{d}(1-q)^{a}(1-p)^{a} \\)`,
-        `\\( 1 / X \\), where  \\( X=(1-p)^{d}(1-q)^{a} \\)`,
-        `\\( 1 / X \\), where  \\( X=(1-p)^{d}(1-q)^{d}(1-p)^{a} \\)`,
-        `\\( 1 / X \\), where  \\( X=(1-p)^{d}(1-q)^{d}(1-q)^{a} \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti1/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A packet of size  \\( N \\) bits is sent from Host  \\( A \\) to Host  \\( B \\) via switch  \\( C \\) using Hop-by-Hop Stop-and-Wait ARQ. Each link  \\( (\\mathrm{A} \\rightarrow \\mathrm{C} \\) and  \\( \\mathrm{C} \\rightarrow \\mathrm{B}) \\) has the same packet success probability  \\( P_{\\text {packet }} \\). The transmission rate on both links is  \\( R \\) bits per second. Ignoring ACK transmission delays, queueing, and processing delays, what is the expected total transmission delay (in seconds) for a packet to be successfully delivered from  \\( A \\) to  \\( B \\) ? </p> <p>&nbsp;</p> <p>&nbsp;</p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\frac{N}{R} \\)<br>&nbsp;`,
-        `\\( \\frac{2 N}{R} \\)<br>&nbsp;`,
-        `\\( \\frac{2 N}{R \\cdot P_{\\text{packet}}} \\) <br>&nbsp;`,
-        `\\( \\frac{2 N}{R} \\cdot \\frac{1}{P_{\\mathrm{packet}}^{2}} \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A Go-Back-N protocol uses a window size of  \\( 5 \\) and cumulative acknowledgments. The parameters are as follows: </p> <ul> <li>Timeout  \\( =100 \\mathrm{~ms} \\), measured from the time the first bit of the packet is sent </li> <li>Packet transmission time  \\( =1 \\mathrm{~ms} \\) </li> <li>One-way link latency  \\( =10 \\mathrm{~ms} \\) </li> </ul> <p><br>The sender begins transmitting packets  \\( 0 \\) to  \\( 4 \\) at  \\( t=0 \\). All packets are received correctly except packet number  \\( 3 \\), which is lost.<br><br>When is packet  \\( 3 \\) first retransmitted (i.e., sent again after timeout expiry)?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( t=24 \\mathrm{~ms} \\)`,
-        `\\( t=102 \\mathrm{~ms} \\)`,
-        `\\( t=103 \\mathrm{~ms} \\)`,
-        `\\( t=100 \\mathrm{~ms} \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti1/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <div style="font-family: 'Segoe UI', sans-serif; max-width: 900px; margin: auto; line-height: 1.6;"> <p>A sender and receiver implement a sliding window protocol using selective retransmission with the following parameters:</p> <div style="display: flex; gap: 30px; align-items: flex-start; margin-bottom: 20px;"> <div style="flex: 1;"> <ul style="line-height: 2;"> <li>Frame sequence number space: 0 to 4</li> <li>Send window and receive window size: 2</li> <li>One-way propagation delay: slightly less than 1 ms</li> <li>Sender transmits one packet per ms</li> <li>Timeout interval at sender: 4 ms</li> <li>Receiver sends cumulative ACKs</li> <li>ACK 1 is lost (as shown in the figure)</li> </ul> </div> <div style="flex: 1; text-align: center;"><img alt="Sliding Window Protocol Diagram" style="max-width: 75%; border: 1px solid #ccc; padding: 4px;" src="/images/quiz/wqt-apti1/q_img1.png"> <div style="font-size: 0.9em; color: #555;">Figure: Sliding Window Timeline</div> </div> </div> <p>Using the above setup and the timeline of packet exchanges shown, which of the following statements are correct?</p> <p style="background: #f9f9f9; border-left: 4px solid #007acc; padding: 10px; margin-bottom: 20px;"> Note: In this question, <code>ACK n</code> refers to the cumulative acknowledgment for Frame n, i.e., all frames up to and including Frame n have been received successfully.</p> </div> <p></p>`,
-      image: "",
-      options: [
-        `The sender receives ACK 4 at t = 7 ms, confirming delivery of Frame 4.`,
-        `Frame 0 is retransmitted at t = 6 ms, even though it was previously acknowledged.`,
-        `ACK 1 is not retransmitted by the receiver after being lost.`,
-        `Frame 2 is not retransmitted by the sender.`,
-      ],
-      answer: ["A", "C", "D"],
-      solution: `<img src="/images/quiz/wqt-apti1/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p>Consider a sliding window flow control protocol between hosts  \\( A \\) and  \\( B \\). Suppose the link propagation delay is  \\( 1 \\) time unit, the retransmission timeout is \\( 3 \\) time units, and the window size is  \\( 3 \\). Assume the link drops every third data packet, i.e., the link drops the  \\( 1 \\) st,  \\( 4 t h, 7 t h, \\ldots \\). data packets. (Note that here "kth packet" means the kth packet transmitted on the link, and not the sequence number of the packet.) How long (in ms ) does it take to transmit 6 packets between  \\( A \\) and  \\( B \\) ? (Note: Ignore the transmission times and the queueing delay, and assume that no acknowledgements are lost.) Assume sender has an unlimited number of packets to send. </p>`,
-      image: "",
-      options: [],
-      answer: "16",
-      solution: `<img src="/images/quiz/wqt-apti1/14.png" style="max-width: 75%;">`
-    },
-  ]
-});
-
-registerTest({
-  series: "Aptitude",
-  name: "WQT - Aptitude-2",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>What happens when a source sends an IP packet larger than the MTU of a router along the path and the DF (Don't Fragment) bit is set?</p> <p></p>`,
-      image: "",
-      options: [
-        `The packet is silently dropped<br>&nbsp;`,
-        `The packet is fragmented by the router<br>&nbsp;`,
-        `The destination host discards the packet<br>&nbsp;`,
-        `An ICMP error message is sent back to the source`,
-      ],
-      answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti2/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>An IP datagram of total length  \\( 1000 \\) bytes, including a  \\( 20 \\)-byte IP header, needs to be transmitted over a network with a Maximum Transmission Unit (MTU) of  \\( 512 \\) bytes. The datagram is fragmented accordingly. Fragmentation must ensure that each fragment's payload size (excluding header) is a multiple of  \\( 8 \\) bytes, except possibly the last fragment.<br><br>What is the Fragment Offset value (in bytes) for the third fragment? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 976 \\)<br>&nbsp;`,
-        `\\( 122 \\)<br>&nbsp;`,
-        `\\( 508 \\)<br>&nbsp;`,
-        `\\( 492 \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti2/2.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>An IP datagram arrives at a router with the following header information:<br> \$\$  \\begin{array}{ll} \\text{Length of IP header:} &amp; &nbsp;\\quad 20\\ \\text{bytes} \\\\ \\text{Total length of IP datagram:} &amp; \\quad996\\ \\text{bytes} \\\\ \\text{DF flag:} &amp; \\quad 0 \\\\ \\text{MF flag:} &amp; \\quad 1 \\\\ \\text{Fragment offset:} &amp; \\quad 122 \\\\ \\end{array}  \$\$ <br>The datagram must now be forwarded over a network with an MTU of only  \\( 500 \\) bytes.<br>Use the information in the IP header to infer the minimum total length of the original datagram (before it was fragmented for the first time). </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1500 \\) bytes<br>&nbsp;`,
-        `\\( 1972 \\) bytes<br>&nbsp;`,
-        `\\( 1496 \\) bytes<br>&nbsp;`,
-        `\\( 1118 \\) bytes`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Match the following IP header fields (Column B) to their respective functions (Column A). Use option \\( \\mathbf{f)} \\) if none of the given fields apply.<br> \$\$  \\begin{array}{ll} \\text{Column A (Purpose)} &amp; \\text{Column B (Field)} \\\\ \\text{i. Used for fragmentation} &amp; \\text{a) 16-bit Identification Field} \\\\ \\text{ii. Indicates presence of options} &amp; \\text{b) 4-bit Header Length} \\\\ \\text{iii. Prevents infinite packet looping} &amp; \\text{c) 8-bit TTL} \\\\ \\text{iv. Detects corruption of packet payload} &amp; \\text{d) 16-bit Checksum} \\\\ &amp; \\text{e) 8-bit Protocol} \\\\ &amp; \\text{f) none-of-the-above} \\\\ \\end{array}  \$\$ </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{a}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{c}, \\mathrm{iv} \\rightarrow \\mathrm{d} \\) <br>&nbsp;`,
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{a}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{c}, \\mathrm{iv} \\rightarrow \\mathrm{f} \\) <br>&nbsp;`,
-        `i  \\( \\rightarrow \\mathrm{c} \\), ii  \\( \\rightarrow \\mathrm{a} \\), iii  \\( \\rightarrow \\mathrm{e} \\), iv  \\( \\rightarrow \\mathrm{d} \\)<br>&nbsp;`,
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{e}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{a}, \\mathrm{iv} \\rightarrow \\mathrm{f} \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>A router receives a  \\( 1500 \\)-byte IPv4 packet (including a  \\( 20 \\)-byte IP header), with IP Identification field set to  \\( \\mathbf{x} \\), the MF (More Fragments) flag set to \\( 1 \\), and the DF (Don't Fragment) flag set to \\( 0 \\). The router needs to forward the packet over a link with an MTU of  \\( 1000 \\) bytes, so fragmentation is required.<br><br>Which of the following statements about the IP header fields of the second fragment are correct? </p> <p></p>`,
-      image: "",
-      options: [
-        `The value of the Identification field in the second fragment is  \\( \\mathbf{x} \\)<br>&nbsp;`,
-        `The Total Length field in the second fragment is  \\( \\mathbf{5 2 0} \\) bytes<br>&nbsp;`,
-        `The Fragment Offset field in the second fragment is  \\( \\mathbf{9 8 0} \\)<br>&nbsp;`,
-        `The MF (More Fragments) flag in the second fragment is  \\( \\mathbf{1} \\)`,
-      ],
-      answer: ["A", "D"],
-      solution: `<img src="/images/quiz/wqt-apti2/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Host A sends a total of  \\( 2400 \\) bytes<strong> </strong>to Host B over a network path as shown below.<br><br>This includes a  \\( 20 \\)-byte TCP header and a  \\( 20 \\)-byte IP header. </p> <div style="text-align: center; margin: 20px 0;"><img alt="" src="/images/quiz/wqt-apti2/q_img1.png" style="max-width: 75%;"></div> <p>Assume the probability that any fragment arrives intact over any link is  \\(  p  \\), and there is no retransmission. </p> <p>What is the probability that the entire  \\( 2400 \\) bytes arrive at Host B without the need for retransmission? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\(  p^6  \\)<br>&nbsp;`,
-        `\\(  p^7  \\)<br>&nbsp;`,
-        `\\(  p^8  \\)<br>&nbsp;`,
-        `\\(  p^9  \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>During normal IP packet forwarding by a router, which of the following packet fields are updated?</p> <p></p>`,
-      image: "",
-      options: [
-        `IP header Source address<br>&nbsp;`,
-        `IP header Destination address<br>&nbsp;`,
-        `IP header TTL<br>&nbsp;`,
-        `IP header checksum`,
-      ],
-      answer: ["C", "D"],
-      solution: `<img src="/images/quiz/wqt-apti2/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p>An IP router uses longest prefix matching and has the following forwarding table: \$\$  \\begin{array}{l} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.2.0/24 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{The router can only store $3$ prefix entries.} \\\\ \\text{Which of the following options gives a functionally equivalent forwarding table?} \\\\ \\\\ \\text{A.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/23 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{B.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.2.0/24 &amp; \\text{Interface 2} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{C.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/22 &amp; \\text{Interface 2} \\\\ 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{D.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/22 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\end{array} \$\$ </p>`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider the following topology, where a node labelled with  \\( \\mathbf{N} \\) denotes an end system,  \\( \\mathbf{H} \\) denotes a hub,  \\( \\mathbf{S} \\) denotes a switch, and  \\( \\mathbf{R} \\) denotes a router:<br><br><img alt="" src="/images/quiz/wqt-apti2/q_img2.png" style="max-width: 75%;"><br><br>All links are Ethernet.<br>In an Ethernet-based network, suppose node  \\( N 1 \\) constructs a packet and accidentally flips a single bit in the IP header before constructing the Ethernet frame; i.e., Ethernet CRC is calculated after the bit flip. Where in the network will this error be detected and the packet dropped? </p> <p></p>`,
-      image: "",
-      options: [
-        `At the hub  \\( H 1 \\), due to Ethernet CRC failure.<br>&nbsp;`,
-        `At the router  \\( R 1 \\), due to invalid IP header checksum.<br>&nbsp;`,
-        `At the router  \\( R 2 \\), due to invalid IP header checksum.<br>&nbsp;`,
-        `At the switch  \\( S 1 \\), due to Ethernet CRC failure.`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose computers  \\( A \\) and  \\( B \\) have IP addresses  \\( 10.105.1.113 \\) and  \\( 10.105.1.91 \\), respectively, and they both use the same netmask  \\( N \\). Which of the values of  \\( N \\) given below should not be used if  \\( A \\) and  \\( B \\) should belong to the same network? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 255.255 .255 .0 \\)<br>&nbsp;`,
-        `\\( 255.255 .255 .128 \\)<br>&nbsp;`,
-        `\\( 255.255 .255 .192 \\)<br>&nbsp;`,
-        `\\( 255.255.255.224 \\)`,
-      ],
-      answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti2/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p> <meta> </p> <p>An IP datagram is fragmented into three packets.<br><br>The following table shows the first 20 bytes of each IP fragment, starting from the IP header (hex values):</p> <div class="table-container"> <table style="width:100%; text-align:center; font-family:monospace;"> <tbody> <tr> <th>📦 Packet #1</th> <th>📦 Packet #2</th> <th>📦 Packet #3</th> </tr> <tr> <td> \\( \\texttt{45 00 02 54} \\) </td> <td> \\( \\texttt{45 00 01 5a} \\) </td> <td> \\( \\texttt{45 00 02 54} \\) </td> </tr> <tr> <td> \\( \\texttt{42 d8 20 48} \\) </td> <td> \\( \\texttt{42 d8 00 90} \\) </td> <td> \\( \\texttt{42 d8 20 00} \\) </td> </tr> <tr> <td> \\( \\texttt{40 11 fe af} \\) </td> <td> \\( \\texttt{40 11 1f 62} \\) </td> <td> \\( \\texttt{40 11 fe f7} \\) </td> </tr> <tr> <td> \\( \\texttt{0a 00 01 02} \\) </td> <td> \\( \\texttt{0a 00 01 02} \\) </td> <td> \\( \\texttt{0a 00 01 02} \\) </td> </tr> <tr> <td> \\( \\texttt{0a 00 01 c8} \\) </td> <td> \\( \\texttt{0a 00 01 c8} \\) </td> <td> \\( \\texttt{0a 00 01 c8} \\) </td> </tr> </tbody> </table> </div> <p>Based on this information, what is the correct order of the fragments for reassembling the original IP datagram?</p> <div class="options"> </div> <p></p>`,
-      image: "",
-      options: [
-        `Packet #1 → Packet #3 → Packet #2<br>&nbsp;`,
-        `Packet #3 → Packet #1 → Packet #2<br>&nbsp;`,
-        `Packet #2 → Packet #3 → Packet #1<br>&nbsp;`,
-        `Packet #3 → Packet #2 → Packet #1`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>A computer virus is spreading in a network of  \\( 128 \\) computers. </p> <ul> <li>At the beginning (round  \\( 0 \\)), only  \\( 1 \\) computer is infected.<br>&nbsp; </li> <li>In each round, every infected computer spreads the virus to  \\( 2 \\) new uninfected computers.<br>&nbsp; </li> <li>The virus is smart and never tries to infect a computer that is already infected.<br>&nbsp;</li> <li>All infections in a round happen at the same time. After that, the next round begins.</li> </ul> <p>How many rounds (after the starting point) are needed to infect all  \\( 128 \\) computers? </p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "5",
-      solution: `<img src="/images/quiz/wqt-apti2/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A sender is transmitting  \\( 7 \\) packets using the Go-Back-N protocol with a window size of  \\( 3 \\), an RTT of  \\( 200 \\) ms, and a retransmission timeout of  \\( 500 \\) ms. If ONLY the  \\( 5th \\) packet is lost, how long does it take for all packets to be correctly received and acknowledged? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 600 \\) ms<br>&nbsp;`,
-        `\\( 700 \\) ms<br>&nbsp;`,
-        `\\( 900 \\) ms<br>&nbsp;`,
-        `\\( 1000 \\) ms`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>We can think of the network as a tree, with the video server at the root and the one million subscribers \\( \\left(10^{6}\\right) \\) at the leaves. Assuming that the tree has degree four (i.e., each router in the tree connects to four routers closer to the leaves), then roughly how many routers does a packet pass through from the root to each subscriber? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 2 \\)<br>&nbsp;`,
-        `\\( 15 \\)<br>&nbsp;`,
-        `\\( 10 \\)<br>&nbsp;`,
-        `\\( 20 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/14.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>Consider the following IP header. The checksum field is currently set to <code>0000</code>. The header is being prepared for transmission.</p> <table border="1" cellpadding="5" style="border-spacing: 0px; margin: auto;"> <tbody> <tr> <td align="center">Version<br><b>4</b></td> <td align="center">IHL<br><b>5</b></td> <td align="center">Type of Service<br><b>00</b></td> <td align="center">Total Length<br><b>001C</b></td> </tr> <tr> <td colspan="2" align="center">Identification<br><b>0001</b></td> <td align="center">Flags<br><b>0</b></td> <td align="center">Fragment Offset<br><b>0000</b></td> </tr> <tr> <td align="center">Time to Live<br><b>01</b></td> <td align="center">Protocol<br><b>11</b></td> <td colspan="2" align="center">Header Checksum<br><b>0000</b></td> </tr> <tr> <td colspan="4" align="center">Source Address<br><b>0A0C0E05</b></td> </tr> <tr> <td colspan="4" align="center">Destination Address<br><b>0C060709</b></td> </tr> </tbody> </table> <p><br>What value should be written into the checksum field?</p> <p></p>`,
-      image: "",
-      options: [
-        `&nbsp;744E<br>&nbsp;`,
-        `&nbsp;8BB1<br>&nbsp;`,
-        `&nbsp;FFFF<br>&nbsp;`,
-        `&nbsp;110E`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/15.png" style="max-width: 75%;">`
-    },
-  ]
-});
-
-registerTest({
-  series: "Aptitude",
-  name: "WQT - Aptitude-3",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>The figure below illustrates the variation in the congestion window size of a TCP connection over time:<br><br>(On receiving 3 duplicate ACKs, the congestion window is reduced to half.)</p> <p style="text-align:center; margin:22px 0; line-height:1.55"><img alt="TCP Congestion Window Graph" style="max-width: 75%;" src="/images/quiz/wqt-apti3/q_img1.png"> </p> <p style="line-height:1.55;">Which of the following statements is/are correct?</p> <p></p>`,
-      image: "",
-      options: [
-        `TCP is in the slow start phase during the time periods  \\(  t_0 - t_1  \\),  \\(  t_5 - t_6  \\), and  \\(  t_8 - t_{9}  \\).`,
-        `TCP is in the congestion avoidance phase during the time periods  \\(  t_0 - t_1  \\),  \\(  t_5 - t_6  \\), and  \\(  t_8 - t_{10}  \\).`,
-        `TCP receives duplicate ACKs at time points  \\(  t_2  \\) and  \\(  t_3  \\).`,
-        `TCP experiences timeouts at time points  \\(  t_2  \\),  \\(  t_3  \\), and  \\(  t_9  \\).`,
-      ],
-      answer: ["A", "C"],
-      solution: `<img src="/images/quiz/wqt-apti3/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>For a client-server application running over TCP or UDP, which of the following is true</p> <p></p>`,
-      image: "",
-      options: [
-        `the server program must be executed before the client program<br>&nbsp;`,
-        `the client program must be executed before the server program<br>&nbsp;`,
-        `the server program can be executed before or after the client program<br>&nbsp;`,
-        `none of the above`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti3/2.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Host  \\( A \\) sends two TCP segments to Host  \\( B \\) back-to-back. Host  \\( B \\) has already received bytes up to  \\( 110 \\). The first segment sent contains  \\( 100 \\) bytes with a sequence number  \\( 111 \\), and the second contains  \\( 10 \\) bytes. If the second segment arrives before the first, what will be the acknowledgment number sent by Host  \\( B \\) in response? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 111 \\)<br>&nbsp;`,
-        `\\( 211 \\)<br>&nbsp;`,
-        `\\( 121 \\)<br>&nbsp;`,
-        `\\( 110 \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti3/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In TCP, define cwnd to be the congestion window size and rwnd to be the receive window size; the amount of unacknowledged data can not exceed</p> <p></p>`,
-      image: "",
-      options: [
-        `rwnd<br>&nbsp;`,
-        `cwnd<br>&nbsp;`,
-        `min{cwnd, rwnd}<br>&nbsp;`,
-        `max{cwnd, rwnd}`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Professor Rao is explaining TCP congestion control to his students. He presents the following scenario: </p> <ul> <li>A TCP sender is operating in the slow start phase.<br>&nbsp;</li> <li>The Maximum Segment Size (MSS)  \\( =1000 \\) bytes.<br>&nbsp; </li> <li>Immediately after the  \\( 10^{th} \\) ACK, the Congestion Window (CWND) is  \\( 2000 \\) bytes.<br>&nbsp; </li> <li>With this window, the sender transmits packets  \\( 11 \\) and  \\( 12 \\).<br>&nbsp; </li> <li>Now, the ACK for packet  \\( 11 \\) arrives. </li> </ul> <p>According to TCP slow start rules, which new packets will the sender transmit at this point?</p> <p></p>`,
-      image: "",
-      options: [
-        `Packet  \\( 13 \\) only<br>&nbsp;`,
-        `Packets  \\( 13 \\) and  \\( 14 \\)<br>&nbsp;`,
-        `Packets  \\( 13, 14,15 \\)<br>&nbsp;`,
-        `None (the sender must wait for more ACKs)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>If a TCP sender has  \\( 14,600 \\) bytes of data in-flight (i.e., it has sent those bytes but has not yet received acknowledgment for any of them), which of these statements is NOT NECESSARILY true? </p> <p></p>`,
-      image: "",
-      options: [
-        `The congestion window size of the sender is at least  \\( 10 \\) MSS's (or,  \\( 14,600 \\) bytes)<br>&nbsp;`,
-        `The congestion window size of the receiver is at least  \\( 10 \\) MSS's (or,  \\( 14,600 \\) bytes)<br>&nbsp;`,
-        `The sender is expecting acknowledgment packets from the receiver<br>&nbsp;`,
-        `The flow control window advertised by the receiver to the sender is at least  \\( 14,600 \\) bytes`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>You are watching a GO Classes Computer Networks class in one browser tab, and you also open another tab to browse a cat-related blog. Both tabs establish TCP connections, and your laptop has only one IP address.<br><br>When a TCP segment arrives, how does the operating system decide whether it belongs to the GO Classes lecture or to the cat blog, ensuring that packets don't get mixed up?</p> <p></p>`,
-      image: "",
-      options: [
-        `By checking only the IP address, since both tabs are on the same machine.<br>&nbsp;`,
-        `By using the port numbers in the TCP header, which let the OS map each segment to the correct socket/application.<br>&nbsp;`,
-        `By analyzing the application-layer data inside the payload.<br>&nbsp;`,
-        `By ordering packets based on their arrival timing.`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Bob's TCP stack has received data up to byte  \\( 560 \\) from Alice, but Bob's browser has only read \\( 60 \\) bytes. Bob's buffer size is  \\( 1024 \\) bytes. What will be the advertised window size in the next TCP header that Bob sends? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 464 \\)<br>&nbsp;`,
-        `\\( 524 \\)<br>&nbsp;`,
-        `\\( 1024 \\)<br>&nbsp;`,
-        `\\( 500 \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose that the advertised receiver window in TCP is  \\( \\mathbf{1} \\) Mbyte long. If a sequence number is chosen uniformly at random from the entire TCP sequence number space ( size  \\( =2^{32} \\) ), what is the probability that the sequence number falls inside the advertised window? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\frac{1}{2^{32}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{12}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{20}} \\)<br>&nbsp;`,
-        `\\( \\frac{1}{2^{16}} \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>At some point, a TCP connection has the following state:</p> <ul> <li>CWND = 4 MSS, SSTHRESH =  \\( 8 \\) MSS<br>&nbsp; </li> <li>All packets up to and including  \\( \\#411 \\) have been sent and acknowledged.<br>&nbsp; </li> <li>Packets  \\( \\#412 \\) through  \\( \\#415 \\) have been sent but not yet acknowledged.<br>&nbsp; </li> <li>Packets  \\( \\#416 \\) and later have not been sent. </li> </ul> <p>Now, assume TCP is in Congestion Avoidance mode.<br><br>If an ACK for packet  \\( \\#412  \\)is received, which packet(s) will be sent as a result? (Select all that apply.) </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\#416 \\)<br>&nbsp;`,
-        `\\( \\#417 \\)<br>&nbsp;`,
-        `\\( \\#418 \\)<br>&nbsp;`,
-        `\\( \\#419 \\)`,
-      ],
-      answer: ["A"],
-      solution: `<img src="/images/quiz/wqt-apti3/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A TCP sender has MSS =  \\( 100 \\) B and a constant window size =  \\( 400 \\) B. </p> <ul> <li> \\( p_{x} \\): a packet whose first byte has the sequence number  \\( x \\).<br>&nbsp; </li> <li> \\( t_{x} \\): time at which packet  \\( p_{x} \\) is transmitted. </li> </ul> <p>At time  \\( t_{1600} \\), packet  \\( p_{1600} \\) (i.e., the packet containing bytes starting from 1600 ) has just been transmitted. What is the highest ACK received by the sender by this time? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1000 \\)<br>&nbsp;`,
-        `\\( 1200 \\)<br>&nbsp;`,
-        `\\( 1300 \\)<br>&nbsp;`,
-        `\\( 1600 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>Alice is sending data to Bob over a TCP (Transmission Control Protocol) connection in the congestion avoidance (Additive Increase, Multiplicative Decrease) phase.</p> <ul> <li>Maximum Segment Size (MSS) =  \\( 100 \\) bytes<br>&nbsp; </li> <li>Current Congestion Window (CWND)  \\( =1000 \\) bytes<br>&nbsp; </li> <li>Alice sends a packet with sequence number  \\( 801 \\), and Bob replies with Acknowledgment \\( (A C K)=901 \\). </li> </ul> <p>What will be the updated Congestion Window (CWND) after this acknowledgement?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "1010",
-      solution: `<img src="/images/quiz/wqt-apti3/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>Consider a TCP (Transmission Control Protocol) connection with the following parameters:</p> <ul> <li>Maximum Segment Size (MSS) =  \\( 1000 \\) bytes<br>&nbsp; </li> <li>Initial Congestion Window (CWND) =  \\( 1000 \\) bytes<br>&nbsp; </li> <li>Slow-Start Threshold (SSTHRESH) =  \\( 4000 \\) bytes<br>&nbsp; </li> <li>All data up to byte  \\( 6000 \\) has been acknowledged (so the next expected byte is  \\( 6001 \\) ). </li> </ul> <p>Now the sender continues transmitting. After receiving the ACK for the 7th MSS, TCP updates its window.<br>What will be the new CWND ?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "4250",
-      solution: `<img src="/images/quiz/wqt-apti3/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>Consider a TCP connection implementing congestion control. At some instant, a timeout occurs when the congestion window (cwnd) is  \\( 32 \\) KB . The maximum segment size (MSS) is  \\( 2 \\) KB . The sender always has data to transmit, and ACKs are never lost.<br>After the timeout: </p> <ul> <li>The congestion threshold (ssthresh) is set to half of the current congestion window.<br>&nbsp;</li> <li>The congestion window is reset to  \\( 1 \\) MSS.<br>&nbsp; </li> <li>The sender resumes with a slow start until cwnd reaches ssthresh and then continues in congestion avoidance.</li> </ul> <p>Under these conditions, how many round-trip times (RTTs) are required for the congestion window to grow back to  \\( 32 \\) KB ? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 8 \\) RTTs<br>&nbsp;`,
-        `\\( 11 \\) RTTs<br>&nbsp;`,
-        `\\( 14 \\) RTTs<br>&nbsp;`,
-        `\\( 16 \\) RTTs`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti3/14.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A TCP sender is transmitting a  \\( 402 \\) KB file using congestion control. The parameters are: </p> <ul> <li>ssthresh  \\( =64 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>cwnd  \\( =2 \\mathrm{~KB} \\) initially (slow start)<br>&nbsp; </li> <li> \\( \\mathrm{MSS}=2 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>Receiver's window size  \\( =70 \\mathrm{~KB} \\)<br>&nbsp; </li> <li>Sender always has data, and ACKs are never lost</li> </ul> <p>By the time the  \\( 9 \\)th RTT is completed, how much data has the receiver acknowledged? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 192 \\) KB<br>&nbsp;`,
-        `\\( 260 \\) KB<br>&nbsp;`,
-        `\\( 330 \\) KB<br>&nbsp;`,
-        `\\( 400 \\) KB`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti3/15.png" style="max-width: 75%;">`
-    },
-  ]
-});
-
-registerTest({
-  series: "Aptitude",
-  name: "WQT - Aptitude-4",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider a CRC in which the generator polynomial is  \\( 11 \\) (binary). What does this CRC effectively implement? </p> <p></p>`,
-      image: "",
-      options: [
-        `It detects only single-bit errors<br>&nbsp;`,
-        `It ensures detection of all  \\( 2 \\)-bit errors<br>&nbsp;`,
-        `It works as a parity bit, detecting errors based on the number of  \\( 1 \\)'s<br>&nbsp;`,
-        `It detects all burst errors of length less than or equal to  \\( 2 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/1.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider the following small network: Hosts  \\( \\mathbf{A} \\) and  \\( \\mathbf{B} \\) are connected to a router  \\( \\mathbf{R} \\) through a switch  \\( \\mathbf{S} \\). Host  \\( \\mathbf{C} \\) connects directly to router  \\( \\mathbf{R} \\). There is no other host, switch, or router in the network.<br><img alt="" src="/images/quiz/wqt-apti4/q_img1.png" style="max-width: 75%;"> </p> <p>&nbsp;</p> <p>What is the maximum number of entries that could appear in the ARP table of host A? Which entities would those entries correspond to?</p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1 \\) entry - only B<br>&nbsp;`,
-        `\\( 1 \\) entry - only R<br>&nbsp;`,
-        `\\( 2 \\) entries - B and R<br>&nbsp;`,
-        `\\( 3 \\) entries - B, R, and C`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/2.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Which of the following is TRUE, if a duplicate ACK is received by a TCP sender?</p> <p></p>`,
-      image: "",
-      options: [
-        `The TCP sender will always retransmit a packet.<br>&nbsp;`,
-        `The TCP receiver must have received the same segment more than once.<br>&nbsp;`,
-        `The TCP sender will always ignore the duplicate ACK silently.<br>&nbsp;`,
-        `None of the other choices.`,
-      ],
-      answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti4/3.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>Assume that a host A with IP  \\( 172.26.184.3 \\) is on a private home network, located behind a NAT home router  \\( R \\). Host  \\( A \\) sends a datagram to destination host  \\( 128.119 .40 .186 \\) , port  \\( 80 \\) , through  \\( R \\). When  \\( R \\) forwards the datagram it will replace the sender's IP and port number. Which of the following IP, port combinations would be valid to use by  \\( R \\) ? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 172.26.184.5 \\),  \\( 3001 \\)<br>&nbsp;`,
-        `\\( 192.168.1.1 \\),  \\( 2001 \\)<br>&nbsp;`,
-        `\\( 128.125.3.4 \\),  \\( 3001 \\)<br>&nbsp;`,
-        `\\( 152.148.5.6 \\),  \\( 3001 \\)`,
-      ],
-      answer: ["C", "D"],
-      solution: `<img src="/images/quiz/wqt-apti4/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>The Ethernet CSMA/CD protocol uses an exponential backoff algorithm. Suppose a datagram has already experienced  \\( \\mathbf{4} \\) collisions. The sender will randomly choose a backoff value  \\( \\mathbf{K} \\) in which of the following ranges and then wait for  \\( \\mathrm{K} \\times 512 \\) bit times before retransmission? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 0 \\) to  \\( 7 \\) (inclusive)<br>&nbsp;`,
-        `\\( 0 \\) to  \\( 15 \\) (inclusive)<br>&nbsp;`,
-        `\\( 1 \\) to  \\( 15 \\) (inclusive)<br>&nbsp;`,
-        `\\( 0 \\) to  \\( 31 \\) (inclusive)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/5.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>In the given network diagram, Ethernet interface addresses (  \\( \\mathrm{e} 1, \\mathrm{e} 2, \\ldots \\) ) are written on the diagram itself. Host  \\( 1 \\) uses interface  \\( \\mathbf{e} 1 \\) with IP address IP H \\( 1 \\), and Host  \\( 4 \\) uses interface  \\( \\mathbf{e 4} \\) with IP address IP H \\( 4 \\). The router has interface e \\( 5 \\) on Network 1 and interface e6 on Network \\( 2 \\). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-apti4/q_img2.png" style="max-width: 75%;"></p> <p><br>When Host  \\( 1 \\) sends an IP packet to Host  \\( 4 \\), what are the correct Ethernet and IP source/destination addresses in the frame that traverses Network  \\( 2 \\)? </p> <p></p>`,
-      image: "",
-      options: [
-        `Eth Src: e6 | Eth Dest: e4 | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e1 | Eth Dest: e \\( 4 \\) | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e5 | Eth Dest: e4 | IP Src: IP H1 | IP Dest: IP H4<br>&nbsp;`,
-        `Eth Src: e4 | Eth Dest: e6 | IP Src: IP H4 | IP Dest: IP H1`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti4/6.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Suppose a router receives an IP packet containing 600 data bytes and has to forward the packet to a network with a maximum transmission unit of  \\( 200 \\) bytes. Assume that the IP header is  \\( 20 \\) bytes long. What are fragment offset values for divided packets? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 22, 44, 66, 88 \\)<br>&nbsp;`,
-        `\\( 0, 22, 44 \\)<br>&nbsp;`,
-        `\\( 0, 22, 44, 66 \\)<br>&nbsp;`,
-        `\\( 22, 44, 66 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/7.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<p>In a Go-Back-N ARQ protocol with a sender window size of  \\( 7 \\), what is the necessary and sufficient number of distinct sequence numbers required to ensure correct protocol operation and avoid ambiguity at the wrap-around point? </p>`,
-      image: "",
-      options: [],
-      answer: "8",
-      solution: `<img src="/images/quiz/wqt-apti4/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>A sender is using the Go-Back-N protocol with:</p> <ul> <li>Window size  \\( =4 \\)<br>&nbsp; </li> <li>One shared retransmission timer (timeout =  \\( 25 \\))<br>&nbsp; </li> <li>Packets are acknowledged cumulatively<br>&nbsp;</li> <li>The channel may lose packets but never reorders them</li> </ul> <p>At time =  \\( 6 \\): </p> <ul> <li>Packets with sequence numbers \\(  2,3  \\), and  \\( 4 \\) are unacknowledged and waiting in the buffer.<br>&nbsp; </li> <li>The next packet to be sent will carry sequence number  \\( 5 \\).<br>&nbsp; </li> <li>The retransmission timer is set to expire at time  \\( =10 \\). </li> </ul> <p>At time  \\( =7 \\), the application generates a new packet with sequence number  \\( 5 \\).<br><br>At time =  \\( 12 \\), an acknowledgement for all packets up to sequence number 3 is received.<br><br>At time  \\( =13 \\), the sender still has packets  \\( 4 \\) and  \\( 5 \\) unacknowledged, and the next packet to be sent will carry sequence number  \\( 6 \\) . The retransmission timer is now set to expire at time  \\( =35 \\).<br><br>Which packets are actually transmitted between time  \\( =6 \\) and time  \\( =13 \\) (in the correct order)? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( \\{2,3,4,5\\} \\)<br>&nbsp;`,
-        `\\( \\{5,2,3,4,5\\} \\)<br>&nbsp;`,
-        `\\( \\{2,3,5,4\\} \\)<br>&nbsp;`,
-        `\\( \\{5,4,5\\} \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/9.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>A network is arranged as follows: Node  \\( \\mathbf{A} \\rightarrow \\) Node  \\( \\mathbf{B} \\rightarrow \\) Node  \\( \\mathbf{C} \\). </p> <ul> <li>Total data to send from  \\( A \\) to  \\( C=\\mathbf{1 2 P} \\) bits.<br>&nbsp; </li> <li>Each packet requires a header of  \\( \\mathbf{P} \\) bits.<br>&nbsp; </li> <li>Link  \\( \\mathrm{A}-\\mathrm{B} \\) and link  \\( \\mathrm{B}-\\mathrm{C} \\) are identical, with<br>&nbsp; </li> <li>Bandwidth = R bits/sec<br>&nbsp;</li> <li>Link propagation speed = S meters/sec<br>&nbsp;</li> <li>Link length = D meters</li> </ul> <p>&nbsp;</p> <ul> <li>Queuing and processing delays are negligible.</li> </ul> <p>If all  \\( \\mathrm{12 P} \\) bits are sent in a single packet (including the header), what is the total delay for the entire data to reach  \\( \\mathrm{C} \\)? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 12 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 13 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 21 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)<br>&nbsp;`,
-        `\\( 26 \\mathrm{P} / \\mathrm{R}+2 \\mathrm{D} / \\mathrm{S} \\)`,
-      ],
-      answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti4/10.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A source sends 12P bits of data from node A to node C via node B.</p> <ul> <li>The path has two identical links (A-B and B-C).<br>&nbsp;</li> <li>Each link has a bandwidth of  \\( \\mathbf{R} \\) bits/sec, a propagation speed of \\( \\mathbf{S} \\) meters/sec, and length  \\( \\mathbf{D} \\) meters.<br>&nbsp; </li> <li>Each packet requires a header of size  \\( \\mathbf{P} \\) bits. </li> </ul> <p>&nbsp;</p> <ul> <li>Queuing and processing delays are negligible.</li> </ul> <p>If the  \\( 12 P \\) bits are divided into  \\( \\mathbf{k} \\) equal packets, then each packet has size  \\( =(12 P / k+P) \\) bits.<br>What is the optimal value of  \\( \\mathbf{k} \\) that minimizes the total end-to-end delay for all data to arrive at C ?<br>&nbsp; </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( k=\\sqrt{12} \\)<br>&nbsp;`,
-        `\\( k=6 \\)<br>&nbsp;`,
-        `\\( k=12  \\)<br>&nbsp;`,
-        `\\(  k=\\sqrt{13} \\)`,
-      ],
-      answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti4/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <div style="max-width:900px;margin:1rem auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;"> <p style="margin:0.3rem 0;">Two hosts <strong>X</strong> and <strong>Y</strong> are communicating over an ongoing TCP connection. Each TCP segment carries <strong>100 bytes</strong> of application data. The first segment sent by <strong>X</strong> has sequence number  \\( 30 \\) and ACK number  \\( 70 \\). </p> <p style="margin:0.3rem 0;">&nbsp;</p> <div style="display:flex; gap:16px; align-items:flex-start; padding:12px;">&nbsp;<div style="flex:1; min-width:300px;"><img alt="TCP exchange diagram: X and Y sending 100B segments; second segment from X is lost and later retransmitted" style="width: 100%; height: auto; max-width: 75%;" src="/images/quiz/wqt-apti4/q_img3.png"></div> <aside style="flex:1; min-width:280px; padding:12px;"> <ul style="margin:0; padding-left:20px;"> <li style="margin:0.3rem 0;">The <strong>second segment sent by X is lost</strong>.<br><br>&nbsp;</li> <li style="margin:0.3rem 0;">It is later <strong>retransmitted when the associated timer expires</strong>.<br><br><br>&nbsp;</li> <li style="margin:0.3rem 0;">No other segments are retransmitted, none are corrupted, and the receiver buffers out-of-order packets correctly.</li> </ul> </aside> </div> <div style="margin-top:14px; line-height:1.5;"> <p>Determine the <em>Sequence Number</em>  \\( S \\) and <em>Acknowledgement Number</em> \\( A \\) in the final TCP segment sent by <strong>X</strong> in the diagram, after the timeout-based retransmission succeeds. </p> </div> </div> <p></p>`,
-      image: "",
-      options: [
-        `\\( S=170,\\; A=230 \\)<br>&nbsp;`,
-        `\\( S=270,\\; A=330 \\)<br>&nbsp;`,
-        `\\( S=270,\\; A=230 \\)<br>&nbsp;`,
-        `\\( S=170,\\; A=330 \\)`,
-      ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti4/12.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <div style="max-width:900px;margin:1.2rem auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; line-height:1.55;"> <p style="margin:.3rem 0;">Consider the following <strong>receiver pseudocode</strong> for a stop-and-wait protocol.<br>The channel may <em>lose</em> or <em>corrupt</em> packets but, if a packet is delivered, it arrives <em>in order</em>.</p> <pre data-pbcklang="c_cpp" data-pbcktabsize="4" class="prettyprint linenums lang-c_cpp prettyprinted" style=""><ol class="linenums"><li class="L0"><span class="pln">p </span><span class="pun">=</span><span class="pln"> receive_packet</span><span class="pun">()</span></li><li class="L1"><span class="pln">&nbsp;</span></li><li class="L2"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">p </span><span class="kwd">is</span><span class="pln"> corrupted OR p</span><span class="pun">.</span><span class="pln">seq </span><span class="pun">≠</span><span class="pln"> expected_seq</span><span class="pun">):</span></li><li class="L3"><span class="pln">    p </span><span class="pun">=</span><span class="pln"> receive_packet</span><span class="pun">()</span><span class="pln">    </span><span class="com">// keep waiting until the expected,</span></li><li class="L4"><span class="pln">                            </span><span class="com">// uncorrupted packet arrives</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">send_ack</span><span class="pun">(</span><span class="pln">p</span><span class="pun">.</span><span class="pln">seq</span><span class="pun">)</span></li><li class="L7"><span class="pln">expected_seq </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> expected_seq   </span><span class="com">// flip expected between 0 and 1</span></li><li class="L8"><span class="pln">deliver_data</span><span class="pun">(</span><span class="pln">p</span><span class="pun">)</span></li><li class="L9"><span class="pln">  </span></li></ol></pre> <ul style="margin:.3rem 0 .9rem 1.1rem;"> <li><code>expected_seq</code> is the sequence number (either  \\( 0 \\) or  \\( 1 \\)) that the receiver is waiting for. </li> <li><code>deliver_data(p)</code> extracts and returns the payload from packet <code>p</code>&nbsp;to upper layer.</li> <li>The <strong>receiver waits forever</strong> if it is blocked inside, <code>receive_packet()</code> awaiting a packet that will never be sent. </li> <li>The <strong>sender loops forever</strong> if it keeps retransmitting the same packet indefinitely.</li> </ul> <p style="margin:.3rem 0 .4rem 0;"><strong>Which of the following statements is correct?</strong></p> </div> <p></p>`,
-      image: "",
-      options: [
-        `A single <em>corrupted data packet</em> can cause the <strong>sender</strong> to loop forever.<br>&nbsp;`,
-        `A single <em>corrupted data packet</em> can cause the <strong>receiver</strong> to wait forever.<br>&nbsp;`,
-        `A single <em>lost ACK</em> can cause the <strong>sender</strong> to loop forever.<br>&nbsp;`,
-        `A single <em>lost ACK</em> can cause the <strong>receiver</strong> to wait forever.`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/13.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>An IP packet of  \\( 552 \\) bytes ( \\( 20 \\)-byte IP header +  \\( 20 \\)-byte TCP header) must traverse two networks in sequence: </p> <ul> <li>Network  \\( 1 \\) with MTU =  \\( 300 \\) bytes<br>&nbsp; </li> <li>Network  \\( 2 \\) with MTU =  \\( 100 \\) bytes </li> </ul> <p><br>After all necessary fragmentations, the packet reaches the destination in multiple pieces.<br><br>How many fragments are finally delivered to the destination?</p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "8",
-      solution: `<img src="/images/quiz/wqt-apti4/14.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0.67,
-      type: "MCQ",
-      text: `<p></p> <p>A network of  \\( 4 \\) routers  \\( \\mathrm{A}, \\mathrm{B}, \\mathrm{C} \\) and  \\( \\mathrm{D} \\) is arranged as shown below. The routers use the distance vector routing, using the number of hops as the metric. The value &nbsp; \\( \\text{“8”} \\) &nbsp;is used by all routers to indicate "infinity" (to conclude that a router is unreachable). </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-apti4/q_img4.png" style="max-width: 75%;"></p> <p>In each round, all nodes exchange their distance vectors with their respective neighbours. Then all nodes update their distance vectors. In between two rounds, any change in cost of a link will cause the two incident nodes to change only that entry in their distance vectors.</p> <p>The link  \\( \\text{C-D} \\) goes down. How many exchanges would it require for each of them to conclude that&nbsp; \\( \\text{D} \\) is unreachable? </p> <p></p>`,
-      image: "",
-      options: [
-        `\\( 1 \\)<br>&nbsp;`,
-        `\\( 2 \\)<br>&nbsp;`,
-        `\\( 3 \\)<br>&nbsp;`,
-        `\\( 4 \\)`,
-      ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti4/15.png" style="max-width: 75%;">`
-    },
-  ]
-});
-
 registerTest({
   series: "weekly-cs-gate-2027",
   name: "WQT - Aptitude-1",
@@ -20617,7 +19734,7 @@ registerTest({
 
 
 registerTest({
-  series: "Aptitude",
+  series: "weekly-cs-gate-2027",
   name: "WQT - Aptitude-2",
   date: "Oct 01, 2026",
   questions: [
@@ -20625,216 +19742,451 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>What happens when a source sends an IP packet larger than the MTU of a router along the path and the DF (Don't Fragment) bit is set?</p> <p></p>`,
+      text: `<p></p> <p>If  \\( f(x)=x^2 \\) and  \\( g(x)=\\log _e x \\), then  \\( f(x)+g(x) \\) will be </p> <p></p>`,
       image: "",
       options: [
-        `The packet is silently dropped<br>&nbsp;`,
-        `The packet is fragmented by the router<br>&nbsp;`,
-        `The destination host discards the packet<br>&nbsp;`,
-        `An ICMP error message is sent back to the source`,
+        `Even function<br>&nbsp;`,
+        `Odd function<br>&nbsp;`,
+        `Both<br>&nbsp;`,
+        `None of the above`,
       ],
       answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti2/1.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/1.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>An IP datagram of total length  \\( 1000 \\) bytes, including a  \\( 20 \\)-byte IP header, needs to be transmitted over a network with a Maximum Transmission Unit (MTU) of  \\( 512 \\) bytes. The datagram is fragmented accordingly. Fragmentation must ensure that each fragment's payload size (excluding header) is a multiple of  \\( 8 \\) bytes, except possibly the last fragment.<br><br>What is the Fragment Offset value (in bytes) for the third fragment? </p> <p></p>`,
+      text: `<p></p> <p>&nbsp;If  \\( a : b = 2 : 3 \\) and  \\( b : c = 5 : 7, \\) find the value of &nbsp; \\( a : b : c ? \\) </p> <p></p>`,
       image: "",
       options: [
-        `\\( 976 \\)<br>&nbsp;`,
-        `\\( 122 \\)<br>&nbsp;`,
-        `\\( 508 \\)<br>&nbsp;`,
-        `\\( 492 \\)`,
+        `\\( 5 : 7: 13 \\)<br>&nbsp;`,
+        `\\( 10 : 15: 17 \\)<br>&nbsp;`,
+        `\\( 10 : 15: 21 \\)<br>&nbsp;`,
+        `\\( 7 : 15: 13 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If the population of a town is  \\( p \\) in the beginning of any year then it becomes&nbsp; \\( 3+2p \\) in the beginning of the next year. If the population in the beginning of  \\( 2019 \\) is  \\( 1000 \\), then the population in the beginning of \\( 2034 \\) will be </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (997)2^{14}+3 \\)<br>&nbsp;`,
+        `\\( (1003)^{15}+6 \\)<br>&nbsp;`,
+        `\\( (1003)2^{15}-3 \\)<br>&nbsp;`,
+        `\\( (997)^{15}-3 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-2/q_img1.png" style="max-width: 75%;"></p> <p>What is the average of the angle  \\( x\\&amp;y? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 90 ^{\\circ} \\)<br>&nbsp;`,
+        `\\( 120 ^{\\circ} \\)<br>&nbsp;`,
+        `\\( 95 ^{\\circ} \\)<br>&nbsp;`,
+        `\\( 80 ^{\\circ} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The arithmetic mean of five different natural numbers is  \\( 12 \\). The largest possible value among the numbers is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 12 \\)&nbsp;<br>&nbsp;`,
+        `\\( 40 \\)&nbsp;<br>&nbsp;`,
+        `\\( 50 \\)&nbsp;<br>&nbsp;`,
+        `\\( 60 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Library : Book : : Book : ______</p> <p></p>`,
+      image: "",
+      options: [
+        `Pages<br>&nbsp;`,
+        `Copy<br>&nbsp;`,
+        `Binding<br>&nbsp;`,
+        `Cover`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/wqt-apti2/2.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/6.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>An IP datagram arrives at a router with the following header information:<br> \$\$  \\begin{array}{ll} \\text{Length of IP header:} &amp; &nbsp;\\quad 20\\ \\text{bytes} \\\\ \\text{Total length of IP datagram:} &amp; \\quad996\\ \\text{bytes} \\\\ \\text{DF flag:} &amp; \\quad 0 \\\\ \\text{MF flag:} &amp; \\quad 1 \\\\ \\text{Fragment offset:} &amp; \\quad 122 \\\\ \\end{array}  \$\$ <br>The datagram must now be forwarded over a network with an MTU of only  \\( 500 \\) bytes.<br>Use the information in the IP header to infer the minimum total length of the original datagram (before it was fragmented for the first time). </p> <p></p>`,
+      text: `<p></p> <p>Introducing a boy, a girl said, "He is the son of the daughter of the father of my uncle." How is the boy related to the girl?</p> <p></p>`,
       image: "",
       options: [
-        `\\( 1500 \\) bytes<br>&nbsp;`,
-        `\\( 1972 \\) bytes<br>&nbsp;`,
-        `\\( 1496 \\) bytes<br>&nbsp;`,
-        `\\( 1118 \\) bytes`,
+        `Cousin<br>&nbsp;`,
+        `Nephew<br>&nbsp;`,
+        `Uncle<br>&nbsp;`,
+        `Son-in-law`,
       ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/3.png" style="max-width: 75%;">`
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/7.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Match the following IP header fields (Column B) to their respective functions (Column A). Use option \\( \\mathbf{f)} \\) if none of the given fields apply.<br> \$\$  \\begin{array}{ll} \\text{Column A (Purpose)} &amp; \\text{Column B (Field)} \\\\ \\text{i. Used for fragmentation} &amp; \\text{a) 16-bit Identification Field} \\\\ \\text{ii. Indicates presence of options} &amp; \\text{b) 4-bit Header Length} \\\\ \\text{iii. Prevents infinite packet looping} &amp; \\text{c) 8-bit TTL} \\\\ \\text{iv. Detects corruption of packet payload} &amp; \\text{d) 16-bit Checksum} \\\\ &amp; \\text{e) 8-bit Protocol} \\\\ &amp; \\text{f) none-of-the-above} \\\\ \\end{array}  \$\$ </p> <p></p>`,
+      text: `<p></p> <p>In a certain code  \\( \\text{‘BUILT’} \\) is written as  \\( \\text{‘}5 \\#32 @\\text{’} \\) and  \\( \\text{‘TRIBE’} \\) is written as  \\( \\text{‘}@935©\\text{’}. \\) How is  \\( \\text{‘RULE’} \\) written in that code? </p> <p></p>`,
       image: "",
       options: [
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{a}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{c}, \\mathrm{iv} \\rightarrow \\mathrm{d} \\) <br>&nbsp;`,
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{a}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{c}, \\mathrm{iv} \\rightarrow \\mathrm{f} \\) <br>&nbsp;`,
-        `i  \\( \\rightarrow \\mathrm{c} \\), ii  \\( \\rightarrow \\mathrm{a} \\), iii  \\( \\rightarrow \\mathrm{e} \\), iv  \\( \\rightarrow \\mathrm{d} \\)<br>&nbsp;`,
-        `\\( \\mathrm{i} \\rightarrow \\mathrm{e}, \\mathrm{ii} \\rightarrow \\mathrm{b}, \\mathrm{iii} \\rightarrow \\mathrm{a}, \\mathrm{iv} \\rightarrow \\mathrm{f} \\)`,
+        `\\( 9\\#2© \\)<br>&nbsp;`,
+        `\\( 92\\#© \\)<br>&nbsp;`,
+        `\\( @\\#2© \\)<br>&nbsp;`,
+        `\\( @2\\#© \\)`,
       ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/4.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>A router receives a  \\( 1500 \\)-byte IPv4 packet (including a  \\( 20 \\)-byte IP header), with IP Identification field set to  \\( \\mathbf{x} \\), the MF (More Fragments) flag set to \\( 1 \\), and the DF (Don't Fragment) flag set to \\( 0 \\). The router needs to forward the packet over a link with an MTU of  \\( 1000 \\) bytes, so fragmentation is required.<br><br>Which of the following statements about the IP header fields of the second fragment are correct? </p> <p></p>`,
-      image: "",
-      options: [
-        `The value of the Identification field in the second fragment is  \\( \\mathbf{x} \\)<br>&nbsp;`,
-        `The Total Length field in the second fragment is  \\( \\mathbf{5 2 0} \\) bytes<br>&nbsp;`,
-        `The Fragment Offset field in the second fragment is  \\( \\mathbf{9 8 0} \\)<br>&nbsp;`,
-        `The MF (More Fragments) flag in the second fragment is  \\( \\mathbf{1} \\)`,
-      ],
-      answer: ["A", "D"],
-      solution: `<img src="/images/quiz/wqt-apti2/5.png" style="max-width: 75%;">`
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/8.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Host A sends a total of  \\( 2400 \\) bytes<strong> </strong>to Host B over a network path as shown below.<br><br>This includes a  \\( 20 \\)-byte TCP header and a  \\( 20 \\)-byte IP header. </p> <div style="text-align: center; margin: 20px 0;"><img alt="" src="/images/quiz/wqt-apti2/q_img1.png" style="max-width: 75%;"></div> <p>Assume the probability that any fragment arrives intact over any link is  \\(  p  \\), and there is no retransmission. </p> <p>What is the probability that the entire  \\( 2400 \\) bytes arrive at Host B without the need for retransmission? </p> <p></p>`,
+      text: `<p></p> <p>Tailgating another vehicle is unsafe and illegal. Many rear-end collisions are caused by drivers following too closely to the vehicle in front of them. The rules state that a driver must keep sufficient distance from the vehicle in front in order to stop safely and avoid a collision. Drivers should allow a minimum two seconds’ gap between their vehicle and the one ahead. At sixty kilometres an hour, this equates to thirty-three metres; at a hundred, it equates to fifty-five metres. More distance is needed to safely stop in rain or poor visibility.</p> <p>‘More distance is needed to safely stop in rain or poor visibility.’ We can infer from this that:</p> <p></p>`,
       image: "",
       options: [
-        `\\(  p^6  \\)<br>&nbsp;`,
-        `\\(  p^7  \\)<br>&nbsp;`,
-        `\\(  p^8  \\)<br>&nbsp;`,
-        `\\(  p^9  \\)`,
+        `people drive faster in rain and poor visibility.<br>&nbsp;`,
+        `the writer is merely calculating on the safe side.<br>&nbsp;`,
+        `braking is more hazardous in rain and poor visibility.<br>&nbsp;`,
+        `the road rules state that this must be so.`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/6.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/9.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
-      neg: 0,
-      type: "MSQ",
-      text: `<p></p> <p>During normal IP packet forwarding by a router, which of the following packet fields are updated?</p> <p></p>`,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-aptitude-2/q_img2.png" style="max-width: 75%;"></p> <p>A circular sheet of paper is folded along the lines in the directions shown. The paper, after being punched in the final folded state as shown and unfolded in the reverse order of folding, will look like _______.</p> <p>&nbsp;</p> <p></p>`,
       image: "",
       options: [
-        `IP header Source address<br>&nbsp;`,
-        `IP header Destination address<br>&nbsp;`,
-        `IP header TTL<br>&nbsp;`,
-        `IP header checksum`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img3.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img4.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img5.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img6.png" style="max-width: 75%;">`,
       ],
-      answer: ["C", "D"],
-      solution: `<img src="/images/quiz/wqt-apti2/7.png" style="max-width: 75%;">`
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/10.png" style="max-width: 75%;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.67,
       type: "MCQ",
-      text: `<p>An IP router uses longest prefix matching and has the following forwarding table: \$\$  \\begin{array}{l} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.2.0/24 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{The router can only store $3$ prefix entries.} \\\\ \\text{Which of the following options gives a functionally equivalent forwarding table?} \\\\ \\\\ \\text{A.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/23 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{B.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.2.0/24 &amp; \\text{Interface 2} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{C.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/22 &amp; \\text{Interface 2} \\\\ 128.2.0.0/24 &amp; \\text{Interface 1} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\\\ \\\\ \\text{D.} \\\\ \\begin{array}{|c|c|} \\hline \\text{Prefix} &amp; \\text{Interface} \\\\ \\hline 128.2.0.0/22 &amp; \\text{Interface 1} \\\\ 128.2.1.0/24 &amp; \\text{Interface 2} \\\\ 128.2.3.0/24 &amp; \\text{Interface 3} \\\\ \\hline \\end{array} \\end{array} \$\$ </p>`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/8.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<p></p> <p>Consider the following topology, where a node labelled with  \\( \\mathbf{N} \\) denotes an end system,  \\( \\mathbf{H} \\) denotes a hub,  \\( \\mathbf{S} \\) denotes a switch, and  \\( \\mathbf{R} \\) denotes a router:<br><br><img alt="" src="/images/quiz/wqt-apti2/q_img2.png" style="max-width: 75%;"><br><br>All links are Ethernet.<br>In an Ethernet-based network, suppose node  \\( N 1 \\) constructs a packet and accidentally flips a single bit in the IP header before constructing the Ethernet frame; i.e., Ethernet CRC is calculated after the bit flip. Where in the network will this error be detected and the packet dropped? </p> <p></p>`,
+      text: `<p></p> <p> \\( \\text{A} \\) is  \\( x \\% \\) more than  \\( \\text{B} \\) and is  \\( x \\% \\) of the sum of  \\( \\text{A} \\) and  \\( \\text{B} \\). What is the value of  \\( x? \\)&nbsp; </p> <p></p>`,
       image: "",
       options: [
-        `At the hub  \\( H 1 \\), due to Ethernet CRC failure.<br>&nbsp;`,
-        `At the router  \\( R 1 \\), due to invalid IP header checksum.<br>&nbsp;`,
-        `At the router  \\( R 2 \\), due to invalid IP header checksum.<br>&nbsp;`,
-        `At the switch  \\( S 1 \\), due to Ethernet CRC failure.`,
+        `\\( 50 \\% \\)<br>&nbsp;`,
+        `\\( 62 \\% \\)<br>&nbsp;`,
+        `\\( 75 \\% \\)<br>&nbsp;`,
+        `\\( 37 \\% \\)`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/9.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/11.png" style="max-width: 75%;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Suppose computers  \\( A \\) and  \\( B \\) have IP addresses  \\( 10.105.1.113 \\) and  \\( 10.105.1.91 \\), respectively, and they both use the same netmask  \\( N \\). Which of the values of  \\( N \\) given below should not be used if  \\( A \\) and  \\( B \\) should belong to the same network? </p> <p></p>`,
+      text: `<p></p> <p>If  \\( \\text{‘KCLFTSB’} \\) stands for ‘best of luck’ and \\( \\text{‘SHSWDG’} \\) stands for 'good wishes', which of the following indicates 'ace the exam'?&nbsp; </p> <p></p>`,
       image: "",
       options: [
-        `\\( 255.255 .255 .0 \\)<br>&nbsp;`,
-        `\\( 255.255 .255 .128 \\)<br>&nbsp;`,
-        `\\( 255.255 .255 .192 \\)<br>&nbsp;`,
-        `\\( 255.255.255.224 \\)`,
+        `\\( \\text{MCHTX} \\)&nbsp;<br>&nbsp;`,
+        `\\( \\text{MXHTC} \\)&nbsp;<br>&nbsp;`,
+        `\\( \\text{XMHCT} \\)&nbsp;<br>&nbsp;`,
+        `\\( \\text{XMHTC} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Students in a college have to choose at least two subjects from chemistry, mathematics, and physics. The number of students choosing all three subjects is  \\( 18, \\) choosing mathematics as one of their subjects is  \\( 23 \\) and choosing physics as one of their subjects is  \\( 25. \\) The smallest possible number of students who could choose chemistry as one of their subjects is&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 20 \\)<br>&nbsp;`,
+        `\\( 22 \\)<br>&nbsp;`,
+        `\\( 19 \\)<br>&nbsp;`,
+        `\\( 21 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A man travels three-fifths of the distance  \\( A B \\) at a speed of  \\( 3 a \\) and the remaining at a speed of  \\( 2 b \\). If he goes from  \\( B \\) to  \\( A \\) and back at a speed of  \\( 5 c \\) in the same time, then: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 / a+1 / b=1 / c \\)<br>&nbsp;`,
+        `\\( a+b=c \\)<br>&nbsp;`,
+        `\\( 1 / a+1 / b=2 / c \\)<br>&nbsp;`,
+        `None of these`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Sourabh borrows Rs.  \\( 25,00,000 \\) at  \\( 12 \\% \\) compound interest from a bank and invests in shares. The investment gives him a return of  \\( 20 \\% \\) per annum and he repays Rs. \\( 5,00,000 \\) at the end of the first year. How much does he make for himself after paying all the outstanding amounts at the end of the second year? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 424000 \\)<br>&nbsp;`,
+        `\\( 356241.50 \\)<br>&nbsp;`,
+        `\\( 525000 \\)<br>&nbsp;`,
+        `\\( 484241.80 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A college cricket team with  \\( 11 \\) players consists of  \\( 4 \\) batsmen,  \\( 3 \\) all-rounders,  \\( 3 \\) bowlers and  \\( 1 \\) wicket keeper.  \\( 3 \\) players are selected randomly. Find the probability that the selection contains a batsman, a bowler and an all-rounder. </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\dfrac{12}{60} \\\\ \\)<br>&nbsp;`,
+        `\\( \\dfrac{13}{25} \\\\ \\)<br>&nbsp;`,
+        `\\( \\dfrac{12}{55} \\\\ \\)<br>&nbsp;`,
+        `\\( \\dfrac{104}{165} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Ten tickets numbered  \\( 1, 2, 3, \\ldots&nbsp;10. \\) Six tickets are selected at random one at a time with replacement. The probability of the largest number appearing on the selected ticket being  \\( 7 \\) is ________ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (7^6 +1)/10^6 \\)<br>&nbsp;`,
+        `\\( (7^6 - 6^6)/10^6 \\)<br>&nbsp;`,
+        `\\( (7^6+6^6)/10^6 \\)<br>&nbsp;`,
+        `\\( 6^6/10^6 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\text{A} \\) and  \\( \\text{B} \\) two solid spheres such that the surface area of  \\( \\text{B} \\) is  \\( 300\\% \\) higher than the surface area of  \\( \\text{A}. \\) The volume of  \\( \\text{A} \\) is found to be  \\( k\\% \\) lower than the volume of  \\( \\text{B}. \\) The value of  \\( k \\) must be ________ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 85.5 \\)<br>&nbsp;`,
+        `\\( 92.5 \\)<br>&nbsp;`,
+        `\\( 90.5 \\)<br>&nbsp;`,
+        `\\( 87.5 \\)`,
       ],
       answer: "D",
-      solution: `<img src="/images/quiz/wqt-apti2/10.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/18.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p> <meta> </p> <p>An IP datagram is fragmented into three packets.<br><br>The following table shows the first 20 bytes of each IP fragment, starting from the IP header (hex values):</p> <div class="table-container"> <table style="width:100%; text-align:center; font-family:monospace;"> <tbody> <tr> <th>📦 Packet #1</th> <th>📦 Packet #2</th> <th>📦 Packet #3</th> </tr> <tr> <td> \\( \\texttt{45 00 02 54} \\) </td> <td> \\( \\texttt{45 00 01 5a} \\) </td> <td> \\( \\texttt{45 00 02 54} \\) </td> </tr> <tr> <td> \\( \\texttt{42 d8 20 48} \\) </td> <td> \\( \\texttt{42 d8 00 90} \\) </td> <td> \\( \\texttt{42 d8 20 00} \\) </td> </tr> <tr> <td> \\( \\texttt{40 11 fe af} \\) </td> <td> \\( \\texttt{40 11 1f 62} \\) </td> <td> \\( \\texttt{40 11 fe f7} \\) </td> </tr> <tr> <td> \\( \\texttt{0a 00 01 02} \\) </td> <td> \\( \\texttt{0a 00 01 02} \\) </td> <td> \\( \\texttt{0a 00 01 02} \\) </td> </tr> <tr> <td> \\( \\texttt{0a 00 01 c8} \\) </td> <td> \\( \\texttt{0a 00 01 c8} \\) </td> <td> \\( \\texttt{0a 00 01 c8} \\) </td> </tr> </tbody> </table> </div> <p>Based on this information, what is the correct order of the fragments for reassembling the original IP datagram?</p> <div class="options"> </div> <p></p>`,
+      text: `<p></p> <p>The length, breadth and height of a room are in the ration  \\( 3:2:1. \\) If the breadth and height are halved while the length is doubled, then the total area of the four walls of the room will </p> <p></p>`,
       image: "",
       options: [
-        `Packet #1 → Packet #3 → Packet #2<br>&nbsp;`,
-        `Packet #3 → Packet #1 → Packet #2<br>&nbsp;`,
-        `Packet #2 → Packet #3 → Packet #1<br>&nbsp;`,
-        `Packet #3 → Packet #2 → Packet #1`,
+        `remain the same.<br>&nbsp;`,
+        `decrease by  \\( 15\\% \\)<br>&nbsp;`,
+        `decrease by  \\( 18.75\\% \\)<br>&nbsp;`,
+        `decrease by  \\( 30\\% \\)`,
       ],
-      answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/11.png" style="max-width: 75%;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<p></p> <p>A computer virus is spreading in a network of  \\( 128 \\) computers. </p> <ul> <li>At the beginning (round  \\( 0 \\)), only  \\( 1 \\) computer is infected.<br>&nbsp; </li> <li>In each round, every infected computer spreads the virus to  \\( 2 \\) new uninfected computers.<br>&nbsp; </li> <li>The virus is smart and never tries to infect a computer that is already infected.<br>&nbsp;</li> <li>All infections in a round happen at the same time. After that, the next round begins.</li> </ul> <p>How many rounds (after the starting point) are needed to infect all  \\( 128 \\) computers? </p> <p></p>`,
-      image: "",
-      options: [],
-      answer: "5",
-      solution: `<img src="/images/quiz/wqt-apti2/12.png" style="max-width: 75%;">`
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/19.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>A sender is transmitting  \\( 7 \\) packets using the Go-Back-N protocol with a window size of  \\( 3 \\), an RTT of  \\( 200 \\) ms, and a retransmission timeout of  \\( 500 \\) ms. If ONLY the  \\( 5th \\) packet is lost, how long does it take for all packets to be correctly received and acknowledged? </p> <p></p>`,
+      text: `<p></p> <p>If  \\( 4 \\)&nbsp;Maths books are selected from  \\( 6 \\) different Maths books and  \\( 3 \\) English books are chosen from  \\( 5 \\) different English books, how many ways can the seven books be arranged on a shelf if a Maths is at the beginning and an English book is in the middle of the shelf </p> <p></p>`,
       image: "",
       options: [
-        `\\( 600 \\) ms<br>&nbsp;`,
-        `\\( 700 \\) ms<br>&nbsp;`,
-        `\\( 900 \\) ms<br>&nbsp;`,
-        `\\( 1000 \\) ms`,
+        `\\( 216000 \\)<br>&nbsp;`,
+        `\\( 218000 \\)<br>&nbsp;`,
+        `\\( 206000 \\)<br>&nbsp;`,
+        `\\( 226000 \\)`,
       ],
-      answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/13.png" style="max-width: 75%;">`
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/20.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>We can think of the network as a tree, with the video server at the root and the one million subscribers \\( \\left(10^{6}\\right) \\) at the leaves. Assuming that the tree has degree four (i.e., each router in the tree connects to four routers closer to the leaves), then roughly how many routers does a packet pass through from the root to each subscriber? </p> <p></p>`,
+      text: `<p></p> <p>The natural numbers are divided into groups as  \\( (1), (2,3,4), (5,6,7,8,9), \\dots  \\) and so on. Then, the sum of the numbers in the  \\( 15 \\text{th} \\) group is equal to&nbsp; </p> <p></p>`,
       image: "",
       options: [
-        `\\( 2 \\)<br>&nbsp;`,
-        `\\( 15 \\)<br>&nbsp;`,
-        `\\( 10 \\)<br>&nbsp;`,
-        `\\( 20 \\)`,
+        `\\( 6090 \\)<br>&nbsp;`,
+        `\\( 4941 \\)<br>&nbsp;`,
+        `\\( 6119 \\)<br>&nbsp;`,
+        `\\( 7471 \\)`,
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/wqt-apti2/14.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/21.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Consider the following IP header. The checksum field is currently set to <code>0000</code>. The header is being prepared for transmission.</p> <table border="1" cellpadding="5" style="border-spacing: 0px; margin: auto;"> <tbody> <tr> <td align="center">Version<br><b>4</b></td> <td align="center">IHL<br><b>5</b></td> <td align="center">Type of Service<br><b>00</b></td> <td align="center">Total Length<br><b>001C</b></td> </tr> <tr> <td colspan="2" align="center">Identification<br><b>0001</b></td> <td align="center">Flags<br><b>0</b></td> <td align="center">Fragment Offset<br><b>0000</b></td> </tr> <tr> <td align="center">Time to Live<br><b>01</b></td> <td align="center">Protocol<br><b>11</b></td> <td colspan="2" align="center">Header Checksum<br><b>0000</b></td> </tr> <tr> <td colspan="4" align="center">Source Address<br><b>0A0C0E05</b></td> </tr> <tr> <td colspan="4" align="center">Destination Address<br><b>0C060709</b></td> </tr> </tbody> </table> <p><br>What value should be written into the checksum field?</p> <p></p>`,
+      text: `<p></p> <p>January  \\( 11, 1997 \\) was a Sunday. What day of the week was on January  \\( 7 , 2000? \\) </p> <p></p>`,
       image: "",
       options: [
-        `&nbsp;744E<br>&nbsp;`,
-        `&nbsp;8BB1<br>&nbsp;`,
-        `&nbsp;FFFF<br>&nbsp;`,
-        `&nbsp;110E`,
+        `Sunday<br>&nbsp;`,
+        `Monday<br>&nbsp;`,
+        `Saturday<br>&nbsp;`,
+        `Thursday`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/22.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>How many degrees apart are the minute hand and the hour hand of a clock at  \\( 4: 15? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 35.5^{\\circ} \\)<br>&nbsp;`,
+        `\\( 30^{\\circ} \\)<br>&nbsp;`,
+        `\\( 37.5^{\\circ} \\)<br>&nbsp;`,
+        `\\( 32.5^{\\circ} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/23.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( 7\\:\\theta\\: 13\\: \\alpha\\: 3 = 60, \\) and  \\( 12\\:\\theta\\: 13\\: \\alpha\\: 4 = 100, \\) then  \\( 38\\:\\theta\\: 39\\: \\alpha\\: 3 =\\:? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 313 \\)<br>&nbsp;`,
+        `\\( 219 \\)<br>&nbsp;`,
+        `\\( 343 \\)<br>&nbsp;`,
+        `\\( 231 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/24.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which number does not belong in the series below?</p> <p> \\( \\qquad2, 5, 10, 17, 26, 37, 50, 64 \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 17 \\)<br>&nbsp;`,
+        `\\( 37 \\)<br>&nbsp;`,
+        `\\( 64 \\)<br>&nbsp;`,
+        `\\( 26 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/25.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Each of  \\( P, Q, R, S, W, X, Y \\) and  \\( Z \\) has been married at most once.  \\( X \\) and  \\( Y \\) are married and have two children,  \\( P \\) and  \\( Q. Z \\) is the grandfather of the daughter,  \\( S \\) of  \\( P \\). Further,  \\( Z \\) and  \\( W \\) are married and are parents of  \\( R \\). </p> <p>Which one of the following must necessarily be  \\( \\text{FALSE}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( X \\) is the mother-in-law of  \\( R \\)<br>&nbsp;`,
+        `\\( P \\) and  \\( R \\) are not married to each other<br>&nbsp;`,
+        `\\( P \\) is a son of  \\( X \\) and  \\( Y \\)<br>&nbsp;`,
+        `\\( Q \\) cannot be married to  \\( R \\)`,
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/wqt-apti2/15.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/wqt-aptitude-2/26.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Tailgating another vehicle is unsafe and illegal. Many rear-end collisions are caused by drivers following too closely to the vehicle in front of them. The rules state that a driver must keep sufficient distance from the vehicle in front in order to stop safely and avoid a collision. Drivers should allow a minimum two seconds’ gap between their vehicle and the one ahead. At sixty kilometres an hour, this equates to thirty-three metres; at a hundred, it equates to fifty-five metres. More distance is needed to safely stop in rain or poor visibility.</p> <p>Tailgating another vehicle is unsafe because:</p> <p></p>`,
+      image: "",
+      options: [
+        `all rear-end collisions are caused by drivers following too closely to the vehicle in front.<br>&nbsp;`,
+        `it may not allow sufficient time and space to stop and avoid a collision.<br>&nbsp;`,
+        `it is against the road rules.<br>&nbsp;`,
+        `it is a reckless practice.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/27.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The first murder ever committed in the United States occurred in September  \\( 1630, \\) shortly after the Pilgrims arrived in Massachusetts. John Billington was the father of two sons, one of the first to settle in the new Plymouth Colony near what is today Boston, and one of the people who signed the Mayflower Compact—and he was also the colony’s first murderer. </p> <p>Billington, in fact, was the first person to commit any crime in the colony, as far as we know today. He was also the first to be executed by the state in the New World. Billington’s crime was to shoot a man named John Newcomen, for reasons which are lost to history.</p> <p>But Billington’s problems had not begun on the soil of North America. He and his sons had nearly caused a mutiny aboard the Mayflower during the arduous trip across the ocean. One of his sons, in fact, fired his gun aboard the Mayflower—near an open keg of gunpowder! The flash from the gun could easily have ignited the powder, which would probably have sunk the ship.</p> <p>Once in Plymouth Colony, Billington’s behavior did not improve. He refused to serve any form of military duty under the leadership of Miles Standish, a duty that was seen by the colonists as part of every man’s responsibilities in the New World. He was later implicated in a plot to overthrow the entire leadership of Plymouth Colony, but a lack of evidence prompted the town’s leaders to let him go free. </p> <p>In the end, Billington’s rebellious and angry nature caught up with him. He was found guilty of the murder of John Newcomen and died in disgrace on the gallows.</p> <p>Based on the information in the passage, which of the following best describes John Billington?</p> <p></p>`,
+      image: "",
+      options: [
+        `quiet and shy<br>&nbsp;`,
+        `angry and rebellious<br>&nbsp;`,
+        `clever and amusing<br>&nbsp;`,
+        `bold and patriotic`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/28.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The first murder ever committed in the United States occurred in September  \\( 1630, \\) shortly after the Pilgrims arrived in Massachusetts. John Billington was the father of two sons, one of the first to settle in the new Plymouth Colony near what is today Boston, and one of the people who signed the Mayflower Compact—and he was also the colony’s first murderer. </p> <p>Billington, in fact, was the first person to commit any crime in the colony, as far as we know today. He was also the first to be executed by the state in the New World. Billington’s crime was to shoot a man named John Newcomen, for reasons which are lost to history.</p> <p>But Billington’s problems had not begun on the soil of North America. He and his sons had nearly caused a mutiny aboard the Mayflower during the arduous trip across the ocean. One of his sons, in fact, fired his gun aboard the Mayflower—near an open keg of gunpowder! The flash from the gun could easily have ignited the powder, which would probably have sunk the ship.</p> <p>Once in Plymouth Colony, Billington’s behaviour did not improve. He refused to serve any form of military duty under the leadership of Miles Standish, a duty that was seen by the colonists as part of every man’s responsibilities in the New World. He was later implicated in a plot to overthrow the entire leadership of Plymouth Colony, but a lack of evidence prompted the town’s leaders to let him go free. </p> <p>In the end, Billington’s rebellious and angry nature caught up with him. He was found guilty of the murder of John Newcomen and died in disgrace on the gallows.</p> <p>Which of the following is NOT true of John Billington, according to the passage?</p> <p></p>`,
+      image: "",
+      options: [
+        `He had two sons.<br>&nbsp;`,
+        `He served in the military under Miles Standish.<br>&nbsp;`,
+        `He tried to lead a mutiny.<br>&nbsp;`,
+        `He attempted to overthrow the government.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/29.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which cube cannot be made based on the unfolded cube?</p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-aptitude-2/q_img7.png" style="max-width: 75%;"></p> <p>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img8.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img9.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img10.png" style="max-width: 75%;">`,
+        `<img alt="" src="/images/quiz/wqt-aptitude-2/q_img11.png" style="max-width: 75%;">`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-aptitude-2/30.png" style="max-width: 75%;">`
     },
   ]
 });
