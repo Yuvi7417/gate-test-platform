@@ -21580,7 +21580,7 @@ registerQuizTest({
         `\\(3\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/1.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21595,7 +21595,7 @@ registerQuizTest({
         `\\(45\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/2.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21610,7 +21610,7 @@ registerQuizTest({
         `\\(10\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/3.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21625,7 +21625,7 @@ registerQuizTest({
         `\\(2\\)`,
       ],
       answer: "A",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/4.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21640,7 +21640,7 @@ registerQuizTest({
         `\\(1.4 ~\\text{cm}\\)`,
       ],
       answer: "B",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/5.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21655,7 +21655,7 @@ registerQuizTest({
         `\\(174\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/6.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21670,7 +21670,7 @@ registerQuizTest({
         `\\(\\mathrm{24 ~minutes}\\)`,
       ],
       answer: "B",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/7.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21685,7 +21685,7 @@ registerQuizTest({
         `\\(4276\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/8.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21700,7 +21700,7 @@ registerQuizTest({
         `\\(950\\)`,
       ],
       answer: "B",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/9.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
@@ -21715,7 +21715,7 @@ registerQuizTest({
         `\\(390\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/10.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21730,7 +21730,7 @@ registerQuizTest({
         `\\(22/3 ~\\mathrm{hrs}\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/11.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21745,7 +21745,7 @@ registerQuizTest({
         `\\(\\mathrm{1 5 6 3 0 0} ~\\mathrm{m}^{\\mathrm{2}}\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/12.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21760,7 +21760,7 @@ registerQuizTest({
         `\\(4:1\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/13.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21775,7 +21775,7 @@ registerQuizTest({
         `\\(12\\)`,
       ],
       answer: "A",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/14.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21790,7 +21790,7 @@ registerQuizTest({
         `\\(4.6\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/15.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21805,13 +21805,13 @@ registerQuizTest({
         `\\(26\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/16.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>A circular spinner is divided into five equal sections. An arrow is attached to the centre of the spinner and is positioned as shown.<br/> </p> <p style="text-align:center"><img alt="" height="127" src="/images/quiz/wqt-aptitude-6/1.png" width="168"/> </p> <p><br/><br/>The arrow is spun clockwise, and it stops in the section labelled \\(D\\). Which of the following could have been the angle of rotation? </p> <p></p>`,
+      text: `<p></p> <p>A circular spinner is divided into five equal sections. An arrow is attached to the centre of the spinner and is positioned as shown.<br/> </p> <p style="text-align:center"><img alt="" height="127" src="/images/quiz/wqt-aptitude-6/q_img1.png" width="168"/> </p> <p><br/><br/>The arrow is spun clockwise, and it stops in the section labelled \\(D\\). Which of the following could have been the angle of rotation? </p> <p></p>`,
       image: "",
       options: [
         `\\(530^{\\circ}\\)<br/>`,
@@ -21820,7 +21820,7 @@ registerQuizTest({
         `\\(675^{\\circ}\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/17.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21835,7 +21835,7 @@ registerQuizTest({
         `it is necessary and sufficient to take I and II together.`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/18.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21850,7 +21850,7 @@ registerQuizTest({
         `\\(8\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/19.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21865,7 +21865,7 @@ registerQuizTest({
         `Five`,
       ],
       answer: "A",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/20.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21880,7 +21880,7 @@ registerQuizTest({
         `MCWDMP`,
       ],
       answer: "B",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/21.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21895,43 +21895,43 @@ registerQuizTest({
         `Mother's mother`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/22.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>When the below given diagram is folded in the shape of a cube which symbol will face opposite to ' \\(\\wedge\\)'? </p> <p style="text-align:center"><img alt="" height="190" src="/images/quiz/wqt-aptitude-6/2.png" width="262"/> </p> <p></p>`,
+      text: `<p></p> <p>When the below given diagram is folded in the shape of a cube which symbol will face opposite to ' \\(\\wedge\\)'? </p> <p style="text-align:center"><img alt="" height="190" src="/images/quiz/wqt-aptitude-6/q_img2.png" width="262"/> </p> <p></p>`,
       image: "",
       options: [
-        `<br/><img alt="" height="111" src="/images/quiz/wqt-aptitude-6/3.png" width="111"/> <p> </p>`,
-        `<p><img alt="" height="112" src="/images/quiz/wqt-aptitude-6/4.png" width="99"/><br/> </p>`,
-        `<p><img alt="" height="118" src="/images/quiz/wqt-aptitude-6/5.png" width="113"/><br/> </p>`,
-        `<p><img alt="" height="104" src="/images/quiz/wqt-aptitude-6/6.png" width="108"/> </p>`,
+        `<br/><img alt="" height="111" src="/images/quiz/wqt-aptitude-6/q_img3.png" width="111"/> <p> </p>`,
+        `<p><img alt="" height="112" src="/images/quiz/wqt-aptitude-6/q_img4.png" width="99"/><br/> </p>`,
+        `<p><img alt="" height="118" src="/images/quiz/wqt-aptitude-6/q_img5.png" width="113"/><br/> </p>`,
+        `<p><img alt="" height="104" src="/images/quiz/wqt-aptitude-6/q_img6.png" width="108"/> </p>`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/23.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>Select the object that the pattern can be folded into. Fold towards the screen - away from you.</p> <p style="text-align:center"><img alt="" height="225" src="/images/quiz/wqt-aptitude-6/7.png" width="319"/> </p> <p></p>`,
+      text: `<p></p> <p>Select the object that the pattern can be folded into. Fold towards the screen - away from you.</p> <p style="text-align:center"><img alt="" height="225" src="/images/quiz/wqt-aptitude-6/q_img7.png" width="319"/> </p> <p></p>`,
       image: "",
       options: [
-        `<img alt="" height="183" src="/images/quiz/wqt-aptitude-6/8.png" width="157"/><br/>`,
-        `<img alt="" height="171" src="/images/quiz/wqt-aptitude-6/9.png" width="150"/><br/>`,
-        `<img alt="" height="163" src="/images/quiz/wqt-aptitude-6/10.png" width="147"/><br/>`,
-        `<img alt="" height="164" src="/images/quiz/wqt-aptitude-6/11.png" width="144"/>`,
+        `<img alt="" height="183" src="/images/quiz/wqt-aptitude-6/q_img8.png" width="157"/><br/>`,
+        `<img alt="" height="171" src="/images/quiz/wqt-aptitude-6/q_img9.png" width="150"/><br/>`,
+        `<img alt="" height="163" src="/images/quiz/wqt-aptitude-6/q_img10.png" width="147"/><br/>`,
+        `<img alt="" height="164" src="/images/quiz/wqt-aptitude-6/q_img11.png" width="144"/>`,
       ],
       answer: "B",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/24.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="529" src="/images/quiz/wqt-aptitude-6/12.png" width="604"/> </p> <p><br/>How many students major in chemistry?<br/> </p> <p></p>`,
+      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="529" src="/images/quiz/wqt-aptitude-6/q_img12.png" width="604"/> </p> <p><br/>How many students major in chemistry?<br/> </p> <p></p>`,
       image: "",
       options: [
         `\\(200\\)<br/>`,
@@ -21940,13 +21940,13 @@ registerQuizTest({
         `\\(175\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/25.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>The breakup of the students in a university by subject major is given in the polar pie chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="574" src="/images/quiz/wqt-aptitude-6/13.png" width="656"/> </p> <p><br/> \\(12\\%\\) of all students are from Chennai. What is the largest possible percentage of economics students that can be from Chennai, rounded off to the nearest integer?<br/> </p> <p></p>`,
+      text: `<p></p> <p>The breakup of the students in a university by subject major is given in the polar pie chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="574" src="/images/quiz/wqt-aptitude-6/q_img13.png" width="656"/> </p> <p><br/> \\(12\\%\\) of all students are from Chennai. What is the largest possible percentage of economics students that can be from Chennai, rounded off to the nearest integer?<br/> </p> <p></p>`,
       image: "",
       options: [
         `\\(69\\%\\)<br/>`,
@@ -21955,13 +21955,13 @@ registerQuizTest({
         `\\(73\\%\\)`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/26.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0.67,
       type: "MCQ",
-      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="547" src="/images/quiz/wqt-aptitude-6/14.png" width="625"/> </p> <p><br/>If the proportion of physics majors who are from Delhi is the same as the proportion of engineering majors who are from Delhi, how many engineering majors are from Delhi?<br/> </p> <p></p>`,
+      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="547" src="/images/quiz/wqt-aptitude-6/q_img14.png" width="625"/> </p> <p><br/>If the proportion of physics majors who are from Delhi is the same as the proportion of engineering majors who are from Delhi, how many engineering majors are from Delhi?<br/> </p> <p></p>`,
       image: "",
       options: [
         `\\(26\\)<br/>`,
@@ -21970,7 +21970,7 @@ registerQuizTest({
         `\\(24\\)`,
       ],
       answer: "C",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/27.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -21985,7 +21985,7 @@ registerQuizTest({
         `It serves vegetarian food only, and the author was also vegetarian.`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/28.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -22000,7 +22000,7 @@ registerQuizTest({
         `All of these`,
       ],
       answer: "D",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/29.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
@@ -22015,7 +22015,7 @@ registerQuizTest({
         `Overcrowded and lot of mismanagement was there.`,
       ],
       answer: "A",
-      solution: ``
+      solution: `<img src="/images/quiz/wqt-aptitude-6/30.png" style="max-width: 75%;">`
     },
   ]
 });
