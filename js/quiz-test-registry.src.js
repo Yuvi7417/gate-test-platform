@@ -21560,3 +21560,463 @@ registerTest({
   ]
 });
 
+
+
+registerQuizTest({
+  series: "weekly-quant-2027",
+  name: "WQT - Aptitude-6",
+  date: "August 6, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>A standard machine fills paint cans at a rate of \\(1\\) \\(\\text{gallon}\\) every \\(4\\) \\(\\text{minutes}\\). A deluxe machine fills gallons of paint at twice the rate of a standard machine. How many hours will it take a standard machine and a deluxe machine, working together, to fill \\(135\\) \\(\\text{gallon}\\) of paint? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(1.5\\)<br/>`,
+        `\\(2\\)<br/>`,
+        `\\(2.5\\)<br/>`,
+        `\\(3\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Rajesh traveled from home to school at \\(\\mathrm{30 ~miles ~per ~hour}\\). Then he returned home at \\(\\mathrm{40 ~miles ~per ~hour}\\), and finally he went back to school at \\(\\mathrm{60 ~miles ~per ~hour}\\), all along the same route. What was his average speed for the entire trip, in \\(\\mathrm{miles ~per ~hour}\\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(32\\)<br/>`,
+        `\\(36\\)<br/>`,
+        `\\(40\\)<br/>`,
+        `\\(45\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If \\(|y| \\leq-4 x\\) and \\(|3 x-4|=2 x+6\\), what is the value of \\(x\\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(-3\\)<br/>`,
+        `\\(-\\frac{1}{3}\\)<br/>`,
+        `\\(-\\frac{2}{5}\\)<br/>`,
+        `\\(10\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If \\(x^{2}+y^{2}+2 x+1=0\\), then the value of \\(x^{31}+y^{35}\\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(-1\\)<br/>`,
+        `\\(0\\)<br/>`,
+        `\\(1\\)<br/>`,
+        `\\(2\\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \\(\\text{ABC}\\) is similar to \\(\\text{DEF}\\). If area of \\(\\text{ABC}\\) is \\(9 \\text{sq.cm.}\\) and area of DEF is \\(16 \\mathrm{sq}.\\mathrm{cm}\\). and \\(\\text{BC}=2.1 \\mathrm{~cm}\\), then the length of \\(\\text{EF}\\) will be: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(5.6 ~\\text{cm}\\)<br/>`,
+        `\\(2.8 ~\\text{cm}\\)<br/>`,
+        `\\(3.7 ~\\text{cm}\\)<br/>`,
+        `\\(1.4 ~\\text{cm}\\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The batting average for \\(40\\) innings of a cricket player is \\(50\\) runs. His highest score exceeds his lowest score by \\(172\\) runs, If these two innings are excluded, the average of the remaining \\(38\\) innings is \\(48\\) runs. The highest score of the player is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(165\\)<br/>`,
+        `\\(170\\)<br/>`,
+        `\\(172\\)<br/>`,
+        `\\(174\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Three bells ring at interval of \\(36\\) \\(\\text{seconds}\\), \\(40\\) \\(\\text{seconds}\\) and \\(48\\) \\(\\text{seconds}\\) respectively. They start ringing together at a particular time. They will ring together after every </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(\\mathrm{6 ~minutes}\\)<br/>`,
+        `\\(\\mathrm{12 ~minutes}\\)<br/>`,
+        `\\(\\mathrm{18 ~minutes}\\)<br/>`,
+        `\\(\\mathrm{24 ~minutes}\\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>In a division sum, the divisor ' \\(d\\) ' is \\(10\\) times the quotient ' \\(q\\) ' and \\(5\\) times the remainder' \\(r\\)'. If \\(r=46\\), the dividend will be </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(5042\\)<br/>`,
+        `\\(5348\\)<br/>`,
+        `\\(5336\\)<br/>`,
+        `\\(4276\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p> \\(\\mathrm{Rs. 2420}\\) were divided among \\(\\mathrm{A, B, C}\\) so that \\(\\mathrm{A: B=5: 4}\\) and \\(\\mathrm{B: C=9: 10}\\) then \\(\\mathrm{C}\\) gets </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(680\\)<br/>`,
+        `\\(800\\)<br/>`,
+        `\\(900\\)<br/>`,
+        `\\(950\\)`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The profit on selling an article for \\(\\mathrm{Rs.425}\\) is the same as the loss on selling it for \\(\\mathrm{Rs.355}\\), then the cost price of the article is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(410\\)<br/>`,
+        `\\(380\\)<br/>`,
+        `\\(400\\)<br/>`,
+        `\\(390\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>On the river, \\(\\mathrm{Q}\\) is the mid-point between two points \\(\\mathrm{P}\\) and \\(\\mathrm{R}\\) on the same bank of the river. A boat can go from \\(\\mathrm{P}\\) to \\(\\mathrm{Q}\\) and back in \\(12\\) \\(\\mathrm{hours}\\), and from \\(\\mathrm{P}\\) to \\(\\mathrm{R}\\) in \\(16\\) \\(\\mathrm{hours}\\) \\(40\\) \\(\\mathrm{min}\\) . How long would it take to go from \\(\\mathrm{R}\\) to \\(\\mathrm{P}\\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(10 / 3 ~\\mathrm{hrs}\\)<br/>`,
+        `\\(5 ~\\mathrm{hrs}\\)<br/>`,
+        `\\(20/3 ~\\mathrm{hrs}\\)<br/>`,
+        `\\(22/3 ~\\mathrm{hrs}\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The ratio between the length and the breadth of a rectangular park is \\(3:2\\). If a man cycling along the boundary of the park at the speed of \\(12 \\mathrm{~km/hr}\\) completes one round in \\(8 ~\\text{minutes}\\), then the area of the park is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(\\mathrm{1 5 3 6 5 0} ~\\mathrm{m}^{\\mathrm{2}}\\)<br/>`,
+        `\\(\\mathrm{1 3 5 6 0 0} ~\\mathrm{m}^{\\mathrm{2}}\\)<br/>`,
+        `\\(\\mathrm{1 5 3 6 0 0} ~\\mathrm{m}^{\\mathrm{2}}\\)<br/>`,
+        `\\(\\mathrm{1 5 6 3 0 0} ~\\mathrm{m}^{\\mathrm{2}}\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The distance from \\(\\text{B}\\) to \\(\\text{C}\\) is thrice that from \\(\\text{A}\\) to \\(\\text{B}\\). Two trains travel from \\(\\text{A}\\) to \\(\\text{C}\\) via \\(\\text{B}\\) . The speed of train \\(2\\) is double that of train \\(1\\) while traveling from \\(\\text{A}\\) to \\(\\text{B}\\) and their speeds are interchanged while traveling from \\(\\text{B}\\) to \\(\\text{C}\\) . The ratio of the time taken by train \\(1\\) to that taken by train \\(2\\) in travelling from \\(\\text{A}\\) to \\(\\text{C}\\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(1:4\\)<br/>`,
+        `\\(7:5\\)<br/>`,
+        `\\(5:7\\)<br/>`,
+        `\\(4:1\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Among \\(100\\) students, \\(x_{1}\\) have birthdays in January, \\(x_{2}\\) have birthdays in February, and so on. If \\(x_{0}=\\max \\left(x_{1}, x_{2}, \\ldots, x_{12}\\right)\\), then the smallest possible value of \\(x_{0}\\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(9\\)<br/>`,
+        `\\(10\\)<br/>`,
+        `\\(8\\)<br/>`,
+        `\\(12\\)`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Anil, Sunil, and Ravi run along a circular path of length \\(3 \\mathrm{~km}\\) , starting from the same point at the same time, and going in the clockwise direction. If they run at speeds of \\(15 \\mathrm{~km} / \\mathrm{hr}, 10 \\mathrm{km} / \\mathrm{hr}\\), and \\(8 \\mathrm{~km} / \\mathrm{hr}\\), respectively, how much distance in km will Ravi have run when Anil and Sunil meet again for the first time at the starting point? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(4.2\\)<br/>`,
+        `\\(5.2\\)<br/>`,
+        `\\(4.8\\)<br/>`,
+        `\\(4.6\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Vimla starts for office every day at \\(\\mathrm{9 ~am}\\) and reaches exactly on time if she drives at her usual speed of \\(40 \\mathrm{~km} / \\mathrm{hr}\\). She is late by \\(\\mathrm{6 ~minutes}\\) if she drives at \\(35 \\mathrm{~km} / \\mathrm{hr}\\). One day, she covers two-thirds of her distance to office in one-thirds of her usual time to reach office, and then stops for \\(\\mathrm{8 ~minutes}\\). The speed, in \\(\\mathrm{km} / \\mathrm{hr}\\), at which she should drive the remaining distance to reach office exactly on time is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(29\\)<br/>`,
+        `\\(27\\)<br/>`,
+        `\\(28\\)<br/>`,
+        `\\(26\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A circular spinner is divided into five equal sections. An arrow is attached to the centre of the spinner and is positioned as shown.<br/> </p> <p style="text-align:center"><img alt="" height="127" src="/images/quiz/wqt-aptitude-6/1.png" width="168"/> </p> <p><br/><br/>The arrow is spun clockwise, and it stops in the section labelled \\(D\\). Which of the following could have been the angle of rotation? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(530^{\\circ}\\)<br/>`,
+        `\\(550^{\\circ}\\)<br/>`,
+        `\\(630^{\\circ}\\)<br/>`,
+        `\\(675^{\\circ}\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Nadeem's age is a two-digit number X , squaring which yields a three-digit number,whose last digit is \\(Y\\).<br/> <br/>Consider the statements below:<br/><br/><strong>Statement I:</strong> \\(Y\\) is a prime number<br/><br/><strong>Statement II:</strong> \\(Y\\) is one-third of \\(X\\)<br/><br/><br/>To determine Nadeem's age uniquely: </p> <p></p>`,
+      image: "",
+      options: [
+        `either of I and II, by itself, is sufficient.<br/>`,
+        `only II is sufficient, but I is not.<br/>`,
+        `only I is sufficient, but II is not.<br/>`,
+        `it is necessary and sufficient to take I and II together.`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A telephone number has the form \\(\\text{ABC-DEF-GHIJ}\\), where each letter represents a different digit. The digits in each part of the number are in decreasing order, that is, \\(A&gt;B&gt;C, D&gt;E&gt;F\\), and \\(G&gt;H&gt;I&gt;J\\). Furthermore, \\(D, E\\), and \\(F\\) are consecutive even digits; \\(G, H, I\\), and \\(J\\) are consecutive odd digits; and \\(A+B+C=9\\). Find \\(A\\). </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(4\\)<br/>`,
+        `\\(5\\)<br/>`,
+        `\\(6\\)<br/>`,
+        `\\(8\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>All \\(32\\) students in a class are standing in a row facing north. Akash is \\(12{ }^{\\text {th }}\\) from the right end while Priya is \\(18{ }^{\\text {th }}\\) from the left end. How many people are standing between Akash and Priya? </p> <p></p>`,
+      image: "",
+      options: [
+        `Two<br/>`,
+        `Four<br/>`,
+        `Three<br/>`,
+        `Five`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>In a certain code language, 'BUTTER' is coded as 'CWWSCO' and 'THEORY' is coded as 'UJHNPV'. How will 'LATENT' be coded in that language?</p> <p></p>`,
+      image: "",
+      options: [
+        `MDXCLQ<br/>`,
+        `MCWDLQ<br/>`,
+        `MEVCKR<br/>`,
+        `MCWDMP`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>' \\(A\\# B\\) ' means ' \\(A\\) is the brother of \\(B\\) '.<br/><br/>' \\(A @ B\\)' means ' \\(A\\) is the daughter of \\(B\\)'.<br/><br/>' \\(A\\&amp;B\\) ' means ' \\(A\\) is the husband of \\(B\\)'.<br/><br/>' \\(A \\% B\\)' means ' \\(A\\) is the wife of \\(B\\)'.<br/><br/>If \\(\\mathrm{D @ N @ H \\&amp; Y @ F \\% V}\\), then how is \\(Y\\) related to \\(D\\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `Mother<br/>`,
+        `Husband's mother<br/>`,
+        `Father's sister<br/>`,
+        `Mother's mother`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>When the below given diagram is folded in the shape of a cube which symbol will face opposite to ' \\(\\wedge\\)'? </p> <p style="text-align:center"><img alt="" height="190" src="/images/quiz/wqt-aptitude-6/2.png" width="262"/> </p> <p></p>`,
+      image: "",
+      options: [
+        `<br/><img alt="" height="111" src="/images/quiz/wqt-aptitude-6/3.png" width="111"/> <p> </p>`,
+        `<p><img alt="" height="112" src="/images/quiz/wqt-aptitude-6/4.png" width="99"/><br/> </p>`,
+        `<p><img alt="" height="118" src="/images/quiz/wqt-aptitude-6/5.png" width="113"/><br/> </p>`,
+        `<p><img alt="" height="104" src="/images/quiz/wqt-aptitude-6/6.png" width="108"/> </p>`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Select the object that the pattern can be folded into. Fold towards the screen - away from you.</p> <p style="text-align:center"><img alt="" height="225" src="/images/quiz/wqt-aptitude-6/7.png" width="319"/> </p> <p></p>`,
+      image: "",
+      options: [
+        `<img alt="" height="183" src="/images/quiz/wqt-aptitude-6/8.png" width="157"/><br/>`,
+        `<img alt="" height="171" src="/images/quiz/wqt-aptitude-6/9.png" width="150"/><br/>`,
+        `<img alt="" height="163" src="/images/quiz/wqt-aptitude-6/10.png" width="147"/><br/>`,
+        `<img alt="" height="164" src="/images/quiz/wqt-aptitude-6/11.png" width="144"/>`,
+      ],
+      answer: "B",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="529" src="/images/quiz/wqt-aptitude-6/12.png" width="604"/> </p> <p><br/>How many students major in chemistry?<br/> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(200\\)<br/>`,
+        `\\(180\\)<br/>`,
+        `\\(190\\)<br/>`,
+        `\\(175\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The breakup of the students in a university by subject major is given in the polar pie chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="574" src="/images/quiz/wqt-aptitude-6/13.png" width="656"/> </p> <p><br/> \\(12\\%\\) of all students are from Chennai. What is the largest possible percentage of economics students that can be from Chennai, rounded off to the nearest integer?<br/> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(69\\%\\)<br/>`,
+        `\\(71\\%\\)<br/>`,
+        `\\(75\\%\\)<br/>`,
+        `\\(73\\%\\)`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The break-up of the students in a university by subject major is given in the polar pie-chart. The bar chart shows the number of students who major in physics by geographic location.</p> <p style="text-align:center"><img alt="" height="547" src="/images/quiz/wqt-aptitude-6/14.png" width="625"/> </p> <p><br/>If the proportion of physics majors who are from Delhi is the same as the proportion of engineering majors who are from Delhi, how many engineering majors are from Delhi?<br/> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\(26\\)<br/>`,
+        `\\(18\\)<br/>`,
+        `\\(20\\)<br/>`,
+        `\\(24\\)`,
+      ],
+      answer: "C",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Vibrant salads, wholesome bites, vegan baking, all vegetarian!" Thus proclaimed a billboard on a stand placed just outside The Lighthouse Cafe. Well, well, well, I thought to myself, another one of those places designed to attract tourists; can't be genuine, can it? I couldn't have been more wrong. I'd embarked on a walking tour of Galway, a city facing the Atlantic, in the Republic of Ireland, and my guide was Billy Murray, who told me at the outset that I would be the solitary walker; others had stayed away because of the dismal weather. The weather had indeed been unfriendly, with beating rain, thunder, poor visibility and, of course, grey and cold, especially on the Wild Atlantic Way, where I had braved the weather and carried on with a coach tour I'd booked earlier, after having spent the previous day driving down to Galway from Dublin. But today the rains had stopped and the sky was clear but still grey, and yet, I found the ambience rather romantic and full of promise. "Of course, we'll go on that walking tour," I said to a surprised Billy, who led me out of the Tourist Centre in downtown Galway and onto the rainwashed street. At the end of the rather comprehensive tour, I asked Billy for advice: where should I eat my lunch? And he'd recommended the Lighthouse Cafe near Lynch's Castle (now a bank) when I specified that I was vegetarian.<br/><br/>It seems there are quite a few local residents who are vegetarian, and more are exploring this choice, mainly because of health and environmental reasons. But the decor inside the restaurant suggested that the owner turned to this choice due to compassion. I remembered then that Billy did mention that Kerry Legh and her spouse, who run the place, practise Sahaj Marga meditation. The lotus flower was a dominant feature of the restaurant's interior. Be that as it may, my lunch turned out to be one of the best vegetarian ones I've ever had anywhere in the world. When I'd entered the restaurant, a large dog that answers to the name of 'Chieftain' was seated beside his owner, intently watching him eat, without begging even once. Maybe they too practise some kind of meditation, I figured.<br/><br/>Why was just Lighthouse Cafe recommended to the author to have lunch at? </p> <p></p>`,
+      image: "",
+      options: [
+        `It serves tasty food.<br/>`,
+        `It was close to the author's hotel.<br/>`,
+        `It has a good ambience.<br/>`,
+        `It serves vegetarian food only, and the author was also vegetarian.`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Vibrant salads, wholesome bites, vegan baking, all vegetarian!" Thus proclaimed a billboard on a stand placed just outside The Lighthouse Cafe. Well, well, well, I thought to myself, another one of those places designed to attract tourists; can't be genuine, can it? I couldn't have been more wrong. I'd embarked on a walking tour of Galway, a city facing the Atlantic, in the Republic of Ireland, and my guide was Billy Murray, who told me at the outset that I would be the solitary walker – others had stayed away because of the dismal weather. The weather had indeed been unfriendly, with beating rain, thunder, poor visibility and, of course, grey and cold, especially on the Wild Atlantic Way, where I had braved the weather and carried on with a coach tour I'd booked earlier, after having spent the previous day driving down to Galway from Dublin. But today the rains had stopped and the sky was clear but still grey, and yet, I found the ambience rather romantic and full of promise. "Of course, we'll go on that walking tour," I said to a surprised Billy, who led me out of the Tourist Centre in downtown Galway and onto the rainwashed street. At the end of the rather comprehensive tour, I asked Billy for advice – where should I eat my lunch? And he'd recommended the Lighthouse Cafe near Lynch's Castle (now a bank) when I specified that I was vegetarian.<br/><br/>It seems there are quite a few local residents who are vegetarian, and more are exploring this choice, mainly because of health and environmental reasons. But the decor inside the restaurant suggested that the owner turned to this choice due to compassion. I remembered then that Billy did mention that Kerry Legh and her spouse, who run the place, practise Sahaj Marga meditation. The lotus flower was a dominant feature of the restaurant's interior. Be that as it may, my lunch turned out to be one of the best vegetarian ones I've ever had anywhere in the world. When I'd entered the restaurant, a large dog that answers to the name of 'Chieftain' was seated beside his owner, intently watching him eat, without begging even once. Maybe they too practise some kind of meditation, I figured.<br/><br/>What was liked by the author in the restaurant The Lighthouse Cafe?</p> <p></p>`,
+      image: "",
+      options: [
+        `The lotus flower in the cafe.<br/>`,
+        `The dog in the cafe.<br/>`,
+        `The vegetarian food there.<br/>`,
+        `All of these`,
+      ],
+      answer: "D",
+      solution: ``
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Vibrant salads, wholesome bites, vegan baking, all vegetarian!" Thus proclaimed a billboard on a stand placed just outside The Lighthouse Cafe. Well, well, well, I thought to myself, another one of those places designed to attract tourists; can't be genuine, can it? I couldn't have been more wrong. I'd embarked on a walking tour of Galway, a city facing the Atlantic, in the Republic of Ireland, and my guide was Billy Murray, who told me at the outset that I would be the solitary walker – others had stayed away because of the dismal weather. The weather had indeed been unfriendly, with beating rain, thunder, poor visibility and, of course, grey and cold, especially on the Wild Atlantic Way, where I had braved the weather and carried on with a coach tour I'd booked earlier, after having spent the previous day driving down to Galway from Dublin. But today the rains had stopped and the sky was clear but still grey, and yet, I found the ambience rather romantic and full of promise. "Of course, we'll go on that walking tour," I said to a surprised Billy, who led me out of the Tourist Centre in downtown Galway and onto the rainwashed street. At the end of the rather comprehensive tour, I asked Billy for advice – where should I eat my lunch? And he'd recommended the Lighthouse Cafe near Lynch's Castle (now a bank) when I specified that I was vegetarian.<br/><br/>It seems there are quite a few local residents who are vegetarian, and more are exploring this choice, mainly because of health and environmental reasons. But the decor inside the restaurant suggested that the owner turned to this choice due to compassion. I remembered then that Billy did mention that Kerry Legh and her spouse, who run the place, practise Sahaj Marga meditation. The lotus flower was a dominant feature of the restaurant's interior. Be that as it may, my lunch turned out to be one of the best vegetarian ones I've ever had anywhere in the world. When I'd entered the restaurant, a large dog that answers to the name of 'Chieftain' was seated beside his owner, intently watching him eat, without begging even once. Maybe they too practise some kind of meditation, I figured.<br/><br/>What kind of ambience was there inside the Lighthouse Cafe?</p> <p></p>`,
+      image: "",
+      options: [
+        `Peaceful and soothing<br/>`,
+        `Full of loud music and dance<br/>`,
+        `Not lively at all<br/>`,
+        `Overcrowded and lot of mismanagement was there.`,
+      ],
+      answer: "A",
+      solution: ``
+    },
+  ]
+});
+
