@@ -22959,3 +22959,227 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-6 | First Order Logic",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>&nbsp;A binary operator is defined as follows<br> \$\$ P \\Updownarrow Q=\\;\\sim P \\wedge Q \$\$ <br>Which of the following statement is equivalent to  \\( P \\rightarrow Q \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\sim P \\Updownarrow Q \\)`,
+        `\\( \\sim(P \\Updownarrow Q) \\)`,
+        `\\( \\sim(\\sim P \\Updownarrow Q) \\)`,
+        `\\( \\sim(\\sim P \\Updownarrow \\sim Q) \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-6/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>One approach to handling fuzzy logic data might be to design a computer using ternary  \\( \\text{(base-3)} \\) logic so that data could be stored as "true," "false," and "unknown." If each ternary logic element is called a flit, minimum how many flits are required to represent at least  \\( 256 \\) different values? </p>`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<img src="/images/quiz/wqt-dm-6/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following predicates.</p> <ul> <li> \\( \\operatorname{Rabbit}(x)=x \\) is a rabbit. </li> <li> \\( \\operatorname{Cute}(x)=x \\) is cute. </li> </ul> <p>Consider the following statement  \\( \\mathrm{E}, \\)&nbsp;where the domain of every variable is set of all animals in a jungle  \\( \\mathrm{J} \\).<br> \$\$  \\text{E}=\\forall x(\\operatorname{Rabbit}(x) \\wedge \\operatorname{Cute}(x))  \$\$ <br>If statement  \\( \\text{E} \\) is true, then which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `There is no animal other than rabbits in the jungle  \\( \\mathrm{J} \\).`,
+        `Every rabbit is cute in jungle  \\( \\text{J}. \\)`,
+        `It is possible that there is some animal in  \\( \\mathrm{J} \\) who is not a rabbit but is cute.`,
+        `There is some rabbit who is cute in jungle  \\( \\mathrm{J} \\).`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-6/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let  \\( p(x), q(x) \\) denote the following open statements. \$\$  p(x): \\quad x \\leq 3 \\quad q(x): \\quad x+1 \\text { is odd } \$\$ Let  \\( r(x) \\) be the open statement "  \\( x&gt;0 \\)." The universe comprises all integers. Determine the number of values of  \\( x \\) for which  \\( [p(x) \\wedge q(x)] \\wedge r(x) \\) results in a true statement. </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-dm-6/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following predicates:</p> <ul> <li> \\( \\operatorname{bird}(x): x \\) is a bird. </li> <li> \\( \\text{penguin}(x): x \\) is a penguin. </li> <li> \\( \\text{fly} (x): x \\) can fly. </li> </ul> <p>Consider the following sentence:</p> <p>All birds except penguins' fly. (Note that Penguins may or may not fly)</p> <p>Which of the following is/are a formula in first-order logic expressing the given fact?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x.[(\\operatorname{bird}(x) \\wedge \\neg \\) penguin  \\( (x)) \\rightarrow \\mathrm{fly}(x)] \\)`,
+        `\\( \\forall x.[\\neg \\operatorname{bird}(x) \\vee \\neg \\) penguin  \\( (x) \\vee \\) fly  \\( (x)] \\)`,
+        `\\( \\forall x. [\\neg \\) bird  \\( (x) \\vee \\) penguin  \\( (x) \\vee \\) fly  \\( (x)] \\)`,
+        `\\( \\forall x. [\\operatorname{bird}(x) \\vee \\) penguin  \\( (x) \\vee \\) fly  \\( (x)] \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-6/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x), q(x), \\)&nbsp;and  \\( r(x) \\) denote the following open statements.<br> \$\$  \\begin{array}{ll} p(x): &amp; x^2-8 x+15=0 \\\\ q(x): &amp; x \\text { is odd } \\\\ r(x): &amp; x&gt;0 \\end{array}  \$\$ <br>For the universe of all integers, which of the following statements is/are false? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x[p(x) \\rightarrow q(x)] \\)`,
+        `\\( \\forall x[q(x) \\rightarrow p(x)] \\)`,
+        `\\( \\exists x[p(x) \\rightarrow q(x)] \\)`,
+        `\\( \\exists x[q(x) \\rightarrow p(x)] \\)`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-dm-6/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x), q(x) \\), and  \\( r(x) \\) denote the following open statements.<br> \$\$  \\begin{array}{ll} p(x): &amp; x^2-8 x+15=0 \\\\ q(x): &amp; x \\text { is odd } \\\\ r(x): &amp; x&gt;0 \\end{array}  \$\$ <br>For the universe of all integers, which of the following statements is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\exists x[r(x) \\rightarrow p(x)] \\)`,
+        `\\( \\forall x[\\neg q(x) \\rightarrow \\neg p(x)] \\)`,
+        `\\( \\exists x[p(x) \\rightarrow(q(x) \\wedge r(x))] \\)`,
+        `\\( \\forall x[(p(x) \\vee q(x)) \\rightarrow r(x)] \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-6/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following formulas is a formalization of the sentence \\( : \\text{“No dogs are intelligent"} \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall \\mathrm{x}(\\operatorname{dog}(\\mathrm{x}) \\wedge \\neg&nbsp;\\text{Intelligent(x)}) \\)`,
+        `\\( \\forall \\mathrm{x}&nbsp;(\\text{Intelligent(x)} \\rightarrow \\neg \\operatorname{dog}(\\mathrm{x}) \\) )`,
+        `\\( \\forall x(\\operatorname{dog}(\\mathrm{x}) \\rightarrow \\neg&nbsp;\\text{Intelligent} (\\mathrm{x})) \\)`,
+        `\\( \\neg \\exists x(\\operatorname{dog}(\\mathrm{x}) \\wedge&nbsp;\\text{Intelligent(x)}) \\)`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-6/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following formulas is a formalization of the sentence  \\( : \\text{“All babies are illogical"} \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall \\mathrm{x}(\\operatorname{baby}(\\mathrm{x}) \\wedge&nbsp; \\text{illogical(x))} \\)`,
+        `\\( \\forall&nbsp;\\text{x}(\\operatorname{baby}(\\mathrm{x}) \\rightarrow&nbsp; \\text{illogical(x))} \\)`,
+        `\\( \\neg \\exists \\mathrm{x}(&nbsp;\\text{baby} (\\mathrm{x}) \\wedge \\neg&nbsp;\\text{illogical(x))} \\)`,
+        `\\( \\exists \\mathrm{x}(\\operatorname{baby}(\\mathrm{x}) \\wedge \\neg&nbsp; \\text{illogical(x))} \\)`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-6/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following predicates:</p> <ul> <li>sqroot(  \\( (\\mathrm{x}): \\mathrm{x} \\) has a square root. </li> <li>negative  \\( (\\mathrm{x})&nbsp;: \\mathrm{x} \\) is negative. </li> </ul> <p>Which of the following formulas is a formalization of the sentence, if the domain is set of all numbers:<br>"Every number is either negative or has a square root but not both"</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall \\mathrm{x} \\neg( \\) negative  \\( (\\mathrm{x}) \\leftrightarrow \\operatorname{sqroot}(\\mathrm{x})) \\)`,
+        `\\( \\neg \\exists \\mathrm{x}(&nbsp;( \\)negative \\( (\\mathrm{x}) \\leftrightarrow \\) sqroot  \\( (\\mathrm{x})) \\)`,
+        `\\( \\forall \\mathrm{x}(( \\) negative  \\( (\\mathrm{x}) \\wedge \\neg \\operatorname{sqroot}(\\mathrm{x})) \\vee(\\neg \\) negative  \\( (\\mathrm{x}) \\wedge \\operatorname{sqroot}(\\mathrm{x}))) \\)`,
+        `\\( \\forall&nbsp;\\text{x}( \\) negative  \\( (\\mathrm{x}) \\vee \\operatorname{sqroot}(\\mathrm{x})) \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-6/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following predicates:</p> <ul> <li> \\( \\operatorname{Real}(\\mathrm{x}) \\) :  \\( \\mathrm{x} \\) is a real number. </li> <li> \\( \\text{Integer} (\\mathrm{x}): \\mathrm{x} \\) is an integer. </li> </ul> <p>Which of the following formulas is a formalization of the sentence, if the domain is set of all integers. "Some integers are not real numbers."</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\exists \\mathrm{x} \\neg \\operatorname{Real}(\\mathrm{x}) \\)`,
+        `\\( \\neg \\forall&nbsp;\\text{x} \\operatorname{Real}(\\mathrm{x}) \\)`,
+        `\\( \\exists \\mathrm{x(Integer} (\\mathrm{x}) \\wedge \\neg \\operatorname{Real}(\\mathrm{x})) \\)`,
+        `\\( \\exists \\text{x(Integer(x)} \\rightarrow \\neg \\operatorname{Real}(\\mathrm{x}) \\) )`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-6/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following formulas is a formalization of the sentence :</p> <p>Not all that glitters is gold</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall \\mathrm{x} \\) [glitter(x)  \\( \\rightarrow \\operatorname{gold}(\\mathrm{x})] \\)`,
+        `\\( \\neg \\exists \\mathrm{x}[\\operatorname{glitter}(\\mathrm{x}) \\wedge \\operatorname{gold}(\\mathrm{x})] \\)`,
+        `\\( \\neg \\forall \\mathrm{x}(\\operatorname{glitter}(\\mathrm{x}) \\rightarrow \\operatorname{gold}(\\mathrm{x})) \\)`,
+        `\\( \\exists \\text{x}(\\operatorname{glitter}(\\mathrm{x}) \\wedge \\neg \\operatorname{gold}(\\mathrm{x})) \\)`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-6/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( P(x), Q(x), R(x) \\) and  \\( S(x) \\) denote the following predicates with domain  \\( \\mathbb{Z} \\) :<br> \$\$  \\begin{aligned} &amp; P(x): x \\leq 0, \\\\ &amp; Q(x): x^2=1, \\\\ &amp; R(x): x \\text { is odd, } \\\\ &amp; S(x): x=x+1 . \\end{aligned}  \$\$ <br>Which of the following statements is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x \\in \\mathbb{Z}, \\quad R(x) \\rightarrow S(x) \\)`,
+        `\\( \\forall x \\in \\mathbb{Z}, \\quad S(x) \\rightarrow R(x) \\)`,
+        `\\( \\exists x \\in \\mathbb{Z} \\text { such that } Q(x) \\wedge \\sim R(x) \\)`,
+        `\\( \\exists x \\in \\mathbb{Z} \\text { such that } P(x) \\rightarrow S(x) \\)`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-6/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>For a given predicate  \\( \\mathrm{P}(\\mathrm{x}) \\), you might believe that the statements  \\( \\forall x \\mathrm{P}(\\mathrm{x}) \\) or  \\( \\exists \\mathrm{xP}(\\mathrm{x}) \\) are either true or false.<br> \\( \\exists x(\\neg P(x)) \\) is false if and only if </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\exists \\mathrm{x}(\\mathrm{P}(\\mathrm{x})) \\) is true.`,
+        `\\( \\forall \\mathrm{x}(\\mathrm{P}(\\mathrm{x})) \\) is true.`,
+        `\\( \\forall \\mathrm{x}(\\neg \\mathrm{P}(\\mathrm{x})) \\) is true.`,
+        `\\( \\forall x(\\neg P(x)) \\) is false.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-6/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following English sentence:</p> <p> \\( \\text{“Agra and Gwalior are both in India"}. \\) </p> <p>A student has written a logical sentence for the above English sentence in First-Order Logic using predicate  \\( \\text{IN}(x, y), \\) which means  \\( x \\) is in  \\( y, \\) as follows. </p> <p> \\( \\text{In(Agra, India)} \\vee&nbsp;\\text{In(Gwalior, India)} \\) </p> <p>Which one of the following is correct with respect to the above logical sentence?</p> <p></p>`,
+      image: "",
+      options: [
+        `It is syntactically valid but does not express the meaning of the English sentence`,
+        `It is syntactically valid and expresses the meaning of the English sentence also`,
+        `It is syntactically invalid but expresses the meaning of the English sentence`,
+        `It is syntactically invalid and does not express the meaning of the English sentence`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-6/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
