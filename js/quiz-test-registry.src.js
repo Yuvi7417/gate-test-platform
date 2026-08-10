@@ -24222,3 +24222,317 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-13| Group Theory",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\text{G} \\) be the group defined by the following Cayley table.<br> \$\$ \\begin{array}{l||r|r|r|r|r|r|r|r|} &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\\\ \\hline 1 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 &amp; 8 \\\\ \\hline 2 &amp; 2 &amp; 5 &amp; 4 &amp; 7 &amp; 6 &amp; 1 &amp; 8 &amp; 3 \\\\ \\hline 3 &amp; 3 &amp; 8 &amp; 5 &amp; 2 &amp; 7 &amp; 4 &amp; 1 &amp; 6 \\\\ \\hline 4 &amp; 4 &amp; 3 &amp; 6 &amp; 5 &amp; 8 &amp; 7 &amp; 2 &amp; 1 \\\\ \\hline 5 &amp; 5 &amp; 6 &amp; 7 &amp; 8 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\\\ \\hline 6 &amp; 6 &amp; 1 &amp; 8 &amp; 3 &amp; 2 &amp; 5 &amp; 4 &amp; 7 \\\\ \\hline 7 &amp; 7 &amp; 4 &amp; 1 &amp; 6 &amp; 3 &amp; 8 &amp; 5 &amp; 2 \\\\ \\hline 8 &amp; 8 &amp; 7 &amp; 2 &amp; 1 &amp; 4 &amp; 3 &amp; 6 &amp; 5 \\\\ \\hline\\end{array} \$\$ <br>Which of the following is/are true about  \\( \\text{G}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{G} \\) is an abelian group.<br>&nbsp;`,
+        `Inverse of  \\( 6 \\) is  \\( 2. \\)<br>&nbsp;`,
+        `Order of  \\( 6 \\) is  \\( 8. \\)<br>&nbsp;`,
+        `Order of  \\( 5 \\) is  \\( 2. \\)`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The multiplication table  \\( (\\ast) \\) for a group  \\( \\mathrm{G}=\\{\\mathrm{a}, \\mathrm{b}, \\mathrm{c}, \\mathrm{d}\\} \\) is given below.<br> \$\$  \\begin{array}{|c|c|c|c|c|} \\hline * &amp; a &amp; b &amp; c &amp; d \\\\ \\hline a &amp; a &amp; b &amp; c &amp; d \\\\ \\hline b &amp; b &amp; a &amp; &amp; \\\\ \\hline c &amp; c &amp; &amp; a &amp; \\\\ \\hline d &amp; &amp; &amp; &amp; a \\\\ \\hline \\end{array} \$\$ <br>Which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `The identity element is  \\( b \\).`,
+        `\\( \\text{G} \\) is a cyclic group.`,
+        `\\( \\mathrm{G} \\) is an abelian group.`,
+        `The order of  \\( d \\) is  \\( 4. \\)`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-dm-13/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following binary operations are closed?</p> <p></p>`,
+      image: "",
+      options: [
+        `subtraction of positive integers<br>&nbsp;`,
+        `division of nonzero integers<br>&nbsp;`,
+        `multiplication of  \\( 2 \\times 2 \\) matrices with integer entries<br>&nbsp;`,
+        `exponentiation of integers`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-dm-13/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose that  \\( \\mathrm{G} \\) is a finite group with  \\( 60 \\) elements. The size of the largest possible proper subgroup of  \\( \\text{G} \\) is ________ </p>`,
+      image: "",
+      options: [],
+      answer: "30",
+      solution: `<img src="/images/quiz/wqt-dm-13/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following algebraic structures is&nbsp;a group?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (\\mathbb{Z},-) \\)<br>&nbsp;`,
+        `\\( (\\mathbb{Q}-\\{0\\}, \\div) \\)<br>&nbsp;`,
+        `\\( (\\mathbb{R}, \\star) \\), where  \\( a \\star b=a+b+a b \\).<br>&nbsp;`,
+        `None of the above.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-13/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\text{G}=\\{e, a, b, c\\} \\) be a group with the following Cayley table.<br> \$\$  \\begin{array}{c|cccc} * &amp; e &amp; a &amp; b &amp; c \\\\ \\hline e &amp; e &amp; a &amp; b &amp; c \\\\ a &amp; a &amp; e &amp; c &amp; b \\\\ b &amp; b &amp; c &amp; e &amp; a \\\\ c &amp; c &amp; b &amp; a &amp; e \\end{array}  \$\$ <br>Which of the following is/are true for  \\( \\text{G}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{G} \\) has exactly  \\( 1 \\) subgroup of  \\( 1 \\) element.`,
+        `\\( \\text{G} \\) has exactly  \\( 3 \\) subgroups of  \\( 2 \\) elements.`,
+        `\\( \\mathrm{G} \\) has exactly  \\( 3 \\) subgroups of  \\( 3 \\) elements.`,
+        `\\( \\text{G} \\) has exactly  \\( 1 \\) subgroup of  \\( 4 \\) elements.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following sets are closed under the given operation?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{0,4,8,12\\} \\) addition  \\( \\bmod 16 \\)<br>&nbsp;`,
+        `\\( \\{0,4,8,12\\} \\) addition  \\( \\bmod 15 \\)<br>&nbsp;`,
+        `\\( \\{1,4,7,13\\} \\) multiplication  \\( \\bmod 15 \\)<br>&nbsp;`,
+        `\\( \\{1,4,5,7\\} \\) multiplication  \\( \\bmod 9 \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-13/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose the table below is a group table for group  \\( \\left(\\mathrm{G},{ }^{\\star}\\right). \\)&nbsp;Fill in the blank entries.<br> \$\$ \\begin{array}{l|lllll} &amp; \\boldsymbol{e} &amp; \\boldsymbol{a} &amp; \\boldsymbol{b} &amp; \\boldsymbol{c} &amp; \\boldsymbol{d} \\\\ \\hline \\boldsymbol{e} &amp; e &amp; - &amp; - &amp; - &amp; - \\\\ \\boldsymbol{a} &amp; - &amp; b &amp; - &amp; - &amp; e \\\\ \\boldsymbol{b} &amp; - &amp; c &amp; d &amp; e &amp; - \\\\ \\boldsymbol{c} &amp; - &amp; d &amp; - &amp; a &amp; b \\\\ \\boldsymbol{d} &amp; - &amp; - &amp; - &amp; - &amp; - \\end{array} \$\$ <br>Which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( d * b=a \\)`,
+        `\\( b\\ast d=a \\)`,
+        `\\( d* d^* d* d=e \\)`,
+        `\\( a * b * c * d=e \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( (\\mathrm{G}, \\ast) \\) be a group with identity element e. Suppose that  \\( a, b, \\)&nbsp;and  \\( c \\) are elements of  \\( G \\) satisfying  \\( (a \\ast b) \\ast c=e. \\) </p> <p>Which of the following is/are necessarily true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( a \\ast(b&nbsp;\\ast c)=e \\)`,
+        `\\( (b \\ast c) \\ast a=e \\)`,
+        `\\( c \\ast(a \\ast&nbsp;b)=e \\)`,
+        `\\( b \\ast(c \\ast a)=e \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The following is a Cayley table for a group  \\( \\mathrm{G} \\). The order of  \\( 4 * 4 \\) is: \$\$  \\begin{array}{r|r|r|r|r|r|} * &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\\\ \\hline 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 1 \\\\ \\hline 2 &amp; 3 &amp; 4 &amp; 5 &amp; 1 &amp; 2 \\\\ \\hline 3 &amp; 4 &amp; 5 &amp; 1 &amp; 2 &amp; 3 \\\\ \\hline 4 &amp; 5 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\\\ \\hline 5 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\\\ \\hline \\end{array} \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<img src="/images/quiz/wqt-dm-13/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\text{G} \\) be a group and let  \\( a, b, c \\in \\text{G}. \\) </p> <p>Consider the following statements:</p> <ol> <li>If  \\( b a c=a^{-1} \\), then  \\( c a b=a^{-1} \\).<br>&nbsp; </li> <li>The elements " \\( bab \\)" and " \\( abb \\)" have the same order.<br>&nbsp; </li> </ol> <p>Which of the above statements is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\) Only<br>&nbsp;`,
+        `\\( 2 \\) Only<br>&nbsp;`,
+        `Both  \\( 1 \\;&nbsp;\\&amp;\\; 2 \\).<br>&nbsp;`,
+        `None`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-13/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\text{G} \\) be an abelian group with identity element  \\( e \\).<br> \$\$ \\text{H}=\\left\\{x \\in G \\mid x^4=e\\right\\} \$\$<br>Which of the following is true about  \\( \\mathrm{H}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\text{H} \\) is a subgroup of  \\( \\text{G} \\).<br>&nbsp;`,
+        `\\( \\text{H} \\) is not a subgroup of  \\( \\text{G} \\) because the identity element doesn't belong to  \\( \\mathrm{H} \\).<br>&nbsp;`,
+        `\\( \\mathrm{H} \\) is not a subgroup of  \\( \\mathrm{G} \\) because  \\( \\mathrm{H} \\) doesn't satisfy closure property.<br>&nbsp;`,
+        `\\( \\text{H} \\) is not a subgroup of  \\( \\text{G} \\) because  \\( \\text{H} \\) doesn't satisfy inverse property.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-13/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>For which of the following partially filled Cayley tables, it is impossible to complete the Cayley table to make a group?<br>&nbsp;</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\begin{array}{r|llll} \\circ &amp; a &amp; b &amp; c &amp; d \\\\ \\hline a &amp; - &amp; - &amp; - &amp; - \\\\ b &amp; b &amp; - &amp; - &amp; - \\\\ c &amp; d &amp; - &amp; - &amp; - \\\\ d &amp; c &amp; - &amp; - &amp; - \\end{array} \\) <p>&nbsp;</p>`,
+        `\\( \\begin{array}{c|cccc} \\circ &amp; a &amp; b &amp; c &amp; d \\\\ \\hline a &amp; a &amp; - &amp; - &amp; - \\\\ b &amp; - &amp; b &amp; - &amp; - \\\\ c &amp; - &amp; - &amp; - &amp; - \\\\ d &amp; - &amp; - &amp; - &amp; - \\end{array} \\) <p>&nbsp;</p>`,
+        `\\( \\begin{array}{c|cccc} \\circ &amp; a &amp; b &amp; c &amp; d \\\\ \\hline a &amp; a &amp; - &amp; - &amp; - \\\\ b &amp; - &amp; c &amp; - &amp; - \\\\ c &amp; - &amp; - &amp; b &amp; - \\\\ d &amp; - &amp; - &amp; - &amp; - \\end{array} \\) <p>&nbsp;</p>`,
+        `\\( \\begin{array}{c|cccc} \\circ &amp; a &amp; b &amp; c &amp; d \\\\ \\hline a &amp; b &amp; - &amp; - &amp; - \\\\ b &amp; - &amp; c &amp; - &amp; - \\\\ c &amp; - &amp; - &amp; d &amp; - \\\\ d &amp; - &amp; - &amp; - &amp; - \\end{array} \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the set  \\( \\mathrm{H}=\\{4,8,12,16) \\). Complete the Cayley table of the operation multiplication modulo  \\( 20 \\) over that set and answer the following questions.<br> \$\$  \\begin{array}{|c||c|c|c|c|} \\hline &amp; 4 &amp; 8 &amp; 12 &amp; 16 \\\\ \\hline \\hline 4 &amp; 16 &amp; 12 &amp; 8 &amp; 4 \\\\ \\hline 8 &amp; &amp; &amp; &amp; \\\\ \\hline 12 &amp; &amp; &amp; &amp; \\\\ \\hline 16 &amp; 4 &amp; 8 &amp; 12 &amp; 16 \\\\ \\hline \\end{array} \$\$ </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{H} \\) is a group But not cyclic.<br>&nbsp;`,
+        `\\( \\mathrm{H} \\) is commutative.<br>&nbsp;`,
+        `\\( \\mathrm{H} \\) is a cyclic group.<br>&nbsp;`,
+        `Order of  \\( 12 \\) is  \\( 4. \\)`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>If  \\( \\text{G} \\) is a group and  \\( g&nbsp;\\in \\text{G}, \\)&nbsp;then the subgroup generated by  \\( g \\) is<br> \$\$  \\langle g\\rangle=\\left\\{g^n \\mid n \\in \\mathbb{Z}\\right\\} .  \$\$ <br>The set of all positive integers less than  \\( n \\) and relatively prime to  \\( n \\) with multiplication  \\( \\bmod n \\) is a group denoted  \\( \\text{U}_n \\).<br>i.e.  \\( \\text{U}_n =\\left\\{g \\in Z _n \\mid \\operatorname{gcd}(g, n)=1\\right\\} \\) . </p> <p>Which of the following is/are true about  \\( \\text{U}_{24}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `In  \\( \\text{U}_{24}, \\) the size of the subgroup generated by  \\( 13 \\) is  \\( 2. \\)<br>&nbsp;`,
+        `\\( \\text{U}_{24} \\) is an abelian group.<br>&nbsp;`,
+        `\\( \\text{U}_{24} \\) is a cyclic group.<br>&nbsp;`,
+        `The order of an element  \\( y \\) in a group  \\( \\text{G} \\) is equal to the size of the subgroup generated by  \\( y. \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/15.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{G} \\) be a group. Let  \\( \\mathrm{a}, \\mathrm{b} \\in \\mathrm{G} \\). </p> <p>Which of the following statements is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `The order of  \\( a \\) is the same as the order of  \\( a^{-1} \\).<br>&nbsp;`,
+        `For all  \\( g \\in G,|a|=\\left|g^{-1} a g\\right| \\) .<br>&nbsp;`,
+        `The order of  \\( ab \\) is the same as the order of  \\( ba. \\)<br>&nbsp;`,
+        `In any group  \\( \\text{G}, \\) there is exactly one element of order  \\( 1. \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/16.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{G} \\) be a group. </p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If for any  \\( x, y, z \\) in the group  \\( \\mathrm{G}, xy=zx \\) implies  \\( y=z \\). Then  \\( \\mathrm{G} \\) is Abelian.<br>&nbsp;`,
+        `If for any  \\( x, y, z \\) in the group  \\( \\text{G}, x y=x z \\) implies  \\( y=z \\). Then  \\( \\text{G} \\) is Abelian.<br>&nbsp;`,
+        `If for any  \\( x, y, z \\) in the group  \\( \\text{G}, y x=z x \\) implies  \\( y=z \\). Then  \\( \\text{G} \\) is Abelian.<br>&nbsp;`,
+        `If for any  \\( x, y, z \\) in the group  \\( \\mathrm{G}, yx= xz \\) implies  \\( y=z \\). Then  \\( \\mathrm{G} \\) is Abelian.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/17.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{G} \\) be a group. </p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If for every choice of elements in group  \\( \\text{G}, axb=cxd \\) implies  \\( a b=c d \\). Then  \\( \\mathrm{G} \\) is Abelian.<br>&nbsp;`,
+        `In a group,  \\( (a b)^2=a^2 b^2 \\) if and only if  \\( a b=b a \\).<br>&nbsp;`,
+        `In a group,  \\( (a b)^{-2}=b^{-2} a^{-2} \\) if and only if \\( a b=b a \\).<br>&nbsp;`,
+        `A group  \\( \\text{G} \\) is Abelian if and only if  \\( (a b)^{-1}=a^{-1} b^{-1} \\) for all  \\( a \\) and  \\( b \\) in  \\( \\text{G} \\).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/18.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The following question is based on “Isomorphisms of Algebraic Structures”.</p> <p>Structure Isomorphism is  \\( {\\color{Red} \\textbf{NOT}} \\) part of  \\( \\text{GATE CSE 2024} \\) syllabus. But in Goclasses Group Theory Lectures, we have studied the basic idea of Structure Isomorphism. </p> <p>In simple words, we’ll say two algebraic structures  \\( \\text{A} \\) and  \\( \\text{B} \\) are<br>isomorphic if they have exactly the same structure, but their elements may be different.<br>Isomorphic structures are exactly the same except for the names of the elements and the name of the binary operation.<br>With the basic idea of isomorphism that we have studied in Goclasses Group Theory Lectures, Try the following Berkeley University question. (If you don’t get the correct answer, don’t worry about it.) </p> <p>Consider the following multiplication tables. Find the binary operations that are isomorphic.<br> \$\$  \\begin{array}{c||c|c} *_1 &amp; \\mathrm{a} &amp; \\mathrm{b} \\\\ \\hline \\hline \\mathrm{a} &amp; \\mathrm{a} &amp; \\mathrm{a} \\\\ \\hline \\mathrm{b} &amp; \\mathrm{a} &amp; \\mathrm{b} \\end{array} \\qquad \\begin{array}{c||c|c} *_2 &amp; \\mathrm{c} &amp; \\mathrm{d} \\\\ \\hline \\hline \\mathrm{c} &amp; \\mathrm{d} &amp; \\mathrm{c} \\\\ \\hline \\mathrm{d} &amp; \\mathrm{d} &amp; \\mathrm{d} \\end{array} \\qquad \\begin{array}{c||c|c} *_3 &amp; e &amp; f \\\\ \\hline \\hline e &amp; e &amp; f \\\\ \\hline \\mathrm{f} &amp; \\mathrm{f} &amp; \\mathrm{f} \\end{array}\\qquad \\begin{array}{c||c|c} *_4 &amp; \\mathrm{~g} &amp; \\mathrm{~h} \\\\ \\hline \\hline \\mathrm{g} &amp; \\mathrm{g} &amp; \\mathrm{h} \\\\ \\hline \\mathrm{h} &amp; \\mathrm{g} &amp; \\mathrm{h} \\end{array}  \$\$ <br>Which of the following is/are correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\) and  \\( 2 \\) are not isomorphic.<br>&nbsp;`,
+        `\\( 1 \\) and  \\( 3 \\) are not isomorphic.<br>&nbsp;`,
+        `\\( 2 \\) and  \\( 3 \\) are isomorphic.<br>&nbsp;`,
+        `\\( 3 \\) and  \\( 4 \\) are not isomorphic.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/19.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{G} \\) be a finite group. Let " \\( 1 \\)" denote the identity element of  \\( \\text{G}. \\) If  \\( g \\) is an element of a finite group  \\( \\mathrm{G}, \\)&nbsp;then the order of  \\( g \\) is the smallest positive integer  \\( n \\) such that  \\( g^ n=1 \\), and it is denoted  \\( o(g)=n \\). The order of group  \\( \\mathrm{G} \\) is denoted by  \\( o(\\mathrm{G}) \\) or  \\( |\\mathrm{G}|. \\) </p> <p>Which of the following statements is necessarily true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( g^m=1, \\)&nbsp;for some  \\( g \\in \\mathrm{G}, \\)&nbsp;then  \\( o(g) \\mid m \\).<br>&nbsp;`,
+        `If  \\( g^m=1, \\)&nbsp;for some  \\( g \\in \\mathrm{G}, \\)&nbsp;then  \\( o(g)=m \\).<br>&nbsp;`,
+        `If  \\( g^m=1, \\)&nbsp;for some  \\( \\mathrm{g} \\in \\mathrm{G}, \\)&nbsp;then  \\( m \\mid o(\\mathrm{g}) \\).<br>&nbsp;`,
+        `If  \\( g^m=1, \\)&nbsp;for some  \\( g \\in \\mathrm{G}, \\)&nbsp;then  \\( m \\mid o(\\mathrm{G}) \\).`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-13/20.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{G} \\) be a finite group. </p> <p>Which of the following statements are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `The number of elements  \\( x \\) of  \\( \\text{G} \\) such that  \\( x^3=e \\) is odd.<br>&nbsp;`,
+        `The number of elements  \\( x \\) of  \\( \\text{G} \\) such that  \\( x^3=e \\) is even.<br>&nbsp;`,
+        `The number of elements  \\( x \\) of  \\( \\text{G} \\) such that  \\( x^2 \\neq e \\) is odd.<br>&nbsp;`,
+        `The number of elements  \\( x \\) of  \\( \\text{G} \\) such that  \\( x^2 \\neq e \\) is even.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-13/21.png" style="max-width: 75%;">`
+    },
+  ]
+});
