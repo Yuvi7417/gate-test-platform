@@ -24068,3 +24068,157 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-12| Functions",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let f and g be the functions from the set of integers defined by  \\( f(x) = 2x+3 \\) and  \\( g(x) =3x+2 \\). Then the composition of f and g and g and f is given as </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 6x+7 \\),  \\( 6x+11 \\)<br>&nbsp;`,
+        `\\( 6x+11 \\),  \\( 6x+7 \\)<br>&nbsp;`,
+        `\\( 5x+5 \\),  \\( 5x+5 \\)<br>&nbsp;`,
+        `None of the above`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-12/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>The following functions all have  \\( \\{1,2,3,4,5\\} \\) as both their domain and codomain. Which of the following is both injective \&amp; surjective?<br>&nbsp; </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f=\\left(\\begin{array}{lllll}1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\\\ 3 &amp; 3 &amp; 3 &amp; 3 &amp; 3\\end{array}\\right) \\) .<br>&nbsp;`,
+        `\\( f=\\left(\\begin{array}{lllll}1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\\\ 2 &amp; 3 &amp; 1 &amp; 5 &amp; 4\\end{array}\\right) \\) .<br>&nbsp;`,
+        `\\( f(x)=6-x \\).<br>&nbsp;`,
+        `\\( f(x)=\\left\\{\\begin{array}{ll}x / 2 &amp; \\text { if } x \\text { is even } \\\\ (x+1) / 2 &amp; \\text { if } x \\text { is odd }\\end{array}\\right. \\) .`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-12/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the function  \\( f: \\mathbb{N} \\rightarrow \\mathbb{N} \\) given recursively by  \\( f(0)=1 \\) and  \\( f(n+1)=2 \\cdot f(n) \\). Find  \\( f(10) \\). </p>`,
+      image: "",
+      options: [],
+      answer: "1024",
+      solution: `<img src="/images/quiz/wqt-dm-12/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If we define the functions  \\( f \\),  \\( g \\) and  \\( h \\) that map  \\( R \\) into  \\( R \\) by :<br><br> \\( f(x)=x^{4}, g(x)= \\sqrt{x^{2}+1}, h(x)=x^{2}+72 \\) , then the value of the composite functions  \\( ho(gof) \\) and  \\( (hog)of \\) are given as </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x^{8}-71 \\) and  \\( x^{8}-71 \\)<br>&nbsp;`,
+        `\\( x^{8}-73 \\) and  \\( x^{8}-73 \\)<br>&nbsp;`,
+        `\\( x^{8}+71 \\) and  \\( x^{8}+71 \\)<br>&nbsp;`,
+        `\\( x^{8}+73 \\) and  \\( x^{8}+73 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-12/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose  \\( \\mathrm{f}: \\mathrm{X} \\rightarrow \\mathrm{Y} \\) is a function. Which of the following are possible? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) is injective but not surjective.<br>&nbsp;`,
+        `\\( f \\) is surjective but not injective.<br>&nbsp;`,
+        `\\( f \\) is surjective and injective.<br>&nbsp;`,
+        `\\( \\mathrm{f} \\) is neither surjective nor injective.`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-12/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{X} \\) be a finite set. Suppose  \\( \\mathrm{f}: \\mathrm{X} \\rightarrow \\mathrm{X} \\) is a function. Which of the following are possible? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{f} \\) is injective but not surjective.<br>&nbsp;`,
+        `\\( \\mathrm{f} \\) is surjective but not injective.<br>&nbsp;`,
+        `\\( \\mathrm{f} \\) is surjective and injective.<br>&nbsp;`,
+        `f is neither surjective nor injective.`,
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-12/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The functions mapping  \\( R \\) into  \\( R \\) are defined as :<br><br> \\( f\\left(x \\right)=x^{3} - 4x, g\\left(x \\right)=\\frac{1}{x^{2}+1} \\) and \\( h\\left(x \\right)=x^{4}. \\)<br><br>Then find the value of the following composite functions :<br><br> \\( h_{o}g\\left(x \\right) \\) and  \\( h_{o}g_{o}f\\left(x \\right) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left ( x^{2}+1 \\right )^{4} \\) and  \\( \\left [ \\left ( x^{3}-4x \\right )^{2}+1 \\right ]^{4} \\) <br>&nbsp;&nbsp;&nbsp;&nbsp;`,
+        `\\( \\left ( x^{2}+1 \\right )^{4} \\) and  \\( \\left [ \\left ( x^{3}-4x \\right )^{2}+1 \\right ]^{-4} \\)<br>&nbsp;`,
+        `\\( \\left ( x^{2}+1 \\right )^{-4} \\) and  \\( \\left [ \\left ( x^{2}-4x \\right )^{2}+1 \\right ]^{4} \\)<br>&nbsp;`,
+        `\\( \\left ( x^{2}+1 \\right )^{-4} \\) and  \\( \\left [ \\left ( x^{3}-4x \\right )^{2}+1 \\right ]^{-4} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-12/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Define  \\( f(n)=\\frac{n}{2}+\\frac{1-(-1)^{n}}{4} \\) for all \\( n \\in \\mathbb{Z} \\). Thus,  \\( f: \\mathbb{Z} \\rightarrow \\mathbb{Z}, \\mathbb{Z} \\) the set of all integers. Which is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( f \\) is not a function from  \\( \\mathbb{Z} \\rightarrow \\mathbb{Z} \\) because \\( \\frac{n}{2} \\notin \\mathbb{Z} \\).<br>&nbsp;`,
+        `\\( \\mathrm{f} \\) is a function and is not onto but is one-to-one.<br>&nbsp;`,
+        `\\( f \\) is a function and is not onto and not one-to-one<br>&nbsp;`,
+        `\\( f \\) is a function and is onto but not one-to-one.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-12/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( f : X \\to Y \\) and  \\( g : Y \\to Z \\). Let  \\( h = g \\circ f : X \\to Z \\). Suppose  \\( g \\) is one-to-one and onto. Which of the following is FALSE? </p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( f \\) is one-to-one then  \\( h \\) is one-to-one and onto.<br>&nbsp;`,
+        `If  \\( f \\) is not onto then  \\( h \\) is not onto.<br>&nbsp;`,
+        `If  \\( f \\) is not one-to-one then  \\( h \\) is not one-to-one.<br>&nbsp;`,
+        `If  \\( f \\) is one-to-one then  \\( h \\) is one-to-one.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-12/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{g}: \\mathrm{A} \\rightarrow \\mathrm{B} \\) and  \\( \\mathrm{f}: \\mathrm{B} \\rightarrow \\mathrm{C} \\) be functions. If  \\( \\mathrm{f} \\circ \\mathrm{g} \\) is bijective, then which of the following must be true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( g \\) is one to one.<br>&nbsp;`,
+        `\\( g \\) is onto.<br>&nbsp;`,
+        `\\( f \\) is one to one.<br>&nbsp;`,
+        `\\( \\mathrm{f} \\) is onto.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-12/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
