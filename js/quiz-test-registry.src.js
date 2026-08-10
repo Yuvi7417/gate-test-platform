@@ -25256,3 +25256,192 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-19| Graph Theory",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If a graph  \\( G \\) has  \\( 10 \\) vertices, what is the max number of triangles in  \\( G \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img src="/images/quiz/wqt-dm-19/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A graph has seven vertices: two vertices of degree  \\( 6 \\) , four vertices of degree  \\( 5 \\) , and one vertex of degree  \\( 2 \\). The number of edges in the graph is? </p>`,
+      image: "",
+      options: [],
+      answer: "17",
+      solution: `<img src="/images/quiz/wqt-dm-19/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If a graph has five vertices of degree  \\( 4 \\) and four vertices of degree  \\( 3 \\), how many edges does it have? </p>`,
+      image: "",
+      options: [],
+      answer: "16",
+      solution: `<img src="/images/quiz/wqt-dm-19/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What is the maximum number of vertices on a graph that has  \\( 35 \\) edges and every vertex has degree  \\( \\geq 3 \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "23",
+      solution: `<img src="/images/quiz/wqt-dm-19/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many non-isomorphic graphs are there with  \\( 3 \\) vertices? </p>`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img src="/images/quiz/wqt-dm-19/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the following two graphs  \\( G \\) (on left),  \\( H \\)(on right): </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-dm-19/q_img1.png" style="max-width: 75%;"></p> <p><br>Which of the following statements is/are true for  \\( G \\),  \\( H \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `The above two graphs have the same number of vertices.<br>&nbsp;`,
+        `The above two graphs have the same number of edges.<br>&nbsp;`,
+        `The above two graphs have the same degree sequences.<br>&nbsp;`,
+        `The above two graphs are isomorphic.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-19/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following graphs cannot exist ? (Select all that apply)</p> <p></p>`,
+      image: "",
+      options: [
+        `A graph with an isolated vertex and a universal vertex. (Note: A universal vertex is a vertex of an undirected graph that is adjacent to all other vertices of the graph.)<br>&nbsp;`,
+        `A cubic graph of order 5. (Note: A cubic graph is a graph in which all vertices have degree three.)<br>&nbsp;`,
+        `A bipartite graph of order 5 and size 7.<br>&nbsp;`,
+        `A bipartite graph of order 8 and size 10.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-19/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A graph has  \\( 26 \\) vertices and  \\( 58 \\) edges. There are five vertices of degree \\( 4 \\) , six vertices of degree  \\( 5 \\) , and seven vertices of degree  \\( 6 \\) . If the remaining vertices all have the same degree, what is this degree? </p>`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<img src="/images/quiz/wqt-dm-19/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>The complement of a graph,  \\( G \\), of order  \\( n \\), denoted  \\( \\bar{G} \\), has the same vertex set as  \\( G \\) with  \\( E(\\bar{G})=E\\left(K_{n}\\right)-E(G) \\). If every vertex of  \\( G \\) has an odd degree, except for one, how many vertices have odd degree in  \\( \\bar{G} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( n \\)`,
+        `1`,
+        `\\( n-1 \\)`,
+        `None`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-19/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If  \\( G \\) is a graph with  \\( 20 \\) vertices and  \\( 20 \\) edges with no vertices of degree  \\( 0 \\) or  \\( 1 \\) , then the degree of every vertex is ? </p>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img src="/images/quiz/wqt-dm-19/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following graphs cannot exist ? (Select all that apply)</p> <p></p>`,
+      image: "",
+      options: [
+        `All vertices of the graph have different degrees.<br>&nbsp;`,
+        `A graph where the degree of each vertex is even.<br>&nbsp;`,
+        `Each person, in a group of 15 individuals, has exactly three friends. (Assume that friendship is a symmetric relation, i.e. friendship goes both ways.)<br>&nbsp;`,
+        `A simple graph with four vertices and degree sequence (1, 2, 3, 4)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-19/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If a simple graph  \\( G \\) has  \\( 15 \\) edges and all vertices of the same degree d , find what are the possible values of d. How many different values are possible for d ? </p>`,
+      image: "",
+      options: [],
+      answer: "4",
+      solution: `<img src="/images/quiz/wqt-dm-19/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If two graphs have the same number of vertices and the same number of cycles of each order, then they are isomorphic.`,
+        `Two isomorphic graphs must have the same number of edges and vertices.`,
+        `Two isomorphic graphs always look exactly the same.`,
+        `Isomorphism is an equivalence relation on all graphs.`,
+      ],
+      answer: ["B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-19/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is/are false?</p> <p></p>`,
+      image: "",
+      options: [
+        `The degree sequence of two isomorphic graphs must be the same.<br>&nbsp;`,
+        `\\( K_{3,2} \\) is isomorphic to  \\( C_{5} \\).<br>&nbsp;`,
+        `\\( K_{4,2} \\) is isomorphic to  \\( K_{2,4} \\).<br>&nbsp;`,
+        `If  \\( G \\) contains no cycles, all graphs isomorphic to  \\( G \\) also have no cycles.`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-dm-19/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let  \\( G \\) be the graph with vertices labelled by  \\( \\{1,2,3, \\ldots, 7\\} \\), two distinct vertices \\( i \\) and  \\( j \\) are adjacent if  \\( |i-j| \\) is even. How many connected components does  \\( G \\) have? </p>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<img src="/images/quiz/wqt-dm-19/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
