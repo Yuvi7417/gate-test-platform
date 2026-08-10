@@ -24536,3 +24536,162 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-14| Combinatorics",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many committees of 5 students can be selected from a class of 25?</p>`,
+      image: "",
+      options: [],
+      answer: "53130",
+      solution: `<img src="/images/quiz/wqt-dm-14/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A Club consists of 20 members, of which 9 are male and 11 are female. Seven members will be selected to form an event-planning committee. How many committees of 4 females and 3 males can be formed?</p>`,
+      image: "",
+      options: [],
+      answer: "27720",
+      solution: `<img src="/images/quiz/wqt-dm-14/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many 7-digit telephone numbers can be formed if the first digit cannot be 0 or 1 ?</p>`,
+      image: "",
+      options: [],
+      answer: "8000000",
+      solution: `<img src="/images/quiz/wqt-dm-14/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In a race with 15 runners where 6 trophies will be given to the top 6 runners (the trophies are distinct: first place, second place, etc), how many ways can this be done?</p>`,
+      image: "",
+      options: [],
+      answer: "3603600",
+      solution: `<img src="/images/quiz/wqt-dm-14/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>8 students on a student council are assigned 8 seats around a U-shaped table. How many ways can a president and a vice-president be elected from the 8 students?</p>`,
+      image: "",
+      options: [],
+      answer: "56",
+      solution: `<img src="/images/quiz/wqt-dm-14/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Three hardcover books and 5 paperbacks are placed on a shelf. How many ways can the books be arranged if all the hardcover books must be together and all the paperbacks must be together?</p>`,
+      image: "",
+      options: [],
+      answer: "1440",
+      solution: `<img src="/images/quiz/wqt-dm-14/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can you pair up 8 boys and 8 girls? (i.e. How many pairs having one girl &amp; one boy are possible?)</p>`,
+      image: "",
+      options: [],
+      answer: "64",
+      solution: `<img src="/images/quiz/wqt-dm-14/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can you arrange 9 people into 3 rows of 3 desks each?</p>`,
+      image: "",
+      options: [],
+      answer: "362880",
+      solution: `<img src="/images/quiz/wqt-dm-14/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Out of 2 Women and 5 Men, a committee of 3 is to be formed. In how many ways can it be formed if at least one woman is to be included?</p>`,
+      image: "",
+      options: [],
+      answer: "25",
+      solution: `<img src="/images/quiz/wqt-dm-14/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In how many ways can a cricket eleven be chosen out of a batch of 15 players if a particular player is always chosen?</p>`,
+      image: "",
+      options: [],
+      answer: "1001",
+      solution: `<img src="/images/quiz/wqt-dm-14/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In how many ways can a cricket eleven be chosen out of a batch of 15 players if a particular player is never chosen?</p>`,
+      image: "",
+      options: [],
+      answer: "364",
+      solution: `<img src="/images/quiz/wqt-dm-14/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In a race with 15 runners where 6 trophies will be given to the top 6 runners (the trophies are distinct: first place, second place, etc), how many ways can this be done, if a certain person, Ram, must be one of the top 3 winners?</p>`,
+      image: "",
+      options: [],
+      answer: "720720",
+      solution: `<img src="/images/quiz/wqt-dm-14/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can you choose 4 groups of 4 people from 16 people, assuming the groups are distinct (i.e. group A, group B, group C, group D)?</p>`,
+      image: "",
+      options: [],
+      answer: "63063000",
+      solution: `<img src="/images/quiz/wqt-dm-14/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose we have 4 Americans and 6 Canadians. How many ways can we arrange them in a line if all the Americans have to stand together?</p>`,
+      image: "",
+      options: [],
+      answer: "120960",
+      solution: `<img src="/images/quiz/wqt-dm-14/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose we have 4 Americans and 6 Canadians. How many ways can we arrange them in a line if not all the Americans are together ?</p>`,
+      image: "",
+      options: [],
+      answer: "3507840",
+      solution: `<img src="/images/quiz/wqt-dm-14/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
