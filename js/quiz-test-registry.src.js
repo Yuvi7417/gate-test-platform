@@ -23730,3 +23730,117 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-10| Relations",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is called a "GO Relation" if for all \\( \\mathrm{x}, \\mathrm{y}, \\mathrm{z} \\)  \\( \\in A \\), if  \\( x R y \\) and  \\( x R z \\), then  \\( y R z \\). </p> <p>Which of the following is/are true about a relation  \\( \\mathrm{R}? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( R \\) is a reflexive and GO relation then  \\( R \\) is symmetric.`,
+        `If  \\( R \\) is a reflexive and GO relation then  \\( R \\) is transitive.`,
+        `If  \\( R \\) is a GO relation then  \\( R \\) is reflexive.`,
+        `If  \\( R \\) is an equivalence relation then  \\( R \\) is a GO relation.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-10/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is called surjective if the following statement is true about  \\( \\mathrm{R}: \\) </p> <p> \\( \\forall \\mathrm{b} \\in \\mathrm{A} . \\exists \\mathrm{a} \\in \\mathrm{A} . \\mathrm{aRb} \\) </p> <p>Which of the following statements is(are) true?</p> <p></p>`,
+      image: "",
+      options: [
+        `A binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is an equivalence relation if \\( \\mathrm{R} \\) is surjective, symmetric, and transitive.`,
+        `If a binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is an equivalence relation then \\( \\mathrm{R} \\) is surjective.`,
+        `If a binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is reflexive then  \\( \\mathrm{R} \\) is surjective.`,
+        `If a binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is surjective then  \\( \\mathrm{R} \\) is reflexive.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-10/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{R} \\) and  \\( \\mathrm{T} \\) be binary relations over the same set  \\( \\mathrm{A} \\). We'll say that  \\( \\text{R} \\) is "no stronger than"  \\( \\text{T} \\) if the following statement is true:<br> \$\$  \\forall a \\in \\mathrm{A} . \\forall \\mathrm{b} \\in \\mathrm{A} .(\\mathrm{aRb} \\rightarrow \\mathrm{aTb})  \$\$ <br>Let  \\( \\mathrm{R} \\) and  \\( \\mathrm{T} \\) be binary relations over the same set  \\( \\mathrm{A} \\) where  \\( \\mathrm{R} \\) is "no stronger than"  \\( \\text{T}. \\) </p> <p>Then which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( \\text{R} \\) is an equivalence relation, then \\( \\text{T} \\) is an equivalence relation.`,
+        `If  \\( \\mathrm{T} \\) is an equivalence relation, then \\( \\mathrm{R} \\) is an equivalence relation.`,
+        `If  \\( \\text{R} \\) is a reflexive relation, then \\( \\text{T} \\) is a reflexive relation.`,
+        `If  \\( \\mathrm{T} \\) is a reflexive relation, then \\( \\mathrm{R} \\) is a reflexive relation.`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-dm-10/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\text{A, B} \\) be two finite, non-empty sets, with cardinality of  \\( \\text{A, B} \\) as&nbsp; \\( m, n \\) respectively. </p> <p>Let  \\( \\mathrm{f}: \\mathrm{A} \\rightarrow \\mathrm{B} \\) be a function with domain  \\( \\mathrm{A} \\) and co-domain&nbsp; \\( \\mathrm{B} \\). Let  \\( r \\) be the cardinality of range of  \\( f. \\) </p> <p>We define a relation  \\( \\mathrm{R} \\) on  \\( \\mathrm{A} \\), defined by  \\( (x, y) \\in \\mathrm{R} \\Leftrightarrow \\mathrm{f}(x)=\\mathrm{f}(y) \\). </p> <p>Which of the following statements is true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{R} \\) is not an equivalence relation.`,
+        `\\( \\mathrm{R} \\) is an equivalence relation having  \\( r \\)&nbsp;equivalence classes.`,
+        `\\( \\mathrm{R} \\) is an equivalence relation having  \\( m \\) equivalence classes.`,
+        `\\( \\mathrm{R} \\) is an equivalence relation having  \\( n \\) equivalence classes.`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-dm-10/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A relation  \\( R \\) is said to be circular if  \\( aRb \\) and  \\( bRc \\) together imply  \\( cRa. \\) </p> <p>Which of the following options is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `If a relation  \\( S \\) is circular, then  \\( S \\)&nbsp;is a transitive relation.`,
+        `If a relation  \\( S \\) is circular and symmetric, then  \\( S \\) is a transitive relation.`,
+        `If a relation  \\( S \\) is reflexive and circular, then  \\( S \\) is a symmetric relation. &nbsp;`,
+        `If a relation  \\( S \\) is transitive and circular, then  \\( S \\) is a symmetric relation.`,
+      ],
+      answer: ["B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-10/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A binary relation  \\( R \\) over a set  \\( A \\) is called total iff for any  \\( x \\in A \\) and  \\( y \\in A \\), at least one of  \\( xRy \\) or  \\( yRx \\) is true. </p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `A binary relation  \\( \\mathrm{R} \\) over a set  \\( \\mathrm{A} \\) is a total order iff it is a partial order and it is total.`,
+        `Every total relation is reflexive.`,
+        `If a relation  \\( \\mathrm{S} \\) is total  \\( \\&amp; \\) symmetric, then  \\( \\mathrm{S} \\) is an equivalence relation.`,
+        `Every total relation is transitive.`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-10/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>A Relation  \\( R \\) on set  \\( S \\) is said to be Serial if  \\( \\forall x \\exists y ~ R(x, y) \\). </p> <p>Let  \\( \\mathrm{T} \\) be a symmetric and transitive relation on a non-empty set  \\( \\mathrm{A} \\), then which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( T \\) is reflexive.`,
+        `For any element  \\( x \\in A \\), if  \\( xTy \\)&nbsp;for some  \\( y \\in A \\), then  \\( x R x \\) is necessarily true.`,
+        `If  \\( \\mathrm{T} \\) is serial also, then  \\( \\mathrm{T} \\) is reflexive.`,
+        `Every equivalence relation is serial.`,
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-10/7.png" style="max-width: 75%;">`
+    },
+  ]
+});
