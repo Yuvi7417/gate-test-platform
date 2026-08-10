@@ -24695,3 +24695,117 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-15| Combinatorics",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose we have 4 Americans and 6 Canadians. Suppose you want to choose a committee of 3, which will be all Americans or all Canadians. How many ways can this be done?</p>`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<img src="/images/quiz/wqt-dm-15/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A college planning committee consists of 3 freshmen, 4 sophomores, 5 juniors, and 2 seniors. A subcommittee of 4 consists of 1 person from each class. How many choices are possible?</p>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img src="/images/quiz/wqt-dm-15/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose there are 9 men and 8 women. How many ways can we choose a committee that has 2 men and 3 women? </p>`,
+      image: "",
+      options: [],
+      answer: "2016",
+      solution: `<img src="/images/quiz/wqt-dm-15/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>There is a school class of 25 people made up of 11 guys and 14 girls. How many ways are there to make a committee of 5 people?</p>`,
+      image: "",
+      options: [],
+      answer: "53130",
+      solution: `<img src="/images/quiz/wqt-dm-15/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can one arrange 4 math books, 3 chemistry books, 2 physics books, and 1 biology book on a bookshelf so that all the math books are together, all the chemistry books are together, and all the physics books are together?</p>`,
+      image: "",
+      options: [],
+      answer: "6912",
+      solution: `<img src="/images/quiz/wqt-dm-15/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Recall that a standard deck of cards has 52 cards. The cards can be classified according to suits or denominations. There are 4 suits, hearts, diamonds, spades and clubs. There are 13 cards in each suit. There are 13 denominations, Aces, Kings, Queens, .......... ,Twos, with 4 cards in each denomination. A poker hand consists of a sample of size 5 drawn from the deck. How many Poker hands have three cards from one denomination and two from another (a full house)?</p>`,
+      image: "",
+      options: [],
+      answer: "3744",
+      solution: `<img src="/images/quiz/wqt-dm-15/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose there are 8 men and 8 women. How many ways can we choose a committee that has 2 men and 2 women? </p>`,
+      image: "",
+      options: [],
+      answer: "784",
+      solution: `<img src="/images/quiz/wqt-dm-15/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose we have 4 Americans and 6 Canadians. Suppose you want to choose a committee of 3 . How many ways for a committee of 3 that is not all Americans or all Canadians?</p>`,
+      image: "",
+      options: [],
+      answer: "96",
+      solution: `<img src="/images/quiz/wqt-dm-15/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Suppose there are 12 students, among whom are three students,  \\( M, B, C \\) (a Math Major, a Biology Major, a Computer Science Major). We want to send a delegation of four students (chosen from the 12 students) to a convention. How many ways can this be done so that the delegation includes exactly two (not more, not less) students from  \\( \\{M, B, C\\} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `32`,
+        `64`,
+        `88`,
+        `108`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-15/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The English alphabet has 26 letters of which 5 are vowels (A,E,I,O,U). How many seven letter words, with all letters distinct, can be formed that start with B, end with the letters ES, and have exactly three vowels? The "words" for this problem are just strings of letters and need not have linguistic meaning. </p>`,
+      image: "",
+      options: [],
+      answer: "24624",
+      solution: `<img src="/images/quiz/wqt-dm-15/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
