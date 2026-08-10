@@ -22646,3 +22646,162 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-4 | Propositional Logic",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let p and q be two propositions. Which of the following statements is a tautology /are tautologies?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p \\rightarrow p \\)`,
+        `\\( (p \\rightarrow p) \\vee(p \\rightarrow \\bar{p}) \\)`,
+        `\\( (p \\rightarrow p) \\rightarrow(p \\rightarrow \\bar{p}) \\)`,
+        `\\( (p \\vee \\bar{q}) \\vee \\bar{p} \\)`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-4/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p=T, q=F, r=T \\).<br>Select ALL expressions that evaluate to FALSE: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( q \\rightarrow((p \\wedge \\neg q) \\vee r) \\)`,
+        `\\( (\\neg \\mathrm{r} \\vee \\mathrm{q}) \\leftrightarrow(\\neg \\mathrm{p} \\wedge \\mathrm{q}) \\)`,
+        `\\( \\neg&nbsp;q&nbsp;\\oplus r \\)`,
+        `\\( \\neg q \\vee r \\)`,
+      ],
+      answer: ["C"],
+      solution: `<img src="/images/quiz/wqt-dm-4/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let the propositional variables  \\( \\mathrm{p}, \\mathrm{q} \\), and r represent the propositions:<br>p : You won the game<br>q : You scored the most points<br>r: You had the most fun<br>Select the logical expression that represents the statement:&nbsp;"<strong>To have the most fun, it is necessary that you win the game</strong>" </p> <p></p>`,
+      image: "",
+      options: [
+        `&nbsp; \\( p \\leftrightarrow q \\)`,
+        `&nbsp; \\( q \\rightarrow p \\)`,
+        `&nbsp; \\( r \\rightarrow p \\)`,
+        `&nbsp; \\( p \\rightarrow q \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-4/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Find the assignment of truth values to  \\( p \\) and  \\( q \\) that prove that argument below is invalid. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-dm-4/q_img1.png" style="max-width: 75%;"></p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{p}=\\mathrm{T}, \\mathrm{q}=\\mathrm{T} \\)`,
+        `\\( \\mathrm{p}=\\mathrm{T}, \\mathrm{q}=\\mathrm{F} \\)`,
+        `\\( \\mathrm{p}=\\mathrm{F}, \\mathrm{q}=\\mathrm{T} \\)`,
+        `\\( p=F, q=F \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-4/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <ol start="1" style="list-style-type: lower-alpha;"> <li>&nbsp;Given that the value of  \\( p \\rightarrow q \\) is false, determine the value of  \\( (\\bar{p} \\vee \\bar{q}) \\rightarrow q \\). </li> <li>&nbsp;Given that the value of  \\( p \\rightarrow q \\) is true, can you determine the value of  \\( \\bar{p} \\vee(p \\leftrightarrow q) \\) ?&nbsp; </li> </ol> <p>Which of the following is the correct answer for (a), (b) respectively?</p> <p></p>`,
+      image: "",
+      options: [
+        `True, Yes`,
+        `True, No`,
+        `False, Yes`,
+        `False, No`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-4/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{p}, \\mathrm{q} \\) and r be three propositions. Which of the following statements is a contingency /are contingencies? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( (p \\vee \\bar{q}) \\rightarrow \\bar{p} \\)`,
+        `\\( p \\leftrightarrow(\\bar{p} \\vee \\bar{q}) \\)`,
+        `\\( (p \\rightarrow(q \\rightarrow r)) \\rightarrow((p \\rightarrow q) \\rightarrow(p \\rightarrow r)) \\)`,
+        `\\( (\\bar{q} \\rightarrow \\bar{p}) \\rightarrow(p \\rightarrow q) \\)`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-dm-4/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>You encounter a problem on an exam that is phrased as a multiple-choice question and you are told there is only one valid choice. Unfortunately, the question has been omitted! Here are the choices:</p> <ol start="24" style="list-style-type: upper-alpha;"> <li>Claim A</li> <li>Claim A or claim B</li> <li>Claim B or claim C</li> </ol> <p>Clearly, the questions included 3 claims that may, or may not have been true; however, as the question is missing, you do not know what those claims are!<br>Can you still find out what the correct choice is? </p> <p></p>`,
+      image: "",
+      options: [
+        `X`,
+        `Y`,
+        `Z`,
+        `No, can't find out.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-4/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Consider the following statement:<br>If  \\( \\mathbf{x}&lt;\\mathbf{1 0} \\) and  \\( \\mathbf{y} \\geq \\mathbf{0} \\) then  \\( \\mathbf{x}&lt;\\mathbf{y}+10 \\)<br>If we wanted to prove this statement with a proof by contraposition, what assumption would we begin our proof with? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x&lt;10 \\) and  \\( y \\geq 0 \\) and&nbsp; \\( x&lt;y+10 \\)`,
+        `\\( \\mathrm{x}&lt;10 \\) and  \\( \\mathrm{y} \\geq 0 \\)`,
+        `\\( x&lt;y+10 \\)`,
+        `\\( x \\geq y+10 \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-4/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>From the expressions below, select ALL of the contradictions:</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( r&nbsp;\\leftrightarrow \\neg r \\)`,
+        `\\( (p \\oplus q) \\rightarrow(p \\vee q) \\)`,
+        `\\( (p \\vee q) \\rightarrow(p \\oplus q) \\)`,
+        `\\( (p \\wedge q) \\wedge(p \\oplus q) \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-4/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Select the logical expression that is equivalent to:<br> \\( \\neg(\\mathbf{p} \\wedge \\mathbf{q}) \\wedge(\\neg \\mathbf{p} \\vee \\mathbf{r}) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p \\wedge(\\neg q \\vee \\neg r) \\)`,
+        `\\( \\neg(p \\wedge q \\wedge \\neg r) \\)`,
+        `\\( p \\vee(q \\wedge r) \\)`,
+        `\\( \\neg p \\vee(\\neg q \\wedge r) \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-4/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
