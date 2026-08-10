@@ -21562,7 +21562,7 @@ registerTest({
 
 
 
-registerQuizTest({
+registerTest({
   series: "weekly-cs-gate-2027",
   name: "WQT - Aptitude-6",
   date: "August 6, 2026",
@@ -22022,7 +22022,7 @@ registerQuizTest({
 
 
 
-registerQuizTest({
+registerTest({
   series: "weekly-cs-gate-2027",
   name: "WQT - Discrete Mathematics-1 | Propositional Logic",
   date: "August 10, 2026",
@@ -22244,7 +22244,7 @@ registerQuizTest({
 });
 
 
-registerQuizTest({
+registerTest({
   series: "weekly-cs-gate-2027",
   name: "WQT - Discrete Mathematics-2 | Propositional Logic",
   date: "August 10, 2026",
