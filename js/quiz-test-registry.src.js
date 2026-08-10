@@ -22702,8 +22702,8 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<p></p> <p>Find the assignment of truth values to  \\( p \\) and  \\( q \\) that prove that argument below is invalid. </p> <p></p>`,
-      image: "/images/quiz/wqt-dm-4/q_img1.png",
+      text: `<p></p> <p>Find the assignment of truth values to  \\( p \\) and  \\( q \\) that prove that argument below is invalid. </p> <p style="text-align:center"><img alt="" src="/images/quiz/wqt-dm-4/q_img1.png" style="max-width: 75%;"></p> <p></p>`,
+      image: "",
       options: [
         `\\( \\mathrm{p}=\\mathrm{T}, \\mathrm{q}=\\mathrm{T} \\)`,
         `\\( \\mathrm{p}=\\mathrm{T}, \\mathrm{q}=\\mathrm{F} \\)`,
