@@ -24978,3 +24978,167 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-17| Combinatorics",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can you distribute 12 identical dog treats to 4 dogs?</p>`,
+      image: "",
+      options: [],
+      answer: "455",
+      solution: `<img src="/images/quiz/wqt-dm-17/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can you distribute 12 identical dog treats to 4 dogs such that every dog must get at least one treat?</p>`,
+      image: "",
+      options: [],
+      answer: "165",
+      solution: `<img src="/images/quiz/wqt-dm-17/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following problem. How many integer solutions are there to the equation  \\( x_{1}+x_{2}+x_{3}+x_{4}=12 \\) with  \\( x_{i} \\geq 0 \\) and  \\( 1 \\leq i \\leq 4 \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "455",
+      solution: `<img src="/images/quiz/wqt-dm-17/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the following problem. How many integer solutions are there to the equation  \\( x_{1}+x_{2}+x_{3}+x_{4}=12 \\) with  \\( x_{i} \\geq 0 \\) and  \\( x_{i} \\geq 1 \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "165",
+      solution: `<img src="/images/quiz/wqt-dm-17/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can 6 different diplomats be assigned to 5 different continents?</p>`,
+      image: "",
+      options: [],
+      answer: "15625",
+      solution: `<img src="/images/quiz/wqt-dm-17/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways can 10 different diplomats be assigned to 5 different continents, if each continent needs to have 2 diplomats each?.</p>`,
+      image: "",
+      options: [],
+      answer: "113400",
+      solution: `<img src="/images/quiz/wqt-dm-17/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many integer solutions are there to \$\$  x_{1}+x_{2}+x_{3}+x_{4}+x_{5}=100 , \\quad \\text { where } x_{i} \\geq 0 ? \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "4598126",
+      solution: `<img src="/images/quiz/wqt-dm-17/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many integer solutions are there to \$\$  x_{1}+x_{2}+x_{3}+x_{4}+x_{5}=120 \\text { where } x_{1} \\geq 0, x_{2} \\geq 0, x_{3} \\geq 5, x_{4} \\geq 5, x_{5} \\geq 10 ? \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "4598126",
+      solution: `<img src="/images/quiz/wqt-dm-17/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What's the number of 3-digit natural numbers, in which digits are in non-decreasing order?</p>`,
+      image: "",
+      options: [],
+      answer: "165",
+      solution: `<img src="/images/quiz/wqt-dm-17/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What's the number of 3-digit natural numbers, in which digits are in non-increasing order?</p>`,
+      image: "",
+      options: [],
+      answer: "219",
+      solution: `<img src="/images/quiz/wqt-dm-17/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What's the number of 5-digit natural numbers, in which digits are in strictly decreasing order?</p>`,
+      image: "",
+      options: [],
+      answer: "252",
+      solution: `<img src="/images/quiz/wqt-dm-17/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What's the number of 5-digit natural numbers, in which digits are in strictly increasing order?</p>`,
+      image: "",
+      options: [],
+      answer: "126",
+      solution: `<img src="/images/quiz/wqt-dm-17/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many 7 digit decreasing numbers are there? One example is 9777650 .</p>`,
+      image: "",
+      options: [],
+      answer: "11439",
+      solution: `<img src="/images/quiz/wqt-dm-17/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p> \\( m \\) identical balls are to be placed in  \\( n \\) distinct bags. You are given that  \\( m \\geq kn \\), where  \\( k \\) is a natural number  \\( \\geq 1 \\). In how many ways can the balls be placed in the bags if each bag must contain at least  \\( k \\) balls? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\left( \\begin{array}{c} m - k \\\\ n - 1 \\end{array} \\right) \\) <br>&nbsp;`,
+        `\\( \\left( \\begin{array}{c} m - kn + n - 1 \\\\ n - 1 \\end{array} \\right) \\) <br>&nbsp;`,
+        `\\( \\left( \\begin{array}{c} m - 1 \\\\ n - k \\end{array} \\right) \\) <br>&nbsp;`,
+        `\\( \\left( \\begin{array}{c} m - kn + n + k - 2 \\\\ n - k \\end{array} \\right) \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-17/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many 3 digit numbers have a sum of digits equal to 9 ?</p>`,
+      image: "",
+      options: [],
+      answer: "45",
+      solution: `<img src="/images/quiz/wqt-dm-17/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
