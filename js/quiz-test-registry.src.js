@@ -22805,3 +22805,157 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-5 | Propositional Logic",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If the milkman doesn't deliver milk or the geyser doesn't work, then Akash will be late for school and lunch will be cooked late. Suppose lunch was actually cooked on time. Which of the following is definitely true?</p> <p></p>`,
+      image: "",
+      options: [
+        `Akash was late for school`,
+        `Akash reached school in time`,
+        `Geyser worked`,
+        `Milkman did not deliver milk`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-5/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Select the logical expression that is equivalent to:  \\( \\neg(\\mathbf{p} \\wedge \\mathbf{q}) \\rightarrow(\\mathbf{p} \\wedge \\mathbf{r}) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\neg(p \\wedge q \\wedge \\neg r) \\)`,
+        `\\( p \\vee(q \\wedge r) \\)`,
+        `\\( p \\wedge(q \\vee r) \\)`,
+        `\\( p \\vee q \\vee r \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-5/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>How many assignments of truth values to  \\( p, q \\) and  \\( r \\) respectively are there that prove that argument below is invalid? </p> <p><img alt="" src="/images/quiz/wqt-dm-5/q_img1.png" style="max-width: 75%;"></p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-dm-5/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Select the logical expression that is equivalent to:  \\( \\neg(\\mathbf{p} \\vee \\mathbf{q}) \\rightarrow(\\mathbf{p} \\vee \\mathbf{r}) \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\neg(p \\wedge q \\wedge \\neg r) \\)`,
+        `\\( p \\vee(q \\wedge r) \\)`,
+        `\\( p \\wedge(q \\vee r) \\)`,
+        `\\( \\mathbf{p} \\vee \\mathbf{q} \\vee \\mathbf{r} \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-5/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>From the expressions below, select ALL of the tautologies:</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( F \\rightarrow(p \\wedge q) \\)`,
+        `\\( (\\mathrm{F} \\rightarrow(\\mathrm{p} \\wedge q)) \\rightarrow(\\mathrm{p} \\wedge q) \\)`,
+        `\\( r \\leftrightarrow \\neg r \\)`,
+        `\\( (p \\oplus q) \\rightarrow(p \\vee q) \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-5/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Akash,Bharani,Chetan and Deepa are invited to a party. If Bharani and Chetanattend, then Deepa will attend too. If Bharani does not attend, then Akash will not attend. If Deepa does not attend, which of the following is true?</p> <p></p>`,
+      image: "",
+      options: [
+        `Chetan does not attend`,
+        `Akash does not attend`,
+        `either (A)or (B)`,
+        `none of the above`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-5/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Four siblings go shopping with their father. If Abhay gets shoes, then Asha does not get a necklace. If Arun gets a T-shirt, then Aditi gets bangles. If Abhay does not get shoes or Aditi gets bangles, the mother will be happy. Which of the following is TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `If the mother is happy, then Aditi got bangles.`,
+        `If Aditi got bangles, then Abhay got shoes.`,
+        `If the mother is not happy, then Asha did not get a necklace and Arun did not get a T-shirt.`,
+        `None of the above.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-5/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>An advertisement for a tennis magazine states, "If I'm not playing tennis, I'm watching tennis. And If I'm not watching tennis, I'm reading about tennis." We can assume that the speaker can do at most one of these activities at a time. What is the speaker doing?</p> <p></p>`,
+      image: "",
+      options: [
+        `Playing&nbsp;tennis`,
+        `Watching&nbsp;tennis`,
+        `Reading about&nbsp;tennis`,
+        `None of the above`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-5/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>If Vinay finishes his homework and the school closes early, then he can play in the park or eat an ice cream. He will end up at the dispensary with tummy ache if he eats ice cream and plays in the park. Which of the following can be correctly inferred?</p> <p></p>`,
+      image: "",
+      options: [
+        `If he doesn’t end up in the dispensary with tummy ache, then he did not finish his homework or the school closed late.`,
+        `If he doesn’t end up in the dispensary with tummy ache, he didn’t eat ice cream and he didn’t play in the park.`,
+        `Both A and B.`,
+        `None of the above.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-5/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>All inhabitants of the Old Forest are either Ents or Bents. Ents always tell the truth and Bents always lie. During a visit to the Old Forest, you encounter four inhabitants  \\( -\\mathrm{A}, \\mathrm{B}, \\mathrm{C} \\) and D . They make the following assertions.<br><br>A: Exactly one of us is a Bent.<br>B: Exactly two of us are Bents.<br>C: Exactly three of us are Bents.<br>D: Exactly four of us are Bents.<br>&nbsp; </p> <p>How many of them are Bents?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 1 \\)`,
+        `\\( 2 \\)`,
+        `\\( 3 \\)`,
+        `\\( 4 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-5/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
