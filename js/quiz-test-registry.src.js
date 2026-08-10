@@ -23183,3 +23183,237 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-7 | First Order Logic",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x, y), q(x, y) \\) denote the following open statements.<br> \$\$ . p(x, y): \\quad x^2 \\geq y \\quad q(x, y): \\quad x+2 &lt; y \$\$<br>If the universe for each of  \\( x, y \\) consists of all real numbers, Which of the following statements is/are false? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( p(-3,8) \\wedge q(1,3) \\)`,
+        `\\( p\\left(\\frac{1}{2}, \\frac{1}{3}\\right) \\vee \\neg q(-2,-3) \\)`,
+        `\\( p(2,2) \\rightarrow q(1,1) \\)`,
+        `\\( p(1,2) \\leftrightarrow \\neg q(1,2) \\)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\text{Z} \\) be the set of integers.<br>Start with the statement, "  \\( \\forall n \\in \\mathrm{Z}, \\) if  \\( n^2 \\) is even then  \\( n \\) is even." Which one of the following statements says the same thing? </p> <p></p>`,
+      image: "",
+      options: [
+        `Every integer has an even square and is even.`,
+        `If a given integer is even then that integer has even square.`,
+        `For all integers, some will have an even square.`,
+        `Every integer that has an even square will be even.`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-7/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Predicates:</p> <ul> <li> \\( \\mathrm{C}(\\mathrm{x}): \\mathrm{x} \\) is a CSE \\( 260 \\) student </li> <li> \\( \\mathrm{L}(\\mathrm{x}): \\mathrm{x} \\) loves music </li> </ul> <p>The universe of discourse for the variable  \\( \\mathrm{x} \\) is all students. </p> <p>Which translation of the following statements into logical expressions using predicates, quantifiers, and logical connectives is/are correct?</p> <p></p>`,
+      image: "",
+      options: [
+        `Every student loves music:&nbsp; \\( \\forall \\mathrm{xL}(\\mathrm{x}) \\)`,
+        `No student loves music:  \\( \\forall \\mathrm{x} \\neg \\mathrm{L}(\\mathrm{x}) \\)`,
+        `Some students love music:  \\( \\exists \\mathrm{xL}(\\mathrm{x}) \\)`,
+        `Every CSE  \\( 260 \\) student loves music:&nbsp; \\( \\forall \\mathrm{x}(\\mathrm{C}(\\mathrm{x}) \\rightarrow \\mathrm{L}(\\mathrm{x})) \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following formulas is a formalization of the sentence:</p> <p>"Some people are either religious or pious (but not both)"</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\exists \\mathrm{x}(\\mathrm{R}(\\mathrm{x}) \\oplus \\mathrm{P}(\\mathrm{x})) \\)`,
+        `\\( \\exists \\mathrm{x} \\neg(\\mathrm{R}(\\mathrm{x}) \\leftrightarrow \\mathrm{P}(\\mathrm{x})) \\)`,
+        `\\( \\neg \\forall \\mathrm{x}[\\mathrm{R}(\\mathrm{x}) \\leftrightarrow \\mathrm{P}(\\mathrm{x})] \\)`,
+        `\\( \\exists \\mathrm{x}((\\mathrm{R}(\\mathrm{x}) \\wedge \\neg \\text{P}(\\mathrm{x})) \\vee(\\neg \\text{R}(\\mathrm{x}) \\wedge \\mathrm{P}(\\mathrm{x}))) \\)`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following formulas is a formalization of the sentence:</p> <p>"Not all cars have carburetors."</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\neg \\forall \\mathrm{x}[\\operatorname{car}(\\mathrm{x}) \\rightarrow \\) carburetors  \\( (\\mathrm{x})] \\)`,
+        `\\( \\forall \\mathrm{x}[\\operatorname{car}(\\mathrm{x}) \\rightarrow \\) carburetors  \\( (\\mathrm{x})] \\)`,
+        `\\( \\exists \\mathrm{x}[\\operatorname{car}(\\mathrm{x}) \\wedge \\neg \\) carburetors  \\( (\\mathrm{x})] \\)`,
+        `\\( \\neg \\exists \\mathrm{x}[\\operatorname{car}(\\mathrm{x}) \\wedge \\neg \\) carburetors  \\( (\\mathrm{x})] \\)`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-7/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>For the following statements, the universe comprises all nonzero integers. Determine the truth value of each statement. Which of the following statements is/are false?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x \\exists y[x y=1] \\)`,
+        `\\( \\exists x \\exists y[(3 x-y=7) \\wedge(2 x+4 y=3)] \\)`,
+        `\\( \\forall y&nbsp;\\exists x[x y=1] \\)`,
+        `\\( \\exists x \\exists y[(2 x+y=5) \\wedge(x-3 y=-8)] \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-7/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Consider the quantified statement<br> \$\$  \\forall x \\exists y[x+y=17]  \$\$ <br>For which of the following universes, this statement is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `the integers`,
+        `the positive integers`,
+        `the integers for  \\( x, \\) the positive integers for  \\( y \\)`,
+        `the positive integers for  \\( x, \\) the integers for  \\( y \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>For which of the following pairs of statements, the proposed negation is the correct negation of the original statement?</p> <p></p>`,
+      image: "",
+      options: [
+        `Statement: For all real numbers  \\( x, y, \\) if  \\( x^2&gt;y^2, \\) then  \\( x&gt;y \\).<br>Proposed negation: There exist real numbers  \\( x, y \\) such that  \\( x^2&gt;y^2 \\) but  \\( x \\leq y \\).`,
+        `Statement: There exist real numbers  \\( x, y \\) such that  \\( x \\) and  \\( y \\) are rational but  \\( x+y \\) is irrational.<br>Proposed negation: For all real numbers  \\( x, y, \\) if  \\( x+y \\) is rational, then each of  \\( x, y \\) is rational.`,
+        `Statement: For all real numbers  \\( x, \\) if  \\( x \\) is not  \\( 0, \\) then  \\( x \\) has a multiplicative inverse.<br>Proposed negation: There exists a nonzero real number that does not have a multiplicative inverse.`,
+        `Statement: There exist odd integers whose product is odd.<br>Proposed negation: The product of any two odd integers is odd.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-7/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x), q(x) \\), and  \\( r(x) \\) be the following open statements.<br> \$\$  \\begin{array}{ll} p(x): &amp; x^2-7 x+10=0 \\\\ q(x): &amp; x^2-2 x-3=0 \\\\ r(x): &amp; x&lt;0 \\end{array}  \$\$ <br>For the universe of all integers, which of the following statements is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x[p(x) \\rightarrow&nbsp;\\neg&nbsp;r(x)] \\)`,
+        `\\( \\forall x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[p(x) \\rightarrow r(x)] \\)`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x), q(x) \\), and  \\( r(x) \\) be the following open statements.<br> \$\$  \\begin{array}{ll} p(x): &amp; x^2-7 x+10=0 \\\\ q(x): &amp; x^2-2 x-3=0 \\\\ r(x): &amp; x&lt;0\\\\ \\end{array}  \$\$ For the universe of all positive integers, which of the following statements is/are false? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x[p(x) \\rightarrow \\neg r(x)] \\)`,
+        `\\( \\forall x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[p(x) \\rightarrow r(x)] \\)`,
+      ],
+      answer: ["B"],
+      solution: `<img src="/images/quiz/wqt-dm-7/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( p(x), q(x) \\), and  \\( r(x) \\) be the following open statements.<br> \\(  \\begin{array}{ll} p(x): &amp; x^2-7 x+10=0 \\\\ q(x): &amp; x^2-2 x-3=0 \\\\ r(x): &amp; x&lt;0 \\end{array}  \\) <br>If the universe contains only the integers  \\( 2 \\) and  \\( 5, \\) which of the following statements is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x[p(x) \\rightarrow \\neg r(x)] \\)`,
+        `\\( \\forall x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[q(x) \\rightarrow r(x)] \\)`,
+        `\\( \\exists x[p(x) \\rightarrow r(x)] \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-7/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>What is the truth value of the wff  \\( (\\exists x)\\left(\\mathrm{A}(x) \\wedge(\\forall y)[\\mathrm{B}(x, y) \\rightarrow \\mathrm{C}(y)]\\right), \\) where  \\( \\mathrm{A}(x) \\) is "  \\( x&gt;0 \\) "  \\( ,\\mathrm{B}(x, y) \\) is "  \\( x&gt;y \\) " \\( ,\\mathrm{C}(y) \\) is "  \\( y \\leq 0 \\) ", and  \\( x \\) is the domain of positive integers and  \\( y \\) is the domain of all integers? </p> <p></p>`,
+      image: "",
+      options: [
+        `True`,
+        `False`,
+        `Not a proposition, because there is a free variable in the given wff.`,
+        `Not a proposition, because every variable is a bounded variable in the given wff.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-7/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( [\\forall \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\rightarrow \\mathrm{Q}(\\mathrm{x}))] \\rightarrow[(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\rightarrow(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\exists \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\rightarrow \\mathrm{Q}(\\mathrm{x}))] \\rightarrow[(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\rightarrow(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\forall \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\rightarrow \\mathrm{Q}(\\mathrm{x}))] \\leftarrow[(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\rightarrow(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\exists \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\rightarrow \\mathrm{Q}(\\mathrm{x}))] \\leftarrow[(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\rightarrow(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( [\\forall \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\Leftrightarrow \\mathrm{Q}(\\mathrm{x}))] \\rightarrow[(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\Leftrightarrow(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\exists \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\Leftrightarrow \\mathrm{Q}(\\mathrm{x}))] \\rightarrow[(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\Leftrightarrow(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\forall \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\Leftrightarrow \\mathrm{Q}(\\mathrm{x}))] \\leftarrow[(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\Leftrightarrow(\\forall \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+        `\\( [\\exists \\mathrm{x} \\in \\mathrm{D},(\\mathrm{P}(\\mathrm{x}) \\Leftrightarrow \\mathrm{Q}(\\mathrm{x}))] \\leftarrow[(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{P}(\\mathrm{x})) \\Leftrightarrow(\\exists \\mathrm{x} \\in \\mathrm{D}, \\mathrm{Q}(\\mathrm{x}))] \\)`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-dm-7/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{Q}(x,y) \\) be the statement </p> <p>" \\( x \\) has been a contestant on television show \\( y. \\)” </p> <p>The domain of discourse for  \\( x \\) is the set of all students at your school and for  \\( y \\) is the set of all quiz shows on television.<br>Which of the following are logically equivalent to: </p> <p>"No student at your school has ever been a contestant on a television quiz show."</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\forall x \\forall y \\cdot \\operatorname{NOT}(Q(x, y)) \\)`,
+        `\\( \\exists x \\exists y \\cdot \\operatorname{NOT}(Q(x, y)) \\)`,
+        `\\( \\operatorname{NOT}(\\forall x \\forall y \\cdot Q(x, y)) \\)`,
+        `\\( \\operatorname{NOT}(\\exists x \\exists y \\cdot Q(x, y)) \\)`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-7/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
