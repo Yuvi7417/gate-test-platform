@@ -23417,3 +23417,162 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-8 | Set Theory",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What is the Cardinality of the Power set of the set  \\( \\{0,1,2\\} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 8 \\)`,
+        `\\( 6 \\)`,
+        `\\( 7 \\)`,
+        `\\( 9 \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-8/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The symmetric difference of sets  \\( \\text{A}=\\{1,2, 3,4, 5, 6, 7, 8\\} \\) and  \\( \\text{B}= \\{1, 3, 5, 6, 7,8,9\\} \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{1, 3, 5, 6, 7,8\\} \\)`,
+        `\\( \\{2, 4, 9\\} \\)`,
+        `\\( \\{2, 4\\} \\)`,
+        `\\( \\{1, 2, 3, 4, 5, 6, 7, 8, 9\\} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-8/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( A=\\{x,y,z\\} \\) and  \\( B=\\{u,v,w,x\\},  \\) and the universe is  \\( \\{s,t,u,v,w,x,y,z\\} \\). Then  \\( (A \\cup \\overline{B}) \\cap (A \\cap B) \\) is equal to </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{u,v,w,x\\} \\)`,
+        `\\( \\{ x \\} \\)`,
+        `\\( \\{u,v,w,x,y,z\\} \\)`,
+        `\\( \\{u,v,w\\} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-8/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>The power set of the set  \\( \\{ \\Phi \\} \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{ \\Phi \\} \\)`,
+        `\\( \\{ \\Phi, \\{ \\Phi \\} \\} \\)`,
+        `\\( \\{ 0 \\} \\)`,
+        `\\( \\{ 0, \\Phi , \\{ \\Phi \\} \\} \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-8/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( A, B \\) be two sets. Let  \\( \\bar{A} \\) denote the complement of set  \\( A \\) (with respect to some fixed universe), and \\( ( A - B) \\) denote the set of elements in  \\( A \\) which are not in  \\( B \\). Set  \\( (A - (A - B)) \\) is equal to: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( B \\)`,
+        `\\( A\\cap \\bar{B} \\)`,
+        `\\( A - B \\)`,
+        `\\( A\\cap B \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-8/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( S \\) be an infinite set and  \\( S_1 \\dots , S_n \\) be sets such that  \\( S_1 \\cup S_2 \\cup \\dots \\cup S_n = S \\). Then </p> <p></p>`,
+      image: "",
+      options: [
+        `at least one of the sets  \\( S_i \\) is a finite set`,
+        `not more than one of the sets  \\( S_i \\) can be finite`,
+        `at least one of the sets  \\( S_i \\) is an infinite`,
+        `None of the above`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-8/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Power set of empty set has exactly _______ subsets.</p> <p></p>`,
+      image: "",
+      options: [
+        `One`,
+        `Two`,
+        `Zero`,
+        `Three`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-8/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `If  \\( S \\) is a set and  \\( |S| = 103 \\), then  \\( S \\) is not the power set of any set (that is, there is no set  \\( T \\) where  \\( S = \\mathcal{P}(T)) \\).`,
+        `If  \\( S \\) is a set and  \\( |S| = 103 \\), then  \\( S \\) is a power set of some set (that is, there is some set  \\( T \\) where  \\( S = \\mathcal{P}(T)) \\).`,
+        `If  \\( S \\) is a set and  \\( |S| = 8 \\), then  \\( S \\) is a power set of some set (that is, there is some set  \\( T \\) where  \\( S = \\mathcal{P}(T)) \\).`,
+        `If  \\( S \\) is a set and  \\( |S| = 8 \\), then  \\( S \\) is not the power set of any set (that is, there is no set  \\( T \\) where  \\( S = \\mathcal{P}(T)) \\).`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-dm-8/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is /are TRUE?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2 \\in A \\cup B \\) implies that if  \\( 2 \\notin A \\) then  \\( 2 \\in B \\).`,
+        `\\( \\{2,3\\} \\subseteq A \\) implies that  \\( 2 \\in A \\) and  \\( 3 \\in A \\).`,
+        `\\( A \\cap B \\supseteq\\{2,3\\} \\) implies that \\( \\{2,3\\} \\subseteq A \\) and  \\( \\{2,3\\} \\subseteq B \\).`,
+        `\\( A-B \\supseteq\\{3\\} \\) and  \\( \\{2\\} \\subseteq B \\) implies that  \\( \\{2,3\\} \\subseteq A \\cup B \\).`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-8/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which of the following statements is /are False?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{2,3,4\\} \\in A \\) and  \\( \\{2,3\\} \\in B \\) implies that  \\( \\{4\\} \\subseteq A-B \\).`,
+        `\\( A \\cap B \\supseteq\\{2,3,4\\} \\) implies that \\( \\{2,3,4\\} \\subseteq A \\) and  \\( \\{2,3,4\\} \\subseteq B \\).`,
+        `\\( A-B \\supseteq\\{3,4\\} \\) and  \\( \\{1,2\\} \\subseteq B \\) implies that  \\( \\{1,2,3,4\\} \\subseteq A \\cup B \\).`,
+        `\\( \\{2,3\\} \\subseteq A \\cup B \\) implies that if \\( \\{2,3\\} \\cap A=\\emptyset \\) then  \\( \\{2,3\\} \\subseteq B \\).`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-dm-8/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
