@@ -288,7 +288,7 @@ window.testSeries = [
     code: "CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
-    title: "Weekly CS GATE 2027 Test Series",
+    title: "Weekly Quiz CS GATE 2027",
     f: "gate",
     lang: "English",
     objective: "Objective",
