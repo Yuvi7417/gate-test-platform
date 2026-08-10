@@ -23844,3 +23844,227 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-11| Relations, Lattice & Poset",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is false?</p> <p></p>`,
+      image: "",
+      options: [
+        `Complements are unique in a complemented lattice.`,
+        `There are no totally ordered Boolean lattices with eight elements.`,
+        `There are no Boolean lattices with six elements.`,
+        `There is a Boolean lattice with eight elements.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-11/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following is true?</p> <p></p>`,
+      image: "",
+      options: [
+        `Any elements  \\( \\mathrm{x}, \\mathrm{y} \\) in a poset can be compared: either  \\( \\mathrm{x} \\leq \\mathrm{y} \\) or  \\( \\mathrm{y} \\leq \\mathrm{x} \\).`,
+        `A lattice with eight elements is a boolean lattice.`,
+        `If  \\( \\mathrm{M} \\) is the maximum of a set  \\( \\mathrm{S} \\), then  \\( \\mathrm{M} \\) is a maximal element.`,
+        `Every total order is an equivalence relation.`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-11/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let  \\( \\mathrm{X} \\) be a finite set with 5 elements. The number of total orders on  \\( \\mathrm{X} \\) is ? </p>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img src="/images/quiz/wqt-dm-11/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p><img alt="" src="/images/quiz/wqt-dm-11/q_img1.png" style="max-width: 75%;"><br>Find the number of complements for the element 'a'.</p> <p></p>`,
+      image: "",
+      options: [
+        `3`,
+        `1`,
+        `2`,
+        `5`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-11/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( L \\) be a lattice. Then for every  \\( a \\) and  \\( b \\) in  \\( L \\) which one of the following is correct? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( a\\lor b = a\\land \\:b \\) <br>&nbsp;&nbsp;&nbsp;&nbsp;`,
+        `\\( a\\lor(b\\lor c)=(a\\lor b)\\lor c \\) <br>&nbsp;&nbsp;&nbsp;&nbsp;`,
+        `\\( a\\lor(b\\land \\:c)=a \\)<br>&nbsp;`,
+        `\\( a\\lor(b\\lor c)=b \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-11/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose (  \\( A, \\leq \\) ) is a poset such that every nonempty subset of A has a least element. Which of the following is/are necessarily true for  \\( (\\mathrm{A}, \\leq) \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\leq \\) is a total ordering on  \\( A. \\)`,
+        `\\( (A, \\leq) \\) is a lattice.`,
+        `There exists a greatest element in (  \\( \\mathrm{A}, \\leq \\) ).`,
+        `\\( (\\mathrm{A}, \\leq) \\) is a distributive lattice.`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-11/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Suppose  \\( (A, \\leq) \\) is a finite nonempty poset. Which of the following is/are true  \\( ? \\) </p> <p></p>`,
+      image: "",
+      options: [
+        `A has a minimal element.`,
+        `A has a maximal element.`,
+        `A has a minimum element.`,
+        `A has a maximum element.`,
+      ],
+      answer: ["A", "B"],
+      solution: `<img src="/images/quiz/wqt-dm-11/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( (\\mathrm{A}, \\leq) \\) be a lattice. Which of the following properties necessarily hold true for any  \\( \\mathrm{x}, \\mathrm{y}, \\mathrm{z} \\in \\mathrm{A} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x \\wedge y \\leq\\{x, y\\} \\leq x \\vee y \\).`,
+        `\\( x \\leq y \\) if and only if  \\( x \\wedge y=x \\).`,
+        `\\( x \\leq y \\) if and only if  \\( x \\vee y=y \\).`,
+        `\\( x \\wedge(y \\vee z)=(x \\wedge y) \\vee(x \\wedge z) \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-11/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Let  \\( (\\mathrm{A}, \\leq) \\) be a lattice. Which of the following properties necessarily hold true for any  \\( \\mathrm{x}, \\mathrm{y}, \\mathrm{z} \\in \\mathrm{A} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( x \\wedge y=y \\wedge x \\)`,
+        `\\( (x \\vee y) \\vee z=x \\vee(y \\vee z) \\)`,
+        `\\( x \\wedge(x \\vee y)=x \\)`,
+        `\\( x \\wedge(y \\vee z)=(x \\wedge y) \\vee(x \\wedge z) \\)`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-11/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>In a Boolean lattice, if  \\( b \\wedge \\bar{c}=0 \\), then </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\mathrm{b} \\leq \\mathrm{c} \\).`,
+        `\\( c \\leq b \\).`,
+        `b,c are incomparable.`,
+        `\\( \\mathrm{b}=\\mathrm{c} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-11/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>In a lattice (  \\( \\mathrm{A}, \\leq \\) ), an element "  \\( \\mathrm{u} \\) " is called the dominator for join operation iff  \\( \\mathrm{x} \\vee \\mathrm{u}=\\mathrm{u} \\), for all \\( \\mathrm{x} \\in \\mathrm{A} \\).<br>In a lattice \\( (\\mathrm{A}, \\leq) \\), an element "  \\( \\mathrm{g} \\) " is called the dominator for meet operation iff  \\( x \\wedge g=g \\), for all  \\( x \\in A \\).<br>A lattice is said to satisfy Domination Law iff there exists a dominator for join operation &amp; meet operation.<br>Which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `A lattice satisfies domination law if and only if it is a bounded lattice.`,
+        `A lattice satisfies domination law if and only if it is a complemented lattice.`,
+        `In any lattice, the dominator for join operation is the greatest element.`,
+        `In any lattice, the dominator for meet operation is the greatest element.`,
+      ],
+      answer: ["A", "C"],
+      solution: `<img src="/images/quiz/wqt-dm-11/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>In a lattice  \\( (A, \\leq) \\), an element "  \\( u \\) " is called the identity for join operation iff  \\( x \\vee u=x \\), for all  \\( x \\in A \\).<br>In a lattice  \\( (A, \\leq) \\), an element "  \\( g \\) " is called the identity for meet operation iff  \\( \\mathrm{x} \\wedge \\mathrm{g}=\\mathrm{x} \\), for all  \\( \\mathrm{x} \\in \\mathrm{A} \\).<br>A lattice is said to satisfy Identity Property iff there exists an identity element for join operation &amp; meet operation.<br>Which of the following is/are true? </p> <p></p>`,
+      image: "",
+      options: [
+        `A lattice satisfies Identity Property if and only if it is a bounded lattice.`,
+        `A lattice satisfies Identity Property if and only if it is a complemented lattice.`,
+        `In any lattice, the identity element for join operation is the greatest element.`,
+        `In any lattice, the identity element for meet operation is the greatest element.`,
+      ],
+      answer: ["A", "D"],
+      solution: `<img src="/images/quiz/wqt-dm-11/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>The following hasse diagram represents a POSET (A,R), where  \\( R \\) is a partial order relation on set A.<br>The number of ordered pairs in the partial ordering  \\( \\mathrm{R} \\) with the following Hasse diagram is ?? (i.e. Find the cardinality of R) </p> <p><br><img alt="" src="/images/quiz/wqt-dm-11/q_img2.png" style="max-width: 75%;"></p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "22",
+      solution: `<img src="/images/quiz/wqt-dm-11/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{T} \\) be a relation defined on  \\( \\mathrm{Z} \\) by  \\( \\mathrm{xTy} \\) if and only if  \\( |\\mathrm{x}|&lt;|\\mathrm{y}| \\) or  \\( \\mathrm{x}=\\mathrm{y} \\). Which of the following is true? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( T \\) is Not a partial order relation.`,
+        `\\( \\mathrm{T} \\) is a partial order relation, but not total order relation.`,
+        `\\( \\mathrm{T} \\) is a total order relation.`,
+        `\\( \\mathrm{T} \\) is an equivalence relation.`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-11/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which one of the following relations is a total order?</p> <p></p>`,
+      image: "",
+      options: [
+        `Let  \\( A=\\{a, b, c, d\\} \\) and let  \\( R \\) be the relation<br> \\(  R=\\{(a, a),(b, b)(c, c),(d, d),(c, a),(a, d),(c, d),(b, c),(b, d),(b, a)\\}  \\)`,
+        `\\( A=\\{2,3,4\\} \\) ordered by the relation  \\( R \\) on  \\( A \\) defined as follows:<br> \\( \\forall a, b \\in A, a R b \\longleftrightarrow(5 \\bmod a)=(6 \\bmod b) \\)`,
+        `The set  \\( A=\\{12,24,48,3,9\\} \\) ordered by the divides relation.`,
+        `None.`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-11/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
