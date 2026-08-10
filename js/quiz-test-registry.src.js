@@ -24809,3 +24809,172 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-16| Combinatorics",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways are there to pick a five-person basketball team from  \\( 12 \\) possible players? </p>`,
+      image: "",
+      options: [],
+      answer: "792",
+      solution: `<img src="/images/quiz/wqt-dm-16/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>A byte is a bit string of length  \\( 8 \\). How many bytes contain at least six  \\( 1's \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "37",
+      solution: `<img src="/images/quiz/wqt-dm-16/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many different bit strings can be formed using six  \\( 1's \\) and eight  \\( 0's \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "3003",
+      solution: `<img src="/images/quiz/wqt-dm-16/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many strings of length  \\( 7 \\) from the alphabet  \\( 0,1,2 \\) have exactly three  \\( 0's \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "560",
+      solution: `<img src="/images/quiz/wqt-dm-16/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many binary strings of length  \\( 8 \\) have the same number of  \\( 0's \\) as  \\( 1's \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "70",
+      solution: `<img src="/images/quiz/wqt-dm-16/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many arrangements of the letters in  \\( MISSISSIPPI \\) have no consecutive  \\( S's \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "7350",
+      solution: `<img src="/images/quiz/wqt-dm-16/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>A gym coach must select  \\( 11 \\) seniors to play on a football team. If he can make his selection in  \\( 12,376 \\) ways, how many seniors are eligible to play? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 12 \\)`,
+        `\\( 15 \\)`,
+        `\\( 17 \\)`,
+        `\\( 18 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-16/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In how many ways can  \\( 12 \\) different books be distributed among four children so that each child gets three books? </p>`,
+      image: "",
+      options: [],
+      answer: "369600",
+      solution: `<img src="/images/quiz/wqt-dm-16/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>In how many ways can  \\( 12 \\) different books be distributed among four children so that the two oldest children get four books each and the two youngest get two books each? </p>`,
+      image: "",
+      options: [],
+      answer: "207900",
+      solution: `<img src="/images/quiz/wqt-dm-16/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many ways are there to pick a five-person basketball team from  \\( 12 \\) possible players such that the selections include the weakest and the strongest players? </p>`,
+      image: "",
+      options: [],
+      answer: "120",
+      solution: `<img src="/images/quiz/wqt-dm-16/10.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>What is the coefficient of  \\( x^{98} \\) in the expansion of  \\( (x+1 / x)^{100} \\) ? </p>`,
+      image: "",
+      options: [],
+      answer: "100",
+      solution: `<img src="/images/quiz/wqt-dm-16/11.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p></p> <p>How many different strings can be made from the letters in <strong>ORONO</strong>, using some or all of the letters?</p> <p></p>`,
+      image: "",
+      options: [],
+      answer: "63",
+      solution: `<img src="/images/quiz/wqt-dm-16/12.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>How many different rearrangements are there of the letters in the word  \\( TATARS \\) if the two  \\( A's \\) are never adjacent? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 24 \\)`,
+        `\\( 120 \\)`,
+        `\\( 144 \\)`,
+        `\\( 180 \\)`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-16/13.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>If the co-efficient of  \\( x^{7} \\) and  \\( x^{8} \\) in the expansion of  \\( \\left(2+\\frac{x}{3}\\right)^{n} \\) are equal, then the value of  \\( n \\) is equal to _________ . </p>`,
+      image: "",
+      options: [],
+      answer: "55",
+      solution: `<img src="/images/quiz/wqt-dm-16/14.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The ratio of the coefficient of the middle term in the expansion of  \\( (1+x)^{20} \\) and the sum of the coefficients of two middle terms in expansion of  \\( (1+x)^{19} \\) is ________. </p>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<img src="/images/quiz/wqt-dm-16/15.png" style="max-width: 75%;">`
+    },
+  ]
+});
