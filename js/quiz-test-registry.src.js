@@ -23576,3 +23576,157 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-9 | Set Theory",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>If  \\( A \\) and  \\( B \\) are two sets and  \\( A \\cup B = A \\cap B \\) then </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( A=\\phi \\)`,
+        `\\( B=\\phi \\)`,
+        `\\( A\\neq B \\)`,
+        `\\( A=B \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-9/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>The cardinality of the power set of  \\( A \\cup B \\), where  \\( A=\\{2,3,5,7\\} \\) and  \\( B=\\{2 \\),  \\( 5,8,9\\} \\), is? </p>`,
+      image: "",
+      options: [],
+      answer: "64",
+      solution: `<img src="/images/quiz/wqt-dm-9/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>What is the Cartesian product of  \\( A=\\{1,2\\} \\) and  \\( B=\\{a, b\\} \\) ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( \\{(1, a),(1, b),(2, a),(b, b)\\} \\)`,
+        `\\( \\{(1,1),(2,2),(a, a),(b, b)\\} \\)`,
+        `\\( \\{(1, a),(2, a),(1, b),(2, b)\\} \\)`,
+        `\\( \\{(1,1),(a, a),(2, a),(1, b)\\} \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-9/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathcal{P}(A) \\) denote the power set of  \\( A \\). If  \\( \\mathcal{P}(A) \\subseteq B \\) then </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2^{|A|} \\leq|B| \\)`,
+        `\\( 2^{|A|} \\geq|B| \\)`,
+        `\\( 2|A|&lt;|B| \\)`,
+        `\\( 2^{|A|} \\geq 2^{|B|} \\)`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-9/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( \\mathrm{A} \\) be a finite set of size  \\( \\mathrm{n} \\). The number of elements in the power set of  \\( A \\times A \\) is: </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 2^{n^2} \\)`,
+        `\\( \\left(2^n\\right)^2 \\)`,
+        `\\( \\left(2^2\\right)^n \\)`,
+        `None of the above`,
+      ],
+      answer: "A",
+      solution: `<img src="/images/quiz/wqt-dm-9/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<p></p> <p>Which one of the following is/are true?</p> <p></p>`,
+      image: "",
+      options: [
+        `\\( R \\cap S=(R \\cup S)-[(R-S) \\cup(S-R)] \\)`,
+        `\\( R \\cup S=(R \\cap S)-[(R-S) \\cup(S-R)] \\)`,
+        `\\( R \\cap S=(R \\cup S)-[(R-S) \\cap(S-R)] \\)`,
+        `\\( R \\cap S=(R \\cup S) \\cup(R-S) \\)`,
+      ],
+      answer: ["A"],
+      solution: `<img src="/images/quiz/wqt-dm-9/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( A \\) and  \\( B \\) be sets in a finite universal set  \\( U \\). Given the following :  \\( |A-B|,|A \\oplus B|,|A|+|B| \\), and  \\( |A \\cup B| \\) Which of the following is in order of increasing size ? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( |A-B|&lt;|A \\oplus B|&lt;|A|+|B|&lt;|A \\cup B| \\)`,
+        `\\( |A \\oplus B|&lt;|A-B|&lt;|A \\cup B|&lt;|A|+|B| \\)`,
+        `\\( |A \\oplus B|&lt;|A|+|B|&lt;|A-B|&lt;|A \\cup B| \\)`,
+        `\\( |A-B|&lt;|A \\oplus B|&lt;|A \\cup B|&lt;|A|+|B| \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-9/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Let  \\( A=\\{0,1\\} \\times\\{0,1\\} \\) and  \\( B=\\{a, b, c\\} \\). Suppose  \\( A \\) is listed in lexicographic order based on \\( 0&lt;1 \\) and  \\( B \\) is in alphabetic order. If  \\( A \\times B \\times A \\) is listed in lexicographic order, then the next element after  \\( ((1,0), c,(1,1)) \\) is </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( ((1,0), a,(0,0)) \\)`,
+        `\\( ((1,1), c,(0,0)) \\)`,
+        `\\( ((1,1), a,(0,0)) \\)`,
+        `\\( ((1,1), a,(1,1)) \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-9/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following statements is  \\( \\textbf{TRUE} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `For all sets  \\( A, B \\), and  \\( C, A-(B-C)=(A-B)-C \\).`,
+        `For all sets  \\( A, B \\), and  \\( C,(A-B) \\cap(C-B)=(A \\cap C)-B \\).`,
+        `For all sets  \\( A, B \\), and  \\( C,(A-B) \\cap(C-B)=A-(B \\cup C) \\).`,
+        `For all sets  \\( A, B \\), and  \\( C \\), if  \\( A \\cap C=B \\cap C \\) then  \\( A=B \\).`,
+      ],
+      answer: "B",
+      solution: `<img src="/images/quiz/wqt-dm-9/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p></p> <p>Which of the following statements is  \\( \\textbf{FALSE} \\)? </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( C-(B \\cup A)=(C-B)-A \\)`,
+        `\\( A-(C \\cup B)=(A-B)-C \\)`,
+        `\\( B-(A \\cup C)=(B-C)-A \\)`,
+        `\\( A-(B \\cup C)=(B-C)-A \\)`,
+      ],
+      answer: "D",
+      solution: `<img src="/images/quiz/wqt-dm-9/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
