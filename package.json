@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:tests": "javascript-obfuscator js/test-registry.src.js --output js/test-registry.js && javascript-obfuscator js/full-test-registry.src.js --output js/full-test-registry.js && javascript-obfuscator js/ME-test-registry.src.js --output js/ME-test-registry.js && javascript-obfuscator js/quiz-test-registry.src.js --output js/quiz-test-registry.js"
+    "build:tests": "javascript-obfuscator js/test-registry.src.js --output js/test-registry.js && javascript-obfuscator js/full-test-registry.src.js --output js/full-test-registry.js && javascript-obfuscator js/ME-test-registry.src.js --output js/ME-test-registry.js && javascript-obfuscator js/quiz-test-registry.src.js --output js/quiz-test-registry.js && javascript-obfuscator js/ese-ce-test-registry.src.js --output js/ese-ce-test-registry.js"
   },
   "keywords": [],
   "author": "",
