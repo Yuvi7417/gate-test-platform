@@ -278,8 +278,8 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹235 + GST",
-    basePrice: 235,
+    price: "₹245 + GST",
+    basePrice: 245,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -814,9 +814,7 @@ function renderTS(filter, query) {
             <div class="ts-code">${t.code}</div>
             <div class="ts-online">Online</div>
             <div class="ts-banner-text">
-              <div class="ts-banner-eyebrow">PYQs · 15 years</div>
               <div class="ts-banner-main">Exam Practice<br>Test Series</div>
-              <div class="ts-banner-sub">2000 – 2026</div>
               <div class="apex-easy-brand">✨ ${t.brandLabel || "APEX EASY"}</div>
             </div>
           </div>
@@ -905,9 +903,7 @@ function openDetail(id, pushHistory = true) {
       <div class="detail-banner-code">${t.code}</div>
       <div class="detail-banner-online">Online</div>
       <div class="detail-banner-text">
-        <div class="detail-banner-eyebrow">PYQs · 15 years</div>
         <div class="detail-banner-main">Exam Practice<br>Test Series</div>
-        <div class="detail-banner-sub">2000 – 2026</div>
         <div class="apex-easy-brand">✨ ${t.brandLabel || "APEX EASY"}</div>
       </div>`;
 
