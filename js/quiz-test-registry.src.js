@@ -25142,3 +25142,117 @@ registerTest({
     },
   ]
 });
+
+
+registerTest({
+  series: "weekly-cs-gate-2027",
+  name: "WQT - Discrete Mathematics-18| Combinatorics",
+  date: "Oct 01, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Suppose a class has  \\( 89 \\) students. How many students at least must have a birthday in the same month? </p>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<img src="/images/quiz/wqt-dm-18/1.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Let  \\( \\mathrm{T}_n \\) be the number of ways to arrange cars in a row with  \\( n \\) parking spaces if we can use sedans, SUVs, and trucks to park such that a truck requires two spaces, whereas a sedan or SUV requires just one space each, and no two trucks are consecutively parked. Assume that all trucks are identical, all sedans are identical, and all SUVs are identical. What is the value of  \\( \\mathrm{T}_7 \\)? (Use the following data:  \\( \\mathrm{T}_1 = 2 \\);  \\( \\mathrm{T}_2 = 5 \\);  \\( \\mathrm{T}_3 = 12 \\), i.e. initial conditions are already given, hence no need to compute them). </p>`,
+      image: "",
+      options: [],
+      answer: "368",
+      solution: `<img src="/images/quiz/wqt-dm-18/2.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Two parents go with their three kids to the theater, and they have tickets for five consecutive seats. How many sitting arrangements would there be if the only rule is that the two parents want to sit together?</p>`,
+      image: "",
+      options: [],
+      answer: "48",
+      solution: `<img src="/images/quiz/wqt-dm-18/3.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Chris has promised to bring back bagels for three friends he is studying with, as well as one for himself, one bagel for one person. The bagel shop sells  \\( 8 \\) varieties of bagel. In how many ways can he choose  \\( 4 \\) bagels to give to Jan, Tom, Olive, and themself? </p>`,
+      image: "",
+      options: [],
+      answer: "4096",
+      solution: `<img src="/images/quiz/wqt-dm-18/4.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<p>For how many  \\( n \\in \\{1,2,\\ldots,500\\} \\) is  \\( n \\) a multiple of one or more of  \\( 5,6, \\) or  \\( 7 \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "215",
+      solution: `<img src="/images/quiz/wqt-dm-18/5.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many  \\( 5 \\)-digit numbers contain at least one  \\( 1 \\) and at least one  \\( 3 \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "13696",
+      solution: `<img src="/images/quiz/wqt-dm-18/6.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>How many distinct permutations of the letters  \\( \\text{CHECKMATE} \\) contain the string  \\( \\text{TEAM} \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "360",
+      solution: `<img src="/images/quiz/wqt-dm-18/7.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0.67,
+      type: "MCQ",
+      text: `<p>Teams  \\( A \\) and  \\( B \\) play in a basketball tournament. Teams  \\( A \\) and  \\( B \\) play each other repeatedly until one of them wins the tournament. The first team to win two games in a row or a total of three games wins the tournament. Every match results in win or lose only, i.e., no ties.<br>What is the number of ways the tournament can occur? (Hint: Make a tree of the tournament.)<br> </p> <p></p>`,
+      image: "",
+      options: [
+        `\\( 8 \\)`,
+        `\\( 9 \\)`,
+        `\\( 10 \\)`,
+        `\\( 11 \\)`,
+      ],
+      answer: "C",
+      solution: `<img src="/images/quiz/wqt-dm-18/8.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Find the number of  \\( 5 \\)-lists of the form  \\( (x_1, x_2, x_3, x_4, x_5) \\), where each  \\( x_i \\) is a nonnegative integer and<br> \$\$ x_1 + x_2 + x_3 + x_4 + 3x_5 = 12 \$\$ </p>`,
+      image: "",
+      options: [],
+      answer: "780",
+      solution: `<img src="/images/quiz/wqt-dm-18/9.png" style="max-width: 75%;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<p>Consider the generating function  \\( \\left(\\dfrac{1}{1-x}\\right)^4 = (1 + x + x^2 + x^3 + \\cdots)^4 \\) .<br>What is the coefficient of  \\( x^4 \\)? </p>`,
+      image: "",
+      options: [],
+      answer: "35",
+      solution: `<img src="/images/quiz/wqt-dm-18/10.png" style="max-width: 75%;">`
+    },
+  ]
+});
