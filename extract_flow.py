@@ -32,10 +32,10 @@ def clean_html(html_str):
     return html_str.strip()
 
 def main():
-    with open('test1.html', 'r', encoding='utf-8') as f:
+    with open('test4.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
     
-    img_dir = "images/quiz/ese-ce-fst-gs-6"
+    img_dir = "js/questions/twt-solid-mechanics-2"
     os.makedirs(img_dir, exist_ok=True)
     
     questions = []
@@ -126,8 +126,8 @@ def main():
     js_content = """
 
 registerTest({
-  series: "ce-ese-2026",
-  name: "FST - General Studies and Engineering Aptitude-6",
+  series: "ce-gate-pyq",
+  name: "TWT - Solid Mechanics Part-2",
   date: "Oct 01, 2026",
   questions: [
 """
@@ -156,7 +156,7 @@ registerTest({
 });
 """
 
-    with open('js/ese-ce-test-registry.src.js', 'a', encoding='utf-8') as f:
+    with open('js/ce-test-registry.src.js', 'a', encoding='utf-8') as f:
         f.write(js_content)
         
 if __name__ == '__main__':
