@@ -32,10 +32,10 @@ def clean_html(html_str):
     return html_str.strip()
 
 def main():
-    with open('test4.html', 'r', encoding='utf-8') as f:
+    with open('test1.html', 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
     
-    img_dir = "js/questions/twt-solid-mechanics-2"
+    img_dir = "js/questions/fst-mock-level-test-1"
     os.makedirs(img_dir, exist_ok=True)
     
     questions = []
@@ -127,7 +127,7 @@ def main():
 
 registerTest({
   series: "ce-gate-pyq",
-  name: "TWT - Solid Mechanics Part-2",
+  name: "FST - Mock Level Test-1",
   date: "Oct 01, 2026",
   questions: [
 """
