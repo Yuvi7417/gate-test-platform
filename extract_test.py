@@ -1,6 +1,7 @@
 import re
 import os
 import base64
+import sys
 from bs4 import BeautifulSoup
 
 def process_images(soup_elem, img_dir, prefix):
@@ -21,7 +22,7 @@ def process_images(soup_elem, img_dir, prefix):
             with open(filepath, "wb") as f:
                 f.write(base64.b64decode(encoded))
             
-            img['src'] = f"/images/quiz/ese-ce-swt-sm/{filename}"
+            img['src'] = f"/{img_dir}/{filename}"
             img['style'] = "max-width: 100%;"
             img_count += 1
 
@@ -32,10 +33,18 @@ def clean_html(html_str):
     return html_str.strip()
 
 def main():
-    with open('test3.html', 'r', encoding='utf-8') as f:
+    if len(sys.argv) < 4:
+        print("Usage: python extract_test.py <html_file> <test_name> <img_dir>")
+        print("Example: python extract_test.py test5.html \"SWT - New Subject\" \"js/questions/swt-new-subject\"")
+        return
+
+    html_file = sys.argv[1]
+    test_name = sys.argv[2]
+    img_dir = sys.argv[3]
+
+    with open(html_file, 'r', encoding='utf-8') as f:
         soup = BeautifulSoup(f, 'html.parser')
     
-    img_dir = "images/quiz/ese-ce-swt-sm"
     os.makedirs(img_dir, exist_ok=True)
     
     questions = []
@@ -90,13 +99,10 @@ def main():
                 
         # Handle MSQ answer parsing
         if qtype == "MSQ":
-            # If answer is like "A,B,C" or "A B C" or "AB", split it
-            # Remove any brackets or quotes if present
             ans_clean = re.sub(r'[^A-D]', '', answer.upper())
             ans_list = [char for char in ans_clean]
-            answer = repr(ans_list).replace("'", '"') # e.g. ["A", "B"]
+            answer = repr(ans_list).replace("'", '"')
         else:
-            # If it's MCQ or NAT, just keep it as a string
             answer = f'"{answer}"'
                 
         solution = ""
@@ -119,19 +125,13 @@ def main():
         }
         questions.append(q_obj)
         
-    # Sort questions: 1 marks first, then 2 marks
     questions.sort(key=lambda q: q['marks'])
         
-    # Generate JS
-    js_content = """// =========================================================================
-// ESE-CE TEST REGISTRY
-// =========================================================================
-// Add quizzes/tests for ESE-CE below:
+    js_content = f"""
 
-
-registerTest({
-  series: "ce-ese-2026",
-  name: "SWT - Solid Mechanics",
+registerTest({{
+  series: "ce-gate-pyq",
+  name: "{test_name}",
   date: "Oct 01, 2026",
   questions: [
 """
@@ -160,8 +160,10 @@ registerTest({
 });
 """
 
-    with open('js/ese-ce-test-registry.src.js', 'w', encoding='utf-8') as f:
+    with open('js/ce-test-registry.src.js', 'a', encoding='utf-8') as f:
         f.write(js_content)
+    
+    print(f"Successfully processed {html_file} and appended to registry.")
         
 if __name__ == '__main__':
     main()
