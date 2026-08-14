@@ -88,6 +88,7 @@ const courses = [
     stream: "CE",
     streamFull: "Civil Engg.",
     mode: "Regular",
+    oldPrice: "₹199",
     price: "₹1,28,000",
     cut: "₹1,45,000",
     icon: icons.civil,
@@ -99,6 +100,7 @@ const courses = [
     stream: "ME",
     streamFull: "Mechanical",
     mode: "Flexi",
+    oldPrice: "₹199",
     price: "₹1,12,000",
     cut: "₹1,25,000",
     icon: icons.mech,
@@ -110,6 +112,7 @@ const courses = [
     stream: "EE",
     streamFull: "Electrical",
     mode: "Weekend",
+    oldPrice: "₹199",
     price: "₹98,500",
     cut: "₹1,10,000",
     icon: icons.elec,
@@ -121,6 +124,7 @@ const courses = [
     stream: "EC",
     streamFull: "Electronics",
     mode: "Regular",
+    oldPrice: "₹199",
     price: "₹1,05,000",
     cut: "₹1,18,000",
     icon: icons.ece,
@@ -132,6 +136,7 @@ const courses = [
     stream: "CS",
     streamFull: "Computer Sc.",
     mode: "Regular",
+    oldPrice: "₹199",
     price: "₹74,000",
     cut: "₹85,000",
     icon: icons.cs,
@@ -143,6 +148,7 @@ const courses = [
     stream: "CE",
     streamFull: "Civil Engg.",
     mode: "Crash",
+    oldPrice: "₹199",
     price: "₹56,000",
     cut: "₹64,000",
     icon: icons.civil,
@@ -188,6 +194,7 @@ window.testSeries = [
       // ["PT - 3", "Dec 22, 2025"],
       // ["PT - 2", "Nov 25, 2025"],
     ],
+    // oldPrice: "FREE",
     price: "FREE",
     brandLabel: "APEX EASY & classes"
     // comingSoon: true
@@ -233,8 +240,9 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹118 + GST",
-    basePrice: 118,
+    oldPrice: "₹142",
+    price: "₹88 + GST",
+    basePrice: 88,
     brandLabel: "APEX EASY"
   },
   {
@@ -278,8 +286,9 @@ window.testSeries = [
       // ["FST - 3", "Nov 22, 2025"],
       // ["FST - 2", "Nov 21, 2025"],
     ],
-    price: "₹245 + GST",
-    basePrice: 245,
+    oldPrice: "₹289",
+    price: "₹159 + GST",
+    basePrice: 159,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -314,8 +323,9 @@ window.testSeries = [
     ],
     schedule: [
     ],
-    price: "₹98 + GST",
-    basePrice: 98,
+    oldPrice: "₹115",
+    price: "₹55 + GST",
+    basePrice: 55,
     brandLabel: "Weekly Classes"
     // comingSoon: true
   },
@@ -350,6 +360,7 @@ window.testSeries = [
     ],
     schedule: [
     ],
+    oldPrice: "₹199",
     price: "₹108 + GST",
     basePrice: 108,
     brandLabel: "APEX WALLAH"
@@ -386,6 +397,7 @@ window.testSeries = [
       },
     ],
     schedule: [],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -422,6 +434,7 @@ window.testSeries = [
       },
     ],
     schedule: [],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -457,6 +470,7 @@ window.testSeries = [
       },
     ],
     schedule: [],
+    oldPrice: "₹199",
     price: "₹108 + GST",
     basePrice: 108,
     brandLabel: "APEX EASY"
@@ -492,6 +506,7 @@ window.testSeries = [
       },
     ],
     schedule: [],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -528,6 +543,7 @@ window.testSeries = [
       },
     ],
     schedule: [],
+    oldPrice: "₹199",
     price: "₹108 + GST",
     basePrice: 108,
     brandLabel: "APEX EASY"
@@ -571,6 +587,7 @@ window.testSeries = [
       // ["FST - 2", "Nov 22, 2025"],
       // ["FST - 1", "Nov 21, 2025"],
     ],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -613,6 +630,7 @@ window.testSeries = [
       // ["FST - 2", "Nov 22, 2025"],
       // ["FST - 1", "Nov 21, 2025"],
     ],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -654,6 +672,7 @@ window.testSeries = [
       // ["FST - 2", "Nov 23, 2025"],
       // ["FST - 1", "Nov 22, 2025"],
     ],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -695,6 +714,7 @@ window.testSeries = [
       // ["FST - 2", "Nov 23, 2025"],
       // ["FST - 1", "Nov 22, 2025"],
     ],
+    oldPrice: "₹199",
     price: "₹108 + GST",
     basePrice: 108,
     brandLabel: "APEX EASY"
@@ -736,6 +756,7 @@ window.testSeries = [
       // ["Mock - 4", "Feb 10, 2026"],
       // ["Mock - 3", "Jan 12, 2026"],
     ],
+    oldPrice: "₹199",
     price: "₹74 + GST",
     basePrice: 74,
     brandLabel: "APEX EASY"
@@ -777,6 +798,7 @@ window.testSeries = [
       // ["Mock - 4", "Feb 10, 2026"],
       // ["Mock - 3", "Jan 12, 2026"],
     ],
+    oldPrice: "₹199",
     price: "₹108 + GST",
     basePrice: 108,
     brandLabel: "APEX EASY"
@@ -892,6 +914,15 @@ function openDetail(id, pushHistory = true) {
   document.getElementById("dEnd").textContent = formatDate(t.endDate);
   document.getElementById("dLang").textContent = t.lang;
   document.getElementById("dPrice").textContent = t.price;
+  const dOldPrice = document.getElementById("dOldPrice");
+  if (dOldPrice) {
+    if (t.oldPrice) {
+      dOldPrice.textContent = t.oldPrice;
+      dOldPrice.style.display = "inline-block";
+    } else {
+      dOldPrice.style.display = "none";
+    }
+  }
   document.getElementById("dBatchLabel").textContent = t.batches[0].name;
 
   document.getElementById("dTags").innerHTML =
