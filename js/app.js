@@ -330,7 +330,7 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "pw-cs-gate-2026",
+    id: "pw-cs-gate-2027",
     code: "CSE",
     examTag: "GATE 2026",
     subjectTag: "Computer Science",
@@ -594,7 +594,7 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "ce-ese-2025",
+    id: "ce-ese-2026",
     code: "CE",
     examTag: "ESE 2025",
     subjectTag: "Civil Engineering",
