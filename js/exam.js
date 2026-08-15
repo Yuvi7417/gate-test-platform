@@ -1068,6 +1068,7 @@ function renderPlayerQuestion(i) {
     document.getElementById("playerSolutionMarks").style.display = "block";
     document.getElementById("playerMarksWrap").style.display = "none";
     document.getElementById("playerSolutionMeta").style.display = "flex";
+    document.getElementById("playerReportBtn").style.display = "inline-flex";
 
     // Determine status
     let statusText = "Unattempted";
@@ -1112,6 +1113,7 @@ function renderPlayerQuestion(i) {
     document.getElementById("playerSolutionMarks").style.display = "none";
     document.getElementById("playerMarksWrap").style.display = "flex";
     document.getElementById("playerSolutionMeta").style.display = "none";
+    document.getElementById("playerReportBtn").style.display = "none";
   }
 
   const imgSlot = _id("playerQImageSlot");
@@ -1395,6 +1397,122 @@ function playerNatMove(dir) {
     updatePlayerQBtn(playerCurrent);
     renderPlayerQuestion(target);
     updatePlayerCounts();
+  }
+}
+
+// ==========================================
+// REPORT / DISCUSSION MODAL LOGIC
+// ==========================================
+
+function openReportModal() {
+  const modal = document.getElementById("reportModal");
+  modal.style.display = "flex";
+  fetchReports();
+}
+
+function closeReportModal() {
+  document.getElementById("reportModal").style.display = "none";
+  document.getElementById("reportInput").value = "";
+}
+
+async function fetchReports() {
+  const list = document.getElementById("reportList");
+  list.innerHTML = "<div style='text-align:center; color:#64748b;'>Loading reports...</div>";
+  try {
+    const res = await fetch(`/api/reports/${currentTestId}/${playerCurrent}`);
+    const data = await res.json();
+    if (data.success) {
+      if (data.reports.length === 0) {
+        list.innerHTML = "<div style='text-align:center; color:#64748b;'>No reports/comments for this question yet. Be the first!</div>";
+        return;
+      }
+      list.innerHTML = "";
+      const currentUserEmail = localStorage.getItem("userEmail") || "";
+      const isAdmin = currentUserEmail === "yuvrajsingh36020@gmail.com";
+
+      data.reports.forEach(r => {
+        const item = document.createElement("div");
+        item.style.padding = "12px";
+        item.style.background = r.isResolved ? "#f0fdf4" : "#f8fafc";
+        item.style.border = "1px solid " + (r.isResolved ? "#bbf7d0" : "#e2e8f0");
+        item.style.borderRadius = "6px";
+        
+        let headerHtml = `<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <strong style="color:#334155; font-size:14px;">${r.userName || 'Student'}</strong>
+          <span style="font-size:12px; color:#94a3b8;">${new Date(r.createdAt).toLocaleString()}</span>
+        </div>`;
+        
+        let bodyHtml = `<div style="font-size:14px; color:#475569; white-space:pre-wrap;">${r.comment}</div>`;
+        
+        let actionHtml = "";
+        if (r.isResolved) {
+          actionHtml = `<div style="margin-top:10px; font-size:12px; color:#166534; font-weight:600; display:flex; align-items:center; gap:4px;">
+            <svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:2;"><path d="M20 6L9 17l-5-5"/></svg> Resolved
+          </div>`;
+        } else if (isAdmin) {
+          actionHtml = `<div style="margin-top:10px; text-align:right;">
+            <button onclick="resolveReport('${r._id}')" style="padding:4px 10px; font-size:12px; border:1px solid #16a34a; background:#f0fdf4; color:#16a34a; border-radius:4px; cursor:pointer;">Mark as Resolve</button>
+          </div>`;
+        }
+
+        item.innerHTML = headerHtml + bodyHtml + actionHtml;
+        list.appendChild(item);
+      });
+    }
+  } catch (err) {
+    list.innerHTML = "<div style='color:red;'>Failed to load reports.</div>";
+  }
+}
+
+async function submitReport() {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    alert("Please log in to submit a report.");
+    return;
+  }
+  const comment = document.getElementById("reportInput").value.trim();
+  if (!comment) return alert("Please enter a comment");
+  
+  const btn = event.target;
+  btn.disabled = true;
+  btn.textContent = "Submitting...";
+
+  try {
+    const res = await fetch("/api/reports", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
+      body: JSON.stringify({ testId: currentTestId, qIndex: playerCurrent, comment })
+    });
+    const data = await res.json();
+    if (data.success) {
+      document.getElementById("reportInput").value = "";
+      fetchReports();
+    } else {
+      alert(data.message || "Error submitting report");
+    }
+  } catch (err) {
+    alert("Network error");
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Submit";
+  }
+}
+
+async function resolveReport(id) {
+  const token = localStorage.getItem("token");
+  try {
+    const res = await fetch(`/api/reports/${id}/resolve`, {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + token }
+    });
+    const data = await res.json();
+    if (data.success) {
+      fetchReports();
+    } else {
+      alert(data.message || "Failed to resolve");
+    }
+  } catch (err) {
+    alert("Network error");
   }
 }
 
