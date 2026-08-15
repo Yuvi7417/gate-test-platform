@@ -1419,7 +1419,7 @@ async function fetchReports() {
   const list = document.getElementById("reportList");
   list.innerHTML = "<div style='text-align:center; color:#64748b;'>Loading reports...</div>";
   try {
-    const res = await fetch(`/api/reports/${currentTestId}/${playerCurrent}`);
+    const res = await fetch(`/api/reports/${backendTestId}/${playerCurrent}`);
     const data = await res.json();
     if (data.success) {
       if (data.reports.length === 0) {
@@ -1481,7 +1481,7 @@ async function submitReport() {
     const res = await fetch("/api/reports", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
-      body: JSON.stringify({ testId: currentTestId, qIndex: playerCurrent, comment })
+      body: JSON.stringify({ testId: backendTestId, qIndex: playerCurrent, comment })
     });
     const data = await res.json();
     if (data.success) {
