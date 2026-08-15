@@ -1092,9 +1092,10 @@ async function viewBookmark(testId, qIndex) {
     }
     
     const solContainer = document.getElementById("bookmarkModalSolution");
-    if (q.sol) {
+    const solutionText = q.sol || q.solution;
+    if (solutionText) {
       solContainer.style.display = "block";
-      document.getElementById("bookmarkModalSolutionContent").innerHTML = q.sol;
+      document.getElementById("bookmarkModalSolutionContent").innerHTML = solutionText;
     } else {
       solContainer.style.display = "none";
     }
