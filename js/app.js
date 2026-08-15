@@ -815,7 +815,12 @@ function renderTS(filter, query) {
   query = (query || "").toLowerCase();
   tsGrid.innerHTML = "";
   testSeries
-    .filter((t) => filter === "all" || t.f === filter)
+    .filter((t) => {
+      if (filter === "all") return true;
+      if (filter === "ce-ese") return t.code === "CE" && t.f === "ese";
+      if (filter === "ce") return t.code === "CE" && t.f !== "ese";
+      return t.code && t.code.toLowerCase() === filter;
+    })
     .filter(
       (t) =>
         t.title.toLowerCase().includes(query) ||
