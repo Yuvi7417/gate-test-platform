@@ -1276,6 +1276,71 @@ function renderPlayerQuestion(i) {
       document.getElementById("playerSolutionBox")
     ]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
   }
+  updateBookmarkBtnState();
+}
+
+function updateBookmarkBtnState() {
+  const btn = document.getElementById("playerBookmarkBtn");
+  const svg = document.getElementById("playerBookmarkSvg");
+  const txt = document.getElementById("playerBookmarkText");
+  if (!btn) return;
+  
+  let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
+  const q = playerQuestions[playerCurrent];
+  // Create a unique key for the question. We'll use the test ID and question index or text.
+  // Assuming currentTestId is available in exam.js, or we use playerTopTitle.
+  const testId = window.currentTestId || document.getElementById("playerTopTitle").textContent.trim();
+  const qKey = testId + "_Q" + playerCurrent;
+  
+  if (bookmarks[qKey]) {
+    btn.style.color = "#eab308";
+    btn.style.borderColor = "#eab308";
+    btn.style.background = "#fefce8";
+    svg.style.fill = "#eab308";
+    txt.textContent = "Bookmarked";
+  } else {
+    btn.style.color = "#475569";
+    btn.style.borderColor = "#cbd5e1";
+    btn.style.background = "#fff";
+    svg.style.fill = "none";
+    txt.textContent = "Bookmark";
+  }
+}
+
+function togglePlayerBookmark() {
+  let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
+  const q = playerQuestions[playerCurrent];
+  const testId = window.currentTestId || document.getElementById("playerTopTitle").textContent.trim();
+  const qKey = testId + "_Q" + playerCurrent;
+  
+  if (bookmarks[qKey]) {
+    delete bookmarks[qKey];
+  } else {
+    // Determine subject based on test name or just general
+    let subject = "General";
+    if (testId.includes("CE")) subject = "Civil Engineering";
+    else if (testId.includes("CS") || testId.includes("CSE")) subject = "Computer Science";
+    else if (testId.includes("EE")) subject = "Electrical Engineering";
+    else if (testId.includes("ME")) subject = "Mechanical Engineering";
+    else if (testId.includes("EC") || testId.includes("ECE")) subject = "Electronics & Communication";
+    else if (testId.includes("DA")) subject = "Data Science (DA)";
+    
+    // Save plain text version of question for preview (strip html tags)
+    let plainText = document.createElement("div");
+    plainText.innerHTML = q.text;
+    let previewText = plainText.textContent || plainText.innerText || "";
+    if (previewText.length > 150) previewText = previewText.substring(0, 150) + "...";
+    
+    bookmarks[qKey] = {
+      testId: testId,
+      qIndex: playerCurrent + 1,
+      text: previewText,
+      subject: subject,
+      date: new Date().toLocaleDateString()
+    };
+  }
+  localStorage.setItem("apex_bookmarks", JSON.stringify(bookmarks));
+  updateBookmarkBtnState();
 }
 
 function playerSelectOption(oi) {
