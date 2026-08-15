@@ -1,0 +1,92 @@
+name: Test Dockerfile
+
+on:
+  push:
+    branches: [ "main", "dev" ]
+  pull_request:
+    branches: [ "main", "dev" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
+    - name: Build Docker image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        load: true
+        tags: gate-test-platform:test
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+    
+    - name: Verify image was built
+      run: docker image ls | grep gate-test-platform
+    
+    - name: Run container and verify startup
+      run: |
+        # Start container in background
+        CONTAINER_ID=$(docker run -d -p 3000:3000 gate-test-platform:test)
+        echo "Container ID: $CONTAINER_ID"
+        
+        # Wait for container to start
+        sleep 10
+        
+        # Check if container is still running
+        if docker ps | grep $CONTAINER_ID; then
+          echo "✓ Container is running"
+        else
+          echo "✗ Container failed to start"
+          docker logs $CONTAINER_ID
+          exit 1
+        fi
+        
+        # Test health endpoint
+        for i in {1..5}; do
+          if curl -f http://localhost:3000 2>/dev/null; then
+            echo "✓ Server responded successfully"
+            docker stop $CONTAINER_ID
+            exit 0
+          fi
+          echo "Attempt $i/5: Waiting for server..."
+          sleep 3
+        done
+        
+        echo "✗ Server failed to respond"
+        docker logs $CONTAINER_ID
+        docker stop $CONTAINER_ID
+        exit 1
+    
+    - name: Verify non-root user
+      run: |
+        CONTAINER_ID=$(docker run -d gate-test-platform:test sleep 300)
+        sleep 2
+        
+        # Check that container runs as non-root
+        USER=$(docker exec $CONTAINER_ID id -un)
+        if [ "$USER" = "nodejs" ]; then
+          echo "✓ Container running as nodejs (non-root)"
+        else
+          echo "✗ Container not running as nodejs user, got: $USER"
+          docker stop $CONTAINER_ID
+          exit 1
+        fi
+        
+        docker stop $CONTAINER_ID
+    
+    - name: Verify image size
+      run: |
+        SIZE=$(docker image inspect gate-test-platform:test --format='{{.Size}}' | awk '{print $1/1024/1024 " MB"}')
+        echo "Image size: $SIZE"
+    
+    - name: Cleanup
+      if: always()
+      run: |
+        docker ps -aq | xargs -r docker stop
+        docker ps -aq | xargs -r docker rm
