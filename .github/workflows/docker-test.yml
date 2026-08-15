@@ -31,54 +31,63 @@ jobs:
     
     - name: Run container and verify startup
       run: |
-        # Start container in background
-        CONTAINER_ID=$(docker run -d -p 3000:3000 gate-test-platform:test)
+        # Start container in background with name for easier tracking
+        CONTAINER_ID=$(docker run -d -p 3000:3000 --name test-server gate-test-platform:test)
         echo "Container ID: $CONTAINER_ID"
+        sleep 2
         
-        # Wait for container to start
-        sleep 10
-        
-        # Check if container is still running
-        if docker ps | grep $CONTAINER_ID; then
+        # Check if container is running with more explicit check
+        if docker inspect -f '{{.State.Running}}' test-server | grep -q true; then
           echo "✓ Container is running"
         else
           echo "✗ Container failed to start"
-          docker logs $CONTAINER_ID
+          docker logs test-server
+          docker stop test-server 2>/dev/null || true
+          docker rm test-server 2>/dev/null || true
           exit 1
         fi
         
-        # Test health endpoint
-        for i in {1..5}; do
-          if curl -f http://localhost:3000 2>/dev/null; then
-            echo "✓ Server responded successfully"
-            docker stop $CONTAINER_ID
+        # Wait for server to be ready
+        sleep 8
+        
+        # Test health endpoint with retries
+        RETRY_COUNT=0
+        MAX_RETRIES=10
+        while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+          if curl -s -f -m 5 http://localhost:3000 > /dev/null 2>&1; then
+            echo "✓ Server responded successfully on attempt $((RETRY_COUNT+1))"
+            docker stop test-server
+            docker rm test-server
             exit 0
           fi
-          echo "Attempt $i/5: Waiting for server..."
-          sleep 3
+          RETRY_COUNT=$((RETRY_COUNT+1))
+          echo "Attempt $RETRY_COUNT/$MAX_RETRIES: Waiting for server..."
+          sleep 2
         done
         
-        echo "✗ Server failed to respond"
-        docker logs $CONTAINER_ID
-        docker stop $CONTAINER_ID
+        echo "✗ Server failed to respond after $MAX_RETRIES attempts"
+        docker logs test-server
+        docker stop test-server 2>/dev/null || true
+        docker rm test-server 2>/dev/null || true
         exit 1
     
     - name: Verify non-root user
       run: |
-        CONTAINER_ID=$(docker run -d gate-test-platform:test sleep 300)
+        CONTAINER_ID=$(docker run -d --name test-user gate-test-platform:test sleep 300)
         sleep 2
         
         # Check that container runs as non-root
-        USER=$(docker exec $CONTAINER_ID id -un)
+        USER=$(docker exec test-user id -un)
         if [ "$USER" = "nodejs" ]; then
           echo "✓ Container running as nodejs (non-root)"
+          docker stop test-user
+          docker rm test-user
         else
           echo "✗ Container not running as nodejs user, got: $USER"
-          docker stop $CONTAINER_ID
+          docker stop test-user 2>/dev/null || true
+          docker rm test-user 2>/dev/null || true
           exit 1
         fi
-        
-        docker stop $CONTAINER_ID
     
     - name: Verify image size
       run: |
