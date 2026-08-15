@@ -241,8 +241,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹1416",
-    price: "₹88 + GST",
-    basePrice: 88,
+    price: "₹108 + GST",
+    basePrice: 108,
     brandLabel: "APEX EASY"
   },
   {
@@ -287,8 +287,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹2600",
-    price: "₹159 + GST",
-    basePrice: 159,
+    price: "₹259 + GST",
+    basePrice: 259,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -324,8 +324,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹1180",
-    price: "₹75 + GST",
-    basePrice: 75,
+    price: "₹105 + GST",
+    basePrice: 105,
     brandLabel: "Weekly Classes"
     // comingSoon: true
   },
@@ -361,8 +361,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹500",
-    price: "₹88 + GST",
-    basePrice: 88,
+    price: "₹98 + GST",
+    basePrice: 98,
     brandLabel: "APEX WALLAH"
     // comingSoon: true
   },
@@ -398,8 +398,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹500",
-    price: "₹84 + GST",
-    basePrice: 84,
+    price: "₹94 + GST",
+    basePrice: 94,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
@@ -981,31 +981,31 @@ function openDetail(id, pushHistory = true) {
 function renderBookmarks() {
   const container = document.getElementById("bookmarkContainer");
   const filterSelect = document.getElementById("bookmarkSubjectFilter");
-  
+
   if (!container || !filterSelect) return;
-  
+
   const filter = filterSelect.value;
   container.innerHTML = "";
-  
+
   let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
   let items = Object.values(bookmarks);
-  
+
   if (filter !== "All") {
     items = items.filter(b => b.subject === filter);
   }
-  
+
   if (items.length === 0) {
     container.innerHTML = `<div style="padding: 20px; text-align: center; color: #64748b;">No saved questions found.</div>`;
     return;
   }
-  
+
   items.reverse().forEach(b => {
     const el = document.createElement("div");
     el.style.border = "1px solid #e2e8f0";
     el.style.borderRadius = "6px";
     el.style.padding = "15px";
     el.style.background = "#f8fafc";
-    
+
     el.innerHTML = `
       <div style="font-size: 12px; color: #64748b; margin-bottom: 8px; text-transform: uppercase; font-weight: bold; display: flex; justify-content: space-between;">
         <span>${b.subject} • Bookmarked on ${b.date || "Unknown Date"}</span>
@@ -1038,28 +1038,28 @@ async function viewBookmark(testId, qIndex) {
   try {
     const testKey = window.findMatchingTest ? window.findMatchingTest(testId) : null;
     let questions = [];
-    
+
     if (testKey && window.testBackendIdMap) {
       const backendTestId = window.testBackendIdMap[testKey];
       if (window.testMap && window.testMap[backendTestId]) {
         questions = window.testMap[backendTestId];
       }
     }
-    
+
     if (!questions || questions.length === 0) {
       alert("Error: Test data not found in local memory. You may need to load the test series first.");
       return;
     }
-    
+
     const q = questions[qIndex - 1];
     if (!q) {
       alert("Error: Question not found.");
       return;
     }
-    
+
     document.getElementById("bookmarkModalMeta").textContent = testId + " - Question No. " + qIndex;
     document.getElementById("bookmarkModalQText").innerHTML = q.text;
-    
+
     const optContainer = document.getElementById("bookmarkModalOptions");
     optContainer.innerHTML = "";
     if (q.options && q.options.length > 0) {
@@ -1073,7 +1073,7 @@ async function viewBookmark(testId, qIndex) {
         optContainer.appendChild(d);
       });
     }
-    
+
     const correctContainer = document.getElementById("bookmarkModalCorrect");
     if (q.correct !== undefined) {
       correctContainer.style.display = "block";
@@ -1090,7 +1090,7 @@ async function viewBookmark(testId, qIndex) {
     } else {
       correctContainer.style.display = "none";
     }
-    
+
     const solContainer = document.getElementById("bookmarkModalSolution");
     const solutionText = q.sol || q.solution;
     if (solutionText) {
@@ -1099,9 +1099,9 @@ async function viewBookmark(testId, qIndex) {
     } else {
       solContainer.style.display = "none";
     }
-    
+
     document.getElementById("bookmarkDetailModal").style.display = "flex";
-    
+
     if (window.MathJax && window.MathJax.typesetPromise) {
       window.MathJax.typesetPromise([
         document.getElementById("bookmarkModalQText"),
