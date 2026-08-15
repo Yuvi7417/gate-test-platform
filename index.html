@@ -795,6 +795,32 @@
   <script src="js/quiz-test-registry.js?v=3"></script>
   <script src="js/ese-ce-test-registry.js?v=4"></script>
   <script src="js/ce-test-registry.js?v=4"></script>
+  <!-- BOOKMARK DETAIL MODAL -->
+  <div class="modal-overlay" id="bookmarkDetailModal" style="display: none; align-items: center; justify-content: center;">
+    <div class="modal-box" style="max-width: 800px; width: 95%; max-height: 90vh; overflow-y: auto; padding: 30px;">
+      <button class="modal-close" onclick="document.getElementById('bookmarkDetailModal').style.display='none'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+      
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 20px; color: #1e293b; margin: 0 0 8px 0; font-family: 'Poppins', sans-serif;">Question Details</h2>
+        <div id="bookmarkModalMeta" style="font-size: 13px; color: #64748b; font-weight: 500;"></div>
+      </div>
+      
+      <div id="bookmarkModalQText" style="font-size: 16px; color: #334155; line-height: 1.6; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0;"></div>
+      
+      <div id="bookmarkModalOptions" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;"></div>
+      
+      <div id="bookmarkModalCorrect" style="background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; padding: 16px; border-radius: 6px; margin-bottom: 20px; display: none;"></div>
+      
+      <div id="bookmarkModalSolution" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 20px; color: #334155; display: none;">
+        <h4 style="margin: 0 0 12px 0; color: #0f172a; font-size: 15px;">Detailed Solution</h4>
+        <div id="bookmarkModalSolutionContent"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- LOGIN MODAL -->
   <div class="modal-overlay" id="loginModal">

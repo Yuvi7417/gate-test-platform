@@ -1012,9 +1012,14 @@ function renderBookmarks() {
         <span style="color: #3b82f6;">${b.testId} (Q${b.qIndex})</span>
       </div>
       <div style="font-size: 15px; color: #334155; line-height: 1.5; margin-bottom: 12px;">${b.text}</div>
-      <button onclick="removeBookmark('${b.testId}_Q${b.qIndex - 1}')" style="background: none; border: none; color: #ef4444; font-size: 13px; font-weight: 500; cursor: pointer; padding: 0;">
-        Remove Bookmark
-      </button>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button onclick="viewBookmark('${b.testId}', ${b.qIndex})" style="background: #3b82f6; border: none; color: #fff; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 12px; border-radius: 4px;">
+          View Full Question
+        </button>
+        <button onclick="removeBookmark('${b.testId}_Q${b.qIndex - 1}')" style="background: none; border: none; color: #ef4444; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 0;">
+          Remove Bookmark
+        </button>
+      </div>
     `;
     container.appendChild(el);
   });
@@ -1026,5 +1031,85 @@ function removeBookmark(key) {
     delete bookmarks[key];
     localStorage.setItem("apex_bookmarks", JSON.stringify(bookmarks));
     renderBookmarks();
+  }
+}
+
+async function viewBookmark(testId, qIndex) {
+  try {
+    const testKey = window.findMatchingTest ? window.findMatchingTest(testId) : null;
+    let questions = [];
+    
+    if (testKey && window.testBackendIdMap) {
+      const backendTestId = window.testBackendIdMap[testKey];
+      if (window.testMap && window.testMap[backendTestId]) {
+        questions = window.testMap[backendTestId];
+      }
+    }
+    
+    if (!questions || questions.length === 0) {
+      alert("Error: Test data not found in local memory. You may need to load the test series first.");
+      return;
+    }
+    
+    const q = questions[qIndex - 1];
+    if (!q) {
+      alert("Error: Question not found.");
+      return;
+    }
+    
+    document.getElementById("bookmarkModalMeta").textContent = testId + " - Question No. " + qIndex;
+    document.getElementById("bookmarkModalQText").innerHTML = q.text;
+    
+    const optContainer = document.getElementById("bookmarkModalOptions");
+    optContainer.innerHTML = "";
+    if (q.options && q.options.length > 0) {
+      q.options.forEach((opt, idx) => {
+        const d = document.createElement("div");
+        d.style.padding = "10px 14px";
+        d.style.border = "1px solid #e2e8f0";
+        d.style.borderRadius = "4px";
+        d.style.background = "#fff";
+        d.innerHTML = `<strong>${String.fromCharCode(65 + idx)}.</strong> ${opt}`;
+        optContainer.appendChild(d);
+      });
+    }
+    
+    const correctContainer = document.getElementById("bookmarkModalCorrect");
+    if (q.correct !== undefined) {
+      correctContainer.style.display = "block";
+      if (q.type === "MSQ") {
+        const corrArr = Array.isArray(q.correct) ? q.correct : [q.correct];
+        const letters = corrArr.map(c => String.fromCharCode(65 + parseInt(c))).join(", ");
+        correctContainer.innerHTML = `<strong>Correct Answer:</strong> ${letters}`;
+      } else if (q.type === "NAT") {
+        const rng = Array.isArray(q.correct) ? q.correct : [q.correct];
+        correctContainer.innerHTML = `<strong>Correct Answer:</strong> ${rng.join(" to ")}`;
+      } else {
+        correctContainer.innerHTML = `<strong>Correct Answer:</strong> ${String.fromCharCode(65 + parseInt(q.correct))}`;
+      }
+    } else {
+      correctContainer.style.display = "none";
+    }
+    
+    const solContainer = document.getElementById("bookmarkModalSolution");
+    if (q.sol) {
+      solContainer.style.display = "block";
+      document.getElementById("bookmarkModalSolutionContent").innerHTML = q.sol;
+    } else {
+      solContainer.style.display = "none";
+    }
+    
+    document.getElementById("bookmarkDetailModal").style.display = "flex";
+    
+    if (window.MathJax && window.MathJax.typesetPromise) {
+      window.MathJax.typesetPromise([
+        document.getElementById("bookmarkModalQText"),
+        document.getElementById("bookmarkModalOptions"),
+        document.getElementById("bookmarkModalSolutionContent")
+      ]).catch(err => console.error("MathJax typeset failed:", err));
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Error loading question details.");
   }
 }
