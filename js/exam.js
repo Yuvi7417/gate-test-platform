@@ -1427,7 +1427,7 @@ async function fetchReports() {
         return;
       }
       list.innerHTML = "";
-      const currentUserEmail = localStorage.getItem("userEmail") || "";
+      const currentUserEmail = (window.currentUser && window.currentUser.email) ? window.currentUser.email : "";
       const isAdmin = currentUserEmail === "yuvrajsingh36020@gmail.com";
 
       data.reports.forEach(r => {
@@ -1465,7 +1465,7 @@ async function fetchReports() {
 }
 
 async function submitReport() {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("apexcore_token");
   if (!token) {
     alert("Please log in to submit a report.");
     return;
@@ -1499,7 +1499,7 @@ async function submitReport() {
 }
 
 async function resolveReport(id) {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("apexcore_token");
   try {
     const res = await fetch(`/api/reports/${id}/resolve`, {
       method: "POST",
