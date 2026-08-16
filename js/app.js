@@ -988,7 +988,7 @@ function renderBookmarks() {
   container.innerHTML = "";
 
   let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
-  let items = Object.values(bookmarks);
+  let items = Object.entries(bookmarks).map(([key, val]) => ({ key, ...val }));
 
   if (filter !== "All") {
     items = items.filter(b => b.subject === filter);
@@ -1008,15 +1008,15 @@ function renderBookmarks() {
 
     el.innerHTML = `
       <div style="font-size: 12px; color: #64748b; margin-bottom: 8px; text-transform: uppercase; font-weight: bold; display: flex; justify-content: space-between;">
-        <span>${b.subject} • Bookmarked on ${b.date || "Unknown Date"}</span>
-        <span style="color: #3b82f6;">${b.testId} (Q${b.qIndex})</span>
+        <span>${b.subject} &bull; Bookmarked on ${b.date || "Unknown Date"}</span>
+        <span style="color: #3b82f6;">${b.testId} (Q${(b.qIndex !== undefined ? Number(b.qIndex) + 1 : "Unknown")})</span>
       </div>
       <div style="font-size: 15px; color: #334155; line-height: 1.5; margin-bottom: 12px;">${b.text}</div>
       <div style="display: flex; gap: 12px; align-items: center;">
-        <button onclick="viewBookmark('${b.testId}', ${b.qIndex})" style="background: #3b82f6; border: none; color: #fff; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 12px; border-radius: 4px;">
+        <button onclick="viewBookmark('${b.testId}', ${(b.qIndex !== undefined ? Number(b.qIndex) + 1 : 0)})" style="background: #3b82f6; border: none; color: #fff; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 12px; border-radius: 4px;">
           View Full Question
         </button>
-        <button onclick="removeBookmark('${b.testId}_Q${b.qIndex - 1}')" style="background: none; border: none; color: #ef4444; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 0;">
+        <button onclick="removeBookmark('${b.key}')" style="background: none; border: none; color: #ef4444; font-size: 13px; font-weight: 500; cursor: pointer; padding: 6px 0;">
           Remove Bookmark
         </button>
       </div>
