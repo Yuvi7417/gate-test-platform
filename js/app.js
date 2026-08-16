@@ -1041,7 +1041,7 @@ function removeBookmark(key) {
     renderBookmarks();
 
     const token = localStorage.getItem('apexcore_token');
-    if (token && testId) {
+    if (token) {
       fetch('/api/sync/bookmark', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
