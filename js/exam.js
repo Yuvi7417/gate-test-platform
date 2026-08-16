@@ -77,6 +77,7 @@ async function fetchFreshUserData() {
       currentUser = { name: data.user.name, email: data.user.email, _id: data.user._id };
       saveSession();
       syncLearnNav();
+      fetchCloudBookmarks();
       
       const learnTarget = document.getElementById("view-learn");
       if (learnTarget && learnTarget.classList.contains("active")) {
@@ -894,7 +895,43 @@ let playerTimerSecs = playerDurationMins * 60;
 let playerTimerInterval = null;
 let solutionMode = false;
 
-function startPlayer(testName, fetchedQuestions) {
+let syncStateTimeout = null;
+function syncTestState() {
+  if (solutionMode) return;
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) return;
+  const testId = document.getElementById("playerTopTitle").textContent.trim();
+  
+  clearTimeout(syncStateTimeout);
+  syncStateTimeout = setTimeout(() => {
+    fetch('/api/sync/teststate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+      body: JSON.stringify({
+        testId,
+        playerState,
+        playerCurrent,
+        playerTimerSecs
+      })
+    }).catch(e => console.error("Test state sync error:", e));
+  }, 2000);
+}
+
+let cloudBookmarks = {};
+async function fetchCloudBookmarks() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) return;
+  try {
+    const res = await fetch('/api/sync/bookmarks', { headers: { 'Authorization': `Bearer ${token}` } });
+    const data = await res.json();
+    if (data.success) {
+      cloudBookmarks = data.bookmarks;
+      localStorage.setItem("apex_bookmarks", JSON.stringify(cloudBookmarks));
+    }
+  } catch(err) { console.error(err); }
+}
+
+async function startPlayer(testName, fetchedQuestions) {
   solutionMode = false;
   playerQuestions = fetchedQuestions;
   if (!playerQuestions || playerQuestions.length === 0) {
@@ -933,6 +970,25 @@ function startPlayer(testName, fetchedQuestions) {
   }
   
   playerTimerSecs = playerDurationMins * 60;
+
+  // Cloud Sync Resume Check
+  const token = localStorage.getItem('apexcore_token');
+  if (token && !solutionMode) {
+    try {
+      const res = await fetch(`/api/sync/teststate/${encodeURIComponent(testName)}`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      const data = await res.json();
+      if (data.success && data.testState) {
+        playerState = data.testState.playerState;
+        playerCurrent = data.testState.playerCurrent || 0;
+        playerTimerSecs = data.testState.playerTimerSecs || playerTimerSecs;
+        console.log("Resumed test from cloud state");
+      }
+    } catch(err) {
+      console.error("Failed to fetch cloud test state", err);
+    }
+  }
 
   renderPlayer();
 
@@ -997,6 +1053,9 @@ function renderPlayer() {
         s = playerTimerSecs % 60;
       document.getElementById("playerTimer").textContent =
         String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+      
+      // Auto-sync state every 30 seconds
+      if (playerTimerSecs % 30 === 0) syncTestState();
     }, 1000);
   }
 }
@@ -1281,70 +1340,60 @@ function renderPlayerQuestion(i) {
 
 function updateBookmarkBtnState() {
   const btn = document.getElementById("playerBookmarkBtn");
-  const svg = document.getElementById("playerBookmarkSvg");
   const txt = document.getElementById("playerBookmarkText");
   if (!btn) return;
   
-  let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
-  const q = playerQuestions[playerCurrent];
-  // Create a unique key for the question. We'll use the test ID and question index or text.
-  // Assuming currentTestId is available in exam.js, or we use playerTopTitle.
-  const testId = window.currentTestId || document.getElementById("playerTopTitle").textContent.trim();
+  const testId = document.getElementById("playerTopTitle").textContent.trim();
   const qKey = testId + "_Q" + playerCurrent;
   
-  if (bookmarks[qKey]) {
-    btn.style.color = "#eab308";
-    btn.style.borderColor = "#eab308";
-    btn.style.background = "#fefce8";
-    svg.style.fill = "#eab308";
-    txt.textContent = "Bookmarked";
-  } else {
-    btn.style.color = "#475569";
-    btn.style.borderColor = "#cbd5e1";
+  if (cloudBookmarks[qKey]) {
+    btn.classList.add("active");
+    btn.style.borderColor = "transparent";
     btn.style.background = "#fff";
-    svg.style.fill = "none";
+    btn.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
+    txt.textContent = "Bookmarked";
+    txt.style.color = "#0056b3";
+  } else {
+    btn.classList.remove("active");
+    btn.style.borderColor = "#cbd5e1";
+    btn.style.background = "transparent";
+    btn.style.boxShadow = "none";
     txt.textContent = "Bookmark";
+    txt.style.color = "#64748b";
   }
 }
 
 function togglePlayerBookmark() {
-  let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
-  const q = playerQuestions[playerCurrent];
-  const testId = window.currentTestId || document.getElementById("playerTopTitle").textContent.trim();
+  const testId = document.getElementById("playerTopTitle").textContent.trim();
   const qKey = testId + "_Q" + playerCurrent;
   
-  if (bookmarks[qKey]) {
-    delete bookmarks[qKey];
-  } else {
-    // Determine subject based on test name or just general
-    let subject = "General";
-    if (testId.includes("CE")) subject = "Civil Engineering";
-    else if (testId.includes("CS") || testId.includes("CSE")) subject = "Computer Science";
-    else if (testId.includes("EE")) subject = "Electrical Engineering";
-    else if (testId.includes("ME")) subject = "Mechanical Engineering";
-    else if (testId.includes("EC") || testId.includes("ECE")) subject = "Electronics & Communication";
-    else if (testId.includes("DA")) subject = "Data Science (DA)";
-    
-    // Save plain text version of question for preview (strip html tags)
-    let plainText = document.createElement("div");
-    plainText.innerHTML = q.text;
-    let previewText = plainText.textContent || plainText.innerText || "";
-    if (previewText.length > 150) previewText = previewText.substring(0, 150) + "...";
-    
-    bookmarks[qKey] = {
+  const isBookmarked = !cloudBookmarks[qKey];
+  
+  if (isBookmarked) {
+    cloudBookmarks[qKey] = {
       testId: testId,
-      qIndex: playerCurrent + 1,
-      text: previewText,
-      subject: subject,
+      qIndex: playerCurrent,
       date: new Date().toLocaleDateString()
     };
+  } else {
+    delete cloudBookmarks[qKey];
   }
-  localStorage.setItem("apex_bookmarks", JSON.stringify(bookmarks));
+  localStorage.setItem("apex_bookmarks", JSON.stringify(cloudBookmarks));
   updateBookmarkBtnState();
+
+  const token = localStorage.getItem('apexcore_token');
+  if (token) {
+    fetch('/api/sync/bookmark', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+      body: JSON.stringify({ testId, qKey, qIndex: playerCurrent, isBookmarked })
+    }).catch(e => console.error("Bookmark sync error:", e));
+  }
 }
 
 function playerSelectOption(oi) {
   playerState[playerCurrent].answer = oi;
+  syncTestState();
 }
 
 function playerToggleMsqOption(oi) {
@@ -1356,12 +1405,14 @@ function playerToggleMsqOption(oi) {
   } else {
     st.answer.splice(idx, 1);
   }
+  syncTestState();
 }
 
 function playerNatRefreshDisplay(str) {
   const disp = document.getElementById("playerNatDisplay");
   if (disp) disp.textContent = str;
   playerState[playerCurrent].answer = str === "" ? null : parseFloat(str);
+  syncTestState();
 }
 
 function playerNatAppend(ch) {
@@ -1399,24 +1450,33 @@ function playerNatMove(dir) {
 }
 
 function playerSaveNext() {
-  // answer already tracked live via onchange; just mark visited state as-is
   updatePlayerQBtn(playerCurrent);
+  syncTestState();
   goToNextQuestion();
 }
 
 function playerMarkReview() {
   playerState[playerCurrent].marked = true;
   updatePlayerQBtn(playerCurrent);
+  syncTestState();
   goToNextQuestion();
 }
 
 function playerClearResponse() {
   playerState[playerCurrent].answer = null;
   document
-    .querySelectorAll('input[name="playerOpt"]')
-    .forEach((r) => (r.checked = false));
+    .querySelectorAll(`input[name="qopt-${playerCurrent}"]`)
+    .forEach((i) => (i.checked = false));
+  playerNatClear();
   updatePlayerQBtn(playerCurrent);
-  updatePlayerCounts();
+  syncTestState();
+}
+
+function playerSaveMarkReview() {
+  playerState[playerCurrent].marked = true;
+  updatePlayerQBtn(playerCurrent);
+  syncTestState();
+  goToNextQuestion();
 }
 
 function goToNextQuestion() {

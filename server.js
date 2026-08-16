@@ -70,6 +70,25 @@ const answerSchema = new mongoose.Schema({
 });
 const Answer = mongoose.model('Answer', answerSchema);
 
+const bookmarkSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  testId: String,
+  qKey: String, // testId_Q0
+  qIndex: Number,
+  createdAt: { type: Date, default: Date.now }
+});
+const Bookmark = mongoose.model('Bookmark', bookmarkSchema);
+
+const testStateSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  testId: String,
+  playerState: mongoose.Schema.Types.Mixed,
+  playerCurrent: Number,
+  playerTimerSecs: Number,
+  updatedAt: { type: Date, default: Date.now }
+});
+const TestState = mongoose.model('TestState', testStateSchema);
+
 app.use(cors());
 app.use(express.json());
 
@@ -695,6 +714,70 @@ app.delete('/api/answers/:id', authenticateToken, async (req, res) => {
   } catch (err) {
     console.error("Delete Answer Error:", err);
     res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+// --- SYNC API ENDPOINTS ---
+
+app.post('/api/sync/bookmark', authenticateToken, async (req, res) => {
+  try {
+    const { testId, qKey, qIndex, isBookmarked } = req.body;
+    if (isBookmarked) {
+      await Bookmark.updateOne(
+        { userId: req.user._id, qKey },
+        { testId, qIndex, createdAt: Date.now() },
+        { upsert: true }
+      );
+    } else {
+      await Bookmark.deleteOne({ userId: req.user._id, qKey });
+    }
+    res.json({ success: true });
+  } catch(err) {
+    console.error("Sync Bookmark Error:", err);
+    res.status(500).json({ success: false });
+  }
+});
+
+app.get('/api/sync/bookmarks', authenticateToken, async (req, res) => {
+  try {
+    const bookmarks = await Bookmark.find({ userId: req.user._id });
+    const formatted = {};
+    bookmarks.forEach(b => {
+      formatted[b.qKey] = { date: new Date(b.createdAt).toLocaleDateString() };
+    });
+    res.json({ success: true, bookmarks: formatted });
+  } catch(err) {
+    console.error("Get Bookmarks Error:", err);
+    res.status(500).json({ success: false });
+  }
+});
+
+app.post('/api/sync/teststate', authenticateToken, async (req, res) => {
+  try {
+    const { testId, playerState, playerCurrent, playerTimerSecs } = req.body;
+    await TestState.updateOne(
+      { userId: req.user._id, testId },
+      { playerState, playerCurrent, playerTimerSecs, updatedAt: Date.now() },
+      { upsert: true }
+    );
+    res.json({ success: true });
+  } catch(err) {
+    console.error("Sync TestState Error:", err);
+    res.status(500).json({ success: false });
+  }
+});
+
+app.get('/api/sync/teststate/:testId', authenticateToken, async (req, res) => {
+  try {
+    const state = await TestState.findOne({ userId: req.user._id, testId: req.params.testId });
+    if (state) {
+      res.json({ success: true, testState: state });
+    } else {
+      res.json({ success: false });
+    }
+  } catch(err) {
+    console.error("Get TestState Error:", err);
+    res.status(500).json({ success: false });
   }
 });
 
