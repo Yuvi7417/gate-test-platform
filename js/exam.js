@@ -2366,3 +2366,121 @@ document.getElementById("tlTabs").addEventListener("click", (e) => {
 
 /* restore a saved login on page load / refresh, unless the app version changed */
 restoreSession();
+
+
+// ==========================================
+// ANSWERS & DISCUSSION LOGIC
+// ==========================================
+
+let answers = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+  if(typeof CKEDITOR !== 'undefined') {
+    CKEDITOR.replace('editor1', {
+      extraPlugins: 'image2,uploadimage',
+      filebrowserUploadUrl: '/api/upload-image',
+      image2_alignClasses: ['image-align-left', 'image-align-center', 'image-align-right'],
+      image2_disableResizer: false
+    });
+  }
+});
+
+function toggleEditor() {
+  const section = document.getElementById('editorSection');
+  const discuss = document.getElementById('discussSection');
+  discuss.style.display = 'none';
+  section.style.display = section.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleDiscuss() {
+  const section = document.getElementById('editorSection');
+  const discuss = document.getElementById('discussSection');
+  section.style.display = 'none';
+  discuss.style.display = discuss.style.display === 'block' ? 'none' : 'block';
+  if (discuss.style.display === 'block') {
+    fetchAnswers();
+  }
+}
+
+async function fetchAnswers() {
+  const list = document.getElementById('answersList');
+  list.innerHTML = '<div style="color: #64748b; text-align: center; margin-top: 20px;">Loading answers...</div>';
+  try {
+    const reportTestId = encodeURIComponent(document.getElementById('playerTopTitle').textContent.trim());
+    const res = await fetch(`/api/answers/${reportTestId}/${playerCurrent}`);
+    const data = await res.json();
+    if (data.success) {
+      answers = data.answers;
+      renderAnswers();
+    } else {
+      list.innerHTML = '<div style="color: red;">Failed to load answers.</div>';
+    }
+  } catch (err) {
+    list.innerHTML = '<div style="color: red;">Network error.</div>';
+  }
+}
+
+function renderAnswers() {
+  const list = document.getElementById('answersList');
+  if (answers.length === 0) {
+    list.innerHTML = '<div style="color: #64748b; text-align: center; margin-top: 20px;">No answers yet. Be the first to answer!</div>';
+    return;
+  }
+  let html = '';
+  answers.forEach((ans) => {
+    let char = ans.userName ? ans.userName.charAt(0).toUpperCase() : 'S';
+    let name = ans.userName || 'Student';
+    let email = ans.userEmail || '';
+    let date = new Date(ans.createdAt).toLocaleString();
+    html += `
+      <div style="border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; margin-bottom: 15px; background: #f8fafc;">
+        <div style="font-size: 12px; color: #64748b; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <div style="width: 24px; height: 24px; background: #0056b3; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">${char}</div>
+            <div>
+              <strong style="color: #334155;">${name}</strong>
+              <div style="font-size: 10px; color: #94a3b8;">${email}</div>
+            </div>
+          </div>
+          <span>${date}</span>
+        </div>
+        <div class="answer-content" style="overflow-wrap: break-word;">
+          ${ans.content}
+        </div>
+      </div>
+    `;
+  });
+  list.innerHTML = html;
+}
+
+async function submitAnswer() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) {
+    alert('Please log in to submit an answer.');
+    return;
+  }
+  const data = CKEDITOR.instances.editor1.getData();
+  if (data.trim() === '') {
+    alert('Answer cannot be empty!');
+    return;
+  }
+  try {
+    const reportTestId = document.getElementById('playerTopTitle').textContent.trim();
+    const res = await fetch('/api/answers', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token },
+      body: JSON.stringify({ testId: reportTestId, qIndex: playerCurrent, content: data })
+    });
+    const resData = await res.json();
+    if (resData.success) {
+      CKEDITOR.instances.editor1.setData('');
+      toggleEditor();
+      toggleDiscuss();
+    } else {
+      alert(resData.message || 'Error submitting answer');
+    }
+  } catch (err) {
+    alert('Network error');
+  }
+}
+

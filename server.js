@@ -10,8 +10,10 @@ const crypto = require('crypto');
 
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
+const multer = require('multer');
 
 const app = express();
+const upload = multer({ storage: multer.memoryStorage() });
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
@@ -58,6 +60,15 @@ const testSchema = new mongoose.Schema({
 });
 const Test = mongoose.model('Test', testSchema);
 
+const answerSchema = new mongoose.Schema({
+  testId: String,
+  qIndex: Number,
+  userEmail: String,
+  userName: String,
+  content: String,
+  createdAt: { type: Date, default: Date.now }
+});
+const Answer = mongoose.model('Answer', answerSchema);
 
 app.use(cors());
 app.use(express.json());
@@ -611,6 +622,66 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
 });
 
 
+
+// ==========================================
+// ANSWERS & DISCUSS API
+// ==========================================
+
+// Upload Image endpoint for CKEditor
+app.post('/api/upload-image', upload.single('upload'), (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: { message: 'No file uploaded.' } });
+    }
+    const b64 = Buffer.from(req.file.buffer).toString('base64');
+    const mimeType = req.file.mimetype;
+    const url = `data:${mimeType};base64,${b64}`;
+    
+    // CKEditor 4 expects this format
+    res.json({
+      uploaded: 1,
+      fileName: req.file.originalname,
+      url: url
+    });
+  } catch (err) {
+    console.error("Upload Error:", err);
+    res.status(500).json({ error: { message: 'Server error during upload.' } });
+  }
+});
+
+// Submit a new answer
+app.post('/api/answers', authenticateToken, async (req, res) => {
+  try {
+    const { testId, qIndex, content } = req.body;
+    if (!content || content.trim() === '') {
+      return res.status(400).json({ success: false, message: 'Content cannot be empty' });
+    }
+    const answer = new Answer({
+      testId,
+      qIndex: parseInt(qIndex),
+      userEmail: req.user.email,
+      userName: req.user.name,
+      content
+    });
+    await answer.save();
+    res.json({ success: true, answer });
+  } catch (err) {
+    console.error("Submit Answer Error:", err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+// Get all answers for a specific question
+app.get('/api/answers/:testId/:qIndex', async (req, res) => {
+  try {
+    const { testId, qIndex } = req.params;
+    const answers = await Answer.find({ testId, qIndex: parseInt(qIndex) }).sort({ createdAt: -1 });
+    res.json({ success: true, answers });
+  } catch (err) {
+    console.error("Fetch Answers Error:", err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
 
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
