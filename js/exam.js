@@ -2380,7 +2380,8 @@ document.addEventListener('DOMContentLoaded', () => {
       extraPlugins: 'image2,uploadimage',
       filebrowserUploadUrl: '/api/upload-image',
       image2_alignClasses: ['image-align-left', 'image-align-center', 'image-align-right'],
-      image2_disableResizer: false
+      image2_disableResizer: false,
+      versionCheck: false
     });
   }
 });
