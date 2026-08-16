@@ -22,3 +22,7 @@ jobs:
         context: .
         push: true
         tags: yuvi7417/gate-test-platform:latest
+
+    - name: Trigger Render Auto-Deploy
+      if: ${{ secrets.RENDER_DEPLOY_HOOK != '' }}
+      run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
