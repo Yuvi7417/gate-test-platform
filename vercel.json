@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://gate-test-platform-unique.onrender.com/api/:match*"
+    }
+  ]
+}
