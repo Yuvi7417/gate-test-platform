@@ -775,6 +775,17 @@ app.post('/api/sync/teststate', authenticateToken, async (req, res) => {
   }
 });
 
+app.delete('/api/sync/teststate/:testId', authenticateToken, async (req, res) => {
+  try {
+    const { testId } = req.params;
+    await TestState.deleteOne({ userId: req.user._id, testId });
+    res.json({ success: true });
+  } catch(err) {
+    console.error("Delete TestState Error:", err);
+    res.status(500).json({ success: false });
+  }
+});
+
 app.get('/api/sync/teststate/:testId', authenticateToken, async (req, res) => {
   try {
     const state = await TestState.findOne({ userId: req.user._id, testId: req.params.testId });

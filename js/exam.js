@@ -1726,6 +1726,13 @@ function confirmSubmit() {
         }
         const seriesObj = testSeries.find((x) => x.id === currentTestListId);
         if (seriesObj) renderTestList(seriesObj, "all");
+        
+        // Delete TestState from server and local storage since test is finished
+        localStorage.removeItem("apex_teststate_" + payload.testName);
+        fetch('/api/sync/teststate/' + encodeURIComponent(payload.testName), {
+          method: 'DELETE',
+          headers: { 'Authorization': `Bearer ${token}` }
+        }).catch(err => console.error(err));
       }
     }).catch(err => console.error("Error submitting test:", err));
   }
