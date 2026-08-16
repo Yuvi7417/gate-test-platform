@@ -1028,9 +1028,26 @@ function renderBookmarks() {
 function removeBookmark(key) {
   let bookmarks = JSON.parse(localStorage.getItem("apex_bookmarks") || "{}");
   if (bookmarks[key]) {
+    const qIndex = bookmarks[key].qIndex;
+    const testId = bookmarks[key].testId;
     delete bookmarks[key];
     localStorage.setItem("apex_bookmarks", JSON.stringify(bookmarks));
+    
+    // Update cloudBookmarks if in exam.js context
+    if (typeof cloudBookmarks !== 'undefined') {
+      delete cloudBookmarks[key];
+    }
+    
     renderBookmarks();
+
+    const token = localStorage.getItem('apexcore_token');
+    if (token && testId) {
+      fetch('/api/sync/bookmark', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+        body: JSON.stringify({ testId, qKey: key, qIndex: qIndex, isBookmarked: false })
+      }).catch(e => console.error("Bookmark sync error:", e));
+    }
   }
 }
 
