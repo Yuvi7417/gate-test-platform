@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark Feature Demo</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; margin: 0; padding: 20px; color: #334155; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1, h2 { color: #0f172a; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    
+    /* Mock Player */
+    .question-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 15px; }
+    .bookmark-btn { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer; color: #475569; font-weight: 500; transition: all 0.2s; }
+    .bookmark-btn:hover { background: #f1f5f9; }
+    .bookmark-btn.active { color: #eab308; border-color: #eab308; background: #fefce8; }
+    .bookmark-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; }
+    .bookmark-btn.active svg { fill: #eab308; }
+    
+    .question-text { font-size: 16px; line-height: 1.5; margin-bottom: 20px; }
+    
+    /* Dashboard */
+    .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    select { padding: 8px; border-radius: 4px; border: 1px solid #cbd5e1; background: #fff; font-size: 14px; }
+    
+    .bookmark-list { display: flex; flex-direction: column; gap: 15px; }
+    .bookmark-item { border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; background: #f8fafc; }
+    .bookmark-meta { font-size: 12px; color: #64748b; margin-bottom: 8px; text-transform: uppercase; font-weight: bold; }
+    
+    .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e2e8f0; }
+    .tab { padding: 10px 20px; cursor: pointer; color: #64748b; font-weight: 500; }
+    .tab.active { color: #2563eb; border-bottom: 2px solid #2563eb; margin-bottom: -2px; }
+    
+    .view { display: none; }
+    .view.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Feature Demo: Bookmarks</h1>
+  
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('player')">1. Test Player (Mock)</div>
+    <div class="tab" onclick="switchTab('dashboard')">2. Bookmarks Dashboard</div>
+  </div>
+
+  <!-- Player View -->
+  <div id="playerView" class="view active">
+    <div class="card">
+      <div class="question-header">
+        <div><strong>Question 1</strong> (Subject: Civil Engineering)</div>
+        <button id="bmBtn1" class="bookmark-btn" onclick="toggleBookmark(1, 'Civil Engineering', 'What is the compressive strength of M20 grade concrete at 28 days?')">
+          <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+          <span class="btn-text">Bookmark</span>
+        </button>
+      </div>
+      <div class="question-text">
+        What is the compressive strength of M20 grade concrete at 28 days?
+        <br><br>
+        <label><input type="radio" name="q1"> A) 15 N/mm²</label><br>
+        <label><input type="radio" name="q1"> B) 20 N/mm²</label><br>
+        <label><input type="radio" name="q1"> C) 25 N/mm²</label><br>
+        <label><input type="radio" name="q1"> D) 30 N/mm²</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="question-header">
+        <div><strong>Question 2</strong> (Subject: Civil Engineering)</div>
+        <button id="bmBtn2" class="bookmark-btn" onclick="toggleBookmark(2, 'Civil Engineering', 'Which test is used to determine the workability of concrete?')">
+          <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+          <span class="btn-text">Bookmark</span>
+        </button>
+      </div>
+      <div class="question-text">
+        Which test is used to determine the workability of concrete?
+        <br><br>
+        <label><input type="radio" name="q2"> A) Slump Test</label><br>
+        <label><input type="radio" name="q2"> B) Compressive Test</label><br>
+        <label><input type="radio" name="q2"> C) Tensile Test</label><br>
+        <label><input type="radio" name="q2"> D) Impact Test</label>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="question-header">
+        <div><strong>Question 3</strong> (Subject: Computer Science)</div>
+        <button id="bmBtn3" class="bookmark-btn" onclick="toggleBookmark(3, 'Computer Science', 'What is the time complexity of binary search?')">
+          <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+          <span class="btn-text">Bookmark</span>
+        </button>
+      </div>
+      <div class="question-text">
+        What is the time complexity of binary search?
+        <br><br>
+        <label><input type="radio" name="q3"> A) O(n)</label><br>
+        <label><input type="radio" name="q3"> B) O(log n)</label><br>
+        <label><input type="radio" name="q3"> C) O(n^2)</label><br>
+        <label><input type="radio" name="q3"> D) O(1)</label>
+      </div>
+    </div>
+    <p><em>Click "Bookmark" on some questions, then switch to the Dashboard tab.</em></p>
+  </div>
+
+  <!-- Dashboard View -->
+  <div id="dashboardView" class="view">
+    <div class="card">
+      <div class="dashboard-header">
+        <h2>My Bookmarked Questions</h2>
+        <select id="subjectFilter" onchange="renderBookmarks()">
+          <option value="All">All Subjects</option>
+          <option value="Civil Engineering">Civil Engineering</option>
+          <option value="Computer Science">Computer Science</option>
+        </select>
+      </div>
+      
+      <div id="bookmarkContainer" class="bookmark-list">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let bookmarks = {};
+
+  function toggleBookmark(id, subject, text) {
+    const btn = document.getElementById('bmBtn' + id);
+    if (bookmarks[id]) {
+      delete bookmarks[id];
+      btn.classList.remove('active');
+      btn.querySelector('.btn-text').innerText = 'Bookmark';
+    } else {
+      bookmarks[id] = { id, subject, text, date: new Date().toLocaleDateString() };
+      btn.classList.add('active');
+      btn.querySelector('.btn-text').innerText = 'Bookmarked';
+    }
+  }
+
+  function renderBookmarks() {
+    const container = document.getElementById('bookmarkContainer');
+    const filter = document.getElementById('subjectFilter').value;
+    
+    container.innerHTML = '';
+    const items = Object.values(bookmarks).filter(b => filter === 'All' || b.subject === filter);
+    
+    if (items.length === 0) {
+      container.innerHTML = '<p style="color:#64748b;">No bookmarked questions found.</p>';
+      return;
+    }
+    
+    items.forEach(b => {
+      const el = document.createElement('div');
+      el.className = 'bookmark-item';
+      el.innerHTML = `
+        <div class="bookmark-meta">${b.subject} • Bookmarked on ${b.date}</div>
+        <div class="question-text">${b.text}</div>
+      `;
+      container.appendChild(el);
+    });
+  }
+
+  function switchTab(viewName) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById(viewName + 'View').classList.add('active');
+    
+    if (viewName === 'dashboard') {
+      renderBookmarks();
+    }
+  }
+</script>
+
+</body>
+</html>

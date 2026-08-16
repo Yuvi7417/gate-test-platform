@@ -483,10 +483,7 @@
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
             <div class="player-qnum" id="playerQNum" style="margin-bottom: 0;">Question No. 1</div>
             <div style="display: flex; gap: 10px;">
-              <button id="playerReportBtn" onclick="openReportModal()" style="display: none; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #fecaca; border-radius: 4px; background: #fef2f2; cursor: pointer; color: #dc2626; font-weight: 500; transition: all 0.2s;">
-                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                <span>Report</span>
-              </button>
+
               <button id="playerBookmarkBtn" onclick="togglePlayerBookmark()" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer; color: #475569; font-weight: 500; transition: all 0.2s;">
                 <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;" id="playerBookmarkSvg"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
                 <span id="playerBookmarkText">Bookmark</span>
@@ -824,23 +821,6 @@
       <div id="bookmarkModalSolution" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 20px; color: #334155; display: none;">
         <h4 style="margin: 0 0 12px 0; color: #0f172a; font-size: 15px;">Detailed Solution</h4>
         <div id="bookmarkModalSolutionContent"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- REPORT MODAL -->
-  <div class="modal-overlay" id="reportModal" style="display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div class="modal-box" style="max-width: 600px; width: 95%; max-height: 90vh; display: flex; flex-direction: column; padding: 25px;">
-      <button class="modal-close" onclick="closeReportModal()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12" /></svg>
-      </button>
-      <h2 style="font-size: 18px; margin: 0 0 15px 0; font-family: 'Poppins', sans-serif;">Report / Discussion</h2>
-      <div id="reportList" style="flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; margin-bottom: 20px; min-height: 200px;">
-        <!-- Reports go here -->
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #e2e8f0; padding-top: 15px;">
-        <textarea id="reportInput" placeholder="Describe the issue or write your comment..." style="width: 100%; height: 80px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; resize: none; font-family: inherit; font-size: 14px;"></textarea>
-        <button onclick="submitReport()" class="btn-primary" style="align-self: flex-end;">Submit</button>
       </div>
     </div>
   </div>

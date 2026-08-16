@@ -58,16 +58,6 @@ const testSchema = new mongoose.Schema({
 });
 const Test = mongoose.model('Test', testSchema);
 
-const reportSchema = new mongoose.Schema({
-  testId: String,
-  qIndex: Number,
-  userEmail: String,
-  userName: String,
-  comment: String,
-  isResolved: { type: Boolean, default: false },
-  createdAt: { type: Date, default: Date.now }
-});
-const Report = mongoose.model('Report', reportSchema);
 
 app.use(cors());
 app.use(express.json());
@@ -620,60 +610,7 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
   }
 });
 
-// ==========================================
-// REPORTS API
-// ==========================================
 
-// Get all reports for a specific question
-app.get('/api/reports/:testId/:qIndex', async (req, res) => {
-  try {
-    const { testId, qIndex } = req.params;
-    const reports = await Report.find({ testId, qIndex: parseInt(qIndex) }).sort({ createdAt: -1 });
-    res.json({ success: true, reports });
-  } catch (err) {
-    console.error("Fetch Reports Error:", err);
-    res.status(500).json({ success: false, message: 'Server error' });
-  }
-});
-
-// Submit a new report
-app.post('/api/reports', authenticateToken, async (req, res) => {
-  try {
-    const { testId, qIndex, comment } = req.body;
-    if (!comment || comment.trim() === '') {
-      return res.status(400).json({ success: false, message: 'Comment cannot be empty' });
-    }
-    const report = new Report({
-      testId,
-      qIndex: parseInt(qIndex),
-      userEmail: req.user.email,
-      userName: req.user.name,
-      comment
-    });
-    await report.save();
-    res.json({ success: true, report });
-  } catch (err) {
-    console.error("Submit Report Error:", err);
-    res.status(500).json({ success: false, message: 'Server error' });
-  }
-});
-
-// Resolve a report (Admin only)
-app.post('/api/reports/:id/resolve', authenticateToken, async (req, res) => {
-  try {
-    if (req.user.email !== 'yuvrajsingh36020@gmail.com') {
-      return res.status(403).json({ success: false, message: 'Unauthorized. Admin only.' });
-    }
-    const report = await Report.findByIdAndUpdate(req.params.id, { isResolved: true }, { new: true });
-    if (!report) {
-      return res.status(404).json({ success: false, message: 'Report not found' });
-    }
-    res.json({ success: true, report });
-  } catch (err) {
-    console.error("Resolve Report Error:", err);
-    res.status(500).json({ success: false, message: 'Server error' });
-  }
-});
 
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
