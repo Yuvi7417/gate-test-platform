@@ -2386,18 +2386,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function toggleEditor() {
-  const section = document.getElementById('editorSection');
-  const discuss = document.getElementById('discussSection');
+  const editor = document.getElementById('editorOverlay');
+  const discuss = document.getElementById('discussOverlay');
   discuss.style.display = 'none';
-  section.style.display = section.style.display === 'block' ? 'none' : 'block';
+  editor.style.display = editor.style.display === 'flex' ? 'none' : 'flex';
 }
 
 function toggleDiscuss() {
-  const section = document.getElementById('editorSection');
-  const discuss = document.getElementById('discussSection');
-  section.style.display = 'none';
-  discuss.style.display = discuss.style.display === 'block' ? 'none' : 'block';
-  if (discuss.style.display === 'block') {
+  const editor = document.getElementById('editorOverlay');
+  const discuss = document.getElementById('discussOverlay');
+  editor.style.display = 'none';
+  discuss.style.display = discuss.style.display === 'flex' ? 'none' : 'flex';
+  if (discuss.style.display === 'flex') {
     fetchAnswers();
   }
 }
