@@ -2443,7 +2443,10 @@ function renderAnswers() {
               <div style="font-size: 10px; color: #94a3b8;">${email}</div>
             </div>
           </div>
-          <span>${date}</span>
+          <div style="display: flex; gap: 10px; align-items: center;">
+            <span>${date}</span>
+            ${(typeof currentUser !== 'undefined' && currentUser && currentUser.email === 'yuvrajsingh36020@gmail.com') ? `<button onclick="deleteAnswer('${ans._id}')" style="background: #ef4444; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 10px;">Delete</button>` : ''}
+          </div>
         </div>
         <div class="answer-content" style="overflow-wrap: break-word;">
           ${ans.content}
@@ -2482,6 +2485,25 @@ async function submitAnswer() {
     }
   } catch (err) {
     alert('Network error');
+  }
+}
+
+async function deleteAnswer(id) {
+  if (!confirm("Are you sure you want to delete this answer?")) return;
+  const token = localStorage.getItem('apexcore_token');
+  try {
+    const res = await fetch(`/api/answers/${id}`, {
+      method: 'DELETE',
+      headers: { 'Authorization': 'Bearer ' + token }
+    });
+    const resData = await res.json();
+    if (resData.success) {
+      fetchAnswers();
+    } else {
+      alert(resData.message || 'Error deleting answer');
+    }
+  } catch(err) {
+    alert("Network error");
   }
 }
 

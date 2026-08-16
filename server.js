@@ -683,6 +683,21 @@ app.get('/api/answers/:testId/:qIndex', async (req, res) => {
   }
 });
 
+// Delete an answer (Admin only)
+app.delete('/api/answers/:id', authenticateToken, async (req, res) => {
+  try {
+    const adminEmail = 'yuvrajsingh36020@gmail.com';
+    if (req.user.email !== adminEmail) {
+      return res.status(403).json({ success: false, message: 'Only admin can delete answers' });
+    }
+    await Answer.findByIdAndDelete(req.params.id);
+    res.json({ success: true });
+  } catch (err) {
+    console.error("Delete Answer Error:", err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
 // Fallback to index.html for unknown routes (SPA behavior)
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
