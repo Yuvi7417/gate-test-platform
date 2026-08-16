@@ -1366,13 +1366,29 @@ function updateBookmarkBtnState() {
 function togglePlayerBookmark() {
   const testId = document.getElementById("playerTopTitle").textContent.trim();
   const qKey = testId + "_Q" + playerCurrent;
+  const q = playerQuestions[playerCurrent];
   
   const isBookmarked = !cloudBookmarks[qKey];
   
   if (isBookmarked) {
+    let subject = "General";
+    if (testId.includes("CE")) subject = "Civil Engineering";
+    else if (testId.includes("CS") || testId.includes("CSE")) subject = "Computer Science";
+    else if (testId.includes("EE")) subject = "Electrical Engineering";
+    else if (testId.includes("ME")) subject = "Mechanical Engineering";
+    else if (testId.includes("EC") || testId.includes("ECE")) subject = "Electronics & Communication";
+    else if (testId.includes("DA")) subject = "Data Science (DA)";
+    
+    let plainText = document.createElement("div");
+    plainText.innerHTML = q.text;
+    let previewText = plainText.textContent || plainText.innerText || "";
+    if (previewText.length > 150) previewText = previewText.substring(0, 150) + "...";
+    
     cloudBookmarks[qKey] = {
       testId: testId,
       qIndex: playerCurrent,
+      text: previewText,
+      subject: subject,
       date: new Date().toLocaleDateString()
     };
   } else {
@@ -1383,6 +1399,14 @@ function togglePlayerBookmark() {
 
   const token = localStorage.getItem('apexcore_token');
   if (token) {
+    const payload = { 
+      testId, 
+      qKey, 
+      qIndex: playerCurrent, 
+      isBookmarked,
+      text: isBookmarked ? cloudBookmarks[qKey].text : "",
+      subject: isBookmarked ? cloudBookmarks[qKey].subject : ""
+    };
     fetch('/api/sync/bookmark', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },

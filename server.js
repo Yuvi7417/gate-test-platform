@@ -75,6 +75,8 @@ const bookmarkSchema = new mongoose.Schema({
   testId: String,
   qKey: String, // testId_Q0
   qIndex: Number,
+  text: String,
+  subject: String,
   createdAt: { type: Date, default: Date.now }
 });
 const Bookmark = mongoose.model('Bookmark', bookmarkSchema);
@@ -721,11 +723,11 @@ app.delete('/api/answers/:id', authenticateToken, async (req, res) => {
 
 app.post('/api/sync/bookmark', authenticateToken, async (req, res) => {
   try {
-    const { testId, qKey, qIndex, isBookmarked } = req.body;
+    const { testId, qKey, qIndex, isBookmarked, text, subject } = req.body;
     if (isBookmarked) {
       await Bookmark.updateOne(
         { userId: req.user._id, qKey },
-        { testId, qIndex, createdAt: Date.now() },
+        { testId, qIndex, text, subject, createdAt: Date.now() },
         { upsert: true }
       );
     } else {
@@ -743,7 +745,13 @@ app.get('/api/sync/bookmarks', authenticateToken, async (req, res) => {
     const bookmarks = await Bookmark.find({ userId: req.user._id });
     const formatted = {};
     bookmarks.forEach(b => {
-      formatted[b.qKey] = { date: new Date(b.createdAt).toLocaleDateString() };
+      formatted[b.qKey] = { 
+        testId: b.testId,
+        qIndex: b.qIndex,
+        text: b.text,
+        subject: b.subject,
+        date: new Date(b.createdAt).toLocaleDateString() 
+      };
     });
     res.json({ success: true, bookmarks: formatted });
   } catch(err) {
