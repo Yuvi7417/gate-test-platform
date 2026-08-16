@@ -12,11 +12,80 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="css/style.css?v=5">
   <style>
+    /* Security Styles */
+    body {
+      user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+    }
+    input, textarea {
+      user-select: auto;
+      -webkit-user-select: auto;
+      -ms-user-select: auto;
+      -moz-user-select: auto;
+    }
+    img {
+      -webkit-user-drag: none;
+      pointer-events: none; /* Prevents dragging and right-clicking images */
+    }
+    /* Exclude specific UI elements from pointer-events none if they need to be clickable */
     .answer-content img {
       max-width: 100%;
       height: auto;
+      pointer-events: auto; /* Let users click if needed inside editor */
+      -webkit-user-drag: none;
     }
   </style>
+  <script>
+    // Security Scripts to prevent inspect and copying
+    document.addEventListener('contextmenu', event => event.preventDefault()); // Disable right-click
+
+    document.addEventListener('keydown', function(event) {
+      // Prevent F12
+      if (event.key === 'F12') {
+        event.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+Shift+I
+      if (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) {
+        event.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+Shift+J
+      if (event.ctrlKey && event.shiftKey && (event.key === 'J' || event.key === 'j')) {
+        event.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+Shift+C
+      if (event.ctrlKey && event.shiftKey && (event.key === 'C' || event.key === 'c')) {
+        event.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+U (View Source)
+      if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
+        event.preventDefault();
+        return false;
+      }
+      // Prevent Ctrl+C / Ctrl+X globally (except inputs)
+      if (event.ctrlKey && (event.key === 'c' || event.key === 'C' || event.key === 'x' || event.key === 'X')) {
+        if (event.target.tagName !== 'INPUT' && event.target.tagName !== 'TEXTAREA') {
+          event.preventDefault();
+          return false;
+        }
+      }
+    });
+
+    // Advanced DevTools blocker (debugger loop)
+    setInterval(function() {
+      var before = new Date().getTime();
+      debugger;
+      var after = new Date().getTime();
+      if (after - before > 100) {
+        // DevTools might be open, we could redirect or just let it loop
+      }
+    }, 2000);
+  </script>
   <script>
   window.MathJax = {
     tex: {
