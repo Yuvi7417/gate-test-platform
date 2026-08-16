@@ -686,7 +686,7 @@ app.get('/api/answers/:testId/:qIndex', async (req, res) => {
 // Delete an answer (Admin only)
 app.delete('/api/answers/:id', authenticateToken, async (req, res) => {
   try {
-    const adminEmail = 'yuvrajsingh36020@gmail.com';
+    const adminEmail = 'yuvrajsingh36828@gmail.com';
     if (req.user.email !== adminEmail) {
       return res.status(403).json({ success: false, message: 'Only admin can delete answers' });
     }

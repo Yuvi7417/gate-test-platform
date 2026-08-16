@@ -2445,7 +2445,7 @@ function renderAnswers() {
           </div>
           <div style="display: flex; gap: 10px; align-items: center;">
             <span>${date}</span>
-            ${(typeof currentUser !== 'undefined' && currentUser && currentUser.email === 'yuvrajsingh36020@gmail.com') ? `<button onclick="deleteAnswer('${ans._id}')" style="background: #ef4444; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 10px;">Delete</button>` : ''}
+            ${(typeof currentUser !== 'undefined' && currentUser && currentUser.email === 'yuvrajsingh36828@gmail.com') ? `<button onclick="deleteAnswer('${ans._id}')" style="background: #ef4444; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 10px;">Delete</button>` : ''}
           </div>
         </div>
         <div class="answer-content" style="overflow-wrap: break-word;">
