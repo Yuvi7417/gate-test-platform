@@ -24,5 +24,7 @@ jobs:
         tags: yuvi7417/gate-test-platform:latest
 
     - name: Trigger Render Auto-Deploy
-      if: ${{ secrets.RENDER_DEPLOY_HOOK != '' }}
-      run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+      env:
+        HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK }}
+      if: env.HOOK_URL != ''
+      run: curl -X POST "$HOOK_URL"
