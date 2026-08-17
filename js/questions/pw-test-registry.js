@@ -7,11 +7,9 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "MCQ",
-      text: `Consider the following expression using variable
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>-p + q - r + - s % t / u;</code></pre>
-Which of the following are TRUE ?`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img1.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["p = 2, q = 11, r = 7, s = -9, t = 6, u = 2 the expression evaluated to 3","p = 2, q = 11, r = 7, s = 9, t = 6, u = 2 the expression evaluated to 1","p = 2, q = 11, r = 7, s = -9, t = 6 , u = 3 the expression evaluated to 2","p = 2, q = 10, r = 7, s = -9, t = 6 , u = 2 the expression evaluated to 3"],
+      options: ["A", "B", "C", "D"],
       answer: "A",
       solution: `<img src="/images/quiz/pw-c-prog/q_img2.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -19,27 +17,7 @@ Which of the following are TRUE ?`,
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `What will be output if you will execute following c code?
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-int main()
-{
-
-int i=1, j=1, sum=0;
-
-while (i++ &lt;= 10)
-{
-
-sum = sum +10*j-4*i;
-
-j +=2;
-
-}
-
-printf("%d", sum);
-
-return 0 ;
-
-}</code></pre>`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img3.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "740",
@@ -49,11 +27,9 @@ return 0 ;
       marks: 1,
       neg: 0,
       type: "MCQ",
-      text: `Consider the following C-declaration and assignments.
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>char *a, *b, c[10], d[10];</code></pre>
-Which assignments will result in error ?`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img5.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["a = b; // Line 1","b = c++; // Line","c = d; // line 3","*b = d[1]; // Line 4"],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: `<img src="/images/quiz/pw-c-prog/q_img6.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -61,27 +37,9 @@ Which assignments will result in error ?`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `What will be output if you will execute following c code?
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int bar(int num)
-{
-static int i=10;
-i++;
-return num*i;
-}
-
-int main()
-{
-int val = 0;
-for(int i=10;i&gt;=2;i/=2)
-val = val+bar(i);
-printf("%d", val);
-return 0;
-}</code></pre>`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img7.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["196","100","202","1100"],
+      options: ["A", "B", "C", "D"],
       answer: "A",
       solution: `<img src="/images/quiz/pw-c-prog/q_img8.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -89,22 +47,7 @@ return 0;
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `consider the following C-Prog
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-int foo(int n)
-{
-int j=1,i;
-
-if (n==1) return j;
-
-for (i=1; i&lt;n; ++i)
-j = j + foo(n-i)+foo(i);
-
-return j;
-}</code></pre>
-
-The return value of foo(6) is _________`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img9.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "243",
@@ -114,32 +57,7 @@ The return value of foo(6) is _________`,
       marks: 1,
       neg: 0.33,
       type: "NAT",
-      text: `Consider the following C program
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code># include &lt;stdio.h&gt;
-int acc;
-void foo(int**, int);
-
-int main()
-{
-int a[ ] ={11, -4, 5, -1, 11, 14};
-int *p[ ]={a, a+5, a+3, a+1, a+2, a+4};
-int n = 1;
-foo(p,n);
-printf("%d", acc);
-return 0;
-}
-void foo(int **ptr, int n)
-{
-if (n&gt;5)
-return;
-if (**ptr&gt;0)
-acc=acc+**ptr;
-foo(ptr+1, n+1);
-return;
-}</code></pre>
-
-What will be the output of the program?`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img11.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "30",
@@ -149,29 +67,9 @@ What will be the output of the program?`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following program
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int main ()
-{
-char str1[ ] = "abbcdd";
-char str2[ ] = "acccde";
-int ch=0;
-char *s1, *s2;
-s1 = str1;
-s2 = str2;
-while(*s1!='\0'||*s2!='\0')
-{
-if (*s1==*s2)
-ch+= *s1;
-s1++;
-s2++;
-}
-printf("%d", ch);
-}</code></pre>`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img13.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["296","198","97","195"],
+      options: ["A", "B", "C", "D"],
       answer: "A",
       solution: `<img src="/images/quiz/pw-c-prog/q_img14.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -179,37 +77,9 @@ printf("%d", ch);
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following program
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include &lt;stdio.h&gt;
-int main()
-{
-
-int i, j,k,m, count;
-
-count=0;
-
-i=0;
-
-m=0;
-
-for (k = 1; k&lt;=2;k++)
-
-for (j=-3; j&lt;=3; j++) {
-
-if (( j &lt;= 0) &amp;&amp; (i++) &amp;&amp; m++)
-
-count = count + j +m;
-
-}
-
-printf("%d ", count);
-
-return 0;
-
-}</code></pre>
-The output of the program is _______`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img15.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["13","80","20","8"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img16.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -217,36 +87,9 @@ The output of the program is _______`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Find the output of the following program.
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code># include &lt;stdio.h&gt;
-
-int main ()
-{
-
-int a, b;
-
-int count = 3;
-
-int *ptr = &amp;count;;
-
-int **ptr1= &amp;ptr;
-
-a = ++(*ptr)+40;
-
-b = ++(**ptr1)+40;
-
-b=2*(*ptr+++5);
-
-printf ("\n %d", a-b);
-
-return 0;
-
-}</code></pre>
-
-The output of the above program is_____`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img17.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["20","25","24","23"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img18.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -256,7 +99,7 @@ The output of the above program is_____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img19.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img20.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -264,35 +107,9 @@ The output of the above program is_____`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following program
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int main()
-{
-    int a=10,b=20, c = 24;
-    for (int i = 0;i&lt;7;i++)
-    {
-        switch(i)
-        {
-            default:
-                b^c||a++;
-                break;
-            case 6:
-                b--*70;
-                break;
-            case 5:
-                c = a&gt;&gt;=4;
-                break;
-            case 1:
-                a++ + b++ - c++;
-                break;
-        }
-    }
-    printf("%d \n",a+b+c);
-    return 0;
-}</code></pre>`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img21.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["25","20","31","7"],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: `<img src="/images/quiz/pw-c-prog/q_img22.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -302,7 +119,7 @@ int main()
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img23.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: `<img src="/images/quiz/pw-c-prog/q_img24.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -310,24 +127,7 @@ int main()
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following program
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int fun(int num)
-{
-    static int count = 0;
-    count = count + num;
-    return count;
-}
-
-int main ()
-{
-    int y=15,z;
-    z = fun(fun(y | 10));
-    y = fun(fun(z&gt;&gt;2));
-    printf("%d", z+y);
-}</code></pre>
-Output of the program is ________`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img25.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "104",
@@ -337,29 +137,9 @@ Output of the program is ________`,
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `The integer value printed by the ANSI-C program given below is.
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int bar(int y){
-static int x = 12;
-x+=y;
-return x;
-}
-
-int foo(int y){
-static int x = 1;
-x+=10;
-return bar(x+y);
-}
-
-int main(){
-int x=10,y;
-y = foo(bar(x))+x;
-printf("%d\n", (x+y));
-return 0;
-}</code></pre>`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img27.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["52","630","75","63"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img28.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -369,7 +149,7 @@ return 0;
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img29.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img30.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -377,22 +157,7 @@ return 0;
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `consider the following c-prog.
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
-
-int a []={61,72,18,81,64,87 };
-int b []={43,89,83,91 };
-int*x[]={a, a+3, b+2, b, b+3 };
-int main(){
-int **ptr;
-ptr = x;
-++ptr;
-printf ("%d",*ptr[1]+3+*(ptr[1]-2));
-return 0;
-}</code></pre>
-
-what will be the output of the above program?`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img31.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "129",
@@ -404,7 +169,7 @@ what will be the output of the above program?`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img33.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "A",
       solution: `<img src="/images/quiz/pw-c-prog/q_img34.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -414,7 +179,7 @@ what will be the output of the above program?`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img35.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "D",
       solution: `<img src="/images/quiz/pw-c-prog/q_img36.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -422,28 +187,7 @@ what will be the output of the above program?`,
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following program
-
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include &lt;stdio.h&gt;
-
-void fun(int *a , int *b)
-{
-    do
-    {
-        *a-=2;
-        *b+= 1;
-    }while (*a - *b &lt; 20);
-}
-
-int main()
-{
-    int a = 100, b = 20;
-    fun(&amp;a, &amp;b);
-    printf("%d", a+b);
-    return 0;
-}</code></pre>
-
-The value printed by the program is _____`,
+      text: `<img src="/images/quiz/pw-c-prog/q_img37.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "116",
@@ -455,7 +199,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img39.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "D",
       solution: `<img src="/images/quiz/pw-c-prog/q_img40.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -465,7 +209,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img41.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img42.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -475,7 +219,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img43.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "B",
       solution: `<img src="/images/quiz/pw-c-prog/q_img44.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -485,7 +229,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img45.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "D",
       solution: `<img src="/images/quiz/pw-c-prog/q_img46.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -515,7 +259,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img51.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img52.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -555,7 +299,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img59.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img60.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
@@ -565,7 +309,7 @@ The value printed by the program is _____`,
       type: "MCQ",
       text: `<img src="/images/quiz/pw-c-prog/q_img61.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
       image: "",
-      options: ["A","B","C","D"],
+      options: ["A", "B", "C", "D"],
       answer: "D",
       solution: `<img src="/images/quiz/pw-c-prog/q_img62.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
