@@ -336,7 +336,7 @@ registerTest({
       neg: 0,
       type: "MCQ",
       text: `Consider the following expression using variable
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>-p + q - r + - s % t / u;</code></pre>
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>-p + q - r + - s % t / u;</code></pre>
 Which of the following are TRUE ?`,
       image: "",
       options: ["p = 2, q = 11, r = 7, s = -9, t = 6, u = 2 the expression evaluated to 3", "p = 2, q = 11, r = 7, s = 9, t = 6, u = 2 the expression evaluated to 1", "p = 2, q = 11, r = 7, s = -9, t = 6 , u = 3 the expression evaluated to 2", "p = 2, q = 10, r = 7, s = -9, t = 6 , u = 2 the expression evaluated to 3"],
@@ -348,7 +348,7 @@ Which of the following are TRUE ?`,
       neg: 0,
       type: "NAT",
       text: `What will be output if you will execute following c code?
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 int main()
 {
 
@@ -378,7 +378,7 @@ return 0 ;
       neg: 0,
       type: "MCQ",
       text: `Consider the following C-declaration and assignments.
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>char *a, *b, c[10], d[10];</code></pre>
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>char *a, *b, c[10], d[10];</code></pre>
 Which assignments will result in error ?`,
       image: "",
       options: ["a = b; // Line 1", "b = c++; // Line", "c = d; // line 3", "*b = d[1]; // Line 4"],
@@ -391,7 +391,7 @@ Which assignments will result in error ?`,
       type: "MCQ",
       text: `What will be output if you will execute following c code?
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int bar(int num)
 {
@@ -419,7 +419,7 @@ return 0;
       type: "NAT",
       text: `consider the following C-Prog
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 int foo(int n)
 {
 int j=1,i;
@@ -444,7 +444,7 @@ The return value of foo(6) is _________`,
       type: "NAT",
       text: `Consider the following C program
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code># include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code># include &lt;stdio.h&gt;
 int acc;
 void foo(int**, int);
 
@@ -479,7 +479,7 @@ What will be the output of the program?`,
       type: "MCQ",
       text: `Consider the following program
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int main ()
 {
@@ -508,7 +508,7 @@ printf("%d", ch);
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 int main()
 {
 
@@ -547,7 +547,7 @@ The output of the program is _______`,
       type: "MCQ",
       text: `Find the output of the following program.
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code># include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code># include &lt;stdio.h&gt;
 
 int main ()
 {
@@ -583,7 +583,7 @@ The output of the above program is_____`,
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following function written in the C programming language.
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 
 void bar(char*);
 
@@ -635,7 +635,7 @@ What is the output of the above C program?`,
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int main()
 {
@@ -671,7 +671,7 @@ int main()
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 
 int main (int argc, char* argv [])
 {
@@ -685,7 +685,7 @@ return 0;
 }</code></pre>
 ASCII encoding for relevant characters is given below
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>*  = 42
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>*  = 42
 +  = 43
 -  = 45</code></pre>
 
@@ -700,7 +700,7 @@ output of the program is ________`,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int fun(int num)
 {
@@ -727,7 +727,7 @@ Output of the program is ________`,
       neg: 0.33,
       type: "MCQ",
       text: `The integer value printed by the ANSI-C program given below is.
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int bar(int y){
 static int x = 12;
@@ -757,7 +757,7 @@ return 0;
       neg: 0.66,
       type: "MCQ",
       text: `Consider the following program.
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int bar(int a, int b)
 {
@@ -789,7 +789,7 @@ The output of the function is________`,
       type: "NAT",
       text: `consider the following c-prog.
 
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int a []={61,72,18,81,64,87 };
 int b []={43,89,83,91 };
@@ -813,7 +813,7 @@ what will be the output of the above program?`,
       neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 int main()
 {
 int arr[3][3]={1,2,3,4,5,23,3,22,91};
@@ -837,7 +837,7 @@ The output of the above program is______`,
       neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int main()
 {
@@ -879,7 +879,7 @@ The output of the program is ______`,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 
 void fun(int *a , int *b)
 {
@@ -909,7 +909,7 @@ The value printed by the program is _____`,
       neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #f8f9fa; color: #333; padding: 15px 20px; border-radius: 6px; overflow-x: auto; font-family: Consolas, 'Courier New', monospace; font-size: 15px; line-height: 1.6; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 
 int fun(int n) {
 
