@@ -1047,456 +1047,321 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the number in the sequence
-
-130, 126, 122, 115, 109, 95, 86, 72, 49, 30, 21, 15, 9, 2
-
-Using binary search, the number of comparisons that will be required to search for the element '126' are________?`,
+      text: `<img src="/images/quiz/pw-algo/q_img1.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "4",
-      solution: `<img src="/images/quiz/pw-algo/q_img2.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img2.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following code
-<pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">void AJ(int n)
-{
-  for(i = 0; (i * i) &lt; n; i++)
-  {
-    for (j = n; j &gt;= 0; j = j/2)
-    {
-      printf("Aditya Jain Sir");
-    }
-  }
-}</code></pre>
-What is the worst case time complexity of above program?`,
+      text: `<img src="/images/quiz/pw-algo/q_img3.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["O(n*log n)", "O(log n * log n)", "O(√n)", "O(√n * log n)"],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img4.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img4.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following Graph G:
-<img src="/images/quiz/pw-algo/q_img5.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-DFS is applied on above graph starting at P, and selection of adjacent vertex in DFS decided by the Lexicographical order in Graph G.
-
-Then what is the number of cross edges after DFS is performed_____?
-
-(Note: Visit adjacent vertex Q before vertex S Starting from source vertex P)`,
+      text: `<img src="/images/quiz/pw-algo/q_img5.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "2",
-      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Given 6 sorted files having 70, 20, 25 ,15, 30 and 50 records respectively. You have to merge them into a single sorted file, by merging 2 files at a time. If the minimum number of record movements required by the most efficient algorithm are 'a' and the Best-case number of elements comparisons that are required are 'b' then the value of a + b is?`,
+      text: `<img src="/images/quiz/pw-algo/q_img7.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["1015", "725", "1020", "1025"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following array
-<img src="/images/quiz/pw-algo/q_img9.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If the remaining 4 elements are to be picked from the set {10,45,30,35} in some order to be placed in the above array.
-Then the minimum number of inversions that are possible in the above array are_______?`,
+      text: `<img src="/images/quiz/pw-algo/q_img9.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "18",
-      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following array that is to be sorted in ascending order using Selection sort.
-<img src="/images/quiz/pw-algo/q_img11.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-Then what will be 8th element after the 6th pass?`,
+      text: `<img src="/images/quiz/pw-algo/q_img11.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["55", "46", "82", "90"],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following array
-<img src="/images/quiz/pw-algo/q_img13.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-What are the total number of comparisons required to sort this array in ascending order using Insertion sort?`,
+      text: `<img src="/images/quiz/pw-algo/q_img13.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["20", "30", "26", "15"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following array.
-<img src="/images/quiz/pw-algo/q_img15.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If Radix sort is used to sort the above array in ascending order, then the 7th element after the 3rd pass is?`,
+      text: `<img src="/images/quiz/pw-algo/q_img15.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["355", "290", "177", "433"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `Consider the following directed graph G.
-<img src="/images/quiz/pw-algo/q_img17.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-Suppose Dijkstra's SSSP algorithm is applied to find the minimum path cost for all the vertices with F as the source vertex.
-
-What will be the cost of the shortest path from F to A, reported by it___?`,
+      text: `<img src="/images/quiz/pw-algo/q_img17.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "11",
-      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following array of elements
-
-[29, 17, 30, 27, 52, 15, 12, 5, 70, 11, 65, 29, 200].
-
-The minimum number of interchanges needed to convert it into a max-heap are?
-
-**Note:** It is not mandatory to insert one element at a time.`,
+      text: `<img src="/images/quiz/pw-algo/q_img19.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["8", "7", "9", "10"],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider an array of 64 elements. Assume that a Quick sort algorithm in the Best case takes 0.5 minutes to sort this array in ascending order.
-
-What are the maximum number of elements that can be sorted in 6 minutes in the above setting? (Select the closest possible answer)`,
+      text: `<img src="/images/quiz/pw-algo/q_img21.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["128", "2048", "512", "1024"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "MCQ",
-      text: `Consider a following graph
-<img src="/images/quiz/pw-algo/q_img23.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-Which of the following represents the valid Topological ordering for the given graph G?`,
+      text: `<img src="/images/quiz/pw-algo/q_img23.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["ACBDEF", "ABCDEF", "AEBCDF", "ABCEDF"],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "MCQ",
-      text: `Consider the following graph.
-<img src="/images/quiz/pw-algo/q_img25.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-Which of the following represents the valid DFS traversal?`,
+      text: `<img src="/images/quiz/pw-algo/q_img25.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["XSPTQRWVU", "PSWUTVXRQ", "VWXRQPSTU", "TUWVXRQPS"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "MCQ",
-      text: `Assume that, quick sort implementation is used to sort an array in ascending order.
-
-After the first partition step has been completed, the contents of the array are in the following order.
-
-500, 300, 400, 200, 800, 900, 1200, 1000, 1400, 1100, 1600
-
-Which of the following elements could be selected as a pivot element in first partition ?`,
+      text: `<img src="/images/quiz/pw-algo/q_img27.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["400", "300", "800", "1600"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Suppose P, Q, R, S, T, U, V, W are sorted sequences having lengths 100, 45, 10, 26, 50, 30, 35, 60 respectively. They are to be merged into a single sequence by merging together two sequences at a time.
-
-The number of comparisons that will be needed in the worst case by the optimal algorithm for doing this is_______.`,
+      text: `<img src="/images/quiz/pw-algo/q_img29.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "997",
-      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Given the following set of functions,
-
-Sort the functions in descending order of asymptotic(big-O) complexity.
-
-f1(n) = 2n, f2(n) = (0.7)ⁿ, f3(n) = n^(logn), f4(n) = 10, f5(n) = (log n)ⁿ`,
+      text: `<img src="/images/quiz/pw-algo/q_img31.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["f4(n), f2(n), f1(n), f5(n), f3(n)", "f5(n), f3(n), f1(n), f4(n), f2(n)", "f2(n), f4(n), f1(n), f5(n), f3(n)", "f1(n), f5(n), f4(n), f3(n), f2(n)"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following array
-<img src="/images/quiz/pw-algo/q_img33.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If Bubble sort is applied to sort the above array in ascending order, and if in doing this, the number of swaps required are 'p' and number of comparisons required are 'q' then the value of p + q is_____?`,
+      text: `<img src="/images/quiz/pw-algo/q_img33.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "45",
-      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `The number of distinct MCSTs of the following graph is 'a' and the cost of the MCST reported by Kruskal Algorithm is 'b', then the value of a * b is?
-<img src="/images/quiz/pw-algo/q_img35.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
+      text: `<img src="/images/quiz/pw-algo/q_img35.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["725", "720", "730", "719"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the matrices A, B, C and D with dimensions 2 x 10, 10 x 5, 5 x 4 and 4 x 20 respectively.
-
-These 4 matrices are to be multiplied into a single resultant matrix.
-
-In doing this, if the minimum number of scalar multiplications required are 'm' and the maximum number of scalar multiplications required are 'n', then the value of n-m is_________?`,
+      text: `<img src="/images/quiz/pw-algo/q_img37.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "1500",
-      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the given characters M, N, O, P and Q each occurring with the probability of 0.2, 0.35, 0.1, 0.15, 0.2 respectively.
-
-If we need to encode a given text of 200 characters.
-
-Two encoding techniques are used to encode this message as below:
-
-The first is simple Uniform Binary encoding which requires 'a' bits.
-
-The second encoding is the optimal encoding technique which requires 'b' bits to do this.
-
-Then the value of a-b is_________?`,
+      text: `<img src="/images/quiz/pw-algo/q_img39.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "150",
-      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following instances of the job-sequencing with deadline problem:
-<img src="/images/quiz/pw-algo/q_img41.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If the optimal technique is used to solve this problem, let the maximum profit be denoted by 'x' and the number of jobs included in the optimal solution be denoted by 'y'.
-
-then the value of x+y is _______?`,
+      text: `<img src="/images/quiz/pw-algo/q_img41.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "145",
-      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider is the weighted graph G given by
-<img src="/images/quiz/pw-algo/q_img43.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If the total number of distinct MCSTs for the above given Graph are 'x' and the cost of the MCST is 'y' then the value of y - x is?`,
+      text: `<img src="/images/quiz/pw-algo/q_img43.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["109", "107", "106", "105"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Assume that there are 10n² sorted lists each of size n/5.
-
-If all of these lists are to be merged into a single sorted list by merging 2 lists at a time, then what is the time complexity of merging them into single sorted list by using the most optimal merging technique?`,
+      text: `<img src="/images/quiz/pw-algo/q_img45.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["θ(n² log n)", "θ(n log n)", "θ(n³ log n)", "θ(n²)"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following undirected graph with edge weights as shown below:
-<img src="/images/quiz/pw-algo/q_img47.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-The difference between the maximum possible cost and the minimum possible cost for a spanning tree for the above graph is_______?`,
+      text: `<img src="/images/quiz/pw-algo/q_img47.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "32",
-      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following code
-<pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">i = √n;
-while (i &gt; 0)
-{
-  j = 1;
-  while (j &lt; log(n))
-  {
-    j = 2 * j;
-  }
-  i = i / 2;
-}</code></pre>
-Time complexity of above code in terms of Big-Oh?`,
+      text: `<img src="/images/quiz/pw-algo/q_img49.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["(logn)²", "√(logn)", "((log n) * log(log n))", "log logn"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img50.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img50.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Assume that there are 4 sorted lists of n/4 elements each, if these lists are merged into a single sorted list of 'n' elements then how many key comparisons are required in the worst case using an efficient algorithm?`,
+      text: `<img src="/images/quiz/pw-algo/q_img51.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["2n - 3", "(7/4)n - 3", "(9/4)n - 3", "(6/4)n - 3"],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img52.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img52.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following Graph G.
-<img src="/images/quiz/pw-algo/q_img53.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-If the cost of the MCST by Prims is 'x' and the number of distinct MCSTs reported by Kruskal are 'y', then the value of x-y is_____?`,
+      text: `<img src="/images/quiz/pw-algo/q_img53.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "41",
-      solution: `<img src="/images/quiz/pw-algo/q_img54.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img54.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "MCQ",
-      text: `Which of the following statements is/are true?`,
+      text: `<img src="/images/quiz/pw-algo/q_img55.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["In an undirected graph, the shortest path between two nodes always lies on some minimum spanning tree", "If every edge of the graph has distinct weight, then Maximum weight spanning tree is unique.", "In Huffman coding,if all the items are of distinct probabilities, then the item with the second lowest probability is always at the leaf that is farthest from the root", "In Huffman coding,if all the items are of distinct probabilities, then the item with the highest probability is always at a leaf that is the child of the root."],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img56.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img56.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `A message is made up of the characters J, K, L, M and O with the probability given below.
-
-| Character | Probability |
-|---|---|
-| J | 0.20 |
-| K | 0.33 |
-| L | 0.37 |
-| M | 0.04 |
-| O | 0.06 |
-
-What are the total number of bits required to represent the following text:
-
-“KJMOLJKM”,
-
-Using the most optimal encoding technique.`,
+      text: `<img src="/images/quiz/pw-algo/q_img57.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["20", "23", "25", "27"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img58.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img58.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following graph
-<img src="/images/quiz/pw-algo/q_img59.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">
-Suppose after applying DFS traversal starting from node 'A' and the nodes are visited in lexicographical order. (Note: Visit Adjacent vertex B before C from Starting vertex A)
-
-If the number of tree edges are 't'
-
-The number of forward edges are 'f'
-
-And the number of back edges are 'b'
-
-Then the value of t + f - b is _______?`,
+      text: `<img src="/images/quiz/pw-algo/q_img59.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: [],
       answer: "3",
-      solution: `<img src="/images/quiz/pw-algo/q_img60.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img60.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following statements : - (Assume all the elements are distinct)
-1. The largest element in a min heap is always at a leaf node.
-2. The second smallest element in a min heap is always a child of the root node.
-3. We can find the smallest element in a max-heap in O(n) time.
-4. The third smallest element in a min heap is always a child of the root node.
-
-Which of the above statements are TRUE?`,
+      text: `<img src="/images/quiz/pw-algo/q_img61.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["1, 3 and 4", "2, 3 and 4", "1, 2 and 3", "1, 2 and 4"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img62.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img62.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
     {
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `Consider the following matrices with given dimensions
-
-x₁ is 4 × 5
-x₂ is 5 × 10
-x₃ is 10 × 20
-x₄ is 20 × 1
-
-Which of the following multiplication order gives optimal solution to multiply this chain of matrix into a resultant matrix?`,
+      text: `<img src="/images/quiz/pw-algo/q_img63.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
       image: "",
       options: ["((x₁x₂)x₃)x₄", "(x₁(x₂x₃))x₄", "x₁((x₂x₃)x₄)", "x₁(x₂(x₃x₄))"],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img64.png" style="display: block; max-width: 75%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img64.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
   ]
 });
