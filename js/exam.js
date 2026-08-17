@@ -948,7 +948,8 @@ async function startPlayer(testName, fetchedQuestions) {
     return el;
   };
   _id("playerTopTitle").textContent = testName || "GATE 2027 Online Test Series";
-  _id("playerSectionName").textContent = testName || "GATE 2027 Online Test Series";
+  const secNameEl = document.getElementById("playerSectionName");
+  if (secNameEl) secNameEl.textContent = testName || "GATE 2027 Online Test Series";
   _id("playerSideSecName").textContent = testName || "GATE 2027 Online Test Series";
   const user = currentUser || { name: "Guest User", email: "" };
   _id("playerUserAvatar").textContent = (user.name.trim().charAt(0) || "U").toUpperCase();
