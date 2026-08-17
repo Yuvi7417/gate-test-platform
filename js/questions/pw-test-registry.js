@@ -1,3 +1,4 @@
+
 registerTest({
   series: "pw-cs-gate-2026",
   name: "SWt - C programming",
@@ -6,341 +7,13 @@ registerTest({
     {
       marks: 1,
       neg: 0,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img1.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "A",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img2.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img3.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "740",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img4.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img5.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "B",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img6.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img7.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "A",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img8.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img9.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "243",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img10.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img11.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "30",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img12.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img13.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "A",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img14.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img15.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img16.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img17.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img18.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img19.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img20.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img21.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "B",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img22.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img23.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "B",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img24.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img25.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "104",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img26.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img27.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img28.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img29.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img30.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img31.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "129",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img32.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img33.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "A",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img34.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img35.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "D",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img36.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img37.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "116",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img38.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img39.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "D",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img40.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img41.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img42.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img43.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "B",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img44.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img45.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "D",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img46.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img47.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "5",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img48.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img49.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "14",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img50.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img51.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img52.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img53.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "40",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img54.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img55.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "33",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img56.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img57.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "24",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img58.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img59.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img60.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-c-prog/q_img61.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: ["A", "B", "C", "D"],
-      answer: "D",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img62.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<img src="/images/quiz/pw-c-prog/q_img63.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`,
-      image: "",
-      options: [],
-      answer: "40",
-      solution: `<img src="/images/quiz/pw-c-prog/q_img64.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
-    },
-  ]
-});
-
-registerTest({
-  series: "pw-cs-gate-2026",
-  name: "SWt - C programming-1",
-  date: "Oct 01, 2026",
-  questions: [
-    {
-      marks: 1,
-      neg: 0,
-      type: "MCQ",
+      type: "MSQ",
       text: `Consider the following expression using variable
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">-p + q - r + - s % t / u;</code></pre>
 Which of the following are TRUE ?`,
       image: "",
       options: ["p = 2, q = 11, r = 7, s = -9, t = 6, u = 2 the expression evaluated to 3", "p = 2, q = 11, r = 7, s = 9, t = 6, u = 2 the expression evaluated to 1", "p = 2, q = 11, r = 7, s = -9, t = 6 , u = 3 the expression evaluated to 2", "p = 2, q = 10, r = 7, s = -9, t = 6 , u = 2 the expression evaluated to 3"],
-      answer: "A",
+      answer: ["A", "B"],
       solution: `<img src="/images/quiz/pw-c-prog/q_img2.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
@@ -376,13 +49,13 @@ return 0 ;
     {
       marks: 1,
       neg: 0,
-      type: "MCQ",
+      type: "MSQ",
       text: `Consider the following C-declaration and assignments.
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">char *a, *b, c[10], d[10];</code></pre>
 Which assignments will result in error ?`,
       image: "",
       options: ["a = b; // Line 1", "b = c++; // Line", "c = d; // line 3", "*b = d[1]; // Line 4"],
-      answer: "B",
+      answer: ["B", "C"],
       solution: `<img src="/images/quiz/pw-c-prog/q_img6.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
@@ -440,7 +113,7 @@ The return value of foo(6) is _________`,
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0,
       type: "NAT",
       text: `Consider the following C program
 
@@ -943,8 +616,8 @@ The output of the program is ______`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img40.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">#include&lt;stdio.h&gt;
@@ -977,8 +650,8 @@ The value printed by above program is ________
       solution: `<img src="/images/quiz/pw-c-prog/q_img42.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following C program?
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">#include&lt;stdio.h&gt;
@@ -1007,8 +680,8 @@ Which of the following is output of the above program?`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img44.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">#include &lt;stdio.h&gt;
@@ -1041,7 +714,7 @@ The output of the program is __________`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img46.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
@@ -1075,7 +748,7 @@ The output of the program is _______`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img48.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
@@ -1115,8 +788,8 @@ The output of the program is __________`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img50.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following two functions.
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">void fun1 (int n){
@@ -1145,7 +818,7 @@ The output printed when fun1(8) is called is__________`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img52.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
@@ -1185,7 +858,7 @@ The Output of the program is ________`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img54.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following recursive definition of fib:
@@ -1207,7 +880,7 @@ The number of times '+' will be done for an evaluation of fib (8) is __________`
       solution: `<img src="/images/quiz/pw-c-prog/q_img56.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
@@ -1238,8 +911,8 @@ Output of the program is __________`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img58.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following structure declaration
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">#include &lt;stdio.h&gt;
@@ -1278,8 +951,8 @@ What is the output of the following program`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img60.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
-      neg: 0.33,
+      marks: 2,
+      neg: 0.66,
       type: "MCQ",
       text: `Consider the following program
 <pre class="line-numbers" style="margin: 15px 0; border: 1px solid #ddd; border-radius: 5px;"><code class="language-c">#include &lt;stdio.h&gt;
@@ -1322,7 +995,7 @@ The output of the program is_____`,
       solution: `<img src="/images/quiz/pw-c-prog/q_img62.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
-      marks: 1,
+      marks: 2,
       neg: 0,
       type: "NAT",
       text: `Consider the following program
