@@ -359,7 +359,8 @@ window.testSeries = [
       },
     ],
     schedule: [
-      ["SWt - C programming", "Oct 01, 2026"]
+      ["SWt - C programming", "Oct 01, 2026"],
+      ["SWt - C programming-1", "Oct 01, 2026"]
     ],
     oldPrice: "₹500",
     price: "₹98 + GST",
