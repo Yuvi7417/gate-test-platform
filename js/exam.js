@@ -1747,7 +1747,11 @@ function confirmSubmit() {
       unattempted++;
       isUnattempted = true;
     } else if (q.type === "MSQ") {
-      const correctArr = [...q.correct].sort();
+      const correctVal = q.correct !== undefined ? q.correct : q.answer;
+      let correctArr = [...(correctVal || [])].sort();
+      if (typeof correctArr[0] === "string" && /^[A-D]$/i.test(correctArr[0])) {
+        correctArr = correctArr.map(c => c.toUpperCase().charCodeAt(0) - 65).sort();
+      }
       const givenArr = [...given].sort();
       isCorrect =
         correctArr.length === givenArr.length &&
@@ -1761,7 +1765,16 @@ function confirmSubmit() {
       }
     } else if (q.type === "NAT") {
       const val = parseFloat(given);
-      if (!isNaN(val) && q.correct && val >= q.correct[0] && val <= (q.correct[1] !== undefined ? q.correct[1] : q.correct[0])) {
+      const correctVal = q.correct !== undefined ? q.correct : q.answer;
+      let cMin, cMax;
+      if (Array.isArray(correctVal)) {
+        cMin = correctVal[0];
+        cMax = correctVal[1] !== undefined ? correctVal[1] : correctVal[0];
+      } else {
+        cMin = parseFloat(correctVal);
+        cMax = cMin;
+      }
+      if (!isNaN(val) && cMin !== undefined && val >= cMin && val <= cMax) {
         isCorrect = true;
         correctCount++;
         score += q.marks;
@@ -1769,13 +1782,20 @@ function confirmSubmit() {
         wrongCount++;
         score -= q.neg;
       }
-    } else if (given === q.correct) {
-      isCorrect = true;
-      correctCount++;
-      score += q.marks;
     } else {
-      wrongCount++;
-      score -= q.neg;
+      const correctVal = q.correct !== undefined ? q.correct : q.answer;
+      let cIdx = correctVal;
+      if (typeof correctVal === "string" && /^[A-D]$/i.test(correctVal)) {
+        cIdx = correctVal.toUpperCase().charCodeAt(0) - 65;
+      }
+      if (given === cIdx) {
+        isCorrect = true;
+        correctCount++;
+        score += q.marks;
+      } else {
+        wrongCount++;
+        score -= q.neg;
+      }
     }
 
     playerState[i].isCorrect = isCorrect;
