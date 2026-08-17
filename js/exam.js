@@ -849,7 +849,6 @@ function proceedFromInstructions() {
 
   // Check local test registry first!
   if (window.testMap && window.testMap[backendTestId]) {
-    closeInstructions();
     startPlayer(pendingTestName, window.testMap[backendTestId]);
     return;
   }
@@ -871,7 +870,6 @@ function proceedFromInstructions() {
       btn.disabled = false;
 
       if (data.success) {
-        closeInstructions();
         startPlayer(pendingTestName, data.questions);
       } else {
         alert("Error loading test: " + data.message);
@@ -1001,6 +999,7 @@ async function startPlayer(testName, fetchedQuestions) {
 
   renderPlayer();
 
+  closeInstructions();
   document.getElementById("playerOverlay").classList.add("show");
   document.body.style.overflow = "hidden";
 }
