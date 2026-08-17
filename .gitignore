@@ -11,3 +11,4 @@ js/ce-test-registry.src.js
 
 .vercel
 .env*
+js/ee-test-registry.src.js
