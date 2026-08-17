@@ -5107,3 +5107,6 @@ main {
   min-width: 24px;
   text-align: center;
 }
+#playerSectionTabsContainer .player-sectiontab {
+  margin-right: 0;
+}
