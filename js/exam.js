@@ -894,6 +894,8 @@ let playerDurationMins = 90;
 let playerTimerSecs = playerDurationMins * 60;
 let playerTimerInterval = null;
 let solutionMode = false;
+let playerSections = null;
+let currentSectionIndex = 0;
 
 let syncStateTimeout = null;
 function syncTestState() {
@@ -934,6 +936,8 @@ async function fetchCloudBookmarks() {
 async function startPlayer(testName, fetchedQuestions) {
   solutionMode = false;
   playerQuestions = fetchedQuestions;
+  playerSections = null;
+  currentSectionIndex = 0;
   if (!playerQuestions || playerQuestions.length === 0) {
     alert("This test's questions are not available yet. Please check back soon.");
     return;
@@ -963,6 +967,10 @@ async function startPlayer(testName, fetchedQuestions) {
   
   if (isFullTest) {
     playerDurationMins = 180;
+    playerSections = [
+      { name: "Aptitude", start: 0, end: 9 },
+      { name: "Technical", start: 10, end: Math.max(10, playerQuestions.length - 1) }
+    ];
   } else if (isTopicwiseTest || isWeeklyQuizTest) {
     playerDurationMins = 45;
   } else {
@@ -998,6 +1006,42 @@ async function startPlayer(testName, fetchedQuestions) {
 
 function renderPlayer() {
   const _id = (id) => document.getElementById(id);
+  
+  if (playerSections) {
+    let tabsHtml = "";
+    playerSections.forEach((sec, idx) => {
+      tabsHtml += `
+      <div class="player-sectiontab ${idx === currentSectionIndex ? 'active' : ''}" onclick="window.switchSection(${idx})">
+        ${sec.name} <i class="section-info-icon">i</i>
+        <div class="section-tooltip" id="tooltip-sec-${idx}">
+          <div class="section-tooltip-title">${sec.name} Section</div>
+          <div class="section-tooltip-row"><span>Answered:</span> <span class="section-tooltip-badge" style="background:#2f9e63" id="sec-${idx}-ans">0</span></div>
+          <div class="section-tooltip-row"><span>Not Answered:</span> <span class="section-tooltip-badge" style="background:#d9534f" id="sec-${idx}-noans">0</span></div>
+          <div class="section-tooltip-row"><span>Marked for Review:</span> <span class="section-tooltip-badge" style="background:#6f42c1" id="sec-${idx}-mark">0</span></div>
+          <div class="section-tooltip-row"><span>Not Visited:</span> <span class="section-tooltip-badge" style="background:#94a3b8" id="sec-${idx}-notvis">0</span></div>
+        </div>
+      </div>
+      `;
+    });
+    const container = _id("playerSectionTabsContainer");
+    if(container) {
+      container.innerHTML = tabsHtml;
+    }
+  } else {
+    const container = _id("playerSectionTabsContainer");
+    if(container) {
+      container.innerHTML = `
+        <div class="player-sectiontab active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          <span id="playerSectionName">${_id("playerTopTitle").textContent}</span>
+        </div>
+      `;
+    }
+  }
+
   _id("playerQGrid").innerHTML = "";
   renderPlayerQGrid();
   renderPlayerQuestion(playerCurrent);
@@ -1116,7 +1160,12 @@ function renderPlayerQuestion(i) {
     if (!el) throw new Error("Element not found: " + id);
     return el;
   };
-  _id("playerQNum").textContent = "Question No. " + (i + 1);
+  
+  let displayNum = i + 1;
+  if (playerSections && playerSections[currentSectionIndex]) {
+    displayNum = i - playerSections[currentSectionIndex].start + 1;
+  }
+  _id("playerQNum").textContent = "Question No. " + displayNum;
   _id("playerQText").innerHTML = q.text;
   _id("playerMarksPos").textContent = "Marks for correct answer: +" + q.marks;
   _id("playerMarksNeg").textContent = "Negative Marks: -" + q.neg;
@@ -1506,12 +1555,28 @@ function playerSaveMarkReview() {
   goToNextQuestion();
 }
 
+window.switchSection = function(idx) {
+  currentSectionIndex = idx;
+  renderPlayer();
+  const firstQ = playerSections[idx].start;
+  renderPlayerQuestion(firstQ);
+};
+
 function goToNextQuestion() {
-  if (playerCurrent < playerQuestions.length - 1) {
-    renderPlayerQuestion(playerCurrent + 1);
+  if (playerSections) {
+    const sec = playerSections[currentSectionIndex];
+    if (playerCurrent < sec.end) {
+      renderPlayerQuestion(playerCurrent + 1);
+    } else if (currentSectionIndex < playerSections.length - 1) {
+      window.switchSection(currentSectionIndex + 1);
+    } else {
+      if (!solutionMode) playerSubmit();
+    }
   } else {
-    if (!solutionMode) {
-      playerSubmit();
+    if (playerCurrent < playerQuestions.length - 1) {
+      renderPlayerQuestion(playerCurrent + 1);
+    } else {
+      if (!solutionMode) playerSubmit();
     }
   }
   updatePlayerCounts();
@@ -1519,12 +1584,20 @@ function goToNextQuestion() {
 
 function renderPlayerQGrid() {
   const grid = document.getElementById("playerQGrid");
-  grid.innerHTML = playerQuestions
-    .map(
-      (q, i) =>
-        `<button class="player-qbtn" id="qbtn-${i}" onclick="renderPlayerQuestion(${i})">${i + 1}</button>`,
-    )
-    .join("");
+  let startIdx = 0;
+  let endIdx = playerQuestions.length - 1;
+  
+  if (playerSections && playerSections[currentSectionIndex]) {
+    startIdx = playerSections[currentSectionIndex].start;
+    endIdx = playerSections[currentSectionIndex].end;
+  }
+  
+  let html = "";
+  for(let i = startIdx; i <= endIdx; i++) {
+    const displayNum = playerSections ? (i - startIdx + 1) : (i + 1);
+    html += `<button class="player-qbtn" id="qbtn-${i}" onclick="renderPlayerQuestion(${i})">${displayNum}</button>`;
+  }
+  grid.innerHTML = html;
 }
 
 function updatePlayerQBtn(i) {
@@ -1567,23 +1640,52 @@ function updatePlayerCounts() {
     notAnswered = 0,
     notVisited = 0,
     marked = 0;
+    
+  let sectionStats = [];
+  if (playerSections) {
+    sectionStats = playerSections.map(() => ({ ans: 0, noans: 0, mark: 0, notvis: 0 }));
+  }
+
   playerQuestions.forEach((q, i) => {
     const st = playerState[i] || { visited: false, answer: null, marked: false, timeSpent: 0 };
     updatePlayerQBtn(i);
-    if (!st.visited) notVisited++;
-    else if (st.answer !== null) answered++;
-    else notAnswered++;
-    if (st.marked) marked++;
+    
+    let isAns = false, isNoans = false, isNotvis = false, isMark = false;
+    
+    if (!st.visited) { notVisited++; isNotvis = true; }
+    else if (st.answer !== null && st.answer !== undefined && st.answer !== "") { answered++; isAns = true; }
+    else { notAnswered++; isNoans = true; }
+    if (st.marked) { marked++; isMark = true; }
+    
+    if (playerSections) {
+      playerSections.forEach((sec, idx) => {
+        if (i >= sec.start && i <= sec.end) {
+          if (isAns) sectionStats[idx].ans++;
+          if (isNoans) sectionStats[idx].noans++;
+          if (isNotvis) sectionStats[idx].notvis++;
+          if (isMark) sectionStats[idx].mark++;
+        }
+      });
+    }
   });
+
   const _id = (id) => {
     const el = document.getElementById(id);
-    if (!el) throw new Error("Element not found: " + id);
     return el;
   };
-  _id("cntAnswered").textContent = answered;
-  _id("cntNotAnswered").textContent = notAnswered;
-  _id("cntNotVisited").textContent = notVisited;
-  _id("cntMarked").textContent = marked;
+  if (_id("cntAnswered")) _id("cntAnswered").textContent = answered;
+  if (_id("cntNotAnswered")) _id("cntNotAnswered").textContent = notAnswered;
+  if (_id("cntNotVisited")) _id("cntNotVisited").textContent = notVisited;
+  if (_id("cntMarked")) _id("cntMarked").textContent = marked;
+  
+  if (playerSections) {
+    playerSections.forEach((sec, idx) => {
+      if (_id(`sec-${idx}-ans`)) _id(`sec-${idx}-ans`).textContent = sectionStats[idx].ans;
+      if (_id(`sec-${idx}-noans`)) _id(`sec-${idx}-noans`).textContent = sectionStats[idx].noans;
+      if (_id(`sec-${idx}-mark`)) _id(`sec-${idx}-mark`).textContent = sectionStats[idx].mark;
+      if (_id(`sec-${idx}-notvis`)) _id(`sec-${idx}-notvis`).textContent = sectionStats[idx].notvis;
+    });
+  }
 }
 
 function playerSubmit() {

@@ -5038,3 +5038,72 @@ main {
 
 /* Prettify Codebox Styles */
 .pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun,.opn,.clo{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:2px;border:1px solid #888;background-color:#f8f9fa;overflow-x:auto;}ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
+/* Section Tabs Extension */
+.player-sectiontab {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  padding: 10px 16px;
+  color: var(--ink-deep);
+  border-right: 1px solid var(--paper-line);
+}
+.player-sectiontab.active {
+  background: #14619c;
+  color: #fff;
+  border-right-color: #14619c;
+}
+.player-sectiontab .section-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  font-size: 11px;
+  font-style: italic;
+  font-family: serif;
+  margin-left: 6px;
+}
+.player-sectiontab.active .section-info-icon {
+  background: rgba(255,255,255,0.25);
+}
+.section-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #d4e3f8;
+  color: #1a2332;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  padding: 12px;
+  width: 200px;
+  z-index: 1000;
+  display: none;
+  font-family: sans-serif;
+  font-size: 13px;
+  cursor: default;
+}
+.player-sectiontab:hover .section-tooltip {
+  display: block;
+}
+.section-tooltip-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.section-tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.section-tooltip-badge {
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
