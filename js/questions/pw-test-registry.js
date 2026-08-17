@@ -328,7 +328,7 @@ registerTest({
 
 registerTest({
   series: "pw-cs-gate-2026",
-  name: "SWt - C programming-1",
+  name: "SWt - C programming",
   date: "Oct 01, 2026",
   questions: [
     {
@@ -336,7 +336,7 @@ registerTest({
       neg: 0,
       type: "MCQ",
       text: `Consider the following expression using variable
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>-p + q - r + - s % t / u;</code></pre>
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>-p + q - r + - s % t / u;</code></pre>
 Which of the following are TRUE ?`,
       image: "",
       options: ["p = 2, q = 11, r = 7, s = -9, t = 6, u = 2 the expression evaluated to 3", "p = 2, q = 11, r = 7, s = 9, t = 6, u = 2 the expression evaluated to 1", "p = 2, q = 11, r = 7, s = -9, t = 6 , u = 3 the expression evaluated to 2", "p = 2, q = 10, r = 7, s = -9, t = 6 , u = 2 the expression evaluated to 3"],
@@ -348,7 +348,7 @@ Which of the following are TRUE ?`,
       neg: 0,
       type: "NAT",
       text: `What will be output if you will execute following c code?
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 int main()
 {
 
@@ -378,7 +378,7 @@ return 0 ;
       neg: 0,
       type: "MCQ",
       text: `Consider the following C-declaration and assignments.
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>char *a, *b, c[10], d[10];</code></pre>
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>char *a, *b, c[10], d[10];</code></pre>
 Which assignments will result in error ?`,
       image: "",
       options: ["a = b; // Line 1", "b = c++; // Line", "c = d; // line 3", "*b = d[1]; // Line 4"],
@@ -391,7 +391,7 @@ Which assignments will result in error ?`,
       type: "MCQ",
       text: `What will be output if you will execute following c code?
 
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int bar(int num)
 {
@@ -419,7 +419,7 @@ return 0;
       type: "NAT",
       text: `consider the following C-Prog
 
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 int foo(int n)
 {
 int j=1,i;
@@ -444,7 +444,7 @@ The return value of foo(6) is _________`,
       type: "NAT",
       text: `Consider the following C program
 
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code># include &lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code># include &lt;stdio.h&gt;
 int acc;
 void foo(int**, int);
 
@@ -479,7 +479,7 @@ What will be the output of the program?`,
       type: "MCQ",
       text: `Consider the following program
 
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include&lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
 
 int main ()
 {
@@ -508,7 +508,7 @@ printf("%d", ch);
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following program
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 int main()
 {
 
@@ -547,7 +547,7 @@ The output of the program is _______`,
       type: "MCQ",
       text: `Find the output of the following program.
 
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code># include &lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code># include &lt;stdio.h&gt;
 
 int main ()
 {
@@ -583,7 +583,7 @@ The output of the above program is_____`,
       neg: 0.33,
       type: "MCQ",
       text: `Consider the following function written in the C programming language.
-<pre style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: monospace; font-size: 14px; border: 1px solid #ddd;"><code>#include &lt;stdio.h&gt;
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
 
 void bar(char*);
 
@@ -629,6 +629,318 @@ What is the output of the above C program?`,
       options: ["abcd", "bdbd", "bddb", "bbdd"],
       answer: "C",
       solution: `<img src="/images/quiz/pw-c-prog/q_img20.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int main()
+{
+    int a=10,b=20, c = 24;
+    for (int i = 0;i&lt;7;i++)
+    {
+        switch(i)
+        {
+            default:
+                b^c||a++;
+                break;
+            case 6:
+                b--*70;
+                break;
+            case 5:
+                c = a&gt;&gt;=4;
+                break;
+            case 1:
+                a++ + b++ - c++;
+                break;
+        }
+    }
+    printf("%d \n",a+b+c);
+    return 0;
+}</code></pre>`,
+      image: "",
+      options: ["25", "20", "31", "7"],
+      answer: "B",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img22.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+
+int main (int argc, char* argv [])
+{
+char a = 'R';
+char b = 'j';
+char c = ++a|b? (a-- &amp; b)+'*':(b^a) - '-';
+char d = (c-- ^ b) + '*' ;
+char e = (~c + c + 67);
+printf ("%c %c %c", c,d,e);
+return 0;
+}</code></pre>
+ASCII encoding for relevant characters is given below
+
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>*  = 42
++  = 43
+-  = 45</code></pre>
+
+output of the program is ________`,
+      image: "",
+      options: ["Z k s", "k 0 B", "L 0 A", "N t 9"],
+      answer: "B",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img24.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int fun(int num)
+{
+    static int count = 0;
+    count = count + num;
+    return count;
+}
+
+int main ()
+{
+    int y=15,z;
+    z = fun(fun(y | 10));
+    y = fun(fun(z&gt;&gt;2));
+    printf("%d", z+y);
+}</code></pre>
+Output of the program is ________`,
+      image: "",
+      options: [],
+      answer: "104",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img26.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `The integer value printed by the ANSI-C program given below is.
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int bar(int y){
+static int x = 12;
+x+=y;
+return x;
+}
+
+int foo(int y){
+static int x = 1;
+x+=10;
+return bar(x+y);
+}
+
+int main(){
+int x=10,y;
+y = foo(bar(x))+x;
+printf("%d\n", (x+y));
+return 0;
+}</code></pre>`,
+      image: "",
+      options: ["52", "630", "75", "63"],
+      answer: "C",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img28.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following program.
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int bar(int a, int b)
+{
+return a&gt;b?a:b ;
+}
+
+int foo(int *A, int n)
+{
+if (n == 1)
+return A[0];
+return bar(A[n-1], foo(A, n-1));
+}
+
+int main()
+{
+int a[] = {11,2,33,4,5};
+printf("%d", foo(a,5));
+return 0;
+}</code></pre>
+The output of the function is________`,
+      image: "",
+      options: ["11", "5", "33", "4"],
+      answer: "C",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img30.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `consider the following c-prog.
+
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int a []={61,72,18,81,64,87 };
+int b []={43,89,83,91 };
+int*x[]={a, a+3, b+2, b, b+3 };
+int main(){
+int **ptr;
+ptr = x;
+++ptr;
+printf ("%d",*ptr[1]+3+*(ptr[1]-2));
+return 0;
+}</code></pre>
+
+what will be the output of the above program?`,
+      image: "",
+      options: [],
+      answer: "129",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img32.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+int main()
+{
+int arr[3][3]={1,2,3,4,5,23,3,22,91};
+int i, j;
+int *ptr1;
+int **ptr2 = &amp;ptr1;
+ptr1 = (*arr+1);
+++*ptr2;
+ptr1++;
+printf("%d", ++*ptr1 + ++**ptr2 );
+return 0;
+}</code></pre>
+The output of the above program is______`,
+      image: "",
+      options: ["11", "9", "8", "10"],
+      answer: "A",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img34.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include&lt;stdio.h&gt;
+
+int main()
+{
+
+int tot = 21, a[5] = {1, 2, 3, 4, 5};
+
+int *p;
+
+int **p1= &amp;p;
+
+for (int i = 0;i&lt;5;i++){
+
+p =a;
+
+for (int j = 0; j&lt; a[i];j++)
+{
+
+tot+= *p+**p1+a[i];
+
+p++;
+
+}
+
+}
+
+printf("%d", tot);
+
+return 0;
+
+}</code></pre>
+The output of the program is ______`,
+      image: "",
+      options: ["66", "76", "55", "146"],
+      answer: "D",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img36.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+
+void fun(int *a , int *b)
+{
+    do
+    {
+        *a-=2;
+        *b+= 1;
+    }while (*a - *b &lt; 20);
+}
+
+int main()
+{
+    int a = 100, b = 20;
+    fun(&amp;a, &amp;b);
+    printf("%d", a+b);
+    return 0;
+}</code></pre>
+
+The value printed by the program is _____`,
+      image: "",
+      options: [],
+      answer: "116",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img38.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `Consider the following program
+<pre style="background-color: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 8px; overflow-x: auto; font-family: 'Fira Code', Consolas, Monaco, monospace; font-size: 15px; line-height: 1.6; border: 1px solid #333; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin: 15px 0;"><code>#include &lt;stdio.h&gt;
+
+int fun(int n) {
+
+static int sum = 7300;
+
+for(int i=0; i &lt; n; i++) {
+
+for(int j=i; j &gt;= 5; j--) {
+
+sum--;
+
+}
+
+}
+
+return sum;
+
+}
+
+int main() {
+
+printf("%d", fun(100)+fun(50));
+
+return 0;
+
+}</code></pre>
+The output of the program is ______`,
+      image: "",
+      options: ["2740", "1715", "1035", "4445"],
+      answer: "D",
+      solution: `<img src="/images/quiz/pw-c-prog/q_img40.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
   ]
 });
