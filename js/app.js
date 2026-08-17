@@ -478,6 +478,43 @@ window.testSeries = [
     brandLabel: "APEX EASY"
   },
   {
+    id: "ee-gate-pyq-2027",
+    code: "EE",
+    examTag: "GATE 2027",
+    subjectTag: "Electrical Engineering",
+    title: "EE-GATE 2027 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 47,
+    startDate: "2026-03-07",
+    endDate: "2027-02-15",
+    session: "2025-2026",
+    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "March 07, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    oldPrice: "₹1400",
+    price: "₹114 + GST",
+    basePrice: 114,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
+  {
     id: "ee-gate-pyq",
     code: "EE",
     examTag: "GATE 2026",
