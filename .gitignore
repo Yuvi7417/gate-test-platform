@@ -8,3 +8,6 @@ js/ME-test-registry.src.js
 js/quiz-test-registry.src.js
 js/ese-ce-test-registry.src.js
 js/ce-test-registry.src.js
+
+.vercel
+.env*
