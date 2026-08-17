@@ -1335,6 +1335,9 @@ function renderPlayerQuestion(i) {
       document.getElementById("playerSolutionBox")
     ]).catch((err) => console.log('MathJax typeset failed: ' + err.message));
   }
+  if (window.Prism) {
+    Prism.highlightAllUnder(document.getElementById("playerQText"));
+  }
   updateBookmarkBtnState();
 }
 
