@@ -330,7 +330,7 @@ window.testSeries = [
     // comingSoon: true
   },
   {
-    id: "pw-cs-gate-2027",
+    id: "pw-cs-gate-2026",
     code: "CSE",
     examTag: "GATE 2026",
     subjectTag: "Computer Science",
@@ -359,6 +359,7 @@ window.testSeries = [
       },
     ],
     schedule: [
+      ["SWt - C programming", "Oct 01, 2026"]
     ],
     oldPrice: "₹500",
     price: "₹98 + GST",
@@ -1032,12 +1033,12 @@ function removeBookmark(key) {
     const testId = bookmarks[key].testId;
     delete bookmarks[key];
     localStorage.setItem("apex_bookmarks", JSON.stringify(bookmarks));
-    
+
     // Update cloudBookmarks if in exam.js context
     if (typeof cloudBookmarks !== 'undefined') {
       delete cloudBookmarks[key];
     }
-    
+
     renderBookmarks();
 
     const token = localStorage.getItem('apexcore_token');
