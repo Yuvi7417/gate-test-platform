@@ -309,7 +309,9 @@ function firebaseGoogleLogin() {
       console.error("Firebase Login Error:", error);
       btn.innerHTML = `Continue with Google`;
       btn.disabled = false;
-      alert("Google Sign-In failed: " + error.message);
+      if (error.code !== 'auth/popup-closed-by-user') {
+        alert("Google Sign-In failed: " + error.message);
+      }
     });
 }
 
