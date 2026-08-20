@@ -899,6 +899,9 @@ let currentSectionIndex = 0;
 
 let syncStateTimeout = null;
 function syncTestState() {
+  // Syncing to backend disabled as per user request to start fresh on every load
+  return;
+  /*
   if (solutionMode) return;
   const token = localStorage.getItem('apexcore_token');
   if (!token) return;
@@ -917,6 +920,7 @@ function syncTestState() {
       })
     }).catch(e => console.error("Test state sync error:", e));
   }, 2000);
+  */
 }
 
 let cloudBookmarks = {};
@@ -980,24 +984,24 @@ async function startPlayer(testName, fetchedQuestions) {
   
   playerTimerSecs = playerDurationMins * 60;
 
-  // Cloud Sync Resume Check
-  const token = localStorage.getItem('apexcore_token');
-  if (token && !solutionMode) {
-    try {
-      const res = await fetch(`/api/sync/teststate/${encodeURIComponent(testName)}`, {
-        headers: { 'Authorization': `Bearer ${token}` }
-      });
-      const data = await res.json();
-      if (data.success && data.testState) {
-        playerState = data.testState.playerState;
-        playerCurrent = data.testState.playerCurrent || 0;
-        playerTimerSecs = data.testState.playerTimerSecs || playerTimerSecs;
-        console.log("Resumed test from cloud state");
-      }
-    } catch(err) {
-      console.error("Failed to fetch cloud test state", err);
-    }
-  }
+  // Cloud Sync Resume Check (Disabled as per user request to always start fresh)
+  // const token = localStorage.getItem('apexcore_token');
+  // if (token && !solutionMode) {
+  //   try {
+  //     const res = await fetch(`/api/sync/teststate/${encodeURIComponent(testName)}`, {
+  //       headers: { 'Authorization': `Bearer ${token}` }
+  //     });
+  //     const data = await res.json();
+  //     if (data.success && data.testState) {
+  //       playerState = data.testState.playerState;
+  //       playerCurrent = data.testState.playerCurrent || 0;
+  //       playerTimerSecs = data.testState.playerTimerSecs || playerTimerSecs;
+  //       console.log("Resumed test from cloud state");
+  //     }
+  //   } catch(err) {
+  //     console.error("Failed to fetch cloud test state", err);
+  //   }
+  // }
 
   renderPlayer();
 
