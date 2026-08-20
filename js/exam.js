@@ -1969,7 +1969,7 @@ async function showResultPage(explicitTestName) {
   ).toUpperCase();
   document.getElementById("resultUserName").textContent = user.name;
   document.getElementById("resultUserEmail").textContent = user.email;
-  const testName = explicitTestName || document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  const testName = explicitTestName || document.getElementById("playerTopTitle").textContent;
   document.getElementById("resultCrumbName").textContent = testName;
 
   document.getElementById("rdScore").textContent = r.score + " / " + r.maxScore;
@@ -2069,7 +2069,7 @@ let __advancedStats = null;
 async function renderAdvancedCharts() {
   if (typeof Chart === 'undefined') return;
 
-  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  const testName = document.getElementById("playerTopTitle").textContent;
 
   if (!__advancedStats) {
     try {
@@ -2220,7 +2220,7 @@ async function openLeaderboard() {
   body.innerHTML = '<div class="leaderboard-empty">Loading leaderboard...</div>';
   sticky.innerHTML = '';
 
-  const testName = document.getElementById("playerSideSecName").textContent || document.getElementById("playerTopTitle").textContent;
+  const testName = document.getElementById("playerTopTitle").textContent;
 
   try {
     const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
