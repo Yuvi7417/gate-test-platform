@@ -1085,221 +1085,733 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img5.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following Graph G:</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="24" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+  </defs>
+  <line x1="150" y1="30" x2="60" y2="100" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="30" x2="240" y2="100" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="100" x2="150" y2="30" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="60" y1="100" x2="100" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="100" x2="100" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="240" y1="100" x2="200" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="100" x2="200" y2="180" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="150" y1="100" x2="150" y2="260" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="100" y1="180" x2="150" y2="260" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="200" y1="180" x2="150" y2="260" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+  <g fill="#fff" stroke="#000" stroke-width="2">
+    <circle cx="150" cy="30" r="18" />
+    <circle cx="60" cy="100" r="18" />
+    <circle cx="150" cy="100" r="18" />
+    <circle cx="240" cy="100" r="18" />
+    <circle cx="100" cy="180" r="18" />
+    <circle cx="200" cy="180" r="18" />
+    <circle cx="150" cy="260" r="18" />
+  </g>
+  <g fill="#000" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" dominant-baseline="central">
+    <text x="150" y="32">P</text>
+    <text x="60" y="102">Q</text>
+    <text x="150" y="102">R</text>
+    <text x="240" y="102">S</text>
+    <text x="100" y="182">T</text>
+    <text x="200" y="182">U</text>
+    <text x="150" y="262">V</text>
+  </g>
+</svg>
+</div>
+<p>DFS is applied on above graph starting at P, and selection of adjacent vertex in DFS decided by the Lexicographical order in Graph G.</p>
+<p>Then what is the number of cross edges after DFS is performed_______?</p>
+<p>(Note: Visit adjacent vertex Q before vertex S Starting from source vertex P)</p>`,
       image: "",
       options: [],
       answer: "2",
-      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img7.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Given 6 sorted files having 70, 20, 25, 15, 30 and 50 records respectively. You have to merge them into a single sorted file, by merging 2 files at a time. If the minimum number of record movements required by the most efficient algorithm are 'a' and the Best-case number of elements comparisons that are required are 'b' then the value of a + b is?</p>`,
       image: "",
-      options: ["1015", "725", "1020", "1025"],
+      options: [
+        `1015`,
+        `725`,
+        `1020`,
+        `1025`
+      ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img9.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array</p>
+<table border="1" cellpadding="10" style="border-collapse: collapse; text-align: center; font-size: 18px; margin: 15px 0;">
+    <tr>
+        <td style="width: 50px;">70</td>
+        <td style="width: 50px;">?</td>
+        <td style="width: 50px;">?</td>
+        <td style="width: 50px;">60</td>
+        <td style="width: 50px;">?</td>
+        <td style="width: 50px;">25</td>
+        <td style="width: 50px;">?</td>
+        <td style="width: 50px;">5</td>
+    </tr>
+</table>
+<p>If the remaining 4 elements are to be picked from the set {10, 45, 30, 35} in some order to be placed in the above array.<br><br>
+Then the minimum number of inversions that are possible in the above array are _______?</p>`,
       image: "",
       options: [],
       answer: "18",
-      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img11.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array that is to be sorted in ascending order using Selection sort.</p>
+<table border="1" cellpadding="10" style="border-collapse: collapse; text-align: center; font-size: 18px; margin: 15px 0;">
+    <tr>
+        <td style="width: 50px;">15</td>
+        <td style="width: 50px;">90</td>
+        <td style="width: 50px;">82</td>
+        <td style="width: 50px;">30</td>
+        <td style="width: 50px;">46</td>
+        <td style="width: 50px;">55</td>
+        <td style="width: 50px;">39</td>
+        <td style="width: 50px;">21</td>
+    </tr>
+</table>
+<p>Then what will be 8th element after the 6th pass?</p>`,
       image: "",
-      options: ["55", "46", "82", "90"],
+      options: [
+        `55`,
+        `46`,
+        `82`,
+        `90`
+      ],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img13.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array</p>
+<table border="1" cellpadding="10" style="border-collapse: collapse; text-align: center; font-size: 18px; margin: 15px 0;">
+    <tr>
+        <td style="width: 50px;">100</td>
+        <td style="width: 50px;">90</td>
+        <td style="width: 50px;">50</td>
+        <td style="width: 50px;">80</td>
+        <td style="width: 50px;">70</td>
+        <td style="width: 50px;">35</td>
+        <td style="width: 50px;">49</td>
+        <td style="width: 50px;">51</td>
+    </tr>
+</table>
+<p>What are the total number of comparisons required to sort this array in ascending order using Insertion sort?</p>`,
       image: "",
-      options: ["20", "30", "26", "15"],
+      options: [
+        `20`,
+        `30`,
+        `26`,
+        `15`
+      ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img15.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array.</p>
+<table border="1" cellpadding="10" style="border-collapse: collapse; text-align: center; font-size: 18px; margin: 15px 0;">
+    <tr>
+        <td style="width: 50px;">2122</td>
+        <td style="width: 50px;">177</td>
+        <td style="width: 50px;">355</td>
+        <td style="width: 50px;">57</td>
+        <td style="width: 50px;">290</td>
+        <td style="width: 50px;">433</td>
+        <td style="width: 50px;">146</td>
+        <td style="width: 50px;">3520</td>
+        <td style="width: 50px;">26</td>
+        <td style="width: 50px;">1020</td>
+    </tr>
+</table>
+<p>If Radix sort is used to sort the above array in ascending order, then the 7th element after the 3rd pass is?</p>`,
       image: "",
-      options: ["355", "290", "177", "433"],
+      options: [
+        `355`,
+        `290`,
+        `177`,
+        `433`
+      ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img17.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following directed graph G.</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="850" height="500" viewBox="0 0 850 500" xmlns="http://www.w3.org/2000/svg" style="font-family: serif; max-width: 100%; height: auto;">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="24" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+
+  <g stroke="#000" stroke-width="2" fill="none">
+    <!-- Top Curve A->D -->
+    <path d="M 100,250 C 150,50 450,50 550,150" marker-end="url(#arrowhead)"/>
+    <!-- Bottom Curve C->F -->
+    <path d="M 300,350 C 400,480 650,480 750,250" marker-end="url(#arrowhead)"/>
+    
+    <!-- Straight Lines -->
+    <line x1="750" y1="250" x2="550" y2="150" marker-end="url(#arrowhead)"/> <!-- F->D -->
+    <line x1="750" y1="250" x2="550" y2="350" marker-end="url(#arrowhead)"/> <!-- F->E -->
+    <line x1="550" y1="150" x2="300" y2="150" marker-end="url(#arrowhead)"/> <!-- D->B -->
+    <line x1="550" y1="150" x2="550" y2="350" marker-end="url(#arrowhead)"/> <!-- D->E -->
+    <line x1="300" y1="150" x2="100" y2="250" marker-end="url(#arrowhead)"/> <!-- B->A -->
+    <line x1="300" y1="150" x2="300" y2="350" marker-end="url(#arrowhead)"/> <!-- B->C -->
+    
+    <line x1="300" y1="150" x2="750" y2="250" marker-end="url(#arrowhead)"/> <!-- B->F -->
+    
+    <line x1="550" y1="350" x2="300" y2="150" marker-end="url(#arrowhead)"/> <!-- E->B -->
+    <line x1="550" y1="350" x2="100" y2="250" marker-end="url(#arrowhead)"/> <!-- E->A -->
+    
+    <line x1="550" y1="350" x2="300" y2="350" marker-end="url(#arrowhead)"/> <!-- E->C -->
+    <line x1="300" y1="350" x2="100" y2="250" marker-end="url(#arrowhead)"/> <!-- C->A -->
+  </g>
+
+  <g font-size="22" fill="#000" text-anchor="middle" style="paint-order: stroke; stroke: #fff; stroke-width: 6px; stroke-linecap: round; stroke-linejoin: round;">
+    <text x="325" y="90">12</text> <!-- A->D -->
+    <text x="525" y="460">10</text> <!-- C->F -->
+    <text x="650" y="190">4</text> <!-- F->D -->
+    <text x="650" y="325">5</text> <!-- F->E -->
+    <text x="425" y="140">9</text> <!-- D->B -->
+    <text x="575" y="250">50</text> <!-- D->E -->
+    <text x="200" y="185">4</text> <!-- B->A -->
+    <text x="325" y="250">90</text> <!-- B->C -->
+    <text x="475" y="200">80</text> <!-- B->F -->
+    <text x="475" y="260">3</text> <!-- E->B -->
+    <text x="270" y="290">6</text> <!-- E->A -->
+    <text x="425" y="375">4</text> <!-- E->C -->
+    <text x="200" y="325">2</text> <!-- C->A -->
+  </g>
+
+  <g fill="#fff" stroke="#000" stroke-width="2">
+    <circle cx="100" cy="250" r="22" />
+    <circle cx="300" cy="150" r="22" />
+    <circle cx="300" cy="350" r="22" />
+    <circle cx="550" cy="150" r="22" />
+    <circle cx="550" cy="350" r="22" />
+    <circle cx="750" cy="250" r="22" />
+  </g>
+
+  <g font-size="24" fill="#000" font-family="serif" text-anchor="middle" dominant-baseline="central">
+    <text x="100" y="252">A</text>
+    <text x="300" y="152">B</text>
+    <text x="300" y="352">C</text>
+    <text x="550" y="152">D</text>
+    <text x="550" y="352">E</text>
+    <text x="750" y="252">F</text>
+  </g>
+</svg>
+</div>
+<p>Suppose Dijkstra's SSSP algorithm is applied to find the minimum path cost for all the vertices with F as the source vertex.</p>
+<p>What will be the cost of the shortest path from F to A, reported by it_______?</p>`,
       image: "",
       options: [],
       answer: "11",
-      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img19.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array of elements</p>
+<p>[29, 17, 30, 27, 52, 15, 12, 5, 70, 11, 65, 29, 200].</p>
+<p>The minimum number of interchanges needed to convert it into a max-heap are?</p>
+<p><strong>Note:</strong> It is not mandatory to insert one element at a time.</p>`,
       image: "",
-      options: ["8", "7", "9", "10"],
+      options: [
+        `8`,
+        `7`,
+        `9`,
+        `10`
+      ],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img21.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider an array of 64 elements. Assume that a Quick sort algorithm in the Best case takes 0.5 minutes to sort this array in ascending order.</p>
+<p>What are the maximum number of elements that can be sorted in 6 minutes in the above setting? (Select the closest possible answer)</p>`,
       image: "",
-      options: ["128", "2048", "512", "1024"],
+      options: [
+        `128`,
+        `2048`,
+        `512`,
+        `1024`
+      ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img23.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      type: "MSQ",
+      text: `<p>Consider a following graph</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow12" viewBox="0 0 10 10" refX="24" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+  </defs>
+  <g stroke="#000" stroke-width="2">
+    <line x1="50" y1="50" x2="150" y2="50" marker-end="url(#arrow12)" />
+    <line x1="150" y1="50" x2="250" y2="50" marker-end="url(#arrow12)" />
+    <line x1="50" y1="150" x2="150" y2="150" marker-end="url(#arrow12)" />
+    <line x1="150" y1="150" x2="250" y2="150" marker-end="url(#arrow12)" />
+    <line x1="50" y1="50" x2="50" y2="150" marker-end="url(#arrow12)" />
+    <line x1="150" y1="50" x2="150" y2="150" marker-end="url(#arrow12)" />
+    <line x1="250" y1="50" x2="250" y2="150" marker-end="url(#arrow12)" />
+  </g>
+  <g fill="#fff" stroke="#000" stroke-width="2">
+    <circle cx="50" cy="50" r="18" />
+    <circle cx="150" cy="50" r="18" />
+    <circle cx="250" cy="50" r="18" />
+    <circle cx="50" cy="150" r="18" />
+    <circle cx="150" cy="150" r="18" />
+    <circle cx="250" cy="150" r="18" />
+  </g>
+  <g fill="#000" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" dominant-baseline="central">
+    <text x="50" y="52">A</text>
+    <text x="150" y="52">C</text>
+    <text x="250" y="52">D</text>
+    <text x="50" y="152">B</text>
+    <text x="150" y="152">E</text>
+    <text x="250" y="152">F</text>
+  </g>
+</svg>
+</div>
+<p>Which of the following represents the valid Topological ordering for the given graph G?</p>`,
       image: "",
-      options: ["ACBDEF", "ABCDEF", "AEBCDF", "ABCEDF"],
-      answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      options: [
+        `ACBDEF`,
+        `ABCDEF`,
+        `AEBCDF`,
+        `ABCEDF`
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img25.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      type: "MSQ",
+      text: `<p>Consider the following graph.</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Undirected edges -->
+  <g stroke="#000" stroke-width="2" fill="none">
+    <path d="M 280,150 C 350,200 350,350 200,300" />
+    <line x1="150" y1="50" x2="250" y2="100" />
+    <line x1="150" y1="50" x2="150" y2="120" />
+    <line x1="150" y1="50" x2="90" y2="130" />
+    <line x1="250" y1="100" x2="280" y2="150" />
+    <line x1="150" y1="120" x2="280" y2="150" />
+    <line x1="150" y1="120" x2="90" y2="130" />
+    <line x1="150" y1="120" x2="250" y2="280" />
+    <line x1="150" y1="120" x2="200" y2="300" />
+    <line x1="280" y1="150" x2="250" y2="280" />
+    <line x1="90" y1="130" x2="90" y2="280" />
+    <line x1="90" y1="280" x2="90" y2="400" />
+    <line x1="90" y1="280" x2="200" y2="300" />
+    <line x1="90" y1="400" x2="200" y2="300" />
+    <line x1="200" y1="300" x2="250" y2="280" />
+  </g>
+  <!-- Nodes -->
+  <g fill="#000" stroke="#000" stroke-width="2">
+    <circle cx="150" cy="50" r="6" />
+    <circle cx="250" cy="100" r="6" />
+    <circle cx="280" cy="150" r="6" />
+    <circle cx="150" cy="120" r="6" />
+    <circle cx="90" cy="130" r="6" />
+    <circle cx="90" cy="280" r="6" />
+    <circle cx="90" cy="400" r="6" />
+    <circle cx="200" cy="300" r="6" />
+    <circle cx="250" cy="280" r="6" />
+  </g>
+  <!-- Labels -->
+  <g font-size="22" fill="#000" font-family="serif" text-anchor="middle" dominant-baseline="central">
+    <text x="150" y="30">P</text>
+    <text x="270" y="90">Q</text>
+    <text x="305" y="150">R</text>
+    <text x="130" y="110">S</text>
+    <text x="70" y="130">T</text>
+    <text x="65" y="280">U</text>
+    <text x="90" y="425">V</text>
+    <text x="200" y="325">W</text>
+    <text x="250" y="255">X</text>
+  </g>
+</svg>
+</div>
+<p>Which of the following represents the valid DFS traversal?</p>`,
       image: "",
-      options: ["XSPTQRWVU", "PSWUTVXRQ", "VWXRQPSTU", "TUWVXRQPS"],
-      answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      options: [
+        `XSPTQRWVU`,
+        `PSWUTVXRQ`,
+        `VWXRQPSTU`,
+        `TUWVXRQPS`
+      ],
+      answer: ["B", "C", "D"],
+      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="max-width: 75%;">`
     },
     {
       marks: 1,
       neg: 0,
-      type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img27.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      type: "MSQ",
+      text: `<p>Assume that, quick sort implementation is used to sort an array in ascending order.</p>
+<p>After the first partition step has been completed, the contents of the array are in the following order.</p>
+<p>500, 300, 400, 200, 800, 900, 1200, 1000, 1400, 1100, 1600</p>
+<p>Which of the following elements could be selected as a pivot element in first partition?</p>`,
       image: "",
-      options: ["400", "300", "800", "1600"],
-      answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      options: [
+        `400`,
+        `300`,
+        `800`,
+        `1600`
+      ],
+      answer: ["C", "D"],
+      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img29.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Suppose P, Q, R, S, T, U, V, W are sorted sequences having lengths 100, 45, 10, 26, 50, 30, 35, 60 respectively. They are to be merged into a single sequence by merging together two sequences at a time.</p>
+<p>The number of comparisons that will be needed in the worst case by the optimal algorithm for doing this is ______.</p>`,
       image: "",
       options: [],
       answer: "997",
-      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
-      neg: 0.66,
+      neg: 0.67,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img31.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Given the following set of functions,</p>
+<p>Sort the functions in descending order of asymptotic(big-O) complexity.</p>
+<p>\\(f_1(n) = 2n, f_2(n) = (0.7)^n, f_3(n) = n^{\\log n}, f_4(n) = 10, f_5(n) = (\\log n)^n\\)</p>`,
       image: "",
-      options: ["f4(n), f2(n), f1(n), f5(n), f3(n)", "f5(n), f3(n), f1(n), f4(n), f2(n)", "f2(n), f4(n), f1(n), f5(n), f3(n)", "f1(n), f5(n), f4(n), f3(n), f2(n)"],
+      options: [
+        `\\(f_4(n), f_2(n), f_1(n), f_5(n), f_3(n)\\)`,
+        `\\(f_5(n), f_3(n), f_1(n), f_4(n), f_2(n)\\)`,
+        `\\(f_2(n), f_4(n), f_1(n), f_5(n), f_3(n)\\)`,
+        `\\(f_1(n), f_5(n), f_4(n), f_3(n), f_2(n)\\)`
+      ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img33.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following array</p>
+<div style="margin: 20px 0;">
+<table style="border-collapse: collapse; text-align: center; font-size: 20px;">
+  <tr>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">20</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">92</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">55</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">32</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">48</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">25</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">61</td>
+    <td style="border: 2px solid #000; padding: 10px 20px; width: 60px;">5</td>
+  </tr>
+</table>
+</div>
+<p>If Bubble sort is applied to sort the above array in ascending order, and if in doing this, the number of swaps required are &lsquo;p&rsquo; and number of comparisons required are &lsquo;q&rsquo; then the value of p + q is______?</p>`,
       image: "",
       options: [],
       answer: "45",
-      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
-      neg: 0.66,
+      neg: 0.67,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img35.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>The number of distinct MCSTs of the following graph is &lsquo;a&rsquo; and the cost of the MCST reported by Kruskal Algorithm is &lsquo;b&rsquo;, then the value of a * b is?</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#000" stroke-width="2">
+    <!-- Outer edges -->
+    <line x1="50" y1="150" x2="120" y2="80" />
+    <line x1="120" y1="80" x2="280" y2="80" />
+    <line x1="280" y1="80" x2="350" y2="150" />
+    <line x1="350" y1="150" x2="280" y2="220" />
+    <line x1="280" y1="220" x2="120" y2="220" />
+    <line x1="120" y1="220" x2="50" y2="150" />
+    <!-- Inner edges to center (g) -->
+    <line x1="50" y1="150" x2="200" y2="150" />
+    <line x1="120" y1="80" x2="200" y2="150" />
+    <line x1="280" y1="80" x2="200" y2="150" />
+    <line x1="350" y1="150" x2="200" y2="150" />
+    <line x1="280" y1="220" x2="200" y2="150" />
+    <line x1="120" y1="220" x2="200" y2="150" />
+  </g>
+  <g fill="#fff" stroke="#000" stroke-width="2">
+    <circle cx="50" cy="150" r="16" />
+    <circle cx="120" cy="80" r="16" />
+    <circle cx="280" cy="80" r="16" />
+    <circle cx="350" cy="150" r="16" />
+    <circle cx="280" cy="220" r="16" />
+    <circle cx="120" cy="220" r="16" />
+    <circle cx="200" cy="150" r="16" />
+  </g>
+  <g font-size="18" fill="#000" font-family="serif" text-anchor="middle" dominant-baseline="central">
+    <text x="50" y="152">a</text>
+    <text x="120" y="82">b</text>
+    <text x="280" y="82">c</text>
+    <text x="350" y="152">d</text>
+    <text x="280" y="222">e</text>
+    <text x="120" y="222">f</text>
+    <text x="200" y="152">g</text>
+  </g>
+  <g font-size="16" fill="#000" font-family="serif" text-anchor="middle">
+    <!-- Edge weights -->
+    <text x="75" y="105">10</text>
+    <text x="200" y="65">30</text>
+    <text x="325" y="105">10</text>
+    <text x="325" y="205">10</text>
+    <text x="200" y="210">30</text>
+    <text x="75" y="205">10</text>
+    
+    <text x="125" y="140">20</text>
+    <text x="160" y="110">20</text>
+    <text x="240" y="110">20</text>
+    <text x="275" y="140">20</text>
+    <text x="240" y="185">20</text>
+    <text x="160" y="185">20</text>
+  </g>
+</svg>
+</div>`,
       image: "",
-      options: ["725", "720", "730", "719"],
+      options: [
+        `725`,
+        `720`,
+        `730`,
+        `719`
+      ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img37.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the matrices A, B, C and D with dimensions 2 &times; 10, 10 &times; 5, 5 &times; 4 and 4 &times; 20 respectively.</p>
+<p>These 4 matrices are to be multiplied into a single resultant matrix.</p>
+<p>In doing this, if the minimum number of scalar multiplications required are &lsquo;m&rsquo; and the maximum number of scalar multiplications required are &lsquo;n&rsquo;, then the value of n-m is________?</p>`,
       image: "",
       options: [],
       answer: "1500",
-      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img39.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the given characters M, N, O, P and Q each occurring with the probability of 0.2, 0.35, 0.1, 0.15, 0.2 respectively.</p>
+<p>If we need to encode a given text of 200 characters.</p>
+<p>Two encoding techniques are used to encode this message as below:</p>
+<p>The first is simple Uniform Binary encoding which requires &lsquo;a&rsquo; bits.</p>
+<p>The second encoding is the optimal encoding technique which requires &lsquo;b&rsquo; bits to do this.</p>
+<p>Then the value of a-b is_________?</p>`,
       image: "",
       options: [],
       answer: "150",
-      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img41.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following instances of the job-sequencing with deadline problem:</p>
+<div style="margin: 20px 0; overflow-x: auto;">
+<table style="border-collapse: collapse; text-align: center; font-size: 18px; width: 100%; max-width: 600px;">
+  <tr>
+    <td style="border: 1px solid #000; padding: 10px;">Job</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_1\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_2\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_3\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_4\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_5\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_6\\)</td>
+    <td style="border: 1px solid #000; padding: 10px;">\\(J_7\\)</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; padding: 10px;">Deadline</td>
+    <td style="border: 1px solid #000; padding: 10px;">5</td>
+    <td style="border: 1px solid #000; padding: 10px;">4</td>
+    <td style="border: 1px solid #000; padding: 10px;">3</td>
+    <td style="border: 1px solid #000; padding: 10px;">2</td>
+    <td style="border: 1px solid #000; padding: 10px;">1</td>
+    <td style="border: 1px solid #000; padding: 10px;">2</td>
+    <td style="border: 1px solid #000; padding: 10px;">4</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #000; padding: 10px;">Profit</td>
+    <td style="border: 1px solid #000; padding: 10px;">20</td>
+    <td style="border: 1px solid #000; padding: 10px;">15</td>
+    <td style="border: 1px solid #000; padding: 10px;">30</td>
+    <td style="border: 1px solid #000; padding: 10px;">25</td>
+    <td style="border: 1px solid #000; padding: 10px;">35</td>
+    <td style="border: 1px solid #000; padding: 10px;">40</td>
+    <td style="border: 1px solid #000; padding: 10px;">10</td>
+  </tr>
+</table>
+</div>
+<p>If the optimal technique is used to solve this problem, let the maximum profit be denoted by 'x' and the number of jobs included in the optimal solution be denoted by 'y'.</p>
+<p>then the value of x+y is ______?</p>`,
       image: "",
       options: [],
       answer: "145",
-      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
-      neg: 0.66,
+      neg: 0.67,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img43.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider is the weighted graph G given by</p>
+<div style="margin: 20px 0;">
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#000" stroke-width="2">
+    <!-- Rectangle BCDE -->
+    <line x1="50" y1="100" x2="250" y2="100" /> <!-- B-E -->
+    <line x1="250" y1="100" x2="250" y2="250" /> <!-- E-D -->
+    <line x1="250" y1="250" x2="50" y2="250" /> <!-- D-C -->
+    <line x1="50" y1="250" x2="50" y2="100" /> <!-- C-B -->
+    
+    <!-- Triangle ABE and edge AC, CE -->
+    <line x1="150" y1="20" x2="50" y2="100" /> <!-- A-B -->
+    <line x1="150" y1="20" x2="250" y2="100" /> <!-- A-E -->
+    <line x1="150" y1="20" x2="50" y2="250" /> <!-- A-C -->
+    <line x1="50" y1="250" x2="250" y2="100" /> <!-- C-E -->
+  </g>
+  <g font-size="20" fill="#000" font-family="serif" text-anchor="middle">
+    <!-- Edge weights -->
+    <text x="90" y="55">30</text> <!-- A-B -->
+    <text x="210" y="55">40</text> <!-- A-E -->
+    <text x="120" y="70">30</text> <!-- A-C -->
+    
+    <text x="150" y="90">30</text> <!-- B-E -->
+    <text x="270" y="175">30</text> <!-- E-D -->
+    <text x="150" y="275">40</text> <!-- C-D -->
+    <text x="30" y="175">20</text> <!-- B-C -->
+    
+    <text x="160" y="190">30</text> <!-- C-E -->
+  </g>
+</svg>
+</div>
+<p>If the total number of distinct MCSTs for the above given Graph are 'x' and the cost of the MCST is 'y' then the value of y - x is?</p>`,
       image: "",
-      options: ["109", "107", "106", "105"],
+      options: [
+        `109`,
+        `107`,
+        `106`,
+        `105`
+      ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
-      neg: 0.66,
+      neg: 0.67,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img45.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Assume that there are \\(10n^2\\) sorted lists each of size n/5.</p>
+<p>If all of these lists are to be merged into a single sorted list by merging 2 lists at a time, then what is the time complexity of merging them into single sorted list by using the most optimal merging technique?</p>`,
       image: "",
-      options: ["θ(n² log n)", "θ(n log n)", "θ(n³ log n)", "θ(n²)"],
+      options: [
+        `\\(\\theta(n^2 \\log n)\\)`,
+        `\\(\\theta(n \\log n)\\)`,
+        `\\(\\theta(n^3 \\log n)\\)`,
+        `\\(\\theta(n^2)\\)`
+      ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img47.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following undirected graph with edge weights as shown below:</p>
+<div style="margin: 20px 0;">
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#000" stroke-width="2">
+    <!-- Horizontal -->
+    <line x1="50" y1="50" x2="150" y2="50" />
+    <line x1="150" y1="50" x2="250" y2="50" />
+    <line x1="50" y1="150" x2="150" y2="150" />
+    <line x1="150" y1="150" x2="250" y2="150" />
+    <line x1="50" y1="250" x2="150" y2="250" />
+    <line x1="150" y1="250" x2="250" y2="250" />
+    <!-- Vertical -->
+    <line x1="50" y1="50" x2="50" y2="150" />
+    <line x1="50" y1="150" x2="50" y2="250" />
+    <line x1="150" y1="50" x2="150" y2="150" />
+    <line x1="150" y1="150" x2="150" y2="250" />
+    <line x1="250" y1="50" x2="250" y2="150" />
+    <line x1="250" y1="150" x2="250" y2="250" />
+  </g>
+  <g fill="#000">
+    <circle cx="50" cy="50" r="8" />
+    <circle cx="150" cy="50" r="8" />
+    <circle cx="250" cy="50" r="8" />
+    <circle cx="50" cy="150" r="8" />
+    <circle cx="150" cy="150" r="8" />
+    <circle cx="250" cy="150" r="8" />
+    <circle cx="50" cy="250" r="8" />
+    <circle cx="150" cy="250" r="8" />
+    <circle cx="250" cy="250" r="8" />
+  </g>
+  <g font-size="20" fill="#000" font-family="serif" text-anchor="middle">
+    <!-- Horiz labels -->
+    <text x="100" y="75">1</text>
+    <text x="200" y="75">1</text>
+    <text x="100" y="175">1</text>
+    <text x="200" y="175">9</text>
+    <text x="100" y="275">9</text>
+    <text x="200" y="275">1</text>
+    <!-- Vert labels -->
+    <text x="35" y="105">9</text>
+    <text x="35" y="205">1</text>
+    <text x="135" y="105">9</text>
+    <text x="135" y="205">1</text>
+    <text x="235" y="105">9</text>
+    <text x="235" y="205">1</text>
+  </g>
+</svg>
+</div>
+<p>The difference between the maximum possible cost and the minimum possible cost for a spanning tree for the above graph is______?</p>`,
       image: "",
       options: [],
       answer: "32",
-      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="max-width: 75%;">`
     },
     {
       marks: 2,
