@@ -1047,7 +1047,9 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<img src="/images/quiz/pw-algo/q_img1.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the number in the sequence</p>
+<p>\\( 130, 126, 122, 115, 109, 95, 86, 72, 49, 30, 21, 15, 9, 2 \\)</p>
+<p>Using binary search, the number of comparisons that will be required to search for the element '126' are_______?</p>`,
       image: "",
       options: [],
       answer: "4",
@@ -1057,9 +1059,25 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<img src="/images/quiz/pw-algo/q_img3.png" style="display: block; max-width: 40%; margin: 10px 0;">`,
+      text: `<p>Consider the following code</p>
+<pre><code class="language-c">void AJ(int n)
+{
+    for(i = 0; (i * i) &lt; n; i++)
+    {
+        for (j = n; j &gt;= 0; j = j/2)
+        {
+            printf("Aditya Jain Sir");
+        }
+    }
+}</code></pre>
+<p>What is the worst case time complexity of above program?</p>`,
       image: "",
-      options: ["O(n*log n)", "O(log n * log n)", "O(√n)", "O(√n * log n)"],
+      options: [
+        `\\( O(n \\log n) \\)<br>&nbsp;`,
+        `\\( O(\\log n * \\log n) \\)<br>&nbsp;`,
+        `\\( O(\\sqrt{n}) \\)<br>&nbsp;`,
+        `\\( O(\\sqrt{n} * \\log n) \\)`
+      ],
       answer: "D",
       solution: `<img src="/images/quiz/pw-algo/q_img4.png" style="display: block; max-width: 40%; margin: 10px 0;">`
     },
