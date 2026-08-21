@@ -1053,7 +1053,7 @@ registerTest({
       image: "",
       options: [],
       answer: "4",
-      solution: `<img src="/images/quiz/pw-algo/q_img2.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img2.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1079,7 +1079,7 @@ registerTest({
         `\\( O(\\sqrt{n} * \\log n) \\)`
       ],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img4.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img4.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1129,7 +1129,7 @@ registerTest({
       image: "",
       options: [],
       answer: "2",
-      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img6.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1144,7 +1144,7 @@ registerTest({
         `1025`
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img8.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1168,7 +1168,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "18",
-      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img10.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1196,7 +1196,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `90`
       ],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img12.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1224,7 +1224,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `15`
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img14.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1254,7 +1254,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `433`
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img16.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1332,7 +1332,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "11",
-      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img18.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1350,7 +1350,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `10`
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img20.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1366,7 +1366,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `1024`
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img22.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1416,7 +1416,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `ABCEDF`
       ],
       answer: ["A", "B", "D"],
-      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img24.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1478,7 +1478,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `TUWVXRQPS`
       ],
       answer: ["B", "C", "D"],
-      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img26.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 1,
@@ -1496,7 +1496,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `1600`
       ],
       answer: ["C", "D"],
-      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img28.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1507,7 +1507,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "997",
-      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img30.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1524,7 +1524,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `\\(f_1(n), f_5(n), f_4(n), f_3(n), f_2(n)\\)`
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img32.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1549,7 +1549,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "45",
-      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img34.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1618,7 +1618,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `719`
       ],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img36.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1630,7 +1630,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "1500",
-      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img38.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1645,7 +1645,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "150",
-      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img40.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1691,7 +1691,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "145",
-      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img42.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1737,7 +1737,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `105`
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img44.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1753,7 +1753,7 @@ Then the minimum number of inversions that are possible in the above array are _
         `\\(\\theta(n^2)\\)`
       ],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img46.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1811,7 +1811,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "32",
-      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img48.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1821,7 +1821,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["(logn)²", "√(logn)", "((log n) * log(log n))", "log logn"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img50.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img50.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1831,7 +1831,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["2n - 3", "(7/4)n - 3", "(9/4)n - 3", "(6/4)n - 3"],
       answer: "A",
-      solution: `<img src="/images/quiz/pw-algo/q_img52.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img52.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1841,7 +1841,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "41",
-      solution: `<img src="/images/quiz/pw-algo/q_img54.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img54.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1851,7 +1851,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["In an undirected graph, the shortest path between two nodes always lies on some minimum spanning tree", "If every edge of the graph has distinct weight, then Maximum weight spanning tree is unique.", "In Huffman coding,if all the items are of distinct probabilities, then the item with the second lowest probability is always at the leaf that is farthest from the root", "In Huffman coding,if all the items are of distinct probabilities, then the item with the highest probability is always at a leaf that is the child of the root."],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img56.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img56.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1861,7 +1861,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["20", "23", "25", "27"],
       answer: "B",
-      solution: `<img src="/images/quiz/pw-algo/q_img58.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img58.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1871,7 +1871,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: [],
       answer: "3",
-      solution: `<img src="/images/quiz/pw-algo/q_img60.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img60.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1881,7 +1881,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["1, 3 and 4", "2, 3 and 4", "1, 2 and 3", "1, 2 and 4"],
       answer: "C",
-      solution: `<img src="/images/quiz/pw-algo/q_img62.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img62.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
     {
       marks: 2,
@@ -1891,7 +1891,7 @@ Then the minimum number of inversions that are possible in the above array are _
       image: "",
       options: ["((x₁x₂)x₃)x₄", "(x₁(x₂x₃))x₄", "x₁((x₂x₃)x₄)", "x₁(x₂(x₃x₄))"],
       answer: "D",
-      solution: `<img src="/images/quiz/pw-algo/q_img64.png" style="display: block; max-width: 40%; margin: 10px 0;">`
+      solution: `<img src="/images/quiz/pw-algo/q_img64.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
   ]
 });
