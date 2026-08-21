@@ -2069,7 +2069,7 @@ let __advancedStats = null;
 async function renderAdvancedCharts() {
   if (typeof Chart === 'undefined') return;
 
-  const testName = document.getElementById("playerTopTitle").textContent;
+  const testName = document.getElementById("resultCrumbName").textContent.trim();
 
   if (!__advancedStats) {
     try {
@@ -2220,7 +2220,7 @@ async function openLeaderboard() {
   body.innerHTML = '<div class="leaderboard-empty">Loading leaderboard...</div>';
   sticky.innerHTML = '';
 
-  const testName = document.getElementById("playerTopTitle").textContent;
+  const testName = document.getElementById("resultCrumbName").textContent.trim();
 
   try {
     const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
