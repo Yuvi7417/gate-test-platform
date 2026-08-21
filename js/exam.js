@@ -64,13 +64,20 @@ function restoreSession() {
   syncLearnNav();
 }
 
-async function fetchFreshUserData() {
+async function fetchFreshUserData(retries = 5) {
   const token = localStorage.getItem('apexcore_token');
   if (!token) return;
   try {
     const res = await fetch('/api/user', {
       headers: { 'Authorization': `Bearer ${token}` }
     });
+    if (!res.ok) {
+      if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+        setTimeout(() => fetchFreshUserData(retries - 1), 4000);
+        return;
+      }
+      throw new Error("HTTP " + res.status);
+    }
     const data = await res.json();
     if (data.success && data.user) {
       enrolledIds = data.user.enrolledCourses || [];
@@ -86,6 +93,9 @@ async function fetchFreshUserData() {
     }
   } catch(err) {
     console.error("Error fetching fresh user data:", err);
+    if (retries > 0) {
+      setTimeout(() => fetchFreshUserData(retries - 1), 4000);
+    }
   }
 }
 
@@ -271,14 +281,24 @@ function firebaseGoogleLogin() {
       return result.user.getIdToken();
     })
     .then((idToken) => {
-      // Send token to our backend to get our own JWT token and verify user in MongoDB
-      return fetch('/api/firebase-login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ idToken })
-      });
+      const tryLogin = (retries) => {
+        return fetch('/api/firebase-login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ idToken })
+        }).then(res => {
+          if (!res.ok) {
+            if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+              btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Waking server...`;
+              return new Promise(resolve => setTimeout(resolve, 4000)).then(() => tryLogin(retries - 1));
+            }
+            throw new Error("Server Error " + res.status);
+          }
+          return res.json();
+        });
+      };
+      return tryLogin(10);
     })
-    .then(res => res.json())
     .then(data => {
       btn.innerHTML = `Continue with Google`;
       btn.disabled = false;
@@ -310,25 +330,35 @@ function firebaseGoogleLogin() {
       btn.innerHTML = `Continue with Google`;
       btn.disabled = false;
       if (error.code !== 'auth/popup-closed-by-user') {
-        alert("Google Sign-In failed: " + error.message);
+        alert("Google Sign-In failed: " + error.message + " (Please try again in a minute)");
       }
     });
 }
 
 let userResults = [];
-async function fetchUserResults() {
+async function fetchUserResults(retries = 5) {
   const token = localStorage.getItem('apexcore_token');
   if (!token) return;
   try {
     const res = await fetch('/api/user-results', {
       headers: { 'Authorization': `Bearer ${token}` }
     });
+    if (!res.ok) {
+      if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+        setTimeout(() => fetchUserResults(retries - 1), 4000);
+        return;
+      }
+      throw new Error("HTTP " + res.status);
+    }
     const data = await res.json();
     if (data.success) {
       userResults = data.results || [];
     }
   } catch (err) {
     console.error("Error fetching results:", err);
+    if (retries > 0) {
+      setTimeout(() => fetchUserResults(retries - 1), 4000);
+    }
   }
 }
 
