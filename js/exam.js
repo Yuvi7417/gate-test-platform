@@ -1969,7 +1969,10 @@ async function showResultPage(explicitTestName) {
   ).toUpperCase();
   document.getElementById("resultUserName").textContent = user.name;
   document.getElementById("resultUserEmail").textContent = user.email;
-  const testName = explicitTestName || document.getElementById("playerTopTitle").textContent;
+  let testName = explicitTestName || document.getElementById("playerTopTitle").textContent;
+  if (testName.startsWith("Solutions: ")) {
+    testName = testName.substring(11).trim();
+  }
   document.getElementById("resultCrumbName").textContent = testName;
 
   document.getElementById("rdScore").textContent = r.score + " / " + r.maxScore;
