@@ -2017,10 +2017,22 @@ async function showResultPage(explicitTestName) {
     console.error("Could not fetch stats", e);
   }
 
-  // Rank/percentile are illustrative
-  const pseudoRank = Math.max(1, totalStudents - Math.round(r.score));
-  document.getElementById("statRank").textContent = pseudoRank + " out of " + totalStudents;
-  document.getElementById("statPercentile").textContent = Math.max(1, Math.round((1 - pseudoRank / totalStudents) * 100 * 10) / 10) + "%";
+  let myRank = Math.max(1, totalStudents - Math.round(r.score));
+  try {
+    const leadRes = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
+    const leadData = await leadRes.json();
+    if (leadData.success && leadData.leaderboard) {
+      totalStudents = leadData.leaderboard.length || totalStudents;
+      const myEntry = leadData.leaderboard.find(x => x.name === user.name);
+      if (myEntry) myRank = myEntry.rank;
+      else myRank = Math.max(1, totalStudents - Math.round(r.score));
+    }
+  } catch (e) {
+    console.error("Could not fetch leaderboard for rank", e);
+  }
+
+  document.getElementById("statRank").textContent = myRank + " out of " + totalStudents;
+  document.getElementById("statPercentile").textContent = Math.max(1, Math.round((1 - myRank / totalStudents) * 100 * 10) / 10) + "%";
 
   const renderCard = (title) => `
       <div class="result-subject-card">
