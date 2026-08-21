@@ -2074,11 +2074,14 @@ async function renderAdvancedCharts() {
 
   const testName = document.getElementById("resultCrumbName").textContent.trim();
 
-  if (!__advancedStats) {
+  if (!__advancedStats || __advancedStats.testName !== testName) {
     try {
       const res = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
       const data = await res.json();
-      if (data.success) __advancedStats = data.advancedStats;
+      if (data.success) {
+        __advancedStats = data.advancedStats;
+        __advancedStats.testName = testName;
+      }
     } catch (e) { }
   }
 
