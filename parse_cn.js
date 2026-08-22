@@ -4,10 +4,10 @@ const path = require('path');
 const https = require('https');
 
 const inputFile = 'h:\\yuvraj dutt\\test.html';
-const imgDirName = 'go-swt-cn-1';
+const imgDirName = 'go-swt-cn-2';
 const imgDirPath = path.join('h:\\yuvraj dutt\\images\\quiz', imgDirName);
 const seriesName = 'cs-gate-classes';
-const quizName = 'SWT - Computer network-1|Complete CN Syllabus';
+const quizName = 'SWT - computer network-2|Complete CN Syllabus';
 const dateStr = 'Aug 22, 2026';
 
 if (!fs.existsSync(imgDirPath)) {
