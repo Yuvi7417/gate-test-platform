@@ -4,10 +4,10 @@ const path = require('path');
 const https = require('https');
 
 const inputFile = 'h:\\yuvraj dutt\\test.html';
-const imgDirName = 'go-swt-os-3';
+const imgDirName = 'go-swt-ds-1';
 const imgDirPath = path.join('h:\\yuvraj dutt\\images\\quiz', imgDirName);
 const seriesName = 'cs-gate-classes';
-const quizName = 'SWT - Operating System-3|Complete OS Syllabus';
+const quizName = 'SWT - Data Structure-1|Complete DS Syllabus';
 const dateStr = 'Aug 22, 2026';
 
 if (!fs.existsSync(imgDirPath)) {
