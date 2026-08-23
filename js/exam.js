@@ -353,6 +353,14 @@ async function fetchUserResults(retries = 5) {
     const data = await res.json();
     if (data.success) {
       userResults = data.results || [];
+      
+      // Re-render UI if test list is currently open (handles server cold-start delays)
+      const testView = document.getElementById("view-tests");
+      if (testView && testView.classList.contains("active")) {
+        if (typeof window.filterByType === 'function') {
+          window.filterByType();
+        }
+      }
     }
   } catch (err) {
     console.error("Error fetching results:", err);
