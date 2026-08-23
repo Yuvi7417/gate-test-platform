@@ -241,8 +241,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹1416",
-    price: "₹108 + GST",
-    basePrice: 108,
+    price: "₹130 + GST",
+    basePrice: 130,
     brandLabel: "APEX EASY"
   },
   {
@@ -324,8 +324,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹1180",
-    price: "₹105 + GST",
-    basePrice: 105,
+    price: "₹115 + GST",
+    basePrice: 115,
     brandLabel: "Weekly Classes"
     // comingSoon: true
   },
@@ -509,8 +509,8 @@ window.testSeries = [
     ],
     schedule: [],
     oldPrice: "₹1400",
-    price: "₹114 + GST",
-    basePrice: 114,
+    price: "₹130 + GST",
+    basePrice: 130,
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
