@@ -16,6 +16,22 @@
 const APP_VERSION = "v1";
 const SESSION_KEY = "apexcore_session";
 
+// Global Fetch Interceptor for JWT Expiry
+const originalFetch = window.fetch;
+window.fetch = async function(...args) {
+  const res = await originalFetch.apply(this, args);
+  if (!res.ok && (res.status === 401 || res.status === 403)) {
+    const url = typeof args[0] === 'string' ? args[0] : (args[0] && args[0].url ? args[0].url : '');
+    if (url.includes('/api/')) {
+      alert("Session expired. Please log in again.");
+      clearSession();
+      if (typeof logoutUser === 'function') logoutUser();
+      throw new Error("HTTP " + res.status + " - Session Expired");
+    }
+  }
+  return res;
+};
+
 function saveSession() {
   try {
     localStorage.setItem(
@@ -1890,32 +1906,51 @@ function confirmSubmit() {
       timeTakenSecs,
       answers: playerState
     };
-    fetch('/api/submit-test', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`
-      },
-      body: JSON.stringify(payload)
-    }).then(res => res.json()).then(data => {
-      if (data.success) {
-        const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
-        if (existingIndex !== -1) {
-          userResults[existingIndex] = payload;
-        } else {
-          userResults.push(payload);
+    const submitWithRetry = async (retries = 5) => {
+      try {
+        const res = await fetch('/api/submit-test', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+          },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) {
+          if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+            setTimeout(() => submitWithRetry(retries - 1), 4000);
+            return;
+          }
+          throw new Error("HTTP " + res.status);
         }
-        const seriesObj = testSeries.find((x) => x.id === currentTestListId);
-        if (seriesObj) renderTestList(seriesObj, "all");
-        
-        // Delete TestState from server and local storage since test is finished
-        localStorage.removeItem("apex_teststate_" + payload.testName);
-        fetch('/api/sync/teststate/' + encodeURIComponent(payload.testName), {
-          method: 'DELETE',
-          headers: { 'Authorization': `Bearer ${token}` }
-        }).catch(err => console.error(err));
+        const data = await res.json();
+        if (data.success) {
+          const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
+          if (existingIndex !== -1) {
+            userResults[existingIndex] = payload;
+          } else {
+            userResults.push(payload);
+          }
+          const seriesObj = testSeries.find((x) => x.id === currentTestListId);
+          if (seriesObj) renderTestList(seriesObj, "all");
+          
+          // Delete TestState from server and local storage since test is finished
+          localStorage.removeItem("apex_teststate_" + payload.testName);
+          fetch('/api/sync/teststate/' + encodeURIComponent(payload.testName), {
+            method: 'DELETE',
+            headers: { 'Authorization': `Bearer ${token}` }
+          }).catch(err => console.error(err));
+        }
+      } catch (err) {
+        console.error("Error submitting test:", err);
+        if (retries > 0) {
+          setTimeout(() => submitWithRetry(retries - 1), 4000);
+        } else {
+          alert("Failed to save test result due to network error! Your internet or server might be down. Please screenshot your score.");
+        }
       }
-    }).catch(err => console.error("Error submitting test:", err));
+    };
+    submitWithRetry();
   }
 
   setTimeout(() => {
