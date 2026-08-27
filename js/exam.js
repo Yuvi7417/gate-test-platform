@@ -72,6 +72,12 @@ async function fetchFreshUserData(retries = 5) {
       headers: { 'Authorization': `Bearer ${token}` }
     });
     if (!res.ok) {
+      if (res.status === 401 || res.status === 403) {
+        alert("Session expired. Please log in again.");
+        clearSession();
+        logoutUser();
+        return;
+      }
       if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
         setTimeout(() => fetchFreshUserData(retries - 1), 4000);
         return;
@@ -344,6 +350,12 @@ async function fetchUserResults(retries = 5) {
       headers: { 'Authorization': `Bearer ${token}` }
     });
     if (!res.ok) {
+      if (res.status === 401 || res.status === 403) {
+        alert("Session expired. Please log in again.");
+        clearSession();
+        logoutUser();
+        return;
+      }
       if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
         setTimeout(() => fetchUserResults(retries - 1), 4000);
         return;
@@ -402,7 +414,7 @@ document.addEventListener("click", () =>
 );
 
 function logoutUser(e) {
-  e.stopPropagation();
+  if (e && e.stopPropagation) e.stopPropagation();
   document.body.classList.remove("logged-in");
   document.getElementById("profileChip").classList.remove("show", "open");
   document.getElementById("loginBtn").style.display = "inline-flex";
