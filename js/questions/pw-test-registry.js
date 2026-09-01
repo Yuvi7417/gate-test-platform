@@ -2210,5 +2210,4483 @@ int main(void)
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 10 Explanation:</strong><br>  <a href="https://gateoverflow.in/542699" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="43" data-start="0">In the standard reader-preference solution:</p> <ul data-end="147" data-start="45"> <li data-end="94" data-section-id="1xaiiqm" data-start="45"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math> protects <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">readcount</mtext> </math>.</li> <li data-end="147" data-section-id="vznpx7" data-start="95"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wrt</mtext> </math> controls access to the shared data.</li> </ul> <p data-end="195" data-start="149">Which of the following statements are correct?</p> </span>`,
+      image: "",
+      options: [
+        `The first reader executes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(wrt)</mtext> </math>.`,
+        `Every reader individually executes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(wrt)</mtext> </math> before reading.`,
+        `The last reader executes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(wrt)</mtext> </math>.`,
+        `Updates to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">readcount</mtext> </math> must be protected by <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math>.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 11 Explanation:</strong><br>  <a href="https://gateoverflow.in/542688" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="85" data-start="0">In a reader-preference solution, a writer is waiting while readers continue arriving.</p> <p data-end="120" data-start="87">Which of the following may occur?</p> </span>`,
+      image: "",
+      options: [
+        `Reader starvation`,
+        `Writer starvation`,
+        `Immediate deadlock among all readers`,
+        `Two writers enter simultaneously`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 12 Explanation:</strong><br>  <a href="https://gateoverflow.in/542691" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="37" data-start="0">Consider a modified reader algorithm:</p> <p data-end="62" data-start="39"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex);</mtext> </math> </p> <p data-end="87" data-start="64"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">readcount++;</mtext> </math> </p> <p data-end="114" data-start="89"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex);</mtext> </math> </p> <p data-end="146" data-start="116"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">if(readcount == 1)</mtext> </math> </p> <p data-end="169" data-start="148"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(wrt);</mtext> </math> </p> <p data-end="269" data-start="171">Two readers may increment <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">readcount</mtext> </math> before either executes the <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">if</mtext> </math> statement.</p> <p data-end="294" data-start="271">What problem can occur?</p> </span>`,
+      image: "",
+      options: [
+        `Both readers must deadlock.`,
+        `No reader may acquire <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wrt</mtext> </math>, allowing a writer and readers to access the shared data simultaneously.`,
+        `The writer permanently owns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math>.`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">readcount</mtext> </math> can never become greater than <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>.`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 13 Explanation:</strong><br>  <a href="https://gateoverflow.in/542689" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <section data-testid="conversation-turn-10" data-turn="assistant" data-turn-id="request-WEB:c072c26a-a164-48e0-9280-778d9121035d-4" data-turn-id-container="request-WEB:c072c26a-a164-48e0-9280-778d9121035d-4" dir="auto"> <p data-end="90" data-start="0">Which of the following techniques can prevent deadlock in the dining-philosophers problem?</p> </section> </span>`,
+      image: "",
+      options: [
+        `Allow at most four of five philosophers to attempt to acquire chopsticks simultaneously.`,
+        `Require some philosophers to acquire the left chopstick first and others to acquire the right chopstick first.`,
+        `Allow a philosopher to acquire both required chopsticks atomically.`,
+        `Require every philosopher to acquire the left chopstick first and then wait for the right chopstick.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 14 Explanation:</strong><br>  <a href="https://gateoverflow.in/542692" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="10866" data-start="10820">Five philosophers sit around a circular table.</p> <p data-end="10994" data-start="10868">There is one chopstick between each pair of adjacent philosophers, and a philosopher requires both adjacent chopsticks to eat.</p> <p data-end="11066" data-is-last-node="" data-is-only-node="" data-start="10996">What is the maximum number of philosophers who can eat simultaneously?</p> </span>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 15 Explanation:</strong><br>  <a href="https://gateoverflow.in/542693" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="97" data-start="0">Which of the following statements are correct for a correctly synchronized bounded-buffer system?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty</mtext> </math> prevents producers from inserting into a full buffer.`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full</mtext> </math> prevents consumers from removing from an empty buffer.`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math> protects shared buffer data and shared buffer indices.`,
+        `Different producers may update the same insertion index simultaneously without synchronization.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 16 Explanation:</strong><br>  <a href="https://gateoverflow.in/542156" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="7848" data-start="7791">A bounded buffer has capacity <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> and is initially empty.</p> <p data-end="7870" data-start="7850">During an execution:</p> <ul data-end="7941" data-start="7872"> <li data-end="7907" data-section-id="j12rub" data-start="7872"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> producer insertions complete.</li> <li data-end="7941" data-section-id="fj613t" data-start="7908"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> consumer removals complete.</li> </ul> <p data-end="7980" data-start="7943">Assume no insertion or removal fails.</p> <p data-end="8042" data-start="7982">What is the number of items currently present in the buffer? </p> </span>`,
+      image: "",
+      options: [],
+      answer: "3",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 17 Explanation:</strong><br>  <a href="https://gateoverflow.in/542155" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="62" data-start="0">A producer-consumer system uses a buffer containing <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>N</mi> </math> slots.</p> <p data-end="83" data-start="64">The semaphores are:</p> <ul data-end="219" data-start="85"> <li data-end="129" data-section-id="1cb9ts8" data-start="85"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty</mtext> </math>, representing empty slots</li> <li data-end="174" data-section-id="1adus51" data-start="130"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full</mtext> </math>, representing filled slots</li> <li data-end="219" data-section-id="79ewf1" data-start="175"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math>, protecting buffer access</li> </ul> <p data-end="288" data-start="221">Which initialization is correct when the buffer is initially empty?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty = 0</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full = N</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex = 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty = N</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full = 0</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex = 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty = N</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full = 1</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex = 0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty = 1</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">full = N</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex = 0</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 18 Explanation:</strong><br>  <a href="https://gateoverflow.in/542152" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="20" data-start="0">A producer executes:</p> <p data-end="45" data-start="22"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex);</mtext> </math> </p> <p data-end="72" data-start="49"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(empty);</mtext> </math> </p> <p data-end="102" data-start="76"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">insert_item();</mtext> </math> </p> <p data-end="130" data-start="106"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(full);</mtext> </math> </p> <p data-end="159" data-start="134"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex);</mtext> </math> </p> <p data-end="228" data-start="163">A consumer must acquire <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math> before removing an item.</p> <p data-end="276" data-start="230">Which of the following statements are correct?</p> </span>`,
+      image: "",
+      options: [
+        `If the buffer is full, the producer may block on <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">empty</mtext> </math> while holding <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math>.`,
+        `The consumer may be unable to acquire <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">mutex</mtext> </math> to remove an item.`,
+        `The system can enter deadlock.`,
+        `The ordering guarantees that producers never block.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 19 Explanation:</strong><br>  <a href="https://gateoverflow.in/542154" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="83" data-start="0">Which of the following is the correct order of semaphore operations for a producer?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(empty)</mtext> </math>, insert item, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(full)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex)</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(empty)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex)</mtext> </math>, insert item, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(full)</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(full)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex)</mtext> </math>, insert item, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(empty)</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(empty)</mtext> </math>, insert item, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(mutex)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(full)</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(mutex)</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 20 Explanation:</strong><br>  <a href="https://gateoverflow.in/542153" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="46" data-start="0">Which of the following statements are correct?</p> </span>`,
+      image: "",
+      options: [
+        `Semaphore <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait()</mtext> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal()</mtext> </math> operations must be atomic.`,
+        `A counting semaphore can represent the number of available instances of a resource.`,
+        `In a blocking semaphore implementation, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait()</mtext> </math> may block the calling process.`,
+        `The <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal()</mtext> </math> operation always blocks the process that executes it.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 21 Explanation:</strong><br>  <a href="https://gateoverflow.in/542151" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="38" data-start="0">A semaphore <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> is initialized to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>. </p> <p data-end="80" data-start="40">The following operations occur in order:</p> <p data-end="100" data-start="82"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> </p> <p data-end="120" data-start="102"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> </p> <p data-end="142" data-start="122"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> </p> <p data-end="162" data-start="144"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> </p> <p data-end="184" data-start="164"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> </p> <p data-end="206" data-start="186"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> </p> <p data-end="324" data-start="208">Assume the blocking implementation where <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> decrements <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> increments <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math>. </p> <p data-end="394" data-start="326">What are the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> and the number of blocked processes?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>1</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>0</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mo>−</mo> <mn>1</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>2</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>0</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 22 Explanation:</strong><br>  <a href="https://gateoverflow.in/542150" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="34" data-start="0">Two semaphores are initialized as:</p> <p data-end="43" data-start="36"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>1</mn> </math> </p> <p data-end="52" data-start="45"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>T</mi> <mo>=</mo> <mn>0</mn> </math> </p> <p data-end="87" data-start="54">Two processes execute repeatedly:</p> <p data-end="102" data-start="89"><strong data-end="102" data-start="89">Process P</strong></p> <p data-end="123" data-start="104"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S);</mtext> </math> </p> <p data-end="149" data-start="127"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">print("A");</mtext> </math> </p> <p data-end="174" data-start="153"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(T);</mtext> </math> </p> <p data-end="191" data-start="178"><strong data-end="191" data-start="178">Process Q</strong></p> <p data-end="212" data-start="193"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(T);</mtext> </math> </p> <p data-end="238" data-start="216"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">print("B");</mtext> </math> </p> <p data-end="263" data-is-last-node="" data-is-only-node="" data-start="242"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S);</mtext> </math> </p> <p data-end="4835" data-start="4772">Which of the following can be the first six characters printed? </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">AAABBB</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">ABABAB</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">BABABA</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">AABBAB</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 23 Explanation:</strong><br>  <a href="https://gateoverflow.in/542149" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <section data-testid="conversation-turn-2" data-turn="assistant" data-turn-id="request-WEB:7f62bf49-98bf-43e8-9b83-41f14fde5617-0" data-turn-id-container="request-WEB:7f62bf49-98bf-43e8-9b83-41f14fde5617-0" dir="auto"> <p data-end="47" data-start="0">A counting semaphore <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> is initialized to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>. </p> <p data-end="169" data-start="49">Three processes execute <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> one after another. No process executes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> during this time.</p> <p data-end="281" data-start="171">Assume that <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> first decrements <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> and blocks the process if the resulting value is negative.</p> <p data-end="372" data-start="283">What are the value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> and the number of blocked processes after the three operations?</p> </section> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>0</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mo>−</mo> <mn>1</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mo>−</mo> <mn>1</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>2</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mo>=</mo> <mn>0</mn> </math>, blocked processes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>0</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 24 Explanation:</strong><br>  <a href="https://gateoverflow.in/542147" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4020" data-start="3987">Two concurrent processes execute:</p> <p data-end="4035" data-start="4022"><strong data-end="4035" data-start="4022">Process A</strong> </p> <p data-end="4042" data-start="4037"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>1</mn> </msub> </math> </p> <p data-end="4049" data-start="4044"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> </p> <p data-end="4056" data-start="4051"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>3</mn> </msub> </math> </p> <p data-end="4063" data-start="4058"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>4</mn> </msub> </math> </p> <p data-end="4078" data-start="4065"><strong data-end="4078" data-start="4065">Process B</strong> </p> <p data-end="4085" data-start="4080"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>1</mn> </msub> </math> </p> <p data-end="4092" data-start="4087"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>2</mn> </msub> </math> </p> <p data-end="4099" data-start="4094"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>3</mn> </msub> </math> </p> <p data-end="4106" data-start="4101"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math> </p> <p data-end="4146" data-start="4108">A semaphore <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> </math> is initialized to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>. </p> <p data-end="4212" data-start="4148">The requirement is that <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> must complete before <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math> begins.</p> <p data-end="4262" data-start="4214">Where should the semaphore operations be placed?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> after <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> before <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> after <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> before <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> before <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> after <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">signal(S)</mtext> </math> before <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>A</mi> <mn>2</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wait(S)</mtext> </math> after <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>B</mi> <mn>4</mn> </msub> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 25 Explanation:</strong><br>  <a href="https://gateoverflow.in/542148" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2215" data-start="2102">The atomic operation <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">compare_and_swap(x, old, new)</mtext> </math> changes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">new</mtext> </math> only if its current value equals <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">old</mtext> </math>. </p> <p data-end="2227" data-start="2217">Initially,</p> <p data-end="2234" data-start="2229"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>=</mo> <mn>5</mn> </math> </p> <p data-end="2276" data-start="2236">The following operations occur in order:</p> <p data-end="2312" data-start="2278"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>2</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">compare_and_swap(x, 5, 7)</mtext> </math> </p> <p data-end="2348" data-start="2314"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>1</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">compare_and_swap(x, 5, 9)</mtext> </math></p> <p data-end="2384" data-start="2350">Which of the following is correct?</p> </span>`,
+      image: "",
+      options: [
+        `Both operations succeed, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>9</mn> </math>`,
+        `Only <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>1</mn> </msub> </math> succeeds, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>9</mn> </math>`,
+        `Only <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>2</mn> </msub> </math> succeeds, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>7</mn> </math>`,
+        `Both operations fail, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 26 Explanation:</strong><br>  <a href="https://gateoverflow.in/542144" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="970" data-start="930">Consider the following atomic operation:</p> <p data-end="1037" data-start="972"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">test_and_set(x)</mtext> </math> sets <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> and returns its previous value.</p> <p data-end="1049" data-start="1039">Initially,</p> <p data-end="1056" data-start="1051"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>=</mo> <mn>0</mn> </math> </p> <p data-end="1154" data-start="1058">Process <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>1</mn> </msub> </math> executes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">test_and_set(x)</mtext> </math>, followed by process <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>2</mn> </msub> </math> executing <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">test_and_set(x)</mtext> </math>. </p> <p data-end="1190" data-start="1156"><br/>Which of the following is correct?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>1</mn> </msub> </math> returns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>2</mn> </msub> </math> returns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>1</mn> </msub> </math> returns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mn>2</mn> </msub> </math> returns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>`,
+        `Both processes return <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `Both processes return <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>, and the final value of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 27 Explanation:</strong><br>  <a href="https://gateoverflow.in/542140" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2775" data-start="2723">Two processors <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> <mi>P</mi> <msub> <mi>U</mi> <mn>0</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> <mi>P</mi> <msub> <mi>U</mi> <mn>1</mn> </msub> </math> share a variable.</p> <p data-end="2888" data-start="2777"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> <mi>P</mi> <msub> <mi>U</mi> <mn>0</mn> </msub> </math> disables its local interrupts and enters a critical section without acquiring any shared hardware lock.</p> <p data-end="2949" data-start="2890">At the same time, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> <mi>P</mi> <msub> <mi>U</mi> <mn>1</mn> </msub> </math> enters the same critical section.</p> <p data-end="2998" data-start="2951">Which critical-section requirement is violated?</p> </span>`,
+      image: "",
+      options: [
+        `Mutual exclusion`,
+        `Progress`,
+        `Bounded waiting`,
+        `No requirement is violated`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 28 Explanation:</strong><br>  <a href="https://gateoverflow.in/542145" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1580" data-start="1552">Consider the following lock:</p> <p data-end="1604" data-start="1582">Initially, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">lock = 0.</mtext> </math> </p> <p data-end="1636" data-start="1606"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while(test_and_set(\&amp;lock));</mtext> </math> </p> <p data-end="1656" data-start="1638"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Critical Section</mtext> </math> </p> <p data-end="1669" data-start="1658"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">lock = 0;</mtext> </math> </p> <p data-end="1717" data-start="1671">Which of the following statements are correct?</p> </span>`,
+      image: "",
+      options: [
+        `At most one process can execute inside the critical section at a time.`,
+        `A waiting process repeatedly consumes CPU time while checking the lock.`,
+        `The solution guarantees bounded waiting for every process.`,
+        `A process may starve if other processes repeatedly acquire the lock before it.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 29 Explanation:</strong><br>  <a href="https://gateoverflow.in/542143" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="388" data-start="315">Which of the following statements about disabling interrupts are correct?</p> </span>`,
+      image: "",
+      options: [
+        `On a uniprocessor system, disabling interrupts can prevent the running process from being preempted while executing its critical section.`,
+        `Disabling interrupts on one processor is sufficient to prevent all other processors from accessing shared memory in a multiprocessor system.`,
+        `Allowing ordinary user processes to disable interrupts can be dangerous.`,
+        `Keeping interrupts disabled for a long duration may affect timer and I/O services.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 30 Explanation:</strong><br>  <a href="https://gateoverflow.in/542139" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "pw-cs-gate-2026",
+  name: "Swt-OS-Part5",
+  date: "Oct 01, 2026",
+  questions: [,
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2057" data-start="1993">Consider the following alternative entry code for process <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mi>i</mi> </msub> </math>: </p> <p data-end="2074" data-start="2059"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wants[i] = 1</mtext> </math>; </p> <p data-end="2097" data-start="2076"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while(wants[1 - i]);</mtext> </math> </p> <p data-end="2137" data-start="2099">The shared array <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wants</mtext> </math> is initially:</p> <p data-end="2160" data-start="2139"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">wants[0] = wants[1] = 0</mtext> </math> </p> <p data-end="2241" data-start="2162"><br/>What can happen if both processes request entry at approximately the same time?</p> </span>`,
+      image: "",
+      options: [
+        `Both processes enter the critical section simultaneously.`,
+        `Both processes spin forever, violating progress.`,
+        `The process with the smaller process number always enters first.`,
+        `Both processes enter one after another with bounded waiting.`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 31 Explanation:</strong><br>  <a href="https://gateoverflow.in/541987" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4620" data-start="4545">Consider the following variation of Peterson’s algorithm for process <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>P</mi> <mi>i</mi> </msub> </math>: </p> <p data-end="4639" data-start="4622"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">flag[i] = TRUE;</mtext> </math> </p> <p data-end="4652" data-start="4641"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">turn = i;</mtext> </math> </p> <p data-end="4685" data-start="4654"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while(flag[j] \&amp;\&amp; turn == j); </mtext> </math> </p> <p data-end="4705" data-start="4687"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Critical Section</mtext> </math> </p> <p data-end="4725" data-start="4707"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">flag[i] = FALSE;</mtext> </math> </p> <p data-end="4778" data-start="4727">Which critical-section requirement can be violated?</p> </span>`,
+      image: "",
+      options: [
+        `Mutual exclusion`,
+        `Progress only`,
+        `Bounded waiting only`,
+        `None of the requirements`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 32 Explanation:</strong><br>  <a href="https://gateoverflow.in/541983" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="5895" data-start="5849">Which of the following statements are correct?</p> </span>`,
+      image: "",
+      options: [
+        `Both strict alternation and Peterson’s solution use busy waiting.`,
+        `Both strict alternation and Peterson’s solution satisfy the progress requirement.`,
+        `Peterson’s solution uses intent flags to indicate whether a process wants to enter its critical section.`,
+        `Under strict alternation, a process can be forced to wait even when the other process is executing only its remainder section.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 33 Explanation:</strong><br>  <a href="https://gateoverflow.in/541979" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="687" data-start="615">Which of the following statements about Peterson’s solution are correct?</p> </span>`,
+      image: "",
+      options: [
+        `Peterson’s solution uses atomic load and store operations.`,
+        `Peterson’s solution directly supports any number of processes without modification.`,
+        `Peterson’s solution uses busy waiting.`,
+        `For two processes, it satisfies mutual exclusion, progress, and bounded waiting under the assumed memory model.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 34 Explanation:</strong><br>  <a href="https://gateoverflow.in/541976" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="3413" data-start="3317">Two threads execute Peterson’s entry code. The following statements execute in this exact order:</p> <p data-end="3438" data-start="3415"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>0</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">flag[0] = true</mtext> </math> </p> <p data-end="3457" data-start="3440"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>0</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">turn = 1</mtext> </math> </p> <p data-end="3482" data-start="3459"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>1</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">flag[1] = true</mtext> </math> </p> <p data-end="3501" data-start="3484"><math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>1</mn> </msub> <mo>:</mo> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">turn = 0</mtext> </math> </p> <p data-end="3554" data-start="3503">Both threads now evaluate their <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while</mtext> </math> conditions:</p> <p data-end="3566" data-start="3556">For <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>0</mn> </msub> </math>: </p> <p data-end="3599" data-start="3568"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while(flag[1] \&amp;\&amp; turn == 1); </mtext> </math> </p> <p data-end="3611" data-start="3601">For <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>1</mn> </msub> </math>: </p> <p data-end="3644" data-start="3613"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while(flag[0] \&amp;\&amp; turn == 0); </mtext> </math> </p> <p data-end="3693" data-start="3646"><br/>Which thread enters the critical section first?</p> </span>`,
+      image: "",
+      options: [
+        `Only <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>0</mn> </msub> </math>`,
+        `Only <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>1</mn> </msub> </math>`,
+        `Both <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>0</mn> </msub> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mn>1</mn> </msub> </math>`,
+        `Neither thread`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 35 Explanation:</strong><br>  <a href="https://gateoverflow.in/541985" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+struct Point {
+    int x, y;
+};
+int main() {
+    struct Point p1 = {10, 20};
+    struct Point *ptr = &amp;p1;
+    ptr-&gt;x += 5;
+    (*ptr).y -= 10;
+    printf("%d %d\n", p1.x, p1.y);
+    return 0;
+}</pre> <p>What is the output?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1510</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1010</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>530</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1520</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 36 Explanation:</strong><br>  <a href="https://gateoverflow.in/478603" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+void fun() {
+    static int count = 0;
+    count++;
+    printf("%d ", count);
+}
+int main() {
+    for (int i = 0; i &lt; 3; i++)
+        fun();
+    return 0;
+}
+</pre> <p>What is the output of the above C program?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>111</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>012</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>123</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>321</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 37 Explanation:</strong><br>  <a href="https://gateoverflow.in/478601" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following psuedocode fragment, where <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>y</mi> </math> is an integer that has been initialized.</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int i=1
+int j=1
+while (i&lt;10):
+    j=j*i
+    i=i+1
+    if (i==y):
+        break
+    end if
+end while</pre> <p>Consider the following statements:<br/>i. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mi>i</mi> <mo>==</mo> <mn>10</mn> <mo stretchy="false">)</mo> </math> or <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mi>i</mi> <mo>==</mo> <mi>y</mi> <mo stretchy="false">)</mo> </math><br/>ii. If <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>y</mi> <mo>&gt;</mo> <mn>10</mn> </math>, then <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>i</mi> <mo>==</mo> <mn>10</mn> </math><br/>iii. If <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>j</mi> <mo>=</mo> <mn>6</mn> </math>, then <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>y</mi> <mo>==</mo> <mn>4</mn> </math> </p> <p>Which of the above statements is/are TRUE at the end of the while loop? Choose from the following options.</p> </span>`,
+      image: "",
+      options: [
+        `i only`,
+        `iii only`,
+        `ii and iii only`,
+        `i, ii, and iii`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 38 Explanation:</strong><br>  <a href="https://gateoverflow.in/478599" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Given the pseudocode below for the function remains(), which of the following statements is true about the output, if we pass it a positive integer <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> <mo>&gt;</mo> <mn>2</mn> </math> ?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int remains(int n)
+{
+        int x = n;
+        for (i=(n-1);i&gt;1;i-) {
+            x = x % i ;
+    }
+        return x i
+}</pre> </span>`,
+      image: "",
+      options: [
+        `Output is always <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>`,
+        `Output is always <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `Output is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math> only if <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> </math> is NOT a prime number`,
+        `Output is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> only if <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> </math> is a prime number`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 39 Explanation:</strong><br>  <a href="https://gateoverflow.in/478597" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which of the following expressions is NOT equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML"> <msup> <mrow data-mjx-texclass="ORD"></mrow> <mo>∗</mo> </msup> <mo stretchy="false">(</mo> <mi>arr</mi> <mo>+</mo> <mn>3</mn> <mo stretchy="false">)</mo> </math> where arr is an integer array?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>arr</mi> <mo stretchy="false">[</mo> <mn>3</mn> <mo stretchy="false">]</mo> </math>`,
+        `*(&arr <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">[</mo> <mn>0</mn> <mo stretchy="false">]</mo> <mo>+</mo> <mn>3</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>∗</mo> <mi>a</mi> <mi>r</mi> <mi>r</mi> <mo>+</mo> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>∗</mo> <mo stretchy="false">(</mo> <mn>3</mn> <mo>+</mo> <mi>a</mi> <mi>r</mi> <mi>r</mi> <mo stretchy="false">)</mo> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 40 Explanation:</strong><br>  <a href="https://gateoverflow.in/478595" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int arr[ ]={1, 2, 3, 4}
+int count;
+incr( ) {return ++count;}
+main( )
+{
+arr[count++]=incr( );
+printf("arr[count]=%d\n", arr[count]);
+}
+
+</pre> <p>The value printed by the above program is :</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 41 Explanation:</strong><br>  <a href="https://gateoverflow.in/477408" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p><b id="docs-internal-guid-6511b545-7fff-de04-5b24-5c935f9b04b3">Consider the following C code:</b></p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int arr[] = {10, 20, 30, 40, 50};
+int *p = arr + 2;
+printf("%d", *(p - 1));
+</pre> <p>What is the output of this code? </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>20</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>30</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>40</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 42 Explanation:</strong><br>  <a href="https://gateoverflow.in/477400" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following structure on a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> -bit machine ( <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> -byte alignment for int, char alignment is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> byte):</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">struct test {
+    char a;
+    int b;
+    char c;
+};
+</pre> <p>What is the size (in bytes) of this structure? </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>6</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>9</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>12</mn> </math>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 43 Explanation:</strong><br>  <a href="https://gateoverflow.in/477402" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following program: (Assume that the appropriate preprocessor directives are included and there is not syntax error)</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">main( )
+    { char S[]="ABCDEFGH";
+        printf("%C", *(&amp;S[3]));
+        printf("%s", S+4);
+        printf("%u", S);
+    /*Base address of S is 1000 */
+    }
+
+</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mi>B</mi> <mi>C</mi> <mi>D</mi> <mi>E</mi> <mi>F</mi> <mi>G</mi> <mi>H</mi> <mn>1000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> <mi>D</mi> <mi>E</mi> <mi>F</mi> <mi>G</mi> <mi>H</mi> <mn>1000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>D</mi> <mi>D</mi> <mi>E</mi> <mi>F</mi> <mi>G</mi> <mi>H</mi> <mi>H</mi> <mn>1000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>D</mi> <mi>E</mi> <mi>F</mi> <mi>G</mi> <mi>H</mi> <mn>1000</mn> </math>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 44 Explanation:</strong><br>  <a href="https://gateoverflow.in/477406" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the value returned by the function <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>f</mi> </math> given below when <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>n</mi> <mo>=</mo> <mn>100</mn> </math> ?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">let f(int n)
+{ if (n==0) then return n;
+else
+return n+f(n-2);
+}
+
+</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2550</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2556</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5220</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5520</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 45 Explanation:</strong><br>  <a href="https://gateoverflow.in/477404" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>A function <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo stretchy="false">(</mo> <mi>A</mi> <mo>,</mo> <mi>B</mi> <mo>,</mo> <mi>C</mi> <mo stretchy="false">)</mo> </math> defined by three Boolean variables <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> <mo>,</mo> <mi>B</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>C</mi> </math> when expressed as sum of products is given by</p> <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>⋅</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>⋅</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>⋅</mo> <mi>B</mi> <mo>⋅</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>A</mi> <mo>⋅</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>⋅</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math> </p> <p>where, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>,</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math> are complements of the respective variable. The product of sums (POS) form of the function <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> is </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">~</mo> </mover> </mrow> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>B</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>A</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>C</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mo>⋅</mo> <mo stretchy="false">(</mo> <mi>A</mi> <mo>+</mo> <mi>B</mi> <mo>+</mo> <mi>C</mi> <mo stretchy="false">)</mo> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 46 Explanation:</strong><br>  <a href="https://gateoverflow.in/474349" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Select the Boolean function(s) equivalent to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>+</mo> <mi>y</mi> <mi>z</mi> </math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>,</mo> <mi>y</mi> </math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>z</mi> </math> are Boolean variables, and + denotes logical OR operation.</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>+</mo> <mi>z</mi> <mo>+</mo> <mi>x</mi> <mi>y</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mi>x</mi> <mo>+</mo> <mi>y</mi> <mo stretchy="false">)</mo> <mo stretchy="false">(</mo> <mi>x</mi> <mo>+</mo> <mi>z</mi> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>+</mo> <mi>x</mi> <mi>y</mi> <mo>+</mo> <mi>y</mi> <mi>z</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> <mo>+</mo> <mi>x</mi> <mi>z</mi> <mo>+</mo> <mi>x</mi> <mi>y</mi> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 47 Explanation:</strong><br>  <a href="https://gateoverflow.in/474347" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>In the circuit shown, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>W</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>Y</mi> </math> are MSBs of the control inputs. The output <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> is given by</p> <p><img alt="" src="./images_godpp/dpp_img_b64_15.png"/></p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>W</mi> <mrow data-mjx-texclass="ORD"> <mover> <mi>X</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>W</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mi>X</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mrow data-mjx-texclass="ORD"> <mover> <mi>Z</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>W</mi> <mrow data-mjx-texclass="ORD"> <mover> <mi>X</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>W</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mi>X</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mi>Z</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>W</mi> <mrow data-mjx-texclass="ORD"> <mover> <mi>X</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>W</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mi>X</mi> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>W</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>X</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo stretchy="false">)</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mrow data-mjx-texclass="ORD"> <mover> <mi>Z</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 48 Explanation:</strong><br>  <a href="https://gateoverflow.in/474345" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>The circuit shown consists of j-K flip-flops, each with an active low asynchronous reset ( <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mrow data-mjx-texclass="ORD"> <mover> <mi>R</mi> <mo stretchy="false">^</mo> </mover> </mrow> <mi>i</mi> </msub> </math> input). The counter corresponding to this circuit is</p> <p><img alt="" height="124" src="./images_godpp/dpp_img_b64_55.png" width="407"/></p> </span>`,
+      image: "",
+      options: [
+        `a modulo- <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> binary up counter`,
+        `a modulo -<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>6</mn> </math> binary down counter`,
+        `a modulo- <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> binary down counter`,
+        `a modulo- <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>6</mn> </math> binary up counter`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 49 Explanation:</strong><br>  <a href="https://gateoverflow.in/474343" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>A 4-bit shift register circuit configured for right-shift operation, i.e, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>D</mi> <mrow data-mjx-texclass="ORD"> <mtext>in </mtext> </mrow> </msub> <mo stretchy="false">→</mo> <mi>A</mi> <mo>,</mo> <mi>A</mi> <mo stretchy="false">→</mo> <mi>B</mi> <mo>,</mo> <mi>B</mi> <mo stretchy="false">→</mo> <mi>C</mi> <mo>,</mo> <mi>C</mi> <mo stretchy="false">→</mo> <mi>D</mi> </math>, as shown. If the present state of the shift register is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1101</mn> </math>, the number of clock cycles required to reach the state <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1111</mn> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle scriptlevel="0"> <mspace width="2em"></mspace> </mstyle> </math> ,<br/><img alt="" src="./images_godpp/dpp_img_b64_33.png"/></p> </span>`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 50 Explanation:</strong><br>  <a href="https://gateoverflow.in/474340" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+int main() {
+    int val[] = {5, 10, 15};
+    int *ptr = val;
+    *ptr++ = 20;
+    printf("%d %d %d\n", val[0], ptr[2], val[2]);
+    return 0;
+}
+
+</pre> </span>`,
+      image: "",
+      options: [
+        `5 10 15`,
+        `20 15 15`,
+        `20 10 15`,
+        `None of the above`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 51 Explanation:</strong><br>  <a href="https://gateoverflow.in/474336" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the code given below?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include&lt;stdio.h&gt;
+int main()
+{
+    char name[] = "satellites";
+    int len;
+    int size;
+    len = strlen(name);
+    size = sizeof(name);
+    printf("%d", len * size);
+    return 0;
+}
+</pre> <p> </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>100</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>110</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>40</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>44</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 52 Explanation:</strong><br>  <a href="https://gateoverflow.in/474334" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>Consider the following recursive C function.</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">unsigned int f(unsigned int n)
+{
+    if (n &lt; 10) printf("%d",n);
+    else {
+        printf("%d", n%10);
+        f(n/10);
+        printf("%d", n%10);
+    }
+}
+
+</pre> <p>What does the call <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mo>£</mo> </mrow> <mo stretchy="false">(</mo> <mn>351274</mn> <mo stretchy="false">)</mo> </math> print?</p> </span>`,
+      image: "",
+      options: [],
+      answer: "47215351274",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 53 Explanation:</strong><br>  <a href="https://gateoverflow.in/474332" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What string does the following program print?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+void strFunc2 (char A[], int n)
+{
+    char t;
+    if (n &lt;= 1) return;
+            t = A[0]; A[0] = A[n-1]; A[n-1] = t;
+            strFunc2(&amp;A[1],n-2);
+}
+int main ()
+{
+    char A[10] = "PDS 2005";
+    strFunc2(A,strlen(A));
+    printf("%s", A);
+}
+</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5002</mn> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>S</mi> <mi>D</mi> <mi>P</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> <mi>D</mi> <mi>S</mi> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>200</mn> <mi>P</mi> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>P</mi> <mi>D</mi> <mi>S</mi> </math> <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2005</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>SDP</mi> <mn>2005</mn> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 54 Explanation:</strong><br>  <a href="https://gateoverflow.in/474330" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Let the function g be defined as follows:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int g ( int n )
+{
+if (n &lt; 2) return n;
+return g(n/2);
+}
+
+</pre> <p>What is the value returned by the call <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi mathvariant="normal">g</mi> </mrow> <mo stretchy="false">(</mo> <mn>142857</mn> <mo stretchy="false">)</mo> </math> ?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>71428</mn> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 55 Explanation:</strong><br>  <a href="https://gateoverflow.in/474328" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+int x = 180;
+void func() {
+    static int x = 10;
+    x += 5;
+    printf("%d ", x);
+}
+int main() {
+    int x = 1;
+    printf("%d ", x);
+    func();
+    {
+        int x = 50;
+        x++;
+        printf("%d ", x);
+        func();
+    }
+    printf("%d", x);
+    return 0;
+}</pre> <p>What will be the output of the above program?<br/>A 1 15 51 20 1<br/>B 1 10 51 15 1<br/>C 1 15 51 15 100<br/>D 1 15 51 20 100</p> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 56 Explanation:</strong><br>  <a href="https://gateoverflow.in/473730" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following recursive function definition:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">function FOO(n)
+    if (n=0) then
+        return 0
+    else if ( n = 1) then
+        return 1
+    else if ( n = 2) then
+        return 3
+    else
+        return n + FOO(n-1) + FOO(n-2)
+    end if
+end function</pre> <p>What is the value returned by <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mi>O</mi> <mi>O</mi> <mo stretchy="false">(</mo> <mn>5</mn> <mo stretchy="false">)</mo> </math> ?<br/>A. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math><br/>B. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>14</mn> </math><br/>C. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>26</mn> </math><br/>D. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>35</mn> </math> </p> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 57 Explanation:</strong><br>  <a href="https://gateoverflow.in/473728" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following C program executed on a little-endian system:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+int main() {
+    int a = 320;
+    char *ptr;
+    ptr = (char *)&amp;a;
+    printf("%d ", "ptr);
+    return 0;
+}
+</pre> <p>What will be the output of the program?<br/>A. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math><br/>B. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>320</mn> </math><br/>C. <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>64</mn> </math><br/>D. Compilation error </p> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 58 Explanation:</strong><br>  <a href="https://gateoverflow.in/473726" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following C program:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+void main()
+{
+    int *ptr, i;
+    i = 12;
+    *ptr = i * i;
+    ++i;
+    printf("%d %d", i, *ptr);
+}</pre> <p>What will be the output of the above program?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>12</mn> <mo>,</mo> <mn>144</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> <mo>,</mo> <mn>144</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> <mo>,</mo> <mn>0</mn> </math>`,
+        `None of these`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 59 Explanation:</strong><br>  <a href="https://gateoverflow.in/473724" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Study the following program:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+int i, n=2;
+    for(i=0; i&lt;2 ; i++ )
+    {
+        if(!(i&lt;=n) &amp;&amp; (++n==i))
+            n=n+2;
+        else
+            n=n-2;
+    }
+}</pre> <p>What will be the output of this program?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 60 Explanation:</strong><br>  <a href="https://gateoverflow.in/473722" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will be the output the following:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+    int *i, *j, a=12, b=2, c ;
+    c= (a=a+b, b=a/b, a=a*b, b=a-b);
+    i= &amp;c;
+    printf ("%d",--(*i));
+}
+</pre> <p> </p> </span>`,
+      image: "",
+      options: [
+        `93`,
+        `91`,
+        `92`,
+        `90`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 61 Explanation:</strong><br>  <a href="https://gateoverflow.in/473036" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following C code:</p> <p>What will be the final values of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>y</mi> </math> after the if statement is executed?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">int x = 4, y = 0;
+if ((x = 0) &amp;&amp; (y = 10)) {
+    // some code
+}
+</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>x</mi> </math> is 4 and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>y</mi> </math> is 0`,
+        `x is 0 and y is 10`,
+        `x is 0 and y is 0`,
+        `Syntax Error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 62 Explanation:</strong><br>  <a href="https://gateoverflow.in/473034" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following C program:</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include &lt;stdio.h&gt;
+void main()
+{
+int a, b, c;
+a = 2;
+b = 2 * (a++);
+c = 2 * (++a);
+printf("b = %d \n c = %d", b, c);
+}
+</pre> <p> </p> <p> </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>b</mi> <mo>=</mo> <mn>4</mn> <mo>,</mo> <mi>c</mi> <mo>=</mo> <mn>6</mn> </math>`,
+        `b <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo>=</mo> <mn>3</mn> <mo>,</mo> <mi>c</mi> <mo>=</mo> <mn>8</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>b</mi> <mo>=</mo> <mn>3</mn> <mo>,</mo> <mi>c</mi> <mo>=</mo> <mn>6</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>b</mi> <mo>=</mo> <mn>4</mn> <mo>,</mo> <mi>c</mi> <mo>=</mo> <mn>8</mn> </math>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 63 Explanation:</strong><br>  <a href="https://gateoverflow.in/473032" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will be the output of following program?</p> <pre class="prettyprint linenums lang-c_cpp" data-pbcklang="c_cpp" data-pbcktabsize="4">#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+    int i, j, k;
+
+    j=5;
+
+    i= 2*j/2;
+
+    k=2*(j/2);
+
+    printf("i=%d \n k=%d", i, k);
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>i</mi> <mo>=</mo> <mn>5</mn> <mo>,</mo> <mi>k</mi> <mo>=</mo> <mn>5</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>i</mi> <mo>=</mo> <mn>5</mn> <mo>,</mo> <mi>k</mi> <mo>=</mo> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>i</mi> <mo>=</mo> <mn>4</mn> <mo>,</mo> <mi>k</mi> <mo>=</mo> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>i</mi> <mo>=</mo> <mn>4</mn> <mo>,</mo> <mi>k</mi> <mo>=</mo> <mn>5</mn> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 64 Explanation:</strong><br>  <a href="https://gateoverflow.in/473030" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which of the following operators has the lowest precedence in C?</p> </span>`,
+      image: "",
+      options: [
+        `++ (post-increment)`,
+        `% (modulus)`,
+        `II (logical OR)`,
+        `() (parentheses)`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 65 Explanation:</strong><br>  <a href="https://gateoverflow.in/473028" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun(int n) {     if (n == 0)         return;      fun(n - 1);     printf("%d ", n); }  int main() {     fun(4);     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void fun(int n) {
+    if (n == 0)
+        return;
+
+    fun(n - 1);
+    printf("%d ", n);
+}
+
+int main() {
+    fun(4);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 3\ 2\ 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 2\ 3\ 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0\ 1\ 2\ 3\ 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 3\ 2\ 1\ 0</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 66 Explanation:</strong><br>  <a href="https://gateoverflow.in/535182" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int sum(int n) {     if (n == 1)         return 1;      return n + sum(n - 1); }  int main() {     printf("%d", sum(5));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int sum(int n) {
+    if (n == 1)
+        return 1;
+
+    return n + sum(n - 1);
+}
+
+int main() {
+    printf("%d", sum(5));
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "15",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 67 Explanation:</strong><br>  <a href="https://gateoverflow.in/535184" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fact(int n) {     if (n == 0)         return 1;      return n * fact(n - 1); }  int main() {     printf("%d", fact(4));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fact(int n) {
+    if (n == 0)
+        return 1;
+
+    return n * fact(n - 1);
+}
+
+int main() {
+    printf("%d", fact(4));
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "24",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 68 Explanation:</strong><br>  <a href="https://gateoverflow.in/535187" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun(int n) {     if (n == 0)         return;      printf("%d ", n);     fun(n - 1); }  int main() {     fun(4);     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void fun(int n) {
+    if (n == 0)
+        return;
+
+    printf("%d ", n);
+    fun(n - 1);
+}
+
+int main() {
+    fun(4);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 2\ 3\ 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 3\ 2\ 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 3\ 2\ 1\ 0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0\ 1\ 2\ 3\ 4</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 69 Explanation:</strong><br>  <a href="https://gateoverflow.in/535180" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will happen when the following code is compiled?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int x = 5;  int main() {     extern int x;     int x = 10;      printf("%d", x);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int x = 5;
+
+int main() {
+    extern int x;
+    int x = 10;
+
+    printf("%d", x);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `Compilation error`,
+        `Linker error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 70 Explanation:</strong><br>  <a href="https://gateoverflow.in/535114" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int a = 1;  void fun() {     static int a = 2;     a++;     printf("%d ", a); }  int main() {     auto int b = 5;      fun();      {         extern int a;         printf("%d ", a);     }      fun();      printf("%d", b);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int a = 1;
+
+void fun() {
+    static int a = 2;
+    a++;
+    printf("%d ", a);
+}
+
+int main() {
+    auto int b = 5;
+
+    fun();
+
+    {
+        extern int a;
+        printf("%d ", a);
+    }
+
+    fun();
+
+    printf("%d", b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 1\ 4\ 5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 2\ 4\ 5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 1\ 3\ 5</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 71 Explanation:</strong><br>  <a href="https://gateoverflow.in/535121" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which of the following statements is correct in C?</p> </span>`,
+      image: "",
+      options: [
+        `An automatic local variable has block scope and lifetime throughout the program execution`,
+        `A static local variable has block scope and lifetime throughout the program execution`,
+        `A static global variable has external linkage`,
+        `A register variable must always be stored in a CPU register`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 72 Explanation:</strong><br>  <a href="https://gateoverflow.in/535111" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void f() {     static int x = 0;     x = x + 2;     printf("%d ", x); }  void g() {     static int x = 5;     x = x + 3;     printf("%d ", x); }  int main() {     f();     g();     f();     g();      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void f() {
+    static int x = 0;
+    x = x + 2;
+    printf("%d ", x);
+}
+
+void g() {
+    static int x = 5;
+    x = x + 3;
+    printf("%d ", x);
+}
+
+int main() {
+    f();
+    g();
+    f();
+    g();
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 8\ 4\ 11</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 5\ 4\ 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 8\ 2\ 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0\ 5\ 2\ 8</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 73 Explanation:</strong><br>  <a href="https://gateoverflow.in/535119" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     static int count = 0;      if (n == 0)         return count;      count = count + n;     return fun(n - 1); }  int main() {     printf("%d", fun(3));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    static int count = 0;
+
+    if (n == 0)
+        return count;
+
+    count = count + n;
+    return fun(n - 1);
+}
+
+int main() {
+    printf("%d", fun(3));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 74 Explanation:</strong><br>  <a href="https://gateoverflow.in/535190" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which of the following correctly explains the use of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">static</mtext> </math> in C?</p> </span>`,
+      image: "",
+      options: [
+        `A static local variable is created again every time the function is called`,
+        `A static global variable can be directly accessed from any other file`,
+        `A static function can be called directly from any other file`,
+        `A static local variable retains its value between function calls`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 75 Explanation:</strong><br>  <a href="https://gateoverflow.in/535117" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int x; int x;  int main() {     printf("%d", x);     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int x;
+int x;
+
+int main() {
+    printf("%d", x);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `Garbage value`,
+        `Compilation error`,
+        `Linker error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 76 Explanation:</strong><br>  <a href="https://gateoverflow.in/534935" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4054" data-start="3939">Given the following three files, what will be the output after compiling and linking them together?</p> <p data-end="4067" data-start="4056"><strong>file1.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-end="4114" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="extern int i;  void f() {     i++; }" data-start="4069">extern int i;
+
+void f() {
+    i++;
+}</pre> <p data-end="4127" data-start="4116"><strong>file2.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-end="4182" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="2" data-rawcode="int i = 0;  void f();  void g() {     f(); }" data-start="4129">int i = 0;
+
+void f();
+
+void g() {
+    f();
+}</pre> <p data-end="4194" data-start="4184"><strong>main.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-end="4330" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  extern int i;  void f(); void g();  int main() {     f();     g();      printf("%d", i);      return 0; }' data-start="4196">#include &lt;stdio.h&gt;
+
+extern int i;
+
+void f();
+void g();
+
+int main() {
+    f();
+    g();
+
+    printf("%d", i);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2</mtext> </math>`,
+        `Linker error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 77 Explanation:</strong><br>  <a href="https://gateoverflow.in/534931" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int x = 10;  int main() {     int x = 20;      {         extern int x;         printf("%d", x);     }      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int x = 10;
+
+int main() {
+    int x = 20;
+
+    {
+        extern int x;
+        printf("%d", x);
+    }
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20</mtext> </math>`,
+        `Garbage value`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 78 Explanation:</strong><br>  <a href="https://gateoverflow.in/534939" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int add(int n) {     static int total = 1;      total = total + n;      return total; }  int main() {     int i, ans = 0;      for (i = 1; i &lt;= 3; i++) {         ans = add(i);     }      printf("%d", ans);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int add(int n) {
+    static int total = 1;
+
+    total = total + n;
+
+    return total;
+}
+
+int main() {
+    int i, ans = 0;
+
+    for (i = 1; i &lt;= 3; i++) {
+        ans = add(i);
+    }
+
+    printf("%d", ans);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "7",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 79 Explanation:</strong><br>  <a href="https://gateoverflow.in/534937" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Given the following two files, what will happen when they are compiled and linked together?</p> <p><strong>file1.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  static void show() {     printf("Hello"); }' dir="ltr">#include &lt;stdio.h&gt;
+
+static void show() {
+    printf("Hello");
+}</pre> <p><strong>main.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="void show();  int main() {     show();     return 0; }" dir="ltr">void show();
+
+int main() {
+    show();
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Hello</mtext> </math>`,
+        `Compilation error`,
+        `Linker error`,
+        `Runtime error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 80 Explanation:</strong><br>  <a href="https://gateoverflow.in/534941" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1039" data-start="959">What will happen when the following code is compiled and linked? </p> <pre class="prettyprint linenums lang-c_cpp" data-end="1139" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     extern int a;      printf("%d", a);      return 0; }' data-start="1041">#include &lt;stdio.h&gt;
+
+int main() {
+    extern int a;
+
+    printf("%d", a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `Garbage value`,
+        `Compilation error`,
+        `Linker error`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 81 Explanation:</strong><br>  <a href="https://gateoverflow.in/534831" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="249" data-start="140">In which stage is the following code</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="4" data-rawcode="#include &lt;stdio.h&gt;">#include &lt;stdio.h&gt;</pre> <p class="prettyprint linenums lang-c_cpp" data-end="278" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;" data-start="251">is replaced by the contents of the file <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">stdio.h</mtext> </math>? </p> </span>`,
+      image: "",
+      options: [
+        `During editing`,
+        `During linking`,
+        `During execution`,
+        `During preprocessing`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 82 Explanation:</strong><br>  <a href="https://gateoverflow.in/534826" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1920" data-start="1863">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="2034" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     extern int i;      printf("%d", i);      return 0; }  int i = 100;' data-start="1922">#include &lt;stdio.h&gt;
+
+int main() {
+    extern int i;
+
+    printf("%d", i);
+
+    return 0;
+}
+
+int i = 100;</pre> </span>`,
+      image: "",
+      options: [
+        `Garbage value`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">100</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 83 Explanation:</strong><br>  <a href="https://gateoverflow.in/534828" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="996" data-start="939">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1166" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun() {     static int x = 1;      x = x + 2;      printf("%d ", x); }  int main() {     fun();     fun();     fun();      return 0; }' data-start="998">#include &lt;stdio.h&gt;
+
+void fun() {
+    static int x = 1;
+
+    x = x + 2;
+
+    printf("%d ", x);
+}
+
+int main() {
+    fun();
+    fun();
+    fun();
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 3\ 3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 5\ 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 3\ 5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 4\ 6</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 84 Explanation:</strong><br>  <a href="https://gateoverflow.in/534615" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2697" data-start="2625">What can be said about the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="2795" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     auto int x;      printf("%d", x);      return 0; }' data-start="2699">#include &lt;stdio.h&gt;
+
+int main() {
+    auto int x;
+
+    printf("%d", x);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `Output is always <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `Output is always <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1</mtext> </math>`,
+        `Output cannot be predicted`,
+        `Compilation error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 85 Explanation:</strong><br>  <a href="https://gateoverflow.in/534619" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1981" data-start="1924">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="2090" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int a; static int b;  int main() {     printf("%d %d", a, b);      return 0; }' data-start="1983">#include &lt;stdio.h&gt;
+
+int a;
+static int b;
+
+int main() {
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0\ 0</mtext> </math>`,
+        `Garbage values`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 1</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 86 Explanation:</strong><br>  <a href="https://gateoverflow.in/534617" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="3415" data-start="3358">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="3540" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     register int x = 10;     int *p = &amp;x;      printf("%d", *p);      return 0; }' data-start="3417">#include &lt;stdio.h&gt;
+
+int main() {
+    register int x = 10;
+    int *p = &amp;x;
+
+    printf("%d", *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `Garbage value`,
+        `Compilation error`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 87 Explanation:</strong><br>  <a href="https://gateoverflow.in/534621" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2907" data-start="2800">Given the following two files, what will happen when they are compiled and linked together?</p> <p data-end="2920" data-start="2909"><strong>file1.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-end="2994" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="static int count = 3;  void update() {     count = count + 1; }" data-start="2922">static int count = 3;
+
+void update() {
+    count = count + 1;
+}</pre> <p data-end="3006" data-start="2996"><strong>main.c</strong></p> <pre class="prettyprint linenums lang-c_cpp" data-end="3140" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  extern int count; void update();  int main() {     update();      printf("%d", count);      return 0; }' data-start="3008">#include &lt;stdio.h&gt;
+
+extern int count;
+void update();
+
+int main() {
+    update();
+
+    printf("%d", count);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4</mtext> </math>`,
+        `Compilation error`,
+        `Linker error`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 88 Explanation:</strong><br>  <a href="https://gateoverflow.in/534833" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="338" data-start="263">Is there any difference between the following declarations?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="377" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="extern int fun(); int fun();" data-start="340">extern int fun();
+int fun();</pre> </span>`,
+      image: "",
+      options: [
+        `Both are identical`,
+        `No difference, except <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">extern int fun();</mtext> </math> is probably in another file`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int fun();</mtext> </math> is overridden with <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">extern int fun();</mtext> </math>`,
+        `None of these`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 89 Explanation:</strong><br>  <a href="https://gateoverflow.in/534823" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="206" data-start="149">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="317" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int x = 10;  int main() {     int x = 20;      printf("%d", x);      return 0; }' data-start="208">#include &lt;stdio.h&gt;
+
+int x = 10;
+
+int main() {
+    int x = 20;
+
+    printf("%d", x);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "20",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 90 Explanation:</strong><br>  <a href="https://gateoverflow.in/534613" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="155" data-start="98">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Student {     int roll;     int marks; };  int main() {     struct Student s1;      s1.roll = 10;     s1.marks = 85;      printf("%d %d", s1.roll, s1.marks);      return 0; }'>#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s1;
+
+    s1.roll = 10;
+    s1.marks = 85;
+
+    printf("%d %d", s1.roll, s1.marks);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 85</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">85\ 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 10</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 91 Explanation:</strong><br>  <a href="https://gateoverflow.in/534514" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1061" data-start="1004">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1264" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Point {     int x;     int y; };  int main() {     struct Point p = {4, 7};      p.x = p.x + 3;     p.y = p.x + p.y;      printf("%d %d", p.x, p.y);      return 0; }' data-start="1063">#include &lt;stdio.h&gt;
+
+struct Point {
+    int x;
+    int y;
+};
+
+int main() {
+    struct Point p = {4, 7};
+
+    p.x = p.x + 3;
+    p.y = p.x + p.y;
+
+    printf("%d %d", p.x, p.y);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 11</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 11</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 92 Explanation:</strong><br>  <a href="https://gateoverflow.in/534516" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="1296" data-start="1239">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1472" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     if (n &lt;= 1)         return n;      return fun(n - 1) + fun(n - 3); }  int main() {     printf("%d", fun(5));     return 0; }' data-start="1298">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    if (n &lt;= 1)
+        return n;
+
+    return fun(n - 1) + fun(n - 3);
+}
+
+int main() {
+    printf("%d", fun(5));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 93 Explanation:</strong><br>  <a href="https://gateoverflow.in/534510" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="3250" data-start="3193">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="3408" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  #define SQUARE(x) x * x  int main() {     int a = 3;     int result = SQUARE(a + 1);      printf("%d", result);     return 0; }' data-start="3252">#include &lt;stdio.h&gt;
+
+#define SQUARE(x) x * x
+
+int main() {
+    int a = 3;
+    int result = SQUARE(a + 1);
+
+    printf("%d", result);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">16</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 94 Explanation:</strong><br>  <a href="https://gateoverflow.in/534512" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="338" data-start="281">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="538" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void update(int *p, int *q) {     *p = *p + 2;     *q = *q + 3;     *p = *p + *q; }  int main() {     int a = 5;     update(&amp;a, &amp;a);     printf("%d", a);     return 0; }' data-start="340">#include &lt;stdio.h&gt;
+
+void update(int *p, int *q) {
+    *p = *p + 2;
+    *q = *q + 3;
+    *p = *p + *q;
+}
+
+int main() {
+    int a = 5;
+    update(&amp;a, &amp;a);
+    printf("%d", a);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "20",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 95 Explanation:</strong><br>  <a href="https://gateoverflow.in/534508" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="1316" data-start="1259">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1483" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     if (n == 0)         return 1;      return n * fun(n - 2); }  int main() {     printf("%d", fun(6));     return 0; }' data-start="1318">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    if (n == 0)
+        return 1;
+
+    return n * fun(n - 2);
+}
+
+int main() {
+    printf("%d", fun(6));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "48",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 96 Explanation:</strong><br>  <a href="https://gateoverflow.in/534193" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="2078" data-start="2021">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="2326" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Student {     int marks; };  void update(struct Student s) {     s.marks = s.marks + 10; }  int main() {     struct Student st;      st.marks = 40;      update(st);      printf("%d", st.marks);      return 0; }' data-start="2080">#include &lt;stdio.h&gt;
+
+struct Student {
+    int marks;
+};
+
+void update(struct Student s) {
+    s.marks = s.marks + 10;
+}
+
+int main() {
+    struct Student st;
+
+    st.marks = 40;
+
+    update(st);
+
+    printf("%d", st.marks);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "40",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 97 Explanation:</strong><br>  <a href="https://gateoverflow.in/534195" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="256" data-start="199">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="453" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 10;     int *p = &amp;a;     int **q = &amp;p;      **q = **q + 3;     p = &amp;b;     **q = **q + a;      printf("%d %d", a, b);      return 0; }' data-start="258">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 10;
+    int *p = &amp;a;
+    int **q = &amp;p;
+
+    **q = **q + 3;
+    p = &amp;b;
+    **q = **q + a;
+
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8\ 18</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8\ 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 18</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 98 Explanation:</strong><br>  <a href="https://gateoverflow.in/534191" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="3005" data-start="2948">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="3243" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int solve(int n) {   static int x = 1;    if (n == 0)     return x;    x = x + n;    return solve(n - 1); }  int main() {   printf("%d ", solve(3));   printf("%d", solve(2));    return 0; }' data-start="3007">#include &lt;stdio.h&gt;
+
+int solve(int n) {
+  static int x = 1;
+
+  if (n == 0)
+    return x;
+
+  x = x + n;
+
+  return solve(n - 1);
+}
+
+int main() {
+  printf("%d ", solve(3));
+  printf("%d", solve(2));
+
+  return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 7</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 99 Explanation:</strong><br>  <a href="https://gateoverflow.in/534197" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="4354" data-start="4297">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="4681" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, j, sum = 0;      for (i = 1; i &lt;= 4; i++) {         for (j = 1; j &lt;= 5; j++) {             if (j % i == 0)                 continue;              if (i + j &gt; 6)                 break;              sum = sum + i + j;         }     }      printf("%d", sum);      return 0; }' data-start="4356">#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, sum = 0;
+
+    for (i = 1; i &lt;= 4; i++) {
+        for (j = 1; j &lt;= 5; j++) {
+            if (j % i == 0)
+                continue;
+
+            if (i + j &gt; 6)
+                break;
+
+            sum = sum + i + j;
+        }
+    }
+
+    printf("%d", sum);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "28",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 100 Explanation:</strong><br>  <a href="https://gateoverflow.in/534199" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="3200" data-start="3143">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="3476" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, j, count = 0;      for (i = 1; i &lt;= 4; i++) {         for (j = 1; j &lt;= 4; j++) {             if (i * j &gt; 6)                 break;              count = count + j;         }     }      printf("%d", count);      return 0; }' data-start="3202">#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, count = 0;
+
+    for (i = 1; i &lt;= 4; i++) {
+        for (j = 1; j &lt;= 4; j++) {
+            if (i * j &gt; 6)
+                break;
+
+            count = count + j;
+        }
+    }
+
+    printf("%d", count);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "20",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 101 Explanation:</strong><br>  <a href="https://gateoverflow.in/534187" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4922" data-start="4865">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void change(int *p, int *q) {     *p = *p + 4;     *q = *p + *q;     p = q;     *p = *p - 3; }  int main() {     int a = 6, b = 10;      change(&amp;a, &amp;b);      printf("%d %d", a, b);      return 0; }'>#include &lt;stdio.h&gt;
+
+void change(int *p, int *q) {
+    *p = *p + 4;
+    *q = *p + *q;
+    p = q;
+    *p = *p - 3;
+}
+
+int main() {
+    int a = 6, b = 10;
+
+    change(&amp;a, &amp;b);
+
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 20</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6\ 17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13\ 17</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 102 Explanation:</strong><br>  <a href="https://gateoverflow.in/534189" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1290" data-start="1233">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1490" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun() {     static int x = 3;     int y = 2;      x = x + y;     y = y + x;      printf("%d ", x); }  int main() {     fun();     fun();     fun();      return 0; }' data-start="1292">#include &lt;stdio.h&gt;
+
+void fun() {
+    static int x = 3;
+    int y = 2;
+
+    x = x + y;
+    y = y + x;
+
+    printf("%d ", x);
+}
+
+int main() {
+    fun();
+    fun();
+    fun();
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 5\ 5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 7\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 5\ 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 10\ 15</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 103 Explanation:</strong><br>  <a href="https://gateoverflow.in/534183" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="255" data-start="198">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="447" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 8, b = 12;     int *p = &amp;a;     int *q = &amp;b;      *p = *p + *q;     q = p;     *q = *q - 5;      printf("%d %d", a, b);      return 0; }' data-start="257">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 8, b = 12;
+    int *p = &amp;a;
+    int *q = &amp;b;
+
+    *p = *p + *q;
+    q = p;
+    *q = *q - 5;
+
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15\ 12</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20\ 12</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15\ 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8\ 12</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 104 Explanation:</strong><br>  <a href="https://gateoverflow.in/534181" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="167" data-start="110">What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-end="385" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() { int a = 10, b = 20; int *p, *q;  p = &amp;a; q = &amp;b;  *p = *p + 5; *q = *p + *q; p = q; *p = *p - 10;  printf("%d %d", a, b);  return 0; }' data-start="169">#include &lt;stdio.h&gt;
+
+int main() {
+int a = 10, b = 20;
+int *p, *q;
+
+p = &amp;a;
+q = &amp;b;
+
+*p = *p + 5;
+*q = *p + *q;
+p = q;
+*p = *p - 10;
+
+printf("%d %d", a, b);
+
+return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15\ 25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15\ 35</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10\ 25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">25\ 15</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 105 Explanation:</strong><br>  <a href="https://gateoverflow.in/534054" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="2431" data-start="2374">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="2601" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int calc(int n) {     if (n == 1)         return 2;      return n + calc(n - 1); }  int main() {     printf("%d", calc(4));     return 0; }' data-start="2433">#include &lt;stdio.h&gt;
+
+int calc(int n) {
+    if (n == 1)
+        return 2;
+
+    return n + calc(n - 1);
+}
+
+int main() {
+    printf("%d", calc(4));
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "11",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 106 Explanation:</strong><br>  <a href="https://gateoverflow.in/534185" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="2372" data-start="2315">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, j, count = 0;      for (i = 1; i &lt;= 4; i++) {         for (j = 1; j &lt;= 4; j++) {             if (i == j)                 continue;              if (i + j &gt; 5)                 break;              count++;         }     }      printf("%d", count);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, count = 0;
+
+    for (i = 1; i &lt;= 4; i++) {
+        for (j = 1; j &lt;= 4; j++) {
+            if (i == j)
+                continue;
+
+            if (i + j &gt; 5)
+                break;
+
+            count++;
+        }
+    }
+
+    printf("%d", count);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "8",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 107 Explanation:</strong><br>  <a href="https://gateoverflow.in/534050" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="284" data-start="227">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="620" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[5] = {2, 4, 1, 3, 5};     int i, sum = 0;      for (i = 0; i &lt; 5; i++) {         if (a[i] % 2 == 0)             sum = sum + a[i];         else {             sum = sum + i;              if (sum &gt; 8)                 break;         }     }      printf("%d %d", i, sum);     return 0; }' data-start="286">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[5] = {2, 4, 1, 3, 5};
+    int i, sum = 0;
+
+    for (i = 0; i &lt; 5; i++) {
+        if (a[i] % 2 == 0)
+            sum = sum + a[i];
+        else {
+            sum = sum + i;
+
+            if (sum &gt; 8)
+                break;
+        }
+    }
+
+    printf("%d %d", i, sum);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 11</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 16</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 16</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 8</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 108 Explanation:</strong><br>  <a href="https://gateoverflow.in/534045" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1464" data-start="1407">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int update(int x) {     x = x + 3;     return x * 2; }  int main() {     int a = 4, b;      b = update(a);     printf("%d %d", a, b);      return 0; }'>#include &lt;stdio.h&gt;
+
+int update(int x) {
+    x = x + 3;
+    return x * 2;
+}
+
+int main() {
+    int a = 4, b;
+
+    b = update(a);
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 8</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 109 Explanation:</strong><br>  <a href="https://gateoverflow.in/534048" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="4050" data-start="3993">What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-end="4357" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int x = 3, y = 1;      switch (x - 1) {         case 1:             y = y + 2;         case 2:             y = y * 3;         case 3:             y = y - 1;             break;         default:             y = y + 5;     }      printf("%d", y);     return 0; }' data-start="4052">#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 3, y = 1;
+
+    switch (x - 1) {
+        case 1:
+            y = y + 2;
+        case 2:
+            y = y * 3;
+        case 3:
+            y = y - 1;
+            break;
+        default:
+            y = y + 5;
+    }
+
+    printf("%d", y);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "2",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 110 Explanation:</strong><br>  <a href="https://gateoverflow.in/534052" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="173" data-start="116">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="488" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int x = 2, y = 0;      switch (x) {         case 1:             y = y + 1;         case 2:             y = y + 2;         case 3:             y = y + 3;             break;         default:             y = y + 4;     }      printf("%d", y);     return 0; }' data-start="175">#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 2, y = 0;
+
+    switch (x) {
+        case 1:
+            y = y + 1;
+        case 2:
+            y = y + 2;
+        case 3:
+            y = y + 3;
+            break;
+        default:
+            y = y + 4;
+    }
+
+    printf("%d", y);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "5",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 111 Explanation:</strong><br>  <a href="https://gateoverflow.in/533878" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="1465" data-start="1408">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1787" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, j, sum = 0;      for (i = 1; i &lt;= 4; i++) {         for (j = 1; j &lt;= 4; j++) {             if (j == i)                 continue;              if (i + j &gt; 5)                 break;              sum = sum + i + j;         }     }      printf("%d", sum);     return 0; }' data-start="1467">#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, sum = 0;
+
+    for (i = 1; i &lt;= 4; i++) {
+        for (j = 1; j &lt;= 4; j++) {
+            if (j == i)
+                continue;
+
+            if (i + j &gt; 5)
+                break;
+
+            sum = sum + i + j;
+        }
+    }
+
+    printf("%d", sum);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "34",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 112 Explanation:</strong><br>  <a href="https://gateoverflow.in/533889" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="177" data-start="120">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 1, b = 2, c = 3;      if (a++ &gt; 1 &amp;&amp; ++b &gt; 2 || c++ == 3)         printf("%d %d %d", a, b, c);     else         printf("%d %d %d", c, b, a);      return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 1, b = 2, c = 3;
+
+    if (a++ &gt; 1 &amp;&amp; ++b &gt; 2 || c++ == 3)
+        printf("%d %d %d", a, b, c);
+    else
+        printf("%d %d %d", c, b, a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 3\ 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2\ 2\ 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 2\ 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 2\ 3</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 113 Explanation:</strong><br>  <a href="https://gateoverflow.in/533884" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1935" data-start="1878">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int x = 3, y = 4, z;      z = x++ + ++y;      printf("%d %d %d", x, y, z);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 3, y = 4, z;
+
+    z = x++ + ++y;
+
+    printf("%d %d %d", x, y, z);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 5\ 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 5\ 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 4\ 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4\ 5\ 9</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 114 Explanation:</strong><br>  <a href="https://gateoverflow.in/533882" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="1111" data-start="1054">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, j, count = 0;      for (i = 1; i &lt;= 3; i++) {         for (j = 1; j &lt;= i; j++) {             count = count + j;         }     }      printf("%d", count);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j, count = 0;
+
+    for (i = 1; i &lt;= 3; i++) {
+        for (j = 1; j &lt;= i; j++) {
+            count = count + j;
+        }
+    }
+
+    printf("%d", count);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 115 Explanation:</strong><br>  <a href="https://gateoverflow.in/533880" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2180" data-start="2123">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int i, sum = 0;      for (i = 1; i &lt;= 6; i++) {         if (i % 2 == 0)             continue;          sum = sum + i;          if (sum &gt; 6)             break;     }      printf("%d %d", i, sum);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, sum = 0;
+
+    for (i = 1; i &lt;= 6; i++) {
+        if (i % 2 == 0)
+            continue;
+
+        sum = sum + i;
+
+        if (sum &gt; 6)
+            break;
+    }
+
+    printf("%d %d", i, sum);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5\ 4</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 116 Explanation:</strong><br>  <a href="https://gateoverflow.in/533722" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="4" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 0, b = 5, c = 10;     int ans = a++ &amp;&amp; ++b || c--;      printf("%d %d %d %d", ans, a, b, c);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 0, b = 5, c = 10;
+    int ans = a++ &amp;&amp; ++b || c--;
+
+    printf("%d %d %d %d", ans, a, b, c);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 1\ 6\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 1\ 5\ 9</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0\ 1\ 5\ 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1\ 0\ 5\ 9</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 117 Explanation:</strong><br>  <a href="https://gateoverflow.in/533720" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4460" data-section-id="1xf6jw0" data-start="4433">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() { int x = 5; printf("%d", x++);  printf("%d", ++x); return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+int x = 5;
+printf("%d", x++);
+
+printf("%d", ++x);
+return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>56</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>67</mn> </math>`,
+        `Compilation error`,
+        `Undefined behavior`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 118 Explanation:</strong><br>  <a href="https://gateoverflow.in/533713" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="2888" data-section-id="1u8p3py" data-start="2861">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 10;     printf("%d", a &lt; b &amp;&amp; b &gt; 0);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 10;
+    printf("%d", a &lt; b &amp;&amp; b &gt; 0);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 119 Explanation:</strong><br>  <a href="https://gateoverflow.in/533677" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="4460" data-section-id="1xf6jw0" data-start="4433">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 2;     float x = a / b + 0.5;     printf("%.1f", x);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 2;
+    float x = a / b + 0.5;
+    printf("%.1f", x);
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "2.5",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 120 Explanation:</strong><br>  <a href="https://gateoverflow.in/533718" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="3074" data-section-id="x935rr" data-start="3047">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='&lt;code&gt;#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 10;     printf("%d", a &gt; b || b &gt; 0);     return 0; }&lt;/code&gt;'>#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 10;
+    printf("%d", a &gt; b || b &gt; 0);
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "1",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 121 Explanation:</strong><br>  <a href="https://gateoverflow.in/533674" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="152" data-start="86">Which of the following is a valid identifier in C?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2sum</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">total-marks</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">_value</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">float</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 122 Explanation:</strong><br>  <a href="https://gateoverflow.in/533668" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="822" data-section-id="1vwmnko" data-start="770">Which of the following is <strong>not</strong> a keyword in C? </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">return</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">main</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">while</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 123 Explanation:</strong><br>  <a href="https://gateoverflow.in/533672" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Assume that <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">char</mtext> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> bits and signed integers are represented using <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>'s complement. Consider the following C code:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="4" data-rawcode='#include &lt;stdio.h&gt;  int main() {     signed char x = 0xF9;     unsigned char y = x;      printf("%d %u", x, (unsigned int)y);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    signed char x = 0xF9;
+    unsigned char y = x;
+
+    printf("%d %u", x, (unsigned int)y);
+    return 0;
+}</pre> <p data-end="393" data-start="369">What will be the output?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">-7\ 249</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">249\ 249</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">-7\ -7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7\ 249</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 124 Explanation:</strong><br>  <a href="https://gateoverflow.in/533670" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="4460" data-section-id="1xf6jw0" data-start="4433">What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     float x = 5 / 2;     printf("%.1f", x);     printf("\n");     float y = 5.0 / 2;     printf("%.1f", y);     return 0; }'>#include &lt;stdio.h&gt;
+
+int main() {
+    float x = 5 / 2;
+    printf("%.1f", x);
+    printf(" ");
+    float y = 5.0 / 2;
+    printf("%.1f", y);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `$<code style="color: #c7254e; background-color: #f9f2f4; padding: 2px 4px; border-radius: 4px; font-family: monospace;">2.5 2.0</code>$`,
+        `$<code style="color: #c7254e; background-color: #f9f2f4; padding: 2px 4px; border-radius: 4px; font-family: monospace;">2.0 2.5</code>$`,
+        `$<code style="color: #c7254e; background-color: #f9f2f4; padding: 2px 4px; border-radius: 4px; font-family: monospace;">3.0 3.0</code>$`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 125 Explanation:</strong><br>  <a href="https://gateoverflow.in/533716" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Assume:</p> <p><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">short = 2 bytes</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int = 4 bytes</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">char = 1 byte</mtext> </math> </p> <p><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int</mtext> </math> needs <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>-byte alignment and the final structure size is rounded to a multiple of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>. </p> <p>Find the size of each structure in order: <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">struct X</mtext> </math>, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">struct Y</mtext> </math>, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">struct Z</mtext> </math>. </p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="struct X {     short s;     int i;     char c; };  struct Y {     int i;     char c;     short s; };  struct Z {     int i;     short s;     char c; };" dir="ltr">struct X {
+    short s;
+    int i;
+    char c;
+};
+
+struct Y {
+    int i;
+    char c;
+    short s;
+};
+
+struct Z {
+    int i;
+    short s;
+    char c;
+};</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7 7 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 8 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 8 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 12 8</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 126 Explanation:</strong><br>  <a href="https://gateoverflow.in/538218" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Assume:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="struct Student {     double gpa; };  struct Student alice; struct Student *sptr = &amp;alice;" dir="ltr">struct Student {
+    double gpa;
+};
+
+struct Student alice;
+struct Student *sptr = &amp;alice;</pre> <p>Which of the following correctly assigns <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4.0</mtext> </math> to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">alice.gpa</mtext> </math>? </p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">*sptr.gpa = 4.0;</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">(*sptr).gpa = 4.0;</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">sptr-&gt;gpa = 4.0;</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">sptr.gpa = 4.0;</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 127 Explanation:</strong><br>  <a href="https://gateoverflow.in/538216" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following code idea from the source:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='typedef struct {     double x, y; } Point;  void reset(Point p) {     p.x = p.y = 0; }  int main() {     Point a = {12.0, 42.0};     Point b = a;      reset(a);     b.x = 0;      printf("a: %.0f,%.0f\n", a.x, a.y);     printf("b: %.0f,%.0f\n", b.x, b.y); }' dir="ltr">typedef struct {
+    double x, y;
+} Point;
+
+void reset(Point p) {
+    p.x = p.y = 0;
+}
+
+int main() {
+    Point a = {12.0, 42.0};
+    Point b = a;
+
+    reset(a);
+    b.x = 0;
+
+    printf("a: %.0f,%.0f\n", a.x, a.y);
+    printf("b: %.0f,%.0f\n", b.x, b.y);
+}</pre> <p>What is the output?</p> <p>A.</p> <pre dir="ltr"><code dir="ltr">a: 0,0
+b: 0,42</code></pre> <p>B.</p> <pre dir="ltr"><code dir="ltr">a: 12,42
+b: 0,42</code></pre> <p>C.</p> <pre dir="ltr"><code dir="ltr">a: 12,42
+b: 12,42</code></pre> <p>D.</p> <pre dir="ltr"><code dir="ltr">a: 0,42
+b: 0,42</code></pre> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 128 Explanation:</strong><br>  <a href="https://gateoverflow.in/538214" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is printed by the following program?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  struct Student {     int id, year;     char grade; };  int main() {     struct Student s;      s.id = 10001;     s.year = 2010;     s.grade = 'B';      printf(&quot;%d %d %c\n&quot;, s.id, s.year, s.grade); }" dir="ltr">#include &lt;stdio.h&gt;
+
+struct Student {
+    int id, year;
+    char grade;
+};
+
+int main() {
+    struct Student s;
+
+    s.id = 10001;
+    s.year = 2010;
+    s.grade = 'B';
+
+    printf("%d %d %c\n", s.id, s.year, s.grade);
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10001 2010 B</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2010 10001 B</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10001 B 2010</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 129 Explanation:</strong><br>  <a href="https://gateoverflow.in/538212" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which option correctly completes the given exercise?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  /* define the person struct here using the typedef syntax */  int main() {     person john;      john.name = "John";     john.age = 27;      printf("%s is %d years old.", john.name, john.age); }' dir="ltr">#include &lt;stdio.h&gt;
+
+/* define the person struct here using the typedef syntax */
+
+int main() {
+    person john;
+
+    john.name = "John";
+    john.age = 27;
+
+    printf("%s is %d years old.", john.name, john.age);
+}</pre> <p>A.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="struct person {    char *name;    int age; };" dir="ltr">struct person {
+   char *name;
+   int age;
+};</pre> <p>B.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="typedef struct { char *name; int age; } person;" dir="ltr">typedef struct {
+   char *name;
+   int age;
+} person;</pre> <p>C.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="typedef struct person {    char name;    int age; };" dir="ltr">typedef struct person {
+   char name;
+   int age;
+};</pre> <p>D.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="struct {     char *name;     int age; } person;" dir="ltr">struct {
+    char *name;
+    int age;
+} person;</pre> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 130 Explanation:</strong><br>  <a href="https://gateoverflow.in/538210" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void func(int a, int *bptr) {     a = 42;     *bptr = 42;     return; }  int main(void) {     int x = 100, y = 100;      func(x, &amp;y);      printf("x = %d, y = %d\n", x, y);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void func(int a, int *bptr)
+{
+    a = 42;
+    *bptr = 42;
+    return;
+}
+
+int main(void)
+{
+    int x = 100, y = 100;
+
+    func(x, &amp;y);
+
+    printf("x = %d, y = %d\n", x, y);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">x = 42, y = 42</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">x = 100, y = 100</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">x = 100, y = 42</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">x = 42, y = 100</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 131 Explanation:</strong><br>  <a href="https://gateoverflow.in/538121" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following program:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int main(void) {     char ch;      printf(&quot;Enter your input: &quot;);      while ((ch = getchar()) != 'C')     {         putchar(ch);     }      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    char ch;
+
+    printf("Enter your input: ");
+
+    while ((ch = getchar()) != 'C')
+    {
+        putchar(ch);
+    }
+
+    return 0;
+}</pre> <p>For the input:</p> <pre dir="ltr"><code dir="ltr">In 1983, a committee was formed to standardize the C programming language.</code></pre> <p>What will be printed?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Enter your input: In 1983, a committee was formed to standardize the</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Enter your input: In 1983, a committee was formed to standardize the C</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Enter your input: C programming language. </mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 132 Explanation:</strong><br>  <a href="https://gateoverflow.in/538107" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What does the following code do?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int main() {     char c;      while ((c = getchar()) != EOF)     {         if (c &gt;= 'A' &amp;&amp; c &lt;= 'Z')             c = c - 'A' + 'a';          putchar(c);     }      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int main()
+{
+    char c;
+
+    while ((c = getchar()) != EOF)
+    {
+        if (c &gt;= 'A' &amp;&amp; c &lt;= 'Z')
+            c = c - 'A' + 'a';
+
+        putchar(c);
+    }
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `It converts lowercase letters to uppercase`,
+        `It converts uppercase letters to lowercase and prints the input`,
+        `It prints only uppercase letters`,
+        `It stops when newline is found`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 133 Explanation:</strong><br>  <a href="https://gateoverflow.in/538109" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Assume:</p> <ul> <li><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">char</mtext> </math> takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> byte</li> <li><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int</mtext> </math> takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> bytes</li> <li><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">int</mtext> </math> must be stored at an address divisible by <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math></li> <li>Structure size is rounded to a multiple of the largest alignment requirement</li> </ul> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Test {     char c;     int x;     char d; };  int main() {     printf("%zu", sizeof(struct Test));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Test {
+    char c;
+    int x;
+    char d;
+};
+
+int main() {
+    printf("%zu", sizeof(struct Test));
+
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: ["A", "B", "C", "D"],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 134 Explanation:</strong><br>  <a href="https://gateoverflow.in/538021" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the macro:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#define square(x) (x*x)" dir="ltr">#define square(x) (x*x)</pre> <p>Now consider the statement:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="c = square(a + b);" dir="ltr">c = square(a + b);</pre> <p>After macro expansion, which expression is produced?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">c = ((a + b) * (a + b));</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">c = (a + b * a + b);</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">c = (a + b) * a + b;</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 135 Explanation:</strong><br>  <a href="https://gateoverflow.in/538119" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Item {     int code;     int price; };  void f(struct Item x) {     x.code = x.code + 1;     x.price = x.price + 50; }  void g(struct Item *p) {     p-&gt;code = p-&gt;code + 2;     p-&gt;price = p-&gt;price + 20; }  int main() {     struct Item i = {10, 100};      f(i);     g(&amp;i);      printf("%d %d", i.code, i.price);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Item {
+    int code;
+    int price;
+};
+
+void f(struct Item x) {
+    x.code = x.code + 1;
+    x.price = x.price + 50;
+}
+
+void g(struct Item *p) {
+    p-&gt;code = p-&gt;code + 2;
+    p-&gt;price = p-&gt;price + 20;
+}
+
+int main() {
+    struct Item i = {10, 100};
+
+    f(i);
+    g(&amp;i);
+
+    printf("%d %d", i.code, i.price);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 100</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">11 150</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 120</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13 170</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 136 Explanation:</strong><br>  <a href="https://gateoverflow.in/538017" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  struct Book {     char name[4];     int pages; };  int main() {     struct Book b1 = {&quot;CAT&quot;, 50};     struct Book b2;      b2 = b1;      b2.name[0] = 'B';     b2.pages = b2.pages + 10;      printf(&quot;%s %d %s %d&quot;, b1.name, b1.pages, b2.name, b2.pages);      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+struct Book {
+    char name[4];
+    int pages;
+};
+
+int main() {
+    struct Book b1 = {"CAT", 50};
+    struct Book b2;
+
+    b2 = b1;
+
+    b2.name[0] = 'B';
+    b2.pages = b2.pages + 10;
+
+    printf("%s %d %s %d", b1.name, b1.pages, b2.name, b2.pages);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">BAT 60 BAT 60</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CAT 50 BAT 60</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CAT 60 BAT 60</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 137 Explanation:</strong><br>  <a href="https://gateoverflow.in/538019" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Student {     int roll;     int marks; };  int main() {     struct Student s[3] = {         {1, 50},         {2, 60},         {3, 70}     };      struct Student *p = s;      (p + 1)-&gt;marks = (p + 1)-&gt;marks + 5;     p++;     p-&gt;roll = (p - 1)-&gt;roll + p-&gt;roll;      printf("%d %d %d", s[0].roll, s[1].roll, s[1].marks);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s[3] = {
+        {1, 50},
+        {2, 60},
+        {3, 70}
+    };
+
+    struct Student *p = s;
+
+    (p + 1)-&gt;marks = (p + 1)-&gt;marks + 5;
+    p++;
+    p-&gt;roll = (p - 1)-&gt;roll + p-&gt;roll;
+
+    printf("%d %d %d", s[0].roll, s[1].roll, s[1].marks);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 2 65</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 3 65</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 3 65</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 3 60</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 138 Explanation:</strong><br>  <a href="https://gateoverflow.in/538015" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will happen when the following code is compiled?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Node {     int data; };  int main() {     struct Node n = {25};     struct Node *p = &amp;n;      printf("%d", *p.data);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Node {
+    int data;
+};
+
+int main() {
+    struct Node n = {25};
+    struct Node *p = &amp;n;
+
+    printf("%d", *p.data);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">25</mtext> </math>`,
+        `Address of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">data</mtext> </math>`,
+        `Compilation error`,
+        `Undefined behavior`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 139 Explanation:</strong><br>  <a href="https://gateoverflow.in/538013" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will happen when the following code is compiled?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Point {     int x;     int y; };  int main() {     struct Point p1 = {2, 4};     struct Point p2;      p2 = p1;     p2.x = 10;      if (p1 == p2)         printf("Same");     else         printf("%d %d", p1.x, p2.x);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Point {
+    int x;
+    int y;
+};
+
+int main() {
+    struct Point p1 = {2, 4};
+    struct Point p2;
+
+    p2 = p1;
+    p2.x = 10;
+
+    if (p1 == p2)
+        printf("Same");
+    else
+        printf("%d %d", p1.x, p2.x);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Same</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 10</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 140 Explanation:</strong><br>  <a href="https://gateoverflow.in/537790" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Box {     int width;     int height; };  int main() {     struct Box b = {4, 6};     struct Box *p = &amp;b;      p-&gt;width = p-&gt;width + 2;     (*p).height = (*p).height + p-&gt;width;      printf("%d %d", b.width, b.height);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Box {
+    int width;
+    int height;
+};
+
+int main() {
+    struct Box b = {4, 6};
+    struct Box *p = &amp;b;
+
+    p-&gt;width = p-&gt;width + 2;
+    (*p).height = (*p).height + p-&gt;width;
+
+    printf("%d %d", b.width, b.height);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 12</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 141 Explanation:</strong><br>  <a href="https://gateoverflow.in/537786" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Student {     int roll;     int marks; };  int main() {     struct Student s[3] = {         {1, 70},         {2, 80},         {3, 90}     };      s[1].marks = s[1].marks + 5;     s[2].roll = s[0].roll + s[1].roll;      printf("%d %d %d", s[1].marks, s[2].roll, s[2].marks);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Student {
+    int roll;
+    int marks;
+};
+
+int main() {
+    struct Student s[3] = {
+        {1, 70},
+        {2, 80},
+        {3, 90}
+    };
+
+    s[1].marks = s[1].marks + 5;
+    s[2].roll = s[0].roll + s[1].roll;
+
+    printf("%d %d %d", s[1].marks, s[2].roll, s[2].marks);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">80 3 90</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">85 3 90</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">85 2 90</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">85 3 95</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 142 Explanation:</strong><br>  <a href="https://gateoverflow.in/537782" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  struct Item {     int code;     int price; };  void update(struct Item *p) {     p-&gt;price = p-&gt;price + 20;     (*p).code = (*p).code + 1; }  int main() {     struct Item i1 = {10, 100};      update(&amp;i1);      printf("%d %d", i1.code, i1.price);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+struct Item {
+    int code;
+    int price;
+};
+
+void update(struct Item *p) {
+    p-&gt;price = p-&gt;price + 20;
+    (*p).code = (*p).code + 1;
+}
+
+int main() {
+    struct Item i1 = {10, 100};
+
+    update(&amp;i1);
+
+    printf("%d %d", i1.code, i1.price);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 100</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">11 120</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 120</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 143 Explanation:</strong><br>  <a href="https://gateoverflow.in/537788" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  struct Book {     char name;     float price;     int pages; };  int main() {     struct Book b1 = {'C', 150.5, 300};      b1.pages = b1.pages + 50;     b1.price = b1.price + 10.5;      printf(&quot;%c %.1f %d&quot;, b1.name, b1.price, b1.pages);      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+struct Book {
+    char name;
+    float price;
+    int pages;
+};
+
+int main() {
+    struct Book b1 = {'C', 150.5, 300};
+
+    b1.pages = b1.pages + 50;
+    b1.price = b1.price + 10.5;
+
+    printf("%c %.1f %d", b1.name, b1.price, b1.pages);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">C 150.5 300</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">C 161.0 350</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">C 160.5 350</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 144 Explanation:</strong><br>  <a href="https://gateoverflow.in/537779" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the main issue in the following code? Assume both <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">malloc()</mtext> </math> calls succeed.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt;  int main() {     int *p = (int *)malloc(sizeof(int));     *p = 5;      p = (int *)malloc(sizeof(int));     *p = 10;      printf("%d", *p);      free(p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int *p = (int *)malloc(sizeof(int));
+    *p = 5;
+
+    p = (int *)malloc(sizeof(int));
+    *p = 10;
+
+    printf("%d", *p);
+
+    free(p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `It gives compilation error`,
+        `It prints <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>, but the first allocated memory block is leaked`,
+        `It prints <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5</mtext> </math>, and no memory leak occurs`,
+        `It gives undefined behavior because <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">p</mtext> </math> is reassigned`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 145 Explanation:</strong><br>  <a href="https://gateoverflow.in/537085" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int x = 25;     void *p = &amp;x;      printf("%d", *(int *)p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 25;
+    void *p = &amp;x;
+
+    printf("%d", *(int *)p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">25</mtext> </math>`,
+        `Address of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">x</mtext> </math>`,
+        `Compilation error`,
+        `Undefined behavior`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 146 Explanation:</strong><br>  <a href="https://gateoverflow.in/537075" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will happen in the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt;  int main() {     int *p = (int *)malloc(sizeof(int));      *p = 10;     free(p);      printf("%d", *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int *p = (int *)malloc(sizeof(int));
+
+    *p = 10;
+    free(p);
+
+    printf("%d", *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `It always prints <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `It always prints <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `Compilation error`,
+        `Undefined behavior due to dangling pointer`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 147 Explanation:</strong><br>  <a href="https://gateoverflow.in/537083" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code? Assume <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">malloc()</mtext> </math> succeeds.</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt;  int main() {     int *p = (int *)malloc(3 * sizeof(int));      p[0] = 4;     p[1] = 7;     p[2] = p[0] + p[1];      printf("%d", *(p + 2));      free(p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int *p = (int *)malloc(3 * sizeof(int));
+
+    p[0] = 4;
+    p[1] = 7;
+    p[2] = p[0] + p[1];
+
+    printf("%d", *(p + 2));
+
+    free(p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">11</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 148 Explanation:</strong><br>  <a href="https://gateoverflow.in/537077" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Which of the following correctly describes the declarations?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="int *a[10]; int (*p)[5];" dir="ltr">int *a[10];
+
+int (*p)[5];</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">a</mtext> </math> is a pointer to an array of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math> integers, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">p</mtext> </math> is an array of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> integer pointers`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">a</mtext> </math> is an array of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math> pointers to integers, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">p</mtext> </math> is a pointer to an array of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> integers`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">a</mtext> </math> is an array of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math> integers, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">p</mtext> </math> is a pointer to an integer`,
+        `Both <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">a</mtext> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">p</mtext> </math> are arrays of integer pointers`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 149 Explanation:</strong><br>  <a href="https://gateoverflow.in/537071" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[3][2] = {         {1, 2},         {3, 4},         {5, 6}     };      int (*p)[2] = a;      p++;      printf("%d %d %d", (*p)[0], *(*(p + 1) + 1), *(*p + 1));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[3][2] = {
+        {1, 2},
+        {3, 4},
+        {5, 6}
+    };
+
+    int (*p)[2] = a;
+
+    p++;
+
+    printf("%d %d %d", (*p)[0], *(*(p + 1) + 1), *(*p + 1));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3 6 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 6 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3 4 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 6 4</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 150 Explanation:</strong><br>  <a href="https://gateoverflow.in/536793" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[2][3] = {         {2, 4, 6},         {8, 10, 12}     };      printf("%d %d %d", a[1][2], *(*(a + 1) + 1), *(*a + 2));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[2][3] = {
+        {2, 4, 6},
+        {8, 10, 12}
+    };
+
+    printf("%d %d %d", a[1][2], *(*(a + 1) + 1), *(*a + 2));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 10 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 8 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 12 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 10 4</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 151 Explanation:</strong><br>  <a href="https://gateoverflow.in/536792" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void update(int **q, int *r) {     **q = **q + 5;     *q = r;     **q = **q + 2; }  int main() {     int x = 3, y = 8;     int *p = &amp;x;      update(&amp;p, &amp;y);      printf("%d %d %d", x, y, *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void update(int **q, int *r) {
+    **q = **q + 5;
+    *q = r;
+    **q = **q + 2;
+}
+
+int main() {
+    int x = 3, y = 8;
+    int *p = &amp;x;
+
+    update(&amp;p, &amp;y);
+
+    printf("%d %d %d", x, y, *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 8 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 10 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3 10 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 10 8</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 152 Explanation:</strong><br>  <a href="https://gateoverflow.in/536791" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 9;     int *p = &amp;a;     int **q = &amp;p;      *p = *p + 2;     *q = &amp;b;     **q = **q + 3;      printf("%d %d %d", a, b, *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 9;
+    int *p = &amp;a;
+    int **q = &amp;p;
+
+    *p = *p + 2;
+    *q = &amp;b;
+    **q = **q + 3;
+
+    printf("%d %d %d", a, b, *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7 9 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7 12 12</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 12 12</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7 12 7</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 153 Explanation:</strong><br>  <a href="https://gateoverflow.in/536790" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int x = 10;     int *p = &amp;x;     int **q = &amp;p;      **q = **q + 4;     *p = *p + 1;      printf("%d %d", x, **q);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int x = 10;
+    int *p = &amp;x;
+    int **q = &amp;p;
+
+    **q = **q + 4;
+    *p = *p + 1;
+
+    printf("%d %d", x, **q);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">14 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 154 Explanation:</strong><br>  <a href="https://gateoverflow.in/536789" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun(int *p) {     *p = *p + 1;     p++;     *p = *p + 2; }  int main() {     int arr[] = {5, 10, 15};      fun(arr + 1);      printf("%d %d %d", arr[0], arr[1], arr[2]);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void fun(int *p) {
+    *p = *p + 1;
+    p++;
+    *p = *p + 2;
+}
+
+int main() {
+    int arr[] = {5, 10, 15};
+
+    fun(arr + 1);
+
+    printf("%d %d %d", arr[0], arr[1], arr[2]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 10 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 11 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 11 17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 12 15</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 155 Explanation:</strong><br>  <a href="https://gateoverflow.in/536645" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void update(int a[]) {     a[0] = a[0] + a[2];     *(a + 1) = *(a + 1) + 5; }  int main() {     int arr[] = {2, 4, 6};      update(arr);      printf("%d %d %d", arr[0], arr[1], arr[2]);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void update(int a[]) {
+    a[0] = a[0] + a[2];
+    *(a + 1) = *(a + 1) + 5;
+}
+
+int main() {
+    int arr[] = {2, 4, 6};
+
+    update(arr);
+
+    printf("%d %d %d", arr[0], arr[1], arr[2]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 4 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 9 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 4 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 9 6</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 156 Explanation:</strong><br>  <a href="https://gateoverflow.in/536641" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int main() {     char str[] = {'C', 'S', 'E', '\0', 'X'};      printf(&quot;%s %c&quot;, str, str[4]);      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    char str[] = {'C', 'S', 'E', '\0', 'X'};
+
+    printf("%s %c", str, str[4]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CSE X</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CSEX X</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CSE \textbackslash0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 157 Explanation:</strong><br>  <a href="https://gateoverflow.in/536626" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  void change(char *p) {     p[1] = 'X';     *(p + 3) = '\0'; }  int main() {     char str[] = &quot;GATE&quot;;      change(str);      printf(&quot;%s&quot;, str);      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+void change(char *p) {
+    p[1] = 'X';
+    *(p + 3) = '\0';
+}
+
+int main() {
+    char str[] = "GATE";
+
+    change(str);
+
+    printf("%s", str);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">GATE</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">GXTE</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">GXT</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">GX</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 158 Explanation:</strong><br>  <a href="https://gateoverflow.in/536638" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int main() {     char str[] = &quot;HELLO&quot;;     char *p = str + 1;      *(p + 2) = 'A';      printf(&quot;%s %c&quot;, str, *p);      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    char str[] = "HELLO";
+    char *p = str + 1;
+
+    *(p + 2) = 'A';
+
+    printf("%s %c", str, *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">HELLO E</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">HELAO E</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">HALLO A</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">HELAO A</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 159 Explanation:</strong><br>  <a href="https://gateoverflow.in/536631" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int main() {     char str[] = &quot;CODE&quot;;     char *p = str;      p++;     *p = 'A';      printf(&quot;%s %c&quot;, str, *(p + 2));      return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    char str[] = "CODE";
+    char *p = str;
+
+    p++;
+    *p = 'A';
+
+    printf("%s %c", str, *(p + 2));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CODE D</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CADE E</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">CADE D</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">COAE E</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 160 Explanation:</strong><br>  <a href="https://gateoverflow.in/536533" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {5, 10, 15, 20};     int *p = a + 1;      printf("%d %d %td", *(p + 1), p[2], (p + 2) - a);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {5, 10, 15, 20};
+    int *p = a + 1;
+
+    printf("%d %d %td", *(p + 1), p[2], (p + 2) - a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 15 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15 20 3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15 20 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20 15 3</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 161 Explanation:</strong><br>  <a href="https://gateoverflow.in/536525" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What will happen when the following code is compiled?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {10, 20, 30};      a = a + 1;      printf("%d", *a);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {10, 20, 30};
+
+    a = a + 1;
+
+    printf("%d", *a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20</mtext> </math>`,
+        `Compilation error`,
+        `Undefined behavior`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 162 Explanation:</strong><br>  <a href="https://gateoverflow.in/536529" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     char str[] = "GATE";     char *p = str;      printf("%c %c %s", str[1], *(p + 2), p + 1);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    char str[] = "GATE";
+    char *p = str;
+
+    printf("%c %c %s", str[1], *(p + 2), p + 1);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">G A GATE</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">A T ATE</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">A T TE</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">T A ATE</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 163 Explanation:</strong><br>  <a href="https://gateoverflow.in/536531" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>Consider the following declarations:</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[4] = {6, 4, 1, 2};     int b[8] = {9, 8, 11, 10, 5, 7, 0, 3};      int *p = &amp;a[1];     int *q = b;      printf("%p", p + q);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[4] = {6, 4, 1, 2};
+    int b[8] = {9, 8, 11, 10, 5, 7, 0, 3};
+
+    int *p = &amp;a[1];
+    int *q = b;
+
+    printf("%p", p + q);
+
+    return 0;
+}</pre> <p>What will happen?</p> </span>`,
+      image: "",
+      options: [
+        `It prints the sum of two addresses`,
+        `It prints the address of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">a[1] + b[0]</mtext> </math>`,
+        `Compilation error`,
+        `Undefined behavior after successful compilation`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 164 Explanation:</strong><br>  <a href="https://gateoverflow.in/536527" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {2, 4, 6, 8, 10};     int *p = a + 2;      printf("%d %d %td", p[-1], 1[p], p - a);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {2, 4, 6, 8, 10};
+    int *p = a + 2;
+
+    printf("%d %d %td", p[-1], 1[p], p - a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 8 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 8 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 6 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 8 1</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 165 Explanation:</strong><br>  <a href="https://gateoverflow.in/536408" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[10] = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19};      int *b = a + 4;     int *c = &amp;(a[4]);      printf("%d %d %d", *b, *c, b == c);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[10] = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
+
+    int *b = a + 4;
+    int *c = &amp;(a[4]);
+
+    printf("%d %d %d", *b, *c, b == c);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">14 14 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">14 14 0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 4 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 166 Explanation:</strong><br>  <a href="https://gateoverflow.in/536388" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[4] = {6, 4, 1, 2};     int b[8] = {9, 8, 11, 10, 5, 7, 0, 3};      int *p = &amp;a[1];     int *q = b;     int *r = b + 2;      printf("%d %d %td", *p, *(r + 1), r - q);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[4] = {6, 4, 1, 2};
+    int b[8] = {9, 8, 11, 10, 5, 7, 0, 3};
+
+    int *p = &amp;a[1];
+    int *q = b;
+    int *r = b + 2;
+
+    printf("%d %d %td", *p, *(r + 1), r - q);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 10 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 11 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 10 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 10 3</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 167 Explanation:</strong><br>  <a href="https://gateoverflow.in/536395" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {3, 6, 9, 12, 15};     int *p = a + 1;      printf("%d %d %td", *p, *(p + 2), p - a);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {3, 6, 9, 12, 15};
+    int *p = a + 1;
+
+    printf("%d %d %td", *p, *(p + 2), p - a);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3 9 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 12 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 12 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 9 1</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 168 Explanation:</strong><br>  <a href="https://gateoverflow.in/536389" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {2, 4, 6, 8, 10};      printf("%d %d %d", *a, *(a + 3), 3[a]);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {2, 4, 6, 8, 10};
+
+    printf("%d %d %d", *a, *(a + 3), 3[a]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 6 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">2 8 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 8 10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 169 Explanation:</strong><br>  <a href="https://gateoverflow.in/536382" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {10, 20, 30, 40};     int *p = a;     int *q = &amp;a[3];      if (p &lt; q)         p = p + 2;     else         q = q - 1;      printf("%d %td", *p, q - p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {10, 20, 30, 40};
+    int *p = a;
+    int *q = &amp;a[3];
+
+    if (p &lt; q)
+        p = p + 2;
+    else
+        q = q - 1;
+
+    printf("%d %td", *p, q - p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">30 1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">30 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">40 1</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 170 Explanation:</strong><br>  <a href="https://gateoverflow.in/536185" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[2][3] = {         {1, 2, 3},         {4, 5, 6}     };      int (*p)[3] = a;      printf("%d %d %d", **p, *(*(p + 1) + 2), *(*p + 1));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[2][3] = {
+        {1, 2, 3},
+        {4, 5, 6}
+    };
+
+    int (*p)[3] = a;
+
+    printf("%d %d %d", **p, *(*(p + 1) + 2), *(*p + 1));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 5 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 6 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 6 2</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 6 3</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 171 Explanation:</strong><br>  <a href="https://gateoverflow.in/536183" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 10;     int *p = &amp;a;     int **q = &amp;p;      **q = **q + 5;     *p = *p + 2;      printf("%d %d", a, **q);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int *p = &amp;a;
+    int **q = &amp;p;
+
+    **q = **q + 5;
+    *p = *p + 2;
+
+    printf("%d %d", a, **q);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">17 17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">12 17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 172 Explanation:</strong><br>  <a href="https://gateoverflow.in/536175" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {5, 10, 15};     int *p = a;      printf("%d ", (*p)++);     printf("%d ", *p++);     printf("%d ", ++*p);     printf("%d", *++p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {5, 10, 15};
+    int *p = a;
+
+    printf("%d ", (*p)++);
+    printf("%d ", *p++);
+    printf("%d ", ++*p);
+    printf("%d", *++p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 6 11 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 10 11 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 6 11 15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 6 10 15</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 173 Explanation:</strong><br>  <a href="https://gateoverflow.in/536181" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void change(int **pp, int *q) {     **pp = **pp + 3;     *pp = q;     **pp = **pp + 4; }  int main() {     int a = 5, b = 10;     int *p = &amp;a;      change(&amp;p, &amp;b);      printf("%d %d %d", a, b, *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void change(int **pp, int *q) {
+    **pp = **pp + 3;
+    *pp = q;
+    **pp = **pp + 4;
+}
+
+int main() {
+    int a = 5, b = 10;
+    int *p = &amp;a;
+
+    change(&amp;p, &amp;b);
+
+    printf("%d %d %d", a, b, *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 10 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 14 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 14 14</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 14 8</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 174 Explanation:</strong><br>  <a href="https://gateoverflow.in/536177" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun(int a[], int *p) {     a[1] = a[1] + 5;     *(p + 2) = *(p + 2) + 10;      p++;     *p = *p + 1; }  int main() {     int arr[] = {1, 2, 3, 4};      fun(arr, arr);      printf("%d %d %d %d", arr[0], arr[1], arr[2], arr[3]);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void fun(int a[], int *p) {
+    a[1] = a[1] + 5;
+    *(p + 2) = *(p + 2) + 10;
+
+    p++;
+    *p = *p + 1;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4};
+
+    fun(arr, arr);
+
+    printf("%d %d %d %d", arr[0], arr[1], arr[2], arr[3]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 7 13 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 8 13 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 8 3 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1 7 3 4</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 175 Explanation:</strong><br>  <a href="https://gateoverflow.in/536026" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {10, 20, 30};     int *p = a;      printf("%d ", *p++);     printf("%d ", *p);     printf("%d", ++*p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {10, 20, 30};
+    int *p = a;
+
+    printf("%d ", *p++);
+    printf("%d ", *p);
+    printf("%d", ++*p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 20 21</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 20 20</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">11 20 21</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 21 21</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 176 Explanation:</strong><br>  <a href="https://gateoverflow.in/536024" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {3, 5, 7, 9};      printf("%d %d %d", *(a + 1), 2[a], *(2 + a));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {3, 5, 7, 9};
+
+    printf("%d %d %d", *(a + 1), 2[a], *(2 + a));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 7 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 2 7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7 7 5</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 177 Explanation:</strong><br>  <a href="https://gateoverflow.in/536022" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a[] = {2, 4, 6, 8};     int *p = a;      p = p + 2;      printf("%d %d", *p, p[-1]);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a[] = {2, 4, 6, 8};
+    int *p = a;
+
+    p = p + 2;
+
+    printf("%d %d", *p, p[-1]);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">4 6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">8 6</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 178 Explanation:</strong><br>  <a href="https://gateoverflow.in/536020" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int arr[] = {10, 20, 30};     int *p = arr;      printf("%d %d", *p, *(arr + 2));      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int arr[] = {10, 20, 30};
+    int *p = arr;
+
+    printf("%d %d", *p, *(arr + 2));
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 20</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 30</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">20 30</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 179 Explanation:</strong><br>  <a href="https://gateoverflow.in/536016" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int *p;      printf("%d", *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int *p;
+
+    printf("%d", *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Garbage value</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Undefined behavior</mtext> </math>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 180 Explanation:</strong><br>  <a href="https://gateoverflow.in/535887" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void change(int *p, int q) {     *p = *p + q;     q = q + 5;     *p = *p + q; }  int main() {     int a = 2, b = 3;      change(&amp;a, b);      printf("%d %d", a, b);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void change(int *p, int q) {
+    *p = *p + q;
+    q = q + 5;
+    *p = *p + q;
+}
+
+int main() {
+    int a = 2, b = 3;
+
+    change(&amp;a, b);
+
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13 3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13 8</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 181 Explanation:</strong><br>  <a href="https://gateoverflow.in/535881" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 10;     int *p = &amp;a;      *p = *p + 5;     a = a + 2;      printf("%d", *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int *p = &amp;a;
+
+    *p = *p + 5;
+    a = a + 2;
+
+    printf("%d", *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">10</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">15</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">17</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Garbage value</mtext> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 182 Explanation:</strong><br>  <a href="https://gateoverflow.in/535871" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 5, b = 8;     int *p = &amp;a;     int *q = &amp;b;      q = p;     *q = *q + b;      printf("%d %d", a, b);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5, b = 8;
+    int *p = &amp;a;
+    int *q = &amp;b;
+
+    q = p;
+    *q = *q + b;
+
+    printf("%d %d", a, b);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 13</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13 8</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">13 13</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">5 8</mtext> </math>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 183 Explanation:</strong><br>  <a href="https://gateoverflow.in/535875" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int main() {     int a = 25;     int *p = &amp;a;      printf("%d %d", a, *p);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 25;
+    int *p = &amp;a;
+
+    printf("%d %d", a, *p);
+
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">25 25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">25 address</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">address 25</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">Compilation error</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 184 Explanation:</strong><br>  <a href="https://gateoverflow.in/535865" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void update(int n, int *p) {     if (n &lt;= 0)         return;      *p = *p + n;      update(n - 2, p);      *p = *p + n; }  int main() {     int x = 1;      update(5, &amp;x);      printf("%d", x);      return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void update(int n, int *p) {
+    if (n &lt;= 0)
+        return;
+
+    *p = *p + n;
+
+    update(n - 2, p);
+
+    *p = *p + n;
+}
+
+int main() {
+    int x = 1;
+
+    update(5, &amp;x);
+
+    printf("%d", x);
+
+    return 0;
+}
+</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "19",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 185 Explanation:</strong><br>  <a href="https://gateoverflow.in/535785" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     int x = n;      if (n &lt;= 0)         return 0;      x = x + 2;      return x + fun(n - 2); }  int main() {     printf("%d", fun(5));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    int x = n;
+
+    if (n &lt;= 0)
+        return 0;
+
+    x = x + 2;
+
+    return x + fun(n - 2);
+}
+
+int main() {
+    printf("%d", fun(5));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "15",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 186 Explanation:</strong><br>  <a href="https://gateoverflow.in/535779" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     if (n &lt;= 1)         return n + 1;      if (n % 2 == 0)         return fun(n - 1) + fun(n - 2);      return fun(n - 2) + n; }  int main() {     printf("%d", fun(5));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    if (n &lt;= 1)
+        return n + 1;
+
+    if (n % 2 == 0)
+        return fun(n - 1) + fun(n - 2);
+
+    return fun(n - 2) + n;
+}
+
+int main() {
+    printf("%d", fun(5));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 187 Explanation:</strong><br>  <a href="https://gateoverflow.in/535774" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>How many times is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">fun()</mtext> </math> called when the following code is executed? <em>(Count the first call also).</em></p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="#include &lt;stdio.h&gt;  int fun(int n) {     if (n &lt;= 1)         return 1;      return fun(n - 1) + fun(n - 2); }  int main() {     fun(4);     return 0; }" dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    if (n &lt;= 1)
+        return 1;
+
+    return fun(n - 1) + fun(n - 2);
+}
+
+int main() {
+    fun(4);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "9",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 188 Explanation:</strong><br>  <a href="https://gateoverflow.in/535776" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-" data-linenums="true" data-pbcklang="" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void g(int n);  void f(int n) {     if (n &lt;= 0)         return;      printf("F%d ", n);     g(n - 1);     printf("f%d ", n); }  void g(int n) {     if (n &lt;= 0)         return;      printf("G%d ", n);     f(n - 2);     printf("g%d ", n); }  int main() {     f(4);     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void g(int n);
+
+void f(int n) {
+    if (n &lt;= 0)
+        return;
+
+    printf("F%d ", n);
+    g(n - 1);
+    printf("f%d ", n);
+}
+
+void g(int n) {
+    if (n &lt;= 0)
+        return;
+
+    printf("G%d ", n);
+    f(n - 2);
+    printf("g%d ", n);
+}
+
+int main() {
+    f(4);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">F4\ G3\ F1\ f1\ g3\ f4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">F4\ G3\ F1\ g3\ f1\ f4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">F4\ G3\ F2\ f2\ g3\ f4</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">F4\ G3\ f4\ F1\ f1\ g3</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 189 Explanation:</strong><br>  <a href="https://gateoverflow.in/535618" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     if (n == 0)         return 1;      return n + fun(n - 1);      printf("%d ", n); }  int main() {     printf("%d", fun(3));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    if (n == 0)
+        return 1;
+
+    return n + fun(n - 1);
+
+    printf("%d ", n);
+}
+
+int main() {
+    printf("%d", fun(3));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">6</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">7</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3\ 2\ 1\ 7</mtext> </math>`,
+        `Compilation error`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 190 Explanation:</strong><br>  <a href="https://gateoverflow.in/535606" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  void fun(int n) {     static int x = 0;      if (n == 0)         return;      x++;     printf("%d:%d ", n, x);      fun(n - 1);      printf("%d:%d ", n, x); }  int main() {     fun(3);     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+void fun(int n) {
+    static int x = 0;
+
+    if (n == 0)
+        return;
+
+    x++;
+    printf("%d:%d ", n, x);
+
+    fun(n - 1);
+
+    printf("%d:%d ", n, x);
+}
+
+int main() {
+    fun(3);
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3:1\ 2:2\ 1:3\ 1:3\ 2:3\ 3:3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3:1\ 2:2\ 1:3\ 1:1\ 2:2\ 3:3</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">1:1\ 2:2\ 3:3\ 3:3\ 2:2\ 1:1</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">3:1\ 2:1\ 1:1\ 1:1\ 2:1\ 3:1</mtext> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 191 Explanation:</strong><br>  <a href="https://gateoverflow.in/535614" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     static int step = 1;      if (n &lt;= 1)         return n;      step++;      return n + fun(n - step); }  int main() {     printf("%d", fun(6));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    static int step = 1;
+
+    if (n &lt;= 1)
+        return n;
+
+    step++;
+
+    return n + fun(n - step);
+}
+
+int main() {
+    printf("%d", fun(6));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "11",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 192 Explanation:</strong><br>  <a href="https://gateoverflow.in/535608" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p>What is the output of the following code?</p> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode='#include &lt;stdio.h&gt;  int fun(int n) {     static int sum = 0;     int temp;      if (n &lt;= 0)         return sum;      sum = sum + n;      temp = fun(n - 2);      return temp + sum; }  int main() {     printf("%d", fun(5));     return 0; }' dir="ltr">#include &lt;stdio.h&gt;
+
+int fun(int n) {
+    static int sum = 0;
+    int temp;
+
+    if (n &lt;= 0)
+        return sum;
+
+    sum = sum + n;
+
+    temp = fun(n - 2);
+
+    return temp + sum;
+}
+
+int main() {
+    printf("%d", fun(5));
+    return 0;
+}</pre> </span>`,
+      image: "",
+      options: [],
+      answer: "36",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 193 Explanation:</strong><br>  <a href="https://gateoverflow.in/535610" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
   ]
 });
