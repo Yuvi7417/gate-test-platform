@@ -2024,7 +2024,7 @@ registerTest({
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00C80003</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x0000A003</mtext> </math>`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/swt-os-part2/1.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/swt-os-part2/1.png" style="max-width: 75%;"><br><br><a href="https://gateoverflow.in/544045" target="_blank">Detail solution here</a>`
     },
     {
       marks: 1,
@@ -2106,7 +2106,7 @@ registerTest({
         `After all seven accesses have completed, VPN <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math> is still present in the TLB.`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/swt-os-part2/2.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/swt-os-part2/2.png" style="max-width: 75%;"><br><br><a href="https://gateoverflow.in/544070" target="_blank">Detail solution here</a>`
     },
     {
       marks: 1,
@@ -2116,7 +2116,7 @@ registerTest({
       image: "",
       options: [],
       answer: "250",
-      solution: `<img src="/images/quiz/swt-os-part2/3.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/swt-os-part2/3.png" style="max-width: 75%;"><br><br><a href="https://gateoverflow.in/544043" target="_blank">Detail solution here</a>`
     },
     {
       marks: 1,
@@ -2131,7 +2131,7 @@ registerTest({
         `The inverted page table occupies <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> MB.`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/swt-os-part2/4.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/swt-os-part2/4.png" style="max-width: 75%;"><br><br><a href="https://gateoverflow.in/544041" target="_blank">Detail solution here</a>`
     },
     {
       marks: 1,
@@ -2146,7 +2146,7 @@ registerTest({
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>13</mn> <mo>,</mo> <mn>20</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
       ],
       answer: "A",
-      solution: `<img src="/images/quiz/swt-os-part2/5.png" style="max-width: 75%;">`
+      solution: `<img src="/images/quiz/swt-os-part2/5.png" style="max-width: 75%;"><br><br><a href="https://gateoverflow.in/544038" target="_blank">Detail solution here</a>`
     },
   ]
 });
