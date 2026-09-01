@@ -2507,7 +2507,7 @@ registerTest({
   series: "pw-cs-gate-2026",
   name: "Swt-OS-Part5",
   date: "Oct 01, 2026",
-  questions: [,
+  questions: [
     {
       marks: 1,
       neg: 0.33,
