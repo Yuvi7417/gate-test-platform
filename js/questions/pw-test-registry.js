@@ -1073,9 +1073,9 @@ registerTest({
 <p>What is the worst case time complexity of above program?</p>`,
       image: "",
       options: [
-        `\\( O(n \\log n) \\)<br>&nbsp;`,
-        `\\( O(\\log n * \\log n) \\)<br>&nbsp;`,
-        `\\( O(\\sqrt{n}) \\)<br>&nbsp;`,
+        `\\( O(n \\log n) \\)`,
+        `\\( O(\\log n * \\log n) \\)`,
+        `\\( O(\\sqrt{n}) \\)`,
         `\\( O(\\sqrt{n} * \\log n) \\)`
       ],
       answer: "D",
@@ -1909,9 +1909,9 @@ registerTest({
       text: ` <p data-start="4387" data-end="4494">Consider a system using a <strong data-start="4413" data-end="4437">two-level page table</strong>. Assume the required page is present in physical memory.</p> <p data-start="4496" data-end="4591">How many main-memory accesses are required for a virtual-address access when a TLB miss occurs?</p> <p data-start="4593" data-end="4655">Include the final access to the requested instruction or data. </p> `,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math><br>&nbsp;`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>`,
       ],
       answer: "B",
@@ -1924,9 +1924,9 @@ registerTest({
       text: ` <p data-start="2523" data-end="2712">If an instruction takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> </math> microseconds and a page fault takes an additional <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>q</mi> </math> microseconds, the effective instruction time if, on average, a page fault occurs every <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>r</mi> </math> instructions is: </p> `,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle displaystyle="true" scriptlevel="0"> <mfrac> <mrow> <mi>p</mi> <mo>+</mo> <mi>q</mi> </mrow> <mi>r</mi> </mfrac> </mstyle> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> <mo>+</mo> <mo stretchy="false">(</mo> <mi>q</mi> <mo>×</mo> <mi>r</mi> <mo stretchy="false">)</mo> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> <mo>+</mo> <mstyle displaystyle="true" scriptlevel="0"> <mfrac> <mi>q</mi> <mi>r</mi> </mfrac> </mstyle> </math><br>&nbsp;`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle displaystyle="true" scriptlevel="0"> <mfrac> <mrow> <mi>p</mi> <mo>+</mo> <mi>q</mi> </mrow> <mi>r</mi> </mfrac> </mstyle> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> <mo>+</mo> <mo stretchy="false">(</mo> <mi>q</mi> <mo>×</mo> <mi>r</mi> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> <mo>+</mo> <mstyle displaystyle="true" scriptlevel="0"> <mfrac> <mi>q</mi> <mi>r</mi> </mfrac> </mstyle> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mi>p</mi> <mo>+</mo> <mi>q</mi> <mo stretchy="false">)</mo> <mo>×</mo> <mi>r</mi> </math>`,
       ],
       answer: "C",
@@ -1939,9 +1939,9 @@ registerTest({
       text: ` <p data-start="277" data-end="499">Consider a three level paging scheme with a TLB. Assume no page fault occurs. It takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math> to search the TLB and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>100</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math> to access the physical memory. If the TLB hit ratio is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>90</mn> <mi mathvariant="normal">%</mi> </math>, what is the effective memory access time?</p> `,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>101</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>111</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>121</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math><br>&nbsp;`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>101</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>111</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>121</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>131</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math>`,
       ],
       answer: "D",
@@ -1954,9 +1954,9 @@ registerTest({
       text: ` <p data-start="1159" data-end="1247">Which of the following statements about small <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>4</mn> <mtext>&nbsp;</mtext> <mtext>KB</mtext> <mo stretchy="false">)</mo> </math> and large <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>4</mn> <mtext>&nbsp;</mtext> <mtext>MB</mtext> <mo stretchy="false">)</mo> </math> pages are correct?</p> `,
       image: "",
       options: [
-        `Large pages allow for a more efficient use of the TLB.<br>&nbsp;`,
-        `Accessing a large page, in the case of a TLB miss, would be slower than accessing a small page.<br>&nbsp;`,
-        `Large pages suffer from internal fragmentation.<br>&nbsp;`,
+        `Large pages allow for a more efficient use of the TLB.`,
+        `Accessing a large page, in the case of a TLB miss, would be slower than accessing a small page.`,
+        `Large pages suffer from internal fragmentation.`,
         `Large pages suffer from external fragmentation.`,
       ],
       answer: "A",
@@ -1969,9 +1969,9 @@ registerTest({
       text: ` <p data-start="3354" data-end="3386">What caching is done in the TLB?</p> `,
       image: "",
       options: [
-        `Virtual Address <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Address<br>&nbsp;`,
-        `Virtual Page Number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Address<br>&nbsp;`,
-        `Virtual Page Number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Page Number<br>&nbsp;`,
+        `Virtual Address <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Address`,
+        `Virtual Page Number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Address`,
+        `Virtual Page Number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Physical Page Number`,
         `Physical Page Number <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">→</mo> </math> Virtual Page Number`,
       ],
       answer: "C",
@@ -1990,12 +1990,37 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: ` <p data-start="4708" data-end="4851">A <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>2-bit system uses <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mn mathvariant="bold">4</mn> </mrow> </math><strong data-start="4729" data-end="4743">&nbsp;KB pages</strong> and a two-level page table with a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math>-bit Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> index, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math>-bit Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math> index, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>12</mn> </math>-bit page offset. </p> <p data-start="4853" data-end="4920">The current Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> page table begins at physical address <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x2000</mtext> </math>. </p> <p data-start="4922" data-end="4943">Relevant entries are:</p> <p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtable columnalign="center center" columnspacing="1em" rowspacing="4pt" columnlines="solid" rowlines="solid none none none none" frame="solid"> <mtr> <mtd> <mtext mathvariant="bold">Page-table location </mtext> </mtd> <mtd> <mtext mathvariant="bold">Entry</mtext> </mtd> </mtr> <mtr> <mtd> <mtext>L1[0]</mtext> </mtd> <mtd> <mtext mathvariant="monospace">0x1007</mtext> </mtd> </mtr> <mtr> <mtd> <mtext>L1[3]</mtext> </mtd> <mtd> <mtext mathvariant="monospace">0x3007</mtext> </mtd> </mtr> <mtr> <mtd> <mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x1000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>0</mn> </mtd> <mtd> <mtext mathvariant="monospace">0x7007</mtext> </mtd> </mtr> <mtr> <mtd> <mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x1000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>1</mn> </mtd> <mtd> <mtext mathvariant="monospace">0x8007</mtext> </mtd> </mtr> <mtr> <mtd> <mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x3000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>128</mn> </mtd> <mtd> <mtext mathvariant="monospace">0xA007</mtext> </mtd> </mtr> </mtable> </math> </p> <p data-start="5159" data-end="5296">All unspecified entries are zero and therefore not present. The low permission bits are removed when obtaining the physical page address.</p> <p data-start="5298" data-end="5329">Which translations are correct?</p> `,
+      text: ` <p data-start="4708" data-end="4851">A <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math>2-bit system uses <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mn mathvariant="bold">4</mn> </mrow> </math><strong data-start="4729" data-end="4743">&nbsp;KB pages</strong> and a two-level page table with a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math>-bit Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> index, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math>-bit Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math> index, and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>12</mn> </math>-bit page offset. </p> <p data-start="4853" data-end="4920">The current Level-<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> page table begins at physical address <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x2000</mtext> </math>. </p> <p data-start="4922" data-end="4943">Relevant entries are:</p> <p><table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center;">
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="bold">Page-table location </mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="bold">Entry</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>L1[0]</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">0x1007</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>L1[3]</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">0x3007</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x1000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>0</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">0x7007</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x1000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">0x8007</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>table at&nbsp;</mtext> <mtext mathvariant="monospace">0x3000</mtext> <mo>,</mo> <mtext>&nbsp;</mtext> <mtext>entry&nbsp;</mtext> <mn>128</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="monospace">0xA007</mtext></math></td>
+  </tr>
+</table> </p> <p data-start="5159" data-end="5296">All unspecified entries are zero and therefore not present. The low permission bits are removed when obtaining the physical page address.</p> <p data-start="5298" data-end="5329">Which translations are correct?</p> `,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00000FFF</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x00007FFF</mtext> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00001000</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x00008000</mtext> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00C08003</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x0000A003</mtext> </math><br>&nbsp;`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00000FFF</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x00007FFF</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00001000</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x00008000</mtext> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00C08003</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x0000A003</mtext> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x00C80003</mtext> <mo stretchy="false">→</mo> <mtext mathvariant="monospace">0x0000A003</mtext> </math>`,
       ],
       answer: "A",
@@ -2005,12 +2030,79 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: ` <p data-start="6572" data-end="6586">A system uses:</p> <ul data-start="6588" data-end="6652"> <li data-start="6588" data-end="6600" data-section-id="ba4al1"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> KB pages<br>&nbsp;</li> <li data-start="6601" data-end="6634" data-section-id="1e243y7">A <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>-entry fully associative TLB<br>&nbsp;</li> <li data-start="6635" data-end="6652" data-section-id="mkkkf1">LRU replacement<br>&nbsp;</li> </ul> <p data-start="6654" data-end="6666"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtext mathvariant="bold">Initial TLB:</mtext> </math><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtable columnalign="center center center center" columnspacing="1em" rowspacing="4pt" columnlines="solid solid solid" rowlines="solid none none none" frame="solid"> <mtr> <mtd> <mtext>Valid</mtext> </mtd> <mtd> <mtext>VPN</mtext> </mtd> <mtd> <mtext>Physical Page</mtext> </mtd> <mtd> <mtext>LRU</mtext> </mtd> </mtr> <mtr> <mtd> <mn>1</mn> </mtd> <mtd> <mn>11</mn> </mtd> <mtd> <mn>12</mn> </mtd> <mtd> <mn>2</mn> </mtd> </mtr> <mtr> <mtd> <mn>1</mn> </mtd> <mtd> <mn>7</mn> </mtd> <mtd> <mn>4</mn> </mtd> <mtd> <mn>3</mn> </mtd> </mtr> <mtr> <mtd> <mn>1</mn> </mtd> <mtd> <mn>3</mn> </mtd> <mtd> <mn>6</mn> </mtd> <mtd> <mn>4</mn> </mtd> </mtr> <mtr> <mtd> <mn>0</mn> </mtd> <mtd> <mn>4</mn> </mtd> <mtd> <mn>9</mn> </mtd> <mtd> <mn>1</mn> </mtd> </mtr> </mtable> </math> </p> <p data-start="6654" data-end="6666"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtext mathvariant="bold">Relevant initial page-table entries:</mtext> </math> <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtable columnalign="center center center" columnspacing="1em" rowspacing="4pt" columnlines="solid solid" rowlines="solid none none none none none" frame="solid"> <mtr> <mtd> <mtext>VPN</mtext> </mtd> <mtd> <mtext>Valid</mtext> </mtd> <mtd> <mtext>Location</mtext> </mtd> </mtr> <mtr> <mtd> <mn>0</mn> </mtd> <mtd> <mn>1</mn> </mtd> <mtd> <mtext>Physical page&nbsp;</mtext> <mn>5</mn> </mtd> </mtr> <mtr> <mtd> <mn>1</mn> </mtd> <mtd> <mn>0</mn> </mtd> <mtd> <mtext>Disk</mtext> </mtd> </mtr> <mtr> <mtd> <mn>2</mn> </mtd> <mtd> <mn>0</mn> </mtd> <mtd> <mtext>Disk</mtext> </mtd> </mtr> <mtr> <mtd> <mn>3</mn> </mtd> <mtd> <mn>1</mn> </mtd> <mtd> <mtext>Physical page&nbsp;</mtext> <mn>6</mn> </mtd> </mtr> <mtr> <mtd> <mn>7</mn> </mtd> <mtd> <mn>1</mn> </mtd> <mtd> <mtext>Physical page&nbsp;</mtext> <mn>4</mn> </mtd> </mtr> <mtr> <mtd> <mn>11</mn> </mtd> <mtd> <mn>1</mn> </mtd> <mtd> <mtext>Physical page&nbsp;</mtext> <mn>12</mn> </mtd> </mtr> </mtable> </math> </p> <p data-start="7034" data-end="7125">When a page fault occurs, new physical pages are allocated beginning with physical page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> </math>. </p> <p data-start="7127" data-end="7181">The following virtual addresses are accessed in order:</p> <p data-start="7183" data-end="7257"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x0FFF</mtext> </math><br data-start="7191" data-end="7194"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x7A28</mtext> </math><br data-start="7202" data-end="7205"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x3DAD</mtext> </math><br data-start="7213" data-end="7216"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x3A98</mtext> </math><br data-start="7224" data-end="7227"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1C19</mtext> </math><br data-start="7235" data-end="7238"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1000</mtext> </math><br data-start="7246" data-end="7249"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x22D0</mtext> </math> </p> <p data-start="7259" data-end="7288">Which statements are correct?</p> `,
+      text: ` <p data-start="6572" data-end="6586">A system uses:</p> <ul data-start="6588" data-end="6652"> <li data-start="6588" data-end="6600" data-section-id="ba4al1"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> KB pages</li> <li data-start="6601" data-end="6634" data-section-id="1e243y7">A <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math>-entry fully associative TLB</li> <li data-start="6635" data-end="6652" data-section-id="mkkkf1">LRU replacement</li> </ul> <p data-start="6654" data-end="6666"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtext mathvariant="bold">Initial TLB:</mtext> </math><table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center;">
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Valid</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>VPN</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Physical Page</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>LRU</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+  </tr>
+</table> </p> <p data-start="6654" data-end="6666"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtext mathvariant="bold">Relevant initial page-table entries:</mtext> </math> <table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center;">
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>VPN</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Valid</mtext></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Location</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Physical page&nbsp;</mtext> <mn>5</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Disk</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Disk</mtext></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Physical page&nbsp;</mtext> <mn>6</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Physical page&nbsp;</mtext> <mn>4</mn></math></td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></td>
+    <td style="border: 1px solid #ced4da; padding: 8px;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Physical page&nbsp;</mtext> <mn>12</mn></math></td>
+  </tr>
+</table> </p> <p data-start="7034" data-end="7125">When a page fault occurs, new physical pages are allocated beginning with physical page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> </math>. </p> <p data-start="7127" data-end="7181">The following virtual addresses are accessed in order:</p> <p data-start="7183" data-end="7257"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x0FFF</mtext> </math><br data-start="7191" data-end="7194"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x7A28</mtext> </math><br data-start="7202" data-end="7205"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x3DAD</mtext> </math><br data-start="7213" data-end="7216"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x3A98</mtext> </math><br data-start="7224" data-end="7227"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1C19</mtext> </math><br data-start="7235" data-end="7238"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1000</mtext> </math><br data-start="7246" data-end="7249"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x22D0</mtext> </math> </p> <p data-start="7259" data-end="7288">Which statements are correct?</p> `,
       image: "",
       options: [
-        `The access to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x0FFF</mtext> </math> produces a TLB miss but not a page fault.<br>&nbsp;`,
-        `The accesses to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x7A28</mtext> <mo>,</mo> <mtext mathvariant="monospace">0x3DAD</mtext> <mo>,</mo> <mtext mathvariant="monospace">0x3A98</mtext> <mo>,</mo> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1000</mtext> </math> are all TLB hits.<br>&nbsp;`,
-        `Accessing <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1C19</mtext> </math> causes a page fault, after which VPN <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> is mapped to physical page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> </math>.<br>&nbsp;`,
+        `The access to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x0FFF</mtext> </math> produces a TLB miss but not a page fault.`,
+        `The accesses to <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x7A28</mtext> <mo>,</mo> <mtext mathvariant="monospace">0x3DAD</mtext> <mo>,</mo> <mtext mathvariant="monospace">0x3A98</mtext> <mo>,</mo> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1000</mtext> </math> are all TLB hits.`,
+        `Accessing <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="monospace">0x1C19</mtext> </math> causes a page fault, after which VPN <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math> is mapped to physical page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>13</mn> </math>.`,
         `After all seven accesses have completed, VPN <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0</mn> </math> is still present in the TLB.`,
       ],
       answer: "A",
@@ -2020,7 +2112,7 @@ registerTest({
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: ` <p data-start="3492" data-end="3589">A machine uses a <strong data-start="3509" data-end="3533">two-level page table</strong>. The page-directory base address is held in a register.</p> <p data-start="3591" data-end="3598">Assume:</p> <ul data-start="3600" data-end="4000"> <li data-start="3600" data-end="3643" data-section-id="wldsgl">One physical-memory access takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>100</mn> </math> ns<br>&nbsp; </li> <li data-start="3644" data-end="3708" data-section-id="xn04k6">Page directories and page tables are always resident in memory<br>&nbsp;</li> <li data-start="3709" data-end="3763" data-section-id="18o38ap"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0.001</mn> </math> of user-memory accesses cause a page fault<br>&nbsp;</li> <li data-start="3764" data-end="3802" data-section-id="jh3ccf">Servicing a page fault takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math> ms<br>&nbsp; </li> <li data-start="3803" data-end="3832" data-section-id="dnqgpm">Initially there is no cache<br>&nbsp;</li> <li data-start="3833" data-end="3903" data-section-id="gfhikj">A TLB is added such that <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>75</mn> <mi mathvariant="normal">%</mi> </math> of translations are found in the TLB<br>&nbsp; </li> <li data-start="3904" data-end="3936" data-section-id="3ggvmz">TLB lookup time may be ignored<br>&nbsp;</li> <li data-start="3937" data-end="4000" data-section-id="1kph9xv">A translation found in the TLB corresponds to a resident page<br>&nbsp;</li> </ul> <p data-start="4002" data-end="4059">What is the effective memory access time, in nanoseconds?</p> `,
+      text: ` <p data-start="3492" data-end="3589">A machine uses a <strong data-start="3509" data-end="3533">two-level page table</strong>. The page-directory base address is held in a register.</p> <p data-start="3591" data-end="3598">Assume:</p> <ul data-start="3600" data-end="4000"> <li data-start="3600" data-end="3643" data-section-id="wldsgl">One physical-memory access takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>100</mn> </math> ns<br>&nbsp; </li> <li data-start="3644" data-end="3708" data-section-id="xn04k6">Page directories and page tables are always resident in memory</li> <li data-start="3709" data-end="3763" data-section-id="18o38ap"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0.001</mn> </math> of user-memory accesses cause a page fault</li> <li data-start="3764" data-end="3802" data-section-id="jh3ccf">Servicing a page fault takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>10</mn> </math> ms<br>&nbsp; </li> <li data-start="3803" data-end="3832" data-section-id="dnqgpm">Initially there is no cache</li> <li data-start="3833" data-end="3903" data-section-id="gfhikj">A TLB is added such that <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>75</mn> <mi mathvariant="normal">%</mi> </math> of translations are found in the TLB<br>&nbsp; </li> <li data-start="3904" data-end="3936" data-section-id="3ggvmz">TLB lookup time may be ignored</li> <li data-start="3937" data-end="4000" data-section-id="1kph9xv">A translation found in the TLB corresponds to a resident page</li> </ul> <p data-start="4002" data-end="4059">What is the effective memory access time, in nanoseconds?</p> `,
       image: "",
       options: [],
       answer: "250",
@@ -2030,12 +2122,12 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: ` <p data-start="2131" data-end="2145">A machine has:</p> <ul data-start="2147" data-end="2336"> <li data-section-id="so52nt" data-start="2147" data-end="2173"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>64</mn> </math>-bit virtual addresses<br>&nbsp;</li> <li data-section-id="1g8nfh5" data-start="2174" data-end="2186"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> KB pages<br>&nbsp;</li> <li data-section-id="6yzgst" data-start="2187" data-end="2209"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> GB physical memory<br>&nbsp;</li> <li data-section-id="1aq8t4m" data-start="2210" data-end="2227"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>512</mn> </math> TLB entries<br>&nbsp;</li> <li data-section-id="1u38p5w" data-start="2228" data-end="2286">An inverted page table with one entry per physical frame<br>&nbsp;</li> <li data-section-id="14pwy50" data-start="2287" data-end="2336">Each inverted page-table entry occupies <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> bytes<br>&nbsp;</li> </ul> <p data-start="2338" data-end="2367">Which statements are correct?</p> `,
+      text: ` <p data-start="2131" data-end="2145">A machine has:</p> <ul data-start="2147" data-end="2336"> <li data-section-id="so52nt" data-start="2147" data-end="2173"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>64</mn> </math>-bit virtual addresses</li> <li data-section-id="1g8nfh5" data-start="2174" data-end="2186"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> KB pages</li> <li data-section-id="6yzgst" data-start="2187" data-end="2209"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> GB physical memory</li> <li data-section-id="1aq8t4m" data-start="2210" data-end="2227"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>512</mn> </math> TLB entries</li> <li data-section-id="1u38p5w" data-start="2228" data-end="2286">An inverted page table with one entry per physical frame</li> <li data-section-id="14pwy50" data-start="2287" data-end="2336">Each inverted page-table entry occupies <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> bytes</li> </ul> <p data-start="2338" data-end="2367">Which statements are correct?</p> `,
       image: "",
       options: [
-        `The virtual page number requires <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>51</mn> </math> bits.<br>&nbsp;`,
-        `If all <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>512</mn> </math> TLB entries contain distinct valid translations, the TLB reach is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> MB.<br>&nbsp;`,
-        `The TLB can simultaneously cover <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac> <mn>1</mn> <mn>512</mn> </mfrac> </math> of physical memory.<br>&nbsp;`,
+        `The virtual page number requires <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>51</mn> </math> bits.`,
+        `If all <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>512</mn> </math> TLB entries contain distinct valid translations, the TLB reach is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> MB.`,
+        `The TLB can simultaneously cover <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac> <mn>1</mn> <mn>512</mn> </mfrac> </math> of physical memory.`,
         `The inverted page table occupies <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> MB.`,
       ],
       answer: "A",
@@ -2045,12 +2137,12 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: ` <p data-start="766" data-end="794">A virtual-memory system has:</p> <ul data-start="796" data-end="1117"> <li data-section-id="5oc60n" data-start="796" data-end="822"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>48</mn> </math>-bit virtual addresses<br>&nbsp;</li> <li data-section-id="1krryg0" data-start="823" data-end="836"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> KB pages<br>&nbsp;</li> <li data-section-id="1h12m6j" data-start="837" data-end="860"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> TB physical memory<br>&nbsp;</li> <li data-section-id="uta0n5" data-start="861" data-end="884">Two-level page tables<br>&nbsp; </li> <li data-section-id="3unho4" data-start="885" data-end="924">Both levels stored in physical memory<br>&nbsp;</li> <li data-section-id="da1671" data-start="925" data-end="998">Every second-level page table must fit completely inside one page frame<br>&nbsp;</li> <li data-section-id="1jsrf5l" data-start="999" data-end="1117">Page-table entries are stored using the minimum whole number of bytes sufficient to contain the physical page number<br>&nbsp;</li> </ul> <p data-start="1119" data-end="1174">Which of the following correctly gives the bit division</p> <p data-start="1176" data-end="1243"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo stretchy="false">(</mo> <mtext>Level-1 index</mtext> <mo>,</mo> <mtext>&nbsp;Level-2 index</mtext> <mo>,</mo> <mtext>&nbsp;page offset</mtext> <mo stretchy="false">)</mo> <mo>?</mo> </math> </p> `,
+      text: ` <p data-start="766" data-end="794">A virtual-memory system has:</p> <ul data-start="796" data-end="1117"> <li data-section-id="5oc60n" data-start="796" data-end="822"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>48</mn> </math>-bit virtual addresses</li> <li data-section-id="1krryg0" data-start="823" data-end="836"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> KB pages</li> <li data-section-id="1h12m6j" data-start="837" data-end="860"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> TB physical memory</li> <li data-section-id="uta0n5" data-start="861" data-end="884">Two-level page tables<br>&nbsp; </li> <li data-section-id="3unho4" data-start="885" data-end="924">Both levels stored in physical memory</li> <li data-section-id="da1671" data-start="925" data-end="998">Every second-level page table must fit completely inside one page frame</li> <li data-section-id="1jsrf5l" data-start="999" data-end="1117">Page-table entries are stored using the minimum whole number of bytes sufficient to contain the physical page number</li> </ul> <p data-start="1119" data-end="1174">Which of the following correctly gives the bit division</p> <p data-start="1176" data-end="1243"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mo stretchy="false">(</mo> <mtext>Level-1 index</mtext> <mo>,</mo> <mtext>&nbsp;Level-2 index</mtext> <mo>,</mo> <mtext>&nbsp;page offset</mtext> <mo stretchy="false">)</mo> <mo>?</mo> </math> </p> `,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>20</mn> <mo>,</mo> <mn>13</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>18</mn> <mo>,</mo> <mn>15</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math><br>&nbsp;`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>21</mn> <mo>,</mo> <mn>12</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math><br>&nbsp;`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>20</mn> <mo>,</mo> <mn>13</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>18</mn> <mo>,</mo> <mn>15</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>21</mn> <mo>,</mo> <mn>12</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>13</mn> <mo>,</mo> <mn>20</mn> <mo>,</mo> <mn>15</mn> <mo stretchy="false">)</mo> </math>`,
       ],
       answer: "A",
