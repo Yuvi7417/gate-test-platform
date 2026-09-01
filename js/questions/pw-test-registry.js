@@ -1574,5 +1574,70 @@ registerTest({
       answer: "B",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 10 Explanation:</strong><br>  <a href="https://gateoverflow.in/543884" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
+    {
+      marks: 1.0,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="7139" data-start="7104">Consider the page-reference string:</p> <p data-end="7188" data-start="7141"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>5</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>6</mn> <mo>,</mo> <mtext> </mtext> <mn>5</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>6</mn> </math> </p> <p data-end="7248" data-start="7190">Initially, memory is empty and contains <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="bold">4</mtext> </math><strong data-end="7247" data-start="7230"> page frames</strong>.</p> <p data-end="7338" data-start="7250">If the <strong data-end="7274" data-start="7257">Optimal (OPT)</strong> page-replacement algorithm is used, how many page faults occur?</p> </span>`,
+      image: "",
+      options: [],
+      answer: "6",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 11 Explanation:</strong><br>  <a href="https://gateoverflow.in/543744" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2282" data-start="2216">Which of the following statements about virtual memory is correct?</p> </span>`,
+      image: "",
+      options: [
+        `The LRU algorithm selects for replacement the page for which the longest time has elapsed since its last use.`,
+        `When indexed address translation is used, a page table is required only for pages currently present in main memory.`,
+        `Whenever a page fault occurs, garbage collection must be performed.`,
+        `The creation of many small free-memory regions as paging is repeatedly performed is called fragmentation.`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 12 Explanation:</strong><br>  <a href="https://gateoverflow.in/543737" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="3950" data-start="3880">A system makes an average of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>2</mn> </math> main-memory accesses per instruction.</p> <p data-end="4007" data-start="3952">Whenever a page fault occurs, it causes an overhead of <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>40</mn> </math> milliseconds </p> <p data-end="4145" data-start="4028">What is the maximum allowable page-fault rate if the average instruction delay caused by page faults must not exceed <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>0.4</mn> </math> microseconds per instruction? (<em>Ignore all other overheads.)</em></p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> <mo>×</mo> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mo>−</mo> <mn>6</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>×</mo> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mo>−</mo> <mn>5</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> <mo>×</mo> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mo>−</mo> <mn>5</mn> </mrow> </msup> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>×</mo> <msup> <mn>10</mn> <mrow data-mjx-texclass="ORD"> <mo>−</mo> <mn>4</mn> </mrow> </msup> </math>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 13 Explanation:</strong><br>  <a href="https://gateoverflow.in/543739" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <p data-end="5587" data-start="5542">Consider the following page-reference string:</p> <p data-end="5636" data-start="5589"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>5</mn> <mo>,</mo> <mtext> </mtext> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>5</mn> </math> </p> <p data-end="5705" data-start="5638">The FIFO page-replacement algorithm is used with <math xmlns="http://www.w3.org/1998/Math/MathML"> <mtext mathvariant="bold">4</mtext> </math><strong data-end="5704" data-start="5687"> page frames</strong>.</p> <p data-end="5739" data-start="5707">Initially, all frames are empty. How many page faults occur? </p> </span>`,
+      image: "",
+      options: [],
+      answer: "10",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 14 Explanation:</strong><br>  <a href="https://gateoverflow.in/543741" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="863" data-start="791">In a virtual-memory system, the FIFO page-replacement algorithm is used.</p> <p data-end="902" data-start="865">The virtual-page reference string is : <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> </math> </p> <p data-end="955" data-start="929">There are <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> </math> page frames.</p> <p data-end="1010" data-start="957">After the first three references, the frames contain : <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> </math> </p> <p data-end="1123" data-start="1025">What is the state of the three page frames after all the remaining references have been processed?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn> <mo>,</mo> <mtext> </mtext> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>2</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> <mo>,</mo> <mtext> </mtext> <mn>1</mn> <mo>,</mo> <mtext> </mtext> <mn>3</mn> </math>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 15 Explanation:</strong><br>  <a href="https://gateoverflow.in/543602" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
   ]
 });
