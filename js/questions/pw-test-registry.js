@@ -2835,7 +2835,7 @@ return n+f(n-2);
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<span style="display: inline;"> <p>In the circuit shown, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>W</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>Y</mi> </math> are MSBs of the control inputs. The output <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> is given by</p> <p><img alt="" src="/images/quiz/pw-os5/img1.png"/></p> </span>`,
+      text: `<span style="display: inline;"> <p>In the circuit shown, <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>W</mi> </math> and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>Y</mi> </math> are MSBs of the control inputs. The output <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> </math> is given by</p> <p><img alt="" src="./images_godpp/dpp_img_b64_15.png"/></p> </span>`,
       image: "",
       options: [
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>F</mi> <mo>=</mo> <mi>W</mi> <mrow data-mjx-texclass="ORD"> <mover> <mi>X</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>W</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mi>X</mi> <mo>+</mo> <mrow data-mjx-texclass="ORD"> <mover> <mi>Y</mi> <mo stretchy="false">¯</mo> </mover> </mrow> <mrow data-mjx-texclass="ORD"> <mover> <mi>Z</mi> <mo stretchy="false">¯</mo> </mover> </mrow> </math>`,
@@ -2850,7 +2850,7 @@ return n+f(n-2);
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `<span style="display: inline;"> <p>The circuit shown consists of j-K flip-flops, each with an active low asynchronous reset ( <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mrow data-mjx-texclass="ORD"> <mover> <mi>R</mi> <mo stretchy="false">^</mo> </mover> </mrow> <mi>i</mi> </msub> </math> input). The counter corresponding to this circuit is</p> <p><img alt="" height="124" src="/images/quiz/pw-os5/img2.png" width="407"/></p> </span>`,
+      text: `<span style="display: inline;"> <p>The circuit shown consists of j-K flip-flops, each with an active low asynchronous reset ( <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mrow data-mjx-texclass="ORD"> <mover> <mi>R</mi> <mo stretchy="false">^</mo> </mover> </mrow> <mi>i</mi> </msub> </math> input). The counter corresponding to this circuit is</p> <p><img alt="" height="124" src="./images_godpp/dpp_img_b64_55.png" width="407"/></p> </span>`,
       image: "",
       options: [
         `a modulo- <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5</mn> </math> binary up counter`,
@@ -2865,7 +2865,7 @@ return n+f(n-2);
       marks: 1,
       neg: 0,
       type: "NAT",
-      text: `<span style="display: inline;"> <p>A 4-bit shift register circuit configured for right-shift operation, i.e, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>D</mi> <mrow data-mjx-texclass="ORD"> <mtext>in </mtext> </mrow> </msub> <mo stretchy="false">→</mo> <mi>A</mi> <mo>,</mo> <mi>A</mi> <mo stretchy="false">→</mo> <mi>B</mi> <mo>,</mo> <mi>B</mi> <mo stretchy="false">→</mo> <mi>C</mi> <mo>,</mo> <mi>C</mi> <mo stretchy="false">→</mo> <mi>D</mi> </math>, as shown. If the present state of the shift register is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1101</mn> </math>, the number of clock cycles required to reach the state <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1111</mn> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle scriptlevel="0"> <mspace width="2em"></mspace> </mstyle> </math> ,<br/><img alt="" src="/images/quiz/pw-os5/img3.png"/></p> </span>`,
+      text: `<span style="display: inline;"> <p>A 4-bit shift register circuit configured for right-shift operation, i.e, <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>D</mi> <mrow data-mjx-texclass="ORD"> <mtext>in </mtext> </mrow> </msub> <mo stretchy="false">→</mo> <mi>A</mi> <mo>,</mo> <mi>A</mi> <mo stretchy="false">→</mo> <mi>B</mi> <mo>,</mo> <mi>B</mi> <mo stretchy="false">→</mo> <mi>C</mi> <mo>,</mo> <mi>C</mi> <mo stretchy="false">→</mo> <mi>D</mi> </math>, as shown. If the present state of the shift register is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1101</mn> </math>, the number of clock cycles required to reach the state <math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow data-mjx-texclass="ORD"> <mi data-mjx-auto-op="false">ABCD</mi> </mrow> <mo>=</mo> <mn>1111</mn> </math> is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle scriptlevel="0"> <mspace width="2em"></mspace> </mstyle> </math> ,<br/><img alt="" src="./images_godpp/dpp_img_b64_33.png"/></p> </span>`,
       image: "",
       options: [],
       answer: "10",
