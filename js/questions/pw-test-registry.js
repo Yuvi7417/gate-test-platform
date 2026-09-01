@@ -1904,7 +1904,7 @@ registerTest({
   questions: [
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: ` <p data-start="4387" data-end="4494">Consider a system using a <strong data-start="4413" data-end="4437">two-level page table</strong>. Assume the required page is present in physical memory.</p> <p data-start="4496" data-end="4591">How many main-memory accesses are required for a virtual-address access when a TLB miss occurs?</p> <p data-start="4593" data-end="4655">Include the final access to the requested instruction or data. </p> `,
       image: "",
@@ -1919,7 +1919,7 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: ` <p data-start="2523" data-end="2712">If an instruction takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>p</mi> </math> microseconds and a page fault takes an additional <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>q</mi> </math> microseconds, the effective instruction time if, on average, a page fault occurs every <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>r</mi> </math> instructions is: </p> `,
       image: "",
@@ -1934,7 +1934,7 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: ` <p data-start="277" data-end="499">Consider a three level paging scheme with a TLB. Assume no page fault occurs. It takes <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math> to search the TLB and <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>100</mn> <mtext>&nbsp;</mtext> <mtext>ns</mtext> </math> to access the physical memory. If the TLB hit ratio is <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>90</mn> <mi mathvariant="normal">%</mi> </math>, what is the effective memory access time?</p> `,
       image: "",
@@ -1949,7 +1949,7 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: ` <p data-start="1159" data-end="1247">Which of the following statements about small <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>4</mn> <mtext>&nbsp;</mtext> <mtext>KB</mtext> <mo stretchy="false">)</mo> </math> and large <math xmlns="http://www.w3.org/1998/Math/MathML"> <mo stretchy="false">(</mo> <mn>4</mn> <mtext>&nbsp;</mtext> <mtext>MB</mtext> <mo stretchy="false">)</mo> </math> pages are correct?</p> `,
       image: "",
@@ -1964,7 +1964,7 @@ registerTest({
     },
     {
       marks: 1,
-      neg: 0,
+      neg: 0.33,
       type: "MCQ",
       text: ` <p data-start="3354" data-end="3386">What caching is done in the TLB?</p> `,
       image: "",
