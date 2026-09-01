@@ -1543,16 +1543,43 @@ registerTest({
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 6 Explanation:</strong><br>  <a href="https://gateoverflow.in/543900" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-    {
+{
       marks: 1.0,
       neg: 0,
       type: "NAT",
-      text: `<span style="display: inline;"> <p data-end="8701" data-start="8633">A paged virtual-memory system has the following measured parameters:</p> <p>\[<br/>\begin{array}{|l|l|}<br/>\hline<br/>\textbf{Measurement} &amp; \textbf{Value} <span>\</span><br/>\hline<br/>P_t = \text{probability of a TLB miss} <br/>&amp; 0.1 <span>\</span><br/>\hline </p> <p>P_p = \text{probability of a page fault when a TLB miss occurs} <br/>&amp; 0.0002 <span>\</span><br/>\hline </p> <p>T_t = \text{time to access TLB} <br/>&amp; 0 <span>\</span><br/>\hline</p> <p>T_m = \text{time to access memory} <br/>&amp; 1\ \text{microsecond} <span>\</span><br/>\hline </p> <p>T_d = \text{time to transfer a page to/from disk} <br/>&amp; <table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center; width: 50%;" cellpadding="5">   <tr style="border-bottom: 1px solid #ced4da; background-color: #f8f9fa;">     <th style="border-right: 1px solid #ced4da; padding: 8px;">Page</th>     <th style="padding: 8px;">Frame Address</th>   </tr>   <tr>     <td style="border-right: 1px solid #ced4da; padding: 8px;">1</td>     <td style="padding: 8px;">4000</td>   </tr>   <tr>     <td style="border-right: 1px solid #ced4da; padding: 8px;">2</td>     <td style="padding: 8px;">5000</td>   </tr>   <tr>     <td style="border-right: 1px solid #ced4da; padding: 8px;">3</td>     <td style="padding: 8px;">6000</td>   </tr>   <tr>     <td style="border-right: 1px solid #ced4da; padding: 8px;">4</td>     <td style="padding: 8px;">7000</td>   </tr> </table> </p> <p data-end="3244" data-start="3164">At which address is page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> loaded when it is referenced for the <strong data-end="3243" data-start="3230">last time</strong>?</p> </span>`,
+      text: `<span style="display: inline;"> <p data-end="8701" data-start="8633">A paged virtual-memory system has the following measured parameters:</p> <p>\[<br/>\begin{array}{|l|l|}<br/>\hline<br/>\textbf{Measurement} &amp; \textbf{Value} <span>\</span><br/>\hline<br/>P_t = \text{probability of a TLB miss} <br/>&amp; 0.1 <span>\</span><br/>\hline </p> <p>P_p = \text{probability of a page fault when a TLB miss occurs} <br/>&amp; 0.0002 <span>\</span><br/>\hline </p> <p>T_t = \text{time to access TLB} <br/>&amp; 0 <span>\</span><br/>\hline</p> <p>T_m = \text{time to access memory} <br/>&amp; 1\ \text{microsecond} <span>\</span><br/>\hline </p> <p>T_d = \text{time to transfer a page to/from disk} <br/>&amp; <table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center;" cellpadding="5"> <tr> <td> <mn>10</mn> <mtext> </mtext> <mtext>milliseconds</mtext> <mo>=</mo> </td> </tr> <tr> <td> <mn>10000</mn> <mtext> </mtext> <mtext>microseconds</mtext> </td> </tr> </table> <span>\</span><br/>\hline </p> <p>P_d = \text{probability page is dirty when replaced} <br/>&amp; 0.5 <span>\</span><br/>\hline<br/>\end{array}<br/>\] </p> <p data-end="8701" data-start="8633">Additional assumptions:</p> <ul data-end="9513" data-start="9172"> <li data-end="9220" data-section-id="11ya5mu" data-start="9172">The TLB is refilled automatically by hardware.</li> <li data-end="9297" data-section-id="7iz1r6" data-start="9221">On a TLB miss, one memory access is required to read the page-table entry.</li> <li data-end="9365" data-section-id="1yae5t8" data-start="9298">If a page fault occurs, the required page must be read from disk.</li> <li data-end="9433" data-section-id="eo6pxo" data-start="9366">If the selected victim is dirty, it must also be written to disk.</li> <li data-end="9513" data-section-id="hhwht2" data-start="9434">Other page-replacement and page-table-update overheads are included in <math xmlns="http://www.w3.org/1998/Math/MathML"> <msub> <mi>T</mi> <mi>d</mi> </msub> </math>.</li> </ul> <p data-end="9575" data-start="9515">What is the <strong data-end="9557" data-start="9527">average memory access time</strong>, in microseconds?</p> </span>`,
+      image: "",
+      options: [],
+      answer: "1.4",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 7 Explanation:</strong><br>  <a href="https://gateoverflow.in/543902" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="1215" data-start="1108">Suppose a <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> <mi>K</mi> <mo>×</mo> <mn>8</mn> <mi>K</mi> </math> matrix <math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>A</mi> </math> with <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> </math>-byte elements is stored in row-major order in virtual memory.</p> <p data-end="1224" data-start="1217">Assume:</p> <ul data-end="1379" data-start="1226"> <li data-end="1271" data-section-id="l8ds9t" data-start="1226">Only this program occupies physical memory.</li> <li data-end="1319" data-section-id="4vl7ht" data-start="1272">The matrix begins exactly at a page boundary.</li> <li data-end="1354" data-section-id="ihajdt" data-start="1320">The matrix is initially on disk.</li> <li data-end="1379" data-section-id="xl9fyi" data-start="1355">Demand paging is used.</li> </ul> <p data-end="1412" data-start="1381">The following code is executed:</p> <pre class="prettyprint linenums lang-c_cpp" data-end="1521" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" data-rawcode="for (i = 0; i &lt; 32768; i++)     for (j = 0; j &lt; 8192; j++)          A[i][j] = A[i][j] * A[i][j];" data-start="1414">for (i = 0; i &lt; 32768; i++)
+    for (j = 0; j &lt; 8192; j++)
+         A[i][j] = A[i][j] * A[i][j];</pre> <p data-end="1606" data-start="1523">If execution of this code produces exactly <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> <mi>K</mi> </math> page faults, what is the page size?</p> </span>`,
       image: "",
       options: [
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4000</mn> </math><br/>`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5000</mn> </math><br/>`,
-        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>6000</mn> </math><br/>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> KB`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>8</mn> </math> KB`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>16</mn> </math> KB`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>32</mn> </math> KB`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 8 Explanation:</strong><br>  <a href="https://gateoverflow.in/543897" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1.0,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"> <p data-end="2714" data-start="2646">A virtual-memory system uses the <strong data-end="2686" data-start="2679">LRU</strong> page-replacement algorithm.</p> <p data-end="2777" data-start="2716">There are four physical page frames at hexadecimal addresses: </p> <p data-end="2806" data-start="2779"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4000</mn> <mo>,</mo> <mtext> </mtext> <mn>5000</mn> <mo>,</mo> <mtext> </mtext> <mn>6000</mn> <mo>,</mo> <mtext> </mtext> <mn>7000</mn> </math> </p> <p data-end="2839" data-start="2808">The page-reference sequence is:</p> <p data-end="2984" data-start="2841"><math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo stretchy="false">→</mo> <mn>2</mn> <mo stretchy="false">→</mo> <mn>3</mn> <mo stretchy="false">→</mo> <mn>4</mn> <mo stretchy="false">→</mo> <mn>2</mn> <mo stretchy="false">→</mo> <mn>5</mn> <mo stretchy="false">→</mo> <mn>3</mn> <mo stretchy="false">→</mo> <mn>1</mn> <mo stretchy="false">→</mo> <mn>6</mn> <mo stretchy="false">→</mo> <mn>5</mn> <mo stretchy="false">→</mo> <mn>4</mn> </math> </p> <p data-end="3056" data-start="2986">For the initial references <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>1</mn> <mo>,</mo> <mn>2</mn> <mo>,</mo> <mn>3</mn> <mo>,</mo> <mn>4</mn> </math>, the pages are loaded as follows:</p> <p data-end="3056" data-start="2986"><table style="margin: 10px auto; border-collapse: collapse; border: 1px solid #ced4da; text-align: center;" cellpadding="5"> <tr> <td> <mtext>Page</mtext> </td> <td> <mtext>Frame Address</mtext> </td> </tr> <tr> <td> <mn>1</mn> </td> <td> <mn>4000</mn> </td> </tr> <tr> <td> <mn>2</mn> </td> <td> <mn>5000</mn> </td> </tr> <tr> <td> <mn>3</mn> </td> <td> <mn>6000</mn> </td> </tr> <tr> <td> <mn>4</mn> </td> <td> <mn>7000</mn> </td> </tr> </table> </p> <p data-end="3244" data-start="3164">At which address is page <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn> </math> loaded when it is referenced for the <strong data-end="3243" data-start="3230">last time</strong>?</p> </span>`,
+      image: "",
+      options: [
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>5000</mn> </math>`,
+        `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>6000</mn> </math>`,
         `<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>7000</mn> </math>`,
       ],
       answer: "C",
@@ -1565,15 +1592,16 @@ registerTest({
       text: `<span style="display: inline;"> <p data-end="897" data-start="819">Which of the following statements about page-replacement policies are correct?</p> </span>`,
       image: "",
       options: [
-        `LRU always produces fewer page faults than FIFO.<br/>`,
-        `OPT always performs at least as well as LRU.<br/>`,
-        `For any replacement policy, increasing the number of available frames can never decrease the hit percentage.<br/>`,
-        `With LRU, increasing the number of available frames cannot decrease the hit percentage.<br/>`,
+        `LRU always produces fewer page faults than FIFO.`,
+        `OPT always performs at least as well as LRU.`,
+        `For any replacement policy, increasing the number of available frames can never decrease the hit percentage.`,
+        `With LRU, increasing the number of available frames cannot decrease the hit percentage.`,
         `Random replacement is always worse than LRU.`,
       ],
       answer: "B",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 10 Explanation:</strong><br>  <a href="https://gateoverflow.in/543884" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
+
     {
       marks: 1.0,
       neg: 0,
