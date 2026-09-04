@@ -6700,7 +6700,7 @@ registerTest({
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following C program: <pre><code>
+      text: `Consider the following C program: <pre class="prettyprint linenums lang-c_cpp"><code>
 #include &lt; stdio.h &gt;
 int main(){
 int a = 6;
@@ -6725,7 +6725,7 @@ return 0;}
       marks: 2,
       neg: 0.66,
       type: "MCQ",
-      text: `What is printed by the following ANSI C program? <pre><code>#include &lt; stdio.h &gt;
+      text: `What is printed by the following ANSI C program? <pre class="prettyprint linenums lang-c_cpp"><code>#include &lt; stdio.h &gt;
 int main(int argc, char *argv[]){ 
  char a = 'P';
  char b = 'x';
@@ -6750,7 +6750,7 @@ int main(int argc, char *argv[]){
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following C program: <pre><code>
+      text: `Consider the following C program: <pre class="prettyprint linenums lang-c_cpp"><code>
 #include &lt; stdio.h &gt;
 int main() {
  float sum = 0.0, j = 1.0, i = 2.0;
@@ -6770,7 +6770,7 @@ int main() {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following C program:<br/> <pre><code> main()
+      text: `Consider the following C program:<br/> <pre class="prettyprint linenums lang-c_cpp"><code> main()
 {
 float sum= 0.0, j=1.0,i=2.0;
 while(i/j&gt;0.001){
@@ -6793,7 +6793,7 @@ while(i/j&gt;0.001){
       marks: 1,
       neg: 0.33,
       type: "MCQ",
-      text: `Consider the following C code segment:<br/> <pre><code> #include &lt; stdio.h &gt;
+      text: `Consider the following C code segment:<br/> <pre class="prettyprint linenums lang-c_cpp"><code> #include &lt; stdio.h &gt;
 main()
 {
     int i, j, x;
