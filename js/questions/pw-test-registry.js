@@ -6929,7 +6929,7 @@ int main(){
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
                 are evaluated
@@ -6968,7 +6968,7 @@ f(g(10),h(20));
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">Consider the following C program:
                 <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
@@ -7013,7 +7013,7 @@ putchar(a);}</pre>
     },
     {
       marks: 2,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">Consider the following program:<br/>
 <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
@@ -7169,21 +7169,14 @@ int main( )
       neg: 0,
       type: "NAT",
       text: `<span style="display: inline;">Consider the following ANSI C function:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int SomeFunction (int x, int y)
+                <pre><code>int SomeFunction (int x, int y)
 {
     if ((x==1) || (y==1)) return 1;
     if (x==y) return x;
     if (x &gt; y) return SomeFunction(x-y, y);
     if (y &gt; x) return SomeFunction (x, y-x);
  
-} ">int SomeFunction (int x, int y)
-{
-    if ((x==1) || (y==1)) return 1;
-    if (x==y) return x;
-    if (x &gt; y) return SomeFunction(x-y, y);
-    if (y &gt; x) return SomeFunction (x, y-x);
- 
-} </pre>The value returned by SomeFunction(15, 255) is __________
+} </code></pre>The value returned by SomeFunction(15, 255) is __________
             </span>`,
       image: "",
       options: [
@@ -7196,19 +7189,13 @@ int main( )
       neg: 0,
       type: "NAT",
       text: `<span style="display: inline;">Consider the following ANSI C function:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" int SimpleFunction(int Y[], int n, int x)
+                <pre><code> int SimpleFunction(int Y[], int n, int x)
 {
 int total = Y[0], loopIndex;
 for (loopIndex=1; loopIndex&lt;=n-1; loopIndex++)
     total=x*total +Y[loopIndex];
 return total;
-}"> int SimpleFunction(int Y[], int n, int x)
-{
-int total = Y[0], loopIndex;
-for (loopIndex=1; loopIndex&lt;=n-1; loopIndex++)
-    total=x*total +Y[loopIndex];
-return total;
-}</pre> Let Z be an array of 10 elements with Z[i]=1, for all i such that <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+}</code></pre> Let Z be an array of 10 elements with Z[i]=1, for all i such that <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
 <semantics>
 <mrow>
 <mn>0</mn>
@@ -7230,30 +7217,21 @@ return total;
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">In the following procedure<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" Integer procedure P(X,Y);
+<pre><code> Integer procedure P(X,Y);
 Integer X,Y;
 value x;
 begin
       K=5;
       L=8;
       P=x+y;
-end"> Integer procedure P(X,Y);
-Integer X,Y;
-value x;
-begin
-      K=5;
-      L=8;
-      P=x+y;
-end</pre>X is called by value and Y is called by name. If the procedure were invoked by the following program
+end</code></pre>X is called by value and Y is called by name. If the procedure were invoked by the following program
                 fragment<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" K=0;
+<pre><code> K=0;
 L=0;
-Z=P(K,L);"> K=0;
-L=0;
-Z=P(K,L);</pre>then the value of Z will be set equal to
+Z=P(K,L);</code></pre>then the value of Z will be set equal to
             </span>`,
       image: "",
       options: [
@@ -7267,25 +7245,10 @@ Z=P(K,L);</pre>then the value of Z will be set equal to
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">What is the output in a 32 bit machine with 32 bit compiler?<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" #include &lt; stdio.h &gt;
-rer(int **ptr2, int **ptr1)
-{
-    int *ii;
-    ii=*ptr2;
-    *ptr2=*ptr1;
-    *ptr1=ii;
-    **ptr1*=**ptr2;
-    **ptr2+=**ptr1;
-}
-void main(){
-    int var1=5, var2=10;
-    int *ptr1=&amp;var1,*ptr2=&amp;var2;
-    rer(&amp;ptr1,&amp;ptr2);
-    printf(&quot;%d %d&quot;,var2,var1);
-}"> #include &lt; stdio.h &gt;
+<pre><code> #include &lt; stdio.h &gt;
 rer(int **ptr2, int **ptr1)
 {
     int *ii;
@@ -7300,7 +7263,7 @@ void main(){
     int *ptr1=&amp;var1,*ptr2=&amp;var2;
     rer(&amp;ptr1,&amp;ptr2);
     printf("%d %d",var2,var1);
-}</pre>
+}</code></pre>
 </span>`,
       image: "",
       options: [
@@ -7314,17 +7277,14 @@ void main(){
     },
     {
       marks: 1,
-      neg: 0.33,
+      neg: 0.66,
       type: "MCQ",
       text: `<span style="display: inline;">Consider the following recursive C function that takes two
                 arguments<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" unsigned int rer(unsigned int n, unsigned int r){
+<pre><code> unsigned int rer(unsigned int n, unsigned int r){
     if(n&gt;0)return(n%r + rer(n/r,r));
     else retturn 0;
-}"> unsigned int rer(unsigned int n, unsigned int r){
-    if(n&gt;0)return(n%r + rer(n/r,r));
-    else retturn 0;
-}</pre>What is the return value of the function rer when it is called as rer(513,2)?
+}</code></pre>What is the return value of the function rer when it is called as rer(513,2)?
             </span>`,
       image: "",
       options: [
