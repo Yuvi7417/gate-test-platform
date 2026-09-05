@@ -1543,7 +1543,7 @@ registerTest({
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 6 Explanation:</strong><br>  <a href="https://gateoverflow.in/543900" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-{
+    {
       marks: 1,
       neg: 0,
       type: "NAT",
@@ -1676,7 +1676,7 @@ registerTest({
   name: "Swt-OS-Part3",
   date: "Oct 01, 2026",
   questions: [
-{
+    {
       marks: 1,
       neg: 0.33,
       type: "MCQ",
@@ -6697,123 +6697,214 @@ registerTest({
   date: "sep 04, 2026",
   questions: [
     {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `Consider the following C program: <pre class="prettyprint linenums lang-c_cpp"><code>
-#include &lt; stdio.h &gt;
-int main(){
-int a = 6;
-int b = 0;
-while(a &lt; 10) {
-a = a / 12 + 1;
-a += b;}
-printf("%d", a);
-return 0;}
-</code></pre>Which one of the following statements is CORRECT?`,
-      image: "",
-      options: [
-        `The program prints 9 as output`,
-        `The program prints 10 as output`,
-        `The program gets stuck in an infinite loop`,
-        `The program prints 6 as output`,
-      ],
-      answer: "C",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 1 Explanation:</strong><br>  <a href="https://gateoverflow.in/422834/gate-cse-2024-set-1-question-8#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
       marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `What is printed by the following ANSI C program? <pre class="prettyprint linenums lang-c_cpp"><code>#include &lt; stdio.h &gt;
-int main(int argc, char *argv[]){ 
- char a = 'P';
- char b = 'x';
- char c = (a  &amp;  b) + '*';
- char d = (a | b) - '-';
- char e = (a ^ b) + '+'; 
- printf("%c %c %c \n", c, d, e); 
- return 0;
-}
-</code></pre><br/>ASCII encoding for relevant characters is given below<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="/wp-content/uploads/GATE/CS/20221/q34.jpg" decoding="async" src="/wp-content/uploads/GATE/CS/20221/q34.jpg"/><noscript><img decoding="async" src="/wp-content/uploads/GATE/CS/20221/q34.jpg"/></noscript>`,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> Consider the following ANSI-C function.
+                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" int func(int start, int end){
+  	int length=end+1-start;
+  	if((length<1)||(start<0)||(end<0)){ return(0); }
+  	if(length%3==0){
+  		return(func(start+1, end));
+  	}else if(length%3==1){
+  		return(1+func(start, end-1));
+  	}else {
+  		return(func(start+2, end));
+  	}
+ } "> int func(int start, int end){
+  	int length=end+1-start;
+  	if((length&lt;1)||(start&lt;0)||(end&lt;0)){ return(0); }
+  	if(length%3==0){
+  		return(func(start+1, end));
+  	}else if(length%3==1){
+  		return(1+func(start, end-1));
+  	}else {
+  		return(func(start+2, end));
+  	}
+ } </pre>The maximum possible value that can be returned from this function is ________. (answer in integer)
+                <br>Note: Ignore syntax errors (if any) in the function. </span>`,
       image: "",
       options: [
-        `z K S`,
-        `122 75 83`,
-        `* - +`,
-        `P x +`,
+
       ],
-      answer: "A",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 2 Explanation:</strong><br>  <a href="https://gateoverflow.in/371902/Gate-cse-2022-question-34#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+      answer: "1",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/523095/gate-cse-2026-set-2-question-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
     {
       marks: 2,
       neg: 0,
       type: "NAT",
-      text: `Consider the following C program: <pre class="prettyprint linenums lang-c_cpp"><code>
-#include &lt; stdio.h &gt;
-int main() {
- float sum = 0.0, j = 1.0, i = 2.0;
- while (i / j &gt; 0.0625) {
-    j = j + j; 
-    sum = sum + i/j;
-    printf("%f \n", sum);
+      text: `<span style="display: inline;"> Consider the recursive functions represented by the following code
+                segment:
+                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int bar(int n) {
+  if (n == 1) return 0;
+  else return 1 + bar(n/2);
  }
- return 0;
-}</code></pre> The number of times variable sum will be printed When the above program is executed is _________ .`,
+ int foo(int n) {
+  if (n == 1) return 1;
+  else return 1 + foo(bar(n));
+ } ">int bar(int n) {
+  if (n == 1) return 0;
+  else return 1 + bar(n/2);
+ }
+ int foo(int n) {
+  if (n == 1) return 1;
+  else return 1 + foo(bar(n));
+ } </pre>The smallest positive integer n for which <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mtext>foo(n)</mtext>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">\text{foo(n)}</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">foo(n)</span></span></span></span></span></span> returns
+                <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mrow>
+                                        <mn>5</mn>
+                                    </mrow>
+                                    <annotation encoding="application/x-tex">5</annotation>
+                                </semantics>
+                            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">5</span></span></span></span></span> is ________. (answer in integer)
+                <br>Note: Ignore syntax errors (if any) in the function. </span>`,
       image: "",
-      options: [],
-      answer: "5",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 3 Explanation:</strong><br>  <a href="https://gateoverflow.in/302796/gate2019-cs-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+      options: [
+
+      ],
+      answer: "65536",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/523029/gate-cse-2026-set-1-question-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
     {
       marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `Consider the following C program:<br/> <pre class="prettyprint linenums lang-c_cpp"><code> main()
-{
-float sum= 0.0, j=1.0,i=2.0;
-while(i/j&gt;0.001){
-    j=j+1;
-    sum=sum+i/j;
-    printf("%f/n", sum);
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> Consider the following program in C:
+                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode=" #include < stdio.h >
+ void func(int i, int j) {
+  if(i < j) {
+  	int i = 0;
+  	while (i < 10) {
+  		j += 2;
+  		i++;
+  	}
   }
-}</code></pre>`,
+  printf(&quot;%d&quot;, i);
+ }
+ int main() {
+  	int i = 9, j = 10;
+  	func(i, j);
+  	return 0;
+ }"> #include &lt; stdio.h &gt;
+ void func(int i, int j) {
+  if(i &lt; j) {
+  	int i = 0;
+  	while (i &lt; 10) {
+  		j += 2;
+  		i++;
+  	}
+  }
+  printf("%d", i);
+ }
+ int main() {
+  	int i = 9, j = 10;
+  	func(i, j);
+  	return 0;
+ }</pre> The output of the program is ________. (answer in integer)<br> Note: Assume that the program compiles
+                and runs successfully. </span>`,
       image: "",
       options: [
-        `0 - 9 lines of output`,
-        `10 - 19 lines out output`,
-        `20 - 29 lines of output`,
-        `More than 29 lines of output`,
+
       ],
-      answer: "D",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 4 Explanation:</strong><br>  <a href="https://gateoverflow.in/213518/isro2018-70" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+      answer: "9",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/523056/gate-cse-2026-set-1-question-24#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
     {
-      marks: 1,
-      neg: 0.33,
-      type: "MCQ",
-      text: `Consider the following C code segment:<br/> <pre class="prettyprint linenums lang-c_cpp"><code> #include &lt; stdio.h &gt;
-main()
-{
-    int i, j, x;
-    scanf("%d", &amp;x);
-    i=1; j=1;
-    while (i&lt;10) {
-            j =j*i;
-            i= i+1;
-            if(i==x) break;
-        }
-}</code></pre>For the program fragment above, which of the following statements about the variables i and j must be true after execution of this program? [ !(exclamation) sign denotes factorial in the answer]`,
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> Consider the following C program:
+                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="
+#include < stdio.h >
+
+int g(int n) {
+    return (n+10);
+}
+
+int f(int n) {
+    return g(n*2);
+}
+
+int main() {
+    int sum, n;
+    sum=0;
+    for (n=1; n<3; n++)
+        sum += g(f(n));
+    printf (&quot;%d&quot;, sum);
+    return 0;
+}
+">
+#include &lt; stdio.h &gt;
+
+int g(int n) {
+    return (n+10);
+}
+
+int f(int n) {
+    return g(n*2);
+}
+
+int main() {
+    int sum, n;
+    sum=0;
+    for (n=1; n&lt;3; n++)
+        sum += g(f(n));
+    printf ("%d", sum);
+    return 0;
+}
+</pre>
+                The output of the given C program is ________. (Answer in integer) </span>`,
       image: "",
       options: [
-        `<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mi>x</mi> <mo>−</mo> <mn>1</mn> <mo stretchy="false">)</mo> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>i</mi> <mo>≥</mo> <mi>x</mi> <mo stretchy="false">)</mo> </mrow> <annotation encoding="application/x-tex">(j=(x-1) !) \wedge(i \geq x)</annotation> </semantics> </math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></span>`,
-        `<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mn>9</mn> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mn>10</mn> <mo stretchy="false">)</mo> </mrow> <annotation encoding="application/x-tex">(j=9 !) \wedge(j=10) </annotation> </semantics> </math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">9</span><span class="mclose">!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">10</span><span class="mclose">)</span></span></span></span></span>`,
-        `<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mo stretchy="false">(</mo> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mn>10</mn> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>i</mi> <mo>=</mo> <mn>10</mn> <mo stretchy="false">)</mo> <mo stretchy="false">)</mo> <mo>∨</mo> <mo stretchy="false">(</mo> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mi>x</mi> <mo>−</mo> <mn>1</mn> <mo stretchy="false">)</mo> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>i</mi> <mo>=</mo> <mi>x</mi> <mo stretchy="false">)</mo> <mo stretchy="false">)</mo> </mrow> <annotation encoding="application/x-tex">((j=10 !) \wedge(i=10)) \vee((j=(x-1) !) \wedge(i=x))</annotation> </semantics> </math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">10</span><span class="mclose">!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">10</span><span class="mclose">))</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span></span>`,
-        `<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"> <semantics> <mrow> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mn>9</mn> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>i</mi> <mo>⩾</mo> <mn>10</mn> <mo stretchy="false">)</mo> <mo stretchy="false">)</mo> <mo>∨</mo> <mo stretchy="false">(</mo> <mo stretchy="false">(</mo> <mi>j</mi> <mo>=</mo> <mo stretchy="false">(</mo> <mi>x</mi> <mo>−</mo> <mn>1</mn> <mo stretchy="false">)</mo> <mo stretchy="false">!</mo> <mo stretchy="false">)</mo> <mo>∧</mo> <mo stretchy="false">(</mo> <mi>i</mi> <mo>=</mo> <mi>x</mi> <mo stretchy="false">)</mo> <mo stretchy="false">)</mo> </mrow> <annotation encoding="application/x-tex">(j=9 !) \wedge(i \geqslant 10)) \vee((j=(x-1) !) \wedge(i=x))</annotation> </semantics> </math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">9</span><span class="mclose">!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel amsrm">⩾</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">10</span><span class="mclose">))</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">((</span><span class="mord mathnormal" style="margin-right: 0.0572em;">j</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">1</span><span class="mclose">)!)</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">x</span><span class="mclose">))</span></span></span></span></span>`,
+
       ],
-      answer: "D",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 5 Explanation:</strong><br>  <a href="https://gateoverflow.in/213570/isro2018-18" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+      answer: "46",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460840/gate-cse-2025-set-2-question-53#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"> <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include < stdio.h >  
+int foo(int S[],int size){  
+    if(size == 0) return 0;  
+    if(size == 1) return 1;  
+    if(S[0] != S[1]) return 1+foo(S+1,size-1);  
+    return foo(S+1,size-1);  
+}  
+int main(){  
+    int A[]={0,1,2,2,2,0,0,1,1};  
+    printf(&quot;%d&quot;,foo(A,9));  
+    return 0;  
+}  
+">#include &lt; stdio.h &gt;  
+int foo(int S[],int size){  
+    if(size == 0) return 0;  
+    if(size == 1) return 1;  
+    if(S[0] != S[1]) return 1+foo(S+1,size-1);  
+    return foo(S+1,size-1);  
+}  
+int main(){  
+    int A[]={0,1,2,2,2,0,0,1,1};  
+    printf("%d",foo(A,9));  
+    return 0;  
+}  
+</pre>The value printed by the given C program is _________. (Answer in integer). </span>`,
+      image: "",
+      options: [
+
+      ],
+      answer: "5",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460029/gate-cse-2025-set-1-question-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    }
   ]
 });
