@@ -959,243 +959,9 @@ return 0;
       answer: "40",
       solution: `<img src="/images/quiz/pw-c-prog/q_img64.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 registerTest({
@@ -1602,243 +1368,9 @@ registerTest({
       answer: "D",
       solution: `<img src="/images/quiz/pw-algo/q_img64.png" style="display: block; max-width: 450px; width: 100%; margin: 10px 0;">`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -1923,243 +1455,9 @@ registerTest({
       answer: "C",
       solution: `<img src="/images/quiz/test_img/5.png" style="max-width: 75%;">`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -2378,243 +1676,9 @@ registerTest({
       answer: "C",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 15 Explanation:</strong><br>  <a href="https://gateoverflow.in/543602" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -3003,243 +2067,9 @@ d8 da eb b1 81 c3 c2 f6</code></pre> <p data-end="5290" data-start="5173">Page <
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 30 Explanation:</strong><br>  <a href="https://gateoverflow.in/542994" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -3685,243 +2515,9 @@ int main(void)
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 30 Explanation:</strong><br>  <a href="https://gateoverflow.in/542139" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -8110,243 +6706,9 @@ int main() {
       answer: "36",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Question 193 Explanation:</strong><br>  <a href="https://gateoverflow.in/535610" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program. Assume parameters to a function
-                are evaluated
-                from right to left.
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int g(int p) { printf(&quot;%d&quot;, p); return p; }
-int h(int q) { printf(&quot;%d&quot;, q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}">#include &lt; stdio.h &gt;
-int g(int p) { printf("%d", p); return p; }
-int h(int q) { printf("%d", q); return q; }
-void f(int x, int y) {
-g(x);
-h(y);
-}
-int main() {
-f(g(10),h(20));
-}</pre>
-                Which one of the following options is the CORRECT output of the above
-                C program?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">20101020</span>`,
-        `<span style="display: inline;">10202010</span>`,
-        `<span style="display: inline;">20102010</span>`,
-        `<span style="display: inline;">10201020</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422894/gate-cse-2024-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program:
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}">#include &lt; stdio.h &gt;
-void fX();
-int main(){
-fX();
-return 0;}
-
-void fX(){
-char a;
-if((a=getchar()) != '
-')
-fX();
-if(a != '
-')
-putchar(a);}</pre>
-                Assume that the input to the program from the command line is 1234 followed by
-                a newline character. Which one of the following statements is CORRECT?
-            </span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">The program will not terminate</span>`,
-        `<span style="display: inline;">The program will terminate with no output</span>`,
-        `<span style="display: inline;">The program will terminate with 4321 as output</span>`,
-        `<span style="display: inline;">The program will terminate with 1234 as output</span>`
-      ],
-      answer: "3",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422833/gate-cse-2024-set-1-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following program:<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}">int main()
-{
-  f1();
-  f2(2);
-  f3();
-  return(0);
-}
-
-int f1()
-{
-  return(1);
-}
-
-int f2(int X)
-{
-  f3();
-  if (X==1)
-     return f1();
-  else
-     return (X*f2(X-1));
-}
-
-int f3()
-{
-  return(5);
-}
-</pre><br/>Which one of the following options represents the activation tree corresponding to
-                the main function?<br/><img class="entered litespeed-loaded" data-lazyloaded="1" data-ll-status="loaded" data-src="images/quiz/twt-os-7/q26.jpg" decoding="async" src="images/quiz/twt-os-7/q26.jpg"/></span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">A</span>`,
-        `<span style="display: inline;">B</span>`,
-        `<span style="display: inline;">C</span>`,
-        `<span style="display: inline;">D</span>`
-      ],
-      answer: "1",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399285/gate-cse-2023-question-26#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">The integer value printed by the ANSI-C program given below is
-                ______.<br/>
-<pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf(&quot;%d
-&quot;, (x+y));
-   return 0;
-}">#include &lt; stdio.h &gt;
-int funcp(){
-   static int x = 1;
-   x++;
-   return x;
-}
-int main(){
-   int x,y;
-   x = funcp();
-   y = funcp()+x;
-   printf("%d
-", (x+y));
-   return 0;
-}</pre>
-</span>`,
-      image: "",
-      options: [
-      ],
-      answer: "7",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/399286/gate-cse-2023-question-25#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following ANSI C program
-                <pre class="prettyprint linenums lang-c_cpp" data-linenums="true" data-pbcklang="c_cpp" data-pbcktabsize="" dir="ltr" data-rawcode="#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf(&quot;%d&quot;, r);
-    return 0;
-}">#include &lt; stdio.h &gt;
-int foo(int x, int y, int q) 
-    {
-        if ((x &lt; = 0) &amp;&amp; (y &lt; = 0))
-        return q;
-        if (x &lt; = 0)
-        return foo(x, y-q, q);
-        if (y &lt; = 0)
-        return foo(x-q, y, q);
-        return foo(x, y-q, q) + foo(x-q, y, q);
-    }
-int main( )
-{
-    int r = foo(15, 15, 10);
-    printf("%d", r);
-    return 0;
-}</pre> The output of the program upon execution is ____
-            </span>`,
-      image: "",
-      options: [
-      ],
-      answer: "60",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
-    },
+    
+    
+    
   ]
 });
 
@@ -8801,6 +7163,138 @@ int main( )
       ],
       answer: "60",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the following ANSI C function:
+                <pre><code>int SomeFunction (int x, int y)
+{
+    if ((x==1) || (y==1)) return 1;
+    if (x==y) return x;
+    if (x &gt; y) return SomeFunction(x-y, y);
+    if (y &gt; x) return SomeFunction (x, y-x);
+ 
+} </code></pre>The value returned by SomeFunction(15, 255) is __________
+            </span>`,
+      image: "",
+      options: [
+      ],
+      answer: "15",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357517/gate-cse-2021-set-2-question-23#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the following ANSI C function:
+                <pre><code> int SimpleFunction(int Y[], int n, int x)
+{
+int total = Y[0], loopIndex;
+for (loopIndex=1; loopIndex&lt;=n-1; loopIndex++)
+    total=x*total +Y[loopIndex];
+return total;
+}</code></pre> Let Z be an array of 10 elements with Z[i]=1, for all i such that <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow>
+<mn>0</mn>
+<mo>≤</mo>
+<mi>i</mi>
+<mo>≤</mo>
+<mn>9</mn>
+</mrow>
+<annotation encoding="application/x-tex">0\leq i \leq 9</annotation>
+</semantics>
+</math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height: 0.7804em; vertical-align: -0.136em;"></span><span class="mord">0</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.7955em; vertical-align: -0.136em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">9</span></span></span></span></span>. The value returned by
+                SimpleFunction(Z,10,2) is __________
+            </span>`,
+      image: "",
+      options: [
+      ],
+      answer: "1023",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357403/gate-cse-2021-set-1-question-48#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">In the following procedure<br/>
+<pre><code> Integer procedure P(X,Y);
+Integer X,Y;
+value x;
+begin
+      K=5;
+      L=8;
+      P=x+y;
+end</code></pre>X is called by value and Y is called by name. If the procedure were invoked by the following program
+                fragment<br/>
+<pre><code> K=0;
+L=0;
+Z=P(K,L);</code></pre>then the value of Z will be set equal to
+            </span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">8</span>`,
+        `<span style="display: inline;">13</span>`,
+        `<span style="display: inline;">0</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331379/isro2020-78" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the output in a 32 bit machine with 32 bit compiler?<br/>
+<pre><code> #include &lt; stdio.h &gt;
+rer(int **ptr2, int **ptr1)
+{
+    int *ii;
+    ii=*ptr2;
+    *ptr2=*ptr1;
+    *ptr1=ii;
+    **ptr1*=**ptr2;
+    **ptr2+=**ptr1;
+}
+void main(){
+    int var1=5, var2=10;
+    int *ptr1=&amp;var1,*ptr2=&amp;var2;
+    rer(&amp;ptr1,&amp;ptr2);
+    printf("%d %d",var2,var1);
+}</code></pre>
+</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">60,70</span>`,
+        `<span style="display: inline;">50,50</span>`,
+        `<span style="display: inline;">50,60</span>`,
+        `<span style="display: inline;">60,50</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331226/isro2020-63" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following recursive C function that takes two
+                arguments<br/>
+<pre><code> unsigned int rer(unsigned int n, unsigned int r){
+    if(n&gt;0)return(n%r + rer(n/r,r));
+    else retturn 0;
+}</code></pre>What is the return value of the function rer when it is called as rer(513,2)?
+            </span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">9</span>`,
+        `<span style="display: inline;">8</span>`,
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">2</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331460/isro2020-59" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a></div>`
     },
   ]
 });
