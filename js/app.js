@@ -843,6 +843,48 @@ window.testSeries = [
     brandLabel: "APEX EASY"
     // comingSoon: true
   },
+  {
+    id: "cse-gate-2027",
+    code: "CSE",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "CSE-GATE PYQ Practice Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: undefined,
+    startDate: "2026-03-15",
+    endDate: "2027-02-15",
+    session: "2024-2025",
+    desc: "Computer Science and Engineering (CSE) previous-year GATE questions organised topic wise test and section-wise, helping aspirants from varied backgrounds pace their revision accurately.",
+    features: [
+      "Conventional answer-writing practice",
+      "Mapped to ESE Mains syllabus",
+      "Model answers for self-evaluation",
+      "Time-bound mock conditions",
+      "Topic-wise weightage analysis",
+      "Expert evaluation guidelines",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "March 15, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      // ["Mock - 6", "Apr 10, 2026"],
+      // ["Mock - 5", "Mar 14, 2026"],
+      // ["Mock - 4", "Feb 10, 2026"],
+      // ["Mock - 3", "Jan 12, 2026"],
+    ],
+    oldPrice: "₹500",
+    price: "₹25 + GST",
+    basePrice: 25,
+    brandLabel: "APEX EASY"
+    // comingSoon: true
+  },
 
 
 
