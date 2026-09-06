@@ -8538,5 +8538,955 @@ end; </code></pre></span>`,
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1028/gate2004-31-isro2008-40" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE
                         2008 | C Programming</span></div>`
     },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the code fragment written in C below :<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void f (int n)
+{ 
+    if (n &lt;= 1)  {
+        printf ("%d", n);
+    }
+    else {
+        f (n/2);
+        printf ("%d", n%2);
+    }
+}</code></pre> Which of the following implementations will produce the same output for f(173) as the above code?<br>P1<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void f (int n)
+{ 
+    if (n/2)  {
+        f(n/2);
+    }
+    printf ("%d", n%2);
+}</code></pre> <br>P2<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> void f (int n)
+{ 
+    if (n &lt;=1)  {
+        printf ("%d", n);
+    }
+    else {
+        printf ("%d", n%2);
+        f (n/2);
+    }
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">Both P1 and P2</span>`,
+        `<span style="display: inline;">P2 only</span>`,
+        `<span style="display: inline;">P1 only</span>`,
+        `<span style="display: inline;">Neither P1 nor P2</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3407/gate2008-it-83" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the code fragment written in C below : <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> void f (int n)
+{ 
+  if (n &lt;=1)  {
+   printf ("%d", n);
+  }
+  else {
+   f (n/2);
+   printf ("%d", n%2);
+  }
+}</code></pre> <br>What does f(173) print?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">10110101</span>`,
+        `<span style="display: inline;">010101101</span>`,
+        `<span style="display: inline;">010110101</span>`,
+        `<span style="display: inline;">10101101</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3406/gate2008-it-82" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the C program below. What does it print? <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> #include &lt; stdio.h &gt;
+# define swapl (a, b) tmp = a; a = b; b = tmp
+void swap2 ( int a, int b)
+{
+        int tmp;
+        tmp = a; a = b; b = tmp;
+ }
+void swap3 (int*a, int*b)
+{
+        int tmp;
+        tmp = *a; *a = *b; *b = tmp;
+}
+int main ()
+{
+        int num1 = 5, num2 = 4, tmp;
+        if (num1 &lt; num2) {swap1 (num1, num2);}
+        if (num1 &lt; num2) {swap2 (num1 + 1, num2);}
+        if (num1 &gt; = num2) {swap3 (&num1, &num2);}
+        printf ("%d, %d", num1, num2);
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5,5</span>`,
+        `<span style="display: inline;">5,4</span>`,
+        `<span style="display: inline;">4,5</span>`,
+        `<span style="display: inline;">4,4</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3360/gate2008-it-50" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C functions: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int f1(int n)
+{
+  if(n == 0 || n == 1)
+    return n;
+  else
+    return (2*f1(n-1) + 3*f1(n-2));
+}
+ 
+int f2(int n)
+{
+  int i;
+  int X[N], Y[N], Z[N] ;
+  X[0] = Y[0] = Z[0] = 0;
+  X[1] = 1; Y[1] = 2; Z[1] = 3;
+  for(i = 2; i &lt;= n; i++)
+  {
+    X[i] = Y[i-1] + Z[i-2];
+    Y[i] = 2*X[i];
+    Z[i] = 3*X[i];
+  }
+  return X[n] ;
+}</code></pre> f1(8) and f2(8) return the values</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">1661 and 1640</span>`,
+        `<span style="display: inline;">59 and 59</span>`,
+        `<span style="display: inline;">1640 and 1640</span>`,
+        `<span style="display: inline;">1640 and 1661</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43489/gate2008-75#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Choose the correct option to fill ? 1 and ? 2 so that the program below prints an input string in reverse order. Assume that the input string is terminated by a newline character. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> void recerse void {
+   int c;
+   if (?1) reverse ();
+   ?2
+}
+main {
+    printf("Enter Text "); printf("\\ n") ;
+    reverse();  printf("\\ n");
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">?1 is (getchar ( )! = '\\ n') <br> ?2 is getchar (c);</span>`,
+        `<span style="display: inline;">?1 is (c = getchar ( ) )! = '\\ n')<br> ?2 is getchar (c);</span>`,
+        `<span style="display: inline;">?1 is (c ! = '\\ n')<br> ?2 is putchar (c);</span>`,
+        `<span style="display: inline;">?1 is ((c = getchar ( ) )! = '\\ n') <br> ?2 is putchar (c);</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/484/gate2008-61#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is printed by the following C program? <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> int f(int x, int *py, int **ppz)			
+{						                    	
+    int y, z;					                		
+    **ppz += 1; z = **ppz;		                
+    *py += 2; y = *py;					                	
+    x += 3;					                    	
+    return x+y+z;
+}
+
+void main()
+{
+    int c, *b, **a;
+    c = 4; b = &c; a = &b;
+    printf("%d", f(c, b, a));
+    	
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">18</span>`,
+        `<span style="display: inline;">19</span>`,
+        `<span style="display: inline;">21</span>`,
+        `<span style="display: inline;">22</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/483/gate2008-60#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2008 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Study the following program<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>//precondition: x&gt;=0
+public void demo(int x)
+{
+    System.out.print(x % 10); 
+    if (x % 10 != 0)
+    {
+        demo(x/10);
+    }
+    System.out.print(x%10);
+} </code></pre> <br> Which of the following is printed as a result of the call demo (1234)?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">1441</span>`,
+        `<span style="display: inline;">3443</span>`,
+        `<span style="display: inline;">12344321</span>`,
+        `<span style="display: inline;">43211234</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/49496/isro2007-23" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE
+                        2007 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the output printed by the following program?<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> #include &lt; stdio.h &gt;
+int f(int n, int k) {
+    if (n == 0) return 0;
+    else if (n % 2) return f(n/2, 2*k) + k;
+    else return f(n/2, 2*k) - k;
+}
+
+int main () {
+    printf("%d", f(20, 1));
+    return 0;
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">8</span>`,
+        `<span style="display: inline;">9</span>`,
+        `<span style="display: inline;">20</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3818/gate2005-it-57" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT
+                        2005 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C-program: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>
+double foo (double); /* Line 1 */
+int main()
+{
+    double da, db;
+    // input da
+    db = foo(da);
+}
+double foo(double a)
+{
+    return a;
+}</code></pre> The above code compiled without any error or warning. If Line 1 is deleted, the above code will show:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">no compile warning or error</span>`,
+        `<span style="display: inline;">some compiler-warnings not leading to unintended results</span>`,
+        `<span style="display: inline;">some compiler-warnings due to type-mismatch eventually leading to unintended results</span>`,
+        `<span style="display: inline;">compiler errors</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1368/gate2005-32#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2005 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C-program: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void foo(int n, int sum)
+{
+  int k = 0, j = 0;
+  if (n == 0) return;
+    k = n % 10; 
+  j = n / 10;
+  sum = sum + k;
+  foo (j, sum);
+  printf ("%d,", k);
+}
+  
+int main ()
+{
+  int a = 2048, sum = 0;
+  foo (a, sum);
+  printf ("%dn", sum);
+    
+  getchar();
+}</code></pre> What does the above program print?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">8, 4, 0, 2, 14</span>`,
+        `<span style="display: inline;">8, 4, 0, 2, 0</span>`,
+        `<span style="display: inline;">2, 0, 4, 8, 14</span>`,
+        `<span style="display: inline;">2, 0, 4, 8, 0</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1367/gate2005-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2005 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What does the following C-statement declare? <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int ( * f) (int * ) ; </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">A function that takes an integer pointer as argument and returns an integer</span>`,
+        `<span style="display: inline;">A function that takes an integer as argument and returns an integer pointer</span>`,
+        `<span style="display: inline;">A pointer to a function that takes an integer pointer as argument and returns an integer.</span>`,
+        `<span style="display: inline;">A function that takes an integer pointer as argument and returns a function pointer</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1343/gate2005-1#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2005 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C program:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>#include &lt; stdio.h &gt;
+typedef struct {
+    char *a;
+    char *b;
+    } t;
+void f1 (t s);
+void f2 (t *p);
+main()
+{
+    static t s = {"A", "B"};
+    printf ("%s %s\\n", s.a, s.b);
+    f1(s);
+    printf ("%s %s\\n", s.a, s.b);
+    f2(&s);
+}
+void f1 (t s)
+{
+    s.a = "U";
+    s.b = "V";
+    printf ("%s %s\\n", s.a, s.b);
+    return;
+}
+void f2(t *p)
+{
+    p -&gt; a  = "V";
+    p -&gt; b = "W";
+    printf("%s %s\\n", p -&gt; a, p -&gt; b);
+    return;
+}</code></pre> What is the output generated by the program ?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">A B <br> U V<br> V W<br> V W</span>`,
+        `<span style="display: inline;">A B<br> U V<br> A B<br> V W</span>`,
+        `<span style="display: inline;">A B<br> U V<br> U V<br> V W</span>`,
+        `<span style="display: inline;">A B<br> U V<br> V W<br> U V</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3704/gate2004-it-61" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT
+                        2004 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the program below in a hypothetical programming language which allows global variables and a choice of static or dynamic scoping.<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int i ;
+program main ()
+{
+    i = 10;
+    call f();
+}
+
+procedure f()
+{   
+    int i = 20;
+    call g ();
+}
+procedure g ()
+{   
+    print i;
+} </code></pre> <br>Let x be the value printed under static scoping and y be the value printed under dynamic scoping. Then, x and y are:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">x=10, y=20</span>`,
+        `<span style="display: inline;">x=20, y=10</span>`,
+        `<span style="display: inline;">x=10, y=10</span>`,
+        `<span style="display: inline;">x=20, y=20</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3467/gate2007-it-34-ugcnet-dec2012-iii-52" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2007 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the program below in a hypothetical language which allows global variable and a choice of call by reference or call by value methods of parameter passing. <br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int i ;
+program main ()
+{
+    int j = 60;
+    i = 50;
+    call f (i, j);
+    print i, j;
+}
+procedure f (x, y)
+{           
+    i = 100;
+    x = 10;
+    y = y + i ;
+} </code></pre> <br>Which one of the following options represents the correct output of the program for the two parameter passing mechanisms?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">Call by value : i = 70, j = 10; Call by reference :i = 60, j = 70</span>`,
+        `<span style="display: inline;">Call by value : i = 50, j = 60; Call by reference :i = 50, j = 70</span>`,
+        `<span style="display: inline;">Call by value : i = 10, j = 70; Call by reference :i = 100, j = 60</span>`,
+        `<span style="display: inline;">Call by value : i = 100, j = 60; Call by reference :i = 10, j = 70</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3466/gate2007-it-33" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2007 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The function f is defined as follows:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> int f (int n) {
+    if (n &lt;= 1) return 1;
+    else if (n % 2  ==  0) return f(n/2);
+    else return f(3n - 1);
+}</code></pre> <br> Assuming that arbitrarily large integers can be passed as a parameter to the function, consider the following statements.<br><br>i. The function f terminates for finitely many different values of \\( n \\geq 1 \\).<br> ii. The function f terminates for infinitely many different values of \\( n \\geq 1 \\).<br> iii. The function f does not terminate for finitely many different values of \\( n \\geq 1 \\).<br> iv. The function f does not terminate for infinitely many different values of \\( n \\geq 1 \\).<br><br> Which one of the following options is true of the above?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">i and iii</span>`,
+        `<span style="display: inline;">i and iv</span>`,
+        `<span style="display: inline;">ii and iii</span>`,
+        `<span style="display: inline;">ii and iv</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3460/gate2007-it-27" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2007 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C function: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> #include &lt; stdio.h &gt;
+int f(int n)
+{
+    static int r = 0;
+    if (n &lt;= 0) return 1;
+    if (n &gt; 3)
+    {
+        r = n;
+        return f(n-2)+2;
+    }
+    return f(n-1)+r;
+}
+ 
+int main()
+{
+    printf("%d", f(5));
+} </code></pre> What is the value of f(5)?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">7</span>`,
+        `<span style="display: inline;">9</span>`,
+        `<span style="display: inline;">18</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1240/gate2007-42#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE
+                        CSE 2007 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The following function computes the value of \\( \\binom{m}{n} \\) correctly for all legal values \\( m \\) and \\( n \\) \\( (m \\geq 1, n \\geq 0 \\text{ and } m \\gt n) \\) <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> int func(int m, int n)
+{
+    if (E) return 1;
+    else return(func(m -1, n) + func(m - 1, n - 1));
+}</code></pre>In the above function, which of the following is the correct expression for E?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">(n = = 0) || (m = = 1)</span>`,
+        `<span style="display: inline;">(n = = 0) &amp;&amp; (m = = 1)</span>`,
+        `<span style="display: inline;">(n = = 0) || (m = = n)</span>`,
+        `<span style="display: inline;">(n = = 0) &amp;&amp; (m = = n)</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3595/gate2006-it-52" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT
+                        2006 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Which one of the choices given below would be printed when the following program is executed?<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>#include &lt; stdio.h &gt;
+void swap (int *x, int *y)
+{
+    static int *temp;
+    temp = x;
+    x = y;
+    y = temp;
+}
+void printab ()
+{
+    static int i, a = -3, b = -6;
+    i = 0;
+    while (i &lt;= 4)
+    {
+        if ((i++)%2 == 1) continue;
+        a = a + i;
+        b = b + i;
+    }
+    swap (&a, &b);
+    printf("a =  %d, b = %d\\n", a, b);
+}
+main()
+{
+    printab();
+    printab();
+} </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">a = 0, b = 3 a = 0, b = 3</span>`,
+        `<span style="display: inline;">a = 3, b = 0 a = 12, b = 9</span>`,
+        `<span style="display: inline;">a = 3, b = 6 a = 3, b = 6</span>`,
+        `<span style="display: inline;">a = 6, b = 3 a = 15, b = 12</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3593/gate2006-it-50" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT
+                        2006 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the C code to swap two integers and these five statements: the code <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> void swap(int *px,int *py){
+*px=*px-*py;
+*py=*px+*py;
+*px=*py-*px;
+}</code></pre> S1 : will generate a compilation error <br> S2 : may generate a segmentation fault at runtime depending on the arguments passed <br> S3 : correctly implements the swap procedure for all input pointers referreing to integers stored in memory locations accessible tot he process <br> S4 : implements the swap procedure correctly for some but not all valid input pointers <br> S5 : may add or subtract integers and pointers</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">S1</span>`,
+        `<span style="display: inline;">S2 and S3</span>`,
+        `<span style="display: inline;">S2 and S4</span>`,
+        `<span style="display: inline;">S2 and S5</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1835/gate2006-57#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2006 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following code written in a pass-by reference language like FORTAN and these statements about the code. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>subroutine swap(ix,iy)
+     it = ix
+L1 : ix = iy
+L2 : iy = it
+end
+  ia = 3
+  ib = 8
+  call swap (ia, 1b+5)
+  print *, ia, ib
+end </code></pre> S1: The complier will generate code to allocate a temporary nameless cell, initialize it to 13, and pass the address of the cell to swap <br> S2: On execution the code will generate a runtime error on line L1 <br> S3: On execution the code will generate a runtime error on line L2 <br> S4: The program will print 13 and 8 <br> S5: The program will print 13 and -2 <br> Exactly the following set of statement (s) is correct:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">S1 and S2</span>`,
+        `<span style="display: inline;">S1 and S4</span>`,
+        `<span style="display: inline;">S3</span>`,
+        `<span style="display: inline;">S1 and S5</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1834/gate2006-56#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2006 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Choose the correct option to fill the ?1 and ?2 so that the program prints an input string in reverse order. Assume that the input string is terminated by a new line character.<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>#include &lt; stdio.h &gt;
+void wrt_it (void);
+int main (void)
+{
+    printf("Enter Text"); 
+    printf ("\\n");
+    wrt_it();
+    printf ("\\n");
+    return 0;
+}
+void wrt_it (void)
+{
+    int c;
+    if (?1)
+        wrt_it();
+    ?2
+} </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">?1 is getchar()!= '\\n' <br>?2 is getchar(c);</span>`,
+        `<span style="display: inline;">?1 is (c=getchar());!= '\\n'<br>?2 is getchar(c);</span>`,
+        `<span style="display: inline;">?1 is c!= '\\n'<br>?2 is putchar(c);</span>`,
+        `<span style="display: inline;">?1 is (c=getchar())!= '\\n'<br>?2 is putchar(c);</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3703/gate2004-it-60" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2004 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the output of the following program?<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>#include &lt; stdio.h &gt;
+int funcf (int x);
+int funcg (int y);
+main ()
+{
+    int x = 5, y = 10, count;
+    for (count = 1; count &lt;= 2; ++count) {
+        y += funcf(x) + funcg(x);
+        printf ("%d", y);
+    }
+}
+funcf (int x) {
+    int y;
+    y = funcg(x);
+    return (y);
+}
+funcg (int x) {
+    static int y = 10;
+    y += 1;
+    return (y + x);
+}
+ </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">43 80</span>`,
+        `<span style="display: inline;">42 74</span>`,
+        `<span style="display: inline;">33 37</span>`,
+        `<span style="display: inline;">32 32</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3702/gate2004-it-59" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE IT 2004 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C function: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> int f(int n)
+{
+   static int i = 1;
+   if (n &gt; = 5)
+      return n;
+   n = n+i;
+   i++;
+   return f(n);
+}</code></pre> The value returned by f(1) is</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">6</span>`,
+        `<span style="display: inline;">7</span>`,
+        `<span style="display: inline;">8</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1028/gate2004-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2004 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C function <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> void swap (int a, int b)
+{
+   int temp;
+   temp = a;
+   a = b;
+   b = temp;
+}</code></pre> In order to exchange the values of two variables x and y.</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">call swap (x, y)</span>`,
+        `<span style="display: inline;">call swap (&amp;x, &amp;y)</span>`,
+        `<span style="display: inline;">swap (x,y) cannot be used as it does not return any value</span>`,
+        `<span style="display: inline;">swap (x,y) cannot be used as the parameters are passed by value</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/999/gate2004-2#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2004 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the C program shown below. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>  #include &lt; stdio.h &gt; 
+#define print(x) printf("%d ", x)
+int x;
+void Q(int z)
+{
+    z += x;
+    print(z);
+}
+void P(int *y)
+{
+    int x = *y + 2;
+    Q(x);
+    *y = x - 1;
+    print(x);
+}
+main(void)
+{
+    x = 5;
+    P(&x);
+    print(x);
+}</code></pre> The output of this program is</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">12 7 6</span>`,
+        `<span style="display: inline;">22 12 11</span>`,
+        `<span style="display: inline;">14 6 6</span>`,
+        `<span style="display: inline;">7 6 6</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/972/gate2003-89#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2003 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The following program fragment is written in a programming language that allows variables and does not allow nested declarations of functions. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> global int i = 100, j = 5;
+void P(x)
+{
+    int i = 10;
+    print(x + 10);
+    i = 200;
+    j = 20;
+    print(x);
+}
+main()
+{
+    P(i + j);
+} </code></pre> If the programming language uses dynamic scoping and call by name parameter passing mechanism, the values printed by the above program are</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">115,220</span>`,
+        `<span style="display: inline;">25,220</span>`,
+        `<span style="display: inline;">25,15</span>`,
+        `<span style="display: inline;">115,105</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43575/gate2003-74#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2003 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The following program fragment is written in a programming language that allows variables and does not allow nested declarations of functions. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> global int i = 100, j = 5;
+void P(x)
+{
+    int i = 10;
+    print(x + 10);
+    i = 200;
+    j = 20;
+    print(x);
+}
+main()
+{
+    P(i + j);
+} </code></pre> If the programming language uses static scoping and call by need parameter passing mechanism, the values printed by the above program are</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">115,220</span>`,
+        `<span style="display: inline;">25,220</span>`,
+        `<span style="display: inline;">25,15</span>`,
+        `<span style="display: inline;">115,105</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/960/gate2003-73#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2003 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The results returned by function under value-result and reference parameter passing conventions</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">Do not differ</span>`,
+        `<span style="display: inline;">Differ in the presence of loops</span>`,
+        `<span style="display: inline;">Differ in all cases</span>`,
+        `<span style="display: inline;">May differ in the presence of exception</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/823/gate2002-1-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2002 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The value of j at the end of the execution of the following C program:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> int incr (int i)
+{ 
+    static int count = 0;
+    count = count + i;
+    return (count);
+} 
+main () { 
+    int i, j; 
+    for (i = 0; i &lt;= 4; i++)
+       j = incr (i);
+} </code></pre> is:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">10</span>`,
+        `<span style="display: inline;">4</span>`,
+        `<span style="display: inline;">6</span>`,
+        `<span style="display: inline;">7</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/667/gate2000-2-20" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2000 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C function definition<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int Trial (int a, int b, int c)
+{
+    if ((a&gt;=b) && (c &lt; b)) return b;
+    else if (a &gt;= b) return Trial(a, c, b);
+    else return Trial(b, a, c);
+} </code></pre>The functional Trial:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">Finds the maximum of a, b, and c</span>`,
+        `<span style="display: inline;">Finds the minimum of a, b, and c</span>`,
+        `<span style="display: inline;">Finds the middle number of a, b, c</span>`,
+        `<span style="display: inline;">None of the above</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1501/gate1999-2-24" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 1999 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following program in a language that has dynamic scooping:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>var x: real;
+procedure show:
+    begin print(x);end;
+procedure small;
+    var x: real;
+        begin x: = 0.125; show; end;
+begin x:=0.25
+    show; small
+    end. </code></pre> Then the output of the program is:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">0.125 0.125</span>`,
+        `<span style="display: inline;">0.25 0.25</span>`,
+        `<span style="display: inline;">0.25 0.125</span>`,
+        `<span style="display: inline;">0.125 0.25</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1491/gate1999-2-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE
+                        CSE 1999 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the result of the following program?<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>    program side-effect (input, output);
+    var x, result: integer;
+    function f (var x:integer:integer;
+    begin
+        x:x+1;f:=x;
+    end
+    begin
+    x:=5;
+    result:=f(x)*f(x);
+    writeln(result);
+    end</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">25</span>`,
+        `<span style="display: inline;">36</span>`,
+        `<span style="display: inline;">42</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1685/gate1998-2-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        1998 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What value would the following function return for the input x=95?<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> Function fun (x:integer):integer;
+Begin
+    If x &gt; 100 then fun = x- 10
+    Else fun = fun(fun (x+11))
+End;</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">89</span>`,
+        `<span style="display: inline;">90</span>`,
+        `<span style="display: inline;">91</span>`,
+        `<span style="display: inline;">92</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1684/gate1998-2-12" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        1998 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Which of the following macros can put a macro assembler into an infinite loop?<br>I. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>.MACRO M1, X
+.IF EQ, X   ;if X=0 then
+M1 X + 1
+.ENDC
+.IF NE, X   ;if X [latex]\\neq[/latex] O then
+.WORD X  ;address (X) is stored here
+.ENDC
+.ENDM</code></pre> <br> II. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>.MACRO M2, X
+.IF EQ, X
+M2 X
+.ENDC
+.IF NE, X
+.WORD X + 1
+.ENDC
+.ENDM </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">II only</span>`,
+        `<span style="display: inline;">I only</span>`,
+        `<span style="display: inline;">both I and II</span>`,
+        `<span style="display: inline;">None of the above</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2745/gate1996-2-16" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        1996 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">A language with string manipulation facilities uses the following operations<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>head(s): first character of a string
+tail(s): all but exclude the first character of a string</code></pre> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> concat(s1, s2): s1s2</code></pre> For the string "acbc" what will be the output of <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>concat(head(s), head(tail(tail(s)))) </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">ac</span>`,
+        `<span style="display: inline;">bc</span>`,
+        `<span style="display: inline;">ab</span>`,
+        `<span style="display: inline;">cc</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2621/gate1995-2-9" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        1995 | C Programming</span></div>`
+    }
   ]
 });
