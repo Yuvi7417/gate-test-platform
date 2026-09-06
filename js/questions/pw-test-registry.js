@@ -7949,3 +7949,234 @@ __________ ;//calltof()
   ]
 });
 
+registerTest({
+  series: "pw-cs-gate-2026",
+  name: "TWT-c programming-functions",
+  date: "sep 06, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following code fragment
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void foo(int x, int y)
+{
+    x+=y;
+    y+=x;
+}
+main()
+{
+    int x=5;
+    foo(x,x);
+}</code></pre>
+What is the final value of x in both call by value and call by reference, respectively?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5 and 16</span>`,
+        `<span style="display: inline;">5 and 12</span>`,
+        `<span style="display: inline;">5 and 20</span>`,
+        `<span style="display: inline;">12 and 20</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/52145/isro2015-80" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2015 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">The following program
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>main()
+{
+    inc(); inc(); inc();
+}
+inc()
+{
+    static int x;
+    printf("%d", ++x);
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">prints 012</span>`,
+        `<span style="display: inline;">prints 123</span>`,
+        `<span style="display: inline;">prints 3 consecutive, but unpredictable numbers</span>`,
+        `<span style="display: inline;">prints 111</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/52131/isro2015-70" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2015 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Suppose c=(c[0],...,c[k-1]) is an array of length k, where all the entries are from the set {0,1}. For any positive integers a and n, consider the following pseudocode.
+<br><img src="images/twt-c-programming-functions/q53.jpg">
+<br>If k=4, c=(1,0,1,1), a=2 and n=8, then the output of DOSOMETHING(c,a,n) is _____.</span>`,
+      image: "",
+      options: [
+      ],
+      answer: "0",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8558/gate2015-3-53#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-3 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the following C program.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>#include &lt;stdio.h&gt;
+int f1(void);
+int f2(void);
+int f3(void);
+int x = 10;
+int main( )
+{
+   int x = 1;
+   x += f1( ) + f2( ) + f3( ) + f2( );
+   printf("%d", x);
+   return 0;
+}
+int f1() { int x = 25; x++; return x;}
+int f2() { static int x = 50; x++; return x;}
+int f3() { x *= 10; return x;}</code></pre>
+The output of the program is ________.</span>`,
+      image: "",
+      options: [
+      ],
+      answer: "230",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8563/gate2015-3-32#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-3 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following recursive C function.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void get(int n)
+{
+if (n&lt;1) return;
+get(n-1);
+get(n-3);
+printf("%d", n);
+}</code></pre>
+If get(6) function is being called in main() then how many times will the get() function be invoked before returning to the main()?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">15</span>`,
+        `<span style="display: inline;">25</span>`,
+        `<span style="display: inline;">35</span>`,
+        `<span style="display: inline;">45</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8498/gate2015-3-28#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-3 | Topic: C Programming</span></div>`
+    }
+  ]
+});
+
+registerTest({
+  series: "pw-cs-gate-2026",
+  name: "TWT-c programming-functions-2",
+  date: "sep 06, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the following C function.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int fun(int n){
+   int x=1,k;
+   if (n==1) return x;
+   for (k=1; k &lt; n; ++k)
+       x = x + fun(k) * fun(n-k);
+   return x;
+}</code></pre>
+The return value of fun(5) is ________.</span>`,
+      image: "",
+      options: [
+      ],
+      answer: "51",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8060/gate2015-2-14#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-2 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following function written in the C programming language.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void foo(char *a){
+   if (*a &amp;&amp; *a != ' '){
+        foo(a+1);
+        putchar(*a);
+   }
+}</code></pre>
+The output of the above function on input "ABCD  EFGH" is</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">ABCD EFGH</span>`,
+        `<span style="display: inline;">ABCD</span>`,
+        `<span style="display: inline;">HGFE DCBA</span>`,
+        `<span style="display: inline;">DCBA</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8086/gate2015-2-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-2 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "NAT",
+      text: `<span style="display: inline;">The output of the following C program is__________.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>void f1(int a, int b) {
+    int c;
+    c=a; a=b; b=c;
+}
+void f2(int *a, int *b) {
+    int c;
+    c=*a; *a=*b; *b=c;
+}
+int main(){
+    int a=4, b=5, c=6;
+    f1(a,b);
+    f2(&amp;b, &amp;c);
+    printf("%d",c-a-b);
+}</code></pre></span>`,
+      image: "",
+      options: [
+      ],
+      answer: "-5",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8185/gate2015-1-24#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2015 SET-1 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the time complexity for the following C module? Assume that n &gt; 0.
+<pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int module(int n)
+{
+    if (n == 1)
+        return 1;
+    else
+        return (n + module(n-1));
+}</code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">O(n)</span>`,
+        `<span style="display: inline;">O(log n)</span>`,
+        `<span style="display: inline;">O(n²)</span>`,
+        `<span style="display: inline;">O(n!)</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/55082/isro2014-67" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2014 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Which of the following is true with respect to Reference?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">A reference can never be NULL</span>`,
+        `<span style="display: inline;">A reference needs an explicit dereferencing mechanism</span>`,
+        `<span style="display: inline;">A reference can be reassigned after it is established</span>`,
+        `<span style="display: inline;">A reference and pointer are synonymous</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/17420/isro2014-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2014 | Topic: C Programming</span></div>`
+    }
+  ]
+});
