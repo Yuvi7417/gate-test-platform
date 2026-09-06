@@ -8177,6 +8177,113 @@ int main(){
       ],
       answer: "A",
       solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/17420/isro2014-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2014 | Topic: C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the C function given below <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> int f(int j)
+{
+static int i = 50;
+int k;
+if (i == j)
+{
+printf("something");
+k = f(i);
+return 0;
+}
+else return 0;
+} </code></pre> Which one of the following is TRUE?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">The function returns 0 for all values of j.</span>`,
+        `<span style="display: inline;">The function prints the string something for all values of j.</span>`,
+        `<span style="display: inline;">The function returns 0 when j = 50.</span>`,
+        `<span style="display: inline;">The function will exhaust the runtime stack or run into an infinite loop when j = 50</span>`
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2008/gate2014-2-42#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2014
+                        SET-2 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the following function <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> double f (double x) {
+if ( abs (x*x - 3) &lt; 0. 01) return x;
+else return f (x / 2 + 1.5/x);
+} </code></pre> Give a value q (to 2 decimals) such that f(q) will return q:______</span>`,
+      image: "",
+      options: [],
+      answer: "1.72",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2000/gate2014-2-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2014
+                        SET-2 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;">Consider the function func shown below: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> int func(int num) {
+int count = 0;
+while (num) {
+    count++;
+    num &gt;&gt; = 1;
+}
+return (count);
+} </code></pre> The value returned by func(435)is __________.</span>`,
+      image: "",
+      options: [],
+      answer: "9",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1964/gate2014-2-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2014
+                        SET-2 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following psuedocode:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code>x: integer := 1  
+y: integer := 2   
+procedure add  
+    x:= x + y    
+procedure second (P: Procedure)  
+    x: integer := 2      
+    p()   
+procedure first  
+    y: integer := 3
+    second (add) 
+first () 
+write_integer(x) </code></pre> What does it print if the language uses dynamic scoping with deep binding?</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">2</span>`,
+        `<span style="display: inline;">3</span>`,
+        `<span style="display: inline;">4</span>`,
+        `<span style="display: inline;">5</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43764/isro-2013-7" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE
+                        2013 | C Programming</span></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the return value of f(p,p), if the value of p is initialized to 5 before the call? Note that the first parameter is passed by reference, whereas the second parameter is passed by value. <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> int f (int &x, int c) {
+  c = c - 1;
+  if (c==0) return 1;
+   x = x + 1;
+return f(x,c) * x;
+} </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">3024</span>`,
+        `<span style="display: inline;">6561</span>`,
+        `<span style="display: inline;">55440</span>`,
+        `<span style="display: inline;">161051</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/60/gate2013-42#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2013 | C Programming</span></div>`
     }
   ]
 });
