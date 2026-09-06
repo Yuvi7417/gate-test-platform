@@ -13,3 +13,4 @@ js/ce-test-registry.src.js
 .env*
 js/ee-test-registry.src.js
 js/go-test-registry.src.js
+js/demo.registry.src.js
