@@ -8414,100 +8414,129 @@ int main ( )
                         2010 | C Programming</span></div>`
     },
     {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following C functions. <br><img data-lazyloaded="1" src="/wp-content/uploads/GATE/CS/20201/q48.jpg" decoding="async" data-src="/wp-content/uploads/GATE/CS/20201/q48.jpg" data-ll-status="loaded" class="entered litespeed-loaded"><noscript><img decoding="async" src="/wp-content/uploads/GATE/CS/20201/q48.jpg" /></noscript><br>The value returned by pp(3,4) is _____</span>`,
-      image: "",
-      options: [],
-      answer: "81",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/333183/gate2020-cs-48#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
-                        2020 | C Programming</span></div>`
-    },
-    {
-      marks: 2,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following C functions. <br><img data-lazyloaded="1" src="/wp-content/uploads/GATE/CS/20201/q46.jpg" decoding="async" data-src="/wp-content/uploads/GATE/CS/20201/q46.jpg" data-ll-status="loaded" class="entered litespeed-loaded"><noscript><img decoding="async" src="/wp-content/uploads/GATE/CS/20201/q46.jpg" /></noscript><br>The return value of fun2(5) is ______</span>`,
-      image: "",
-      options: [],
-      answer: "55",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/333185/gate2020-cs-46#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
-                        2020 | C Programming</span></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
+      marks: 1,
+      neg: 0.33,
       type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code>
-#include &lt; stdio.h &gt;
-int r(){
- int static num=7;
- return num--;
+      text: `<span style="display: inline;">What does the following program print? <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> #include &lt; stdio.h &gt;
+void f (int *p, int * q) {
+       p=q;
+       *p=2;
 }
-int main() {
- for(r();r();r()) {
-  printf("%d ",r());
-  };
- return 0;
-}</code></pre> Which one of the following values will be displayed on execution of the programs?</span>`,
+int i= 0, j= 1;
+int main ( ){
+     f(&i, & j);
+     printf( "%d%d \\ n", i,j);
+     return 0;
+} </code></pre></span>`,
       image: "",
       options: [
-        `<span style="display: inline;">41</span>`,
-        `<span style="display: inline;">52</span>`,
-        `<span style="display: inline;">63</span>`,
-        `<span style="display: inline;">630</span>`
-      ],
-      answer: "B",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/302821/gate2019-cs-27#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
-                        2019 | C Programming</span></div>`
-    },
-    {
-      marks: 2,
-      neg: 0.66,
-      type: "MCQ",
-      text: `<span style="display: inline;">Consider the following C program: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code>
-void convert(int n) {
-  if (n&lt;0)
-    printf("%d",n);
-  else {
-    convert(n/2);
-    printf("%d",n%2);
-  }
-}</code></pre> Which one of the following will happen when the function convert is called with any positive integer n as argument?</span>`,
-      image: "",
-      options: [
-        `<span style="display: inline;">It will print the binary representation of n and terminate.</span>`,
-        `<span style="display: inline;">It will print the binary representation of n in the reverse order and terminate.</span>`,
-        `<span style="display: inline;">It will print the binary representation of n but will not terminate.</span>`,
-        `<span style="display: inline;">It will not print anything and will not terminate.</span>`
+        `<span style="display: inline;">2 2</span>`,
+        `<span style="display: inline;">2 1</span>`,
+        `<span style="display: inline;">0 1</span>`,
+        `<span style="display: inline;">0 2</span>`
       ],
       answer: "D",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/302822/gate2019-cs-26#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
-                        2019 | C Programming</span></div>`
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2184/gate2010-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE
+                        CSE 2010 | C Programming</span></div>`
     },
     {
       marks: 1,
-      neg: 0,
-      type: "NAT",
-      text: `<span style="display: inline;">Consider the following C program: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> 
-#include <stdio.h>
-  int jumble(int x, int y) {
-    x = 2 * x + y;
-    return x;
-  }
-int main() {
-  int x = 2, y = 5;
-  y = jumble(y, x);
-  x = jumble(y, x);
-  printf("%dn", x);
-  return 0;
-}</stdio.h></code></pre> The value printed by program is __________ .</span>`,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following code written in a pass-by-reference language like FORTRAN and these statements about the code. <br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> subroutine swap(ix,iy) 
+     it = ix 
+L1 : ix = iy 
+L2 : iy = it 
+    end 
+    ia = 3 
+    ib = 8 
+    call swap (ia, ib+5)
+    print *, ia, ib 
+    end </code></pre><br>S1: The compiler will generate code to allocate a temporary nameless cell, initialize it to 13, and pass the address of the cell to swap <br> S2: On execution the code will generate a runtime error on line L1 <br> S3: On execution the code will generate a runtime error on line L2 <br> S4: The program will print 13 and 8 <br> S5: The program will print 13 and -2 <br> Exactly the following set of statement(s) is correct:</span>`,
       image: "",
-      options: [],
-      answer: "26",
-      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/302830/gate2019-cs-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
-                        2019 | C Programming</span></div>`
-    }
+      options: [
+        `<span style="display: inline;">S1 and S2</span>`,
+        `<span style="display: inline;">S1 and S4</span>`,
+        `<span style="display: inline;">S3</span>`,
+        `<span style="display: inline;">S1 and S5</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1834/gate2006-56-isro2009-58" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE 2009 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the program below: <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> # include &lt; stdio.h &gt;
+int fun(int n, int * f_p) {
+   int t, f;
+   if (n &lt;=1) {
+         *f_p =1;
+          return 1;
+   }
+   t = fun (n-1, f_p);
+   f = t+*f_p;
+   *f_p = t;
+   return f;
+}
+int main() {
+    int x = 15;
+    printf ("%d\\ n", fun(5,& x));
+    return 0;
+} </code></pre> The value printed is</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">6</span>`,
+        `<span style="display: inline;">8</span>`,
+        `<span style="display: inline;">14</span>`,
+        `<span style="display: inline;">15</span>`
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1310/gate2009-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE
+                        2009 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">What is the value of F(4) using the following procedure:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code>function F(K : integer)
+integer;
+begin
+if (k&lt;3) then F:=k else F:=F(k-1)*F(k-2)+F(k-3)
+end; </code></pre></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">6</span>`,
+        `<span style="display: inline;">7</span>`,
+        `<span style="display: inline;">8</span>`
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/50136/isro2008-69" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE
+                        2008 | C Programming</span></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;">Consider the following C function:<br> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code><code> int f(int n)
+{
+    static int i = 1;
+    if(n &gt;= 5) return n;
+    n = n+i;
+    i++;
+    return f(n);
+}</code></pre> <br> The value returned by f(1) is:</span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;">5</span>`,
+        `<span style="display: inline;">6</span>`,
+        `<span style="display: inline;">7</span>`,
+        `<span style="display: inline;">8</span>`
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1028/gate2004-31-isro2008-40" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: ISRO CSE
+                        2008 | C Programming</span></div>`
+    },
   ]
 });
