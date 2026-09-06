@@ -365,8 +365,8 @@ window.testSeries = [
     oldPrice: "₹500",
     price: "₹98 + GST",
     basePrice: 98,
-    brandLabel: "APEX WALLAH"
-    // comingSoon: true
+    brandLabel: "APEX WALLAH",
+    comingSoon: true
   },
   {
     id: "cse-gate-2026-pyq",
@@ -882,7 +882,7 @@ window.testSeries = [
     oldPrice: "₹500",
     price: "₹25 + GST",
     basePrice: 25,
-    brandLabel: "APEX EASY"
+    brandLabel: "APEX PYQ"
     // comingSoon: true
   },
 
