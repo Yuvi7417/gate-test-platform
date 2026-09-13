@@ -1,7 +1,19 @@
 import os
 import re
 import json
+import urllib.parse
+import requests
 from bs4 import BeautifulSoup
+
+def download_image(url, save_path):
+    try:
+        if not os.path.exists(save_path):
+            resp = requests.get(url, timeout=10)
+            if resp.status_code == 200:
+                with open(save_path, 'wb') as f:
+                    f.write(resp.content)
+    except Exception as e:
+        print(f"Failed to download {url}: {e}")
 
 def process_mathjax(soup_el):
     # Find all span.katex
@@ -15,10 +27,24 @@ def process_mathjax(soup_el):
     for noscript in soup_el.find_all('noscript'):
         noscript.decompose()
         
+    img_dir = r'h:\yuvraj dutt\images\twt-algo'
+    os.makedirs(img_dir, exist_ok=True)
+    
     for img in soup_el.find_all('img'):
-        src = img.get('src', '')
+        src = img.get('data-src') or img.get('src', '')
         if src:
+            if src.startswith('/'):
+                dl_url = "https://practicepaper.in" + src
+            elif not src.startswith('http'):
+                dl_url = "https://practicepaper.in/" + src
+            else:
+                dl_url = src
+                
             filename = src.split('/')[-1]
+            filename = urllib.parse.urlparse(filename).path
+            save_path = os.path.join(img_dir, filename)
+            download_image(dl_url, save_path)
+            
             img.attrs = {}
             img['src'] = f'images/twt-algo/{filename}'
             
@@ -32,11 +58,11 @@ def extract_questions():
         soup = BeautifulSoup(f, 'html.parser')
         
     q_texts = soup.find_all('div', class_='question_text')
-    
     questions = []
     
     for q_text in q_texts:
-        marks = int(q_text.get('data-value', 1))
+        marks_str = q_text.get('data-value', '1')
+        marks = int(marks_str) if marks_str.isdigit() else 1
         neg = 0.33 if marks == 1 else 0.66
         
         text_html = process_mathjax(q_text)
@@ -98,7 +124,6 @@ def extract_questions():
 
 def generate_js():
     questions = extract_questions()
-    
     lines = []
     for q in questions:
         lines.append("        {")
@@ -130,16 +155,15 @@ def generate_js():
 with open(r'h:\yuvraj dutt\js\demo.registry.src.js', 'r', encoding='utf-8') as f:
     js_content = f.read()
 
-target = r'(name:\s*"TWT-Algorithm\(Asymptotic Notation-I\)",\s*date:\s*"sep 08, 2026",\s*questions:\s*\[\s*)(\s*\])'
-
+target = r'(name:\s*"TWT-Algorithm\(Asymptotic Notation-I\)",\s*date:\s*"sep 08, 2026",\s*questions:\s*\[\s*)(.*?)(\s*\]\s*\n\}\);)'
 new_qs = generate_js()
 
 def replacer(match):
-    return match.group(1) + new_qs + "\n" + match.group(2)
+    return match.group(1) + match.group(2) + "\n" + new_qs + "\n" + match.group(3)
 
-new_js = re.sub(target, replacer, js_content)
+new_js = re.sub(target, replacer, js_content, flags=re.DOTALL)
 
 with open(r'h:\yuvraj dutt\js\demo.registry.src.js', 'w', encoding='utf-8') as f:
     f.write(new_js)
 
-print(f"Extracted {len(extract_questions())} questions and saved to demo.registry.src.js")
+print(f"Extracted and appended {len(extract_questions())} questions")

@@ -1,0 +1,325 @@
+<table class="answer_table" data-answered="true" data-value="1">
+ <colgroup>
+  <col class="option_index"/>
+ </colgroup>
+ <tbody>
+  <tr class="mtq_clickable" data-value="1" id="mtq_row-1-1-1">
+   <td class="option_lable">
+    <div class="option_index_number" id="mtq_button-1-1-1" style="display: none;">
+     A
+    </div>
+    <div alt="Correct" class="mtq_correct_marker" id="mtq_marker-1-1-1" style="display: block;">
+    </div>
+   </td>
+   <td class="answer_col">
+    <div class="option_data">
+     <span>
+      <span class="katex">
+       <span class="katex-mathml">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <semantics>
+          <mrow>
+           <mi mathvariant="normal">
+            Θ
+           </mi>
+           <mo stretchy="false">
+            (
+           </mo>
+           <mi>
+            n
+           </mi>
+           <mo stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <annotation encoding="application/x-tex">
+           \Theta(n)
+          </annotation>
+         </semantics>
+        </math>
+       </span>
+       <span aria-hidden="true" class="katex-html">
+        <span class="base">
+         <span class="strut" style="height: 1em; vertical-align: -0.25em;">
+         </span>
+         <span class="mord">
+          Θ
+         </span>
+         <span class="mopen">
+          (
+         </span>
+         <span class="mord mathnormal">
+          n
+         </span>
+         <span class="mclose">
+          )
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </div>
+   </td>
+  </tr>
+  <tr class="mtq_clickable" data-value="0" id="mtq_row-1-1-1">
+   <td class="option_lable">
+    <div class="option_index_number" id="mtq_button-1-1-1">
+     B
+    </div>
+    <div alt="Wrong" class="mtq_wrong_marker" id="mtq_marker-1-1-1">
+    </div>
+   </td>
+   <td class="answer_col">
+    <div class="option_data">
+     <span>
+      <span class="katex">
+       <span class="katex-mathml">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <semantics>
+          <mrow>
+           <mi mathvariant="normal">
+            Θ
+           </mi>
+           <mo stretchy="false">
+            (
+           </mo>
+           <mi>
+            log
+           </mi>
+           <mo>
+            ⁡
+           </mo>
+           <mo stretchy="false">
+            (
+           </mo>
+           <mi>
+            n
+           </mi>
+           <mo stretchy="false">
+            )
+           </mo>
+           <mo stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <annotation encoding="application/x-tex">
+           \Theta(\log (n))
+          </annotation>
+         </semantics>
+        </math>
+       </span>
+       <span aria-hidden="true" class="katex-html">
+        <span class="base">
+         <span class="strut" style="height: 1em; vertical-align: -0.25em;">
+         </span>
+         <span class="mord">
+          Θ
+         </span>
+         <span class="mopen">
+          (
+         </span>
+         <span class="mop">
+          lo
+          <span style="margin-right: 0.0139em;">
+           g
+          </span>
+         </span>
+         <span class="mopen">
+          (
+         </span>
+         <span class="mord mathnormal">
+          n
+         </span>
+         <span class="mclose">
+          ))
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </div>
+   </td>
+  </tr>
+  <tr class="mtq_clickable" data-value="0" id="mtq_row-1-1-1">
+   <td class="option_lable">
+    <div class="option_index_number" id="mtq_button-1-1-1" style="display: none;">
+     C
+    </div>
+    <div alt="Wrong" class="mtq_wrong_marker" id="mtq_marker-1-1-1" style="display: block;">
+    </div>
+   </td>
+   <td class="answer_col">
+    <div class="option_data">
+     <span>
+      <span class="katex">
+       <span class="katex-mathml">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <semantics>
+          <mrow>
+           <mi mathvariant="normal">
+            Θ
+           </mi>
+           <mo stretchy="false">
+            (
+           </mo>
+           <mi>
+            n
+           </mi>
+           <mi>
+            log
+           </mi>
+           <mo>
+            ⁡
+           </mo>
+           <mo stretchy="false">
+            (
+           </mo>
+           <mi>
+            n
+           </mi>
+           <mo stretchy="false">
+            )
+           </mo>
+           <mo stretchy="false">
+            )
+           </mo>
+          </mrow>
+          <annotation encoding="application/x-tex">
+           \Theta(n \log (n))
+          </annotation>
+         </semantics>
+        </math>
+       </span>
+       <span aria-hidden="true" class="katex-html">
+        <span class="base">
+         <span class="strut" style="height: 1em; vertical-align: -0.25em;">
+         </span>
+         <span class="mord">
+          Θ
+         </span>
+         <span class="mopen">
+          (
+         </span>
+         <span class="mord mathnormal">
+          n
+         </span>
+         <span class="mspace" style="margin-right: 0.1667em;">
+         </span>
+         <span class="mop">
+          lo
+          <span style="margin-right: 0.0139em;">
+           g
+          </span>
+         </span>
+         <span class="mopen">
+          (
+         </span>
+         <span class="mord mathnormal">
+          n
+         </span>
+         <span class="mclose">
+          ))
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </div>
+   </td>
+  </tr>
+  <tr class="mtq_clickable" data-value="0" id="mtq_row-1-1-1">
+   <td class="option_lable">
+    <div class="option_index_number" id="mtq_button-1-1-1">
+     D
+    </div>
+    <div alt="Wrong" class="mtq_wrong_marker" id="mtq_marker-1-1-1">
+    </div>
+   </td>
+   <td class="answer_col">
+    <div class="option_data">
+     <span>
+      <span class="katex">
+       <span class="katex-mathml">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+         <semantics>
+          <mrow>
+           <mi mathvariant="normal">
+            Θ
+           </mi>
+           <mrow>
+            <mo fence="true">
+             (
+            </mo>
+            <msup>
+             <mi>
+              n
+             </mi>
+             <mn>
+              2
+             </mn>
+            </msup>
+            <mo fence="true">
+             )
+            </mo>
+           </mrow>
+          </mrow>
+          <annotation encoding="application/x-tex">
+           \Theta\left(n^{2}\right)
+          </annotation>
+         </semantics>
+        </math>
+       </span>
+       <span aria-hidden="true" class="katex-html">
+        <span class="base">
+         <span class="strut" style="height: 1.2em; vertical-align: -0.35em;">
+         </span>
+         <span class="mord">
+          Θ
+         </span>
+         <span class="mspace" style="margin-right: 0.1667em;">
+         </span>
+         <span class="minner">
+          <span class="mopen delimcenter" style="top: 0em;">
+           <span class="delimsizing size1">
+            (
+           </span>
+          </span>
+          <span class="mord">
+           <span class="mord mathnormal">
+            n
+           </span>
+           <span class="msupsub">
+            <span class="vlist-t">
+             <span class="vlist-r">
+              <span class="vlist" style="height: 0.8141em;">
+               <span class="" style="top: -3.063em; margin-right: 0.05em;">
+                <span class="pstrut" style="height: 2.7em;">
+                </span>
+                <span class="sizing reset-size6 size3 mtight">
+                 <span class="mord mtight">
+                  <span class="mord mtight">
+                   2
+                  </span>
+                 </span>
+                </span>
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+          </span>
+          <span class="mclose delimcenter" style="top: 0em;">
+           <span class="delimsizing size1">
+            )
+           </span>
+          </span>
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </div>
+   </td>
+  </tr>
+ </tbody>
+</table>
