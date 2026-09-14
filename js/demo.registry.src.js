@@ -6533,6 +6533,103 @@ registerTest({
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1542/gate2013-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2013</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
         },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let W(n) and A(n) denote respectively, the worst case and average case running time of an algorithm executed on an input of size n. Which of the following is ALWAYS TRUE?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">A(n)=<span>\\( \\Omega \\)</span>(W(n))</span>`,
+                `<span style="display: inline;">A(n) =<span>\\( \\Theta \\)</span>(W(n))</span>`,
+                `<span style="display: inline;">A(n) =O(W(n))</span>`,
+                `<span style="display: inline;">A(n) = o(W(n))</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/50/gate2012-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a ;="" href="https://practicepaper.in/gate-cse/gate-cse-2012" none'="" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2012</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Which of the given options provides the increasing order of asymptotic complexityoffunctions f1, f2, f3 and f4?<br/><br/> <span>\\( f_{1}(n)=2^{n}; \\)</span> <br/> <span>\\( f_{2}(n)=n^{3/2}; \\)</span> <br/> <span>\\( f_{3}(n)=nlog_{2}n; \\)</span> <br/> <span>\\( f_{4}(n)=n^{log_{2}n} \\)</span></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( f_3, f_2, f_4, f_1 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( f_3, f_2, f_1, f_4 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( f_2, f_3, f_1, f_4 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( f_2, f_3, f_4, f_1 \\)</span></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2139/gate2011-37#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2011" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2011</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Two alternative packages A and B are available for processing a database having <span>\\( 10^{k} \\)</span> records. Package A requires 0.0001<span>\\( n^{2} \\)</span> time units and package B requires <span>\\( 10n \\log _{{10}} n \\)</span> time units to process n records. What is the smallest value of k for which package B will be preferred over A?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">12</span>`,
+                `<span style="display: inline;">10</span>`,
+                `<span style="display: inline;">6</span>`,
+                `<span style="display: inline;">5</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2185/gate2010-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2010</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Arrange the following functions in increasing asymptotic order:<br/> a. <span>\\( n^{1/3} \\)</span><br/> b. <span>\\( e^n \\)</span><br/> c. <span>\\( n^{7/4} \\)</span> <br/> d. <span>\\( n \\log^9n \\)</span><br/> e. <span>\\( 1.0000001^n \\)</span><br/></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">a, d, c, e, b</span>`,
+                `<span style="display: inline;">d, a, c, e, b</span>`,
+                `<span style="display: inline;">a, c, d, e, b</span>`,
+                `<span style="display: inline;">a, c, d, b, e</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3270/gate2008-it-10" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-it-2008" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE IT 2008</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following C functions: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>int f1(int n)
+{
+  if(n == 0 || n == 1)
+    return n;
+  else
+    return (2*f1(n-1) + 3*f1(n-2));
+}
+ 
+int f2(int n)
+{
+  int i;
+  int X[N], Y[N], Z[N] ;
+  X[0] = Y[0] = Z[0] = 0;
+  X[1] = 1; Y[1] = 2; Z[1] = 3;
+  for(i = 2; i &lt;= n; i++)
+  {
+    X[i] = Y[i-1] + Z[i-2];
+    Y[i] = 2*X[i];
+    Z[i] = 3*X[i];
+  }
+  return X[n] ;
+}</code></pre> The running time of f1(n) and f2(n) are</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta (n) \\; and \\; \\Theta (n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (2^{n}) \\; and \\; \\Theta (n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (n) \\; and \\; \\Theta (2^{n}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (2^{n}) \\; and \\; \\Theta (2^{n}) \\)</span></span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/495/gate2008-74#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2008" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2008</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+
 
 
 

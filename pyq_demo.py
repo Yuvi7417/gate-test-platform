@@ -190,7 +190,7 @@ target = r'(name:\s*"TWT-Algorithm\(Asymptotic Notation-II\)",\s*date:\s*"sep 08
 new_qs = generate_js()
 
 def replacer(match):
-    return match.group(1) + "\n" + new_qs + "\n" + match.group(3)
+    return match.group(1) + match.group(2) + "\n" + new_qs + "\n" + match.group(3)
 
 new_js = re.sub(target, replacer, js_content, flags=re.DOTALL)
 
