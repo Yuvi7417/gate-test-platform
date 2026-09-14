@@ -6402,11 +6402,9 @@ Asymptotic Notation of fun in terms of <span>\\( \\Theta \\)</span> notation is<
             type: "NAT",
             text: `<span style="display: inline;">The given diagram shows the flowchart for a recursive function A(n). Assume that all statements, except for the recursive calls,have O(1) Asymptotic Notation. If the worst case Asymptotic Notation of this functionis <span>\\( O(n^{\\alpha }) \\)</span>, then the least possible value(accurate upto two decimal positions) of <span>\\( \\alpha \\)</span> is .<br/><img src="images/twt-algo/q39.jpg"/></span>`,
             image: "",
-            options: [
-            ],
-            answer: "",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/39581/gate2016-2-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><span style="font-size:14px;">Source: GATE CSE 2016
-                        SET-2 | Algorithm</span></div>`
+            options: [],
+            answer: "2.2:2.4",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/39581/gate2016-2-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><br><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2016 SET-2</a></b>&nbsp;&nbsp;&nbsp;<b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank">Algorithm</a></b></div></div>`
         },
         {
             marks: 2,
