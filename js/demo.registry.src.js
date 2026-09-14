@@ -6207,7 +6207,27 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider functions Function 1 and Function 2 expressed in pseudocode as follows:<br/><img src="images/twt-algo/q44.jpg"/><br/>Let <span>\\( f_1(n) \\)</span> and <span>\\( f_2(n) \\)</span> denote the number of times the statement <span>\\( "x = x + 1" \\)</span> is executed in Function 1 and Function 2, respectively.<br/> Which of the following statements is/are TRUE?</span>`,
+            text: `<span style="display: inline;">Consider functions Function 1 and Function 2 expressed in pseudocode as follows:<br/>
+<table style="width: 100%; max-width: 500px; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;">
+    <tr>
+        <td style="width: 50%; padding-right: 5px; vertical-align: top;">
+<pre style="border: 1px solid #ccc; padding: 15px; background: #f8f9fa; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin: 0; line-height: 1.5;"><code>Function_1
+    while n &gt; 1 do
+        for i = 1 to n do
+            x = x + 1;
+        end for
+        n = \\( \\lfloor n/2 \\rfloor \\);
+    end while</code></pre>
+        </td>
+        <td style="width: 50%; padding-left: 5px; vertical-align: top;">
+<pre style="border: 1px solid #ccc; padding: 15px; background: #f8f9fa; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin: 0; line-height: 1.5;"><code>Function_2
+   for i = 1 to 100 * n do
+       x = x + 1;
+   end for</code></pre>
+        </td>
+    </tr>
+</table>
+<br/>Let <span>\\( f_1(n) \\)</span> and <span>\\( f_2(n) \\)</span> denote the number of times the statement <span>\\( "x = x + 1" \\)</span> is executed in Function 1 and Function 2, respectively.<br/> Which of the following statements is/are TRUE?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><span>\\( f_1(n)\\in \\Theta (f_2(n)) \\)</span></span>`,
@@ -6307,7 +6327,16 @@ for (i = 1; i &lt;= n; i *= 2)
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following C function <pre><code> int fun (int n) { int i, j; for (i = 1; i &lt; = n; i++) { for (j = 1 ; j &lt; n ; j+=i) { printf ("%d %d , i, j ) ; } } }</code></pre> Asymptotic Notation of fun in terms of <span>\\( \\theta \\)</span> notation is</span>`,
+            text: `<span style="display: inline;">Consider the following C function:
+<pre style="border: 1px solid #ccc; padding: 15px; background: #f8f9fa; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>int fun(int n) {
+    int i, j;
+    for (i = 1; i &lt;= n; i++) {
+        for (j = 1; j &lt; n; j += i) {
+            printf("%d %d", i, j);
+        }
+    }
+}</code></pre>
+Asymptotic Notation of fun in terms of <span>\\( \\Theta \\)</span> notation is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><span>\\( \\theta (n\\sqrt{n}) \\)</span></span>`,
