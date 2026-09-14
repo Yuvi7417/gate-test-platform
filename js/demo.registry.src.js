@@ -6432,11 +6432,6 @@ registerTest({
     name: "TWT-Algorithm(Asymptotic Notation-II)",
     date: "sep 08, 2026",
     questions: [
-
-    
-        
-        
-        
         {
             marks: 1,
             neg: 0.33,
@@ -6629,9 +6624,98 @@ int f2(int n)
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/495/gate2008-74#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2008" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2008</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
         },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following functions:<br/> <span>\\( f(n)=2^{n} \\)</span><br/> <span>\\( g(n)=n! \\)</span><br/> <span>\\( h(n)=n^{log n} \\)</span><br/><br/> Which of the following statements about the asymptotic behaviour of f(n), g(n), and h(n) is true?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">f (n) = O(g(n)); g(n) = O(h(n))</span>`,
+                `<span style="display: inline;">f (n) = <span>\\( \\Omega \\)</span>(g(n)); g(n) = O(h(n))</span>`,
+                `<span style="display: inline;">g(n) = O(f (n)); h(n) = O(f (n))</span>`,
+                `<span style="display: inline;">h(n) = O(f (n)); g(n) = <span>\\( \\Omega \\)</span>(f (n))</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/450/gate2008-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a ;="" href="https://practicepaper.in/gate-cse/gate-cse-2008" none'="" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2008</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">The time taken by binary search algorithm to search a key in a sorted array of n elements is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( O (\\log_2 \\: n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O (n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O (n \\log_2 \\: n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O (n^2) \\)</span></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/49626/isro2007-59" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/isro-cse-2007" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">ISRO CSE 2007</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Exponentiation is a heavily used operation in public key cryptography. Which of the following options is the tightest upper bound on the number of multiplications required to compute <span>\\( b^n \\bmod{m}, 0 \\leq b, n \\leq m \\)</span> ?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( O(\\log n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O(\\sqrt n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O\\Biggl (\\frac{n}{\\log n} \\Biggr ) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O(n) \\)</span></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3450/gate2007-it-17" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-it-2007" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE IT 2007</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following C code segment: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> int IsPrime(n)
+{
+  int i,n;
+  for(i=2;i&lt;=sqrt(n);i++)
+     if(n%i == 0)
+      {printf("Not Primen"); return 0;}
+  return 1;
+} </code></pre> Let T(n)denote the number of times the for loop is executed by the program on input n. Which of the following is TRUE?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( T(n)=O(\\sqrt{n}) \\; and \\; T(n)=\\Omega (\\sqrt{n}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( T(n)=O(n) \\; and \\; T(n)=\\Omega (\\sqrt{n}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( T(n)=O(\\sqrt{n}) \\; and \\; T(n)=\\Omega (1) \\)</span></span>`,
+                `<span style="display: inline;">None of the above</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1249/gate2007-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2007" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2007</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">What is the Asymptotic Notation of the following recursive function: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> int DoSomething (int n) 
+{
+  if (n &lt;= 2)
+    return 1;
+  else 
+    return (DoSomething (floor(sqrt(n))) + n);
+}</code></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta (n^{2}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (n log_{2} n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (log_{2} n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (log_{2} log_{2}n) \\)</span></span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1243/gate2007-45#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2007" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2007</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
 
 
 
 
-]
+
+    ]
 });
