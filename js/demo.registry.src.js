@@ -6216,7 +6216,7 @@ registerTest({
         for i = 1 to n do
             x = x + 1;
         end for
-        n = \\( \\lfloor n/2 \\rfloor \\);
+        n = ⌊n/2⌋;
     end while</code></pre>
         </td>
         <td style="width: 50%; padding-left: 5px; vertical-align: top;">
