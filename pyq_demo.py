@@ -186,7 +186,7 @@ def generate_js():
 with open(r'h:\yuvraj dutt\js\demo.registry.src.js', 'r', encoding='utf-8') as f:
     js_content = f.read()
 
-target = r'(name:\s*"TWT-Algorithm\(Asymptotic Notation-III\)",\s*date:\s*"sep 08, 2026",\s*questions:\s*\[\s*)(.*?)(\s*\]\s*\n\}\);)'
+target = r'(name:\s*"TWT-Algorithm\(Recurrence Relation-II\)",\s*date:\s*"sep 08, 2026",\s*questions:\s*\[\s*)(.*?)(\s*\]\s*\n\}\);)'
 new_qs = generate_js()
 
 def replacer(match):
