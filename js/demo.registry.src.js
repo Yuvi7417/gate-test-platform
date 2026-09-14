@@ -6426,3 +6426,115 @@ Asymptotic Notation of fun in terms of <span>\\( \\Theta \\)</span> notation is<
 
     ]
 });
+
+registerTest({
+    series: "cse-gate-2027",
+    name: "TWT-Algorithm(Asymptotic Notation-II)",
+    date: "sep 08, 2026",
+    questions: [
+
+    
+        
+        
+        
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">The time complexity of the following C function is (assume n&gt;0)<br/> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> int recursive (int n) {
+    if(n == 1)
+        return (1);
+    else
+        return (recursive (n-1) + recursive (n-1));
+}</code></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">O(n)</span>`,
+                `<span style="display: inline;"><span>\\( O(n \\log n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O\\left(n^{2}\\right) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( O\\left(2^{n}\\right) \\)</span></span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1077/gate2004-83-isro2015-40" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a ;="" href="https://practicepaper.in/gate-cse/isro-cse-2015" none'="" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">ISRO CSE 2015</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let <span>\\( f(n)=n \\)</span> and <span>\\( g(n)=n^{1+sin \\; n} \\)</span> where n is a positive integer. Which of the following statements is/are correct? <br/>I. <span>\\( f(n)=O(g(n)) \\)</span><br/> II. <span>\\( f(n)= \\Omega (g(n)) \\)</span></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Only I</span>`,
+                `<span style="display: inline;">Only II</span>`,
+                `<span style="display: inline;">Both I and II</span>`,
+                `<span style="display: inline;">Neither I nor II</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8501/gate2015-3-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2015 SET-3</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the equality <span>\\( \\sum_{i=0}^{n}i^{3}=X \\)</span> and the following choices for X <br/> I.<span>\\( \\Theta (n^{4}) \\)</span><br/>II. <span>\\( \\Theta (n^{5}) \\)</span><br/> III. <span>\\( O (n^{5}) \\)</span><br/> IV. <span>\\( \\Omega (n^{3}) \\)</span> <br/>The equality above remains correct if X is replaced by</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Only I</span>`,
+                `<span style="display: inline;">Only II</span>`,
+                `<span style="display: inline;">I or III or IV but not II</span>`,
+                `<span style="display: inline;">II or III or IV but not I</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8398/gate2015-3-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2015 SET-3</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following C function. <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>int fun1(int n){
+    int i,j,k,p,q=0;
+    for (i=1; i &lt; n; ++i) {
+        p=0;
+        for (j=n; j &gt; 1; j=j/2)
+              ++p;
+        for (k=1; k &lt; p; k=k*2) 
+             ++q;
+        }
+    return q;
+} </code></pre> Which one of the following most closely approximates the return value of the function fun1?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( n^{3} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( n(log n)^{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( n log n \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( n log(log n) \\)</span></span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8263/gate2015-1-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2015 SET-1</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following function: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> int unknown(int n){
+   int i, j, k=0;
+   for (i=n/2; i&lt;=n; i++)
+        for (j=2; j&lt;=n; j=j*2)
+             k = k + n/2;
+    return (k);
+} </code></pre> The return value of the function is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta (n^{2}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (n^{2}logn) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (n^{3}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta (n^{3}logn) \\)</span></span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1542/gate2013-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><b><a href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">GATE CSE 2013</a></b> <b><a href="https://practicepaper.in/gate-cse/algorithm" style="color:#2f6d1a; text-decoration:none" target="_blank" text-decoration:="">Algorithm</a></b></div></div>`
+        },
+
+
+
+]
+});
