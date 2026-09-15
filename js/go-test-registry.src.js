@@ -28721,3 +28721,896 @@ registerTest({
         },
     ]
 });
+
+registerTest({
+    series: "cs-gate-classes",
+    name: "MST - Algo + DS + C",
+    date: "sep 01, 2026",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Suppose numbers from \\( 1 \\) to \\( 1000 \\) are saved in a binary search tree and we want to find \\( 363. \\) Which of the following sequences cannot be the order of elements while reaching the searched value? </p> <p></p>`,
+            options: [
+                `\\( 925,202,911,240,912,245,363 \\)`,
+                `\\( 924,220,911,244,898,258,362,363 \\)`,
+                `\\( 2,252,401,398,330,344,397,363 \\)`,
+                `\\( 2,399,387,219,266,382,381,278,363 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>You are given a minimum heap with \\( 31 \\) elements. A researcher performs a uniform walk on this heap. Given any node, with probability \\( 0.5 \\) she goes to the left. Starting from the root node, what is the probability that she will land up on a maximum element in the heap? Assume all elements are distinct. </p> <p></p>`,
+            options: [
+                `\\( 1 / 31 \\)`,
+                `\\( 1 / 32 \\)`,
+                `\\( 1 / 16 \\)`,
+                `\\( 1 / 15 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Assume that any \\( \\text{N} \\)-bit positive integer \\( x \\) is stored as a linked list of bits so that the first element of the list is the least significant bit. For example, \\( x=14=1110_2 \\) is stored as the linked list \\( (0,1,1,1) \\) of size \\( \\text{N}=4 \\).<br/> For this data structure, the operation that replaces \\( x \\) by \\( \\left\\lfloor\\dfrac{x}{8}\\right\\rfloor \\) can be done in </p> <p></p>`,
+            options: [
+                `\\( \\Theta(1) \\) steps`,
+                `\\( \\Theta(\\log n) \\) steps`,
+                `\\( \\Theta(n) \\) steps`,
+                `\\( \\Theta(n \\log n) \\) steps`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>For which of the following functions \\( f(n) \\) and \\( g(n), \\) it holds \\( :f(n)=O(g(n)). \\) Every \\( \\log \\) below is base \\( 2. \\) </p> <p></p>`,
+            options: [
+                `\\( f(n)=2^{k \\log n}\\;, \\quad g(n)=n^k \\)`,
+                `\\( f(n)=2^n\\;, \\quad g(n)=2^{2 n} \\)`,
+                `\\( f(n)=\\left\\{\\begin{array}{ll}4^n & \\text { if } n<2^{1000} \\\\ 2^{1000}\\; n^2 & \\text { if } n \\geq 2^{1000}\\end{array}\\;, \\quad g(n)=\\dfrac{n^2}{2^{1000}}\\right. \\)`,
+                `\\( f(n)=2^{\\sqrt{\\log n}}\\;, \\quad g(n)= (\\log n)^{100} \\)`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the following connected weighted graph.</p> <p style="text-align:center"><img alt="" src="images/MST4/q5_1.png" style="max-width: 100%;"/></p> <p><br/> Suppose we add a new edge \\( \\mathrm{H}-\\mathrm{C} \\) to the above graph. </p> <p>For what values of \\( \\mathrm{H}-\\mathrm{C} \\) does this new edge belong to the Minimum Spanning Tree (MST)? </p> <p></p>`,
+            options: [
+                `\\( 125 \\)`,
+                `\\( 100 \\)`,
+                `\\( 135 \\)`,
+                `\\( 90 \\)`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Let \\( \\text{N} \\) be an arbitrary natural number with \\( \\text{N}>1 \\). Which one of the following statements is false? </p> <p></p>`,
+            options: [
+                `A binary tree of height \\( \\text{N} \\) may have \\( \\text{N}+1 \\) nodes.`,
+                `A binary tree of height \\( \\text{N} \\) may have \\( \\text{N}^2 \\) nodes.`,
+                `A binary tree of height \\( \\text{N} \\) may have \\( 2^\\text{N} \\) nodes.`,
+                `A binary tree of height \\( \\text{N} \\) may have \\( \\text{N}! \\) nodes.`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Assume a set \\( \\text{A} \\) of arrays of size \\( \\text{N} \\) all of which are sorted already. Which one of the following statement is correct assuming there are 10 such arrays in the set? </p> <p></p>`,
+            options: [
+                `Mergesort on elements of \\( \\text{A} \\) may take a runtime in \\( \\Omega\\left(\\text{N}^2\\right) \\).`,
+                `Insertion Sort on elements of \\( \\text{A} \\) may take a runtime in \\( \\Omega\\left(\\text{N}^2\\right) \\).`,
+                `Heapsort on elements of \\( \\text{A} \\) may take a runtime in \\( \\Omega\\left(\\text{N}^2\\right) \\).`,
+                `None of the above.`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which statement on Mergesort is correct?</p> <p></p>`,
+            options: [
+                `There are arrays of size \\( \\text{N} \\) such that Mergesort runs in \\( \\Theta\\left(\\text{N}^2\\right) \\).`,
+                `There are arrays of size \\( \\text{N} \\) such that Mergesort runs in \\( o\\left(\\text{N}^2\\right) \\).`,
+                `There are arrays of size \\( \\text{N} \\) such that Mergesort runs in \\( O(\\text{N}) \\).`,
+                `There are arrays of size \\( \\text{N} \\) such that Mergesort runs in \\( \\Omega\\left(\\text{N}^2\\right) \\).`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Some sorting algorithms require extra space, apart from the space needed for the original array that needs to be sorted. Which one of the following statements on the space usage of sorting algorithms is correct?</p> <p></p>`,
+            options: [
+                `Heapsort for sorting an array of size \\( \\text{N} \\) requires an amount of extra space proportional to \\( \\text{N} \\).`,
+                `Insertion Sort for sorting an array of size \\( \\text{N} \\) requires an amount of extra space proportional to \\( \\text{N} \\).`,
+                `Mergesort for sorting an array of size \\( \\text{N} \\) requires an amount of extra space proportional to \\( \\text{N} \\).`,
+                `Quicksort for sorting an array of size \\( \\text{N} \\) requires an amount of extra space proportional to \\( \\text{N} \\).`,
+            ],
+            answer: ["C"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Assume that you are given a chain of matrices \\( <\\text{A}_1 \\text{A}_2 \\text{A}_3 \\text{A}_4>, \\) with dimensions \\( 2 \\times 5,5 \\times 4,4 \\times 2 \\) and \\( 2 \\times 4 \\) respectively. Compute the optimal number of multiplications required to calculate the chain product. </p>`,
+            options: [],
+            answer: 72,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Consider the given two statements.</p> <ul> <li> \\( \\mathrm{S} 1: \\) Depth-first search is asymptotically faster than breadth-first search. </li> <li> \\( \\mathrm{S} 2: \\) Deleting an element from a binary search tree takes \\( \\mathrm{O}(\\mathrm{lg} n) \\) time in the worst case. </li> </ul> <p>Which of the following is correct about \\( \\mathrm{S} 1 \\) and \\( \\mathrm{S} 2? \\) </p> <p></p>`,
+            options: [
+                `\\( \\mathrm{S} 1 \\) is correct but \\( \\mathrm{S} 2 \\) is wrong.`,
+                `\\( \\mathrm{S} 2 \\) is correct but \\( \\mathrm{S} 1 \\) is wrong.`,
+                `Both are correct`,
+                `Both are False`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the following graph \\(  G  \\).<br/><br/>Traversal trees \\(  T1  \\) and \\(  T2  \\) (shown below) are obtained using either DFS or BFS, starting from the node <span style="font-size: 150%;"> \\(  s  \\) </span>. </p> <p style="text-align:center"><img alt="Graph G, Traversal Trees T1 and T2" src="images/MST4/q12_1.png" style="max-width: 100%;" width="750"/></p> <p>Which of the following statements is/are correct?</p> <p></p>`,
+            options: [
+                `\\(  T1  \\) is possible only using DFS on \\(  G  \\)`,
+                `\\(  T1  \\) is possible using DFS or BFS on \\(  G  \\)`,
+                `\\(  T2  \\) is possible only using BFS on \\(  G  \\)`,
+                `\\(  T2  \\) is possible using DFS or BFS on \\(  G  \\)`,
+            ],
+            answer: ["A", "C"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Consider a min-heap with \\( 6 \\) distinct elements. How many positions can be taken by \\( 3^{\\text{rd}} \\) minimum element? </p> <p style="text-align:center"><img alt="" height="244" src="images/MST4/q13_1.png" style="max-width: 100%;" width="348"/></p> <p></p>`,
+            options: [
+                `\\( 2 \\)`,
+                `\\( 3 \\)`,
+                `\\( 4 \\)`,
+                `\\( 5 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following are greedy algorithms?</p> <p></p>`,
+            options: [
+                `Prim’s algorithm for MST.`,
+                `Dijkstra’s algorithm for shortest paths.`,
+                `Bellman-Ford algorithm for shortest paths.`,
+                `Finding the longest common subsequence of two sequences.`,
+            ],
+            answer: ["A", "B"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following is/are TRUE ?</p> <p></p>`,
+            options: [
+                `If we perform DFS on an undirected graph, there are no cross edges.`,
+                `If the DFS tree has no back edges, then there are no cycles in the graph.`,
+                `Dijkstra’s algorithm will always work correctly on any graph that has at most two negative edges.`,
+                `Dijkstra’s algorithm will always work correctly on any graph with negative edges but no negative cycle.`,
+            ],
+            answer: ["A", "B"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Suppose we want to iteratively evaluate the following recurrence:<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\text { What }(i, j)=\\left\\{\\begin{array}{cl} 0 & \\text { if } i>n \\text { or } j<0 \\\\ \\max \\left\\{\\begin{array}{c} \\text { What }(i, j-1) \\\\ \\text { What }(i+1, j) \\\\ A[i] \\cdot A[j]+\\text { What }(i+1, j-1)&nbsp; \\end{array}\\right\\} & \\text { otherwise } \\end{array}\\right. &nbsp;  $$<br/> Which of the following is/are true about filling table What \\( [0 \\ldots n, 0 \\ldots n] \\) in a bottom-up fashion? </p> <p></p>`,
+            options: [
+                `We can fill the table in \\( O\\left(n^2\\right) \\) time`,
+                `We can fill the table by decreasing \\( i \\) in the outer loop and decreasing \\( j \\) in the inner loop.`,
+                `We can fill the table by increasing \\( i \\) in the outer loop and increasing \\( j \\) in the inner loop.`,
+                `We can fill the table by decreasing \\( i \\) in the outer loop and increasing \\( j \\) in the inner loop.`,
+            ],
+            answer: ["A", "D"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Consider the following C program given below.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="pln">main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">;</span></li><li class="L3"><span class="pln"> </span><span class="kwd">switch</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln"> a</span><span class="pun">--;</span></li><li class="L5"><span class="pln"> </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">4</span><span class="pun">:</span></li><li class="L6"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Science "</span><span class="pun">);</span></li><li class="L7"><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L8"><span class="pln"> </span><span class="kwd">default</span><span class="pun">:</span></li><li class="L9"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Technology "</span><span class="pun">);</span></li><li class="L0"><span class="pln"> </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span></li><li class="L1"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Knowledge "</span><span class="pun">);</span></li><li class="L2"><span class="pln"> </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">2</span><span class="pun">:</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Philosophy"</span><span class="pun">);</span></li><li class="L4"><span class="pln"> </span><span class="pun">}</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p>What will be the output of the program?</p> <p></p>`,
+            options: [
+                `Science`,
+                `Knowledge Philosophy`,
+                `Technology Knowledge Philosophy`,
+                `Science Knowledge`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p></p> <p>Consider the following declaration of pointer variable \\( p. \\) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p>If the initial value of \\( p \\) is \\( 1000, \\) then what will be the value of \\( p+1? \\) </p> <p>It is given that system has \\( 8 \\) bytes of address size and \\( 4 \\) bytes of integer size. </p> <p></p>`,
+            options: [
+                `<span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">10</span><span class="pun">][</span><span class="lit">5</span><span class="pun">];</span>`,
+            ],
+            answer: 1200,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Let arrays OneD and TwoD are declared as follows as:</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="typ">OneD</span><span class="pun">[</span><span class="lit">10</span><span class="pun">];</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> </span><span class="typ">TwoD</span><span class="pun">[</span><span class="lit">4</span><span class="pun">][</span><span class="lit">5</span><span class="pun">];</span></li></ol></pre> <p>Which of the following is/are valid syntax to pass OneD and TwoD to some function \\( \\textsf{fun()}? \\) </p> <p>A syntax is valid if it gets compiled without any warning or error.</p> <p></p>`,
+            options: [
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">OneD</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">OneD</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">OneD</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">OneD</span><span class="pun">[</span><span class="lit">5</span><span class="pun">]);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">TwoD</span><span class="pun">[][</span><span class="lit">5</span><span class="pun">]);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="typ">TwoD</span><span class="pun">[][</span><span class="lit">5</span><span class="pun">]);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="typ">TwoD</span><span class="pun">);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="typ">TwoD</span><span class="pun">);</span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="pln"> </span><span class="lit">255</span><span class="pun">;</span></li><li class="L4"><span class="pln"> </span><span class="kwd">short</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">s</span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">short</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*)&amp;</span><span class="pln">i</span><span class="pun">;</span></li><li class="L5"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d\\n"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">s</span><span class="pun">);</span></li><li class="L6"><span class="pun">}</span></li></ol></pre> <p>What will be the output of the above program in little-endian and big-endian, respectively?</p> <p> \\( (65280\\text{ is } 255\\times2^8) \\) </p> <p></p>`,
+            options: [
+                `\\( 255,\\; 0 \\)`,
+                `\\( 65280,\\; 0 \\)`,
+                `\\( 0,\\;0 \\)`,
+                `\\( 0,\\; 65280 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p></p> <p>What will be the number of recursive calls for \\( \\textsf{mystery(5)} \\) including the first call? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p></p>`,
+            options: [
+                `<span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>`,
+                `<span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>`,
+                `<span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">2</span><span class="pun">);</span>`,
+                `<span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span>`,
+                `<span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span>`,
+                `<span class="pun">}</span>`,
+            ],
+            answer: 15,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>In which of the following case(s) character array must end with null char?</p> <p></p>`,
+            options: [
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GATE"</span><span class="pun">;</span></li></ol></pre>`,
+                `<span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GATE"</span><span class="pun">;</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">'2'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'0'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'3'</span><span class="pun">};</span></li></ol></pre>`,
+                `<span class="kwd">char</span><span class="pln"> c</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="str">'2'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'0'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'2'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'3'</span><span class="pun">};</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GATE"</span><span class="pun">;</span></li></ol></pre>`,
+                `<span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"GATE"</span><span class="pun">;</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">16</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"2023"</span><span class="pun">;</span></li></ol></pre>`,
+                `<span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">16</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"2023"</span><span class="pun">;</span>`,
+            ],
+            answer: ["A", "D"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the following C code fragement -</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln"> </span><span class="kwd">char</span><span class="pln"> t</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"abcdefghij"</span><span class="pun">;</span></li><li class="L4"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p </span><span class="pun">=</span><span class="pln"> t</span><span class="pun">;</span></li><li class="L5"><span class="pln"> p</span><span class="pun">+=</span><span class="lit">2</span><span class="pun">;</span></li><li class="L6"><span class="pln"> </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*)</span><span class="pln">p</span><span class="pun">;</span></li><li class="L7"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%c"</span><span class="pun">,</span><span class="pln"> </span><span class="pun">*</span><span class="pln">c</span><span class="pun">);</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p>Which of the following is/are correct?</p> <p></p>`,
+            options: [
+                `The output of the program in the little-endian system is \\( \\textsf{“ i&nbsp;"} \\) (without quotes).`,
+                `The output of the program in the big-endian system is \\( \\textsf{“ i&nbsp;"} \\) (without quotes).`,
+                `The output of the program in the big-endian system is \\( \\textsf{“ c&nbsp;"} \\) (without quotes).`,
+                `The output of the program in the little-endian system is \\( \\textsf{“ c&nbsp;"} \\) (without quotes).`,
+            ],
+            answer: ["A", "B"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Assume that an int variable takes \\( 4 \\) bytes and a char variable takes \\( 1 \\) byte. What is the output of the code below? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[]={</span><span class="lit">10</span><span class="pun">,</span><span class="lit">20</span><span class="pun">,</span><span class="lit">30</span><span class="pun">,</span><span class="lit">40</span><span class="pun">,</span><span class="lit">50</span><span class="pun">,</span><span class="lit">60</span><span class="pun">};</span></li><li class="L3"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr1</span><span class="pun">=</span><span class="pln">arr</span><span class="pun">;</span></li><li class="L4"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr2</span><span class="pun">=</span><span class="pln">arr</span><span class="pun">+</span><span class="lit">5</span><span class="pun">;</span></li><li class="L5"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Number of elements between two pointer are: %d."</span><span class="pun">,</span><span class="pln"> </span></li><li class="L6"><span class="pln"> </span><span class="pun">(</span><span class="pln">ptr2 </span><span class="pun">-</span><span class="pln"> ptr1</span><span class="pun">));</span></li><li class="L7"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"Number of elements between two pointer are: %d."</span><span class="pun">,</span><span class="pln"> </span></li><li class="L8"><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*)</span><span class="pln">ptr2 </span><span class="pun">-</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pun">*)</span><span class="pln">ptr1</span><span class="pun">);</span></li><li class="L9"><span class="pun">}</span></li></ol></pre> <p></p>`,
+            options: [
+                `Number of elements between two pointer are: \\( 5 \\). Number of bytes between two pointers are: \\( 20 \\)`,
+                `Number of elements between two pointer are: \\( 20. \\) Number of bytes between two pointers are: \\( 20 \\)`,
+                `Number of elements between two pointer are: \\( 5. \\) Number of bytes between two pointers are: \\( 5 \\)`,
+                `Compile time error`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following function declaration can be passed to the following array?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> myArray</span><span class="pun">[</span><span class="lit">3</span><span class="pun">][</span><span class="lit">4</span><span class="pun">];</span></li></ol></pre> <p></p>`,
+            options: [
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][</span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> a</span><span class="pun">[][</span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">][],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span>`,
+                `<pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[][]</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
+                `<span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[][]</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span>`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Heaps are usually implemented using arrays. Which of the following statements is correct about the removal of the element?<br/> The removal of an element with known array index from an array of size \\( \\mathrm{N} \\) requires a time of- (array index could be arbitrary. Not necessarily delete-min) </p> <p></p>`,
+            options: [
+                `\\( \\Theta(\\log \\text{N}) \\)`,
+                `\\( \\Theta(\\text{N}) \\)`,
+                `\\( \\Theta(1) \\)`,
+                `\\( \\Theta\\left(\\mathrm{N}^2 \\right) \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>An algorithm admits all \\( 2^n \\) vectors of \\( n \\) bits as possible inputs. On \\( 2^n-1 \\) of these inputs the cost of the algorithm is \\( \\Theta\\left(n^2\\right) \\), and on the remaining one the cost is \\( \\Theta\\left(n^4\\right) \\). Therefore, its worst-case cost is \\( \\Theta\\left(n^4\\right) \\) and its best-case cost is \\( \\Theta\\left(n^2\\right) \\). What is its average-case cost when the input is chosen uniformly at random (so each input has probability \\( \\left.1 / 2^n\\right)? \\) </p> <p></p>`,
+            options: [
+                `\\( \\theta\\left(n^ 2\\right) \\)`,
+                `\\( \\theta\\left(\\mathrm{n}^ 3\\right) \\)`,
+                `\\( \\theta\\left(\\mathrm{n}^ 4\\right) \\)`,
+                `\\( \\theta\\left(2^ n\\right) \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>What is the sum of the following numbers? <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  50+53+56+59+\\ldots+3080+3083+3086=?  $$ </p>`,
+            options: [],
+            answer: 1588384,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>To print all keys of a \\( \\text{BST} \\) in decreasing order, we use the following traversal order </p> <p></p>`,
+            options: [
+                `Preorder traversal`,
+                `Postorder traversal`,
+                `Inorder traversal`,
+                `None of the above`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Suppose you have a five element integer array \\( \\mathrm{A}[0 \\ldots 4] \\) sorted in non-decreasing order, with \\( \\mathrm{A}[0]=1 \\) and \\( \\mathrm{A}[4]=5 \\). We search for key \\( \\mathrm{K}=2 \\). </p> <p>How many possible set of values are there for elements \\( \\mathrm{A[1],&nbsp; A[2],&nbsp; A[3]} \\) such that binary search terminates immediately after one comparison? </p> <p></p>`,
+            options: [
+                `\\( 1 \\)`,
+                `\\( 2 \\)`,
+                `\\( 4 \\)`,
+                `\\( 8 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p></p> <p>The weight of the unique minimum weight spanning tree (MWST) is \\( 60. \\) The weight of edges which forms MWST is given in the following weighted, undirected graph. What will be the minimum total weight of missing edges, i.e., \\( w+x+y+z=? \\). Assume all edge weights are distinct. </p> <p style="text-align:center"><img alt="" height="265" src="images/MST4/q31_1.png" style="max-width: 100%;" width="369"/></p> <p> </p> <p></p>`,
+            options: [],
+            answer: 59,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Consider a Job scheduling problem with deadlines. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{|l|l|l|l|l|l|l|l|} \\hline \\text{Jobs} & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\ \\hline \\text{Profit} & 8 & 6 & 5 & \\text{X} & 8 & 3 & 4 \\\\ \\hline \\text{Deadline} & 6 & 4 & 5 & 6 & 3 & \\text{Y} & 1 \\\\ \\hline \\end{array}  $$ If \\( \\text{Y} \\) is the minimum value such that Job \\( 6 \\) get scheduled and \\( \\text{X} \\) is the maximum value possible so that Job \\( 4 \\) will never get scheduled, then the value of \\( 2^{\\text{X+Y}} \\) is ________ </p>`,
+            options: [],
+            answer: 16,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Consider the task scheduling problem where the total profit earned is \\( 60. \\) How many non-zero and non-negative values are possible for \\( \\text{X} \\) such that \\( \\text{X} \\) is not a part of the profit earned? <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|l|l|l|l|l|l|l|l|l|} \\hline \\text{Tasks} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\ \\hline \\text{Profit} & 11 & 16 & 6 & \\text{X} & 5 & 11 & 5 & 6 \\\\ \\hline \\text{Deadline} & 4 & 5 & 2 & 5 & 2 & 6 & 4 & 7 \\\\ \\hline \\end{array}  $$ </p>`,
+            options: [],
+            answer: 4,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Consider the time table at the railway station with arrival and departure times given below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{|c|c|c|} \\hline \\textbf{Rail} & \\textbf{Arrival} & \\textbf{Departure} \\\\ \\hline \\text{Rail A} & 0700 \\;\\text{hrs} & 0730 \\;\\text{hrs} \\\\ \\hline \\text{Rail B} & 0715 \\;\\text{hrs} & 1100 \\;\\text{hrs} \\\\ \\hline \\text{Rail C} & 0830 \\;\\text{hrs} & 0900 \\;\\text{hrs} \\\\ \\hline \\text{Rail D} & 0845 \\;\\text{hrs} & 0945 \\;\\text{hrs} \\\\ \\hline \\end{array}  $$ How many the minimum number of platforms are needed so that all the trains can be accommodated as per their schedule? </p>`,
+            options: [],
+            answer: 3,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Consider the recurrence relation given below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  T(n)=2 T(n / 4)+n^\\alpha  $$ If the time complexity of given relation is \\( \\theta\\left(n^\\alpha\\right) \\), where \\( 0<\\alpha<1 \\), then what is the non-zero minimum value possible for \\( \\alpha?( \\)corrected to decimal places) </p>`,
+            options: [],
+            answer: 0.51,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Consider a weighted, undirected graph with positive edge weights. Let \\( (u, v) \\) be an edge in the graph. The shortest path from the source vertex \\( s \\) to \\( u \\) has weight \\( 45 \\) and the shortest path from \\( s \\) to \\( v \\) has weight \\( 60. \\) Which of the following statements is always TRUE? </p> <p></p>`,
+            options: [
+                `weight \\( (u, v)<15 \\)`,
+                `weight \\( (u, v)>15 \\)`,
+                `weight \\( (u, v) \\geq 15 \\)`,
+                `weight \\( (u, v) \\leq 15 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>An \\( m \\times n \\) matrix is called as Young tableaus \\( \\text{(Y)} \\), if it satisfies the following properties: </p> <ol> <li>Entries of each row are in sorted order from left to right.</li> <li>Entries of each column are in sorted order from top to bottom.</li> <li>Entries may be \\( \\infty \\), which is treated as non-existent elements. </li> </ol> <p>Consider a \\( 4 \\times 4 \\) Young Tableau \\( \\text{(Y)} \\) given below.<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{cccc} 3 & 4 & 7 & \\infty&nbsp;\\\\ 5 & x & 8 & \\infty&nbsp;\\\\ y & 15 & \\infty & \\infty&nbsp;\\\\ 11 & \\infty & \\infty & \\infty&nbsp;\\\\ \\end{array}  $$<br/> If all the entries of integer values in \\( \\mathrm{Y} \\) is distinct, then which of the following pair of \\( \\langle x, y\\rangle \\) can be possible? </p> <p></p>`,
+            options: [
+                `\\( 6,9 \\)`,
+                `\\( 6,10 \\)`,
+                `\\( 9,13 \\)`,
+                `\\( 9,11 \\)`,
+            ],
+            answer: ["A", "B"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p style="text-align:center"><img alt="" src="images/MST4/q38_1.png" style="max-width: 100%;"/></p> <p><br/> What will be the inorder successor of \\( 10? \\) </p> <p></p>`,
+            options: [
+                `\\( 1 \\)`,
+                `\\( 15 \\)`,
+                `\\( 8 \\)`,
+                `Does not exist or it is NULL`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Consider two binary min heaps containing \\( \\left(2^ \\mathrm{L}-1\\right) \\) and \\( \\left(2^ \\mathrm{R}-1\\right) \\) nodes. We want to build a new min heap containing all elements of both heaps. It is known that either \\( \\text{L = R} \\) or \\( \\text{|L - R|} = 1. \\)<br/> <br/> Do not count the time to copy two heap elements into a single array. </p> <p></p>`,
+            options: [
+                `The most efficient algorithm will take \\( \\mathrm{O}(\\log (n)) \\) where \\( n \\) is the size of the new heap.`,
+                `The most efficient algorithm will take \\( \\mathrm{O}(n) \\) where \\( n \\) is the size of the new heap.`,
+                `The most efficient algorithm will take \\( \\mathrm{O}(\\mathrm{L}) \\) only if \\( \\mathrm{L}=\\mathrm{R} \\) otherwise it will take \\( \\mathrm{O}(n). \\)`,
+                `The most efficient algorithm will take \\( \\mathrm{O}\\text{(R)} \\) only if \\( \\text{|L – R|} = 1 \\), otherwise it will take \\( \\mathrm{O}(n). \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p></p> <p>Let \\( \\textsf{Q} \\) be a Queue. Enqueue and Dequeue are usual Queue operations to add and delete element respectively. \\( \\textsf{Q.enqueue(x)} \\) adds an element \\( \\textsf{x} \\) to the queue. \\( \\textsf{Q.dequeue()} \\) performs a dequeue operation on the queue and returns the value that gets dequeued.<br/> Consider the following segment of code: </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p><br/> What will be the value of the variable count, when the above segment of code completes its execution? </p> <p></p>`,
+            options: [
+                `<span class="pln">Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span>`,
+                `<span class="kwd">int</span><span class="pln"> count</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span>`,
+                `<span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span>`,
+                `<span class="pln"> count</span><span class="pun">=</span><span class="pln">count</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span>`,
+                `<span class="pln"> x </span><span class="pun">=</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span>`,
+                `<span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">2</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span>`,
+                `<span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">4</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span>`,
+                `<span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">x </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">32</span><span class="pun">);</span>`,
+            ],
+            answer: 12,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p> \\( 9,27,50,15,2,21, \\) and \\( 36 \\) are inserted in an AVL tree. What will be the root of the tree after all insertions? </p> <p></p>`,
+            options: [
+                `\\( 27 \\)`,
+                `\\( 9 \\)`,
+                `\\( 15 \\)`,
+                `\\( 21 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following(s) is/are TRUE-</p> <p></p>`,
+            options: [
+                `A complete binary tree satisfies the \\( \\mathrm{AVL} \\) balance condition at each node`,
+                `A full binary tree satisfies the \\( \\mathrm{AVL} \\) balance condition at each node`,
+                `Insertion in \\( \\mathrm{AVL} \\) tree requires \\( \\mathrm{O}(\\log n) \\) rotations`,
+                `Deletion in \\( \\mathrm{AVL} \\) tree requires \\( \\mathrm{O}(1) \\) rotations`,
+            ],
+            answer: "A;C",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<p>Let \\( a \\) be minimum number of nodes in \\( \\mathrm{AVL} \\) tree of height \\( 6 \\) and \\( b \\) be maximum number of nodes in \\( \\mathrm{AVL} \\) tree of height \\( 6 \\) then value of \\( a+10 b \\) is ________ </p>`,
+            options: [],
+            answer: 1303,
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which one of the following(s) is/are true about inserting values in BST?</p> <p></p>`,
+            options: [
+                `Time complexity to Insert \\( \\mathrm{N} \\) values into an initially empty Binary Search Tree is \\( \\mathrm{O}\\left(\\mathrm{N}^ 2\\right) \\)`,
+                `Time complexity to Insert \\( \\mathrm{N} \\) values into an initially empty Binary Search Tree is \\( \\mathrm{O}(\\mathrm{N}\\log \\text{N}) \\)`,
+                `Time complexity to Insert a value into a Binary Search Tree of size \\( \\mathrm{N}, \\) where the value you are inserting is the median value when compared to values currently in the tree is \\( \\mathrm{O}(\\log \\mathrm{N}) \\)`,
+                `Time complexity to Insert a value into a Binary Search Tree of size \\( \\mathrm{N}, \\) where the value you are inserting is the median value when compared to values currently in the tree is \\( \\mathrm{O}(\\mathrm{N}) \\)`,
+            ],
+            answer: ["A", "D"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following is/are False about time complexities of Stack and Queue?</p> <p></p>`,
+            options: [
+                `Dequeue from a queue containing \\( \\mathrm{N} \\) elements implemented as a circular array takes \\( \\Theta(\\mathrm{N}) \\) time`,
+                `An employee realises that all of his tasks in the stack (implemented using an array) are not required to be done and he decides to empty up the stack and push a new task. He will take \\( \\Theta(\\mathrm{N}) \\) time for this process. Where \\( \\mathrm{N} \\) is the number of old tasks the stack contains.`,
+                `Reversing a queue using another queue can be done in \\( \\mathrm{O}(\\mathrm{N}) \\) time. (Recursion not allowed)`,
+                `Reversing a queue using another two queues can be done in \\( \\mathrm{O}(\\mathrm{N}) \\) time. (Recursion not allowed)`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Consider the following function that takes the root of the binary tree. Which of the following is true about this function?</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> complex</span><span class="pun">(</span><span class="typ">BTNode</span><span class="pln"> </span><span class="pun">*</span><span class="pln">r</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="pln">r</span><span class="pun">)</span><span class="pln"> </span><span class="pun">?</span><span class="pln"> </span><span class="pun">(</span><span class="pln">r</span><span class="pun">-&gt;</span><span class="pln">left </span><span class="pun">||</span><span class="pln"> r</span><span class="pun">-&gt;</span><span class="pln">right</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> complex</span><span class="pun">(</span><span class="pln">r</span><span class="pun">-&gt;</span><span class="pln">left</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> complex</span><span class="pun">(</span><span class="pln">r</span><span class="pun">-&gt;</span><span class="pln">right</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li></ol></pre> <p></p>`,
+            options: [
+                `Computes the number of all nodes in the Binary tree`,
+                `Computes the number of all internal nodes in the Binary tree`,
+                `Computes the number of all leaf nodes in the Binary tree`,
+                `Always returns \\( 0 \\) or \\( 1 \\) depending root is null or not null`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>We consider log to the base of \\( 2. \\) Thus for \\( \\log \\mathrm{N} \\) to be a natural number, \\( \\mathrm{N} \\) must be a power of \\( 2. \\) Let \\( \\mathrm{N} \\) be an arbitrary number with \\( \\mathrm{N}>1 \\). Which one of the following statements is true? </p> <p></p>`,
+            options: [
+                `A binary tree of height \\( \\log \\mathrm{N} \\) can have exactly \\( \\mathrm{N}+1 \\) Nodes`,
+                `A binary tree of height \\( \\log \\mathrm{N} \\) can have exactly \\( \\log \\mathrm{N} \\) Nodes`,
+                `A binary tree of height \\( \\log \\text{N} \\) can have exactly \\( \\text{N}&nbsp;\\log \\text{N} \\) Nodes`,
+                `A binary tree of height \\( \\log \\mathrm{N} \\) can have exactly \\( \\mathrm{N}^ 2 \\) Nodes`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following is/are true?<br/> In every case consider there are more than \\( 1 \\) nodes. </p> <p></p>`,
+            options: [
+                `Max element is always leaf node in \\( \\mathrm{AVL} \\)`,
+                `Min element is always leaf node in \\( \\mathrm{AVL} \\)`,
+                `\\( 2^{\\text{nd}} \\) Max in \\( \\text{BST} \\) is either max's parent or its left child`,
+                `A tree is \\( \\text{BST} \\) if and only if its inorder traversal is sorted`,
+            ],
+            answer: ["D"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> findHeight</span><span class="pun">(</span><span class="pln">aNode</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">aNode </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span></li><li class="L2"><span class="pln"> </span><span class="com">//Line1</span></li><li class="L3"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> lefth </span><span class="pun">=</span><span class="pln"> findHeight</span><span class="pun">(</span><span class="pln">aNode </span><span class="pun">→</span><span class="pln"> left</span><span class="pun">);</span></li><li class="L4"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> righth </span><span class="pun">=</span><span class="pln"> findHeight</span><span class="pun">(</span><span class="pln">aNode </span><span class="pun">→</span><span class="pln"> right</span><span class="pun">);</span></li><li class="L5"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">lefth </span><span class="pun">&gt;</span><span class="pln"> righth</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> lefth </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L6"><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> righth </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L7"><span class="pun">}</span></li></ol></pre> <p>Which of the following should replace the \\( \\textsf{Line1} \\) to find the height of the subtree for the given node? </p> <p></p>`,
+            options: [
+                `return \\( -1 \\)`,
+                `return \\( 0 \\)`,
+                `return \\( 1 \\)`,
+                `return \\( \\textsf{max(findHeight(aNode → left), findHeight(aNode → right))} \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>In the process of \\( \\text{AVL} \\) tree insertion or deletion. Let \\( \\text{X} \\) be the lowest point of imbalance and \\( \\text{Y} \\) be the child of \\( \\mathrm{X} \\) in the direction of imbalance. Which of the following is/are true? </p> <p></p>`,
+            options: [
+                `It is the case of \\( \\text{LL} \\) rotation if Balance Factor of \\( \\text{X} \\) is \\( 2 \\) and Balance Factor of \\( \\text{Y} \\) is \\( 1 \\)`,
+                `It is the case of \\( \\text{RR} \\) rotation if Balance Factor of \\( \\text{X} \\) is \\( -2 \\) and Balance Factor of \\( \\text{Y} \\) is \\( -1 \\)`,
+                `It is the case of Right-Left rotation if Balance Factor of \\( \\text{X} \\) is \\( -2 \\) and Balance Factor of \\( \\text{Y} \\) is \\( 1 \\)`,
+                `It is the case of Left-Right rotation if Balance Factor of \\( \\text{X} \\) is \\( 2 \\) and Balance Factor of \\( \\text{Y} \\) is \\( -1 \\)`,
+            ],
+            answer: ["C", "D"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p> \\( k^{\\text{th}} \\) largest element in \\( \\text{AVL} \\) tree can be found in - (Mark tightest bound only) </p> <p></p>`,
+            options: [
+                `\\( \\mathrm{O}(\\log n) \\)`,
+                `\\( \\mathrm{O}(k) \\)`,
+                `\\( \\mathrm{O}(\\log n+k) \\)`,
+                `\\( \\mathrm{O}(n) \\)`,
+            ],
+            answer: ["C"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following is/are FALSE?</p> <p></p>`,
+            options: [
+                `In an AVL tree, If a pointer to some node is given then finding the next smallest element to the given node takes \\( \\mathrm{O}(1) \\) time.`,
+                `In a Binary Search tree, If a pointer to some node is given then finding the next smallest element to the given node takes \\( \\mathrm{O}(1) \\) time.`,
+                `In array based implementation of heap, if an index of some node is given then finding the next smallest element to the given node takes \\( \\mathrm{O}(1) \\) time.`,
+                `In a Binary Search tree, If a pointer to some node is given then finding the next highest element to the given node takes \\( \\mathrm{O}(1) \\) time.`,
+            ],
+            answer: ["A", "B", "C", "D"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Consider the following pseudo-code which takes a stack as input and returns some other stack.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">bar</span><span class="pun">(</span><span class="pln">stack st</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> stack tmp</span><span class="pun">;</span><span class="pln"> </span><span class="com">//declaring a stack</span></li><li class="L2"><span class="pln"> </span><span class="kwd">int</span><span class="pln"> position</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L3"><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">st</span><span class="pun">.</span><span class="pln">empty</span><span class="pun">())</span><span class="pln"> </span><span class="pun">{</span></li><li class="L4"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">position</span><span class="pun">++</span><span class="pln"> </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pln"> </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> tmp</span><span class="pun">.</span><span class="pln">push</span><span class="pun">(</span><span class="pln">st</span><span class="pun">.</span><span class="pln">top</span><span class="pun">());</span></li><li class="L5"><span class="pln"> st</span><span class="pun">.</span><span class="pln">pop</span><span class="pun">();</span></li><li class="L6"><span class="pln"> </span><span class="pun">}</span></li><li class="L7"><span class="pln"> </span><span class="kwd">return</span><span class="pln"> tmp</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p>If Stacks are implemented using an array where the bottom of the stack is the \\( 0^{\\text{th}} \\) index of an array. Which of the following is true about the above function-(odd or even positions are defined as odd or even array indices) </p> <p></p>`,
+            options: [
+                `The function returns a stack which contains all odd positioned elements from the input stack.`,
+                `The function returns a stack which contains all even positioned elements from the input stack.`,
+                `The function returns a stack which contains all odd positioned elements in the reversed form of the input stack`,
+                `None of these`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the function mystery which takes the head of LinkedList as an argument.</p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> mystery</span><span class="pun">(</span><span class="typ">Node</span><span class="pun">*</span><span class="pln"> head</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">head </span><span class="pun">==</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> head</span><span class="pun">-&gt;</span><span class="pln">data </span><span class="pun">-</span><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">head</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">);</span></li><li class="L4"><span class="pun">}</span></li></ol></pre> <p>If the linked list contains elements from \\( 1 \\) to \\( n \\) in the order, where the head is pointing to \\( 1. \\) Which of the following is/are true- </p> <p></p>`,
+            options: [
+                `It returns \\( -50 \\) if \\( n \\) is \\( 99 \\)`,
+                `It returns \\( 50 \\) if \\( n \\) is \\( 99 \\)`,
+                `It returns \\( -50 \\) if \\( n \\) is \\( 100 \\)`,
+                `It returns \\( 50 \\) if \\( n \\) is \\( 100 \\)`,
+            ],
+            answer: ["B", "C"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Given a complete binary tree with \\( 6 \\) nodes, What is the probability that it forms a (min or max) heap with \\( 6 \\) distinct numbers? </p> <p></p>`,
+            options: [
+                `\\( 1 / 18 \\)`,
+                `\\( 1 / 36 \\)`,
+                `\\( 1 / 12 \\)`,
+                `\\( 1 / 6 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Suppose that stacks and queues are provided as opaque data types, offering only operations to add elements, to remove elements, and to test for emptiness. Suppose that a programmer wants to count the number of elements in a given stack or queue \\( \\mathrm{C} \\), which is currently in some state \\( t, \\) using only one auxiliary stack or queue \\( \\mathrm{D} \\). The structures \\( \\mathrm{C} \\) and \\( \\mathrm{D} \\) can be used in any way possible based on the methods they offer, but \\( \\mathrm{C} \\) must be restored to its state \\( t \\) after counting its elements.<br/> Counting elements as described above is possible for which of the following data types? </p> <ol style="list-style-type:upper-roman"> <li> \\( \\mathrm{C} \\) is a queue and \\( \\mathrm{D} \\) is a queue. </li> <li> \\( \\mathrm{C} \\) is a stack and \\( \\text{D} \\) is a stack. </li> <li> \\( \\mathrm{C} \\) is a queue and \\( \\mathrm{D} \\) is a stack. </li> </ol> <p> </p> <p></p>`,
+            options: [
+                `None`,
+                `I and II only`,
+                `I and III only`,
+                `I, II, and III only`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Inorder traversing a tree resulted \\( \\text{E A C K F H D B G}; \\) the preorder traversal would return. </p> <p></p>`,
+            options: [
+                `\\( \\text{F A E K C D B H G} \\)`,
+                `\\( \\text{F A E K C D H G B} \\)`,
+                `\\( \\text{E A F K H D C B G} \\)`,
+                `\\( \\text{F E A K D C H B G} \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following is/are true?</p> <p></p>`,
+            options: [
+                `After hashing \\( n \\) keys into a hash table of size \\( m \\) that uses chaining to handle collisions, we hash two new keys \\( k_{1} \\) and \\( k_{2} \\). Under the simple uniform hashing assumption, the probability that \\( k_{1} \\) and \\( k_{2} \\) are hashed into the same table location is exactly \\( 1 / m \\) with no dependence on the number of keys \\( n \\).`,
+                `Under the uniform hashing assumption, if we use a hash table of size \\( m \\) with open addressing to hash \\( 3 \\) keys, the probability that the third inserted key needs exactly three probes before being inserted into the table is exactly \\( \\frac{2}{m(m-1)} \\).`,
+                `We use a hash table of size \\( m \\) with open addressing to hash \\( n \\) items. Under the uniform hashing assumption, the expected cost to insert another element into the table is at most \\( 1+\\alpha \\), where \\( \\alpha=n / m \\) is the average load.`,
+                `Linear probing is equivalent to double hashing with a secondary hash function of \\( h_{2}(k)=1 \\).`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the following binary heap.</p> <p style="text-align:center"><img alt="" src="images/MST4/q59_1.png" style="max-width: 100%;"/></p> <p>Suppose that the last operation performed in the binary heap above was inserting the key \\( x \\). What is/are possible values of \\( x? \\) </p> <p></p>`,
+            options: [
+                `\\( 19 \\)`,
+                `\\( 26 \\)`,
+                `\\( 32 \\)`,
+                `\\( 10 \\)`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Consider messages comprised of four symbols - \\( \\mathrm{A}, \\mathrm{B}, \\mathrm{C}, \\mathrm{D}\\;- \\) each with an associated probability of occurrence \\( : p(\\mathrm{A}), p(\\mathrm{B}), p(\\mathrm{C}), p(\\mathrm{D}). \\) Suppose \\( p\\text{(A)} \\geq p(\\mathrm{B}) \\geq p(\\mathrm{C}) \\geq p(\\mathrm{D}). \\) </p> <p>Which of the following is correct condition (equation or inequality) that is both necessary and sufficient to guarantee that the Huffman algorithm will generate a two-bit encoding for each symbol, i.c., the corresponding Huffman code will actually be a fixed-length encoding using \\( 2 \\) bits for each symbol. </p> <p></p>`,
+            options: [
+                `\\( p\\text{(C)}+p\\text{(D)}>p\\text{(A)} \\)`,
+                `\\( p\\text{(C)}+p\\text{(D)}>p(B) \\)`,
+                `\\( p\\text{(C)}+p\\text{(D)} \\geq p\\text{(A)} \\)`,
+                `\\( p\\text{(C)}+p\\text{(D)} \\geq p(B) \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Let \\( \\text{T} \\) be \\( \\text{MST} \\) of \\( \\text{G = (V, E)}. \\) </p> <p>Consider two statements \\( \\text{S1} \\) and \\( \\text{S2}. \\) </p> <ul> <li> \\( \\text{S1}: \\) If we add a new edge e to \\( \\mathrm{G} \\), our \\( \\mathrm{T} \\) might not be \\( \\text{MST} \\) anymore. We can obtain a new \\( \\text{MST} \\) from the old one without recomputing everything in \\( \\mathrm{O(|V|)} \\) time. </li> <li> \\( \\text{S2}: \\) If we add a new node \\( v \\) to \\( \\mathrm{G} \\). We can compute a new \\( \\mathrm{MST} \\) in \\( \\mathrm{O}(\\operatorname{deg}(v)|\\mathrm{V}|) \\). </li> </ul> <p>Choose the correct option:</p> <p></p>`,
+            options: [
+                `\\( \\mathrm{S} 1 \\) is correct but \\( \\mathrm{S} 2 \\) is wrong.`,
+                `\\( \\mathrm{S} 2 \\) is correct but \\( \\mathrm{S} 1 \\) is wrong.`,
+                `Both are correct.`,
+                `Both are false.`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>The following diagram shows the set of edges (in thick black lines) selected at some intermediate step of an \\( \\text{MST} \\) algorithm. Lighter edges are not yet in \\( \\text{MST}. \\) </p> <p style="text-align:center"><img alt="" src="images/MST4/q62_1.png" style="max-width: 100%;"/></p> <p>Assume that we got above intermediate state using Prim's algorithm.</p> <p>What is true about the value of \\( z? \\) </p> <p></p>`,
+            options: [
+                `The minimum value of \\( z \\) must be \\( 50 \\)`,
+                `The maximum value of \\( z \\) must be \\( 120 \\)`,
+                `The Maximum Value of \\( z \\) must be \\( 140 \\)`,
+                `\\( z \\) can take any value`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0.67,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following is correct option about \\( \\mathrm{S} 1 \\) and \\( \\mathrm{S} 2? \\) </p> <ul> <li> \\( \\mathrm{S} 1: \\) If \\( \\text{G} \\) is a weighted graph with \\( n \\) vertices and \\( m \\) edges that does <em>not</em> contain negative weight cycle, then the iteration of the Bellman-Ford algorithm will reach a fixed point in at most \\( n-1 \\) rounds. </li> <li> \\( \\mathrm{S} 2: \\) If \\( \\text{G} \\) is a weighted graph with \\( n \\) vertices and \\( m \\) edges that <em>does</em> contain negative-weight cycle, then for <em>every</em> vertex \\( v \\) in \\( \\text{G} \\) the shortest path from \\( v \\) to \\( t \\) in \\( \\text{G} \\) containing \\( n \\) edges is strictly shorter than the shortest path from \\( v \\) to \\( t \\) in \\( \\text{G} \\) containing \\( n-1 \\) edges. </li> </ul> <p></p>`,
+            options: [
+                `\\( \\mathrm{S} 1 \\) is TRUE but \\( \\mathrm{S} 2 \\) is False`,
+                `\\( \\mathrm{S} 2 \\) is TRUE but \\( \\mathrm{S} 1 \\) is False`,
+                `Both are True`,
+                `Both are False`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Consider the following function that sorts an array of \\( \\textsf{N} \\) comparable keys. </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln"> </span><span class="kwd">void</span><span class="pln"> sort</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">[],</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> N</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> N</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="com">// outer loop</span></li><li class="L2"><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> N</span><span class="pun">-</span><span class="lit">1</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&gt;</span><span class="pln"> i</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">--)</span></li><li class="L3"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">[</span><span class="pln">j</span><span class="pun">]</span><span class="pln">swap</span><span class="pun">(</span><span class="pln">a</span><span class="pun">[</span><span class="pln">j</span><span class="pun">],</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">j</span><span class="pun">-</span><span class="lit">1</span><span class="pun">]);</span></li><li class="L4"><span class="pun">}</span></li></ol></pre> <p>Which of these invariants does the above code satisfy at the end of each outer \\( i \\) loop? Mark all that apply: </p> <p></p>`,
+            options: [
+                `Entries \\( a[0] \\) through \\( a[i] \\) are in sorted order.`,
+                `Entries \\( a[0] \\) through \\( a[i] \\) contain the smallest keys in the entire array.`,
+                `Entries \\( a[\\text{N}-i-1] \\) through \\( a[\\mathrm{N}-1] \\) are in sorted order.`,
+                `Entries \\( a[\\mathrm{~N}-i-1] \\) through \\( a[\\mathrm{N}-1] \\) contain the largest keys in the entire array.`,
+            ],
+            answer: ["A", "B"],
+            solution: ``
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>Which of the following(s) will evaluate to true</p> <p></p>`,
+            options: [
+                `\\( 0\\; \\&\\&\\; 0 == 0 \\)`,
+                `\\( 0\\; \\&\\&\\; 1 == 0 \\)`,
+                `\\( 1\\; ||\\; 0 == 0 \\)`,
+                `\\( 1\\; ||\\; 1 == 0 \\)`,
+            ],
+            answer: ["C", "D"],
+            solution: ``
+        },
+    ]
+});
