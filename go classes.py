@@ -37,6 +37,8 @@ def clean_html(html_str):
     html_str = re.sub(r'<script[^>]*?type="math/tex; mode=display"[^>]*?>(.*?)</script>', lambda m: rf"$$ {m.group(1)} $$", html_str, flags=re.DOTALL)
     html_str = re.sub(r'<script[^>]*?type="math/tex"[^>]*?>(.*?)</script>', lambda m: rf"\( {m.group(1)} \)", html_str, flags=re.DOTALL)
     
+    html_str = re.sub(r'\b(?:lang|language)-[a-zA-Z0-9_]+\b', '', html_str)
+    
     html_str = html_str.replace("\\", "\\\\")
     html_str = html_str.replace("`", "\\`")
     return html_str.strip()
