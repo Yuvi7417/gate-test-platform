@@ -28723,6 +28723,7 @@ registerTest({
 });
 
 
+
 registerTest({
     series: "cs-gate-classes",
     name: "MST - Algo + DS + C",
@@ -28965,10 +28966,8 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<p></p> <p>Consider the following declaration of pointer variable \\( p. \\) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p>If the initial value of \\( p \\) is \\( 1000, \\) then what will be the value of \\( p+1? \\) </p> <p>It is given that system has \\( 8 \\) bytes of address size and \\( 4 \\) bytes of integer size. </p> <p></p>`,
-            options: [
-                `<span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">10</span><span class="pun">][</span><span class="lit">5</span><span class="pun">];</span>`,
-            ],
+            text: `<p></p> <p>Consider the following declaration of pointer variable \\( p. \\) </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">10</span><span class="pun">][</span><span class="lit">5</span><span class="pun">];</span></li></ol></pre> <p>If the initial value of \\( p \\) is \\( 1000, \\) then what will be the value of \\( p+1? \\) </p> <p>It is given that system has \\( 8 \\) bytes of address size and \\( 4 \\) bytes of integer size. </p> <p></p>`,
+            options: [],
             answer: 1200,
             solution: ``
         },
@@ -29004,15 +29003,8 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<p></p> <p>What will be the number of recursive calls for \\( \\textsf{mystery(5)} \\) including the first call? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p></p>`,
-            options: [
-                `<span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span>`,
-                `<span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span>`,
-                `<span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">2</span><span class="pun">);</span>`,
-                `<span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span>`,
-                `<span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span>`,
-                `<span class="pun">}</span>`,
-            ],
+            text: `<p></p> <p>What will be the number of recursive calls for \\( \\textsf{mystery(5)} \\) including the first call? </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L2"><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">2</span><span class="pun">);</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span></li><li class="L4"><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
+            options: [],
             answer: 15,
             solution: ``
         },
@@ -29242,17 +29234,8 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<p></p> <p>Let \\( \\textsf{Q} \\) be a Queue. Enqueue and Dequeue are usual Queue operations to add and delete element respectively. \\( \\textsf{Q.enqueue(x)} \\) adds an element \\( \\textsf{x} \\) to the queue. \\( \\textsf{Q.dequeue()} \\) performs a dequeue operation on the queue and returns the value that gets dequeued.<br/> Consider the following segment of code: </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""></pre> <p><br/> What will be the value of the variable count, when the above segment of code completes its execution? </p> <p></p>`,
-            options: [
-                `<span class="pln">Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span>`,
-                `<span class="kwd">int</span><span class="pln"> count</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span>`,
-                `<span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span>`,
-                `<span class="pln"> count</span><span class="pun">=</span><span class="pln">count</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span>`,
-                `<span class="pln"> x </span><span class="pun">=</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span>`,
-                `<span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">2</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span>`,
-                `<span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">4</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span>`,
-                `<span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">x </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">32</span><span class="pun">);</span>`,
-            ],
+            text: `<p></p> <p>Let \\( \\textsf{Q} \\) be a Queue. Enqueue and Dequeue are usual Queue operations to add and delete element respectively. \\( \\textsf{Q.enqueue(x)} \\) adds an element \\( \\textsf{x} \\) to the queue. \\( \\textsf{Q.dequeue()} \\) performs a dequeue operation on the queue and returns the value that gets dequeued.<br/> Consider the following segment of code: </p> <pre class="prettyprint linenums lang-c_cpp prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> count</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L2"><span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln"> count</span><span class="pun">=</span><span class="pln">count</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln"> x </span><span class="pun">=</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L5"><span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">2</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span></li><li class="L6"><span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">4</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span></li><li class="L7"><span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">x </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">32</span><span class="pun">);</span></li></ol></pre> <p><br/> What will be the value of the variable count, when the above segment of code completes its execution? </p> <p></p>`,
+            options: [],
             answer: 12,
             solution: ``
         },

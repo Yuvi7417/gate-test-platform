@@ -79,19 +79,22 @@ def main():
         qtext_div = qdiv.find('div', class_='res_question_text')
         opts = []
         if qtext_div:
-            # find ol with style upper-alpha for options
-            ol = qtext_div.find('ol', style=lambda s: s and 'upper-alpha' in s)
-            if not ol:
-                ols = qtext_div.find_all('ol')
-                if ols:
-                    ol = ols[-1]
-            if ol:
-                for li in ol.find_all('li', recursive=False):
-                    for mjx in li.find_all(class_=['MathJax_Preview', 'MathJax_CHTML', 'MathJax']): mjx.decompose()
-                    process_images(li, img_dir, f"q{q_num}_opt", img_counter)
-                    opt_html = "".join(str(item) for item in li.contents)
-                    opts.append(clean_html(opt_html))
-                ol.decompose()
+            if qtype != 'NAT':
+                # find ol with style upper-alpha or type='a' for options
+                ol = qtext_div.find('ol', style=lambda s: s and 'upper-alpha' in s)
+                if not ol:
+                    ol = qtext_div.find('ol', type=lambda t: t and t.lower() == 'a')
+                if not ol:
+                    ols = [o for o in qtext_div.find_all('ol') if 'linenums' not in o.get('class', [])]
+                    if ols:
+                        ol = ols[-1]
+                if ol:
+                    for li in ol.find_all('li', recursive=False):
+                        for mjx in li.find_all(class_=['MathJax_Preview', 'MathJax_CHTML', 'MathJax']): mjx.decompose()
+                        process_images(li, img_dir, f"q{q_num}_opt", img_counter)
+                        opt_html = "".join(str(item) for item in li.contents)
+                        opts.append(clean_html(opt_html))
+                    ol.decompose()
                 
             for mjx in qtext_div.find_all(class_=['MathJax_Preview', 'MathJax_CHTML', 'MathJax']): mjx.decompose()
             process_images(qtext_div, img_dir, f"q{q_num}", img_counter)
