@@ -656,6 +656,7 @@ function renderTestList(t, filter) {
   let fltSeen = 0;
   let swtSeen = 0; // For Subjectwise tests
   let wqtSeen = 0; // For Weekly Quiz tests
+  let mstSeen = 0; // For Mixed Subject tests
 
   const items = t.schedule.map((s, i) => {
     const rawName = s[0] || "";
@@ -664,6 +665,7 @@ function renderTestList(t, filter) {
     const isTopicwise = upperName.startsWith("TWT");
     const isFullTest = upperName.startsWith("FST") || upperName.startsWith("FLT") || upperName.startsWith("FULL TEST");
     const isWeeklyQuiz = upperName.startsWith("WQT");
+    const isMixedSubject = upperName.startsWith("MST");
     
     // Strip the prefix (e.g. "TWT - ", "FLT - ") to get the bracket label
     const label = rawName.replace(/^[A-Za-z\s]+-\s*/, "");
@@ -691,6 +693,13 @@ function renderTestList(t, filter) {
       bracket = label;
       duration = "45 Mins";
       defaultQuestions = 0;
+    } else if (isMixedSubject) {
+      testType = "Mixed Subject";
+      testNumber = mstSeen + 1;
+      mstSeen++;
+      bracket = label;
+      duration = "180 Mins";
+      defaultQuestions = 65;
     } else {
       // Default to Subjectwise
       testType = "Subjectwise";
@@ -752,6 +761,8 @@ function renderTestList(t, filter) {
       itTestType = "Weekly Quiz";
     } else if (upperName.includes("-SUBJECTWISE TEST-") || upperName.includes("SWT -")) {
       itTestType = "Subjectwise";
+    } else if (upperName.includes("-MIXED SUBJECT TEST-") || upperName.includes("MST -")) {
+      itTestType = "Mixed Subject";
     } else if (upperName.includes("FULL TEST") || upperName.includes("FLT -") || upperName.includes("FST -")) {
       itTestType = "Full";
     }
