@@ -27922,7 +27922,7 @@ registerTest({
                 `All of them`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/1.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27931,7 +27931,7 @@ registerTest({
             text: `<p>In a base \\( \\text{‘}b\\text{'} \\) number system \\( [54 / 4]_b=(13)_b \\). The value of \\( b \\) is: </p>`,
             options: [],
             answer: 8,
-            solution: ``
+            solution: `<img src='images/MST3/2.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27945,7 +27945,7 @@ registerTest({
                 `All`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST3/3.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27959,7 +27959,7 @@ registerTest({
                 `\\( ((\\overline{\\text{E}}+ \\text{A B}\\; \\overline{\\text{F}})(\\text{C + D} +\\overline{\\text{F}})) \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST3/4.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27973,7 +27973,7 @@ registerTest({
                 `\\( \\overline{a} b c+a \\overline{b} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/5.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27987,7 +27987,7 @@ registerTest({
                 `\\( \\text{B}^{\\prime} \\text{D}^{\\prime}+\\text{A}^{\\prime} \\text{B}^{\\prime} \\text{C}^{\\prime}+\\text{AB}^{\\prime} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28001,7 +28001,7 @@ registerTest({
                 `\\( 32 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST3/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28015,7 +28015,7 @@ registerTest({
                 `\\( \\frac{1}{8} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28029,7 +28029,7 @@ registerTest({
                 `\\( \\text{P} \\) is always equal to \\( \\text{Q}' \\) regardless of the inputs \\( \\text{S, P.} \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28043,7 +28043,7 @@ registerTest({
                 `\\( \\text{Q}_n=\\overline{\\text{J}} \\text{Q + K} \\overline{\\text{Q}} \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST3/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28057,7 +28057,7 @@ registerTest({
                 `No hazard`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28071,7 +28071,7 @@ registerTest({
                 `\\( 01010011 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28085,7 +28085,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/13.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28099,7 +28099,7 @@ registerTest({
                 `Register addressing mode`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST3/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28113,7 +28113,7 @@ registerTest({
                 `\\( n \\) is the upper bound on the number of page faults.`,
             ],
             answer: ["B", "C"],
-            solution: ``
+            solution: `<img src='images/MST3/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28127,7 +28127,7 @@ registerTest({
                 `The OS provides the illusion to each thread that it has its own address space.`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST3/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28141,7 +28141,7 @@ registerTest({
                 `The longer the time slice, the more a RR scheduler gives similar results to a FIFO scheduler.`,
             ],
             answer: ["B", "C"],
-            solution: ``
+            solution: `<img src='images/MST3/17.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28155,7 +28155,7 @@ registerTest({
                 `The OS provides the illusion to each process that it has its own address space.`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST3/18.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28169,7 +28169,7 @@ registerTest({
                 `\\( 10 \\) seconds`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST3/19.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28178,7 +28178,7 @@ registerTest({
             text: `<p>Given a disk with \\( 200 \\) tracks, where track requests are received in the following order \\( 55,58,39,18,90,160,150,38,184 \\). The starting position for the arm is track \\( 100. \\) What is the number of tracks crossed when the Shortest Seek First algorithm is used? </p>`,
             options: [],
             answer: 248,
-            solution: ``
+            solution: `<img src='images/MST3/20.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28192,7 +28192,7 @@ registerTest({
                 `\\( 2008 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/21.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28206,7 +28206,7 @@ registerTest({
                 `Specifying a memory location in the instruction such that the value at that location specifies yet another memory location which in turn contains the value of an operand that will be used by the instruction.`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST3/22.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28220,7 +28220,7 @@ registerTest({
                 `\\( \\text{Z} = 0.5 \\)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST3/23.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28229,7 +28229,7 @@ registerTest({
             text: `<p>What is the magnitude of the greatest magnitude negative number that can be represented in a \\( 12 \\)-bit \\( 2\\text{'s} \\) complement code (Only write the magnitude, not the sign of it)? </p>`,
             options: [],
             answer: 2048,
-            solution: ``
+            solution: `<img src='images/MST3/24.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28243,7 +28243,7 @@ registerTest({
                 `It waits till the branch condition is evaluated`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/25.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28252,7 +28252,7 @@ registerTest({
             text: `<p>What is the minimum number of bits that are required to uniquely represent the characters of English alphabet? (Consider upper case characters alone)</p>`,
             options: [],
             answer: 5,
-            solution: ``
+            solution: `<img src='images/MST3/26.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28266,7 +28266,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST3/27.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28275,7 +28275,7 @@ registerTest({
             text: `<p>Consider two different machines. The first has a single cycle datapath (i.e., a single stage, non-pipelined machine) with a cycle time of \\( 15 \\mathrm{~ns} \\). The second is a pipelined machine with \\( 5 \\) pipeline stages and a cycle time of \\( 3 \\mathrm{~ns} \\). What is the speedup of the pipelined machine versus the single-cycle machine assuming there are no stalls? </p>`,
             options: [],
             answer: 5,
-            solution: ``
+            solution: `<img src='images/MST3/28.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28284,7 +28284,7 @@ registerTest({
             text: `<p>Consider two different machines. The first has a single cycle datapath (i.e., a single stage, non-pipelined machine) with a cycle time of \\( 15 \\mathrm{~ns} \\). The second is a pipelined machine with \\( 5 \\) pipeline stages and a cycle time of \\( 3 \\mathrm{~ns} \\). What is the speedup of the pipelined machine versus the single cycle machine if the pipeline stalls \\( 1 \\) cycle for \\( 25 \\% \\) of the instructions? </p>`,
             options: [],
             answer: 4,
-            solution: ``
+            solution: `<img src='images/MST3/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28298,7 +28298,7 @@ registerTest({
                 `FIFO with \\( \\mathrm{N}+1 \\) pages of memory always performs worse than FIFO with \\( \\mathrm{N} \\) pages of memory.`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST3/30.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28312,7 +28312,7 @@ registerTest({
                 `Mutual exclusion is not satisfied and deadlock is not possible.`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST3/31.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28321,7 +28321,7 @@ registerTest({
             text: `<p>A system uses a simple linear page table to implement virtual memory. The virtual address space is \\( 1 \\mathrm{~GB}\\; (30 \\;\\text{bits}); \\) the page size is \\( 1 \\mathrm{~KB} \\); each page table entry holds only a valid bit and the resulting page-frame number; the system has a maximum of \\( 2^{15} \\) physical pages \\( ( 32 \\mathrm{~MB} \\) of physical memory can be addressed at most). How much memory, in \\( \\text{MB}, \\) is used for page tables, when there are \\( 200 \\) processes running in the system? </p>`,
             options: [],
             answer: 400,
-            solution: ``
+            solution: `<img src='images/MST3/32.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28330,7 +28330,7 @@ registerTest({
             text: `<p></p> <p>Three concurrent processes \\( \\text{P1, P2} \\) and \\( \\text{P3} \\) are concurrently updating a shared variable \\( xyz \\) (with initial value of \\( 100) \\) as follows: </p> <ul> <li> \\( \\text{P1}: \\quad x y z=x y z+10 \\) </li> <li> \\( \\text{P2}: \\quad x y z=x y z-20 \\); </li> <li> \\( \\text{P3}: \\quad x y z=x y z \\ast 2 \\) </li> </ul> <p>When a process executes an instruction such as \\( a=b \\# c \\) then it read \\( b,c \\) from memory, performs \\( b \\# c \\) then writes the result into the memory location of " \\( a \\)". </p> <p>What will be the maximum value of \\( xyz \\) after the execution of the three processes? </p> <p></p>`,
             options: [],
             answer: 220,
-            solution: ``
+            solution: `<img src='images/MST3/33.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28339,7 +28339,7 @@ registerTest({
             text: `<p></p> <p>Three concurrent processes \\( \\text{P1, P2} \\) and \\( \\text{P3} \\) are concurrently updating a shared variable \\( xyz \\) (with initial value of \\( 100) \\) as follows: </p> <ul> <li> \\( \\text{P1}: \\quad x y z=x y z+10 \\) </li> <li> \\( \\text{P2}: \\quad x y z=x y z-20 \\) </li> <li> \\( \\text{P3}: \\quad x y z=x y z * 2 \\) </li> </ul> <p>When a process executes an instruction such as \\( a=b \\# c \\) then it read \\( b, c \\) from memory, performs \\( b \\# c \\) then writes the result into the memory location of " \\( a \\)".<br/> What will be the minimum value of \\( xyz \\) after the execution of the three processes? </p> <p></p>`,
             options: [],
             answer: 80,
-            solution: ``
+            solution: `<img src='images/MST3/34.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28348,7 +28348,7 @@ registerTest({
             text: `<p>Consider the following snapshot of a system with four processes \\( \\text{(P10, P11, P12, P13)} \\) and four resources \\( \\text{(R1, R2, R3, R4). R1, R2, R3,} \\) and \\( \\text{R4} \\) have a total of \\( 11, 6, 9, \\) and \\( 4 \\) resources, respectively. There are no current outstanding queued unsatisfied requests.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\overset{\\text{Table 1: Allocation}}{\\begin{array}{c|c|c|c|c} \\text{PID} & \\text{R1} & \\text{R2} & \\text{R3} & \\text{R4} \\\\ \\hline 10 & 1 & 0 & 2 & 2 \\\\ 11 & 2 & 1 & 1 & 1 \\\\ 12 & 1 & 1 & 3 & 0 \\\\ 13 & 1 & 0 & 2 & 0 \\end{array}} \\qquad \\overset{\\text{Table 2: Max Need}}{\\begin{array}{c|c|c|c|c} \\text{PID} & \\text{R1} & \\text{R2} & \\text{R3} & \\text{R4} \\\\ \\hline 10 & 1 & 3 & 2 & 4 \\\\ 11 & 8 & 2 & 1 & 2 \\\\ 12 & 1 & 3 & 5 & 1 \\\\ 13 & 3 & 2 & 3 & 0 \\end{array}} $$ <br/>From the perspective of deadlock avoidance, The system is in safe state then the number of possible safe sequences is? </p>`,
             options: [],
             answer: 9,
-            solution: ``
+            solution: `<img src='images/MST3/35.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28362,7 +28362,7 @@ registerTest({
                 `\\( 1,2 \\) and \\( 4 \\) only`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/36.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28376,7 +28376,7 @@ registerTest({
                 `\\( \\text{D}_\\text{A}=\\{3,5,6,7\\}, \\text{D}_\\text{B}=\\{1,2,5,7\\}, \\text{D}_\\text{C}=\\{0,3,5,6\\} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/37.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28385,7 +28385,7 @@ registerTest({
             text: `<p>We define a new class of boolean functions called "Self-Complementary Dual Functions(SCDF)". A boolean function \\( \\text{F} \\) is said to be a Self-Complementary Dual Function(SCDF) iff \\( \\text{F}^c=\\text{F}^d \\), where, \\( \\text{F}^c \\) is the complement of function \\( \\text{F}, \\text{F}^d \\) is the dual of function \\( \\text{F} \\). Then the number of SCDF functions with \\( 5 \\) boolean variables is? </p>`,
             options: [],
             answer: 65536,
-            solution: ``
+            solution: `<img src='images/MST3/38.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28399,7 +28399,7 @@ registerTest({
                 `\\( (\\text{AB} \\vee \\text{AD}) \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/39.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28413,7 +28413,7 @@ registerTest({
                 `\\( 32\\mathrm{~ns} \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/40.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28427,7 +28427,7 @@ registerTest({
                 `Four \\( \\text{(PI)} \\) and Four \\( \\text{(EPI)} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/41.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28441,7 +28441,7 @@ registerTest({
                 `Six \\( \\text{(PI)} \\) and Three \\( \\text{(EPI)} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/42.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28455,7 +28455,7 @@ registerTest({
                 `None of the above.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/43.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28469,7 +28469,7 @@ registerTest({
                 `\\( \\text{D}_1=\\text{Q}_3, \\text{D}_2=\\text{Q}_1, \\text{D}_3=\\text{Q}_2 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/44.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28483,7 +28483,7 @@ registerTest({
                 `\\( 1000 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28497,7 +28497,7 @@ registerTest({
                 `The output will be \\( \\text{Z} = 0\\; 1\\; 0\\; 0\\; 1\\; 0\\; 0\\; 1\\; 0\\; 0 \\; &nbsp;\\ldots \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/46.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28511,7 +28511,7 @@ registerTest({
                 `\\( 15 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/47.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28524,7 +28524,7 @@ registerTest({
                 `<span class="pln">I3 </span><span class="pun">:</span><span class="pln"> DIV R5</span><span class="pun">,</span><span class="pln">R1</span><span class="pun">,</span><span class="pln">R4</span>`,
             ],
             answer: 6,
-            solution: ``
+            solution: `<img src='images/MST3/48.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28533,7 +28533,7 @@ registerTest({
             text: `<p>A pipeline of \\( 2 \\) stages with a delay of \\( x \\) units each is split to \\( n \\) stages. In the new design, each stage has a delay of \\( x/n \\) units. To get the throughput increase of \\( 1700\\% \\) what would be the \\( n \\) value? </p>`,
             options: [],
             answer: 18,
-            solution: ``
+            solution: `<img src='images/MST3/49.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28547,7 +28547,7 @@ registerTest({
                 `Number of write-read(WAR) dependency \\( =3 \\)`,
             ],
             answer: ["A"],
-            solution: ``
+            solution: `<img src='images/MST3/50.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28561,7 +28561,7 @@ registerTest({
                 `\\( 1100\\; 1011\\; 1010\\; 1101 + 0111\\; 1111\\; 0010\\; 1111 \\)`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST3/51.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28570,7 +28570,7 @@ registerTest({
             text: `<p>A system \\( \\text{S1} \\) spends \\( 50 \\% \\) of its time on graphics processing, \\( 30 \\% \\) of its time on physics computations, and \\( 20 \\% \\) of its time on modeling the intelligence of a game. This system is upgraded into System \\( \\mathrm{S} 2 \\) which processes graphics \\( 10 \\) times as fast as on \\( \\text{S1}, \\) physics processing is \\( 6 \\) times as fast as on \\( \\text{S1}, \\) an improved microarchitecture, which makes everything else twice as fast as it was on \\( \\text{S1}. \\) What is the overall speedup of the \\( \\text{S2} \\) over the old system \\( \\text{S1}? \\) </p>`,
             options: [],
             answer: 5,
-            solution: ``
+            solution: `<img src='images/MST3/52.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28579,7 +28579,7 @@ registerTest({
             text: `<p>Assume a \\( 1\\;\\text{KB} \\) size \\( 4 \\)-way set-associative cache with \\( 64 \\) byte blocks. Assume that the cache is initially empty. Consider replacement policy: Least Recently Used (LRU). What is the miss ratio for the following memory accesses (in \\( \\%)? \\) Addresses referenced \\( : \\textsf{0xFFFFEE44, 0xA10C0450, 0xFFFFEE88, 0xC4444464, 0xA10C0440,} \\) \\( \\textsf{0x77777770, 0xFFFFEE7C, 0xBA000440, 0xFFFFEE68, 0xA10C046C} \\) </p>`,
             options: [],
             answer: 60,
-            solution: ``
+            solution: `<img src='images/MST3/53.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28588,7 +28588,7 @@ registerTest({
             text: `<p>Assume a \\( 1\\;\\text{KB} \\) size \\( 4 \\)-way set-associative cache with \\( 64 \\) byte blocks. Assume that the cache is initially empty. Consider replacement policy: First-In-First-Out(FIFO). What is the miss ratio for the following memory accesses (in \\( \\%)? \\) Addresses referenced \\( : \\textsf{0xFFFFEE44, 0xA10C0450, 0xFFFFEE88, 0xC4444464, 0xA10C0440, 0x77777770,} \\) \\( \\textsf{0xFFFFEE7C, 0xBA000440, 0xFFFFEE68, 0xA10C046C} \\) </p>`,
             options: [],
             answer: 80,
-            solution: ``
+            solution: `<img src='images/MST3/54.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28597,7 +28597,7 @@ registerTest({
             text: `<p>A cache memory system with capacity of \\( \\text{N} \\) words and block size of \\( \\text{B} \\) words is to be designed. If it is designed as a direct mapped cache, the length of the TAG field is \\( 10 \\) bits. If it is designed as a \\( 16 \\)-way set associative cache, the length of the TAG field will be _______ bits. </p>`,
             options: [],
             answer: 14,
-            solution: ``
+            solution: `<img src='images/MST3/55.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28611,7 +28611,7 @@ registerTest({
                 `The progress is Not satisfied.`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST3/56.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28620,7 +28620,7 @@ registerTest({
             text: `<p>Here is a table of processes and their associated arrival and running times. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{|c|c|c|} \\hline \\text{Process ID} & \\text{Arrival Time} & \\text{CPU Running Time} \\\\ \\hline \\hline \\text{Process 1} & 0 & 5 \\\\ \\hline \\text{Process 2} & 4 & 5 \\\\ \\hline \\text{Process 3} & 2 & 1 \\\\ \\hline \\text{Process 4} & 7 & 2 \\\\ \\hline \\text{Process 5} & 8 & 3 \\\\ \\hline \\end{array} $$ We run these processes under \\( 2 \\) scheduling policies: First Come First Serve (FCFS), Round-Robin (RR) with time slice quantum \\( =1 \\). Assume that context switch overhead is \\( 0 \\) and that new RR processes are added to the head of the queue and new FCFS processes are added to the tail of the queue. Let the average queue wait time for all the processes in case of FCFS, RR scheduling be \\( f,r \\). Note that the wait time of a process is the total time spent waiting in the queue (all the time in which the task is not running). What is \\( r-f? \\) </p>`,
             options: [],
             answer: 1,
-            solution: ``
+            solution: `<img src='images/MST3/57.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28629,7 +28629,7 @@ registerTest({
             text: `<p>Here is a table of processes and their associated arrival and running times.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c|c|} \\hline \\text{Process ID} & \\text{Arrival Time} & \\text{CPU Running Time} \\\\ \\hline \\hline \\text{Process 1} & 0 & 5 \\\\ \\hline \\text{Process 2} & 4 & 5 \\\\ \\hline \\text{Process 3} & 2 & 1 \\\\ \\hline \\text{Process 4} & 7 & 2 \\\\ \\hline \\text{Process 5} & 8 & 3 \\\\ \\hline \\end{array} $$ <br/>Assume that we have an oracle perform the best possible scheduling to reduce(minimize) the average wait time. What would be the optimal average wait time? </p>`,
             options: [],
             answer: 1.8,
-            solution: ``
+            solution: `<img src='images/MST3/58.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28643,7 +28643,7 @@ registerTest({
                 `A multi-level page table needs more memory to store page tables across all levels compared to a linear page table if the process uses the entire virtual memory space.`,
             ],
             answer: ["A", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST3/59.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28657,7 +28657,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST3/60.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28671,7 +28671,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST3/61.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28680,7 +28680,7 @@ registerTest({
             text: `<p>Assume the OS is performing page replacement on only \\( 4 \\) pages of physical memory. Assume the following access stream of virtual pages: <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ 8,7,4,2,5,4,7,3,4,5,9,5,2,7,6,2,9,9 $$ If the OS uses the OPT(Optimal) replacement policy, how many misses will it incur? </p>`,
             options: [],
             answer: 9,
-            solution: ``
+            solution: `<img src='images/MST3/62.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28689,7 +28689,7 @@ registerTest({
             text: `<p>A processor has \\( 64 \\) registers and uses \\( 16- \\) bit instruction format. It has two types of instructions: \\( \\text{I} \\)-type and \\( \\text{R} \\)-type. Each \\( \\text{I} \\)-type instruction contains an opcode, a register name, and a \\( 4 \\)-bit immediate value. Each \\( \\text{R} \\)-type instruction contains an opcode and two register names. If there are \\( 14 \\) distinct \\( \\text{I} \\)-type opcodes, then the maximum number of distinct \\( \\text{R} \\)-type opcodes is _______. </p>`,
             options: [],
             answer: 12,
-            solution: ``
+            solution: `<img src='images/MST3/63.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28703,7 +28703,7 @@ registerTest({
                 `\\( \\mathrm{S} 1<\\mathrm{S} 2 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST3/64.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -28717,7 +28717,7 @@ registerTest({
                 `Number of RAR dependencies \\( =4 \\)`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST3/65.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
     ]
 });
