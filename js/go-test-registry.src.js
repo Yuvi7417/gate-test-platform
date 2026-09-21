@@ -28739,7 +28739,7 @@ registerTest({
                 `\\( 2,399,387,219,266,382,381,278,363 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/1.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28753,7 +28753,7 @@ registerTest({
                 `\\( 1 / 15 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST4/2.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28767,7 +28767,7 @@ registerTest({
                 `\\( \\Theta(n \\log n) \\) steps`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/3.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28781,7 +28781,7 @@ registerTest({
                 `\\( f(n)=2^{\\sqrt{\\log n}}\\;, \\quad g(n)= (\\log n)^{100} \\)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/4.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28795,7 +28795,7 @@ registerTest({
                 `\\( 90 \\)`,
             ],
             answer: ["A", "B", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/5.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28809,7 +28809,7 @@ registerTest({
                 `A binary tree of height \\( \\text{N} \\) may have \\( \\text{N}! \\) nodes.`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28823,7 +28823,7 @@ registerTest({
                 `None of the above.`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28837,7 +28837,7 @@ registerTest({
                 `There are arrays of size \\( \\text{N} \\) such that Mergesort runs in \\( \\Omega\\left(\\text{N}^2\\right) \\).`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28851,7 +28851,7 @@ registerTest({
                 `Quicksort for sorting an array of size \\( \\text{N} \\) requires an amount of extra space proportional to \\( \\text{N} \\).`,
             ],
             answer: ["C"],
-            solution: ``
+            solution: `<img src='images/MST4/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28860,7 +28860,7 @@ registerTest({
             text: `<p>Assume that you are given a chain of matrices \\( <\\text{A}_1 \\text{A}_2 \\text{A}_3 \\text{A}_4>, \\) with dimensions \\( 2 \\times 5,5 \\times 4,4 \\times 2 \\) and \\( 2 \\times 4 \\) respectively. Compute the optimal number of multiplications required to calculate the chain product. </p>`,
             options: [],
             answer: 72,
-            solution: ``
+            solution: `<img src='images/MST4/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28874,7 +28874,7 @@ registerTest({
                 `Both are False`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28888,7 +28888,7 @@ registerTest({
                 `\\(  T2  \\) is possible using DFS or BFS on \\(  G  \\)`,
             ],
             answer: ["A", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28902,7 +28902,7 @@ registerTest({
                 `\\( 5 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/13.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28916,7 +28916,7 @@ registerTest({
                 `Finding the longest common subsequence of two sequences.`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST4/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28930,7 +28930,7 @@ registerTest({
                 `Dijkstra’s algorithm will always work correctly on any graph with negative edges but no negative cycle.`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST4/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28944,7 +28944,7 @@ registerTest({
                 `We can fill the table by decreasing \\( i \\) in the outer loop and increasing \\( j \\) in the inner loop.`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28958,7 +28958,7 @@ registerTest({
                 `Science Knowledge`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/17.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28967,7 +28967,7 @@ registerTest({
             text: `<p></p> <p>Consider the following declaration of pointer variable \\( p. \\) </p> <pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> </span><span class="pun">(*</span><span class="pln">p</span><span class="pun">)[</span><span class="lit">10</span><span class="pun">][</span><span class="lit">5</span><span class="pun">];</span></li></ol></pre> <p>If the initial value of \\( p \\) is \\( 1000, \\) then what will be the value of \\( p+1? \\) </p> <p>It is given that system has \\( 8 \\) bytes of address size and \\( 4 \\) bytes of integer size. </p> <p></p>`,
             options: [],
             answer: 1200,
-            solution: ``
+            solution: `<img src='images/MST4/18.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28981,7 +28981,7 @@ registerTest({
                 `<pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="typ">TwoD</span><span class="pun">);</span></li></ol></pre>`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/19.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -28995,7 +28995,7 @@ registerTest({
                 `\\( 0,\\; 65280 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/20.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29004,7 +29004,7 @@ registerTest({
             text: `<p></p> <p>What will be the number of recursive calls for \\( \\textsf{mystery(5)} \\) including the first call? </p> <pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> mystery</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L2"><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">2</span><span class="pun">);</span></li><li class="L3"><span class="pln"> printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> n</span><span class="pun">);</span></li><li class="L4"><span class="pln"> mystery</span><span class="pun">(</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p></p>`,
             options: [],
             answer: 15,
-            solution: ``
+            solution: `<img src='images/MST4/21.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29018,7 +29018,7 @@ registerTest({
                 `<pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">char</span><span class="pln"> c</span><span class="pun">[</span><span class="lit">16</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"2023"</span><span class="pun">;</span></li></ol></pre>`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/22.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29032,7 +29032,7 @@ registerTest({
                 `The output of the program in the little-endian system is \\( \\textsf{“ c&nbsp;"} \\) (without quotes).`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST4/23.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29046,7 +29046,7 @@ registerTest({
                 `Compile time error`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/24.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29060,7 +29060,7 @@ registerTest({
                 `<pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="kwd">void</span><span class="pln"> fun</span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">[][]</span><span class="pln">a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">);</span></li></ol></pre>`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/25.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29074,7 +29074,7 @@ registerTest({
                 `\\( \\Theta\\left(\\mathrm{N}^2 \\right) \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/26.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29088,7 +29088,7 @@ registerTest({
                 `\\( \\theta\\left(2^ n\\right) \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/27.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29097,7 +29097,7 @@ registerTest({
             text: `<p>What is the sum of the following numbers? <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  50+53+56+59+\\ldots+3080+3083+3086=?  $$ </p>`,
             options: [],
             answer: 1588384,
-            solution: ``
+            solution: `<img src='images/MST4/28.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29111,7 +29111,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -29125,7 +29125,7 @@ registerTest({
                 `\\( 8 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/30.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29134,7 +29134,7 @@ registerTest({
             text: `<p></p> <p>The weight of the unique minimum weight spanning tree (MWST) is \\( 60. \\) The weight of edges which forms MWST is given in the following weighted, undirected graph. What will be the minimum total weight of missing edges, i.e., \\( w+x+y+z=? \\). Assume all edge weights are distinct. </p> <p style="text-align:center"><img alt="" height="265" src="images/MST4/q31_1.png" style="max-width: 100%;" width="369"/></p> <p> </p> <p></p>`,
             options: [],
             answer: 59,
-            solution: ``
+            solution: `<img src='images/MST4/31.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29143,7 +29143,7 @@ registerTest({
             text: `<p>Consider a Job scheduling problem with deadlines. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{|l|l|l|l|l|l|l|l|} \\hline \\text{Jobs} & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\ \\hline \\text{Profit} & 8 & 6 & 5 & \\text{X} & 8 & 3 & 4 \\\\ \\hline \\text{Deadline} & 6 & 4 & 5 & 6 & 3 & \\text{Y} & 1 \\\\ \\hline \\end{array}  $$ If \\( \\text{Y} \\) is the minimum value such that Job \\( 6 \\) get scheduled and \\( \\text{X} \\) is the maximum value possible so that Job \\( 4 \\) will never get scheduled, then the value of \\( 2^{\\text{X+Y}} \\) is ________ </p>`,
             options: [],
             answer: 16,
-            solution: ``
+            solution: `<img src='images/MST4/32.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29152,7 +29152,7 @@ registerTest({
             text: `<p>Consider the task scheduling problem where the total profit earned is \\( 60. \\) How many non-zero and non-negative values are possible for \\( \\text{X} \\) such that \\( \\text{X} \\) is not a part of the profit earned? <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|l|l|l|l|l|l|l|l|l|} \\hline \\text{Tasks} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\ \\hline \\text{Profit} & 11 & 16 & 6 & \\text{X} & 5 & 11 & 5 & 6 \\\\ \\hline \\text{Deadline} & 4 & 5 & 2 & 5 & 2 & 6 & 4 & 7 \\\\ \\hline \\end{array}  $$ </p>`,
             options: [],
             answer: 4,
-            solution: ``
+            solution: `<img src='images/MST4/33.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29161,7 +29161,7 @@ registerTest({
             text: `<p>Consider the time table at the railway station with arrival and departure times given below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{array}{|c|c|c|} \\hline \\textbf{Rail} & \\textbf{Arrival} & \\textbf{Departure} \\\\ \\hline \\text{Rail A} & 0700 \\;\\text{hrs} & 0730 \\;\\text{hrs} \\\\ \\hline \\text{Rail B} & 0715 \\;\\text{hrs} & 1100 \\;\\text{hrs} \\\\ \\hline \\text{Rail C} & 0830 \\;\\text{hrs} & 0900 \\;\\text{hrs} \\\\ \\hline \\text{Rail D} & 0845 \\;\\text{hrs} & 0945 \\;\\text{hrs} \\\\ \\hline \\end{array}  $$ How many the minimum number of platforms are needed so that all the trains can be accommodated as per their schedule? </p>`,
             options: [],
             answer: 3,
-            solution: ``
+            solution: `<img src='images/MST4/34.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29170,7 +29170,7 @@ registerTest({
             text: `<p>Consider the recurrence relation given below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  T(n)=2 T(n / 4)+n^\\alpha  $$ If the time complexity of given relation is \\( \\theta\\left(n^\\alpha\\right) \\), where \\( 0<\\alpha<1 \\), then what is the non-zero minimum value possible for \\( \\alpha?( \\)corrected to decimal places) </p>`,
             options: [],
             answer: 0.51,
-            solution: ``
+            solution: `<img src='images/MST4/35.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29184,7 +29184,7 @@ registerTest({
                 `weight \\( (u, v) \\leq 15 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST4/36.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29198,7 +29198,7 @@ registerTest({
                 `\\( 9,11 \\)`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST4/37.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29212,7 +29212,7 @@ registerTest({
                 `Does not exist or it is NULL`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/38.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29226,7 +29226,7 @@ registerTest({
                 `The most efficient algorithm will take \\( \\mathrm{O}\\text{(R)} \\) only if \\( \\text{|L – R|} = 1 \\), otherwise it will take \\( \\mathrm{O}(n). \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/39.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29235,7 +29235,7 @@ registerTest({
             text: `<p></p> <p>Let \\( \\textsf{Q} \\) be a Queue. Enqueue and Dequeue are usual Queue operations to add and delete element respectively. \\( \\textsf{Q.enqueue(x)} \\) adds an element \\( \\textsf{x} \\) to the queue. \\( \\textsf{Q.dequeue()} \\) performs a dequeue operation on the queue and returns the value that gets dequeued.<br/> Consider the following segment of code: </p> <pre class="prettyprint linenums  prettyprinted" data-pbcklang="c_cpp" data-pbcktabsize="4" style=""><ol class="linenums"><li class="L0"><span class="pln">Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> count</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L2"><span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span></li><li class="L3"><span class="pln"> count</span><span class="pun">=</span><span class="pln">count</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln"> x </span><span class="pun">=</span><span class="pln"> Q</span><span class="pun">.</span><span class="pln">dequeue</span><span class="pun">();</span></li><li class="L5"><span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">2</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span></li><li class="L6"><span class="pln"> Q</span><span class="pun">.</span><span class="pln">enqueue</span><span class="pun">(</span><span class="pln"> </span><span class="lit">4</span><span class="pun">*</span><span class="pln">x </span><span class="pun">);</span></li><li class="L7"><span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">x </span><span class="pun">!=</span><span class="pln"> </span><span class="lit">32</span><span class="pun">);</span></li></ol></pre> <p><br/> What will be the value of the variable count, when the above segment of code completes its execution? </p> <p></p>`,
             options: [],
             answer: 12,
-            solution: ``
+            solution: `<img src='images/MST4/40.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29249,7 +29249,7 @@ registerTest({
                 `\\( 21 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST4/41.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29263,7 +29263,7 @@ registerTest({
                 `Deletion in \\( \\mathrm{AVL} \\) tree requires \\( \\mathrm{O}(1) \\) rotations`,
             ],
             answer: "A;C",
-            solution: ``
+            solution: `<img src='images/MST4/42.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29272,7 +29272,7 @@ registerTest({
             text: `<p>Let \\( a \\) be minimum number of nodes in \\( \\mathrm{AVL} \\) tree of height \\( 6 \\) and \\( b \\) be maximum number of nodes in \\( \\mathrm{AVL} \\) tree of height \\( 6 \\) then value of \\( a+10 b \\) is ________ </p>`,
             options: [],
             answer: 1303,
-            solution: ``
+            solution: `<img src='images/MST4/43.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29286,7 +29286,7 @@ registerTest({
                 `Time complexity to Insert a value into a Binary Search Tree of size \\( \\mathrm{N}, \\) where the value you are inserting is the median value when compared to values currently in the tree is \\( \\mathrm{O}(\\mathrm{N}) \\)`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/44.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29300,7 +29300,7 @@ registerTest({
                 `Reversing a queue using another two queues can be done in \\( \\mathrm{O}(\\mathrm{N}) \\) time. (Recursion not allowed)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29314,7 +29314,7 @@ registerTest({
                 `Always returns \\( 0 \\) or \\( 1 \\) depending root is null or not null`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/46.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29328,7 +29328,7 @@ registerTest({
                 `A binary tree of height \\( \\log \\mathrm{N} \\) can have exactly \\( \\mathrm{N}^ 2 \\) Nodes`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/47.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29342,7 +29342,7 @@ registerTest({
                 `A tree is \\( \\text{BST} \\) if and only if its inorder traversal is sorted`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST4/48.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29356,7 +29356,7 @@ registerTest({
                 `return \\( \\textsf{max(findHeight(aNode → left), findHeight(aNode → right))} \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/49.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29370,7 +29370,7 @@ registerTest({
                 `It is the case of Left-Right rotation if Balance Factor of \\( \\text{X} \\) is \\( 2 \\) and Balance Factor of \\( \\text{Y} \\) is \\( -1 \\)`,
             ],
             answer: ["C", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/50.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29384,7 +29384,7 @@ registerTest({
                 `\\( \\mathrm{O}(n) \\)`,
             ],
             answer: ["C"],
-            solution: ``
+            solution: `<img src='images/MST4/51.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29398,7 +29398,7 @@ registerTest({
                 `In a Binary Search tree, If a pointer to some node is given then finding the next highest element to the given node takes \\( \\mathrm{O}(1) \\) time.`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/52.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29412,7 +29412,7 @@ registerTest({
                 `None of these`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/53.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29426,7 +29426,7 @@ registerTest({
                 `It returns \\( 50 \\) if \\( n \\) is \\( 100 \\)`,
             ],
             answer: ["B", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/54.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29440,7 +29440,7 @@ registerTest({
                 `\\( 1 / 6 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/55.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29454,7 +29454,7 @@ registerTest({
                 `I, II, and III only`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/56.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29468,7 +29468,7 @@ registerTest({
                 `\\( \\text{F E A K D C H B G} \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST4/57.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29482,7 +29482,7 @@ registerTest({
                 `Linear probing is equivalent to double hashing with a secondary hash function of \\( h_{2}(k)=1 \\).`,
             ],
             answer: ["A", "B", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/58.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29496,7 +29496,7 @@ registerTest({
                 `\\( 10 \\)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST4/59.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29510,7 +29510,7 @@ registerTest({
                 `\\( p\\text{(C)}+p\\text{(D)} \\geq p(B) \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/60.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29524,7 +29524,7 @@ registerTest({
                 `Both are false.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST4/61.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29538,7 +29538,7 @@ registerTest({
                 `\\( z \\) can take any value`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST4/62.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29552,7 +29552,7 @@ registerTest({
                 `Both are False`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST4/63.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29566,7 +29566,7 @@ registerTest({
                 `Entries \\( a[\\mathrm{~N}-i-1] \\) through \\( a[\\mathrm{N}-1] \\) contain the largest keys in the entire array.`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST4/64.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -29580,7 +29580,7 @@ registerTest({
                 `\\( 1\\; ||\\; 1 == 0 \\)`,
             ],
             answer: ["C", "D"],
-            solution: ``
+            solution: `<img src='images/MST4/65.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
     ]
 });
