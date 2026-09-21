@@ -29584,3 +29584,796 @@ registerTest({
         },
     ]
 });
+
+registerTest({
+    series: "cse-gate-classes",
+    name: "SWT - Digital Logic(Rapid Fire Test)",
+    date: "sep 22, 2026",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A new type of flip-flop, the \\( PU \\), is described by the given \\( \\text{PS-NS} \\) (i.e. Present State - Next State) table.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c|c|c|} \\hline P & U & Q & Q^*\\\\ \\hline 0&0&0&1\\\\ \\hline 0&0&1&0\\\\ \\hline 0&1&0&0\\\\ \\hline 0&1&1&0\\\\ \\hline 1&0&0&1\\\\ \\hline 1&0&1&1\\\\ \\hline 1&1&0&0\\\\ \\hline 1&1&1&1\\\\ \\hline \\end{array} $$ <br/>The excitation required to effect a state transition of the \\( PU \\) flip-flop from \\( 0 \\) to \\( 1 \\) is: </p> <p></p>`,
+            options: [
+                `\\( P=d \\), \\( U=0 \\)<br/>`,
+                `\\( P=d \\), \\( U=1 \\)<br/>`,
+                `\\( P=0 \\), \\( U=d \\)<br/>`,
+                `\\( P=1 \\), \\( U=d \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A new type of flip-flop, the \\( PU \\), is described by the given \\( \\text{PS-NS} \\) (i.e., Present State - Next State) table. The characteristic equation for this flip-flop is:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c|c|c|} \\hline P & U & Q & Q^*\\\\ \\hline 0&0&0&1\\\\ \\hline 0&0&1&0\\\\ \\hline 0&1&0&0\\\\ \\hline 0&1&1&0\\\\ \\hline 1&0&0&1\\\\ \\hline 1&0&1&1\\\\ \\hline 1&1&0&0\\\\ \\hline 1&1&1&1\\\\ \\hline \\end{array} $$ </p> <p></p>`,
+            options: [
+                `\\( Q^*=P\\cdot Q'+U'\\cdot Q \\)<br/>`,
+                `\\( Q^*=P\\cdot Q+U'\\cdot Q' \\)<br/>`,
+                `\\( Q^*=P'\\cdot Q+U\\cdot Q' \\)<br/>`,
+                `\\( Q^*=P\\cdot U+Q' \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A circuit consisting of a level of NOR gates followed by a level of AND gates is logically equivalent to: </p> <p style="text-align:center"><img alt="" height="176" src="images/swt-digital-logic-rf/q3_1.png" style="max-width: 100%;" width="393"/> </p> <p> </p> <p></p>`,
+            options: [
+                `a multi-input OR gate<br/>`,
+                `a multi-input AND gate<br/>`,
+                `a multi-input NOR gate<br/>`,
+                `a multi-input NAND gate`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The <strong>XOR property</strong> listed below that is <strong>NOT</strong> true is:</p> <p></p>`,
+            options: [
+                `\\( X \\oplus 0 = X \\)<br/>`,
+                `\\( X \\oplus 1 = X' \\)<br/>`,
+                `\\( X \\oplus X = X \\)<br/>`,
+                `\\( X \\oplus X' = 1 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>If the function \\( \\text{F(X,Y,Z)} \\) is represented by the \\( \\text{ON SET } \\Sigma_{\\text{X,Y,Z}}(0,3,5,6) \\), then the dual of this function \\( \\mathrm{F^D(X,Y,Z)} \\) is represented by the \\( \\text{ON SET}: \\) </p> <p></p>`,
+            options: [
+                `\\( \\Sigma_{\\text{X,Y,Z}}(0,3,5,6) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,2,4,7) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,2,4,6) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,3,5,7) \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>If the function \\( \\text{F(X,Y,Z)} \\) is represented by the \\( \\text{ON SET } \\Sigma_{\\text{X,Y,Z}}(0,3,5,6) \\), then the complement of this function \\( \\text{F'(X,Y,Z)} \\) is represented by the \\( \\text{ON SET}: \\) </p> <p></p>`,
+            options: [
+                `\\( \\Sigma_{\\text{X,Y,Z}}(0,3,5,6) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,2,4,7) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,2,4,6) \\)<br/>`,
+                `\\( \\Sigma_{\\text{X,Y,Z}}(1,3,5,7) \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>If the following hexadecimal number is converted to binary, what will be the most-significant three digits of the resulting binary number? <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\text{A7F5F44D98ABF423009F429C} $$ </p>`,
+            options: [],
+            answer: 101,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>You have an \\( 8 \\)-input multiplexer with signal names as follows: </p> <p style="text-align:center"><img alt="" height="369" src="images/swt-digital-logic-rf/q8_1.png" style="max-width: 100%;" width="289"/> </p> <p><br/>Which one of the following best describes what would happen if all three " \\( \\text{S} \\)" inputs were connected together and treated as a single input \\( ( \\)so they are either all \\( 0 \\) or all \\( 1) \\)? </p> <p></p>`,
+            options: [
+                `The device would always output \\( 0 \\).<br/>`,
+                `The device would implement the same input-output behavior as a priority encoder.<br/>`,
+                `The device could still be used as a multiplexer, but not an \\( 8 \\)-input multiplexer.<br/>`,
+                `The device would not function at all because multiplexers cannot have the same value on all of their control signals.`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>If you add two \\( 16 \\)-digit twos complement numbers, how many digits do you need in your result to guarantee that overflow does not occur? </p>`,
+            options: [],
+            answer: 17,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A \\( 2 \\)-to- \\( 4 \\) decoder is connected to a \\( 4 \\)-to- \\( 1 \\) Mux. What is the Boolean expression the circuit creates? </p> <p style="text-align:center"><img alt="" height="278" src="images/swt-digital-logic-rf/q10_1.png" style="max-width: 100%;" width="473"/> </p> <p> </p> <p></p>`,
+            options: [
+                `\\( \\overline{A}\\overline{B}\\overline{C}\\overline{D}+\\overline{A}BC\\overline{D}+A\\overline{B}\\overline{C}D+ABCD \\) <br/>`,
+                `\\( \\overline{A}\\overline{B}CD+\\overline{A}B\\overline{C}D+A\\overline{B}C\\overline{D}+AB\\overline{C}\\overline{D} \\) <br/>`,
+                `\\( \\overline{A}\\overline{B}\\overline{C}\\overline{D}+\\overline{A}B\\overline{C}D+A\\overline{B}C\\overline{D}+ABCD \\) <br/>`,
+                `\\( \\overline{A}\\overline{B}\\overline{C}D+\\overline{A}BCD+A\\overline{B}\\overline{C}\\overline{D}+ABC\\overline{D} \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The difference between a Mealy finite state machine and a Moore finite state machine is:</p> <p></p>`,
+            options: [
+                `the output of a Moore machine depends only on the input whereas the output of a Mealy machine depends on the input and the state.<br/>`,
+                `the output of a Moore machine depends only on the state of the machine whereas the output of a Mealy machine depends on the state and the input.<br/>`,
+                `the Moore model uses J-K flip-flops and the Mealy model uses D flip-flops.<br/>`,
+                `the Moore model uses a two-phase clock and the Mealy model uses a one-phase clock.`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>To set the flip-flop in the given figure to \\( Q=1 \\) without using the clock, the \\( \\text{ClrN} \\) input should be set to \\( \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ \\) and the \\( \\text{PreN} \\) input to \\( \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ \\). </p> <p style="text-align:center"><img alt="" height="154" src="images/swt-digital-logic-rf/q12_1.png" style="max-width: 100%;" width="299"/> </p> <p></p>`,
+            options: [
+                `\\( 0,0 \\)<br/>`,
+                `\\( 0,1 \\)<br/>`,
+                `\\( 1,0 \\)<br/>`,
+                `\\( 1,1 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>In the circuit shown below, \\( \\mathrm{P} \\) and \\( \\mathrm{Q} \\) are the inputs. The logical function realized by the circuit shown below is </p> <p style="text-align:center"><img alt="" src="images/swt-digital-logic-rf/q13_1.png" style="max-width: 100%;" width="250"/></p> <p></p>`,
+            options: [
+                `\\( \\mathrm{Y}=\\mathrm{PQ} \\)<br/>`,
+                `\\( \\mathrm{Y}=\\mathrm{P}+\\mathrm{Q} \\)<br/>`,
+                `\\( \\mathrm{Y}=\\overline{\\mathrm{PQ}} \\)<br/>`,
+                `\\( \\mathrm{Y}=\\overline{\\mathrm{P}+\\mathrm{Q}} \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p style="text-align:center"><img alt="" height="193" src="images/swt-digital-logic-rf/q14_1.png" style="max-width: 100%;" width="251"/></p> <p>Consider the circuit above. Which one of the following options correctly represents \\( f\\left(x,y,z\\right) \\) </p> <p></p>`,
+            options: [
+                `\\( x\\bar{z}+xy+\\bar{y}z \\)<br/>`,
+                `\\( x\\bar{z}+xy+\\overline{yz} \\)<br/>`,
+                `\\( xz+xy+\\overline{yz} \\)<br/>`,
+                `\\( xz+x\\bar{y}+\\bar{y}z \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A multiplexer with a \\( \\text{4-bit} \\) data select input is a </p> <p></p>`,
+            options: [
+                `\\( 4:1 \\) multiplexer<br/>`,
+                `\\( 2:1 \\) multiplexer<br/>`,
+                `\\( 16:1 \\) multiplexer<br/>`,
+                `\\( 8:1 \\) multiplexer`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A switch-tail ring counter is made by using a single \\( \\text{D} \\) flip-flop. The resulting circuit is a </p> <p></p>`,
+            options: [
+                `\\( \\text{SR} \\) flip-flop<br/>`,
+                `\\( \\text{JK} \\) flip-flop<br/>`,
+                `\\( \\text{D} \\) flip-flop<br/>`,
+                `\\( \\text{T} \\) flip-flop`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A pulse is applied to each input of an exclusive-OR gate. One pulse goes HIGH at \\( t=0 \\) and goes back LOW at \\( t=1 \\text{ ms} \\). The other pulse goes HIGH at \\( t=0.8 \\text{ ms} \\) and goes back LOW at \\( t=3 \\text{ ms} \\). The output pulse can be described as follows: </p> <p></p>`,
+            options: [
+                `It goes HIGH at \\( t=0 \\) and back LOW at \\( t=3 \\text{ ms} \\).<br/>`,
+                `It goes HIGH at \\( t=0 \\) and back LOW at \\( t=0.8 \\text{ ms} \\).<br/>`,
+                `It goes HIGH at \\( t=1 \\text{ ms} \\) and back LOW at \\( t=3 \\text{ ms} \\).<br/>`,
+                `both answers B and C`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A pulse is applied to each input of a \\( 2 \\)-input NAND gate. One pulse goes HIGH at \\( t=0 \\) and goes back LOW at \\( t=1 \\text{ ms} \\). The other pulse goes HIGH at \\( t=0.8 \\text{ ms} \\) and goes back LOW at \\( t=3 \\text{ ms} \\). The output pulse can be described as follows: </p> <p></p>`,
+            options: [
+                `It goes LOW at \\( t=0 \\) and back HIGH at \\( t=3 \\text{ ms} \\).<br/>`,
+                `It goes LOW at \\( t=0.8 \\text{ ms} \\) and back HIGH at \\( t=3 \\text{ ms} \\).<br/>`,
+                `It goes LOW at \\( t=0.8 \\text{ ms} \\) and back HIGH at \\( t=1 \\text{ ms} \\)s.<br/>`,
+                `It goes LOW at \\( t=0.8 \\text{ ms} \\) and back LOW at \\( t=1 \\text{ ms} \\).`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The binary number \\( 10001101010001101111 \\) can be written in hexadecimal as </p> <p></p>`,
+            options: [
+                `\\( \\text{AD467}_{16} \\)<br/>`,
+                `\\( \\text{8C46F}_{16} \\)<br/>`,
+                `\\( \\text{8D46F}_{16} \\)<br/>`,
+                `\\( \\text{AE46F}_{16} \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The \\( \\text{BCD} \\) number for decimal \\( 473 \\) is </p> <p></p>`,
+            options: [
+                `\\( 111011010 \\)<br/>`,
+                `\\( 110001110011 \\)<br/>`,
+                `\\( 010001110011 \\)<br/>`,
+                `\\( 010011110011 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The decimal number \\( -34 \\) is expressed in the \\( 2 \\)'s complement form as </p> <p></p>`,
+            options: [
+                `\\( 01011110 \\)<br/>`,
+                `\\( 10100010 \\)<br/>`,
+                `\\( 11011110 \\)<br/>`,
+                `\\( 01011101 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The decimal number \\( +122 \\) is expressed in the \\( 2 \\)'s complement form as </p> <p></p>`,
+            options: [
+                `\\( 01111010 \\)<br/>`,
+                `\\( 11111010 \\)<br/>`,
+                `\\( 01000101 \\)<br/>`,
+                `\\( 10000101 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The \\( 2 \\)'s complement of \\( 11001100 \\) is </p> <p></p>`,
+            options: [
+                `\\( 00110011 \\)<br/>`,
+                `\\( 00110100 \\)<br/>`,
+                `\\( 00110101 \\)<br/>`,
+                `\\( 00110110 \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The \\( 1 \\)'s complement of \\( 11110000 \\) is </p> <p></p>`,
+            options: [
+                `\\( 11111111 \\)<br/>`,
+                `\\( 11111110 \\)<br/>`,
+                `\\( 00001111 \\)<br/>`,
+                `\\( 10000001 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p>How many flip-flops are required to produce a divide-by- \\( 64 \\) device? </p>`,
+            options: [],
+            answer: 6,
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A flip-flop is SET when</p> <p></p>`,
+            options: [
+                `\\( J=0,K=0 \\)<br/>`,
+                `\\( J=0,K=1 \\)<br/>`,
+                `\\( J=1,K=0 \\)<br/>`,
+                `\\( J=1,K=1 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A J-K flip-flop with \\( J=1 \\) and \\( K=1 \\) has a \\( 10 ~\\text{kHz} \\) clock input. The \\( Q \\) output is </p> <p></p>`,
+            options: [
+                `constantly HIGH<br/>`,
+                `constantly LOW<br/>`,
+                `a \\( 10 ~\\text{kHz} \\) square wave<br/>`,
+                `a \\( 5 ~\\text{kHz} \\) square wave`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A feature that distinguishes the J-K flip-flop from the D flip-flop is the</p> <p></p>`,
+            options: [
+                `toggle condition<br/>`,
+                `preset input<br/>`,
+                `type of clock<br/>`,
+                `clear input`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>In general, a multiplexer has</p> <p></p>`,
+            options: [
+                `one data input, several data outputs, and selection inputs<br/>`,
+                `one data input, one data output, and one selection input<br/>`,
+                `several data inputs, several data outputs, and selection inputs<br/>`,
+                `several data inputs, one data output, and selection inputs`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>If a \\( 1 \\)-of- \\( 16 \\) decoder with active-LOW outputs exhibits a LOW on the decimal \\( 12 \\) output, what are the inputs? </p> <p></p>`,
+            options: [
+                `\\( A_3A_2A_1A_0=1010 \\)<br/>`,
+                `\\( A_3A_2A_1A_0=1110 \\)<br/>`,
+                `\\( A_3A_2A_1A_0=1100 \\)<br/>`,
+                `\\( A_3A_2A_1A_0=0100 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Two \\( 4 \\)-bit numbers \\( (1101 \\) and \\( 1011) \\) are applied to a \\( 4 \\)-bit parallel adder. The input carry is \\( 1 \\). Determine the sum \\( (\\Sigma) \\) and the output carry. </p> <p></p>`,
+            options: [
+                `\\( \\Sigma=1001,\\ \\text{Carry}=1 \\)<br/>`,
+                `\\( \\Sigma=1000,\\ \\text{Carry}=1 \\)<br/>`,
+                `\\( \\Sigma=1001,\\ \\text{Carry}=0 \\)<br/>`,
+                `\\( \\Sigma=1000,\\ \\text{Carry}=0 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A full-adder has \\( C_{in}=1 \\). What are the sum \\( (\\Sigma) \\) and the output carry \\( (C_{out}) \\) when \\( A=1 \\) and \\( B=1 \\)? </p> <p></p>`,
+            options: [
+                `\\( \\Sigma=0,\\ C_{out}=0 \\)<br/>`,
+                `\\( \\Sigma=0,\\ C_{out}=1 \\)<br/>`,
+                `\\( \\Sigma=1,\\ C_{out}=0 \\)<br/>`,
+                `\\( \\Sigma=1,\\ C_{out}=1 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>A pulse train can be delayed by a finite number of clock periods using</p> <p></p>`,
+            options: [
+                `a serial-in serial-out shift register<br/>`,
+                `a serial-in parallel-out shift register<br/>`,
+                `a parallel-in serial-out shift register<br/>`,
+                `a paralel-in parallel-out shift register`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>In a \\( \\text{J-K} \\) flip-flip we have \\( \\text{J} = \\overline{\\text{Q}} \\) and \\( \\text{K}=1 \\). Assuming the flip-flop was initially cleared and then clocked for \\( 6 \\) puleses, the sequence at the \\( \\text{Q} \\) output will be </p> <p style="text-align:center"><img alt="" height="166" src="images/swt-digital-logic-rf/q34_1.png" style="max-width: 100%;" width="293"/> </p> <p> </p> <p></p>`,
+            options: [
+                `\\( 010000 \\)<br/>`,
+                `\\( 011001 \\)<br/>`,
+                `\\( 010010 \\)<br/>`,
+                `\\( 010101 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The figure shows a mod- \\( \\mathrm{K} \\) counter, here \\( \\mathrm{K} \\) is equal to </p> <p style="text-align:center"><img alt="" height="165" src="images/swt-digital-logic-rf/q35_1.png" style="max-width: 100%;" width="400"/> </p> <p> </p> <p></p>`,
+            options: [
+                `\\( 1 \\)<br/>`,
+                `\\( 2 \\)<br/>`,
+                `\\( 3 \\)<br/>`,
+                `\\( 4 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Choose the correct option from \\( \\text{A, B, C, D} \\) after matching an item from Group \\( 1 \\) with the most appropriate item in Group \\( 2. \\) </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|l|l|} \\hline \\textbf{Group 1} & \\textbf{Group 2} \\\\\\hline \\text{P : Shift register} & \\text{1 : Frequency division} \\\\ \\text{Q : Counter} & \\text{2 : Addressing in memory chips} \\\\ \\text{R : Decoder} &&nbsp;\\text{3 : Serial to parallel data conversion} \\\\\\hline \\end{array} $$ </p> <p></p>`,
+            options: [
+                `\\( \\mathrm{P}-3, \\mathrm{Q}-2, \\mathrm{R}-1 \\) <br/>`,
+                `\\( \\text{P – 3, Q – 1, R – 2} \\)<br/>`,
+                `\\( \\mathrm{P}-2, \\mathrm{Q}-1, \\mathrm{R}-3 \\) <br/>`,
+                `\\( \\text{P – 1, Q – 2, R – 2} \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The present output \\( \\mathrm{Q}_{n} \\) of an edge triggered JK flip-flop is logic \\( 0. \\) If \\( \\mathrm{J}=1 \\), then \\( \\mathrm{Q}_{n+1} \\) </p> <p></p>`,
+            options: [
+                `cannot be determined<br/>`,
+                `will be logic \\( 0 \\)<br/>`,
+                `will be logic \\( 1 \\)<br/>`,
+                `will race around`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<p></p> <p>The negative edge triggered JK flip-flop in the Figure has J and K inputs tied to Logic High and a square wave of \\( 10 \\) cycles/second is applied to its clock (C) input.<br/><br/>The frequency of the output Q (in cycles/second) is \\( \\_\\_\\_\\_ \\). </p> <p>(rounded off to two decimal places)</p> <p style="text-align:center"><img alt="" height="233" src="images/swt-digital-logic-rf/q38_1.png" style="max-width: 100%;" width="253"/></p> <p> </p> <p></p>`,
+            options: [],
+            answer: [4.90, 5.10],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<p></p> <p>A binary ripple counter is designed to count \\( (0)_{10} \\) to \\( (64)_{10} \\). </p> <p>Which of the following is/are the number of flip-flops required to design the counter?</p> <p></p>`,
+            options: [
+                `\\( 6 \\)<br/>`,
+                `\\( 7 \\)<br/>`,
+                `\\( 4 \\)<br/>`,
+                `\\( 5 \\)`,
+            ],
+            answer: ["B"],
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Propagation delay is \\( \\_\\_\\_\\_\\_\\_\\_\\_ \\). </p> <p></p>`,
+            options: [
+                `a measure of the ability of a logic gate to drive further logic gates.<br/>`,
+                `the difference in chip temperature from when the power is off to when the power is on.<br/>`,
+                `the difference between what a logic gate outputs as a valid logic voltage and what the input of the next gates expects to see as a valid logic voltage.<br/>`,
+                `the time required for a signal to travel from the input of a logic gate to the output.`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following statements applies to asynchronous counters?</p> <p></p>`,
+            options: [
+                `Asynchronous counters are faster than synchronous counters.<br/>`,
+                `Asynchronous counters require more power than synchronous counters.<br/>`,
+                `All the flip-flops in an Asynchronous counter are clocked at the same time by a common external clock.<br/>`,
+                `Asynchronous counters are also called ripple counters.`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>What is the minimum number of flip-flops needed to build a Mod- \\( 10 \\) Asynchronous counter? </p> <p></p>`,
+            options: [
+                `\\( 3 \\)<br/>`,
+                `\\( 5 \\)<br/>`,
+                `\\( 4 \\)<br/>`,
+                `\\( 10 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>How are the \\( Q \\) and \\( \\overline{Q} \\) outputs of a flip flop affected by setting the active low<em> asynchronous</em> CLEAR input to a logic zero? </p> <p></p>`,
+            options: [
+                `No change.<br/>`,
+                `\\( Q=1 \\) and \\( \\overline{Q}=0 \\)<br/>`,
+                `\\( Q=0 \\) and \\( \\overline{Q}=1 \\)<br/>`,
+                `\\( Q=1 \\) and \\( \\overline{Q}=1 \\)`,
+            ],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>How are the \\( Q \\) and \\( \\overline{Q} \\) outputs of a flip flop affected by setting the active high <em>asynchronous</em> PRESET input to a logic one? </p> <p></p>`,
+            options: [
+                `No change.<br/>`,
+                `\\( Q=1 \\) and \\( \\overline{Q}=0 \\)<br/>`,
+                `\\( Q=0 \\) and \\( \\overline{Q}=1 \\)<br/>`,
+                `\\( Q=1 \\) and \\( \\overline{Q}=1 \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the devices shown below is a Negative Edge Triggered D flip-flop?</p> <p style="text-align:center"><img alt="" height="343" src="images/swt-digital-logic-rf/q45_1.png" style="max-width: 100%;" width="537"/> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following circuits is a half-adder?<br/> </p> <p style="text-align:center"><img alt="" height="293" src="images/swt-digital-logic-rf/q46_1.png" style="max-width: 100%;" width="622"/> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following Boolean equation is in Sum-Of-Products form?</p> <p></p>`,
+            options: [
+                `\\( F=A\\overline{B}C+\\overline{A}B\\overline{C}+A\\overline{C} \\) <br/>`,
+                `\\( F=\\overline{A}BC+A(\\overline{B}+C) \\) <br/>`,
+                `\\( F=(\\overline{A}+B+\\overline{C})(\\overline{A}+C)(A+\\overline{B}+C) \\) <br/>`,
+                `\\( F=\\overline{A}(B+C)+A(\\overline{B}+C) \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following K-maps is grouped properly and will result in the simplest solution?<br/> </p> <p style="text-align:center"><img alt="" height="267" src="images/swt-digital-logic-rf/q48_1.png" style="max-width: 100%;" width="575"/> </p> <p> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following logic circuits correctly implements the Boolean equation?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ F = \\overline{Y}Z + Y\\overline{Z} $$<br/> </p> <p style="text-align:center"><img alt="" height="350" src="images/swt-digital-logic-rf/q49_1.png" style="max-width: 100%;" width="759"/> </p> <p> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following K-Maps has the \\( 1 \\)'s &amp; \\( 0 \\)'s properly placed for the function \\( F_{20} \\) ?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c|c|c||c|} \\hline W & X & Y & Z & F\\\\ \\hline \\hline 0&0&0&0&0\\\\ \\hline 0&0&0&1&0\\\\ \\hline 0&0&1&0&1\\\\ \\hline 0&0&1&1&1\\\\ \\hline 0&1&0&0&0\\\\ \\hline 0&1&0&1&1\\\\ \\hline 0&1&1&0&1\\\\ \\hline 0&1&1&1&0\\\\ \\hline 1&0&0&0&1\\\\ \\hline 1&0&0&1&1\\\\ \\hline 1&0&1&0&0\\\\ \\hline 1&0&1&1&0\\\\ \\hline 1&1&0&0&0\\\\ \\hline 1&1&0&1&0\\\\ \\hline 1&1&1&0&0\\\\ \\hline 1&1&1&1&1\\\\ \\hline \\end{array} $$ <br/> </p> <p style="text-align:center"><img alt="" height="364" src="images/swt-digital-logic-rf/q50_1.png" style="max-width: 100%;" width="485"/> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following is the simplified equivalent for the Boolean equation shown?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ F = \\overline{X + \\overline{Y}} $$ </p> <p></p>`,
+            options: [
+                `\\( F = \\overline{X}Y \\)<br/>`,
+                `\\( F = X + \\overline{Y} \\)<br/>`,
+                `\\( F = X\\overline{Y} \\)<br/>`,
+                `\\( F = \\overline{X}\\overline{Y} \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following un-simplified Boolean expressions represent the logic circuit shown below?</p> <p style="text-align:center"><img alt="" height="157" src="images/swt-digital-logic-rf/q52_1.png" style="max-width: 100%;" width="482"/> </p> <p> </p> <p></p>`,
+            options: [
+                `\\( F = X + \\overline{Y}Z + \\overline{Y}\\overline{Z} \\)<br/>`,
+                `\\( F = X + \\overline{Y}Z + YZ \\)<br/>`,
+                `\\( F = X + Y\\overline{Z} + YZ \\)<br/>`,
+                `\\( F = \\overline{X} + \\overline{Y}Z + YZ \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following equations is the un-simplified Sum-of-Products equation for the truth table shown?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c|c||c|} \\hline X & Y & Z & F\\\\ \\hline \\hline 0&0&0&0\\\\ \\hline 0&0&1&1\\\\ \\hline 0&1&0&1\\\\ \\hline 0&1&1&0\\\\ \\hline 1&0&0&0\\\\ \\hline 1&0&1&0\\\\ \\hline 1&1&0&1\\\\ \\hline 1&1&1&0 \\\\ \\hline \\end{array} $$ </p> <p></p>`,
+            options: [
+                `\\( F=\\overline{X}\\overline{Y}Z+\\overline{X}Y\\overline{Z}+XY\\overline{Z} \\) <br/>`,
+                `\\( F=\\overline{X}\\overline{Y}Z+\\overline{X}Y\\overline{Z}+X\\overline{Y}Z \\) <br/>`,
+                `\\( F=\\overline{X}\\overline{Y}Z+\\overline{X}\\overline{Y}Z+XY\\overline{Z} \\) <br/>`,
+                `\\( F=X\\overline{Y}\\overline{Z}+\\overline{X}Y\\overline{Z}+XY\\overline{Z} \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following is a rule of Boolean algebra?</p> <p></p>`,
+            options: [
+                `\\( X&nbsp;\\bullet&nbsp;\\overline{X} = \\overline{X} \\)<br/>`,
+                `\\( X \\bullet&nbsp;X = X \\)<br/>`,
+                `\\( X + \\overline{X} = 0 \\)<br/>`,
+                `\\( X + X = 1 \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The truth table shown below represents which of the following gates?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c||c|} \\hline X & Y & Z\\\\ \\hline&nbsp;\\hline 0 & 0 & 1\\\\ \\hline 0 & 1 & 0\\\\ \\hline 1 & 0 & 0\\\\ \\hline 1 & 1 & 0\\\\ \\hline \\end{array} $$ </p> <p><br/> </p> <p style="text-align:center"><img alt="" height="180" src="images/swt-digital-logic-rf/q55_1.png" style="max-width: 100%;" width="400"/> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>The truth table shown below represents which of the following gates?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\begin{array}{|c|c||c|} \\hline X & Y & Z\\\\ \\hline \\hline 0 & 0 & 1\\\\ \\hline 0 & 1 & 1\\\\ \\hline 1 & 0 & 1\\\\ \\hline 1 & 1 & 0\\\\ \\hline \\end{array} $$ <br/> </p> <p style="text-align:center"><img alt="" height="176" src="images/swt-digital-logic-rf/q56_1.png" style="max-width: 100%;" width="390"/> </p> <p> </p> <p></p>`,
+            options: ["A", "B", "C", "D"],
+            answer: "C",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>Which of the following is the simplified equivalent for the Boolean equation \\( F = \\overline{Y} + X\\overline{Y} \\)? </p> <p></p>`,
+            options: [
+                `\\( F = XY \\)<br/>`,
+                `\\( F = X \\)<br/>`,
+                `\\( F = X\\overline{Y} \\)<br/>`,
+                `\\( F = \\overline{Y} \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>What is the binary equivalent of the hexadecimal number \\( \\mathrm{C_H} \\)? </p> <p></p>`,
+            options: [
+                `\\( 1000_2 \\)<br/>`,
+                `\\( 0110_2 \\)<br/>`,
+                `\\( 1001_2 \\)<br/>`,
+                `\\( 1100_2 \\)`,
+            ],
+            answer: "D",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>What is the decimal equivalent of the binary number \\( 010110_2 \\)? </p> <p></p>`,
+            options: [
+                `\\( 13_{10} \\)<br/>`,
+                `\\( 22_{10} \\)<br/>`,
+                `\\( 23_{10} \\)<br/>`,
+                `\\( 42_{10} \\)`,
+            ],
+            answer: "B",
+            solution: ``
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<p></p> <p>What is the binary equivalent of the decimal number \\( 13_{10} \\)? </p> <p></p>`,
+            options: [
+                `\\( 1101_2 \\)<br/>`,
+                `\\( 0111_2 \\)<br/>`,
+                `\\( 1011_2 \\)<br/>`,
+                `\\( 1001_2 \\)`,
+            ],
+            answer: "A",
+            solution: ``
+        },
+    ]
+});
