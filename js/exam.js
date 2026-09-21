@@ -110,7 +110,7 @@ async function checkActiveSession() {
       const data = await res.json().catch(() => ({}));
       if (data && data.sessionInvalidated) {
         stopSessionCheck();
-        alert("Aapka account kisi dusre device me login ho gaya hai. Is device se logout kiya ja raha hai.");
+        alert("Your account was logged in on another device. You have been logged out from this session.");
         clearSession();
         if (typeof logoutUser === 'function') logoutUser();
       }
@@ -156,7 +156,7 @@ window.fetch = async function(...args) {
 
       if (isSessionInvalidated) {
         stopSessionCheck();
-        alert("Aapka account kisi dusre device me login ho gaya hai. Is device se logout kiya ja raha hai.");
+        alert("Your account was logged in on another device. You have been logged out from this session.");
         clearSession();
         if (typeof logoutUser === 'function') logoutUser();
         throw new Error("HTTP 401 - Session superseded on another device");

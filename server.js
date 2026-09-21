@@ -348,7 +348,7 @@ const authenticateToken = (req, res, next) => {
           console.warn(`[Auth] Session superseded on another device for: ${dbUser.email}`);
           return res.status(401).json({ 
             success: false, 
-            message: "Aapka account kisi dusre device me login ho gaya hai. Yaha se logout kiya ja raha hai.",
+            message: "Your account was logged in on another device. You have been logged out from this session.",
             sessionInvalidated: true 
           });
         }
@@ -390,7 +390,7 @@ app.post('/api/refresh-token', async (req, res) => {
     if (dbUser.currentSessionId && decoded.sessionId && dbUser.currentSessionId !== decoded.sessionId) {
       return res.status(401).json({
         success: false,
-        message: "Aapka account kisi dusre device me login ho gaya hai.",
+        message: "Your account was logged in on another device. You have been logged out from this session.",
         sessionInvalidated: true
       });
     }
