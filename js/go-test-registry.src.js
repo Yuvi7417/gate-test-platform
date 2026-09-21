@@ -26186,7 +26186,7 @@ registerTest({
                 `None of the above.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/1.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26200,7 +26200,7 @@ registerTest({
                 `\\( \\left(\\begin{array}{c}N \\\\ k\\end{array}\\right) p^k(1-p)^{N-k} \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/2.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26214,7 +26214,7 @@ registerTest({
                 `\\( 0.63 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/3.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26228,7 +26228,7 @@ registerTest({
                 `\\( 1 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/4.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26242,7 +26242,7 @@ registerTest({
                 `\\( P\\left(A \\mid B^{\\prime}\\right)=1-P(A \\mid B) \\)`,
             ],
             answer: ["A", "C"],
-            solution: ``
+            solution: `<img src='images/MST/5.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26251,7 +26251,7 @@ registerTest({
             text: `<p>Consider now a refined probabilistic model with \\( n=2 \\) questions. For \\( i \\in\\{1,2\\} \\), let \\( X_i \\) be an indicator random variable which is \\( 1 \\) iff question \\( i \\) is answered correctly by the student. We know \\( \\mathbf{P}\\left[X_1=1 \\mid X_2=0\\right]=0.4, \\mathbf{P}\\left[X_2=1 \\mid X_1=1\\right]=0.8 \\) and \\( \\mathbf{P}\\left[X_1=1\\right]=0.5 \\) Compute the \\( P\\left[X_2=1 \\mid X_1=0\\right] \\) </p>`,
             options: [],
             answer: 0.7,
-            solution: ``
+            solution: `<img src='images/MST/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26265,7 +26265,7 @@ registerTest({
                 `None of these`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26279,7 +26279,7 @@ registerTest({
                 `All of them`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26293,7 +26293,7 @@ registerTest({
                 `I, II, IV`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26307,7 +26307,7 @@ registerTest({
                 `\\( 6 a-3 b-c=0 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26316,7 +26316,7 @@ registerTest({
             text: `<p>For what value of \\( c \\) are the vectors \\( \\left(\\begin{array}{c}-1 \\\\ 0 \\\\ -1\\end{array}\\right),\\left(\\begin{array}{l}2 \\\\ 1 \\\\ 2\\end{array}\\right) \\) and \\( \\left(\\begin{array}{l}1 \\\\ 1 \\\\ c\\end{array}\\right) \\) in \\( \\mathbb{R}^3 \\) linearly dependent? </p>`,
             options: [],
             answer: 1,
-            solution: ``
+            solution: `<img src='images/MST/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26330,7 +26330,7 @@ registerTest({
                 `has no solutions`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26344,7 +26344,7 @@ registerTest({
                 `can be \\( 2, 3 \\;\\text{or}\\;&nbsp;4 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/13.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26358,7 +26358,7 @@ registerTest({
                 `I, II, III`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26372,7 +26372,7 @@ registerTest({
                 `I and II Only`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26386,7 +26386,7 @@ registerTest({
                 `\\( 501 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26395,7 +26395,7 @@ registerTest({
             text: `<p>Let \\( \\mathrm{G} \\) be a non-cyclic group of order \\( 57 . \\) Then the number of elements of order \\( 5 \\) in \\( \\mathrm{G} \\) is _______ </p>`,
             options: [],
             answer: 0,
-            solution: ``
+            solution: `<img src='images/MST/17.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26404,7 +26404,7 @@ registerTest({
             text: `<p>The number of different Total order relations on a set of \\( 7 \\) elements is _______ </p>`,
             options: [],
             answer: 5040,
-            solution: ``
+            solution: `<img src='images/MST/18.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26413,7 +26413,7 @@ registerTest({
             text: `<p></p> <p>Consider a \\( 5 \\times 6 \\) rectangular grid as depicted in Figure \\( 1. \\) A staircase walk is a path in the grid which moves only right or up. </p> <p style="text-align:center"><img alt="" height="249" src="images/MST/q19_1.png" style="max-width: 100%;" width="589"/></p> <p>What is the total number of staircase walks from \\( \\text{A} \\) to \\( \\text{B} \\) that may or may not pass through the point \\( \\text{P?} \\) </p> <p></p>`,
             options: [],
             answer: 462,
-            solution: ``
+            solution: `<img src='images/MST/19.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26427,7 +26427,7 @@ registerTest({
                 `Antecedent of \\( \\text{S} \\) is equivalent to consequent of \\( \\text{S} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/20.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26436,7 +26436,7 @@ registerTest({
             text: `<p>What is the order of smallest non-cyclic group?</p>`,
             options: [],
             answer: 4,
-            solution: ``
+            solution: `<img src='images/MST/21.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26450,7 +26450,7 @@ registerTest({
                 `\\( |\\text{A}|+2 \\leq|\\text{B}| \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/22.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26459,7 +26459,7 @@ registerTest({
             text: `<p>The number of partitions of the set \\( \\text{X} = \\{a, b, c, d\\} \\) with “ \\( a \\)” and “ \\( b \\)” in the same block is ________ </p>`,
             options: [],
             answer: 5,
-            solution: ``
+            solution: `<img src='images/MST/23.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26473,7 +26473,7 @@ registerTest({
                 `None of these`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/24.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26487,7 +26487,7 @@ registerTest({
                 `For all sets \\( \\text{A, B},  \\) and \\( \\text{C}, \\) if \\( \\text{A} \\cap \\text{C = B} \\cap \\text{C} \\) then \\( \\text{A = B} \\).`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/25.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26501,7 +26501,7 @@ registerTest({
                 `\\( (\\text{P} \\wedge \\sim \\text{Q}) \\vee \\text{R} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/26.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26515,7 +26515,7 @@ registerTest({
                 `\\( \\text{A} = \\emptyset \\) or \\( \\text{B} = \\emptyset \\) or \\( \\text{A = B} \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/27.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26524,7 +26524,7 @@ registerTest({
             text: `<p>Number of Linearly independent eigenvectors corresponding to the matrix <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\left(\\begin{array}{ccc} 1 & 0 & 0 \\\\ -2 & 2 & -1 \\\\ 4 & 0 & 3 \\\\ \\end{array}\\right)  $$ </p>`,
             options: [],
             answer: 3,
-            solution: ``
+            solution: `<img src='images/MST/28.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26538,7 +26538,7 @@ registerTest({
                 `\\( \\forall \\mathrm{x}[(\\operatorname{conn}(\\mathrm{x}) \\wedge \\operatorname{cir}(\\mathrm{x})) \\rightarrow \\operatorname{tree}(\\mathrm{x})] \\)`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -26552,7 +26552,7 @@ registerTest({
                 `\\( \\{1,2\\} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/30.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26566,7 +26566,7 @@ registerTest({
                 `\\( -1,2 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/31.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26580,7 +26580,7 @@ registerTest({
                 `If \\( A \\mathbf{b}=\\lambda \\mathbf{b} \\) for some constant \\( \\lambda \\), then \\( \\lambda \\neq 0 \\).`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST/32.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26594,7 +26594,7 @@ registerTest({
                 `\\( -1 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST/33.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26608,7 +26608,7 @@ registerTest({
                 `\\( \\mathbf{v}_2=-\\mathbf{v}_1+\\mathbf{v}_4 \\)`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST/34.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26622,7 +26622,7 @@ registerTest({
                 `\\( \\left(\\begin{array}{l}5 \\\\ 3\\end{array}\\right) p^3(1-p)^2 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/35.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26636,7 +26636,7 @@ registerTest({
                 `\\( 0 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/36.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26645,7 +26645,7 @@ registerTest({
             text: `<p>Let \\( A \\) and \\( B \\) be two events (not necessarily independent) such that <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  P(A,B)=0.15,\\quad P(A^c,B^c)=0.25,\\quad P(A)=0.6.  $$ What is the probability of \\( P(A^c,B) \\)? </p>`,
             options: [],
             answer: 0.15,
-            solution: ``
+            solution: `<img src='images/MST/37.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26659,7 +26659,7 @@ registerTest({
                 `\\( 3 / 4 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/38.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26673,7 +26673,7 @@ registerTest({
                 `None of these`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/39.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26687,7 +26687,7 @@ registerTest({
                 `\\( 0.940 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/40.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26701,7 +26701,7 @@ registerTest({
                 `If \\( g^&nbsp;m=1, \\) for some \\( g \\in \\mathrm{G}, \\) then \\( m \\mid o(\\mathrm{G}) \\).`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/41.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26715,7 +26715,7 @@ registerTest({
                 `The order of an element \\( y \\) in a group \\( \\text{G} \\) is equal to the size of the subgroup generated by \\( y \\).`,
             ],
             answer: ["B", "D"],
-            solution: ``
+            solution: `<img src='images/MST/42.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26729,7 +26729,7 @@ registerTest({
                 `\\( o(g)=o\\left(h g h^{-1}\\right) \\) for any \\( h \\in \\text{G} \\).`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST/43.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26743,7 +26743,7 @@ registerTest({
                 `\\( (a b)^n=a^n b^n \\) for all \\( a, b \\in \\text{G} \\), \\( n \\in Z \\) if and only if \\( \\text{G} \\) is abelian.`,
             ],
             answer: ["A", "B", "D"],
-            solution: ``
+            solution: `<img src='images/MST/44.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26757,7 +26757,7 @@ registerTest({
                 `The order of \\( d \\) is \\( 2. \\)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26771,7 +26771,7 @@ registerTest({
                 `\\( h^k \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/46.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26780,7 +26780,7 @@ registerTest({
             text: `<p>A graph is said to be \\( 2 \\)-colourable if each vertex can be coloured either red or blue and no two vertices of the same colour are connected by an edge. If some graph is not \\( 2 \\)-colorable, then we can reduce it to become \\( 2 \\)-colorable by deleting some edges. We are given any simple graph with \\( 101 \\) nodes. \\( k \\) is the least required number of edges we have to delete in order to make this graph \\( 2 \\)-colorable (Eg: \\( k=0 \\) for a graph which is already \\( 2 \\)-colorable). The minimum value for ' \\( k \\) ' to reach the worst case is _______ </p>`,
             options: [],
             answer: 2500,
-            solution: ``
+            solution: `<img src='images/MST/47.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26794,7 +26794,7 @@ registerTest({
                 `\\( \\text{A - B} \\supseteq\\{3,4\\} \\) and \\( \\{1,2\\} \\subseteq \\text{B} \\) implies that \\( \\{1,2,3,4\\} \\subseteq \\text{A} \\cup \\text{B}. \\)`,
             ],
             answer: ["A", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST/48.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26808,7 +26808,7 @@ registerTest({
                 `Every relation which is both Irreflexive and Asymmetric, is strict order.`,
             ],
             answer: ["A", "C"],
-            solution: ``
+            solution: `<img src='images/MST/49.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26817,7 +26817,7 @@ registerTest({
             text: `<p>Find the number of positive integers \\( n \\in N \\), such that \\( 1 \\leq n \\leq 1000 \\), which are not divisible by either \\( 4,10 \\) or \\( 15 . \\) </p>`,
             options: [],
             answer: 667,
-            solution: ``
+            solution: `<img src='images/MST/50.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26831,7 +26831,7 @@ registerTest({
                 `None`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/51.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26845,7 +26845,7 @@ registerTest({
                 `\\( (p \\vee q) \\wedge(p \\rightarrow r \\wedge q) \\wedge(q \\rightarrow \\neg r \\wedge p) \\)`,
             ],
             answer: ["A", "C"],
-            solution: ``
+            solution: `<img src='images/MST/52.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26859,7 +26859,7 @@ registerTest({
                 `If \\( f \\) is one-to-one then \\( h \\) is one-to-one.`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/53.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26873,7 +26873,7 @@ registerTest({
                 `None of these`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/54.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26887,7 +26887,7 @@ registerTest({
                 `\\( 3 / 4 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/55.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26901,7 +26901,7 @@ registerTest({
                 `\\( 1-p^n \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST/56.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26915,7 +26915,7 @@ registerTest({
                 `\\( n-5 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST/57.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26929,7 +26929,7 @@ registerTest({
                 `For some \\( \\mathbf{b} \\) in \\( \\mathbb{R}^m \\), the system \\( \\text{M} \\mathbf{x}=\\mathbf{b} \\) has a unique solution.`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/58.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26943,7 +26943,7 @@ registerTest({
                 `\\(  \\left[\\begin{array}{c} 3\\\\ -1\\\\ \\end{array}\\right]  \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST/59.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26952,7 +26952,7 @@ registerTest({
             text: `<p>The set \\( \\{1, 2, 3, \\dots , n - 1\\} \\) is a group under multiplication modulo \\( n. \\) Then the smallest value of \\( n \\) between \\( 20 \\) and \\( 30 \\) is \\( (20, 30 \\) included \\( )\\; \\) _______ </p>`,
             options: [],
             answer: 23,
-            solution: ``
+            solution: `<img src='images/MST/60.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26966,7 +26966,7 @@ registerTest({
                 `\\( f: \\mathbb{Z} \\rightarrow \\mathbb{Z} \\) defined by \\( f(x)=x^{2} \\)`,
             ],
             answer: ["A"],
-            solution: ``
+            solution: `<img src='images/MST/61.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26980,7 +26980,7 @@ registerTest({
                 `\\( \\forall y \\exists x M(x, y) \\)`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST/62.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -26994,7 +26994,7 @@ registerTest({
                 `\\( x \\wedge (x \\vee&nbsp;y) = x \\)`,
             ],
             answer: ["A", "B", "D"],
-            solution: ``
+            solution: `<img src='images/MST/63.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27003,7 +27003,7 @@ registerTest({
             text: `<p></p> <p><strong><img alt="" height="281" src="images/MST/q64_1.png" style="max-width: 100%;" width="312"/></strong></p> <p>The number of elements which do not have complements in the above lattices is __________</p> <p></p>`,
             options: [],
             answer: 6,
-            solution: ``
+            solution: `<img src='images/MST/64.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27017,7 +27017,7 @@ registerTest({
                 `\\( \\neg \\forall x (P(x) \\wedge Q(x)) \\models \\exists x \\neg P(x) \\wedge \\exists x \\neg Q(x) \\)`,
             ],
             answer: ["B"],
-            solution: ``
+            solution: `<img src='images/MST/65.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
     ]
 });
@@ -28721,8 +28721,6 @@ registerTest({
         },
     ]
 });
-
-
 
 registerTest({
     series: "cs-gate-classes",
