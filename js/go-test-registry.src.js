@@ -29586,7 +29586,7 @@ registerTest({
 });
 
 registerTest({
-    series: "cse-gate-classes",
+    series: "cs-gate-classes",
     name: "SWT - Digital Logic(Rapid Fire Test)",
     date: "sep 22, 2026",
     questions: [
