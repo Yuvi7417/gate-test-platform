@@ -16,17 +16,176 @@
 const APP_VERSION = "v1";
 const SESSION_KEY = "apexcore_session";
 
-// Global Fetch Interceptor for JWT Expiry
+// Global Fetch Interceptor for JWT Expiry & Auto-refresh
 const originalFetch = window.fetch;
+let isRefreshingToken = false;
+let refreshSubscribers = [];
+
+function onTokenRefreshed(newToken) {
+  refreshSubscribers.forEach(cb => cb(newToken));
+  refreshSubscribers = [];
+}
+
+async function attemptTokenRefresh() {
+  if (isRefreshingToken) {
+    return new Promise(resolve => refreshSubscribers.push(resolve));
+  }
+  isRefreshingToken = true;
+
+  try {
+    // 1. Silent Firebase refresh if user is signed in with Firebase
+    if (window.firebase && firebase.auth && firebase.auth().currentUser) {
+      try {
+        const idToken = await firebase.auth().currentUser.getIdToken(true);
+        const fbRes = await originalFetch('/api/firebase-login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ idToken })
+        });
+        const data = await fbRes.json();
+        if (data.success && data.token) {
+          localStorage.setItem('apexcore_token', data.token);
+          onTokenRefreshed(data.token);
+          isRefreshingToken = false;
+          return data.token;
+        }
+      } catch (e) {
+        console.warn("Firebase silent refresh error:", e);
+      }
+    }
+
+    // 2. Server-side token refresh via /api/refresh-token
+    const currentToken = localStorage.getItem('apexcore_token');
+    if (currentToken) {
+      try {
+        const refRes = await originalFetch('/api/refresh-token', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${currentToken}` },
+          body: JSON.stringify({ token: currentToken })
+        });
+        const data = await refRes.json();
+        if (data.success && data.token) {
+          localStorage.setItem('apexcore_token', data.token);
+          onTokenRefreshed(data.token);
+          isRefreshingToken = false;
+          return data.token;
+        }
+      } catch (e) {
+        console.warn("Backend token refresh error:", e);
+      }
+    }
+  } catch (err) {
+    console.error("Token refresh failed:", err);
+  }
+
+  isRefreshingToken = false;
+  onTokenRefreshed(null);
+  return null;
+}
+
+/* ---------- Single-Device Active Session Monitor ---------- */
+let sessionCheckTimer = null;
+
+function startSessionCheck() {
+  if (sessionCheckTimer) clearInterval(sessionCheckTimer);
+  sessionCheckTimer = setInterval(checkActiveSession, 20000); // Check every 20 seconds
+}
+
+function stopSessionCheck() {
+  if (sessionCheckTimer) {
+    clearInterval(sessionCheckTimer);
+    sessionCheckTimer = null;
+  }
+}
+
+async function checkActiveSession() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token || !currentUser) return;
+
+  try {
+    const res = await originalFetch('/api/session-check', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    if (res.status === 401) {
+      const data = await res.json().catch(() => ({}));
+      if (data && data.sessionInvalidated) {
+        stopSessionCheck();
+        alert("Aapka account kisi dusre device me login ho gaya hai. Is device se logout kiya ja raha hai.");
+        clearSession();
+        if (typeof logoutUser === 'function') logoutUser();
+      }
+    }
+  } catch (err) {
+    // Network hiccup, ignore
+  }
+}
+
+// Check session immediately when user switches back to this tab
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden && currentUser && localStorage.getItem('apexcore_token')) {
+    checkActiveSession();
+  }
+});
+
 window.fetch = async function(...args) {
-  const res = await originalFetch.apply(this, args);
+  let res;
+  try {
+    res = await originalFetch.apply(this, args);
+  } catch (netErr) {
+    throw netErr;
+  }
+
+  const url = typeof args[0] === 'string' ? args[0] : (args[0] && args[0].url ? args[0].url : '');
+
+  // If server reported token expired via header on a successful recovery, refresh token silently in background
+  if (res.headers && res.headers.get('X-Token-Expired') === 'true') {
+    attemptTokenRefresh().catch(() => {});
+  }
+
+  // Handle 401/403
   if (!res.ok && (res.status === 401 || res.status === 403)) {
-    const url = typeof args[0] === 'string' ? args[0] : (args[0] && args[0].url ? args[0].url : '');
-    if (url.includes('/api/')) {
-      alert("Session expired. Please log in again.");
-      clearSession();
-      if (typeof logoutUser === 'function') logoutUser();
-      throw new Error("HTTP " + res.status + " - Session Expired");
+    if (url.includes('/api/') && !url.includes('/api/refresh-token') && !url.includes('/api/firebase-login') && !url.includes('/api/verify-otp') && !url.includes('/api/send-otp')) {
+      // Check if session was invalidated because user logged in on another device
+      let isSessionInvalidated = false;
+      try {
+        const errData = await res.clone().json();
+        if (errData && errData.sessionInvalidated) {
+          isSessionInvalidated = true;
+        }
+      } catch (e) {}
+
+      if (isSessionInvalidated) {
+        stopSessionCheck();
+        alert("Aapka account kisi dusre device me login ho gaya hai. Is device se logout kiya ja raha hai.");
+        clearSession();
+        if (typeof logoutUser === 'function') logoutUser();
+        throw new Error("HTTP 401 - Session superseded on another device");
+      }
+
+      const newToken = await attemptTokenRefresh();
+      if (newToken) {
+        // Clone request with updated token
+        let input = args[0];
+        let init = args[1] ? { ...args[1] } : {};
+        if (typeof input === 'string') {
+          init.headers = init.headers ? new Headers(init.headers) : new Headers();
+          init.headers.set('Authorization', `Bearer ${newToken}`);
+          return originalFetch(input, init);
+        } else if (input instanceof Request) {
+          const newHeaders = new Headers(input.headers);
+          newHeaders.set('Authorization', `Bearer ${newToken}`);
+          const newReq = new Request(input, { headers: newHeaders });
+          return originalFetch(newReq);
+        }
+      }
+
+      // If token refresh failed:
+      if (!url.includes('/api/submit-test')) {
+        alert("Session expired. Please log in again.");
+        clearSession();
+        if (typeof logoutUser === 'function') logoutUser();
+      }
+      throw new Error("HTTP " + res.status + " - Authentication Error");
     }
   }
   return res;
@@ -50,7 +209,36 @@ function saveSession() {
 function clearSession() {
   try {
     localStorage.removeItem(SESSION_KEY);
+    localStorage.removeItem('apexcore_token');
   } catch (e) { }
+}
+
+function syncPendingSubmissions() {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token) return;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith("apex_pending_test_")) {
+        const raw = localStorage.getItem(key);
+        if (raw) {
+          const payload = JSON.parse(raw);
+          fetch('/api/submit-test', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify(payload)
+          }).then(res => res.json()).then(data => {
+            if (data && data.success) {
+              localStorage.removeItem(key);
+            }
+          }).catch(e => console.warn("Failed syncing pending test:", e));
+        }
+      }
+    }
+  } catch (e) {}
 }
 
 function restoreSession() {
@@ -78,6 +266,8 @@ function restoreSession() {
   fetchUserResults();
   fetchFreshUserData();
   syncLearnNav();
+  syncPendingSubmissions();
+  startSessionCheck();
 }
 
 async function fetchFreshUserData(retries = 5) {
@@ -419,6 +609,8 @@ function loginUser(user, isRestore) {
   document.getElementById("continueBtn").classList.remove("ready");
 
   if (!isRestore) saveSession();
+  syncPendingSubmissions();
+  startSessionCheck();
 }
 
 function toggleProfileMenu(e) {
@@ -431,6 +623,7 @@ document.addEventListener("click", () =>
 
 function logoutUser(e) {
   if (e && e.stopPropagation) e.stopPropagation();
+  stopSessionCheck();
   document.body.classList.remove("logged-in");
   document.getElementById("profileChip").classList.remove("show", "open");
   document.getElementById("loginBtn").style.display = "inline-flex";
@@ -1905,64 +2098,72 @@ function confirmSubmit() {
   document.getElementById("successOverlay").classList.add("show");
 
   // Submit to DB
-  const token = localStorage.getItem('apexcore_token');
-  if (token) {
-    const payload = {
-      testName: document.getElementById("playerTopTitle").textContent,
-      score,
-      maxScore,
-      correctCount,
-      wrongCount,
-      unattempted,
-      timeTakenSecs,
-      answers: playerState
-    };
-    const submitWithRetry = async (retries = 5) => {
-      try {
-        const res = await fetch('/api/submit-test', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-          },
-          body: JSON.stringify(payload)
-        });
-        if (!res.ok) {
-          if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
-            setTimeout(() => submitWithRetry(retries - 1), 4000);
-            return;
-          }
-          throw new Error("HTTP " + res.status);
-        }
-        const data = await res.json();
-        if (data.success) {
-          const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
-          if (existingIndex !== -1) {
-            userResults[existingIndex] = payload;
-          } else {
-            userResults.push(payload);
-          }
-          const seriesObj = testSeries.find((x) => x.id === currentTestListId);
-          if (seriesObj) renderTestList(seriesObj, "all");
-          
-          // Delete TestState from server and local storage since test is finished
-          localStorage.removeItem("apex_teststate_" + payload.testName);
-          fetch('/api/sync/teststate/' + encodeURIComponent(payload.testName), {
-            method: 'DELETE',
-            headers: { 'Authorization': `Bearer ${token}` }
-          }).catch(err => console.error(err));
-        }
-      } catch (err) {
-        console.error("Error submitting test:", err);
-        if (retries > 0) {
-          setTimeout(() => submitWithRetry(retries - 1), 4000);
-        } else {
-          alert("Failed to save test result due to network error! Your internet or server might be down. Please screenshot your score.");
-        }
-      }
-    };
-    submitWithRetry();
+  const payload = {
+    testName: document.getElementById("playerTopTitle").textContent,
+    score,
+    maxScore,
+    correctCount,
+    wrongCount,
+    unattempted,
+    timeTakenSecs,
+    answers: playerState
+  };
+
+  // Immediate local update so user can see result right away
+  const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
+  if (existingIndex !== -1) {
+    userResults[existingIndex] = payload;
+  } else {
+    userResults.push(payload);
   }
+  const seriesObj = testSeries.find((x) => x.id === currentTestListId);
+  if (seriesObj) renderTestList(seriesObj, "all");
+
+  // Save to pending queue in localStorage so results are NEVER lost
+  try {
+    localStorage.setItem("apex_pending_test_" + payload.testName, JSON.stringify(payload));
+  } catch (e) {}
+
+  const submitWithRetry = async (retries = 5) => {
+    const currentToken = localStorage.getItem('apexcore_token');
+    if (!currentToken) {
+      console.warn("No token available for test submission, saved to pending queue.");
+      return;
+    }
+    try {
+      const res = await fetch('/api/submit-test', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${currentToken}`
+        },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) {
+        if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+          setTimeout(() => submitWithRetry(retries - 1), 4000);
+          return;
+        }
+        throw new Error("HTTP " + res.status);
+      }
+      const data = await res.json();
+      if (data.success) {
+        // Successfully saved in DB, clear pending queue
+        localStorage.removeItem("apex_pending_test_" + payload.testName);
+        localStorage.removeItem("apex_teststate_" + payload.testName);
+        fetch('/api/sync/teststate/' + encodeURIComponent(payload.testName), {
+          method: 'DELETE',
+          headers: { 'Authorization': `Bearer ${currentToken}` }
+        }).catch(err => console.error(err));
+      }
+    } catch (err) {
+      console.error("Error submitting test:", err);
+      if (retries > 0) {
+        setTimeout(() => submitWithRetry(retries - 1), 4000);
+      }
+    }
+  };
+  submitWithRetry();
 
   setTimeout(() => {
     document.getElementById("successOverlay").classList.remove("show");

@@ -29,7 +29,8 @@ if (process.env.MONGODB_URI && process.env.MONGODB_URI !== 'YOUR_MONGODB_CONNECT
 const userSchema = new mongoose.Schema({
   name: String,
   email: { type: String, unique: true },
-  enrolledCourses: [String]
+  enrolledCourses: [String],
+  currentSessionId: { type: String, default: null }
 });
 const User = mongoose.model('User', userSchema);
 
@@ -151,11 +152,16 @@ app.post('/api/firebase-login', async (req, res) => {
     }
     user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
 
-    // 3. Generate our own backend JWT token
+    // 3. Generate unique session ID for Single-Device Login (invalidates previous devices)
+    const sessionId = (crypto.randomUUID ? crypto.randomUUID() : crypto.randomBytes(16).toString('hex'));
+    dbUser.currentSessionId = sessionId;
+    await dbUser.save();
+
+    // 4. Generate our own backend JWT token (valid for 1 year, bound to this device session)
     const token = jwt.sign(
-      { email: user.email, name: user.name, _id: user._id },
+      { email: user.email, name: user.name, _id: user._id, sessionId },
       process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
-      { expiresIn: '30d' }
+      { expiresIn: '365d' }
     );
 
     res.json({ success: true, token, user });
@@ -256,10 +262,15 @@ app.post('/api/verify-otp', async (req, res) => {
       }
       user = { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id };
 
+      // Generate unique session ID for Single-Device Login
+      const sessionId = (crypto.randomUUID ? crypto.randomUUID() : crypto.randomBytes(16).toString('hex'));
+      dbUser.currentSessionId = sessionId;
+      await dbUser.save();
+
       const token = jwt.sign(
-        { email: user.email, name: user.name, _id: user._id },
+        { email: user.email, name: user.name, _id: user._id, sessionId },
         process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
-        { expiresIn: '30d' }
+        { expiresIn: '365d' }
       );
       res.json({ success: true, token, user });
     } else {
@@ -304,21 +315,108 @@ app.post('/api/create-order', async (req, res) => {
   }
 });
 
-// Middleware to verify JWT
+// Middleware to verify JWT and enforce Single-Device Login
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
   if (!token) return res.status(401).json({ success: false, message: "Unauthorized" });
 
-  jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret_for_local_testing', (err, user) => {
+  jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret_for_local_testing', async (err, user) => {
     if (err) {
-      console.error("JWT Verification Error:", err.message);
-      return res.status(403).json({ success: false, message: "Forbidden: " + err.message });
+      // If token signature is authentic but expired, recover user so test submissions and actions never fail
+      if (err.name === 'TokenExpiredError') {
+        const decoded = jwt.decode(token);
+        if (decoded && (decoded._id || decoded.email)) {
+          console.warn(`[Auth] Recovered valid expired token for user: ${decoded.email || decoded._id}`);
+          user = decoded;
+          res.setHeader('X-Token-Expired', 'true');
+        } else {
+          console.error("JWT Verification Error:", err.message);
+          return res.status(403).json({ success: false, message: "Forbidden: " + err.message, expired: true });
+        }
+      } else {
+        console.error("JWT Verification Error:", err.message);
+        return res.status(403).json({ success: false, message: "Forbidden: " + err.message });
+      }
     }
+
+    // Enforce 1 Device Login: Check if another device logged in after this token was issued
+    if (user && user._id) {
+      try {
+        const dbUser = await User.findById(user._id).select('currentSessionId email');
+        if (dbUser && dbUser.currentSessionId && user.sessionId && dbUser.currentSessionId !== user.sessionId) {
+          console.warn(`[Auth] Session superseded on another device for: ${dbUser.email}`);
+          return res.status(401).json({ 
+            success: false, 
+            message: "Aapka account kisi dusre device me login ho gaya hai. Yaha se logout kiya ja raha hai.",
+            sessionInvalidated: true 
+          });
+        }
+      } catch (dbErr) {
+        console.error("Session check DB error:", dbErr);
+      }
+    }
+
     req.user = user;
     next();
   });
 };
+
+// Check Session Active (used by client to detect single-device login)
+app.get('/api/session-check', authenticateToken, (req, res) => {
+  res.json({ success: true, message: "Session active" });
+});
+
+// Refresh Token Endpoint
+app.post('/api/refresh-token', async (req, res) => {
+  const authHeader = req.headers['authorization'];
+  const token = (authHeader && authHeader.split(' ')[1]) || req.body.token;
+  if (!token) return res.status(400).json({ success: false, message: 'Token required' });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret_for_local_testing', { ignoreExpiration: true });
+    let dbUser = null;
+    if (decoded._id) {
+      dbUser = await User.findById(decoded._id).catch(() => null);
+    }
+    if (!dbUser && decoded.email) {
+      dbUser = await User.findOne({ email: decoded.email }).catch(() => null);
+    }
+    if (!dbUser) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    // Check if session was superseded by another device
+    if (dbUser.currentSessionId && decoded.sessionId && dbUser.currentSessionId !== decoded.sessionId) {
+      return res.status(401).json({
+        success: false,
+        message: "Aapka account kisi dusre device me login ho gaya hai.",
+        sessionInvalidated: true
+      });
+    }
+
+    const sessionId = decoded.sessionId || dbUser.currentSessionId || (crypto.randomUUID ? crypto.randomUUID() : crypto.randomBytes(16).toString('hex'));
+    if (!dbUser.currentSessionId) {
+      dbUser.currentSessionId = sessionId;
+      await dbUser.save();
+    }
+
+    const newToken = jwt.sign(
+      { email: dbUser.email, name: dbUser.name, _id: dbUser._id, sessionId },
+      process.env.JWT_SECRET || 'fallback_secret_for_local_testing',
+      { expiresIn: '365d' }
+    );
+
+    res.json({
+      success: true,
+      token: newToken,
+      user: { name: dbUser.name, email: dbUser.email, enrolledCourses: dbUser.enrolledCourses, _id: dbUser._id }
+    });
+  } catch (err) {
+    console.error("Token refresh failed:", err.message);
+    res.status(401).json({ success: false, message: 'Invalid token' });
+  }
+});
 
 // TEMPORARY: Free Enrollment (Bypass Razorpay for 48 hrs)
 app.post('/api/enroll-free', authenticateToken, async (req, res) => {
