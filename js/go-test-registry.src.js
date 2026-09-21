@@ -27039,7 +27039,7 @@ registerTest({
                 `All bit strings with more ones than zeros`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/1.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27053,7 +27053,7 @@ registerTest({
                 `None`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/2.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27067,7 +27067,7 @@ registerTest({
                 `\\( bbbaab \\)`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/3.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27081,7 +27081,7 @@ registerTest({
                 `I and III`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/4.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27095,7 +27095,7 @@ registerTest({
                 `I and II only`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/5.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27109,7 +27109,7 @@ registerTest({
                 `Set of strings ending with \\( a \\) and an even number of \\( b\\text{'s} \\) following the last \\( a. \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/6.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27123,7 +27123,7 @@ registerTest({
                 `\\( \\text{L}_3 \\) is deterministic CFL`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/7.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27132,7 +27132,7 @@ registerTest({
             text: `<p>Number of states in the minimal DFA that accepts the language described by the following regular expression is ________ <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  (a b+c d)^*(c \\varepsilon+\\emptyset b)  $$ </p>`,
             options: [],
             answer: 4,
-            solution: ``
+            solution: `<img src='images/MST2/8.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27146,7 +27146,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST2/9.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27160,7 +27160,7 @@ registerTest({
                 `Deadlock can be avoided by releasing locks as early as possible.`,
             ],
             answer: ["B"],
-            solution: ``
+            solution: `<img src='images/MST2/10.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27174,7 +27174,7 @@ registerTest({
                 `Strict \\( \\text{2PL} \\) produces strict schedules.`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/11.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27188,7 +27188,7 @@ registerTest({
                 `A wait-for graph with \\( 5 \\) nodes but only \\( 3 \\) in a cycle is not in a deadlock state.`,
             ],
             answer: ["B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/12.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27202,7 +27202,7 @@ registerTest({
                 `A write is only performed if transaction has a timestamp \\( \\geq \\) the read timestamp for the data item.`,
             ],
             answer: ["A", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/13.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27216,7 +27216,7 @@ registerTest({
                 `\\( \\mathrm{ABC} \\rightarrow \\mathrm{D} \\)`,
             ],
             answer: ["B", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/14.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27230,7 +27230,7 @@ registerTest({
                 `\\( \\mathrm{S} \\) is neither CS, nor VS.`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/15.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27239,7 +27239,7 @@ registerTest({
             text: `<p>The order of a leaf node in a \\( \\text{B tree} \\) is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is \\( 1 \\mathrm{~K} \\) bytes(i.e. 1024 bytes), data record pointer is \\( 7 \\) bytes long, the value field is \\( 9 \\) bytes long and a block pointer is \\( 6 \\) bytes long, what is the order of the leaf node? </p>`,
             options: [],
             answer: 46,
-            solution: ``
+            solution: `<img src='images/MST2/16.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27253,7 +27253,7 @@ registerTest({
                 `\\( \\text{N} \\log _2 \\text{N} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/17.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27267,7 +27267,7 @@ registerTest({
                 `\\( \\text{Q1} \\) and \\( \\text{Q2} \\) produce different answers.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/18.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27281,7 +27281,7 @@ registerTest({
                 `None of the above`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/19.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27295,7 +27295,7 @@ registerTest({
                 `crossproduct \\( (\\times) \\) and difference \\( (-) \\).`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/20.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27309,7 +27309,7 @@ registerTest({
                 `is never mapped to a table in conversion to a relational schema.`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/21.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27323,7 +27323,7 @@ registerTest({
                 `\\( \\mathrm{E} \\rightarrow \\mathrm{CD} \\)`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST2/22.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27337,7 +27337,7 @@ registerTest({
                 `\\( 200 \\) bits`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/23.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27351,7 +27351,7 @@ registerTest({
                 `\\( 221.34.7.82 : \\textsf{Class D} \\)`,
             ],
             answer: ["B", "C"],
-            solution: ``
+            solution: `<img src='images/MST2/24.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27365,7 +27365,7 @@ registerTest({
                 `\\( 24 \\) MByte`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/25.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27379,7 +27379,7 @@ registerTest({
                 `TCP is a network layer protocol.`,
             ],
             answer: ["A", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/26.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27393,7 +27393,7 @@ registerTest({
                 `Stealing bits from the inverse mask in order to create more sub networks`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/27.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27407,7 +27407,7 @@ registerTest({
                 `\\( \\textsf{NTP} \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/28.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27421,7 +27421,7 @@ registerTest({
                 `\\( 66 \\mathrm{~ms} \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/29.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 1,
@@ -27430,7 +27430,7 @@ registerTest({
             text: `<p>Consider sending a \\( 3000 \\) byte datagram (including \\( 20 \\) bytes of IP header) into a link that has an MTU of \\( 500 \\) bytes. How many fragments are generated? </p>`,
             options: [],
             answer: 7,
-            solution: ``
+            solution: `<img src='images/MST2/30.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27444,7 +27444,7 @@ registerTest({
                 `\\( 21 \\mathrm{~Mbps} \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/31.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27458,7 +27458,7 @@ registerTest({
                 `\\( 335545 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/32.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27472,7 +27472,7 @@ registerTest({
                 `\\( 1091.02 \\mathrm{~ms} \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/33.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27481,7 +27481,7 @@ registerTest({
             text: `<p></p> <p>Suppose \\( \\text{A} \\) is connected to \\( \\text{B} \\) via an intermediate router \\( \\text{R} \\). The link \\( \\text{A – R} \\) is instantaneous, but the \\( \\text{R}\\rightarrow \\text{B} \\) link transmits only \\( 14 \\) packet each second, one at a time. Assume \\( \\text{A} \\) sends to \\( \\text{B} \\) using sliding window protocol with window size \\( =4 \\). How large does the queue at \\( \\text{R} \\) grow in steady state? </p> <p>Steady state is state of system after some time (say after \\( 5 \\) minutes). </p> <p style="text-align:center"><img alt="" height="190" src="images/MST2/q34_1.png" style="max-width: 100%;" width="408"/></p> <p> </p> <p></p>`,
             options: [],
             answer: 2,
-            solution: ``
+            solution: `<img src='images/MST2/34.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27495,7 +27495,7 @@ registerTest({
                 `\\( 3 / 8 \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/35.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27509,7 +27509,7 @@ registerTest({
                 `\\( \\begin{aligned} & \\mathrm{S} \\rightarrow \\mathrm{Aa}|\\mathrm{Bb}| \\mathrm{c} \\\\ & \\mathrm{A} \\rightarrow \\mathrm{Ba} \\mid \\in \\\\ & \\mathrm{B} \\rightarrow \\mathrm{d} \\end{aligned} \\)`,
             ],
             answer: ["A", "B", "C"],
-            solution: ``
+            solution: `<img src='images/MST2/36.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27523,7 +27523,7 @@ registerTest({
                 `No string produced by the grammar has four consecutive \\( \\text{b's}. \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/37.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27537,7 +27537,7 @@ registerTest({
                 `None`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/38.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27551,7 +27551,7 @@ registerTest({
                 `The given TM halts on ALL strings.`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/39.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27565,7 +27565,7 @@ registerTest({
                 `The mistake is that the set of DCFL is equal to the set of CFL.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/40.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27579,7 +27579,7 @@ registerTest({
                 `\\( \\left\\{\\langle \\text{M} \\rangle \\mid \\text{M} \\right. \\) is a Turing machine and \\( \\left.\\text{L(M)}=\\Sigma^*\\right\\} \\).`,
             ],
             answer: ["A", "B"],
-            solution: ``
+            solution: `<img src='images/MST2/41.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27593,7 +27593,7 @@ registerTest({
                 `Neither \\( (1) \\) is subset of \\( (2), \\) nor \\( (2) \\) is subset of \\( (1). \\)`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/42.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27607,7 +27607,7 @@ registerTest({
                 `String \\( 1001, 101010 \\) are generated by \\( \\text{G}. \\)`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/43.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27621,7 +27621,7 @@ registerTest({
                 `\\( 1(01) ^\\ast 0 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/44.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27635,7 +27635,7 @@ registerTest({
                 `\\( (a+b)^\\ast c+(a+b)^\\ast d \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/45.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27649,7 +27649,7 @@ registerTest({
                 `The grammar is \\( \\text{LR(1)}. \\)`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/46.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27663,7 +27663,7 @@ registerTest({
                 `Shift-reduce parser for \\( \\text{G2} \\) requires a constant stack size to parse large strings (like a million \\( a\\text{'s}) \\)`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/47.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27677,7 +27677,7 @@ registerTest({
                 `The grammar is \\( \\operatorname{LR}(0) \\)`,
             ],
             answer: ["B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/48.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27686,7 +27686,7 @@ registerTest({
             text: `<p></p> <p>This is a right-recursive grammar:<br/> <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$  \\begin{aligned} & \\mathrm{E} \\rightarrow \\mathrm{T} \\mid \\mathrm{T}+\\mathrm{E} \\\\ & \\mathrm{T} \\rightarrow \\mathrm{P} \\mid \\mathrm{P} \\ast \\mathrm{~T} \\\\ & \\mathrm{P} \\rightarrow \\mathrm{id} \\end{aligned}  $$<br/> Following is the parse tree for sentence \\( x+y\\ast z \\). </p> <p style="text-align:center"><img alt="" src="images/MST2/q49_1.png" style="max-width: 100%;" width="300"/></p> <p><br/> How many handles are present in parse tree?</p> <p></p>`,
             options: [],
             answer: 8,
-            solution: ``
+            solution: `<img src='images/MST2/49.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27700,7 +27700,7 @@ registerTest({
                 `\\( \\begin{aligned} & \\text{E} \\rightarrow \\text{E}+\\text{T} \\mid \\text{T} \\\\ & \\text{T} \\rightarrow \\text{T} \\times \\text{P} \\mid \\text{P} \\\\ & \\text{P} \\rightarrow \\text{id} \\mid(\\text{E}) \\end{aligned} \\)`,
             ],
             answer: ["D"],
-            solution: ``
+            solution: `<img src='images/MST2/50.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27714,7 +27714,7 @@ registerTest({
                 `\\( 9 \\)`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/51.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27723,7 +27723,7 @@ registerTest({
             text: `<p></p> <p>Consider the following partial schedule for several data items for transactions \\( T_i \\) with timestamp \\( i: \\) </p> <p style="text-align:center"><img alt="" height="268" src="images/MST2/q52_1.png" style="max-width: 100%;" width="428"/></p> <p> How many transactions are Aborted by timestamp scheduler?</p> <p></p>`,
             options: [],
             answer: 2,
-            solution: ``
+            solution: `<img src='images/MST2/52.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27737,7 +27737,7 @@ registerTest({
                 `\\( st1; st2; st3; r1(A); w1(A); r2(A) \\)`,
             ],
             answer: ["A", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/53.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27751,7 +27751,7 @@ registerTest({
                 `\\( \\max (\\mathrm{Q} 1)=r&nbsp;; \\max (\\mathrm{Q} 2)=r \\)`,
             ],
             answer: ["B", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/54.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27765,7 +27765,7 @@ registerTest({
                 `\\( dhk \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/55.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27774,7 +27774,7 @@ registerTest({
             text: `<p>Consider the following relational database tables \\( \\text{R , S} \\) and \\( \\text{T}: \\) <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\overset{\\text{R}}{\\begin{array}{|cc|} \\hline \\hline \\mathrm{A} & \\mathrm{B} \\\\ \\hline 1 & 2 \\\\ 3 & 2 \\\\ 5 & 6 \\\\ 7 & 8 \\\\ 9 & 8 \\\\ \\hline \\end{array}} \\quad \\overset{\\text{S}}{\\begin{array}{|cc|} \\hline \\hline \\text{B} & \\text{C} \\\\ \\hline 6 & 2 \\\\ 2 & 4 \\\\ 8 & 1 \\\\ 8 & 3 \\\\ 2 & 5 \\\\ \\hline \\end{array}} \\quad \\overset{\\text{T}}{\\begin{array}{|cc|} \\hline \\hline \\mathrm{A} & \\mathrm{C} \\\\ \\hline 7 & 1 \\\\ 1 & 2 \\\\ 9 & 3 \\\\ 5 & 4 \\\\ 3 & 5 \\\\ \\hline \\end{array}} $$ What is the number of tuples in the result of the following relational algebra query: <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> $$ \\text{R} \\bowtie \\text{S} \\bowtie \\text{T}? $$ </p>`,
             options: [],
             answer: 3,
-            solution: ``
+            solution: `<img src='images/MST2/56.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27788,7 +27788,7 @@ registerTest({
                 `Neither \\( \\textsf{Q1} \\) nor \\( \\textsf{Q2} \\) produces the desired result.`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/57.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27802,7 +27802,7 @@ registerTest({
                 `<img alt="" src="images/MST2/q58_opt_4.png" style="max-width: 100%;" width="300"/>`,
             ],
             answer: "C",
-            solution: ``
+            solution: `<img src='images/MST2/58.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27816,7 +27816,7 @@ registerTest({
                 `None`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/59.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27830,7 +27830,7 @@ registerTest({
                 `\\( 200 \\) Bytes`,
             ],
             answer: "B",
-            solution: ``
+            solution: `<img src='images/MST2/60.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27844,7 +27844,7 @@ registerTest({
                 `\\( \\text{A C &nbsp;E &nbsp;H J} \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/61.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27858,7 +27858,7 @@ registerTest({
                 `\\( 255.255 .255 .224 \\)`,
             ],
             answer: "D",
-            solution: ``
+            solution: `<img src='images/MST2/62.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27872,7 +27872,7 @@ registerTest({
                 `\\( \\textsf{C4.5E.D1.02} \\) will be delivered to \\( \\textsf{B} \\)`,
             ],
             answer: ["B", "C"],
-            solution: ``
+            solution: `<img src='images/MST2/63.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27886,7 +27886,7 @@ registerTest({
                 `Host \\( \\text{X} \\) will see this packet.`,
             ],
             answer: ["A", "B", "C", "D"],
-            solution: ``
+            solution: `<img src='images/MST2/64.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
         {
             marks: 2,
@@ -27900,7 +27900,7 @@ registerTest({
                 `\\( 4 \\)`,
             ],
             answer: "A",
-            solution: ``
+            solution: `<img src='images/MST2/65.png' alt='solution' style='max-width:100%; border-radius: 8px;'>`
         },
     ]
 });
