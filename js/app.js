@@ -1,3 +1,236 @@
+
+window.toggleEEAccordionCard = function(headerElem) {
+  const card = headerElem.closest('.ee-subject-card');
+  if (card) card.classList.toggle('open');
+};
+
+const EE_SUBJECTS_CONFIG = [
+  {
+    name: "Electric Circuits",
+    icon: "⚡",
+    bg: "#e0f2fe",
+    color: "#0284c7",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Electric Circuits -1", type: "Topic", topics: "Basic circuit laws, KCL, KVL, Node & Mesh analysis, Network theorems" },
+      { name: "Topic Test 2", full: "TWT - Electric Circuits -2", type: "Topic", topics: "Transient analysis, Resonance, Two-port networks, AC steady state" },
+      { name: "Subject Test 1", full: "SWT - Electric Circuits", type: "Subject", topics: "Complete Electric Circuits Syllabus (Full Revision)" }
+    ]
+  },
+  {
+    name: "Control Systems",
+    icon: "🎛️",
+    bg: "#fef3c7",
+    color: "#d97706",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Control Systems -1", type: "Topic", topics: "Block diagram, Signal flow graph, Time response analysis, Routh-Hurwitz" },
+      { name: "Topic Test 2", full: "TWT - Control Systems -2", type: "Topic", topics: "Root locus, Nyquist & Bode plots, State space analysis, Compensators" },
+      { name: "Subject Test 1", full: "SWT - Control Systems", type: "Subject", topics: "Complete Control Systems Syllabus" }
+    ]
+  },
+  {
+    name: "Electrical Machines",
+    icon: "⚙️",
+    bg: "#ffe4e6",
+    color: "#e11d48",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Electrical Machines -1", type: "Topic", topics: "Single-phase & Three-phase Transformers, Autotransformers, Testing" },
+      { name: "Topic Test 2", full: "TWT - Electrical Machines -2", type: "Topic", topics: "DC Machines, Induction Machines, Synchronous Machines, Starting & Braking" },
+      { name: "Subject Test 1", full: "SWT - Electrical Machines", type: "Subject", topics: "Complete Electrical Machines Syllabus" }
+    ]
+  },
+  {
+    name: "Power Systems",
+    icon: "🔋",
+    bg: "#ede9fe",
+    color: "#7c3aed",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Power Systems -1", type: "Topic", topics: "Transmission lines, Corona, Cable parameters, Sag, Per-unit system" },
+      { name: "Topic Test 2", full: "TWT - Power Systems -2", type: "Topic", topics: "Load flow, Fault analysis (Symmetrical & Unsymmetrical), Power system stability" },
+      { name: "Subject Test 1", full: "SWT - Power Systems", type: "Subject", topics: "Complete Power Systems & Protection Syllabus" }
+    ]
+  },
+  {
+    name: "Power Electronics",
+    icon: "🔌",
+    bg: "#ecfdf5",
+    color: "#059669",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Power Electronics -1", type: "Topic", topics: "Power Semiconductor devices (SCR, MOSFET, IGBT), Phase-controlled rectifiers" },
+      { name: "Topic Test 2", full: "TWT - Power Electronics -2", type: "Topic", topics: "DC-DC Choppers, Inverters (VSI, CSI), PWM techniques, SMPS" },
+      { name: "Subject Test 1", full: "SWT - Power Electronics", type: "Subject", topics: "Complete Power Electronics Syllabus" }
+    ]
+  },
+  {
+    name: "Signals & Systems",
+    icon: "📶",
+    bg: "#e0e7ff",
+    color: "#4338ca",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Signals & Systems -1", type: "Topic", topics: "Continuous & Discrete time signals, LTI systems, Convolution" },
+      { name: "Topic Test 2", full: "TWT - Signals & Systems -2", type: "Topic", topics: "Fourier Series, Fourier Transform, Laplace & Z-Transform, Sampling theorem" },
+      { name: "Subject Test 1", full: "SWT - Signals & Systems", type: "Subject", topics: "Complete Signals & Systems Syllabus" }
+    ]
+  },
+  {
+    name: "Digital Electronics",
+    icon: "01",
+    bg: "#e0f2fe",
+    color: "#0369a1",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Digital Electronics -1", type: "Topic", topics: "Number systems, Boolean algebra, K-maps, Combinational logic circuits" },
+      { name: "Topic Test 2", full: "TWT - Digital Electronics -2", type: "Topic", topics: "Sequential circuits, Flip-flops, Counters, Shift registers, A/D & D/A converters" },
+      { name: "Subject Test 1", full: "SWT - Digital Electronics", type: "Subject", topics: "Complete Digital Electronics Syllabus" }
+    ]
+  },
+  {
+    name: "Analog Electronics",
+    icon: "〰️",
+    bg: "#fff7ed",
+    color: "#c2410c",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Analog Electronics -1", type: "Topic", topics: "Diode circuits, BJT & MOSFET biasing, Small-signal amplifier models" },
+      { name: "Topic Test 2", full: "TWT - Analog Electronics -2", type: "Topic", topics: "Op-Amp circuits, Feedback amplifiers, Oscillators, Active filters" },
+      { name: "Subject Test 1", full: "SWT - Analog Electronics", type: "Subject", topics: "Complete Analog Electronics Syllabus" }
+    ]
+  },
+  {
+    name: "Electrical & Electronics Measurements",
+    icon: "📐",
+    bg: "#fdf4ff",
+    color: "#a21caf",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - EMI -1", type: "Topic", topics: "PMMC, Moving Iron, Dynamometer instruments, Measurement of R, L, C bridges" },
+      { name: "Topic Test 2", full: "TWT - EMI -2", type: "Topic", topics: "Instrument transformers (CT, PT), Digital voltmeters, Oscilloscopes (CRO)" },
+      { name: "Subject Test 1", full: "SWT - Electrical & Electronics Measurements", type: "Subject", topics: "Complete Measurements & Instrumentation Syllabus" }
+    ]
+  },
+  {
+    name: "Engineering Mathematics",
+    icon: "f(x)",
+    bg: "#ede9fe",
+    color: "#6d28d9",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - Engineering Mathematics -1", type: "Topic", topics: "Linear Algebra (Matrices, Eigenvalues), Calculus, Vector analysis" },
+      { name: "Topic Test 2", full: "TWT - Engineering Mathematics -2", type: "Topic", topics: "Differential equations, Complex variables, Probability & Statistics" },
+      { name: "Subject Test 1", full: "SWT - Engineering Mathematics", type: "Subject", topics: "Complete Engineering Mathematics Syllabus" }
+    ]
+  },
+  {
+    name: "General Aptitude",
+    icon: "💡",
+    bg: "#ecfeff",
+    color: "#0e7490",
+    tests: [
+      { name: "Topic Test 1", full: "TWT - General Aptitude -1", type: "Topic", topics: "Quantitative Aptitude, Numerical computation, Data interpretation" },
+      { name: "Topic Test 2", full: "TWT - General Aptitude -2", type: "Topic", topics: "Verbal ability, English grammar, Deductive reasoning, Spatial aptitude" },
+      { name: "Subject Test 1", full: "SWT - General Aptitude", type: "Subject", topics: "Complete General Aptitude Syllabus" }
+    ]
+  },
+  {
+    name: "Electromagnetic Fields",
+    icon: "🧲",
+    bg: "#fefce8",
+    color: "#a16207",
+    tests: [
+      { name: "Subject Test 1", full: "SWT - Electromagnetic Fields", type: "Subject", topics: "Coulomb's Law, Gauss's Law, Ampere's Law, Faraday's Law, Maxwell's Equations" }
+    ]
+  }
+];
+
+window.renderEEAccordion = function(isUnlocked) {
+  let html = `
+    <div style="background: #ffffff; border: 1px solid #edf2f7; padding: 12px 18px; border-radius: 10px; display: flex; align-items: center; gap: 20px; font-size: 13px; margin-bottom: 6px;">
+      <span style="font-weight: 700; color: #475569; font-size: 11.5px;">TEST TYPES:</span>
+      <span style="display:inline-flex; align-items:center; gap:6px; color:#4338ca; font-weight:600;"><span style="width:8px; height:8px; border-radius:50%; background:#6366f1;"></span> Topic-wise</span>
+      <span style="display:inline-flex; align-items:center; gap:6px; color:#0f766e; font-weight:600;"><span style="width:8px; height:8px; border-radius:50%; background:#0d9488;"></span> Subject-wise</span>
+    </div>
+  `;
+
+  EE_SUBJECTS_CONFIG.forEach((sub, sIdx) => {
+    let completedCount = 0;
+    const testRows = sub.tests.map((test, tIdx) => {
+      let isCompleted = false;
+      let scoreText = '';
+      if (window.userResults && Array.isArray(window.userResults)) {
+        const r = window.userResults.find(x => x.testName && (x.testName.includes(test.full) || test.full.includes(x.testName)));
+        if (r) {
+          isCompleted = true;
+          completedCount++;
+          scoreText = `Score: ${r.score}/${r.maxScore || 100}`;
+        }
+      }
+
+      let statusHtml = '';
+      let actionHtml = '';
+
+      if (!isUnlocked) {
+        statusHtml = `<span class="ee-status-badge ee-status-locked"><span class="ee-status-dot"></span> Locked</span>`;
+        actionHtml = `<button class="ee-btn-locked" onclick="document.querySelector('.btn-enroll')?.click() || window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})">🔒 Enroll to Attempt</button>`;
+      } else if (isCompleted) {
+        statusHtml = `<span class="ee-status-badge ee-status-completed"><span class="ee-status-dot"></span> Completed (${scoreText})</span>`;
+        actionHtml = `<button class="ee-btn-result" onclick="openPastResult('${test.full.replace(/'/g, "\\'")}')">View Result</button>`;
+      } else {
+        statusHtml = `<span class="ee-status-badge ee-status-ready"><span class="ee-status-dot"></span> Ready to Attempt</span>`;
+        actionHtml = `<button class="ee-btn-start" onclick="openInstructions('${test.full.replace(/'/g, "\\'")}')">Start ▶</button>`;
+      }
+
+      const tagClass = test.type === 'Topic' ? 'ee-tag-topic' : 'ee-tag-subject';
+
+      return `
+        <tr>
+          <td style="width: 32px;"><span style="display:inline-block; width:15px; height:15px; border-radius:4px; border:1.5px solid ${isCompleted ? '#10b981' : '#cbd5e1'}; background:${isCompleted ? '#10b981' : 'transparent'};"></span></td>
+          <td style="font-weight: 600; color: #1e293b; width: 220px;">
+            ${test.name}
+            <span class="ee-tag-pill ${tagClass}">${test.type}</span>
+          </td>
+          <td style="color: #475569; font-size: 12.5px; line-height: 1.4;">${test.topics}</td>
+          <td style="width: 190px;">${statusHtml}</td>
+          <td style="width: 140px; text-align: right;">${actionHtml}</td>
+        </tr>
+      `;
+    }).join("");
+
+    const badgeClass = completedCount > 0 ? "ee-progress-badge has-done" : "ee-progress-badge";
+    const badgeText = isUnlocked ? `${completedCount} / ${sub.tests.length} Done` : `${sub.tests.length} Tests`;
+    const openClass = sIdx === 0 ? "ee-subject-card open" : "ee-subject-card";
+
+    html += `
+      <div class="${openClass}">
+        <div class="ee-subject-header" onclick="toggleEEAccordionCard(this)">
+          <div class="ee-subject-left">
+            <div class="ee-subject-icon" style="background: ${sub.bg}; color: ${sub.color};">${sub.icon}</div>
+            <div class="ee-subject-title">${sub.name}</div>
+          </div>
+          <div class="ee-subject-right">
+            <span class="${badgeClass}">${badgeText}</span>
+            <svg class="ee-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="ee-table-wrap">
+          <table class="ee-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>TEST NAME</th>
+                <th>TOPICS COVERED</th>
+                <th>STATUS</th>
+                <th style="text-align: right;">ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${testRows}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  });
+
+  return html;
+};
+
 /* ======================================================================
    app.js — general site logic: login/OTP, location dropdown, test-series
    listing, test-series detail page. (Not question content — see
@@ -1042,15 +1275,21 @@ function openDetail(id, pushHistory = true) {
     )
     .join("");
 
-  document.getElementById("dSchedule").innerHTML = t.schedule
-    .map(
-      (s) => `
-      <div class="schedule-card">
-        <div class="schedule-icon">${calIcon}</div>
-        <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
-      </div>`,
-    )
-    .join("");
+  if (t.id === 'ee-gate-pyq-2027') {
+    document.getElementById("dSchedule").className = "accordion-schedule-wrap";
+    document.getElementById("dSchedule").innerHTML = window.renderEEAccordion ? window.renderEEAccordion(false) : "";
+  } else {
+    document.getElementById("dSchedule").className = "schedule-grid";
+    document.getElementById("dSchedule").innerHTML = t.schedule
+      .map(
+        (s) => `
+        <div class="schedule-card">
+          <div class="schedule-icon">${calIcon}</div>
+          <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
+        </div>`,
+      )
+      .join("");
+  }
 
   showView("detail", false);
   if (pushHistory) {

@@ -890,6 +890,12 @@ window.filterByType = function() {
 
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
+  if (t && t.id === 'ee-gate-pyq-2027' && window.renderEEAccordion) {
+    grid.className = "accordion-testlist-wrap";
+    grid.innerHTML = window.renderEEAccordion(true);
+    return;
+  }
+  grid.className = "test-list-grid";
   const twList = t.schedule.filter((s) => (s[0] || "").toUpperCase().startsWith("TWT"));
   const fltList = t.schedule.filter((s) => {
     const upper = (s[0] || "").toUpperCase();
