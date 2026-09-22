@@ -359,14 +359,19 @@ window.testSeries = [
       },
     ],
     schedule: [
-      // ["SWt - C programming", "Oct 01, 2026"],
-      // ["SWt - C programming-1", "Oct 01, 2026"]
+      ["SWt - C programming", "Oct 01, 2026"],
+      ["SWt - Algorithm", "Oct 01, 2026"],
+      ["Swt - OS", "Oct 01, 2026"],
+      ["Swt - OS-Part2", "Oct 01, 2026"],
+      ["Swt - OS-Part3", "Oct 01, 2026"],
+      ["Swt - OS-Part4", "Oct 01, 2026"],
+      ["Swt - OS-Part5", "Oct 01, 2026"]
     ],
     oldPrice: "₹500",
     price: "₹98 + GST",
     basePrice: 98,
     brandLabel: "APEX WALLAH",
-    comingSoon: true
+    // comingSoon: true
   },
   {
     id: "cse-gate-2026-pyq",
@@ -1042,15 +1047,22 @@ function openDetail(id, pushHistory = true) {
     )
     .join("");
 
-  document.getElementById("dSchedule").innerHTML = t.schedule
-    .map(
-      (s) => `
-      <div class="schedule-card">
-        <div class="schedule-icon">${calIcon}</div>
-        <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
-      </div>`,
-    )
-    .join("");
+  if (t.id === 'pw-cs-gate-2026' && window.renderPWAccordion) {
+    document.getElementById("dSchedule").className = "pw-accordion-schedule-wrap";
+    const enrolled = typeof isUserEnrolled === 'function' ? isUserEnrolled('pw-cs-gate-2026') : false;
+    document.getElementById("dSchedule").innerHTML = window.renderPWAccordion(enrolled);
+  } else {
+    document.getElementById("dSchedule").className = "detail-schedule";
+    document.getElementById("dSchedule").innerHTML = t.schedule
+      .map(
+        (s) => `
+        <div class="schedule-card">
+          <div class="schedule-icon">${calIcon}</div>
+          <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
+        </div>`,
+      )
+      .join("");
+  }
 
   showView("detail", false);
   if (pushHistory) {
@@ -1212,3 +1224,916 @@ async function viewBookmark(testId, qIndex) {
     alert("Error loading question details.");
   }
 }
+
+
+/* ==========================================================================
+   Wallah CS GATE 2026 Subject-wise Accordion (GoClasses Style) Logic
+   ========================================================================== */
+window.PW_CS_SUBJECTS = [
+  {
+    id: "pw_prog_ds",
+    name: "C Programming & Data Structures",
+    badge: "7 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Subjectwise Test-1 (C programming)",
+        rawName: "SWt - C programming",
+        bracket: "C programming",
+        type: "Subjectwise Test",
+        pattern: "GATE Exam Pattern (MCQ/MSQ/NAT)",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Topicwise Test-1 (c programming)",
+        rawName: "TWT - c programming",
+        bracket: "c programming",
+        type: "Topicwise Test",
+        pattern: "Loops, Pointers & Functions",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-2 (Arrays & Strings)",
+        rawName: "TWT - Arrays & Strings",
+        bracket: "Arrays & Strings",
+        type: "Topicwise Test",
+        pattern: "Arrays, Matrices & String Manipulation",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Oct 10, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-3 (Structures & Unions)",
+        rawName: "TWT - Structures & Unions",
+        bracket: "Structures & Unions",
+        type: "Topicwise Test",
+        pattern: "Structures, Dynamic Memory & Recursion",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Oct 15, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-8 (Programming and Data Structures-1)",
+        rawName: "TWT - Programming and Data Structures-1",
+        bracket: "Programming and Data Structures-1",
+        type: "Topicwise Test",
+        pattern: "Stacks, Queues & Linked Lists",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-9 (Programming and Data Structures-2)",
+        rawName: "TWT - Programming and Data Structures-2",
+        bracket: "Programming and Data Structures-2",
+        type: "Topicwise Test",
+        pattern: "Binary Trees, BST & Heaps",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-2 (Data Structures Complete)",
+        rawName: "SWt - Data Structures Complete",
+        bracket: "Data Structures Complete",
+        type: "Subjectwise Test",
+        pattern: "Complete Data Structures Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Oct 25, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_algo",
+    name: "Algorithms",
+    badge: "6 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Subjectwise Test-2 (Algorithm)",
+        rawName: "SWt - Algorithm",
+        bracket: "Algorithm",
+        type: "Subjectwise Test",
+        pattern: "GATE Exam Pattern (MCQ/MSQ/NAT)",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Topicwise Test-21 (Asymptotic Analysis & Recurrences)",
+        rawName: "TWT - Asymptotic Analysis & Recurrences",
+        bracket: "Asymptotic Analysis",
+        type: "Topicwise Test",
+        pattern: "Big-O, Omega, Theta & Master Theorem",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-22 (Divide and Conquer & Sorting)",
+        rawName: "TWT - Divide and Conquer",
+        bracket: "Divide and Conquer",
+        type: "Topicwise Test",
+        pattern: "Merge Sort, Quick Sort, Binary Search",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Oct 12, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-23 (Algorithms-1)",
+        rawName: "TWT - Algorithms-1",
+        bracket: "Algorithms-1",
+        type: "Topicwise Test",
+        pattern: "Greedy Algorithms & Dynamic Programming",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-24 (Algorithm-2)",
+        rawName: "TWT - Algorithm-2",
+        bracket: "Algorithm-2",
+        type: "Topicwise Test",
+        pattern: "Graph Algorithms (BFS, DFS, Dijkstra, Prim)",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-3 (Advanced Algorithms)",
+        rawName: "SWt - Advanced Algorithms",
+        bracket: "Advanced Algorithms",
+        type: "Subjectwise Test",
+        pattern: "Complete Algorithms Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Nov 01, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_os",
+    name: "Operating Systems",
+    badge: "7 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Subjectwise Test-3 (OS)",
+        rawName: "Swt-OS",
+        bracket: "OS",
+        type: "Subjectwise Test",
+        pattern: "Processes, Threads & CPU Scheduling",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-4 (OS-Part2)",
+        rawName: "Swt-OS-Part2",
+        bracket: "OS-Part2",
+        type: "Subjectwise Test",
+        pattern: "Process Synchronization & Semaphores",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-5 (OS-Part3)",
+        rawName: "Swt-OS-Part3",
+        bracket: "OS-Part3",
+        type: "Subjectwise Test",
+        pattern: "Deadlocks & Resource Allocation",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-6 (OS-Part4)",
+        rawName: "Swt-OS-Part4",
+        bracket: "OS-Part4",
+        type: "Subjectwise Test",
+        pattern: "Memory Management & Paging",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-7 (OS-Part5)",
+        rawName: "Swt-OS-Part5",
+        bracket: "OS-Part5",
+        type: "Subjectwise Test",
+        pattern: "Virtual Memory, File Systems & Disk",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "CSE 2026-Topicwise Test-6 (Operating System-1)",
+        rawName: "TWT - Operating System-1",
+        bracket: "Operating System-1",
+        type: "Topicwise Test",
+        pattern: "CPU Scheduling & Synchronization",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-7 (Operating System-2)",
+        rawName: "TWT - Operating System-2",
+        bracket: "Operating System-2",
+        type: "Topicwise Test",
+        pattern: "Memory Management & Virtual Memory",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_dbms",
+    name: "Database Management Systems (DBMS)",
+    badge: "5 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-19 (Database-1)",
+        rawName: "TWT - Database-1",
+        bracket: "Database-1",
+        type: "Topicwise Test",
+        pattern: "ER Model, Relational Model & Relational Algebra",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-20 (Database-2)",
+        rawName: "TWT - Database-2",
+        bracket: "Database-2",
+        type: "Topicwise Test",
+        pattern: "SQL Queries, Joins, Aggregations & Views",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 05, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-21 (Database-3)",
+        rawName: "TWT - Database-3",
+        bracket: "Database-3",
+        type: "Topicwise Test",
+        pattern: "Normalization, Functional Dependencies & Normal Forms",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 10, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-22 (Database-4)",
+        rawName: "TWT - Database-4",
+        bracket: "Database-4",
+        type: "Topicwise Test",
+        pattern: "Transactions, Concurrency Control & Serializability",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 15, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-8 (DBMS Full)",
+        rawName: "SWt - DBMS Full",
+        bracket: "DBMS Full",
+        type: "Subjectwise Test",
+        pattern: "Complete DBMS Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Nov 20, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_toc",
+    name: "Theory of Computation (TOC)",
+    badge: "5 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-24 (Theory Of Computation-1)",
+        rawName: "TWT - Theory Of Computation-1",
+        bracket: "Theory Of Computation-1",
+        type: "Topicwise Test",
+        pattern: "DFA, NFA, Regular Expressions & Regular Languages",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-25 (Theory Of Computation-2)",
+        rawName: "TWT - Theory Of Computation-2",
+        bracket: "Theory Of Computation-2",
+        type: "Topicwise Test",
+        pattern: "Pumping Lemma & Minimization of DFA",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 18, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-26 (Theory Of Computation-3)",
+        rawName: "TWT - Theory Of Computation-3",
+        bracket: "Theory Of Computation-3",
+        type: "Topicwise Test",
+        pattern: "Context Free Grammars & Pushdown Automata (PDA)",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 22, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-27 (Theory Of Computation-4)",
+        rawName: "TWT - Theory Of Computation-4",
+        bracket: "Theory Of Computation-4",
+        type: "Topicwise Test",
+        pattern: "Turing Machines & Decidability / Undecidability",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Nov 26, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-9 (TOC Full)",
+        rawName: "SWt - TOC Full",
+        bracket: "TOC Full",
+        type: "Subjectwise Test",
+        pattern: "Complete Theory of Computation Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Nov 30, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_compiler",
+    name: "Compiler Design",
+    badge: "4 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-28 (Lexical Analysis & LL Parsing)",
+        rawName: "TWT - Lexical Analysis",
+        bracket: "Lexical Analysis",
+        type: "Topicwise Test",
+        pattern: "Token Recognition, LL(1) Grammars & Parsing",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 02, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-29 (LR Parsing & Syntax Directed Translation)",
+        rawName: "TWT - LR Parsing",
+        bracket: "LR Parsing",
+        type: "Topicwise Test",
+        pattern: "SLR, CLR, LALR & SDT Schemes",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 06, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-30 (Intermediate Code & Runtime Env)",
+        rawName: "TWT - Intermediate Code",
+        bracket: "Intermediate Code",
+        type: "Topicwise Test",
+        pattern: "TAC, Activation Records, Symbol Tables",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 10, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-10 (Compiler Design Full)",
+        rawName: "SWt - Compiler Design Full",
+        bracket: "Compiler Design Full",
+        type: "Subjectwise Test",
+        pattern: "Complete Compiler Design Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Dec 14, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_coa",
+    name: "Computer Organization & Architecture (COA)",
+    badge: "5 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-31 (Machine Instructions & Addressing)",
+        rawName: "TWT - Machine Instructions",
+        bracket: "Machine Instructions",
+        type: "Topicwise Test",
+        pattern: "Addressing Modes & Instruction Formats",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 16, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-32 (ALU & Computer Arithmetic)",
+        rawName: "TWT - Computer Arithmetic",
+        bracket: "Computer Arithmetic",
+        type: "Topicwise Test",
+        pattern: "Booth's Algorithm, Floating Point (IEEE 754)",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 19, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-33 (Pipelining & Hazards)",
+        rawName: "TWT - Pipelining",
+        bracket: "Pipelining",
+        type: "Topicwise Test",
+        pattern: "Structural, Data & Control Hazards, Speedup",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 22, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-34 (Memory Hierarchy & Cache)",
+        rawName: "TWT - Cache Memory",
+        bracket: "Cache Memory",
+        type: "Topicwise Test",
+        pattern: "Direct, Set-Associative Mapping & Cache Hits/Misses",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Dec 26, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-11 (COA Full)",
+        rawName: "SWt - COA Full",
+        bracket: "COA Full",
+        type: "Subjectwise Test",
+        pattern: "Complete COA Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Dec 30, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_cn",
+    name: "Computer Networks",
+    badge: "5 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-35 (Data Link Layer & Framing)",
+        rawName: "TWT - Data Link Layer",
+        bracket: "Data Link Layer",
+        type: "Topicwise Test",
+        pattern: "Framing, Error Detection (CRC), Sliding Window",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 03, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-36 (Network Layer & IP Addressing)",
+        rawName: "TWT - Network Layer",
+        bracket: "Network Layer",
+        type: "Topicwise Test",
+        pattern: "IPv4/IPv6, Subnetting, CIDR & Fragmentation",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 06, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-37 (Routing Algorithms)",
+        rawName: "TWT - Routing Algorithms",
+        bracket: "Routing Algorithms",
+        type: "Topicwise Test",
+        pattern: "Distance Vector, Link State, OSPF & BGP",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 09, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-38 (Transport Layer & TCP/UDP)",
+        rawName: "TWT - Transport Layer",
+        bracket: "Transport Layer",
+        type: "Topicwise Test",
+        pattern: "TCP 3-Way Handshake, Congestion Control",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 12, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-12 (Computer Networks Full)",
+        rawName: "SWt - Computer Networks Full",
+        bracket: "Computer Networks Full",
+        type: "Subjectwise Test",
+        pattern: "Complete Computer Networks Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Jan 15, 2027",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_dl",
+    name: "Digital Logic",
+    badge: "4 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-39 (Boolean Algebra & Logic Gates)",
+        rawName: "TWT - Boolean Algebra",
+        bracket: "Boolean Algebra",
+        type: "Topicwise Test",
+        pattern: "K-Maps, Minimization & Number Representations",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 18, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-40 (Combinational Circuits)",
+        rawName: "TWT - Combinational Circuits",
+        bracket: "Combinational Circuits",
+        type: "Topicwise Test",
+        pattern: "Multiplexers, Decoders, Adders & Subtractors",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 20, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-41 (Sequential Circuits)",
+        rawName: "TWT - Sequential Circuits",
+        bracket: "Sequential Circuits",
+        type: "Topicwise Test",
+        pattern: "Flip-Flops, Counters & Shift Registers",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 23, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Subjectwise Test-13 (Digital Logic Full)",
+        rawName: "SWt - Digital Logic Full",
+        bracket: "Digital Logic Full",
+        type: "Subjectwise Test",
+        pattern: "Complete Digital Logic Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Jan 26, 2027",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_maths",
+    name: "Engineering Mathematics & Discrete Maths",
+    badge: "4 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-42 (Discrete Mathematics-1)",
+        rawName: "TWT - Discrete Mathematics-1",
+        bracket: "Discrete Mathematics-1",
+        type: "Topicwise Test",
+        pattern: "Propositional Logic, First Order Logic, Sets & Relations",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 28, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-43 (Discrete Mathematics-2)",
+        rawName: "TWT - Discrete Mathematics-2",
+        bracket: "Discrete Mathematics-2",
+        type: "Topicwise Test",
+        pattern: "Combinatorics, Generating Functions, Recurrences & Graphs",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Jan 30, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-44 (Linear Algebra & Calculus)",
+        rawName: "TWT - Linear Algebra & Calculus",
+        bracket: "Linear Algebra & Calculus",
+        type: "Topicwise Test",
+        pattern: "Matrices, Eigenvalues, Limits, Maxima & Minima",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Feb 01, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-45 (Probability & Statistics)",
+        rawName: "TWT - Probability & Statistics",
+        bracket: "Probability & Statistics",
+        type: "Topicwise Test",
+        pattern: "Conditional Probability, Bayes Theorem, Distributions",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Feb 03, 2027",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_aptitude",
+    name: "General Aptitude",
+    badge: "2 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Topicwise Test-46 (Verbal Aptitude)",
+        rawName: "TWT - Verbal Aptitude",
+        bracket: "Verbal Aptitude",
+        type: "Topicwise Test",
+        pattern: "English Grammar, Sentence Completion, Comprehension",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Feb 05, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Topicwise Test-47 (Quantitative Aptitude & Spatial)",
+        rawName: "TWT - Quantitative Aptitude",
+        bracket: "Quantitative Aptitude",
+        type: "Topicwise Test",
+        pattern: "Numerical Computation, Estimation, Spatial Reasoning",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Feb 07, 2027",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "pw_full",
+    name: "Full Length Mock Tests (FLT)",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "CSE 2026-Full Length Test-1",
+        rawName: "FLT - Mock 1",
+        bracket: "Full Syllabus Mock 1",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2026 CSE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Feb 10, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Full Length Test-2",
+        rawName: "FLT - Mock 2",
+        bracket: "Full Syllabus Mock 2",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2026 CSE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Feb 12, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "CSE 2026-Full Length Test-3",
+        rawName: "FLT - Mock 3",
+        bracket: "Full Syllabus Mock 3",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2026 CSE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Feb 14, 2027",
+        hasQuestions: false
+      }
+    ]
+  }
+];
+
+window.findUserResult = function(test) {
+  const list = window.userResults || [];
+  if (!list || !list.length) return null;
+  // 1. Exact test.name match
+  let found = list.find(r => r.testName === test.name);
+  if (found) return found;
+  // 2. Exact test.rawName match
+  if (test.rawName) {
+    found = list.find(r => r.testName === test.rawName);
+    if (found) return found;
+  }
+  // 3. Exact bracket text match
+  if (test.bracket) {
+    const targetBracket = test.bracket.toLowerCase().trim();
+    found = list.find(r => {
+      const m = r.testName.match(/\(([^)]+)\)/);
+      return m && m[1].toLowerCase().trim() === targetBracket;
+    });
+    if (found) return found;
+  }
+  return null;
+};
+
+window.togglePWAccordionCard = function(subjectId) {
+  const card = document.getElementById(subjectId);
+  if (card) {
+    card.classList.toggle("open");
+  }
+};
+
+window.promptPWEnroll = function() {
+  const enrollBtn = document.getElementById("dEnrollBtn");
+  if (enrollBtn) {
+    enrollBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+    enrollBtn.classList.add("pulse-highlight");
+    setTimeout(() => enrollBtn.classList.remove("pulse-highlight"), 1500);
+  }
+  if (typeof startEnrollment === "function") {
+    startEnrollment("pw-cs-gate-2026");
+  } else if (typeof selectPaymentMethod === "function") {
+    selectPaymentMethod("pw-cs-gate-2026");
+  }
+};
+
+window.renderPWAccordion = function(isUnlocked) {
+  const chevronSvg = `<svg class="pw-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+  const checkSvg = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.8"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+
+  return window.PW_CS_SUBJECTS.map((subj, idx) => {
+    // Count completed tests in this subject
+    let completedCount = 0;
+    subj.tests.forEach(t => {
+      if (window.findUserResult(t)) completedCount++;
+    });
+
+    // Default open first 3 subjects
+    const isOpen = idx < 3 ? " open" : "";
+
+    const rows = subj.tests.map(t => {
+      const res = window.findUserResult(t);
+      const isAttempted = !!res;
+      const score = isAttempted ? res.score : null;
+      const maxScore = isAttempted ? (res.maxScore || t.marks || 50) : (t.marks || 50);
+
+      let statusBadge = "";
+      let actionButtons = "";
+
+      if (isAttempted) {
+        statusBadge = `
+          <span class="pw-badge completed">${checkSvg} Completed</span>
+          <div class="pw-score-badge">🏆 Score: ${score}/${maxScore}</div>
+        `;
+        actionButtons = `
+          <div class="pw-action-group">
+            <button class="btn-pw-action btn-pw-result" data-name="${t.name.replace(/"/g, '&quot;')}" onclick="openPastResult(this.dataset.name)">View Result</button>
+            <button class="btn-pw-action btn-pw-reattempt" data-name="${t.name.replace(/"/g, '&quot;')}" onclick="openInstructions(this.dataset.name)">Reattempt</button>
+          </div>
+        `;
+      } else if (t.hasQuestions) {
+        statusBadge = `<span class="pw-badge active">Active</span>`;
+        if (isUnlocked) {
+          actionButtons = `<button class="btn-pw-action btn-pw-start" data-name="${t.name.replace(/"/g, '&quot;')}" onclick="openInstructions(this.dataset.name)">Start Test</button>`;
+        } else {
+          actionButtons = `<button class="btn-pw-action btn-pw-start" onclick="promptPWEnroll()">Enroll to Unlock</button>`;
+        }
+      } else {
+        statusBadge = `<span class="pw-badge upcoming">Upcoming</span>`;
+        actionButtons = `<button class="btn-pw-action btn-pw-locked" disabled>Coming ${t.date}</button>`;
+      }
+
+      return `
+        <tr>
+          <td>
+            <div class="pw-test-name">${t.name}</div>
+            <div class="pw-test-sub">${t.pattern}</div>
+          </td>
+          <td>${t.type}</td>
+          <td><b>${t.questions} Qs</b> (${t.marks || 50} M)</td>
+          <td>${t.duration}</td>
+          <td>${statusBadge}</td>
+          <td>${actionButtons}</td>
+        </tr>
+      `;
+    }).join("");
+
+    return `
+      <div class="pw-subject-card${isOpen}" id="${subj.id}">
+        <div class="pw-subject-header" onclick="togglePWAccordionCard('${subj.id}')">
+          <div class="pw-subject-title-wrap">
+            <div class="pw-subject-icon">${idx + 1}</div>
+            <div class="pw-subject-name">${subj.name}</div>
+            <span class="pw-count-badge">${subj.badge}</span>
+            ${completedCount > 0 ? `<span class="pw-completed-summary">${checkSvg} ${completedCount}/${subj.tests.length} Completed</span>` : ''}
+          </div>
+          <div>${chevronSvg}</div>
+        </div>
+        <div class="pw-subject-body">
+          <table class="pw-table">
+            <thead>
+              <tr>
+                <th>Test & Topics</th>
+                <th>Pattern</th>
+                <th>Questions</th>
+                <th>Duration</th>
+                <th>Status & Score</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }).join("");
+};

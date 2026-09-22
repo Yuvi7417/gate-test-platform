@@ -571,6 +571,7 @@ async function fetchUserResults(retries = 5) {
     const data = await res.json();
     if (data.success) {
       userResults = data.results || [];
+      window.userResults = userResults;
       
       // Re-render UI if test list is currently open (handles server cold-start delays)
       const testView = document.getElementById("view-tests");
@@ -890,6 +891,12 @@ window.filterByType = function() {
 
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
+  if (t && t.id === 'pw-cs-gate-2026' && window.renderPWAccordion) {
+    grid.className = "pw-accordion-testlist-wrap";
+    grid.innerHTML = window.renderPWAccordion(true);
+    return;
+  }
+  grid.className = "test-list-grid";
   const twList = t.schedule.filter((s) => (s[0] || "").toUpperCase().startsWith("TWT"));
   const fltList = t.schedule.filter((s) => {
     const upper = (s[0] || "").toUpperCase();
