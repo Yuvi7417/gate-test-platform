@@ -295,19 +295,39 @@ app.post('/api/create-order', async (req, res) => {
   if (!razorpayInstance) {
     return res.status(500).json({ success: false, message: "Razorpay keys not configured in .env" });
   }
-  const { amount, courseId } = req.body; // amount should be in paise
+  const { amount, courseId, userEmail, userName } = req.body; // amount should be in paise
   
   if (!amount || amount < 100) {
     return res.status(400).json({ success: false, message: "Amount must be at least 100 paise." });
   }
 
+  // Extract user email from token if provided
+  let tokenEmail = '';
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+  if (token) {
+    try {
+      const decoded = jwt.decode(token);
+      if (decoded && decoded.email) tokenEmail = decoded.email;
+    } catch (e) {}
+  }
+
+  const finalEmail = (tokenEmail || userEmail || '').toLowerCase().trim();
+  const finalName = userName || '';
+
   try {
     const options = {
       amount: Math.round(amount), // Razorpay works in paise
       currency: "INR",
-      receipt: `rcpt_${Date.now()}`
+      receipt: `rcpt_${Date.now()}`,
+      notes: {
+        courseId: courseId || "",
+        userEmail: finalEmail,
+        userName: finalName
+      }
     };
     const order = await razorpayInstance.orders.create(options);
+    console.log(`[CreateOrder] Order created: ${order.id} for course ${courseId} by ${finalEmail}`);
     res.json({ success: true, order, key_id: process.env.RAZORPAY_KEY_ID });
   } catch (err) {
     console.error("Razorpay Create Order Error:", err);
@@ -436,9 +456,38 @@ app.post('/api/enroll-free', authenticateToken, async (req, res) => {
   }
 });
 
+// Course description to ID fallback mapping
+const descToCourseMap = {
+  'weekly quiz cs gate 2027': 'weekly-cs-gate-2027',
+  'weekly cs gate 2027 test series': 'weekly-cs-gate-2027',
+  'cs-gate 2027 practice test series': 'cs-gate-pyq',
+  'cs-gate 2027 practice classes test series': 'cs-gate-classes',
+  'wallah cs gate 2026 test series': 'pw-cs-gate-2026',
+  'cse-gate 2026 practice test series': 'cse-gate-2026-pyq',
+  'cse-gate pyq practice series': 'cs-gate-pyq',
+  'da-gate 2026 practice test series': 'da-gate-pyq',
+  'me-gate 2026 practice test series': 'me-gate-pyq',
+  'me-gate 2025 practice test series': 'me-gate-pyq-2025',
+  'ece-gate 2025 practice test series': 'ece-gate-pyq-2025',
+  'ece-gate 2026 practice test series': 'ece-gate-pyq',
+  'ee-gate 2026 practice test series': 'ee-gate-pyq',
+  'ee-gate 2027 practice test series': 'ee-gate-pyq-2027',
+  'ce-gate 2026 practice test series': 'ce-gate-pyq'
+};
+
+function mapDescToCourseId(desc) {
+  if (!desc) return null;
+  const clean = desc.toLowerCase().trim();
+  return descToCourseMap[clean] || null;
+}
+
 // 2. Verify Payment Endpoint
 app.post('/api/verify-payment', authenticateToken, async (req, res) => {
   const { razorpay_order_id, razorpay_payment_id, razorpay_signature, courseId } = req.body;
+
+  if (!razorpay_order_id || !razorpay_payment_id || !razorpay_signature) {
+    return res.status(400).json({ success: false, message: "Missing payment verification parameters" });
+  }
 
   const generatedSignature = crypto
     .createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
@@ -446,18 +495,27 @@ app.post('/api/verify-payment', authenticateToken, async (req, res) => {
     .digest('hex');
 
   if (generatedSignature === razorpay_signature) {
-    // Add course to user in DB
     try {
-      const result = await User.updateOne(
-        { email: req.user.email },
-        { $addToSet: { enrolledCourses: courseId } }
+      const userEmail = (req.user.email || '').toLowerCase().trim();
+      const query = req.user._id ? { _id: req.user._id } : { email: new RegExp('^' + userEmail + '$', 'i') };
+
+      const updatedUser = await User.findOneAndUpdate(
+        query,
+        { $addToSet: { enrolledCourses: courseId } },
+        { new: true }
       );
       
-      if (result.matchedCount === 0) {
-         return res.status(404).json({ success: false, message: "User not found in database to enroll." });
+      if (!updatedUser) {
+        return res.status(404).json({ success: false, message: "User not found in database to enroll." });
       }
       
-      res.json({ success: true, message: "Payment verified successfully", paymentId: razorpay_payment_id });
+      console.log(`[VerifyPayment] Successfully enrolled ${updatedUser.email} in ${courseId}`);
+      res.json({ 
+        success: true, 
+        message: "Payment verified successfully", 
+        paymentId: razorpay_payment_id,
+        user: { name: updatedUser.name, email: updatedUser.email, enrolledCourses: updatedUser.enrolledCourses, _id: updatedUser._id }
+      });
     } catch (err) {
       console.error("DB Error updating user courses:", err);
       res.status(500).json({ success: false, message: "Error updating user records" });
@@ -465,6 +523,90 @@ app.post('/api/verify-payment', authenticateToken, async (req, res) => {
   } else {
     res.status(400).json({ success: false, message: "Invalid payment signature" });
   }
+});
+
+// Reconcile order endpoint (used when user returns from UPI intent or modal closes)
+app.post('/api/reconcile-order', authenticateToken, async (req, res) => {
+  const { orderId, courseId } = req.body;
+  if (!orderId || !razorpayInstance) {
+    return res.status(400).json({ success: false, message: "OrderId required" });
+  }
+
+  try {
+    const payments = await razorpayInstance.orders.fetchPayments(orderId);
+    const capturedPayment = payments.items && payments.items.find(p => p.status === 'captured');
+    
+    if (capturedPayment) {
+      const targetCourseId = courseId || (capturedPayment.notes && capturedPayment.notes.courseId) || mapDescToCourseId(capturedPayment.description);
+      const userEmail = (req.user.email || '').toLowerCase().trim();
+      const query = req.user._id ? { _id: req.user._id } : { email: new RegExp('^' + userEmail + '$', 'i') };
+
+      const updatedUser = await User.findOneAndUpdate(
+        query,
+        { $addToSet: { enrolledCourses: targetCourseId } },
+        { new: true }
+      );
+
+      console.log(`[Reconcile] Enrolled ${updatedUser ? updatedUser.email : userEmail} in ${targetCourseId} from order ${orderId}`);
+      return res.json({
+        success: true,
+        enrolled: true,
+        courseId: targetCourseId,
+        user: updatedUser ? { name: updatedUser.name, email: updatedUser.email, enrolledCourses: updatedUser.enrolledCourses, _id: updatedUser._id } : null
+      });
+    }
+
+    res.json({ success: false, enrolled: false, message: "Payment not captured yet" });
+  } catch (err) {
+    console.error("Reconciliation error:", err);
+    res.status(500).json({ success: false, message: "Failed to reconcile order" });
+  }
+});
+
+// Razorpay Webhook Endpoint (Direct server-to-server notification for UPI, QR, NetBanking)
+app.post('/api/razorpay-webhook', async (req, res) => {
+  const secret = process.env.RAZORPAY_WEBHOOK_SECRET;
+  const signature = req.headers['x-razorpay-signature'];
+
+  if (secret && signature) {
+    try {
+      const expectedSignature = crypto
+        .createHmac('sha256', secret)
+        .update(JSON.stringify(req.body))
+        .digest('hex');
+      if (expectedSignature !== signature) {
+        console.warn('[Webhook] Invalid Razorpay webhook signature');
+        return res.status(400).json({ status: 'invalid_signature' });
+      }
+    } catch (e) {
+      console.error('[Webhook] Signature error:', e);
+    }
+  }
+
+  const event = req.body.event;
+  if (event === 'payment.captured' || event === 'order.paid') {
+    const payment = req.body.payload?.payment?.entity;
+    const order = req.body.payload?.order?.entity;
+
+    const notes = (payment && payment.notes) || (order && order.notes) || {};
+    let courseId = notes.courseId || mapDescToCourseId(payment?.description);
+    let userEmail = notes.userEmail || payment?.email;
+
+    if (userEmail && courseId) {
+      userEmail = userEmail.toLowerCase().trim();
+      try {
+        const updateResult = await User.updateOne(
+          { email: new RegExp('^' + userEmail + '$', 'i') },
+          { $addToSet: { enrolledCourses: courseId } }
+        );
+        console.log(`[Webhook] Enrolled ${userEmail} in ${courseId} via ${event}. Matched: ${updateResult.matchedCount}`);
+      } catch (err) {
+        console.error('[Webhook] Error enrolling user via webhook:', err);
+      }
+    }
+  }
+
+  res.json({ status: 'ok' });
 });
 // 3. Fetch Test Questions Securely Endpoint
 app.get('/api/test/:courseId/:testId', authenticateToken, async (req, res) => {

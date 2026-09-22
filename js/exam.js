@@ -693,7 +693,12 @@ function openPaymentGateway(id) {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
     },
-    body: JSON.stringify({ courseId: id, amount: amountWithGst })
+    body: JSON.stringify({ 
+      courseId: id, 
+      amount: amountWithGst,
+      userEmail: currentUser ? currentUser.email : "",
+      userName: currentUser ? currentUser.name : ""
+    })
   })
     .then(res => res.json())
     .then(data => {
@@ -702,6 +707,7 @@ function openPaymentGateway(id) {
         return;
       }
 
+      let isEnrolled = false;
       const options = {
         key: data.key_id,
         amount: data.order.amount,
@@ -710,6 +716,7 @@ function openPaymentGateway(id) {
         description: ts.title,
         order_id: data.order.id,
         handler: function (response) {
+          isEnrolled = true;
           // Verify payment
           fetch('/api/verify-payment', {
             method: 'POST',
@@ -728,20 +735,38 @@ function openPaymentGateway(id) {
             .then(verifyData => {
               if (verifyData.success) {
                 alert("Payment successful!");
+                if (verifyData.user && Array.isArray(verifyData.user.enrolledCourses)) {
+                  enrolledIds = verifyData.user.enrolledCourses;
+                }
                 enrollAndGo(id);
               } else {
-                alert("Payment verification failed: " + verifyData.message);
+                console.warn("Verification warning:", verifyData.message);
+                reconcilePayment(data.order.id, id, true);
               }
             })
             .catch(err => {
-              console.error(err);
-              alert("Error verifying payment.");
+              console.error("Verification error, checking order status:", err);
+              reconcilePayment(data.order.id, id, true);
             });
+        },
+        modal: {
+          ondismiss: function () {
+            // When user returns from mobile UPI app (GPay/PhonePe) or closes popup
+            if (!isEnrolled) {
+              setTimeout(() => {
+                reconcilePayment(data.order.id, id, false);
+              }, 1200);
+            }
+          }
         },
         prefill: {
           name: currentUser ? currentUser.name : "",
           email: currentUser ? currentUser.email : "",
           contact: ""
+        },
+        notes: {
+          courseId: id,
+          userEmail: currentUser ? currentUser.email : ""
         },
         theme: {
           color: "#FFC107"
@@ -758,6 +783,32 @@ function openPaymentGateway(id) {
       console.error("Order Creation Error:", err);
       alert("Server error initiating payment.");
     });
+}
+
+
+function reconcilePayment(orderId, courseId, showAlert = false) {
+  const token = localStorage.getItem('apexcore_token');
+  if (!token || !orderId) return;
+
+  fetch('/api/reconcile-order', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    },
+    body: JSON.stringify({ orderId, courseId })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success && data.enrolled) {
+        if (showAlert) alert("Payment confirmed! Enrolled successfully in course.");
+        if (data.user && Array.isArray(data.user.enrolledCourses)) {
+          enrolledIds = data.user.enrolledCourses;
+        }
+        enrollAndGo(courseId);
+      }
+    })
+    .catch(err => console.warn("Order reconcile check failed:", err));
 }
 
 function enrollAndGo(id) {
