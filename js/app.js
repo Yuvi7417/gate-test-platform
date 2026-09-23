@@ -1043,13 +1043,13 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
       dSchedule.style.display = "block";
       dSchedule.style.width = "100%";
-      dSchedule.innerHTML = window.renderPYQAccordion ? window.renderPYQAccordion(enrolled) : "";
+      dSchedule.innerHTML = window.renderPYQAccordion ? window.renderPYQAccordion(enrolled, "all", id) : "";
     }
   } else {
     if (dSchedule) {
@@ -1265,6 +1265,58 @@ window.PYQ_TOPIC_MAP = {
   "Recurrence Relation-I": "Substitution Method, Master Theorem Basics",
   "Recurrence Relation-II": "Recursion Tree Method, Advanced Master Theorem Cases",
   "Recurrence Relation-III": "Akra-Bazzi Method, Non-homogeneous Recurrences",
+
+  // Made Easy CS Tests
+  "Digital logic-1": "Boolean Algebra, Minimization, K-Maps, Logic Gates",
+  "Digital logic-2": "Combinational & Sequential Circuits, Flip-Flops, Counters, Mux",
+  "Digital logic": "Complete Digital Logic Syllabus",
+
+  "Database-1": "ER-Model, Relational Model, Relational Algebra, SQL",
+  "Database-2": "Normalization, Transactions, Concurrency Control, B/B+ Trees",
+  "Database": "Complete DBMS Syllabus",
+
+  "Theory of computation-1": "Regular Languages, Finite Automata, DFA, NFA, RegEx",
+  "Theory of computation-2": "Context-Free Languages, PDA, Turing Machines, Decidability",
+  "Theory of computation": "Complete Theory of Computation Syllabus",
+
+  "computer organization and architecture-1": "Machine Instructions, Addressing Modes, ALU, Data Path",
+  "computer organization and architecture-2": "Instruction Pipelining, Cache Memory, Virtual Memory, I/O",
+  "Computer organization and architecture": "Complete COA Syllabus",
+
+  "Computer network-1": "Concept of Layering, OSI & TCP/IP, Flow & Error Control",
+  "Computer network-2": "Routing Algorithms, IP Addressing, IPv4/IPv6, TCP/UDP, Sockets",
+  "Computer network": "Complete Computer Networks Syllabus",
+
+  "C programming and data structure-1": "C Programming (Pointers, Recursion, Scope), Arrays, Stacks, Queues",
+  "C programming and data structure-2": "Linked Lists, Trees, Binary Search Trees, Heaps, Graphs",
+  "C programming and data structure": "Complete Programming & Data Structures Syllabus",
+
+  "Engineering Mathematics-1": "Linear Algebra (Matrices, Determinants, Systems of Equations, Eigenvalues)",
+  "Engineering Mathematics-2": "Calculus (Limits, Continuity, Derivatives, Maxima/Minima, Integration)",
+  "Engineering Mathematics": "Complete Engineering Mathematics Syllabus",
+
+  "Discrete Mathematics -1": "Propositional & First-Order Logic, Sets, Relations, Functions, Partial Orders",
+  "Discrete Mathematics-1": "Propositional & First-Order Logic, Sets, Relations, Functions, Partial Orders",
+  "Discrete Mathematics-2": "Combinatorics, Counting, Recurrence Relations, Graph Theory",
+  "Discrete Mathematics": "Complete Discrete Mathematics Syllabus",
+
+  "Algorithms -1": "Asymptotic Analysis, Divide & Conquer, Greedy Algorithms",
+  "Algorithms-1": "Asymptotic Analysis, Divide & Conquer, Greedy Algorithms",
+  "Algorithms -2": "Dynamic Programming, Graph Search (BFS/DFS), Shortest Paths",
+  "Algorithms-2": "Dynamic Programming, Graph Search (BFS/DFS), Shortest Paths",
+  "Algorithms": "Complete Algorithms Syllabus",
+
+  "Compiler Design-1": "Lexical Analysis, Parsing Techniques (LL, LR, LALR, SLR)",
+  "Compiler Design-2": "Syntax Directed Translation, Intermediate Code, Code Optimization",
+  "Compiler Design": "Complete Compiler Design Syllabus",
+
+  "Operating System-1": "Processes, Threads, CPU Scheduling, Synchronization, Deadlocks",
+  "Operating System-2": "Memory Management, Virtual Memory, Paging, File Systems, Disk Scheduling",
+  "Operating System": "Complete Operating System Syllabus",
+
+  "General Aptitude-1": "Verbal Ability, English Grammar, Vocabulary, Critical Reasoning",
+  "General Aptitude-2": "Numerical Ability, Computation, Data Interpretation & Reasoning",
+  "General Aptitude": "Complete General Aptitude Syllabus"
 };
 
 window.PYQ_DEFAULT_TESTS = [
@@ -1310,6 +1362,15 @@ window.PYQ_CS_SUBJECTS = [
     iconBg: "#f3e8ff",
     iconColor: "#9333ea",
     regex: /(engineering mathematics|linear algebra|calculus)/i
+  },
+  {
+    id: "dm",
+    name: "Discrete Mathematics",
+    iconType: "text",
+    iconVal: "∀x",
+    iconBg: "#fef3c7",
+    iconColor: "#d97706",
+    regex: /(discrete mathematics|discrete math|discrete)/i
   },
   {
     id: "dl",
@@ -1400,6 +1461,15 @@ window.PYQ_CS_SUBJECTS = [
     iconBg: "#e0f2fe",
     iconColor: "#0284c7",
     regex: /(computer networks|computer network|cn)/i
+  },
+  {
+    id: "ga",
+    name: "General Aptitude",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+    iconBg: "#dcfce7",
+    iconColor: "#16a34a",
+    regex: /(general aptitude|aptitude|\bga\b)/i
   }
 ];
 
@@ -1456,26 +1526,35 @@ window.promptEnrollment = function(seriesId = "cse-gate-2027") {
   }
 };
 
-window.launchPYQTest = function(rawName, enrolled) {
-  let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries("cse-gate-2027"));
+window.launchPYQTest = function(rawName, enrolled, seriesId = "cse-gate-2027") {
+  if (seriesId) {
+    currentTestListId = seriesId;
+    currentDetailId = seriesId;
+  }
+  let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries(seriesId));
   if (!isEnrolled) {
     const isFree = (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
     if (isFree) isEnrolled = true;
   }
   if (!isEnrolled) {
-    window.promptEnrollment("cse-gate-2027");
+    window.promptEnrollment(seriesId);
     return;
   }
 
   // Ensure test is registered in testBackendIdMap
-  const safeId = ("cse-gate-2027_" + rawName).toLowerCase().replace(/[^a-z0-9]/g, "_");
+  const safeId = (seriesId + "_" + rawName).toLowerCase().replace(/[^a-z0-9]/g, "_");
   window.testBackendIdMap = window.testBackendIdMap || {};
   window.testBackendIdMap[rawName] = safeId;
-  window.testBackendIdMap["cse-gate-2027|" + rawName] = safeId;
+  window.testBackendIdMap[seriesId + "|" + rawName] = safeId;
+  const matchName = rawName.replace(/^[A-Za-z\s]+-\s*/, "");
+  if (matchName) {
+    window.testBackendIdMap[matchName] = safeId;
+    window.testBackendIdMap[seriesId + "|" + matchName] = safeId;
+  }
   const bracket = rawName.match(/\(([^)]+)\)/);
   if (bracket) {
     window.testBackendIdMap[bracket[1]] = safeId;
-    window.testBackendIdMap["cse-gate-2027|" + bracket[1]] = safeId;
+    window.testBackendIdMap[seriesId + "|" + bracket[1]] = safeId;
   }
 
   if (typeof openInstructions === "function") {
@@ -1483,19 +1562,21 @@ window.launchPYQTest = function(rawName, enrolled) {
   }
 };
 
-window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
-  // Collect all tests belonging to cse-gate-2027
+window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
+  // Collect all tests belonging to this series
   const registeredMap = new Map();
 
-  // 1. Defaults first
-  (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
-    registeredMap.set(t.name, { ...t });
-  });
+  // 1. Defaults first (only for cse-gate-2027)
+  if (seriesId === "cse-gate-2027") {
+    (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
+  }
 
   // 2. Tests from apexTestRegistry
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
-      if (t.series === "cse-gate-2027" && t.name) {
+      if (t.series === seriesId && t.name) {
         registeredMap.set(t.name, {
           ...t,
           series: t.series,
@@ -1510,13 +1591,13 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
   }
 
   // 3. Tests from testSeries.schedule
-  const currentSeries = (window.testSeries || []).find(s => s.id === "cse-gate-2027");
+  const currentSeries = (window.testSeries || []).find(s => s.id === seriesId);
   if (currentSeries && Array.isArray(currentSeries.schedule)) {
     currentSeries.schedule.forEach(s => {
       const rawName = s[0];
       if (rawName && !registeredMap.has(rawName)) {
         registeredMap.set(rawName, {
-          series: "cse-gate-2027",
+          series: seriesId,
           name: rawName,
           date: s[1],
           questionCount: s[2]
@@ -1542,7 +1623,10 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
 
     // Check completion count
     let doneCount = 0;
-    const testItems = subjTests.map((t, idx) => {
+    let topicIdx = 0;
+    let subjectIdx = 0;
+
+    const testItems = subjTests.map((t) => {
       const rawName = t.name;
       const bracketMatch = rawName.match(/\(([^)]+)\)/);
       const bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
@@ -1551,8 +1635,32 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
       const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
       
       let testType = isSubject ? "Subject" : "Topic";
-      let testLabel = isSubject ? `Subject Test ${idx + 1}` : `Topic Test ${idx + 1}`;
-      let topicsCovered = t.topicsCovered || t.topics || (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
+      let testLabel = "";
+      if (isSubject) {
+        subjectIdx++;
+        testLabel = `Subject Test ${subjectIdx}`;
+      } else {
+        topicIdx++;
+        testLabel = `Topic Test ${topicIdx}`;
+      }
+
+      // Look up topic description
+      let topicsCovered = t.topicsCovered || t.topics;
+      if (!topicsCovered && window.PYQ_TOPIC_MAP) {
+        topicsCovered = window.PYQ_TOPIC_MAP[bracket] || window.PYQ_TOPIC_MAP[bracket.trim()] || window.PYQ_TOPIC_MAP[rawName];
+        if (!topicsCovered) {
+          const lower = bracket.trim().toLowerCase();
+          for (const k of Object.keys(window.PYQ_TOPIC_MAP)) {
+            if (k.toLowerCase() === lower) {
+              topicsCovered = window.PYQ_TOPIC_MAP[k];
+              break;
+            }
+          }
+        }
+      }
+      if (!topicsCovered) {
+        topicsCovered = isSubject ? `${subj.name} - Full Syllabus` : bracket;
+      }
 
       // Check if test is free/unlocked
       const isFree = t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked" ||
@@ -1677,15 +1785,15 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                                       ? `
                                       <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
                                         <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
-                                        <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true)">Reattempt</button>
+                                        <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">Reattempt</button>
                                       </div>`
                                       : `
-                                      <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true)">
+                                      <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">
                                         Start
                                         <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
                                       </button>`)
                                   : `
-                                  <button class="pyq-btn-lock" onclick="window.promptEnrollment('cse-gate-2027')">
+                                  <button class="pyq-btn-lock" onclick="window.promptEnrollment('${seriesId}')">
                                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                                     Unlock
                                   </button>

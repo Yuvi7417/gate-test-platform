@@ -584,7 +584,7 @@ async function fetchUserResults(retries = 5) {
         }
       }
       const detailView = document.getElementById("view-detail");
-      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && currentDetailId === "cse-gate-2027") {
+      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq")) {
         if (typeof openDetail === 'function') {
           openDetail(currentDetailId, false);
         }
@@ -900,7 +900,7 @@ window.filterByType = function() {
 
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
-  if (t.id === "cse-gate-2027") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
@@ -908,7 +908,7 @@ function renderTestList(t, filter) {
         grid.style.width = "100%";
       }
       const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id)));
-      grid.innerHTML = window.renderPYQAccordion(isEnrolled, filter);
+      grid.innerHTML = window.renderPYQAccordion(isEnrolled, filter, t.id);
       return;
     }
   } else {
