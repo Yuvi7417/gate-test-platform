@@ -1457,7 +1457,11 @@ window.promptEnrollment = function(seriesId = "cse-gate-2027") {
 };
 
 window.launchPYQTest = function(rawName, enrolled) {
-  const isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries("cse-gate-2027"));
+  let isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries("cse-gate-2027"));
+  if (!isEnrolled) {
+    const isFree = (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
+    if (isFree) isEnrolled = true;
+  }
   if (!isEnrolled) {
     window.promptEnrollment("cse-gate-2027");
     return;
@@ -1493,10 +1497,12 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
     window.apexTestRegistry.forEach(t => {
       if (t.series === "cse-gate-2027" && t.name) {
         registeredMap.set(t.name, {
+          ...t,
           series: t.series,
           name: t.name,
           date: t.date,
           topicsCovered: t.topicsCovered || t.topics,
+          isFree: t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked",
           questions: t.questions
         });
       }
@@ -1548,6 +1554,11 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
       let testLabel = isSubject ? `Subject Test ${idx + 1}` : `Topic Test ${idx + 1}`;
       let topicsCovered = t.topicsCovered || t.topics || (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
 
+      // Check if test is free/unlocked
+      const isFree = t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked" ||
+        (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
+      const canAttempt = isEnrolled || isFree;
+
       // Check result
       const res = userResults.find(r => {
         if (!r || !r.testName) return false;
@@ -1565,6 +1576,8 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
         testType,
         testLabel,
         topicsCovered,
+        isFree,
+        canAttempt,
         isAttempted,
         score: res && res.score !== undefined ? res.score : null,
         maxScore: res && res.maxScore !== undefined ? res.maxScore : 100
@@ -1629,7 +1642,7 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                           <tr>
                             <td style="text-align: center;">
                               ${
-                                isEnrolled
+                                item.canAttempt
                                   ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
                                       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
                                     </div>`
@@ -1648,16 +1661,18 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
                               ${
-                                isEnrolled
+                                item.canAttempt
                                   ? (item.isAttempted
                                       ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
-                                      : `<span class="pyq-status-ready">Ready to Attempt</span>`)
+                                      : (item.isFree && !isEnrolled
+                                          ? `<span class="pyq-status-free">Free Demo</span>`
+                                          : `<span class="pyq-status-ready">Ready to Attempt</span>`))
                                   : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
                               }
                             </td>
                             <td style="text-align: right;">
                               ${
-                                isEnrolled
+                                item.canAttempt
                                   ? (item.isAttempted
                                       ? `
                                       <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">

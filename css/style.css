@@ -5369,6 +5369,29 @@ main {
   background: #059669;
 }
 
+.pyq-status-free {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #059669;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 2.5px 8px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
+.pyq-status-free::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
 .pyq-btn-start {
   display: inline-flex;
   align-items: center;
