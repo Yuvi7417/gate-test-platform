@@ -1519,7 +1519,9 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
   }
 
   const allTests = Array.from(registeredMap.values());
-  const userResults = JSON.parse(localStorage.getItem("apex_user_results") || "[]");
+  const userResults = (typeof window.userResults !== 'undefined' && Array.isArray(window.userResults) && window.userResults.length > 0)
+    ? window.userResults
+    : JSON.parse(localStorage.getItem("apex_user_results") || "[]");
 
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
@@ -1546,7 +1548,13 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
       let topicsCovered = (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
 
       // Check result
-      const res = userResults.find(r => r.testName === rawName || (bracket && r.testName && r.testName.includes(bracket)));
+      const res = userResults.find(r => {
+        if (!r || !r.testName) return false;
+        if (r.testName === rawName) return true;
+        if (bracket && r.testName.includes(bracket)) return true;
+        if (r.testName.includes(rawName) || rawName.includes(r.testName)) return true;
+        return false;
+      });
       const isAttempted = !!res;
       if (isAttempted) doneCount++;
 
@@ -1557,8 +1565,8 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
         testLabel,
         topicsCovered,
         isAttempted,
-        score: res ? res.score : null,
-        maxScore: res ? (res.maxScore || 100) : 100
+        score: res && res.score !== undefined ? res.score : null,
+        maxScore: res && res.maxScore !== undefined ? res.maxScore : 100
       };
     });
 
@@ -1569,7 +1577,7 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
       return true;
     });
 
-    const isInitiallyOpen = (subj.id === "c_prog"); // Open C Programming by default as in Image 3
+    const isInitiallyOpen = false; // Always closed initially, only opens when clicked
     const totalCount = subjTests.length;
 
     html += `
@@ -1608,8 +1616,8 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                   </th>
                   <th style="min-width: 170px;">TEST NAME</th>
                   <th style="min-width: 250px;">TOPICS COVERED</th>
-                  <th style="min-width: 130px;">STATUS</th>
-                  <th style="min-width: 110px; text-align: right;">ACTION</th>
+                  <th style="min-width: 140px;">STATUS</th>
+                  <th style="min-width: 160px; text-align: right;">ACTION</th>
                 </tr>
               </thead>
               <tbody>
@@ -1641,7 +1649,7 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                               ${
                                 isEnrolled
                                   ? (item.isAttempted
-                                      ? `<span class="pyq-status-done">Completed</span>`
+                                      ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
                                       : `<span class="pyq-status-ready">Ready to Attempt</span>`)
                                   : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
                               }
@@ -1651,8 +1659,8 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                                 isEnrolled
                                   ? (item.isAttempted
                                       ? `
-                                      <div style="display: inline-flex; gap: 6px; justify-content: flex-end;">
-                                        <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">Result</button>
+                                      <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
+                                        <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
                                         <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true)">Reattempt</button>
                                       </div>`
                                       : `

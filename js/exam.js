@@ -571,6 +571,10 @@ async function fetchUserResults(retries = 5) {
     const data = await res.json();
     if (data.success) {
       userResults = data.results || [];
+      window.userResults = userResults;
+      try {
+        localStorage.setItem("apex_user_results", JSON.stringify(userResults));
+      } catch (e) {}
       
       // Re-render UI if test list is currently open (handles server cold-start delays)
       const testView = document.getElementById("view-tests");
@@ -2188,6 +2192,10 @@ function confirmSubmit() {
   } else {
     userResults.push(payload);
   }
+  window.userResults = userResults;
+  try {
+    localStorage.setItem("apex_user_results", JSON.stringify(userResults));
+  } catch (e) {}
   const seriesObj = testSeries.find((x) => x.id === currentTestListId);
   if (seriesObj) renderTestList(seriesObj, "all");
 
@@ -2246,7 +2254,22 @@ function confirmSubmit() {
 let lastResult = null;
 
 function openPastResult(testName) {
-  const result = userResults.find(r => r.testName === testName);
+  let result = userResults.find(r => r.testName === testName);
+  if (!result && window.userResults) {
+    result = window.userResults.find(r => r.testName === testName);
+  }
+  if (!result) {
+    const bracketMatch = testName.match(/\(([^)]+)\)/);
+    const bracket = bracketMatch ? bracketMatch[1] : null;
+    const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
+    result = allResults.find(r => {
+      if (!r || !r.testName) return false;
+      if (r.testName === testName) return true;
+      if (bracket && r.testName.includes(bracket)) return true;
+      if (r.testName.includes(testName) || testName.includes(r.testName)) return true;
+      return false;
+    });
+  }
   if (result) {
     // Reconstruct lastResult format with fallbacks
     const timeSecs = result.timeTakenSecs || 0;
