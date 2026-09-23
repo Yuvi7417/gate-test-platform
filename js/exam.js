@@ -890,6 +890,12 @@ window.filterByType = function() {
 
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
+  if (t.id === "cse-gate-2027") {
+    if (window.renderPYQAccordion) {
+      grid.innerHTML = window.renderPYQAccordion(true, filter);
+      return;
+    }
+  }
   const twList = t.schedule.filter((s) => (s[0] || "").toUpperCase().startsWith("TWT"));
   const fltList = t.schedule.filter((s) => {
     const upper = (s[0] || "").toUpperCase();
@@ -1143,6 +1149,9 @@ window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
 });
 
 function findMatchingTest(testName) {
+  if (window.testBackendIdMap && window.testBackendIdMap[testName]) return testName;
+  if (window.testMap && window.testMap[testName]) return testName;
+
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   if (bracketMatch) {
     const bracketText = bracketMatch[1];

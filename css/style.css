@@ -5110,3 +5110,331 @@ main {
 #playerSectionTabsContainer .player-sectiontab {
   margin-right: 0;
 }
+
+/* ==========================================================================
+   GoClasses-Style Subject Accordion (for CSE-GATE PYQ Practice Series)
+   ========================================================================== */
+
+.pyq-accordion-wrap {
+  width: 100%;
+  max-width: 100%;
+  margin: 18px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pyq-subject-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pyq-subject-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pyq-subject-card.open {
+  border-color: #ff7a72;
+  box-shadow: 0 4px 18px rgba(255, 122, 114, 0.12);
+}
+
+.pyq-subject-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 22px;
+  cursor: pointer;
+  user-select: none;
+  background: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.pyq-subject-head:hover {
+  background: #fafbfc;
+}
+
+.pyq-head-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pyq-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.pyq-icon-box svg {
+  width: 20px;
+  height: 20px;
+}
+
+.pyq-subj-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #1e293b;
+  letter-spacing: -0.2px;
+}
+
+.pyq-head-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pyq-done-badge {
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  background: #f8fafc;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+}
+
+.pyq-chevron {
+  width: 18px;
+  height: 18px;
+  color: #64748b;
+  transition: transform 0.25s ease;
+}
+
+.pyq-subject-card.open .pyq-chevron {
+  transform: rotate(180deg);
+}
+
+.pyq-subject-body {
+  display: none;
+  border-top: 1px solid #f1f5f9;
+  background: #ffffff;
+  padding: 0 16px 16px 16px;
+}
+
+.pyq-subject-card.open .pyq-subject-body {
+  display: block;
+}
+
+.pyq-table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pyq-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+  margin-top: 6px;
+}
+
+.pyq-table thead th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #eef2f6;
+  background: #ffffff;
+}
+
+.pyq-table tbody tr {
+  border-bottom: 1px solid #f8fafc;
+  transition: background 0.15s ease;
+}
+
+.pyq-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pyq-table tbody tr:hover {
+  background: #fbfcfe;
+}
+
+.pyq-table td {
+  padding: 13px 14px;
+  font-size: 13.5px;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.pyq-check-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1.5px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.pyq-check-box.checked {
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff;
+}
+
+.pyq-test-name-cell {
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pyq-test-sublabel {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.pyq-type-pill {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 10px;
+  letter-spacing: 0.2px;
+}
+
+.pyq-type-pill.topic {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.pyq-type-pill.subject {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.pyq-topics-cell {
+  color: #64748b;
+  font-size: 12.5px;
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+.pyq-status-cell {
+  white-space: nowrap;
+}
+
+.pyq-status-ready {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.pyq-status-ready::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.pyq-status-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #059669;
+}
+
+.pyq-status-done::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #059669;
+}
+
+.pyq-btn-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0f7ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.pyq-btn-start:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.pyq-btn-result {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pyq-btn-result:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.pyq-btn-reattempt {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #f8fafc;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pyq-btn-reattempt:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.pyq-empty-tests {
+  padding: 24px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13.5px;
+}
+

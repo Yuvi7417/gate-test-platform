@@ -852,7 +852,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: undefined,
+    tests: 26,
     startDate: "2026-03-15",
     endDate: "2027-02-15",
     session: "2024-2025",
@@ -1042,15 +1042,20 @@ function openDetail(id, pushHistory = true) {
     )
     .join("");
 
-  document.getElementById("dSchedule").innerHTML = t.schedule
-    .map(
-      (s) => `
-      <div class="schedule-card">
-        <div class="schedule-icon">${calIcon}</div>
-        <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
-      </div>`,
-    )
-    .join("");
+  if (id === "cse-gate-2027") {
+    const enrolled = (typeof isEnrolled === "function" && isEnrolled(id)) || false;
+    document.getElementById("dSchedule").innerHTML = window.renderPYQAccordion ? window.renderPYQAccordion(enrolled) : "";
+  } else {
+    document.getElementById("dSchedule").innerHTML = t.schedule
+      .map(
+        (s) => `
+        <div class="schedule-card">
+          <div class="schedule-icon">${calIcon}</div>
+          <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
+        </div>`,
+      )
+      .join("");
+  }
 
   showView("detail", false);
   if (pushHistory) {
@@ -1212,3 +1217,415 @@ async function viewBookmark(testId, qIndex) {
     alert("Error loading question details.");
   }
 }
+
+/* ==========================================================================
+   GoClasses-Style Subject-Wise PYQ Accordion Engine (CSE-GATE PYQ Practice Series)
+   ========================================================================== */
+
+window.PYQ_TOPIC_MAP = {
+  // C Programming
+  "Loops-I": "Loops, While, For, Do-While, Nested Loops",
+  "Functions-I": "Functions, Parameter Passing, Call by Value/Reference",
+  "Functions-II": "Function Scope, Lifetime, Static Variables, Linkage",
+  "Functions-III": "Recursion, Direct & Indirect Recursion, Base Cases",
+  "Functions-IV": "Advanced Recursion, Tree Recursion, Tail Call Optimization",
+  "Functions-V": "Standard Library Functions, Return Types, Prototypes",
+  "Functions-VI": "Function Pointers, Callbacks, Arrays of Function Pointers",
+  "Functions-VII": "Inline Functions, Preprocessor Macros vs Functions",
+  "Array and Pointer-I": "1D Arrays, Pointer Basics, Dereferencing, Indexing",
+  "Array and Pointer-II": "2D Arrays, Pointer Arithmetic, Array of Pointers",
+  "Array and Pointer-III": "Pointers to Pointers, Dynamic Memory Allocation (malloc, free)",
+  "Array and Pointer-IV": "Strings, Char Arrays, Pointer Manipulations, String Lib",
+  "Conditional Statements": "If-Else, Switch Case, Ternary Operator, Branching",
+  "Airthmetic Operator": "Arithmetic & Bitwise Operators, Precedence, Associativity",
+
+  // Operating System
+  "Process-I": "Process Concept, States, PCB, Process Creation (fork, exec)",
+  "Process-II": "Process Synchronization Basics, IPC, Critical Section Problem",
+  "CPU Scheduling-I": "FCFS, SJF, SRTF, Non-preemptive & Preemptive Scheduling",
+  "CPU Scheduling-II": "Round Robin Scheduling, Time Quantum, Multi-level Queue",
+  "CPU Scheduling-III": "Scheduling Criteria, Turnaround Time, Waiting Time, Response Time",
+  "CPU Scheduling-IV": "Real-time Scheduling, Multi-processor Scheduling, Priority Inversion",
+
+  // Algorithms
+  "Asymptotic Notation-I": "Big-O, Omega, Theta Notations, Growth of Functions",
+  "Asymptotic Notation-II": "Properties of Asymptotic Notations, Function Comparisons",
+  "Asymptotic Notation-III": "Worst Case, Average Case, Best Case Complexity Analysis",
+  "Recurrence Relation-I": "Substitution Method, Master Theorem Basics",
+  "Recurrence Relation-II": "Recursion Tree Method, Advanced Master Theorem Cases",
+  "Recurrence Relation-III": "Akra-Bazzi Method, Non-homogeneous Recurrences",
+};
+
+window.PYQ_DEFAULT_TESTS = [
+  // C Programming (14 tests)
+  { series: "cse-gate-2027", name: "TWT-c-programming(Loops-I)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-I)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-II)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-III)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-IV)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-V)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-VI)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Functions-VII)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Array and Pointer-I)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Array and Pointer-II)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Array and Pointer-III)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Array and Pointer-IV)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Conditional Statements)", subject: "c_prog" },
+  { series: "cse-gate-2027", name: "TWT-c-programming(Airthmetic Operator)", subject: "c_prog" },
+
+  // Operating System (6 tests)
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process-I)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process-II)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-I)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-II)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-III)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-IV)", subject: "os" },
+
+  // Algorithms (6 tests)
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-I)", subject: "algo" },
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-II)", subject: "algo" },
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-III)", subject: "algo" },
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-I)", subject: "algo" },
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-II)", subject: "algo" },
+  { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-III)", subject: "algo" },
+];
+
+window.PYQ_CS_SUBJECTS = [
+  {
+    id: "em",
+    name: "Engineering Mathematics",
+    iconType: "text",
+    iconVal: "f(x)",
+    iconBg: "#f3e8ff",
+    iconColor: "#9333ea",
+    regex: /(engineering mathematics|linear algebra|calculus)/i
+  },
+  {
+    id: "dl",
+    name: "Digital Logic",
+    iconType: "text",
+    iconVal: "01",
+    iconBg: "#e0f2fe",
+    iconColor: "#0284c7",
+    regex: /(digital logic|digital electronics)/i
+  },
+  {
+    id: "dbms",
+    name: "DBMS",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`,
+    iconBg: "#ffedd5",
+    iconColor: "#ea580c",
+    regex: /(dbms|database)/i
+  },
+  {
+    id: "c_prog",
+    name: "C Programming",
+    iconType: "text",
+    iconVal: "{}",
+    iconBg: "#fee2e2",
+    iconColor: "#ef4444",
+    regex: /(c programming|c-programming)/i
+  },
+  {
+    id: "ds",
+    name: "Data Structures",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><circle cx="6" cy="19" r="3"/><circle cx="18" cy="19" r="3"/><path d="M12 8v4M12 12l-6 4M12 12l6 4"/></svg>`,
+    iconBg: "#ffe4e6",
+    iconColor: "#e11d48",
+    regex: /(data structure|data structures)/i
+  },
+  {
+    id: "algo",
+    name: "Algorithms",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="12" r="3"/><path d="M9 6h2a4 4 0 0 1 4 4v0a4 4 0 0 1-4 4H9M9 18h2"/></svg>`,
+    iconBg: "#ede9fe",
+    iconColor: "#6366f1",
+    regex: /(algorithm|algorithms)/i
+  },
+  {
+    id: "toc",
+    name: "Theory of Computation",
+    iconType: "text",
+    iconVal: "Σ",
+    iconBg: "#f1f5f9",
+    iconColor: "#475569",
+    regex: /(theory of computation|toc)/i
+  },
+  {
+    id: "cd",
+    name: "Compiler Design",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3v7.5a2.5 2.5 0 0 0 5 0V3M12 10.5V21M17 3v7.5a2.5 2.5 0 0 1-5 0"/></svg>`,
+    iconBg: "#ffe4e6",
+    iconColor: "#f43f5e",
+    regex: /(compiler design|compiler)/i
+  },
+  {
+    id: "coa",
+    name: "Computer Organization",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>`,
+    iconBg: "#fee2e2",
+    iconColor: "#ea580c",
+    regex: /(computer organization|coa|computer architecture)/i
+  },
+  {
+    id: "os",
+    name: "Operating System",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 10 3 3-3 3M13 16h4"/></svg>`,
+    iconBg: "#ccfbf1",
+    iconColor: "#0d9488",
+    regex: /(operating system|os)/i
+  },
+  {
+    id: "cn",
+    name: "Computer Networks",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    iconBg: "#e0f2fe",
+    iconColor: "#0284c7",
+    regex: /(computer networks|computer network|cn)/i
+  }
+];
+
+window.togglePYQAccordion = function(cardEl) {
+  if (!cardEl) return;
+  const isAlreadyOpen = cardEl.classList.contains("open");
+  
+  // Close other open subject cards in this wrap
+  const wrap = cardEl.closest(".pyq-accordion-wrap");
+  if (wrap) {
+    wrap.querySelectorAll(".pyq-subject-card.open").forEach(c => {
+      if (c !== cardEl) c.classList.remove("open");
+    });
+  }
+
+  if (isAlreadyOpen) {
+    cardEl.classList.remove("open");
+  } else {
+    cardEl.classList.add("open");
+    setTimeout(() => {
+      cardEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }, 60);
+  }
+};
+
+window.launchPYQTest = function(rawName, enrolled) {
+  if (enrolled === false) {
+    if (typeof isEnrolled === "function" && !isEnrolled("cse-gate-2027")) {
+      alert("Please enroll in CSE-GATE PYQ Practice Series to attempt this test.");
+      if (typeof openDetail === "function") openDetail("cse-gate-2027");
+      return;
+    }
+  }
+
+  // Ensure test is registered in testBackendIdMap
+  const safeId = ("cse-gate-2027_" + rawName).toLowerCase().replace(/[^a-z0-9]/g, "_");
+  window.testBackendIdMap = window.testBackendIdMap || {};
+  window.testBackendIdMap[rawName] = safeId;
+  window.testBackendIdMap["cse-gate-2027|" + rawName] = safeId;
+  const bracket = rawName.match(/\(([^)]+)\)/);
+  if (bracket) {
+    window.testBackendIdMap[bracket[1]] = safeId;
+    window.testBackendIdMap["cse-gate-2027|" + bracket[1]] = safeId;
+  }
+
+  if (typeof openInstructions === "function") {
+    openInstructions(rawName);
+  }
+};
+
+window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
+  // Collect all tests belonging to cse-gate-2027
+  const registeredMap = new Map();
+
+  // 1. Defaults first
+  (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
+    registeredMap.set(t.name, { ...t });
+  });
+
+  // 2. Tests from apexTestRegistry
+  if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
+    window.apexTestRegistry.forEach(t => {
+      if (t.series === "cse-gate-2027" && t.name) {
+        registeredMap.set(t.name, {
+          series: t.series,
+          name: t.name,
+          date: t.date,
+          questions: t.questions
+        });
+      }
+    });
+  }
+
+  // 3. Tests from testSeries.schedule
+  const currentSeries = (window.testSeries || []).find(s => s.id === "cse-gate-2027");
+  if (currentSeries && Array.isArray(currentSeries.schedule)) {
+    currentSeries.schedule.forEach(s => {
+      const rawName = s[0];
+      if (rawName && !registeredMap.has(rawName)) {
+        registeredMap.set(rawName, {
+          series: "cse-gate-2027",
+          name: rawName,
+          date: s[1],
+          questionCount: s[2]
+        });
+      }
+    });
+  }
+
+  const allTests = Array.from(registeredMap.values());
+  const userResults = JSON.parse(localStorage.getItem("apex_user_results") || "[]");
+
+  // Render each subject card
+  let html = `<div class="pyq-accordion-wrap">`;
+
+  window.PYQ_CS_SUBJECTS.forEach((subj) => {
+    // Find tests matching this subject
+    const subjTests = allTests.filter(t => {
+      if (t.subject === subj.id) return true;
+      return subj.regex && subj.regex.test(t.name);
+    });
+
+    // Check completion count
+    let doneCount = 0;
+    const testItems = subjTests.map((t, idx) => {
+      const rawName = t.name;
+      const bracketMatch = rawName.match(/\(([^)]+)\)/);
+      const bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
+      
+      const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
+      const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
+      
+      let testType = isSubject ? "Subject" : "Topic";
+      let testLabel = isSubject ? `Subject Test ${idx + 1}` : `Topic Test ${idx + 1}`;
+      let topicsCovered = (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
+
+      // Check result
+      const res = userResults.find(r => r.testName === rawName || (bracket && r.testName && r.testName.includes(bracket)));
+      const isAttempted = !!res;
+      if (isAttempted) doneCount++;
+
+      return {
+        rawName,
+        bracket,
+        testType,
+        testLabel,
+        topicsCovered,
+        isAttempted,
+        score: res ? res.score : null,
+        maxScore: res ? (res.maxScore || 100) : 100
+      };
+    });
+
+    // Filter tests by status tab if requested
+    const filteredTests = testItems.filter(item => {
+      if (statusFilter === "attempted") return item.isAttempted;
+      if (statusFilter === "unattempted") return !item.isAttempted;
+      return true;
+    });
+
+    const isInitiallyOpen = (subj.id === "c_prog"); // Open C Programming by default as in Image 3
+    const totalCount = subjTests.length;
+
+    html += `
+      <div class="pyq-subject-card ${isInitiallyOpen ? "open" : ""}" id="pyq-card-${subj.id}">
+        <div class="pyq-subject-head" onclick="window.togglePYQAccordion(this.closest('.pyq-subject-card'))">
+          <div class="pyq-head-left">
+            <div class="pyq-icon-box" style="background:${subj.iconBg}; color:${subj.iconColor};">
+              ${subj.iconType === "svg" ? subj.iconVal : subj.iconVal}
+            </div>
+            <div class="pyq-subj-title">${subj.name}</div>
+          </div>
+          <div class="pyq-head-right">
+            <span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>
+            <svg class="pyq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="pyq-subject-body">
+          <div class="pyq-table-responsive">
+            <table class="pyq-table">
+              <thead>
+                <tr>
+                  <th style="width: 44px; text-align: center;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#64748b" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </th>
+                  <th style="min-width: 170px;">TEST NAME</th>
+                  <th style="min-width: 250px;">TOPICS COVERED</th>
+                  <th style="min-width: 130px;">STATUS</th>
+                  <th style="min-width: 110px; text-align: right;">ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${
+                  filteredTests.length > 0
+                    ? filteredTests
+                        .map(item => `
+                          <tr>
+                            <td style="text-align: center;">
+                              <div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="pyq-test-name-cell">
+                                <span>${item.testLabel}</span>
+                                <span class="pyq-type-pill ${item.testType.toLowerCase()}">${item.testType}</span>
+                              </div>
+                              <div class="pyq-test-sublabel">${item.bracket}</div>
+                            </td>
+                            <td class="pyq-topics-cell">${item.topicsCovered}</td>
+                            <td class="pyq-status-cell">
+                              ${
+                                item.isAttempted
+                                  ? `<span class="pyq-status-done">Completed</span>`
+                                  : `<span class="pyq-status-ready">Ready to Attempt</span>`
+                              }
+                            </td>
+                            <td style="text-align: right;">
+                              ${
+                                item.isAttempted
+                                  ? `
+                                  <div style="display: inline-flex; gap: 6px; justify-content: flex-end;">
+                                    <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">Result</button>
+                                    <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', ${isEnrolled})">Reattempt</button>
+                                  </div>`
+                                  : `
+                                  <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', ${isEnrolled})">
+                                    Start
+                                    <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
+                                  </button>`
+                              }
+                            </td>
+                          </tr>
+                        `)
+                        .join("")
+                    : `
+                      <tr>
+                        <td colspan="5" class="pyq-empty-tests">
+                          ${
+                            totalCount === 0
+                              ? "Tests for this subject will be available soon."
+                              : "No tests matching this filter."
+                          }
+                        </td>
+                      </tr>
+                    `
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  return html;
+};
