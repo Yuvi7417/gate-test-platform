@@ -1042,19 +1042,30 @@ function openDetail(id, pushHistory = true) {
     )
     .join("");
 
+  const dSchedule = document.getElementById("dSchedule");
   if (id === "cse-gate-2027") {
-    const enrolled = (typeof isEnrolled === "function" && isEnrolled(id)) || false;
-    document.getElementById("dSchedule").innerHTML = window.renderPYQAccordion ? window.renderPYQAccordion(enrolled) : "";
+    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
+    if (dSchedule) {
+      dSchedule.classList.add("pyq-full-width");
+      dSchedule.style.display = "block";
+      dSchedule.style.width = "100%";
+      dSchedule.innerHTML = window.renderPYQAccordion ? window.renderPYQAccordion(enrolled) : "";
+    }
   } else {
-    document.getElementById("dSchedule").innerHTML = t.schedule
-      .map(
-        (s) => `
-        <div class="schedule-card">
-          <div class="schedule-icon">${calIcon}</div>
-          <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
-        </div>`,
-      )
-      .join("");
+    if (dSchedule) {
+      dSchedule.classList.remove("pyq-full-width");
+      dSchedule.style.display = "";
+      dSchedule.style.width = "";
+      dSchedule.innerHTML = t.schedule
+        .map(
+          (s) => `
+          <div class="schedule-card">
+            <div class="schedule-icon">${calIcon}</div>
+            <div><div class="schedule-name">${s[0]}</div><div class="schedule-date">Date: ${s[1]}</div></div>
+          </div>`,
+        )
+        .join("");
+    }
   }
 
   showView("detail", false);
@@ -1414,13 +1425,42 @@ window.togglePYQAccordion = function(cardEl) {
   }
 };
 
-window.launchPYQTest = function(rawName, enrolled) {
-  if (enrolled === false) {
-    if (typeof isEnrolled === "function" && !isEnrolled("cse-gate-2027")) {
-      alert("Please enroll in CSE-GATE PYQ Practice Series to attempt this test.");
-      if (typeof openDetail === "function") openDetail("cse-gate-2027");
-      return;
+window.isEnrolledSeries = function(id) {
+  if (typeof enrolledIds !== "undefined" && Array.isArray(enrolledIds)) {
+    return enrolledIds.includes(id);
+  }
+  try {
+    const session = JSON.parse(localStorage.getItem("apexcore_user") || "{}");
+    if (session && Array.isArray(session.enrolledCourses)) {
+      return session.enrolledCourses.includes(id);
     }
+  } catch(e){}
+  return false;
+};
+
+window.promptEnrollment = function(seriesId = "cse-gate-2027") {
+  currentDetailId = seriesId;
+  if (!document.body.classList.contains("logged-in")) {
+    alert("Please log in or sign up to enroll and unlock tests.");
+    if (typeof openLogin === "function") {
+      openLogin();
+    }
+    return;
+  }
+  const enrollBar = document.querySelector(".enroll-bar");
+  if (enrollBar && document.getElementById("view-detail") && document.getElementById("view-detail").classList.contains("active")) {
+    enrollBar.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+  if (typeof handleEnroll === "function") {
+    handleEnroll();
+  }
+};
+
+window.launchPYQTest = function(rawName, enrolled) {
+  const isEnrolled = enrolled === true || (window.isEnrolledSeries && window.isEnrolledSeries("cse-gate-2027"));
+  if (!isEnrolled) {
+    window.promptEnrollment("cse-gate-2027");
+    return;
   }
 
   // Ensure test is registered in testBackendIdMap
@@ -1542,7 +1582,17 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
             <div class="pyq-subj-title">${subj.name}</div>
           </div>
           <div class="pyq-head-right">
-            <span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>
+            ${
+              isEnrolled
+                ? `<span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>`
+                : `
+                  <span class="pyq-locked-badge">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Locked
+                  </span>
+                  <span class="pyq-done-badge">${totalCount} Tests</span>
+                `
+            }
             <svg class="pyq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -1569,9 +1619,15 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                         .map(item => `
                           <tr>
                             <td style="text-align: center;">
-                              <div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
-                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
-                              </div>
+                              ${
+                                isEnrolled
+                                  ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
+                                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
+                                    </div>`
+                                  : `<div class="pyq-check-box locked">
+                                      <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#94a3b8" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    </div>`
+                              }
                             </td>
                             <td>
                               <div class="pyq-test-name-cell">
@@ -1583,24 +1639,33 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
                               ${
-                                item.isAttempted
-                                  ? `<span class="pyq-status-done">Completed</span>`
-                                  : `<span class="pyq-status-ready">Ready to Attempt</span>`
+                                isEnrolled
+                                  ? (item.isAttempted
+                                      ? `<span class="pyq-status-done">Completed</span>`
+                                      : `<span class="pyq-status-ready">Ready to Attempt</span>`)
+                                  : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
                               }
                             </td>
                             <td style="text-align: right;">
                               ${
-                                item.isAttempted
-                                  ? `
-                                  <div style="display: inline-flex; gap: 6px; justify-content: flex-end;">
-                                    <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">Result</button>
-                                    <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', ${isEnrolled})">Reattempt</button>
-                                  </div>`
+                                isEnrolled
+                                  ? (item.isAttempted
+                                      ? `
+                                      <div style="display: inline-flex; gap: 6px; justify-content: flex-end;">
+                                        <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">Result</button>
+                                        <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true)">Reattempt</button>
+                                      </div>`
+                                      : `
+                                      <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true)">
+                                        Start
+                                        <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
+                                      </button>`)
                                   : `
-                                  <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', ${isEnrolled})">
-                                    Start
-                                    <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
-                                  </button>`
+                                  <button class="pyq-btn-lock" onclick="window.promptEnrollment('cse-gate-2027')">
+                                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                    Unlock
+                                  </button>
+                                  `
                               }
                             </td>
                           </tr>

@@ -892,8 +892,20 @@ function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   if (t.id === "cse-gate-2027") {
     if (window.renderPYQAccordion) {
-      grid.innerHTML = window.renderPYQAccordion(true, filter);
+      if (grid) {
+        grid.classList.add("pyq-full-width");
+        grid.style.display = "block";
+        grid.style.width = "100%";
+      }
+      const isEnrolled = (window.isEnrolledSeries ? window.isEnrolledSeries(t.id) : (typeof enrolledIds !== "undefined" && enrolledIds.includes(t.id)));
+      grid.innerHTML = window.renderPYQAccordion(isEnrolled, filter);
       return;
+    }
+  } else {
+    if (grid) {
+      grid.classList.remove("pyq-full-width");
+      grid.style.display = "";
+      grid.style.width = "";
     }
   }
   const twList = t.schedule.filter((s) => (s[0] || "").toUpperCase().startsWith("TWT"));

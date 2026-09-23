@@ -5431,10 +5431,84 @@ main {
   color: #334155;
 }
 
+.pyq-btn-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.pyq-btn-lock:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+.pyq-locked-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e11d48;
+  background: #fff1f2;
+  border: 1px solid #ffe4e6;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.pyq-status-locked {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.pyq-check-box.locked {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #94a3b8;
+}
+
 .pyq-empty-tests {
   padding: 24px;
   text-align: center;
   color: #94a3b8;
   font-size: 13.5px;
 }
+
+#dSchedule.pyq-full-width,
+.schedule-grid.pyq-full-width,
+#testListGrid.pyq-full-width,
+#dSchedule:has(.pyq-accordion-wrap),
+.schedule-grid:has(.pyq-accordion-wrap) {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  grid-template-columns: none !important;
+}
+
+.pyq-accordion-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.pyq-subject-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 
