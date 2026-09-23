@@ -674,9 +674,21 @@ app.get('/api/user', authenticateToken, async (req, res) => {
 app.get('/api/test-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    
+    const bracketMatch = testName.match(/\(([^)]+)\)/);
+    const bracket = bracketMatch ? bracketMatch[1] : null;
+
+    let matchQuery = { testName: testName };
+    if (bracket) {
+      matchQuery = {
+        $or: [
+          { testName: testName },
+          { testName: { $regex: bracket.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), $options: 'i' } }
+        ]
+      };
+    }
+
     const stats = await TestResult.aggregate([
-      { $match: { testName: testName } },
+      { $match: matchQuery },
       {
         $group: {
           _id: null,
@@ -842,7 +854,19 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
 app.get('/api/leaderboard/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    const results = await TestResult.find({ testName }).populate('userId', 'name').lean();
+    const bracketMatch = testName.match(/\(([^)]+)\)/);
+    const bracket = bracketMatch ? bracketMatch[1] : null;
+
+    let query = { testName: testName };
+    if (bracket) {
+      query = {
+        $or: [
+          { testName: testName },
+          { testName: { $regex: bracket.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), $options: 'i' } }
+        ]
+      };
+    }
+    const results = await TestResult.find(query).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {
       return res.json({ success: true, leaderboard: [] });

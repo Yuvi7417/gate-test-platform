@@ -2413,7 +2413,8 @@ async function showResultPage(explicitTestName) {
   let avgScore = r.score;
   let highestScore = r.score;
   let avgAcc = accuracy;
-  let totalStudents = 63;
+  let totalStudents = 1;
+  let myRank = 1;
 
   try {
     const res = await fetch('/api/test-stats/' + encodeURIComponent(testName));
@@ -2422,28 +2423,39 @@ async function showResultPage(explicitTestName) {
       avgScore = data.stats.avgScore;
       highestScore = data.stats.highestScore;
       avgAcc = data.stats.avgAccuracy;
-      totalStudents = data.stats.totalStudents || 63;
+      if (data.stats.totalStudents) {
+        totalStudents = data.stats.totalStudents;
+      }
     }
   } catch (e) {
     console.error("Could not fetch stats", e);
   }
 
-  let myRank = Math.max(1, totalStudents - Math.round(r.score));
   try {
     const leadRes = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
     const leadData = await leadRes.json();
-    if (leadData.success && leadData.leaderboard) {
-      totalStudents = leadData.leaderboard.length || totalStudents;
-      const myEntry = leadData.leaderboard.find(x => x.name === user.name);
-      if (myEntry) myRank = myEntry.rank;
-      else myRank = Math.max(1, totalStudents - Math.round(r.score));
+    if (leadData.success && Array.isArray(leadData.leaderboard) && leadData.leaderboard.length > 0) {
+      const lb = leadData.leaderboard;
+      const myEntry = lb.find(x => x.name && user && user.name && x.name.trim().toLowerCase() === user.name.trim().toLowerCase());
+      if (myEntry) {
+        myRank = myEntry.rank;
+        totalStudents = Math.max(totalStudents, lb.length);
+      } else {
+        const higherScores = lb.filter(x => (x.score || 0) > (r.score || 0)).length;
+        myRank = higherScores + 1;
+        totalStudents = Math.max(totalStudents, lb.length + 1);
+      }
+    } else {
+      myRank = 1;
+      totalStudents = 1;
     }
   } catch (e) {
     console.error("Could not fetch leaderboard for rank", e);
   }
 
   document.getElementById("statRank").textContent = myRank + " out of " + totalStudents;
-  document.getElementById("statPercentile").textContent = Math.max(1, Math.round((1 - myRank / totalStudents) * 100 * 10) / 10) + "%";
+  const percentileVal = totalStudents <= 1 ? 100 : Math.max(1, Math.round(((totalStudents - myRank + 1) / totalStudents) * 100 * 10) / 10);
+  document.getElementById("statPercentile").textContent = percentileVal + "%";
 
   const renderCard = (title) => `
       <div class="result-subject-card">
