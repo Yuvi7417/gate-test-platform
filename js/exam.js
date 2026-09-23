@@ -695,7 +695,7 @@ function openPaymentGateway(id) {
       });
     return;
   }
-  const amountWithGst = Math.round(ts.basePrice * 1.18 * 100); // 18% GST, converted to paise
+  const amountToPay = Math.round(ts.basePrice * 100); // Converted to paise (no GST added)
 
   fetch('/api/create-order', {
     method: 'POST',
@@ -705,7 +705,7 @@ function openPaymentGateway(id) {
     },
     body: JSON.stringify({ 
       courseId: id, 
-      amount: amountWithGst,
+      amount: amountToPay,
       userEmail: currentUser ? currentUser.email : "",
       userName: currentUser ? currentUser.name : ""
     })
