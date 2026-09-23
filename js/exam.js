@@ -2192,7 +2192,17 @@ function confirmSubmit() {
   };
 
   // Immediate local update so user can see result right away
-  const existingIndex = userResults.findIndex(r => r.testName === payload.testName);
+  const payLower = (payload.testName || "").trim().toLowerCase();
+  const bracketMatch = payload.testName.match(/\(([^)]+)\)/);
+  const payBracket = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
+
+  const existingIndex = userResults.findIndex(r => {
+    if (!r || !r.testName) return false;
+    const rLower = r.testName.trim().toLowerCase();
+    if (r.testName === payload.testName || rLower === payLower) return true;
+    if (payBracket && rLower === payBracket) return true;
+    return false;
+  });
   if (existingIndex !== -1) {
     userResults[existingIndex] = payload;
   } else {
@@ -2202,8 +2212,17 @@ function confirmSubmit() {
   try {
     localStorage.setItem("apex_user_results", JSON.stringify(userResults));
   } catch (e) {}
-  const seriesObj = testSeries.find((x) => x.id === currentTestListId);
-  if (seriesObj) renderTestList(seriesObj, "all");
+
+  // Immediately refresh active views with updated results
+  const detailView = document.getElementById("view-detail");
+  if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined") {
+    if (typeof openDetail === 'function') openDetail(currentDetailId, false);
+  }
+  const testView = document.getElementById("view-tests");
+  if (testView && testView.classList.contains("active") && typeof currentTestListId !== "undefined") {
+    const seriesObj = testSeries.find((x) => x.id === currentTestListId);
+    if (seriesObj && typeof renderTestList === 'function') renderTestList(seriesObj, "all");
+  }
 
   // Save to pending queue in localStorage so results are NEVER lost
   try {
@@ -2259,22 +2278,20 @@ function confirmSubmit() {
 let lastResult = null;
 
 function openPastResult(testName) {
-  let result = userResults.find(r => r.testName === testName);
-  if (!result && window.userResults) {
-    result = window.userResults.find(r => r.testName === testName);
-  }
-  if (!result) {
-    const bracketMatch = testName.match(/\(([^)]+)\)/);
-    const bracket = bracketMatch ? bracketMatch[1] : null;
-    const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
-    result = allResults.find(r => {
-      if (!r || !r.testName) return false;
-      if (r.testName === testName) return true;
-      if (bracket && r.testName.includes(bracket)) return true;
-      if (r.testName.includes(testName) || testName.includes(r.testName)) return true;
-      return false;
-    });
-  }
+  const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
+  const allRev = allResults.slice().reverse();
+  const testLower = (testName || "").trim().toLowerCase();
+  const bracketMatch = testName.match(/\(([^)]+)\)/);
+  const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
+
+  let result = allRev.find(r => {
+    if (!r || !r.testName) return false;
+    const rLower = r.testName.trim().toLowerCase();
+    if (r.testName === testName || rLower === testLower) return true;
+    if (bracketLower && rLower === bracketLower) return true;
+    return false;
+  });
+
   if (result) {
     // Reconstruct lastResult format with fallbacks
     const timeSecs = result.timeTakenSecs || 0;
@@ -2298,16 +2315,16 @@ function openPastResult(testName) {
 
 function openSolutionMode(testName) {
   const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
+  const allRev = allResults.slice().reverse();
   const bracketMatch = testName.match(/\(([^)]+)\)/);
-  const bracket = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
+  const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
   const targetLower = testName.trim().toLowerCase();
 
-  let result = allResults.find(r => {
+  let result = allRev.find(r => {
     if (!r || !r.testName) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (rLower === targetLower) return true;
-    if (bracket && (rLower.includes(`(${bracket})`) || rLower.includes(bracket))) return true;
-    if (rLower.includes(targetLower) || targetLower.includes(rLower)) return true;
+    if (bracketLower && rLower === bracketLower) return true;
     return false;
   });
 
@@ -2659,6 +2676,16 @@ function renderBarChart(canvasId, label, count, color) {
 
 function closeResult() {
   document.getElementById("resultOverlay").classList.remove("show");
+  // Immediately refresh active view so the new score and status are visible
+  const detailView = document.getElementById("view-detail");
+  if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined") {
+    if (typeof openDetail === 'function') openDetail(currentDetailId, false);
+  }
+  const testView = document.getElementById("view-tests");
+  if (testView && testView.classList.contains("active") && typeof currentTestListId !== "undefined") {
+    const seriesObj = testSeries.find((x) => x.id === currentTestListId);
+    if (seriesObj && typeof renderTestList === 'function') renderTestList(seriesObj, "all");
+  }
 }
 
 async function openLeaderboard() {

@@ -1667,12 +1667,18 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
         (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
       const canAttempt = isEnrolled || isFree;
 
-      // Check result
-      const res = userResults.find(r => {
+      // Check result (most recent first, exact/bracket match without loose substring cross-matching)
+      const allRes = (userResults || []).slice().reverse();
+      const rawLower = (rawName || "").trim().toLowerCase();
+      const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
+
+      const res = allRes.find(r => {
         if (!r || !r.testName) return false;
-        if (r.testName === rawName) return true;
-        if (bracket && r.testName.includes(bracket)) return true;
-        if (r.testName.includes(rawName) || rawName.includes(r.testName)) return true;
+        const rLower = r.testName.trim().toLowerCase();
+        // 1. Exact or case-insensitive match
+        if (r.testName === rawName || rLower === rawLower) return true;
+        // 2. Bracket match if bracket was explicitly defined
+        if (bracketLower && rLower === bracketLower) return true;
         return false;
       });
       const isAttempted = !!res;

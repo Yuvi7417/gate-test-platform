@@ -636,8 +636,8 @@ app.post('/api/submit-test', authenticateToken, async (req, res) => {
   try {
     const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers } = req.body;
     await TestResult.findOneAndUpdate(
-      { userId: req.user._id, testName },
-      { score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers, date: Date.now() },
+      { userId: req.user._id, testName: { $regex: new RegExp('^' + testName.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') } },
+      { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers, date: Date.now() },
       { upsert: true, new: true }
     );
     res.json({ success: true, message: 'Test submitted successfully.' });
