@@ -2252,9 +2252,8 @@ function confirmSubmit() {
   submitWithRetry();
 
   setTimeout(() => {
-    document.getElementById("successOverlay").classList.remove("show");
     showResultPage();
-  }, 1600);
+  }, 1400);
 }
 
 let lastResult = null;
@@ -2416,6 +2415,58 @@ async function showResultPage(explicitTestName) {
   let totalStudents = 1;
   let myRank = 1;
 
+  document.getElementById("statRank").textContent = "1 out of 1";
+  document.getElementById("statPercentile").textContent = "100%";
+
+  const renderCard = (title) => `
+      <div class="result-subject-card">
+        <div class="rsc-top">
+          <div class="result-subject-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="14" rx="1" />
+              <path d="M8 21h8M12 18v3" />
+            </svg>
+          </div>
+          <div class="result-subject-name">${title}</div>
+        </div>
+        <div class="rsc-donut-row">
+          <div class="result-subject-donut" style="--donut-gradient: ${donutGradient}">
+            <div class="result-subject-donut-inner"></div>
+          </div>
+          <div class="result-legend" style="font-size: 11px;">
+            <div><span class="dot correct"></span>Correct <b>${c}</b></div>
+            <div><span class="dot incorrect"></span>Incorrect <b>${w}</b></div>
+            <div><span class="dot unattempted"></span>Unattempted <b>${u}</b></div>
+          </div>
+        </div>
+        <div class="rsc-stats">
+          <div class="rsc-stat-row"><span>Score</span><span class="rsc-stat-val">${r.score} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Avg Score</span><span class="rsc-stat-val card-avg-score">${avgScore} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Accuracy</span><span class="rsc-stat-val">${accuracy}%</span></div>
+          <div class="rsc-stat-row"><span>Questions</span><span class="rsc-stat-val">${total}</span></div>
+          <div class="rsc-stat-row"><span>Highest</span><span class="rsc-stat-val card-highest-score">${highestScore} / ${r.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Avg Acc.</span><span class="rsc-stat-val card-avg-acc">${avgAcc}%</span></div>
+        </div>
+      </div>
+  `;
+
+  document.getElementById("subjectWiseContainer").innerHTML = renderCard("GATE CS OTS - 2027");
+  document.getElementById("topicWiseContainer").innerHTML = renderCard(testName);
+
+  document.body.style.overflow = "";
+  // SHOW RESULT OVERLAY IMMEDIATELY & HIDE SUCCESS OVERLAY (NO FLASH OF LEARN PAGE)
+  document.getElementById("resultOverlay").classList.add("show");
+  const succEl = document.getElementById("successOverlay");
+  if (succEl) succEl.classList.remove("show");
+
+  // Render Charts immediately
+  setTimeout(() => {
+    renderBarChart("subjectChart", "GATE CS OTS - 2027", total, "#14619C");
+    renderBarChart("topicChart", testName, total, "#5D8C72");
+    renderAdvancedCharts();
+  }, 100);
+
+  // Asynchronously fetch leaderboard & stats from server without blocking the UI
   try {
     const res = await fetch('/api/test-stats/' + encodeURIComponent(testName));
     const data = await res.json();
@@ -2426,6 +2477,9 @@ async function showResultPage(explicitTestName) {
       if (data.stats.totalStudents) {
         totalStudents = data.stats.totalStudents;
       }
+      document.querySelectorAll(".card-avg-score").forEach(el => el.textContent = `${avgScore} / ${r.maxScore}`);
+      document.querySelectorAll(".card-highest-score").forEach(el => el.textContent = `${highestScore} / ${r.maxScore}`);
+      document.querySelectorAll(".card-avg-acc").forEach(el => el.textContent = `${avgAcc}%`);
     }
   } catch (e) {
     console.error("Could not fetch stats", e);
@@ -2456,51 +2510,6 @@ async function showResultPage(explicitTestName) {
   document.getElementById("statRank").textContent = myRank + " out of " + totalStudents;
   const percentileVal = totalStudents <= 1 ? 100 : Math.max(1, Math.round(((totalStudents - myRank + 1) / totalStudents) * 100 * 10) / 10);
   document.getElementById("statPercentile").textContent = percentileVal + "%";
-
-  const renderCard = (title) => `
-      <div class="result-subject-card">
-        <div class="rsc-top">
-          <div class="result-subject-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="4" width="20" height="14" rx="1" />
-              <path d="M8 21h8M12 18v3" />
-            </svg>
-          </div>
-          <div class="result-subject-name">${title}</div>
-        </div>
-        <div class="rsc-donut-row">
-          <div class="result-subject-donut" style="--donut-gradient: ${donutGradient}">
-            <div class="result-subject-donut-inner"></div>
-          </div>
-          <div class="result-legend" style="font-size: 11px;">
-            <div><span class="dot correct"></span>Correct <b>${c}</b></div>
-            <div><span class="dot incorrect"></span>Incorrect <b>${w}</b></div>
-            <div><span class="dot unattempted"></span>Unattempted <b>${u}</b></div>
-          </div>
-        </div>
-        <div class="rsc-stats">
-          <div class="rsc-stat-row"><span>Score</span><span class="rsc-stat-val">${r.score} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Avg Score</span><span class="rsc-stat-val">${avgScore} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Accuracy</span><span class="rsc-stat-val">${accuracy}%</span></div>
-          <div class="rsc-stat-row"><span>Questions</span><span class="rsc-stat-val">${total}</span></div>
-          <div class="rsc-stat-row"><span>Highest</span><span class="rsc-stat-val">${highestScore} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Avg Acc.</span><span class="rsc-stat-val">${avgAcc}%</span></div>
-        </div>
-      </div>
-  `;
-
-  document.getElementById("subjectWiseContainer").innerHTML = renderCard("GATE CS OTS - 2027");
-  document.getElementById("topicWiseContainer").innerHTML = renderCard(testName);
-
-  document.body.style.overflow = "";
-  document.getElementById("resultOverlay").classList.add("show");
-
-  // Render Charts
-  setTimeout(() => {
-    renderBarChart("subjectChart", "GATE CS OTS - 2027", total, "#14619C");
-    renderBarChart("topicChart", testName, total, "#5D8C72");
-    renderAdvancedCharts();
-  }, 100);
 }
 
 let __advancedStats = null;
