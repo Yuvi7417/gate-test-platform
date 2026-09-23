@@ -583,6 +583,12 @@ async function fetchUserResults(retries = 5) {
           window.filterByType();
         }
       }
+      const detailView = document.getElementById("view-detail");
+      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && currentDetailId === "cse-gate-2027") {
+        if (typeof openDetail === 'function') {
+          openDetail(currentDetailId, false);
+        }
+      }
     }
   } catch (err) {
     console.error("Error fetching results:", err);
@@ -2292,13 +2298,26 @@ function openPastResult(testName) {
 }
 
 function openSolutionMode(testName) {
-  const result = userResults.find(r => r.testName === testName);
+  const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
+  const bracketMatch = testName.match(/\(([^)]+)\)/);
+  const bracket = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
+  const targetLower = testName.trim().toLowerCase();
+
+  let result = allResults.find(r => {
+    if (!r || !r.testName) return false;
+    const rLower = r.testName.trim().toLowerCase();
+    if (rLower === targetLower) return true;
+    if (bracket && (rLower.includes(`(${bracket})`) || rLower.includes(bracket))) return true;
+    if (rLower.includes(targetLower) || targetLower.includes(rLower)) return true;
+    return false;
+  });
+
   if (!result || !result.answers) {
     alert("Answers not found for this test. Past tests before this update do not have answers saved.");
     return;
   }
 
-  const testKey = findMatchingTest(testName);
+  const testKey = findMatchingTest(testName) || (result && findMatchingTest(result.testName));
   if (!testKey) {
     alert("Test data not found.");
     return;
