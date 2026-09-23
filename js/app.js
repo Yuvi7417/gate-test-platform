@@ -1496,6 +1496,7 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
           series: t.series,
           name: t.name,
           date: t.date,
+          topicsCovered: t.topicsCovered || t.topics,
           questions: t.questions
         });
       }
@@ -1545,7 +1546,7 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all") {
       
       let testType = isSubject ? "Subject" : "Topic";
       let testLabel = isSubject ? `Subject Test ${idx + 1}` : `Topic Test ${idx + 1}`;
-      let topicsCovered = (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
+      let topicsCovered = t.topicsCovered || t.topics || (window.PYQ_TOPIC_MAP && window.PYQ_TOPIC_MAP[bracket]) || bracket;
 
       // Check result
       const res = userResults.find(r => {
