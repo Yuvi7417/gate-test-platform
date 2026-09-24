@@ -1295,9 +1295,15 @@ window.PYQ_TOPIC_MAP = {
   "Computer network-2": "Routing Algorithms, IP Addressing, IPv4/IPv6, TCP/UDP, Sockets",
   "Computer network": "Complete Computer Networks Syllabus",
 
-  "C programming and data structure-1": "C Programming (Pointers, Recursion, Scope), Arrays, Stacks, Queues",
-  "C programming and data structure-2": "Linked Lists, Trees, Binary Search Trees, Heaps, Graphs",
-  "C programming and data structure": "Complete Programming & Data Structures Syllabus",
+  "C programming and data structure-1": "Programming in C, Arrays, stacks and queues, Recursion.",
+  "Programming and Data Structures-1": "Programming in C, Arrays, stacks and queues, Recursion.",
+  "Programming and Data Structure-1": "Programming in C, Arrays, stacks and queues, Recursion.",
+  "C programming and data structure-2": "Hashing, Linked lists, trees, binary search trees.",
+  "Programming and Data Structures-2": "Hashing, Linked lists, trees, binary search trees.",
+  "Programming and Data Structure-2": "Hashing, Linked lists, trees, binary search trees.",
+  "C programming and data structure": "Complete Programming and Data Structures Syllabus",
+  "Programming and Data Structures": "Complete Programming and Data Structures Syllabus",
+  "Programming and Data Structure": "Complete Programming and Data Structures Syllabus",
 
   "Engineering Mathematics-1": "Linear Algebra (Matrices, Determinants, Systems of Equations, Eigenvalues)",
   "Engineering Mathematics-2": "Calculus (Limits, Continuity, Derivatives, Maxima/Minima, Integration)",
@@ -1399,13 +1405,22 @@ window.PYQ_CS_SUBJECTS = [
     regex: /(dbms|database)/i
   },
   {
+    id: "prog_ds",
+    name: "Programming and Data Structures",
+    iconType: "text",
+    iconVal: "{}",
+    iconBg: "#fee2e2",
+    iconColor: "#ef4444",
+    regex: /(programming and data structure|c programming and data structure|programming & data structure)/i
+  },
+  {
     id: "c_prog",
     name: "C Programming",
     iconType: "text",
     iconVal: "{}",
     iconBg: "#fee2e2",
     iconColor: "#ef4444",
-    regex: /(c programming|c-programming)/i
+    regex: /^TWT-c-programming|\b(c programming|c-programming)\b(?!\s*and\s*data|\s*&\s*data)/i
   },
   {
     id: "ds",
@@ -1414,7 +1429,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><circle cx="6" cy="19" r="3"/><circle cx="18" cy="19" r="3"/><path d="M12 8v4M12 12l-6 4M12 12l6 4"/></svg>`,
     iconBg: "#ffe4e6",
     iconColor: "#e11d48",
-    regex: /(data structure|data structures)/i
+    regex: /(?<!c\s+programming\s+(and|&)\s*)(?<!programming\s+(and|&)\s*)\b(data structures|data structure)\b/i
   },
   {
     id: "algo",
@@ -1878,6 +1893,8 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
       if (t.subject === subj.id) return true;
       return subj.regex && subj.regex.test(t.name);
     });
+
+    if (!subjTests || subjTests.length === 0) return;
 
     // Check completion count
     let doneCount = 0;
