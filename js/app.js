@@ -1744,7 +1744,6 @@ window.PYQ_EE_TOPIC_MAP = {
   "Engineering Mathematics -1": "Linear Algebra (Matrices, Eigenvalues) & Calculus",
   "Engineering Mathematics -2": "Differential Equations, Complex Variables, Probability",
   "Engineering Mathematics": "Complete Engineering Mathematics Syllabus",
-  "Advanced Engineering Mathematics": "Numerical Methods, Vector Calculus, Transform Theory",
   "General Aptitude -1": "English Grammar, Vocabulary, Reading Comprehension",
   "General Aptitude -2": "Quantitative Aptitude, Spatial Reasoning, Analytical Ability",
   "General Aptitude": "Complete General Aptitude GATE Section",
@@ -1813,13 +1812,11 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "TWT - Engineering Mathematics -1", subject: "ee_maths" },
   { series: "ee-gate-pyq-2027", name: "TWT - Engineering Mathematics -2", subject: "ee_maths" },
   { series: "ee-gate-pyq-2027", name: "SWT - Engineering Mathematics", subject: "ee_maths" },
-  { series: "ee-gate-pyq-2027", name: "SWT - Advanced Engineering Mathematics", subject: "ee_maths" },
 
   // General Aptitude (4)
   { series: "ee-gate-pyq-2027", name: "TWT - General Aptitude -1", subject: "ee_aptitude" },
   { series: "ee-gate-pyq-2027", name: "TWT - General Aptitude -2", subject: "ee_aptitude" },
   { series: "ee-gate-pyq-2027", name: "SWT - General Aptitude", subject: "ee_aptitude" },
-  { series: "ee-gate-pyq-2027", name: "SWT - General Aptitude Comprehensive", subject: "ee_aptitude" },
 
   // Full Length Mock Tests (7)
   { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 1", subject: "ee_flt" },
