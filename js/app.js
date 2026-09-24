@@ -1272,7 +1272,7 @@ window.PYQ_TOPIC_MAP = {
   "Asymptotic Notation-III": "Worst Case, Average Case, Best Case Complexity Analysis",
   "Recurrence Relation-I": "Substitution Method, Master Theorem Basics",
   "Recurrence Relation-II": "Recursion Tree Method, Advanced Master Theorem Cases",
-  "Recurrence Relation-III": "Akra-Bazzi Method, Non-homogeneous Recurrences",
+
 
   // Made Easy CS Tests
   "Digital logic-1": "Boolean Algebra, Minimization, K-Maps, Logic Gates",
@@ -1368,7 +1368,6 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-III)", subject: "algo" },
   { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-I)", subject: "algo" },
   { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-II)", subject: "algo" },
-  { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-III)", subject: "algo" },
 ];
 
 window.PYQ_CS_SUBJECTS = [
