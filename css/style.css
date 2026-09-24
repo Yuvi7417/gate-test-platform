@@ -5289,6 +5289,13 @@ main {
   color: #ffffff;
 }
 
+.pyq-check-box.coming-soon {
+  border-color: #e2e8f0;
+  background: #f8fafc;
+  color: #94a3b8;
+  cursor: default;
+}
+
 .pyq-test-name-cell {
   font-weight: 600;
   color: #1e293b;
@@ -5349,6 +5356,24 @@ main {
   height: 7px;
   border-radius: 50%;
   background: #10b981;
+}
+
+.pyq-status-coming {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #d97706;
+}
+
+.pyq-status-coming::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f59e0b;
 }
 
 .pyq-status-done {
@@ -5412,6 +5437,37 @@ main {
   background: #2563eb;
   color: #ffffff;
   border-color: #2563eb;
+}
+
+.pyq-btn-notify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.pyq-btn-notify:hover {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+  box-shadow: 0 1px 3px rgba(245, 158, 11, 0.15);
+}
+
+.pyq-btn-notify.notified {
+  background: #f1f5f9;
+  color: #64748b;
+  border-color: #cbd5e1;
+  cursor: default;
+  box-shadow: none;
 }
 
 .pyq-btn-result {

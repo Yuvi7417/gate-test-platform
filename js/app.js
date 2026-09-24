@@ -1828,6 +1828,25 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 7", subject: "ee_flt" }
 ];
 
+window.handleNotifyMe = function (btn, testName) {
+  try {
+    const list = JSON.parse(localStorage.getItem("apex_notified_tests") || "[]");
+    if (!list.includes(testName)) {
+      list.push(testName);
+      localStorage.setItem("apex_notified_tests", JSON.stringify(list));
+    }
+  } catch (e) { }
+
+  if (btn) {
+    btn.innerHTML = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Notified`;
+    btn.classList.add("notified");
+    btn.onclick = null;
+    btn.disabled = true;
+  }
+
+  alert(`🔔 You will be notified as soon as "${testName}" is released!`);
+};
+
 window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
   // Collect all tests belonging to this series
   const registeredMap = new Map();
@@ -1898,6 +1917,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   const userResults = (typeof window.userResults !== 'undefined' && Array.isArray(window.userResults) && window.userResults.length > 0)
     ? window.userResults
     : JSON.parse(localStorage.getItem("apex_user_results") || "[]");
+  const notifiedTests = JSON.parse(localStorage.getItem("apex_notified_tests") || "[]");
 
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
@@ -1976,6 +1996,10 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const isAttempted = !!res;
       if (isAttempted) doneCount++;
 
+      // Check if coming soon: explicit flag OR unattempted with no questions registered yet
+      const hasQuestions = (Array.isArray(t.questions) && t.questions.length > 0) || (typeof t.questionCount === 'number' && t.questionCount > 0);
+      const isComingSoon = (t.comingSoon === true || t.status === "coming_soon" || !hasQuestions) && !isAttempted;
+
       return {
         rawName,
         bracket,
@@ -1985,6 +2009,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         isFree,
         canAttempt,
         isAttempted,
+        isComingSoon,
         score: res && res.score !== undefined ? res.score : null,
         maxScore: res && res.maxScore !== undefined ? res.maxScore : 100
       };
@@ -2045,13 +2070,17 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
           .map(item => `
                           <tr>
                             <td style="text-align: center;">
-                              ${item.canAttempt
-              ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
+                              ${item.isComingSoon
+              ? `<div class="pyq-check-box coming-soon" title="Coming Soon">
+                                      <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    </div>`
+              : (item.canAttempt
+                ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
                                       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
                                     </div>`
-              : `<div class="pyq-check-box locked">
+                : `<div class="pyq-check-box locked">
                                       <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#94a3b8" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    </div>`
+                                    </div>`)
             }
                             </td>
                             <td>
@@ -2063,34 +2092,46 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
                             </td>
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
-                              ${item.canAttempt
-              ? (item.isAttempted
-                ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
-                : (item.isFree && !isEnrolled
-                  ? `<span class="pyq-status-free">Free Demo</span>`
-                  : `<span class="pyq-status-ready">Ready to Attempt</span>`))
-              : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
+                              ${item.isComingSoon
+              ? `<span class="pyq-status-coming">Coming Soon</span>`
+              : (item.canAttempt
+                ? (item.isAttempted
+                  ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
+                  : (item.isFree && !isEnrolled
+                    ? `<span class="pyq-status-free">Free Demo</span>`
+                    : `<span class="pyq-status-ready">Ready to Attempt</span>`))
+                : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`)
             }
                             </td>
                             <td style="text-align: right;">
-                              ${item.canAttempt
-              ? (item.isAttempted
-                ? `
-                                      <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
-                                        <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
-                                        <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">Reattempt</button>
-                                      </div>`
+                              ${item.isComingSoon
+              ? (notifiedTests.includes(item.rawName)
+                ? `<button class="pyq-btn-notify notified" disabled>
+                                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                      Notified
+                                    </button>`
+                : `<button class="pyq-btn-notify" onclick="window.handleNotifyMe(this, '${item.rawName.replace(/'/g, "\\'")}')">
+                                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                                      Notify Me
+                                    </button>`)
+              : (item.canAttempt
+                ? (item.isAttempted
+                  ? `
+                                        <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
+                                          <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
+                                          <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">Reattempt</button>
+                                        </div>`
+                  : `
+                                        <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">
+                                          Start
+                                          <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
+                                        </button>`)
                 : `
-                                      <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">
-                                        Start
-                                        <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
-                                      </button>`)
-              : `
-                                  <button class="pyq-btn-lock" onclick="window.promptEnrollment('${seriesId}')">
-                                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                                    Unlock
-                                  </button>
-                                  `
+                                    <button class="pyq-btn-lock" onclick="window.promptEnrollment('${seriesId}')">
+                                      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                      Unlock
+                                    </button>
+                                    `)
             }
                             </td>
                           </tr>
