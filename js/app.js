@@ -65,6 +65,14 @@ window.addEventListener("popstate", (e) => {
     if (typeof openTestList === "function") {
       openTestList(e.state.param, false);
     }
+  } else if (id === "ee-gate-pyq-2027") {
+    const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
+    if (dSchedule) {
+      dSchedule.className = "ee-accordion-schedule-wrap";
+      dSchedule.style.display = "block";
+      dSchedule.style.width = "100%";
+      dSchedule.innerHTML = window.renderEEAccordion ? window.renderEEAccordion(enrolled) : "";
+    }
   } else {
     showView(e.state.view, false);
   }
@@ -1831,4 +1839,771 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
 
   html += `</div>`;
   return html;
+};
+
+
+/* ==========================================================================
+   EE-GATE 2027 Subject-wise Accordion (GoClasses Style) Logic
+   ========================================================================== */
+window.EE_GATE_SUBJECTS = [
+  {
+    id: "ee_circuits",
+    name: "Electric Circuits",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-1 (Electric Circuits -1)",
+        full: "TWT - Electric Circuits -1",
+        bracket: "Electric Circuits -1",
+        type: "Topicwise Test",
+        pattern: "KCL, KVL, Node & Mesh, Theorems",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-2 (Electric Circuits -2)",
+        full: "TWT - Electric Circuits -2",
+        bracket: "Electric Circuits -2",
+        type: "Topicwise Test",
+        pattern: "Transient Analysis, Resonance, Two-Port Networks",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-1 (Electric Circuits)",
+        full: "SWT - Electric Circuits",
+        bracket: "Electric Circuits",
+        type: "Subjectwise Test",
+        pattern: "Complete Electric Circuits Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_control",
+    name: "Control Systems",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-3 (Control Systems -1)",
+        full: "TWT - Control Systems -1",
+        bracket: "Control Systems -1",
+        type: "Topicwise Test",
+        pattern: "Block Diagrams, SFG, Time Response, Routh-Hurwitz",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-4 (Control Systems -2)",
+        full: "TWT - Control Systems -2",
+        bracket: "Control Systems -2",
+        type: "Topicwise Test",
+        pattern: "Root Locus, Bode & Nyquist Plots, State Space",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-2 (Control Systems)",
+        full: "SWT - Control Systems",
+        bracket: "Control Systems",
+        type: "Subjectwise Test",
+        pattern: "Complete Control Systems Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_machines",
+    name: "Electrical Machines",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-5 (Electrical Machines -1)",
+        full: "TWT - Electrical Machines -1",
+        bracket: "Electrical Machines -1",
+        type: "Topicwise Test",
+        pattern: "Transformers, Autotransformers, Voltage Regulation",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-6 (Electrical Machines -2)",
+        full: "TWT - Electrical Machines -2",
+        bracket: "Electrical Machines -2",
+        type: "Topicwise Test",
+        pattern: "DC Machines, Induction Motors, Synchronous Machines",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-3 (Electrical Machines)",
+        full: "SWT - Electrical Machines",
+        bracket: "Electrical Machines",
+        type: "Subjectwise Test",
+        pattern: "Complete Electrical Machines Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_power_sys",
+    name: "Power Systems",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-7 (Power Systems -1)",
+        full: "TWT - Power Systems -1",
+        bracket: "Power Systems -1",
+        type: "Topicwise Test",
+        pattern: "Transmission Line Models, Corona, Per Unit System",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-8 (Power Systems -2)",
+        full: "TWT - Power Systems -2",
+        bracket: "Power Systems -2",
+        type: "Topicwise Test",
+        pattern: "Load Flow, Symmetrical/Unsymmetrical Faults, Stability",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-4 (Power Systems)",
+        full: "SWT - Power Systems",
+        bracket: "Power Systems",
+        type: "Subjectwise Test",
+        pattern: "Complete Power Systems & Protection Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_power_elec",
+    name: "Power Electronics",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-9 (Power Electronics -1)",
+        full: "TWT - Power Electronics -1",
+        bracket: "Power Electronics -1",
+        type: "Topicwise Test",
+        pattern: "SCR, MOSFET, IGBT, Phase-Controlled Rectifiers",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-10 (Power Electronics -2)",
+        full: "TWT - Power Electronics -2",
+        bracket: "Power Electronics -2",
+        type: "Topicwise Test",
+        pattern: "DC-DC Choppers, Inverters (VSI, CSI), PWM, Drives",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-5 (Power Electronics)",
+        full: "SWT - Power Electronics",
+        bracket: "Power Electronics",
+        type: "Subjectwise Test",
+        pattern: "Complete Power Electronics Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_signals",
+    name: "Signals & Systems",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-11 (Signals & Systems -1)",
+        full: "TWT - Signals & Systems -1",
+        bracket: "Signals & Systems -1",
+        type: "Topicwise Test",
+        pattern: "Continuous & Discrete Time Signals, LTI Systems",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-12 (Signals & Systems -2)",
+        full: "TWT - Signals & Systems -2",
+        bracket: "Signals & Systems -2",
+        type: "Topicwise Test",
+        pattern: "Fourier Series/Transform, Laplace & Z-Transform",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-6 (Signals & Systems)",
+        full: "SWT - Signals & Systems",
+        bracket: "Signals & Systems",
+        type: "Subjectwise Test",
+        pattern: "Complete Signals & Systems Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_digital",
+    name: "Digital Electronics",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-13 (Digital Electronics -1)",
+        full: "TWT - Digital Electronics -1",
+        bracket: "Digital Electronics -1",
+        type: "Topicwise Test",
+        pattern: "Boolean Algebra, Logic Gates, Minimization, K-Maps",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-14 (Digital Electronics -2)",
+        full: "TWT - Digital Electronics -2",
+        bracket: "Digital Electronics -2",
+        type: "Topicwise Test",
+        pattern: "Multiplexers, Counters, Flip-Flops, Registers, ADCs",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-7 (Digital Electronics)",
+        full: "SWT - Digital Electronics",
+        bracket: "Digital Electronics",
+        type: "Subjectwise Test",
+        pattern: "Complete Digital Electronics Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_analog",
+    name: "Analog Electronics",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-15 (Analog Electronics -1)",
+        full: "TWT - Analog Electronics -1",
+        bracket: "Analog Electronics -1",
+        type: "Topicwise Test",
+        pattern: "Diode Circuits, BJT & MOSFET Biasing, Amplifiers",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-16 (Analog Electronics -2)",
+        full: "TWT - Analog Electronics -2",
+        bracket: "Analog Electronics -2",
+        type: "Topicwise Test",
+        pattern: "Op-Amps, Active Filters, Feedback Amplifiers, 555 Timers",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-8 (Analog Electronics)",
+        full: "SWT - Analog Electronics",
+        bracket: "Analog Electronics",
+        type: "Subjectwise Test",
+        pattern: "Complete Analog Electronics Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_emi",
+    name: "Measurements & Instrumentation (EMI)",
+    badge: "3 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-17 (EMI -1)",
+        full: "TWT - EMI -1",
+        bracket: "EMI -1",
+        type: "Topicwise Test",
+        pattern: "Bridges, Potentiometers, PMMC, Moving Iron, Dynamometer",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-18 (EMI -2)",
+        full: "TWT - EMI -2",
+        bracket: "EMI -2",
+        type: "Topicwise Test",
+        pattern: "Digital Voltmeters, Oscilloscopes (CRO), Instrument Transformers",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-9 (Electrical & Electronics Measurements)",
+        full: "SWT - Electrical & Electronics Measurements",
+        bracket: "Electrical & Electronics Measurements",
+        type: "Subjectwise Test",
+        pattern: "Complete Measurements & Instrumentation Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_emf",
+    name: "Electromagnetic Fields (EMF)",
+    badge: "2 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-19 (Electromagnetic Fields -1)",
+        full: "TWT - Electromagnetic Fields -1",
+        bracket: "Electromagnetic Fields -1",
+        type: "Topicwise Test",
+        pattern: "Coulomb's Law, Electric Field Intensity, Gauss's Law",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Oct 15, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Subjectwise Test-10 (Electromagnetic Fields)",
+        full: "SWT - Electromagnetic Fields",
+        bracket: "Electromagnetic Fields",
+        type: "Subjectwise Test",
+        pattern: "Ampere's Law, Faraday's Law, Maxwell's Equations, Wave Equation",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      }
+    ]
+  },
+  {
+    id: "ee_maths",
+    name: "Engineering Mathematics",
+    badge: "4 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-20 (Engineering Mathematics -1)",
+        full: "TWT - Engineering Mathematics -1",
+        bracket: "Engineering Mathematics -1",
+        type: "Topicwise Test",
+        pattern: "Linear Algebra (Matrices, Eigenvalues) & Calculus",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-21 (Engineering Mathematics -2)",
+        full: "TWT - Engineering Mathematics -2",
+        bracket: "Engineering Mathematics -2",
+        type: "Topicwise Test",
+        pattern: "Differential Equations, Complex Variables, Probability",
+        questions: 17,
+        marks: 25,
+        duration: "45 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-11 (Engineering Mathematics)",
+        full: "SWT - Engineering Mathematics",
+        bracket: "Engineering Mathematics",
+        type: "Subjectwise Test",
+        pattern: "Complete Engineering Mathematics Syllabus",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-12 (Advanced Engineering Mathematics)",
+        full: "SWT - Advanced Engineering Mathematics",
+        bracket: "Advanced Engineering Mathematics",
+        type: "Subjectwise Test",
+        pattern: "Numerical Methods, Vector Calculus, Transform Theory",
+        questions: 33,
+        marks: 50,
+        duration: "90 Mins",
+        date: "Oct 25, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "ee_aptitude",
+    name: "General Aptitude",
+    badge: "4 Tests",
+    tests: [
+      {
+        name: "EE 2027-Topicwise Test-22 (General Aptitude -1)",
+        full: "TWT - General Aptitude -1",
+        bracket: "General Aptitude -1",
+        type: "Topicwise Test",
+        pattern: "English Grammar, Vocabulary, Reading Comprehension",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Topicwise Test-23 (General Aptitude -2)",
+        full: "TWT - General Aptitude -2",
+        bracket: "General Aptitude -2",
+        type: "Topicwise Test",
+        pattern: "Quantitative Aptitude, Spatial Reasoning, Analytical Ability",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-13 (General Aptitude)",
+        full: "SWT - General Aptitude",
+        bracket: "General Aptitude",
+        type: "Subjectwise Test",
+        pattern: "Complete General Aptitude GATE Section",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Available Now",
+        hasQuestions: true
+      },
+      {
+        name: "EE 2027-Subjectwise Test-14 (General Aptitude Comprehensive)",
+        full: "SWT - General Aptitude Comprehensive",
+        bracket: "General Aptitude Comprehensive",
+        type: "Subjectwise Test",
+        pattern: "Comprehensive Numerical & Verbal Ability",
+        questions: 15,
+        marks: 15,
+        duration: "30 Mins",
+        date: "Nov 05, 2026",
+        hasQuestions: false
+      }
+    ]
+  },
+  {
+    id: "ee_flt",
+    name: "Full Length Mock Tests (FLT)",
+    badge: "7 Tests",
+    tests: [
+      {
+        name: "EE 2027-Full Length Test-1",
+        full: "FLT - Mock Test 1",
+        bracket: "Full Syllabus Mock 1",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Nov 15, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-2",
+        full: "FLT - Mock Test 2",
+        bracket: "Full Syllabus Mock 2",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Nov 25, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-3",
+        full: "FLT - Mock Test 3",
+        bracket: "Full Syllabus Mock 3",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Dec 05, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-4",
+        full: "FLT - Mock Test 4",
+        bracket: "Full Syllabus Mock 4",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Dec 15, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-5",
+        full: "FLT - Mock Test 5",
+        bracket: "Full Syllabus Mock 5",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Dec 25, 2026",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-6",
+        full: "FLT - Mock Test 6",
+        bracket: "Full Syllabus Mock 6",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Jan 05, 2027",
+        hasQuestions: false
+      },
+      {
+        name: "EE 2027-Full Length Test-7",
+        full: "FLT - Mock Test 7",
+        bracket: "Full Syllabus Mock 7",
+        type: "Full Length Test",
+        pattern: "Complete GATE 2027 EE Syllabus (Exact Exam Simulation)",
+        questions: 65,
+        marks: 100,
+        duration: "180 Mins",
+        date: "Jan 15, 2027",
+        hasQuestions: false
+      }
+    ]
+  }
+];
+
+window.findEETestResult = function(test) {
+  const list = window.userResults || [];
+  if (!list || !list.length) return null;
+  // 1. Exact match with test.name
+  let found = list.find(r => r.testName === test.name);
+  if (found) return found;
+  // 2. Exact match with test.full
+  if (test.full) {
+    found = list.find(r => r.testName === test.full);
+    if (found) return found;
+  }
+  // 3. Bracket match
+  if (test.bracket) {
+    const target = test.bracket.toLowerCase().trim();
+    found = list.find(r => {
+      const m = r.testName.match(/\(([^)]+)\)/);
+      if (m && m[1].toLowerCase().trim() === target) return true;
+      if (r.testName.toLowerCase().includes(target)) return true;
+      return false;
+    });
+    if (found) return found;
+  }
+  return null;
+};
+
+window.toggleEEAccordionCard = function(subjectId) {
+  const card = document.getElementById(subjectId);
+  if (card) {
+    card.classList.toggle("open");
+  }
+};
+
+window.promptEEEnroll = function() {
+  const enrollBtn = document.getElementById("dEnrollBtn");
+  if (enrollBtn) {
+    enrollBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+    enrollBtn.classList.add("pulse-highlight");
+    setTimeout(() => enrollBtn.classList.remove("pulse-highlight"), 1500);
+  }
+  if (typeof startEnrollment === "function") {
+    startEnrollment("ee-gate-pyq-2027");
+  } else if (typeof selectPaymentMethod === "function") {
+    selectPaymentMethod("ee-gate-pyq-2027");
+  }
+};
+
+window.renderEEAccordion = function(isUnlocked) {
+  const chevronSvg = `<svg class="ee-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
+  const checkSvg = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.8"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+
+  return window.EE_GATE_SUBJECTS.map((subj, idx) => {
+    let completedCount = 0;
+    subj.tests.forEach(t => {
+      if (window.findEETestResult(t)) completedCount++;
+    });
+
+    // Default open first 3 subjects
+    const isOpen = idx < 3 ? " open" : "";
+
+    const rows = subj.tests.map(t => {
+      const res = window.findEETestResult(t);
+      const isAttempted = !!res;
+      const score = isAttempted ? res.score : null;
+      const maxScore = isAttempted ? (res.maxScore || t.marks || 50) : (t.marks || 50);
+
+      let statusBadge = "";
+      let actionButtons = "";
+
+      const testActionName = (t.full || t.name).replace(/"/g, '&quot;');
+
+      if (isAttempted) {
+        statusBadge = `
+          <span class="ee-badge completed">${checkSvg} Completed</span>
+          <div class="ee-score-badge">🏆 Score: ${score}/${maxScore}</div>
+        `;
+        actionButtons = `
+          <div class="ee-action-group">
+            <button class="btn-ee-action btn-ee-result" data-name="${testActionName}" onclick="openPastResult(this.dataset.name)">View Result</button>
+            <button class="btn-ee-action btn-ee-reattempt" data-name="${testActionName}" onclick="openInstructions(this.dataset.name)">Reattempt</button>
+          </div>
+        `;
+      } else if (t.hasQuestions) {
+        statusBadge = `<span class="ee-badge active">Active</span>`;
+        if (isUnlocked) {
+          actionButtons = `<button class="btn-ee-action btn-ee-start" data-name="${testActionName}" onclick="openInstructions(this.dataset.name)">Start Test</button>`;
+        } else {
+          actionButtons = `<button class="btn-ee-action btn-ee-start" onclick="promptEEEnroll()">Enroll to Unlock</button>`;
+        }
+      } else {
+        statusBadge = `<span class="ee-badge upcoming">Upcoming</span>`;
+        actionButtons = `<button class="btn-ee-action btn-ee-locked" disabled>Coming ${t.date}</button>`;
+      }
+
+      return `
+        <tr>
+          <td>
+            <div class="ee-test-name">${t.full || t.name}</div>
+            <div class="ee-test-sub">${t.pattern}</div>
+          </td>
+          <td>${t.type}</td>
+          <td><b>${t.questions} Qs</b> (${t.marks || 50} M)</td>
+          <td>${t.duration}</td>
+          <td>${statusBadge}</td>
+          <td>${actionButtons}</td>
+        </tr>
+      `;
+    }).join("");
+
+    return `
+      <div class="ee-subject-card${isOpen}" id="${subj.id}">
+        <div class="ee-subject-header" onclick="toggleEEAccordionCard('${subj.id}')">
+          <div class="ee-subject-title-wrap">
+            <div class="ee-subject-icon">${idx + 1}</div>
+            <div class="ee-subject-name">${subj.name}</div>
+            <span class="ee-count-badge">${subj.badge}</span>
+            ${completedCount > 0 ? `<span class="ee-completed-summary">${checkSvg} ${completedCount}/${subj.tests.length} Completed</span>` : ''}
+          </div>
+          <div>${chevronSvg}</div>
+        </div>
+        <div class="ee-subject-body">
+          <table class="ee-table">
+            <thead>
+              <tr>
+                <th>Test & Topics</th>
+                <th>Pattern</th>
+                <th>Questions</th>
+                <th>Duration</th>
+                <th>Status & Score</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }).join("");
 };
