@@ -1286,6 +1286,10 @@ window.PYQ_TOPIC_MAP = {
   "Theory of computation-1": "Regular Languages, Finite Automata, DFA, NFA, RegEx",
   "Theory of computation-2": "Context-Free Languages, PDA, Turing Machines, Decidability",
   "Theory of computation": "Complete Theory of Computation Syllabus",
+  "Finite Automata-I": "DFA/NFA Minimization, State Distinguishability, Modulo Languages, Mealy & Moore",
+  "Finite Automata-II": "Extended Transitions, DFA Intersection, Substring & Suffix DFAs, FSM State Bounds",
+  "Finite Automata-III": "Myhill-Nerode Minimization, Complementation, Expressive Power Hierarchy, Substring NFAs",
+  "Finite Automata-IV": "Closure Properties, Regular Expressions, Arden's Theorem, Decision Algorithms",
 
   "computer organization and architecture-1": "Machine Instructions, Addressing Modes, ALU, Data Path",
   "computer organization and architecture-2": "Instruction Pipelining, Cache Memory, Virtual Memory, I/O",
