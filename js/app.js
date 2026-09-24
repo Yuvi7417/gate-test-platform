@@ -1742,6 +1742,8 @@ window.PYQ_EE_TOPIC_MAP = {
   "Electromagnetic Fields-1": "Electrostatics, Coulomb's Law, Gauss's Law, Boundary Conditions",
   "Electromagnetic Fields -2": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
   "Electromagnetic Fields-2": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
+  "Electromagnetic Fields -3": "Electromagnetic Waves, Transmission Lines, Waveguides",
+  "Electromagnetic Fields-3": "Electromagnetic Waves, Transmission Lines, Waveguides",
   "Electromagnetic Fields": "Complete Electromagnetic Fields Syllabus",
   "Engineering Mathematics -1": "Linear Algebra (Matrices, Eigenvalues) & Calculus",
   "Engineering Mathematics -2": "Differential Equations, Complex Variables, Probability",
@@ -1840,20 +1842,20 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // 1. Defaults first
   if (seriesId === "cse-gate-2027") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
-      registeredMap.set(t.name, { ...t });
+      const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+      registeredMap.set(cleanName, { ...t, name: cleanName });
     });
   } else if (seriesId === "ee-gate-pyq-2027") {
     (window.PYQ_EE_DEFAULT_TESTS || []).forEach(t => {
-      registeredMap.set(t.name, { ...t });
+      const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+      registeredMap.set(cleanName, { ...t, name: cleanName });
     });
   }
 
   // 2. Tests from apexTestRegistry
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
-      const isSeriesMatch = (t.series === seriesId) ||
-        (seriesId === "ee-gate-pyq-2027" && (t.series === "ee-gate-pyq" || t.series === "ee-gate-pyq-2027"));
-      if (isSeriesMatch && t.name) {
+      if (t.series === seriesId && t.name) {
         const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
         registeredMap.set(cleanName, {
           ...t,
