@@ -1051,7 +1051,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1570,13 +1570,261 @@ window.launchPYQTest = function(rawName, enrolled, seriesId = "cse-gate-2027") {
   }
 };
 
+
+/* ==========================================================================
+   EE-GATE 2027 PYQ Accordion Configuration (Matches CS-GATE 2027 Style)
+   ========================================================================== */
+
+window.PYQ_EE_SUBJECTS = [
+  {
+    id: "ee_circuits",
+    name: "Electric Circuits",
+    iconType: "text",
+    iconVal: "⚡",
+    iconBg: "#e0f2fe",
+    iconColor: "#0284c7",
+    regex: /(electric circuits|electric circuit|circuits|circits|network)/i
+  },
+  {
+    id: "ee_control",
+    name: "Control Systems",
+    iconType: "text",
+    iconVal: "🎛️",
+    iconBg: "#fef3c7",
+    iconColor: "#d97706",
+    regex: /(control systems|control system)/i
+  },
+  {
+    id: "ee_machines",
+    name: "Electrical Machines",
+    iconType: "text",
+    iconVal: "⚙️",
+    iconBg: "#ffe4e6",
+    iconColor: "#e11d48",
+    regex: /(electrical machines|electrical machine|transformer|induction|dc machine)/i
+  },
+  {
+    id: "ee_power_sys",
+    name: "Power Systems",
+    iconType: "text",
+    iconVal: "🔋",
+    iconBg: "#ede9fe",
+    iconColor: "#7c3aed",
+    regex: /(power systems|power system)/i
+  },
+  {
+    id: "ee_power_elec",
+    name: "Power Electronics",
+    iconType: "text",
+    iconVal: "🔌",
+    iconBg: "#ecfdf5",
+    iconColor: "#059669",
+    regex: /(power electronics|chopper|inverter|rectifier)/i
+  },
+  {
+    id: "ee_signals",
+    name: "Signals & Systems",
+    iconType: "text",
+    iconVal: "📶",
+    iconBg: "#e0e7ff",
+    iconColor: "#4338ca",
+    regex: /(signals & systems|signals and systems|signal)/i
+  },
+  {
+    id: "ee_digital",
+    name: "Digital Electronics",
+    iconType: "text",
+    iconVal: "01",
+    iconBg: "#e0f2fe",
+    iconColor: "#0284c7",
+    regex: /(digital electronics|digital logic)/i
+  },
+  {
+    id: "ee_analog",
+    name: "Analog Electronics",
+    iconType: "text",
+    iconVal: "〜",
+    iconBg: "#fee2e2",
+    iconColor: "#ef4444",
+    regex: /(analog electronics|analog)/i
+  },
+  {
+    id: "ee_emi",
+    name: "Measurements & Instrumentation",
+    iconType: "text",
+    iconVal: "📐",
+    iconBg: "#fef9c3",
+    iconColor: "#ca8a04",
+    regex: /(measurements|instrumentation|\bemi\b)/i
+  },
+  {
+    id: "ee_emf",
+    name: "Electromagnetic Fields",
+    iconType: "text",
+    iconVal: "🧲",
+    iconBg: "#fefce8",
+    iconColor: "#a16207",
+    regex: /(electromagnetic fields|electromagnetic|\bemf\b)/i
+  },
+  {
+    id: "ee_maths",
+    name: "Engineering Mathematics",
+    iconType: "text",
+    iconVal: "f(x)",
+    iconBg: "#f3e8ff",
+    iconColor: "#9333ea",
+    regex: /(engineering mathematics|linear algebra|calculus)/i
+  },
+  {
+    id: "ee_aptitude",
+    name: "General Aptitude",
+    iconType: "text",
+    iconVal: "🧠",
+    iconBg: "#dcfce7",
+    iconColor: "#16a34a",
+    regex: /(general aptitude|aptitude)/i
+  },
+  {
+    id: "ee_flt",
+    name: "Full Length Mock Tests",
+    iconType: "text",
+    iconVal: "🏆",
+    iconBg: "#fce7f3",
+    iconColor: "#db2777",
+    regex: /(full length|mock|\bflt\b|\bfst\b)/i
+  }
+];
+
+window.PYQ_EE_TOPIC_MAP = {
+  "Electric Circuits -1": "Basic circuit laws, KCL, KVL, Node & Mesh, Theorems",
+  "Electric Circuits -2": "Transient Analysis, Resonance, Two-Port Networks",
+  "Electric Circuits": "Complete Electric Circuits & Network Theory Syllabus",
+  "Control Systems -1": "Block Diagrams, SFG, Time Response, Routh-Hurwitz",
+  "Control Systems -2": "Root Locus, Bode & Nyquist Plots, State Space Analysis",
+  "Control Systems": "Complete Control Systems Syllabus",
+  "Electrical Machines -1": "Single & Three Phase Transformers, Autotransformers",
+  "Electrical Machines -2": "DC Machines, Induction Motors, Synchronous Machines",
+  "Electrical Machines": "Complete Electrical Machines Syllabus",
+  "Power Systems -1": "Transmission Lines, Corona, Cable Parameters, Per-Unit System",
+  "Power Systems -2": "Load Flow, Symmetrical/Unsymmetrical Faults, Stability",
+  "Power Systems": "Complete Power Systems & Protection Syllabus",
+  "Power Electronics -1": "SCR, MOSFET, IGBT, Phase-Controlled Rectifiers",
+  "Power Electronics -2": "DC-DC Choppers, Inverters (VSI, CSI), PWM, SMPS",
+  "Power Electronics": "Complete Power Electronics & Drives Syllabus",
+  "Signals & Systems -1": "Continuous & Discrete Time Signals, LTI Systems",
+  "Signals & Systems -2": "Fourier Series/Transform, Laplace & Z-Transform",
+  "Signals & Systems": "Complete Signals & Systems Syllabus",
+  "Digital Electronics -1": "Boolean Algebra, Logic Gates, Minimization, K-Maps",
+  "Digital Electronics -2": "Combinational & Sequential Circuits, Counters, ADCs",
+  "Digital Electronics": "Complete Digital Electronics Syllabus",
+  "Analog Electronics -1": "Diode Circuits, BJT & MOSFET Biasing, Small Signal Amplifiers",
+  "Analog Electronics -2": "Op-Amps, Active Filters, Feedback Amplifiers, 555 Timers",
+  "Analog Electronics": "Complete Analog Electronics Syllabus",
+  "EMI -1": "Bridges, Potentiometers, PMMC, Moving Iron, Dynamometer",
+  "EMI -2": "Digital Voltmeters, CRO, Instrument Transformers",
+  "Electrical & Electronics Measurements": "Complete Measurements & Instrumentation Syllabus",
+  "Electromagnetic Fields -1": "Electrostatics, Coulomb's Law, Gauss's Law, Boundary Conditions",
+  "Electromagnetic Fields": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
+  "Engineering Mathematics -1": "Linear Algebra (Matrices, Eigenvalues) & Calculus",
+  "Engineering Mathematics -2": "Differential Equations, Complex Variables, Probability",
+  "Engineering Mathematics": "Complete Engineering Mathematics Syllabus",
+  "Advanced Engineering Mathematics": "Numerical Methods, Vector Calculus, Transform Theory",
+  "General Aptitude -1": "English Grammar, Vocabulary, Reading Comprehension",
+  "General Aptitude -2": "Quantitative Aptitude, Spatial Reasoning, Analytical Ability",
+  "General Aptitude": "Complete General Aptitude GATE Section",
+  "General Aptitude Comprehensive": "Comprehensive Numerical, Verbal & Analytical Ability",
+  "Mock Test 1": "Complete GATE 2027 EE Syllabus (Mock 1)",
+  "Mock Test 2": "Complete GATE 2027 EE Syllabus (Mock 2)",
+  "Mock Test 3": "Complete GATE 2027 EE Syllabus (Mock 3)",
+  "Mock Test 4": "Complete GATE 2027 EE Syllabus (Mock 4)",
+  "Mock Test 5": "Complete GATE 2027 EE Syllabus (Mock 5)",
+  "Mock Test 6": "Complete GATE 2027 EE Syllabus (Mock 6)",
+  "Mock Test 7": "Complete GATE 2027 EE Syllabus (Mock 7)"
+};
+
+window.PYQ_EE_DEFAULT_TESTS = [
+  // Electric Circuits (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Electric Circuits -1", subject: "ee_circuits" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Electric Circuits -2", subject: "ee_circuits" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Electric Circuits", subject: "ee_circuits" },
+
+  // Control Systems (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Control Systems -1", subject: "ee_control" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Control Systems -2", subject: "ee_control" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Control Systems", subject: "ee_control" },
+
+  // Electrical Machines (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Electrical Machines -1", subject: "ee_machines" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Electrical Machines -2", subject: "ee_machines" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Electrical Machines", subject: "ee_machines" },
+
+  // Power Systems (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Power Systems -1", subject: "ee_power_sys" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Power Systems -2", subject: "ee_power_sys" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Power Systems", subject: "ee_power_sys" },
+
+  // Power Electronics (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Power Electronics -1", subject: "ee_power_elec" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Power Electronics -2", subject: "ee_power_elec" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Power Electronics", subject: "ee_power_elec" },
+
+  // Signals & Systems (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Signals & Systems -1", subject: "ee_signals" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Signals & Systems -2", subject: "ee_signals" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Signals & Systems", subject: "ee_signals" },
+
+  // Digital Electronics (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Digital Electronics -1", subject: "ee_digital" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Digital Electronics -2", subject: "ee_digital" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Digital Electronics", subject: "ee_digital" },
+
+  // Analog Electronics (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - Analog Electronics -1", subject: "ee_analog" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Analog Electronics -2", subject: "ee_analog" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Analog Electronics", subject: "ee_analog" },
+
+  // Measurements & Instrumentation (3)
+  { series: "ee-gate-pyq-2027", name: "TWT - EMI -1", subject: "ee_emi" },
+  { series: "ee-gate-pyq-2027", name: "TWT - EMI -2", subject: "ee_emi" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Electrical & Electronics Measurements", subject: "ee_emi" },
+
+  // Electromagnetic Fields (2)
+  { series: "ee-gate-pyq-2027", name: "TWT - Electromagnetic Fields -1", subject: "ee_emf" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Electromagnetic Fields", subject: "ee_emf" },
+
+  // Engineering Mathematics (4)
+  { series: "ee-gate-pyq-2027", name: "TWT - Engineering Mathematics -1", subject: "ee_maths" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Engineering Mathematics -2", subject: "ee_maths" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Engineering Mathematics", subject: "ee_maths" },
+  { series: "ee-gate-pyq-2027", name: "SWT - Advanced Engineering Mathematics", subject: "ee_maths" },
+
+  // General Aptitude (4)
+  { series: "ee-gate-pyq-2027", name: "TWT - General Aptitude -1", subject: "ee_aptitude" },
+  { series: "ee-gate-pyq-2027", name: "TWT - General Aptitude -2", subject: "ee_aptitude" },
+  { series: "ee-gate-pyq-2027", name: "SWT - General Aptitude", subject: "ee_aptitude" },
+  { series: "ee-gate-pyq-2027", name: "SWT - General Aptitude Comprehensive", subject: "ee_aptitude" },
+
+  // Full Length Mock Tests (7)
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 1", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 2", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 3", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 4", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 5", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 6", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 7", subject: "ee_flt" }
+];
+
 window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
   // Collect all tests belonging to this series
   const registeredMap = new Map();
 
-  // 1. Defaults first (only for cse-gate-2027)
+  // 1. Defaults first
   if (seriesId === "cse-gate-2027") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
+  } else if (seriesId === "ee-gate-pyq-2027") {
+    (window.PYQ_EE_DEFAULT_TESTS || []).forEach(t => {
       registeredMap.set(t.name, { ...t });
     });
   }
@@ -1622,7 +1870,9 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
 
-  window.PYQ_CS_SUBJECTS.forEach((subj) => {
+  const targetSubjects = (seriesId === "ee-gate-pyq-2027") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
+  const activeTopicMap = (seriesId === "ee-gate-pyq-2027") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
+  targetSubjects.forEach((subj) => {
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {
       if (t.subject === subj.id) return true;
@@ -1655,10 +1905,10 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
       // Look up topic description
       let topicsCovered = t.topicsCovered || t.topics;
       if (!topicsCovered && window.PYQ_TOPIC_MAP) {
-        topicsCovered = window.PYQ_TOPIC_MAP[bracket] || window.PYQ_TOPIC_MAP[bracket.trim()] || window.PYQ_TOPIC_MAP[rawName];
+        topicsCovered = activeTopicMap[bracket] || activeTopicMap[bracket.trim()] || activeTopicMap[rawName];
         if (!topicsCovered) {
           const lower = bracket.trim().toLowerCase();
-          for (const k of Object.keys(window.PYQ_TOPIC_MAP)) {
+          for (const k of Object.keys(activeTopicMap)) {
             if (k.toLowerCase() === lower) {
               topicsCovered = window.PYQ_TOPIC_MAP[k];
               break;
