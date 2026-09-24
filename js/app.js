@@ -1496,10 +1496,10 @@ window.PYQ_CS_SUBJECTS = [
   }
 ];
 
-window.togglePYQAccordion = function(cardEl) {
+window.togglePYQAccordion = function (cardEl) {
   if (!cardEl) return;
   const isAlreadyOpen = cardEl.classList.contains("open");
-  
+
   // Close other open subject cards in this wrap
   const wrap = cardEl.closest(".pyq-accordion-wrap");
   if (wrap) {
@@ -1518,7 +1518,7 @@ window.togglePYQAccordion = function(cardEl) {
   }
 };
 
-window.isEnrolledSeries = function(id) {
+window.isEnrolledSeries = function (id) {
   if (typeof enrolledIds !== "undefined" && Array.isArray(enrolledIds)) {
     return enrolledIds.includes(id);
   }
@@ -1527,11 +1527,11 @@ window.isEnrolledSeries = function(id) {
     if (session && Array.isArray(session.enrolledCourses)) {
       return session.enrolledCourses.includes(id);
     }
-  } catch(e){}
+  } catch (e) { }
   return false;
 };
 
-window.promptEnrollment = function(seriesId = "cse-gate-2027") {
+window.promptEnrollment = function (seriesId = "cse-gate-2027") {
   currentDetailId = seriesId;
   if (!document.body.classList.contains("logged-in")) {
     alert("Please log in or sign up to enroll and unlock tests.");
@@ -1549,7 +1549,7 @@ window.promptEnrollment = function(seriesId = "cse-gate-2027") {
   }
 };
 
-window.launchPYQTest = function(rawName, enrolled, seriesId = "cse-gate-2027") {
+window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") {
   if (seriesId) {
     currentTestListId = seriesId;
     currentDetailId = seriesId;
@@ -1739,7 +1739,10 @@ window.PYQ_EE_TOPIC_MAP = {
   "EMI -2": "Digital Voltmeters, CRO, Instrument Transformers",
   "Electrical & Electronics Measurements": "Complete Measurements & Instrumentation Syllabus",
   "Electromagnetic Fields -1": "Electrostatics, Coulomb's Law, Gauss's Law, Boundary Conditions",
-  "Electromagnetic Fields": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
+  "Electromagnetic Fields-1": "Electrostatics, Coulomb's Law, Gauss's Law, Boundary Conditions",
+  "Electromagnetic Fields -2": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
+  "Electromagnetic Fields-2": "Ampere's Law, Faraday's Law, Maxwell's Equations, Waves",
+  "Electromagnetic Fields": "Complete Electromagnetic Fields Syllabus",
   "Engineering Mathematics -1": "Linear Algebra (Matrices, Eigenvalues) & Calculus",
   "Engineering Mathematics -2": "Differential Equations, Complex Variables, Probability",
   "Engineering Mathematics": "Complete Engineering Mathematics Syllabus",
@@ -1803,8 +1806,9 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "TWT - EMI -2", subject: "ee_emi" },
   { series: "ee-gate-pyq-2027", name: "SWT - Electrical & Electronics Measurements", subject: "ee_emi" },
 
-  // Electromagnetic Fields (2)
+  // Electromagnetic Fields (3)
   { series: "ee-gate-pyq-2027", name: "TWT - Electromagnetic Fields -1", subject: "ee_emf" },
+  { series: "ee-gate-pyq-2027", name: "TWT - Electromagnetic Fields -2", subject: "ee_emf" },
   { series: "ee-gate-pyq-2027", name: "SWT - Electromagnetic Fields", subject: "ee_emf" },
 
   // Engineering Mathematics (4)
@@ -1829,7 +1833,7 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 7", subject: "ee_flt" }
 ];
 
-window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
+window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", seriesId = "cse-gate-2027") {
   // Collect all tests belonging to this series
   const registeredMap = new Map();
 
@@ -1847,11 +1851,14 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
   // 2. Tests from apexTestRegistry
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
-      if (t.series === seriesId && t.name) {
-        registeredMap.set(t.name, {
+      const isSeriesMatch = (t.series === seriesId) ||
+        (seriesId === "ee-gate-pyq-2027" && (t.series === "ee-gate-pyq" || t.series === "ee-gate-pyq-2027"));
+      if (isSeriesMatch && t.name) {
+        const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+        registeredMap.set(cleanName, {
           ...t,
-          series: t.series,
-          name: t.name,
+          series: seriesId,
+          name: cleanName,
           date: t.date,
           topicsCovered: t.topicsCovered || t.topics,
           isFree: t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked",
@@ -1905,10 +1912,10 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
       const rawName = t.name;
       const bracketMatch = rawName.match(/\(([^)]+)\)/);
       const bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
-      
+
       const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
       const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
-      
+
       let testType = isSubject ? "Subject" : "Topic";
       let testLabel = "";
       if (isSubject) {
@@ -1993,17 +2000,16 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
             <div class="pyq-subj-title">${subj.name}</div>
           </div>
           <div class="pyq-head-right">
-            ${
-              isEnrolled
-                ? `<span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>`
-                : `
+            ${isEnrolled
+        ? `<span class="pyq-done-badge">${doneCount} / ${totalCount} Done</span>`
+        : `
                   <span class="pyq-locked-badge">
                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                     Locked
                   </span>
                   <span class="pyq-done-badge">${totalCount} Tests</span>
                 `
-            }
+      }
             <svg class="pyq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
@@ -2024,21 +2030,19 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
                 </tr>
               </thead>
               <tbody>
-                ${
-                  filteredTests.length > 0
-                    ? filteredTests
-                        .map(item => `
+                ${filteredTests.length > 0
+        ? filteredTests
+          .map(item => `
                           <tr>
                             <td style="text-align: center;">
-                              ${
-                                item.canAttempt
-                                  ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
+                              ${item.canAttempt
+              ? `<div class="pyq-check-box ${item.isAttempted ? "checked" : ""}">
                                       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3.2"><polyline points="20 6 9 17 4 12"/></svg>
                                     </div>`
-                                  : `<div class="pyq-check-box locked">
+              : `<div class="pyq-check-box locked">
                                       <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#94a3b8" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                                     </div>`
-                              }
+            }
                             </td>
                             <td>
                               <div class="pyq-test-name-cell">
@@ -2049,53 +2053,50 @@ window.renderPYQAccordion = function(isEnrolled = true, statusFilter = "all", se
                             </td>
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
-                              ${
-                                item.canAttempt
-                                  ? (item.isAttempted
-                                      ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
-                                      : (item.isFree && !isEnrolled
-                                          ? `<span class="pyq-status-free">Free Demo</span>`
-                                          : `<span class="pyq-status-ready">Ready to Attempt</span>`))
-                                  : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
-                              }
+                              ${item.canAttempt
+              ? (item.isAttempted
+                ? `<span class="pyq-status-done"><span class="pyq-status-dot done"></span> Score: <b>${item.score}/${item.maxScore}</b></span>`
+                : (item.isFree && !isEnrolled
+                  ? `<span class="pyq-status-free">Free Demo</span>`
+                  : `<span class="pyq-status-ready">Ready to Attempt</span>`))
+              : `<span class="pyq-status-locked"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Locked</span>`
+            }
                             </td>
                             <td style="text-align: right;">
-                              ${
-                                item.canAttempt
-                                  ? (item.isAttempted
-                                      ? `
+                              ${item.canAttempt
+              ? (item.isAttempted
+                ? `
                                       <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
                                         <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
                                         <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">Reattempt</button>
                                       </div>`
-                                      : `
+                : `
                                       <button class="pyq-btn-start" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">
                                         Start
                                         <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M5 3l14 9-14 9V3z"/></svg>
                                       </button>`)
-                                  : `
+              : `
                                   <button class="pyq-btn-lock" onclick="window.promptEnrollment('${seriesId}')">
                                     <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                                     Unlock
                                   </button>
                                   `
-                              }
+            }
                             </td>
                           </tr>
                         `)
-                        .join("")
-                    : `
+          .join("")
+        : `
                       <tr>
                         <td colspan="5" class="pyq-empty-tests">
-                          ${
-                            totalCount === 0
-                              ? "Tests for this subject will be available soon."
-                              : "No tests matching this filter."
-                          }
+                          ${totalCount === 0
+          ? "Tests for this subject will be available soon."
+          : "No tests matching this filter."
+        }
                         </td>
                       </tr>
                     `
-                }
+      }
               </tbody>
             </table>
           </div>
@@ -2734,7 +2735,7 @@ window.EE_GATE_SUBJECTS = [
   }
 ];
 
-window.findEETestResult = function(test) {
+window.findEETestResult = function (test) {
   const list = window.userResults || [];
   if (!list || !list.length) return null;
   // 1. Exact match with test.name
@@ -2759,14 +2760,14 @@ window.findEETestResult = function(test) {
   return null;
 };
 
-window.toggleEEAccordionCard = function(subjectId) {
+window.toggleEEAccordionCard = function (subjectId) {
   const card = document.getElementById(subjectId);
   if (card) {
     card.classList.toggle("open");
   }
 };
 
-window.promptEEEnroll = function() {
+window.promptEEEnroll = function () {
   const enrollBtn = document.getElementById("dEnrollBtn");
   if (enrollBtn) {
     enrollBtn.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -2780,7 +2781,7 @@ window.promptEEEnroll = function() {
   }
 };
 
-window.renderEEAccordion = function(isUnlocked) {
+window.renderEEAccordion = function (isUnlocked) {
   const chevronSvg = `<svg class="ee-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>`;
   const checkSvg = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.8"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
 
