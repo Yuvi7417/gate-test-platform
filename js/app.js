@@ -1849,7 +1849,18 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
       if (t.series === seriesId && t.name) {
-        const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+        const cleanName = (seriesId === "ee-gate-pyq-2027")
+          ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
+          : t.name;
+
+        // Prevent duplicate if alternative spacing version was already inserted
+        const altName = t.name.includes(" -")
+          ? t.name.replace(/\s*-\s*(\d+)$/, '-$1')
+          : t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+        if (registeredMap.has(altName)) {
+          registeredMap.delete(altName);
+        }
+
         registeredMap.set(cleanName, {
           ...t,
           series: seriesId,
@@ -1863,19 +1874,23 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     });
   }
 
-  // 3. Tests from testSeries.schedule
+  // 3. Tests from testSeries.schedule (with deduplication)
   const currentSeries = (window.testSeries || []).find(s => s.id === seriesId);
   if (currentSeries && Array.isArray(currentSeries.schedule)) {
     currentSeries.schedule.forEach(s => {
       const rawName = s[0];
-      if (rawName && !registeredMap.has(rawName)) {
-        registeredMap.set(rawName, {
-          series: seriesId,
-          name: rawName,
-          date: s[1],
-          questionCount: s[2]
-        });
+      if (!rawName) return;
+      const cleanName = rawName.replace(/\s*-\s*(\d+)$/, ' -$1');
+      const tightName = rawName.replace(/\s*-\s*(\d+)$/, '-$1');
+      if (registeredMap.has(rawName) || registeredMap.has(cleanName) || registeredMap.has(tightName)) {
+        return; // Already present in registeredMap, skip duplicate!
       }
+      registeredMap.set(rawName, {
+        series: seriesId,
+        name: rawName,
+        date: s[1],
+        questionCount: s[2]
+      });
     });
   }
 
