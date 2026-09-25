@@ -560,6 +560,43 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "ee-gate-ace-2026",
+    code: "EE",
+    examTag: "GATE 2026",
+    subjectTag: "Electrical Engineering",
+    title: "EE-GATE 2026 Practice Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 56,
+    startDate: "2026-03-07",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "Year-wise GATE Electrical Engineering papers from 2000 to 2026 reframed as timed practice tests, built to mirror real exam pressure and surface weak topics early.",
+    features: [
+      "Practice real GATE questions",
+      "Simulate exam-like environment",
+      "Analyse performance vs peers",
+      "Improve speed and accuracy",
+      "Strengthen concepts by application",
+      "Detailed solutions for fundamentals",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "March 07, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [],
+    oldPrice: "₹500",
+    price: "₹94",
+    basePrice: 94,
+    brandLabel: "APEX ACE"
+    // comingSoon: true
+  },
+  {
     id: "ee-gate-pyq-2025",
     code: "EE",
     examTag: "GATE 2025",
@@ -1051,7 +1088,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1863,7 +1900,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
-  } else if (seriesId === "ee-gate-pyq-2027") {
+  } else if (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") {
     (window.PYQ_EE_DEFAULT_TESTS || []).forEach(t => {
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
@@ -1874,7 +1911,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
       if (t.series === seriesId && t.name) {
-        const cleanName = (seriesId === "ee-gate-pyq-2027")
+        const cleanName = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026")
           ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
           : t.name;
 
@@ -1928,8 +1965,8 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
 
-  const targetSubjects = (seriesId === "ee-gate-pyq-2027") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
-  const activeTopicMap = (seriesId === "ee-gate-pyq-2027") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
+  const targetSubjects = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
+  const activeTopicMap = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
   targetSubjects.forEach((subj) => {
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {

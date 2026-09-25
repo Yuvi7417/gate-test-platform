@@ -901,7 +901,7 @@ window.filterByType = function() {
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
