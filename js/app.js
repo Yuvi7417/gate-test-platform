@@ -1289,7 +1289,10 @@ window.PYQ_TOPIC_MAP = {
   "Finite Automata-I": "DFA/NFA Minimization, State Distinguishability, Modulo Languages, Mealy & Moore",
   "Finite Automata-II": "Extended Transitions, DFA Intersection, Substring & Suffix DFAs, FSM State Bounds",
   "Finite Automata-III": "Myhill-Nerode Minimization, Complementation, Expressive Power Hierarchy, Substring NFAs",
-  "Finite Automata-IV": "Closure Properties, Regular Expressions, Arden's Theorem, Decision Algorithms",
+  "Finite Automata-IV": "NFA to DFA State Bounds, Product Automata, Regular Grammars, 2's Complement FSM",
+  "Finite Automata-V": "NFA Acceptance & Complementation, State Minimization, Sequential FSMs & Homers",
+  "Regular Expression-I": "Regular Expressions, Language Equivalence, NFA/DFA to Regular Expression, Binary Patterns",
+  "Regular Expression-II": "Equivalence & Identities of Regular Expressions, Subset Relations, NFA/DFA Conversions",
 
   "computer organization and architecture-1": "Machine Instructions, Addressing Modes, ALU, Data Path",
   "computer organization and architecture-2": "Instruction Pipelining, Cache Memory, Virtual Memory, I/O",
