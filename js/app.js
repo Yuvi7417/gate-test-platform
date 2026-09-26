@@ -1915,12 +1915,18 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
           ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
           : t.name;
 
-        // Prevent duplicate if alternative spacing version was already inserted
+        // Prevent duplicate if same test name exists (case-insensitively or with alternate spacing)
+        const cleanLower = cleanName.toLowerCase().trim();
         const altName = t.name.includes(" -")
           ? t.name.replace(/\s*-\s*(\d+)$/, '-$1')
           : t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
-        if (registeredMap.has(altName)) {
-          registeredMap.delete(altName);
+        const altLower = altName.toLowerCase().trim();
+
+        for (const existingKey of registeredMap.keys()) {
+          const exLower = existingKey.toLowerCase().trim();
+          if (exLower === cleanLower || exLower === altLower) {
+            registeredMap.delete(existingKey);
+          }
         }
 
         registeredMap.set(cleanName, {
@@ -1975,6 +1981,21 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     });
 
     if (!subjTests || subjTests.length === 0) return;
+
+    // Sort tests: Topic Tests (TWT) first by number, then Subject Tests (SWT)
+    subjTests.sort((a, b) => {
+      const aName = a.name || "";
+      const bName = b.name || "";
+      const aIsSubj = aName.toUpperCase().includes("SWT") || aName.toUpperCase().includes("SUBJECT");
+      const bIsSubj = bName.toUpperCase().includes("SWT") || bName.toUpperCase().includes("SUBJECT");
+      const aMatch = aName.match(/-?\s*(\d+)$/);
+      const bMatch = bName.match(/-?\s*(\d+)$/);
+      const aNum = aMatch ? parseInt(aMatch[1], 10) : 99;
+      const bNum = bMatch ? parseInt(bMatch[1], 10) : 99;
+      const aWeight = (aIsSubj ? 200 : 100) + aNum;
+      const bWeight = (bIsSubj ? 200 : 100) + bNum;
+      return aWeight - bWeight;
+    });
 
     // Check completion count
     let doneCount = 0;
