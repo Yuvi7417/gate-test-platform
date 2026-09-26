@@ -2080,7 +2080,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
       const canAttempt = isEnrolled || isFree;
 
-      // Check result (most recent first, matching exact name, bracket name, or cross-format aliases)
+      // Check result (most recent first, exact/bracket match without loose substring cross-matching)
       const allRes = (userResults || []).slice().reverse();
       const rawLower = (rawName || "").trim().toLowerCase();
       const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
@@ -2090,24 +2090,8 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         const rLower = r.testName.trim().toLowerCase();
         // 1. Exact or case-insensitive match
         if (r.testName === rawName || rLower === rawLower) return true;
-        // 2. Bracket match if bracket was explicitly defined
+        // 2. Bracket match if bracket was explicitly defined (only within same test category)
         if (bracketLower && rLower === bracketLower) return true;
-
-        // 3. Extract bracket from r.testName (e.g. "CSE 2026-Subjectwise Test-8 (Digital Logic)" -> "digital logic")
-        const rBracketMatch = r.testName.match(/\(([^)]+)\)/);
-        const rBracket = rBracketMatch ? rBracketMatch[1].trim().toLowerCase() : null;
-        if (rBracket) {
-          if (rawLower.includes(rBracket) || rBracket.includes(rawLower)) return true;
-          if (bracketLower && (bracketLower === rBracket || bracketLower.includes(rBracket) || rBracket.includes(bracketLower))) return true;
-          const cleanRaw = rawLower.replace(/^(swt|twt|fst)\s*-\s*/i, '').trim();
-          if (cleanRaw === rBracket || cleanRaw.includes(rBracket) || rBracket.includes(cleanRaw)) return true;
-        }
-
-        // 4. Clean prefix comparison if both formats have common core subject
-        const cleanR = rLower.replace(/^(cse\s*\d{4}\s*-\s*|ee\s*\d{4}\s*-\s*|swt\s*-\s*|twt\s*-\s*|fst\s*-\s*)/gi, '').trim();
-        const cleanRawName = rawLower.replace(/^(swt|twt|fst)\s*-\s*/gi, '').trim();
-        if (cleanR && cleanRawName && (cleanR === cleanRawName || cleanR.includes(cleanRawName) || cleanRawName.includes(cleanR))) return true;
-
         return false;
       });
       const isAttempted = !!res;
