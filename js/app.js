@@ -1088,7 +1088,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "cse-gate-2026-pyq") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1279,55 +1279,6 @@ async function viewBookmark(testId, qIndex) {
    ========================================================================== */
 
 window.PYQ_TOPIC_MAP = {
-  // CSE-GATE 2026 Practice Test Series Topics
-  "Theory Of Computation-1": "Regular Expressions, Finite Automata, DFA, NFA, Minimization",
-  "Theory Of Computation-2": "Context-Free Grammars, Pushdown Automata, Turing Machines, Undecidability",
-  "Theory of Computation": "Comprehensive syllabus of Theory of Computation",
-  "Discrete Mathematics-1": "Mathematical Logic, Propositional & First Order Logic, Sets, Relations, Functions",
-  "Discrete Mathematics-2": "Combinatorics, Generating Functions, Recurrence Relations, Graph Theory, Group Theory",
-  "Discrete Mathematics": "Complete syllabus of Discrete Mathematics",
-  "Engineering Mathematics-1": "Linear Algebra, Matrix Calculus, Eigenvalues & Eigenvectors",
-  "Engineering Mathematics-2": "Calculus, Probability & Statistics, Differential Equations",
-  "Engineering Mathematics": "Complete syllabus of Engineering Mathematics",
-  "General Aptitude-1": "Verbal Ability, English Grammar, Sentence Completion, Verbal Analogies",
-  "General Aptitude-2": "Numerical Computation, Numerical Reasoning, Data Interpretation",
-  "General Aptitude": "Complete syllabus of General Aptitude",
-  "Operating System-1": "Processes, Threads, CPU Scheduling, Inter-process Communication, Synchronization, Deadlock",
-  "Operating System-2": "Memory Management, Virtual Memory, Paging, Segmentation, File Systems, Disk Scheduling",
-  "Operating System": "Complete syllabus of Operating Systems",
-  "Programming and Data Structures-1": "C Programming, Arrays, Pointers, Structures, Functions, Recursion",
-  "Programming and Data Structures-2": "Stacks, Queues, Linked Lists, Trees, Binary Search Trees, Heaps",
-  "Programming and Data Structure": "Complete syllabus of Programming & Data Structures",
-  "Computer Networks-1": "OSI & TCP/IP Architecture, Data Link Layer, Flow & Error Control, Framing, MAC",
-  "Computer Networks-2": "Network Layer, IPv4/IPv6, Routing Algorithms, Transport Layer TCP/UDP, Application Layer",
-  "Computer Networks": "Complete syllabus of Computer Networks",
-  "Digital Logic-1": "Boolean Algebra, Logic Gates, Minimization, Karnaugh Maps, Combinational Circuits",
-  "Digital Logic-2": "Sequential Circuits, Flip-Flops, Counters, Registers, Number Systems, Data Converters",
-  "Digital Logic": "Complete syllabus of Digital Logic",
-  "Compiler Design-1": "Lexical Analysis, Regular Expressions to DFA, Context-Free Grammars, LL(1) Parsing",
-  "Compiler Design-2": "LR Parsers (SLR, CLR, LALR), Syntax-Directed Translation, Intermediate Code Generation, Code Optimization",
-  "Compiler Design": "Complete syllabus of Compiler Design",
-  "Database-1": "ER-Model, Relational Model, Relational Algebra, Tuple Calculus, SQL Queries",
-  "Database-2": "Integrity Constraints, Normal Forms (1NF, 2NF, 3NF, BCNF), Transactions & Concurrency Control",
-  "Database": "Complete syllabus of Database Management Systems",
-  "Computer Organization and Architecture-1": "Machine Instructions, Addressing Modes, Instruction Formats, ALU, Data-Path, Microprogramming",
-  "Computer Organization and Architecture-2": "Instruction Pipelining, Pipeline Hazards, Memory Hierarchy, Cache Mapping, Virtual Memory, I/O Interface",
-  "Computer Organization and Architecture": "Complete syllabus of Computer Organization and Architecture",
-  "Algorithms-1": "Asymptotic Notations, Divide-and-Conquer, Sorting Algorithms, Searching, Recurrences",
-  "Algorithm-2": "Greedy Algorithms, Dynamic Programming, Graph Algorithms (BFS, DFS, MST, Shortest Paths)",
-  "Algorithms": "Complete syllabus of Algorithms",
-  "Basic Level Test-1": "Full Syllabus Basic Level Mock Test 1 covering all GATE CSE subjects",
-  "Basic Level Test-2": "Full Syllabus Basic Level Mock Test 2 covering all GATE CSE subjects",
-  "Basic Level Test-3": "Full Syllabus Basic Level Mock Test 3 covering all GATE CSE subjects",
-  "Basic Level Test-4": "Full Syllabus Basic Level Mock Test 4 covering all GATE CSE subjects",
-  "Mock Level Test-1": "Full Syllabus Standard Mock Test 1 matching actual GATE exam pattern and timing",
-  "Mock Level Test-2": "Full Syllabus Standard Mock Test 2 matching actual GATE exam pattern and timing",
-  "Mock Level Test-3": "Full Syllabus Standard Mock Test 3 matching actual GATE exam pattern and timing",
-  "Mock Level Test-4": "Full Syllabus Standard Mock Test 4 matching actual GATE exam pattern and timing",
-  "Advance Level Test-1": "Full Syllabus Advanced Level Mock Test 1 with rigorous multi-concept questions",
-  "Advance Level Test-2": "Full Syllabus Advanced Level Mock Test 2 with rigorous multi-concept questions",
-  "Advance Level Test-3": "Full Syllabus Advanced Level Mock Test 3 with rigorous multi-concept questions",
-  "Advance Level Test-4": "Full Syllabus Advanced Level Mock Test 4 with rigorous multi-concept questions",
   // C Programming
   "Loops-I": "Loops, While, For, Do-While, Nested Loops",
   "Functions-I": "Functions, Parameter Passing, Call by Value/Reference",
@@ -1585,15 +1536,6 @@ window.PYQ_CS_SUBJECTS = [
     iconBg: "#dcfce7",
     iconColor: "#16a34a",
     regex: /(general aptitude|aptitude|\bga\b)/i
-  },
-  {
-    id: "flt",
-    name: "Full Length Mock Tests",
-    iconType: "svg",
-    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
-    iconBg: "#fef3c7",
-    iconColor: "#d97706",
-    regex: /^FST\s*-/i
   }
 ];
 
@@ -2080,32 +2022,18 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
       const canAttempt = isEnrolled || isFree;
 
-      // Check result (most recent first, strictly matching testName and series)
+      // Check result (most recent first, exact/bracket match without loose substring cross-matching)
       const allRes = (userResults || []).slice().reverse();
       const rawLower = (rawName || "").trim().toLowerCase();
+      const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
 
       const res = allRes.find(r => {
         if (!r || !r.testName) return false;
-        // If result has seriesId and it doesn't match this accordion series, ignore it!
-        if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
-
         const rLower = r.testName.trim().toLowerCase();
-        // Exact match
+        // 1. Exact or case-insensitive match
         if (r.testName === rawName || rLower === rawLower) return true;
-
-        // Series-specific alias match for 2026 tests
-        if (seriesId === "cse-gate-2026-pyq") {
-          // Only match if result is explicitly a CSE 2026 test
-          if (rLower.startsWith("cse 2026-")) {
-            const rBracket = r.testName.match(/\(([^)]+)\)/);
-            if (rBracket) {
-              const b = rBracket[1].trim().toLowerCase();
-              const cleanRaw = rawLower.replace(/^(swt|twt|fst)\s*-\s*/i, '').trim();
-              if (b === cleanRaw || rawLower.includes(b)) return true;
-            }
-          }
-        }
-
+        // 2. Bracket match if bracket was explicitly defined
+        if (bracketLower && rLower === bracketLower) return true;
         return false;
       });
       const isAttempted = !!res;

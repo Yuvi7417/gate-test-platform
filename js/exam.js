@@ -901,7 +901,7 @@ window.filterByType = function() {
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "cse-gate-2026-pyq") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
@@ -1194,16 +1194,7 @@ function findMatchingTest(testName) {
 function proceedFromInstructions() {
   if (document.getElementById("examBeginBtn").disabled) return;
 
-  // 1. Direct check in local apexTestRegistry (handles all CSE 2026, EE, GO tests)
-    if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
-      const regTest = window.apexTestRegistry.find(tr => tr.name === pendingTestName || (tr.name && tr.name.toLowerCase() === (pendingTestName || "").toLowerCase().trim()));
-      if (regTest && regTest.questions && regTest.questions.length > 0) {
-        startPlayer(pendingTestName, regTest.questions);
-        return;
-      }
-    }
-    
-    const testKey = findMatchingTest(pendingTestName);
+  const testKey = findMatchingTest(pendingTestName);
   if (!testKey) {
     alert("This test is not open for attempts yet. Please check back soon.");
     return;
@@ -2190,10 +2181,8 @@ function confirmSubmit() {
   document.getElementById("successOverlay").classList.add("show");
 
   // Submit to DB
-  const currentSeriesTag = (typeof currentTestListId !== 'undefined' && currentTestListId) ? currentTestListId : (typeof currentDetailId !== 'undefined' ? currentDetailId : "");
   const payload = {
     testName: document.getElementById("playerTopTitle").textContent,
-    seriesId: currentSeriesTag,
     score,
     maxScore,
     correctCount,
@@ -2303,13 +2292,13 @@ function openPastResult(testName) {
     if (bracketLower && rLower === bracketLower) return true;
     return false;
   });
+
   if (result) {
     // Reconstruct lastResult format with fallbacks
     const timeSecs = result.timeTakenSecs || 0;
     const tMin = Math.floor(timeSecs / 60);
     const tSec = timeSecs % 60;
-    playerState = (result && result.answers) ? result.answers : {};
-      lastResult = {
+    lastResult = {
       score: result.score || 0,
       maxScore: result.maxScore || 100,
       correctCount: result.correctCount || 0,
@@ -2343,19 +2332,6 @@ function openSolutionMode(testName) {
   if (!result || !result.answers) {
     alert("Answers not found for this test. Past tests before this update do not have answers saved.");
     return;
-  }
-
-  // Check apexTestRegistry first for local tests
-  if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
-    const regTest = window.apexTestRegistry.find(tr => tr.name === testName || (tr.name && tr.name.toLowerCase() === targetLower));
-    if (regTest && regTest.questions && regTest.questions.length > 0) {
-      closeResult();
-      startPlayer(testName, regTest.questions);
-      solutionMode = true;
-      playerState = result.answers;
-      renderPlayer();
-      return;
-    }
   }
 
   const testKey = findMatchingTest(testName) || (result && findMatchingTest(result.testName));
