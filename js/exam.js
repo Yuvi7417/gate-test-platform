@@ -2290,9 +2290,22 @@ function openPastResult(testName) {
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === testName || rLower === testLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
+
+    const rBracketMatch = r.testName.match(/\(([^)]+)\)/);
+    const rBracket = rBracketMatch ? rBracketMatch[1].trim().toLowerCase() : null;
+    if (rBracket) {
+      if (testLower.includes(rBracket) || rBracket.includes(testLower)) return true;
+      if (bracketLower && (bracketLower === rBracket || bracketLower.includes(rBracket) || rBracket.includes(bracketLower))) return true;
+      const cleanTest = testLower.replace(/^(swt|twt|fst)\s*-\s*/i, '').trim();
+      if (cleanTest === rBracket || cleanTest.includes(rBracket) || rBracket.includes(cleanTest)) return true;
+    }
+
+    const cleanR = rLower.replace(/^(cse\s*\d{4}\s*-\s*|ee\s*\d{4}\s*-\s*|swt\s*-\s*|twt\s*-\s*|fst\s*-\s*)/gi, '').trim();
+    const cleanTestName = testLower.replace(/^(swt|twt|fst)\s*-\s*/gi, '').trim();
+    if (cleanR && cleanTestName && (cleanR === cleanTestName || cleanR.includes(cleanTestName) || cleanTestName.includes(cleanR))) return true;
+
     return false;
   });
-
   if (result) {
     // Reconstruct lastResult format with fallbacks
     const timeSecs = result.timeTakenSecs || 0;
