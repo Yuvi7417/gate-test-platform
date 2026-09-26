@@ -43,6 +43,7 @@ const Otp = mongoose.model('Otp', otpSchema);
 
 const testResultSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  seriesId: String,
   testName: String,
   score: Number,
   maxScore: Number,
@@ -634,10 +635,20 @@ app.get('/api/test/:courseId/:testId', authenticateToken, async (req, res) => {
 // 4. Submit Test Results Endpoint
 app.post('/api/submit-test', authenticateToken, async (req, res) => {
   try {
-    const { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers } = req.body;
+    const { seriesId, testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers } = req.body;
+    
+    // Query condition: match userId + testName, and if seriesId is provided, also match seriesId
+    const query = {
+      userId: req.user._id,
+      testName: { $regex: new RegExp('^' + testName.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') }
+    };
+    if (seriesId) {
+      query.seriesId = seriesId;
+    }
+
     await TestResult.findOneAndUpdate(
-      { userId: req.user._id, testName: { $regex: new RegExp('^' + testName.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + '$', 'i') } },
-      { testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers, date: Date.now() },
+      query,
+      { seriesId, testName, score, maxScore, correctCount, wrongCount, unattempted, timeTakenSecs, answers, date: Date.now() },
       { upsert: true, new: true }
     );
     res.json({ success: true, message: 'Test submitted successfully.' });
@@ -650,7 +661,7 @@ app.post('/api/submit-test', authenticateToken, async (req, res) => {
 // 5. Get User Results Endpoint
 app.get('/api/user-results', authenticateToken, async (req, res) => {
   try {
-    const results = await TestResult.find({ userId: req.user._id }).select('testName score maxScore correctCount wrongCount unattempted timeTakenSecs answers -_id');
+    const results = await TestResult.find({ userId: req.user._id }).select('seriesId testName score maxScore correctCount wrongCount unattempted timeTakenSecs answers -_id');
     res.json({ success: true, results });
   } catch (err) {
     console.error("Error fetching user results:", err);
@@ -674,8 +685,12 @@ app.get('/api/user', authenticateToken, async (req, res) => {
 app.get('/api/test-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
+    const { seriesId } = req.query;
     // Match exact test name so distinct tests with similar subjects never mix
     let matchQuery = { testName: testName };
+    if (seriesId) {
+      matchQuery.seriesId = seriesId;
+    }
 
     const stats = await TestResult.aggregate([
       { $match: matchQuery },
@@ -718,7 +733,10 @@ app.get('/api/test-stats/:testName', async (req, res) => {
 app.get('/api/test-advanced-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    const results = await TestResult.find({ testName });
+    const { seriesId } = req.query;
+    const query = { testName };
+    if (seriesId) query.seriesId = seriesId;
+    const results = await TestResult.find(query);
 
     if (!results || results.length === 0) {
       return res.json({ success: true, advancedStats: null });
@@ -844,8 +862,10 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
 app.get('/api/leaderboard/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
+    const { seriesId } = req.query;
     // Match exact test name so distinct tests with similar subjects never mix
     let query = { testName: testName };
+    if (seriesId) query.seriesId = seriesId;
     const results = await TestResult.find(query).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {

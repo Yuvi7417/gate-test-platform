@@ -1624,7 +1624,7 @@ window.launchPYQTest = function (rawName, enrolled, seriesId = "cse-gate-2027") 
   }
 
   if (typeof openInstructions === "function") {
-    openInstructions(rawName);
+    openInstructions(rawName, seriesId);
   }
 };
 
@@ -2029,6 +2029,8 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
 
       const res = allRes.find(r => {
         if (!r || !r.testName) return false;
+        // If seriesId is available on result and card, ensure they match to prevent cross-series collision
+        if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
         const rLower = r.testName.trim().toLowerCase();
         // 1. Exact or case-insensitive match
         if (r.testName === rawName || rLower === rawLower) return true;
@@ -2161,7 +2163,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
                 ? (item.isAttempted
                   ? `
                                         <div style="display: inline-flex; gap: 8px; justify-content: flex-end; align-items: center;">
-                                          <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}')">View Result</button>
+                                          <button class="pyq-btn-result" onclick="if (typeof openPastResult === 'function') openPastResult('${item.rawName.replace(/'/g, "\\'")}', '${seriesId}')">View Result</button>
                                           <button class="pyq-btn-reattempt" onclick="window.launchPYQTest('${item.rawName.replace(/'/g, "\\'")}', true, '${seriesId}')">Reattempt</button>
                                         </div>`
                   : `
@@ -2829,21 +2831,22 @@ window.EE_GATE_SUBJECTS = [
   }
 ];
 
-window.findEETestResult = function (test) {
+window.findEETestResult = function (test, seriesId = "ee-gate-pyq-2027") {
   const list = window.userResults || [];
   if (!list || !list.length) return null;
   // 1. Exact match with test.name
-  let found = list.find(r => r.testName === test.name);
+  let found = list.find(r => (!r.seriesId || !seriesId || r.seriesId === seriesId) && r.testName === test.name);
   if (found) return found;
   // 2. Exact match with test.full
   if (test.full) {
-    found = list.find(r => r.testName === test.full);
+    found = list.find(r => (!r.seriesId || !seriesId || r.seriesId === seriesId) && r.testName === test.full);
     if (found) return found;
   }
   // 3. Bracket match
   if (test.bracket) {
     const target = test.bracket.toLowerCase().trim();
     found = list.find(r => {
+      if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
       const m = r.testName.match(/\(([^)]+)\)/);
       if (m && m[1].toLowerCase().trim() === target) return true;
       if (r.testName.toLowerCase().includes(target)) return true;
@@ -2882,14 +2885,14 @@ window.renderEEAccordion = function (isUnlocked) {
   return window.EE_GATE_SUBJECTS.map((subj, idx) => {
     let completedCount = 0;
     subj.tests.forEach(t => {
-      if (window.findEETestResult(t)) completedCount++;
+      if (window.findEETestResult(t, "ee-gate-pyq-2027")) completedCount++;
     });
 
     // Default open first 3 subjects
     const isOpen = idx < 3 ? " open" : "";
 
     const rows = subj.tests.map(t => {
-      const res = window.findEETestResult(t);
+      const res = window.findEETestResult(t, "ee-gate-pyq-2027");
       const isAttempted = !!res;
       const score = isAttempted ? res.score : null;
       const maxScore = isAttempted ? (res.maxScore || t.marks || 50) : (t.marks || 50);
@@ -2906,14 +2909,14 @@ window.renderEEAccordion = function (isUnlocked) {
         `;
         actionButtons = `
           <div class="ee-action-group">
-            <button class="btn-ee-action btn-ee-result" data-name="${testActionName}" onclick="openPastResult(this.dataset.name)">View Result</button>
-            <button class="btn-ee-action btn-ee-reattempt" data-name="${testActionName}" onclick="openInstructions(this.dataset.name)">Reattempt</button>
+            <button class="btn-ee-action btn-ee-result" data-name="${testActionName}" onclick="openPastResult(this.dataset.name, 'ee-gate-pyq-2027')">View Result</button>
+            <button class="btn-ee-action btn-ee-reattempt" data-name="${testActionName}" onclick="openInstructions(this.dataset.name, 'ee-gate-pyq-2027')">Reattempt</button>
           </div>
         `;
       } else if (t.hasQuestions) {
         statusBadge = `<span class="ee-badge active">Active</span>`;
         if (isUnlocked) {
-          actionButtons = `<button class="btn-ee-action btn-ee-start" data-name="${testActionName}" onclick="openInstructions(this.dataset.name)">Start Test</button>`;
+          actionButtons = `<button class="btn-ee-action btn-ee-start" data-name="${testActionName}" onclick="openInstructions(this.dataset.name, 'ee-gate-pyq-2027')">Start Test</button>`;
         } else {
           actionButtons = `<button class="btn-ee-action btn-ee-start" onclick="promptEEEnroll()">Enroll to Unlock</button>`;
         }

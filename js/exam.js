@@ -1012,7 +1012,7 @@ function renderTestList(t, filter) {
 
   // Map user results to status
   items.forEach(it => {
-    const result = userResults.find(r => r.testName === it.name);
+    const result = userResults.find(r => (!r.seriesId || !t.id || r.seriesId === t.id) && r.testName === it.name);
     if (result) {
       it.status = "attempted";
       it.score = result.score;
@@ -1070,8 +1070,8 @@ function renderTestList(t, filter) {
               ${it.status === "attempted" ? `<span class="test-score">${trophyIconInline}Score: ${it.score}/${it.maxScore || 100}</span>` : ""}
             </div>
             <div style="display: flex; gap: 8px;">
-              ${it.status === "attempted" ? `<button class="btn-start-test" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name)">Reattempt</button>` : ""}
-              <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? 'openInstructions(this.dataset.name)' : 'openPastResult(this.dataset.name)'}">
+              ${it.status === "attempted" ? `<button class="btn-start-test" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="openInstructions(this.dataset.name, '${t.id}')">Reattempt</button>` : ""}
+              <button class="btn-start-test ${it.status}" data-name="${it.name.replace(/"/g, "&quot;")}" onclick="${it.status === 'unattempted' ? `openInstructions(this.dataset.name, '${t.id}')` : `openPastResult(this.dataset.name, '${t.id}')`}">
                 ${it.status === "attempted" ? "View Result" : "Start Test"}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
@@ -1099,9 +1099,15 @@ const trophyIconInline =
 
 /* ---------- full-page exam instructions ---------- */
 let pendingTestName = "";
+let pendingTestSeriesId = "";
 
-function openInstructions(testName) {
+function openInstructions(testName, seriesId) {
   pendingTestName = testName || "";
+  pendingTestSeriesId = seriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
+  if (pendingTestSeriesId) {
+    currentTestListId = pendingTestSeriesId;
+    currentDetailId = pendingTestSeriesId;
+  }
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
 
   const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
@@ -1156,13 +1162,17 @@ function closeInstructionsReadOnly() {
 }
 
 /* ---------- decide what happens after instructions ---------- */
-// let pendingTestName = "";
 const _origOpenInstructions = openInstructions;
-openInstructions = function (testName) {
+openInstructions = function (testName, seriesId) {
   pendingTestName = testName || "";
+  pendingTestSeriesId = seriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
+  if (pendingTestSeriesId) {
+    currentTestListId = pendingTestSeriesId;
+    currentDetailId = pendingTestSeriesId;
+  }
   document.getElementById("examConsentBox").checked = false;
   document.getElementById("examBeginBtn").disabled = true;
-  _origOpenInstructions(testName);
+  _origOpenInstructions(testName, seriesId);
 };
 
 window.testBackendIdMap = Object.assign(window.testBackendIdMap || {}, {
@@ -2181,7 +2191,9 @@ function confirmSubmit() {
   document.getElementById("successOverlay").classList.add("show");
 
   // Submit to DB
+  const testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
   const payload = {
+    seriesId: testSeriesId,
     testName: document.getElementById("playerTopTitle").textContent,
     score,
     maxScore,
@@ -2199,6 +2211,8 @@ function confirmSubmit() {
 
   const existingIndex = userResults.findIndex(r => {
     if (!r || !r.testName) return false;
+    // Don't collide if seriesId differs
+    if (r.seriesId && payload.seriesId && r.seriesId !== payload.seriesId) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === payload.testName || rLower === payLower) return true;
     if (payBracket && rLower === payBracket) return true;
@@ -2227,7 +2241,8 @@ function confirmSubmit() {
 
   // Save to pending queue in localStorage so results are NEVER lost
   try {
-    localStorage.setItem("apex_pending_test_" + payload.testName, JSON.stringify(payload));
+    const queueKey = payload.seriesId ? `apex_pending_test_${payload.seriesId}_${payload.testName}` : `apex_pending_test_${payload.testName}`;
+    localStorage.setItem(queueKey, JSON.stringify(payload));
   } catch (e) {}
 
   const submitWithRetry = async (retries = 5) => {
@@ -2278,15 +2293,22 @@ function confirmSubmit() {
 
 let lastResult = null;
 
-function openPastResult(testName) {
+function openPastResult(testName, seriesId) {
   const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
   const allRev = allResults.slice().reverse();
   const testLower = (testName || "").trim().toLowerCase();
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
 
+  if (seriesId) {
+    pendingTestSeriesId = seriesId;
+    currentTestListId = seriesId;
+    currentDetailId = seriesId;
+  }
+
   let result = allRev.find(r => {
     if (!r || !r.testName) return false;
+    if (seriesId && r.seriesId && r.seriesId !== seriesId) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === testName || rLower === testLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
@@ -2309,20 +2331,27 @@ function openPastResult(testName) {
       tSec,
       answers: result.answers || {}
     };
+    if (result.seriesId) {
+      pendingTestSeriesId = result.seriesId;
+      currentTestListId = result.seriesId;
+      currentDetailId = result.seriesId;
+    }
     document.getElementById("resultCrumbName").textContent = testName;
     showResultPage(testName);
   }
 }
 
-function openSolutionMode(testName) {
+function openSolutionMode(testName, seriesId) {
   const allResults = (userResults && userResults.length > 0) ? userResults : (window.userResults || []);
   const allRev = allResults.slice().reverse();
   const bracketMatch = testName.match(/\(([^)]+)\)/);
   const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
   const targetLower = testName.trim().toLowerCase();
+  const targetSeriesId = seriesId || pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
 
   let result = allRev.find(r => {
     if (!r || !r.testName) return false;
+    if (targetSeriesId && r.seriesId && r.seriesId !== targetSeriesId) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (rLower === targetLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
@@ -2332,6 +2361,12 @@ function openSolutionMode(testName) {
   if (!result || !result.answers) {
     alert("Answers not found for this test. Past tests before this update do not have answers saved.");
     return;
+  }
+
+  if (result.seriesId) {
+    pendingTestSeriesId = result.seriesId;
+    currentTestListId = result.seriesId;
+    currentDetailId = result.seriesId;
   }
 
   const testKey = findMatchingTest(testName) || (result && findMatchingTest(result.testName));
@@ -2485,8 +2520,10 @@ async function showResultPage(explicitTestName) {
   }, 100);
 
   // Asynchronously fetch leaderboard & stats from server without blocking the UI
+  const currentSid = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
   try {
-    const res = await fetch('/api/test-stats/' + encodeURIComponent(testName));
+    const statsUrl = '/api/test-stats/' + encodeURIComponent(testName) + (currentSid ? `?seriesId=${encodeURIComponent(currentSid)}` : '');
+    const res = await fetch(statsUrl);
     const data = await res.json();
     if (data.success && data.stats) {
       avgScore = data.stats.avgScore;
@@ -2504,7 +2541,8 @@ async function showResultPage(explicitTestName) {
   }
 
   try {
-    const leadRes = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
+    const leadUrl = '/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now() + (currentSid ? `&seriesId=${encodeURIComponent(currentSid)}` : '');
+    const leadRes = await fetch(leadUrl);
     const leadData = await leadRes.json();
     if (leadData.success && Array.isArray(leadData.leaderboard) && leadData.leaderboard.length > 0) {
       const lb = leadData.leaderboard;
@@ -2538,7 +2576,9 @@ async function renderAdvancedCharts() {
 
   if (!__advancedStats || __advancedStats.testName !== testName) {
     try {
-      const res = await fetch('/api/test-advanced-stats/' + encodeURIComponent(testName));
+      const advSid = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
+      const advUrl = '/api/test-advanced-stats/' + encodeURIComponent(testName) + (advSid ? `?seriesId=${encodeURIComponent(advSid)}` : '');
+      const res = await fetch(advUrl);
       const data = await res.json();
       if (data.success) {
         __advancedStats = data.advancedStats;
@@ -2699,9 +2739,11 @@ async function openLeaderboard() {
   sticky.innerHTML = '';
 
   const testName = document.getElementById("resultCrumbName").textContent.trim();
+  const lbSid = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "");
 
   try {
-    const res = await fetch('/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now());
+    const lbUrl = '/api/leaderboard/' + encodeURIComponent(testName) + '?t=' + Date.now() + (lbSid ? `&seriesId=${encodeURIComponent(lbSid)}` : '');
+    const res = await fetch(lbUrl);
     const data = await res.json();
     if (data.success) {
       if (data.leaderboard.length === 0) {
