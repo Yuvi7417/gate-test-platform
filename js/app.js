@@ -2080,18 +2080,32 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         (Array.isArray(window.PYQ_FREE_TESTS) && (window.PYQ_FREE_TESTS.includes(rawName) || (bracket && window.PYQ_FREE_TESTS.includes(bracket)) || window.PYQ_FREE_TESTS.some(x => rawName.includes(x))));
       const canAttempt = isEnrolled || isFree;
 
-      // Check result (most recent first, exact/bracket match without loose substring cross-matching)
+      // Check result (most recent first, strictly matching testName and series)
       const allRes = (userResults || []).slice().reverse();
       const rawLower = (rawName || "").trim().toLowerCase();
-      const bracketLower = bracketMatch ? bracketMatch[1].trim().toLowerCase() : null;
 
       const res = allRes.find(r => {
         if (!r || !r.testName) return false;
+        // If result has seriesId and it doesn't match this accordion series, ignore it!
+        if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
+
         const rLower = r.testName.trim().toLowerCase();
-        // 1. Exact or case-insensitive match
+        // Exact match
         if (r.testName === rawName || rLower === rawLower) return true;
-        // 2. Bracket match if bracket was explicitly defined (only within same test category)
-        if (bracketLower && rLower === bracketLower) return true;
+
+        // Series-specific alias match for 2026 tests
+        if (seriesId === "cse-gate-2026-pyq") {
+          // Only match if result is explicitly a CSE 2026 test
+          if (rLower.startsWith("cse 2026-")) {
+            const rBracket = r.testName.match(/\(([^)]+)\)/);
+            if (rBracket) {
+              const b = rBracket[1].trim().toLowerCase();
+              const cleanRaw = rawLower.replace(/^(swt|twt|fst)\s*-\s*/i, '').trim();
+              if (b === cleanRaw || rawLower.includes(b)) return true;
+            }
+          }
+        }
+
         return false;
       });
       const isAttempted = !!res;

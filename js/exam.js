@@ -1194,7 +1194,16 @@ function findMatchingTest(testName) {
 function proceedFromInstructions() {
   if (document.getElementById("examBeginBtn").disabled) return;
 
-  const testKey = findMatchingTest(pendingTestName);
+  // 1. Direct check in local apexTestRegistry (handles all CSE 2026, EE, GO tests)
+    if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
+      const regTest = window.apexTestRegistry.find(tr => tr.name === pendingTestName || (tr.name && tr.name.toLowerCase() === (pendingTestName || "").toLowerCase().trim()));
+      if (regTest && regTest.questions && regTest.questions.length > 0) {
+        startPlayer(pendingTestName, regTest.questions);
+        return;
+      }
+    }
+    
+    const testKey = findMatchingTest(pendingTestName);
   if (!testKey) {
     alert("This test is not open for attempts yet. Please check back soon.");
     return;
@@ -2181,8 +2190,10 @@ function confirmSubmit() {
   document.getElementById("successOverlay").classList.add("show");
 
   // Submit to DB
+  const currentSeriesTag = (typeof currentTestListId !== 'undefined' && currentTestListId) ? currentTestListId : (typeof currentDetailId !== 'undefined' ? currentDetailId : "");
   const payload = {
     testName: document.getElementById("playerTopTitle").textContent,
+    seriesId: currentSeriesTag,
     score,
     maxScore,
     correctCount,
@@ -2297,7 +2308,8 @@ function openPastResult(testName) {
     const timeSecs = result.timeTakenSecs || 0;
     const tMin = Math.floor(timeSecs / 60);
     const tSec = timeSecs % 60;
-    lastResult = {
+    playerState = (result && result.answers) ? result.answers : {};
+      lastResult = {
       score: result.score || 0,
       maxScore: result.maxScore || 100,
       correctCount: result.correctCount || 0,
