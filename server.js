@@ -674,18 +674,8 @@ app.get('/api/user', authenticateToken, async (req, res) => {
 app.get('/api/test-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    const bracketMatch = testName.match(/\(([^)]+)\)/);
-    const bracket = bracketMatch ? bracketMatch[1] : null;
-
+    // Match exact test name so distinct tests with similar subjects never mix
     let matchQuery = { testName: testName };
-    if (bracket) {
-      matchQuery = {
-        $or: [
-          { testName: testName },
-          { testName: { $regex: bracket.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), $options: 'i' } }
-        ]
-      };
-    }
 
     const stats = await TestResult.aggregate([
       { $match: matchQuery },
@@ -854,18 +844,8 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
 app.get('/api/leaderboard/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
-    const bracketMatch = testName.match(/\(([^)]+)\)/);
-    const bracket = bracketMatch ? bracketMatch[1] : null;
-
+    // Match exact test name so distinct tests with similar subjects never mix
     let query = { testName: testName };
-    if (bracket) {
-      query = {
-        $or: [
-          { testName: testName },
-          { testName: { $regex: bracket.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&'), $options: 'i' } }
-        ]
-      };
-    }
     const results = await TestResult.find(query).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {
