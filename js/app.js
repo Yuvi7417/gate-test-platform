@@ -1490,7 +1490,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: "Σ",
     iconBg: "#f1f5f9",
     iconColor: "#475569",
-    regex: /(theory of computation|toc)/i
+    regex: /(theory of computation|\btoc\b)/i
   },
   {
     id: "cd",
@@ -1508,7 +1508,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>`,
     iconBg: "#fee2e2",
     iconColor: "#ea580c",
-    regex: /(computer organization|coa|computer architecture)/i
+    regex: /(computer organization|\bcoa\b|computer architecture)/i
   },
   {
     id: "os",
@@ -1517,7 +1517,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 10 3 3-3 3M13 16h4"/></svg>`,
     iconBg: "#ccfbf1",
     iconColor: "#0d9488",
-    regex: /(operating system|os)/i
+    regex: /(operating system|\bos\b)/i
   },
   {
     id: "cn",
@@ -1526,7 +1526,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>`,
     iconBg: "#e0f2fe",
     iconColor: "#0284c7",
-    regex: /(computer networks|computer network|cn)/i
+    regex: /(computer networks|computer network|\bcn\b)/i
   },
   {
     id: "ga",
