@@ -689,7 +689,12 @@ app.get('/api/test-stats/:testName', async (req, res) => {
     // Match exact test name so distinct tests with similar subjects never mix
     let matchQuery = { testName: testName };
     if (seriesId) {
-      matchQuery.seriesId = seriesId;
+      matchQuery.$or = [
+        { seriesId: seriesId },
+        { seriesId: { $exists: false } },
+        { seriesId: null },
+        { seriesId: "" }
+      ];
     }
 
     const stats = await TestResult.aggregate([
@@ -735,7 +740,14 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
     const { testName } = req.params;
     const { seriesId } = req.query;
     const query = { testName };
-    if (seriesId) query.seriesId = seriesId;
+    if (seriesId) {
+      query.$or = [
+        { seriesId: seriesId },
+        { seriesId: { $exists: false } },
+        { seriesId: null },
+        { seriesId: "" }
+      ];
+    }
     const results = await TestResult.find(query);
 
     if (!results || results.length === 0) {
@@ -865,7 +877,14 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
     const { seriesId } = req.query;
     // Match exact test name so distinct tests with similar subjects never mix
     let query = { testName: testName };
-    if (seriesId) query.seriesId = seriesId;
+    if (seriesId) {
+      query.$or = [
+        { seriesId: seriesId },
+        { seriesId: { $exists: false } },
+        { seriesId: null },
+        { seriesId: "" }
+      ];
+    }
     const results = await TestResult.find(query).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {
