@@ -701,10 +701,18 @@ function buildTestQuery(testName, seriesId) {
       orConditions.push({ testName: new RegExp('DEMO.*' + escBracket, 'i') });
     } else if (/full test|fst|flt/i.test(clean)) {
       orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket, 'i') });
-    } else if (/topicwise|twt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket, 'i') });
-    } else if (/subjectwise|swt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket, 'i') });
+    } else if (/2026/i.test(clean)) {
+      if (/topicwise|twt/i.test(clean)) {
+        orConditions.push({ testName: new RegExp('2026.*(Topicwise|TWT).*' + escBracket, 'i') });
+      } else if (/subjectwise|swt/i.test(clean)) {
+        orConditions.push({ testName: new RegExp('2026.*(Subjectwise|SWT).*' + escBracket, 'i') });
+      }
+    } else if (/2027/i.test(clean)) {
+      if (/topicwise|twt/i.test(clean)) {
+        orConditions.push({ testName: new RegExp('2027.*(Topicwise|TWT).*' + escBracket, 'i') });
+      } else if (/subjectwise|swt/i.test(clean)) {
+        orConditions.push({ testName: new RegExp('2027.*(Subjectwise|SWT).*' + escBracket, 'i') });
+      }
     }
   } else {
     const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT)\s*-\s*(.+)$/i);
@@ -716,10 +724,6 @@ function buildTestQuery(testName, seriesId) {
         orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub, 'i') });
       } else if (type === 'FST' || type === 'FLT') {
         orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub, 'i') });
-      } else if (type === 'TWT') {
-        orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub, 'i') });
-      } else if (type === 'SWT') {
-        orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub, 'i') });
       }
     }
   }
@@ -791,15 +795,7 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
     const { seriesId } = req.query;
-    const query = { testName };
-    if (seriesId) {
-      query.$or = [
-        { seriesId: seriesId },
-        { seriesId: { $exists: false } },
-        { seriesId: null },
-        { seriesId: "" }
-      ];
-    }
+    const query = buildTestQuery(testName, seriesId);
     const results = await TestResult.find(query);
 
     if (!results || results.length === 0) {
