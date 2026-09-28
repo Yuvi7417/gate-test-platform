@@ -681,21 +681,73 @@ app.get('/api/user', authenticateToken, async (req, res) => {
   }
 });
 
+function buildTestQuery(testName, seriesId) {
+  if (!testName) return {};
+  const clean = testName.trim();
+  const escapeRegex = (s) => s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const orConditions = [
+    { testName: clean },
+    { testName: new RegExp('^' + escapeRegex(clean) + '$', 'i') }
+  ];
+
+  const bracketMatch = clean.match(/\(([^)]+)\)/);
+  if (bracketMatch) {
+    const bracketContent = bracketMatch[1].trim();
+    const escBracket = escapeRegex(bracketContent);
+
+    if (/weekly quiz|wqt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(WQT|Weekly Quiz).*' + escBracket, 'i') });
+    } else if (/demo/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('DEMO.*' + escBracket, 'i') });
+    } else if (/full test|fst|flt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket, 'i') });
+    } else if (/topicwise|twt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket, 'i') });
+    } else if (/subjectwise|swt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket, 'i') });
+    }
+  } else {
+    const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT)\s*-\s*(.+)$/i);
+    if (prefixMatch) {
+      const type = prefixMatch[1].toUpperCase();
+      const sub = prefixMatch[2].trim();
+      const escSub = escapeRegex(sub);
+      if (type === 'WQT') {
+        orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub, 'i') });
+      } else if (type === 'FST' || type === 'FLT') {
+        orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub, 'i') });
+      } else if (type === 'TWT') {
+        orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub, 'i') });
+      } else if (type === 'SWT') {
+        orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub, 'i') });
+      }
+    }
+  }
+
+  if (seriesId) {
+    return {
+      $and: [
+        { $or: orConditions },
+        {
+          $or: [
+            { seriesId: seriesId },
+            { seriesId: { $exists: false } },
+            { seriesId: null },
+            { seriesId: "" }
+          ]
+        }
+      ]
+    };
+  }
+  return { $or: orConditions };
+}
+
 // 6. Get Global Test Stats Endpoint
 app.get('/api/test-stats/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
     const { seriesId } = req.query;
-    // Match exact test name so distinct tests with similar subjects never mix
-    let matchQuery = { testName: testName };
-    if (seriesId) {
-      matchQuery.$or = [
-        { seriesId: seriesId },
-        { seriesId: { $exists: false } },
-        { seriesId: null },
-        { seriesId: "" }
-      ];
-    }
+    const matchQuery = buildTestQuery(testName, seriesId);
 
     const stats = await TestResult.aggregate([
       { $match: matchQuery },
@@ -875,16 +927,7 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
   try {
     const { testName } = req.params;
     const { seriesId } = req.query;
-    // Match exact test name so distinct tests with similar subjects never mix
-    let query = { testName: testName };
-    if (seriesId) {
-      query.$or = [
-        { seriesId: seriesId },
-        { seriesId: { $exists: false } },
-        { seriesId: null },
-        { seriesId: "" }
-      ];
-    }
+    const query = buildTestQuery(testName, seriesId);
     const results = await TestResult.find(query).populate('userId', 'name').lean();
 
     if (!results || results.length === 0) {

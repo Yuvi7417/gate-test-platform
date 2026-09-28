@@ -2051,6 +2051,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const res = allRes.find(r => {
         if (!r || !r.testName) return false;
         // If seriesId is available on result and card, ensure they match to prevent cross-series collision
+        if (typeof window.isResultForSeries === 'function' && !window.isResultForSeries(r, seriesId)) return false;
         if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
         const rLower = r.testName.trim().toLowerCase();
         // 1. Exact or case-insensitive match
@@ -2064,9 +2065,6 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
           if (rBrLower === rawLower || (bracketLower && rBrLower === bracketLower)) return true;
           if (rawLower.includes(rBrLower)) return true;
         }
-        // 4. If rLower contains rawLower or bracketLower
-        if (rawLower.length > 5 && rLower.includes(rawLower)) return true;
-        if (bracketLower && bracketLower.length > 3 && rLower.includes(bracketLower)) return true;
         return false;
       });
       const isAttempted = !!res;
