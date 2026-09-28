@@ -1012,7 +1012,11 @@ function renderTestList(t, filter) {
 
   // Map user results to status
   items.forEach(it => {
-    const result = userResults.find(r => (!r.seriesId || !t.id || r.seriesId === t.id) && r.testName === it.name);
+    const result = userResults.find(r => {
+      const matchSeries = !r.seriesId || !t.id || String(r.seriesId) === String(t.id);
+      const matchName = (r.testName || "").trim().toLowerCase() === (it.name || "").trim().toLowerCase();
+      return matchSeries && matchName;
+    });
     if (result) {
       it.status = "attempted";
       it.score = result.score;
