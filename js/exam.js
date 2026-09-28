@@ -547,7 +547,16 @@ function firebaseGoogleLogin() {
     });
 }
 
-let userResults = [];
+let userResults = (() => {
+  try {
+    const cached = localStorage.getItem("apex_user_results");
+    return cached ? JSON.parse(cached) : [];
+  } catch (e) {
+    return [];
+  }
+})();
+window.userResults = userResults;
+
 async function fetchUserResults(retries = 5) {
   const token = localStorage.getItem('apexcore_token');
   if (!token) return;
@@ -1001,6 +1010,8 @@ function renderTestList(t, filter) {
         " " + year + "-" + testType + " Test-" +
         testNumber +
         " (" + bracket + ")",
+      rawName: rawName,
+      bracket: bracket,
       from: s[1],
       till: formatDate(t.endDate),
       duration: duration,
@@ -1010,12 +1021,34 @@ function renderTestList(t, filter) {
     };
   });
 
-  // Map user results to status
+  // Map user results to status with comprehensive matching
   items.forEach(it => {
+    const itLower = (it.name || "").trim().toLowerCase();
+    const rawLower = (it.rawName || "").trim().toLowerCase();
+    const bracketLower = (it.bracket || "").trim().toLowerCase();
+
     const result = userResults.find(r => {
+      if (!r || !r.testName) return false;
       const matchSeries = !r.seriesId || !t.id || String(r.seriesId) === String(t.id);
-      const matchName = (r.testName || "").trim().toLowerCase() === (it.name || "").trim().toLowerCase();
-      return matchSeries && matchName;
+      if (!matchSeries) return false;
+
+      const rLower = r.testName.trim().toLowerCase();
+      // 1. Direct match with generated title
+      if (rLower === itLower) return true;
+      // 2. Direct match with registry rawName (e.g. "WQT - Digital logic-1|Boolean algebra")
+      if (rawLower && (rLower === rawLower || r.testName === it.rawName)) return true;
+      // 3. Match with bracket topic (e.g. "Digital logic-1|Boolean algebra")
+      if (bracketLower && rLower === bracketLower) return true;
+      // 4. Bracket inside r.testName matches this test's bracket or rawName
+      const rBr = r.testName.match(/\(([^)]+)\)/);
+      if (rBr) {
+        const rBrLower = rBr[1].trim().toLowerCase();
+        if (bracketLower && rBrLower === bracketLower) return true;
+        if (rawLower && (rBrLower === rawLower || rawLower.includes(rBrLower))) return true;
+      }
+      // 5. r.testName contains the unique bracket
+      if (bracketLower && bracketLower.length > 3 && rLower.includes(bracketLower)) return true;
+      return false;
     });
     if (result) {
       it.status = "attempted";
@@ -2195,7 +2228,12 @@ function confirmSubmit() {
   document.getElementById("successOverlay").classList.add("show");
 
   // Submit to DB
-  const testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
+  let testSeriesId = pendingTestSeriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
+  const currentTitle = (document.getElementById("playerTopTitle").textContent || "").trim();
+  if (!testSeriesId && window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
+    const reg = window.apexTestRegistry.find(tr => tr.name === currentTitle || currentTitle.includes(tr.name));
+    if (reg && reg.series) testSeriesId = reg.series;
+  }
   const payload = {
     seriesId: testSeriesId,
     testName: document.getElementById("playerTopTitle").textContent,
@@ -2316,6 +2354,13 @@ function openPastResult(testName, seriesId) {
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === testName || rLower === testLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
+    const rBr = r.testName.match(/\(([^)]+)\)/);
+    if (rBr) {
+      const rBrLower = rBr[1].trim().toLowerCase();
+      if (bracketLower && rBrLower === bracketLower) return true;
+      if (testLower.includes(rBrLower)) return true;
+    }
+    if (bracketLower && bracketLower.length > 3 && rLower.includes(bracketLower)) return true;
     return false;
   });
 
@@ -2359,6 +2404,13 @@ function openSolutionMode(testName, seriesId) {
     const rLower = r.testName.trim().toLowerCase();
     if (rLower === targetLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
+    const rBr = r.testName.match(/\(([^)]+)\)/);
+    if (rBr) {
+      const rBrLower = rBr[1].trim().toLowerCase();
+      if (bracketLower && rBrLower === bracketLower) return true;
+      if (targetLower.includes(rBrLower)) return true;
+    }
+    if (bracketLower && bracketLower.length > 3 && rLower.includes(bracketLower)) return true;
     return false;
   });
 

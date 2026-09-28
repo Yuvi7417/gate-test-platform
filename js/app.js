@@ -2057,6 +2057,16 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         if (r.testName === rawName || rLower === rawLower) return true;
         // 2. Bracket match if bracket was explicitly defined
         if (bracketLower && rLower === bracketLower) return true;
+        // 3. Extracted bracket from r.testName (e.g. "CSE 2027-Topicwise Test-1 (c-programming(Loops-I))")
+        const rBr = r.testName.match(/\(([^)]+)\)/);
+        if (rBr) {
+          const rBrLower = rBr[1].trim().toLowerCase();
+          if (rBrLower === rawLower || (bracketLower && rBrLower === bracketLower)) return true;
+          if (rawLower.includes(rBrLower)) return true;
+        }
+        // 4. If rLower contains rawLower or bracketLower
+        if (rawLower.length > 5 && rLower.includes(rawLower)) return true;
+        if (bracketLower && bracketLower.length > 3 && rLower.includes(bracketLower)) return true;
         return false;
       });
       const isAttempted = !!res;
