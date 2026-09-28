@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 def download_image(url, local_path):
     if not os.path.exists(local_path):
+        os.makedirs(os.path.dirname(local_path), exist_ok=True)
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response, open(local_path, 'wb') as out_file:
             out_file.write(response.read())
@@ -17,27 +18,38 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     
     question_span = soup.select_one('h3 span')
     if not question_span:
+        question_span = soup.select_one('h3')
+    if not question_span:
         print("Error: Could not find valid question in test.html")
         return
 
     question_text = ""
     question_image = ""
     
-    # Extract images first
+    # Extract images in question first
     images = question_span.find_all('img')
     if images:
         img_url = images[0]['src']
-        img_name = img_url.split('/')[-1]
+        img_name = img_url.split('/')[-1].split('?')[0]
         local_img_path = f"{image_folder}/{img_name}"
         download_image(img_url, local_img_path)
         question_image = local_img_path
         for img in images:
-            img.extract() # remove from DOM so it doesn't leave blank spots in text
+            img.extract()
 
-    question_text = question_span.get_text(separator='<br>', strip=True)
-    if question_text:
-        question_text = re.sub(r'\s+', ' ', question_text)
-    
+    # Get question text
+    q_parts = []
+    for p in question_span.find_all(['p', 'div']):
+        t = p.get_text(separator='<br>', strip=True)
+        if t:
+            q_parts.append(t)
+    if not q_parts:
+        question_text = question_span.get_text(separator='<br>', strip=True)
+    else:
+        question_text = "<br>".join(q_parts)
+
+    question_text = re.sub(r'[ \t\r\f\v]+', ' ', question_text)
+    question_text = re.sub(r'(\n|\r)+', ' ', question_text)
     question_text = question_text.replace('"', '\\"')
     
     options = []
@@ -46,14 +58,16 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         img = label.find('img')
         if img:
             img_url = img['src']
-            img_name = img_url.split('/')[-1]
+            img_name = img_url.split('/')[-1].split('?')[0]
             local_img_path = f"{image_folder}/{img_name}"
             download_image(img_url, local_img_path)
             options.append(f"'<img src=\"{local_img_path}\" style=\"max-width:150px;\">'")
         else:
             btn = label.find('button')
-            opt_text = btn.get_text(separator='<br>', strip=True) if btn else label.get_text(separator='<br>', strip=True)
-            opt_text = re.sub(r'\s+', ' ', opt_text)
+            opt_tag = btn if btn else label
+            opt_text = opt_tag.get_text(separator='<br>', strip=True)
+            opt_text = re.sub(r'[ \t\r\f\v]+', ' ', opt_text)
+            opt_text = re.sub(r'(\n|\r)+', ' ', opt_text)
             opt_text = opt_text.replace("'", "\\'")
             options.append(f"'{opt_text}'")
             
@@ -65,21 +79,26 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             correct_answer = ans_span.get_text(strip=True)
             
     solution_html = ""
-    solution_div = soup.find('h2', string=re.compile("Solution"))
-    if solution_div:
-        sol_container = solution_div.find_next_sibling('div')
-        if sol_container:
-            img = sol_container.find('img')
-            if img:
-                img_url = img['src']
-                img_name = img_url.split('/')[-1]
-                local_img_path = f"{image_folder}/{img_name}"
-                download_image(img_url, local_img_path)
-                solution_html = f"<img src='{local_img_path}' alt='Detailed Solution'>"
-            else:
+    solution_h2 = soup.find('h2', string=re.compile("Solution"))
+    if solution_h2:
+        parent = solution_h2.parent
+        # Check if image in solution
+        sol_img = parent.find('img')
+        if sol_img:
+            img_url = sol_img['src']
+            img_name = img_url.split('/')[-1].split('?')[0]
+            local_img_path = f"{image_folder}/{img_name}"
+            download_image(img_url, local_img_path)
+            solution_html = f"<img src='{local_img_path}' alt='Detailed Solution'>"
+        else:
+            # Look for solution text div
+            sol_container = parent.find('div', class_=re.compile('text-greyFont')) or parent.find('div', class_=re.compile('text-gray-700'))
+            if not sol_container:
+                sol_container = parent.find_all('div')[-1] if parent.find_all('div') else None
+            if sol_container:
                 sol_html = sol_container.get_text(separator='<br>', strip=True)
-                sol_html = sol_html.replace(f"Correct Answer:{correct_answer}", "").replace(f"Correct Answer: {correct_answer}", "")
-                sol_html = re.sub(r'\s+', ' ', sol_html)
+                sol_html = re.sub(r'[ \t\r\f\v]+', ' ', sol_html)
+                sol_html = re.sub(r'(\n|\r)+', ' ', sol_html)
                 sol_html = re.sub(r'(<br>\s*)+', '<br>', sol_html)
                 sol_html = sol_html.replace('"', '\\"').strip('<br>').strip()
                 solution_html = sol_html
@@ -87,14 +106,23 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     with open(js_file, 'r', encoding='utf-8') as f:
         js_content = f.read()
 
-    marks = 1
     test_idx = js_content.find(f'name: "{test_series_name}"')
-    if test_idx != -1 and "TWT" in test_series_name:
-        end_idx = js_content.find('  ],\n});', test_idx)
-        if end_idx != -1:
-            test_content = js_content[test_idx:end_idx]
-            if test_content.count("marks:") >= 9:
-                marks = 2
+    if test_idx == -1:
+        print(f"Error: Could not find test '{test_series_name}' in {js_file}")
+        return
+
+    # Determine marks
+    marks = 1
+    # Count existing marks to determine 1 or 2 mark question
+    after_test = js_content[test_idx:]
+    # Check if this test is empty or has existing questions
+    q_bracket_idx = after_test.find('questions:')
+    if q_bracket_idx != -1:
+        q_section = after_test[q_bracket_idx:after_test.find('});')]
+        existing_q_count = q_section.count('marks:')
+        # In MADE EASY SWT, typically first 25 are 1 mark, next 30 are 2 marks (or 25 1-mark, 30 2-mark)
+        if existing_q_count >= 25:
+            marks = 2
 
     q_type = "MCQ" if len(options) > 0 else "NAT"
     neg_mark = round(0.33 * marks, 2) if len(options) > 0 else 0
@@ -106,54 +134,74 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         ans_list = [ans.strip() for ans in correct_answer.split(",")]
         answer_js = str(ans_list).replace("'", '"')
 
-    options_str = ",\n        ".join(options)
-    new_question_js = f"""    {{
-      marks: {marks},
-      neg: {neg_mark},
-      type: "{q_type}",
-      text: "{question_text}",
-      image: "{question_image}",
-      options: [
-        {options_str}
-      ],
-      answer: {answer_js},
-      solution: "{solution_html}"
-    }},
-"""
+    options_str = ",\n                ".join(options)
+    
+    # Check if questions array is currently empty: questions: []
+    # or questions: [\n ... \n ]
+    empty_q_match = re.search(r'questions:\s*\[\s*\]', after_test)
+    
+    new_q_obj = f"""        {{
+            type: "{q_type}",
+            marks: {marks},
+            neg: {neg_mark},
+            text: "{question_text}",
+            image: "{question_image}",
+            options: [
+                {options_str}
+            ],
+            answer: {answer_js},
+            solution: "{solution_html}"
+        }}"""
 
-    with open(js_file, 'r', encoding='utf-8') as f:
-        js_content = f.read()
-
-    test_idx = js_content.find(f'name: "{test_series_name}"')
-    if test_idx != -1:
-        end_idx = js_content.find('  ],\n});', test_idx)
-        if end_idx != -1:
-            updated_js = js_content[:end_idx] + new_question_js + js_content[end_idx:]
-            with open(js_file, 'w', encoding='utf-8') as f:
-                f.write(updated_js)
-            print(f"[{time.strftime('%H:%M:%S')}] Question successfully added!")
+    if empty_q_match and empty_q_match.start() < after_test.find('});'):
+        # Empty array
+        target_str = empty_q_match.group(0)
+        replacement = f"""questions: [\n{new_q_obj}\n    ]"""
+        new_after = after_test.replace(target_str, replacement, 1)
+        updated_js = js_content[:test_idx] + new_after
+    else:
+        # Array already has items, insert before the closing `]` of questions
+        test_end = after_test.find('});')
+        test_block = after_test[:test_end]
+        last_bracket = test_block.rfind(']')
+        if last_bracket != -1:
+            insertion_pos = test_idx + last_bracket
+            # Check if there is already a question, add comma
+            prefix = ",\n"
+            updated_js = js_content[:insertion_pos].rstrip() + prefix + new_q_obj + "\n    " + js_content[insertion_pos:]
+        else:
+            print("Error: Could not locate closing bracket of questions array.")
             return
-            
-    print("Error: Could not find insertion point in JS file.")
+
+    with open(js_file, 'w', encoding='utf-8') as f:
+        f.write(updated_js)
+    print(f"[{time.strftime('%H:%M:%S')}] Question successfully added to '{test_series_name}'!")
 
 if __name__ == "__main__":
     html_source = "test.html"
-    registry_file = "js/test-registry.src.js"
-    test_name = "TWT - Compiler Design-1"
-    image_dir = "images/Compiler Design-1"
+    registry_file = "js/made-easy-cse-2027-test.src.js"
+    test_name = "SWT - Compiler Design"
+    image_dir = "images/swt-compiler-design-1"
     
-    last_mtime = os.path.getmtime(html_source) if os.path.exists(html_source) else 0
-    print(f"Watching for changes in {html_source}...")
+    # Run once immediately on current test.html if valid
+    if os.path.exists(html_source):
+        print(f"[{time.strftime('%H:%M:%S')}] Processing existing {html_source}...")
+        extract_and_add_question(html_source, registry_file, test_name, image_dir)
+        last_mtime = os.path.getmtime(html_source)
+    else:
+        last_mtime = 0
+        
+    print(f"Watching for changes in {html_source} (Press Ctrl+C to stop)...")
     
     while True:
         try:
             if os.path.exists(html_source):
                 current_mtime = os.path.getmtime(html_source)
                 if current_mtime > last_mtime:
-                    print(f"[{time.strftime('%H:%M:%S')}] Change detected! Processing...")
-                    time.sleep(1) # Wait for file write to complete
+                    print(f"[{time.strftime('%H:%M:%S')}] Change detected in {html_source}! Processing...")
+                    time.sleep(0.5) # Wait for file write to complete
                     extract_and_add_question(html_source, registry_file, test_name, image_dir)
                     last_mtime = os.path.getmtime(html_source)
         except Exception as e:
             print("Error:", e)
-        time.sleep(2)
+        time.sleep(1)
