@@ -37,19 +37,33 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         for img in images:
             img.extract()
 
+    def clean_elem(el):
+        if not el:
+            return ""
+        # Convert sub and sup to clean html or latex
+        for sub in el.find_all('sub'):
+            sub.replace_with(f"_{{{sub.get_text()}}}")
+        for sup in el.find_all('sup'):
+            sup.replace_with(f"^{{{sup.get_text()}}}")
+        text = el.get_text(separator=' ', strip=True)
+        text = re.sub(r'[ \t\r\f\v]+', ' ', text)
+        text = re.sub(r'(\n|\r)+', ' ', text)
+        # Restore _{x} to <sub>x</sub> or MathJax where appropriate
+        text = re.sub(r'_\{([^}]+)\}', r'<sub>\1</sub>', text)
+        text = re.sub(r'\^\{([^}]+)\}', r'<sup>\1</sup>', text)
+        return text
+
     # Get question text
     q_parts = []
     for p in question_span.find_all(['p', 'div']):
-        t = p.get_text(separator='<br>', strip=True)
+        t = clean_elem(p)
         if t:
             q_parts.append(t)
     if not q_parts:
-        question_text = question_span.get_text(separator='<br>', strip=True)
+        question_text = clean_elem(question_span)
     else:
         question_text = "<br>".join(q_parts)
 
-    question_text = re.sub(r'[ \t\r\f\v]+', ' ', question_text)
-    question_text = re.sub(r'(\n|\r)+', ' ', question_text)
     question_text = question_text.replace('"', '\\"')
     
     options = []
@@ -65,9 +79,7 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         else:
             btn = label.find('button')
             opt_tag = btn if btn else label
-            opt_text = opt_tag.get_text(separator='<br>', strip=True)
-            opt_text = re.sub(r'[ \t\r\f\v]+', ' ', opt_text)
-            opt_text = re.sub(r'(\n|\r)+', ' ', opt_text)
+            opt_text = clean_elem(opt_tag)
             opt_text = opt_text.replace("'", "\\'")
             options.append(f"'{opt_text}'")
             
@@ -96,10 +108,15 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             if not sol_container:
                 sol_container = parent.find_all('div')[-1] if parent.find_all('div') else None
             if sol_container:
-                sol_html = sol_container.get_text(separator='<br>', strip=True)
-                sol_html = re.sub(r'[ \t\r\f\v]+', ' ', sol_html)
-                sol_html = re.sub(r'(\n|\r)+', ' ', sol_html)
-                sol_html = re.sub(r'(<br>\s*)+', '<br>', sol_html)
+                sol_parts = []
+                for sp in sol_container.find_all(['p', 'li', 'div']):
+                    st = clean_elem(sp)
+                    if st:
+                        sol_parts.append(st)
+                if sol_parts:
+                    sol_html = "<br>".join(sol_parts)
+                else:
+                    sol_html = clean_elem(sol_container)
                 sol_html = sol_html.replace('"', '\\"').strip('<br>').strip()
                 solution_html = sol_html
 
