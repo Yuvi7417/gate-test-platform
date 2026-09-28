@@ -319,6 +319,7 @@ let currentOtp = null;
 let otpTimerInterval = null;
 let pendingUser = null;
 let pendingEnrollId = null;
+let pendingTestAfterLogin = null;
 let enrolledIds = [];
 let currentUser = null;
 
@@ -449,7 +450,15 @@ function verifyOtp() {
         loginUser(data.user);
         closeLogin();
 
-        if (pendingEnrollId) {
+        if (pendingTestAfterLogin) {
+          const { testName, seriesId } = pendingTestAfterLogin;
+          pendingTestAfterLogin = null;
+          fetchUserResults().then(() => {
+            if (typeof openInstructions === 'function') {
+              openInstructions(testName, seriesId);
+            }
+          });
+        } else if (pendingEnrollId) {
           const id = pendingEnrollId;
           pendingEnrollId = null;
           if (enrolledIds.includes(id)) {
@@ -525,7 +534,15 @@ function firebaseGoogleLogin() {
         closeLogin();
         fetchUserResults();
 
-        if (pendingEnrollId) {
+        if (pendingTestAfterLogin) {
+          const { testName, seriesId } = pendingTestAfterLogin;
+          pendingTestAfterLogin = null;
+          fetchUserResults().then(() => {
+            if (typeof openInstructions === 'function') {
+              openInstructions(testName, seriesId);
+            }
+          });
+        } else if (pendingEnrollId) {
           const id = pendingEnrollId;
           pendingEnrollId = null;
           if (enrolledIds.includes(id)) {
@@ -578,7 +595,13 @@ function isResultForSeries(r, tId) {
   if (tId === 'pw-cs-gate-2026' || tId === 'cse-gate-2026-pyq') {
     return nameUpper.includes('2026');
   }
-  if (tId === 'cse-gate-2027' || tId === 'cs-gate-pyq') {
+  if (tId === 'cs-gate-pyq') {
+    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
+      return false;
+    }
+    return true;
+  }
+  if (tId === 'cse-gate-2027') {
     if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }
@@ -1232,6 +1255,15 @@ function closeInstructionsReadOnly() {
 /* ---------- decide what happens after instructions ---------- */
 const _origOpenInstructions = openInstructions;
 openInstructions = function (testName, seriesId) {
+  // If user is not logged in, prompt login first
+  if (!document.body.classList.contains("logged-in") || !localStorage.getItem("apexcore_token")) {
+    pendingTestAfterLogin = { testName, seriesId };
+    if (typeof openLogin === "function") {
+      openLogin();
+    }
+    return;
+  }
+
   pendingTestName = testName || "";
   pendingTestSeriesId = seriesId || (typeof currentTestListId !== "undefined" ? currentTestListId : "") || (typeof currentDetailId !== "undefined" ? currentDetailId : "") || "";
   if (pendingTestSeriesId) {
@@ -1271,6 +1303,15 @@ function findMatchingTest(testName) {
 
 function proceedFromInstructions() {
   if (document.getElementById("examBeginBtn").disabled) return;
+
+  if (!document.body.classList.contains("logged-in") || !localStorage.getItem("apexcore_token")) {
+    closeInstructions();
+    pendingTestAfterLogin = { testName: pendingTestName, seriesId: pendingTestSeriesId };
+    if (typeof openLogin === "function") {
+      openLogin();
+    }
+    return;
+  }
 
   const testKey = findMatchingTest(pendingTestName);
   if (!testKey) {

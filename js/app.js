@@ -2063,7 +2063,6 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         if (rBr) {
           const rBrLower = rBr[1].trim().toLowerCase();
           if (rBrLower === rawLower || (bracketLower && rBrLower === bracketLower)) return true;
-          if (rawLower.includes(rBrLower)) return true;
         }
         return false;
       });
