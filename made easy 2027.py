@@ -94,14 +94,17 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     solution_h2 = soup.find('h2', string=re.compile("Solution"))
     if solution_h2:
         parent = solution_h2.parent
-        # Check if image in solution
-        sol_img = parent.find('img')
-        if sol_img:
-            img_url = sol_img['src']
-            img_name = img_url.split('/')[-1].split('?')[0]
-            local_img_path = f"{image_folder}/{img_name}"
-            download_image(img_url, local_img_path)
-            solution_html = f"<img src='{local_img_path}' alt='Detailed Solution'>"
+        # Check all images in solution
+        sol_imgs = parent.find_all('img')
+        if sol_imgs:
+            img_tags = []
+            for img in sol_imgs:
+                img_url = img['src']
+                img_name = img_url.split('/')[-1].split('?')[0]
+                local_img_path = f"{image_folder}/{img_name}"
+                download_image(img_url, local_img_path)
+                img_tags.append(f"<img src='{local_img_path}' alt='Detailed Solution'>")
+            solution_html = "<br><br>".join(img_tags)
         else:
             # Look for solution text div
             sol_container = parent.find('div', class_=re.compile('text-greyFont')) or parent.find('div', class_=re.compile('text-gray-700'))
@@ -128,6 +131,16 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         print(f"Error: Could not find test '{test_series_name}' in {js_file}")
         return
 
+    # Check if this exact question is already in the test section
+    test_end_check = js_content.find('});', test_idx)
+    current_test_block = js_content[test_idx:test_end_check] if test_end_check != -1 else js_content[test_idx:]
+    if question_text and question_text in current_test_block:
+        print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+        return
+    if question_image and question_image in current_test_block:
+        print(f"[{time.strftime('%H:%M:%S')}] Duplicate image detected! Question already exists in '{test_series_name}'. Skipping.")
+        return
+
     # Determine marks
     marks = 1
     # Count existing marks to determine 1 or 2 mark question
@@ -143,13 +156,22 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 
     q_type = "MCQ" if len(options) > 0 else "NAT"
     neg_mark = round(0.33 * marks, 2) if len(options) > 0 else 0
-    answer_js = f'"{correct_answer}"'
 
-    if "," in correct_answer:
+    if q_type == "NAT":
+        try:
+            if "." in correct_answer:
+                answer_js = str(float(correct_answer))
+            else:
+                answer_js = str(int(correct_answer))
+        except ValueError:
+            answer_js = f'"{correct_answer}"'
+    elif "," in correct_answer:
         q_type = "MSQ"
         neg_mark = 0
         ans_list = [ans.strip() for ans in correct_answer.split(",")]
         answer_js = str(ans_list).replace("'", '"')
+    else:
+        answer_js = f'"{correct_answer}"'
 
     options_str = ",\n                ".join(options)
     
@@ -158,9 +180,9 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     empty_q_match = re.search(r'questions:\s*\[\s*\]', after_test)
     
     new_q_obj = f"""        {{
-            type: "{q_type}",
             marks: {marks},
             neg: {neg_mark},
+            type: "{q_type}",
             text: "{question_text}",
             image: "{question_image}",
             options: [
@@ -185,7 +207,7 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             insertion_pos = test_idx + last_bracket
             # Check if there is already a question, add comma
             prefix = ",\n"
-            updated_js = js_content[:insertion_pos].rstrip() + prefix + new_q_obj + "\n    " + js_content[insertion_pos:]
+            updated_js = js_content[:insertion_pos].rstrip().rstrip(',') + prefix + new_q_obj + "\n    " + js_content[insertion_pos:]
         else:
             print("Error: Could not locate closing bracket of questions array.")
             return
@@ -197,16 +219,11 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 if __name__ == "__main__":
     html_source = "test.html"
     registry_file = "js/made-easy-cse-2027-test.src.js"
-    test_name = "SWT - Compiler Design"
-    image_dir = "images/swt-compiler-design-1"
+    test_name = "TWT - Algorithms -1"
+    image_dir = "images/twt-algorithms-1"
     
-    # Run once immediately on current test.html if valid
-    if os.path.exists(html_source):
-        print(f"[{time.strftime('%H:%M:%S')}] Processing existing {html_source}...")
-        extract_and_add_question(html_source, registry_file, test_name, image_dir)
-        last_mtime = os.path.getmtime(html_source)
-    else:
-        last_mtime = 0
+    # Initialize last_mtime to current file mtime so it only processes on next change
+    last_mtime = os.path.getmtime(html_source) if os.path.exists(html_source) else 0
         
     print(f"Watching for changes in {html_source} (Press Ctrl+C to stop)...")
     
