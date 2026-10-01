@@ -3309,8 +3309,8 @@ main {
 }
 
 .qpaper-modal {
-  width: min(760px, 92vw);
-  max-height: 86vh;
+  width: min(1000px, 95vw);
+  max-height: 90vh;
   background: #fff;
   border-radius: 6px;
   overflow: hidden;
