@@ -2674,8 +2674,12 @@ async function showResultPage(explicitTestName) {
     const leadRes = await fetch(leadUrl);
     const leadData = await leadRes.json();
     if (leadData.success && Array.isArray(leadData.leaderboard) && leadData.leaderboard.length > 0) {
-      const lb = leadData.leaderboard;
-      const myEntry = lb.find(x => x.name && user && user.name && x.name.trim().toLowerCase() === user.name.trim().toLowerCase());
+      const myUserId = (currentUser && (currentUser._id || currentUser.id)) ? String(currentUser._id || currentUser.id) : "";
+      const myEntry = lb.find(x => {
+        if (myUserId && x.userId && String(x.userId) === myUserId) return true;
+        if (x.name && user && user.name && x.name.trim().toLowerCase() === user.name.trim().toLowerCase()) return true;
+        return false;
+      });
       if (myEntry) {
         myRank = myEntry.rank;
         totalStudents = Math.max(totalStudents, lb.length);
@@ -2885,11 +2889,15 @@ async function openLeaderboard() {
       const currentUserEmail = (currentUser || {}).email || "";
       let foundMe = false;
 
+      const myUserId = (currentUser && (currentUser._id || currentUser.id)) ? String(currentUser._id || currentUser.id) : "";
+      const currentUserName = (currentUser && currentUser.name) ? currentUser.name.trim().toLowerCase() : "";
+
       data.leaderboard.forEach(r => {
-        // We will try to match current user by name for demonstration.
-        // In reality, the backend should tag isCurrentUser based on auth token.
-        const isMe = currentUser && r.name === currentUser.name;
-        const initial = r.name.charAt(0).toUpperCase() || 'U';
+        const rUserId = r.userId ? String(r.userId) : "";
+        const rName = r.name ? r.name.trim().toLowerCase() : "";
+        const isMe = (myUserId && rUserId && myUserId === rUserId) ||
+                     (currentUserName && rName && currentUserName === rName);
+        const initial = r.name ? (r.name.trim().charAt(0).toUpperCase() || 'U') : 'U';
 
         const itemHTML = `
           <div class="leaderboard-item">

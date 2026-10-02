@@ -697,22 +697,21 @@ function buildTestQuery(testName, seriesId) {
 
     if (/weekly quiz|wqt/i.test(clean)) {
       orConditions.push({ testName: new RegExp('(WQT|Weekly Quiz).*' + escBracket, 'i') });
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
     } else if (/demo/i.test(clean)) {
       orConditions.push({ testName: new RegExp('DEMO.*' + escBracket, 'i') });
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
     } else if (/full test|fst|flt/i.test(clean)) {
       orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket, 'i') });
-    } else if (/2026/i.test(clean)) {
-      if (/topicwise|twt/i.test(clean)) {
-        orConditions.push({ testName: new RegExp('2026.*(Topicwise|TWT).*' + escBracket, 'i') });
-      } else if (/subjectwise|swt/i.test(clean)) {
-        orConditions.push({ testName: new RegExp('2026.*(Subjectwise|SWT).*' + escBracket, 'i') });
-      }
-    } else if (/2027/i.test(clean)) {
-      if (/topicwise|twt/i.test(clean)) {
-        orConditions.push({ testName: new RegExp('2027.*(Topicwise|TWT).*' + escBracket, 'i') });
-      } else if (/subjectwise|swt/i.test(clean)) {
-        orConditions.push({ testName: new RegExp('2027.*(Subjectwise|SWT).*' + escBracket, 'i') });
-      }
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+    } else if (/topicwise|twt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket, 'i') });
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+    } else if (/subjectwise|swt/i.test(clean)) {
+      orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket, 'i') });
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+    } else {
+      orConditions.push({ testName: new RegExp(escBracket, 'i') });
     }
   } else {
     const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT)\s*-\s*(.+)$/i);
@@ -724,6 +723,10 @@ function buildTestQuery(testName, seriesId) {
         orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub, 'i') });
       } else if (type === 'FST' || type === 'FLT') {
         orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub, 'i') });
+      } else if (type === 'TWT') {
+        orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub, 'i') });
+      } else if (type === 'SWT') {
+        orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub, 'i') });
       }
     }
   }
@@ -737,7 +740,8 @@ function buildTestQuery(testName, seriesId) {
             { seriesId: seriesId },
             { seriesId: { $exists: false } },
             { seriesId: null },
-            { seriesId: "" }
+            { seriesId: "" },
+            { seriesId: "undefined" }
           ]
         }
       ]
@@ -933,7 +937,7 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
     // Group by user and find their best score
     const bestResultsMap = new Map();
     for (const r of results) {
-      const uId = r.userId ? r.userId._id.toString() : 'unknown';
+      const uId = r.userId ? (r.userId._id ? r.userId._id.toString() : r.userId.toString()) : (r._id ? r._id.toString() : 'unknown');
       if (!bestResultsMap.has(uId)) {
         bestResultsMap.set(uId, r);
       } else {
@@ -952,6 +956,7 @@ app.get('/api/leaderboard/:testName', async (req, res) => {
 
     const leaderboard = uniqueResults.map((r, index) => ({
       rank: index + 1,
+      userId: r.userId ? (r.userId._id ? r.userId._id.toString() : r.userId.toString()) : null,
       name: r.userId ? r.userId.name : 'Unknown User',
       score: r.score,
       maxScore: r.maxScore,
