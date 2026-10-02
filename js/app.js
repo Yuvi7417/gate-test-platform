@@ -1319,6 +1319,7 @@ window.PYQ_TOPIC_MAP = {
   "Database-1": "ER-Model, Relational Model, Relational Algebra, SQL",
   "Database-2": "Normalization, Transactions, Concurrency Control, B/B+ Trees",
   "Database": "Complete DBMS Syllabus",
+  "ER Model-I": "Entity-Relationship Model, Entity Sets, Attributes, Relationship Sets, Constraints",
 
   "Theory of computation-1": "Regular Languages, Finite Automata, DFA, NFA, RegEx",
   "Theory of computation-2": "Context-Free Languages, PDA, Turing Machines, Decidability",
@@ -1408,6 +1409,9 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-III)", subject: "algo" },
   { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-I)", subject: "algo" },
   { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-II)", subject: "algo" },
+
+  // DBMS
+  { series: "cse-gate-2027", name: "TWT-DBMS(ER Model-I)", subject: "dbms" },
 ];
 
 window.PYQ_CS_SUBJECTS = [
