@@ -1412,6 +1412,7 @@ window.PYQ_DEFAULT_TESTS = [
 
   // DBMS
   { series: "cse-gate-2027", name: "TWT-DBMS(ER Model-I)", subject: "dbms" },
+  { series: "cse-gate-2027", name: "TWT-DBMS(Relational Schema-I)", subject: "dbms" },
 ];
 
 window.PYQ_CS_SUBJECTS = [
