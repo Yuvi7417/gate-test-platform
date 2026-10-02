@@ -1092,13 +1092,14 @@ function renderTestList(t, filter) {
     };
   });
 
-  // Map user results to status with comprehensive matching
+  // Map user results to status with comprehensive matching (latest attempt first)
+  const allRevResults = (userResults || []).slice().reverse();
   items.forEach(it => {
     const itLower = (it.name || "").trim().toLowerCase();
     const rawLower = (it.rawName || "").trim().toLowerCase();
     const bracketLower = (it.bracket || "").trim().toLowerCase();
 
-    const result = userResults.find(r => {
+    const result = allRevResults.find(r => {
       if (!r || !r.testName) return false;
       if (!isResultForSeries(r, t.id)) return false;
 
