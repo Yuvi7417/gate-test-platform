@@ -2682,11 +2682,11 @@ async function showResultPage(explicitTestName) {
       });
       if (myEntry) {
         myRank = myEntry.rank;
-        totalStudents = Math.max(totalStudents, lb.length);
+        totalStudents = lb.length;
       } else {
         const higherScores = lb.filter(x => (x.score || 0) > (r.score || 0)).length;
         myRank = higherScores + 1;
-        totalStudents = Math.max(totalStudents, lb.length + 1);
+        totalStudents = lb.length + 1;
       }
     } else {
       myRank = 1;
@@ -2900,12 +2900,12 @@ async function openLeaderboard() {
         const initial = r.name ? (r.name.trim().charAt(0).toUpperCase() || 'U') : 'U';
 
         const itemHTML = `
-          <div class="leaderboard-item">
+          <div class="leaderboard-item" ${isMe ? 'style="background: #eef7fc;"' : ''}>
             <div class="leaderboard-item-left">
               <div class="leaderboard-avatar">${initial}</div>
               <div class="leaderboard-user-info">
                 <span class="leaderboard-rank-badge">AIR-${r.rank}</span>
-                <span class="leaderboard-user-name">${r.name}</span>
+                <span class="leaderboard-user-name">${r.name}${isMe ? ' (You)' : ''}</span>
               </div>
             </div>
             <div class="leaderboard-item-right">
@@ -2918,18 +2918,21 @@ async function openLeaderboard() {
 
         if (isMe && !foundMe) {
           myRankHTML = itemHTML;
+          myRankNum = r.rank;
           foundMe = true;
         }
       });
 
       body.innerHTML = html;
 
-      // If we found the user, add them to the sticky footer
-      if (myRankHTML) {
+      // Only show sticky footer if user's rank is NOT in the top 5
+      if (myRankHTML && myRankNum > 5) {
         sticky.innerHTML = `
            <div style="text-align: center; color: #c3ced8; padding: 10px 0; font-size: 20px; line-height: 0.5;">...</div>
            ${myRankHTML}
          `;
+      } else {
+        sticky.innerHTML = '';
       }
 
     } else {

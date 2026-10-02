@@ -694,24 +694,25 @@ function buildTestQuery(testName, seriesId) {
   if (bracketMatch) {
     const bracketContent = bracketMatch[1].trim();
     const escBracket = escapeRegex(bracketContent);
+    const boundedBracket = '(?:^|[^a-zA-Z0-9])' + escBracket + '(?:$|[^a-zA-Z0-9])';
 
     if (/weekly quiz|wqt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(WQT|Weekly Quiz).*' + escBracket, 'i') });
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp('(WQT|Weekly Quiz).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     } else if (/demo/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('DEMO.*' + escBracket, 'i') });
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp('DEMO.*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     } else if (/full test|fst|flt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket, 'i') });
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     } else if (/topicwise|twt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket, 'i') });
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     } else if (/subjectwise|swt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket, 'i') });
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     } else {
-      orConditions.push({ testName: new RegExp(escBracket, 'i') });
+      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     }
   } else {
     const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT)\s*-\s*(.+)$/i);
@@ -719,14 +720,19 @@ function buildTestQuery(testName, seriesId) {
       const type = prefixMatch[1].toUpperCase();
       const sub = prefixMatch[2].trim();
       const escSub = escapeRegex(sub);
+      const boundedSub = '(?:^|[^a-zA-Z0-9])' + escSub + '(?:$|[^a-zA-Z0-9])';
       if (type === 'WQT') {
-        orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub, 'i') });
+        orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
+        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
       } else if (type === 'FST' || type === 'FLT') {
-        orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub, 'i') });
+        orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
+        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
       } else if (type === 'TWT') {
-        orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub, 'i') });
+        orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
+        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
       } else if (type === 'SWT') {
-        orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub, 'i') });
+        orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
+        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
       }
     }
   }
