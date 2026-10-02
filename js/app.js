@@ -1411,7 +1411,7 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Algorithm(Recurrence Relation-II)", subject: "algo" },
 
   // DBMS
-  { series: "cse-gate-2027", name: "TWT-DBMS(ER Model-I)", subject: "dbms" },
+  { series: "cse-gate-2027", name: "TWT-DBMS(ER Model)", subject: "dbms" },
   { series: "cse-gate-2027", name: "TWT-DBMS(Relational Schema-I)", subject: "dbms" },
 ];
 

@@ -1,6 +1,6 @@
 registerTest({
     series: "cse-gate-2027",
-    name: "TWT-DBMS(ER Model-I)",
+    name: "TWT-DBMS(ER Model)",
     date: "sep 08, 2026",
     questions: [
         {
@@ -232,11 +232,11 @@ registerTest({
     name: "TWT-DBMS(Relational Schema-I)",
     date: "sep 08, 2026",
     questions: [
-        {
+{
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider a relational database schema with a relation <span>\( R(A, B, C, D) \)</span>. If <span>\( \{A, B\} \)</span> and <span>\( \{A, C\} \)</span> are the only two candidate keys of the relation <span>\( R \)</span>, then the number of superkeys of relation <span>\( R \)</span> is ________. (answer in integer)</span>`,
+            text: `<span style="display: inline;">Consider a relational database schema with a relation <span>\\( R(A, B, C, D) \\)</span>. If <span>\\( \\{A, B\\} \\)</span> and <span>\\( \\{A, C\\} \\)</span> are the only two candidate keys of the relation <span>\\( R \\)</span>, then the number of superkeys of relation <span>\\( R \\)</span> is ________. (answer in integer)</span>`,
             image: "",
             options: [
             ],
@@ -247,13 +247,13 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Let <span>\( P, Q, R \)</span> and <span>\( S \)</span> be the attributes of a relation in a relational schema. Let <span>\( X \rightarrow Y \)</span> indicate functional dependency in the context of a relational database, where <span>\( X, Y \subseteq\{P, Q, R, S\} \)</span>. <br/><br/>Which of the following options is/are always true?</span>`,
+            text: `<span style="display: inline;">Let <span>\\( P, Q, R \\)</span> and <span>\\( S \\)</span> be the attributes of a relation in a relational schema. Let <span>\\( X \\rightarrow Y \\)</span> indicate functional dependency in the context of a relational database, where <span>\\( X, Y \\subseteq\\{P, Q, R, S\\} \\)</span>. <br/><br/>Which of the following options is/are always true?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">If <span>\( (\{P, Q\} \rightarrow\{R\} \)</span> and <span>\( \{P\} \rightarrow\{R\}) \)</span>, then <span>\( \{Q\} \rightarrow\{R\} \)</span></span>`,
-                `<span style="display: inline;">If <span>\( \{P, Q\} \rightarrow\{R\} \)</span>, then <span>\( (\{P\} \rightarrow\{R\} \)</span> or <span>\( \{Q\} \rightarrow\{R\}) \)</span></span>`,
-                `<span style="display: inline;">If <span>\( (\{P\} \rightarrow\{R\} \)</span> and <span>\( \{Q\} \rightarrow\{S\}) \)</span>, then <span>\( \{P, Q\} \rightarrow\{R, S\} \)</span></span>`,
-                `<span style="display: inline;">If <span>\( \{P\} \rightarrow\{R\} \)</span>, then <span>\( \{P, Q\} \rightarrow\{R\} \)</span></span>`,
+                `<span style="display: inline;">If <span>\\( (\\{P, Q\\} \\rightarrow\\{R\\} \\)</span> and <span>\\( \\{P\\} \\rightarrow\\{R\\}) \\)</span>, then <span>\\( \\{Q\\} \\rightarrow\\{R\\} \\)</span></span>`,
+                `<span style="display: inline;">If <span>\\( \\{P, Q\\} \\rightarrow\\{R\\} \\)</span>, then <span>\\( (\\{P\\} \\rightarrow\\{R\\} \\)</span> or <span>\\( \\{Q\\} \\rightarrow\\{R\\}) \\)</span></span>`,
+                `<span style="display: inline;">If <span>\\( (\\{P\\} \\rightarrow\\{R\\} \\)</span> and <span>\\( \\{Q\\} \\rightarrow\\{S\\}) \\)</span>, then <span>\\( \\{P, Q\\} \\rightarrow\\{R, S\\} \\)</span></span>`,
+                `<span style="display: inline;">If <span>\\( \\{P\\} \\rightarrow\\{R\\} \\)</span>, then <span>\\( \\{P, Q\\} \\rightarrow\\{R\\} \\)</span></span>`,
             ],
             answer: ["C", "D"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/523060/gate-cse-2026-set-1-question-20#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
@@ -262,13 +262,13 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider the following relational schema along with all the functional dependencies that hold on them. <br/><br/> <span>\( R1(A, B, C, D, E): \{ D \to E, EA \to B, EB \to C \} \)</span><br/> <span>\( R2(A, B, C, D): \{ A \to D, A \to B, C \to A \} \)</span><br/><br/> Which of the following statement(s) is/are TRUE?</span>`,
+            text: `<span style="display: inline;">Consider the following relational schema along with all the functional dependencies that hold on them. <br/><br/> <span>\\( R1(A, B, C, D, E): \\{ D \\to E, EA \\to B, EB \\to C \\} \\)</span><br/> <span>\\( R2(A, B, C, D): \\{ A \\to D, A \\to B, C \\to A \\} \\)</span><br/><br/> Which of the following statement(s) is/are TRUE?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><span>\( R1 \)</span> is in 3NF</span>`,
-                `<span style="display: inline;"><span>\( R2 \)</span> is in 3NF</span>`,
-                `<span style="display: inline;"><span>\( R1 \)</span> is NOT in 3NF</span>`,
-                `<span style="display: inline;"><span>\( R2 \)</span> is NOT in 3NF</span>`,
+                `<span style="display: inline;"><span>\\( R1 \\)</span> is in 3NF</span>`,
+                `<span style="display: inline;"><span>\\( R2 \\)</span> is in 3NF</span>`,
+                `<span style="display: inline;"><span>\\( R1 \\)</span> is NOT in 3NF</span>`,
+                `<span style="display: inline;"><span>\\( R2 \\)</span> is NOT in 3NF</span>`,
             ],
             answer: ["C", "D"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/460799/gate-cse-2025-set-2-question-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
@@ -277,7 +277,7 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">A functional dependency <span>\( F:X \rightarrow Y \)</span> is termed as a useful functional dependency if and only if it satisfies all the following three conditions:<br/><br/> <span>\( X \)</span> is not the empty set. <span>\( Y \)</span> is not the empty set. Intersection of <span>\( X \)</span> and <span>\( Y \)</span> is the empty set.<br/><br/> For a relation <span>\( R \)</span> with 4 attributes, the total number of possible useful functional dependencies is ______</span>`,
+            text: `<span style="display: inline;">A functional dependency <span>\\( F:X \\rightarrow Y \\)</span> is termed as a useful functional dependency if and only if it satisfies all the following three conditions:<br/><br/> <span>\\( X \\)</span> is not the empty set. <span>\\( Y \\)</span> is not the empty set. Intersection of <span>\\( X \\)</span> and <span>\\( Y \\)</span> is the empty set.<br/><br/> For a relation <span>\\( R \\)</span> with 4 attributes, the total number of possible useful functional dependencies is ______</span>`,
             image: "",
             options: [
             ],
@@ -288,13 +288,13 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">The symbol <span>\( \rightarrow \)</span> indicates functional dependency in the context of a relational database. Which of the following options is/are TRUE?</span>`,
+            text: `<span style="display: inline;">The symbol <span>\\( \\rightarrow \\)</span> indicates functional dependency in the context of a relational database. Which of the following options is/are TRUE?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><span>\( (X, Y) \rightarrow(Z, W) \text { implies } X \rightarrow(Z, W) \)</span></span>`,
-                `<span style="display: inline;"><span>\( (X, Y) \rightarrow(Z, W) \text { implies }(X, Y) \rightarrow Z \)</span></span>`,
-                `<span style="display: inline;"><span>\( ((X, Y) \rightarrow Z \text { and } W \rightarrow Y) \text { implies }(X, W) \rightarrow Z \)</span></span>`,
-                `<span style="display: inline;"><span>\( (X \rightarrow Y \text { and } Y \rightarrow Z) \text { implies } X \rightarrow Z \)</span></span>`,
+                `<span style="display: inline;"><span>\\( (X, Y) \\rightarrow(Z, W) \\text { implies } X \\rightarrow(Z, W) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( (X, Y) \\rightarrow(Z, W) \\text { implies }(X, Y) \\rightarrow Z \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( ((X, Y) \\rightarrow Z \\text { and } W \\rightarrow Y) \\text { implies }(X, W) \\rightarrow Z \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( (X \\rightarrow Y \\text { and } Y \\rightarrow Z) \\text { implies } X \\rightarrow Z \\)</span></span>`,
             ],
             answer: ["B", "C", "D"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/422808/gate-cse-2024-set-1-question-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
@@ -318,7 +318,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider a relation <span>\( R( A, B, C, D, E ) \)</span> with the following three functional dependencies.<br/><span>\( AB \rightarrow C;BC \rightarrow D; C \rightarrow E; \)</span><br/> The number of superkeys in the relation <span>\( R \)</span> is .</span>`,
+            text: `<span style="display: inline;">Consider a relation <span>\\( R( A, B, C, D, E ) \\)</span> with the following three functional dependencies.<br/><span>\\( AB \\rightarrow C;BC \\rightarrow D; C \\rightarrow E; \\)</span><br/> The number of superkeys in the relation <span>\\( R \\)</span> is .</span>`,
             image: "",
             options: [
             ],
@@ -344,7 +344,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the relation <span>\( R(P,Q,S,T,X,Y,Z,W) \)</span> with the following functional dependencies. <br/><br/><span>\( PQ\rightarrow X;\quad P\rightarrow YX;\quad Q\rightarrow Y; \quad Y\rightarrow ZW \)</span> <br/><br/> Consider the decomposition of the relation R into the constituent relations according to the following two decomposition schemes. <br/><br/> <span>\( D1:\quad R=[(P,QS,T);\;(P,T,X);\;(Q,Y);\;(Y,Z,W)] \)</span><br/> <span>\( D2:\quad R=[(P,Q,S);\;(T,X);\;(Q,Y);\;(Y,Z,W)] \)</span><br/><br/> Which one of the following options is correct?</span>`,
+            text: `<span style="display: inline;">Consider the relation <span>\\( R(P,Q,S,T,X,Y,Z,W) \\)</span> with the following functional dependencies. <br/><br/><span>\\( PQ\\rightarrow X;\\quad P\\rightarrow YX;\\quad Q\\rightarrow Y; \\quad Y\\rightarrow ZW \\)</span> <br/><br/> Consider the decomposition of the relation R into the constituent relations according to the following two decomposition schemes. <br/><br/> <span>\\( D1:\\quad R=[(P,QS,T);\\;(P,T,X);\\;(Q,Y);\\;(Y,Z,W)] \\)</span><br/> <span>\\( D2:\\quad R=[(P,Q,S);\\;(T,X);\\;(Q,Y);\\;(Y,Z,W)] \\)</span><br/><br/> Which one of the following options is correct?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">D1 is a lossless decomposition, but D2 is a lossy decomposition.</span>`,
@@ -374,7 +374,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Considering the following table in a relational database :<br>\( \begin{array}{|c|c|c|c|} \hline \text { Last Name } & \text { Rank } & \text { Room } & \text { Shift } \\ \hline \text { Smith } & \text { Manager } & 234 & \text { Morning } \\ \hline \text { Jones } & \text { Custodian } & 33 & \text { Afternoon } \\ \hline \text { Smith } & \text { Custodian } & 33 & \text { Evening } \\ \hline \text { Doe } & \text { Clerical } & 222 & \text { Morning } \\ \hline \end{array} \)<br>According to the data shown in the table, which of the following could be a candidate key of the table?</span>`,
+            text: `<span style="display: inline;">Considering the following table in a relational database :<br/><span>\\( \\begin{array}{|c|c|c|c|} \\hline \\text { Last Name } & \\text { Rank } & \\text { Room } & \\text { Shift } \\\\ \\hline \\text { Smith } & \\text { Manager } & 234 & \\text { Morning } \\\\ \\hline \\text { Jones } & \\text { Custodian } & 33 & \\text { Afternoon } \\\\ \\hline \\text { Smith } & \\text { Custodian } & 33 & \\text { Evening } \\\\ \\hline \\text { Doe } & \\text { Clerical } & 222 & \\text { Morning } \\\\ \\hline \\end{array} \\)</span><br/>According to the data shown in the table, which of the following could be a candidate key of the table?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">{Last Name}</span>`,
@@ -383,7 +383,9 @@ registerTest({
                 `<span style="display: inline;">{Room, Shift}</span>`
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/213583/isro2018-5" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/213583/isro2018-5" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE
+                                                        2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database
+                                                        Management System</a></div></div>`
         },
         {
             marks: 1,
@@ -398,7 +400,9 @@ registerTest({
                 `<span style="display: inline;">All of the above</span>`
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/128498/isro2017-4" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2017" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2017</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/128498/isro2017-4" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2017" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE
+                                                        2017</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database
+                                                        Management System</a></div></div>`
         },
         {
             marks: 1,
@@ -413,7 +417,9 @@ registerTest({
                 `<span style="display: inline;">All of the above</span>`
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/56039/isro2016-56" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2016</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/56039/isro2016-56" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE
+                                                        2016</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database
+                                                        Management System</a></div></div>`
         },
         {
             marks: 1,
@@ -428,22 +434,26 @@ registerTest({
                 `<span style="display: inline;">VWXYZ</span>`
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/39637/gate2016-1-21#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/39637/gate2016-1-21#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE
+                                                        CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database
+                                                        Management System</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">If \( D_1,D_2,...D_n \) are domains in a relational model, then the relation is a table, which is a subset of</span>`,
+            text: `<span style="display: inline;">If <span>\\( D_1,D_2,...D_n \\)</span> are domains in a relational model, then the relation is a table, which is a subset of</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\( D_{1} \oplus D_{2} \oplus \cdots \oplus D_{n} \)</span>`,
-                `<span style="display: inline;">\( D_{1} \times D_{2} \times \cdots \times D_{n} \)</span>`,
-                `<span style="display: inline;">\( D_{1} \cup D_{2} \cup \cdots \cup D_{n} \)</span>`,
-                `<span style="display: inline;">\( D_{1} \cap D_{2} \cap \cdots \cap D_{n} \)</span>`
+                `<span style="display: inline;"><span>\\( D_{1} \\oplus D_{2} \\oplus \\cdots \\oplus D_{n} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( D_{1} \\times D_{2} \\times \\cdots \\times D_{n} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( D_{1} \\cup D_{2} \\cup \\cdots \\cup D_{n} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( D_{1} \\cap D_{2} \\cap \\cdots \\cap D_{n} \\)</span></span>`
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/11982/isro2015-21" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> <a href="https://gateoverflow.in/11982/isro2015-21" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE
+                                                        2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database
+                                                        Management System</a></div></div>`
         }
     ]
 });
