@@ -2691,20 +2691,29 @@ async function showResultPage(explicitTestName) {
     const leadRes = await fetch(leadUrl);
     const leadData = await leadRes.json();
     if (leadData.success && Array.isArray(leadData.leaderboard) && leadData.leaderboard.length > 0) {
+      const lb = leadData.leaderboard;
+      const currentUserEmail = (currentUser || {}).email || "";
       const myUserId = (currentUser && (currentUser._id || currentUser.id)) ? String(currentUser._id || currentUser.id) : "";
+      const currentUserName = (currentUser && currentUser.name) ? currentUser.name.trim().toLowerCase() : "";
+
       const myEntry = lb.find(x => {
         if (myUserId && x.userId && String(x.userId) === myUserId) return true;
-        if (x.name && user && user.name && x.name.trim().toLowerCase() === user.name.trim().toLowerCase()) return true;
+        if (currentUserEmail && x.email && currentUserEmail === x.email) return true;
+        if (currentUserName && x.name && currentUserName === x.name.trim().toLowerCase()) return true;
         return false;
       });
-      if (myEntry) {
-        myRank = myEntry.rank;
-        totalStudents = lb.length;
-      } else {
-        const higherScores = lb.filter(x => (x.score || 0) > (r.score || 0)).length;
-        myRank = higherScores + 1;
-        totalStudents = lb.length + 1;
-      }
+
+      // Calculate rank of current attempt (r.score) compared to competitors in leaderboard
+      const higherScores = lb.filter(x => {
+        const isSelf = (myUserId && x.userId && String(x.userId) === myUserId) ||
+                       (currentUserEmail && x.email && currentUserEmail === x.email) ||
+                       (currentUserName && x.name && currentUserName === x.name.trim().toLowerCase());
+        if (isSelf) return false;
+        return (x.score || 0) > (r.score || 0);
+      }).length;
+
+      myRank = higherScores + 1;
+      totalStudents = myEntry ? lb.length : lb.length + 1;
     } else {
       myRank = 1;
       totalStudents = 1;

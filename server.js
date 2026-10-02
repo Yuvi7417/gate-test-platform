@@ -690,70 +690,78 @@ function buildTestQuery(testName, seriesId) {
     { testName: new RegExp('^' + escapeRegex(clean) + '$', 'i') }
   ];
 
+  const isWeeklyQuiz = /weekly quiz|wqt/i.test(clean);
+  const isDemo = /demo/i.test(clean);
+  const isFullTest = /full test|fst|flt/i.test(clean);
+  const isTopicwise = /topicwise|twt/i.test(clean);
+  const isSubjectwise = /subjectwise|swt/i.test(clean);
+  const isMixed = /mixed subject|mst/i.test(clean);
+
   const bracketMatch = clean.match(/\(([^)]+)\)/);
   if (bracketMatch) {
     const bracketContent = bracketMatch[1].trim();
     const escBracket = escapeRegex(bracketContent);
     const boundedBracket = '(?:^|[^a-zA-Z0-9])' + escBracket + '(?:$|[^a-zA-Z0-9])';
 
-    if (/weekly quiz|wqt/i.test(clean)) {
-      orConditions.push({ testName: new RegExp('(WQT|Weekly Quiz).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
-      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
-    } else if (/demo/i.test(clean)) {
+    if (isWeeklyQuiz) {
+      orConditions.push({ testName: new RegExp('(Weekly Quiz|WQT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
+    } else if (isDemo) {
       orConditions.push({ testName: new RegExp('DEMO.*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
-      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
-    } else if (/full test|fst|flt/i.test(clean)) {
+    } else if (isFullTest) {
       orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
-      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
-    } else if (/topicwise|twt/i.test(clean)) {
+    } else if (isTopicwise) {
       orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
-      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
-    } else if (/subjectwise|swt/i.test(clean)) {
+    } else if (isSubjectwise) {
       orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
-      orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
+    } else if (isMixed) {
+      orConditions.push({ testName: new RegExp('(Mixed Subject|MST).*' + escBracket + '(?:$|[^a-zA-Z0-9])', 'i') });
     } else {
       orConditions.push({ testName: new RegExp(boundedBracket, 'i') });
     }
   } else {
-    const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT)\s*-\s*(.+)$/i);
+    const prefixMatch = clean.match(/^(WQT|FST|FLT|TWT|SWT|MST)\s*-\s*(.+)$/i);
     if (prefixMatch) {
       const type = prefixMatch[1].toUpperCase();
       const sub = prefixMatch[2].trim();
       const escSub = escapeRegex(sub);
       const boundedSub = '(?:^|[^a-zA-Z0-9])' + escSub + '(?:$|[^a-zA-Z0-9])';
       if (type === 'WQT') {
-        orConditions.push({ testName: new RegExp('Weekly Quiz.*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
-        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
+        orConditions.push({ testName: new RegExp('(Weekly Quiz|WQT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
       } else if (type === 'FST' || type === 'FLT') {
-        orConditions.push({ testName: new RegExp('(Full Test|FST).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
-        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
+        orConditions.push({ testName: new RegExp('(Full Test|FST|FLT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
       } else if (type === 'TWT') {
         orConditions.push({ testName: new RegExp('(Topicwise|TWT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
-        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
       } else if (type === 'SWT') {
         orConditions.push({ testName: new RegExp('(Subjectwise|SWT).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
-        orConditions.push({ testName: new RegExp(boundedSub, 'i') });
+      } else if (type === 'MST') {
+        orConditions.push({ testName: new RegExp('(Mixed Subject|MST).*' + escSub + '(?:$|[^a-zA-Z0-9])', 'i') });
       }
     }
   }
 
-  if (seriesId) {
-    return {
-      $and: [
-        { $or: orConditions },
-        {
-          $or: [
-            { seriesId: seriesId },
-            { seriesId: { $exists: false } },
-            { seriesId: null },
-            { seriesId: "" },
-            { seriesId: "undefined" }
-          ]
-        }
-      ]
-    };
+  const andConditions = [{ $or: orConditions }];
+  if (isTopicwise) {
+    andConditions.push({ testName: { $not: /(Subjectwise|SWT|Weekly Quiz|WQT|Full Test|FST|FLT|Mixed Subject|MST)/i } });
+  } else if (isSubjectwise) {
+    andConditions.push({ testName: { $not: /(Topicwise|TWT|Weekly Quiz|WQT|Full Test|FST|FLT|Mixed Subject|MST)/i } });
+  } else if (isWeeklyQuiz) {
+    andConditions.push({ testName: { $not: /(Topicwise|TWT|Subjectwise|SWT|Full Test|FST|FLT|Mixed Subject|MST)/i } });
+  } else if (isFullTest) {
+    andConditions.push({ testName: { $not: /(Topicwise|TWT|Subjectwise|SWT|Weekly Quiz|WQT|Mixed Subject|MST)/i } });
   }
-  return { $or: orConditions };
+
+  if (seriesId) {
+    andConditions.push({
+      $or: [
+        { seriesId: seriesId },
+        { seriesId: { $exists: false } },
+        { seriesId: null },
+        { seriesId: "" },
+        { seriesId: "undefined" }
+      ]
+    });
+  }
+  return { $and: andConditions };
 }
 
 // 6. Get Global Test Stats Endpoint
