@@ -2057,7 +2057,8 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         if (!r || !r.testName) return false;
         // If seriesId is available on result and card, ensure they match to prevent cross-series collision
         if (typeof window.isResultForSeries === 'function' && !window.isResultForSeries(r, seriesId)) return false;
-        if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
+        const rSeriesId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+        if (rSeriesId && seriesId && rSeriesId !== String(seriesId)) return false;
         const rLower = r.testName.trim().toLowerCase();
         // 1. Exact or case-insensitive match
         if (r.testName === rawName || rLower === rawLower) return true;
@@ -2872,14 +2873,18 @@ window.findEETestResult = function (test, seriesId = "ee-gate-pyq-2027") {
   if (found) return found;
   // 2. Exact match with test.full
   if (test.full) {
-    found = list.find(r => (!r.seriesId || !seriesId || r.seriesId === seriesId) && r.testName === test.full);
+    found = list.find(r => {
+      const rSeriesId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+      return (!rSeriesId || !seriesId || rSeriesId === String(seriesId)) && r.testName === test.full;
+    });
     if (found) return found;
   }
   // 3. Bracket match
   if (test.bracket) {
     const target = test.bracket.toLowerCase().trim();
     found = list.find(r => {
-      if (r.seriesId && seriesId && r.seriesId !== seriesId) return false;
+      const rSeriesId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+      if (rSeriesId && seriesId && rSeriesId !== String(seriesId)) return false;
       const m = r.testName.match(/\(([^)]+)\)/);
       if (m && m[1].toLowerCase().trim() === target) return true;
       if (r.testName.toLowerCase().includes(target)) return true;

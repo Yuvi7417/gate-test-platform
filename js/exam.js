@@ -579,8 +579,9 @@ window.userResults = userResults;
 
 function isResultForSeries(r, tId) {
   if (!r || !tId) return false;
-  if (r.seriesId && String(r.seriesId) === String(tId)) return true;
-  if (r.seriesId && String(r.seriesId) !== String(tId)) return false;
+  const sId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+  if (sId && sId === String(tId)) return true;
+  if (sId && sId !== String(tId)) return false;
 
   const nameUpper = (r.testName || '').toUpperCase();
   if (tId === 'weekly-cs-gate-2027') {
@@ -590,7 +591,14 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('DEMO');
   }
   if (tId === 'cs-gate-classes') {
-    return nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST') || nameUpper.startsWith('FLT');
+    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER') || nameUpper.includes('CIVIL') || nameUpper.includes('MECHANICAL')) {
+      return false;
+    }
+    // Accordion pyq tests in cse-gate-2027 have raw names like TWT-c-programming, SWT-c-programming (no spaces)
+    if (/^[T|S]WT-[a-z]/i.test(r.testName || '')) {
+      return false;
+    }
+    return nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST') || nameUpper.startsWith('FLT') || nameUpper.includes('TOPICWISE') || nameUpper.includes('SUBJECTWISE') || nameUpper.includes('MIXED') || nameUpper.startsWith('TWT') || nameUpper.startsWith('SWT') || nameUpper.startsWith('MST');
   }
   if (tId === 'pw-cs-gate-2026' || tId === 'cse-gate-2026-pyq') {
     return nameUpper.includes('2026');
@@ -605,10 +613,14 @@ function isResultForSeries(r, tId) {
     if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }
+    if (nameUpper.includes('CSE 2027-TOPICWISE') || nameUpper.includes('CSE 2027-SUBJECTWISE')) {
+      return false;
+    }
     return true;
   }
   if (tId === 'ee-gate-pyq-2027' || tId === 'ee-gate-ace-2026' || tId === 'ee-gate-pyq') {
-    return nameUpper.includes('EE') || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER');
+    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO')) return false;
+    return /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER');
   }
   return true;
 }
@@ -2327,7 +2339,9 @@ function confirmSubmit() {
   const existingIndex = userResults.findIndex(r => {
     if (!r || !r.testName) return false;
     // Don't collide if seriesId differs
-    if (r.seriesId && payload.seriesId && r.seriesId !== payload.seriesId) return false;
+    const rSid = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+    const pSid = (payload.seriesId && payload.seriesId !== 'undefined' && payload.seriesId !== 'null') ? String(payload.seriesId).trim() : null;
+    if (rSid && pSid && rSid !== pSid) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === payload.testName || rLower === payLower) return true;
     if (payBracket && rLower === payBracket) return true;
@@ -2424,7 +2438,8 @@ function openPastResult(testName, seriesId) {
   let result = allRev.find(r => {
     if (!r || !r.testName) return false;
     if (seriesId && typeof isResultForSeries === 'function' && !isResultForSeries(r, seriesId)) return false;
-    if (seriesId && r.seriesId && r.seriesId !== seriesId) return false;
+    const rSeriesId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+    if (seriesId && rSeriesId && rSeriesId !== String(seriesId)) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (r.testName === testName || rLower === testLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
@@ -2453,10 +2468,11 @@ function openPastResult(testName, seriesId) {
       tSec,
       answers: result.answers || {}
     };
-    if (result.seriesId) {
-      pendingTestSeriesId = result.seriesId;
-      currentTestListId = result.seriesId;
-      currentDetailId = result.seriesId;
+    const rValidSeriesId = (result.seriesId && result.seriesId !== 'undefined' && result.seriesId !== 'null') ? result.seriesId : seriesId;
+    if (rValidSeriesId) {
+      pendingTestSeriesId = rValidSeriesId;
+      currentTestListId = rValidSeriesId;
+      currentDetailId = rValidSeriesId;
     }
     document.getElementById("resultCrumbName").textContent = testName;
     showResultPage(testName);
@@ -2474,7 +2490,8 @@ function openSolutionMode(testName, seriesId) {
   let result = allRev.find(r => {
     if (!r || !r.testName) return false;
     if (targetSeriesId && typeof isResultForSeries === 'function' && !isResultForSeries(r, targetSeriesId)) return false;
-    if (targetSeriesId && r.seriesId && r.seriesId !== targetSeriesId) return false;
+    const rSeriesId = (r.seriesId && r.seriesId !== 'undefined' && r.seriesId !== 'null') ? String(r.seriesId).trim() : null;
+    if (targetSeriesId && rSeriesId && rSeriesId !== String(targetSeriesId)) return false;
     const rLower = r.testName.trim().toLowerCase();
     if (rLower === targetLower) return true;
     if (bracketLower && rLower === bracketLower) return true;
