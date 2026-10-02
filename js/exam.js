@@ -737,7 +737,8 @@ function openPaymentGateway(id) {
   const token = localStorage.getItem('apexcore_token');
   
   // If course is FREE, bypass Razorpay
-  if (ts.price === "FREE") {
+  const isFree = (ts.price && ts.price.toString().trim().toUpperCase() === "FREE") || Number(ts.basePrice) === 0;
+  if (isFree) {
     fetch('/api/enroll-free', {
       method: 'POST',
       headers: {

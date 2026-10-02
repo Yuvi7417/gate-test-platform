@@ -925,7 +925,8 @@ window.testSeries = [
       // ["Mock - 3", "Jan 12, 2026"],
     ],
     oldPrice: "₹500",
-    price: "Free",
+    price: "FREE",
+    basePrice: 0,
     brandLabel: "APEX PYQ"
     // comingSoon: true
   },
