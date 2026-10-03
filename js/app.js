@@ -1924,8 +1924,13 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   const registeredMap = new Map();
 
   // 1. Defaults first
-  if (seriesId === "cse-gate-2027" || seriesId === "cs-gate-pyq") {
+  if (seriesId === "cse-gate-2027") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
+      const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+      registeredMap.set(cleanName, { ...t, name: cleanName });
+    });
+  } else if (seriesId === "cs-gate-pyq") {
+    (window.PYQ_DEFAULT_TESTS || []).filter(t => t.subject !== "isro").forEach(t => {
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
@@ -2000,11 +2005,15 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // Render each subject card
   let html = `<div class="pyq-accordion-wrap">`;
 
-  const targetSubjects = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
+  const rawTargetSubjects = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
+  const targetSubjects = (seriesId === "cse-gate-2027")
+    ? rawTargetSubjects
+    : rawTargetSubjects.filter(s => s.id !== "isro");
   const activeTopicMap = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
   targetSubjects.forEach((subj) => {
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {
+      if (subj.id === "isro" && seriesId !== "cse-gate-2027") return false;
       if (t.subject === subj.id) return true;
       return subj.regex && subj.regex.test(t.name);
     });

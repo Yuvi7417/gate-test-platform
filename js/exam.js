@@ -604,7 +604,7 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('2026');
   }
   if (tId === 'cs-gate-pyq') {
-    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
+    if (nameUpper.includes('ISRO') || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }
     return true;
