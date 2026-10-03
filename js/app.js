@@ -1430,19 +1430,29 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "ISRO CSE 2008", subject: "isro", comingSoon: true },
 
   // GATE CSE (2003-2026)
-  { series: "cse-gate-2027", name: "GATE CSE 2026", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2025", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2024", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2024 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2024 SET-2", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2023", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2022", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2021", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2021 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2021 SET-2", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2020", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2019", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2018", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2017", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2016", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2015", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2014", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2017 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2017 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2016 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2016 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2015 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2015 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2015 SET-3", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2014 SET-1", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2014 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2014 SET-3", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2013", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2012", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2011", subject: "gate_pyq", comingSoon: true },
@@ -1961,12 +1971,16 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // 1. Defaults first
   if (seriesId === "cse-gate-2027") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
-      const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+      const cleanName = (/^(TWT|SWT)/i.test(t.name))
+        ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
+        : t.name;
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
   } else if (seriesId === "cs-gate-pyq") {
     (window.PYQ_DEFAULT_TESTS || []).filter(t => t.subject !== "isro" && t.subject !== "gate_pyq").forEach(t => {
-      const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
+      const cleanName = (/^(TWT|SWT)/i.test(t.name))
+        ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
+        : t.name;
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
   } else if (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") {
@@ -2060,7 +2074,12 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       subjTests.sort((a, b) => {
         const aYear = parseInt((a.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
         const bYear = parseInt((b.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
-        return bYear - aYear;
+        if (bYear !== aYear) return bYear - aYear;
+        const aSetMatch = (a.name || "").match(/SET[- ]*(\d+)/i);
+        const bSetMatch = (b.name || "").match(/SET[- ]*(\d+)/i);
+        const aSet = aSetMatch ? parseInt(aSetMatch[1], 10) : 0;
+        const bSet = bSetMatch ? parseInt(bSetMatch[1], 10) : 0;
+        return aSet - bSet;
       });
     } else {
       subjTests.sort((a, b) => {
