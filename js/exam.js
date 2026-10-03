@@ -1819,7 +1819,9 @@ function renderPlayerQuestion(i) {
 
     // Determine correct answer label
     let correctLabel = "";
-    if (q.type === "MSQ") {
+    if (q.isMTA || q.answer === "N/A" || q.correct === "N/A") {
+      correctLabel = "Marks to All (MTA)";
+    } else if (q.type === "MSQ") {
       const correctArr = Array.isArray(q.correct) ? q.correct : [q.correct];
       correctLabel = correctArr.map(c => String.fromCharCode(65 + c)).join(", ");
     } else if (q.type === "NAT") {
@@ -2239,8 +2241,14 @@ function confirmSubmit() {
       given === null ||
       (Array.isArray(given) && given.length === 0)
     ) {
-      unattempted++;
-      isUnattempted = true;
+      if (q.isMTA || q.answer === "N/A" || q.correct === "N/A") {
+        isCorrect = true;
+        correctCount++;
+        score += q.marks;
+      } else {
+        unattempted++;
+        isUnattempted = true;
+      }
     } else if (q.type === "MSQ") {
       const correctVal = q.correct !== undefined ? q.correct : q.answer;
       let correctArr = [...(correctVal || [])].sort();
@@ -2278,12 +2286,13 @@ function confirmSubmit() {
         score -= q.neg;
       }
     } else {
+      const isMTA = q.isMTA || q.answer === "N/A" || q.correct === "N/A";
       const correctVal = q.correct !== undefined ? q.correct : q.answer;
       let cIdx = correctVal;
       if (typeof correctVal === "string" && /^[A-D]$/i.test(correctVal)) {
         cIdx = correctVal.toUpperCase().charCodeAt(0) - 65;
       }
-      if (given === cIdx) {
+      if (isMTA || given === cIdx) {
         isCorrect = true;
         correctCount++;
         score += q.marks;
