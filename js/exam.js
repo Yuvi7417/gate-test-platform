@@ -1221,11 +1221,9 @@ function openInstructions(testName, seriesId) {
   const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
   const isWeeklyQuiz = (testName || "").includes("WQT") || (testName || "").toUpperCase().includes("WEEKLY QUIZ");
   const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("FLT") || (testName || "").includes("FST");
-  const isISRO = (testName || "").toUpperCase().includes("ISRO");
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
-    if (isISRO) instrDurationElement.textContent = "120 minutes";
-    else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
+    if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
   }
@@ -1460,27 +1458,8 @@ async function startPlayer(testName, fetchedQuestions) {
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
   const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST");
-  const isISROTest = testNameUpper.includes("ISRO");
-
-  let regTest = null;
-  if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
-    regTest = window.apexTestRegistry.find(t => t && (t.name === testName || (t.series + "|" + t.name) === (pendingTestSeriesId + "|" + testName)));
-  }
-
-  if (regTest && regTest.sections) {
-    playerSections = JSON.parse(JSON.stringify(regTest.sections));
-    if (regTest.duration) {
-      playerDurationMins = parseInt(regTest.duration) || 120;
-    } else {
-      playerDurationMins = isISROTest ? 120 : (isFullTest ? 180 : 90);
-    }
-  } else if (isISROTest) {
-    playerDurationMins = 120;
-    playerSections = [
-      { name: "Aptitude", start: 0, end: 14 },
-      { name: "Technical", start: 15, end: Math.max(15, playerQuestions.length - 1) }
-    ];
-  } else if (isFullTest) {
+  
+  if (isFullTest) {
     playerDurationMins = 180;
     playerSections = [
       { name: "Aptitude", start: 0, end: 9 },
@@ -1677,14 +1656,6 @@ function renderPlayerQuestion(i) {
     return el;
   };
   
-  if (playerSections) {
-    const secIdx = playerSections.findIndex(s => i >= s.start && i <= s.end);
-    if (secIdx !== -1 && secIdx !== currentSectionIndex) {
-      currentSectionIndex = secIdx;
-      renderPlayer();
-    }
-  }
-
   let displayNum = i + 1;
   if (playerSections && playerSections[currentSectionIndex]) {
     displayNum = i - playerSections[currentSectionIndex].start + 1;
@@ -2083,9 +2054,9 @@ function playerSaveMarkReview() {
 
 window.switchSection = function(idx) {
   currentSectionIndex = idx;
-  const firstQ = playerSections[idx].start;
-  playerCurrent = firstQ;
   renderPlayer();
+  const firstQ = playerSections[idx].start;
+  renderPlayerQuestion(firstQ);
 };
 
 function goToNextQuestion() {

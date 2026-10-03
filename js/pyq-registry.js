@@ -1688,11 +1688,6 @@ registerTest({
     series: "cse-gate-2027",
     name: "ISRO CSE 2025",
     date: "may 20, 2026",
-    duration: "120 Mins",
-    sections: [
-        { name: "Aptitude", start: 0, end: 14 },
-        { name: "Technical", start: 15, end: 94 }
-    ],
     questions: [
         {
             marks: 1,
