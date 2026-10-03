@@ -1413,6 +1413,21 @@ window.PYQ_DEFAULT_TESTS = [
   // DBMS
   { series: "cse-gate-2027", name: "TWT-DBMS(ER Model)", subject: "dbms" },
   { series: "cse-gate-2027", name: "TWT-DBMS(Relational Schema-I)", subject: "dbms" },
+
+  // ISRO CSE (2008-2025)
+  { series: "cse-gate-2027", name: "ISRO CSE 2025", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2024", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2023", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2020", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2018", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2017", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2016", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2015", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2014", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2013", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2011", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2009", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2008", subject: "isro", comingSoon: true },
 ];
 
 window.PYQ_CS_SUBJECTS = [
@@ -1541,6 +1556,15 @@ window.PYQ_CS_SUBJECTS = [
     iconBg: "#dcfce7",
     iconColor: "#16a34a",
     regex: /(general aptitude|aptitude|\bga\b)/i
+  },
+  {
+    id: "isro",
+    name: "ISRO(2008-2025)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>`,
+    iconBg: "#eff6ff",
+    iconColor: "#2563eb",
+    regex: /(isro)/i
   }
 ];
 
@@ -1900,7 +1924,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   const registeredMap = new Map();
 
   // 1. Defaults first
-  if (seriesId === "cse-gate-2027") {
+  if (seriesId === "cse-gate-2027" || seriesId === "cs-gate-pyq") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
@@ -1987,20 +2011,28 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
 
     if (!subjTests || subjTests.length === 0) return;
 
-    // Sort tests: Topic Tests (TWT) first by number, then Subject Tests (SWT)
-    subjTests.sort((a, b) => {
-      const aName = a.name || "";
-      const bName = b.name || "";
-      const aIsSubj = aName.toUpperCase().includes("SWT") || aName.toUpperCase().includes("SUBJECT");
-      const bIsSubj = bName.toUpperCase().includes("SWT") || bName.toUpperCase().includes("SUBJECT");
-      const aMatch = aName.match(/-?\s*(\d+)$/);
-      const bMatch = bName.match(/-?\s*(\d+)$/);
-      const aNum = aMatch ? parseInt(aMatch[1], 10) : 99;
-      const bNum = bMatch ? parseInt(bMatch[1], 10) : 99;
-      const aWeight = (aIsSubj ? 200 : 100) + aNum;
-      const bWeight = (bIsSubj ? 200 : 100) + bNum;
-      return aWeight - bWeight;
-    });
+    // Sort tests: For ISRO sort by year descending (latest first); otherwise Topic Tests (TWT) first by number, then Subject Tests (SWT)
+    if (subj.id === "isro") {
+      subjTests.sort((a, b) => {
+        const aYear = parseInt((a.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
+        const bYear = parseInt((b.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
+        return bYear - aYear;
+      });
+    } else {
+      subjTests.sort((a, b) => {
+        const aName = a.name || "";
+        const bName = b.name || "";
+        const aIsSubj = aName.toUpperCase().includes("SWT") || aName.toUpperCase().includes("SUBJECT");
+        const bIsSubj = bName.toUpperCase().includes("SWT") || bName.toUpperCase().includes("SUBJECT");
+        const aMatch = aName.match(/-?\s*(\d+)$/);
+        const bMatch = bName.match(/-?\s*(\d+)$/);
+        const aNum = aMatch ? parseInt(aMatch[1], 10) : 99;
+        const bNum = bMatch ? parseInt(bMatch[1], 10) : 99;
+        const aWeight = (aIsSubj ? 200 : 100) + aNum;
+        const bWeight = (bIsSubj ? 200 : 100) + bNum;
+        return aWeight - bWeight;
+      });
+    }
 
     // Check completion count
     let doneCount = 0;
@@ -2010,23 +2042,35 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     const testItems = subjTests.map((t) => {
       const rawName = t.name;
       const bracketMatch = rawName.match(/\(([^)]+)\)/);
-      const bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
+      const isISRO = subj.id === "isro" || /isro/i.test(rawName);
 
-      const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
-      const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
-
-      let testType = isSubject ? "Subject" : "Topic";
+      let bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
+      let testType = "Topic";
       let testLabel = "";
-      if (isSubject) {
-        subjectIdx++;
-        testLabel = `Subject Test ${subjectIdx}`;
+
+      if (isISRO) {
+        testLabel = rawName;
+        testType = "PYQ";
+        bracket = "Scientist/Engineer 'SC' Examination";
       } else {
-        topicIdx++;
-        testLabel = `Topic Test ${topicIdx}`;
+        const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
+        const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
+
+        testType = isSubject ? "Subject" : "Topic";
+        if (isSubject) {
+          subjectIdx++;
+          testLabel = `Subject Test ${subjectIdx}`;
+        } else {
+          topicIdx++;
+          testLabel = `Topic Test ${topicIdx}`;
+        }
       }
 
       // Look up topic description
       let topicsCovered = t.topicsCovered || t.topics;
+      if (!topicsCovered && isISRO) {
+        topicsCovered = "ISRO Previous Year Question Paper (Computer Science)";
+      }
       if (!topicsCovered && window.PYQ_TOPIC_MAP) {
         topicsCovered = activeTopicMap[bracket] || activeTopicMap[bracket.trim()] || activeTopicMap[rawName];
         if (!topicsCovered) {
@@ -2040,7 +2084,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         }
       }
       if (!topicsCovered) {
-        topicsCovered = isSubject ? `${subj.name} - Full Syllabus` : bracket;
+        topicsCovered = (testType === "Subject") ? `${subj.name} - Full Syllabus` : bracket;
       }
 
       // Check if test is free/unlocked
