@@ -604,12 +604,15 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('2026');
   }
   if (tId === 'cs-gate-pyq') {
-    if (nameUpper.includes('ISRO') || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
+    if (nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper)) || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }
     return true;
   }
   if (tId === 'cse-gate-2027') {
+    if (nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper))) {
+      return true;
+    }
     if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
       return false;
     }

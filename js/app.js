@@ -1428,6 +1428,32 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "ISRO CSE 2011", subject: "isro", comingSoon: true },
   { series: "cse-gate-2027", name: "ISRO CSE 2009", subject: "isro", comingSoon: true },
   { series: "cse-gate-2027", name: "ISRO CSE 2008", subject: "isro", comingSoon: true },
+
+  // GATE CSE (2003-2026)
+  { series: "cse-gate-2027", name: "GATE CSE 2026", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2025", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2024", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2023", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2022", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2021", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2020", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2019", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2018", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2017", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2016", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2015", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2014", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2013", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2012", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2011", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2010", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2009", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2008", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2007", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2006", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2005", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2004", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2003", subject: "gate_pyq", comingSoon: true },
 ];
 
 window.PYQ_CS_SUBJECTS = [
@@ -1556,6 +1582,15 @@ window.PYQ_CS_SUBJECTS = [
     iconBg: "#dcfce7",
     iconColor: "#16a34a",
     regex: /(general aptitude|aptitude|\bga\b)/i
+  },
+  {
+    id: "gate_pyq",
+    name: "GATE(2003-2026)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
+    iconBg: "#e0e7ff",
+    iconColor: "#4f46e5",
+    regex: /(^GATE\s+CSE\s+20\d\d|^GATE\s+20\d\d)/i
   },
   {
     id: "isro",
@@ -1930,7 +1965,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
   } else if (seriesId === "cs-gate-pyq") {
-    (window.PYQ_DEFAULT_TESTS || []).filter(t => t.subject !== "isro").forEach(t => {
+    (window.PYQ_DEFAULT_TESTS || []).filter(t => t.subject !== "isro" && t.subject !== "gate_pyq").forEach(t => {
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
@@ -2008,20 +2043,20 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   const rawTargetSubjects = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_SUBJECTS || []) : (window.PYQ_CS_SUBJECTS || []);
   const targetSubjects = (seriesId === "cse-gate-2027")
     ? rawTargetSubjects
-    : rawTargetSubjects.filter(s => s.id !== "isro");
+    : rawTargetSubjects.filter(s => s.id !== "isro" && s.id !== "gate_pyq");
   const activeTopicMap = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026") ? (window.PYQ_EE_TOPIC_MAP || {}) : (window.PYQ_TOPIC_MAP || {});
   targetSubjects.forEach((subj) => {
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {
-      if (subj.id === "isro" && seriesId !== "cse-gate-2027") return false;
+      if ((subj.id === "isro" || subj.id === "gate_pyq") && seriesId !== "cse-gate-2027") return false;
       if (t.subject === subj.id) return true;
       return subj.regex && subj.regex.test(t.name);
     });
 
     if (!subjTests || subjTests.length === 0) return;
 
-    // Sort tests: For ISRO sort by year descending (latest first); otherwise Topic Tests (TWT) first by number, then Subject Tests (SWT)
-    if (subj.id === "isro") {
+    // Sort tests: For ISRO & GATE PYQ sort by year descending (latest first: 2026 -> 2003); otherwise Topic Tests (TWT) first by number, then Subject Tests (SWT)
+    if (subj.id === "isro" || subj.id === "gate_pyq") {
       subjTests.sort((a, b) => {
         const aYear = parseInt((a.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
         const bYear = parseInt((b.name.match(/\b(20\d\d)\b/) || [0, 0])[1], 10);
@@ -2052,6 +2087,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const rawName = t.name;
       const bracketMatch = rawName.match(/\(([^)]+)\)/);
       const isISRO = subj.id === "isro" || /isro/i.test(rawName);
+      const isGATEPYQ = subj.id === "gate_pyq" || (/^gate\s+cse\s+20\d\d/i.test(rawName) && subj.id !== "c_prog");
 
       let bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
       let testType = "Topic";
@@ -2061,6 +2097,10 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         testLabel = rawName;
         testType = "PYQ";
         bracket = "Scientist/Engineer 'SC' Examination";
+      } else if (isGATEPYQ) {
+        testLabel = rawName;
+        testType = "PYQ";
+        bracket = "Graduate Aptitude Test in Engineering (CS)";
       } else {
         const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
         const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
@@ -2079,6 +2119,9 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       let topicsCovered = t.topicsCovered || t.topics;
       if (!topicsCovered && isISRO) {
         topicsCovered = "ISRO Previous Year Question Paper (Computer Science)";
+      }
+      if (!topicsCovered && isGATEPYQ) {
+        topicsCovered = "GATE Official Previous Year Question Paper (Computer Science)";
       }
       if (!topicsCovered && window.PYQ_TOPIC_MAP) {
         topicsCovered = activeTopicMap[bracket] || activeTopicMap[bracket.trim()] || activeTopicMap[rawName];
