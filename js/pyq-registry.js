@@ -1432,3 +1432,1215 @@ registerTest({
         }
     ]
 });
+
+registerTest({
+    series: "cse-gate-2027",
+    name: "ISRO CSE 2020",
+    date: "may 20, 2026",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The immediate addressing mode can be used for</p> <ol style="list-style-type:decimal" type="1"> <li>Loading internal registers with initial values</li> <li>Perform arithmetic or logical operation on data contained in instructions</li> </ol> <p>Which of the following is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Only \\( 1 \\)</span>`,
+                `<span style="display: inline;">Only \\( 2 \\)</span>`,
+                `<span style="display: inline;">Both \\( 1 \\) and \\( 2 \\)</span>`,
+                `<span style="display: inline;">Immediate mode refers to data in cache</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331331" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Statements associated with registers of a CPU are given. Identify the false statement.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The program counter holds the memory address of the instruction in execution</span>`,
+                `<span style="display: inline;">Only opcode is transferred to the control unit</span>`,
+                `<span style="display: inline;">An instruction in the instruction register consists of the opcode and the operand</span>`,
+                `<span style="display: inline;">The value of the program counter is incremented by \\( 1 \\) once its value has been read to the memory address register</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331334" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following affects the processing power assuming they do not influence each other</p> <ol style="list-style-type:decimal" type="1"> <li>Data bus capability</li> <li>Address scheme</li> <li>Clock speed</li> </ol></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 3 \\) only</span>`,
+                `<span style="display: inline;">\\( 1 \\) and \\( 3 \\) only</span>`,
+                `<span style="display: inline;">\\( 2 \\) and \\( 3 \\) only</span>`,
+                `<span style="display: inline;">\\( 1,2 \\) and \\( 3 \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331336" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Convert the pre-fix expression to in-fix \\( - ^{\\ast} +ABC^{\\ast} – DE+FG \\) </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( (A-B)^{\\ast}C+(D^{\\ast}E)-(F+G) \\)</span>`,
+                `<span style="display: inline;">\\( (A+B)^{\\ast}C-(D-E)^{\\ast}(F+G) \\)</span>`,
+                `<span style="display: inline;">\\( (A+B-C)^{\\ast}(D-E)^{\\ast}(F+G) \\)</span>`,
+                `<span style="display: inline;">\\( (A+B)^{\\ast}C-(D^{\\ast}E)-(F+G) \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331339" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An array of \\( 2 \\) two byte integers is stored in big endian machine in byte addresses as shown below. What will be its storage pattern in little endian machine ? </p> <p> $$ \\begin{array}{c|c}\\text{Address}& \\text{Data}\\\\\\hline0 \\times 104&78\\\\0 \\times 103&56\\\\0 \\times 102&34\\\\0 \\times 101&12\\end{array} $$ </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\begin{array}{c|c}\\text{Address}& \\text{Data}\\\\\\hline0 \\times 104&12\\\\0 \\times 103&56\\\\0 \\times 102&34\\\\0 \\times 101&78 \\\\ \\\\\\end{array} \\)</span>`,
+                `<span style="display: inline;">\\( \\begin{array}{c|c}\\text{Address}& \\text{Data}\\\\\\hline0 \\times 104&12\\\\0 \\times 103&34\\\\0 \\times 102&56\\\\0 \\times 101&78\\\\\\\\\\end{array} \\\\ \\)</span>`,
+                `<span style="display: inline;">\\( \\begin{array}{c|c}\\text{Address}& \\text{Data}\\\\\\hline0 \\times 104&56\\\\0 \\times 103&78\\\\0 \\times 102&12\\\\0 \\times 101&34\\\\\\\\\\end{array} \\\\ \\)</span>`,
+                `<span style="display: inline;">\\( \\begin{array}{c|c}\\text{Address}& \\text{Data}\\\\\\hline0 \\times 104&56\\\\0 \\times 103&12\\\\0 \\times 102&78\\\\0 \\times 101&34\\end{array} \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331434" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A non-pipelined CPU has \\( 12 \\) general purpose registers \\( (R0,R1,R2, \\dots ,R12) \\). Following operations are supported </p> <ul> <li> \\( \\begin{array}{ll} \\text{ADD&nbsp;Ra,&nbsp;Rb,&nbsp;Rr} & \\text{Add Ra&nbsp;to Rb&nbsp;and store the result in Rr} \\end{array} \\) </li> <li> \\( \\begin{array}{ll} \\text{MUL Ra,&nbsp;Rb,&nbsp;Rr} & \\text{Multiply Ra&nbsp;to Rb&nbsp;and store the result in Rr} \\end{array} \\) </li> </ul> <p> \\( \\text{MUL} \\) operation takes two clock cycles, \\( \\text{ADD} \\) takes one clock cycle. </p> <p>Calculate minimum number of clock cycles required to compute the value of the expression \\( XY+XYZ+YZ \\). The variable \\( X,Y,Z \\) are initially available in registers \\( R0,R1 \\) and \\( R2 \\) and contents of these registers must not be modified. </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 6 \\)</span>`,
+                `<span style="display: inline;">\\( 7 \\)</span>`,
+                `<span style="display: inline;">\\( 8 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331437" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a \\( 5 \\)- segment pipeline with a clock cycle time \\( 20 \\) ns in each sub operation. Find out the approximate speed-up ratio between pipelined and non-pipelined system to execute \\( 100 \\) instructions. (if an average, every five cycles, a bubble due to data hazard has to be introduced in the pipeline) </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 4.03 \\)</span>`,
+                `<span style="display: inline;">\\( 4.81 \\)</span>`,
+                `<span style="display: inline;">\\( 4.17 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331285" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a \\( 32 \\)- bit processor which supports \\( 70 \\) instructions. Each instruction is \\( 32 \\) bit long and has \\( 4 \\) fields namely opcode, two register identifiers and an immediate operand of unsigned integer type. Maximum value of the immediate operand that can be supported by the processor is \\( 8191 \\). How many registers the processor has? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 32 \\)</span>`,
+                `<span style="display: inline;">\\( 64 \\)</span>`,
+                `<span style="display: inline;">\\( 128 \\)</span>`,
+                `<span style="display: inline;">\\( 16 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331291" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a \\( 8 \\)-bit ripple carry adder using identical full adders, each full adder takes \\( 34 \\) ns for computing sum. If the time taken for \\( 8 \\)-bit addition is \\( 90 \\) ns, find time taken by each full adder to find carry. </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 6 \\) ns</span>`,
+                `<span style="display: inline;">\\( 7 \\) ns</span>`,
+                `<span style="display: inline;">\\( 10 \\) ns</span>`,
+                `<span style="display: inline;">\\( 8 \\) ns</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331294" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Following Multiplexer circuit is equivalent to</p> <p><img alt="" height="218" src="images/isro-cse-2020/q10_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="326"/></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Sum equation of full adder</span>`,
+                `<span style="display: inline;">Carry equation of full adder</span>`,
+                `<span style="display: inline;">Borrow equation for full subtractor</span>`,
+                `<span style="display: inline;">Difference equation of a full subtractor</span>`
+            ],
+            answer: "A;D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331299" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Minimum number of NAND gates required to implement the following binary equation</p> <p> \\( Y = (\\overline{A}+\\overline{B})(C+D) \\) </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 4 \\)</span>`,
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 3 \\)</span>`,
+                `<span style="display: inline;">\\( 6 \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331369" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If \\( ABCD \\) is a \\( 4 \\)-bit binary number, then what is the code generated by the following circuit? </p> <p><img alt="" height="143" src="images/isro-cse-2020/q12_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="210"/></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">BCD code</span>`,
+                `<span style="display: inline;">Gray code</span>`,
+                `<span style="display: inline;">\\( 8421 \\) code</span>`,
+                `<span style="display: inline;">Excess- \\( 3 \\) code</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331372" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The number of tokens in the following C code segment is</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="kwd">switch</span><span class="pun">(</span><span class="pln">inputvalue</span><span class="pun">)</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> b </span><span class="pun">=</span><span class="pln">c</span><span class="pun">*</span><span class="pln">d</span><span class="pun">;</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">default</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> b </span><span class="pun">=</span><span class="pln">b</span><span class="pun">++;</span><span class="pln"> </span><span class="kwd">break</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li></ol></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 27 \\)</span>`,
+                `<span style="display: inline;">\\( 29 \\)</span>`,
+                `<span style="display: inline;">\\( 26 \\)</span>`,
+                `<span style="display: inline;">\\( 24 \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331374" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a two-pass assembler, resolution of subroutine calls and inclusion of labels in the symbol table is done during</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">second pass</span>`,
+                `<span style="display: inline;">first pass and second pass respectively</span>`,
+                `<span style="display: inline;">second pass and first pass respectively</span>`,
+                `<span style="display: inline;">first pass</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331377" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A stack organized computer is characterised by instructions with</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">indirect addressing</span>`,
+                `<span style="display: inline;">direct addressing</span>`,
+                `<span style="display: inline;">zero addressing</span>`,
+                `<span style="display: inline;">index addressing</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331467" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A computer which issues instructions in order, has only \\( 2 \\) registers and \\( 3 \\) opcodes \\( \\text{ADD, SUB} \\) and \\( \\text{MOV} \\). Consider \\( 2 \\) different implementations of the following basic block : </p> <p> $$ \\begin{array}{l|l}\\text{Case&nbsp;1} & \\text{Case&nbsp;2} \\\\ \\hline t1=a+b;&t2=c+d;\\\\t2=c+d;&t3=e-t2;\\\\t3=e-t2;&t1=a+b;\\\\t4=t1-t2;&t4=t1-t2;\\end{array} $$ </p> <p>Assume that all operands are initially in memory. Final value of computation also has to reside in memory. Which one is better in terms of memory accesses and by how many \\( \\text{MOV} \\) instructions? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\text{Case 2,2} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{Case 2,3} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{Case 1,2} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{Case 1,3} \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331470" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which one indicates a technique of building cross compilers?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Beta cross</span>`,
+                `<span style="display: inline;">Canadian cross</span>`,
+                `<span style="display: inline;">Mexican cross</span>`,
+                `<span style="display: inline;">X-cross</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331473" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a \\( 2 \\)-dimensional array \\( x \\) with \\( 10 \\) rows and \\( 4 \\) columns, with each element storing a value equivalent to the product of row number and column number. The array is stored in row-major format. If the first element \\( x[0][0] \\) occupies the memory location with address \\( 1000 \\) and each element occupies only one memory location, which all locations (in decimal) will be holding a value of \\( 10 \\)? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 1018,1019 \\)</span>`,
+                `<span style="display: inline;">\\( 1022,1041 \\)</span>`,
+                `<span style="display: inline;">\\( 1013,1014 \\)</span>`,
+                `<span style="display: inline;">\\( 1000,1399 \\)</span>`
+            ],
+            answer: "N/A",
+            isMTA: true,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331475" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the in-order successor of \\( 15 \\) in the given binary search tree? </p> <p><img alt="" height="216" src="images/isro-cse-2020/q19_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="237"/></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 18 \\)</span>`,
+                `<span style="display: inline;">\\( 6 \\)</span>`,
+                `<span style="display: inline;">\\( 17 \\)</span>`,
+                `<span style="display: inline;">\\( 20 \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331322" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The minimum height of an AVL tree with \\( n \\) nodes is </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\text{Ceil }&nbsp;(\\log_2(n+1)) \\)</span>`,
+                `<span style="display: inline;">\\( 1.44\\ \\log_2n \\)</span>`,
+                `<span style="display: inline;">\\( \\text{Floor } (\\log_2(n+1)) \\)</span>`,
+                `<span style="display: inline;">\\( 1.64\\ \\log_2n \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331324" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The master theorem</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">assumes the subproblems are unequal sizes</span>`,
+                `<span style="display: inline;">can be used if the subproblems are of equal size</span>`,
+                `<span style="display: inline;">cannot be used for divide and conquer algorithms</span>`,
+                `<span style="display: inline;">cannot be used for asymptotic complexity analysis</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331325" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Raymonds tree based algorithm ensures</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">no starvation, but deadlock may occur in rare cases</span>`,
+                `<span style="display: inline;">no deadlock, but starvation may occur</span>`,
+                `<span style="display: inline;">neither deadlock nor starvation can occur</span>`,
+                `<span style="display: inline;">deadlock may occur in cases where the process is already starved</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331328" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Databases</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The post-order traversal of binary tree is \\( \\text{ACEDBHIGF} \\). The pre-order traversal is </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\text{A B C D E F G H I} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{F B A D C E G I H} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{F A B C D E G H I} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{A B D C E F G I H} \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331270" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In linear hashing, if blocking factor \\( bfr \\), loading factor \\( i \\) and file buckets \\( N \\) are known, the number of records will be </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( cr= i+bfr+N \\)</span>`,
+                `<span style="display: inline;">\\( r=i-bfr-N \\)</span>`,
+                `<span style="display: inline;">\\( r=i+bfr-N \\)</span>`,
+                `<span style="display: inline;">\\( r=i ^{\\ast} bfr ^{\\ast} N \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331276" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is compaction refers to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">a technique for overcoming internal fragmentation</span>`,
+                `<span style="display: inline;">a paging technique</span>`,
+                `<span style="display: inline;">a technique for overcoming external fragmentation</span>`,
+                `<span style="display: inline;">a technique for compressing the data</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331280" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The operating system and the other processes are protected from being modified by an already running process because</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">they run at different time instants and not in parallel</span>`,
+                `<span style="display: inline;">they are in different logical addresses</span>`,
+                `<span style="display: inline;">they use a protection algorithm in the scheduler</span>`,
+                `<span style="display: inline;">every address generated by the CPU is being checked against the relocation and limit parameters</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331282" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following algorithms defines time quantum?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">shortest job scheduling algorithm</span>`,
+                `<span style="display: inline;">round robin scheduling algorithm</span>`,
+                `<span style="display: inline;">priority scheduling algorithm</span>`,
+                `<span style="display: inline;">multilevel queue scheduling algorithm</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331249" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Dispatch latency is defined as</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">the speed of dispatching a process from running to the ready state</span>`,
+                `<span style="display: inline;">the time of dispatching a process from running to ready state and keeping the CPU idle</span>`,
+                `<span style="display: inline;">the time to stop one process and start running another one</span>`,
+                `<span style="display: inline;">none of these</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331250" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An aid to determine the deadlock occurrence is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">resource allocation graph</span>`,
+                `<span style="display: inline;">starvation graph</span>`,
+                `<span style="display: inline;">inversion graph</span>`,
+                `<span style="display: inline;">none of the above</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331251" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following page reference string.</p> <p> \\( 1\\ 2\\ 3\\ 4\\ 2\\ 1\\ 5\\ 6\\ 2\\ 1\\ 2\\ 3\\ 7\\ 6\\ 3\\ 2\\ 1\\ 2\\ 3\\ 6\\ \\) </p> <p>What are the minimum number of frames required to get a single page fault for the above sequence assuming LRU replacement strategy?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 7 \\)</span>`,
+                `<span style="display: inline;">\\( 4 \\)</span>`,
+                `<span style="display: inline;">\\( 6 \\)</span>`,
+                `<span style="display: inline;">\\( 5 \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331254" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Three CPU-bound tasks, with execution times of \\( 15,12 \\) and \\( 5 \\) time units respectively arrive at times \\( 0,t \\) and \\( 8 \\), respectively. If the operating system implements a shortest remaining time first scheduling algorithm, what should be the value of \\( t \\) to have \\( 4 \\) context switches? Ignore the context switches at time \\( 0 \\) and at the end. </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 0<t<3 \\)</span>`,
+                `<span style="display: inline;">\\( t=0 \\)</span>`,
+                `<span style="display: inline;">\\( t<=3 \\)</span>`,
+                `<span style="display: inline;">\\( 3<t<8 \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331255" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p> \\( G \\) is an undirected graph with vertex set \\( \\{v1, \\ v2, \\ v3, \\ v4, \\ v5, \\ v6, \\ v7\\} \\) and edge set \\( \\{v1v2,\\ v1v3,\\ v1v4\\ ,v2v4,\\ v2v5,\\ v3v4,\\ v4v5,\\ v4v6,\\ v5v6,\\ v6v7\\ \\} \\) . A breadth first search of the graph is performed with \\( v1 \\) as the root node. Which of the following is a tree edge? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( v2v4 \\)</span>`,
+                `<span style="display: inline;">\\( v1v4 \\)</span>`,
+                `<span style="display: inline;">\\( v4v5 \\)</span>`,
+                `<span style="display: inline;">\\( v3v4 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331350" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If an array \\( A \\) contains the items \\( 10,4,7,23,67,12 \\) and \\( 5 \\) in that order, what will be the resultant array \\( A \\) after third pass of insertion sort? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 67,12,10,5,4,7,23 \\)</span>`,
+                `<span style="display: inline;">\\( 4,7,10,23,67,12,5 \\)</span>`,
+                `<span style="display: inline;">\\( 4,5,7,67,10,12,23 \\)</span>`,
+                `<span style="display: inline;">\\( 10,7,4,67,23,12,5 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331354" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Huffman tree is constructed for the following data : \\( \\{A,B,C,D,E\\} \\) with frequency \\( \\{0.17,0.11,0.24,0.33\\ \\text{and} \\ 0.15 \\} \\) respectively. \\( 100\\ 00\\ 01101 \\) is decoded as </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( BACE \\)</span>`,
+                `<span style="display: inline;">\\( CADE \\)</span>`,
+                `<span style="display: inline;">\\( BAD \\)</span>`,
+                `<span style="display: inline;">\\( CADD \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331358" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given the grammar</p> <ul> <li> \\( s \\rightarrow T ^{\\ast} S\\ \\mid T \\) </li> <li> \\( T \\rightarrow U+T\\ \\mid U \\) </li> <li> \\( U \\rightarrow a&nbsp; \\mid b \\) </li> </ul> <p>Which of the following statements is wrong?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Grammar is not ambiguous</span>`,
+                `<span style="display: inline;">Priority of \\( + \\) over \\( ^{\\ast} \\) is ensured</span>`,
+                `<span style="display: inline;">Right to left evaluation of \\( ^{\\ast} \\) and \\( + \\) happens</span>`,
+                `<span style="display: inline;">None of these</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331360" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the complexity of the following code?</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="pln">sum</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pln">    </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">i</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;=</span><span class="pln">n</span><span class="pun">;</span><span class="pln">i</span><span class="pun">*=</span><span class="lit">2</span><span class="pun">)</span></li><li class="L2"><span class="pln">         </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">j</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><span class="pln">j</span><span class="pun">&lt;=</span><span class="pln">n</span><span class="pun">;</span><span class="pln">j</span><span class="pun">++)</span></li><li class="L3"><span class="pln">            sum</span><span class="pun">++;</span></li></ol></pre> <p>Which of the following is not a valid string?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( O(n^2) \\)</span>`,
+                `<span style="display: inline;">\\( O(n\\log\\ n) \\)</span>`,
+                `<span style="display: inline;">\\( O(n) \\)</span>`,
+                `<span style="display: inline;">\\( O(n\\log\\ n\\log\\ n) \\)</span>`
+            ],
+            answer: "N/A",
+            isMTA: true,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331364" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Context free languages are closed under</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">union, intersection</span>`,
+                `<span style="display: inline;">union, kleene closure</span>`,
+                `<span style="display: inline;">intersection, complement</span>`,
+                `<span style="display: inline;">complement, kleene closure</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331440" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Theory of Computation</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Every subset of a regular set is regular</span>`,
+                `<span style="display: inline;">Every finite subset of non-regular set is regular</span>`,
+                `<span style="display: inline;">The union of two non regular set is not regular</span>`,
+                `<span style="display: inline;">Infinite union of finite set is regular</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331442" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Theory of Computation</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The language which is generated by the grammar \\( S \\rightarrow aSa \\mid bSb \\mid a \\mid b \\) over the alphabet of \\( \\{a,b\\} \\) is the set of </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Strings that begin and end with the same symbol</span>`,
+                `<span style="display: inline;">All odd and even length palindromes</span>`,
+                `<span style="display: inline;">All odd length palindromes</span>`,
+                `<span style="display: inline;">All even length palindromes</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331445" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Theory of Computation</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following classes of languages can validate an \\( \\text{IPv4} \\) address in dotted decimal format? It is to be ensured that the decimal values lie between \\( 0 \\) and \\( 255 \\). </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">RE and higher</span>`,
+                `<span style="display: inline;">CFG and higher</span>`,
+                `<span style="display: inline;">CSG and higher</span>`,
+                `<span style="display: inline;">Recursively enumerable language</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331449" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Theory of Computation</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Minimum number of states required in DFA accepting binary strings not ending in \\( \\text{“101”} \\) is </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 3 \\)</span>`,
+                `<span style="display: inline;">\\( 4 \\)</span>`,
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 6 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331452" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Theory of Computation</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is a type of a out-of-order execution, with the reordering done by a compiler</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">loop unrolling</span>`,
+                `<span style="display: inline;">dead code elimination</span>`,
+                `<span style="display: inline;">strength reduction</span>`,
+                `<span style="display: inline;">software pipelining</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331453" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is an efficient method of cache updating?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Snoopy writes</span>`,
+                `<span style="display: inline;">Write through</span>`,
+                `<span style="display: inline;">Write within</span>`,
+                `<span style="display: inline;">Buffered write</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331409" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a columnar transportation cipher, the plain text is “the tomato is a plant in the night shade family”, keyword is “ \\( \\text{TOMATO} \\)”. The cipher text is </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\text{”TINESAX / EOAHTFX / HTLTHEY / MAIIAIX / TAPNGDL / OSTNHMX”} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{”TINESAX / EOAHTFX / MAIIAIX / HTLTHEY / TAPNGDL / OSTNHMX”} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{”TINESAX / EOAHTFX / HTLTHEY / MAIIAIX / OSTNHMX / TAPNGDL”} \\)</span>`,
+                `<span style="display: inline;">\\( \\text{”EOAHTFX / TINESAX / HTLTHEY / MAIIAIX / TAPNGDL / OSTNHMX”} \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331415" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Avalanche effect in cryptography refers</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Large changes in cipher text when the keyword is changed minimally</span>`,
+                `<span style="display: inline;">Large changes in cipher text when the plain text is changed</span>`,
+                `<span style="display: inline;">Large Impact of keyword change to length of the cipher text</span>`,
+                `<span style="display: inline;">None of the above</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331416" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A magnetic disk has \\( 100 \\) cylinders, each with \\( 10 \\) tracks of \\( 10 \\) sectors. If each sector contains \\( 128 \\) bytes, what is the maximum capacity of the disk in kilobytes? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 1,280,000 \\)</span>`,
+                `<span style="display: inline;">\\( 1280 \\)</span>`,
+                `<span style="display: inline;">\\( 1250 \\)</span>`,
+                `<span style="display: inline;">\\( 128,000 \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331420" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>How many total bits are required for a direct-mapped cache with \\( 128 \\) KB of data and \\( 1 \\) word block size, assuming a \\( 32 \\)-bit address and \\( 1 \\) word size of \\( 4 \\) bytes? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 2 \\) Mbits</span>`,
+                `<span style="display: inline;">\\( 1.7 \\) Mbits</span>`,
+                `<span style="display: inline;">\\( 2.5 \\) Mbits</span>`,
+                `<span style="display: inline;">\\( 1.5 \\) Mbits</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331421" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Properties of \\( \\text{‘DELETE’} \\) and \\( \\text{‘TRUNCATE’} \\) commands indicate that </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">After the execution of \\( \\text{‘TRUNCATE’} \\) operation, \\( \\text{COMMIT} \\), and \\( \\text{ROLLBACK} \\) statements cannot be performed to retrieve the lost data, while \\( \\text{‘DELETE’} \\) allow it</span>`,
+                `<span style="display: inline;">After the execution of \\( \\text{‘DELETE’} \\) and \\( \\text{‘TRUNCATE’} \\) operation retrieval is easily possible for the lost data</span>`,
+                `<span style="display: inline;">After the execution of \\( \\text{‘DELETE’} \\) operation, \\( \\text{COMMIT} \\) and \\( \\text{ROLLBACK} \\) statements can be performed to retrieve the lost data, while \\( \\text{TRUNCATE} \\) do not allow it</span>`,
+                `<span style="display: inline;">After the execution of \\( \\text{‘DELETE’} \\) and \\( \\text{‘TRUNCATE’} \\) operation no retrieval is possible for the lost data</span>`
+            ],
+            answer: "A;C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331428" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Databases</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>One instruction tries to write an operand before it is written by previous instruction. This may lead to a dependency called</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">True dependency</span>`,
+                `<span style="display: inline;">Anti-dependency</span>`,
+                `<span style="display: inline;">Output dependency</span>`,
+                `<span style="display: inline;">Control Hazard</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331391" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">CO & Architecture</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If every non-key attribute functionally dependent on the primary key, then the relation will be in</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">First normal form</span>`,
+                `<span style="display: inline;">Second normal form</span>`,
+                `<span style="display: inline;">Third normal form</span>`,
+                `<span style="display: inline;">Fourth Normal form</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331394" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Databases</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The SQL query</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="pln">SELECT columns</span></li><li class="L1"><span class="pln">FROM </span><span class="typ">TableA</span></li><li class="L2"><span class="pln">RIGHT OUTER JOIN </span><span class="typ">TableB</span></li><li class="L3"><span class="pln">ON A</span><span class="pun">.</span><span class="pln">columnName </span><span class="pun">=</span><span class="pln"> B</span><span class="pun">.</span><span class="pln">columnName</span></li><li class="L4"><span class="pln">WHERE A</span><span class="pun">.</span><span class="pln">columnName IS NULL</span></li></ol></pre> <p>returns the following:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">All rows in Table \\( \\text{B} \\), which meets equality condition above and, none from Table \\( \\text{A} \\) which meets the condition.</span>`,
+                `<span style="display: inline;">All rows in Table \\( \\text{A} \\), which meets equality condition above and none from Table \\( \\text{B} \\), which meets the condition.</span>`,
+                `<span style="display: inline;">All rows in Table \\( \\text{B} \\), which meets the equality condition</span>`,
+                `<span style="display: inline;">All rows in Table \\( \\text{A} \\), which meets the equality condition</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331400" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Databases</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>To send same bit sequence, \\( \\text{NRZ} \\) encoding require </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Same clock frequency as Manchester encoding</span>`,
+                `<span style="display: inline;">Half the clock frequency as Manchester encoding</span>`,
+                `<span style="display: inline;">Twice the clock frequency as Manchester encoding</span>`,
+                `<span style="display: inline;">A clock frequency which depend on number of zeroes and ones in the bit sequence</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331403" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The persist timer is used in TCP to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">To detect crashes from the other end of the connection</span>`,
+                `<span style="display: inline;">To enable retransmission</span>`,
+                `<span style="display: inline;">To avoid deadlock condition</span>`,
+                `<span style="display: inline;">To timeout \\( \\textsf{FIN_Wait1} \\) condition</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331405" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Checksum field in TCP header is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">ones complement of sum of header and data in bytes</span>`,
+                `<span style="display: inline;">ones complement of sum of header, data and pseudo header in \\( 16 \\) bit words</span>`,
+                `<span style="display: inline;">dropped from \\( \\textsf{IPv6} \\) header format</span>`,
+                `<span style="display: inline;">better than \\( \\textsf{md5} \\) or \\( \\textsf{sh1} \\) methods</span>`
+            ],
+            answer: "B;C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331478" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If \\( x+2y=30 \\), then \\( \\left(\\dfrac{2y}{5}+\\dfrac{x}{3} \\right) + \\left (\\dfrac{x}{5}+\\dfrac{2y}{3} \\right) \\) will be equal to </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 8 \\)</span>`,
+                `<span style="display: inline;">\\( 16 \\)</span>`,
+                `<span style="display: inline;">\\( 18 \\)</span>`,
+                `<span style="display: inline;">\\( 20 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331481" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Quantitative Aptitude</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>For the distributions given below:</p> <p><img alt="" src="images/isro-cse-2020/q56_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="400"/><img alt="" src="images/isro-cse-2020/q56_2.png" style="max-width: 100%; display: block; margin: 10px auto;" width="400"/></p> <p>Which of the following is correct for the above distributions?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Standard deviation of \\( A \\) is significantly lower than standard deviation of \\( B \\)</span>`,
+                `<span style="display: inline;">Standard deviation of \\( A \\) is slightly lower than standard deviation of \\( B \\)</span>`,
+                `<span style="display: inline;">Standard deviation of \\( A \\) is same as standard deviation of \\( B \\)</span>`,
+                `<span style="display: inline;">Standard deviation of \\( A \\) is significantly higher than standard deviation of \\( B \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331489" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Probability</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The hardware implementation which provides mutual exclusion is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Semaphores</span>`,
+                `<span style="display: inline;">Test and set instructions</span>`,
+                `<span style="display: inline;">Both options</span>`,
+                `<span style="display: inline;">None of the options</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331484" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Operating System</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Remote Procedure Calls are used for</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">communication between two processes remotely different from each other on the same system</span>`,
+                `<span style="display: inline;">communication between two processes on the same system</span>`,
+                `<span style="display: inline;">communication between two processes on the separate systems</span>`,
+                `<span style="display: inline;">none of the above</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331457" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Computer Networks</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following recursive C function that takes two arguments</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> rer</span><span class="pun">(</span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">unsigned</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> r</span><span class="pun">){</span></li><li class="L1"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">n</span><span class="pun">&gt;</span><span class="lit">0</span><span class="pun">)</span><span class="kwd">return</span><span class="pun">(</span><span class="pln">n</span><span class="pun">%</span><span class="pln">r </span><span class="pun">+</span><span class="pln"> rer</span><span class="pun">(</span><span class="pln">n</span><span class="pun">/</span><span class="pln">r</span><span class="pun">,</span><span class="pln">r</span><span class="pun">));</span></li><li class="L2"><span class="pln">    </span><span class="kwd">else</span><span class="pln"> retturn </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li></ol></pre> <p>What is the return value of the function \\( rer \\) when it is called as \\( rer(513,2) \\)? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 9 \\)</span>`,
+                `<span style="display: inline;">\\( 8 \\)</span>`,
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 2 \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331460" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A given grammar is called ambiguous if</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">two or more productions have the same non-terminal on the left hand side</span>`,
+                `<span style="display: inline;">a derivation tree has more than one associated sentence</span>`,
+                `<span style="display: inline;">there is a sentence with more than one derivation tree corresponding to it</span>`,
+                `<span style="display: inline;">brackets are not present in the grammar</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331462" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the output of the code given below?</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="com"># include&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> name</span><span class="pun">[]=</span><span class="str">"satellites"</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> len</span><span class="pun">;</span></li><li class="L5"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">;</span></li><li class="L6"><span class="pln">    len</span><span class="pun">=</span><span class="pln"> strlen</span><span class="pun">(</span><span class="pln">name</span><span class="pun">);</span></li><li class="L7"><span class="pln">    size </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">sizeof</span><span class="pun">(</span><span class="pln">name</span><span class="pun">);</span></li><li class="L8"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">len</span><span class="pun">*</span><span class="pln">size</span><span class="pun">);</span></li><li class="L9"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L0"><span class="pun">}</span></li></ol></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 100 \\)</span>`,
+                `<span style="display: inline;">\\( 110 \\)</span>`,
+                `<span style="display: inline;">\\( 40 \\)</span>`,
+                `<span style="display: inline;">\\( 44 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331463" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is output of the following ‘C’ code assuming it runs on a byte addressed little endian machine?</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr</span><span class="pun">;</span></li><li class="L5"><span class="pln">    x</span><span class="pun">=</span><span class="lit">622</span><span class="pun">,</span><span class="lit">100</span><span class="pun">,</span><span class="lit">101</span><span class="pun">;</span></li><li class="L6"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,(*(</span><span class="kwd">char</span><span class="pln"> </span><span class="pun">*)&amp;</span><span class="pln">x</span><span class="pun">)*(</span><span class="pln">x</span><span class="pun">%</span><span class="lit">3</span><span class="pun">));</span></li><li class="L7"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li></ol></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 622 \\)</span>`,
+                `<span style="display: inline;">\\( 311 \\)</span>`,
+                `<span style="display: inline;">\\( 22 \\)</span>`,
+                `<span style="display: inline;">\\( 110 \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331225" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the output in a \\( 32 \\) bit machine with \\( 32 \\) bit compiler? </p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="pln">rer</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="pln">ptr2</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">**</span><span class="pln">ptr1</span><span class="pun">)</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ii</span><span class="pun">;</span></li><li class="L4"><span class="pln">    ii</span><span class="pun">=*</span><span class="pln">ptr2</span><span class="pun">;</span></li><li class="L5"><span class="pln">    </span><span class="pun">*</span><span class="pln">ptr2</span><span class="pun">=*</span><span class="pln">ptr1</span><span class="pun">;</span></li><li class="L6"><span class="pln">    </span><span class="pun">*</span><span class="pln">ptr1</span><span class="pun">=</span><span class="pln">ii</span><span class="pun">;</span></li><li class="L7"><span class="pln">    </span><span class="pun">**</span><span class="pln">ptr1</span><span class="pun">*=**</span><span class="pln">ptr2</span><span class="pun">;</span></li><li class="L8"><span class="pln">    </span><span class="pun">**</span><span class="pln">ptr2</span><span class="pun">+=**</span><span class="pln">ptr1</span><span class="pun">;</span></li><li class="L9"><span class="pun">}</span></li><li class="L0"><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L1"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> var1</span><span class="pun">=</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> var2</span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span></li><li class="L2"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">ptr1</span><span class="pun">=&amp;</span><span class="pln">var1</span><span class="pun">,*</span><span class="pln">ptr2</span><span class="pun">=&amp;</span><span class="pln">var2</span><span class="pun">;</span></li><li class="L3"><span class="pln">    rer</span><span class="pun">(&amp;</span><span class="pln">ptr1</span><span class="pun">,&amp;</span><span class="pln">ptr2</span><span class="pun">);</span></li><li class="L4"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d %d"</span><span class="pun">,</span><span class="pln">var2</span><span class="pun">,</span><span class="pln">var1</span><span class="pun">);</span></li><li class="L5"><span class="pun">}</span></li></ol></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 60,70 \\)</span>`,
+                `<span style="display: inline;">\\( 50,50 \\)</span>`,
+                `<span style="display: inline;">\\( 50,60 \\)</span>`,
+                `<span style="display: inline;">\\( 60,50 \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331226" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Regression testing is primarily related to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Functional testing</span>`,
+                `<span style="display: inline;">Development testing</span>`,
+                `<span style="display: inline;">Data flow testing</span>`,
+                `<span style="display: inline;">Maintenance testing</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331257" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">IS&Software Engineering</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Of the following sort algorithms, which has execution time that is least dependant on initial ordering of the input?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Insertion sort</span>`,
+                `<span style="display: inline;">Quick sort</span>`,
+                `<span style="display: inline;">Merge sort</span>`,
+                `<span style="display: inline;">Selection sort</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331259" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following circuit compares two \\( 2 \\)-bit binary numbers, \\( X \\) and \\( Y \\) represented by \\( X_1X_0 \\) and \\( Y_1Y_0 \\) respectively. ( \\( X_0 \\) and \\( Y_0 \\) represent Least Significant Bits) </p> <p><img alt="" height="156" src="images/isro-cse-2020/q66_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="209"/></p> <p>Under what conditions \\( Z \\) will be \\( 1 \\)? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( X>Y \\)</span>`,
+                `<span style="display: inline;">\\( X<Y \\)</span>`,
+                `<span style="display: inline;">\\( X=Y \\)</span>`,
+                `<span style="display: inline;">\\( X!=Y \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331492" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the availability of the software with the following reliability figures</p> <p>Mean Time Between Failures (MTBF) is \\( 20 \\) days </p> <p>Mean Time To Repair (MTTR) is \\( 20 \\) hours </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 90\\% \\)</span>`,
+                `<span style="display: inline;">\\( 96\\% \\)</span>`,
+                `<span style="display: inline;">\\( 24\\% \\)</span>`,
+                `<span style="display: inline;">\\( 50\\% \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331265" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">IS&Software Engineering</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the defect rate for Six sigma?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 1.0 \\) defect per million lines of code</span>`,
+                `<span style="display: inline;">\\( 1.4 \\) defects per million lines of code</span>`,
+                `<span style="display: inline;">\\( 3.0 \\) defects per million lines of code</span>`,
+                `<span style="display: inline;">\\( 3.4 \\) defects per million lines of code</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331267" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">IS&Software Engineering</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following pseudo-code</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="pln">I</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> J</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> K</span><span class="pun">=</span><span class="lit">8</span><span class="pun">;</span></li><li class="L1"><span class="kwd">while</span><span class="pun">(</span><span class="pln">I</span><span class="pun">&lt;</span><span class="pln">K</span><span class="pun">-</span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="com">//while-1</span></li><li class="L2"><span class="pun">{</span></li><li class="L3"><span class="pln">     J</span><span class="pun">=</span><span class="pln">J</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">     </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">J</span><span class="pun">&lt;</span><span class="pln">K</span><span class="pun">)</span><span class="pln"> </span><span class="com">//while-2</span></li><li class="L5"><span class="pln">     </span><span class="pun">{</span><span class="pln"> </span></li><li class="L6"><span class="pln">         </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">x</span><span class="pun">[</span><span class="pln">I</span><span class="pun">]&lt;</span><span class="pln">x</span><span class="pun">[</span><span class="pln">J</span><span class="pun">])</span></li><li class="L7"><span class="pln">         </span><span class="pun">{</span></li><li class="L8"><span class="pln">             temp </span><span class="pun">=</span><span class="pln"> x</span><span class="pun">[</span><span class="pln">I</span><span class="pun">];</span></li><li class="L9"><span class="pln">             x</span><span class="pun">[</span><span class="pln">I</span><span class="pun">]=</span><span class="pln">x</span><span class="pun">[</span><span class="pln">J</span><span class="pun">];</span></li><li class="L0"><span class="pln">             x</span><span class="pun">[</span><span class="pln">J</span><span class="pun">]=</span><span class="pln">temp</span><span class="pun">;</span></li><li class="L1"><span class="pln">         </span><span class="pun">}</span></li><li class="L2"><span class="pln">     </span><span class="pun">}</span><span class="com">// end of while-2</span></li><li class="L3"><span class="pln">     I</span><span class="pun">=</span><span class="pln">I</span><span class="pun">+</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span><span class="com">// end of while-1</span></li></ol></pre> <p>The cyclomatic complexity of the above is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 3 \\)</span>`,
+                `<span style="display: inline;">\\( 2 \\)</span>`,
+                `<span style="display: inline;">\\( 4 \\)</span>`,
+                `<span style="display: inline;">\\( 1 \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331343" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">IS&Software Engineering</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a class definition with \\( 10 \\) methods, to make the class maximally cohesive, number of direct and indirect connections required among the methods are </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 90,0 \\)</span>`,
+                `<span style="display: inline;">\\( 45,0 \\)</span>`,
+                `<span style="display: inline;">\\( 10,10 \\)</span>`,
+                `<span style="display: inline;">\\( 45,45 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331344" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">IS&Software Engineering</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Of the following, which best approximates the ratio of the number of nonterminal nodes in the total number of nodes in a complete \\( K \\)-ary tree of depth \\( N \\) ? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 1/N \\)</span>`,
+                `<span style="display: inline;">\\( N-1/N \\)</span>`,
+                `<span style="display: inline;">\\( 1/K \\)</span>`,
+                `<span style="display: inline;">\\( K-1/K \\)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331348" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A stack is implemented with an array of \\( ’A[0...N-1]’ \\) and a variable ‘ \\( pos \\)’. The push and pop operations are defined by the following code. </p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="pln">push </span><span class="pun">(</span><span class="pln">x</span><span class="pun">)</span></li><li class="L1"><span class="pln">    A</span><span class="pun">[</span><span class="pln">pos</span><span class="pun">]</span><span class="pln"> </span><span class="pun">&lt;-</span><span class="pln"> x</span></li><li class="L2"><span class="pln">    pos </span><span class="pun">&lt;-</span><span class="pln"> pos </span><span class="pun">-</span><span class="lit">1</span></li><li class="L3"><span class="kwd">end</span><span class="pln"> push</span></li><li class="L4"><span class="pln">pop</span><span class="pun">()</span></li><li class="L5"><span class="pln">    pos </span><span class="pun">&lt;-</span><span class="pln"> pos</span><span class="pun">+</span><span class="lit">1</span></li><li class="L6"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">pos</span><span class="pun">]</span></li><li class="L7"><span class="kwd">end</span><span class="pln"> pop</span></li></ol></pre> <p>Which of the following will initialize an empty stack with capacity \\( N \\) for the above implementation​​​ </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( pos \\leftarrow -1 \\)</span>`,
+                `<span style="display: inline;">\\( pos\\leftarrow 0 \\)</span>`,
+                `<span style="display: inline;">\\( pos\\leftarrow 1 \\)</span>`,
+                `<span style="display: inline;">\\( pos\\leftarrow N-1 \\)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331311" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Data Structures</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given that</p> <p> \\( B(a) \\) means “ \\( a \\) is a bear” </p> <p> \\( F(a) \\) means “ \\( a \\) is a fish” and </p> <p> \\( E(a,b) \\) means “ \\( a \\) eats \\( b \\)” </p> <p>Then what is the best meaning of</p> <p> \\( \\forall x [F(x) \\to \\forall y(E(y,x)\\rightarrow b(y))] \\) </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Every fish is eaten by some bear</span>`,
+                `<span style="display: inline;">Bears eat only fish</span>`,
+                `<span style="display: inline;">Every bear eats fish</span>`,
+                `<span style="display: inline;">Only bears eat fish</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331314" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Mathematical Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Following declaration of an array of struct, assumes size of byte, short, int and long are \\( 1,2,3 \\) and \\( 4 \\) respectively. Alignment rule stipulates that \\( n \\) – byte field must be located at an address divisible by \\( n \\), the fields in the struct are not rearranged, padding is used to ensure alignment. All elements of array should be of same size. </p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="typ">Struct</span><span class="pln"> complx</span></li><li class="L1"><span class="pln">       </span><span class="typ">Short</span><span class="pln"> s</span></li><li class="L2"><span class="pln">       </span><span class="typ">Byte</span><span class="pln"> b</span></li><li class="L3"><span class="pln">       </span><span class="typ">Long</span><span class="pln"> l</span></li><li class="L4"><span class="pln">       </span><span class="typ">Int</span><span class="pln"> i</span></li><li class="L5"><span class="typ">End</span><span class="pln"> </span><span class="typ">Complx</span></li><li class="L6"><span class="typ">Complx</span><span class="pln"> C</span><span class="pun">[</span><span class="lit">10</span><span class="pun">]</span></li></ol></pre> <p>Assuming \\( C \\) is located at an address divisble by \\( 8 \\), what is the total size of \\( C \\), in bytes? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 150 \\)</span>`,
+                `<span style="display: inline;">\\( 160 \\)</span>`,
+                `<span style="display: inline;">\\( 200 \\)</span>`,
+                `<span style="display: inline;">\\( 240 \\)</span>`
+            ],
+            answer: "N/A",
+            isMTA: true,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331318" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A grammar is defined as</p> <ul> <li> \\( A \\rightarrow BC \\) </li> <li> \\( B \\rightarrow&nbsp; x \\mid Bx \\) </li> <li> \\( C \\rightarrow B \\mid D \\) </li> <li> \\( D \\rightarrow y \\mid Ey \\) </li> <li> \\( E \\rightarrow z \\) </li> </ul> <p>The non terminal alphabet of the grammar is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\{A,B,C,D,E\\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{B,C,D,E\\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{A,B,C,D,E,x,y,z\\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{x,y,z\\} \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331302" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Compiler Design</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If \\( A=\\{x,y,z\\} \\) and \\( B=\\{u,v,w,x\\}, \\) and the universe is \\( \\{s,t,u,v,w,x,y,z\\} \\). Then \\( (A \\cup \\overline{B}) \\cap (A \\cap B) \\) is equal to </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\{u,v,w,x\\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{ \\: \\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{u,v,w,x,y,z\\} \\)</span>`,
+                `<span style="display: inline;">\\( \\{u,v,w\\} \\)</span>`
+            ],
+            answer: "N/A",
+            isMTA: true,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331305" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Set Theory & Algebra</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following circuit</p> <p><img alt="" src="images/isro-cse-2020/q77_1.png" style="max-width: 100%; display: block; margin: 10px auto;" width="420"/></p> <p>The function by the network above is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( \\overline{AB}E+EF+\\overline{CD}F \\)</span>`,
+                `<span style="display: inline;">\\( (\\overline{E}+AB\\overline{F})(C+D+\\overline{F}) \\)</span>`,
+                `<span style="display: inline;">\\( (\\overline{AB}+E)(\\overline{E}+\\overline{F})(C+D+\\overline{F}) \\)</span>`,
+                `<span style="display: inline;">\\( (A+B)\\overline{E} +\\overline{EF}+CD\\overline{F} \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331309" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the following procedure</p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="typ">Integer</span><span class="pln"> procedure P</span><span class="pun">(</span><span class="pln">X</span><span class="pun">,</span><span class="pln">Y</span><span class="pun">);</span></li><li class="L1"><span class="typ">Integer</span><span class="pln"> X</span><span class="pun">,</span><span class="pln">Y</span><span class="pun">;</span></li><li class="L2"><span class="kwd">value</span><span class="pln"> x</span><span class="pun">;</span></li><li class="L3"><span class="kwd">begin</span></li><li class="L4"><span class="pln">      K</span><span class="pun">=</span><span class="lit">5</span><span class="pun">;</span></li><li class="L5"><span class="pln">      L</span><span class="pun">=</span><span class="lit">8</span><span class="pun">;</span></li><li class="L6"><span class="pln">      P</span><span class="pun">=</span><span class="pln">x</span><span class="pun">+</span><span class="pln">y</span><span class="pun">;</span></li><li class="L7"><span class="kwd">end</span></li></ol></pre> <p> \\( X \\) is called by value and \\( Y \\) is called by name. If the procedure were invoked by the following program fragment </p> <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><ol class="linenums"><li class="L0"><span class="pln">K</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pln">L</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span></li><li class="L2"><span class="pln">Z</span><span class="pun">=</span><span class="pln">P</span><span class="pun">(</span><span class="pln">K</span><span class="pun">,</span><span class="pln">L</span><span class="pun">);</span></li></ol></pre> <p>then the value of \\( Z \\) will be set equal to </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( 5 \\)</span>`,
+                `<span style="display: inline;">\\( 8 \\)</span>`,
+                `<span style="display: inline;">\\( 13 \\)</span>`,
+                `<span style="display: inline;">\\( 0 \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331379" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Programming in C</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider product of three matrices \\( M_1,M_2 \\) and \\( M_3 \\) having \\( w \\) rows and \\( x \\) columns, \\( x \\) rows and \\( y \\) columns, and \\( y \\) rows and \\( z \\) columns. Under what condition will it take less time to compute the product as \\( (M_1M_2)M_3 \\) than to compute \\( M_1(M_2M_3) \\) ? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Always take the same time</span>`,
+                `<span style="display: inline;">\\( (1/x +1/z)<(1/w+1/y) \\)</span>`,
+                `<span style="display: inline;">\\( x>y \\)</span>`,
+                `<span style="display: inline;">\\( (w+x)>(y+z) \\)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331382" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Algorithms</span></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A new flipflop with inputs \\( X \\) and \\( Y \\), has the following property </p> <p> $$ \\begin{array}{|c|c|c|}\\hline \\bf{X}&&nbsp; \\bf{Y}&&nbsp; \\bf{Current\\ state}&\\bf{ Next\\ state}&nbsp; \\\\\\hline&nbsp; 0&0&Q&1 \\\\ 0&1&Q&\\overline{Q}\\\\&nbsp; &nbsp; 1& 1&Q&0 \\\\&nbsp; &nbsp;1&0&Q&Q \\\\ \\hline&nbsp;&nbsp;\\end{array} $$ </p> <p>Which of the following expresses the next state in terms of \\( X,Y, \\) current state? </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\\( (\\overline{X}\\wedge \\overline{Q} )\\vee (\\overline{Y} \\wedge Q) \\)</span>`,
+                `<span style="display: inline;">\\( (\\overline{X}\\wedge Q )\\vee (\\overline{Y} \\wedge \\overline{Q}) \\)</span>`,
+                `<span style="display: inline;">\\( (X\\wedge \\overline{Q })\\vee (Y \\wedge Q) \\)</span>`,
+                `<span style="display: inline;">\\( (X\\wedge \\overline{Q })\\vee (\\overline{Y } \\wedge Q) \\)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331388" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <span style="color:#2f6d1a;">Digital Logic</span></div></div>`
+        }
+    ]
+});
