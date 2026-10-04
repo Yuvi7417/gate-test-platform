@@ -1416,7 +1416,7 @@ window.PYQ_DEFAULT_TESTS = [
 
   // ISRO CSE (2008-2025)
   { series: "cse-gate-2027", name: "ISRO CSE 2025", subject: "isro" },
-  { series: "cse-gate-2027", name: "ISRO CSE 2024", subject: "isro", comingSoon: true },
+  { series: "cse-gate-2027", name: "ISRO CSE 2024", subject: "isro" },
   { series: "cse-gate-2027", name: "ISRO CSE 2023", subject: "isro", comingSoon: true },
   { series: "cse-gate-2027", name: "ISRO CSE 2020", subject: "isro", comingSoon: true },
   { series: "cse-gate-2027", name: "ISRO CSE 2018", subject: "isro", comingSoon: true },

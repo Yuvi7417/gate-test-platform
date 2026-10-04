@@ -18,3 +18,4 @@ js/cse-2026-test-registry.src.js
 js/made-easy-cse-2027-test.src.js
 *.src.js
 __pycache__/
+scratch/
