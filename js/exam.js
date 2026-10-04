@@ -1691,7 +1691,7 @@ function renderPlayerQuestion(i) {
           isCorrect = true;
         }
       } else {
-        if (st.answer === q.correct) isCorrect = true;
+        if (Array.isArray(q.correct) ? q.correct.includes(st.answer) : st.answer === q.correct) isCorrect = true;
       }
     }
 
@@ -1795,7 +1795,7 @@ function renderPlayerQuestion(i) {
           let bgClass = "";
           let tagHtml = "";
           if (solutionMode) {
-            if (q.correct === oi) {
+            if (Array.isArray(q.correct) ? q.correct.includes(oi) : q.correct === oi) {
               bgClass = "correct-bg";
               tagHtml = '<div class="solution-tag correct">Correct Answer</div>';
             } else if (st.answer === oi) {
@@ -2120,7 +2120,7 @@ function updatePlayerQBtn(i) {
           isCorrect = true;
         }
       } else {
-        if (st.answer === q.correct) isCorrect = true;
+        if (Array.isArray(q.correct) ? q.correct.includes(st.answer) : st.answer === q.correct) isCorrect = true;
       }
       if (isCorrect) btn.classList.add("correct");
       else btn.classList.add("incorrect");
@@ -2292,7 +2292,7 @@ function confirmSubmit() {
       if (typeof correctVal === "string" && /^[A-D]$/i.test(correctVal)) {
         cIdx = correctVal.toUpperCase().charCodeAt(0) - 65;
       }
-      if (isMTA || given === cIdx) {
+      if (isMTA || (Array.isArray(cIdx) ? cIdx.includes(given) : given === cIdx)) {
         isCorrect = true;
         correctCount++;
         score += q.marks;
