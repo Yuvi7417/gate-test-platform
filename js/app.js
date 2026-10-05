@@ -1414,6 +1414,15 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-DBMS(ER Model)", subject: "dbms" },
   { series: "cse-gate-2027", name: "TWT-DBMS(Relational Schema-I)", subject: "dbms" },
 
+  // Computer Networks
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-I)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-II)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-III)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-IV)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-V)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VI)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VII)", subject: "cn" },
+
   // ISRO CSE (2008-2025)
   { series: "cse-gate-2027", name: "ISRO CSE 2025", subject: "isro" },
   { series: "cse-gate-2027", name: "ISRO CSE 2024", subject: "isro" },
