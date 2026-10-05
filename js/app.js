@@ -1305,6 +1305,7 @@ window.PYQ_TOPIC_MAP = {
 
   // Data Structures
   "Array-I": "1D and Bitonic Arrays, Array Operations, Searching, Complexity",
+  "Array-II": "Matrix Representation, Array Bounds, Searching, Sorting & Inversions",
 
   // Algorithms
   "Asymptotic Notation-I": "Big-O, Omega, Theta Notations, Growth of Functions",
@@ -1407,7 +1408,8 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-IV)", subject: "os" },
 
   // Data Structures
-  { series: "cse-gate-2027", name: "TWT-data sturctue(Array-I)", subject: "ds" },
+  { series: "cse-gate-2027", name: "TWT-data structures(Array-I)", subject: "ds" },
+  { series: "cse-gate-2027", name: "TWT-data structures(Array-II)", subject: "ds" },
 
   // Algorithms (6 tests)
   { series: "cse-gate-2027", name: "TWT-Algorithm(Asymptotic Notation-I)", subject: "algo" },
@@ -1544,7 +1546,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><circle cx="6" cy="19" r="3"/><circle cx="18" cy="19" r="3"/><path d="M12 8v4M12 12l-6 4M12 12l6 4"/></svg>`,
     iconBg: "#ffe4e6",
     iconColor: "#e11d48",
-    regex: /(?<!c\s+programming\s+(and|&)\s*)(?<!programming\s+(and|&)\s*)\b(data structures|data structure|data sturctue)\b/i
+    regex: /(?<!c\s+programming\s+(and|&)\s*)(?<!programming\s+(and|&)\s*)\b(data structures|data structure)\b/i
   },
   {
     id: "algo",

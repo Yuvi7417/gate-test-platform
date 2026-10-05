@@ -34162,7 +34162,483 @@ registerTest({
     ]
 });
 
+registerTest({
+    series: "cse-gate-2027",
+    name: "TWT-data structures(Array-I)",
+    date: "may 20, 2026",
+    questions: [
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">An array <span>\\( A \\)</span> of length <span>\\( n \\)</span> with distinct elements is said to be bitonic if there is an index <span>\\( 1 \\leq i \\leq n \\)</span> such that <span>\\( A[1..i] \\)</span> is sorted in the non-decreasing order and <span>\\( A[i+1..n] \\)</span> is sorted in the non-increasing order. <br/> Which ONE of the following represents the best possible asymptotic bound for the worst-case number of comparisons by an algorithm that searches for an element in a bitonic array <span>\\( A \\)</span>?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta(n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(1) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(\\log ^2 n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(\\log n) \\)</span></span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460804/gate-cse-2025-set-2-question-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-2</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;">Let <span>\\( A \\)</span> be an array containing integer values. The distance of <span>\\( A \\)</span> is defined as the minimum number of elements in <span>\\( A \\)</span> that must be replaced with another integer so that the resulting array is sorted in non-decreasing order. The distance of the array <span>\\( [2,5,3,1,4,2,6] \\)</span> is _____</span>`,
+            image: "",
+            options: [
+            ],
+            answer: "3",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/422872/gate-cse-2024-set-2-question-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2024 SET-2</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">What is the worst-case number of arithmetic operations performed by recursive binary search on a sorted array of size n?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta (\\sqrt{n}) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta ( \\log _2 (n)) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta ( n^2) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta ( n) \\)</span></span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357532/gate-cse-2021-set-2-question-8#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2021 SET-2</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let P be an array containing n integers. Let t be the lowest upper bound on the number of comparisons of the array elements, required to find the minimum and maximum values in an arbitrary array of n elements. Which one of the following choices is correct?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( t \\gt 2n-2 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( t \\gt 3\\lceil \\frac{n}{2}\\rceil \\text{ and } t\\leq 2n-2 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( t \\gt n \\text{ and } t\\leq 3\\lceil \\frac{n}{2}\\rceil \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( t \\gt \\lceil \\log_2(n)\\rceil \\text{ and } t\\leq n \\)</span></span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/357450/gate-cse-2021-set-1-question-2#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2021 SET-1</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">If an array A contains the items 10, 4, 7, 23, 67, 12 and 5 in that order, what will be the resultant array A after third pass of insertion sort?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">67,12,10,5,4,7,23</span>`,
+                `<span style="display: inline;">4,7,10,23,67,12,5</span>`,
+                `<span style="display: inline;">4,5,7,67,10,12,23</span>`,
+                `<span style="display: inline;">10,7,4,67,23,12,5</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331354/isro2020-33" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider a 2-dimensional array x with 10 rows and 4 columns, with each element storing a value equivalent to the product of row number and column number. The array is stored in row-major format. If the first element x[0][0] occupies the memory location with address 1000 and each element occupies only one memory location, which all locations (in decimal) will be holding a value of 10?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( 1018,1019 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( 1022,1041 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( 1017,1036 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( 1000,1399 \\)</span></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/331475/isro2020-18" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2020</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">An array A consists of n integers in locations A[0],A[1],...A[n-1]. It is required to shift the elements of the array cyclically to the left by k places, where <span>\\( 1 \\leq k \\leq (n-1) \\)</span>. An incomplete algorithm for doing this in linear time, without using another array is given bellow. Complete the algorithm by filling in the blanks.<br/> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> min=n; i=0;
+while(_________) {
+    temp= A[i]; j=i;
+    while(_________) {
+        A[j]= _______;
+        j=(j+k) mod n;
+        if(j &lt; min) then
+        min = j;
+    }
+    A[(n+i-k) mod n]=_______;
+    i=________;
 
+}</code></pre></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( i \\gt \\min ; \\quad j !=(n+1) \\bmod n ; \\quad A[j+k] \\quad \\text { temp; } \\quad i+1 ; \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( i \\lt \\min ; \\quad j !=(n+i) \\bmod n ; \\quad A[j+k] \\quad \\text { temp; } \\quad i+1 ; \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( i \\gt \\min ; \\quad j !=(n+i+k) \\bmod n ; \\quad A[j+k] \\quad \\text { temp; } \\quad i+1 ; \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( i \\lt \\min ; \\quad j !=(n+i-k) \\bmod n ; \\quad A[(j+k) \\bmod n] \\quad \\text { temp; } \\quad i+1 ; \\)</span></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/213576/isro2018-12" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2018</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;">Let A be an array of 31 numbers consisting of sequence of 0's followed by a sequence of 1's. The problem is to find the smallest index i that A[i] is 1 by probing the minimum numbers of locations in A. The worst case number of probes performed by an optimal algorithm is _____________.</span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/118331/gate2017-1-48#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2017 SET-1</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">The average number of key comparisons required for a successful search for sequential search on n items is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\frac{n}{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\frac{n-1}{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\frac{n+1}{2} \\)</span></span>`,
+                `<span style="display: inline;">None of the above</span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2742/gate1996-2-13-isro2016-28" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2016</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following two C code segments. Y and X are one and two dimensional arrays of size n and nxn respectively, where <span>\\( 2\\leq n\\leq 10 \\)</span>. Assume that in both code segments, elements of Y are initialized to 0 and each element X[i][j] of array X is initialized to i+j. Further assume that when stored in main memory all elements of X are in same main memory page frame. <br/> Code segment 1: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>//initialize elements of Y to 0
+//initialize elements X[i][j] of X to i+j
+for(i = 0; i &lt; n; i++)
+Y[i] += X[0][i]; </code></pre> Code Segment 2: <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>//initialize elements of Y to 0
+//initialize elements X[i][j] of X to i+j
+for(i = 0; i &lt; n; i++)
+Y[i] += X[i][0];</code></pre> Which of the following statements is/are correct? <br/>S1: Final contents of array Y will be same in both code segments <br/> S2: Elements of array X accessed inside the for loop shown in code segment 1 are contiguous in main memory <br/> S3: Elements of array X accessed inside the for loop shown in code segment 2 are contiguous in main memory</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Only S2 is correct</span>`,
+                `<span style="display: inline;">Only S3 is correct</span>`,
+                `<span style="display: inline;">Only S1 and S2 are correct</span>`,
+                `<span style="display: inline;">Only S1 and S3 are correct</span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/8486/gate2015-3-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2015 SET-3</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">A frame buffer array is addressed in row major order for a monitor with pixel locations starting from (0,0) and ending with (100,100). What is address of the pixel(6,10)? Assume one bit storage per pixel and starting pixel location is at 0.</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">1016</span>`,
+                `<span style="display: inline;">1006</span>`,
+                `<span style="display: inline;">610</span>`,
+                `<span style="display: inline;">616</span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/53819/isro2014-48" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2014</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Suppose there are 11 items in sorted order in an array. How many searches are required on the average, if binary search is employed and all searches are successful in finding the item?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( 3.00 \\)</span></span>`,
+                `<span style="display: inline;">3.46</span>`,
+                `<span style="display: inline;">2.81</span>`,
+                `<span style="display: inline;">3.33</span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/16124/isro2014-28" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2014</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">In an array of 2N elements that is both 2-ordered and 3-ordered, what is the maximum number of positions that an element can be from its position if the array were 1-ordered?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">1</span>`,
+                `<span style="display: inline;">2</span>`,
+                `<span style="display: inline;">N/2</span>`,
+                `<span style="display: inline;">2N-1</span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43767/isro-2013-9" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2013" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2013</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let A(1:8, -5:5, -10:5) be a three dimensional array. How many elements are there in the array A?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">1200</span>`,
+                `<span style="display: inline;">1408</span>`,
+                `<span style="display: inline;">33</span>`,
+                `<span style="display: inline;">1050</span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43751/isro-2013-1" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2013" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2013</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">A one dimensional array A has indices 1....75. Each element is a string and takes up three memory words. The array is stored at location 1120 decimal. The starting address of A[49] is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">1267</span>`,
+                `<span style="display: inline;">1164</span>`,
+                `<span style="display: inline;">1264</span>`,
+                `<span style="display: inline;">1169</span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/48050/isro2009-29" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2009" style="color:#2f6d1a; text-decoration:none" target="_blank">ISRO CSE 2009</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`,
+        }
+    ]
+});
+
+registerTest({
+    series: "cse-gate-2027",
+    name: "TWT-data structures(Array-II)",
+    date: "may 21, 2026",
+    questions: [
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">The minimum number of comparisons required to determine if an integer appears more than n/2 times in a sorted array of n integers is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\\( \\Theta(n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(\\log n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(\\log^* n) \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\Theta(1) \\)</span></span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/452/gate2008-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2008" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2008</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">An array of n numbers is given, where n is an even number. The maximum as well as the minimum of these n numbers needs to be determined. Which of the following is TRUE about the number of comparisons needed?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">At least 2n - c comparisons, for some constant c, are needed.</span>`,
+                `<span style="display: inline;">At most 1.5n - 2 comparisons are needed.</span>`,
+                `<span style="display: inline;">At least 2 nlog n comparisons are needed.</span>`,
+                `<span style="display: inline;">None of the above.</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1248/gate2007-50#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2007" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2007</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Given two arrays of numbers <span>\\( a_1, \\dots, a_n \\)</span> and <span>\\( b_1, \\dots, b_n \\)</span> where each number is 0 or 1, the fastest algorithm to find the largest span(i,j) such that <span>\\( a_i+a_{i+1}+\\dots+a_j=b_i+b_{i+1}+\\dots+b_j \\)</span>, or report that there is no such span,</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Takes <span>\\( O(3^n) \\)</span> and <span>\\( \\Omega(2^n) \\)</span> time if hashing is permitted</span>`,
+                `<span style="display: inline;">Takes <span>\\( O(n^3) \\)</span> and <span>\\( \\Omega(n^{2.5}) \\)</span> time in the key comparison model</span>`,
+                `<span style="display: inline;">Takes <span>\\( \\Theta(n) \\)</span> time and space</span>`,
+                `<span style="display: inline;">Takes <span>\\( O(\\sqrt{n}) \\)</span> time only if the sum of the 2n elements is an even number</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1832/gate2006-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2006</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">An element in an array X is called a leader if it is grater than all elements to the right of it in X. The best algorithm to find all leaders in an array.</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Solves it in linear time using a left to right pass of the array</span>`,
+                `<span style="display: inline;">Solves in linear time using a right to left pass of the array</span>`,
+                `<span style="display: inline;">Solves it is using divide and conquer in time <span>\\( \\Theta(n\\log n) \\)</span></span>`,
+                `<span style="display: inline;">Solves it in time <span>\\( \\Theta(n^2) \\)</span></span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/978/gate2006-17#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2006</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let a and b be two sorted arrays containing n integers each, in non-decreasing order. Let c be a sorted array containing 2n integers obtained by merging the two arrays a and b. Assuming the arrays are indexed starting from 0, consider the following four statements<br/><br/> I. <span>\\( a[i] \\geq b [i] \\Rightarrow c[2i] \\geq a [i] \\)</span><br/> II. <span>\\( a[i] \\geq b [i] \\Rightarrow c[2i] \\geq b [i] \\)</span><br/> III. <span>\\( a[i] \\geq b [i] \\Rightarrow c[2i] \\leq a [i] \\)</span><br/> IV. <span>\\( a[i] \\geq b [i] \\Rightarrow c[2i] \\leq b [i] \\)</span><br/><br/> Which of the following is TRUE?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">only I and II</span>`,
+                `<span style="display: inline;">only I and IV</span>`,
+                `<span style="display: inline;">only II and III</span>`,
+                `<span style="display: inline;">only III and IV</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3820/gate2005-it-59" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2005" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE IT 2005</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">A program P reads in 500 integers in the range [0,100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">An array of 50 numbers</span>`,
+                `<span style="display: inline;">An array of 100 numbers</span>`,
+                `<span style="display: inline;">An array of 500 numbers</span>`,
+                `<span style="display: inline;">A dynamically allocated array of 550 numbers</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1347/gate2005-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2005" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2005</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Two matrices M1 and M2 are to be stored in arrays A and B respectively. Each array can be stored either in row-major or column-major order in contiguous memory locations. The time complexity of an algorithm to compute M1 x M2 will be</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">best if A is in row-major, and B is in column major order</span>`,
+                `<span style="display: inline;">best if both are in row-major order</span>`,
+                `<span style="display: inline;">best if both are in column-major order</span>`,
+                `<span style="display: inline;">independent of the storage scheme</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1036/gate2004-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2004" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2004</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following algorithm for searching for a given number x in an unsorted array A[1.....n] having n distinct values : <br/><br/> (1) Choose an i uniformly at random from [1....n]<br/> (2) If A[i] = x then stop else Goto 1; <br/><br/> Assuming that x is present A, What is the expected number of comparisons made by the algorithm before it terminates?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">n</span>`,
+                `<span style="display: inline;">n-1</span>`,
+                `<span style="display: inline;">2n</span>`,
+                `<span style="display: inline;">n/2</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/840/gate2002-2-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2002" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2002</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following declaration of a two-dimensional array in C : <br/><br/> Char a[100][100]<br/> Assuming that the main memory is byte-addressable and that array is stored starting form memory address 0, the address of a [40] [50] is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">4040</span>`,
+                `<span style="display: inline;">4050</span>`,
+                `<span style="display: inline;">5040</span>`,
+                `<span style="display: inline;">5040</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/838/gate2002-2-8#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2002" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2002</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Suppose you are given an array s[1....n] and a procedure reverse (s, i, j) which reverses the order of elements in s between positions i and j (both inclusive). What does the following sequence do, where <span>\\( 1 \\leq k \\leq n \\)</span>:<br/> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> reverse (s, 1, k);
+ reverse (s, k+1, n);
+ reverse (s, 1, n); </code></pre> <br/></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Rotates s left by k positions</span>`,
+                `<span style="display: inline;">Leaves s unchanged</span>`,
+                `<span style="display: inline;">Reverses all elements of s</span>`,
+                `<span style="display: inline;">None of the above</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/662/gate2000-2-15" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2000" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2000</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">An <span>\( n \times n \)</span> array <span>\( v \)</span> is defined as follows:<br/> <span>\( v\left[i,j\right] = i - j \)</span> for all <span>\( i, j, i \leq n, 1 \leq j \leq n \)</span><br/> The sum of the elements of the array <span>\( v \)</span> is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">0</span>`,
+                `<span style="display: inline;">n-1</span>`,
+                `<span style="display: inline;"><span>\( n^2 - 3n +2 \)</span></span>`,
+                `<span style="display: inline;"><span>\( n^2 \frac{\left(n+1\right)}{2} \)</span></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/625/gate2000-1-2" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2000" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2000</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Suppose we want to arrange the n numbers stored in any array such that all negative values occur before all positive ones. Minimum number of exchanges required in the worst case is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">n-1</span>`,
+                `<span style="display: inline;">n</span>`,
+                `<span style="display: inline;">n+1</span>`,
+                `<span style="display: inline;">None of the above</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1466/gate1999-1-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1999" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 1999</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">Let A be a two dimensional array declared as follows:<br/> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code> A: array [1 ... 10] [1 ... 15] of integer;</code></pre> Assuming that each integer takes one memory location, the array is stored in row-major order and the first element of the array is stored at location 100, what is the address of the element A[i][j]?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">15i+j+84</span>`,
+                `<span style="display: inline;">15j+i+84</span>`,
+                `<span style="display: inline;">10i+j+89</span>`,
+                `<span style="display: inline;">10j+i+89</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1686/gate1998-2-14" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1998" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 1998</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">The average number of key comparisons required for a successful search for sequential search on n items is</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\( \frac{n}{2} \)</span></span>`,
+                `<span style="display: inline;"><span>\( \frac{n-1}{2} \)</span></span>`,
+                `<span style="display: inline;"><span>\( \frac{n+1}{2} \)</span></span>`,
+                `<span style="display: inline;">None of the above</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2742/gate1996-2-13-isro2016-28" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1996" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 1996</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">In a compact single dimensional array representation for lower triangular matrices (i.e all the elements above the diagonal are zero) of size <span>\( n \times n \)</span>, non-zero elements, (i.e elements of lower triangle) of each row are stored one after another, starting from the first row, the index of the <span>\( (i, j)^{th} \)</span> element of the lower triangular matrix in this new representation is:</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><span>\( i+j \)</span></span>`,
+                `<span style="display: inline;"><span>\( i+j-1 \)</span></span>`,
+                `<span style="display: inline;"><span>\( (j-1)+\frac{i(i-1)}{2} \)</span></span>`,
+                `<span style="display: inline;"><span>\( i+\frac{j(j-1)}{2} \)</span></span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2452/gate1994-1-11" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1994" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 1994</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
+        }
+    ]
+});
 registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Regular Language-I)",
