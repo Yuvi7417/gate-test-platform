@@ -34566,13 +34566,13 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">An <span>\( n \times n \)</span> array <span>\( v \)</span> is defined as follows:<br/> <span>\( v\left[i,j\right] = i - j \)</span> for all <span>\( i, j, i \leq n, 1 \leq j \leq n \)</span><br/> The sum of the elements of the array <span>\( v \)</span> is</span>`,
+            text: `<span style="display: inline;">An <span>\\( n \\times n \\)</span> array <span>\\( v \\)</span> is defined as follows:<br/> <span>\\( v\\left[i,j\\right] = i - j \\)</span> for all <span>\\( i, j, 1 \\leq i \\leq n, 1 \\leq j \\leq n \\)</span><br/> The sum of the elements of the array <span>\\( v \\)</span> is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">0</span>`,
                 `<span style="display: inline;">n-1</span>`,
-                `<span style="display: inline;"><span>\( n^2 - 3n +2 \)</span></span>`,
-                `<span style="display: inline;"><span>\( n^2 \frac{\left(n+1\right)}{2} \)</span></span>`
+                `<span style="display: inline;"><span>\\( n^2 - 3n + 2 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( n^2 \\frac{\\left(n+1\\right)}{2} \\)</span></span>`
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/625/gate2000-1-2" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2000" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2000</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
@@ -34614,9 +34614,9 @@ registerTest({
             text: `<span style="display: inline;">The average number of key comparisons required for a successful search for sequential search on n items is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><span>\( \frac{n}{2} \)</span></span>`,
-                `<span style="display: inline;"><span>\( \frac{n-1}{2} \)</span></span>`,
-                `<span style="display: inline;"><span>\( \frac{n+1}{2} \)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\frac{n}{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\frac{n-1}{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( \\frac{n+1}{2} \\)</span></span>`,
                 `<span style="display: inline;">None of the above</span>`
             ],
             answer: "C",
@@ -34626,13 +34626,13 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">In a compact single dimensional array representation for lower triangular matrices (i.e all the elements above the diagonal are zero) of size <span>\( n \times n \)</span>, non-zero elements, (i.e elements of lower triangle) of each row are stored one after another, starting from the first row, the index of the <span>\( (i, j)^{th} \)</span> element of the lower triangular matrix in this new representation is:</span>`,
+            text: `<span style="display: inline;">In a compact single dimensional array representation for lower triangular matrices (i.e all the elements above the diagonal are zero) of size <span>\\( n \\times n \\)</span>, non-zero elements, (i.e elements of lower triangle) of each row are stored one after another, starting from the first row, the index of the <span>\\( (i, j)^{th} \\)</span> element of the lower triangular matrix in this new representation is:</span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><span>\( i+j \)</span></span>`,
-                `<span style="display: inline;"><span>\( i+j-1 \)</span></span>`,
-                `<span style="display: inline;"><span>\( (j-1)+\frac{i(i-1)}{2} \)</span></span>`,
-                `<span style="display: inline;"><span>\( i+\frac{j(j-1)}{2} \)</span></span>`
+                `<span style="display: inline;"><span>\\( i+j \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( i+j-1 \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( (j-1)+\\frac{i(i-1)}{2} \\)</span></span>`,
+                `<span style="display: inline;"><span>\\( i+\\frac{j(j-1)}{2} \\)</span></span>`
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2452/gate1994-1-11" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1994" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 1994</a> | <a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none" target="_blank">Data Structure</a></div></div>`
