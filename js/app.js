@@ -1534,12 +1534,12 @@ window.PYQ_CS_SUBJECTS = [
   },
   {
     id: "prog_ds",
-    name: "Programming and Data Structures",
+    name: "Programming and Data Structure",
     iconType: "text",
     iconVal: "{}",
     iconBg: "#fee2e2",
     iconColor: "#ef4444",
-    regex: /(programming and data structure|c programming and data structure|programming & data structure)/i
+    regex: /(c\s*programming\s*(and|&)\s*data\s*structure|programming\s*(and|&)\s*data\s*structure)/i
   },
   {
     id: "c_prog",
@@ -1548,7 +1548,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: "{}",
     iconBg: "#fee2e2",
     iconColor: "#ef4444",
-    regex: /^TWT-c-programming|\b(c programming|c-programming)\b(?!\s*and\s*data|\s*&\s*data)/i
+    regex: /^(?!.*(and|&)\s*data\s*structure).*(c\s*programming|c-programming)/i
   },
   {
     id: "ds",
@@ -1557,7 +1557,7 @@ window.PYQ_CS_SUBJECTS = [
     iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><circle cx="6" cy="19" r="3"/><circle cx="18" cy="19" r="3"/><path d="M12 8v4M12 12l-6 4M12 12l6 4"/></svg>`,
     iconBg: "#ffe4e6",
     iconColor: "#e11d48",
-    regex: /(?<!c\s+programming\s+(and|&)\s*)(?<!programming\s+(and|&)\s*)\b(data structures|data structure)\b/i
+    regex: /^(?!.*c\s*programming\s*(and|&)).*(data\s*structure|data\s*structures)/i
   },
   {
     id: "algo",
@@ -2000,13 +2000,6 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
   // 1. Defaults first
   if (seriesId === "cse-gate-2027") {
     (window.PYQ_DEFAULT_TESTS || []).forEach(t => {
-      const cleanName = (/^(TWT|SWT)/i.test(t.name))
-        ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
-        : t.name;
-      registeredMap.set(cleanName, { ...t, name: cleanName });
-    });
-  } else if (seriesId === "cs-gate-pyq") {
-    (window.PYQ_DEFAULT_TESTS || []).filter(t => t.subject !== "isro" && t.subject !== "gate_pyq").forEach(t => {
       const cleanName = (/^(TWT|SWT)/i.test(t.name))
         ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
         : t.name;
