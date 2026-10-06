@@ -1332,6 +1332,12 @@ window.PYQ_TOPIC_MAP = {
   "Finite Automata-V": "NFA Acceptance & Complementation, State Minimization, Sequential FSMs & Homers",
   "Regular Expression-I": "Regular Expressions, Language Equivalence, NFA/DFA to Regular Expression, Binary Patterns",
   "Regular Expression-II": "Equivalence & Identities of Regular Expressions, Subset Relations, NFA/DFA Conversions",
+  "Regular Language-I": "Closure Properties, Language Identification, Minimal DFA State Bounds, Pumping Lemma, Prefix & Suffix Closures",
+  "Regular Language-II": "Count Constraints, Concatenation vs Cross Product, String Membership in L*, Myhill-Nerode & Pumping Length",
+  "Context Free Grammar-I": "CFL Constraints, Ambiguity & Derivations, Parsing Comparisons (LL, SLR, LALR, CLR), GOTO Items & CNF Steps",
+  "Context Free Grammar-II": "Eliminating Left Recursion, FOLLOW Sets, Grammar Equivalence, Ambiguity & Chomsky Hierarchy",
+  "Context Free Grammar-III": "Operator Grammars, Decidable Problems for FSM & CFG, Inherent Ambiguity, PDA vs DPDA",
+  "Context Free Language-I": "CFL & DCFL Identification, Closure Properties, Decidability of CFLs, Intersection with Regular Languages",
 
   "computer organization and architecture-1": "Machine Instructions, Addressing Modes, ALU, Data Path",
   "computer organization and architecture-2": "Instruction Pipelining, Cache Memory, Virtual Memory, I/O",
@@ -1427,6 +1433,14 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-V)", subject: "cn" },
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VI)", subject: "cn" },
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VII)", subject: "cn" },
+
+  // Theory of Computation (6 tests)
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Regular Language-I)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Regular Language-II)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-I)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-II)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-III)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Language-I)", subject: "toc" },
 
   // ISRO CSE (2008-2025)
   { series: "cse-gate-2027", name: "ISRO CSE 2025", subject: "isro" },

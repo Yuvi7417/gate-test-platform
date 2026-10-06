@@ -2,6 +2,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Regular Language-I)",
     date: "sep 08, 2026",
+    topicsCovered: "Closure Properties, Language Identification, Minimal DFA State Bounds, Pumping Lemma, Prefix & Suffix Closures",
     questions: [
         {
             marks: 2,
@@ -231,6 +232,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Regular Language-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Count Constraints, Concatenation vs Cross Product, String Membership in L*, Myhill-Nerode & Pumping Length",
     questions: [
         {
             marks: 2,
@@ -464,6 +466,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Context Free Grammar-I)",
     date: "sep 08, 2026",
+    topicsCovered: "CFL Constraints, Ambiguity & Derivations, Parsing Comparisons (LL, SLR, LALR, CLR), GOTO Items & CNF Steps",
     questions: [
         {
             marks: 2,
@@ -687,6 +690,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Context Free Grammar-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Eliminating Left Recursion, FOLLOW Sets, Grammar Equivalence, Ambiguity & Chomsky Hierarchy",
     questions: [
         {
             marks: 2,
@@ -920,6 +924,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Context Free Grammar-III)",
     date: "sep 08, 2026",
+    topicsCovered: "Operator Grammars, Decidable Problems for FSM & CFG, Inherent Ambiguity, PDA vs DPDA",
     questions: [
         {
             marks: 1,
@@ -1153,6 +1158,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Theory of Computation(Context Free Language-I)",
     date: "sep 08, 2026",
+    topicsCovered: "CFL & DCFL Identification, Closure Properties, Decidability of CFLs, Intersection with Regular Languages",
     questions: [
         {
             marks: 1,
