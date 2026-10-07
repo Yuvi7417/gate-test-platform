@@ -1296,9 +1296,17 @@ window.PYQ_TOPIC_MAP = {
   "Process-I": "Process Concept, States, PCB, Process Creation (fork, exec)",
   "Process-II": "Process Synchronization Basics, IPC, Critical Section Problem",
   "CPU Scheduling-I": "FCFS, SJF, SRTF, Non-preemptive & Preemptive Scheduling",
-  "CPU Scheduling-II": "Round Robin Scheduling, Time Quantum, Multi-level Queue",
-  "CPU Scheduling-III": "Scheduling Criteria, Turnaround Time, Waiting Time, Response Time",
-  "CPU Scheduling-IV": "Real-time Scheduling, Multi-processor Scheduling, Priority Inversion",
+  "CPU Scheduling-II": "Round Robin Scheduling, Time Quantum, SRTF, Preemptive Scheduling, Real-time Tasks",
+  "CPU Scheduling-III": "Scheduling Criteria, Turnaround Time, Waiting Time, Response Time, Priority Scheduling",
+  "CPU Scheduling-IV": "Multilevel Feedback Queues, Aging, Context Switching, Preemptive vs Non-Preemptive",
+  "CPU Scheduling-V": "Priority Scheduling, Optimal Non-preemptive Scheduling, Time Quantum Bounds, Throughput",
+  "Process Synchronization-I": "Binary Semaphores, Shared Variables, Critical Section, Producer-Consumer, Concurrency Anomalies",
+  "Process Synchronization-II": "Counting Semaphores, Mutual Exclusion, Progress, Bounded Waiting, Hardware Instructions (Test-and-Set)",
+  "Process Synchronization-III": "Monitors, Bounded Buffer, Readers-Writers Problem, Barrier Synchronization, Fetch-and-Set",
+  "Process Synchronization-IV": "Peterson's Algorithm, Starvation, Race Conditions, Mutex Locks, Synchronization Constraints",
+  "Deadlock-I": "Deadlock Necessary Conditions, Resource Allocation Graph, Safe State, Banker's Algorithm",
+  "Deadlock-II": "Deadlock Prevention, Deadlock Avoidance, Safe Sequence Calculation, Resource Claim Matrix",
+  "Deadlock-III": "Dining Philosophers Problem, Deadlock-free Resource Conditions, Resource Preemption, Rollback",
 
   // Data Structures
   "Array-I": "1D and Bitonic Arrays, Array Operations, Searching, Complexity",
@@ -1402,13 +1410,21 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-c-programming(Conditional Statements)", subject: "c_prog" },
   { series: "cse-gate-2027", name: "TWT-c-programming(Airthmetic Operator)", subject: "c_prog" },
 
-  // Operating System (6 tests)
+  // Operating System (13 tests)
   { series: "cse-gate-2027", name: "TWT-Operating System(Process-I)", subject: "os" },
   { series: "cse-gate-2027", name: "TWT-Operating System(Process-II)", subject: "os" },
   { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-I)", subject: "os" },
   { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-II)", subject: "os" },
   { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-III)", subject: "os" },
   { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-IV)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(CPU Scheduling-V)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process Synchronization-I)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process Synchronization-II)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process Synchronization-III)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Process Synchronization-IV)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Deadlock-I)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Deadlock-II)", subject: "os" },
+  { series: "cse-gate-2027", name: "TWT-Operating System(Deadlock-III)", subject: "os" },
 
   // Data Structures
   { series: "cse-gate-2027", name: "TWT-data structures(Array-I)", subject: "ds" },
