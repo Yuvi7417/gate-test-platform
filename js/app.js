@@ -1450,13 +1450,14 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VI)", subject: "cn" },
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VII)", subject: "cn" },
 
-  // Theory of Computation (6 tests)
+  // Theory of Computation (7 tests)
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Regular Language-I)", subject: "toc" },
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Regular Language-II)", subject: "toc" },
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-I)", subject: "toc" },
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-II)", subject: "toc" },
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Grammar-III)", subject: "toc" },
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Language-I)", subject: "toc" },
+  { series: "cse-gate-2027", name: "TWT-Theory of Computation(Context Free Language-II)", subject: "toc" },
 
   // ISRO CSE (2008-2025)
   { series: "cse-gate-2027", name: "ISRO CSE 2025", subject: "isro" },
