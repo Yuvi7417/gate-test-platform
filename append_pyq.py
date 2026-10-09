@@ -117,12 +117,17 @@ def extract_questions():
             if nat_el:
                 b_tag = nat_el.find('b')
                 raw_ans_text = b_tag.get_text(strip=True) if b_tag else nat_el.get_text(strip=True).replace('Correct answer:', '').strip()
-                parts = re.split(r'[\u2013\u2014\-:]', raw_ans_text)
+                raw_ans_text = raw_ans_text.strip()
+                # Check range like "a to b" or "a - b" or "a:b"
+                # If negative number like "-1", don't split on leading '-'
+                parts = re.split(r'(?<=\d)\s*[\u2013\u2014\-:]\s*(?=[-\d])', raw_ans_text)
                 parts = [p.strip() for p in parts if p.strip()]
                 if len(parts) == 2:
                     answer = [f"{parts[0]}:{parts[1]}"]
                 elif len(parts) == 1:
                     answer = [parts[0]]
+                else:
+                    answer = [raw_ans_text]
                     
         sol_el = card.find(class_='pp-solution-box')
         link = '#'
@@ -174,7 +179,10 @@ def format_questions_js(questions):
         lines.append("            ],")
         
         if q['type'] == 'MSQ':
-            ans_str = '["' + '", "'.join(q['answer']) + '"]'
+            if isinstance(q['answer'], list):
+                ans_str = '["' + '", "'.join(q['answer']) + '"]'
+            else:
+                ans_str = f'["{q["answer"]}"]'
         elif q['type'] == 'MCQ':
             ans_str = f'"{q["answer"]}"'
         else:
