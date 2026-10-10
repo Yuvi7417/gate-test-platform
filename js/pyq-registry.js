@@ -157,7 +157,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p></p> <p>A lexical analyzer uses the following token definitions</p> <ul> <li> \\( {letter → [A-Za-z]} \\) </li> <li> \\( {digit → [0-9]} \\) </li> <li> \\( {id → letter (letter | digit)^*} \\) </li> <li> \\( {number → digit} \\) \\( { }^{+} \\) </li> <li> \\( {ws → (blank | tab| newline)} \\) \\( { }^{+} \\) </li> </ul> <p>For the string given below,<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ x1 \\quad 23 \\mathrm{~mm} \\quad 78 \\quad \\text{ y }&amp;nbsp;\\quad 7 z&amp;nbsp;\\quad \\text { zz5 } \\quad 14 A \\quad 8 H&amp;nbsp;\\quad \\text { AaYcD } \\] <br/>the number of tokens (excluding ws) that will be produced by the lexical analyzer is \\( \\_\\_\\_\\_ \\). (answer in integer) </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>A lexical analyzer uses the following token definitions</p> <ul> <li> \\( {letter → [A-Za-z]} \\) </li> <li> \\( {digit → [0-9]} \\) </li> <li> \\( {id → letter (letter | digit)^*} \\) </li> <li> \\( {number → digit} \\) \\( { }^{+} \\) </li> <li> \\( {ws → (blank | tab| newline)} \\) \\( { }^{+} \\) </li> </ul> <p>For the string given below,<br/>\\[ x1 \\quad 23 \\mathrm{~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } \\] <br/>the number of tokens (excluding ws) that will be produced by the lexical analyzer is \\( \\_\\_\\_\\_ \\). (answer in integer) </p> <p></p></span>`,
             image: "",
             options: [
             ],
@@ -201,7 +201,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider the system of linear equations given below. <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{c} a x+y=b \\\\ 16 x+a y=24 \\end{array} \\] Suppose the values of \\( a \\) and \\( b \\) are chosen such that the system of linear equations produce multiple solutions. Then the product of \\( a \\) and \\( b \\) is \\( \\_\\_\\_\\_ \\). (answer in integer) </p></span>`,
+            text: `<span style="display: inline;"><p>Consider the system of linear equations given below. \\[ \\begin{array}{c} a x+y=b \\\\ 16 x+a y=24 \\end{array} \\] Suppose the values of \\( a \\) and \\( b \\) are chosen such that the system of linear equations produce multiple solutions. Then the product of \\( a \\) and \\( b \\) is \\( \\_\\_\\_\\_ \\). (answer in integer) </p></span>`,
             image: "",
             options: [
             ],
@@ -298,7 +298,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider the following functions, where \\( n \\) is a positive integer. </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ n^{1 / 3}, \\log (n), \\log (n!), 2^{\\log (n)} \\]<br/>Which one of the following options lists the functions in increasing order of asymptotic growth rate?<br/><br/>Note: Assume the base of log to be \\( 2 \\). </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider the following functions, where \\( n \\) is a positive integer. </p> <p>\\[ n^{1 / 3}, \\log (n), \\log (n!), 2^{\\log (n)} \\]<br/>Which one of the following options lists the functions in increasing order of asymptotic growth rate?<br/><br/>Note: Assume the base of log to be \\( 2 \\). </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( \\log (n), n^{1 / 3}, 2^{\\log (n)}, \\log (n!) \\)</span>`,
@@ -373,7 +373,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider the following three ANSI-C programs, \\( \\text{P1, P2,} \\) and \\( \\text{P3} \\). </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|l|} \\hline \\quad\\quad\\quad&amp;nbsp; \\textbf{P1} &amp; \\quad\\quad\\quad \\textbf{P2} &amp;&amp;nbsp;\\quad\\quad\\quad \\textbf{P3} \\\\ \\hline \\text{#include &lt;stdio.h&gt;} &amp; \\text{#include &lt;stdio.h&gt;} &amp; \\text{#include &lt;stdio.h&gt;} \\\\ \\begin{array}{l} \\text{int a=5;} \\\\ \\text{int main()\\{} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);}&amp;nbsp; \\end{array} &amp; \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);}&amp;nbsp; \\end{array} &amp; \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{float a=7;} \\\\ \\quad \\text{return(0);}&amp;nbsp; \\end{array} \\\\ {\\text{\\}}} &amp; {\\text{\\}}} &amp; {\\text{\\}}} \\\\ \\hline \\end{array} \\] </p> <p>Which one of the following statements is true?</p> <p> </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider the following three ANSI-C programs, \\( \\text{P1, P2,} \\) and \\( \\text{P3} \\). </p> <p>\\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|l|} \\hline \\quad\\quad\\quad  \\textbf{P1} & \\quad\\quad\\quad \\textbf{P2} & \\quad\\quad\\quad \\textbf{P3} \\\\ \\hline \\text{#include <stdio.h>} & \\text{#include <stdio.h>} & \\text{#include <stdio.h>} \\\\ \\begin{array}{l} \\text{int a=5;} \\\\ \\text{int main()\\{} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);}  \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);}  \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{float a=7;} \\\\ \\quad \\text{return(0);}  \\end{array} \\\\ {\\text{\\}}} & {\\text{\\}}} & {\\text{\\}}} \\\\ \\hline \\end{array} \\] </p> <p>Which one of the following statements is true?</p> <p> </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Only \\( \\text{P1} \\) will compile without any error</span>`,
@@ -433,7 +433,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>In the context of DBMS, consider the two sets \\( \\mathbf{T} \\) and \\( \\mathbf{S} \\) given below.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|} \\hline \\quad\\quad\\quad\\textbf{T} &amp; \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Logical schema} &amp; \\text{L: Views} \\\\ \\text{II: Physical schema} &amp; \\text{M: File organization and indexes} \\\\ \\text{III: External schema} &amp; \\text{N: Relations} \\\\ \\hline \\end{array} \\] <br/>Which one of the following is the correct match from \\( \\mathbf{T} \\) to \\( \\mathbf{S} \\) ? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>In the context of DBMS, consider the two sets \\( \\mathbf{T} \\) and \\( \\mathbf{S} \\) given below.<br/>\\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|} \\hline \\quad\\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Logical schema} & \\text{L: Views} \\\\ \\text{II: Physical schema} & \\text{M: File organization and indexes} \\\\ \\text{III: External schema} & \\text{N: Relations} \\\\ \\hline \\end{array} \\] <br/>Which one of the following is the correct match from \\( \\mathbf{T} \\) to \\( \\mathbf{S} \\) ? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( \\mathrm{I}-\\mathrm{L}, \\mathrm{II}-\\mathrm{M}, \\mathrm{III}-\\mathrm{N} \\)</span>`,
@@ -448,7 +448,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>The probability density function \\( f(x) \\) of a random variable \\( X \\) which takes real values is<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ f(x)=\\frac{1}{3 \\sqrt{2 \\pi}} \\exp \\left(-\\frac{x^{2}}{18}\\right), \\quad x \\in(-\\infty,+\\infty) \\] <br/>Which one of the following statements is correct about the random variable \\( X \\) ? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>The probability density function \\( f(x) \\) of a random variable \\( X \\) which takes real values is<br/>\\[ f(x)=\\frac{1}{3 \\sqrt{2 \\pi}} \\exp \\left(-\\frac{x^{2}}{18}\\right), \\quad x \\in(-\\infty,+\\infty) \\] <br/>Which one of the following statements is correct about the random variable \\( X \\) ? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( X \\) is an exponential random variable</span>`,
@@ -478,7 +478,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>The set \\( \\mathbf{T} \\) represents various traversals over binary tree. The set \\( \\mathbf{S} \\) represents the order of visiting nodes during a traversal.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|} \\hline \\quad\\quad\\textbf{T} &amp; \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Inorder} &amp; \\text{L: left subtree, node, right subtree} \\\\ \\text{II: Preorder} &amp; \\text{M: node, left subtree, right subtree} \\\\ \\text{III: Postorder} &amp; \\text{N: left subtree, right subtree, node} \\\\ \\hline \\end{array} \\] <br/>Which one of the following is the correct match from \\( \\mathbf{T} \\) to \\( \\mathbf{S} \\) ? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>The set \\( \\mathbf{T} \\) represents various traversals over binary tree. The set \\( \\mathbf{S} \\) represents the order of visiting nodes during a traversal.<br/>\\[ \\renewcommand{\\arraystretch}{1.3} \\begin{array}{|l|l|} \\hline \\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Inorder} & \\text{L: left subtree, node, right subtree} \\\\ \\text{II: Preorder} & \\text{M: node, left subtree, right subtree} \\\\ \\text{III: Postorder} & \\text{N: left subtree, right subtree, node} \\\\ \\hline \\end{array} \\] <br/>Which one of the following is the correct match from \\( \\mathbf{T} \\) to \\( \\mathbf{S} \\) ? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( \\mathrm{I}-\\mathrm{L}, \\mathrm{II}-\\mathrm{M}, \\mathrm{III}-\\mathrm{N} \\)</span>`,
@@ -696,7 +696,7 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider a binary search tree (BST) with \\( n \\) leaf nodes \\( (n&gt;0) \\). Given any node \\( V \\), the key present in the node is denoted as \\( \\operatorname{Val}(V) \\). All the keys present in the given BST are distinct. The keys belong to the set of real numbers.<br/><br/>For a node \\( V \\), let \\( \\operatorname{Suc}(V) \\) denote the node that is its inorder successor. If a node \\( V \\) does not have an inorder successor, then \\( \\operatorname{Suc}(V) \\) is \\( N U L L \\). As there are no duplicates, if \\( \\operatorname{Suc}(V) \\) is not \\( N U L L \\), then \\( \\operatorname{Val}(V)&lt;\\operatorname{Val}(\\operatorname{Suc}(V)) \\) .<br/><br/>Corresponding to every leaf node \\( L_{i} \\) that has a non-NULL \\( \\operatorname{Suc}\\left(L_{i}\\right) \\), a new key \\( k_{i} \\) with the following property is to be inserted into the BST.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\operatorname{Val}\\left(L_{i}\\right)&amp;nbsp; &lt; k_{i} &lt; Val (\\operatorname{Suc}(L_{i})) \\] <br/><br/>Let \\( K \\) represent the list of all such new keys to be inserted into the BST. </p> <p>Which of the following statements is/are true?</p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider a binary search tree (BST) with \\( n \\) leaf nodes \\( (n>0) \\). Given any node \\( V \\), the key present in the node is denoted as \\( \\operatorname{Val}(V) \\). All the keys present in the given BST are distinct. The keys belong to the set of real numbers.<br/><br/>For a node \\( V \\), let \\( \\operatorname{Suc}(V) \\) denote the node that is its inorder successor. If a node \\( V \\) does not have an inorder successor, then \\( \\operatorname{Suc}(V) \\) is \\( N U L L \\). As there are no duplicates, if \\( \\operatorname{Suc}(V) \\) is not \\( N U L L \\), then \\( \\operatorname{Val}(V)<\\operatorname{Val}(\\operatorname{Suc}(V)) \\) .<br/><br/>Corresponding to every leaf node \\( L_{i} \\) that has a non-NULL \\( \\operatorname{Suc}\\left(L_{i}\\right) \\), a new key \\( k_{i} \\) with the following property is to be inserted into the BST.<br/>\\[ \\operatorname{Val}\\left(L_{i}\\right)  < k_{i} < Val (\\operatorname{Suc}(L_{i})) \\] <br/><br/>Let \\( K \\) represent the list of all such new keys to be inserted into the BST. </p> <p>Which of the following statements is/are true?</p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( K \\) cannot have any duplicates</span>`,
@@ -816,7 +816,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider the canonical \\( L R(0) \\) parsing of the grammar below using terminals \\( \\{a, b, c\\} \\) and non-terminals \\( \\{A, B, C, S\\} \\) with \\( S \\) as the start symbol. </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{l} S \\rightarrow A C B \\\\ A \\rightarrow a A \\mid \\epsilon \\\\ C \\rightarrow c C \\mid \\epsilon \\\\ B \\rightarrow b B \\mid b \\end{array} \\] <br/>Which one of the following options gives the number of shift-reduce conflicts that will occur in the \\( L R(0) \\) ACTION table? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider the canonical \\( L R(0) \\) parsing of the grammar below using terminals \\( \\{a, b, c\\} \\) and non-terminals \\( \\{A, B, C, S\\} \\) with \\( S \\) as the start symbol. </p> <p>\\[ \\begin{array}{l} S \\rightarrow A C B \\\\ A \\rightarrow a A \\mid \\epsilon \\\\ C \\rightarrow c C \\mid \\epsilon \\\\ B \\rightarrow b B \\mid b \\end{array} \\] <br/>Which one of the following options gives the number of shift-reduce conflicts that will occur in the \\( L R(0) \\) ACTION table? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( 2 \\)</span>`,
@@ -831,7 +831,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider the following \\( 4 \\)-variable Boolean function </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ F(A, B, C, D)=\\Sigma m(0,1,2,3,8,9,10,11) \\]<br/>Consider \\( A \\) as MSB, \\( D \\) as LSB. Which one of the following options represents the minimal sum of products form for the above function? </p> <p>Note: \\( {+} \\) is OR operation, \\( {\\cdot} \\) is AND operation, \\( {\\prime} \\) is NOT operation </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider the following \\( 4 \\)-variable Boolean function </p> <p>\\[ F(A, B, C, D)=\\Sigma m(0,1,2,3,8,9,10,11) \\]<br/>Consider \\( A \\) as MSB, \\( D \\) as LSB. Which one of the following options represents the minimal sum of products form for the above function? </p> <p>Note: \\( {+} \\) is OR operation, \\( {\\cdot} \\) is AND operation, \\( {\\prime} \\) is NOT operation </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( A^{\\prime}+B^{\\prime}+C^{\\prime}+D^{\\prime} \\)</span>`,
@@ -846,7 +846,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider a table \\( T \\), where the elements \\( T[i][j], 0 \\leq i, j \\leq n \\), represent the cost of the optimal solutions of different subproblems of a problem that is being solved using a dynamic programming algorithm. The recursive formulation to compute the table entries is as follows: </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{ll} T[0][k]=T[k][0]=1 &amp; \\text { for } k=0,1,2, \\ldots, n \\\\ T[i][j]=2 T[i-1][j]+3 T[i][j-1] &amp; \\text { for } 1 \\leq i, j \\leq n \\end{array} \\] <br/>Consider the following two algorithms to compute entries of \\( T \\). Assume that for both the algorithms, for all \\( 0 \\leq i, j \\leq n, T[i][j] \\) has been initialized to \\( 1 \\).<br/>Algorithm \\( B_{1} \\) : For \\( i=1,2, \\ldots, n \\)<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{l} \\text { For } j=1,2, \\ldots, n \\\\ \\qquad T[i][j]=2 T[i-1][j]+3 T[i][j-1] \\end{array} \\] <br/>Algorithm \\( B_{2}: \\) For \\( s=2,3, \\ldots, 2 n \\)<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \\[ \\begin{array}{l} \\text { For } i=1,2, \\ldots, n \\\\ \\qquad \\begin{array}{l} \\text { For } j=1,2, \\ldots, n \\\\ \\qquad \\text { If }(i+j==s) \\\\ \\quad\\quad\\quad\\quad T[i][j]=2 T[i-1][j]+3 T[i][j-1] \\end{array} \\end{array} \\] <br/>Algorithm \\( B_{k}, k \\in\\{1,2\\} \\) is said to be correct if and only if it calculates the correct values of \\( T[i][j] \\), for all \\( 0 \\leq i, j \\leq n \\), (as per the recursive formulation) at the end of the execution of the algorithm \\( B_{k} \\).<br/><br/>Which one of the following statements is true? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider a table \\( T \\), where the elements \\( T[i][j], 0 \\leq i, j \\leq n \\), represent the cost of the optimal solutions of different subproblems of a problem that is being solved using a dynamic programming algorithm. The recursive formulation to compute the table entries is as follows: </p> <p>\\[ \\begin{array}{ll} T[0][k]=T[k][0]=1 & \\text { for } k=0,1,2, \\ldots, n \\\\ T[i][j]=2 T[i-1][j]+3 T[i][j-1] & \\text { for } 1 \\leq i, j \\leq n \\end{array} \\] <br/>Consider the following two algorithms to compute entries of \\( T \\). Assume that for both the algorithms, for all \\( 0 \\leq i, j \\leq n, T[i][j] \\) has been initialized to \\( 1 \\).<br/>Algorithm \\( B_{1} \\) : For \\( i=1,2, \\ldots, n \\)<br/>\\[ \\begin{array}{l} \\text { For } j=1,2, \\ldots, n \\\\ \\qquad T[i][j]=2 T[i-1][j]+3 T[i][j-1] \\end{array} \\] <br/>Algorithm \\( B_{2}: \\) For \\( s=2,3, \\ldots, 2 n \\)<br/>\\[ \\begin{array}{l} \\text { For } i=1,2, \\ldots, n \\\\ \\qquad \\begin{array}{l} \\text { For } j=1,2, \\ldots, n \\\\ \\qquad \\text { If }(i+j==s) \\\\ \\quad\\quad\\quad\\quad T[i][j]=2 T[i-1][j]+3 T[i][j-1] \\end{array} \\end{array} \\] <br/>Algorithm \\( B_{k}, k \\in\\{1,2\\} \\) is said to be correct if and only if it calculates the correct values of \\( T[i][j] \\), for all \\( 0 \\leq i, j \\leq n \\), (as per the recursive formulation) at the end of the execution of the algorithm \\( B_{k} \\).<br/><br/>Which one of the following statements is true? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Both algorithms \\( B_{1} \\) and \\( B_{2} \\) are correct</span>`,
@@ -861,7 +861,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider an array \\( A \\) of integers of size \\( n \\). The indices of \\( A \\) run from \\( 1 \\) to \\( n \\). An algorithm is to be designed to check whether \\( A \\) satisfies the condition given below. </p> <p> \\( \\forall i, j \\in\\{1, \\ldots, n-1\\} \\) such that \\( i&gt;j,(A[i+1]-A[i])&gt;(A[j+1]-A[j]) \\) </p> <p>Which one of the following gives the worst case time complexity of the fastest algorithm that can be designed for the problem?</p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider an array \\( A \\) of integers of size \\( n \\). The indices of \\( A \\) run from \\( 1 \\) to \\( n \\). An algorithm is to be designed to check whether \\( A \\) satisfies the condition given below. </p> <p> \\( \\forall i, j \\in\\{1, \\ldots, n-1\\} \\) such that \\( i>j,(A[i+1]-A[i])>(A[j+1]-A[j]) \\) </p> <p>Which one of the following gives the worst case time complexity of the fastest algorithm that can be designed for the problem?</p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( \\Theta(n) \\)</span>`,
@@ -891,7 +891,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p></p> <p>Consider a complete graph \\( K_{n} \\) with \\( n \\) vertices ( \\( n&gt;4 \\) ). Note that multiple spanning trees can be constructed over \\( K_{n} \\). Each of these spanning trees is represented as a set of edges. The Jaccard coefficient between any two sets is defined as the ratio of the size of the intersection of the two sets to the size of the union of the two sets. </p> <p>Which one of the following options gives the lowest possible value for the Jaccard coefficient between any two spanning trees of \\( K_{n} \\) ? </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p></p> <p>Consider a complete graph \\( K_{n} \\) with \\( n \\) vertices ( \\( n>4 \\) ). Note that multiple spanning trees can be constructed over \\( K_{n} \\). Each of these spanning trees is represented as a set of edges. The Jaccard coefficient between any two sets is defined as the ratio of the size of the intersection of the two sets to the size of the union of the two sets. </p> <p>Which one of the following options gives the lowest possible value for the Jaccard coefficient between any two spanning trees of \\( K_{n} \\) ? </p> <p></p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">\\( \\frac{1}{n} \\)</span>`,
