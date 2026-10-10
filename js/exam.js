@@ -1220,7 +1220,8 @@ function openInstructions(testName, seriesId) {
 
   const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
   const isWeeklyQuiz = (testName || "").includes("WQT") || (testName || "").toUpperCase().includes("WEEKLY QUIZ");
-  const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("FLT") || (testName || "").includes("FST");
+  const isGatePyq = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || (testName || "").toUpperCase().includes("GATE CSE"));
+  const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("FLT") || (testName || "").includes("FST") || isGatePyq;
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
@@ -1457,7 +1458,8 @@ async function startPlayer(testName, fetchedQuestions) {
   const testNameUpper = (testName || "").toUpperCase();
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
-  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST");
+  const isGatePyqTest = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || testNameUpper.includes("GATE CSE"));
+  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST") || isGatePyqTest;
   
   if (isFullTest) {
     playerDurationMins = 180;
