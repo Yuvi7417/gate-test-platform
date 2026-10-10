@@ -2758,3 +2758,898 @@ registerTest({
         },
     ]
 });
+
+registerTest({
+    series: "cse-gate-2027",
+    name: "GATE CSE 2025 SET-1",
+    date: "Feb 09, 2025",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>According to the map shown in the figure, which one of the following statements is correct?</p> <div> <p>Note: The figure shown is representative.</p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_12892923086438990968.png"/></p> <p> </p> </div> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The library is located to the northwest of the canteen.</span>`,
+                `<span style="display: inline;">The hospital is located to the east of the chemistry lab.</span>`,
+                `<span style="display: inline;">The chemistry lab is to the southeast of physics lab.</span>`,
+                `<span style="display: inline;">The classrooms and canteen are next to each other.</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460096" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the relationships among \( \mathrm{P}, \mathrm{Q}, \mathrm{R}, \mathrm{S} \), and \( \mathrm{T} \) : </p> <div> <ul> <li> \( \mathrm{P} \) is the brother of \( \mathrm{Q} \). </li> <li> \( \mathrm{S} \) is the daughter of \( \mathrm{Q} \). </li> <li> \( \mathrm{T} \) is the sister of \( \mathrm{S} \). </li> <li> \( \mathrm{R} \) is the mother of \( \mathrm{Q} \). </li> </ul> <p>The following statements are made based on the relationships given above.</p> <ol> <li> \( \mathrm{R} \) is the grandmother of \( \mathrm{S} \). </li> <li> \( \mathrm{P} \) is the uncle of \( \mathrm{S} \) and \( \mathrm{T} \). </li> <li> \( \mathrm{R} \) has only one son. </li> <li> \( \mathrm{Q} \) has only one daughter. </li> </ol> <p>Which one of the following options is correct?</p> </div> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Both \( (1) \) and \( (2) \) are true.</span>`,
+                `<span style="display: inline;">Both \( (1) \) and \( (3) \) are true.</span>`,
+                `<span style="display: inline;">Only \( (3) \) is true.</span>`,
+                `<span style="display: inline;">Only \( (4) \) is true.</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460097" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>The average marks obtained by a class in an examination were calculated as \( 30.8 \). However, while checking the marks entered, the teacher found that the marks of one student were entered incorrectly as \( 24 \) instead of \( 42 \). After correcting the marks, the average becomes \( 31.4 \). How many students does the class have? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 25 \)</span>`,
+                `<span style="display: inline;">\( 28 \)</span>`,
+                `<span style="display: inline;">\( 30 \)</span>`,
+                `<span style="display: inline;">\( 32 \)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460098" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>The CEO's decision to downsize the workforce was considered \( \\underline{myopic} \) because it sacrificed long-term stability to accommodate short-term gains. </p> <div> <p>Select the most appropriate option that can replace the word "myopic" without changing the meaning of the sentence.</p> </div> <p> </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">visionary</span>`,
+                `<span style="display: inline;">shortsighted</span>`,
+                `<span style="display: inline;">progressive</span>`,
+                `<span style="display: inline;">innovative</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460099" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Ravi had _______ younger brother who taught at _________ university. He was widely regarded as ________ honorable man.</p> <div> <p>Select the option with the correct sequence of articles to fill in the blanks.</p> </div> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \mathrm{a; a; an} \)</span>`,
+                `<span style="display: inline;">\( \mathrm{the; an; a} \)</span>`,
+                `<span style="display: inline;">\( \mathrm{a ; an ; a} \)</span>`,
+                `<span style="display: inline;">\( \mathrm{an; an; a} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460100" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A shop has \( 4 \) distinct flavors of ice-cream. One can purchase any number of scoops of any flavor. The order in which the scoops are purchased is inconsequential. If one wants to purchase \( 3 \) scoops of ice-cream, in how many ways can one make that purchase? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 4 \)</span>`,
+                `<span style="display: inline;">\( 20 \)</span>`,
+                `<span style="display: inline;">\( 24 \)</span>`,
+                `<span style="display: inline;">\( 48 \)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460091" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A square paper, shown in figure \( (I) \), is folded along the dotted lines as shown in the figures \( (II) \) and \( (III) \). Then a few cuts are made as shown in figure \( (IV) \). Which one of the following patterns will be obtained when the paper is unfolded? </p> <div> <p>Note: The figures shown are representative.</p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_12776002391693517573.png"/></p> </div> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><img src="images/gate-cse-2025-set-1/blob_4020672311166310599.png"/></span>`,
+                `<span style="display: inline;"><img src="images/gate-cse-2025-set-1/blob_13763868169104718046.png"/></span>`,
+                `<span style="display: inline;"><img src="images/gate-cse-2025-set-1/blob_7105292955375656820.png"/></span>`,
+                `<span style="display: inline;"><img src="images/gate-cse-2025-set-1/blob_3686712681937115125.png"/></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460092" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A fair six-faced dice, with the faces labelled <b>‘ </b> \( 1 \) <b>’</b>, <b>‘ </b> \( 2 \) <b>’</b>, <b>‘</b> \( 3 \) <b>’</b>, <b>‘</b> \( 4 \) <b>’</b>, <b>‘</b> \( 5 \) <b>’</b>, and <b>‘</b> \( 6 \) <b>’</b>, is rolled thrice. What is the probability of rolling <b>‘</b> \( 6 \) <b>’</b> exactly once? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p> \( \dfrac{75}{216} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{1}{6} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{1}{18} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{25}{216} \) </p></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460093" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>In the diagram, the lines QR and ST are parallel to each other. The shortest distance between these two lines is half the shortest distance between the point P and line QR. What is the ratio of the area of the triangle PST to the area of the trapezium SQRT?</p> <div> <p>Note: The figure shown is representative.</p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_16053245722414132310.png"/></p> </div> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p> \( \dfrac{1}{3} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{1}{4} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{2}{5} \) </p></span>`,
+                `<span style="display: inline;"><p> \( \dfrac{1}{2} \) </p></span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460094" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>"I put the brown paper in my pocket along with the chalks, and possibly other things. I suppose every one must have reflected how primeval and how poetical are the things that one carries in one's pocket: the pocket-knife, for instance the type of all human tools, the infant of the sword. Once I planned to write a book of poems entirely about the things in my pocket. But I found it would be too long: and the age of the great epics is past."<br/>(From G.K. Chesterton's "A Piece of Chalk")<br/>Based only on the information provided in the above passage, which one of the following statements is true?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The author of the passage carries a mirror in his pocket to reflect upon things.</span>`,
+                `<span style="display: inline;">The author of the passage had decided to write a poem on epics.</span>`,
+                `<span style="display: inline;">The pocket-knife is described as the infant of the sword.</span>`,
+                `<span style="display: inline;">Epics are described as too inconvenient to write.</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460095" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node. Suppose a Min-Heap \( \text{T} \) stores \( 32 \) keys. The height of \( \text{T} \) is ___________. (Answer in integer) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460055" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p> </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">void</span><span class="pln"> foo</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">p</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> x</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pun">*</span><span class="pln">p</span><span class="pun">=</span><span class="pln">x</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span></li><li class="L4"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">(){</span></li><li class="L5"><span class="kwd">int</span><span class="pln"> </span><span class="pun">*</span><span class="pln">z</span><span class="pun">;</span></li><li class="L6"><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pun">,</span><span class="pln"> b </span><span class="pun">=</span><span class="pln"> </span><span class="lit">25</span><span class="pun">;</span></li><li class="L7"><span class="pln">z </span><span class="pun">=</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">a</span><span class="pun">;</span></li><li class="L8"><span class="pln">foo</span><span class="pun">(</span><span class="pln">z</span><span class="pun">,</span><span class="pln">b</span><span class="pun">);</span></li><li class="L9"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">a</span><span class="pun">);</span></li><li class="L0"><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <p>The output of the given \( \text{C} \) program is __________. (Answer in integer) </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "25",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460056" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>The pseudocode of a function \( \text{fun ()} \) is given below:<br/> </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="pln">fun</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> A</span><span class="pun">[</span><span class="lit">0</span><span class="pun">,....,</span><span class="pln">n</span><span class="pun">-</span><span class="lit">1</span><span class="pun">])</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="kwd">for</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">0</span><span class="pln"> to n</span><span class="pun">-</span><span class="lit">2</span></li><li class="L2"><span class="kwd">for</span><span class="pln"> j</span><span class="pun">=</span><span class="lit">0</span><span class="pln"> to n</span><span class="pun">-</span><span class="pln">i</span><span class="pun">-</span><span class="lit">2</span></li><li class="L3"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">A</span><span class="pun">[</span><span class="pln">j</span><span class="pun">]&gt;</span><span class="pln">A</span><span class="pun">[</span><span class="pln">j</span><span class="pun">+</span><span class="lit">1</span><span class="pun">])</span></li><li class="L4"><span class="kwd">then</span><span class="pln"> swap A</span><span class="pun">[</span><span class="pln">j</span><span class="pun">]</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> A</span><span class="pun">[</span><span class="pln">j</span><span class="pun">+</span><span class="lit">1</span><span class="pun">]</span></li><li class="L5"><span class="pun">}</span></li></ol></pre> <p>Let \( A[0, \ldots, 29] \) be an array storing \( 30 \) distinct integers in descending order. The number of swap operations that will be performed, if the function \( \text{fun ()} \) is called with \( A[0, \ldots, 29] \) as argument, is _________. (Answer in integer) </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "435",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460057" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A box contains \( 5 \) coins: \( 4 \) regular coins and \( 1 \) fake coin. When a regular coin is tossed, the probability \( P( \) head \( )=0.5 \) and for a fake coin, \( P( \) head \( )=1 \). You pick a coin at random and toss it twice, and get two heads. The probability that the coin you have chosen is the fake coin is __________. (rounded off to two decimal places) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.49:0.51",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460058" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the given function \( f(x) \). <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ f(x)=\left\{\begin{array}{ll} a x+b & \text { for } x<1 \\ x^{3}+x^{2}+1 & \text { for } x \geq 1 \end{array}\right. \] If the function is differentiable everywhere, the value of \( b \) must be ________. (rounded off to one decimal place) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "-2.1:-1.9",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460059" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let \( \text{S} \) be the set of all ternary strings defined over the alphabet \( \{a, b, c\} \). Consider all strings in \( \text{S} \) that contain at least one occurrence of two consecutive symbols, that is, \( \text{"aa"} \), \( \text{"bb"} \) or \( \text{"cc"} \). The number of such strings of length \( 5 \) that are possible is __________. (Answer in integer). </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "195",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460060" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Suppose in a multiprogramming environment, the following C program segment is executed. A process goes into I/O queue whenever an I/O related operation is performed. Assume that there will always be a context switch whenever a process requests for an I/O, and also whenever the process returns from an I/O. The number of times the process will enter the ready queue during its lifetime (not counting the time the process enters the ready queue when it is run initially) is ___________ . Answer in integer)</p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span></li><li class="L1"><span class="pun">{</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> x</span><span class="pun">=</span><span class="lit">0</span><span class="pun">,</span><span class="pln">i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">scanf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,&amp;</span><span class="pln">x</span><span class="pun">);</span></li><li class="L4"><span class="kwd">for</span><span class="pun">(</span><span class="pln">i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="lit">20</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span></li><li class="L5"><span class="pun">{</span></li><li class="L6"><span class="pln">x </span><span class="pun">=</span><span class="pln"> x</span><span class="pun">+</span><span class="lit">20</span><span class="pun">;</span></li><li class="L7"><span class="pln">printf</span><span class="pun">(</span><span class="str">"%d\n"</span><span class="pun">,</span><span class="pln">x</span><span class="pun">);</span></li><li class="L8"><span class="pun">}</span></li><li class="L9"><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L0"><span class="pun">}</span></li></ol></pre> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "21",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460061" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>A regular language \( L \) is accepted by a non-deterministic finite automaton (NFA) with \( n \) states. Which of the following statement(s) is/are FALSE? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( L \) may have an accepting NFA with \( < n \) states.</span>`,
+                `<span style="display: inline;">\( L \) may have an accepting DFA with \( <n \) states.</span>`,
+                `<span style="display: inline;">There exists a DFA with \( \leq 2^{n} \) states that accepts \( L \).</span>`,
+                `<span style="display: inline;">Every DFA that accepts \( L \) has \( >2^{n} \) states.</span>`
+            ],
+            answer: ["D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460062" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>A partial data path of a processor is given in the figure, where \( \text{RA, RB,} \) and \( \text{RZ} \) are \( 32 \)-bit registers. Which option(s) is/are CORRECT related to arithmetic operations using the data path as shown? </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_8903975952994087203.png"/></p> <p> </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The data path can implement arithmetic operations involving two registers.</span>`,
+                `<span style="display: inline;">The data path can implement arithmetic operations involving one register and one immediate value.</span>`,
+                `<span style="display: inline;">The data path can implement arithmetic operations involving two immediate values.</span>`,
+                `<span style="display: inline;">The data path can only implement arithmetic operations involving one register and one immediate value.</span>`
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460063" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Which of the following statement(s) is/are TRUE for any binary search tree (BST) having \( n \) distinct integers? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The maximum length of a path from the root node to any other node is \( (n-1) \).</span>`,
+                `<span style="display: inline;">An inorder traversal will always produce a sorted sequence of elements.</span>`,
+                `<span style="display: inline;">Finding an element takes \( O\left(\log _{2} n\right) \) time in the worst case.</span>`,
+                `<span style="display: inline;">Every BST is also a Min-Heap.</span>`
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460064" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>The number \( -6 \) can be represented as \( 1010 \) in \( 4 \)-bit \( 2 \)'s complement representation. Which of the following is/are CORRECT \( 2 \) 's complement representation(s) of \( -6 \)? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 1000 \: 1010 \) in \( 8 \) -bits</span>`,
+                `<span style="display: inline;">\( 1111 \: 1010 \) in \( 8 \)-bits</span>`,
+                `<span style="display: inline;">\( 1000 \: 0000 \: 0000 \:1010 \) in \( 16 \)-bits</span>`,
+                `<span style="display: inline;">\( 1111 \: 1111 \: 1111 \: 1010 \) in \( 16 \)-bits</span>`
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460065" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Let \( X \) be a \( 3 \)-variable Boolean function that produces output as \( '1' \) when at least two of the input variables are \( '1' \). Which of the following statement(s) is/are CORRECT, where \( a, b, c, d, e \) are Boolean variables? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( X(a, b, X(c, d, e))=X(X(a, b, c), d, e) \)</span>`,
+                `<span style="display: inline;">\( X(a, b, X(a, b, c))=X(a, b, c) \)</span>`,
+                `<span style="display: inline;">\( X(a, b, X(a, c, d))=(X(a, b, a) \) AND \( X(c, d, c)) \)</span>`,
+                `<span style="display: inline;">\( X(a, b, c)=X(a, X(a, b, c), X(a, c, c)) \)</span>`
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460066" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the given system of linear equations for variables \( x \) and \( y \), where \( k \) is a real-valued constant. Which of the following option(s) is/are CORRECT?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{l} x+k y=1 \\ k x+y=-1 \end{array} \] </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">There is exactly one value of \( k \) for which the above system of equations has no solution.</span>`,
+                `<span style="display: inline;">There exist an infinite number of values of \( k \) for which the system of equations has no solution.</span>`,
+                `<span style="display: inline;">There exists exactly one value of \( k \) for which the system of equations has exactly one solution.</span>`,
+                `<span style="display: inline;">There exists exactly one value of \( k \) for which the system of equations has an infinite number of solutions.</span>`
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460067" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the \( 3 \)-way handshaking protocol for TCP connection establishment. Let the three packets exchanged during the connection establishment be denoted as \( \text{P1, P2} \), and \( \text{P3} \), in order. Which of the following option(s) is/are TRUE with respect to TCP header flags that are set in the packets? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \mathrm{P} 3: \mathrm{SYN}=1, \mathrm{ACK}=1 \)</span>`,
+                `<span style="display: inline;">\( \mathrm{P} 2: \mathrm{SYN}=1, \mathrm{ACK}=1 \)</span>`,
+                `<span style="display: inline;">\( \text{P2} \): \( \mathrm{SYN}=0, \mathrm{ACK}=1 \)</span>`,
+                `<span style="display: inline;">\( \text{P1: SYN = 1} \)</span>`
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460068" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following \( B^{+} \)tree with \( 5 \) nodes, in which a node can store at most \( 3 \) key values The value \( 23 \) is now inserted in the \( B^{+} \)tree. Which of the following options(s) is/are CORRECT? </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_7191912202972147124.png"/></p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">None of the nodes will split.</span>`,
+                `<span style="display: inline;">At least one node will split and redistribute.</span>`,
+                `<span style="display: inline;">The total number of nodes will remain same.</span>`,
+                `<span style="display: inline;">The height of the tree will increase.</span>`
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460069" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following recurrence relation:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ T(n)=2 T(n-1)+n 2^{n} \text { for } n>0, \quad T(0)=1 \] </p> <p>Which ONE of the following options is CORRECT?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( T(n)=\Theta\left(n^{2} 2^{n}\right) \)</span>`,
+                `<span style="display: inline;">\( T(n)=\Theta\left(n 2^{n}\right) \)</span>`,
+                `<span style="display: inline;">\( T(n)=\Theta\left((\log n)^{2} 2^{n}\right) \)</span>`,
+                `<span style="display: inline;">\( T(n)=\Theta\left(4^{n}\right) \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460070" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following context-free grammar \( G \), where \( S, A \), and \( B \) are the variables (non-terminals), \( a \) and \( b \) are the terminal symbols, \( S \) is the start variable, and the rules of \( G \) are described as:<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{l} S \rightarrow a a B \mid A b b \\ A \rightarrow a \mid a A \\ B \rightarrow b \mid b B \end{array} \] <br/>Which ONE of the languages \( L(G) \) is accepted by \( G \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( L(G)=\left\{a^{2} b^{n} \mid n \geq 1\right\} \cup\left\{a^{n} b^{2} \mid n \geq 1\right\} \)</span>`,
+                `<span style="display: inline;">\( L(G)=\left\{a^{n} b^{2 n} \mid n \geq 1\right\} \cup\left\{a^{2 n} b^{n} \mid n \geq 1\right\} \)</span>`,
+                `<span style="display: inline;">\( L(G)=\left\{a^{n} b^{n} \mid n \geq 1\right\} \)</span>`,
+                `<span style="display: inline;">\( L(G)=\left\{a^{2 n} b^{2 n} \mid n \geq 1\right\} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460071" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Let \( G \) be any undirected graph with positive edge weights, and \( T \) be a minimum spanning tree of \( G \). For any two vertices, \( u \) and \( v \), let \( d_{1}(u, v) \) and \( d_{2}(u, v) \) be the shortest distances between \( u \) and \( v \) in \( G \) and \( T \), respectively. Which ONE of the options is CORRECT for all possible \( G, T, u \) and \( v \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( d_{1}(u, v)=d_{2}(u, v) \)</span>`,
+                `<span style="display: inline;">\( d_{1}(u, v) \leq d_{2}(u, v) \)</span>`,
+                `<span style="display: inline;">\( d_{1}(u, v) \geq d_{2}(u, v) \)</span>`,
+                `<span style="display: inline;">\( d_{1}(u, v) \neq d_{2}(u, v) \)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460072" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p> \( g(\cdot) \) is a function from \( A \) to \( B \), \( f(\cdot) \) is a function from \( B \) to \( C \), and their composition defined as \( f(g(\cdot)) \) is a mapping from \( A \) to \( C \). </p> <p>If \( f(\cdot) \) and \( f(g(\cdot)) \) are onto (surjective) functions, which ONE of the following is TRUE about the function \( g(\cdot) \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( g(\cdot) \) must be an onto (surjective) function.</span>`,
+                `<span style="display: inline;">\( g(\cdot) \) must be a one-to-one (injective) function.</span>`,
+                `<span style="display: inline;">\( g(\cdot) \) must be a bijective function, that is, both one-to-one and onto.</span>`,
+                `<span style="display: inline;">\( g(\cdot) \) is not required to be a one-to-one or onto function.</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460073" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Identify the ONE CORRECT matching between the OSI layers and their corresponding functionalities as shown.</p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{|l|l|} \hline & \textbf{OSI Layers} && \textbf{Functionalities} \\ \hline (a) & \text{Network Layer} & (I) & \text{Packet Routing} \\ \hline (b) & \text{Transport Layer} & (II) & \text{Framing and error handling} \\ \hline (c) & \text{Datalink layer} & (III) & \text{Host to host communication} \\ \hline \end{array} \] </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \text{(a)-(I), (b)-(II), (c)-(III)} \)</span>`,
+                `<span style="display: inline;">\( \text{(a)-(I), (b)-(III), (c)-(II)} \)</span>`,
+                `<span style="display: inline;">\( \text{(a)-(II), (b)-(I), (c)-(III)} \)</span>`,
+                `<span style="display: inline;">\( \text{(a)-(III), (b)-(II), (c)-(I)} \)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460074" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A schedule of three database transactions \( T_{1}, T_{2} \), and \( T_{3} \) is shown. \( R_{i}(A) \) and \( W_{i}(A) \) denote read and write of data item \( A \) by transaction \( T_{i}, i=1,2,3 \). The transaction \( T_{1} \) aborts at the end. Which other transaction(s) will be required to be rolled back?<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ R_{1}(X) W_{1}(Y) R_{2}(X) R_{2}(Y) R_{3}(Y) \operatorname{ABORT}\left(T_{1}\right) \] </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Only \( T_{2} \)</span>`,
+                `<span style="display: inline;">Only \( T_{3} \)</span>`,
+                `<span style="display: inline;">Both \( T_{2} \) and \( T_{3} \)</span>`,
+                `<span style="display: inline;">Neither \( T_{2} \) nor \( T_{3} \)</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460075" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider a demand paging memory management system with \( 32 \)-bit logical address, \( 20 \)-bit physical address, and page size of \( 2048 \) bytes. Assuming that the memory is byte addressable, what is the maximum number of entries in the page table? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 2^{21} \)</span>`,
+                `<span style="display: inline;">\( 2^{20} \)</span>`,
+                `<span style="display: inline;">\( 2^{22} \)</span>`,
+                `<span style="display: inline;">\( 2^{24} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460076" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Which ONE of the following techniques used in compiler code optimization uses live variable analysis? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Run-time function call management</span>`,
+                `<span style="display: inline;">Register assignment to variables</span>`,
+                `<span style="display: inline;">Strength reduction</span>`,
+                `<span style="display: inline;">Constant folding</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460077" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Which ONE of the following statements is <strong>FALSE</strong> regarding the symbol table?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Symbol table is responsible for keeping track of the scope of variables.</span>`,
+                `<span style="display: inline;">Symbol table can be implemented using a binary search tree.</span>`,
+                `<span style="display: inline;">Symbol table is not required after the parsing phase.</span>`,
+                `<span style="display: inline;">Symbol table is created during the lexical analysis phase.</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460079" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Suppose a program is running on a non-pipelined single processor computer system. The computer is connected to an external device that can interrupt the processor asynchronously. The processor needs to execute the interrupt service routine (ISR) to serve this interrupt. The following steps (not necessarily in order) are taken by the processor when the interrupt arrives:</p> <ol start="1" style="list-style-type: lower-roman;"> <li>The processor saves the content of the program counter.</li> <li>The program counter is loaded with the start address of the ISR.</li> <li>The processor finishes the present instruction.</li> </ol> <p>Which ONE of the following is the CORRECT sequence of steps?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \text{(iii), (i), (ii)} \)</span>`,
+                `<span style="display: inline;">\( \text{(i), (iii), (ii)} \)</span>`,
+                `<span style="display: inline;">\( \text{(i), (ii), (iii)} \)</span>`,
+                `<span style="display: inline;">\( \text{(iii), (ii), (i)} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460080" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>In a double hashing scheme, \( h_{1}(k)=k \bmod 11 \) and \( h_{2}(k)=1+(k \bmod 7) \) are the auxiliary hash functions. The size \( m \) of the hash table is \( 11 \). The hash function for the \( i \)-th probe in the open address table is \( \left[h_{1}(k)+i h_{2}(k)\right] \bmod m \). The following keys are inserted in the given order: \( 63,50,25,79,67,24 \). The slot at which key \( 24 \) gets stored is ___________ . (Answer in integer) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "10",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460025" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>The maximum value of \( \text{x} \) such that the edge between the nodes \( \text{B} \) and \( \text{C} \) is included in every minimum spanning tree of the given graph is _________. (answer in integer) </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_14721615329611004678.png"/></p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460026" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following C program:</p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> gate </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="kwd">int</span><span class="pln"> d</span><span class="pun">,</span><span class="pln"> t</span><span class="pun">,</span><span class="pln"> newnum</span><span class="pun">,</span><span class="pln"> turn</span><span class="pun">;</span></li><li class="L3"><span class="pln">newnum </span><span class="pun">=</span><span class="pln"> turn </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> t</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n</span><span class="pun">&gt;=</span><span class="pln">t</span><span class="pun">)</span><span class="pln"> t </span><span class="pun">*=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L5"><span class="pln">t </span><span class="pun">/=</span><span class="lit">10</span><span class="pun">;</span></li><li class="L6"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">t</span><span class="pun">&gt;</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L7"><span class="pln">d </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">/</span><span class="pln">t</span><span class="pun">;</span></li><li class="L8"><span class="pln">n </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">%</span><span class="pln">t</span><span class="pun">;</span></li><li class="L9"><span class="pln">t </span><span class="pun">/=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span></li><li class="L0"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">turn</span><span class="pun">)</span><span class="pln"> newnum </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">*</span><span class="pln">newnum </span><span class="pun">+</span><span class="pln"> d</span><span class="pun">;</span></li><li class="L1"><span class="pln">turn </span><span class="pun">=</span><span class="pln"> </span><span class="pun">(</span><span class="pln">turn </span><span class="pun">+</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">%</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span></li><li class="L2"><span class="pun">}</span></li><li class="L3"><span class="kwd">return</span><span class="pln"> newnum</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="kwd">int</span><span class="pln"> main </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L6"><span class="pln">printf </span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln"> gate</span><span class="pun">(</span><span class="lit">14362</span><span class="pun">));</span></li><li class="L7"><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p>The value printed by the given \( C \) program is ________. (Answer in integer) </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "46",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460027" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Let \( \mathrm{LIST} \) be a datatype for an implementation of linked list defined as follows: </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="kwd">typedef</span><span class="pln"> </span><span class="kwd">struct</span><span class="pln"> list </span><span class="pun">{</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> data</span><span class="pun">;</span></li><li class="L2"><span class="kwd">struct</span><span class="pln"> list </span><span class="pun">*</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L3"><span class="pun">}</span><span class="pln"> LIST</span><span class="pun">;</span></li></ol></pre> <p>Suppose a program has created two linked lists, \( L1 \) and \( L2 \), whose contents are given in the figure below (code for creating \( L1 \) and \( L2 \) is not provided here). \( L1 \) contains \( 9 \) nodes, and \( L2 \) contains \( 7 \) nodes.<br/><br/>Consider the following C program segment that modifies the list \( L1 \). The number of nodes that will be there in \( L1 \) after the execution of the code segment is __________. (Answer in integer) </p> <p><img src="images/gate-cse-2025-set-1/blob_13651802995364381728.png"/></p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="kwd">int</span><span class="pln"> find </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> query</span><span class="pun">,</span><span class="pln"> LIST </span><span class="pun">*</span><span class="pln">list</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L1"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">list </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="kwd">if</span><span class="pun">(</span><span class="pln">list</span><span class="pun">-&gt;</span><span class="pln">data </span><span class="pun">==</span><span class="pln"> query</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">;</span></li><li class="L3"><span class="pln">list </span><span class="pun">=</span><span class="pln"> list</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L4"><span class="pun">}</span></li><li class="L5"><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">;</span></li><li class="L6"><span class="pun">}</span></li><li class="L7"><span class="kwd">int</span><span class="pln"> main </span><span class="pun">(){</span></li><li class="L8"><span class="pun">...</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">...</span></li><li class="L9"><span class="pln">ptr1</span><span class="pun">=</span><span class="pln">L1</span><span class="pun">;</span><span class="pln"> ptr2</span><span class="pun">=</span><span class="pln">L2</span><span class="pun">;</span></li><li class="L0"><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">ptr1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> NULL</span><span class="pun">){</span></li><li class="L1"><span class="pln">query </span><span class="pun">=</span><span class="pln"> ptr1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="pln">data</span><span class="pun">;</span></li><li class="L2"><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">find </span><span class="pun">(</span><span class="pln">query</span><span class="pun">,</span><span class="pln"> L2</span><span class="pun">))</span></li><li class="L3"><span class="pln">ptr1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> ptr1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L4"><span class="kwd">else</span><span class="pln"> ptr1 </span><span class="pun">=</span><span class="pln"> ptr1</span><span class="pun">-&gt;</span><span class="kwd">next</span><span class="pun">;</span></li><li class="L5"><span class="pun">}</span></li><li class="L6"><span class="pun">...</span><span class="pln"> </span><span class="pun">....</span><span class="pln"> </span><span class="pun">...</span></li><li class="L7"><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L8"><span class="pun">}</span></li></ol></pre> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460028" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p> </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="com">#include</span><span class="pln"> </span><span class="str">&lt;stdio.h&gt;</span></li><li class="L1"><span class="kwd">int</span><span class="pln"> foo</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> S</span><span class="pun">[],</span><span class="kwd">int</span><span class="pln"> size</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span></li><li class="L2"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">size </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L3"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">size </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span></li><li class="L4"><span class="pln">    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">S</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> S</span><span class="pun">[</span><span class="lit">1</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">+</span><span class="pln">foo</span><span class="pun">(</span><span class="pln">S</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln">size</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L5"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> foo</span><span class="pun">(</span><span class="pln">S</span><span class="pun">+</span><span class="lit">1</span><span class="pun">,</span><span class="pln">size</span><span class="pun">-</span><span class="lit">1</span><span class="pun">);</span></li><li class="L6"><span class="pun">}</span></li><li class="L7"><span class="kwd">int</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></li><li class="L8"><span class="pln">    </span><span class="kwd">int</span><span class="pln"> A</span><span class="pun">[]={</span><span class="lit">0</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">0</span><span class="pun">,</span><span class="lit">0</span><span class="pun">,</span><span class="lit">1</span><span class="pun">,</span><span class="lit">1</span><span class="pun">};</span></li><li class="L9"><span class="pln">    printf</span><span class="pun">(</span><span class="str">"%d"</span><span class="pun">,</span><span class="pln">foo</span><span class="pun">(</span><span class="pln">A</span><span class="pun">,</span><span class="lit">9</span><span class="pun">));</span></li><li class="L0"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span></li><li class="L1"><span class="pun">}</span></li></ol></pre> <p>The value printed by the given \( C \) program is ___________. (Answer in integer) </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460029" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Consider the given sequential circuit designed using D-Flip-flops. The circuit is initialized with some value (initial state). The number of distinct states the circuit will go through before returning back to the initial state is ___________. (Answer in integer)</p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_3984206057288205587.png"/></p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "7:8",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460030" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Consider a finite state machine (FSM) with one input \( X \) and one output \( f \), represented by the given state transition table. The minimum number of states required to realize this FSM is _______. (Answer in integer). </p> <div><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \overset{\Large{\text{Present state Next state Output f}}}{\begin{array}{|c|c|c|c|c|c|} \hline \text{ $\qquad\qquad\qquad$} & \text{X=0} & \text{X=1} & \text{X=0} & \text{X=1} \\ \hline \text{A} & \text{F} & \text{B} & \text{0} & \text{0} \\ \hline \text{B} & \text{D} & \text{C} & \text{0} & \text{0} \\ \hline \text{C} & \text{F} & \text{E} & \text{0} & \text{0} \\ \hline \text{D} & \text{G} & \text{A} & \text{1} & \text{0} \\ \hline \text{E} & \text{D} & \text{C} & \text{0} & \text{0} \\ \hline \text{F} & \text{F} & \text{B} & \text{1} & \text{1} \\ \hline \text{G} & \text{G} & \text{H} & \text{0} & \text{1} \\ \hline \text{H} & \text{G} & \text{A} & \text{1} & \text{0} \\ \hline \end{array}} \] </div> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460031" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a probability distribution given by the density function \( P(x) \). <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ P(x)=\left\{\begin{aligned} C x^{2}, & \text { for } 1 \leq x \leq 4 \\ 0, & \text { for } x\lt1 \text { or } x>4 \end{aligned}\right. \] The probability that \( x \) lies between \( 2 \) and \( 3 \), i.e., \( P(2 \leq x \leq 3) \) is _________. (rounded off to three decimal places) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.3:0.302",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460032" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Suppose a message of size \( 15000 \) bytes is transmitted from a source to a destination using IPv4 protocol via two routers as shown in the figure. Each router has a defined maximum transmission unit (MTU) as shown in the figure, including IP header. The number of fragments that will be delivered to the destination is _________. (Answer in integer) </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_17544449804783509789.png"/></p> <p> </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "7",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460033" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Suppose a \( 5 \)-bit message is transmitted from a source to a destination through a noisy channel. The probability that a bit of the message gets flipped during transmission is \( 0.01 \). Flipping of each bit is independent of one another. The probability that the message is delivered error-free to the destination is ___________ (rounded off to three decimal places) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.949:0.952",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460034" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following database tables of a sports league.</p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="pln">player </span><span class="pun">(</span><span class="pln">pid</span><span class="pun">,</span><span class="pln"> pname</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">)</span><span class="pln">            team</span><span class="pun">(</span><span class="pln">tid</span><span class="pun">,</span><span class="pln"> tname</span><span class="pun">,</span><span class="pln"> city</span><span class="pun">,</span><span class="pln"> cid</span><span class="pun">)</span></li><li class="L1"><span class="pln">coach </span><span class="pun">(</span><span class="pln">cid</span><span class="pun">,</span><span class="pln"> cname</span><span class="pun">)</span><span class="pln">                  members </span><span class="pun">(</span><span class="pln">pid</span><span class="pun">,</span><span class="pln">tid</span><span class="pun">)</span></li></ol></pre> <p>An instance of the table and an SQL query are given.</p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{} \textbf{player} \\ \begin{array}{|c|c|} \hline \textbf{pid} & \textbf{pname} & \textbf{age} \\ \hline \text{1} & \text{Jasprit} & \text{31} \\ \hline \text{2} & \text{Atharva} & \text{24} \\ \hline \text{3} & \text{Ishan} & \text{26} \\ \hline \text{4} & \text{Axar} & \text{30} \\ \hline \end{array} \\ \end{array} \quad \begin{array}{} \textbf{coach} \\ \begin{array}{|c|c|} \hline \textbf{cid} & \textbf{cname} \\ \hline \text{101} & \text{Ricky} \\ \hline \text{102} & \text{Mark} \\ \hline \text{103} & \text{Trevor} \\ \hline \end{array} \\ \end{array} \quad \begin{array}{} \textbf{team} \\ \begin{array}{|c|c|c|} \hline \textbf{tid} & \textbf{tname} & \textbf{city} & \textbf{cid} \\ \hline \text{10} & \text{MI} & \text{Mumbai} & \text{102} \\ \hline \text{20} & \text{DC} & \text{Delhi} & \text{101} \\ \hline \text{30} & \text{PK} & \text{Mohali} & \text{103} \\ \hline \end{array} \\ \end{array} \quad \begin{array}{} \textbf{members} \\ \begin{array}{|c|c|} \hline \textbf{pid} & \textbf{tid} \\ \hline \text{1} & \text{10} \\ \hline \text{2} & \text{30} \\ \hline \text{3} & \text{10} \\ \hline \text{4} & \text{20} \\ \hline \end{array} \\ \end{array} \] </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="pln">SELECT MIN </span><span class="pun">(</span><span class="pln">P</span><span class="pun">.</span><span class="pln">age</span><span class="pun">)</span></li><li class="L1"><span class="pln">FROM player P</span></li><li class="L2"><span class="pln">WHERE P</span><span class="pun">.</span><span class="pln">pid IN </span><span class="pun">(</span></li><li class="L3"><span class="pln">    SELECT M</span><span class="pun">.</span><span class="pln">pid</span></li><li class="L4"><span class="pln">    FROM team T</span><span class="pun">,</span><span class="pln"> coach C</span><span class="pun">,</span><span class="pln"> members M</span></li><li class="L5"><span class="pln">    WHERE C</span><span class="pun">.</span><span class="pln">cname </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Mark'</span></li><li class="L6"><span class="pln">          AND T</span><span class="pun">.</span><span class="pln">cid </span><span class="pun">=</span><span class="pln"> C</span><span class="pun">.</span><span class="pln">cid</span></li><li class="L7"><span class="pln">          AND M</span><span class="pun">.</span><span class="pln">tid </span><span class="pun">=</span><span class="pln"> T</span><span class="pun">.</span><span class="pln">tid</span></li><li class="L8"><span class="pln">    </span><span class="pun">)</span></li></ol></pre> <p>The value returned by the given SQL query is _________. (Answer in integer)</p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "26",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460035" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>In optimal page replacement algorithm, information about all future page references is available to the operating system (OS). A modification of the optimal page replacement algorithm is as follows: The OS correctly predicts only up to next \( 4 \) page references (including the current page) at the time of allocating a frame to a page. A process accesses the pages in the following order of page numbers: <span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ 1,3,2,4,2,3,1,2,4,3,1,4 \] If the system has three memory frames that are initially empty, the number of page faults that will occur during execution of the process is __________. (Answer in integer) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "6",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460036" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>A computer has a memory hierarchy consisting of two-level cache \( \text{(L1} \) and \( \text{L2)} \) and a main memory. If the processor needs to access data from memory, it first looks into \( \text{L1} \) cache. If the data is not found in \( \text{L1} \) cache, it goes to \( \text{L2} \) cache. If it fails to get the data from \( \text{L2} \) cache, it goes to main memory, where the data is definitely available. Hit rates and access times of various memory units are shown in the figure. The average memory access time in nanoseconds \( (n s) \) is ________. (rounded off to two decimal places) </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_6096976136926686122.png"/></p> <p> </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "11.83:11.87",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460037" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p></p> <p>Refer to the given \( 3 \)-address code sequence. This code sequence is split into basic blocks. The number of basic blocks is ________. (Answer in integer) </p> <pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><ol class="linenums"><li class="L0"><span class="lit">1001</span><span class="pun">:</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span></li><li class="L1"><span class="lit">1002</span><span class="pun">:</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span></li><li class="L2"><span class="lit">1003</span><span class="pun">:</span><span class="pln"> t1 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">*</span><span class="pln">i</span></li><li class="L3"><span class="lit">1004</span><span class="pun">:</span><span class="pln"> t2 </span><span class="pun">=</span><span class="pln"> t1</span><span class="pun">+</span><span class="pln">j</span></li><li class="L4"><span class="lit">1005</span><span class="pun">:</span><span class="pln"> t3 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8</span><span class="pun">*</span><span class="pln">t2</span></li><li class="L5"><span class="lit">1006</span><span class="pun">:</span><span class="pln"> t4 </span><span class="pun">=</span><span class="pln"> t3</span><span class="pun">-</span><span class="lit">88</span></li><li class="L6"><span class="lit">1007</span><span class="pun">:</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">t4</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0.0</span></li><li class="L7"><span class="lit">1008</span><span class="pun">:</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> j</span><span class="pun">+</span><span class="lit">1</span></li><li class="L8"><span class="lit">1009</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> j </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="kwd">goto</span><span class="pln"> </span><span class="lit">1003</span></li><li class="L9"><span class="lit">1010</span><span class="pun">:</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">+</span><span class="lit">1</span></li><li class="L0"><span class="lit">1011</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="kwd">goto</span><span class="pln"> </span><span class="lit">1002</span></li><li class="L1"><span class="lit">1012</span><span class="pun">:</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span></li><li class="L2"><span class="lit">1013</span><span class="pun">:</span><span class="pln"> t5 </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">-</span><span class="lit">1</span></li><li class="L3"><span class="lit">1014</span><span class="pun">:</span><span class="pln"> t6 </span><span class="pun">=</span><span class="pln"> </span><span class="lit">88</span><span class="pun">*</span><span class="pln">t5</span></li><li class="L4"><span class="lit">1015</span><span class="pun">:</span><span class="pln"> a</span><span class="pun">[</span><span class="pln">t6</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1.0</span></li><li class="L5"><span class="lit">1016</span><span class="pun">:</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">+</span><span class="lit">1</span></li><li class="L6"><span class="lit">1017</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="kwd">goto</span><span class="pln"> </span><span class="lit">1013</span></li></ol></pre> <p> </p> <p></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "6",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460038" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A disk of size \( 512 \text{ M} \) bytes is divided into blocks of \( 64 \text{ K} \) bytes. A file is stored in the disk using linked allocation. In linked allocation, each data block reserves \( 4 \) bytes to store the pointer to the next data block. The link part of the last data block contains a NULL pointer (also of \( 4 \) bytes). Suppose a file of \( 1 \text{ M} \) bytes needs to be stored in the disk. Assume, \( 1 \mathrm{~K}=2^{10} \) and \( 1 \mathrm{M}=2^{20} \). The amount of space in bytes that will be wasted due to internal fragmentation is __________. (Answer in integer) </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "65468",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460039" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following deterministic finite automaton (DFA) defined over the alphabet, \( \Sigma=\{a, b\} \). Identify which of the following language(s) is/are accepted by the given DFA. </p> <p style="text-align:center"><img src="images/gate-cse-2025-set-1/blob_7915045237449375950.png"/></p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The set of all strings containing an even number of \( b \) 's.</span>`,
+                `<span style="display: inline;">The set of all strings containing the pattern \( b a b \).</span>`,
+                `<span style="display: inline;">The set of all strings ending with the pattern \( b a b \).</span>`,
+                `<span style="display: inline;">The set of all strings not containing the pattern \( a b a \).</span>`
+            ],
+            answer: ["C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460040" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p> \( A=\{0,1,2,3, \ldots\} \) is the set of non-negative integers. Let \( F \) be the set of functions from \( A \) to itself. For any two functions, \( f_{1}, f_{2} \in \mathrm{~F} \), we define </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \left(f_{1} \odot f_{2}\right)(n)=f_{1}(n)+f_{2}(n) \] </p> <p>for every number \( n \) in \( A \). Which of the following is/are CORRECT about the mathematical structure \( (\mathrm{F}, \odot) \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( (\mathrm{F}, \odot) \) is an Abelian group.</span>`,
+                `<span style="display: inline;">\( (\mathrm{F}, \odot) \) is an Abelian monoid.</span>`,
+                `<span style="display: inline;">\( (F, \odot) \) is a non-Abelian group.</span>`,
+                `<span style="display: inline;">\( (\mathrm{F}, \odot) \) is a non-Abelian monoid.</span>`
+            ],
+            answer: ["B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460041" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Which of the following predicate logic formulae/formula is/are CORRECT representation(s) of the statement: "Everyone has exactly one mother"?<br/><br/>The meanings of the predicates used are:</p> <ul> <li>mother \( (y, x): y \) is the mother of \( x \) </li> <li>noteq \( (x, y): x \) and \( y \) are not equal </li> </ul> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \forall x \exists y \exists z(\operatorname{mother}(y, x) \wedge \neg \operatorname{mother}(z, x)) \)</span>`,
+                `<span style="display: inline;">\( \forall x \exists y[\operatorname{mother}(y, x) \wedge \forall z( \operatorname{noteq} (z, y) \rightarrow \neg \operatorname{mother} (z, x))] \)</span>`,
+                `<span style="display: inline;">\( \forall x \forall y[\operatorname{mother}(y, x) \rightarrow \exists z( \operatorname{mother} (z, x) \wedge \neg \operatorname{note} q(z, y))] \)</span>`,
+                `<span style="display: inline;">\( \forall x \exists y[\operatorname{mother}(y, x) \wedge \neg \exists z( \operatorname{note} q(z, y) \wedge \operatorname{mother} (z, x))] \)</span>`
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460042" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider a relational schema team \( \text{(name,city,owner)} \), with functional dependencies \( \{\text{name} \rightarrow \text{city}, \text{name} \rightarrow \text{owner} \} \) .<br/><br/>The relation team is decomposed into two relations, \( \text{t1(name,city)} \) and \( \text{t2(name, owner)} \). Which of the following statement(s) is/are TRUE? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The relation team is NOT in BCNF .</span>`,
+                `<span style="display: inline;">The relations \( t 1 \) and \( t 2 \) are in BCNF.</span>`,
+                `<span style="display: inline;">The decomposition constitutes a lossless join.</span>`,
+                `<span style="display: inline;">The relation team is NOT in \( 3 \) NF .</span>`
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460043" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p></p> <p>Which of the following statement(s) is/are TRUE while computing \( \operatorname{First} \) and \( \operatorname{Follow} \) during top down parsing by a compiler? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">For a production \( A \rightarrow \epsilon, \epsilon \) will be added to \( \operatorname{First}(A) \).</span>`,
+                `<span style="display: inline;">If there is any input right end marker, it will be added to \( \text{First(S)} \), where \( S \) is the start symbol.</span>`,
+                `<span style="display: inline;">For a production \( A \rightarrow \epsilon, \epsilon \) will be added to Follow \( \text{(A)} \).</span>`,
+                `<span style="display: inline;">If there is any input right end marker, it will be added to \( \operatorname{Follow}(S) \), where \( \text{S} \) is the start symbol.</span>`
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460044" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following two languages over the alphabet \( \{a, b, c\} \), where \( m \) and \( n \) are natural numbers. </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{aligned} L_{1} & =\left\{a^{m} b^{m} c^{m+n} \mid m, n \geq 1\right\} \\ L_{2} & =\left\{a^{m} b^{n} c^{m+n} \mid m, n \geq 1\right\} \end{aligned} \] </p> <p>Which ONE of the following statements is CORRECT?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Both \( L_{1} \) and \( L_{2} \) are context-free languages.</span>`,
+                `<span style="display: inline;">\( L_{1} \) is a context-free language but \( L_{2} \) is not a context-free language.</span>`,
+                `<span style="display: inline;">\( L_{1} \) is not a context-free language but \( L_{2} \) is a context-free language.</span>`,
+                `<span style="display: inline;">Neither \( L_{1} \) nor \( L_{2} \) are context-free languages.</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460045" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following two languages over the alphabet \( \{a, b\} \): </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{l} L_{1}=\left\{\alpha \beta \alpha \mid \alpha \in\{a, b\}^{+} \text {AND } \beta \in\{a, b\}^{+}\right\} \\ L_{2}=\left\{\alpha \beta \alpha \mid \alpha \in\{a\}^{+} \text {AND } \beta \in\{a, b\}^{+}\right\} \end{array} \] </p> <p>Which ONE of the following statements is CORRECT?</p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Both \( L_{1} \) and \( L_{2} \) are regular languages.</span>`,
+                `<span style="display: inline;">\( L_{1} \) is a regular language but \( L_{2} \) is not a regular language.</span>`,
+                `<span style="display: inline;">\( L_{1} \) is not a regular language but \( L_{2} \) is a regular language.</span>`,
+                `<span style="display: inline;">Neither \( L_{1} \) nor \( L_{2} \) is a regular language.</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460046" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Let \( G(V, E) \) be an undirected and unweighted graph with \( 100 \) vertices. Let \( d(u, v) \) denote the number of edges in a shortest path between vertices \( u \) and \( v \) in \( V \). Let the maximum value of \( d(u, v), u, v \in V \) such that \( u \neq v \), be \( 30 \). Let \( T \) be any breadth-first-search tree of \( G \). Which ONE of the given options is CORRECT for every such graph \( G \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">The height of \( T \) is exactly \( 15 \).</span>`,
+                `<span style="display: inline;">The height of \( T \) is exactly \( 30 \).</span>`,
+                `<span style="display: inline;">The height of \( T \) is at least \( 15 \).</span>`,
+                `<span style="display: inline;">The height of \( T \) is at least \( 30 \).</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460047" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider the following four variable Boolean function in sum-of-product form</p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ F\left(b_{3}, b_{2}, b_{1}, b_{0}\right)=\sum(0,2,4,8,10,11,12) \] </p> <p>where the value of the function is computed by considering \( b_{3} b_{2} b_{1} b_{0} \) as a \( 4 \)-bit binary number, where \( b_{3} \) denotes the most significant bit and \( b_{0} \) denotes the least significant bit. Note that there are no don't care terms. Which ONE of the following options is the CORRECT minimized Boolean expression for \( F \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \bar{b}_{1} \bar{b}_{0}+\bar{b}_{2} \bar{b}_{0}+b_{1} \bar{b}_{2} b_{3} \)</span>`,
+                `<span style="display: inline;">\( \bar{b}_{1} \bar{b}_{0}+\bar{b}_{2} \bar{b}_{0} \)</span>`,
+                `<span style="display: inline;">\( \bar{b}_{2} \bar{b}_{0}+b_{1} b_{2} b_{3} \)</span>`,
+                `<span style="display: inline;">\( \bar{b}_{0} \bar{b}_{2}+\bar{b}_{3} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460048" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Let \( A \) be a \( 2 \times 2 \) matrix as given.<br/><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ A=\left[\begin{array}{rr} 1 & 1 \\ 1 & -1 \end{array}\right] \] </p> <p>What are the eigenvalues of the matrix \( A^{13} \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 1,-1 \)</span>`,
+                `<span style="display: inline;">\( 2 \sqrt{2},-2 \sqrt{2} \)</span>`,
+                `<span style="display: inline;">\( 4 \sqrt{2},-4 \sqrt{2} \)</span>`,
+                `<span style="display: inline;">\( 64 \sqrt{2},-64 \sqrt{2} \)</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460049" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A packet with the destination \( \text{IP} \) address \( 145.36 .109 .70 \) arrives at a router whose routing table is shown. Which interface will the packet be forwarded to? </p> <p><span class="mjx-chtml MJXc-display" style="text-align: center;"></span> \[ \begin{array}{|l|l|l|} \hline \textbf{Subnet Address} & \textbf{Subnet Mask ( in CIDR notation)} & \textbf{Interface} \\ \hline 145.36.0.0 & /16 & E1 \\ \hline 145.36.128.0 & /17 & E2 \\ \hline 145.36.64.0 & /18 & E3 \\ \hline 145.36.255.0 & /24 & E4 \\ \hline \text{Default} & - & E5 \\ \hline \end{array} \] </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \text{E3} \)</span>`,
+                `<span style="display: inline;">\( \text{E1} \)</span>`,
+                `<span style="display: inline;">\( \text{E2} \)</span>`,
+                `<span style="display: inline;">\( \text{E5} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460050" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider two relations describing teams and players in a sports league:</p> <ul> <li>teams(tid, tname): tid, tname are team-id and team-name, respectively</li> <li>players(pid,pname,tid): pid, pname, and tid denote player-id, playername and the team-id of the player, respectively</li> </ul> <p>Which ONE of the following tuple relational calculus queries returns the name of the players who play for the team having tname as ' \( M I^{\prime} \) ? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( \left\{p\right. \). pname \( \mid p \in \) players \( \wedge \exists t\left(t \in\right. \) teams \( \left.\left.\wedge p . t i d=t . t i d \wedge t . t n a m e=' M I^{\prime}\right)\right\} \)</span>`,
+                `<span style="display: inline;">\( \left\{p\right. \). pname \( \mid p \in \) teams \( \wedge \exists t\left(t \in\right. \) players \( \left.\left.\wedge p . t i d=t . t i d \wedge t . t n a m e=' M I^{\prime}\right)\right\} \)</span>`,
+                `<span style="display: inline;">\( \left\{p\right. \). pname \( \mid p \in \) players \( \wedge \exists t\left(t \in\right. \) teams \( \wedge t \). tname \( \left.\left.=' M I^{\prime}\right)\right\} \)</span>`,
+                `<span style="display: inline;">\( \left\{p\right. \). pname \( \mid p \in \) teams \( \wedge \exists t\left(t \in\right. \) players \( \wedge t \). tname \( \left.\left.=' M I^{\prime}\right)\right\} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460051" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A computer has two processors, \( M_{1} \) and \( M_{2} \). Four processes \( P_{1}, P_{2}, P_{3}, P_{4} \) with CPU bursts of \( 20,16,25 \), and \( 10 \) milliseconds, respectively, arrive at the same time and these are the only processes in the system. The scheduler uses non-preemptive priority scheduling, with priorities decided as follows: </p> <ul> <li> \( M_{1} \) uses priority of execution for the processes as, \( P_{1}>P_{3}>P_{2}>P_{4} \), i.e., \( P_{1} \) and \( P_{4} \) have highest and lowest priorities, respectively. </li> <li> \( M_{2} \) uses priority of execution for the processes as, \( P_{2}>P_{3}>P_{4}>P_{1} \), i.e., \( P_{2} \) and \( P_{1} \) have highest and lowest priorities, respectively. </li> </ul> <p>A process \( P_{i} \) is scheduled to a processor \( M_{k} \), if the processor is free and no other process \( P_{j} \) is waiting with higher priority. At any given point of time, a process can be allocated to any one of the free processors without violating the execution priority rules. Ignore the context switch time. What will be the average waiting time of the processes in milliseconds? </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 9.00 \)</span>`,
+                `<span style="display: inline;">\( 8.75 \)</span>`,
+                `<span style="display: inline;">\( 6.50 \)</span>`,
+                `<span style="display: inline;">\( 7.50 \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460052" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>A processor has \( 64 \) general-purpose registers and \( 50 \) distinct instruction types. An instruction is encoded in \( 32 \)-bits. What is the maximum number of bits that can be used to store the immediate operand for the given instruction?<br/><br/><strong> \( \text{ADD R1} \), \( \#25 \) / / \( \text{R 1=R 1+25} \) </strong> </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 16 \)</span>`,
+                `<span style="display: inline;">\( 20 \)</span>`,
+                `<span style="display: inline;">\( 22 \)</span>`,
+                `<span style="display: inline;">\( 24 \)</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460053" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p></p> <p>Consider a memory system with \( 1 \mathrm{M} \) bytes of main memory and \( 16 \mathrm{~K} \) bytes of cache memory. Assume that the processor generates \( 20 \)-bit memory address, and the cache block size is \( 16 \) bytes. If the cache uses direct mapping, how many bits will be required to store all the \( \operatorname{tag} \) values? [Assume memory is byte addressable, \( 1 \mathrm{~K}=2^{10} \), \( 1 \mathrm{M}=2^{20} \).] </p> <p></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">\( 6 \times 2^{10} \)</span>`,
+                `<span style="display: inline;">\( 8 \times 2^{10} \)</span>`,
+                `<span style="display: inline;">\( 2^{12} \)</span>`,
+                `<span style="display: inline;">\( 2^{14} \)</span>`
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/460054" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2025 SET-1</a></div></div>`
+        },
+    ]
+});
