@@ -40,17 +40,39 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     def clean_elem(el):
         if not el:
             return ""
-        # Convert sub and sup to clean html or latex
+        # 1. Remove preview, CHTML, MathML assistive
+        for prev in el.find_all(class_='MathJax_Preview'):
+            prev.decompose()
+        for chtml in el.find_all(class_='MathJax_CHTML'):
+            chtml.decompose()
+        for noscript in el.find_all('noscript'):
+            noscript.decompose()
+        for mml in el.find_all('span', class_='MJX_Assistive_MathML'):
+            mml.decompose()
+
+        # 2. Replace script math/tex with MathJax syntax \\( ... \\) or \\[ ... \\]
+        for s in el.find_all('script', type=lambda t: t and 'math/tex' in t):
+            mode = s.get('type', '')
+            tex = (s.string or '').strip()
+            if 'mode=display' in mode:
+                s.replace_with(f" \\[{tex}\\] ")
+            else:
+                s.replace_with(f" \\({tex}\\) ")
+
+        # 3. Handle sub and sup cleanly
         for sub in el.find_all('sub'):
-            sub.replace_with(f"_{{{sub.get_text()}}}")
+            sub_t = sub.get_text().strip()
+            sub.replace_with(f"_{{{sub_t}}}")
         for sup in el.find_all('sup'):
-            sup.replace_with(f"^{{{sup.get_text()}}}")
+            sup_t = sup.get_text().strip()
+            sup.replace_with(f"^{{{sup_t}}}")
+
         text = el.get_text(separator=' ', strip=True)
         text = re.sub(r'[ \t\r\f\v]+', ' ', text)
         text = re.sub(r'(\n|\r)+', ' ', text)
-        # Restore _{x} to <sub>x</sub> or MathJax where appropriate
         text = re.sub(r'_\{([^}]+)\}', r'<sub>\1</sub>', text)
         text = re.sub(r'\^\{([^}]+)\}', r'<sup>\1</sup>', text)
+        text = re.sub(r'\s+', ' ', text).strip()
         return text
 
     # Get question text
@@ -75,7 +97,7 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             img_name = img_url.split('/')[-1].split('?')[0]
             local_img_path = f"{image_folder}/{img_name}"
             download_image(img_url, local_img_path)
-            options.append(f"'<img src=\"{local_img_path}\" style=\"max-width:150px;\">'")
+            options.append(f"'<img src=\"{local_img_path}\" class=\"opt-img\">'")
         else:
             btn = label.find('button')
             opt_tag = btn if btn else label
@@ -94,34 +116,39 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     solution_h2 = soup.find('h2', string=re.compile("Solution"))
     if solution_h2:
         parent = solution_h2.parent
-        # Check all images in solution
-        sol_imgs = parent.find_all('img')
-        if sol_imgs:
-            img_tags = []
-            for img in sol_imgs:
-                img_url = img['src']
+        sol_container = parent.find('div', class_=re.compile('text-greyFont')) or parent.find('div', class_=re.compile('text-gray-700'))
+        if not sol_container:
+            sol_container = parent.find_all('div')[-1] if parent.find_all('div') else None
+
+        img_tags = []
+        for img in parent.find_all('img'):
+            img_url = img.get('src')
+            if img_url:
                 img_name = img_url.split('/')[-1].split('?')[0]
                 local_img_path = f"{image_folder}/{img_name}"
                 download_image(img_url, local_img_path)
                 img_tags.append(f"<img src='{local_img_path}' alt='Detailed Solution'>")
-            solution_html = "<br><br>".join(img_tags)
-        else:
-            # Look for solution text div
-            sol_container = parent.find('div', class_=re.compile('text-greyFont')) or parent.find('div', class_=re.compile('text-gray-700'))
-            if not sol_container:
-                sol_container = parent.find_all('div')[-1] if parent.find_all('div') else None
-            if sol_container:
-                sol_parts = []
-                for sp in sol_container.find_all(['p', 'li', 'div']):
-                    st = clean_elem(sp)
-                    if st:
-                        sol_parts.append(st)
-                if sol_parts:
-                    sol_html = "<br>".join(sol_parts)
-                else:
-                    sol_html = clean_elem(sol_container)
-                sol_html = sol_html.replace('"', '\\"').strip('<br>').strip()
-                solution_html = sol_html
+                img.extract()
+
+        sol_text = ""
+        if sol_container:
+            sol_parts = []
+            for sp in sol_container.find_all(['p', 'li', 'div']):
+                st = clean_elem(sp)
+                if st:
+                    sol_parts.append(st)
+            if sol_parts:
+                sol_text = "<br>".join(sol_parts)
+            else:
+                sol_text = clean_elem(sol_container)
+            sol_text = sol_text.replace('"', '\\"').strip('<br>').strip()
+
+        combined_sol = []
+        if sol_text:
+            combined_sol.append(sol_text)
+        if img_tags:
+            combined_sol.extend(img_tags)
+        solution_html = "<br><br>".join(combined_sol)
 
     with open(js_file, 'r', encoding='utf-8') as f:
         js_content = f.read()
@@ -150,8 +177,8 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     if q_bracket_idx != -1:
         q_section = after_test[q_bracket_idx:after_test.find('});')]
         existing_q_count = q_section.count('marks:')
-        # In MADE EASY SWT, typically first 25 are 1 mark, next 30 are 2 marks (or 25 1-mark, 30 2-mark)
-        if existing_q_count >= 25:
+        # In TWT, first 9 are 1 mark, remaining (10 to 17) are 2 marks
+        if existing_q_count >= 9:
             marks = 2
 
     q_type = "MCQ" if len(options) > 0 else "NAT"
@@ -218,12 +245,12 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 
 if __name__ == "__main__":
     html_source = "test.html"
-    registry_file = "js/made-easy-cse-2027-test.src.js"
-    test_name = "TWT - Algorithms -1"
-    image_dir = "images/twt-algorithms-1"
+    registry_file = "js/pyq-registry.js"
+    test_name = "TWT - Theory of computation-2"
+    image_dir = "images/twt-theory-of-computation-2"
     
-    # Initialize last_mtime to current file mtime so it only processes on next change
-    last_mtime = os.path.getmtime(html_source) if os.path.exists(html_source) else 0
+    # Initialize last_mtime to 0 so when content is pasted it triggers immediately
+    last_mtime = 0
         
     print(f"Watching for changes in {html_source} (Press Ctrl+C to stop)...")
     

@@ -3054,6 +3054,16 @@ main {
   line-height: 1.6;
 }
 
+.player-opt img,
+.qp-opt img {
+  max-width: 100% !important;
+  max-height: 90px !important;
+  width: auto !important;
+  height: auto !important;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
 .player-footer {
   flex-shrink: 0;
   display: flex;
