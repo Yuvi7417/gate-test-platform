@@ -3057,11 +3057,15 @@ main {
 .player-opt img,
 .qp-opt img {
   max-width: 100% !important;
-  max-height: 90px !important;
+  max-height: 140px !important;
   width: auto !important;
   height: auto !important;
+  min-height: 48px;
   vertical-align: middle;
   object-fit: contain;
+  display: inline-block;
+  image-rendering: -webkit-optimize-contrast;
+  filter: contrast(1.05);
 }
 
 .player-footer {
