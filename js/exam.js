@@ -1587,8 +1587,8 @@ function renderPlayer() {
       if (playerTimerSecs <= 0) {
         clearInterval(playerTimerInterval);
         playerTimerSecs = 0;
-        alert("Time is up! Your test is being auto-submitted.");
-        confirmSubmit();
+        playerSubmit();
+        return;
       }
       const m = Math.floor(playerTimerSecs / 60),
         s = playerTimerSecs % 60;
