@@ -210,7 +210,6 @@ window.testSeries = [
   {
     id: "cse-gate-2027",
     code: "CSE",
-    learnTag: "MADE EASY CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CSE-GATE PYQ Practice Series",
@@ -253,6 +252,7 @@ window.testSeries = [
   {
     id: "cs-gate-pyq",
     code: "CSE",
+    learnTag: "MADE EASY CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CS-GATE 2027 Practice Test Series",
@@ -299,6 +299,7 @@ window.testSeries = [
   {
     id: "cs-gate-classes",
     code: "CSE",
+    learnTag: "GO CLASSES CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CS-GATE 2027 Practice Classes Test Series",
@@ -346,6 +347,7 @@ window.testSeries = [
   {
     id: "weekly-cs-gate-2027",
     code: "CSE",
+    learnTag: "GO WEEKLY QUIZ CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "Weekly Quiz CS GATE 2027",
