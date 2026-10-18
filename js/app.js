@@ -210,6 +210,7 @@ window.testSeries = [
   {
     id: "cse-gate-2027",
     code: "CSE",
+    learnTag: "MADE EASY CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "CSE-GATE PYQ Practice Series",

@@ -127,7 +127,7 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 
-window.fetch = async function(...args) {
+window.fetch = async function (...args) {
   let res;
   try {
     res = await originalFetch.apply(this, args);
@@ -139,7 +139,7 @@ window.fetch = async function(...args) {
 
   // If server reported token expired via header on a successful recovery, refresh token silently in background
   if (res.headers && res.headers.get('X-Token-Expired') === 'true') {
-    attemptTokenRefresh().catch(() => {});
+    attemptTokenRefresh().catch(() => { });
   }
 
   // Handle 401/403
@@ -152,7 +152,7 @@ window.fetch = async function(...args) {
         if (errData && errData.sessionInvalidated) {
           isSessionInvalidated = true;
         }
-      } catch (e) {}
+      } catch (e) { }
 
       if (isSessionInvalidated) {
         stopSessionCheck();
@@ -241,7 +241,7 @@ function syncPendingSubmissions() {
         }
       }
     }
-  } catch (e) {}
+  } catch (e) { }
 }
 
 function restoreSession() {
@@ -300,13 +300,13 @@ async function fetchFreshUserData(retries = 5) {
       saveSession();
       syncLearnNav();
       fetchCloudBookmarks();
-      
+
       const learnTarget = document.getElementById("view-learn");
       if (learnTarget && learnTarget.classList.contains("active")) {
-          renderLearn();
+        renderLearn();
       }
     }
-  } catch(err) {
+  } catch (err) {
     console.error("Error fetching fresh user data:", err);
     if (retries > 0) {
       setTimeout(() => fetchFreshUserData(retries - 1), 4000);
@@ -656,8 +656,8 @@ async function fetchUserResults(retries = 5) {
       window.userResults = userResults;
       try {
         localStorage.setItem("apex_user_results", JSON.stringify(userResults));
-      } catch (e) {}
-      
+      } catch (e) { }
+
       // Re-render UI if test list is currently open (handles server cold-start delays)
       const testView = document.getElementById("view-tests");
       if (testView && testView.classList.contains("active")) {
@@ -750,7 +750,7 @@ function openPaymentGateway(id) {
   if (!ts) return;
 
   const token = localStorage.getItem('apexcore_token');
-  
+
   // If course is FREE, bypass Razorpay
   const isFree = (ts.price && ts.price.toString().trim().toUpperCase() === "FREE") || Number(ts.basePrice) === 0;
   if (isFree) {
@@ -786,8 +786,8 @@ function openPaymentGateway(id) {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
     },
-    body: JSON.stringify({ 
-      courseId: id, 
+    body: JSON.stringify({
+      courseId: id,
       amount: amountToPay,
       userEmail: currentUser ? currentUser.email : "",
       userName: currentUser ? currentUser.name : ""
@@ -944,7 +944,7 @@ function renderLearn() {
         <div class="learn-card" onclick="openTestList('${t.id}')">
           <div class="learn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
           <div class="learn-body">
-            <div class="learn-tags"><span class="ts-tag exam">${t.examTag}</span><span class="ts-tag subject">${t.code}</span></div>
+            <div class="learn-tags"><span class="ts-tag exam">${t.examTag}</span><span class="ts-tag subject">${t.learnTag || t.code}</span></div>
             <div class="learn-title">${t.title}</div>
             <div class="learn-valid">Valid Till: ${formatDate(t.endDate)}</div>
           </div>
@@ -973,7 +973,7 @@ function openTestList(id, pushHistory = true) {
   }
 }
 
-window.filterByType = function() {
+window.filterByType = function () {
   if (!currentTestListId) return;
   const activeTab = document.querySelector("#tlTabs .tab.active");
   const filterStr = activeTab ? activeTab.dataset.f : "all";
@@ -1007,7 +1007,7 @@ function renderTestList(t, filter) {
     const upper = (s[0] || "").toUpperCase();
     return upper.startsWith("FST") || upper.startsWith("FLT") || upper.startsWith("FULL TEST");
   });
-  
+
   let twSeen = 0;
   let fltSeen = 0;
   let swtSeen = 0; // For Subjectwise tests
@@ -1017,15 +1017,15 @@ function renderTestList(t, filter) {
   const items = t.schedule.map((s, i) => {
     const rawName = s[0] || "";
     const upperName = rawName.toUpperCase();
-    
+
     const isTopicwise = upperName.startsWith("TWT");
     const isFullTest = upperName.startsWith("FST") || upperName.startsWith("FLT") || upperName.startsWith("FULL TEST");
     const isWeeklyQuiz = upperName.startsWith("WQT");
     const isMixedSubject = upperName.startsWith("MST");
-    
+
     // Strip the prefix (e.g. "TWT - ", "FLT - ") to get the bracket label
     const label = rawName.replace(/^[A-Za-z\s]+-\s*/, "");
-    
+
     let testType, testNumber, bracket, duration, defaultQuestions;
 
     if (isFullTest) {
@@ -1068,7 +1068,7 @@ function renderTestList(t, filter) {
 
     const yearMatch = t.examTag ? t.examTag.match(/\d{4}/) : null;
     const year = yearMatch ? yearMatch[0] : "2027";
-    
+
     // Dynamic question count logic
     let finalQuestions = s[2] !== undefined ? s[2] : defaultQuestions;
     if (isWeeklyQuiz && window.apexTestRegistry) {
@@ -1077,7 +1077,7 @@ function renderTestList(t, filter) {
         finalQuestions = regTest.questions.length;
       }
     }
-    
+
     return {
       name:
         t.code +
@@ -1132,7 +1132,7 @@ function renderTestList(t, filter) {
   const typeFilter = typeSelect ? typeSelect.value : "All";
   const shown = items.filter((it) => {
     const matchStatus = filter === "all" || it.status === filter;
-    
+
     // Determine testType based on naming conventions
     let itTestType = "All";
     const upperName = (it.name || "").toUpperCase();
@@ -1310,7 +1310,7 @@ function findMatchingTest(testName) {
     if (window.testBackendIdMap[compositeKey]) return compositeKey;
     if (window.testBackendIdMap[bracketText]) return bracketText;
   }
-  
+
   let compKey = Object.keys(window.testBackendIdMap).find((key) => {
     return key.startsWith(currentTestListId + "|") && testName.includes(key.split("|")[1]);
   });
@@ -1424,7 +1424,7 @@ async function fetchCloudBookmarks() {
       cloudBookmarks = data.bookmarks;
       localStorage.setItem("apex_bookmarks", JSON.stringify(cloudBookmarks));
     }
-  } catch(err) { console.error(err); }
+  } catch (err) { console.error(err); }
 }
 
 async function startPlayer(testName, fetchedQuestions) {
@@ -1460,7 +1460,7 @@ async function startPlayer(testName, fetchedQuestions) {
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
   const isGatePyqTest = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || testNameUpper.includes("GATE CSE"));
   const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST") || isGatePyqTest;
-  
+
   if (isFullTest) {
     playerDurationMins = 180;
     playerSections = [
@@ -1472,7 +1472,7 @@ async function startPlayer(testName, fetchedQuestions) {
   } else {
     playerDurationMins = 90; // Default for Subject Wise Tests etc.
   }
-  
+
   playerTimerSecs = playerDurationMins * 60;
 
   // Cloud Sync Resume Check (Disabled as per user request to always start fresh)
@@ -1503,7 +1503,7 @@ async function startPlayer(testName, fetchedQuestions) {
 
 function renderPlayer() {
   const _id = (id) => document.getElementById(id);
-  
+
   if (playerSections) {
     let tabsHtml = "";
     playerSections.forEach((sec, idx) => {
@@ -1521,12 +1521,12 @@ function renderPlayer() {
       `;
     });
     const container = _id("playerSectionTabsContainer");
-    if(container) {
+    if (container) {
       container.innerHTML = tabsHtml;
     }
   } else {
     const container = _id("playerSectionTabsContainer");
-    if(container) {
+    if (container) {
       container.innerHTML = `
         <div class="player-sectiontab active">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1594,7 +1594,7 @@ function renderPlayer() {
         s = playerTimerSecs % 60;
       document.getElementById("playerTimer").textContent =
         String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
-      
+
       // Auto-sync state every 30 seconds
       if (playerTimerSecs % 30 === 0) syncTestState();
     }, 1000);
@@ -1657,7 +1657,7 @@ function renderPlayerQuestion(i) {
     if (!el) throw new Error("Element not found: " + id);
     return el;
   };
-  
+
   let displayNum = i + 1;
   if (playerSections && playerSections[currentSectionIndex]) {
     displayNum = i - playerSections[currentSectionIndex].start + 1;
@@ -1893,10 +1893,10 @@ function updateBookmarkBtnState() {
   const btn = document.getElementById("playerBookmarkBtn");
   const txt = document.getElementById("playerBookmarkText");
   if (!btn) return;
-  
+
   const testId = document.getElementById("playerTopTitle").textContent.trim();
   const qKey = testId + "_Q" + playerCurrent;
-  
+
   if (cloudBookmarks[qKey]) {
     btn.classList.add("active");
     btn.style.borderColor = "transparent";
@@ -1918,9 +1918,9 @@ function togglePlayerBookmark() {
   const testId = document.getElementById("playerTopTitle").textContent.trim();
   const qKey = testId + "_Q" + playerCurrent;
   const q = playerQuestions[playerCurrent];
-  
+
   const isBookmarked = !cloudBookmarks[qKey];
-  
+
   if (isBookmarked) {
     let subject = "General";
     if (testId.includes("CE")) subject = "Civil Engineering";
@@ -1929,12 +1929,12 @@ function togglePlayerBookmark() {
     else if (testId.includes("ME")) subject = "Mechanical Engineering";
     else if (testId.includes("EC") || testId.includes("ECE")) subject = "Electronics & Communication";
     else if (testId.includes("DA")) subject = "Data Science (DA)";
-    
+
     let plainText = document.createElement("div");
     plainText.innerHTML = q.text;
     let previewText = plainText.textContent || plainText.innerText || "";
     if (previewText.length > 150) previewText = previewText.substring(0, 150) + "...";
-    
+
     cloudBookmarks[qKey] = {
       testId: testId,
       qIndex: playerCurrent,
@@ -1950,10 +1950,10 @@ function togglePlayerBookmark() {
 
   const token = localStorage.getItem('apexcore_token');
   if (token) {
-    const payload = { 
-      testId, 
-      qKey, 
-      qIndex: playerCurrent, 
+    const payload = {
+      testId,
+      qKey,
+      qIndex: playerCurrent,
       isBookmarked,
       text: isBookmarked ? cloudBookmarks[qKey].text : "",
       subject: isBookmarked ? cloudBookmarks[qKey].subject : ""
@@ -2054,7 +2054,7 @@ function playerSaveMarkReview() {
   goToNextQuestion();
 }
 
-window.switchSection = function(idx) {
+window.switchSection = function (idx) {
   currentSectionIndex = idx;
   renderPlayer();
   const firstQ = playerSections[idx].start;
@@ -2085,14 +2085,14 @@ function renderPlayerQGrid() {
   const grid = document.getElementById("playerQGrid");
   let startIdx = 0;
   let endIdx = playerQuestions.length - 1;
-  
+
   if (playerSections && playerSections[currentSectionIndex]) {
     startIdx = playerSections[currentSectionIndex].start;
     endIdx = playerSections[currentSectionIndex].end;
   }
-  
+
   let html = "";
-  for(let i = startIdx; i <= endIdx; i++) {
+  for (let i = startIdx; i <= endIdx; i++) {
     const displayNum = playerSections ? (i - startIdx + 1) : (i + 1);
     html += `<button class="player-qbtn" id="qbtn-${i}" onclick="renderPlayerQuestion(${i})">${displayNum}</button>`;
   }
@@ -2139,7 +2139,7 @@ function updatePlayerCounts() {
     notAnswered = 0,
     notVisited = 0,
     marked = 0;
-    
+
   let sectionStats = [];
   if (playerSections) {
     sectionStats = playerSections.map(() => ({ ans: 0, noans: 0, mark: 0, notvis: 0 }));
@@ -2148,14 +2148,14 @@ function updatePlayerCounts() {
   playerQuestions.forEach((q, i) => {
     const st = playerState[i] || { visited: false, answer: null, marked: false, timeSpent: 0 };
     updatePlayerQBtn(i);
-    
+
     let isAns = false, isNoans = false, isNotvis = false, isMark = false;
-    
+
     if (!st.visited) { notVisited++; isNotvis = true; }
     else if (st.answer !== null && st.answer !== undefined && st.answer !== "") { answered++; isAns = true; }
     else { notAnswered++; isNoans = true; }
     if (st.marked) { marked++; isMark = true; }
-    
+
     if (playerSections) {
       playerSections.forEach((sec, idx) => {
         if (i >= sec.start && i <= sec.end) {
@@ -2176,7 +2176,7 @@ function updatePlayerCounts() {
   if (_id("cntNotAnswered")) _id("cntNotAnswered").textContent = notAnswered;
   if (_id("cntNotVisited")) _id("cntNotVisited").textContent = notVisited;
   if (_id("cntMarked")) _id("cntMarked").textContent = marked;
-  
+
   if (playerSections) {
     playerSections.forEach((sec, idx) => {
       if (_id(`sec-${idx}-ans`)) _id(`sec-${idx}-ans`).textContent = sectionStats[idx].ans;
@@ -2370,7 +2370,7 @@ function confirmSubmit() {
   window.userResults = userResults;
   try {
     localStorage.setItem("apex_user_results", JSON.stringify(userResults));
-  } catch (e) {}
+  } catch (e) { }
 
   // Immediately refresh active views with updated results
   const detailView = document.getElementById("view-detail");
@@ -2387,7 +2387,7 @@ function confirmSubmit() {
   try {
     const queueKey = payload.seriesId ? `apex_pending_test_${payload.seriesId}_${payload.testName}` : `apex_pending_test_${payload.testName}`;
     localStorage.setItem(queueKey, JSON.stringify(payload));
-  } catch (e) {}
+  } catch (e) { }
 
   const submitWithRetry = async (retries = 5) => {
     const currentToken = localStorage.getItem('apexcore_token');
@@ -2721,8 +2721,8 @@ async function showResultPage(explicitTestName) {
       // Calculate rank of current attempt (r.score) compared to competitors in leaderboard
       const higherScores = lb.filter(x => {
         const isSelf = (myUserId && x.userId && String(x.userId) === myUserId) ||
-                       (currentUserEmail && x.email && currentUserEmail === x.email) ||
-                       (currentUserName && x.name && currentUserName === x.name.trim().toLowerCase());
+          (currentUserEmail && x.email && currentUserEmail === x.email) ||
+          (currentUserName && x.name && currentUserName === x.name.trim().toLowerCase());
         if (isSelf) return false;
         return (x.score || 0) > (r.score || 0);
       }).length;
@@ -2937,7 +2937,7 @@ async function openLeaderboard() {
         const rUserId = r.userId ? String(r.userId) : "";
         const rName = r.name ? r.name.trim().toLowerCase() : "";
         const isMe = (myUserId && rUserId && myUserId === rUserId) ||
-                     (currentUserName && rName && currentUserName === rName);
+          (currentUserName && rName && currentUserName === rName);
         const initial = r.name ? (r.name.trim().charAt(0).toUpperCase() || 'U') : 'U';
 
         const itemHTML = `
@@ -3298,7 +3298,7 @@ restoreSession();
 let answers = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  if(typeof CKEDITOR !== 'undefined') {
+  if (typeof CKEDITOR !== 'undefined') {
     CKEDITOR.replace('editor1', {
       extraPlugins: 'image2,uploadimage',
       filebrowserUploadUrl: '/api/upload-image',
@@ -3425,7 +3425,7 @@ async function deleteAnswer(id) {
     } else {
       alert(resData.message || 'Error deleting answer');
     }
-  } catch(err) {
+  } catch (err) {
     alert("Network error");
   }
 }
