@@ -1452,6 +1452,22 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-V)", subject: "cn" },
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VI)", subject: "cn" },
   { series: "cse-gate-2027", name: "TWT-Computer Network(Network Layer-VII)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-I)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-II)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-III)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-IV)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-V)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-VI)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Data Link Layer-VII)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Transport Layer-I)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Transport Layer-II)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Transport Layer-III)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Transport Layer-IV)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Application Layer-I)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Application Layer-II)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Physical Layer-I)", subject: "cn" },
+  { series: "cse-gate-2027", name: "TWT-Computer Network(Physical Layer-II)", subject: "cn" },
+
 
   // Theory of Computation (7 tests)
   { series: "cse-gate-2027", name: "TWT-Theory of Computation(Regular Language-I)", subject: "toc" },
