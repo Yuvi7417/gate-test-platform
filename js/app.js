@@ -339,8 +339,8 @@ window.testSeries = [
       // ["FST - 2", "Nov 21, 2025"],
     ],
     oldPrice: "₹2600",
-    price: "₹99",
-    basePrice: 99,
+    price: "₹259",
+    basePrice: 259,
     brandLabel: "APEX CLASSES",
     // comingSoon: true
   },
@@ -377,8 +377,8 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹1180",
-    price: "₹99",
-    basePrice: 99,
+    price: "₹139",
+    basePrice: 139,
     brandLabel: "Weekly Classes"
     // comingSoon: true
   },
