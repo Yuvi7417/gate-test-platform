@@ -683,7 +683,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The relation book (title,price) contains the titles and prices of different books. Assuming that no two books have the same price, what does the following SQL query list?<br><br><code> select title from book as B where (select count(*) from book as T where T.price &gt; B.price) &lt; 5</code><br></span>`,
+            text: `<span style="display: inline;">The relation book (title,price) contains the titles and prices of different books. Assuming that no two books have the same price, what does the following SQL query list?<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>select title<br>&nbsp;&nbsp;from book as B<br>&nbsp;&nbsp;where (select count(*)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from book as T<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where T.price &gt; B.price) &lt; 5</code></pre></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Titles of the four most expensive books</span>`,
@@ -709,7 +709,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following schema:<br>Emp (Empcode, Name, Sex, Salary, Deptt)<br>A simple SQL query is executed as follows:<br><br><code> SELECT Deptt FROM Emp where sex = 'Male' GROUP by Dept Having avg(Salary) &gt; (select avg(Salary) from Emp)</code><br>The output will be</span>`,
+            text: `<span style="display: inline;">Consider the following schema:<br><code>Emp (Empcode, Name, Sex, Salary, Deptt)</code><br><br>A simple SQL query is executed as follows:<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT Deptt<br>FROM Emp<br>WHERE sex = 'Male'<br>GROUP BY Dept<br>HAVING avg(Salary) &gt; (SELECT avg(Salary) FROM Emp)</code></pre>The output will be</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Average salary of male employee is the average salary of the organization</span>`,
@@ -724,7 +724,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following relational query on the above database:<br><br><code> SELECT S.name FROM Suppliers S Where S.sid NOT IN (SELECT C.sid FROM Catalog C WHERE C.pid NOT IN (SELECT P.pid FROM Parts P WHERE P.color &lt;&gt; 'blue'))</code><br></span>`,
+            text: `<span style="display: inline;">Consider the following relational schema:<br><code>Suppliers (sid, sname, city, street)</code><br><code>Parts (pid, pname, color)</code><br><code>Catalog (sid, pid, cost)</code><br><br>Consider the following relational query on the database:<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT S.name<br>FROM Suppliers S<br>WHERE S.sid NOT IN (SELECT C.sid<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Catalog C<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE C.pid NOT IN (SELECT P.pid<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM Parts P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE P.color &lt;&gt; 'blue'))</code></pre></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Find the names of all suppliers who have supplied non-blue part.</span>`,
@@ -739,7 +739,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following relation <br><br> Cinema(theater, address, capacity) <br><br>Which of the following options will be needed at the end of the SQL query <br><br> SELECT P1.address FROM Cinema P1 <br><br> such that it always finds the addresses of theaters with maximum capacity?</span>`,
+            text: `<span style="display: inline;">Consider the following relation:<br><code>Cinema(theater, address, capacity)</code><br><br>Which of the following options will be needed at the end of the SQL query:<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT P1.address<br>FROM Cinema P1</code></pre>such that it always finds the addresses of theaters with maximum capacity?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">WHERE P1.capacity <span>\\( \\geq \\)</span> All (select P2.capacity from Cinema P2)</span>`,
@@ -779,7 +779,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following relational schema: <br><br>Employee (empId, empName, empDept ) <br><br>Customer (custId,custName, salesRepId, rating)<br><br>SalesRepId is a foreign key referring to empId of the employee relation. Assume that each<br>employee makes a sale to at least one customer. What does the following query return?<br><br><pre><code>SELECT empName <br>FROM employee E <br> WHERE NOT EXISTS (SELECT custId<br>FROM customer C<br>WHERE C. salesRepId = E. empId<br>AND C. rating &lt;&gt; 'GOOD')</pre></code></span>`,
+            text: `<span style="display: inline;">Consider the following relational schema:<br><code>Employee (empId, empName, empDept)</code><br><code>Customer (custId, custName, salesRepId, rating)</code><br><br>SalesRepId is a foreign key referring to empId of the employee relation. Assume that each employee makes a sale to at least one customer. What does the following query return?<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT empName<br>FROM employee E<br>WHERE NOT EXISTS (SELECT custId<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM customer C<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE C.salesRepId = E.empId<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND C.rating &lt;&gt; 'GOOD')</code></pre></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Names of all the employees with at least one of their customers having a 'GOOD' rating</span>`,
@@ -794,13 +794,13 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">SQL allows duplicate tuples in relations, and correspondingly defines the multiplicity of<br>tuples in the result of joins. Which one of the following queries always gives the same answer<br>as the nested query shown below: <br><br>Select * from R where a in (select S. a from S)</span>`,
+            text: `<span style="display: inline;">SQL allows duplicate tuples in relations, and correspondingly defines the multiplicity of tuples in the result of joins. Which one of the following queries always gives the same answer as the nested query shown below:<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT * FROM R WHERE a IN (SELECT S.a FROM S)</code></pre></span>`,
             image: "",
             options: [
-                `<span style="display: inline;">Select R. * from R, S where R. a=S. a</span>`,
-                `<span style="display: inline;">Select distinct R. * from R,S where R. a=S. a</span>`,
-                `<span style="display: inline;">Select R. * from R, (select distinct a from S) as S1 where R. a=S1.a</span>`,
-                `<span style="display: inline;">Select R. * from R, S where R.a = S. a and is unique R</span>`
+                `<span style="display: inline;"><code>Select R.* from R, S where R.a = S.a</code></span>`,
+                `<span style="display: inline;"><code>Select distinct R.* from R, S where R.a = S.a</code></span>`,
+                `<span style="display: inline;"><code>Select R.* from R, (select distinct a from S) as S1 where R.a = S1.a</code></span>`,
+                `<span style="display: inline;"><code>Select R.* from R, S where R.a = S.a and is unique R</code></span>`
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The IN query returns each R tuple once per its own copy in R, no matter how many matching tuples S has.<br><br>- Option 1: a plain join repeats an R tuple once for every matching S tuple <span>\\( \\rightarrow \\)</span> extra duplicates.<br><br>- Option 2: DISTINCT also removes duplicates that were genuinely in R.<br><br>- Option 3: S1 has each value of a only once, so every R tuple matches at most once <span>\\( \\rightarrow \\)</span> same result.<br><br><b>Answer: Select R.* from R, (select distinct a from S) as S1 where R.a = S1.a</b><br><br><a href="https://gateoverflow.in/2021/gate2014-2-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
@@ -809,7 +809,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Given the following schema:<br><br>employees(emp-id, first-name, last-name, hire-date, dept-id, salary) <br><br>departments(dept-id, dept-name, manager-id, location-id)<br><br>You want to display the last names and hire dates of all latest hires in their respective<br>departments in the location ID 1700. You issue the following query: <br><br><pre><code> SELECT last-name, hire-date<br>FROM employees<br>WHERE (dept-id, hire-date) IN<br>(SELECT dept-id, MAx(hire-date)<br>FROM employees JOIN departments USING(dept-id)<br>WHERE location-id = 1700<br>GROUP BY dept-id); </pre></code><br>What is the outcome?</span>`,
+            text: `<span style="display: inline;">Given the following schema:<br><code>employees(emp-id, first-name, last-name, hire-date, dept-id, salary)</code><br><code>departments(dept-id, dept-name, manager-id, location-id)</code><br><br>You want to display the last names and hire dates of all latest hires in their respective departments in the location ID 1700. You issue the following query:<br><pre style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 12px; overflow-x: auto; font-family: monospace; font-size: 14px; margin-top: 10px;"><code>SELECT last-name, hire-date<br>FROM employees<br>WHERE (dept-id, hire-date) IN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(SELECT dept-id, MAX(hire-date)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM employees JOIN departments USING(dept-id)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE location-id = 1700<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GROUP BY dept-id);</code></pre>What is the outcome?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">It executes but does not give the correct result</span>`,

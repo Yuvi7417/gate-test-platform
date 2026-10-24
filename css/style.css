@@ -2996,6 +2996,35 @@ main {
   white-space: pre-line;
 }
 
+.player-qtext pre,
+.qp-text pre,
+.solution pre {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 12px;
+  overflow-x: auto;
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 10px 0;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.player-qtext pre code,
+.qp-text pre code,
+.solution pre code {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
 .player-qimg-wrap {
   margin: 6px 0 22px;
 }
