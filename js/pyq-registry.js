@@ -472,11 +472,11 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider the following relational schema:<br><br> <span>\\( \\text{Students} (\\text{\\underline{rollno: integer,} name: string, age: integer, cgpa: real}) \\)</span><br> <span>\\( \\text{Courses} (\\text{\\underline{courseno: integer,} cname: string, credits: integer}) \\)</span><br> <span>\\( \\text{Enrolled} (\\text{ \\underline{rollno: integer,} \\underline{courseno: integer,} grade: string}) \\)</span><br><br> Which of the following options is/are correct SQL query/queries to retrieve the names of the students enrolled in course number (i.e. courseno) 1470?</span>`,
+            text: `<span style="display: inline;">Consider the following relational schema:<br><br> <span>\\( \\text{Students} (\\underline{\\text{rollno: integer}}\\text{, name: string, age: integer, cgpa: real}) \\)</span><br> <span>\\( \\text{Courses} (\\underline{\\text{courseno: integer}}\\text{, cname: string, credits: integer}) \\)</span><br> <span>\\( \\text{Enrolled} (\\underline{\\text{rollno: integer}}\\text{, }\\underline{\\text{courseno: integer}}\\text{, grade: string}) \\)</span><br><br> Which of the following options is/are correct SQL query/queries to retrieve the names of the students enrolled in course number (i.e. courseno) 1470?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">SELECT S.name FROM Students S WHERE EXISTS (SELECT * FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno)</span>`,
-                `<span style="display: inline;">SELECT S.name FROM Students S WHERE SIZEOF (SELECT * FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno) > 0</span>`,
+                `<span style="display: inline;">SELECT S.name FROM Students S WHERE SIZEOF (SELECT * FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno) &gt; 0</span>`,
                 `<span style="display: inline;">SELECT S.name FROM Students S WHERE 0 &lt; (SELECT COUNT(*) FROM Enrolled E WHERE E.courseno = 1470 AND E.rollno = S.rollno)</span>`,
                 `<span style="display: inline;">SELECT S.name FROM Students S NATURAL JOIN Enrolled E WHERE E.courseno = 1470</span>`
             ],
