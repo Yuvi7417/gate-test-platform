@@ -750,5 +750,75 @@ registerTest({
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> To select the theater with the maximum capacity, its capacity must be greater than or equal to every theater's capacity in the relation.<br><br>In SQL, comparing against all values returned by a subquery is achieved using the <b><code>&gt;= ALL</code></b> construct: <code>WHERE P1.capacity &gt;= ALL (SELECT P2.capacity FROM Cinema P2)</code>.<br><br><b>Answer: WHERE P1.capacity \\( \\geq \\) All (select P2.capacity from Cinema P2)</b><br><br><a href="https://gateoverflow.in/8396/gate2015-3-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2015 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
         },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;">Consider the following relations: <br><img src="images/twt-dbms/q51_2015.jpg"><br> Consider the following SQL query. <br> <img src="images/twt-dbms/q51a_2015.jpg"><br>The number of rows that will be returned by the SQL query is _____________.</span>`,
+            image: "",
+            options: [],
+            answer: "2",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The query groups by Student_Name. The names are Raj (roll 1 and roll 3) and Rohit, so there are 2 groups.<br><br>Rows: Raj, 310 and Rohit, 140<br><br><b>Answer: 2</b><br><br><a href="https://gateoverflow.in/8225/gate2015-1-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;">SELECT operation in SQL is equivalent to</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">the selection operation in relational algebra</span>`,
+                `<span style="display: inline;">the selection operation in relational algebra, except that SELECT in SQL retains duplicates</span>`,
+                `<span style="display: inline;">the projection operation in relational algebra</span>`,
+                `<span style="display: inline;">the projection operation in relational algebra, except that SELECT in SQL retains duplicates</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The SELECT list chooses columns, which is projection. Unlike relational algebra, SQL keeps duplicate rows unless DISTINCT is used.<br><br><b>Answer: the projection operation, except that SELECT in SQL retains duplicates</b><br><br><a href="https://gateoverflow.in/8094/gate2015-1-21#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Consider the following relational schema: <br><br>Employee (empId, empName, empDept ) <br><br>Customer (custId,custName, salesRepId, rating)<br><br>SalesRepId is a foreign key referring to empId of the employee relation. Assume that each<br>employee makes a sale to at least one customer. What does the following query return?<br><br><pre><code>SELECT empName <br>FROM employee E <br> WHERE NOT EXISTS (SELECT custId<br>FROM customer C<br>WHERE C. salesRepId = E. empId<br>AND C. rating &lt;&gt; 'GOOD')</pre></code></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Names of all the employees with at least one of their customers having a 'GOOD' rating</span>`,
+                `<span style="display: inline;">Names of all the employees with at most one of their customers having a 'GOOD' rating.</span>`,
+                `<span style="display: inline;">Names of all the employees with none of their customers having a 'GOOD' rating.</span>`,
+                `<span style="display: inline;">Names of all the employees with all their customers having a 'GOOD' rating.</span>`
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The subquery finds this employee's customers whose rating is not 'GOOD'. NOT EXISTS keeps the employee only if there are none.<br><br>Since every employee has at least one customer, this means all of the employee's customers are rated 'GOOD'.<br><br><b>Answer: Names of all the employees with all their customers having a 'GOOD' rating</b><br><br><a href="https://gateoverflow.in/2089/gate2014-3-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">SQL allows duplicate tuples in relations, and correspondingly defines the multiplicity of<br>tuples in the result of joins. Which one of the following queries always gives the same answer<br>as the nested query shown below: <br><br>Select * from R where a in (select S. a from S)</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">Select R. * from R, S where R. a=S. a</span>`,
+                `<span style="display: inline;">Select distinct R. * from R,S where R. a=S. a</span>`,
+                `<span style="display: inline;">Select R. * from R, (select distinct a from S) as S1 where R. a=S1.a</span>`,
+                `<span style="display: inline;">Select R. * from R, S where R.a = S. a and is unique R</span>`
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The IN query returns each R tuple once per its own copy in R, no matter how many matching tuples S has.<br><br>- Option 1: a plain join repeats an R tuple once for every matching S tuple <span>\\( \\rightarrow \\)</span> extra duplicates.<br><br>- Option 2: DISTINCT also removes duplicates that were genuinely in R.<br><br>- Option 3: S1 has each value of a only once, so every R tuple matches at most once <span>\\( \\rightarrow \\)</span> same result.<br><br><b>Answer: Select R.* from R, (select distinct a from S) as S1 where R.a = S1.a</b><br><br><a href="https://gateoverflow.in/2021/gate2014-2-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;">Given the following schema:<br><br>employees(emp-id, first-name, last-name, hire-date, dept-id, salary) <br><br>departments(dept-id, dept-name, manager-id, location-id)<br><br>You want to display the last names and hire dates of all latest hires in their respective<br>departments in the location ID 1700. You issue the following query: <br><br><pre><code> SELECT last-name, hire-date<br>FROM employees<br>WHERE (dept-id, hire-date) IN<br>(SELECT dept-id, MAx(hire-date)<br>FROM employees JOIN departments USING(dept-id)<br>WHERE location-id = 1700<br>GROUP BY dept-id); </pre></code><br>What is the outcome?</span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;">It executes but does not give the correct result</span>`,
+                `<span style="display: inline;">It executes and gives the correct result.</span>`,
+                `<span style="display: inline;">It generates an error because of pairwise comparison.</span>`,
+                `<span style="display: inline;">It generates an error because the GROUP BY clause cannot be used with table joins in a sub-query</span>`
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;"> <strong style="font-size: 16px; color: #000;">Explanation:</strong><br> The subquery returns, for each department at location 1700, its dept-id and latest hire date. The outer query keeps employees whose (dept-id, hire-date) pair is in that list. Multi-column IN is valid and GROUP BY works in a subquery with a join.<br><br><b>Answer: It executes and gives the correct result</b><br><br><a href="https://gateoverflow.in/1934/gate2014-1-54#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a> <div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/database-management-system" style="color:#2f6d1a; text-decoration:none" target="_blank">Database Management System</a></div></div>`
+        },
     ]
 });
