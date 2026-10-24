@@ -2,6 +2,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Relational Schema-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Candidate Keys Derivation, Attribute Closures, Superkeys Calculation, Referential Integrity, Functional Dependency Inference, Relation Instances, Lossless Join & Dependency Preservation",
     questions: [
         {
             marks: 1,
@@ -197,6 +198,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Relational Algebra-I)",
     date: "sep 08, 2026",
+    topicsCovered: "Relational Algebra Operators, Relational Division, Left & Full Outer Joins, Join Tuple Counts, Query Optimization, Block Nested Loop Join, Referential Integrity, Indexing vs Hashing",
     questions: [
         {
             marks: 2,
@@ -422,6 +424,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Relational Algebra-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Join Size Bounds, Tuple Relational Calculus (TRC), Relational Query Equivalence, Selectivity Estimation, Set Difference & Division, Expressive Power of Relational Algebra, Foreign Key Joins",
     questions: [
         {
             marks: 2,
@@ -655,6 +658,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Normal Form-I)",
     date: "sep 08, 2026",
+    topicsCovered: "Armstrong's Axioms, Dependency Preservation, 1NF & 2NF Properties, 3NF vs BCNF Conditions, Minimal Cover, Partial Dependencies, Trivial Functional Dependencies, Lossless Decomposition",
     questions: [
         {
             marks: 2,
@@ -888,6 +892,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Normal Form-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Multivalued Dependencies, Prime Attributes, Candidate Keys Calculation, 3NF vs BCNF, Transitive Dependencies, Minimal Cover, Full Functional Dependency, BCNF Decomposition",
     questions: [
         {
             marks: 1,
@@ -1123,6 +1128,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Normal Form-III)",
     date: "sep 08, 2026",
+    topicsCovered: "BCNF Trade-offs, Lossless Decomposition, 3NF vs BCNF Distinguishing Tests, Redundancy Elimination in BCNF, Multivalued Dependency Rules, Candidate Keys Identification, Schema Normalization",
     questions: [
         {
             marks: 1,
@@ -1356,6 +1362,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-DBMS(Transaction-I)",
     date: "sep 08, 2026",
+    topicsCovered: "Conflict Serializability, Precedence Graph, ACID Properties, Lost Update Anomaly, Dirty Reads & Cascading Rollback, Two-Phase Locking (2PL) Protocol",
     questions: [
         {
             marks: 1,
