@@ -19,3 +19,4 @@ js/made-easy-cse-2027-test.src.js
 *.src.js
 __pycache__/
 scratch/
+*recovery-codes*
