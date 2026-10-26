@@ -28,14 +28,34 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     
     # Extract images in question first
     images = question_span.find_all('img')
-    if images:
+    if len(images) == 1:
+        has_following = False
+        curr = images[0]
+        while curr and curr != question_span:
+            if curr.find_next_sibling():
+                has_following = True
+                break
+            curr = curr.parent
+
         img_url = images[0]['src']
         img_name = img_url.split('/')[-1].split('?')[0]
         local_img_path = f"{image_folder}/{img_name}"
         download_image(img_url, local_img_path)
-        question_image = local_img_path
+
+        if has_following:
+            images[0].replace_with(f"__QIMG_SRC_{local_img_path}__")
+            question_image = ""
+        else:
+            question_image = local_img_path
+            images[0].extract()
+    elif len(images) > 1:
         for img in images:
-            img.extract()
+            img_url = img.get('src')
+            if img_url:
+                img_name = img_url.split('/')[-1].split('?')[0]
+                local_img_path = f"{image_folder}/{img_name}"
+                download_image(img_url, local_img_path)
+                img.replace_with(f"__QIMG_SRC_{local_img_path}__")
 
     def clean_elem(el):
         if not el:
@@ -124,6 +144,9 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     else:
         question_text = "<br><br>".join(q_parts)
 
+    question_text = re.sub(r'__QIMG_SRC_(.*?)__', r"<br><img src='\1' alt='Question diagram'><br>", question_text)
+    question_text = re.sub(r'^(<br>)+|(<br>)+$', '', question_text.strip())
+    question_text = re.sub(r'(<br>\s*){3,}', '<br><br>', question_text)
     question_text = question_text.replace('"', '\\"')
     
     options = []
@@ -213,8 +236,13 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     test_end_check = js_content.find('});', test_idx)
     current_test_block = js_content[test_idx:test_end_check] if test_end_check != -1 else js_content[test_idx:]
     if question_text and question_text in current_test_block:
-        print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
-        return
+        # If options exist, check if the first option is also in the block to avoid false duplicate on generic titles
+        if options and len(options) > 0 and options[0] in current_test_block:
+            print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+            return
+        elif not options:
+            print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+            return
     if question_image and question_image in current_test_block:
         print(f"[{time.strftime('%H:%M:%S')}] Duplicate image detected! Question already exists in '{test_series_name}'. Skipping.")
         return
@@ -228,9 +256,14 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     if q_bracket_idx != -1:
         q_section = after_test[q_bracket_idx:after_test.find('});')]
         existing_q_count = q_section.count('marks:')
-        # In TWT, first 9 are 1 mark, remaining (10 to 17) are 2 marks
-        if existing_q_count >= 9:
-            marks = 2
+        # In SWT: first 17 are 1 mark, remaining (18 to 33) are 2 marks
+        # In TWT: first 9 are 1 mark, remaining (10 to 17) are 2 marks
+        if "SWT" in test_series_name:
+            if existing_q_count >= 17:
+                marks = 2
+        else:
+            if existing_q_count >= 9:
+                marks = 2
 
     q_type = "MCQ" if len(options) > 0 else "NAT"
     neg_mark = round(0.33 * marks, 2) if len(options) > 0 else 0
@@ -303,8 +336,8 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 if __name__ == "__main__":
     html_source = "test.html"
     registry_file = "js/pyq-registry.js"
-    test_name = "TWT - computer organization and architecture-2"
-    image_dir = "images/twt-coa-2"
+    test_name = "SWT - Database"
+    image_dir = "images/swt-database"
     
     # Process current test.html if not empty
     if os.path.exists(html_source) and os.path.getsize(html_source) > 0:
