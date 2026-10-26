@@ -54,25 +54,63 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
         for s in el.find_all('script', type=lambda t: t and 'math/tex' in t):
             mode = s.get('type', '')
             tex = (s.string or '').strip()
+            tex_escaped = tex.replace('\\\\', '\\\\\\\\').replace('\\', '\\\\')
             if 'mode=display' in mode:
-                s.replace_with(f" \\[{tex}\\] ")
+                s.replace_with(f" <span>\\\\[ {tex_escaped} \\\\]</span> ")
             else:
-                s.replace_with(f" \\({tex}\\) ")
+                s.replace_with(f" <span>\\\\( {tex_escaped} \\\\)</span> ")
 
-        # 3. Handle sub and sup cleanly
-        for sub in el.find_all('sub'):
+        # 3. Preserve br tags
+        for br in el.find_all('br'):
+            br.replace_with('__BR_TOKEN__')
+
+        # 4. Handle math notation like <strong><em>S</em><sub>1</sub></strong>
+        html = str(el)
+        html = re.sub(r'<strong>\s*<em>\s*([A-Za-z])\s*</em>\s*<sub>\s*([^<]+)\s*</sub>\s*</strong>\s*<strong>\s*:\s*</strong>', r'<b><span>\\\\( \1_\2 \\\\)</span>:</b>', html)
+        html = re.sub(r'<strong>\s*<em>\s*([A-Za-z])\s*</em>\s*<sub>\s*([^<]+)\s*</sub>\s*</strong>\s*:\s*', r'<b><span>\\\\( \1_\2 \\\\)</span>:</b> ', html)
+        html = re.sub(r'<em>\s*([A-Za-z])\s*</em>\s*<sub>\s*([^<]+)\s*</sub>', r'<span>\\\\( \1_\2 \\\\)</span>', html)
+        temp_soup = BeautifulSoup(html, 'html.parser')
+
+        # 5. Handle sub and sup cleanly
+        for sub in temp_soup.find_all('sub'):
             sub_t = sub.get_text().strip()
             sub.replace_with(f"_{{{sub_t}}}")
-        for sup in el.find_all('sup'):
+        for sup in temp_soup.find_all('sup'):
             sup_t = sup.get_text().strip()
             sup.replace_with(f"^{{{sup_t}}}")
 
-        text = el.get_text(separator=' ', strip=True)
+        # Preserve bold, strong, italic formatting
+        for b in temp_soup.find_all(['b', 'strong']):
+            b.insert_before('__B_START__')
+            b.insert_after('__B_END__')
+            b.unwrap()
+        for i_tag in temp_soup.find_all(['i', 'em']):
+            i_tag.insert_before('__I_START__')
+            i_tag.insert_after('__I_END__')
+            i_tag.unwrap()
+
+        text = temp_soup.get_text(separator=' ', strip=True)
+        text = text.replace('__BR_TOKEN__', '<br><br>')
+        text = text.replace('__B_START__', '<b>').replace('__B_END__', '</b>')
+        text = text.replace('__I_START__', '<i>').replace('__I_END__', '</i>')
+        text = re.sub(r'<\s*([bi])\s*>\s+', r'<\1>', text)
+        text = re.sub(r'\s+<\s*/([bi])\s*>', r'</\1>', text)
+        text = re.sub(r'[‘\'"]\s*<([bi])>', r'‘<\1>', text)
+        text = re.sub(r'</([bi])>\s*[’\'"]', r'</\1>’', text)
+        text = re.sub(r'</([bi])>\s+%', r'</\1>%', text)
         text = re.sub(r'[ \t\r\f\v]+', ' ', text)
         text = re.sub(r'(\n|\r)+', ' ', text)
         text = re.sub(r'_\{([^}]+)\}', r'<sub>\1</sub>', text)
         text = re.sub(r'\^\{([^}]+)\}', r'<sup>\1</sup>', text)
+        text = re.sub(r'\s*<sub>', '<sub>', text)
+        text = re.sub(r'\s*<sup>', '<sup>', text)
+        text = re.sub(r'</(sub|sup)>\s+([,.:;?!])', r'</\1>\2', text)
+        text = text.replace('&nbsp;', ' ')
         text = re.sub(r'\s+', ' ', text).strip()
+        text = re.sub(r'(\s*<br><br>\s*)+', '<br><br>', text)
+        text = re.sub(r'(\s*<br>\s*)+', '<br><br>', text)
+        # Clean any awkward spaces before colons
+        text = text.replace('</b> :', '</b>:')
         return text
 
     # Get question text
@@ -84,7 +122,7 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     if not q_parts:
         question_text = clean_elem(question_span)
     else:
-        question_text = "<br>".join(q_parts)
+        question_text = "<br><br>".join(q_parts)
 
     question_text = question_text.replace('"', '\\"')
     
@@ -102,6 +140,7 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             btn = label.find('button')
             opt_tag = btn if btn else label
             opt_text = clean_elem(opt_tag)
+            opt_text = re.sub(r'^[A-D]\.\s*', '', opt_text)
             opt_text = opt_text.replace("'", "\\'")
             options.append(f"'{opt_text}'")
             
@@ -121,6 +160,15 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
             sol_container = parent.find_all('div')[-1] if parent.find_all('div') else None
 
         img_tags = []
+        if sol_container:
+            for img in sol_container.find_all('img'):
+                img_url = img.get('src')
+                if img_url:
+                    img_name = img_url.split('/')[-1].split('?')[0]
+                    local_img_path = f"{image_folder}/{img_name}"
+                    download_image(img_url, local_img_path)
+                    img.replace_with(f"__IMG_SRC_{local_img_path}__")
+
         for img in parent.find_all('img'):
             img_url = img.get('src')
             if img_url:
@@ -138,10 +186,13 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
                 if st:
                     sol_parts.append(st)
             if sol_parts:
-                sol_text = "<br>".join(sol_parts)
+                sol_text = "<br><br>".join(sol_parts)
             else:
                 sol_text = clean_elem(sol_container)
-            sol_text = sol_text.replace('"', '\\"').strip('<br>').strip()
+            sol_text = re.sub(r'__IMG_SRC_(.*?)__', r"<br><img src='\1' alt='Detailed Solution'><br>", sol_text)
+            sol_text = re.sub(r'^(<br>)+|(<br>)+$', '', sol_text.strip())
+            sol_text = re.sub(r'(<br>\s*){3,}', '<br><br>', sol_text)
+            sol_text = sol_text.replace('"', '\\"').strip()
 
         combined_sol = []
         if sol_text:
@@ -185,17 +236,23 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     neg_mark = round(0.33 * marks, 2) if len(options) > 0 else 0
 
     if q_type == "NAT":
-        try:
-            if "." in correct_answer:
-                answer_js = str(float(correct_answer))
-            else:
-                answer_js = str(int(correct_answer))
-        except ValueError:
-            answer_js = f'"{correct_answer}"'
+        range_match = re.findall(r'[-+]?\d*\.?\d+', correct_answer)
+        if len(range_match) == 2 and ("[" in correct_answer or "to" in correct_answer or "," in correct_answer):
+            c_min = float(range_match[0]) if "." in range_match[0] else int(range_match[0])
+            c_max = float(range_match[1]) if "." in range_match[1] else int(range_match[1])
+            answer_js = f"[{c_min}, {c_max}]"
+        else:
+            try:
+                if "." in correct_answer:
+                    answer_js = str(float(correct_answer))
+                else:
+                    answer_js = str(int(correct_answer))
+            except ValueError:
+                answer_js = f'"{correct_answer}"'
     elif "," in correct_answer:
         q_type = "MSQ"
         neg_mark = 0
-        ans_list = [ans.strip() for ans in correct_answer.split(",")]
+        ans_list = sorted([ans.strip() for ans in correct_answer.split(",")])
         answer_js = str(ans_list).replace("'", '"')
     else:
         answer_js = f'"{correct_answer}"'
@@ -246,11 +303,15 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 if __name__ == "__main__":
     html_source = "test.html"
     registry_file = "js/pyq-registry.js"
-    test_name = "TWT - Theory of computation-2"
-    image_dir = "images/twt-theory-of-computation-2"
+    test_name = "TWT - computer organization and architecture-2"
+    image_dir = "images/twt-coa-2"
     
-    # Initialize last_mtime to 0 so when content is pasted it triggers immediately
-    last_mtime = 0
+    # Process current test.html if not empty
+    if os.path.exists(html_source) and os.path.getsize(html_source) > 0:
+        print(f"[{time.strftime('%H:%M:%S')}] Processing existing {html_source}...")
+        extract_and_add_question(html_source, registry_file, test_name, image_dir)
+    
+    last_mtime = os.path.getmtime(html_source) if os.path.exists(html_source) else 0
         
     print(f"Watching for changes in {html_source} (Press Ctrl+C to stop)...")
     
