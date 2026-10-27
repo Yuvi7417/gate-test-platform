@@ -235,17 +235,18 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
     # Check if this exact question is already in the test section
     test_end_check = js_content.find('});', test_idx)
     current_test_block = js_content[test_idx:test_end_check] if test_end_check != -1 else js_content[test_idx:]
-    if question_text and question_text in current_test_block:
-        # If options exist, check if the first option is also in the block to avoid false duplicate on generic titles
-        if options and len(options) > 0 and options[0] in current_test_block:
-            print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+    if question_image:
+        if question_image in current_test_block:
+            print(f"[{time.strftime('%H:%M:%S')}] Duplicate image detected! Question already exists in '{test_series_name}'. Skipping.")
             return
-        elif not options:
-            print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
-            return
-    if question_image and question_image in current_test_block:
-        print(f"[{time.strftime('%H:%M:%S')}] Duplicate image detected! Question already exists in '{test_series_name}'. Skipping.")
-        return
+    elif question_text:
+        if question_text in current_test_block:
+            if options and len(options) > 0 and options[0] in current_test_block:
+                print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+                return
+            elif not options:
+                print(f"[{time.strftime('%H:%M:%S')}] Duplicate detected! Question already exists in '{test_series_name}'. Skipping.")
+                return
 
     # Determine marks
     marks = 1
@@ -336,8 +337,8 @@ def extract_and_add_question(html_file, js_file, test_series_name, image_folder)
 if __name__ == "__main__":
     html_source = "test.html"
     registry_file = "js/pyq-registry.js"
-    test_name = "SWT - Database"
-    image_dir = "images/swt-database"
+    test_name = "SWT - Computer network"
+    image_dir = "images/swt-computer-network"
     
     # Process current test.html if not empty
     if os.path.exists(html_source) and os.path.getsize(html_source) > 0:
