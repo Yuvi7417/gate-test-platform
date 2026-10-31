@@ -5377,6 +5377,16 @@ main {
   color: #2563eb;
 }
 
+.pyq-type-pill.mixed {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.pyq-type-pill.full-length {
+  background: #fce7f3;
+  color: #db2777;
+}
+
 .pyq-topics-cell {
   color: #64748b;
   font-size: 12.5px;

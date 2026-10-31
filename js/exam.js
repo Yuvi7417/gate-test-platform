@@ -1337,7 +1337,7 @@ function proceedFromInstructions() {
     return;
   }
 
-  const backendTestId = testBackendIdMap[testKey];
+  const backendTestId = (window.testBackendIdMap || {})[testKey];
 
   // Check local test registry first!
   if (window.testMap && window.testMap[backendTestId]) {
@@ -2536,7 +2536,7 @@ function openSolutionMode(testName, seriesId) {
     return;
   }
 
-  const backendTestId = testBackendIdMap[testKey];
+  const backendTestId = (window.testBackendIdMap || {})[testKey];
   const courseId = currentTestListId;
   const token = localStorage.getItem('apexcore_token');
 

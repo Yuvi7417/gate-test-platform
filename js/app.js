@@ -385,19 +385,20 @@ window.testSeries = [
   {
     id: "pw-cs-gate-2026",
     code: "CSE",
-    examTag: "GATE 2026",
+    learnTag: "WALLAH CSE",
+    examTag: "GATE 2027",
     subjectTag: "Computer Science",
-    title: "Wallah CS GATE 2026 Test Series",
+    title: "Wallah CS GATE 2027 Test Series",
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 57,
-    startDate: "2025-03-15",
-    endDate: "2026-02-15",
-    session: "2025-2026",
-    desc: "Wallah test series for GATE CSE 2026 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
+    tests: 58,
+    startDate: "2026-05-17",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "Wallah test series for GATE CSE 2027 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
     features: [
-      "wallah coverage of all core GATE CSE subjects",
+      "Wallah coverage of all core GATE CSE subjects",
       "Scheduled aligned with exam calendar",
       "Topic-wise cumulative testing",
       "Detailed solutions for every question",
@@ -406,20 +407,17 @@ window.testSeries = [
     batches: [
       {
         name: "Batch 1",
-        start: "Mar 15, 2025",
+        start: "May 17, 2026",
         time: "12:00 AM – 11:59 PM",
         selected: true,
       },
     ],
     schedule: [
-      // ["SWt - C programming", "Oct 01, 2026"],
-      // ["SWt - C programming-1", "Oct 01, 2026"]
     ],
     oldPrice: "₹500",
     price: "₹98",
     basePrice: 98,
-    brandLabel: "APEX WALLAH",
-    comingSoon: true
+    brandLabel: "APEX WALLAH"
   },
   {
     id: "cse-gate-2026-pyq",
@@ -1088,7 +1086,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -1659,6 +1657,33 @@ window.PYQ_CS_SUBJECTS = [
     regex: /(general aptitude|aptitude|\bga\b)/i
   },
   {
+    id: "mst",
+    name: "Mixed Subject Tests",
+    iconType: "text",
+    iconVal: "🔀",
+    iconBg: "#fef3c7",
+    iconColor: "#b45309",
+    regex: /(mixed subject|multiple subject|\bmst\b)/i
+  },
+  {
+    id: "flt",
+    name: "Full Length Mock Tests",
+    iconType: "text",
+    iconVal: "🏆",
+    iconBg: "#fce7f3",
+    iconColor: "#db2777",
+    regex: /(complete gate syllabus|full length|\bgbg\b|\bflt\b|\bfst\b)/i
+  },
+  {
+    id: "pw_gate_pyq",
+    name: "GATE PYQ Tests (2022-2026)",
+    iconType: "svg",
+    iconVal: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
+    iconBg: "#e0e7ff",
+    iconColor: "#4f46e5",
+    regex: /(gate pyq test)/i
+  },
+  {
     id: "gate_pyq",
     name: "GATE(2003-2026)",
     iconType: "svg",
@@ -2010,6 +2035,797 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 7", subject: "ee_flt" }
 ];
 
+
+/* ==========================================================================
+   PW-GATE 2027 CSE Subject-Wise Test Planner (58 Tests)
+   ========================================================================== */
+
+window.PYQ_PW_DEFAULT_TESTS = [
+  // Programming and Data Structure (5 tests: 2 TWT C Prog + 2 TWT DS + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 1,
+    name: "TWT 01 - Programming in C-1",
+    testLabel: "TWT 01",
+    testType: "Topic",
+    bracket: "Programming in C-1",
+    subject: "prog_ds",
+    date: "17 May 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Data types and Operators, Control Flow Statements, Functions recursion"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 2,
+    name: "TWT 02 - Programming in C-2",
+    testLabel: "TWT 02",
+    testType: "Topic",
+    bracket: "Programming in C-2",
+    subject: "prog_ds",
+    date: "20 May 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Storage Classes, Pointers and Array, Strings structure"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 17,
+    name: "TWT 17 - Data Structures",
+    testLabel: "TWT 17",
+    testType: "Topic",
+    bracket: "Arrays, Stacks, Queues & Linked Lists",
+    subject: "prog_ds",
+    date: "4 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Arrays, Stacks and Queues, Hashing, Linked Lists"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 18,
+    name: "TWT 18 - Data Structures",
+    testLabel: "TWT 18",
+    testType: "Topic",
+    bracket: "Trees, BST & Heaps",
+    subject: "prog_ds",
+    date: "7 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Trees, Binary Search Trees, Binary Heaps and Miscellaneous"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 26,
+    name: "SWT 1 - Programming and Data Structures",
+    testLabel: "SWT 1",
+    testType: "Subject",
+    bracket: "Programming and Data Structures",
+    subject: "prog_ds",
+    date: "29 July 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Programming and Data Structures Syllabus"
+  },
+
+  // Algorithms (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 3,
+    name: "TWT 03 - Algorithm",
+    testLabel: "TWT 03",
+    testType: "Topic",
+    bracket: "Asymptotic & Recurrences",
+    subject: "algo",
+    date: "23 May 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Asymptotic Notation, Finding Time Complexity, Solving Recurrence Relation (Substitution Method), Algorithm design techniques: Divide and Conquer, Quick Sort, Merge Sort, Max-Min, Binary Search, Matrix Multiplication, Recursion tree method and Master Method, Searching and Sorting: Insertion Sort, Selection Sort, Bubble Sort, Radix Sort, Linear Search."
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 4,
+    name: "TWT 04 - Algorithm",
+    testLabel: "TWT 04",
+    testType: "Topic",
+    bracket: "Greedy, DP & Graphs",
+    subject: "algo",
+    date: "26 May 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Greedy, Minimum spanning trees, Shortest paths : SSSP, APSP, and Dynamic Programming, Graph Techniques and Traversals, Heaps"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 32,
+    name: "SWT 7 - Algorithm",
+    testLabel: "SWT 7",
+    testType: "Subject",
+    bracket: "Algorithm",
+    subject: "algo",
+    date: "22 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Algorithms Syllabus"
+  },
+
+  // Theory of Computation (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 5,
+    name: "TWT 05 - Theory of Computation",
+    testLabel: "TWT 05",
+    testType: "Topic",
+    bracket: "Regular Languages & Automata",
+    subject: "toc",
+    date: "29 May 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Regular expressions and finite automata: DFA, NFA, FA Interconversion, Minimization, Mealy Machine, Moore Machine, Construction of Regular Expression Interconversion RE to FA, Regular Grammar, Regular Language, pumping lemma, Context-free Grammar and Push-down automata: CFG, PDA, CFL Identification, Closure Properties of CFL, Context Free Language"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 6,
+    name: "TWT 06 - Theory of Computation",
+    testLabel: "TWT 06",
+    testType: "Topic",
+    bracket: "Turing Machines & Undecidability",
+    subject: "toc",
+    date: "1 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Turing machines and undecidability: Turing Machine, REC and RE language Identification, Closure Properties of REC and REL's, Undecidability Reducibility"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 27,
+    name: "SWT 2 - Theory Of Computation",
+    testLabel: "SWT 2",
+    testType: "Subject",
+    bracket: "Theory Of Computation",
+    subject: "toc",
+    date: "2 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Theory of Computation Syllabus"
+  },
+
+  // Computer Organization & Architecture (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 7,
+    name: "TWT 07 - Computer Organization & Architecture",
+    testLabel: "TWT 07",
+    testType: "Topic",
+    bracket: "Machine Instructions, ALU & Pipelining",
+    subject: "coa",
+    date: "4 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Machine Instruction & Addressing Modes & ALU & Control Unit and I/O Interface: Basics of COA, Registers and its Types, Types of Buses, Instruction Set Architecture, Addressing Modes, Micro-operation & micro program, ALU Data Path, Control Unit design, Hardwired Control, Microprogrammed Control, IO Organization, Modes of Data Transfer, Secondary memory, Instruction Pipelining & Floating Point Representation: RISC & CISC, Basics of Pipelining, Performance Evaluation of Pipeline, Pipelining Dependencies, Floating Point Representation"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 8,
+    name: "TWT 08 - Computer Organization & Architecture",
+    testLabel: "TWT 08",
+    testType: "Topic",
+    bracket: "Memory Organization & Cache",
+    subject: "coa",
+    date: "7 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Memory Organization: Memory Hierarchy Design, Cache memory & Cache organisation, Mapping Techniques, Cache Replacement Techniques, Cache Updation Policy, Main memory, Secondary Memory"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 29,
+    name: "SWT 4 - Computer Organization & Architecture",
+    testLabel: "SWT 4",
+    testType: "Subject",
+    bracket: "Computer Organization & Architecture",
+    subject: "coa",
+    date: "10 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Computer Organization & Architecture Syllabus"
+  },
+
+  // Engineering Mathematics (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 9,
+    name: "TWT 09 - Engineering Mathematics",
+    testLabel: "TWT 09",
+    testType: "Topic",
+    bracket: "Linear Algebra",
+    subject: "em",
+    date: "10 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Linear Algebra"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 10,
+    name: "TWT 10 - Engineering Mathematics",
+    testLabel: "TWT 10",
+    testType: "Topic",
+    bracket: "Calculus & Probability",
+    subject: "em",
+    date: "13 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Calculus, & Probability and statistics"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 30,
+    name: "SWT 5 - Engineering Maths",
+    testLabel: "SWT 5",
+    testType: "Subject",
+    bracket: "Engineering Maths",
+    subject: "em",
+    date: "14 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Engineering Mathematics Syllabus"
+  },
+
+  // General Aptitude (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 11,
+    name: "TWT 11 - General Aptitude",
+    testLabel: "TWT 11",
+    testType: "Topic",
+    bracket: "Quantitative & Analytical Aptitude",
+    subject: "ga",
+    date: "16 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Quantitative Aptitude, Analytical Aptitude"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 12,
+    name: "TWT 12 - General Aptitude",
+    testLabel: "TWT 12",
+    testType: "Topic",
+    bracket: "Spatial & Verbal Ability",
+    subject: "ga",
+    date: "19 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Spatial Aptitude, Basic English grammar: tenses, articles, adjectives, prepositions, conjunctions, verb-noun agreement, and other parts of speech Basic vocabulary: words, idioms, and phrases in context, reading and comprehension, Narrative sequencing."
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 31,
+    name: "SWT 6 - General Aptitude",
+    testLabel: "SWT 6",
+    testType: "Subject",
+    bracket: "General Aptitude",
+    subject: "ga",
+    date: "18 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete General Aptitude Syllabus"
+  },
+
+  // Database (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 13,
+    name: "TWT 13 - Database",
+    testLabel: "TWT 13",
+    testType: "Topic",
+    bracket: "ER Model & Normalization",
+    subject: "dbms",
+    date: "22 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Database Design & ER Model: Introduction Of RDBMS, ER Model Concept & Conversion of ER Model to RDBMS, Finding Number of Candidate key & Super keys, FD's & Normalization: Membership set & Equality between FD Sets, Minimal Cover, Properties of Decomposition, Normal Form, Decomposition Into Higher Normal Form"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 14,
+    name: "TWT 14 - Database",
+    testLabel: "TWT 14",
+    testType: "Topic",
+    bracket: "Transactions & SQL",
+    subject: "dbms",
+    date: "25 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Transaction & Concurrency Control: Serializable Schedule (Conflict & View), Finding Number of Serializable Schedule, Recoverable Schedule, Lock Based/Time Stamp Protocol, Relational Algebra, Structured Query Language (SQL), TRC, File Organization and Indexing: File Organization and Indexing, Multi level Indexing, B Tree & B+ Tree"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 33,
+    name: "SWT 8 - Databases",
+    testLabel: "SWT 8",
+    testType: "Subject",
+    bracket: "Databases",
+    subject: "dbms",
+    date: "26 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Database Management Systems Syllabus"
+  },
+
+  // Computer Networks (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 15,
+    name: "TWT 15 - Computer Networks",
+    testLabel: "TWT 15",
+    testType: "Topic",
+    bracket: "Layering & Data Link Layer",
+    subject: "cn",
+    date: "28 June 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Concept of layering: OSI and TCP/IP Protocol Stacks; Basics of packet, circuit and virtual circuit switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Flow control; IP addressing, IPv4, CIDR notation"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 16,
+    name: "TWT 16 - Computer Networks",
+    testLabel: "TWT 16",
+    testType: "Topic",
+    bracket: "Routing & Transport Protocols",
+    subject: "cn",
+    date: "1 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "IP Fragmentation; Basics of IP support protocols (ARP, DHCP, ICMP), NAT; Routing protocols: shortest path, flooding, distance vector and link state routing; Transport layer: TCP flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email."
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 34,
+    name: "SWT 9 - Computer Networks",
+    testLabel: "SWT 9",
+    testType: "Subject",
+    bracket: "Computer Networks",
+    subject: "cn",
+    date: "30 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Computer Networks Syllabus"
+  },
+
+  // Compiler Design (2 tests: 1 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 19,
+    name: "TWT 19 - Compiler",
+    testLabel: "TWT 19",
+    testType: "Topic",
+    bracket: "Lexical Analysis, Parsing & Code Gen",
+    subject: "cd",
+    date: "10 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Lexical analysis and Parsing: Phases of Compiler, Basics of Lexical Analysis, Finding the Tokens, Top Down and Bottom Up parser, Syntax-directed translation and Intermediate code generation, Runtime environments, local optimization. Data flow analysis: constant propagation, liveness analysis, common sub-expression elimination"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 37,
+    name: "SWT 12 - Compiler Design",
+    testLabel: "SWT 12",
+    testType: "Subject",
+    bracket: "Compiler Design",
+    subject: "cd",
+    date: "13 September 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Compiler Design Syllabus"
+  },
+
+  // Operating System (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 20,
+    name: "TWT 20 - Operating System",
+    testLabel: "TWT 20",
+    testType: "Topic",
+    bracket: "Process, CPU Scheduling & Deadlock",
+    subject: "os",
+    date: "13 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Process Management & CPU Scheduling & Deadlock : Process Concept, CPU Scheduling Algorithms, System Call, Threads, Deadlock Characterization, Deadlock Handling, Resource Allocation Graph, Process Synchronisation : Critical Section Problem, Hardware Solution (TSL, etc), Software Solution, OS Based Solution, Classical IPC problems, Concurrency Mechanism"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 21,
+    name: "TWT 21 - Operating System",
+    testLabel: "TWT 21",
+    testType: "Topic",
+    bracket: "File System & Memory Management",
+    subject: "os",
+    date: "16 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "File system + Disk Management, Memory Management and Virtual Memory: Memory management Techniques, Paging, Virtual Memory, Page replacement Techniques"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 35,
+    name: "SWT 10 - Operating System",
+    testLabel: "SWT 10",
+    testType: "Subject",
+    bracket: "Operating System",
+    subject: "os",
+    date: "3 September 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Operating System Syllabus"
+  },
+
+  // Discrete Mathematics (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 22,
+    name: "TWT 22 - Discrete Mathematics",
+    testLabel: "TWT 22",
+    testType: "Topic",
+    bracket: "Graph Theory",
+    subject: "dm",
+    date: "19 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Graph Theory: Basics of Graphs, Degree Sequence, Types of Graphs, Connectivity, Graph Number, Planarity."
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 23,
+    name: "TWT 23 - Discrete Mathematics",
+    testLabel: "TWT 23",
+    testType: "Topic",
+    bracket: "Propositional Logic, Sets & Combinatorics",
+    subject: "dm",
+    date: "22 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Propositional Logic: Propositional Logic, Logical Equivalence, Inference Rule, Predicate Logic, Quantifier, Sets, Relations & Functions: Sets, Relations & Functions, Lattice, Monoids and Groups, Combinatorics: Permutations, Combinations, Binomial Identities, Generating Function, Recurrence Relation"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 28,
+    name: "SWT 3 - Discrete Mathematics",
+    testLabel: "SWT 3",
+    testType: "Subject",
+    bracket: "Discrete Mathematics",
+    subject: "dm",
+    date: "6 August 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Discrete Mathematics Syllabus"
+  },
+
+  // Digital Logic (3 tests: 2 TWT + 1 SWT)
+  {
+    series: "pw-cs-gate-2026",
+    order: 24,
+    name: "TWT 24 - Digital Logic",
+    testLabel: "TWT 24",
+    testType: "Topic",
+    bracket: "Number System, Codes & Boolean Algebra",
+    subject: "dl",
+    date: "25 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Number System, Binary Codes, Boolean Algebra, Logic Gates and K-Maps: Radix based number system, Conversion, Signed binary numbers, BCD codes, Boolean Algebra, Logic Gates and K-Maps"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 25,
+    name: "TWT 25 - Digital Logic",
+    testLabel: "TWT 25",
+    testType: "Topic",
+    bracket: "Combinational & Sequential Circuits",
+    subject: "dl",
+    date: "28 July 2026",
+    duration: "40 Min",
+    totalMarks: 20,
+    topicsCovered: "Combinational Logic Circuits: Code Converter, Arithmetic Circuits, BCD to Excess-3/Excess-3 to BCD converter circuits using binary adder, BCD adder and Subtracter, Binary Comparator Circuits, Multiplexer, Decoder/DE-MUX, Encoder and Priority Encoder, Sequential circuits: Flip-Flops, Registers, Asynchronous Counter, Synchronous Counter"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 36,
+    name: "SWT 11 - Digital Logic",
+    testLabel: "SWT 11",
+    testType: "Subject",
+    bracket: "Digital Logic",
+    subject: "dl",
+    date: "7 September 2026",
+    duration: "72 Min",
+    totalMarks: 40,
+    topicsCovered: "Complete Digital Logic Syllabus"
+  },
+
+  // Mixed Subject Tests (4 tests: MST 1 to MST 4)
+  {
+    series: "pw-cs-gate-2026",
+    order: 38,
+    name: "MST 1 - C Programming + Data Structures + TOC + Algorithms",
+    testLabel: "MST 1",
+    testType: "Mixed",
+    bracket: "C Prog + DS + TOC + Algorithms",
+    subject: "mst",
+    date: "20 September 2026",
+    duration: "110 Min",
+    totalMarks: 60,
+    topicsCovered: "C Programming + Data Structures + Theory of Computation + Algorithms"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 39,
+    name: "MST 2 - General Mathematics + General Aptitude",
+    testLabel: "MST 2",
+    testType: "Mixed",
+    bracket: "Mathematics + Aptitude",
+    subject: "mst",
+    date: "27 September 2026",
+    duration: "110 Min",
+    totalMarks: 60,
+    topicsCovered: "General Mathematics + General Aptitude"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 40,
+    name: "MST 3 - COA + Database Management + Computer Network",
+    testLabel: "MST 3",
+    testType: "Mixed",
+    bracket: "COA + DBMS + Networks",
+    subject: "mst",
+    date: "4 October 2026",
+    duration: "110 Min",
+    totalMarks: 60,
+    topicsCovered: "Computer Organization & Architecture + Database Management + Computer Network"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 41,
+    name: "MST 4 - Compiler Design + OS + Digital Logic + Discrete Maths",
+    testLabel: "MST 4",
+    testType: "Mixed",
+    bracket: "Compiler + OS + Digital + Discrete",
+    subject: "mst",
+    date: "11 October 2026",
+    duration: "110 Min",
+    totalMarks: 60,
+    topicsCovered: "Compiler Design + Operating System + Digital Logic + Discrete Maths"
+  },
+
+  // Full Length Mock Tests (12 tests: GBG 01 to GBG 12)
+  {
+    series: "pw-cs-gate-2026",
+    order: 42,
+    name: "GBG 01 - Full Length Mock Test 1",
+    testLabel: "GBG 01",
+    testType: "Full Length",
+    bracket: "Full Length Mock 1",
+    subject: "flt",
+    date: "18 October 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 43,
+    name: "GBG 02 - Full Length Mock Test 2",
+    testLabel: "GBG 02",
+    testType: "Full Length",
+    bracket: "Full Length Mock 2",
+    subject: "flt",
+    date: "25 October 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 44,
+    name: "GBG 03 - Full Length Mock Test 3",
+    testLabel: "GBG 03",
+    testType: "Full Length",
+    bracket: "Full Length Mock 3",
+    subject: "flt",
+    date: "1 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 45,
+    name: "GBG 04 - Full Length Mock Test 4",
+    testLabel: "GBG 04",
+    testType: "Full Length",
+    bracket: "Full Length Mock 4",
+    subject: "flt",
+    date: "15 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 46,
+    name: "GBG 05 - Full Length Mock Test 5",
+    testLabel: "GBG 05",
+    testType: "Full Length",
+    bracket: "Full Length Mock 5",
+    subject: "flt",
+    date: "22 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 47,
+    name: "GBG 06 - Full Length Mock Test 6",
+    testLabel: "GBG 06",
+    testType: "Full Length",
+    bracket: "Full Length Mock 6",
+    subject: "flt",
+    date: "29 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 48,
+    name: "GBG 07 - Full Length Mock Test 7",
+    testLabel: "GBG 07",
+    testType: "Full Length",
+    bracket: "Full Length Mock 7",
+    subject: "flt",
+    date: "6 December 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 49,
+    name: "GBG 08 - Full Length Mock Test 8",
+    testLabel: "GBG 08",
+    testType: "Full Length",
+    bracket: "Full Length Mock 8",
+    subject: "flt",
+    date: "13 December 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 50,
+    name: "GBG 09 - Full Length Mock Test 9",
+    testLabel: "GBG 09",
+    testType: "Full Length",
+    bracket: "Full Length Mock 9",
+    subject: "flt",
+    date: "20 December 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 51,
+    name: "GBG 10 - Full Length Mock Test 10",
+    testLabel: "GBG 10",
+    testType: "Full Length",
+    bracket: "Full Length Mock 10",
+    subject: "flt",
+    date: "27 December 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 52,
+    name: "GBG 11 - Full Length Mock Test 11",
+    testLabel: "GBG 11",
+    testType: "Full Length",
+    bracket: "Full Length Mock 11",
+    subject: "flt",
+    date: "3 January 2027",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 53,
+    name: "GBG 12 - Full Length Mock Test 12",
+    testLabel: "GBG 12",
+    testType: "Full Length",
+    bracket: "Full Length Mock 12",
+    subject: "flt",
+    date: "10 January 2027",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "Complete GATE Syllabus"
+  },
+
+  // GATE PYQ Tests (5 tests)
+  {
+    series: "pw-cs-gate-2026",
+    order: 54,
+    name: "GATE PYQ Test 1 - GATE 2022",
+    testLabel: "GATE PYQ 1",
+    testType: "PYQ",
+    bracket: "GATE 2022 Official Paper",
+    subject: "pw_gate_pyq",
+    date: "30 October 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2022 Computer Science Official Paper"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 55,
+    name: "GATE PYQ Test 2 - GATE 2023",
+    testLabel: "GATE PYQ 2",
+    testType: "PYQ",
+    bracket: "GATE 2023 Official Paper",
+    subject: "pw_gate_pyq",
+    date: "30 October 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2023 Computer Science Official Paper"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 56,
+    name: "GATE PYQ Test 3 - GATE 2024",
+    testLabel: "GATE PYQ 3",
+    testType: "PYQ",
+    bracket: "GATE 2024 Official Paper",
+    subject: "pw_gate_pyq",
+    date: "30 October 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2024 Computer Science Official Paper"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 57,
+    name: "GATE PYQ Test 4 - GATE 2025",
+    testLabel: "GATE PYQ 4",
+    testType: "PYQ",
+    bracket: "GATE 2025 Official Paper",
+    subject: "pw_gate_pyq",
+    date: "20 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2025 Computer Science Official Paper"
+  },
+  {
+    series: "pw-cs-gate-2026",
+    order: 58,
+    name: "GATE PYQ Test 5 - GATE 2026",
+    testLabel: "GATE PYQ 5",
+    testType: "PYQ",
+    bracket: "GATE 2026 Official Paper",
+    subject: "pw_gate_pyq",
+    date: "20 November 2026",
+    duration: "180 Min",
+    totalMarks: 100,
+    topicsCovered: "GATE 2026 Computer Science Official Paper"
+  }
+];
+
 window.handleNotifyMe = function (btn, testName) {
   try {
     const list = JSON.parse(localStorage.getItem("apex_notified_tests") || "[]");
@@ -2046,36 +2862,60 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const cleanName = t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
       registeredMap.set(cleanName, { ...t, name: cleanName });
     });
+  } else if (seriesId === "pw-cs-gate-2026") {
+    (window.PYQ_PW_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
   }
 
   // 2. Tests from apexTestRegistry
   if (window.apexTestRegistry && Array.isArray(window.apexTestRegistry)) {
     window.apexTestRegistry.forEach(t => {
       if (t.series === seriesId && t.name) {
-        const cleanName = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026")
+        let cleanName = (seriesId === "ee-gate-pyq-2027" || seriesId === "ee-gate-ace-2026")
           ? t.name.replace(/\s*-\s*(\d+)$/, ' -$1')
           : t.name;
 
-        // Prevent duplicate if same test name exists (case-insensitively or with alternate spacing)
+        // Match against existing keys in registeredMap (e.g. by prefix like "TWT 01", "SWT 1", etc.)
+        let matchedKey = null;
         const cleanLower = cleanName.toLowerCase().trim();
-        const altName = t.name.includes(" -")
-          ? t.name.replace(/\s*-\s*(\d+)$/, '-$1')
-          : t.name.replace(/\s*-\s*(\d+)$/, ' -$1');
-        const altLower = altName.toLowerCase().trim();
+        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|GBG\s*\d+)/i);
 
         for (const existingKey of registeredMap.keys()) {
           const exLower = existingKey.toLowerCase().trim();
-          if (exLower === cleanLower || exLower === altLower) {
-            registeredMap.delete(existingKey);
+          if (exLower === cleanLower) {
+            matchedKey = existingKey;
+            break;
+          }
+          if (prefixMatch) {
+            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|GBG\s*\d+)/i);
+            if (exPrefix && exPrefix[1].replace(/\s+/g, ' ').toUpperCase() === prefixMatch[1].replace(/\s+/g, ' ').toUpperCase()) {
+              matchedKey = existingKey;
+              break;
+            }
           }
         }
 
-        registeredMap.set(cleanName, {
+        const targetKey = matchedKey || cleanName;
+        const existingData = registeredMap.get(targetKey) || {};
+
+        if (matchedKey && matchedKey !== cleanName) {
+          registeredMap.delete(matchedKey);
+        }
+
+        registeredMap.set(targetKey, {
+          ...existingData,
           ...t,
           series: seriesId,
-          name: cleanName,
-          date: t.date,
-          topicsCovered: t.topicsCovered || t.topics,
+          name: targetKey,
+          date: t.date || existingData.date,
+          topicsCovered: t.topicsCovered || t.topics || existingData.topicsCovered,
+          duration: t.duration || existingData.duration,
+          totalMarks: t.totalMarks || existingData.totalMarks,
+          testLabel: t.testLabel || existingData.testLabel,
+          testType: t.testType || existingData.testType,
+          bracket: t.bracket || existingData.bracket,
+          subject: t.subject || existingData.subject,
           isFree: t.isFree === true || t.free === true || t.status === "free" || t.status === "unlocked",
           questions: t.questions
         });
@@ -2121,7 +2961,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     // Find tests matching this subject
     const subjTests = allTests.filter(t => {
       if ((subj.id === "isro" || subj.id === "gate_pyq") && seriesId !== "cse-gate-2027") return false;
-      if (t.subject === subj.id) return true;
+      if (t.subject) return t.subject === subj.id;
       return subj.regex && subj.regex.test(t.name);
     });
 
@@ -2141,6 +2981,9 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       });
     } else {
       subjTests.sort((a, b) => {
+        if (a.order !== undefined && b.order !== undefined) {
+          return a.order - b.order;
+        }
         const aName = a.name || "";
         const bName = b.name || "";
         const aIsSubj = aName.toUpperCase().includes("SWT") || aName.toUpperCase().includes("SUBJECT");
@@ -2166,9 +3009,9 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
       const isISRO = subj.id === "isro" || /isro/i.test(rawName);
       const isGATEPYQ = subj.id === "gate_pyq" || (/^gate\s+cse\s+20\d\d/i.test(rawName) && subj.id !== "c_prog");
 
-      let bracket = bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, "");
-      let testType = "Topic";
-      let testLabel = "";
+      let bracket = t.bracket || (bracketMatch ? bracketMatch[1] : rawName.replace(/^[A-Za-z\s]+-\s*/, ""));
+      let testType = t.testType || "Topic";
+      let testLabel = t.testLabel || "";
 
       if (isISRO) {
         testLabel = rawName;
@@ -2178,7 +3021,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         testLabel = rawName;
         testType = "PYQ";
         bracket = "Graduate Aptitude Test in Engineering (CS)";
-      } else {
+      } else if (!t.testLabel || !t.testType) {
         const isTopic = rawName.toUpperCase().includes("TWT") || rawName.toUpperCase().includes("TOPIC");
         const isSubject = rawName.toUpperCase().includes("SWT") || rawName.toUpperCase().includes("SUBJECT");
 
@@ -2258,12 +3101,14 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         testType,
         testLabel,
         topicsCovered,
+        duration: t.duration,
+        totalMarks: t.totalMarks,
         isFree,
         canAttempt,
         isAttempted,
         isComingSoon,
         score: res && res.score !== undefined ? res.score : null,
-        maxScore: res && res.maxScore !== undefined ? res.maxScore : 100
+        maxScore: res && res.maxScore !== undefined ? res.maxScore : (t.totalMarks || 100)
       };
     });
 
@@ -2338,9 +3183,9 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
                             <td>
                               <div class="pyq-test-name-cell">
                                 <span>${item.testLabel}</span>
-                                <span class="pyq-type-pill ${item.testType.toLowerCase()}">${item.testType}</span>
+                                <span class="pyq-type-pill ${item.testType.toLowerCase().replace(/\s+/g, '-')}">${item.testType}</span>
                               </div>
-                              <div class="pyq-test-sublabel">${item.bracket}</div>
+                              <div class="pyq-test-sublabel">${item.bracket}${item.duration || item.totalMarks ? ` • ${item.duration || ''}${item.duration && item.totalMarks ? ' • ' : ''}${item.totalMarks ? item.totalMarks + ' Marks' : ''}` : ''}</div>
                             </td>
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
