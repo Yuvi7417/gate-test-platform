@@ -3185,7 +3185,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
                                 <span>${item.testLabel}</span>
                                 <span class="pyq-type-pill ${item.testType.toLowerCase().replace(/\s+/g, '-')}">${item.testType}</span>
                               </div>
-                              <div class="pyq-test-sublabel">${item.bracket}${item.duration || item.totalMarks ? ` • ${item.duration || ''}${item.duration && item.totalMarks ? ' • ' : ''}${item.totalMarks ? item.totalMarks + ' Marks' : ''}` : ''}</div>
+                              <div class="pyq-test-sublabel">${item.bracket || ""}</div>
                             </td>
                             <td class="pyq-topics-cell">${item.topicsCovered}</td>
                             <td class="pyq-status-cell">
