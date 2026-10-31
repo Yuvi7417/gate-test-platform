@@ -1222,11 +1222,12 @@ function openInstructions(testName, seriesId) {
   const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
   const isWeeklyQuiz = (testName || "").includes("WQT") || (testName || "").toUpperCase().includes("WEEKLY QUIZ");
   const isGatePyq = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || (testName || "").toUpperCase().includes("GATE CSE"));
-  const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("FLT") || (testName || "").includes("FST") || isGatePyq;
+  const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("Full Length") || (testName || "").includes("FLT") || (testName || "").includes("FST") || (testName || "").includes("GBG") || isGatePyq;
+  const isMixedSubject = (testName || "").includes("Mixed") || (testName || "").includes("MST");
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
-    else if (isFullTest) instrDurationElement.textContent = "180 minutes";
+    else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
   }
 
@@ -1460,9 +1461,10 @@ async function startPlayer(testName, fetchedQuestions) {
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
   const isGatePyqTest = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || testNameUpper.includes("GATE CSE"));
-  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FLT") || testNameUpper.includes("FST") || isGatePyqTest;
+  const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FULL LENGTH") || testNameUpper.includes("FLT") || testNameUpper.includes("FST") || testNameUpper.includes("GBG") || isGatePyqTest;
+  const isMixedSubjectTest = testNameUpper.includes("MIXED") || testNameUpper.includes("MST");
 
-  if (isFullTest) {
+  if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
     playerSections = [
       { name: "Aptitude", start: 0, end: 9 },

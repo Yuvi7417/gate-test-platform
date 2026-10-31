@@ -2556,7 +2556,7 @@ window.PYQ_PW_DEFAULT_TESTS = [
     bracket: "C Prog + DS + TOC + Algorithms",
     subject: "mst",
     date: "20 September 2026",
-    duration: "110 Min",
+    duration: "180 Min",
     totalMarks: 60,
     topicsCovered: "C Programming + Data Structures + Theory of Computation + Algorithms"
   },
@@ -2569,7 +2569,7 @@ window.PYQ_PW_DEFAULT_TESTS = [
     bracket: "Mathematics + Aptitude",
     subject: "mst",
     date: "27 September 2026",
-    duration: "110 Min",
+    duration: "180 Min",
     totalMarks: 60,
     topicsCovered: "General Mathematics + General Aptitude"
   },
@@ -2582,7 +2582,7 @@ window.PYQ_PW_DEFAULT_TESTS = [
     bracket: "COA + DBMS + Networks",
     subject: "mst",
     date: "4 October 2026",
-    duration: "110 Min",
+    duration: "180 Min",
     totalMarks: 60,
     topicsCovered: "Computer Organization & Architecture + Database Management + Computer Network"
   },
@@ -2595,7 +2595,7 @@ window.PYQ_PW_DEFAULT_TESTS = [
     bracket: "Compiler + OS + Digital + Discrete",
     subject: "mst",
     date: "11 October 2026",
-    duration: "110 Min",
+    duration: "180 Min",
     totalMarks: 60,
     topicsCovered: "Compiler Design + Operating System + Digital Logic + Discrete Maths"
   },
