@@ -385,7 +385,7 @@ window.testSeries = [
   {
     id: "pw-cs-gate-2026",
     code: "CSE",
-    learnTag: "WALLAH CSE",
+    learnTag: "PW CSE",
     examTag: "GATE 2027",
     subjectTag: "Computer Science",
     title: "Wallah CS GATE 2027 Test Series",
@@ -415,8 +415,45 @@ window.testSeries = [
     schedule: [
     ],
     oldPrice: "₹500",
-    price: "₹98",
-    basePrice: 98,
+    price: "₹99",
+    basePrice: 99,
+    brandLabel: "APEX WALLAH"
+  },
+  {
+    id: "pw-cs-gate",
+    code: "CSE",
+    learnTag: "WALLAH LEVEL UP",
+    examTag: "GATE 2027",
+    subjectTag: "Computer Science",
+    title: "Wallah CS GATE 2027 Level UP Test Series",
+    f: "gate",
+    lang: "English",
+    objective: "Objective",
+    tests: 53,
+    startDate: "2026-05-31",
+    endDate: "2027-02-15",
+    session: "2026-2027",
+    desc: "Wallah test series for GATE CSE 2027 covering all core subjects, scheduled to match the exam calendar and build cumulative topic-wise speed.",
+    features: [
+      "Wallah coverage of all core GATE CSE subjects",
+      "Scheduled aligned with exam calendar",
+      "Topic-wise cumulative testing",
+      "Detailed solutions for every question",
+      "Performance tracking against peers",
+    ],
+    batches: [
+      {
+        name: "Batch 1",
+        start: "May 17, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+    ],
+    oldPrice: "₹500",
+    price: "₹99",
+    basePrice: 99,
     brandLabel: "APEX WALLAH"
   },
   {
@@ -1086,7 +1123,7 @@ function openDetail(id, pushHistory = true) {
     .join("");
 
   const dSchedule = document.getElementById("dSchedule");
-  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026") {
+  if (id === "cse-gate-2027" || id === "cs-gate-pyq" || id === "ee-gate-pyq-2027" || id === "ee-gate-ace-2026" || id === "pw-cs-gate-2026" || id === "pw-cs-gate") {
     const enrolled = (window.isEnrolledSeries && window.isEnrolledSeries(id)) || false;
     if (dSchedule) {
       dSchedule.classList.add("pyq-full-width");
@@ -2040,6 +2077,698 @@ window.PYQ_EE_DEFAULT_TESTS = [
    PW-GATE 2027 CSE Subject-Wise Test Planner (58 Tests)
    ========================================================================== */
 
+window.PYQ_PW_LEVEL_DEFAULT_TESTS = [
+  {
+    "series": "pw-cs-gate",
+    "order": 1,
+    "name": "SWT 1 - C Programming",
+    "testLabel": "SWT 1",
+    "testType": "Subject",
+    "bracket": "C Programming",
+    "subject": "c_prog",
+    "date": "May 31, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete C Programming Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 2,
+    "name": "SWT 2 - C Programming",
+    "testLabel": "SWT 2",
+    "testType": "Subject",
+    "bracket": "C Programming",
+    "subject": "c_prog",
+    "date": "June 3, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete C Programming Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 3,
+    "name": "SWT 3 - C Programming",
+    "testLabel": "SWT 3",
+    "testType": "Subject",
+    "bracket": "C Programming",
+    "subject": "c_prog",
+    "date": "June 6, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete C Programming Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 4,
+    "name": "SWT 4 - Data Structures",
+    "testLabel": "SWT 4",
+    "testType": "Subject",
+    "bracket": "Data Structures",
+    "subject": "ds",
+    "date": "June 11, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Data Structures Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 5,
+    "name": "SWT 5 - Data Structures",
+    "testLabel": "SWT 5",
+    "testType": "Subject",
+    "bracket": "Data Structures",
+    "subject": "ds",
+    "date": "June 14, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Data Structures Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 6,
+    "name": "SWT 6 - Data Structures",
+    "testLabel": "SWT 6",
+    "testType": "Subject",
+    "bracket": "Data Structures",
+    "subject": "ds",
+    "date": "June 18, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Data Structures Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 7,
+    "name": "SWT 7 - Algorithm",
+    "testLabel": "SWT 7",
+    "testType": "Subject",
+    "bracket": "Algorithm",
+    "subject": "algo",
+    "date": "June 21, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Algorithm Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 8,
+    "name": "SWT 8 - Algorithm",
+    "testLabel": "SWT 8",
+    "testType": "Subject",
+    "bracket": "Algorithm",
+    "subject": "algo",
+    "date": "June 24, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Algorithm Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 9,
+    "name": "SWT 9 - Algorithm",
+    "testLabel": "SWT 9",
+    "testType": "Subject",
+    "bracket": "Algorithm",
+    "subject": "algo",
+    "date": "June 27, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Algorithm Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 10,
+    "name": "SWT 10 - General Aptitude",
+    "testLabel": "SWT 10",
+    "testType": "Subject",
+    "bracket": "General Aptitude",
+    "subject": "ga",
+    "date": "July 2, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete General Aptitude Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 11,
+    "name": "SWT 11 - General Aptitude",
+    "testLabel": "SWT 11",
+    "testType": "Subject",
+    "bracket": "General Aptitude",
+    "subject": "ga",
+    "date": "July 5, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete General Aptitude Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 12,
+    "name": "SWT 12 - General Aptitude",
+    "testLabel": "SWT 12",
+    "testType": "Subject",
+    "bracket": "General Aptitude",
+    "subject": "ga",
+    "date": "July 8, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete General Aptitude Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 13,
+    "name": "SWT 13 - Database Management System",
+    "testLabel": "SWT 13",
+    "testType": "Subject",
+    "bracket": "Database Management System",
+    "subject": "dbms",
+    "date": "July 12, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Database Management System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 14,
+    "name": "SWT 14 - Database Management System",
+    "testLabel": "SWT 14",
+    "testType": "Subject",
+    "bracket": "Database Management System",
+    "subject": "dbms",
+    "date": "July 15, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Database Management System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 15,
+    "name": "SWT 15 - Database Management System",
+    "testLabel": "SWT 15",
+    "testType": "Subject",
+    "bracket": "Database Management System",
+    "subject": "dbms",
+    "date": "July 18, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Database Management System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 16,
+    "name": "SWT 16 - Computer Network",
+    "testLabel": "SWT 16",
+    "testType": "Subject",
+    "bracket": "Computer Network",
+    "subject": "cn",
+    "date": "July 23, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Network Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 17,
+    "name": "SWT 17 - Computer Network",
+    "testLabel": "SWT 17",
+    "testType": "Subject",
+    "bracket": "Computer Network",
+    "subject": "cn",
+    "date": "July 26, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Network Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 18,
+    "name": "SWT 18 - Computer Network",
+    "testLabel": "SWT 18",
+    "testType": "Subject",
+    "bracket": "Computer Network",
+    "subject": "cn",
+    "date": "July 29, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Network Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 19,
+    "name": "SWT 19 - Operating System",
+    "testLabel": "SWT 19",
+    "testType": "Subject",
+    "bracket": "Operating System",
+    "subject": "os",
+    "date": "August 1, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Operating System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 20,
+    "name": "SWT 20 - Operating System",
+    "testLabel": "SWT 20",
+    "testType": "Subject",
+    "bracket": "Operating System",
+    "subject": "os",
+    "date": "August 5, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Operating System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 21,
+    "name": "SWT 21 - Operating System",
+    "testLabel": "SWT 21",
+    "testType": "Subject",
+    "bracket": "Operating System",
+    "subject": "os",
+    "date": "August 8, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Operating System Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 22,
+    "name": "SWT 22 - Engineering Mathematics",
+    "testLabel": "SWT 22",
+    "testType": "Subject",
+    "bracket": "Engineering Mathematics",
+    "subject": "em",
+    "date": "August 12, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Engineering Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 23,
+    "name": "SWT 23 - Engineering Mathematics",
+    "testLabel": "SWT 23",
+    "testType": "Subject",
+    "bracket": "Engineering Mathematics",
+    "subject": "em",
+    "date": "August 15, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Engineering Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 24,
+    "name": "SWT 24 - Engineering Mathematics",
+    "testLabel": "SWT 24",
+    "testType": "Subject",
+    "bracket": "Engineering Mathematics",
+    "subject": "em",
+    "date": "August 19, 2026",
+    "duration": "70 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Engineering Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 25,
+    "name": "SWT 25 - Compiler Design",
+    "testLabel": "SWT 25",
+    "testType": "Subject",
+    "bracket": "Compiler Design",
+    "subject": "cd",
+    "date": "August 23, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Compiler Design Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 26,
+    "name": "SWT 26 - Compiler Design",
+    "testLabel": "SWT 26",
+    "testType": "Subject",
+    "bracket": "Compiler Design",
+    "subject": "cd",
+    "date": "August 25, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Compiler Design Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 27,
+    "name": "SWT 27 - Compiler Design",
+    "testLabel": "SWT 27",
+    "testType": "Subject",
+    "bracket": "Compiler Design",
+    "subject": "cd",
+    "date": "August 29, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Compiler Design Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 28,
+    "name": "SWT 28 - Discrete Mathematics",
+    "testLabel": "SWT 28",
+    "testType": "Subject",
+    "bracket": "Discrete Mathematics",
+    "subject": "dm",
+    "date": "September 2, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Discrete Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 29,
+    "name": "SWT 29 - Discrete Mathematics",
+    "testLabel": "SWT 29",
+    "testType": "Subject",
+    "bracket": "Discrete Mathematics",
+    "subject": "dm",
+    "date": "September 6, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Discrete Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 30,
+    "name": "SWT 30 - Discrete Mathematics",
+    "testLabel": "SWT 30",
+    "testType": "Subject",
+    "bracket": "Discrete Mathematics",
+    "subject": "dm",
+    "date": "September 9, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Discrete Mathematics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 31,
+    "name": "SWT 31 - Theory of Computation",
+    "testLabel": "SWT 31",
+    "testType": "Subject",
+    "bracket": "Theory of Computation",
+    "subject": "toc",
+    "date": "September 12, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Theory of Computation Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 32,
+    "name": "SWT 32 - Theory of Computation",
+    "testLabel": "SWT 32",
+    "testType": "Subject",
+    "bracket": "Theory of Computation",
+    "subject": "toc",
+    "date": "September 16, 2026",
+    "duration": "80 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Theory of Computation Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 33,
+    "name": "SWT 33 - Theory of Computation",
+    "testLabel": "SWT 33",
+    "testType": "Subject",
+    "bracket": "Theory of Computation",
+    "subject": "toc",
+    "date": "September 19, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Theory of Computation Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 34,
+    "name": "SWT 34 - Computer Organization & Architecture",
+    "testLabel": "SWT 34",
+    "testType": "Subject",
+    "bracket": "Computer Organization & Architecture",
+    "subject": "coa",
+    "date": "September 23, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Organization & Architecture Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 35,
+    "name": "SWT 35 - Computer Organization & Architecture",
+    "testLabel": "SWT 35",
+    "testType": "Subject",
+    "bracket": "Computer Organization & Architecture",
+    "subject": "coa",
+    "date": "September 26, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Organization & Architecture Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 36,
+    "name": "SWT 36 - Computer Organization & Architecture",
+    "testLabel": "SWT 36",
+    "testType": "Subject",
+    "bracket": "Computer Organization & Architecture",
+    "subject": "coa",
+    "date": "September 30, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Computer Organization & Architecture Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 37,
+    "name": "SWT 37 - Digital Electronics",
+    "testLabel": "SWT 37",
+    "testType": "Subject",
+    "bracket": "Digital Electronics",
+    "subject": "dl",
+    "date": "October 3, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Digital Electronics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 38,
+    "name": "SWT 38 - Digital Electronics",
+    "testLabel": "SWT 38",
+    "testType": "Subject",
+    "bracket": "Digital Electronics",
+    "subject": "dl",
+    "date": "October 7, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Digital Electronics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 39,
+    "name": "SWT 39 - Digital Electronics",
+    "testLabel": "SWT 39",
+    "testType": "Subject",
+    "bracket": "Digital Electronics",
+    "subject": "dl",
+    "date": "October 10, 2026",
+    "duration": "180 Min",
+    "totalMarks": 50,
+    "topicsCovered": "Complete Digital Electronics Syllabus"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 40,
+    "name": "MST 1 - Computer Organization & Architecture + Theory of Computation + Engineering Mathematics",
+    "testLabel": "MST 1",
+    "testType": "Mixed",
+    "bracket": "COA + TOC + Engg Maths",
+    "subject": "mst",
+    "date": "October 17, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 41,
+    "name": "MST 2 - Operating System + Discrete Mathematics + Algorithm",
+    "testLabel": "MST 2",
+    "testType": "Mixed",
+    "bracket": "OS + Discrete Maths + Algorithm",
+    "subject": "mst",
+    "date": "October 24, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Operating System + Discrete Mathematics + Algorithm"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 42,
+    "name": "MST 3 - Digital Electronics + Data Structures + General Aptitude",
+    "testLabel": "MST 3",
+    "testType": "Mixed",
+    "bracket": "Digital Electronics + Data Structures + General Aptitude",
+    "subject": "mst",
+    "date": "October 31, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Digital Electronics + Data Structures + General Aptitude"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 43,
+    "name": "MST 4 - Computer Network + C Programming + Compiler Design + Database Management System",
+    "testLabel": "MST 4",
+    "testType": "Mixed",
+    "bracket": "CN + C Programming + Compiler + DBMS",
+    "subject": "mst",
+    "date": "November 7, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Computer Network + C Programming + Compiler Design + Database Management System"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 44,
+    "name": "MST 5 - Computer Organization & Architecture + Theory of Computation + Engineering Mathematics",
+    "testLabel": "MST 5",
+    "testType": "Mixed",
+    "bracket": "COA + TOC + Engg Maths",
+    "subject": "mst",
+    "date": "November 14, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Computer Organization & Architecture + Theory of Computation + Engineering Mathematics"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 45,
+    "name": "MST 6 - Operating System + Discrete Mathematics + Algorithm",
+    "testLabel": "MST 6",
+    "testType": "Mixed",
+    "bracket": "OS + Discrete Maths + Algorithm",
+    "subject": "mst",
+    "date": "November 21, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Operating System + Discrete Mathematics + Algorithm"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 46,
+    "name": "MST 7 - Digital Electronics + Data Structures + General Aptitude",
+    "testLabel": "MST 7",
+    "testType": "Mixed",
+    "bracket": "Digital Electronics + Data Structures + General Aptitude",
+    "subject": "mst",
+    "date": "November 28, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Digital Electronics + Data Structures + General Aptitude"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 47,
+    "name": "MST 8 - Computer Network + C Programming + Compiler Design + Database Management System",
+    "testLabel": "MST 8",
+    "testType": "Mixed",
+    "bracket": "CN + C Programming + Compiler + DBMS",
+    "subject": "mst",
+    "date": "December 5, 2026",
+    "duration": "180 Min",
+    "totalMarks": 60,
+    "topicsCovered": "Computer Network + C Programming + Compiler Design + Database Management System"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 48,
+    "name": "FLT 1 - Full Length Mock Test 1",
+    "testLabel": "FLT 1",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "December 12, 2026",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 49,
+    "name": "FLT 2 - Full Length Mock Test 2",
+    "testLabel": "FLT 2",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "December 19, 2026",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 50,
+    "name": "FLT 3 - Full Length Mock Test 3",
+    "testLabel": "FLT 3",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "December 26, 2026",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 51,
+    "name": "FLT 4 - Full Length Mock Test 4",
+    "testLabel": "FLT 4",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "January 2, 2027",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 52,
+    "name": "FLT 5 - Full Length Mock Test 5",
+    "testLabel": "FLT 5",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "January 9, 2027",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  },
+  {
+    "series": "pw-cs-gate",
+    "order": 53,
+    "name": "FLT 6 - Full Length Mock Test 6",
+    "testLabel": "FLT 6",
+    "testType": "Full Length",
+    "bracket": "Full Syllabus",
+    "subject": "flt",
+    "date": "January 16, 2027",
+    "duration": "180 Min",
+    "totalMarks": 100,
+    "topicsCovered": "Complete GATE CSE Syllabus (Technical + Aptitude)"
+  }
+];
+
 window.PYQ_PW_DEFAULT_TESTS = [
   // Programming and Data Structure (5 tests: 2 TWT C Prog + 2 TWT DS + 1 SWT)
   {
@@ -2866,6 +3595,10 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
     (window.PYQ_PW_DEFAULT_TESTS || []).forEach(t => {
       registeredMap.set(t.name, { ...t });
     });
+  } else if (seriesId === "pw-cs-gate") {
+    (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).forEach(t => {
+      registeredMap.set(t.name, { ...t });
+    });
   }
 
   // 2. Tests from apexTestRegistry
@@ -2879,7 +3612,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         // Match against existing keys in registeredMap (e.g. by prefix like "TWT 01", "SWT 1", etc.)
         let matchedKey = null;
         const cleanLower = cleanName.toLowerCase().trim();
-        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|GBG\s*\d+)/i);
+        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+)/i);
 
         for (const existingKey of registeredMap.keys()) {
           const exLower = existingKey.toLowerCase().trim();
@@ -2888,7 +3621,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
             break;
           }
           if (prefixMatch) {
-            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|GBG\s*\d+)/i);
+            const exPrefix = existingKey.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+)/i);
             if (exPrefix && exPrefix[1].replace(/\s+/g, ' ').toUpperCase() === prefixMatch[1].replace(/\s+/g, ' ').toUpperCase()) {
               matchedKey = existingKey;
               break;

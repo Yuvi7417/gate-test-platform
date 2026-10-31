@@ -600,7 +600,7 @@ function isResultForSeries(r, tId) {
     }
     return nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST') || nameUpper.startsWith('FLT') || nameUpper.includes('TOPICWISE') || nameUpper.includes('SUBJECTWISE') || nameUpper.includes('MIXED') || nameUpper.startsWith('TWT') || nameUpper.startsWith('SWT') || nameUpper.startsWith('MST');
   }
-  if (tId === 'pw-cs-gate-2026' || tId === 'cse-gate-2026-pyq') {
+  if (tId === 'pw-cs-gate-2026' || tId === 'pw-cs-gate' || tId === 'cse-gate-2026-pyq') {
     if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO')) return false;
     return true;
   }
@@ -667,7 +667,7 @@ async function fetchUserResults(retries = 5) {
         }
       }
       const detailView = document.getElementById("view-detail");
-      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq" || currentDetailId === "pw-cs-gate-2026")) {
+      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq" || currentDetailId === "pw-cs-gate-2026" || currentDetailId === "pw-cs-gate")) {
         if (typeof openDetail === 'function') {
           openDetail(currentDetailId, false);
         }
@@ -985,7 +985,7 @@ window.filterByType = function () {
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026" || t.id === "pw-cs-gate") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
@@ -1224,9 +1224,19 @@ function openInstructions(testName, seriesId) {
   const isGatePyq = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || (testName || "").toUpperCase().includes("GATE CSE"));
   const isFullTest = (testName || "").includes("Full Test") || (testName || "").includes("Full Length") || (testName || "").includes("FLT") || (testName || "").includes("FST") || (testName || "").includes("GBG") || isGatePyq;
   const isMixedSubject = (testName || "").includes("Mixed") || (testName || "").includes("MST");
+  let customDur = null;
+  if (typeof window !== "undefined") {
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []);
+    const foundDef = allDefs.find(x => x.name === testName || (pendingTestSeriesId && x.series === pendingTestSeriesId && x.name === testName));
+    if (foundDef && foundDef.duration) {
+      const dm = String(foundDef.duration).match(/\d+/);
+      if (dm) customDur = parseInt(dm[0], 10);
+    }
+  }
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
-    if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
+    if (customDur) instrDurationElement.textContent = customDur + " minutes";
+    else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
   }
@@ -1464,7 +1474,27 @@ async function startPlayer(testName, fetchedQuestions) {
   const isFullTest = testNameUpper.includes("FULL TEST") || testNameUpper.includes("FULL LENGTH") || testNameUpper.includes("FLT") || testNameUpper.includes("FST") || testNameUpper.includes("GBG") || isGatePyqTest;
   const isMixedSubjectTest = testNameUpper.includes("MIXED") || testNameUpper.includes("MST");
 
-  if (isFullTest || isMixedSubjectTest) {
+  let customPlayerDur = null;
+  if (typeof window !== "undefined") {
+    const allDefs = (window.PYQ_PW_LEVEL_DEFAULT_TESTS || []).concat(window.PYQ_PW_DEFAULT_TESTS || []);
+    const foundDef = allDefs.find(x => x.name === testName || (currentTestListId && x.series === currentTestListId && x.name === testName));
+    if (foundDef && foundDef.duration) {
+      const dm = String(foundDef.duration).match(/\d+/);
+      if (dm) customPlayerDur = parseInt(dm[0], 10);
+    }
+  }
+
+  if (customPlayerDur) {
+    playerDurationMins = customPlayerDur;
+    if (playerDurationMins === 180 && playerQuestions.length >= 65) {
+      playerSections = [
+        { name: "Aptitude", start: 0, end: 9 },
+        { name: "Technical", start: 10, end: Math.max(10, playerQuestions.length - 1) }
+      ];
+    } else {
+      playerSections = [];
+    }
+  } else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
     playerSections = [
       { name: "Aptitude", start: 0, end: 9 },
