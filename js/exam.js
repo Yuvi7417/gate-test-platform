@@ -601,7 +601,8 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST') || nameUpper.startsWith('FLT') || nameUpper.includes('TOPICWISE') || nameUpper.includes('SUBJECTWISE') || nameUpper.includes('MIXED') || nameUpper.startsWith('TWT') || nameUpper.startsWith('SWT') || nameUpper.startsWith('MST');
   }
   if (tId === 'pw-cs-gate-2026' || tId === 'cse-gate-2026-pyq') {
-    return nameUpper.includes('2026');
+    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO')) return false;
+    return true;
   }
   if (tId === 'cs-gate-pyq') {
     if (nameUpper.includes('ISRO') || (nameUpper.startsWith('GATE CSE') && /20\d\d/.test(nameUpper)) || nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || nameUpper.includes('2027') || nameUpper.includes('FULL TEST') || nameUpper.startsWith('FST')) {
@@ -666,7 +667,7 @@ async function fetchUserResults(retries = 5) {
         }
       }
       const detailView = document.getElementById("view-detail");
-      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq")) {
+      if (detailView && detailView.classList.contains("active") && typeof currentDetailId !== "undefined" && (currentDetailId === "cse-gate-2027" || currentDetailId === "cs-gate-pyq" || currentDetailId === "pw-cs-gate-2026")) {
         if (typeof openDetail === 'function') {
           openDetail(currentDetailId, false);
         }
@@ -984,7 +985,7 @@ window.filterByType = function () {
 function renderTestList(t, filter) {
   const grid = document.getElementById("testListGrid");
   grid.className = "test-list-grid";
-  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026") {
+  if (t.id === "cse-gate-2027" || t.id === "cs-gate-pyq" || t.id === "ee-gate-pyq-2027" || t.id === "ee-gate-ace-2026" || t.id === "pw-cs-gate-2026") {
     if (window.renderPYQAccordion) {
       if (grid) {
         grid.classList.add("pyq-full-width");
