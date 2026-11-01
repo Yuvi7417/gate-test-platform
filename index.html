@@ -103,10 +103,24 @@
     },
     svg: {
       fontCache: 'global'
+    },
+    startup: {
+      ready: () => {
+        MathJax.startup.defaultReady();
+        MathJax.startup.promise.then(() => {
+          const qText = document.getElementById('playerQText');
+          const qOpts = document.getElementById('playerOptions');
+          const qSol = document.getElementById('playerSolutionBox');
+          const targets = [qText, qOpts, qSol].filter(Boolean);
+          if (targets.length > 0) {
+            MathJax.typesetPromise(targets).catch(() => {});
+          }
+        });
+      }
     }
   };
   </script>
-  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
   <script src="https://cdn.ckeditor.com/4.22.1/standard-all/ckeditor.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
