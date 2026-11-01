@@ -360,18 +360,29 @@ function sendOtp() {
   const hintEl = document.getElementById("otpStatusHint");
   if (hintEl) hintEl.textContent = "Sending OTP to your email...";
 
-  // Call the backend API to send the email
-  fetch('/api/send-otp', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      name: name,
-      email: email
-    })
-  })
-    .then(res => res.json())
+  // Call the backend API to send the email with wakeup retry
+  const trySendOtp = (retries) => {
+    return fetch('/api/send-otp', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email
+      })
+    }).then(async res => {
+      if (!res.ok) {
+        if ((res.status === 429 || res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+          if (hintEl) hintEl.textContent = "Server is waking up, sending OTP in a moment...";
+          return new Promise(resolve => setTimeout(resolve, res.status === 429 ? 5000 : 3500)).then(() => trySendOtp(retries - 1));
+        }
+      }
+      return res.json();
+    });
+  };
+
+  trySendOtp(5)
     .then(data => {
       if (data.success) {
         if (hintEl) hintEl.textContent = "OTP has been sent to your email!";
@@ -430,16 +441,28 @@ function verifyOtp() {
   btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Verifying...`;
   btn.disabled = true;
 
-  fetch('/api/verify-otp', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: pendingUser.name,
-      email: pendingUser.email,
-      otp: val
-    })
-  })
-    .then(res => res.json())
+  const tryVerify = (retries) => {
+    return fetch('/api/verify-otp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: pendingUser.name,
+        email: pendingUser.email,
+        otp: val
+      })
+    }).then(async res => {
+      if (!res.ok) {
+        if ((res.status === 429 || res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+          btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Waking server...`;
+          return new Promise(resolve => setTimeout(resolve, res.status === 429 ? 5000 : 3500)).then(() => tryVerify(retries - 1));
+        }
+        throw new Error("Server Error " + res.status);
+      }
+      return res.json();
+    });
+  };
+
+  tryVerify(5)
     .then(data => {
       btn.innerHTML = "VERIFY";
       btn.disabled = false;
@@ -497,8 +520,11 @@ const provider = new firebase.auth.GoogleAuthProvider();
 
 function firebaseGoogleLogin() {
   const btn = document.getElementById("googleLoginBtn");
-  btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Signing in...`;
-  btn.disabled = true;
+  if (btn && btn.disabled) return;
+  if (btn) {
+    btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Signing in...`;
+    btn.disabled = true;
+  }
 
   firebase.auth().signInWithPopup(provider)
     .then((result) => {
@@ -512,20 +538,23 @@ function firebaseGoogleLogin() {
           body: JSON.stringify({ idToken })
         }).then(res => {
           if (!res.ok) {
-            if ((res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
-              btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Waking server...`;
-              return new Promise(resolve => setTimeout(resolve, 4000)).then(() => tryLogin(retries - 1));
+            if ((res.status === 429 || res.status === 502 || res.status === 503 || res.status === 504) && retries > 0) {
+              const delay = res.status === 429 ? 5000 : 3500;
+              if (btn) btn.innerHTML = `<svg class="spinner" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10"/></svg> Server waking up, please wait...`;
+              return new Promise(resolve => setTimeout(resolve, delay)).then(() => tryLogin(retries - 1));
             }
             throw new Error("Server Error " + res.status);
           }
           return res.json();
         });
       };
-      return tryLogin(10);
+      return tryLogin(12);
     })
     .then(data => {
-      btn.innerHTML = `Continue with Google`;
-      btn.disabled = false;
+      if (btn) {
+        btn.innerHTML = `Continue with Google`;
+        btn.disabled = false;
+      }
 
       if (data.success) {
         localStorage.setItem('apexcore_token', data.token);
@@ -559,10 +588,15 @@ function firebaseGoogleLogin() {
     })
     .catch((error) => {
       console.error("Firebase Login Error:", error);
-      btn.innerHTML = `Continue with Google`;
-      btn.disabled = false;
-      if (error.code !== 'auth/popup-closed-by-user') {
-        alert("Google Sign-In failed: " + error.message + " (Please try again in a minute)");
+      if (btn) {
+        btn.innerHTML = `Continue with Google`;
+        btn.disabled = false;
+      }
+      if (error.code !== 'auth/popup-closed-by-user' && error.code !== 'auth/cancelled-popup-request') {
+        const msg = error.message && error.message.includes('429') 
+          ? "Server is currently waking up from sleep. Please wait a few seconds and try again." 
+          : error.message;
+        alert("Google Sign-In: " + msg);
       }
     });
 }
