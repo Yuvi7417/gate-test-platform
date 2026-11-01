@@ -1492,7 +1492,7 @@ async function startPlayer(testName, fetchedQuestions) {
         { name: "Technical", start: 10, end: Math.max(10, playerQuestions.length - 1) }
       ];
     } else {
-      playerSections = [];
+      playerSections = null;
     }
   } else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
@@ -1537,7 +1537,7 @@ async function startPlayer(testName, fetchedQuestions) {
 function renderPlayer() {
   const _id = (id) => document.getElementById(id);
 
-  if (playerSections) {
+  if (playerSections && playerSections.length > 0) {
     let tabsHtml = "";
     playerSections.forEach((sec, idx) => {
       tabsHtml += `
@@ -2095,7 +2095,7 @@ window.switchSection = function (idx) {
 };
 
 function goToNextQuestion() {
-  if (playerSections) {
+  if (playerSections && playerSections.length > 0 && playerSections[currentSectionIndex]) {
     const sec = playerSections[currentSectionIndex];
     if (playerCurrent < sec.end) {
       renderPlayerQuestion(playerCurrent + 1);
@@ -2126,7 +2126,7 @@ function renderPlayerQGrid() {
 
   let html = "";
   for (let i = startIdx; i <= endIdx; i++) {
-    const displayNum = playerSections ? (i - startIdx + 1) : (i + 1);
+    const displayNum = (playerSections && playerSections.length > 0) ? (i - startIdx + 1) : (i + 1);
     html += `<button class="player-qbtn" id="qbtn-${i}" onclick="renderPlayerQuestion(${i})">${displayNum}</button>`;
   }
   grid.innerHTML = html;
@@ -2174,7 +2174,7 @@ function updatePlayerCounts() {
     marked = 0;
 
   let sectionStats = [];
-  if (playerSections) {
+  if (playerSections && playerSections.length > 0) {
     sectionStats = playerSections.map(() => ({ ans: 0, noans: 0, mark: 0, notvis: 0 }));
   }
 
@@ -2189,7 +2189,7 @@ function updatePlayerCounts() {
     else { notAnswered++; isNoans = true; }
     if (st.marked) { marked++; isMark = true; }
 
-    if (playerSections) {
+    if (playerSections && playerSections.length > 0) {
       playerSections.forEach((sec, idx) => {
         if (i >= sec.start && i <= sec.end) {
           if (isAns) sectionStats[idx].ans++;
@@ -2210,7 +2210,7 @@ function updatePlayerCounts() {
   if (_id("cntNotVisited")) _id("cntNotVisited").textContent = notVisited;
   if (_id("cntMarked")) _id("cntMarked").textContent = marked;
 
-  if (playerSections) {
+  if (playerSections && playerSections.length > 0) {
     playerSections.forEach((sec, idx) => {
       if (_id(`sec-${idx}-ans`)) _id(`sec-${idx}-ans`).textContent = sectionStats[idx].ans;
       if (_id(`sec-${idx}-noans`)) _id(`sec-${idx}-noans`).textContent = sectionStats[idx].noans;
