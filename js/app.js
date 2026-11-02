@@ -1530,10 +1530,10 @@ window.PYQ_DEFAULT_TESTS = [
   { series: "cse-gate-2027", name: "ISRO CSE 2007", subject: "isro" },
 
   // GATE CSE (2003-2026)
-  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-1", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-2", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-1", subject: "gate_pyq", comingSoon: true },
-  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-2", subject: "gate_pyq", comingSoon: true },
+  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-1", subject: "gate_pyq" },
+  { series: "cse-gate-2027", name: "GATE CSE 2026 SET-2", subject: "gate_pyq" },
+  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-1", subject: "gate_pyq" },
+  { series: "cse-gate-2027", name: "GATE CSE 2025 SET-2", subject: "gate_pyq" },
   { series: "cse-gate-2027", name: "GATE CSE 2024 SET-1", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2024 SET-2", subject: "gate_pyq", comingSoon: true },
   { series: "cse-gate-2027", name: "GATE CSE 2023", subject: "gate_pyq", comingSoon: true },
