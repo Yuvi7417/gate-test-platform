@@ -57681,7 +57681,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider a processor that has \(16\) general purpose registers and it uses \(2\)-byte instruction format for all its instructions. Variable-sized opcodes are permitted. There are three different types of instructions; M-type, R-type, and C-type. Each M-type instruction has \(2\) register operands and a \(6\)-bit immediate operand. Each Rtype instruction has \(3\) register operands. Each C-type instruction has a register operand and a \(6\) -bit offset value. If there are \(2\) unique M-type opcodes and \(7\) unique R-type opcodes, which one of the following options gives the maximum number of unique opcodes possible for C-type instructions?</span>`,
+            text: `<span style="display: inline;">Consider a processor that has \\(16\\) general purpose registers and it uses \\(2\\)-byte instruction format for all its instructions. Variable-sized opcodes are permitted. There are three different types of instructions; M-type, R-type, and C-type. Each M-type instruction has \\(2\\) register operands and a \\(6\\)-bit immediate operand. Each Rtype instruction has \\(3\\) register operands. Each C-type instruction has a register operand and a \\(6\\) -bit offset value. If there are \\(2\\) unique M-type opcodes and \\(7\\) unique R-type opcodes, which one of the following options gives the maximum number of unique opcodes possible for C-type instructions?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">8</span>`,
@@ -57690,34 +57690,34 @@ registerTest({
                 `<span style="display: inline;">16</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With \(16\) general-purpose registers, each register operand needs \(\\log_2 16=4\) bits. The full instruction is \(2\) bytes \(=16\) bits.<br><br>
-- <b>M-type:</b> \(2\) register operands (\(8\) bits) \(+\) \(6\)-bit immediate \(=14\) bits of operand, leaving \(16-14=2\) bits for the opcode &rarr; up to \(2^2=4\) possible M-type codes, but only \(2\) are actually used, leaving \(4-2=2\) unused \(2\)-bit prefixes free for other instruction types.<br>
-- <b>R-type:</b> \(3\) register operands (\(12\) bits), leaving \(16-12=4\) bits for the opcode. Using an "expanding opcode" scheme, the \(2\) leftover \(2\)-bit prefixes (not used by M-type) each expand into \(2^{4-2}=4\) possible \(4\)-bit codes, giving \(2\\times4=8\) total available R-type slots; only \(7\) are used, leaving \(8-7=1\) unused \(4\)-bit prefix.<br>
-- <b>C-type:</b> \(1\) register operand (\(4\) bits) \(+\) \(6\)-bit offset \(=10\) bits, leaving \(16-10=6\) bits for the opcode. That single unused \(4\)-bit prefix expands into \(2^{6-4}=4\) possible \(6\)-bit C-type codes.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With \\(16\\) general-purpose registers, each register operand needs \\(\\log_2 16=4\\) bits. The full instruction is \\(2\\) bytes \\(=16\\) bits.<br><br>
+- <b>M-type:</b> \\(2\\) register operands (\\(8\\) bits) \\(+\\) \\(6\\)-bit immediate \\(=14\\) bits of operand, leaving \\(16-14=2\\) bits for the opcode &rarr; up to \\(2^2=4\\) possible M-type codes, but only \\(2\\) are actually used, leaving \\(4-2=2\\) unused \\(2\\)-bit prefixes free for other instruction types.<br>
+- <b>R-type:</b> \\(3\\) register operands (\\(12\\) bits), leaving \\(16-12=4\\) bits for the opcode. Using an "expanding opcode" scheme, the \\(2\\) leftover \\(2\\)-bit prefixes (not used by M-type) each expand into \\(2^{4-2}=4\\) possible \\(4\\)-bit codes, giving \\(2\\times4=8\\) total available R-type slots; only \\(7\\) are used, leaving \\(8-7=1\\) unused \\(4\\)-bit prefix.<br>
+- <b>C-type:</b> \\(1\\) register operand (\\(4\\) bits) \\(+\\) \\(6\\)-bit offset \\(=10\\) bits, leaving \\(16-10=6\\) bits for the opcode. That single unused \\(4\\)-bit prefix expands into \\(2^{6-4}=4\\) possible \\(6\\)-bit C-type codes.<br><br>
 <b>Answer: 4</b><br><br><a href="https://gateoverflow.in/523112/gate-cse-2026-set-2-question-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider a processor \(\\text{P}\) whose instruction set architecture is the load-store architecture. The instruction format is such that the first operand of any instruction is the destination operand. <br><br>Which one of the following sequences of instructions corresponds to the high-level language statement \({Z}={X}+{Y}\) ?<br> Note: X, Y, and Z are memory operands. R\(0\), R\(1\), and R\(2\) are registers.</span>`,
+            text: `<span style="display: inline;">Consider a processor \\(\\text{P}\\) whose instruction set architecture is the load-store architecture. The instruction format is such that the first operand of any instruction is the destination operand. <br><br>Which one of the following sequences of instructions corresponds to the high-level language statement \\({Z}={X}+{Y}\\) ?<br> Note: X, Y, and Z are memory operands. R\\(0\\), R\\(1\\), and R\\(2\\) are registers.</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">ADD Z, X, Y</span>`,
-                `<span style="display: inline;">LOAD R\(0\), X <br>ADD Z, R\(0\), Y</span>`,
-                `<span style="display: inline;">ADD R\(0\), X, Y <br>STORE Z, R\(0\)</span>`,
-                `<span style="display: inline;">LOAD R\(0\), X <br>LOAD R\(1\), Y <br>ADD R\(2\), R\(0\), R\(1\) <br>STORE Z, R\(2\)</span>`,
+                `<span style="display: inline;">LOAD R\\(0\\), X <br>ADD Z, R\\(0\\), Y</span>`,
+                `<span style="display: inline;">ADD R\\(0\\), X, Y <br>STORE Z, R\\(0\\)</span>`,
+                `<span style="display: inline;">LOAD R\\(0\\), X <br>LOAD R\\(1\\), Y <br>ADD R\\(2\\), R\\(0\\), R\\(1\\) <br>STORE Z, R\\(2\\)</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a load-store (register-register) architecture, arithmetic instructions can only operate on registers, never directly on memory. So to compute \(Z=X+Y\) where \(X,Y,Z\) are memory locations, we must:<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a load-store (register-register) architecture, arithmetic instructions can only operate on registers, never directly on memory. So to compute \\(Z=X+Y\\) where \\(X,Y,Z\\) are memory locations, we must:<br><br>
 
-1. LOAD both memory operands into registers: \(\\text{LOAD } R0, X\) and \(\\text{LOAD } R1, Y\).<br>
+1. LOAD both memory operands into registers: \\(\\text{LOAD } R0, X\\) and \\(\\text{LOAD } R1, Y\\).<br>
 
-2. Perform the addition on registers: \(\\text{ADD } R2, R0, R1\) (destination is first operand, per the given convention).<br>
+2. Perform the addition on registers: \\(\\text{ADD } R2, R0, R1\\) (destination is first operand, per the given convention).<br>
 
-3. STORE the result back to memory: \(\\text{STORE } Z, R2\).<br><br>
+3. STORE the result back to memory: \\(\\text{STORE } Z, R2\\).<br><br>
 
-Any option that uses a memory operand directly inside an ADD instruction (e.g. \(\\text{ADD } Z, X, Y\) or \(\\text{ADD } Z, R0, Y\)) is invalid for a load-store machine, since ADD can only take register operands.<br><br>
+Any option that uses a memory operand directly inside an ADD instruction (e.g. \\(\\text{ADD } Z, X, Y\\) or \\(\\text{ADD } Z, R0, Y\\)) is invalid for a load-store machine, since ADD can only take register operands.<br><br>
 
 <b>Answer: LOAD R0,X; LOAD R1,Y; ADD R2,R0,R1; STORE Z,R2</b><br><br><a href="https://gateoverflow.in/523075/gate-cse-2026-set-1-question-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
@@ -57725,9 +57725,9 @@ Any option that uses a memory operand directly inside an ADD instruction (e.g. \
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">An application executes \(6.4 \\times 10^8\) number of instructions in 6.3 seconds. There are four types of instructions, the details of which are given in the table. The duration of a clock cycle in nanoseconds is _________. (rounded off to one decimal place)
+            text: `<span style="display: inline;">An application executes \\(6.4 \\times 10^8\\) number of instructions in 6.3 seconds. There are four types of instructions, the details of which are given in the table. The duration of a clock cycle in nanoseconds is _________. (rounded off to one decimal place)
 
-\( \\begin{array}{|c|c|c|}
+\\( \\begin{array}{|c|c|c|}
 \\hline
 \\text{Instruction type} & \\text{Clock cycles required per instruction (CPI)} & \\text{Number of instructions executed} \\\\
 \\hline
@@ -57736,15 +57736,15 @@ Any option that uses a memory operand directly inside an ADD instruction (e.g. \
 \\text{Store} & 4 & 1.65 \\times 10^8 \\\\
 \\text{Arithmetic} & 3 & 1.30 \\times 10^8 \\\\
 \\hline
-\\end{array} \)</span>`,
+\\end{array} \\)</span>`,
             image: "",
             options: [
             ],
             answer: 3,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Total clock cycles \(=\\sum(\\text{CPI}\\times\\text{count})\):<br>
-\(=2(2.25\\times10^8)+5(1.20\\times10^8)+4(1.65\\times10^8)+3(1.30\\times10^8)\)<br>
-\(=4.5\\times10^8+6.0\\times10^8+6.6\\times10^8+3.9\\times10^8=21.0\\times10^8=2.1\\times10^9\) cycles.<br><br>
-Clock cycle duration \(=\\dfrac{\\text{total time}}{\\text{total cycles}}=\\dfrac{6.3\\text{ s}}{2.1\\times10^9}=3\\times10^{-9}\\text{ s}=3\) ns.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Total clock cycles \\(=\\sum(\\text{CPI}\\times\\text{count})\\):<br>
+\\(=2(2.25\\times10^8)+5(1.20\\times10^8)+4(1.65\\times10^8)+3(1.30\\times10^8)\\)<br>
+\\(=4.5\\times10^8+6.0\\times10^8+6.6\\times10^8+3.9\\times10^8=21.0\\times10^8=2.1\\times10^9\\) cycles.<br><br>
+Clock cycle duration \\(=\\dfrac{\\text{total time}}{\\text{total cycles}}=\\dfrac{6.3\\text{ s}}{2.1\\times10^9}=3\\times10^{-9}\\text{ s}=3\\) ns.<br><br>
 <b>Answer: 3</b><br><br><a href="https://gateoverflow.in/460842/gate-cse-2025-set-2-question-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -57779,9 +57779,9 @@ Cache size, clock frequency, and number of cache levels are all <b>microarchitec
                 `<span style="display: inline;">24</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With \(64=2^6\) registers, each register-number field needs \(6\) bits. With \(50\) distinct instruction types, the opcode field needs \(\\lceil\\log_2 50\\rceil=6\) bits (since \(2^5=32<50\\le64=2^6\)).<br><br>
-The instruction \(\\text{ADD R1, \\#25}\) (meaning \(\\text{R1}=\\text{R1}+25\)) only needs to name <i>one</i> register (used as both source and destination), plus an immediate value. So the \(32\)-bit instruction splits as: opcode (\(6\) bits) \(+\) one register field (\(6\) bits) \(+\) immediate field (the rest).<br><br>
-Immediate field width \(=32-6-6=20\) bits.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With \\(64=2^6\\) registers, each register-number field needs \\(6\\) bits. With \\(50\\) distinct instruction types, the opcode field needs \\(\\lceil\\log_2 50\\rceil=6\\) bits (since \\(2^5=32<50\\le64=2^6\\)).<br><br>
+The instruction \\(\\text{ADD R1, \\#25}\\) (meaning \\(\\text{R1}=\\text{R1}+25\\)) only needs to name <i>one</i> register (used as both source and destination), plus an immediate value. So the \\(32\\)-bit instruction splits as: opcode (\\(6\\) bits) \\(+\\) one register field (\\(6\\) bits) \\(+\\) immediate field (the rest).<br><br>
+Immediate field width \\(=32-6-6=20\\) bits.<br><br>
 <b>Answer: 20</b><br><br><a href="https://gateoverflow.in/460053/gate-cse-2025-set-1-question-27#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -57804,11 +57804,11 @@ encode the immediate value/address field. The value of X + 2Y + Z is ______
             options: [
             ],
             answer: 34,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Find each field size:<br>- 150 instructions, 75 of each type. 1 bit for type + \(\\lceil\\log_2 75\\rceil=7\) bits \(\\rightarrow\) <b>Y = 8</b>.<br>
-- 50 registers \(\\rightarrow\) \(\\lceil\\log_2 50\\rceil=6\) bits per register field.<br>
-- R-type: \(8+X+3\\times6=32\\Rightarrow\) <b>X = 6</b>.<br>
-- I-type: \(8+2\\times6+Z=32\\Rightarrow\) <b>Z = 12</b>.<br><br>
-\(X+2Y+Z=6+16+12=34\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Find each field size:<br>- 150 instructions, 75 of each type. 1 bit for type + \\(\\lceil\\log_2 75\\rceil=7\\) bits \\(\\rightarrow\\) <b>Y = 8</b>.<br>
+- 50 registers \\(\\rightarrow\\) \\(\\lceil\\log_2 50\\rceil=6\\) bits per register field.<br>
+- R-type: \\(8+X+3\\times6=32\\Rightarrow\\) <b>X = 6</b>.<br>
+- I-type: \\(8+2\\times6+Z=32\\Rightarrow\\) <b>Z = 12</b>.<br><br>
+\\(X+2Y+Z=6+16+12=34\\)<br><br>
 <b>Answer: 34</b><br><br><a href="https://gateoverflow.in/422846/gate-cse-2024-set-2-question-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -57824,10 +57824,10 @@ is _________</span>`,
             options: [
             ],
             answer: 32,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Divide the 32 bits among the fields:<br>- 16 registers \(\\rightarrow\) 4 bits per register field, two fields = 8 bits<br>
-- 8 addressing modes \(\\rightarrow\) 3 bits<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Divide the 32 bits among the fields:<br>- 16 registers \\(\\rightarrow\\) 4 bits per register field, two fields = 8 bits<br>
+- 8 addressing modes \\(\\rightarrow\\) 3 bits<br>
 - Scalar field = 16 bits<br><br>
-Opcode bits \(=32-8-3-16=5\) \(\\rightarrow\) \(2^5=32\) opcodes.<br><br>
+Opcode bits \\(=32-8-3-16=5\\) \\(\\rightarrow\\) \\(2^5=32\\) opcodes.<br><br>
 <b>Answer: 32</b><br><br><a href="https://gateoverflow.in/422850/gate-cse-2024-set-2-question-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -57847,17 +57847,17 @@ the position (U1, U2, U3, U4) in the above assembly code?</span>`,
                 `<span style="display: inline;">(3, 1, 1, Lo1)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Match the C code with the assembly code:<br>- \(b[i]*8\) = shift left by 3 \(\\rightarrow\) <b>U1 = 3</b>.<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Match the C code with the assembly code:<br>- \\(b[i]*8\\) = shift left by 3 \\(\\rightarrow\\) <b>U1 = 3</b>.<br>
 - int is 4 bytes and memory is byte addressable, so to move to the next element of a and b, add 4 to the pointers: <b>U2 = 4</b>, <b>U3 = 4</b>.<br>
-- After incrementing i (r1), jump back to the loop check at L01 \(\\rightarrow\) <b>U4 = L01</b>.<br><br>
+- After incrementing i (r1), jump back to the loop check at L01 \\(\\rightarrow\\) <b>U4 = L01</b>.<br><br>
 <b>Answer: (3, 4, 4, L01)</b><br><br><a href="https://gateoverflow.in/399280/gate-cse-2023-question-31#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the following instruction sequence where registers \(R_1,R_2 \\text{ and }R_3\) are general purpose and \(MEMORY[X]\) denotes the content at the memory location \(X\).<br><br>\(\\begin{array}{llc} \\textbf{Instruction} & \\textbf{Semantics} & \\textbf{Instruction Size} \\text{ (bytes)} \\\\ \\hline \\text{MOV } R1, (5000) & R1 \\leftarrow \\text{MEMORY}[5000] & 4 \\\\ \\hline \\text{MOV } R2, (R3) & R2 \\leftarrow \\text{MEMORY}[R3] & 4 \\\\ \\hline \\text{ADD} R2, R1 & R2 \\leftarrow R1 + R2 & 2 \\\\ \\hline \\text{MOV } (R3), R2 & \\text{MEMORY}[R3] \\leftarrow R2 & 4 \\\\ \\hline \\text{INC } R3 & R3 \\leftarrow R3+1 & 2 \\\\ \\hline \\text{DEC } R1 & R1 \\leftarrow R1-1 & 2 \\\\ \\hline \\text{BNZ } 1004 & \\text{Branch if not zero to the} & 2 \\\\ & \\text{given absolute address} \\\\ \\hline \\text{HALT} & \\text{Stop} & 1 \\\\ \\hline \\end{array}\)<br><br>
-Assume that the content of the memory location 5000 is 10, and the content of the register \(R_3\) is 3000. The content of each of the memory locations from 3000 to 3020 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.
+            text: `<span style="display: inline;">Consider the following instruction sequence where registers \\(R_1,R_2 \\text{ and }R_3\\) are general purpose and \\(MEMORY[X]\\) denotes the content at the memory location \\(X\\).<br><br>\\(\\begin{array}{llc} \\textbf{Instruction} & \\textbf{Semantics} & \\textbf{Instruction Size} \\text{ (bytes)} \\\\ \\hline \\text{MOV } R1, (5000) & R1 \\leftarrow \\text{MEMORY}[5000] & 4 \\\\ \\hline \\text{MOV } R2, (R3) & R2 \\leftarrow \\text{MEMORY}[R3] & 4 \\\\ \\hline \\text{ADD} R2, R1 & R2 \\leftarrow R1 + R2 & 2 \\\\ \\hline \\text{MOV } (R3), R2 & \\text{MEMORY}[R3] \\leftarrow R2 & 4 \\\\ \\hline \\text{INC } R3 & R3 \\leftarrow R3+1 & 2 \\\\ \\hline \\text{DEC } R1 & R1 \\leftarrow R1-1 & 2 \\\\ \\hline \\text{BNZ } 1004 & \\text{Branch if not zero to the} & 2 \\\\ & \\text{given absolute address} \\\\ \\hline \\text{HALT} & \\text{Stop} & 1 \\\\ \\hline \\end{array}\\)<br><br>
+Assume that the content of the memory location 5000 is 10, and the content of the register \\(R_3\\) is 3000. The content of each of the memory locations from 3000 to 3020 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.
 <br>
 After the execution of the program, the content of memory location 3010 is ____________</span>`,
             image: "",
@@ -57865,14 +57865,14 @@ After the execution of the program, the content of memory location 3010 is _____
             ],
             answer: 50,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  R1 = MEMORY[5000] = 10, so the loop (BNZ back to 1004) runs 10 times. Each pass adds R1 to MEMORY[R3] and moves R3 one byte ahead.<br><br>
-R3 goes 3000, 3001, \(\\ldots\), 3009. Location 3010 is never written, so it keeps its value 50.<br><br>
+R3 goes 3000, 3001, \\(\\ldots\\), 3009. Location 3010 is never written, so it keeps its value 50.<br><br>
 <b>Answer: 50</b><br><br><a href="https://gateoverflow.in/357397/gate-cse-2021-set-1-question-55#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A computer which issues instructions in order, has only 2 registers and 3 opcodes ADD, SUB and MOV. Consider 2 different implementations of the following basic block :<br>\(\\begin{array}{l|l} \\text { Case } 1 & \\text { Case } 2 \\\\ \\hline t 1=a+b ; & t 2=c+d \\\\ t 2=c+d ; & t 3=e-t 2 \\\\ t 3=e-t 2 ; & t 1=a+b \\\\ t 4=t 1-t 2 ; & t 4=t 1-t 2 \\end{array}\)<br>Assume that all operands are initially in memory. Final value of computation also has to reside in memory. Which one is better in terms of memory accesses and by how many MOV instructions?</span>`,
+            text: `<span style="display: inline;">A computer which issues instructions in order, has only 2 registers and 3 opcodes ADD, SUB and MOV. Consider 2 different implementations of the following basic block :<br>\\(\\begin{array}{l|l} \\text { Case } 1 & \\text { Case } 2 \\\\ \\hline t 1=a+b ; & t 2=c+d \\\\ t 2=c+d ; & t 3=e-t 2 \\\\ t 3=e-t 2 ; & t 1=a+b \\\\ t 4=t 1-t 2 ; & t 4=t 1-t 2 \\end{array}\\)<br>Assume that all operands are initially in memory. Final value of computation also has to reside in memory. Which one is better in terms of memory accesses and by how many MOV instructions?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Case 2, 2</span>`,
@@ -57882,8 +57882,8 @@ R3 goes 3000, 3001, \(\\ldots\), 3009. Location 3010 is never written, so it kee
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With only 2 registers:<br>
-- <b>Case 1</b>: t1 and t2 fill both registers, but t3 = e \(-\) t2 needs a register for e, so t1 must be stored to memory (MOV) and later loaded back for t4 (MOV) \(\\rightarrow\) 2 extra MOVs.<br>
-- <b>Case 2</b>: compute t2, then t3 (t2 stays in a register), then t1 in the freed register, then t4 = t1 \(-\) t2. No spilling is needed.<br><br>
+- <b>Case 1</b>: t1 and t2 fill both registers, but t3 = e \\(-\\) t2 needs a register for e, so t1 must be stored to memory (MOV) and later loaded back for t4 (MOV) \\(\\rightarrow\\) 2 extra MOVs.<br>
+- <b>Case 2</b>: compute t2, then t3 (t2 stays in a register), then t1 in the freed register, then t4 = t1 \\(-\\) t2. No spilling is needed.<br><br>
 Case 2 saves 2 MOV instructions (memory accesses).<br><br>
 <b>Answer: Case 2, 2</b><br><br><a href="https://gateoverflow.in/331470/isro2020-16" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
@@ -57900,10 +57900,10 @@ Case 2 saves 2 MOV instructions (memory accesses).<br><br>
                 `<span style="display: inline;">16</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Immediate max 8191 = \(2^{13}-1\) \(\\rightarrow\) 13 bits.<br>
-- 70 instructions \(\\rightarrow\) 7-bit opcode.<br>
-- Remaining for two register fields: 32 \(-\) 13 \(-\) 7 = 12 bits \(\\rightarrow\) 6 bits each.<br><br>
-Registers = \(2^6=64\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Immediate max 8191 = \\(2^{13}-1\\) \\(\\rightarrow\\) 13 bits.<br>
+- 70 instructions \\(\\rightarrow\\) 7-bit opcode.<br>
+- Remaining for two register fields: 32 \\(-\\) 13 \\(-\\) 7 = 12 bits \\(\\rightarrow\\) 6 bits each.<br><br>
+Registers = \\(2^6=64\\)<br><br>
 <b>Answer: 64</b><br><br><a href="https://gateoverflow.in/331291/isro2020-8" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -57919,11 +57919,11 @@ Registers = \(2^6=64\)<br><br>
                 `<span style="display: inline;">8</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Factor to save multiplications: \(XY+XYZ+YZ=Y(XZ+X+Z)\).<br>
-1. MUL R0, R2, R3 \(\\rightarrow\) XZ (2 cycles)<br>
-2. ADD R0, R2, R4 \(\\rightarrow\) X + Z (1 cycle)<br>
-3. ADD R3, R4, R3 \(\\rightarrow\) XZ + X + Z (1 cycle)<br>
-4. MUL R3, R1, R3 \(\\rightarrow\) Y(XZ + X + Z) (2 cycles)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Factor to save multiplications: \\(XY+XYZ+YZ=Y(XZ+X+Z)\\).<br>
+1. MUL R0, R2, R3 \\(\\rightarrow\\) XZ (2 cycles)<br>
+2. ADD R0, R2, R4 \\(\\rightarrow\\) X + Z (1 cycle)<br>
+3. ADD R3, R4, R3 \\(\\rightarrow\\) XZ + X + Z (1 cycle)<br>
+4. MUL R3, R1, R3 \\(\\rightarrow\\) Y(XZ + X + Z) (2 cycles)<br><br>
 Total = 2 + 1 + 1 + 2 = 6 cycles (two multiplications are unavoidable).<br><br>
 <b>Answer: 6</b><br><br><a href="https://gateoverflow.in/331437/isro2020-6" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
@@ -57952,19 +57952,19 @@ Total = 2 + 1 + 1 + 2 = 6 cycles (two multiplications are unavoidable).<br><br>
             options: [
             ],
             answer: 14,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Register field = \(\\log_2 64=6\) bits.<br>
-- I-type: opcode + 6 + 4 = 16 \(\\rightarrow\) 6-bit opcode.<br>
-- R-type: opcode + 6 + 6 = 16 \(\\rightarrow\) 4-bit opcode.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Register field = \\(\\log_2 64=6\\) bits.<br>
+- I-type: opcode + 6 + 4 = 16 \\(\\rightarrow\\) 6-bit opcode.<br>
+- R-type: opcode + 6 + 6 = 16 \\(\\rightarrow\\) 4-bit opcode.<br><br>
 Expanding opcodes: one 4-bit R-type code, followed by 2 more bits, gives 4 I-type opcodes. The 8 I-type opcodes need 8/4 = 2 of the 16 four-bit codes.<br><br>
-R-type opcodes = 16 \(-\) 2 = 14<br><br>
+R-type opcodes = 16 \\(-\\) 2 = 14<br><br>
 <b>Answer: 14</b><br><br><a href="https://gateoverflow.in/333187/gate2020-cs-44#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following data path diagram. <br><img src="images/practicepaper_machine_instruction/GATE_CS_20201_q4.jpg" /><br> Consider an instruction: \(R0\\leftarrow R1+R2\). The following steps are used to execute it over the given data path. Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively. <br><br>
-\(1. \\; R2_r,TEMP1_r,ALU_{add},TEMP2_w\)  <br>  \(2. \\; R1_r,TEMP1_w\) <br> \(3. \\; PC_r,MAR_w,MEM_r\)  <br>\(4. \\; TEMP2_r,R0_w\) <br> \(5. \\; MDR_r,IR_w\)<br><br>
+            text: `<span style="display: inline;">Consider the following data path diagram. <br><img src="images/practicepaper_machine_instruction/GATE_CS_20201_q4.jpg" /><br> Consider an instruction: \\(R0\\leftarrow R1+R2\\). The following steps are used to execute it over the given data path. Assume that PC is incremented appropriately. The subscripts r and w indicate read and write operations, respectively. <br><br>
+\\(1. \\; R2_r,TEMP1_r,ALU_{add},TEMP2_w\\)  <br>  \\(2. \\; R1_r,TEMP1_w\\) <br> \\(3. \\; PC_r,MAR_w,MEM_r\\)  <br>\\(4. \\; TEMP2_r,R0_w\\) <br> \\(5. \\; MDR_r,IR_w\\)<br><br>
 Which one of the following is the correct order of execution of the above steps? </span>`,
             image: "",
             options: [
@@ -57975,11 +57975,11 @@ Which one of the following is the correct order of execution of the above steps?
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  First fetch the instruction, then execute it:<br>
-- <b>3</b>: PC \(\\rightarrow\) MAR, read memory (fetch)<br>
-- <b>5</b>: MDR \(\\rightarrow\) IR (instruction now in IR)<br>
-- <b>2</b>: R1 \(\\rightarrow\) TEMP1 (one ALU input is latched in TEMP1)<br>
-- <b>1</b>: R2 on the bus + TEMP1 \(\\rightarrow\) ALU add \(\\rightarrow\) TEMP2<br>
-- <b>4</b>: TEMP2 \(\\rightarrow\) R0<br><br>
+- <b>3</b>: PC \\(\\rightarrow\\) MAR, read memory (fetch)<br>
+- <b>5</b>: MDR \\(\\rightarrow\\) IR (instruction now in IR)<br>
+- <b>2</b>: R1 \\(\\rightarrow\\) TEMP1 (one ALU input is latched in TEMP1)<br>
+- <b>1</b>: R2 on the bus + TEMP1 \\(\\rightarrow\\) ALU add \\(\\rightarrow\\) TEMP2<br>
+- <b>4</b>: TEMP2 \\(\\rightarrow\\) R0<br><br>
 <b>Answer: 3, 5, 2, 1, 4</b><br><br><a href="https://gateoverflow.in/333227/gate2020-cs-4#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
     ]
@@ -57995,7 +57995,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A byte addressable computer has a memory capacity of \(2^{m} K B(k \\text { bytes })\) and can perform \(2^{n}\) operations. An instruction involving 3 operands and one operator needs maximum of:</span>`,
+            text: `<span style="display: inline;">A byte addressable computer has a memory capacity of \\(2^{m} K B(k \\text { bytes })\\) and can perform \\(2^{n}\\) operations. An instruction involving 3 operands and one operator needs maximum of:</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">3m bits</span>`,
@@ -58004,7 +58004,7 @@ registerTest({
                 `<span style="display: inline;">none of the above</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Memory = \(2^m\) KB = \(2^{m+10}\) bytes, so an address needs m + 10 bits. An instruction with 3 memory operands and an n-bit opcode needs 3(m + 10) + n bits, which matches none of the options.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Memory = \\(2^m\\) KB = \\(2^{m+10}\\) bytes, so an address needs m + 10 bits. An instruction with 3 memory operands and an n-bit opcode needs 3(m + 10) + n bits, which matches none of the options.<br><br>
 <b>Answer: none of the above</b><br><br><a href="https://gateoverflow.in/213557/isro2018-31" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58025,7 +58025,7 @@ E. Add A with 10.5 to get C<br><br>Assume A,B,C are already assigned values and 
                 `<span style="display: inline;">E, D, C, B, A</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Dependencies: E = A + B (instruction B) needs A, B; F = E \(\\times\) 0.5 (A) needs E; G = E + F (D) needs E and F; D = B + 0.5 (C) and C = A + 10.5 (E) need only the given values.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Dependencies: E = A + B (instruction B) needs A, B; F = E \\(\\times\\) 0.5 (A) needs E; G = E + F (D) needs E and F; D = B + 0.5 (C) and C = A + 10.5 (E) need only the given values.<br><br>
 Order C, B, E, A, D: compute D, then E, then C, then F (after E), then G (after E and F) True. The other orders use E or F before they exist.<br><br>
 <b>Answer: C, B, E, A, D</b><br><br><a href="https://gateoverflow.in/213582/isro2018-6" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
@@ -58041,9 +58041,9 @@ The maximum value of N is __________.</span>`,
             answer: 32,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Integer register = 4 bits, FP register = 6 bits, instruction = 16 bits. Use expanding opcodes:<br>
 - Type-1 (12 operand bits): 4-bit opcode, uses 4 of 16 codes.<br>
-- Type-2 (12 bits): 4-bit opcode, uses 8 codes \(\\rightarrow\) 4 left.<br>
-- Type-3 (10 bits): 6-bit opcode: 4 \(\\times\) 4 = 16 codes, uses 14 \(\\rightarrow\) 2 left.<br>
-- Type-4 (6 bits): 10-bit opcode: 2 \(\\times\) \(2^4\) = 32.<br><br>
+- Type-2 (12 bits): 4-bit opcode, uses 8 codes \\(\\rightarrow\\) 4 left.<br>
+- Type-3 (10 bits): 6-bit opcode: 4 \\(\\times\\) 4 = 16 codes, uses 14 \\(\\rightarrow\\) 2 left.<br>
+- Type-4 (6 bits): 10-bit opcode: 2 \\(\\times\\) \\(2^4\\) = 32.<br><br>
 <b>Answer: 32</b><br><br><a href="https://gateoverflow.in/204126/gate2018-51#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58074,10 +58074,10 @@ III. Hardwired control unit <br>Which of the characteristics above are used in t
             options: [
             ],
             answer: 500,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Opcode: 12 instructions \(\\rightarrow\) 4 bits<br>
-- 3 register fields: 64 registers \(\\rightarrow\) 6 bits each = 18 bits<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Opcode: 12 instructions \\(\\rightarrow\\) 4 bits<br>
+- 3 register fields: 64 registers \\(\\rightarrow\\) 6 bits each = 18 bits<br>
 - Immediate: 12 bits<br><br>
-Total = 34 bits \(\\rightarrow\) byte-aligned = 5 bytes per instruction. 100 instructions \(\\times\) 5 = 500 bytes.<br><br>
+Total = 34 bits \\(\\rightarrow\\) byte-aligned = 5 bytes per instruction. 100 instructions \\(\\times\\) 5 = 500 bytes.<br><br>
 <b>Answer: 500</b><br><br><a href="https://gateoverflow.in/39601/gate2016-2-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58089,9 +58089,9 @@ Total = 34 bits \(\\rightarrow\) byte-aligned = 5 bytes per instruction. 100 ins
             options: [
             ],
             answer: 16,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 40 instructions \(\\rightarrow\) opcode \(\\lceil\\log_2 40\\rceil=6\) bits<br>
-- 24 registers \(\\rightarrow\) 5 bits each, two operands = 10 bits<br><br>
-Immediate = 32 \(-\) 6 \(-\) 10 = 16 bits<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 40 instructions \\(\\rightarrow\\) opcode \\(\\lceil\\log_2 40\\rceil=6\\) bits<br>
+- 24 registers \\(\\rightarrow\\) 5 bits each, two operands = 10 bits<br><br>
+Immediate = 32 \\(-\\) 6 \\(-\\) 10 = 16 bits<br><br>
 <b>Answer: 16</b><br><br><a href="https://gateoverflow.in/39547/gate2016-2-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58122,39 +58122,39 @@ DCR B<br>
 HLT<br></span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\((54)_{H}\)</span>`,
-                `<span style="display: inline;">\((00)_{H}\)</span>`,
-                `<span style="display: inline;">\((01)_{H}\)</span>`,
-                `<span style="display: inline;">\((45)_{H}\)</span>`,
+                `<span style="display: inline;">\\((54)_{H}\\)</span>`,
+                `<span style="display: inline;">\\((00)_{H}\\)</span>`,
+                `<span style="display: inline;">\\((01)_{H}\\)</span>`,
+                `<span style="display: inline;">\\((45)_{H}\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- SUB A: A = 0, CY = 0<br>
 - MVI B, 01: no flags change<br>
-- DCR B: 01 \(-\) 1 = 00 \(\\rightarrow\) S = 0, Z = 1, P = 1 (even parity), AC = 1 (done as 01 + FF, carry out of bit 3). CY is not affected and stays 0.<br><br>
+- DCR B: 01 \\(-\\) 1 = 00 \\(\\rightarrow\\) S = 0, Z = 1, P = 1 (even parity), AC = 1 (done as 01 + FF, carry out of bit 3). CY is not affected and stays 0.<br><br>
 Flags S Z x AC x P x CY = 0 1 0 1 0 1 0 0 = 54H<br><br>
-<b>Answer: \((54)_H\)</b><br><br><a href="https://gateoverflow.in/46026/isro2015-61" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
+<b>Answer: \\((54)_H\\)</b><br><br><a href="https://gateoverflow.in/46026/isro2015-61" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size 2 bytes. A stack in the main memory is implemented from memory location \((0100)_{16}\) and it grows upward. The stack pointer (SP) points to the top element of the stack. The current value of SP is \((016E)_{16}\). The CALL instruction is of two words, the first word is the op-code and the second word is the starting address of the subroutine (one word = 2 bytes). The CALL instruction is implemented as follows: <br><br>
+            text: `<span style="display: inline;">Consider a processor with byte-addressable memory. Assume that all registers, including Program Counter (PC) and Program Status Word (PSW), are of size 2 bytes. A stack in the main memory is implemented from memory location \\((0100)_{16}\\) and it grows upward. The stack pointer (SP) points to the top element of the stack. The current value of SP is \\((016E)_{16}\\). The CALL instruction is of two words, the first word is the op-code and the second word is the starting address of the subroutine (one word = 2 bytes). The CALL instruction is implemented as follows: <br><br>
 Store the current value of PC in the stack <br>
 Store the value of PSW register in the stack <br>
 Load the starting address of the subroutine in PC <br><br>
-The content of PC just before the fetch of a CALL instruction is \((5FA0)_{16}\).  After execution of the CALL instruction, the value of the stack pointer is</span>`,
+The content of PC just before the fetch of a CALL instruction is \\((5FA0)_{16}\\).  After execution of the CALL instruction, the value of the stack pointer is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\((016A)_{16}\)</span>`,
-                `<span style="display: inline;">\((016C)_{16}\)</span>`,
-                `<span style="display: inline;">\((0170)_{16}\)</span>`,
-                `<span style="display: inline;">\((0172)_{16}\)</span>`,
+                `<span style="display: inline;">\\((016A)_{16}\\)</span>`,
+                `<span style="display: inline;">\\((016C)_{16}\\)</span>`,
+                `<span style="display: inline;">\\((0170)_{16}\\)</span>`,
+                `<span style="display: inline;">\\((0172)_{16}\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The stack grows upward and SP points to the top element, so each push adds 2 to SP and then stores.<br><br>
 - Push PC: SP = 016E + 2 = 0170<br>
 - Push PSW: SP = 0170 + 2 = 0172<br><br>
-<b>Answer: \((0172)_{16}\)</b><br><br><a href="https://gateoverflow.in/8215/gate2015-2-44#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
+<b>Answer: \\((0172)_{16}\\)</b><br><br><a href="https://gateoverflow.in/8215/gate2015-2-44#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
             marks: 1,
@@ -58185,8 +58185,8 @@ P1. If the clock frequency of P1 is 1GHz, then the clock frequency of P2 (in GHz
             options: [
             ],
             answer: 1.6,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Time = IC \(\\times\) CPI / f. With \(T_2=0.75T_1\) and \(CPI_2=1.2\\,CPI_1\):<br>
-\(0.75=\\frac{1.2}{f_2/f_1}\\Rightarrow f_2=\\frac{1.2}{0.75}\\times1=1.6\) GHz<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Time = IC \\(\\times\\) CPI / f. With \\(T_2=0.75T_1\\) and \\(CPI_2=1.2\\,CPI_1\\):<br>
+\\(0.75=\\frac{1.2}{f_2/f_1}\\Rightarrow f_2=\\frac{1.2}{0.75}\\times1=1.6\\) GHz<br><br>
 <b>Answer: 1.6</b><br><br><a href="https://gateoverflow.in/1935/gate2014-1-55#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58198,9 +58198,9 @@ P1. If the clock frequency of P1 is 1GHz, then the clock frequency of P2 (in GHz
             options: [
             ],
             answer: 16383,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 45 instructions \(\\rightarrow\) 6-bit opcode<br>
-- 2 registers of 64 \(\\rightarrow\) 6 + 6 = 12 bits<br>
-- Immediate = 32 \(-\) 6 \(-\) 12 = 14 bits \(\\rightarrow\) max unsigned value \(2^{14}-1=16383\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 45 instructions \\(\\rightarrow\\) 6-bit opcode<br>
+- 2 registers of 64 \\(\\rightarrow\\) 6 + 6 = 12 bits<br>
+- Immediate = 32 \\(-\\) 6 \\(-\\) 12 = 14 bits \\(\\rightarrow\\) max unsigned value \\(2^{14}-1=16383\\)<br><br>
 <b>Answer: 16383</b><br><br><a href="https://gateoverflow.in/1767/gate2014-1-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58245,10 +58245,10 @@ P1. If the clock frequency of P1 is 1GHz, then the clock frequency of P2 (in GHz
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following sequence of micro-operations. <br>
-MBR \(\\leftarrow\) PC <br>
-MAR \(\\leftarrow\) X <br>
-PC \(\\leftarrow\) Y <br>
-Memory \(\\leftarrow\) MBR  <br>
+MBR \\(\\leftarrow\\) PC <br>
+MAR \\(\\leftarrow\\) X <br>
+PC \\(\\leftarrow\\) Y <br>
+Memory \\(\\leftarrow\\) MBR  <br>
 Which one of the following is a possible operation performed by this sequence?</span>`,
             image: "",
             options: [
@@ -58285,7 +58285,7 @@ registerTest({
                 `<span style="display: inline;">1000E</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Physical address = CS \(\\times\) 16 + IP = 10000 + E000 = 1E000 (hex)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Physical address = CS \\(\\times\\) 16 + IP = 10000 + E000 = 1E000 (hex)<br><br>
 <b>Answer: 1E000</b><br><br><a href="https://gateoverflow.in/52485/isro2011-37" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
         },
         {
@@ -58424,7 +58424,7 @@ After the execution of the above program, the contents of the accumulator will b
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Assume that EA = (X)+ is the effective address equal to the contents of location X, with X incremented by one word length after the effective address is calculated; EA = -(X) is the effective address equal to the contents of location X, with X decremented by one word length before the effective address is calculated; EA = (X)- is the effective address equal to the contents of location X, with X decremented by one word length after the effective address is calculated. The format of the instruction is (opcode, source, destination), which means (destination \(\\longleftarrow\) source op destination). Using X as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack.</span>`,
+            text: `<span style="display: inline;">Assume that EA = (X)+ is the effective address equal to the contents of location X, with X incremented by one word length after the effective address is calculated; EA = -(X) is the effective address equal to the contents of location X, with X decremented by one word length before the effective address is calculated; EA = (X)- is the effective address equal to the contents of location X, with X decremented by one word length after the effective address is calculated. The format of the instruction is (opcode, source, destination), which means (destination \\(\\longleftarrow\\) source op destination). Using X as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack.</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">ADD (X)-, (X)</span>`,
@@ -58513,7 +58513,7 @@ III. An exception cannot be allowed to occur during execution of an RFE instruct
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Following table indicates the latencies of operations between the instruction producing the result and instruction using the result.<br>
-\(\\begin{array}{|l|l|c|} \\hline \\textbf {Instruction producing the result} & \\textbf{Instruction using the result }& \\textbf{Latency} \\\\\\hline \\text{ALU Operation} & \\text{ALU Operation} & 2 \\\\\\hline \\text{ALU Operation} & \\text{Store} & \\text{2}\\\\\\hline \\text{Load} & \\text{ALU Operation} & \\text{1}\\\\\\hline \\text{Load} & \\text{Store} & \\text{0} \\\\\\hline \\end{array}\)<br>
+\\(\\begin{array}{|l|l|c|} \\hline \\textbf {Instruction producing the result} & \\textbf{Instruction using the result }& \\textbf{Latency} \\\\\\hline \\text{ALU Operation} & \\text{ALU Operation} & 2 \\\\\\hline \\text{ALU Operation} & \\text{Store} & \\text{2}\\\\\\hline \\text{Load} & \\text{ALU Operation} & \\text{1}\\\\\\hline \\text{Load} & \\text{Store} & \\text{0} \\\\\\hline \\end{array}\\)<br>
 Consider the following code segment:<br>
 <pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code>Load R1, Loc 1; Load R1 from memory location Loc1
  Load R2, Loc 2; Load R2 from memory location Loc 2
@@ -58594,7 +58594,7 @@ program, the content of memory location 2010 is:</span>`,
             type: "MCQ",
             text: `<span style="display: inline;">The memory locations 1000,1001 and 1020 have data values 18,1 and 16 respectively before the following program is executed.<br><br>
 
-\(\\begin{array}{llll} \\text{MOVI} & \\text{$R_s, 1$} && \\text{; Move immediate} \\\\ \\text{LOAD} & \\text{$R_d, 1000(R_s)$} && \\text{; Load from memory}\\\\ \\text{ADDI} & \\text{$ R_d, 1000$} && \\text{; Add immediate}\\\\ \\text{STOREI} & \\text{$0(R_d), 20$} && \\text{; Store immediate} \\end{array}\)<br><br>
+\\(\\begin{array}{llll} \\text{MOVI} & \\text{$R_s, 1$} && \\text{; Move immediate} \\\\ \\text{LOAD} & \\text{$R_d, 1000(R_s)$} && \\text{; Load from memory}\\\\ \\text{ADDI} & \\text{$ R_d, 1000$} && \\text{; Add immediate}\\\\ \\text{STOREI} & \\text{$0(R_d), 20$} && \\text{; Store immediate} \\end{array}\\)<br><br>
 
 Which of the statements below is TRUE after the program is executed ?</span>`,
             image: "",
@@ -58635,16 +58635,16 @@ instruction "bbs reg, pos, labbel" jumps to label if bit in position pos of regi
 operand reg is one. a register is 32 bits wide and the bits are numbered 0 to 31,
 bit in position 0 being the least significant. Consider the following emulation of
 this instruction on a processor that does not have bbs implemented. <br><br>
-temp\(\\leftarrow\)reg & mask <br>
+temp\\(\\leftarrow\\)reg & mask <br>
 Branch to label if temp is non-zero<br><br>
 The variable temp is a temporary register. For correct emulation the variable
 mask must be generated by</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">mask \(\\leftarrow 0 \\times 1 \\lt \\lt pos\)</span>`,
-                `<span style="display: inline;">musk \(\\leftarrow 0 \\times ffffffff \\gt \\gt  pos\)</span>`,
-                `<span style="display: inline;">mask \(\\leftarrow\) pos</span>`,
-                `<span style="display: inline;">msdk \(\\leftarrow 0 \\times f\)</span>`,
+                `<span style="display: inline;">mask \\(\\leftarrow 0 \\times 1 \\lt \\lt pos\\)</span>`,
+                `<span style="display: inline;">musk \\(\\leftarrow 0 \\times ffffffff \\gt \\gt  pos\\)</span>`,
+                `<span style="display: inline;">mask \\(\\leftarrow\\) pos</span>`,
+                `<span style="display: inline;">msdk \\(\\leftarrow 0 \\times f\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1819/gate2006-43#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
@@ -58669,24 +58669,24 @@ mask must be generated by</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">If we use internal data forwarding to speed up the performance of a CPU (R1, R2 and R3 are registers and M[100] is a memory reference), then the sequence of operations<br>
-R1 \(\\rightarrow\) M[100]<br>
-M[100] \(\\rightarrow\) R2<br>
-M[100] \(\\rightarrow\) R3<br>
+R1 \\(\\rightarrow\\) M[100]<br>
+M[100] \\(\\rightarrow\\) R2<br>
+M[100] \\(\\rightarrow\\) R3<br>
 can be replaced by</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">R1 \(\\rightarrow\) R3
-R2 \(\\rightarrow\) M[100]</span>`,
-                `<span style="display: inline;">M[100] \(\\rightarrow\) R2
-R1 \(\\rightarrow\) R2
-R1 \(\\rightarrow\) R3</span>`,
-                `<span style="display: inline;">R1 \(\\rightarrow\) M[100]
-R2 \(\\rightarrow\) R3</span>`,
-                `<span style="display: inline;">R1 \(\\rightarrow\) R2
+                `<span style="display: inline;">R1 \\(\\rightarrow\\) R3
+R2 \\(\\rightarrow\\) M[100]</span>`,
+                `<span style="display: inline;">M[100] \\(\\rightarrow\\) R2
+R1 \\(\\rightarrow\\) R2
+R1 \\(\\rightarrow\\) R3</span>`,
+                `<span style="display: inline;">R1 \\(\\rightarrow\\) M[100]
+R2 \\(\\rightarrow\\) R3</span>`,
+                `<span style="display: inline;">R1 \\(\\rightarrow\\) R2
 
-R1 \(\\rightarrow\) R3
+R1 \\(\\rightarrow\\) R3
 
-R1 \(\\rightarrow\) M[100]</span>`,
+R1 \\(\\rightarrow\\) M[100]</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3689/gate2004-it-46" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2004" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2004</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/computer-organization" style="color:#2f6d1a; text-decoration:none;" target="_blank">Computer Organization</a></div></div>`
@@ -58936,13 +58936,13 @@ registerTest({
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following two sets:<br>
-\(\\begin{array}{ll}
+\\(\\begin{array}{ll}
  \\textbf{Set X}  &      \\textbf{Set Y} \\\\
 \\text{P. Lexical Analyzer} & \\text{1. Abstract Syntax Tree} \\\\
 \\text{Q. Syntax Analyzer} & \\text{2. Token}\\\\
 \\text{R. Intermediate Code Generator } & \\text{3. Parse Tree} \\\\
 \\text{S. Code Optimizer} & \\text{4. Constant Folding }
-\\end{array}\)
+\\end{array}\\)
 <br>   Which one of the following options is the CORRECT match from Set X to Set Y ?</span>`,
             image: "",
             options: [
@@ -58952,10 +58952,10 @@ registerTest({
                 `<span style="display: inline;">P-4; Q-3; R-2; S-1</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Output / job of each compiler phase:<br>- P. Lexical Analyzer \(\\rightarrow\) produces <b>tokens</b> (2)<br>
-- Q. Syntax Analyzer \(\\rightarrow\) produces <b>parse tree</b> (3)<br>
-- R. Intermediate Code Generator \(\\rightarrow\) works with <b>abstract syntax tree</b> / IR (1)<br>
-- S. Code Optimizer \(\\rightarrow\) <b>constant folding</b> (4)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Output / job of each compiler phase:<br>- P. Lexical Analyzer \\(\\rightarrow\\) produces <b>tokens</b> (2)<br>
+- Q. Syntax Analyzer \\(\\rightarrow\\) produces <b>parse tree</b> (3)<br>
+- R. Intermediate Code Generator \\(\\rightarrow\\) works with <b>abstract syntax tree</b> / IR (1)<br>
+- S. Code Optimizer \\(\\rightarrow\\) <b>constant folding</b> (4)<br><br>
 <b>Answer: P-2; Q-3; R-1; S-4</b><br><br><a href="https://gateoverflow.in/422886/gate-cse-2024-set-2-question-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -58973,10 +58973,10 @@ right column) that processes it. <br><img src="images/practicepaper_matching/GAT
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Which phase takes each item as input:<br>
-- Syntax tree \(\\rightarrow\) semantic analyzer (iii)<br>
-- Character stream \(\\rightarrow\) lexical analyzer (iv)<br>
-- Intermediate representation \(\\rightarrow\) code generator (i)<br>
-- Token stream \(\\rightarrow\) syntax analyzer (ii)<br><br>
+- Syntax tree \\(\\rightarrow\\) semantic analyzer (iii)<br>
+- Character stream \\(\\rightarrow\\) lexical analyzer (iv)<br>
+- Intermediate representation \\(\\rightarrow\\) code generator (i)<br>
+- Token stream \\(\\rightarrow\\) syntax analyzer (ii)<br><br>
 <b>Answer: P-(iii), Q-(iv), R-(i), S-(ii)</b><br><br><a href="https://gateoverflow.in/118592/gate2017-2-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59018,7 +59018,7 @@ right column) that processes it. <br><img src="images/practicepaper_matching/GAT
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The correct matching for the following pairs is<br><br> \(\\begin{array}{ll|ll} \\text{(A)}&\\text{Activation record} & \\text{(1)} &\\text{Linking loader} \\\\ \\text{(B)} &\\text{Location counter} & \\text{(2)} &\\text{Garbage collection} \\\\ \\text{(C)}& \\text{Reference counts} & \\text{(3)} &\\text{Subroutine call} \\\\ \\text{(D)}& \\text{Address relocation} & \\text{(4)}& \\text{Assembler} \\\\ \\end{array}\)</span>`,
+            text: `<span style="display: inline;">The correct matching for the following pairs is<br><br> \\(\\begin{array}{ll|ll} \\text{(A)}&\\text{Activation record} & \\text{(1)} &\\text{Linking loader} \\\\ \\text{(B)} &\\text{Location counter} & \\text{(2)} &\\text{Garbage collection} \\\\ \\text{(C)}& \\text{Reference counts} & \\text{(3)} &\\text{Subroutine call} \\\\ \\text{(D)}& \\text{Address relocation} & \\text{(4)}& \\text{Assembler} \\\\ \\end{array}\\)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">A-3 B-4 C-1 D-2</span>`,
@@ -59042,14 +59042,14 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">A lexical analyzer uses the following token definitions <br><br>\({letter → [A-Za-z]}\) <br>\({digit → [0-9]}\) <br>\({id → letter (letter | digit)^*}\) <br>\({number → digit}\) \({ }^{+}\) <br>\({ws → (blank | tab| newline)}\) \({ }^{+}\)<br><br> For the string given below, <br><br>\( x1 \\quad 23 {~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } \) <br><br>the number of tokens (excluding ws) that will be produced by the lexical analyzer is ________. (answer in integer)</span>`,
+            text: `<span style="display: inline;">A lexical analyzer uses the following token definitions <br><br>\\({letter → [A-Za-z]}\\) <br>\\({digit → [0-9]}\\) <br>\\({id → letter (letter | digit)^*}\\) <br>\\({number → digit}\\) \\({ }^{+}\\) <br>\\({ws → (blank | tab| newline)}\\) \\({ }^{+}\\)<br><br> For the string given below, <br><br>\\( x1 \\quad 23 {~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } \\) <br><br>the number of tokens (excluding ws) that will be produced by the lexical analyzer is ________. (answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 13,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Tokenize using <b>maximal munch</b> (the longest possible match at each point), skipping whitespace-separated groups: \(\\text{x1}\\ \\ \\text{23mm}\\ \\ \\text{78}\\ \\ \\text{y}\\ \\ \\text{7z}\\ \\ \\text{zz5}\\ \\ \\text{14A}\\ \\ \\text{8H}\\ \\ \\text{AaYcD}\)<br><br>
-\(\\begin{array}{l|l}\\text{Group}&\\text{Tokens produced}\\\\\\hline\\text{x1}&\\text{id("x1")}\\ (1)\\\\\\text{23mm}&\\text{number("23"), id("mm")}\\ (2)\\\\\\text{78}&\\text{number("78")}\\ (1)\\\\\\text{y}&\\text{id("y")}\\ (1)\\\\\\text{7z}&\\text{number("7"), id("z")}\\ (2)\\\\\\text{zz5}&\\text{id("zz5")}\\ (1)\\ [\\text{letter then letter/digit}^*\\text{ swallows the trailing digit}]\\\\\\text{14A}&\\text{number("14"), id("A")}\\ (2)\\\\\\text{8H}&\\text{number("8"), id("H")}\\ (2)\\\\\\text{AaYcD}&\\text{id("AaYcD")}\\ (1)\\end{array}\)<br><br>
-Total tokens \(=1+2+1+1+2+1+2+2+1=13\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Tokenize using <b>maximal munch</b> (the longest possible match at each point), skipping whitespace-separated groups: \\(\\text{x1}\\ \\ \\text{23mm}\\ \\ \\text{78}\\ \\ \\text{y}\\ \\ \\text{7z}\\ \\ \\text{zz5}\\ \\ \\text{14A}\\ \\ \\text{8H}\\ \\ \\text{AaYcD}\\)<br><br>
+\\(\\begin{array}{l|l}\\text{Group}&\\text{Tokens produced}\\\\\\hline\\text{x1}&\\text{id("x1")}\\ (1)\\\\\\text{23mm}&\\text{number("23"), id("mm")}\\ (2)\\\\\\text{78}&\\text{number("78")}\\ (1)\\\\\\text{y}&\\text{id("y")}\\ (1)\\\\\\text{7z}&\\text{number("7"), id("z")}\\ (2)\\\\\\text{zz5}&\\text{id("zz5")}\\ (1)\\ [\\text{letter then letter/digit}^*\\text{ swallows the trailing digit}]\\\\\\text{14A}&\\text{number("14"), id("A")}\\ (2)\\\\\\text{8H}&\\text{number("8"), id("H")}\\ (2)\\\\\\text{AaYcD}&\\text{id("AaYcD")}\\ (1)\\end{array}\\)<br><br>
+Total tokens \\(=1+2+1+1+2+1+2+2+1=13\\).<br><br>
 <b>Answer: 13</b><br><br><a href="https://gateoverflow.in/523121/gate-cse-2026-set-2-question-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59109,11 +59109,11 @@ So resolution of subroutine calls happens in the second pass and inclusion of la
                 `<span style="display: inline;">24</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Tokens: switch ( inputvalue ) { \(\\rightarrow\) 5<br>
-case 1 : b = c * d ; \(\\rightarrow\) 9<br>
-break ; \(\\rightarrow\) 2<br>
-default : b = b ++ ; \(\\rightarrow\) 7<br>
-break ; } \(\\rightarrow\) 3<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Tokens: switch ( inputvalue ) { \\(\\rightarrow\\) 5<br>
+case 1 : b = c * d ; \\(\\rightarrow\\) 9<br>
+break ; \\(\\rightarrow\\) 2<br>
+default : b = b ++ ; \\(\\rightarrow\\) 7<br>
+break ; } \\(\\rightarrow\\) 3<br><br>
 Total = 5 + 9 + 2 + 7 + 3 = 26 (++ is a single token).<br><br>
 <b>Answer: 26</b><br><br><a href="https://gateoverflow.in/331374/isro2020-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -59134,9 +59134,9 @@ III. Errors violating the condition 'any variable must be declared before its us
                 `<span style="display: inline;">None of I, II and III</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- I: the symbol table is used in later phases too (semantic analysis, code generation) \(\\text{---}\) FALSE.<br>
-- II: recursion needs a <b>stack</b> of activation records, not a heap \(\\text{---}\) FALSE.<br>
-- III: "declare before use" is a context-sensitive check done in <b>semantic</b> analysis \(\\text{---}\) FALSE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- I: the symbol table is used in later phases too (semantic analysis, code generation) \\(\\text{---}\\) FALSE.<br>
+- II: recursion needs a <b>stack</b> of activation records, not a heap \\(\\text{---}\\) FALSE.<br>
+- III: "declare before use" is a context-sensitive check done in <b>semantic</b> analysis \\(\\text{---}\\) FALSE.<br><br>
 <b>Answer: None of I, II and III</b><br><br><a href="https://gateoverflow.in/333222/gate2020-cs-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59178,20 +59178,20 @@ III. c44<br></span>`,
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">A lexical analyzer uses the following patterns to recognize three tokens  \(T_{1}, T_{2}, \\; and \\; T_{3} \) over the alphabet {a,b,c}. <br><br>  \(T_{1}:a?(b|c)^* a \) <br> \(T_{2}:b?(a|c)^* b \) <br> \( T_{3}:c?(b|a)^* c\) <br> <br>Note that 'x?' means 0 or 1 occurrence of the symbol x. Note also that the analyzer outputs the token that matches the longest possible prefix.<br><br>
+            text: `<span style="display: inline;">A lexical analyzer uses the following patterns to recognize three tokens  \\(T_{1}, T_{2}, \\; and \\; T_{3} \\) over the alphabet {a,b,c}. <br><br>  \\(T_{1}:a?(b|c)^* a \\) <br> \\(T_{2}:b?(a|c)^* b \\) <br> \\( T_{3}:c?(b|a)^* c\\) <br> <br>Note that 'x?' means 0 or 1 occurrence of the symbol x. Note also that the analyzer outputs the token that matches the longest possible prefix.<br><br>
 If the string <i>bbaacabc</i> is processed by the analyzer, which one of the following is the
 sequence of tokens it outputs?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(T_{1}T_{2}T_{3}\)</span>`,
-                `<span style="display: inline;">\(T_{1}T_{1}T_{3}\)</span>`,
-                `<span style="display: inline;">\(T_{2}T_{1}T_{3}\)</span>`,
-                `<span style="display: inline;">\(T_{3}T_{3}\)</span>`,
+                `<span style="display: inline;">\\(T_{1}T_{2}T_{3}\\)</span>`,
+                `<span style="display: inline;">\\(T_{1}T_{1}T_{3}\\)</span>`,
+                `<span style="display: inline;">\\(T_{2}T_{1}T_{3}\\)</span>`,
+                `<span style="display: inline;">\\(T_{3}T_{3}\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Longest-prefix matching on bbaacabc:<br>
-- T1 matches "bba", T2 matches "bb", but T3 = c?(b|a)*c matches "bbaac" (longest) \(\\rightarrow\) <b>T3</b><br>
-- Remaining "abc": T3 matches "abc" \(\\rightarrow\) <b>T3</b><br><br>
+- T1 matches "bba", T2 matches "bb", but T3 = c?(b|a)*c matches "bbaac" (longest) \\(\\rightarrow\\) <b>T3</b><br>
+- Remaining "abc": T3 matches "abc" \\(\\rightarrow\\) <b>T3</b><br><br>
 <b>Answer: T3T3</b><br><br><a href="https://gateoverflow.in/204111/gate2018-37#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59258,7 +59258,7 @@ The whole string literal is one token. Total = 10<br><br>
                 `<span style="display: inline;">6.08</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Occupation density = entries / table length = 25 / 152 \(\\approx\) 0.164<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Occupation density = entries / table length = 25 / 152 \\(\\approx\\) 0.164<br><br>
 <b>Answer: 0.164</b><br><br><a href="https://gateoverflow.in/53152/isro2011-78" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59469,7 +59469,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the canonical \(L R(0)\) parsing of the grammar below using terminals \(\\{a, b, c\\}\) and non-terminals \(\\{A, B, C, S\\}\) with \(S\) as the start symbol. <br><br>\( \\begin{array}{l} S \\rightarrow A C B \\\\ A \\rightarrow a A \\mid \\epsilon \\\\ C \\rightarrow c C \\mid \\epsilon \\\\ B \\rightarrow b B \\mid b \\end{array} \) <br><br>Which one of the following options gives the number of shift-reduce conflicts that will occur in the \(L R(0)\) ACTION table?</span>`,
+            text: `<span style="display: inline;">Consider the canonical \\(L R(0)\\) parsing of the grammar below using terminals \\(\\{a, b, c\\}\\) and non-terminals \\(\\{A, B, C, S\\}\\) with \\(S\\) as the start symbol. <br><br>\\( \\begin{array}{l} S \\rightarrow A C B \\\\ A \\rightarrow a A \\mid \\epsilon \\\\ C \\rightarrow c C \\mid \\epsilon \\\\ B \\rightarrow b B \\mid b \\end{array} \\) <br><br>Which one of the following options gives the number of shift-reduce conflicts that will occur in the \\(L R(0)\\) ACTION table?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">2</span>`,
@@ -59478,14 +59478,14 @@ registerTest({
                 `<span style="display: inline;">5</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Building the LR(0) canonical collection for \(S\\to ACB,\\ A\\to aA|\\epsilon,\\ C\\to cC|\\epsilon,\\ B\\to bB|b\), a state has a <b>shift-reduce conflict</b> whenever it contains both a complete (reduce) item and a shift item on some terminal.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Building the LR(0) canonical collection for \\(S\\to ACB,\\ A\\to aA|\\epsilon,\\ C\\to cC|\\epsilon,\\ B\\to bB|b\\), a state has a <b>shift-reduce conflict</b> whenever it contains both a complete (reduce) item and a shift item on some terminal.<br><br>
 Tracing through the automaton, the following states each mix a reduce item with a shift item:<br>
-- The initial state \(\\{S'\\to\\cdot S,\\ S\\to\\cdot ACB,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}\): reduce \(A\\to\\epsilon\) vs. shift on \(a\).<br>
-- The state reached after \(A\), \(\\{S\\to A\\cdot CB,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}\): reduce \(C\\to\\epsilon\) vs. shift on \(c\).<br>
-- The self-looping state on \(a\), \(\\{A\\to a\\cdot A,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}\): reduce \(A\\to\\epsilon\) vs. shift on \(a\).<br>
-- The self-looping state on \(c\), \(\\{C\\to c\\cdot C,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}\): reduce \(C\\to\\epsilon\) vs. shift on \(c\).<br>
-- The self-looping state on \(b\) (from \(B\\to bB|b\)), \(\\{B\\to b\\cdot B,\\ B\\to b\\cdot,\\ B\\to\\cdot bB,\\ B\\to\\cdot b\\}\): reduce \(B\\to b\) vs. shift on \(b\).<br><br>
-That gives exactly \(5\) conflicting states (all other states, such as the ones after fully reducing \(A,C,B,\) or \(S\), contain only a single complete item and no competing shift).<br><br>
+- The initial state \\(\\{S'\\to\\cdot S,\\ S\\to\\cdot ACB,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}\\): reduce \\(A\\to\\epsilon\\) vs. shift on \\(a\\).<br>
+- The state reached after \\(A\\), \\(\\{S\\to A\\cdot CB,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}\\): reduce \\(C\\to\\epsilon\\) vs. shift on \\(c\\).<br>
+- The self-looping state on \\(a\\), \\(\\{A\\to a\\cdot A,\\ A\\to\\cdot aA,\\ A\\to\\cdot\\}\\): reduce \\(A\\to\\epsilon\\) vs. shift on \\(a\\).<br>
+- The self-looping state on \\(c\\), \\(\\{C\\to c\\cdot C,\\ C\\to\\cdot cC,\\ C\\to\\cdot\\}\\): reduce \\(C\\to\\epsilon\\) vs. shift on \\(c\\).<br>
+- The self-looping state on \\(b\\) (from \\(B\\to bB|b\\)), \\(\\{B\\to b\\cdot B,\\ B\\to b\\cdot,\\ B\\to\\cdot bB,\\ B\\to\\cdot b\\}\\): reduce \\(B\\to b\\) vs. shift on \\(b\\).<br><br>
+That gives exactly \\(5\\) conflicting states (all other states, such as the ones after fully reducing \\(A,C,B,\\) or \\(S\\), contain only a single complete item and no competing shift).<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/523115/gate-cse-2026-set-2-question-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59495,18 +59495,18 @@ That gives exactly \(5\) conflicting states (all other states, such as the ones 
             text: `<span style="display: inline;">Which of the following grammars is/are ambiguous?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(S \\rightarrow a S b \\mid \\epsilon\)</span>`,
-                `<span style="display: inline;">\(E \\rightarrow E+E|E * E| i d\)</span>`,
-                `<span style="display: inline;">\(S \\rightarrow a S|S a| \\epsilon\)</span>`,
-                `<span style="display: inline;">\(S \\rightarrow a S \\mid \\epsilon\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow a S b \\mid \\epsilon\\)</span>`,
+                `<span style="display: inline;">\\(E \\rightarrow E+E|E * E| i d\\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow a S|S a| \\epsilon\\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow a S \\mid \\epsilon\\)</span>`,
             ],
             answer: ["A"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each grammar for ambiguity (does some string have two distinct parse trees?):<br><br>
-- \(S\\rightarrow aSb\\mid\\epsilon\): generates only \(a^nb^n\), with a unique nested derivation for every string &mdash; <b>unambiguous</b>.<br>
-- \(E\\rightarrow E+E\\mid E*E\\mid id\): the classic textbook example of an <b>ambiguous</b> grammar &mdash; e.g. \(id+id*id\) can be parsed with two different groupings (no precedence/associativity is encoded), giving two distinct parse trees.<br>
-- \(S\\rightarrow aS\\mid Sa\\mid\\epsilon\): generates strings of \(a\)'s only, but because both left-recursion (\(Sa\)) and right-recursion (\(aS\)) are available, a string like "\(aa\)" can be built in more than one structurally distinct way &mdash; <b>ambiguous</b>.<br>
-- \(S\\rightarrow aS\\mid\\epsilon\): purely right-recursive, unique derivation for every string &mdash; <b>unambiguous</b>.<br><br>
-<b>Answer: \(E\\rightarrow E+E|E*E|id\) and \(S\\rightarrow aS|Sa|\\epsilon\) are ambiguous.</b><br><br><a href="https://gateoverflow.in/523127/gate-cse-2026-set-2-question-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+- \\(S\\rightarrow aSb\\mid\\epsilon\\): generates only \\(a^nb^n\\), with a unique nested derivation for every string &mdash; <b>unambiguous</b>.<br>
+- \\(E\\rightarrow E+E\\mid E*E\\mid id\\): the classic textbook example of an <b>ambiguous</b> grammar &mdash; e.g. \\(id+id*id\\) can be parsed with two different groupings (no precedence/associativity is encoded), giving two distinct parse trees.<br>
+- \\(S\\rightarrow aS\\mid Sa\\mid\\epsilon\\): generates strings of \\(a\\)'s only, but because both left-recursion (\\(Sa\\)) and right-recursion (\\(aS\\)) are available, a string like "\\(aa\\)" can be built in more than one structurally distinct way &mdash; <b>ambiguous</b>.<br>
+- \\(S\\rightarrow aS\\mid\\epsilon\\): purely right-recursive, unique derivation for every string &mdash; <b>unambiguous</b>.<br><br>
+<b>Answer: \\(E\\rightarrow E+E|E*E|id\\) and \\(S\\rightarrow aS|Sa|\\epsilon\\) are ambiguous.</b><br><br><a href="https://gateoverflow.in/523127/gate-cse-2026-set-2-question-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
@@ -59515,10 +59515,10 @@ That gives exactly \(5\) conflicting states (all other states, such as the ones 
             text: `<span style="display: inline;">Which of the following statements is/are true?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\text{LL(1)}\) parser uses backtracking</span>`,
-                `<span style="display: inline;">For a grammar to be \(\\text{LL(1)}\), it must be left-recursive</span>`,
-                `<span style="display: inline;">For a grammar to be \(\\text{LL(1)}\), it must be left-factored</span>`,
-                `<span style="display: inline;">The \(\\text{LL(1)}\) parsers are more powerful than the SLR parsers</span>`,
+                `<span style="display: inline;">\\(\\text{LL(1)}\\) parser uses backtracking</span>`,
+                `<span style="display: inline;">For a grammar to be \\(\\text{LL(1)}\\), it must be left-recursive</span>`,
+                `<span style="display: inline;">For a grammar to be \\(\\text{LL(1)}\\), it must be left-factored</span>`,
+                `<span style="display: inline;">The \\(\\text{LL(1)}\\) parsers are more powerful than the SLR parsers</span>`,
             ],
             answer: ["A"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each claim about LL(1) parsing:<br><br>
@@ -59537,34 +59537,34 @@ That gives exactly \(5\) conflicting states (all other states, such as the ones 
  int *str3 = "Hello"; /* Statement S3 */ <br><br>Which of the following options is/are correct?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\text{S1}\) and \(\\text{S2}\) have syntactic errors</span>`,
-                `<span style="display: inline;">\(\\text{S2}\) has a lexical error and \(\\text{S3}\) has a syntactic error</span>`,
-                `<span style="display: inline;">\(\\text{S1}\) has a lexical error and \(\\text{S3}\) has a semantic error</span>`,
-                `<span style="display: inline;">\(\\text{S1}\) has a syntactic error and \(\\text{S3}\) has a semantic error</span>`,
+                `<span style="display: inline;">\\(\\text{S1}\\) and \\(\\text{S2}\\) have syntactic errors</span>`,
+                `<span style="display: inline;">\\(\\text{S2}\\) has a lexical error and \\(\\text{S3}\\) has a syntactic error</span>`,
+                `<span style="display: inline;">\\(\\text{S1}\\) has a lexical error and \\(\\text{S3}\\) has a semantic error</span>`,
+                `<span style="display: inline;">\\(\\text{S1}\\) has a syntactic error and \\(\\text{S3}\\) has a semantic error</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \(\\text{S1: char *str1 = "Hello;}\) &mdash; the string literal is missing its closing double-quote. An unterminated string literal is a <b>lexical error</b> (the lexer/scanner cannot even form a valid string token).<br><br>
-\(\\text{S2: char *str2 = "Hello;";}\) &mdash; this is a perfectly valid string literal (containing a semicolon character) assigned to a \(\\text{char *}\); no error at all.<br><br>
-\(\\text{S3: int *str3 = "Hello";}\) &mdash; this is lexically and syntactically fine (a valid string literal, valid statement syntax), but it assigns a \(\\text{char *}\) value to an incompatible \(\\text{int *}\) pointer type. This is a type-mismatch, which is a <b>semantic error</b> (caught during semantic/type analysis, not parsing).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \\(\\text{S1: char *str1 = "Hello;}\\) &mdash; the string literal is missing its closing double-quote. An unterminated string literal is a <b>lexical error</b> (the lexer/scanner cannot even form a valid string token).<br><br>
+\\(\\text{S2: char *str2 = "Hello;";}\\) &mdash; this is a perfectly valid string literal (containing a semicolon character) assigned to a \\(\\text{char *}\\); no error at all.<br><br>
+\\(\\text{S3: int *str3 = "Hello";}\\) &mdash; this is lexically and syntactically fine (a valid string literal, valid statement syntax), but it assigns a \\(\\text{char *}\\) value to an incompatible \\(\\text{int *}\\) pointer type. This is a type-mismatch, which is a <b>semantic error</b> (caught during semantic/type analysis, not parsing).<br><br>
 <b>Answer: S1 has a lexical error, and S3 has a semantic error.</b><br><br><a href="https://gateoverflow.in/523063/gate-cse-2026-set-1-question-17#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Which of the following statement(s) is/are TRUE while computing \(First\) and \(Follow\) during top-down parsing by a compiler? </span>`,
+            text: `<span style="display: inline;">Which of the following statement(s) is/are TRUE while computing \\(First\\) and \\(Follow\\) during top-down parsing by a compiler? </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">For a production \(A \\to \\epsilon ,  \\epsilon \) will be added to \(First(A) \).</span>`,
-                `<span style="display: inline;">If there is any input right end marker, it will be added to\( First(S) \), where \( S \) is the start symbol.</span>`,
-                `<span style="display: inline;">For a production \( A \\to \\epsilon,  \\epsilon \) will be added to \( Follow(A) \).</span>`,
-                `<span style="display: inline;">If there is any input right end marker, it will be added to \( Follow(S) \), where \( S \) is the start symbol.</span>`,
+                `<span style="display: inline;">For a production \\(A \\to \\epsilon ,  \\epsilon \\) will be added to \\(First(A) \\).</span>`,
+                `<span style="display: inline;">If there is any input right end marker, it will be added to\\( First(S) \\), where \\( S \\) is the start symbol.</span>`,
+                `<span style="display: inline;">For a production \\( A \\to \\epsilon,  \\epsilon \\) will be added to \\( Follow(A) \\).</span>`,
+                `<span style="display: inline;">If there is any input right end marker, it will be added to \\( Follow(S) \\), where \\( S \\) is the start symbol.</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Standard rules for computing \(\\text{First}\) and \(\\text{Follow}\) sets:<br><br>
-- <b>"For \(A\\to\\epsilon\), add \(\\epsilon\) to First(A)"</b>: TRUE &mdash; this is exactly the base rule for handling nullable productions in First-set computation.<br>
-- "If there's an input right-end marker, add it to First(S)": FALSE &mdash; the end marker \(\\$\) belongs in \(\\text{Follow}\) sets (marking "nothing more can follow"), never in a \(\\text{First}\) set.<br>
-- "For \(A\\to\\epsilon\), add \(\\epsilon\) to Follow(A)": FALSE &mdash; \(\\epsilon\) is never placed into any \(\\text{Follow}\) set; \(\\text{Follow}\) sets only ever contain actual terminals (and possibly \(\\$\)).<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Standard rules for computing \\(\\text{First}\\) and \\(\\text{Follow}\\) sets:<br><br>
+- <b>"For \\(A\\to\\epsilon\\), add \\(\\epsilon\\) to First(A)"</b>: TRUE &mdash; this is exactly the base rule for handling nullable productions in First-set computation.<br>
+- "If there's an input right-end marker, add it to First(S)": FALSE &mdash; the end marker \\(\\$\\) belongs in \\(\\text{Follow}\\) sets (marking "nothing more can follow"), never in a \\(\\text{First}\\) set.<br>
+- "For \\(A\\to\\epsilon\\), add \\(\\epsilon\\) to Follow(A)": FALSE &mdash; \\(\\epsilon\\) is never placed into any \\(\\text{Follow}\\) set; \\(\\text{Follow}\\) sets only ever contain actual terminals (and possibly \\(\\$\\)).<br>
 - <b>"If there's an input right-end marker, add it to Follow(S)"</b>: TRUE &mdash; this is the standard initialization rule, since nothing legitimately follows the start symbol except the end of input.<br><br>
 <b>Answer: "&epsilon; is added to First(A) for A&rarr;&epsilon;" and "the end marker is added to Follow(S)" are both TRUE.</b><br><br><a href="https://gateoverflow.in/460044/gate-cse-2025-set-1-question-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -59572,45 +59572,45 @@ That gives exactly \(5\) conflicting states (all other states, such as the ones 
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following grammar \(G \), with \(S \) as the start symbol. The grammar \(G \) has three incomplete productions denoted by (1), (2), and (3).<br><br>
-\(
+            text: `<span style="display: inline;">Consider the following grammar \\(G \\), with \\(S \\) as the start symbol. The grammar \\(G \\) has three incomplete productions denoted by (1), (2), and (3).<br><br>
+\\(
 \\begin{aligned}
 & S \\rightarrow d a T \\mid \\quad(1) \\\\
 & T \\rightarrow a S|b T|(2) \\\\
 & R \\rightarrow \\text { (3) } \\mid \\epsilon
 \\end{aligned}
- \)
+ \\)
 <br><br>
-The set of terminals is \(\\{a, b, c, d, f\\} \). The FIRST and FOLLOW sets of the different non-terminals are as follows.<br><br>
-\(
+The set of terminals is \\(\\{a, b, c, d, f\\} \\). The FIRST and FOLLOW sets of the different non-terminals are as follows.<br><br>
+\\(
 \\begin{aligned}
 & \\operatorname{FIRST}(S)=\\{c, d, f\\}, \\operatorname{FIRST}(T)=\\{a, b, \\epsilon\\}, \\operatorname{FIRST}(R)=\\{c, \\epsilon\\} \\\\
 & \\operatorname{FOLLOW}(S)=\\operatorname{FOLLOW}(T)=\\{c, f, \\$\\}, \\operatorname{FOLLOW}(R)=\\{f\\}
 \\end{aligned}
- \)
+ \\)
 <br><br>
 Which one of the following options CORRECTLY fills in the incomplete productions?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">(1) \(S \\rightarrow R f \)
-(2) \(T \\rightarrow \\epsilon \)
-(3) \(R \\rightarrow c T R \)</span>`,
-                `<span style="display: inline;">(1) \(S \\rightarrow f R \)
-(2) \(T \\rightarrow \\epsilon \)
-(3) \(R \\rightarrow c T R \)</span>`,
-                `<span style="display: inline;">(1) \(S \\rightarrow f R \)
-(2) \(T \\rightarrow c T \)
-(3) \(R \\rightarrow c R \)</span>`,
-                `<span style="display: inline;">(1) \(S \\rightarrow R f \)
-(2) \(T \\rightarrow c T \)
-(3) \(R \\rightarrow c R \)</span>`,
+                `<span style="display: inline;">(1) \\(S \\rightarrow R f \\)
+(2) \\(T \\rightarrow \\epsilon \\)
+(3) \\(R \\rightarrow c T R \\)</span>`,
+                `<span style="display: inline;">(1) \\(S \\rightarrow f R \\)
+(2) \\(T \\rightarrow \\epsilon \\)
+(3) \\(R \\rightarrow c T R \\)</span>`,
+                `<span style="display: inline;">(1) \\(S \\rightarrow f R \\)
+(2) \\(T \\rightarrow c T \\)
+(3) \\(R \\rightarrow c R \\)</span>`,
+                `<span style="display: inline;">(1) \\(S \\rightarrow R f \\)
+(2) \\(T \\rightarrow c T \\)
+(3) \\(R \\rightarrow c R \\)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Use the given FIRST and FOLLOW sets:<br>- \(FIRST(S)=\\{c,d,f\\}\) but \(daT\) gives only d, so (1) must give c and f. \(S\\rightarrow Rf\) gives \((FIRST(R)-\\epsilon)\\cup\\{f\\}=\\{c,f\\}\) True (\(S\\rightarrow fR\) gives only f).<br>
-- \(\\epsilon\\in FIRST(T)\), so (2) is \(T\\rightarrow\\epsilon\).<br>
-- \(FIRST(R)=\\{c,\\epsilon\\}\), so (3) starts with c.<br><br>
-Check FOLLOW with \(R\\rightarrow cTR\): \(FOLLOW(T)\\supseteq FIRST(R)-\\epsilon=\\{c\\}\) and \(FOLLOW(R)=\\{f\\}\) (from \(S\\rightarrow Rf\)); together with $ this gives \(FOLLOW(S)=FOLLOW(T)=\\{c,f,\\$\\}\) True. With \(R\\rightarrow cR\), c could never follow T.<br><br>
-<b>Answer: (1) \(S\\rightarrow Rf\) (2) \(T\\rightarrow\\epsilon\) (3) \(R\\rightarrow cTR\)</b><br><br><a href="https://gateoverflow.in/422814/gate-cse-2024-set-1-question-28#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Use the given FIRST and FOLLOW sets:<br>- \\(FIRST(S)=\\{c,d,f\\}\\) but \\(daT\\) gives only d, so (1) must give c and f. \\(S\\rightarrow Rf\\) gives \\((FIRST(R)-\\epsilon)\\cup\\{f\\}=\\{c,f\\}\\) True (\\(S\\rightarrow fR\\) gives only f).<br>
+- \\(\\epsilon\\in FIRST(T)\\), so (2) is \\(T\\rightarrow\\epsilon\\).<br>
+- \\(FIRST(R)=\\{c,\\epsilon\\}\\), so (3) starts with c.<br><br>
+Check FOLLOW with \\(R\\rightarrow cTR\\): \\(FOLLOW(T)\\supseteq FIRST(R)-\\epsilon=\\{c\\}\\) and \\(FOLLOW(R)=\\{f\\}\\) (from \\(S\\rightarrow Rf\\)); together with $ this gives \\(FOLLOW(S)=FOLLOW(T)=\\{c,f,\\$\\}\\) True. With \\(R\\rightarrow cR\\), c could never follow T.<br><br>
+<b>Answer: (1) \\(S\\rightarrow Rf\\) (2) \\(T\\rightarrow\\epsilon\\) (3) \\(R\\rightarrow cTR\\)</b><br><br><a href="https://gateoverflow.in/422814/gate-cse-2024-set-1-question-28#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
@@ -59633,41 +59633,41 @@ Predictive parser and LL(1) parser are <b>top-down</b> parsers.<br><br>
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the following grammar along with translation rules.<br>\( \\begin{aligned}
+            text: `<span style="display: inline;">Consider the following grammar along with translation rules.<br>\\( \\begin{aligned}
  &S \\rightarrow S_1  \\# T & & \\{S._{val}=S_{1.val}*T._{val} \\} \\\\ 
  &S \\rightarrow T & & \\{S._{val}=T._{val} \\} \\\\ 
 &T \\rightarrow T_1  \\% R & & \\{T._{val}=T_{1.val}  \\div R._{val} \\} \\\\ 
 &T \\rightarrow R & & \\{T._{val}=R._{val} \\} \\\\ 
 &R \\rightarrow id & & \\{R._{val}=id._{val} \\} \\\\ 
- \\end{aligned}\)<br>Here \( \\#\) and \( \\%\) are operators and \(id\) is a token that represents an integer and \(id_{.val}\) represents the corresponding integer value. The set of non-terminals is \( \\{S,T,R,P \\}\) and a subscripted non-terminal indicates an instance of the non-terminal.
-<br>Using this translation scheme, the computed value of \(S_{.val}\) for root of the parse tree for the expression \(20  \\# 10  \\% 5  \\# 8 \\% 2  \\% 2\) is
+ \\end{aligned}\\)<br>Here \\( \\#\\) and \\( \\%\\) are operators and \\(id\\) is a token that represents an integer and \\(id_{.val}\\) represents the corresponding integer value. The set of non-terminals is \\( \\{S,T,R,P \\}\\) and a subscripted non-terminal indicates an instance of the non-terminal.
+<br>Using this translation scheme, the computed value of \\(S_{.val}\\) for root of the parse tree for the expression \\(20  \\# 10  \\% 5  \\# 8 \\% 2  \\% 2\\) is
 </span>`,
             image: "",
             options: [
             ],
             answer: 80,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  From the grammar, # (multiply) is at the S level, so it has <b>lower precedence</b>; % (divide) is at the T level, so it binds tighter. Both are left recursive, i.e. left associative.<br><br>
-\(20\\,\\#\\,(10\\%5)\\,\\#\\,((8\\%2)\\%2)=20\\times2\\times2=80\)<br><br>
+\\(20\\,\\#\\,(10\\%5)\\,\\#\\,((8\\%2)\\%2)=20\\times2\\times2=80\\)<br><br>
 <b>Answer: 80</b><br><br><a href="https://gateoverflow.in/371881/Gate-cse-2022-question-55#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the augmented grammar with \( \\{+, *, (, ), id  \\}\) as the set of terminals.
+            text: `<span style="display: inline;">Consider the augmented grammar with \\( \\{+, *, (, ), id  \\}\\) as the set of terminals.
 <br>
-\( \\begin{aligned}&S' \\rightarrow S  \\\\ &S \\rightarrow S+R|R  \\\\ &R \\rightarrow R*P|P \\\\ &P \\rightarrow (S)|id \\end{aligned}\)<br>If \(I_0\) is the set of two \(LR(0)\) items \( \\{ [S' \\rightarrow S.], [S \\rightarrow S.+R]  \\}\), then \(goto(closure(I_0 ),+)\) contains exactly ______ items.</span>`,
+\\( \\begin{aligned}&S' \\rightarrow S  \\\\ &S \\rightarrow S+R|R  \\\\ &R \\rightarrow R*P|P \\\\ &P \\rightarrow (S)|id \\end{aligned}\\)<br>If \\(I_0\\) is the set of two \\(LR(0)\\) items \\( \\{ [S' \\rightarrow S.], [S \\rightarrow S.+R]  \\}\\), then \\(goto(closure(I_0 ),+)\\) contains exactly ______ items.</span>`,
             image: "",
             options: [
             ],
             answer: 5,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Closure of \(I_0\) adds nothing (the dot is before + and at the end, not before a non-terminal).<br><br>
-goto on +: \(S\\rightarrow S+.R\). Closure (dot before R, then before P):<br>
-1. \(S\\rightarrow S+.R\)<br>
-2. \(R\\rightarrow .R*P\)<br>
-3. \(R\\rightarrow .P\)<br>
-4. \(P\\rightarrow .(S)\)<br>
-5. \(P\\rightarrow .id\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Closure of \\(I_0\\) adds nothing (the dot is before + and at the end, not before a non-terminal).<br><br>
+goto on +: \\(S\\rightarrow S+.R\\). Closure (dot before R, then before P):<br>
+1. \\(S\\rightarrow S+.R\\)<br>
+2. \\(R\\rightarrow .R*P\\)<br>
+3. \\(R\\rightarrow .P\\)<br>
+4. \\(P\\rightarrow .(S)\\)<br>
+5. \\(P\\rightarrow .id\\)<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/371917/Gate-cse-2022-question-19#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59684,25 +59684,25 @@ LR(1) parser for G does not have reduce-reduce conflict.</span>`,
                 `<span style="display: inline;">LR(1) parsing is sufficient for deterministic context-free languages.</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- LALR(1) merges LR(1) states with the same core; this merging can create a <b>new reduce-reduce conflict</b> \(\\text{---}\) FALSE.<br>
-- The symbol table is used in almost every phase (semantic analysis, code generation, \(\\ldots\)) \(\\text{---}\) FALSE.<br>
-- Data flow analysis is used for code optimization, not run-time memory management \(\\text{---}\) FALSE.<br>
-- Every deterministic CFL has an LR(1) grammar, so LR(1) parsing is sufficient for DCFLs \(\\text{---}\) TRUE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- LALR(1) merges LR(1) states with the same core; this merging can create a <b>new reduce-reduce conflict</b> \\(\\text{---}\\) FALSE.<br>
+- The symbol table is used in almost every phase (semantic analysis, code generation, \\(\\ldots\\)) \\(\\text{---}\\) FALSE.<br>
+- Data flow analysis is used for code optimization, not run-time memory management \\(\\text{---}\\) FALSE.<br>
+- Every deterministic CFL has an LR(1) grammar, so LR(1) parsing is sufficient for DCFLs \\(\\text{---}\\) TRUE.<br><br>
 <b>Answer: LR(1) parsing is sufficient for deterministic context-free languages</b><br><br><a href="https://gateoverflow.in/371933/Gate-cse-2022-question-3#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the following augmented grammar with \(\\{ \\#, @, <, >, a, b, c \\}\) as the set of terminals.<br><br>
-\(\\begin{array}{l} S' \\rightarrow S \\\\ S \\rightarrow S \\# cS \\\\ S \\rightarrow SS \\\\ S \\rightarrow S @ \\\\ S \\rightarrow < S > \\\\ S \\rightarrow a \\\\ S \\rightarrow b \\\\ S \\rightarrow c \\end{array}\)<br><br>
-Let \(I_0 = \\text{CLOSURE}(\\{S' \\rightarrow \\bullet S\\})\). The number of items in the set \(\\text{GOTO(GOTO}(I_0 \\lt ), \\lt )\) is ___________</span>`,
+            text: `<span style="display: inline;">Consider the following augmented grammar with \\(\\{ \\#, @, <, >, a, b, c \\}\\) as the set of terminals.<br><br>
+\\(\\begin{array}{l} S' \\rightarrow S \\\\ S \\rightarrow S \\# cS \\\\ S \\rightarrow SS \\\\ S \\rightarrow S @ \\\\ S \\rightarrow < S > \\\\ S \\rightarrow a \\\\ S \\rightarrow b \\\\ S \\rightarrow c \\end{array}\\)<br><br>
+Let \\(I_0 = \\text{CLOSURE}(\\{S' \\rightarrow \\bullet S\\})\\). The number of items in the set \\(\\text{GOTO(GOTO}(I_0 \\lt ), \\lt )\\) is ___________</span>`,
             image: "",
             options: [
             ],
             answer: 8,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In \(I_0\), \(S\\rightarrow\\bullet\\lt S\\gt\) moves on \(\\lt\) to \(S\\rightarrow\\lt\\bullet S\\gt\), and its closure adds all 7 S-items with the dot at the start: 1 + 7 = 8 items.<br><br>
-Doing GOTO on \(\\lt\) again (from \(S\\rightarrow\\bullet\\lt S\\gt\) inside that set) gives the same set again: <b>8</b> items.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In \\(I_0\\), \\(S\\rightarrow\\bullet\\lt S\\gt\\) moves on \\(\\lt\\) to \\(S\\rightarrow\\lt\\bullet S\\gt\\), and its closure adds all 7 S-items with the dot at the start: 1 + 7 = 8 items.<br><br>
+Doing GOTO on \\(\\lt\\) again (from \\(S\\rightarrow\\bullet\\lt S\\gt\\) inside that set) gives the same set again: <b>8</b> items.<br><br>
 <b>Answer: 8</b><br><br><a href="https://gateoverflow.in/357486/gate-cse-2021-set-2-question-51#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59724,9 +59724,9 @@ g = e + f;<br><br>In a compiler, this code segment is represented internally as 
             answer: 6,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Common sub-expressions share nodes:<br>
 - leaves: b, c, 1 (3 nodes)<br>
-- b + c (shared by a and d) \(\\rightarrow\) 1 node<br>
-- (b + c) + 1 (shared by e and f) \(\\rightarrow\) 1 node<br>
-- e + f \(\\rightarrow\) 1 node<br><br>
+- b + c (shared by a and d) \\(\\rightarrow\\) 1 node<br>
+- (b + c) + 1 (shared by e and f) \\(\\rightarrow\\) 1 node<br>
+- e + f \\(\\rightarrow\\) 1 node<br><br>
 Total = 6<br><br>
 <b>Answer: 6</b><br><br><a href="https://gateoverflow.in/357401/gate-cse-2021-set-1-question-50#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -59737,7 +59737,7 @@ Total = 6<br><br>
             text: `<span style="display: inline;">Consider the following statements.<br><br>
 
 S1: Every SLR(1) grammar is unambiguous but there are certain unambiguous grammars that are not SLR(1).<br>
-S2: For any context-free grammar, there is a parser that takes at most \(O(n^3)\) time to parse a string of length n.<br><br>
+S2: For any context-free grammar, there is a parser that takes at most \\(O(n^3)\\) time to parse a string of length n.<br><br>
 Which one of the following options is correct?</span>`,
             image: "",
             options: [
@@ -59747,21 +59747,21 @@ Which one of the following options is correct?</span>`,
                 `<span style="display: inline;">S1 is false and S2 is false</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- S1: an SLR(1) table has no conflicts, so every SLR(1) grammar is unambiguous. Some unambiguous grammars (e.g. many LALR/LR(1) grammars) are not SLR(1) \(\\text{---}\) TRUE.<br>
-- S2: the CYK algorithm parses any CFG (in CNF) in \(O(n^3)\) \(\\text{---}\) TRUE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- S1: an SLR(1) table has no conflicts, so every SLR(1) grammar is unambiguous. Some unambiguous grammars (e.g. many LALR/LR(1) grammars) are not SLR(1) \\(\\text{---}\\) TRUE.<br>
+- S2: the CYK algorithm parses any CFG (in CNF) in \\(O(n^3)\\) \\(\\text{---}\\) TRUE.<br><br>
 <b>Answer: S1 is true and S2 is true</b><br><br><a href="https://gateoverflow.in/357447/gate-cse-2021-set-1-question-5#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A grammar is defined as<br>\(A \\rightarrow B C\)<br>\(B \\rightarrow x \\mid B x\)<br>\(C \\rightarrow B \\mid D\)<br>\(D \\rightarrow y \\mid Ey\)<br>\(E \\rightarrow z\)<br>The non terminal alphabet of the grammar is</span>`,
+            text: `<span style="display: inline;">A grammar is defined as<br>\\(A \\rightarrow B C\\)<br>\\(B \\rightarrow x \\mid B x\\)<br>\\(C \\rightarrow B \\mid D\\)<br>\\(D \\rightarrow y \\mid Ey\\)<br>\\(E \\rightarrow z\\)<br>The non terminal alphabet of the grammar is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\{A, B, C, D, E\\}\)</span>`,
-                `<span style="display: inline;">\(\\{B, C, D, E\\}\)</span>`,
-                `<span style="display: inline;">\(\\{A, B, C, D, E,x,y,z\\}\)</span>`,
-                `<span style="display: inline;">\(\\{x,y,z\\}\)</span>`,
+                `<span style="display: inline;">\\(\\{A, B, C, D, E\\}\\)</span>`,
+                `<span style="display: inline;">\\(\\{B, C, D, E\\}\\)</span>`,
+                `<span style="display: inline;">\\(\\{A, B, C, D, E,x,y,z\\}\\)</span>`,
+                `<span style="display: inline;">\\(\\{x,y,z\\}\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Non-terminals are the symbols that appear on the left side of productions: A, B, C, D, E. x, y, z are terminals.<br><br>
@@ -59796,7 +59796,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Given the grammar<br>\(s \\rightarrow T^{*} S \\mid T\)<br>\(T \\rightarrow U+T \\mid U\)<br>\(U \\rightarrow a \\mid b\)<br>Which of the following statements is wrong?</span>`,
+            text: `<span style="display: inline;">Given the grammar<br>\\(s \\rightarrow T^{*} S \\mid T\\)<br>\\(T \\rightarrow U+T \\mid U\\)<br>\\(U \\rightarrow a \\mid b\\)<br>Which of the following statements is wrong?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Grammar is not ambiguous</span>`,
@@ -59805,9 +59805,9 @@ registerTest({
                 `<span style="display: inline;">None of these</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- One production per level and right recursion \(\\rightarrow\) <b>not ambiguous</b>.<br>
-- + is generated lower in the tree (in T) than * (in S) \(\\rightarrow\) + has <b>higher priority</b>.<br>
-- Both rules are right recursive \(\\rightarrow\) <b>right-to-left</b> grouping.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- One production per level and right recursion \\(\\rightarrow\\) <b>not ambiguous</b>.<br>
+- + is generated lower in the tree (in T) than * (in S) \\(\\rightarrow\\) + has <b>higher priority</b>.<br>
+- Both rules are right recursive \\(\\rightarrow\\) <b>right-to-left</b> grouping.<br><br>
 All three statements are correct, so none of them is wrong.<br><br>
 <b>Answer: None of these</b><br><br><a href="https://gateoverflow.in/331360/isro2020-35" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -59815,33 +59815,33 @@ All three statements are correct, so none of them is wrong.<br><br>
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the following  grammar. <br><br>\(S\\rightarrow aSB|d\) <br> \(B\\rightarrow b\)<br><br> The number of reduction steps taken by a bottom-up parser while accepting the string \(aaadbbb\) is___________.</span>`,
+            text: `<span style="display: inline;">Consider the following  grammar. <br><br>\\(S\\rightarrow aSB|d\\) <br> \\(B\\rightarrow b\\)<br><br> The number of reduction steps taken by a bottom-up parser while accepting the string \\(aaadbbb\\) is___________.</span>`,
             image: "",
             options: [
             ],
             answer: 7,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Reductions while parsing aaadbbb bottom-up:<br>
-1. d \(\\rightarrow\) S<br>
-2. b \(\\rightarrow\) B, 3. aSB \(\\rightarrow\) S<br>
-4. b \(\\rightarrow\) B, 5. aSB \(\\rightarrow\) S<br>
-6. b \(\\rightarrow\) B, 7. aSB \(\\rightarrow\) S<br><br>
+1. d \\(\\rightarrow\\) S<br>
+2. b \\(\\rightarrow\\) B, 3. aSB \\(\\rightarrow\\) S<br>
+4. b \\(\\rightarrow\\) B, 5. aSB \\(\\rightarrow\\) S<br>
+6. b \\(\\rightarrow\\) B, 7. aSB \\(\\rightarrow\\) S<br><br>
 <b>Answer: 7</b><br><br><a href="https://gateoverflow.in/333207/gate2020-cs-24#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the augmented grammar given below: <br>\(S'\\rightarrow S\) <br>\(S \\rightarrow \\lt L \\gt |id\) <br>\(L \\rightarrow L,S|S\) <br><br>Let \(I_0=CLOSURE(\\{[S'\\rightarrow \\cdot S]\\}) \). The number of items in the set \(GOTO(I_0,\\lt)\) is __________. </span>`,
+            text: `<span style="display: inline;">Consider the augmented grammar given below: <br>\\(S'\\rightarrow S\\) <br>\\(S \\rightarrow \\lt L \\gt |id\\) <br>\\(L \\rightarrow L,S|S\\) <br><br>Let \\(I_0=CLOSURE(\\{[S'\\rightarrow \\cdot S]\\}) \\). The number of items in the set \\(GOTO(I_0,\\lt)\\) is __________. </span>`,
             image: "",
             options: [
             ],
             answer: 5,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In \(I_0\), the item \(S\\rightarrow\\cdot\\lt L\\gt\) moves on \(\\lt\) to \(S\\rightarrow\\lt\\cdot L\\gt\). Closure (dot before L, then before S):<br>
-1. \(S\\rightarrow\\lt\\cdot L\\gt\)<br>
-2. \(L\\rightarrow\\cdot L,S\)<br>
-3. \(L\\rightarrow\\cdot S\)<br>
-4. \(S\\rightarrow\\cdot\\lt L\\gt\)<br>
-5. \(S\\rightarrow\\cdot id\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In \\(I_0\\), the item \\(S\\rightarrow\\cdot\\lt L\\gt\\) moves on \\(\\lt\\) to \\(S\\rightarrow\\lt\\cdot L\\gt\\). Closure (dot before L, then before S):<br>
+1. \\(S\\rightarrow\\lt\\cdot L\\gt\\)<br>
+2. \\(L\\rightarrow\\cdot L,S\\)<br>
+3. \\(L\\rightarrow\\cdot S\\)<br>
+4. \\(S\\rightarrow\\cdot\\lt L\\gt\\)<br>
+5. \\(S\\rightarrow\\cdot id\\)<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/302805/gate2019-cs-43#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59858,9 +59858,9 @@ D -> d| &epsilon; </pre></code> Let a, b, d and $ be indexed as follows:   <br><
             options: [
             ],
             answer: 31,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A \(\\rightarrow\) BD, so B is followed by D: FOLLOW(B) gets FIRST(D) \(-\) {\(\\epsilon\)} = {d}.<br>
-D can be \(\\epsilon\), so FOLLOW(B) also gets FOLLOW(A) = {a} (from S \(\\rightarrow\) Aa).<br><br>
-FOLLOW(B) = {a, d}. Indices: a = 3, d = 1 \(\\rightarrow\) in descending order: 31.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A \\(\\rightarrow\\) BD, so B is followed by D: FOLLOW(B) gets FIRST(D) \\(-\\) {\\(\\epsilon\\)} = {d}.<br>
+D can be \\(\\epsilon\\), so FOLLOW(B) also gets FOLLOW(A) = {a} (from S \\(\\rightarrow\\) Aa).<br><br>
+FOLLOW(B) = {a, d}. Indices: a = 3, d = 1 \\(\\rightarrow\\) in descending order: 31.<br><br>
 <b>Answer: 31</b><br><br><a href="https://gateoverflow.in/302829/gate2019-cs-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59886,15 +59886,15 @@ FOLLOW(B) = {a, d}. Indices: a = 3, d = 1 \(\\rightarrow\) in descending order: 
             text: `<span style="display: inline;">C onsider the following parse tree for the expression a#b$c$d#e#f, involving two binary operators $ and #. <br> <img src="images/practicepaper_parsing/GATE_CS_2018_q38.jpg" /> <br>  Which one of the following is correct for the given parse tree?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\$\) has higher precedence and is left associative; # is right associative</span>`,
-                `<span style="display: inline;"># has higher precedence and is left associative; \(\\$\) is right associative</span>`,
-                `<span style="display: inline;">\(\\$\) has higher precedence and is left associative; # is left associative</span>`,
-                `<span style="display: inline;"># has higher precedence and is right associative; \(\\$\) is left associative</span>`,
+                `<span style="display: inline;">\\(\\$\\) has higher precedence and is left associative; # is right associative</span>`,
+                `<span style="display: inline;"># has higher precedence and is left associative; \\(\\$\\) is right associative</span>`,
+                `<span style="display: inline;">\\(\\$\\) has higher precedence and is left associative; # is left associative</span>`,
+                `<span style="display: inline;"># has higher precedence and is right associative; \\(\\$\\) is left associative</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- $ appears deeper in the tree than #, so it is applied first \(\\rightarrow\) <b>$ has higher precedence</b>.<br>
-- b $ c $ d is grouped as (b $ c) $ d \(\\rightarrow\) $ is <b>left associative</b>.<br>
-- a # (\(\\ldots\) # (e # f)) groups to the right \(\\rightarrow\) # is <b>right associative</b>.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- $ appears deeper in the tree than #, so it is applied first \\(\\rightarrow\\) <b>$ has higher precedence</b>.<br>
+- b $ c $ d is grouped as (b $ c) $ d \\(\\rightarrow\\) $ is <b>left associative</b>.<br>
+- a # (\\(\\ldots\\) # (e # f)) groups to the right \\(\\rightarrow\\) # is <b>right associative</b>.<br><br>
 <b>Answer: $ has higher precedence and is left associative; # is right associative</b><br><br><a href="https://gateoverflow.in/204112/gate2018-38#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59902,23 +59902,23 @@ FOLLOW(B) = {a, d}. Indices: a = 3, d = 1 \(\\rightarrow\) in descending order: 
             neg: 0,
             type: "NAT",
             text: `<span style="display: inline;">Consider the following grammar:<br><br>
-stmt\(\\rightarrow\) if expr then expr else expr; stmt| \(\\dot{O}\)<br>
-expr\(\\rightarrow\)term relop term|term<br>
-term\(\\rightarrow\) id|number <br>
-if\(\\rightarrow\)a|b|c <br>
-number\(\\rightarrow\) [0-9] <br><br>
-where <b>relop</b> is a relational operate (e.g \(\\lt ,\\gt\),...), \(\\dot{O}\) refers to the empty statement, and if
+stmt\\(\\rightarrow\\) if expr then expr else expr; stmt| \\(\\dot{O}\\)<br>
+expr\\(\\rightarrow\\)term relop term|term<br>
+term\\(\\rightarrow\\) id|number <br>
+if\\(\\rightarrow\\)a|b|c <br>
+number\\(\\rightarrow\\) [0-9] <br><br>
+where <b>relop</b> is a relational operate (e.g \\(\\lt ,\\gt\\),...), \\(\\dot{O}\\) refers to the empty statement, and if
 ,then, else are terminals. <br><br>
 Consider a program P following the above grammar containing ten if terminals. The number
 of control flows paths in P is ____________. For example the program <br><br>
-if \(e_1\) then \(e_2\) else \(e_3\)<br><br> 
-has 2 controls flow paths  \(e_{1} \\rightarrow e_{2}\) and  \(e_{1} \\rightarrow e_{3}\).</span>`,
+if \\(e_1\\) then \\(e_2\\) else \\(e_3\\)<br><br> 
+has 2 controls flow paths  \\(e_{1} \\rightarrow e_{2}\\) and  \\(e_{1} \\rightarrow e_{3}\\).</span>`,
             image: "",
             options: [
             ],
             answer: 1024,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A program is a sequence of if-then-else statements. Each one has 2 possible branches, and the choices are independent.<br><br>
-With 10 of them: \(2^{10}=1024\) control flow paths.<br><br>
+With 10 of them: \\(2^{10}=1024\\) control flow paths.<br><br>
 <b>Answer: 1024</b><br><br><a href="https://gateoverflow.in/118326/gate2017-1-43#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -59970,8 +59970,8 @@ Which of the grammars correctly generate the declaration mentioned above?</span>
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Derive int a[10][3]; with each grammar:<br>
-- <b>G1</b>: D \(\\rightarrow\) int L; \(\\rightarrow\) int id [ E ; \(\\rightarrow\) int id [ num ] [ E ; \(\\rightarrow\) int id [num] [num] ; True<br>
-- <b>G2</b>: D \(\\rightarrow\) int L; \(\\rightarrow\) int id E ; \(\\rightarrow\) int id E [num] ; \(\\rightarrow\) int id [num] [num] ; True<br><br>
+- <b>G1</b>: D \\(\\rightarrow\\) int L; \\(\\rightarrow\\) int id [ E ; \\(\\rightarrow\\) int id [ num ] [ E ; \\(\\rightarrow\\) int id [num] [num] ; True<br>
+- <b>G2</b>: D \\(\\rightarrow\\) int L; \\(\\rightarrow\\) int id E ; \\(\\rightarrow\\) int id E [num] ; \\(\\rightarrow\\) int id [num] [num] ; True<br><br>
 Both also give one or more dimensions in general.<br><br>
 <b>Answer: Both G1 and G2</b><br><br><a href="https://gateoverflow.in/39598/gate2016-2-46#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -59980,9 +59980,9 @@ Both also give one or more dimensions in general.<br><br>
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following Syntax Directed Translation Scheme(SDTS),with non-terminals {S, A} and terminals {a, b}. <br>
-S \(\\rightarrow\) aA {print 1} <br>
-S \(\\rightarrow\) a { print 2} <br>
-A \(\\rightarrow\) Sb { print 3} <br>
+S \\(\\rightarrow\\) aA {print 1} <br>
+S \\(\\rightarrow\\) a { print 2} <br>
+A \\(\\rightarrow\\) Sb { print 3} <br>
 Using the above SDTS, the output printed by a bottom-up parser, for the input aab is:</span>`,
             image: "",
             options: [
@@ -59993,9 +59993,9 @@ Using the above SDTS, the output printed by a bottom-up parser, for the input aa
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Parse aab bottom-up:<br>
-1. The second a is reduced by \(S\\rightarrow a\) \(\\rightarrow\) prints <b>2</b><br>
-2. S b is reduced by \(A\\rightarrow Sb\) \(\\rightarrow\) prints <b>3</b><br>
-3. a A is reduced by \(S\\rightarrow aA\) \(\\rightarrow\) prints <b>1</b><br><br>
+1. The second a is reduced by \\(S\\rightarrow a\\) \\(\\rightarrow\\) prints <b>2</b><br>
+2. S b is reduced by \\(A\\rightarrow Sb\\) \\(\\rightarrow\\) prints <b>3</b><br>
+3. a A is reduced by \\(S\\rightarrow aA\\) \\(\\rightarrow\\) prints <b>1</b><br><br>
 <b>Answer: 231</b><br><br><a href="https://gateoverflow.in/39700/gate2016-1-46#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60036,7 +60036,7 @@ Using the above SDTS, the output printed by a bottom-up parser, for the input aa
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Which grammar rules violate the requirement of the operator grammar? A, B, C are variables and a, b, c are terminals<br>1. \(A \\rightarrow B C\)<br>2. \(A \\rightarrow C c B b\)<br>3. \(A \\rightarrow  B a C\)<br>4. \(A \\rightarrow \\epsilon\)
+            text: `<span style="display: inline;">Which grammar rules violate the requirement of the operator grammar? A, B, C are variables and a, b, c are terminals<br>1. \\(A \\rightarrow B C\\)<br>2. \\(A \\rightarrow C c B b\\)<br>3. \\(A \\rightarrow  B a C\\)<br>4. \\(A \\rightarrow \\epsilon\\)
 </span>`,
             image: "",
             options: [
@@ -60046,28 +60046,28 @@ Using the above SDTS, the output printed by a bottom-up parser, for the input aa
                 `<span style="display: inline;">1 and 4</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An operator grammar has no \(\\epsilon\)-productions and no two adjacent non-terminals.<br><br>
-- 1: B C are adjacent \(\\rightarrow\) violates<br>
-- 4: \(\\epsilon\) \(\\rightarrow\) violates<br>
-- 2 and 3 have terminals between non-terminals \(\\rightarrow\) fine<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An operator grammar has no \\(\\epsilon\\)-productions and no two adjacent non-terminals.<br><br>
+- 1: B C are adjacent \\(\\rightarrow\\) violates<br>
+- 4: \\(\\epsilon\\) \\(\\rightarrow\\) violates<br>
+- 2 and 3 have terminals between non-terminals \\(\\rightarrow\\) fine<br><br>
 <b>Answer: 1 and 4</b><br><br><a href="https://gateoverflow.in/51202/isro2015-26" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Given the following expression grammar:<br>\(E \\rightarrow E * F|F+E| F\)<br>\(F \\rightarrow F-F \\mid i d\)<br>Which of the following is true?</span>`,
+            text: `<span style="display: inline;">Given the following expression grammar:<br>\\(E \\rightarrow E * F|F+E| F\\)<br>\\(F \\rightarrow F-F \\mid i d\\)<br>Which of the following is true?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">* has higher precedence than +</span>`,
-                `<span style="display: inline;">\(-\) has higher precedence than *</span>`,
-                `<span style="display: inline;">+ and \(-\) have same precedence</span>`,
-                `<span style="display: inline;">+ has higher precedence than \(-\)</span>`,
+                `<span style="display: inline;">\\(-\\) has higher precedence than *</span>`,
+                `<span style="display: inline;">+ and \\(-\\) have same precedence</span>`,
+                `<span style="display: inline;">+ has higher precedence than \\(-\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Operators lower in the grammar bind tighter. "\(-\)" is produced by F (the lowest level), while * and + are produced by E.<br><br>
-So \(-\) has higher precedence than * (and +).<br><br>
-<b>Answer: \(-\) has higher precedence than *</b><br><br><a href="https://gateoverflow.in/668/gate2000-2-21-isro2015-24" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Operators lower in the grammar bind tighter. "\\(-\\)" is produced by F (the lowest level), while * and + are produced by E.<br><br>
+So \\(-\\) has higher precedence than * (and +).<br><br>
+<b>Answer: \\(-\\) has higher precedence than *</b><br><br><a href="https://gateoverflow.in/668/gate2000-2-21-isro2015-24" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
     ]
 });
@@ -60083,9 +60083,9 @@ registerTest({
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following grammar<br> 
-S \( \\rightarrow\) F|H <br>
-F \( \\rightarrow\)  p|c <br>
-H \( \\rightarrow\)  d|c <br>
+S \\( \\rightarrow\\) F|H <br>
+F \\( \\rightarrow\\)  p|c <br>
+H \\( \\rightarrow\\)  d|c <br>
 where S,F, and H are non-terminal symbols, p,d, and c are terminal symbols. Which of the following statement(s) is/are correct? <br>
 S1. LL(1) can parse all strings that are generated using grammar G <br>
 S2. LR(1) can parse all strings that are generated using grammar G</span>`,
@@ -60097,7 +60097,7 @@ S2. LR(1) can parse all strings that are generated using grammar G</span>`,
                 `<span style="display: inline;">Neither S1 nor S2</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The string "c" has two derivations: \(S\\Rightarrow F\\Rightarrow c\) and \(S\\Rightarrow H\\Rightarrow c\). So the grammar is ambiguous.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The string "c" has two derivations: \\(S\\Rightarrow F\\Rightarrow c\\) and \\(S\\Rightarrow H\\Rightarrow c\\). So the grammar is ambiguous.<br><br>
 No ambiguous grammar is LL(1) or LR(1).<br><br>
 <b>Answer: Neither S1 nor S2</b><br><br><a href="https://gateoverflow.in/8488/gate2015-3-55#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -60137,7 +60137,7 @@ No ambiguous grammar is LL(1) or LR(1).<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following grammar.<br>\(\\mathrm{S} \\rightarrow \\mathrm{AB}\)<br>\(\\mathrm{A} \\rightarrow \\mathrm{a}\)<br>\(\\mathrm{A} \\rightarrow \\mathrm{BaB}\)<br>\(\\mathrm{B} \\rightarrow \\mathrm{bbA}\)<br>Which of the following statements is FALSE?</span>`,
+            text: `<span style="display: inline;">Consider the following grammar.<br>\\(\\mathrm{S} \\rightarrow \\mathrm{AB}\\)<br>\\(\\mathrm{A} \\rightarrow \\mathrm{a}\\)<br>\\(\\mathrm{A} \\rightarrow \\mathrm{BaB}\\)<br>\\(\\mathrm{B} \\rightarrow \\mathrm{bbA}\\)<br>Which of the following statements is FALSE?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">The length of every string produced by this grammar is even</span>`,
@@ -60146,9 +60146,9 @@ No ambiguous grammar is LL(1) or LR(1).<br><br>
                 `<span style="display: inline;">No string produced by this grammar has four consecutive b's</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- |A| = 1 or 2|B| + 1 \(\\rightarrow\) always odd; |B| = 2 + |A| \(\\rightarrow\) odd; |S| = odd + odd = even. So 1 and 3 are true.<br>
-- a's only come from A, separated by B's that contain b's \(\\rightarrow\) no "aaa". True.<br>
-- But \(B\\Rightarrow bbA\\Rightarrow bbBaB\\Rightarrow bb\\,bbA\\,aB\) gives "bbbb". So statement 4 is FALSE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- |A| = 1 or 2|B| + 1 \\(\\rightarrow\\) always odd; |B| = 2 + |A| \\(\\rightarrow\\) odd; |S| = odd + odd = even. So 1 and 3 are true.<br>
+- a's only come from A, separated by B's that contain b's \\(\\rightarrow\\) no "aaa". True.<br>
+- But \\(B\\Rightarrow bbA\\Rightarrow bbBaB\\Rightarrow bb\\,bbA\\,aB\\) gives "bbbb". So statement 4 is FALSE.<br><br>
 <b>Answer: No string produced by this grammar has four consecutive b's</b><br><br><a href="https://gateoverflow.in/54994/isro2014-52" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2014</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60156,7 +60156,7 @@ No ambiguous grammar is LL(1) or LR(1).<br><br>
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">What is the number of steps required to derive the string ((() ()) ()) for the following grammar?
-<br>\(S \\rightarrow S S\)<br>\(S \\rightarrow(S)\)<br>\(S \\rightarrow \\varepsilon\)</span>`,
+<br>\\(S \\rightarrow S S\\)<br>\\(S \\rightarrow(S)\\)<br>\\(S \\rightarrow \\varepsilon\\)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">10</span>`,
@@ -60166,9 +60166,9 @@ No ambiguous grammar is LL(1) or LR(1).<br><br>
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  String ((()())()) has 5 pairs of brackets.<br><br>
-- \(S\\rightarrow(S)\): once per pair = 5<br>
-- \(S\\rightarrow SS\): (()())() inside the outer pair, and ()() inside the first part = 2<br>
-- \(S\\rightarrow\\varepsilon\): inside the three innermost () = 3<br><br>
+- \\(S\\rightarrow(S)\\): once per pair = 5<br>
+- \\(S\\rightarrow SS\\): (()())() inside the outer pair, and ()() inside the first part = 2<br>
+- \\(S\\rightarrow\\varepsilon\\): inside the three innermost () = 3<br><br>
 Total = 5 + 2 + 3 = 10<br><br>
 <b>Answer: 10</b><br><br><a href="https://gateoverflow.in/17222/isro2014-5" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2014</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -60177,22 +60177,22 @@ Total = 5 + 2 + 3 = 10<br><br>
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the grammar defined by the following production rules, with two operators * and + <br>
-S \(\\rightarrow\)T *P <br>
-T \(\\rightarrow\)U| T*U <br>
-P \(\\rightarrow\) Q +P |Q <br>
-Q \(\\rightarrow\) Id <br>
-U \(\\rightarrow\) Id <br>
+S \\(\\rightarrow\\)T *P <br>
+T \\(\\rightarrow\\)U| T*U <br>
+P \\(\\rightarrow\\) Q +P |Q <br>
+Q \\(\\rightarrow\\) Id <br>
+U \\(\\rightarrow\\) Id <br>
 Which one of the following is TRUE?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(+\) is left associative, while * is right associative</span>`,
-                `<span style="display: inline;">\(+\) is right associative, while * is left associative</span>`,
+                `<span style="display: inline;">\\(+\\) is left associative, while * is right associative</span>`,
+                `<span style="display: inline;">\\(+\\) is right associative, while * is left associative</span>`,
                 `<span style="display: inline;">Both + and * are right associative</span>`,
                 `<span style="display: inline;">Both + and * are left associative</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- \(T\\rightarrow T*U\) is left recursive \(\\rightarrow\) * is left associative.<br>
-- \(P\\rightarrow Q+P\) is right recursive \(\\rightarrow\) + is right associative.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- \\(T\\rightarrow T*U\\) is left recursive \\(\\rightarrow\\) * is left associative.<br>
+- \\(P\\rightarrow Q+P\\) is right recursive \\(\\rightarrow\\) + is right associative.<br><br>
 <b>Answer: + is right associative, while * is left associative</b><br><br><a href="https://gateoverflow.in/1973/gate2014-2-17#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60200,9 +60200,9 @@ Which one of the following is TRUE?</span>`,
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">A canonical set of items is given below <br>
-S\(\\rightarrow L.  \\gt R\) <br>
-Q\(\\rightarrow\)R. <br>
-On input symbol \(\\lt \) the set has</span>`,
+S\\(\\rightarrow L.  \\gt R\\) <br>
+Q\\(\\rightarrow\\)R. <br>
+On input symbol \\(\\lt \\) the set has</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">a shift-reduce conflict and a reduce-reduce conflict.</span>`,
@@ -60211,7 +60211,7 @@ On input symbol \(\\lt \) the set has</span>`,
                 `<span style="display: inline;">neither a shift-reduce nor a reduce-reduce conflict</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The item S \(\\rightarrow\) L. \(\\gt\) R shifts only on "\(\\gt\)", so there is no shift on "\(\\lt\)". The set has just one complete item (Q \(\\rightarrow\) R.), so there cannot be two reductions. No conflict on "\(\\lt\)".<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The item S \\(\\rightarrow\\) L. \\(\\gt\\) R shifts only on "\\(\\gt\\)", so there is no shift on "\\(\\lt\\)". The set has just one complete item (Q \\(\\rightarrow\\) R.), so there cannot be two reductions. No conflict on "\\(\\lt\\)".<br><br>
 <b>Answer: neither a shift-reduce nor a reduce-reduce conflict</b><br><br><a href="https://gateoverflow.in/1807/gate2014-1-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60219,15 +60219,15 @@ On input symbol \(\\lt \) the set has</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Which of the following productions eliminate left recursion in the productions given below:<br>
-\(S \\rightarrow Aa \\mid b\)<br>
-\(A \\rightarrow Ac \\mid Sd \\mid \\epsilon\)
+\\(S \\rightarrow Aa \\mid b\\)<br>
+\\(A \\rightarrow Ac \\mid Sd \\mid \\epsilon\\)
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow bdA', \\;\\; A' \\rightarrow A'c \\mid A'ba \\mid A \\mid \\epsilon\)</span>`,
-                `<span style="display: inline;">\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow A' \\mid bdA', \\;\\; A' \\rightarrow cA' \\mid adA' \\mid \\epsilon\)</span>`,
-                `<span style="display: inline;">\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow A'c \\mid A'd ,\\;\\;  A' \\rightarrow bdA' \\mid cA \\mid \\epsilon\)</span>`,
-                `<span style="display: inline;">\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow cA' \\mid adA' \\mid bdA',\\;\\;  A' \\rightarrow A \\mid \\epsilon\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow bdA', \\;\\; A' \\rightarrow A'c \\mid A'ba \\mid A \\mid \\epsilon\\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow A' \\mid bdA', \\;\\; A' \\rightarrow cA' \\mid adA' \\mid \\epsilon\\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow A'c \\mid A'd ,\\;\\;  A' \\rightarrow bdA' \\mid cA \\mid \\epsilon\\)</span>`,
+                `<span style="display: inline;">\\(S \\rightarrow Aa \\mid b, \\;\\; A \\rightarrow cA' \\mid adA' \\mid bdA',\\;\\;  A' \\rightarrow A \\mid \\epsilon\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/43760/isro-2013-6" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -60254,11 +60254,11 @@ On input symbol \(\\lt \) the set has</span>`,
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following two sets of LR(1) items of an LR(1) grammar.
-<br><br>\(\\begin{array}{l|l}
+<br><br>\\(\\begin{array}{l|l}
 X \\rightarrow c.X, c∕d &X → c.X, \\$\\\\
 X \\rightarrow .cX, c∕  d& X → .cX, \\$\\\\
 X \\rightarrow .d, c∕ d & X → .d, \\$
-\\end{array}\)  <br><br>
+\\end{array}\\)  <br><br>
 Which of the following statements related to merging of the two sets in the corresponding LALR parser is/are FALSE? <br>
 1. Cannot be merged since look aheads are different. <br>
 2. Can be merged but will result in S-R conflict. <br>
@@ -60281,47 +60281,47 @@ So all four statements are false.<br><br>
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">What is the maximum number of reduce moves that can be taken by a bottom-up parser for a
-grammar with no epsilon- and unit-production (i.e., of type \(A\\rightarrow \\epsilon\) and \(A \\rightarrow a \)) to parse a string
+grammar with no epsilon- and unit-production (i.e., of type \\(A\\rightarrow \\epsilon\\) and \\(A \\rightarrow a \\)) to parse a string
 with n tokens?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">n/2</span>`,
                 `<span style="display: inline;">n-1</span>`,
                 `<span style="display: inline;">2n-1</span>`,
-                `<span style="display: inline;">\(2^{n}\)</span>`,
+                `<span style="display: inline;">\\(2^{n}\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With no \(\\epsilon\) or unit productions, every reduction replaces at least 2 symbols by 1, so each reduce lowers the number of symbols on the stack by at least 1.<br><br>
-From n tokens down to the single start symbol: at most n \(-\) 1 reductions.<br><br>
-<b>Answer: n \(-\) 1</b><br><br><a href="https://gateoverflow.in/1418/gate2013-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With no \\(\\epsilon\\) or unit productions, every reduction replaces at least 2 symbols by 1, so each reduce lowers the number of symbols on the stack by at least 1.<br><br>
+From n tokens down to the single start symbol: at most n \\(-\\) 1 reductions.<br><br>
+<b>Answer: n \\(-\\) 1</b><br><br><a href="https://gateoverflow.in/1418/gate2013-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">For the grammar below, a partial LL(1) parsing table is also presented along with the grammar. Entries that
-need to be filled are indicated as E1, E2, and E3. \(\\varepsilon\) is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.<br>\(S\\rightarrow aAbB|bAaB|\\varepsilon\)<br>  \(A\\rightarrow S\) <br>\(B\\rightarrow S\)  <br><img src="images/practicepaper_parsing/GATE_CS_20121_q52.jpg"/> <br>The appropriate entries for E1, E2, and E3 are</span>`,
+need to be filled are indicated as E1, E2, and E3. \\(\\varepsilon\\) is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.<br>\\(S\\rightarrow aAbB|bAaB|\\varepsilon\\)<br>  \\(A\\rightarrow S\\) <br>\\(B\\rightarrow S\\)  <br><img src="images/practicepaper_parsing/GATE_CS_20121_q52.jpg"/> <br>The appropriate entries for E1, E2, and E3 are</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">E1: S\(\\rightarrow\)aAbB, A\(\\rightarrow\)S <br>
-E2: S\(\\rightarrow\)bAaB, B\(\\rightarrow\)S <br> 
-E3: B\(\\rightarrow\)S</span>`,
-                `<span style="display: inline;">E1: S\(\\rightarrow\) aAbB, S \(\\rightarrow \\varepsilon  \)  <br>
-E2: S\(\\rightarrow\) bAaB, S \(\\rightarrow \\varepsilon \)  <br>
-E3: B\(\\rightarrow \\varepsilon\)S</span>`,
-                `<span style="display: inline;">E1: S \(\\rightarrow\) aAbB, S \(\\rightarrow \\varepsilon\)<br> 
+                `<span style="display: inline;">E1: S\\(\\rightarrow\\)aAbB, A\\(\\rightarrow\\)S <br>
+E2: S\\(\\rightarrow\\)bAaB, B\\(\\rightarrow\\)S <br> 
+E3: B\\(\\rightarrow\\)S</span>`,
+                `<span style="display: inline;">E1: S\\(\\rightarrow\\) aAbB, S \\(\\rightarrow \\varepsilon  \\)  <br>
+E2: S\\(\\rightarrow\\) bAaB, S \\(\\rightarrow \\varepsilon \\)  <br>
+E3: B\\(\\rightarrow \\varepsilon\\)S</span>`,
+                `<span style="display: inline;">E1: S \\(\\rightarrow\\) aAbB, S \\(\\rightarrow \\varepsilon\\)<br> 
 
-E2: S \(\\rightarrow\) bAaB, S \(\\rightarrow \\varepsilon\) <br>
+E2: S \\(\\rightarrow\\) bAaB, S \\(\\rightarrow \\varepsilon\\) <br>
 
-E3: B \(\\rightarrow\) S</span>`,
-                `<span style="display: inline;">E1: A\(\\rightarrow\)S, S \(\\rightarrow \\varepsilon\)  <br>
-E2: B\(\\rightarrow\)S, S \(\\rightarrow \\varepsilon\)  <br>
-E3: B\(\\rightarrow\)S</span>`,
+E3: B \\(\\rightarrow\\) S</span>`,
+                `<span style="display: inline;">E1: A\\(\\rightarrow\\)S, S \\(\\rightarrow \\varepsilon\\)  <br>
+E2: B\\(\\rightarrow\\)S, S \\(\\rightarrow \\varepsilon\\)  <br>
+E3: B\\(\\rightarrow\\)S</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- E1 = M[S, a]: S \(\\rightarrow\) aAbB (FIRST), and S \(\\rightarrow\\varepsilon\) since a \(\\in\) FOLLOW(S)<br>
-- E2 = M[S, b]: S \(\\rightarrow\) bAaB, and S \(\\rightarrow\\varepsilon\) since b \(\\in\) FOLLOW(S)<br>
-- E3 = M[B, $]: B \(\\rightarrow\) S, since S can be \(\\varepsilon\) and $ \(\\in\) FOLLOW(B)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- E1 = M[S, a]: S \\(\\rightarrow\\) aAbB (FIRST), and S \\(\\rightarrow\\varepsilon\\) since a \\(\\in\\) FOLLOW(S)<br>
+- E2 = M[S, b]: S \\(\\rightarrow\\) bAaB, and S \\(\\rightarrow\\varepsilon\\) since b \\(\\in\\) FOLLOW(S)<br>
+- E3 = M[B, $]: B \\(\\rightarrow\\) S, since S can be \\(\\varepsilon\\) and $ \\(\\in\\) FOLLOW(B)<br><br>
 <b>Answer: Option 3</b><br><br><a href="https://gateoverflow.in/43312/gate2012-53#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60329,27 +60329,27 @@ E3: B\(\\rightarrow\)S</span>`,
             neg: 0.66,
             type: "MCQ",
             text: `<span style="display: inline;">For the grammar below, a partial LL(1) parsing table is also presented along with the grammar. Entries that
-need to be filled are indicated as E1, E2, and E3. \(\\varepsilon\) is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.<br>\(S\\rightarrow aAbB|bAaB|\\varepsilon\)<br>  \(A\\rightarrow S\) <br>\(B\\rightarrow S\)  <br><img src="images/practicepaper_parsing/GATE_CS_20121_q52.jpg"/> <br>The FIRST and FOLLOW sets for the non-terminals A and B are</span>`,
+need to be filled are indicated as E1, E2, and E3. \\(\\varepsilon\\) is the empty string, $ indicates end of input, and, | separates alternate right hand sides of productions.<br>\\(S\\rightarrow aAbB|bAaB|\\varepsilon\\)<br>  \\(A\\rightarrow S\\) <br>\\(B\\rightarrow S\\)  <br><img src="images/practicepaper_parsing/GATE_CS_20121_q52.jpg"/> <br>The FIRST and FOLLOW sets for the non-terminals A and B are</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">FIRST(A) = {a, b, \(\\varepsilon\)} = FIRST(B)<br>
+                `<span style="display: inline;">FIRST(A) = {a, b, \\(\\varepsilon\\)} = FIRST(B)<br>
 FOLLOW(A) = {a, b}<br>
 FOLLOW(B) = {a, b, $}</span>`,
                 `<span style="display: inline;">FIRST(A) = {a, b, $}<br>
-FIRST(B) = {a, b, \(\\varepsilon\)}<br>
+FIRST(B) = {a, b, \\(\\varepsilon\\)}<br>
 FOLLOW(A) = {a, b}<br>
 FOLLOW(B) = {$}</span>`,
-                `<span style="display: inline;">FIRST(A) = {a, b, \(\\varepsilon\)} = FIRST(B)<br>
+                `<span style="display: inline;">FIRST(A) = {a, b, \\(\\varepsilon\\)} = FIRST(B)<br>
 FOLLOW(A) = {a, b} <br>
-FOLLOW(B) = \(\\phi\)</span>`,
+FOLLOW(B) = \\(\\phi\\)</span>`,
                 `<span style="display: inline;">FIRST(A) = {a, b} = FIRST(B) <br>
 FOLLOW(A) = {a, b} <br>
 FOLLOW(B) = {a, b}</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Work out the sets:<br>- FIRST(S) = {a, b, \(\\varepsilon\)}, and A \(\\rightarrow\) S, B \(\\rightarrow\) S, so FIRST(A) = FIRST(B) = {a, b, \(\\varepsilon\)}<br>
-- In aAbB and bAaB, A is followed by b or a \(\\rightarrow\) FOLLOW(A) = {a, b}<br>
-- B is at the end, so FOLLOW(B) = FOLLOW(S) = {$} \(\\cup\) FOLLOW(A) \(\\cup\) FOLLOW(B) = {a, b, $}<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Work out the sets:<br>- FIRST(S) = {a, b, \\(\\varepsilon\\)}, and A \\(\\rightarrow\\) S, B \\(\\rightarrow\\) S, so FIRST(A) = FIRST(B) = {a, b, \\(\\varepsilon\\)}<br>
+- In aAbB and bAaB, A is followed by b or a \\(\\rightarrow\\) FOLLOW(A) = {a, b}<br>
+- B is at the end, so FOLLOW(B) = FOLLOW(S) = {$} \\(\\cup\\) FOLLOW(A) \\(\\cup\\) FOLLOW(B) = {a, b, $}<br><br>
 <b>Answer: Option 1</b><br><br><a href="https://gateoverflow.in/2181/gate2012-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -60357,8 +60357,8 @@ FOLLOW(B) = {a, b}</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Which of the following sentences can be generated by <br>
-\(S -> aS \\mid bA\)<br>
-\(A -> d \\mid cA\)
+\\(S -> aS \\mid bA\\)<br>
+\\(A -> d \\mid cA\\)
 
 </span>`,
             image: "",
@@ -60369,7 +60369,7 @@ FOLLOW(B) = {a, b}</span>`,
                 `<span style="display: inline;">abcd</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \(S\\Rightarrow aS\\Rightarrow abA\\Rightarrow abcA\\Rightarrow abcd\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \\(S\\Rightarrow aS\\Rightarrow abA\\Rightarrow abcA\\Rightarrow abcd\\)<br><br>
 The language is a*bc*d, so only "abcd" matches.<br><br>
 <b>Answer: abcd</b><br><br><a href="https://gateoverflow.in/52864/isro2011-68" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -60406,11 +60406,11 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider two binary operators  '\(\\uparrow\)
-'and '\(\\downarrow\)' with the precedence of operator \(\\downarrow\)
-being lower than that of the operator \(\\uparrow\) . Operator \(\\uparrow\) is right associative while
-operator \(\\downarrow\) is left associative. Which one of the following represents the parse
-tree for expression (7 \(\\downarrow\) 3 \(\\uparrow\)4 \(\\uparrow\) 3 \(\\downarrow\)2)? <br><img src="images/practicepaper_parsing/GATE_CS_20111_q37.jpg"/></span>`,
+            text: `<span style="display: inline;">Consider two binary operators  '\\(\\uparrow\\)
+'and '\\(\\downarrow\\)' with the precedence of operator \\(\\downarrow\\)
+being lower than that of the operator \\(\\uparrow\\) . Operator \\(\\uparrow\\) is right associative while
+operator \\(\\downarrow\\) is left associative. Which one of the following represents the parse
+tree for expression (7 \\(\\downarrow\\) 3 \\(\\uparrow\\)4 \\(\\uparrow\\) 3 \\(\\downarrow\\)2)? <br><img src="images/practicepaper_parsing/GATE_CS_20111_q37.jpg"/></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">A</span>`,
@@ -60419,16 +60419,16 @@ tree for expression (7 \(\\downarrow\) 3 \(\\uparrow\)4 \(\\uparrow\) 3 \(\\down
                 `<span style="display: inline;">D</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \(\\uparrow\) binds tighter and is right associative: \(3\\uparrow4\\uparrow3=3\\uparrow(4\\uparrow3)\).<br><br>
-\(\\downarrow\) is left associative: \((7\\downarrow X)\\downarrow2\).<br><br>
-Tree: root \(\\downarrow\) with right child 2 and left child \(7\\downarrow(3\\uparrow(4\\uparrow3))\), which is figure B.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \\(\\uparrow\\) binds tighter and is right associative: \\(3\\uparrow4\\uparrow3=3\\uparrow(4\\uparrow3)\\).<br><br>
+\\(\\downarrow\\) is left associative: \\((7\\downarrow X)\\downarrow2\\).<br><br>
+Tree: root \\(\\downarrow\\) with right child 2 and left child \\(7\\downarrow(3\\uparrow(4\\uparrow3))\\), which is figure B.<br><br>
 <b>Answer: B</b><br><br><a href="https://gateoverflow.in/2129/gate2011-27#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">The grammar S\(\\rightarrow\)aSa|bS|c is</span>`,
+            text: `<span style="display: inline;">The grammar S\\(\\rightarrow\\)aSa|bS|c is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">LL(1) but not LR(1)</span>`,
@@ -60437,7 +60437,7 @@ Tree: root \(\\downarrow\) with right child 2 and left child \(7\\downarrow(3\\u
                 `<span style="display: inline;">Neither LL(1) nor LR(1)</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The three alternatives start with different terminals a, b, c, so FIRST sets are disjoint \(\\rightarrow\) LL(1).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The three alternatives start with different terminals a, b, c, so FIRST sets are disjoint \\(\\rightarrow\\) LL(1).<br><br>
 Every LL(1) grammar is also LR(1).<br><br>
 <b>Answer: Both LL(1) and LR(1)</b><br><br><a href="https://gateoverflow.in/2339/gate2010-38#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -60449,7 +60449,7 @@ Every LL(1) grammar is also LR(1).<br><br>
 
 I There exist parsing algorithms for some programming languages whose
 
-complexities are less than \(\\theta (n^{3})\). <br>
+complexities are less than \\(\\theta (n^{3})\\). <br>
 
 II A programming language which allows recursion can be implemented with static storage allocation. <br>
 
@@ -60471,11 +60471,11 @@ IV Code improving transformations can be performed at both source language and i
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the grammar<br>
-\(S \\rightarrow ABCc \\mid bc\)<br>
-\(BA \\rightarrow AB\)<br>
-\(Bb \\rightarrow bb\)<br>
-\(Ab \\rightarrow ab\)<br>
-\(Aa \\rightarrow aa\)<br>
+\\(S \\rightarrow ABCc \\mid bc\\)<br>
+\\(BA \\rightarrow AB\\)<br>
+\\(Bb \\rightarrow bb\\)<br>
+\\(Ab \\rightarrow ab\\)<br>
+\\(Aa \\rightarrow aa\\)<br>
 Which of the following sentences can be derived by this grammar?
 
 </span>`,
@@ -60541,13 +60541,13 @@ position in the sentential form where the next shift or reduce operation will oc
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following grammars. Names representing terminals have been specified in capital letters.<br>\(\\begin{array}{llll}\\hline \\text{$G1$ :} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{WHILE (expr) stmnt} \\\\ \\text{} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{OTHER} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{ID} \\\\\\hline \\text{ $G2$ :} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{WHILE (expr) stmnt} \\\\ \\text{} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{OTHER} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{expr $+$ expr} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{expr $*$ expr} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{ID} \\\\\\hline \\end{array}\)<br>Which one of the following statements is true?</span>`,
+            text: `<span style="display: inline;">Consider the following grammars. Names representing terminals have been specified in capital letters.<br>\\(\\begin{array}{llll}\\hline \\text{$G1$ :} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{WHILE (expr) stmnt} \\\\ \\text{} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{OTHER} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{ID} \\\\\\hline \\text{ $G2$ :} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{WHILE (expr) stmnt} \\\\ \\text{} & \\text{stmnt} & \\text{$\\rightarrow$} & \\text{OTHER} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{expr $+$ expr} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{expr $*$ expr} \\\\ \\text{} & \\text{expr} & \\text{$\\rightarrow$} & \\text{ID} \\\\\\hline \\end{array}\\)<br>Which one of the following statements is true?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(G_1\) is context-free but not regular and \(G_2\) is regular</span>`,
-                `<span style="display: inline;">\(G_2\) is context-free but not regular and \(G_1\) is regular</span>`,
-                `<span style="display: inline;">Both \(G_1\) and \(G_2\) are regular</span>`,
-                `<span style="display: inline;">Both \(G_1\) and \(G_2\) are context-free but neither of them is regular</span>`,
+                `<span style="display: inline;">\\(G_1\\) is context-free but not regular and \\(G_2\\) is regular</span>`,
+                `<span style="display: inline;">\\(G_2\\) is context-free but not regular and \\(G_1\\) is regular</span>`,
+                `<span style="display: inline;">Both \\(G_1\\) and \\(G_2\\) are regular</span>`,
+                `<span style="display: inline;">Both \\(G_1\\) and \\(G_2\\) are context-free but neither of them is regular</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3491/gate2007-it-49" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2007" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2007</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -60560,11 +60560,11 @@ position in the sentential form where the next shift or reduce operation will oc
 
 
 
-\(S \\rightarrow x \\ B \\mid y \\ A\)<br>
+\\(S \\rightarrow x \\ B \\mid y \\ A\\)<br>
 
-\(A \\rightarrow x \\mid x \\ S \\mid y \\ A \\ A\)<br>
+\\(A \\rightarrow x \\mid x \\ S \\mid y \\ A \\ A\\)<br>
 
-\(B \\rightarrow y \\mid y \\ S \\mid x \\ B \\ B\)<br><br>
+\\(B \\rightarrow y \\mid y \\ S \\mid x \\ B \\ B\\)<br><br>
 
 Consider the following strings.<br>
 
@@ -60600,8 +60600,8 @@ Which of the above strings are generated by the grammar ?</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(L (D) \\subset L (G)\)</span>`,
-                `<span style="display: inline;">\(L (D) \\supset L (G)\)</span>`,
+                `<span style="display: inline;">\\(L (D) \\subset L (G)\\)</span>`,
+                `<span style="display: inline;">\\(L (D) \\supset L (G)\\)</span>`,
                 `<span style="display: inline;">L (D) = L (G)</span>`,
                 `<span style="display: inline;">L (D) is empty</span>`,
             ],
@@ -60613,10 +60613,10 @@ Which of the above strings are generated by the grammar ?</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the CFG with {S, A,B} as the non-terminal alphabet, {a,b} as the terminal
-alphabet, S as the start symbol and the following set of production rules:  <br> S\(\\rightarrow\) aB S\(\\rightarrow\)bA <br>
-B\(\\rightarrow\) b A \(\\rightarrow\)a <br>
-B\(\\rightarrow\) bS A \(\\rightarrow\)aS <br>
-B\(\\rightarrow\) aBB S \(\\rightarrow\)bAA    <br> <br>  For the string "aabbab", how many derivation trees are there?</span>`,
+alphabet, S as the start symbol and the following set of production rules:  <br> S\\(\\rightarrow\\) aB S\\(\\rightarrow\\)bA <br>
+B\\(\\rightarrow\\) b A \\(\\rightarrow\\)a <br>
+B\\(\\rightarrow\\) bS A \\(\\rightarrow\\)aS <br>
+B\\(\\rightarrow\\) aBB S \\(\\rightarrow\\)bAA    <br> <br>  For the string "aabbab", how many derivation trees are there?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">1</span>`,
@@ -60632,10 +60632,10 @@ B\(\\rightarrow\) aBB S \(\\rightarrow\)bAA    <br> <br>  For the string "aabbab
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the CFG with {S, A,B} as the non-terminal alphabet, {a,b} as the terminal
-alphabet, S as the start symbol and the following set of production rules:  <br> S\(\\rightarrow\) aB S\(\\rightarrow\)bA <br>
-B\(\\rightarrow\) b A \(\\rightarrow\)a <br>
-B\(\\rightarrow\) bS A \(\\rightarrow\)aS <br>
-B\(\\rightarrow\) aBB S \(\\rightarrow\)bAA    <br> <br>    Which of the following strings is generated by the grammar?</span>`,
+alphabet, S as the start symbol and the following set of production rules:  <br> S\\(\\rightarrow\\) aB S\\(\\rightarrow\\)bA <br>
+B\\(\\rightarrow\\) b A \\(\\rightarrow\\)a <br>
+B\\(\\rightarrow\\) bS A \\(\\rightarrow\\)aS <br>
+B\\(\\rightarrow\\) aBB S \\(\\rightarrow\\)bAA    <br> <br>    Which of the following strings is generated by the grammar?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">aaaabb</span>`,
@@ -60650,11 +60650,11 @@ B\(\\rightarrow\) aBB S \(\\rightarrow\)bAA    <br> <br>    Which of the followi
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the grammar with non-terminals N={\(S,C,S_1\)}, terminals
+            text: `<span style="display: inline;">Consider the grammar with non-terminals N={\\(S,C,S_1\\)}, terminals
 
 T={a,b,i,t,e}, with S as the start symbol, and the following set of rules: <br><br>
 
-\(S\\rightarrow iCtSS_{1}|a \) <br> \(S_{1}\\rightarrow eS|\\epsilon  \)<br> \(C \\rightarrow b\)<br><br>
+\\(S\\rightarrow iCtSS_{1}|a \\) <br> \\(S_{1}\\rightarrow eS|\\epsilon  \\)<br> \\(C \\rightarrow b\\)<br><br>
 
 The grammar is NOT LL(1) because:</span>`,
             image: "",
@@ -60686,7 +60686,7 @@ The grammar is NOT LL(1) because:</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The grammar <br><br> S\(\\rightarrow\)AC|CB <br> C\(\\rightarrow\)aCb|\(\\varepsilon\)        <br>A\(\\rightarrow\)aA|a      <br>B\(\\rightarrow\)Bb|b <br><br> generates the language \(L=\\{a^{i}b^{j}|i\\neq j\\}\) , what is the length of the derivation (number of steps starting from S) to generate the string \(a^{l}b^{m} \) with \(l \\neq m\)?</span>`,
+            text: `<span style="display: inline;">The grammar <br><br> S\\(\\rightarrow\\)AC|CB <br> C\\(\\rightarrow\\)aCb|\\(\\varepsilon\\)        <br>A\\(\\rightarrow\\)aA|a      <br>B\\(\\rightarrow\\)Bb|b <br><br> generates the language \\(L=\\{a^{i}b^{j}|i\\neq j\\}\\) , what is the length of the derivation (number of steps starting from S) to generate the string \\(a^{l}b^{m} \\) with \\(l \\neq m\\)?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">max(l,m)+2</span>`,
@@ -60710,7 +60710,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Which one of the following grammars generates the language <br> \(L=\\{a^{i}b^{j}|i\\neq j\\}\) <br><img src="images/practicepaper_parsing/GATE_CS_20061_q84.jpg"/></span>`,
+            text: `<span style="display: inline;">Which one of the following grammars generates the language <br> \\(L=\\{a^{i}b^{j}|i\\neq j\\}\\) <br><img src="images/practicepaper_parsing/GATE_CS_20061_q84.jpg"/></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">A</span>`,
@@ -60726,10 +60726,10 @@ registerTest({
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following translation scheme. <br>
-S \(\\rightarrow\) ER <br>
-R  \(\\rightarrow\)* E{print('*');}R|\(\\varepsilon\) <br>
-E\(\\rightarrow\)F+E{print('+');}|F <br>
-F\(\\rightarrow\)(S)|id{print(id.value);} <br>
+S \\(\\rightarrow\\) ER <br>
+R  \\(\\rightarrow\\)* E{print('*');}R|\\(\\varepsilon\\) <br>
+E\\(\\rightarrow\\)F+E{print('+');}|F <br>
+F\\(\\rightarrow\\)(S)|id{print(id.value);} <br>
 Here id is a taken that represents an integer and id.value represents the
 corresponding integer value. For an input '2*3+4', this translation scheme prints</span>`,
             image: "",
@@ -60747,17 +60747,17 @@ corresponding integer value. For an input '2*3+4', this translation scheme print
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following grammar <br>
-S \(\\rightarrow\) FR <br>
-R \(\\rightarrow\)* S | \(\\varepsilon\) <br>
-F \(\\rightarrow\) id <br>
+S \\(\\rightarrow\\) FR <br>
+R \\(\\rightarrow\\)* S | \\(\\varepsilon\\) <br>
+F \\(\\rightarrow\\) id <br>
 In the predictive parser table, M, of the grammar the entries M[S, id] and M[R,$]
 respectively</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">{S \(\\rightarrow\) FR} and {R \(\\rightarrow \\varepsilon\) }</span>`,
-                `<span style="display: inline;">{S \(\\rightarrow\) FR} and {}</span>`,
-                `<span style="display: inline;">{S \(\\rightarrow\) FR} and {R \(\\rightarrow\) * S}</span>`,
-                `<span style="display: inline;">{F \(\\rightarrow\) id} and {R \(\\rightarrow \\varepsilon\) }</span>`,
+                `<span style="display: inline;">{S \\(\\rightarrow\\) FR} and {R \\(\\rightarrow \\varepsilon\\) }</span>`,
+                `<span style="display: inline;">{S \\(\\rightarrow\\) FR} and {}</span>`,
+                `<span style="display: inline;">{S \\(\\rightarrow\\) FR} and {R \\(\\rightarrow\\) * S}</span>`,
+                `<span style="display: inline;">{F \\(\\rightarrow\\) id} and {R \\(\\rightarrow \\varepsilon\\) }</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1836/gate2006-58#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -60767,14 +60767,14 @@ respectively</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the following grammar. <br>
-S \(\\rightarrow\) S * E <br>
-S \(\\rightarrow\) E <br>
-E \(\\rightarrow\) F + E <br>
-E \(\\rightarrow\) F   <br>                                                                                                F F \(\\rightarrow\) id <br>
+S \\(\\rightarrow\\) S * E <br>
+S \\(\\rightarrow\\) E <br>
+E \\(\\rightarrow\\) F + E <br>
+E \\(\\rightarrow\\) F   <br>                                                                                                F F \\(\\rightarrow\\) id <br>
 Consider the following LR(0) items corresponding to the grammar above. <br>
-(i) S \(\\rightarrow\) S * .E<br>
-(ii) E \(\\rightarrow\) F. + E<br>
-(iii) E \(\\rightarrow\) F + .E<br>
+(i) S \\(\\rightarrow\\) S * .E<br>
+(ii) E \\(\\rightarrow\\) F. + E<br>
+(iii) E \\(\\rightarrow\\) F + .E<br>
 Given the items above, which two of them will appear in the same set in the
 canonical sets-of-items for the grammar?</span>`,
             image: "",
@@ -60792,9 +60792,9 @@ canonical sets-of-items for the grammar?</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the context-free grammar <br>
-\(E\\rightarrow E+E\)<br>
-\(E\\rightarrow (E *E)\)<br>
-\(E\\rightarrow \\text{id}\)<br>
+\\(E\\rightarrow E+E\\)<br>
+\\(E\\rightarrow (E *E)\\)<br>
+\\(E\\rightarrow \\text{id}\\)<br>
 where E is the starting symbol, the set of terminals is {id, (,+,),*}, and the set of non-terminals is {E}.<br>
 
 For the terminal string id + id + id + id, how many parse trees are possible?
@@ -60815,10 +60815,10 @@ For the terminal string id + id + id + id, how many parse trees are possible?
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the context-free grammar <br>
-\(E\\rightarrow E+E\)<br>
-\(E\\rightarrow (E *E)\)<br>
-\(E\\rightarrow \\text{id}\)<br>
-where E is the starting symbol, the set of terminals is \(\\{id, (,+,),*\\}\), and the set of nonterminals is {E}.
+\\(E\\rightarrow E+E\\)<br>
+\\(E\\rightarrow (E *E)\\)<br>
+\\(E\\rightarrow \\text{id}\\)<br>
+where E is the starting symbol, the set of terminals is \\(\\{id, (,+,),*\\}\\), and the set of nonterminals is {E}.
 Which of the following terminal strings has more than one parse tree when parsed according to the above grammar?
 </span>`,
             image: "",
@@ -60866,15 +60866,15 @@ Which of the following terminal strings has more than one parse tree when parsed
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the grammar:<br><br>
-S \(\\rightarrow\) (S) | a <br><br>
+S \\(\\rightarrow\\) (S) | a <br><br>
 Let the number of states in SLR (1), LR(1) and LALR(1) parsers for the grammar be n1, n2 and n3
 respectively. The following relationship holds good:</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">n1 \(\\lt\) n2 \(\\lt\) n3</span>`,
-                `<span style="display: inline;">n1 = n3 \(\\lt\) n2</span>`,
+                `<span style="display: inline;">n1 \\(\\lt\\) n2 \\(\\lt\\) n3</span>`,
+                `<span style="display: inline;">n1 = n3 \\(\\lt\\) n2</span>`,
                 `<span style="display: inline;">n1 = n2 = n3</span>`,
-                `<span style="display: inline;">n1 \(\\geq\) n3 \(\\geq\) n2</span>`,
+                `<span style="display: inline;">n1 \\(\\geq\\) n3 \\(\\geq\\) n2</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1383/gate2005-60#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2005" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2005</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -60884,7 +60884,7 @@ respectively. The following relationship holds good:</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the grammar:<br><br>
-E \(\\rightarrow\) E + n | E * n | n <br><br>
+E \\(\\rightarrow\\) E + n | E * n | n <br><br>
 For a sentence n + n *  n, the handles in the right-sentential form of the reduction are:</span>`,
             image: "",
             options: [
@@ -60900,7 +60900,7 @@ For a sentence n + n *  n, the handles in the right-sentential form of the reduc
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The grammar \(A\\rightarrow AA|(A)|\\varepsilon\) is not suitable for predictive-parsing because the grammar is:</span>`,
+            text: `<span style="display: inline;">The grammar \\(A\\rightarrow AA|(A)|\\varepsilon\\) is not suitable for predictive-parsing because the grammar is:</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">ambiguous</span>`,
@@ -60932,7 +60932,7 @@ Compute E.value for the root of the parse tree for the expression:2 # 3 & 5 # 6 
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the grammar rule  \(E \\rightarrow E1 - E2 \) for arithmetic expressions. The code generated is targeted to a CPU having a single user register. The subtraction operation requires the first operand to be in the register. If E1 and E2 do not have nay-common sub-expression, in order to get the shortest possible code</span>`,
+            text: `<span style="display: inline;">Consider the grammar rule  \\(E \\rightarrow E1 - E2 \\) for arithmetic expressions. The code generated is targeted to a CPU having a single user register. The subtraction operation requires the first operand to be in the register. If E1 and E2 do not have nay-common sub-expression, in order to get the shortest possible code</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">E1 should be evaluated first</span>`,
@@ -60947,14 +60947,14 @@ Compute E.value for the root of the parse tree for the expression:2 # 3 & 5 # 6 
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the syntax directed definition shown below <br><br>\(\\begin{array}{ll}
+            text: `<span style="display: inline;">Consider the syntax directed definition shown below <br><br>\\(\\begin{array}{ll}
 S \\rightarrow \\mathbf{ id :=} E&\\qquad \\{gen(\\mathbf{ id}.place = E.place;);\\}\\\\
 E \\rightarrow E_1 + E_2 &\\qquad \\{t = newtemp();\\\\
 &\\qquad gen(t = E_1.place + E_2.place;);\\\\
 &\\qquad E.place = t;\\}\\\\
 E \\rightarrow id&\\qquad \\{E.place = \\mathbf{id}.place;\\}
 \\end{array}
-\)<br><br>
+\\)<br><br>
 Here, gen is a function that generates the output code, and newtemp is a function
 that returns the name of a new temporary variable on every call. Assume that ti's are the temporary variable names generated by newtemp.
 For the statement 'X:= Y + Z', the 3-address code sequence generated by this
@@ -60974,9 +60974,9 @@ definition is</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">Consider the translation scheme shown below <br>
-S \(\\rightarrow\) TR <br>
-R \(\\rightarrow\)+ T {print ('+');}R | \(\\epsilon \) <br>
-T \(\\rightarrow\) num {print (num.val);}<br>
+S \\(\\rightarrow\\) TR <br>
+R \\(\\rightarrow\\)+ T {print ('+');}R | \\(\\epsilon \\) <br>
+T \\(\\rightarrow\\) num {print (num.val);}<br>
 Here num is a token that represents an integer and num. val represents the corresponding integer value. For an input string '9 + 5+ 2', this translation scheme will print</span>`,
             image: "",
             options: [
@@ -61001,13 +61001,13 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the grammar shown below  <br>\(S\\rightarrow iEtSS'|a \) <br>\(S'\\rightarrow eS|\\epsilon \) <br>\( E\\rightarrow b\) <br> In the predictive parse table. M, of this grammar, the entries M[S',e] and M[S',$] respectively are</span>`,
+            text: `<span style="display: inline;">Consider the grammar shown below  <br>\\(S\\rightarrow iEtSS'|a \\) <br>\\(S'\\rightarrow eS|\\epsilon \\) <br>\\( E\\rightarrow b\\) <br> In the predictive parse table. M, of this grammar, the entries M[S',e] and M[S',$] respectively are</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">{\(S'\\rightarrow eS\)} and {\(S'\\rightarrow \\varepsilon \)}</span>`,
-                `<span style="display: inline;">{\(S'\\rightarrow eS\)} and {}</span>`,
-                `<span style="display: inline;">{\(S' \\rightarrow   \\varepsilon \)} and {\(S'\\rightarrow \\varepsilon \)}</span>`,
-                `<span style="display: inline;">{\(S'\\rightarrow eS,S'\\rightarrow \\varepsilon \)} and {\(S'\\rightarrow \\varepsilon \)}</span>`,
+                `<span style="display: inline;">{\\(S'\\rightarrow eS\\)} and {\\(S'\\rightarrow \\varepsilon \\)}</span>`,
+                `<span style="display: inline;">{\\(S'\\rightarrow eS\\)} and {}</span>`,
+                `<span style="display: inline;">{\\(S' \\rightarrow   \\varepsilon \\)} and {\\(S'\\rightarrow \\varepsilon \\)}</span>`,
+                `<span style="display: inline;">{\\(S'\\rightarrow eS,S'\\rightarrow \\varepsilon \\)} and {\\(S'\\rightarrow \\varepsilon \\)}</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/944/gate2003-56#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2003" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2003</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -61034,7 +61034,7 @@ for G has n2 states. The relationship between n1 and n2 is</span>`,
             type: "MCQ",
             text: `<span style="display: inline;">Given the following expression grammar:<br><br>
 
-\(\\begin{array}{l} E \\to E * F \\mid F + E \\mid F \\\\ F \\to F - F \\mid id \\end{array}\)<br><br>Which of the following is true?
+\\(\\begin{array}{l} E \\to E * F \\mid F + E \\mid F \\\\ F \\to F - F \\mid id \\end{array}\\)<br><br>Which of the following is true?
 
 
 
@@ -61043,7 +61043,7 @@ for G has n2 states. The relationship between n1 and n2 is</span>`,
             options: [
                 `<span style="display: inline;">* has higher precedence than +</span>`,
                 `<span style="display: inline;">- has higher precedence than *</span>`,
-                `<span style="display: inline;">\(+\) and - have same precedence</span>`,
+                `<span style="display: inline;">\\(+\\) and - have same precedence</span>`,
                 `<span style="display: inline;">+ has higher precedence than *</span>`,
             ],
             answer: "B",
@@ -61123,7 +61123,7 @@ for G has n2 states. The relationship between n1 and n2 is</span>`,
             type: "MCQ",
             text: `<span style="display: inline;">In the following grammar<br>
 
-\(\\begin{aligned} X &::= X \\oplus Y \\mid Y \\\\ Y&::= Z * Y \\mid Z\\\\ Z&::= id \\end{aligned}\)<br>
+\\(\\begin{aligned} X &::= X \\oplus Y \\mid Y \\\\ Y&::= Z * Y \\mid Z\\\\ Z&::= id \\end{aligned}\\)<br>
 
 Which of the following is true?
 
@@ -61132,9 +61132,9 @@ Which of the following is true?
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">'\(\\oplus\)' is left associative while '*' is right associative</span>`,
-                `<span style="display: inline;">Both '\(\\oplus\)' and '*' are left associative</span>`,
-                `<span style="display: inline;">'\(\\oplus\)' is right associative while '*' is left associative</span>`,
+                `<span style="display: inline;">'\\(\\oplus\\)' is left associative while '*' is right associative</span>`,
+                `<span style="display: inline;">Both '\\(\\oplus\\)' and '*' are left associative</span>`,
+                `<span style="display: inline;">'\\(\\oplus\\)' is right associative while '*' is left associative</span>`,
                 `<span style="display: inline;">None of the above</span>`,
             ],
             answer: "A",
@@ -61146,26 +61146,26 @@ Which of the following is true?
             type: "MCQ",
             text: `<span style="display: inline;">The grammar whose productions are<br>
 
-\(\\langle\\text{stmt}\\rangle \\to\\text{ if id then } \\langle\\text{stmt}\\rangle\)<br>
+\\(\\langle\\text{stmt}\\rangle \\to\\text{ if id then } \\langle\\text{stmt}\\rangle\\)<br>
 
-\(\\langle\\text{stmt}\\rangle\\to\\text{ if id then } \\langle\\text{stmt}\\rangle\\text{ else } \\langle \\text{stmt}\\rangle\)<br>
+\\(\\langle\\text{stmt}\\rangle\\to\\text{ if id then } \\langle\\text{stmt}\\rangle\\text{ else } \\langle \\text{stmt}\\rangle\\)<br>
 
-\(\\langle\\text{stmt}\\rangle \\to\\text{ id }:=\\text{ id}\)<br>
+\\(\\langle\\text{stmt}\\rangle \\to\\text{ id }:=\\text{ id}\\)<br>
 
 is ambiguous because</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">the sentence<br>\(\\text{
- if a then if b then c:= d } \)<br>
+                `<span style="display: inline;">the sentence<br>\\(\\text{
+ if a then if b then c:= d } \\)<br>
 has more than two parse trees</span>`,
-                `<span style="display: inline;">the left most and right most derivations of the sentence<br>\(\\text{
- if a then if b then c:= d } \)<br>
+                `<span style="display: inline;">the left most and right most derivations of the sentence<br>\\(\\text{
+ if a then if b then c:= d } \\)<br>
 give rise to different parse trees</span>`,
-                `<span style="display: inline;">the sentence <br>\(\\text{
-if a then if b then c:= d else c:= f} \)<br>
+                `<span style="display: inline;">the sentence <br>\\(\\text{
+if a then if b then c:= d else c:= f} \\)<br>
 has more than two parse trees</span>`,
-                `<span style="display: inline;">the sentence<br>\(\\text{
-if a then if b then c:= d else c:= f} \)<br>
+                `<span style="display: inline;">the sentence<br>\\(\\text{
+if a then if b then c:= d else c:= f} \\)<br>
 has two parse trees</span>`,
             ],
             answer: "D",
@@ -61235,25 +61235,25 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following three ANSI-C programs, \(\\text{P1, P2,}\) and \(\\text{P3}\).<br><br> \( \\begin{array}{|l|l|l|} \\hline \\quad\\quad\\quad \\textbf{P1} & \\quad\\quad\\quad \\textbf{P2} & \\quad\\quad\\quad \\textbf{P3} \\\\ \\hline \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} \\\\ \\begin{array}{l} \\text{int a=5;} \\\\ \\text{int main()\\{} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{float a=7;} \\\\ \\quad \\text{return(0);} \\end{array} \\\\ {\\text{\\}}} & {\\text{\\}}} & {\\text{\\}}} \\\\ \\hline \\end{array} \) <br><br>Which one of the following statements is true?</span>`,
+            text: `<span style="display: inline;">Consider the following three ANSI-C programs, \\(\\text{P1, P2,}\\) and \\(\\text{P3}\\).<br><br> \\( \\begin{array}{|l|l|l|} \\hline \\quad\\quad\\quad \\textbf{P1} & \\quad\\quad\\quad \\textbf{P2} & \\quad\\quad\\quad \\textbf{P3} \\\\ \\hline \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} & \\text{\\#include < stdio.h >} \\\\ \\begin{array}{l} \\text{int a=5;} \\\\ \\text{int main()\\{} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{int a=7;} \\\\ \\quad \\text{return(0);} \\end{array} & \\begin{array}{l} \\text{int main()\\{} \\\\ \\quad \\text{int a=5;} \\\\ \\quad \\text{float a=7;} \\\\ \\quad \\text{return(0);} \\end{array} \\\\ {\\text{\\}}} & {\\text{\\}}} & {\\text{\\}}} \\\\ \\hline \\end{array} \\) <br><br>Which one of the following statements is true?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">Only \(\\text{P1}\) will compile without any error</span>`,
-                `<span style="display: inline;">Only \(\\text{P2}\) will compile without any error</span>`,
-                `<span style="display: inline;">Only \(\\text{P3}\) will compile without any error</span>`,
-                `<span style="display: inline;">All three programs \(\\text{P1, P2,}\) and \(\\text{P3}\) will compile without any error</span>`,
+                `<span style="display: inline;">Only \\(\\text{P1}\\) will compile without any error</span>`,
+                `<span style="display: inline;">Only \\(\\text{P2}\\) will compile without any error</span>`,
+                `<span style="display: inline;">Only \\(\\text{P3}\\) will compile without any error</span>`,
+                `<span style="display: inline;">All three programs \\(\\text{P1, P2,}\\) and \\(\\text{P3}\\) will compile without any error</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>P1:</b> Global \(\\text{int a=5;}\) and, inside \(\\text{main()}\), a separate local \(\\text{int a=7;}\). This is perfectly legal C &mdash; the local declaration simply <b>shadows</b> the global one within \(\\text{main}\)'s scope. <b>Compiles fine.</b><br><br>
-<b>P2:</b> \(\\text{int a=5;}\) followed immediately by \(\\text{int a=7;}\) in the <i>same</i> block/scope &mdash; this is an illegal <b>redeclaration</b> of the same identifier \(a\) within one scope, which is a compile-time error.<br><br>
-<b>P3:</b> \(\\text{int a=5;}\) followed by \(\\text{float a=7;}\) &mdash; again redeclaring \(a\) in the same scope, this time with a conflicting type, which is also a compile-time error.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>P1:</b> Global \\(\\text{int a=5;}\\) and, inside \\(\\text{main()}\\), a separate local \\(\\text{int a=7;}\\). This is perfectly legal C &mdash; the local declaration simply <b>shadows</b> the global one within \\(\\text{main}\\)'s scope. <b>Compiles fine.</b><br><br>
+<b>P2:</b> \\(\\text{int a=5;}\\) followed immediately by \\(\\text{int a=7;}\\) in the <i>same</i> block/scope &mdash; this is an illegal <b>redeclaration</b> of the same identifier \\(a\\) within one scope, which is a compile-time error.<br><br>
+<b>P3:</b> \\(\\text{int a=5;}\\) followed by \\(\\text{float a=7;}\\) &mdash; again redeclaring \\(a\\) in the same scope, this time with a conflicting type, which is also a compile-time error.<br><br>
 <b>Answer: Only P1 will compile without any error.</b><br><br><a href="https://gateoverflow.in/523137/gate-cse-2026-set-2-question-9#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider the following two syntax-directed definitions \(\\text{SDD1}\) and \(\\text{SDD2}\) for type declarations. <br><br>\( \\begin{array}{|l|l|} \\hline {\\textbf{SDD1}} \\\\ \\hline { \\begin{array}{c} \\textbf{Grammar} \\\\ (G_1) \\end{array}} & {\\textbf{Semantic Rules}} \\\\ \\hline \\hline D \\rightarrow TV & \\begin{array}{l} D.type = T.type \\\\ V.type = T.type \\end{array} \\\\ \\hline T \\rightarrow \\text{int} & T.type = \\text{int} \\\\ \\hline T \\rightarrow \\text{float} & T.type = \\text{float} \\\\ \\hline V \\rightarrow V_1\\ \\text{id} & \\begin{array}{l} V_1.type = V.type \\\\ \\text{put(id.entry, V.type)} \\end{array} \\\\ \\hline V \\rightarrow \\text{id} & \\text{put(id.entry, V.type)} \\\\ \\hline \\end{array} \)<br><br> \( \\begin{array}{|l|l|} \\hline {\\textbf{SDD2}} \\\\ \\hline { \\begin{array}{c} \\textbf{Grammar} \\\\ (G_2) \\end{array}} & {\\textbf{Semantic Rules}} \\\\ \\hline \\hline D \\rightarrow D_1\\ \\text{id} & \\begin{array}{l} D.type = D_1.type \\\\ \\text{put(id.entry, }D_1.type) \\end{array} \\\\ \\hline D \\rightarrow T\\ \\text{id} & \\begin{array}{l} D.type = T.type \\\\ \\text{put(id.entry, T.type)} \\end{array} \\\\ \\hline T \\rightarrow \\text{int} & T.type = \\text{int} \\\\ \\hline T \\rightarrow \\text{float} & T.type = \\text{float} \\\\ \\hline \\end{array} \)<br><br> \(D\) is the start symbol, and int, float and id are the three terminals. The non-terminal \(V_{1}\) is the same as \(V\) and the non-terminal \(D_{1}\) is the same as \(D\). Here, the subscript is used to differentiate the grammar symbols on the two sides of a production. The function put updates the symbol table with the type information for an identifier.<br><br> Let \(\\text{P}\) and \(\\text{Q}\) be the languages specified by grammars \(\\text{G1}\) and \(\\text{G2}\), respectively. Which of the following statements is/are true?</span>`,
+            text: `<span style="display: inline;">Consider the following two syntax-directed definitions \\(\\text{SDD1}\\) and \\(\\text{SDD2}\\) for type declarations. <br><br>\\( \\begin{array}{|l|l|} \\hline {\\textbf{SDD1}} \\\\ \\hline { \\begin{array}{c} \\textbf{Grammar} \\\\ (G_1) \\end{array}} & {\\textbf{Semantic Rules}} \\\\ \\hline \\hline D \\rightarrow TV & \\begin{array}{l} D.type = T.type \\\\ V.type = T.type \\end{array} \\\\ \\hline T \\rightarrow \\text{int} & T.type = \\text{int} \\\\ \\hline T \\rightarrow \\text{float} & T.type = \\text{float} \\\\ \\hline V \\rightarrow V_1\\ \\text{id} & \\begin{array}{l} V_1.type = V.type \\\\ \\text{put(id.entry, V.type)} \\end{array} \\\\ \\hline V \\rightarrow \\text{id} & \\text{put(id.entry, V.type)} \\\\ \\hline \\end{array} \\)<br><br> \\( \\begin{array}{|l|l|} \\hline {\\textbf{SDD2}} \\\\ \\hline { \\begin{array}{c} \\textbf{Grammar} \\\\ (G_2) \\end{array}} & {\\textbf{Semantic Rules}} \\\\ \\hline \\hline D \\rightarrow D_1\\ \\text{id} & \\begin{array}{l} D.type = D_1.type \\\\ \\text{put(id.entry, }D_1.type) \\end{array} \\\\ \\hline D \\rightarrow T\\ \\text{id} & \\begin{array}{l} D.type = T.type \\\\ \\text{put(id.entry, T.type)} \\end{array} \\\\ \\hline T \\rightarrow \\text{int} & T.type = \\text{int} \\\\ \\hline T \\rightarrow \\text{float} & T.type = \\text{float} \\\\ \\hline \\end{array} \\)<br><br> \\(D\\) is the start symbol, and int, float and id are the three terminals. The non-terminal \\(V_{1}\\) is the same as \\(V\\) and the non-terminal \\(D_{1}\\) is the same as \\(D\\). Here, the subscript is used to differentiate the grammar symbols on the two sides of a production. The function put updates the symbol table with the type information for an identifier.<br><br> Let \\(\\text{P}\\) and \\(\\text{Q}\\) be the languages specified by grammars \\(\\text{G1}\\) and \\(\\text{G2}\\), respectively. Which of the following statements is/are true?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">The languages P and Q are the same</span>`,
@@ -61262,10 +61262,10 @@ registerTest({
                 `<span style="display: inline;">The specifications of SSD1 and SSD2 are such that the same entries get added to the symbol table</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>Language equivalence:</b> \(G_1\) generates a type keyword followed by one-or-more identifiers (via the recursive \(V\)); \(G_2\) generates the same thing via a left-recursive \(D\). Both accept exactly "type-keyword followed by \(\\ge1\) identifiers," so \(P=Q\). <b>True.</b><br><br>
-<b>SDD2's attribute style:</b> In SDD2, \(D.type\) and the \(\\text{put}\) actions are all computed purely from the values of the symbols on the right-hand side of each production (children of the node in the parse tree) &mdash; every attribute is <b>synthesized</b>, making SDD2 S-attributed. <b>True.</b><br><br>
-<b>SDD1's attribute style:</b> In SDD1, \(V.type\) is set from \(T.type\) (an inherited value flowing top-down from the parent \(D\) into \(V\), then further down into \(V_1\)), so SDD1 does use inherited attributes &mdash; but \(D.type\) itself is synthesized from \(T.type\) as well, so SDD1 is L-attributed but it is <b>not true that it contains "only" inherited attributes</b> (it has both kinds). <b>False as stated.</b><br><br>
-<b>Symbol table contents:</b> In SDD1, \(\\text{put(id.entry, V.type)}\) is called for every identifier with the type inherited down from \(T\). In SDD2, \(\\text{put(id.entry, ...type)}\) is similarly called for every identifier with the same type value (synthesized bottom-up instead, but numerically identical since there's only one \(T\)/type per declaration). Since both add exactly one entry per identifier with the same type value, the symbol tables end up identical. <b>True.</b><br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>Language equivalence:</b> \\(G_1\\) generates a type keyword followed by one-or-more identifiers (via the recursive \\(V\\)); \\(G_2\\) generates the same thing via a left-recursive \\(D\\). Both accept exactly "type-keyword followed by \\(\\ge1\\) identifiers," so \\(P=Q\\). <b>True.</b><br><br>
+<b>SDD2's attribute style:</b> In SDD2, \\(D.type\\) and the \\(\\text{put}\\) actions are all computed purely from the values of the symbols on the right-hand side of each production (children of the node in the parse tree) &mdash; every attribute is <b>synthesized</b>, making SDD2 S-attributed. <b>True.</b><br><br>
+<b>SDD1's attribute style:</b> In SDD1, \\(V.type\\) is set from \\(T.type\\) (an inherited value flowing top-down from the parent \\(D\\) into \\(V\\), then further down into \\(V_1\\)), so SDD1 does use inherited attributes &mdash; but \\(D.type\\) itself is synthesized from \\(T.type\\) as well, so SDD1 is L-attributed but it is <b>not true that it contains "only" inherited attributes</b> (it has both kinds). <b>False as stated.</b><br><br>
+<b>Symbol table contents:</b> In SDD1, \\(\\text{put(id.entry, V.type)}\\) is called for every identifier with the type inherited down from \\(T\\). In SDD2, \\(\\text{put(id.entry, ...type)}\\) is similarly called for every identifier with the same type value (synthesized bottom-up instead, but numerically identical since there's only one \\(T\\)/type per declaration). Since both add exactly one entry per identifier with the same type value, the symbol tables end up identical. <b>True.</b><br><br>
 <b>Answer: P and Q are the same language; SDD2 is S-attributed with only synthesized attributes; and both SDDs populate the symbol table with the same entries.</b><br><br><a href="https://gateoverflow.in/523037/gate-cse-2026-set-1-question-43#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61274,9 +61274,9 @@ registerTest({
             type: "MCQ",
             text: `<span style="display: inline;">Given the following syntax-directed translation rules:
 <br><br>
-\( \\text{Rule 1: } R \\rightarrow AB \\{ B.i = R.i - 1; A.i = B.i; R.i = A.i + 1; \\} \)<br>
-\( \\text{Rule 2: } P \\rightarrow CD \\{ P.i = C.i + D.i; D.i = C.i + 2; \\} \)<br>
-\( \\text{Rule 3: } Q \\rightarrow EF \\{ Q.i = E.i + F.i; \\} \)
+\\( \\text{Rule 1: } R \\rightarrow AB \\{ B.i = R.i - 1; A.i = B.i; R.i = A.i + 1; \\} \\)<br>
+\\( \\text{Rule 2: } P \\rightarrow CD \\{ P.i = C.i + D.i; D.i = C.i + 2; \\} \\)<br>
+\\( \\text{Rule 3: } Q \\rightarrow EF \\{ Q.i = E.i + F.i; \\} \\)
 <br><br>
 Which ONE is the CORRECT option among the following?</span>`,
             image: "",
@@ -61288,9 +61288,9 @@ Which ONE is the CORRECT option among the following?</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Classify each rule by whether it uses only <b>synthesized</b> attributes (S-attributed: every attribute is computed purely from children) versus whether it's <b>L-attributed</b> (inherited attributes may only depend on the parent or strictly-left siblings, evaluated left to right):<br><br>
-<b>Rule 1</b> (\(R\\to AB\\{B.i=R.i-1;\\ A.i=B.i;\\ R.i=A.i+1;\\}\)): \(A.i\) is defined using \(B.i\) &mdash; but \(B\) is to the <i>right</i> of \(A\) in the production, so this inherited-attribute dependency flows backward (right-to-left), violating L-attributed rules. It's also not S-attributed, since \(B.i\) is set from \(R.i\) (an inherited attribute from the parent). <b>Neither S-attributed nor L-attributed.</b><br><br>
-<b>Rule 2</b> (\(P\\to CD\\{P.i=C.i+D.i;\\ D.i=C.i+2;\\}\)): \(D.i\) (inherited) is set using only \(C.i\), a <i>left</i> sibling &mdash; perfectly valid for L-attributed. But since \(D\) does have an inherited attribute at all, the SDT is not purely synthesized. <b>Not S-attributed, but is L-attributed.</b><br><br>
-<b>Rule 3</b> (\(Q\\to EF\\{Q.i=E.i+F.i;\\}\)): the only attribute defined is \(Q.i\), computed purely from its children \(E,F\) &mdash; purely synthesized. <b>S-attributed (and therefore also L-attributed, since S-attributed is a special case of L-attributed).</b><br><br>
+<b>Rule 1</b> (\\(R\\to AB\\{B.i=R.i-1;\\ A.i=B.i;\\ R.i=A.i+1;\\}\\)): \\(A.i\\) is defined using \\(B.i\\) &mdash; but \\(B\\) is to the <i>right</i> of \\(A\\) in the production, so this inherited-attribute dependency flows backward (right-to-left), violating L-attributed rules. It's also not S-attributed, since \\(B.i\\) is set from \\(R.i\\) (an inherited attribute from the parent). <b>Neither S-attributed nor L-attributed.</b><br><br>
+<b>Rule 2</b> (\\(P\\to CD\\{P.i=C.i+D.i;\\ D.i=C.i+2;\\}\\)): \\(D.i\\) (inherited) is set using only \\(C.i\\), a <i>left</i> sibling &mdash; perfectly valid for L-attributed. But since \\(D\\) does have an inherited attribute at all, the SDT is not purely synthesized. <b>Not S-attributed, but is L-attributed.</b><br><br>
+<b>Rule 3</b> (\\(Q\\to EF\\{Q.i=E.i+F.i;\\}\\)): the only attribute defined is \\(Q.i\\), computed purely from its children \\(E,F\\) &mdash; purely synthesized. <b>S-attributed (and therefore also L-attributed, since S-attributed is a special case of L-attributed).</b><br><br>
 <b>Answer: Rule 1 is neither; Rule 2 is not S-attributed but is L-attributed; Rule 3 is both S-attributed and L-attributed.</b><br><br><a href="https://gateoverflow.in/460823/gate-cse-2025-set-2-question-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61306,17 +61306,17 @@ Which ONE is the CORRECT option among the following?</span>`,
                 `<span style="display: inline;">All  L-attributed  definitions  based  on  LR(1)  grammar  can  be  evaluated  using  a bottom-up parsing strategy</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- An attribute grammar is an SDD whose semantic rules have no side effects \(\\text{---}\) TRUE (definition).<br>
-- <b>"L-attributed definitions cannot always be evaluated in depth-first order"</b> \(\\text{---}\) FALSE. Every L-attributed definition can be evaluated by a left-to-right depth-first traversal; that is why they are called L-attributed.<br>
-- Synthesized attributes can be evaluated by a bottom-up parser during reductions \(\\text{---}\) TRUE.<br>
-- <b>"All L-attributed definitions based on LR(1) grammars can be evaluated bottom-up"</b> \(\\text{---}\) FALSE. The marker non-terminal method is guaranteed only for L-attributed definitions on LL(1) grammars; adding markers can make an LR(1) grammar non-LR.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- An attribute grammar is an SDD whose semantic rules have no side effects \\(\\text{---}\\) TRUE (definition).<br>
+- <b>"L-attributed definitions cannot always be evaluated in depth-first order"</b> \\(\\text{---}\\) FALSE. Every L-attributed definition can be evaluated by a left-to-right depth-first traversal; that is why they are called L-attributed.<br>
+- Synthesized attributes can be evaluated by a bottom-up parser during reductions \\(\\text{---}\\) TRUE.<br>
+- <b>"All L-attributed definitions based on LR(1) grammars can be evaluated bottom-up"</b> \\(\\text{---}\\) FALSE. The marker non-terminal method is guaranteed only for L-attributed definitions on LL(1) grammars; adding markers can make an LR(1) grammar non-LR.<br><br>
 <b>Answer: Options 2 and 4</b><br><br><a href="https://gateoverflow.in/422878/gate-cse-2024-set-2-question-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following syntax-directed definition (SDD).<br><br>\(
+            text: `<span style="display: inline;">Consider the following syntax-directed definition (SDD).<br><br>\\(
 \\begin{array}{|l|l|}
 \\hline S \\rightarrow  DHTU & \\{ S.val = D.val + H.val + T.val + U.val; \\} \\\\
 \\hline D \\rightarrow "M"D_1 &  \\{ D.val =5+D_1 . val; \\} \\\\
@@ -61328,7 +61328,7 @@ Which ONE is the CORRECT option among the following?</span>`,
 \\hline U \\rightarrow  "K" &  \\{  U.val =5 ;\\}  \\\\
 \\hline
 \\end{array}
-\)<br><br>
+\\)<br><br>
 Given "MMLK" as the input, which one of the following options is the CORRECT value computed by the SDD (in the attribute S.val)?</span>`,
             image: "",
             options: [
@@ -61338,23 +61338,23 @@ Given "MMLK" as the input, which one of the following options is the CORRECT val
                 `<span style="display: inline;">65</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Input "MMLK" \(\\Rightarrow\) D = "MM", H = "L", T = \(\\epsilon\), U = "K".<br><br>
-- \(D\): \(5+5+(-5)=5\)<br>
-- \(H\): \(5*10+(-10)=40\)<br>
-- \(T=\\epsilon\): \(-5\)<br>
-- \(U\): \(5\)<br><br>
-\(S.val=5+40-5+5=45\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Input "MMLK" \\(\\Rightarrow\\) D = "MM", H = "L", T = \\(\\epsilon\\), U = "K".<br><br>
+- \\(D\\): \\(5+5+(-5)=5\\)<br>
+- \\(H\\): \\(5*10+(-10)=40\\)<br>
+- \\(T=\\epsilon\\): \\(-5\\)<br>
+- \\(U\\): \\(5\\)<br><br>
+\\(S.val=5+40-5+5=45\\)<br><br>
 <b>Answer: 45</b><br><br><a href="https://gateoverflow.in/422815/gate-cse-2024-set-1-question-27#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider the syntax directed translation given by the following grammar and semantic rules. Here \(N, I, F \\; and \\; B\) are non-terminals. \(N\) is the starting non-terminal,
-and \(\\#,0 \\; and \\; 1\) are lexical tokens corresponding to input letters \("\\#","0" \\; and \\; "1"\),
-respectively. \(X.val\) denotes the synthesized attribute (a numeric value) associated
-with a non-terminal \(X\). \(I_1\) and \(F_1\) denote occurrences of \(I\) and \(F\) on the right hand
-side of a production, respectively. For the tokens \(0\) and \(1\), \(0.val=0\) and \(1.val=1\).<br><br>The value computed by the translation scheme for the input string<br>\(\\begin{aligned}
+            text: `<span style="display: inline;">Consider the syntax directed translation given by the following grammar and semantic rules. Here \\(N, I, F \\; and \\; B\\) are non-terminals. \\(N\\) is the starting non-terminal,
+and \\(\\#,0 \\; and \\; 1\\) are lexical tokens corresponding to input letters \\("\\#","0" \\; and \\; "1"\\),
+respectively. \\(X.val\\) denotes the synthesized attribute (a numeric value) associated
+with a non-terminal \\(X\\). \\(I_1\\) and \\(F_1\\) denote occurrences of \\(I\\) and \\(F\\) on the right hand
+side of a production, respectively. For the tokens \\(0\\) and \\(1\\), \\(0.val=0\\) and \\(1.val=1\\).<br><br>The value computed by the translation scheme for the input string<br>\\(\\begin{aligned}
 N & \\rightarrow I \\# F & N.val=I.val+F.val \\\\ 
 I &\\rightarrow I_1B & I.val = (2 I1.val) + B.val\\\\ 
 I &\\rightarrow B&I.val = B.val\\\\ 
@@ -61362,17 +61362,17 @@ F &\\rightarrow BF_1& F.val = \\frac{1}{2}(B.val + F1.val)\\\\
 F &\\rightarrow B&  F.val = \\frac{1}{2} B.val\\\\ 
  B&\\rightarrow 0& B.val = 0.val\\\\ 
 B &\\rightarrow 1&B.val = 1.val
-\\end{aligned} \)  <br>\(10\\# 011\)<br><br>is ____ (Rounded off to three decimal places)</span>`,
+\\end{aligned} \\)  <br>\\(10\\# 011\\)<br><br>is ____ (Rounded off to three decimal places)</span>`,
             image: "",
             options: [
             ],
             answer: "2.374 to 2.376",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Integer part "10" (binary):<br>
-I for "1" = 1; I for "10" = \(2\\times1+0=2\).<br><br>
+I for "1" = 1; I for "10" = \\(2\\times1+0=2\\).<br><br>
 Fraction part "011" (evaluated right to left):<br>
-- F("1") = \(\\frac12\\times1=0.5\)<br>
-- F("11") = \(\\frac12(1+0.5)=0.75\)<br>
-- F("011") = \(\\frac12(0+0.75)=0.375\)<br><br>
+- F("1") = \\(\\frac12\\times1=0.5\\)<br>
+- F("11") = \\(\\frac12(1+0.5)=0.75\\)<br>
+- F("011") = \\(\\frac12(0+0.75)=0.375\\)<br><br>
 N.val = 2 + 0.375 = 2.375 (i.e. binary 10.011).<br><br>
 <b>Answer: 2.375</b><br><br><a href="https://gateoverflow.in/399261/gate-cse-2023-question-50#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61399,7 +61399,7 @@ N.val = 2 + 0.375 = 2.375 (i.e. binary 10.011).<br><br>
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following grammar (that admits a series of declarations, followed by expressions) and the associated syntax directed translation (SDT) actions, given as pseudo-code<br><br>\(\\begin{array}{lll} P & \\rightarrow & D^* E^* \\\\ D & \\rightarrow & \\textsf{int ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ int\\}} \\\\ D & \\rightarrow & \\textsf{bool ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ bool\\}} \\\\ E& \\rightarrow & E_1 +E_2 \\{ \\text{check that } E_1. \\text{type}=E_2. \\text{type} = \\textsf{int}; \\text{set } E.\\text{type }:= \\textsf{int} \\} \\\\ E & \\rightarrow & !E_1 \\{ \\text{check that } E_1. \\text{type} = \\textsf{bool}; \\text{ set } E.\\text{type} := \\textsf{bool} \\} \\\\ E & \\rightarrow & \\textsf{ID} \\{ \\text{set } E. \\text{type } := \\textsf{int} \\} \\end{array}\)
+            text: `<span style="display: inline;">Consider the following grammar (that admits a series of declarations, followed by expressions) and the associated syntax directed translation (SDT) actions, given as pseudo-code<br><br>\\(\\begin{array}{lll} P & \\rightarrow & D^* E^* \\\\ D & \\rightarrow & \\textsf{int ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ int\\}} \\\\ D & \\rightarrow & \\textsf{bool ID} \\{ \\text{record that } \\textsf{ID.} \\text{lexeme is of type} \\textsf{ bool\\}} \\\\ E& \\rightarrow & E_1 +E_2 \\{ \\text{check that } E_1. \\text{type}=E_2. \\text{type} = \\textsf{int}; \\text{set } E.\\text{type }:= \\textsf{int} \\} \\\\ E & \\rightarrow & !E_1 \\{ \\text{check that } E_1. \\text{type} = \\textsf{bool}; \\text{ set } E.\\text{type} := \\textsf{bool} \\} \\\\ E & \\rightarrow & \\textsf{ID} \\{ \\text{set } E. \\text{type } := \\textsf{int} \\} \\end{array}\\)
  <br><br>
 With respect to the above grammar, which one of the following choices is correct?</span>`,
             image: "",
@@ -61410,7 +61410,7 @@ With respect to the above grammar, which one of the following choices is correct
                 `<span style="display: inline;">The actions will lead to an infinite loop</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The rule \(E\\rightarrow ID\) <b>always</b> sets E.type = int, even when ID was declared bool. So:<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The rule \\(E\\rightarrow ID\\) <b>always</b> sets E.type = int, even when ID was declared bool. So:<br>
 - Integer declarations and expressions (+) type-check correctly.<br>
 - Boolean expressions fail: !ID would see an int and report an error.<br>
 - Nothing loops forever.<br><br>
@@ -61420,19 +61420,19 @@ With respect to the above grammar, which one of the following choices is correct
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let \(X_1,X_2,X_3,X_4,X_5 \\; and \\; X_6\) be the placeholders for the non-terminals D, T, L or \(L_1\) in the following table: <br><img src="images/practicepaper_syntax_directed_translation/GATE_CS_20191_q36.jpg" /><br> Which one of the following are the appropriate choices for \(X_1,X_2,X_3 \\; and \\; X_4\)?</span>`,
+            text: `<span style="display: inline;">Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let \\(X_1,X_2,X_3,X_4,X_5 \\; and \\; X_6\\) be the placeholders for the non-terminals D, T, L or \\(L_1\\) in the following table: <br><img src="images/practicepaper_syntax_directed_translation/GATE_CS_20191_q36.jpg" /><br> Which one of the following are the appropriate choices for \\(X_1,X_2,X_3 \\; and \\; X_4\\)?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(X_1=L,X_2=T,X_3=L_1,X_4=L\)</span>`,
-                `<span style="display: inline;">\(X_1=T,X_2=L,X_3=L_1,X_4=T\)</span>`,
-                `<span style="display: inline;">\(X_1=L,X_2=L,X_3=L_1,X_4=T\)</span>`,
-                `<span style="display: inline;">\(X_1=T,X_2=L,X_3=T,X_4=L_1\)</span>`,
+                `<span style="display: inline;">\\(X_1=L,X_2=T,X_3=L_1,X_4=L\\)</span>`,
+                `<span style="display: inline;">\\(X_1=T,X_2=L,X_3=L_1,X_4=T\\)</span>`,
+                `<span style="display: inline;">\\(X_1=L,X_2=L,X_3=L_1,X_4=T\\)</span>`,
+                `<span style="display: inline;">\\(X_1=T,X_2=L,X_3=T,X_4=L_1\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The type flows from T to the list L (inherited attribute):<br>
-- D \(\\rightarrow\) T L: the list gets T's type \(\\rightarrow\) \(L.type=T.type\), so \(X_1=L,\\ X_2=T\).<br>
-- L \(\\rightarrow\) \(L_1\), id: pass the type down to \(L_1\) \(\\rightarrow\) \(L_1.type=L.type\), so \(X_3=L_1,\\ X_4=L\) (and id gets L.type).<br><br>
-<b>Answer: \(X_1=L,X_2=T,X_3=L_1,X_4=L\)</b><br><br><a href="https://gateoverflow.in/302812/gate2019-cs-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+- D \\(\\rightarrow\\) T L: the list gets T's type \\(\\rightarrow\\) \\(L.type=T.type\\), so \\(X_1=L,\\ X_2=T\\).<br>
+- L \\(\\rightarrow\\) \\(L_1\\), id: pass the type down to \\(L_1\\) \\(\\rightarrow\\) \\(L_1.type=L.type\\), so \\(X_3=L_1,\\ X_4=L\\) (and id gets L.type).<br><br>
+<b>Answer: \\(X_1=L,X_2=T,X_3=L_1,X_4=L\\)</b><br><br><a href="https://gateoverflow.in/302812/gate2019-cs-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 1,
@@ -61531,13 +61531,13 @@ with values of only a single type during the execution of the program</span>`,
             type: "MCQ",
             text: `<span style="display: inline;">A shift reduce parser carries out the actions specified within braces immediately after reducing with the corresponding rule of grammar <br>
 
-\(S \\rightarrow xxW \\;\\text{{print "1"}}\)<br>
+\\(S \\rightarrow xxW \\;\\text{{print "1"}}\\)<br>
 
-\(S \\rightarrow y \\;\\text{{print "2"}}\)<br>
+\\(S \\rightarrow y \\;\\text{{print "2"}}\\)<br>
 
-\(W \\rightarrow Sz\\; \\text{{print "3"}}\)<br>
+\\(W \\rightarrow Sz\\; \\text{{print "3"}}\\)<br>
 
-What is the translation of \(xxxxyzz\) using the syntax directed translation scheme described by the above rules?
+What is the translation of \\(xxxxyzz\\) using the syntax directed translation scheme described by the above rules?
 
 
 
@@ -61565,18 +61565,18 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the control flow graph shown in the figure. <br><img src="images/practicepaper_intermediate_code_generation/GATE_CS_20261_q32.webp"/><br>Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B\(4\) and B\(5\)?<br> Note: All the variables are integers.</span>`,
+            text: `<span style="display: inline;">Consider the control flow graph shown in the figure. <br><img src="images/practicepaper_intermediate_code_generation/GATE_CS_20261_q32.webp"/><br>Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B\\(4\\) and B\\(5\\)?<br> Note: All the variables are integers.</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">B4: \(\\{b+i\\}\)               B5: \(\\{c+m\\}\)</span>`,
-                `<span style="display: inline;">B4: \(\\{g * k\\}\)             B5: \(\\{c+m\\}\)</span>`,
-                `<span style="display: inline;">B4: \(\\{g * k, b+i\\}\)      B5:\(\\{\) \(\\}\)</span>`,
-                `<span style="display: inline;">B4: \(\\{g * k\\}\)             B5:\(\\{\) \(\\}\)</span>`,
+                `<span style="display: inline;">B4: \\(\\{b+i\\}\\)               B5: \\(\\{c+m\\}\\)</span>`,
+                `<span style="display: inline;">B4: \\(\\{g * k\\}\\)             B5: \\(\\{c+m\\}\\)</span>`,
+                `<span style="display: inline;">B4: \\(\\{g * k, b+i\\}\\)      B5:\\(\\{\\) \\(\\}\\)</span>`,
+                `<span style="display: inline;">B4: \\(\\{g * k\\}\\)             B5:\\(\\{\\) \\(\\}\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  This question is based on an accompanying control-flow-graph figure showing the statements inside basic blocks B4 and B5. A <b>redundant expression / common subexpression</b> is one that is computed more than once with the same operand values still holding (no intervening redefinition of any operand) at the second computation point, so the second computation could be eliminated and the previously-computed value reused.<br><br>
-Working through the statements of B4, only the expression \(g*k\) is recomputed later in the block with \(g\) and \(k\) unchanged in between &mdash; so it is the sole common subexpression there. The other candidate (\(b+i\)) is not actually redundant once you check that one of its operands gets reassigned before the repeated use, breaking the CSE opportunity.<br><br>
-In B5, tracing through similarly shows that the candidate \(c+m\) is <i>not</i> a valid common subexpression, because one of its operands (\(c\) or \(m\)) is redefined between the two apparent uses &mdash; so B5 has no redundant expressions at all.<br><br>
+Working through the statements of B4, only the expression \\(g*k\\) is recomputed later in the block with \\(g\\) and \\(k\\) unchanged in between &mdash; so it is the sole common subexpression there. The other candidate (\\(b+i\\)) is not actually redundant once you check that one of its operands gets reassigned before the repeated use, breaking the CSE opportunity.<br><br>
+In B5, tracing through similarly shows that the candidate \\(c+m\\) is <i>not</i> a valid common subexpression, because one of its operands (\\(c\\) or \\(m\\)) is redefined between the two apparent uses &mdash; so B5 has no redundant expressions at all.<br><br>
 <b>Answer: B4 = {g*k}, B5 = { } (empty).</b><br><br><a href="https://gateoverflow.in/523048/gate-cse-2026-set-1-question-32#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61598,7 +61598,7 @@ Which ONE of the following options is CORRECT?</span>`,
                 `<span style="display: inline;">Neither (I) nor (II) is correct.</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>(I) Backpatching for Boolean expressions in one pass:</b> TRUE &mdash; this is exactly backpatching's classic use case: jump targets for \(\\text{true}\)/\(\\text{false}\) lists are left unfilled initially and "patched in" once the actual target address becomes known later, avoiding the need for a second pass.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>(I) Backpatching for Boolean expressions in one pass:</b> TRUE &mdash; this is exactly backpatching's classic use case: jump targets for \\(\\text{true}\\)/\\(\\text{false}\\) lists are left unfilled initially and "patched in" once the actual target address becomes known later, avoiding the need for a second pass.<br><br>
 <b>(II) Backpatching for flow-of-control statements (if/while) in one pass:</b> also TRUE &mdash; the same technique is used to generate code for conditional and looping constructs single-pass, patching jump instructions once the relevant labels are determined.<br><br>
 <b>Answer: Both (I) and (II) are correct.</b><br><br><a href="https://gateoverflow.in/460824/gate-cse-2025-set-2-question-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61630,8 +61630,8 @@ Which ONE of the following options is CORRECT?</span>`,
             ],
             answer: 6,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A new basic block begins at every <b>leader</b> statement: the very first statement, any statement that is the <i>target</i> of a jump/goto, and any statement immediately following a conditional or unconditional jump.<br><br>
-Scanning the code for leaders: \(1001\) (first statement); \(1003\) (target of the \(\\text{goto }1003\) at \(1009\)); \(1010\) (follows the conditional jump at \(1009\)); \(1002\) (target of \(\\text{goto }1002\) at \(1011\)); \(1012\) (follows the conditional jump at \(1011\)); \(1013\) (target of \(\\text{goto }1013\) at \(1017\)).<br><br>
-That's \(6\) leaders, giving \(6\) basic blocks: \(\\{1001\\},\\{1002\\},\\{1003\\text{-}1009\\},\\{1010\\text{-}1011\\},\\{1012\\},\\{1013\\text{-}1017\\}\).<br><br>
+Scanning the code for leaders: \\(1001\\) (first statement); \\(1003\\) (target of the \\(\\text{goto }1003\\) at \\(1009\\)); \\(1010\\) (follows the conditional jump at \\(1009\\)); \\(1002\\) (target of \\(\\text{goto }1002\\) at \\(1011\\)); \\(1012\\) (follows the conditional jump at \\(1011\\)); \\(1013\\) (target of \\(\\text{goto }1013\\) at \\(1017\\)).<br><br>
+That's \\(6\\) leaders, giving \\(6\\) basic blocks: \\(\\{1001\\},\\{1002\\},\\{1003\\text{-}1009\\},\\{1010\\text{-}1011\\},\\{1012\\},\\{1013\\text{-}1017\\}\\).<br><br>
 <b>Answer: 6</b><br><br><a href="https://gateoverflow.in/460038/gate-cse-2025-set-1-question-42#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61655,7 +61655,7 @@ Run-time function call management, strength reduction, and constant folding are 
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following expression: \( x[i]=(p+r) *-s[i]+u / w \). The following sequence shows the list of triples representing the given expression, with entries missing for triples (1), (3), and (6).<br>\(
+            text: `<span style="display: inline;">Consider the following expression: \\( x[i]=(p+r) *-s[i]+u / w \\). The following sequence shows the list of triples representing the given expression, with entries missing for triples (1), (3), and (6).<br>\\(
 \\begin{array}{|c|c|c|c|}
 \\hline  (0)   & + &   p   &   r   \\\\
 \\hline  (1)   & & & \\\\
@@ -61666,25 +61666,25 @@ Run-time function call management, strength reduction, and constant folding are 
 \\hline  (6)   & & & \\\\
 \\hline  (7)   &   =   &   (6)   &   (5)   \\\\
 \\hline
-\\end{array}\)
+\\end{array}\\)
 <br>
 Which one of the following options fills in the missing entries CORRECTLY?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">(1) \(=[]  s  i \) ,        (3) * (0) (2) ,        (6) \([] =x i \)</span>`,
-                `<span style="display: inline;">(1) \([] =s i \) ,        (3) - (0) (2) ,        (6) \( =[] x (5) \)</span>`,
-                `<span style="display: inline;">(1) \( =[] s i \) ,        (3) * (0) (2) ,        (6) \([] =x (5) \)</span>`,
-                `<span style="display: inline;">(1) \( []=s i \) ,        (3)-(0)(2) ,        (6) \( =[] x i \)</span>`,
+                `<span style="display: inline;">(1) \\(=[]  s  i \\) ,        (3) * (0) (2) ,        (6) \\([] =x i \\)</span>`,
+                `<span style="display: inline;">(1) \\([] =s i \\) ,        (3) - (0) (2) ,        (6) \\( =[] x (5) \\)</span>`,
+                `<span style="display: inline;">(1) \\( =[] s i \\) ,        (3) * (0) (2) ,        (6) \\([] =x (5) \\)</span>`,
+                `<span style="display: inline;">(1) \\( []=s i \\) ,        (3)-(0)(2) ,        (6) \\( =[] x i \\)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \(x[i]=(p+r)*(-s[i])+u/w\), in evaluation order:<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  \\(x[i]=(p+r)*(-s[i])+u/w\\), in evaluation order:<br>
 - (0) + p r<br>
-- (1) <b>=[] s i</b> \(\\text{---}\) fetch s[i]<br>
+- (1) <b>=[] s i</b> \\(\\text{---}\\) fetch s[i]<br>
 - (2) uminus (1)<br>
-- (3) <b>* (0) (2)</b> \(\\text{---}\) (p+r) * (\(-\)s[i])<br>
+- (3) <b>* (0) (2)</b> \\(\\text{---}\\) (p+r) * (\\(-\\)s[i])<br>
 - (4) / u w<br>
 - (5) + (3) (4)<br>
-- (6) <b>[]= x i</b> \(\\text{---}\) location x[i] for storing<br>
+- (6) <b>[]= x i</b> \\(\\text{---}\\) location x[i] for storing<br>
 - (7) = (6) (5)<br><br>
 <b>Answer: (1) =[] s i, (3) * (0) (2), (6) []= x i</b><br><br><a href="https://gateoverflow.in/422864/gate-cse-2024-set-2-question-33#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61692,7 +61692,7 @@ Which one of the following options fills in the missing entries CORRECTLY?</span
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the following pseudo-code.<br>\(
+            text: `<span style="display: inline;">Consider the following pseudo-code.<br>\\(
 \\begin{array}{ll}
 L 1: & t 1=-1 \\\\
 L 2: & t 2=0 \\\\
@@ -61710,7 +61710,7 @@ L 13: & t 2=t 2+1 \\\\
 L 14: & if  \\; t 2 \\lt N  \\; goto  \\; L 3 \\\\
 L 15: & max =t 1
 \\end{array}
-\)<br>
+\\)<br>
 Which of of the following options CORRECTLY specifies the number of basic blocks and the number of instructions in the largest basic block, respectively?</span>`,
             image: "",
             options: [
@@ -61751,9 +61751,9 @@ Identify the CORRECT option.</span>`,
                 `<span style="display: inline;">Only S1 and S3 are TRUE.</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Front end (lexical, syntax, semantic analysis, intermediate code) depends on the source language, <b>not</b> on the target machine \(\\text{---}\) S1 TRUE.<br>
-- Back end (code optimization for the machine, code generation) is specific to the target hardware \(\\text{---}\) S2 TRUE.<br>
-- The back end works on intermediate code, so it is independent of the source language \(\\text{---}\) S3 FALSE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Front end (lexical, syntax, semantic analysis, intermediate code) depends on the source language, <b>not</b> on the target machine \\(\\text{---}\\) S1 TRUE.<br>
+- Back end (code optimization for the machine, code generation) is specific to the target hardware \\(\\text{---}\\) S2 TRUE.<br>
+- The back end works on intermediate code, so it is independent of the source language \\(\\text{---}\\) S3 FALSE.<br><br>
 <b>Answer: Only S1 and S2 are TRUE</b><br><br><a href="https://gateoverflow.in/399311/gate-cse-2023-question-1#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61781,9 +61781,9 @@ for (i = 0; i < 200; i = i + 2)
                 `<span style="display: inline;">303  and 2</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  CSE computes x + 3, y\(\\rightarrow\)f1 and y\(\\rightarrow\)f2 <b>once</b> before the loop and reuses them.<br><br>
-- Before the loop: t = x + 3, then z = t + f1 + f2 \(\\rightarrow\) 3 additions, 2 dereferences.<br>
-- Loop: 100 iterations (i = 0, 2, \(\\ldots\), 198), each with i + 2, one addition to p and one to q \(\\rightarrow\) 3 additions \(\\times\) 100 = 300.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  CSE computes x + 3, y\\(\\rightarrow\\)f1 and y\\(\\rightarrow\\)f2 <b>once</b> before the loop and reuses them.<br><br>
+- Before the loop: t = x + 3, then z = t + f1 + f2 \\(\\rightarrow\\) 3 additions, 2 dereferences.<br>
+- Loop: 100 iterations (i = 0, 2, \\(\\ldots\\), 198), each with i + 2, one addition to p and one to q \\(\\rightarrow\\) 3 additions \\(\\times\\) 100 = 300.<br><br>
 Total: 303 additions, 2 dereferences.<br><br>
 <b>Answer: 303 and 2</b><br><br><a href="https://gateoverflow.in/357510/gate-cse-2021-set-2-question-30#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61823,7 +61823,7 @@ Total: 303 additions, 2 dereferences.<br><br>
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the productions \(A\\rightarrow PQ\) and \(A\\rightarrow XY\). Each of the five non-terminals A,P,Q,X, and Y has two attributes: s is a synthesized attribute, and i is an inherited attribute. Consider the following rules.<br><br>Rule 1: P.i=A.i+2, Q.i=P.i+A.i, and A.s=P.s+Q.s<br>Rule 2: X.i=A.i+Y.s and Y.i=X.s+A.i<br><br>Which one of the following is TRUE?</span>`,
+            text: `<span style="display: inline;">Consider the productions \\(A\\rightarrow PQ\\) and \\(A\\rightarrow XY\\). Each of the five non-terminals A,P,Q,X, and Y has two attributes: s is a synthesized attribute, and i is an inherited attribute. Consider the following rules.<br><br>Rule 1: P.i=A.i+2, Q.i=P.i+A.i, and A.s=P.s+Q.s<br>Rule 2: X.i=A.i+Y.s and Y.i=X.s+A.i<br><br>Which one of the following is TRUE?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Both Rule 1 and Rule 2 are L-attributed.</span>`,
@@ -61833,8 +61833,8 @@ Total: 303 additions, 2 dereferences.<br><br>
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  L-attributed: an inherited attribute may depend only on the parent's inherited attributes and on attributes of siblings to its <b>left</b>.<br><br>
-- Rule 1: P.i uses A.i; Q.i uses P.i (left sibling) and A.i \(\\rightarrow\) L-attributed.<br>
-- Rule 2: X.i uses Y.s, and Y is to the <b>right</b> of X \(\\rightarrow\) not L-attributed.<br><br>
+- Rule 1: P.i uses A.i; Q.i uses P.i (left sibling) and A.i \\(\\rightarrow\\) L-attributed.<br>
+- Rule 2: X.i uses Y.s, and Y is to the <b>right</b> of X \\(\\rightarrow\\) not L-attributed.<br><br>
 <b>Answer: Only Rule 1 is L-attributed</b><br><br><a href="https://gateoverflow.in/333198/gate2020-cs-33#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61868,7 +61868,7 @@ value of X is _________.</span>`,
             answer: 2,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Evaluate the bigger subtree first:<br>
 - R1 = b, R2 = c, R1 = R1 + R2, R1 = R1 / 3, R2 = d, R1 = R1 + R2<br>
-- R2 = a, R2 = R2 \(-\) 1, R1 = R2 * R1<br><br>
+- R2 = a, R2 = R2 \\(-\\) 1, R1 = R2 * R1<br><br>
 Only 2 registers are ever needed.<br><br>
 <b>Answer: 2</b><br><br><a href="https://gateoverflow.in/118746/gate2017-1-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61884,14 +61884,14 @@ q= p + q <br>
 Which one of the following corresponds to a static single assignment form of the above code?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(p_{1}=a-b\)<br>\( q_{1}=p_{1}*c \)<br>\(p_{1}=u*v \)<br>\(q_{1}=p_{1}+q_{1}\)</span>`,
-                `<span style="display: inline;">\(p_{3}=a-b \)<br>\(q_{4}=p_{3}*c \)<br>\(p_{4}=u*v \)<br>\(q_{3}=p_{4}+q_{4}\)</span>`,
-                `<span style="display: inline;">\(p_{1}=a-b \)<br>\(q_{1}=p_{2}*c \)<br>\(p_{3}=u*v \)<br>\(q_{2}=p_{4}+q_{3}\)</span>`,
-                `<span style="display: inline;">\(p_{1}=a-b \)<br>\(q_{1}=p_{1}*c \)<br>\(p_{2}=u*v \)<br>\(q_{2}=p+q\)</span>`,
+                `<span style="display: inline;">\\(p_{1}=a-b\\)<br>\\( q_{1}=p_{1}*c \\)<br>\\(p_{1}=u*v \\)<br>\\(q_{1}=p_{1}+q_{1}\\)</span>`,
+                `<span style="display: inline;">\\(p_{3}=a-b \\)<br>\\(q_{4}=p_{3}*c \\)<br>\\(p_{4}=u*v \\)<br>\\(q_{3}=p_{4}+q_{4}\\)</span>`,
+                `<span style="display: inline;">\\(p_{1}=a-b \\)<br>\\(q_{1}=p_{2}*c \\)<br>\\(p_{3}=u*v \\)<br>\\(q_{2}=p_{4}+q_{3}\\)</span>`,
+                `<span style="display: inline;">\\(p_{1}=a-b \\)<br>\\(q_{1}=p_{1}*c \\)<br>\\(p_{2}=u*v \\)<br>\\(q_{2}=p+q\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In SSA every variable is assigned exactly once, and each use refers to the latest version. Option 2: \(p_3=a-b\), \(q_4=p_3c\), \(p_4=uv\), \(q_3=p_4+q_4\) \(\\text{---}\) all distinct names with correct uses (the numbers themselves do not matter).<br><br>
-Option 1 reassigns \(p_1\) and \(q_1\); option 3 uses undefined names; option 4 uses plain p and q.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In SSA every variable is assigned exactly once, and each use refers to the latest version. Option 2: \\(p_3=a-b\\), \\(q_4=p_3c\\), \\(p_4=uv\\), \\(q_3=p_4+q_4\\) \\(\\text{---}\\) all distinct names with correct uses (the numbers themselves do not matter).<br><br>
+Option 1 reassigns \\(p_1\\) and \\(q_1\\); option 3 uses undefined names; option 4 uses plain p and q.<br><br>
 <b>Answer: Option 2</b><br><br><a href="https://gateoverflow.in/118292/gate2017-1-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61935,8 +61935,8 @@ The minimum number of total variables required to convert the above code segment
             ],
             answer: 10,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In SSA form every assignment gets a new variable:<br>
-\(x_1=u-t;\\ y_1=x_1v;\\ x_2=y_1+w;\\ y_2=t-z;\\ y_3=x_2y_2\)<br><br>
-New variables: \(x_1,y_1,x_2,y_2,y_3\) (5), plus the inputs u, t, v, w, z (5).<br><br>
+\\(x_1=u-t;\\ y_1=x_1v;\\ x_2=y_1+w;\\ y_2=t-z;\\ y_3=x_2y_2\\)<br><br>
+New variables: \\(x_1,y_1,x_2,y_2,y_3\\) (5), plus the inputs u, t, v, w, z (5).<br><br>
 Total = 10<br><br>
 <b>Answer: 10</b><br><br><a href="https://gateoverflow.in/39675/gate2016-1-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -61953,9 +61953,9 @@ Total = 10<br><br>
 (6) t4 = t3 <br>
 (7) a[t4] = -1 <br>
 (8) j = j + 1 <br>
-(9) if j\(\\leq \)5 goto (3) <br>
+(9) if j\\(\\leq \\)5 goto (3) <br>
 (10) i=i+1 <br>
-(11) if i\(\\lt \)5 goto (2) <br>
+(11) if i\\(\\lt \\)5 goto (2) <br>
 The number of nodes and edges in the control-flow-graph constructed for the above code, respectively, are</span>`,
             image: "",
             options: [
@@ -61966,8 +61966,8 @@ The number of nodes and edges in the control-flow-graph constructed for the abov
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Leaders: (1), (2) (target of 11), (3) (target of 9), (10) (after a jump).<br>
-Blocks: B1 = {1}, B2 = {2}, B3 = {3-9}, B4 = {10, 11}, plus Entry and Exit \(\\rightarrow\) 6 nodes.<br><br>
-Edges: Entry\(\\rightarrow\)B1, B1\(\\rightarrow\)B2, B2\(\\rightarrow\)B3, B3\(\\rightarrow\)B3, B3\(\\rightarrow\)B4, B4\(\\rightarrow\)B2, B4\(\\rightarrow\)Exit \(\\rightarrow\) 7 edges.<br><br>
+Blocks: B1 = {1}, B2 = {2}, B3 = {3-9}, B4 = {10, 11}, plus Entry and Exit \\(\\rightarrow\\) 6 nodes.<br><br>
+Edges: Entry\\(\\rightarrow\\)B1, B1\\(\\rightarrow\\)B2, B2\\(\\rightarrow\\)B3, B3\\(\\rightarrow\\)B3, B3\\(\\rightarrow\\)B4, B4\\(\\rightarrow\\)B2, B4\\(\\rightarrow\\)Exit \\(\\rightarrow\\) 7 edges.<br><br>
 <b>Answer: 6 and 7</b><br><br><a href="https://gateoverflow.in/8139/gate2015-2-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61983,10 +61983,10 @@ Edges: Entry\(\\rightarrow\)B1, B1\(\\rightarrow\)B2, B2\(\\rightarrow\)B3, B3\(
                 `<span style="display: inline;">Each node in AST and CFG corresponds to at most one statement in the input program</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Option 1: in a CFG a loop edge goes back to earlier code \(\\rightarrow\) false.<br>
-- Option 2: CFGs have cycles for loops \(\\rightarrow\) false.<br>
-- Option 3: an AST node can have as many children as the construct needs, and a CFG node (e.g. switch) as many successors as the code has \(\\rightarrow\) True.<br>
-- Option 4: a CFG basic block can contain many statements \(\\rightarrow\) false.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Option 1: in a CFG a loop edge goes back to earlier code \\(\\rightarrow\\) false.<br>
+- Option 2: CFGs have cycles for loops \\(\\rightarrow\\) false.<br>
+- Option 3: an AST node can have as many children as the construct needs, and a CFG node (e.g. switch) as many successors as the code has \\(\\rightarrow\\) True.<br>
+- Option 4: a CFG basic block can contain many statements \\(\\rightarrow\\) false.<br><br>
 <b>Answer: The maximum number of successors depends on the input program</b><br><br><a href="https://gateoverflow.in/8084/gate2015-2-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -61999,18 +61999,18 @@ Edges: Entry\(\\rightarrow\)B1, B1\(\\rightarrow\)B2, B2\(\\rightarrow\)B3, B3\(
             ],
             answer: 8,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In SSA every result gets a new variable. Count the operations:<br><br>
-t1 = r / 3, t2 = q + t1, t3 = t2 + s, t4 = t * 5, t5 = t3 \(-\) t4, t6 = u * v, t7 = t6 / w, t8 = t5 + t7<br><br>
-8 operations \(\\rightarrow\) 8 temporaries<br><br>
+t1 = r / 3, t2 = q + t1, t3 = t2 + s, t4 = t * 5, t5 = t3 \\(-\\) t4, t6 = u * v, t7 = t6 / w, t8 = t5 + t7<br><br>
+8 operations \\(\\rightarrow\\) 8 temporaries<br><br>
 <b>Answer: 8</b><br><br><a href="https://gateoverflow.in/8365/gate2015-1-37#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">A variable x is said to be live at a statement \(S_{i}\) in a program if the following three conditions hold simultaneously: <br>
-i. There exists a statement \(S_{j}\) that uses x <br>
-ii. There is a path from \(S_{i}\) to \(S_{j}\) in the flow graph corresponding to the program <br>
-iii. The path has no intervening assignment to x including at \(S_{i}\) and \(S_{j}\) <br><img src="images/practicepaper_intermediate_code_generation/GATE_CS_20151_q36.jpg"/><br> The variables which are live both at the statement in basic block 2 and at the statement in basic block 3 of the above control flow graph are</span>`,
+            text: `<span style="display: inline;">A variable x is said to be live at a statement \\(S_{i}\\) in a program if the following three conditions hold simultaneously: <br>
+i. There exists a statement \\(S_{j}\\) that uses x <br>
+ii. There is a path from \\(S_{i}\\) to \\(S_{j}\\) in the flow graph corresponding to the program <br>
+iii. The path has no intervening assignment to x including at \\(S_{i}\\) and \\(S_{j}\\) <br><img src="images/practicepaper_intermediate_code_generation/GATE_CS_20151_q36.jpg"/><br> The variables which are live both at the statement in basic block 2 and at the statement in basic block 3 of the above control flow graph are</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">p, s, u</span>`,
@@ -62019,11 +62019,11 @@ iii. The path has no intervening assignment to x including at \(S_{i}\) and \(S_
                 `<span style="display: inline;">q,v</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Live-in = use \(\\cup\) (live-out \(-\) def).<br><br>
-- Block 1 uses q, r, v before defining them \(\\rightarrow\) in(1) = {q, r, v}<br>
-- in(4) = {v, r} \(\\cup\) (in(1) \(-\) {q}) = {r, v}<br>
-- in(2) = {r, u} \(\\cup\) (in(4) \(-\) {v}) = {r, u}<br>
-- in(3) = {s, u} \(\\cup\) (in(4) \(-\) {q}) = {r, s, u, v}<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Live-in = use \\(\\cup\\) (live-out \\(-\\) def).<br><br>
+- Block 1 uses q, r, v before defining them \\(\\rightarrow\\) in(1) = {q, r, v}<br>
+- in(4) = {v, r} \\(\\cup\\) (in(1) \\(-\\) {q}) = {r, v}<br>
+- in(2) = {r, u} \\(\\cup\\) (in(4) \\(-\\) {v}) = {r, u}<br>
+- in(3) = {s, u} \\(\\cup\\) (in(4) \\(-\\) {q}) = {r, s, u, v}<br><br>
 Common: r, u<br><br>
 <b>Answer: r, u</b><br><br><a href="https://gateoverflow.in/8356/gate2015-1-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62047,7 +62047,7 @@ The minimum number of nodes and edges present in the DAG representation of the a
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Simplify using values:<br>
-- d = b + c, e = d \(-\) b = c (the new c), a = e + b = c + b = d<br><br>
+- d = b + c, e = d \\(-\\) b = c (the new c), a = e + b = c + b = d<br><br>
 So e shares the node of c, and the last a shares the node of d.<br><br>
 - Leaves: b, c0, d0 (3 nodes)<br>
 - n1 = b + c0 (a), n2 = n1 + d0 (c, e), n3 = b + n2 (d, a) (3 nodes, 2 edges each)<br><br>
@@ -62075,18 +62075,18 @@ Nodes = 6, edges = 6<br><br>
             neg: 0,
             type: "NAT",
             text: `<span style="display: inline;">The minimum number of arithmetic operations required to evaluate the polynomial
-\(P(x)=x^{5}+4x^{3}+6x+5\) for a given value of x, using only one temporary variable is _____.</span>`,
+\\(P(x)=x^{5}+4x^{3}+6x+5\\) for a given value of x, using only one temporary variable is _____.</span>`,
             image: "",
             options: [
             ],
             answer: 7,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Write \(P(x)=((x^2+4)\\cdot x\\cdot x+6)\\cdot x+5\):<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Write \\(P(x)=((x^2+4)\\cdot x\\cdot x+6)\\cdot x+5\\):<br><br>
 - t = x * x<br>
 - t = t + 4<br>
 - t = t * x<br>
-- t = t * x (\(x^4+4x^2\))<br>
+- t = t * x (\\(x^4+4x^2\\))<br>
 - t = t + 6<br>
-- t = t * x (\(x^5+4x^3+6x\))<br>
+- t = t * x (\\(x^5+4x^3+6x\\))<br>
 - t = t + 5<br><br>
 7 operations with one temporary.<br><br>
 <b>Answer: 7</b><br><br><a href="https://gateoverflow.in/2045/gate2014-3-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -62113,9 +62113,9 @@ CORRECT?</span>`,
                 `<span style="display: inline;">x is declared as "char x[32] [16] [2]".</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  t2 = k \(\\times\) 4 \(\\rightarrow\) element size 4 bytes (int).<br>
-t1 = j \(\\times\) 32 \(\\rightarrow\) one row of the last dimension = 32 B = 8 ints \(\\rightarrow\) third dimension 8.<br>
-t0 = i \(\\times\) 1024 \(\\rightarrow\) 1024 / 32 = 32 rows \(\\rightarrow\) second dimension 32.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  t2 = k \\(\\times\\) 4 \\(\\rightarrow\\) element size 4 bytes (int).<br>
+t1 = j \\(\\times\\) 32 \\(\\rightarrow\\) one row of the last dimension = 32 B = 8 ints \\(\\rightarrow\\) third dimension 8.<br>
+t0 = i \\(\\times\\) 1024 \\(\\rightarrow\\) 1024 / 32 = 32 rows \\(\\rightarrow\\) second dimension 32.<br><br>
 So x is int x[ ][32][8], which matches int x[32][32][8].<br><br>
 <b>Answer: int x[32][32][8]</b><br><br><a href="https://gateoverflow.in/1993/gate2014-2-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62130,11 +62130,11 @@ So x is int x[ ][32][8], which matches int x[32][32][8].<br><br>
 beginning and exits at the end.</span>`,
                 `<span style="display: inline;">Available expression analysis can be used for common subexpression elimination.</span>`,
                 `<span style="display: inline;">Live variable analysis can be used for dead code elimination</span>`,
-                `<span style="display: inline;">x=4*5 \(\\Rightarrow\)x=20 is an example of common subexpression elimination</span>`,
+                `<span style="display: inline;">x=4*5 \\(\\Rightarrow\\)x=20 is an example of common subexpression elimination</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Replacing x = 4 * 5 by x = 20 computes the constant at compile time: that is <b>constant folding</b>, not common subexpression elimination. The other statements are true.<br><br>
-<b>Answer: x = 4*5 \(\\Rightarrow\) x = 20 is an example of common subexpression elimination (FALSE)</b><br><br><a href="https://gateoverflow.in/1784/gate2014-1-17#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
+<b>Answer: x = 4*5 \\(\\Rightarrow\\) x = 20 is an example of common subexpression elimination (FALSE)</b><br><br><a href="https://gateoverflow.in/1784/gate2014-1-17#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
             marks: 2,
@@ -62194,7 +62194,7 @@ preserving correctness. What is the minimum number of spills to memory in the co
                 `<span style="display: inline;">3</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  a stays live till the end (used in x \(\\gt\) a and y = a * a), and c is needed for d, e and x. While computing d or e, three values (a, c, the new result) are live, but there are only 2 registers.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  a stays live till the end (used in x \\(\\gt\\) a and y = a * a), and c is needed for d, e and x. While computing d or e, three values (a, c, the new result) are live, but there are only 2 registers.<br><br>
 So at least one spill is needed. Using code motion (computing things where they are needed) one spill is enough.<br><br>
 <b>Answer: 1</b><br><br><a href="https://gateoverflow.in/1556/gate2013-48#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62236,9 +62236,9 @@ minimum number of registers needed to evaluate this expression?  <br><img src="i
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Evaluate the deeper right subtree first:<br>
-- load c, d (2 registers); c + d \(\\rightarrow\) R1<br>
-- load e \(\\rightarrow\) R2; e \(-\) R1 \(\\rightarrow\) R1 (1 register busy)<br>
-- load a, b into R2, R3; a \(-\) b \(\\rightarrow\) R2; R2 + R1<br><br>
+- load c, d (2 registers); c + d \\(\\rightarrow\\) R1<br>
+- load e \\(\\rightarrow\\) R2; e \\(-\\) R1 \\(\\rightarrow\\) R1 (1 register busy)<br>
+- load a, b into R2, R3; a \\(-\\) b \\(\\rightarrow\\) R2; R2 + R1<br><br>
 At most 3 registers are in use at once, and 2 is not enough.<br><br>
 <b>Answer: 3</b><br><br><a href="https://gateoverflow.in/2138/gate2011-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62268,10 +62268,10 @@ minimum number of registers needed to execute this program without spilling?</sp
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Track the live values:<br>
-- a, b \(\\rightarrow\) d = a + b (c, d live)<br>
+- a, b \\(\\rightarrow\\) d = a + b (c, d live)<br>
 - e = c + d (c, e live)<br>
 - f = c + e (c, e, f live: 3)<br>
-- b = c + e (b, f) \(\\rightarrow\) e = b + f (e, f) \(\\rightarrow\) d = 5 + e (d, f) \(\\rightarrow\) return d + f<br><br>
+- b = c + e (b, f) \\(\\rightarrow\\) e = b + f (e, f) \\(\\rightarrow\\) d = 5 + e (d, f) \\(\\rightarrow\\) return d + f<br><br>
 At most 3 values are live at once.<br><br>
 <b>Answer: 3</b><br><br><a href="https://gateoverflow.in/2338/gate2010-37#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62353,15 +62353,15 @@ Which one to the following false?</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The expression \(( a * b) * c \\; op \\dots\)<br>
-where 'op' is one of '+', '*' and '\(\\uparrow\)' (exponentiation) can be evaluated on a CPU with single register without  storing the value of (a * b) if
+            text: `<span style="display: inline;">The expression \\(( a * b) * c \\; op \\dots\\)<br>
+where 'op' is one of '+', '*' and '\\(\\uparrow\\)' (exponentiation) can be evaluated on a CPU with single register without  storing the value of (a * b) if
 
 </span>`,
             image: "",
             options: [
                 `<span style="display: inline;">op' is '+' or '*'</span>`,
-                `<span style="display: inline;">op' is '\(\\uparrow\)' or '*'</span>`,
-                `<span style="display: inline;">op' is '\(\\uparrow\)' or '+'</span>`,
+                `<span style="display: inline;">op' is '\\(\\uparrow\\)' or '*'</span>`,
+                `<span style="display: inline;">op' is '\\(\\uparrow\\)' or '+'</span>`,
                 `<span style="display: inline;">not possible to evaluate without storing</span>`,
             ],
             answer: "A",
@@ -62439,14 +62439,14 @@ registerTest({
             text: `<span style="display: inline;">Consider the control flow graph given below.  <br><img src="images/practicepaper_runtime_environment/GATE_CS_20262_q35.webp"/><br>Which one of the following options is the set of live variables at the exit point of each basic block?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\({B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{b}, {c}, {e}, {f}\\}, {B} 4: \\phi\)</span>`,
-                `<span style="display: inline;">\({B} 1\): \(\\phi\), \({B} 2\): \(\\{\) d, e \(\\}\), \({B} 3\): \(\\{\) a, c, f \(\\}\), \({B} 4\): \(\\phi\)</span>`,
-                `<span style="display: inline;">\({B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{c}, {e}, {f}\\}, {B} 4: \\phi\)</span>`,
-                `<span style="display: inline;">\({B} 1: \\varnothing, {B} 2:\\{{d}, {e}, {f}\\}, {B} 3:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 4: \\phi\)</span>`,
+                `<span style="display: inline;">\\({B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{b}, {c}, {e}, {f}\\}, {B} 4: \\phi\\)</span>`,
+                `<span style="display: inline;">\\({B} 1\\): \\(\\phi\\), \\({B} 2\\): \\(\\{\\) d, e \\(\\}\\), \\({B} 3\\): \\(\\{\\) a, c, f \\(\\}\\), \\({B} 4\\): \\(\\phi\\)</span>`,
+                `<span style="display: inline;">\\({B} 1:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 2:\\{{d}, {e}\\}, {B} 3:\\{{c}, {e}, {f}\\}, {B} 4: \\phi\\)</span>`,
+                `<span style="display: inline;">\\({B} 1: \\varnothing, {B} 2:\\{{d}, {e}, {f}\\}, {B} 3:\\{{a}, {b}, {c}, {e}, {f}\\}, {B} 4: \\phi\\)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  This is a standard backward liveness-analysis question based on the accompanying control-flow graph. Liveness is computed backward through the CFG using \(\\text{live-in}(B)=\\text{use}(B)\\cup\\big(\\text{live-out}(B)-\\text{def}(B)\\big)\) and \(\\text{live-out}(B)=\\bigcup_{\\text{succ }S}\\text{live-in}(S)\), iterating until the sets stabilize.<br><br>
-Working from the exit block backward (where no variables are live at the very end), and propagating each block's used-but-not-yet-redefined variables up to its predecessors, the live-out sets that satisfy this fixpoint for the given graph are: \(B1:\\{a,b,c,e,f\\}\), \(B2:\\{d,e\\}\), \(B3:\\{b,c,e,f\\}\), and \(B4:\\phi\) (empty, since it's the exit).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  This is a standard backward liveness-analysis question based on the accompanying control-flow graph. Liveness is computed backward through the CFG using \\(\\text{live-in}(B)=\\text{use}(B)\\cup\\big(\\text{live-out}(B)-\\text{def}(B)\\big)\\) and \\(\\text{live-out}(B)=\\bigcup_{\\text{succ }S}\\text{live-in}(S)\\), iterating until the sets stabilize.<br><br>
+Working from the exit block backward (where no variables are live at the very end), and propagating each block's used-but-not-yet-redefined variables up to its predecessors, the live-out sets that satisfy this fixpoint for the given graph are: \\(B1:\\{a,b,c,e,f\\}\\), \\(B2:\\{d,e\\}\\), \\(B3:\\{b,c,e,f\\}\\), and \\(B4:\\phi\\) (empty, since it's the exit).<br><br>
 <b>Answer: B1:{a,b,c,e,f}, B2:{d,e}, B3:{b,c,e,f}, B4:&phi;</b><br><br><a href="https://gateoverflow.in/523111/gate-cse-2026-set-2-question-35#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62466,7 +62466,7 @@ Working from the exit block backward (where no variables are live at the very en
 - A <b>static</b> variable declared inside a function is stored in the <b>data/BSS segment</b> (its lifetime spans the whole program), not the heap.<br>
 - A plain (non-static, non-dynamically-allocated) <b>array declared inside a function</b> is a local/automatic variable, stored on the <b>stack</b>.<br>
 - The <b>return address</b> of a function call is pushed onto the <b>stack</b> as part of the function's activation record/call frame.<br>
-- Only memory obtained via <b>\(\\text{malloc()}\)</b> (or similar dynamic allocation calls) comes from the <b>heap</b>, and its lifetime is managed explicitly by the programmer (until \(\\text{free()}\) is called).<br><br>
+- Only memory obtained via <b>\\(\\text{malloc()}\\)</b> (or similar dynamic allocation calls) comes from the <b>heap</b>, and its lifetime is managed explicitly by the programmer (until \\(\\text{free()}\\) is called).<br><br>
 <b>Answer: A dynamically allocated array of integers created using malloc()</b><br><br><a href="https://gateoverflow.in/523139/gate-cse-2026-set-2-question-7#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62485,12 +62485,12 @@ point of each basic block?</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Uses / definitions: B1 defines i, j, a; B2 uses and defines i, j; B3 defines a; B4 uses a and defines i. B4 goes to B2 or exit.<br><br>
-- \(IN(B2)=\\{i,j\\}\\cup(OUT(B2)-\\{i,j\\})\)<br>
-- \(IN(B4)=\\{a\\}\\cup(OUT(B4)-\\{i\\})\), \(IN(B3)=OUT(B3)-\\{a\\}\)<br><br>
+- \\(IN(B2)=\\{i,j\\}\\cup(OUT(B2)-\\{i,j\\})\\)<br>
+- \\(IN(B4)=\\{a\\}\\cup(OUT(B4)-\\{i\\})\\), \\(IN(B3)=OUT(B3)-\\{a\\}\\)<br><br>
 Iterating to a fixed point:<br>
 - OUT(B4) = IN(B2) = {a, i, j}<br>
 - IN(B4) = {a, j} = OUT(B3); IN(B3) = {j}<br>
-- OUT(B2) = IN(B3) \(\\cup\) IN(B4) = {a, j}<br>
+- OUT(B2) = IN(B3) \\(\\cup\\) IN(B4) = {a, j}<br>
 - OUT(B1) = IN(B2) = {a, i, j}<br><br>
 <b>Answer: B1: {a, i, j}, B2: {a, j}, B3: {a, j}, B4: {a, i, j}</b><br><br><a href="https://gateoverflow.in/399284/gate-cse-2023-question-27#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62507,9 +62507,9 @@ Consider a basic block that consists of two statements, S1 followed by S2. Which
             image: "",
             options: [
                 `<span style="display: inline;">OUT(S1) = IN (S2)</span>`,
-                `<span style="display: inline;">OUT (S1) = IN (S1) \(\\cup\) USE (S1)</span>`,
-                `<span style="display: inline;">OUT (S1) =IN (S2) \(\\cup\) OUT (S2)</span>`,
-                `<span style="display: inline;">OUT (S1) = USE (S1)\(\\cup\) IN (S2)</span>`,
+                `<span style="display: inline;">OUT (S1) = IN (S1) \\(\\cup\\) USE (S1)</span>`,
+                `<span style="display: inline;">OUT (S1) =IN (S2) \\(\\cup\\) OUT (S2)</span>`,
+                `<span style="display: inline;">OUT (S1) = USE (S1)\\(\\cup\\) IN (S2)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a basic block, control always goes from S1 straight to S2, so whatever is live just after S1 is exactly what is live just before S2: OUT(S1) = IN(S2).<br><br>
@@ -62531,7 +62531,7 @@ S1: The sequence of procedure calls corresponds to a preorder traversal of the a
                 `<span style="display: inline;">S1 is false and S2 is false</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In an activation tree a procedure is called (visited) before its children \(\\rightarrow\) calls follow <b>preorder</b>. A procedure returns only after all its children return \(\\rightarrow\) returns follow <b>postorder</b>.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In an activation tree a procedure is called (visited) before its children \\(\\rightarrow\\) calls follow <b>preorder</b>. A procedure returns only after all its children return \\(\\rightarrow\\) returns follow <b>postorder</b>.<br><br>
 <b>Answer: S1 is true and S2 is true</b><br><br><a href="https://gateoverflow.in/357448/gate-cse-2021-set-1-question-4#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62576,16 +62576,16 @@ S1: The sequence of procedure calls corresponds to a preorder traversal of the a
 <br><img src="images/practicepaper_runtime_environment/GATE_CS_20162_q19.jpg"/></span>`,
             image: "",
             options: [
-                `<span style="display: inline;">P\(\\leftrightarrow\)i, Q \(\\leftrightarrow\) ii, R\(\\leftrightarrow\) iv,S\(\\leftrightarrow\) iii</span>`,
-                `<span style="display: inline;">P\(\\leftrightarrow\) iii, Q\(\\leftrightarrow\)i, R\(\\leftrightarrow\) ii, S\(\\leftrightarrow\) iv</span>`,
-                `<span style="display: inline;">P\(\\leftrightarrow\) ii, Q\(\\leftrightarrow\) iii, R\(\\leftrightarrow\) i, S\(\\leftrightarrow\) iv</span>`,
-                `<span style="display: inline;">P\(\\leftrightarrow\) iv,Q\(\\leftrightarrow\) i, R\(\\leftrightarrow\) ii, S\(\\leftrightarrow\) iii</span>`,
+                `<span style="display: inline;">P\\(\\leftrightarrow\\)i, Q \\(\\leftrightarrow\\) ii, R\\(\\leftrightarrow\\) iv,S\\(\\leftrightarrow\\) iii</span>`,
+                `<span style="display: inline;">P\\(\\leftrightarrow\\) iii, Q\\(\\leftrightarrow\\)i, R\\(\\leftrightarrow\\) ii, S\\(\\leftrightarrow\\) iv</span>`,
+                `<span style="display: inline;">P\\(\\leftrightarrow\\) ii, Q\\(\\leftrightarrow\\) iii, R\\(\\leftrightarrow\\) i, S\\(\\leftrightarrow\\) iv</span>`,
+                `<span style="display: inline;">P\\(\\leftrightarrow\\) iv,Q\\(\\leftrightarrow\\) i, R\\(\\leftrightarrow\\) ii, S\\(\\leftrightarrow\\) iii</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- P. Lexical analysis \(\\rightarrow\) (iii) regular expressions (token patterns)<br>
-- Q. Top-down parsing \(\\rightarrow\) (i) leftmost derivation<br>
-- R. Semantic analysis \(\\rightarrow\) (ii) type checking<br>
-- S. Runtime environments \(\\rightarrow\) (iv) activation records<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- P. Lexical analysis \\(\\rightarrow\\) (iii) regular expressions (token patterns)<br>
+- Q. Top-down parsing \\(\\rightarrow\\) (i) leftmost derivation<br>
+- R. Semantic analysis \\(\\rightarrow\\) (ii) type checking<br>
+- S. Runtime environments \\(\\rightarrow\\) (iv) activation records<br><br>
 <b>Answer: P-iii, Q-i, R-ii, S-iv</b><br><br><a href="https://gateoverflow.in/39548/gate2016-2-19#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62620,10 +62620,10 @@ S1: The sequence of procedure calls corresponds to a preorder traversal of the a
                 `<span style="display: inline;">1 and 3 only</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 1: With static allocation each function has one fixed data area, so recursive calls overwrite it \(\\rightarrow\) True.<br>
-- 2: Garbage collection is not needed for recursion \(\\rightarrow\) False.<br>
-- 3: Each call needs its own activation record created at run time \(\\rightarrow\) True.<br>
-- 4: A stack alone is enough; a heap is not needed \(\\rightarrow\) False.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 1: With static allocation each function has one fixed data area, so recursive calls overwrite it \\(\\rightarrow\\) True.<br>
+- 2: Garbage collection is not needed for recursion \\(\\rightarrow\\) False.<br>
+- 3: Each call needs its own activation record created at run time \\(\\rightarrow\\) True.<br>
+- 4: A stack alone is enough; a heap is not needed \\(\\rightarrow\\) False.<br><br>
 <b>Answer: 1 and 3 only</b><br><br><a href="https://gateoverflow.in/2052/gate2014-3-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62650,7 +62650,7 @@ Dynamic memory allocation (malloc/new) happens only when the program runs.<br><b
             text: `<span style="display: inline;">Consider the program given below, in a block-structured pseudo-language with lexical scoping and
 nesting of procedures permitted.
 <br><img src="images/practicepaper_runtime_environment/GATE_CS_20121_q36.jpg"/><br>
-Consider the calling chain: Main \(\\rightarrow\) A1 \(\\rightarrow\) A2 \(\\rightarrow\) A21 \(\\rightarrow\) A1 <br>
+Consider the calling chain: Main \\(\\rightarrow\\) A1 \\(\\rightarrow\\) A2 \\(\\rightarrow\\) A21 \\(\\rightarrow\\) A1 <br>
 The correct set of activation records along with their access links is given by <br><img src="images/practicepaper_runtime_environment/GATE_CS_20121_q36a.jpg"/></span>`,
             image: "",
             options: [
@@ -62661,9 +62661,9 @@ The correct set of activation records along with their access links is given by 
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An access link points to the activation record of the lexically enclosing procedure.<br><br>
-- A1 and A2 are declared in Main \(\\rightarrow\) links to Main<br>
-- A21 is declared in A2 \(\\rightarrow\) link to A2<br>
-- The second A1 (called from A21) is still declared in Main \(\\rightarrow\) link to Main<br><br>
+- A1 and A2 are declared in Main \\(\\rightarrow\\) links to Main<br>
+- A21 is declared in A2 \\(\\rightarrow\\) link to A2<br>
+- The second A1 (called from A21) is still declared in Main \\(\\rightarrow\\) link to Main<br><br>
 That is figure D.<br><br>
 <b>Answer: D</b><br><br><a href="https://gateoverflow.in/1758/gate2012-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
@@ -62682,7 +62682,7 @@ That is figure D.<br><br>
                 `<span style="display: inline;">replacing a costly operation by a relatively cheaper one</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Strength reduction replaces an expensive operation with a cheaper equivalent, e.g. x * 2 \(\\rightarrow\) x + x or x \(\\lt\\lt\) 1.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Strength reduction replaces an expensive operation with a cheaper equivalent, e.g. x * 2 \\(\\rightarrow\\) x + x or x \\(\\lt\\lt\\) 1.<br><br>
 <b>Answer: replacing a costly operation by a relatively cheaper one</b><br><br><a href="https://gateoverflow.in/50567/isro2011-3" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
         },
         {
@@ -62929,10 +62929,10 @@ saved on a different stack before the recursive fraction can be called.</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(0, 200, 500, 600\)</span>`,
-                `<span style="display: inline;">\(0, 200, 1000, 1600\)</span>`,
-                `<span style="display: inline;">\(200, 500, 600, 800\)</span>`,
-                `<span style="display: inline;">\(200, 700, 1300, 2100\)</span>`,
+                `<span style="display: inline;">\\(0, 200, 500, 600\\)</span>`,
+                `<span style="display: inline;">\\(0, 200, 1000, 1600\\)</span>`,
+                `<span style="display: inline;">\\(200, 500, 600, 800\\)</span>`,
+                `<span style="display: inline;">\\(200, 700, 1300, 2100\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1665/gate1998-1-28" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1998" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 1998</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/compiler-design" style="color:#2f6d1a; text-decoration:none;" target="_blank">Compiler Design</a></div></div>`
@@ -63090,7 +63090,7 @@ registerTest({
  {
   if( E1 ) return 1;
   return E2 ;
- } </pre></code>Which one of the following options gives the correct replacements for the expressions \(\\textbf{E1}\) and \(\\textbf{E2}?\)</span>`,
+ } </pre></code>Which one of the following options gives the correct replacements for the expressions \\(\\textbf{E1}\\) and \\(\\textbf{E2}?\\)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">E1: head == NULL<br>
@@ -63104,27 +63104,27 @@ E2: 1 + getListSize(head)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  We want a recursive count of nodes in a non-empty singly linked list.<br><br>
-The natural recursive base case is: <b>if the current node is the last node</b> (i.e. \(\\text{head->next==NULL}\)), then this contributes exactly \(1\) to the count, so \(\\text{E1: head->next==NULL}\), returning \(1\).<br><br>
-Otherwise, the count is \(1\) (for the current node) plus however many nodes remain in the rest of the list starting from \(\\text{head->next}\): \(\\text{E2: 1+getListSize(head->next)}\).<br><br>
-(Using \(\\text{head==NULL}\) as the base case instead would also work logically for a possibly-empty list, but here the function is documented to be called only on a non-empty list, and combined with the given E2 form, the option that consistently checks \(\\text{head->next}\) in the base case and recurses on \(\\text{head->next}\) is the matching, correct pair.)<br><br>
+The natural recursive base case is: <b>if the current node is the last node</b> (i.e. \\(\\text{head->next==NULL}\\)), then this contributes exactly \\(1\\) to the count, so \\(\\text{E1: head->next==NULL}\\), returning \\(1\\).<br><br>
+Otherwise, the count is \\(1\\) (for the current node) plus however many nodes remain in the rest of the list starting from \\(\\text{head->next}\\): \\(\\text{E2: 1+getListSize(head->next)}\\).<br><br>
+(Using \\(\\text{head==NULL}\\) as the base case instead would also work logically for a possibly-empty list, but here the function is documented to be called only on a non-empty list, and combined with the given E2 form, the option that consistently checks \\(\\text{head->next}\\) in the base case and recurses on \\(\\text{head->next}\\) is the matching, correct pair.)<br><br>
 <b>Answer: E1: head-&gt;next == NULL, E2: 1 + getListSize(head-&gt;next)</b><br><br><a href="https://gateoverflow.in/523051/gate-cse-2026-set-1-question-29#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider an unordered list of \(N \) distinct integers.<br>
+            text: `<span style="display: inline;">Consider an unordered list of \\(N \\) distinct integers.<br>
 What is the minimum number of element comparisons required to find an integer in the list that is NOT the largest in the list?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">1</span>`,
-                `<span style="display: inline;">\(N - 1 \)</span>`,
-                `<span style="display: inline;">\(N \)</span>`,
-                `<span style="display: inline;">\(2N - 1 \)</span>`,
+                `<span style="display: inline;">\\(N - 1 \\)</span>`,
+                `<span style="display: inline;">\\(N \\)</span>`,
+                `<span style="display: inline;">\\(2N - 1 \\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  We just need to find <i>some</i> element guaranteed not to be the overall largest &mdash; not identify the largest itself, and not verify anything about the rest of the list.<br><br>
-Compare <i>any</i> two elements of the list against each other: whichever of the two is smaller is guaranteed to <b>not</b> be the maximum of the whole list (since the larger of this pair beats it, so it can't possibly be the overall largest). This requires only <b>one</b> comparison, and works for any list of \(N\\ge2\) distinct integers.<br><br>
+Compare <i>any</i> two elements of the list against each other: whichever of the two is smaller is guaranteed to <b>not</b> be the maximum of the whole list (since the larger of this pair beats it, so it can't possibly be the overall largest). This requires only <b>one</b> comparison, and works for any list of \\(N\\ge2\\) distinct integers.<br><br>
 <b>Answer: 1</b><br><br><a href="https://gateoverflow.in/460825/gate-cse-2025-set-2-question-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63146,10 +63146,10 @@ Consider the following C program segment that modifies the list L1. The number o
             options: [
             ],
             answer: 5,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  From the given lists, \(L1: 1,7,12,3,9,5,11,15,8\) and \(L2:1,11,6,9,15,12,4\) (so \(L2=\\{1,11,6,9,15,12,4\\}\) as a lookup set).<br><br>
-The code walks \(ptr1\) through \(L1\), and for each node, looks at the <i>next</i> node's value: if that value is found anywhere in \(L2\), the next node is unlinked (removed) and \(ptr1\) stays put (to re-check the new next node); otherwise \(ptr1\) simply advances.<br><br>
-Tracing through: starting value \(7\) (not in L2) &rarr; advance. Next value \(12\) (in L2) &rarr; delete \(12\). Next value \(3\) (not in L2) &rarr; advance. Next value \(9\) (in L2) &rarr; delete \(9\). Next value \(5\) (not in L2) &rarr; advance. Next value \(11\) (in L2) &rarr; delete \(11\). Next value \(15\) (in L2) &rarr; delete \(15\). Next value \(8\) (not in L2) &rarr; advance; now at the last node, loop ends.<br><br>
-Nodes removed: \(12,9,11,15\) (\(4\) nodes), leaving \(9-4=5\) nodes: \(1,7,3,5,8\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  From the given lists, \\(L1: 1,7,12,3,9,5,11,15,8\\) and \\(L2:1,11,6,9,15,12,4\\) (so \\(L2=\\{1,11,6,9,15,12,4\\}\\) as a lookup set).<br><br>
+The code walks \\(ptr1\\) through \\(L1\\), and for each node, looks at the <i>next</i> node's value: if that value is found anywhere in \\(L2\\), the next node is unlinked (removed) and \\(ptr1\\) stays put (to re-check the new next node); otherwise \\(ptr1\\) simply advances.<br><br>
+Tracing through: starting value \\(7\\) (not in L2) &rarr; advance. Next value \\(12\\) (in L2) &rarr; delete \\(12\\). Next value \\(3\\) (not in L2) &rarr; advance. Next value \\(9\\) (in L2) &rarr; delete \\(9\\). Next value \\(5\\) (not in L2) &rarr; advance. Next value \\(11\\) (in L2) &rarr; delete \\(11\\). Next value \\(15\\) (in L2) &rarr; delete \\(15\\). Next value \\(8\\) (not in L2) &rarr; advance; now at the last node, loop ends.<br><br>
+Nodes removed: \\(12,9,11,15\\) (\\(4\\) nodes), leaving \\(9-4=5\\) nodes: \\(1,7,3,5,8\\).<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/460028/gate-cse-2025-set-1-question-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63172,8 +63172,8 @@ DLLdel?</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  To delete a node we must update its <b>predecessor's</b> next pointer.<br><br>
-- Singly linked list: the predecessor is found only by walking from the head \(\\rightarrow\) \(O(n)\).<br>
-- Doubly linked list: the node's prev pointer gives the predecessor directly \(\\rightarrow\) \(O(1)\).<br><br>
+- Singly linked list: the predecessor is found only by walking from the head \\(\\rightarrow\\) \\(O(n)\\).<br>
+- Doubly linked list: the node's prev pointer gives the predecessor directly \\(\\rightarrow\\) \\(O(1)\\).<br><br>
 <b>Answer: SLLdel is O(n) and DLLdel is O(1)</b><br><br><a href="https://gateoverflow.in/399309/gate-cse-2023-question-3#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63183,16 +63183,16 @@ DLLdel?</span>`,
             text: `<span style="display: inline;">Consider the problem of reversing a singly linked list. To take an example, given the linked list below,<br><img src="images/practicepaper_link_list/q5a.jpg" /><br>the reversed linked list should look like   <br><img src="images/practicepaper_link_list/q5b.jpg" /><br>   Which one of the following statements is TRUE about the time complexity of algorithms that solve the above problem in O(1) space?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">The best algorithm for the problem takes \(\\theta(n)\) time in the worst case.</span>`,
-                `<span style="display: inline;">The best algorithm for the problem takes \(\\theta(n \\log n)\) time in the worst case.</span>`,
-                `<span style="display: inline;">The best algorithm for the problem takes \(\\theta(n^2)\) time in the worst case.</span>`,
+                `<span style="display: inline;">The best algorithm for the problem takes \\(\\theta(n)\\) time in the worst case.</span>`,
+                `<span style="display: inline;">The best algorithm for the problem takes \\(\\theta(n \\log n)\\) time in the worst case.</span>`,
+                `<span style="display: inline;">The best algorithm for the problem takes \\(\\theta(n^2)\\) time in the worst case.</span>`,
                 `<span style="display: inline;">It is not possible to reverse a singly linked list in O(1) space.</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Walk the list once with three pointers (prev, curr, next), reversing each link as you go:<br>
-next = curr\(\\rightarrow\)next; curr\(\\rightarrow\)next = prev; prev = curr; curr = next.<br><br>
-Each node is visited once and only 3 extra pointers are used, so it takes \(\\Theta(n)\) time in \(O(1)\) space. It cannot be faster, because every link must be changed.<br><br>
-<b>Answer: The best algorithm takes \(\\theta(n)\) time in the worst case</b><br><br><a href="https://gateoverflow.in/371931/Gate-cse-2022-question-5#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+next = curr\\(\\rightarrow\\)next; curr\\(\\rightarrow\\)next = prev; prev = curr; curr = next.<br><br>
+Each node is visited once and only 3 extra pointers are used, so it takes \\(\\Theta(n)\\) time in \\(O(1)\\) space. It cannot be faster, because every link must be changed.<br><br>
+<b>Answer: The best algorithm takes \\(\\theta(n)\\) time in the worst case</b><br><br><a href="https://gateoverflow.in/371931/Gate-cse-2022-question-5#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -63227,7 +63227,7 @@ for (index=0; index < = 3; index++) {
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The list has 4 nodes (values 0, 1, 2, 3). The last node's next is <b>never set</b>; malloc does not initialize it.<br><br>
-In the last loop pass (index = 3), head moves to the 4th node and then to its next (garbage), and the second printf dereferences that pointer \(\\rightarrow\) undefined behaviour / possible crash.<br><br>
+In the last loop pass (index = 3), head moves to the 4th node and then to its next (garbage), and the second printf dereferences that pointer \\(\\rightarrow\\) undefined behaviour / possible crash.<br><br>
 (A missing return in main is allowed in C.)<br><br>
 <b>Answer: It dereferences an uninitialized pointer that may result in a run-time error</b><br><br><a href="https://gateoverflow.in/357505/gate-cse-2021-set-2-question-35#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -63238,15 +63238,15 @@ In the last loop pass (index = 3), head moves to the 4th node and then to its ne
             text: `<span style="display: inline;">What is the worst case time complexity of inserting n elements into an empty linked list, if the linked list needs to be maintained in sorted order?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n \\log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^2)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (1)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n \\log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^2)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1)\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  To keep the list sorted, each insertion must first find its position by walking the list: up to k steps when the list has k elements.<br><br>
-Total in the worst case: \(1+2+\\cdots+(n-1)=\\Theta(n^2)\)<br><br>
-<b>Answer: \(\\Theta(n^2)\)</b><br><br><a href="https://gateoverflow.in/333215/gate2020-cs-16#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+Total in the worst case: \\(1+2+\\cdots+(n-1)=\\Theta(n^2)\\)<br><br>
+<b>Answer: \\(\\Theta(n^2)\\)</b><br><br><a href="https://gateoverflow.in/333215/gate2020-cs-16#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -63259,14 +63259,14 @@ Total in the worst case: \(1+2+\\cdots+(n-1)=\\Theta(n^2)\)<br><br>
 };</code></pre>Where Fwd and Bwd represent forward and backward link to the adjacent elements of the list. Which of the following segment of code deletes the node pointed to by X from the doubly linked list, if it is assumed that X points to neither the first nor the last node of the list?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(X \\rightarrow \\text { Bwd } \\rightarrow \\text { Fwd }=X \\rightarrow \\text { Fwd; } X \\rightarrow F w d \\rightarrow { Bwd }=X \\rightarrow { Bwd; }\)</span>`,
-                `<span style="display: inline;">\(X \\rightarrow \\text { Bwd.Fwd }=X \\rightarrow \\text { Fwd; } X . \\text { Fwd } \\rightarrow \\text { Bwd }=X \\rightarrow \\text { Bwd; }\)</span>`,
-                `<span style="display: inline;">\(X . \\text { Bwd } \\rightarrow \\text { Fwd }=X . \\text { Bwd; } x \\rightarrow { Fwd.Bwd }=X . B w d\)</span>`,
-                `<span style="display: inline;">\(X \\rightarrow \\text { Bwd } \\rightarrow \\text { Fwd }=X \\rightarrow \\text { Bwd; } X \\rightarrow \\text{ Fwd } \\rightarrow \\text { Bwd }=X \\rightarrow \\text { Fwd; }\)</span>`,
+                `<span style="display: inline;">\\(X \\rightarrow \\text { Bwd } \\rightarrow \\text { Fwd }=X \\rightarrow \\text { Fwd; } X \\rightarrow F w d \\rightarrow { Bwd }=X \\rightarrow { Bwd; }\\)</span>`,
+                `<span style="display: inline;">\\(X \\rightarrow \\text { Bwd.Fwd }=X \\rightarrow \\text { Fwd; } X . \\text { Fwd } \\rightarrow \\text { Bwd }=X \\rightarrow \\text { Bwd; }\\)</span>`,
+                `<span style="display: inline;">\\(X . \\text { Bwd } \\rightarrow \\text { Fwd }=X . \\text { Bwd; } x \\rightarrow { Fwd.Bwd }=X . B w d\\)</span>`,
+                `<span style="display: inline;">\\(X \\rightarrow \\text { Bwd } \\rightarrow \\text { Fwd }=X \\rightarrow \\text { Bwd; } X \\rightarrow \\text{ Fwd } \\rightarrow \\text { Bwd }=X \\rightarrow \\text { Fwd; }\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  To unlink X, its previous node must point forward to X's next, and its next node must point back to X's previous:<br>
-\(X\\rightarrow Bwd\\rightarrow Fwd=X\\rightarrow Fwd;\\ \\ X\\rightarrow Fwd\\rightarrow Bwd=X\\rightarrow Bwd;\)<br><br>
+\\(X\\rightarrow Bwd\\rightarrow Fwd=X\\rightarrow Fwd;\\ \\ X\\rightarrow Fwd\\rightarrow Bwd=X\\rightarrow Bwd;\\)<br><br>
 <b>Answer: Option 1</b><br><br><a href="https://gateoverflow.in/213509/isro2018-79" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63342,29 +63342,29 @@ Assuming that m and n point to valid NULL- terminated linked lists, invocation o
                 `<span style="display: inline;">append list n to the end of list m for all inputs.</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  join walks to the last node of n and links it to m. But if list n is empty (n = NULL), p \(\\rightarrow\) next is a <b>null pointer dereference</b>. Otherwise m is appended to the end of n.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  join walks to the last node of n and links it to m. But if list n is empty (n = NULL), p \\(\\rightarrow\\) next is a <b>null pointer dereference</b>. Otherwise m is appended to the end of n.<br><br>
 <b>Answer: either cause a null pointer dereference or append list m to the end of list n</b><br><br><a href="https://gateoverflow.in/118711/gate2017-1-8#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">N items are stored in a sorted doubly linked list. For a delete operation, a pointer is provided to the record to be deleted. For a decrease-key operation, a pointer is provided to the record on which the operation is to be performed. <br> An algorithm performs the following operations on the list in this order: \(\\Theta(N) \\; delete \) , \(  O(logN) \\;  insert \), \( O(logN) \\; find \),  and \( \\Theta(N) \\; decrease-key\). What is the time complexity of all these operations put together?</span>`,
+            text: `<span style="display: inline;">N items are stored in a sorted doubly linked list. For a delete operation, a pointer is provided to the record to be deleted. For a decrease-key operation, a pointer is provided to the record on which the operation is to be performed. <br> An algorithm performs the following operations on the list in this order: \\(\\Theta(N) \\; delete \\) , \\(  O(logN) \\;  insert \\), \\( O(logN) \\; find \\),  and \\( \\Theta(N) \\; decrease-key\\). What is the time complexity of all these operations put together?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(log^{2}N)\)</span>`,
+                `<span style="display: inline;">\\(O(log^{2}N)\\)</span>`,
                 `<span style="display: inline;">O(N)</span>`,
-                `<span style="display: inline;">\(O(N^{2})\)</span>`,
-                `<span style="display: inline;">\(\\Theta (N^{2} logN)\)</span>`,
+                `<span style="display: inline;">\\(O(N^{2})\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (N^{2} logN)\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a sorted doubly linked list (pointers given for delete and decrease-key):<br>
-- delete: \(O(1)\) each \(\\rightarrow\) \(\\Theta(N)\) in total<br>
-- insert: find the position, \(O(N)\) each \(\\rightarrow\) \(O(N\\log N)\)<br>
-- find: \(O(N)\) each \(\\rightarrow\) \(O(N\\log N)\)<br>
-- decrease-key: the node may have to move back towards the front, \(O(N)\) each \(\\rightarrow\) \(O(N^2)\)<br><br>
-Total = \(O(N^2)\)<br><br>
-<b>Answer: \(O(N^2)\)</b><br><br><a href="https://gateoverflow.in/39557/gate2016-2-15#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+- delete: \\(O(1)\\) each \\(\\rightarrow\\) \\(\\Theta(N)\\) in total<br>
+- insert: find the position, \\(O(N)\\) each \\(\\rightarrow\\) \\(O(N\\log N)\\)<br>
+- find: \\(O(N)\\) each \\(\\rightarrow\\) \\(O(N\\log N)\\)<br>
+- decrease-key: the node may have to move back towards the front, \\(O(N)\\) each \\(\\rightarrow\\) \\(O(N^2)\\)<br><br>
+Total = \\(O(N^2)\\)<br><br>
+<b>Answer: \\(O(N^2)\\)</b><br><br><a href="https://gateoverflow.in/39557/gate2016-2-15#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -63373,21 +63373,21 @@ Total = \(O(N^2)\)<br><br>
             text: `<span style="display: inline;">An unordered list contains n distinct elements. The number of comparisons to find an element in this list that is neither maximum nor minimum is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (1)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1)\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Take any 3 elements and compare them (3 comparisons). The middle one of the three is neither the overall maximum nor the overall minimum.<br><br>
 This is a constant number of comparisons.<br><br>
-<b>Answer: \(\\Theta(1)\)</b><br><br><a href="https://gateoverflow.in/8113/gate2015-2-6#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+<b>Answer: \\(\\Theta(1)\\)</b><br><br><a href="https://gateoverflow.in/8113/gate2015-2-6#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">An algorithm performs \((log N)^{1/2}\) find operations, \(N\)  insert operations, \((log N)^{1/2}\) delete operations, and \((log N)^{1/2}\) decrease-key operations on a set of data items with keys drawn from a linearly ordered set. For a delete operation, a pointer is provided to the record that must be deleted. For the decrease-key operation, a pointer is provided to the record that has its key decreased. Which one of the following data structures is the most suited for the algorithm to use, if the goal is to achieve the best total asymptotic complexity considering all the operations?</span>`,
+            text: `<span style="display: inline;">An algorithm performs \\((log N)^{1/2}\\) find operations, \\(N\\)  insert operations, \\((log N)^{1/2}\\) delete operations, and \\((log N)^{1/2}\\) decrease-key operations on a set of data items with keys drawn from a linearly ordered set. For a delete operation, a pointer is provided to the record that must be deleted. For the decrease-key operation, a pointer is provided to the record that has its key decreased. Which one of the following data structures is the most suited for the algorithm to use, if the goal is to achieve the best total asymptotic complexity considering all the operations?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">Unsorted array</span>`,
@@ -63397,9 +63397,9 @@ This is a constant number of comparisons.<br><br>
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  N inserts dominate. Compare total cost:<br><br>
-- Unsorted array: insert O(1), find O(N), delete/decrease-key with pointer O(1) \(\\rightarrow\) \(O(N\\sqrt{\\log N})\)<br>
-- Min-heap: N inserts cost \(O(N\\log N)\)<br>
-- Sorted array / sorted list: each insert O(N) \(\\rightarrow\) \(O(N^2)\)<br><br>
+- Unsorted array: insert O(1), find O(N), delete/decrease-key with pointer O(1) \\(\\rightarrow\\) \\(O(N\\sqrt{\\log N})\\)<br>
+- Min-heap: N inserts cost \\(O(N\\log N)\\)<br>
+- Sorted array / sorted list: each insert O(N) \\(\\rightarrow\\) \\(O(N^2)\\)<br><br>
 <b>Answer: Unsorted array</b><br><br><a href="https://gateoverflow.in/8299/gate2015-1-50#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
     ]
@@ -63481,17 +63481,17 @@ return head;
 Choose the correct alternative to replace the blank line.</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">q = NULL; p\(\\rightarrow\)next = head; head = p;</span>`,
-                `<span style="display: inline;">q\(\\rightarrow\)next = NULL; head = p; p\(\\rightarrow\)next = head;</span>`,
-                `<span style="display: inline;">head = p; p\(\\rightarrow\)next = q; q\(\\rightarrow\)next = NULL;</span>`,
-                `<span style="display: inline;">q\(\\rightarrow\)next = NULL; p\(\\rightarrow\)next = head; head = p;</span>`,
+                `<span style="display: inline;">q = NULL; p\\(\\rightarrow\\)next = head; head = p;</span>`,
+                `<span style="display: inline;">q\\(\\rightarrow\\)next = NULL; head = p; p\\(\\rightarrow\\)next = head;</span>`,
+                `<span style="display: inline;">head = p; p\\(\\rightarrow\\)next = q; q\\(\\rightarrow\\)next = NULL;</span>`,
+                `<span style="display: inline;">q\\(\\rightarrow\\)next = NULL; p\\(\\rightarrow\\)next = head; head = p;</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  After the loop, p is the last node and q the second-last.<br><br>
-- q-\(\\gt\)next = NULL (q becomes the new last node)<br>
-- p-\(\\gt\)next = head (p points to the old first node)<br>
+- q-\\(\\gt\\)next = NULL (q becomes the new last node)<br>
+- p-\\(\\gt\\)next = head (p points to the old first node)<br>
 - head = p<br><br>
-<b>Answer: q-\(\\gt\)next = NULL; p-\(\\gt\)next = head; head = p;</b><br><br><a href="https://gateoverflow.in/2337/gate2010-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+<b>Answer: q-\\(\\gt\\)next = NULL; p-\\(\\gt\\)next = head; head = p;</b><br><br><a href="https://gateoverflow.in/2337/gate2010-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -63536,10 +63536,10 @@ Choose the correct alternative to replace the blank line.</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(\\log_2 n)\)</span>`,
+                `<span style="display: inline;">\\(O(\\log_2 n)\\)</span>`,
                 `<span style="display: inline;">O(n)</span>`,
                 `<span style="display: inline;">O(1)</span>`,
-                `<span style="display: inline;">\(O(n^2)\)</span>`,
+                `<span style="display: inline;">\\(O(n^2)\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/50139/isro2008-71" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2008" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2008</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -63613,14 +63613,14 @@ void rearrange (struct node *list) {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Suppose there are \(\\left \\lceil log n \\right \\rceil\) sorted lists of \(\\left \\lfloor n/log n \\right \\rfloor\) elements each. The time complexity of producing a
+            text: `<span style="display: inline;">Suppose there are \\(\\left \\lceil log n \\right \\rceil\\) sorted lists of \\(\\left \\lfloor n/log n \\right \\rfloor\\) elements each. The time complexity of producing a
 sorted list of all these elements is: (Hint: Use a heap data structure)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">O(n log log n)</span>`,
-                `<span style="display: inline;">\(\\theta\) (n log n)</span>`,
-                `<span style="display: inline;">\(\\Omega\) (n log n)</span>`,
-                `<span style="display: inline;">\(\\Omega (n^{\\frac{3}{2}})\)</span>`,
+                `<span style="display: inline;">\\(\\theta\\) (n log n)</span>`,
+                `<span style="display: inline;">\\(\\Omega\\) (n log n)</span>`,
+                `<span style="display: inline;">\\(\\Omega (n^{\\frac{3}{2}})\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/784/gate2005-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2005" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2005</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -63634,10 +63634,10 @@ sorted list of all these elements is: (Hint: Use a heap data structure)</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(n)\)</span>`,
-                `<span style="display: inline;">\(O(\\log^2 n)\)</span>`,
-                `<span style="display: inline;">\(O(\\log n)\)</span>`,
-                `<span style="display: inline;">\(O(1)\)</span>`,
+                `<span style="display: inline;">\\(O(n)\\)</span>`,
+                `<span style="display: inline;">\\(O(\\log^2 n)\\)</span>`,
+                `<span style="display: inline;">\\(O(\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(O(1)\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3654/gate2004-it-13" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2004" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2004</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -63712,7 +63712,7 @@ of length n for a given element is</span>`,
             options: [
                 `<span style="display: inline;">log n</span>`,
                 `<span style="display: inline;">n/2</span>`,
-                `<span style="display: inline;">\(log_{2}^{n}-1\)</span>`,
+                `<span style="display: inline;">\\(log_{2}^{n}-1\\)</span>`,
                 `<span style="display: inline;">n</span>`,
             ],
             answer: "D",
@@ -63754,7 +63754,7 @@ I. As the number of entries in a hash table increases, the number of collisions 
 
 II. Recursive programs are efficient<br>
 
-III. The worst case complexity for Quicksort is \(O(n^2)\)<br>
+III. The worst case complexity for Quicksort is \\(O(n^2)\\)<br>
 
 IV. Binary search using a linear linked list is efficient<br>
 
@@ -63775,17 +63775,17 @@ IV. Binary search using a linear linked list is efficient<br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">For merging two sorted lists of sizes \(m\) and \(n\) into a sorted list of size \(m+n\), we require comparisons of
+            text: `<span style="display: inline;">For merging two sorted lists of sizes \\(m\\) and \\(n\\) into a sorted list of size \\(m+n\\), we require comparisons of
 
 
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(m)\)</span>`,
-                `<span style="display: inline;">\(O(n)\)</span>`,
-                `<span style="display: inline;">\(O(m+n)\)</span>`,
-                `<span style="display: inline;">\(O(\\log m + \\log n)\)</span>`,
+                `<span style="display: inline;">\\(O(m)\\)</span>`,
+                `<span style="display: inline;">\\(O(n)\\)</span>`,
+                `<span style="display: inline;">\\(O(m+n)\\)</span>`,
+                `<span style="display: inline;">\\(O(\\log m + \\log n)\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2603/gate1995-1-16" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1995" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 1995</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -63837,21 +63837,21 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider a stack \(S\) and a queue \(Q\). Both of them are initially empty and have the capacity to store ten elements each. The elements \(1,2,3,4\), and \(5\) arrive one by one, in that order. When an element arrives, it is assigned either to \(S\) (pushed on \(S\) ) or to \(Q\) (enqueued to \(Q\) ). Once all the five elements are stored, the output is generated in two steps. First, stack S is emptied by popping all elements. Then queue \(Q\) is emptied by dequeueing all elements. The output obtained by following this process is \(\\text{4 3 1 2 5}\). <br><br>Given the output, the objective is to predict whether an element was assigned to \(S\) or \(Q\). <br><br>Which of the following options is/are possible valid assignment(s) of the elements? <br>Note: In the options, the notation \(x S\) denotes that element \(x\) was assigned to \(S\) and \(y Q\) denotes that element \(y\) was assigned to \(Q\).</span>`,
+            text: `<span style="display: inline;">Consider a stack \\(S\\) and a queue \\(Q\\). Both of them are initially empty and have the capacity to store ten elements each. The elements \\(1,2,3,4\\), and \\(5\\) arrive one by one, in that order. When an element arrives, it is assigned either to \\(S\\) (pushed on \\(S\\) ) or to \\(Q\\) (enqueued to \\(Q\\) ). Once all the five elements are stored, the output is generated in two steps. First, stack S is emptied by popping all elements. Then queue \\(Q\\) is emptied by dequeueing all elements. The output obtained by following this process is \\(\\text{4 3 1 2 5}\\). <br><br>Given the output, the objective is to predict whether an element was assigned to \\(S\\) or \\(Q\\). <br><br>Which of the following options is/are possible valid assignment(s) of the elements? <br>Note: In the options, the notation \\(x S\\) denotes that element \\(x\\) was assigned to \\(S\\) and \\(y Q\\) denotes that element \\(y\\) was assigned to \\(Q\\).</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(1 S, 2 Q, 3 S, 4 S, 5 Q\)</span>`,
-                `<span style="display: inline;">\(1 Q, 2 Q, 3 S, 4 S, 5 Q\)</span>`,
-                `<span style="display: inline;">\(1 Q, 2 Q, 3 Q, 4 S, 5 S\)</span>`,
-                `<span style="display: inline;">\(1 S, 2 S, 3 S, 4 Q, 5 Q\)</span>`,
+                `<span style="display: inline;">\\(1 S, 2 Q, 3 S, 4 S, 5 Q\\)</span>`,
+                `<span style="display: inline;">\\(1 Q, 2 Q, 3 S, 4 S, 5 Q\\)</span>`,
+                `<span style="display: inline;">\\(1 Q, 2 Q, 3 Q, 4 S, 5 S\\)</span>`,
+                `<span style="display: inline;">\\(1 S, 2 S, 3 S, 4 Q, 5 Q\\)</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The final output is: stack-popped elements first (in <b>reverse</b> of their push order), followed by queue-dequeued elements (in the <b>same</b> order they were enqueued). Target output: \(4,3,1,2,5\).<br><br>
-Check each candidate by splitting into an \(S\)-subsequence (in arrival order, then reversed for popping) and a \(Q\)-subsequence (in arrival order, kept as-is):<br><br>
-- <b>1S,2Q,3S,4S,5Q:</b> \(S\) pushed in order \(1,3,4\) &rarr; popped as \(4,3,1\). \(Q\): \(2,5\). Combined: \(4,3,1,2,5\) &mdash; <b>matches!</b><br>
-- <b>1Q,2Q,3S,4S,5Q:</b> \(S\) pushed \(3,4\) &rarr; popped \(4,3\). \(Q\): \(1,2,5\). Combined: \(4,3,1,2,5\) &mdash; <b>matches!</b><br>
-- <b>1Q,2Q,3Q,4S,5S:</b> \(S\) pushed \(4,5\) &rarr; popped \(5,4\). \(Q\): \(1,2,3\). Combined: \(5,4,1,2,3\) &mdash; does not match.<br>
-- <b>1S,2S,3S,4Q,5Q:</b> \(S\) pushed \(1,2,3\) &rarr; popped \(3,2,1\). \(Q\): \(4,5\). Combined: \(3,2,1,4,5\) &mdash; does not match.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The final output is: stack-popped elements first (in <b>reverse</b> of their push order), followed by queue-dequeued elements (in the <b>same</b> order they were enqueued). Target output: \\(4,3,1,2,5\\).<br><br>
+Check each candidate by splitting into an \\(S\\)-subsequence (in arrival order, then reversed for popping) and a \\(Q\\)-subsequence (in arrival order, kept as-is):<br><br>
+- <b>1S,2Q,3S,4S,5Q:</b> \\(S\\) pushed in order \\(1,3,4\\) &rarr; popped as \\(4,3,1\\). \\(Q\\): \\(2,5\\). Combined: \\(4,3,1,2,5\\) &mdash; <b>matches!</b><br>
+- <b>1Q,2Q,3S,4S,5Q:</b> \\(S\\) pushed \\(3,4\\) &rarr; popped \\(4,3\\). \\(Q\\): \\(1,2,5\\). Combined: \\(4,3,1,2,5\\) &mdash; <b>matches!</b><br>
+- <b>1Q,2Q,3Q,4S,5S:</b> \\(S\\) pushed \\(4,5\\) &rarr; popped \\(5,4\\). \\(Q\\): \\(1,2,3\\). Combined: \\(5,4,1,2,3\\) &mdash; does not match.<br>
+- <b>1S,2S,3S,4Q,5Q:</b> \\(S\\) pushed \\(1,2,3\\) &rarr; popped \\(3,2,1\\). \\(Q\\): \\(4,5\\). Combined: \\(3,2,1,4,5\\) &mdash; does not match.<br><br>
 <b>Answer: "1S,2Q,3S,4S,5Q" and "1Q,2Q,3S,4S,5Q" are both valid assignments.</b><br><br><a href="https://gateoverflow.in/523106/gate-cse-2026-set-2-question-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63859,7 +63859,7 @@ Check each candidate by splitting into an \(S\)-subsequence (in arrival order, t
             neg: 0,
             type: "MSQ",
             text: `<span style="display: inline;">Consider a stack data structure into which we can PUSH and POP records. Assume that each record pushed in the stack has a positive integer key and that all keys are distinct.  <br>
-We wish to augment the stack data structure with an \(O(1) \) time MIN operation that returns a pointer to the record with the smallest key present in the stack  <br><br>
+We wish to augment the stack data structure with an \\(O(1) \\) time MIN operation that returns a pointer to the record with the smallest key present in the stack  <br><br>
 1) without deleting the corresponding record, and  <br>
 2) without increasing the complexities of the standard stack operations.  <br><br>
 Which one or more of the following approach(es) can achieve it?</span>`,
@@ -63871,9 +63871,9 @@ Which one or more of the following approach(es) can achieve it?</span>`,
                 `<span style="display: inline;">Keep a Min-Heap in which the key values of the records in the stack are maintained.</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  We need \(O(1)\) MIN, without slowing down PUSH/POP.<br><br>
-<b>Approach: store, alongside every pushed record, a pointer to whichever record currently holds the smallest key <i>at or below</i> it in the stack (computed once, at push time, by comparing the new key to the previous top's "min so far" pointer).</b> Pushing just does one comparison and one pointer copy (\(O(1)\)); popping just removes the top record (its stored min-pointer disappears with it, automatically restoring the correct min for what's now on top) (\(O(1)\)); MIN just reads the top record's stored pointer (\(O(1)\)). This works and keeps everything \(O(1)\).<br><br>
-A single global pointer to the current minimum fails on POP: if you pop exactly the minimum record, you have no way to find the next-smallest without scanning the rest of the stack. A sorted auxiliary array would need \(O(n)\) shifting on push to keep it sorted. A min-heap would make push/pop cost \(O(\\log n)\) instead of \(O(1)\), violating the "don't slow down the standard operations" requirement.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  We need \\(O(1)\\) MIN, without slowing down PUSH/POP.<br><br>
+<b>Approach: store, alongside every pushed record, a pointer to whichever record currently holds the smallest key <i>at or below</i> it in the stack (computed once, at push time, by comparing the new key to the previous top's "min so far" pointer).</b> Pushing just does one comparison and one pointer copy (\\(O(1)\\)); popping just removes the top record (its stored min-pointer disappears with it, automatically restoring the correct min for what's now on top) (\\(O(1)\\)); MIN just reads the top record's stored pointer (\\(O(1)\\)). This works and keeps everything \\(O(1)\\).<br><br>
+A single global pointer to the current minimum fails on POP: if you pop exactly the minimum record, you have no way to find the next-smallest without scanning the rest of the stack. A sorted auxiliary array would need \\(O(n)\\) shifting on push to keep it sorted. A min-heap would make push/pop cost \\(O(\\log n)\\) instead of \\(O(1)\\), violating the "don't slow down the standard operations" requirement.<br><br>
 <b>Answer: Keep, with every record, a pointer to the record with the smallest key below it.</b><br><br><a href="https://gateoverflow.in/460800/gate-cse-2025-set-2-question-35#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63883,22 +63883,22 @@ A single global pointer to the current minimum fails on POP: if you pop exactly 
             text: `<span style="display: inline;">Let S1 and S2 be two stacks. S1 has capacity of 4 elements. S2 has capacity of
 2 elements. S1 already has 4 elements: 100, 200, 300, and 400, whereas S2 is
 empty, as shown below.<br><br>
-\(
+\\(
 \\begin{array}{|c|}
 \\hline  400 (Top)  \\\\
 \\hline  300 \\\\
 \\hline  200\\\\
 \\hline  100 \\\\
 \\hline
-\\end{array}\)<br>Stack S1
+\\end{array}\\)<br>Stack S1
 <br>
 <br>
-\(
+\\(
 \\begin{array}{|c|}
 \\hline    \\\\
 \\hline    \\\\
 \\hline
-\\end{array}\)<br>Stack S2
+\\end{array}\\)<br>Stack S2
 <br><br>
 Only the following three operations are available:<br>
 <br>PushToS2: Pop the top element from S1 and push it on S2.
@@ -63918,7 +63918,7 @@ operations?</span>`,
             ],
             answer: ["A"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  S1 = 100, 200, 300, 400 (top). S2 can hold only 2 elements.<br><br>
-- <b>100, 200, 400, 300:</b> to output 100 first, 400, 300, 200 (3 elements) must go to S2 \(\\text{---}\) impossible.<br>
+- <b>100, 200, 400, 300:</b> to output 100 first, 400, 300, 200 (3 elements) must go to S2 \\(\\text{---}\\) impossible.<br>
 - <b>200, 300, 400, 100:</b> move 400, 300 to S2; output 200; move 300 back, output 300; move 400 back, output 400; output 100 True<br>
 - <b>400, 200, 100, 300:</b> output 400; move 300 to S2; output 200, 100; move 300 back, output 300 True<br>
 - <b>300, 200, 400, 100:</b> move 400 to S2; output 300, 200; move 400 back, output 400; output 100 True<br><br>
@@ -63929,7 +63929,7 @@ operations?</span>`,
             neg: 0,
             type: "NAT",
             text: `<span style="display: inline;">Consider the operator precedence and associativity rules for the integer arithmetic operators given in the table below.<br>
-\(\\begin{array}{|c|l|l|}
+\\(\\begin{array}{|c|l|l|}
 \\hline Operator & Precedence & Associativity \\\\
 \\hline+ & Highest & Left \\\\
 \\hline- & High & Right \\\\
@@ -63937,17 +63937,17 @@ operations?</span>`,
 \\hline  /  & Low & Right \\\\
 \\hline
 \\end{array}
-\)<br>
-The value of the expression \(3+1+5 * 2 / 7+2-4-7-6 / 2 \) as per the above rules is _____</span>`,
+\\)<br>
+The value of the expression \\(3+1+5 * 2 / 7+2-4-7-6 / 2 \\) as per the above rules is _____</span>`,
             image: "",
             options: [
             ],
             answer: 6,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Precedence: + (highest) \(\\gt\) \(-\) \(\\gt\) * \(\\gt\) / (lowest). The lowest-precedence operator is applied last, so / splits the expression:<br>
-\((3+1+5*2)\\;/\\;(7+2-4-7-6)\\;/\\;2\)<br><br>
-<b>First part:</b> + binds before *, so \((3+1+5)*2=9*2=18\).<br>
-<b>Second part:</b> + first: \(7+2=9\). Then \(-\) is right associative: \(9-(4-(7-6))=9-(4-1)=6\).<br><br>
-/ is right associative: \(18/(6/2)=18/3=6\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Precedence: + (highest) \\(\\gt\\) \\(-\\) \\(\\gt\\) * \\(\\gt\\) / (lowest). The lowest-precedence operator is applied last, so / splits the expression:<br>
+\\((3+1+5*2)\\;/\\;(7+2-4-7-6)\\;/\\;2\\)<br><br>
+<b>First part:</b> + binds before *, so \\((3+1+5)*2=9*2=18\\).<br>
+<b>Second part:</b> + first: \\(7+2=9\\). Then \\(-\\) is right associative: \\(9-(4-(7-6))=9-(4-1)=6\\).<br><br>
+/ is right associative: \\(18/(6/2)=18/3=6\\).<br><br>
 <b>Answer: 6</b><br><br><a href="https://gateoverflow.in/422819/gate-cse-2024-set-1-question-23#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -63965,8 +63965,8 @@ The value of s+q is ___________.</span>`,
             options: [
             ],
             answer: 86,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Stack: push 54, push 52, pop (52), push 55, push 62, pop \(\\rightarrow\) <b>s = 62</b>.<br>
-Queue: enqueue 21, 24, dequeue (21), enqueue 28, 32, dequeue \(\\rightarrow\) <b>q = 24</b>.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Stack: push 54, push 52, pop (52), push 55, push 62, pop \\(\\rightarrow\\) <b>s = 62</b>.<br>
+Queue: enqueue 21, 24, dequeue (21), enqueue 28, 32, dequeue \\(\\rightarrow\\) <b>q = 24</b>.<br><br>
 s + q = 86<br><br>
 <b>Answer: 86</b><br><br><a href="https://gateoverflow.in/357430/gate-cse-2021-set-1-question-21#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -63974,7 +63974,7 @@ s + q = 86<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A stack is implemented with an array of \({ }^{\\prime} A[0 \\ldots N-1]^{\\prime}\) and a variable \(\\text { 'pos'. }\) The push and pop operations are defined by the following code.<br><pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> push (x)
+            text: `<span style="display: inline;">A stack is implemented with an array of \\({ }^{\\prime} A[0 \\ldots N-1]^{\\prime}\\) and a variable \\(\\text { 'pos'. }\\) The push and pop operations are defined by the following code.<br><pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> push (x)
     A[pos] <- x
     pos <- pos -1
 end push
@@ -63984,55 +63984,55 @@ pop()
 end pop</code></pre><br>Which of the following will initialize an empty stack with capacity N for the above implementation?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\text { pos } \\leftarrow-1\)</span>`,
-                `<span style="display: inline;">\(\\text { pos } \\leftarrow 0\)</span>`,
-                `<span style="display: inline;">\(\\text { pos } \\leftarrow 1\)</span>`,
-                `<span style="display: inline;">\(\\text { pos } \\leftarrow N-1\)</span>`,
+                `<span style="display: inline;">\\(\\text { pos } \\leftarrow-1\\)</span>`,
+                `<span style="display: inline;">\\(\\text { pos } \\leftarrow 0\\)</span>`,
+                `<span style="display: inline;">\\(\\text { pos } \\leftarrow 1\\)</span>`,
+                `<span style="display: inline;">\\(\\text { pos } \\leftarrow N-1\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  push writes at A[pos] and then <b>decrements</b> pos, so the stack grows downward from the top of the array. pop first increments pos and then reads.<br><br>
-For an empty stack with room for N elements, pos must start at the last index: pos \(\\leftarrow\) N \(-\) 1.<br><br>
-<b>Answer: pos \(\\leftarrow\) N-1</b><br><br><a href="https://gateoverflow.in/331311/isro2020-72" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+For an empty stack with room for N elements, pos must start at the last index: pos \\(\\leftarrow\\) N \\(-\\) 1.<br><br>
+<b>Answer: pos \\(\\leftarrow\\) N-1</b><br><br><a href="https://gateoverflow.in/331311/isro2020-72" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Convert the pre-fix expression to in-fix \(-^{*}+A B C^{*}-D E+F G\)</span>`,
+            text: `<span style="display: inline;">Convert the pre-fix expression to in-fix \\(-^{*}+A B C^{*}-D E+F G\\)</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\((A-B)^{*} C+\\left(D^{*} E\\right)-(F+G)\)</span>`,
-                `<span style="display: inline;">\((A+B)^{*} C-(D-E)^{*}(F-G)\)</span>`,
-                `<span style="display: inline;">\((A+B-C)^{*}(D-E)^{*}(F+G)\)</span>`,
-                `<span style="display: inline;">\((((A+B)*C)-((D-E)*(F+G)))\)</span>`,
+                `<span style="display: inline;">\\((A-B)^{*} C+\\left(D^{*} E\\right)-(F+G)\\)</span>`,
+                `<span style="display: inline;">\\((A+B)^{*} C-(D-E)^{*}(F-G)\\)</span>`,
+                `<span style="display: inline;">\\((A+B-C)^{*}(D-E)^{*}(F+G)\\)</span>`,
+                `<span style="display: inline;">\\((((A+B)*C)-((D-E)*(F+G)))\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Read the prefix expression from the right, pushing operands; on an operator, pop two and combine as (first operator second):<br>
-- + F G \(\\rightarrow\) (F+G)<br>
-- \(-\) D E \(\\rightarrow\) (D\(-\)E), then * \(\\rightarrow\) ((D\(-\)E)*(F+G))<br>
-- + A B \(\\rightarrow\) (A+B), then * C \(\\rightarrow\) ((A+B)*C)<br>
-- the leading \(-\) joins the two halves<br><br>
-Result: (((A+B)*C)\(-\)((D\(-\)E)*(F+G)))<br><br>
+- + F G \\(\\rightarrow\\) (F+G)<br>
+- \\(-\\) D E \\(\\rightarrow\\) (D\\(-\\)E), then * \\(\\rightarrow\\) ((D\\(-\\)E)*(F+G))<br>
+- + A B \\(\\rightarrow\\) (A+B), then * C \\(\\rightarrow\\) ((A+B)*C)<br>
+- the leading \\(-\\) joins the two halves<br><br>
+Result: (((A+B)*C)\\(-\\)((D\\(-\\)E)*(F+G)))<br><br>
 <b>Answer: (((A+B)*C)-((D-E)*(F+G)))</b><br><br>Originally all Options are wrong. We have modified one option.<br><br><a href="https://gateoverflow.in/331339/isro2020-4" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Choose the equivalent prefix form of the following expression<br>\((a+(b-c))^{\\star}((d-e) /(f+g-h))\)</span>`,
+            text: `<span style="display: inline;">Choose the equivalent prefix form of the following expression<br>\\((a+(b-c))^{\\star}((d-e) /(f+g-h))\\)</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\({ }^{\\star}+a-b c /-d e-+f g h\)</span>`,
-                `<span style="display: inline;">\({ }^{\\star}+a-b c -/d e-+f g h\)</span>`,
-                `<span style="display: inline;">\({ }^{\\star}+a-b c /-ed-+f g h\)</span>`,
-                `<span style="display: inline;">\({ }^{*}+\\mathrm{ab}-\\mathrm{c} /-\\mathrm{de}-+\\mathrm{fgh}\)</span>`,
+                `<span style="display: inline;">\\({ }^{\\star}+a-b c /-d e-+f g h\\)</span>`,
+                `<span style="display: inline;">\\({ }^{\\star}+a-b c -/d e-+f g h\\)</span>`,
+                `<span style="display: inline;">\\({ }^{\\star}+a-b c /-ed-+f g h\\)</span>`,
+                `<span style="display: inline;">\\({ }^{*}+\\mathrm{ab}-\\mathrm{c} /-\\mathrm{de}-+\\mathrm{fgh}\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Convert each part to prefix:<br>
-- a + (b \(-\) c) \(\\rightarrow\) + a \(-\) b c<br>
-- (d \(-\) e) \(\\rightarrow\) \(-\) d e; (f + g \(-\) h) = ((f + g) \(-\) h) \(\\rightarrow\) \(-\) + f g h<br>
-- (d \(-\) e) / (f + g \(-\) h) \(\\rightarrow\) / \(-\) d e \(-\) + f g h<br><br>
-Whole: * + a \(-\) b c / \(-\) d e \(-\) + f g h<br><br>
+- a + (b \\(-\\) c) \\(\\rightarrow\\) + a \\(-\\) b c<br>
+- (d \\(-\\) e) \\(\\rightarrow\\) \\(-\\) d e; (f + g \\(-\\) h) = ((f + g) \\(-\\) h) \\(\\rightarrow\\) \\(-\\) + f g h<br>
+- (d \\(-\\) e) / (f + g \\(-\\) h) \\(\\rightarrow\\) / \\(-\\) d e \\(-\\) + f g h<br><br>
+Whole: * + a \\(-\\) b c / \\(-\\) d e \\(-\\) + f g h<br><br>
 <b>Answer: Option 1</b><br><br><a href="https://gateoverflow.in/128769/isro2017-69" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2017" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2017</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64055,7 +64055,7 @@ Whole: * + a \(-\) b c / \(-\) d e \(-\) + f g h<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The following postfix expression with single digit operands is evaluated using a stack:<br>\(8 \\ 2 \\ 3 \\ \\;\\hat{}\\; / \\ 2 \\ 3 * + 5 \\ 1 * -\)<br>Note that \(\\hat{}\\;\) is the exponentiation operator. The top two elements of the stack after the first * is evaluated are</span>`,
+            text: `<span style="display: inline;">The following postfix expression with single digit operands is evaluated using a stack:<br>\\(8 \\ 2 \\ 3 \\ \\;\\hat{}\\; / \\ 2 \\ 3 * + 5 \\ 1 * -\\)<br>Note that \\(\\hat{}\\;\\) is the exponentiation operator. The top two elements of the stack after the first * is evaluated are</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">6,1</span>`,
@@ -64065,9 +64065,9 @@ Whole: * + a \(-\) b c / \(-\) d e \(-\) + f g h<br><br>
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Evaluate:<br>
-- 8 2 3 ^ \(\\rightarrow\) 8, 8 (2^3 = 8)<br>
-- / \(\\rightarrow\) 8 / 8 = 1<br>
-- 2 3 * \(\\rightarrow\) 2 \(\\times\) 3 = 6 (this is the first *)<br><br>
+- 8 2 3 ^ \\(\\rightarrow\\) 8, 8 (2^3 = 8)<br>
+- / \\(\\rightarrow\\) 8 / 8 = 1<br>
+- 2 3 * \\(\\rightarrow\\) 2 \\(\\times\\) 3 = 6 (this is the first *)<br><br>
 Stack now: 1, 6 (top = 6).<br><br>
 <b>Answer: 6, 1</b><br><br><a href="https://gateoverflow.in/1236/gate2007-38-isro2016-27" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2016</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -64084,9 +64084,9 @@ Stack now: 1, 6 (top = 6).<br><br>
                 `<span style="display: inline;">2,1,2,2,2</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- push 1, push 2, pop \(\\rightarrow\) 2<br>
-- push 1, push 2, pop \(\\rightarrow\) 2, pop \(\\rightarrow\) 1, pop \(\\rightarrow\) 1<br>
-- push 2, pop \(\\rightarrow\) 2<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- push 1, push 2, pop \\(\\rightarrow\\) 2<br>
+- push 1, push 2, pop \\(\\rightarrow\\) 2, pop \\(\\rightarrow\\) 1, pop \\(\\rightarrow\\) 1<br>
+- push 2, pop \\(\\rightarrow\\) 2<br><br>
 <b>Answer: 2, 2, 1, 1, 2</b><br><br><a href="https://gateoverflow.in/51080/isro2015-11" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64102,10 +64102,10 @@ Stack now: 1, 6 (top = 6).<br><br>
                 `<span style="display: inline;">71</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 10 5 + \(\\rightarrow\) 15<br>
-- 60 6 / \(\\rightarrow\) 10<br>
-- * \(\\rightarrow\) 150<br>
-- 8 \(-\) \(\\rightarrow\) 142<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 10 5 + \\(\\rightarrow\\) 15<br>
+- 60 6 / \\(\\rightarrow\\) 10<br>
+- * \\(\\rightarrow\\) 150<br>
+- 8 \\(-\\) \\(\\rightarrow\\) 142<br><br>
 <b>Answer: 142</b><br><br><a href="https://gateoverflow.in/8408/gate2015-3-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64180,13 +64180,13 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The expression \(1 * 2 \\wedge 3 * 4 \\wedge 5 * 6\) will be evaluated as
+            text: `<span style="display: inline;">The expression \\(1 * 2 \\wedge 3 * 4 \\wedge 5 * 6\\) will be evaluated as
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(32^{30}\)</span>`,
-                `<span style="display: inline;">\(162^{30}\)</span>`,
+                `<span style="display: inline;">\\(32^{30}\\)</span>`,
+                `<span style="display: inline;">\\(162^{30}\\)</span>`,
                 `<span style="display: inline;">49152</span>`,
                 `<span style="display: inline;">173458</span>`,
             ],
@@ -64212,15 +64212,15 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The infix expression \(A+(B-C)^*D\) is correctly represented in prefix notation as
+            text: `<span style="display: inline;">The infix expression \\(A+(B-C)^*D\\) is correctly represented in prefix notation as
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(A+B-C*D\)</span>`,
-                `<span style="display: inline;">\(+A*-BCD\)</span>`,
-                `<span style="display: inline;">\(ABC-D*+\)</span>`,
-                `<span style="display: inline;">\(A+BC-D*\)</span>`,
+                `<span style="display: inline;">\\(A+B-C*D\\)</span>`,
+                `<span style="display: inline;">\\(+A*-BCD\\)</span>`,
+                `<span style="display: inline;">\\(ABC-D*+\\)</span>`,
+                `<span style="display: inline;">\\(A+BC-D*\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/50380/isro2009-28" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2009" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2009</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -64229,17 +64229,17 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Assume that the operators \(+, -, \\times\) are left associative and \(\\hat{}\) is right associative. The order of precedence (from highest to lowest) is \(\\hat{}, \\times, +, -\). The postfix expression corresponding to the infix expression \(a+ b \\times c-d \\;\\;  \\hat{} e \\; \\; \\hat{} \\; \\; f\) is
+            text: `<span style="display: inline;">Assume that the operators \\(+, -, \\times\\) are left associative and \\(\\hat{}\\) is right associative. The order of precedence (from highest to lowest) is \\(\\hat{}, \\times, +, -\\). The postfix expression corresponding to the infix expression \\(a+ b \\times c-d \\;\\;  \\hat{} e \\; \\; \\hat{} \\; \\; f\\) is
 
 
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(abc\\times+def\\;\\hat{}\\;\\;\\hat{}-\)</span>`,
-                `<span style="display: inline;">\(abc\\times + de \\;\\; \\hat{} f \\;\\; \\hat{}\)</span>`,
-                `<span style="display: inline;">\( ab+c\\times d-e\\;\\; \\hat{} f \\;\\; \\hat{}\)</span>`,
-                `<span style="display: inline;">\(-+a\\times bc\\;\\;\\hat{}\\;\\;\\hat{}def\)</span>`,
+                `<span style="display: inline;">\\(abc\\times+def\\;\\hat{}\\;\\;\\hat{}-\\)</span>`,
+                `<span style="display: inline;">\\(abc\\times + de \\;\\; \\hat{} f \\;\\; \\hat{}\\)</span>`,
+                `<span style="display: inline;">\\( ab+c\\times d-e\\;\\; \\hat{} f \\;\\; \\hat{}\\)</span>`,
+                `<span style="display: inline;">\\(-+a\\times bc\\;\\;\\hat{}\\;\\;\\hat{}def\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1035/gate2004-38-isro2009-27" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2009" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2009</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -64356,11 +64356,11 @@ after the first * is evaluated are:</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A function \(f\) defined on stacks of integers satisfies the following properties. \(f(\\emptyset) = 0\) and \(f (push (S, i)) = max (f(S), 0) + i\) for all stacks \(S\) and integers \(i\). 
+            text: `<span style="display: inline;">A function \\(f\\) defined on stacks of integers satisfies the following properties. \\(f(\\emptyset) = 0\\) and \\(f (push (S, i)) = max (f(S), 0) + i\\) for all stacks \\(S\\) and integers \\(i\\). 
 
 
 
-If a stack \(S\) contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is \(f(S)\)?
+If a stack \\(S\\) contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is \\(f(S)\\)?
 
 
 
@@ -64429,7 +64429,7 @@ expression a + b x c-d^e^f is</span>`,
             neg: 0.33,
             type: "MCQ",
             text: `<span style="display: inline;">A single array A[1...MAXSIZE] is used to implement two stacks. The two stacks grow from opposite
-ends of the array. Variables top1 and top 2 (top1 \(\\lt\) top 2) point to the location of the topmost
+ends of the array. Variables top1 and top 2 (top1 \\(\\lt\\) top 2) point to the location of the topmost
 element in each of the stacks. If the space is to be used efficiently, the condition for "stack full" is</span>`,
             image: "",
             options: [
@@ -64445,10 +64445,10 @@ element in each of the stacks. If the space is to be used efficiently, the condi
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Let S be a stack of size n \(\\geq\) 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume
+            text: `<span style="display: inline;">Let S be a stack of size n \\(\\geq\\) 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume
 that Push and Pop operation take X seconds each , and Y seconds elapse between
 the end of the one such stack operation and the start of the next operation. For
-m \(\\geq\) 1, define the stack-life of m as the time elapsed from the end or Push (m) to the start of the pop operation that removes m from S . The average stack-life of
+m \\(\\geq\\) 1, define the stack-life of m as the time elapsed from the end or Push (m) to the start of the pop operation that removes m from S . The average stack-life of
 an element of this stack is</span>`,
             image: "",
             options: [
@@ -64568,31 +64568,31 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider a sequence \(a\) of elements \(a_0 = 1, a_1 = 5, a_2 = 7, a_3 = 8, a_4 = 9, \\; and \\; 
-a_5 = 2\). The following operations are performed on a stack \(S\) and a queue \(Q\), both
+            text: `<span style="display: inline;">Consider a sequence \\(a\\) of elements \\(a_0 = 1, a_1 = 5, a_2 = 7, a_3 = 8, a_4 = 9, \\; and \\; 
+a_5 = 2\\). The following operations are performed on a stack \\(S\\) and a queue \\(Q\\), both
 of which are initially empty.<br><br>
-I: push the elements of a from \(a_0\) to \(a_5\) in that order into \(S\).<br>
-II: enqueue the elements of a from \(a_0\) to \(a_5\) in that order into \(Q\).
-<br>III: pop an element from \(S\).
-<br>IV: dequeue an element from \(Q\).
-<br>V: pop an element from \(S\).
-<br>VI: dequeue an element from \(Q\).
-<br>VII: dequeue an element from \(Q\) and push the same element into \(S\).
+I: push the elements of a from \\(a_0\\) to \\(a_5\\) in that order into \\(S\\).<br>
+II: enqueue the elements of a from \\(a_0\\) to \\(a_5\\) in that order into \\(Q\\).
+<br>III: pop an element from \\(S\\).
+<br>IV: dequeue an element from \\(Q\\).
+<br>V: pop an element from \\(S\\).
+<br>VI: dequeue an element from \\(Q\\).
+<br>VII: dequeue an element from \\(Q\\) and push the same element into \\(S\\).
 <br>VIII: Repeat operation VII three times.
-<br>IX: pop an element from \(S\).
-<br>X: pop an element from \(S\).
-<br><br>The top element of \(S\) after executing the above operations is ___.</span>`,
+<br>IX: pop an element from \\(S\\).
+<br>X: pop an element from \\(S\\).
+<br><br>The top element of \\(S\\) after executing the above operations is ___.</span>`,
             image: "",
             options: [
             ],
             answer: 8,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  After I and II: S = [1, 5, 7, 8, 9, 2] (top = 2), Q = [1, 5, 7, 8, 9, 2] (front = 1).<br>
-- III: pop S \(\\rightarrow\) removes 2<br>
-- IV: dequeue Q \(\\rightarrow\) removes 1<br>
-- V: pop S \(\\rightarrow\) removes 9 \(\\rightarrow\) S = [1, 5, 7, 8]<br>
-- VI: dequeue Q \(\\rightarrow\) removes 5 \(\\rightarrow\) Q = [7, 8, 9, 2]<br>
-- VII + VIII (4 times): move 7, 8, 9, 2 from Q to S \(\\rightarrow\) S = [1, 5, 7, 8, 7, 8, 9, 2]<br>
-- IX, X: pop 2 and 9 \(\\rightarrow\) top = <b>8</b><br><br>
+- III: pop S \\(\\rightarrow\\) removes 2<br>
+- IV: dequeue Q \\(\\rightarrow\\) removes 1<br>
+- V: pop S \\(\\rightarrow\\) removes 9 \\(\\rightarrow\\) S = [1, 5, 7, 8]<br>
+- VI: dequeue Q \\(\\rightarrow\\) removes 5 \\(\\rightarrow\\) Q = [7, 8, 9, 2]<br>
+- VII + VIII (4 times): move 7, 8, 9, 2 from Q to S \\(\\rightarrow\\) S = [1, 5, 7, 8, 7, 8, 9, 2]<br>
+- IX, X: pop 2 and 9 \\(\\rightarrow\\) top = <b>8</b><br><br>
 <b>Answer: 8</b><br><br><a href="https://gateoverflow.in/399262/gate-cse-2023-question-49#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64600,7 +64600,7 @@ II: enqueue the elements of a from \(a_0\) to \(a_5\) in that order into \(Q\).
             neg: 0,
             type: "NAT",
             text: `<span style="display: inline;">Consider the queues Q1 containing four elements and Q2 containing none (shown
-as the Initial State in the figure). The only operations allowed on these two queues are  \(Enqueue(Q,element)\)   and  \(Dequeue(Q)\).   The  minimum  number  of \(Enqueue \) operations on Q1 required to place the elements of Q1 in Q2 in reverse
+as the Initial State in the figure). The only operations allowed on these two queues are  \\(Enqueue(Q,element)\\)   and  \\(Dequeue(Q)\\).   The  minimum  number  of \\(Enqueue \\) operations on Q1 required to place the elements of Q1 in Q2 in reverse
 order (shown as the Final State in the figure) without using any additional storage is<br><img src="images/practicepaper_queue/q52.jpg" /><br>
 </span>`,
             image: "",
@@ -64608,10 +64608,10 @@ order (shown as the Final State in the figure) without using any additional stor
             ],
             answer: 0,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Use only Q2 for the reversal: after enqueueing each new element into Q2, rotate the older elements behind it (dequeue from Q2 and enqueue into Q2).<br>
-- Move 1 \(\\rightarrow\) Q2: [1]<br>
-- Move 2 \(\\rightarrow\) Q2: [1, 2], rotate once \(\\rightarrow\) [2, 1]<br>
-- Move 3 \(\\rightarrow\) Q2, rotate twice \(\\rightarrow\) [3, 2, 1]<br>
-- Move 4 \(\\rightarrow\) Q2, rotate 3 times \(\\rightarrow\) [4, 3, 2, 1]<br><br>
+- Move 1 \\(\\rightarrow\\) Q2: [1]<br>
+- Move 2 \\(\\rightarrow\\) Q2: [1, 2], rotate once \\(\\rightarrow\\) [2, 1]<br>
+- Move 3 \\(\\rightarrow\\) Q2, rotate twice \\(\\rightarrow\\) [3, 2, 1]<br>
+- Move 4 \\(\\rightarrow\\) Q2, rotate 3 times \\(\\rightarrow\\) [4, 3, 2, 1]<br><br>
 Q1 is only dequeued, never enqueued.<br><br>
 <b>Answer: 0</b><br><br><a href="https://gateoverflow.in/371884/Gate-cse-2022-question-52#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -64622,15 +64622,15 @@ Q1 is only dequeued, never enqueued.<br><br>
             text: `<span style="display: inline;">A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let n denote the number of nodes in the queue. Let enqueue be implemented by inserting a new node at the head, and dequeue be implemented by deletion of a node from the tail.    <br><img src="images/practicepaper_queue/q3.jpg" /><br>  Which one of the following is the time complexity of the most time-efficient implementation of enqueue and dequeue, respectively, for this data structure?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (1), \\Theta (1)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (1), \\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n), \\Theta (1)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n), \\Theta (n)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1), \\Theta (1)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1), \\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n), \\Theta (1)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n), \\Theta (n)\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Enqueue at the head: create a node and point it to the old head \(\\rightarrow\) \(\\Theta(1)\).<br>
-- Dequeue at the tail: removing the tail needs the node <b>before</b> it, and in a singly linked list that means walking from the head \(\\rightarrow\) \(\\Theta(n)\).<br><br>
-<b>Answer: \(\\Theta(1),\\Theta(n)\)</b><br><br><a href="https://gateoverflow.in/204077/gate2018-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Enqueue at the head: create a node and point it to the old head \\(\\rightarrow\\) \\(\\Theta(1)\\).<br>
+- Dequeue at the tail: removing the tail needs the node <b>before</b> it, and in a singly linked list that means walking from the head \\(\\rightarrow\\) \\(\\Theta(n)\\).<br><br>
+<b>Answer: \\(\\Theta(1),\\Theta(n)\\)</b><br><br><a href="https://gateoverflow.in/204077/gate2018-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -64669,7 +64669,7 @@ II. Next pointer of rear node points to the front node.</span>`,
                 `<span style="display: inline;">Neither I nor II</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Insert at REAR (new node after rear) and delete at FRONT. For both in \(O(1)\), the rear node's next must point to the front node, which makes the list circular. Front's next points to the second node, not to rear.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Insert at REAR (new node after rear) and delete at FRONT. For both in \\(O(1)\\), the rear node's next must point to the front node, which makes the list circular. Front's next points to the second node, not to rear.<br><br>
 <b>Answer: II only</b><br><br><a href="https://gateoverflow.in/118253/gate2017-2-13#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64682,7 +64682,7 @@ II. Next pointer of rear node points to the front node.</span>`,
             ],
             answer: 256,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The loop keeps the stack in sorted order, sending larger stack tops back to the queue. The worst case is when the queue is in decreasing order: every element has to be cycled between the stack and the queue many times.<br><br>
-For n elements the worst case is \(n^2\) iterations (check n = 2 with queue [2, 1]: 4 iterations). For n = 16: \(16^2=256\).<br><br>
+For n elements the worst case is \\(n^2\\) iterations (check n = 2 with queue [2, 1]: 4 iterations). For n = 16: \\(16^2=256\\).<br><br>
 <b>Answer: 256</b><br><br><a href="https://gateoverflow.in/39684/gate2016-1-41#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64694,12 +64694,12 @@ For n elements the worst case is \(n^2\) iterations (check n = 2 with queue [2, 
             options: [
                 `<span style="display: inline;">Both operations can be performed in O(1) time</span>`,
                 `<span style="display: inline;">At most one operation can be performed in O(1) time but the worst case time for
-the other operation will be \(\\Omega\)(n)</span>`,
-                `<span style="display: inline;">The worst case time complexity for both operations will be \(\\Omega\)(n)</span>`,
-                `<span style="display: inline;">Worst case time complexity for both operations will be \(\\Omega\)(logn)</span>`,
+the other operation will be \\(\\Omega\\)(n)</span>`,
+                `<span style="display: inline;">The worst case time complexity for both operations will be \\(\\Omega\\)(n)</span>`,
+                `<span style="display: inline;">Worst case time complexity for both operations will be \\(\\Omega\\)(logn)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Use a <b>circular array</b> with front and rear indices: ENQUEUE writes at rear and moves it, DEQUEUE reads at front and moves it (both modulo the array size). No shifting is needed, so both are \(O(1)\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Use a <b>circular array</b> with front and rear indices: ENQUEUE writes at rear and moves it, DEQUEUE reads at front and moves it (both modulo the array size). No shifting is needed, so both are \\(O(1)\\).<br><br>
 <b>Answer: Both operations can be performed in O(1) time</b><br><br><a href="https://gateoverflow.in/39667/gate2016-1-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -64752,15 +64752,15 @@ What is the worst case time complexity of a sequence of n queue operations on an
 queue?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n+k)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (nk)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^{2})\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n+k)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (nk)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^{2})\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Each element is enqueued once and can be dequeued at most once. Across n operations, the total dequeues (including those inside MultiDequeue) cannot exceed the number of enqueues.<br><br>
-Total work = \(\\Theta(n)\) (amortised).<br><br>
-<b>Answer: \(\\Theta(n)\)</b><br><br><a href="https://gateoverflow.in/61/gate2013-44#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+Total work = \\(\\Theta(n)\\) (amortised).<br><br>
+<b>Answer: \\(\\Theta(n)\\)</b><br><br><a href="https://gateoverflow.in/61/gate2013-44#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -64847,15 +64847,15 @@ void delete(Q){
                 push(S2,x);
             }
        x=pop(S2);
-}</code></pre> Let n insert and m(\(\\leq\)n) delete operations be performed in an arbitrary on an
+}</code></pre> Let n insert and m(\\(\\leq\\)n) delete operations be performed in an arbitrary on an
 empty queue Q, Let x and y be the number of push and pop operations performed
 respectively in the processes. Which one of the following is true for all m and n ?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(m+n \\leq x\\leq 2n\) and \(2m \\leq y \\leq n+m\)</span>`,
-                `<span style="display: inline;">\(m+n \\leq x\\leq 2n\) and \(2m \\leq y \\leq 2n\)</span>`,
-                `<span style="display: inline;">\(2m\\leq x\\leq 2n\) and \(2m \\leq y \\leq n+m\)</span>`,
-                `<span style="display: inline;">\(2m \\leq x\\leq 2n\) and \(2m \\leq y \\leq 2n\)</span>`,
+                `<span style="display: inline;">\\(m+n \\leq x\\leq 2n\\) and \\(2m \\leq y \\leq n+m\\)</span>`,
+                `<span style="display: inline;">\\(m+n \\leq x\\leq 2n\\) and \\(2m \\leq y \\leq 2n\\)</span>`,
+                `<span style="display: inline;">\\(2m\\leq x\\leq 2n\\) and \\(2m \\leq y \\leq n+m\\)</span>`,
+                `<span style="display: inline;">\\(2m \\leq x\\leq 2n\\) and \\(2m \\leq y \\leq 2n\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1826/gate2006-49#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -64942,13 +64942,13 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The set \(\\mathbf{T}\) represents various traversals over binary tree. The set \(\\mathbf{S}\) represents the order of visiting nodes during a traversal. <br><br>\( \\begin{array}{|l|l|} \\hline \\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Inorder} & \\text{L: left subtree, node, right subtree} \\\\ \\text{II: Preorder} & \\text{M: node, left subtree, right subtree} \\\\ \\text{III: Postorder} & \\text{N: left subtree, right subtree, node} \\\\ \\hline \\end{array} \) <br><br>Which one of the following is the correct match from \(\\mathbf{T}\) to \(\\mathbf{S}\) ?</span>`,
+            text: `<span style="display: inline;">The set \\(\\mathbf{T}\\) represents various traversals over binary tree. The set \\(\\mathbf{S}\\) represents the order of visiting nodes during a traversal. <br><br>\\( \\begin{array}{|l|l|} \\hline \\quad\\quad\\textbf{T} & \\quad\\quad\\quad\\textbf{S} \\\\ \\hline \\text{I: Inorder} & \\text{L: left subtree, node, right subtree} \\\\ \\text{II: Preorder} & \\text{M: node, left subtree, right subtree} \\\\ \\text{III: Postorder} & \\text{N: left subtree, right subtree, node} \\\\ \\hline \\end{array} \\) <br><br>Which one of the following is the correct match from \\(\\mathbf{T}\\) to \\(\\mathbf{S}\\) ?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\({I}-{L}, {II}-{M}, {III}-{N}\)</span>`,
-                `<span style="display: inline;">\({I}-{M}, {II}-{L}, {III}-{N}\)</span>`,
-                `<span style="display: inline;">\({I}-{N}, {II}-{M}, {III}-{L}\)</span>`,
-                `<span style="display: inline;">\({I}-{L}, {II}-{N}, {III}-{M}\)</span>`,
+                `<span style="display: inline;">\\({I}-{L}, {II}-{M}, {III}-{N}\\)</span>`,
+                `<span style="display: inline;">\\({I}-{M}, {II}-{L}, {III}-{N}\\)</span>`,
+                `<span style="display: inline;">\\({I}-{N}, {II}-{M}, {III}-{L}\\)</span>`,
+                `<span style="display: inline;">\\({I}-{L}, {II}-{N}, {III}-{M}\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Recall the definitions of each traversal (in terms of the order root/current node is visited relative to its subtrees):<br><br>
@@ -64961,32 +64961,32 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">The height of a binary tree is the number of edges in the longest path from the root to a leaf in the tree. The maximum possible height of a full binary tree with \(23\) nodes is ________.(answer in integer)</span>`,
+            text: `<span style="display: inline;">The height of a binary tree is the number of edges in the longest path from the root to a leaf in the tree. The maximum possible height of a full binary tree with \\(23\\) nodes is ________.(answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 11,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a <b>full</b> binary tree, every node has either \(0\) or \(2\) children. If there are \(I\) internal (2-children) nodes and \(L\) leaves, then \(L=I+1\), and total nodes \(N=I+L=2I+1\).<br><br>
-For \(N=23\): \(23=2I+1\\Rightarrow I=11\) internal nodes and \(L=12\) leaves.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a <b>full</b> binary tree, every node has either \\(0\\) or \\(2\\) children. If there are \\(I\\) internal (2-children) nodes and \\(L\\) leaves, then \\(L=I+1\\), and total nodes \\(N=I+L=2I+1\\).<br><br>
+For \\(N=23\\): \\(23=2I+1\\Rightarrow I=11\\) internal nodes and \\(L=12\\) leaves.<br><br>
 To <b>maximize height</b>, make the tree as "skewed"/chain-like as possible while still keeping every internal node's 2-children rule: each internal node (except the last one in the chain) has one leaf child and one internal child continuing the chain; the very last internal node has two leaf children.<br><br>
-This chain uses exactly \(I=11\) internal nodes along the main path, with the deepest leaves appearing right after the \(11\)th internal node. So the longest root-to-leaf path has \(11\) edges.<br><br>
+This chain uses exactly \\(I=11\\) internal nodes along the main path, with the deepest leaves appearing right after the \\(11\\)th internal node. So the longest root-to-leaf path has \\(11\\) edges.<br><br>
 <b>Answer: 11</b><br><br><a href="https://gateoverflow.in/523057/gate-cse-2026-set-1-question-23#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider a binary tree \(T \) in which every node has either zero or two children. Let \(n > 0 \) be the number of nodes in \(T \). <br>Which ONE of the following is the number of nodes in \(T \) that have exactly two children?</span>`,
+            text: `<span style="display: inline;">Consider a binary tree \\(T \\) in which every node has either zero or two children. Let \\(n > 0 \\) be the number of nodes in \\(T \\). <br>Which ONE of the following is the number of nodes in \\(T \\) that have exactly two children?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\frac{n -2}{2} \)</span>`,
-                `<span style="display: inline;">\(\\frac{n - 1}{2} \)</span>`,
-                `<span style="display: inline;">\(\\frac{n}{2} \)</span>`,
-                `<span style="display: inline;">\(\\frac{n + 1}{2} \)</span>`,
+                `<span style="display: inline;">\\(\\frac{n -2}{2} \\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n - 1}{2} \\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n}{2} \\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n + 1}{2} \\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a binary tree where every node has \(0\) or \(2\) children, let \(I\) be the number of \(2\)-children (internal) nodes and \(L\) the number of leaves. A basic counting fact for such trees: \(L=I+1\) (each internal node, when added, net-increases the leaf count by exactly one over what it replaced).<br><br>
-Total nodes: \(n=I+L=I+(I+1)=2I+1\\ \\Rightarrow\\ I=\\dfrac{n-1}2\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a binary tree where every node has \\(0\\) or \\(2\\) children, let \\(I\\) be the number of \\(2\\)-children (internal) nodes and \\(L\\) the number of leaves. A basic counting fact for such trees: \\(L=I+1\\) (each internal node, when added, net-increases the leaf count by exactly one over what it replaced).<br><br>
+Total nodes: \\(n=I+L=I+(I+1)=2I+1\\ \\Rightarrow\\ I=\\dfrac{n-1}2\\)<br><br>
 <b>Answer: (n-1)/2</b><br><br><a href="https://gateoverflow.in/460832/gate-cse-2025-set-2-question-3#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65020,12 +65020,12 @@ will it print?</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  foo returns the sum of a subtree and prints it <b>after</b> both children (post-order):<br>
-- node 3 \(\\rightarrow\) prints 3<br>
-- node 8 \(\\rightarrow\) prints 8<br>
-- node 5 \(\\rightarrow\) 5 + 3 + 8 = 16<br>
-- node 13 \(\\rightarrow\) 13<br>
-- node 11 \(\\rightarrow\) 11 + 0 + 13 = 24<br>
-- root 10 \(\\rightarrow\) 10 + 16 + 24 = 50<br><br>
+- node 3 \\(\\rightarrow\\) prints 3<br>
+- node 8 \\(\\rightarrow\\) prints 8<br>
+- node 5 \\(\\rightarrow\\) 5 + 3 + 8 = 16<br>
+- node 13 \\(\\rightarrow\\) 13<br>
+- node 11 \\(\\rightarrow\\) 11 + 0 + 13 = 24<br>
+- root 10 \\(\\rightarrow\\) 10 + 16 + 24 = 50<br><br>
 <b>Answer: 3 8 16 13 24 50</b><br><br><a href="https://gateoverflow.in/399274/gate-cse-2023-question-37#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65039,9 +65039,9 @@ The value of |A-B| is _____________</span>`,
             ],
             answer: 1,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Complete binary tree with 7 nodes: root, its two children L and R, and four grandchildren.<br>
-- BFS first 3: root, L, R \(\\rightarrow\) A = {root, L, R}<br>
-- DFS first 3: root, L, L's left child \(\\rightarrow\) B = {root, L, LL}<br><br>
-A \(-\) B = {R} \(\\rightarrow\) |A \(-\) B| = 1<br><br>
+- BFS first 3: root, L, R \\(\\rightarrow\\) A = {root, L, R}<br>
+- DFS first 3: root, L, L's left child \\(\\rightarrow\\) B = {root, L, LL}<br><br>
+A \\(-\\) B = {R} \\(\\rightarrow\\) |A \\(-\\) B| = 1<br><br>
 <b>Answer: 1</b><br><br><a href="https://gateoverflow.in/357524/gate-cse-2021-set-2-question-16#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65058,9 +65058,9 @@ A \(-\) B = {R} \(\\rightarrow\) |A \(-\) B| = 1<br><br>
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Taking the tree as a BST on letters (in-order = A to I):<br>
-- Postorder ends with F \(\\rightarrow\) root F; left part A C E D B, right part H I G.<br>
-- Left: root B, left A, right subtree C E D \(\\rightarrow\) root D with children C and E.<br>
-- Right: root G, right subtree H I \(\\rightarrow\) root I with left child H.<br><br>
+- Postorder ends with F \\(\\rightarrow\\) root F; left part A C E D B, right part H I G.<br>
+- Left: root B, left A, right subtree C E D \\(\\rightarrow\\) root D with children C and E.<br>
+- Right: root G, right subtree H I \\(\\rightarrow\\) root I with left child H.<br><br>
 Preorder (root, left, right): F B A D C E G I H<br><br>
 <b>Answer: F B A D C E G I H</b><br><br><a href="https://gateoverflow.in/331270/isro2020-23" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -65078,7 +65078,7 @@ Preorder (root, left, right): F B A D C E G I H<br><br>
 - sibling: distance 2 (1 leaf)<br>
 - same subtree of height 2: distance 4 (2 leaves)<br>
 - other half: distance 6 (4 leaves)<br><br>
-\(E=\\frac{0+2+2\\times4+4\\times6}{8}=\\frac{34}{8}=4.25\)<br><br>
+\\(E=\\frac{0+2+2\\times4+4\\times6}{8}=\\frac{34}{8}=4.25\\)<br><br>
 <b>Answer: 4.25</b><br><br><a href="https://gateoverflow.in/302802/gate2019-cs-46#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65109,10 +65109,10 @@ Tree-1 postorder and Tree-2 inorder are close but differ (D B vs B D), and the o
             options: [
             ],
             answer: 4,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Postorder ends with 1 \(\\rightarrow\) root 1. Inorder splits into left {8, 6, 9, 4, 7, 2, 5} and right {3}.<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Postorder ends with 1 \\(\\rightarrow\\) root 1. Inorder splits into left {8, 6, 9, 4, 7, 2, 5} and right {3}.<br>
 - Left subtree: root 2 (last in its postorder), with left {8, 6, 9, 4, 7} and right {5}.<br>
 - {8, 6, 9, 4, 7}: root 4, left {8, 6, 9} (root 6 with children 8, 9), right {7}.<br><br>
-Longest path: 1 \(\\rightarrow\) 2 \(\\rightarrow\) 4 \(\\rightarrow\) 6 \(\\rightarrow\) 8 = 4 edges.<br><br>
+Longest path: 1 \\(\\rightarrow\\) 2 \\(\\rightarrow\\) 4 \\(\\rightarrow\\) 6 \\(\\rightarrow\\) 8 = 4 edges.<br><br>
 <b>Answer: 4</b><br><br><a href="https://gateoverflow.in/204094/gate2018-20#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65128,7 +65128,7 @@ Longest path: 1 \(\\rightarrow\) 2 \(\\rightarrow\) 4 \(\\rightarrow\) 6 \(\\rig
                 `<span style="display: inline;">-,a,b,+,*,c,d</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Postorder ab\(-\)cd*+ means the root is +, its left subtree is a\(-\)b and its right subtree is c*d. So node 1 = +, node 2 = \(-\), node 3 = *, and leaves 4, 5, 6, 7 = a, b, c, d.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Postorder ab\\(-\\)cd*+ means the root is +, its left subtree is a\\(-\\)b and its right subtree is c*d. So node 1 = +, node 2 = \\(-\\), node 3 = *, and leaves 4, 5, 6, 7 = a, b, c, d.<br><br>
 <b>Answer: +, -, *, a, b, c, d</b><br><br><a href="https://gateoverflow.in/128696/isro2017-50" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2017" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2017</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65138,7 +65138,7 @@ Longest path: 1 \(\\rightarrow\) 2 \(\\rightarrow\) 4 \(\\rightarrow\) 6 \(\\rig
             text: `<span style="display: inline;">A complete binary tree with n non-leaf nodes contains</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\log_{2}n\) nodes</span>`,
+                `<span style="display: inline;">\\(\\log_{2}n\\) nodes</span>`,
                 `<span style="display: inline;">n+1  nodes</span>`,
                 `<span style="display: inline;">2n nodes</span>`,
                 `<span style="display: inline;">2n+1 nodes</span>`,
@@ -65166,11 +65166,11 @@ The New-order traversal of the expression tree corresponding to the reverse poli
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Expression tree of 3 4 * 5 - 2 ^ 6 7 * 1 + - :<br>
-root \(-\), left = ((3*4) \(-\) 5) ^ 2, right = (6*7) + 1.<br><br>
+root \\(-\\), left = ((3*4) \\(-\\) 5) ^ 2, right = (6*7) + 1.<br><br>
 New-order = root, right subtree, left subtree:<br>
-- root: \(-\)<br>
+- root: \\(-\\)<br>
 - right: + 1 * 7 6<br>
-- left: ^ 2 \(-\) 5 * 4 3<br><br>
+- left: ^ 2 \\(-\\) 5 * 4 3<br><br>
 <b>Answer: - + 1 * 7 6 ^ 2 - 5 * 4 3</b><br><br><a href="https://gateoverflow.in/39597/gate2016-2-36#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65182,8 +65182,8 @@ New-order = root, right subtree, left subtree:<br>
             options: [
             ],
             answer: 199,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In any binary tree, the number of nodes with two children = leaves \(-\) 1.<br><br>
-200 \(-\) 1 = 199<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In any binary tree, the number of nodes with two children = leaves \\(-\\) 1.<br><br>
+200 \\(-\\) 1 = 199<br><br>
 <b>Answer: 199</b><br><br><a href="https://gateoverflow.in/8428/gate2015-3-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65195,8 +65195,8 @@ New-order = root, right subtree, left subtree:<br>
             options: [
             ],
             answer: 19,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In any binary tree, (nodes with 2 children) = (leaves) \(-\) 1.<br><br>
-20 \(-\) 1 = 19<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In any binary tree, (nodes with 2 children) = (leaves) \\(-\\) 1.<br><br>
+20 \\(-\\) 1 = 19<br><br>
 <b>Answer: 19</b><br><br><a href="https://gateoverflow.in/8059/gate2015-2-13#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65212,7 +65212,7 @@ New-order = root, right subtree, left subtree:<br>
                 `<span style="display: inline;">31 and 5, respectively</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Maximum: complete tree with levels 0 to 5 = \(2^6-1=63\) nodes<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Maximum: complete tree with levels 0 to 5 = \\(2^6-1=63\\) nodes<br>
 - Minimum: a single path of 5 edges = 6 nodes<br><br>
 <b>Answer: 63 and 6</b><br><br><a href="https://gateoverflow.in/8223/gate2015-1-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -65238,8 +65238,8 @@ registerTest({
                 `<span style="display: inline;">120</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Taking trees as rooted and ordered (the order of children matters), the number of shapes with 4 nodes is the Catalan number \(C_3=5\).<br><br>
-Labelling the nodes with A, B, C, D in 4! = 24 ways: 5 \(\\times\) 24 = 120.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Taking trees as rooted and ordered (the order of children matters), the number of shapes with 4 nodes is the Catalan number \\(C_3=5\\).<br><br>
+Labelling the nodes with A, B, C, D in 4! = 24 ways: 5 \\(\\times\\) 24 = 120.<br><br>
 <b>Answer: 120</b><br><br><a href="https://gateoverflow.in/17447/isro2014-73" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2014</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65289,8 +65289,8 @@ of the expression represented by the tree is ___. <br><img src="images/practicep
             ],
             answer: 6,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Root = (left subtree) + (right subtree).<br><br>
-- Left: (a + b) \(-\) (c \(-\) d). Max = (1 + 1) \(-\) (0 \(-\) 1) = 3<br>
-- Right: (e \(-\) f) + (g + h). Max = (1 \(-\) 0) + (1 + 1) = 3<br><br>
+- Left: (a + b) \\(-\\) (c \\(-\\) d). Max = (1 + 1) \\(-\\) (0 \\(-\\) 1) = 3<br>
+- Right: (e \\(-\\) f) + (g + h). Max = (1 \\(-\\) 0) + (1 + 1) = 3<br><br>
 Maximum = 3 + 3 = 6<br><br>
 <b>Answer: 6</b><br><br><a href="https://gateoverflow.in/1999/gate2014-2-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -65299,14 +65299,14 @@ Maximum = 3 + 3 = 6<br><br>
             neg: 0,
             type: "NAT",
             text: `<span style="display: inline;">Consider rooted n node binary tree represented using pointers. The best upper bound on the
-time required to determine the number of sub trees having exactly 4 nodes is \(O(n^{a}lob^{b}n)\) .
+time required to determine the number of sub trees having exactly 4 nodes is \\(O(n^{a}lob^{b}n)\\) .
 Then the value of a+10b is_______</span>`,
             image: "",
             options: [
             ],
             answer: 1,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A post-order traversal computes the size of every subtree (1 + left size + right size) in \(O(n)\) total, and counts subtrees of size 4 along the way.<br><br>
-\(O(n)=O(n^1\\log^0 n)\) \(\\rightarrow\) a = 1, b = 0 \(\\rightarrow\) a + 10b = 1<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A post-order traversal computes the size of every subtree (1 + left size + right size) in \\(O(n)\\) total, and counts subtrees of size 4 along the way.<br><br>
+\\(O(n)=O(n^1\\log^0 n)\\) \\(\\rightarrow\\) a = 1, b = 0 \\(\\rightarrow\\) a + 10b = 1<br><br>
 <b>Answer: 1</b><br><br><a href="https://gateoverflow.in/1776/gate2014-1-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -65348,19 +65348,19 @@ tree rooted at the tree pointer root.
 The appropriate expressions for the two boxes B1 and B2 are</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">B1: (1+height(n \(\\rightarrow\) right)) <br>
+                `<span style="display: inline;">B1: (1+height(n \\(\\rightarrow\\) right)) <br>
 B2: (1+max(h1, h2))</span>`,
-                `<span style="display: inline;">B1: (height(n \(\\rightarrow\) right))<br>
+                `<span style="display: inline;">B1: (height(n \\(\\rightarrow\\) right))<br>
 B2: (1+max(h1,h2))</span>`,
-                `<span style="display: inline;">B1: height(n \(\\rightarrow\) right)<br>
+                `<span style="display: inline;">B1: height(n \\(\\rightarrow\\) right)<br>
 B2: max(h1, h2)</span>`,
-                `<span style="display: inline;">B1: (1+ height(n \(\\rightarrow\) right))<br>
+                `<span style="display: inline;">B1: (1+ height(n \\(\\rightarrow\\) right))<br>
 B2: max(h1, h2)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Only a right child: height = 1 + height(right) \(\\rightarrow\) B1<br>
-- Both children: height = 1 + max(h1, h2) \(\\rightarrow\) B2<br><br>
-<b>Answer: B1: 1 + height(n\(\\rightarrow\)right), B2: 1 + max(h1, h2)</b><br><br><a href="https://gateoverflow.in/2163/gate2012-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Only a right child: height = 1 + height(right) \\(\\rightarrow\\) B1<br>
+- Both children: height = 1 + max(h1, h2) \\(\\rightarrow\\) B2<br><br>
+<b>Answer: B1: 1 + height(n\\(\\rightarrow\\)right), B2: 1 + max(h1, h2)</b><br><br><a href="https://gateoverflow.in/2163/gate2012-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -65410,9 +65410,9 @@ So no node has exactly one child.<br><br>
             image: "",
             options: [
                 `<span style="display: inline;">n nodes</span>`,
-                `<span style="display: inline;">\(\\log_2\) n nodes</span>`,
+                `<span style="display: inline;">\\(\\log_2\\) n nodes</span>`,
                 `<span style="display: inline;">2n-1</span>`,
-                `<span style="display: inline;">\(2^n\) nodes</span>`,
+                `<span style="display: inline;">\\(2^n\\) nodes</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/50383/isro2009-31" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2009" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2009</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65438,17 +65438,17 @@ So no node has exactly one child.<br><br>
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">A binary tree with n>1 nodes has \(n_{1}\), \(n_{2}\) and \(n_{3}\) nodes of degree one, two and three respectively. The degree of a node is defined as the number of its neighbors.<br>
+            text: `<span style="display: inline;">A binary tree with n>1 nodes has \\(n_{1}\\), \\(n_{2}\\) and \\(n_{3}\\) nodes of degree one, two and three respectively. The degree of a node is defined as the number of its neighbors.<br>
 
 
 
 Starting with the above tree, while there remains a node v of degree two in the tree, add an edge between the two neighbors of v and then remove v from the tree. How many edges will remain at the end of the process?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(2 * n_{1}-3\)</span>`,
-                `<span style="display: inline;">\(n_{2}+2 * n_{1}-2\)</span>`,
-                `<span style="display: inline;">\(n_{3}-n_{2}\)</span>`,
-                `<span style="display: inline;">\(n_{2}+n_{1}-2\)</span>`,
+                `<span style="display: inline;">\\(2 * n_{1}-3\\)</span>`,
+                `<span style="display: inline;">\\(n_{2}+2 * n_{1}-2\\)</span>`,
+                `<span style="display: inline;">\\(n_{3}-n_{2}\\)</span>`,
+                `<span style="display: inline;">\\(n_{2}+n_{1}-2\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3391/gate2008-it-77" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2008" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2008</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65457,15 +65457,15 @@ Starting with the above tree, while there remains a node v of degree two in the 
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">A binary tree with n>1 nodes has \(n_{1}\), \(n_{2}\) and \(n_{3}\) nodes of degree one, two and three respectively. The degree of a node is defined as the number of its neighbors.<br><br>
+            text: `<span style="display: inline;">A binary tree with n>1 nodes has \\(n_{1}\\), \\(n_{2}\\) and \\(n_{3}\\) nodes of degree one, two and three respectively. The degree of a node is defined as the number of its neighbors.<br><br>
 
-\(n_{3}\) can be expressed as</span>`,
+\\(n_{3}\\) can be expressed as</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(n_{1}+n_{2}-1\)</span>`,
-                `<span style="display: inline;">\(n_{1}-2\)</span>`,
-                `<span style="display: inline;">\({\\left[\\left(\\left(n_{1}+n_{2}\\right) / 2\\right)\\right]}\)</span>`,
-                `<span style="display: inline;">\(n_{2}-1\)</span>`,
+                `<span style="display: inline;">\\(n_{1}+n_{2}-1\\)</span>`,
+                `<span style="display: inline;">\\(n_{1}-2\\)</span>`,
+                `<span style="display: inline;">\\({\\left[\\left(\\left(n_{1}+n_{2}\\right) / 2\\right)\\right]}\\)</span>`,
+                `<span style="display: inline;">\\(n_{2}-1\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3390/gate2008-it-76" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2008" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2008</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65577,10 +65577,10 @@ registerTest({
 path. The maximum number of nodes in a binary tree of height h is:</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(2^{h}-1\)</span>`,
-                `<span style="display: inline;">\(2^{h-1}-1\)</span>`,
-                `<span style="display: inline;">\(2^{h+1}-1\)</span>`,
-                `<span style="display: inline;">\(2^{h+1}\)</span>`,
+                `<span style="display: inline;">\\(2^{h}-1\\)</span>`,
+                `<span style="display: inline;">\\(2^{h-1}-1\\)</span>`,
+                `<span style="display: inline;">\\(2^{h+1}-1\\)</span>`,
+                `<span style="display: inline;">\\(2^{h+1}\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1210/gate2007-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2007" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2007</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65589,15 +65589,15 @@ path. The maximum number of nodes in a binary tree of height h is:</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">An array X of n distinct integers is interpreted as a complete binary tree. The index of the first element of the array is 0. If the root node is at level 0, the level of element \(X[i], i \\neq 0\), is
+            text: `<span style="display: inline;">An array X of n distinct integers is interpreted as a complete binary tree. The index of the first element of the array is 0. If the root node is at level 0, the level of element \\(X[i], i \\neq 0\\), is
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\left \\lfloor \\log _2 i \\right \\rfloor\)</span>`,
-                `<span style="display: inline;">\(\\left \\lceil \\log _2 (i+1)\\right \\rceil\)</span>`,
-                `<span style="display: inline;">\(\\left \\lfloor \\log _2 (i+1) \\right \\rfloor\)</span>`,
-                `<span style="display: inline;">\(\\left \\lceil \\log _2 i \\right \\rceil\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lfloor \\log _2 i \\right \\rfloor\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lceil \\log _2 (i+1)\\right \\rceil\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lfloor \\log _2 (i+1) \\right \\rfloor\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lceil \\log _2 i \\right \\rceil\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3617/gate2006-it-73" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65611,10 +65611,10 @@ path. The maximum number of nodes in a binary tree of height h is:</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O (n)\)</span>`,
-                `<span style="display: inline;">\(O (\\log n)\)</span>`,
-                `<span style="display: inline;">\(O (n \\log n)\)</span>`,
-                `<span style="display: inline;">\(O (n \\log \\log n)\)</span>`,
+                `<span style="display: inline;">\\(O (n)\\)</span>`,
+                `<span style="display: inline;">\\(O (\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(O (n \\log n)\\)</span>`,
+                `<span style="display: inline;">\\(O (n \\log \\log n)\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3616/gate2006-it-72" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65623,15 +65623,15 @@ path. The maximum number of nodes in a binary tree of height h is:</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">An array X of n distinct integers is interpreted as a complete binary tree. The index of the first element of the array is 0. The index of the parent of element\(X[i], i \\neq 0\), is?
+            text: `<span style="display: inline;">An array X of n distinct integers is interpreted as a complete binary tree. The index of the first element of the array is 0. The index of the parent of element\\(X[i], i \\neq 0\\), is?
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\left \\lfloor \\dfrac i 2 \\right \\rfloor\)</span>`,
-                `<span style="display: inline;">\(\\left \\lceil \\dfrac{i-1}{2} \\right \\rceil\)</span>`,
-                `<span style="display: inline;">\(\\left \\lceil \\dfrac i 2 \\right \\rceil\)</span>`,
-                `<span style="display: inline;">\(\\left \\lceil \\dfrac i 2 \\right \\rceil - 1\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lfloor \\dfrac i 2 \\right \\rfloor\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lceil \\dfrac{i-1}{2} \\right \\rceil\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lceil \\dfrac i 2 \\right \\rceil\\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lceil \\dfrac i 2 \\right \\rceil - 1\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3615/gate2006-it-71" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65664,7 +65664,7 @@ to store any binary tree on n vertices, the minimum size of X should be</span>`,
                 `<span style="display: inline;">log n</span>`,
                 `<span style="display: inline;">n</span>`,
                 `<span style="display: inline;">2n+1</span>`,
-                `<span style="display: inline;">\(2^{n}-1\)</span>`,
+                `<span style="display: inline;">\\(2^{n}-1\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/974/gate2006-13#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65678,10 +65678,10 @@ to store any binary tree on n vertices, the minimum size of X should be</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(2^{h-1}\)</span>`,
-                `<span style="display: inline;">\(2^{h-1} + 1\)</span>`,
-                `<span style="display: inline;">\(2^h - 1\)</span>`,
-                `<span style="display: inline;">\(2^h\)</span>`,
+                `<span style="display: inline;">\\(2^{h-1}\\)</span>`,
+                `<span style="display: inline;">\\(2^{h-1} + 1\\)</span>`,
+                `<span style="display: inline;">\\(2^h - 1\\)</span>`,
+                `<span style="display: inline;">\\(2^h\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3811/gate2005-it-50" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2005" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2005</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65816,7 +65816,7 @@ Which of these pairs identify a tree uniquely? <br><br>
                 `<span style="display: inline;">A tree with a n nodes has (n- 1) edges</span>`,
                 `<span style="display: inline;">A labeled rooted binary tree can be uniquely constructed given its postorder and preorder traversal results.</span>`,
                 `<span style="display: inline;">A complete binary tree with n internal nodes has (n + 1) leaves.</span>`,
-                `<span style="display: inline;">The maximum number of nodes in a binary tree of height h is \(2^{h+1} - 1\)</span>`,
+                `<span style="display: inline;">The maximum number of nodes in a binary tree of height h is \\(2^{h+1} - 1\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1661/gate1998-1-24" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1998" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 1998</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65854,10 +65854,10 @@ registerTest({
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\log_2 n\)</span>`,
+                `<span style="display: inline;">\\(\\log_2 n\\)</span>`,
                 `<span style="display: inline;">n-1</span>`,
                 `<span style="display: inline;">n</span>`,
-                `<span style="display: inline;">\(2^n\)</span>`,
+                `<span style="display: inline;">\\(2^n\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/2604/gate1995-1-17" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1995" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 1995</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -65882,16 +65882,16 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Choose the correct alternatives (More than one may be correct).<br>The total external path length, EPL, of a binary tree with n external nodes is, \(\\Sigma _w=Iw\), where \(I_{w}\) is the path length of external node w),
+            text: `<span style="display: inline;">Choose the correct alternatives (More than one may be correct).<br>The total external path length, EPL, of a binary tree with n external nodes is, \\(\\Sigma _w=Iw\\), where \\(I_{w}\\) is the path length of external node w),
 
 
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\leq n^{2}\) always.</span>`,
-                `<span style="display: inline;">\(\\geq n \\log_{2}\) n always.</span>`,
-                `<span style="display: inline;">Equal to \(n^{2}\) always.</span>`,
+                `<span style="display: inline;">\\(\\leq n^{2}\\) always.</span>`,
+                `<span style="display: inline;">\\(\\geq n \\log_{2}\\) n always.</span>`,
+                `<span style="display: inline;">Equal to \\(n^{2}\\) always.</span>`,
                 `<span style="display: inline;">O(n) for some special trees.</span>`,
             ],
             answer: "B",
@@ -65908,7 +65908,7 @@ registerTest({
             options: [
                 `<span style="display: inline;">Equal to the number of ways of multiplying (n+1) matrices.</span>`,
                 `<span style="display: inline;">Equal to the number of ways of arranging n out of 2 n distinct elements.</span>`,
-                `<span style="display: inline;">Equal to \(\\frac{1}{(n+1)}\\binom{2n}{n}\).</span>`,
+                `<span style="display: inline;">Equal to \\(\\frac{1}{(n+1)}\\binom{2n}{n}\\).</span>`,
                 `<span style="display: inline;">Equal to n!.</span>`,
             ],
             answer: "A",
@@ -65944,18 +65944,18 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider a binary search tree (BST) with \(n\) leaf nodes \((n>0)\). Given any node \(V\), the key present in the node is denoted as \({Val}(V)\). All the keys present in the given BST are distinct. The keys belong to the set of real numbers. <br><br>For a node \(V\), let \({Suc}(V)\) denote the node that is its inorder successor. If a node \(V\) does not have an inorder successor, then \(\\operatorname{Suc}(V)\) is \(N U L L\). As there are no duplicates, if \({Suc}(V)\) is not \(N U L L\), then \({Val}(V) < {Val}({Suc}(V))\). <br><br>Corresponding to every leaf node \(L_{i}\) that has a non-NULL \(\\operatorname{Suc}\\left(L_{i}\\right)\), a new key \(k_{i}\) with the following property is to be inserted into the BST.<br><br> \( {Val}\\left(L_{i}\\right) < k_{i} < Val ({Suc}(L_{i}))\) <br><br>Let \(K\) represent the list of all such new keys to be inserted into the BST. <br><br>Which of the following statements is/are true?</span>`,
+            text: `<span style="display: inline;">Consider a binary search tree (BST) with \\(n\\) leaf nodes \\((n>0)\\). Given any node \\(V\\), the key present in the node is denoted as \\({Val}(V)\\). All the keys present in the given BST are distinct. The keys belong to the set of real numbers. <br><br>For a node \\(V\\), let \\({Suc}(V)\\) denote the node that is its inorder successor. If a node \\(V\\) does not have an inorder successor, then \\(\\operatorname{Suc}(V)\\) is \\(N U L L\\). As there are no duplicates, if \\({Suc}(V)\\) is not \\(N U L L\\), then \\({Val}(V) < {Val}({Suc}(V))\\). <br><br>Corresponding to every leaf node \\(L_{i}\\) that has a non-NULL \\(\\operatorname{Suc}\\left(L_{i}\\right)\\), a new key \\(k_{i}\\) with the following property is to be inserted into the BST.<br><br> \\( {Val}\\left(L_{i}\\right) < k_{i} < Val ({Suc}(L_{i}))\\) <br><br>Let \\(K\\) represent the list of all such new keys to be inserted into the BST. <br><br>Which of the following statements is/are true?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(K\) cannot have any duplicates</span>`,
-                `<span style="display: inline;">\(K\) will have at least one element</span>`,
-                `<span style="display: inline;">After inserting all keys from \(K\), the height of the BST can increase at most by one</span>`,
-                `<span style="display: inline;">Number of nodes in the BST will double after inserting all keys from \(K\)</span>`,
+                `<span style="display: inline;">\\(K\\) cannot have any duplicates</span>`,
+                `<span style="display: inline;">\\(K\\) will have at least one element</span>`,
+                `<span style="display: inline;">After inserting all keys from \\(K\\), the height of the BST can increase at most by one</span>`,
+                `<span style="display: inline;">Number of nodes in the BST will double after inserting all keys from \\(K\\)</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Since inorder traversal visits keys in strictly increasing order, and \(k_i\) is inserted strictly between two <i>consecutive</i> values in that inorder sequence (a leaf \(L_i\) and its immediate successor), every such gap \((\\text{Val}(L_i),\\text{Val}(\\text{Suc}(L_i)))\) is a distinct, non-overlapping interval &mdash; so the chosen \(k_i\) values can never coincide. <b>K cannot have duplicates: True.</b><br><br>
-If the BST has only a single node (which is also its own only leaf, and is simultaneously the overall maximum so it has no inorder successor), then no leaf has a non-NULL successor at all, and \(K\) would be empty. So \(K\) having at least one element is <b>not always true</b> (fails for the trivial single-node tree).<br><br>
-Since each new key \(k_i\) is inserted strictly between a leaf \(L_i\) (which has no children) and its successor, the standard BST insertion algorithm places \(k_i\) directly as the <b>right child</b> of \(L_i\) itself (since \(L_i\) has no right subtree to begin with, being a leaf). This adds exactly one extra level below that specific leaf, so the overall tree height increases by <i>at most</i> \(1\) (it stays the same unless one of the affected leaves was already at the maximum depth). <b>True.</b><br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Since inorder traversal visits keys in strictly increasing order, and \\(k_i\\) is inserted strictly between two <i>consecutive</i> values in that inorder sequence (a leaf \\(L_i\\) and its immediate successor), every such gap \\((\\text{Val}(L_i),\\text{Val}(\\text{Suc}(L_i)))\\) is a distinct, non-overlapping interval &mdash; so the chosen \\(k_i\\) values can never coincide. <b>K cannot have duplicates: True.</b><br><br>
+If the BST has only a single node (which is also its own only leaf, and is simultaneously the overall maximum so it has no inorder successor), then no leaf has a non-NULL successor at all, and \\(K\\) would be empty. So \\(K\\) having at least one element is <b>not always true</b> (fails for the trivial single-node tree).<br><br>
+Since each new key \\(k_i\\) is inserted strictly between a leaf \\(L_i\\) (which has no children) and its successor, the standard BST insertion algorithm places \\(k_i\\) directly as the <b>right child</b> of \\(L_i\\) itself (since \\(L_i\\) has no right subtree to begin with, being a leaf). This adds exactly one extra level below that specific leaf, so the overall tree height increases by <i>at most</i> \\(1\\) (it stays the same unless one of the affected leaves was already at the maximum depth). <b>True.</b><br><br>
 Since only leaves that have a non-NULL successor get a new key (not every single leaf, and definitely not every internal node), the total node count does not generally double. <b>Not always true.</b><br><br>
 <b>Answer: K cannot have duplicates; and after inserting all keys of K, the height increases by at most one.</b><br><br><a href="https://gateoverflow.in/523107/gate-cse-2026-set-2-question-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -65963,28 +65963,28 @@ Since only leaves that have a non-NULL successor get a new key (not every single
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">The following sequence corresponds to the preorder traversal of a binary search tree \(T\) : <br><br>\( 50,25,13,40,30,47,75,60,70,80,77 \) <br><br>The position of the element \(60\) in the postorder traversal of \(T\) is ________ . (answer in integer)<br> Note: The position begins with \(1\).</span>`,
+            text: `<span style="display: inline;">The following sequence corresponds to the preorder traversal of a binary search tree \\(T\\) : <br><br>\\( 50,25,13,40,30,47,75,60,70,80,77 \\) <br><br>The position of the element \\(60\\) in the postorder traversal of \\(T\\) is ________ . (answer in integer)<br> Note: The position begins with \\(1\\).</span>`,
             image: "",
             options: [
             ],
             answer: 7,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Reconstruct the BST from the preorder \(50,25,13,40,30,47,75,60,70,80,77\) (each root's left subtree holds smaller values, right subtree holds larger values, read off in preorder root-first fashion):<br><br>
-\(50\) is the root. Left subtree (values \(<50\)): \(25,13,40,30,47\); right subtree (values \(>50\)): \(75,60,70,80,77\).<br>
-Left subtree: root \(25\), left child \(13\) (leaf), right subtree \(40,30,47\) &rarr; root \(40\), left \(30\), right \(47\).<br>
-Right subtree: root \(75\), left subtree \(60,70\) &rarr; root \(60\) with right child \(70\) (no left); right subtree \(80,77\) &rarr; root \(80\) with left child \(77\) (no right).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Reconstruct the BST from the preorder \\(50,25,13,40,30,47,75,60,70,80,77\\) (each root's left subtree holds smaller values, right subtree holds larger values, read off in preorder root-first fashion):<br><br>
+\\(50\\) is the root. Left subtree (values \\(<50\\)): \\(25,13,40,30,47\\); right subtree (values \\(>50\\)): \\(75,60,70,80,77\\).<br>
+Left subtree: root \\(25\\), left child \\(13\\) (leaf), right subtree \\(40,30,47\\) &rarr; root \\(40\\), left \\(30\\), right \\(47\\).<br>
+Right subtree: root \\(75\\), left subtree \\(60,70\\) &rarr; root \\(60\\) with right child \\(70\\) (no left); right subtree \\(80,77\\) &rarr; root \\(80\\) with left child \\(77\\) (no right).<br><br>
 Postorder (left, right, root) of the whole tree:<br>
-From the \(25\)-subtree: \(13,\\ 30,47,40,\\ 25\)<br>
-From the \(75\)-subtree: \(70,60,\\ 77,80,\\ 75\)<br>
-Then the root \(50\).<br><br>
-Full postorder: \(13,\\,30,\\,47,\\,40,\\,25,\\,70,\\,60,\\,77,\\,80,\\,75,\\,50\)<br><br>
-Counting positions (starting at \(1\)): \(60\) is the \(7\)th element.<br><br>
+From the \\(25\\)-subtree: \\(13,\\ 30,47,40,\\ 25\\)<br>
+From the \\(75\\)-subtree: \\(70,60,\\ 77,80,\\ 75\\)<br>
+Then the root \\(50\\).<br><br>
+Full postorder: \\(13,\\,30,\\,47,\\,40,\\,25,\\,70,\\,60,\\,77,\\,80,\\,75,\\,50\\)<br><br>
+Counting positions (starting at \\(1\\)): \\(60\\) is the \\(7\\)th element.<br><br>
 <b>Answer: 7</b><br><br><a href="https://gateoverflow.in/523028/gate-cse-2026-set-1-question-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Let \(P\) be the set of all integers from \(1\) to \(15\). Consider any order of insertion of the elements of \(P\) into a binary search tree that creates a complete binary tree. <br><br>Which one of the following elements can NEVER be the third element that is inserted?</span>`,
+            text: `<span style="display: inline;">Let \\(P\\) be the set of all integers from \\(1\\) to \\(15\\). Consider any order of insertion of the elements of \\(P\\) into a binary search tree that creates a complete binary tree. <br><br>Which one of the following elements can NEVER be the third element that is inserted?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">4</span>`,
@@ -65993,67 +65993,67 @@ Counting positions (starting at \(1\)): \(60\) is the \(7\)th element.<br><br>
                 `<span style="display: inline;">5</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Since the \(15\) elements form a <b>complete</b> binary tree that is also a valid <b>BST</b>, the shape and contents of every position are fully determined: the tree must be a perfectly balanced BST on \(\\{1,\\ldots,15\\}\):<br><br>
-Level 0 (root): \(8\)<br>
-Level 1: \(4,\\ 12\)<br>
-Level 2: \(2,\\ 6,\\ 10,\\ 14\)<br>
-Level 3 (leaves): \(1,3,5,7,9,11,13,15\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Since the \\(15\\) elements form a <b>complete</b> binary tree that is also a valid <b>BST</b>, the shape and contents of every position are fully determined: the tree must be a perfectly balanced BST on \\(\\{1,\\ldots,15\\}\\):<br><br>
+Level 0 (root): \\(8\\)<br>
+Level 1: \\(4,\\ 12\\)<br>
+Level 2: \\(2,\\ 6,\\ 10,\\ 14\\)<br>
+Level 3 (leaves): \\(1,3,5,7,9,11,13,15\\)<br><br>
 For an insertion sequence to build up exactly this shape via ordinary BST insertion, a node can only be inserted after its parent has already been inserted (a node's tree position is only "unlocked" once its parent exists). So valid insertion orders are precisely the orders in which every node appears after its parent (a topological/level-respecting order).<br><br>
-The root \(8\) must always be inserted first. The <b>second</b> insertion must be one of the root's children, \(4\) or \(12\). The <b>third</b> insertion can then be: the other level-1 node (\(12\) or \(4\)), or a level-2 child of whichever level-1 node was inserted second (e.g. \(2\) or \(6\) if \(4\) went second). This gives possible third elements \(\\{2,4,6,10,12,14\\}\) &mdash; only levels 0-2 nodes can ever appear as early as the third insertion.<br><br>
-\(5\) is a <b>level-3 leaf</b> (child of \(6\), which is itself a level-2 child of \(4\)). Before \(5\) can be inserted, both its ancestors \(8\) and \(4\) and \(6\) would already need to exist &mdash; requiring at least \(4\) prior insertions. So \(5\) can never be inserted as early as third.<br><br>
+The root \\(8\\) must always be inserted first. The <b>second</b> insertion must be one of the root's children, \\(4\\) or \\(12\\). The <b>third</b> insertion can then be: the other level-1 node (\\(12\\) or \\(4\\)), or a level-2 child of whichever level-1 node was inserted second (e.g. \\(2\\) or \\(6\\) if \\(4\\) went second). This gives possible third elements \\(\\{2,4,6,10,12,14\\}\\) &mdash; only levels 0-2 nodes can ever appear as early as the third insertion.<br><br>
+\\(5\\) is a <b>level-3 leaf</b> (child of \\(6\\), which is itself a level-2 child of \\(4\\)). Before \\(5\\) can be inserted, both its ancestors \\(8\\) and \\(4\\) and \\(6\\) would already need to exist &mdash; requiring at least \\(4\\) prior insertions. So \\(5\\) can never be inserted as early as third.<br><br>
 <b>Answer: 5 can NEVER be the third element inserted.</b><br><br><a href="https://gateoverflow.in/523050/gate-cse-2026-set-1-question-30#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Suppose the values 10, -4, 15, 30, 20, 5, 60, 19 are inserted in that order into an initially empty binary search tree. Let \(T \) be the resulting binary search tree.  
-The number of edges in the path from the node containing 19 to the root node of \(T \) is ___________. (Answer in integer)</span>`,
+            text: `<span style="display: inline;">Suppose the values 10, -4, 15, 30, 20, 5, 60, 19 are inserted in that order into an initially empty binary search tree. Let \\(T \\) be the resulting binary search tree.  
+The number of edges in the path from the node containing 19 to the root node of \\(T \\) is ___________. (Answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 4,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Insert each value into the BST, always going left for smaller and right for larger than the current node:<br><br>
-\(10\) (root) &rarr; \(-4\) (left of \(10\)) &rarr; \(15\) (right of \(10\)) &rarr; \(30\) (right of \(15\)) &rarr; \(20\) (left of \(30\)) &rarr; \(5\) (right of \(-4\)) &rarr; \(60\) (right of \(30\)) &rarr; \(19\) (left of \(20\)).<br><br>
-Path from \(19\) up to the root: \(19\\to20\\to30\\to15\\to10\), which is <b>\(4\)</b> edges.<br><br>
+\\(10\\) (root) &rarr; \\(-4\\) (left of \\(10\\)) &rarr; \\(15\\) (right of \\(10\\)) &rarr; \\(30\\) (right of \\(15\\)) &rarr; \\(20\\) (left of \\(30\\)) &rarr; \\(5\\) (right of \\(-4\\)) &rarr; \\(60\\) (right of \\(30\\)) &rarr; \\(19\\) (left of \\(20\\)).<br><br>
+Path from \\(19\\) up to the root: \\(19\\to20\\to30\\to15\\to10\\), which is <b>\\(4\\)</b> edges.<br><br>
 <b>Answer: 4</b><br><br><a href="https://gateoverflow.in/460810/gate-cse-2025-set-2-question-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Which of the following statement(s) is/are TRUE for any binary search tree (BST) having \(n\) distinct integers?</span>`,
+            text: `<span style="display: inline;">Which of the following statement(s) is/are TRUE for any binary search tree (BST) having \\(n\\) distinct integers?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">The maximum length of a path from the root node to any other node is \((n - 1)\).</span>`,
+                `<span style="display: inline;">The maximum length of a path from the root node to any other node is \\((n - 1)\\).</span>`,
                 `<span style="display: inline;">An inorder traversal will always produce a sorted sequence of elements.</span>`,
-                `<span style="display: inline;">Finding an element takes \(O(\\log_2 n)\) time in the worst case.</span>`,
+                `<span style="display: inline;">Finding an element takes \\(O(\\log_2 n)\\) time in the worst case.</span>`,
                 `<span style="display: inline;">Every BST is also a Min-Heap.</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each BST claim for \(n\) distinct integers:<br><br>
-- <b>Maximum path length from root to any node is \(n-1\):</b> true &mdash; in the worst case (a completely skewed/degenerate BST, essentially a linked list), all \(n\) nodes form a single chain, giving a root-to-deepest-node path of \(n-1\) edges, which is also the largest this can ever be since there are only \(n\) nodes total.<br>
-- <b>Inorder traversal always produces sorted order:</b> true &mdash; this is the defining property of a BST (left subtree \(<\) node \(<\) right subtree, recursively), and it holds regardless of the tree's shape.<br>
-- <b>Finding an element takes \(O(\\log_2n)\) time in the worst case:</b> false &mdash; that bound only holds for a <i>balanced</i> BST. A skewed/degenerate BST (as noted above) can force search time all the way up to \(O(n)\).<br>
-- <b>Every BST is also a Min-Heap:</b> false &mdash; a min-heap requires every parent to be smaller than <i>both</i> children, but a BST only orders left \(<\) parent \(<\) right; nothing stops a BST's left child from being smaller than its grandparent in ways that violate heap order.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each BST claim for \\(n\\) distinct integers:<br><br>
+- <b>Maximum path length from root to any node is \\(n-1\\):</b> true &mdash; in the worst case (a completely skewed/degenerate BST, essentially a linked list), all \\(n\\) nodes form a single chain, giving a root-to-deepest-node path of \\(n-1\\) edges, which is also the largest this can ever be since there are only \\(n\\) nodes total.<br>
+- <b>Inorder traversal always produces sorted order:</b> true &mdash; this is the defining property of a BST (left subtree \\(<\\) node \\(<\\) right subtree, recursively), and it holds regardless of the tree's shape.<br>
+- <b>Finding an element takes \\(O(\\log_2n)\\) time in the worst case:</b> false &mdash; that bound only holds for a <i>balanced</i> BST. A skewed/degenerate BST (as noted above) can force search time all the way up to \\(O(n)\\).<br>
+- <b>Every BST is also a Min-Heap:</b> false &mdash; a min-heap requires every parent to be smaller than <i>both</i> children, but a BST only orders left \\(<\\) parent \\(<\\) right; nothing stops a BST's left child from being smaller than its grandparent in ways that violate heap order.<br><br>
 <b>Answer: Max path length is n-1; and inorder traversal always gives sorted order.</b><br><br><a href="https://gateoverflow.in/460064/gate-cse-2025-set-1-question-16#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">You are given a set \(V\) of distinct integers. A binary search tree \(T\) is created by
-inserting all elements of \(V\) one by one, starting with an empty tree. The tree \(T\)
+            text: `<span style="display: inline;">You are given a set \\(V\\) of distinct integers. A binary search tree \\(T\\) is created by
+inserting all elements of \\(V\\) one by one, starting with an empty tree. The tree \\(T\\)
 follows the convention that, at each node, all values stored in the left subtree of the
 node are smaller than the value stored at the node. You are not aware of the sequence
-in which these values were inserted into \(T\), and you do not have access to \(T\).<br>
+in which these values were inserted into \\(T\\), and you do not have access to \\(T\\).<br>
 Which one of the following statements is TRUE?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">Inorder traversal of \(T\) can be determined from \(V\)</span>`,
-                `<span style="display: inline;">Root node of \(T\) can be determined from \(V\)</span>`,
-                `<span style="display: inline;">Preorder traversal of \(T\) can be determined from \(V\)</span>`,
-                `<span style="display: inline;">Postorder traversal of \(T\) can be determined from \(V\)</span>`,
+                `<span style="display: inline;">Inorder traversal of \\(T\\) can be determined from \\(V\\)</span>`,
+                `<span style="display: inline;">Root node of \\(T\\) can be determined from \\(V\\)</span>`,
+                `<span style="display: inline;">Preorder traversal of \\(T\\) can be determined from \\(V\\)</span>`,
+                `<span style="display: inline;">Postorder traversal of \\(T\\) can be determined from \\(V\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The inorder traversal of any BST is the keys in <b>sorted order</b>, whatever the insertion order. So it can be found from V just by sorting.<br><br>
@@ -66069,8 +66069,8 @@ Root, preorder and postorder depend on the insertion order. Example V = {1, 2}: 
             options: [
             ],
             answer: 509,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Complete tree with 1000 nodes (indices 0-999). Children of i: \(2i+1\), \(2i+2\).<br><br>
-- <b>Largest</b> = go right as far as possible: 0 \(\\rightarrow\) 2 \(\\rightarrow\) 6 \(\\rightarrow\) 14 \(\\rightarrow\) 30 \(\\rightarrow\) 62 \(\\rightarrow\) 126 \(\\rightarrow\) 254 \(\\rightarrow\) 510. Its children 1021, 1022 do not exist, so index 510 is the largest.<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Complete tree with 1000 nodes (indices 0-999). Children of i: \\(2i+1\\), \\(2i+2\\).<br><br>
+- <b>Largest</b> = go right as far as possible: 0 \\(\\rightarrow\\) 2 \\(\\rightarrow\\) 6 \\(\\rightarrow\\) 14 \\(\\rightarrow\\) 30 \\(\\rightarrow\\) 62 \\(\\rightarrow\\) 126 \\(\\rightarrow\\) 254 \\(\\rightarrow\\) 510. Its children 1021, 1022 do not exist, so index 510 is the largest.<br>
 - <b>2nd largest</b> = predecessor of 510. It has no left child, so it is its parent: index 254.<br>
 - <b>3rd largest</b> = maximum of the left subtree of 254. Left child = 509; its children 1019, 1020 do not exist, so it is 509.<br><br>
 <b>Answer: 509</b><br><br><a href="https://gateoverflow.in/371918/Gate-cse-2022-question-18#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -66082,17 +66082,17 @@ Root, preorder and postorder depend on the insertion order. Example V = {1, 2}: 
             text: `<span style="display: inline;">A binary search tree T contains n distinct elements. What is the time complexity of picking an element in T that is smaller than the maximum element in T?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta(n\\log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta(n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta(\\log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta(1)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta(n\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta(n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta(\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta(1)\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Look only at the root and its children:<br>
-- If the root has a right child, the root is smaller than something, so it is not the maximum \(\\rightarrow\) pick the root.<br>
-- Otherwise the root is the maximum, and its left child is smaller \(\\rightarrow\) pick the left child.<br><br>
-A constant number of steps \(\\rightarrow\) \(\\Theta(1)\).<br><br>
-<b>Answer: \(\\Theta(1)\)</b><br><br><a href="https://gateoverflow.in/357442/gate-cse-2021-set-1-question-10#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+- If the root has a right child, the root is smaller than something, so it is not the maximum \\(\\rightarrow\\) pick the root.<br>
+- Otherwise the root is the maximum, and its left child is smaller \\(\\rightarrow\\) pick the left child.<br><br>
+A constant number of steps \\(\\rightarrow\\) \\(\\Theta(1)\\).<br><br>
+<b>Answer: \\(\\Theta(1)\\)</b><br><br><a href="https://gateoverflow.in/357442/gate-cse-2021-set-1-question-10#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -66107,7 +66107,7 @@ A constant number of steps \(\\rightarrow\) \(\\Theta(1)\).<br><br>
                 `<span style="display: inline;">20</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  15 has a right subtree (rooted at 18), so its in-order successor is the <b>smallest</b> node in that subtree: go to 18, then left as far as possible \(\\rightarrow\) 17.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  15 has a right subtree (rooted at 18), so its in-order successor is the <b>smallest</b> node in that subtree: go to 18, then left as far as possible \\(\\rightarrow\\) 17.<br><br>
 <b>Answer: 17</b><br><br><a href="https://gateoverflow.in/331322/isro2020-19" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66124,8 +66124,8 @@ A constant number of steps \(\\rightarrow\) \(\\Theta(1)\).<br><br>
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Build the BST from the preorder (root first):<br>
-- Root 15; left subtree {10, 12, 11}: 10 \(\\rightarrow\) right 12 \(\\rightarrow\) left 11.<br>
-- Right subtree {20, 18, 16, 19}: 20 \(\\rightarrow\) left 18 \(\\rightarrow\) children 16 and 19.<br><br>
+- Root 15; left subtree {10, 12, 11}: 10 \\(\\rightarrow\\) right 12 \\(\\rightarrow\\) left 11.<br>
+- Right subtree {20, 18, 16, 19}: 20 \\(\\rightarrow\\) left 18 \\(\\rightarrow\\) children 16 and 19.<br><br>
 Postorder (left, right, root): 11, 12, 10, 16, 19, 18, 20, 15<br><br>
 <b>Answer: 11, 12, 10, 16, 19, 18, 20, 15</b><br><br><a href="https://gateoverflow.in/333226/gate2020-cs-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -66161,8 +66161,8 @@ Note: The height of a tree with a single node is 0.</span>`,
                 `<span style="display: inline;">3 and 15 respectively</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Minimum: a complete tree; 15 nodes fill levels 0-3 (1 + 2 + 4 + 8) \(\\rightarrow\) height 3.<br>
-- Maximum: a chain of 15 nodes \(\\rightarrow\) height 14.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- Minimum: a complete tree; 15 nodes fill levels 0-3 (1 + 2 + 4 + 8) \\(\\rightarrow\\) height 3.<br>
+- Maximum: a chain of 15 nodes \\(\\rightarrow\\) height 14.<br><br>
 <b>Answer: 3 and 14 respectively</b><br><br><a href="https://gateoverflow.in/118286/gate2017-1-6#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2017-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2017 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66176,7 +66176,7 @@ Note: The height of a tree with a single node is 0.</span>`,
             ],
             answer: 64,
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Height 6 with 7 nodes means the tree is a single path. After each insertion, the next number must be the smallest or the largest of the numbers still left (2 choices each), and the last number is forced.<br><br>
-\(2^6=64\)<br><br>
+\\(2^6=64\\)<br><br>
 <b>Answer: 64</b><br><br><a href="https://gateoverflow.in/39586/gate2016-2-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66205,14 +66205,14 @@ The deepest element is 67.<br><br>
             text: `<span style="display: inline;">What are the worst-case complexities of insertion and deletion of a key in a binary search tree?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (logn)\) for both insertion and deletion</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\) for both insertion and deletion</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\)for insertion and \(\\Theta (logn)\) for deletion</span>`,
-                `<span style="display: inline;">\(\\Theta (logn)\) for insertion and \(\\Theta (n)\) for deletion</span>`,
+                `<span style="display: inline;">\\(\\Theta (logn)\\) for both insertion and deletion</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\) for both insertion and deletion</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)for insertion and \\(\\Theta (logn)\\) for deletion</span>`,
+                `<span style="display: inline;">\\(\\Theta (logn)\\) for insertion and \\(\\Theta (n)\\) for deletion</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A BST can be skewed (a chain) with height n \(-\) 1. Insertion and deletion may then walk the whole chain.<br><br>
-<b>Answer: \(\\Theta(n)\) for both insertion and deletion</b><br><br><a href="https://gateoverflow.in/8221/gate2015-1-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A BST can be skewed (a chain) with height n \\(-\\) 1. Insertion and deletion may then walk the whole chain.<br><br>
+<b>Answer: \\(\\Theta(n)\\) for both insertion and deletion</b><br><br><a href="https://gateoverflow.in/8221/gate2015-1-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
     ]
 });
@@ -66241,10 +66241,10 @@ IV. 4, 6, 7, 9 18, 20, 25</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In-order traversal of a BST is always sorted.<br><br>
-- I: sorted \(\\rightarrow\) valid<br>
-- II: 12 before 10 \(\\rightarrow\) invalid<br>
-- III: 10 before 8 \(\\rightarrow\) invalid<br>
-- IV: sorted \(\\rightarrow\) valid<br><br>
+- I: sorted \\(\\rightarrow\\) valid<br>
+- II: 12 before 10 \\(\\rightarrow\\) invalid<br>
+- III: 10 before 8 \\(\\rightarrow\\) invalid<br>
+- IV: sorted \\(\\rightarrow\\) valid<br><br>
 <b>Answer: I and IV only</b><br><br><a href="https://gateoverflow.in/8129/gate2015-1-7#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66295,7 +66295,7 @@ Postorder (left, right, root): 15, 10, 23, 25, 20, 35, 42, 39, 30<br><br>
                 `<span style="display: inline;">O(n log n)</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A BST may be skewed (height n \(-\) 1), so insertion may walk all n nodes.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A BST may be skewed (height n \\(-\\) 1), so insertion may walk all n nodes.<br><br>
 <b>Answer: O(n)</b><br><br><a href="https://gateoverflow.in/1416/gate2013-7#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2013" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2013</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66307,10 +66307,10 @@ Postorder (left, right, root): 15, 10, 23, 25, 20, 35, 42, 39, 30<br><br>
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(n^{0.5})\)</span>`,
-                `<span style="display: inline;">\(O(n)\)</span>`,
-                `<span style="display: inline;">\(O(\\log n)\)</span>`,
-                `<span style="display: inline;">\(O(n \\log n)\)</span>`,
+                `<span style="display: inline;">\\(O(n^{0.5})\\)</span>`,
+                `<span style="display: inline;">\\(O(n)\\)</span>`,
+                `<span style="display: inline;">\\(O(\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(O(n \\log n)\\)</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  For a BST built from random insertions, the average depth of a node is about 1.39 log n, i.e. O(log n).<br><br>
@@ -66331,8 +66331,8 @@ Postorder (left, right, root): 15, 10, 23, 25, 20, 35, 42, 39, 30<br><br>
                 `<span style="display: inline;">35</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Number of BSTs with n keys = Catalan number \(\\frac{1}{n+1}\\binom{2n}{n}\).<br><br>
-n = 4: \(\\frac{1}{5}\\binom84=\\frac{70}{5}=14\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Number of BSTs with n keys = Catalan number \\(\\frac{1}{n+1}\\binom{2n}{n}\\).<br><br>
+n = 4: \\(\\frac{1}{5}\\binom84=\\frac{70}{5}=14\\)<br><br>
 <b>Answer: 14</b><br><br><a href="https://gateoverflow.in/18134/isro2011-11" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66347,7 +66347,7 @@ becomes a binary search tree?</span>`,
                 `<span style="display: inline;">0</span>`,
                 `<span style="display: inline;">1</span>`,
                 `<span style="display: inline;">n!</span>`,
-                `<span style="display: inline;">\( \\frac{1} {n+1} .^{2n}C_n\)</span>`,
+                `<span style="display: inline;">\\( \\frac{1} {n+1} .^{2n}C_n\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The in-order traversal of a BST must give the sorted order. The tree shape fixes the in-order sequence of positions, so the sorted values can be placed in exactly one way.<br><br>
@@ -66459,10 +66459,10 @@ Suppose the BST has been unsuccessfully searched for key 273. Which all of the a
             text: `<span style="display: inline;">Which of the following is TRUE?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">The cost of searching an AVL tree is \(\\Theta (\\log n)\) but that of a binary search tree is \(O(n)\)</span>`,
-                `<span style="display: inline;">The cost of searching an AVL tree is \(\\Theta (\\log n)\) but that of a complete binary tree is \(\\Theta (n \\log n)\)</span>`,
-                `<span style="display: inline;">The cost of searching a binary search tree is \(O (\\log n )\) but that of an AVL tree is \(\\Theta(n)\)</span>`,
-                `<span style="display: inline;">The cost of searching an AVL tree is \(\\Theta (n \\log n)\) but that of a binary search tree is \(O(n)\)</span>`,
+                `<span style="display: inline;">The cost of searching an AVL tree is \\(\\Theta (\\log n)\\) but that of a binary search tree is \\(O(n)\\)</span>`,
+                `<span style="display: inline;">The cost of searching an AVL tree is \\(\\Theta (\\log n)\\) but that of a complete binary tree is \\(\\Theta (n \\log n)\\)</span>`,
+                `<span style="display: inline;">The cost of searching a binary search tree is \\(O (\\log n )\\) but that of an AVL tree is \\(\\Theta(n)\\)</span>`,
+                `<span style="display: inline;">The cost of searching an AVL tree is \\(\\Theta (n \\log n)\\) but that of a binary search tree is \\(O(n)\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3272/gate2008-it-12" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2008" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2008</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -66477,9 +66477,9 @@ P as its postorder traversal. What is the time complexity of the most efficient
 algorithm for doing this?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta\) (logn)</span>`,
-                `<span style="display: inline;">\(\\Theta\) (n)</span>`,
-                `<span style="display: inline;">\(\\Theta\) (nlogn)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (logn)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (n)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (nlogn)</span>`,
                 `<span style="display: inline;">None of the above, as the tree cannot be uniquely determined</span>`,
             ],
             answer: "B",
@@ -66546,7 +66546,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The numbers \(1, 2, .\\dots n\) are inserted in a binary search tree in some order. In the resulting tree, the right subtree of the root contains p nodes. The first number to be inserted in the tree must be
+            text: `<span style="display: inline;">The numbers \\(1, 2, .\\dots n\\) are inserted in a binary search tree in some order. In the resulting tree, the right subtree of the root contains p nodes. The first number to be inserted in the tree must be
 
 </span>`,
             image: "",
@@ -66631,9 +66631,9 @@ on natural numbers. What is the inorder transversal sequence of the resultant tr
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Let T(n) be the number of different binary search trees on n distinct elements. <br>Then \(T(n)=\\sum_{k=1}^{n}T(k-1)T(x)\),
+            text: `<span style="display: inline;">Let T(n) be the number of different binary search trees on n distinct elements. <br>Then \\(T(n)=\\sum_{k=1}^{n}T(k-1)T(x)\\),
 
-<br>where \(x\) is</span>`,
+<br>where \\(x\\) is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">n-k+1</span>`,
@@ -66696,14 +66696,14 @@ registerTest({
             text: `<span style="display: inline;">The minimum height of an AVL tree with n nodes is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\text{Ceil } (\\log_2(n+1))\)</span>`,
-                `<span style="display: inline;">\(1.44\\ \\log_2n\)</span>`,
-                `<span style="display: inline;">\(\\text{Floor } (\\log_2(n+1))\)</span>`,
-                `<span style="display: inline;">\(1.64\\ \\log_2n\)</span>`,
+                `<span style="display: inline;">\\(\\text{Ceil } (\\log_2(n+1))\\)</span>`,
+                `<span style="display: inline;">\\(1.44\\ \\log_2n\\)</span>`,
+                `<span style="display: inline;">\\(\\text{Floor } (\\log_2(n+1))\\)</span>`,
+                `<span style="display: inline;">\\(1.64\\ \\log_2n\\)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The shortest AVL tree with n nodes is a complete binary tree. A tree with h levels holds at most \(2^h-1\) nodes, so \(n\\le2^h-1\\Rightarrow h\\ge\\log_2(n+1)\).<br><br>
-Counting levels, the minimum height is \(\\lceil\\log_2(n+1)\\rceil\) (e.g. n = 3 needs 2 levels). The floor version only works when n + 1 is a power of 2. 1.44 log n is the <b>maximum</b> AVL height.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The shortest AVL tree with n nodes is a complete binary tree. A tree with h levels holds at most \\(2^h-1\\) nodes, so \\(n\\le2^h-1\\Rightarrow h\\ge\\log_2(n+1)\\).<br><br>
+Counting levels, the minimum height is \\(\\lceil\\log_2(n+1)\\rceil\\) (e.g. n = 3 needs 2 levels). The floor version only works when n + 1 is a power of 2. 1.44 log n is the <b>maximum</b> AVL height.<br><br>
 <b>Answer: Ceil(log2(n+1))</b><br><br><a href="https://gateoverflow.in/331324/isro2020-20" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66713,32 +66713,32 @@ Counting levels, the minimum height is \(\\lceil\\log_2(n+1)\\rceil\) (e.g. n = 
             text: `<span style="display: inline;">In a balanced binary search tree with n elements, what is the worst case time complexity of reporting all elements in range [a,b]? Assume that the number of reported elements is k.</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (\\log n )\)</span>`,
-                `<span style="display: inline;">\(\\Theta (\\log n +k)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (k \\log n )\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n \\log k )\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (\\log n )\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (\\log n +k)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (k \\log n )\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n \\log k )\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search for a in \(O(\\log n)\) (tree height), then do an in-order walk reporting elements until passing b. The walk visits the k answers plus \(O(\\log n)\) boundary nodes.<br><br>
-Total \(\\Theta(\\log n+k)\)<br><br>
-<b>Answer: \(\\Theta(\\log n+k)\)</b><br><br><a href="https://gateoverflow.in/333190/gate2020-cs-41#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search for a in \\(O(\\log n)\\) (tree height), then do an in-order walk reporting elements until passing b. The walk visits the k answers plus \\(O(\\log n)\\) boundary nodes.<br><br>
+Total \\(\\Theta(\\log n+k)\\)<br><br>
+<b>Answer: \\(\\Theta(\\log n+k)\\)</b><br><br><a href="https://gateoverflow.in/333190/gate2020-cs-41#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">What is the worst case time complexity of inserting \(n^2\) elements into an AVL-tree with n elements initially?</span>`,
+            text: `<span style="display: inline;">What is the worst case time complexity of inserting \\(n^2\\) elements into an AVL-tree with n elements initially?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n^4)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^2)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^2 \\log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^3)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^4)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^2)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^2 \\log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^3)\\)</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Each AVL insertion costs \(O(\\log N)\), where N is the current size, at most \(n^2+n\). \(\\log(n^2+n)=\\Theta(\\log n)\).<br><br>
-\(n^2\) insertions \(\\times\) \(\\Theta(\\log n)\) = \(\\Theta(n^2\\log n)\)<br><br>
-<b>Answer: \(\\Theta(n^2\\log n)\)</b><br><br><a href="https://gateoverflow.in/333225/gate2020-cs-6#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Each AVL insertion costs \\(O(\\log N)\\), where N is the current size, at most \\(n^2+n\\). \\(\\log(n^2+n)=\\Theta(\\log n)\\).<br><br>
+\\(n^2\\) insertions \\(\\times\\) \\(\\Theta(\\log n)\\) = \\(\\Theta(n^2\\log n)\\)<br><br>
+<b>Answer: \\(\\Theta(n^2\\log n)\\)</b><br><br><a href="https://gateoverflow.in/333225/gate2020-cs-6#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -66753,20 +66753,20 @@ Total \(\\Theta(\\log n+k)\)<br><br>
                 `<span style="display: inline;">Self organization list</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A (balanced) <b>search tree</b> gives \(O(\\log n)\) lookups. A linear list is \(O(n)\), and a hash table is \(O(1)\) on average.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A (balanced) <b>search tree</b> gives \\(O(\\log n)\\) lookups. A linear list is \\(O(n)\\), and a hash table is \\(O(1)\\) on average.<br><br>
 <b>Answer: Search tree</b><br><br><a href="https://gateoverflow.in/55551/isro2016-39" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2016</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Suppose we have a balanced binary search tree T holding n numbers. We are given two numbers L and H and wish to sum up all the numbers in T that lie between L and H. Suppose there are m such numbers in T. If the tightest upper bound on the time to compute the sum is \(O(n^{a}log^{b}n+m^{c}log^{d}n)\), the value of a + 10b + 100c + 1000d is _______.</span>`,
+            text: `<span style="display: inline;">Suppose we have a balanced binary search tree T holding n numbers. We are given two numbers L and H and wish to sum up all the numbers in T that lie between L and H. Suppose there are m such numbers in T. If the tightest upper bound on the time to compute the sum is \\(O(n^{a}log^{b}n+m^{c}log^{d}n)\\), the value of a + 10b + 100c + 1000d is _______.</span>`,
             image: "",
             options: [
             ],
             answer: 110,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Find L in the balanced BST in \(O(\\log n)\), then walk in-order through the m values up to H in O(m).<br><br>
-Time = \(O(\\log n+m)\) \(\\rightarrow\) a = 0, b = 1, c = 1, d = 0<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Find L in the balanced BST in \\(O(\\log n)\\), then walk in-order through the m values up to H in O(m).<br><br>
+Time = \\(O(\\log n+m)\\) \\(\\rightarrow\\) a = 0, b = 1, c = 1, d = 0<br><br>
 a + 10b + 100c + 1000d = 0 + 10 + 100 + 0 = 110<br><br>
 <b>Answer: 110</b><br><br><a href="https://gateoverflow.in/2073/gate2014-3-39#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -66791,18 +66791,18 @@ a + 10b + 100c + 1000d = 0 + 10 + 100 + 0 = 110<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">The worst case running time to search for an element in a balanced binary search tree with \(n2^{n}\) elements is</span>`,
+            text: `<span style="display: inline;">The worst case running time to search for an element in a balanced binary search tree with \\(n2^{n}\\) elements is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta n2^{n}\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (log n)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta n2^{n}\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (log n)\\)</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search in a balanced BST takes \(\\Theta(\\log N)\) with \(N=n2^n\):<br><br>
-\(\\log(n2^n)=n+\\log n=\\Theta(n)\)<br><br>
-<b>Answer: \(\\Theta(n)\)</b><br><br><a href="https://gateoverflow.in/37/gate2012-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search in a balanced BST takes \\(\\Theta(\\log N)\\) with \\(N=n2^n\\):<br><br>
+\\(\\log(n2^n)=n+\\log n=\\Theta(n)\\)<br><br>
+<b>Answer: \\(\\Theta(n)\\)</b><br><br><a href="https://gateoverflow.in/37/gate2012-5#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2012" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2012</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -66826,10 +66826,10 @@ a + 10b + 100c + 1000d = 0 + 10 + 100 + 0 = 110<br><br>
             text: `<span style="display: inline;">A program takes as input a balanced binary search tree with n leaf nodes and computes the value of a function g(x) for each node x. If the cost of computing g(x) is min{no. of leaf-nodes in left-subtree of x, no. of leaf-nodes in right-subtree of x} then the worst-case time complexity of the program is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (nlog n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^{2})\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^{2}log n)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (nlog n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^{2})\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^{2}log n)\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1079/gate2004-85#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2004" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2004</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -66845,10 +66845,10 @@ from the root to the furthest leaf) of such a tree on n nodes is best described 
 which of the following ?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(log_{2}n\)</span>`,
-                `<span style="display: inline;">\(log_{4/3}n\)</span>`,
-                `<span style="display: inline;">\(log_{3}n\)</span>`,
-                `<span style="display: inline;">\(log_{3/2}n\)</span>`,
+                `<span style="display: inline;">\\(log_{2}n\\)</span>`,
+                `<span style="display: inline;">\\(log_{4/3}n\\)</span>`,
+                `<span style="display: inline;">\\(log_{3}n\\)</span>`,
+                `<span style="display: inline;">\\(log_{3/2}n\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/842/gate2002-2-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2002" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2002</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -66881,25 +66881,25 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">In a \(B^+\) -tree where each node can hold at most four key values, a root to leaf path consists of the following nodes: <br><br>
-\( A = (49, 77, 83, -), \\, B = (7, 19, 33, 44), \\, C = (20*, 22*, 25*, 26*) \)<br><br>
-The *-marked keys signify that these are data entries in a leaf. <br><br>Assume that a pointer between keys \(k_1\) and \(k_2\) points to a subtree containing keys in \([k_1, k_2)\), and that when a leaf is created, the smallest key in it is copied up into its parent. <br><br>A record with key value 23 is inserted into the \(B^+\) -tree. <br><br>The smallest key value in the parent of the leaf that contains 25* is __________. (Answer in integer)</span>`,
+            text: `<span style="display: inline;">In a \\(B^+\\) -tree where each node can hold at most four key values, a root to leaf path consists of the following nodes: <br><br>
+\\( A = (49, 77, 83, -), \\, B = (7, 19, 33, 44), \\, C = (20*, 22*, 25*, 26*) \\)<br><br>
+The *-marked keys signify that these are data entries in a leaf. <br><br>Assume that a pointer between keys \\(k_1\\) and \\(k_2\\) points to a subtree containing keys in \\([k_1, k_2)\\), and that when a leaf is created, the smallest key in it is copied up into its parent. <br><br>A record with key value 23 is inserted into the \\(B^+\\) -tree. <br><br>The smallest key value in the parent of the leaf that contains 25* is __________. (Answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 33,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Leaf \(C=(20^*,22^*,25^*,26^*)\) currently covers the key range \([19,33)\) (between \(B\)'s separators \(19\) and \(33\)), and is already full (max \(4\) keys per node).<br><br>
-<b>Step 1 &mdash; leaf split:</b> inserting \(23\) gives \(5\) keys (\(20,22,23,25,26\)), so \(C\) splits into \(C_1=(20,22,23)\) and \(C_2=(25,26)\). Per the given rule, the new leaf's smallest key, \(25\), is copied up into parent \(B\).<br><br>
-<b>Step 2 &mdash; B overflows too:</b> \(B=(7,19,33,44)\) gains the new separator \(25\), becoming \((7,19,25,33,44)\) &mdash; \(5\) keys, over the \(4\)-key limit. Since \(B\) is an <i>internal</i> node, it splits by <b>pushing up</b> (not copying) its middle key, \(25\) (the \(3\)rd of \(5\)), into the grandparent \(A\). This leaves \(B\) split into \(B_{\\text{left}}=(7,19)\) and \(B_{\\text{right}}=(33,44)\), with child pointers correctly redistributed: \(B_{\\text{right}}\)'s <i>first</i> child now covers \([25,33)\) &mdash; exactly leaf \(C_2\), the one holding \(25^*\).<br><br>
-<b>Step 3 &mdash; A absorbs the pushed-up key:</b> \(A=(49,77,83,-)\) only had \(3\) keys (one empty slot), so it simply accepts \(25\) without overflowing: \(A=(25,49,77,83)\), no further split needed.<br><br>
-So the leaf containing \(25^*\) is \(C_2=(25,26)\), whose parent is now \(B_{\\text{right}}=(33,44)\). The smallest key in this parent is \(33\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Leaf \\(C=(20^*,22^*,25^*,26^*)\\) currently covers the key range \\([19,33)\\) (between \\(B\\)'s separators \\(19\\) and \\(33\\)), and is already full (max \\(4\\) keys per node).<br><br>
+<b>Step 1 &mdash; leaf split:</b> inserting \\(23\\) gives \\(5\\) keys (\\(20,22,23,25,26\\)), so \\(C\\) splits into \\(C_1=(20,22,23)\\) and \\(C_2=(25,26)\\). Per the given rule, the new leaf's smallest key, \\(25\\), is copied up into parent \\(B\\).<br><br>
+<b>Step 2 &mdash; B overflows too:</b> \\(B=(7,19,33,44)\\) gains the new separator \\(25\\), becoming \\((7,19,25,33,44)\\) &mdash; \\(5\\) keys, over the \\(4\\)-key limit. Since \\(B\\) is an <i>internal</i> node, it splits by <b>pushing up</b> (not copying) its middle key, \\(25\\) (the \\(3\\)rd of \\(5\\)), into the grandparent \\(A\\). This leaves \\(B\\) split into \\(B_{\\text{left}}=(7,19)\\) and \\(B_{\\text{right}}=(33,44)\\), with child pointers correctly redistributed: \\(B_{\\text{right}}\\)'s <i>first</i> child now covers \\([25,33)\\) &mdash; exactly leaf \\(C_2\\), the one holding \\(25^*\\).<br><br>
+<b>Step 3 &mdash; A absorbs the pushed-up key:</b> \\(A=(49,77,83,-)\\) only had \\(3\\) keys (one empty slot), so it simply accepts \\(25\\) without overflowing: \\(A=(25,49,77,83)\\), no further split needed.<br><br>
+So the leaf containing \\(25^*\\) is \\(C_2=(25,26)\\), whose parent is now \\(B_{\\text{right}}=(33,44)\\). The smallest key in this parent is \\(33\\).<br><br>
 <b>Answer: 33</b><br><br><a href="https://gateoverflow.in/460846/gate-cse-2025-set-2-question-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider the following \(B^+\) tree with 5 nodes, in which a node can store at most 3 key values. The value 23 is now inserted in the \(B^+\) tree. Which of the following options(s) is/are CORRECT? <br><img src="images/practicepaper_b_plus_tree/q11.webp"/><br></span>`,
+            text: `<span style="display: inline;">Consider the following \\(B^+\\) tree with 5 nodes, in which a node can store at most 3 key values. The value 23 is now inserted in the \\(B^+\\) tree. Which of the following options(s) is/are CORRECT? <br><img src="images/practicepaper_b_plus_tree/q11.webp"/><br></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">None of the nodes will split.</span>`,
@@ -66908,8 +66908,8 @@ So the leaf containing \(25^*\) is \(C_2=(25,26)\), whose parent is now \(B_{\\t
                 `<span style="display: inline;">The height of the tree will increase.</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Inserting a new key into a \(B^+\) tree always follows the same pattern: search down to the correct leaf, insert the key there in sorted order, and if that leaf now holds more than the maximum allowed keys (here, more than \(3\)), it must <b>split into two leaves</b>, pushing/copying up a separator key into the parent.<br><br>
-Since the target leaf here is already at its maximum capacity of \(3\) keys before inserting \(23\), it overflows and must split; this new separator key then gets inserted into the parent node, which can itself overflow and split further, potentially propagating all the way up to a new root. Whenever a split reaches (or creates a new) root, the <b>height of the tree increases by one level</b>. Splitting always <b>increases</b> the total node count (a leaf becomes two, or an internal node splits into two) &mdash; it never leaves the count unchanged, and "no node splits" is only possible if the target leaf had spare capacity, which it did not here.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Inserting a new key into a \\(B^+\\) tree always follows the same pattern: search down to the correct leaf, insert the key there in sorted order, and if that leaf now holds more than the maximum allowed keys (here, more than \\(3\\)), it must <b>split into two leaves</b>, pushing/copying up a separator key into the parent.<br><br>
+Since the target leaf here is already at its maximum capacity of \\(3\\) keys before inserting \\(23\\), it overflows and must split; this new separator key then gets inserted into the parent node, which can itself overflow and split further, potentially propagating all the way up to a new root. Whenever a split reaches (or creates a new) root, the <b>height of the tree increases by one level</b>. Splitting always <b>increases</b> the total node count (a leaf becomes two, or an internal node splits into two) &mdash; it never leaves the count unchanged, and "no node splits" is only possible if the target leaf had spare capacity, which it did not here.<br><br>
 <b>Answer: At least one node will split and redistribute; and the height of the tree will increase.</b><br><br><a href="https://gateoverflow.in/460069/gate-cse-2025-set-1-question-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -66926,7 +66926,7 @@ for which one of the following cases?</span>`,
                 `<span style="display: inline;">Only the leftmost leaf node</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a B+ tree of order \(m\), every node (internal or leaf) must be at least half full \(\\text{---}\) <b>except the root</b>.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a B+ tree of order \\(m\\), every node (internal or leaf) must be at least half full \\(\\text{---}\\) <b>except the root</b>.<br><br>
 The root can have as few as 2 children (or just 1 key if it is a leaf), otherwise a small tree could never be built.<br><br>
 <b>Answer: Only the root node</b><br><br><a href="https://gateoverflow.in/422831/gate-cse-2024-set-1-question-11#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -66955,7 +66955,7 @@ The root can have as few as 2 children (or just 1 key if it is a leaf), otherwis
             options: [
             ],
             answer: 5,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search for 7: root (9) \(\\rightarrow\) left internal node (5) \(\\rightarrow\) leaf [5, 7].<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Search for 7: root (9) \\(\\rightarrow\\) left internal node (5) \\(\\rightarrow\\) leaf [5, 7].<br><br>
 Then follow leaf links: [9, 11] and [13, 15], where 15 shows we can stop.<br><br>
 Nodes = root + 1 internal + 3 leaves = 5<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/8052/gate2015-2-22#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -66974,8 +66974,8 @@ the minimum number of keys in any non-root node?</span>`,
                 `<span style="display: inline;">4</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Max keys 5 \(\\rightarrow\) max children (order) = 6.<br><br>
-A non-root node must have at least \(\\lceil6/2\\rceil=3\) children, i.e. 3 \(-\) 1 = 2 keys.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Max keys 5 \\(\\rightarrow\\) max children (order) = 6.<br><br>
+A non-root node must have at least \\(\\lceil6/2\\rceil=3\\) children, i.e. 3 \\(-\\) 1 = 2 keys.<br><br>
 <b>Answer: 2</b><br><br><a href="https://gateoverflow.in/2191/gate2010-18#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67001,8 +67001,8 @@ The maximum number of times leaf nodes would get split up as a result of these i
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the \(B^{+}\) tree in the adjoining figure, where each node has at most two keys and three links.<br><img src="images/practicepaper_b_plus_tree/q85a.jpg" /><br>
-Keys K15 and then K25 are inserted into this tree in that order. Now the key K50 is deleted from the \(B^{+}\) tree resulting after the two insertions made earlier. Consider the following statements about the \(B^{+}\) tree resulting after this deletion.<br>
+            text: `<span style="display: inline;">Consider the \\(B^{+}\\) tree in the adjoining figure, where each node has at most two keys and three links.<br><img src="images/practicepaper_b_plus_tree/q85a.jpg" /><br>
+Keys K15 and then K25 are inserted into this tree in that order. Now the key K50 is deleted from the \\(B^{+}\\) tree resulting after the two insertions made earlier. Consider the following statements about the \\(B^{+}\\) tree resulting after this deletion.<br>
 i.The height of the tree remains the same.<br>
 ii.The node 
  	 <br><img src="images/practicepaper_b_plus_tree/q85b.jpg" /><br>	 	     	 
@@ -67023,7 +67023,7 @@ Which one of the following options is true ?</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider the \(B^+\) tree in the adjoining figure, where each node has at most two keys and three links.<br><br><img src="images/practicepaper_b_plus_tree/q84a.jpg" /><br>Keys K15 and then K25 are inserted into this tree in that order. Exactly how many of the following nodes (disregarding the links) will be present in the tree after the two insertions?<br><img src="images/practicepaper_b_plus_tree/q84b.jpg" /><br></span>`,
+            text: `<span style="display: inline;">Consider the \\(B^+\\) tree in the adjoining figure, where each node has at most two keys and three links.<br><br><img src="images/practicepaper_b_plus_tree/q84a.jpg" /><br>Keys K15 and then K25 are inserted into this tree in that order. Exactly how many of the following nodes (disregarding the links) will be present in the tree after the two insertions?<br><img src="images/practicepaper_b_plus_tree/q84b.jpg" /><br></span>`,
             image: "",
             options: [
                 `<span style="display: inline;">1</span>`,
@@ -67043,10 +67043,10 @@ Which one of the following options is true ?</span>`,
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">B-trees are for storing data on disk and \(B^+\) trees are for main memory.</span>`,
-                `<span style="display: inline;">Range queries are faster on \(B^+\) trees.</span>`,
-                `<span style="display: inline;">B-trees are for primary indexes and \(B^+\) trees are for secondary indexes.</span>`,
-                `<span style="display: inline;">The height of a \(B^+\) tree is independent of the number of records.</span>`,
+                `<span style="display: inline;">B-trees are for storing data on disk and \\(B^+\\) trees are for main memory.</span>`,
+                `<span style="display: inline;">Range queries are faster on \\(B^+\\) trees.</span>`,
+                `<span style="display: inline;">B-trees are for primary indexes and \\(B^+\\) trees are for secondary indexes.</span>`,
+                `<span style="display: inline;">The height of a \\(B^+\\) tree is independent of the number of records.</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1478/gate1999-1-25" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-1999" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 1999</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67064,24 +67064,24 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Let \(n\) be an odd number greater than \(100\). Consider a binary minheap with \(n\) elements stored in an array \(P\) whose index starts from \(1\).<br> Which of the following indices of \(P\) do/does NOT correspond to any leaf node of the minheap?</span>`,
+            text: `<span style="display: inline;">Let \\(n\\) be an odd number greater than \\(100\\). Consider a binary minheap with \\(n\\) elements stored in an array \\(P\\) whose index starts from \\(1\\).<br> Which of the following indices of \\(P\\) do/does NOT correspond to any leaf node of the minheap?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\frac{n+1}{2}\)</span>`,
-                `<span style="display: inline;">\(\\frac{n-1}{2}\)</span>`,
-                `<span style="display: inline;">\(\\frac{n-3}{2}\)</span>`,
-                `<span style="display: inline;">\(n\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n+1}{2}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n-1}{2}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n-3}{2}\\)</span>`,
+                `<span style="display: inline;">\\(n\\)</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a 1-indexed array representation of a binary heap with \(n\) elements, the leaf nodes are exactly the indices \(\\left\\lfloor \\dfrac{n}{2}\\right\\rfloor+1\) through \(n\) (nodes with no children).<br><br>
-For odd \(n\), \(\\left\\lfloor n/2\\right\\rfloor=\\dfrac{n-1}{2}\), so:<br>
-- Leaf indices: \(\\dfrac{n-1}{2}+1=\\dfrac{n+1}{2}\) up to \(n\).<br>
-- Internal (non-leaf) indices: \(1\) up to \(\\dfrac{n-1}{2}\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a 1-indexed array representation of a binary heap with \\(n\\) elements, the leaf nodes are exactly the indices \\(\\left\\lfloor \\dfrac{n}{2}\\right\\rfloor+1\\) through \\(n\\) (nodes with no children).<br><br>
+For odd \\(n\\), \\(\\left\\lfloor n/2\\right\\rfloor=\\dfrac{n-1}{2}\\), so:<br>
+- Leaf indices: \\(\\dfrac{n-1}{2}+1=\\dfrac{n+1}{2}\\) up to \\(n\\).<br>
+- Internal (non-leaf) indices: \\(1\\) up to \\(\\dfrac{n-1}{2}\\).<br><br>
 Checking the given indices:<br>
-- \(\\dfrac{n+1}{2}\): this <i>is</i> the first leaf index &mdash; corresponds to a leaf.<br>
-- \(n\): this is the last leaf &mdash; corresponds to a leaf.<br>
-- \(\\dfrac{n-1}{2}\): this is the <i>last internal</i> node index &mdash; it does NOT correspond to a leaf.<br>
-- \(\\dfrac{n-3}{2}\): this is less than \(\\dfrac{n-1}{2}\), so also an internal node &mdash; does NOT correspond to a leaf.<br><br>
+- \\(\\dfrac{n+1}{2}\\): this <i>is</i> the first leaf index &mdash; corresponds to a leaf.<br>
+- \\(n\\): this is the last leaf &mdash; corresponds to a leaf.<br>
+- \\(\\dfrac{n-1}{2}\\): this is the <i>last internal</i> node index &mdash; it does NOT correspond to a leaf.<br>
+- \\(\\dfrac{n-3}{2}\\): this is less than \\(\\dfrac{n-1}{2}\\), so also an internal node &mdash; does NOT correspond to a leaf.<br><br>
 <b>Answer: indices (n-1)/2 and (n-3)/2 do NOT correspond to leaf nodes.</b><br><br><a href="https://gateoverflow.in/523067/gate-cse-2026-set-1-question-13#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67092,38 +67092,38 @@ Checking the given indices:<br>
 P: Unsorted doubly linked list with pointers to the head node and tail node of the list.<br>
 Q: Min-heap implemented using an array.<br>
 R: Binary Search Tree.<br><br>
-Which ONE of the following options gives the worst-case time complexities for meld operation on instances of size \(n \) of these data structures?</span>`,
+Which ONE of the following options gives the worst-case time complexities for meld operation on instances of size \\(n \\) of these data structures?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">P: \(\\Theta(1) \),  Q: \(\\Theta(n) \),  R: \(\\Theta(n) \)</span>`,
-                `<span style="display: inline;">P: \(\\Theta(1) \),  Q: \(\\Theta(n \\log n) \),  R: \(\\Theta(n) \)</span>`,
-                `<span style="display: inline;">P: \(\\Theta(n) \),  Q: \(\\Theta(n \\log n) \),  R: \(\\Theta(n^2) \)</span>`,
-                `<span style="display: inline;">P: \(\\Theta(1) \),  Q: \(\\Theta(n) \),  R: \(\\Theta(n \\log n) \)</span>`,
+                `<span style="display: inline;">P: \\(\\Theta(1) \\),  Q: \\(\\Theta(n) \\),  R: \\(\\Theta(n) \\)</span>`,
+                `<span style="display: inline;">P: \\(\\Theta(1) \\),  Q: \\(\\Theta(n \\log n) \\),  R: \\(\\Theta(n) \\)</span>`,
+                `<span style="display: inline;">P: \\(\\Theta(n) \\),  Q: \\(\\Theta(n \\log n) \\),  R: \\(\\Theta(n^2) \\)</span>`,
+                `<span style="display: inline;">P: \\(\\Theta(1) \\),  Q: \\(\\Theta(n) \\),  R: \\(\\Theta(n \\log n) \\)</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>P (unsorted doubly linked list with head/tail pointers):</b> meld by simply linking the tail of the first list to the head of the second, and updating the tail pointer &mdash; a constant number of pointer updates. <b>\(\\Theta(1)\)</b>.<br><br>
-<b>Q (min-heap, array-based):</b> meld two size-\(n\) heaps by concatenating their underlying arrays and running the standard bottom-up heap-build procedure, which is known to run in linear time. <b>\(\\Theta(n)\)</b> (not \(\\Theta(n\\log n)\), since build-heap itself is linear).<br><br>
-<b>R (Binary Search Tree):</b> convert each BST to a sorted list via an inorder traversal (linear time), merge the two sorted lists (linear time), then rebuild a balanced BST from the merged sorted list (linear time) &mdash; the whole meld is achievable in <b>\(\\Theta(n)\)</b> overall.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <b>P (unsorted doubly linked list with head/tail pointers):</b> meld by simply linking the tail of the first list to the head of the second, and updating the tail pointer &mdash; a constant number of pointer updates. <b>\\(\\Theta(1)\\)</b>.<br><br>
+<b>Q (min-heap, array-based):</b> meld two size-\\(n\\) heaps by concatenating their underlying arrays and running the standard bottom-up heap-build procedure, which is known to run in linear time. <b>\\(\\Theta(n)\\)</b> (not \\(\\Theta(n\\log n)\\), since build-heap itself is linear).<br><br>
+<b>R (Binary Search Tree):</b> convert each BST to a sorted list via an inorder traversal (linear time), merge the two sorted lists (linear time), then rebuild a balanced BST from the merged sorted list (linear time) &mdash; the whole meld is achievable in <b>\\(\\Theta(n)\\)</b> overall.<br><br>
 <b>Answer: P: &Theta;(1), Q: &Theta;(n), R: &Theta;(n)</b><br><br><a href="https://gateoverflow.in/460807/gate-cse-2025-set-2-question-28#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node. Suppose a Min-Heap \(T\) stores 32 keys. The height of \(T\) is _____________. (Answer in integer)</span>`,
+            text: `<span style="display: inline;">The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node. Suppose a Min-Heap \\(T\\) stores 32 keys. The height of \\(T\\) is _____________. (Answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 5,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A min-heap with \(N\) keys is stored as a nearly-complete binary tree, and its height (max edges from root to a leaf) is \(\\lfloor\\log_2N\\rfloor\).<br><br>
-Level \(0\) holds \(1\) node, level \(1\) holds \(2\), level \(2\) holds \(4\), level \(3\) holds \(8\), level \(4\) holds \(16\) &mdash; cumulatively \(1+2+4+8+16=31\) nodes fill levels \(0\) through \(4\) completely. The \(32\)nd key must then start a new level, <b>level 5</b>.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A min-heap with \\(N\\) keys is stored as a nearly-complete binary tree, and its height (max edges from root to a leaf) is \\(\\lfloor\\log_2N\\rfloor\\).<br><br>
+Level \\(0\\) holds \\(1\\) node, level \\(1\\) holds \\(2\\), level \\(2\\) holds \\(4\\), level \\(3\\) holds \\(8\\), level \\(4\\) holds \\(16\\) &mdash; cumulatively \\(1+2+4+8+16=31\\) nodes fill levels \\(0\\) through \\(4\\) completely. The \\(32\\)nd key must then start a new level, <b>level 5</b>.<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/460055/gate-cse-2025-set-1-question-25#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">Consider a binary min-heap containing 105 distinct elements. Let \(k\)  be the index (in the underlying array) of the maximum element stored in the heap. The number of possible values of \(k\) is</span>`,
+            text: `<span style="display: inline;">Consider a binary min-heap containing 105 distinct elements. Let \\(k\\)  be the index (in the underlying array) of the maximum element stored in the heap. The number of possible values of \\(k\\) is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">53</span>`,
@@ -67132,30 +67132,30 @@ Level \(0\) holds \(1\) node, level \(1\) holds \(2\), level \(2\) holds \(4\), 
                 `<span style="display: inline;">1</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap every parent is smaller than its children, so the maximum element cannot have a child \(\\text{---}\) it must be a <b>leaf</b>. Any leaf can hold it.<br><br>
-In an array heap of \(n\) elements, leaves are at indices \(\\lfloor n/2\\rfloor+1\) to \(n\).<br><br>
-\(n=105\): leaves are 53 to 105 \(\\rightarrow\) \(105-52=53\) positions.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap every parent is smaller than its children, so the maximum element cannot have a child \\(\\text{---}\\) it must be a <b>leaf</b>. Any leaf can hold it.<br><br>
+In an array heap of \\(n\\) elements, leaves are at indices \\(\\lfloor n/2\\rfloor+1\\) to \\(n\\).<br><br>
+\\(n=105\\): leaves are 53 to 105 \\(\\rightarrow\\) \\(105-52=53\\) positions.<br><br>
 <b>Answer: 53</b><br><br><a href="https://gateoverflow.in/422809/gate-cse-2024-set-1-question-33#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">An array \([82,101,90,11,111,75,33,131,44,93] \) is heapified. Which one of the following options represents the first three elements in the heapified array?</span>`,
+            text: `<span style="display: inline;">An array \\([82,101,90,11,111,75,33,131,44,93] \\) is heapified. Which one of the following options represents the first three elements in the heapified array?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(82,90,101 \)</span>`,
-                `<span style="display: inline;">\(82,11,93 \)</span>`,
-                `<span style="display: inline;">\(131,11,93 \)</span>`,
-                `<span style="display: inline;">\(131,111,90 \)</span>`,
+                `<span style="display: inline;">\\(82,90,101 \\)</span>`,
+                `<span style="display: inline;">\\(82,11,93 \\)</span>`,
+                `<span style="display: inline;">\\(131,11,93 \\)</span>`,
+                `<span style="display: inline;">\\(131,111,90 \\)</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Build a max-heap bottom-up (heapify from index \(\\lfloor10/2\\rfloor=5\) down to 1):<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Build a max-heap bottom-up (heapify from index \\(\\lfloor10/2\\rfloor=5\\) down to 1):<br>
 [82, 101, 90, 11, 111, 75, 33, 131, 44, 93]<br><br>
-- i=5 (111): child 93 \(\\rightarrow\) no change.<br>
-- i=4 (11): children 131, 44 \(\\rightarrow\) swap with 131.<br>
-- i=3 (90): children 75, 33 \(\\rightarrow\) no change.<br>
-- i=2 (101): children 131, 111 \(\\rightarrow\) swap with 131 (101 then fine above 11, 44).<br>
+- i=5 (111): child 93 \\(\\rightarrow\\) no change.<br>
+- i=4 (11): children 131, 44 \\(\\rightarrow\\) swap with 131.<br>
+- i=3 (90): children 75, 33 \\(\\rightarrow\\) no change.<br>
+- i=2 (101): children 131, 111 \\(\\rightarrow\\) swap with 131 (101 then fine above 11, 44).<br>
 - i=1 (82): swap with 131, then with 111, then with 93.<br><br>
 Heap: [131, 111, 90, 101, 93, 75, 33, 11, 44, 82]<br><br>
 <b>Answer: 131, 111, 90</b><br><br><a href="https://gateoverflow.in/422811/gate-cse-2024-set-1-question-31#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2024-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2024 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67179,8 +67179,8 @@ case running time of these two operations is TRUE?</span>`,
                 `<span style="display: inline;">Extract-Max(A) runs in O(1) whereas Insert(A,key) runs in O(log(n)).</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A heap of n elements has height about log n:<br>- Extract-Max: remove the root, move the last element to the root, and heapify down the height of the tree \(\\rightarrow\) \(O(\\log n)\).<br>
-- Insert: add at the end and bubble up to the root \(\\rightarrow\) \(O(\\log n)\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A heap of n elements has height about log n:<br>- Extract-Max: remove the root, move the last element to the root, and heapify down the height of the tree \\(\\rightarrow\\) \\(O(\\log n)\\).<br>
+- Insert: add at the end and bubble up to the root \\(\\rightarrow\\) \\(O(\\log n)\\).<br><br>
 <b>Answer: Both run in O(log(n))</b><br><br><a href="https://gateoverflow.in/399275/gate-cse-2023-question-36#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67197,9 +67197,9 @@ A[1], . . . , A[10] forms a max-heap?</span>`,
                 `<span style="display: inline;">23, 14, 17, 1, 10, 13, 16, 12, 7, 5</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Max-heap: every parent \(A[i]\\ge\) its children \(A[2i]\), \(A[2i+1]\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Max-heap: every parent \\(A[i]\\ge\\) its children \\(A[2i]\\), \\(A[2i+1]\\).<br><br>
 - Option 1: A[3] = 10 has child A[6] = 14 False<br>
-- <b>Option 2</b>: 23 \(\\ge\) 17, 14; 17 \(\\ge\) 7, 13; 14 \(\\ge\) 10, 1; 7 \(\\ge\) 5, 6; 13 \(\\ge\) 12 True<br>
+- <b>Option 2</b>: 23 \\(\\ge\\) 17, 14; 17 \\(\\ge\\) 7, 13; 14 \\(\\ge\\) 10, 1; 7 \\(\\ge\\) 5, 6; 13 \\(\\ge\\) 12 True<br>
 - Option 3: A[5] = 13 has child A[10] = 15 False<br>
 - Option 4: A[4] = 1 has children 12, 7 False<br><br>
 <b>Answer: 23, 17, 14, 7, 13, 10, 1, 5, 6, 12</b><br><br><a href="https://gateoverflow.in/399310/gate-cse-2023-question-2#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2023" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2023</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67211,14 +67211,14 @@ A[1], . . . , A[10] forms a max-heap?</span>`,
             text: `<span style="display: inline;">Let H be a binary min-heap consisting of n elements implemented as an array. What is the worst case time complexity of an optimal algorithm to find the maximum element in H?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (1)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (\\log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta ( n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n \\log n)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (\\log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta ( n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n \\log n)\\)</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap the maximum is in one of the \(\\lceil n/2\\rceil\) leaves, and the leaves are not ordered among themselves, so all of them must be checked: \(\\Theta(n)\).<br><br>
-<b>Answer: \(\\Theta(n)\)</b><br><br><a href="https://gateoverflow.in/357538/gate-cse-2021-set-2-question-2#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap the maximum is in one of the \\(\\lceil n/2\\rceil\\) leaves, and the leaves are not ordered among themselves, so all of them must be checked: \\(\\Theta(n)\\).<br><br>
+<b>Answer: \\(\\Theta(n)\\)</b><br><br><a href="https://gateoverflow.in/357538/gate-cse-2021-set-2-question-2#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -67229,8 +67229,8 @@ A[1], . . . , A[10] forms a max-heap?</span>`,
             options: [
             ],
             answer: 511,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap the maximum is always at a leaf. With 1023 nodes there are \(\\lceil1023/2\\rceil=512\) leaves.<br><br>
-Finding the maximum of 512 elements needs 512 \(-\) 1 = 511 comparisons.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap the maximum is always at a leaf. With 1023 nodes there are \\(\\lceil1023/2\\rceil=512\\) leaves.<br><br>
+Finding the maximum of 512 elements needs 512 \\(-\\) 1 = 511 comparisons.<br><br>
 <b>Answer: 511</b><br><br><a href="https://gateoverflow.in/333184/gate2020-cs-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67240,8 +67240,8 @@ Finding the maximum of 512 elements needs 512 \(-\) 1 = 511 comparisons.<br><br>
             text: `<span style="display: inline;">Consider the following statements:<br><br>
     I. The smallest element in a max-heap is always at a leaf node.<br>
     II. The second largest element in a max-heap is always a child of the root node.<br>
-    III. A max-heap can be constructed from a binary search tree in \(\\Theta (n)\) time.<br>
-    IV. A binary search tree can be constructed from a max-heap in \(\\Theta (n)\) time.<br><br>
+    III. A max-heap can be constructed from a binary search tree in \\(\\Theta (n)\\) time.<br>
+    IV. A binary search tree can be constructed from a max-heap in \\(\\Theta (n)\\) time.<br><br>
 Which of the above statements is/are TRUE?</span>`,
             image: "",
             options: [
@@ -67251,10 +67251,10 @@ Which of the above statements is/are TRUE?</span>`,
                 `<span style="display: inline;">II, III and IV</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- I: a node with a child is larger than that child, so the minimum has no child \(\\rightarrow\) it is a leaf \(\\text{---}\) TRUE.<br>
-- II: the 2nd largest can only be smaller than the root, so its parent must be the root \(\\text{---}\) TRUE.<br>
-- III: build-heap on any array (e.g. the BST's elements) takes \(\\Theta(n)\) \(\\text{---}\) TRUE.<br>
-- IV: a BST from a heap in \(\\Theta(n)\) would give an \(O(n)\) comparison sort (inorder traversal) \(\\text{---}\) FALSE.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- I: a node with a child is larger than that child, so the minimum has no child \\(\\rightarrow\\) it is a leaf \\(\\text{---}\\) TRUE.<br>
+- II: the 2nd largest can only be smaller than the root, so its parent must be the root \\(\\text{---}\\) TRUE.<br>
+- III: build-heap on any array (e.g. the BST's elements) takes \\(\\Theta(n)\\) \\(\\text{---}\\) TRUE.<br>
+- IV: a BST from a heap in \\(\\Theta(n)\\) would give an \\(O(n)\\) comparison sort (inorder traversal) \\(\\text{---}\\) FALSE.<br><br>
 <b>Answer: I, II and III</b><br><br><a href="https://gateoverflow.in/302808/gate2019-cs-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2019" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2019</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67270,8 +67270,8 @@ Which of the above statements is/are TRUE?</span>`,
                 `<span style="display: inline;">14,13,12,10,8</span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Delete 1: move the last element 12 to the root \(\\rightarrow\) [12, 14, 16, 13, 10, 8], sift down (swap with 16) \(\\rightarrow\) [16, 14, 12, 13, 10, 8].<br>
-Delete 2: move 8 to the root \(\\rightarrow\) [8, 14, 12, 13, 10], sift down (swap with 14, then with 13) \(\\rightarrow\) [14, 13, 12, 8, 10].<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Delete 1: move the last element 12 to the root \\(\\rightarrow\\) [12, 14, 16, 13, 10, 8], sift down (swap with 16) \\(\\rightarrow\\) [16, 14, 12, 13, 10, 8].<br>
+Delete 2: move 8 to the root \\(\\rightarrow\\) [8, 14, 12, 13, 10], sift down (swap with 14, then with 13) \\(\\rightarrow\\) [14, 13, 12, 8, 10].<br><br>
 <b>Answer: 14,13,12,8,10</b><br><br><a href="https://gateoverflow.in/213531/isro2018-57" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67283,8 +67283,8 @@ Delete 2: move 8 to the root \(\\rightarrow\) [8, 14, 12, 13, 10], sift down (sw
             options: [
             ],
             answer: 80,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The root must be 1. The 6 remaining numbers split into the left and right subtrees (3 each): \(\\binom63=20\) ways. In each 3-node subtree the smallest is its root and the other two can be swapped: 2 ways each.<br><br>
-Total = 20 \(\\times\) 2 \(\\times\) 2 = 80<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  The root must be 1. The 6 remaining numbers split into the left and right subtrees (3 each): \\(\\binom63=20\\) ways. In each 3-node subtree the smallest is its root and the other two can be swapped: 2 ways each.<br><br>
+Total = 20 \\(\\times\\) 2 \\(\\times\\) 2 = 80<br><br>
 <b>Answer: 80</b><br><br><a href="https://gateoverflow.in/204121/gate2018-46#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67297,7 +67297,7 @@ Total = 20 \(\\times\) 2 \(\\times\) 2 = 80<br><br>
             options: [
             ],
             answer: 8,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap every ancestor of 9 must be smaller than 9. Only 1-8 are smaller, so 9 can have at most 8 ancestors \(\\rightarrow\) depth at most 8. This is possible: put 1, 2, \(\\ldots\), 8, 9 down one path (the heap of 1023 nodes has depths 0-9).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  In a min-heap every ancestor of 9 must be smaller than 9. Only 1-8 are smaller, so 9 can have at most 8 ancestors \\(\\rightarrow\\) depth at most 8. This is possible: put 1, 2, \\(\\ldots\\), 8, 9 down one path (the heap of 1023 nodes has depths 0-9).<br><br>
 <b>Answer: 8</b><br><br><a href="https://gateoverflow.in/39585/gate2016-2-34#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67309,11 +67309,11 @@ Total = 20 \(\\times\) 2 \(\\times\) 2 = 80<br><br>
             options: [
                 `<span style="display: inline;">O(1)</span>`,
                 `<span style="display: inline;">O(d) but not O(1)</span>`,
-                `<span style="display: inline;">O(\(2^{d}\)) but not O(d)</span>`,
-                `<span style="display: inline;">O(d \(2^{d}\)) but not O(\(2^{d}\))</span>`,
+                `<span style="display: inline;">O(\\(2^{d}\\)) but not O(d)</span>`,
+                `<span style="display: inline;">O(d \\(2^{d}\\)) but not O(\\(2^{d}\\))</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  To delete node i: move the last element into position i, then either sift it up or down. Either way it moves along one root-to-leaf path, at most d levels \(\\rightarrow\) \(O(d)\). It can take that long, so it is not \(O(1)\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  To delete node i: move the last element into position i, then either sift it up or down. Either way it moves along one root-to-leaf path, at most d levels \\(\\rightarrow\\) \\(O(d)\\). It can take that long, so it is not \\(O(1)\\).<br><br>
 <b>Answer: O(d) but not O(1)</b><br><br><a href="https://gateoverflow.in/39706/gate2016-1-37#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2016-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2016 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67353,15 +67353,15 @@ registerTest({
             text: `<span style="display: inline;">Consider a complete binary tree where the left and the right subtrees of the root are max-heaps. The lower bound for the number of operations to convert the tree to a heap is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Omega (log n)\)</span>`,
-                `<span style="display: inline;">\((n)\)</span>`,
-                `<span style="display: inline;">\(\\Omega (n \\; log n)\)</span>`,
-                `<span style="display: inline;">\(\\Omega (n^{2})\)</span>`,
+                `<span style="display: inline;">\\(\\Omega (log n)\\)</span>`,
+                `<span style="display: inline;">\\((n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Omega (n \\; log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Omega (n^{2})\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Both subtrees are already heaps, so only the root may be out of place. One heapify (sift-down) from the root fixes it, moving down at most the height of the tree.<br><br>
-Bound = \(\\Omega(\\log n)\) (and this is enough).<br><br>
-<b>Answer: \(\\Omega(\\log n)\)</b><br><br><a href="https://gateoverflow.in/8091/gate2015-2-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+Bound = \\(\\Omega(\\log n)\\) (and this is enough).<br><br>
+<b>Answer: \\(\\Omega(\\log n)\\)</b><br><br><a href="https://gateoverflow.in/8091/gate2015-2-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -67377,9 +67377,9 @@ Bound = \(\\Omega(\\log n)\) (and this is enough).<br><br>
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  35 goes to the next free position (index 10), as child of 15.<br><br>
-- 35 \(\\gt\) 15: swap \(\\rightarrow\) 35 under 30<br>
-- 35 \(\\gt\) 30: swap \(\\rightarrow\) 35 under 40<br>
-- 35 \(\\lt\) 40: stop<br><br>
+- 35 \\(\\gt\\) 15: swap \\(\\rightarrow\\) 35 under 30<br>
+- 35 \\(\\gt\\) 30: swap \\(\\rightarrow\\) 35 under 40<br>
+- 35 \\(\\lt\\) 40: stop<br><br>
 Heap: 40, 35, 20, 10, 30, 16, 17, 8, 4, 15<br><br>
 <b>Answer: 40, 35, 20, 10, 30, 16, 17, 8, 4, 15</b><br><br><a href="https://gateoverflow.in/8273/gate2015-1-27#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -67399,8 +67399,8 @@ that order. The level-order traversal of the heap after the insertion of the ele
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Heap: 10, 8, 5, 3, 2.<br><br>
-- Insert 1: goes as left child of 5; 1 \(\\lt\) 5, no swap \(\\rightarrow\) 10, 8, 5, 3, 2, 1<br>
-- Insert 7: goes as right child of 5; 7 \(\\gt\) 5, swap; 7 \(\\lt\) 10, stop \(\\rightarrow\) 10, 8, 7, 3, 2, 1, 5<br><br>
+- Insert 1: goes as left child of 5; 1 \\(\\lt\\) 5, no swap \\(\\rightarrow\\) 10, 8, 5, 3, 2, 1<br>
+- Insert 7: goes as right child of 5; 7 \\(\\gt\\) 5, swap; 7 \\(\\lt\\) 10, stop \\(\\rightarrow\\) 10, 8, 7, 3, 2, 1, 5<br><br>
 <b>Answer: 10, 8, 7, 3, 2, 1, 5</b><br><br><a href="https://gateoverflow.in/1967/gate2014-2-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67417,18 +67417,18 @@ the value of its children. Which of the following is a max-heap? <br><img src="i
                 `<span style="display: inline;">D</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A heap must be a complete binary tree with each parent \(\\ge\) its children.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  A heap must be a complete binary tree with each parent \\(\\ge\\) its children.<br><br>
 - A: not complete (8 has one child while 5 has a child)<br>
-- B: complete, and 10 \(\\ge\) 8, 6; 8 \(\\ge\) 4, 5; 6 \(\\ge\) 1, 2 \(\\rightarrow\) valid<br>
-- C: 5 has child 8 \(\\rightarrow\) invalid<br>
-- D: root 5 has child 8 \(\\rightarrow\) invalid<br><br>
+- B: complete, and 10 \\(\\ge\\) 8, 6; 8 \\(\\ge\\) 4, 5; 6 \\(\\ge\\) 1, 2 \\(\\rightarrow\\) valid<br>
+- C: 5 has child 8 \\(\\rightarrow\\) invalid<br>
+- D: root 5 has child 8 \\(\\rightarrow\\) invalid<br><br>
 <b>Answer: B</b><br><br><a href="https://gateoverflow.in/2125/gate2011-23#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2011" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2011</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A data structure is required for storing a set of integers such that each of the following operations can be done in \(O(\\log n)\) time, where n is the number of elements in the set.<br><br>
+            text: `<span style="display: inline;">A data structure is required for storing a set of integers such that each of the following operations can be done in \\(O(\\log n)\\) time, where n is the number of elements in the set.<br><br>
 
 1. Deletion of the smallest element<br>
 
@@ -67488,10 +67488,10 @@ Which one of the following array represents a binary max-heap?</span>`,
 necessarily one after another) into this heap. The total time required for this is</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta\) (logn)</span>`,
-                `<span style="display: inline;">\(\\Theta\) (n)</span>`,
-                `<span style="display: inline;">\(\\Theta\) (nlogn)</span>`,
-                `<span style="display: inline;">\(\\Theta (n^{2})\)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (logn)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (n)</span>`,
+                `<span style="display: inline;">\\(\\Theta\\) (nlogn)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n^{2})\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/459/gate2008-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2008" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2008</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67506,10 +67506,10 @@ path from the new leaf to the root to find the position for the newly inserted
 element, the number of comparisons performed is:</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (log n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (loglogn)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n log_{2}n)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (log n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (loglogn)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n log_{2}n)\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1245/gate2007-47#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2007" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2007</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67566,10 +67566,10 @@ element, the number of comparisons performed is:</span>`,
             text: `<span style="display: inline;">In a binary max heap containing n numbers, the smallest element can be found in time</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (logn)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (log logn)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (1)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (logn)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (log logn)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1)\\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/889/gate2006-10#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2006" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2006</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67597,15 +67597,15 @@ Two new elements '1' and '7' are inserted in the heap in that order. The level-o
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">An array of integers of size n can be converted into a heap by adjusting the heaps rooted at each internal node of the complete binary tree starting at the node \(\\left \\lfloor (n - 1) /2 \\right \\rfloor\), and doing this adjustment up to the root node (root node is at index 0) in the order \(\\left \\lfloor (n - 1) /2 \\right \\rfloor\),\(\\left \\lfloor (n - 3) /2 \\right \\rfloor\), ....., 0. The time required to construct a heap in this manner is
+            text: `<span style="display: inline;">An array of integers of size n can be converted into a heap by adjusting the heaps rooted at each internal node of the complete binary tree starting at the node \\(\\left \\lfloor (n - 1) /2 \\right \\rfloor\\), and doing this adjustment up to the root node (root node is at index 0) in the order \\(\\left \\lfloor (n - 1) /2 \\right \\rfloor\\),\\(\\left \\lfloor (n - 3) /2 \\right \\rfloor\\), ....., 0. The time required to construct a heap in this manner is
 
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(O(\\log n)\)</span>`,
+                `<span style="display: inline;">\\(O(\\log n)\\)</span>`,
                 `<span style="display: inline;">O(n)</span>`,
-                `<span style="display: inline;">\(O (n \\log \\log n)\)</span>`,
-                `<span style="display: inline;">\(O(n \\log n)\)</span>`,
+                `<span style="display: inline;">\\(O (n \\log \\log n)\\)</span>`,
+                `<span style="display: inline;">\\(O(n \\log n)\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/3696/gate2004-it-53" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-it-2004" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE IT 2004</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67662,14 +67662,14 @@ Which of the following data structures can be used for this purpose ?</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">In a heap with n elements with the smallest element at the root, the \(7^{th}\) smallest
+            text: `<span style="display: inline;">In a heap with n elements with the smallest element at the root, the \\(7^{th}\\) smallest
 element ban be found in time</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\Theta (nlogn)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (n)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (logn)\)</span>`,
-                `<span style="display: inline;">\(\\Theta (1)\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (nlogn)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (n)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (logn)\\)</span>`,
+                `<span style="display: inline;">\\(\\Theta (1)\\)</span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/1110/gate2003-23#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2003" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2003</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67697,13 +67697,13 @@ element ban be found in time</span>`,
             type: "MCQ",
             text: `<span style="display: inline;">Consider any array representation of an n element binary heap where the elements
 are stored from index 1 to index n of the array. For the element stored at index
-i of the array (\(i\\leq n\) ) , the index of the parent is</span>`,
+i of the array (\\(i\\leq n\\) ) , the index of the parent is</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">i-1</span>`,
-                `<span style="display: inline;">\(\\left \\lfloor \\frac{i}{2} \\right \\rfloor\)</span>`,
-                `<span style="display: inline;">\(\\frac{i}{2}\)</span>`,
-                `<span style="display: inline;">\(\\frac{(i+1)}{2}\)</span>`,
+                `<span style="display: inline;">\\(\\left \\lfloor \\frac{i}{2} \\right \\rfloor\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{i}{2}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{(i+1)}{2}\\)</span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <a href="https://gateoverflow.in/708/gate2001-1-15#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2001" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2001</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -67721,22 +67721,22 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">The keys \(5,28,19,15,26,33,12,17,10\) are inserted into a hash table using the hash function \(h(k)=k \\bmod 9\). The collisions are resolved by chaining. After all the keys are inserted, the length of the longest chain is ________. (answer in integer)</span>`,
+            text: `<span style="display: inline;">The keys \\(5,28,19,15,26,33,12,17,10\\) are inserted into a hash table using the hash function \\(h(k)=k \\bmod 9\\). The collisions are resolved by chaining. After all the keys are inserted, the length of the longest chain is ________. (answer in integer)</span>`,
             image: "",
             options: [
             ],
             answer: 3,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Compute \(h(k)=k\\bmod9\) for each key, then group into chains:<br><br>
-\(\\begin{array}{c|c}k&h(k)\\\\\\hline5&5\\\\28&1\\\\19&1\\\\15&6\\\\26&8\\\\33&6\\\\12&3\\\\17&8\\\\10&1\\end{array}\)<br><br>
-Chains: bucket \(1\): \(28,19,10\) (length \(3\)); bucket \(6\): \(15,33\) (length \(2\)); bucket \(8\): \(26,17\) (length \(2\)); bucket \(3\): \(12\) (length \(1\)); bucket \(5\): \(5\) (length \(1\)).<br><br>
-The longest chain has length \(3\) (bucket \(1\), holding \(28,19,10\)).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Compute \\(h(k)=k\\bmod9\\) for each key, then group into chains:<br><br>
+\\(\\begin{array}{c|c}k&h(k)\\\\\\hline5&5\\\\28&1\\\\19&1\\\\15&6\\\\26&8\\\\33&6\\\\12&3\\\\17&8\\\\10&1\\end{array}\\)<br><br>
+Chains: bucket \\(1\\): \\(28,19,10\\) (length \\(3\\)); bucket \\(6\\): \\(15,33\\) (length \\(2\\)); bucket \\(8\\): \\(26,17\\) (length \\(2\\)); bucket \\(3\\): \\(12\\) (length \\(1\\)); bucket \\(5\\): \\(5\\) (length \\(1\\)).<br><br>
+The longest chain has length \\(3\\) (bucket \\(1\\), holding \\(28,19,10\\)).<br><br>
 <b>Answer: 3</b><br><br><a href="https://gateoverflow.in/523126/gate-cse-2026-set-2-question-20#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;">Consider a hash table \(P[0,1, \\ldots, 10]\) that is initially empty. The hash table is maintained using open addressing with linear probing. The hash function used is \(h(x)=(x+7) \\bmod 11\).<br><br> Consider the following sequence of insertions performed on \(P\) :<br><br> \( \\text { 1,13, 22, 15, 11, } 24 \) <br><br>Which of the following positions in the hash table is/are empty after these insertions are performed?</span>`,
+            text: `<span style="display: inline;">Consider a hash table \\(P[0,1, \\ldots, 10]\\) that is initially empty. The hash table is maintained using open addressing with linear probing. The hash function used is \\(h(x)=(x+7) \\bmod 11\\).<br><br> Consider the following sequence of insertions performed on \\(P\\) :<br><br> \\( \\text { 1,13, 22, 15, 11, } 24 \\) <br><br>Which of the following positions in the hash table is/are empty after these insertions are performed?</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">0</span>`,
@@ -67745,10 +67745,10 @@ The longest chain has length \(3\) (bucket \(1\), holding \(28,19,10\)).<br><br>
                 `<span style="display: inline;">1</span>`,
             ],
             answer: ["A"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Hash function: \(h(x)=(x+7)\\bmod 11\), table size \(11\) (indices \(0\) to \(10\)), linear probing.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Hash function: \\(h(x)=(x+7)\\bmod 11\\), table size \\(11\\) (indices \\(0\\) to \\(10\\)), linear probing.<br><br>
 Compute initial hash and, on collision, probe the next slot(s) circularly:<br>
-\(\\begin{array}{c|c|c}\\text{Key}&h(x)&\\text{Placed at}\\\\\\hline 1&8&8\\ (\\text{empty})\\\\13&9&9\\ (\\text{empty})\\\\22&7&7\\ (\\text{empty})\\\\15&0&0\\ (\\text{empty})\\\\11&7&7\\text{ taken}\\to8\\text{ taken}\\to9\\text{ taken}\\to10\\ (\\text{empty})\\\\24&9&9\\text{ taken}\\to10\\text{ taken}\\to0\\text{ taken}\\to1\\ (\\text{empty})\\end{array}\)<br><br>
-Final table: \(0{:}15,\\ 1{:}24,\\ 7{:}22,\\ 8{:}1,\\ 9{:}13,\\ 10{:}11\). Positions \(2,3,4,5,6\) remain empty.<br><br>
+\\(\\begin{array}{c|c|c}\\text{Key}&h(x)&\\text{Placed at}\\\\\\hline 1&8&8\\ (\\text{empty})\\\\13&9&9\\ (\\text{empty})\\\\22&7&7\\ (\\text{empty})\\\\15&0&0\\ (\\text{empty})\\\\11&7&7\\text{ taken}\\to8\\text{ taken}\\to9\\text{ taken}\\to10\\ (\\text{empty})\\\\24&9&9\\text{ taken}\\to10\\text{ taken}\\to0\\text{ taken}\\to1\\ (\\text{empty})\\end{array}\\)<br><br>
+Final table: \\(0{:}15,\\ 1{:}24,\\ 7{:}22,\\ 8{:}1,\\ 9{:}13,\\ 10{:}11\\). Positions \\(2,3,4,5,6\\) remain empty.<br><br>
 Of the choices given (0, 10, 2, 1), only position <b>2</b> is empty &mdash; the others (0, 1, 10) are all occupied.<br><br>
 <b>Answer: Position 2</b><br><br><a href="https://gateoverflow.in/523066/gate-cse-2026-set-1-question-14#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2026-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2026 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -67756,8 +67756,8 @@ Of the choices given (0, 10, 2, 1), only position <b>2</b> is empty &mdash; the 
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">In a double hashing scheme, \( h_1(k) = k \\mod 11 \) and \( h_2(k) = 1 + (k \\mod 7) \) are the auxiliary hash functions. The size \( m \) of the hash table is 11. The hash function for the \( i \)-th probe in the open address table is  \(
-[h_1(k) + i h_2(k)] \\mod m \)
+            text: `<span style="display: inline;">In a double hashing scheme, \\( h_1(k) = k \\mod 11 \\) and \\( h_2(k) = 1 + (k \\mod 7) \\) are the auxiliary hash functions. The size \\( m \\) of the hash table is 11. The hash function for the \\( i \\)-th probe in the open address table is  \\(
+[h_1(k) + i h_2(k)] \\mod m \\)
 The following keys are inserted in the given order: 63, 50, 25, 79, 67, 24.  
 <br><br>
 The slot at which key 24 gets stored is _________. (Answer in integer)</span>`,
@@ -67765,14 +67765,14 @@ The slot at which key 24 gets stored is _________. (Answer in integer)</span>`,
             options: [
             ],
             answer: 10,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Double hashing: \(h_1(k)=k\\bmod11\), \(h_2(k)=1+(k\\bmod7)\), probe \(i\): \([h_1(k)+ih_2(k)]\\bmod11\), table size \(11\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Double hashing: \\(h_1(k)=k\\bmod11\\), \\(h_2(k)=1+(k\\bmod7)\\), probe \\(i\\): \\([h_1(k)+ih_2(k)]\\bmod11\\), table size \\(11\\).<br><br>
 Insert in order, computing initial slot (and probing forward on collision):<br>
-\(63\): \(h_1=8\) &rarr; slot \(8\) (empty).<br>
-\(50\): \(h_1=6\) &rarr; slot \(6\) (empty).<br>
-\(25\): \(h_1=3\) &rarr; slot \(3\) (empty).<br>
-\(79\): \(h_1=2\) &rarr; slot \(2\) (empty).<br>
-\(67\): \(h_1=1\) &rarr; slot \(1\) (empty).<br>
-\(24\): \(h_1=2\) (taken by \(79\)), \(h_2=1+(24\\bmod7)=1+3=4\). Probe \(i=1\): \((2+4)\\bmod11=6\) (taken by \(50\)). Probe \(i=2\): \((2+8)\\bmod11=10\) (empty) &rarr; placed at slot \(10\).<br><br>
+\\(63\\): \\(h_1=8\\) &rarr; slot \\(8\\) (empty).<br>
+\\(50\\): \\(h_1=6\\) &rarr; slot \\(6\\) (empty).<br>
+\\(25\\): \\(h_1=3\\) &rarr; slot \\(3\\) (empty).<br>
+\\(79\\): \\(h_1=2\\) &rarr; slot \\(2\\) (empty).<br>
+\\(67\\): \\(h_1=1\\) &rarr; slot \\(1\\) (empty).<br>
+\\(24\\): \\(h_1=2\\) (taken by \\(79\\)), \\(h_2=1+(24\\bmod7)=1+3=4\\). Probe \\(i=1\\): \\((2+4)\\bmod11=6\\) (taken by \\(50\\)). Probe \\(i=2\\): \\((2+8)\\bmod11=10\\) (empty) &rarr; placed at slot \\(10\\).<br><br>
 <b>Answer: 10</b><br><br><a href="https://gateoverflow.in/460025/gate-cse-2025-set-1-question-55#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2025-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2025 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67781,15 +67781,15 @@ Insert in order, computing initial slot (and probing forward on collision):<br>
             type: "MCQ",
             text: `<span style="display: inline;">An algorithm has to store several keys generated by an adversary in a hash
 table. The adversary is malicious who tries to maximize the number of collisions.
-Let \( k\) be the number of keys, \( m\) be the number of slots in the hash table, and \( k \\gt m\).<br>
+Let \\( k\\) be the number of keys, \\( m\\) be the number of slots in the hash table, and \\( k \\gt m\\).<br>
 Which one of the following is the best hashing strategy to counteract the adversary?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">Division method, i.e., use the hash function \(h(k) = k\\;  mod \\; m\)</span>`,
-                `<span style="display: inline;">Multiplication method, i.e., use the hash function \( h(k) =  \\left \\lfloor m(kA -\\left \\lfloor kA \\right \\rfloor ) \\right \\rfloor\), where
-\(A\) is a carefully chosen constant.</span>`,
+                `<span style="display: inline;">Division method, i.e., use the hash function \\(h(k) = k\\;  mod \\; m\\)</span>`,
+                `<span style="display: inline;">Multiplication method, i.e., use the hash function \\( h(k) =  \\left \\lfloor m(kA -\\left \\lfloor kA \\right \\rfloor ) \\right \\rfloor\\), where
+\\(A\\) is a carefully chosen constant.</span>`,
                 `<span style="display: inline;">Universal hashing method.</span>`,
-                `<span style="display: inline;">If \(k\) is a prime number, use Division method. Otherwise, use Multiplication method</span>`,
+                `<span style="display: inline;">If \\(k\\) is a prime number, use Division method. Otherwise, use Multiplication method</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Any fixed hash function (division or multiplication) is known to the adversary, who can pick keys that all collide.<br><br>
@@ -67800,20 +67800,20 @@ Which one of the following is the best hashing strategy to counteract the advers
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Suppose we are given \(n\) keys, \(m\) hash table slots, and two simple uniform hash functions \(h_1\) and \(h_2\). Further suppose our hashing scheme uses \(h_1\) for the odd keys
-and \(h_2\) for the even keys. What is the expected number of keys in a slot?
+            text: `<span style="display: inline;">Suppose we are given \\(n\\) keys, \\(m\\) hash table slots, and two simple uniform hash functions \\(h_1\\) and \\(h_2\\). Further suppose our hashing scheme uses \\(h_1\\) for the odd keys
+and \\(h_2\\) for the even keys. What is the expected number of keys in a slot?
 </span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\(\\frac{m}{n}\)</span>`,
-                `<span style="display: inline;">\(\\frac{n}{m}\)</span>`,
-                `<span style="display: inline;">\(\\frac{2n}{m}\)</span>`,
-                `<span style="display: inline;">\(\\frac{n}{2m}\)</span>`,
+                `<span style="display: inline;">\\(\\frac{m}{n}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n}{m}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{2n}{m}\\)</span>`,
+                `<span style="display: inline;">\\(\\frac{n}{2m}\\)</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Both \(h_1\) and \(h_2\) are simple uniform hash functions, so <b>every key</b> (odd or even) lands in any given slot with probability \(\\frac{1}{m}\).<br><br>
-Expected keys in a slot \(=n\\times\\frac{1}{m}=\\frac{n}{m}\) (which hash function is used does not matter).<br><br>
-<b>Answer: \(\\frac{n}{m}\)</b><br><br><a href="https://gateoverflow.in/371930/Gate-cse-2022-question-6#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Both \\(h_1\\) and \\(h_2\\) are simple uniform hash functions, so <b>every key</b> (odd or even) lands in any given slot with probability \\(\\frac{1}{m}\\).<br><br>
+Expected keys in a slot \\(=n\\times\\frac{1}{m}=\\frac{n}{m}\\) (which hash function is used does not matter).<br><br>
+<b>Answer: \\(\\frac{n}{m}\\)</b><br><br><a href="https://gateoverflow.in/371930/Gate-cse-2022-question-6#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2022" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2022</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 2,
@@ -67840,10 +67840,10 @@ Consider the following state of the hash table.  <br><img src="images/practicepa
             answer: ["A"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Read the state: index 00 empty; 01 has 3 keys (one with 3rd bit 0, two with 3rd bit 1, split by the 4th bit); 10 has 2 keys (3rd bit 0 and 1); 11 has 1 key.<br><br>
 Option C: 10, 9, 6, 7, 5, 13<br>
-- 10 = 1010 \(\\rightarrow\) 10, bit3 = 0; 6 = 0110 \(\\rightarrow\) 10, bit3 = 1 True<br>
-- 9 = 1001 \(\\rightarrow\) 01, bit3 = 0; 5 = 0101 and 13 = 1101 \(\\rightarrow\) 01, bit3 = 1, split by bit4 (0 and 1) True<br>
-- 7 = 0111 \(\\rightarrow\) 11 True<br><br>
-The others fail: (A) has 4 \(\\rightarrow\) index 00; (B) has 1 and 9 colliding with bit3 = 0; (D) has 6 and 14 colliding and nothing in 11.<br><br>
+- 10 = 1010 \\(\\rightarrow\\) 10, bit3 = 0; 6 = 0110 \\(\\rightarrow\\) 10, bit3 = 1 True<br>
+- 9 = 1001 \\(\\rightarrow\\) 01, bit3 = 0; 5 = 0101 and 13 = 1101 \\(\\rightarrow\\) 01, bit3 = 1, split by bit4 (0 and 1) True<br>
+- 7 = 0111 \\(\\rightarrow\\) 11 True<br><br>
+The others fail: (A) has 4 \\(\\rightarrow\\) index 00; (B) has 1 and 9 colliding with bit3 = 0; (D) has 6 and 14 colliding and nothing in 11.<br><br>
 <b>Answer: 10, 9, 6, 7, 5, 13</b><br><br><a href="https://gateoverflow.in/357404/gate-cse-2021-set-1-question-47#a_list_title" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2021-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2021 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67859,29 +67859,29 @@ The others fail: (A) has 4 \(\\rightarrow\) index 00; (B) has 1 and 9 colliding 
                 `<span style="display: inline;">r=i*bfr*N</span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Load factor = records / (capacity of all buckets) = \(\\frac{r}{bfr\\times N}\).<br><br>
-So \(r=i\\times bfr\\times N\).<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Load factor = records / (capacity of all buckets) = \\(\\frac{r}{bfr\\times N}\\).<br><br>
+So \\(r=i\\times bfr\\times N\\).<br><br>
 <b>Answer: r = i*bfr*N</b><br><br><a href="https://gateoverflow.in/331276/isro2020-24" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Consider a double hashing scheme in which the primary hash function is \(h_1(k)=k\\; mod \\; 23\), and the secondary hash function is \(h_2(k)=1+(k\\; mod \\; 19)\). Assume that the table size is 23. Then the address returned by probe 1 in the probe sequence (assume that the probe sequence begins at probe 0) for key value k=90 is_____________.</span>`,
+            text: `<span style="display: inline;">Consider a double hashing scheme in which the primary hash function is \\(h_1(k)=k\\; mod \\; 23\\), and the secondary hash function is \\(h_2(k)=1+(k\\; mod \\; 19)\\). Assume that the table size is 23. Then the address returned by probe 1 in the probe sequence (assume that the probe sequence begins at probe 0) for key value k=90 is_____________.</span>`,
             image: "",
             options: [
             ],
             answer: 13,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- \(h_1(90)=90\\bmod23=21\)<br>
-- \(h_2(90)=1+(90\\bmod19)=1+14=15\)<br><br>
-Probe i = \((h_1+i\\cdot h_2)\\bmod23\). Probe 1 = \((21+15)\\bmod23=36\\bmod23=13\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- \\(h_1(90)=90\\bmod23=21\\)<br>
+- \\(h_2(90)=1+(90\\bmod19)=1+14=15\\)<br><br>
+Probe i = \\((h_1+i\\cdot h_2)\\bmod23\\). Probe 1 = \\((21+15)\\bmod23=36\\bmod23=13\\)<br><br>
 <b>Answer: 13</b><br><br><a href="https://gateoverflow.in/333208/gate2020-cs-23#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2020" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2020</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A hash table with 10 buckets with one slot pet per bucket is depicted here. The symbols, S1 to S7 are initially entered using a hashing function with linear probing. The maximum number of comparisons needed in searching an item that is not present is:<br>\(\\begin{array}{|c|c|} \\hline 0 & S 7 \\\\ \\hline 1 & S 1 \\\\ \\hline 2 & \\\\ \\hline 3 & S 4 \\\\ \\hline 4 & S 2 \\\\ \\hline 5 & \\\\ \\hline 6 & S 5 \\\\ \\hline 7 & \\\\ \\hline 8 & S 6 \\\\ \\hline 9 & S 3 \\\\ \\hline \\end{array}\)</span>`,
+            text: `<span style="display: inline;">A hash table with 10 buckets with one slot pet per bucket is depicted here. The symbols, S1 to S7 are initially entered using a hashing function with linear probing. The maximum number of comparisons needed in searching an item that is not present is:<br>\\(\\begin{array}{|c|c|} \\hline 0 & S 7 \\\\ \\hline 1 & S 1 \\\\ \\hline 2 & \\\\ \\hline 3 & S 4 \\\\ \\hline 4 & S 2 \\\\ \\hline 5 & \\\\ \\hline 6 & S 5 \\\\ \\hline 7 & \\\\ \\hline 8 & S 6 \\\\ \\hline 9 & S 3 \\\\ \\hline \\end{array}\\)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">4</span>`,
@@ -67890,14 +67890,14 @@ Probe i = \((h_1+i\\cdot h_2)\\bmod23\). Probe 1 = \((21+15)\\bmod23=36\\bmod23=
                 `<span style="display: inline;">3</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An unsuccessful search probes until it finds an empty slot. The longest run is from slot 8: slots 8, 9, 0, 1 are full and slot 2 is empty \(\\rightarrow\) 5 comparisons.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An unsuccessful search probes until it finds an empty slot. The longest run is from slot 8: slots 8, 9, 0, 1 are full and slot 2 is empty \\(\\rightarrow\\) 5 comparisons.<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/213552/isro2018-36" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2018" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2018</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A Hash Function f defined as f(key)=keymod7. With linear probing while inserting the keys 37,38,72,48,98,11,56 into a table indexed from 0, in which location key 11 will be stored (Count table index 0 as \(0^{th}\) location)? </span>`,
+            text: `<span style="display: inline;">A Hash Function f defined as f(key)=keymod7. With linear probing while inserting the keys 37,38,72,48,98,11,56 into a table indexed from 0, in which location key 11 will be stored (Count table index 0 as \\(0^{th}\\) location)? </span>`,
             image: "",
             options: [
                 `<span style="display: inline;">3</span>`,
@@ -67907,10 +67907,10 @@ Probe i = \((h_1+i\\cdot h_2)\\bmod23\). Probe 1 = \((21+15)\\bmod23=36\\bmod23=
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  key mod 7 with linear probing:<br>
-- 37 \(\\rightarrow\) 2, 38 \(\\rightarrow\) 3<br>
-- 72 \(\\rightarrow\) 2 (taken), 3 (taken) \(\\rightarrow\) 4<br>
-- 48 \(\\rightarrow\) 6, 98 \(\\rightarrow\) 0<br>
-- 11 \(\\rightarrow\) 4 (taken) \(\\rightarrow\) <b>5</b><br><br>
+- 37 \\(\\rightarrow\\) 2, 38 \\(\\rightarrow\\) 3<br>
+- 72 \\(\\rightarrow\\) 2 (taken), 3 (taken) \\(\\rightarrow\\) 4<br>
+- 48 \\(\\rightarrow\\) 6, 98 \\(\\rightarrow\\) 0<br>
+- 11 \\(\\rightarrow\\) 4 (taken) \\(\\rightarrow\\) <b>5</b><br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/51315/isro2016-29" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2016" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2016</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67927,19 +67927,19 @@ Probe i = \((h_1+i\\cdot h_2)\\bmod23\). Probe 1 = \((21+15)\\bmod23=36\\bmod23=
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  An unsuccessful search stops at the first empty slot. Empty slots are 2, 5 and 7.<br><br>
-The longest run is for a key that hashes to slot 8: check 8, 9, 0, 1, then the empty slot 2 \(\\rightarrow\) 5 comparisons.<br><br>
+The longest run is for a key that hashes to slot 8: check 8, 9, 0, 1, then the empty slot 2 \\(\\rightarrow\\) 5 comparisons.<br><br>
 <b>Answer: 5</b><br><br><a href="https://gateoverflow.in/10905/gate1989-1-vii-isro2015-14" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2015" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2015</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">Given a hash table T with 25 slots that stores 2000 elements, the load factor \(\\alpha\) for T is ____________.</span>`,
+            text: `<span style="display: inline;">Given a hash table T with 25 slots that stores 2000 elements, the load factor \\(\\alpha\\) for T is ____________.</span>`,
             image: "",
             options: [
             ],
             answer: 80,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Load factor \(\\alpha=\\frac{n}{m}=\\frac{2000}{25}=80\)<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Load factor \\(\\alpha=\\frac{n}{m}=\\frac{2000}{25}=80\\)<br><br>
 <b>Answer: 80</b><br><br><a href="https://gateoverflow.in/8414/gate2015-3-12#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67949,15 +67949,15 @@ The longest run is for a key that hashes to slot 8: check 8, 9, 0, 1, then the e
             text: `<span style="display: inline;">Which one of the following hash functions on integers will distribute keys most uniformly over 10 buckets numbered 0 to 9 for i ranging from 0 to 2020?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">h(i)= \(i^{2}\) mod 10</span>`,
-                `<span style="display: inline;">h(i)= \(i^{3}\) mod 10</span>`,
-                `<span style="display: inline;">h(i)=(11*\(i^{2}\)) mod 10</span>`,
-                `<span style="display: inline;">h(i)=(12*\(i^{2}\)) mod 10</span>`,
+                `<span style="display: inline;">h(i)= \\(i^{2}\\) mod 10</span>`,
+                `<span style="display: inline;">h(i)= \\(i^{3}\\) mod 10</span>`,
+                `<span style="display: inline;">h(i)=(11*\\(i^{2}\\)) mod 10</span>`,
+                `<span style="display: inline;">h(i)=(12*\\(i^{2}\\)) mod 10</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Last digit of \(i^3\) for last digits 0..9: 0, 1, 8, 7, 4, 5, 6, 3, 2, 9. Every bucket gets used equally.<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Last digit of \\(i^3\\) for last digits 0..9: 0, 1, 8, 7, 4, 5, 6, 3, 2, 9. Every bucket gets used equally.<br><br>
 Squares end only in 0, 1, 4, 5, 6, 9, so options 1, 3, 4 leave some buckets empty.<br><br>
-<b>Answer: h(i) = \(i^3\) mod 10</b><br><br><a href="https://gateoverflow.in/8152/gate2015-2-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+<b>Answer: h(i) = \\(i^3\\) mod 10</b><br><br><a href="https://gateoverflow.in/8152/gate2015-2-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2015-set-2" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2015 SET-2</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
             marks: 1,
@@ -67972,10 +67972,10 @@ Squares end only in 0, 1, 4, 5, 6, 9, so options 1, 3, 4 leave some buckets empt
                 `<span style="display: inline;">12</span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 661 mod 13 = 11 \(\\rightarrow\) slot 11<br>
-- 182 mod 13 = 0 \(\\rightarrow\) slot 0<br>
-- 24 mod 13 = 11 \(\\rightarrow\) taken, go to 12<br>
-- 103 mod 13 = 12 \(\\rightarrow\) taken, 0 taken, 1 free \(\\rightarrow\) slot 1<br><br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Checking each statement:<br>- 661 mod 13 = 11 \\(\\rightarrow\\) slot 11<br>
+- 182 mod 13 = 0 \\(\\rightarrow\\) slot 0<br>
+- 24 mod 13 = 11 \\(\\rightarrow\\) taken, go to 12<br>
+- 103 mod 13 = 12 \\(\\rightarrow\\) taken, 0 taken, 1 free \\(\\rightarrow\\) slot 1<br><br>
 <b>Answer: 1</b><br><br><a href="https://gateoverflow.in/55021/isro2014-64" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/isro-cse-2014" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">ISRO CSE 2014</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -67986,15 +67986,15 @@ Squares end only in 0, 1, 4, 5, 6, 9, so options 1, 3, 4 leave some buckets empt
 simple uniform hashing, what is the probability that the first 3 slots are unfilled after the first 3 insertions?</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">(97 x 97 x 97)/\(100^{3}\)</span>`,
-                `<span style="display: inline;">(99 x 98 x 97)/\(100^{3}\)</span>`,
-                `<span style="display: inline;">(97 x 96 x 95)/\(100^{3}\)</span>`,
-                `<span style="display: inline;">(97 x 96 x 95)/(3! x \(100^{3}\))</span>`,
+                `<span style="display: inline;">(97 x 97 x 97)/\\(100^{3}\\)</span>`,
+                `<span style="display: inline;">(99 x 98 x 97)/\\(100^{3}\\)</span>`,
+                `<span style="display: inline;">(97 x 96 x 95)/\\(100^{3}\\)</span>`,
+                `<span style="display: inline;">(97 x 96 x 95)/(3! x \\(100^{3}\\))</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  With chaining, each key independently goes to any of the 100 slots. The chance it avoids the first 3 slots is 97/100.<br><br>
-For 3 insertions: \(\\frac{97\\times97\\times97}{100^3}\)<br><br>
-<b>Answer: (97 \(\\times\) 97 \(\\times\) 97) / \(100^3\)</b><br><br><a href="https://gateoverflow.in/2074/gate2014-3-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
+For 3 insertions: \\(\\frac{97\\times97\\times97}{100^3}\\)<br><br>
+<b>Answer: (97 \\(\\times\\) 97 \\(\\times\\) 97) / \\(100^3\\)</b><br><br><a href="https://gateoverflow.in/2074/gate2014-3-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-3" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-3</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
     ]
 });
@@ -68020,7 +68020,7 @@ resolved by chaining. The following 9 keys are inserted in the order: 5, 28, 19,
                 `<span style="display: inline;">3, 0, and 2</span>`,
             ],
             answer: "A",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  k mod 9: 5\(\\rightarrow\)5, 28\(\\rightarrow\)1, 19\(\\rightarrow\)1, 15\(\\rightarrow\)6, 20\(\\rightarrow\)2, 33\(\\rightarrow\)6, 12\(\\rightarrow\)3, 17\(\\rightarrow\)8, 10\(\\rightarrow\)1.<br>
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  k mod 9: 5\\(\\rightarrow\\)5, 28\\(\\rightarrow\\)1, 19\\(\\rightarrow\\)1, 15\\(\\rightarrow\\)6, 20\\(\\rightarrow\\)2, 33\\(\\rightarrow\\)6, 12\\(\\rightarrow\\)3, 17\\(\\rightarrow\\)8, 10\\(\\rightarrow\\)1.<br>
 Chain lengths: slot 1 = 3, slot 6 = 2, slots 2, 3, 5, 8 = 1, slots 0, 4, 7 = 0.<br><br>
 Max 3, min 0, average 9/9 = 1<br><br>
 <b>Answer: 3, 0, and 1</b><br><br><a href="https://gateoverflow.in/1918/gate2014-1-40#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2014-set-1" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2014 SET-1</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
@@ -68044,7 +68044,7 @@ function and linear probing will result in the hash table shown above?</span>`,
 - 52 (home 2) reached 5, so 42, 23, 34 must come before it.<br>
 - 33 (home 3) reached 7, so it must be last.<br><br>
 Order 42, 23, 34 freely with 52 after them: 3! = 6 ways. Insert 46 anywhere among these 5 positions: 5 ways.<br><br>
-6 \(\\times\) 5 = 30<br><br>
+6 \\(\\times\\) 5 = 30<br><br>
 <b>Answer: 30</b><br><br><a href="https://gateoverflow.in/43327/gate2010-53#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
         {
@@ -68064,9 +68064,9 @@ could have been inserted in the table?</span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Try 46, 34, 42, 23, 52, 33:<br>
-- 46 \(\\rightarrow\) 6, 34 \(\\rightarrow\) 4, 42 \(\\rightarrow\) 2, 23 \(\\rightarrow\) 3<br>
-- 52: 2, 3, 4 taken \(\\rightarrow\) 5<br>
-- 33: 3, 4, 5, 6 taken \(\\rightarrow\) 7<br><br>
+- 46 \\(\\rightarrow\\) 6, 34 \\(\\rightarrow\\) 4, 42 \\(\\rightarrow\\) 2, 23 \\(\\rightarrow\\) 3<br>
+- 52: 2, 3, 4 taken \\(\\rightarrow\\) 5<br>
+- 33: 3, 4, 5, 6 taken \\(\\rightarrow\\) 7<br><br>
 This matches the table. (In the others, 52 or 33 lands in the wrong slot.)<br><br>
 <b>Answer: 46, 34, 42, 23, 52, 33</b><br><br><a href="https://gateoverflow.in/2360/gate2010-52#a_list" target="_blank" style="text-decoration: none; color: #2e7bc5; font-size: 15px;">Click here for detail solution by gateoverflow</a><div class="year_sub_chap_link" style="margin-top:5px; font-size:14px;"><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/gate-cse-2010" style="color:#2f6d1a; text-decoration:none; margin-right:10px;" target="_blank">GATE CSE 2010</a><a class="pp-ctx-link" href="https://practicepaper.in/gate-cse/data-structure" style="color:#2f6d1a; text-decoration:none;" target="_blank">Data Structure</a></div></div>`
         },
@@ -68193,7 +68193,7 @@ iv) Each element hashes to a different value</span>`,
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A hash table with ten buckets with one slot per bucket is shown in the following figure. The symbols S1 to S7 initially entered using a hashing function with linear probing. The maximum number of comparisons needed in searching an item that is not present is<br>\(\\begin{array}{|l|l|} \\hline 0 & \\text { S7 } \\\\ \\hline 1 & \\text { S1 } \\\\ \\hline 2 & \\\\ \\hline 3 & \\text { S4 } \\\\ \\hline 4 & \\text { S2 } \\\\ \\hline 5 & \\text { } \\\\ \\hline 6 & \\text { S5 } \\\\ \\hline 7 & \\\\ \\hline 8 & \\text { S6 } \\\\ \\hline 9 & \\text { S3 } \\\\ \\hline \\end{array}\)</span>`,
+            text: `<span style="display: inline;">A hash table with ten buckets with one slot per bucket is shown in the following figure. The symbols S1 to S7 initially entered using a hashing function with linear probing. The maximum number of comparisons needed in searching an item that is not present is<br>\\(\\begin{array}{|l|l|} \\hline 0 & \\text { S7 } \\\\ \\hline 1 & \\text { S1 } \\\\ \\hline 2 & \\\\ \\hline 3 & \\text { S4 } \\\\ \\hline 4 & \\text { S2 } \\\\ \\hline 5 & \\text { } \\\\ \\hline 6 & \\text { S5 } \\\\ \\hline 7 & \\\\ \\hline 8 & \\text { S6 } \\\\ \\hline 9 & \\text { S3 } \\\\ \\hline \\end{array}\\)</span>`,
             image: "",
             options: [
                 `<span style="display: inline;">4</span>`,
