@@ -2349,7 +2349,243 @@ registerTest({
     series: "cs-gate-pyq",
     name: "TWT - Computer network-2",
     date: "july 23, 2026",
-    questions: [],
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is a connection oriented protocol i.e. it establish a dedicated communication channel between two devices before transmitting data.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>IP</p></span>`,
+                `<span style="display: inline;"><p>TCP</p></span>`,
+                `<span style="display: inline;"><p>RIP</p></span>`,
+                `<span style="display: inline;"><p>DNS</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Transmission Control Protocol (TCP) is a reliable protocol that provides error checking, flow control, and congestion control to ensure that data is transmitted correctly and efficiently. TCP is a connection-oriented protocol as it establishes a logical connection between two devices<br>before data transmission.<br>• IP, RIP, and DNS are connectionless protocols and do not establish a dedicated communication channel before transmitting data. Therefore, the correct answer is option (b).</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a router forwarding an IPv4 packet without fragmentation. Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>TTL is decreased and checksum is updated.</p></span>`,
+                `<span style="display: inline;"><p>Source IP address is modified to router's IP.</p></span>`,
+                `<span style="display: inline;"><p>Protocol field is updated based on next hop.</p></span>`,
+                `<span style="display: inline;"><p>Header checksum remains unchanged.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Every router decrements the TTL by 1 to limit packet lifetime. Since the header changes, the checksum must be recomputed. So, option (a) is correct.<br>• The source IP is assigned by the sender and remains unchanged throughout the path. Routers only forward packets, not modify source identity. So, option (b) is incorrect.<br>• The Protocol field indicates the upper-layer protocol (like TCP/UDP). It is not related to routing decisions and remains unchanged. So, option (c) is incorrect.<br>• Because TTL is modified at every router, the checksum becomes invalid. Hence, it must be recalculated before forwarding. So, option (d) is incorrect</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a IP address 201.24.58.69 in classful address, if the number of 1's in directed broadcast address is a and number of 1's in network ID, of the given IP address is b, value of a + b ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 28,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>IP address 201.24.58.69 belongs to class C network<br>Network ID = 201.24.58.0<br>= 11001001.00011000.00111010.00000000<br>Number of 1's = 10 = a<br>Directed broadcast address DBA = 201.24.58.255<br>= 11001001.00011000.00111010.11111111<br>Number of 1's = 18 = b<br>a + b = 10 + 18 = 28</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In class C network, if subnet mask is 255.255.255.244. How many number of host in each subnet?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>32</p></span>`,
+                `<span style="display: inline;"><p>8</p></span>`,
+                `<span style="display: inline;"><p>30</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip0-1785820187272.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>In Distance Vector routing, a router may select a non-optimal route temporarily after a topology change because routing information is obtained only from neighboring routers and convergence may take time.</p></span>`,
+                `<span style="display: inline;"><p>In Link State routing, routers exchange their entire routing tables periodically with neighbors, and each router directly applies Bellman-Ford algorithm on received information.</p></span>`,
+                `<span style="display: inline;"><p>In Distance Vector routing, every router maintains the complete topology database of the network and independently calculates shortest paths.</p></span>`,
+                `<span style="display: inline;"><p>OSPF reduces routing overhead by avoiding topology information exchange and calculating routes only from the next-hop information received from neighbors.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Distance Vector routing protocols use the Bellman-Ford algorithm to compute the best path. Each router maintains the distance and next-hop information for different destinations and updates its routing table based on information received from neighboring routers. Since routers have only partial knowledge of the network, convergence may take time after topology changes. So, option (a) is correct.<br>• Link State routing protocols do not exchange complete routing tables periodically. Instead, routers exchange Link State Advertisements (LSAs) to build a complete topology database of the network. The shortest path is then calculated using Dijkstra's algorithm, not Bellman- Ford. So, option (b) is incorrect.<br>• Distance Vector routing does not maintain complete information about the network topology. It only maintains the distance and next-hop information received from neighboring routers. Complete topology information is maintained by Link State routing protocols. So, option (c) is incorrect.<br>• OSPF is an intra-domain routing protocol (IGP) based on the Link State routing algorithm. It uses Dijkstra's shortest path algorithm for route computation and does not use the Distance Vector approach. So, option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct about the OSPF routing protocol?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>OSPF ensures that all routers in an area compute identical shortest path trees.</p></span>`,
+                `<span style="display: inline;"><p>OSPF uses sequence numbers and aging to prevent routing loops due to stale information.</p></span>`,
+                `<span style="display: inline;"><p>OSPF guarantees loop-free routing even during transient states before convergence.</p></span>`,
+                `<span style="display: inline;"><p>OSPF restricts LSA flooding to within an area, except for summary LSAs.</p></span>`,
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Routers in an area have identical LSDBs, but each computes its own shortest path tree with itself as root. Hence, trees are not identical. So, option (a) is incorrect.<br>• Sequence numbers and aging ensure newer LSAs replace stale ones. This prevents inconsistencies and helps avoid routing loops. So, option (b) is correct.<br>• OSPF guarantees loop-free routing only after convergence. Temporary loops may occur during transient states. So, option (c) is incorrect.<br>• LSAs are flooded within an area, while summary LSAs are used for inter-area communication. This supports hierarchical routing. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Segments are transmitted from client TCP to server TCP. Calculate w values of acknowledgments transmitted by server TCP to client TCP?</p>
+<p><img src="images/pw_topicwise_test_18/mceclip1-1785820497020.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1000,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The server is using Cumulative Acknowledgments, meaning it only acknowledges the next expected byte in a continuous sequence. Because the segment 600 - 799 was initially lost, the server sent duplicate Ack 600 messages for all subsequent out-of-order segments (800 - 899 and 900 - 999).<br>Once the missing segment 600 - 799 is successfully retransmitted, the server has a continuous data block up to byte 999. Therefore, the value of w is 1000, representing the next byte the server expects to receive.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A TCP sender transmits data continuously over a connection. TCP uses a 32-bit byte-oriented sequence number field. The sender starts transmission with an initial sequence number of<br>\( 2^{31} \) + 1000.<br>The network may retain an old TCP segment for a maximum duration of 120 seconds (MSL). To avoid sequence number ambiguity, the sender must ensure that the sequence number space does not wrap around during this interval.<br>If the sender utilizes only 75% of the available link capacity, what is the maximum physical link capacity (in Mbps) that can be supported? ________ (Assume 1 Mbps = 106 bits/s). [Round the answer to the nearest integer]</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 372,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip2-1785820586983.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are true about the Transmission Control Protocol (TCP)?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>It supports elastic applications by adapting the data transfer rate based on network conditions.</p></span>`,
+                `<span style="display: inline;"><p>It supports broadcasting to multiple receivers simultaneously.</p></span>`,
+                `<span style="display: inline;"><p>It is a connectionless protocol.</p></span>`,
+                `<span style="display: inline;"><p>It supports full-duplex communication between sender and receiver.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• TCP uses congestion control and flow control to adjust the sending rate based on network conditions. This enables applications like web browsing and file transfer to behave as elasticb applications. So, option (a) is correct<br>• TCP is a point-to-point protocol and establishes a connection between exactly two endpoints. It does not support broadcasting or multicasting. So, option (b) is incorrect<br>• TCP is a connection-oriented protocol that requires a connection setup using a 3-way handshakeb before data transmission begins. So, option (c) is incorrect<br>• TCP supports full-duplex communication, allowing both sender and receiver to transmit data simultaneously over the same connection. So, option (d) is correct</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>An ISP has the following chunk of CIDR based IP addresses available : 121.27.128.0/20. The ISP has allocated half of this chunk of address to organization of type A and is left with half of the chunk to allocate to other organizations of type B. If each organization of type B requires 32 addresses, then the number of organizations that can be served by the ISP is equal to [apart<br>from A] ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 64,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip3-1785820734856.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a network with IP address 202.19.68.0/24. We wish to divide this network into subnets consisting of 10 hosts each. Then the network ID and the Directed Broadcast Address (DBA) of the first and the last subnet respectively is equal to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>202.19.64.0/24, 202.19.64.255/24</p></span>`,
+                `<span style="display: inline;"><p>202.19.68.0/26, 202.19.68.192/26</p></span>`,
+                `<span style="display: inline;"><p>202.19.68.0/28, 202.19.68.192/28</p></span>`,
+                `<span style="display: inline;"><p>202.19.68.0/28, 202.19.68.255/28</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip4-1785820818444.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider an IP packet with a length of 4500 bytes that includes 20 byte IPv4 header and 40 bytes TCP header. The packet is forwarded to an IPv4 router that supports a MTU of 600 bytes. Assume that the length of IP header in all the outgoing fragments of this packet is 20 bytes. Assume that the fragmentation offset stored in first fragment is 0.<br>The fragmentation offset stored in third fragment is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 144,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip5-1785821456459.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the below diagram source S is connected to destination D via the mediating router R. How<br>many times transport TCP headers are attached and removed?</p>
+<p><img src="images/pw_topicwise_test_18/mceclip6-1785821530782.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2, 2</p></span>`,
+                `<span style="display: inline;"><p>1, 1</p></span>`,
+                `<span style="display: inline;"><p>3, 3</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><strong>At Source (S)</strong><br>• Application data is passed to TCP, where a TCP header is added to form a segment. Hence,<br>TCP header is attached once.<br><strong>At Router (R)</strong><br>• Router processes only the IP header and treats TCP segment as payload. Hence, no TCP<br>header is added or removed.<br><strong>At Destination (D)</strong><br>• TCP receives the segment and removes the TCP header before delivering data. Hence, TCP header is removed once.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Assume that the TCP Round Trip Time (RTT) is currently 35 msec and the following ACK's come in after 36, 40, 25 ms respectively. What is the new estimate RTT (ms) (\( \alpha \) = 0.75) ________. (Up to 2 decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "33 to 34",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given,<br>Initial ERTT = 35 ms<br>\( \alpha \) = 0.75 => 1 - \( \alpha \) = 0.75<br>New RTT values: 36 ms, 40 ms, 25 ms<br>We use RTT estimation<br>ERTT = \( \alpha \) \( \cdot \) ERTT<sub>initial</sub> + (1 - \( \alpha \)) \( \cdot \) RTT<sub>new</sub><br>ERTT1 = 0.75 &times; 35 + 0.25 &times; 36<br>= 26.25 + 9 = 35.25<br>ERTT2 = 0.75 &times; 35.25 + 0.25 &times; 40<br>= 26.4375 + 10 = 36.4375<br>ERTT3 = 0.75 &times; 36.4375 + 0.25 &times; 25<br>= 27.328125 + 6.25 = 33.578125</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a routing table of an organization's router shown below</p>
+<p style="padding-left: 40px; text-align: left;"><img src="images/pw_topicwise_test_18/mceclip7-1785821695711.png"></p>
+<p>Which of the following prefixes in CIDR notation can be collectively used to correctly aggregate all of the subnets in the routing table?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>10.40.64.0/21</p></span>`,
+                `<span style="display: inline;"><p>10.40.72.0/21</p></span>`,
+                `<span style="display: inline;"><p>10.40.64.0/20</p></span>`,
+                `<span style="display: inline;"><p>10.40.68.0/22</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><strong>Subnet 1: </strong>10.40.64.0, Mask: 255.255.252.0 (/22)<br>Host bits in 3<sup>rd</sup> octet = 32 - 22 - 8 = 2 bits (22 = 4)<br>3rd octet range = [64, 67] => 64.0 to 67.255<br>64 = 01000000.00000000<br><strong>Subnet 2:</strong> 10.40.68.0, Mask: 255.255.254.0 (/23)<br>Host bits in 3<sup>rd</sup> octet = 32 - 23 - 8 = 1 bit (21 = 2)<br>3<sup>rd</sup> octet range = [68, 69] => 68.0 to 69.255<br>68.0 = 01000100.00000000<br><strong>Subnet 3:</strong> 10.40.70.0, Mask: 255.255.254.0 (/23)<br>Host bits in 3<sup>rd</sup> octet = 32 - 23 - 8 = 1 bit (21 = 2)<br>3<sup>rd</sup> octet range = [70, 71] => 70.0 to 71.255<br>70.0 = 01000110.00000000<br><strong>Subnet 4: </strong>10.40.72.0, Mask: 255.255.248.0 (/21)<br>Host bits in 3<sup>rd</sup> octet = 32 - 21 - 8 = 3 bits (23 = 8)<br>3<sup>rd</sup> octet range = [72, 79] => 72.0 to 79.255<br>72.0 = 01001000.00000000</p>
+<p><strong>Aggregation Analysis:</strong><br>64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0 | 72.0 ... 79.0<br>Total required 3<sup>rd</sup> octet range to cover all subnets = [64, 79] (Total 16 contiguous blocks: 64 to 79).<br><strong>Group 1:</strong> [64, 71] (Size = 8)<br>Multiples of 8 => 8 &times; 256 &times; 2<sup>11</sup> &times; 2<sup>32</sup> - 21<br>0, 8, 16, ..., 56, [64], 72, 80, ...<br>Prefix = 10.40.64.0/21<br><strong>Group 2: </strong>[72, 79] (Size = 8)<br>Multiples of 8 => 8 &times; 256 => 2<sup>11</sup> => 2<sup>32</sup> - 21<br>0, 8, 16, ..., 64, [72], 80, 88, ...<br>Prefix = 10.40.72.0/21<br>Together, 10.40.64.0/21 and 10.40.72.0</p>
+<p>So, options (a) and (b) are correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the TCP 3 way handshake used for connection establishment between a client and a server. Let the client's Initial Sequence Number (ISN) be x and the server's ISN be y. Let P<sub>1</sub>, P<sub>2 </sub>and P<sub>3</sub> be the first, second, and third packets of the handshake, respectively.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>In P<sub>2</sub>, the Acknowledgment Number (ACK) is x + 1.</p></span>`,
+                `<span style="display: inline;"><p>In P<sub>3</sub>, the Acknowledgment Number (ACK) is y + 1.</p></span>`,
+                `<span style="display: inline;"><p>In P<sub>1</sub>, the Acknowledgment Number (ACK) is x + 1.</p></span>`,
+                `<span style="display: inline;"><p>In P<sub>2</sub>, the Sequence Number (Sequence) is y.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• In P<sub>2</sub> (SYN + ACK), the server acknowledges the client's SYN. Since SYN consumes one<br>sequence number, ACK = x + 1. So, option (a) is correct.<br>• In P<sub>3</sub>, the client acknowledges the server's SYN. Hence the acknowledgment number is y + 1. So, option (b) is correct.<br>• P<sub>1</sub> is the first packet, so it does not acknowledge anything. The ACK field is not valid (ACK<br>flag = 0). So, option (c) is Incorrect.<br>• In P<sub>2</sub>, the server sends its SYN using its Initial Sequence Number, so the sequence number is y. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following network with 6 routers, \( R_1 \) to \( R_6 \) connected with links having weights as shown in the following diagram:</p>
+<p><img src="images/pw_topicwise_test_18/mceclip8-1785822024918.png"></p>
+<p>All the routers use the distance vector based routing algorithm to update their routing tables. Each router starts with its routing table initialized to contain an entry for each neighbour with the weight of the respective connecting link. After all the routing tables stabilize, The number of links are there in the network which if goes down, don't led to count-to-infinity problem ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_topicwise_test_18/mceclip9-1785822049726.png"></p></div>`
+        },
+    ],
 });
 
 registerTest({
@@ -11882,5 +12118,7918 @@ registerTest({
             solution: "<img src='images/swt-database/mceclip47-1782729415544.png' alt='Detailed Solution'>"
         }
     ],
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 01 - Full Syllabus Test - 1 (Basic Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The taxi charges in a city comprise of a fixed charge, together with the charge of distance covered. For a journey of 16 km, the charges paid are Rs. 156 and for a journey of 24 km, the charges paid are Rs. 204. What will a person have to pay for travelling a distance of 30 km?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Rs. 236</p></span>`,
+                `<span style="display: inline;"><p>Rs. 240</p></span>`,
+                `<span style="display: inline;"><p>Rs. 248</p></span>`,
+                `<span style="display: inline;"><p>Rs. 252</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784377943630.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The sum of four numbers is 64. If 3 is added to the first number, 3 is subtracted from the second number, the third is multiplied by 3 and the fourth is divided by 3, then all the results are equal.<br>What is the difference between the largest and the smallest of the original numbers?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>21</p></span>`,
+                `<span style="display: inline;"><p>27</p></span>`,
+                `<span style="display: inline;"><p>cannot be determined</p></span>`,
+                `<span style="display: inline;"><p>32</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784377981471.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>P and Q walk along a circular track. They start at 5:00 A.M. from the same point in opposite directions. P walks at an average speed of 5 rounds per hour and Q walks at an average speed of 3 rounds per hour. How many times will they cross each other between 5:20 A.M. and 7:00 A.M.?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>12</p></span>`,
+                `<span style="display: inline;"><p>13</p></span>`,
+                `<span style="display: inline;"><p>14</p></span>`,
+                `<span style="display: inline;"><p>15</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378016907.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A can go round a circular path 8 times in 40 minutes. If the diameter of the circle is increased to 10 times the original diameter, then the time required by A to go round the new path once, travelling at the same speed as before is ________ minutes.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 50,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378050729.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Total number of six digit numbers that can be formed having the property that every succeeding digit is greater than the preceding digit is equal to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip4-1783341906681.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip5-1783341915948.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip6-1783341921778.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip7-1783341927165.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378097904.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The length of longest pole that can be placed on the floor of a room is 12 m and the length of longest pole that can be placed in the room is 15 m. The height of the room is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>12 m</p></span>`,
+                `<span style="display: inline;"><p>15 m</p></span>`,
+                `<span style="display: inline;"><p>9 m</p></span>`,
+                `<span style="display: inline;"><p>21 m</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378135058.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Select the related word from the given alternatives.<br>Finicky: Unfastidious : : Intimidate : ?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Frighten</p></span>`,
+                `<span style="display: inline;"><p>Discourage</p></span>`,
+                `<span style="display: inline;"><p>Threaten</p></span>`,
+                `<span style="display: inline;"><p>Console</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Finicky means extremely picky, or hard to please whereas Unfastidious means not meticulous,<br>careless, or easy to please. Thus,<br>'Finicky' and 'unfastidious' are antonyms.<br>Similarly, the antonym of 'Intimidate' (to frighten, threaten) is 'console' (to comfort, soothe).<br>Hence, 'console' is the correct answer.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>We have two rectangular sheets of paper, M and N, of dimensions 6 cm &times; 1 cm each. Sheet M is rolled to form an open cylinder by bringing the short edges of the sheet together. Sheet N is cut into equal square patches and assembled to form the largest possible closed cube. Assuming the ends of the cylinder are closed by placing extra circular lids at the top and the bottom, then the ratio of the surface area (internal and external both) of the cube to that of the cylinder is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip10-1783342057757.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip11-1783342062502.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip12-1783342067123.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip13-1783342072049.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378237006.png"></p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip1-1784378245899.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In an exam having a total of 10 questions, there are 4 topics from which questions have been picked up. The topics are: Network, EDC, Analog and Signals. There is at least one question from each topic and no two topics have same number of questions. Number of questions from EDC is more than the number of questions from Analog but it does not have the maximum number of questions. There are more questions from Network in comparison to Signals. What is the number of questions from Network?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip0-1784378310627.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Examine the following statements:<br>1. Sourabh scored more than Neetu.<br>2. Neetu scored less than Rakhi.<br>3. Rakhi scored more than Sourabh.<br>4. Renu scored more than Sourabh but less than Rakhi.<br>Which of the following options is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Rakhi scored highest</p></span>`,
+                `<span style="display: inline;"><p>Renu scored lowest</p></span>`,
+                `<span style="display: inline;"><p>Sourabh scored highest</p></span>`,
+                `<span style="display: inline;"><p>Neetu scored lowest</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>I : Sourabh &gt; Neetu<br>II : Rakhi &gt; Neetu<br>III : Rakhi &gt; Sourabh<br>IV : Rakhi &gt; Renu &gt; Sourabh<br>From the above relations, we get Rakhi &gt; Renu &gt; Sourabh &gt; Neetu<br>Thus, Rakhi scored the highest and Neetu scored the lowest.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following sum of products expression:<br><img src="images/pw_full_syllabus_test_1/mceclip0-1783590292740.png"><br>The equivalent product of sum expression F is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip1-1783590314129.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip2-1783590321997.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip3-1783590327732.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip4-1783590334679.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip5-1783590343369.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following are not true?<br>I. Only gateway can be used to connect different protocol networks.<br>II. Gateway occurs at all layers.<br>III. Bridge and switch some times occur in network layer also.<br>IV. Repeater occurs at both physical layer and data link layer.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only I and IV</p></span>`,
+                `<span style="display: inline;"><p>Only II, III and IV</p></span>`,
+                `<span style="display: inline;"><p>Only III and IV</p></span>`,
+                `<span style="display: inline;"><p>Only I, II and III</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• A gate way is a computer, so it might have the capacity to do anything doable to network bits/pieces.<br>• Only sometime switches have routing capability but bridge never have routing capability.<br>• Repeater occurs only at physical layer.<br>• Only gateway can connect different protocol networks.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider an arbitrary set of CPU-bound processes with unequal CPU burst lengths submitted at the same time to a computer system. A non-preemptive priority scheduling algorithm assigns priorities proportional to the CPU burst lengths of the processes. The process with the highest priority is selected for execution first.<br>Which one of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The average turnaround time is minimized.</p></span>`,
+                `<span style="display: inline;"><p>The average waiting time is maximized.</p></span>`,
+                `<span style="display: inline;"><p>The average waiting time is minimized.</p></span>`,
+                `<span style="display: inline;"><p>The scheduling policy is equivalent to Round-Robin scheduling.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip6-1783590450939.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip7-1783590488840.png"></p>
+<p>Which of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only statement I is correct.</p></span>`,
+                `<span style="display: inline;"><p>Only statement II is correct.</p></span>`,
+                `<span style="display: inline;"><p>Both statements I and II are correct.</p></span>`,
+                `<span style="display: inline;"><p>Neither statement I nor II is correct.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip8-1783590526054.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following code:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip9-1783590558136.png"></p>
+<p>What is the time complexity of function fun( )?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(<em>n</em><sup>2 </sup>log<em> n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(<em>n </em>log <em>n</em>)<sup>2</sup></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip10-1783590610517.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip11-1783590617581.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?<br>S<sub>1</sub> : BFS take \( O \)(V + E) time in a graph G(V, E) if graph is represent with an adjacent list.<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>S<sub>1</sub> : Time complexity of BFS using adjacent list \( O \)(V + E).<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the relation <em>R(A, B, C, D)</em>. Which of the following relational algebra expression returns the lowest value of <em>A</em>? (<em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> are just rename of <em>R</em>)</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip12-1783590851033.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip13-1783590856817.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip14-1783590862134.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip15-1783590882365.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Convert the following ER diagram into minimum possible relations (tables):</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip16-1783590907049.png"></p>
+<p>What is the sum of the number of attributes in each of the relations obtained from above conversion?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>7</p></span>`,
+                `<span style="display: inline;"><p>8</p></span>`,
+                `<span style="display: inline;"><p>9</p></span>`,
+                `<span style="display: inline;"><p>10</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip17-1783590935854.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Match <strong>List-I</strong> with <strong>List-II</strong> and select the correct answer using the codes given below the lists:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip18-1783590974479.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Preprocessor -> Substitution of macros<br>Compiler -> Before execution/during compilation<br>Assembler -> Translation of assembly code to machine dependent code</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br><img src="images/pw_full_syllabus_test_1/mceclip19-1783591064152.png"><br>Which of the above languages are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only L<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only L<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both L<sub>1 </sub>and L<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither L<sub>1</sub> nor L<sub>2</sub></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip20-1783591115419.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider &lt;<em>M</em>&gt; be the encoding of a Turing Machine as a string over alphabet \( \Sigma \) = {0, 1}. Consider <em>L </em>= {&lt;<em>M</em>&gt; | <em>M </em>is TM that halt on all input and <em>L(M)</em> = <em>L</em>&prime; for some undecidable <em>L</em>&prime;}. Then <em>L</em> is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Decidable and recursive.</p></span>`,
+                `<span style="display: inline;"><p>Decidable and non-recursive.</p></span>`,
+                `<span style="display: inline;"><p>Undecidable and recursively enumerable.</p></span>`,
+                `<span style="display: inline;"><p>Undecidable and non-recursively enumerable.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip21-1783591270589.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider an array containing '<em>n</em>' elements. The elements present in an array are in arithmetic progression, but one element is missing in that order. What is time complexity to find the position of the missing element using divide and conquer?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(<em>n</em><sup>2</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(log <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(<em>n </em>log <em>n</em>)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip22-1783591333884.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let <em>A </em>be the adjacency matrix of a simple undirected graph <em>G </em>with <em>n</em> vertices (<em>n</em> \( \ge \) 3). Suppose <em>A</em>2 = <em>A</em>. Which one of the following statements is always correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>G </em>is a complete graph <em>K<sub>n</sub></em>.</p></span>`,
+                `<span style="display: inline;"><p><em>G </em>is a null graph</p></span>`,
+                `<span style="display: inline;"><p><em>G </em>contains at least one cycle.</p></span>`,
+                `<span style="display: inline;"><p>There is no such simple graph <em>G</em>.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip23-1783591418236.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The MAC sublayer is responsible for the operation of the CSMA/CD access method.</p></span>`,
+                `<span style="display: inline;"><p>Each station on an ethernet network has a unique 32 bit address imprinted on its Network Interface Card (NIC).</p></span>`,
+                `<span style="display: inline;"><p>Bridges have access to station addresses and can forward or filter a packet in a network.</p></span>`,
+                `<span style="display: inline;"><p>Router determine the path a packet should take. A three layer switch is a sophisticated router.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Option (b) is false, 48 bit address is used in NIC.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements (or) expressions is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>int * (*p) (char (*a) [ ] );</p></span>`,
+                `<span style="display: inline;"><p>int * (*p) (* char (*a) [ ] ));</p></span>`,
+                `<span style="display: inline;"><p>malloc( ) always by default returns void pointer when memory is allocated</p></span>`,
+                `<span style="display: inline;"><p>type casting is not required when memory allocated by using malloc( )</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a) p is a pointer to a function that takes and argument as pointer to a character array and returns a pointer to an integer.<br>(c) malloc( ) always by default returns integer pointer when memory is allocated.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a binary heap with n distinct element such that the fourth largest element in right child of root.<br>What will be the maximum value of <em>n</em>?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 12,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip24-1783591547767.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a language <em>L </em>on \( \Sigma \) = {0, 1}. L is the set of all string in which every substring of 3 symbol<br>has atmost two 1's. The number of states in the minimal DFA is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip25-1783591580757.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A system has a 24-bit physical address space. It uses a 4-way set associative data cache of size 64 KB with a block size of 8 bytes. What is the total size of the tags in the cache directory ________ (K bits).</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 80,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip26-1783591608208.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>An instruction set architecture uses a fixed length of 24 bits per instruction. It supports 24 distinct operations and contains 32 general-purpose registers. Each instruction specifies an operation, a register field, and an immediate field. The immediate field stores an unsigned integer.<br>What is the maximum value that can be represented in the immediate field?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 16383,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip27-1783591635747.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following code segment:<br><img src="images/pw_full_syllabus_test_1/mceclip28-1783591671164.png"></p>
+<p>Assume initial value of <em>a </em>= 0 and <em>b</em> = 20 and semaphore <em>s </em>= 1, P( ) and V( ) are usual semaphore up and down operation <em>a </em>and <em>b </em>are shared variable. The number of distinct values that a can possibly take after concurrently executing the above code segment is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip29-1783591713945.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip30-1783591750840.png"></p>
+<p>The number of tokens in the above C program is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 30,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>30</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Given are 2 sequence <em>X </em>and <em>Y </em>respectively as <em>X </em>= "ABCDEGH" and <em>Y </em>= "ADEFHR". The length of the longest common sequence present in both <em>X </em>and <em>Y </em>will be ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip31-1783591825028.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the below logic Circuit X and Circuit A, Circuit B and Circuit C.</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip32-1783591924049.png"></p>
+<p>From the above Circuit A, B and C the number of circuits provide similar output as Circuit X is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Only circuit A is similar to Circuit X.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A demand paging system has a 36 bit logical address space and a 30 bit physical address space. The page size is 8 KB, and the memory is byte-addressable. Each page table entry contains the frame number along with 2 valid bits, 1 dirty bit, 1 reference bit, and 3 protection bits. What is the minimum size of the page table for a process (in MB)?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 24,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip33-1783591973329.png"></p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip34-1783591980655.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A processor has a base CPI of 1.6 cycles. The instruction cache miss rate is 10% and the data cache miss rate is 4%. On average, 25% of instructions are load/store instructions, and each load/store instruction performs one data memory access. The miss penalty is 20 cycles. Find the total CPI ________?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3.8,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip35-1783592008985.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The routing table for router R1 is shown below:<br><img src="images/pw_full_syllabus_test_1/mceclip36-1783596047958.png"></p>
+<p>On which interface will the router forward packets addressed to destinations 180.70.65.140 and 201.4.22.35 respectively?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip37-1783596078450.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip38-1783596083582.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip39-1783596089755.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip40-1783596094245.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>The first mask (/26) is applied to the destination address. The result is 180.70.65.128, which does not match the corresponding network address.<br>The second mask (/25) is applied to the destination address. The result is 180.70.65.128, which matches the corresponding network address. The next-hop address (the destination address of the packet in this case) and the interface number <em>m</em><sub>0</sub> are passed to ARP.</li>
+<li>The first mask (/26) is applied to the destination address. The result is 201.4.22.0, which does not match the corresponding network address (row 1).<br>The second mask (/25) is applied to the destination address. The result is 201.4.22.0, which does not match the corresponding network address (row 2).<br>The third mask (/24) is applied to the destination address. The result is 201.4.22.0, which matches the corresponding network address. The destination address of the packet and the interface number <em>m</em><sub>3</sub> are passed to ARP.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following 0/1 Knapsack problem with capacity <em>W </em>= 10.</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip41-1783596182589.png"></p>
+<p>Which of the following item is not selected in the optimal solution of the 0/1 Knapsack problem?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip42-1783596199888.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip43-1783596205154.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip44-1783596212662.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip45-1783596226857.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following languages:<br><img src="images/pw_full_syllabus_test_1/mceclip46-1783596252793.png"><br>Which of the following languages are Context Free Languages?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only L<sub>1</sub> and L<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only L<sub>2</sub> and L<sub>4</sub></p></span>`,
+                `<span style="display: inline;"><p>Only L<sub>1</sub> and L<sub>4</sub></p></span>`,
+                `<span style="display: inline;"><p>Only L<sub>2</sub> and L<sub>3</sub></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip47-1783596323312.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let <em>q </em>be a queue and <em>s </em>be a stack. Assume that <em>q </em>and <em>s </em>are initially empty.</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip48-1783596369969.png"></p>
+<p>The second last integer value printed by the above code and sum of stack value.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>9, 16</p></span>`,
+                `<span style="display: inline;"><p>10, 16</p></span>`,
+                `<span style="display: inline;"><p>2, 16</p></span>`,
+                `<span style="display: inline;"><p>2, 10</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip49-1783596398493.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is a tautology?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip50-1783596506647.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip51-1783596512368.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip52-1783596520808.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip53-1783596543283.png"></p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip54-1783596548360.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip55-1783596577502.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>30/121</p></span>`,
+                `<span style="display: inline;"><p>31/121</p></span>`,
+                `<span style="display: inline;"><p>62/121</p></span>`,
+                `<span style="display: inline;"><p>64/121</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip56-1783596606156.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following problems are decidable?</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip57-1783596635867.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1, 2, 3, 4</p></span>`,
+                `<span style="display: inline;"><p>1, 2, 4</p></span>`,
+                `<span style="display: inline;"><p>2, 3, 4</p></span>`,
+                `<span style="display: inline;"><p>3, 4</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• DCFL is closed under complement (trivially decidable). So P<sub>1</sub> is true.<br>• CSL is closed under complement (trivially decidable). So P<sub>2</sub> is true.<br>• REL is not closed under complement (Undecidable). So P<sub>3</sub> is false.<br>• REC is closed under complement (trivially decidable). So P<sub>4</sub> is true.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider 6 memory partition each of size 280 KB, 450 KB, 700 KB, 350 KB, 400 KB. 650 KB where KB refers to kilobyte. These partition need to be allocated to four processes of size 250 KB, 460 KB, 25 KB, 700 KB.<br>Consider the following statements with respect to the above scenario.<br>S<sub>1</sub> : If first fit policy is used, no process will remain unallocated.<br>S<sub>2</sub> : If best fit policy is used, no process will remain unallocated.<br>Which of the above statement is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1 </sub>and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> and S<sub>2</sub></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip58-1783596817895.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip59-1783596849365.png"></p>
+<p>Which of the following ordering of time stamps is allowed to execute the schedule using basic time stamp protocol?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>) = (100, 200, 300)</p></span>`,
+                `<span style="display: inline;"><p>(T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>) = (100, 300, 200)</p></span>`,
+                `<span style="display: inline;"><p>(T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>) = (300, 200, 100)</p></span>`,
+                `<span style="display: inline;"><p>(T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub>) = (200, 300, 100)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip60-1783597182468.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a schema <em>R(A, B, C, D, E, F) </em>and functional dependencies:<br><em>A -> BC, B -> D, CD -> E, E -> F</em><br>The decomposition of <em>R</em> into <em>R</em><sub>1</sub>(<em>ABC</em>), <em>R</em><sub>2</sub>(<em>BDE</em>) and <em>R</em><sub>3</sub>(<em>EF</em>) is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Lossless join and dependency preserving.</p></span>`,
+                `<span style="display: inline;"><p>Lossless join but not dependency preserving.</p></span>`,
+                `<span style="display: inline;"><p>Lossy join and dependency preserving.</p></span>`,
+                `<span style="display: inline;"><p>Lossy joint but not dependency preserving.</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip61-1783597297296.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following C program segment:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip62-1783597326184.png"></p>
+<p>The value returned by the function DoSomething when a pointer to the root of a non-empty tree is passed as argument is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The number of leaf nodes in the tree</p></span>`,
+                `<span style="display: inline;"><p>The number of nodes in the tree</p></span>`,
+                `<span style="display: inline;"><p>The number of internal nodes in the tree</p></span>`,
+                `<span style="display: inline;"><p>The height of the tree</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip63-1783597405590.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following graph:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip64-1783597429690.png"></p>
+<p>Which one of the following represents the sequence of edges added in order to make a minimum spanning tree using Prim's algorithm?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>(e, c), ( f, c), (b, f ), (b, d), (b, a)</em></p></span>`,
+                `<span style="display: inline;"><p><em>(a, b), (b, d), (b, e), (e, c), (b, f)</em></p></span>`,
+                `<span style="display: inline;"><p><em>(c, e), (e, f ), ( f, b), (b, d), (a, c)</em></p></span>`,
+                `<span style="display: inline;"><p><em>(c, e), (e, b), (b, a), (b, d), (b, f)</em></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Prim's algorithm always gives connected whenever a spanning tree is constructed.<br><em>(c, e), (e, b), (b, a), (b, d), (b, f).</em></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:</p>
+<p>Which of the above statement is/are false.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A top-down parser traces a rightmost derivation in reverse order.</p></span>`,
+                `<span style="display: inline;"><p>If RR conflict is present in LALR(1) parser then RR conflict is also present in LR(1) parser for same CFG.</p></span>`,
+                `<span style="display: inline;"><p>SR conflict in LR(0) and SLR(1) will always equal to some context free grammar.</p></span>`,
+                `<span style="display: inline;"><p>For any bottom-up parsed grammar, the set of viable prefixes is a regular language.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip65-1783597557433.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a system where an instruction is stored at location 500 with its address field at location 501. The address field has the value 400. A processor register <em>R</em><sub>1</sub> contains the number 200. Which of the following option is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>In direct addressing mode the effective address will be 400.</p></span>`,
+                `<span style="display: inline;"><p>In index addressing mode with <em>R</em><sub>1</sub> as the index register the effective address will be 600.</p></span>`,
+                `<span style="display: inline;"><p>In register indirect addressing mode the effective address will be 902.</p></span>`,
+                `<span style="display: inline;"><p>In direct addressing mode the effective address will be 200.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip66-1783597621606.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A strictly decreasing function from <em>R</em> to itself is one-to-one. <em>R</em> is set of real number.</p></span>`,
+                `<span style="display: inline;"><p>Two functions<em> g : A -> B</em> and<em> f : B -> C</em>. It <em>f </em>o <em>g </em>is onto then <em>f </em>must also be onto.</p></span>`,
+                `<span style="display: inline;"><p>A relation <em>R </em>is irreflexive, then <em>R</em><sup>2</sup> is necessarily irreflexive, where <em>R</em><sup>2</sup> = <em>R </em>o <em>R</em>.</p></span>`,
+                `<span style="display: inline;"><p>A relation <em>R</em> is irreflexive and transitive then it is asymmetric.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip67-1783597732185.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>The output F in the given below digital circuit:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip68-1783597774410.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip69-1783597783869.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip70-1783597788524.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip71-1783597793086.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip72-1783597799017.png"></p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip73-1783597810225.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider two hosts <em>H</em><sub>1</sub> and <em>H</em><sub>2</sub> connected through an ethernet. Ethernet frames may carry data up to 1500 bytes (i.e. MTU = 1500 bytes). Host <em>H</em><sub>1</sub> sends TCP segment of size 11830 bytes (including TCP header) to host <em>H</em><sub>2</sub>. Size of IP header is 20 bytes fixed. And the IPv4 datagram is allowed to fragment.<br>Which of the following is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Total minimum 9 IP fragments will be transmitted.</p></span>`,
+                `<span style="display: inline;"><p>Total minimum size of last IP fragment is 1490 bytes.</p></span>`,
+                `<span style="display: inline;"><p>Offset value in last fragment is 1295.</p></span>`,
+                `<span style="display: inline;"><p>Value of HLEN field in IP header of last fragment is 20 rows where each row has 4 bytes.</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip74-1783597979616.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If LALR(1) has no conflict then CLR(1) never contain any conflict.</p></span>`,
+                `<span style="display: inline;"><p>If LR(0) has no conflict then SLR(1) may have conflicts.</p></span>`,
+                `<span style="display: inline;"><p>Control link in an activation record points to be the activation record of the caller.</p></span>`,
+                `<span style="display: inline;"><p>Data segment storage is always read only.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• LALR(1) is less powerful than CLR(1). So, option (a) is correct.<br>• If a grammar is LR(0), it should be SLR(1). So, option (b) is incorrect.<br>• Control link in an activation record points to be the activation record of the caller. So, option (c) is correct.<br>• Data segment storage has 2 nodes read only and read-write. So, option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a system with machine instructions of the following format:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip75-1783598085951.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip76-1783598097137.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip77-1783598102232.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip78-1783598106889.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip79-1783598112952.png"></p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip80-1783598119143.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct regarding B-tree and B<sup>+</sup> tree index structures?<br>Assume identical block size, key size, and pointer size for both trees.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>In a B<sup>+</sup> tree, the maximum number of child pointers in an internal node is greater than or equal to that in a B-tree.</p></span>`,
+                `<span style="display: inline;"><p>For a large number of records, a B<sup>+</sup> tree index has height less than or equal to that of a B-tree index.</p></span>`,
+                `<span style="display: inline;"><p>Key duplication at the leaf level in a B<sup>+</sup> tree increases its height compared to a B-tree built on the same data.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>In B-tree internal nodes, keys and data pointers are stored, reducing the number of child pointers per node. In B<sup>+</sup> tree internal nodes, only keys and child pointers are stored. Hence, B<sup>+</sup> tree has greater or equal fan-out.<br>So, option (a) is correct.</li>
+<li>B<sup>+</sup> tree has higher fan-out because internal nodes store only keys and pointers, not data. This leads to fewer levels for the same number of records. So height of B<sup>+</sup> tree is less than or equal to B-tree.<br>So, option (b) is correct.</li>
+<li>Key duplication in B<sup>+</sup> tree occurs only at leaf level and does not affect internal node capacity. Since internal nodes still have higher fan-out, tree height does not increase.<br>So, option (c) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following CPU processes with arrival time (in milliseconds) and length of CPU burst (in millisecond) as given below:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip81-1783598805114.png"></p>
+<p>If the pre-emptive shortest remaining time first scheduling algorithm is used to schedule the processes. Which of the following statement is/are correct?</p>
+<p>[<strong>Note</strong>: Do not consider at time '0' and at end as content switches]</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Average waiting of processes is 5.</p></span>`,
+                `<span style="display: inline;"><p>Response of time of process P<sub>4</sub> is 7.</p></span>`,
+                `<span style="display: inline;"><p>Number of context switch is 6</p></span>`,
+                `<span style="display: inline;"><p>Time completion of process P<sub>5</sub> is 14.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip82-1783598865158.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>When DMA is operated in cycle stealing mode, before receiving the HLDA signal, it forcefully suspend the CPU operation and transfers very important data to the main memory.</p></span>`,
+                `<span style="display: inline;"><p>When DMA is operated in burst mode after receiving the HLDA signal, bulk amount of data is transferred to main memory.</p></span>`,
+                `<span style="display: inline;"><p>When DMA is operated in block mode after receiving the HLDA signal, bulk amount of data is transferred to main memory.</p></span>`,
+                `<span style="display: inline;"><p>When DMA is operated in burst mode after receiving the HLDA signal, the data is transferred to the main memory in block wise.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip83-1783598927407.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip84-1783598954965.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip85-1783598966517.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following page reference string:<br> 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5<br>If program contains 4 page frame then find the page fault by using optimal page replacement algorithm.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip86-1783598997896.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip87-1783599020370.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: -9,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip88-1783599028231.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a hash table of length 10 using open addressing with hash function <em>h(k) = k</em> mod 10 and linear probing. Initially, table is empty. Now insert following keys into table in given order:<br> 13, 22, 6, 18, 2, 34, 12, 9, 17<br>Total number of collisions occurs or above insertions is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 11,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip89-1783599114459.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following C program:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip90-1783599140685.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip91-1783599154313.png"></p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip92-1783599159761.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following ANSI C function:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip93-1783599191204.png"></p>
+<p>Let M be a 3 &times; 2 array such that M[r] [c] = c + 1 for all valid indices r and c.<br>The value returned by GridAccumulator (M, 3, 2) is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 84,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip94-1783599206934.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Given bandwidth of link is 1 Gbps. Propagation delay is 15 millisec and frame size is 8000 bits calculate the link utilization of sender in stop and wait ARQ?<br>(Up to 3 decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 0.027,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip95-1783599244537.png"></p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip96-1783599252201.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following grammar:</p>
+<p><img src="images/pw_full_syllabus_test_1/mceclip97-1783599277271.png"></p>
+<p>Find the number of states in the LR(1) items DFA.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 16,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip98-1783599291446.png"></p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 02 - Full Syllabus Test - 2 (Basic Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip0-1784379390327.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip1-1784379404913.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip19-1783342398161.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip20-1783342403290.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip2-1784379439152.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>X and Y are two cylinders of the same height. The base of x has diameter that is half the diameter of the base of Y. If the height of X is doubled, the volume of X becomes:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Equal to the volume of Y</p></span>`,
+                `<span style="display: inline;"><p>Double the volume of Y</p></span>`,
+                `<span style="display: inline;"><p>Half the volume of Y</p></span>`,
+                `<span style="display: inline;"><p>Greater than the volume of Y</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1784379727335.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a 100 m race, A can give B a start of 10 m and C a start of 28 m. In the same race, B can give C a start of:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>15 m</p></span>`,
+                `<span style="display: inline;"><p>20 m</p></span>`,
+                `<span style="display: inline;"><p>30 m</p></span>`,
+                `<span style="display: inline;"><p>25 m</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1784379789459.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If P = +, Q = -, R = ×, and S = ÷, then select the proper notations for the blanks between the successive numbers so that the equation 60 - 15 - 3 - 20 - 4 = 20 is true:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>SPRQ</p></span>`,
+                `<span style="display: inline;"><p>QRPS</p></span>`,
+                `<span style="display: inline;"><p>QRSP</p></span>`,
+                `<span style="display: inline;"><p>SPQR</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1784379957895.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A man on the top of a rock rising on a seashore observes a boat coming towards it. If it takes 10 minutes for the angle of depression to change from 30° to 60°, how soon the boat reach the shore?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>4 minutes</p></span>`,
+                `<span style="display: inline;"><p>5 minutes</p></span>`,
+                `<span style="display: inline;"><p>6 minutes</p></span>`,
+                `<span style="display: inline;"><p>8 minutes</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1784380011590.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip1-1784380020762.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A square paper is cut into smaller pieces such that each piece is exactly a square, not necessarily of the equal size. From each such square, a circle of the largest possible area is cut out. The ratio of the area of all the possible circles to the area of the original square is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1 : 1</p></span>`,
+                `<span style="display: inline;"><p>\( \pi \) : 2</p></span>`,
+                `<span style="display: inline;"><p>\( \pi \) : 4</p></span>`,
+                `<span style="display: inline;"><p>data insufficient</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1784380057580.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The volume of the largest right circular cone in cm<sup>3</sup> that can be fitted in a cube with edge 20 cm is _____. [Round off the answer to the nearest integer]</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip0-1784380110598.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "2090 to 2097",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip1-1784380130565.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Select the correct mirror image if the mirror is placed to the right of the figure as given below:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip0-1784380162664.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I</p></span>`,
+                `<span style="display: inline;"><p>II</p></span>`,
+                `<span style="display: inline;"><p>III</p></span>`,
+                `<span style="display: inline;"><p>IV</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip1-1784380174400.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>There are multiple routes to reach from node 1 to node 2, as shown in the network.</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip0-1784380203992.png"></p>
+<p>The cost of travel on an edge between two nodes is given in rupees. Nodes '<em>a', 'b', 'c', 'd', 'e</em>', and '<em>f </em>' are toll booths. The toll price at toll booths marked '<em>a</em>' and '<em>e</em>' is Rs. 200, and is Rs. 100 for the other toll booths. Which of the following route is/are the most expensive route from node 1 to node 2?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1-<em>a-c</em>-2</p></span>`,
+                `<span style="display: inline;"><p>1-<em>f-b</em>-2</p></span>`,
+                `<span style="display: inline;"><p>1-<em>b</em>-2</p></span>`,
+                `<span style="display: inline;"><p>1-<em>f-e</em>-2</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip1-1784380276341.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>People tend to estimate the likelihood of an event's occurrence according to its salience; that is, according to how strongly and how often it comes to their attention. By placement and headlines, newspapers emphasize stories about local crime over stories about crime elsewhere and about many other major events.<br><br>It can be concluded on the basis of the statements above that, if they are true, which of the following is most probably also true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The language used in newspaper headlines about local crime is inflammatory and fails to respect the rights of suspects.</p></span>`,
+                `<span style="display: inline;"><p>The press is the news medium that focuses people attention most strongly on local crimes.</p></span>`,
+                `<span style="display: inline;"><p>Readers of local news in newspapers tend to overestimate the amount of crime in their own localities relative to the amount of crime in other places.</p></span>`,
+                `<span style="display: inline;"><p>None of the events concerning other people that are reported in newspapers is so salient in people's minds as their own personal experiences.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The newspapers' coverage of local crimes is stronger than that of non-local crimes. Nothing is said about frequency of coverage so, we can not assume anything about it. However, all else being equal, we can assume that people tend to think that the local crimes outnumber the non-local crimes.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following circuit:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip0-1783605910676.png"></p>
+<p>If the value of <em>C </em>is stuck at '0', then the output <em>Y </em>will be</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip1-1783605935313.png"></p></span>`,
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip2-1783605946278.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip3-1783605953742.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is undecidable?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip4-1783605986361.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip5-1783605991523.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip6-1783605999578.png"></p></span>`,
+                `<span style="display: inline;"><p>All of the above</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip7-1783606016031.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A recursive DNS resolver receives an authoritative response for example.com at time t = 0 with a TTL of 1800 seconds and caches the record. Client A queries the resolver at t = 600 seconds, and Client B queries the resolver at t = 1200 seconds. At t = 1500 seconds, the resolver receives a query for the same domain from Client C. If the resolver has not refreshed the record since t = 0, which of the following correctly describes the remaining TTL values returned to the three clients and the action taken for Client C?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Client A receives TTL 1200 s, Client B receives TTL 600 s, and Client C is served from the cache with TTL 300 s.</p></span>`,
+                `<span style="display: inline;"><p>Client A receives TTL 1200 s, Client B receives TTL 600 s, and Client C causes a new lookup because the cached record has expired.</p></span>`,
+                `<span style="display: inline;"><p>Client A receives TTL 1800 s, Client B receives TTL 1200 s, and Client C receives TTL 900 s because the TTL is reset whenever the record is served from the cache.</p></span>`,
+                `<span style="display: inline;"><p>Client A and Client B receive the record from the cache, but Client C also receives the original TTL of 1800 s because the TTL value stored by the resolver does not change.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1786701026151.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip9-1783606755429.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip10-1783606760278.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip11-1783606765174.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip12-1783606769880.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip13-1783606774643.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip14-1783606782217.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following preemptive CPU scheduling algorithms generally provides the maximum throughput?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Round-Robin (RR)</p></span>`,
+                `<span style="display: inline;"><p>Shortest Remaining Time First (SRTF)</p></span>`,
+                `<span style="display: inline;"><p>Longest Remaining Time First (LRTF)</p></span>`,
+                `<span style="display: inline;"><p>Preemptive Priority Scheduling</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>SRTF always executes the process with the smallest remaining CPU burst time. As a result, shorter processes complete earlier, increasing the number of processes finished in a given time interval.<br>Hence, SRTF generally provides the maximum throughput among preemptive scheduling algorithms.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>S<sub>1</sub> : Horizontal microprogramming allows multiple control signals to be activated simultaneously.<br>S<sub>2</sub> : Vertical microprogramming provides higher speed than horizontal microprogramming.<br>S<sub>3</sub> : In control unit design, control signals are represented in encoding format / decoding format / sum-of-products (SOP) format.<br>Which of the above statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>All of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Horizontal microprogramming uses wide control words where multiple control signals can be set simultaneously. This enables high degree of parallelism in micro-operations. So, S<sub>1</sub> is correct.</li>
+<li>Vertical microprogramming is slower because control signals are encoded and require decoding before execution, unlike horizontal microprogramming. So, S<sub>2</sub> is incorrect.</li>
+<li>Control signals are represented differently: hardwired control uses SOP form, while microprogrammed control uses encoded/decoded formats. So, S<sub>3</sub> is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip15-1783606941067.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>1/2</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip16-1783606960160.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following graph G:<br><img src="images/pw_full_syllabus_test_2/mceclip17-1783606983327.png"><br>Let following are graphs G<sub>1</sub> and G<sub>2</sub></p>
+<p><sub><img src="images/pw_full_syllabus_test_2/mceclip18-1783607019446.png"></sub></p>
+<p>Which of the graph is isomorphic to G?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>G<sub>1</sub> only</p></span>`,
+                `<span style="display: inline;"><p>G<sub>2</sub> only</p></span>`,
+                `<span style="display: inline;"><p>G<sub>1</sub> and G<sub>2</sub> both</p></span>`,
+                `<span style="display: inline;"><p>Neither G<sub>1</sub> nor G<sub>2</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip19-1783607087149.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the indirect addressing scheme, the second part of an instruction contains:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The operand in decimal form.</p></span>`,
+                `<span style="display: inline;"><p>The address of the location where the value of operand is stored.</p></span>`,
+                `<span style="display: inline;"><p>The address of the location where the address of the operand is stored.</p></span>`,
+                `<span style="display: inline;"><p>The operand in an encoded form.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>In the indirect addressing mode, the effective address of the operand is the contents of a register or main memory location, location whose address is given in the instruction.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a demand paging memory management system with a 40 bit logical address, a 28 bit physical address, and a page size of 8 Kbytes. Assuming that the memory is byte addressable,<br>what is the maximum number of frames in the physical memory?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2<sup>28</sup></p></span>`,
+                `<span style="display: inline;"><p>2<sup>17</sup></p></span>`,
+                `<span style="display: inline;"><p>2<sup>15</sup></p></span>`,
+                `<span style="display: inline;"><p>2<sup>24</sup></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip20-1783607178244.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following statement is correct with respect to the diagram shown below?</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip0-1783665605930.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>P<sub>1</sub> and P<sub>3</sub> are in deadlock</p></span>`,
+                `<span style="display: inline;"><p>Only P<sub>1</sub> is in deadlock</p></span>`,
+                `<span style="display: inline;"><p>Only P<sub>2 </sub>is in deadlock</p></span>`,
+                `<span style="display: inline;"><p>None of the processes are in deadlock</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The process P<sub>4</sub> may release its instance of the resource type R<sub>2</sub>, as you can see.<br>The cycle can then be broken by allocating that resource to P<sub>3</sub>.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><div>Consider the below octal to Hexadecimal code conversion in number system,</div>
+<div>(5456)<sub>8</sub> -> (<em>X</em>)<sub>16</sub></div>
+<div>Then the number <em>X </em>is</div></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>B2E</em></p></span>`,
+                `<span style="display: inline;"><p><em>BE2</em></p></span>`,
+                `<span style="display: inline;"><p><em>EB2</em></p></span>`,
+                `<span style="display: inline;"><p><em>E2B</em></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip1-1783665759612.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a client C and a server S connected over TCP. After the required data received, C send a packet with flag FIN to S. Now, server has two ways to send the response of this FIN packet, as following:<br><strong>Way1:</strong> S send ACK in response packet<br><strong>Way2:</strong> S send ACK and FIN both in response packet.<br>C was in FIN_WAIT_1 state just after sending FIN packet. The state of C just after receiving the response from server as Way1 and Way2 respectively are</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>FIN_WAIT_2 and TIME_WAIT</p></span>`,
+                `<span style="display: inline;"><p>FIN_WAIT_2 and CLOSE_WAIT</p></span>`,
+                `<span style="display: inline;"><p>TIME_WAIT and LAST_ACK</p></span>`,
+                `<span style="display: inline;"><p>CLOSE_WAIT and LAST_ACK</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip2-1783665835297.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statement:<br>S<sub>1</sub>: Any <em>n </em>node unbalanced tree can be balanced using \( O \)(log <em>n</em>) rotations.<br>S<sub>2 </sub>: Every directed acyclic graph has exactly one topological ordering.<br>Which of the above statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1 </sub>nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• The worst case unbalanced tree list and it requires (<em>n</em>) rotation. So, S<sub>1</sub> is incorrect.<br>• Some directed acyclic graph can have multiple topological ordering. So, S<sub>2</sub> is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following sorting technique was applied for an input array (10, 5, 16, 2, 8, 9) which gives array (2, 5, 10, 16, 8, 9) after three iterations?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Bubble sort</p></span>`,
+                `<span style="display: inline;"><p>Selection sort</p></span>`,
+                `<span style="display: inline;"><p>Insertion sort</p></span>`,
+                `<span style="display: inline;"><p>All of the above</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip4-1783665993514.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following LFG:<br><img src="images/pw_full_syllabus_test_2/mceclip5-1783666027524.png"><br>What is the FIRST and FOLLOW set of non terminal D?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip6-1783666043581.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip7-1783666050096.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip8-1783666055300.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip9-1783666061409.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip10-1783666068594.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a subnet of class B network which has 160.24.223.255 as broadcast address. Consider the following subnet masks:<br>M<sub>1</sub> : 255.255.208.0<br>M<sub>2</sub> : 255.255.224.0<br>M<sub>3</sub> : 255.255.240.0</p>
+<p>Which of the above subnet masks can be the subnet mask of given subnet?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only M<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only M<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only M<sub>2</sub> and M<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>Only M<sub>1</sub> and M<sub>3</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip11-1783666220821.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip12-1783666227269.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Given a directed graph, if a DFS traversal results in an edge (<em>u, v</em>) where <em>d</em>[<em>u</em>] &lt; <em>d</em>[<em>v</em>] &lt; <em>f</em>[<em>v</em>] &lt; <em>f</em>[<em>u</em>],<br>this edge (<em>u, v</em>) is classified as a:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Tree edge</p></span>`,
+                `<span style="display: inline;"><p>Forward edge</p></span>`,
+                `<span style="display: inline;"><p>Cross edge</p></span>`,
+                `<span style="display: inline;"><p>Back edge</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• A tree edge satisfies <em>d[u</em>] &lt; <em>d</em>[<em>v</em>] &lt; <em>f</em>[<em>v</em>] &lt; <em>f</em>[<em>u</em>] and is the edge that first discovers <em>v</em>.<br>• A forward edge also satisfies the time inequality but is not the tree edge; it connects an ancestor to a descendant already in the tree.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The sequence of procedure returns during program execution corresponds to a postorder traversal of the activation tree.</p></span>`,
+                `<span style="display: inline;"><p>A lexical analyzer is specified using context-free grammars and is implemented using a pushdown automaton.</p></span>`,
+                `<span style="display: inline;"><p>The sequence of procedure calls during program execution corresponds to a preorder traversal of the activation tree.</p></span>`,
+                `<span style="display: inline;"><p>A parser is specified using regular expressions and is implemented using a finite automaton.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A procedure returns only after all procedures called by it have completed execution. Thus, the parent activation is completed after all its children, which is exactly postorder traversal.<br>So, option (a) is correct.</li>
+<li>A lexical analyzer is specified using regular expressions. It is implemented using finite automata (DFA/NFA). So, option (b) is incorrect.</li>
+<li>A procedure is visited (called) before any procedure it invokes. Hence, the sequence of calls follows a preorder traversal. So, option (c) is correct.</li>
+<li>A parser is specified using context-free grammars (CFGs). It is implemented using parsing algorithms based on pushdown automata (e.g., LL and LR parsers). So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following statements. Which of the below are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Over the unary alphabet, every context free language is regular.</p></span>`,
+                `<span style="display: inline;"><p>The reversal of a DCFL is always context free.</p></span>`,
+                `<span style="display: inline;"><p>If a grammar <em>G </em>has \( \epsilon \) productions, then \( \epsilon \) is a member of <em>L(G)</em>.</p></span>`,
+                `<span style="display: inline;"><p>If \( \epsilon \) is not a member of <em>L(G)</em>, then <em>G</em> has no \( \epsilon \) productions.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip13-1783666496000.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The following post-fix expression with single digit operands is evaluated using stack.</p>
+<p> 16 2 4 ^ / 4 3 × + 6 2 × -</p>
+<p>Note that ^ is the exponential operator. The maximum height of the stack ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip14-1783666542234.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The shift register shown below is initially loaded with binary data stream 0101. If clock pulses are applied continuously and after some clock pulses, the loaded data is repeated in shift register. During this, which clock pulse is responsible for the highest decimal data stored in the shift register?</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip15-1783666574126.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip16-1783666582409.png"></p>
+<p>So, the pattern is repeated after 7 clock pulses but the highest data stored is 1110 which is loaded after 4<sup>th</sup> clock pulse.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a computer system with DMA support. The DMA module transfers 32 bits of data in one CPU cycle. The process clock frequency is 10 MHz. If 0.5% of the processor cycles are used for DMA, the data transfer rate of the device is ________ bytes per second.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5 × 10<sup>4</sup> bytes/sec</p></span>`,
+                `<span style="display: inline;"><p>1 × 10<sup>5</sup> bytes/sec</p></span>`,
+                `<span style="display: inline;"><p>2 × 10<sup>5</sup> bytes/sec</p></span>`,
+                `<span style="display: inline;"><p>4 × 10<sup>5</sup> bytes/sec</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip17-1783666665072.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following C program:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip18-1783666693265.png"></p>
+<p>What will be the output:</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 54,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>54</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a network using the pure ALOHA medium access control protocol, where each frame is of length 1,000 bits. The channel transmission rate is 1 Mbps (= 106 bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to collisions) is modelled as a Poisson process with a rate of 1,000 frames per second, Throughput is defined as the average number of frames successfully transmitted per second. The throughput of the network (rounded to the nearest integer) is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 135,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1786701098843.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip1-1786701105377.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip19-1783667056647.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip20-1783667064762.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip21-1783667070251.png"></p></span>`,
+                `<span style="display: inline;"><p>Both (a) and (b)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip22-1783667085136.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the translation scheme given below:<br><img src="images/pw_full_syllabus_test_2/mceclip23-1783667114940.png"><br>For an input scheme 10 - 5 + 4, this scheme will print</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>10 5 + 4 -</p></span>`,
+                `<span style="display: inline;"><p>10 5 4 - +</p></span>`,
+                `<span style="display: inline;"><p>10 5 - 4 +</p></span>`,
+                `<span style="display: inline;"><p>10 5 4 + -</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip24-1783667144705.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following system of linear equation:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip25-1783667165249.png"></p>
+<p>Which of the following is correct for solution of above equations?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>System has unique solution</p></span>`,
+                `<span style="display: inline;"><p>System has unique solution</p></span>`,
+                `<span style="display: inline;"><p>System is inconsistent</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip26-1783667191241.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip27-1783667201175.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip28-1783667207288.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A T-flip-flop is designed using a <em>AB </em>flip-flop. The excitation table of <em>AB </em>flip-flop is given as:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip29-1783667243664.png"></p>
+<p>The connections to the input <em>A </em>and <em>B </em>are:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip30-1783667275345.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip31-1783667280068.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip32-1783667284972.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip33-1783667290550.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip34-1783667303164.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip35-1783667308422.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider following relational schema:<br> Emp (<span style="text-decoration: underline;">eid</span>, ename, salary, sex)<br>Which of the following query correct representation to "Retrieve female employee eid's whose salary more than salary of every male employees".</p>
+<p> </p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip36-1783667349653.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Query1 only</p></span>`,
+                `<span style="display: inline;"><p>Query2 only</p></span>`,
+                `<span style="display: inline;"><p>Both Query1 and Query2</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip37-1783667388014.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following languages over the binary alphabet \( \Sigma \) = {0, 1}:<br><img src="images/pw_full_syllabus_test_2/mceclip38-1783667414477.png"><br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only I is regular</p></span>`,
+                `<span style="display: inline;"><p>Only II is regular</p></span>`,
+                `<span style="display: inline;"><p>Both I and II are regular</p></span>`,
+                `<span style="display: inline;"><p>Neither I nor II is regular</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip39-1783667445270.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the context-free grammar <em>G</em> with non-terminals {<em>S, A</em>} and terminals {<em>a, b, c, d</em>}:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip40-1783667485705.png"></p>
+<p>Which one of the following grammars is obtained after eliminating all left recursion from <em>G</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip41-1783667499044.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip42-1783667504293.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip43-1783667509636.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip44-1783667515112.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip45-1783667528457.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip46-1783667537974.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following C code fragment:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip47-1783667569087.png"></p>
+<p>Consider a linked-list <em>L</em> having the following elements from head to tail: 5, 12, 19, 11, 20.<br>Head of <em>L </em>is passed to function 'fun'. The elements in L from head to tail after return from 'fun' are:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5, 7, 7, -8, 9</p></span>`,
+                `<span style="display: inline;"><p>5, 7, 12, -1, 21</p></span>`,
+                `<span style="display: inline;"><p>5, 7, 12, 11, 20</p></span>`,
+                `<span style="display: inline;"><p>5, 7, 12, -1, 9</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip48-1783667628473.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip49-1783667650765.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>7/5</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip50-1783667664752.png"></p></span>`,
+                `<span style="display: inline;"><p>11/5</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip51-1783667674084.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip52-1783667689413.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip53-1783667695653.png"></p>
+<p> </p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are correct regarding file allocation methods?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The pointer overhead in indexed allocation is generally less than that in linked allocation.</p></span>`,
+                `<span style="display: inline;"><p>Linked allocation supports sequential access efficiently.</p></span>`,
+                `<span style="display: inline;"><p>Direct access is more efficient in linked allocation than in indexed allocation.</p></span>`,
+                `<span style="display: inline;"><p>Contiguous allocation does not support direct access.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>In linked allocation, every file block stores a pointer to the next block. In indexed allocation, pointers are stored only in the index block, resulting in lower pointer overhead. So, option (a) is correct.</li>
+<li>Since each file block points to the next block, traversing the file sequentially is straightforward and efficient. It is well-suited for sequential access patterns. So, option (b) is correct.</li>
+<li>To access a particular block in linked allocation, pointers must be followed from the beginning of the file. Indexed allocation allows direct access using the index block. So, option (c) is incorrect.</li>
+<li>In contiguous allocation, file blocks are stored in consecutive disk locations. Therefore, any block can be accessed directly using its offset from the starting block. So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the FA given below:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip54-1783667819570.png"></p>
+<p>Which of the following is correct regular expression for the language accepted by this FA?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>00* + 11*</p></span>`,
+                `<span style="display: inline;"><p>0* + 1*</p></span>`,
+                `<span style="display: inline;"><p>00* + 00* 11*</p></span>`,
+                `<span style="display: inline;"><p>00* 1*</p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip55-1783667856902.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following four schedules due to three transactions (indicated by the subscript) using read and write on a data item <em>X</em>, denotes by <em>r</em>(<em>X</em>) and <em>w</em>(<em>X</em>) respectively. Which of them is/are not conflict serializable?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip56-1783667907237.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip57-1783667915554.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip58-1783667923723.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip59-1783667934960.png"></p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip60-1783667954557.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip61-1783667963872.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a relation schema <em>r</em>(A, B, C, D, E, F) with following functional dependencies:<br> A -> BCD, BC -> DE, B -> D, D -> A<br>Which of the following are correct for relation <em>r</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>BF is candidate key of <em>r</em>.</p></span>`,
+                `<span style="display: inline;"><p>Relation <em>r</em> is in 2NF.</p></span>`,
+                `<span style="display: inline;"><p>Functional dependency B -> C can logically implied from above functional dependencies.</p></span>`,
+                `<span style="display: inline;"><p>Functional dependency B -> E can logically implied from above functional dependencies.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip62-1783668034590.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following, predicates for the domain of real numbers:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip63-1783668074115.png"></p>
+<p>Which of the following proposition gives true as the truth value?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip64-1783668086395.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip65-1783668092030.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip66-1783668100553.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip67-1783668119824.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Two processes P<sub>1</sub> and P<sub>2</sub> need to access a critical section of code.<br>Consider the following synchronization construct used by the process:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip68-1783668154712.png"></p>
+<p>Which of the following observation is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Correctness of mutual exclusion guaranteed.</p></span>`,
+                `<span style="display: inline;"><p>Progressive is not satisfied.</p></span>`,
+                `<span style="display: inline;"><p>Mutual exclusion not satisfied.</p></span>`,
+                `<span style="display: inline;"><p>Possibility of deadlock.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip0-1783670479016.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following max-heap tree stored in the from of array:<br><img src="images/pw_full_syllabus_test_2/mceclip69-1783670526344.png"></p>
+<p>In the above max-heap after 2 times delete maximum element.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The sequence is 51, 69, 26, 17, 37, 4, 7</p></span>`,
+                `<span style="display: inline;"><p>The sequence is 69, 51, 17, 26, 37, 7, 4</p></span>`,
+                `<span style="display: inline;"><p>The sum of leaf node is 74</p></span>`,
+                `<span style="display: inline;"><p>The root is 69</p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip70-1783671621610.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A random variable <em>X </em>has the following probability distribution:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip71-1783671664215.png"></p>
+<p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The mean of <em>X</em> is 1.639</p></span>`,
+                `<span style="display: inline;"><p>The mean of <em>X </em>is 1.45</p></span>`,
+                `<span style="display: inline;"><p>The variance of <em>X </em>is 1.45</p></span>`,
+                `<span style="display: inline;"><p>The variance of <em>X </em>is 1.638</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip72-1783671708360.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip73-1783671714687.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Structural hazard arises when multiple instructions require the same hardware unit in the same clock cycle.</p></span>`,
+                `<span style="display: inline;"><p>In asynchronous serial transfer of data, both sender and receiver operate using a shared clock signal.</p></span>`,
+                `<span style="display: inline;"><p>In write-back cache, main memory is updated only when the modified block is replaced.</p></span>`,
+                `<span style="display: inline;"><p>Update (dirty) bit is used in write-back cache to indicate that the cache block has been modified.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Structural hazard occurs when the pipeline has insufficient hardware resources to execute all instructions in the same clock cycle. This leads to contention for shared functional units like ALU or memory. So, option (a) is correct.</li>
+<li>In asynchronous serial transfer, there is no shared clock between sender and receiver.<br>Synchronization is achieved using start and stop bits for each data frame. So, option (b) is Incorrect.</li>
+<li>In write-back cache, updates are made only in the cache first. Main memory is updated later only when the modified cache block is replaced (evicted). So, option (c) is correct.</li>
+<li>The dirty (update) bit indicates whether a cache block has been modified. It helps decide whether the block needs to be written back to main memory during replacement. So, option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following keys that are hashed into table in the order given using hash function</p>
+<p> <img src="images/pw_full_syllabus_test_2/mceclip74-1783671821593.png"></p>
+<p>Assume hash table has location from 0 to 10. If hash table uses chaining to handle the collisions, what is the probability of new elements '<em>x</em>' fit inside hash table without any collision ________.<br>(Upto two decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.4 to 0.5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip75-1783671842828.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following program:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip76-1783671873825.png"></p>
+<p>The value printed by the above program is _______.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 44,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip77-1783671887537.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a machine with 20 nsec clock and it takes 8 clock cycles per ALU instruction, 10 clock cycles per branch instruction, 15 clock cycles per memory instruction. There exist 50% ALU instructions, 20% branch instructions and 30% memory instructions. If 5 nsec overhead is present in the pipeline implementation, then find the speedup achieved by the system ________. (Upto two decimal place)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "8.39 to 8.41",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip78-1783675216308.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The number of distinct Binary Search Trees (BSTs) that can be formed using 8 distinct keys, with the smallest key as the root, is __________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 429,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip79-1783675277660.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Suppose host A sends 11690 bytes user data over TCP to host B over an ethernet LAN. Maximum transmission unit (MTU) for ethernet frame is 1000 bytes. Header length field value in TCP header is 7 in decimal. And size of IP header is 20 bytes. How many total number of IP fragments will be transmitted?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 13,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip80-1783675320522.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a B<sup>+</sup> tree of order 5 (maximum pointer for a node) at both leaf and non-leaf node. Initially tree is empty. Insert following keys in this tree one-by-one in given order:<br> 2, 4, 6, 7, 8, 12, 18, 24, 26, 30<br>How many maximum leaf node split occurred in above process?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip81-1783675359829.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a disk in which the disk scheduler uses the C-LOOK scheduling algorithm. At the current instant, the disk has the following pending requests (in track numbers):<br> 62, 18, 74, 90, 35, 48<br>The disk has 100 tracks (0 to 99). The disk head is currently positioned at track 40 and is moving towards track 99. Assume that the head takes 1 ms to move from one track to an adjacent track and that the service time for each request is negligible. The time taken by the disk to service all the above requests is ________ ms.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 139,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip82-1783675395576.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following IEEE single precision floating point number shown below:<br> 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>The octal equivalent of above number is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 640,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip83-1783675428710.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the directed graph:</p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip84-1783675461611.png"></p>
+<p>Suppose we run Dijkstra's single source path algorithm on the above graph with vertices as source.<br>The sum of all the weight of edges that would not be included in spanning tree.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 36,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip85-1783675478420.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The number of ways 12 balls can be chosen from an urn containing 12 identical black balls, 6 identical red balls, and 4 identical white balls is equal to ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 35,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip86-1783675513019.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_2/mceclip87-1783675535912.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip88-1783675548570.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip89-1783675557577.png"></p>
+<p><img src="images/pw_full_syllabus_test_2/mceclip90-1783675563872.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let <em>T </em>be a spanning tree of <em>K</em><sub>2023</sub> and let <em>G </em>= <em>K</em><sub>2023</sub> - <em>E</em>(<em>T</em>). What is the maximum possible number of pairwise edge-disjoint Hamiltonian cycles in <em>G</em>?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1010,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip91-1783675646695.png"></p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 03 - Full Syllabus Test - 3 (Basic Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A has to pay Rs. 220 to B after 1 year. B asks A to pay Rs. 110 in cash now and defer the payment of Rs. 110 for 2 years. A agrees to it. If the rate of interest be 10% per annum, in this mode of payment:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>There is no gain or loss to anyone</p></span>`,
+                `<span style="display: inline;"><p>A gains Rs. 7.34</p></span>`,
+                `<span style="display: inline;"><p>A loses Rs. 7.34</p></span>`,
+                `<span style="display: inline;"><p>A loses Rs. 1.67</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441213686.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A bag has 10 balls. Six balls are drawn in an attempt and replaced. Then another draw of 5 balls is made from the bag. The probability that exactly two balls are common to both the draw is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5/21</p></span>`,
+                `<span style="display: inline;"><p>2/21</p></span>`,
+                `<span style="display: inline;"><p>7/21</p></span>`,
+                `<span style="display: inline;"><p>3/21</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441258183.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>'A' goes 10 km distance with average speed of 6 km/h while rest 20 km he travels with an average speed of 15 km/h. What is the average speed of 'A' during the whole journey?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>10 km/h</p></span>`,
+                `<span style="display: inline;"><p>12 km/h</p></span>`,
+                `<span style="display: inline;"><p>13 km/h</p></span>`,
+                `<span style="display: inline;"><p>14.5 km/h</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441293411.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip1-1784441301629.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A and B can do a piece of work in 8 days, B and C can do the same work in 12 days and A and C complete it in 8 days. In how many days can A, B and C complete the whole work, working together?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+                `<span style="display: inline;"><p>12</p></span>`,
+                `<span style="display: inline;"><p>9</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441339447.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The ratio of income and savings of a person is 7 : 3. If income increases by 12% and expenditure increases by 8%, then his savings will increase by _____ %. (Correct upto two decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "16.9 to 17.8",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441381662.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Read the following set of information correctly and then answer the question that follow:</p>
+<ol style="list-style-type: lower-roman;">
+<li>There is a group of six persons A, B, C, D, E and F seated around a circular table.</li>
+<li>There are two females and four males in this group.</li>
+<li>Both the females are married to two males of the same group. The remaining two males are bachelors.</li>
+<li>A, a female, is sitting opposite one of the bachelors F. Her husband is not on either of her sides.</li>
+<li>Another female is sitting opposite her husband D.</li>
+<li>The two females are not sitting adjacently.</li>
+<li>On the immediate right of both the females is sitting a bachelor.</li>
+<li>C has the same marital status as F while B is a father of two sons.</li>
+</ol>
+<p>Moving clockwise, how many bachelors are there between A and her husband, if one starts from the husband?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>can't say</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>From the given information,<br>• C has the same marital status as F, so C is a bachelor (male).<br>• B is a father of two sons, meaning B is a married male and A's husband.<br>• The only person left is E, which is the second female, married to D.<br>Thus, the seating arrangement is obtained as below:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441495138.png"></p>
+<p>Thus, moving clockwise, starting from A's husband B, there are two bachelors C and F between A and B.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The 5-digit number PQRST (all distinct digits) is such that T is not equal to 0, P is thrice of T, S is greater than Q by 4, while Q is greater than R by 3. How many such 5-digit numbers are possible?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441556022.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip1-1784441562673.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The total number of parallelograms in the figure given below is</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441600459.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>17</p></span>`,
+                `<span style="display: inline;"><p>18</p></span>`,
+                `<span style="display: inline;"><p>19</p></span>`,
+                `<span style="display: inline;"><p>20</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip1-1784441616483.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the below figure, if Noble people is equivalent to circle, Hindi speaking people represent triangles and Poet is shown by rectangle, then which number represents Noble Poet who can't speak Hindi?</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip0-1784441650793.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+                `<span style="display: inline;"><p>7</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>In the question, the circle represents Noble, triangle represents Hindi speaking people and Rectangle represents Poet, then Noble Poet who can't speak Hindi is represented by area enclosed by both circle and rectangle but not triangle i.e. region 6.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><strong>Educator :</strong> Like many other difficult pursuits, music requires intense study and practice from an early age in order for one to become proficient. But many school music programs encourage only children who demonstrate early aptitude to continue studying music, while children who do not appear especially musical are directed towards other activities. Having learned to think of themselves as musically inept, these children do not devote any time to music, and thus some of them deprive themselves of the opportunity to develop latent but potentially significant musical talent.<br><br>The educator's statements, if true, would best support which of the following conclusions?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Music education should not devote special attention to talented students.</p></span>`,
+                `<span style="display: inline;"><p>Everyone has the potential to learn music.</p></span>`,
+                `<span style="display: inline;"><p>There might be a possibility or ability to learn music at later age.</p></span>`,
+                `<span style="display: inline;"><p>Children are particularly sensitive to criticism from adults.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>From the phrase<em> "thus some of them deprive themselves of the opportunity to develop latent but potentially significant musical talent"</em><br>The educator believes that lack of early aptitude does not necessarily mean lack of musical ability. Some people who were not identified as talented early could still develop musical talent if given the opportunity.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the relational schema:<br>Employee(Eid, Ename, Salary, DOB, Dept_id)<br>The following query Q:<br>Q : SELECT AVG (Salary)<br> FROM Employee<br> WHERE Ename LIKE 'S%' OR Ename LIKE '%S'</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Outputs the average salary of employees whose names start with S</p></span>`,
+                `<span style="display: inline;"><p>Outputs the average salary of employees whose names end with S</p></span>`,
+                `<span style="display: inline;"><p>Outputs the average salary of employees whose names contain S</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given query outputs the average salary of employees whose names start or end with S.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A 8 bit shift-left shift register and a <em>D </em>flip-flop is shown in the figure are synchronized with the same clock. The <em>D </em>flip-flop is initially cleared. After applying 8 clock pulses, the circuit acts as</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip0-1783686632826.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Binary to Gray code converter</p></span>`,
+                `<span style="display: inline;"><p>Binary to is complement converter</p></span>`,
+                `<span style="display: inline;"><p>Gray to binary converter</p></span>`,
+                `<span style="display: inline;"><p>Binary to 2's complement converter</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip1-1783686665834.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Match each addressing mode in <strong>List-I</strong> with the most appropriate programming concept in <strong>List-II</strong>.</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip2-1783686698375.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Immediate -> Compile-time constant<br>In immediate addressing, the operand is embedded directly within the instruction. Hence, it naturally represents a constant value (known at compile time) and does not require a separate memory access to fetch the operand.</li>
+<li>Register -> Frequently used loop variable<br>Register addressing stores the operand in a CPU register, providing the fastest access.<br>Compilers often allocate frequently used variables, such as loop counters and temporary variables, to registers for efficient execution.</li>
+<li>Base with displacement -> Local variable in a structure<br>In base with displacement addressing, the effective address is obtained by adding a fixed offset to a base address. Since the fields of a structure are stored at fixed offsets from its base address, this mode is ideal for accessing structure members.</li>
+<li>Indexed -> Accessing an array element<br>Indexed addressing computes the effective address using a base address and an index value.<br>This matches array access, where the address of an element is calculated from the array's base address and the element's index.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>I. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\( \ge \) 2 but not LL(1), then G has left recursion.<br>II. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\( \ge \) 2 but not LL(1), then G has left factoring.<br>Which of the above statements is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only I</p></span>`,
+                `<span style="display: inline;"><p>Only II</p></span>`,
+                `<span style="display: inline;"><p>Both I and II</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>None of these</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following function computes (<em>X<sup>Y</sup></em>) mod <em>M </em>for positive integers <em>X,</em> <em>Y</em> and <em>M</em>.</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip3-1783686877507.png"></p>
+<p>Which one of the following conditions is true before every iteration of the while loop?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) (res \( \cdot \) <em>a</em>)<em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res \( \cdot \) <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res \( \cdot \) <em>a</em><em> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res + <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip4-1783686980079.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is true regarding HTTP/1.1 pipelining over a single persistent TCP connection?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>It allows the server to transmit HTTP responses out of order as soon as each requested resource is ready, thereby eliminating application-layer Head-of-Line (HOL) blocking.</p></span>`,
+                `<span style="display: inline;"><p>It requires the client to receive the complete response for one request before sending the next request on the same persistent connection.</p></span>`,
+                `<span style="display: inline;"><p>It allows the client to send multiple HTTP requests consecutively without waiting for their corresponding responses, while requiring the server to send the responses strictly in the order in which the requests were received.</p></span>`,
+                `<span style="display: inline;"><p>It establishes a dedicated end-to-end communication path between the client and the server, thereby eliminating network-layer routing overhead.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>In HTTP/1.1 pipelining, the client can transmit multiple HTTP requests consecutively over the same persistent TCP connection without waiting for the responses to arrive.</li>
+<li>However, the responses must be delivered in the same order as the corresponding requests. Therefore, if an earlier request takes longer to process, the responses to subsequent requests may be delayed, resulting in application-layer Head-of-Line (HOL) blocking.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A program <em>P </em>uses a mix of AI instructions and non AI instructions, and is run on a system S. In order to improve the performance of the system, a design level enhancement is applied to the CPU which lead to 3 times faster performance in AI, and 10% faster performance in other operations. If the ratio of AI operations to the total number of operations in program P is 3 : 5, then the overall speedup achieved by the enhancement is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1.57</p></span>`,
+                `<span style="display: inline;"><p>1.78</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>2.5</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip5-1783687136511.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the language L = {<em>w</em> | <em>w </em>contains at least 2 a's; <em>w </em>\( \in \) {<em>a, b, c</em>}*}. Which of the following is not<br>a correct regular expression for L?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>(b + c)* a (b + c)* a(a + b + c)*</em></p></span>`,
+                `<span style="display: inline;"><p><em>(a + b + c)* a(b + c)* a(b + c)*</em></p></span>`,
+                `<span style="display: inline;"><p><em>(a + b + c)* a(a + b + c)* a(a + b + c)*</em></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>All the listed regular expressions are correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The drawback for quadruple representation of 3-address code is it requires more space compared to triple notation.</p></span>`,
+                `<span style="display: inline;"><p>The advantage for triple representation of 3-address code is it requires less space compared to quadruple notation.</p></span>`,
+                `<span style="display: inline;"><p>Both (a) and (b) are correct.</p></span>`,
+                `<span style="display: inline;"><p>Neither (a) nor (b) are correct.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The drawback in quadruple representation is one extra field required to store the result.<br>In triple representation their is no need of extra field to store the result, So it require less space.<br>Both (a) and (b) are correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a max heap whose level order and inorder traversal is given below:<br>Level order: 50, 30, 40, 20, 25, 27, 28, 18<br>Inorder: 18, 20, 30, 25, 50, 27, 40, 28<br>Then the preorder traversal of the max heap will be</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>50, 30, 20, 18, 25, 40, 27, 28</p></span>`,
+                `<span style="display: inline;"><p>50, 30, 20, 18, 25, 40, 28, 27</p></span>`,
+                `<span style="display: inline;"><p>50, 30, 20, 18, 25, 27, 40, 28</p></span>`,
+                `<span style="display: inline;"><p>50, 30, 20, 18, 40, 25, 27, 28</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip6-1783687367449.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following scenarios may lead to an irrecoverable error in a database?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A transaction writes a data item after it is read by an uncommitted transaction.</p></span>`,
+                `<span style="display: inline;"><p>A transaction reads a data item after it is read by an uncommitted transaction.</p></span>`,
+                `<span style="display: inline;"><p>A transaction reads a data item after it is written by a committed transaction.</p></span>`,
+                `<span style="display: inline;"><p>A transaction reads a data item after it is written by an uncommitted transaction.</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>A transaction reads a data item after it is written by an uncommitted transaction.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A selective repeat ARQ and Go Back N uses a sender window size of 63. Let X and Y be the number of bits needed for defining sequence numbers for selective repeat and Go Back N respectively. Then</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>X</em> &gt; <em>Y</em></p></span>`,
+                `<span style="display: inline;"><p><em>X </em>&lt; <em>Y</em></p></span>`,
+                `<span style="display: inline;"><p><em>X </em>= <em>Y</em></p></span>`,
+                `<span style="display: inline;"><p><em>X </em>- <em>Y </em>= 2</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip7-1783687537340.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip8-1783687663742.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>32</p></span>`,
+                `<span style="display: inline;"><p>48</p></span>`,
+                `<span style="display: inline;"><p>96</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip9-1783687685920.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Scope of static variable is within the body of function where it is declared.</p></span>`,
+                `<span style="display: inline;"><p>Same variable can be declared multiple times within the same function only if it is extern storage class.</p></span>`,
+                `<span style="display: inline;"><p>Malloc always returns base address of block of memory allocated.</p></span>`,
+                `<span style="display: inline;"><p>None of the above</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b)</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip10-1783687792431.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I</p></span>`,
+                `<span style="display: inline;"><p>II</p></span>`,
+                `<span style="display: inline;"><p>III</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Only I and III are equivalent to <em>R </em>\( \cap \) <em>S</em>. II is actually <em>R </em>\( \oplus \) <em>S</em>, so it is not.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip11-1783687851815.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip12-1783687858992.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip13-1783687865408.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip14-1783687870988.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip15-1783687877720.png"></p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>System will be free from deadlock provided that resources are required in ascending/descending order.<br>Therefore option (a) and (d) are true.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following functions:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip16-1783687929853.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip17-1783687939325.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip18-1783687948876.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip19-1783687954920.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip20-1783687964227.png"></p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><em>f</em><sub>3</sub> must contain at least one of 2 and 4 as min terms.<br>Rest may be don't cares. So, option (a), (b), (c) are correct.<br>Option (d) has neither 2 nor 4 as min term, so option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Two sorted lists of size 10 and 20 are merged to form a single sorted list of size 30 elements. Then which of the following represents the possible number of comparisons after merging the lists?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>10</p></span>`,
+                `<span style="display: inline;"><p>20</p></span>`,
+                `<span style="display: inline;"><p>25</p></span>`,
+                `<span style="display: inline;"><p>30</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip21-1783688015176.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A queue ADT is simulated using two linear stacks, S<sub>1</sub> and S<sub>2</sub>. The standard operations are defined as follows:<br>• <strong>Enqueue:</strong> The element is pushed onto S<sub>1</sub>.<br>• <strong>Dequeue:</strong> An element is popped from S<sub>2</sub>.<br>If S<sub>2</sub> is empty, all elements in S<sub>1</sub> are popped one by one and pushed onto S<sub>2</sub>. Then, the top element of S<sub>1</sub> is popped and returned.<br>Starting with both stacks empty, the following sequence of operations is performed:<br>Enqueue(15); Enqueue(25); Enqueue(35); Dequeue( ); Enqueue(45); <em>a </em>= Dequeue( ); <em>b </em>= Dequeue( );<br>The value of <em>a </em>+ <em>b </em>is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 60,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip22-1783688114323.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider 5 processes all starting at time <em>t</em> = 2 units. Each process <em>P<sub>i</sub></em> has a burst time equal to<br><em>b<sub>i</sub> </em>[1 \( \le \)<em> i</em> \( \le \) 5]. The system uses Round Robin scheduling algorithm. If the throughput of the system is equal to 0.2, then the completion time of the process that finishes last, is equal to ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 27,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip23-1783688168303.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip24-1783688718748.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 0,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>There's no language, because LHS doesn't contain \( \epsilon \), whereas RHS does. So no <em>L</em> exists which can satisfy the above equality.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider 4 processes P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub> each of which requires a certain amount of CPU time and ID time as tabulated below:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip25-1783688784606.png"></p>
+<p><strong>Note:</strong> While calculating waiting time, do not consider I/O time in burst time.<br>If system uses longest remaining time first algorithm, then the waiting time of process P<sub>1</sub> is ________ units.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip26-1783688815306.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a channel with bandwidth 40 kbps and propagation delay of 40 ms. The channel uses stop and wait protocol. The transmission time of the acknowledgement frame is negligible.<br>To obtain a channel efficiency of atleast 75% the minimum frame size should be ________ bytes.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1200,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip27-1783688840646.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>An ISP has the following chunk of CIDR based IP addresses available: 121.27.128.0/20. The ISP has allocated half of this chunk of addresses to an organization of type A and is left with the remaining half to allocate to organizations of type B. If each organization of type B requires a block of 32 IP addresses, then the number of organizations that can be served by the ISP is equal to ________ [apart from A].</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 64,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip28-1783688880252.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let <em>S</em> be the set of all strings over the alphabet {<em>a, b, c</em>}. Consider all strings in <em>S </em>of length 6 that contain exactly two occurrences of the symbol a such that the two occurrences are not consecutive.<br>The number of such strings is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 160,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip29-1783688938787.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Find the worst case time complexity of the following recurrence relations:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip30-1783689112989.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip31-1783689119826.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( \Omega \)(log<sub>2</sub> log<sub>2</sub> <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \Omega \)(log<sub>2</sub> <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \Omega \)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \Omega \)(<em>n </em>log<sub>2</sub> <em>n</em>)</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip32-1783689202438.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider two well formed formulas in propositional logic:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip33-1783689244662.png"></p>
+<p>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>F1 is satisfiable, F<sub>2</sub> is valid</p></span>`,
+                `<span style="display: inline;"><p>F<sub>1</sub> is unsatisfiable, F<sub>2 </sub>is satisfiable</p></span>`,
+                `<span style="display: inline;"><p>F<sub>1</sub> is unsatisfiable, F<sub>2</sub> is valid</p></span>`,
+                `<span style="display: inline;"><p>F<sub>1</sub> and F<sub>2</sub> both are unsatisfiable</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip34-1783689312222.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is correct?</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip35-1783689337260.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I only</p></span>`,
+                `<span style="display: inline;"><p>II only</p></span>`,
+                `<span style="display: inline;"><p>Both I and II</p></span>`,
+                `<span style="display: inline;"><p>Neither I nor II</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip36-1783689379071.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip37-1783689495383.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip38-1783689503207.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip39-1783689511560.png"></p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip40-1783689518304.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip41-1783689530325.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip42-1783689540452.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider <em>L </em>= {<em>w </em>| <em>d</em>(<em>w</em>) \( \ge \) 32; <em>w </em>\( \in \) {0, 1}*}.<br>Note that <em>d</em>(<em>w</em>) denotes the decimal value of the binary string <em>w</em>. Then the number of states in the<br>minimal DFA corresponding to <em>L </em>is equal to</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+                `<span style="display: inline;"><p>7</p></span>`,
+                `<span style="display: inline;"><p>8</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip43-1783689662976.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a weighted undirected graph with positive edge weights. Let (<em>u, v</em>) be an edge in the graph. The shortest path distance from a source vertex <em>s </em>to vertex <em>u </em>is 50 and the shortest path distance from <em>s </em>to vertex <em>v </em>is 75.<br>Which one of the following statements is always true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \( \le \) 25</p></span>`,
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) = 25</p></span>`,
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \( \ge \) 25</p></span>`,
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) &gt; 25</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip44-1783690750103.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip45-1783690772829.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>512</p></span>`,
+                `<span style="display: inline;"><p>-(5120)</p></span>`,
+                `<span style="display: inline;"><p>5120</p></span>`,
+                `<span style="display: inline;"><p>- (512)</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip46-1783690803297.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An exponentially distributed random variable <em>X </em>has probability density function<br><img src="images/pw_full_syllabus_test_3/mceclip47-1783690838218.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip48-1783690849171.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip49-1783690854088.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip50-1783690858681.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip51-1783690863450.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip52-1783690871761.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following context-free grammar <em>G</em>, where <em>E</em>, <em>T </em>and <em>F </em>are the variables (non-terminals),<br><em>a </em>and <em>b </em>are the terminal symbols, <em>E </em>is the start variable, and the production rules are:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip53-1783690943862.png"></p>
+<p>Which one of the following is the language generated by <em>G</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip54-1783690966235.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip55-1783690973877.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip56-1783690978865.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip57-1783690984070.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip59-1783691003323.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider two 8 bit signed integers X and Y represented in sign-magnitude form:<br> X = 00010110, Y = 00100101<br>Let, Z = X + Y<br>Which one of the following correctly represents the binary representation of Z and the status of arithmetic overflow?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Z = 00111011, No arithmetic overflow</p></span>`,
+                `<span style="display: inline;"><p>Z = 10111011, No arithmetic overflow</p></span>`,
+                `<span style="display: inline;"><p>Z = 00111011, Arithmetic overflow occurs</p></span>`,
+                `<span style="display: inline;"><p>Z = 10111011, Arithmetic overflow occurs</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip60-1783691065666.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A router receives a packet with IP address 119.23.1.1. The routing table is given below:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip61-1783691091650.png"></p>
+<p>The identifier of the output interface to which the packet will be forwarded, is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip62-1783691118112.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is correct?<br>S<sub>1</sub> : For two level memory hierarchy cache and main memory. WRITE THROUGH result in more number write cycles to main memory than WRITE BACK.<br>S<sub>2</sub> : Write back protocol, cache memory and main memory location are update simultaneously.<br>S<sub>3</sub> : Modify or Dirty bit are used by write back protocol.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>In the WRITE THROUGH each and every WRITE operation is done simultaneously on both cache and main memory. WRITE THROUGH result in more number write cycle than WRITE BACK.</li>
+<li>Write back first cache is update and marked by dirty bit then main memory is updated.</li>
+<li>Dirty bits are used by only Write Back protocol to know which can block is updated.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are true regarding a CLR(1) grammar <em>G</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If <em>G </em>has no RR conflict, then LALR(1) parser for <em>G </em>will also have no RR conflicts.</p></span>`,
+                `<span style="display: inline;"><p>If <em>G </em>has no RR conflict, then LALR(1) parser for <em>G </em>may or may not have RR conflicts.</p></span>`,
+                `<span style="display: inline;"><p>If <em>G </em>has no SR conflict, then LALR(1) parser for <em>G </em>will also have no SR conflicts.</p></span>`,
+                `<span style="display: inline;"><p>If <em>G </em>has no SR conflict, then LALR(1) parser for <em>G </em>may/may not have SR conflicts.</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>If CLR(1) grammar has no SR conflicts, then corresponding. LALR(1) parser for G will be free from SR conflicts. But the same doesn't hold for RR conflicts. Here's the counter example.</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip63-1783691296687.png"></p>
+<p>So, (b) and (c) are true.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If <em>L </em>is a finite language such that the length of the maximal string is n, then the minimum pumping length for <em>L </em>is <em>n </em>+ 1.</p></span>`,
+                `<span style="display: inline;"><p>If <em>L </em>is a regular language such that the length of the maximal string is n, then the pumping length for <em>L </em>is <em>n </em>+ 1.</p></span>`,
+                `<span style="display: inline;"><p>If <em>P </em>is the pumping length for <em>L</em>, then any <em>k </em>\( \ge \) <em>p </em>is also a pumping length.</p></span>`,
+                `<span style="display: inline;"><p>The set of regular language is closed under the infinite union operation.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Option (a) and (c) are true. But (b) is not, because pumping length can be more than <em>n </em>+ 1. Had it been 'at least <em>n </em>+ 1', then (b) would have been true.<br>Option (d) false, no language is closed under infinite union.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A circuit is shown below:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip64-1783691421746.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip65-1783691431818.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip66-1783691439633.png"></p></span>`,
+                `<span style="display: inline;"><p>The given counter is ripple counter.</p></span>`,
+                `<span style="display: inline;"><p>The given counter is a asynchronous counter.</p></span>`,
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip67-1783691473328.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following system of linear equations:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip68-1783692106462.png"></p>
+<p>Which of the following statement is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>This linear system has no solutions.</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip69-1783692131592.png"></p></span>`,
+                `<span style="display: inline;"><p>This linear system has a unique solution.</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip70-1783692147715.png"></p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip71-1783692156067.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Let <em>G </em>be an undirected graph with <em>n </em>vertices and integer weights. Let <em>e</em><sub>max</sub> and <em>e</em><sub>min</sub> denote the edge having minimum and maximum edge weights in <em>G </em>respectively. It is known that <em>G </em>has at least two edges with weight <em>e</em><sub>min</sub>.<br>Which of the following is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Every MST of G must contain all edges of <em>e</em><sub>min</sub>.</p></span>`,
+                `<span style="display: inline;"><p>Every MST of G must contain <em>e</em><sub>max</sub>.</p></span>`,
+                `<span style="display: inline;"><p>Every MST of G must contain at least one edge with weight <em>e</em><sub>min</sub>.</p></span>`,
+                `<span style="display: inline;"><p>Every MST of G must contain at least two edges with weight <em>e</em><sub>min</sub>.</p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 2 edges are not sufficient to create a cycle, every MST of <em>G </em>must have \( \ge \) 2 edges with weight <em>e</em><sub>min</sub>.<br> => (c), (d) are true.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following languages over the ternary alphabet \( \Sigma \) = {0, 1, 2}<br>I. Set of strings which have 0 as their last symbol.<br>II. Set of strings which have 0 as their second last symbol.<br>III. Set of strings which have 0 as their third last symbol.<br>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Minimal DFA for I requires 2 states.</p></span>`,
+                `<span style="display: inline;"><p>Minimal DFA for II requires 4 states.</p></span>`,
+                `<span style="display: inline;"><p>Minimal DFA for II requires 2 final states.</p></span>`,
+                `<span style="display: inline;"><p>Minimal DFA for III requires 8 states.</p></span>`,
+            ],
+            answer: ["A", "B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip72-1783692348348.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following is/are countable?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Set of all functions from <em>A </em>to <em>B</em>, where <em>A </em>and <em>B</em> contain n and 2 elements respectively.</p></span>`,
+                `<span style="display: inline;"><p>Set of all functions from <em>A </em>to <em>B</em>, where <em>A </em>and <em>B </em>contain 2 and <em>n </em>elements respectively.</p></span>`,
+                `<span style="display: inline;"><p>Set of all functions from <em>A </em>to <em>B</em>, where <em>A </em>and <em>B </em>contain log<sub>2</sub> <em>n </em>and 2 elements respectively.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip73-1783692440583.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a network with IP address 156.13.48.0/24 which is to be split between 3 organisations <em>A</em>, <em>B</em> and <em>C</em>. Then which of the following requests can not be allocated to all these organisations?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>A, B</em> and <em>C </em>require 50 hosts each.</p></span>`,
+                `<span style="display: inline;"><p><em>A, B</em> require 50 hosts, <em>C </em>requires 100 hosts.</p></span>`,
+                `<span style="display: inline;"><p><em>A, B</em> require 100 hosts, <em>C </em>requires 50 hosts.</p></span>`,
+                `<span style="display: inline;"><p><em>A, B</em> and <em>C </em>require 75 hosts each.</p></span>`,
+            ],
+            answer: ["C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip74-1783692539544.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip75-1783692547000.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the set {4, 8, 12, 16} under multiplication modulo 20:<br>Which of the following is true?<br>S<sub>1</sub> : This set is a group.<br>S<sub>2</sub> : The group is cyclic with generators as 8 and 12.<br>S<sub>3</sub> : The identity element exists.<br>The options are:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip76-1783692624579.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_3/mceclip77-1783692644624.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 512,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip78-1783692653322.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following graph:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip79-1783692675083.png"></p>
+<p>Each edge in <em>G </em>has weight equal to unity. How many spanning trees does <em>G </em>have ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 45,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip80-1783692695498.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the graph <em>G </em>given below:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip81-1783692723153.png"></p>
+<p>The number of labelled subgraph of G is equal to ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 121,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip82-1783692737189.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following page reference string:<br> 1, 3, 2, 4, 2, 1, 5, 6, 2, 6, 1, 7, 5, 6, 1<br>Let X be the number of page faults when LRU page replacement algorithm is used with 3 frames, and Y be the number of page faults incurred when FIFO is used with 4 frames. Then the value of (X - Y) is equal to ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 5,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip83-1783692768822.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following grammar G:<br>G : S -> aS | Sa | a<br>The number of parse trees for the string "<em>aaaa</em>" is equal to ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 8,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip84-1783692819867.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following relational instances:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip85-1783692848073.png"></p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip86-1783692861374.png"></p>
+<p>The number of tuples resulted by the above query, is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Query prints the Snames of sailors who have reserved boats of all colours except red. Since only<br>Dustin has reserved Blue and Green boats [except red], therefore only one tuple will be in the result.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following C program:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip87-1783692911423.png"></p>
+<p>The output of above program on execution is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 27,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip88-1783692926595.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>What will be the output <em>Y</em>, if the number B<sub>3</sub> B<sub>2</sub> B<sub>1</sub> B<sub>0</sub> = 0101 in given below circuit ________.</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip89-1783692973978.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip90-1783692983990.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Suppose to encode a text with the characters a, b, c, d, e, f with the following frequencies:</p>
+<p><img src="images/pw_full_syllabus_test_3/mceclip91-1783693019873.png"></p>
+<p>If followed fixed length code each character takes 1 byte. If compression technique used is Huffman coding, The number of bits will be saved in the message are ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 548,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since total characters are 100 byte.<br>So total number of bits for fixed length code will be 800.<br><strong>As Huffman tree:</strong></p>
+<p><strong><img src="images/pw_full_syllabus_test_3/mceclip92-1783693051906.png"></strong></p>
+<p>Number of bits needed = (3 × 15) + (3 × 7) + (2 × 25) + (2 × 23) + (3 × 18) + (3 × 12) = 252<br>Number of bits saved = 800 - 252 = 548</p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 04 - Full Syllabus Test - 4 (Basic Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Three runners Aman, Ramesh and Naresh run a race in which Aman finishes the race 48 meters ahead of Ramesh and 68 meters ahead of Naresh. In another race of the same length, Ramesh finishes 25 meters ahead of Naresh. Each runner covers the entire distance at a constant speed. The length of the race is _________ meter.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "238 to 242",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1784442824242.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip1-1784442831395.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip0-1784442856881.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>18</p></span>`,
+                `<span style="display: inline;"><p>12</p></span>`,
+                `<span style="display: inline;"><p>9</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip1-1784442875221.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If log<sub>12</sub> 27 = <em>a</em>, then log<sub>6</sub> 16 is:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip0-1784442919414.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip1-1784442926662.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip2-1784442933541.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip3-1784442940874.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip4-1784442953116.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip5-1784442960307.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The probability that the 3N's come consecutively in the arrangement of the letters of the word "CONSTANTIONPLE" is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>3/13</p></span>`,
+                `<span style="display: inline;"><p>3/14</p></span>`,
+                `<span style="display: inline;"><p>3/91</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1784442996155.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A tram overtakes two persons X and Y walking at an average speed of 3 km/hr and 4 km/hr in the same direction and completely passes them in 8 seconds and 9 seconds respectively. What is the length of the tram?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>15 m</p></span>`,
+                `<span style="display: inline;"><p>18 m</p></span>`,
+                `<span style="display: inline;"><p>20 m</p></span>`,
+                `<span style="display: inline;"><p>24 m</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1784443102966.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In a certain code if 64 is written as 343 and 216 is written as 729, then how is 512 written in that code?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1000</p></span>`,
+                `<span style="display: inline;"><p>1331</p></span>`,
+                `<span style="display: inline;"><p>1728</p></span>`,
+                `<span style="display: inline;"><p>2197</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1784443214537.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Select the correct mirror image if the mirror is placed to the right of the figure as given below:<br><img src="images/pw_full_syllabus_test_4/mceclip0-1784443250038.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I</p></span>`,
+                `<span style="display: inline;"><p>II</p></span>`,
+                `<span style="display: inline;"><p>III</p></span>`,
+                `<span style="display: inline;"><p>IV</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip1-1784443264636.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the maximum value of <em>n </em>such that 7 × 345 × 385 × 1000 × 2401 × 77777 is divisible by 35<sup><em>n</em></sup>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+                `<span style="display: inline;"><p>7</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1784443310258.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the question, three statements are given followed by four conclusions. You have to take the given statement true even if they seem to be variance from commonly known facts and then decide which of the given conclusion logically follows from the given statement disregarding commonly known facts.<br><strong>Statements:</strong><br>1. All tables are chairs.<br>2. Some tables are pens.<br>3. All pens are laptops.<br><strong>Conclusion:</strong><br>(i) Some chairs are laptops.<br>(ii) All chairs are laptops.<br>(iii) All tables are laptops.<br>(iv) Some tables are laptops.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only I and II</p></span>`,
+                `<span style="display: inline;"><p>Only I and III</p></span>`,
+                `<span style="display: inline;"><p>Only II and IV</p></span>`,
+                `<span style="display: inline;"><p>Only I and IV</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The possible Venn diagrams for the given statements are as below:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip1-1784443449639.png"></p>
+<p>Thus, only conclusion I and IV follows.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Select the one which is most nearly the same to the given idiom or phrase.<br>He is <span style="text-decoration: underline;">putting the cart before the horse</span> by purchasing furniture before buying a house.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>doing a thing in the unconventional way</p></span>`,
+                `<span style="display: inline;"><p>doing a thing in the right way</p></span>`,
+                `<span style="display: inline;"><p>committing a great crime</p></span>`,
+                `<span style="display: inline;"><p>doing things meticulously</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>'putting the cart before the horse' is an idiom used to suggest something is done contrary to a conventional or culturally expected order of relationship.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>S<sub>1</sub>: If a relation R is in 3NF but not BCNF, then R has a compound key.<br>S<sub>2</sub> : A relation consisting of only prime attributes is in 3NF.<br>Which of the above statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S<sub>1</sub> only</p></span>`,
+                `<span style="display: inline;"><p>S<sub>2</sub> only</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the addition of the two numbers 10001110 and 10000000 in an 8-bit ALU. Which of the following best summarizes the result and the status of the Z(zero), S(sign), C(carry) and O(overflow) flags? Assume that the numbers are represented in 2's Complement format and that S = 1 if the result is negative.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Sum = 100001110, Z = 0, C = 1, O = 0, S = 1</p></span>`,
+                `<span style="display: inline;"><p>Sum = 00001110, Z = 0, C = 0, O = 1, S = 0</p></span>`,
+                `<span style="display: inline;"><p>Sum = 100001110, Z = 0, C = 0, O = 1, S = 0</p></span>`,
+                `<span style="display: inline;"><p>Sum = 100001110, Z = 0, C = 1, O = 1, S = 0</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip0-1783839691762.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A broadcast channel has 10 nodes and total capacity of 10 Mbps. It uses polling for medium access. Once a node finishes transmission, there is a polling delay of 80 microsec to poll the next node. Whenever a node is polled, it is allowed to transmit a maximum of 1000 bytes. The maximum throughput of the broadcast channel is _________.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1 Mbps</p></span>`,
+                `<span style="display: inline;"><p>100/11 Mbps</p></span>`,
+                `<span style="display: inline;"><p>10 Mbps</p></span>`,
+                `<span style="display: inline;"><p>100 Mbps</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip1-1783840085161.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let <em>t</em><sub>1</sub> be the time complexity of the optimal algorithm which detects cycle in a singly linked list and <em>t</em><sub>2</sub> be the time complexity of the optimal algorithm which detects cycle in a singly linked when space is not a constraint. Then</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>t</em><sub>1</sub> &gt; <em>t</em><sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p><em>t</em><sub>1</sub> = <em>t</em><sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p><em>t</em><sub>1</sub> &lt; <em>t</em><sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip2-1783840167823.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following program:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip3-1783840194157.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2 3 5 6</p></span>`,
+                `<span style="display: inline;"><p>2 3 4 5</p></span>`,
+                `<span style="display: inline;"><p>4 5 0 0</p></span>`,
+                `<span style="display: inline;"><p>None of the above</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2 3 5 6</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The minimum frame size restriction in IEEE 802.3 is 64 bytes. What is the reason for this limitation?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>To acquire the channel</p></span>`,
+                `<span style="display: inline;"><p>To give fair and equal chance to all stations in network</p></span>`,
+                `<span style="display: inline;"><p>To monopolize the network</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>To acquire the channel</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Assume that the operators +, -, × are left associative and ^ is right associative. The order of precedence (from highest to lowest) is ^ &gt; × &gt; + &gt; -. Find the postfix expression corresponding to the infix expression:</p>
+<p> a + b × c - d ^ e ^ f</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>abc × + def ^^ -</p></span>`,
+                `<span style="display: inline;"><p>abc × + de ^ f ^ -</p></span>`,
+                `<span style="display: inline;"><p>ab + c × d - e ^ f ^</p></span>`,
+                `<span style="display: inline;"><p>- + a × bc ^^ def</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Putting rounding braces based on precedence and associativity can be given by<br> ((a + (b × c)) - (d ^(e ^ f)))<br>Hence postfix expressions will be given by abc × + def ^^-.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>If a relational decomposition is dependency-preserving but not lossless, which one of the following may arise when reconstructing the original relation?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Redundant functional dependencies</p></span>`,
+                `<span style="display: inline;"><p>Spurious tuples</p></span>`,
+                `<span style="display: inline;"><p>Update anomalies</p></span>`,
+                `<span style="display: inline;"><p>Multivalued dependencies</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A decomposition is dependency-preserving if all functional dependencies can be enforced by considering the decomposed relations individually, without requiring a join.</li>
+<li>A decomposition is lossless if the original relation can be reconstructed exactly by joining the decomposed relations.</li>
+<li>If the decomposition is not lossless, joining the decomposed relations may generate spurious tuples, i.e., tuples that were not present in the original relation.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip4-1783840375357.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( \theta \)(1)</p></span>`,
+                `<span style="display: inline;"><p>\( \theta \)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \theta \)(<em>n<sup>2</sup></em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \theta \)(<em>n </em>log <em>n</em>)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip5-1783840419031.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An articulation point in a connected undirected graph <em>G(V, E)</em> is a vertex <em>v </em>\( \in \) <em>V </em>whose removal disconnects the graph. The time complexity of finding an articulation point is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( \theta \)(<em>V</em> + <em>E</em>)</p></span>`,
+                `<span style="display: inline;"><p>\( \theta \)(<em>V</em> (<em>V </em>+ <em>E</em>))</p></span>`,
+                `<span style="display: inline;"><p>\( \theta \)(<em>VE</em>)</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip6-1783840491038.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following claims correct about strict 2PL?<br>I. Guaranteed conflict serializability.<br>II. Guaranteed strict recoverable.<br>III. Guaranteed deadlock avoidance.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I, II only</p></span>`,
+                `<span style="display: inline;"><p>I only</p></span>`,
+                `<span style="display: inline;"><p>I, II, III</p></span>`,
+                `<span style="display: inline;"><p>II, III only</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Every 2PL is conflict serializable, and every strict 2PL is always guaranteed to be strict recoverable but not deadlock free.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the time complexity of the following recurrence relation?</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip7-1783840606279.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip8-1783840616709.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip9-1783840624465.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip10-1783840629354.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip11-1783840634373.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip12-1783840645274.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>IP address of a computer is given as 129.57.104.143. Subnet mask is given as 255.255.255.0.<br>Which of the following is subnet Id?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>129.57.83.0</p></span>`,
+                `<span style="display: inline;"><p>129.57.104.0</p></span>`,
+                `<span style="display: inline;"><p>129.57.48.0</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip13-1783840721566.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following C statements:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip14-1783840760671.png"></p>
+<p>Which of the statements will result in syntax error?</p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2 </sub>and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>All of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip15-1783840810786.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Virtual memory reduces the time required for a context switch between processes</p></span>`,
+                `<span style="display: inline;"><p>The number of pages that can reside simultaneously in physical memory is limited by the size of the main memory.</p></span>`,
+                `<span style="display: inline;"><p>The dirty bit indicates whether the associated page has been modified since it was loaded into physical memory.</p></span>`,
+                `<span style="display: inline;"><p>A page fault occurs when the referenced page is not present in physical memory.</p></span>`,
+            ],
+            answer: ["B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Virtual memory provides a larger logical address space and memory protection. However, itdoes not reduce the overhead of a context switch, which involves saving and restoring the processor state. So, option (a) is incorrect.</li>
+<li>Physical memory has a finite capacity. Therefore, only a limited number of pages can be resident in main memory at any instant. So, option (b) is correct.</li>
+<li>The dirty bit is set whenever a page is modified after being loaded into physical memory. It helps determine whether the page must be written back to secondary storage before replacement. So, option (c) is correct.</li>
+<li>A page fault occurs when a process references a page that is not currently present in physical memory. The operating system then loads the required page from secondary storage. So, option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following is true? Assume <em>p</em>, <em>q </em>and <em>r </em>be propositional variables.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip16-1783840920617.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip17-1783840928158.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip18-1783840937109.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip19-1783840954394.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A bit map can be used to keep track of which blocks are free in a file system's partition on disk.<br>Assuming 2 KB block size and disk size of 128 GB, the number of disk blocks required for bit map is ________ in kilo.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip20-1783840980893.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The minimum number of 2 × 4 decoder (with enable i/p) required to implement a 5 × 32 decoder circuit is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 11,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip21-1783841011548.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Max-heap is constructed by inserting the following integer in the order into an empty tree. The sum of value of all the leaf nodes is __________.<br><strong>Input:</strong> 19, 31, 1, 2, 3, 4, 5, 6, 9, 22, 44</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 35,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip22-1783841037496.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let D<sub>120</sub> denote the lattice of all positive divisors of 120. Under the partial order of divisibility. Let <em>A </em>be the number of elements covering the least element in D<sub>120</sub> and let <em>C </em>be the number of complement elements in D<sub>120</sub>. The value of <em>A </em>× <em>C</em> is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 24,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip23-1783841098482.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A program consist of four major types of instructions. The instruction mix and the CPI for each instruction type are given in following table:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip24-1783841131952.png"></p>
+<p>If the clock frequency of the processor is 400 MHz. The average CPI of the processor is ________.<br>[Upto 2 decimal places]</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "1.95 to 1.98",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip25-1783841147803.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the graph with 11 vertices and 16 edges. The maximum value of minimum degree of graph is _________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip26-1783841177561.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A system has 3 processes competing for '<em>N</em>' identical resources each request 3 resources. The minimum value of '<em>N</em>' such that the system is deadlock free ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 7,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3 is number of process, '<em>N</em>' identical resources every process needs exactly 3 resources.<br>Providing 2 resources to all 3 will result in 6 resources.<br>So, minimum value of '<em>N</em>' such that the system is deadlock free = 6 + 1 = 7.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The number of binary search tree possible with 15 keys, when keys 1, 2, 3, 4, 5, ..... 15 are inserted into empty search tree with condition such that 6 is root of binary search tree and 12 is immediate right child of 6 are ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 8820,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip27-1783841236604.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a demand paged memory system, page table is held in registers. It takes 500 nsec to service a page fault if empty page is available or replaced page is not modified and 650 nsec if the replaced page is modified, main memory access time is 100 nsec. If the page to be replaced is modified 60% of time and page fault rate is 10% then average access time is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 149,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip28-1783841271415.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Evaluate the limit:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip29-1783841305789.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>f(t)</em> is continuous and limit exist at <em>t</em> = -1.</p></span>`,
+                `<span style="display: inline;"><p>Left hand limit is 1 and right hand limit is -1.</p></span>`,
+                `<span style="display: inline;"><p>The function is undefined at <em>t </em>= -1, so limit does not exist.</p></span>`,
+                `<span style="display: inline;"><p><em>f(t)</em> is defined but limit does not exist at <em>t </em>= -1.</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip30-1783841359042.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following hypothetical format used to represent the data:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip31-1783841554651.png"></p>
+<p>Minimum representable data in the system is ________?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S = 0, BE = 00000, M = 000000</p></span>`,
+                `<span style="display: inline;"><p>S = 0, BE = 00000, M = 000001</p></span>`,
+                `<span style="display: inline;"><p>S = 0, BE = 00001, M = 111111</p></span>`,
+                `<span style="display: inline;"><p>S = 0, BE = 00001, M = 000000</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip32-1783841601202.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The function <em>f</em>(A, B, C, D) represented by the given map is</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip33-1783841626890.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip34-1783841641162.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip35-1783841648044.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip36-1783841653972.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip37-1783841662547.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip38-1783841671518.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following relational schema:<br>Faculty( <span style="text-decoration: underline;">Fid </span>, Fname)<br>Student( <span style="text-decoration: underline;">Sid </span>, Sname, Fid)<br>The following SQL queries Q<sub>1</sub> and Q<sub>2</sub> are proposed for the specification "Retrieve list of all faculties who are not assigned to any student".</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip39-1783841720396.png"></p>
+<p>Which of the above queries are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Q<sub>1</sub> only</p></span>`,
+                `<span style="display: inline;"><p>Q<sub>2</sub> only</p></span>`,
+                `<span style="display: inline;"><p>Both Q<sub>1</sub> and Q<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both Q1 and Q<sub>2</sub> are correct.<br>\( \therefore \) (c) is the answer.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider 3 processes, P<sub>0</sub>, P<sub>1</sub>, P<sub>2 </sub>and P<sub>3</sub> shown in table:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip40-1783841836263.png"></p>
+<p>The completion order or the processes under the policies LRTF are: (Conflict for same burst time resolved in favour of lowest process id).</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip41-1783841860659.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip42-1783841909265.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip43-1783841919702.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip44-1783841925331.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip45-1783841933251.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following represents the LU decomposition of the given matrix. (Use Doolittle and Crout method)</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip46-1783849413171.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip47-1783849437474.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip48-1783849443232.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following regular expression represents the language accepted by given DFA.</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip49-1783849472743.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>b* + b*a (ba)*</em></p></span>`,
+                `<span style="display: inline;"><p><em>b + b*a (ba)*</em></p></span>`,
+                `<span style="display: inline;"><p><em>b* + ba (ba)*</em></p></span>`,
+                `<span style="display: inline;"><p><em>b* + b* (ab)a*</em></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip50-1783849515588.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip51-1783849536862.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>L </em>is CFL but not DCFL</p></span>`,
+                `<span style="display: inline;"><p><em>L </em>is regular but not CFL</p></span>`,
+                `<span style="display: inline;"><p><em>L</em> is DCFL but not regular</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip52-1783849586369.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a code converter as shown below that converts BCD to excess-3 code for the decimal digits.</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip53-1783849612671.png"></p>
+<p>The simplified Boolean function output excess-3 code for <em>A </em>will be</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip54-1783849632063.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip55-1783849637665.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip56-1783849643217.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip57-1783849648905.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip58-1783849660402.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip59-1783849682791.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip60-1783849691661.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip61-1783849698026.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip62-1783849703149.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip63-1783849708619.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip64-1783849726647.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a network having 6 nodes A, B, C, D, E and F. The measured delay between A to B, A to D and A to C are 4, 5 and 6 respectively. The vector tables of B, D, C are given as follows:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip65-1783849761982.png"></p>
+<p>Which of the following is routing table of A using distance vector routing?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip66-1783849775758.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip67-1783849786956.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip68-1783849795592.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip69-1783849810366.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given, Data size = 8 bits, Parity bits = 4 bits<br>A 12 bit codeword is transmitted from sender using hamming code. Noise has modified 1 bit and the codeword received at receiver is OxE4F (hexadecimal notations) what can be possible sender codeword that is transmitted?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>OxB4F</p></span>`,
+                `<span style="display: inline;"><p>OxA4F</p></span>`,
+                `<span style="display: inline;"><p>OxC4F</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip70-1783849857536.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following C program:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip71-1783849895164.png"></p>
+<p>Which of the following is the correct set of activation records along with their static and dynamic links ?<br><strong>Note:</strong> Links shown on left of the block diagram are static links and links shown on right of the block diagram are dynamic links.</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip72-1783849926659.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Dynamic links are the links which point to the activation record of the callee procedure.<br>Here, first time poo( ) has been called by main function.<br>Similarly foo( ) is also called by main function. Hence the dynamic links of both I poo( ) and foo( ) will be pointing to main( ) function.<br>Second time poo( ) has been called by foo( ) function hence it's dynamic link will be to foo( ).<br>Static links are the links that are used to access non-local data.<br>Here main( ) function can access the global variables. And the remaining functions have their variable scope to main function so, the activation record will be.</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip73-1783849968241.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A 4-way set associative cache has lines of 32-byte and a total cache size of 16 KB. Which of the 256 MB main memory block is mapped on to the set '50' of the cache memory?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(CFED09B)<sub>16</sub></p></span>`,
+                `<span style="display: inline;"><p>(FB3D64C)<sub>16</sub></p></span>`,
+                `<span style="display: inline;"><p>(FDE1400B)<sub>16</sub></p></span>`,
+                `<span style="display: inline;"><p>(CFED109B)<sub>16</sub></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip74-1783850038847.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip75-1783850111008.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip76-1783850117580.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip77-1783850125554.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip78-1783850133126.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip79-1783850139223.png"></p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip80-1783850150048.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statement is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Prim's algorithm never accepts cycle in the MST.</p></span>`,
+                `<span style="display: inline;"><p>Prim's algorithm constructs MST by selecting edge in increasing order of their weight.</p></span>`,
+                `<span style="display: inline;"><p>Spanning tree do have any cycle.</p></span>`,
+                `<span style="display: inline;"><p>MST have <em>n </em>- 1 edges if the graph has <em>n </em>vertices.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip81-1783850225098.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A TCP connection has been established between a client and a server. While data is being transmitted, the server suddenly crashes and reboots. Which one of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>After rebooting, the server sends a FIN segment to the client.</p></span>`,
+                `<span style="display: inline;"><p>After rebooting, the server sends a RST segment to the client upon receiving a segment belonging to the previous connection.</p></span>`,
+                `<span style="display: inline;"><p>If all the client's TCP keep-alive probes fail before the server responds, the client cannot continue transmitting data on the same connection.</p></span>`,
+                `<span style="display: inline;"><p>The server will always immediately restore all previous TCP connections after rebooting without any loss of state.</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A FIN segment is used for graceful termination of a TCP connection. After a crash, the server loses all TCP state information, so it cannot perform a proper connection close. So, option (a) is incorrect.</li>
+<li>After reboot, the server has no record of the old TCP connection. If it receives any segment belonging to that old connection, it responds with RST (Reset) to indicate invalid connection. So, option (b) is correct.</li>
+<li>TCP keep-alive probes are used to check whether the peer is alive. If all probes fail, the connection is considered dead and the client cannot continue using the same TCP connection. So, option (c) is correct.</li>
+<li>TCP is a connection-oriented protocol but does not maintain persistent state across system reboot. After reboot, all previous connection information is lost, so old connections cannot be restored. So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>For an animal <em>A</em>,<br><em>D(A) : A</em> is a tiger<br><em>P(A) : A</em> is a dear<br><em>W(A) : A</em> is brown in colour<br><em>E(A, B) : A </em>eats<em> B</em><br>What is the correct translation of the following sentence?</p>
+<p><em>"All tigers which are brown in colour eat all dears"</em></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip82-1783850418351.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip83-1783850425200.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip84-1783850431237.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip85-1783850436802.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip86-1783850445061.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider two context-free grammars, G<sub>1</sub> and G<sub>2</sub>, with the production rules given below:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip87-1783850498710.png"></p>
+<p>where<em> a, b</em> are the terminal characters and \( \epsilon \) represents the null string.<br>Which of the following option(s) is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>G<sub>1</sub> is not LL(1) due to left-recursion, but it is unambiguous.</p></span>`,
+                `<span style="display: inline;"><p>G<sub>2</sub> is not LL(1) due to a FIRST-FIRST conflict.</p></span>`,
+                `<span style="display: inline;"><p>Both G<sub>1 </sub>and G<sub>2 </sub>are ambiguous grammars.</p></span>`,
+                `<span style="display: inline;"><p>G<sub>2</sub> is an LL(1) grammar.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip88-1783850560593.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip89-1783850567008.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the counter circuit shown in the figure:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip90-1783850592522.png"></p>
+<p>Which of the below statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The counter goes through the states 1, 2, 5, 6.</p></span>`,
+                `<span style="display: inline;"><p>The counter goes into a lockout state if the counter starts from (0)<sub>10</sub>.</p></span>`,
+                `<span style="display: inline;"><p>The counter goes into a lockout state if the counter starts from (7)<sub>10</sub>.</p></span>`,
+                `<span style="display: inline;"><p>The counter do not enter into a lockout state.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip91-1783850644501.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Kaushal is known to eat ice cream after lunch with probability 1/4. The probability that he sleeps<br>after having ice cream after lunch is 2/3, and the probability that he sleeps after lunch without ice<br>cream is 1/6. Given that he slept, the probability that he had ice cream after lunch is ________.<br>(Upto two decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.5 to 0.6",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip92-1783850723406.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Suppose that you run the code fragment below (generate and then merge sort an array of random double values) for <em>N </em>= 10<sup>7</sup> and observe that it takes 5.3 seconds.<br><img src="images/pw_full_syllabus_test_4/mceclip93-1783850847085.png"><br>Assuming you have enough memory find a reasonable prediction of its running time (in seconds) for <em>N </em>= 10<sup>9</sup>? [Assume compared to merge sort, random number generator takes negligible time]<br>[Give an approximate value without decimal places]</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "670 to 690",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip94-1783850879221.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the directed graph given below:<br><img src="images/pw_full_syllabus_test_4/mceclip95-1783850902710.png"><br>Consider the following BFS traversal of the graph starting from vertex P.<br>I. PQRTMSNU<br>II. PQTNRMUS<br>III.PQRTNMSU<br>IV. PQRMSTNU<br>The number of valid BFS traversal are _________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Considering each traversal,<br><strong>• PQTNRMUS :</strong> Not possible because it's BFS so after vertex 'Q' vertex 'R' will be traversed.<br><strong>• PQRTNMSU : </strong>After vertex 'T', a vertex which is adjacent to vertex 'R' should be traversed.<br><strong>• PQRMSTNU :</strong> Since 'Q' is traversed before, R, hence vertex adjacent to 'Q' must be traversed before vector adjacent to vertex 'R'.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a system with an instruction set size of 220 distinct instructions and a register file size of 64 registers. The total memory size is 1 MB, and the system has a word size of 64 bits. The system supports a word-addressable memory instruction layout designed with an opcode field, a register field, a memory operand field, and a 6-bit immediate constant field. The total number of bits required to encode this instruction is __________?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 37,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip96-1783850977684.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip97-1783850985630.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following function:<br><img src="images/pw_full_syllabus_test_4/mceclip98-1783851011112.png"><br>The value returned by foo(foo(3)) is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 54,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip99-1783851034713.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following code for two process P<sub>0</sub> and P<sub>1</sub>:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip100-1783851083928.png"></p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip101-1783851104563.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 180,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip102-1783851112408.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>If a fair coin is tossed until the same result turns up in succession (both head or both tail) then find the probability when the number of tosses are even. (Upto two decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.66 to 0.68",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip103-1783851140258.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following instruction executed in the 16 bit CPU which supports 4 GB RAM. CPU contain 1 word long opcode.</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip104-1783851170905.png"></p>
+<p>'@' symbol indicates indirect addressing mode.<br>Number of memory references (M/C cycles) required to complete the instruction is ________?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip105-1783851186367.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider Host X sending a UDP datagram containing 1100 bytes of user data to Host Y over an Ethernet LAN. The Maximum Transmission Unit (MTU) of the network is 206 bytes (including the IP header). The size of the UDP header is 10 bytes, and the size of the IP header is 20 bytes. The network does not have the DF (Don't fragment) flag set. The fragment offset of the last fragment is __________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 138,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip106-1783851225619.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following DFA <em>D </em>over {<em>a, b</em>}:</p>
+<p><img src="images/pw_full_syllabus_test_4/mceclip107-1783851260777.png"></p>
+<p>Let D' be the DFA with least number of states possible such that L(D) = L(D'). Then number of states in D' is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>4</p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 05 - Full Syllabus Test - 5 (Advance Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following question consist of two words each that have a certain relationship to each other, followed by four lettered pairs of words. Select the lettered pair that has the same relationship as the original pair of words.<br>Symphony : Music</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Mural : Painting</p></span>`,
+                `<span style="display: inline;"><p>Ode : Prose</p></span>`,
+                `<span style="display: inline;"><p>Preface : Book</p></span>`,
+                `<span style="display: inline;"><p>Editorial : Journal</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The relation between symphony and music is 'Just as symphony is a type of the music", the same relation is applicable on mural and painting because "Muals is a type of painting".</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>There are seven girls sitting in a circle - Aina, Bina, China, Dipa, Elina, Fiona and Gita. Five of them are facing the centre while two of them are facing opposite to the center. Chine sits third to the left of Dipa and both are facing the centre. Elina is neither an immediate neighbour of Dipa nor of Chine. The one sitting exactly between Dipa and Fiona is facing opposite to the centre. Gita sits third to the right of Aina and Gita is facing the centre. One of Bina's neighbour is facing opposite to the centre. Who is sitting second to the left of Elina?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>China</p></span>`,
+                `<span style="display: inline;"><p>Gita</p></span>`,
+                `<span style="display: inline;"><p>Bina</p></span>`,
+                `<span style="display: inline;"><p>Aina</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip1-1788846482949.png"></p>
+<p>It is clear from above figure that Gita is sitting to the immediate left of Elina.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip1-1784904348588.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2, -3</p></span>`,
+                `<span style="display: inline;"><p>2 only</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip0-1788846557719.png"><img src="images/pw_full_syllabus_test_5/mceclip1-1788846563847.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip0-1788846634053.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>540.79</p></span>`,
+                `<span style="display: inline;"><p>1/1081.58</p></span>`,
+                `<span style="display: inline;"><p>1081.58</p></span>`,
+                `<span style="display: inline;"><p>367.42</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip1-1788846655196.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An edible oil is sold at the rates 150, 200, 250, 300 rupees per litre in four consecutive years.<br>Assuming that an equal amount of money is spent on oil by family in every year during these years. What is the average price of oil in rupees (approximately) per litre?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>210</p></span>`,
+                `<span style="display: inline;"><p>220</p></span>`,
+                `<span style="display: inline;"><p>225</p></span>`,
+                `<span style="display: inline;"><p>240</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>When equal expenditure is made at different prices, the average price is the Harmonic mean:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip6-1784904485754.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Points A and B are 90 km apart from each other on a highway. A car starts from A and another from B at the same time. If they go in the same direction, they meet in 9 hours and if they go in opposite directions, they meet in 9/7 hours their speed (in km/h).</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>25, 45</p></span>`,
+                `<span style="display: inline;"><p>20, 50</p></span>`,
+                `<span style="display: inline;"><p>30, 40</p></span>`,
+                `<span style="display: inline;"><p>35,65</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip0-1788846713569.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Here are some word translated from and artificial language,<br>qmelaqali means fruitcake<br>useguuamao means buttercup<br>Which word could mean "cupcake"?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>qualitiiqali</p></span>`,
+                `<span style="display: inline;"><p>amaotiimmeo</p></span>`,
+                `<span style="display: inline;"><p>pakitreft</p></span>`,
+                `<span style="display: inline;"><p>amaoqali</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip0-1788846776260.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Read the passage carefully and choose the best answer to the following question from the four alternatives given below.<br>The grouping or assemblage of plants, animals, and microbes found in a natural area such as a forest, grassland, pond, or coral reef is called a <strong>biotic community</strong>. It includes plant, animal, and microbial communities. The type of biotic community in a region depends largely on <strong>abiotic factors</strong> like water, moisture, temperature, salinity, and soil type. These factors determine which species can survive in that environment. A species is a group of similar organisms that can interbreed and produce offspring<br><br>Which of the following best defines a biotic community?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A group of only plants living together</p></span>`,
+                `<span style="display: inline;"><p>An assemblage of plants, animals, and microbes living in a natural area</p></span>`,
+                `<span style="display: inline;"><p>A group of only animals found in a forest</p></span>`,
+                `<span style="display: inline;"><p>A collection of abiotic factors in an ecosystem</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The passage defines a biotic community as the grouping of plants, animals, and microbes living together in a natural habitat such as a forest, pond, or grassland. Therefore, option (b) is correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>At break time 123 students go to the school canteen, which is selling cakes, ice creams and buns. 42 students buy ice-cream, 36 buy buns and 10 buy only cakes. 15 students buy ice-creams and buns. 10 buy ice-cream and cakes. 4 buy cakes and buns but not ice-cream and 11 buy ice-cream and buns but not cakes.<br>How many students bought nothing at all?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>73</p></span>`,
+                `<span style="display: inline;"><p>43</p></span>`,
+                `<span style="display: inline;"><p>50</p></span>`,
+                `<span style="display: inline;"><p>60</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>With the help of information given in question we can draw Venn diagram as shown below.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip0-1788846964422.png"></p>
+<p>So, the required answer is 123 - 73 = 50</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Choose the most appropriate word from the options given below to complete the following<br>sentence.<br>Based on his recent poor decisions, it was obvious that Seth lacked even a _____ of good sense.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>debasement</p></span>`,
+                `<span style="display: inline;"><p>diversion</p></span>`,
+                `<span style="display: inline;"><p>disapprobation</p></span>`,
+                `<span style="display: inline;"><p>modicum</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Modicum is a small or token amount.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A binary search tree with n nodes is constructed. Along with key each node store the number of elements in the sub tree rooted at that node. We have given two elements a and b such that a &lt; b. What will be the number of comparisons and additions respectively to find the number of elements m such that a \( \le \) m \( \le \) b?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(n)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(log n)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(log log n)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n) and \( O \)(n)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>\( O \)(n) comparisons for finding a and b since it is a binary search tree.<br>Now, in order to find the number of elements between a and b we need to find the inorder. For this again \( O \)(n) comparisons.<br>Then, starting from index a upto b calculate total number thus \( O \)(n) additions.<br>Hence option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a relation R(A, B, C, D, E). For which of the following set of Functional Dependencies (FDs) is R in BCNF?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>AB -> C, C -> D, D -> E, E -> A</p></span>`,
+                `<span style="display: inline;"><p>AB -> C, C -> D, D -> E</p></span>`,
+                `<span style="display: inline;"><p>ACD -> B, ACD -> E, AD -> C, AE -> B</p></span>`,
+                `<span style="display: inline;"><p>AB -> CDE, CDE -> A, BCD -> E, CDE -> B</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip0-1787545193668.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let A = Z be the set of all integers. Let F be the set of all bijective functions from A to A. For any two functions f<sub>1</sub>, f<sub>2</sub> \( \in \) F, the binary operation ° is defined by function composition as ( f<sub>1</sub>° f<sub>2</sub> )(x) = f<sub>1</sub>( f<sub>2</sub> (x)), \( \forall \)x\( \in \)A<br>Which of the following is correct about the algebraic structure (F,°)?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(F,°) is an Abelian group.</p></span>`,
+                `<span style="display: inline;"><p>(F,°) is a non-Abelian group.</p></span>`,
+                `<span style="display: inline;"><p>(F,°) is an Abelian monoid, but not a group.</p></span>`,
+                `<span style="display: inline;"><p>(F,°) is a non-Abelian monoid, but not a group.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For the set F of all bijective functions from Z to Z under function composition ( °):<br>• The composition of two bijective functions is bijective. Hence, F is closed under °.<br>• Function composition is associative.<br>• The identity function I(x) = x belongs to F and acts as the identity element.<br>• Every bijective function has a bijective inverse in F.<br>Therefore, (F,°) is a group.<br>Further, function composition is not commutative in general, i.e., there exist f, g \( \in \) F such that f ° g \( \ne \) g° f<br>Hence, (F,°) is non-Abelian.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The language {<em>ww </em>| <em>w </em>\( \in \) (0 + 1)*} is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Not accepted by any Turing Machine.</p></span>`,
+                `<span style="display: inline;"><p>Accepted by some Turing Machine, but not by pushdown automaton.</p></span>`,
+                `<span style="display: inline;"><p>Accepted by some pushdown automaton, but not context-free.</p></span>`,
+                `<span style="display: inline;"><p>Context-free, but not regular.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given language is ww and it is non-CFL but CSL, so, we have a Turing Machine which accepts it.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding web protocols.<br>S<sub>1</sub> : HTTPS uses port 443 by default.<br>S<sub>2</sub> : HTTP is considered a stateless protocol because the server does not retain client session information by default.<br>S<sub>3</sub> : Every HTTP request must result in the creation of a new TCP connection.<br>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>2</sub> are correct</p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> and S<sub>3</sub> are correct</p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>3</sub> are correct</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub>, S<sub>2</sub> and S<sub>3</sub> are correct</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• HTTPS uses TCP port 443 by default. So, S1 is correct.<br>• HTTP is a stateless protocol; the server does not maintain client session information across requests unless additional mechanisms (such as cookies or session tokens) are used. So, S<sub>2</sub> is correct.<br>• HTTP/1.1 supports persistent (Keep-Alive) connections, allowing multiple HTTP requests and responses to be exchanged over a single TCP connection. Therefore, a new TCP connection is not required for every HTTP request. So, S3 is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a singly linked list implementation in which each node contains only a data field and a pointer to the next node. A pointer variable R stores the address of a node X. The head pointer of the list is also available. An operation is required to remove the node X while preserving the sequence of data values stored in all remaining nodes. The algorithm is not allowed to copy data from one node to another. What is the worst-case time complexity of the most efficient algorithm<br>for this operation?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(1)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(log n)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n log n)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since the actual node X has to be removed and data copying is not allowed, the predecessor node of X must be found to modify its next pointer. In a singly linked list, this requires traversal from the head node. Worst-case traversal: \( O \)(n)</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding activation records in a recursive program.<br>S<sub>1</sub> : At any instant during execution, the activation records present in the runtime stack correspond to the nodes on the path from the root of the activation tree to the currently executing procedure.<br>S<sub>2</sub> : When a procedure call occurs, the activation record of the called procedure is pushed onto the runtime stack before the execution of the called procedure begins.<br>Which one of the following options is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip1-1787545615283.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let L<sub>1</sub> is reducible to L<sub>2</sub> and L<sub>2</sub> is reducible to L<sub>3</sub>.<br>If L<sub>3</sub> is decidable then which of the following statement is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L<sub>1</sub> is decidable but L<sub>2</sub> is undecidable</p></span>`,
+                `<span style="display: inline;"><p>L<sub>2</sub> is decidable but L<sub>1</sub> is undecidable</p></span>`,
+                `<span style="display: inline;"><p>Both L<sub>1</sub> and L<sub>2</sub> are decidable</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip2-1787545743998.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a circular queue implemented using a 0-indexed array A[0 ... n - 1], where one array position is always kept empty to distinguish between the full and empty states. The variable FRONT stores the index of the first element in the queue, and REAR stores the index of the last (rear-most) element currently present in the queue. Assuming the queue is neither empty nor full, the total number of elements currently stored in the circular queue is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(REAR - FRONT + n) mod n</p></span>`,
+                `<span style="display: inline;"><p>(REAR - FRONT + 1 + n) mod n</p></span>`,
+                `<span style="display: inline;"><p>(REAR - FRONT) mod n</p></span>`,
+                `<span style="display: inline;"><p>(REAR - FRONT - 1 + n) mod n</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since one array position is always kept empty, the queue can store at most n - 1 elements. Here,<br>• FRONT points to the first element of the queue.<br>• REAR points to the last (rear-most) element of the queue.<br>The number of elements depends on the relative positions of FRONT and REAR.<br>Case 1: REAR &gt; FRONT<br>The queue does not wrap around.<br>Number of elements = REAR - FRONT + 1<br>Case 2: REAR &lt; FRONT<br>The queue wraps around the end of the array.<br>Number of elements = (n - FRONT) + (REAR + 1) = REAR - FRONT + 1 + n<br>A single modulo expression that correctly represents both cases is (REAR - FRONT + 1 + n) mod n.<br>Since the queue is neither empty nor full, this expression always evaluates to the exact number of elements present in the queue.<br>Hence, the correct answer is (b) (REAR FRONT + 1 + n) mod n.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following functions:</p>
+<p>The self dual function is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>F(A, B, C) = \( \Sigma \)m(1, 2, 5, 7)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C, D) = \( \Sigma \)m(4, 5, 8, 9, 10, 11, 13, 15)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C, D) = \( \Sigma \)m(0, 1, 2, 3, 6, 8, 13, 14)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C) = \( \Sigma \)m(0, 2, 3, 6)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For a function F to be self dual, it should satisfy two conditions:<br>1. Number of min terms = Number of max terms<br>2. There should not be any mutually exclusive term.<br>Now option (a), F(A, B, C)= \( \Sigma \)m(1, 2, 5, 7)<br>Condition 1 is satisfied but condition (2) is not satisfied as (2, 5) are mutually exclusive term.<br>\( \therefore \) Not self dual.<br>Similarly b, c are also not self dual.<br>Option (d), F(A, B, C) = \( \Sigma \)m(0, 2, 3, 6)<br>Condition (1) is satisfied and condition (2) is also satisfied as it does not have any mutually exclusive term.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following Turing Machine:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip3-1787545934452.png"></p>
+<p>Identify the language accepted by the above TM</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip4-1787545976383.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip5-1787545981509.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip6-1787545987657.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip7-1787545992678.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The language accepted by TM = {a<sup>2i</sup> b<sup>i</sup>|i \( \ge \) 0} = {a<sup>m</sup> b<sup>n</sup>|m = 2n}.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>On a system using simple segmentation, compute the physical address for each of the logical address, given the following segment table.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip8-1787546085427.png"></p>
+<p>Match the following addresses using the segmentation.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip9-1787546092748.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1 - e, 2 - b, 3 - d, 4 - c, 5 - a</p></span>`,
+                `<span style="display: inline;"><p>1 - b, 2 - c, 3 - e, 4 - d, 5 - a</p></span>`,
+                `<span style="display: inline;"><p>1 - c, 2 - e, 3 - d, 4 - a, 5 - b</p></span>`,
+                `<span style="display: inline;"><p>1 - c, 2 - e, 3 - d, 4 - b, 5 - a</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(i) For segment 0, length = 124 &lt; Logical address 99<br>\( \therefore \) Physical address = 330 + 99 = 429<br>(ii) For segment 2, length = 99 &gt; logical address 78<br>\( \therefore \) Physical address = 111 + 78 = 189<br>(iii) For segment 1, length = 211 &lt; logical address 265<br>\( \therefore \) Trap<br>(iv) For segment 3, length = 302 &gt; logical address 222<br>\( \therefore \) Physical address = 498 + 222 = 720<br>(v) For segment 0, length = 124 &gt; logical address 111<br>\( \therefore \) Physical address = 330 + 111 = 441</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding the Internet Protocol Suite:<br>(i) In IPv4, if a router decrements the Time-to-Live (TTL) field of a packet to zero, it discards the packet and sends an ICMP Time Exceeded message to the source.<br>(ii) In TCP, the sequence number field specifies the sequence number of the first data byte carried in the segment.<br>Which one of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Both (i) and (ii) are correct</p></span>`,
+                `<span style="display: inline;"><p>(i) is correct and (ii) is incorrect</p></span>`,
+                `<span style="display: inline;"><p>(i) is incorrect and (ii) is correct</p></span>`,
+                `<span style="display: inline;"><p>Both (i) and (ii) are incorrect</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• In IPv4, every router decrements the TTL field by 1 before forwarding a packet. If the resulting TTL becomes 0, the router discards the packet and generates an ICMP Time Exceeded message to notify the source that the packet could not be delivered because its lifetime expired. Hence, statement (i) is correct.<br>• The TCP Sequence Number field does not identify the segment number. Instead, it specifies the sequence number of the first data byte in the segment. The receiver uses these byte sequence numbers to detect missing or duplicate data and to reassemble data in the correct order.<br>Hence, Statement (ii) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip10-1787546203529.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>It compares two given binary trees and returns 1 if two trees are different and it returns 0 otherwise.</p></span>`,
+                `<span style="display: inline;"><p>It compares two given binary trees and returns 0 if two trees are different and it returns 0 otherwise.</p></span>`,
+                `<span style="display: inline;"><p>It compares two given binary trees but return value can not be used to differentiate the trees.</p></span>`,
+                `<span style="display: inline;"><p>None of the above</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>In given code 2<sup>nd</sup> else if statement return 1 when both tree values are different.<br>It returns 1, when both trees are different<br>It returns 0, when both trees are same recursively.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following CFG:<br>S -> (L)|a<br>L -> SL'<br>L' -> , SL'|\( \epsilon \)<br>If the following table is constructed using LL(1) Parser, find the missing entries X and Y.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip11-1787546277304.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip12-1787546282607.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip13-1787546289180.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip14-1787546293466.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip15-1787546299075.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip16-1787546304991.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are correct?<br><br></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Deadlock freedom is necessary for satisfying bounded waiting condition.</p></span>`,
+                `<span style="display: inline;"><p>Deadlock freedom is necessary for satisfying progress.</p></span>`,
+                `<span style="display: inline;"><p>A solution satisfying bounded waiting cannot suffer from starvation.</p></span>`,
+                `<span style="display: inline;"><p>Peterson's solution for mutual exclusion satisfies mutual exclusion and progress, but fails to satisfy bounded waiting.</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• The bounded waiting condition guarantees that every process requesting the critical section is allowed to enter after a finite number of entries by other processes. So, option (a) is incorrect.<br>• The progress condition requires that if no process is executing in the critical section and one or more processes wish to enter it, one of the waiting processes must eventually be selected.<br>If a deadlock occurs, no process can proceed, violating the progress condition. So, option (b) is correct.<br>• The bounded waiting condition guarantees that every waiting process enters the critical section after a finite number of entries by other processes. Therefore, starvation cannot occur. So, option (c) is correct.<br>• Peterson's algorithm satisfies all three requirements of the critical section problem for two processes: mutual exclusion, progress, and bounded waiting. So, option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A processor employs memory-mapped I/O and has a write-back data cache. Device registers are assigned addresses within the physical address space. Unless specified otherwise, assume that the processor treats I/O addresses identically to ordinary memory addresses.<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If device registers are cached using the normal write-back policy, a write instruction may complete without immediately updating the corresponding I/O device.</p></span>`,
+                `<span style="display: inline;"><p>A load instruction may repeatedly return an old value of a device status register if that register is cached and the cache line is not invalidated.</p></span>`,
+                `<span style="display: inline;"><p>Memory-mapped I/O requires a separate address bus for distinguishing memory accesses from I/O accesses.</p></span>`,
+                `<span style="display: inline;"><p>Correct implementation of memory-mapped I/O generally requires the hardware to identify I/O address ranges so that normal cache behavior can be modified or bypassed.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• In a write-back cache, a write updates the cache line first and the modified data is written to the external device only when the cache line is written back. Therefore, the write instruction may complete before the corresponding I/O device is updated. So, option (a) is correct.<br>• If a device status register is cached, the processor may repeatedly read the cached copy even though the device has already updated the actual register. Unless the cache line is invalidated or bypassed, stale data may be returned. So, option (b) is correct.<br>• Memory-mapped I/O shares the same address bus and address space as main memory. I/O devices are distinguished using address decoding, not by providing a separate address bus. So, option (c) is incorrect.<br>• To ensure correct operation, hardware typically recognizes I/O address ranges and disables or modifies normal cache behavior (for example, by bypassing the cache). Otherwise, cached device registers may lead to incorrect operation. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct with respect to the C programming language?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A void pointer can be used to dereference an object after being typecast to an appropriate pointer type.</p></span>`,
+                `<span style="display: inline;"><p>Arithmetic operations can be applied directly on void pointers.</p></span>`,
+                `<span style="display: inline;"><p>An extern variable has a garbage value by default if it is not explicitly initialized.</p></span>`,
+                `<span style="display: inline;"><p>A particular extern variable can be declared multiple times, but it can be defined (initialized) only once.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip17-1787546516984.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The minimum number of two-input NAND gates required to implement the output of the combinational circuit given below is ________.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip18-1787546548369.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip19-1787546556252.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Given the 3-address code for a basic block:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip20-1787546591766.png"></p>
+<p>How many registers are needed to allocate this basic block with no spills ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip21-1787546598963.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following graph:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip22-1787546631706.png"></p>
+<p>By using Kruskal's algorithm, the weight of the minimal spanning tree ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 76,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip23-1787546639612.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let G be the complete bipartite graph K<sub>1, n - 1</sub>, where n \( \ge \) 3. A Breadth-First Search (BFS) is performed on G starting from an arbitrary vertex. The maximum possible height of the resulting BFS tree is ________.<br>(The height of a tree is defined as the number of edges on the longest path from the root to any leaf.)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip24-1787546713280.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following ER-diagram:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip25-1787546750160.png"></p>
+<p>The minimum relations required for above ER diagram, which satisfy BCNF _________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 5,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip26-1787546757709.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>An application executes a sequence of 200 instructions on a 5 stage pipeline processor consisting of Instruction Fetch (IF), Instruction Decode (ID), Operation Execution (EX), Memory Access (MA), and Writeback (WB) stages. In the absence of hazards, each instruction takes exactly 1 clock cycle per stage. Out of the 200 instructions, 20% are conditional branch instructions. Due to the branch target address being resolved in the EX stage, each branch instruction incurs a penalty of 2 stall cycles. The remaining instructions execute without any stalls. Given that there are no data or structural hazards, the total number of clock cycles required to complete the execution of the instruction sequence is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 284,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip27-1787546798598.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following B+ tree with the order of internal and leaf nodes as 3 and 2 respectively:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip28-1787546837116.png"></p>
+<p>The minimum number of key insertions that causes a new level to be introduced in the above B<sup>+</sup> tree ________. (Assume key redistribution is not allowed)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>If we insert keys 45, 48, 55 in same order, then on insertion of key 55, root will be overflow and new level will be created.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip29-1787546873864.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>I and IV only</p></span>`,
+                `<span style="display: inline;"><p>II and III only</p></span>`,
+                `<span style="display: inline;"><p>II and IV only</p></span>`,
+                `<span style="display: inline;"><p>I and II only</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Correct Answer is Option <strong>D</strong>.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following schedule S on operations of three transactions T<sub>1</sub>, T<sub>2</sub> and T<sub>3</sub> in a relational database system:<br>R<sub>3</sub>(A), R<sub>1</sub>(B), W<sub>3</sub>(A), W<sub>1</sub>(B), R<sub>2</sub>(A), R<sub>4</sub>(B), R<sub>1</sub>(A), W<sub>3</sub>(C), W<sub>4</sub>(C), R<sub>2</sub>(D), W<sub>4</sub>(D)<br>Where Ri(X) means transaction Ti read data X, and Wi(X) means transaction Ti write data X.<br>Consider the following statements for schedule S:<br>S<sub>1</sub> : S is conflict serializable.<br>S<sub>2</sub> : 3 serial schedules for T<sub>1</sub>, T<sub>2</sub>, T<sub>3</sub> are conflict equivalent to S.<br>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> is correct</p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> is correct</p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub> are correct</p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2 </sub>is correct</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip30-1787547052151.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let g(\( \cdot \)) be a function from A to B, and let f(\( \cdot \)) be a function from B to C.<br>Define a function h(\( \cdot \)) : A -> C by<br>h(x) = f (g(x)), \( \forall \)x\( \in \)A<br>If h(\( \cdot \)) is a one-to-one (injective) function, which one of the following statements must always be true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>g(\( \cdot \)) is a one-to-one (injective) function.</p></span>`,
+                `<span style="display: inline;"><p>f(\( \cdot \)) is a one-to-one (injective) function.</p></span>`,
+                `<span style="display: inline;"><p>g(\( \cdot \)) is an onto (surjective) function</p></span>`,
+                `<span style="display: inline;"><p>Both f(\( \cdot \)) and g(\( \cdot \)) are one-to-one (injective) functions.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip31-1787547124617.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a processor with a 64-bit address bus and a byte-addressable memory system having a physical address space of 2<sup>44</sup> bytes. The processor contains a 2 MB, 8-way set-associative cache with a block size of 256 bytes. Each cache line contains 1 valid bit, 1 dirty bit, and 3 bits for a pseudo-LRU replacement algorithm in addition to the tag bits.<br>What is the size of the tag directory of the cache?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>26 KB</p></span>`,
+                `<span style="display: inline;"><p>31 KB</p></span>`,
+                `<span style="display: inline;"><p>36 KB</p></span>`,
+                `<span style="display: inline;"><p>62 KB</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip32-1787547178244.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip33-1787547196044.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let the languages L<sub>1</sub> and L<sub>2</sub> be defined over the alphabet \( \Sigma \) = {a, b, c} as follows:<br>L<sub>1</sub> = {a<sup>n</sup> b<sup>n</sup>|n \( \ge \) 0}<br>L<sub>2</sub> = {a<sup>M</sup> b<sup>n</sup> c<sup>P</sup>|m, n, p \( \ge \) 0 and (m = n or n = p)}<br>Let, L<sub>3</sub> = \( \Sigma \)* - (L<sub>1</sub> \( \cup \) L<sub>2</sub>) where the complement is taken with respect to \( \Sigma \)*.<br>Which one of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L<sub>3</sub> is regular.</p></span>`,
+                `<span style="display: inline;"><p>L<sub>3</sub> is context-free but not regular.</p></span>`,
+                `<span style="display: inline;"><p>L<sub>3</sub> is context-sensitive but not context-free.</p></span>`,
+                `<span style="display: inline;"><p>L<sub>3</sub> is not recursively enumerable.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip34-1787547350351.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following predicate logic formulae correctly represent the statement:<br>"Every student has exactly one mentor"?<br>The meanings of the predicates used are<br>• student(x): x is a student<br>• mentor(y, x): y is the mentor of x<br>• noteq(a, b): a and b are not equal</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip36-1787547428374.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip37-1787547434781.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip38-1787547441771.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip39-1787547467265.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip35-1787547406992.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following "Max-heapify" algorithm. Array has size atleast n and 1 \( \le \) i \( \le \) n. After applying the Max-heapify rooted at A[i], the result will be the subtree of A[1 ... n] rooted at A[i] is max heap. [Assume that except root A[i], all its children satisfies heap property] Max-heapify (int A[ ], int n, int i)</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip40-1787547504330.png"></p>
+<p>Find missing statements at X, Y and Z respectively to apply the heapify for subtree rooted at A[i]</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>k \( \le \) n, (2k + 1) \( \ge \) n, A[2k + 1] &gt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>2k \( \le \) n, (2k + 1) \( \le \) n, A[2k + 1] &gt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>2k \( \le \) n, (2k + 1) \( \ge \) n, A[2k + 1] &lt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>k \( \le \) n, (2k + 1) \( \le \) n, A[2k + 1] &lt; A[2k]</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip41-1787547540984.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Suppose that you are using TCP over a 10<sup>9</sup> bps (1 Gbits/s) link with 1-way latency of 100 ms to transfer a 2 * 106 (2 MB) byte file and the TCP receive window size is always 106 (1 MB) bytes. If TCP sends 103 (1 KB) packets: (ignore packet transmission time and assume no packet loss)</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip42-1787547593948.png"></p>
+<p>How many RTTs does it take until slow start opens the sender's window to 1 MB?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>8</p></span>`,
+                `<span style="display: inline;"><p>10</p></span>`,
+                `<span style="display: inline;"><p>11</p></span>`,
+                `<span style="display: inline;"><p>12</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>One approach is to figure out the how much data is sent in each round trip. Given we know the 1-way latency of each RTT is 200 ms. If we can compute the data sent as a function of the RTT, and we know the time per RTT, we can compute the throughput, i.e. bytes/time. The TCP slow-start algorithm doubles the window, measured in segments, each RTT (until we reach linear mode, which we can ignore in this question). The send window exceeds 106 at the end of the 10th RTT.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following solution to a problem known as "Too much milk" problem which says that there shouldn't be more than one milk packets in the fridge. Thread A and Thread B buy the milk packet. If there is none milk packet in the fridge then either Thread A or Thread B can buy the milk and put it into the fridge. We have a milk variable which is initialized to 0 and it indicates the number of milk packets in the fridge. For synchronisation and for achieving the goal of "never making milk \( \ge \) 2", we present the following solution where noteA and noteB are two shared variables for the purpose of synchronisation.<br>Note that the buyMilk function will increment the milk variable. Thread A Thread B<br><img style="width: 100%; height: auto; max-width: 400px;" src="images/pw_full_syllabus_test_5/mceclip43-1787547688693.png"><br>Which of the following is true for the above attempt/solution to solve the Too much milk problem?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>This approach suffers from starvation.</p></span>`,
+                `<span style="display: inline;"><p>This approach suffers from deadlock.</p></span>`,
+                `<span style="display: inline;"><p>The goal is not achieved by this approach i.e. milk variable can have value more than 1.</p></span>`,
+                `<span style="display: inline;"><p>The progress is not satisfied.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The goal is achieved because the function buymilk is executed in mutual exclusion fashion. So, milk can never be more than 1. Deadlock is not possible But starvation is possible. If both Threads execute their first instruction simultaneously then starvation is possible. So, progress is not guaranteed.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The RELAX operation never increases any shortest-path estimate d[v].</p></span>`,
+                `<span style="display: inline;"><p>The Bellman-Ford algorithm always computes shortest paths in every weighted graph.</p></span>`,
+                `<span style="display: inline;"><p>If all edge weights in a connected, undirected graph are distinct, then the maximum weight edge in any cycle cannot belong to any Minimum Spanning Tree (MST).</p></span>`,
+                `<span style="display: inline;"><p>In a directed acyclic graph (DAG), single-source shortest paths can be computed in \( O \)(V + E) time.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• During relaxation, d[v] <- min(d[v], d[u] + w(u, v)).<br>Hence, the estimate d[v] either decreases or remains unchanged; it never increases. So, option (a) is correct.<br>• Bellman-Ford correctly computes shortest paths only if no negative-weight cycle is reachable from the source. If a reachable negative-weight cycle exists, shortest paths are undefined, and the algorithm reports the cycle instead of producing shortest paths. So, option (b) is incorrect.<br>• By the Cycle Property of MSTs, the maximum-weight edge in any cycle cannot belong to any MST. Since all edge weights are distinct, the maximum-weight edge in every cycle is unique. So, option (c) is correct.<br>• A topological ordering of a DAG can be computed in \( O \)(V + E) time. Relaxing every edge once in topological order also takes \( O \)(E) time. Therefore, the overall time complexity is \( O \)(V + E). So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Let N be a non-deterministic finite automata (NFA) on alphabet \( \Sigma \) = {0, 1} as given blow:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip44-1787547842689.png"></p>
+<p>Which of the following finite state machines accepts the same language as N?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip45-1787547851818.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip46-1787547860318.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip47-1787547865523.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip48-1787547871501.png"></p></span>`,
+            ],
+            answer: ["B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>NFA N can be converted in DFA in option (d). And DFA in (d) accepts \( \Sigma \)* = (0 + 1)* which are<br>equivalent to DFAs in option (b) and (c). N accepts \( \in \), but DFA in (a) does not accepts \( \in \).</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider an IP address 148.20.16.70/26. Which of the following IP addresses belongs to the same network as the given IP address?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>108.20.16.71/26</p></span>`,
+                `<span style="display: inline;"><p>148.20.16.65/26</p></span>`,
+                `<span style="display: inline;"><p>148.20.16.0/26</p></span>`,
+                `<span style="display: inline;"><p>148.20.16.69/26</p></span>`,
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip49-1787547945722.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider four processes P<sub>0</sub>, P<sub>1</sub>, P<sub>2</sub> and P<sub>3</sub>, each process has CPU burst followed by an I/O burst, followed by another CPU burst as show in the table from left to right respectively.<img src="images/pw_full_syllabus_test_5/mceclip50-1787547991422.png"></p>
+<p>Assume preemptive priority scheduling is used.<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The throughput of the system is 0.17.</p></span>`,
+                `<span style="display: inline;"><p>Process P<sub>3</sub> finishes first.</p></span>`,
+                `<span style="display: inline;"><p>Process P<sub>2</sub> completion time is 21.</p></span>`,
+                `<span style="display: inline;"><p>The CPU idle time is 17.39% (consider from '0').</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip51-1787548035242.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statement(s) is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>There exists a pushdown automaton (PDA) that recognizes the language L<sub>1</sub> = {0<sup>250</sup> 1<sup>500</sup>} \( \cup \) {1<sup>750</sup> 0<sup>125</sup>).</p></span>`,
+                `<span style="display: inline;"><p>The language L2 = {0<sup>i</sup>1j<sup>i</sup>|, j \( \ge \) 0, i \( \ne \) j} is regular.</p></span>`,
+                `<span style="display: inline;"><p>The minimum pumping length satisfying the pumping lemma for the language L<sub>3</sub> = (00)* is 2.</p></span>`,
+                `<span style="display: inline;"><p>The minimum pumping length satisfying the pumping lemma for the language L<sub>4</sub> = (01)* is 2.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip52-1787548175334.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following signed 2's complement numbers:<br>M = 1010 1101 0110 1011<br>Q = 0111 0100 1101 1010<br>The multiplication of M and Q is performed using radix-2 Booth's algorithm. Assume that the multiplier register is scanned from LSB to MSB and initially:<br>Q<sub>-1</sub> = 0<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The number of addition operations performed is 5.</p></span>`,
+                `<span style="display: inline;"><p>The number of subtraction operations performed is 6.</p></span>`,
+                `<span style="display: inline;"><p>The total number of arithmetic operations performed is 11.</p></span>`,
+                `<span style="display: inline;"><p>The number of iterations required for Booth multiplication is 16.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip53-1787548252963.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a cache memory using the LRU replacement policy. Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If increasing the cache associativity reduces the number of cache misses for a program, then at least one miss in the original cache was due to mapping restrictions.</p></span>`,
+                `<span style="display: inline;"><p>Increasing the cache size while keeping the associativity unchanged eliminates all cache misses caused by insufficient cache capacity.</p></span>`,
+                `<span style="display: inline;"><p>A fully associative cache of finite capacity cannot have misses due to mapping restrictions.</p></span>`,
+                `<span style="display: inline;"><p>If every memory block accessed by a program can simultaneously reside in the cache, then increasing the cache associativity cannot further reduce the number of cache misses after the first access to each block.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Increasing associativity only changes where a memory block may be placed; it does not increase the total cache capacity. Therefore, if the number of misses decreases after increasing associativity, the original cache must have suffered from mapping (conflict) misses. So, option (a) is correct.<br>• Increasing the cache size reduces capacity misses, but it does not necessarily eliminate all of them. If the program's working set is still larger than the enlarged cache, blocks will continue to be evicted and capacity misses will still occur. So, option (b) is incorrect.<br>• In a fully associative cache, any memory block may occupy any cache line. Since there are no placement restrictions, conflict (mapping) misses cannot occur. Only compulsory and capacity misses are possible. So, option (c) is correct.<br>• If all memory blocks accessed by the program can simultaneously reside in the cache, then after the first (compulsory) access to each block, no block is ever evicted. Since no evictions occur, increasing associativity cannot further reduce cache misses. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip54-1787548385267.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip55-1787548393482.png"></p></span>`,
+                `<span style="display: inline;"><p><em>E[X|A]</em> = 3.5</p></span>`,
+                `<span style="display: inline;"><p><em>E[X]</em> = 3.0</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip56-1787548422430.png"></p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip57-1787548435761.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip58-1787548448535.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the homogeneous system of linear equations <img src="images/pw_full_syllabus_test_5/mceclip59-1787548492604.png">and \( \lambda \) is a real value.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>For \( \lambda \) = 9, the system has infinitely many solutions with one free variable.</p></span>`,
+                `<span style="display: inline;"><p>For \( \lambda \) = 9, the rank of A is equal to 2.</p></span>`,
+                `<span style="display: inline;"><p>There exists a value of \( \lambda \) for which the system has exactly two linearly independent nontrivial solutions.</p></span>`,
+                `<span style="display: inline;"><p>For \( \lambda \) \( \ne \) 9, the system has only the trivial solution.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip60-1787548542199.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip61-1787548553332.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip62-1787548563937.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following relation schemas:<br>CLIENT (<span style="text-decoration: underline;">Clid</span>, Clname, sex)<br>BOOKING (<span style="text-decoration: underline;">Clid</span>,SvcId)<br>Assume the relation CLIENT contains all the information about clients, and the relation BOOKING contains information about which clients are booked for which service.<br>Which of the following represent "Services in which only male clients are booked"? (Assume every service is taken by at least one male or at least one female client).</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip63-1787548627966.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip64-1787548638627.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip65-1787548646169.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Option (a) represent services in which proper subset of male clients are booked.<br>• Option (b) represent services in which only male clients are booked.<br>• Option (c) represent services in which only male clients are booked.<br>Hence both (b) and (c) are correct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Let f : R -> R be a function defined as</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip66-1787548699116.png"></p>
+<p>where c<sub>1</sub> and c<sub>2</sub> are real constants. The function f(x) is continuous at x = 0.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip67-1787548704490.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip68-1787548710464.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip69-1787548717778.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip70-1787548723329.png"></p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip71-1787548729959.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip72-1787548747588.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip73-1787548762852.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A file system uses a linked-list approach for free-space management on a 16 GB disk with a block size of 2 KB. Block addresses are 32 bit long. Each free-space list block reserves a single 4-byte pointer at the end to link to the next list block. The list blocks are themselves allocated from the pool of free disk blocks. Therefore, a list block stores only the addresses of the remaining free blocks (excluding the list blocks used for free-space management). If the disk is initially completely<br>free, the minimum number of list blocks required to represent the free space is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 16384,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip74-1787548816341.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>In a computer system, cache access time is 8 ns, main memory access time is 70 ns, and disk access time is 1600 ns. If the hit rate of the cache is 75% and the hit rate of the main memory is 90%, the average memory access time is ________ ns. (Upto two decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "65 to 66",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip75-1787548848088.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Following is the K-map of a Boolean function of six variables U, V, W, X, Y and Z.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip76-1787548888629.png"></p>
+<p>The number of literals in the minimum sum of product (SOP) expression for the function is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 11,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip77-1787548920870.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a message with 40000 bits long that is to be sent from a source to a destination. There are three routers (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>) between the source (A) and the destination (B):</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip78-1787548988174.png"></p>
+<p>Each of the links has a bandwidth of 2 Mbps. The message is divided into packets, where each packet is 2000 bits long.<br>How much total time is taken (in ms) for the last bit to reach the destination if the propagation delay is 5 ms for each link? Assume store-and-forward packet switching and negligible router processing and queuing delays.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 43,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip79-1787548996125.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip80-1787549017549.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 121,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip81-1787549026868.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip82-1787549036632.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A processor executes a program containing 5 × 108 instructions. The instruction mix and corresponding CPI values are given below:</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip83-1787549081984.png"></p>
+<p>The processor completes the execution of the program in 2.5 seconds. The clock frequency of the processor (in GHz) is ________. (Upto two decimal place)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.55 to 0.6",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip84-1787549090910.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A Huffman tree is constructed for a text document containing 5 characters. The character 'e' appears most frequently, and the character 'i' has the next highest frequency.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip85-1787549128502.png"></p>
+<p>From the above, find the number of possible Huffman tree from this document?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip86-1787549147240.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The propagation delays of XOR gate, AND gate, NOR gate and multiplexers are 4 nsec, 3 nsec, 2.5 nsec and 1.5 nsec respectively.</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip87-1787549186901.png"></p>
+<p>If all the inputs are applied at the same time instant, the maximum propagation delay (in nsec) of the circuit is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 10,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip88-1787549199913.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip89-1787549208428.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A hash table of size 17 uses double hashing for collision resolution. The probe sequence for a key k is defined as h(k, i) = (h<sub>1</sub>(k) + i × h<sub>2</sub>(k)) mod 17 where, i = 0, 1, 2, ...<br>The hash functions are:<br>h<sub>1</sub>(k) = k mod 17<br>h<sub>2</sub>(k) = 1 + (k mod 13)<br>For the key value k = 50 the first two probe locations are already occupied. The location returned<br>by the third probe in the probe sequence is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip90-1787549267969.png"></p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip91-1787549276596.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>What is the output of given below c code?</p>
+<p><img src="images/pw_full_syllabus_test_5/mceclip92-1787549308758.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 84,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip93-1787549317885.png"></p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 06 - Full Syllabus Test - 6 (Advance Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following question consist of two words each that have a certain relationship to each other, followed by four pairs of words. Select the correct pair that has the same relationship as the original pair of words.<br><br>Medicine : Capsule</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Pearl : Shell</p></span>`,
+                `<span style="display: inline;"><p>Passenger : Bus</p></span>`,
+                `<span style="display: inline;"><p>Heart : Lungs</p></span>`,
+                `<span style="display: inline;"><p>Car : Vehicle</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Just as medicine is contained in capsule, in the same way, pearl is contained in shell, so the correct answer is (a).</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the sum of the all four digit numbers formed by using digits 0, 1, 4, 5 without repetition of digits?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>44440</p></span>`,
+                `<span style="display: inline;"><p>46460</p></span>`,
+                `<span style="display: inline;"><p>46440</p></span>`,
+                `<span style="display: inline;"><p>64440</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847201264.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip1-1788847208149.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip11-1784905061494.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip12-1784905065664.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip13-1784905070420.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip14-1784905076979.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip15-1784905083531.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847246777.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A circle of maximum possible area is inscribed in a quadrant (of a circle). If the radius of the circumscribing quadrant be <em>r</em>, then what is the area of the inscribed circle?</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847296430.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip1-1788847307177.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip2-1788847313814.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip3-1788847319633.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip4-1788847327079.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip5-1788847334019.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the sum of the series: 0.3 + 0.33 + 0.333 + ........ <em>n </em>terms?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip22-1784905194358.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip23-1784905199665.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip24-1784905207442.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip25-1784905215722.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847373256.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip27-1784905252415.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>120 m</p></span>`,
+                `<span style="display: inline;"><p>180 m</p></span>`,
+                `<span style="display: inline;"><p>240 m</p></span>`,
+                `<span style="display: inline;"><p>360 m</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip28-1784905283319.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The hotel is two blocks east of the drugstore. The market is one block west of the hotel. The drugstore is west of the market. If the first two statements are true, the third statement is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>true</p></span>`,
+                `<span style="display: inline;"><p>false</p></span>`,
+                `<span style="display: inline;"><p>uncertain</p></span>`,
+                `<span style="display: inline;"><p>insufficient Data</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847425432.png"></p>
+<p>The drugstore is west of the market. Thus, if the first two statements are true, then the third statement is true.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Read the passage carefully and choose the best answer to the following question from the four alternatives given below.</p>
+<p>Globalisation has connected people across the world through travel, trade, and information exchange. While it has improved communication and economic development, it has also contributed to the spread of diseases. According to Laurie Garrett's The Coming Plague, diseases such as AIDS, Ebola, Hantavirus, Rift Valley fever, and Legionnaires' disease have emerged or spread because of increased global travel, urbanisation, and contact with unfamiliar viruses. She also explains the resurgence of familiar diseases like tuberculosis, cholera, and pneumonia as a consequence of the widespread and unwise use of antibiotics. Many of the new diseases are clearly linked to changes in land use, which brings humans into close contacts with rodents or other animals that harbour viruses previously unknown to medicine and often deadly to humans. Resurgent diseases, by contrast, are a creation of our medical practice. By treating people with antibiotics without restraint, we unknowingly select strains that are immune to the antibiotics and that pass on their resistant genes to unrelated bacteria by way of plasmid transfer. The heroes of her book are the women and men on the frontlines of epidemiology. Garrett makes a plea for a greater commitment from our universities, medical schools, and government agencies to train workers who will be capable of recognizing new diseases and who will be able to move about equally well in the laboratory, the hospital and the field in pursuit of knowledge and public-health intervention around the world.</p>
+<p>According to the passage, why are many new diseases emerging due to changes in land use?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Humans are coming into contact with unfamiliar viruses.</p></span>`,
+                `<span style="display: inline;"><p>Urbanisation makes pathogens disappear.</p></span>`,
+                `<span style="display: inline;"><p>Humans become adaptive and pass on their genes to bacteria.</p></span>`,
+                `<span style="display: inline;"><p>People are intentionally releasing new viruses.</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The passage clearly states that changes in land use bring humans into contact with rodents and other animals carrying previously unknown viruses. These unfamiliar viruses can infect humans and lead to the emergence of new diseases.</p>
+<p>Option (a) is correct because it directly matches the passage's mention of "contact with unfamiliar viruses."<br>Option (b) is incorrect because urbanisation generally increases, not decreases, the spread of pathogens.<br>Option (c) is incorrect because the passage discusses bacteria becoming resistant due to antibiotics, not humans transferring genes to bacteria.<br>Option (d) is incorrect because the passage does not mention the deliberate release of viruses.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given below are 4 pairs of words. In three of the pairs, the words are having a meaning similar to each other whereas in one of the pairs, it is the opposite. Identify the option where the words do not have similar meaning.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>CONTRAPTION - SIMPLE</p></span>`,
+                `<span style="display: inline;"><p>JOCUND - MERRY</p></span>`,
+                `<span style="display: inline;"><p>INSCRUTABLE - ENIGMATIC</p></span>`,
+                `<span style="display: inline;"><p>LOUCHE - INDECENT</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Contraption means a complex arrangement which is opposite to simple.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The total exports and revenues from the exports of a country respectively are given in the two charts shown below. The pie chart for exports shows the quantity of each item exported as a percentage of the total quantity of exports. The pie chart for the revenue shows the percentage of the total revenue generated through export of each item. The total quantity of exports of all the items is 500 thousand tonnes and the total revenue is 250 crore rupees Among which of the following items has generated the maximum revenue per kg?</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip0-1788847614311.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Item 2</p></span>`,
+                `<span style="display: inline;"><p>Item 3</p></span>`,
+                `<span style="display: inline;"><p>Item 6</p></span>`,
+                `<span style="display: inline;"><p>Item 5</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip1-1788847637026.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The Boolean function <em>f</em>(<em>A, B, C</em>) = \( \Pi \)<em>M</em>(1, 3, 4, 5) is to be implemented by using 4 : 1 MUX having select lines <em>S</em><sub>1</sub> = <em>B</em> and <em>S</em><sub>0</sub> = C.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip23-1787744422552.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip24-1787744430612.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip25-1787744436462.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip26-1787744443562.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip27-1787744449342.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip28-1787744457957.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which code optimization can be applied on the following code:</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip29-1787744478592.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Loop unrolling</p></span>`,
+                `<span style="display: inline;"><p>Copy propagation</p></span>`,
+                `<span style="display: inline;"><p>Code motion</p></span>`,
+                `<span style="display: inline;"><p>Dead code elimination</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 'i' is assigned value 1 just before checking if condition.<br>\( \therefore \) The code following it is dead-code and can be eliminated.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider of the following is/are valid:</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip30-1787744534682.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1 and 2</p></span>`,
+                `<span style="display: inline;"><p>2 and 3</p></span>`,
+                `<span style="display: inline;"><p>1 and 3</p></span>`,
+                `<span style="display: inline;"><p>1, 2 and 3</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1. is valid by constructive dilemma.<br>2. is valid by disjunctive dilemma.<br>3. hypothetical syllogious.<br>All of the above are known rules of inference.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip31-1787744572090.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>10</p></span>`,
+                `<span style="display: inline;"><p>8</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip32-1787744611127.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let <em>L </em>= {<em>p, q, r, s, t</em>} be the lattice represented by the following Hasse diagram:</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip33-1787744656580.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1/5</p></span>`,
+                `<span style="display: inline;"><p>119/125</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip34-1787744687956.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following two statements about interrupt handling mechanisms in a CPU.</p>
+<p><strong>S<sub>1</sub> :</strong> In a system using a Programmable Interrupt Controller (PIC), the PIC can receive interrupt requests from multiple devices and determine the priority among them before notifying the CPU of an interrupt.</p>
+<p><strong>S<sub>2</sub> :</strong> In a vectored interrupt mechanism, the CPU must execute additional instructions to identify the source of the interrupt before it can obtain the starting address of the corresponding Interrupt Service Routine (ISR).</p>
+<p>Which of the above statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A Programmable Interrupt Controller (PIC) can receive interrupt requests from multiple devices simultaneously. It determines which interrupt has the highest priority and then sends the appropriate interrupt request to the CPU. So, S<sub>1</sub> is correct.</li>
+<li>In a vectored interrupt mechanism, the CPU does not need to execute additional instructions to identify the interrupt source first. The interrupt vector provides the information needed to obtain the starting address of the corresponding ISR directly. So, S<sub>2</sub> is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which statement regarding the B/B<sup>+</sup> tree is FALSE?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Binary search trees grow downhill while B/B<sup>+</sup> trees grow upward.</p></span>`,
+                `<span style="display: inline;"><p>In general, the time complexity of search operations in B/B<sup>+ </sup>trees is superior to AVL trees.</p></span>`,
+                `<span style="display: inline;"><p>A B/B<sup>+</sup> tree internal node's number of child pointers is always equal to the node's total number of keys plus one.</p></span>`,
+                `<span style="display: inline;"><p>A minimum degree identifies a B/B<sup>+</sup> tree. And to a minimal extent, key and address sizes, as well as hard disc block sizes.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both have asymptotic time complexity of order \( O \)(log <em>n</em>).</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following grammars is/are ambiguous?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S -> Aa|a , A -> a</p></span>`,
+                `<span style="display: inline;"><p>S -> aSb|aAb|\( \in \), A -> c</p></span>`,
+                `<span style="display: inline;"><p>S -> aS|Sa|a</p></span>`,
+                `<span style="display: inline;"><p>S -> aA|bB, A -> aA|\( \in \), B -> bB|\( \in \)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>S -> Aa|a , A -> a<br>The alternative S -> a produces only a, not aa. Hence, no string has two distinct derivations.<br>Therefore, option (a) is unambiguous.</li>
+<li>S -> aSb|aAb|\( \in \), A -> c<br>The production aSb generates strings of the form a<sup>n</sup>b<sup>n</sup>, whereas S -> aAb => acb generates a string containing c. These two cases cannot generate the same string.<br>Therefore, option (b) is unambiguous.</li>
+<li>S -> aS|Sa|a<br>Consider the string aa:<br>S => aS => aa and S => Sa => aa<br>The same string has two different derivations (and hence two different parse trees).<br>Therefore, option (c) is ambiguous.</li>
+<li>S -> aA|bB, A -> aA|\( \in \), B -> bB|\( \in \)<br>S -> aA generates only a<sup>+</sup>, while S -> bB generates only b<sup>+</sup>. Thus, the two alternatives cannot generate the same string.<br>Therefore, option (d) is unambiguous.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following code snippet to find the largest element in a linked list:<br><img src="images/pw_full_syllabus_test_6/mceclip35-1787745032384.png"></p>
+<p>Which of the following lines should be inserted in to while statement to complete the above code?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>temp -> next! = 0</p></span>`,
+                `<span style="display: inline;"><p>temp != 0</p></span>`,
+                `<span style="display: inline;"><p>head -> next! = 0</p></span>`,
+                `<span style="display: inline;"><p>head != 0</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The line "temp != 0" should be inserted to complete the above code.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>S<sub>1</sub> : The OLAP database is not often updated; as a result, data integrity is unaffected.<br>S<sub>2</sub> : In an OLAP database, tables are normalized.<br>S<sub>3</sub> : The data integrity constraint must be maintained in an OLTP database.<br>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>1 </sub>and S<sub>3</sub></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>As OLAP databases are typically not frequently updated, minimizing data. So, S<sub>1</sub> is correct.</li>
+<li>OLAP databases are usually denormalized to enhance query performance. Integrity concerns.<br>So, S<sub>2</sub> is incorrect.</li>
+<li>Data integrity constraints are crucial in OLTP databases to ensure accurate transactions.<br>So, S<sub>3</sub> is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a hash table size of 11 that uses separate chaining for collision resolution. The hash function used is:<br><img src="images/pw_full_syllabus_test_6/mceclip36-1787745594435.png"><br>Following 13 integers are insert into the hash table:<br> 21, 34, 56, 43, 78, 17, 92, 11, 66, 39, 50, 28, 18<br>Consider the following statements:<br>(i) The average chain length in the hash table is greater than 2 for non empty slots.<br>(ii) The index with maximum chain length is 6.<br>(iii) The are exactly seven chains and four empty slots in the hash table.<br>(iv) The total number of collision during key insertion is 11.</p>
+<p>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1, 2 and 4</p></span>`,
+                `<span style="display: inline;"><p>1 and 2</p></span>`,
+                `<span style="display: inline;"><p>3 and 4</p></span>`,
+                `<span style="display: inline;"><p>1, 2 and 3</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip37-1787745657841.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following two language:<br><img src="images/pw_full_syllabus_test_6/mceclip38-1787745692506.png"><br>Which of the following option is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub> is REC</p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub> is REC</p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub> are REC</p></span>`,
+                `<span style="display: inline;"><p>None of the above is REC</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip39-1787745749997.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A flight-booking system processes a seat-reservation transaction for passenger P on flight F. Before the transaction, the available-seat counter for F is 50. The transaction decrements the counter to 49 and inserts P's booking record. It then returns "Booking Confirmed" to the user, and the system's commit log records the transaction as successfully committed. Ten minutes later, the server crashes and restarts. After recovery, the available-seat counter for F is again 50, and P's booking record is completely missing, even though the commit log still shows that the transaction was committed before the crash. No other transaction accessed or modified flight F during this period. Which ACID property is certainly violated by the system?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Atomicity</p></span>`,
+                `<span style="display: inline;"><p>Consistency</p></span>`,
+                `<span style="display: inline;"><p>Isolation</p></span>`,
+                `<span style="display: inline;"><p>Durability</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>The transaction completed both operations: updating the seat counter and inserting the booking record. It was also successfully committed before the crash. Hence, the given scenario does not indicate an atomicity violation. So, option (a) is incorrect.</li>
+<li>Consistency ensures that all database constraints and rules remain satisfied after a transaction. The question provides no evidence that any such constraint was violated, so consistency violation cannot be concluded. So, option (b) is incorrect.</li>
+<li>Isolation deals with the interaction between concurrent transactions. Since no other transaction accessed or modified flight F, there is no evidence of an isolation violation. So, option (c) is incorrect.</li>
+<li>A committed transaction must preserve its effects even after a system crash and subsequent recovery. Here, the transaction was committed, but its changes were lost after recovery, clearly violating durability. So, option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a 2-level paging system with TLB support. The page table has divided into 4 K pages each of size 16 K words. If the physical address space has 64 M words which is divided into 16 K frame. TLB access time is 25 ns and main memory access time is 180 ns. The CPU finds 150 page reference in the TLB out of total reference of 200. Then what is the effective memory access time?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>280 ns</p></span>`,
+                `<span style="display: inline;"><p>310 ns</p></span>`,
+                `<span style="display: inline;"><p>295 ns</p></span>`,
+                `<span style="display: inline;"><p>325 ns</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip40-1787745885216.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A queue is implemented using two stack such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the queue)?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Both operations can be performed in \( O \)(1) time.</p></span>`,
+                `<span style="display: inline;"><p>At most one operation can be performed in \( O \)(1) time but the worst case time for the other operation will be \( O \)(<em>n</em>).</p></span>`,
+                `<span style="display: inline;"><p>The worst case time complexity for both operations will be \( \Omega \)(<em>n</em>).</p></span>`,
+                `<span style="display: inline;"><p>Worst case time complexity for both operations will be \( \Omega \)(log <em>n</em>).</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>ENQUEUE operation will take \( O \)(1) time.<br>DEQUEUE operation will take \( O \)(<em>n</em>) time for first element after that each element will take \( O \)(1) time.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A symbol table is primarily used to store information about identifiers such as variables, functions, and arrays, along with their attributes such as type and scope.</p></span>`,
+                `<span style="display: inline;"><p>The symbol table is built and used only during the lexical analysis phase of the compiler.</p></span>`,
+                `<span style="display: inline;"><p>The symbol table keeps track of the scope of identifiers and helps in detecting redeclaration errors within the same scope.</p></span>`,
+                `<span style="display: inline;"><p>The symbol table must be discarded immediately after the semantic analysis phase, as it is no longer needed for code generation.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A symbol table stores information about identifiers such as variables, functions, and arrays. It maintains attributes associated with these identifiers, such as type, scope, storage location, and parameter information. So, option (a) is correct.</li>
+<li>The symbol table is not built and used only during the lexical analysis phase. It is accessed and updated by multiple compiler phases, particularly semantic analysis and code generation.<br>So, option (b) is incorrect.</li>
+<li>The symbol table maintains information about the scope of identifiers in a program. It can<br>also help detect errors such as redeclaration of an identifier within the same scope. So, option (c) is correct.</li>
+<li>The symbol table may be required even after semantic analysis for later compiler phases. Information from it can be used during intermediate-code generation and code generation, so it need not be discarded immediately. So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following statement:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Merge sort on linked list take \( O \)(<em>n </em>log <em>n</em>) time to sort input of length <em>n</em>.</p></span>`,
+                `<span style="display: inline;"><p>Inplace merge sort on array will take \( O \)(<em>n </em>log <em>n</em>) time.</p></span>`,
+                `<span style="display: inline;"><p>Merge sort or linked list give better space complexity then on array.</p></span>`,
+                `<span style="display: inline;"><p>Merge procedure takes \( O \)(<em>m </em>+ <em>n</em>) time to merge two sorted arrays of size <em>m </em>and <em>n</em>.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Inplace merge sort time complexity is \( O \)(n<sup>2</sup>).</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>During the termination of a TCP connection, the endpoint that performs the active close enters the TIME_WAIT state after transmitting the final ACK.<br>Which of the following statements correctly explain the purpose of the TIME_WAIT state?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>It ensures that the final ACK can be retransmitted if the peer retransmits its FIN due to loss of the ACK.</p></span>`,
+                `<span style="display: inline;"><p>It prevents delayed duplicate TCP segments from a previous incarnation of the connection from being misinterpreted as belonging to a new connection with the same socket pair.</p></span>`,
+                `<span style="display: inline;"><p>It guarantees that all data segments transmitted before connection termination have been acknowledged by the receiving application.</p></span>`,
+                `<span style="display: inline;"><p>It allows sufficient time for old duplicate segments to expire from the network before the same four-tuple (source IP, source port, destination IP, destination port) is reused.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>TIME_WAIT ensures that if the final ACK is lost and the peer retransmits its FIN, the active closer can send the ACK again. This prevents the peer from remaining stuck waiting for the final ACK. So, option (a) is correct.</li>
+<li>TIME_WAIT prevents delayed duplicate segments from an old connection from being accepted as part of a new connection using the same socket pair. This avoids confusion between old and new connections. So, option (b) is correct.</li>
+<li>TIME_WAIT does not guarantee that all data has been acknowledged by the receiving application. TCP ensures reliable delivery at the transport layer, but application-level processing is outside the purpose of TIME_WAIT. So, option (c) is incorrect.</li>
+<li>TIME_WAIT keeps the connection state for a sufficient period so that old duplicate segments can expire from the network. This allows safe reuse of the same four-tuple for a new TCP connection. So, option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Compaction can eliminate external fragmentation in a variable-partition memory allocation scheme, but it does not eliminate internal fragmentation.</p></span>`,
+                `<span style="display: inline;"><p>Segmentation can suffer from external fragmentation.</p></span>`,
+                `<span style="display: inline;"><p>Indexed allocation does not suffer from external fragmentation.</p></span>`,
+                `<span style="display: inline;"><p>In indexed allocation, the data blocks of a file need not be allocated contiguously on the disk.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>In variable partitioning, free memory may become scattered into several holes, causing external fragmentation. Compaction relocates allocated partitions to combine these holes into a single contiguous free space. It does not remove internal fragmentation. So, option (a) is correct.</li>
+<li>Segmentation uses variable-sized segments. When segments are allocated and deallocated, free spaces of different sizes can arise between allocated segments, resulting in external fragmentation. So, option (b) is correct.</li>
+<li>In indexed allocation, the data blocks of a file can be placed at arbitrary locations on the disk. Therefore, contiguous free disk space is not required, and external fragmentation does not occur due to the file-allocation requirement. So, option (c) is correct.</li>
+<li>Indexed allocation does not require the data blocks of a file to be allocated in consecutive disk blocks. The blocks can be scattered across the disk, with the index block storing their addresses. So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following augmented grammar with {+, *, (, ), a} as terminals and E' as the start<br>symbol:<br>• E' -> E<br>• E -> TA<br>• A -> +TA|\( \in \)<br>• T -> FB<br>• B -> *FB|\( \in \)<br>• F -> (E)|a<br>Let I<sub>0</sub> = CLOSURE({E' -> .E})<br>The number of LR(0) items in the set GOTO(GOTO(GOTO (I<sub>0</sub>,' ('), E), ') ') is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip41-1787746348491.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A number is represented in 2's complement form as 11101000. The original number is _________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: -24,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip42-1787749297990.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A source host transfers a file of size 40 MB to a destination host over a circuit-switched network. A dedicated end-to-end circuit is established before data transmission begins. The data is transmitted over the circuit at a constant rate of 20 Mbps.<br>Assume that propagation delay, processing delay, and circuit release time are negligible. The total time from the instant the connection request is initiated until the last bit of the file is received at the destination is 18 seconds.<br>Determine the connection setup time ________ (in milliseconds) required to establish the circuit.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2000,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip43-1787749332758.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a two level cache system. For 120 memory references 24 misses in the first level cache and 12 misses in second level cache. The hit time of the second level cache is 6 cycles. If the average memory access time is 9.2 cycles then the miss penalty from the second level cache to main memory is ________ cycles. (Assume hit time of second level cache is two times of first level cache)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 50,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip44-1787749362277.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Let P and V be semaphore operations. P represents wait and V represents signal operation. Counting semaphore variable S is initialized to 1 and no blocked processes are present in the system. If the following operations are performed in the given order then what is the value of S?<br> P, V, P, V, V, P, P, V, V, V, P, V, V, V, P, P, V</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>7 P operations, 10 V operations<br>S = 1 => S = 1 - 7 + 10 = 4<br>\( \therefore \) S = 4 after the given operations.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br><img src="images/pw_full_syllabus_test_6/mceclip45-1787749414074.png"><br>How many number of correct statements?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 2,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip46-1787749433185.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Suppose that host A is connected to a router R1, R1 is connected to another router R2 and R2 is connected to host B. Suppose that a TCP message that contains 900 bytes of data and 20 bytes of TCP header is passed to the IP code at host A for delivery to B. Assume that link A-R1 can support a maximum frame size of 1024 bytes including a 14-byte frame header, link R1-R2 can support a maximum frame size of 512 bytes, including an 8-byte frame header, and link R2-B can support a maximum frame size of 512 bytes including a 12-byte frame header. Which of the following is correct about the Total length, DF, MF and Fragment offset fields of the IP header in the last packet transmitted over the link R1-R2?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Length = 500; DF = 0; MF = 0; Offset = 63</p></span>`,
+                `<span style="display: inline;"><p>Length = 500; DF = 0; MF = 1; Offset = 60</p></span>`,
+                `<span style="display: inline;"><p>Length = 424; DF = 0; MF = 0; Offset = 63</p></span>`,
+                `<span style="display: inline;"><p>Length = 460; DF = 0; MF = 0; Offset = 60</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The initial IP datagram will be fragmented as shown below. No other fragmentation will occur.<br><strong>Link A-R1:</strong><br>Length = 934 [920 + 14]; DF = 0; MF = 0; Offset = 0<br><strong>Link R1-R2:</strong><br>1. Length = 512 [504 + 8]; DF = 0; MF = 1; Offset = 0<br>2. Length = 424 [416 + 8]; DF = 0; MF = 0; Offset = 63</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let \( \chi \)(G) denote the chromatic number of a graph G.<br>Determine the chromatic numbers of the following graphs, respectively:<br><img src="images/pw_full_syllabus_test_6/mceclip47-1787749545620.png"><br>Here, \( \lor \) denotes the join of two graphs and \( \cup \) denotes their disjoint union.<br>Which of the following gives the correct values of the four chromatic numbers?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>m </em>+ 3, 2, 3, 4</p></span>`,
+                `<span style="display: inline;"><p><em>m </em>+ 3, 3, 3, 3</p></span>`,
+                `<span style="display: inline;"><p><em>m </em>+ 2, 2, 3, 4</p></span>`,
+                `<span style="display: inline;"><p><em>m </em>+ 3, 2, 2, 4</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip48-1787749600878.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip49-1787749609598.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip50-1787749632569.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip51-1787749642654.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip52-1787749649545.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip53-1787749655370.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip54-1787749661074.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip55-1787749676088.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let P(<em>x</em>) be an arbitrary predicate over the domain of natural numbers. Which one of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip56-1787749713273.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip57-1787749721987.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip58-1787749728858.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip59-1787749734414.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip60-1787749740697.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip61-1787749773133.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip62-1787749800931.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following DFA over {<em>a, b, c</em>}.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip63-1787749911100.png"></p>
+<p>Let X be the language accepted by DFA X. Then which of the following correctly describes X?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip64-1787749929279.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip65-1787749935793.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip66-1787749941671.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip67-1787749947839.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip68-1787749958078.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following function height, to which the pointer to the root node of a binary tree shown below is passed.<br>Note that max(a, b) is defined by the declaration #define max(a, b) (a &gt; b) ? a : b.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip69-1787749999795.png"></p>
+<p>The output obtained when the root of the tree given below is passed to the above function is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The output obtained will be -1. The reason is because, the expansion of max(a, b) will be (a &gt; b) ? a : b.<br>There's a big problem in this, as we need another set of parenthesis in bolds like this:<br>((a &gt; b) ? a : b))<br>In the absence of these brackets, the conditional operator ?: has lower precedence than '+', so first the comparison between a and b (leftHeight and rightHeight) will be done and then + will be evaluated before ?, leading to a different result than expected, and it can be verified that the program will output -1 for the given input.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let <em>S</em> = {1, 2, 3, ....., 120}. A non-empty subset <em>T </em>is selected uniformly at random from the power set of <em>S</em>. What is the probability that <em>T </em>contains at least one multiple of 4 and at least one multiple of 6?</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip70-1787750077376.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip71-1787750104162.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An non-pipelined CPU operates at 3.2 GHz with an average execution time of 8 cycles per instruction. It is replaced by a 6-stage pipelined version operating at 2.4 GHz. Out of every 100 instructions executed, 20 instructions experience a branch misprediction penalty of 4 cycles, while all other instructions execute with an ideal CPI of 1.<br>The performance speed-up achieved by switching to the pipelined architecture is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2.47</p></span>`,
+                `<span style="display: inline;"><p>2.96</p></span>`,
+                `<span style="display: inline;"><p>3.33</p></span>`,
+                `<span style="display: inline;"><p>3.60</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip72-1787750173154.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A NAT device translates the following outgoing packet:<br>• Source IP: 192.168.10.5<br>• Source Port: 49160<br>• Destination IP: 142.250.193.78<br>• Destination Port: 443<br>The NAT assigns the public address 203.0.113.20 and source port 62001.<br>Which of the following fields will be modified by the NAT device?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Source IP address only</p></span>`,
+                `<span style="display: inline;"><p>Source Port Number only</p></span>`,
+                `<span style="display: inline;"><p>Source IP address and Source Port Number</p></span>`,
+                `<span style="display: inline;"><p>Destination IP address and Destination Port Number</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given,<br> Source IP = 192.168.10.5<br> Source Port = 49160<br> Destination IP = 142.250.193.78<br> Destination Port = 443<br> NAT Public IP = 203.0.113.20<br> NAT Source Port = 62001<br><strong>Apply NAT Translation:</strong><br>Since the packet is going from a private network to the Internet, NAT translates the source address.<br> 192.168.10.5 : 49160 -> 203.0.113.20 : 62001<br>Therefore,<br>Source IP: Modified<br>Source Port: Modified<br><strong>Check the Destination:</strong><br>The destination information is not changed by this outgoing NAT translation.<br>Destination IP: Unchanged<br>Destination Port: Unchanged<br> 142.250.193.78 : 443 -> 142.250.193.78 : 443<br>Thus, the fields modified by NAT are Source IP address + Source Port Number</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following set of processes that need to be scheduled on a single CPU. Operating<br>system uses preemptive shortest remaining time first algorithm. (Ties are broken by using FCFS)<br><img src="images/pw_full_syllabus_test_6/mceclip73-1787750318901.png"><br>What is the average waiting time (ms) and efficiency (in percentage) of CPU? (Assume that all processes have their own I/O devices, consider only CPU times as burst time).</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5.5, 89.5</p></span>`,
+                `<span style="display: inline;"><p>5.5, 100</p></span>`,
+                `<span style="display: inline;"><p>6.5, 100</p></span>`,
+                `<span style="display: inline;"><p>6.5, 89.5</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip74-1787750352495.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following syntax directed translation scheme:<br>E -> E<sub>1</sub> × T{E.val = E<sub>1</sub>.val × T.val}<br>E -> T{E.val = T.val}<br>T -> F - T<sub>1</sub>{T.val = F.val - T<sub>1</sub>.val}<br>T -> F{T.val = F.val}<br>F -> 3{F.val = 2}<br>F -> 5{F.val = 4}<br>The output produced by the SDTS after evaluating the given expression is 5 - 3 × 5 × 3.<br>Assume attribute evaluation with bottom-up parsing, i.e., attributes are evaluated immediately after a reduction.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>15</p></span>`,
+                `<span style="display: inline;"><p>-42</p></span>`,
+                `<span style="display: inline;"><p>30</p></span>`,
+                `<span style="display: inline;"><p>16</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given string is 5 - 3 × 5 × 3<br><img src="images/pw_full_syllabus_test_6/mceclip75-1787750454873.png"></p>
+<p>(((5 - 3) × 5) × 3) => <br>F -> 3{F.val = 2}<br>F -> 5{F.val = 4}<br>(((4 - 2) × 4) × 2) => 16</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What will be the output of following program?</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip76-1787750483294.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>SMILE AND EAT</p></span>`,
+                `<span style="display: inline;"><p>EAT AND SMILE</p></span>`,
+                `<span style="display: inline;"><p>SWEAT AND EAT</p></span>`,
+                `<span style="display: inline;"><p>EAT AND REPEAT</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip77-1787750522912.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the methods used by process P<sub>1</sub> and P<sub>2</sub> for accessing their critical sections whenever needed, as given below. The initial values of shared Boolean variables, S<sub>1</sub> and S<sub>2</sub> are random assigned.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip78-1787750568928.png"></p>
+<p>For the program to guarantee mutual exclusion, the predicate P and Q in the while loop should be</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip79-1787750586835.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip80-1787750596776.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip81-1787750603851.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip82-1787750615253.png"></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>To enter the critical section, process <em>P<sub>i</sub> </em>first sets flag [<em>i</em>] to be true set <em>S</em><sub>1</sub> = <em>S</em><sub>2</sub>, thereby asserting that if the other process wishes to enter the critical section it can do so. If both processes try to enter at the same time. The <em>S</em><sub>1</sub> will be set <em>S</em><sub>2</sub> or <em>S</em><sub>2</sub> + 1 at roughly the same time. Only, one of these assignment will last; the other will occur, but will be overwritten immediately.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the evaluation of following expression tree on a machine in which memory can be accessed only through load and store instructions. The variable p, q, r, s, t and u are initially stored in memory. The binary operators used in the tree can be evaluated by the machine only when all operands are in register. The instruction produce result only in a register.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip83-1787750721303.png"></p>
+<p>What is the minimum number of registers needed to evaluate the expression if, no intermediate results can be stored in memory?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip84-1787750758171.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following relation schema with given functional dependency follows BCNF?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>R(A, B, C, D) with FD's AB -> C, C -> D and D -> A.</p></span>`,
+                `<span style="display: inline;"><p>R(A, B, C, D) with FD's A -> B, B -> C, C -> D and D -> A.</p></span>`,
+                `<span style="display: inline;"><p>R(A, B, C, D, E) with FD's AB -> C, C -> D, D -> B and D -> E.</p></span>`,
+                `<span style="display: inline;"><p>R(A, B, C, D) with FD's B -> C and B -> D.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ol>
+<li>R(A, B, C, D)<br>AB -> C, C -> D, D -> A<br><strong>Candidate Keys:</strong> AB, DB, CB<br>Relation is in 1NF, 2NF and 3NF since on RHS all are prime attribute are present, but not in BCNF because C -> A violates the condition.</li>
+<li>R(A, B, C, D)<br>A -> B, B -> C, C -> D, D -> A<br><strong>Candidate keys:</strong> A, B, C, D<br>Since all attributes are prime attribute and on LHS single attribute present. So in BCNF.</li>
+<li>R(A, B, C, D, E)<br>AB -> C, C -> D, D -> B, D -> E<br><strong>Candidate keys:</strong> AB, AD, AC<br>Here D -> E is partial dependency hence not in 2NF.</li>
+<li>R(A, B, C, D)<br>B -> C, B -> D<br><strong>Candidate key:</strong> AB<br>Here B -> C is partial dependency. Hence not in 2NF.</li>
+</ol></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip0-1787811555405.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip1-1787811563130.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip2-1787811569022.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip3-1787811576021.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip4-1787811583309.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip5-1787811602237.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip6-1787811612861.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip7-1787811619820.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let a quicksort algorithm <em>Q </em>sort numbers in ascending order using the first element as the pivot in every recursive call.<br>Let <em>c</em><sub>1</sub> and <em>c</em><sub>2</sub> be the number of comparisons made by <em>Q </em>on the following inputs:<br><strong>Input A:</strong> [2, 4, 6, 8, 10, 12]<br><strong>Input B:</strong> [6, 2, 10, 4, 12, 8]<br>Which one of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>c</em><sub>1</sub> &lt; <em>c</em><sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p><em>c</em><sub>1</sub> &gt; <em>c</em><sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p><em>c</em><sub>1</sub> = <em>c</em><sub>2 </sub> = 10</p></span>`,
+                `<span style="display: inline;"><p>No comparison difference can be determined from the inputs</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip8-1787811842107.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip9-1787811855025.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip10-1787811861474.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a system with k identical instances of a resource type R, shared among 5 processes P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub>, P<sub>5</sub>. Each process may require at most 2 instances of R during its execution. A process requests or releases only one instance at a time, and it can request its second instance only after acquiring its first instance.</p>
+<p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The minimum value of <em>k </em>that guarantees deadlock-free execution for every possible sequence of resource requests is 6.</p></span>`,
+                `<span style="display: inline;"><p>Fork <em>k </em>= 5, the system is in a deadlock state if and only if each of the 5 processes currently holds exactly one instance of R.</p></span>`,
+                `<span style="display: inline;"><p>Fork <em>k </em>= 5, if P<sub>1</sub> completes its execution and releases all the instances of R that it holds, the remaining four processes can complete their executions without deadlock.</p></span>`,
+                `<span style="display: inline;"><p>Mutual exclusion, hold-and-wait, and no preemption are sufficient conditions by themselves to guarantee the occurrence of a deadlock in this system.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip11-1787811984862.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip12-1787811993535.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A stack-based CPU uses a stack that grows toward higher memory addresses. The Stack Pointer<br>(SP) points to the next free location in the stack. The operands of PUSH X and POP X refer to memory locations.<br>Initially, the contents of memory locations 100, 200 and 300 are 0x28, 0x14 and 0x08, respectively, and the SP contains 0x0040.<br>The following instructions are executed:<br><img src="images/pw_full_syllabus_test_6/mceclip13-1787812028385.png"><br>Which of the following statements are correct after executing all the instructions?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Memory location 400 contains 0x14.</p></span>`,
+                `<span style="display: inline;"><p>Memory location 500 contains 0x40.</p></span>`,
+                `<span style="display: inline;"><p>The Stack Pointer (SP) points to 0x0040.</p></span>`,
+                `<span style="display: inline;"><p>The Stack Pointer (SP) points to 0x0041 immediately after executing I<sub>5</sub> (ADD).</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip14-1787812074349.png"></p>
+<p>• Memory location 400 contains 0x14.<br>• Memory location 500 contains 0x30.<br>• Stack pointer will be at 0x0040 after executing all instructions..<br>• Stack pointer will be at 0x0041 immediately after executing I<sub>5</sub> (ADD).</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following two finite automata D<sub>1</sub> and D<sub>2</sub>.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip15-1787812125908.png"></p>
+<p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L(D<sub>1</sub>) = L(D<sub>2</sub>)</p></span>`,
+                `<span style="display: inline;"><p>L(D<sub>2</sub>) is a proper subset of L(D<sub>1</sub>)</p></span>`,
+                `<span style="display: inline;"><p>L(D<sub>1</sub>) \( \cap \) L(D<sub>2</sub>) = L(D<sub>2</sub>)</p></span>`,
+                `<span style="display: inline;"><p>L(D<sub>1</sub>) \L(D<sub>2</sub>) is an infinite language.</p></span>`,
+            ],
+            answer: ["B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>This is well-defined because, from the given automata:<br>• D<sub>1</sub> accepts all binary strings that contain 101 as a substring.<br>• D<sub>2</sub> accepts all binary strings that end with 101.<br>Therefore, L(D<sub>1</sub>) \( \subseteq \) L(D<sub>2</sub>)<br>For example, 1010 \( \in \) L(D<sub>1</sub>) but 1010 \( \notin \) L(D<sub>2</sub>), proving that the subset is proper. Also, there are<br>infinitely many strings containing 101 but not ending in 101, such as 1010, 10100, 101000, ... .</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_6/mceclip16-1787812259742.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip17-1787812269135.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Let G = (V, E) be an undirected connected simple (i.e., no parallel edges or self-loops) graph with the weight function w : E -> R on its edge set. Let w(e<sub>1</sub>) &lt; w(e<sub>2</sub>) &lt; ..... &lt; w(e<sub>m</sub>), where E = {e<sub>1</sub>, e<sub>2</sub>, ....., e<sub>m</sub>} and m \( \ge \) 2. Suppose T is a minimum spanning tree of G. Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The tree T has to contain the edge e<sub>1</sub>.</p></span>`,
+                `<span style="display: inline;"><p>The tree T has to contain the edge e<sub>2</sub>.</p></span>`,
+                `<span style="display: inline;"><p>The minimum weight edge incident on each vertex has to be present in T.</p></span>`,
+                `<span style="display: inline;"><p>T is the unique minimum spanning tree in G.</p></span>`,
+            ],
+            answer: ["A", "B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(Here every edge weight is distinct, therefore MST is unique).<br>Option (a) is True. If we apply Kruskal's algorithm, it will choose e<sub>1</sub>.<br>Option (b) is True. If we apply Kruskal's algorithm then it will also choose e<sub>2</sub>, and 2 edges can not form a cycle. (e<sub>3</sub> is not guaranteed in MST, as it may form a cycle)<br>Option (c) is also true. If we apply Prim's algorithm also on any vertex (say u), it chooses minimum weight edge incident on vertex u.<br>Option (d) is true. Because every edge weight is distinct.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following relational schema:<br>Supplier ( <span style="text-decoration: underline;">Sid </span>, Sname, address)<br>Parts ( <span style="text-decoration: underline;">Pid </span>, Pname, color)<br>Catalog ( <span style="text-decoration: underline;">Sid Pid</span> , cost)<br>Which of the following query represent find the Pid of parts supplied by at least two different suppliers.</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip18-1787812503798.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip19-1787812549837.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip20-1787812557085.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A 1-bit full adder takes 10 ns to generate output carry bit and 20 ns to generate the output sum bit. If four such full adders are cascaded to form a 4-bit parallel adder, then the maximum number of 4 bit additions per second that can be performed by the parallel adder is _________ × 10<sup>6</sup>.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "19 to 21",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The 4-bit parallel adder can be analyzed as follows:<br><img src="images/pw_full_syllabus_test_6/mceclip21-1787812596702.png"><br>In the parallel adder, the carry must ripple through the first 3 stages to generate the final sum.<br>Thus, the last sum bit will be generated in 50 nsec.<br>Thus, the maximum rate of 4-bit additions possible is,<br><img src="images/pw_full_syllabus_test_6/mceclip22-1787812614418.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The following circuit has two flip-flops and two blocks of combinational logic with the indicated timing specifications:<br><img src="images/pw_full_syllabus_test_6/mceclip23-1787812670713.png"><br>Assume that the clock period is 25 ns, then the maximum setup time for the flip-flops for which this circuit will operate correctly will be ________ ns.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 8,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/q61_sol.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The chance that doctor A will diagnose a disease X correctly is 60%. The chance that a patient will die by his treatment after correct diagnosis is 40% and the chance of death by wrong diagnosis is 70%. A patient of doctor A, who had disease X, died then the chance that his disease was diagonised correctly is ________. (Upto 2 decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "0.4 to 0.5",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip25-1787812794381.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a sorted array of 1023 distinct integers. A binary search is performed for an element that is not present in the array. The search is implemented recursively, and one comparison is performed at each non-empty search interval.<br>The number of different unsuccessful search paths that require the maximum possible number of comparisons is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1024,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given,<br> <em>n </em>= 1023 = 210 - 1<br>A binary search on 1023 elements forms a complete binary search tree with 1023 internal nodes.<br>For an unsuccessful search, the search terminates at an empty subtree, which corresponds to an external node of the binary search tree.<br>For a binary tree with <em>n </em>internal nodes, the number of external nodes is <em>n</em> + 1.<br>Therefore, 1023 + 1 = 1024<br>Since, 1023 = 2<sup>10</sup> - 1<br>all 1024 external nodes occur at the same maximum depth.<br>Hence, every unsuccessful search path requires the maximum possible number of comparisons.<br>Therefore, the required number of unsuccessful search paths is 1024.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A system of linear equations is given by:</p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip26-1787812942072.png"></p>
+<p>Let L be the unique value of \( \lambda \) for which the system is inconsistent (has no solution) for some value of \( \mu \). Let M be the value of \( \mu \) such that the system has infinitely many solutions when \( \lambda \) = L. Calculate the integer value of L + M is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 18,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip27-1787812980888.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip28-1787812991449.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A variable (<em>x</em>) of type float is represented using the IEEE-754 single-precision floating-point format, which allocates 1 bit for the sign, 8 bits for the biased exponent, and 23 bits for the fraction. If the 32 bit hexadecimal representation of (<em>x</em>) is stored in memory as C1D50000H, then the decimal value represented by (<em>x</em>) is ________. (Upto three decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "-26.7 to -26.6",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_6/mceclip29-1787813055610.png"></p>
+<p><img src="images/pw_full_syllabus_test_6/mceclip30-1787813062388.png"></p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 07 - Full Syllabus Test - 7 (Advance Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following question consist of two words each that have a certain relationship to each other, followed by four pairs of words. Select the correct pair that has the same relationship as the original pair of words.<br><br>Identity : Anonymity</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Flaw : Perfection</p></span>`,
+                `<span style="display: inline;"><p>Careless : Mistake</p></span>`,
+                `<span style="display: inline;"><p>Truth : Lie</p></span>`,
+                `<span style="display: inline;"><p>Fear : Joy</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Anonymity is the lack of identity, in the same way, perfection is the lack of flaw.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A man has 7 relatives (4 women and 3 men) and his wife also has 7 relatives (3 women and 4 men). In how many ways can they invite 3 women and 3 men so that 3 of them are man's relatives and 3 of them are his wife's relatives?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>340</p></span>`,
+                `<span style="display: inline;"><p>485</p></span>`,
+                `<span style="display: inline;"><p>455</p></span>`,
+                `<span style="display: inline;"><p>469</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788847808761.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848009275.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip1-1788848034791.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The population of a town in the first year increases by 10%, in the next year it decreases by 10%. Once again in the third year it increases by 10% and in the fourth year it decreases by 10%. If the present population be 20,000, then the population after four years will be:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>16,902</p></span>`,
+                `<span style="display: inline;"><p>19,602</p></span>`,
+                `<span style="display: inline;"><p>20,000</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848093395.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A rabbit takes 22 leaps for every 17 leaps of cat and 22 leaps of a rabbit are equal to 17 leaps of the cat. The ratio of the speeds of rabbit and cat is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1 : 1</p></span>`,
+                `<span style="display: inline;"><p>484 : 289</p></span>`,
+                `<span style="display: inline;"><p>17 : 22</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848129338.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip7-1785133625645.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>-1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848161392.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Introducing a man to her husband, a woman said, "his brother's father is the only son of my grandfather. "How is the women related to this man?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Mother</p></span>`,
+                `<span style="display: inline;"><p>Aunt</p></span>`,
+                `<span style="display: inline;"><p>Sister</p></span>`,
+                `<span style="display: inline;"><p>Daughter</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848185752.png"></p>
+<p>Hence, the woman father is the man's father. Thus, woman is the sister of the man.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A train overtakes two persons walking along a railway track. The first one is walking at 4.5 km/ hr. The other one is walking at 5.4 km/hr. The train needs 8.4 and 8.5 seconds respectively to overtake them. The speed of the train if both the persons are walking in the same direction as the train is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>66 km/hr</p></span>`,
+                `<span style="display: inline;"><p>72 km/hr</p></span>`,
+                `<span style="display: inline;"><p>78 km/hr</p></span>`,
+                `<span style="display: inline;"><p>81 km/hr</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848238788.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip1-1788848245501.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Read the passage carefully and choose the best answer to the following question from the four alternatives given below.<br><br>People by and large are concerned with and pursue self-interest. They are unlikely to be motivated to use renewable resources in a prudent and sustainable fashion if they believe that others may overuse or deplete those resources. However, people are more likely to conserve resources when they have secure control over them, when substitutes are not readily available, and when they are rooted in a locality. Such people are also more likely to protect biodiversity and ensure the sustainable use of renewable resources.<br><br>According to the passage, under which condition are people most likely to use renewable resources sustainably?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>When they expect others to exploit the resources freely.</p></span>`,
+                `<span style="display: inline;"><p>When they have secure control over the resource base and are connected to their locality</p></span>`,
+                `<span style="display: inline;"><p>When renewable resources are available in unlimited quantity.</p></span>`,
+                `<span style="display: inline;"><p>When substitutes for renewable resources are easily available.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The passage clearly states that people are more likely to use renewable resources sustainably when they have secure control over the resource base, substitutes are not readily available, and they are rooted in a locality. These conditions encourage responsible use and conservation of biodiversity. Therefore, Option (b) is the correct answer.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>In the figure, if it is given that O is the centre of the circle and \( \angle \)AOC = 150° then \( \angle \)ABC is_____</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip12-1785133963068.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>105°</p></span>`,
+                `<span style="display: inline;"><p>130°</p></span>`,
+                `<span style="display: inline;"><p>150°</p></span>`,
+                `<span style="display: inline;"><p>75°</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1788848284133.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>For the implementation of Boolean Function: F(w, x, y, z) = \( \Sigma \)m(1, 3, 5, 7, 9, 11), the minimum number of two input NOR gates required is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+                `<span style="display: inline;"><p>6</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1787550065408.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is CFL but not DCFL?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L = {a<sup>P</sup>|P is prime}</p></span>`,
+                `<span style="display: inline;"><p>L = {a<sup>m</sup> b<sup>n</sup>|(m &lt; n) or (m &gt; n)}</p></span>`,
+                `<span style="display: inline;"><p>L = {a<sup>m</sup> b<sup>n</sup> c<sup>k</sup>|(m = n) or (n = k)}</p></span>`,
+                `<span style="display: inline;"><p>L = {a<sup>m</sup> b<sup>n</sup> c<sup>k</sup>| m = n, n = k}</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip1-1787550247325.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following C function:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip3-1787550303978.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S<sub>1</sub> only</p></span>`,
+                `<span style="display: inline;"><p>S<sub>2</sub> only</p></span>`,
+                `<span style="display: inline;"><p>S<sub>3</sub> only</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub>, S<sub>2</sub>, S<sub>3</sub> and S<sub>4</sub></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>All expression are same, all can be used in place of missing statement so that output will be 4.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip4-1787550381137.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>a = 2, b = 2 and c = 1</p></span>`,
+                `<span style="display: inline;"><p>a = 1, b = 2 and c = 2</p></span>`,
+                `<span style="display: inline;"><p>a = 2, b = 2 and c = 2</p></span>`,
+                `<span style="display: inline;"><p>a = 1, b = 1 and c = 2</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip5-1787550411383.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>S1 : Let the Bellman-Ford algorithm be executed on a weighted graph G = (V, E, w) from a vertex s \( \in \) V. If there is a vertex v \( \in \) V, i.e., \( \delta \)|V|(s,v) &lt; \( \delta \)<sub>|V|- 1</sub>(s, v) , then v is on a negative-weight cycle of G.<br>S5 : Floyd-Warshall solves all-pairs shortest paths in the same asymptotic running time when applied to weighted complete graphs, i.e., graphs where every vertex has an edge to every other vertex.<br>Which of the above statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip6-1787550497858.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which one of the following statements is true regarding stack-based page replacement algorithms?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>FIFO is a stack-based page replacement algorithm.</p></span>`,
+                `<span style="display: inline;"><p>LRU and optimal page replacement algorithms cannot suffer from Belady's anomaly.</p></span>`,
+                `<span style="display: inline;"><p>Increasing the number of frames always increases page faults in LRU.</p></span>`,
+                `<span style="display: inline;"><p>Optimal page replacement may generate more page faults than FIFO for the same number of frames increase the difficult level.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• FIFO does not satisfy the stack property. The set of pages in memory with k frames may not be a subset of the pages with (k + 1) frames. Hence, FIFO can suffer from Belady's anomaly. So, option (a) is correct.<br>• LRU and optimal are stack-based page replacement algorithms. So, option (b) is correct.<br>• LRU follows the stack property. Increasing the number of frames can only reduce or maintain the number of page faults. It never increases the page fault rate. So, option (c) is incorrect.<br>• Optimal page replacement replaces the page that will not be used for the longest time in the future. It gives the minimum possible number of page faults for a given reference string. Therefore, OPT cannot have more page faults than FIFO. They satisfy the stack property, i.e., pages present with k frames are always a subset of pages present with (k + 1) frames.<br>Therefore, increasing the number of frames cannot increase the number of page faults. So, option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following program:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip7-1787550639201.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(50, 30, 80)</p></span>`,
+                `<span style="display: inline;"><p>(40, 50, 60)</p></span>`,
+                `<span style="display: inline;"><p>(70, 80, 90)</p></span>`,
+                `<span style="display: inline;"><p>(50, 30, 70)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip8-1787550673560.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A total of 12 identical items are distributed among three distinct persons P, Q and R. Every possible distribution of the items, where a person can receive zero or more items, is equally likely. The probability that P receives at least 1 item, Q receives at least 2 items, and R receives at least 3 items is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip9-1787550708554.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip10-1787550715214.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip11-1787550722341.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip12-1787550728955.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip13-1787550745253.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip14-1787550764139.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a complete graph K<sub>n</sub> with n vertices. Let T<sub>1</sub> and T<sub>2</sub> be two distinct spanning trees of K<sub>n</sub>. The two spanning trees share exactly one common edge and have no other common edges. The Jaccard coefficient between the edge sets of T<sub>1</sub> and T<sub>2</sub> is ________.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip15-1787551012646.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip16-1787551017924.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip17-1787551023180.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip18-1787551027617.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip19-1787551035682.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The language accepted by the given Deterministic Finite Automata is</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip20-1787551060596.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Set of all strings of a's and b's where every string contains neither "aa" nor "bb" as a substring.</p></span>`,
+                `<span style="display: inline;"><p>Set of all strings of a's and b's where every string contains "aa" or "bb" as a substring.</p></span>`,
+                `<span style="display: inline;"><p>Set of all strings of a's and b's where every string contains "aa" and "bb" as a substring.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The set of strings are accepted by the given DFA is = {aabb, bbaa, aaabb, bbaaa, .....} Every string contains aa and bb as substring.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following recursive function is intended to reverse a singly linked list. struct Node</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip21-1787551127638.png"></p>
+<p>Which one of the following statements should replace /* ADD A STATEMENT HERE */?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>struct Node *temp = reverse(head -> next);</p></span>`,
+                `<span style="display: inline;"><p>struct Node * temp = reverse(head);</p></span>`,
+                `<span style="display: inline;"><p>struct Node * temp = head -> next;</p></span>`,
+                `<span style="display: inline;"><p>struct Node *temp = reverse(NULL);</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The recursive call must process the sublist starting from the second node so that the remaining list is reversed before the current node is handled. Therefore, the missing statement should be struct Node *temp = reverse(head -> next);<br>If reverse(head) is called instead, the function repeatedly invokes itself with the same node, resulting in infinite recursion. The other options either do not perform recursion or do not return the head of the reversed sublist.<br>Hence, option (a) is the correct answer.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Assume the base register contains 48756. The program counter is currently at 38786 memory location what is the branch address. If address field of jump instruction contain -40 in address field and the instruction is designed with the base register addressing modes?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>38746</p></span>`,
+                `<span style="display: inline;"><p>48716</p></span>`,
+                `<span style="display: inline;"><p>48756</p></span>`,
+                `<span style="display: inline;"><p>38826</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip22-1787551226571.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given that f(x) = x<sup>3</sup> - 12x<sup>2</sup> + 36x + 17, which of the following statements is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>f(x) is strictly decreasing for x\( \in \)(6, \( \infty \))</p></span>`,
+                `<span style="display: inline;"><p>f(x) is strictly increasing for x\( \in \)(2, 6)</p></span>`,
+                `<span style="display: inline;"><p>f(x) is strictly increasing for x\( \in \)(-\( \infty \), 2)</p></span>`,
+                `<span style="display: inline;"><p>None of the above</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip23-1787551280984.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A network uses the discontinuous subnet mask 255.255.85.0.<br>Which of the following pairs of IP addresses can belong to the same subnet?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>192.168.12.10 and 192.168.13.10</p></span>`,
+                `<span style="display: inline;"><p>10.25.20.5 and 10.25.84.5</p></span>`,
+                `<span style="display: inline;"><p>172.16.34.100 and 172.16.98.100</p></span>`,
+                `<span style="display: inline;"><p>150.20.68.15 and 150.20.100.15</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip24-1787551329481.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>For the circuit shown below:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip25-1787551366523.png"></p>
+<p>The correct input-output relationship between Y and (X<sub>1</sub>, X<sub>2</sub>) is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Y = X<sub>1</sub> + X<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Y = X<sub>1</sub> X<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Y = X<sub>1</sub> \( \oplus \) X<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip26-1787551422404.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip27-1787551431987.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following is/are incorrect?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Set of integers on addition operation is Monoid but not group.</p></span>`,
+                `<span style="display: inline;"><p>Set of integers on subtraction operation is Monoid but not group.</p></span>`,
+                `<span style="display: inline;"><p>Set of integers on multiplication operation is group but not Abelian group.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(Z, +) is both group and Abelian group, as it satisfies commutative property and inverse element is -a \( \forall \)a \( \in \) Z.<br>(Z, -) is never semigroup, because subtraction operation is not associative and hence cannot be monoid too.<br>(Z, ×) is monoid but not group, because inverse does not exist i.e. for any integer 'a' it's inverse is 1/a which is a rational number. Hence it is monoid only.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the registers R<sub>1</sub> and R<sub>2</sub> storing floating-point numbers in the IEEE-754 single-precision format. R<sub>1</sub> and R<sub>2</sub> have the following values shown in hexadecimal notation:<br>R<sub>1</sub> = 0x42200000<br>R<sub>2 </sub>= 0x40A00000<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The decimal value of R<sub>1</sub> is 40.</p></span>`,
+                `<span style="display: inline;"><p>The decimal value of R<sub>2</sub> is 5.</p></span>`,
+                `<span style="display: inline;"><p>The value of R<sub>1</sub> - R<sub>2</sub> in decimal is 35.</p></span>`,
+                `<span style="display: inline;"><p>The value of R<sub>1</sub> × R<sub>2</sub> in decimal is 185.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip28-1787551632852.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements about horizontal and vertical microprogramming is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A horizontal micro-instruction can activate multiple control signals simultaneously in a single clock cycle.</p></span>`,
+                `<span style="display: inline;"><p>Vertical micro-instructions generally require more control memory than horizontal microinstructions.</p></span>`,
+                `<span style="display: inline;"><p>Horizontal microprogramming generally provides faster execution because it requires little or no decoding of control signals.</p></span>`,
+                `<span style="display: inline;"><p>In vertical microprogramming, control signals are represented in encoded form and must be decoded before they are issued.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• In horizontal microprogramming, each control signal is represented by a separate bit in the control word. Therefore, multiple control signals can be asserted simultaneously. This enables parallel execution of multiple micro-operations. So, option (a) is correct.<br>• Vertical micro-instructions use encoded control fields, which reduce the width of the control word. As a result, they require less, not more, control memory than horizontal microinstructions. So, option (b) is incorrect.<br>• The control signals are generated directly from the micro-instruction without significant decoding. This reduces decoding delay and improves the execution speed of the control unit. Therefore, horizontal microprogramming is generally faster. So, option (c) is correct.<br>• Vertical micro-instructions store control information in encoded form to reduce the control word size. A decoder converts the encoded fields into the required control signals before execution. This additional decoding introduces some overhead. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which one or more of the following are valid reasons for a user process to invoke a system call?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>To perform file I/O operations.</p></span>`,
+                `<span style="display: inline;"><p>To allocate CPU registers for computation.</p></span>`,
+                `<span style="display: inline;"><p>To create or terminate a process.</p></span>`,
+                `<span style="display: inline;"><p>To communicate with hardware devices.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• File operations are privileged operations managed by the operating system. Hence, a user process must invoke a system call to perform file I/O. So, option (a) is correct.<br>• CPU registers are allocated and used by the processor while executing user instructions. No operating system service or system call is required. So, option (b) is incorrect.<br>• Process creation and termination are operating system services. Therefore, a user process must invoke a system call to create or terminate a process. So, option (c) is correct.<br>• Hardware devices cannot be accessed directly by user processes. Access to hardware is provided by the operating system through system calls. So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct regarding the interrupt cycle of a processor?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>During the interrupt cycle, the contents of the Program Counter (PC) are transferred to the Memory Buffer Register (MBR) before saving the return address.</p></span>`,
+                `<span style="display: inline;"><p>During the interrupt cycle, the Program Counter (PC) is loaded with the starting address of the interrupt service routine.</p></span>`,
+                `<span style="display: inline;"><p>The Memory Buffer Register (MBR) always stores the address of the next instruction to be executed during interrupt processing.</p></span>`,
+                `<span style="display: inline;"><p>In a processor with multiple interrupt levels, additional micro-operations may be required for interrupt priority handling.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• In the interrupt cycle, the address of the next instruction (stored in PC) must be saved before executing the interrupt service routine. The return address is temporarily transferred through MBR before storing it in memory.<br>PC -> MBR -> Memory<br>So, option (a) is correct.<br>• After saving the current PC value, the processor transfers control to the interrupt handler. The starting address of the interrupt service routine is loaded into PC.<br>PC <- ISR Address<br>So, option (b) is correct.<br>• The address of the next instruction is maintained by the Program Counter (PC), not MBR. MBR stores the data/instruction being transferred between CPU and memory during read/ write operations.<br>Next Instruction Address -> PC<br>So, option (c) is incorrect.<br>• Multiple interrupt levels require extra operations for identifying the highest-priority interrupt. Additional micro-operations may include priority checking, saving status information, and updating interrupt masks.<br>So, option (d) is correct.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The difference of two regular languages is regular.</p></span>`,
+                `<span style="display: inline;"><p>The difference of two context-free languages is context-free.</p></span>`,
+                `<span style="display: inline;"><p>The difference of two recursive languages is recursive.</p></span>`,
+                `<span style="display: inline;"><p>The difference of two recursively enumerable languages is recursively enumerable.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Regular and recursive languages are closed under difference operation, but context-free and recursively enumerable languages are not closed under difference operation.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>B<sup>+</sup> tree index faster for range queries compared to B tree index.</p></span>`,
+                `<span style="display: inline;"><p>If disk block allocated for B<sup>+</sup> tree index and same size disk block allocated for B tree index. Then number of index blocks and I/O cost of B<sup>+</sup> tree index less than or equal to B tree index for given distinct keys.</p></span>`,
+                `<span style="display: inline;"><p>If disk allocated for B<sup>+</sup> tree index and same size disk block allocated for B tree index. Then B tree index access cost less than as equal to B<sup>+</sup> tree index for given distinct keys.</p></span>`,
+                `<span style="display: inline;"><p>If number of keys that can store in B tree and B<sup>+</sup> tree index is same then I/O cost of B tree index less than equal to I/O cost of B<sup>+</sup> tree index for.</p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>If disk block allocated for B<sup>+</sup> tree index and same size disk block is allocated for B tree index. Then B tree index access cost is greater than B<sup>+</sup> tree index for given distinct keys.<br>So option (c) is incorrect.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a paging system with a Translation Lookaside Buffer (TLB). The TLB lookup is performed before accessing the main memory. Assume that the entire page table and all pages are available in the main memory. The effective memory access time of the system is 350 nsec. The TLB hit ratio is 0.8, and the main memory access time is 280 nsec. The time required to search the TLB is<br>________ nsec. (Assume that a TLB miss requires one additional memory access compared to a TLB hit.)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 14,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip29-1787552147053.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The set of numbers {1, 2, 3, 4, 5) is inserted one by one in random order into an initially empty BST. The number of distinct insertion sequences that result in a tree with root node 3 and height 2 is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 24,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since the root node is 3, the first inserted element must be 3.<br>The remaining elements are partitioned as:<br>Left subtree = {1, 2}, Right subtree = {4, 5}<br>For the resulting BST to have height 2, both subtrees must have height 1.<br>Left subtree:<br>The valid insertion orders are:<br>• 1, 2<br>• 2, 1<br>Hence, there are 2 valid orders.<br>Right subtree:<br>Similarly, the valid insertion orders are:<br>• 4, 5<br>• 5, 4<br>Hence, there are 2 valid orders.<br>After inserting the root, there are 4 remaining insertions: two from the left subtree and two from the right subtree.<br>The number of ways to interleave these while preserving the relative order within each subtree is</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip30-1787552193590.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following relation table (where keys are underlined) and SQL:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip31-1787552241494.png"></p>
+<p>Select Snum from Student S where S.Snum NOT IN<br>(Select E.Snum from enroll E)<br>The number of tuples returned by the SQL query is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 3,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip32-1787552262293.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A student takes his examination in four subjects P, Q, R, S. His chances of passing are:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip33-1787552298895.png"></p>
+<p>To qualify, he must pass in P and at least two other subjects is ________.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip34-1787552317115.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip35-1787552322469.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip36-1787552328335.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip37-1787552333070.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip38-1787552345188.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let G = (V, E) be a connected undirected graph with positive edge weights, and let T be a minimum spanning tree of G. For any two vertices u, v \( \in \) V, let<br>• w<sub>1</sub>(u, v) denote the minimum possible value of the maximum edge weight among all paths between u and v in G, and<br>• w<sub>2</sub>(u, v) denote the maximum edge weight on the unique path between u, v in T.<br>Which one of the following options is correct for all possible choices of G, T, u and v?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) &gt; w<sub>2</sub>(u, v)</p></span>`,
+                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) \( \ne \) w<sub>2</sub>(u, v)</p></span>`,
+                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) = w<sub>2</sub>(u, v)</p></span>`,
+                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) &lt; w<sub>2</sub>(u, v)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Let,<br>• w<sub>1</sub>(u, v) denote the minimum possible value of the maximum edge weight among all paths between u and v in G.<br>• w<sub>2</sub>(u, v) denote the maximum edge weight on the unique path between u and v in the minimum spanning tree T.<br>The unique path between any two vertices in a minimum spanning tree satisfies the Minimum Bottleneck Path Property.<br>Assume, for contradiction, that there exists a path between u and v in G whose maximum edge weight is less than w<sub>2</sub>(u, v).<br>Adding this path to the minimum spanning tree creates a cycle containing the maximum-weight edge of weight w<sub>2</sub>(u, v).<br>Since every edge on the alternative path has weight smaller than w<sub>2</sub>(u, v), deleting the maximumweight edge from the cycle produces another spanning tree with a smaller total weight than T.<br>This contradicts the assumption that T is a minimum spanning tree.<br>Hence, no such path exists. Therefore, w<sub>1</sub>(u, v) = w<sub>2</sub>(u, v)</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Let A be the adjacency matrix of a simple connected undirected graph G with n vertices. If trace(A<sup>2</sup>) = 2(n - 1), which one of the following statements is always correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>G is a tree</p></span>`,
+                `<span style="display: inline;"><p>G is a cycle graph</p></span>`,
+                `<span style="display: inline;"><p>G is a complete graph</p></span>`,
+                `<span style="display: inline;"><p>G is bipartite</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip39-1787552612670.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip40-1787552624213.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>k log n sorted subarrays, each of size n/k, are to be merged into a single sorted array. Find the time complexity of the most efficient algorithm that merges all the subarrays into a single sorted array.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(n log n \( \cdot \) log(k log n))</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n log n \( \cdot \) log k)</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip41-1787552684573.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip42-1787552690657.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip43-1787552702331.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a 6 stage pipeline processor that allows overlapping execution of all instructions except memory-based instructions. A memory-based instruction introduces a penalty of 5 pipeline cycles if it is not optimized. In a program, 35% of the instructions are memory-based. Among the memorybased instructions, 60% are optimized and do not introduce any penalty. The remaining memorybased<br>instructions suffer from the penalty. Additionally, branch instructions introduce an average stall of 0.08 cycles per instruction. Assume the pipeline cycle time is 10 ns.<br>The average instruction execution time of the processor is:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>14.20 ns</p></span>`,
+                `<span style="display: inline;"><p>15.40 ns</p></span>`,
+                `<span style="display: inline;"><p>16.30 ns</p></span>`,
+                `<span style="display: inline;"><p>17.80 ns</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip44-1787552780047.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip45-1787552790826.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the digital circuit shown below:<br>A single digit decimal number (B) is converted into its 4 bit binary equivalent (B<sub>3</sub> B<sub>2</sub> B<sub>1</sub> B<sub>0</sub>) and then applied to the addend bits of the adder as shown below:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip46-1787552858510.png"></p>
+<p>The output S<sub>3</sub> S<sub>2</sub> S<sub>1</sub> S<sub>0</sub> is the</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>8's complement of B.</p></span>`,
+                `<span style="display: inline;"><p>9's complement of B.</p></span>`,
+                `<span style="display: inline;"><p>10's complement of B.</p></span>`,
+                `<span style="display: inline;"><p>11's complement of B.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip47-1787552915741.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A TCP sender has the following parameters:<br>• Congestion Window (cwnd) = 12 KB<br>• Receiver Advertised Window (rwnd) = 9 KB<br>• LastByteSent (LBS) = 28672 bytes<br>• LastByteAcked (LBA) = 22528 bytes<br>Assuming no ACK is received during the interval under consideration, which one of the following<br>pairs correctly represents:<br>1. Effective sender window, and<br>2. Maximum additional bytes that can be transmitted immediately?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(9 KB, 3 KB)</p></span>`,
+                `<span style="display: inline;"><p>(12 KB, 9 KB)</p></span>`,
+                `<span style="display: inline;"><p>(9 KB, 13 KB)</p></span>`,
+                `<span style="display: inline;"><p>(3 KB, 12 KB)</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The sender window in TCP is constrained by both the congestion window (cwnd) and the receiver advertised window (rwnd). Therefore, the maximum amount of unacknowledged data that the sender can have in transit is<br>Effective Sender Window = min(cwnd, rwnd)<br>= min(12 KB, 9 KB) = 9 KB = 9216 bytes<br>The amount of data that has already been transmitted but is yet to be acknowledged is<br>Outstanding Bytes = LastByteSent - LastByteAcked<br>= 28672 - 22528 = 6144 bytes = 6 KB<br>The sender can transmit only the unused portion of the effective sender window. Hence,<br>Maximum Additional Bytes = Effective Sender Window - Outstanding Bytes<br>= 9216 - 6144 = 3072 bytes = 3 KB<br>Thus, the effective sender window is 9 KB, and the sender can immediately transmit 3 KB of<br>additional data. Effective Sender Window = 9 KB<br>Maximum Additional Bytes = 3 KB</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which one of the following predicate formulae is not logically valid?<br>Note that Q is a predicate formula without any free occurrence of x.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( \forall \)x(p(x) \( \land \)Q) \( \equiv \) \( \forall \)x p(x) \( \land \)Q</p></span>`,
+                `<span style="display: inline;"><p>\( \exists \)x(p(x)\( \lor \)Q) \( \equiv \) \( \exists \)x p(x)\( \lor \)Q</p></span>`,
+                `<span style="display: inline;"><p>\( \exists \)x(Q -> p(x)) \( \equiv \)Q -> \( \forall \)x p(x)</p></span>`,
+                `<span style="display: inline;"><p>\( \forall \)x(Q -> p(x)) \( \equiv \)Q -> \( \forall \)x p(x)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip48-1787553037819.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip49-1787553051050.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider two stacks S<sub>1</sub> and S<sub>2</sub>. The stack S<sub>1</sub> has a capacity of 5 elements and stack S<sub>2</sub> has a capacity of K elements. Initially, S<sub>1</sub> contains 5 distinct elements arranged as S<sub>1</sub> = [E, D, C, B, A], where A<br>is the top element and E is the bottom element. Stack S<sub>2</sub> is initially empty.<br>The only allowed operations are:<br>• PushToS<sub>2</sub>: Remove the top element of S<sub>1</sub> and push it onto S<sub>2</sub>.<br>• PushToS<sub>1</sub>: Remove the top element of S<sub>2</sub> and push it onto S<sub>1</sub>.<br>• Emit: Remove the top element of S<sub>1</sub> and output it.<br>The overflow and underflow conditions of both stacks must be satisfied.<br>The required output sequence is <B, A, E, D, C>.<br>What is the minimum capacity K of stack S2 required to generate the above output sequence?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip53-1787553212474.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip54-1787553224697.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip55-1787553240015.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip56-1787553253429.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A 8 × 1 multiplexer circuit is shown below with A, B and C as the select lines for the multiplexer circuit.</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip57-1787553314381.png"></p>
+<p>Which of the following option is correct regarding function F(A, B, C, D)?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip58-1787553333430.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip59-1787553339410.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip60-1787553349752.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip61-1787553355504.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip62-1787553365506.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip63-1787553375872.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip64-1787553390077.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A NAT router receives an outgoing TCP segment from a private host. The router performs NAPT (PAT) before forwarding the packet to the Internet.<br>Which one of the following checksum fields must be recomputed before forwarding the packet?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>IP header checksum only</p></span>`,
+                `<span style="display: inline;"><p>TCP checksum only</p></span>`,
+                `<span style="display: inline;"><p>Both the IP header checksum and the TCP checksum</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>During Network Address Port Translation (NAPT/PAT), the NAT router translates the source IPv4 address and the source TCP port number before forwarding the packet to the Internet. Since the source IPv4 address is modified, the IPv4 header changes. Consequently, the IP header checksum, which protects only the IPv4 header, becomes invalid and must be recomputed. In addition, the TCP checksum is calculated over the TCP header, TCP data, and an IPv4 pseudoheader containing the source and destination IP addresses. Because NAPT changes both the source IPv4 address and the source TCP port number, the existing TCP checksum also becomes invalid and must be recomputed.<br>Therefore, after performing NAPT, the router must recompute both the IP header checksum and the TCP checksum before forwarding the packet.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following syntax directed translation scheme:<br>E -> E<sub>1</sub> × T{E.val = E<sub>1</sub>.val × T.val}<br>E -> T{E.val = T.val}<br>T -> F - T<sub>1</sub>{T.val = F.val - T<sub>1</sub>.val}<br>T -> F{T.val = F.val}<br>F -> 3{F.val = 2}<br>F -> 5{F.val = 4}<br>The output produced by the SDTS after evaluating the given expression is 5 - 3 × 5 × 3. Assume attribute evaluation with bottom-up parsing, i.e., attributes are evaluated immediately after a reduction.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>15</p></span>`,
+                `<span style="display: inline;"><p>-42</p></span>`,
+                `<span style="display: inline;"><p>30</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip65-1787553584068.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip66-1787553591579.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A byte-addressable system has a direct-mapped cache with 1024 cache lines. The cache line size is 64 bytes.<br>The CPU executes a loop that sequentially accesses an array of 32,768 contiguous 32-bit integers.<br>The loop is executed twice. Assume that the cache is initially empty (all valid bits are 0) and no other memory accesses occur.<br>What is the total number of cache misses incurred across both iterations of the loop?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1024</p></span>`,
+                `<span style="display: inline;"><p>2048</p></span>`,
+                `<span style="display: inline;"><p>4096</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip67-1787553685821.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip68-1787553694681.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the classical Reader and Writer problem:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip69-1787553742034.png"></p>
+<p>If we interchange W = 1 and signal (mutex) in the above Writer's code, then which of the following<br>is true?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>It is possible for deadlock.</p></span>`,
+                `<span style="display: inline;"><p>Only multiple writers are allowed in Data Base but both Reader and Writer cannot present at same time.</p></span>`,
+                `<span style="display: inline;"><p>Both Reader and Writer will enter into Data Base at the same time.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>If we swap W = 1 and signal (mutex), the more than one Writer can be in critical section and since W &gt; 1, Reader can also access Data Base at same time.<br>So, option (c) is true.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Given the following CFG grammar G = ({S, A, B}, S, {a, b, x), P) with P:<br>I. S -> A<br>II. S -> xb<br>III. A -> aAb<br>IV. A -> B<br>V. B -> x<br>The grammar is _______.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Both LL(1) and LR(0)</p></span>`,
+                `<span style="display: inline;"><p>Only LL(1)</p></span>`,
+                `<span style="display: inline;"><p>Only LR(0)</p></span>`,
+                `<span style="display: inline;"><p>Neither LL(1) or LR(0)</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip70-1787553868550.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the time complexity of the following c function:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip71-1787554297737.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>\( O \)(n (log n)<sup>2</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n<sup>3</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n<sup>4</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\( O \)(n<sup>3</sup> log n)</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip72-1787554351807.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider a LAN consisting of two transparent bridges and three Ethernet segments. All bridges have correctly learned the MAC addresses of all hosts. There are no VLANs, no routing devices, and Spanning Tree Protocol (STP) is enabled, ensuring a loop-free topology.<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>If Host H1 sends a broadcast frame, every host in the LAN receives exactly one copy of the frame.</p></span>`,
+                `<span style="display: inline;"><p>If H1 sends a unicast frame to H2 and H2's MAC address is present in the forwarding tables of all bridges, the frame is never flooded.</p></span>`,
+                `<span style="display: inline;"><p>If the forwarding-table entry corresponding to H2 expires in one bridge due to aging, then a unicast frame from H1 to H2 may be flooded by that bridge, even though H2 is active elsewhere in the network.</p></span>`,
+                `<span style="display: inline;"><p>Replacing both bridges with Layer-2 switches (without VLANs) increases the number of broadcast domains but leaves the number of collision domains unchanged.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• A broadcast frame is forwarded by every transparent bridge to all ports except the incoming port. Since STP is enabled, the network topology is loop-free, so the broadcast frame cannot circulate indefinitely or reach a host multiple times. Therefore, every host in the LAN receives exactly one copy of the broadcast frame. So, option (a) is correct.<br>• When the destination MAC address (H2) is present in the forwarding table of every bridge, each bridge knows the correct outgoing port for the frame. Hence, the frame is forwarded only toward H2. Since the destination is known, unknown-unicast flooding does not occur. Therefore, the frame is never flooded. So, option (b) is correct.<br>• MAC forwarding-table entries are removed after the aging timer expires. If the entry for H2 expires in one bridge, that bridge no longer knows the correct outgoing port. When H1 sends a frame to H2, the bridge treats it as an unknown unicast and floods it on all ports except the incoming port. After H2 replies, the bridge relearns H2's MAC address. Therefore, the frame may be flooded even though H2 is active elsewhere in the network.<br>• Both transparent bridges and Layer-2 switches operate at the Data Link layer and, without VLANs, neither divides the LAN into multiple broadcast domains. Hence, replacing bridges with switches does not increase the number of broadcast domains. Moreover, a Layer-2 switch creates a separate collision domain for each port, whereas a bridge separates collision domains only between its connected segments. Thus, the number of collision domains increases, not remains unchanged. Therefore, the statement is incorrect. So, option (d) is incorrect.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the relation R(m, n, o) and relation S(w, x, y). Here 'y' is the foreign key of relation S referring to primary key of relation R while 'n' is the foreign key of relation of R referring to primary key of relation S.<br>[Note: Both foreign keys are ondelete no action integrity constraint]<br>Consider the below given instance of both the relations:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip73-1787554527058.png"></p>
+<p>Which of the following operations will not violate the integrity constraints of the above relation?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Insert tuple (E, 11, 100) in relation R.</p></span>`,
+                `<span style="display: inline;"><p>Delete tuple (11, a, C) from relation S.</p></span>`,
+                `<span style="display: inline;"><p>Delete tuple (14, c, F) in relation R.</p></span>`,
+                `<span style="display: inline;"><p>Delete tuple (A, 12, 50) in relation R.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Inserting tuple (E, 11, 100) in relation A will not be violation of any integrity constraint because attribute n = 11 is already existing in relation S.<br>• Deleting tuple (11, a, C) from relation S will not be violation of integrity constraint because attribute n = 11 is not in relation R.<br>• Inserting tuple (14, c, F) in relation S is violation because there is no 'F' in relation A to whom attribute 'y' of relation S is referring.<br>• Delete tuple (A, 12, 50) is violation because in relation S attribute 'y' is referring to 'A'.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following regular expressions over the alphabet set {a, b}:<br>r<sub>1</sub> = a(a + b)* bb<br>r<sub>2</sub> = bb(a + b)* a<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip74-1787554627783.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip75-1787554634515.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip77-1787554642748.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip78-1787554649627.png"></p></span>`,
+            ],
+            answer: ["A", "B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip79-1787554657771.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip80-1787554674342.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip81-1787554687353.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip82-1787554700622.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Given a Turing Machine M, L = {<M>|L(M) differs from a*b* by finitely many strings} is undecidable.</p></span>`,
+                `<span style="display: inline;"><p>The language L = {a<sup>j</sup> b<sup>j</sup> c<sup>k</sup>|i + j = k} is context-free.</p></span>`,
+                `<span style="display: inline;"><p>The language of all palindromes over the alphabet {a, b} that contain exactly one occurrence of the substring aa is regular.</p></span>`,
+                `<span style="display: inline;"><p>Every deterministic context-free language is closed under union.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip83-1787554785583.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>In the following schedules, R<sub>x</sub>(Z) denotes Trans X Reads item Z. W<sub>x</sub>(Z) denotes Trans X Writes item Z.<br>Consider the following schedules:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip84-1787554834813.png"></p>
+<p>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Schedule S<sub>1</sub> has dirty read problem.</p></span>`,
+                `<span style="display: inline;"><p>Schedule S<sub>2</sub> has non-repeatable read problem</p></span>`,
+                `<span style="display: inline;"><p>Schedule S<sub>3</sub> has lost update problem.</p></span>`,
+                `<span style="display: inline;"><p>Schedule S<sub>3</sub> is conflict serializable.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The lost update anomaly is said to occur if a transaction T<sub>j</sub> reads a data item X, then another transaction T<sub>k</sub> writes that data item X (possibly based on a previous read), after which T<sub>j</sub> writes the data item X. The update performed by T<sub>j</sub> has been lost, since the update done by T<sub>j</sub> ignored the value written by T<sub>k</sub>. So, S<sub>3</sub> has lost update problem. S<sub>1</sub> has dirty read because of W<sub>1</sub>(A), R<sub>2</sub>(A). S<sub>2</sub> has non-repeatable read problem.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following instruction sequence:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip85-1787554992830.png"></p>
+<p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>There is a RAW (True dependency) between instruction I<sub>0</sub> and I<sub>1</sub>.</p></span>`,
+                `<span style="display: inline;"><p>There is a RAW (True dependency) between instruction I<sub>0</sub> and I<sub>1</sub>.</p></span>`,
+                `<span style="display: inline;"><p>There is a RAW (True dependency) between instruction I<sub>0</sub> and I<sub>1</sub>.</p></span>`,
+                `<span style="display: inline;"><p>There is a WAR (Anti-dependency) between instruction I<sub>1</sub> and I<sub>2</sub>.</p></span>`,
+            ],
+            answer: ["A", "B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip86-1787555096548.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider contiguous allocation of physical memory to processes using a variable partitioning scheme. Suppose there are 8 free memory blocks of sizes 12 KB, 5 KB, 20 KB, 8 KB, 15 KB, 6 KB,<br>25 KB and 10 KB. Respectively assume that no two free memory blocks are adjacent. Two processes<br>P<sub>1</sub> of size 14 KB and P<sub>2</sub> of size 7 KB arrive in that order and are allocated memory using the bestfit technique.<br>Which of the following statements is/are correct after allocating memory to both processes?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The number of free memory blocks of size less than 8 KB is 4.</p></span>`,
+                `<span style="display: inline;"><p>The total remaining free memory after allocation is 75 KB.</p></span>`,
+                `<span style="display: inline;"><p>The number of free memory blocks remaining after allocation is 8.</p></span>`,
+                `<span style="display: inline;"><p>The largest available free memory block after allocation is 25 KB.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The initial free memory blocks are 12 KB, 5 KB, 20 KB, 8 KB, 15 KB, 6 KB, 25 KB, 10 KB<br>Since Best-Fit allocates the smallest free block that can accommodate the process, the allocation proceeds as follows. For process P<sub>1</sub> of size 14 KB, the eligible free blocks are 15 KB, 20 KB and 25 KB. The 15 KB block is selected, leaving a free block of 15 KB - 14 KB = 1 KB.<br>The free memory blocks become 12 KB, 5 KB, 20 KB, 8 KB, 1 KB, 6 KB, 25 KB, 10 KB. Next, process P<sub>2</sub> of size 7 KB arrives. The eligible free blocks are 8 KB, 10 KB, 12 KB, 20 KB and 25 KB. The 8 KB block is selected, leaving a free block of 8 KB - 7 KB = 1 KB. The final free memory blocks are 12 KB, 5 KB, 20 KB, 1 KB, 1 KB, 6 KB, 25 KB, 10 KB. Hence, free blocks of size less than 8 KB are 5 KB, 1 KB, 1 KB, 6 KB, i.e., 4 blocks. Total remaining free memory is 12 KB + 5 KB + 20 KB + 1 KB + 1 KB + 6 KB + 25 KB + 10 KB = 80 KB.<br>Since neither allocated block is completely consumed, the total number of free memory blocks remains 8.<br>The largest free memory block is 25 KB.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following flow graph:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip87-1787555277302.png"></p>
+<p>Apply live variable analysis technique and select all the options with correct "In" set and "Out" set. [x is live at exit]</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip88-1787555286217.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip89-1787555294249.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip90-1787555301548.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip91-1787555309033.png"></p></span>`,
+            ],
+            answer: ["B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip92-1787555329115.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The network shown below uses the Distance Vector Routing algorithm.</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip93-1787555362924.png"></p>
+<p>Initially, all routing tables have converged.<br>The link B - D fails.<br>Assume that:<br>• Split horizon and poisoned reverse are not used.<br>• Routers exchange distance vectors once every iteration.<br>• All routers update their routing tables simultaneously.<br>Determine the cost advertised by router A to destination D after the second iteration.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 7,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip94-1787555375844.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip95-1787555391119.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip96-1787555400187.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a system with three resources R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub>. The system currently has 4 instances of R<sub>1</sub>, 3 instances of R<sub>2</sub> and 3 instances of R<sub>3</sub> available for allocation. There are three processes P<sub>1</sub>, P<sub>2</sub> and P<sub>3</sub>. The current allocation and maximum resource requirements are given below. Allocation matrix:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip97-1787555491902.png"></p>
+<p>Maximum requirement matrix:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip98-1787555505191.png"></p>
+<p>By using the Banker's algorithm, determine the total number of possible safe execution completion orders (safe sequences) for this system.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip99-1787555527326.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip100-1787555535481.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip101-1787555544573.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following elements which are inserted into initially empty AVL tree in the given order.<br> 110, 70, 120, 130, 20, 90, 10, 30, 40<br>The difference between last element of preorder and the last element of postorder traversal of left subtree of the resultant AVL tree _________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 60,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip0-1787637214688.png"></p>
+<p>Left subtree postorder traversal is: 10, 20, 40, 90, 70 and 30. So the last element is 30.<br>Left subtree preorder traversal is: 30, 20, 10, 70, 40 and 90. So the last element is 90.<br>The difference between last element of postorder and the last element of preorder traversal of left subtree of the resultant AVL tree = 90 - 30 = 60.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A CRC system uses the generator polynomial<br><img src="images/pw_full_syllabus_test_7/mceclip1-1787637257198.png"><br>An error polynomial is given by<br><img src="images/pw_full_syllabus_test_7/mceclip2-1787637271285.png"><br>If the CRC fails to detect the error and 5 &lt; <em>n </em>&lt; 20 determine the smallest possible value of <em>n</em>.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 19,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip3-1787637305400.png"></p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip4-1787637316570.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following relation:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip5-1787637349491.png"></p>
+<p>What is the minimum number of relations required for building relational model of the above ER model?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Total 6 relations are required based on the following analysis:</p>
+<ol style="list-style-type: lower-roman;">
+<li>For entity E<sub>1</sub> and E<sub>2</sub>, we need 4 relations in minimum. Because the relation between E<sub>1</sub> and E<sub>2</sub> is many-to-many, therefore R<sub>1 </sub>will have a separate relation as well as E<sub>2</sub> consist of a multivalued attribute. Thus, it will form a separate relation. Hence, we have relation for E<sub>1</sub>, R<sub>1</sub>, E<sub>2</sub> and E. Therefore, number of relation = 4.</li>
+<li>For entity E<sub>2</sub> and E<sub>3</sub>, E<sub>3</sub> will have separate relation because of the one-to-many relation (R<sub>2</sub>) between them.<br>Therefore, number of relations = 5.</li>
+<li>For self referential + many-to-many + both side partial relation R<sub>3</sub> will result in one separate relation.<br>Therefore, number of relations = 6.</li>
+</ol>
+<p>Hence, the total number of relations required for the above ER diagram are 6.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a 2.5 GHz clock frequency processor used to execute the following program segment:</p>
+<p><img src="images/pw_full_syllabus_test_7/mceclip6-1787637525285.png"></p>
+<p>Assume that each memory reference consumes 3 cycles and ALU operations consume 2 cycles.<br>Calculate the total time required to complete the program execution ________ (in ns).</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 16.4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip7-1787637548583.png"></p></div>`
+        },
+    ]
+});
+
+registerTest({
+    series: "cs-gate-pyq",
+    name: "FST 08 - Full Syllabus Test - 8 (Advance Level)",
+    isFree: true,
+    date: "November 10, 2026",
+    topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
+    subject: "flt",
+    questions: [
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>How many one rupee coins, 50 paise coins and 25 paise coins of are there respectively if their numbers are in the ratio 4 : 5 : 6 and their total value is Rs.32?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>16, 20, 24</p></span>`,
+                `<span style="display: inline;"><p>12, 16, 20</p></span>`,
+                `<span style="display: inline;"><p>20, 24, 28</p></span>`,
+                `<span style="display: inline;"><p>24, 28, 32</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848625434.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip1-1788848651368.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip16-1785134223619.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip17-1785134229010.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip18-1785134234278.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip19-1785134239265.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip2-1788848666799.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The value of tan 65° + 2 tan45° - 2 tan40° - tan25° is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848685376.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Cost price of two motorcycles is same. One is sold at a profit of 15% and the other for Rs. 4800 more than the first. If the net profit is 20%, the cost price of each motor cycle is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Rs. 48000</p></span>`,
+                `<span style="display: inline;"><p>Rs. 52000</p></span>`,
+                `<span style="display: inline;"><p>Rs. 36000</p></span>`,
+                `<span style="display: inline;"><p>Rs. 42500</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848718431.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Study the following information carefully and answer the questions given below:<br>(i) Six persons A, B, C, D, E and F are taking their breakfast in two groups facing one another.<br>(ii) D and A are not in the same row.<br>(iii)E is to the left of F and faces C.<br>(iv)B is in the middle of a group.<br>(v) D is to the left of B.<br>Which of the following pairs are facing each other?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>CA</p></span>`,
+                `<span style="display: inline;"><p>BA</p></span>`,
+                `<span style="display: inline;"><p>DA</p></span>`,
+                `<span style="display: inline;"><p>DE</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848761569.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Fact 1 : All chickens are birds.<br>Fact 2 : Some chickens are hens.<br>Fact 3 : Female birds lay eggs.<br><br>If the first three statements are facts, which of the following statements must also be a fact?<br>I. All birds lay eggs.<br>II. Hens are birds.<br>III. Some chickens are not hens.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>II only</p></span>`,
+                `<span style="display: inline;"><p>II and III only</p></span>`,
+                `<span style="display: inline;"><p>I, II and III</p></span>`,
+                `<span style="display: inline;"><p>None of the statements would necessarily be a fact</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>According to the question,</p>
+<ul>
+<li>It is given that Female birds lay eggs. Thus, statement I not a fact.</li>
+<li>It is given that some hens (the ones that are chickens) are birds. Because the facts do not state that all hens are chickens, we cannot definitively conclude that all hens are birds. Therefore, statement II is not necessarily a fact.</li>
+<li>The facts only say that some chickens are hens; all chickens could also potentially be hens.<br>Therefore, statement III is also not necessarily a fact.</li>
+</ul>
+<p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848862349.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The number of quadrilaterals in the below figure is</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip0-1788848895797.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>6</p></span>`,
+                `<span style="display: inline;"><p>7</p></span>`,
+                `<span style="display: inline;"><p>9</p></span>`,
+                `<span style="display: inline;"><p>11</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Marking the given areas in the figure using digits,</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip1-1788848916830.png"></p>
+<p>2-digit quadrilateral = (4, 5) => 1<br>3-digit quadrilateral = (4, 5, 6), (4, 5, 8), (3, 4, 5), (1, 4, 5) => 4<br>4-digit quadrilateral = (1, 2, 3, 4), (5, 6, 7, 8), (3, 4, 5, 6), (1, 4, 5, 8), (1, 4, 5, 6), (3, 4, 5, 8) => 6<br>Hence, total quadrilaterals in the figure = 1 + 4 + 6 = 11</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Read both the statements and give answer.<br>P, Q, R, S and T are sitting around a circle facing towards its centre. Who is second to the right of P?<br>I. R is to the immediate left of T and second to the right of S.<br>II. Q is to the immediate right of S and third to the left of P.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question.</p></span>`,
+                `<span style="display: inline;"><p>The data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question.</p></span>`,
+                `<span style="display: inline;"><p>The data either in statement I alone or in statement II alone is sufficient to answer the question.</p></span>`,
+                `<span style="display: inline;"><p>The data given in both statements I and II together are not sufficient to answer the question.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip27-1785134623772.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A team of four students has to be made for inter-school carrom competition from three boys:<br>Akash, Bharat, Chandra and three Girls: Deepa, Eva, Farah; such that Akash and Eva should never be together. If and only if Farah is selected then Chandra is selected. In how many ways can the team be selected such that exactly 2 boys are selected?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>If Akash is selected then Eva cannot be selected. If Farah is there, then Chandra, must be in the team. Thus, there is only one way team can be selected when Akash is included in the team, excluding Eva and Bharat. When Akash is not selected, Chandra and Bharat must be selected to have two boys. Since Chandra is selected, Farah is also selected. The remaining one member can be selected from Deepa or Eva.<br>Let Akash, Bharat, Chandra, Deepa, Eva and Farah be denoted by A, B, C, D, E and F respectively.<br>Then possible ways can be<br>B C D F<br>B C E F<br>A C D F only</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Select the most suitable sentence with respect to grammar and usage:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A team of graduate students are going to Agra to see the Taj Mahal.</p></span>`,
+                `<span style="display: inline;"><p>A team of graduate student are going to Agra to see the Taj Mahal.</p></span>`,
+                `<span style="display: inline;"><p>A team of graduate students were going to Agra to see the Taj Mahal.</p></span>`,
+                `<span style="display: inline;"><p>A team of graduate students is going to Agra to see the Taj Mahal.</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The subject is "A team", which is a singular collective noun.<br>Therefore, the singular verb "is" should be used. "Graduate students" correctly describes the members of the team.<br>Thus, option (d) is the correct answer.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The following graph has the following number of articulation points:</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip0-1787650000369.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>2</p></span>`,
+                `<span style="display: inline;"><p>3</p></span>`,
+                `<span style="display: inline;"><p>4</p></span>`,
+                `<span style="display: inline;"><p>5</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>A vertex that, if removed, would cause the graph to be unconnected is known as an articulation point. The given graph has three articulation points, identified as vertices 2, 3 and 5. The graph gets disconnected if any one of the aforementioned nodes is eliminated.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a processor P with a load-store architecture. The instruction format specifies the first operand as the destination. Memory operands are X, Y and the base address of array A. Register R<sub>1</sub> contains the index i. Which sequence correctly implements the statement Y = X + A[i], assuming the architecture supports displacement addressing (Base (Register)) for LOAD/STORE but requires all arithmetic to be register-to-register?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip1-1787650085593.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip2-1787650095232.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip3-1787650104189.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip4-1787650112505.png"></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip5-1787650138958.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip6-1787650158887.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>e</em></p></span>`,
+                `<span style="display: inline;"><p><em>e</em><sup>2</sup></p></span>`,
+                `<span style="display: inline;"><p><em>e</em><sup>3</sup></p></span>`,
+                `<span style="display: inline;"><p><em>e</em><sup>4</sup></p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip7-1787650210831.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip8-1787650241199.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0</p></span>`,
+                `<span style="display: inline;"><p>1</p></span>`,
+                `<span style="display: inline;"><p>-1</p></span>`,
+                `<span style="display: inline;"><p>8</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip9-1787650262306.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip10-1787650269208.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A CRC system uses the generator polynomial<br><img src="images/pw_full_syllabus_test_8/mceclip12-1787650297573.png"><br>Which one of the following error polynomials will not be detected by the CRC?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip13-1787650360056.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip14-1787650367712.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip15-1787650375746.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip16-1787650383981.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip17-1787650395521.png"></p>
+<p>(a) 1001100100000<br>(b) 10011001011<br>(c) 100110010<br>(d) 100010000101<br>An error is undetected if the error polynomial is exactly divisible by the generator polynomial.<br>Take modulo-2 division of each option by 10011.<br>Answer is option (d) because remainder will be zero.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the circuit shown in the figure below:<br><img src="images/pw_full_syllabus_test_8/mceclip20-1787650444268.png"><br>The circuit consists of NAND gates only. Which one of the following logic expression represents the output of the logic circuit?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip21-1787650467826.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip22-1787650474094.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip23-1787650483296.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip24-1787650488182.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The output logic function of the given circuit can be expressed as,</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip25-1787650503863.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider 10 CPU bound processes sharing the CPU using a Round-Robin scheduling algorithm. The time required for each context switch is 0.2 seconds. One complete Round-Robin cycle (i.e., the time taken until every ready process has been allocated the CPU exactly once) must not exceed 100 seconds. Assuming all 10 processes remain in the ready queue throughout execution, what is the maximum permissible time quantum <em>q</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>q </em>\( \le \) 9.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\( \ge \) 9.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\( \le \) 10.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\( \ge \) 10.8 seconds</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip26-1787650573726.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following is/are correct?<br>S<sub>1</sub> : Topological sort may not be unique.<br>S<sub>2 </sub>: Topological sort is not possible for graph with undirected edges.</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
+                `<span style="display: inline;"><p>Only S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both S<sub>1</sub> and S<sub>2</sub></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding viable prefixes and LR(0) automata:<br>S<sub>1</sub> : For a given grammar, if two viable prefixes correspond to the same LR(0) state, then the set of possible reductions after those prefixes must be identical.<br>S<sub>2</sub> : The existence of two different viable prefixes reaching the same LR(0) state implies that the grammar cannot be SLR(1).<br><br>Which of the following options is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub> are correct</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub> is correct, but S<sub>2</sub> is incorrect</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub> is incorrect, but S<sub>2</sub> is correct</p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1</sub> and S<sub>2</sub> are incorrect</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>An LR(0) state represents a set of LR(0) items. If two viable prefixes reach the same state, the parser has the same set of possible items after both prefixes. Therefore, the possible reductions (based on the completed items present in that state) are identical. So, S<sub>1</sub> is correct.</li>
+<li>Multiple viable prefixes reaching the same LR(0) state is a normal property of DFA-based automata. A DFA state can be reached by multiple strings. SLR(1) restriction is related to conflicts in the parsing table, not the number of viable prefixes reaching a state. So, S<sub>2</sub> is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The preorder traversal of a Binary Search Tree is 40, 25, 15, 20, 30, 35, 60, 50, 55, 70.<br>Which one of the following is the postorder traversal of the tree?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>20, 15, 35, 30, 25, 55, 50, 70, 60, 40</p></span>`,
+                `<span style="display: inline;"><p>15, 20, 30, 35, 25, 50, 55, 70, 60, 40</p></span>`,
+                `<span style="display: inline;"><p>20, 15, 35, 30, 25, 50, 55, 60, 70, 40</p></span>`,
+                `<span style="display: inline;"><p>15, 20, 35, 30, 25, 55, 50, 60, 70, 40</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip27-1787650820595.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following languages is/are decidable?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L = {<M>|L(M) is a regular language}.</p></span>`,
+                `<span style="display: inline;"><p>L = {<M>|M halts on all inputs of length less than 5}.</p></span>`,
+                `<span style="display: inline;"><p>L = {<M, w, k>|M accepts w within k steps}.</p></span>`,
+                `<span style="display: inline;"><p>L = {<M>|L(M) contains at least one string w}.</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>The property of a Turing Machine language being regular is a non-trivial property.<br>By Rice's theorem, {<M>|L(M) is regular} is undecidable.<br>Not decidable.</li>
+<li>The number of possible inputs of length less than 5 is finite.<br>However, deciding whether M halts on each input is equivalent to solving the halting problem for those inputs.<br>Hence, it is undecidable.<br>Not decidable.</li>
+<li>The number of steps is bounded by k.<br>A TM can simulate M on w for at most k steps and check whether it accepts.<br>Hence, the language is decidable.<br>Decidable.</li>
+<li>This is the non-emptiness problem:<br>L(M) \( \ne \) 0<br>The emptiness problem for Turing Machines is undecidable.<br>Not Decidable</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Which of the following languages are CFL:<br><img src="images/pw_full_syllabus_test_8/mceclip28-1787650977992.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>A </em>only</p></span>`,
+                `<span style="display: inline;"><p><em>B </em>only</p></span>`,
+                `<span style="display: inline;"><p>Both <em>A </em>and <em>B</em></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip29-1787651040231.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following predicates with the domain as set of integers for all variables.</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip30-1787651081783.png"></p>
+<p>Which of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip31-1787651099786.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip32-1787651107572.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip33-1787651116866.png"></p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip34-1787651141586.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0.33,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding error detection across different compiler phases:<br><img src="images/pw_full_syllabus_test_8/mceclip35-1787651171190.png"><br>Which of the following options is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>S<sub>1</sub> has a syntactic error, S<sub>2</sub> has a lexical error, and S<sub>3 </sub>has a semantic error.</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1 </sub>has a lexical error, S<sub>2</sub> has a syntactic error, and S<sub>3</sub> has a semantic error.</p></span>`,
+                `<span style="display: inline;"><p>S<sub>1</sub> has a lexical error, S<sub>2 </sub>has a semantic error, and S<sub>3</sub> has a syntactic error.</p></span>`,
+                `<span style="display: inline;"><p>Both S<sub>1 </sub>and S<sub>2</sub> have lexical errors, while S<sub>3</sub> has a syntactic error.</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><strong>S<sub>1</sub> :</strong> (int a = 12a3; ):<br>The identifier/literal sequence 12a3 starts with digits followed by letters without any valid prefix or separator. The lexer cannot tokenize this sequence into a valid identifier or numeric constant according to C token forming rules. Therefore, S<sub>1</sub> has a lexical error.</p>
+<p><strong>S<sub>2</sub> :</strong> (int b = a++; ):<br>Tokens generated are int, b, =, a, +, +, ;<br>The expression a++; lacks a second operand for the binary addition operator +. This violates the grammar rules of the language. Therefore, S2 has a syntactic error.</p>
+<p><strong>S<sub>3</sub> :</strong> (arr= 10; inside main):<br>Array name arr decays to a constant pointer (non-modifiable Ivalue) in C. Assigning an integer value directly to an array variable violates semantic rules regarding assignability and Ivalues.<br>The parse tree is successfully built, but semantic checks fail during type and Ivalue checking.<br>Therefore, S<sub>3</sub> has a semantic error.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following is correct statement?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Every distributive lattice is modular.</p></span>`,
+                `<span style="display: inline;"><p>Every modular lattice is distributive.</p></span>`,
+                `<span style="display: inline;"><p>Every complete lattice is bounded lattice.</p></span>`,
+                `<span style="display: inline;"><p>Every bounded lattice is complete lattice.</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>A non-clustered index is created to improve the performance of frequently used queries that are not adequately supported by the clustered index.</p></span>`,
+                `<span style="display: inline;"><p>A B-tree is used instead of a B+ tree when sequential access to key values is required.</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip36-1787651471865.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip37-1787651483042.png"></p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>A non-clustered index can improve the performance of frequently executed queries that are not efficiently supported by the existing clustered index. So, option (a) is correct.</li>
+<li>B<sup>+</sup> trees are generally preferred for sequential and range access because their leaf nodes are linked. So, option (b) is incorrect.</li>
+<li>Natural join is associative:<br><img src="images/pw_full_syllabus_test_8/mceclip38-1787651533212.png"><br>The condition regarding common attributes does not invalidate this property. So, option (c) is correct.</li>
+<li>Since R and S have the common attribute B, natural join requires matching values of B.<br>Therefore, in general,<br><img src="images/pw_full_syllabus_test_8/mceclip39-1787651557979.png"><br>The equality holds when the relations have no common attributes. So, option (d) is incorrect.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Deadlock can always be avoided by using semaphore instead of lock for mutual exclusion.</p></span>`,
+                `<span style="display: inline;"><p>Program counter must be saved when context switch between processes.</p></span>`,
+                `<span style="display: inline;"><p>Thrashing can always be avoided by swapping.</p></span>`,
+                `<span style="display: inline;"><p>Each queue have different priority in multilevel queue scheduling.</p></span>`,
+            ],
+            answer: ["B", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>If you use a semaphore for mutual exclusion, it has all the same properties as a traditional lock. So, deadlock can't be avoided always. So, option (a) is false.</li>
+<li>Program counter, stack counter and general purpose register must be saved then context switches. So, option (b) is correct.</li>
+<li>Thrashing can not be avoided by swapping. So, option (c) is false.</li>
+<li>In multilevel feedback queue each queue may use different scheduling algorithm and each queue have different priority. So, option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Assume there are 10 transactions: T<sub>1,</sub> T<sub>2</sub>, ..., T<sub>10</sub>. Every transaction writes a value of variable X that is read by its successive transaction, like T<sub>1 </sub>writes a value of X that is read by T<sub>2</sub>, T<sub>2</sub> writes a value of X that is read by T<sub>3</sub>, ..., T<sub>9</sub> writes a value of X that is read by T<sub>10</sub>. Now, if T<sub>1</sub> fails and the schedule uses cascading rollback, then the total number of transactions that need to be rolled back is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 10,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>In order to recover the schedule, all the 10 transactions need to be rolled back, as each successive transaction is dependent on the data updated by the previous transaction. T<sub>2</sub> is dependent on the data updated by T<sub>1</sub>. As T<sub>1</sub> fails, T<sub>2</sub> also needs to be rolled back.<br>Now, T<sub>3</sub> depends on the data updated by T<sub>2</sub>, so T<sub>3</sub> also needs to be rolled back. Likewise, this dependency continues for all the transactions till T10.<br>Therefore, answer is 10.</p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a hypothetical CPU that support 20 bit instructions, 200 registers and 8 KB RAM, if there exists 120 one-address memory reference instructions, then how many one-address register reference instruction can be designed?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 256,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip40-1787651845528.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip41-1787651851625.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A TCP sender starts with<br>• cwnd = 1 MSS<br>• ssthresh = 32 MSS<br>Packet losses occur as follows:<br>• A timeout occurs immediately after the 6<sup>th</sup> RTT.<br>• A triple duplicate ACK occurs immediately after the 11<sup>th</sup> RTT.<br>Assuming TCP Reno, determine the value of cwnd at the end of the 15<sup>th</sup> RTT.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 16,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip42-1787651928495.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>The minimum number of states of a deterministic finite automaton that accepts the regular language<br><img src="images/pw_full_syllabus_test_8/mceclip43-1787652178229.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 5,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip44-1787652191491.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Suppose a program references pages in the following sequence:<br> A, C, B, D, B, A, E, F, B, F, A, G, E, F, A<br>Suppose the computer on which this program is running has 4 pages of physical memory.<br>How many page faults will occur when we use LRU-based demand paging?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 8,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip45-1787652231515.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a CPU where all the instruction require 8 clock cycles to complete execution. There are 514 instructions in instruction set. It is found that 259 control signals are needed to be generated by control unit. While designing the vertical \( \mu \)-programmed control unit, single address field format is used for branch control logic. The size of control memory in byte is ________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 11308,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip46-1787652266377.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following piece of code:<br><img src="images/pw_full_syllabus_test_8/mceclip47-1787652294698.png"><br>How many processes are created if the above piece of code of run?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 63,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip48-1787652313272.png"></p></div>`
+        },
+        {
+            marks: 1,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A disk has 200 cylinders, numbered from 0 to 199. The disk arm is currently positioned at 85. The pending disk access requests are 20, 170, 45, 120, 95, 150, 10, 65, 180, 35. The disk scheduling algorithm used is Shortest Seek Time First (SSTF). The SSTF algorithm selects the pending request with the minimum absolute distance from the current head position at every step. The total absolute difference traversed by the R/W head is ________ cylinders. (Answer in integer)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 265,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip49-1787652346004.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is the output of below c code?<br><img src="images/pw_full_syllabus_test_8/mceclip50-1787652384962.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>U U G</p></span>`,
+                `<span style="display: inline;"><p>U U H</p></span>`,
+                `<span style="display: inline;"><p>V V H</p></span>`,
+                `<span style="display: inline;"><p>V V G</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip51-1787652416118.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip52-1787652424005.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>A pulse train of frequency 1 MHz is counted by using a MOD-1024 ripple counter built with<br>JK flip-flops. For proper operation of the counter, the maximum permissible propagation delay per flip-flop stage is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>100 nsec</p></span>`,
+                `<span style="display: inline;"><p>50 nsec</p></span>`,
+                `<span style="display: inline;"><p>20 nsec</p></span>`,
+                `<span style="display: inline;"><p>10 nsec</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip53-1787652487681.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider a typical disk that rotates at 7200 rotations per minute (RPM) and has a transfer rate of 80 × 10<sup>6</sup> bytes/sec. If the average seek time of the disk is twice the average rotational delay, then which of the following represents the average time (approx.) to read or write a 2048 byte sector of the disk?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>24.91 msec</p></span>`,
+                `<span style="display: inline;"><p>26.62 msec</p></span>`,
+                `<span style="display: inline;"><p>16.68 msec</p></span>`,
+                `<span style="display: inline;"><p>34.56 msec</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip54-1787652544643.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip55-1787652555579.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>An ISP owns the address space 150.100.0.0/16. Four organizations require contiguous address blocks as follows:<br>• Organization P: 4000 hosts<br>• Organization Q: 2000 hosts<br>• Organization R: 1000 hosts<br>• Organization S: 500 hosts<br>The ISP allocates the address blocks in the above order, assigning the lowest possible valid network address to each organization. Each organization is allocated the smallest possible CIDR block that satisfies its host requirement.<br>Which one of the following network addresses is allocated to Organization R?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>150.100.24.0/22</p></span>`,
+                `<span style="display: inline;"><p>150.100.16.0/22</p></span>`,
+                `<span style="display: inline;"><p>150.100.20.0/22</p></span>`,
+                `<span style="display: inline;"><p>150.100.32.0/22</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip56-1787652624635.png"></p>
+<p>Allot anyone subnet to P and P will consume the whole subnet. Choose one subnet from the available 15 subnet and give it Q as 150.100.00010000.00000000/20<br>Q needs 2000 hosts means 11 host bits</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip57-1787652645504.png"></p>
+<p>After allocation to Q we still have 150.100.24/22 available 150.100.00011000.00000000/22.<br>Now, R wants 1000 IPs</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip58-1787652665903.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>The minimized Boolean expression for <em>F = (A + D) (B \( \oplus \) C) + AD'</em> is</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><em>(A + D) (B'C + BC) + AD'</em></p></span>`,
+                `<span style="display: inline;"><p><em>ABC' + AB'C + BC'D + B'CD</em></p></span>`,
+                `<span style="display: inline;"><p><em>BC'D + B'CD</em></p></span>`,
+                `<span style="display: inline;"><p><em>BC'D + B'CD + AD'</em></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip59-1787652744977.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following context-free grammar:<br><img src="images/pw_full_syllabus_test_8/mceclip61-1787652988817.png"><br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip62-1787653022679.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip63-1787653029231.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip64-1787653036636.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip65-1787653043337.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip66-1787653051759.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip67-1787653077830.png"></p>
+<p>Which of the following properties is/are satisfied by <em>R</em>?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Reflexive</p></span>`,
+                `<span style="display: inline;"><p>Symmetric</p></span>`,
+                `<span style="display: inline;"><p>Transitive</p></span>`,
+                `<span style="display: inline;"><p>Anti-symmetric</p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip68-1787653124897.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip69-1787653133610.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Three fair coins are tossed independently. Consider the following three events:<br>E<sub>1</sub> : The first toss results in heads.<br>E<sub>2</sub> : The second toss results in heads.<br>E<sub>3</sub> : Exactly two of the three tosses result in heads.<br>Which of the following statements are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip70-1787653193708.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip71-1787653200553.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip72-1787653206909.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip73-1787653213596.png"></p></span>`,
+            ],
+            answer: "A",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip74-1787653226888.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip75-1787653236754.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Arrange the following functions in increasing order of growth rate:<br><img src="images/pw_full_syllabus_test_8/mceclip76-1787653267409.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip77-1787653275623.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip78-1787653282070.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip79-1787653287386.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip80-1787653292506.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip81-1787653302923.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>For any real parameter k \( \in \) R, consider the definite integral<br><img src="images/pw_full_syllabus_test_8/mceclip82-1787653335812.png"><br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip83-1787653353959.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip84-1787653359999.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip85-1787653374454.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip86-1787653382020.png"></p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip87-1787653397552.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip88-1787653404574.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip89-1787653412656.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the circuit given below with initial state Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub> = 000.<br><img src="images/pw_full_syllabus_test_8/mceclip90-1787653460169.png"><br>Which one of the following is the correct state sequence of the circuit?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>0, 6, 3, 4, 1, 7, 2, 5, 0</p></span>`,
+                `<span style="display: inline;"><p>0, 3, 6, 1, 4, 7, 2, 5, 0</p></span>`,
+                `<span style="display: inline;"><p>0, 3, 6, 4, 1, 7, 2, 5, 0</p></span>`,
+                `<span style="display: inline;"><p>0, 6, 3, 1, 4, 7, 2, 5, 0</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip91-1787653495040.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>Consider the following languages:<br><img src="images/pw_full_syllabus_test_8/mceclip92-1787653523549.png"><br>Which one of the following is correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>L<sub>1</sub> is regular and L<sub>2</sub> is context-free.</p></span>`,
+                `<span style="display: inline;"><p>L<sub>1</sub> is context-free but not regular and L<sub>2</sub> is context-free.</p></span>`,
+                `<span style="display: inline;"><p>Neither L<sub>1 </sub>nor L<sub>2</sub> is context-free.</p></span>`,
+                `<span style="display: inline;"><p>L<sub>1</sub> is not context-free but L<sub>2</sub> is context-free.</p></span>`,
+            ],
+            answer: "D",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip93-1787653602124.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p>What is printed by the following ANSI C program?<br><br><img src="images/pw_full_syllabus_test_8/mceclip94-1787653658096.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>5, 7, 9, 3</p></span>`,
+                `<span style="display: inline;"><p>4, 8, 10, 3</p></span>`,
+                `<span style="display: inline;"><p>5, 8, 10, 2</p></span>`,
+                `<span style="display: inline;"><p>4, 9, 12, 4</p></span>`,
+            ],
+            answer: "C",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip95-1787653715948.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0.66,
+            type: "MCQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip96-1787653742912.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: "B",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip97-1787653776110.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip98-1787653784614.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip99-1787653840978.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip100-1787653866725.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip101-1787653874226.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Timestamp ordering guarantees view serializability.</p></span>`,
+                `<span style="display: inline;"><p>Timestamp ordering protocol can lead to deadlock.</p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip102-1787654002161.png"></p></span>`,
+                `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip103-1787654009363.png"></p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Timestamp ordering generates conflict-serializable schedules. Since conflict serializability implies view serializability. So option (a) is correct.</li>
+<li>Timestamp ordering does not require transactions to wait. A transaction violating the timestamp order is aborted and restarted. Hence, deadlock cannot occur. So option (b) is incorrect.</li>
+<li><em>w</em><sub>2</sub>(<em>y</em>) -> <em>C</em><sub>2</sub> <em>r</em><sub>1</sub>(<em>y</em>)<br>T<sub>1</sub> reads <em>y</em> only after T<sub>2</sub> commits. Thus, T<sub>1</sub> never reads an uncommitted value.<br>Therefore, the schedule is strict and Strict => Cascadeless => Recoverable<br>So option (c) is correct.</li>
+<li>The schedule contains no read operation. Therefore, no transaction can read an uncommitted value. Hence, the schedule is cascadeless. So option (d) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following undirected weighted simple graph:</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip104-1787654166954.png"></p>
+<p>By using Kruskal's algorithm.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>The total weight of minimum spanning tree is 15.</p></span>`,
+                `<span style="display: inline;"><p>The total weight (Q, U) is included in the minimum spanning tree.</p></span>`,
+                `<span style="display: inline;"><p>The edges (Q, R), (R, S), (S, Q) form a cycle in the original graph.</p></span>`,
+                `<span style="display: inline;"><p>None of these</p></span>`,
+            ],
+            answer: ["A", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip105-1787654208799.png"></p>
+<p>Total weight of minimum spanning tree = 3 + 2 + 4 + 1 + 3 + 2 = 15</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following statements regarding synchronization mechanisms:</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Disabling interrupts implements mutual exclusion without busy waiting.</p></span>`,
+                `<span style="display: inline;"><p>The <em>P</em>( ) and <em>V</em>( ) semaphore operations need not be executed atomically to ensure mutual exclusion.</p></span>`,
+                `<span style="display: inline;"><p>A binary semaphore implemented using busy waiting is known as a spin lock.</p></span>`,
+                `<span style="display: inline;"><p>A binary semaphore can be used to achieve mutual exclusion among multiple processes.</p></span>`,
+            ],
+            answer: ["A", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
+<li>Disabling interrupts is a hardware-based technique for achieving mutual exclusion in a uniprocessor system. Since no process repeatedly checks a condition while waiting, it does not involve busy waiting. So, option (a) is correct.</li>
+<li>The <em>P</em>( ) and <em>V</em>( ) semaphore operations must be executed atomically. If they are not atomic, multiple processes may simultaneously modify the semaphore value and enter the critical section, thereby violating mutual exclusion. So, option (b) is incorrect.</li>
+<li>When a binary semaphore is implemented by repeatedly checking its value until it becomes available, the waiting process performs busy waiting. Such an implementation is called a spin lock. So, option (c) is correct.</li>
+<li>Although a binary semaphore can assume only two values (0 and 1), it can be used by any number of processes to ensure mutual exclusion. At most one process is allowed to enter the critical section at any instant. So, option (c) is correct.</li>
+</ul></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip106-1787654340459.png"></p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>(a)</p></span>`,
+                `<span style="display: inline;"><p>(b)</p></span>`,
+                `<span style="display: inline;"><p>(c)</p></span>`,
+                `<span style="display: inline;"><p>(d)</p></span>`,
+            ],
+            answer: ["A", "B", "C", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip107-1787654363185.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip108-1787654369971.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Consider the following array:<br> 38, 12, 57, 24, 91, 46, 73, 15<br>The array is sorted in ascending order using 2-way merge sort and insertion sort.<br>Which of the following statements is/are correct?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>After the 2<sup>nd</sup> pass of Merge Sort, the array is 12, 24, 38, 57, 15, 46, 73, 91.</p></span>`,
+                `<span style="display: inline;"><p>After the 2<sup>nd</sup> pass of Merge Sort, the array is 12, 24, 57, 38, 15, 73, 46, 91.</p></span>`,
+                `<span style="display: inline;"><p>After the 3<sup>rd</sup> pass of Insertion Sort, the first four elements are 12, 24, 38, 57, 15, 91, 46, 73.</p></span>`,
+                `<span style="display: inline;"><p>After the 3<sup>rd</sup> pass of Insertion Sort, the array is 12, 24, 38, 57, 91, 46, 73, 15.</p></span>`,
+            ],
+            answer: ["A", "D"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip109-1787654449423.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>A user clicks on the URL www.cnmaster.in. Assume the following:</p>
+<ul>
+<li>Browser cache is empty.</li>
+<li>The IP address is not cached in the local host.</li>
+<li>No DNS records are cached anywhere.</li>
+<li>DNS resolution is performed iteratively through a 3-tier DNS hierarchy (Root -> TLD -> Authoritative).</li>
+<li>The round-trip time (RTT) between the local host and every DNS server is RTT.</li>
+<li>The RTT between the client and the web server is also RTT.</li>
+<li>The HTML page is negligible in size and references 12 equally small objects, all located on the same web server.</li>
+<li>Transmission delay and rendering time are negligible.</li>
+<li>Ignore TCP connection termination time.</li>
+</ul>
+<p>Which of the following statements are correct regarding the minimum elapsed time from clicking the URL until the browser completely renders the page?</p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>8 RTTs, if non-persistent HTTP is used with 6 parallel TCP connections.</p></span>`,
+                `<span style="display: inline;"><p>5 RTTs, if persistent HTTP with pipelining is used.</p></span>`,
+                `<span style="display: inline;"><p>10 RTTs, if non-persistent HTTP is used with 4 parallel TCP connections.</p></span>`,
+                `<span style="display: inline;"><p>6 RTTs, if persistent HTTP without pipelining is used.</p></span>`,
+            ],
+            answer: ["A", "B"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Number of RTT referred by DNS resolver = 3<br>If non-persistent HTTP is given with 6 parallel connections and 12 objects + 1 index file.<br>2 RTTs to get HTML index file<br>1 RTT to make 6 parallel connection.<br>1 RTT to get 6 objects.<br>1 RTT to make another parallel connection.<br>1 RTT to get remaining 6 objects.<br> Total = 9 RTTs (including 3 of DNS)</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "MSQ",
+            text: `<span style="display: inline;"><p>Let G be the directed, weighted graph shown in below figure. Which of the statements are true?</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip0-1787740969865.png"></p>
+<p> </p></span>`,
+            image: "",
+            options: [
+                `<span style="display: inline;"><p>Sequence of vertices identified by the Dijkstra's algorithm for single source shortest path when the algorithm is started at <em>A</em> is <em>A - B - C - D - F - E</em>.</p></span>`,
+                `<span style="display: inline;"><p>Sequence of vertices in the shortest path from <em>B </em>to <em>E </em>is <em>B - D - C - F - E</em>.</p></span>`,
+                `<span style="display: inline;"><p>Cost of shortest path from <em>E </em>to <em>F </em>is 70.</p></span>`,
+                `<span style="display: inline;"><p>Shortest path from <em>A</em> to <em>F </em>is via <em>A -> C -> F</em>.</p></span>`,
+            ],
+            answer: ["B", "C"],
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip1-1787741049792.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the 5 items along with their respectively weight and prices:</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip2-1787741097695.png"></p>
+<p>The Knapsack has capacity, C = 72, the maximum profit that can be achieved using fractional Knapsack is ________. (Upto 2 decimal places)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: "310.6 to 310.7",
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip3-1787741115688.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip4-1787741121570.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A table 'Employee' with schema (Emp_no., Ename, Efloor, Eage), and another table 'Hobby' with schema (Emp_no., Ehobby) contains records as shown below:</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip5-1787741165599.png"></p>
+<p>The following SQL query is executed on the above tables:<br>Select Efloor<br>from Employee natural join Hobby<br>where Eage &gt; = 35 and Emp_no. between 1797 and 3000;<br>Relations E and H with the same schema as those of these two tables respectively contain the same information as tuples. A new relation E' is obtained by the following relational algebra operation:<br><img src="images/pw_full_syllabus_test_8/mceclip6-1787741197888.png"><br>The difference between the number of rows output by the SQL statement and the number of tuples in E' is __________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 6,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>SQL query will return the following output.<br><img src="images/pw_full_syllabus_test_8/mceclip7-1787741222443.png"><br>Total 9 rows are selected.<br>In Relation Algebra, only distinct values of Efloor are selected i.e., 5, 6, 7.<br>Therefore SQL row count RA row count = 9 - 3 = 6.</p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following C function which reverses the single linked list by taking first element address as an input argument:</p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip8-1787741276611.png"></p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip9-1787741310384.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip10-1787741323639.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip11-1787741329686.png"></p>
+<p> </p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A reliable link-layer protocol is designed for communication between two hosts connected by a full-duplex point-to-point link. The link bandwidth is 500 Mbps, the one-way propagation delay is 8 ms, and the protocol uses Selective Repeat ARQ. Every transmitted byte is assigned a unique sequence number. Assume that ACK frames are negligible in size and are never lost.<br>Let <em>N </em>be the minimum number of bits required for the sequence number field such that:<br>1. The sender can achieve 100% link utilization, and<br>2. The sequence numbers do not wrap around before 120 seconds.<br>Determine the value of <em>N </em>________.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 33,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip12-1787741413197.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider a page size of 2 KB and that each page table entry takes 8 bytes. If every page table fits into a single page, then what is the number of levels required to map a 36 bit virtual address?</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 4,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip14-1787741447786.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip15-1787741454510.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>Consider the following C program:<br><img src="images/pw_full_syllabus_test_8/mceclip16-1787741488715.png"><br>The value printed by the program is _______.</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 23,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip17-1787741506688.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip18-1787741514476.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip19-1787741543965.png"></p>
+<p>The average Cycles Per Instruction (CPI) for this benchmark program is ________. (Upto one decimal place)</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1.9,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip20-1787741574040.png"></p>
+<p><img src="images/pw_full_syllabus_test_8/mceclip21-1787741582837.png"></p></div>`
+        },
+        {
+            marks: 2,
+            neg: 0,
+            type: "NAT",
+            text: `<span style="display: inline;"><p>A processor uses a 2-way set-associative cache with a block size of 32 bytes and a word size of 1 byte. The cache has a total capacity of 4 KB. A physical memory address that maps to cache set number (35)<sub>10</sub> has a tag value of (325)<sub>10</sub>. The size of the physical memory (in MB) is ________.<br>[<strong>Note:</strong> 1MB = 2<sup>20</sup> bytes]</p></span>`,
+            image: "",
+            options: [
+            ],
+            answer: 1,
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip22-1787741645326.png"></p></div>`
+        },
+    ]
 });
 
