@@ -12123,7 +12123,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 01 - Full Syllabus Test - 1 (Basic Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -13078,7 +13077,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 02 - Full Syllabus Test - 2 (Basic Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -14071,7 +14069,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 03 - Full Syllabus Test - 3 (Basic Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -15056,7 +15053,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 04 - Full Syllabus Test - 4 (Basic Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -16021,7 +16017,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 05 - Full Syllabus Test - 5 (Advance Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -16988,7 +16983,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 06 - Full Syllabus Test - 6 (Advance Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -18007,7 +18001,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 07 - Full Syllabus Test - 7 (Advance Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
@@ -19023,7 +19016,6 @@ registerTest({
 registerTest({
     series: "cs-gate-pyq",
     name: "FST 08 - Full Syllabus Test - 8 (Advance Level)",
-    isFree: true,
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
