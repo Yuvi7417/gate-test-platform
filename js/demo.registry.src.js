@@ -56662,6 +56662,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Engineering Mathematics(Calculus-I)",
     date: "sep 08, 2026",
+    topicsCovered: "Definite Integrals, Limits, Continuity, Differentiability, Function Properties",
     questions: [
         {
             marks: 1,
@@ -56871,6 +56872,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Engineering Mathematics(Calculus-II)",
     date: "sep 08, 2026",
+    topicsCovered: "Mean Value Theorems, Taylor Series, Partial Derivatives, Maxima and Minima",
     questions: [
         {
             marks: 1,
@@ -57084,6 +57086,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Engineering Mathematics(Calculus-III)",
     date: "sep 08, 2026",
+    topicsCovered: "Indefinite & Definite Integrals, Double Integrals, Area Calculation, Curve Tracing",
     questions: [
         {
             marks: 1,
@@ -57309,6 +57312,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Engineering Mathematics(Calculus-IV)",
     date: "sep 08, 2026",
+    topicsCovered: "Directional Derivatives, Gradient, Divergence, Curl, Line Integrals",
     questions: [
         {
             marks: 1,
@@ -57542,6 +57546,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Engineering Mathematics(Calculus-V)",
     date: "sep 08, 2026",
+    topicsCovered: "Vector Calculus, Green's & Stokes' Theorem, Volume Integrals",
     questions: [
         {
             marks: 1,
@@ -57670,6 +57675,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Computer Organization(Machine Instruction-I)",
     date: "November 07, 2026",
+    topicsCovered: "Instruction Formats, Addressing Modes, Opcode Encoding, Load-Store Architecture",
     questions: [
         {
             marks: 2,
@@ -57983,6 +57989,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Computer Organization(Machine Instruction-II)",
     date: "November 07, 2026",
+    topicsCovered: "Assembly Programs, Register Transfer, Micro-operations, Instruction Cycle",
     questions: [
         {
             marks: 1,
@@ -58261,6 +58268,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Computer Organization(Machine Instruction-III)",
     date: "November 07, 2026",
+    topicsCovered: "8085 Microprocessor Instructions, Flag Registers, Stack Operations, Subroutines",
     questions: [
         {
             marks: 1,
@@ -58547,6 +58555,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Computer Organization(Machine Instruction-IV)",
     date: "November 07, 2026",
+    topicsCovered: "Branching Instructions, Conditional Execution, Memory Referencing, Control Flow",
     questions: [
         {
             marks: 1,
@@ -58832,6 +58841,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Computer Organization(Machine Instruction-V)",
     date: "November 07, 2026",
+    topicsCovered: "Position-Independent Code, Relative Addressing Modes, Macro Instructions",
     questions: [
         {
             marks: 1,
@@ -58919,6 +58929,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Matching)",
     date: "November 07, 2026",
+    topicsCovered: "Compiler Phases, Tokens, Parse Tree, AST, Code Optimization Matching",
     questions: [
         {
             marks: 1,
@@ -59025,6 +59036,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Lexical Analysis-I)",
     date: "November 07, 2026",
+    topicsCovered: "Token Recognition, Regular Expressions, Lex Specification, Transition Diagrams",
     questions: [
         {
             marks: 1,
@@ -59325,6 +59337,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Lexical Analysis-II)",
     date: "November 07, 2026",
+    topicsCovered: "DFA Minimization, Lexical Errors, Longest Match Rule, Whitespace Handling",
     questions: [
         {
             marks: 1,
@@ -59450,6 +59463,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-I)",
     date: "November 07, 2026",
+    topicsCovered: "Context-Free Grammars, Derivations, Ambiguity, Parse Trees, Top-Down Parsing",
     questions: [
         {
             marks: 2,
@@ -59776,6 +59790,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-II)",
     date: "November 07, 2026",
+    topicsCovered: "FIRST and FOLLOW Sets, LL(1) Parsing Table, Recursive Descent Parser",
     questions: [
         {
             marks: 1,
@@ -60061,6 +60076,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-III)",
     date: "November 07, 2026",
+    topicsCovered: "LR(0) and SLR(1) Item Sets, Shift-Reduce Conflicts, Reduce-Reduce Conflicts",
     questions: [
         {
             marks: 2,
@@ -60384,6 +60400,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-IV)",
     date: "November 07, 2026",
+    topicsCovered: "LALR(1) Parsing Table, Canonical LR(1) Parser, Parser State Merging",
     questions: [
         {
             marks: 2,
@@ -60687,6 +60704,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-V)",
     date: "November 07, 2026",
+    topicsCovered: "Operator Precedence Parsing, Ambiguous Grammar Resolution, Grammar Transformations",
     questions: [
         {
             marks: 1,
@@ -60977,6 +60995,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Parsing-VI)",
     date: "November 07, 2026",
+    topicsCovered: "Bottom-Up Parser Construction, Handle Pruning, Viable Prefixes",
     questions: [
         {
             marks: 1,
@@ -61210,6 +61229,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Syntax Directed Translation)",
     date: "November 07, 2026",
+    topicsCovered: "S-Attributed & L-Attributed SDDs, Synthesized & Inherited Attributes, Translation Schemes",
     questions: [
         {
             marks: 1,
@@ -61539,6 +61559,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Intermediate Code Generation-I)",
     date: "November 07, 2026",
+    topicsCovered: "Three-Address Code, Quadruples, Triples, Indirect Triples, DAG Representation",
     questions: [
         {
             marks: 2,
@@ -61896,6 +61917,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Intermediate Code Generation-II)",
     date: "November 07, 2026",
+    topicsCovered: "Basic Blocks, Control Flow Graphs, Loop Invariants, Static Single Assignment (SSA)",
     questions: [
         {
             marks: 1,
@@ -62260,6 +62282,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Intermediate Code Generation-III)",
     date: "November 07, 2026",
+    topicsCovered: "Code Optimization, Common Subexpression Elimination, Dead Code, Constant Folding",
     questions: [
         {
             marks: 1,
@@ -62407,6 +62430,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Runtime Environment-I)",
     date: "November 07, 2026",
+    topicsCovered: "Activation Records, Stack Allocation, Static vs Dynamic Scoping, Parameter Passing",
     questions: [
         {
             marks: 2,
@@ -62701,6 +62725,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Runtime Environment-II)",
     date: "November 07, 2026",
+    topicsCovered: "Heap Allocation, Access Links, Control Links, Dynamic Memory Management",
     questions: [
         {
             marks: 1,
@@ -62987,6 +63012,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-Compiler Design(Runtime Environment-III)",
     date: "November 07, 2026",
+    topicsCovered: "Garbage Collection, Display Mechanism, Parameter Passing Mechanisms",
     questions: [
         {
             marks: 1,
@@ -63050,6 +63076,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Linked List-I)",
     date: "November 07, 2026",
+    topicsCovered: "Singly Linked Lists, Node Insertion & Deletion, Reversal, Traversal",
     questions: [
         {
             marks: 2,
@@ -63382,6 +63409,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Linked List-II)",
     date: "November 07, 2026",
+    topicsCovered: "Doubly Linked Lists, Circular Lists, Cycle Detection, Middle Node Finding",
     questions: [
         {
             marks: 1,
@@ -63714,6 +63742,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Linked List-III)",
     date: "November 07, 2026",
+    topicsCovered: "List Merging, Polynomial Representation, Skip Lists, Memory Overhead",
     questions: [
         {
             marks: 1,
@@ -63802,6 +63831,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Stack-I)",
     date: "November 07, 2026",
+    topicsCovered: "Stack Operations, Infix to Postfix Conversion, Expression Evaluation, Parenthesis Matching",
     questions: [
         {
             marks: 2,
@@ -64144,6 +64174,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Stack-II)",
     date: "November 07, 2026",
+    topicsCovered: "Recursion using Stack, Monotonic Stack, Two Stacks in One Array, Minimum Element Tracking",
     questions: [
         {
             marks: 1,
@@ -64451,6 +64482,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Stack-III)",
     date: "November 07, 2026",
+    topicsCovered: "Stack Permutations, Reverse Polish Notation, Function Call Stack Analysis",
     questions: [
         {
             marks: 1,
@@ -64530,6 +64562,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Queue-I)",
     date: "November 07, 2026",
+    topicsCovered: "Circular Queue, Queue using Stacks, Deque, Priority Queue Basics, Front/Rear Pointer",
     questions: [
         {
             marks: 2,
@@ -64878,6 +64911,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Queue-II)",
     date: "November 07, 2026",
+    topicsCovered: "Sliding Window Queue, Amortized Queue Analysis, Buffer Management",
     questions: [
         {
             marks: 1,
@@ -64902,6 +64936,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Tree-I)",
     date: "November 07, 2026",
+    topicsCovered: "Tree Traversals (Inorder, Preorder, Postorder), Height & Depth, Leaf Node Counting",
     questions: [
         {
             marks: 1,
@@ -65188,6 +65223,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Tree-II)",
     date: "November 07, 2026",
+    topicsCovered: "Tree Reconstruction from Traversals, Strict & Complete Binary Trees, Level Order Traversal",
     questions: [
         {
             marks: 1,
@@ -65516,6 +65552,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Tree-III)",
     date: "November 07, 2026",
+    topicsCovered: "Threaded Binary Trees, Tree Diameter, Lowest Common Ancestor (LCA), Node Distances",
     questions: [
         {
             marks: 1,
@@ -65791,6 +65828,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Tree-IV)",
     date: "November 07, 2026",
+    topicsCovered: "Path Sum, Mirror Trees, Binary Tree Properties, Maximum Width of Tree",
     questions: [
         {
             marks: 1,
@@ -65900,6 +65938,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Search Tree-I)",
     date: "November 07, 2026",
+    topicsCovered: "BST Properties, Insertion, Deletion, Searching, Inorder Successor & Predecessor",
     questions: [
         {
             marks: 2,
@@ -66182,6 +66221,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Search Tree-II)",
     date: "November 07, 2026",
+    topicsCovered: "BST Construction from Preorder/Inorder, Range Queries, Valid BST Verification",
     questions: [
         {
             marks: 1,
@@ -66468,6 +66508,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Binary Search Tree-III)",
     date: "November 07, 2026",
+    topicsCovered: "Kth Smallest/Largest Element, Balanced BST Concepts, Internal & External Path Length",
     questions: [
         {
             marks: 1,
@@ -66646,6 +66687,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(AVL Tree-I)",
     date: "November 07, 2026",
+    topicsCovered: "Balance Factor, AVL Rotations (LL, RR, LR, RL), Insertion, Minimum Nodes for Height h",
     questions: [
         {
             marks: 1,
@@ -66833,6 +66875,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(B and B+ Tree-I)",
     date: "November 07, 2026",
+    topicsCovered: "B-Tree Order, Key Insertion & Splitting, Node Merging, B+ Tree Leaf Linking & Height",
     questions: [
         {
             marks: 2,
@@ -67015,6 +67058,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Heap Tree-I)",
     date: "November 07, 2026",
+    topicsCovered: "Min-Heap & Max-Heap Properties, Heapify Algorithm, Build-Heap Time Complexity",
     questions: [
         {
             marks: 1,
@@ -67300,6 +67344,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Heap Tree-II)",
     date: "November 07, 2026",
+    topicsCovered: "Heap Sort, Priority Queue Operations, Extract-Min, Key Decrease/Increase",
     questions: [
         {
             marks: 1,
@@ -67572,6 +67617,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Heap Tree-III)",
     date: "November 07, 2026",
+    topicsCovered: "Kth Largest Element using Heap, Merge K Sorted Lists, Double-Ended Heaps",
     questions: [
         {
             marks: 1,
@@ -67669,6 +67715,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Hashing-I)",
     date: "November 07, 2026",
+    topicsCovered: "Direct Addressing, Hash Functions, Collision Resolution, Separate Chaining, Load Factor",
     questions: [
         {
             marks: 1,
@@ -67956,6 +68003,7 @@ registerTest({
     series: "cse-gate-2027",
     name: "TWT-data structures(Hashing-II)",
     date: "November 07, 2026",
+    topicsCovered: "Open Addressing, Linear Probing, Quadratic Probing, Double Hashing, Cluster Analysis",
     questions: [
         {
             marks: 2,
