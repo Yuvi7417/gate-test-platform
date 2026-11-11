@@ -502,7 +502,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 47, // Aapke according tests ki ginti
+    tests: 44, // Aapke according tests ki ginti
     startDate: "2026-03-07",
     endDate: "2027-02-15",
     session: "2025-2026",
