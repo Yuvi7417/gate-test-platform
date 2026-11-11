@@ -574,7 +574,7 @@ window.testSeries = [
     f: "gate",
     lang: "English",
     objective: "Objective",
-    tests: 47,
+    tests: 44,
     startDate: "2026-03-07",
     endDate: "2027-02-15",
     session: "2025-2026",
@@ -2062,14 +2062,15 @@ window.PYQ_EE_DEFAULT_TESTS = [
   { series: "ee-gate-pyq-2027", name: "TWT - General Aptitude -2", subject: "ee_aptitude" },
   { series: "ee-gate-pyq-2027", name: "SWT - General Aptitude", subject: "ee_aptitude" },
 
-  // Full Length Mock Tests (7)
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 1", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 2", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 3", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 4", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 5", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 6", subject: "ee_flt" },
-  { series: "ee-gate-pyq-2027", name: "FLT - Mock Test 7", subject: "ee_flt" }
+  // Full Length Mock Tests (8)
+  { series: "ee-gate-pyq-2027", name: "FST 01 - Full Syllabus Test - 1 (Basic Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 02 - Full Syllabus Test - 2 (Basic Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 03 - Full Syllabus Test - 3 (Basic Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 04 - Full Syllabus Test - 4 (Basic Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 05 - Full Syllabus Test - 5 (Advance Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 06 - Full Syllabus Test - 6 (Advance Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 07 - Full Syllabus Test - 7 (Advance Level)", subject: "ee_flt" },
+  { series: "ee-gate-pyq-2027", name: "FST 08 - Full Syllabus Test - 8 (Advance Level)", subject: "ee_flt" }
 ];
 
 
@@ -3612,7 +3613,7 @@ window.renderPYQAccordion = function (isEnrolled = true, statusFilter = "all", s
         // Match against existing keys in registeredMap (e.g. by prefix like "TWT 01", "SWT 1", etc.)
         let matchedKey = null;
         const cleanLower = cleanName.toLowerCase().trim();
-        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+)/i);
+        const prefixMatch = cleanName.match(/^(TWT\s*\d+|SWT\s*\d+|MST\s*\d+|FLT\s*\d+|GBG\s*\d+|FST\s*\d+)/i);
 
         for (const existingKey of registeredMap.keys()) {
           const exLower = existingKey.toLowerCase().trim();
