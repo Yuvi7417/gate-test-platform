@@ -2452,7 +2452,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>A TCP sender transmits data continuously over a connection. TCP uses a 32-bit byte-oriented sequence number field. The sender starts transmission with an initial sequence number of<br>\( 2^{31} \) + 1000.<br>The network may retain an old TCP segment for a maximum duration of 120 seconds (MSL). To avoid sequence number ambiguity, the sender must ensure that the sequence number space does not wrap around during this interval.<br>If the sender utilizes only 75% of the available link capacity, what is the maximum physical link capacity (in Mbps) that can be supported? ________ (Assume 1 Mbps = 106 bits/s). [Round the answer to the nearest integer]</p></span>`,
+            text: `<span style="display: inline;"><p>A TCP sender transmits data continuously over a connection. TCP uses a 32-bit byte-oriented sequence number field. The sender starts transmission with an initial sequence number of<br>\\( 2^{31} + 1000 \\).<br>The network may retain an old TCP segment for a maximum duration of 120 seconds (MSL). To avoid sequence number ambiguity, the sender must ensure that the sequence number space does not wrap around during this interval.<br>If the sender utilizes only 75% of the available link capacity, what is the maximum physical link capacity (in Mbps) that can be supported? ________ (Assume 1 Mbps = \\( 10^6 \\) bits/s). [Round the answer to the nearest integer]</p></span>`,
             image: "",
             options: [
             ],
@@ -2531,12 +2531,12 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Assume that the TCP Round Trip Time (RTT) is currently 35 msec and the following ACK's come in after 36, 40, 25 ms respectively. What is the new estimate RTT (ms) (\( \alpha \) = 0.75) ________. (Up to 2 decimal places)</p></span>`,
+            text: `<span style="display: inline;"><p>Assume that the TCP Round Trip Time (RTT) is currently 35 msec and the following ACK's come in after 36, 40, 25 ms respectively. What is the new estimate RTT (ms) (\\( \\alpha \\) = 0.75) ________. (Up to 2 decimal places)</p></span>`,
             image: "",
             options: [
             ],
             answer: "33 to 34",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given,<br>Initial ERTT = 35 ms<br>\( \alpha \) = 0.75 => 1 - \( \alpha \) = 0.75<br>New RTT values: 36 ms, 40 ms, 25 ms<br>We use RTT estimation<br>ERTT = \( \alpha \) \( \cdot \) ERTT<sub>initial</sub> + (1 - \( \alpha \)) \( \cdot \) RTT<sub>new</sub><br>ERTT1 = 0.75 &times; 35 + 0.25 &times; 36<br>= 26.25 + 9 = 35.25<br>ERTT2 = 0.75 &times; 35.25 + 0.25 &times; 40<br>= 26.4375 + 10 = 36.4375<br>ERTT3 = 0.75 &times; 36.4375 + 0.25 &times; 25<br>= 27.328125 + 6.25 = 33.578125</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Given,<br>Initial ERTT = 35 ms<br>\\( \\alpha \\) = 0.75 &rArr; 1 - \\( \\alpha \\) = 0.25<br>New RTT values: 36 ms, 40 ms, 25 ms<br>We use RTT estimation:<br>ERTT = \\( \\alpha \\cdot \\text{ERTT}_{\\text{initial}} + (1 - \\alpha) \\cdot \\text{RTT}_{\\text{new}} \\)<br>ERTT1 = 0.75 &times; 35 + 0.25 &times; 36<br>= 26.25 + 9 = 35.25<br>ERTT2 = 0.75 &times; 35.25 + 0.25 &times; 40<br>= 26.4375 + 10 = 36.4375<br>ERTT3 = 0.75 &times; 36.4375 + 0.25 &times; 25<br>= 27.328125 + 6.25 = 33.578125</p></div>`
         },
         {
             marks: 2,
@@ -2576,7 +2576,7 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider the following network with 6 routers, \( R_1 \) to \( R_6 \) connected with links having weights as shown in the following diagram:</p>
+            text: `<span style="display: inline;"><p>Consider the following network with 6 routers, \\( R_1 \\) to \\( R_6 \\) connected with links having weights as shown in the following diagram:</p>
 <p><img src="images/pw_topicwise_test_18/mceclip8-1785822024918.png"></p>
 <p>All the routers use the distance vector based routing algorithm to update their routing tables. Each router starts with its routing table initialized to contain an entry for each neighbour with the weight of the respective connecting link. After all the routing tables stabilize, The number of links are there in the network which if goes down, don't led to count-to-infinity problem ________.</p></span>`,
             image: "",
