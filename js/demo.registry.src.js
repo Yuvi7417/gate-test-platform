@@ -46144,7 +46144,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p></p> <p>A lexical analyzer uses the following token definitions</p> <ul> <li> \\( {letter → [A-Za-z]} \\) </li> <li> \\( {digit → [0-9]} \\) </li> <li> \\( {id → letter (letter | digit)^*} \\) </li> <li> \\( {number → digit} \\) \\( { }^{+} \\) </li> <li> \\( {ws → (blank | tab| newline)} \\) \\( { }^{+} \\) </li> </ul> <p>For the string given below,<br/>\\[ x1 \\quad 23 \\mathrm{~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } \\] <br/>the number of tokens (excluding ws) that will be produced by the lexical analyzer is \\( \\_\\_\\_\\_ \\). (answer in integer) </p> <p></p></span>`,
+            text: `<span style="display: inline;"><p>A lexical analyzer uses the following token definitions:</p><ul><li>\\( \\text{letter} \\rightarrow [\\text{A-Za-z}] \\)</li><li>\\( \\text{digit} \\rightarrow [0-9] \\)</li><li>\\( \\text{id} \\rightarrow \\text{letter} (\\text{letter} \\mid \\text{digit})^* \\)</li><li>\\( \\text{number} \\rightarrow \\text{digit}^+ \\)</li><li>\\( \\text{ws} \\rightarrow (\\text{blank} \\mid \\text{tab} \\mid \\text{newline})^+ \\)</li></ul><p>For the string given below:<br/>\\[ \\text{x1} \\quad \\text{23mm} \\quad 78 \\quad \\text{y} \\quad \\text{7z} \\quad \\text{zz5} \\quad \\text{14A} \\quad \\text{8H} \\quad \\text{AaYcD} \\]<br/>the number of tokens (excluding ws) that will be produced by the lexical analyzer is \\( \\_\\_\\_\\_ \\). (answer in integer)</p></span>`,
             image: "",
             options: [
             ],
@@ -59042,7 +59042,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;">A lexical analyzer uses the following token definitions <br><br>\\({letter → [A-Za-z]}\\) <br>\\({digit → [0-9]}\\) <br>\\({id → letter (letter | digit)^*}\\) <br>\\({number → digit}\\) \\({ }^{+}\\) <br>\\({ws → (blank | tab| newline)}\\) \\({ }^{+}\\)<br><br> For the string given below, <br><br>\\( x1 \\quad 23 {~mm} \\quad 78 \\quad \\text{ y } \\quad 7 z \\quad \\text { zz5 } \\quad 14 A \\quad 8 H \\quad \\text { AaYcD } \\) <br><br>the number of tokens (excluding ws) that will be produced by the lexical analyzer is ________. (answer in integer)</span>`,
+            text: `<span style="display: inline;">A lexical analyzer uses the following token definitions:<br><br>&bull; \\( \\text{letter} \\rightarrow [\\text{A-Za-z}] \\)<br>&bull; \\( \\text{digit} \\rightarrow [0-9] \\)<br>&bull; \\( \\text{id} \\rightarrow \\text{letter} (\\text{letter} \\mid \\text{digit})^* \\)<br>&bull; \\( \\text{number} \\rightarrow \\text{digit}^+ \\)<br>&bull; \\( \\text{ws} \\rightarrow (\\text{blank} \\mid \\text{tab} \\mid \\text{newline})^+ \\)<br><br>For the string given below:<br><br><div style="text-align: center; font-size: 1.1em; margin: 10px 0;">\\( \\text{x1} \\quad \\text{23mm} \\quad 78 \\quad \\text{y} \\quad \\text{7z} \\quad \\text{zz5} \\quad \\text{14A} \\quad \\text{8H} \\quad \\text{AaYcD} \\)</div><br>the number of tokens (excluding ws) that will be produced by the lexical analyzer is ________. (answer in integer)</span>`,
             image: "",
             options: [
             ],
@@ -59178,7 +59178,7 @@ III. c44<br></span>`,
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;">A lexical analyzer uses the following patterns to recognize three tokens  \\(T_{1}, T_{2}, \\; and \\; T_{3} \\) over the alphabet {a,b,c}. <br><br>  \\(T_{1}:a?(b|c)^* a \\) <br> \\(T_{2}:b?(a|c)^* b \\) <br> \\( T_{3}:c?(b|a)^* c\\) <br> <br>Note that 'x?' means 0 or 1 occurrence of the symbol x. Note also that the analyzer outputs the token that matches the longest possible prefix.<br><br>
+            text: `<span style="display: inline;">A lexical analyzer uses the following patterns to recognize three tokens \\( T_1, T_2 \\), and \\( T_3 \\) over the alphabet \\( \\{a, b, c\\} \\):<br><br>&bull; \\( T_1: a?(b \\mid c)^* a \\)<br>&bull; \\( T_2: b?(a \\mid c)^* b \\)<br>&bull; \\( T_3: c?(b \\mid a)^* c \\)<br><br>Note that 'x?' means 0 or 1 occurrence of the symbol x. Note also that the analyzer outputs the token that matches the longest possible prefix.<br><br>
 If the string <i>bbaacabc</i> is processed by the analyzer, which one of the following is the
 sequence of tokens it outputs?</span>`,
             image: "",
@@ -63974,7 +63974,7 @@ s + q = 86<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">A stack is implemented with an array of \\({ }^{\\prime} A[0 \\ldots N-1]^{\\prime}\\) and a variable \\(\\text { 'pos'. }\\) The push and pop operations are defined by the following code.<br><pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> push (x)
+            text: `<span style="display: inline;">A stack is implemented with an array of 'A[0 &hellip; N-1]' and a variable 'pos' The push and pop operations are defined by the following code.<br><pre style="border: 1px solid #ccc; padding: 15px; background: #fff; border-radius: 4px; font-weight: bold; font-family: monospace; overflow-x: auto; font-size: 14px; margin-top: 10px; margin-bottom: 10px;"><code> push (x)
     A[pos] <- x
     pos <- pos -1
 end push
@@ -64019,13 +64019,13 @@ Result: (((A+B)*C)\\(-\\)((D\\(-\\)E)*(F+G)))<br><br>
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;">Choose the equivalent prefix form of the following expression<br>\\((a+(b-c))^{\\star}((d-e) /(f+g-h))\\)</span>`,
+            text: `<span style="display: inline;">Choose the equivalent prefix form of the following expression:<br><br>\\( (a + (b - c)) * ((d - e) / (f + g - h)) \\)</span>`,
             image: "",
             options: [
-                `<span style="display: inline;">\\({ }^{\\star}+a-b c /-d e-+f g h\\)</span>`,
-                `<span style="display: inline;">\\({ }^{\\star}+a-b c -/d e-+f g h\\)</span>`,
-                `<span style="display: inline;">\\({ }^{\\star}+a-b c /-ed-+f g h\\)</span>`,
-                `<span style="display: inline;">\\({ }^{*}+\\mathrm{ab}-\\mathrm{c} /-\\mathrm{de}-+\\mathrm{fgh}\\)</span>`,
+                `<span style="display: inline;">\\( * \\; + a - b \\; c \\; / - d \\; e - + f \\; g \\; h \\)</span>`,
+                `<span style="display: inline;">\\( * \\; + a - b \\; c - / d \\; e - + f \\; g \\; h \\)</span>`,
+                `<span style="display: inline;">\\( * \\; + a - b \\; c \\; / - e \\; d - + f \\; g \\; h \\)</span>`,
+                `<span style="display: inline;">\\( * \\; + a \\; b - c \\; / - d \\; e - + f \\; g \\; h \\)</span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  Convert each part to prefix:<br>
