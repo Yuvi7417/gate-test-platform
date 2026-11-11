@@ -55802,3 +55802,7303 @@ registerTest({
     },
   ]
 });
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Basic Level Test - 1",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <em>n</em>! = 1 × 2 × 3 × _ _ _ × <em>n</em> for integer <em>n</em> ≥ 1. If <em>P</em> = (1 × 1!) + (2 × 2!) + (3 × 3!) + ______ (10 × 10!),<br>then <em>P</em> + 2 when divided by 11! leaves a remainder of</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10</p></span>`,
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>7</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_1.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Δ<em>ABC</em> and Δ<em>DBC</em> have a common base and drawn towards the same side, ∠<em>BAC</em> = ∠<em>BDC</em> = 90°. If <em>AC</em> and <em>DB</em> intersect at <em>P</em>, then</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_2.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>AP</em> × <em>PC</em> = <em>BP</em> × <em>PD</em></p></span>`,
+        `<span style="display: inline;"><p><em>AP</em> × <em>BP</em> = <em>PC</em> × <em>PD</em></p></span>`,
+        `<span style="display: inline;"><p><em>AP</em> × <em>PD</em> = <em>PC</em> × <em>BP</em></p></span>`,
+        `<span style="display: inline;"><p>None of the above</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_3.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_4.png"/></p> <p>the possible value(s) of <em>x</em> is/are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_5.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_6.png"/></p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>3</p></span>`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_7.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_8.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p><em>abc</em></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_1/img_9.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the adjoining diagram, <em>ABCD</em> is a square with side ‘<em>a</em>’ cm. The area of the larger circle with centre ‘<em>O</em>’ is equal to the sum of the areas of the remaining four circles with equal radii, whose centres are <em>P</em>, <em>Q</em>, <em>R</em> and <em>S</em>. What is the ratio between the side of square and radius of a smaller circle?</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_10.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_11.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_12.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_13.png"/></p></span>`,
+        `<span style="display: inline;"><p>Can’t be determined</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_14.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_15.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The question below consists of a question and two statements numbered I and II given below it.<br>You have to decide whether the data provided in the statements are sufficient to answer the question. Read both the statements and give answer<br><em>P</em>, <em>Q</em>, <em>R</em>, <em>S</em> and <em>T</em> are sitting around a circular table facing towards the centre. Who among them is sitting to the immediate right of <em>R</em>?<br>I. <em>Q</em> is sitting between <em>P</em> and <em>T</em>, and <em>T</em> is sitting to the immediate right of <em>S</em>.<br>II. <em>Q</em> is second to the left of <em>R</em> and is second to the right of <em>S</em>.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question;</p></span>`,
+        `<span style="display: inline;"><p>The data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question;</p></span>`,
+        `<span style="display: inline;"><p>The data either in statement I alone or in statement II alone is sufficient to answer the question;</p></span>`,
+        `<span style="display: inline;"><p>The data given in both statements I and II together are not sufficient to answer the question.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_16.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If the <em>p</em><sup>th</sup> term of an <em>AP</em> is <em>q</em> and its <em>q</em><sup>th</sup> term is p, then its mth term is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_17.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_18.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_19.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_20.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_21.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the following question, a part of the sentence is given in bold. Choose the correct alternative that best improves the bold part. If no improvement is needed, select “No improvement.”<br>The Vice Chancellor congratulated the blind student <strong>for his</strong> success in the examination.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>in his</p></span>`,
+        `<span style="display: inline;"><p>on his</p></span>`,
+        `<span style="display: inline;"><p>over his</p></span>`,
+        `<span style="display: inline;"><p>No improvement</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>The verb “congratulate” is typically followed by the preposition “on” when referring to the reason for the congratulation.<br>Correct sentence: “The Vice Chancellor congratulated the blind student on his success in the examination.”</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the passage carefully and choose the best answer to the following question from the four alternatives given below.<br>In the past 50 years, doctors across the world have accepted the practice to prescribe antibiotics at the first sign of a trivial infection or treat patients with a handful of antibiotics. These days it is not uncommon to see practitioners prescribing multiple antibiotics without any real indication or relevance for such a combination of drugs. Antibiotics have traditionally been known as miracle drugs, but there is growing evidence that they are overworked miracles, especially in countries like ours where there is easy access to drugs across the counter, including antibiotics. We cannot think of a return to pre-antibiotic days. Yet the unbridled use of these agents is inexorably propelling us in that direction.<br>Antibiotics are called overworked miracles because:</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>they performed miracles.</p></span>`,
+        `<span style="display: inline;"><p>they are hardly used.</p></span>`,
+        `<span style="display: inline;"><p>they are over-used.</p></span>`,
+        `<span style="display: inline;"><p>they exhausted their miracles.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>The passage clearly points out that antibiotics are being excessively used, so they are called overworked miracles.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the mirror represented by a line MN, choose the correct mirror-image of the figure, from amongst the four alternatives (a), (b), (c) and (d) given along with it.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_22.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_23.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_24.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_25.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_26.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit shown in figure for <em>R</em> = 40 Ω, the current <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_27.png"/> is 4 A. When R is 10 Ω, the current I would be</p> <div> <div><img alt="" src="images/ee_2026_basic_test_1/img_28.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1 A</p></span>`,
+        `<span style="display: inline;"><p>2 A</p></span>`,
+        `<span style="display: inline;"><p>4 A</p></span>`,
+        `<span style="display: inline;"><p>8 A</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_29.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the system shown in below figure, what is the transfer function <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_30.png"/></p> <p>(Given : <em>R</em><sub>1</sub> = <em>R</em><sub>2</sub> = <em>C</em><sub>1</sub> = <em>C</em><sub>2</sub> = 2 unit)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_1/img_31.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_32.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_33.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_34.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_35.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_36.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_37.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an LTI system having impulse response of <em>h</em>(<em>t</em>) = <em>e</em><sup>–2t</sup>.<em>u</em>(<em>t</em>) with an output <em>y</em>(<em>t</em>) for the input of <em>x</em>(<em>t</em>) = <em>u</em>(<em>t</em> – 2) – <em>u</em>(<em>t</em> – 5). Then, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_38.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_39.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_40.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_41.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_42.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_43.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In a single phase full bridge inverter, the total harmonic distortion (THD) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_44.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_45.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_46.png"/></p></span>`,
+        `<span style="display: inline;"><p>0.9</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_47.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A lossless transmission line operating voltage <em>V<sub>S</sub></em> = <em>V<sub>R</sub></em> = 400 kV and load angle equal to 30°. After 30% of shunt capacitor compensation at the load end, if the generator is delivering a power of 400 MW. The surge impedance before compensation is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>175 Ω</p></span>`,
+        `<span style="display: inline;"><p>228 Ω</p></span>`,
+        `<span style="display: inline;"><p>200 Ω</p></span>`,
+        `<span style="display: inline;"><p>320 Ω</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_48.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The step response of a system is shown below, the forward path gain is</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_49.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.5</p></span>`,
+        `<span style="display: inline;"><p>25</p></span>`,
+        `<span style="display: inline;"><p>24</p></span>`,
+        `<span style="display: inline;"><p>2.4</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_50.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>An auto-transformer having 2500 turns is connected across a 250 V as supply. If a tap is taken at 1800<sup>th</sup> turn, then the secondary voltage will be obtained _____ V.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 180,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>180</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_51.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>An 8-pole, 50 Hz, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_52.png"/> induction motor has an equivalent rotor resistance of 0.07 Ω/Ph. If its stalling speed is 630 rpm. How much resistance must be included per phase to obtain maximum torque at starting? Ignore magnetising current.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.27 Ω</p></span>`,
+        `<span style="display: inline;"><p>0.37 Ω</p></span>`,
+        `<span style="display: inline;"><p>0.47 Ω</p></span>`,
+        `<span style="display: inline;"><p>0.57 Ω</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_53.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_54.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit shown below :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_55.png"/></div> <div>The magnitude of maximum value of current through capacitor is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2 A</p></span>`,
+        `<span style="display: inline;"><p>10 A</p></span>`,
+        `<span style="display: inline;"><p>20 A</p></span>`,
+        `<span style="display: inline;"><p>4 A</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_56.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 5 A, 230 V electrodynamics type wattmeter has a scale having 100 divisions. The current coil carries a current of 2 cos(314π<em>t</em>) A. The voltage across the pressure coil is 400 sin(314πt) V. The needle of the wattmeter will move to _____ division. (Answer rounded off to nearest integer)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0 (0.0 - 0.0)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_57.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>If A is symmetric and B is skew-symmetric matrix, then which of the following is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>ABA<sup>T</sup></em> is skew-symmetric matrix.</p></span>`,
+        `<span style="display: inline;"><p><em>AB<sup>T</sup></em> + <em>BA<sup>T</sup></em> is symmetric matrix.</p></span>`,
+        `<span style="display: inline;"><p>(<em>A</em> + <em>B</em>)(<em>A</em> – <em>B</em>) is skew-symmetric.</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_58.png"/></p></span>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_59.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A pair of unbiased dice is rolled together till a sum of either 5 or 7 is obtained. The probability that 5 comes before 7 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_60.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_61.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_62.png"/></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_63.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_64.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_65.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The transfer characteristic of the given precision rectifier circuit will be</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_66.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_67.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_68.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_69.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_70.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_71.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_72.png"/></div> <div>The Thevenin’s equivalent resistance across terminal a, b is _____ kΩ.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 10,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>10</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_73.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_74.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the circuit shown below :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_75.png"/></div> <div>Find the voltage across <em>a</em>-<em>b</em>.</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_76.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_77.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_78.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_79.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_80.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A filamentary current of 20 A is directed in from infinity to the origin on the positive x-axis. The magnetic field intensity <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_81.png"/> at (0, 0, 2) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_82.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_83.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_84.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_85.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_86.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single phase semi-converter, using two thyristor and two diodes as shown below. The load consist of a large inductor so as to maintain load current constant.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_87.png"/></div> <div>If firing angle (α) is 45°, then the circuit turn off time is _____ msec. (Answer upto two decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6.25,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6.25 (6.00 - 6.50)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_88.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider a causal LTI system characterized by differential equation <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_89.png"/> The<br>steady state output y(t) is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_90.png"/> then the value of <em>A</em> is ____. (Answer upto two decimal).</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.71,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.71  (0.70 -0.72)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_91.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The pole zero map and the Nyquist plot of the open loop transfer function G(s)H(s) of a feedback system are shown below, for this.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_92.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Both open loop and closed loop systems are stable.</p></span>`,
+        `<span style="display: inline;"><p>Open loop system is stable but closed loop system is unstable.</p></span>`,
+        `<span style="display: inline;"><p>Open loop system is unstable but closed loop system is stable.</p></span>`,
+        `<span style="display: inline;"><p>Both open loop and closed loop systems are unstable.</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_93.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A cylindrical rotor synchronous generator with constant real power output and constant terminal voltage is supplying 100 A current to a 0.9 lagging power factor load. An ideal reactor is now connected in parallel with the load, as a result of which the total lagging reactive power requirement of the load is ‘<em>X</em>’ times the previous value while the real power remains unchanged such that the new armature current is 1.25 times the previous value. The value of X is _______ . (Answer upto one decimal place)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_94.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following circuit :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_95.png"/></div> <div>The Boolean expression for <em>V<sub>o</sub></em> in terms of the four input voltages is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_96.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_97.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_98.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_99.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_100.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If a potential, <em>V</em> = 8<em>e</em><sup>–6<em>x</em></sup> Volts, ε<em><sub>r</sub></em> = 3, then associated electric field intensity is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_101.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_102.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_103.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_104.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_105.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>For the circuit shown below,</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_106.png"/></div> <div>If <em>L</em><sub>1</sub> = 0.4 H, <em>L</em><sub>2</sub> = 2.5 H, K = 0.6 and <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_107.png"/> = 20 cos(500t – 20°) mA, then which of the following statements is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Current <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_108.png"/> at t = 0 is 4.7 mA.</p></span>`,
+        `<span style="display: inline;"><p>Mutual inductance <em>M</em> = 0.6 H.</p></span>`,
+        `<span style="display: inline;"><p>Voltage <em>V</em><sub>1</sub> at <em>t</em> = 0 is 1.881 V</p></span>`,
+        `<span style="display: inline;"><p>Total energy stored in the system at <em>t</em> = 0 is 151.32 μJ</p></span>`,
+      ],
+      answer: ["A", "B", "C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_109.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A portion of polar plot of an open loop transfer function is shown in the figure below :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_110.png"/></div> <div>Which of the following option is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Gain margin is 4.43 dB</p></span>`,
+        `<span style="display: inline;"><p>Phase margin is 45°</p></span>`,
+        `<span style="display: inline;"><p>Phase margin is –45°</p></span>`,
+        `<span style="display: inline;"><p>System is stable</p></span>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_111.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The function <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_112.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>discontinuous at only one point</p></span>`,
+        `<span style="display: inline;"><p>discontinuous at exactly two points</p></span>`,
+        `<span style="display: inline;"><p>discontinuous at exactly three points</p></span>`,
+        `<span style="display: inline;"><p>none of these</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_113.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the circuit shown below, the switch is closed at <em>t</em> = 0.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_114.png"/></div> <div>The current <em>i<sub>c</sub></em>(0<sup>–</sup>) is _____ A. (Answer upto two decimal digits).</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.71,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.71</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_115.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_116.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_117.png"/></div> <div>Minimum number of NAND gates required to implement above circuit _____</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_118.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Identity the type of asynchronous counters and the MOD number. Assume initial state <em>Q</em><sub>2</sub><em>Q</em><sub>1</sub><em>Q</em><sub>0</sub> to be 000.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_119.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Down-counter, MOD-3</p></span>`,
+        `<span style="display: inline;"><p>Up-counter, MOD-3</p></span>`,
+        `<span style="display: inline;"><p>Down-counter, MOD-4</p></span>`,
+        `<span style="display: inline;"><p>Up-counter, MOD-4</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_120.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single-phase 3300/400 V transformer has the following winding resistances and reactances :<br><em>R</em><sub>1</sub> = 0.7 Ω, <em>R</em><sub>2</sub> = 0.011 Ω, <em>X</em><sub>1</sub> = 3.6 Ω, <em>X</em><sub>2</sub> = 0.045 Ω<br>The secondary is connected to a coil having a resistance of 4.5 Ω and inductive reactance 3.2 Ω.<br>The magnitude of secondary terminal voltage is _____.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 394.7,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>394.7 (393.0 - 397.0)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_121.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_122.png"/> transmission line has circuit constant <em>A</em><sub>1</sub> = 0.98∠0.8° Ω/phase, <em>B</em><sub>1</sub> = 90∠60° Ω/phase. If a second line parallel with first line, having constants <em>A</em><sub>2</sub> = 0.95∠0.8° Ω/phase and <em>B</em><sub>2</sub> = 60∠60° Ω/ phase is connected in parallel and sending end voltage is 200 kV, no load receiving end voltage (kV) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_123.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_124.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_125.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_126.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_127.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_128.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A generator supplies a motor through a Y/Δ transformer. The generator is connected to the Yside of the transformer. A single line to ground fault occur between the motor terminals and the transformer. The symmetrical components of the substransient current in the motor flowing towards the fault are</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_129.png"/></div> <div>Magnitude of fault current in line a is _____ pu.</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>5 pu</p></span>`,
+        `<span style="display: inline;"><p>9 pu</p></span>`,
+        `<span style="display: inline;"><p>0 pu</p></span>`,
+        `<span style="display: inline;"><p>15 pu</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_130.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider a signal x(t) defined as:</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_131.png"/></div> <div>Consider another signal <em>y</em>(<em>t</em>) which is related with <em>x</em>(<em>t</em>) as <em>y</em>(<em>t</em>) = e<sup>j5t</sup><em>x</em>(2<em>t</em>). If the Fourier transform of <em>y</em>(<em>t</em>) is <em>Y</em>(ω), the value of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_132.png"/> at ω = 5 rad/s will be _________. (upto three decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.732,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.732 (1.65 - 1.80)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_133.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_134.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_135.png"/> rectifier circuit shown below :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_136.png"/></div> <div>If firing angle of each thyristor is 45°, then the average power consumed by the load is _____ kW.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 3.21,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3.21 (3.10 - 3.30)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_137.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The ac bridge shown in figure is used to measure an unknown inductance <em>L<sub>X</sub></em>, that has inherent resistance <em>R<sub>X</sub></em>. The bridge parameters are <em>R</em><sub>1</sub> = 20 kΩ, <em>R</em><sub>2</sub> = 50 kΩ, <em>C</em><sub>2</sub> = 0.003 μF, ω = 10<sup>6</sup> rad/sec. <em>C</em><sub>1 </sub>is adjustable from 10 pF to 150 pF and <em>R</em><sub>4</sub> is adjustable from 0 to 10 kΩ. The largest values of <em>R<sub>X </sub></em>and <em>L<sub>X</sub></em> that can be measured with the given parameters are respectively</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_138.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.55 kΩ, 58.8 mH</p></span>`,
+        `<span style="display: inline;"><p>2.55 kΩ, 74.8 mH</p></span>`,
+        `<span style="display: inline;"><p>25.5 kΩ, 58.8 mH</p></span>`,
+        `<span style="display: inline;"><p>25.5 kΩ, 74.8 mH</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_139.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For a uniform charged sphere of radius <em>R</em> and charge density ρ, the ratio of magnitude of electric field at distances <em>R</em>/2 and 4R from centre, i.e., <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_140.png"/> is _____.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>16</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>8</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_141.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the amplifier circuit shown below, the transistor parameters are as follows :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_142.png"/></div> <div>The value of input impedance and voltage gain respectively will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>538.075 Ω, –18.55</p></span>`,
+        `<span style="display: inline;"><p>5.38 Ω, –18.55</p></span>`,
+        `<span style="display: inline;"><p>538.075 Ω, –1855</p></span>`,
+        `<span style="display: inline;"><p>5.38 Ω, –1855</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_143.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The area enclosed between the curves <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_144.png"/> and the x-axis is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2 square unit</p></span>`,
+        `<span style="display: inline;"><p>1 square unit</p></span>`,
+        `<span style="display: inline;"><p>4 square unit</p></span>`,
+        `<span style="display: inline;"><p>none of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_145.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_146.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Integrating factor of differential equation <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_147.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_149.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_150.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_151.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_152.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 2-wire dc distributor AB 400 metres long is fed from both ends and is loaded uniformly at the rate of 8.0 A/m. At the feeding point A, the voltage is maintained at 310 V and at point <em>B</em> at 300 V. If the resistance of each conductor is 0.2 Ω per kilometre, then the current supplied from<br>feeding point A is _____ Amp. (Answer upto two decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1662.48,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1662.48 (1662.45 - 1662.50)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_153.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_154.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A system shown below has multiple poles and zeroes as shown below :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_155.png"/></div> <div>The impulse response of the system is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_156.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_157.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_158.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_159.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_160.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Which of the following signal(s) is/are periodic?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_161.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_162.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_163.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_164.png"/></p></span>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_165.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_166.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The z-transform of the discrete-time signal <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_167.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_168.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_169.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_170.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_171.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_172.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the two-port network :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_173.png"/></div> <div>If the load is consuming 0.5 W power, then the supply voltage is _____ V? (Answer rounded off to nearest integer)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6 (6.0 - 6.0)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_174.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_175.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 4-pole, 3-phase Slip Ring Induction Motor (SRIM) is excited from a 3-phase, 50 Hz supply. Its rotor is connected to a load requiring 3-phase, 20 Hz supply through slip rings. The ratio of the two voltages available at the slip rings at the two speeds is _____.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-1</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_176.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 3-phase salient pole synchronous generator is delivering a power of 0.9 pu to an infinite bus at rated voltage and at power factor of 0.8 lagging. The generator has <em>X<sub>d</sub></em> = 1 pu and <em>X<sub>q</sub></em> = 0.6 pu. The excitation voltage and if excitation is gradually reduced to zero, then the maximum pu power it can deliver without loosing synchronization are respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>E<sub>f</sub></em> = 1.886 pu and 0.333 pu</p></span>`,
+        `<span style="display: inline;"><p><em>E<sub>f</sub></em> = 0.943 pu and 0.222 pu</p></span>`,
+        `<span style="display: inline;"><p><em>E<sub>f</sub></em> = 1.286 pu and 0.256 pu</p></span>`,
+        `<span style="display: inline;"><p><em>E<sub>f</sub></em> = 0.946 pu and 0.333 pu</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_177.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The output voltage waveform of multiple pulse width modulation inverter shown in figure, if <em>d</em> = 18°, then the peak value of 7<sup>th</sup> harmonic is _____ V.</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_178.png"/></div> <div>(Answer upto two decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 20.39,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>20.39 (20.00 - 20.60)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_179.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A three-phase half wave converter is operated from a three-phase star connected 400 V, 50 Hz supply and load resistance is R = 20 Ω. If it is required to obtain an average output voltage at 75% of the maximum possible output voltage, then the delay angle α in degree is ______. (Answer upto two decimal)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 42.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>42.60° (41 - 43)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_180.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_181.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an opamp circuit and a D-flip flop. Opamp output is given to the clock of D-flip flop. The minimum value of <em>RC</em> (in ns) so that flip flop work properly is equal to</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_182.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>7.213</p></span>`,
+        `<span style="display: inline;"><p>9.675</p></span>`,
+        `<span style="display: inline;"><p>10.239</p></span>`,
+        `<span style="display: inline;"><p>12.266</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_183.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_184.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the differential amplifier shown in the figure :</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_185.png"/></div> <div>If <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_186.png"/> then CMRR in dB is _____.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 41.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>41.6 (40.0 to 43.0)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_187.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A line charge with charge density λ = 10 nC/m is lying about y = <em>x</em>, z = 0. The net outward flux crossing through the cube –5 ≤ <em>x</em>, y, z ≤ 5 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>141.42 nC</p></span>`,
+        `<span style="display: inline;"><p>141.42 μC</p></span>`,
+        `<span style="display: inline;"><p>14.14 nC</p></span>`,
+        `<span style="display: inline;"><p>14.14 μC</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_188.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A shunt generator gives full load output of 30 kW at a terminal voltage of 200 V. The armature and shunt field resistance are 0.05 Ω and 50 Ω respectively. The iron and friction losses are 1000 W. The efficiency of the generator is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>90.95%</p></span>`,
+        `<span style="display: inline;"><p>92.20%</p></span>`,
+        `<span style="display: inline;"><p>93.21%</p></span>`,
+        `<span style="display: inline;"><p>87.20%</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_189.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_190.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 3-phase, 2-pole, 50 Hz synchronous generator has a rating of 250 MVA, 0.8 pf lagging. The kinetic energy of the machine at synchronous speed is 1000 MJ. The machine is running steadily at synchronous speed and delivering 60 MW power at power angle of 15 electrical degrees. If the load is suddenly removed, assuming the acceleration is constant for 10 cycles, the value of the power angle after 5 cycles is _____ electrical degrees.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 17.7,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>17.7 (17.5 - 17.9)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_191.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_1/img_192.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The vector</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_193.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>divergence free</p></span>`,
+        `<span style="display: inline;"><p>rotational</p></span>`,
+        `<span style="display: inline;"><p>not divergence free</p></span>`,
+        `<span style="display: inline;"><p>irrotational</p></span>`,
+      ],
+      answer: ["C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_194.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The expansion of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_195.png"/> is given by</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_196.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_197.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_198.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_199.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_200.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The value of the integral <img align="absmiddle" alt="" src="images/ee_2026_basic_test_1/img_201.png"/>where <em>c</em> is the circle |z| = 1 is equal to</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_202.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_203.png"/></p></span>`,
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_1/img_204.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_1/img_205.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Basic Level Test - 2",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>There are four types of candidates in our coaching preparing for the UPSC. The number of students of Engineering, Science, Commerce and Humanities is 40, 60, 50 and 30 respectively and the respective percentage of students who qualified the UPSC is 80%, 75%, 60% and 50% respectively the overall percentage of successful candidates in our institute is :</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>67.77%</p></span>`,
+        `<span style="display: inline;"><p>66.66%</p></span>`,
+        `<span style="display: inline;"><p>68.5%</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br><img alt="" src="images/ee_2026_basic_test_2/img_1.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The number 12375 is divisible by</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>9</p></span>`,
+        `<span style="display: inline;"><p>11</p></span>`,
+        `<span style="display: inline;"><p>7</p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)<br>1 + 2 + 3 + 7 + 5 = 18, hence divisible by 3 and 9 both.<br>Again (5 + 3 + 1) – 7 + 2 = 0<br>Hence, divisible by 11 also.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The total number of integral values of x for which |||x – 2|–4|–6|&lt; 10.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>39</p></span>`,
+        `<span style="display: inline;"><p>42</p></span>`,
+        `<span style="display: inline;"><p>43</p></span>`,
+        `<span style="display: inline;"><p>38</p></span>`,
+      ],
+      answer: "",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since a modulus value is always non-negative, therefore<br><img alt="" src="images/ee_2026_basic_test_2/img_2.png"/><br>Thus there are total 39 values of x, namely –17, –16, . . . . –2, –1, 0, 1, 2, .... 20, 21<br>Hence choice (a) is the correct one.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the given figure, ∠BAC and ∠BDC are the angles of same segments. ∠DBC = 30° and ∠BCD = 110°. Find m ∠BAC.<br><img alt="" src="images/ee_2026_basic_test_2/img_3.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>35°</p></span>`,
+        `<span style="display: inline;"><p>40°</p></span>`,
+        `<span style="display: inline;"><p>55°</p></span>`,
+        `<span style="display: inline;"><p>60°</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>∠BDC = 180° – (110° + 30°) = 40°<br>and ∠BAC = ∠BAC = 40°<br>(angles of the same segment)</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <em>p</em> and <em>q</em> be real numbers such that <img alt="" src="images/ee_2026_basic_test_2/img_4.png"/> If α and β are nonzero complex number satisfying <img alt="" src="images/ee_2026_basic_test_2/img_5.png"/>  and  <img alt="" src="images/ee_2026_basic_test_2/img_6.png"/> then a quadratic equation having <img alt="" src="images/ee_2026_basic_test_2/img_7.png"/> and <img alt="" src="images/ee_2026_basic_test_2/img_8.png"/> as its roots is </p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_9.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_10.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_11.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_12.png"/></p></span>`,
+      ],
+      answer: "",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img alt="" src="images/ee_2026_basic_test_2/img_13.png"/><br>So, the required equation is<br><img alt="" src="images/ee_2026_basic_test_2/img_14.png"/><br>Hence choice (b) is the answer.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_15.png"/></p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2 (2 - 2)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_16.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the following figure, ABC is an equilateral triangle inscribing a square of maximum possible area. Again in this square there is an equilateral triangle whose side is same as that of the square. Further the smaller equilateral triangle inscribes a square of maximum possible area. What is the area of the innermost square if the each side of the outermost triangle be 0.01 m?</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_17.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_18.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_19.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_20.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_21.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br><img alt="" src="images/ee_2026_basic_test_2/img_22.png"/><br>PCQ is also an equilateral triangle,<br><img alt="" src="images/ee_2026_basic_test_2/img_23.png"/><br>Now, in figure (iii),<br><img alt="" src="images/ee_2026_basic_test_2/img_24.png"/><br>Let the each side of square RSYX be K, then RT = K also (since RTS is an equilateral triangle)<br><img alt="" src="images/ee_2026_basic_test_2/img_25.png"/><br><img alt="" src="images/ee_2026_basic_test_2/img_26.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Choose the correct mirror-image of the figure, from amongst the four alternatives (a), (b), (c) and (d) given along with it. The mirror may be represented by a line MN?</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_27.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_28.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_29.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_30.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_31.png"/></p></span>`,
+      ],
+      answer: "",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <div class="meta">No solution text available.</div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the passage carefully and choose the best answer to the following question from the four alternatives given below.<br>Among the natural resources which can be called upon in national plan for development, possibly the most important is human labour; without productive labour force, including effective leadership and intelligent middle management, no amount of foreign assistance or natural wealth can ensure successful development and modernisation. One essential factor is usually overlooked or ignored. The forgotten factor is the role of women. Development will be handicapped as long as women remain second-class citizens, uneducated, without any voice in family or community decisions, without legal or economic status, married when they are still practically children, and thenceforth producing one baby after another, often only to see half of them die before they are of school age. We can enhance development by improving ‘woman power’ by giving women opportunity to develop themselves.<br>The most important natural resource for national development is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>human labour</p></span>`,
+        `<span style="display: inline;"><p>effective leadership</p></span>`,
+        `<span style="display: inline;"><p>intelligent middle management</p></span>`,
+        `<span style="display: inline;"><p>foreign assistance</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br>The passage clearly states that among natural resources, human labour is the most important for<br>national development.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>He likes to drive his car at a speed of eighty kilometres each .</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>in every hour</p></span>`,
+        `<span style="display: inline;"><p>an hour</p></span>`,
+        `<span style="display: inline;"><p>hourly</p></span>`,
+        `<span style="display: inline;"><p>No improvement</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>The correct expression is “eighty kilometres an hour” (or per hour). The word “each” is grammatically incorrect in this context. “Correct sentence: “He likes to drive his car at a speed of eighty kilometres an hour.”</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 48 V battery of internal resistance <em>r</em> = 4 Ω is connected to a variable resistance <em>R</em>. The rate of heat dissipation in the resistor ‘<em>R</em>’ is maximum when the current drawn from the battery is I. Current drawn from the battery will be I/2 when <em>R</em> is equal to _____ Ω.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>12</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_32.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Which of the following system produces undamped oscillation?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_33.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_34.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_35.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_36.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)<br><img alt="" src="images/ee_2026_basic_test_2/img_37.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The bilateral laplace transform of x(t) = e–tu(t + 1) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_38.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_39.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_40.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_41.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_42.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The output voltage of a 3-phase voltage source inverter contains 5<sup>th</sup> and 7<sup>th</sup> harmonics. Assume the output is balanced.<br><img alt="" src="images/ee_2026_basic_test_2/img_43.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_44.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_45.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_46.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_47.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br><img alt="" src="images/ee_2026_basic_test_2/img_48.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The bus admittance (Y<sub>bus</sub>) matrix of a 3-bus power system is given below :</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_49.png"/></div> <div>Considering that there is no shunt inductor connected to any of the buses, which of the following statements can not be true?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Line charging capacitor of finite value is present in all three lines.</p></span>`,
+        `<span style="display: inline;"><p>Line charging capacitor of finite value is present in line 2-3 only.</p></span>`,
+        `<span style="display: inline;"><p>Line charging capacitor of finite value is present in line 2-3 only and shunt capacitor of finite value is present in bus 1 only.</p></span>`,
+        `<span style="display: inline;"><p>Line charging capacitor of finite value is present in line 2-3 only and shunt capacitor of finite value is present in bus 3 only.</p></span>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)<br><img alt="" src="images/ee_2026_basic_test_2/img_50.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following block diagram :</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_51.png"/><br>The overall transfer function of the block diagram given is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_52.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_53.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_54.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_55.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_56.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For a transformer on short circuit, voltage of 0.02 pu is required to deliver full-load current. The full-load regulation at unity power factor is 0.004 pu. Its regulation at full-load 0.8 power factor lagging is _____ %. (Answer rounded off to two decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.5 (1.46 - 1.53)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_57.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the curve shown below,</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_58.png"/></div> <div>variable on y-axis is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_59.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_60.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_61.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_62.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The speed of a 20 hp, 230 V, 1500 rpm DC series motor is controlled by a single phase half controlled rectifier. In DC motor, series field winding and armature winding have resistances 0.05 Ω and 0.13 Ω respectively. Input to the rectifier is 230 V, 50 Hz supply and firing delay angle is 30°. If back emf constant is 0.08 (V sec)/(A rad), then the armature current and supply power factor at rated load and speed are,<br>(Assume motor current to be continuous and ripple free)</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>15.16 A and 0.75 lagging</p></span>`,
+        `<span style="display: inline;"><p>12.56 A and 0.75 lagging</p></span>`,
+        `<span style="display: inline;"><p>15.16 A and 0.92 lagging</p></span>`,
+        `<span style="display: inline;"><p>12.56 A and 0.92 lagging</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_63.png"/></p> <p><img alt="" src="images/ee_2026_basic_test_2/img_64.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A voltmeter having a sensitivity of 1 kΩ/V is connected across an unknown resistance in series with a milliammeter reading 80 V on 150 V scale. When the milliammeter reads 10 mA, the error due to the loading effect of the voltmeter is _____ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5.62,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5.62 (5.60 - 5.65)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_2/img_65.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>If <em>A</em> is a matrix such that <em>A</em><sup>2</sup> + <em>A</em> + 2<em>I</em> = 0, then which of the following is/are true?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>A is non singular</p></span>`,
+        `<span style="display: inline;"><p>A is symmetric</p></span>`,
+        `<span style="display: inline;"><p>A cannot be skew-symmetric</p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_66.png"/></p></span>`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_67.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A fair coin is tossed 100 times. The probability of getting tails 1, 3, _ _ _ _ _ 49 times is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_68.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_69.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_70.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_71.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_72.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_73.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Find the value of <em>R<sub>a</sub></em> such that <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_74.png"/></p> <div><img alt="" src="images/ee_2026_basic_test_2/img_75.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>90 kΩ</p></span>`,
+        `<span style="display: inline;"><p>80 kΩ</p></span>`,
+        `<span style="display: inline;"><p>30 kΩ</p></span>`,
+        `<span style="display: inline;"><p>60 kΩ</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_76.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit :</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_77.png"/></div> <div>The current <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_78.png"/> at resonance frequency is _____ mA.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 144.56,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>144.56 (144.00 - 145.00)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_79.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_80.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following two-port circuit :</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_81.png"/><br>The z-parameter of the circuit is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_82.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_83.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_84.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_85.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>Here, two networks are connected in series.<br><strong>1<sup>st</sup> network :</strong></p> <p><img alt="" src="images/ee_2026_basic_test_2/img_86.png"/><br><strong>2<sup>nd</sup> network :</strong></p> <p><img alt="" src="images/ee_2026_basic_test_2/img_87.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Four charges <em>Q</em><sub>1</sub>, <em>Q</em><sub>2</sub>, <em>Q</em><sub>3</sub>, <em>Q</em><sub>4</sub> are located at the corners of a square, as shown in the figure. Field at the centre of the square is zero if</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_88.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_89.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_90.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_91.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_92.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_93.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If the latching current in the circuit shown below is 5 mA, obtain the minimum width of the gating pulse required to properly turn-on the SCR.</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_94.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4 μsec</p></span>`,
+        `<span style="display: inline;"><p>6 μsec</p></span>`,
+        `<span style="display: inline;"><p>5 μsec</p></span>`,
+        `<span style="display: inline;"><p>2 μsec</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_95.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A continuous-time periodic signal <em>x</em>(<em>t</em>) is real valued and has a fundamental period T = 8. The non-zero Fourier series coefficients for <em>x</em>(<em>t</em>) are</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_96.png"/></p> <p><img alt="" src="images/ee_2026_basic_test_2/img_97.png"/></p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(-4) (-4 - - 4)<br><img alt="" src="images/ee_2026_basic_test_2/img_98.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The respective number of left hand, right hand and <em>jω</em>-axis roots of the equation<br><img alt="" src="images/ee_2026_basic_test_2/img_99.png"/><br>are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3, 1, 2</p></span>`,
+        `<span style="display: inline;"><p>2, 2, 2</p></span>`,
+        `<span style="display: inline;"><p>1, 1, 4</p></span>`,
+        `<span style="display: inline;"><p>3, 2, 1</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_100.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_101.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A three-phase, four-pole, 50 Hz induction motor at standstill has induced emf of 120 V across its star-connected rotor terminals. The rotor resistance and reactance per phase are 0.2 Ω and 1.0 Ω respectively. The speed, when the rotor is drawing a current of 16 A at a particular load, is _____ rpm. (Rounded off to nearest integer)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1429,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1429 (1427.00 - 1430.00)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_102.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_103.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A S-R flip-flop is converted into X-flip-flop as shown below :</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_104.png"/><br>The characteristic equation is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_105.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_106.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_107.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_108.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br><img alt="" src="images/ee_2026_basic_test_2/img_109.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A positive charge Q equal to 233 PC is placed in air as shown in figure. What is the potential rise between the radii of a = 400 mm and b = 100 mm?</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_110.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>20 V</p></span>`,
+        `<span style="display: inline;"><p>35 V</p></span>`,
+        `<span style="display: inline;"><p>5 V</p></span>`,
+        `<span style="display: inline;"><p>15 V</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_111.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a single phase 50 Hz transformer, the values of self inductance of primary winding, the self inductance of secondary winding and the mutual inductance between two windings are given as,<br><img alt="" src="images/ee_2026_basic_test_2/img_112.png"/><br>Resistance of both the windings can be neglected. If the secondary winding is short circuited and the primary winding is connected to single phase. Sinusoidal voltage source, then let the effective inductance seen by the source be L<sub>eq</sub>. The standard deviation in the L<sub>eq</sub> is ± ______ . (Rounded off to 3 decimal places).</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_113.png"/></p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6.473,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6.473 (6.200 - 6.600)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_114.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The open loop transfer function of the system is <img alt="" src="images/ee_2026_basic_test_2/img_115.png"/> The break point on the root loci is </p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>–1.57</p></span>`,
+        `<span style="display: inline;"><p>–3.7 ± j2.55</p></span>`,
+        `<span style="display: inline;"><p>1.57</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br><img alt="" src="images/ee_2026_basic_test_2/img_116.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_117.png"/></p> <p>Then <em>f</em> (<em>x</em>) is continuous at <em>x</em> = 4 when</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>a</em> = 0, <em>b</em> = 0</p></span>`,
+        `<span style="display: inline;"><p><em>a</em> = 1, <em>b</em> = 1</p></span>`,
+        `<span style="display: inline;"><p><em>a</em> = –1, <em>b</em> = 1</p></span>`,
+        `<span style="display: inline;"><p><em>a</em> = 1, <em>b</em> = –1</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_118.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_119.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A coil of inductance 5 H and resistance 10 Ω is connected as shown in figure. After the switch ‘S’ has been in contact with point 1 for very long time, it is moved to point 2 at t = 0.</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_120.png"/></div> <div>After <em>t</em> = 0<sup>+</sup>, the time taken for 80% of the stored energy to be dissipated is closed to _____ sec.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.13,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.13 (0.11 - 0.14)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_121.png"/></p> <p>At t = 0<sup>+</sup> (when the switch is in position-2)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_122.png"/></p> <p>Now complete expression for current through the inductor</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_123.png"/></p> <p>Energy stored initially at t = 0</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_124.png"/><br>Here 80% dissipated means only 20% should store now.</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_125.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Find the number of prime implicants, essential prime implicants and minimized expression.</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_126.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_127.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_128.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_129.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_130.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_131.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The circuit shown below is :</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_132.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Full Adder</p></span>`,
+        `<span style="display: inline;"><p>3 input Ex -OR gate</p></span>`,
+        `<span style="display: inline;"><p>Half Adder</p></span>`,
+        `<span style="display: inline;"><p>3 input Ex-NOR gate</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_133.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 4-pole lap wound generator having 480 armature conductors supplies a current of 150 A. If the brushes are given an actual lead of 10°, the cross-magnetizing ampere-turns per pole is _____.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1750,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1750 (1740.00 - 1760.00)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_134.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_135.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Two generating units are connected in parallel to supply a total load of 600 MW. The first unit is rated at 300 MW with a governor speed regulation of 5% and the second unit is rated at 500 MW with a governor speed regulation of 4% both specified from no-load to full-load. Assuming free governor action the shared by the 300 MW unit is _____ MW.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 195,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>195 (190 - 198)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_136.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 33 kV single core cable has a conductor diameter of 1 cm and a sheath of inside diameter 4 cm. The minimum stress which occurs at the sheat is _____ kV/cm (rms).</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 11.9,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>11.9 (11.50 - 12.20)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_137.png"/></div> <div> <div><img alt="" src="images/ee_2026_basic_test_2/img_138.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>If x(t) = δ[αt + β] have Laplace transform <em>X</em>(<em>s</em>) = 2e<sup>–10s</sup> then value of β is ______.<br>[Given : δ(t) = impulse function]</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-5 (-5 - -5)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_139.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single phase full bridge inverter is feeding a RLC load with <em>R</em> = 5 Ω, <em>L</em> = 0.5 H, <em>C</em> = 50 μF. Supply<br>voltage is 220 V, 50 Hz. The expression for fundamental component of current is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_140.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_141.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_142.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_143.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_144.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>An electrodynamometer wattmeter is used for measurement of power in a single-phase circuit. The load voltage is 100 V and the load current is 9 A at a lagging power factor of 0.1. The wattmeter voltage circuit has a resistance of 3000 Ω and an inductance of 30 mH. The current coil has a resistance of 0.1 Ω and negligible inductance. The frequency is 50 Hz. The percentage error in the wattmeter reading when the pressure coil is connected on the supply side is _____ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 12.1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>When the current coil is on the load side, the wattmeter measures the power in the load plus the power loss in the current coil.<br><img alt="" src="images/ee_2026_basic_test_2/img_145.png"/> </p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Given magnetic vector potential, <img alt="" src="images/ee_2026_basic_test_2/img_146.png"/> Magnetic flux density is given by </p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_147.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_149.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_150.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br><img alt="" src="images/ee_2026_basic_test_2/img_151.png"/><br><img alt="" src="images/ee_2026_basic_test_2/img_152.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the common emitter amplifier shown in figure, the h-parameters of the transistor used are <br><img alt="" src="images/ee_2026_basic_test_2/img_153.png"/> <br><img alt="" src="images/ee_2026_basic_test_2/img_154.png"/> <br>The input characteristics of the amplifier are as shown in :</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_155.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_156.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_157.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_158.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>Input characteristics of amplifier is input current vs. input voltage keeping output voltage constant.<br><img alt="" src="images/ee_2026_basic_test_2/img_159.png"/><br>When V<sub>CE</sub> increases, means either collector voltage increases or emitter voltage decreases.<br><img alt="" src="images/ee_2026_basic_test_2/img_160.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The area enclosed between the curves <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_161.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_162.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_163.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_164.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_165.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_166.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The solution of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_167.png"/> satisfying y(1) = 1 is given by</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>a system of parabolas</p></span>`,
+        `<span style="display: inline;"><p>a system of circles</p></span>`,
+        `<span style="display: inline;"><p>y<sup>2</sup> = <em>x</em>(1 + <em>x</em>) – 1</p></span>`,
+        `<span style="display: inline;"><p>(<em>x</em> – 2)<sup>2</sup> + (<em>y</em> – 3)<sup>2</sup> = 5</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_168.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A 50 MVA, 11 kV, three-phase synchronous generator was subjected to different type of faults. The fault currents are as follows :<br>LG fault 4200 A; LL fault 2600 A; LLL falt 2000 A.<br>The generator neutral is solidly grounded. Which of the following is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_169.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_170.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_171.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_172.png"/></p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)<br>For a three (3L) fault<br><img alt="" src="images/ee_2026_basic_test_2/img_173.png"/><br><img alt="" src="images/ee_2026_basic_test_2/img_174.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The OLTF of the system is</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_175.png"/><br>When K = 10, the gain margin and the phase margin are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>28 dB, 25.42°</p></span>`,
+        `<span style="display: inline;"><p>9.54 dB, 110</p></span>`,
+        `<span style="display: inline;"><p>18 dB, 21°</p></span>`,
+        `<span style="display: inline;"><p>9.54 dB, 25.42°</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)<br><img alt="" src="images/ee_2026_basic_test_2/img_176.png"/> <br><img alt="" src="images/ee_2026_basic_test_2/img_177.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A continuous-time linear system s with input x(t) and output y(t) yield the following input-output pair<br><img alt="" src="images/ee_2026_basic_test_2/img_178.png"/><br><img alt="" src="images/ee_2026_basic_test_2/img_179.png"/></p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(1)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_180.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The following five facts are given about a real discrete time signal <em>x</em>[<em>n</em>] with z-transform <em>X</em>(z).</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_181.png"/></div> <div>then <em>X</em>(<em>z</em>) is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_2/img_182.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_2/img_183.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_2/img_184.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_2/img_185.png"/></div></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <p><em>X</em>[<em>n</em>] is real thus poles and zeroes are in conjugate pair if they are complex.<br><img alt="" src="images/ee_2026_basic_test_2/img_186.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit :</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_187.png"/></p> <p>The energy stored in the inductor is _____ × 10<sup>–6</sup> J.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 73.9,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(73.9) (73.0 to 75.0)<br>For dc, inductor behave as short circuited.<br>By applying KCL at point A</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_188.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 230 V dc motor takes no-load armature current of 2 A and runs at a speed of 1200 rpm. If the full-load current is 40 A. If the flux remains constant, resistance of armature is 0.25 Ω, then speed regulation is _____ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 4.32,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(4.32) (4.25 to 4.45)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_189.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A power transformer was tested to determine losses and efficiency. The input power is measured as 3650 W and output power is measured as 3385 W, with each reading is doubt by ±10 W. The percentage uncertainty in the efficiency of the transformer is ± _______ %. (Rounded off to 3 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.403,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.403 (0.382 to 0.423)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_190.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit shown in figure, the switch is operated at a duty-cycle of 0.5. A large capacitor is connected across the load. The inductor current is assumed to be continuous.</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_191.png"/></div> <div>The average voltage across the load and the average current thrugh the diode will respectively be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10 V, 2 A</p></span>`,
+        `<span style="display: inline;"><p>10 V, 8 A</p></span>`,
+        `<span style="display: inline;"><p>40 V, 2 A</p></span>`,
+        `<span style="display: inline;"><p>40 V, 8 A</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>Given chopper is step-up chopper</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_192.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The single-phase dual converter is operated from a 120 V, 60 Hz, supply and the load resistance is R = 10 Ω. The circulating inductance is L = 40 mH; delay angles are α<sub>1</sub> = 60° and α<sub>2</sub> = 120°. The peak circulating current is _____ A.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 11.25,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>11.25 (11.20 - 11.30)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_193.png"/><br></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the self-bias circuit shown in the figure, <img alt="" src="images/ee_2026_basic_test_2/img_194.png"/> <img alt="" src="images/ee_2026_basic_test_2/img_195.png"/> the stability factor ‘S’ of the given circuit approximately is _______ (which is given as  <img alt="" src="images/ee_2026_basic_test_2/img_196.png"/> where both <img alt="" src="images/ee_2026_basic_test_2/img_197.png"/> and <img alt="" src="images/ee_2026_basic_test_2/img_198.png"/> are kept constant <img alt="" src="images/ee_2026_basic_test_2/img_199.png"/> </p> <p><img alt="" src="images/ee_2026_basic_test_2/img_200.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.64 mA/V</p></span>`,
+        `<span style="display: inline;"><p>–0.212 mA/V</p></span>`,
+        `<span style="display: inline;"><p>–2.64 mA/V</p></span>`,
+        `<span style="display: inline;"><p>5.5 mA/V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_201.png"/></p> <p><img alt="" src="images/ee_2026_basic_test_2/img_202.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <img alt="" src="images/ee_2026_basic_test_2/img_203.png"/> (diode forward drop). Assume the input varies over the range <img alt="" src="images/ee_2026_basic_test_2/img_204.png"/> versus <img alt="" src="images/ee_2026_basic_test_2/img_205.png"/> is </p> <p><img alt="" src="images/ee_2026_basic_test_2/img_206.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_207.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_208.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_209.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_210.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_211.png"/></p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A medium 1 is air <img alt="" src="images/ee_2026_basic_test_2/img_212.png"/> while medium 2 is a slab of sulphur <img alt="" src="images/ee_2026_basic_test_2/img_213.png"/> If the electric field intensity in medium 1 is making an angle of 60° with interface, then the field in medium 2, making an angle with normal is ____ (in degrees).</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>45°</p></span>`,
+        `<span style="display: inline;"><p>30°</p></span>`,
+        `<span style="display: inline;"><p>60°</p></span>`,
+        `<span style="display: inline;"><p>75°</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>From law of refraction</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_214.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img alt="" src="images/ee_2026_basic_test_2/img_215.png"/> transmission line, operating at 33 kV and having a resistance and reactance at 8 Ω and 24 Ω respectively, is connected to the generating station bus-bars through a 4000 kVA step-up transformer which has a reactance of 6%, four alternators are connected to the bus-bar, two alternators are of 12000 kVA with a reactance of 20% and the other two alternators are of 6000 kVA with a reactance of 10%. The MVA at the short-circuit fault between the phases, occurring at the load end of the transmission line ________ MVA. (Rounded off to one decimal place)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 23.9,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>23.9 (23.0 - 25.0)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_216.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_2/img_217.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 220 kV transmission line has following line constants :</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_218.png"/><br>If the voltage profile at each end is to maintained at 220 kV, then the power received by receiving end at unity power factor is _____ MW.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 63.91,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>63.91 (63.50 - 64.50)</p> <p><img alt="" src="images/ee_2026_basic_test_2/img_219.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In what direction from (3, 1, –2), the directional derivative of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_220.png"/> is maximum?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_221.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_222.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_223.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_224.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_225.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The eigen values of the following matrix are represented by λ<sub>1</sub> and λ<sub>2</sub></p> <div><img alt="" src="images/ee_2026_basic_test_2/img_226.png"/></div> <div>The value of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_227.png"/> is ________. [Correct upto two decimal places]</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>2/3</p></span>`,
+        `<span style="display: inline;"><p>1/3</p></span>`,
+        `<span style="display: inline;"><p>0</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_228.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The value of the integral <img align="absmiddle" alt="" src="images/ee_2026_basic_test_2/img_229.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_230.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_231.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_232.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_2/img_233.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_2/img_234.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Basic Level Test - 3",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If the number 18601<em>x</em>57y is divisible by 72, then <em>x</em> + y =</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>7</p></span>`,
+        `<span style="display: inline;"><p>8</p></span>`,
+        `<span style="display: inline;"><p>9</p></span>`,
+        `<span style="display: inline;"><p>6</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_1.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A page contains 60 lines. A chapter contains 125 pages. A book contains 5 chapters. 20 such books form a bound. If there are total 30 lakh lines in an <em>x</em> number of bounds, then the value of <em>x</em> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>5</p></span>`,
+        `<span style="display: inline;"><p>6</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_2.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A circular paper is folded along its diameter, then again it is folded to form a quadrant. Then it is cut as shown in the figure and after that the paper was reopened in the original circular shape. What is the ratio of area of the original paper to that of the remaining paper? (The shaded portion is cut off from the quadrant. The radius of quadrant OAB is 5 cm and radius of each semicircle is 1 cm).</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_3.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>25 : 16</p></span>`,
+        `<span style="display: inline;"><p>25 : 9</p></span>`,
+        `<span style="display: inline;"><p>20 : 9</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_4.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A number when divided successively by 4, 5, 6 leaves remainder 2, 3 and 5 respectively. What is the minimum such number?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>214</p></span>`,
+        `<span style="display: inline;"><p>224</p></span>`,
+        `<span style="display: inline;"><p>114</p></span>`,
+        `<span style="display: inline;"><p>354</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_5.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A is thrice as efficient as <em>B</em>. Working together they complete the work in 3 days. If <em>B</em> takes 8 days more than <em>A</em>, the number of days taken by <em>A</em> to finish the whole work, alone is _______ days.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>4 (4 - 4)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_6.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the following question, four alternatives are given for the bold word. Choose the word which is most similar in meaning (Synonym).<br><strong>Previously</strong></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Rested</p></span>`,
+        `<span style="display: inline;"><p>Limited</p></span>`,
+        `<span style="display: inline;"><p>Formerly</p></span>`,
+        `<span style="display: inline;"><p>Mindless</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>The word “previously” means earlier or before now. Its closest synonym is “formerly.”</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the passage carefully and answer the following question.<br>Among Nature’s most intriguing phenomena are the partnerships formed by many different species. The name used for these relationships, Symbiosis, comes from Greek meaning “living together”. Not all symbiotic relationships are the same. There are some called commensal relationships, in which one partner gains a benefit while the other gains little or none but is not<br>harmed. One example is the relationship between two types of fish – remoras and sharks. The remora, which is long and often striped, attaches itself to a shark (sometimes to another type of fish or a whale), using a sucker on its head. When the shark makes a kill, the hitchhiker briefly detaches itself to feed on the scraps. Another type of symbiotic relationship is parasitism, in which one partner benefits at the expense of others. Ticks and tapeworms are among familiar parasites.<br>The third type of symbiotic relationship, called mutualism, is a true partnership in which both partners benefit. The relationship may be limited as when zebras and wildebeest graze together on the vast African grasslands. Each species can survive on its own, but together their chances of detecting predators are improved because each contributes a specially keen sense. (Zebras have<br>the better eyesight; wildebeest, hearing and sense of smell). In a few cases, partners are so interdependent that one cannot survive without the other. Most mutualistic relationships probably lie somewhere in between.<br>The passage talks about how animals</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>attack/prey each other</p></span>`,
+        `<span style="display: inline;"><p>live together mutual dependance</p></span>`,
+        `<span style="display: inline;"><p>take advantage of the weaker ones</p></span>`,
+        `<span style="display: inline;"><p>are independent of each other</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>The passage talks about symbiosis i.e. how animals live together.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A started a business with <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_7.png"/> and after 4 months <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_8.png"/> joined him with <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_9.png"/> At the end of the year, out of the total profits <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_10.png"/> received total <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_11.png"/> including 25% of the profits as commission for managing the business. What amount did <em>A</em> receive?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_12.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_13.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_14.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_15.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_16.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Kailash faces towards north. Turning to his right, he walks 25 metres. He then turns to his left and walks 30 metres. Next, he moves 25 metres to his right. He then turns to his right again and walks 55 metres. Finally, he turns to the right and moves 40 metres. In which direction is he now from his starting point?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>South-west</p></span>`,
+        `<span style="display: inline;"><p>South</p></span>`,
+        `<span style="display: inline;"><p>North-west</p></span>`,
+        `<span style="display: inline;"><p>South-east</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_17.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the mirror represented by a line MN, choose the correct mirror-image of the figure, from amongst the four alternatives (a), (b), (c) and (d) given along with it.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_18.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_19.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_20.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_21.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_22.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The average value of the current waveform shown in figure :</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_23.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.5 A</p></span>`,
+        `<span style="display: inline;"><p>5.0 A</p></span>`,
+        `<span style="display: inline;"><p>7.5 A</p></span>`,
+        `<span style="display: inline;"><p>10.0 A</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_24.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The transfer function <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_25.png"/>  of the system with below signal flow graph is:</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_26.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_27.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_28.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_29.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_30.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_31.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A system with input x(n) and output y(n) is related as</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_32.png"/></div> <div>This system is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Causal, time-variant and stable</p></span>`,
+        `<span style="display: inline;"><p>Non-causal, stable and time-varaint</p></span>`,
+        `<span style="display: inline;"><p>Non-causal, time-invariant and unstable</p></span>`,
+        `<span style="display: inline;"><p>Causal, time-invariant and unstable</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_33.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_34.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single phase full bridge converter with a free wheeling diode feeds an inductive load. The load resistance is 15.53 Ω and it has a large inductance providing constant and ripple free d.c. current. Input to converter is fed from an ideal 230 V, 50 Hz single phase source. For a firing angle delay of 60°, the average value of free wheeling diode current is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10 A</p></span>`,
+        `<span style="display: inline;"><p>8.165 A</p></span>`,
+        `<span style="display: inline;"><p>5.774 A</p></span>`,
+        `<span style="display: inline;"><p>3.33 A</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_35.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_36.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>If the radius of individual strand is r then the GMR of the unconventional conductors shown in figure is _______ <em>r</em>.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_37.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.10 (2.05 - 2.15)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_38.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_39.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A three term controller is described by the equation</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_40.png"/></div> <div>This is used to control a process with open loop transfer function <em>G</em>(<em>s</em>) =  <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_41.png"/> and a unity negative feedback. If integral action is not employed, the derivative time required to have the damping ratio (ξ) = 0.6 ___________ seconds. (correct to three decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.064,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.064 (0.062 - 0.067)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_42.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_43.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 100 kVA, 3-phase, 50 Hz 3300/400 V transformer is delta-connected on the hv side and starconnected on the lv side. The resistance of the hv winding is 3.5 Ω per phase and that of the lv winding 0.02 Ω per phase. The iron losses of the transformer at normal voltage and frequency if its full-load efficiency be 95.8% at 0.8 pf (lag) is _____ kW.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.2 (1.1 - 1.3)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_44.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 4-pole dc shunt generator with lap-connected armature has field and armature resistances of 80 Ω and 0.1 Ω respectively. If it supplies power to 50 lamps rated for 100 volts, 60 watts each, then generated emf by allowing a contact drop of 1 volt per brush is _____ V.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>105.125 V</p></span>`,
+        `<span style="display: inline;"><p>104.125 V</p></span>`,
+        `<span style="display: inline;"><p>103.125 V</p></span>`,
+        `<span style="display: inline;"><p>102.125 V</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_45.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Two thyristors <em>T</em><sub>1</sub> and <em>T</em><sub>2</sub> are being operated in parallel. Their voltage-current characteristic when they are ON are given in figure. The common voltage across <em>T</em><sub>1</sub> and <em>T</em><sub>2</sub> is 1.8 V. The power dissipation in <em>T</em><sub>1</sub> and <em>T</em><sub>2</sub> respectively (in watts) is</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_46.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>8, 2</p></span>`,
+        `<span style="display: inline;"><p>64, 4</p></span>`,
+        `<span style="display: inline;"><p>20, 30</p></span>`,
+        `<span style="display: inline;"><p>14.4, 3.6</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_47.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>On an induction type energy meter, is written “1200 rev/kWh”. If it is to be used as an approximate wattmeter that is read off in rpm, a 400-watt load would read as</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10 rpm</p></span>`,
+        `<span style="display: inline;"><p>6 rpm</p></span>`,
+        `<span style="display: inline;"><p>8 rpm</p></span>`,
+        `<span style="display: inline;"><p>24 rpm</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_48.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Let <em>B</em> is an invertible square matrix and <em>B</em> is the adjoint of matrix <em>A</em> such that <em>AB</em> = <em>B<sup>T</sup></em>. Then which of the following options is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>A</em> is an identity matrix</p></span>`,
+        `<span style="display: inline;"><p><em>B</em> is a symmetric matrix</p></span>`,
+        `<span style="display: inline;"><p><em>A</em> is a skew-symmetric matrix</p></span>`,
+        `<span style="display: inline;"><p><em>B</em> is a skew-symmetric matrix</p></span>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_49.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A hat contains a number of cards, with 30% white on both sides, 50% black on one side and white on the other side, 20% black on both sides. The cards are mixed up, and a single card is drawn at random and placed on the table. If It’s upper side shows up black, the probability that its other side is also black is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_50.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_51.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_52.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_53.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_54.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_55.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>What is the circuit diagram of clipper circuit for the transfer characteristic shown in figure?</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_56.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_57.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_58.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_59.png"/></p></span>`,
+        `<span style="display: inline;"><p>None</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_60.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_61.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The current in the RL-circuit shown below is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_62.png"/> The value of the inductor<br>(Rounded off to two decimal places) is _______ H.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_63.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5.77,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5.77 (4.53 - 6.82)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_64.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The value of resistance <em>R</em> in the circuit shown in the figure, is varied in such a manner that the power dissipated in the 8 Ω resistor is maximum. Under this condition, the value of <em>R</em> will be</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_65.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Zero</p></span>`,
+        `<span style="display: inline;"><p>2 Ω</p></span>`,
+        `<span style="display: inline;"><p>4 Ω</p></span>`,
+        `<span style="display: inline;"><p>8 Ω</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_66.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Electric field lines and equipotential lines</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>are parallel to each other.</p></span>`,
+        `<span style="display: inline;"><p>are one and the same.</p></span>`,
+        `<span style="display: inline;"><p>cut each other orthogonally.</p></span>`,
+        `<span style="display: inline;"><p>can be inclined to each other at any angle.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_67.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In a resonant commutation circuit, supply voltage is 200 V. Load current is 10 A and the device turn off time is 30 μs. The ratio of peak resonant current to load current is 1.5. Find the value of <em>L</em> & <em>C</em>.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>L</em> = 0.357 mH and <em>C</em> = 2.01 μF</p></span>`,
+        `<span style="display: inline;"><p><em>L</em> = 0.357 H and <em>C</em> = 2.01 F</p></span>`,
+        `<span style="display: inline;"><p><em>L</em> = 3.57 mH and <em>C</em> = 20.1 μF</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_68.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>An L.T.I. system with input x(n) = {2, 4, 6, 8, 10, 12} produces the output as {1, 3, 5, 7, 9, 11, 6}.<br>Then the impulse response is ______</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>{1, 1}</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_69.png"/></p></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_3/img_70.png"/></div></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_71.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_72.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The Nyquist plot of a system over frequency range 0 to ∞ is shown in figure. The open loop transfer function has one pole in right half of s-plane. The range of <em>K</em> for which the closed loop system is stable is __________.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_73.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0 &lt; <em>K</em> &lt; 5</p></span>`,
+        `<span style="display: inline;"><p><em>K</em> &gt; 5</p></span>`,
+        `<span style="display: inline;"><p><em>K</em> &gt; 20</p></span>`,
+        `<span style="display: inline;"><p><em>K</em> &gt; –20</p></span>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b, d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_74.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The equivalent circuit of a <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_75.png"/> induction motor is shown below,</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_76.png"/></div> <div>Which of the following is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Maximum torque occurs at starting when <em>R</em><sub>ext</sub> = 0.614 Ω.</p></span>`,
+        `<span style="display: inline;"><p>Maximum torque occurs at starting when <em>R</em><sub>ext</sub> = 0.402 Ω.</p></span>`,
+        `<span style="display: inline;"><p>Maximum torque occurs at slip, s = 0.328 when <em>R</em><sub>ext </sub>= 0 Ω.</p></span>`,
+        `<span style="display: inline;"><p>Maximum torque occurs at slip, s = 0.235 when <em>R</em><sub>ext</sub> = 0 Ω.</p></span>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_77.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The Boolean expression,<br><em>F</em> (<em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>) = Σ<em>m</em>(1, 3, 7, 11, 15) + Σd(0, 2, 5) can be simplified as</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_78.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_79.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_80.png"/></p></span>`,
+        `<span style="display: inline;"><p><em>AC</em> + <em>BD</em></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_81.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Given that <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_82.png"/> the total charge enclosed by the cylinder of radius 1 m with –2 ≤ z ≤ 2 m is ________ mC. (Answer upto 2 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 4188.8,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>4188.80 (4180.00 - 4200.00)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_83.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following circuit:</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_84.png"/></div> <div>A square pulse of 3 V amplitude is applied to C-R circuit as shown in the figure. The capacitor is initially uncharged. The output voltate <em>V<sub>o</sub></em> at time <em>t</em> = 2 sec is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3 V</p></span>`,
+        `<span style="display: inline;"><p>–3 V</p></span>`,
+        `<span style="display: inline;"><p>4 V</p></span>`,
+        `<span style="display: inline;"><p>–4 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_85.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The control system shown in figure employs a proportional plus error rate control.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_86.png"/> <div><img alt="" src="images/ee_2026_basic_test_3/img_87.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The value of constant <em>K<sub>e</sub></em> is 0.18.</p></span>`,
+        `<span style="display: inline;"><p>Time to reach first undershoot = 2.483 sec.</p></span>`,
+        `<span style="display: inline;"><p>Steady state error for unit ramp response is 0.2.</p></span>`,
+        `<span style="display: inline;"><p>Settling time for 2% error band is 2 sec.</p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_88.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_89.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The value of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_90.png"/>where ‘<em>c</em>’ is the closed curve of the region bounded by<br>y = <em>x</em><sup>2</sup> and y<sup>2</sup> = <em>x</em> is</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -0.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-0.6 (-0.8 - -0.4)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_91.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_92.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the circuit shown in figure. Assume <em>L<sub>P</sub></em> = 8 H.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_93.png"/></div> <div>The equivalent inductance between the terminals C, D is 4 H with the opened terminals A, B. It is 3 H with the shorted terminals A, B. If <em>L<sub>P</sub></em> = 8 H then The value of coefficient of coupling (K) is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.25</p></span>`,
+        `<span style="display: inline;"><p>0.5</p></span>`,
+        `<span style="display: inline;"><p>0.707</p></span>`,
+        `<span style="display: inline;"><p>0.909</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_94.png"/></div> </div> <div><img alt="" src="images/ee_2026_basic_test_3/img_95.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Assuming that all flip-flops are in reset condition initially, the count sequence observed at <em>Q<sub>A</sub></em> in the circuit shown is</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_96.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0010111...</p></span>`,
+        `<span style="display: inline;"><p>0001011...</p></span>`,
+        `<span style="display: inline;"><p>0101111...</p></span>`,
+        `<span style="display: inline;"><p>0110100...</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_97.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the ring oscillator shown in the figure, the propagation delay of each inverter is 100 Pico sec.<br>The fundamental frequency of the oscillator output is ______ GHz.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_98.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10 MHz</p></span>`,
+        `<span style="display: inline;"><p>100 MHz</p></span>`,
+        `<span style="display: inline;"><p>1 GHz</p></span>`,
+        `<span style="display: inline;"><p>2 GHz</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_99.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider two stationary magnetic poles and the revolution coils (<em>C</em><sub>1</sub> – <em>C</em><sub>1</sub>′ , <em>C</em><sub>1</sub> – <em>C</em><sub>2</sub>′) as shown in the figure. Consider the instant when the coils are in a position as shown. Identify the correct statement regarding the polarity of the induced emf at this instant in coil sides <em>C</em><sub>1</sub> and <em>C</em><sub>2</sub>.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_100.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_101.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_102.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_103.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_104.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_105.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 2 wire DC distributor <em>ABCDEA</em> in the form of a ring main is fed at point <em>A</em> at 220 V and is loaded as shown in the figure. The minimum potential on the distributor is</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_106.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>217.10 V</p></span>`,
+        `<span style="display: inline;"><p>216.15 V</p></span>`,
+        `<span style="display: inline;"><p>214.19 V</p></span>`,
+        `<span style="display: inline;"><p>218.28 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_107.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 100 MVA, 11 kV, 50 Hz turbo generator is having a symmetrical fault at its terminals. The short-circuit capacity is 500 MVA. The neutral of the alternator is grounded through a reactance of 0.05 p.u. The zero-sequence reactance of the generator is 25% of its positive-sequence reactance.<br>The short-circuit capacity for a line to ground fault is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>400 MVA</p></span>`,
+        `<span style="display: inline;"><p>300 MVA</p></span>`,
+        `<span style="display: inline;"><p>500 MVA</p></span>`,
+        `<span style="display: inline;"><p>166.67 MVA</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_108.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_109.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A causal LTI system is characterised by the difference equation given below:</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_110.png"/></div> <div>The value of impulse response of the system at <em>n</em> = 0 will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>8</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_111.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>For an ac voltage source of 230 V, 50 Hz and firing angle of 15° is delivering a load consists of <em>R</em> = 5 Ω, <em>L</em> = 8 mH and <em>E</em> = 100 V through single phase controlled rectifier bridge as shown in figure.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_112.png"/></div> <div>value of current <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_113.png"/> and output voltage <em>V</em><sub>0</sub> , if load current is assumed to be constant<br>(Assuming circuit is in steady state)</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_114.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_115.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_116.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_117.png"/></p></span>`,
+      ],
+      answer: ["B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b, c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_118.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_119.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the bridge circuit shown, at balance condition, the value of <em>C<sub>s</sub></em> = 0.5 μF and <em>R<sub>s</sub></em> = 1000 Ω. The values of inductance <em>L<sub>x</sub></em> and Resistance <em>R<sub>x</sub></em> are</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_120.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_121.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_122.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_123.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_124.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_125.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_126.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit shown below, capacitor <em>C</em><sub>1</sub>(4F) is charged to a potential of 12 V and the capacitor <em>C</em><sub>2</sub>(2F) is uncharged.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_127.png"/></div> <div>the ratio of energy stored before closing the switch and energy stored after closing the switch is ________ .</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.5 (1.45 - 1.55)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_128.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the ideal op-amp circuit shown in the figure below :</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_129.png"/></div> <div>If <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_130.png"/> then the CMRR (in dB) is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>36 dB</p></span>`,
+        `<span style="display: inline;"><p>76 dB</p></span>`,
+        `<span style="display: inline;"><p>42 dB</p></span>`,
+        `<span style="display: inline;"><p>53 dB</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_131.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the function <em>f</em> (<em>x</em>) given as:</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_132.png"/></div> <div>Which of the below statements is correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>f</em> (<em>x</em>) is continuous at <em>x</em> = 2</p></span>`,
+        `<span style="display: inline;"><p><em>f</em> (<em>x</em>) has removable discontinuity at <em>x</em> = 2</p></span>`,
+        `<span style="display: inline;"><p><em>f</em> (<em>x</em>) has non-removable discontinuity at <em>x</em> = 2</p></span>`,
+        `<span style="display: inline;"><p>Discontinuity at <em>x</em> = 2 can be removed by redefining the function at <em>x</em> = 2</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_133.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The area inside the parabola 5<em>x</em><sup>2</sup> – y = 0 but outside parabola 2<em>x</em><sup>2</sup> – y + 9 = 0 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_134.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_135.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_136.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_137.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_138.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_139.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A generator is transferring power to a load through a short line. The power angle equation is <em>P</em> = <em>P<sub>m</sub></em> sin (δ) where <em>P<sub>m</sub></em> = 2 p.u. The initial power is 1 p.u. When a 3-phase fault occurs at the terminals of generator, critical clearing angle is ______ degrees. (Given <em>H</em> = 6 MJ/MVA, <em>f</em> = 50 Hz)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 79.56,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>79.56 (79.00 - 80.10)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_140.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider a control-system with unity feedback.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_141.png"/></div> <div>The value of <em>K</em> to have gain margin of 7 dB is _______ .</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 13.38,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>13.38 (13.10 - 13.70)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_142.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_143.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A system described by the differential equation, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_144.png"/> is initially at rest. For input x(t) = <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_145.png"/> the otuput y(t) is :</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.5 cos(4<em>t</em>)<em>u</em>(<em>t</em>)</p></span>`,
+        `<span style="display: inline;"><p>2 cos(4<em>t</em>)<em>u</em>(<em>t</em>)</p></span>`,
+        `<span style="display: inline;"><p>2 sin(2<em>t</em>)<em>u</em>(<em>t</em>)</p></span>`,
+        `<span style="display: inline;"><p>sin(2<em>t</em>)<em>u</em>(<em>t</em>)</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_146.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an input to LTI system is <em>x</em>(<em>t</em>) = cos 60π<em>t</em> + sin 30π<em>t</em> + cos 30π<em>t</em> ⋅ cos 10π<em>t</em>.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_147.png"/></div> <div>The output expression of <em>y</em>(<em>t</em>) is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_149.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_150.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_151.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_152.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The power factor of the circuit shown in figure is</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_153.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.8 (lag)</p></span>`,
+        `<span style="display: inline;"><p>0.8 (lead)</p></span>`,
+        `<span style="display: inline;"><p>0.6 (lag)</p></span>`,
+        `<span style="display: inline;"><p>0.6 (lead)</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <p><img alt="" src="images/ee_2026_basic_test_3/img_154.png"/></p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 420 V, 4 pole, 25 kW, 60 Hz, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_155.png"/> Y-connected induction motor has the following parameters<br>(Reffered to stator side) :</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_156.png"/></div> <div>The slip is 9.5% for rated power output with rated voltage excitation. Then the rotor current magnitude is _________ Ampere. (Assume the exact equivalent circuit)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 78.2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>78.20 (77.50 - 80.50)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_157.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The armature of a 4-pole lap wound dc machine has core length 30 cm, diameter 40 cm and total conductors are 500, speed 1200 rpm and current 20 A. For an average flux density of 0.5 T, mechanical power developed is ________ W.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 9424,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>9424 (9400 - 9450)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_158.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 3-phase thyristor controlled semi-converter charges a battery from a three-phase supply of 230 V, 50 Hz. The battery emf is 200 V and its internal resistance is 0.5 Ω. A large inductance is connected in series with battery which makes charging current at 20 A. Supply power factor is<br>_________ lag.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.6724,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.6724 (0.66 - 0.68)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_159.png"/></div> </div> <div><img alt="" src="images/ee_2026_basic_test_3/img_160.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For a single-phase semi-converter, connected to 230 V, 50 Hz is feeding a load <em>R</em> = 10 Ω in series with a large inductance that makes the load current ripple free. For a firing angle of 45°. Calculate percentage rectification efficiency.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>88.72%</p></span>`,
+        `<span style="display: inline;"><p>80.58%</p></span>`,
+        `<span style="display: inline;"><p>76.83%</p></span>`,
+        `<span style="display: inline;"><p>93.17%</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_161.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the circuit shown in figure, <em>V</em><sub>0</sub>  is equal to</p> <div> <div><img alt="" src="images/ee_2026_basic_test_3/img_162.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_163.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_164.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_165.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_166.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_167.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The three transistors in the circuit shown below are identical with <em>V<sub>BE</sub></em> = 0.7 V and β = 100.</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_168.png"/></div> <div>The voltage <em>V<sub>c</sub></em> is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>15 V</p></span>`,
+        `<span style="display: inline;"><p>11.65 V</p></span>`,
+        `<span style="display: inline;"><p>16.72 V</p></span>`,
+        `<span style="display: inline;"><p>14.2 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_169.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_170.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For Si Darlington transistor pair shown has β<sub>1</sub> = β<sub>2</sub> = 100. They have negligible leakage current and <em>V<sub>cc</sub></em> = 24 V, <em>R<sub>E</sub></em> = 2 kΩ and <em>R</em><sub>2</sub> → ∞. The value of <em>R</em><sub>1</sub> needed to .......... the circuit so that <em>V</em><sub><em>CEQ</em>2</sub> = 4 V will be</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_171.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.65 MΩ</p></span>`,
+        `<span style="display: inline;"><p>3.4 kΩ</p></span>`,
+        `<span style="display: inline;"><p>4.2 MΩ</p></span>`,
+        `<span style="display: inline;"><p>1.77 kΩ</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_172.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_3/img_173.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit shown below, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_174.png"/> = 6 A</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_175.png"/></div> <div>the minimum value of the stored energy is ________ J.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 54,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>54.00 (53.00 - 55.00)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_176.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the network shown below, obtain the bus admittance matrix (<em>Y</em><sub>bus</sub>) using the data given. The line reactance are indicated<img alt="" src="images/ee_2026_basic_test_3/img_177.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_178.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_179.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_180.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_181.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_182.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If integrating factor of the differential equation<img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_183.png"/> then <em>P </em>is equal to</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_184.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_185.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_186.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_187.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_188.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The angle between the surfaces <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_189.png"/> at the point (2, –1, 2) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_190.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_191.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_192.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_3/img_193.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_194.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The residue of <img align="absmiddle" alt="" src="images/ee_2026_basic_test_3/img_195.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>–4</p></span>`,
+        `<span style="display: inline;"><p>–5</p></span>`,
+        `<span style="display: inline;"><p>–3</p></span>`,
+        `<span style="display: inline;"><p>–6</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_3/img_196.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Basic Level Test - 4",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A book consists of 30 pages, 25 lines on each page and 35 characters on each line. If this content is written in another notebook consisting of 30 lines and 28 characters per line, then the required no. of pages will be how much percent greater than the previous pages?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4.16%</p></span>`,
+        `<span style="display: inline;"><p>5%</p></span>`,
+        `<span style="display: inline;"><p>6.66%</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_1.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The rate of increase of the price of sugar is observed to be two percent more than the inflation rate expressed in percentage. The price of sugar on January 1, 2004 is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_2.png"/> per kg. The inflation rates for the years 2004 and 2005 are expected to be 8% each. The expected price of sugar on January 1, 2006 would be :</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_3.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_4.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_5.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_6.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_7.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The following question is based on the diagram given below:<br>1. The rectangle represents government employees.<br>2. The triangle represents urban people.<br>3. The circle represents graduates.<br>4. The square represents clerks.<br>Which of the above statements is true?</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_8.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>All government employees are clerks.</p></span>`,
+        `<span style="display: inline;"><p>Some government employees are graduates as well as clerks.</p></span>`,
+        `<span style="display: inline;"><p>All government employees are graduates.</p></span>`,
+        `<span style="display: inline;"><p>All clerks are government employees but not graduates.</p></span>`,
+      ],
+      answer: ["B", "A", "C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>The above cases may be considered as under:<br>For statement (a) to be true, the rectangle should lie inside the square. This is not true. Hence, (a) is false.<br>For statement (b) to be true, there should be a region common to the rectangle, circle and the<br>square. Such a region is 6. Hence, (b) is true.<br>Further, for statement (c) to be true, the rectangle should lie inside the circle. So, (c) is false.<br>For statement (d) to be true, square should lie wholly inside the rectangle, with no region common<br>to the circle. This is not true. So, (d) is false.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A square is inscribed in a circle and then another circle is inscribed in the square. Another square is inscribed in the circle. Finally, a circle is inscribed in the innermost square. Thus, there are 3 circles and 2 squares as shown in the figure. The radius of the outer-most circle is <em>R</em>.<br>What is the ratio of sum of circumferences of all the circles to the sum of perimeters of all the squares?</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_9.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_10.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_11.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_12.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_13.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_14.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_15.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Which one of the following is the synonym of the word written in capital letter?<br>IRREVERENCE</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>disrespect</p></span>`,
+        `<span style="display: inline;"><p>cruelty</p></span>`,
+        `<span style="display: inline;"><p>unkindness</p></span>`,
+        `<span style="display: inline;"><p>invalidity</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br>Irreverence means a lack of respect for the people or things which generally are taken seriously.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the passage carefully and answer the following question.<br>Child psychology is certainly not a strong point with most Indian schools; why else would they inflict a double trauma on a student performing badly in the pre-boards by banning her from taking the board exams. Often with fatal results as evidenced by reports of student suicides in the run-up to the boards. Now the Central Board of Secondary Education (CBSE) has stepped in and put the brakes on this discriminatory practice, ruling that no student can be barred from the Boards without prior clearance from the CBSE. This is good news for parents and students, many of whom have had to live with the threat of performance-linked debarment. While the school’s logic is that in order to attract talented students, they need to maintain their performance records at high levels. Chances are that a student faring poorly at the pre-boards will replicate at the boards is faulty. Chances are that the student will be spurred to work doubly hard. On the other hand, the threat of debarment, will almost certainly impact adversely on his/her performance. Of course, linking pre-boards to the boards is only one of the problems with our school system.<br>Which is the good news for parents, according to the passage?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>School will take the responsibility of preparing students for the board.</p></span>`,
+        `<span style="display: inline;"><p>School will provide study facilities to the poor student.</p></span>`,
+        `<span style="display: inline;"><p>Schools will enforce discipline to ensure higher attendance of students.</p></span>`,
+        `<span style="display: inline;"><p>No students can be barred from the Boards without prior clearance from the CBSE.</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)<br>From the above passage, it is apparent that the good news for parents is that no students can be<br>barred from the Boards without prior clearance from the CBSE.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The sum of n terms of two arithmetic series are in the ratio of  <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_16.png"/> Find the ratio of their 11<sup>th </sup>terms:</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4 : 3</p></span>`,
+        `<span style="display: inline;"><p>5 : 4</p></span>`,
+        `<span style="display: inline;"><p>7 : 4</p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_17.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A child is looking for his father. He went 90 m in the east before turning to his right. He went 20 m before turning to his right again to look for his father at his uncle’s place 30 m from this point. His father was not there. From there, he went 100 metres to his north before meeting his father in a street. How far did the son meet his father from the starting point?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>80 metres</p></span>`,
+        `<span style="display: inline;"><p>100 metres</p></span>`,
+        `<span style="display: inline;"><p>140 metres</p></span>`,
+        `<span style="display: inline;"><p>260 metres</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_18.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_19.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>400 student took the MOCK GATE exam in Lucknow. 60% of the boys and 80% of the girls cleared the cut-off in the examination. If the total percentage of students qualifying is 65%, then</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>100 girls appeared in the exam</p></span>`,
+        `<span style="display: inline;"><p>300 girls appeared in the exam</p></span>`,
+        `<span style="display: inline;"><p>200 boys appeared in the exam</p></span>`,
+        `<span style="display: inline;"><p>100 boys appeared in the exam</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div> <div><img alt="" src="images/ee_2026_basic_test_4/img_20.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the mirror represented by a line MN, choose the correct mirror-image of the figure, from amongst the four alternatives (a), (b), (c) and (d) given along with it.</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_21.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_basic_test_4/img_22.png"/></div></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_23.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_24.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_25.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the below network containing resistors and controlled sources, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_26.png"/> is</p> <div> <div><img alt="" src="images/ee_2026_basic_test_4/img_27.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_28.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_29.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_30.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_31.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_32.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_33.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a closed loop system shown in the figure below, the system sensitivity <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_34.png"/> where <em>T</em> is the closed loop transfer function of the system is equal to _______ .</p> <div> <div><img alt="" src="images/ee_2026_basic_test_4/img_35.png"/></div> </div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1 (1 - 1)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_36.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The raised cosine pulse <em>x</em>(<em>t</em>) is defined as <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_37.png"/> The total energy of <em>x</em>(<em>t</em>) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_38.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_39.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_40.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_41.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_42.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_43.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>The correct statements about inverters is/are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>GTO can be used in voltage source inverters.</p></span>`,
+        `<span style="display: inline;"><p>Total harmonic distortion in <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_44.png"/> half bridge inverter is 48%.</p></span>`,
+        `<span style="display: inline;"><p>Total harmonic distortion in <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_45.png"/> full bridge inverter is 31%.</p></span>`,
+        `<span style="display: inline;"><p>Sinusoidal PWM is preferred over MPWM in inverter because the order of the strongest harmonic is fixed in Sinusoidal PWM.</p></span>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_46.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A typical line has the following parameters,</p> <div> <div><img alt="" src="images/ee_2026_basic_test_4/img_47.png"/></div> </div> <div>The active power delivered and pf of the load if the voltage at the two ends are 110 kV having a load angle of 20° is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>9.236 MW, 0.2342 leading</p></span>`,
+        `<span style="display: inline;"><p>38.33 MW, 0.9722 leading</p></span>`,
+        `<span style="display: inline;"><p>38.33 MW, 0.9722 lagging</p></span>`,
+        `<span style="display: inline;"><p>9.236 MW, 0.2342 lagging</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_48.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_49.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Two dc shunt generators <em>G</em><sub>1</sub> and <em>G</em><sub>2</sub> are rated respectively at 250 kW and 150 kW, 400 V. Their full load voltage drops are 3% and 6% respectively. They are excited to no-load voltages of 410 V and 420 V respectively. If they share a load of 1000 A, then which of the following statement(s) are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Sharing of generator <em>G</em><sub>1</sub> is 679 A</p></span>`,
+        `<span style="display: inline;"><p>Sharing of generator <em>G</em><sub>2</sub> is 321 A</p></span>`,
+        `<span style="display: inline;"><p>Bus voltage of generator <em>G</em><sub>1</sub> is 397.5 V</p></span>`,
+        `<span style="display: inline;"><p>Bus voltage of generator <em>G<sub>2</sub></em> is 397.5 V</p></span>`,
+      ],
+      answer: ["C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_50.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_51.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A three phase induction motor has 5% slip at full load torque and at normal voltage. The rotor resistance per phase are 0.1 Ω and 0.6 Ω respectively. Find the percentage reduction in supply voltage required to develop full load torque at <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_52.png"/> of normal full load speed. (Neglect stator impedance)</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>15.6%</p></span>`,
+        `<span style="display: inline;"><p>10.24%</p></span>`,
+        `<span style="display: inline;"><p>24.6%</p></span>`,
+        `<span style="display: inline;"><p>20.35%</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_53.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 50 kVA, 440 V, 3-phase, 50 Hz induction motor is provided with a 3-phase step-down autotransformer starter which steps down the voltage to 50% of the input. The starting current of the motor on rated voltage is 6 time the rated full-load current. Estimate the current drawn by the auto-transformer from the mains at starting. What is the starting kVA drawn by the autotransformer?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>141.401 A, 129.903 kVA</p></span>`,
+        `<span style="display: inline;"><p>170.455 A, 95.73 kVA</p></span>`,
+        `<span style="display: inline;"><p>125.613 A, 107 kVA</p></span>`,
+        `<span style="display: inline;"><p>98.415 A, 75 kVA</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_54.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the commutation circuit shown below, with <em>C</em> = 10 μF and <em>L</em> = 8 μH. The initial voltage across capacitor is 220 V and load current is constant of 200 A. The value of time required to turned-off main thyristor after the auxiliary thyristor is turned on (in μsec) will be _______</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_55.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>28.08 μsec</p></span>`,
+        `<span style="display: inline;"><p>36.59 μsec</p></span>`,
+        `<span style="display: inline;"><p>8.85 μsec</p></span>`,
+        `<span style="display: inline;"><p>17.86 μsec</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_56.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The meter constant of a 230 V, 10 A watt hour meter is 1800 revolutions per kWh. The meter is tested at half load and rated voltage and unity power factor. The meter is found to make 80 revolutions in 138s. Determine the meter error at half load.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.9%</p></span>`,
+        `<span style="display: inline;"><p>0.817%</p></span>`,
+        `<span style="display: inline;"><p>0.917%</p></span>`,
+        `<span style="display: inline;"><p>0.717%</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_57.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Which of the following matrices have eigen values as 1 and –1?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_58.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_59.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_60.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_61.png"/></p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_62.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>There are 3 fair coins and 1 false coin with tails on both sides. A coin is chosen at random and tossed 4 times. If tails occurs in all 4 times, then the probability that the false coin has been chosen for tossing is _______. [Correct upto two decimal places]</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.84,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.84 (0.80 - 0.87)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_63.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_64.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit given below, assume the op-amp to be ideal. The current I through 2 kΩ resistor is ________ mA.</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_65.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>8 (8.00 - 8.00)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_66.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_67.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the network shown in figure :</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_68.png"/></div> <div>The current <em>I<sub>L</sub></em> is _______ A. (Answer upto three decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.163,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.163 (0.162 - 0.164)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_69.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For the circuit shown below, if the current <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_70.png"/> is flowing through the 40 Ω resistor, then the value of voltage across 80 Ω resistor (<em>V</em><sub>0</sub>) is _______ volt.</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_71.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -1344,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-1344 (-1350 - -1340)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_72.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Two capacitors <em>C<sub>1</sub></em> and <em>C</em><sub>2</sub> are connected to a 100 V source. If <em>C</em><sub>1</sub> and <em>C</em><sub>2</sub> are connected in parallel to 100 V source, the energy stored in capacitor <em>C</em><sub>1</sub> is <em>W</em><sub><em>C</em>1</sub> = 125 mJ, while if they are connected in series to 100 V source, the energy stored in each capacitor is <em>W</em><sub><em>C</em>1</sub> = 70.29 mJ and <em>W</em><sub><em>C</em>2</sub> = 23.43 mJ.<br>The value of capacitor <em>C</em><sub>1</sub> + <em>C</em><sub>2</sub> is ________ μF.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 100,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>100 (98 - 102)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_73.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_74.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Output voltage of an inverter is controlled by multiple pulse modulation technique. If the peak value of reference voltage is 4 V and peak value of carrier voltage is 6 V. Then the total pulse width in each half cycle is</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_75.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>60°</p></span>`,
+        `<span style="display: inline;"><p>56°</p></span>`,
+        `<span style="display: inline;"><p>30°</p></span>`,
+        `<span style="display: inline;"><p>120°</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_76.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an ideal diode circuit shown in the figure,</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_77.png"/></div> <div>The system is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>causal, linear and time-invariant</p></span>`,
+        `<span style="display: inline;"><p>non-causal, non-linear and time-variant</p></span>`,
+        `<span style="display: inline;"><p>causal, non-linear and time-variant</p></span>`,
+        `<span style="display: inline;"><p>casual, non-linear and time-invariant</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_78.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Open loop transfer function of a system is given as <em>G</em>(<em>s</em>) <em>H</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_79.png"/> plot, the angle of departure at <em>s</em> = –1 + 2<em>j</em> is ________. (Answer upto two decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 206.57,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>206.57 (201.23 - 208.65)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_80.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The synchronizing coefficient (in kW per mechanical degree) at full load for a 1000 kVA, 0.8 p.f.<br>(lagging), 6.6 kV, 8-pole, star connected cylindrical rotor generator of negligible resistance and synchronous reactance of 0.8 p.u. is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>128.94 kW/Mechanical degree</p></span>`,
+        `<span style="display: inline;"><p>121.25 kW/Mechanical degree</p></span>`,
+        `<span style="display: inline;"><p>32.24 kW/Mechanical degree</p></span>`,
+        `<span style="display: inline;"><p>8.06 kW/Mechanical degree</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_81.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_82.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <em>X</em> and <em>Y</em> are inputs and the difference (<em>D</em> = <em>X</em> – <em>Y</em>) and the Borrow (<em>B</em>) are the outputs, which one of the following diagrams implements a half-subtractor?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_83.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_84.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_85.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_86.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_87.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the figure shown below of parallel conducting disks separated by 5 mm and having a dielectric of relative permittivity ∈<em><sub>r </sub></em>= 2.4 filled in between them,</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_88.png"/></div> <div>The value of surface charge density on the upper plate will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6.37 × 10<sup>–7</sup> C/m<sup>2</sup></p></span>`,
+        `<span style="display: inline;"><p>–4.26 × 10<sup>–7</sup> C/m<sup>2</sup></p></span>`,
+        `<span style="display: inline;"><p>–7.12 × 10<sup>–7</sup> C/m<sup>2</sup></p></span>`,
+        `<span style="display: inline;"><p>5.83 × 10<sup>–7</sup> C/m<sup>2</sup></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_89.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A network has two input terminals (<em>a</em>, <em>b</em>) and two output terminals (<em>c</em>, <em>d</em>). The input impedance with c and d open circuited is (250 + <em>j</em>100)Ω and with c and d short circuited is (400 + <em>j</em>300)Ω. The impedance across <em>c</em> and <em>d</em> with <em>a</em> and <em>b</em> open circuited is 200 Ω.</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_90.png"/></div> <div>Then which of the following options is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>Z<sub>A</sub></em> = 300 + <em>j</em>200 Ω</p></span>`,
+        `<span style="display: inline;"><p><em>Z<sub>B</sub></em> = 350 – <em>j</em>100 Ω</p></span>`,
+        `<span style="display: inline;"><p><em>Z<sub>B</sub></em> = 300 – <em>j</em>200 Ω</p></span>`,
+        `<span style="display: inline;"><p><em>Z<sub>C</sub></em> = –100 + <em>j</em>200 Ω</p></span>`,
+      ],
+      answer: ["C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c, d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_91.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Consider the closed loop transfer function of a control system</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_92.png"/></div> <div>If the state space model of above transfer function is represent in phase variable form, then the correct statement(s) is/are</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>There are four forward paths in signal flow graph (SFG) of given transfer function.</p></span>`,
+        `<span style="display: inline;"><p>There are 3 feedback paths having gain <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_93.png"/></p></span>`,
+        `<span style="display: inline;"><p>State matrix, <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_94.png"/></p></span>`,
+        `<span style="display: inline;"><p>There are 3 forward paths in SFG of given transfer function</p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_95.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Two buses <em>A</em> and <em>B</em> are scheduled to arrive at a town central bus station at noon. The probability that bus <em>A</em> will be late is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_96.png"/> The probability that bus <em>B</em> will be late is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_97.png"/> The probability that the bus <em>B</em> is late given that bus <em>A</em> is late is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_98.png"/> Then which of the following statements is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Probability that neither bus will be late on a particular day is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_99.png"/></p></span>`,
+        `<span style="display: inline;"><p>Probability that bus <em>A</em> is late given that bus <em>B</em> is late is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_100.png"/></p></span>`,
+        `<span style="display: inline;"><p>Probability that at least one bus is late is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_101.png"/></p></span>`,
+        `<span style="display: inline;"><p>Probability that at least one bus is in time is <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_102.png"/></p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_103.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_104.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A coil of resistance 3 Ω and an inductance of 0.22 H is connected in series with an imperfect capacitor. When such a series circuit is connected across a 200-V, 50 Hz supply, it has been observed that their combined impedance is (3.8 + <em>j</em>6.4)Ω. Then the value of Resistance and capacitance of the imperfect capacitor are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_105.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_106.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_107.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_108.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_109.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit shown below, initially all flip-flops are reset. The content (decimal equivalent of binary) of output <em>Q</em><sub>2</sub><em>Q</em><sub>1</sub><em>Q</em><sub>0</sub> after four clock pulses is _________ .</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_110.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6 (6 - 6)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_111.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the 4 : 1 MUX based circuit given below,</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_112.png"/></div> <div>If A and B are two periodic signal with duty cycles 25% and 50% respectively as shown below and +5 V and 0 V are used to represent logic-1 and logic-0 respectively then which of the below given options are correct? <div><img alt="" src="images/ee_2026_basic_test_4/img_113.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The duty cycle of output is 50%.</p></span>`,
+        `<span style="display: inline;"><p>The average power dissipated by resistance <em>R<sub>L</sub></em> is 3.125 mW.</p></span>`,
+        `<span style="display: inline;"><p>The output of circuit is represented by Boolean expression <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_114.png"/></p></span>`,
+        `<span style="display: inline;"><p>The output Y remain zero for <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_115.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_116.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 50 kVA, 2500 V/250 V, 2 winding transformer is to be used as a step up auto transformer with a constant source voltage of 2500 V. The efficiency of 2 winding transformer at full load, 0.8 pf lagging is 96%, then the efficiency (in percentage) of auto transformer at rated load at 0.6 pf lagging is ______ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 99.49,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>99.49 (99.30 - 99.70)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_117.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Two similar star connected alternator having <em>X</em><sub>1 </sub>= <em>X</em><sub>2</sub> = 3<em>X</em><sub>0</sub> = j0.6 p.u. are connected in parallel. One generator is solidly grounded while other has isolated ground. Prefault voltage is 1∠0 p.u. and a single line to ground fault occurs on generator terminals at phase <em>R</em> when phase sequence is RBY. Assume generator is unloaded. The fault current is _______ .</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_118.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_119.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_120.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_121.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_122.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A uniform 2-wire distributor is 50 m long and it is loaded with 4 A/m. Resistance of single-wire is 1 Ω/km. The maximum voltage drop when distributor is fed from both ends at equal voltage is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0 V</p></span>`,
+        `<span style="display: inline;"><p>2.5 V</p></span>`,
+        `<span style="display: inline;"><p>1.25 V</p></span>`,
+        `<span style="display: inline;"><p>0.2 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_123.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The Fourier transform of a continuous time signal <em>x</em><sub>1</sub>(<em>t</em>) is given as</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_124.png"/></div> <div>then, the signal <em>x</em><sub>1</sub>(<em>t</em>) is equal to <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_125.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_126.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_127.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_128.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_129.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_130.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_131.png"/> 60 Hz full bridge inverter is controlled using multiple pulse modulation, in which a triangular carrier wave of 5 V, 1.2 kHz is compared to a reference square wave of 3 V. Assuming supply voltage of inverter is 150 V, then</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>width of each pulse is 7.20°.</p></span>`,
+        `<span style="display: inline;"><p>number of pulses in half cycle is 10.</p></span>`,
+        `<span style="display: inline;"><p>spacing between the pulses is 10.80°.</p></span>`,
+        `<span style="display: inline;"><p>rms value of output voltage is 94.86 V.</p></span>`,
+      ],
+      answer: ["A", "B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_132.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Lissajous pattern shown in a double-beam cathode-ray oscilloscope screen for two sinusoidal voltages of equal magnitude and of the same frequency but phase shift of 30° is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>a circle</p></span>`,
+        `<span style="display: inline;"><p>a straight line at 45° in the first and third quadrant</p></span>`,
+        `<span style="display: inline;"><p>an ellipse in the first and third quadrant</p></span>`,
+        `<span style="display: inline;"><p>an ellipse in the second and fourth quadrant</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>An ellipse rotating in clockwise direction whose major axis is in first and third quadrant will be<br>displayed on screen when the phase difference between two sinusoidal signals applied to Y and<br>X inputs is 30°.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A spherically symmetric charge distribution is given by</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_133.png"/></div> <div>The magnitude of electric field intensity at a distance 2 m from center of sphere is ________ V/m.<br>(Answer upto 2 decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 552.41,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>552.41 (540 - 564)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_134.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The knee current of zener diode is 4 mA, allowable maximum power dissipation of 100 mW. The maximum and minimum load current that can be safely drawn from the circuit, maintaining the output voltage <em>V</em><sub>o</sub> constant at 10 V are <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_135.png"/> are respectively</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_136.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>26 mA, 20 mA</p></span>`,
+        `<span style="display: inline;"><p>16 mA, 4 mA</p></span>`,
+        `<span style="display: inline;"><p>40 mA, 4 mA</p></span>`,
+        `<span style="display: inline;"><p>40 mA, 36 mA</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_137.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_138.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let a function <em>f</em> (<em>x</em>) be defined by <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_139.png"/> Then which of the following statements is not true regarding <em>f</em> (<em>x</em>)?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Discontinuous at <em>x</em> = 0</p></span>`,
+        `<span style="display: inline;"><p>Discontinuous at <em>x</em> = 1</p></span>`,
+        `<span style="display: inline;"><p>Not differentiable at <em>x</em> = 0</p></span>`,
+        `<span style="display: inline;"><p>Not differentiable at <em>x</em> = 1</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_140.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <em>A<sub>n</sub></em> is the area bounded by <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_141.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_142.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_143.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_144.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_145.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_146.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 200 MVA, 11 kV, 16 pole, 50 Hz synchronous machine has inertia constant H = 4 sec. The machine is operating with <em>P<sub>m</sub></em> = Pe = 1 p.u. ω = ω<em><sub>s</sub></em> and <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_147.png"/> electrical. When a <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_148.png"/> fault occurs at its terminal at <em>t</em> = 0 causing <em>P<sub>e</sub></em> = 0. The rotor angle at 10 cycle after the fault is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>15°</p></span>`,
+        `<span style="display: inline;"><p>30°</p></span>`,
+        `<span style="display: inline;"><p>45°</p></span>`,
+        `<span style="display: inline;"><p>60°</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_149.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The electronic controller is shown in the figure below. Determine the type of the controller:<br>(Assume <em>K</em> is very large)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_150.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>PD controller</p></span>`,
+        `<span style="display: inline;"><p>PID controller</p></span>`,
+        `<span style="display: inline;"><p>PI controller</p></span>`,
+        `<span style="display: inline;"><p>Proportional controller</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_151.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_152.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The impulse response of an LTI system is given as</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_153.png"/></div> <div>The frequency response of the system is equal to</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_154.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_155.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_156.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_157.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_158.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an LTI system with impulse response</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_159.png"/></div> <div>The input to the system is given by <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_160.png"/> If the output <em>y</em>(<em>t</em>) = <em>x</em>(<em>t</em>) ∗ <em>h</em>(<em>t</em>), then the value of <em>y</em>(<em>t</em>) is equal to</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>sin(3<em>t</em> – 1)</p></span>`,
+        `<span style="display: inline;"><p>sin(3(<em>t</em> – 1))</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_161.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_162.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_163.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_164.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The switch <em>S</em><sub>1</sub> is closed at t = 0 sec and switch <em>S</em><sub>2</sub> closed at <em>t</em> = 4 msec.</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_165.png"/></div> <div>The voltage <em>V</em>(<em>t</em>) across the inductor for <em>t</em> &gt; 4 msec is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_166.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_167.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_168.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_169.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_170.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_171.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single phase transformer of rating 30 kVA, supplied 20 kW load at power factor of 0.8 lagging.<br>The additional load at unity power factor in kW, that may be added before this transformer exceeds its rated kVA is ________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5.98,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5.98 (5.90 - 6.10)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_172.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Two 550 kVA alternators operate in parallel to supply the following loads:<br>(i) 250 kW at 0.6 p.f. lagging<br>(ii) 100 kW at 0.5 p.f. leading<br>If one machine is supplying 200 kW at 0.9 p.f. lagging. The p.f. of other machine is ____ lagging.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.92,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.92 (0.9 - 0.94)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_173.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the circuit shown in figure, the switch <em>S</em><sub>1</sub> is turned on symmetrically at 30°. The rms value of output voltage and current are. (Assuming switch S<sub>1</sub> is operating in each half cycle)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_174.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>100 V, 10 A</p></span>`,
+        `<span style="display: inline;"><p>210 V, 10 A</p></span>`,
+        `<span style="display: inline;"><p>226 V, 22.6 A</p></span>`,
+        `<span style="display: inline;"><p>191 V, 19.1 A</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_175.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For type-A chopper circuit, source voltage <em>V<sub>S</sub></em> = 220 V. Chopping period <em>T</em> = 2000 μsec, Ton = 600 μsec, load circuit parameters are <em>R</em> = 1 Ω, <em>L</em> = 5 mH and <em>E</em> = 24 V. The average value of supply current is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>12.72</p></span>`,
+        `<span style="display: inline;"><p>10.72</p></span>`,
+        `<span style="display: inline;"><p>5</p></span>`,
+        `<span style="display: inline;"><p>15.72</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_176.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_177.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the circuit shown below. The approximate value of closed loop gain when <em>R</em><sub>1</sub> = 20 kΩ and <em>R</em><sub>2</sub> = 1 kΩ and <em>A</em> = 10<sup>6</sup> will be</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_178.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>100</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>10</p></span>`,
+        `<span style="display: inline;"><p>1000</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_179.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider NMOS enhancement MOSFET circuit shown below. The value of drain current of transistor will be _____.<br>Given transistor parameters are <em>V<sub>T</sub> </em>= 1 V (neglect body effect and channel length modulation)<br>μ<sub>n</sub>C<sub>ox</sub> = 1 mA/V<sup>2</sup> and <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_180.png"/></p> <div><img alt="" src="images/ee_2026_basic_test_4/img_181.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.57 mA</p></span>`,
+        `<span style="display: inline;"><p>0.83 mA</p></span>`,
+        `<span style="display: inline;"><p>1.2 mA</p></span>`,
+        `<span style="display: inline;"><p>0.93 mA</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_182.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_183.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the operational amplifier shown in the figure below, the current <em>i</em><sub>4</sub> as indicated in figure is given by</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_184.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6 mA</p></span>`,
+        `<span style="display: inline;"><p>2 mA</p></span>`,
+        `<span style="display: inline;"><p>2.4 mA</p></span>`,
+        `<span style="display: inline;"><p>4 mA</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_185.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_186.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_187.png"/> fault occurs at middle point on one of the transmission lines as shown in figure:</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_188.png"/></div> <div>The magnitude of fault current supplied by the generator is _________ p.u. (Assume post fault voltage is to be same as pre-fault voltage).</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.09,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.09 (2.05 - 2.12)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_189.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_190.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Two generators <em>G</em><sub>1</sub> and <em>G</em><sub>2</sub> rated as 200 MW and 400 MW respectively, are operating in parallel. The droop characteristics of their governors are 4% and 5% respectively from no load to full load. At no load the generators are operating at a system frequency of 50 Hz. If total load of 600 MW is being shared by the generators, then which of the following statement(s) is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Power generated by <em>G</em><sub>1</sub> is 369.23 MW</p></span>`,
+        `<span style="display: inline;"><p>Power generated by <em>G</em><sub>1</sub> is 230.76 MW</p></span>`,
+        `<span style="display: inline;"><p>Power generated by <em>G</em><sub>2</sub> is 300.52 MW</p></span>`,
+        `<span style="display: inline;"><p>Power generated by <em>G</em><sub>2</sub> is 349.23 MW</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_191.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_192.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The solution of the differential equation <em>y</em>′′′ − 8<em>y</em>′′ = 0, where <img align="absmiddle" alt="" src="images/ee_2026_basic_test_4/img_193.png"/> <em>y</em>′(0) = 0, <em>y</em>″(0) = 1 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_194.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_195.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_196.png"/></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_197.png"/></div> <div><img alt="" src="images/ee_2026_basic_test_4/img_198.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A unit normal to the level surface x<sup>2</sup> – y<sup>2</sup> + z = 2 at (1, –1, 2) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_199.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_200.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_201.png"/></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_202.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If the two lines of regression are perpendicular, then the correlation coefficient <em>r</em> =</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>–1</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_basic_test_4/img_203.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_basic_test_4/img_204.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Advance Level Test - 1",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In a certain code language, if the word DISTANCE is coded as EDCINSAT then ACQUIRE is coded as</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>EACIQUR</p></span>`,
+        `<span style="display: inline;"><p>EACRIUQ</p></span>`,
+        `<span style="display: inline;"><p>ERCIAQV</p></span>`,
+        `<span style="display: inline;"><p>EARCIQU</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_1.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p><em>ABCDEF</em> is a regular hexagon of side 6 cm. What is the area of triangle <em>BDF</em>?</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_2.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_3.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_4.png"/></p></span>`,
+        `<span style="display: inline;"><p>24 cm<sup>2</sup></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_5.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If log<sub>3</sub> 2, log<sub>3</sub>(2 <sup>x</sup> – 5) and log<sub>3</sub> (2 <sup>x</sup> – 7/2) are in <em>AP</em>, then <em>x</em> is equal to</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>either of (a) or (b)</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_6.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a group of 132 people; 50, 60, 70 people like different sweets – Barfi, Jalebi, Rasgulla respectively. The number of people who like all the three sweets is half the number of people who like exactly 2 sweets. The number of people who like Barfi and Jalebi only, Jalebi and Rasgulla only and Barfi and Rasgulla only is same. The number of people who like all the three sweets are ________.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 12,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>12 (12 - 12)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_7.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p><em>x</em>, 17, 3<em>x</em> – y – 2 and 3<em>x</em> + y – 30 are 4 consecutive terms of an arithmetic progression. The value of <em>x</em> + y is ________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 29,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>29 (29 - 29)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_8.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If a , <em>a<sub>2</sub></em> , <em>a <sub>3</sub></em> ........... <em>a<sub>n</sub></em> are in <em>AP</em>, where a <sub>i</sub> &gt; 0 for all <em>i</em>, then the value of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_9.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_10.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_11.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_12.png"/></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_13.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Karan and Arjun run a 100 m race, where Karan beats Arjun by 10 m. To do a favour to Arjun, Karan starts 10 m behind the starting line in a second 100 m race. They both run at earlier speeds.<br>Which of the following is true in connection with the second race?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Karan and Arjun reach the finishing line simultaneously.</p></span>`,
+        `<span style="display: inline;"><p>Arjun beats Karan by 1 m</p></span>`,
+        `<span style="display: inline;"><p>Arjun beats Karan by 1.1 m</p></span>`,
+        `<span style="display: inline;"><p>Karan beats Arjun by 1 m</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_14.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Select the correct mirror image of the given figure when the mirror is placed to the right side of the figure.</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_15.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_16.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_17.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_18.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_19.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Choose the pair of words which have a relationship between themselves which is similar to the relationship between the given pair:<br>SQUANDER : MONEY ::</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>trespass : property</p></span>`,
+        `<span style="display: inline;"><p>dally : time</p></span>`,
+        `<span style="display: inline;"><p>procrastinate : task</p></span>`,
+        `<span style="display: inline;"><p>accomplish : success</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>(CAUSE AND EFFECT) When one squanders, one wastes money, when one dallies, one wastes time.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In film and videotape, it is possible to induce viewers to project their feelings onto characters on the screen. In one study, when a camera shot of a woman’s face was preceded by a shot of a baby in a crib, the audience thought the woman’s face was registering happiness. When the same shot of the woman’s face was preceded by a shot of a lion running toward the camera, the audience thought the woman’s face was registering fear. Television news teams must be careful to avoid such manipulation of their viewers.<br>Which of the following can be inferred from the passage?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Television news teams have abused their position of trust in the past</p></span>`,
+        `<span style="display: inline;"><p>The expression on the woman’s face was, in actuality, blank.</p></span>`,
+        `<span style="display: inline;"><p>A camera shot of a baby in a crib provoked feelings of happiness in the audience.</p></span>`,
+        `<span style="display: inline;"><p>Audiences should strive to be less gullible.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>This is an inference question. The test writers are probably not interested in the conclusion of the passage. Considering the given options, we’ll look for a statement that seems so obvious that it almost doesn’t need saying.<br>• Television news teams have abused their position of trust in the past. If you chose this answer,<br>you inferred too much. The passage doesn’t say that news teams have ever abused their position<br>of trust. Eliminate it.<br>• The expression on the woman’s face was, in actuality, blank. The audience had no idea what<br>the expression on the woman’s face was, and neither do we.<br>• A camera shot of a baby in a crib provoked feelings of happiness in the audience. This is the<br>best answer. The passage says that the audience projects its own feelings onto characters on<br>the screen. If the audience believes the woman’s face reflects happiness, then that must have<br>been its own reaction.<br>• Audiences should strive to be less gullible. Rather it suggests Television news teams to be<br>careful to avoid manipulation of their viewers. This statement goes way beyond the intent of the passage.<br>Hence, option (c) is correct.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the given network power delivered by the dependent source is</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_20.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>160 W</p></span>`,
+        `<span style="display: inline;"><p>64 W</p></span>`,
+        `<span style="display: inline;"><p>144 W</p></span>`,
+        `<span style="display: inline;"><p>48 W</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_21.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A second order positional control system has open loop transfer function <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_22.png"/> where ‘<em>K</em>’ is the amplifier gain. The value K such that steady state error will not exceed 2° for <em>r</em>(<em>t</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_23.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3.6°</p></span>`,
+        `<span style="display: inline;"><p>3.4°</p></span>`,
+        `<span style="display: inline;"><p>21.5°</p></span>`,
+        `<span style="display: inline;"><p>22.5°</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_24.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an 8-point sequence <em>x</em>(<em>n</em>) = {–<em>j</em> , –<em>j</em> , 0, 2, –3, 0, 0, 1}. Let <em>X</em>(<em>k</em>) and <em>X</em>(<em>e</em> <sup>jω</sup>) be its DFT and DTFT respectively. The value of the integral <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_25.png"/> is equal to</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>92</p></span>`,
+        `<span style="display: inline;"><p>129</p></span>`,
+        `<span style="display: inline;"><p>230</p></span>`,
+        `<span style="display: inline;"><p>420</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_1/img_26.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For an SCR, Gate source voltage is a rectangular pulse of 20 V with 10 msec duration. For an average gate power dissipation of 0.4 W and a peak gate drive power 8 W. Find the triggering pulse duty ratio is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.22</p></span>`,
+        `<span style="display: inline;"><p>0.05</p></span>`,
+        `<span style="display: inline;"><p>0.06</p></span>`,
+        `<span style="display: inline;"><p>0.25</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_27.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 3-phase star-connected 1000 Volt alternator supplied power to a 600 kW delta connected induction motor. If the motor power factor is 0.8 lagging and its efficiency is 0.9, then the current in each phase alternator and motor phase respectively are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>321 A and 231.5 A</p></span>`,
+        `<span style="display: inline;"><p>481.12 A and 277.78 A</p></span>`,
+        `<span style="display: inline;"><p>277.78 A and 481.12 A</p></span>`,
+        `<span style="display: inline;"><p>480.12 A and 480.12 A</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_28.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Electrical circuit of compensator is shown in figure,</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_29.png"/></div> <div>The value of <em>R</em><sub>1</sub> for maximum phase shift of 30° is (<em>R</em><sub>2</sub> = 10 kΩ)</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>10 kΩ</p></span>`,
+        `<span style="display: inline;"><p>15 kΩ</p></span>`,
+        `<span style="display: inline;"><p>20 kΩ</p></span>`,
+        `<span style="display: inline;"><p>30 kΩ</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_30.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_31.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 100 MVA, 230/115 kV Δ–Δ, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_32.png"/> power transformer has a resistance of 0.02 per unit and a reactance of 0.055 per unit. The transformer supplies a load of 80 MVA at 0.85 p.f. lagging. The percentage voltage regulation of the transformer is _____ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 3.7,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3.7 (3.6 - 3.8)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_33.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 500 kVA, 11 kV/0.43 kV, 3-phase delta/star connected transformer has HV copper loss of 2.5 kW and LV copper loss of 2 kW on rated load. The ohmic value of the equivalent resistance on the delta side is _____ Ω/ph.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6.53,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6.53 (6.10 - 6.90)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_34.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_35.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single phase semiconverter is supplying a resistive load of 100 Ω from its dc side. The converter is operated from 220 V, 50 Hz ac supply. If the average output is 30% of the maximum possible average output voltage then the rms load current of the converter will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.236 A</p></span>`,
+        `<span style="display: inline;"><p>1.962 A</p></span>`,
+        `<span style="display: inline;"><p>1.325 A</p></span>`,
+        `<span style="display: inline;"><p>0.984 A</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_36.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_37.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A basic layout for analyzing waveform for an input signal to CRO in xy mode is shown below. If the input to <em>x</em>(<em>t</em>) is a sinusoid with amplitude 10 units, ω = 20 rad/sec the wave form observed on CRO will be</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_38.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_advance_test_1/img_39.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_advance_test_1/img_40.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_advance_test_1/img_41.png"/></div></span>`,
+        `<span style="display: inline;"><div><img alt="" src="images/ee_2026_advance_test_1/img_42.png"/></div></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_43.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The directional derivative of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_44.png"/> in the direction of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_45.png"/> will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_46.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_47.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absiddle" alt="" src="images/ee_2026_advance_test_1/img_48.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_49.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_50.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The solution of differential equation <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_51.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_52.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_53.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_54.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_55.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_56.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_57.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the circuit shown in the figure below:</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_58.png"/></div> <div>Assume the ‘β’ of the transistor to be very large, the value of the collector voltage ‘<em>V<sub>C</sub></em>’ is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.35 Volt</p></span>`,
+        `<span style="display: inline;"><p>–0.35 Volt</p></span>`,
+        `<span style="display: inline;"><p>0.25 Volt</p></span>`,
+        `<span style="display: inline;"><p>–0.25 Volt</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_59.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_60.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit shown in figure, the value of <em>I</em> is</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_61.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>30.22 mA</p></span>`,
+        `<span style="display: inline;"><p>–21.28 mA</p></span>`,
+        `<span style="display: inline;"><p>21.28 mA</p></span>`,
+        `<span style="display: inline;"><p>–77.27 mA</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_62.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_63.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single phase half wave uncontrolled rectifier is connected to 230 V (rms), 50 Hz supply. If circuit supply resistive load of 800 Ω and internal resistance of diode is 10 Ω during forward conduction. The average value of diode voltage is _______ volts.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -102.25,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-102.25 (-104.25 - -100.25)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_64.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The electric flux density is given as <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_65.png"/> The total charge enclosed by<br>the cube of side 2 m centered at the origin with its sides along the coordinate axes is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_66.png"/></p></span>`,
+        `<span style="display: inline;"><p>8 <em>C</em></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_67.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_68.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_69.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The overall inductance of two coils connected in series, with mutual inductance opposing self inductance is <em>L</em><sub>1</sub> , with mutual inductance aiding self-inductance, the overall inductance is <em>L</em><sub>2</sub>. The mutual inductance M is given by</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>L</em><sub>2</sub> – <em>L</em><sub>1</sub></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_70.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_71.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_72.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_73.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider a causal LTI system characterized by differential equation <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_74.png"/> The steady state output <em>y</em>(<em>t</em>) is <em>A</em><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_75.png"/> then the value of <em>A</em> is _________ . (Answer upto 2 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.71,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.71 (0.70 - 0.72)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_76.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The open loop transfer function of a unity feedback system is <em>G</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_77.png"/> The value of ‘<em>K</em>’ to drive the system on the verge of instability is _________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.4</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_78.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_79.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 240 V, DC shunt motor has armature and shunt field resistance is 0.5 Ω and 120 Ω respectively. At no load, the motor draw 5 A from the supply voltage. The efficiency of the motor while running at full load drawing a current of 50 A from the supply voltage will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>76.43%</p></span>`,
+        `<span style="display: inline;"><p>84.54%</p></span>`,
+        `<span style="display: inline;"><p>80.43%</p></span>`,
+        `<span style="display: inline;"><p>82.61%</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_80.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <em>S</em>-<em>R</em> flip-flop is converted into <em>X</em> flip-flop as shown below,</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_81.png"/></div> <div>The characteristic equation is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_82.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_83.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_84.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_85.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_86.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the given field distributions <em>P</em> and <em>Q</em>, which of the following option is incorrect?</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_87.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_88.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_89.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_90.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_91.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_92.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The op-amp circuit shown actin as filter. The type of filter and its cut-off frequency are respectively</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_93.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>High pass filter and 1000 rad/sec</p></span>`,
+        `<span style="display: inline;"><p>Low pass filter and 1000 rad/sec</p></span>`,
+        `<span style="display: inline;"><p>All pass filter</p></span>`,
+        `<span style="display: inline;"><p>High pass filter and 10000 rad/sec</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_94.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_95.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The Nyquist plot to the given transfer function <em>G</em>(<em>s</em>)<em>H</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_96.png"/> (take Nyquist contour possibly excluding origin R.H.S of s-plane)</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_97.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_98.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_99.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_100.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_101.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_102.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The directional derivative of xy<sup>3</sup>z<sup>2</sup> at the point (1, 1, –1) in the direction of the tangent to the curve<br><em>x</em> = <em>e<sup>t</sup></em>, <em>y</em> = sin2<em>t</em> + 1, z = 1 – cost at t = 0, is ________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 3.13,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3.13 (3.00 - 3.25)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_103.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A (6 + <em>j</em>10)Ω coil is supplied by 30 sinωt volt AC source connected in series with a 12 battery as shown in figure. The internal impedance of generator is (0.1 + <em>j</em>2)Ω. The current <em>i</em>(<em>t</em>) is β<sub>1</sub>sin(ωt + <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_104.png"/>) + β<sub>2</sub>. The value of β<sub>1</sub> and β<sub>2</sub> are respectively</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_105.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2, 1.97</p></span>`,
+        `<span style="display: inline;"><p>2.23, 1.97</p></span>`,
+        `<span style="display: inline;"><p>1.9, 2</p></span>`,
+        `<span style="display: inline;"><p>1.97, 2.23</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_106.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_107.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider an ideal op-amp circuit shown in figure below:</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_108.png"/></div> <div>The output voltage (<em>V</em><sub>0</sub>) will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>5 volt</p></span>`,
+        `<span style="display: inline;"><p>–5 volt</p></span>`,
+        `<span style="display: inline;"><p>–10 volt</p></span>`,
+        `<span style="display: inline;"><p>10 volt</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_109.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 4-bit DAC given an output voltage of 4.5 V for an input code of 1001. The output voltage for an input code of 0110 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.5 V</p></span>`,
+        `<span style="display: inline;"><p>2.0 V</p></span>`,
+        `<span style="display: inline;"><p>3.0 V</p></span>`,
+        `<span style="display: inline;"><p>4.5 V</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_110.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A 1500 kVA, 230 kV/13.4 kV single phase power transformer has a pu resistance of 5% and pu reactance of 16%. The open circuit test data is given below,</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_111.png"/></div> <div>Then the equivalent parameters referred to low voltage side is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>core resistance is 2762.46 Ω</p></span>`,
+        `<span style="display: inline;"><p>magnetizing reactance is 773.22 Ω</p></span>`,
+        `<span style="display: inline;"><p>full load Cu losses are 75 kW</p></span>`,
+        `<span style="display: inline;"><p>Voltage regulation at unity power factor is 16%</p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_112.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the Y-bus matrix of a 4-bus system given in per unit, the buses which do not have shunt elements are</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_113.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3 and 4</p></span>`,
+        `<span style="display: inline;"><p>2 and 3</p></span>`,
+        `<span style="display: inline;"><p>only 2</p></span>`,
+        `<span style="display: inline;"><p>only 4</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_114.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_115.png"/> 4 wire system supplies load which are unequally distributed in the three phases. An analysis shows that in R line, positive phase sequence component is 200∠0° A and negative phase sequence component is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_116.png"/> A. The total current flowing back to the supply in neutral conductor is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_117.png"/> A. The current in the <em>Y</em> line is : (Phase sequence is <em>R</em>, <em>Y</em>, <em>B</em>)</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0 A</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_118.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_119.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_120.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_121.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Which one of the following figure represents the magnitude plot of transfer function?</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_122.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_123.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_124.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_125.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_126.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_127.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A step up converter shown in figure has maximum power output of 120 W and switching frequency is 50 KHz. For the converter operating in discontinuous current conduction mode and assuming capacitance to be very large, Maximum value of inductor is</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_128.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3 μH</p></span>`,
+        `<span style="display: inline;"><p>9 μH</p></span>`,
+        `<span style="display: inline;"><p>27 μH</p></span>`,
+        `<span style="display: inline;"><p>54 μH</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_129.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The figure shows a 3-phase load supplied from a 100 V, 50 Hz, 3-phase balanced source. The pressure coil (PC) and current coil (CC) of a wattmeter are connected to the load as shown, with the coil polarities suitably selected to ensure a positive deflection. The wattmeter reading will be _________ kW. (Assume RYB phase sequence). Answer upto two decimal places.</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_130.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 8.66,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>8.66 (8.50 - 8.80)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_131.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A dc-dc buck converter has input voltage of 400 V and a load in form of resistor <em>R</em> = 40 Ω is connected accordingly. The switching frequency of converter is 2 kHz and the converter switch has voltage drop of 2 V. When switch is conducting and duty cycle is 0.5 then value of chopper<br>efficiency will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>85.50%</p></span>`,
+        `<span style="display: inline;"><p>97.04%</p></span>`,
+        `<span style="display: inline;"><p>50.42%</p></span>`,
+        `<span style="display: inline;"><p>99.49%</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_132.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_133.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the voltage regulator shown below, <em>V<sub>BE</sub></em> = 0.7 V and base current is negligible for both the BJTs.</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_134.png"/></div> <div>If the regulated output <em>V</em><sub>0</sub> is 10 V, then relation between <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>R</em><sub>2</sub> = 2<em>R</em><sub>1</sub></p></span>`,
+        `<span style="display: inline;"><p><em>R</em><sub>1</sub> = 2<em>R</em><sub>2</sub></p></span>`,
+        `<span style="display: inline;"><p><em>R</em><sub>1</sub> = 1.25<em>R</em><sub>1</sub></p></span>`,
+        `<span style="display: inline;"><p><em>R</em><sub>1</sub> = <em>R</em><sub>2</sub></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_135.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A function <em>f</em> (<em>x</em>) is defined as <em>f</em> (<em>x</em>) = 3x<sup>4</sup> – 2x<sup>3</sup> – 6x<sup>2</sup> + 6<em>x</em> + 1, 0 ≤ x ≤ 2. The value of <em>f</em>(<em>x</em>) at the point of minimum is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>21</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_136.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The eigen values of the matrix <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_137.png"/> are in ratio 1 : 1 : 4. If ‘<em>a</em>’ is a positive real number, then the value of ‘<em>a</em>’ will be ________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_138.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 50 Hz synchronous generator is connected to an infinite bus through a line. The p.u. reactance of the generator and the line are <em>j</em>0.25 and <em>j</em>0.15 p.u. on system base respectively. The generator no load voltage is 1.2 p.u. and that of the infinite bus is 1 p.u. The inertia constant of the generator is 4 MW-sec/MVA. If the generator is loaded to 80% of its maximum power transfer capability<br>and a small perturbation is given, then the natural frequency of oscillations is _____ Hz.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.34,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.34 (1.32 - 1.36)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_139.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The input frequency of the circuit unity power factor operation is _______ rad/sec.</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_140.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.5</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_141.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_142.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Fourier transform of a periodic signal is given as <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_143.png"/> the Fourier series coeffient of <em>C</em><sub>7</sub> = j _______ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.16,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.16 (0.10 - 0.20)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_144.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_145.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The energy in the signal <em>x</em>(<em>t</em>) = 8 sinc(4t) cos(2πt) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6 J</p></span>`,
+        `<span style="display: inline;"><p>12 J</p></span>`,
+        `<span style="display: inline;"><p>24 J</p></span>`,
+        `<span style="display: inline;"><p>10 J</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_146.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_147.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For the circuit shown in figure, the value of bandwidth of the circuit is _______ Hz. (Answer upto 2 decimal places)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_148.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 3.18,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3.18 (3.10 - 3.30)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_149.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A compensated DC machine has 19000 armature ampere turns per pole. The ratio of pole arc to pole pitch is 0.7. Interpolar air gap length and flux density are respectively 1 cm and 0.3 T. For rated armature current of 1000 A. The number of turns on each interpole and compensating winding conductors per pole would be respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>7 and 28</p></span>`,
+        `<span style="display: inline;"><p>8 and 32</p></span>`,
+        `<span style="display: inline;"><p>8 and 28</p></span>`,
+        `<span style="display: inline;"><p>7 and 32</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_150.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 40 kVA, 600 V star connected synchronous motor has armature effective resistance of 0.9 ohm and synchronous reactance of 10 ohm. It has stray loss of 1.5 kW. The motor is operating at 600 V bus-bar while supplying a shaft load of 30 kW. If motor is drawing rated current at leading pf, the efficiency of motor will be _______ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 84.51,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>84.51 (84.00 - 85.00 )</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_151.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_152.png"/> full-bridge fully controlled converter feeds a constant load current of 20 A. The rectifier is fed from an ideal 400 V, 50 Hz sinusoidal source through cables with negligible internal resistance with <em>L<sub>s</sub></em> = 3.2 mH. If the thyristors are triggered at an angle of 36.86° then the fundamental power factor (displacement factor) at input AC mains is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.765</p></span>`,
+        `<span style="display: inline;"><p>0.789</p></span>`,
+        `<span style="display: inline;"><p>0.821</p></span>`,
+        `<span style="display: inline;"><p>0.798</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_153.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_154.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A phase controlled single-phase rectifier, supplied by an AC source, feeds power to an R-L-E load as shown. Assume load inductance is sufficient to ensure continuous and ripple free load current. The rectifier output voltage has an average value given by</p> <div> <div><img alt="" src="images/ee_2026_advance_test_1/img_155.png"/></div> </div> <div>where <em>V<sub>m</sub></em> = 220 V and α is the firing angle. If load current is 12 A then which of the following statement(s) is/are correct? <div><img alt="" src="images/ee_2026_advance_test_1/img_156.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The power delivered to the lossless battery is 1200 W.</p></span>`,
+        `<span style="display: inline;"><p>The power delivered to the lossless battery is –1200 W.</p></span>`,
+        `<span style="display: inline;"><p>Firing angle of rectifier is 122.17°.</p></span>`,
+        `<span style="display: inline;"><p>Firing angle of rectifier is 152.27°</p></span>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b, d)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_157.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_1/img_158.png"/></p> <p>In the circuit shown, the value of current I is _______ mA. (Assume ideal opamp)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 49.39,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>49.39 (49.00 - 50.00)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_159.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The hystersis width in the voltage transfer characteristics of the Schmitt trigger circuit given is _______ V.</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_160.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6 (6.00 - 6.00)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_161.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_162.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single phase CSI (with ideal switches) has the following data:<br><img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_163.png"/> = 30 A, <em>f</em> = 500 Hz and load of pure capacitance = 20 μF.<br>The peak value of reverse voltage that appears across thyristors is _________ V.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 750,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>750</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_164.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A star connected, 5 kW, 420 V (line), three-phase, 4-pole, 50 Hz squirrel-cage induction motor has the following equivalent circuit parameters per phase referred to the stator, <em>R</em><sub>2</sub> = 9 Ω, <em>X</em><sub>2 </sub>= <em>X</em><sub>1</sub> = 9 Ω, <em>R</em><sub>1</sub> = 6 Ω. Neglect shunt branch in the equivalent circuit. The starting line current is 14.57 Amp when it is connected to a 420 V (line), <em>f</em> Hz, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_165.png"/> AC source. The frequency <em>f</em>(Hz) is ________ .<br>(Rounded off to be two decimal places).</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 20,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>20 (19.00 - 21.00)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_166.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A motor is receiving 25% of the power that it is capable of receiving from an infinite bus, if the load on the motor is doubled, calculate the maximum value of laod angle (δ) during the swinging of the rotor around its new equilibrium position</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>46.4°</p></span>`,
+        `<span style="display: inline;"><p>60°</p></span>`,
+        `<span style="display: inline;"><p>80°</p></span>`,
+        `<span style="display: inline;"><p>30°</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_167.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_168.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Two persons <em>A</em> and <em>B</em> toss an unbiased coin alternatively and who get the first head, wins the game. If <em>A</em> starts the game, then the ratio of probabilities of <em>A</em>’<em>s</em> winning to <em>B</em>’<em>s</em> winning is _______.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_169.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>It is given that the solution of the differential equation <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_170.png"/> passes through origin. The value of y(2) will be ________.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 6.4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>6.40 (6.30 - 6.50)</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_171.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_1/img_172.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The value of integral <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_173.png"/> where C is left half of the circle <img align="absmiddle" alt="" src="images/ee_2026_advance_test_1/img_174.png"/> If the integral is evaluated in clockwise direction, then the value of k is ________.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 8,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>8</p> <div><img alt="" src="images/ee_2026_advance_test_1/img_175.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Advance Level Test - 2",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>What is the value of the following expression?</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_1.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_2.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_3.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_4.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_5.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_6.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A student took five papers in an examination, where the full marks were the same for each paper. His marks in these papers were in the proportion of 6 : 7 : 8 : 9 : 10. In all papers together, the candidate obtained 60% of the total marks. Then the number of papers in which he got more than 50% marks is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>5</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_7.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p><em>R</em>, <em>S</em> and <em>H</em> enter into a partnership and their capitals are in the proportion of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_8.png"/> <em>R</em> withdraws half his capital at the end of 4 months. Out of total annual profit of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_9.png"/> <em>R</em>’s share is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_10.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_11.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_12.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_13.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_14.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For this question, you have to base your conclusion on the three premises (viz: 1, 2 and 3). Assuming the facts in the statements to be true, which of the following conclusions logically follows from the statements?<br><strong>Statements:</strong><br>1. Some cakes are bikes<br>2. Some bikes are hills<br>3. All laptops are bikes<br><strong>Conclusions:</strong><br>I. All laptops are hills<br>II. Some laptops are cakes<br>III. Some cakes are hills<br>IV. Some laptops are not cakes</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Only I follows</p></span>`,
+        `<span style="display: inline;"><p>Only either II or IV follows</p></span>`,
+        `<span style="display: inline;"><p>Only I or II follows</p></span>`,
+        `<span style="display: inline;"><p>Only I and IV follows</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_15.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A messenger was returning to his base station which was in front of him to the north. When this base station was 100 m away from him, he turned to the left and moved 50 m to deliver the last message to the Peshwa’s troops. He then moved in the same direction for 40 m, turned to his<br>right and moved 100 m. How many meters away he is now from his base station?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>150</p></span>`,
+        `<span style="display: inline;"><p>90</p></span>`,
+        `<span style="display: inline;"><p>100</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_16.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A person starts typing the numbers from 1 to 1999. He press the keys total ‘n’ number of times.<br>The value of <em>n</em> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6889</p></span>`,
+        `<span style="display: inline;"><p>1000</p></span>`,
+        `<span style="display: inline;"><p>2888</p></span>`,
+        `<span style="display: inline;"><p>none of these</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br>The number of times he pressed the keys for one digit number = 9<br>The number of times he pressed the keys for two digit numbers = 90 × 2 = 180<br>The numbers of times he pressed the keys for three digit numbers = 900 × 3 = 2700<br>The number of times he pressed the keys for the numbers 1000 to 1999 is 1000 × 4 = 4000<br>Thus, total number of times the keys are pressed = 6889</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Choose the most appropriate word from the options given below to complete the following sentence.<br>Based on his recent poor decisions, it was obvious that Seth lacked even a _____ of good sense.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>debasement</p></span>`,
+        `<span style="display: inline;"><p>diversion</p></span>`,
+        `<span style="display: inline;"><p>disapprobation</p></span>`,
+        `<span style="display: inline;"><p>modicum</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)<br>Modicum is a small or token amount. It effectively conveys that Seth lacked even a small amount of good sense.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Below is a sentence of which some parts have been jumbled up. Rearrange these parts which are labelled <em>P</em>, <em>Q</em>, <em>R</em> and <em>S</em> to produce the correct sentence. Choose the proper sequence. It would<br>P : that they were quite in the dark<br>Q : about the policy of management<br>R : appear from their statement<br>S : in dealing with the strike<br>The proper sequence should be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>S R P Q</p></span>`,
+        `<span style="display: inline;"><p>R P Q S</p></span>`,
+        `<span style="display: inline;"><p>S Q R P</p></span>`,
+        `<span style="display: inline;"><p>R S Q P</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>“It would appear ...” can be the only coherent beginning of the sentence. Thus the first part<br>would be <em>R</em>. Since R says “their statement”, sentence P would follow it because it also says, “that they ...”<br>Thus, option (b) is the correct answer.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>If you are a brisk walker, there is no need to go to a gym. Your neighbourhood can become your gym. You don’t need fancy equipment to get a good exercise either. All you need is a welldesigned pair of shoes.<br>The paragraph best supports the statement that</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>poorly designed shoes can cause major foot injuries.</p></span>`,
+        `<span style="display: inline;"><p>walking outdoors provides a better workout than walking indoors.</p></span>`,
+        `<span style="display: inline;"><p>a gym membership is a poor investment.</p></span>`,
+        `<span style="display: inline;"><p>brisk walking is a convenient and valuable form of exercise</p></span>`,
+      ],
+      answer: ["D", "C", "B", "A"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)<br>By stating that brisk walking does not require commute to a gym, the author stresses the<br>convenience of this form of exercise. The paragraph also states that brisk walking may result in a good workout.<br>Option (c) is not appropriate. A gym membership can be a good investment for some.<br>Option (b) is not given in the passage.<br>Option (a) seems logical but the paragraph does not mention it.<br>Option (d) is the most appropriate option.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>How many triangles are there in the following figure?</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_17.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6</p></span>`,
+        `<span style="display: inline;"><p>10</p></span>`,
+        `<span style="display: inline;"><p>11</p></span>`,
+        `<span style="display: inline;"><p>12</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_18.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For the circuit element shown in figure voltage and current are given as</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_19.png"/></div> <div>The power absorbed by the element at t = 20 ms (in watts) is _____.</div> <div> <div><img alt="" src="images/ee_2026_advance_test_2/img_20.png"/></div> </div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5.39,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5.39 (5.35 - 5.45)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_21.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the signal flow graph of the given figure, the gain <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_22.png"/> will be:</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_23.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_24.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_25.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_26.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_27.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_28.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Laplace transform of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_29.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_30.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_31.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_32.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_33.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_34.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single-phase full-bridge voltage source inverter feeds a purely inductive load, as shown in figure. When <em>T</em><sub>1</sub> , <em>T</em><sub>2</sub> , <em>T</em><sub>3</sub> , <em>T</em><sub>4</sub> are power transistors and <em>D</em><sub>1</sub> , <em>D</em><sub>2</sub> , <em>D</em><sub>3</sub> , <em>D</em><sub>4</sub> are feedback diodes. The inverter is operated in square-wave mode with a frequency of 50 Hz. If the average load current<br>is zero, what is the time duration of conduction of each feedback diode in a cycle?</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_35.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>5 m sec</p></span>`,
+        `<span style="display: inline;"><p>10 m sec</p></span>`,
+        `<span style="display: inline;"><p>20 m sec</p></span>`,
+        `<span style="display: inline;"><p>2.5 m sec</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_36.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the power system shown below, specification of the components are as follows :</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_37.png"/></div> <div>Line reactance, <em>X</em> = 50 Ω<br>The reactance diagram on base MVA = 80 MVA is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_38.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_39.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_40.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_41.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_42.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the block diagram shown below,</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_43.png"/></div> <div>The sensitivity of steady state error for ramp input with respect to ‘α’ is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>-1</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_44.png"/></p></span>`,
+        `<span style="display: inline;"><p>∞</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_45.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_46.png"/> squirrel cage induction motor, with an applied voltage of 40% gives a blocked rotor current of 250% and internal starting torque of 30% of their corresponding rated values. If an autotransformer limit the starting line current of 150% of the motor full load current, the percentage<br>starting torque of full load torque is _______ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 45,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>45 (44.00 - 46.00)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_47.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Two coupled DC series motor with constant load torque are changed over from series to parallel connection across a fixed voltage supply. How does the set speed changes compared to the original speed?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>double</p></span>`,
+        `<span style="display: inline;"><p>half</p></span>`,
+        `<span style="display: inline;"><p>equal</p></span>`,
+        `<span style="display: inline;"><p>quarter</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_48.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the 3-phase inverter circuit shown, the load is balanced and gating scheme is 120° conduction mode. All the switching devises are ideal.</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_49.png"/></div> <div>The rms magnitude of fundamental component of load phase voltage is 312 volt, calculate the rms magnitude of fundamental component of the load line voltage.</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>180.1 V</p></span>`,
+        `<span style="display: inline;"><p>540.4 V</p></span>`,
+        `<span style="display: inline;"><p>565.9 V</p></span>`,
+        `<span style="display: inline;"><p>148.9 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_50.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_51.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the wattmeter shown in given figure, given datas are:<br><strong>Ammeter:</strong> Resistance = 0.2 Ω ; Reading = 5.0 A<br><strong>Wattmeter:</strong> Current coil resistance = 0.2 Ω;<br>Pressure coil resistance = 2 kΩ.<br><strong>Voltmeter:</strong> Resistance = 0.2 kΩ;<br>Reading = 200 V; Load p.f. = 1<br>The reading of the wattmeter is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_52.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>980 W</p></span>`,
+        `<span style="display: inline;"><p>100 W</p></span>`,
+        `<span style="display: inline;"><p>1005 W</p></span>`,
+        `<span style="display: inline;"><p>1010 W</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_53.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <em>A</em> is a 3 × 3 real matrix with eigen values 1, 2, 3 then the matrix <em>A</em> satisfies</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_54.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_55.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_56.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_57.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_58.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Evaluate <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_59.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>log(2)</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_60.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_61.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_62.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_63.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the circuit given below,</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_64.png"/></div> <div>The MOSFET is biased in saturation region having <em>V<sub>T</sub></em> = 2.5 V and μ<em><sub>n</sub>C<sub>ox</sub></em> <em>W</em>/<em>L</em> = 0.5 mA/V. The minimum value of <em>V<sub>DD</sub></em> for which the MOSFET remain in saturation region is equal to ______ Volt.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_65.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the following circuit, the values of voltage <em>V</em><sub>1</sub>, <em>V</em><sub>2</sub> and <em>V</em><sub>3</sub> are respectively</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_66.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>77 V, 35 V, 56 V</p></span>`,
+        `<span style="display: inline;"><p>49 V, 7 V, 42 V</p></span>`,
+        `<span style="display: inline;"><p>21 V, 7 V, 56 V</p></span>`,
+        `<span style="display: inline;"><p>7 V, 35 V, 28 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_67.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The value of <em>v</em><sub>3</sub> in the given circuit is _____ V. (Answer upto two decimal places)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_68.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.62,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.62 (2.60 - 2.65)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_69.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Charge needed within a unit sphere centred at the origin for producing a potential field, <em>V</em> = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_70.png"/> for <em>r</em> ≤ 1 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_71.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_72.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_73.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_74.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_75.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_76.png"/> fully controlled thyristor bridge converter supplies a dc load voltage 400 V having an internal resistance of 1.8 Ω. The output current may be assumed to be constant at 20 A, since there is a large inductance in the load circuit. The supply rms voltage per phase is 230 V and the source inductance in each phase is 5 mH. The source resistance may be neglected. Then, the overlap angle in degree is ______. (Answer upto two decimal places).</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 11.02,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>11.02 (10.95 - 11.10)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_77.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Suppose <em>y</em>(<em>t</em>) = <em>x</em>(<em>t</em>) cos(<em>t</em>) and <em>Y</em>(<em>j</em>ω) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_78.png"/> The <em>x</em>(<em>t</em>) will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_79.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_80.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_81.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_82.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_83.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The second order system transfer function having minimum value of peak overshoot among the shown below:</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_84.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_85.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_86.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_87.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_88.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The minimum number of 2-input NAND gates required to implement the Boolean function, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_89.png"/> is ________.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5 (5 - 5)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_90.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_91.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the sequential circuit shown below:</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_92.png"/></div> <div>The state diagram for the above circuit is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_93.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_94.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_95.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_96.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_97.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the two port network shown in figure, the mutual inductance of coupled inductors is <em>M</em>. The z-parameters matrix of the network is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_98.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_99.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_100.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_101.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_102.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_103.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The <em>V</em>-<em>I</em> equation for the network shown in the figure, is given by</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_104.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_105.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_106.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_107.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_108.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_109.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The point of intersection of asymptotes of root loci of the system having open loop transfer function <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_110.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1.44</p></span>`,
+        `<span style="display: inline;"><p>1.33</p></span>`,
+        `<span style="display: inline;"><p>–1.44</p></span>`,
+        `<span style="display: inline;"><p>– 1.33</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_111.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The angle between the tangents to the curve <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_112.png"/> at the point <em>t</em> = ±1 is _______.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_113.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_114.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_115.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_116.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_117.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The total impedance <em>Z<sub>T</sub></em> of the circuit shown below at a frequency ω = 50 rad/sec is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_118.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>20 + <em>j</em>10 Ω</p></span>`,
+        `<span style="display: inline;"><p>20 + <em>j</em>30 Ω</p></span>`,
+        `<span style="display: inline;"><p>10 + <em>j</em>20 Ω</p></span>`,
+        `<span style="display: inline;"><p>10 + <em>j</em>30 Ω</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_119.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following circuit:</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_120.png"/></div> <div>Initially the counter is at ‘000’. After 9 clock pulses, the state of LEDs is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Only LED<sub>1</sub> and LED<sub>2</sub> are ON</p></span>`,
+        `<span style="display: inline;"><p>Only LED<sub>2</sub> and LED<sub>3</sub> are ON</p></span>`,
+        `<span style="display: inline;"><p>Only LED<sub>1</sub> and LED<sub>3</sub> are ON</p></span>`,
+        `<span style="display: inline;"><p>All LED<sub>s</sub> are ON</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_121.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Compensation derived from the P-D network whose differential equation is goverend by <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_122.png"/> as shown in the figure. The value of T if the closed loop response is critically damped is _______ . (Rounded off to two decimal places).</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_123.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.52,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.52 (0.30 - 0.70)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_124.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_125.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A double cage rotor induction motor has impedances of the rotor of the inner and outer cages at standstill conditions of (0.02 + <em>j</em>0.6)Ω and (0.06 + <em>j</em>0.2)Ω respectively. Assume that the stator impedance is negligible. The ratio of torque due to the two cages of the time of starting is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>22.5</p></span>`,
+        `<span style="display: inline;"><p>24.8</p></span>`,
+        `<span style="display: inline;"><p>25.6</p></span>`,
+        `<span style="display: inline;"><p>26.6</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_126.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_127.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The bus admittance matrix of the network shown in the given figure, for which the marked parameters are per unit impedance, is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_128.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_129.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_130.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_131.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_132.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_133.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 220 kV, 50 Hz system, the value of reactance and capacitance upto the location of circuit breaker is 8 Ω and 0.025 μF respectively. The value of resistance which will give damped frequency of oscillation which is one fourth of natural frequency of oscillation will be _____ Ω.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 521.12,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>521.12 (515.00 - 525.00)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_134.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The convolution y[n] = (–1)<em><sup>n</sup></em> ∗ 2<em><sup>n</sup> u</em>[–<em>n</em> + 2] is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_135.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_136.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_137.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_138.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_139.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the following dc – dc converter circuit, if the switch is operated at 20 kHz with duty ratio of 0.5, the energy transferred from <em>V</em><sub>1</sub> to <em>V</em><sub>2</sub> is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_140.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.094 J</p></span>`,
+        `<span style="display: inline;"><p>0.97 J</p></span>`,
+        `<span style="display: inline;"><p>0.47 J</p></span>`,
+        `<span style="display: inline;"><p>0.047 J</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_141.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_142.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The a.c. bridge shown below, the voltage para-meters are <em>R</em><sub>1</sub> = 200 Ω, <em>R</em><sub>2</sub> = 500 Ω, <em>C</em><sub>2</sub> = 0.2 μF, <em>C</em><sub>1</sub> = 0.05 μF, <em>R</em><sub>4</sub> = 100 Ω and ω = 10<sup>5</sup> rad/s. The value <em>L<sub>x</sub></em> and <em>R<sub>x</sub></em> respectively, are</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_143.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2.25 mH, 275 Ω</p></span>`,
+        `<span style="display: inline;"><p>2.25 mH, 270 Ω</p></span>`,
+        `<span style="display: inline;"><p>3.25 mH, 275 Ω</p></span>`,
+        `<span style="display: inline;"><p>2.75 mH, 250 Ω</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_144.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_145.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The magnetic field intensity in a certain conducting medium is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_146.png"/></div> <div>The square of magnitude of the conduction current density <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_147.png"/> is given by</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>25</p></span>`,
+        `<span style="display: inline;"><p>26</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p>5</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_149.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the given circuit, op-amp is ideal, to produce sustained oscillations what will be the minimum required value of the ratio <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_150.png"/> is</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_151.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>4</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_152.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_153.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The solution of the ordinary differential equation <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_154.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_155.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_156.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_157.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_158.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_159.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Three white and three black balls, kept in three bins are arranged in four ways as shown below. In each arrangement a bin has to be chosen randomly and only one ball needs to be picked randomly from the chosen bin. Which of the following arrangements has the probability for getting a white ball picked is less than or equal to 0.5.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_160.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_161.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_162.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_163.png"/></p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_164.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>An inductive load is connected to 230 V, 50 Hz AC source, which draws 2 kW real power at a power factor of 0.80 lagging. The value of capacitor required in parallel to load such that combined power factor improves to 0.90 (lagging) will be ______ μF. (Answer upto two decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 31.98,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>31.98 (31.40 - 32.50)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_165.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_166.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A certain closed loop with unity feedback has the forward path transfer function given by <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_167.png"/> Suppose we want to make the system oscillatory by setting the gain at the ultimate value, then the system will oscillate at an angular frequency of _____ rad/sec.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.23,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.23 (2.15 - 2.30)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_168.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_169.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The output y[n] with given initial conditions.</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_170.png"/></div> <div>The value of <em>a</em> + <em>b</em> is ________ .</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_171.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The inverse z-transform of signal <em>x</em>(<em>n</em>), whose z-transform is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_172.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_173.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_174.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_175.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_176.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_177.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the network shown in the figure below, the value of <em>Z<sub>L</sub></em> required, such that maximum power will be transferred to it will be</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_178.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>(1 + <em>j</em>) Ω</p></span>`,
+        `<span style="display: inline;"><p>(1 + <em>j</em>4) Ω</p></span>`,
+        `<span style="display: inline;"><p>1 Ω</p></span>`,
+        `<span style="display: inline;"><p>–<em>j</em> Ω</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_179.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 40 kVA, 600 V star connected synchronous motor has armature effective resistance of 0.9 ohm and synchronous reactance of 10 ohm. It has stray loss of 1.5 kW. The motor is operating at 600 V bus-bar while supplying a shaft load of 30 kW. If motor is drawing rated current at leading pf, the efficiency of motor will be _______ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 84.51,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>84.51</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_180.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A dc series motor of total resistance 0.5 Ω runs at a speed of 800 rpm while taking 60 A from 500 V dc mains. Now another identical series motor is mechanically coupled, but connected in series with the first motor. If the set runs at 400 rpm with load torque equal to 2.5 times the<br>original torque, the current drawn (in amperes) from 500 V dc source is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>42.46 A</p></span>`,
+        `<span style="display: inline;"><p>84.924 A</p></span>`,
+        `<span style="display: inline;"><p>79.24 A</p></span>`,
+        `<span style="display: inline;"><p>90.24 A</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_181.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A battery with a nominal voltage of 150 V and internal resistance of 0.2 Ω has to be charged at a constant current of 15 A from <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_182.png"/> 230 V, 50 Hz power supply through <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_182.png"/> half-controlled converter.<br>The harmonic distortion in source current is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>48.12%</p></span>`,
+        `<span style="display: inline;"><p>30.15%</p></span>`,
+        `<span style="display: inline;"><p>31.28%</p></span>`,
+        `<span style="display: inline;"><p>35.11%</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_183.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_184.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single-phase auto sequential commutated inverter (1-f ASCI) shown in figure is operated by alternating turning on thyristor pair (<em>T</em><sub>1</sub>, <em>T</em><sub>2</sub>) and (<em>T</em><sub>3</sub>, <em>T</em><sub>4</sub>). If the load is purely resistive value of <em>R<sub>C</sub></em> = 20 Ω and commutating <em>C</em> = 0.2 mF. The theoretical maximum output frequency obtainable will be (Take circuit current is 10 A)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_185.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>62.5 kHz</p></span>`,
+        `<span style="display: inline;"><p>125 kHz</p></span>`,
+        `<span style="display: inline;"><p>250 kHz</p></span>`,
+        `<span style="display: inline;"><p>50 kHz</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_186.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the circuit with an ideal op-amp shown in the figure:</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_187.png"/></div> <div>When diode is in forward bias with <em>V</em><sub>γ</sub> = 0.6 V and RF = 10 Ω, then <em>I<sub>L</sub></em> will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.34 Amp</p></span>`,
+        `<span style="display: inline;"><p>0.16 Amp</p></span>`,
+        `<span style="display: inline;"><p>0 Amp</p></span>`,
+        `<span style="display: inline;"><p>0.18 Amp</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_188.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For the depletion load device as shown in figure below:</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_189.png"/></div> <div>If the MOSFET parameters are given as <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_190.png"/> then the value of <em>V<sub>DS</sub></em> will be ________ V. (correct upto two decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.85,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.85 (2.80 - 2.90)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_191.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a current free region with relative permeability of 5, the magnetic scalar potential is given by <em>V<sub>m</sub></em> = <em>x</em><sup>3</sup><em>y</em><sup>2</sup> + 2<em>xy</em><sup>2</sup> + z. The magnitude of magnetic flux density at (2, 1, –1) is _______ μT. (Rounded off to 2 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 174.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>174.60 (174.25 - 174.85)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_192.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A 2500, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_193.png"/> , Y-connected motor has a synchronous reactance of 5 Ω/ph. The motor input is 1000 kW at rated voltage and excitation emf of 3600 V (line), then which of the following statement(s) is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The magnitude of line current of motor is 237.84 A.</p></span>`,
+        `<span style="display: inline;"><p>The power factor of motor is 0.96 lagging.</p></span>`,
+        `<span style="display: inline;"><p>The power factor of motor is 0.97 leading.</p></span>`,
+        `<span style="display: inline;"><p>Efficiency of motor is 92%.</p></span>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_194.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_195.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 400 km long transmission line operating at <em>V</em><sub><em>S</em> </sub>= 1 p.u. at 50 Hz. The value of <em>V<sub>R</sub></em> at no load is ______ p.u. (Answer upto three decimals)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.175,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.175 (1.17 - 1.18)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_196.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_197.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>If αx + βy + 9 ln |2<em>x</em> + 3y – 8λ| = <em>x</em> + c is the solution of (2<em>x</em> + 3y – 2)<em>dx</em> + (4<em>x</em> + 6y – 7)<em>dy</em> = 0, then α + β + γ =</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 18,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>18</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_198.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_199.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let a die rolled till 2 is obtained. The probability that 2 obtained on even numbered toss is equal to</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_200.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_201.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_202.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_2/img_203.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_204.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <img align="absmiddle" alt="" src="images/ee_2026_advance_test_2/img_205.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>-1</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_2/img_206.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_2/img_207.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Advance Level Test - 3",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Count the number of squares in the following figure:</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_1.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>18</p></span>`,
+        `<span style="display: inline;"><p>14</p></span>`,
+        `<span style="display: inline;"><p>10</p></span>`,
+        `<span style="display: inline;"><p>9</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_2.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Find the odd one out from the given sequence:<br>1, 5, 14, 30, 50, 55, 91</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>5</p></span>`,
+        `<span style="display: inline;"><p>50</p></span>`,
+        `<span style="display: inline;"><p>55</p></span>`,
+        `<span style="display: inline;"><p>91</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_3.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A man standing on the bank of a river observes that the angle subtended by a tree on the opposite bank is 60°. When he retries 36 m away from the bank, he find the angle to be 30°, the breadth of the river is ____ m.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 18,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>18 (18 - 18)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_4.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In a race of 200 m, <em>A</em> can beat <em>B</em> by 31 m and <em>C</em> by 18 m. In a race of 350 m, <em>C</em> will beat B by</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>22.75 m</p></span>`,
+        `<span style="display: inline;"><p>25 m</p></span>`,
+        `<span style="display: inline;"><p>19.5 m</p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_5.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_6.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Astronomer: Most stars are born in groups of thousands, each star in a group forming from the same parent cloud of gas. Each cloud has a unique homogeneous chemical composition. Therefore whenever two stars have the same chemical composition as each other, they must have originated from the same cloud of gas.<br>Which of the following, if true, would most strengthen the astronomer’s argument?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>In some groups of stars, not every star originated from the same parent cloud of gas.</p></span>`,
+        `<span style="display: inline;"><p>Clouds of gas of similar or identical chemical composition may be remote from each other.</p></span>`,
+        `<span style="display: inline;"><p>Whenever a star forms, it inherits the chemical composition of its parent cloud of gas.</p></span>`,
+        `<span style="display: inline;"><p>Many stars in vastly different parts of the universe are quite similar in their chemical compositions.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>It is given that each cloud has a unique homogeneous chemical composition and the stars originated from the same cloud of gas have the same chemical composition. Thus, it can be concluded that whenever a star forms, it inherits the chemical composition of its parent cloud of gas. Hence, option (c) is correct.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>People tend to estimate the likelihood of an event’s occurrence according to its salience; that is, according to how strongly and how often it comes to their attention. By placement and headlines, newspapers emphasize stories about local crime over stories about crime elsewhere and about many other major events.<br>It can be concluded on the basis of the statements above that, if they are true, which of the following is most probably also true?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The language used in newspaper headlines about local crime is inflammatory and fails to respect the rights of suspects.</p></span>`,
+        `<span style="display: inline;"><p>The press is the news medium that focuses people attention most strongly on local crimes.</p></span>`,
+        `<span style="display: inline;"><p>Readers of local news in newspapers tend to overestimate the amount of crime in their own localities relative to the amount of crime in other places.</p></span>`,
+        `<span style="display: inline;"><p>None of the events concerning other people that are reported in newspapers is so salient in people’s minds as their own personal experiences.</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)<br>We know that newspapers’ coverage of local crimes is stronger than that of non-local crimes.<br>Nothing is said about frequency of coverage so, we can not assume anything about it. However, all else being equal, we can assume that people tend to think the local crimes outnumber non-local crimes.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The value of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_7.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>7</p></span>`,
+        `<span style="display: inline;"><p>8</p></span>`,
+        `<span style="display: inline;"><p>33</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_8.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The difference between the compound interest and the simple interest earned on a sum of money at the end of 4 years is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_9.png"/> To find out the sum, which of the following information given in the statements <em>P</em> and <em>Q</em> is/are necessary?<br>P : Amount of simple interest accrued after 4 years.<br>Q : Rate of interest per annum.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Only P is necessary</p></span>`,
+        `<span style="display: inline;"><p>Only Q is necessary</p></span>`,
+        `<span style="display: inline;"><p>Either P or Q is necessary</p></span>`,
+        `<span style="display: inline;"><p>Neither P nor Q is necessary</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>To find the sum, difference between C.I. and S.I., the time and the rate of interest are needed.<br>∴ Only Q is necessary.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A boat takes 19 hours for travelling downstream from point A to point B and coming back to a point C midway between A and B. If the velocity of the stream is 4 kmph and the speed of the boat in still water is 14 kmph, what is the distance between A and B?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>160 km</p></span>`,
+        `<span style="display: inline;"><p>180 km</p></span>`,
+        `<span style="display: inline;"><p>200 km</p></span>`,
+        `<span style="display: inline;"><p>220 km</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_10.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Given below are 4 pairs of words. In three of the pairs, the words are having a meaning similar to each other whereas in one of the pairs, it is the opposite. Identify the option where the words do not have similar meaning.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>CONTRAPTION - SIMPLE</p></span>`,
+        `<span style="display: inline;"><p>JOCUND - MERRY</p></span>`,
+        `<span style="display: inline;"><p>INSCRUTABLE - ENIGMATIC</p></span>`,
+        `<span style="display: inline;"><p>LOUCHE - INDECENT</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br>Contraption means a complex arrangement.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit of figure, the maximum value of <em>V</em><sub>2</sub> will be</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_11.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0 V</p></span>`,
+        `<span style="display: inline;"><p>1 V</p></span>`,
+        `<span style="display: inline;"><p>3.78 V</p></span>`,
+        `<span style="display: inline;"><p>6 V</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_3/img_12.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A unity feedback system has the open-loop transfer function, <em>G</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_13.png"/> Using the Routh-Hurwitz stability criterion, the value of gain K at which the closed-loop system just reaches the verge of instability and exhibits sustained oscillations and the corresponding frequency of oscillation ω<sub>0</sub> (in rad/sec) are respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_14.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_15.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_16.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_17.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_18.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The signal <em>x</em>(<em>t</em>) is shown in figure below:</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_19.png"/></div> <div>If the signal x(<em>t</em>) has Laplace transform <em>X</em>(<em>s</em>), then the inverse Laplace transform of <em>X</em><sup>2</sup>(s) will be</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_20.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_21.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_22.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_23.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_24.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In a power circuit of 3 kV, four thyristors each of rating 800 V are connected in series. What is the percentage series derating factor?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>50</p></span>`,
+        `<span style="display: inline;"><p>25</p></span>`,
+        `<span style="display: inline;"><p>12.5</p></span>`,
+        `<span style="display: inline;"><p>6.25</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_3/img_25.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single phase transmission line of 30 km long consisting of two parallel wire each 10 mm in diameter and 2 m apart. The height of conductors above ground is 10 m. The capacitance of the line is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>4.64 pF/m</p></span>`,
+        `<span style="display: inline;"><p>4.32 pF/m</p></span>`,
+        `<span style="display: inline;"><p>3.85 pF/m</p></span>`,
+        `<span style="display: inline;"><p>5.23 pF/m</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_26.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A unity feedback control system has an open-loop transfer function of <em>G</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_27.png"/> The root locus plot is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_28.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_29.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_30.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_31.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_32.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_33.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 4-pole, 50 Hz alternator has double layer winding with 10 turns per coil and number of slots are 60. If each coil is short pitched by an angle to 36° electrical. The fundamental flux per pole is 0.015 Wb. The line to line induced emf for a <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_34.png"/> star connection is approximately</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1050.2 V</p></span>`,
+        `<span style="display: inline;"><p>606.33 V</p></span>`,
+        `<span style="display: inline;"><p>350.14 V</p></span>`,
+        `<span style="display: inline;"><p>1818.9 V</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_35.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_36.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A separately excited dc motor is fed from 220 V source through a chopper operating at 400 Hz.<br>The load torque is 30 Nm of a speed of 1000 rpm. The motor has <em>R<sub>a</sub></em> = 0, <em>L<sub>a</sub></em> = 20 mH and motor constant <em>K<sub>m</sub></em> = 1.5 V-sec/rad. Neglecting all motor and chopper losses. The armature current expression during turn on period is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>20 + 3146<em>t</em> , For 0 ≤ <em>t</em> ≤ <em>T</em><sub>on</sub></p></span>`,
+        `<span style="display: inline;"><p>22.808 – 7854<em>t</em> , For 0 ≤ <em>t</em> ≤ <em>T</em><sub>on</sub></p></span>`,
+        `<span style="display: inline;"><p>17.192 + 3146<em>t</em> , for 0 ≤ t ≤ <em>T</em><sub>on</sub></p></span>`,
+        `<span style="display: inline;"><p>10 – 7854<em>t</em> , for 0 ≤ <em>t</em> ≤ <em>T</em><sub>on</sub></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_37.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_38.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the given rectifier, the delay angle of the thyristor <em>T</em><sub>1</sub> measured from the positive going zero crossing of <em>V<sub>s</sub></em> is 45°. If the input voltage <em>V<sub>s</sub></em> is 200 sin(100πt) V, the power dissipated in 10 Ω (in watts) under steady-state is _______ . (Rounded off to 2 decimal places)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_39.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1909,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1909.00 (1900.00 - 1920.00)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_40.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The inductance of a moving iron ammeter with a full scale deflection of 90° at 1.5 A, is given by the expression <em>L</em> = (200 + 40θ – 4θ2 – θ3) μH, where θ is the deflection in radian from zero position. For the current of 1.0 A in meter, the angular deflection of meter is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>46.30°</p></span>`,
+        `<span style="display: inline;"><p>57.69°</p></span>`,
+        `<span style="display: inline;"><p>67.39°</p></span>`,
+        `<span style="display: inline;"><p>50.20°</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_41.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Given set S = {0, 1, 2, 3, _ _ _ _ _, 10}. If a random ordered pair (<em>x</em>, <em>y</em>) of elements of S is chosen, then the probability that |<em>x</em> – y| &gt; 5 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_42.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_43.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_44.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_45.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_46.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_47.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <em>A</em> is a square matrix of order 4 such that <em>A</em><sup>4</sup> = A, then the eigen values of ‘<em>A</em>’ are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_48.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_49.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_50.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_51.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_52.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the network shown in figure:</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_53.png"/></div> <div>If <em>V<sub>L</sub></em> will maintaining at 8 V and not exceed the maximum power rating of the Zener diode, then the range of <em>V<sub>i</sub></em> is _______ .</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>11.3 V to 15.86 V</p></span>`,
+        `<span style="display: inline;"><p>15 V to 18 V</p></span>`,
+        `<span style="display: inline;"><p>18.20 V to 24.30 V</p></span>`,
+        `<span style="display: inline;"><p>8.20 to 16.30 V</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_54.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_55.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit shown in the given figure, current <em>I</em> is ________ .</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_56.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.4</p> <div> <div><img alt="" src="images/ee_2026_advance_test_3/img_57.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit shown in figure, for the balanced bridge, the value of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_58.png"/> is __________ mA.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_59.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_60.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider a straight conductor of length 2 m carrying a current of 1 A in the <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_61.png"/> direction and the magnetic field <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_62.png"/> Tesla. The force on the conductor is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_63.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_64.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_65.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_66.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_67.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_68.png"/> full-bridge fully controlled converter feeds a constant load current of 20 A. The rectifier is fed from an ideal 400 V, 50 Hz sinusoidal source through cables with negligible internal resistance with <em>L<sub>s</sub></em> = 3.2 mH. If the thyristors are triggered at an angle of 36.86° then the fundamental power factor (displacement factor) at input AC mains is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.765</p></span>`,
+        `<span style="display: inline;"><p>0.789</p></span>`,
+        `<span style="display: inline;"><p>0.821</p></span>`,
+        `<span style="display: inline;"><p>0.798</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_69.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The time signal corresponding to <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_70.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_71.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_72.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_73.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_74.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_75.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A unity feedback system has a open-loop transfer function of <em>G</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_76.png"/> the steady state error for unit ramp input is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.01</p></span>`,
+        `<span style="display: inline;"><p>0.02</p></span>`,
+        `<span style="display: inline;"><p>100</p></span>`,
+        `<span style="display: inline;"><p>10</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_77.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The figure shown the per-phase open-circuit characteristics (measured in V) and short-circuit characteristics (measured in A) of a 25 kVA, 1500 V, 50 Hz, 4-pole, 3-phase delta connected alternator. Reading taken are marked in (x , y) coordinates in the figure. The ratio of saturated to<br>unsaturated synchronous impedance (Z<sub>(sat)</sub>/Z<sub>(unsat)</sub>) of the alternator is approximately</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_78.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>20</p></span>`,
+        `<span style="display: inline;"><p>0.5</p></span>`,
+        `<span style="display: inline;"><p>10</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_79.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_80.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The result of the arithmetic operation (88)<sub>11</sub> – (8F)<sub>16</sub> in 2’s complement form is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1010001</p></span>`,
+        `<span style="display: inline;"><p>11100011</p></span>`,
+        `<span style="display: inline;"><p>11011011</p></span>`,
+        `<span style="display: inline;"><p>0101100</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_81.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following diagram :</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_82.png"/></div> <div>Which of the following statements is correct ?<br>The electric field <em>E</em> at a point <em>P</em> due to the presence of dipole as shown in the above diagram<br>(considering distance <em>r</em> &gt;&gt; distance <em>d</em>) is proportional to</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1/<em>r</em></p></span>`,
+        `<span style="display: inline;"><p>1/<em>r</em><sup>2</sup></p></span>`,
+        `<span style="display: inline;"><p>1/<em>r</em><sup>3</sup></p></span>`,
+        `<span style="display: inline;"><p>1/<em>r</em><sup>4</sup></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_83.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Pick up the <strong>incorrect </strong>statements of the following:<br>P. The transient-free condition is possible both a.c. and d.c. excitations.<br>Q. Resonant frequency is unique for a given circuit.<br>R. For the RC - impedance function, the far most root is the pole.<br>S. The network with only resistances will act as an attenuator.<br>T. The current magnification occurs in the series RLC circuit at resonance.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>P, Q and R</p></span>`,
+        `<span style="display: inline;"><p>Q, R and S</p></span>`,
+        `<span style="display: inline;"><p>R, S and T</p></span>`,
+        `<span style="display: inline;"><p>P, R and T</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_84.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For open loop transfer function, <em>G</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_85.png"/> the gain margin is ______ .</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3.5 dB</p></span>`,
+        `<span style="display: inline;"><p>7 dB</p></span>`,
+        `<span style="display: inline;"><p>1.5 dB</p></span>`,
+        `<span style="display: inline;"><p>5.1 dB</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_86.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_87.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The equation <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_88.png"/> is hyperbolic for</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_89.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_90.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_91.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_92.png"/></p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_93.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>For the two-port network shown in figure,</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_94.png"/></div> <div>Transmission parameters of the network is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_95.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_96.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_97.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_98.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_99.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Identify the type of asynchronous counter and the MOD number. Assume initial state Q<sub>2</sub>Q<sub>1</sub>Q<sub>0</sub> to be 000.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_100.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Up-counter, MOD-3</p></span>`,
+        `<span style="display: inline;"><p>Down-counter, MOD-5</p></span>`,
+        `<span style="display: inline;"><p>Up-counter, MOD-5</p></span>`,
+        `<span style="display: inline;"><p>Down-counter, MOD-3</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_101.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In the circuit given below, initial state <em>Q</em><sub>0</sub><em>Q</em><sub>1</sub><em>Q</em><sub>2</sub> = 000. The time taken by state <em>Q</em><sub>2</sub><em>Q</em><sub>1</sub><em>Q</em><sub>0</sub> to become 110 is ______ μsec.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_102.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.4,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.4 (0.38 - 0.42)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_103.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_104.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The speed of a 500 V shunt motor, when running under no-load is 1000 rpm. The armature resistance including brushes is 2 Ω, and armature current is 15 A. To reduce the speed, the armature voltage <em>V</em> is tapped off a 50 Ω resistor across the supply mains. The value of resistance must be tapped to give a speed of 500 rpm is ______ Ω.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_105.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 40,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>40 (38 - 42)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_106.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A lossless power system has two generators <em>G</em><sub>1</sub> and <em>G</em><sub>2</sub> ; and total load to be served is 200 MW.<br>The respective cost curve <em>C</em><sub>1</sub> and <em>C</em><sub>2</sub> are defined as <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_107.png"/> Assume the minimum loading on any generator to be 30 MW, the most economical loads <em>P</em><sub><em>G</em>1</sub> for <em>P</em><sub><em>G</em>2</sub> the two generators are, respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>170 MW and 100 MW</p></span>`,
+        `<span style="display: inline;"><p>200 MW and 100 MW</p></span>`,
+        `<span style="display: inline;"><p>170 MW and 30 MW</p></span>`,
+        `<span style="display: inline;"><p>200 MW and 30 MW</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_108.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A synchronous generator is connected to a bus bar through a double transmission line. Initially the alternator is delivering 1 pu power to the infinite bus. If the fault occurs on one of the bus bars in parallel line, then the critical clearing angle is ______, line is reclosed after fault.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_109.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>87.56</p></span>`,
+        `<span style="display: inline;"><p>92.26</p></span>`,
+        `<span style="display: inline;"><p>90.50</p></span>`,
+        `<span style="display: inline;"><p>85</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_110.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A continuous time signal <em>x</em>(<em>t</em>) has Fourier transform <em>X</em>(<em>j</em>ω) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_111.png"/> Fourier transform of the signal <em>y</em>(<em>t</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_112.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_113.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_114.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_115.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_116.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_117.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A boost converter feeds an average current of 10 A to a load. The value of duty cycle and chopping frequency are 0.45 and 80 kHz respectively. If the value of filter inductance and capacitance are 10 mH and 120 μF.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The average inductor current will be 17.17 A.</p></span>`,
+        `<span style="display: inline;"><p>The average supply current will be 18.18 A.</p></span>`,
+        `<span style="display: inline;"><p>The peak to peak voltage across capacitor will be 0.362 V.</p></span>`,
+        `<span style="display: inline;"><p>Average value of switch current will be 8.181 Amp.</p></span>`,
+      ],
+      answer: ["B", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b, d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_118.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_119.png"/> digital voltmeter is used for voltage measurements. How would 0.6973 V to be displayed on 10 V range?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.6</p></span>`,
+        `<span style="display: inline;"><p>0.6973</p></span>`,
+        `<span style="display: inline;"><p>0.697</p></span>`,
+        `<span style="display: inline;"><p>0.69</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_120.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_121.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single-phase inverter is fed from a 120 V DC source produces a symmetric quasi-square waveform as shown. The angle ‘q’ is adjusted to entirely eliminate the 5<sup>th</sup> harmonic component from the output voltage. Under this condition, the ratio 3rd harmonic to 7<sup>th</sup> harmonic component is ________<br>. (Upto 2 decimal places)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_122.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: -2.33,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>-2.33</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_123.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Assume all the transistors in the circuit given below to be identical with β = 100 and <em>V<sub>BE</sub></em> = 0.7 V.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_124.png"/></div> <div>The value of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_125.png"/> is equal to</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1.96 mA</p></span>`,
+        `<span style="display: inline;"><p>2.96 mA</p></span>`,
+        `<span style="display: inline;"><p>3.96 mA</p></span>`,
+        `<span style="display: inline;"><p>4.96 mA</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_126.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_127.png"/> over the area between <em>y</em> = x<sup>2</sup> and <em>y</em> = <em>x</em> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_128.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_129.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_130.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_131.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_132.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_133.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_134.png"/> then the value of curl <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_135.png"/> at (1, –1, 2) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_136.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_137.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_138.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_139.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_140.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A Two Disc String insulator used for a 22 KV, 50 Hz,<img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_141.png"/> system along with guard wire placement is as shown below. Self Capacitance of each disc is “C”, Mutual Capacitance from metal Link to tower <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_142.png"/> is and static capacitance from metal link to guard wire is <em> </em><sub>2</sub> = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_143.png"/> The string efficiency approximately is ________ %.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_144.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 98.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>98.60 (98.50 - 98.70)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_145.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The graph below shows the position of closed loop poles of two unity negative feedback systems <em>S</em><sub>1</sub> and S<sub>2</sub>. Which of the following statements regarding <em>S</em><sub>1</sub> and <em>S</em><sub>2</sub> are true?</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_146.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_147.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_149.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_150.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_151.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The DTFT of sequence x[n] = {3, –2, 1, 4} is <em>X</em>(Ω). The inverse DTFT of <em>X</em>(Ω-π) is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>{4, 1, –2, 3}</p></span>`,
+        `<span style="display: inline;"><p>{3, 4, –2, 1}</p></span>`,
+        `<span style="display: inline;"><p>{3, 2, 1, –4}</p></span>`,
+        `<span style="display: inline;"><p>{–3, 2, –1, 4}</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_152.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The convolution y[n] = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_153.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_154.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_155.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_156.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_3/img_157.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_158.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_159.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For the circuit shown in figure, the switch <em>S</em><sub>1</sub> is closed at t = 0 and the switch <em>S</em><sub>2</sub> is closed at <em>t</em> = 3 sec. Determine <em>V<sub>c</sub></em>(<em>t</em>) at <em>t</em> = 4 sec</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_160.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.64,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.64 (1.60 - 1.68)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_161.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 500 V, 1500 rpm, 75 A separately-excited dc motor is fed through a three-phase semiconverter from three-phase 440 V supply. Motor armature resistance is 0.5 Ω and armature current is assumed constant. If the speed of motor is 1200 rpm at the firing angle 60° of then the input supply power factor at this speed is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.815</p></span>`,
+        `<span style="display: inline;"><p>0.751</p></span>`,
+        `<span style="display: inline;"><p>0.821</p></span>`,
+        `<span style="display: inline;"><p>0.716</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_3/img_162.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>An open circuit test is performed on 50 Hz transformer, using variable frequency source and keeping <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_163.png"/> ratio constant, to separate its eddy current and hysteresis losses. The variation of core loss as function of frequency is shown in the figure.</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_164.png"/></div> <div>The hysteresis and eddy current losses of the transformer at 50 Hz respectively are</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>20 W and 30 W</p></span>`,
+        `<span style="display: inline;"><p>15 W and 25 W</p></span>`,
+        `<span style="display: inline;"><p>25 W and 15 W</p></span>`,
+        `<span style="display: inline;"><p>30 W and 20 W</p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_165.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_166.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A step-down d.c. chopper has load resistance of 20 ohms. Chopper input voltage is 200 V dc. The chopper switch has a voltage drop of 1.5 V when conducting. If the chopper frequency is 2 kHz. Find the input and output power of the chopper at a duty cycle of 0.5. The chopper efficiency is ________ (in %).</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 99.24,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>99.24 (99.00 - 99.50)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_167.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_168.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_169.png"/> 6 pulse full controlled converter is connected to a <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_170.png"/> ac supply of 400 V and 50 Hz and operating at a firing angle <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_171.png"/> The load current is maintained constant at 10 A and average load voltage is 360 volts. The overlap angle due to source inductance is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>7.46°</p></span>`,
+        `<span style="display: inline;"><p>12.46°</p></span>`,
+        `<span style="display: inline;"><p>6.26°</p></span>`,
+        `<span style="display: inline;"><p>1.46°</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_172.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the voltage reference circuit shown in the figure below:</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_173.png"/></div> <div>The zener diode has dynamic small signal resistance of 200 Ω with breakdown voltage, <em>V<sub>z</sub></em> = 5.7 V.<br>The value of small-signal output resistance, <em>R</em><sub>out</sub> is equal to (Assume <em>V<sub>T</sub></em> = 25 mV, <em>r</em><sub>0</sub> = ∞)</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6 Ω</p></span>`,
+        `<span style="display: inline;"><p>6 kΩ</p></span>`,
+        `<span style="display: inline;"><p>3 Ω</p></span>`,
+        `<span style="display: inline;"><p>3 kΩ</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_174.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the op-amp shown below,</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_175.png"/></div> <div>The maximum phase shift of the output <em>V</em><sub>out</sub> with reference to input <em>V<sub>i</sub></em> is</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>–45°</p></span>`,
+        `<span style="display: inline;"><p>–90°</p></span>`,
+        `<span style="display: inline;"><p>–180°</p></span>`,
+        `<span style="display: inline;"><p>0°</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_176.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A coil resonantes at 2 MHz when an 18 pF capacitor is shunted across it. When the shunting capacitor is 81 PF, the resonating frequency becomes 1 MHz. The distributed capacitor of the coil and the self resonating frequency are respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>C<sub>d</sub></em> = 3 PF and self-resonating frequency <em>f</em><sub>0</sub> = 5.31 MHz.</p></span>`,
+        `<span style="display: inline;"><p><em>C<sub>d</sub></em> = 2 PF and self-resonating frequency <em>f</em><sub>0</sub> = 2.5 MHz.</p></span>`,
+        `<span style="display: inline;"><p><em>C<sub>d</sub></em> = 4 PF and self-resonating frequency <em>f</em><sub>0</sub> = 10.62 MHz.</p></span>`,
+        `<span style="display: inline;"><p><em>C<sub>d</sub></em> = 6 PF and self-resonating frequency <em>f</em><sub>0</sub> = 6.31 MHz.</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_177.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_178.png"/>star-connected, 50 Hz synchronous generator has direct-axis synchronous reactance of 0.6 p.u. and quadrature axis synchronous reactance of 0.45 p.u. The generator delivers rated kVA at rated voltage and 0.8 p.f. lag. Which of the following is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The voltage regulation is 44.8%.</p></span>`,
+        `<span style="display: inline;"><p>Generated EMF is 1.32 p.u.</p></span>`,
+        `<span style="display: inline;"><p>The quadrature axis reactance primarily affects the armature reaction at lagging power factor.</p></span>`,
+        `<span style="display: inline;"><p>Load angle is 15.3°.</p></span>`,
+      ],
+      answer: ["A", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_179.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_180.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Consider the over current relay for the line protection and loads connected at the buses as shown below,</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_181.png"/></div> <div>The maximum and minimum value of fault current at bus-B are 2500 A and 700 A respectively.<br>Assuming the time multiplier setting and plug setting of relay <em>R<sub>B</sub></em> to be 0.1 and 5 A respectively, then which of the given statement is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The PSM for maximum fault current is 25.</p></span>`,
+        `<span style="display: inline;"><p>The operating time for relay <em>B</em> for minimum fault current is 0.15 sec.</p></span>`,
+        `<span style="display: inline;"><p>The PSM for minimum fault current is 7.</p></span>`,
+        `<span style="display: inline;"><p>The operating time of relay <em>B</em> is maximum fault current is 0.2255 sec.</p></span>`,
+      ],
+      answer: ["A", "C", "D"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c, d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_182.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>If a random variable x satisfies the poisson’s distribution with a mean value of 2, then the probability that <em>x</em> ≥ 2 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2<em>e</em><sup>–2</sup></p></span>`,
+        `<span style="display: inline;"><p>1 – 2<em>e</em><sup>–2</sup></p></span>`,
+        `<span style="display: inline;"><p>3<em>e</em><sup>–2</sup></p></span>`,
+        `<span style="display: inline;"><p>1 – 3 <em>e</em><sup>–2</sup></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_183.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A player tosses a fair coin three times. He wins <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_184.png"/> if three heads occur, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_185.png"/> if two heads occur and <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_186.png"/> if one head occurs. On the other hand he losses <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_187.png"/> if no head occurs. The expected value of the game is _______.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 150,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>150 (149 - 151)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_188.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_3/img_189.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The particular integral of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_190.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_191.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_192.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_193.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_3/img_194.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_3/img_195.png"/></div></div>`
+    },
+  ]
+});
+
+registerTest({
+  series: "ee-gate-pyq",
+  name: "FST - Advance Level Test - 4",
+  date: "November 10, 2026",
+  questions: [
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the sentence to find out whether there is any grammatical error in it. The error, if any will be in one of the sentence. If there is no error, then answer will be (d).</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_1.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>a</p></span>`,
+        `<span style="display: inline;"><p>b</p></span>`,
+        `<span style="display: inline;"><p>c</p></span>`,
+        `<span style="display: inline;"><p>d</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)<br>The alarming report of an earthquake frightened everyone in that disaster prone village.</p></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Select the word that is <strong>NEAREST</strong> in meaning to the bold word in capital letters <strong>VENERATE</strong></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Accuse</p></span>`,
+        `<span style="display: inline;"><p>Reverence</p></span>`,
+        `<span style="display: inline;"><p>Criticize</p></span>`,
+        `<span style="display: inline;"><p>Abuse</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)<br>Venerate means to regard with great respect which is similar in meaning to Reverence meaning<br>deep respect for someone or something.</p></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>There are multiple routes to reach from node A to node B as shown in the network.</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_2.png"/></div> <div>The cost of travel on an edge between two nodes is given in rupees. Nodes 1, 2, 3, 4, 5 and 6 are toll booths. The toll price at toll booths marked 1 and 5 is Rs. 40 and is Rs. 20 for the other toll booths. Which is the cheapest route from node A to node B?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>A - 1 - 3 - B</p></span>`,
+        `<span style="display: inline;"><p>A - 2 - B</p></span>`,
+        `<span style="display: inline;"><p>A - 6 - 2 - B</p></span>`,
+        `<span style="display: inline;"><p>A - 6 - 5 - B</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_3.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Read the following information carefully and answer the question below it:<br>Rahul’s roll number in IES exam is a number consisting of three non-zero distinct digits, such that the sum of the digits at hundred’s and unit’s place is equal to that of half of the digit at ten’s place. Also the sum of all the possible three digit numbers obtained using these three digits without repetition is 2664. The digit in the tens place is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6</p></span>`,
+        `<span style="display: inline;"><p>8</p></span>`,
+        `<span style="display: inline;"><p>9</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_4.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A rectangular water tank is 80 m × 40 m. Water flow into it through a pipe of 40 cm<sup>2</sup> at the opening at a speed of 10 km/h. By how much, the water level will rise in the tank in half an hour?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_5.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_6.png"/></p></span>`,
+        `<span style="display: inline;"><p><img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_7.png"/></p></span>`,
+        `<span style="display: inline;"><p>None of these</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_8.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The question given below is followed by three statements. You have to study the question and all the three statements given to decide whether any information provided in the statement(s) is/ are redundant and can be dispensed with while answering the given question.<br>What is the cost of painting the two adjacent walls of a hall at Rs. 5 per m<sup>2</sup>, which has no windows or doors?<br>I. The area of the hall is 24 m<sup>2</sup>.<br>II. The breadth, length and height of the hall are in the ratio of 4 : 6 : 5 respectively.<br>III. Area of one wall is 30 m<sup>2</sup>.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>I only</p></span>`,
+        `<span style="display: inline;"><p>II only</p></span>`,
+        `<span style="display: inline;"><p>III only</p></span>`,
+        `<span style="display: inline;"><p>Either I or III</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_9.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The average income of <em>A</em>, <em>B</em> and <em>C</em> is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_10.png"/> per month and the average income of <em>B</em>, <em>C</em> and <em>D</em> is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_11.png"/> per month. If the average salary of <em>D</em> is twice that of <em>A</em>, then the average salary of <em>B</em> and<br><em>C</em> is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_12.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>8000</p></span>`,
+        `<span style="display: inline;"><p>18000</p></span>`,
+        `<span style="display: inline;"><p>13500</p></span>`,
+        `<span style="display: inline;"><p>9000</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_13.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>There are total 100 coins consisting of 20 paise, 50 paise and <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_14.png"/> in the ratio of 7 : 8 : 5. What is the number of coins of 50 paise if the difference between the amount yielded by 20 paise and <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_15.png"/> coin is <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_16.png"/></p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>32</p></span>`,
+        `<span style="display: inline;"><p>40</p></span>`,
+        `<span style="display: inline;"><p>26</p></span>`,
+        `<span style="display: inline;"><p>56</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_17.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The average weight of a class of students is 67.5 kg. The weight of the class teacher is 25% more than the average weight of the class. The average weight of the class is less than the class teacher by <em>x</em>%. The value of <em>x</em> is:</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>33.33%</p></span>`,
+        `<span style="display: inline;"><p>25%</p></span>`,
+        `<span style="display: inline;"><p>20%</p></span>`,
+        `<span style="display: inline;"><p>can’t be determined</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_18.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the figure, if it is given that <em>O</em> is the centre of the circle and <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_19.png"/> is_____</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_20.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>105°</p></span>`,
+        `<span style="display: inline;"><p>130°</p></span>`,
+        `<span style="display: inline;"><p>150°</p></span>`,
+        `<span style="display: inline;"><p>75°</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_21.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_22.png"/></div> <div>the value of the current <em>I</em> is _______ mA.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 21.28,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>21.28 (21.00 - 21.50)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_23.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The transfer function of a control system is given by G(s) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_24.png"/> The value of percentage output of the system in 5 T seconds when system is critically damped and provided with unit step input will be</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>96%</p></span>`,
+        `<span style="display: inline;"><p>90%</p></span>`,
+        `<span style="display: inline;"><p>85%</p></span>`,
+        `<span style="display: inline;"><p>75%</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_25.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The power in the signal <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_26.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>40</p></span>`,
+        `<span style="display: inline;"><p>41</p></span>`,
+        `<span style="display: inline;"><p>42</p></span>`,
+        `<span style="display: inline;"><p>82</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_27.png"/><img alt="" src="images/ee_2026_advance_test_4/img_28.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A string of thyristor is connected in series to withstand a dc voltage of <em>V<sub>s</sub></em> = 10 kV. The maximum leakage current and recovery charge difference are 100 mA and 150 μC respectively. Consider a derating factor of 20% and maximum voltage across each SCR is 1000 volts. The transient voltage capacitance is ________ μF.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.60 (0.58 - 0.62)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_29.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A single-core cable 10 km long has an insulation resistance of 0.8 MΩ. The core diameter is 30 mm and the diameter of the cable over the insulation is 75 mm. Calculate the resistivity of the insulating material.</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>54.88 × 10<sup>3</sup> MΩ-m</p></span>`,
+        `<span style="display: inline;"><p>78.47 × 10<sup>3</sup> MΩ-m</p></span>`,
+        `<span style="display: inline;"><p>94.08 × 10<sup>3</sup> MΩ-m</p></span>`,
+        `<span style="display: inline;"><p>19.56 × 10<sup>3</sup> MΩ-m</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_30.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_31.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Bode magnitude asymptotic plot of a certain system is sketched in figure. The asymtote of –20 dB/decade has a value of 0 dB at ω<sub>2</sub> = 120 the value of ω<sub>1</sub> is _______ .</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_32.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0.21</p></span>`,
+        `<span style="display: inline;"><p>0.42</p></span>`,
+        `<span style="display: inline;"><p>0.84</p></span>`,
+        `<span style="display: inline;"><p>0.11</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_33.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 10 kV, 30 Hz, single phase transfer has copper, hysteresis and eddy current losses of 1.2, 0.7, 0.5 percent of full load output. If operated on 20 kV, 60 Hz system, the percentage copper, hysteresis and eddy current losses, with same current in the windings are</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1.7, 0.6, 0.5</p></span>`,
+        `<span style="display: inline;"><p>1.4, 1.2, 2.0</p></span>`,
+        `<span style="display: inline;"><p>0.7, 0.6, 1.0</p></span>`,
+        `<span style="display: inline;"><p>1.4, 0.6, 1.0</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_34.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_35.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a double cage induction motor, the impedance of the inner and outer cages at standstill are (0.1 + <em>j</em>1.5) and (0.3 + <em>j</em>0.4) ohms per phase respectively. At a slip of 0.05, the ratio of the torque : <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_36.png"/></p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1.93,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1.93 (1.88 - 1.98)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_37.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_38.png"/> full bridge inverter has source voltage of 230 V dc, T = 1 μs. The load consist of RLC in series with <em>R</em> = 1.2 Ω, ω<em>L</em> = 8 Ω, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_39.png"/> Power delivered to load due to fundamental component is ________ kW.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 21.09,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>21.09 (20.00 - 22.00)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_40.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Using standard cells of 1.016 V, a simple potentiometer balances at 48.4 cm. If reading is 1.40 V then the percentage error in a voltmeter measuring a voltage which balance at 66 cm, is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>1.08%</p></span>`,
+        `<span style="display: inline;"><p>2.08%</p></span>`,
+        `<span style="display: inline;"><p>3.08%</p></span>`,
+        `<span style="display: inline;"><p>1.78%</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_41.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let the probability density function of a random variable <em>X</em> be given as:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_42.png"/></div> <div>where <em>u</em>(<em>x</em>) is the unit step function. Then the value of b and probability p {<em>x</em> ≤ 0} respectively, are</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_43.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_44.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_45.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_46.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_47.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_48.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <em>u</em>(<em>x</em>, <em>t</em>) satisfy the initial and boundary value problem <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_49.png"/> <em>u</em>(0, <em>t</em>) = <em>u</em>(π, <em>t</em>) = 0, <em>t</em> &gt; 0 and <em>u</em>(<em>x</em>, 0) = sin(<em>x</em>) + 2sin(4<em>x</em>), 0 &lt; <em>x</em> &lt; π, then the value of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_50.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_51.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_52.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_53.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_54.png"/></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_55.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_56.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The reverse saturation currents I<sub>S1</sub> and I<sub>S2</sub> of transistors <em>Q</em><sub>1</sub> and <em>Q</em><sub>2</sub> respectively. Which are shown in the circuit below are <em>I</em><sub><em>S</em>1</sub> = 2<em>I</em><sub><em>S</em>2</sub> = 5 × 10<sup>–16</sup> A.</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_57.png"/></div> <div>If <em>I</em><sub>1</sub> = 1.2 mA, then the value of <em>V<sub>B</sub></em> is ______ mV.<br>(Assume volt equivalent to temperature <em>V<sub>T</sub></em> = 26 × 10<sup>–3</sup> V.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 730.6,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>730.6 (729.0 - 732.0)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_58.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Consider the following circuit,</p> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_59.png"/></div> </div> <div>Which of the following statement is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Thevenin’s equivalent voltage <em>V<sub>ab</sub></em> = –2 V.</p></span>`,
+        `<span style="display: inline;"><p>Norton equivalent current <em>I<sub>sc</sub></em> = –0.05 A.</p></span>`,
+        `<span style="display: inline;"><p>Norton equivalent resistance <em>R</em><sub>th</sub> = 40 Ω.</p></span>`,
+        `<span style="display: inline;"><p>Thevenin equivalent resistance <em>R</em><sub>th</sub> = 20 Ω.</p></span>`,
+      ],
+      answer: ["A", "B", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b, c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_60.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider the following circuit:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_61.png"/></div> <div>The value of capacitance at resonance frequency</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><em>C</em> = 69 μF</p></span>`,
+        `<span style="display: inline;"><p><em>C</em> = 0.0015 μF</p></span>`,
+        `<span style="display: inline;"><p><em>C</em> = 0.37 μF</p></span>`,
+        `<span style="display: inline;"><p><em>C</em> = 0.0030 μF</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_62.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A capacitor is constructed using two concentric conducting spheres with air replaced by a dielectric of relative permittivity ε<em><sub>r</sub></em> = 2.0. The permittivity of free space is ε<sub>0</sub> = 8.854 × 10<sup>–12</sup> F/m. The radii of the inner and outer spheres are a = 8.0 cm and b = 20.0 cm respectively the capacitance is ________ pF. (Answer upto 2 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 29.67,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>29.67 (29.00 - 30.10)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_63.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A single phase, 220 V, 50 Hz full bridge inverter is feeding a RLC load with <em>R</em> = 5 Ω, <em>L</em> = 0.5 H, <em>C</em> = 50 μF. The rms value of fundamental component of current is ________ . (Answer upto 2 decimal places)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 2.12,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>2.12 (2.08 - 2.15)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_64.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider two signal <em>x</em>(<em>t</em>) and <em>h</em>(<em>t</em>) as shown in the figure:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_65.png"/></div> <div>What is the value of convolution <em>y</em>(<em>t</em>) = <em>x</em>(<em>t</em>) ∗ <em>h</em>(<em>t</em>) at <em>t</em> = π?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>0</p></span>`,
+        `<span style="display: inline;"><p>1</p></span>`,
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>-1</p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_66.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>State equation of a control system is given <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_67.png"/> the state-transition matrix is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_68.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_69.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_70.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_71.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_72.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_73.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>For a dc shunt machine, running at 500 rpm, the hysteresis and eddy current losses are 250 W and 150 W respectively. The speed of the machine at which the total core losses are reduced by 30 percent, is ________ rpm. (Answer nearest integer)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 384,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>384 (382 - 385)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_74.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_75.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The logic block shown has an output <em>F</em> given by</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_76.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_77.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_78.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_79.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_80.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_81.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>If <em>D</em> = 50 μC/m<sup>2</sup> and the energy density is 10 J/m<sup>3</sup>, then the relative permittivity of the dielectric material used in a parallel plate capacitor is ________ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 14.13,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>14.13 (14.1 - 14.2)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_82.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>In the circuit shown below, the voltage across the capacitor is given by</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_83.png"/></div> <div>The value of current <em>i</em>(<em>t</em>) is <div><img alt="" src="images/ee_2026_advance_test_4/img_84.png"/></div> </div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_85.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_86.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_87.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_88.png"/></p></span>`,
+      ],
+      answer: "D",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(d)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_89.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>If <em>G</em>(<em>s</em>)<em>H</em>(<em>s</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_90.png"/> then the gain margin for the system is _______ dB.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 21.58,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>21.58 (21.00 - 22.00)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_91.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_92.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A vector field <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_93.png"/> The value of line integral <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_94.png"/> where <em>C</em> is the circular path given by <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> = <em>a</em><sup>2</sup> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_95.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_96.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_97.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_98.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_99.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_100.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The value of capacitance is to be inserted in series in the circuit shown below such that the input current is in phase with the voltage is</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_101.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6.37 mF</p></span>`,
+        `<span style="display: inline;"><p>2.22 μF</p></span>`,
+        `<span style="display: inline;"><p>5.55 mF</p></span>`,
+        `<span style="display: inline;"><p>4.54 μF</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_102.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 4-bit synchronous counter with a series carry uses flip-flops and AND gates. The propagation delay of each flip-flop is 20 nsec and that of each AND gate is 15 nsec. The maximum time interval required between two successive clock pulses for reliable operation of the counter is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>20 nsec</p></span>`,
+        `<span style="display: inline;"><p>35 nsec</p></span>`,
+        `<span style="display: inline;"><p>50 nsec</p></span>`,
+        `<span style="display: inline;"><p>65 nsec</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_103.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Two generators rated 200 MW and 400 MW having governor droop characteristics of 4% and 5% respectively are operating in parallel. If the generators operate on full load at 50 Hz, the frequency at which they would operate with a total load of 400 MW is ________ Hz.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 50.77,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>50.77 (50.50 - 50.85)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_104.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 400 - V, 10 hp (metric), 3-phase, Y-connected synchronous motor having negligible armature resistance and a synchronous reactance of 10 ohms per phase draws minimum armature current. If the efficiency is 85%, then the induced emf (line to line) is _______ V.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 456.2,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>456.2 (450.0 - 460.0)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_105.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A dc two line distributor AB, 600 meters long is fed at 440 V from substation-A and at 430 V from<br>substation-B, the loads are:<br>100 A at C, 150 meters from A<br>200 A at D, 150 meters from C<br>250 A at E, 50 meters from D<br>300 A at F, 100 meters from E<br>If each line conductor has a resistance of 0.01Ω per 100 meters, the currents supplied from substations <em>A</em> and <em>B</em> are respectively</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>437.5 A and 412.5 A</p></span>`,
+        `<span style="display: inline;"><p>437.5 A and 112.5 A</p></span>`,
+        `<span style="display: inline;"><p>412.5 A and 137.5 A</p></span>`,
+        `<span style="display: inline;"><p>437.5 A and 337.5 A</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_106.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>Two conductors of a single phase line each of 2.5 cm diameter are arranged in a vertical plane with one conductor mounted 1.5 m above the other. A second identical line is mounted at the same height as the first and spaced horizontally 0.5 m apart from it. The two upper and lower<br>conductor are connected in parallel. The conductors are 15 m above the ground. Which of the following statement(s) is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>Mutual GMD of the line is 88.9 cm.</p></span>`,
+        `<span style="display: inline;"><p>Self GMD of the line is 12.08 cm.</p></span>`,
+        `<span style="display: inline;"><p>Inductance of the line is 0.348 mH/km.</p></span>`,
+        `<span style="display: inline;"><p>Inductance of the line is 0.946 mH/km.</p></span>`,
+      ],
+      answer: ["A", "B"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_107.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_108.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The Laplace transform of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_109.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_110.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_111.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_112.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_113.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_114.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>For a current commutated chopper, peak commutating current is twice the maximum possible load current. The source voltage is 230 V dc and main SCR turn off is 30 μsec. For a maximum load current of 200 A. Which of the following is/are correct?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>The value of commutating <em>L</em> = 9.96 μH.</p></span>`,
+        `<span style="display: inline;"><p>The value of commutating <em>L</em> = 16.01 μH.</p></span>`,
+        `<span style="display: inline;"><p>The value of commutating <em>C</em> = 30.12 μF.</p></span>`,
+        `<span style="display: inline;"><p>The value of commutating <em>C</em> = 40.822 μF.</p></span>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_115.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_116.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In a single-phase power measurement test by three-voltmeter method, the following readings were obtained. Across AC mains is 200 V, across the non-inductive resistance of 10 Ω is 110 V. Across the load consisting of resistance (R) and inductance (L) is 120 V, the inductive reactance <em>X<sub>L </sub></em>is _______ Ω.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 9.37,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>9.37 (9.25 - 9.50)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_117.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_118.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The electric field in spherical coordinates at <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_119.png"/> is given as <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_120.png"/> The incremental work done in moving a 10 μC charge a distance of 0.8 μm in the direction of <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_121.png"/> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>–280 pJ</p></span>`,
+        `<span style="display: inline;"><p>–560 pJ</p></span>`,
+        `<span style="display: inline;"><p>–480 pJ</p></span>`,
+        `<span style="display: inline;"><p>–960 pJ</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_122.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The opamp used in the inverting amplifier shown in figure has an equivalent input offset voltage <em>V</em><sub><em>i</em>os</sub> of 10 mV. The output offset voltage is _______ mV.</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_123.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 290,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>290 (285 - 295)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_124.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_125.png"/> then the value of 2<em>A</em> + 3<em>B</em> + <em>C</em> is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>3</p></span>`,
+        `<span style="display: inline;"><p>4</p></span>`,
+        `<span style="display: inline;"><p>5</p></span>`,
+        `<span style="display: inline;"><p>6</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_126.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>The number of linearly independent eigen vectors of the matrix <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_127.png"/> is _____.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 3,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>3 (3 - 3)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_128.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_129.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A simple power system is shown in figure. All quantities are phasors.</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_130.png"/></div> <div>Generator <em>G</em><sub>1</sub> can generate maximum of 20 p.u. real power. Operating power factor of generator ‘2’ is _________ . <div><img alt="" src="images/ee_2026_advance_test_4/img_131.png"/></div> </div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.788,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.788 (0.77 - 0.79)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_132.png"/></div> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_133.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "MSQ",
+      text: `<span style="display: inline;"><p>For the system shown in the figure given below:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_134.png"/></div> <div>If <em>u</em> is the input and y is the output. Then which of the following is/are correct?</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>system is controllable and unobservable.</p></span>`,
+        `<span style="display: inline;"><p>system is observable and controllable.</p></span>`,
+        `<span style="display: inline;"><p>system is uncontrollable and observable.</p></span>`,
+        `<span style="display: inline;"><p>system is unobservable and uncontrollable.</p></span>`,
+      ],
+      answer: ["A", "C"],
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a, c)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_135.png"/></div> </div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Consider a continuous-time LTI system with impulse response</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_136.png"/></div> <div>The Fourier series coefficients (<em>b<sub>k</sub></em>) of output y(t) for input <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_137.png"/> which have Fourier series coefficients <em>a<sub>k</sub></em> are</div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_138.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_139.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_140.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_141.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_142.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Let <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_143.png"/> What is the value of constant α?</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2</p></span>`,
+        `<span style="display: inline;"><p>-3</p></span>`,
+        `<span style="display: inline;"><p>9</p></span>`,
+        `<span style="display: inline;"><p>-1</p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_144.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>Find the maximum amount of power that can be transferred from the rest the network shown below to the resistor <em>R</em> ?</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_145.png"/></div></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_146.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_147.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_148.png"/></p></span>`,
+        `<span style="display: inline;"><p><img alt="" src="images/ee_2026_advance_test_4/img_149.png"/></p></span>`,
+      ],
+      answer: "A",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_150.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_151.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 6-pole, 50 Hz, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_152.png"/> induction motor is rotating at speed of 960 rpm. Then the percentage forward torque developed by the motor is _______ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 102.1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>102.1 (101.0 - 103.0)</p> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_153.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 100 kVA, 50 Hz, 440/11000 V, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_154.png"/> transformer has an efficiency of 98.5%, when supplying full load current at 0.8 pf and an efficiency of 99%, when supplying full load current at 0.8 pf and an efficiency of 99%, when supplying half full load current at unity pf the maximum efficiency will be attained at a load current of _______ A. (Answer upto 1 decimal place)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 4.8,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>4.8 (4.70 - 4.90)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_155.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A type-A chopper fed from a 240 V dc source and feeding RLE load with <em>R</em> = 15 Ω and <em>E</em> = 120 V. The load current is assumed constant (continuous). The maximum value current through the thyristor is _______ .</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 1,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>1</p> <div> <div><img alt="" src="images/ee_2026_advance_test_4/img_156.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_157.png"/></div> </div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_158.png"/> half-wave converter is operated from a <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_158.png"/> star-connected 208 V, 60 Hz supply and the load resistances is R = 10 Ω. If it is required to obtain an average output voltage of 50% of the maximum possible output voltage, the delay angle is ______ degree. (Answer upto 1 decimal place)</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 67.7,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>67.7 (66.0 - 68.5)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_159.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the circuit shown below:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_160.png"/></div> <div>the output voltage <em>V</em><sub>0</sub> of the circuit is _______ V.</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_161.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_162.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_163.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_164.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>Consider the following circuit:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_165.png"/></div> <div>the stability factor s for the fixed bias circuit is ________ .</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 52.3,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>52.3 (52.0 - 52.6)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_166.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>In region-1 shown below, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_167.png"/> The angle of magnetic field intensity, making with an interface in region-2 is ________ (in degree). (Answer upto 1 decimal place)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_168.png"/></div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 76.5,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>76.5 (74.0 - 78.0)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_169.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A 9 kVA, 208 V, <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_170.png"/> Y-connected synchronous generator has winding resistance 0.1 Ω, synchronous reactance = 5.6 Ω/phase, the voltage regulation at full load 0.8 p.f. lagging is ______ %.</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 94.64,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>94.64 (93.50 - 95.50)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_171.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0.66,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>A 3-phase synchronous generator produces 8 p.u. sub-transient current for a balanced fault at its terminals. Zero-sequence reactance is 10% of positive-sequence reactance and the neutral of the generator is solidly grounded. The symmetrical rms current in p.u. through neutral grounding<br>for a double line to ground fault is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>6.67 p.u.</p></span>`,
+        `<span style="display: inline;"><p>20 p.u.</p></span>`,
+        `<span style="display: inline;"><p>13.2 p.u.</p></span>`,
+        `<span style="display: inline;"><p>40 p.u.</p></span>`,
+      ],
+      answer: "B",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(b)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_172.png"/></div></div>`
+    },
+    {
+      marks: 2,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A random variable <em>X</em> has the following probability function:</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_173.png"/></div> <div>The probability <em>P</em>(0 &lt; <em>X</em> &lt; 6) is _____. (Correct upto three decimal places)</div></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 0.816,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>0.816 (0.810 - 0.820)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_174.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0,
+      type: "NAT",
+      text: `<span style="display: inline;"><p>A function <em>f</em>(<em>x</em>) is differentiated twice such that its differential equation is:<br><em>f</em> (<em>x</em>) – 2<em>f</em> ′(<em>x</em>) + <em>f</em>′′(<em>x</em>) = 0. If <em>f</em>(0) = 1, <em>f</em> ′(0) = 2, then <em>f</em>(<em>x</em>) at <em>x</em> = 1 will be_____. [Correct upto 3 decimal places]</p></span>`,
+      image: "",
+      options: [
+      ],
+      answer: 5.436,
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>5.436 (5.000 - 6.000)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_175.png"/></div></div>`
+    },
+    {
+      marks: 1,
+      neg: 0.33,
+      type: "MCQ",
+      text: `<span style="display: inline;"><p>The residue of <em>f</em> (<em>z</em>) = <img align="absmiddle" alt="" src="images/ee_2026_advance_test_4/img_176.png"/> at z = 2 is</p></span>`,
+      image: "",
+      options: [
+        `<span style="display: inline;"><p>2<em>e</em></p></span>`,
+        `<span style="display: inline;"><p><em>e</em></p></span>`,
+        `<span style="display: inline;"><p><em>e</em><sup>–1</sup></p></span>`,
+        `<span style="display: inline;"><p><em>e</em><sup>–2</sup></p></span>`,
+      ],
+      answer: "C",
+      solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(a)</p> <div><img alt="" src="images/ee_2026_advance_test_4/img_177.png"/></div> <div><img alt="" src="images/ee_2026_advance_test_4/img_178.png"/></div></div>`
+    },
+  ]
+});
