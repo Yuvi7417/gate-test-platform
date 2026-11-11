@@ -12344,9 +12344,9 @@ registerTest({
 <p>What is the time complexity of function fun( )?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(<em>n</em><sup>2 </sup>log<em> n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(<em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(<em>n </em>log <em>n</em>)<sup>2</sup></p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n</em><sup>2 </sup>log<em> n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n </em>log <em>n</em>)<sup>2</sup></p></span>`,
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_1/mceclip10-1783590610517.png"></p></span>`,
             ],
             answer: "D",
@@ -12356,7 +12356,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?<br>S<sub>1</sub> : BFS take \( O \)(V + E) time in a graph G(V, E) if graph is represent with an adjacent list.<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></span>`,
+            text: `<span style="display: inline;"><p>Which of the following statements is/are correct?<br>S<sub>1</sub> : BFS take \\( O \\)(V + E) time in a graph G(V, E) if graph is represent with an adjacent list.<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
@@ -12365,7 +12365,7 @@ registerTest({
                 `<span style="display: inline;"><p>Neither S<sub>1</sub> nor S<sub>2</sub></p></span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>S<sub>1</sub> : Time complexity of BFS using adjacent list \( O \)(V + E).<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>S<sub>1</sub> : Time complexity of BFS using adjacent list \\( O \\)(V + E).<br>S<sub>2</sub> : The minium spanning tree can be found using BFS if the graph has equal non-negative edge weights.</p></div>`
         },
         {
             marks: 1,
@@ -12434,7 +12434,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider &lt;<em>M</em>&gt; be the encoding of a Turing Machine as a string over alphabet \( \Sigma \) = {0, 1}. Consider <em>L </em>= {&lt;<em>M</em>&gt; | <em>M </em>is TM that halt on all input and <em>L(M)</em> = <em>L</em>&prime; for some undecidable <em>L</em>&prime;}. Then <em>L</em> is</p></span>`,
+            text: `<span style="display: inline;"><p>Consider &lt;<em>M</em>&gt; be the encoding of a Turing Machine as a string over alphabet \\( \\Sigma \\) = {0, 1}. Consider <em>L </em>= {&lt;<em>M</em>&gt; | <em>M </em>is TM that halt on all input and <em>L(M)</em> = <em>L</em>&prime; for some undecidable <em>L</em>&prime;}. Then <em>L</em> is</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Decidable and recursive.</p></span>`,
@@ -12452,10 +12452,10 @@ registerTest({
             text: `<span style="display: inline;"><p>Consider an array containing '<em>n</em>' elements. The elements present in an array are in arithmetic progression, but one element is missing in that order. What is time complexity to find the position of the missing element using divide and conquer?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(<em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(<em>n</em><sup>2</sup>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(log <em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(<em>n </em>log <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n</em><sup>2</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(log <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(<em>n </em>log <em>n</em>)</p></span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_1/mceclip22-1783591333884.png"></p></div>`
@@ -12464,7 +12464,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let <em>A </em>be the adjacency matrix of a simple undirected graph <em>G </em>with <em>n</em> vertices (<em>n</em> \( \ge \) 3). Suppose <em>A</em>2 = <em>A</em>. Which one of the following statements is always correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Let <em>A </em>be the adjacency matrix of a simple undirected graph <em>G </em>with <em>n</em> vertices (<em>n</em> \\( \\ge \\) 3). Suppose <em>A</em>2 = <em>A</em>. Which one of the following statements is always correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p><em>G </em>is a complete graph <em>K<sub>n</sub></em>.</p></span>`,
@@ -12520,7 +12520,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider a language <em>L </em>on \( \Sigma \) = {0, 1}. L is the set of all string in which every substring of 3 symbol<br>has atmost two 1's. The number of states in the minimal DFA is ________.</p></span>`,
+            text: `<span style="display: inline;"><p>Consider a language <em>L </em>on \\( \\Sigma \\) = {0, 1}. L is the set of all string in which every substring of 3 symbol<br>has atmost two 1's. The number of states in the minimal DFA is ________.</p></span>`,
             image: "",
             options: [
             ],
@@ -13165,8 +13165,8 @@ registerTest({
             image: "",
             options: [
                 `<span style="display: inline;"><p>1 : 1</p></span>`,
-                `<span style="display: inline;"><p>\( \pi \) : 2</p></span>`,
-                `<span style="display: inline;"><p>\( \pi \) : 4</p></span>`,
+                `<span style="display: inline;"><p>\\( \\pi \\) : 2</p></span>`,
+                `<span style="display: inline;"><p>\\( \\pi \\) : 4</p></span>`,
                 `<span style="display: inline;"><p>data insufficient</p></span>`,
             ],
             answer: "C",
@@ -13443,7 +13443,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following statement:<br>S<sub>1</sub>: Any <em>n </em>node unbalanced tree can be balanced using \( O \)(log <em>n</em>) rotations.<br>S<sub>2 </sub>: Every directed acyclic graph has exactly one topological ordering.<br>Which of the above statements is correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following statement:<br>S<sub>1</sub>: Any <em>n </em>node unbalanced tree can be balanced using \\( O \\)(log <em>n</em>) rotations.<br>S<sub>2 </sub>: Every directed acyclic graph has exactly one topological ordering.<br>Which of the above statements is correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
@@ -13545,8 +13545,8 @@ registerTest({
             options: [
                 `<span style="display: inline;"><p>Over the unary alphabet, every context free language is regular.</p></span>`,
                 `<span style="display: inline;"><p>The reversal of a DCFL is always context free.</p></span>`,
-                `<span style="display: inline;"><p>If a grammar <em>G </em>has \( \epsilon \) productions, then \( \epsilon \) is a member of <em>L(G)</em>.</p></span>`,
-                `<span style="display: inline;"><p>If \( \epsilon \) is not a member of <em>L(G)</em>, then <em>G</em> has no \( \epsilon \) productions.</p></span>`,
+                `<span style="display: inline;"><p>If a grammar <em>G </em>has \\( \\epsilon \\) productions, then \\( \\epsilon \\) is a member of <em>L(G)</em>.</p></span>`,
+                `<span style="display: inline;"><p>If \\( \\epsilon \\) is not a member of <em>L(G)</em>, then <em>G</em> has no \\( \\epsilon \\) productions.</p></span>`,
             ],
             answer: ["A", "B"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_2/mceclip13-1783666496000.png"></p></div>`
@@ -13704,7 +13704,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following languages over the binary alphabet \( \Sigma \) = {0, 1}:<br><img src="images/pw_full_syllabus_test_2/mceclip38-1783667414477.png"><br>Which of the following statements is/are correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following languages over the binary alphabet \\( \\Sigma \\) = {0, 1}:<br><img src="images/pw_full_syllabus_test_2/mceclip38-1783667414477.png"><br>Which of the following statements is/are correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Only I is regular</p></span>`,
@@ -14292,7 +14292,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following statements:<br>I. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\( \ge \) 2 but not LL(1), then G has left recursion.<br>II. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\( \ge \) 2 but not LL(1), then G has left factoring.<br>Which of the above statements is true?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>I. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\\( \\ge \\) 2 but not LL(1), then G has left recursion.<br>II. If a grammar <em>G </em>is LL(<em>k</em>) for some <em>k </em>\\( \\ge \\) 2 but not LL(1), then G has left factoring.<br>Which of the above statements is true?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Only I</p></span>`,
@@ -14312,10 +14312,10 @@ registerTest({
 <p>Which one of the following conditions is true before every iteration of the while loop?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) (res \( \cdot \) <em>a</em>)<em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
-                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res \( \cdot \) <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
-                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res \( \cdot \) <em>a</em><em> </em>(mod <em>M</em>)</p></span>`,
-                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\( \equiv \) res + <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\\( \\equiv \\) (res \\( \\cdot \\) <em>a</em>)<em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\\( \\equiv \\) res \\( \\cdot \\) <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\\( \\equiv \\) res \\( \\cdot \\) <em>a</em><em> </em>(mod <em>M</em>)</p></span>`,
+                `<span style="display: inline;"><p><em>X<sup>Y</sup> </em>\\( \\equiv \\) res + <em>a</em><em><sup>b</sup> </em>(mod <em>M</em>)</p></span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip4-1783686980079.png"></p></div>`
@@ -14357,7 +14357,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the language L = {<em>w</em> | <em>w </em>contains at least 2 a's; <em>w </em>\( \in \) {<em>a, b, c</em>}*}. Which of the following is not<br>a correct regular expression for L?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the language L = {<em>w</em> | <em>w </em>contains at least 2 a's; <em>w </em>\\( \\in \\) {<em>a, b, c</em>}*}. Which of the following is not<br>a correct regular expression for L?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p><em>(b + c)* a (b + c)* a(a + b + c)*</em></p></span>`,
@@ -14471,7 +14471,7 @@ registerTest({
                 `<span style="display: inline;"><p>None of these</p></span>`,
             ],
             answer: ["A", "C"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Only I and III are equivalent to <em>R </em>\( \cap \) <em>S</em>. II is actually <em>R </em>\( \oplus \) <em>S</em>, so it is not.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Only I and III are equivalent to <em>R </em>\\( \\cap \\) <em>S</em>. II is actually <em>R </em>\\( \\oplus \\) <em>S</em>, so it is not.</p></div>`
         },
         {
             marks: 1,
@@ -14534,7 +14534,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider 5 processes all starting at time <em>t</em> = 2 units. Each process <em>P<sub>i</sub></em> has a burst time equal to<br><em>b<sub>i</sub> </em>[1 \( \le \)<em> i</em> \( \le \) 5]. The system uses Round Robin scheduling algorithm. If the throughput of the system is equal to 0.2, then the completion time of the process that finishes last, is equal to ________.</p></span>`,
+            text: `<span style="display: inline;"><p>Consider 5 processes all starting at time <em>t</em> = 2 units. Each process <em>P<sub>i</sub></em> has a burst time equal to<br><em>b<sub>i</sub> </em>[1 \\( \\le \\)<em> i</em> \\( \\le \\) 5]. The system uses Round Robin scheduling algorithm. If the throughput of the system is equal to 0.2, then the completion time of the process that finishes last, is equal to ________.</p></span>`,
             image: "",
             options: [
             ],
@@ -14550,7 +14550,7 @@ registerTest({
             options: [
             ],
             answer: 0,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>There's no language, because LHS doesn't contain \( \epsilon \), whereas RHS does. So no <em>L</em> exists which can satisfy the above equality.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>There's no language, because LHS doesn't contain \\( \\epsilon \\), whereas RHS does. So no <em>L</em> exists which can satisfy the above equality.</p></div>`
         },
         {
             marks: 1,
@@ -14607,10 +14607,10 @@ registerTest({
 <p><img src="images/pw_full_syllabus_test_3/mceclip31-1783689119826.png"></p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( \Omega \)(log<sub>2</sub> log<sub>2</sub> <em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \Omega \)(log<sub>2</sub> <em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \Omega \)(<em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \Omega \)(<em>n </em>log<sub>2</sub> <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\Omega \\)(log<sub>2</sub> log<sub>2</sub> <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\Omega \\)(log<sub>2</sub> <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\Omega \\)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\Omega \\)(<em>n </em>log<sub>2</sub> <em>n</em>)</p></span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_3/mceclip32-1783689202438.png"></p></div>`
@@ -14669,7 +14669,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider <em>L </em>= {<em>w </em>| <em>d</em>(<em>w</em>) \( \ge \) 32; <em>w </em>\( \in \) {0, 1}*}.<br>Note that <em>d</em>(<em>w</em>) denotes the decimal value of the binary string <em>w</em>. Then the number of states in the<br>minimal DFA corresponding to <em>L </em>is equal to</p></span>`,
+            text: `<span style="display: inline;"><p>Consider <em>L </em>= {<em>w </em>| <em>d</em>(<em>w</em>) \\( \\ge \\) 32; <em>w </em>\\( \\in \\) {0, 1}*}.<br>Note that <em>d</em>(<em>w</em>) denotes the decimal value of the binary string <em>w</em>. Then the number of states in the<br>minimal DFA corresponding to <em>L </em>is equal to</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>5</p></span>`,
@@ -14687,9 +14687,9 @@ registerTest({
             text: `<span style="display: inline;"><p>Consider a weighted undirected graph with positive edge weights. Let (<em>u, v</em>) be an edge in the graph. The shortest path distance from a source vertex <em>s </em>to vertex <em>u </em>is 50 and the shortest path distance from <em>s </em>to vertex <em>v </em>is 75.<br>Which one of the following statements is always true?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \( \le \) 25</p></span>`,
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \\( \\le \\) 25</p></span>`,
                 `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) = 25</p></span>`,
-                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \( \ge \) 25</p></span>`,
+                `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) \\( \\ge \\) 25</p></span>`,
                 `<span style="display: inline;"><p><em>w</em>(<em>u, v</em>) &gt; 25</p></span>`,
             ],
             answer: "C",
@@ -14819,7 +14819,7 @@ registerTest({
             options: [
                 `<span style="display: inline;"><p>If <em>L </em>is a finite language such that the length of the maximal string is n, then the minimum pumping length for <em>L </em>is <em>n </em>+ 1.</p></span>`,
                 `<span style="display: inline;"><p>If <em>L </em>is a regular language such that the length of the maximal string is n, then the pumping length for <em>L </em>is <em>n </em>+ 1.</p></span>`,
-                `<span style="display: inline;"><p>If <em>P </em>is the pumping length for <em>L</em>, then any <em>k </em>\( \ge \) <em>p </em>is also a pumping length.</p></span>`,
+                `<span style="display: inline;"><p>If <em>P </em>is the pumping length for <em>L</em>, then any <em>k </em>\\( \\ge \\) <em>p </em>is also a pumping length.</p></span>`,
                 `<span style="display: inline;"><p>The set of regular language is closed under the infinite union operation.</p></span>`,
             ],
             answer: ["A", "C"],
@@ -14871,13 +14871,13 @@ registerTest({
                 `<span style="display: inline;"><p>Every MST of G must contain at least two edges with weight <em>e</em><sub>min</sub>.</p></span>`,
             ],
             answer: ["C", "D"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 2 edges are not sufficient to create a cycle, every MST of <em>G </em>must have \( \ge \) 2 edges with weight <em>e</em><sub>min</sub>.<br> => (c), (d) are true.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 2 edges are not sufficient to create a cycle, every MST of <em>G </em>must have \\( \\ge \\) 2 edges with weight <em>e</em><sub>min</sub>.<br> => (c), (d) are true.</p></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p>Consider the following languages over the ternary alphabet \( \Sigma \) = {0, 1, 2}<br>I. Set of strings which have 0 as their last symbol.<br>II. Set of strings which have 0 as their second last symbol.<br>III. Set of strings which have 0 as their third last symbol.<br>Which of the following is correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following languages over the ternary alphabet \\( \\Sigma \\) = {0, 1, 2}<br>I. Set of strings which have 0 as their last symbol.<br>II. Set of strings which have 0 as their second last symbol.<br>III. Set of strings which have 0 as their third last symbol.<br>Which of the following is correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Minimal DFA for I requires 2 states.</p></span>`,
@@ -15340,10 +15340,10 @@ registerTest({
             text: `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_4/mceclip4-1783840375357.png"></p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( \theta \)(1)</p></span>`,
-                `<span style="display: inline;"><p>\( \theta \)(<em>n</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \theta \)(<em>n<sup>2</sup></em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \theta \)(<em>n </em>log <em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(1)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>n</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>n<sup>2</sup></em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>n </em>log <em>n</em>)</p></span>`,
             ],
             answer: "D",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_4/mceclip5-1783840419031.png"></p></div>`
@@ -15352,12 +15352,12 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>An articulation point in a connected undirected graph <em>G(V, E)</em> is a vertex <em>v </em>\( \in \) <em>V </em>whose removal disconnects the graph. The time complexity of finding an articulation point is</p></span>`,
+            text: `<span style="display: inline;"><p>An articulation point in a connected undirected graph <em>G(V, E)</em> is a vertex <em>v </em>\\( \\in \\) <em>V </em>whose removal disconnects the graph. The time complexity of finding an articulation point is</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( \theta \)(<em>V</em> + <em>E</em>)</p></span>`,
-                `<span style="display: inline;"><p>\( \theta \)(<em>V</em> (<em>V </em>+ <em>E</em>))</p></span>`,
-                `<span style="display: inline;"><p>\( \theta \)(<em>VE</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>V</em> + <em>E</em>)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>V</em> (<em>V </em>+ <em>E</em>))</p></span>`,
+                `<span style="display: inline;"><p>\\( \\theta \\)(<em>VE</em>)</p></span>`,
                 `<span style="display: inline;"><p>None of these</p></span>`,
             ],
             answer: "A",
@@ -15628,7 +15628,7 @@ registerTest({
                 `<span style="display: inline;"><p>None of these</p></span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both Q1 and Q<sub>2</sub> are correct.<br>\( \therefore \) (c) is the answer.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both Q1 and Q<sub>2</sub> are correct.<br>\\( \\therefore \\) (c) is the answer.</p></div>`
         },
         {
             marks: 2,
@@ -15865,7 +15865,7 @@ registerTest({
             type: "MSQ",
             text: `<span style="display: inline;"><p>Consider two context-free grammars, G<sub>1</sub> and G<sub>2</sub>, with the production rules given below:</p>
 <p><img src="images/pw_full_syllabus_test_4/mceclip87-1783850498710.png"></p>
-<p>where<em> a, b</em> are the terminal characters and \( \epsilon \) represents the null string.<br>Which of the following option(s) is/are correct?</p></span>`,
+<p>where<em> a, b</em> are the terminal characters and \\( \\epsilon \\) represents the null string.<br>Which of the following option(s) is/are correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>G<sub>1</sub> is not LL(1) due to left-recursion, but it is unambiguous.</p></span>`,
@@ -16179,16 +16179,16 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>A binary search tree with n nodes is constructed. Along with key each node store the number of elements in the sub tree rooted at that node. We have given two elements a and b such that a &lt; b. What will be the number of comparisons and additions respectively to find the number of elements m such that a \( \le \) m \( \le \) b?</p></span>`,
+            text: `<span style="display: inline;"><p>A binary search tree with n nodes is constructed. Along with key each node store the number of elements in the sub tree rooted at that node. We have given two elements a and b such that a &lt; b. What will be the number of comparisons and additions respectively to find the number of elements m such that a \\( \\le \\) m \\( \\le \\) b?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(n)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(log n)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(log n) and \( O \)(log log n)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n) and \( O \)(n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(log n) and \\( O \\)(n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(log n) and \\( O \\)(log n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(log n) and \\( O \\)(log log n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n) and \\( O \\)(n)</p></span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>\( O \)(n) comparisons for finding a and b since it is a binary search tree.<br>Now, in order to find the number of elements between a and b we need to find the inorder. For this again \( O \)(n) comparisons.<br>Then, starting from index a upto b calculate total number thus \( O \)(n) additions.<br>Hence option (d) is correct.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>\\( O \\)(n) comparisons for finding a and b since it is a binary search tree.<br>Now, in order to find the number of elements between a and b we need to find the inorder. For this again \\( O \\)(n) comparisons.<br>Then, starting from index a upto b calculate total number thus \\( O \\)(n) additions.<br>Hence option (d) is correct.</p></div>`
         },
         {
             marks: 1,
@@ -16209,7 +16209,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let A = Z be the set of all integers. Let F be the set of all bijective functions from A to A. For any two functions f<sub>1</sub>, f<sub>2</sub> \( \in \) F, the binary operation ° is defined by function composition as ( f<sub>1</sub>° f<sub>2</sub> )(x) = f<sub>1</sub>( f<sub>2</sub> (x)), \( \forall \)x\( \in \)A<br>Which of the following is correct about the algebraic structure (F,°)?</p></span>`,
+            text: `<span style="display: inline;"><p>Let A = Z be the set of all integers. Let F be the set of all bijective functions from A to A. For any two functions f<sub>1</sub>, f<sub>2</sub> \\( \\in \\) F, the binary operation ° is defined by function composition as ( f<sub>1</sub>° f<sub>2</sub> )(x) = f<sub>1</sub>( f<sub>2</sub> (x)), \\( \\forall \\)x\\( \\in \\)A<br>Which of the following is correct about the algebraic structure (F,°)?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>(F,°) is an Abelian group.</p></span>`,
@@ -16218,13 +16218,13 @@ registerTest({
                 `<span style="display: inline;"><p>(F,°) is a non-Abelian monoid, but not a group.</p></span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For the set F of all bijective functions from Z to Z under function composition ( °):<br>• The composition of two bijective functions is bijective. Hence, F is closed under °.<br>• Function composition is associative.<br>• The identity function I(x) = x belongs to F and acts as the identity element.<br>• Every bijective function has a bijective inverse in F.<br>Therefore, (F,°) is a group.<br>Further, function composition is not commutative in general, i.e., there exist f, g \( \in \) F such that f ° g \( \ne \) g° f<br>Hence, (F,°) is non-Abelian.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For the set F of all bijective functions from Z to Z under function composition ( °):<br>• The composition of two bijective functions is bijective. Hence, F is closed under °.<br>• Function composition is associative.<br>• The identity function I(x) = x belongs to F and acts as the identity element.<br>• Every bijective function has a bijective inverse in F.<br>Therefore, (F,°) is a group.<br>Further, function composition is not commutative in general, i.e., there exist f, g \\( \\in \\) F such that f ° g \\( \\ne \\) g° f<br>Hence, (F,°) is non-Abelian.</p></div>`
         },
         {
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>The language {<em>ww </em>| <em>w </em>\( \in \) (0 + 1)*} is</p></span>`,
+            text: `<span style="display: inline;"><p>The language {<em>ww </em>| <em>w </em>\\( \\in \\) (0 + 1)*} is</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Not accepted by any Turing Machine.</p></span>`,
@@ -16257,13 +16257,13 @@ registerTest({
             text: `<span style="display: inline;"><p>Consider a singly linked list implementation in which each node contains only a data field and a pointer to the next node. A pointer variable R stores the address of a node X. The head pointer of the list is also available. An operation is required to remove the node X while preserving the sequence of data values stored in all remaining nodes. The algorithm is not allowed to copy data from one node to another. What is the worst-case time complexity of the most efficient algorithm<br>for this operation?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(1)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(log n)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n log n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(1)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(log n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n log n)</p></span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since the actual node X has to be removed and data copying is not allowed, the predecessor node of X must be found to modify its next pointer. In a singly linked list, this requires traversal from the head node. Worst-case traversal: \( O \)(n)</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since the actual node X has to be removed and data copying is not allowed, the predecessor node of X must be found to modify its next pointer. In a singly linked list, this requires traversal from the head node. Worst-case traversal: \\( O \\)(n)</p></div>`
         },
         {
             marks: 1,
@@ -16318,13 +16318,13 @@ registerTest({
 <p>The self dual function is</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>F(A, B, C) = \( \Sigma \)m(1, 2, 5, 7)</p></span>`,
-                `<span style="display: inline;"><p>F(A, B, C, D) = \( \Sigma \)m(4, 5, 8, 9, 10, 11, 13, 15)</p></span>`,
-                `<span style="display: inline;"><p>F(A, B, C, D) = \( \Sigma \)m(0, 1, 2, 3, 6, 8, 13, 14)</p></span>`,
-                `<span style="display: inline;"><p>F(A, B, C) = \( \Sigma \)m(0, 2, 3, 6)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C) = \\( \\Sigma \\)m(1, 2, 5, 7)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C, D) = \\( \\Sigma \\)m(4, 5, 8, 9, 10, 11, 13, 15)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C, D) = \\( \\Sigma \\)m(0, 1, 2, 3, 6, 8, 13, 14)</p></span>`,
+                `<span style="display: inline;"><p>F(A, B, C) = \\( \\Sigma \\)m(0, 2, 3, 6)</p></span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For a function F to be self dual, it should satisfy two conditions:<br>1. Number of min terms = Number of max terms<br>2. There should not be any mutually exclusive term.<br>Now option (a), F(A, B, C)= \( \Sigma \)m(1, 2, 5, 7)<br>Condition 1 is satisfied but condition (2) is not satisfied as (2, 5) are mutually exclusive term.<br>\( \therefore \) Not self dual.<br>Similarly b, c are also not self dual.<br>Option (d), F(A, B, C) = \( \Sigma \)m(0, 2, 3, 6)<br>Condition (1) is satisfied and condition (2) is also satisfied as it does not have any mutually exclusive term.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>For a function F to be self dual, it should satisfy two conditions:<br>1. Number of min terms = Number of max terms<br>2. There should not be any mutually exclusive term.<br>Now option (a), F(A, B, C)= \\( \\Sigma \\)m(1, 2, 5, 7)<br>Condition 1 is satisfied but condition (2) is not satisfied as (2, 5) are mutually exclusive term.<br>\\( \\therefore \\) Not self dual.<br>Similarly b, c are also not self dual.<br>Option (d), F(A, B, C) = \\( \\Sigma \\)m(0, 2, 3, 6)<br>Condition (1) is satisfied and condition (2) is also satisfied as it does not have any mutually exclusive term.</p></div>`
         },
         {
             marks: 1,
@@ -16341,7 +16341,7 @@ registerTest({
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip7-1787545992678.png"></p></span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The language accepted by TM = {a<sup>2i</sup> b<sup>i</sup>|i \( \ge \) 0} = {a<sup>m</sup> b<sup>n</sup>|m = 2n}.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>The language accepted by TM = {a<sup>2i</sup> b<sup>i</sup>|i \\( \\ge \\) 0} = {a<sup>m</sup> b<sup>n</sup>|m = 2n}.</p></div>`
         },
         {
             marks: 1,
@@ -16359,7 +16359,7 @@ registerTest({
                 `<span style="display: inline;"><p>1 - c, 2 - e, 3 - d, 4 - b, 5 - a</p></span>`,
             ],
             answer: "C",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(i) For segment 0, length = 124 &lt; Logical address 99<br>\( \therefore \) Physical address = 330 + 99 = 429<br>(ii) For segment 2, length = 99 &gt; logical address 78<br>\( \therefore \) Physical address = 111 + 78 = 189<br>(iii) For segment 1, length = 211 &lt; logical address 265<br>\( \therefore \) Trap<br>(iv) For segment 3, length = 302 &gt; logical address 222<br>\( \therefore \) Physical address = 498 + 222 = 720<br>(v) For segment 0, length = 124 &gt; logical address 111<br>\( \therefore \) Physical address = 330 + 111 = 441</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(i) For segment 0, length = 124 &lt; Logical address 99<br>\\( \\therefore \\) Physical address = 330 + 99 = 429<br>(ii) For segment 2, length = 99 &gt; logical address 78<br>\\( \\therefore \\) Physical address = 111 + 78 = 189<br>(iii) For segment 1, length = 211 &lt; logical address 265<br>\\( \\therefore \\) Trap<br>(iv) For segment 3, length = 302 &gt; logical address 222<br>\\( \\therefore \\) Physical address = 498 + 222 = 720<br>(v) For segment 0, length = 124 &gt; logical address 111<br>\\( \\therefore \\) Physical address = 330 + 111 = 441</p></div>`
         },
         {
             marks: 1,
@@ -16395,7 +16395,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following CFG:<br>S -> (L)|a<br>L -> SL'<br>L' -> , SL'|\( \epsilon \)<br>If the following table is constructed using LL(1) Parser, find the missing entries X and Y.</p>
+            text: `<span style="display: inline;"><p>Consider the following CFG:<br>S -> (L)|a<br>L -> SL'<br>L' -> , SL'|\\( \\epsilon \\)<br>If the following table is constructed using LL(1) Parser, find the missing entries X and Y.</p>
 <p><img src="images/pw_full_syllabus_test_5/mceclip11-1787546277304.png"></p></span>`,
             image: "",
             options: [
@@ -16494,7 +16494,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Let G be the complete bipartite graph K<sub>1, n - 1</sub>, where n \( \ge \) 3. A Breadth-First Search (BFS) is performed on G starting from an arbitrary vertex. The maximum possible height of the resulting BFS tree is ________.<br>(The height of a tree is defined as the number of edges on the longest path from the root to any leaf.)</p></span>`,
+            text: `<span style="display: inline;"><p>Let G be the complete bipartite graph K<sub>1, n - 1</sub>, where n \\( \\ge \\) 3. A Breadth-First Search (BFS) is performed on G starting from an arbitrary vertex. The maximum possible height of the resulting BFS tree is ________.<br>(The height of a tree is defined as the number of edges on the longest path from the root to any leaf.)</p></span>`,
             image: "",
             options: [
             ],
@@ -16572,13 +16572,13 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let g(\( \cdot \)) be a function from A to B, and let f(\( \cdot \)) be a function from B to C.<br>Define a function h(\( \cdot \)) : A -> C by<br>h(x) = f (g(x)), \( \forall \)x\( \in \)A<br>If h(\( \cdot \)) is a one-to-one (injective) function, which one of the following statements must always be true?</p></span>`,
+            text: `<span style="display: inline;"><p>Let g(\\( \\cdot \\)) be a function from A to B, and let f(\\( \\cdot \\)) be a function from B to C.<br>Define a function h(\\( \\cdot \\)) : A -> C by<br>h(x) = f (g(x)), \\( \\forall \\)x\\( \\in \\)A<br>If h(\\( \\cdot \\)) is a one-to-one (injective) function, which one of the following statements must always be true?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>g(\( \cdot \)) is a one-to-one (injective) function.</p></span>`,
-                `<span style="display: inline;"><p>f(\( \cdot \)) is a one-to-one (injective) function.</p></span>`,
-                `<span style="display: inline;"><p>g(\( \cdot \)) is an onto (surjective) function</p></span>`,
-                `<span style="display: inline;"><p>Both f(\( \cdot \)) and g(\( \cdot \)) are one-to-one (injective) functions.</p></span>`,
+                `<span style="display: inline;"><p>g(\\( \\cdot \\)) is a one-to-one (injective) function.</p></span>`,
+                `<span style="display: inline;"><p>f(\\( \\cdot \\)) is a one-to-one (injective) function.</p></span>`,
+                `<span style="display: inline;"><p>g(\\( \\cdot \\)) is an onto (surjective) function</p></span>`,
+                `<span style="display: inline;"><p>Both f(\\( \\cdot \\)) and g(\\( \\cdot \\)) are one-to-one (injective) functions.</p></span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip31-1787547124617.png"></p></div>`
@@ -16603,7 +16603,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let the languages L<sub>1</sub> and L<sub>2</sub> be defined over the alphabet \( \Sigma \) = {a, b, c} as follows:<br>L<sub>1</sub> = {a<sup>n</sup> b<sup>n</sup>|n \( \ge \) 0}<br>L<sub>2</sub> = {a<sup>M</sup> b<sup>n</sup> c<sup>P</sup>|m, n, p \( \ge \) 0 and (m = n or n = p)}<br>Let, L<sub>3</sub> = \( \Sigma \)* - (L<sub>1</sub> \( \cup \) L<sub>2</sub>) where the complement is taken with respect to \( \Sigma \)*.<br>Which one of the following statements is correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Let the languages L<sub>1</sub> and L<sub>2</sub> be defined over the alphabet \\( \\Sigma \\) = {a, b, c} as follows:<br>L<sub>1</sub> = {a<sup>n</sup> b<sup>n</sup>|n \\( \\ge \\) 0}<br>L<sub>2</sub> = {a<sup>M</sup> b<sup>n</sup> c<sup>P</sup>|m, n, p \\( \\ge \\) 0 and (m = n or n = p)}<br>Let, L<sub>3</sub> = \\( \\Sigma \\)* - (L<sub>1</sub> \\( \\cup \\) L<sub>2</sub>) where the complement is taken with respect to \\( \\Sigma \\)*.<br>Which one of the following statements is correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>L<sub>3</sub> is regular.</p></span>`,
@@ -16633,15 +16633,15 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following "Max-heapify" algorithm. Array has size atleast n and 1 \( \le \) i \( \le \) n. After applying the Max-heapify rooted at A[i], the result will be the subtree of A[1 ... n] rooted at A[i] is max heap. [Assume that except root A[i], all its children satisfies heap property] Max-heapify (int A[ ], int n, int i)</p>
+            text: `<span style="display: inline;"><p>Consider the following "Max-heapify" algorithm. Array has size atleast n and 1 \\( \\le \\) i \\( \\le \\) n. After applying the Max-heapify rooted at A[i], the result will be the subtree of A[1 ... n] rooted at A[i] is max heap. [Assume that except root A[i], all its children satisfies heap property] Max-heapify (int A[ ], int n, int i)</p>
 <p><img src="images/pw_full_syllabus_test_5/mceclip40-1787547504330.png"></p>
 <p>Find missing statements at X, Y and Z respectively to apply the heapify for subtree rooted at A[i]</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>k \( \le \) n, (2k + 1) \( \ge \) n, A[2k + 1] &gt; A[2k]</p></span>`,
-                `<span style="display: inline;"><p>2k \( \le \) n, (2k + 1) \( \le \) n, A[2k + 1] &gt; A[2k]</p></span>`,
-                `<span style="display: inline;"><p>2k \( \le \) n, (2k + 1) \( \ge \) n, A[2k + 1] &lt; A[2k]</p></span>`,
-                `<span style="display: inline;"><p>k \( \le \) n, (2k + 1) \( \le \) n, A[2k + 1] &lt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>k \\( \\le \\) n, (2k + 1) \\( \\ge \\) n, A[2k + 1] &gt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>2k \\( \\le \\) n, (2k + 1) \\( \\le \\) n, A[2k + 1] &gt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>2k \\( \\le \\) n, (2k + 1) \\( \\ge \\) n, A[2k + 1] &lt; A[2k]</p></span>`,
+                `<span style="display: inline;"><p>k \\( \\le \\) n, (2k + 1) \\( \\le \\) n, A[2k + 1] &lt; A[2k]</p></span>`,
             ],
             answer: "B",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip41-1787547540984.png"></p></div>`
@@ -16667,7 +16667,7 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p>Consider the following solution to a problem known as "Too much milk" problem which says that there shouldn't be more than one milk packets in the fridge. Thread A and Thread B buy the milk packet. If there is none milk packet in the fridge then either Thread A or Thread B can buy the milk and put it into the fridge. We have a milk variable which is initialized to 0 and it indicates the number of milk packets in the fridge. For synchronisation and for achieving the goal of "never making milk \( \ge \) 2", we present the following solution where noteA and noteB are two shared variables for the purpose of synchronisation.<br>Note that the buyMilk function will increment the milk variable. Thread A Thread B<br><img style="width: 100%; height: auto; max-width: 400px;" src="images/pw_full_syllabus_test_5/mceclip43-1787547688693.png"><br>Which of the following is true for the above attempt/solution to solve the Too much milk problem?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following solution to a problem known as "Too much milk" problem which says that there shouldn't be more than one milk packets in the fridge. Thread A and Thread B buy the milk packet. If there is none milk packet in the fridge then either Thread A or Thread B can buy the milk and put it into the fridge. We have a milk variable which is initialized to 0 and it indicates the number of milk packets in the fridge. For synchronisation and for achieving the goal of "never making milk \\( \\ge \\) 2", we present the following solution where noteA and noteB are two shared variables for the purpose of synchronisation.<br>Note that the buyMilk function will increment the milk variable. Thread A Thread B<br><img style="width: 100%; height: auto; max-width: 400px;" src="images/pw_full_syllabus_test_5/mceclip43-1787547688693.png"><br>Which of the following is true for the above attempt/solution to solve the Too much milk problem?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>This approach suffers from starvation.</p></span>`,
@@ -16688,16 +16688,16 @@ registerTest({
                 `<span style="display: inline;"><p>The RELAX operation never increases any shortest-path estimate d[v].</p></span>`,
                 `<span style="display: inline;"><p>The Bellman-Ford algorithm always computes shortest paths in every weighted graph.</p></span>`,
                 `<span style="display: inline;"><p>If all edge weights in a connected, undirected graph are distinct, then the maximum weight edge in any cycle cannot belong to any Minimum Spanning Tree (MST).</p></span>`,
-                `<span style="display: inline;"><p>In a directed acyclic graph (DAG), single-source shortest paths can be computed in \( O \)(V + E) time.</p></span>`,
+                `<span style="display: inline;"><p>In a directed acyclic graph (DAG), single-source shortest paths can be computed in \\( O \\)(V + E) time.</p></span>`,
             ],
             answer: ["A", "C", "D"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• During relaxation, d[v] <- min(d[v], d[u] + w(u, v)).<br>Hence, the estimate d[v] either decreases or remains unchanged; it never increases. So, option (a) is correct.<br>• Bellman-Ford correctly computes shortest paths only if no negative-weight cycle is reachable from the source. If a reachable negative-weight cycle exists, shortest paths are undefined, and the algorithm reports the cycle instead of producing shortest paths. So, option (b) is incorrect.<br>• By the Cycle Property of MSTs, the maximum-weight edge in any cycle cannot belong to any MST. Since all edge weights are distinct, the maximum-weight edge in every cycle is unique. So, option (c) is correct.<br>• A topological ordering of a DAG can be computed in \( O \)(V + E) time. Relaxing every edge once in topological order also takes \( O \)(E) time. Therefore, the overall time complexity is \( O \)(V + E). So, option (d) is correct.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• During relaxation, d[v] <- min(d[v], d[u] + w(u, v)).<br>Hence, the estimate d[v] either decreases or remains unchanged; it never increases. So, option (a) is correct.<br>• Bellman-Ford correctly computes shortest paths only if no negative-weight cycle is reachable from the source. If a reachable negative-weight cycle exists, shortest paths are undefined, and the algorithm reports the cycle instead of producing shortest paths. So, option (b) is incorrect.<br>• By the Cycle Property of MSTs, the maximum-weight edge in any cycle cannot belong to any MST. Since all edge weights are distinct, the maximum-weight edge in every cycle is unique. So, option (c) is correct.<br>• A topological ordering of a DAG can be computed in \\( O \\)(V + E) time. Relaxing every edge once in topological order also takes \\( O \\)(E) time. Therefore, the overall time complexity is \\( O \\)(V + E). So, option (d) is correct.</p></div>`
         },
         {
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p>Let N be a non-deterministic finite automata (NFA) on alphabet \( \Sigma \) = {0, 1} as given blow:</p>
+            text: `<span style="display: inline;"><p>Let N be a non-deterministic finite automata (NFA) on alphabet \\( \\Sigma \\) = {0, 1} as given blow:</p>
 <p><img src="images/pw_full_syllabus_test_5/mceclip44-1787547842689.png"></p>
 <p>Which of the following finite state machines accepts the same language as N?</p></span>`,
             image: "",
@@ -16708,7 +16708,7 @@ registerTest({
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_5/mceclip48-1787547871501.png"></p></span>`,
             ],
             answer: ["B", "C", "D"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>NFA N can be converted in DFA in option (d). And DFA in (d) accepts \( \Sigma \)* = (0 + 1)* which are<br>equivalent to DFAs in option (b) and (c). N accepts \( \in \), but DFA in (a) does not accepts \( \in \).</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>NFA N can be converted in DFA in option (d). And DFA in (d) accepts \\( \\Sigma \\)* = (0 + 1)* which are<br>equivalent to DFAs in option (b) and (c). N accepts \\( \\in \\), but DFA in (a) does not accepts \\( \\in \\).</p></div>`
         },
         {
             marks: 2,
@@ -16748,8 +16748,8 @@ registerTest({
             text: `<span style="display: inline;"><p>Which of the following statement(s) is/are correct?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>There exists a pushdown automaton (PDA) that recognizes the language L<sub>1</sub> = {0<sup>250</sup> 1<sup>500</sup>} \( \cup \) {1<sup>750</sup> 0<sup>125</sup>).</p></span>`,
-                `<span style="display: inline;"><p>The language L2 = {0<sup>i</sup>1j<sup>i</sup>|, j \( \ge \) 0, i \( \ne \) j} is regular.</p></span>`,
+                `<span style="display: inline;"><p>There exists a pushdown automaton (PDA) that recognizes the language L<sub>1</sub> = {0<sup>250</sup> 1<sup>500</sup>} \\( \\cup \\) {1<sup>750</sup> 0<sup>125</sup>).</p></span>`,
+                `<span style="display: inline;"><p>The language L2 = {0<sup>i</sup>1j<sup>i</sup>|, j \\( \\ge \\) 0, i \\( \\ne \\) j} is regular.</p></span>`,
                 `<span style="display: inline;"><p>The minimum pumping length satisfying the pumping lemma for the language L<sub>3</sub> = (00)* is 2.</p></span>`,
                 `<span style="display: inline;"><p>The minimum pumping length satisfying the pumping lemma for the language L<sub>4</sub> = (01)* is 2.</p></span>`,
             ],
@@ -16806,13 +16806,13 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p>Consider the homogeneous system of linear equations <img src="images/pw_full_syllabus_test_5/mceclip59-1787548492604.png">and \( \lambda \) is a real value.<br>Which of the following statements is/are correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the homogeneous system of linear equations <img src="images/pw_full_syllabus_test_5/mceclip59-1787548492604.png">and \\( \\lambda \\) is a real value.<br>Which of the following statements is/are correct?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>For \( \lambda \) = 9, the system has infinitely many solutions with one free variable.</p></span>`,
-                `<span style="display: inline;"><p>For \( \lambda \) = 9, the rank of A is equal to 2.</p></span>`,
-                `<span style="display: inline;"><p>There exists a value of \( \lambda \) for which the system has exactly two linearly independent nontrivial solutions.</p></span>`,
-                `<span style="display: inline;"><p>For \( \lambda \) \( \ne \) 9, the system has only the trivial solution.</p></span>`,
+                `<span style="display: inline;"><p>For \\( \\lambda \\) = 9, the system has infinitely many solutions with one free variable.</p></span>`,
+                `<span style="display: inline;"><p>For \\( \\lambda \\) = 9, the rank of A is equal to 2.</p></span>`,
+                `<span style="display: inline;"><p>There exists a value of \\( \\lambda \\) for which the system has exactly two linearly independent nontrivial solutions.</p></span>`,
+                `<span style="display: inline;"><p>For \\( \\lambda \\) \\( \\ne \\) 9, the system has only the trivial solution.</p></span>`,
             ],
             answer: ["A", "B"],
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_5/mceclip60-1787548542199.png"></p>
@@ -17149,7 +17149,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>The Boolean function <em>f</em>(<em>A, B, C</em>) = \( \Pi \)<em>M</em>(1, 3, 4, 5) is to be implemented by using 4 : 1 MUX having select lines <em>S</em><sub>1</sub> = <em>B</em> and <em>S</em><sub>0</sub> = C.</p>
+            text: `<span style="display: inline;"><p>The Boolean function <em>f</em>(<em>A, B, C</em>) = \\( \\Pi \\)<em>M</em>(1, 3, 4, 5) is to be implemented by using 4 : 1 MUX having select lines <em>S</em><sub>1</sub> = <em>B</em> and <em>S</em><sub>0</sub> = C.</p>
 <p><img src="images/pw_full_syllabus_test_6/mceclip23-1787744422552.png"></p></span>`,
             image: "",
             options: [
@@ -17175,7 +17175,7 @@ registerTest({
                 `<span style="display: inline;"><p>Dead code elimination</p></span>`,
             ],
             answer: "D",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 'i' is assigned value 1 just before checking if condition.<br>\( \therefore \) The code following it is dead-code and can be eliminated.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Since 'i' is assigned value 1 just before checking if condition.<br>\\( \\therefore \\) The code following it is dead-code and can be eliminated.</p></div>`
         },
         {
             marks: 1,
@@ -17258,7 +17258,7 @@ registerTest({
                 `<span style="display: inline;"><p>A minimum degree identifies a B/B<sup>+</sup> tree. And to a minimal extent, key and address sizes, as well as hard disc block sizes.</p></span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both have asymptotic time complexity of order \( O \)(log <em>n</em>).</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>Both have asymptotic time complexity of order \\( O \\)(log <em>n</em>).</p></div>`
         },
         {
             marks: 1,
@@ -17268,16 +17268,16 @@ registerTest({
             image: "",
             options: [
                 `<span style="display: inline;"><p>S -> Aa|a , A -> a</p></span>`,
-                `<span style="display: inline;"><p>S -> aSb|aAb|\( \in \), A -> c</p></span>`,
+                `<span style="display: inline;"><p>S -> aSb|aAb|\\( \\in \\), A -> c</p></span>`,
                 `<span style="display: inline;"><p>S -> aS|Sa|a</p></span>`,
-                `<span style="display: inline;"><p>S -> aA|bB, A -> aA|\( \in \), B -> bB|\( \in \)</p></span>`,
+                `<span style="display: inline;"><p>S -> aA|bB, A -> aA|\\( \\in \\), B -> bB|\\( \\in \\)</p></span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <ul>
 <li>S -> Aa|a , A -> a<br>The alternative S -> a produces only a, not aa. Hence, no string has two distinct derivations.<br>Therefore, option (a) is unambiguous.</li>
-<li>S -> aSb|aAb|\( \in \), A -> c<br>The production aSb generates strings of the form a<sup>n</sup>b<sup>n</sup>, whereas S -> aAb => acb generates a string containing c. These two cases cannot generate the same string.<br>Therefore, option (b) is unambiguous.</li>
+<li>S -> aSb|aAb|\\( \\in \\), A -> c<br>The production aSb generates strings of the form a<sup>n</sup>b<sup>n</sup>, whereas S -> aAb => acb generates a string containing c. These two cases cannot generate the same string.<br>Therefore, option (b) is unambiguous.</li>
 <li>S -> aS|Sa|a<br>Consider the string aa:<br>S => aS => aa and S => Sa => aa<br>The same string has two different derivations (and hence two different parse trees).<br>Therefore, option (c) is ambiguous.</li>
-<li>S -> aA|bB, A -> aA|\( \in \), B -> bB|\( \in \)<br>S -> aA generates only a<sup>+</sup>, while S -> bB generates only b<sup>+</sup>. Thus, the two alternatives cannot generate the same string.<br>Therefore, option (d) is unambiguous.</li>
+<li>S -> aA|bB, A -> aA|\\( \\in \\), B -> bB|\\( \\in \\)<br>S -> aA generates only a<sup>+</sup>, while S -> bB generates only b<sup>+</sup>. Thus, the two alternatives cannot generate the same string.<br>Therefore, option (d) is unambiguous.</li>
 </ul></div>`
         },
         {
@@ -17388,13 +17388,13 @@ registerTest({
             text: `<span style="display: inline;"><p>A queue is implemented using two stack such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the queue)?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>Both operations can be performed in \( O \)(1) time.</p></span>`,
-                `<span style="display: inline;"><p>At most one operation can be performed in \( O \)(1) time but the worst case time for the other operation will be \( O \)(<em>n</em>).</p></span>`,
-                `<span style="display: inline;"><p>The worst case time complexity for both operations will be \( \Omega \)(<em>n</em>).</p></span>`,
-                `<span style="display: inline;"><p>Worst case time complexity for both operations will be \( \Omega \)(log <em>n</em>).</p></span>`,
+                `<span style="display: inline;"><p>Both operations can be performed in \\( O \\)(1) time.</p></span>`,
+                `<span style="display: inline;"><p>At most one operation can be performed in \\( O \\)(1) time but the worst case time for the other operation will be \\( O \\)(<em>n</em>).</p></span>`,
+                `<span style="display: inline;"><p>The worst case time complexity for both operations will be \\( \\Omega \\)(<em>n</em>).</p></span>`,
+                `<span style="display: inline;"><p>Worst case time complexity for both operations will be \\( \\Omega \\)(log <em>n</em>).</p></span>`,
             ],
             answer: "B",
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>ENQUEUE operation will take \( O \)(1) time.<br>DEQUEUE operation will take \( O \)(<em>n</em>) time for first element after that each element will take \( O \)(1) time.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>ENQUEUE operation will take \\( O \\)(1) time.<br>DEQUEUE operation will take \\( O \\)(<em>n</em>) time for first element after that each element will take \\( O \\)(1) time.</p></div>`
         },
         {
             marks: 1,
@@ -17423,13 +17423,13 @@ registerTest({
             text: `<span style="display: inline;"><p>Consider the following statement:</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>Merge sort on linked list take \( O \)(<em>n </em>log <em>n</em>) time to sort input of length <em>n</em>.</p></span>`,
-                `<span style="display: inline;"><p>Inplace merge sort on array will take \( O \)(<em>n </em>log <em>n</em>) time.</p></span>`,
+                `<span style="display: inline;"><p>Merge sort on linked list take \\( O \\)(<em>n </em>log <em>n</em>) time to sort input of length <em>n</em>.</p></span>`,
+                `<span style="display: inline;"><p>Inplace merge sort on array will take \\( O \\)(<em>n </em>log <em>n</em>) time.</p></span>`,
                 `<span style="display: inline;"><p>Merge sort or linked list give better space complexity then on array.</p></span>`,
-                `<span style="display: inline;"><p>Merge procedure takes \( O \)(<em>m </em>+ <em>n</em>) time to merge two sorted arrays of size <em>m </em>and <em>n</em>.</p></span>`,
+                `<span style="display: inline;"><p>Merge procedure takes \\( O \\)(<em>m </em>+ <em>n</em>) time to merge two sorted arrays of size <em>m </em>and <em>n</em>.</p></span>`,
             ],
             answer: ["A", "C", "D"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Inplace merge sort time complexity is \( O \)(n<sup>2</sup>).</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>• Inplace merge sort time complexity is \\( O \\)(n<sup>2</sup>).</p></div>`
         },
         {
             marks: 1,
@@ -17475,7 +17475,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider the following augmented grammar with {+, *, (, ), a} as terminals and E' as the start<br>symbol:<br>• E' -> E<br>• E -> TA<br>• A -> +TA|\( \in \)<br>• T -> FB<br>• B -> *FB|\( \in \)<br>• F -> (E)|a<br>Let I<sub>0</sub> = CLOSURE({E' -> .E})<br>The number of LR(0) items in the set GOTO(GOTO(GOTO (I<sub>0</sub>,' ('), E), ') ') is ________.</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following augmented grammar with {+, *, (, ), a} as terminals and E' as the start<br>symbol:<br>• E' -> E<br>• E -> TA<br>• A -> +TA|\\( \\in \\)<br>• T -> FB<br>• B -> *FB|\\( \\in \\)<br>• F -> (E)|a<br>Let I<sub>0</sub> = CLOSURE({E' -> .E})<br>The number of LR(0) items in the set GOTO(GOTO(GOTO (I<sub>0</sub>,' ('), E), ') ') is ________.</p></span>`,
             image: "",
             options: [
             ],
@@ -17524,7 +17524,7 @@ registerTest({
             options: [
             ],
             answer: 4,
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>7 P operations, 10 V operations<br>S = 1 => S = 1 - 7 + 10 = 4<br>\( \therefore \) S = 4 after the given operations.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>7 P operations, 10 V operations<br>S = 1 => S = 1 - 7 + 10 = 4<br>\\( \\therefore \\) S = 4 after the given operations.</p></div>`
         },
         {
             marks: 1,
@@ -17556,7 +17556,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let \( \chi \)(G) denote the chromatic number of a graph G.<br>Determine the chromatic numbers of the following graphs, respectively:<br><img src="images/pw_full_syllabus_test_6/mceclip47-1787749545620.png"><br>Here, \( \lor \) denotes the join of two graphs and \( \cup \) denotes their disjoint union.<br>Which of the following gives the correct values of the four chromatic numbers?</p></span>`,
+            text: `<span style="display: inline;"><p>Let \\( \\chi \\)(G) denote the chromatic number of a graph G.<br>Determine the chromatic numbers of the following graphs, respectively:<br><img src="images/pw_full_syllabus_test_6/mceclip47-1787749545620.png"><br>Here, \\( \\lor \\) denotes the join of two graphs and \\( \\cup \\) denotes their disjoint union.<br>Which of the following gives the correct values of the four chromatic numbers?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p><em>m </em>+ 3, 2, 3, 4</p></span>`,
@@ -17872,11 +17872,11 @@ registerTest({
             options: [
                 `<span style="display: inline;"><p>L(D<sub>1</sub>) = L(D<sub>2</sub>)</p></span>`,
                 `<span style="display: inline;"><p>L(D<sub>2</sub>) is a proper subset of L(D<sub>1</sub>)</p></span>`,
-                `<span style="display: inline;"><p>L(D<sub>1</sub>) \( \cap \) L(D<sub>2</sub>) = L(D<sub>2</sub>)</p></span>`,
+                `<span style="display: inline;"><p>L(D<sub>1</sub>) \\( \\cap \\) L(D<sub>2</sub>) = L(D<sub>2</sub>)</p></span>`,
                 `<span style="display: inline;"><p>L(D<sub>1</sub>) \L(D<sub>2</sub>) is an infinite language.</p></span>`,
             ],
             answer: ["B", "C", "D"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>This is well-defined because, from the given automata:<br>• D<sub>1</sub> accepts all binary strings that contain 101 as a substring.<br>• D<sub>2</sub> accepts all binary strings that end with 101.<br>Therefore, L(D<sub>1</sub>) \( \subseteq \) L(D<sub>2</sub>)<br>For example, 1010 \( \in \) L(D<sub>1</sub>) but 1010 \( \notin \) L(D<sub>2</sub>), proving that the subset is proper. Also, there are<br>infinitely many strings containing 101 but not ending in 101, such as 1010, 10100, 101000, ... .</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>This is well-defined because, from the given automata:<br>• D<sub>1</sub> accepts all binary strings that contain 101 as a substring.<br>• D<sub>2</sub> accepts all binary strings that end with 101.<br>Therefore, L(D<sub>1</sub>) \\( \\subseteq \\) L(D<sub>2</sub>)<br>For example, 1010 \\( \\in \\) L(D<sub>1</sub>) but 1010 \\( \\notin \\) L(D<sub>2</sub>), proving that the subset is proper. Also, there are<br>infinitely many strings containing 101 but not ending in 101, such as 1010, 10100, 101000, ... .</p></div>`
         },
         {
             marks: 2,
@@ -17897,7 +17897,7 @@ registerTest({
             marks: 2,
             neg: 0,
             type: "MSQ",
-            text: `<span style="display: inline;"><p>Let G = (V, E) be an undirected connected simple (i.e., no parallel edges or self-loops) graph with the weight function w : E -> R on its edge set. Let w(e<sub>1</sub>) &lt; w(e<sub>2</sub>) &lt; ..... &lt; w(e<sub>m</sub>), where E = {e<sub>1</sub>, e<sub>2</sub>, ....., e<sub>m</sub>} and m \( \ge \) 2. Suppose T is a minimum spanning tree of G. Which of the following statements is/are correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Let G = (V, E) be an undirected connected simple (i.e., no parallel edges or self-loops) graph with the weight function w : E -> R on its edge set. Let w(e<sub>1</sub>) &lt; w(e<sub>2</sub>) &lt; ..... &lt; w(e<sub>m</sub>), where E = {e<sub>1</sub>, e<sub>2</sub>, ....., e<sub>m</sub>} and m \\( \\ge \\) 2. Suppose T is a minimum spanning tree of G. Which of the following statements is/are correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>The tree T has to contain the edge e<sub>1</sub>.</p></span>`,
@@ -17975,7 +17975,7 @@ registerTest({
             type: "NAT",
             text: `<span style="display: inline;"><p>A system of linear equations is given by:</p>
 <p><img src="images/pw_full_syllabus_test_6/mceclip26-1787812942072.png"></p>
-<p>Let L be the unique value of \( \lambda \) for which the system is inconsistent (has no solution) for some value of \( \mu \). Let M be the value of \( \mu \) such that the system has infinitely many solutions when \( \lambda \) = L. Calculate the integer value of L + M is ________.</p></span>`,
+<p>Let L be the unique value of \\( \\lambda \\) for which the system is inconsistent (has no solution) for some value of \\( \\mu \\). Let M be the value of \\( \\mu \\) such that the system has infinitely many solutions when \\( \\lambda \\) = L. Calculate the integer value of L + M is ________.</p></span>`,
             image: "",
             options: [
             ],
@@ -18146,7 +18146,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>In the figure, if it is given that O is the centre of the circle and \( \angle \)AOC = 150° then \( \angle \)ABC is_____</p>
+            text: `<span style="display: inline;"><p>In the figure, if it is given that O is the centre of the circle and \\( \\angle \\)AOC = 150° then \\( \\angle \\)ABC is_____</p>
 <p><img src="images/pw_full_syllabus_test_7/mceclip12-1785133963068.png"></p></span>`,
             image: "",
             options: [
@@ -18162,7 +18162,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>For the implementation of Boolean Function: F(w, x, y, z) = \( \Sigma \)m(1, 3, 5, 7, 9, 11), the minimum number of two input NOR gates required is</p></span>`,
+            text: `<span style="display: inline;"><p>For the implementation of Boolean Function: F(w, x, y, z) = \\( \\Sigma \\)m(1, 3, 5, 7, 9, 11), the minimum number of two input NOR gates required is</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>3</p></span>`,
@@ -18223,7 +18223,7 @@ registerTest({
             marks: 1,
             neg: 0.33,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Consider the following statements:<br>S1 : Let the Bellman-Ford algorithm be executed on a weighted graph G = (V, E, w) from a vertex s \( \in \) V. If there is a vertex v \( \in \) V, i.e., \( \delta \)|V|(s,v) &lt; \( \delta \)<sub>|V|- 1</sub>(s, v) , then v is on a negative-weight cycle of G.<br>S5 : Floyd-Warshall solves all-pairs shortest paths in the same asymptotic running time when applied to weighted complete graphs, i.e., graphs where every vertex has an edge to every other vertex.<br>Which of the above statements are correct?</p></span>`,
+            text: `<span style="display: inline;"><p>Consider the following statements:<br>S1 : Let the Bellman-Ford algorithm be executed on a weighted graph G = (V, E, w) from a vertex s \\( \\in \\) V. If there is a vertex v \\( \\in \\) V, i.e., \\( \\delta \\)|V|(s,v) &lt; \\( \\delta \\)<sub>|V|- 1</sub>(s, v) , then v is on a negative-weight cycle of G.<br>S5 : Floyd-Warshall solves all-pairs shortest paths in the same asymptotic running time when applied to weighted complete graphs, i.e., graphs where every vertex has an edge to every other vertex.<br>Which of the above statements are correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>Only S<sub>1</sub></p></span>`,
@@ -18351,9 +18351,9 @@ registerTest({
             text: `<span style="display: inline;"><p>Given that f(x) = x<sup>3</sup> - 12x<sup>2</sup> + 36x + 17, which of the following statements is correct?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>f(x) is strictly decreasing for x\( \in \)(6, \( \infty \))</p></span>`,
-                `<span style="display: inline;"><p>f(x) is strictly increasing for x\( \in \)(2, 6)</p></span>`,
-                `<span style="display: inline;"><p>f(x) is strictly increasing for x\( \in \)(-\( \infty \), 2)</p></span>`,
+                `<span style="display: inline;"><p>f(x) is strictly decreasing for x\\( \\in \\)(6, \\( \\infty \\))</p></span>`,
+                `<span style="display: inline;"><p>f(x) is strictly increasing for x\\( \\in \\)(2, 6)</p></span>`,
+                `<span style="display: inline;"><p>f(x) is strictly increasing for x\\( \\in \\)(-\\( \\infty \\), 2)</p></span>`,
                 `<span style="display: inline;"><p>None of the above</p></span>`,
             ],
             answer: "C",
@@ -18385,7 +18385,7 @@ registerTest({
             options: [
                 `<span style="display: inline;"><p>Y = X<sub>1</sub> + X<sub>2</sub></p></span>`,
                 `<span style="display: inline;"><p>Y = X<sub>1</sub> X<sub>2</sub></p></span>`,
-                `<span style="display: inline;"><p>Y = X<sub>1</sub> \( \oplus \) X<sub>2</sub></p></span>`,
+                `<span style="display: inline;"><p>Y = X<sub>1</sub> \\( \\oplus \\) X<sub>2</sub></p></span>`,
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip26-1787551422404.png"></p></span>`,
             ],
             answer: "D",
@@ -18404,7 +18404,7 @@ registerTest({
                 `<span style="display: inline;"><p>None of these</p></span>`,
             ],
             answer: ["A", "B", "C"],
-            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(Z, +) is both group and Abelian group, as it satisfies commutative property and inverse element is -a \( \forall \)a \( \in \) Z.<br>(Z, -) is never semigroup, because subtraction operation is not associative and hence cannot be monoid too.<br>(Z, ×) is monoid but not group, because inverse does not exist i.e. for any integer 'a' it's inverse is 1/a which is a rational number. Hence it is monoid only.</p></div>`
+            solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p>(Z, +) is both group and Abelian group, as it satisfies commutative property and inverse element is -a \\( \\forall \\)a \\( \\in \\) Z.<br>(Z, -) is never semigroup, because subtraction operation is not associative and hence cannot be monoid too.<br>(Z, ×) is monoid but not group, because inverse does not exist i.e. for any integer 'a' it's inverse is 1/a which is a rational number. Hence it is monoid only.</p></div>`
         },
         {
             marks: 1,
@@ -18553,11 +18553,11 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>Let G = (V, E) be a connected undirected graph with positive edge weights, and let T be a minimum spanning tree of G. For any two vertices u, v \( \in \) V, let<br>• w<sub>1</sub>(u, v) denote the minimum possible value of the maximum edge weight among all paths between u and v in G, and<br>• w<sub>2</sub>(u, v) denote the maximum edge weight on the unique path between u, v in T.<br>Which one of the following options is correct for all possible choices of G, T, u and v?</p></span>`,
+            text: `<span style="display: inline;"><p>Let G = (V, E) be a connected undirected graph with positive edge weights, and let T be a minimum spanning tree of G. For any two vertices u, v \\( \\in \\) V, let<br>• w<sub>1</sub>(u, v) denote the minimum possible value of the maximum edge weight among all paths between u and v in G, and<br>• w<sub>2</sub>(u, v) denote the maximum edge weight on the unique path between u, v in T.<br>Which one of the following options is correct for all possible choices of G, T, u and v?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p>w<sub>1</sub>(u, v) &gt; w<sub>2</sub>(u, v)</p></span>`,
-                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) \( \ne \) w<sub>2</sub>(u, v)</p></span>`,
+                `<span style="display: inline;"><p>w<sub>1</sub>(u, v) \\( \\ne \\) w<sub>2</sub>(u, v)</p></span>`,
                 `<span style="display: inline;"><p>w<sub>1</sub>(u, v) = w<sub>2</sub>(u, v)</p></span>`,
                 `<span style="display: inline;"><p>w<sub>1</sub>(u, v) &lt; w<sub>2</sub>(u, v)</p></span>`,
             ],
@@ -18587,8 +18587,8 @@ registerTest({
             text: `<span style="display: inline;"><p>k log n sorted subarrays, each of size n/k, are to be merged into a single sorted array. Find the time complexity of the most efficient algorithm that merges all the subarrays into a single sorted array.</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(n log n \( \cdot \) log(k log n))</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n log n \( \cdot \) log k)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n log n \\( \\cdot \\) log(k log n))</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n log n \\( \\cdot \\) log k)</p></span>`,
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip41-1787552684573.png"></p></span>`,
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_7/mceclip42-1787552690657.png"></p></span>`,
             ],
@@ -18650,10 +18650,10 @@ registerTest({
             text: `<span style="display: inline;"><p>Which one of the following predicate formulae is not logically valid?<br>Note that Q is a predicate formula without any free occurrence of x.</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( \forall \)x(p(x) \( \land \)Q) \( \equiv \) \( \forall \)x p(x) \( \land \)Q</p></span>`,
-                `<span style="display: inline;"><p>\( \exists \)x(p(x)\( \lor \)Q) \( \equiv \) \( \exists \)x p(x)\( \lor \)Q</p></span>`,
-                `<span style="display: inline;"><p>\( \exists \)x(Q -> p(x)) \( \equiv \)Q -> \( \forall \)x p(x)</p></span>`,
-                `<span style="display: inline;"><p>\( \forall \)x(Q -> p(x)) \( \equiv \)Q -> \( \forall \)x p(x)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\forall \\)x(p(x) \\( \\land \\)Q) \\( \\equiv \\) \\( \\forall \\)x p(x) \\( \\land \\)Q</p></span>`,
+                `<span style="display: inline;"><p>\\( \\exists \\)x(p(x)\\( \\lor \\)Q) \\( \\equiv \\) \\( \\exists \\)x p(x)\\( \\lor \\)Q</p></span>`,
+                `<span style="display: inline;"><p>\\( \\exists \\)x(Q -> p(x)) \\( \\equiv \\)Q -> \\( \\forall \\)x p(x)</p></span>`,
+                `<span style="display: inline;"><p>\\( \\forall \\)x(Q -> p(x)) \\( \\equiv \\)Q -> \\( \\forall \\)x p(x)</p></span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip48-1787553037819.png"></p>
@@ -18783,10 +18783,10 @@ registerTest({
 <p><img src="images/pw_full_syllabus_test_7/mceclip71-1787554297737.png"></p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p>\( O \)(n (log n)<sup>2</sup>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n<sup>3</sup>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n<sup>4</sup>)</p></span>`,
-                `<span style="display: inline;"><p>\( O \)(n<sup>3</sup> log n)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n (log n)<sup>2</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n<sup>3</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n<sup>4</sup>)</p></span>`,
+                `<span style="display: inline;"><p>\\( O \\)(n<sup>3</sup> log n)</p></span>`,
             ],
             answer: "C",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_7/mceclip72-1787554351807.png"></p></div>`
@@ -19280,10 +19280,10 @@ registerTest({
             text: `<span style="display: inline;"><p>Consider 10 CPU bound processes sharing the CPU using a Round-Robin scheduling algorithm. The time required for each context switch is 0.2 seconds. One complete Round-Robin cycle (i.e., the time taken until every ready process has been allocated the CPU exactly once) must not exceed 100 seconds. Assuming all 10 processes remain in the ready queue throughout execution, what is the maximum permissible time quantum <em>q</em>?</p></span>`,
             image: "",
             options: [
-                `<span style="display: inline;"><p><em>q </em>\( \le \) 9.8 seconds</p></span>`,
-                `<span style="display: inline;"><p><em>q </em>\( \ge \) 9.8 seconds</p></span>`,
-                `<span style="display: inline;"><p><em>q </em>\( \le \) 10.8 seconds</p></span>`,
-                `<span style="display: inline;"><p><em>q </em>\( \ge \) 10.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\\( \\le \\) 9.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\\( \\ge \\) 9.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\\( \\le \\) 10.8 seconds</p></span>`,
+                `<span style="display: inline;"><p><em>q </em>\\( \\ge \\) 10.8 seconds</p></span>`,
             ],
             answer: "A",
             solution: `<div style="background-color: #bae1c4; border: 1px solid #75c98a; border-radius: 10px; padding: 10px 15px; margin-top: 15px; color: #155724; font-family: sans-serif;">  <strong style="font-size: 16px; color: #000;">Explanation:</strong><br>  <p><img src="images/pw_full_syllabus_test_8/mceclip26-1787650573726.png"></p></div>`
@@ -19353,7 +19353,7 @@ registerTest({
 <li>The property of a Turing Machine language being regular is a non-trivial property.<br>By Rice's theorem, {<M>|L(M) is regular} is undecidable.<br>Not decidable.</li>
 <li>The number of possible inputs of length less than 5 is finite.<br>However, deciding whether M halts on each input is equivalent to solving the halting problem for those inputs.<br>Hence, it is undecidable.<br>Not decidable.</li>
 <li>The number of steps is bounded by k.<br>A TM can simulate M on w for at most k steps and check whether it accepts.<br>Hence, the language is decidable.<br>Decidable.</li>
-<li>This is the non-emptiness problem:<br>L(M) \( \ne \) 0<br>The emptiness problem for Turing Machines is undecidable.<br>Not Decidable</li>
+<li>This is the non-emptiness problem:<br>L(M) \\( \\ne \\) 0<br>The emptiness problem for Turing Machines is undecidable.<br>Not Decidable</li>
 </ul></div>`
         },
         {
@@ -19520,7 +19520,7 @@ registerTest({
             marks: 1,
             neg: 0,
             type: "NAT",
-            text: `<span style="display: inline;"><p>Consider a CPU where all the instruction require 8 clock cycles to complete execution. There are 514 instructions in instruction set. It is found that 259 control signals are needed to be generated by control unit. While designing the vertical \( \mu \)-programmed control unit, single address field format is used for branch control logic. The size of control memory in byte is ________.</p></span>`,
+            text: `<span style="display: inline;"><p>Consider a CPU where all the instruction require 8 clock cycles to complete execution. There are 514 instructions in instruction set. It is found that 259 control signals are needed to be generated by control unit. While designing the vertical \\( \\mu \\)-programmed control unit, single address field format is used for branch control logic. The size of control memory in byte is ________.</p></span>`,
             image: "",
             options: [
             ],
@@ -19620,7 +19620,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>The minimized Boolean expression for <em>F = (A + D) (B \( \oplus \) C) + AD'</em> is</p></span>`,
+            text: `<span style="display: inline;"><p>The minimized Boolean expression for <em>F = (A + D) (B \\( \\oplus \\) C) + AD'</em> is</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p><em>(A + D) (B'C + BC) + AD'</em></p></span>`,
@@ -19698,7 +19698,7 @@ registerTest({
             marks: 2,
             neg: 0.66,
             type: "MCQ",
-            text: `<span style="display: inline;"><p>For any real parameter k \( \in \) R, consider the definite integral<br><img src="images/pw_full_syllabus_test_8/mceclip82-1787653335812.png"><br>Which of the following statements is/are correct?</p></span>`,
+            text: `<span style="display: inline;"><p>For any real parameter k \\( \\in \\) R, consider the definite integral<br><img src="images/pw_full_syllabus_test_8/mceclip82-1787653335812.png"><br>Which of the following statements is/are correct?</p></span>`,
             image: "",
             options: [
                 `<span style="display: inline;"><p><img src="images/pw_full_syllabus_test_8/mceclip83-1787653353959.png"></p></span>`,
