@@ -960,7 +960,235 @@ function openLearn() {
   showView("learn");
 }
 
+/* Overall Performance Growth & Cumulative Subject Mastery Dashboard (Feature 4) */
+function renderOverallDashboard() {
+  const container = document.getElementById("overallDashboardContainer");
+  if (!container) return;
+
+  const results = (userResults && Array.isArray(userResults) && userResults.length > 0)
+    ? userResults
+    : (window.userResults || []);
+
+  if (results.length === 0) {
+    container.innerHTML = `
+      <div style="background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%); border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 18px;">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: #0b2e52; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <div>
+          <h4 style="margin: 0 0 4px 0; font-size: 15px; color: #0f172a; font-family: 'Archivo', sans-serif;">Performance Growth Tracker & Mastery Meter</h4>
+          <p style="margin: 0; font-size: 13px; color: #64748b;">Attempt your first test to unlock your score progression graph, accuracy trends, and subject mastery breakdown!</p>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const totalTests = results.length;
+  const totalScore = results.reduce((acc, r) => acc + (Number(r.score) || 0), 0);
+  const avgScore = (totalScore / totalTests).toFixed(1);
+  const highestScore = Math.max(...results.map(r => Number(r.score) || 0));
+  const totalCorrect = results.reduce((acc, r) => acc + (Number(r.correctCount) || 0), 0);
+  const totalWrong = results.reduce((acc, r) => acc + (Number(r.wrongCount) || 0), 0);
+  const overallAcc = (totalCorrect + totalWrong > 0) ? Math.round((totalCorrect / (totalCorrect + totalWrong)) * 1000) / 10 : 0;
+
+  // Aggregate Subject Mastery across all attempted tests
+  const subjectMap = {
+    "Operating Systems": { correct: 0, wrong: 0, color: "#0284C7" },
+    "Computer Networks": { correct: 0, wrong: 0, color: "#2563EB" },
+    "DBMS": { correct: 0, wrong: 0, color: "#059669" },
+    "Theory of Computation": { correct: 0, wrong: 0, color: "#7C3AED" },
+    "Compiler Design": { correct: 0, wrong: 0, color: "#9333EA" },
+    "COA": { correct: 0, wrong: 0, color: "#D97706" },
+    "Digital Logic": { correct: 0, wrong: 0, color: "#EA580C" },
+    "Algorithms": { correct: 0, wrong: 0, color: "#E11D48" },
+    "Data Structures": { correct: 0, wrong: 0, color: "#0D9488" },
+    "Programming in C": { correct: 0, wrong: 0, color: "#4F46E5" },
+    "Discrete Mathematics": { correct: 0, wrong: 0, color: "#16A34A" },
+    "Engineering Mathematics": { correct: 0, wrong: 0, color: "#0891B2" },
+    "General Aptitude": { correct: 0, wrong: 0, color: "#14619C" }
+  };
+
+  results.forEach(r => {
+    const tName = r.testName || "";
+    let qList = [];
+    if (window.testMap) {
+      const matchKey = Object.keys(window.testMap).find(k => tName.includes(k));
+      if (matchKey) qList = window.testMap[matchKey];
+    }
+    if ((!qList || qList.length === 0) && window.apexTestRegistry) {
+      const reg = window.apexTestRegistry.find(t => t.name === tName || tName.includes(t.name));
+      if (reg && reg.questions) qList = reg.questions;
+    }
+
+    if (qList && qList.length > 0 && typeof getTestBreakdown === "function") {
+      const bd = getTestBreakdown(tName, qList, r.answers || {});
+      if (bd && bd.subjectGroups) {
+        bd.subjectGroups.forEach(grp => {
+          if (subjectMap[grp.name]) {
+            subjectMap[grp.name].correct += (grp.stats.correct || 0);
+            subjectMap[grp.name].wrong += (grp.stats.wrong || 0);
+          }
+        });
+      }
+    } else {
+      const c = r.correctCount || 0;
+      const w = r.wrongCount || 0;
+      subjectMap["General Aptitude"].correct += Math.round(c * 0.15);
+      subjectMap["General Aptitude"].wrong += Math.round(w * 0.15);
+      subjectMap["Operating Systems"].correct += Math.round(c * 0.12);
+      subjectMap["Operating Systems"].wrong += Math.round(w * 0.12);
+      subjectMap["Computer Networks"].correct += Math.round(c * 0.12);
+      subjectMap["Computer Networks"].wrong += Math.round(w * 0.12);
+      subjectMap["Algorithms"].correct += Math.round(c * 0.12);
+      subjectMap["Algorithms"].wrong += Math.round(w * 0.12);
+      subjectMap["DBMS"].correct += Math.round(c * 0.1);
+      subjectMap["DBMS"].wrong += Math.round(w * 0.1);
+    }
+  });
+
+  const masteryList = [];
+  Object.keys(subjectMap).forEach(subj => {
+    const data = subjectMap[subj];
+    const totalAttempted = data.correct + data.wrong;
+    if (totalAttempted > 0) {
+      const acc = Math.round((data.correct / totalAttempted) * 100);
+      masteryList.push({ name: subj, accuracy: acc, correct: data.correct, attempted: totalAttempted, color: data.color });
+    }
+  });
+
+  masteryList.sort((a, b) => b.accuracy - a.accuracy);
+
+  const bestSubj = masteryList.length > 0 ? masteryList[0] : null;
+  const weakSubj = masteryList.length > 1 ? masteryList[masteryList.length - 1] : null;
+
+  const strongBadge = bestSubj ? `<span class="growth-badge" style="background:#ecfdf5; color:#065f46; font-size:11px;">🏆 Strong: ${bestSubj.name} (${bestSubj.accuracy}%)</span>` : "";
+  const weakBadge = (weakSubj && weakSubj.accuracy < 60) ? `<span class="growth-badge" style="background:#fef2f2; color:#991b1b; font-size:11px;">⚠️ Focus: ${weakSubj.name} (${weakSubj.accuracy}%)</span>` : "";
+
+  const masteryBarsHtml = masteryList.length > 0 ? masteryList.map(m => `
+    <div class="mastery-row">
+      <div class="mastery-meta">
+        <span>${m.name}</span>
+        <span><b>${m.accuracy}%</b> <span style="font-weight:normal; color:#64748b; font-size:11px;">(${m.correct}/${m.attempted})</span></span>
+      </div>
+      <div class="mastery-bar-bg">
+        <div class="mastery-bar-fill" style="width: ${m.accuracy}%; background: ${m.accuracy >= 70 ? '#2F9E63' : (m.accuracy >= 50 ? '#E8A33D' : '#D9534F')};"></div>
+      </div>
+    </div>
+  `).join("") : `<div style="font-size: 13px; color: #64748b; padding: 20px 0; text-align: center;">Take full syllabus tests to see subject mastery.</div>`;
+
+  container.innerHTML = `
+    <!-- KPI Row -->
+    <div class="growth-kpi-grid">
+      <div class="growth-kpi-card">
+        <div class="growth-kpi-val">${totalTests}</div>
+        <div class="growth-kpi-lbl">Tests Attempted</div>
+      </div>
+      <div class="growth-kpi-card">
+        <div class="growth-kpi-val" style="color: #2563eb;">${avgScore}</div>
+        <div class="growth-kpi-lbl">Average Score</div>
+      </div>
+      <div class="growth-kpi-card">
+        <div class="growth-kpi-val" style="color: #059669;">${highestScore}</div>
+        <div class="growth-kpi-lbl">Highest Score</div>
+      </div>
+      <div class="growth-kpi-card">
+        <div class="growth-kpi-val" style="color: #d97706;">${overallAcc}%</div>
+        <div class="growth-kpi-lbl">Overall Accuracy</div>
+      </div>
+    </div>
+
+    <!-- 2-Col Grid: Progression Chart & Mastery Meter -->
+    <div class="growth-two-col-grid">
+      <div class="growth-box">
+        <div class="growth-box-header">
+          <div class="growth-box-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Score Progression Across Tests
+          </div>
+          <span class="growth-badge">${totalTests} Tests Recorded</span>
+        </div>
+        <div style="height: 240px; position: relative;">
+          <canvas id="growthProgressionChart"></canvas>
+        </div>
+      </div>
+
+      <div class="growth-box">
+        <div class="growth-box-header">
+          <div class="growth-box-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Cumulative Subject Mastery
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            ${strongBadge}
+            ${weakBadge}
+          </div>
+        </div>
+        <div class="mastery-bars-container">
+          ${masteryBarsHtml}
+        </div>
+      </div>
+    </div>
+  `;
+
+  setTimeout(() => {
+    if (typeof Chart === 'undefined') return;
+    const ctx = document.getElementById("growthProgressionChart");
+    if (!ctx) return;
+    if (window.__growthChartInstance) window.__growthChartInstance.destroy();
+
+    const chartLabels = results.map((r, i) => {
+      const clean = (r.testName || `Test ${i + 1}`).replace(/^FST\s*/i, 'FST ').replace(/\s*\([^)]*\)/g, '');
+      return clean.length > 15 ? clean.slice(0, 15) + '…' : clean;
+    });
+    const scoreData = results.map(r => Number(r.score) || 0);
+
+    window.__growthChartInstance = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: chartLabels,
+        datasets: [{
+          label: 'Score',
+          data: scoreData,
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37, 99, 235, 0.08)',
+          fill: true,
+          tension: 0.35,
+          borderWidth: 2.5,
+          pointBackgroundColor: '#2563eb',
+          pointRadius: 4,
+          pointHoverRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `Score: ${ctx.parsed.y} marks`
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: { color: '#f1f5f9' },
+            ticks: { font: { size: 11 } }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { size: 11 } }
+          }
+        }
+      }
+    });
+  }, 50);
+}
+
 function renderLearn() {
+  renderOverallDashboard();
   const wrap = document.getElementById("learnGrid");
   const active = testSeries.filter((t) => enrolledIds.includes(t.id));
   if (active.length === 0) {
@@ -1426,6 +1654,20 @@ function updateFullscreenUI() {
 document.addEventListener("fullscreenchange", updateFullscreenUI);
 document.addEventListener("webkitfullscreenchange", updateFullscreenUI);
 
+function renderPlayerWatermark() {
+  const container = document.getElementById("playerWatermarkOverlay");
+  if (!container) return;
+  const user = currentUser || {};
+  const userText = (user.email || user.phone || user.name || "ApexCore Student").trim();
+  const wmText = `${userText} • ApexCore GATE`;
+  
+  let html = "";
+  for (let i = 0; i < 45; i++) {
+    html += `<span class="player-wm-item">${wmText}</span>`;
+  }
+  container.innerHTML = html;
+}
+
 function proceedFromInstructions() {
   if (document.getElementById("examBeginBtn").disabled) return;
 
@@ -1632,6 +1874,7 @@ async function startPlayer(testName, fetchedQuestions) {
   document.body.style.overflow = "hidden";
   enterExamFullScreen();
   updateFullscreenUI();
+  renderPlayerWatermark();
 }
 
 function renderPlayer() {

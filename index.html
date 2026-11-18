@@ -312,14 +312,14 @@
         <div class="learn-toolbar" style="justify-content:space-between;">
           <div class="page-title" style="margin-bottom:0;">Learn</div>
           <div style="display:flex; gap:12px;">
-            <button class="btn-outline-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <button class="btn-outline-pill" onclick="renderOverallDashboard(); document.getElementById('overallDashboardContainer')?.scrollIntoView({behavior:'smooth'});"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <rect x="3" y="3" width="7" height="7" />
                 <rect x="14" y="3" width="7" height="7" />
                 <rect x="3" y="14" width="7" height="7" />
                 <rect x="14" y="14" width="7" height="7" />
               </svg>View Dashboard</button>
-            <button class="btn-outline-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <button class="btn-outline-pill" onclick="showView('contact');"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2">
                 <circle cx="12" cy="12" r="9" />
                 <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2 2-2 3.5M12 17h.01" />
@@ -327,7 +327,9 @@
           </div>
         </div>
 
-        <div class="section-heading" style="margin-top:8px;">Active Test Series</div>
+        <div id="overallDashboardContainer"></div>
+
+        <div class="section-heading" style="margin-top:24px;">Active Test Series</div>
         <div id="learnGrid" style="display:flex; flex-direction:column; gap:16px;"></div>
       </section>
 
@@ -579,7 +581,8 @@
 
     </div>
     <div class="player-body">
-      <div class="player-main">
+      <div class="player-main" style="position: relative;">
+        <div class="player-watermark-overlay" id="playerWatermarkOverlay"></div>
         <div class="player-qhead">
           <span class="qtype">Question Type: <span id="playerQType">MCQ</span></span>
           <div class="qmarks" id="playerMarksWrap">
@@ -1100,7 +1103,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=82"></script>
+  <script src="js/exam.js?v=83"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>
