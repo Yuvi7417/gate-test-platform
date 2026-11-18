@@ -12122,7 +12122,7 @@ registerTest({
 
 registerTest({
     series: "cs-gate-pyq",
-    name: "FST 01 - Full Syllabus Test - 1 (Basic Level-1)",
+    name: "FST 01 - Full Syllabus Test - 1 (Basic Level)",
     date: "November 10, 2026",
     topicsCovered: "Complete GATE CSE Syllabus (Technical + Aptitude)",
     subject: "flt",
