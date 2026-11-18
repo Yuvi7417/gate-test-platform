@@ -546,6 +546,15 @@
           </svg>
           Question Paper
         </span>
+        <span class="pt-icon" id="fullscreenToggleBtn" onclick="toggleExamFullScreen()" title="Toggle Full Screen">
+          <svg id="fsIconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+          </svg>
+          <svg id="fsIconCompress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;display:none;">
+            <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>
+          </svg>
+          <span id="fsBtnLabel">Full Screen</span>
+        </span>
       </div>
     </div>
     <div class="player-sectionbar">
@@ -1091,7 +1100,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=81"></script>
+  <script src="js/exam.js?v=82"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>

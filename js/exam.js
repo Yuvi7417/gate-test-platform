@@ -1365,6 +1365,67 @@ function findMatchingTest(testName) {
   return Object.keys(window.testBackendIdMap).find((key) => !key.includes("|") && testName.includes(key));
 }
 
+/* ==========================================================================
+   FULLSCREEN MODE HELPERS FOR TEST ATTEMPT / REATTEMPT
+   ========================================================================== */
+function enterExamFullScreen() {
+  try {
+    const elem = document.documentElement;
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(() => {});
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+      }
+    }
+  } catch (err) {
+    console.log("Fullscreen request bypassed:", err);
+  }
+}
+
+function exitExamFullScreen() {
+  try {
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  } catch (err) {
+    console.log("Exit fullscreen bypassed:", err);
+  }
+}
+
+function toggleExamFullScreen() {
+  if (document.fullscreenElement || document.webkitFullscreenElement) {
+    exitExamFullScreen();
+  } else {
+    enterExamFullScreen();
+  }
+}
+
+function updateFullscreenUI() {
+  const isFs = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+  const iconExpand = document.getElementById("fsIconExpand");
+  const iconCompress = document.getElementById("fsIconCompress");
+  const fsLabel = document.getElementById("fsBtnLabel");
+  if (iconExpand && iconCompress) {
+    iconExpand.style.display = isFs ? "none" : "";
+    iconCompress.style.display = isFs ? "" : "none";
+  }
+  if (fsLabel) {
+    fsLabel.textContent = isFs ? "Exit Fullscreen" : "Full Screen";
+  }
+}
+
+document.addEventListener("fullscreenchange", updateFullscreenUI);
+document.addEventListener("webkitfullscreenchange", updateFullscreenUI);
+
 function proceedFromInstructions() {
   if (document.getElementById("examBeginBtn").disabled) return;
 
@@ -1382,6 +1443,9 @@ function proceedFromInstructions() {
     alert("This test is not open for attempts yet. Please check back soon.");
     return;
   }
+
+  // Activate Fullscreen immediately on user click gesture
+  enterExamFullScreen();
 
   const backendTestId = (window.testBackendIdMap || {})[testKey];
 
@@ -1566,6 +1630,8 @@ async function startPlayer(testName, fetchedQuestions) {
   closeInstructions();
   document.getElementById("playerOverlay").classList.add("show");
   document.body.style.overflow = "hidden";
+  enterExamFullScreen();
+  updateFullscreenUI();
 }
 
 function renderPlayer() {
@@ -1683,6 +1749,7 @@ function exitPlayer() {
   clearInterval(playerTimerInterval);
   document.getElementById("playerOverlay").classList.remove("show");
   document.body.style.overflow = "";
+  exitExamFullScreen();
 }
 
 function closePlayerAndShowResult() {
@@ -3688,6 +3755,7 @@ window.closeQuestionPreviewModal = function() {
 };
 
 async function showResultPage(explicitTestName) {
+  exitExamFullScreen();
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };
   document.getElementById("resultUserAvatar").textContent = (
