@@ -2541,11 +2541,11 @@ function openPastResult(testName, seriesId) {
     const tMin = Math.floor(timeSecs / 60);
     const tSec = timeSecs % 60;
     lastResult = {
-      score: result.score || 0,
-      maxScore: result.maxScore || 100,
-      correctCount: result.correctCount || 0,
-      wrongCount: result.wrongCount || 0,
-      unattempted: result.unattempted || 0,
+      score: Number(result.score) || 0,
+      maxScore: Number(result.maxScore) || 100,
+      correctCount: parseInt(result.correctCount, 10) || 0,
+      wrongCount: parseInt(result.wrongCount, 10) || 0,
+      unattempted: parseInt(result.unattempted, 10) || 0,
       timeTakenSecs: timeSecs,
       tMin,
       tSec,
@@ -2683,11 +2683,12 @@ function getTestBreakdown(testName, questions, userAnswers) {
       const neg = typeof q.neg === 'number' ? q.neg : (marks === 2 ? 0.66 : 0.33);
       maxScore += marks;
 
-      const st = answers[idx];
+      const st = answers[idx] || answers[String(idx)];
+      const isUnat = !st || st.isUnattempted === true || st.answer === null || st.answer === undefined || st.answer === "" || (Array.isArray(st.answer) && st.answer.length === 0);
       if (st && st.isCorrect) {
         c++;
         score += marks;
-      } else if (st && !st.isCorrect && !st.isUnattempted) {
+      } else if (!isUnat) {
         w++;
         score -= neg;
       } else {
@@ -2953,11 +2954,14 @@ function renderTopperComparison(r, avgScore, avgAcc, highestScore, topperObj, to
   const el = document.getElementById("topperComparisonContainer");
   if (!el || !r) return;
 
-  const qLen = (questions && questions.length > 0) ? questions.length : (r.correctCount + r.wrongCount + r.unattempted || 65);
-  const myAttempted = r.correctCount + r.wrongCount;
+  const myC = parseInt(r.correctCount, 10) || 0;
+  const myW = parseInt(r.wrongCount, 10) || 0;
+  const myU = parseInt(r.unattempted, 10) || 0;
+  const qLen = (questions && questions.length > 0) ? questions.length : ((myC + myW + myU) || 65);
+  const myAttempted = myC + myW;
   const topperScore = (highestScore != null && highestScore > 0) ? highestScore : r.score;
-  const myAcc = (r.correctCount + r.wrongCount > 0)
-    ? Math.round((r.correctCount / (r.correctCount + r.wrongCount)) * 1000) / 10
+  const myAcc = myAttempted > 0
+    ? Math.round((myC / myAttempted) * 1000) / 10
     : 0;
 
   let topperAcc = 94;
@@ -3432,9 +3436,41 @@ async function showResultPage(explicitTestName) {
   document.getElementById("legIncorrect").textContent = r.wrongCount;
   document.getElementById("legUnattempted").textContent = r.unattempted;
 
-  const c = parseInt(r.correctCount) || 0;
-  const w = parseInt(r.wrongCount) || 0;
-  const u = parseInt(r.unattempted) || 0;
+  let c = parseInt(r.correctCount, 10);
+  let w = parseInt(r.wrongCount, 10);
+  let u = parseInt(r.unattempted, 10);
+
+  const rawAns = (lastResult && lastResult.answers && Object.keys(lastResult.answers).length > 0)
+    ? lastResult.answers
+    : (playerState || {});
+
+  // Fallback: If c, w are NaN or both 0 but actual answers exist in rawAns
+  if ((isNaN(c) || isNaN(w) || (c === 0 && w === 0)) && Object.keys(rawAns).length > 0) {
+    let reC = 0, reW = 0, reU = 0;
+    Object.values(rawAns).forEach(st => {
+      const isUnat = !st || st.isUnattempted === true || st.answer === null || st.answer === undefined || st.answer === "" || (Array.isArray(st.answer) && st.answer.length === 0);
+      if (st && st.isCorrect) reC++;
+      else if (!isUnat) reW++;
+      else reU++;
+    });
+    if (reC > 0 || reW > 0) {
+      c = reC;
+      w = reW;
+      u = reU;
+      r.correctCount = c;
+      r.wrongCount = w;
+      r.unattempted = u;
+    }
+  }
+
+  c = isNaN(c) ? 0 : c;
+  w = isNaN(w) ? 0 : w;
+  u = isNaN(u) ? 0 : u;
+
+  document.getElementById("legCorrect").textContent = c;
+  document.getElementById("legIncorrect").textContent = w;
+  document.getElementById("legUnattempted").textContent = u;
+
   const total = c + w + u;
   const totalSafe = total > 0 ? total : 1; // Avoid divide by zero
   const cPct = (c / totalSafe) * 100;
@@ -3444,10 +3480,10 @@ async function showResultPage(explicitTestName) {
     .getElementById("resultDonut")
     .style.setProperty("--donut-gradient", donutGradient);
 
-  const accuracy =
-    r.correctCount + r.wrongCount > 0
-      ? Math.round((r.correctCount / (r.correctCount + r.wrongCount)) * 1000) / 10
-      : 0;
+  const attemptedTotal = c + w;
+  const accuracy = attemptedTotal > 0
+    ? Math.round((c / attemptedTotal) * 1000) / 10
+    : 0;
   document.getElementById("statAccuracy").textContent = accuracy + "%";
   document.getElementById("statTime").textContent = r.tMin + " min " + r.tSec + " sec";
 
@@ -3690,10 +3726,14 @@ async function renderAdvancedCharts() {
   const avgMarks = diffs.map(d => astats.difficultyStats[d].avgMarks);
   const highestMarks = diffs.map(d => astats.difficultyStats[d].highestMarks);
 
+  const myAnswers = (lastResult && lastResult.answers && Object.keys(lastResult.answers).length > 0)
+    ? lastResult.answers
+    : (playerState || {});
+
   const myTime = diffs.map(d => {
     let sum = 0;
     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
-      const st = playerState[q.index];
+      const st = myAnswers[q.index] || myAnswers[String(q.index)];
       if (st && st.timeSpent) sum += st.timeSpent;
     });
     return sum / 60; // in minutes
@@ -3703,15 +3743,16 @@ async function renderAdvancedCharts() {
   const myAcc = diffs.map(d => {
     let c = 0, t = 0;
     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
-      const st = playerState[q.index];
-      if (st && !st.isUnattempted) {
+      const st = myAnswers[q.index] || myAnswers[String(q.index)];
+      const isUnat = !st || st.isUnattempted === true || st.answer === null || st.answer === undefined || st.answer === "" || (Array.isArray(st.answer) && st.answer.length === 0);
+      if (st && !isUnat) {
         t++;
         if (st.isCorrect) c++;
       }
     });
-    return t > 0 ? (c / t) * 100 : 0;
+    return t > 0 ? Math.round((c / t) * 100) : 0;
   });
-  const avgAcc = diffs.map(d => astats.difficultyStats[d].avgAccuracy);
+  const avgAcc = diffs.map(d => Math.round(astats.difficultyStats[d].avgAccuracy || 0));
 
   // Student Attempt Stacked Bar
   const labelsQ = astats.perQuestion.map(q => q.index + 1);

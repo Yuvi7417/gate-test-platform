@@ -854,9 +854,9 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
 
     // Calculate Dynamic Difficulty & Group Data
     let difficultyGroups = {
-      Easy: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 },
-      Medium: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 },
-      Hard: { marks: 0, totalTime: 0, totalCorrect: 0, count: 0, qCount: 0 }
+      Easy: { marks: 0, totalTime: 0, totalCorrect: 0, totalWrong: 0, count: 0, qCount: 0 },
+      Medium: { marks: 0, totalTime: 0, totalCorrect: 0, totalWrong: 0, count: 0, qCount: 0 },
+      Hard: { marks: 0, totalTime: 0, totalCorrect: 0, totalWrong: 0, count: 0, qCount: 0 }
     };
     
     let perQuestionArray = [];
@@ -889,6 +889,7 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
       
       difficultyGroups[diff].totalTime += q.avgTime;
       difficultyGroups[diff].totalCorrect += q.correct;
+      difficultyGroups[diff].totalWrong += q.wrong;
       difficultyGroups[diff].count += q.count;
       difficultyGroups[diff].qCount += 1;
 
@@ -927,11 +928,12 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
     const diffStats = {};
     ["Easy", "Medium", "Hard"].forEach(d => {
       const g = difficultyGroups[d];
+      const attempted = (g.totalCorrect || 0) + (g.totalWrong || 0);
       diffStats[d] = {
         avgMarks: g.qCount > 0 ? Math.round((g.marks / (results.length || 1)) * 100) / 100 : 0,
         highestMarks: g.qCount > 0 ? Math.round(g.qCount * 1.5 * 100) / 100 : 0,
         avgTime: g.qCount > 0 ? (g.totalTime / g.qCount) : 0,
-        avgAccuracy: g.count > 0 ? (g.totalCorrect / g.count) * 100 : 0
+        avgAccuracy: attempted > 0 ? Math.round((g.totalCorrect / attempted) * 100) : 0
       };
     });
     
