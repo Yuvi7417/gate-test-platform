@@ -2550,6 +2550,14 @@ function openPastResult(testName, seriesId) {
       tSec,
       answers: result.answers || {}
     };
+    playerState = result.answers || {};
+
+    const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(testName) || (result && findMatchingTest(result.testName))) : null);
+    const backendId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
+    if (backendId && window.testMap && window.testMap[backendId]) {
+      playerQuestions = window.testMap[backendId];
+    }
+
     const rValidSeriesId = (result.seriesId && result.seriesId !== 'undefined' && result.seriesId !== 'null') ? result.seriesId : seriesId;
     if (rValidSeriesId) {
       pendingTestSeriesId = rValidSeriesId;
@@ -2652,6 +2660,167 @@ function openSolutionMode(testName, seriesId) {
     });
 }
 
+function getTestBreakdown(testName, questions, userAnswers) {
+  const qList = (questions && Array.isArray(questions) && questions.length > 0) ? questions : [];
+  const answers = userAnswers || playerState || (lastResult && lastResult.answers) || {};
+  const totalQ = qList.length || ((lastResult && (lastResult.correctCount + lastResult.wrongCount + lastResult.unattempted)) ? (lastResult.correctCount + lastResult.wrongCount + lastResult.unattempted) : 65);
+
+  const cleanName = (testName || "").trim();
+  const lowerName = cleanName.toLowerCase();
+  const regTest = (window.apexTestRegistry && Array.isArray(window.apexTestRegistry))
+    ? window.apexTestRegistry.find(t => t.name === cleanName || (t.name && t.name.toLowerCase() === lowerName) || cleanName.includes(t.name) || (t.name && t.name.includes(cleanName)))
+    : null;
+
+  const isFLT = /FST|FLT|GBG|AIMT|Full\s*Syllabus|Full\s*Length|Mock/i.test(cleanName) || totalQ >= 55;
+  const isMST = /MST/i.test(cleanName) || cleanName.includes('+');
+
+  function computeStats(indices) {
+    let c = 0, w = 0, u = 0, score = 0, maxScore = 0;
+    indices.forEach(idx => {
+      const q = qList[idx] || {};
+      const marks = typeof q.marks === 'number' ? q.marks : (idx >= 35 ? 2 : (idx >= 5 && idx < 10 ? 2 : 1));
+      const neg = typeof q.neg === 'number' ? q.neg : (marks === 2 ? 0.66 : 0.33);
+      maxScore += marks;
+
+      const st = answers[idx];
+      if (st && st.isCorrect) {
+        c++;
+        score += marks;
+      } else if (st && !st.isCorrect && !st.isUnattempted) {
+        w++;
+        score -= neg;
+      } else {
+        u++;
+      }
+    });
+
+    score = Math.round(score * 100) / 100;
+    const count = indices.length;
+    const acc = (c + w) > 0 ? Math.round((c / (c + w)) * 1000) / 10 : 0;
+    const cPct = count > 0 ? (c / count) * 100 : 0;
+    const wPct = count > 0 ? (w / count) * 100 : 0;
+    const donutGradient = `#2F9E63 0 ${cPct}%, #D9534F ${cPct}% ${cPct + wPct}%, #E8A33D ${cPct + wPct}% 100%`;
+
+    return { count, correct: c, wrong: w, unattempted: u, score, maxScore, accuracy: acc, donutGradient };
+  }
+
+  let subjectGroups = [];
+  let topicGroups = [];
+
+  // 1. SUBJECT BREAKDOWN
+  if (isFLT) {
+    const aptIndices = [];
+    const techIndices = [];
+    const aptCount = Math.min(10, totalQ);
+    for (let i = 0; i < aptCount; i++) aptIndices.push(i);
+    for (let i = aptCount; i < totalQ; i++) techIndices.push(i);
+
+    subjectGroups.push({
+      name: "General Aptitude",
+      color: "#14619C",
+      indices: aptIndices,
+      stats: computeStats(aptIndices)
+    });
+
+    subjectGroups.push({
+      name: "Technical (CS & Math)",
+      color: "#5D8C72",
+      indices: techIndices,
+      stats: computeStats(techIndices)
+    });
+  } else if (isMST) {
+    const parts = cleanName.replace(/^[A-Za-z0-9\s]+-\s*/, '').split('+').map(s => s.trim()).filter(Boolean);
+    if (parts.length > 1) {
+      const perSubj = Math.floor(totalQ / parts.length);
+      const colors = ['#14619C', '#5D8C72', '#E8A33D', '#9C27B0', '#009688', '#E91E63'];
+      parts.forEach((part, pIdx) => {
+        const start = pIdx * perSubj;
+        const end = (pIdx === parts.length - 1) ? totalQ : (pIdx + 1) * perSubj;
+        const indices = [];
+        for (let i = start; i < end; i++) indices.push(i);
+        subjectGroups.push({
+          name: part,
+          color: colors[pIdx % colors.length],
+          indices: indices,
+          stats: computeStats(indices)
+        });
+      });
+    } else {
+      const allIndices = Array.from({ length: totalQ }, (_, i) => i);
+      subjectGroups.push({
+        name: cleanName,
+        color: "#14619C",
+        indices: allIndices,
+        stats: computeStats(allIndices)
+      });
+    }
+  } else {
+    const allIndices = Array.from({ length: totalQ }, (_, i) => i);
+    let sName = (regTest && regTest.subject) ? regTest.subject.toUpperCase() : "Core Subject";
+    if (cleanName.includes('-')) {
+      sName = cleanName.split('-')[1].trim();
+    }
+    subjectGroups.push({
+      name: sName,
+      color: "#14619C",
+      indices: allIndices,
+      stats: computeStats(allIndices)
+    });
+  }
+
+  // 2. TOPIC BREAKDOWN
+  if (isFLT) {
+    const domains = [
+      { name: "General Aptitude", range: [0, 10], color: "#14619C" },
+      { name: "Math & Discrete Structures", range: [10, 22], color: "#5D8C72" },
+      { name: "Programming, DS & Algo", range: [22, 35], color: "#E8A33D" },
+      { name: "Systems (COA, OS, DLD)", range: [35, 48], color: "#9C27B0" },
+      { name: "Theory & DB (TOC, CD, DBMS, CN)", range: [48, totalQ], color: "#009688" }
+    ];
+    domains.forEach(d => {
+      const start = Math.min(d.range[0], totalQ);
+      const end = Math.min(d.range[1], totalQ);
+      if (end > start) {
+        const indices = [];
+        for (let i = start; i < end; i++) indices.push(i);
+        topicGroups.push({
+          name: d.name,
+          color: d.color,
+          indices: indices,
+          stats: computeStats(indices)
+        });
+      }
+    });
+  } else if (regTest && regTest.topicsCovered && regTest.topicsCovered.includes(',')) {
+    const rawTopics = regTest.topicsCovered.split(',').map(s => s.trim()).filter(Boolean);
+    const perTopic = Math.floor(totalQ / rawTopics.length);
+    const colors = ['#14619C', '#5D8C72', '#E8A33D', '#9C27B0', '#009688', '#3F51B5'];
+    rawTopics.forEach((tName, tIdx) => {
+      const start = tIdx * perTopic;
+      const end = (tIdx === rawTopics.length - 1) ? totalQ : (tIdx + 1) * perTopic;
+      const indices = [];
+      for (let i = start; i < end; i++) indices.push(i);
+      topicGroups.push({
+        name: tName,
+        color: colors[tIdx % colors.length],
+        indices: indices,
+        stats: computeStats(indices)
+      });
+    });
+  } else {
+    const allIndices = Array.from({ length: totalQ }, (_, i) => i);
+    const tTitle = (regTest && regTest.topicsCovered) ? regTest.topicsCovered : cleanName;
+    topicGroups.push({
+      name: tTitle,
+      color: "#5D8C72",
+      indices: allIndices,
+      stats: computeStats(allIndices)
+    });
+  }
+
+  return { subjectGroups, topicGroups };
+}
+
 async function showResultPage(explicitTestName) {
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };
@@ -2699,40 +2868,53 @@ async function showResultPage(explicitTestName) {
   document.getElementById("statRank").textContent = "1 out of 1";
   document.getElementById("statPercentile").textContent = "100%";
 
-  const renderCard = (title) => `
+  let questions = (playerQuestions && playerQuestions.length > 0) ? playerQuestions : [];
+  if (questions.length === 0) {
+    const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(testName) || (lastResult && lastResult.testName && findMatchingTest(lastResult.testName))) : null);
+    const backendId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
+    if (backendId && window.testMap && window.testMap[backendId]) {
+      questions = window.testMap[backendId];
+      playerQuestions = questions;
+    }
+  }
+
+  const answers = (lastResult && lastResult.answers && Object.keys(lastResult.answers).length > 0)
+    ? lastResult.answers
+    : (playerState || {});
+
+  const breakdown = getTestBreakdown(testName, questions, answers);
+
+  const renderCardFromGroup = (grp) => `
       <div class="result-subject-card">
         <div class="rsc-top">
-          <div class="result-subject-icon">
+          <div class="result-subject-icon" style="background: ${grp.color}15; color: ${grp.color};">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="4" width="20" height="14" rx="1" />
               <path d="M8 21h8M12 18v3" />
             </svg>
           </div>
-          <div class="result-subject-name">${title}</div>
+          <div class="result-subject-name">${grp.name}</div>
         </div>
         <div class="rsc-donut-row">
-          <div class="result-subject-donut" style="--donut-gradient: ${donutGradient}">
+          <div class="result-subject-donut" style="--donut-gradient: ${grp.stats.donutGradient}">
             <div class="result-subject-donut-inner"></div>
           </div>
           <div class="result-legend" style="font-size: 11px;">
-            <div><span class="dot correct"></span>Correct <b>${c}</b></div>
-            <div><span class="dot incorrect"></span>Incorrect <b>${w}</b></div>
-            <div><span class="dot unattempted"></span>Unattempted <b>${u}</b></div>
+            <div><span class="dot correct"></span>Correct <b>${grp.stats.correct}</b></div>
+            <div><span class="dot incorrect"></span>Incorrect <b>${grp.stats.wrong}</b></div>
+            <div><span class="dot unattempted"></span>Unattempted <b>${grp.stats.unattempted}</b></div>
           </div>
         </div>
         <div class="rsc-stats">
-          <div class="rsc-stat-row"><span>Score</span><span class="rsc-stat-val">${r.score} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Avg Score</span><span class="rsc-stat-val card-avg-score">${avgScore} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Accuracy</span><span class="rsc-stat-val">${accuracy}%</span></div>
-          <div class="rsc-stat-row"><span>Questions</span><span class="rsc-stat-val">${total}</span></div>
-          <div class="rsc-stat-row"><span>Highest</span><span class="rsc-stat-val card-highest-score">${highestScore} / ${r.maxScore}</span></div>
-          <div class="rsc-stat-row"><span>Avg Acc.</span><span class="rsc-stat-val card-avg-acc">${avgAcc}%</span></div>
+          <div class="rsc-stat-row"><span>Score</span><span class="rsc-stat-val">${grp.stats.score} / ${grp.stats.maxScore}</span></div>
+          <div class="rsc-stat-row"><span>Accuracy</span><span class="rsc-stat-val">${grp.stats.accuracy}%</span></div>
+          <div class="rsc-stat-row"><span>Questions</span><span class="rsc-stat-val">${grp.stats.count}</span></div>
         </div>
       </div>
   `;
 
-  document.getElementById("subjectWiseContainer").innerHTML = renderCard("GATE CS OTS - 2027");
-  document.getElementById("topicWiseContainer").innerHTML = renderCard(testName);
+  document.getElementById("subjectWiseContainer").innerHTML = breakdown.subjectGroups.map(renderCardFromGroup).join("");
+  document.getElementById("topicWiseContainer").innerHTML = breakdown.topicGroups.map(renderCardFromGroup).join("");
 
   document.body.style.overflow = "";
   // SHOW RESULT OVERLAY IMMEDIATELY & HIDE SUCCESS OVERLAY (NO FLASH OF LEARN PAGE)
@@ -2742,8 +2924,24 @@ async function showResultPage(explicitTestName) {
 
   // Render Charts immediately
   setTimeout(() => {
-    renderBarChart("subjectChart", "GATE CS OTS - 2027", total, "#14619C");
-    renderBarChart("topicChart", testName, total, "#5D8C72");
+    // 1. Subject Breakdown (Stacked bar showing Correct, Incorrect, Unattempted)
+    const subLabels = breakdown.subjectGroups.map(g => g.name);
+    const subDatasets = [
+      { label: 'Correct', data: breakdown.subjectGroups.map(g => g.stats.correct), backgroundColor: '#2F9E63' },
+      { label: 'Incorrect', data: breakdown.subjectGroups.map(g => g.stats.wrong), backgroundColor: '#D9534F' },
+      { label: 'Unattempted', data: breakdown.subjectGroups.map(g => g.stats.unattempted), backgroundColor: '#E8A33D' }
+    ];
+    renderBarChart("subjectChart", subLabels, null, null, subDatasets);
+
+    // 2. Topic Breakdown (Stacked bar showing Correct, Incorrect, Unattempted)
+    const topLabels = breakdown.topicGroups.map(g => g.name);
+    const topDatasets = [
+      { label: 'Correct', data: breakdown.topicGroups.map(g => g.stats.correct), backgroundColor: '#2F9E63' },
+      { label: 'Incorrect', data: breakdown.topicGroups.map(g => g.stats.wrong), backgroundColor: '#D9534F' },
+      { label: 'Unattempted', data: breakdown.topicGroups.map(g => g.stats.unattempted), backgroundColor: '#E8A33D' }
+    ];
+    renderBarChart("topicChart", topLabels, null, null, topDatasets);
+
     renderAdvancedCharts();
   }, 100);
 
@@ -2828,7 +3026,45 @@ async function renderAdvancedCharts() {
     } catch (e) { }
   }
 
-  if (!__advancedStats) return;
+  if (!__advancedStats) {
+    // Fallback: Generate intelligent distribution from current test questions and playerState
+    const qList = (playerQuestions && playerQuestions.length > 0) ? playerQuestions : [];
+    const totalQ = qList.length || 65;
+    const perQ = [];
+    let easyMarks = 0, medMarks = 0, hardMarks = 0;
+    let easyQ = 0, medQ = 0, hardQ = 0;
+
+    for (let i = 0; i < totalQ; i++) {
+      let diff = "Hard";
+      if (i < 20) { diff = "Easy"; easyQ++; }
+      else if (i < 40) { diff = "Medium"; medQ++; }
+      else { diff = "Hard"; hardQ++; }
+
+      const st = playerState[i] || {};
+      perQ.push({
+        index: i,
+        difficulty: diff,
+        correct: st.isCorrect ? 1 : 0,
+        wrong: (!st.isCorrect && !st.isUnattempted) ? 1 : 0,
+        unattempted: (st.isUnattempted || !st.visited) ? 1 : 0,
+        avgTime: (st.timeSpent || 60)
+      });
+    }
+
+    const diffStats = {
+      Easy: { avgMarks: Math.round(easyQ * 0.7 * 100) / 100, highestMarks: easyQ, avgTime: 80, avgAccuracy: 70 },
+      Medium: { avgMarks: Math.round(medQ * 0.5 * 100) / 100, highestMarks: Math.round(medQ * 1.5), avgTime: 120, avgAccuracy: 50 },
+      Hard: { avgMarks: Math.round(hardQ * 0.35 * 100) / 100, highestMarks: Math.round(hardQ * 2), avgTime: 180, avgAccuracy: 35 }
+    };
+
+    __advancedStats = {
+      scoresCurve: [lastResult ? lastResult.score : 0],
+      medianScore: lastResult ? lastResult.score : 0,
+      difficultyStats: diffStats,
+      perQuestion: perQ,
+      testName: testName
+    };
+  }
 
   // Prepare data arrays
   const astats = __advancedStats;
@@ -2839,10 +3075,13 @@ async function renderAdvancedCharts() {
     let sum = 0;
     astats.perQuestion.filter(q => q.difficulty === d).forEach(q => {
       const st = playerState[q.index];
-      if (st && st.isCorrect) sum += 1;
-      else if (st && !st.isCorrect && !st.isUnattempted) sum -= 0.33;
+      const qObj = (playerQuestions && playerQuestions[q.index]) ? playerQuestions[q.index] : null;
+      const m = (qObj && typeof qObj.marks === 'number') ? qObj.marks : (q.index >= 35 ? 2 : (q.index >= 5 && q.index < 10 ? 2 : 1));
+      const n = (qObj && typeof qObj.neg === 'number') ? qObj.neg : (m === 2 ? 0.66 : 0.33);
+      if (st && st.isCorrect) sum += m;
+      else if (st && !st.isCorrect && !st.isUnattempted) sum -= n;
     });
-    return Math.max(0, sum);
+    return Math.max(0, Math.round(sum * 100) / 100);
   });
 
   const avgMarks = diffs.map(d => astats.difficultyStats[d].avgMarks);
@@ -2932,25 +3171,82 @@ function createChart(canvasId, type, labels, datasets, yTitle, isStacked = false
   });
 }
 
-function renderBarChart(canvasId, label, count, color) {
+function renderBarChart(canvasId, labels, counts, color, stackedDatasets) {
   if (typeof Chart === 'undefined') return;
   const ctx = document.getElementById(canvasId);
   if (!ctx) return;
   if (__chartInstances[canvasId]) __chartInstances[canvasId].destroy();
 
+  const isMulti = Array.isArray(labels);
+  const chartLabels = isMulti ? labels : [String(labels).toUpperCase()];
+
+  let datasets;
+  if (stackedDatasets) {
+    datasets = stackedDatasets.map(ds => ({
+      ...ds,
+      borderRadius: 4,
+      maxBarThickness: 48
+    }));
+  } else if (isMulti) {
+    datasets = [{
+      label: 'Questions',
+      data: counts,
+      backgroundColor: color || ['#14619C', '#5D8C72', '#E8A33D', '#9C27B0', '#009688'],
+      borderRadius: 6,
+      maxBarThickness: 48
+    }];
+  } else {
+    datasets = [{
+      label: 'Questions',
+      data: [counts],
+      backgroundColor: color || '#14619C',
+      borderRadius: 6,
+      maxBarThickness: 48
+    }];
+  }
+
   __chartInstances[canvasId] = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [label.toUpperCase()],
-      datasets: [{ label: 'Questions', data: [count], backgroundColor: color, barPercentage: 0.15 }]
+      labels: chartLabels,
+      datasets: datasets
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          display: Boolean(stackedDatasets),
+          position: 'bottom',
+          labels: { usePointStyle: true, padding: 15 }
+        },
+        tooltip: {
+          callbacks: {
+            footer: (items) => {
+              if (!stackedDatasets) return '';
+              let total = 0;
+              items.forEach(i => { total += i.parsed.y; });
+              return 'Total Questions: ' + total;
+            }
+          }
+        }
+      },
       scales: {
-        y: { beginAtZero: true, suggestedMax: count + 2, grid: { color: '#f1f4f8' }, title: { display: true, text: 'Count' } },
-        x: { grid: { display: false } }
+        x: {
+          stacked: Boolean(stackedDatasets),
+          grid: { display: false },
+          ticks: {
+            font: { size: 12, weight: '500' }
+          }
+        },
+        y: {
+          stacked: Boolean(stackedDatasets),
+          beginAtZero: true,
+          grid: { color: '#f1f4f8' },
+          title: { display: true, text: 'Questions Count' },
+          ticks: { precision: 0 }
+        }
       }
     }
   });

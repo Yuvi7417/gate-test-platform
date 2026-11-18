@@ -860,13 +860,29 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
     };
     
     let perQuestionArray = [];
+    const hasManyAttempts = results.length >= 5;
     Object.keys(questionStats).forEach(qIndex => {
       const q = questionStats[qIndex];
+      const idxNum = parseInt(qIndex, 10);
       const accuracy = q.count > 0 ? (q.correct / q.count) : 0;
       
       let diff = "Hard";
-      if (accuracy > 0.65) diff = "Easy";
-      else if (accuracy >= 0.35) diff = "Medium";
+      if (hasManyAttempts && q.count >= 3) {
+        if (accuracy > 0.65) diff = "Easy";
+        else if (accuracy >= 0.35) diff = "Medium";
+        else diff = "Hard";
+      } else {
+        // Smart fallback distribution for early tests based on accuracy and question index
+        if (accuracy >= 0.60) {
+          diff = "Easy";
+        } else if (accuracy >= 0.25) {
+          diff = "Medium";
+        } else {
+          if (idxNum < 20) diff = "Easy";
+          else if (idxNum < 40) diff = "Medium";
+          else diff = "Hard";
+        }
+      }
 
       q.difficulty = diff;
       q.avgTime = q.count > 0 ? (q.totalTime / q.count) : 0;
@@ -912,8 +928,8 @@ app.get('/api/test-advanced-stats/:testName', async (req, res) => {
     ["Easy", "Medium", "Hard"].forEach(d => {
       const g = difficultyGroups[d];
       diffStats[d] = {
-        avgMarks: g.qCount > 0 ? g.marks : 0,
-        highestMarks: g.qCount > 0 ? (g.qCount * 1) : 0, // Max possible marks approximation
+        avgMarks: g.qCount > 0 ? Math.round((g.marks / (results.length || 1)) * 100) / 100 : 0,
+        highestMarks: g.qCount > 0 ? Math.round(g.qCount * 1.5 * 100) / 100 : 0,
         avgTime: g.qCount > 0 ? (g.totalTime / g.qCount) : 0,
         avgAccuracy: g.count > 0 ? (g.totalCorrect / g.count) * 100 : 0
       };
