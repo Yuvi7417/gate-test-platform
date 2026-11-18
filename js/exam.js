@@ -2780,27 +2780,153 @@ function getTestBreakdown(testName, questions, userAnswers) {
   let subjectGroups = [];
   let topicGroups = [];
 
+  // Question Subject Detector for Full Syllabus Tests
+  function detectQuestionSubject(q, idx, totalQuestions) {
+    if (totalQuestions >= 55 && idx < 10) {
+      return "General Aptitude";
+    }
+
+    if (q && q.subject && q.subject !== 'flt' && q.subject !== 'all' && q.subject.trim()) {
+      const s = q.subject.toLowerCase();
+      if (s.includes('os') || s.includes('operating')) return "Operating Systems";
+      if (s.includes('network') || s.includes('cn')) return "Computer Networks";
+      if (s.includes('dbms') || s.includes('database')) return "DBMS";
+      if (s.includes('toc') || s.includes('computation') || s.includes('automata')) return "Theory of Computation";
+      if (s.includes('compiler') || s.includes('cd')) return "Compiler Design";
+      if (s.includes('coa') || s.includes('architecture') || s.includes('organization')) return "COA";
+      if (s.includes('digital') || s.includes('logic') || s.includes('dld')) return "Digital Logic";
+      if (s.includes('algo')) return "Algorithms";
+      if (s.includes('structure') || s.includes('ds')) return "Data Structures";
+      if (s.includes('program') || s.includes('c prog')) return "Programming in C";
+      if (s.includes('discrete')) return "Discrete Mathematics";
+      if (s.includes('math')) return "Engineering Mathematics";
+      if (s.includes('aptitude')) return "General Aptitude";
+    }
+
+    let text = (((q && q.text) || "") + " " + (q && Array.isArray(q.options) ? q.options.join(" ") : "") + " " + ((q && q.solution) || "")).toLowerCase();
+    text = text.replace(/<img[^>]*>/gi, " ");
+    text = text.replace(/https?:\/\/[^\s]+/gi, " ");
+    text = text.replace(/images\/[^\s"'>]+/gi, " ");
+    text = text.replace(/<[^>]+>/g, " ");
+
+    const scores = {
+      "Operating Systems": 0,
+      "Computer Networks": 0,
+      "DBMS": 0,
+      "Theory of Computation": 0,
+      "Compiler Design": 0,
+      "COA": 0,
+      "Digital Logic": 0,
+      "Algorithms": 0,
+      "Data Structures": 0,
+      "Programming in C": 0,
+      "Discrete Mathematics": 0,
+      "Engineering Mathematics": 0,
+      "General Aptitude": 0
+    };
+
+    if (/\b(sum of products|product of sum|minterm|maxterm|k-map|karnaugh|boolean function|boolean expression|logic circuit|digital circuit|combinational circuit|sequential circuit|multiplexer|demultiplexer|flip-flop|jk flip|sr flip|d flip|t flip|full adder|half adder|carry lookahead|ripple counter|synchronous counter|shift register|2's complement|1's complement)\b/.test(text)) {
+      scores["Digital Logic"] += 25;
+    }
+    if (/\b(c program|ansi c|c function|printf|scanf|malloc|calloc|free|#include|pointer to pointer|struct node|recursion|recursive function|array of pointers|function pointer)\b/.test(text)) {
+      scores["Programming in C"] += 25;
+    }
+    if (/\b(cpu-bound process|burst length|burst time|cpu processes|arrival time|cpu scheduling|turnaround time|waiting time|round robin|shortest job|preemptive|non-preemptive|semaphore|mutex|critical section|producer-consumer|dining philosopher|banker's|deadlock|page fault|page replacement|demand paging|virtual memory|inverted page|tlb|disk scheduling|fcfs|sstf|scan|c-scan|look|c-look|memory partition|belady|fork\(\))\b/.test(text)) {
+      scores["Operating Systems"] += 25;
+    }
+    if (/\b(ethernet|routing table|router|switch|gateway|ip address|ipv4|ipv6|subnet mask|cidr|tcp|udp|link state|distance vector|sliding window|go-back-n|selective repeat|stop-and-wait|propagation delay|transmission delay|bandwidth-delay|three-way handshake|syn packet|congestion window|crc|csma\/cd|token ring|dns|dhcp|http|transport layer|network layer|data link layer)\b/.test(text)) {
+      scores["Computer Networks"] += 25;
+    }
+    if (/\b(relational algebra|er diagram|functional dependenc|normal form|1nf|2nf|3nf|bcnf|lossless decomposition|dependency preserving|b-tree|b\+ tree|serializable|serializability|timestamp ordering|time stamps|two phase locking|2pl|conflict serializable|acid property|foreign key|candidate key|super key|sql query)\b/.test(text)) {
+      scores["DBMS"] += 25;
+    }
+    if (/\b(turing machine|decidable|undecidable|halting problem|context free|cfg|cfl|pushdown automata|pda|regular language|regular expression|dfa|nfa|finite automata|pumping lemma|chomsky|myhill-nerode|regular grammar)\b/.test(text)) {
+      scores["Theory of Computation"] += 25;
+    }
+    if (/\b(number of tokens|tokens in|lr\(1\)|lalr|ll\(1\)|slr\(1\)|shift-reduce|parse tree|syntax tree|left recursion|left factoring|first and follow|intermediate code|three address code|activation record|symbol table|lexical analyzer|syntax analyzer)\b/.test(text)) {
+      scores["Compiler Design"] += 25;
+    }
+    if (/\b(machine instructions?|instruction set|addressing mode|instruction format|cache memory|set associative|direct mapped|fully associative|cache miss|miss rate|base cpi|cpi of|clock cycles|instruction pipeline|pipeline hazard|branch prediction|hazard stall|bus arbitration|dma controller)\b/.test(text)) {
+      scores["COA"] += 25;
+    }
+    if (/\b(binary heap|max-heap|min-heap|binary search tree|bst|avl tree|balance factor|hash table|open addressing|linear probing|quadratic probing|double hashing|chaining|queue and stack|queue|stack|circular queue|doubly linked list|tree traversal|inorder|preorder|postorder)\b/.test(text)) {
+      scores["Data Structures"] += 25;
+    }
+    if (/\b(time complexity|asymptotic|big-o|recurrence relation|master theorem|0\/1 knapsack|knapsack problem|longest common subsequence|lcs|dynamic programming|divide and conquer|greedy algorithm|dijkstra|bellman-ford|floyd-warshall|prims|kruskal|minimum spanning tree|topological sort|bfs take|dfs take|bipartite graph|np-complete|np-hard)\b/.test(text)) {
+      scores["Algorithms"] += 25;
+    }
+    if (/\b(tautology|propositional logic|predicate logic|hasse diagram|poset|lattice|boolean algebra|equivalence relation|partial order|generating function|pigeonhole|planar graph|eulerian graph|hamiltonian graph|chromatic number|isomorphic graph|degree sequence|handshaking lemma)\b/.test(text)) {
+      scores["Discrete Mathematics"] += 25;
+    }
+    if (/\b(eigenvalue|eigenvector|characteristic equation|matrix|determinant|system of linear equations|rank of matrix|orthogonal matrix|calculus|maxima|minima|limit|continuity|taylor series|definite integral|probability|conditional probability|bayes' theorem|random variable|poisson distribution|normal distribution|uniform distribution)\b/.test(text)) {
+      scores["Engineering Mathematics"] += 25;
+    }
+    if (/\b(synonym|antonym|grammatically|spelling|passage|comprehension|verbal|numerical ability|work and time|pipes and cistern|speed and distance|train|percentage|profit and loss|simple interest|compound interest|ratio and proportion|seating arrangement|blood relation|syllogism|venn diagram|data interpretation)\b/.test(text)) {
+      scores["General Aptitude"] += 20;
+    }
+
+    let bestSubject = "General Aptitude";
+    let maxScore = -1;
+    for (const [subj, sc] of Object.entries(scores)) {
+      if (sc > maxScore) {
+        maxScore = sc;
+        bestSubject = subj;
+      }
+    }
+    if (maxScore > 0) return bestSubject;
+
+    if (idx < 10 && totalQuestions >= 55) return "General Aptitude";
+    if (idx < 22 && totalQuestions >= 55) return "Discrete Mathematics";
+    if (idx < 35 && totalQuestions >= 55) return "Algorithms";
+    if (idx < 48 && totalQuestions >= 55) return "Operating Systems";
+    return "Computer Networks";
+  }
+
   // 1. SUBJECT BREAKDOWN
   if (isFLT) {
-    const aptIndices = [];
-    const techIndices = [];
-    const aptCount = Math.min(10, totalQ);
-    for (let i = 0; i < aptCount; i++) aptIndices.push(i);
-    for (let i = aptCount; i < totalQ; i++) techIndices.push(i);
+    const subjectDefs = [
+      { name: "General Aptitude", color: "#14619C" },
+      { name: "Operating Systems", color: "#0284C7" },
+      { name: "Computer Networks", color: "#2563EB" },
+      { name: "DBMS", color: "#059669" },
+      { name: "Theory of Computation", color: "#7C3AED" },
+      { name: "Compiler Design", color: "#9333EA" },
+      { name: "COA", color: "#D97706" },
+      { name: "Digital Logic", color: "#EA580C" },
+      { name: "Algorithms", color: "#E11D48" },
+      { name: "Data Structures", color: "#0D9488" },
+      { name: "Programming in C", color: "#4F46E5" },
+      { name: "Discrete Mathematics", color: "#16A34A" },
+      { name: "Engineering Mathematics", color: "#0891B2" }
+    ];
 
-    subjectGroups.push({
-      name: "General Aptitude",
-      color: "#14619C",
-      indices: aptIndices,
-      stats: computeStats(aptIndices)
+    const subjectBuckets = {};
+    subjectDefs.forEach(s => subjectBuckets[s.name] = []);
+
+    for (let i = 0; i < totalQ; i++) {
+      const q = qList[i] || {};
+      const subj = detectQuestionSubject(q, i, totalQ);
+      if (subjectBuckets[subj]) {
+        subjectBuckets[subj].push(i);
+      } else {
+        if (!subjectBuckets["General Aptitude"]) subjectBuckets["General Aptitude"] = [];
+        subjectBuckets["General Aptitude"].push(i);
+      }
+    }
+
+    subjectDefs.forEach(def => {
+      const indices = subjectBuckets[def.name] || [];
+      if (indices.length > 0) {
+        subjectGroups.push({
+          name: def.name,
+          color: def.color,
+          indices: indices,
+          stats: computeStats(indices)
+        });
+      }
     });
 
-    subjectGroups.push({
-      name: "Technical (CS & Math)",
-      color: "#5D8C72",
-      indices: techIndices,
-      stats: computeStats(techIndices)
-    });
+    topicGroups = subjectGroups;
   } else if (isMST) {
     const parts = cleanName.replace(/^[A-Za-z0-9\s]+-\s*/, '').split('+').map(s => s.trim()).filter(Boolean);
     if (parts.length > 1) {
@@ -2841,57 +2967,37 @@ function getTestBreakdown(testName, questions, userAnswers) {
     });
   }
 
-  // 2. TOPIC BREAKDOWN
-  if (isFLT) {
-    const domains = [
-      { name: "General Aptitude", range: [0, 10], color: "#14619C" },
-      { name: "Math & Discrete Structures", range: [10, 22], color: "#5D8C72" },
-      { name: "Programming, DS & Algo", range: [22, 35], color: "#E8A33D" },
-      { name: "Systems (COA, OS, DLD)", range: [35, 48], color: "#9C27B0" },
-      { name: "Theory & DB (TOC, CD, DBMS, CN)", range: [48, totalQ], color: "#009688" }
-    ];
-    domains.forEach(d => {
-      const start = Math.min(d.range[0], totalQ);
-      const end = Math.min(d.range[1], totalQ);
-      if (end > start) {
+  // 2. TOPIC BREAKDOWN (For non-FLT tests)
+  if (!isFLT) {
+    if (regTest && regTest.topicsCovered && regTest.topicsCovered.includes(',')) {
+      const rawTopics = regTest.topicsCovered.split(',').map(s => s.trim()).filter(Boolean);
+      const perTopic = Math.floor(totalQ / rawTopics.length);
+      const colors = ['#14619C', '#5D8C72', '#E8A33D', '#9C27B0', '#009688', '#3F51B5'];
+      rawTopics.forEach((tName, tIdx) => {
+        const start = tIdx * perTopic;
+        const end = (tIdx === rawTopics.length - 1) ? totalQ : (tIdx + 1) * perTopic;
         const indices = [];
         for (let i = start; i < end; i++) indices.push(i);
         topicGroups.push({
-          name: d.name,
-          color: d.color,
+          name: tName,
+          color: colors[tIdx % colors.length],
           indices: indices,
           stats: computeStats(indices)
         });
-      }
-    });
-  } else if (regTest && regTest.topicsCovered && regTest.topicsCovered.includes(',')) {
-    const rawTopics = regTest.topicsCovered.split(',').map(s => s.trim()).filter(Boolean);
-    const perTopic = Math.floor(totalQ / rawTopics.length);
-    const colors = ['#14619C', '#5D8C72', '#E8A33D', '#9C27B0', '#009688', '#3F51B5'];
-    rawTopics.forEach((tName, tIdx) => {
-      const start = tIdx * perTopic;
-      const end = (tIdx === rawTopics.length - 1) ? totalQ : (tIdx + 1) * perTopic;
-      const indices = [];
-      for (let i = start; i < end; i++) indices.push(i);
-      topicGroups.push({
-        name: tName,
-        color: colors[tIdx % colors.length],
-        indices: indices,
-        stats: computeStats(indices)
       });
-    });
-  } else {
-    const allIndices = Array.from({ length: totalQ }, (_, i) => i);
-    const tTitle = (regTest && regTest.topicsCovered) ? regTest.topicsCovered : cleanName;
-    topicGroups.push({
-      name: tTitle,
-      color: "#5D8C72",
-      indices: allIndices,
-      stats: computeStats(allIndices)
-    });
+    } else {
+      const allIndices = Array.from({ length: totalQ }, (_, i) => i);
+      const tTitle = (regTest && regTest.topicsCovered) ? regTest.topicsCovered : cleanName;
+      topicGroups.push({
+        name: tTitle,
+        color: "#5D8C72",
+        indices: allIndices,
+        stats: computeStats(allIndices)
+      });
+    }
   }
 
-  return { subjectGroups, topicGroups };
+  return { subjectGroups, topicGroups, isFLT };
 }
 
 // ==========================================
@@ -3683,14 +3789,55 @@ async function showResultPage(explicitTestName) {
   renderQuestionMatrix(questions, answers, testName);
   renderTopperComparison(r, avgScore, avgAcc, highestScore, null, totalStudents, totalLostNeg, questions);
 
+function getSubjectIcon(name) {
+  const n = (name || "").toLowerCase();
+  if (n.includes("operating") || n.includes("os")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>`;
+  }
+  if (n.includes("network") || n.includes("cn")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3M12 12V8"/></svg>`;
+  }
+  if (n.includes("dbms") || n.includes("database")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`;
+  }
+  if (n.includes("theory") || n.includes("toc") || n.includes("computation")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>`;
+  }
+  if (n.includes("compiler") || n.includes("cd")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>`;
+  }
+  if (n.includes("coa") || n.includes("architecture") || n.includes("organization")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></svg>`;
+  }
+  if (n.includes("digital") || n.includes("logic") || n.includes("dld")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><line x1="12" y1="15" x2="12" y2="21"/></svg>`;
+  }
+  if (n.includes("algo")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="M6 16V8a3 3 0 0 1 3-3h6M18 8v8"/></svg>`;
+  }
+  if (n.includes("structure") || n.includes("ds")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`;
+  }
+  if (n.includes("program") || n.includes("c prog")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>`;
+  }
+  if (n.includes("discrete")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="5" r="3"/><circle cx="12" cy="19" r="3"/><line x1="7" y1="6" x2="17" y2="6"/><line x1="6" y1="7" x2="11" y2="17"/><line x1="18" y1="7" x2="13" y2="17"/></svg>`;
+  }
+  if (n.includes("math")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5h3l6 14h3V5"/><path d="M19 12h-6"/></svg>`;
+  }
+  if (n.includes("aptitude")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg>`;
+  }
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="1" /><path d="M8 21h8M12 18v3" /></svg>`;
+}
+
   const renderCardFromGroup = (grp) => `
       <div class="result-subject-card">
         <div class="rsc-top">
           <div class="result-subject-icon" style="background: ${grp.color}15; color: ${grp.color};">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="4" width="20" height="14" rx="1" />
-              <path d="M8 21h8M12 18v3" />
-            </svg>
+            ${getSubjectIcon(grp.name)}
           </div>
           <div class="result-subject-name">${grp.name}</div>
         </div>
@@ -3713,7 +3860,26 @@ async function showResultPage(explicitTestName) {
   `;
 
   document.getElementById("subjectWiseContainer").innerHTML = breakdown.subjectGroups.map(renderCardFromGroup).join("");
-  document.getElementById("topicWiseContainer").innerHTML = breakdown.topicGroups.map(renderCardFromGroup).join("");
+  
+  const topicTitle = document.getElementById("topicWiseTitle");
+  const topicContainer = document.getElementById("topicWiseContainer");
+  const topicChartTitle = document.getElementById("topicChartTitle");
+  const topicChartCard = document.getElementById("topicChartCard");
+
+  if (breakdown.isFLT) {
+    if (topicTitle) topicTitle.style.display = "none";
+    if (topicContainer) topicContainer.style.display = "none";
+    if (topicChartTitle) topicChartTitle.style.display = "none";
+    if (topicChartCard) topicChartCard.style.display = "none";
+  } else {
+    if (topicTitle) topicTitle.style.display = "";
+    if (topicContainer) {
+      topicContainer.style.display = "";
+      topicContainer.innerHTML = breakdown.topicGroups.map(renderCardFromGroup).join("");
+    }
+    if (topicChartTitle) topicChartTitle.style.display = "";
+    if (topicChartCard) topicChartCard.style.display = "";
+  }
 
   document.body.style.overflow = "";
   // SHOW RESULT OVERLAY IMMEDIATELY & HIDE SUCCESS OVERLAY (NO FLASH OF LEARN PAGE)
@@ -3732,14 +3898,16 @@ async function showResultPage(explicitTestName) {
     ];
     renderBarChart("subjectChart", subLabels, null, null, subDatasets);
 
-    // 2. Topic Breakdown (Stacked bar showing Correct, Incorrect, Unattempted)
-    const topLabels = breakdown.topicGroups.map(g => g.name);
-    const topDatasets = [
-      { label: 'Correct', data: breakdown.topicGroups.map(g => g.stats.correct), backgroundColor: '#2F9E63' },
-      { label: 'Incorrect', data: breakdown.topicGroups.map(g => g.stats.wrong), backgroundColor: '#D9534F' },
-      { label: 'Unattempted', data: breakdown.topicGroups.map(g => g.stats.unattempted), backgroundColor: '#E8A33D' }
-    ];
-    renderBarChart("topicChart", topLabels, null, null, topDatasets);
+    // 2. Topic Breakdown (only when not FLT)
+    if (!breakdown.isFLT) {
+      const topLabels = breakdown.topicGroups.map(g => g.name);
+      const topDatasets = [
+        { label: 'Correct', data: breakdown.topicGroups.map(g => g.stats.correct), backgroundColor: '#2F9E63' },
+        { label: 'Incorrect', data: breakdown.topicGroups.map(g => g.stats.wrong), backgroundColor: '#D9534F' },
+        { label: 'Unattempted', data: breakdown.topicGroups.map(g => g.stats.unattempted), backgroundColor: '#E8A33D' }
+      ];
+      renderBarChart("topicChart", topLabels, null, null, topDatasets);
+    }
 
     renderAdvancedCharts();
   }, 100);
