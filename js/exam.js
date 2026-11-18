@@ -1613,6 +1613,14 @@ function renderPlayer() {
   _id("playerOverlay").classList.add("show");
 
   if (solutionMode) {
+    const solFilterEl = document.getElementById("solutionFilterBar");
+    if (solFilterEl) solFilterEl.style.display = "flex";
+    currentSolutionFilter = 'all';
+    document.querySelectorAll(".sol-filter-btn").forEach(b => {
+      if (b.getAttribute("data-filter") === 'all') b.classList.add("active");
+      else b.classList.remove("active");
+    });
+
     if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "none";
     if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "none";
     if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "flex";
@@ -1628,6 +1636,9 @@ function renderPlayer() {
       titleEl.textContent = "Solutions: " + _id("playerTopTitle").textContent;
     }
   } else {
+    const solFilterEl = document.getElementById("solutionFilterBar");
+    if (solFilterEl) solFilterEl.style.display = "none";
+
     if (_id("playerFooterLeft")) _id("playerFooterLeft").style.display = "flex";
     if (_id("playerFooterRight")) _id("playerFooterRight").style.display = "block";
     if (_id("playerSolutionFooter")) _id("playerSolutionFooter").style.display = "none";
@@ -2129,6 +2140,31 @@ window.switchSection = function (idx) {
 };
 
 function goToNextQuestion() {
+  if (solutionMode && typeof currentSolutionFilter !== "undefined" && currentSolutionFilter !== "all") {
+    let nextIdx = -1;
+    for (let i = playerCurrent + 1; i < playerQuestions.length; i++) {
+      const btn = document.getElementById("qbtn-" + i);
+      if (btn && btn.getAttribute("data-status") === currentSolutionFilter) {
+        nextIdx = i;
+        break;
+      }
+    }
+    if (nextIdx === -1) {
+      for (let i = 0; i <= playerCurrent; i++) {
+        const btn = document.getElementById("qbtn-" + i);
+        if (btn && btn.getAttribute("data-status") === currentSolutionFilter) {
+          nextIdx = i;
+          break;
+        }
+      }
+    }
+    if (nextIdx !== -1) {
+      renderPlayerQuestion(nextIdx);
+      updatePlayerCounts();
+      return;
+    }
+  }
+
   if (playerSections && playerSections.length > 0 && playerSections[currentSectionIndex]) {
     const sec = playerSections[currentSectionIndex];
     if (playerCurrent < sec.end) {
@@ -2147,6 +2183,35 @@ function goToNextQuestion() {
   }
   updatePlayerCounts();
 }
+
+let currentSolutionFilter = 'all';
+
+window.filterSolutionQuestions = function(filter) {
+  currentSolutionFilter = filter;
+  document.querySelectorAll(".sol-filter-btn").forEach(b => {
+    if (b.getAttribute("data-filter") === filter) b.classList.add("active");
+    else b.classList.remove("active");
+  });
+
+  let firstMatchingIdx = -1;
+  let currentMatches = false;
+
+  (playerQuestions || []).forEach((_, idx) => {
+    const btn = document.getElementById("qbtn-" + idx);
+    if (!btn) return;
+    const qStatus = btn.getAttribute("data-status") || "unattempted";
+    const matches = (filter === 'all' || qStatus === filter);
+    btn.style.display = matches ? "flex" : "none";
+    if (matches) {
+      if (firstMatchingIdx === -1) firstMatchingIdx = idx;
+      if (idx === playerCurrent) currentMatches = true;
+    }
+  });
+
+  if (!currentMatches && firstMatchingIdx !== -1) {
+    renderPlayerQuestion(firstMatchingIdx);
+  }
+};
 
 function renderPlayerQGrid() {
   const grid = document.getElementById("playerQGrid");
@@ -2174,6 +2239,7 @@ function updatePlayerQBtn(i) {
   if (solutionMode) {
     if (st.answer === null || st.answer === undefined || st.answer === "") {
       btn.classList.add("unattempted");
+      btn.setAttribute("data-status", "unattempted");
     } else {
       const q = playerQuestions[i];
       let isCorrect = false;
@@ -2191,8 +2257,13 @@ function updatePlayerQBtn(i) {
       } else {
         if (Array.isArray(q.correct) ? q.correct.includes(st.answer) : st.answer === q.correct) isCorrect = true;
       }
-      if (isCorrect) btn.classList.add("correct");
-      else btn.classList.add("incorrect");
+      if (isCorrect) {
+        btn.classList.add("correct");
+        btn.setAttribute("data-status", "correct");
+      } else {
+        btn.classList.add("incorrect");
+        btn.setAttribute("data-status", "incorrect");
+      }
     }
   } else {
     if (st.marked) btn.classList.add("marked");
@@ -3185,6 +3256,7 @@ function renderQuestionMatrix(questions, answers, testName) {
   let wrongCount = 0;
   let unattemptedCount = 0;
   let slowCount = 0;
+  let bookmarkedCount = 0;
 
   const qList = questions || [];
   const btnHtmls = qList.map((q, idx) => {
@@ -3201,12 +3273,17 @@ function renderQuestionMatrix(questions, answers, testName) {
 
     if (timeSpent >= 120) slowCount++;
 
+    const qKey = testName + "_Q" + idx;
+    const isBookmarked = !!(cloudBookmarks && cloudBookmarks[qKey]);
+    if (isBookmarked) bookmarkedCount++;
+
     const m = Number(q.marks) || 1;
 
     return `
-      <button class="qm-q-btn ${status}" data-status="${status}" data-time="${timeSpent}" onclick="openQuestionPreview(${idx})" title="Q${idx + 1}: ${status.toUpperCase()} (${timeSpent}s)">
+      <button class="qm-q-btn ${status}" id="qm-btn-${idx}" data-status="${status}" data-bookmarked="${isBookmarked ? 'true' : 'false'}" data-time="${timeSpent}" onclick="openQuestionPreview(${idx})" title="Q${idx + 1}: ${status.toUpperCase()} (${timeSpent}s)">
         <span>Q${idx + 1}</span>
         <span class="qm-sub-badge">${m}M</span>
+        ${isBookmarked ? '<span class="qm-star-badge">★</span>' : ''}
       </button>
     `;
   }).join("");
@@ -3218,6 +3295,7 @@ function renderQuestionMatrix(questions, answers, testName) {
       <button class="qm-filter-btn" data-filter="incorrect" onclick="filterQuestionMatrix('incorrect')">Incorrect (${wrongCount})</button>
       <button class="qm-filter-btn" data-filter="unattempted" onclick="filterQuestionMatrix('unattempted')">Unattempted (${unattemptedCount})</button>
       <button class="qm-filter-btn" data-filter="slow" onclick="filterQuestionMatrix('slow')">Slow &ge;2m (${slowCount})</button>
+      <button class="qm-filter-btn" data-filter="bookmarked" onclick="filterQuestionMatrix('bookmarked')">⭐ Bookmarked (<span id="qmBookmarkedCount">${bookmarkedCount}</span>)</button>
     </div>
     <div class="qm-grid">
       ${btnHtmls}
@@ -3239,15 +3317,91 @@ window.filterQuestionMatrix = function(filterType) {
   container.querySelectorAll(".qm-q-btn").forEach(btn => {
     const qStatus = btn.getAttribute("data-status");
     const qTime = parseInt(btn.getAttribute("data-time") || "0", 10);
+    const isBm = btn.getAttribute("data-bookmarked") === "true";
 
     if (filterType === "all") {
       btn.style.display = "flex";
     } else if (filterType === "slow") {
       btn.style.display = (qTime >= 120) ? "flex" : "none";
+    } else if (filterType === "bookmarked") {
+      btn.style.display = isBm ? "flex" : "none";
     } else {
       btn.style.display = (qStatus === filterType) ? "flex" : "none";
     }
   });
+};
+
+window.toggleModalBookmark = function(idx, testName) {
+  const qKey = testName + "_Q" + idx;
+  let questions = (playerQuestions && playerQuestions.length > 0) ? playerQuestions : [];
+  const q = questions[idx] || {};
+
+  const isBookmarked = !cloudBookmarks[qKey];
+  if (isBookmarked) {
+    let subject = "General";
+    if (testName.includes("CE")) subject = "Civil Engineering";
+    else if (testName.includes("CS") || testName.includes("CSE")) subject = "Computer Science";
+    else if (testName.includes("EE")) subject = "Electrical Engineering";
+    else if (testName.includes("ME")) subject = "Mechanical Engineering";
+    else if (testName.includes("EC") || testName.includes("ECE")) subject = "Electronics & Communication";
+    else if (testName.includes("DA")) subject = "Data Science (DA)";
+
+    let plainText = document.createElement("div");
+    plainText.innerHTML = q.text || "";
+    let previewText = plainText.textContent || plainText.innerText || "";
+    if (previewText.length > 150) previewText = previewText.substring(0, 150) + "...";
+
+    cloudBookmarks[qKey] = {
+      testId: testName,
+      qIndex: idx,
+      text: previewText,
+      subject: subject,
+      date: new Date().toLocaleDateString()
+    };
+  } else {
+    delete cloudBookmarks[qKey];
+  }
+
+  try { if (typeof localStorage !== 'undefined') localStorage.setItem("apex_bookmarks", JSON.stringify(cloudBookmarks)); } catch(e){}
+
+  const token = (typeof localStorage !== 'undefined') ? localStorage.getItem('apexcore_token') : null;
+  if (token) {
+    fetch('/api/sync/bookmark', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+      body: JSON.stringify({ testId: testName, qKey, qIndex: idx, isBookmarked })
+    }).catch(e => console.error(e));
+  }
+
+  // Update Modal Bookmark Button
+  const btn = document.getElementById("modalBookmarkBtn");
+  if (btn) {
+    if (isBookmarked) {
+      btn.classList.add("active");
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="#b45309" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>Bookmarked</span>`;
+    } else {
+      btn.classList.remove("active");
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>Bookmark for Revision</span>`;
+    }
+  }
+
+  // Update Matrix Button & Counter
+  const qmBtn = document.getElementById(`qm-btn-${idx}`);
+  if (qmBtn) {
+    qmBtn.setAttribute("data-bookmarked", isBookmarked ? "true" : "false");
+    let star = qmBtn.querySelector(".qm-star-badge");
+    if (isBookmarked && !star) {
+      qmBtn.insertAdjacentHTML("beforeend", `<span class="qm-star-badge">★</span>`);
+    } else if (!isBookmarked && star) {
+      star.remove();
+    }
+  }
+
+  const bCountEl = document.getElementById("qmBookmarkedCount");
+  if (bCountEl) {
+    let currentBCount = Object.keys(cloudBookmarks || {}).filter(k => k.startsWith(testName + "_Q")).length;
+    bCountEl.textContent = currentBCount;
+  }
 };
 
 window.openQuestionPreview = function(idx) {
@@ -3285,6 +3439,9 @@ window.openQuestionPreview = function(idx) {
   const qNeg = (q.neg != null) ? Math.abs(Number(q.neg)) : (qMarks === 2 ? 0.66 : 0.33);
   const qType = (q.type || "MCQ").toUpperCase();
   const timeSpent = st.timeSpent || 0;
+
+  const qKey = testName + "_Q" + idx;
+  const isBookmarked = !!(cloudBookmarks && cloudBookmarks[qKey]);
 
   modalTitle.textContent = `Question ${idx + 1} Snapshot`;
 
@@ -3396,9 +3553,16 @@ window.openQuestionPreview = function(idx) {
     ${ansCompareHtml}
     ${solHtml}
 
-    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px;">
-      <button class="ra-btn" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-size: 12px; padding: 7px 14px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal()">Close</button>
-      <button class="ra-btn" style="background: #14619c; color: #ffffff; border: none; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal(); openSolutionMode('${testName.replace(/'/g, "\\'")}')">Open in Full Solution Player &rarr;</button>
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #e2e8f0; flex-wrap: wrap;">
+      <button class="qp-bookmark-btn ${isBookmarked ? 'active' : ''}" id="modalBookmarkBtn" onclick="toggleModalBookmark(${idx}, '${testName.replace(/'/g, "\\'")}')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="${isBookmarked ? '#b45309' : 'none'}" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>${isBookmarked ? 'Bookmarked' : 'Bookmark for Revision'}</span>
+      </button>
+
+      <div style="display: flex; gap: 8px;">
+        <button class="ra-btn" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-size: 12px; padding: 7px 14px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal()">Close</button>
+        <button class="ra-btn" style="background: #14619c; color: #ffffff; border: none; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal(); openSolutionMode('${testName.replace(/'/g, "\\'")}')">Open in Full Solution Player &rarr;</button>
+      </div>
     </div>
   `;
 
@@ -3415,6 +3579,27 @@ window.openQuestionPreview = function(idx) {
 window.closeQuestionPreviewModal = function() {
   const modal = document.getElementById("questionPreviewModal");
   if (modal) modal.classList.remove("show");
+};
+
+window.printAnalysisReport = function() {
+  const user = currentUser || { name: "Student", email: "" };
+  const userName = user.name || (document.getElementById("resultUserName") ? document.getElementById("resultUserName").textContent : "Student");
+  const testName = document.getElementById("resultCrumbName") ? document.getElementById("resultCrumbName").textContent.trim() : "GATE Test";
+
+  const candEl = document.getElementById("printCandidateName");
+  if (candEl) candEl.textContent = userName;
+
+  const dateEl = document.getElementById("printReportDate");
+  if (dateEl) dateEl.textContent = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+
+  const oldTitle = document.title;
+  document.title = `ApexCore_Report_${testName.replace(/[^a-zA-Z0-9]/g, '_')}_${userName.replace(/[^a-zA-Z0-9]/g, '_')}`;
+
+  window.print();
+
+  setTimeout(() => {
+    document.title = oldTitle;
+  }, 1000);
 };
 
 async function showResultPage(explicitTestName) {
