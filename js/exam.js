@@ -3581,27 +3581,6 @@ window.closeQuestionPreviewModal = function() {
   if (modal) modal.classList.remove("show");
 };
 
-window.printAnalysisReport = function() {
-  const user = currentUser || { name: "Student", email: "" };
-  const userName = user.name || (document.getElementById("resultUserName") ? document.getElementById("resultUserName").textContent : "Student");
-  const testName = document.getElementById("resultCrumbName") ? document.getElementById("resultCrumbName").textContent.trim() : "GATE Test";
-
-  const candEl = document.getElementById("printCandidateName");
-  if (candEl) candEl.textContent = userName;
-
-  const dateEl = document.getElementById("printReportDate");
-  if (dateEl) dateEl.textContent = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
-
-  const oldTitle = document.title;
-  document.title = `ApexCore_Report_${testName.replace(/[^a-zA-Z0-9]/g, '_')}_${userName.replace(/[^a-zA-Z0-9]/g, '_')}`;
-
-  window.print();
-
-  setTimeout(() => {
-    document.title = oldTitle;
-  }, 1000);
-};
-
 async function showResultPage(explicitTestName) {
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };

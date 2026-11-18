@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=17">
+  <link rel="stylesheet" href="css/style.css?v=18">
   <style>
     /* Security Styles */
     body {
@@ -813,18 +813,6 @@
       </div>
     </div>
     <div class="result-body">
-      <!-- PRINTABLE REPORT HEADER (shown only in print/PDF) -->
-      <div class="print-report-header" id="printReportHeader">
-        <div>
-          <div style="font-size: 22px; font-weight: 800; color: #0f172a; letter-spacing: 0.5px;">APEX CORE</div>
-          <div style="font-size: 13px; color: #64748b; font-weight: 600;">Official Test Performance &amp; Diagnostic Scorecard</div>
-        </div>
-        <div style="text-align: right; font-size: 13px; color: #334155;">
-          <div>Candidate: <b id="printCandidateName">Student</b></div>
-          <div style="font-size: 12px; color: #64748b; margin-top: 3px;">Date: <span id="printReportDate"></span></div>
-        </div>
-      </div>
-
       <div class="result-crumb"><span onclick="closeResult()">Learn</span> / <span id="resultCrumbName">GATE 2027 CS
           Subjectwise Test - 5</span></div>
       <div class="result-h1">Analysis</div>
@@ -832,13 +820,6 @@
         <button class="ra-btn" onclick="openSolutionMode(document.getElementById('resultCrumbName').textContent)">View
           Solutions</button>
         <button class="ra-btn" onclick="openLeaderboard()">Leaderboard</button>
-        <button class="ra-btn" onclick="printAnalysisReport()" style="display: inline-flex; align-items: center; gap: 6px;">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-            <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-            <rect x="6" y="14" width="12" height="8"/>
-          </svg>
-          Print / Save PDF
-        </button>
       </div>
 
       <div class="result-summary-card result-summary-wide">
@@ -1110,7 +1091,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=79"></script>
+  <script src="js/exam.js?v=80"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>
