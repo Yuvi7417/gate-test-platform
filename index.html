@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="css/style.css?v=15">
+  <link rel="stylesheet" href="css/style.css?v=16">
   <style>
     /* Security Styles */
     body {
@@ -857,6 +857,19 @@
         </div>
       </div>
 
+      <!-- ADVANCED ANALYSIS ENHANCEMENTS -->
+      <div id="gatePredictorContainer"></div>
+
+      <div class="adv-two-col-grid">
+        <div id="marksLeakageContainer"></div>
+        <div id="topperComparisonContainer"></div>
+      </div>
+
+      <div class="adv-two-col-grid">
+        <div id="pacingMatrixContainer"></div>
+        <div id="swotContainer"></div>
+      </div>
+
       <div class="result-subject-title">Subject Wise Analysis</div>
       <div class="analysis-cards-container" id="subjectWiseContainer">
         <!-- JS will populate subject cards here -->
@@ -902,6 +915,12 @@
         <canvas id="accuracyDifficultyChart"></canvas>
       </div>
 
+      <!-- QUESTION MATRIX PALETTE -->
+      <div class="result-subject-title" style="margin-top: 40px;">Question-by-Question Matrix</div>
+      <div class="adv-card" style="margin-top: 14px; margin-bottom: 30px;">
+        <div id="questionMatrixContainer"></div>
+      </div>
+
     </div>
   </div>
 
@@ -937,6 +956,19 @@
   <script src="js/go-test-registry.js?v=15"></script>
   <script src="js/cse-2026-test-registry.js"></script>
   <script src="js/made-easy-cse-2027-test.js?v=15"></script>
+  <!-- QUESTION PREVIEW MODAL -->
+  <div class="qp-modal-overlay" id="questionPreviewModal">
+    <div class="qp-modal-box">
+      <div class="qp-modal-head">
+        <h3 id="qpModalTitle">Question 1</h3>
+        <button class="qp-modal-close-btn" onclick="closeQuestionPreviewModal()">&times;</button>
+      </div>
+      <div class="qp-modal-body" id="qpModalBody">
+        <!-- JS rendered -->
+      </div>
+    </div>
+  </div>
+
   <!-- BOOKMARK DETAIL MODAL -->
   <div class="modal-overlay" id="bookmarkDetailModal" style="display: none; align-items: center; justify-content: center;">
     <div class="modal-box" style="max-width: 800px; width: 95%; max-height: 90vh; overflow-y: auto; padding: 30px;">
@@ -1053,7 +1085,7 @@
   <!-- Razorpay Checkout SDK -->
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-  <script src="js/exam.js?v=76"></script>
+  <script src="js/exam.js?v=77"></script>
   <script src="js/questions/pw-test-registry.js?v=5"></script>
   <script src="js/pw-level-registry.js?v=3"></script>
   <script src="js/demo.registry.js?v=31"></script>

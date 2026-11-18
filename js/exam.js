@@ -2389,6 +2389,7 @@ function confirmSubmit() {
     timeTakenSecs,
     tMin,
     tSec,
+    answers: playerState
   };
 
   document.getElementById("playerOverlay").classList.remove("show");
@@ -2821,6 +2822,597 @@ function getTestBreakdown(testName, questions, userAnswers) {
   return { subjectGroups, topicGroups };
 }
 
+// ==========================================
+// ADVANCED TEST ANALYSIS ENHANCEMENTS
+// ==========================================
+
+function renderGatePredictor(r) {
+  const el = document.getElementById("gatePredictorContainer");
+  if (!el || !r) return;
+
+  const maxScore = r.maxScore || 100;
+  const normScore = maxScore > 0 ? (r.score / maxScore) * 100 : 0;
+  const estGateScore = Math.max(100, Math.min(1000, Math.round((normScore / 100) * 880 + 120)));
+
+  let airRange = "AIR 18,000+";
+  if (normScore >= 75) airRange = "AIR 1 – 150";
+  else if (normScore >= 65) airRange = "AIR 150 – 600";
+  else if (normScore >= 55) airRange = "AIR 600 – 1,800";
+  else if (normScore >= 45) airRange = "AIR 1,800 – 4,500";
+  else if (normScore >= 35) airRange = "AIR 4,500 – 9,500";
+  else if (normScore >= 25) airRange = "AIR 9,500 – 18,000";
+
+  const genStatus = normScore >= 27.5 ? { cls: 'cleared', text: 'GEN Qualified' } : (normScore >= 24 ? { cls: 'borderline', text: 'GEN Borderline' } : { cls: 'below', text: 'GEN < Cutoff' });
+  const obcStatus = normScore >= 24.7 ? { cls: 'cleared', text: 'OBC Qualified' } : (normScore >= 21 ? { cls: 'borderline', text: 'OBC Borderline' } : { cls: 'below', text: 'OBC < Cutoff' });
+  const scStatus = normScore >= 18.3 ? { cls: 'cleared', text: 'SC/ST Qualified' } : (normScore >= 15 ? { cls: 'borderline', text: 'SC/ST Borderline' } : { cls: 'below', text: 'SC/ST < Cutoff' });
+
+  el.innerHTML = `
+    <div class="gate-predictor-card">
+      <div class="gp-col">
+        <span class="gp-label">Estimated GATE Score</span>
+        <span class="gp-val">${estGateScore} <small>/ 1000</small></span>
+      </div>
+      <div class="gp-col">
+        <span class="gp-label">Predicted AIR Range</span>
+        <span class="gp-val" style="color: #93c5fd;">${airRange}</span>
+      </div>
+      <div class="gp-col">
+        <span class="gp-label">Category Cutoff Indicator</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;">
+          <span class="gp-badge ${genStatus.cls}">${genStatus.text}</span>
+          <span class="gp-badge ${obcStatus.cls}">${obcStatus.text}</span>
+          <span class="gp-badge ${scStatus.cls}">${scStatus.text}</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderMarksLeakage(questions, answers, r) {
+  const el = document.getElementById("marksLeakageContainer");
+  if (!el || !r) return 0;
+
+  let totalLostNeg = 0;
+  let qTypeStats = {
+    MCQ: { count: 0, correct: 0, wrong: 0, score: 0, negLost: 0 },
+    MSQ: { count: 0, correct: 0, wrong: 0, score: 0, negLost: 0 },
+    NAT: { count: 0, correct: 0, wrong: 0, score: 0, negLost: 0 }
+  };
+
+  (questions || []).forEach((q, idx) => {
+    const st = answers[idx] || answers[String(idx)];
+    const rawType = (q.type || 'MCQ').toUpperCase();
+    const type = rawType.includes('NAT') ? 'NAT' : (rawType.includes('MSQ') ? 'MSQ' : 'MCQ');
+    const m = Number(q.marks) || 1;
+    const n = (q.neg != null) ? Math.abs(Number(q.neg)) : (m === 2 ? 0.66 : 0.33);
+
+    qTypeStats[type].count++;
+    if (st && st.isCorrect) {
+      qTypeStats[type].correct++;
+      qTypeStats[type].score += m;
+    } else if (st && !st.isCorrect && !st.isUnattempted) {
+      qTypeStats[type].wrong++;
+      const actualNeg = (type === 'MCQ' || (q.neg && Number(q.neg) > 0)) ? n : 0;
+      totalLostNeg += actualNeg;
+      qTypeStats[type].negLost += actualNeg;
+      qTypeStats[type].score -= actualNeg;
+    }
+  });
+
+  totalLostNeg = Math.round(totalLostNeg * 100) / 100;
+  const potentialScore = Math.min(r.maxScore, Math.round((r.score + totalLostNeg) * 100) / 100);
+  const fillPct = potentialScore > 0 ? Math.max(0, Math.min(100, (r.score / potentialScore) * 100)) : 100;
+
+  el.innerHTML = `
+    <div class="adv-card">
+      <div class="adv-card-header">
+        <div class="adv-card-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Marks Leakage & Potential
+        </div>
+        <span style="font-size: 12px; font-weight: 700; color: #ef4444;">-${totalLostNeg.toFixed(2)} Lost</span>
+      </div>
+      
+      <div class="ml-meter-wrap">
+        <div class="ml-numbers-row">
+          <div>
+            <div style="font-size: 11px; text-transform: uppercase; color: #64748b; font-weight: 700;">Score Realization</div>
+            <div style="font-size: 20px; font-weight: 800; color: #1e293b;">${r.score} <small style="font-size: 13px; color: #64748b; font-weight: 500;">/ ${potentialScore} Potential</small></div>
+          </div>
+          <div style="font-size: 13px; font-weight: 700; color: ${fillPct >= 75 ? '#16a34a' : '#d97706'};">${Math.round(fillPct)}% Efficiency</div>
+        </div>
+        <div class="ml-bar-track">
+          <div class="ml-bar-fill" style="width: ${fillPct}%;"></div>
+        </div>
+      </div>
+
+      <div class="ml-qtypes-grid">
+        <div class="ml-qtype-box">
+          <div class="ml-qtype-title">MCQ (${qTypeStats.MCQ.count})</div>
+          <div class="ml-qtype-score">${Math.round(qTypeStats.MCQ.score * 10) / 10} M</div>
+          <div class="ml-qtype-neg">-${qTypeStats.MCQ.negLost.toFixed(2)} Lost</div>
+        </div>
+        <div class="ml-qtype-box">
+          <div class="ml-qtype-title">MSQ (${qTypeStats.MSQ.count})</div>
+          <div class="ml-qtype-score">${Math.round(qTypeStats.MSQ.score * 10) / 10} M</div>
+          <div class="ml-qtype-neg" style="color: #64748b;">No Negative</div>
+        </div>
+        <div class="ml-qtype-box">
+          <div class="ml-qtype-title">NAT (${qTypeStats.NAT.count})</div>
+          <div class="ml-qtype-score">${Math.round(qTypeStats.NAT.score * 10) / 10} M</div>
+          <div class="ml-qtype-neg" style="color: #64748b;">No Negative</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  return totalLostNeg;
+}
+
+function renderTopperComparison(r, avgScore, avgAcc, highestScore, topperObj, totalStudents, totalLostNeg, questions) {
+  const el = document.getElementById("topperComparisonContainer");
+  if (!el || !r) return;
+
+  const qLen = (questions && questions.length > 0) ? questions.length : (r.correctCount + r.wrongCount + r.unattempted || 65);
+  const myAttempted = r.correctCount + r.wrongCount;
+  const topperScore = (highestScore != null && highestScore > 0) ? highestScore : r.score;
+  const myAcc = (r.correctCount + r.wrongCount > 0)
+    ? Math.round((r.correctCount / (r.correctCount + r.wrongCount)) * 1000) / 10
+    : 0;
+
+  let topperAcc = 94;
+  if (topperObj && topperObj.correctCount && topperObj.wrongCount) {
+    topperAcc = Math.round((topperObj.correctCount / (topperObj.correctCount + topperObj.wrongCount)) * 100);
+  } else if (topperScore === r.score && myAcc > 0) {
+    topperAcc = myAcc;
+  }
+
+  let topperTime = (r.tMin || 0) + 'm ' + (r.tSec || 0) + 's';
+  if (topperObj && topperObj.timeTakenSecs) {
+    topperTime = `${Math.floor(topperObj.timeTakenSecs / 60)}m ${topperObj.timeTakenSecs % 60}s`;
+  }
+
+  const topperAttempted = topperObj && (topperObj.correctCount || topperObj.wrongCount)
+    ? (topperObj.correctCount + topperObj.wrongCount)
+    : qLen;
+
+  const avgAttempted = Math.round(qLen * 0.7);
+  const avgTime = `${Math.max(1, Math.round(qLen * 1.5))}m 00s`;
+  const topperNeg = (topperScore >= (r.maxScore || 100) * 0.9) ? 0 : 0.66;
+
+  el.innerHTML = `
+    <div class="adv-card">
+      <div class="adv-card-header">
+        <div class="adv-card-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14619c" stroke-width="2.2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H7M14 14.66V17c0 .55.45 1 1 1h2M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          Benchmark Comparison
+        </div>
+        <span style="font-size: 12px; color: #64748b; font-weight: 600;">${totalStudents || 1} Aspirants</span>
+      </div>
+      
+      <table class="topper-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th style="color: #14619c;">You</th>
+            <th>Average</th>
+            <th style="color: #16a34a;">Rank 1 Topper</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-you">
+            <td>Score</td>
+            <td>${r.score}</td>
+            <td>${avgScore != null ? avgScore : r.score}</td>
+            <td style="color: #16a34a; font-weight: 700;">${topperScore}</td>
+          </tr>
+          <tr>
+            <td>Accuracy</td>
+            <td>${myAcc}%</td>
+            <td>${avgAcc != null ? avgAcc : myAcc}%</td>
+            <td style="color: #16a34a;">${topperAcc}%</td>
+          </tr>
+          <tr>
+            <td>Attempted</td>
+            <td>${myAttempted} / ${qLen}</td>
+            <td>~${avgAttempted}</td>
+            <td style="color: #16a34a;">${topperAttempted} / ${qLen}</td>
+          </tr>
+          <tr>
+            <td>Marks Lost</td>
+            <td style="color: #ef4444;">-${(totalLostNeg || 0).toFixed(2)}</td>
+            <td style="color: #ef4444;">-${((totalLostNeg || 0) * 1.15).toFixed(2)}</td>
+            <td style="color: #16a34a;">-${topperNeg.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Time Taken</td>
+            <td>${r.tMin}m ${r.tSec}s</td>
+            <td>${avgTime}</td>
+            <td>${topperTime}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderPacingMatrix(questions, answers) {
+  const el = document.getElementById("pacingMatrixContainer");
+  if (!el) return;
+
+  let fastCorrect = 0;
+  let slowCorrect = 0;
+  let fastWrong = 0;
+  let slowWrong = 0;
+
+  let totalCorrectTime = 0;
+  let correctCount = 0;
+  let totalWrongTime = 0;
+  let wrongCount = 0;
+
+  (questions || []).forEach((q, idx) => {
+    const st = answers[idx] || answers[String(idx)];
+    if (!st || st.isUnattempted || (st.answer === null && !st.isCorrect)) return;
+
+    const timeSpent = st.timeSpent || 0;
+    const isCorrect = !!st.isCorrect;
+
+    if (isCorrect) {
+      totalCorrectTime += timeSpent;
+      correctCount++;
+      if (timeSpent < 120) fastCorrect++;
+      else slowCorrect++;
+    } else {
+      totalWrongTime += timeSpent;
+      wrongCount++;
+      if (timeSpent < 120) fastWrong++;
+      else slowWrong++;
+    }
+  });
+
+  const avgCorrectTime = correctCount > 0 ? Math.round(totalCorrectTime / correctCount) : 0;
+  const avgWrongTime = wrongCount > 0 ? Math.round(totalWrongTime / wrongCount) : 0;
+
+  el.innerHTML = `
+    <div class="adv-card">
+      <div class="adv-card-header">
+        <div class="adv-card-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Speed vs Accuracy Matrix
+        </div>
+        <span style="font-size: 12px; color: #64748b; font-weight: 600;">Pacing Quadrants</span>
+      </div>
+
+      <div class="pacing-quadrants-grid">
+        <div class="pacing-quad-box q-fast-correct">
+          <div class="pacing-quad-title">Mastered (Fast & Right)</div>
+          <div class="pacing-quad-val">${fastCorrect} <small>Q</small></div>
+          <div class="pacing-quad-desc">&lt; 2 min • High speed & accuracy</div>
+        </div>
+        <div class="pacing-quad-box q-slow-correct">
+          <div class="pacing-quad-title">Time Heavy (Slow & Right)</div>
+          <div class="pacing-quad-val">${slowCorrect} <small>Q</small></div>
+          <div class="pacing-quad-desc">&ge; 2 min • High accuracy, need speed</div>
+        </div>
+        <div class="pacing-quad-box q-fast-wrong">
+          <div class="pacing-quad-title">Silly Mistakes (Fast & Wrong)</div>
+          <div class="pacing-quad-val">${fastWrong} <small>Q</small></div>
+          <div class="pacing-quad-desc">&lt; 2 min • Avoid rushing questions</div>
+        </div>
+        <div class="pacing-quad-box q-slow-wrong">
+          <div class="pacing-quad-title">Danger Zone (Slow & Wrong)</div>
+          <div class="pacing-quad-val">${slowWrong} <small>Q</small></div>
+          <div class="pacing-quad-desc">&ge; 2 min • Wasted time & lost marks</div>
+        </div>
+      </div>
+
+      <div class="pacing-avg-row">
+        <div class="pacing-avg-item">
+          <span>Avg Time / Correct Q</span>
+          <b style="color: #16a34a;">${avgCorrectTime}s</b>
+        </div>
+        <div class="pacing-avg-item">
+          <span>Avg Time / Incorrect Q</span>
+          <b style="color: #dc2626;">${avgWrongTime}s</b>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderSwotAnalysis(topicGroups) {
+  const el = document.getElementById("swotContainer");
+  if (!el) return;
+
+  const topics = topicGroups || [];
+  const strongTopics = topics.filter(t => t.stats && t.stats.accuracy >= 60 && t.stats.correct > 0);
+  const weakTopics = topics.filter(t => t.stats && (t.stats.accuracy < 60 || t.stats.wrong > 0));
+
+  const strongHtml = strongTopics.length > 0 ? strongTopics.map(t => `
+    <div class="swot-item">
+      <span class="swot-item-name">${t.name}</span>
+      <span class="swot-item-acc green">${t.stats.accuracy}% (${t.stats.correct}/${t.stats.count})</span>
+    </div>
+  `).join("") : `<div style="font-size: 12px; color: #64748b; font-style: italic; padding: 6px 0;">Keep practicing to build topic strengths!</div>`;
+
+  const weakHtml = weakTopics.length > 0 ? weakTopics.map(t => `
+    <div class="swot-item">
+      <span class="swot-item-name">${t.name}</span>
+      <span class="swot-item-acc red">${t.stats.accuracy}% (${t.stats.wrong} wrong)</span>
+    </div>
+  `).join("") : `<div style="font-size: 12px; color: #16a34a; font-weight: 600; padding: 6px 0;">Awesome! No critical weak topics found.</div>`;
+
+  el.innerHTML = `
+    <div class="adv-card">
+      <div class="adv-card-header">
+        <div class="adv-card-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Topic Strength & Priority Focus
+        </div>
+        <span style="font-size: 12px; color: #64748b; font-weight: 600;">Actionable Plan</span>
+      </div>
+
+      <div class="swot-grid">
+        <div class="swot-col">
+          <div class="swot-col-title swot-strong-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            Mastered Topics (&ge;60%)
+          </div>
+          ${strongHtml}
+        </div>
+
+        <div class="swot-col">
+          <div class="swot-col-title swot-weak-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Focus & Revise (&lt;60%)
+          </div>
+          ${weakHtml}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderQuestionMatrix(questions, answers, testName) {
+  const container = document.getElementById("questionMatrixContainer");
+  if (!container) return;
+
+  let correctCount = 0;
+  let wrongCount = 0;
+  let unattemptedCount = 0;
+  let slowCount = 0;
+
+  const qList = questions || [];
+  const btnHtmls = qList.map((q, idx) => {
+    const st = answers[idx] || answers[String(idx)] || { answer: null, isCorrect: false, isUnattempted: true, timeSpent: 0 };
+    const isCorrect = !!st.isCorrect;
+    const isUnattempted = (st.isUnattempted || (st.answer === null && !st.isCorrect));
+    const isWrong = (!isCorrect && !isUnattempted);
+    const timeSpent = st.timeSpent || 0;
+
+    let status = "unattempted";
+    if (isCorrect) { status = "correct"; correctCount++; }
+    else if (isWrong) { status = "incorrect"; wrongCount++; }
+    else { unattemptedCount++; }
+
+    if (timeSpent >= 120) slowCount++;
+
+    const m = Number(q.marks) || 1;
+
+    return `
+      <button class="qm-q-btn ${status}" data-status="${status}" data-time="${timeSpent}" onclick="openQuestionPreview(${idx})" title="Q${idx + 1}: ${status.toUpperCase()} (${timeSpent}s)">
+        <span>Q${idx + 1}</span>
+        <span class="qm-sub-badge">${m}M</span>
+      </button>
+    `;
+  }).join("");
+
+  container.innerHTML = `
+    <div class="qm-filter-bar">
+      <button class="qm-filter-btn active" data-filter="all" onclick="filterQuestionMatrix('all')">All (${qList.length})</button>
+      <button class="qm-filter-btn" data-filter="correct" onclick="filterQuestionMatrix('correct')">Correct (${correctCount})</button>
+      <button class="qm-filter-btn" data-filter="incorrect" onclick="filterQuestionMatrix('incorrect')">Incorrect (${wrongCount})</button>
+      <button class="qm-filter-btn" data-filter="unattempted" onclick="filterQuestionMatrix('unattempted')">Unattempted (${unattemptedCount})</button>
+      <button class="qm-filter-btn" data-filter="slow" onclick="filterQuestionMatrix('slow')">Slow &ge;2m (${slowCount})</button>
+    </div>
+    <div class="qm-grid">
+      ${btnHtmls}
+    </div>
+  `;
+}
+
+window.filterQuestionMatrix = function(filterType) {
+  const container = document.getElementById("questionMatrixContainer");
+  if (!container) return;
+  container.querySelectorAll(".qm-filter-btn").forEach(btn => {
+    if (btn.getAttribute("data-filter") === filterType) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  container.querySelectorAll(".qm-q-btn").forEach(btn => {
+    const qStatus = btn.getAttribute("data-status");
+    const qTime = parseInt(btn.getAttribute("data-time") || "0", 10);
+
+    if (filterType === "all") {
+      btn.style.display = "flex";
+    } else if (filterType === "slow") {
+      btn.style.display = (qTime >= 120) ? "flex" : "none";
+    } else {
+      btn.style.display = (qStatus === filterType) ? "flex" : "none";
+    }
+  });
+};
+
+window.openQuestionPreview = function(idx) {
+  const modal = document.getElementById("questionPreviewModal");
+  const modalTitle = document.getElementById("qpModalTitle");
+  const modalBody = document.getElementById("qpModalBody");
+  if (!modal || !modalBody) return;
+
+  const testName = (document.getElementById("resultCrumbName") ? document.getElementById("resultCrumbName").textContent.trim() : "");
+  let questions = (playerQuestions && playerQuestions.length > 0) ? playerQuestions : [];
+  if (questions.length === 0) {
+    const testKey = (typeof findMatchingTest === 'function' ? (findMatchingTest(testName) || (lastResult && lastResult.testName && findMatchingTest(lastResult.testName))) : null);
+    const backendId = (testKey && window.testBackendIdMap) ? window.testBackendIdMap[testKey] : null;
+    if (backendId && window.testMap && window.testMap[backendId]) {
+      questions = window.testMap[backendId];
+    }
+  }
+
+  const q = questions[idx];
+  if (!q) return;
+
+  const answers = (lastResult && lastResult.answers && Object.keys(lastResult.answers).length > 0)
+    ? lastResult.answers
+    : (playerState || {});
+  const st = answers[idx] || answers[String(idx)] || { answer: null, isCorrect: false, isUnattempted: true, timeSpent: 0 };
+
+  const isCorrect = !!st.isCorrect;
+  const isUnattempted = (st.isUnattempted || (st.answer === null && !st.isCorrect));
+  const isWrong = (!isCorrect && !isUnattempted);
+
+  let statusClass = isCorrect ? "correct" : (isWrong ? "incorrect" : "unattempted");
+  let statusLabel = isCorrect ? "Correct" : (isWrong ? "Incorrect" : "Unattempted");
+
+  const qMarks = Number(q.marks) || 1;
+  const qNeg = (q.neg != null) ? Math.abs(Number(q.neg)) : (qMarks === 2 ? 0.66 : 0.33);
+  const qType = (q.type || "MCQ").toUpperCase();
+  const timeSpent = st.timeSpent || 0;
+
+  modalTitle.textContent = `Question ${idx + 1} Snapshot`;
+
+  let ansCompareHtml = "";
+  if (qType === "NAT") {
+    const correctVal = q.correct !== undefined ? q.correct : q.answer;
+    let rangeStr = Array.isArray(correctVal) ? `${correctVal[0]} to ${correctVal[1] || correctVal[0]}` : correctVal;
+    let userVal = (st.answer !== null && st.answer !== undefined && st.answer !== "") ? st.answer : "Not Attempted";
+    ansCompareHtml = `
+      <div class="qp-ans-compare">
+        <div class="qp-ans-block user-ans">
+          <div class="qp-ans-label">Your Given Answer</div>
+          <div class="qp-ans-val" style="color: ${isCorrect ? '#16a34a' : (isWrong ? '#dc2626' : '#64748b')}">${userVal}</div>
+        </div>
+        <div class="qp-ans-block correct-ans">
+          <div class="qp-ans-label">Accepted Correct Range</div>
+          <div class="qp-ans-val" style="color: #16a34a;">${rangeStr}</div>
+        </div>
+      </div>
+    `;
+  } else {
+    const correctVal = q.correct !== undefined ? q.correct : q.answer;
+    let correctIndices = [];
+    if (Array.isArray(correctVal)) {
+      correctIndices = correctVal.map(c => typeof c === 'string' && /^[A-D]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
+    } else if (typeof correctVal === 'string' && /^[A-D]$/i.test(correctVal)) {
+      correctIndices = [correctVal.toUpperCase().charCodeAt(0) - 65];
+    } else if (correctVal != null) {
+      correctIndices = [Number(correctVal)];
+    }
+
+    let userIndices = [];
+    if (Array.isArray(st.answer)) {
+      userIndices = st.answer.map(c => typeof c === 'string' && /^[A-D]$/i.test(c) ? c.toUpperCase().charCodeAt(0) - 65 : Number(c));
+    } else if (typeof st.answer === 'string' && /^[A-D]$/i.test(st.answer)) {
+      userIndices = [st.answer.toUpperCase().charCodeAt(0) - 65];
+    } else if (st.answer != null && st.answer !== "") {
+      userIndices = [Number(st.answer)];
+    }
+
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const opts = q.options || [];
+    let optsHtml = opts.map((opt, oi) => {
+      const isUserChoice = userIndices.includes(oi);
+      const isRightChoice = correctIndices.includes(oi);
+
+      let borderCol = "#e2e8f0";
+      let bgCol = "#ffffff";
+      let badge = "";
+
+      if (isRightChoice) {
+        borderCol = "#86efac";
+        bgCol = "#f0fdf4";
+        badge = `<span style="margin-left: auto; font-size: 11px; font-weight: 700; color: #15803d; background: #dcfce7; padding: 2px 8px; border-radius: 10px;">✓ Correct</span>`;
+      }
+      if (isUserChoice && !isRightChoice) {
+        borderCol = "#fca5a5";
+        bgCol = "#fef2f2";
+        badge = `<span style="margin-left: auto; font-size: 11px; font-weight: 700; color: #b91c1c; background: #fee2e2; padding: 2px 8px; border-radius: 10px;">✗ Your Choice</span>`;
+      } else if (isUserChoice && isRightChoice) {
+        badge = `<span style="margin-left: auto; font-size: 11px; font-weight: 700; color: #15803d; background: #dcfce7; padding: 2px 8px; border-radius: 10px;">✓ Your Choice (Correct)</span>`;
+      }
+
+      return `
+        <div style="display: flex; align-items: center; gap: 10px; padding: 10px 14px; border: 1.5px solid ${borderCol}; background: ${bgCol}; border-radius: 8px; font-size: 13px;">
+          <b style="color: #64748b; font-size: 12px;">(${letters[oi] || oi})</b>
+          <div style="flex: 1; word-break: break-word;">${opt}</div>
+          ${badge}
+        </div>
+      `;
+    }).join("");
+
+    ansCompareHtml = `
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase;">Options & Breakdown</div>
+        ${optsHtml}
+      </div>
+    `;
+  }
+
+  let solHtml = "";
+  if (q.solution) {
+    solHtml = `
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px;">
+        <div style="font-size: 12px; font-weight: 700; color: #0f172a; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Explanation / Solution
+        </div>
+        <div style="font-size: 13px; color: #334155; line-height: 1.6; word-break: break-word;">
+          ${q.solution}
+        </div>
+      </div>
+    `;
+  }
+
+  modalBody.innerHTML = `
+    <div class="qp-info-pill-row">
+      <span class="qp-info-pill qp-status-pill ${statusClass}">${statusLabel}</span>
+      <span class="qp-info-pill">${qType}</span>
+      <span class="qp-info-pill">+${qMarks} / -${qType === 'MCQ' ? qNeg : 0} M</span>
+      <span class="qp-info-pill">⏱ ${timeSpent}s spent</span>
+    </div>
+
+    <div class="qp-text-box">
+      <div style="font-size: 14px; font-weight: 600; color: #1e293b; line-height: 1.6;">${q.text || "Question"}</div>
+      ${q.image ? `<div style="margin-top: 10px; text-align: center;"><img src="${q.image}" style="max-width: 100%; border-radius: 6px; border: 1px solid #e2e8f0;" alt="Question diagram"></div>` : ""}
+    </div>
+
+    ${ansCompareHtml}
+    ${solHtml}
+
+    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px;">
+      <button class="ra-btn" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-size: 12px; padding: 7px 14px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal()">Close</button>
+      <button class="ra-btn" style="background: #14619c; color: #ffffff; border: none; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 6px; cursor: pointer;" onclick="closeQuestionPreviewModal(); openSolutionMode('${testName.replace(/'/g, "\\'")}')">Open in Full Solution Player &rarr;</button>
+    </div>
+  `;
+
+  modal.classList.add("show");
+
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise([modalBody]).catch(() => {});
+  }
+  if (window.Prism && window.Prism.highlightAllUnder) {
+    window.Prism.highlightAllUnder(modalBody);
+  }
+};
+
+window.closeQuestionPreviewModal = function() {
+  const modal = document.getElementById("questionPreviewModal");
+  if (modal) modal.classList.remove("show");
+};
+
 async function showResultPage(explicitTestName) {
   const r = lastResult;
   const user = currentUser || { name: "Guest User", email: "" };
@@ -2883,6 +3475,13 @@ async function showResultPage(explicitTestName) {
     : (playerState || {});
 
   const breakdown = getTestBreakdown(testName, questions, answers);
+
+  renderGatePredictor(r);
+  let totalLostNeg = renderMarksLeakage(questions, answers, r);
+  renderPacingMatrix(questions, answers);
+  renderSwotAnalysis(breakdown.topicGroups);
+  renderQuestionMatrix(questions, answers, testName);
+  renderTopperComparison(r, avgScore, avgAcc, highestScore, null, totalStudents, totalLostNeg, questions);
 
   const renderCardFromGroup = (grp) => `
       <div class="result-subject-card">
@@ -2961,6 +3560,7 @@ async function showResultPage(explicitTestName) {
       document.querySelectorAll(".card-avg-score").forEach(el => el.textContent = `${avgScore} / ${r.maxScore}`);
       document.querySelectorAll(".card-highest-score").forEach(el => el.textContent = `${highestScore} / ${r.maxScore}`);
       document.querySelectorAll(".card-avg-acc").forEach(el => el.textContent = `${avgAcc}%`);
+      renderTopperComparison(r, avgScore, avgAcc, highestScore, null, totalStudents, totalLostNeg, questions);
     }
   } catch (e) {
     console.error("Could not fetch stats", e);
@@ -2994,9 +3594,12 @@ async function showResultPage(explicitTestName) {
 
       myRank = higherScores + 1;
       totalStudents = myEntry ? lb.length : lb.length + 1;
+      const topperCandidate = (lb && lb.length > 0) ? lb[0] : null;
+      renderTopperComparison(r, avgScore, avgAcc, highestScore, topperCandidate, totalStudents, totalLostNeg, questions);
     } else {
       myRank = 1;
       totalStudents = 1;
+      renderTopperComparison(r, avgScore, avgAcc, highestScore, null, totalStudents, totalLostNeg, questions);
     }
   } catch (e) {
     console.error("Could not fetch leaderboard for rank", e);
