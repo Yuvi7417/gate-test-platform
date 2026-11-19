@@ -618,6 +618,9 @@ function isResultForSeries(r, tId) {
   if (sId && sId !== String(tId)) return false;
 
   const nameUpper = (r.testName || '').toUpperCase();
+  if (tId === 'neet-ug-practice') {
+    return nameUpper.includes('BIOTECHNOLOGY') || nameUpper.includes('NEET') || (r.seriesId === 'neet-ug-practice');
+  }
   if (tId === 'weekly-cs-gate-2027') {
     return nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT');
   }
@@ -625,7 +628,7 @@ function isResultForSeries(r, tId) {
     return nameUpper.includes('DEMO');
   }
   if (tId === 'cs-gate-classes') {
-    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER') || nameUpper.includes('CIVIL') || nameUpper.includes('MECHANICAL')) {
+    if (nameUpper.includes('WEEKLY QUIZ') || nameUpper.startsWith('WQT') || nameUpper.includes('DEMO') || nameUpper.includes('2026') || /\bEE\b/.test(nameUpper) || nameUpper.includes('ELECTRIC') || nameUpper.includes('POWER') || nameUpper.includes('CIVIL') || nameUpper.includes('MECHANICAL') || nameUpper.includes('BIOTECHNOLOGY') || nameUpper.includes('NEET')) {
       return false;
     }
     // Accordion pyq tests in cse-gate-2027 have raw names like TWT-c-programming, SWT-c-programming (no spaces)
@@ -1053,6 +1056,24 @@ function renderTestList(t, filter) {
     const rawName = s[0] || "";
     const upperName = rawName.toUpperCase();
 
+    // Clean handling for NEET UG Subject-Wise Tests
+    if (t.code === "NEET" || t.id === "neet-ug-practice") {
+      const qCount = rawName.includes("Part-4") ? 45 : 90;
+      const dur = rawName.includes("Part-4") ? "30 Mins" : "60 Mins";
+      const label = rawName.replace(/^[A-Za-z0-9_]+\s*-\s*/, "");
+      return {
+        name: rawName,
+        rawName: rawName,
+        bracket: label,
+        from: s[1],
+        till: formatDate(t.endDate),
+        duration: dur,
+        questions: qCount,
+        status: "unattempted",
+        score: null,
+      };
+    }
+
     const isTopicwise = upperName.startsWith("TWT");
     const isFullTest = upperName.startsWith("FST") || upperName.startsWith("FLT") || upperName.startsWith("FULL TEST");
     const isWeeklyQuiz = upperName.startsWith("WQT");
@@ -1253,6 +1274,7 @@ function openInstructions(testName, seriesId) {
   }
   document.getElementById("examTopTitle").textContent = testName || "Mock Test";
 
+  const isNeet = (testName || "").includes("Biotechnology") || (testName || "").includes("NEET") || (pendingTestSeriesId === "neet-ug-practice");
   const isTopicwise = (testName || "").includes("Topicwise") || (testName || "").includes("TWT");
   const isWeeklyQuiz = (testName || "").includes("WQT") || (testName || "").toUpperCase().includes("WEEKLY QUIZ");
   const isGatePyq = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || (testName || "").toUpperCase().includes("GATE CSE"));
@@ -1270,6 +1292,7 @@ function openInstructions(testName, seriesId) {
   const instrDurationElement = document.getElementById("instrDuration");
   if (instrDurationElement) {
     if (customDur) instrDurationElement.textContent = customDur + " minutes";
+    else if (isNeet) instrDurationElement.textContent = (testName || "").includes("Part-4") ? "30 minutes" : "60 minutes";
     else if (isTopicwise || isWeeklyQuiz) instrDurationElement.textContent = "45 minutes";
     else if (isFullTest || isMixedSubject) instrDurationElement.textContent = "180 minutes";
     else instrDurationElement.textContent = "90 minutes";
@@ -1580,6 +1603,7 @@ async function startPlayer(testName, fetchedQuestions) {
   );
   playerCurrent = 0;
   const testNameUpper = (testName || "").toUpperCase();
+  const isNeetTest = testNameUpper.includes("BIOTECHNOLOGY") || testNameUpper.includes("NEET") || (currentTestListId === "neet-ug-practice");
   const isTopicwiseTest = testNameUpper.includes("TOPICWISE") || testNameUpper.includes("TWT");
   const isWeeklyQuizTest = testNameUpper.includes("WQT") || testNameUpper.includes("WEEKLY QUIZ");
   const isGatePyqTest = (/^GATE\s+CSE\s+20\d\d/i.test(testName || "") || /^GATE\s+20\d\d/i.test(testName || "") || testNameUpper.includes("GATE CSE"));
@@ -1606,6 +1630,9 @@ async function startPlayer(testName, fetchedQuestions) {
     } else {
       playerSections = null;
     }
+  } else if (isNeetTest) {
+    playerDurationMins = (playerQuestions.length === 45 || testNameUpper.includes("PART-4")) ? 30 : 60;
+    playerSections = null;
   } else if (isFullTest || isMixedSubjectTest) {
     playerDurationMins = 180;
     playerSections = [
@@ -2825,7 +2852,8 @@ function getTestBreakdown(testName, questions, userAnswers) {
     ? window.apexTestRegistry.find(t => t.name === cleanName || (t.name && t.name.toLowerCase() === lowerName) || cleanName.includes(t.name) || (t.name && t.name.includes(cleanName)))
     : null;
 
-  const isFLT = /FST|FLT|GBG|AIMT|Full\s*Syllabus|Full\s*Length|Mock/i.test(cleanName) || totalQ >= 55;
+  const isNeet = /neet|biotechnology|biology/i.test(cleanName) || (regTest && regTest.series === "neet-ug-practice");
+  const isFLT = !isNeet && (/FST|FLT|GBG|AIMT|Full\s*Syllabus|Full\s*Length|Mock/i.test(cleanName) || totalQ >= 55);
   const isMST = /MST/i.test(cleanName) || cleanName.includes('+');
 
   function computeStats(indices) {
@@ -3874,6 +3902,15 @@ async function showResultPage(explicitTestName) {
 
 function getSubjectIcon(name) {
   const n = (name || "").toLowerCase();
+  if (n.includes("bio") || n.includes("biotechnology") || n.includes("neet") || n.includes("botany") || n.includes("zoology")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/><circle cx="12" cy="12" r="3"/></svg>`;
+  }
+  if (n.includes("physic")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="2"/><path d="M12 2a10 5 0 0 1 0 20 10 5 0 0 1 0-20"/><path d="M2 12a5 10 0 0 1 20 0 5 10 0 0 1-20 0"/></svg>`;
+  }
+  if (n.includes("chem")) {
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6M10 3v6l-4 8a2 2 0 0 0 2 3h8a2 2 0 0 0 2-3l-4-8V3"/></svg>`;
+  }
   if (n.includes("operating") || n.includes("os")) {
     return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>`;
   }

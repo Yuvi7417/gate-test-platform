@@ -1088,6 +1088,41 @@ main {
   overflow: hidden;
 }
 
+/* NEET UG Specialized Emerald / Teal Banner */
+.ts-banner.ts-banner-neet,
+.detail-banner-img.detail-banner-neet {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 45%, #0d9488 100%) !important;
+}
+
+.ts-banner.ts-banner-neet .apex-easy-brand,
+.detail-banner-img.detail-banner-neet .apex-easy-brand {
+  color: #a7f3d0 !important;
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(52, 211, 153, 0.45) !important;
+}
+
+.ts-banner.ts-banner-neet .ts-code,
+.detail-banner-img.detail-banner-neet .detail-banner-code {
+  background: #059669 !important;
+  color: #ffffff !important;
+}
+
+.ts-card.ts-card-neet {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.25s ease;
+}
+
+.ts-card.ts-card-neet:hover {
+  border-color: #10b981 !important;
+  box-shadow: 0 10px 24px -4px rgba(16, 185, 129, 0.16) !important;
+}
+
+.ts-tag.neet-badge {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: #047857 !important;
+  font-weight: 700 !important;
+}
+
 .apex-easy-brand {
   margin-top: 10px;
   color: var(--amber);

@@ -208,6 +208,48 @@ window.testSeries = [
     // comingSoon: true
   },
   {
+    id: "neet-ug-practice",
+    code: "NEET",
+    learnTag: "APEX NEET UG",
+    examTag: "NEET UG",
+    subjectTag: "Biology / Medical",
+    title: "NEET UG Chapter-Wise Practice Series (Biology, Physics, Chemistry)",
+    f: "neet",
+    lang: "English",
+    objective: "Objective (NEET Pattern)",
+    tests: 4,
+    startDate: "2026-05-01",
+    endDate: "2027-05-31",
+    session: "2026-2027",
+    desc: "Comprehensive NCERT-aligned chapter-wise practice tests for NEET UG aspirants. Features 90-question Subject-Wise Tests (SWT) with authentic NEET marking (+4 for correct, -1 for negative) and detailed NCERT page reference explanations.",
+    features: [
+      "Strictly 100% NCERT Word-to-Word Based",
+      "Standard NEET Marking (+4 Correct, -1 Negative)",
+      "90 Questions Subject-Wise Tests (SWT)",
+      "Detailed NCERT Explanations with Page Citations",
+      "Time-Bound Exam Simulation (60 Minutes)",
+      "Sectional Speed & Accuracy Analytics",
+    ],
+    batches: [
+      {
+        name: "NEET 2026-2027 Target Batch",
+        start: "May 1, 2026",
+        time: "12:00 AM – 11:59 PM",
+        selected: true,
+      },
+    ],
+    schedule: [
+      ["SWT 01 - Biotechnology: Principles & Processes (Part-1)", "May 10, 2026"],
+      ["SWT 02 - Biotechnology: Principles & Processes (Part-2)", "May 15, 2026"],
+      ["SWT 03 - Biotechnology: Principles & Processes (Part-3)", "May 20, 2026"],
+      ["SWT 04 - Biotechnology: Principles & Processes (Part-4 - NCERT Exemplar & Advanced)", "May 25, 2026"],
+    ],
+    oldPrice: "₹499",
+    price: "FREE",
+    basePrice: 0,
+    brandLabel: "APEX MEDICAL / NEET"
+  },
+  {
     id: "cse-gate-2027",
     code: "CSE",
     examTag: "GATE 2027",
@@ -989,16 +1031,17 @@ function renderTS(filter, query) {
     )
     .forEach((t) => {
       const el = document.createElement("div");
-      el.className = "ts-card";
+      el.className = t.code === "NEET" ? "ts-card ts-card-neet" : "ts-card";
       if (!t.comingSoon) {
         el.onclick = () => openDetail(t.id);
       } else {
         el.classList.add("coming-soon");
       }
+      const bannerClass = t.code === "NEET" ? "ts-banner ts-banner-neet" : "ts-banner";
       el.innerHTML = `
           ${t.comingSoon ? '<div class="coming-soon-overlay">Coming Soon</div>' : ''}
           <span class="card-corner tl"></span><span class="card-corner br"></span>
-          <div class="ts-banner"><div class="ts-banner-grid"></div>
+          <div class="${bannerClass}"><div class="ts-banner-grid"></div>
             <div class="ts-code">${t.code}</div>
             <div class="ts-online">Online</div>
             <div class="ts-banner-text">
@@ -1007,7 +1050,7 @@ function renderTS(filter, query) {
             </div>
           </div>
           <div class="ts-body">
-            <div class="ts-tags"><span class="ts-tag exam">${t.examTag}</span><span class="ts-tag subject">${t.subjectTag}</span></div>
+            <div class="ts-tags"><span class="ts-tag exam ${t.code === 'NEET' ? 'neet-badge' : ''}">${t.examTag}</span><span class="ts-tag subject">${t.subjectTag}</span></div>
             <div class="ts-title">${t.title}</div>
             <div class="ts-meta-tags"><span class="ts-meta-tag">${t.lang}</span><span class="ts-meta-tag">${t.objective}</span></div>
             <div class="ts-footer"><span>Start Date: <b>${formatDate(t.startDate)}</b></span><span>Tests: <b>${t.tests}</b></span></div>
@@ -1096,7 +1139,13 @@ function openDetail(id, pushHistory = true) {
        <span class="ts-tag exam">${t.examTag}</span>
        <span class="ts-tag subject">${t.subjectTag}</span>`;
 
-  document.getElementById("dBanner").innerHTML = `
+  const dBannerEl = document.getElementById("dBanner");
+  if (t.code === "NEET") {
+    dBannerEl.classList.add("detail-banner-neet");
+  } else {
+    dBannerEl.classList.remove("detail-banner-neet");
+  }
+  dBannerEl.innerHTML = `
       <div class="detail-banner-code">${t.code}</div>
       <div class="detail-banner-online">Online</div>
       <div class="detail-banner-text">
